@@ -9,6 +9,12 @@
    ]
   },
   "alice-s-adventures-in-wonderland": {
+   "de": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
    "en": [
     "epub",
     "html",
@@ -16,6 +22,12 @@
     "txt"
    ],
    "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "it": [
     "epub",
     "html",
     "pdf",
@@ -31,6 +43,12 @@
    ]
   },
   "anna-karenina": {
+   "de": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
    "en": [
     "epub",
     "html",
@@ -48,6 +66,12 @@
   },
   "candide": {
    "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "es": [
     "epub",
     "html",
     "pdf",
@@ -166,6 +190,12 @@
     "html",
     "pdf",
     "txt"
+   ],
+   "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
    ]
   },
   "hamlet": {
@@ -206,6 +236,12 @@
     "html",
     "pdf",
     "txt"
+   ],
+   "es": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
    ]
   },
   "heart-of-darkness": {
@@ -218,6 +254,12 @@
   },
   "jane-eyre": {
    "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
     "epub",
     "html",
     "pdf",
@@ -267,6 +309,12 @@
    ]
   },
   "meditations": {
+   "de": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
    "en": [
     "epub",
     "html",
@@ -314,6 +362,12 @@
     "txt"
    ],
    "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
     "epub",
     "html",
     "pdf",
@@ -381,6 +435,12 @@
    ]
   },
   "the-adventures-of-huckleberry-finn": {
+   "de": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
    "en": [
     "epub",
     "html",
@@ -411,6 +471,12 @@
    ]
   },
   "the-adventures-of-tom-sawyer": {
+   "de": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
    "en": [
     "epub",
     "html",
@@ -475,6 +541,12 @@
    ]
   },
   "the-divine-comedy": {
+   "de": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
    "en": [
     "epub",
     "html",
@@ -482,12 +554,6 @@
     "txt"
    ],
    "es": [
-    "epub",
-    "html",
-    "pdf",
-    "txt"
-   ],
-   "fr": [
     "epub",
     "html",
     "pdf",
@@ -659,6 +725,12 @@
    ]
   },
   "the-pilgrim-s-progress": {
+   "de": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
    "en": [
     "epub",
     "html",
@@ -667,6 +739,12 @@
    ]
   },
   "the-prince": {
+   "de": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
    "en": [
     "epub",
     "html",
@@ -716,6 +794,12 @@
   },
   "the-strange-case-of-dr-jekyll-and-mr-hyde": {
    "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "es": [
     "epub",
     "html",
     "pdf",
@@ -877,5 +961,5 @@
    ]
   }
  },
- "generated": "2026-09-25T15:06:06Z"
+ "generated": "2026-09-25T21:50:07Z"
 }

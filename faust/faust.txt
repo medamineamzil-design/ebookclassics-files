@@ -1,8 +1,6 @@
 Faust
 Johann Wolfgang von Goethe
 
-[Illustration] [Illustration] [Illustration] [Illustration]
-
 
 FAUST
 
@@ -35,25 +33,17 @@ CLEVELAND, OHIO NEW YORK, N.Y.
 PRINTED IN THE UNITED STATES OF AMERICA
 
 
-[Illustration]
-
-[Illustration]
-
 
 CONTENTS
 
 
 PREFACE AN GOETHE DEDICATION PRELUDE AT THE THEATRE PROLOGUE IN HEAVEN
 
-SCENE I. NIGHT (Faust’s Monologue) II. BEFORE THE CITY-GATE III. THE STUDY (The Exorcism) IV. THE STUDY (The Compact) V. AUERBACH’S CELLAR VI. WITCHES’ KITCHEN VII. A STREET VIII. EVENING IX. PROMENADE X. THE NEIGHBOR’S HOUSE XI. STREET XII. GARDEN XIII. A GARDEN-ARBOR XIV. FOREST AND CAVERN XV. MARGARET’S ROOM XVI. MARTHA’S GARDEN XVII. AT THE FOUNTAIN XVIII. DONJON (Margaret’s Prayer) XIX. NIGHT (Valentine’s Death) XX. CATHEDRAL XXI. WALPURGIS-NIGHT XXII. OBERON AND TITANIA’S GOLDEN WEDDING XXIII. DREARY DAY XXIV. NIGHT XXV. DUNGEON [Illustration]
+SCENE I. NIGHT (Faust’s Monologue) II. BEFORE THE CITY-GATE III. THE STUDY (The Exorcism) IV. THE STUDY (The Compact) V. AUERBACH’S CELLAR VI. WITCHES’ KITCHEN VII. A STREET VIII. EVENING IX. PROMENADE X. THE NEIGHBOR’S HOUSE XI. STREET XII. GARDEN XIII. A GARDEN-ARBOR XIV. FOREST AND CAVERN XV. MARGARET’S ROOM XVI. MARTHA’S GARDEN XVII. AT THE FOUNTAIN XVIII. DONJON (Margaret’s Prayer) XIX. NIGHT (Valentine’s Death) XX. CATHEDRAL XXI. WALPURGIS-NIGHT XXII. OBERON AND TITANIA’S GOLDEN WEDDING XXIII. DREARY DAY XXIV. NIGHT XXV. DUNGEON
 
 
 FAUST
 
-
-[Illustration]
-
-[Illustration: Preface]
 
 It is twenty years since I first determined to attempt the translation of Faust, in the original metres. At that time, although more than a score of English translations of the First Part, and three or four of the Second Part, were in existence, the experiment had not yet been made. The prose version of Hayward seemed to have been accepted as the standard, in default of anything more satisfactory: the English critics, generally sustaining the translator in his views concerning the secondary importance of form in Poetry, practically discouraged any further attempt; and no one, familiar with rhythmical expression through the needs of his own nature, had devoted the necessary love and patience to an adequate reproduction of the great work of Goethe’s life.
 
@@ -127,8 +117,6 @@ The feminine and dactylic rhymes, which have been for the most part omitted by a
 B.T.
 
 
-[Illustration]
-
 
 AN GOETHE
 
@@ -151,10 +139,6 @@ Was Du gesungen, Aller Lust und Klagen, Des Lebens Wiedersprüche, neu vermählt
 B.T.
 
 
-[Illustration]
-
-[Illustration: =Dedication=]
-
 Again ye come, ye hovering Forms! I find ye, As early to my clouded sight ye shone! Shall I attempt, this once, to seize and bind ye? Still o’er my heart is that illusion thrown? Ye crowd more near! Then, be the reign assigned ye, And sway me from your misty, shadowy zone! My bosom thrills, with youthful passion shaken, From magic airs that round your march awaken.
 
 Of joyous days ye bring the blissful vision; The dear, familiar phantoms rise again, And, like an old and half-extinct tradition, First Love returns, with Friendship in his train. Renewed is Pain: with mournful repetition Life tracks his devious, labyrinthine chain, And names the Good, whose cheating fortune tore them From happy hours, and left me to deplore them.
@@ -164,10 +148,6 @@ They hear no longer these succeeding measures, The souls, to whom my earliest so
 Dispersed the friendly troop, with all its pleasures, And still, alas! the echoes first that rang! I bring the unknown multitude my treasures; Their very plaudits give my heart a pang, And those beside, whose joy my Song so flattered, If still they live, wide through the world are scattered.
 
 And grasps me now a long-unwonted yearning For that serene and solemn Spirit-Land: My song, to faint Aeolian murmurs turning, Sways like a harp-string by the breezes fanned. I thrill and tremble; tear on tear is burning, And the stern heart is tenderly unmanned. What I possess, I see far distant lying, And what I lost, grows real and undying.
-
-[Illustration]
-
-[Illustration: =Prelude at the Theatre=]
 
 
 MANAGER    DRAMATIC POET    MERRY-ANDREW
@@ -237,7 +217,7 @@ Youth, good my friend, you certainly require When foes in combat sorely press yo
 MANAGER
 
 
-The words you’ve bandied are sufficient; ’Tis deeds that I prefer to see: In compliments you’re both proficient, But might, the while, more useful be. What need to talk of Inspiration? ’Tis no companion of Delay. If Poetry be your vocation, Let Poetry your will obey! Full well you know what here is wanting; The crowd for strongest drink is panting, And such, forthwith, I’d have you brew. What’s left undone to-day, To-morrow will not do. Waste not a day in vain digression: With resolute, courageous trust Seize every possible impression, And make it firmly your possession; You’ll then work on, because you must. Upon our German stage, you know it, Each tries his hand at what he will; So, take of traps and scenes your fill, And all you find, be sure to show it! Use both the great and lesser heavenly light,— Squander the stars in any number, Beasts, birds, trees, rocks, and all such lumber, Fire, water, darkness, Day and Night! Thus, in our booth’s contracted sphere, The circle of Creation will appear, And move, as we deliberately impel, From Heaven, across the World, to Hell! [Illustration] [Illustration]
+The words you’ve bandied are sufficient; ’Tis deeds that I prefer to see: In compliments you’re both proficient, But might, the while, more useful be. What need to talk of Inspiration? ’Tis no companion of Delay. If Poetry be your vocation, Let Poetry your will obey! Full well you know what here is wanting; The crowd for strongest drink is panting, And such, forthwith, I’d have you brew. What’s left undone to-day, To-morrow will not do. Waste not a day in vain digression: With resolute, courageous trust Seize every possible impression, And make it firmly your possession; You’ll then work on, because you must. Upon our German stage, you know it, Each tries his hand at what he will; So, take of traps and scenes your fill, And all you find, be sure to show it! Use both the great and lesser heavenly light,— Squander the stars in any number, Beasts, birds, trees, rocks, and all such lumber, Fire, water, darkness, Day and Night! Thus, in our booth’s contracted sphere, The circle of Creation will appear, And move, as we deliberately impel, From Heaven, across the World, to Hell!
 
 
 PROLOGUE IN HEAVEN
@@ -359,7 +339,7 @@ Therein thou’rt free, according to thy merits; The like of thee have never mov
 
 MEPHISTOPHELES (solus)
 
-I like, at times, to hear The Ancient’s word, And have a care to be most civil: It’s really kind of such a noble Lord So humanly to gossip with the Devil! [Illustration] [Illustration]
+I like, at times, to hear The Ancient’s word, And have a care to be most civil: It’s really kind of such a noble Lord So humanly to gossip with the Devil!
 
 
 FIRST PART OF THE TRAGEDY
@@ -605,7 +585,7 @@ Has He, victoriously, Burst from the vaulted Grave, and all-gloriously Now sits 
 CHORUS OF ANGELS
 
 
-Christ is arisen, Out of Corruption’s womb: Burst ye the prison, Break from your gloom! Praising and pleading him, Lovingly needing him, Brotherly feeding him, Preaching and speeding him, Blessing, succeeding Him, Thus is the Master near,— Thus is He here! [Illustration]
+Christ is arisen, Out of Corruption’s womb: Burst ye the prison, Break from your gloom! Praising and pleading him, Lovingly needing him, Brotherly feeding him, Preaching and speeding him, Blessing, succeeding Him, Thus is the Master near,— Thus is He here!
 
 
 II
@@ -957,10 +937,6 @@ The dog, when he’s well educated, Is by the wisest tolerated. Yes, he deserves
 
 (They pass in the city-gate.)
 
-[Illustration]
-
-[Illustration]
-
 
 III
 
@@ -1216,8 +1192,6 @@ The lord of rats and eke of mice, Of flies and bed-bugs, frogs and lice, Summons
 FAUST (awaking)
 
 Am I again so foully cheated? Remains there naught of lofty spirit-sway, But that a dream the Devil counterfeited, And that a poodle ran away?
-
-[Illustration]
 
 
 IV
@@ -1764,8 +1738,6 @@ MEPHISTOPHELES
 
 
 We’ll spread this cloak with proper art, Then through the air direct our courses. But only, on so bold a flight, Be sure to have thy luggage light. A little burning air, which I shall soon prepare us, Above the earth will nimbly bear us, And, if we’re light, we’ll travel swift and clear: I gratulate thee on thy new career!
-
-[Illustration]
 
 
 V
@@ -2493,10 +2465,6 @@ ALTMAYER
 
 Shall one believe no miracles, just say!
 
-[Illustration]
-
-[Illustration]
-
 
 VI
 
@@ -2921,10 +2889,6 @@ No, no! The paragon of all, believe me, Thou soon shalt see, alive and warm.
 
 Thou’lt find, this drink thy blood compelling, Each woman beautiful as Helen!
 
-[Illustration]
-
-[Illustration]
-
 
 VII
 
@@ -2953,7 +2917,7 @@ I’m neither lady, neither fair, And home I can go without your care.
 FAUST
 
 
-By Heaven, the girl is wondrous fair! Of all I’ve seen, beyond compare; So sweetly virtuous and pure, And yet a little pert, be sure! The lip so red, the cheek’s clear dawn, [Illustration:] I’ll not forget while the world rolls on! How she cast down her timid eyes, Deep in my heart imprinted lies: How short and sharp of speech was she, Why, ’twas a real ecstasy!
+By Heaven, the girl is wondrous fair! Of all I’ve seen, beyond compare; So sweetly virtuous and pure, And yet a little pert, be sure! The lip so red, the cheek’s clear dawn,  I’ll not forget while the world rolls on! How she cast down her timid eyes, Deep in my heart imprinted lies: How short and sharp of speech was she, Why, ’twas a real ecstasy!
 
 (MEPHISTOPHELES enters)
 
@@ -3075,7 +3039,7 @@ A gift for her I bid thee get! [Exit.
 MEPHISTOPHELES
 
 
-Presents at once? That’s good: he’s certain to get at her! Full many a pleasant place I know, And treasures, buried long ago: I must, perforce, look up the matter. [Exit. [Illustration]
+Presents at once? That’s good: he’s certain to get at her! Full many a pleasant place I know, And treasures, buried long ago: I must, perforce, look up the matter. [Exit.
 
 
 VIII
@@ -3197,10 +3161,6 @@ How comes that lovely casket here to me? I locked the press, most certainly. ’
 
 Were but the ear-rings mine, alone! One has at once another air. What helps one’s beauty, youthful blood? One may possess them, well and good; But none the more do others care. They praise us half in pity, sure: To gold still tends, On gold depends All, all! Alas, we poor!
 
-[Illustration]
-
-[Illustration]
-
 
 IX
 
@@ -3296,8 +3256,6 @@ Yes, gracious Sir, in all obedience!
 Such an enamored fool in air would blow Sun, moon, and all the starry legions, To give his sweetheart a diverting show.
 
 [Exit.
-
-[Illustration]
 
 
 X
@@ -3685,8 +3643,6 @@ MARTHA
 
 Behind the house, in my garden, then, This eve we’ll expect the gentlemen.
 
-[Illustration]
-
 
 XI
 
@@ -3800,10 +3756,6 @@ FAUST
 
 
 Mark this, I beg of thee! And spare my lungs henceforth: whoever Intends to have the right, if but his tongue be clever, Will have it, certainly. But come: the further talking brings disgust, For thou art right, especially since I must.
-
-[Illustration]
-
-[Illustration]
 
 
 XII
@@ -4139,10 +4091,6 @@ MEPHISTOPHELES
 
 And she of him. So runs the world away!
 
-[Illustration]
-
-[Illustration]
-
 
 XIII
 
@@ -4231,8 +4179,6 @@ MARGARET
 
 Dear God! However is it, such A man can think and know so much? I stand ashamed and in amaze, And answer “Yes” to all he says, A poor, unknowing child! and he— I can’t think what he finds in me! [Exit.
 
-[Illustration]
-
 
 XIV
 
@@ -4266,8 +4212,6 @@ MEPHISTOPHELES
 
 
 Well! I’ll engage to let thee be: Thou darest not tell me so in earnest. The loss of thee were truly very slight,— comrade crazy, rude, repelling:
-
-[Illustration]
 
 One has one’s hands full all the day and night; If what one does, or leaves undone, is right, From such a face as thine there is no telling.
 
@@ -4369,10 +4313,6 @@ MEPHISTOPHELES
 
 Again it seethes, again it glows! Thou fool, go in and comfort her! When such a head as thine no outlet knows, It thinks the end must soon occur. Hail him, who keeps a steadfast mind! Thou, else, dost well the devil-nature wear: Naught so insipid in the world I find As is a devil in despair.
 
-[Illustration]
-
-[Illustration]
-
 
 XV
 
@@ -4406,8 +4346,6 @@ My peace is gone, My heart is sore: I never shall find it, Ah, nevermore!
 My bosom yearns For him alone; Ah, dared I clasp him, And hold, and own!
 
 And kiss his mouth, To heart’s desire, And on his kisses At last expire!
-
-[Illustration]
 
 
 XVI
@@ -4677,10 +4615,6 @@ MEPHISTOPHELES
 
 Yet my delight ’twill also be!
 
-[Illustration]
-
-[Illustration]
-
 
 XVII
 
@@ -4773,10 +4707,6 @@ MARGARET (returning home)
 
 How scornfully I once reviled, When some poor maiden was beguiled! More speech than any tongue suffices I craved, to censure others’ vices. Black as it seemed, I blackened still, And blacker yet was in my will; And blessed myself, and boasted high,— And now—a living sin am I! Yet—all that drove my heart thereto, God! was so good, so dear, so true!
 
-[Illustration]
-
-[Illustration]
-
 
 XVIII
 
@@ -4808,10 +4738,6 @@ The pots before my window, Alas! my tears did wet, As in the early morning For t
 Within my lonely chamber The morning sun shone red: I sat, in utter sorrow, Already on my bed.
 
 Help! rescue me from death and stain! O Maiden! Thou sorrow-laden, Incline Thy countenance upon my pain!
-
-[Illustration]
-
-[Illustration]
 
 
 XIX
@@ -5041,10 +4967,6 @@ I tell thee, from thy tears refrain! When thou from honor didst depart It stabbe
 
 (Dies.)
 
-[Illustration]
-
-[Illustration]
-
 
 XX
 
@@ -5125,10 +5047,6 @@ MARGARET
 
 Neighbor! your cordial! (She falls in a swoon.)
 
-[Illustration]
-
-[Illustration]
-
 
 XXI
 
@@ -5208,8 +5126,6 @@ FAUST
 
 
 How strangely glimmers through the hollows A dreary light, like that of dawn! Its exhalation tracks and follows The deepest gorges, faint and wan. Here steam, there rolling vapor sweepeth; Here burns the glow through film and haze: Now like a tender thread it creepeth, Now like a fountain leaps and plays. Here winds away, and in a hundred Divided veins the valley braids: There, in a corner pressed and sundered, Itself detaches, spreads and fades. Here gush the sparkles incandescent Like scattered showers of golden sand;— But, see! in all their height, at present, The rocky ramparts blazing stand.
-
-[Illustration: Under the old ribs of the rock retreating,]
 
 
 MEPHISTOPHELES
@@ -5613,10 +5529,6 @@ SERVIBILIS ’Twill shortly recommence: A new performance—’tis the last of s
 
 MEPHISTOPHELES When I upon the Blocksberg meet you, I find it good: for that’s your proper place.
 
-[Illustration]
-
-[Illustration]
-
 
 XXII
 
@@ -5893,8 +5805,6 @@ ORCHESTRA
 
 pianissimo Cloud and trailing mist o’erhead Are now illuminated: Air in leaves, and wind in reed, And all is dissipated.
 
-[Illustration]
-
 
 XXIII
 
@@ -5915,7 +5825,7 @@ FAUST MEPHISTOPHELES
 FAUST
 
 
-In misery! In despair! Long wretchedly astray on the face of the earth, and now imprisoned! That gracious, ill-starred creature shut in a dungeon as a criminal, and given up to fearful torments! To this has it come! to this!—Treacherous, contemptible spirit, and thou hast concealed it from me!—Stand, then,—stand! Roll the devilish eyes wrathfully in thy head! Stand and defy me with thine intolerable presence! Imprisoned! In irretrievable misery! Delivered up to evil spirits, and to condemning, unfeeling Man! And thou hast lulled me, meanwhile, with the most insipid dissipations, hast concealed from me her increasing wretchedness, and suffered her to go helplessly to ruin! [Illustration: Roll the devilish eyes wrathfully in thy head]
+In misery! In despair! Long wretchedly astray on the face of the earth, and now imprisoned! That gracious, ill-starred creature shut in a dungeon as a criminal, and given up to fearful torments! To this has it come! to this!—Treacherous, contemptible spirit, and thou hast concealed it from me!—Stand, then,—stand! Roll the devilish eyes wrathfully in thy head! Stand and defy me with thine intolerable presence! Imprisoned! In irretrievable misery! Delivered up to evil spirits, and to condemning, unfeeling Man! And thou hast lulled me, meanwhile, with the most insipid dissipations, hast concealed from me her increasing wretchedness, and suffered her to go helplessly to ruin!
 
 
 MEPHISTOPHELES
@@ -5993,8 +5903,6 @@ FAUST
 
 Up and away!
 
-[Illustration]
-
 
 XXIV
 
@@ -6046,8 +5954,6 @@ MEPHISTOPHELES
 
 
 On! on!
-
-[Illustration]
 
 
 XXV
@@ -6263,8 +6169,6 @@ MARGARET
 
 Be quick! Be quick! Save thy perishing child! Away! Follow the ridge Up by the brook,
 
-[Illustration: =If the grave is there, Death lying in wait, then come=!]
-
 Over the bridge, Into the wood, To the left, where the plank is placed In the pool! Seize it in haste! ’Tis trying to rise, ’Tis struggling still! Save it! Save it!
 
 
@@ -6360,9 +6264,5 @@ Hither to me!
 VOICE (from within, dying away)
 
 Henry! Henry!
-
-[illustration]
-
-[Illustration]
 
 Texte du domaine public, source : Project Gutenberg (#14591). Édition numérique EbookClassics.

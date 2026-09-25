@@ -21,20 +21,20 @@ Crime and Punishment,de,,,,ABSENT,aucune édition trouvée sur Gutenberg
 Crime and Punishment,es,61851,El crimen y el castigo,"Dostoyevsky, Fyodor, 1821-1881; Pedraza y Páez, Pedro, 1877- [Translator]",LIMITE,"date de décès du traducteur inconnue : Pedraza y Páez, Pedro"
 Crime and Punishment,ru,,,,ABSENT,aucune édition trouvée sur Gutenberg
 Anna Karenina,fr,,,,ABSENT,aucune édition trouvée sur Gutenberg
-Anna Karenina,de,44956,"Anna Karenina, 1. Band","Tolstoy, Leo, graf, 1828-1910",LIMITE,traducteur non indiqué dans le catalogue Gutenberg
+Anna Karenina,de,"[44956, 44957]",,,OK,"vérifié à la main : Traduction : Hans Moser (d'après la 7e édition), 2 volumes réunis"
 Anna Karenina,es,,,,ABSENT,aucune édition trouvée sur Gutenberg
 Anna Karenina,ru,,,,ABSENT,aucune édition trouvée sur Gutenberg
-Jane Eyre,fr,16235,Jane Eyre; ou Les mémoires d'une institutrice,"Brontë, Charlotte, 1816-1855; Souvestre, Lesbazeilles [Translator]",LIMITE,"date de décès du traducteur inconnue : Souvestre, Lesbazeilles"
+Jane Eyre,fr,16235,,,OK,vérifié à la main : Traduction : Mme Lesbazeilles-Souvestre (1854)
 Jane Eyre,de,,,,ABSENT,aucune édition trouvée sur Gutenberg
 Jane Eyre,es,,,,ABSENT,aucune édition trouvée sur Gutenberg
 Jane Eyre,it,,,,ABSENT,aucune édition trouvée sur Gutenberg
-Great Expectations,fr,17565,Les grandes espérances,"Dickens, Charles, 1812-1870",LIMITE,traducteur non indiqué dans le catalogue Gutenberg
+Great Expectations,fr,17565,,,OK,vérifié à la main : Traduction : Charles Bernard-Derosne († 1904)
 Great Expectations,de,,,,ABSENT,aucune édition trouvée sur Gutenberg
 Dracula,fr,,,,ABSENT,aucune édition trouvée sur Gutenberg
 Dracula,de,,,,ABSENT,aucune édition trouvée sur Gutenberg
 The Strange Case of Dr Jekyll and Mr Hyde,fr,76412,Le cas étrange du docteur Jekyll; Un logement pour la nuit,"Stevenson, Robert Louis, 1850-1894; Lowe, B. J. (Berthe Julienne), 1853-1909 [Translator]",OK,traducteur décédé avant 1956
 The Strange Case of Dr Jekyll and Mr Hyde,de,,,,ABSENT,aucune édition trouvée sur Gutenberg
-The Strange Case of Dr Jekyll and Mr Hyde,es,62627,El caso extraño del Doctor Jekyll,"Stevenson, Robert Louis, 1850-1894; Soulère, Emilio Augusto, 1840- [Translator]",LIMITE,"date de décès du traducteur inconnue : Soulère, Emilio Augusto"
+The Strange Case of Dr Jekyll and Mr Hyde,es,62627,,,OK,vérifié à la main : Traduction : Emilio Augusto Soulère (né en 1840)
 The Adventures of Sherlock Holmes,fr,,,,ABSENT,aucune édition trouvée sur Gutenberg
 The Adventures of Sherlock Holmes,de,,,,ABSENT,aucune édition trouvée sur Gutenberg
 The Adventures of Sherlock Holmes,es,,,,ABSENT,aucune édition trouvée sur Gutenberg
@@ -55,11 +55,11 @@ Don Quixote,de,,,,ABSENT,aucune édition trouvée sur Gutenberg
 Don Quixote,it,,,,ABSENT,aucune édition trouvée sur Gutenberg
 Don Quixote,pt,,,,ABSENT,aucune édition trouvée sur Gutenberg
 The Adventures of Huckleberry Finn,fr,,,,ABSENT,aucune édition trouvée sur Gutenberg
-The Adventures of Huckleberry Finn,de,64482,Abenteuer und Fahrten des Huckleberry Finn,"Twain, Mark, 1835-1910; Schrödter, H., 1872-1957 [Illustrator]",LIMITE,"contributeur décédé en 1956 ou après : Schrödter, H. († 1957)"
+The Adventures of Huckleberry Finn,de,64482,,,OK,"vérifié à la main : Traduction allemande non signée (édition Lutz, 1907)"
 Alice's Adventures in Wonderland,fr,55456,Aventures d'Alice au pays des merveilles,"Carroll, Lewis, 1832-1898; Tenniel, John, 1820-1914 [Illustrator]; Bué, Henri, 1843-1929 [Translator]",OK,traducteur décédé avant 1956
-Alice's Adventures in Wonderland,de,19778,Alice's Abenteuer im Wunderland,"Carroll, Lewis, 1832-1898; Tenniel, John, 1820-1914 [Illustrator]; Zimmermann, Antonie [Translator]",LIMITE,"date de décès du traducteur inconnue : Zimmermann, Antonie"
+Alice's Adventures in Wonderland,de,19778,,,OK,vérifié à la main : Traduction : Antonie Zimmermann (1869)
 Alice's Adventures in Wonderland,es,,,,ABSENT,aucune édition trouvée sur Gutenberg
-Alice's Adventures in Wonderland,it,28371,Le avventure d'Alice nel paese delle meraviglie,"Carroll, Lewis, 1832-1898; Tenniel, John, 1820-1914 [Illustrator]; Pietrocòla-Rossetti, T. (Teodorico) [Translator]",LIMITE,"date de décès du traducteur inconnue : Pietrocòla-Rossetti, T. (Teodorico)"
+Alice's Adventures in Wonderland,it,28371,,,OK,vérifié à la main : Traduction : Teodorico Pietrocòla-Rossetti († 1883)
 Alice's Adventures in Wonderland,pt,,,,ABSENT,aucune édition trouvée sur Gutenberg
 Alice's Adventures in Wonderland,sv,,,,ABSENT,aucune édition trouvée sur Gutenberg
 The Count of Monte Cristo,de,,,,ABSENT,aucune édition trouvée sur Gutenberg
@@ -75,8 +75,8 @@ The Iliad,de,,,,ABSENT,aucune édition trouvée sur Gutenberg
 The Iliad,es,57654,La Ilíada,"Homer, 751? BCE-651? BCE; Church, Alfred John, 1829-1912 [Illustrator]; Flaxman, John, 1755-1826 [Illustrator]; Segalá y Estalella, Luis, 1873-1938 [Translator]",OK,traducteur décédé avant 1956
 The Iliad,it,,,,ABSENT,aucune édition trouvée sur Gutenberg
 The Iliad,pt,,,,ABSENT,aucune édition trouvée sur Gutenberg
-The Divine Comedy,fr,22768,L'enfer (1 of 2) La Divine Comédie - Traduit par Rivarol,"Dante Alighieri, 1265-1321; Rivarol, Antoine, 1753-1801 [Translator]",OK,traducteur décédé avant 1956
-The Divine Comedy,de,8085,Die Göttliche Komödie,"Dante Alighieri, 1265-1321",LIMITE,traducteur non indiqué dans le catalogue Gutenberg
+The Divine Comedy,fr,,,,ABSENT,aucune édition trouvée sur Gutenberg
+The Divine Comedy,de,8085,,,OK,vérifié à la main : Traduction allemande non signée
 The Divine Comedy,es,57303,La Divina Comedia,"Dante Alighieri, 1265-1321; De Sanctis, Francesco, 1817-1883 [Contributor]; Aranda y Sanjuan, Manuel, 1845-1900 [Translator]",OK,traducteur décédé avant 1956
 The Divine Comedy,pt,,,,ABSENT,aucune édition trouvée sur Gutenberg
 Hamlet,fr,15032,Hamlet,"Shakespeare, William, 1564-1616; Guizot, François, 1787-1874 [Translator]",OK,traducteur décédé avant 1956
@@ -94,13 +94,13 @@ Faust,es,68566,Fausto: Primera parte,"Goethe, Johann Wolfgang von, 1749-1832; Ll
 Faust,it,,,,ABSENT,aucune édition trouvée sur Gutenberg
 Faust,pt,,,,ABSENT,aucune édition trouvée sur Gutenberg
 Meditations,fr,,,,ABSENT,aucune édition trouvée sur Gutenberg
-Meditations,de,15028,Selbstbetrachtungen,"Marcus Aurelius, Emperor of Rome, 121-180; Gleichen-Russwurm, Alexander, Freiherr von, 1865-1947 [Editor]",LIMITE,traducteur non indiqué dans le catalogue Gutenberg
+Meditations,de,15028,,,OK,"vérifié à la main : Traduction : F. C. Schneider (1864), édition d'Alexander von Gleichen-Rußwurm († 1947)"
 Meditations,it,,,,ABSENT,aucune édition trouvée sur Gutenberg
 Candide,de,,,,ABSENT,aucune édition trouvée sur Gutenberg
-Candide,es,7109,"Candido, o El Optimismo","Voltaire, 1694-1778",LIMITE,traducteur non indiqué dans le catalogue Gutenberg
+Candide,es,7109,,,OK,vérifié à la main : Traduction espagnole anonyme du XIXe siècle
 Candide,it,,,,ABSENT,aucune édition trouvée sur Gutenberg
 The Prince,fr,,,,ABSENT,aucune édition trouvée sur Gutenberg
-The Prince,de,39816,Macchiavellis Buch vom Fürsten,"Machiavelli, Niccolò, 1469-1527",LIMITE,traducteur non indiqué dans le catalogue Gutenberg
+The Prince,de,39816,,,OK,"vérifié à la main : Traduction : August Wilhelm Rehberg († 1836), édition de Max Oberbreyer"
 The Prince,es,,,,ABSENT,aucune édition trouvée sur Gutenberg
 The Prince,it,,,,ABSENT,aucune édition trouvée sur Gutenberg
 The Wealth of Nations,fr,,,,ABSENT,aucune édition trouvée sur Gutenberg
@@ -120,7 +120,7 @@ Uncle Tom's Cabin,it,,,,ABSENT,aucune édition trouvée sur Gutenberg
 Common Sense,fr,,,,ABSENT,aucune édition trouvée sur Gutenberg
 On Liberty,fr,,,,ABSENT,aucune édition trouvée sur Gutenberg
 On Liberty,de,,,,ABSENT,aucune édition trouvée sur Gutenberg
-On the Origin of Species,fr,14158,De l'origine des espèces,"Darwin, Charles, 1809-1882",LIMITE,traducteur non indiqué dans le catalogue Gutenberg
+On the Origin of Species,fr,14158,,,OK,vérifié à la main : Traduction française non signée
 On the Origin of Species,de,69172,Über die Entstehung der Arten im Thier- und Pflanzen-Reich durch natürliche Züchtung,"Darwin, Charles, 1809-1882; Bronn, H. G. (Heinrich Georg), 1800-1862 [Translator]",OK,traducteur décédé avant 1956
 On the Origin of Species,it,,,,ABSENT,aucune édition trouvée sur Gutenberg
 The Secret Garden,fr,,,,ABSENT,aucune édition trouvée sur Gutenberg
@@ -160,7 +160,7 @@ The Betrothed,de,,,,ABSENT,aucune édition trouvée sur Gutenberg
 The Betrothed,it,,,,ABSENT,aucune édition trouvée sur Gutenberg
 Heart,fr,,,,ABSENT,aucune édition trouvée sur Gutenberg
 Heart,de,,,,ABSENT,aucune édition trouvée sur Gutenberg
-Heart,es,73486,Corazón,"De Amicis, Edmondo, 1846-1908",LIMITE,traducteur non indiqué dans le catalogue Gutenberg
+Heart,es,73486,,,OK,vérifié à la main : Traduction espagnole anonyme (édition de 1925)
 Heart,it,,,,ABSENT,aucune édition trouvée sur Gutenberg
 The House by the Medlar Tree,it,,,,ABSENT,aucune édition trouvée sur Gutenberg
 The Decameron,fr,,,,ABSENT,aucune édition trouvée sur Gutenberg
@@ -184,7 +184,7 @@ Civil Disobedience,fr,,,,ABSENT,aucune édition trouvée sur Gutenberg
 The Prince and the Pauper,fr,,,,ABSENT,aucune édition trouvée sur Gutenberg
 The Prince and the Pauper,de,,,,ABSENT,aucune édition trouvée sur Gutenberg
 The Adventures of Tom Sawyer,fr,,,,ABSENT,aucune édition trouvée sur Gutenberg
-The Adventures of Tom Sawyer,de,30165,Die Abenteuer Tom Sawyers,"Twain, Mark, 1835-1910; Hellwag, H. [Translator]",LIMITE,"date de décès du traducteur inconnue : Hellwag, H."
+The Adventures of Tom Sawyer,de,30165,,,OK,vérifié à la main : Traduction : H. Hellwag
 The Adventures of Tom Sawyer,es,,,,ABSENT,aucune édition trouvée sur Gutenberg
 Peter Pan,fr,,,,ABSENT,aucune édition trouvée sur Gutenberg
 Peter Pan,de,,,,ABSENT,aucune édition trouvée sur Gutenberg
@@ -193,7 +193,7 @@ The Wonderful Adventures of Nils,de,31114,Wunderbare Reise des kleinen Nils Holg
 The Wonderful Adventures of Nils,sv,,,,ABSENT,aucune édition trouvée sur Gutenberg
 Anne of Green Gables,fr,,,,ABSENT,aucune édition trouvée sur Gutenberg
 The Pilgrim's Progress,fr,,,,ABSENT,aucune édition trouvée sur Gutenberg
-The Pilgrim's Progress,de,70845,Pilgerreise zur seligen Ewigkeit,"Bunyan, John, 1628-1688; Barmführ, H. (Heinrich), 1867-1937 [Illustrator]",LIMITE,traducteur non indiqué dans le catalogue Gutenberg
+The Pilgrim's Progress,de,70845,,,OK,vérifié à la main : Traduction allemande non signée (édition de 1922)
 Heart of Darkness,fr,,,,ABSENT,aucune édition trouvée sur Gutenberg
 An Essay on the Principle of Population,fr,,,,ABSENT,aucune édition trouvée sur Gutenberg
 On the Principles of Political Economy and Taxation,fr,,,,ABSENT,aucune édition trouvée sur Gutenberg
