@@ -14,6 +14,12 @@
     "html",
     "pdf",
     "txt"
+   ],
+   "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
    ]
   },
   "an-essay-on-the-principle-of-population": {
@@ -90,6 +96,12 @@
     "html",
     "pdf",
     "txt"
+   ],
+   "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
    ]
   },
   "dracula": {
@@ -120,6 +132,18 @@
     "html",
     "pdf",
     "txt"
+   ],
+   "es": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
    ]
   },
   "frankenstein": {
@@ -145,7 +169,31 @@
    ]
   },
   "hamlet": {
+   "de": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
    "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "es": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "pt": [
     "epub",
     "html",
     "pdf",
@@ -199,6 +247,12 @@
    ]
   },
   "madame-bovary": {
+   "de": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
    "en": [
     "epub",
     "html",
@@ -253,6 +307,12 @@
    ]
   },
   "on-the-origin-of-species": {
+   "de": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
    "en": [
     "epub",
     "html",
@@ -293,7 +353,19 @@
    ]
   },
   "romeo-and-juliet": {
+   "de": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
    "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
     "epub",
     "html",
     "pdf",
@@ -409,6 +481,18 @@
     "pdf",
     "txt"
    ],
+   "es": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
    "it": [
     "epub",
     "html",
@@ -454,6 +538,18 @@
     "html",
     "pdf",
     "txt"
+   ],
+   "es": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
    ]
   },
   "the-importance-of-being-earnest": {
@@ -486,6 +582,12 @@
     "html",
     "pdf",
     "txt"
+   ],
+   "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
    ]
   },
   "the-last-of-the-mohicans": {
@@ -494,10 +596,28 @@
     "html",
     "pdf",
     "txt"
+   ],
+   "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
    ]
   },
   "the-odyssey": {
    "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "es": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
     "epub",
     "html",
     "pdf",
@@ -519,7 +639,19 @@
    ]
   },
   "the-picture-of-dorian-gray": {
+   "de": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
    "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
     "epub",
     "html",
     "pdf",
@@ -588,6 +720,12 @@
     "html",
     "pdf",
     "txt"
+   ],
+   "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
    ]
   },
   "the-theory-of-moral-sentiments": {
@@ -634,6 +772,12 @@
     "html",
     "pdf",
     "txt"
+   ],
+   "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
    ]
   },
   "the-wealth-of-nations": {
@@ -653,7 +797,19 @@
    ]
   },
   "the-wonderful-adventures-of-nils": {
+   "de": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
    "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
     "epub",
     "html",
     "pdf",
@@ -688,6 +844,12 @@
     "html",
     "pdf",
     "txt"
+   ],
+   "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
    ]
   },
   "walden": {
@@ -715,5 +877,5 @@
    ]
   }
  },
- "generated": "2026-09-25T14:15:08Z"
+ "generated": "2026-09-25T15:06:06Z"
 }
