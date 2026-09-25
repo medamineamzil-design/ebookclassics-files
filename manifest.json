@@ -1,6 +1,30 @@
 {
  "books": {
+  "aesop-s-fables": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "alice-s-adventures-in-wonderland": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "an-essay-on-the-principle-of-population": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "anna-karenina": {
    "en": [
     "epub",
     "html",
@@ -30,7 +54,67 @@
     "txt"
    ]
   },
+  "civil-disobedience": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "common-sense": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "crime-and-punishment": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "don-quixote": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "es": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "dracula": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "extraordinary-popular-delusions-and-the-madness-of-crowds": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "faust": {
+   "de": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
    "en": [
     "epub",
     "html",
@@ -53,6 +137,22 @@
    ]
   },
   "great-expectations": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "hamlet": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "heart": {
    "en": [
     "epub",
     "html",
@@ -112,7 +212,55 @@
     "txt"
    ]
   },
+  "meditations": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "metamorphoses": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "moby-dick": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "nicomachean-ethics": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "on-liberty": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "on-the-origin-of-species": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "on-the-principles-of-political-economy-and-taxation": {
    "en": [
     "epub",
     "html",
@@ -136,8 +284,46 @@
     "txt"
    ]
   },
+  "principles-of-political-economy": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "romeo-and-juliet": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "second-treatise-of-government": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-adventures-of-huckleberry-finn": {
    "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-adventures-of-pinocchio": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "it": [
     "epub",
     "html",
     "pdf",
@@ -160,7 +346,31 @@
     "txt"
    ]
   },
+  "the-autobiography-of-benjamin-franklin": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-betrothed": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-call-of-the-wild": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-communist-manifesto": {
    "en": [
     "epub",
     "html",
@@ -176,7 +386,77 @@
     "txt"
    ]
   },
+  "the-decameron": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-descent-of-man": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-divine-comedy": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "it": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-federalist-papers": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-great-gatsby": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-hound-of-the-baskervilles": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-house-by-the-medlar-tree": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-iliad": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-importance-of-being-earnest": {
    "en": [
     "epub",
     "html",
@@ -192,7 +472,31 @@
     "txt"
    ]
   },
+  "the-island-of-doctor-moreau": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-jungle-book": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-last-of-the-mohicans": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-odyssey": {
    "en": [
     "epub",
     "html",
@@ -206,9 +510,63 @@
     "html",
     "pdf",
     "txt"
+   ],
+   "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
    ]
   },
   "the-picture-of-dorian-gray": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-pilgrim-s-progress": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-prince": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-prince-and-the-pauper": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-railway-children": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-republic": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-scarlet-letter": {
    "en": [
     "epub",
     "html",
@@ -225,6 +583,22 @@
    ]
   },
   "the-strange-case-of-dr-jekyll-and-mr-hyde": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-theory-of-moral-sentiments": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-theory-of-the-leisure-class": {
    "en": [
     "epub",
     "html",
@@ -262,7 +636,23 @@
     "txt"
    ]
   },
+  "the-wealth-of-nations": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-wind-in-the-willows": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-wonderful-adventures-of-nils": {
    "en": [
     "epub",
     "html",
@@ -292,6 +682,30 @@
     "txt"
    ]
   },
+  "uncle-tom-s-cabin": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "walden": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "war-and-peace": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "wuthering-heights": {
    "en": [
     "epub",
@@ -301,5 +715,5 @@
    ]
   }
  },
- "generated": "2026-09-25T11:27:18Z"
+ "generated": "2026-09-25T14:15:08Z"
 }

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="2400" viewBox="0 0 1600 2400">
+<rect width="1600" height="2400" fill="#1c2b45"/>
+<rect x="90" y="90" width="1420" height="2220" fill="none" stroke="#f5b971" stroke-width="6" opacity=".8"/>
+<rect x="130" y="130" width="1340" height="2140" fill="none" stroke="#f5b971" stroke-width="2" opacity=".5"/>
+<circle cx="800" cy="560" r="150" fill="none" stroke="#f5b971" stroke-width="4" opacity=".7"/>
+<circle cx="800" cy="560" r="95" fill="#f5b971" opacity=".18"/>
+<text x="800" y="930" text-anchor="middle" font-size="120" font-family="Georgia, serif" fill="#f5b971">Nicomachean</text><text x="800" y="1070" text-anchor="middle" font-size="120" font-family="Georgia, serif" fill="#f5b971">Ethics</text>
+<line x1="560" y1="1230" x2="1040" y2="1230" stroke="#f5b971" stroke-width="4"/>
+<text x="800" y="1360" text-anchor="middle" font-size="70" font-style="italic"
+ font-family="Georgia, serif" fill="#f5b971">Aristotle</text>
+<text x="800" y="2190" text-anchor="middle" font-size="46" letter-spacing="12" font-family="Georgia, serif"
+ fill="#f5b971" opacity=".85">EBOOKCLASSICS</text>
+</svg>
