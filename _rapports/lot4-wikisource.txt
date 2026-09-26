@@ -1,0 +1,10 @@
+Lot 4 (Wikisource) — 2026-09-26 14:59
+! heart [it] : texte trop court (110 mots, Gutenberg #None) — IGNORÉ
++ the-house-by-the-medlar-tree [it] OK — Wikisource (it), « I Malavoglia », 16 sous-pages, 89082 mots, 17 chapitres — epub:206Ko pdf:941Ko txt:507Ko html:518Ko
+! the-decameron [it] ERREUR : HTTP Error 429: Too Many Requests
+! the-prince [it] ERREUR : HTTP Error 429: Too Many Requests
+! the-wonderful-adventures-of-nils [sv] ERREUR : HTTP Error 429: Too Many Requests
+! the-communist-manifesto [de] ERREUR : HTTP Error 429: Too Many Requests
+! capital-volume-i [en] : page introuvable sur en.wikisource (Capital: A Critique of Political Economy/Volume I, Capital (Marx)/Volume I, Capital: A Critique of Political Economy, Capital (Marx))
+! capital-volume-i [de] : page introuvable sur de.wikisource (Das Kapital. Band I, Das Kapital/Band I, Das Kapital)
+! the-book-of-common-prayer [en] ERREUR : HTTP Error 429: Too Many Requests
