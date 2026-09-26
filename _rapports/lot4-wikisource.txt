@@ -1,10 +1,9 @@
-Lot 4 (Wikisource) — 2026-09-26 14:59
-! heart [it] : texte trop court (110 mots, Gutenberg #None) — IGNORÉ
-+ the-house-by-the-medlar-tree [it] OK — Wikisource (it), « I Malavoglia », 16 sous-pages, 89082 mots, 17 chapitres — epub:206Ko pdf:941Ko txt:507Ko html:518Ko
-! the-decameron [it] ERREUR : HTTP Error 429: Too Many Requests
-! the-prince [it] ERREUR : HTTP Error 429: Too Many Requests
-! the-wonderful-adventures-of-nils [sv] ERREUR : HTTP Error 429: Too Many Requests
-! the-communist-manifesto [de] ERREUR : HTTP Error 429: Too Many Requests
-! capital-volume-i [en] : page introuvable sur en.wikisource (Capital: A Critique of Political Economy/Volume I, Capital (Marx)/Volume I, Capital: A Critique of Political Economy, Capital (Marx))
-! capital-volume-i [de] : page introuvable sur de.wikisource (Das Kapital. Band I, Das Kapital/Band I, Das Kapital)
-! the-book-of-common-prayer [en] ERREUR : HTTP Error 429: Too Many Requests
+Lot 4 (Wikisource) — 2026-09-26 15:10
++ capital-volume-i [en] OK — Marxists Internet Archive, 34 chapitres, 342606 mots, 141 chapitres — epub:827Ko pdf:3510Ko txt:2007Ko html:2031Ko
++ heart [it] OK — Wikisource (it), « Cuore (1889) », 111 sous-pages, 169900 mots, 292 chapitres — epub:597Ko pdf:1871Ko txt:987Ko html:1001Ko
+= the-house-by-the-medlar-tree [it] déjà fait
++ the-decameron [it] OK — Wikisource (it), « Decameron », 135 sous-pages, 551859 mots, 238 chapitres — epub:1199Ko pdf:5671Ko txt:3163Ko html:3183Ko
++ the-prince [it] OK — Wikisource (it), « Il Principe », 27 sous-pages, 27587 mots, 31 chapitres — epub:89Ko pdf:290Ko txt:164Ko html:167Ko
++ the-wonderful-adventures-of-nils [sv] OK — Wikisource (sv), « Nils Holgerssons underbara resa genom Sverige », 57 sous-pages, 199266 mots, 166 chapitres — epub:545Ko pdf:2131Ko txt:1135Ko html:1156Ko
++ the-communist-manifesto [de] OK — Wikisource (de), « Manifest der Kommunistischen Partei (1848) », 0 sous-pages, 9868 mots, 4 chapitres — epub:35Ko pdf:160Ko txt:74Ko html:76Ko
++ the-book-of-common-prayer [en] OK — Wikisource (en), « Book of Common Prayer », 13 sous-pages, 19306 mots, 13 chapitres — epub:43Ko pdf:282Ko txt:104Ko html:110Ko

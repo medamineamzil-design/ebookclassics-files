@@ -84,6 +84,14 @@
     "txt"
    ]
   },
+  "capital-volume-i": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "civil-disobedience": {
    "en": [
     "epub",
@@ -244,6 +252,12 @@
     "txt"
    ],
    "es": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "it": [
     "epub",
     "html",
     "pdf",
@@ -512,6 +526,14 @@
     "txt"
    ]
   },
+  "the-book-of-common-prayer": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-call-of-the-wild": {
    "en": [
     "epub",
@@ -521,6 +543,12 @@
    ]
   },
   "the-communist-manifesto": {
+   "de": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
    "en": [
     "epub",
     "html",
@@ -538,6 +566,12 @@
   },
   "the-decameron": {
    "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "it": [
     "epub",
     "html",
     "pdf",
@@ -768,6 +802,12 @@
     "html",
     "pdf",
     "txt"
+   ],
+   "it": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
    ]
   },
   "the-prince-and-the-pauper": {
@@ -916,6 +956,12 @@
     "html",
     "pdf",
     "txt"
+   ],
+   "sv": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
    ]
   },
   "the-wonderful-wizard-of-oz": {
@@ -979,5 +1025,5 @@
    ]
   }
  },
- "generated": "2026-09-26T15:01:15Z"
+ "generated": "2026-09-26T15:31:27Z"
 }
