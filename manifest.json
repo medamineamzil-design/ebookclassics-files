@@ -526,14 +526,6 @@
     "txt"
    ]
   },
-  "the-book-of-common-prayer": {
-   "en": [
-    "epub",
-    "html",
-    "pdf",
-    "txt"
-   ]
-  },
   "the-call-of-the-wild": {
    "en": [
     "epub",
@@ -1025,5 +1017,5 @@
    ]
   }
  },
- "generated": "2026-09-26T15:31:27Z"
+ "generated": "2026-09-26T15:51:51Z"
 }
