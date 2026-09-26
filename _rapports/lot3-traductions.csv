@@ -20,13 +20,11 @@ Crime and Punishment,fr,,,,ABSENT,aucune édition trouvée sur Gutenberg
 Crime and Punishment,de,,,,ABSENT,aucune édition trouvée sur Gutenberg
 Crime and Punishment,ru,,,,ABSENT,aucune édition trouvée sur Gutenberg
 Anna Karenina,fr,,,,ABSENT,aucune édition trouvée sur Gutenberg
-Anna Karenina,de,"[44956, 44957]",,,OK,"vérifié à la main : Traduction : Hans Moser (d'après la 7e édition), 2 volumes réunis"
 Anna Karenina,es,,,,ABSENT,aucune édition trouvée sur Gutenberg
 Anna Karenina,ru,,,,ABSENT,aucune édition trouvée sur Gutenberg
 Jane Eyre,de,,,,ABSENT,aucune édition trouvée sur Gutenberg
 Jane Eyre,es,,,,ABSENT,aucune édition trouvée sur Gutenberg
 Jane Eyre,it,,,,ABSENT,aucune édition trouvée sur Gutenberg
-Great Expectations,fr,17565,,,OK,vérifié à la main : Traduction : Charles Bernard-Derosne († 1904)
 Great Expectations,de,,,,ABSENT,aucune édition trouvée sur Gutenberg
 Dracula,fr,,,,ABSENT,aucune édition trouvée sur Gutenberg
 Dracula,de,,,,ABSENT,aucune édition trouvée sur Gutenberg
@@ -48,7 +46,6 @@ Don Quixote,de,,,,ABSENT,aucune édition trouvée sur Gutenberg
 Don Quixote,it,,,,ABSENT,aucune édition trouvée sur Gutenberg
 Don Quixote,pt,,,,ABSENT,aucune édition trouvée sur Gutenberg
 The Adventures of Huckleberry Finn,fr,,,,ABSENT,aucune édition trouvée sur Gutenberg
-Alice's Adventures in Wonderland,de,19778,,,OK,vérifié à la main : Traduction : Antonie Zimmermann (1869)
 Alice's Adventures in Wonderland,es,,,,ABSENT,aucune édition trouvée sur Gutenberg
 Alice's Adventures in Wonderland,pt,,,,ABSENT,aucune édition trouvée sur Gutenberg
 Alice's Adventures in Wonderland,sv,,,,ABSENT,aucune édition trouvée sur Gutenberg
@@ -62,12 +59,8 @@ The Iliad,de,,,,ABSENT,aucune édition trouvée sur Gutenberg
 The Iliad,it,,,,ABSENT,aucune édition trouvée sur Gutenberg
 The Iliad,pt,,,,ABSENT,aucune édition trouvée sur Gutenberg
 The Divine Comedy,fr,,,,ABSENT,aucune édition trouvée sur Gutenberg
-The Divine Comedy,de,8085,,,OK,vérifié à la main : Traduction allemande non signée
 The Divine Comedy,pt,,,,ABSENT,aucune édition trouvée sur Gutenberg
-Hamlet,de,7276,"Hamlet, Prinz von Dännemark","Shakespeare, William, 1564-1616; Wieland, Christoph Martin, 1733-1813 [Translator]",OK,traducteur décédé avant 1956
 Hamlet,it,,,,ABSENT,aucune édition trouvée sur Gutenberg
-Romeo and Juliet,fr,18143,Roméo et Juliette Tragédie,"Shakespeare, William, 1564-1616; Guizot, François, 1787-1874 [Translator]",OK,traducteur décédé avant 1956
-Romeo and Juliet,de,6996,Romeo und Julia,"Shakespeare, William, 1564-1616; Schlegel, August Wilhelm von, 1767-1845 [Translator]",OK,traducteur décédé avant 1956
 Romeo and Juliet,es,,,,ABSENT,aucune édition trouvée sur Gutenberg
 Romeo and Juliet,it,,,,ABSENT,aucune édition trouvée sur Gutenberg
 Romeo and Juliet,pt,,,,ABSENT,aucune édition trouvée sur Gutenberg
@@ -88,14 +81,12 @@ Aesop's Fables,de,,,,ABSENT,aucune édition trouvée sur Gutenberg
 Aesop's Fables,es,,,,ABSENT,aucune édition trouvée sur Gutenberg
 The Scarlet Letter,fr,,,,ABSENT,aucune édition trouvée sur Gutenberg
 The Scarlet Letter,de,,,,ABSENT,aucune édition trouvée sur Gutenberg
-Uncle Tom's Cabin,fr,38704,"La case de l'oncle Tom; ou, vie des nègres en Amérique","Stowe, Harriet Beecher, 1811-1896; Enault, Louis, 1824-1900 [Translator]",OK,traducteur décédé avant 1956
 Uncle Tom's Cabin,de,,,,ABSENT,aucune édition trouvée sur Gutenberg
 Uncle Tom's Cabin,es,,,,ABSENT,aucune édition trouvée sur Gutenberg
 Uncle Tom's Cabin,it,,,,ABSENT,aucune édition trouvée sur Gutenberg
 Common Sense,fr,,,,ABSENT,aucune édition trouvée sur Gutenberg
 On Liberty,fr,,,,ABSENT,aucune édition trouvée sur Gutenberg
 On Liberty,de,,,,ABSENT,aucune édition trouvée sur Gutenberg
-On the Origin of Species,fr,14158,,,OK,vérifié à la main : Traduction française non signée
 On the Origin of Species,it,,,,ABSENT,aucune édition trouvée sur Gutenberg
 The Secret Garden,fr,,,,ABSENT,aucune édition trouvée sur Gutenberg
 The Secret Garden,de,,,,ABSENT,aucune édition trouvée sur Gutenberg
@@ -107,7 +98,6 @@ Little Women,fr,,,,ABSENT,aucune édition trouvée sur Gutenberg
 Little Women,de,,,,ABSENT,aucune édition trouvée sur Gutenberg
 The Call of the Wild,fr,,,,ABSENT,aucune édition trouvée sur Gutenberg
 The Call of the Wild,de,,,,ABSENT,aucune édition trouvée sur Gutenberg
-The Last of the Mohicans,fr,16236,Le dernier des mohicans: Le roman de Bas-de-cuir,"Cooper, James Fenimore, 1789-1851; Defauconpret, A.-J.-B. (Auguste-Jean-Baptiste), 1767-1843 [Translator]",OK,traducteur décédé avant 1956
 The Last of the Mohicans,de,,,,ABSENT,aucune édition trouvée sur Gutenberg
 The Time Machine,fr,,,,ABSENT,aucune édition trouvée sur Gutenberg
 The Time Machine,de,,,,ABSENT,aucune édition trouvée sur Gutenberg
@@ -160,3 +150,56 @@ An Essay on the Principle of Population,fr,,,,ABSENT,aucune édition trouvée su
 On the Principles of Political Economy and Taxation,fr,,,,ABSENT,aucune édition trouvée sur Gutenberg
 The Theory of Moral Sentiments,fr,,,,ABSENT,aucune édition trouvée sur Gutenberg
 Second Treatise of Government,fr,,,,ABSENT,aucune édition trouvée sur Gutenberg
+Robinson Crusoe,fr,38705,Robinson Crusoe (I/II),"Defoe, Daniel, 1661?-1731; Borel, Pétrus, 1809-1859 [Translator]",OK,traducteur décédé avant 1956
+Robinson Crusoe,de,60344,"Robinson Crusoe's Reisen, wunderbare Abenteuer und Erlebnisse","Defoe, Daniel, 1661?-1731; Nicholson, F. H. [Illustrator]",OK,traducteur non indiqué (inclus sur décision du propriétaire)
+Robinson Crusoe,es,,,,ABSENT,aucune édition trouvée sur Gutenberg
+Gulliver's Travels,fr,17640,Les Voyages de Gulliver,"Swift, Jonathan, 1667-1745",OK,traducteur non indiqué (inclus sur décision du propriétaire)
+Gulliver's Travels,de,,,,ABSENT,aucune édition trouvée sur Gutenberg
+Gulliver's Travels,es,,,,ABSENT,aucune édition trouvée sur Gutenberg
+Treasure Island,fr,76225,L'île au trésor,"Stevenson, Robert Louis, 1850-1894; Roux, George, 1853-1929 [Illustrator]; Grousset, Paschal, 1844-1909 [Translator]",OK,traducteur décédé avant 1956
+Treasure Island,de,49424,Die Schatzinsel: Roman,"Stevenson, Robert Louis, 1850-1894; Hoerschelmann, Rolf von, 1885-1947 [Illustrator]",OK,traducteur non indiqué (inclus sur décision du propriétaire)
+Treasure Island,es,45438,La isla del tesoro,"Stevenson, Robert Louis, 1850-1894; Caballero, Manuel, 1849-1926 [Translator]",OK,traducteur décédé avant 1956
+Oliver Twist,fr,61994,Olivier Twist: Les voleurs de Londres,"Dickens, Charles, 1812-1870; La Bédollière, Emile de, 1812-1883 [Translator]",OK,traducteur décédé avant 1956
+Oliver Twist,de,56586,Oliver Twist,"Dickens, Charles, 1812-1870; Gaulke, Johannes, 1869- [Contributor]",OK,traducteur non indiqué (inclus sur décision du propriétaire)
+A Tale of Two Cities,fr,,,,ABSENT,aucune édition trouvée sur Gutenberg
+A Christmas Carol,fr,,,,ABSENT,aucune édition trouvée sur Gutenberg
+A Christmas Carol,de,,,,ABSENT,aucune édition trouvée sur Gutenberg
+David Copperfield,fr,,,,ABSENT,aucune édition trouvée sur Gutenberg
+David Copperfield,de,,,,ABSENT,aucune édition trouvée sur Gutenberg
+Emma,fr,,,,ABSENT,aucune édition trouvée sur Gutenberg
+Sense and Sensibility,fr,,,,ABSENT,aucune édition trouvée sur Gutenberg
+Persuasion,fr,36777,Persuasion,"Austen, Jane, 1775-1817; Letorsay, Madame [Translator]",OK,date de décès du traducteur inconnue (inclus sur décision du propriétaire)
+Kidnapped,fr,,,,ABSENT,aucune édition trouvée sur Gutenberg
+Kidnapped,de,,,,ABSENT,aucune édition trouvée sur Gutenberg
+Paradise Lost,fr,62922,Le Paradis Perdu,"Milton, John, 1608-1674; Chateaubriand, François-René, vicomte de, 1768-1848 [Translator]",OK,traducteur décédé avant 1956
+Paradise Lost,de,,,,ABSENT,aucune édition trouvée sur Gutenberg
+Macbeth,fr,13868,Macbeth,"Shakespeare, William, 1564-1616; Guizot, François, 1787-1874 [Translator]",OK,traducteur décédé avant 1956
+Macbeth,de,6975,Macbeth,"Shakespeare, William, 1564-1616; Tieck, Dorothea, 1799-1841 [Translator]",OK,traducteur décédé avant 1956
+Macbeth,es,,,,ABSENT,aucune édition trouvée sur Gutenberg
+Macbeth,it,,,,ABSENT,aucune édition trouvée sur Gutenberg
+Othello,fr,18179,Othello,"Shakespeare, William, 1564-1616; Guizot, François, 1787-1874 [Translator]",OK,traducteur décédé avant 1956
+Othello,de,7185,Othello,"Shakespeare, William, 1564-1616; Wieland, Christoph Martin, 1733-1813 [Translator]",OK,traducteur décédé avant 1956
+Othello,es,,,,ABSENT,aucune édition trouvée sur Gutenberg
+King Lear,fr,18312,Le roi Lear,"Shakespeare, William, 1564-1616; Guizot, François, 1787-1874 [Translator]",OK,traducteur décédé avant 1956
+King Lear,de,7240,Das Leben und der Tod des Königs Lear,"Shakespeare, William, 1564-1616; Wieland, Christoph Martin, 1733-1813 [Translator]",OK,traducteur décédé avant 1956
+A Midsummer Night's Dream,fr,17930,Le songe d'une nuit d'été,"Shakespeare, William, 1564-1616; Guizot, François, 1787-1874 [Translator]",OK,traducteur décédé avant 1956
+A Midsummer Night's Dream,de,7022,Ein Sommernachtstraum,"Shakespeare, William, 1564-1616; Schlegel, August Wilhelm von, 1767-1845 [Translator]",OK,traducteur décédé avant 1956
+The Tempest,fr,15071,La Tempête,"Shakespeare, William, 1564-1616; Guizot, François, 1787-1874 [Translator]",OK,traducteur décédé avant 1956
+The Tempest,de,7236,"Der Sturm, oder Die bezauberte Insel","Shakespeare, William, 1564-1616; Wieland, Christoph Martin, 1733-1813 [Translator]",OK,traducteur décédé avant 1956
+The Brothers Karamazov,fr,,,,ABSENT,aucune édition trouvée sur Gutenberg
+The Brothers Karamazov,de,,,,ABSENT,aucune édition trouvée sur Gutenberg
+The Idiot,fr,,,,ABSENT,aucune édition trouvée sur Gutenberg
+The Idiot,de,,,,ABSENT,aucune édition trouvée sur Gutenberg
+Around the World in Eighty Days,de,,,,ABSENT,aucune édition trouvée sur Gutenberg
+Around the World in Eighty Days,es,,,,ABSENT,aucune édition trouvée sur Gutenberg
+Journey to the Centre of the Earth,de,,,,ABSENT,aucune édition trouvée sur Gutenberg
+Journey to the Centre of the Earth,es,,,,ABSENT,aucune édition trouvée sur Gutenberg
+The Hunchback of Notre-Dame,de,,,,ABSENT,aucune édition trouvée sur Gutenberg
+The Hunchback of Notre-Dame,es,,,,ABSENT,aucune édition trouvée sur Gutenberg
+Germinal,de,,,,ABSENT,aucune édition trouvée sur Gutenberg
+Grimm's Fairy Tales,fr,12250,Contes choisis de la famille,"Grimm, Jacob, 1785-1863; Grimm, Wilhelm, 1786-1859",OK,traducteur non indiqué (inclus sur décision du propriétaire)
+Grimm's Fairy Tales,es,,,,ABSENT,aucune édition trouvée sur Gutenberg
+Andersen's Fairy Tales,fr,,,,ABSENT,aucune édition trouvée sur Gutenberg
+Andersen's Fairy Tales,de,19163,Märchen für Kinder,"Andersen, H. C. (Hans Christian), 1805-1875",OK,traducteur non indiqué (inclus sur décision du propriétaire)
+The Arabian Nights,fr,15371,Les mille et une nuits - Tome premier,"Galland, Antoine, 1646-1715 [Translator]",OK,traducteur décédé avant 1956
+The Arabian Nights,de,,,,ABSENT,aucune édition trouvée sur Gutenberg

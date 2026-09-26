@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Le songe d&#x27;une nuit d&#x27;été — William Shakespeare</title><style>
+:root{--paper:#fbf8f1;--ink:#1f1b16;--muted:#6f6352;--accent:#9a6b2f;--rule:#e4dccb}
+@media (prefers-color-scheme:dark){:root{--paper:#16140f;--ink:#ece6d8;--muted:#a79c88;--accent:#d8a95e;--rule:#2e2a22}}
+html{background:var(--paper)}
+body{font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Libertinus Serif",Georgia,serif;color:var(--ink);
+     background:var(--paper);line-height:1.65;font-size:1.12rem;max-width:36em;margin:0 auto;padding:2.5em 1.25em 5em}
+.titlepage{text-align:center;min-height:70vh;display:flex;flex-direction:column;justify-content:center;gap:.6em;
+           border-bottom:1px solid var(--rule);margin-bottom:2.5em;padding-bottom:2.5em}
+.titlepage img{max-width:260px;width:60%;margin:0 auto 1.5em;border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+h1{font-size:2.4em;line-height:1.15;font-weight:600;margin:0;letter-spacing:-.01em}
+.author{font-style:italic;font-size:1.25em;color:var(--accent);margin:0}
+.translator{font-size:.95em;color:var(--muted);margin:0}
+nav.toc{margin:0 0 3em}
+nav.toc h2{font-size:.85em;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:left;margin:0 0 .8em}
+nav.toc ol{list-style:none;padding:0;margin:0;columns:1}
+nav.toc li{margin:.25em 0}
+nav.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent}
+nav.toc a:hover{border-color:var(--accent)}
+h2.chapter{font-size:1.45em;font-weight:600;text-align:center;margin:3.5em 0 1.6em;line-height:1.3}
+h2.chapter::before{content:"";display:block;width:3em;height:2px;background:var(--accent);margin:0 auto 1.1em}
+p{margin:0;text-indent:1.5em;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+h2.chapter + p, .titlepage + p{text-indent:0}
+h2.chapter + p::first-letter{font-size:3.1em;float:left;line-height:.85;padding:.08em .08em 0 0;color:var(--accent);font-weight:600}
+.colophon{margin-top:5em;padding-top:1.5em;border-top:1px solid var(--rule);text-align:center;color:var(--muted);font-size:.85em;text-indent:0}
+h3.sub{font-size:1em;font-weight:600;font-variant:small-caps;letter-spacing:.04em;text-align:center;margin:2.2em 0 1em}
+h3.sub + p{text-indent:0}
+@media print{h2.chapter{break-before:page}}
+</style></head><body>
+<header class="titlepage">
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjI0MDAiIHZpZXdCb3g9IjAgMCAxNjAwIDI0MDAiPgo8cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSIyNDAwIiBmaWxsPSIjMWIzYTRiIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjMwMCIgZmlsbD0iI2Y0YTI2MSIgb3BhY2l0eT0iLjkyIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMWIzYTRiIiBzdHJva2Utd2lkdGg9IjEyIiBvcGFjaXR5PSIuNSIvPgo8Y2lyY2xlIGN4PSIxMTIwIiBjeT0iNTYwIiByPSIxMjAiIGZpbGw9IiMxYjNhNGIiIG9wYWNpdHk9Ii4xOCIvPgo8cmVjdCB4PSIxNjAiIHk9IjkzMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIxMCIgZmlsbD0iI2Y0YTI2MSIvPgo8dGV4dCB4PSIxNjAiIHk9IjEwOTgiIGZvbnQtc2l6ZT0iMTUwIiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmZGYxZTYiPkxlIHNvbmdlIGQmI3gyNzt1bmU8L3RleHQ+PHRleHQgeD0iMTYwIiB5PSIxMjYyIiBmb250LXNpemU9IjE1MCIgZm9udC13ZWlnaHQ9IjYwMCIgZm9udC1mYW1pbHk9IkxpYmVydGludXMgU2VyaWYsIEdlb3JnaWEsIHNlcmlmIiBmaWxsPSIjZmRmMWU2Ij5udWl0IGQmI3gyNzvDqXTDqTwvdGV4dD4KPHRleHQgeD0iMTYwIiB5PSIxNDk4IiBmb250LXNpemU9IjY4IiBmb250LXN0eWxlPSJpdGFsaWMiIGZvbnQtZmFtaWx5PSJMaWJlcnRpbnVzIFNlcmlmLCBHZW9yZ2lhLCBzZXJpZiIgZmlsbD0iI2Y0YTI2MSI+V2lsbGlhbSBTaGFrZXNwZWFyZTwvdGV4dD4KPHRleHQgeD0iMTYwIiB5PSIyMjMwIiBmb250LXNpemU9IjQ0IiBsZXR0ZXItc3BhY2luZz0iMTQiIGZvbnQtZmFtaWx5PSJMaWJlcnRpbnVzIFNlcmlmLCBHZW9yZ2lhLCBzZXJpZiIgZmlsbD0iI2ZkZjFlNiIgb3BhY2l0eT0iLjc1Ij5FQk9PS0NMQVNTSUNTPC90ZXh0Pgo8L3N2Zz4=" alt="">
+<h1>Le songe d&#x27;une nuit d&#x27;été</h1>
+<p class="author">William Shakespeare</p>
+<p class="translator">Traduction de Guizot, François</p>
+</header>
+<nav class="toc"><h2>Table des matières</h2><ol>
+<li><a href="#c1">Scène I</a></li>
+<li><a href="#c2">Scène II</a></li>
+<li><a href="#c3">Scène I</a></li>
+<li><a href="#c4">Scène III</a></li>
+<li><a href="#c5">Scène IV</a></li>
+<li><a href="#c6">II — Seconde fée.</a></li>
+<li><a href="#c7">Scène I</a></li>
+<li><a href="#c8">Scène II</a></li>
+<li><a href="#c9">Scène I</a></li>
+<li><a href="#c10">Scène II</a></li>
+<li><a href="#c11">Scène I</a></li>
+<li><a href="#c12">Scène II</a></li>
+</ol></nav>
+<p>Le Songe d&#x27;une nuit d&#x27;été peut être regardé comme le pendant de la Tempête. C&#x27;est encore ici une pièce de féerie, où l&#x27;imagination semble avoir été le seul guide de Shakspeare. Aussi, pour la juger, faut-il ne pas oublier son titre et se livrer au caprice du poëte, qui a dû sentir lui-même tout ce qu&#x27;aurait de choquant pour un esprit méthodique et froid le mélange bizarre de la mythologie ancienne et de la mythologie moderne, le transport rapide du spectateur d&#x27;un monde réel dans un monde fantastique, et de celui-ci dans l&#x27;autre. La Vie de Thésée, dans Plutarque, et deux contes de Chaucer, ont peut-être fourni à Shakspeare quelques traits de son ouvrage, mais l&#x27;imitation y est très-difficile à reconnaître.</p>
+<p>On préfère généralement la Tempête au Songe d&#x27;une nuit d&#x27;été. Le seul Schlegel semble pencher pour cette dernière pièce; Hazzlitt n&#x27;est point de son avis, mais il ajoute que si la Tempête est une meilleure pièce, le Songe est un poëme supérieur à la Tempête. On trouve, en effet, dans le Songe, une foule de détails et de descriptions remarquables par le charme des vers, la richesse et la fraîcheur des images: «La lecture de cette pièce, dit Hazzlitt, ressemble à une promenade dans un bosquet, à la clarté de la lune.»</p>
+<p>Mais est-il rien de plus poétique que le caractère de Miranda et la pureté de ses amours avec Ferdinand? Ariel aussi l&#x27;emporte de beaucoup sur Puck, qui est l&#x27;Ariel du Songe d&#x27;une nuit d&#x27;été, mais qui en diffère essentiellement par son caractère, quoique ces deux personnages aériens aient entre eux tant de ressemblance par leurs fonctions et les situations où ils se trouvent. Ariel, dit encore le critique que nous avons cité tout à l&#x27;heure, Ariel est un ministre de vengeance qui est touché de pitié pour ceux qu&#x27;il punit; Puck est un esprit étourdi, plein de légèreté et de malice, qui rit de ceux qu&#x27;il égare: «Que ces mortels sont fous!» Ariel fend l&#x27;air et exécute sa mission avec le zèle d&#x27;un messager ailé; Puck est porté par la brise comme le duvet brillant des plantes.</p>
+<p>Il est étonnant que Shakspeare soit considéré non-seulement par les étrangers, mais par plusieurs des critiques de sa nation, comme un écrivain sombre et terrible qui ne peignit que des gorgones, des hydres et d&#x27;effrayantes chimères. Il surpasse tous les écrivains dramatiques par la finesse et la subtilité de son esprit; tellement qu&#x27;un célèbre personnage de nos jours disait qu&#x27;il le regardait plutôt comme un métaphysicien que comme un poëte.</p>
+<p>Il paraît que, dans cette pièce, Shakspeare avait pour but de faire la caricature d&#x27;une troupe de comédiens rivale de la sienne, et peut-être de tous ces artistes amateurs chez qui le goût du théâtre est une passion souvent ridicule.</p>
+<p>Le caractère de Bottom est un des plus comiques de Shakspeare; Hazzlitt l&#x27;appelle le plus romanesque des artisans, et observe à son sujet ce qu&#x27;on a dit plusieurs fois, c&#x27;est que les caractères de Shakspeare sont toujours fondés sur les principes d&#x27;une physiologie profonde. Bottom, qui exerce un état sédentaire, est représenté comme suffisant, sérieux et fantasque. Il est prêt à tout entreprendre, comme si tout lui était aussi facile que le maniement de sa navette. Il jouera, si on veut, le tyran, l&#x27;amant, la dame, le lion, etc., etc.</p>
+<p>Snug, le menuisier, est le philosophe de la pièce; il procède en toute chose avec mesure et prudence. Vous croyez le voir, son équerre et son compas à la main: «Avez-vous par écrit le rôle du lion? si vous l&#x27;avez, donnez-le moi, je vous prie, car j&#x27;ai la mémoire paresseuse.--Vous pouvez l&#x27;improviser, dit Quince, car il ne s&#x27;agit que de rugir.»</p>
+<p>Starveling cependant ne propose pas ses objections lui-même, mais il appuie celles des autres, comme s&#x27;il n&#x27;avait pas le courage d&#x27;exprimer ses craintes sans être soutenu et excité à le faire. Ce serait aller trop loin que de supposer que toutes ces différences caractéristiques sont faites avec intention, mais heureusement elles existent dans les créations de Shakspeare comme dans la nature.</p>
+<p>Les caractères dramatiques et les caractères grotesques sont placés par lui dans le même tableau avec d&#x27;autant plus d&#x27;art que l&#x27;art ne s&#x27;aperçoit nullement. Oberon, Titania, Puck, et tous les êtres impalpables de Shakspeare, sont aussi vrais dans leur nature fantastique que les personnages dont la vie réelle a fourni le modèle au poëte.</p>
+<h3 class="sub">Personnages</h3>
+<p>THÉSEE, duc d&#x27;Athènes. ÉGÉE, père d&#x27;Hermia. LYSANDRE, } DEMETRIUS,} amoureux d&#x27;Hermia. PHILOSTRATE, ordonnateur des fêtes de Thésée. QUINCE, charpentier. BOTTOM, tisserand. FLUTE, marchand de soufflets. SNOUT, chaudronnier. STARVELING, tailleur. HIPPOLYTE, reine des Amazones, fiancée à Thésée. HERMIA, fille d&#x27;Égée, amoureuse de Lysandre. HÉLÈNE, amoureuse de Démétrius. OBERON, roi des fées,   } TITANIA, reine des fées,} [1] PUCK, ou ROBIN BON DIABLE, lutin. FLEUR-DE-POIS (Pea&#x27;s-Blossom),} TOILE D&#x27;ARAIGNÉE (Cobweb),    } fées. PAPILLON (Moth),              } GRAIN DE MOUTARDE (Mustard-Seed),} PYRAME,                          } THISBE,                          } LA MURAILLE,                     } LE CLAIR DE LUNE,                } personnages de l&#x27;intermède. LE LION,                         } FÉES DE LA SUITE DU ROI ET DE LA REINE. SUITE DE THÉSÉE ET D&#x27;HIPPOLYTE.</p>
+<h2 class="chapter" id="c1">Scène I</h2>
+<p>La scène représente un appartement du palais de Thésée, dans Athènes.</p>
+<p>THÉSÉE, HIPPOLYTE, PHILOSTRATE, suite.</p>
+<p>THÉSÉE.--Belle Hippolyte, l&#x27;heure de notre hymen s&#x27;avance à grands pas: quatre jours fortunés amèneront une lune nouvelle; mais que l&#x27;ancienne me semble lente à décroître! Elle retarde l&#x27;objet de mes désirs, comme une marâtre, ou une douairière, qui puise longtemps dans les revenus du jeune héritier.</p>
+<p>[Note 1: Les personnages d&#x27;Oberon et de Titania étaient connus avant Shakspeare, mais ils sont devenus, dans la pièce, des personnages originaux. Shakspeare est pour la mythologie des fées, en Angleterre, ce qu&#x27;était Homère pour celle de l&#x27;Olympe.</p>
+<p>Peut-être Chaucer aurait-il droit de partager cette gloire avec lui, mais ce poëte est oublié même de ses compatriotes, à cause de la vétusté de son langage.</p>
+<p>Titania était aussi appelée la reine Mab; et Puck ou Hobgoblin, connu encore de nos jours dans les trois royaumes sous le nom de Robin good fellow était le serviteur spécialement attaché à Oberon, et chargé de découvrir les intrigues de la reine. On prétend que Puck est un vieux mot gothique qui veut dire Satan. Cet esprit est regardé comme très-malicieux et enclin à troubler les ménages. Si l&#x27;on n&#x27;avait pas soin de laisser une tasse de crème ou de lait caillé pour Robin, le lendemain le potage était brûlé, le beurre ne pouvait pas prendre, etc., etc. C&#x27;était sa récompense pour la peine qu&#x27;il prenait de balayer la maison à minuit et de moudre la moutarde.]</p>
+<p>HIPPOLYTE.--Quatre jours seront bientôt engloutis dans la nuit, et quatre nuits auront bientôt fait couler le temps comme un songe; et alors la lune, comme un arc d&#x27;argent nouvellement tendu dans les cieux, éclairera la nuit de nos noces.</p>
+<p>THÉSÉE.--Allez, Philostrate; excitez la jeunesse athénienne à se divertir; réveillez les esprits vifs et légers de la joie; renvoyez aux funérailles la mélancolie: cette pâle compagne n&#x27;est pas faite pour notre fête. (Philostrate sort.) Hippolyte[2], je t&#x27;ai fait la cour l&#x27;épée à la main, j&#x27;ai conquis ton coeur par les rigueurs de la guerre; mais je veux t&#x27;épouser sous d&#x27;autres auspices, au milieu de la pompe, des triomphes et des fêtes.</p>
+<p>[Note 2: Allusion à la victoire de Thésée sur les Amazones. Hippolyte, que d&#x27;autres appellent Antiope, avait été emmenée captive par le vainqueur.]</p>
+<p>(Entrent Égée, Hermia, Lysandre et Démétrius.)</p>
+<p>ÉGÉE.--Soyez heureux, Thésée, notre illustre duc!</p>
+<p>THÉSÉE.--Je vous rends grâces, bon Égée: quelles nouvelles nous annoncez-vous?</p>
+<p>ÉGÉE.--Je viens, le coeur plein d&#x27;angoisses, me plaindre de mon enfant, de ma fille Hermia.--Avancez, Démétrius.--Mon noble prince, ce jeune homme a mon consentement pour l&#x27;épouser.--Avancez, Lysandre. Et celui-ci, mon gracieux duc, a ensorcelé le coeur de mon enfant. C&#x27;est toi, c&#x27;est toi, Lysandre, qui lui as donné des vers et qui as échangé avec ma fille des gages d&#x27;amour. Tu as, à la clarté de la lune, chanté sous sa fenêtre, avec une voix trompeuse, des vers d&#x27;un amour trompeur: tu as surpris son imagination avec des bracelets de tes cheveux, avec des bagues, des bijoux, des hochets, des colifichets, des bouquets, des friandises, messagers d&#x27;un ascendant puissant sur la tendre jeunesse! Tu as dérobé avec adresse le coeur de ma fille, et changé l&#x27;obéissance qu&#x27;elle doit à son père en un âpre entêtement. Ainsi, gracieux duc, dans le cas où elle oserait refuser ici devant Votre Altesse de consentir à épouser Démétrius, je réclame l&#x27;ancien privilége d&#x27;Athènes. Comme elle est à moi, je puis disposer d&#x27;elle; et ce sera pour la livrer à ce jeune homme ou à la mort, en vertu de notre loi[3], qui a prévu expressément ce cas.</p>
+<p>[Note 3: Par une loi de Solon, les pères exerçaient sur leurs enfants un droit de vie et de mort.]</p>
+<p>THÉSÉE.--Que répondez-vous, Hermia? Charmante fille, pensez-y bien. Votre père devrait être un dieu pour vous: c&#x27;est lui qui a formé vos attraits: vous n&#x27;êtes à son égard qu&#x27;une image de cire, qui a reçu de lui son empreinte; et il est en sa puissance de laisser subsister la figure, ou de la briser.--Démétrius est un digne jeune homme.</p>
+<p>HERMIA.--Lysandre aussi.</p>
+<p>THÉSÉE.--Il est par lui-même plein de mérite; mais, dans cette occasion, faute d&#x27;avoir l&#x27;agrément de votre père, c&#x27;est l&#x27;autre qui doit avoir la préférence.</p>
+<p>HERMIA.--Je voudrais que mon père pût seulement voir avec mes yeux.</p>
+<p>THÉSÉE.--C&#x27;est plutôt à vos yeux de voir avec le jugement de votre père.</p>
+<p>HERMIA.--Je supplie Votre Altesse de me pardonner. Je ne sais pas par quelle force secrète je suis enhardie, ni à quel point ma pudeur peut être compromise, en ici mes sentiments en votre présence. Mais je conjure Votre Altesse de me faire connaître ce qui peut m&#x27;arriver de plus funeste, dans le cas où je refuserais d&#x27;épouser Démétrius.</p>
+<p>THÉSÉE.--C&#x27;est, ou de subir la mort, ou de renoncer pour jamais à la société des hommes. Ainsi, belle Hermia, interrogez vos inclinations, considérez votre jeunesse, consultez votre coeur; voyez si, n&#x27;adoptant pas le choix de votre père, vous pourrez supporter le costume d&#x27;une religieuse, être à jamais enfermée dans l&#x27;ombre d&#x27;un cloître pour y vivre en soeur stérile toute votre vie, chantant des hymnes languissants à la froide et stérile lune. Trois fois heureuses, celles qui peuvent maîtriser assez leur sang, pour supporter ce pèlerinage des vierges: mais plus heureuse est sur la terre la rose distillée que celle qui, se flétrissant sur son épine virginale, croît, vit, et meurt dans un bonheur solitaire.</p>
+<p>HERMIA.--Je veux croître, vivre et mourir comme elle, mon prince, plutôt que de céder ma virginité à l&#x27;empire d&#x27;un homme dont il me répugne de porter le joug, et dont mon coeur ne consent point à reconnaître la souveraineté.</p>
+<p>THÉSÉE.--Prenez du temps pour réfléchir; et à la prochaine nouvelle lune, jour qui scellera le noeud d&#x27;une éternelle union entre ma bien-aimée et moi, ce jour-là même, préparez-vous à mourir, pour votre désobéissance à la volonté de votre père; ou bien à épouser Démétrius, comme il le désire; ou enfin à prononcer, sur l&#x27;autel de Diane, le voeu qui consacre à une vie austère et à la virginité.</p>
+<p>DÉMÉTRIUS.--Fléchissez, chère Hermia.--Et vous, Lysandre, cédez votre titre imaginaire à mes droits certains.</p>
+<p>LYSANDRE.--Vous avez l&#x27;amour de son père, Démétrius, épousez-le; mais laissez-moi l&#x27;amour d&#x27;Hermia.</p>
+<p>ÉGÉE.--Dédaigneux Lysandre! C&#x27;est vrai, il a mon amour; et mon amour lui fera don de tout ce qui m&#x27;appartient: elle est mon bien, et je transmets tous mes droits à Démétrius.</p>
+<p>LYSANDRE.--Mon prince, je suis aussi bien né que lui; aussi riche que lui, et mon amour est plus grand que le sien: mes avantages peuvent être égalés sur tous les points à ceux de Démétrius, s&#x27;ils n&#x27;ont pas même la supériorité; et, ce qui est au-dessus de toutes ces vanteries, je suis aimé de la belle Hermia. Pourquoi donc ne poursuivrais-je pas mes droits? Démétrius, je le lui soutiendrai en face, a fait l&#x27;amour à la fille de Nédar, à Hélène, et il a séduit son coeur; elle, pauvre femme, adore passionnément, adore jusqu&#x27;à l&#x27;idolâtrie cet homme inconstant et coupable.</p>
+<p>THÉSÉE.--Je dois convenir que ce bruit est venu jusqu&#x27;à moi, et que j&#x27;avais l&#x27;intention d&#x27;en parler à Démétrius; mais surchargé de mes affaires personnelles, cette idée s&#x27;était échappée de mon esprit.--Mais venez, Démétrius; et vous aussi, Égée, vous allez me suivre. J&#x27;ai quelques instructions particulières à vous donner.--Quant à vous, belle Hermia, voyez à faire un effort sur vous-même pour soumettre vos penchants à la volonté de votre père; autrement, la loi d&#x27;Athènes, que nous ne pouvons adoucir par aucun moyen, vous oblige à choisir entre la mort et la consécration à une vie solitaire.--Venez, mon Hippolyte. Comment vous trouvez-vous, ma bien-aimée?--Démétrius, et vous, Égée, suivez-nous. J&#x27;ai besoin de vous pour quelques affaires relatives à notre mariage; et je veux conférer avec vous sur un sujet qui vous intéresse vous-mêmes personnellement.</p>
+<p>ÉGÉE.--Nous vous suivons, prince, avec respect et plaisir.</p>
+<p>(Thésée et Hippolyte sortent avec leur suite; Démétrius et Égée les accompagnent.)</p>
+<p>LYSANDRE.--Qu&#x27;avez-vous donc, ma chère? Pourquoi cette pâleur sur vos joues? quelle cause a donc si vite flétri les roses?</p>
+<p>HERMIA.--Apparemment le défaut de rosée, qu&#x27;il me serait aisé de leur prodiguer de mes yeux gonflés de larmes.</p>
+<p>LYSANDRE.--Hélas! j&#x27;en juge par tout ce que j&#x27;ai lu dans l&#x27;histoire, par tout ce que j&#x27;ai entendu raconter, jamais le cours d&#x27;un amour sincère ne fut paisible. Mais tantôt les obstacles viennent de la différence des conditions....</p>
+<p>HERMIA.--Oh! quel malheur, quand on est enchaîné à quelqu&#x27;un de plus bas que soi!</p>
+<p>LYSANDRE.--Tantôt les coeurs sont mal assortis à cause de la différence des années....</p>
+<p>HERMIA.--O douleur! quand la vieillesse est unie à la jeunesse.</p>
+<p>LYSANDRE.--Tantôt c&#x27;est le choix de nos amis qui contrarie l&#x27;amour....</p>
+<p>HERMIA.--Oh! c&#x27;est un enfer, de choisir l&#x27;objet de son amour par les yeux d&#x27;autrui.</p>
+<p>LYSANDRE.--Ou, s&#x27;il se trouvait de la sympathie dans le choix, la guerre, la mort ou la maladie, sont venues l&#x27;assaillir et le rendre momentané comme un son, rapide comme une ombre, court comme un songe, passager comme l&#x27;éclair qui, au milieu d&#x27;une nuit sombre, découvre, dans un clin d&#x27;oeil, le ciel et la terre; et avant que l&#x27;homme ait eu le temps de dire: Voyez! le gouffre de ténèbres l&#x27;a englouti. C&#x27;est ainsi que tout ce qui brille est prompt à disparaître.</p>
+<p>HERMIA.--Si les vrais amants ont toujours été traversés, c&#x27;est un arrêt du destin; apprenons donc à le subir avec patience, puisque c&#x27;est un revers commun, et aussi inséparable de l&#x27;amour que les pensées, les songes, les désirs et les larmes, accompagnement indispensable de nos pauvres penchants.</p>
+<p>LYSANDRE.--Sage conseil! Écoute-moi donc, Hermia: j&#x27;ai une tante qui est veuve, douairière, possédant une immense fortune, et qui n&#x27;a point d&#x27;enfants. Sa maison est éloignée d&#x27;Athènes de sept lieues; elle me regarde comme son fils unique. Là, chère Hermia, je peux t&#x27;épouser, et la dure loi d&#x27;Athènes ne peut nous y poursuivre. Ainsi, si tu m&#x27;aimes, dérobe-toi de la maison de ton père demain dans la nuit, et dans le bois, à une lieue hors de la ville, au même endroit où je te rencontrai une fois avec Hélène, allant rendre votre culte à l&#x27;aurore de mai: là, je te promets de t&#x27;attendre.</p>
+<p>HERMIA.--Mon cher Lysandre, je te jure, par l&#x27;arc le plus fort de l&#x27;Amour, par la plus sûre de ses flèches dorées, par la douce candeur des colombes de Vénus, par les noeuds secrets qui enchaînent les âmes et font prospérer les amours; par les feux dont brûla la reine de Carthage, lorqu&#x27;elle vit le perfide Troyen mettre à la voile[4]; par tous les serments que les hommes ont violé, plus nombreux que n&#x27;ont jamais été ceux des femmes, au lieu même que tu viens de m&#x27;assigner, demain, sans faute, j&#x27;irai te rejoindre.</p>
+<p>[Note 4: Shakspeare oublie que Thésée a fait ses exploits avant la guerre de Troie, et par conséquent longtemps avant la mort de Didon. STEEVENS.</p>
+<p>Mais le duc Thésée de Shakspeare est-il bien le Thésée de la mythologie? Je crois que Shakspeare ne s&#x27;est pas trop inquiété du temps où avait pu vivre celui-ci. Le sien est un duc d&#x27;Athènes qui aurait aussi bien figuré comme duc de Bourgogne; pourtant il y a dans cette pièce tant d&#x27;autres allusions mythologiques qu&#x27;il faut bien croire à l&#x27;anachronisme.]</p>
+<p>LYSANDRE.--Tiens ta promesse, ma bien-aimée.--Regarde, voici Hélène qui vient.</p>
+<p>(Hélène entre.)</p>
+<p>HERMIA.--Dieu vous accompagne, belle Hélène! Où allez-vous ainsi?</p>
+<p>HÉLÈNE.--Vous m&#x27;appelez belle? Ah! rétractez ce mot de belle. Démétrius aime votre beauté; ô heureuse beauté! vos yeux sont des étoiles polaires; et la douce mélodie de votre voix est plus harmonieuse que le chant de l&#x27;alouette à l&#x27;oreille du berger, lorsque les blés sont verts, et que l&#x27;aubépine commence à montrer les boutons de ses fleurs. La maladie est contagieuse. Oh! que n&#x27;en est-il ainsi des charmes! je m&#x27;emparerais des vôtres, belle Hermia, avant de vous quitter. Mon oreille saisirait votre voix; mes yeux vos regards, et ma langue ravirait le doux accent de la vôtre. Si l&#x27;univers était à moi, je le donnerais tout entier, excepté Démétrius, pour changer de formes avec vous. Oh! enseignez-moi la magie de vos yeux, et par quel art vous gouvernez les mouvements du coeur de Démétrius.</p>
+<p>HERMIA.--Je le regarde d&#x27;un air fâché, et cependant il m&#x27;aime toujours.</p>
+<p>HÉLÈNE.--Oh! si vos regards courroucés pouvaient apprendre leur secret à mes sourires!</p>
+<p>HERMIA.--Je le maudis, et cependant il me rend en retour son amour.</p>
+<p>HÉLÈNE.--Oh! si mes prières pouvaient éveiller en lui pareille tendresse!</p>
+<p>HERMIA.--Plus je le hais, plus il s&#x27;obstine à me suivre.</p>
+<p>HÉLÈNE.--Plus je l&#x27;aime, plus il me hait.</p>
+<p>HERMIA.--Sa folle passion, chère Hélène, n&#x27;est point ma faute.</p>
+<p>HÉLÈNE.--Non: ce n&#x27;est que la faute de votre beauté. Ah! plût au ciel que cette faute fût la mienne!</p>
+<p>HERMIA.--Consolez-vous, il ne verra plus mon visage. Lysandre et moi, nous voulons fuir de cette ville.--Avant le jour où je vis Lysandre, Athènes me semblait un paradis. Oh! quel charme émane donc de mon amant, pour avoir ainsi changé un ciel en enfer?</p>
+<p>LYSANDRE.--Hélène, nous allons vous ouvrir nos âmes. Demain dans la nuit, quand Phébé contemplera son front d&#x27;argent dans l&#x27;humide cristal, et parera de perles liquides le gazon touffu, heure qui cache toujours la fuite des amants, nous avons résolu de franchir furtivement les portes d&#x27;Athènes.</p>
+<p>HERMIA.--Et dans les bois, où souvent vous et moi nous avions coutume de reposer sur un lit de molles primevères, épanchant dans le sein l&#x27;une de l&#x27;autre les doux secrets de nos coeurs: c&#x27;est là, que nous devons nous trouver, mon Lysandre et moi, afin de partir, en détournant pour jamais nos yeux d&#x27;Athènes pour chercher de nouveaux amis et une société étrangère. Adieu! chère compagne de mes jeux, prie pour nous, et que le sort favorable t&#x27;accorde enfin ton Démétrius.--Lysandre, tiens ta parole; il faut priver nos yeux de l&#x27;aliment des amants, jusqu&#x27;à demain dans la nuit profonde. (Hermia sort.)</p>
+<p>LYSANDRE.--Oui, mon Hermia.--Hélène, adieu! Puisse Démétrius vous adorer autant que vous l&#x27;adorez! (Lysandre sort.)</p>
+<p>HÉLÈNE.--Combien certains mortels sont plus heureux que d&#x27;autres! Je passe dans Athènes pour être aussi belle qu&#x27;elle. Mais que m&#x27;importe? Démétrius n&#x27;en pense pas de même: il ne saura jamais ce que tout le monde sait, excepté lui. Comme il se trompe en adorant les yeux d&#x27;Hermia, je me trompe moi-même en admirant son mérite. L&#x27;amour peut transformer les objets les plus vils, le néant même, et leur donner de la grâce et du prix. L&#x27;amour ne voit pas avec les yeux, mais avec l&#x27;âme; et voilà pourquoi l&#x27;ailé Cupidon est peint aveugle; l&#x27;âme de l&#x27;amour n&#x27;a aucune idée de jugement: des ailes, et point d&#x27;yeux, voilà l&#x27;emblème d&#x27;une précipitation inconsidérée; et c&#x27;est parce qu&#x27;il est si souvent trompé dans son choix, qu&#x27;on dit que l&#x27;Amour est un enfant. Comme les folâtres enfants se parjurent dans leurs jeux, l&#x27;enfant amour se parjure en tous lieux. Avant que Démétrius eût vu les yeux d&#x27;Hermia, il pleuvait de sa bouche une grêle de serments, pour attester qu&#x27;il n&#x27;était qu&#x27;à moi seule; mais à peine cette grêle a-t-elle reçu la chaleur d&#x27;Hermia que ses serments se sont dissous et fondus en pluie. Je vais aller lui annoncer la fuite de la belle: il ira demain dans la nuit la poursuivre au bois; et si j&#x27;obtiens quelques remerciements pour cet avis, il lui en coûtera beaucoup; mais je veux du moins consoler ma peine par sa vue en ce lieu, et m&#x27;en retourner ensuite. (Elle sort.)</p>
+<h2 class="chapter" id="c2">Scène II</h2>
+<p>Une chambre dans une chaumière</p>
+<p>QUINCE, SNUG, BOTTOM, FLUTE, SNOUT, et STARVELING.</p>
+<p>QUINCE.--Toute notre troupe est-elle ici?</p>
+<p>BOTTOM.--Vous feriez mieux de les appeler tous l&#x27;un après l&#x27;autre, suivant la liste.</p>
+<p>QUINCE.--Voici le rouleau où sont écrits les noms de tous les acteurs d&#x27;Athènes qui ont été jugés dignes de jouer dans notre intermède devant le duc et la duchesse, le soir de leurs noces.</p>
+<p>BOTTOM.--Avant tout, bon Pierre Quince, dites-nous le sujet de la pièce; ensuite, lisez les noms des acteurs, et arrivons ainsi au point principal.</p>
+<p>QUINCE.--Eh bien, notre pièce, c&#x27;est la très-lamentable comédie, et la tragique mort de Pyrame et Thisbé[5].</p>
+<p>[Note 5: «Trait de ridicule contre le titre courant de la tragédie de Cambyse, par Preston, ou de la Campaspe de Lilles.» STEEVENS.]</p>
+<p>BOTTOM.--Une bonne pièce, vraiment, je vous assure, et bien gaie.--Allons, cher Pierre Quince, appelez vos acteurs suivant la liste.--Messieurs, rangez-vous.</p>
+<p>QUINCE.--Que chacun réponde à son nom. Nick Bottom, tisserand.</p>
+<p>BOTTOM.--Présent: nommez le rôle qui m&#x27;est destiné, et poursuivez.</p>
+<p>QUINCE.--Vous, Nick Bottom, vous êtes inscrit pour le rôle de Pyrame.</p>
+<p>BOTTOM.--Qu&#x27;est-ce qu&#x27;il est, ce Pyrame? un amant, ou un tyran?</p>
+<p>QUINCE.--Un amant qui se tue par amour le plus bravement du monde.</p>
+<p>BOTTOM.--Ce rôle demandera quelques larmes dans l&#x27;exécution. Si c&#x27;est moi qui le fais, que l&#x27;auditoire tienne bien ses yeux: je ferai rage, et je saurai gémir comme il faut. (Aux autres.) Cependant mon goût principal est pour les rôles de tyran: je pourrais jouer Hercule à ravir, et le rôle de Déchire-Chat[6], à tout rompre:</p>
+<p>Les rocs en furie, Avec un choc frémissant, Briseront les verrous Des portes des cachots; Et le char de Phébus Brillera de loin, Et fera et défera Les destins insensés[7].</p>
+<p>[Note 6: «Dans une vieille comédie, la Fille rugissante, il y a un personnage nommé Déchire-Chat.» STEEVENS.]</p>
+<p>[Note 7: «Fragment ampoulé tiré de quelque pièce du temps.» THÉOBALD.]</p>
+<p>Cela était sublime!--Allons, nommez les autres acteurs.--Ceci est le ton d&#x27;Hercule, le ton d&#x27;un tyran; l&#x27;accent d&#x27;un amant est plus plaintif.</p>
+<p>QUINCE.--François Flute, raccommodeur de soufflets.</p>
+<p>FLUTE.--Ici, Pierre Quince.</p>
+<p>QUINCE.--Il faut que vous vous chargiez du rôle de Thisbé.</p>
+<p>FLUTE.--Qu&#x27;est-ce que c&#x27;est que Thisbé? un chevalier errant?</p>
+<p>QUINCE.--C&#x27;est la beauté que Pyrame doit aimer.</p>
+<p>FLUTE.--Non vraiment, ne me faites pas jouer le rôle d&#x27;une femme; j&#x27;ai de la barbe qui me vient.</p>
+<p>QUINCE.--Cela est égal; vous le jouerez sous le masque, et vous pourrez faire la petite voix tant que vous voudrez[8].</p>
+<p>[Note 8: Du temps de Shakspeare, les hommes remplissaient encore les rôles de femme.]</p>
+<p>BOTTOM.--Si je peux cacher mon visage sous le masque, laissez-moi jouer aussi le rôle de Thisbé; vous verrez que je saurai extraordinairement bien faire la petite voix: Thisbé! Thisbé!--Ah! Pyrame, mon cher amant! ta chère Thisbé, ta chère bien-aimée!</p>
+<p>QUINCE.--Non, non; il faut que vous fassiez Pyrame, et vous, Flute, Thisbé.</p>
+<p>BOTTOM.--Allons, continuez.</p>
+<p>QUINCE.--Robin Starveling, le tailleur.</p>
+<p>STARVELING.--Ici, Pierre Quince.</p>
+<p>QUINCE.--Robin Starveling, vous jouerez le rôle de la mère de Thisbé.--Thomas Snout, le chaudronnier.</p>
+<p>SNOUT.--Me voici, Pierre Quince.</p>
+<p>QUINCE.--Vous, le rôle du père de Pyrame; et moi, celui du père de Thisbé.--Snug, le menuisier, vous ferez le lion.--Et voilà, j&#x27;espère, une pièce bien distribuée.</p>
+<p>SNUG.--Avez-vous là le rôle du lion par écrit? Si vous l&#x27;avez, donnez-le-moi, je vous prie, car j&#x27;ai la mémoire lente.</p>
+<p>QUINCE.--Oh! vous pourrez le faire impromptu; car il ne s&#x27;agit que de rugir.</p>
+<p>BOTTOM.--Oh! laissez-moi jouer le lion aussi; je rugirai si bien que ce sera plaisir de m&#x27;entendre; je rugirai si bien que je ferai dire au duc: Qu&#x27;il rugisse encore! qu&#x27;il rugisse encore!</p>
+<p>QUINCE.--Si vous alliez faire votre rôle d&#x27;une manière trop terrible, vous épouvanteriez la duchesse et les dames, au point de les faire crier de frayeur; et c&#x27;en serait assez pour nous faire tous pendre.</p>
+<p>TOUS ENSEMBLE.--Cela ferait pendre tous les fils de nos mères?</p>
+<p>BOTTOM.--Je vous accorde, mes amis, que si vous épouvantiez les dames au point de leur faire perdre l&#x27;esprit, elles ne se feraient pas un scrupule de nous pendre. Mais je vous promets de grossir ma voix, de façon à rugir avec le doux murmure d&#x27;une jeune colombe; oui, je rugirai de façon à ce que vous croyiez entendre un rossignol.</p>
+<p>QUINCE.--Vous ne pouvez absolument faire d&#x27;autre rôle que Pyrame; car Pyrame est un homme d&#x27;une aimable figure, un homme bien fait comme on en peut voir dans un jour d&#x27;été, un très-aimable et charmant cavalier: ainsi, vous voyez bien qu&#x27;il est nécessaire que vous fassiez Pyrame.</p>
+<p>BOTTOM.--Allons! je m&#x27;en chargerai. Quelle est la barbe qui siéra le mieux pour le jouer?</p>
+<p>QUINCE.--Eh! celle que vous voudrez.</p>
+<p>BOTTOM.--Je l&#x27;exécuterai avec votre barbe paille, ou avec la barbe orange, avec la rouge, ou avec votre barbe couleur de tête française, celle d&#x27;un jaune parfait.</p>
+<p>QUINCE.--Il y a pas mal de vos têtes françaises qui n&#x27;ont pas un cheveu; vous feriez donc votre rôle sans barbe[9]?--Mais, allons, messieurs, voilà vos rôles; et je dois vous prier, vous recommander, vous supplier de les bien apprendre. Demain soir, venez me trouver dans le bois voisin du palais, à un mille de la ville, au clair de la lune: là, nous ferons notre répétition; car si nous nous assemblons dans la ville, nous aurons à nos trousses une foule de curieux, et tout notre plan sera connu. En attendant, je vais dresser la liste des préparatifs dont notre pièce a besoin. Je vous prie, n&#x27;allez pas manquer au rendez-vous.</p>
+<p>[Note 9: «Sans barbe, comme une tête attaquée du mal français reste sans cheveux (corona Veneris). C&#x27;était la mode de porter des barbes peintes.» JOHNSON.]</p>
+<p>BOTTOM.--Nous nous y rendrons; et là, nous pourrons faire répétition avec plus de liberté[10] et de hardiesse. Donnez-vous de la peine, soyez parfaits. Adieu.</p>
+<p>[Note 10: «Avec plus de liberté, obscenely; en plein air. Obscenum est, quod intra scenam agi non oportuit.» GRAY.]</p>
+<p>QUINCE.--Au chêne du duc; c&#x27;est là notre rendez-vous.</p>
+<p>BOTTOM.--C&#x27;est assez; nous y serons, soit que les cordes de l&#x27;arc tiennent ou se rompent[11]. (Ils sortent.)</p>
+<p>[Note 11: «Quand on assignait un rendez-vous, les soldats de milice s&#x27;excusaient souvent en disant que les cordes de leurs arcs étaient rompues, d&#x27;où le proverbe: «Tenez votre parole, que les cordes de votre arc soient rompues ou non.» WARBURTON.]</p>
+<h3 class="sub">Fin du premier Acte — Acte deuxième</h3>
+<h2 class="chapter" id="c3">Scène I</h2>
+<p>Un bois près d&#x27;Athènes.</p>
+<p>UNE FÉE entre par une porte et PUCK par une autre.</p>
+<p>PUCK.--Eh bien! esprit, où errez-vous ainsi?</p>
+<h3 class="sub">La fée.</h3>
+<p>Sur les coteaux, dans les vallons, À travers buissons et ronces, Au-dessus des parcs et des enceintes, Au travers des feux et des eaux, J&#x27;erre au hasard, en tous lieux, Plus rapidement que la sphère de la lune. Je sers la reine des fées, J&#x27;arrose ses cercles magiques sur la verdure[12]; Les plus hautes primevères[13] sont ses favorites: Vous voyez des taches sur leurs robes d&#x27;or. Ces taches sont les rubis, les bijoux des fées, C&#x27;est dans ces taches que vivent leurs sucs odorants. Il faut que j&#x27;aille recueillir ici quelques gouttes de rosée, Et que je suspende là une perle aux pétales de chaque primevère. Adieu, esprit lourd, je te laisse. Notre reine et toutes nos fées viendront dans un moment.</p>
+<p>[Note 12: Ce sont les cercles que les fées, disait-on, traçaient sur le gazon, dont la brillante verdure provenait du soin qu&#x27;elles prenaient de l&#x27;arroser.]</p>
+<p>[Note 13: Fleur favorite des fées.]</p>
+<p>PUCK.--Le roi donne ici sa fête cette nuit: prends garde que la reine ne vienne s&#x27;offrir à sa vue; car Oberon est outré de fureur de ce qu&#x27;elle compte dans sa suite un charmant petit garçon dérobé à un roi de l&#x27;Inde. Jamais elle n&#x27;eut un aussi joli enfant; et le jaloux Oberon voudrait l&#x27;avoir pour en faire son page, et parcourir avec lui les vastes forêts; mais elle retient malgré lui l&#x27;enfant chéri, le couronne de fleurs et fait de lui toute sa joie. Depuis ce moment, ils ne se rencontrent plus dans les bosquets, sur le gazon, près de la limpide fontaine, et à la clarté des étoiles brillantes, qu&#x27;ils ne se querellent avec tant de fureur, que toutes les fées effrayées se glissent dans les coupes des glands pour s&#x27;y cacher.</p>
+<p>LA FÉE.--Ou je me trompe bien sur votre tournure et vos façons, ou vous êtes un esprit fripon, malin, qu&#x27;on appelle Robin Bon-Diable. N&#x27;est-ce pas vous qui effrayez les jeunes filles de village, qui écrémez le lait, et quelquefois tournez le moulin à bras? N&#x27;est-ce pas vous qui tourmentez la ménagère fatiguée de battre le beurre en vain, et qui empêchez le levain de la boisson de fermenter? N&#x27;est-ce pas vous qui égarez les voyageurs dans la nuit, et riez de leur peine? Mais ceux qui vous appellent Hobgoblin, aimable Puck, vous faites à ceux-là leur ouvrage, et leur portez bonne chance. Dites, n&#x27;est-ce pas vous?</p>
+<p>PUCK.--Vous devinez juste: je suis ce joyeux esprit errant de là-haut; je fais rire Oberon par mes tours, lorsque, en imitant les hennissements d&#x27;une jeune cavale, je trompe un cheval gras et nourri de fèves. Quelquefois je me tapis dans la tasse d&#x27;une commère, sous la forme d&#x27;une pomme cuite; et lorsqu&#x27;elle vient à boire, je saute contre ses lèvres, et répand sa bière sur son sein flétri; la plus vénérable tante, en contant la plus triste histoire, me prend quelquefois pour un tabouret à trois pieds: soudain, je me glisse sous elle; elle tombe à terre, elle crie: tailleur[14], et la voilà prise d&#x27;une toux convulsive; alors toute l&#x27;assemblée se tient les côtés, éclate de rire, redouble de joie, éternue et jure que jamais on n&#x27;a passé là d&#x27;heure plus joyeuse. Mais, place, belle fée; voici Oberon.</p>
+<p>[Note 14: La coutume de crier tailleur à la vue d&#x27;une chute sur le dos, vient de ce qu&#x27;un homme qui glisse en arrière de sa chaise tombe comme un tailleur, les jambes croisées sur son établi.]</p>
+<p>LA FÉE.--Ah! voici ma maîtresse, que n&#x27;est-il parti!</p>
+<p>OBERON.--Arrête, téméraire infidèle! Ne suis-je pas ton époux?</p>
+<p>TITANIA.--Alors je dois être ton épouse. Mais je sais le jour que tu t&#x27;es dérobé du pays des fées, et que, sous la figure du berger Corin, tu es resté assis tout le jour, soupirant sur des chalumeaux, et parlant en vers de ton amour à la tendre Phillida. Pourquoi es-tu revenu des monts les plus reculés de l&#x27;Inde? Ce n&#x27;est, certainement, que parce que la robuste amazone, ta maîtresse en brodequins, ton amante guerrière, doit être mariée à Thésée; tu viens pour donner le bonheur et la joie à leur couche nuptiale?</p>
+<p>OBERON.--Comment n&#x27;as-tu pas honte, Titania, de parler malicieusement de mon amitié pour Hippolyte, sachant que je suis instruit de ton amour pour Thésée? Ne l&#x27;as-tu pas conduit dans la nuit à la lueur des étoiles, loin des bras de Périgyne qu&#x27;il avait enlevée? Et ne lui as-tu pas fait violer sa foi donnée à la belle Églé, à Ariadne, à Antiope[15]?</p>
+<p>[Note 15: On sait que Thésée fut un des plus braves chevaliers errants de la mythologie grecque, mais qu&#x27;il ne se piquait pas de fidélité envers les dames.]</p>
+<p>TITANIA.--Ce sont là des inventions de la jalousie. Jamais, depuis le solstice de l&#x27;été, nous ne nous sommes rencontrés sur les collines, dans les vallées, dans les forêts, dans les prairies, auprès des claires fontaines, ou des ruisseaux bordés de joncs, ou sur les plages de la mer, pour danser nos rondes au sifflement des vents, que tu n&#x27;aies troublé nos jeux de tes clameurs. Aussi les vents, qui nous faisaient entendre en vain leur murmure, comme pour se venger, ont pompé de la mer des vapeurs contagieuses, qui, venant à tomber sur les campagnes, ont tellement enflé d&#x27;orgueil de misérables rivières qu&#x27;elles ont surmonté leurs bords. Le boeuf a donc porté le joug en vain: le laboureur a perdu ses sueurs, et le blé vert s&#x27;est gâté avant que le duvet eût revêtu le jeune épi. Les parcs sont restés vides au milieu de la plaine submergée, et les corbeaux s&#x27;engraissent de la mortalité des troupeaux: les jeux de merelles[16] sont comblés de fange, et les jolis labyrinthes serpentant sur la folâtre verdure ne peuvent plus se distinguer parce qu&#x27;on ne les fréquente plus. Les mortels de l&#x27;espèce humaine[17] sont sevrés de leurs fêtes d&#x27;hiver; il n&#x27;y a plus de chants, plus d&#x27;hymnes, plus de noëls qui égayent les longues nuits.--Aussi la lune, cette souveraine des flots, pâle de courroux, inonde l&#x27;air d&#x27;humides vapeurs, qui font pleuvoir les maladies catarrhales[18]: et, au milieu de ce trouble des éléments, nous voyons les saisons changer; les frimas, à la blanche chevelure, tomber sur le tendre sein de la rose vermeille; le vieux hiver étale, comme par dérision, autour de son menton et de sa tête glacée, une guirlande de tendres boutons de fleurs. Le printemps, l&#x27;été, le fertile automne, l&#x27;hiver chagrin, échangent leur livrée ordinaire; et le monde étonné ne peut plus les distinguer par leurs productions. Toute cette série de maux provient de nos débats et de nos dissensions; c&#x27;est nous qui en sommes les auteurs et la source.</p>
+<p>[Note 16: Jeu de merelles, figure composée de plusieurs carrés que les bergers ou les enfants tracent sur le gazon.]</p>
+<p>[Note 17: Il y a dans le texte human mortals: cette épithète, qui semble redondante, sert à marquer la différence entre les hommes et les fées. Celles-ci ne font pas partie de l&#x27;humanité, quoique soumises à la mort comme les hommes.]</p>
+<p>[Note 18: Observation juste sur la constitution médicale de l&#x27;atmosphère.]</p>
+<p>OBERON.--Eh bien! réformez ces désordres; cela dépend de vous. Pourquoi Titania contrarierait-elle son Oberon? Je ne lui demande qu&#x27;un petit garçon, pour en faire mon page d&#x27;honneur[19].</p>
+<p>[Note 19: Page d&#x27;honneur, place de cour abolie par Élisabeth; le henchman des highlanders était leur échanson.]</p>
+<p>TITANIA.--Mettez votre coeur en repos. Tout le royaume des fées n&#x27;achèterait pas de moi cet enfant: sa mère était initiée à mes mystères; et maintes fois la nuit, dans l&#x27;air parfumé de l&#x27;Inde, elle a bavardé auprès de moi; maintes fois, assise à mes côtés sur les sables dorés de Neptune, elle observait les commerçants embarqués sur les flots. Après que nous avions ri de voir les voiles s&#x27;enfler, et s&#x27;arrondir sous les caresses du vent, elle se mettait à vouloir les imiter, et d&#x27;une démarche gracieuse et balancée, poussant en avant son ventre, riche alors de mon jeune écuyer, comme un vaisseau voguant sur la plaine, elle m&#x27;allait chercher des bagatelles, pour revenir ensuite à moi, comme d&#x27;un long voyage, chargée d&#x27;une précieuse cargaison. Mais l&#x27;infortunée étant mortelle, est morte en donnant la vie à ce jeune enfant, que j&#x27;élève pour l&#x27;amour d&#x27;elle; c&#x27;est pour l&#x27;amour de sa mère que je ne veux pas me séparer de lui.</p>
+<p>OBERON.--Combien de temps vous proposez-vous de rester dans le bois?</p>
+<p>TITANIA.--Peut-être jusqu&#x27;après le jour des noces de Thésée. Si vous voulez vous mêler patiemment à nos rondes, et assister à nos ébats au clair de la lune, venez avec nous; sinon, évitez-moi, et je ne troublerai pas vos retraites.</p>
+<p>OBERON.--Donnez-moi cet enfant, et je suis prêt à vous suivre.</p>
+<p>TITANIA.--Pas pour votre royaume.--Allons, fées, partons. Nous passerons toute la nuit à quereller, si je reste plus longtemps. (Titania sort avec sa suite.)</p>
+<p>OBERON.--Eh bien! va, poursuis; mais tu ne sortiras pas de ce bosquet que je ne t&#x27;aie tourmentée, pour me venger de cet outrage.--Mon gentil Puck, approche ici. Tu te souviens d&#x27;un jour où j&#x27;étais assis sur un promontoire, et que j&#x27;entendis une sirène, portée sur le dos d&#x27;un dauphin, proférer des sons si doux et si harmonieux, que la mer courroucée s&#x27;apaisa aux accents de sa voix, et maintes étoiles transportées s&#x27;élancèrent de leur sphère pour entendre la musique de cette fille de l&#x27;Océan?</p>
+<p>PUCK.--Oui, je m&#x27;en souviens.</p>
+<p>OBERON.--Eh bien! dans le temps, je vis (mais tu ne pus le voir, toi) Cupidon tout armé[20] voler entre la froide lune et la terre: il visa au coeur d&#x27;une charmante Vestale, assise sur un trône d&#x27;Occident; il décocha de son arc un trait d&#x27;amour bien acéré, comme s&#x27;il eût voulu percer d&#x27;un seul coup cent mille coeurs. Mais je vis la flèche enflammée du jeune Cupidon s&#x27;éteindre dans les humides rayons de la chaste lune, et la prêtresse couronnée, le coeur libre, continua sa marche, plongée dans ses pensées virginales[21]. Je remarquai où vint tomber le trait de Cupidon; il tomba sur une petite fleur d&#x27;Occident.--Auparavant elle était blanche comme le lait, depuis elle est pourpre par la blessure de l&#x27;amour; et les jeunes filles l&#x27;appellent pensée[22]: va me chercher cette fleur. Je te l&#x27;ai montrée une fois. Son suc, exprimé sur les paupières endormies d&#x27;un homme ou d&#x27;une femme, les rend amoureux fous de la première créature vivante qui s&#x27;offre à leurs regards. Apporte-moi cette fleur, et sois revenu ici avant que le Léviathan ait pu nager une lieue.</p>
+<p>[Note 20: O Maraviglia! Amor ch&#x27;a pena è nato Gia grande vola, gia triunfa armato.]</p>
+<p>[Note 21: Compliment à Élisabeth; ce sont les vers que dans le roman de Kenilworth la reine se fait répéter par W. Raleigh.]</p>
+<p>[Note 22: On l&#x27;appelle aussi Love in idleness, l&#x27;amour oisif, ou l&#x27;oeil du coeur, herbe de la trinité. C&#x27;est la Viola tricolor de Linnée, syngénésie monogame.]</p>
+<p>PUCK.--J&#x27;entourerai d&#x27;une ceinture le globe de la terre en quarante minutes. (Il sort.)</p>
+<p>OBERON.--Lorsqu&#x27;une fois j&#x27;aurai le suc de cette plante, j&#x27;épierai l&#x27;instant où Titania sera endormie, et j&#x27;en laisserai tomber une goutte sur ses yeux. Le premier objet qu&#x27;ils verront à son réveil, fût-ce un lion, un ours, un loup, un taureau, une guenon curieuse ou un singe affairé, elle le poursuivra avec un coeur plein d&#x27;amour; et avant que j&#x27;ôte ce charme de sa vue, ce que je peux faire avec une autre plante, je l&#x27;obligerai à me céder son page. Mais qui vient en ces lieux? Je suis invisible[23], et je veux entendre leur entretien.</p>
+<p>[Note 23: On remarquera peut-être que Puck et Oberon parlent souvent sur la scène sans qu&#x27;on ait fait mention de leur entrée. Invisibles ou visibles à leur gré, ils semblent s&#x27;affranchir eux-mêmes des lois de la scène.]</p>
+<h2 class="chapter" id="c4">Scène III</h2>
+<p>OBERON invisible; DÉMÉTRIUS, et HÉLÈNE qui le suit. TITANIA arrive avec sa cour.</p>
+<p>DÉMÉTRIUS.--Je ne vous aime point; ainsi, cessez de me poursuivre. Où est Lysandre, et la belle Hermia? Je tuerai l&#x27;un; l&#x27;autre me tue. Vous m&#x27;avez dit qu&#x27;ils s&#x27;étaient sauvés dans le bois; m&#x27;y voilà, dans le bois, et je suis furieux de n&#x27;y pouvoir trouver Hermia. Laissez-moi; éloignez-vous, et ne me suivez plus.</p>
+<p>HÉLÈNE.--Vous m&#x27;attirez à vous, coeur dur comme le diamant, mais ce n&#x27;est point un coeur de fer que vous attirez, car le mien est fidèle comme l&#x27;acier: perdez la force d&#x27;attirer, je n&#x27;aurai plus celle de vous suivre.</p>
+<p>DÉMÉTRIUS.--Est-ce que je vous sollicite? est-ce que je vous abuse par de douces paroles, ou plutôt ne vous ai-je pas dit la vérité nue, je ne vous aime point, je ne puis vous aimer?</p>
+<p>HÉLÈNE.--Et je ne vous en aime que davantage. Je suis votre épagneul: plus vous me maltraiterez, Démétrius, et plus je vous caresserai. Traitez-moi seulement comme votre épagneul: rebutez-moi, frappez-moi, négligez-moi, égarez-moi; mais du moins, accordez-moi, quelque indigne que je sois, la permission de vous suivre. Quelle place plus humble dans votre amour puis-je implorer? Et ce serait encore pour moi une faveur d&#x27;un prix inestimable, que le privilége d&#x27;être traitée comme vous traitez votre chien.</p>
+<p>DÉMÉTRIUS.--Ne provoquez pas trop la haine de mon âme; je suis malade quand je vous vois.</p>
+<p>HÉLÈNE.--Et moi, je le suis quand je ne vous vois pas.</p>
+<p>DÉMÉTRIUS.--Vous compromettez trop votre pudeur, en quittant ainsi la ville, vous livrant seule à la merci d&#x27;un homme qui ne vous aime point, exposé aux dangers de la nuit et aux mauvais conseils d&#x27;un lieu désert, avec le riche trésor de votre virginité.</p>
+<p>HÉLÈNE.--Votre vertu est ma sauvegarde; il n&#x27;est plus nuit quand je vois votre visage; je ne crois donc plus être alors dans les ténèbres: ce bois n&#x27;est point une solitude pour moi; avec vous, j&#x27;y trouve tout l&#x27;univers: comment donc pouvez-vous dire que je suis seule, quand le monde entier est ici pour me regarder?</p>
+<p>DÉMÉTRIUS.--Je vais m&#x27;enfuir loin de vous, et me cacher dans les fougères, vous laissant à la merci des bêtes féroces.</p>
+<p>HÉLÈNE.--La plus féroce n&#x27;a pas un coeur aussi cruel que le vôtre. Fuyez où vous voudrez; l&#x27;histoire changera seulement: c&#x27;est Apollon qui fuit, et c&#x27;est Daphné qui poursuit Apollon! la colombe poursuit le milan; la douce biche hâte sa course pour atteindre le tigre: hâte inutile quand c&#x27;est la timidité qui poursuit et le courage qui s&#x27;enfuit.</p>
+<p>DÉMÉTRIUS.--Je ne m&#x27;arrêterai plus à écouter vos discours. Laissez-moi m&#x27;en aller; ou, si vous me suivez, craignez de moi quelque outrage dans l&#x27;épaisseur du bois.</p>
+<p>HÉLÈNE.--Hélas! dans le temple, dans la ville, dans les champs, partout vous m&#x27;outragez. Fi! Démétrius, vos affronts jettent un opprobre sur mon sexe; nous ne pouvons, comme les hommes, combattre pour l&#x27;amour. Nous devrions être courtisées, et nous n&#x27;avons pas été faites pour faire la cour. Je veux vous suivre, et faire de mon enfer un ciel, en mourant de la main que j&#x27;aime si tendrement. (Ils sortent.)</p>
+<p>OBERON.--Nymphe, console-toi. Avant qu&#x27;il quitte ces bosquets, tu le fuiras, et il recherchera ton amour.</p>
+<p>(Puck revient.)</p>
+<p>OBERON.--As-tu la fleur? Sois le bienvenu, vagabond.</p>
+<p>PUCK.--Oui, la voilà.</p>
+<p>OBERON.--Donne-la-moi, je te prie. Je connais une rive où croît le thym sauvage, où la violette se balance auprès de la primevère, et qu&#x27;ombragent le suave chèvrefeuille, de douces roses musquées, et le bel églantier. C&#x27;est là que, pendant quelques heures de la nuit, Titania, fatiguée des plaisirs de la danse, s&#x27;endort au milieu des fleurs; c&#x27;est là que le serpent se dépouille de sa peau émaillée, vêtement assez large pour envelopper une fée. Je veux frotter légèrement les yeux de Titania, et lui remplir le cerveau d&#x27;odieuses fantaisies. Prends-en aussi un peu, et cherche dans ce bocage. Une belle Athénienne est éprise d&#x27;un jeune homme qui la repousse; mets-en sur les yeux de ce beau dédaigneux; mais aie bien soin de le faire au moment où son amante s&#x27;offrira à ses regards. Tu reconnaîtras l&#x27;homme aux habits athéniens qu&#x27;il porte. Accomplis ce message avec quelques précautions, afin qu&#x27;il puisse devenir plus idolâtre d&#x27;elle qu&#x27;elle ne l&#x27;est de lui; et songe à venir me rejoindre avant le premier chant du coq.</p>
+<p>PUCK.--N&#x27;ayez aucune inquiétude, mon souverain: votre humble serviteur exécutera vos ordres. (Ils sortent.)</p>
+<h2 class="chapter" id="c5">Scène IV</h2>
+<p>(Une autre partie du bois.)</p>
+<p>TITANIA arrive avec sa cour.</p>
+<p>TITANIA.--Allons, un rondeau[24], et une chanson de fées; et ensuite, partez pour le tiers d&#x27;une minute, que les unes aillent tuer le ver caché dans le bouton de rose; les autres faire la guerre aux chauves-souris, pour avoir leurs ailes de peau, afin d&#x27;en habiller mes petits génies; que d&#x27;autres écartent le hibou qui ne cesse toute la nuit de faire entendre ses cris lugubres, surpris de voir nos esprits légers.--Chantez maintenant pour m&#x27;endormir; et après, laissez-moi reposer, et allez à vos fonctions.</p>
+<p>[Note 24: Roundel, couplet de chanson qui commence et finit par la même sentence, qui redit in orbem. Roundel signifie aussi une ronde.]</p>
+<h3 class="sub">Chanson — Première Fée.</h3>
+<p>Vous, serpents tachetés au double dard, Épineux porcs-épics, ne vous montrez pas. Lézards, aveugles reptiles, gardez-vous d&#x27;être malfaisants, N&#x27;approchez pas de notre reine.</p>
+<h3 class="sub">Choeur de fées.</h3>
+<p>Philomèle, avec mélodie Chante-nous une douce chanson de berceuse, Lulla, Lulla, Lullaby; Lulla, Lulla, Lullaby. Que nul trouble, nul charme, nul maléfice N&#x27;approche de notre aimable reine. Et bonne nuit dormez bien.</p>
+<h2 class="chapter" id="c6">II — Seconde fée.</h2>
+<p>Araignées filandières, n&#x27;approchez pas: Loin d&#x27;ici fileuses aux longues jambes, loin d&#x27;ici. Éloignez-vous, noirs escarbots. Ver, ou limaçon, n&#x27;offensez pas notre reine.</p>
+<h3 class="sub">Le choeur.</h3>
+<p>Philomèle, avec mélodie, etc.</p>
+<h3 class="sub">Première Fée.</h3>
+<p>Allons, partons: tout va bien. Qu&#x27;une de nous se tienne à part comme sentinelle.</p>
+<p>(Titania s&#x27;endort; les fées sortent.)</p>
+<p>(Oberon survient, et dit en exprimant le suc de la fleur sur les paupières de Titania:)</p>
+<h3 class="sub">Oberon.</h3>
+<p>Que l&#x27;objet que tu verras, en t&#x27;éveillant, Devienne l&#x27;objet de ton amour: Aime-le et languis pour lui: Que ce soit un ours, un tigre ou un chat, Un léopard ou un sanglier à la crinière hérissée. Qui apparaisse à tes yeux, à ton réveil, Il sera ton amant chéri. Réveille-toi à l&#x27;approche d&#x27;un objet hideux.</p>
+<p>(Oberon sort.)</p>
+<p>(Entrent Lysandre et Hermia.)</p>
+<p>LYSANDRE.--Ma belle amie, vous êtes fatiguée d&#x27;errer dans ce bois; et à vous dire vrai, j&#x27;ai oublié le chemin: nous nous reposerons, Hermia, si vous le voulez, et nous attendrons ici la lumière consolante du jour.</p>
+<p>HERMIA.--Je le veux bien, Lysandre. Allez, cherchez un lit pour vous: moi je vais reposer ma tête sur ce gazon.</p>
+<p>LYSANDRE.--La même touffe de verdure nous servira d&#x27;oreiller à tous les deux: un seul coeur, un même lit, deux âmes, et une seule foi.</p>
+<p>HERMIA.--Non, cher Lysandre: pour l&#x27;amour de moi, mon ami, placez-vous plus loin encore; ne vous mettez pas si près de moi.</p>
+<p>LYSANDRE.--Ô ma douce amie! prenez mes paroles dans le sens que leur donne mon innocence. Dans l&#x27;entretien des amants, l&#x27;amour est l&#x27;interprète; j&#x27;entends que mon coeur est uni au vôtre, en sorte que nous pouvons des deux coeurs n&#x27;en faire qu&#x27;un; que nos deux âmes se sont enchaînées par un serment, en sorte que ce n&#x27;est qu&#x27;une foi dans deux âmes. Ne me refusez donc pas une place à vos côtés, pour me reposer; car en me couchant ainsi je ne ments point[25].</p>
+<p>[Note 25: Équivoque sur le verbe to lie, se coucher et mentir.]</p>
+<p>HERMIA.--Lysandre excelle à faire des énigmes: malheur à mes manières et à ma fierté, si Hermia a voulu dire que Lysandre mentait. Mais, mon aimable ami, au nom de la tendresse et de la courtoisie, éloigne-toi un peu: cette séparation, prescrite par la décence humaine convient à un amant vertueux, et à une jeune vierge: oui, tiens-toi à cette distance; et bonsoir, mon bien-aimé; que ton amour ne finisse qu&#x27;avec ta précieuse vie!</p>
+<p>LYSANDRE.--Je réponds à cette tendre prière: Ainsi soit-il, ainsi soit-il; et que ma vie finisse quand finira ma fidélité! Voici mon lit: que le sommeil t&#x27;accorde tout son repos!</p>
+<p>HERMIA.--Que la moitié de ses faveurs ferme les yeux de celui qui m&#x27;adresse ce souhait. (Ils s&#x27;endorment tous deux.)</p>
+<p>(Entre Puck.)</p>
+<h3 class="sub">Puck.</h3>
+<p>J&#x27;ai couru tout le bois; Je n&#x27;ai trouvé aucun Athénien Sur les yeux de qui je pusse essayer La force de cette fleur pour inspirer l&#x27;amour. Nuit et silence! Qui est ici? Il porte les habits d&#x27;Athènes. C&#x27;est l&#x27;homme que m&#x27;a désigné mon maître, Et qui dédaigne la jeune Athénienne. Et la voici elle-même profondément endormie Sur la terre humide et fangeuse. Oh! la jolie enfant: elle n&#x27;a pas osé se coucher Près de ce cruel, de cet ennemi de la tendresse. Rustre, je répands sur tes yeux Tout le pouvoir que ce charme possède: Qu&#x27;à ton réveil l&#x27;amour défende au sommeil De jamais descendre sur ta paupière. Réveille-toi dès que je serai parti: Il faut que j&#x27;aille retrouver Oberon.</p>
+<p>(Entrent Démétrius et Hélène courant.)</p>
+<p>HÉLÈNE.--Arrête, cher Démétrius, dusses-tu me donner la mort!</p>
+<p>DÉMÉTRIUS.--Je t&#x27;ordonne de t&#x27;en aller, ne me poursuis pas ainsi.</p>
+<p>HÉLÈNE.--Oh! veux-tu donc m&#x27;abandonner ici dans les ténèbres? Ne fais pas cela.</p>
+<p>DÉMÉTRIUS.--Arrête, sous peine de ta vie: je veux m&#x27;en aller seul. (Démétrius s&#x27;enfuit.)</p>
+<p>HÉLÈNE, seule.--Oh! cette vaine poursuite m&#x27;a mise hors d&#x27;haleine. Plus je le prie, et moins j&#x27;obtiens. Hermia est heureuse, en quelque lieu qu&#x27;elle se trouve; car elle a des yeux célestes, et qui attirent vers elle. Comment ses yeux sont-ils devenus si brillants? Ce n&#x27;est pas à force de larmes amères: si cela était, mes yeux en ont été plus souvent arrosés que les siens. Non, non; je suis laide comme un ours, car les bêtes de ce bois qui me rencontrent s&#x27;enfuient de peur. Il n&#x27;est donc pas étonnant que Démétrius, qui est un monstre sauvage, fuie aussi ma présence. Que mon miroir est perfide et imposteur, de m&#x27;avoir persuadé de comparer mon visage aux doux yeux d&#x27;Hermia! Mais, qui est ici? Lysandre, étendu sur la terre! Est-il mort, ou endormi? Je ne vois point de sang, nulle blessure.--Lysandre, si vous êtes vivant, bon Lysandre, éveillez-vous.</p>
+<p>LYSANDRE (Il s&#x27;éveille.)... Et je traverserais les flammes pour l&#x27;amour de toi. Transparente Hélène! la nature montre son art, en me faisant voir ton coeur à travers ton sein. Où est Démétrius? Oh! que ce nom odieux est bien celui d&#x27;un homme destiné à mourir de mon épée!</p>
+<p>HÉLÈNE.--Ne parlez ainsi, Lysandre; ne parlez pas ainsi: qu&#x27;importe qu&#x27;il aime votre Hermia? Lysandre, que vous importe? Hermia n&#x27;aime que vous; ainsi soyez content.</p>
+<p>LYSANDRE.--Content avec Hermia? Non! je me repens des instants ennuyeux que j&#x27;ai perdus avec elle. Ce n&#x27;est point Hermia, c&#x27;est Hélène que j&#x27;aime. Qui ne voudrait changer un corbeau contre une colombe? La volonté de l&#x27;homme est gouvernée par la raison; et ma raison me dit que vous êtes la plus digne d&#x27;être aimée. Les plantes qui croissent encore ne sont pas mûres avant leur saison; et moi-même, trop jeune jusqu&#x27;ici, je n&#x27;étais point mûr pour la raison; mais maintenant que je touche au plus haut point de la perfection humaine, la raison devient le guide de ma volonté et me conduit à vos yeux, où je vois des histoires d&#x27;amour écrites dans le livre le plus précieux de l&#x27;amour.</p>
+<p>HÉLÈNE.--Pourquoi suis-je née pour être en butte à cette ironie? Quand ai-je mérité d&#x27;essuyer de votre part ces mépris? N&#x27;est-ce donc pas assez, n&#x27;est-ce donc pas assez, jeune homme, que je n&#x27;aie jamais pu, non, et que je ne puisse jamais mériter un doux regard des yeux de Démétrius, sans qu&#x27;il faille encore que vous insultiez à ma disgrâce? De bonne foi, vous me faites une injure; oui, oui, vous m&#x27;insultez, en me faisant la cour d&#x27;une manière si méprisante! Mais adieu; je suis forcée d&#x27;avouer que je vous avais cru doué d&#x27;une générosité plus vraie. Oh! se peut-il qu&#x27;une femme rebutée d&#x27;un homme soit à cause de cela cruellement raillée par un autre? (Elle sort.)</p>
+<p>LYSANDRE.--Elle ne voit point Hermia.--Hermia, continue de dormir ici, et puisses-tu ne jamais t&#x27;approcher de Lysandre! Car, comme l&#x27;excès des mets les plus délicieux porte à l&#x27;estomac le dégoût le plus invincible; comme les hérésies que les hommes abjurent sont détestées surtout par ceux qu&#x27;elles avaient trompé; de même, toi, objet de ma satiété et de mon hérésie, sois haïe de tous, et surtout de moi! Et vous, puissances de mon âme, consacrez votre amour et votre force à honorer Hélène, et à me rendre son chevalier. (Il sort.)</p>
+<p>HERMIA, se réveillant en sursaut.--À mon secours, Lysandre! à mon secours! Oh! fais ton possible pour arracher ce serpent qui rampe sur mon sein: hélas! par pitié!--Quel était ce songe! Lysandre, vois comme je tremble de frayeur! il m&#x27;a semblé qu&#x27;un serpent me dévorait le coeur, et que toi, tu étais assis, souriant à mon cruel tourment.--Lysandre! quoi, s&#x27;est-il éloigné! Lysandre! Seigneur! Quoi! il ne m&#x27;entend pas! Il est parti! Pas un son, pas une parole! Hélas! où êtes-vous? Répondez-moi, si vous pouvez m&#x27;entendre: parlez-moi, au nom de tous les amours! Je suis prête à m&#x27;évanouir de terreur!--Personne!--Ah! je vois enfin que tu n&#x27;es plus près de moi; il faut que je trouve à l&#x27;instant, ou la mort, ou toi. (Elle sort).</p>
+<h3 class="sub">Fin du deuxième acte — Acte troisième</h3>
+<h2 class="chapter" id="c7">Scène I</h2>
+<p>La scène est toujours dans le bois. La reine des fées est endormie.</p>
+<p>Entrent QUINCE, SNUG, BOTTOM, FLUTE, SNOUT, STARVELING.</p>
+<p>BOTTOM.--Sommes-nous tous rassemblés?</p>
+<p>QUINCE.--Oui, oui; et voici une place admirable pour notre répétition. Ce gazon vert sera notre théâtre, ce buisson d&#x27;épines nos coulisses; et nous allons jouer la pièce tout comme nous la jouerons devant le duc.</p>
+<p>BOTTOM.--Pierre Quince!</p>
+<p>QUINCE.--Que dis-tu, terrible Bottom?</p>
+<p>BOTTOM.--Il y a dans cette comédie de Pyrame et Thisbé des choses qui ne plairont jamais. D&#x27;abord, Pyrame doit tirer son épée et se tuer. Les dames ne supporteront jamais cela. Qu&#x27;avez-vous à répondre?</p>
+<p>SNOUT.--Par Notre-Dame, cela leur fera une peur affreuse.</p>
+<p>STARVELING.--Je crois que nous ferons bien de laisser la tuerie de côté quand tout sera fini.</p>
+<p>BOTTOM.--Pas du tout. J&#x27;ai un expédient pour tout concilier. Écrivez-moi un prologue, et que ce prologue ait l&#x27;air de dire que nous ne ferons aucun mal avec nos épées, et que Pyrame n&#x27;est pas tué tout de bon; pour plus grande assurance, dites-leur que moi, qui fais Pyrame, je ne suis pas Pyrame, mais Bottom le tisserand: cela les rassurera tout à fait contre la peur.</p>
+<p>QUINCE.--Allons, nous ferons ce prologue; et il sera écrit en vers de huit et de six[26].</p>
+<p>[Note 26: On sait qu&#x27;un sonnet ne peut avoir que quatorze vers.]</p>
+<p>BOTTOM.--Non, ajoutez-en encore deux: qu&#x27;on le fasse en vers de huit.</p>
+<p>SNOUT.--Et les dames ne seront-elles point effrayées du lion?</p>
+<p>STARVELING.--Je le crains bien, je vous assure.</p>
+<p>BOTTOM.--Camarades, vous devriez y bien réfléchir. Amener sur la scène, Dieu nous protége! un lion parmi des dames, c&#x27;est une chose bien terrible; car il n&#x27;y a pas de plus redoutable bête sauvage que votre lion, au moins; nous devons bien faire attention à cela.</p>
+<p>SNOUT.--Il faudra donc un autre prologue pour dire que le lion n&#x27;est pas un lion.</p>
+<p>BOTTOM.--Oh! il faut que vous nommiez celui qui joue le lion, et que l&#x27;on voie la moitié de son visage au travers du cou du lion; il faut qu&#x27;il parle lui-même, et qu&#x27;il dise ceci, ou quelque chose d&#x27;équivalent:--«Mesdames, ou belles dames, je vous souhaiterais, ou je vous demanderais, ou je vous prierais de ne pas avoir peur, de ne pas trembler; je réponds de votre vie sur la mienne. Si vous croyiez que je viens ici comme un lion, ce serait exposer ma vie. Non, je ne suis rien de pareil; je suis un homme tout comme les autres hommes.....» Et alors qu&#x27;il dise son nom, et qu&#x27;il leur déclare tout net qu&#x27;il est Snug le menuisier.</p>
+<p>QUINCE.--Allons, cela sera ainsi. Mais il y a encore deux choses bien difficiles: c&#x27;est, d&#x27;abord, d&#x27;introduire le clair de lune dans une chambre; car vous savez que Pyrame et Thisbé se rencontrent au clair de la lune.</p>
+<p>SNUG.--La lune brillera-t-elle le soir que nous jouerons notre pièce?</p>
+<p>BOTTOM.--Un calendrier! un calendrier! voyez dans l&#x27;almanach, cherchez le clair de lune, cherchez le clair de lune!</p>
+<p>QUINCE.--Oui: il y aura de la lune ce soir-là.</p>
+<p>BOTTOM.--Alors, vous pouvez laisser ouverte une fenêtre de la grande chambre où nous jouerons, et la lune pourra y briller par la fenêtre.</p>
+<p>QUINCE.--Oui: ou un homme peut venir avec un fagot d&#x27;épines et une lanterne, et dire qu&#x27;il vient pour représenter ou figurer le personnage du clair de lune.--Mais il y a encore une autre difficulté. Il nous faut une muraille dans la grande chambre; car Pyrame et Thisbé, dit l&#x27;histoire, se parlaient au travers de la fente d&#x27;un mur.</p>
+<p>SNUG.--Vous ne pourrez jamais amener une muraille sur la scène. Qu&#x27;en dites-vous, Bottom?</p>
+<p>BOTTOM.--Le premier venu peut représenter une muraille: il n&#x27;a qu&#x27;à avoir quelque enduit de plâtre, ou d&#x27;argile, ou de crépi sur lui, pour figurer la muraille; ou bien encore, qu&#x27;il tienne ses doigts ainsi ouverts; et, à travers ces fentes, Pyrame et Thisbé pourront se parler tout bas.</p>
+<p>QUINCE.--Si cela peut s&#x27;arranger, tout est en règle.--Allons, asseyez-vous tous, fils de vos mères, et récitez vos rôles. Vous, Pyrame, commencez; et quand vous aurez débité vos discours, vous entrerez dans ce buisson, et ainsi des autres, chacun selon son rôle.</p>
+<p>(Puck survient sans être vu.)</p>
+<p>PUCK.--Quels sont ces rustiques personnages qui font ici les fanfarons, si près du lit de la reine des fées? Quoi! une pièce en jeu? Je veux être de l&#x27;auditoire, et peut-être aussi y serai-je acteur, si j&#x27;en trouve l&#x27;occasion.</p>
+<p>QUINCE.--Parlez, Pyrame.--Thisbé, avancez.</p>
+<p>PYRAME.--«Thisbé, les fleurs exhalent de douces odieuses.</p>
+<p>QUINCE.--Odeurs, odeurs.</p>
+<p>PYRAME.--... Exhalent de douces odeurs: telle est celle de votre haleine, ma chère, très-chère Thisbé.--Mais, écoutez; une voix!--Restez ici un moment et dans l&#x27;instant je vais venir vous retrouver.» (Il sort.)</p>
+<p>PUCK, à part.--Voilà le plus étrange Pyrame qui ait jamais joué ici. (Il sort.)</p>
+<p>THISBÉ.--Est-ce à mon tour de parler?</p>
+<p>QUINCE.--Oui, vraiment, c&#x27;est à vous; car vous devez concevoir qu&#x27;il ne vous quitte que pour voir d&#x27;où vient un bruit qu&#x27;il a entendu, et qu&#x27;il va revenir sur-le-champ.</p>
+<p>THISBÉ.--Très-radieux Pyrame, dont le teint a la blancheur des lis, et dont les couleurs brillent comme la rose vermeille sur un églantier triomphant: sémillant jouvenceau, et même très-aimable juif[27], aussi fidèle que le plus fidèle coursier que rien ne peut fatiguer.--J&#x27;irai te trouver, Pyrame, à la tombe de Ninny[28].</p>
+<p>[Note 27: Most brisky Juvenal, and Eke most lovely Jew. Le mot Jew semble être ici une abréviation de Juvénal, et forme une espèce d&#x27;équivoque avec la première syllabe de Juvénal, à cause de la prononciation. Au reste, tout ceci n&#x27;est que parodie.]</p>
+<p>[Note 28: Ninny, lourdaud, jeu de mots.]</p>
+<p>QUINCE.--À la tombe de Ninus, l&#x27;ami!--Mais vous ne devez pas dire cela encore; c&#x27;est une réponse que vous avez à faire à Pyrame. Vous débitez tout votre rôle à la fois; les répliques, et tout.--Pyrame, entrez, votre tour est venu. Rien ne peut fatiguer, sont les derniers mots de la tirade.</p>
+<p>(Puck rentre avec Bottom affublé d&#x27;une tête d&#x27;âne.)</p>
+<p>THISBÉ.--Aussi fidèle que le plus fidèle coursier que rien ne peut fatiguer.</p>
+<p>PYRAME.--Si j&#x27;étais beau, Thisbé, je ne serais jamais qu&#x27;à toi.</p>
+<p>QUINCE.--O prodige monstrueux! prodige étrange! ce lieu est hanté.--Vite, camarades, fuyons! Camarades, au secours! (Toute la troupe s&#x27;enfuit.)</p>
+<p>PUCK.--Je vais vous suivre; je vais vous faire tourner à travers les marécages, les buissons, les ronces et les épines. Tantôt je serai cheval, et tantôt chien, pourceau, ours sans tête, et tantôt une flamme; hennissant, aboyant, grondant, rugissant, brûlant; cheval, chien, pourceau, ours, et feu tour à tour. (Il sort.)</p>
+<p>BOTTOM.--Pourquoi donc s&#x27;enfuient-ils ainsi? C&#x27;est un tour qu&#x27;ils me jouent pour me faire peur.</p>
+<p>(Snout rentre.)</p>
+<p>SNOUT.--Ô Bottom, comme te voilà changé! Que vois-je donc là sur tes épaules?</p>
+<p>BOTTOM.--Qu&#x27;est-ce que tu vois? Tu vois une tête d&#x27;âne, qui est la tienne; n&#x27;est-ce pas? (Snout sort.)</p>
+<p>(Quince rentre.)</p>
+<p>QUINCE.--Dieu te bénisse, Bottom! Dieu te bénisse! Te voilà métamorphosé. (Il sort.)</p>
+<p>BOTTOM, seul.--Je vois leur malice: ils veulent faire un âne de moi, pour m&#x27;effrayer, s&#x27;ils le peuvent. Mais, moi, je ne veux pas bouger de cette place, quoi qu&#x27;ils puissent faire. Je vais me promener ici en long et en large, et je vais chanter, afin qu&#x27;ils comprennent que je n&#x27;ai pas la moindre peur. (Il chante.)</p>
+<p>Le merle au noir plumage, Au bec jaune comme l&#x27;orange, La grive avec son chant si gai, Le roitelet avec sa petite plume.</p>
+<p>TITANIA, s&#x27;éveillant.--Quel ange me réveille sur mon lit de fleurs?</p>
+<p>BOTTOM chantant.</p>
+<p>Le pinson, le moineau et l&#x27;alouette, Le gris coucou avec son plain-chant, Dont maint homme remarque la note, Sans oser lui répondre non.</p>
+<p>Car en effet, qui voudrait compromettre son esprit avec un si fol oiseau? Qui voudrait donner un démenti à un oiseau, quand il crierait, coucou, à perte d&#x27;haleine?</p>
+<p>TITANIA.--Ah! je te prie, aimable mortel, chante encore. Mon oreille est amoureuse de tes chants, mes yeux sont épris de ta personne; et la force de ton brillant mérite me contraint, malgré moi, de déclarer, à la première vue, de jurer que je t&#x27;aime.</p>
+<p>BOTTOM.--Il me semble, madame, que vous n&#x27;auriez guère de raison pour m&#x27;aimer; et cependant, à dire la vérité, la raison et l&#x27;amour ne vont guère aujourd&#x27;hui de compagnie: c&#x27;est grand dommage que quelques braves voisins ne veuillent pas les réconcilier. Oui, je pourrais ruser comme un autre, dans l&#x27;occasion.</p>
+<p>TITANIA.--Tu es aussi sensé que tu es beau.</p>
+<p>BOTTOM.--Oh! ni l&#x27;un ni l&#x27;autre. Mais si j&#x27;avais seulement assez d&#x27;esprit pour sortir de ce bois, j&#x27;en aurais assez pour l&#x27;usage que j&#x27;en veux faire.</p>
+<p>TITANIA.--Ah! ne désire pas de sortir de ce bois. Tu resteras ici, que tu le veuilles ou non. Je suis un esprit d&#x27;un rang élevé; l&#x27;été règne toujours sur mon empire; et moi, je t&#x27;adore. Viens donc avec moi, je te donnerai des fées pour te servir; elles iront te chercher mille joyaux dans l&#x27;abîme; elles chanteront tandis que tu dormiras sur un lit de fleurs; et je saurai si bien épurer les éléments grossiers de ton corps mortel, que tu voleras comme un esprit aérien. Fleur-des-Pois, Toile-d&#x27;Araignée, Papillon, Graine-de-Moutarde!</p>
+<p>(Quatre fées se présentent.)</p>
+<p>PREMIÈRE FÉE.--Me voilà à vos ordres.</p>
+<p>SECONDE FÉE.--Et moi aussi.</p>
+<p>TROISIÈME FÉE.--Et moi aussi.</p>
+<p>QUATRIÈME FÉE.--Où faut-il aller?</p>
+<p>TITANIA.--Soyez prévenantes et polies pour ce seigneur: dansez dans ses promenades, gambadez à ses yeux; nourrissez-le d&#x27;abricots et de framboises, de raisins vermeils, de figues vertes et de mûres; dérobez aux bourdons leurs charges de miel, et ravissez la cire de leurs cuisses pour en faire des flambeaux de nuit que vous allumerez aux yeux brillants du ver luisant[29], pour éclairer le coucher et le lever de mon bien-aimé; arrachez les ailes bigarrées des papillons, pour écarter les rayons de la lune de ses yeux endormis. Inclinez-vous devant lui, et faites-lui la révérence.</p>
+<p>[Note 29: «C&#x27;est la queue du ver luisant (lampyris), qui est phosphorique, et non ses yeux.» JOHNSON.]</p>
+<p>PREMIÈRE FÉE.--Salut, mortel!</p>
+<p>SECONDE FÉE.--Salut!</p>
+<p>TROISIÈME FÉE.--Salut!</p>
+<p>QUATRIÈME FÉE.--Salut!</p>
+<p>BOTTOM.--Je rends mille grâces à Vos Seigneuries, de tout mon coeur.--Je vous prie, quel est le nom de Votre Seigneurie?</p>
+<p>UNE FÉE.--Toile-d&#x27;Araignée.</p>
+<p>BOTTOM.--Je serai charmé de lier avec vous une plus étroite connaissance. Cher monsieur Toile-d&#x27;Araignée, si je me coupe le doigt, j&#x27;aurai recours à vous.--(À une autre fée.) Votre nom, mon bon monsieur?</p>
+<p>SECONDE FÉE.--Fleur-des-Pois.</p>
+<p>BOTTOM.--Je vous prie, recommandez-moi à madame Cosse, votre mère, et à M. Cosse, votre père. Cher monsieur Fleur-des-Pois, je veux que nous fassions plus ample connaissance.--(À une autre fée.) Votre nom, je vous en conjure, monsieur?</p>
+<p>TROISIÈME FÉE.--Graine-de-Moutarde.</p>
+<p>BOTTOM.--Bon monsieur Graine-de-Moutarde, je connais à merveille votre rare patience, ce lâche géant Roastbeef a dévoré plusieurs membres de votre maison. Je vous promets que vos parents m&#x27;ont fait venir les larmes aux yeux plus d&#x27;une fois; nous nous lierons ensemble, mon cher Graine-de-Moutarde.</p>
+<p>TITANIA.--Allons, accompagnez-le: conduisez-le sous mon berceau. La lune paraît nous regarder d&#x27;un oeil humide; et lorsqu&#x27;elle pleure, les petites fleurs pleurent aussi et regrettent quelque virginité violée... Enchaînez la langue de mon bien-aimé: conduisez-le en silence. (Ils sortent.)</p>
+<h2 class="chapter" id="c8">Scène II</h2>
+<p>Une autre partie du bois.</p>
+<p>OBERON entre.</p>
+<p>OBERON.--Je voudrais bien savoir si Titania s&#x27;est réveillée; et puis, quel a été le premier objet qui s&#x27;est présenté à sa vue, et dont il faut qu&#x27;elle se passionne jusqu&#x27;à la fureur. (Entre Puck.) Voici mon courrier.--Eh bien! folâtre esprit, quelle fête nocturne a lieu maintenant dans ce bois enchanté?</p>
+<p>PUCK.--Ma maîtresse est éprise d&#x27;un monstre. Près de la retraite de son berceau sacré, à l&#x27;heure où elle était plongée dans le sommeil le plus profond, une bande de rustres, artisans grossiers, qui gagnent leur pain dans les échoppes d&#x27;Athènes, se sont rassemblés pour répéter une comédie destinée à être jouée le jour des noces du grand Thésée. Le plus stupide malotru de cette troupe d&#x27;ignorants, qui représentait Pyrame, dans leur pièce, a abandonné le lieu de la scène, et est entré dans un hallier: là, je l&#x27;ai surpris et je lui ai planté une tête d&#x27;âne sur la sienne. Cependant, son tour est venu de répondre à sa Thisbé: alors, mon acteur revient sur la scène. Aussitôt que ses camarades l&#x27;aperçoivent, comme une troupe d&#x27;oies sauvages, qui ont aperçu l&#x27;oiseleur s&#x27;approcher en rampant, ou comme une compagnie de corneilles à tête brune, qui se lèvent et croassent au bruit d&#x27;un fusil, se séparent, et traversent en désordre les airs, de même, à sa vue, tous se mettent à fuir. Alors, au bruit de nos pieds, par-ci, par-là, l&#x27;un d&#x27;eux tombe à terre, crie au meurtre et appelle des secours d&#x27;Athènes. Leur faible raison, égarée par une grande frayeur, voit s&#x27;armer contre eux les objets inanimés. Les ronces et les épines déchirent leurs habits, emportent à l&#x27;un ses manches, à l&#x27;autre son chapeau: toutes choses ravissent quelque dépouille à ceux qui cèdent tout. Je les ai conduits ainsi dans le délire de la peur, et j&#x27;ai laissé ici le beau Pyrame métamorphosé; le hasard a voulu que, dans ce moment même, Titania se soit réveillée, elle a pris aussitôt de l&#x27;amour pour un âne.</p>
+<p>OBERON.--L&#x27;événement surpasse mes espérances.--Mais as-tu oint les yeux de l&#x27;Athénien avec ce philtre d&#x27;amour, comme je te l&#x27;avais ordonné?</p>
+<p>PUCK.--Je l&#x27;ai surpris dormant.--C&#x27;est une chose faite aussi; et la jeune Athénienne est auprès de lui; de façon qu&#x27;il faut nécessairement qu&#x27;à son réveil, ses yeux l&#x27;aperçoivent.</p>
+<p>(Entrent Démétrius et Hermia.)</p>
+<p>OBERON.--Reste à mon côté: voici justement l&#x27;Athénien.</p>
+<p>PUCK.--C&#x27;est bien la femme: mais ce n&#x27;est pas l&#x27;homme.</p>
+<p>DÉMÉTRIUS.--Ah! pourquoi rebutez-vous celui qui vous aime tant? Gardez ces rigueurs pour votre plus cruel ennemi.</p>
+<p>HERMIA.--Tu n&#x27;essuies de moi que des reproches; mais je voudrais pouvoir te maltraiter davantage; car tu m&#x27;as donné, j&#x27;en ai peur, sujet de te maudire. Si tu as assassiné Lysandre pendant son sommeil, déjà enfoncé à moitié dans le sang achève de t&#x27;y plonger, et tue-moi aussi. Le soleil n&#x27;est pas aussi fidèle au jour que Lysandre l&#x27;était pour moi.--Aurait-il jamais abandonné son Hermia endormie? Je croirai plutôt qu&#x27;on peut percer d&#x27;outre en outre le globe entier de la terre, et que la lune peut descendre à travers son centre, et aller à midi aux antipodes déranger son frère. Il faut que tu l&#x27;aies assassiné: tu as le regard d&#x27;un meurtrier, un visage cadavéreux, farouche.</p>
+<p>DÉMÉTRIUS.--Plutôt l&#x27;air d&#x27;un homme assassiné, le coeur percé par votre cruelle sévérité; et cependant, vous qui me tuez, restez aussi radieuse et aussi pure que Vénus dans sa sphère étincelante.</p>
+<p>HERMIA.--Qu&#x27;importe à mon cher Lysandre?--Où est-il? Ah! bon Démétrius! veux-tu me le rendre?</p>
+<p>DÉMÉTRIUS.--J&#x27;aimerais mieux donner son cadavre à mes lévriers.</p>
+<p>HERMIA.--Loin de moi, loin de moi, chien! Tu me fais passer les bornes de la patience d&#x27;une jeune fille. Tu l&#x27;as donc tué?--Sois pour jamais rayé du nombre des humains! Oh! dis-moi, dis-moi une fois, une seule fois la vérité, par pitié pour moi. Aurais-tu osé le regarder éveillé, et l&#x27;as-tu tué pendant qu&#x27;il dormait? Ô le brave exploit! Un reptile, une vipère en pouvait faire autant; oui, c&#x27;est une vipère qu&#x27;on peut accuser, car jamais, serpent que tu es, une vipère n&#x27;a blessé avec un dard plus perfide que ta langue.</p>
+<p>DÉMÉTRIUS.--Vous épuisez les emportements de votre colère sur une méprise. Je ne suis point coupable du sang de Lysandre; et, autant que je puisse savoir, il n&#x27;est point mort.</p>
+<p>HERMIA.--Je vous en conjure, dites-moi alors qu&#x27;il se porte bien.</p>
+<p>DÉMÉTRIUS.--Si je pouvais vous l&#x27;assurer, que gagnerais-je à vous le dire?</p>
+<p>HERMIA.--Le privilége de ne plus me revoir jamais.--Et je fuis à l&#x27;instant ta présence abhorrée: ne me recherche plus qu&#x27;il soit mort, ou vivant. (Elle s&#x27;en va.)</p>
+<p>DÉMÉTRIUS.--Il est inutile de vouloir la suivre dans cet accès de courroux. Je vais donc me reposer ici quelques moments. Ainsi, le poids du chagrin devient plus accablant encore, lorsque le sommeil insolvable refuse de lui payer sa dette; peut-être en ce moment s&#x27;acquittera-t-il quelque peu envers moi, si je fais ici quelque séjour pour attendre sa complaisance. (Il se couche.)</p>
+<p>OBERON.--Qu&#x27;as-tu fait? Tu t&#x27;es complétement mépris, et tu as placé le philtre d&#x27;amour sur les yeux d&#x27;un amant fidèle. Ainsi, l&#x27;effet nécessaire de ta méprise est de changer un amour sincère en amour perfide, et non pas un amour perfide en un amour sincère.</p>
+<p>PUCK.--C&#x27;est le destin qui gouverne les événements, et qui fait que, pour un amant qui garde sa foi, un million d&#x27;autres la violent, et entassent parjures sur parjures.</p>
+<p>OBERON.--Va, parcours le bois plus vite que le vent, et vois à découvrir Hélène d&#x27;Athènes: elle est toute malade d&#x27;amour, et pâle, épuisée de soupirs brûlants, qui ont nui à la fraîcheur de son sang. Tâche de l&#x27;amener ici par quelque enchantement; je charmerai les yeux du jeune homme qu&#x27;elle aime, avant qu&#x27;elle reparaisse à sa vue.</p>
+<p>PUCK.--J&#x27;y vais, j&#x27;y vais: vois, comme je vole, plus rapidement que la flèche décochée de l&#x27;arc d&#x27;un Tartare. (Il sort.)</p>
+<h3 class="sub">Oberon.</h3>
+<p>(Il verse un suc de fleur sur les yeux de Démétrius.)</p>
+<p>Fleur de couleur de pourpre, Blessée par l&#x27;arc de Cupidon, Pénètre dans la prunelle de son oeil! Quand il cherchera son amante, Qu&#x27;elle brille à ses regards du même éclat Dont Vénus brille dans les cieux.-- Si, à ton réveil, elle est auprès de Implore d&#x27;elle ton remède.</p>
+<p>(Puck revient.)</p>
+<p>PUCK.--Chef de notre bande féerique, Hélène est ici à deux pas; et le jeune homme, victime de ma méprise, demande le salaire de son amour. Verrons-nous cette tendre scène? Seigneur, que ces mortels sont fous!</p>
+<p>OBERON.--Range-toi: le bruit qu&#x27;ils font va réveiller Démétrius.</p>
+<p>PUCK.--Eh bien! ils seront deux alors à courtiser une femme. Cela doit faire un spectacle amusant; et rien ne me plaît tant que ces accidents bizarres et imprévus.</p>
+<p>(Entrent Lysandre et Hélène.)</p>
+<p>LYSANDRE.--Pourquoi croiriez-vous que je vous recherche par dérision? jamais le dédain et le mépris ne se manifestent par des larmes: voyez, quand je vous jure mon amour, je pleure: des serments nés dans les pleurs annoncent la sincérité; et comment pouvez-vous voir des signes de mépris dans ce qui porte le gage évident de la bonne foi?</p>
+<p>HÉLÈNE.--Vous redoublez de plus en plus votre perfidie. Quand la vérité tue la vérité, quel combat infernal et céleste! Ces voeux sont pour Hermia: voulez-vous donc l&#x27;abandonner? Pesez serments contre serments, et vous pèserez le néant. Vos serments, pour elle et pour moi, mis dans une balance, seront d&#x27;un poids égal; et tout aussi légers que de vaines paroles.</p>
+<p>LYSANDRE.--Je n&#x27;avais pas de discernement, lorsque je lui ai juré ma foi.</p>
+<p>HÉLÈNE.--Et vous n&#x27;en avez pas plus, à mon avis, maintenant que vous la délaissez.</p>
+<p>LYSANDRE--Démétrius l&#x27;aime, et ne vous aime point.</p>
+<p>DÉMÉTRIUS, se réveillant.--Ô Hélène! déesse, nymphe accomplie et divine! À quoi, ma bien-aimée, pourrais-je comparer tes yeux? Le cristal même est trouble. Ô quel charme sur tes lèvres vermeilles comme deux cerises mûres! Comme elles appellent les baisers! Quand tu lèves la main, la neige pure et glacée des sommets de Taurus, caressée par le vent d&#x27;orient, paraît noire comme le corbeau. Oh! permets que je baise cette merveille de blancheur éblouissante, ce sceau de la félicité.</p>
+<p>HÉLÈNE.--Ô malice infernale! Je vois bien que vous êtes tous ligués contre moi, pour vous amuser. Si vous étiez honnêtes, et connaissant la courtoisie, vous ne m&#x27;accableriez pas de vos outrages. Ne vous suffit-il pas de me haïr, comme je sais que vous me haïssez, sans vous unir étroitement pour vous moquer de moi? Si vous étiez des hommes, comme vous en avez la figure, vous ne traiteriez pas ainsi une femme bien née. Venir me jurer de l&#x27;amour, et exagérer ma beauté, lorsque je suis sûre que vous me haïssez de tout votre coeur! Vous êtes tous deux rivaux, vous aimez Hermia; et tous deux, en ce moment, vous rivalisez à qui insultera le plus Hélène. Voilà un grand exploit, une mâle entreprise, de faire couler les larmes d&#x27;une fille infortunée, par votre dérision! Jamais des hommes de noble naissance n&#x27;auraient ainsi offensé une jeune fille; jamais ils n&#x27;auraient poussé à bout la patience d&#x27;une âme désolée, comme vous faites, uniquement pour vous en faire un jeu!</p>
+<p>LYSANDRE.--Vous êtes dur, Démétrius; n&#x27;en agissez pas ainsi. Car vous aimez Hermia; vous savez que je ne l&#x27;ignore pas; et ici même, bien volontiers et de tout mon coeur, je vous cède ma part de l&#x27;amour d&#x27;Hermia: léguez-moi en retour la vôtre dans l&#x27;amour d&#x27;Hélène, que j&#x27;adore et que j&#x27;aimerai jusqu&#x27;au trépas.</p>
+<p>HÉLÈNE.--Jamais des moqueurs ne prodiguèrent plus de vaines paroles.</p>
+<p>DÉMÉTRIUS.--Lysandre, garde ton Hermia; je n&#x27;en veux point: si je l&#x27;aimai jamais, cet amour est tout à fait anéanti. Mon coeur n&#x27;a fait que séjourner avec elle en passant, comme un hôte étranger; et maintenant il est retourné à Hélène, comme sous son toit natal, pour s&#x27;y fixer à jamais.</p>
+<p>LYSANDRE.--Hélène, cela n&#x27;est point!</p>
+<p>DÉMÉTRIUS.--Ne calomnie pas la foi que tu ne connais pas, de crainte qu&#x27;à tes risques et périls tu ne le payes cher.--Vois venir de ce côté l&#x27;objet de ton amour; voilà celle qui t&#x27;est chère.</p>
+<p>(Survient Hermia.)</p>
+<p>HERMIA.--La nuit sombre, qui suspend l&#x27;usage des yeux, rend l&#x27;oreille plus sensible aux sons; ce qu&#x27;elle ravit au sens de la vue, elle en dédommage en doublant le sens de l&#x27;ouïe.--Ce ne sont pas mes yeux, Lysandre, qui t&#x27;ont découvert; c&#x27;est mon oreille, et je lui en rends grâces, qui m&#x27;a guidé vers toi au son de ta voix. Mais pourquoi m&#x27;as-tu si cruellement abandonnée?</p>
+<p>LYSANDRE.--Pourquoi resterait-il, celui que l&#x27;amour presse de s&#x27;éloigner?</p>
+<p>HERMIA.--Et quel amour pouvait attirer Lysandre loin de moi?</p>
+<p>LYSANDRE.--L&#x27;amour de Lysandre, qui ne lui permettait pas de rester, la belle Hélène; Hélène, qui rend la nuit plus brillante que tous ces cercles de feu et tous ces yeux de lumière. Pourquoi me cherches-tu? Cette démarche ne pouvait-elle pas te faire comprendre que c&#x27;était la haine que je te portais qui m&#x27;obligeait à te quitter ainsi?</p>
+<p>HERMIA.--Vous ne pensez pas ce que vous dites; cela est impossible.</p>
+<p>HÉLÈNE.--Voyez, elle aussi est du complot! Je le vois bien à présent, qu&#x27;ils se sont concertés tous les trois, pour arranger cette scène de dérision à mes dépens. Injurieuse Hermia! fille ingrate! as-tu donc conspiré, as-tu comploté avec ces cruels de me faire subir ces odieuses railleries? Toute cette confiance mutuelle, ces serments de soeurs, ces heures passées ensemble, quand nous reprochions au temps de trop hâter sa marche et de nous séparer; oh! tout cela est-il oublié, et toute notre amitié de l&#x27;école, et l&#x27;innocence de notre enfance? Hermia, nous avons, avec l&#x27;adresse des dieux, créé toutes les deux avec nos aiguilles une même fleur sur un seul modèle, assises sur un seul coussin, et chantant une même chanson sur un même air, comme si nos mains, nos personnes, nos voix et nos âmes n&#x27;eussent appartenu qu&#x27;à un seul et même corps: c&#x27;est ainsi que nous avons grandi ensemble, comme deux cerises jumelles, en apparence séparées, mais unies dans leur séparation, comme deux jolis fruits attachés sur la même tige: on voyait deux corps, mais qui n&#x27;avaient qu&#x27;un coeur, tels que deux côtés d&#x27;armoiries de la même maison qui n&#x27;appartiennent qu&#x27;à un seul écu, et sont surmontés d&#x27;un seul cimier. Et tu veux rompre violemment le noeud de notre ancienne tendresse, et te joindre à des hommes pour bafouer ta pauvre amie? Oh! ce n&#x27;est pas la conduite d&#x27;une amie, d&#x27;une jeune fille: tout notre sexe a droit, aussi bien que moi, de te reprocher ce traitement, quoique je sois la seule qui en ressente l&#x27;outrage.</p>
+<p>HERMIA.--Je suis confondue de vos amers reproches: je ne vous insulte point; il me semble plutôt que c&#x27;est vous qui m&#x27;insultez.</p>
+<p>HÉLÈNE.--N&#x27;avez-vous pas excité Lysandre à me suivre, comme par ironie, et à vanter mes yeux et mon visage? Et n&#x27;avez-vous pas engagé votre autre amant, Démétrius (qui tout à l&#x27;heure me repoussait du pied), à m&#x27;appeler déesse, nymphe, divine et rare merveille, beauté céleste et sans prix? Pourquoi adresse-t-il ce langage à celle qu&#x27;il hait? Et pourquoi Lysandre rejette-t-il votre amour, si puissant dans son coeur, pour me l&#x27;offrir à moi, si ce n&#x27;est sur votre instigation et de votre consentement? Si je ne suis pas autant en faveur que vous, aussi entourée d&#x27;amour, aussi heureuse, mais si je suis assez malheureuse pour aimer sans être aimée, vous devriez me plaindre au lieu de me mépriser!</p>
+<p>HERMIA.--Je ne puis comprendre ce que vous voulez dire.</p>
+<p>HÉLÈNE.--Oui, oui; continuez; affectez un air triste, faites la moue en me regardant quand je tourne le dos; faites-vous des signes d&#x27;intelligence, soutenez cette agréable plaisanterie; il en sera parlé dans le monde, de ce jeu si bien joué.--Si vous aviez quelque pitié, quelque générosité, quelque idée des bons procédés, vous ne me prendriez pas pour le sujet de vos railleries. Mais, adieu, je vous laisse: c&#x27;est en partie ma faute; et la mort, ou l&#x27;absence y porteront bientôt remède.</p>
+<p>LYSANDRE.--Arrêtez, aimable Hélène: écoutez mon excuse, ma bien-aimée, ma vie, mon âme, belle Hélène!</p>
+<p>HÉLÈNE.--Oh! admirable!</p>
+<p>HERMIA, à Lysandre.--Cher amant, ne l&#x27;insulte pas ainsi.</p>
+<p>DÉMÉTRIUS.--Si elle ne l&#x27;obtient pas de bon gré, je puis l&#x27;y forcer, moi.</p>
+<p>LYSANDRE.--Tu ne peux pas plus m&#x27;y forcer, qu&#x27;Hermia ne peut l&#x27;obtenir par ses instances. Tes menaces n&#x27;ont pas plus de force que ses impuissantes prières.--Hélène, je t&#x27;aime; sur ma vie, je t&#x27;aime; je jure sur ma vie, que je veux perdre pour toi, de convaincre de mensonge celui qui osera dire que je ne t&#x27;aime pas.</p>
+<p>DÉMÉTRIUS, à Hélène.--Je te proteste que je t&#x27;aime plus qu&#x27;il ne peut t&#x27;aimer.</p>
+<p>LYSANDRE.--Si tu parles ainsi, retirons-nous, et prouve-le-moi.</p>
+<p>DÉMÉTRIUS.--Allons, sur-le-champ, viens.</p>
+<p>HERMIA.--Lysandre, où peut tendre tout ceci?</p>
+<p>LYSANDRE.--Loin de moi, noire Éthiopienne.</p>
+<p>DÉMÉTRIUS.--Non: ne craignez pas; il fait semblant de vouloir s&#x27;arracher de vos mains.--Allons, faites comme si vous vouliez me suivre: mais cependant, ne venez pas.--Vous êtes un homme bien doux, allez!</p>
+<p>LYSANDRE.--Lâche-moi, chat, glouteron, vile créature, laisse-moi libre, ou je vais te secouer loin de moi comme un serpent.</p>
+<p>HERMIA.--Pourquoi donc êtes-vous devenu si dur pour moi? Que veut dire ce changement, mon cher amant?</p>
+<p>LYSANDRE.--Ton amant? Loin de moi, noire Tartare; loin de moi: loin, médecine nauséabonde, potion odieuse, loin de moi!</p>
+<p>HERMIA.--Ne plaisantes-tu pas?</p>
+<p>HÉLÈNE.--Oh! sûrement, il plaisante, et vous aussi.</p>
+<p>LYSANDRE.--Démétrius, je te tiendrai ma parole.</p>
+<p>DÉMÉTRIUS.--Je voudrais en avoir votre obligation bien en forme; car je m&#x27;aperçois qu&#x27;un faible lien vous retient: je ne me fie pas à votre parole.</p>
+<p>LYSANDRE.--Quoi! voulez-vous que je la blesse, que je la frappe, que je la tue? Quoique je la haïsse, je ne veux pas la maltraiter.</p>
+<p>HERMIA.--Et quel mal plus grand peux-tu me faire, que de me haïr?... Me haïr! et pourquoi? Ô malheureuse! Quel changement étrange, mon bien-aimé! Ne suis-je pas Hermia? N&#x27;es-tu pas Lysandre? Je suis aussi belle maintenant que par le passé: cette nuit, tu m&#x27;aimais; et cependant, c&#x27;est cette nuit que tu m&#x27;as quittée. Quoi! tu m&#x27;as donc quittée? Que les dieux m&#x27;en gardent! Bien sérieusement, est-il possible?</p>
+<p>LYSANDRE.--Oui, sur ma vie; et je n&#x27;ai jamais désiré de te revoir: ainsi, laisse de côté les espérances, les questions et les doutes. Sois-en bien assurée; rien n&#x27;est plus vrai: ce n&#x27;est point un jeu; je te hais, et j&#x27;aime Hélène.</p>
+<p>HERMIA.--Ah! malheureuse que je suis!--(À Hélène.) Toi, fourbe, poison de ma vie, voleuse d&#x27;amour; quoi! tu es venue la nuit, et tu m&#x27;as volé le coeur de mon amant?</p>
+<p>HÉLÈNE.--Charmant, ma foi! N&#x27;avez-vous aucune modestie, aucune pudeur de jeune fille, aucune nuance de décence? Quoi! voulez-vous arracher à ma langue patiente des réponses de colère? Fi donc! fi! actrice, marionnette!</p>
+<p>HERMIA.--Une marionnette? Pourquoi?--Oui! voilà le secret: je reconnais maintenant qu&#x27;elle a fait des comparaisons entre nos tailles, qu&#x27;elle a vanté la hauteur de la sienne; et qu&#x27;avec l&#x27;avantage de sa tournure, de sa belle tournure, oh! sûrement, elle l&#x27;a emporté près de lui. Et êtes-vous donc montée si haut dans son estime, parce que je suis petite comme une naine?--Suis-je donc si petite, grand mât de cocagne? Parle; suis-je donc si petite? Je ne suis pas encore si petite, que mes ongles ne puissent atteindre à tes yeux.</p>
+<p>HÉLÈNE.--Je vous prie, messieurs, contentez-vous de me faire votre jouet; empêchez du moins qu&#x27;elle ne me blesse: jamais je ne fus une femme méchante, jamais je n&#x27;eus de talent pour les rixes; je suis bien de mon sexe par ma timidité: empêchez-la de me frapper. Vous pourriez croire peut-être, parce qu&#x27;elle est un peu plus petite que moi, que je suis en état de lui tenir tête.</p>
+<p>HERMIA.--Plus petite! Vous voyez, elle le répète encore.</p>
+<p>HÉLÈNE.--Bonne Hermia, ne sois pas si amère pour moi; je t&#x27;ai toujours aimée, Hermia; j&#x27;ai toujours gardé fidèlement tes secrets; jamais je ne t&#x27;ai fait le moindre tort, excepté, lorsque par amour pour Démétrius je lui ai dit que tu t&#x27;étais sauvée dans ce bois: il t&#x27;a suivie, je l&#x27;ai suivi par amour; mais lui m&#x27;a chassée, et il m&#x27;a menacée de me maltraiter, de me fouler aux pieds, et même de me tuer; et maintenant, si vous voulez me laisser aller en paix, je vais reporter ma folle passion dans Athènes, et je ne vous suivrai plus. Laissez-moi m&#x27;en aller; vous voyez combien je suis simple, et combien je suis folle.</p>
+<p>HERMIA.--Eh bien! partez: qui vous retient?</p>
+<p>HÉLÈNE.--Un coeur insensé, que je laisse ici derrière moi!</p>
+<p>HERMIA.--Avec qui? avec Lysandre?</p>
+<p>HÉLÈNE--Avec Démétrius.</p>
+<p>LYSANDRE.--Ne crains rien, chère Hélène; elle ne te fera pas de mal.</p>
+<p>DÉMÉTRIUS.--Non, certes; elle ne lui en fera aucun, quand vous prendriez son parti.</p>
+<p>HÉLÈNE.--Oh! quand elle est en colère, elle est méchante et rusée; c&#x27;était un petit renard quand elle allait à l&#x27;école; et quoiqu&#x27;elle soit petite, elle est violente.</p>
+<p>HERMIA.--Petite encore? Toujours petite? naine? Quoi! souffrirez-vous qu&#x27;elle m&#x27;insulte ainsi? Laissez-moi approcher d&#x27;elle.</p>
+<p>LYSANDRE.--Va-t&#x27;en naine, diminutif de femme, créature nouée par l&#x27;herbe sanguinaire[30], grain de verre, gland de chêne.</p>
+<p>[Note 30: La sanguinaire est une papavéracée (polyandrie monogyne) à laquelle on attribuait autrefois la vertu de nouer les enfants et les animaux, d&#x27;empêcher leur croissance.]</p>
+<p>DÉMÉTRIUS.--Vous êtes trop officieux à obliger celle qui dédaigne vos services. Laissez-la à elle-même, ne parlez point d&#x27;Hélène: ne prenez point son parti; car si jamais vous prétendez lui donner le moindre signe d&#x27;amour, vous le payerez cher.</p>
+<p>LYSANDRE.--Eh bien, à présent, elle ne me retient plus: voyons, suivez-moi, si vous l&#x27;osez, et allons décider qui de nous deux a le plus de droit au coeur d&#x27;Hélène.</p>
+<p>DÉMÉTRIUS.--Te suivre? Je vais marcher à côté de toi. (Lysandre et Démétrius sortent.)</p>
+<p>HERMIA.--C&#x27;est vous, madame, qui êtes la cause de cette querelle! Non, ne vous en allez pas.</p>
+<p>HÉLÈNE.--Je ne me fie point à vous, et je ne resterai pas plus longtemps dans votre compagnie maudite; vos mains sont plus promptes aux coups que les miennes, mais mes jambes sont plus longues pour les éviter. (Elle sort.)</p>
+<p>HERMIA.--Je suis confondue et ne sais que dire. (Hermia poursuit Hélène.)</p>
+<p>OBERON.--Voilà l&#x27;ouvrage de ta négligence; tu fais toujours des bévues, ou c&#x27;est à dessein que tu joues de ces tours.</p>
+<p>PUCK.--Croyez-moi, roi des fantômes, c&#x27;est une méprise. Ne m&#x27;aviez-vous pas dit que je reconnaîtrais l&#x27;homme à son costume athénien? Et je suis innocent de l&#x27;erreur que j&#x27;ai commise, puisque c&#x27;est en effet un Athénien dont j&#x27;ai oint les yeux; mais je suis loin d&#x27;être fâché de ce qui est arrivé, puisque je regarde cette querelle comme un divertissement.</p>
+<p>OBERON.--Tu vois que ces amants cherchent un lieu pour se battre: hâte-toi donc, Robin, pars; redouble l&#x27;obscurité de la nuit, couvre à l&#x27;instant la voûte étoilée d&#x27;un épais brouillard, aussi noir que l&#x27;Achéron; et puis, égare si bien ces rivaux acharnés, que l&#x27;un ne puisse jamais se rencontrer dans le chemin de l&#x27;autre: tantôt forme ta langue à parler comme la voix de Lysandre, et alors provoque Démétrius par des défis amers; tantôt raille Lysandre comme si tu étais Démétrius, et éloigne-les sans cesse l&#x27;un de l&#x27;autre, jusqu&#x27;à ce que le sommeil, image de la mort, se glisse sur leurs paupières avec ses jambes de plomb et ses ailes de chauve-souris; alors exprime sur l&#x27;oeil de Lysandre cette herbe dont la liqueur a la salutaire vertu d&#x27;en enlever toute illusion, et de rendre aux prunelles leur vue accoutumée: lorsqu&#x27;ils viendront à se réveiller, toute cette scène de dérision leur paraîtra un rêve, une vision imaginaire, et ces amants reprendront le chemin d&#x27;Athènes, unis par une amitié qui ne finira qu&#x27;avec leur vie. Tandis que je te charge de cette affaire, moi, je vais rejoindre ma reine, et lui demander son petit Indien; après cela, je désenchanterai ses yeux de leur admiration pour le monstre, et la paix sera rétablie partout.</p>
+<p>PUCK.--Souverain des fées, il faut nous hâter d&#x27;exécuter cette tâche; car les dragons de la nuit fendent à plein vol les nuages, et l&#x27;avant-coureur de l&#x27;aurore brille déjà là-bas! À son approche, vous le savez, les spectres qui erraient çà et là s&#x27;enfuient par troupes vers les cimetières; toutes ces ombres damnées qui ont leur sépulture dans les carrefours et les flots[31] sont déjà retournées à leur couche peuplée de vers; de peur que le jour ne contemple leur honte, elles s&#x27;exilent volontairement de la lumière, et se résignent à être à jamais les compagnes de la nuit au front noir.</p>
+<p>[Note 31: «Les fantômes suicidés enterrés dans les carrefours, et ceux des noyés, étaient condamnés à errer l&#x27;espace de cent ans, parce que les rites de la sépulture n&#x27;avaient pas été accomplis.» STEEVENS.]</p>
+<p>OBERON.--Mais nous, nous sommes des esprits d&#x27;une autre nature. Moi, j&#x27;ai souvent joué avec la lumière du matin; et je puis, comme un garde des forêts, fouler le tapis des bois, même jusqu&#x27;à l&#x27;instant où la porte de l&#x27;orient, toute rouge de feux, venant à s&#x27;ouvrir, verse sur Neptune de célestes rayons, et change en or ses ondes vertes et salées. Mais cependant hâte-toi; ne perds pas un instant: nous pouvons encore achever cette affaire avant le jour. (Oberon sort.)</p>
+<h3 class="sub">Puck.</h3>
+<p>Par monts et par vaux, par monts et par vaux, Je vais les mener par monts et par vaux; Je suis craint dans les campagnes et les villes. Esprit, mène-les par monts et par vaux.</p>
+<p>En voici un.</p>
+<p>(Entre Lysandre.)</p>
+<p>LYSANDRE.--Où es-tu donc, orgueilleux Démétrius? Réponds-moi.</p>
+<p>PUCK.--Me voici, lâche, tout prêt et en garde. Où es-tu?</p>
+<p>LYSANDRE.--Je vais te joindre tout à l&#x27;heure.</p>
+<p>PUCK.--Suis-moi donc sur un terrain plus uni. (Lysandre sort et suit la voix.)</p>
+<p>(Entre Démétrius.)</p>
+<p>DÉMÉTRIUS--Lysandre!--Réponds-moi encore: lâche fuyard, où t&#x27;es-tu donc sauvé? Parle. Es-tu dans un buisson? Où caches-tu donc ta tête?</p>
+<p>PUCK.--Et toi, poltron, te vantes-tu donc aux étoiles? Tu dis aux buissons que tu veux te battre, et tu n&#x27;oses pas approcher? Viens donc, perfide; viens, timide enfant, je vais te châtier avec une verge: c&#x27;est se déshonorer que de tirer l&#x27;épée contre toi.</p>
+<p>DÉMÉTRIUS.--Ha! es-tu là?</p>
+<p>PUCK.--Suis ma voix: ce n&#x27;est pas ici une place propre à essayer notre courage. (Ils sortent tous deux.)</p>
+<p>LYSANDRE reparaît seul.--Il fuit toujours devant moi, et toujours en me défiant: lorsque j&#x27;arrive au lieu d&#x27;où il me provoque, il est toujours parti. Le lâche a le pied bien plus léger que moi; je l&#x27;ai suivi de toute ma vitesse; mais il fuyait plus vite encore, et je me suis à la fin engagé dans un sentier sombre et raboteux: je veux me reposer ici.--Hâte-toi, jour bienfaisant. (Il se couche sur la terre.) Pour peu que tu me montres ta lumière naissante, je trouverai Démétrius, et je satisferai ma vengeance. (Il dort.)</p>
+<p>(Démétrius reparaît et Puck aussi.)</p>
+<p>PUCK.--Oh! oh! oh, oh! poltron; pourquoi n&#x27;avances-tu pas?</p>
+<p>DÉMÉTRIUS.--Attends-moi, si tu l&#x27;oses; car je sais bien que tu cours devant moi, que tu changes toujours de place, et que tu n&#x27;oses ni m&#x27;attendre de pied ferme, ni me regarder en face. Où es-tu?</p>
+<p>PUCK.--Viens ici: me voilà.</p>
+<p>DÉMÉTRIUS, courant du côté de la voix.--Tu te moques de moi; mais, va, tu me le payeras cher, si j&#x27;aperçois jamais ton visage à la lueur du jour: maintenant va ton chemin.--La faiblesse me contraint de m&#x27;étendre ici de ma longueur sur ce lit froid.--À l&#x27;approche du jour, attends-toi à me revoir. (Il se couche sur la bruyère et dort.)</p>
+<p>(Hélène entre.)</p>
+<p>HÉLÈNE.--Ô pénible nuit! ô longue et ennuyeuse nuit! abrége tes heures. Brille à l&#x27;orient, consolante lumière, que je puisse au lever du jour retourner à Athènes, et m&#x27;éloigner de ceux qui détestent ma présence importune.--Et toi, sommeil, qui daignes quelquefois fermer les yeux du chagrin, dérobe-moi pour quelques instants à moi-même. (Elle se couche et s&#x27;endort.)</p>
+<p>PUCK.--Rien que trois encore d&#x27;endormis? Qu&#x27;il en vienne encore une, deux couples font quatre.--La voici qui arrive courroucée et triste.--Cupidon est un fripon d&#x27;enfant, de rendre ainsi folles les pauvres femmes.</p>
+<p>(Entre Hermia.)</p>
+<p>HERMIA.--Jamais je ne fus si lasse, jamais je ne fus si désespérée: trempée de rosée, déchirée par les ronces, je ne peux ni aller, ni me traîner plus loin: mes jambes ne peuvent suivre le pas de mes désirs: il faut que je me repose ici jusqu&#x27;au point du jour. Que le ciel couvre Lysandre d&#x27;un bouclier, si leur intention est de se battre! (Elle se couche.)</p>
+<h3 class="sub">Puck.</h3>
+<p>Sur la terre Dormez profondément; Sur votre oeil J&#x27;appliquerai Mon remède. Tendre amoureux</p>
+<p>(Il exprime le jus de son herbe sur l&#x27;oeil de Lysandre.)</p>
+<p>À ton réveil Tu prendras Un vrai plaisir En revoyant Les yeux de ta première amante, Et le proverbe rustique bien connu,</p>
+<p>Qu&#x27;il faut que chacun prenne ce qui lui appartient, S&#x27;accomplira à votre réveil: Jacquot aura Gilette, Rien n&#x27;ira mal. L&#x27;homme recouvrera sa jument, et tout ira bien.</p>
+<h3 class="sub">Fin du troisième acte — Acte quatrième</h3>
+<h2 class="chapter" id="c9">Scène I</h2>
+<p>Toujours dans le bois.</p>
+<p>TITANIA, BOTTOM, LES FÉES qui sont à sa suite; OBERON qui les suit sans en être aperçu.</p>
+<p>TITANIA, à Bottom.--Viens, assieds-toi sur ce lit de fleurs; pendant que je caresse tes charmantes joues; je veux attacher des roses musquées sur ta tête douce et lisse, et baiser tes belles et longues oreilles, toi la joie de mon coeur.</p>
+<p>BOTTOM.--Où est Fleur-des-Pois?</p>
+<p>FLEUR-DES-POIS.--Me voici.</p>
+<p>BOTTOM.--Grattez-moi la tête, Fleur-des-Pois.--Où est monsieur Toile-d&#x27;Araignée?</p>
+<p>TOILE-D&#x27;ARAIGNÉE.--Me voici.</p>
+<p>BOTTOM.--Monsieur Toile-d&#x27;Araignée, mon cher monsieur, prenez vos armes, et tuez-moi ce bourdon aux cuisses rouges, qui est sur la fleur de ce chardon; puis, mon cher monsieur, apportez-moi son sac de miel. Ne vous échauffez pas trop dans l&#x27;opération, monsieur, et ayez soin, mon bon monsieur, de ne pas crever le sac au miel: je n&#x27;aimerais pas à vous voir tout inondé de miel, seigneur.--Où est M. Grain-de-Moutarde?</p>
+<p>GRAIN-DE-MOUTARDE.--Me voici.</p>
+<p>BOTTOM.--Donnez-moi votre poing, monsieur Grain-de-Moutarde!--Je vous prie, cessez vos compliments, monsieur Grain-de-Moutarde!</p>
+<p>GRAIN-DE-MOUTARDE.--Que désirez-vous?</p>
+<p>BOTTOM.--Rien, monsieur, rien de plus que d&#x27;aider au cavalier Fleur-des-Pois à me gratter la tête: il faudra que j&#x27;aille trouver le barbier, monsieur; car il me semble que j&#x27;ai furieusement de poil à la figure; et je suis un âne si délicat que, pour peu que mon poil me démange, il faut que je me gratte.</p>
+<p>TITANIA.--Mon doux ami, voulez-vous entendre un peu de musique?</p>
+<p>BOTTOM.--J&#x27;ai une assez bonne oreille en musique. Allons, faites venir les pincettes et la clef.</p>
+<p>TITANIA.--Ou dites, cher amour, ce qui vous ferait plaisir à manger.</p>
+<p>BOTTOM.--À dire vrai, un picotin d&#x27;avoine: je pourrais mâcher votre bonne avoine sèche; il me semble que j&#x27;aurais grande envie d&#x27;une botte de foin; du bon foin, du foin parfumé, il n&#x27;y a rien d&#x27;égal à cela.</p>
+<p>TITANIA.--J&#x27;ai une fée déterminée qui ira fouiller dans le magasin de l&#x27;écureuil, et qui vous apportera des noix nouvelles.</p>
+<p>BOTTOM.--Je préférerais une poignée ou deux de pois secs; mais, je vous prie, que personne de vos gens ne me dérange; je sens une certaine exposition au sommeil qui me vient.</p>
+<p>TITANIA.--Dors, et je vais t&#x27;enlacer dans mes bras.--Fées, partez, et dispersez-vous dans toutes les directions. Ainsi le chèvre-feuille parfumé s&#x27;entrelace amoureusement: ainsi le lierre femelle entoure de ses anneaux les bras d&#x27;écorce de l&#x27;ormeau[32]. Oh! comme je t&#x27;aime! oh! comme je t&#x27;adore! (Ils dorment.)</p>
+<p>[Note 32: Ulmo conjuncta marito.]</p>
+<p>(Oberon s&#x27;avance. Puck revient.)</p>
+<p>OBERON.--Sois le bienvenu, bon Robin, vois-tu ce charmant spectacle? Je commence à avoir pitié de sa folie. Tout à l&#x27;heure, l&#x27;ayant rencontrée derrière le bois, cherchant de douces fleurs pour cet odieux imbécile, je lui en ai fait des reproches et me suis querellé avec elle. Elle avait ceint ses tempes velues d&#x27;une couronne de fleurs odorantes et fraîches; et cette rosée qui s&#x27;enflait naguère en gouttes sur les boutons, telle que de rondes perles d&#x27;orient, semblait au coeur de ces jolies petites fleurs autant de larmes qui pleuraient leur disgrâce. Quand je l&#x27;eus grondée à mon gré, et qu&#x27;elle eut imploré mon pardon en termes soumis, je lui demandai alors son petit nain: elle me le donna aussitôt, et envoya ses fées le porter dans mon royaume; maintenant que je tiens l&#x27;enfant, je veux dissiper l&#x27;odieuse erreur de ses yeux. Ainsi, aimable Puck, ôte ce crâne enchanté de la tête de cet artisan athénien, afin qu&#x27;en se réveillant avec les autres il puisse regagner Athènes, et ne plus songer aux accidents de cette nuit que comme aux tourments chimériques d&#x27;un rêve. Mais je veux commencer par délivrer la reine des fées.</p>
+<p>(Il s&#x27;approche d&#x27;elle, et dit en lui touchant les yeux avec une herbe.)</p>
+<p>Sois comme tu avais coutume d&#x27;être. Vois comme tu avais coutume de voir: C&#x27;est le bouton de Diane sur la fleur de Cupidon[33] Qui est doué de cette vertu céleste.</p>
+<p>Allons, ma chère Titania; éveillez-vous, ma douce reine.</p>
+<p>[Note 33: Le bouton de Diane, c&#x27;est le bouton de l&#x27;agnus castus, et la fleur de Cupidon, la viola tricolor.]</p>
+<p>TITANIA.--Mon Oberon! quelles visions j&#x27;ai eues! Il m&#x27;a semblé que j&#x27;étais amoureuse d&#x27;un âne.</p>
+<p>OBERON, montrant Bottom.--Voilà votre amant.</p>
+<p>TITANIA.--Comment ces choses sont-elles arrivées? Oh! comme mes yeux abhorrent maintenant son visage!</p>
+<p>OBERON.--Silence, un instant.--Robin, enlève cette tête.--Titania, appelez votre musique, et accablez les sens de ces cinq personnages d&#x27;un sommeil plus profond qu&#x27;à l&#x27;ordinaire.</p>
+<p>TITANIA.--De la musique! holà! de la musique! celle qui procure le sommeil.</p>
+<p>PUCK.--Maintenant quand tu te réveilleras, vois avec tes propres yeux, ceux d&#x27;un sot.</p>
+<p>OBERON.--Musique, commencez. (On entend une musique assoupissante.) Venez, ma reine; donnez-moi la main, ébranlons la terre où sont couchés ces dormeurs. Maintenant nous sommes amis de nouveau, vous et moi; et demain, à minuit, nous danserons des danses solennelles et triomphantes dans la maison du duc Thésée, et nous la bénirons pour toute sa belle postérité. Là aussi seront unis joyeusement, en même temps que Thésée, tous ces couples d&#x27;amants fidèles.</p>
+<h3 class="sub">Puck.</h3>
+<p>Roi des fées, écoute, fais attention, J&#x27;entends l&#x27;alouette matinale.</p>
+<h3 class="sub">Oberon.</h3>
+<p>Allons, ma reine, dans un grave silence, Suivons en dansant l&#x27;ombre de la nuit. Nous pouvons faire le tour du globe D&#x27;un pas plus rapide que la lune errante.</p>
+<h3 class="sub">Titania.</h3>
+<p>Venez, mon époux; et, dans notre vol Dites-moi comment il s&#x27;est fait cette nuit Que vous m&#x27;avez trouvée dormant ici Par terre avec ces mortels.</p>
+<p>(Ils sortent.)</p>
+<p>(Paraissent Thésée, Égée, Hippolyte et leur suite.)</p>
+<p>THÉSÉE.--Allez, l&#x27;un de vous, et trouvez-moi le garde forestier, car notre cérémonie est finie; et puisque voici le point du jour, ma bien-aimée entendra le concert de mes chiens.--Découplez-les dans le vallon de l&#x27;ouest: allez.--Dépêchez, vous dis-je, et trouvez le garde.--Nous allons, ma belle reine, gravir le sommet de la montagne, pour écouter la confusion harmonieuse des voix des chiens et de l&#x27;écho réunis.</p>
+<p>HIPPOLYTE.--J&#x27;étais un jour avec Hercule et Cadmus, lorsqu&#x27;ils chassaient l&#x27;ours dans une forêt de Crète avec des chiens de Sparte: jamais je n&#x27;entendis plus vigoureuse battue. Les bois, les cieux, les fontaines, les environs entiers semblaient retentir d&#x27;un seul cri. Jamais je n&#x27;ai entendu de dissonance aussi harmonieuse, et un vacarme aussi agréable.</p>
+<p>THÉSÉE.--Mes chiens sont de race lacédémonienne, à large gueule, tachetés de roux, leurs têtes sont ornées de longues oreilles pendantes qui balayent la rosée du matin; les jambes sont arquées comme celle des taureaux de Thessalie; ils sont lents à la poursuite, mais assortis en voix comme des cloches accordées à l&#x27;octave. Jamais cri plus harmonieux ne fit retentir les tayauts, et ne fut égayé par les cors, dans la Crète, à Sparte ou dans la Thessalie. Vous allez les entendre et en juger.--Mais, chut! quelles sont ces nymphes?</p>
+<p>ÉGÉE.--Mon prince, c&#x27;est ma fille qui est endormie ici: celui-ci, c&#x27;est Lysandre; voilà Démétrius; et voici Hélène, la fille du vieux Nédar. Je suis bien étonné de les trouver ici tous ensemble.</p>
+<p>THÉSÉE.--Sans doute ils se seront levés de grand matin pour célébrer la fête de mai; et, instruits de nos intentions, ils sont venus ici orner la pompe de notre hymen. Mais, parlez, Égée; n&#x27;est-ce pas aujourd&#x27;hui le jour où Hermia doit donner sa réponse sur son choix?</p>
+<p>ÉGÉE.--Oui, mon prince.</p>
+<p>THÉSÉE.--Allez, ordonnez aux chasseurs de les réveiller au bruit du cor.</p>
+<p>(On entend des cors et des cris de joie.)</p>
+<p>(Démétrius, Lysandre, Hermia et Hélène se réveillent en sursaut et se relèvent.)</p>
+<p>THÉSÉE.--Bonjour, mes amis: la Saint-Valentin[34] est passée.--Ces oiseaux des bois ne commencent-ils à s&#x27;accoupler qu&#x27;à présent?</p>
+<p>(Tous se prosternent devant Thésée.)</p>
+<p>[Note 34: Allusion au proverbe que les oiseaux commencent à s&#x27;accoupler à la Saint-Valentin.]</p>
+<p>LYSANDRE.--Pardon, mon prince.</p>
+<p>THÉSÉE.--Je vous prie, levez-vous tous: je sais que vous êtes deux rivaux ennemis. Comment s&#x27;est opérée cette paisible réunion entre vous? Comment votre haine est-elle devenue si peu jalouse, que je vous trouve dormant près de la haine, sans craindre l&#x27;un de l&#x27;autre aucune inimitié?</p>
+<p>LYSANDRE.--Mon prince, je vous répondrai avec étonnement, à demi endormi, à demi éveillé: mais en vérité, il m&#x27;est encore impossible de dire comment je suis venu en ce lieu. Je présume, car je voudrais vous dire la vérité... et en ce moment, je me rappelle... oui, je me le rappelle, je suis venu ici avec Hermia; notre dessein était de sortir d&#x27;Athènes, afin d&#x27;échapper aux dangers de la loi athénienne.</p>
+<p>ÉGÉE.--C&#x27;est assez, c&#x27;est assez, mon prince; vous en avez assez entendu: je réclame la loi contre lui.--Ils voulaient s&#x27;évader; et par cette fuite, Démétrius, ils voulaient nous frustrer, vous de votre épouse, moi de mon consentement à ce qu&#x27;elle devînt votre femme.</p>
+<p>DÉMÉTRIUS.--Noble duc, c&#x27;est la belle Hélène qui m&#x27;a informé de leur évasion dans ce bois, et du dessein qui les y conduisait; et moi, dans ma fureur, je les ai suivis jusqu&#x27;ici; et la belle Hélène, poussée par sa tendresse, m&#x27;a suivie. Mais, mon bon prince, je ne sais par quelle puissance (sans doute par quelque puissance supérieure) mon amour pour Hermia, fondu comme la neige, me semble en ce moment le souvenir confus des vains hochets dont je raffolais dans mon enfance; et maintenant l&#x27;unique objet de ma foi, de toutes les affections de mon coeur, l&#x27;objet et le plaisir de mes yeux, c&#x27;est Hélène seule; j&#x27;étais fiancé avec elle, mon prince, avant que j&#x27;eusse vu Hermia: comme un malade, je me dégoûtai de cette beauté; mais aujourd&#x27;hui bien portant, je reviens à mon goût naturel; maintenant, je la veux, je l&#x27;aime, je la désire, et je lui serai à jamais fidèle[35].</p>
+<p>[Note 35: Ces méprises d&#x27;amour ont sans doute donné l&#x27;idée du dix-septième chant de la Pucelle.]</p>
+<p>THÉSÉE.--Beaux amants, la rencontre est heureuse. Nous entendrons plus tard les détails de cette aventure.--Égée, je triompherai de votre volonté, tout à l&#x27;heure, dans le même temple, avec nous, ces deux couples seront éternellement unis; et nous laisserons là notre projet de chasse, car la matinée est déjà un peu avancée.--Allons, retournons tous à Athènes; nous allons célébrer à nous six une fête solennelle.--Venez, Hippolyte.</p>
+<p>(Thésée et Hippolyte sortent avec leur suite.)</p>
+<p>DÉMÉTRIUS.--Toutes ces aventures paraissent comme des objets imperceptibles, comme des montagnes éloignées et confondues avec les nuages.</p>
+<p>HERMIA.--Il me semble que je vois ces objets d&#x27;un oeil troublé; tout me paraît double.</p>
+<p>HÉLÈNE.--C&#x27;est la même chose pour moi; et j&#x27;ai trouvé Démétrius comme un joyau qui est à moi, et qui n&#x27;est pas à moi.</p>
+<p>DÉMÉTRIUS.--Il me semble à moi, que nous dormons, que nous rêvons encore.--Ne croyez-vous pas que le duc était tout à l&#x27;heure ici, et qu&#x27;il nous a dit de le suivre?</p>
+<p>HERMIA.--Oui, et mon père y était aussi.</p>
+<p>HÉLÈNE.--Et Hippolyte.</p>
+<p>LYSANDRE.--Et il nous a invités à le suivre au temple.</p>
+<p>DÉMÉTRIUS.--Alors, nous sommes éveillés.--Suivons ses pas; et en chemin, racontons-nous nos songes.</p>
+<p>(Ils sortent; au moment où ils s&#x27;en vont, Bottom se réveille.)</p>
+<p>BOTTOM.--Quand mon tour viendra, appelez-moi, et je répondrai.--Ma première réplique est: Très-beau Pyrame.--Hé, holà!--Pierre Quince; Flute, le raccommodeur de soufflets; Snout, le chaudronnier; Starveling... Mort de ma vie! ils se sont évadés d&#x27;ici et m&#x27;ont laissé endormi.--J&#x27;ai eu une bien étrange vision! j&#x27;ai fait un songe... il est au-dessus des facultés de l&#x27;homme de dire ce qu&#x27;était ce songe. L&#x27;homme n&#x27;est qu&#x27;un âne, s&#x27;il veut se mêler d&#x27;expliquer ce rêve. Il me semblait que j&#x27;étais....--Il n&#x27;y a pas d&#x27;homme qui puisse dire ce que j&#x27;étais. Il me semblait que j&#x27;étais... et il me semblait que j&#x27;avais...--Mais l&#x27;homme n&#x27;est qu&#x27;un fou en habit d&#x27;arlequin, s&#x27;il entreprend de dire ce qu&#x27;il me semblait que j&#x27;étais. L&#x27;oeil de l&#x27;homme n&#x27;a jamais ouï, l&#x27;oreille de l&#x27;homme n&#x27;a jamais vu; la main de l&#x27;homme ne peut goûter, ni sa langue concevoir ni son coeur exprimer en paroles ce qu&#x27;était mon rêve. Je veux aller trouver Pierre Quince pour qu&#x27;il compose une ballade sur mon songe: on l&#x27;appellera le rêve de Bottom[36], parce que c&#x27;est un rêve sans fond; et je le chanterai à la fin de la pièce, devant le duc: et peut-être même, pour rendre la pièce plus agréable, le chanterai-je à la mort de Thisbé. (Il sort.)</p>
+<p>[Note 36: Bottom signifie le fond.]</p>
+<h2 class="chapter" id="c10">Scène II</h2>
+<p>La scène est à Athènes, dans la maison de Quince.</p>
+<h3 class="sub">Quince, flute, snout et starveling.</h3>
+<p>QUINCE.--Avez-vous envoyé chez Bottom? Est-il rentré chez lui?</p>
+<p>STARVELING.--On ne peut avoir de ses nouvelles: sans doute, les esprits l&#x27;ont transporté loin d&#x27;ici.</p>
+<p>FLUTE.--S&#x27;il ne vient pas, la pièce est perdue. Elle ne peut plus aller, n&#x27;est-ce pas?</p>
+<p>QUINCE.--Ce n&#x27;est pas possible: vous n&#x27;avez pas dans tout Athènes, d&#x27;autre homme que lui en état de jouer Pyrame.</p>
+<p>FLUTE.--Non; il a tout simplement le plus grand talent de tous les artisans d&#x27;Athènes.</p>
+<p>QUINCE.--Oui, et la plus belle tournure aussi, un beau galant, avec une douce voix.</p>
+<p>FLUTE.--Vous devriez dire une merveille incomparable. Un galant est, Dieu nous bénisse, une chose qui n&#x27;est bonne à rien!</p>
+<p>(Entre Snug.)</p>
+<p>SNUG.--Messieurs, le duc revient du temple; et il y a deux ou trois seigneurs et dames de plus, qui se sont mariés en même temps que lui. Si notre divertissement eût été en train, notre fortune à tous était faite.</p>
+<p>FLUTE.--Oh! mon brave Bottom! voilà comme il a perdu six sous par jour de revenu sa vie durant: il ne pouvait manquer d&#x27;avoir six sous par jour. Si le duc ne lui avait pas fait six sous par jour pour jouer Pyrame, je veux être pendu! Et il les aurait bien mérités; oui, six sous[37] par jour, ou rien pour le rôle de Pyrame.</p>
+<p>[Note 37: «Trait de satire contre Preston, auteur de la pièce de Cambyse. Il joua un rôle dans la Didon de Nash, devant Elisabeth, qui le gratifia d&#x27;une pension de vingt livres sterling par an (ce qui ne fait guère qu&#x27;un shilling par jour).» STEEVENS.]</p>
+<p>(Survient Bottom.)</p>
+<p>BOTTOM.--Où sont ces camarades? où sont ces braves coeurs?</p>
+<p>QUINCE.--Bottom!--Ô le superbe jour! ô l&#x27;heure fortunée!</p>
+<p>BOTTOM.--Messieurs, je vais vous raconter des merveilles.... Mais ne me demandez pas ce que c&#x27;est; car si je vous le dis, je ne suis pas un vrai Athénien: je vous dirai tout, exactement comme les choses se sont passées.</p>
+<p>QUINCE.--Voyons, cher Bottom.</p>
+<p>BOTTOM.--Vous n&#x27;aurez pas un mot de moi. Tout ce que je vous dirai, c&#x27;est que le duc a dîné. Revêtez-vous de vos habits; de bonnes attaches à vos barbes, des rubans neufs à vos escarpins: rendez-vous tous au palais; que chacun jette un coup d&#x27;oeil sur son rôle; car la fin de l&#x27;histoire est que notre pièce est le divertissement préféré. À tout événement que Thisbé ait soin d&#x27;avoir du linge propre; et que celui qui joue le lion n&#x27;aille pas rogner ses ongles, car ils passeront pour les griffes du lion; et, mes très-chers acteurs, ne mangez point d&#x27;ognons, ni d&#x27;ail, car il faut que nous ayons une haleine douce; et, moyennant tout cela, je ne doute pas que nous ne les entendions dire: Voilà une charmante comédie! Plus de paroles; allons, partons. (Ils sortent.)</p>
+<h3 class="sub">Fin du quatrième acte — Acte cinquième</h3>
+<h2 class="chapter" id="c11">Scène I</h2>
+<p>Athènes.--Appartement dans le palais de Thésée</p>
+<p>THÉSÉE, HIPPOLYTE, PHILOSTRATE, SEIGNEURS, Suite.</p>
+<p>HIPPOLYTE.--Cela est étrange, mon cher Thésée, ce que racontent ces amants!</p>
+<p>THÉSÉE.--Plus étrange que vrai. Jamais je ne pourrai ajouter foi à ces vieilles fables, ni à ces jeux de féerie. Les amants et les fous ont des cerveaux bouillants, une imagination féconde en fantômes, et qui conçoit au delà de ce que la froide raison peut jamais comprendre. Le fou, l&#x27;amoureux et le poëte sont tout imagination. L&#x27;un voit plus de démons que l&#x27;enfer ne peut en contenir; c&#x27;est le fou; l&#x27;amoureux, non moins extravagant, voit la beauté d&#x27;Hélène sur un front égyptien. L&#x27;oeil du poëte, roulant dans un beau délire, lance son regard du ciel à la terre, et de la terre aux cieux; et comme l&#x27;imagination donne un corps aux objets inconnus, la plume du poëte leur imprime de même des formes, et assigne à un fantôme aérien une demeure et un nom particulier; tels sont les jeux d&#x27;une imagination puissante; si elle conçoit un sentiment de joie, elle crée aussitôt un être, messager de cette joie: ou si, dans la nuit, elle se forge quelque terreur, avec quelle facilité un buisson devient un ours!</p>
+<p>HIPPOLYTE.--Mais toute l&#x27;histoire qu&#x27;ils ont racontée de ce qui s&#x27;est passé cette nuit, leurs idées ainsi transformées, tout cela annonce plus que les illusions de l&#x27;imagination, et présente quelque chose de réel, mais de toute façon, d&#x27;admirable et d&#x27;étrange.</p>
+<p>(Entrent Lysandre, Démétrius, Hermia et Hélène.)</p>
+<p>THÉSÉE.--Voici nos amants qui viennent pleins de joie et d&#x27;allégresse.--Que le bonheur et de longs jours d&#x27;amour accompagnent vos coeurs, aimables amis!</p>
+<p>LYSANDRE.--Que des jours plus beaux encore suivent les pas de Votre Altesse, et éclairent votre table et votre couche!</p>
+<p>THÉSÉE.--Allons, quelles mascarades, quelles danses aurons-nous pour consumer sans ennui ce siècle de trois heures, qui doit s&#x27;écouler entre le souper et l&#x27;heure du lit? Où est l&#x27;ordonnateur habituel de nos fêtes? Quels divertissements sont préparés? N&#x27;y a-t-il point de comédie, pour soulager les angoisses de cette heure éternelle? Appelez Philostrate.</p>
+<p>PHILOSTRATE.--Me voici, puissant Thésée.</p>
+<p>THÉSÉE.--Dites; quel passe-temps avez-vous pour cette soirée? Quelle mascarade? Quelle musique? Comment tromperons-nous l&#x27;ennui du temps paresseux, si nous n&#x27;avons pas quelque plaisir pour nous distraire?</p>
+<p>PHILOSTRATE.--Voilà la liste des divertissements qui sont préparés. Choisissez celui que Votre Altesse préfère voir le premier. (Il lui remet un écrit.)</p>
+<p>THÉSÉE lit.--Le combat des centaures pour être chanté par un eunuque athénien, sur la harpe.--Nous ne voulons pas de cela; j&#x27;en ai fait tout le récit à ma bien-aimée, à la gloire de mon parent Hercule.--La fureur des bacchantes enivrées, déchirant le chantre de la Thrace dans leur rage.--C&#x27;est un vieux sujet; et je l&#x27;ai vu jouer la dernière fois que je revins vainqueur de Thèbes.--Les neuf muses pleurant la mort de la Science, récemment décédée dans l&#x27;indigence[38].--C&#x27;est quelque critique, quelque satire mordante, et cela ne va pas à une fête de noces.--Une ennuyeuse et courte scène du jeune Pyrame, avec sa maîtresse Thisbé; farce vraiment tragique.--Tragique et comique à la fois! courte et ennuyeuse! C&#x27;est comme qui dirait de la glace chaude, et de la neige d&#x27;une espèce aussi rare. Comment accorder ces contraires?</p>
+<p>[Note 38: Allusion à un poëme de Spencer. Ce poëte mourut de misère en 1598.]</p>
+<p>PHILOSTRATE.--C&#x27;est, mon prince, une pièce longue de quelque dizaine de mots, ce qui est aussi court qu&#x27;aucune pièce de ma connaissance; mais avec ces dix mots, mon prince, elle est encore trop longue, ce qui la rend ennuyeuse; car, dans toute la pièce, il n&#x27;y a pas un mot à sa place, ni un seul acteur propre à son rôle; et c&#x27;est une pièce tragique, mon prince; car Pyrame se tue lui-même à la fin: ce qui, je vous l&#x27;avoue, quand je l&#x27;ai vu répéter, a rendu mes yeux humides; mais de larmes plus gaies, que n&#x27;en ont jamais fait jaillir les plus bruyants éclats de rires.</p>
+<p>THÉSÉE.--Quels sont les acteurs?</p>
+<p>PHILOSTRATE.--Des artisans, aux mains calleuses, qui travaillent ici dans Athènes, mais qui n&#x27;ont jamais travaillé d&#x27;esprit jusqu&#x27;à ce moment; ils se sont avisés aujourd&#x27;hui de charger de cette pièce leur mémoire inexercée, pour la cérémonie de vos noces.</p>
+<p>THÉSÉE.--Nous voulons la voir jouer.</p>
+<p>PHILOSTRATE.--Non, mon noble duc; elle n&#x27;est pas digne de vous: je l&#x27;ai entendue d&#x27;un bout à l&#x27;autre, et cela ne vaut rien, rien au monde; à moins que vous ne trouviez quelque amusement dans leur intention, en les voyant se tourmenter, et réciter avec tant de peine, pour plaire à Votre Altesse.</p>
+<p>THÉSÉE.--Je veux entendre cette pièce: tout ce qui est offert par la simplicité et le zèle est toujours bien. Allez, faites-les venir.--Et vous, mesdames, prenez vos places. (Philostrate sort.)</p>
+<p>HIPPOLYTE.--Je n&#x27;ai pas de plaisir à voir des malheureux échouer, et le zèle succomber dans ses efforts pour plaire.</p>
+<p>THÉSÉE.--Hé! ma chère, vous ne verrez pas cela non plus.</p>
+<p>HIPPOLYTE.--Il dit qu&#x27;ils ne peuvent rien faire de supportable en ce genre.</p>
+<p>THÉSÉE.--Nous n&#x27;en paraîtrons que plus généreux, en les remerciant, sans qu&#x27;ils nous aient rien donné. Notre plaisir sera de comprendre ce qui fait le sujet de leurs erreurs. Là où la bonne volonté échoue, un noble coeur considère l&#x27;intention, non le mérite de l&#x27;action. Dans mes voyages, souvent de grands clercs formaient le projet de me complimenter par des harangues longtemps étudiées; et, lorsque je les voyais frissonner et pâlir, rester court au milieu de leurs périodes, étouffer dans leur peur leur voix exercée, et pour conclusion rester muets et sans harangue, croyez-moi, ma chère, je cueillais un compliment dans le silence, et j&#x27;en lisais autant dans la modestie de leur zèle timide, que dans la bruyante voix d&#x27;une éloquence audacieuse et arrogante; l&#x27;affection et la simplicité muette m&#x27;en disent donc beaucoup plus que tout ce que je pourrais entendre.</p>
+<p>(Philostrate revient.)</p>
+<p>PHILOSTRATE.--S&#x27;il plaît à Votre Altesse, le Prologue est tout prêt.</p>
+<p>THÉSÉE.--Qu&#x27;il s&#x27;avance.</p>
+<p>(On joue une fanfare.)[39].</p>
+<p>[Note 39: Il paraît que le prologue était anciennement introduit au son des trompettes.]</p>
+<p>(Le Prologue entre.)</p>
+<p>LE PROLOGUE.--«Si nous déplaisons, c&#x27;est avec notre bonne volonté; il faut que vous pensiez que nous ne venons pas pour offenser, mais par notre bonne volonté, vous montrer notre simple savoir-faire, voilà le véritable commencement de notre fin. Considérez donc que nous ne venons qu&#x27;avec dépit. Nous ne venons point comme pour vous contenter; mais c&#x27;est notre véritable intention. Nous ne sommes pas ici pour votre plaisir; que si vous avez regret, les acteurs sont tout prêts et par leur jeu vous saurez tout ce qu&#x27;il y a apparence que vous sachiez.»</p>
+<p>THÉSÉE.--Ce garçon ne s&#x27;arrête pas sur les points.</p>
+<p>LYSANDRE.--Il a galopé son prologue, comme un jeune cheval; il ne connaît point d&#x27;arrêt. Voilà une bonne leçon, mon prince: il ne suffit pas de parler; il faut parler sensément.</p>
+<p>HIPPOLYTE.--En vérité, il a joué sur son prologue comme un enfant sur une flûte: des sons, mais sans mesure.</p>
+<p>THÉSÉE.--Son discours ressemblait à une chaîne embrouillée; il n&#x27;y avait aucun anneau de moins, mais tous étaient en désordre. Qui vient après lui?</p>
+<p>(Entrent Pyrame, Thisbé, la Muraille, le Clair-de-Lune et le Lion, comme dans une pantomime.)</p>
+<p>LE PROLOGUE.--«Seigneurs, peut-être êtes-vous étonnés de ce spectacle; mais étonnez-vous jusqu&#x27;à ce que la vérité vienne tout éclaircir. Ce personnage, c&#x27;est Pyrame, si vous voulez le savoir. Cette belle dame, c&#x27;est bien certainement Thisbé. Cet homme, enduit de chaux et de crépi, représente une muraille, cette odieuse muraille qui séparait ces deux amants; et les pauvres enfants, il faut qu&#x27;ils se contentent de murmurer tout bas au travers d&#x27;une fente de la muraille, que personne ne s&#x27;en étonne. Cet autre, avec sa lanterne, un chien et un buisson d&#x27;épines, représente le clair de lune; car, si vous voulez le savoir, ces deux amants ne se firent pas scrupule de se donner rendez-vous au clair de lune, à la tombe de Ninus, pour s&#x27;y faire la cour. Cette terrible bête, qui, de son nom, s&#x27;appelle un lion, fit reculer, ou plutôt épouvanta la fidèle Thisbé venant dans l&#x27;ombre de la nuit; et en fuyant, elle laissa tomber son manteau, que l&#x27;infâme lion teignit de sa gueule ensanglantée. Aussitôt arrive Pyrame, ce beau et grand jeune homme, et il trouve le manteau sanglant de sa fidèle Thisbé. À cette vue, avec son épée, sa coupable et sanguinaire épée, il perce bravement son sein bouillant; et Thisbé, qui s&#x27;était arrêtée sous l&#x27;ombrage d&#x27;un mûrier, retira son poignard, et mourut. Quant au reste, que le Lion, le Clair-de-Lune, la Muraille et les deux amants l&#x27;expliquent dans leurs grands discours tant qu&#x27;ils seront en scène.»</p>
+<p>(Sortent le Prologue, Thisbé, le Lion et le Clair-de-Lune.)</p>
+<p>THÉSÉE.--Je me demande si le lion doit parler.</p>
+<p>DÉMÉTRIUS.--Il n&#x27;y a rien d&#x27;étonnant à cela, mon prince: un lion peut parler, si tant d&#x27;ânes le peuvent[40].</p>
+<p>[Note 40: Allusion à une fable de l&#x27;Estrange: les Ânes juges de paix.]</p>
+<p>LA MURAILLE.--«Dans le même intermède, il se trouve que moi, qui de mon nom m&#x27;appelle Snout, je représente une muraille, et une muraille qui, veuillez m&#x27;en croire, a un trou ou une crevasse, par laquelle les deux amants, Pyrame et Thisbé, murmuraient souvent en secret. Cette chaux, ce crépi et cette pierre vous montrent que je suis précisément cette muraille: voilà la vérité. Et voici à droite et à gauche l&#x27;ouverture, la lézarde par laquelle ces timides amants doivent se parler tout bas.»</p>
+<p>THÉSÉE.--Peut-on demander à la chaux et à la bourre de mieux parler?</p>
+<p>DÉMÉTRIUS.--C&#x27;est, mon prince, le mur le plus spirituel que j&#x27;aie jamais entendu.</p>
+<p>THÉSÉE.--Voilà Pyrame qui s&#x27;approche de la muraille: silence.</p>
+<p>PYRAME.--«Ô nuit au lugubre visage, ô sombre nuit! ô nuit, qui es toujours, quand le jour n&#x27;est plus! ô nuit! ô nuit! hélas! hélas! je crains bien que ma Thisbé n&#x27;ait oublié sa promesse!--Et toi, ô muraille! ô douce et aimable muraille! qui est élevée entre le terrain de son père et le mien! toi, muraille! ô muraille! ô muraille! ô aimable et douce muraille, montre-moi ta lézarde, que je puisse regarder au travers avec mes yeux! (La muraille écarte ses doigts.) Je te rends grâces, courtoise muraille; que Jupiter te protége en récompense! Mais, que vois-je? Je ne vois point de Thisbé! Ô maudite muraille, au travers de laquelle je ne vois point mon bonheur; maudites soient tes pierres, pour me tromper ainsi!»</p>
+<p>THÉSÉE.--La muraille, étant sensible, devrait, ce me semble, le maudire à son tour.</p>
+<p>PYRAME.--«Non, monsieur; en vérité, elle ne le doit pas.--Me tromper ainsi, est la réclame du rôle de Thisbé: c&#x27;est à elle à paraître maintenant, et je vais la chercher des yeux à travers la muraille. Vous verrez que tout cela va arriver juste comme je vous l&#x27;ai dit. Tenez, la voilà qui vient.»</p>
+<p>THISBÉ.--«Ô muraille! tu as souvent entendu mes plaintes de ce que tu séparais mon beau Pyrame et moi: mes lèvres vermeilles ont souvent baisé tes pierres cimentées avec de la chaux et de la bourre!»</p>
+<p>PYRAME.--«Je vois une voix; je veux m&#x27;approcher de la fente, pour voir si je peux entendre le visage de ma Thisbé.--Thisbé!»</p>
+<p>THISBÉ.--«Mon amant! Tu es mon amant, je crois.»</p>
+<p>PYRAME.--«Crois ce que tu voudras; je suis ton cher amant, et je suis toujours fidèle comme Liandre[41].»</p>
+<p>[Note 41: Il y a, dans ce texte, Limandre. Liandre est le mot consacré dans nos parades; le beau Liandre pour Léandre.]</p>
+<p>THISBÉ.--«Et moi, comme Hélène, jusqu&#x27;à ce que les destins me tuent.»</p>
+<p>PYRAME.--«Jamais Saphale[42] ne fut si fidèle à Procrus.»</p>
+<p>[Note 42: Saphale pour Céphale, Procrus pour Procris.]</p>
+<p>THISBÉ.--«Comme Saphale fut fidèle à Procrus, je le suis pour toi.»</p>
+<p>PYRAME.--«Oh! donne-moi un baiser par le trou de cette odieuse muraille.»</p>
+<p>THISBÉ.--«Je baise le trou de la muraille, et point tes lèvres.»</p>
+<p>PYRAME.--«Veux-tu venir tout à l&#x27;heure me rejoindre à la tombe de Ninny?»</p>
+<p>THISBÉ.--«À la vie ou à la mort, j&#x27;y vais sans délai.»</p>
+<p>LA MURAILLE.--«Moi, muraille, me voilà à la fin de mon rôle; et, mon rôle étant fini, c&#x27;est ainsi que la muraille s&#x27;en va.» (La Muraille, Pyrame, Thisbé, sortent.)</p>
+<p>THÉSÉE.--Maintenant la voilà donc à bas la muraille qui séparait les deux voisins.</p>
+<p>DÉMÉTRIUS.--Il n&#x27;y a pas de remède, mon prince, quand les murailles sont si prestes à entendre sans en prévenir.</p>
+<p>HIPPOLYTE.--Ceci est la plus sotte absurdité que j&#x27;aie jamais entendue.</p>
+<p>THÉSÉE.--La meilleure de ces représentations n&#x27;est qu&#x27;une illusion, et la pire de toutes ne sera pas pire, si l&#x27;imagination veut l&#x27;embellir.</p>
+<p>HIPPOLYTE.--Il faut que ce soit votre imagination qui s&#x27;en charge alors et non pas la leur.</p>
+<p>THÉSÉE.--Si nous ne pensons pas plus d&#x27;eux qu&#x27;ils n&#x27;en pensent eux-mêmes, ils peuvent passer pour d&#x27;excellents acteurs.--Voici deux fameuses bêtes qui s&#x27;avancent, une lune et un lion.</p>
+<p>(Entrent le Lion et le Clair-de-Lune.)</p>
+<p>LE LION.--«Belles dames, vous dont le coeur timide frémit à la vue de la plus petite souris qui court sur le plancher, vous pourriez ici frissonner et trembler d&#x27;effroi lorsqu&#x27;un lion féroce vient à rugir dans sa rage. Sachez donc que moi, Snug le menuisier, je ne suis ni un lion féroce ni la femelle d&#x27;un lion; car si j&#x27;étais venu comme un lion irrité dans ce lieu, ma vie courrait de grands dangers.»</p>
+<p>THÉSÉE.--Une fort bonne bête, et d&#x27;une honnête conscience.</p>
+<p>DÉMÉTRIUS.--La meilleure bête, pour une bête bête, que j&#x27;ai jamais vue, mon prince.</p>
+<p>LYSANDRE.--Ce lion est un vrai renard par la valeur.</p>
+<p>THÉSÉE.--Cela est vrai; et un véritable oison par la prudence.</p>
+<p>DÉMÉTRIUS.--Non pas, mon prince, car sa valeur ne peut emporter sa prudence, et le renard emporte l&#x27;oison.</p>
+<p>THÉSÉE.--Sa prudence, j&#x27;en suis sûr, ne peut emporter sa valeur; car l&#x27;oison n&#x27;emporte pas le renard. C&#x27;est à merveille; laissez-le à sa prudence, et écoutons la Lune.</p>
+<p>LE CLAIR-DE-LUNE.--«Cette lanterne vous représente la lune et ses cornes.»</p>
+<p>DÉMÉTRIUS.--Il aurait dû porter les cornes sur sa tête.</p>
+<p>THÉSÉE.--Ce n&#x27;est pas un croissant; et ses cornes sont invisibles dans la circonférence.</p>
+<p>LE CLAIR-DE-LUNE.--«Cette lanterne représente la lune et ses cornes; et moi j&#x27;ai l&#x27;air d&#x27;être l&#x27;homme dans la lune[43].»</p>
+<p>[Note 43: Ce personnage n&#x27;était pas nouveau. Shakspeare le tourne ici en ridicule.]</p>
+<p>THÉSÉE.--Cette erreur est la plus grande de toutes: l&#x27;homme devrait être mis dans la lanterne; autrement, comment serait-il l&#x27;homme dans la lune?</p>
+<p>DÉMÉTRIUS.--Il n&#x27;ose pas se fourrer là, à cause de la chandelle; car vous voyez qu&#x27;elle flambe déjà.</p>
+<p>HIPPOLYTE.--Je suis lasse de cette lune: je voudrais que la scène changeât.</p>
+<p>THÉSÉE.--Il paraît, à sa petite lueur de prudence, qu&#x27;il est dans le décours. Mais cependant, par politesse et par raison, il faut attendre le temps voulu.</p>
+<p>LYSANDRE.--Poursuis, lune.</p>
+<p>LE CLAIR-DE-LUNE.--«Tout ce qui me reste à vous dire, c&#x27;est de vous déclarer que la lanterne est la lune; moi l&#x27;homme dans la lune; ce buisson d&#x27;épines, mon buisson d&#x27;épines; et ce chien, mon chien.»</p>
+<p>DÉMÉTRIUS.--Eh! mais, tout cela devrait être dans la lanterne; car ils sont dans la lune. Mais, silence; voici Thisbé.</p>
+<p>THISBÉ.--«Voici la tombe du vieux Ninny. Où est mon amant?»</p>
+<p>LE LION.--«Hoh!» (Le Lion rugit, Thisbé s&#x27;enfuit.)</p>
+<p>DÉMÉTRIUS.--Bien rugi, lion!</p>
+<p>THÉSÉE.--Bien couru, Thisbé!</p>
+<p>HIPPOLYTE.--Bien brillé, lune!--Vraiment, la lune luit de fort bonne grâce.</p>
+<p>(Le Lion déchire le manteau de Thisbé, et sort.)</p>
+<p>THÉSÉE.--Bien mâché, lion!</p>
+<p>DÉMÉTRIUS.--Et voilà Pyrame qui vient.</p>
+<p>LYSANDRE.--Et la lune qui disparaît.</p>
+<p>PYRAME.--«Douce lune, je te remercie de tes rayons solaires! Je te rends grâces, lune, de ta clarté si brillante; car à la lumière de tes rayons gracieux, dorés et brillants, je me promets de goûter la vue de la très-fidèle Thisbé!»</p>
+<p>Mais, arrêtons, ô horreur! Mais, voyons: pauvre chevalier, Quel affreux objet s&#x27;offre ici? Mes yeux, voyez-vous? Comment cela peut-il être? Ô ma petite poule, ô ma chère! Ton beau manteau, Quoi donc, est-il teint de sang? Approchez, cruelles furies; Ô destin: venez, venez, Coupez fil et filasse: Écrasez, détruisez, égorgez, et finissez tout!</p>
+<p>THÉSÉE.--Cette fureur et la mort d&#x27;un tendre amant seraient capables de rendre un homme triste.</p>
+<p>HIPPOLYTE.--J&#x27;en veux à mon coeur; mais j&#x27;ai pitié de lui.</p>
+<p>PYRAME.--«Ô nature! pourquoi formas-tu des lions? Puisque cet infâme lion a défloré ici ma chère maîtresse, qui est... non, non, qui était la plus belle personne qui ait vécu, qui ait aimé, qui ait caressé, qui ait regardé de ses beaux yeux.»</p>
+<p>Venez, larmes, confondez-vous,-- À moi, mon épée, et blesse Le sein de Pyrame: Oui, le sein gauche Où palpite le coeur. Ainsi je meurs, je meurs, je meurs, Maintenant je suis mort, Maintenant je suis parti de ce monde; Mon âme est dans les cieux. Langue, perds ta lumière; Lune, prends la fuite; Et maintenant, meurs, meurs, meurs. Meurs, meurs.</p>
+<p>(Il meurt. Le Clair-de-Lune sort.)</p>
+<p>DÉMÉTRIUS.--Plus de dé pour lui si ce n&#x27;est l&#x27;as, car il n&#x27;est plus qu&#x27;un[44].</p>
+<p>[Note 44: «Die, mourir, et die, équivoque.» FARMER.]</p>
+<p>LYSANDRE.--Il est moins qu&#x27;un as, ami, car il est mort; il n&#x27;est rien.</p>
+<p>THÉSÉE.--Avec le secours d&#x27;un chirurgien, il pourrait en revenir encore et se trouver un âne.</p>
+<p>HIPPOLYTE.--Par quel hasard le Clair-de-Lune s&#x27;en est-il allé, avant que Thisbé revienne et trouve son amant?</p>
+<p>THÉSÉE.--Elle le trouvera à la clarté des étoiles.--La voici qui s&#x27;avance, et sa douleur va finir la pièce.</p>
+<p>(Thisbé paraît.)</p>
+<p>HIPPOLYTE.--Il me semble qu&#x27;elle ne doit pas être fort longue, pour un pareil Pyrame; j&#x27;espère qu&#x27;elle sera courte.</p>
+<p>DÉMÉTRIUS.--Lequel de Pyrame ou de Thisbé vaut le mieux? Un atome ferait pencher la balance.</p>
+<p>LYSANDRE.--Elle l&#x27;a déjà aperçu avec ses beaux yeux.</p>
+<p>DÉMÉTRIUS.--Et la voilà qui va gémir: vous allez entendre.</p>
+<h3 class="sub">Thisbé.</h3>
+<p>Dors-tu, mon amant? Quoi! serais-tu mort, mon beau tourtereau? Ô Pyrame! lève-toi: Parle, parle-moi: tout à fait muet? Donc, mort, mort? Une tombe Doit donc couvrir tes yeux. Ce front de lis, Ce nez vermeil, Ces joues jaunes comme la primevère, Sont évanouis, sont évanouis. Amants, gémissez; Ses yeux étaient verts comme porreau. Ô vous, trio de soeurs, Venez, venez à moi. Avec vos mains pâles comme le lait, Teignez-les dans le sang, Puisque vous avez coupé De vos ciseaux son fil de soie. Langue, n&#x27;ajoute pas un mot; Viens, fidèle épée, Viens, lame tranchante, plonge-toi dans mon sein, Et adieu, mes amis. Ainsi finit Thisbé. Adieu, adieu, adieu.</p>
+<p>(Elle meurt.)</p>
+<p>THÉSÉE.--Le clair de lune et le lion sont restés pour enterrer les morts.</p>
+<p>DÉMÉTRIUS.--Oui, et la muraille aussi.</p>
+<p>BOTTOM.--Non, je puis vous l&#x27;assurer. La muraille qui séparait leurs pères est à bas.--Vous plaît-il de voir l&#x27;épilogue, ou d&#x27;entendre une danse bergamasque[45], entre deux acteurs de notre troupe?</p>
+<p>[Note 45: On sait que les danses bergamasques ont eu longtemps de la réputation.]</p>
+<p>THÉSÉE.--Point d&#x27;épilogue, je vous prie; car votre pièce n&#x27;a pas besoin d&#x27;apologie: ne vous excusez-pas; car lorsque tous les acteurs sont morts, il n&#x27;est pas besoin d&#x27;en blâmer aucun. Vraiment, si celui qui a composé cette pièce avait joué le rôle de Pyrame, et qu&#x27;il se fût pendu avec la jarretière de Thisbé, cela aurait fait une bien belle tragédie; et c&#x27;en est une en vérité, et jouée avec distinction. Mais, voyons notre bergamasque: laissez là votre épilogue. (Une danse de paysans bouffons.) La langue de fer de minuit a prononcé douze: amants, au lit; c&#x27;est presque l&#x27;heure des fées. Je crains bien que nous ne dormions trop tard le matin, comme nous avons veillé trop longtemps cette nuit. Cette farce grossière nous a bien trompés sur la marche pesante de la nuit.--Chers amis, allons à notre lit: en l&#x27;honneur de cette solennité, nous passerons quinze jours entiers dans les fêtes nocturnes et des divertissements nouveaux, et chaque jour amènera de nouveaux plaisirs, pour célébrer cette fête. (Tous sortent.)</p>
+<h2 class="chapter" id="c12">Scène II</h2>
+<p>Entre PUCK.</p>
+<p>Voici l&#x27;heure où le lion affamé rugit, Où le loup hurle à la lune, Tandis que le lourd laboureur ronfle Épuisé de sa pénible tâche. Maintenant les tisons consumés brillent dans le foyer; La chouette, poussant son cri sinistre, Rappelle aux malheureux, couchés dans les douleurs, Le souvenir d&#x27;un drap funèbre. Voici le temps de la nuit, Où les tombeaux, tous entr&#x27;ouverts, Laissent échapper chacun son spectre, Qui va errer dans les sentiers des cimetières. Et nous, fées, qui voltigeons Près du char de la triple Hécate, Fuyant la présence du soleil, Et suivant l&#x27;ombre comme un songe, Nous gambadons maintenant. Pas une souris Ne troublera cette maison sacrée. Je suis envoyé devant, avec un balai, Pour balayer la poussière derrière la porte[46].</p>
+<p>[Note 46: La propreté est nécessaire pour attirer chez soi des fées propices.]</p>
+<p>(Entrent Oberon et Titania avec leur cour.)</p>
+<h3 class="sub">Oberon.</h3>
+<p>Qu&#x27;une faible lumière éclaire cette maison Par le moyen de ce feu mourant; Que tous les esprits et toutes les fées Sautent d&#x27;un pied léger, comme l&#x27;oiseau sur la branche. Répétez après moi ce couplet: Chantez et dansez rapidement à sa mesure.</p>
+<h3 class="sub">Titania.</h3>
+<p>D&#x27;abord, répétez ce couplet par coeur; Et à chaque mot une cadence; Les mains enlacées, avec la grâce des fées, Nous chanterons et nous bénirons cette demeure.</p>
+<p>(Chant et danse[47].)</p>
+<p>[Note 47: On prétend qu&#x27;il y a ici deux couplets perdus.]</p>
+<h3 class="sub">Oberon.</h3>
+<p>À présent, jusqu&#x27;à la pointe du jour, Que chaque fée erre dans ce palais. Nous irons au beau lit nuptial, Et il sera béni parmi nous; Et la lignée qui y sera engendrée Sera toujours heureuse. Ces trois couples d&#x27;amants Seront toujours sincères et fidèles, Et les taches de la main de la nature Ne se verront point sur leurs enfants.</p>
+<p>Jamais signe, bec de lièvre, cicatrice, Ou marque de sinistre augure, qui sont Si pénibles à voir au jour de la nativité, N&#x27;existeront pour leurs enfants. Fées, dispersez-vous; Qu&#x27;avec la rosée des champs Chacune voue chaque appartement De ce palais à la douce paix, Il subsistera toujours en sûreté, Et le maître en sera toujours béni. Allons, vite, Ne tardons plus Venez me rejoindre au point du jour.</p>
+<p>(Oberon et Titania sortent avec leur cour.)</p>
+<h3 class="sub">Puck.</h3>
+<p>Si nous, légers fantômes, nous avons déplu, Figurez-vous seulement (et tout sera réparé), Que vous avez fait ici un court sommeil, Tandis que ces visions erraient autour de vous. Seigneurs, ne blâmez point Ce faible et vain sujet, Et ne le prenez que pour un songe: Si vous faites grâce, nous corrigerons. Et comme je suis un honnête Puck, Si nous avons le bonheur immérité D&#x27;échapper cette fois à la langue du serpent[48], Nous ferons mieux avant peu, Ou tenez Puck pour un menteur. Ainsi; bonne nuit à tous. Prêtez-moi le secours de vos mains si nous sommes amis Et Robin vous dédommagera quelque jour.</p>
+<p>(Il sort.)</p>
+<p>[Note 48: Les sifflets.]</p>
+<h3 class="sub">Fin du cinquième et dernier acte.</h3>
+<p class="colophon">Texte du domaine public. Édition numérique EbookClassics.</p>
+</body></html>

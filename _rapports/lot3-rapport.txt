@@ -1,12 +1,25 @@
-Lot 3 (traductions) — 2026-09-26 17:34
-+ anna-karenina [de] OK — Project Gutenberg (#44956), 350286 mots, 9 chapitres — epub:880Ko pdf:5030Ko txt:2230Ko html:2289Ko
-+ great-expectations [fr] OK — Project Gutenberg (#17565), 190488 mots, 56 chapitres — epub:551Ko pdf:2614Ko txt:1117Ko html:1214Ko
-+ alice-s-adventures-in-wonderland [de] OK — Project Gutenberg (#19778), 25348 mots, 12 chapitres — epub:138Ko pdf:465Ko txt:154Ko html:165Ko
-+ the-divine-comedy [de] OK — Project Gutenberg (#8085), 102867 mots, 0 chapitres — epub:313Ko pdf:1360Ko txt:616Ko html:631Ko
-+ hamlet [de] OK — Project Gutenberg (#7276), 33528 mots, 5 chapitres — epub:159Ko pdf:636Ko txt:212Ko html:225Ko
-+ romeo-and-juliet [fr] OK — Project Gutenberg (#18143), 35177 mots, 23 chapitres — epub:169Ko pdf:639Ko txt:214Ko html:236Ko
-+ romeo-and-juliet [de] OK — Project Gutenberg (#6996), 20960 mots, 19 chapitres — epub:129Ko pdf:458Ko txt:126Ko html:138Ko
-+ uncle-tom-s-cabin [fr] OK — Project Gutenberg (#38704), 175830 mots, 46 chapitres — epub:540Ko pdf:2614Ko txt:1054Ko html:1145Ko
-+ on-the-origin-of-species [fr] OK — Project Gutenberg (#14158), 215434 mots, 15 chapitres — epub:528Ko pdf:2744Ko txt:1396Ko html:1475Ko
-+ the-last-of-the-mohicans [fr] OK — Project Gutenberg (#16236), 161215 mots, 34 chapitres — epub:478Ko pdf:2102Ko txt:959Ko html:1030Ko
-Traductions produites : 10 | cas limites (à décider) : 0 | absentes de Gutenberg : 151 | erreurs : 0
+Lot 3 (traductions) — 2026-09-26 18:30
++ robinson-crusoe [fr] OK — Project Gutenberg (#38705), 105321 mots, 76 chapitres — epub:368Ko pdf:1427Ko txt:620Ko html:673Ko
++ robinson-crusoe [de] OK — Project Gutenberg (#60344), 61682 mots, 18 chapitres — epub:259Ko pdf:933Ko txt:393Ko html:404Ko
++ gulliver-s-travels [fr] OK — Project Gutenberg (#17640), 81004 mots, 33 chapitres — epub:282Ko pdf:1063Ko txt:473Ko html:510Ko
++ treasure-island [fr] OK — Project Gutenberg (#76225), 69934 mots, 35 chapitres — epub:231Ko pdf:1092Ko txt:412Ko html:453Ko
++ treasure-island [de] OK — Project Gutenberg (#49424), 65374 mots, 38 chapitres — epub:262Ko pdf:1041Ko txt:406Ko html:422Ko
++ treasure-island [es] OK — Project Gutenberg (#45438), 88471 mots, 38 chapitres — epub:301Ko pdf:1223Ko txt:501Ko html:519Ko
++ oliver-twist [fr] OK — Project Gutenberg (#61994), 113681 mots, 47 chapitres — epub:373Ko pdf:1713Ko txt:661Ko html:731Ko
++ oliver-twist [de] OK — Project Gutenberg (#56586), 120915 mots, 53 chapitres — epub:415Ko pdf:1918Ko txt:768Ko html:799Ko
++ persuasion [fr] OK — Project Gutenberg (#36777), 47151 mots, 24 chapitres — epub:187Ko pdf:721Ko txt:284Ko html:312Ko
++ paradise-lost [fr] OK — Project Gutenberg (#62922), 101517 mots, 11 chapitres — epub:311Ko pdf:1279Ko txt:610Ko html:649Ko
++ macbeth [fr] OK — Project Gutenberg (#13868), 27769 mots, 29 chapitres — epub:150Ko pdf:548Ko txt:172Ko html:192Ko
++ macbeth [de] OK — Project Gutenberg (#6975), 17285 mots, 31 chapitres — epub:124Ko pdf:446Ko txt:106Ko html:118Ko
++ othello [fr] OK — Project Gutenberg (#18179), 33098 mots, 16 chapitres — epub:151Ko pdf:627Ko txt:207Ko html:231Ko
++ othello [de] OK — Project Gutenberg (#7185), 31446 mots, 5 chapitres — epub:134Ko pdf:583Ko txt:195Ko html:208Ko
++ king-lear [fr] OK — Project Gutenberg (#18312), 34787 mots, 26 chapitres — epub:163Ko pdf:659Ko txt:215Ko html:238Ko
++ king-lear [de] OK — Project Gutenberg (#7240), 29554 mots, 5 chapitres — epub:155Ko pdf:589Ko txt:186Ko html:198Ko
++ a-midsummer-night-s-dream [fr] OK — Project Gutenberg (#17930), 20877 mots, 12 chapitres — epub:132Ko pdf:409Ko txt:128Ko html:143Ko
++ a-midsummer-night-s-dream [de] OK — Project Gutenberg (#7022), 16291 mots, 5 chapitres — epub:112Ko pdf:337Ko txt:99Ko html:108Ko
++ the-tempest [fr] OK — Project Gutenberg (#15071), 22746 mots, 9 chapitres — epub:122Ko pdf:435Ko txt:139Ko html:156Ko
++ the-tempest [de] OK — Project Gutenberg (#7236), 19314 mots, 5 chapitres — epub:124Ko pdf:401Ko txt:121Ko html:131Ko
++ grimm-s-fairy-tales [fr] OK — Project Gutenberg (#12250), 9680 mots, 19 chapitres — epub:106Ko pdf:263Ko txt:56Ko html:66Ko
++ andersen-s-fairy-tales [de] OK — Project Gutenberg (#19163), 56501 mots, 1 chapitres — epub:191Ko pdf:808Ko txt:347Ko html:357Ko
++ the-arabian-nights [fr] OK — Project Gutenberg (#15371), 141966 mots, 138 chapitres — epub:494Ko pdf:1992Ko txt:817Ko html:884Ko
+Traductions produites : 23 | cas limites (à décider) : 0 | absentes de Gutenberg : 181 | erreurs : 0

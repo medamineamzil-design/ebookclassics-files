@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Rubaiyat of Omar Khayyam — Omar Khayyam</title><style>
+:root{--paper:#fbf8f1;--ink:#1f1b16;--muted:#6f6352;--accent:#9a6b2f;--rule:#e4dccb}
+@media (prefers-color-scheme:dark){:root{--paper:#16140f;--ink:#ece6d8;--muted:#a79c88;--accent:#d8a95e;--rule:#2e2a22}}
+html{background:var(--paper)}
+body{font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Libertinus Serif",Georgia,serif;color:var(--ink);
+     background:var(--paper);line-height:1.65;font-size:1.12rem;max-width:36em;margin:0 auto;padding:2.5em 1.25em 5em}
+.titlepage{text-align:center;min-height:70vh;display:flex;flex-direction:column;justify-content:center;gap:.6em;
+           border-bottom:1px solid var(--rule);margin-bottom:2.5em;padding-bottom:2.5em}
+.titlepage img{max-width:260px;width:60%;margin:0 auto 1.5em;border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+h1{font-size:2.4em;line-height:1.15;font-weight:600;margin:0;letter-spacing:-.01em}
+.author{font-style:italic;font-size:1.25em;color:var(--accent);margin:0}
+.translator{font-size:.95em;color:var(--muted);margin:0}
+nav.toc{margin:0 0 3em}
+nav.toc h2{font-size:.85em;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:left;margin:0 0 .8em}
+nav.toc ol{list-style:none;padding:0;margin:0;columns:1}
+nav.toc li{margin:.25em 0}
+nav.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent}
+nav.toc a:hover{border-color:var(--accent)}
+h2.chapter{font-size:1.45em;font-weight:600;text-align:center;margin:3.5em 0 1.6em;line-height:1.3}
+h2.chapter::before{content:"";display:block;width:3em;height:2px;background:var(--accent);margin:0 auto 1.1em}
+p{margin:0;text-indent:1.5em;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+h2.chapter + p, .titlepage + p{text-indent:0}
+h2.chapter + p::first-letter{font-size:3.1em;float:left;line-height:.85;padding:.08em .08em 0 0;color:var(--accent);font-weight:600}
+.colophon{margin-top:5em;padding-top:1.5em;border-top:1px solid var(--rule);text-align:center;color:var(--muted);font-size:.85em;text-indent:0}
+h3.sub{font-size:1em;font-weight:600;font-variant:small-caps;letter-spacing:.04em;text-align:center;margin:2.2em 0 1em}
+h3.sub + p{text-indent:0}
+@media print{h2.chapter{break-before:page}}
+</style></head><body>
+<header class="titlepage">
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjI0MDAiIHZpZXdCb3g9IjAgMCAxNjAwIDI0MDAiPgo8cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSIyNDAwIiBmaWxsPSIjNGExNTI2Ii8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjMwMCIgZmlsbD0iI2YyYzZhMCIgb3BhY2l0eT0iLjkyIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNGExNTI2IiBzdHJva2Utd2lkdGg9IjEyIiBvcGFjaXR5PSIuNSIvPgo8Y2lyY2xlIGN4PSIxMTIwIiBjeT0iNTYwIiByPSIxMjAiIGZpbGw9IiM0YTE1MjYiIG9wYWNpdHk9Ii4xOCIvPgo8cmVjdCB4PSIxNjAiIHk9IjkzMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIxMCIgZmlsbD0iI2YyYzZhMCIvPgo8dGV4dCB4PSIxNjAiIHk9IjEwNDQiIGZvbnQtc2l6ZT0iMTI0IiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmYmVmZTYiPlRoZSBSdWJhaXlhdDwvdGV4dD48dGV4dCB4PSIxNjAiIHk9IjExODAiIGZvbnQtc2l6ZT0iMTI0IiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmYmVmZTYiPm9mIE9tYXI8L3RleHQ+PHRleHQgeD0iMTYwIiB5PSIxMzE2IiBmb250LXNpemU9IjEyNCIgZm9udC13ZWlnaHQ9IjYwMCIgZm9udC1mYW1pbHk9IkxpYmVydGludXMgU2VyaWYsIEdlb3JnaWEsIHNlcmlmIiBmaWxsPSIjZmJlZmU2Ij5LaGF5eWFtPC90ZXh0Pgo8dGV4dCB4PSIxNjAiIHk9IjE1MjMiIGZvbnQtc2l6ZT0iNjgiIGZvbnQtc3R5bGU9Iml0YWxpYyIgZm9udC1mYW1pbHk9IkxpYmVydGludXMgU2VyaWYsIEdlb3JnaWEsIHNlcmlmIiBmaWxsPSIjZjJjNmEwIj5PbWFyIEtoYXl5YW08L3RleHQ+Cjx0ZXh0IHg9IjE2MCIgeT0iMjIzMCIgZm9udC1zaXplPSI0NCIgbGV0dGVyLXNwYWNpbmc9IjE0IiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmYmVmZTYiIG9wYWNpdHk9Ii43NSI+RUJPT0tDTEFTU0lDUzwvdGV4dD4KPC9zdmc+" alt="">
+<h1>The Rubaiyat of Omar Khayyam</h1>
+<p class="author">Omar Khayyam</p>
+</header>
+<nav class="toc"><h2>Contents</h2><ol>
+<li><a href="#c1">I.</a></li>
+<li><a href="#c2">XXXIV.</a></li>
+<li><a href="#c3">XXXV.</a></li>
+<li><a href="#c4">XXXVI.</a></li>
+<li><a href="#c5">XXXVII.</a></li>
+<li><a href="#c6">XXXVIII.</a></li>
+<li><a href="#c7">XXXIX.</a></li>
+<li><a href="#c8">XL.</a></li>
+<li><a href="#c9">XLI.</a></li>
+<li><a href="#c10">XLII.</a></li>
+<li><a href="#c11">XLIII.</a></li>
+<li><a href="#c12">XLIV.</a></li>
+<li><a href="#c13">XLV.</a></li>
+<li><a href="#c14">XLVI.</a></li>
+<li><a href="#c15">XLVII.</a></li>
+<li><a href="#c16">XLVIII.</a></li>
+<li><a href="#c17">L.</a></li>
+<li><a href="#c18">LII.</a></li>
+<li><a href="#c19">LIII.</a></li>
+<li><a href="#c20">LIV.</a></li>
+<li><a href="#c21">LV.</a></li>
+<li><a href="#c22">LVI.</a></li>
+<li><a href="#c23">LVII.</a></li>
+<li><a href="#c24">LVIII.</a></li>
+<li><a href="#c25">LIX.</a></li>
+<li><a href="#c26">LX.</a></li>
+<li><a href="#c27">LXI.</a></li>
+<li><a href="#c28">LXII.</a></li>
+<li><a href="#c29">LXIII.</a></li>
+<li><a href="#c30">LXIV.</a></li>
+<li><a href="#c31">LXV.</a></li>
+<li><a href="#c32">LXVI.</a></li>
+<li><a href="#c33">LXVII.</a></li>
+<li><a href="#c34">LXVIII.</a></li>
+<li><a href="#c35">LXIX.</a></li>
+<li><a href="#c36">LXX.</a></li>
+<li><a href="#c37">LXXI.</a></li>
+<li><a href="#c38">LXXII.</a></li>
+<li><a href="#c39">LXXIII.</a></li>
+<li><a href="#c40">LXXIV.</a></li>
+<li><a href="#c41">LXXV.</a></li>
+<li><a href="#c42">I.</a></li>
+<li><a href="#c43">II.</a></li>
+<li><a href="#c44">III.</a></li>
+<li><a href="#c45">IV.</a></li>
+<li><a href="#c46">V.</a></li>
+<li><a href="#c47">VI.</a></li>
+<li><a href="#c48">VII.</a></li>
+<li><a href="#c49">VIII.</a></li>
+<li><a href="#c50">IX.</a></li>
+<li><a href="#c51">X.</a></li>
+<li><a href="#c52">XI.</a></li>
+<li><a href="#c53">XII.</a></li>
+<li><a href="#c54">XIII.</a></li>
+<li><a href="#c55">XIV.</a></li>
+<li><a href="#c56">XV.</a></li>
+<li><a href="#c57">XVI.</a></li>
+<li><a href="#c58">XVII.</a></li>
+<li><a href="#c59">XVIII.</a></li>
+<li><a href="#c60">XIX.</a></li>
+<li><a href="#c61">XX.</a></li>
+<li><a href="#c62">XXI.</a></li>
+<li><a href="#c63">XXII.</a></li>
+<li><a href="#c64">XXIII.</a></li>
+<li><a href="#c65">XXIV.</a></li>
+<li><a href="#c66">XXV.</a></li>
+<li><a href="#c67">XXVI.</a></li>
+<li><a href="#c68">XXVII.</a></li>
+<li><a href="#c69">XXVIII.</a></li>
+<li><a href="#c70">XXIX.</a></li>
+<li><a href="#c71">XXX.</a></li>
+<li><a href="#c72">XXXI.</a></li>
+<li><a href="#c73">XXXII.</a></li>
+<li><a href="#c74">XXXIII.</a></li>
+<li><a href="#c75">XXXIV.</a></li>
+<li><a href="#c76">XXXV.</a></li>
+<li><a href="#c77">XXXVI.</a></li>
+<li><a href="#c78">XXXVII.</a></li>
+<li><a href="#c79">XXXVIII.</a></li>
+<li><a href="#c80">XXXIX.</a></li>
+<li><a href="#c81">XL.</a></li>
+<li><a href="#c82">XLI.</a></li>
+<li><a href="#c83">XLII.</a></li>
+<li><a href="#c84">XLIII.</a></li>
+<li><a href="#c85">XLIV.</a></li>
+<li><a href="#c86">XLV.</a></li>
+<li><a href="#c87">XLVI.</a></li>
+<li><a href="#c88">XLVII.</a></li>
+<li><a href="#c89">XLVIII.</a></li>
+<li><a href="#c90">XLIX.</a></li>
+<li><a href="#c91">L.</a></li>
+<li><a href="#c92">LII.</a></li>
+<li><a href="#c93">LIII.</a></li>
+<li><a href="#c94">LIV.</a></li>
+<li><a href="#c95">LV.</a></li>
+<li><a href="#c96">LVI.</a></li>
+<li><a href="#c97">LVII.</a></li>
+<li><a href="#c98">LVIII.</a></li>
+<li><a href="#c99">LIX.</a></li>
+<li><a href="#c100">LX.</a></li>
+<li><a href="#c101">LXI.</a></li>
+<li><a href="#c102">LXII.</a></li>
+<li><a href="#c103">LXIII.</a></li>
+<li><a href="#c104">LXIV.</a></li>
+<li><a href="#c105">LXV.</a></li>
+<li><a href="#c106">LXVI.</a></li>
+<li><a href="#c107">LXVII.</a></li>
+<li><a href="#c108">LXVIII.</a></li>
+<li><a href="#c109">LXIX.</a></li>
+<li><a href="#c110">LXX.</a></li>
+<li><a href="#c111">LXXI.</a></li>
+<li><a href="#c112">LXXII.</a></li>
+<li><a href="#c113">LXXIII.</a></li>
+<li><a href="#c114">LXXIV.</a></li>
+<li><a href="#c115">LXXV.</a></li>
+<li><a href="#c116">LXXVI.</a></li>
+<li><a href="#c117">LXXVII.</a></li>
+<li><a href="#c118">LXXVIII.</a></li>
+<li><a href="#c119">LXXIX.</a></li>
+<li><a href="#c120">LXXX.</a></li>
+<li><a href="#c121">LXXXI.</a></li>
+<li><a href="#c122">LXXXII.</a></li>
+<li><a href="#c123">LXXXIII.</a></li>
+<li><a href="#c124">LXXXIV.</a></li>
+<li><a href="#c125">LXXXV.</a></li>
+<li><a href="#c126">LXXXVI.</a></li>
+<li><a href="#c127">LXXXVII.</a></li>
+<li><a href="#c128">LXXXVIII.</a></li>
+<li><a href="#c129">LXXXIX.</a></li>
+<li><a href="#c130">XC.</a></li>
+<li><a href="#c131">XCI.</a></li>
+<li><a href="#c132">XCII.</a></li>
+<li><a href="#c133">XCIII.</a></li>
+<li><a href="#c134">XCIV.</a></li>
+<li><a href="#c135">XCV.</a></li>
+<li><a href="#c136">XCVI.</a></li>
+<li><a href="#c137">XCVII.</a></li>
+<li><a href="#c138">XCVIII.</a></li>
+<li><a href="#c139">XCIX.</a></li>
+<li><a href="#c140">C.</a></li>
+</ol></nav>
+<h3 class="sub">Introduction</h3>
+<p>Omar Khayyam, The Astronomer-Poet of Persia.</p>
+<p>Omar Khayyam was born at Naishapur in Khorassan in the latter half of our Eleventh, and died within the First Quarter of our Twelfth Century.  The Slender Story of his Life is curiously twined about that of two other very considerable Figures in their Time and Country: one of whom tells the Story of all Three.  This was Nizam ul Mulk, Vizier to Alp Arslan the Son, and Malik Shah the Grandson, of Toghrul Beg the Tartar, who had wrested Persia from the feeble Successor of Mahmud the Great, and founded that Seljukian Dynasty which finally roused Europe into the Crusades.  This Nizam ul Mulk, in his Wasiyat--or Testament--which he wrote and left as a Memorial for future Statesmen--relates the following, as quoted in the Calcutta Review, No. 59, from Mirkhond&#x27;s History of the Assassins.</p>
+<p>&quot;&#x27;One of the greatest of the wise men of Khorassan was the Imam Mowaffak of Naishapur, a man highly honored and reverenced,--may God rejoice his soul; his illustrious years exceeded eighty-five, and it was the universal belief that every boy who read the Koran or studied the traditions in his presence, would assuredly attain to honor and happiness.  For this cause did my father send me from Tus to Naishapur with Abd-us-samad, the doctor of law, that I might employ myself in study and learning under the guidance of that illustrious teacher. Towards me he ever turned an eye of favor and kindness, and as his pupil I felt for him extreme affection and devotion, so that I passed four years in his service.  When I first came there, I found two other pupils of mine own age newly arrived, Hakim Omar Khayyam, and the ill- fated Ben Sabbah.  Both were endowed with sharpness of wit and the highest natural powers; and we three formed a close friendship together.  When the Imam rose from his lectures, they used to join me, and we repeated to each other the lessons we had heard.  Now Omar was a native of Naishapur, while Hasan Ben Sabbah&#x27;s father was one Ali, a man of austere life and practise, but heretical in his creed and doctrine.  One day Hasan said to me and to Khayyam, &quot;It is a universal belief that the pupils of the Imam Mowaffak will attain to fortune. Now, even if we all do not attain thereto, without doubt one of us will; what then shall be our mutual pledge and bond?&quot;  We answered, &quot;Be it what you please.&quot;  &quot;Well,&quot; he said, &quot;let us make a vow, that to whomsoever this fortune falls, he shall share it equally with the rest, and reserve no pre-eminence for himself.&quot;  &quot;Be it so,&quot; we both replied, and on those terms we mutually pledged our words.  Years rolled on, and I went from Khorassan to Transoxiana, and wandered to Ghazni and Cabul; and when I returned, I was invested with office, and rose to be administrator of affairs during the Sultanate of Sultan Alp Arslan.&#x27;</p>
+<p>&quot;He goes on to state, that years passed by, and both his old school- friends found him out, and came and claimed a share in his good fortune, according to the school-day vow.  The Vizier was generous and kept his word.  Hasan demanded a place in the government, which the Sultan granted at the Vizier&#x27;s request; but discontented with a gradual rise, he plunged into the maze of intrigue of an oriental court, and, failing in a base attempt to supplant his benefactor, he was disgraced and fell.  After many mishaps and wanderings, Hasan became the head of the Persian sect of the Ismailians,--a party of fanatics who had long murmured in obscurity, but rose to an evil eminence under the guidance of his strong and evil will.  In A.D. 1090, he seized the castle of Alamut, in the province of Rudbar, which lies in the mountainous tract south of the Caspian Sea; and it was from this mountain home he obtained that evil celebrity among the Crusaders as the OLD MAN OF THE MOUNTAINS, and spread terror through the Mohammedan world; and it is yet disputed where the word Assassin, which they have left in the language of modern Europe as their dark memorial, is derived from the hashish, or opiate of hemp-leaves (the Indian bhang), with which they maddened themselves to the sullen pitch of oriental desperation, or from the name of the founder of the dynasty, whom we have seen in his quiet collegiate days, at Naishapur. One of the countless victims of the Assassin&#x27;s dagger was Nizam ul Mulk himself, the old school-boy friend.[1]</p>
+<p>&quot;Omar Khayyam also came to the Vizier to claim his share; but not to ask for title or office.  &#x27;The greatest boon you can confer on me,&#x27; he said, &#x27;is to let me live in a corner under the shadow of your fortune, to spread wide the advantages of Science, and pray for your long life and prosperity.&#x27;  The Vizier tells us, that when he found Omar was really sincere in his refusal, he pressed him no further, but granted him a yearly pension of 1200 mithkals of gold from the treasury of Naishapur.</p>
+<p>&quot;At Naishapur thus lived and died Omar Khayyam, &#x27;busied,&#x27; adds the Vizier, &#x27;in winning knowledge of every kind, and especially in Astronomy, wherein he attained to a very high pre-eminence.  Under the Sultanate of Malik Shah, he came to Merv, and obtained great praise for his proficiency in science, and the Sultan showered favors upon him.&#x27;</p>
+<p>&quot;When the Malik Shah determined to reform the calendar, Omar was one of the eight learned men employed to do it; the result was the Jalali era (so called from Jalal-ud-din, one of the king&#x27;s names)--&#x27;a computation of time,&#x27; says Gibbon, &#x27;which surpasses the Julian, and approaches the accuracy of the Gregorian style.&#x27;  He is also the author of some astronomical tables, entitled &#x27;Ziji-Malikshahi,&#x27; and the French have lately republished and translated an Arabic Treatise of his on Algebra.</p>
+<p>&quot;His Takhallus or poetical name (Khayyam) signifies a Tent-maker, and he is said to have at one time exercised that trade, perhaps before Nizam-ul-Mulk&#x27;s generosity raised him to independence.  Many Persian poets similarly derive their names from their occupations; thus we have Attar, &#x27;a druggist,&#x27; Assar, &#x27;an oil presser,&#x27; etc.[2]  Omar himself alludes to his name in the following whimsical lines:--</p>
+<p>&quot;&#x27;Khayyam, who stitched the tents of science, Has fallen in grief&#x27;s furnace and been suddenly burned; The shears of Fate have cut the tent ropes of his life, And the broker of Hope has sold him for nothing!&#x27;</p>
+<p>&quot;We have only one more anecdote to give of his Life, and that relates to the close; it is told in the anonymous preface which is sometimes prefixed to his poems; it has been printed in the Persian in the Appendix to Hyde&#x27;s Veterum Persarum Religio, p. 499; and D&#x27;Herbelot alludes to it in his Bibliotheque, under Khiam.[3]--</p>
+<p>&quot;&#x27;It is written in the chronicles of the ancients that this King of the Wise, Omar Khayyam, died at Naishapur in the year of the Hegira, 517 (A.D. 1123); in science he was unrivaled,--the very paragon of his age.  Khwajah Nizami of Samarcand, who was one of his pupils, relates the following story: &quot;I often used to hold conversations with my teacher, Omar Khayyam, in a garden; and one day he said to me, &#x27;My tomb shall be in a spot where the north wind may scatter roses over it.&#x27;  I wondered at the words he spake, but I knew that his were no idle words.[4]  Years after, when I chanced to revisit Naishapur, I went to his final resting-place, and lo! it was just outside a garden, and trees laden with fruit stretched their boughs over the garden wall, and dropped their flowers upon his tomb, so that the stone was hidden under them.&quot;&#x27;&quot;</p>
+<p>Thus far--without fear of Trespass--from the Calcutta Review.  The writer of it, on reading in India this story of Omar&#x27;s Grave, was reminded, he says, of Cicero&#x27;s Account of finding Archimedes&#x27; Tomb at Syracuse, buried in grass and weeds.  I think Thorwaldsen desired to have roses grow over him; a wish religiously fulfilled for him to the present day, I believe.  However, to return to Omar.</p>
+<p>Though the Sultan &quot;shower&#x27;d Favors upon him,&quot; Omar&#x27;s Epicurean Audacity of Thought and Speech caused him to be regarded askance in his own Time and Country.  He is said to have been especially hated and dreaded by the Sufis, whose Practise he ridiculed, and whose Faith amounts to little more than his own, when stript of the Mysticism and formal recognition of Islamism under which Omar would not hide.  Their Poets, including Hafiz, who are (with the exception of Firdausi) the most considerable in Persia, borrowed largely, indeed, of Omar&#x27;s material, but turning it to a mystical Use more convenient to Themselves and the People they addressed; a People quite as quick of Doubt as of Belief; as keen of Bodily sense as of Intellectual; and delighting in a cloudy composition of both, in which they could float luxuriously between Heaven and Earth, and this World and the Next, on the wings of a poetical expression, that might serve indifferently for either.  Omar was too honest of Heart as well of Head for this. Having failed (however mistakenly) of finding any Providence but Destiny, and any World but This, he set about making the most of it; preferring rather to soothe the Soul through the Senses into Acquiescence with Things as he saw them, than to perplex it with vain disquietude after what they might be.  It has been seen, however, that his Worldly Ambition was not exorbitant; and he very likely takes a humorous or perverse pleasure in exalting the gratification of Sense above that of the Intellect, in which he must have taken great delight, although it failed to answer the Questions in which he, in common with all men, was most vitally interested.</p>
+<p>For whatever Reason, however, Omar as before said, has never been popular in his own Country, and therefore has been but scantily transmitted abroad.  The MSS. of his Poems, mutilated beyond the average Casualties of Oriental Transcription, are so rare in the East as scarce to have reacht Westward at all, in spite of all the acquisitions of Arms and Science.  There is no copy at the India House, none at the Bibliotheque Nationale of Paris.  We know but of one in England: No. 140 of the Ouseley MSS. at the Bodleian, written at Shiraz, A.D. 1460.  This contains but 158 Rubaiyat.  One in the Asiatic Society&#x27;s Library at Calcutta (of which we have a Copy), contains (and yet incomplete) 516, though swelled to that by all kinds of Repetition and Corruption.  So Von Hammer speaks of his Copy as containing about 200, while Dr. Sprenger catalogues the Lucknow MS. at double that number.[5]  The Scribes, too, of the Oxford and Calcutta MSS. seem to do their Work under a sort of Protest; each beginning with a Tetrastich (whether genuine or not), taken out of its alphabetical order; the Oxford with one of Apology; the Calcutta with one of Expostulation, supposed (says a Notice prefixed to the MS.) to have arisen from a Dream, in which Omar&#x27;s mother asked about his future fate.  It may be rendered thus:--</p>
+<p>&quot;O Thou who burn&#x27;st in Heart for those who burn In Hell, whose fires thyself shall feed in turn, How long be crying, &#x27;Mercy on them, God!&#x27; Why, who art Thou to teach, and He to learn?&quot;</p>
+<p>The Bodleian Quatrain pleads Pantheism by way of Justification.</p>
+<p>&quot;If I myself upon a looser Creed Have loosely strung the Jewel of Good deed, Let this one thing for my Atonement plead: That One for Two I never did misread.&quot;</p>
+<p>The Reviewer,[6] to whom I owe the Particulars of Omar&#x27;s Life, concludes his Review by comparing him with Lucretius, both as to natural Temper and Genius, and as acted upon by the Circumstances in which he lived.  Both indeed were men of subtle, strong, and cultivated Intellect, fine Imagination, and Hearts passionate for Truth and Justice; who justly revolted from their Country&#x27;s false Religion, and false, or foolish, Devotion to it; but who fell short of replacing what they subverted by such better Hope as others, with no better Revelation to guide them, had yet made a Law to themselves. Lucretius indeed, with such material as Epicurus furnished, satisfied himself with the theory of a vast machine fortuitously constructed, and acting by a Law that implied no Legislator; and so composing himself into a Stoical rather than Epicurean severity of Attitude, sat down to contemplate the mechanical drama of the Universe which he was part Actor in; himself and all about him (as in his own sublime description of the Roman Theater) discolored with the lurid reflex of the Curtain suspended between the Spectator and the Sun.  Omar, more desperate, or more careless of any so complicated System as resulted in nothing but hopeless Necessity, flung his own Genius and Learning with a bitter or humorous jest into the general Ruin which their insufficient glimpses only served to reveal; and, pretending sensual pleasure, as the serious purpose of Life, only diverted himself with speculative problems of Deity, Destiny, Matter and Spirit, Good and Evil, and other such questions, easier to start than to run down, and the pursuit of which becomes a very weary sport at last!</p>
+<p>With regard to the present Translation.  The original Rubaiyat (as, missing an Arabic Guttural, these Tetrastichs are more musically called) are independent Stanzas, consisting each of four Lines of equal, though varied, Prosody; sometimes all rhyming, but oftener (as here imitated) the third line a blank.  Somewhat as in the Greek Alcaic, where the penultimate line seems to lift and suspend the Wave that falls over in the last.  As usual with such kind of Oriental Verse, the Rubaiyat follow one another according to Alphabetic Rhyme--a strange succession of Grave and Gay.  Those here selected are strung into something of an Eclogue, with perhaps a less than equal proportion of the &quot;Drink and make-merry,&quot; which (genuine or not) recurs over-frequently in the Original.  Either way, the Result is sad enough: saddest perhaps when most ostentatiously merry: more apt to move Sorrow than Anger toward the old Tentmaker, who, after vainly endeavoring to unshackle his Steps from Destiny, and to catch some authentic Glimpse of TO-MORROW, fell back upon TO-DAY (which has outlasted so many To-morrows!) as the only Ground he had got to stand upon, however momentarily slipping from under his Feet.</p>
+<p>[From the Third Edition.]</p>
+<p>While the second Edition of this version of Omar was preparing, Monsieur Nicolas, French Consul at Resht, published a very careful and very good Edition of the Text, from a lithograph copy at Teheran, comprising 464 Rubaiyat, with translation and notes of his own.</p>
+<p>Mons. Nicolas, whose Edition has reminded me of several things, and instructed me in others, does not consider Omar to be the material Epicurean that I have literally taken him for, but a Mystic, shadowing the Deity under the figure of Wine, Wine-bearer, &amp;c., as Hafiz is supposed to do; in short, a Sufi Poet like Hafiz and the rest.</p>
+<p>I cannot see reason to alter my opinion, formed as it was more than a dozen years ago when Omar was first shown me by one to whom I am indebted for all I know of Oriental, and very much of other, literature.  He admired Omar&#x27;s Genius so much, that he would gladly have adopted any such Interpretation of his meaning as Mons. Nicolas&#x27; if he could.[7]  That he could not, appears by his Paper in the Calcutta Review already so largely quoted; in which he argues from the Poems themselves, as well as from what records remain of the Poet&#x27;s Life.</p>
+<p>And if more were needed to disprove Mons. Nicolas&#x27; Theory, there is the Biographical Notice which he himself has drawn up in direct contradiction to the Interpretation of the Poems given in his Notes. (See pp. 13-14 of his Preface.)  Indeed I hardly knew poor Omar was so far gone till his Apologist informed me.  For here we see that, whatever were the Wine that Hafiz drank and sang, the veritable Juice of the Grape it was which Omar used, not only when carousing with his friends, but (says Mons. Nicolas) in order to excite himself to that pitch of Devotion which others reached by cries and &quot;hurlemens.&quot;  And yet, whenever Wine, Wine-bearer, &amp;c., occur in the Text--which is often enough--Mons. Nicolas carefully annotates &quot;Dieu,&quot; &quot;La Divinite,&quot; &amp;c.: so carefully indeed that one is tempted to think that he was indoctrinated by the Sufi with whom he read the Poems.  (Note to Rub. ii. p. 8.)  A Persian would naturally wish to vindicate a distinguished Countryman; and a Sufi to enroll him in his own sect, which already comprises all the chief Poets of Persia.</p>
+<p>What historical Authority has Mons. Nicolas to show that Omar gave himself up &quot;avec passion a l&#x27;etude de la philosophie des Soufis&quot;? (Preface, p. xiii.)  The Doctrines of Pantheism, Materialism, Necessity, &amp;c., were not peculiar to the Sufi; nor to Lucretius before them; nor to Epicurus before him; probably the very original Irreligion of Thinking men from the first; and very likely to be the spontaneous growth of a Philosopher living in an Age of social and political barbarism, under shadow of one of the Two and Seventy Religions supposed to divide the world.  Von Hammer (according to Sprenger&#x27;s Oriental Catalogue) speaks of Omar as &quot;a Free-thinker, and a great opponent of Sufism;&quot; perhaps because, while holding much of their Doctrine, he would not pretend to any inconsistent severity of morals.  Sir W. Ouseley has written a note to something of the same effect on the fly-leaf of the Bodleian MS.  And in two Rubaiyat of Mons. Nicolas&#x27; own Edition Suf and Sufi are both disparagingly named.</p>
+<p>No doubt many of these Quatrains seem unaccountable unless mystically interpreted; but many more as unaccountable unless literally.  Were the Wine spiritual, for instance, how wash the Body with it when dead? Why make cups of the dead clay to be filled with--&quot;La Divinite,&quot; by some succeeding Mystic?  Mons. Nicolas himself is puzzled by some &quot;bizarres&quot; and &quot;trop Orientales&quot; allusions and images--&quot;d&#x27;une sensualite quelquefois revoltante&quot; indeed--which &quot;les convenances&quot; do not permit him to translate; but still which the reader cannot but refer to &quot;La Divinite.&quot;[8]  No doubt also many of the Quatrains in the Teheran, as in the Calcutta, Copies, are spurious; such Rubaiyat being the common form of Epigram in Persia.  But this, at best, tells as much one way as another; nay, the Sufi, who may be considered the Scholar and Man of Letters in Persia, would be far more likely than the careless Epicure to interpolate what favours his own view of the Poet.  I observed that very few of the more mystical Quatrains are in the Bodleian MS., which must be one of the oldest, as dated at Shiraz, A.H. 865, A.D. 1460.  And this, I think, especially distinguishes Omar (I cannot help calling him by his--no, not Christian--familiar name) from all other Persian Poets: That, whereas with them the Poet is lost in his Song, the Man in Allegory and Abstraction; we seem to have the Man--the Bon-homme--Omar himself, with all his Humours and Passions, as frankly before us as if we were really at Table with him, after the Wine had gone round.</p>
+<p>I must say that I, for one, never wholly believed in the Mysticism of Hafiz.  It does not appear there was any danger in holding and singing Sufi Pantheism, so long as the Poet made his Salaam to Mohammed at the beginning and end of his Song.  Under such conditions Jelaluddin, Jami, Attar, and others sang; using Wine and Beauty indeed as Images to illustrate, not as a Mask to hide, the Divinity they were celebrating.  Perhaps some Allegory less liable to mistake or abuse had been better among so inflammable a People: much more so when, as some think with Hafiz and Omar, the abstract is not only likened to, but identified with, the sensual Image; hazardous, if not to the Devotee himself, yet to his weaker Brethren; and worse for the Profane in proportion as the Devotion of the Initiated grew warmer.  And all for what?  To be tantalized with Images of sensual enjoyment which must be renounced if one would approximate a God, who according to the Doctrine, is Sensual Matter as well as Spirit, and into whose Universe one expects unconsciously to merge after Death, without hope of any posthumous Beatitude in another world to compensate for all one&#x27;s self- denial in this.  Lucretius&#x27; blind Divinity certainly merited, and probably got, as much self-sacrifice as this of the Sufi; and the burden of Omar&#x27;s Song--if not &quot;Let us eat&quot;--is assuredly--&quot;Let us drink, for To-morrow we die!&quot;  And if Hafiz meant quite otherwise by a similar language, he surely miscalculated when he devoted his Life and Genius to so equivocal a Psalmody as, from his Day to this, has been said and sung by any rather than spiritual Worshippers.</p>
+<p>However, as there is some traditional presumption, and certainly the opinion of some learned men, in favour of Omar&#x27;s being a Sufi--and even something of a Saint--those who please may so interpret his Wine and Cup-bearer.  On the other hand, as there is far more historical certainty of his being a Philosopher, of scientific Insight and Ability far beyond that of the Age and Country he lived in; of such moderate worldly Ambition as becomes a Philosopher, and such moderate wants as rarely satisfy a Debauchee; other readers may be content to believe with me that, while the Wine Omar celebrates is simply the Juice of the Grape, he bragg&#x27;d more than he drank of it, in very defiance perhaps of that Spiritual Wine which left its Votaries sunk in Hypocrisy or Disgust.</p>
+<p>Edward J. Fitzgerald</p>
+<p>Footnotes:</p>
+<p>[Footnote 1: Some of Omar&#x27;s Rubaiyat warn us of the danger of Greatness, the instability of Fortune, and while advocating Charity to all Men, recommending us to be too intimate with none.  Attar makes Nizam-ul-Mulk use the very words of his friend Omar [Rub. xxviii.], &quot;When Nizam-ul- Mulk was in the Agony (of Death) he said, &#x27;Oh God!  I am passing away in the hand of the wind.&#x27;&quot;]</p>
+<p>[Footnote 2: Though all these, like our Smiths, Archers, Millers, Fletchers, etc., may simply retain the Surname of an hereditary calling.]</p>
+<p>[Footnote 3: &quot;Philosophe Musulman qui a vecu en Odeur de Saintete dans sa Religion, vers la Fin du premier et le Commencement du second Siecle,&quot; no part of which, except the &quot;Philosophe,&quot; can apply to our Khayyam.]</p>
+<p>[Footnote 4: The Rashness of the Words, according to D&#x27;Herbelot, consisted in being so opposed to those in the Koran: &quot;No Man knows where he shall die.&quot;--This story of Omar reminds me of another so naturally--and when one remembers how wide of his humble mark the noble sailor aimed--so pathetically told by Captain Cook--not by Doctor Hawkworth--in his Second Voyage (i. 374).  When leaving Ulietea, &quot;Oreo&#x27;s last request was for me to return.  When he saw he could not obtain that promise, he asked the name of my Marai (burying-place). As strange a question as this was, I hesitated not a moment to tell him &#x27;Stepney&#x27;; the parish in which I live when in London.  I was made to repeat it several times over till they could pronounce it; and then &#x27;Stepney Marai no Toote&#x27; was echoed through an hundred mouths at once.  I afterwards found the same question had been put to Mr. Forster by a man on shore; but he gave a different, and indeed more proper answer, by saying, &#x27;No man who used the sea could say where he should be buried.&#x27;&quot;]</p>
+<p>[Footnote 5: &quot;Since this paper was written&quot; (adds the Reviewer in a note), &quot;we have met with a Copy of a very rare Edition, printed at Calcutta in 1836.  This contains 438 Tetrastichs, with an Appendix containing 54 others not found in some MSS.&quot;]</p>
+<p>[Footnote 6: Professor Cowell.]</p>
+<p>[Footnote 7:  Perhaps would have edited the Poems himself some years ago.  He may now as little approve of my Version on one side, as of Mons. Nicolas&#x27; Theory on the other.]</p>
+<p>[Footnote 8: A note to Quatrain 234 admits that, however clear the mystical meaning of such Images must be to Europeans, they are not quoted without &quot;rougissant&quot; even by laymen in Persia--&quot;Quant aux termes de tendresse qui commencent ce quatrain, comme tant d&#x27;autres dans ce recueil, nos lecteurs, habitues maintenant a 1&#x27;etrangete des expressions si souvent employees par Kheyam pour rendre ses pensees sur l&#x27;amour divin, et a la singularite des images trop orientales, d&#x27;une sensualite quelquefois revoltante, n&#x27;auront pas de peine a se persuader qu&#x27;il s&#x27;agit de la Divinite, bien que cette conviction soit vivement discutee par les moullahs musulmans, et meme par beaucoup de laiques, qui rougissent veritablement d&#x27;une pareille licence de leur compatriote a 1&#x27;egard des choses spirituelles.&quot;]</p>
+<p>First Edition</p>
+<h2 class="chapter" id="c1">I.</h2>
+<p>Awake! for Morning in the Bowl of Night Has flung the Stone that puts the Stars to Flight: And Lo! the Hunter of the East has caught The Sultan&#x27;s Turret in a Noose of Light.</p>
+<p>Dreaming when Dawn&#x27;s Left Hand was in the Sky I heard a Voice within the Tavern cry, &quot;Awake, my Little ones, and fill the Cup Before Life&#x27;s Liquor in its Cup be dry.&quot;</p>
+<p>Iram indeed is gone with all its Rose, And Jamshyd&#x27;s Sev&#x27;n-ring&#x27;d Cup where no one knows; But still the Vine her ancient Ruby yields, And still a Garden by the Water blows.</p>
+<p>And David&#x27;s Lips are lock&#x27;t; but in divine High piping Pelevi, with &quot;Wine!  Wine!  Wine! Red Wine!&quot;--the Nightingale cries to the Rose That yellow Cheek of hers to&#x27;incarnadine.</p>
+<p>Come, fill the Cup, and in the Fire of Spring The Winter Garment of Repentance fling: The Bird of Time has but a little way To fly--and Lo! the Bird is on the Wing.</p>
+<p>And look--a thousand Blossoms with the Day Woke--and a thousand scatter&#x27;d into Clay: And this first Summer Month that brings the Rose Shall take Jamshyd and Kaikobad away.</p>
+<p>But come with old Khayyam, and leave the Lot Of Kaikobad and Kaikhosru forgot: Let Rustum lay about him as he will, Or Hatim Tai cry Supper--heed them not.</p>
+<p>With me along some Strip of Herbage strown That just divides the desert from the sown, Where name of Slave and Sultan scarce is known, And pity Sultan Mahmud on his Throne.</p>
+<p>Here with a Loaf of Bread beneath the Bough, A Flask of Wine, a Book of Verse--and Thou Beside me singing in the Wilderness-- And Wilderness is Paradise enow.</p>
+<p>&quot;How sweet is mortal Sovranty!&quot;--think some: Others--&quot;How blest the Paradise to come!&quot; Ah, take the Cash in hand and waive the Rest; Oh, the brave Music of a distant Drum!</p>
+<p>Look to the Rose that blows about us--&quot;Lo, Laughing,&quot; she says, &quot;into the World I blow: At once the silken Tassel of my Purse Tear, and its Treasure on the Garden throw.&quot;</p>
+<p>Think, in this batter&#x27;d Caravanserai Whose Doorways are alternate Night and Day, How Sultan after Sultan with his Pomp Abode his Hour or two, and went his way.</p>
+<p>They say the Lion and the Lizard keep The Courts where Jamshyd gloried and drank deep: And Bahram, that great Hunter--the Wild Ass Stamps o&#x27;er his Head, and he lies fast asleep.</p>
+<p>I sometimes think that never blows so red The Rose as where some buried Caesar bled; That every Hyacinth the Garden wears Dropt in its Lap from some once lovely Head.</p>
+<p>And this delightful Herb whose tender Green Fledges the River&#x27;s Lip on which we lean-- Ah, lean upon it lightly! for who knows From what once lovely Lip it springs unseen!</p>
+<p>Lo! some we loved, the loveliest and the best That Time and Fate of all their Vintage prest, Have drunk their Cup a Round or two before, And one by one crept silently to Rest.</p>
+<p>Alike for those who for TO-DAY prepare, And those that after a TO-MORROW stare, A Muezzin from the Tower of Darkness cries &quot;Fools! your Reward is neither Here nor There.&quot;</p>
+<p>Why, all the Saints and Sages who discuss&#x27;d Of the Two Worlds so learnedly, are thrust Like foolish Prophets forth; their Words to Scorn Are scatter&#x27;d, and their Mouths are stopt with Dust.</p>
+<p>Oh, come with old Khayyam, and leave the Wise To talk; one thing is certain, that Life flies; One thing is certain, and the Rest is Lies; The Flower that once has blown for ever dies.</p>
+<p>Myself when young did eagerly frequent Doctor and Saint, and heard great Argument About it and about: but evermore Came out by the same Door as in I went.</p>
+<p>With them the Seed of Wisdom did I sow, And with my own hand labour&#x27;d it to grow: And this was all the Harvest that I reap&#x27;d-- &quot;I came like Water, and like Wind I go.&quot;</p>
+<p>What, without asking, hither hurried whence? And, without asking, whither hurried hence! Another and another Cup to drown The Memory of this Impertinence!</p>
+<p>Up from Earth&#x27;s Centre through the seventh Gate I rose, and on the Throne of Saturn sate, And many Knots unravel&#x27;d by the Road; But not the Knot of Human Death and Fate.</p>
+<p>There was a Door to which I found no Key: There was a Veil past which I could not see: Some little Talk awhile of ME and THEE There seemed--and then no more of THEE and ME.</p>
+<p>Then to the rolling Heav&#x27;n itself I cried, Asking, &quot;What Lamp had Destiny to guide Her little Children stumbling in the Dark?&quot; And--&quot;A blind understanding!&quot; Heav&#x27;n replied.</p>
+<h2 class="chapter" id="c2">XXXIV.</h2>
+<p>Then to this earthen Bowl did I adjourn My Lip the secret Well of Life to learn: And Lip to Lip it murmur&#x27;d--&quot;While you live, Drink!--for once dead you never shall return.&quot;</p>
+<h2 class="chapter" id="c3">XXXV.</h2>
+<p>I think the Vessel, that with fugitive Articulation answer&#x27;d, once did live, And merry-make; and the cold Lip I kiss&#x27;d How many Kisses might it take--and give.</p>
+<h2 class="chapter" id="c4">XXXVI.</h2>
+<p>For in the Market-place, one Dusk of Day, I watch&#x27;d the Potter thumping his wet Clay: And with its all obliterated Tongue It murmur&#x27;d--&quot;Gently, Brother, gently, pray!&quot;</p>
+<h2 class="chapter" id="c5">XXXVII.</h2>
+<p>Ah, fill the Cup:--what boots it to repeat How Time is slipping underneath our Feet: Unborn TO-MORROW and dead YESTERDAY, Why fret about them if TO-DAY be sweet!</p>
+<h2 class="chapter" id="c6">XXXVIII.</h2>
+<p>One Moment in Annihilation&#x27;s Waste, One moment, of the Well of Life to taste-- The Stars are setting, and the Caravan Starts for the dawn of Nothing--Oh, make haste!</p>
+<h2 class="chapter" id="c7">XXXIX.</h2>
+<p>How long, how long, in infinite Pursuit Of This and That endeavour and dispute? Better be merry with the fruitful Grape Than sadden after none, or bitter, Fruit.</p>
+<h2 class="chapter" id="c8">XL.</h2>
+<p>You know, my Friends, how long since in my House For a new Marriage I did make Carouse: Divorced old barren Reason from my Bed, And took the Daughter of the Vine to Spouse.</p>
+<h2 class="chapter" id="c9">XLI.</h2>
+<p>For &quot;IS&quot; and &quot;IS-NOT&quot; though with Rule and Line, And, &quot;UP-AND-DOWN&quot; without, I could define, I yet in all I only cared to know, Was never deep in anything but--Wine.</p>
+<h2 class="chapter" id="c10">XLII.</h2>
+<p>And lately, by the Tavern Door agape, Came stealing through the Dusk an Angel Shape, Bearing a vessel on his Shoulder; and He bid me taste of it; and &#x27;twas--the Grape!</p>
+<h2 class="chapter" id="c11">XLIII.</h2>
+<p>The Grape that can with Logic absolute The Two-and-Seventy jarring Sects confute: The subtle Alchemist that in a Trice Life&#x27;s leaden Metal into Gold transmute.</p>
+<h2 class="chapter" id="c12">XLIV.</h2>
+<p>The mighty Mahmud, the victorious Lord, That all the misbelieving and black Horde Of Fears and Sorrows that infest the Soul Scatters and slays with his enchanted Sword.</p>
+<h2 class="chapter" id="c13">XLV.</h2>
+<p>But leave the Wise to wrangle, and with me The Quarrel of the Universe let be: And, in some corner of the Hubbub coucht, Make Game of that which makes as much of Thee.</p>
+<h2 class="chapter" id="c14">XLVI.</h2>
+<p>For in and out, above, about, below, &#x27;Tis nothing but a Magic Shadow-show, Play&#x27;d in a Box whose Candle is the Sun, Round which we Phantom Figures come and go.</p>
+<h2 class="chapter" id="c15">XLVII.</h2>
+<p>And if the Wine you drink, the Lip you press, End in the Nothing all Things end in--Yes- Then fancy while Thou art, Thou art but what Thou shalt be--Nothing--Thou shalt not be less.</p>
+<h2 class="chapter" id="c16">XLVIII.</h2>
+<p>While the Rose blows along the River Brink, With old Khayyam the Ruby Vintage drink: And when the Angel with his darker Draught Draws up to thee--take that, and do not shrink.</p>
+<h3 class="sub">Xlvix.</h3>
+<p>&#x27;Tis all a Chequer-board of Nights and Days Where Destiny with Men for Pieces plays: Hither and thither moves, and mates, and slays, And one by one back in the Closet lays.</p>
+<h2 class="chapter" id="c17">L.</h2>
+<p>The Ball no Question makes of Ayes and Noes, But Right or Left as strikes the Player goes; And He that toss&#x27;d Thee down into the Field, He knows about it all--HE knows--HE knows!</p>
+<h3 class="sub">Li.</h3>
+<p>The Moving Finger writes; and, having writ, Moves on: nor all thy Piety nor Wit Shall lure it back to cancel half a Line, Nor all thy Tears wash out a Word of it.</p>
+<h2 class="chapter" id="c18">LII.</h2>
+<p>And that inverted Bowl we call The Sky, Whereunder crawling coop&#x27;t we live and die, Lift not thy hands to IT for help--for It Rolls impotently on as Thou or I.</p>
+<h2 class="chapter" id="c19">LIII.</h2>
+<p>With Earth&#x27;s first Clay They did the Last Man&#x27;s knead, And then of the Last Harvest sow&#x27;d the Seed: Yea, the first Morning of Creation wrote What the Last Dawn of Reckoning shall read.</p>
+<h2 class="chapter" id="c20">LIV.</h2>
+<p>I tell Thee this--When, starting from the Goal, Over the shoulders of the flaming Foal Of Heav&#x27;n Parwin and Mushtari they flung, In my predestin&#x27;d Plot of Dust and Soul</p>
+<h2 class="chapter" id="c21">LV.</h2>
+<p>The Vine had struck a Fibre; which about If clings my Being--let the Sufi flout; Of my Base Metal may be filed a Key, That shall unlock the Door he howls without.</p>
+<h2 class="chapter" id="c22">LVI.</h2>
+<p>And this I know: whether the one True Light, Kindle to Love, or Wrath consume me quite, One Glimpse of It within the Tavern caught Better than in the Temple lost outright.</p>
+<h2 class="chapter" id="c23">LVII.</h2>
+<p>Oh Thou who didst with Pitfall and with Gin Beset the Road I was to wander in, Thou wilt not with Predestination round Enmesh me, and impute my Fall to Sin?</p>
+<h2 class="chapter" id="c24">LVIII.</h2>
+<p>Oh Thou, who Man of baser Earth didst make, And who with Eden didst devise the Snake; For all the Sin wherewith the Face of Man Is blacken&#x27;d, Man&#x27;s Forgiveness give--and take!</p>
+<p>KUZA--NAMA. (&quot;Book of Pots&quot;)</p>
+<h2 class="chapter" id="c25">LIX.</h2>
+<p>Listen again.  One Evening at the Close Of Ramazan, ere the better Moon arose, In that old Potter&#x27;s Shop I stood alone With the clay Population round in Rows.</p>
+<h2 class="chapter" id="c26">LX.</h2>
+<p>And strange to tell, among that Earthen Lot Some could articulate, while others not: And suddenly one more impatient cried-- &quot;Who is the Potter, pray, and who the Pot?&quot;</p>
+<h2 class="chapter" id="c27">LXI.</h2>
+<p>Then said another--&quot;Surely not in vain My substance from the common Earth was ta&#x27;en, That He who subtly wrought me into Shape Should stamp me back to common Earth again.&quot;</p>
+<h2 class="chapter" id="c28">LXII.</h2>
+<p>Another said--&quot;Why, ne&#x27;er a peevish Boy Would break the Bowl from which he drank in Joy; Shall He that made the Vessel in pure Love And Fansy, in an after Rage destroy!&quot;</p>
+<h2 class="chapter" id="c29">LXIII.</h2>
+<p>None answer&#x27;d this; but after Silence spake A Vessel of a more ungainly Make: &quot;They sneer at me for leaning all awry; What? did the Hand then of the Potter shake?&quot;</p>
+<h2 class="chapter" id="c30">LXIV.</h2>
+<p>Said one--&quot;Folks of a surly Tapster tell, And daub his Visage with the Smoke of Hell; They talk of some strict Testing of us--Pish! He&#x27;s a Good Fellow, and &#x27;twill all be well.&quot;</p>
+<h2 class="chapter" id="c31">LXV.</h2>
+<p>Then said another with a long-drawn Sigh, &quot;My Clay with long oblivion is gone dry: But, fill me with the old familiar Juice, Methinks I might recover by-and-bye!&quot;</p>
+<h2 class="chapter" id="c32">LXVI.</h2>
+<p>So, while the Vessels one by one were speaking, One spied the little Crescent all were seeking: And then they jogg&#x27;d each other, &quot;Brother! Brother! Hark to the Porter&#x27;s Shoulder-knot a-creaking!&quot;</p>
+<p>*****</p>
+<h2 class="chapter" id="c33">LXVII.</h2>
+<p>Ah, with the Grape my fading Life provide, And wash my Body whence the life has died, And in a Windingsheet of Vineleaf wrapt, So bury me by some sweet Gardenside.</p>
+<h2 class="chapter" id="c34">LXVIII.</h2>
+<p>That ev&#x27;n my buried Ashes such a Snare Of Perfume shall fling up into the Air, As not a True Believer passing by But shall be overtaken unaware.</p>
+<h2 class="chapter" id="c35">LXIX.</h2>
+<p>Indeed, the Idols I have loved so long Have done my Credit in Men&#x27;s Eye much wrong: Have drown&#x27;d my Honour in a shallow Cup, And sold my Reputation for a Song.</p>
+<h2 class="chapter" id="c36">LXX.</h2>
+<p>Indeed, indeed, Repentance oft before I swore--but was I sober when I swore? And then and then came Spring, and Rose-in-hand My thread-bare Penitence a-pieces tore.</p>
+<h2 class="chapter" id="c37">LXXI.</h2>
+<p>And much as Wine has play&#x27;d the Infidel, And robb&#x27;d me of my Robe of Honour--well, I often wonder what the Vintners buy One half so precious as the Goods they sell.</p>
+<h2 class="chapter" id="c38">LXXII.</h2>
+<p>Alas, that Spring should vanish with the Rose! That Youth&#x27;s sweet-scented Manuscript should close! The Nightingale that in the Branches sang, Ah, whence, and whither flown again, who knows!</p>
+<h2 class="chapter" id="c39">LXXIII.</h2>
+<p>Ah, Love! could thou and I with Fate conspire To grasp this sorry Scheme of Things entire, Would not we shatter it to bits--and then Re-mould it nearer to the Heart&#x27;s Desire!</p>
+<h2 class="chapter" id="c40">LXXIV.</h2>
+<p>Ah, Moon of my Delight who know&#x27;st no wane, The Moon of Heav&#x27;n is rising once again: How oft hereafter rising shall she look Through this same Garden after me--in vain!</p>
+<h2 class="chapter" id="c41">LXXV.</h2>
+<p>And when Thyself with shining Foot shall pass Among the Guests Star-scatter&#x27;d on The Grass, And in Thy joyous Errand reach the Spot Where I made one--turn down an empty Glass!</p>
+<h3 class="sub">Tamam Shud.</h3>
+<p>Fifth Edition</p>
+<h2 class="chapter" id="c42">I.</h2>
+<p>WAKE! For the Sun, who scatter&#x27;d into flight The Stars before him from the Field of Night, Drives Night along with them from Heav&#x27;n, and strikes The Sultan&#x27;s Turret with a Shaft of Light.</p>
+<h2 class="chapter" id="c43">II.</h2>
+<p>Before the phantom of False morning died, Methought a Voice within the Tavern cried, &quot;When all the Temple is prepared within, &quot;Why nods the drowsy Worshiper outside?&quot;</p>
+<h2 class="chapter" id="c44">III.</h2>
+<p>And, as the Cock crew, those who stood before The Tavern shouted--&quot;Open then the Door! &quot;You know how little while we have to stay, And, once departed, may return no more.&quot;</p>
+<h2 class="chapter" id="c45">IV.</h2>
+<p>Now the New Year reviving old Desires, The thoughtful Soul to Solitude retires, Where the WHITE HAND OF MOSES on the Bough Puts out, and Jesus from the Ground suspires.</p>
+<h2 class="chapter" id="c46">V.</h2>
+<p>Iram indeed is gone with all his Rose, And Jamshyd&#x27;s Sev&#x27;n-ring&#x27;d Cup where no one knows; But still a Ruby kindles in the Vine, And many a Garden by the Water blows.</p>
+<h2 class="chapter" id="c47">VI.</h2>
+<p>And David&#x27;s lips are lockt; but in divine High-piping Pehlevi, with &quot;Wine! Wine! Wine! &quot;Red Wine!&quot;--the Nightingale cries to the Rose That sallow cheek of hers to&#x27; incarnadine.</p>
+<h2 class="chapter" id="c48">VII.</h2>
+<p>Come, fill the Cup, and in the fire of Spring Your Winter garment of Repentance fling: The Bird of Time has but a little way To flutter--and the Bird is on the Wing.</p>
+<h2 class="chapter" id="c49">VIII.</h2>
+<p>Whether at Naishapur or Babylon, Whether the Cup with sweet or bitter run, The Wine of Life keeps oozing drop by drop, The Leaves of Life keep falling one by one.</p>
+<h2 class="chapter" id="c50">IX.</h2>
+<p>Each Morn a thousand Roses brings, you say: Yes, but where leaves the Rose of Yesterday? And this first Summer month that brings the Rose Shall take Jamshyd and Kaikobad away.</p>
+<h2 class="chapter" id="c51">X.</h2>
+<p>Well, let it take them!  What have we to do With Kaikobad the Great, or Kaikhosru? Let Zal and Rustum bluster as they will, Or Hatim call to Supper--heed not you.</p>
+<h2 class="chapter" id="c52">XI.</h2>
+<p>With me along the strip of Herbage strown That just divides the desert from the sown, Where name of Slave and Sultan is forgot-- And Peace to Mahmud on his golden Throne!</p>
+<h2 class="chapter" id="c53">XII.</h2>
+<p>A Book of Verses underneath the Bough, A Jug of Wine, a Loaf of Bread--and Thou Beside me singing in the Wilderness-- Oh, Wilderness were Paradise enow!</p>
+<h2 class="chapter" id="c54">XIII.</h2>
+<p>Some for the Glories of This World; and some Sigh for the Prophet&#x27;s Paradise to come; Ah, take the Cash, and let the Credit go, Nor heed the rumble of a distant Drum!</p>
+<h2 class="chapter" id="c55">XIV.</h2>
+<p>Look to the blowing Rose about us--&quot;Lo, Laughing,&quot; she says, &quot;into the world I blow, At once the silken tassel of my Purse Tear, and its Treasure on the Garden throw.&quot;</p>
+<h2 class="chapter" id="c56">XV.</h2>
+<p>And those who husbanded the Golden grain, And those who flung it to the winds like Rain, Alike to no such aureate Earth are turn&#x27;d As, buried once, Men want dug up again.</p>
+<h2 class="chapter" id="c57">XVI.</h2>
+<p>The Worldly Hope men set their Hearts upon Turns Ashes--or it prospers; and anon, Like Snow upon the Desert&#x27;s dusty Face, Lighting a little hour or two--is gone.</p>
+<h2 class="chapter" id="c58">XVII.</h2>
+<p>Think, in this batter&#x27;d Caravanserai Whose Portals are alternate Night and Day, How Sultan after Sultan with his Pomp Abode his destined Hour, and went his way.</p>
+<h2 class="chapter" id="c59">XVIII.</h2>
+<p>They say the Lion and the Lizard keep The courts where Jamshyd gloried and drank deep: And Bahram, that great Hunter--the Wild Ass Stamps o&#x27;er his Head, but cannot break his Sleep.</p>
+<h2 class="chapter" id="c60">XIX.</h2>
+<p>I sometimes think that never blows so red The Rose as where some buried Caesar bled; That every Hyacinth the Garden wears Dropt in her Lap from some once lovely Head.</p>
+<h2 class="chapter" id="c61">XX.</h2>
+<p>And this reviving Herb whose tender Green Fledges the River-Lip on which we lean-- Ah, lean upon it lightly! for who knows From what once lovely Lip it springs unseen!</p>
+<h2 class="chapter" id="c62">XXI.</h2>
+<p>Ah, my Beloved, fill the Cup that clears TO-DAY of past Regrets and future Fears: To-morrow--Why, To-morrow I may be Myself with Yesterday&#x27;s Sev&#x27;n thousand Years.</p>
+<h2 class="chapter" id="c63">XXII.</h2>
+<p>For some we loved, the loveliest and the best That from his Vintage rolling Time hath prest, Have drunk their Cup a Round or two before, And one by one crept silently to rest.</p>
+<h2 class="chapter" id="c64">XXIII.</h2>
+<p>And we, that now make merry in the Room They left, and Summer dresses in new bloom, Ourselves must we beneath the Couch of Earth Descend--ourselves to make a Couch--for whom?</p>
+<h2 class="chapter" id="c65">XXIV.</h2>
+<p>Ah, make the most of what we yet may spend, Before we too into the Dust descend; Dust into Dust, and under Dust to lie, Sans Wine, sans Song, sans Singer, and--sans End!</p>
+<h2 class="chapter" id="c66">XXV.</h2>
+<p>Alike for those who for TO-DAY prepare, And those that after some TO-MORROW stare, A Muezzin from the Tower of Darkness cries, &quot;Fools! your Reward is neither Here nor There.&quot;</p>
+<h2 class="chapter" id="c67">XXVI.</h2>
+<p>Why, all the Saints and Sages who discuss&#x27;d Of the Two Worlds so wisely--they are thrust Like foolish Prophets forth; their Words to Scorn Are scatter&#x27;d, and their Mouths are stopt with Dust.</p>
+<h2 class="chapter" id="c68">XXVII.</h2>
+<p>Myself when young did eagerly frequent Doctor and Saint, and heard great argument About it and about: but evermore Came out by the same door where in I went.</p>
+<h2 class="chapter" id="c69">XXVIII.</h2>
+<p>With them the seed of Wisdom did I sow, And with mine own hand wrought to make it grow; And this was all the Harvest that I reap&#x27;d-- &quot;I came like Water, and like Wind I go.&quot;</p>
+<h2 class="chapter" id="c70">XXIX.</h2>
+<p>Into this Universe, and Why not knowing Nor Whence, like Water willy-nilly flowing; And out of it, as Wind along the Waste, I know not Whither, willy-nilly blowing.</p>
+<h2 class="chapter" id="c71">XXX.</h2>
+<p>What, without asking, hither hurried Whence? And, without asking, Whither hurried hence! Oh, many a Cup of this forbidden Wine Must drown the memory of that insolence!</p>
+<h2 class="chapter" id="c72">XXXI.</h2>
+<p>Up from Earth&#x27;s Center through the Seventh Gate I rose, and on the Throne of Saturn sate, And many a Knot unravel&#x27;d by the Road; But not the Master-knot of Human Fate.</p>
+<h2 class="chapter" id="c73">XXXII.</h2>
+<p>There was the Door to which I found no Key; There was the Veil through which I might not see: Some little talk awhile of ME and THEE There was--and then no more of THEE and ME.</p>
+<h2 class="chapter" id="c74">XXXIII.</h2>
+<p>Earth could not answer; nor the Seas that mourn In flowing Purple, of their Lord Forlorn; Nor rolling Heaven, with all his Signs reveal&#x27;d And hidden by the sleeve of Night and Morn.</p>
+<h2 class="chapter" id="c75">XXXIV.</h2>
+<p>Then of the THEE IN ME who works behind The Veil, I lifted up my hands to find A lamp amid the Darkness; and I heard, As from Without--&quot;THE ME WITHIN THEE BLIND!&quot;</p>
+<h2 class="chapter" id="c76">XXXV.</h2>
+<p>Then to the Lip of this poor earthen Urn I lean&#x27;d, the Secret of my Life to learn: And Lip to Lip it murmur&#x27;d--&quot;While you live, &quot;Drink!--for, once dead, you never shall return.&quot;</p>
+<h2 class="chapter" id="c77">XXXVI.</h2>
+<p>I think the Vessel, that with fugitive Articulation answer&#x27;d, once did live, And drink; and Ah! the passive Lip I kiss&#x27;d, How many Kisses might it take--and give!</p>
+<h2 class="chapter" id="c78">XXXVII.</h2>
+<p>For I remember stopping by the way To watch a Potter thumping his wet Clay: And with its all-obliterated Tongue It murmur&#x27;d--&quot;Gently, Brother, gently, pray!&quot;</p>
+<h2 class="chapter" id="c79">XXXVIII.</h2>
+<p>And has not such a Story from of Old Down Man&#x27;s successive generations roll&#x27;d Of such a clod of saturated Earth Cast by the Maker into Human mold?</p>
+<h2 class="chapter" id="c80">XXXIX.</h2>
+<p>And not a drop that from our Cups we throw For Earth to drink of, but may steal below To quench the fire of Anguish in some Eye There hidden--far beneath, and long ago.</p>
+<h2 class="chapter" id="c81">XL.</h2>
+<p>As then the Tulip for her morning sup Of Heav&#x27;nly Vintage from the soil looks up, Do you devoutly do the like, till Heav&#x27;n To Earth invert you--like an empty Cup.</p>
+<h2 class="chapter" id="c82">XLI.</h2>
+<p>Perplext no more with Human or Divine, To-morrow&#x27;s tangle to the winds resign, And lose your fingers in the tresses of The Cypress-slender Minister of Wine.</p>
+<h2 class="chapter" id="c83">XLII.</h2>
+<p>And if the Wine you drink, the Lip you press, End in what All begins and ends in--Yes; Think then you are TO-DAY what YESTERDAY You were--TO-MORROW you shall not be less.</p>
+<h2 class="chapter" id="c84">XLIII.</h2>
+<p>So when that Angel of the darker Drink At last shall find you by the river-brink, And, offering his Cup, invite your Soul Forth to your Lips to quaff--you shall not shrink.</p>
+<h2 class="chapter" id="c85">XLIV.</h2>
+<p>Why, if the Soul can fling the Dust aside, And naked on the Air of Heaven ride, Were&#x27;t not a Shame--were&#x27;t not a Shame for him In this clay carcass crippled to abide?</p>
+<h2 class="chapter" id="c86">XLV.</h2>
+<p>&#x27;Tis but a Tent where takes his one day&#x27;s rest A Sultan to the realm of Death addrest; The Sultan rises, and the dark Ferrash Strikes, and prepares it for another Guest.</p>
+<h2 class="chapter" id="c87">XLVI.</h2>
+<p>And fear not lest Existence closing your Account, and mine, should know the like no more; The Eternal Saki from that Bowl has pour&#x27;d Millions of Bubbles like us, and will pour.</p>
+<h2 class="chapter" id="c88">XLVII.</h2>
+<p>When You and I behind the Veil are past, Oh, but the long, long while the World shall last, Which of our Coming and Departure heeds As the Sea&#x27;s self should heed a pebble-cast.</p>
+<h2 class="chapter" id="c89">XLVIII.</h2>
+<p>A Moment&#x27;s Halt--a momentary taste Of BEING from the Well amid the Waste-- And Lo!--the phantom Caravan has reach&#x27;d The NOTHING it set out from--Oh, make haste!</p>
+<h2 class="chapter" id="c90">XLIX.</h2>
+<p>Would you that spangle of Existence spend About THE SECRET--quick about it, Friend! A Hair perhaps divides the False from True-- And upon what, prithee, may life depend?</p>
+<h2 class="chapter" id="c91">L.</h2>
+<p>A Hair perhaps divides the False and True; Yes; and a single Alif were the clue-- Could you but find it--to the Treasure-house, And peradventure to THE MASTER too;</p>
+<h3 class="sub">Li.</h3>
+<p>Whose secret Presence through Creation&#x27;s veins Running Quicksilver-like eludes your pains; Taking all shapes from Mah to Mahi and They change and perish all--but He remains;</p>
+<h2 class="chapter" id="c92">LII.</h2>
+<p>A moment guessed--then back behind the Fold Immerst of Darkness round the Drama roll&#x27;d Which, for the Pastime of Eternity, He doth Himself contrive, enact, behold.</p>
+<h2 class="chapter" id="c93">LIII.</h2>
+<p>But if in vain, down on the stubborn floor Of Earth, and up to Heav&#x27;n&#x27;s unopening Door, You gaze TO-DAY, while You are You--how then TO-MORROW, when You shall be You no more?</p>
+<h2 class="chapter" id="c94">LIV.</h2>
+<p>Waste not your Hour, nor in the vain pursuit Of This and That endeavor and dispute; Better be jocund with the fruitful Grape Than sadden after none, or bitter, Fruit.</p>
+<h2 class="chapter" id="c95">LV.</h2>
+<p>You know, my Friends, with what a brave Carouse I made a Second Marriage in my house; Divorced old barren Reason from my Bed, And took the Daughter of the Vine to Spouse.</p>
+<h2 class="chapter" id="c96">LVI.</h2>
+<p>For &quot;Is&quot; and &quot;Is-not&quot; though with Rule and Line And &quot;UP-AND-DOWN&quot; by Logic I define, Of all that one should care to fathom, I was never deep in anything but--Wine.</p>
+<h2 class="chapter" id="c97">LVII.</h2>
+<p>Ah, by my Computations, People say, Reduce the Year to better reckoning?--Nay, &#x27;Twas only striking from the Calendar Unborn To-morrow and dead Yesterday.</p>
+<h2 class="chapter" id="c98">LVIII.</h2>
+<p>And lately, by the Tavern Door agape, Came shining through the Dusk an Angel Shape Bearing a Vessel on his Shoulder; and He bid me taste of it; and &#x27;twas--the Grape!</p>
+<h2 class="chapter" id="c99">LIX.</h2>
+<p>The Grape that can with Logic absolute The Two-and-Seventy jarring Sects confute: The sovereign Alchemist that in a trice Life&#x27;s leaden metal into Gold transmute;</p>
+<h2 class="chapter" id="c100">LX.</h2>
+<p>The mighty Mahmud, Allah-breathing Lord, That all the misbelieving and black Horde Of Fears and Sorrows that infest the Soul Scatters before him with his whirlwind Sword.</p>
+<h2 class="chapter" id="c101">LXI.</h2>
+<p>Why, be this Juice the growth of God, who dare Blaspheme the twisted tendril as a Snare? A Blessing, we should use it, should we not? And if a Curse--why, then, Who set it there?</p>
+<h2 class="chapter" id="c102">LXII.</h2>
+<p>I must abjure the Balm of Life, I must, Scared by some After-reckoning ta&#x27;en on trust, Or lured with Hope of some Diviner Drink, To fill the Cup--when crumbled into Dust!</p>
+<h2 class="chapter" id="c103">LXIII.</h2>
+<p>Of threats of Hell and Hopes of Paradise! One thing at least is certain--This Life flies; One thing is certain and the rest is Lies; The Flower that once has blown for ever dies.</p>
+<h2 class="chapter" id="c104">LXIV.</h2>
+<p>Strange, is it not? that of the myriads who Before us pass&#x27;d the door of Darkness through, Not one returns to tell us of the Road, Which to discover we must travel too.</p>
+<h2 class="chapter" id="c105">LXV.</h2>
+<p>The Revelations of Devout and Learn&#x27;d Who rose before us, and as Prophets burn&#x27;d, Are all but Stories, which, awoke from Sleep They told their comrades, and to Sleep return&#x27;d.</p>
+<h2 class="chapter" id="c106">LXVI.</h2>
+<p>I sent my Soul through the Invisible, Some letter of that After-life to spell: And by and by my Soul return&#x27;d to me, And answer&#x27;d &quot;I Myself am Heav&#x27;n and Hell:&quot;</p>
+<h2 class="chapter" id="c107">LXVII.</h2>
+<p>Heav&#x27;n but the Vision of fulfill&#x27;d Desire, And Hell the Shadow from a Soul on fire, Cast on the Darkness into which Ourselves, So late emerged from, shall so soon expire.</p>
+<h2 class="chapter" id="c108">LXVIII.</h2>
+<p>We are no other than a moving row Of Magic Shadow-shapes that come and go Round with the Sun-illumined Lantern held In Midnight by the Master of the Show;</p>
+<h2 class="chapter" id="c109">LXIX.</h2>
+<p>But helpless Pieces of the Game He plays Upon this Chequer-board of Nights and Days; Hither and thither moves, and checks, and slays, And one by one back in the Closet lays.</p>
+<h2 class="chapter" id="c110">LXX.</h2>
+<p>The Ball no question makes of Ayes and Noes, But Here or There as strikes the Player goes; And He that toss&#x27;d you down into the Field, He knows about it all--HE knows--HE knows!</p>
+<h2 class="chapter" id="c111">LXXI.</h2>
+<p>The Moving Finger writes; and, having writ, Moves on: nor all your Piety nor Wit Shall lure it back to cancel half a Line, Nor all your Tears wash out a Word of it.</p>
+<h2 class="chapter" id="c112">LXXII.</h2>
+<p>And that inverted Bowl they call the Sky, Whereunder crawling coop&#x27;d we live and die, Lift not your hands to It for help--for It As impotently moves as you or I.</p>
+<h2 class="chapter" id="c113">LXXIII.</h2>
+<p>With Earth&#x27;s first Clay They did the Last Man knead, And there of the Last Harvest sow&#x27;d the Seed: And the first Morning of Creation wrote What the Last Dawn of Reckoning shall read.</p>
+<h2 class="chapter" id="c114">LXXIV.</h2>
+<p>YESTERDAY This Day&#x27;s Madness did prepare; TO-MORROW&#x27;s Silence, Triumph, or Despair: Drink! for you not know whence you came, nor why: Drink! for you know not why you go, nor where.</p>
+<h2 class="chapter" id="c115">LXXV.</h2>
+<p>I tell you this--When, started from the Goal, Over the flaming shoulders of the Foal Of Heav&#x27;n Parwin and Mushtari they flung, In my predestined Plot of Dust and Soul.</p>
+<h2 class="chapter" id="c116">LXXVI.</h2>
+<p>The Vine had struck a fiber: which about If clings my Being--let the Dervish flout; Of my Base metal may be filed a Key That shall unlock the Door he howls without.</p>
+<h2 class="chapter" id="c117">LXXVII.</h2>
+<p>And this I know: whether the one True Light Kindle to Love, or Wrath consume me quite, One Flash of It within the Tavern caught Better than in the Temple lost outright.</p>
+<h2 class="chapter" id="c118">LXXVIII.</h2>
+<p>What! out of senseless Nothing to provoke A conscious Something to resent the yoke Of unpermitted Pleasure, under pain Of Everlasting Penalties, if broke!</p>
+<h2 class="chapter" id="c119">LXXIX.</h2>
+<p>What! from his helpless Creature be repaid Pure Gold for what he lent him dross-allay&#x27;d-- Sue for a Debt he never did contract, And cannot answer--Oh the sorry trade!</p>
+<h2 class="chapter" id="c120">LXXX.</h2>
+<p>Oh Thou, who didst with pitfall and with gin Beset the Road I was to wander in, Thou wilt not with Predestined Evil round Enmesh, and then impute my Fall to Sin!</p>
+<h2 class="chapter" id="c121">LXXXI.</h2>
+<p>Oh Thou, who Man of baser Earth didst make, And ev&#x27;n with Paradise devise the Snake: For all the Sin wherewith the Face of Man Is blacken&#x27;d--Man&#x27;s forgiveness give--and take!</p>
+<p>*****</p>
+<h2 class="chapter" id="c122">LXXXII.</h2>
+<p>As under cover of departing Day Slunk hunger-stricken Ramazan away, Once more within the Potter&#x27;s house alone I stood, surrounded by the Shapes of Clay.</p>
+<h2 class="chapter" id="c123">LXXXIII.</h2>
+<p>Shapes of all Sorts and Sizes, great and small, That stood along the floor and by the wall; And some loquacious Vessels were; and some Listen&#x27;d perhaps, but never talk&#x27;d at all.</p>
+<h2 class="chapter" id="c124">LXXXIV.</h2>
+<p>Said one among them--&quot;Surely not in vain My substance of the common Earth was ta&#x27;en And to this Figure molded, to be broke, Or trampled back to shapeless Earth again.&quot;</p>
+<h2 class="chapter" id="c125">LXXXV.</h2>
+<p>Then said a Second--&quot;Ne&#x27;er a peevish Boy Would break the Bowl from which he drank in joy; And He that with his hand the Vessel made Will surely not in after Wrath destroy.&quot;</p>
+<h2 class="chapter" id="c126">LXXXVI.</h2>
+<p>After a momentary silence spake Some Vessel of a more ungainly Make; &quot;They sneer at me for leaning all awry: What! did the Hand then of the Potter shake?&quot;</p>
+<h2 class="chapter" id="c127">LXXXVII.</h2>
+<p>Whereat some one of the loquacious Lot-- I think a Sufi pipkin--waxing hot-- &quot;All this of Pot and Potter--Tell me then, Who is the Potter, pray, and who the Pot?&quot;</p>
+<h2 class="chapter" id="c128">LXXXVIII.</h2>
+<p>&quot;Why,&quot; said another, &quot;Some there are who tell Of one who threatens he will toss to Hell The luckless Pots he marr&#x27;d in making--Pish! He&#x27;s a Good Fellow, and &#x27;twill all be well.&quot;</p>
+<h2 class="chapter" id="c129">LXXXIX.</h2>
+<p>&quot;Well,&quot; murmured one, &quot;Let whoso make or buy, My Clay with long Oblivion is gone dry: But fill me with the old familiar Juice, Methinks I might recover by and by.&quot;</p>
+<h2 class="chapter" id="c130">XC.</h2>
+<p>So while the Vessels one by one were speaking, The little Moon look&#x27;d in that all were seeking: And then they jogg&#x27;d each other, &quot;Brother! Brother! Now for the Porter&#x27;s shoulders&#x27; knot a-creaking!&quot;</p>
+<p>*****</p>
+<h2 class="chapter" id="c131">XCI.</h2>
+<p>Ah, with the Grape my fading life provide, And wash the Body whence the Life has died, And lay me, shrouded in the living Leaf, By some not unfrequented Garden-side.</p>
+<h2 class="chapter" id="c132">XCII.</h2>
+<p>That ev&#x27;n buried Ashes such a snare Of Vintage shall fling up into the Air As not a True-believer passing by But shall be overtaken unaware.</p>
+<h2 class="chapter" id="c133">XCIII.</h2>
+<p>Indeed the Idols I have loved so long Have done my credit in this World much wrong: Have drown&#x27;d my Glory in a shallow Cup, And sold my reputation for a Song.</p>
+<h2 class="chapter" id="c134">XCIV.</h2>
+<p>Indeed, indeed, Repentance oft before I swore--but was I sober when I swore? And then and then came Spring, and Rose-in-hand My thread-bare Penitence apieces tore.</p>
+<h2 class="chapter" id="c135">XCV.</h2>
+<p>And much as Wine has play&#x27;d the Infidel, And robb&#x27;d me of my Robe of Honor--Well, I wonder often what the Vintners buy One half so precious as the stuff they sell.</p>
+<h2 class="chapter" id="c136">XCVI.</h2>
+<p>Yet Ah, that Spring should vanish with the Rose! That Youth&#x27;s sweet-scented manuscript should close! The Nightingale that in the branches sang, Ah whence, and whither flown again, who knows!</p>
+<h2 class="chapter" id="c137">XCVII.</h2>
+<p>Would but the Desert of the Fountain yield One glimpse--if dimly, yet indeed, reveal&#x27;d, To which the fainting Traveler might spring, As springs the trampled herbage of the field!</p>
+<h2 class="chapter" id="c138">XCVIII.</h2>
+<p>Would but some winged Angel ere too late Arrest the yet unfolded Roll of Fate, And make the stern Recorder otherwise Enregister, or quite obliterate!</p>
+<h2 class="chapter" id="c139">XCIX.</h2>
+<p>Ah Love! could you and I with Him conspire To grasp this sorry Scheme of Things entire, Would not we shatter it to bits--and then Re-mold it nearer to the Heart&#x27;s Desire!</p>
+<h2 class="chapter" id="c140">C.</h2>
+<p>Yon rising Moon that looks for us again-- How oft hereafter will she wax and wane; How oft hereafter rising look for us Through this same Garden--and for one in vain!</p>
+<h3 class="sub">Ci.</h3>
+<p>And when like her, oh Saki, you shall pass Among the Guests Star-scatter&#x27;d on the Grass, And in your joyous errand reach the spot Where I made One--turn down an empty Glass!</p>
+<h3 class="sub">Tamam.</h3>
+<p>Notes:</p>
+<p>[The references are, except in the first note only, to the stanzas of the Fifth edition.]</p>
+<p>(Stanza I.) Flinging a Stone into the Cup was the signal for &quot;To Horse!&quot; in the Desert.</p>
+<p>(II.) The &quot;False Dawn&quot;; Subhi Kazib, a transient Light on the Horizon about an hour before the Subhi sadik or True Dawn; a well-known Phenomenon in the East.</p>
+<p>(IV.) New Year.  Beginning with the Vernal Equinox, it must be remembered; and (howsoever the old Solar Year is practically superseded by the clumsy Lunar Year that dates from the Mohammedan Hijra) still commemorated by a Festival that is said to have been appointed by the very Jamshyd whom Omar so often talks of, and whose yearly Calendar he helped to rectify.</p>
+<p>&quot;The sudden approach and rapid advance of the Spring,&quot; says Mr. Binning, &quot;are very striking.  Before the Snow is well off the Ground, the Trees burst into Blossom, and the Flowers start from the Soil.  At Naw Rooz (their New Year&#x27;s Day) the Snow was lying in patches on the Hills and in the shaded Vallies, while the Fruit-trees in the Garden were budding beautifully, and green Plants and Flowers springing upon the Plains on every side--</p>
+<p>&#x27;And on old Hyems&#x27; Chin and icy Crown An odorous Chaplet of sweet Summer buds Is, as in mockery, set--&#x27;--</p>
+<p>Among the Plants newly appear&#x27;d I recognized some Acquaintances I had not seen for many a Year: among these, two varieties of the Thistle; a coarse species of the Daisy, like the Horse-gowan; red and white clover; the Dock; the blue Cornflower; and that vulgar Herb the Dandelion rearing its yellow crest on the Banks of the Water-courses.&quot; The Nightingale was not yet heard, for the Rose was not yet blown: but an almost identical Blackbird and Woodpecker helped to make up something of a North-country Spring.</p>
+<p>&quot;The White Hand of Moses.&quot;  Exodus iv. 6; where Moses draws forth his Hand--not, according to the Persians, &quot;leprous as Snow,&quot; but white, as our May-blossom in Spring perhaps.  According to them also the Healing Power of Jesus resided in his Breath.</p>
+<p>(V.) Iram, planted by King Shaddad, and now sunk somewhere in the Sands of Arabia.  Jamshyd&#x27;s Seven-ring&#x27;d Cup was typical of the 7 Heavens, 7 Planets, 7 Seas, &amp;c., and was a Divining Cup.</p>
+<p>(VI.) Pehlevi, the old Heroic Sanskrit of Persia.  Hafiz also speaks of the Nightingale&#x27;s Pehlevi, which did not change with the People&#x27;s.</p>
+<p>I am not sure if the fourth line refers to the Red Rose looking sickly, or to the Yellow Rose that ought to be Red; Red, White, and Yellow Roses all common in Persia.  I think that Southey in his Common- Place Book, quotes from some Spanish author about the Rose being White till 10 o&#x27;clock; &quot;Rosa Perfecta&quot; at 2; and &quot;perfecta incarnada&quot; at 5.</p>
+<p>(X.) Rustum, the &quot;Hercules&quot; of Persia, and Zal his Father, whose exploits are among the most celebrated in the Shahnama.  Hatim Tai, a well-known type of Oriental Generosity.</p>
+<p>(XIII.) A Drum--beaten outside a Palace.</p>
+<p>(XIV.) That is, the Rose&#x27;s Golden Centre.</p>
+<p>(XVIII.) Persepolis: call&#x27;d also Takht-i-Jam-shyd--THE THRONE OF JAMSHYD, &quot;King Splendid,&quot; of the mythical Peshdadian Dynasty, and supposed (according to the Shah-nama) to have been founded and built by him.  Others refer it to the Work of the Genie King, Jan Ibn Jan--who also built the Pyramids--before the time of Adam.</p>
+<p>BAHRAM GUR.--Bahram of the Wild Ass--a Sassanian Sovereign--had also his Seven Castles (like the King of Bohemia!) each of a different Colour: each with a Royal Mistress within; each of whom tells him a Story, as told in one of the most famous Poems of Persia, written by Amir Khusraw: all these Sevens also figuring (according to Eastern Mysticism) the Seven Heavens; and perhaps the Book itself that Eighth, into which the mystical Seven transcend, and within which they revolve.  The Ruins of Three of those Towers are yet shown by the Peasantry; as also the Swamp in which Bahram sunk, like the Master of Ravenswood, while pursuing his Gur.</p>
+<p>The Palace that to Heav&#x27;n his pillars threw, And Kings the forehead on his threshold drew-- I saw the solitary Ringdove there, And &quot;Coo, coo, coo,&quot; she cried; and &quot;Coo, coo, coo.&quot;</p>
+<p>[Included in Nicolas&#x27;s edition as No. 350 of the Rubaiyat, and also in Mr. Whinfield&#x27;s translation.]</p>
+<p>This Quatrain Mr. Binning found, among several of Hafiz and others, inscribed by some stray hand among the ruins of Persepolis.  The Ringdove&#x27;s ancient Pehlevi Coo, Coo, Coo, signifies also in Persian &quot;Where? Where?  Where?&quot;  In Attar&#x27;s &quot;Bird-parliament&quot; she is reproved by the Leader of the Birds for sitting still, and for ever harping on that one note of lamentation for her lost Yusuf.</p>
+<p>Apropos of Omar&#x27;s Red Roses in Stanza xix, I am reminded of an old English Superstition, that our Anemone Pulsatilla, or purple &quot;Pasque Flower,&quot; (which grows plentifully about the Fleam Dyke, near Cambridge,) grows only where Danish Blood has been spilt.</p>
+<p>(XXI.) A thousand years to each Planet.</p>
+<p>(XXXI.) Saturn, Lord of the Seventh Heaven.</p>
+<p>(XXXII.) ME-AND-THEE: some dividual Existence or Personality distinct from the Whole.</p>
+<p>(XXXVII.) One of the Persian Poets--Attar, I think--has a pretty story about this.  A thirsty Traveller dips his hand into a Spring of Water to drink from.  By-and-by comes another who draws up and drinks from an earthen bowl, and then departs, leaving his Bowl behind him.  The first Traveller takes it up for another draught; but is surprised to find that the same Water which had tasted sweet from his own hand tastes bitter from the earthen Bowl.  But a Voice--from Heaven, I think--tells him the clay from which the Bowl is made was once Man; and, into whatever shape renew&#x27;d, can never lose the bitter flavour of Mortality.</p>
+<p>(XXXIX.) The custom of throwing a little Wine on the ground before drinking still continues in Persia, and perhaps generally in the East. Mons. Nicolas considers it &quot;un signe de liberalite, et en meme temps un avertissement que le buveur doit vider sa coupe jusqu&#x27;a la derniere goutte.&quot;  Is it not more likely an ancient Superstition; a Libation to propitiate Earth, or make her an Accomplice in the illicit Revel?  Or, perhaps, to divert the Jealous Eye by some sacrifice of superfluity, as with the Ancients of the West?  With Omar we see something more is signified; the precious Liquor is not lost, but sinks into the ground to refresh the dust of some poor Wine-worshipper foregone.</p>
+<p>Thus Hafiz, copying Omar in so many ways: &quot;When thou drinkest Wine pour a draught on the ground.  Wherefore fear the Sin which brings to another Gain?&quot;</p>
+<p>(XLIII.) According to one beautiful Oriental Legend, Azrael accomplishes his mission by holding to the nostril an Apple from the Tree of Life.</p>
+<p>This, and the two following Stanzas would have been withdrawn, as somewhat de trop, from the Text, but for advice which I least like to disregard.</p>
+<p>(LI.) From Mah to Mahi; from Fish to Moon.</p>
+<p>(LVI.) A Jest, of course, at his Studies.  A curious mathematical Quatrain of Omar&#x27;s has been pointed out to me; the more curious because almost exactly parallel&#x27;d by some Verses of Doctor Donne&#x27;s, that are quoted in Izaak Walton&#x27;s Lives!  Here is Omar: &quot;You and I are the image of a pair of compasses; though we have two heads (sc. our feet) we have one body; when we have fixed the centre for our circle, we bring our heads (sc. feet) together at the end.&quot;  Dr. Donne:</p>
+<p>If we be two, we two are so As stiff twin-compasses are two; Thy Soul, the fixt foot, makes no show To move, but does if the other do.</p>
+<p>And though thine in the centre sit, Yet when my other far does roam, Thine leans and hearkens after it, And rows erect as mine comes home.</p>
+<p>Such thou must be to me, who must Like the other foot obliquely run; Thy firmness makes my circle just, And me to end where I begun.</p>
+<p>(LIX.) The Seventy-two Religions supposed to divide the World, including Islamism, as some think: but others not.</p>
+<p>(LX.) Alluding to Sultan Mahmud&#x27;s Conquest of India and its dark people.</p>
+<p>(LXVIII.) Fanusi khiyal, a Magic-lanthorn still used in India; the cylindrical Interior being painted with various Figures, and so lightly poised and ventilated as to revolve round the lighted Candle within.</p>
+<p>(LXX.) A very mysterious Line in the Original:</p>
+<p>O danad O danad O danad O--</p>
+<p>breaking off something like our Wood-pigeon&#x27;s Note, which she is said to take up just where she left off.</p>
+<p>(LXXV.) Parwin and Mushtari--The Pleiads and Jupiter.</p>
+<p>(LXXXVII.) This Relation of Pot and Potter to Man and his Maker figures far and wide in the Literature of the World, from the time of the Hebrew Prophets to the present; when it may finally take the name of &quot;Pot theism,&quot; by which Mr. Carlyle ridiculed Sterling&#x27;s &quot;Pantheism.&quot;  My Sheikh, whose knowledge flows in from all quarters, writes to me--</p>
+<p>&quot;Apropos of old Omar&#x27;s Pots, did I ever tell you the sentence I found in &#x27;Bishop Pearson on the Creed&#x27;?  &#x27;Thus are we wholly at the disposal of His will, and our present and future condition framed and ordered by His free, but wise and just, decrees.  Hath not the potter power over the clay, of the same lump to make one vessel unto honour, and another unto dishonour?  (Rom. ix. 21.)  And can that earth-artificer have a freer power over his brother potsherd (both being made of the same metal), than God hath over him, who, by the strange fecundity of His omnipotent power, first made the clay out of nothing, and then him out of that?&#x27;&quot;</p>
+<p>And again--from a very different quarter--&quot;I had to refer the other day to Aristophanes, and came by chance on a curious Speaking-pot story in the Vespae, which I had quite forgotten.</p>
+<p>[Greek text deleted from etext.]</p>
+<p>&quot;The Pot calls a bystander to be a witness to his bad treatment.  The woman says, &#x27;If, by Proserpine, instead of all this &#x27;testifying&#x27; (comp. Cuddie and his mother in &#x27;Old Mortality!&#x27;) you would buy yourself a rivet, it would show more sense in you!&#x27;  The Scholiast explains echinus as [Greek phrase deleted from etext].&quot;</p>
+<p>One more illustration for the oddity&#x27;s sake from the &quot;Autobiography of a Cornish Rector,&quot; by the late James Hamley Tregenna.  1871.</p>
+<p>&quot;There was one odd Fellow in our Company--he was so like a Figure in the &#x27;Pilgrim&#x27;s Progress&#x27; that Richard always called him the &#x27;ALLEGORY,&#x27; with a long white beard--a rare Appendage in those days--and a Face the colour of which seemed to have been baked in, like the Faces one used to see on Earthenware Jugs.  In our Country- dialect Earthenware is called &#x27;Clome&#x27;; so the Boys of the Village used to shout out after him--&#x27;Go back to the Potter, Old Clomeface, and get baked over again.&#x27;  For the &#x27;Allegory,&#x27; though shrewd enough in most things, had the reputation of being &#x27;saift-baked,&#x27; i.e., of weak intellect.&quot;</p>
+<p>(XC.) At the Close of the Fasting Month, Ramazan (which makes the Mussulman unhealthy and unamiable), the first Glimpse of the New Moon (who rules their division of the Year) is looked for with the utmost Anxiety, and hailed with Acclamation.  Then it is that the Porter&#x27;s Knot maybe heard--toward the Cellar.  Omar has elsewhere a pretty Quatrain about the same Moon--</p>
+<p>&quot;Be of Good Cheer--the sullen Month will die, And a young Moon requite us by and by: Look how the Old one meagre, bent, and wan With Age and Fast, is fainting from the Sky!&quot;</p>
+<p class="colophon">Public domain text. EbookClassics digital edition.</p>
+</body></html>

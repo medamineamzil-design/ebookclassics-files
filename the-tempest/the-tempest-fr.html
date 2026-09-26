@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La Tempête — William Shakespeare</title><style>
+:root{--paper:#fbf8f1;--ink:#1f1b16;--muted:#6f6352;--accent:#9a6b2f;--rule:#e4dccb}
+@media (prefers-color-scheme:dark){:root{--paper:#16140f;--ink:#ece6d8;--muted:#a79c88;--accent:#d8a95e;--rule:#2e2a22}}
+html{background:var(--paper)}
+body{font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Libertinus Serif",Georgia,serif;color:var(--ink);
+     background:var(--paper);line-height:1.65;font-size:1.12rem;max-width:36em;margin:0 auto;padding:2.5em 1.25em 5em}
+.titlepage{text-align:center;min-height:70vh;display:flex;flex-direction:column;justify-content:center;gap:.6em;
+           border-bottom:1px solid var(--rule);margin-bottom:2.5em;padding-bottom:2.5em}
+.titlepage img{max-width:260px;width:60%;margin:0 auto 1.5em;border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+h1{font-size:2.4em;line-height:1.15;font-weight:600;margin:0;letter-spacing:-.01em}
+.author{font-style:italic;font-size:1.25em;color:var(--accent);margin:0}
+.translator{font-size:.95em;color:var(--muted);margin:0}
+nav.toc{margin:0 0 3em}
+nav.toc h2{font-size:.85em;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:left;margin:0 0 .8em}
+nav.toc ol{list-style:none;padding:0;margin:0;columns:1}
+nav.toc li{margin:.25em 0}
+nav.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent}
+nav.toc a:hover{border-color:var(--accent)}
+h2.chapter{font-size:1.45em;font-weight:600;text-align:center;margin:3.5em 0 1.6em;line-height:1.3}
+h2.chapter::before{content:"";display:block;width:3em;height:2px;background:var(--accent);margin:0 auto 1.1em}
+p{margin:0;text-indent:1.5em;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+h2.chapter + p, .titlepage + p{text-indent:0}
+h2.chapter + p::first-letter{font-size:3.1em;float:left;line-height:.85;padding:.08em .08em 0 0;color:var(--accent);font-weight:600}
+.colophon{margin-top:5em;padding-top:1.5em;border-top:1px solid var(--rule);text-align:center;color:var(--muted);font-size:.85em;text-indent:0}
+h3.sub{font-size:1em;font-weight:600;font-variant:small-caps;letter-spacing:.04em;text-align:center;margin:2.2em 0 1em}
+h3.sub + p{text-indent:0}
+@media print{h2.chapter{break-before:page}}
+</style></head><body>
+<header class="titlepage">
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjI0MDAiIHZpZXdCb3g9IjAgMCAxNjAwIDI0MDAiPgo8cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSIyNDAwIiBmaWxsPSIjMTYzMDJiIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjMwMCIgZmlsbD0iI2U5YzQ2YSIgb3BhY2l0eT0iLjkyIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTYzMDJiIiBzdHJva2Utd2lkdGg9IjEyIiBvcGFjaXR5PSIuNSIvPgo8Y2lyY2xlIGN4PSIxMTIwIiBjeT0iNTYwIiByPSIxMjAiIGZpbGw9IiMxNjMwMmIiIG9wYWNpdHk9Ii4xOCIvPgo8cmVjdCB4PSIxNjAiIHk9IjkzMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIxMCIgZmlsbD0iI2U5YzQ2YSIvPgo8dGV4dCB4PSIxNjAiIHk9IjExODAiIGZvbnQtc2l6ZT0iMTUwIiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmNGVjZDgiPkxhIFRlbXDDqnRlPC90ZXh0Pgo8dGV4dCB4PSIxNjAiIHk9IjE0MTUiIGZvbnQtc2l6ZT0iNjgiIGZvbnQtc3R5bGU9Iml0YWxpYyIgZm9udC1mYW1pbHk9IkxpYmVydGludXMgU2VyaWYsIEdlb3JnaWEsIHNlcmlmIiBmaWxsPSIjZTljNDZhIj5XaWxsaWFtIFNoYWtlc3BlYXJlPC90ZXh0Pgo8dGV4dCB4PSIxNjAiIHk9IjIyMzAiIGZvbnQtc2l6ZT0iNDQiIGxldHRlci1zcGFjaW5nPSIxNCIgZm9udC1mYW1pbHk9IkxpYmVydGludXMgU2VyaWYsIEdlb3JnaWEsIHNlcmlmIiBmaWxsPSIjZjRlY2Q4IiBvcGFjaXR5PSIuNzUiPkVCT09LQ0xBU1NJQ1M8L3RleHQ+Cjwvc3ZnPg==" alt="">
+<h1>La Tempête</h1>
+<p class="author">William Shakespeare</p>
+<p class="translator">Traduction de Guizot, François</p>
+</header>
+<nav class="toc"><h2>Table des matières</h2><ol>
+<li><a href="#c1">Volume 1 Vie de Shakspeare Hamlet.--La Tempête.--Coriolan.</a></li>
+<li><a href="#c2">Acte premier — Scène I</a></li>
+<li><a href="#c3">Scène I</a></li>
+<li><a href="#c4">Scène II</a></li>
+<li><a href="#c5">Scène II</a></li>
+<li><a href="#c6">Scène III</a></li>
+<li><a href="#c7">Scène I</a></li>
+<li><a href="#c8">Scène I</a></li>
+<li><a href="#c9">Épilogue — Prononcé par Prospero.</a></li>
+</ol></nav>
+<p>====================================================================== Ce document est tiré de:</p>
+<p>OEUVRES COMPLÈTES DE SHAKSPEARE</p>
+<p>TRADUCTION DE M. GUIZOT</p>
+<p>NOUVELLE ÉDITION ENTIÈREMENT REVUE AVEC UNE ÉTUDE SUR SHAKSPEARE DES NOTICES SUR CHAQUE PIÈCE ET DES NOTES</p>
+<h2 class="chapter" id="c1">Volume 1 Vie de Shakspeare Hamlet.--La Tempête.--Coriolan.</h2>
+<p>PARIS A LA LIBRAIRIE ACADÉMIQUE DIDIER ET Ce, LIBRAIRES-ÉDITEURS 35, QUAI DES AUGUSTINS 1864</p>
+<p>======================================================================</p>
+<h3 class="sub">La tempête — Tragédie</h3>
+<h3 class="sub">Notice sur la tempête</h3>
+<p>«Je ne saurais jurer que cela soit ou ne soit pas réel,» dit, à la fin de la Tempête, le vieux Gonzalo tout étourdi des prestiges qui l&#x27;ont environné depuis son arrivée dans l&#x27;île. Il semble que, par la bouche de l&#x27;honnête homme de la pièce, Shakspeare ait voulu exprimer l&#x27;effet général de ce charmant et singulier ouvrage. Brillant, léger, diaphane comme les apparitions dont il est rempli, à peine se laisse-t-il saisir à la réflexion; à peine, à travers ces traits mobiles et transparents, se peut-on tenir pour certain d&#x27;apercevoir un sujet, une contexture de pièce, des aventures, des sentiments, des personnages réels. Cependant tout y est, tout s&#x27;y révèle; et, dans une succession rapide, chaque objet à son tour émeut l&#x27;imagination, occupe l&#x27;attention et disparaît, laissant pour unique trace la confuse émotion du plaisir et une impression de vérité à laquelle on n&#x27;ose refuser ni accorder sa croyance.</p>
+<p>«C&#x27;est ici surtout, dit Warburton, que la sublime et merveilleuse imagination de Shakspeare s&#x27;élève au-dessus de la nature sans abandonner la raison, ou plutôt entraîne avec elle la nature par delà ses limites convenues.» Tout est à la fois, dans ce tableau, fantastique et vrai. Comme s&#x27;il était le créateur de l&#x27;ouvrage, comme s&#x27;il était le véritable enchanteur entouré des illusions de son art, Prospero, en s&#x27;y montrant à nous, semble le seul corps opaque et solide au milieu d&#x27;un peuple de légers fantômes revêtus des formes de la vie, mais dépourvus des apparences de la durée. Quelques minutes s&#x27;écouleront à peine que l&#x27;aimable Ariel, plus léger encore que lorsqu&#x27;il arrive avec la pensée, va échapper au contact même de la baguette magique, et, libre des formes qu&#x27;on lui prescrit, libre de toute forme sensible, va se dissoudre dans le vague de l&#x27;air, où s&#x27;évanouira pour nous son existence individuelle. N&#x27;est-ce pas un prestige de la magie que cette demi-intelligence qui paraît luire dans le grossier Caliban? et ne semble-t-il pas qu&#x27;en mettant le pied hors de l&#x27;île désenchantée où il va être laissé à lui-même, nous allons le voir retomber dans son état naturel de masse inerte, s&#x27;assimilant par degrés à la terre dont il est à peine distinct? Que deviendront, loin de notre vue, cet Antonio, ce Sébastien, si prompts à concevoir le dessein du crime, cet Alonzo, si facilement et légèrement accessible à tous les sentiments? Que deviendront ces jeunes amants, sitôt et si complétement épris, et qui, pour nous, semblent n&#x27;avoir eu d&#x27;autre existence que d&#x27;aimer, d&#x27;autre destination que de faire passer devant nos yeux les ravissantes images de l&#x27;amour et de l&#x27;innocence? Chacun de ces personnages ne nous révèle que la portion de son caractère qui convient à sa situation présente; aucun d&#x27;eux ne nous dévoile en lui-même ces abîmes de la nature, ces profondes sources de la pensée où descend si souvent et si avant Shakspeare; mais ils en déploient sous nos yeux tous les effets extérieurs: nous ne savons d&#x27;où ils viennent, mais nous reconnaissons parfaitement ce qu&#x27;ils semblent être; véritables visions dont nous ne sentons ni la chair ni les os, mais dont les formes nous sont distinctes et familières.</p>
+<p>Aussi, par la souplesse et la légèreté de leur nature, ces créatures singulières se prêtent-elles à une rapidité d&#x27;action, à une variété de mouvements dont peut-être aucune autre pièce de Shakspeare ne fournit d&#x27;exemple; il n&#x27;en est pas de plus amusante, de plus animée, où une gaieté vive et même bouffonne se marie plus naturellement à des intérêts sérieux, à des sentiments tristes et à de touchantes affections: c&#x27;est une féerie dans toute la force du terme, dans toute la vivacité des impressions qu&#x27;on en peut recevoir.</p>
+<p>Le style de la Tempête participe de cette espèce de magie. Figuré, vaporeux, portant à l&#x27;esprit une foule d&#x27;images et d&#x27;impressions vagues et fugitives comme ces formes incertaines que dessinent les nuages, il émeut l&#x27;imagination sans la fixer, et la tient dans cet état d&#x27;excitation indécise qui la rend accessible à tous les prestiges dont voudra l&#x27;amuser l&#x27;enchanteur. Il est de tradition en Angleterre que le célèbre lord Falkland[1], M. Selden et lord C.J. Vaughan, regardaient le style du rôle de Caliban, dans la Tempête, comme tout à fait particulier à ce personnage, et comme une création de Shakspeare. Johnson est d&#x27;un avis opposé; mais, en admettant que la tradition soit fondée, l&#x27;autorité de Johnson ne suffirait pas pour infirmer celle de lord Falkland, esprit éminemment élégant et remarquable, à ce qu&#x27;il paraît, par une finesse de tact qui, du moins dans la critique, a souvent manqué au docteur. D&#x27;ailleurs lord Falkland, presque contemporain de Shakspeare puisqu&#x27;il était né plusieurs années avant sa mort, aurait droit d&#x27;en être cru de préférence sur des nuances de langage qui, cent cinquante ans plus tard, devaient se perdre pour Johnson sous une couleur générale de vétusté. Si donc l&#x27;on avait quelque titre pour décider entre eux, on serait plutôt tenté d&#x27;ajouter foi à l&#x27;opinion de lord Falkland, et même d&#x27;appliquer à l&#x27;ouvrage entier ce qu&#x27;il a dit du seul rôle de Caliban. Du moins peut-on remarquer que le style de la Tempête paraît, plus qu&#x27;aucun autre ouvrage de Shakspeare, s&#x27;éloigner de ce type général d&#x27;expression de la pensée qui se retrouve et se conserve plus ou moins partout, à travers la différence des idiomes. Il faut probablement attribuer en partie ce fait à la singularité de la situation et à la nécessité de mettre en harmonie tant de conditions, de sentiments, d&#x27;intérêts divers, enveloppés pour quelques heures dans un sort commun et dans une même atmosphère surnaturelle. Dans aucune de ses pièces, d&#x27;ailleurs, Shakspeare ne s&#x27;est montré aussi sobre de jeux de mots.</p>
+<p>[Note 1: L&#x27;homme le plus vertueux, le plus aimable et le plus instruit de l&#x27;Angleterre sous Charles Ier, de qui lord Clarendon a dit: «Qu&#x27;il faudrait haïr la révolution, ne fût-ce que pour avoir causé la mort d&#x27;un tel homme.» Après avoir énergiquement défendu dans le parlement, contre Charles Ier, les libertés de son pays, il se rallia à la cause de ce prince lorsqu&#x27;elle devint celle de la justice; et ministre de Charles Ier, il se fit tuer à la bataille de Newbury, de désespoir des malheurs qu&#x27;il prévoyait: il avait alors trente-trois ans.]</p>
+<p>Il serait assez difficile de déterminer précisément à quel ordre de merveilleux appartient celui qu&#x27;il a employé dans la Tempête. Ariel est un véritable sylphe; mais les esprits que lui soumet Prospero, fées, lutins, farfadets appartiennent aux superstitions populaires du Nord. Caliban tient à la fois du gnome et du démon; son existence de brute n&#x27;est animée que par une malice infernale; et le O ho! o ho! par lequel il répond à Prospero lorsque celui-ci lui reproche d&#x27;avoir voulu déshonorer sa fille, était l&#x27;exclamation, probablement l&#x27;espèce de rire attribué en Angleterre au diable dans les anciens mystères où il jouait un rôle. Selebos, qu&#x27;invoque le monstre comme le dieu et peut-être le mari de sa mère, passait pour être le diable ou le dieu des Patagons qui le représentaient, disait-on, avec des cornes à la tête. On ne saurait trop se figurer de quelle manière doit être fait ce Caliban qu&#x27;on prend si souvent pour un poisson; il paraît qu&#x27;on le représente avec les bras et les jambes couverts d&#x27;écailles; il me semble qu&#x27;une tête de poisson, ou quelque chose de pareil, serait assez nécessaire pour donner de la vraisemblance aux méprises dont il est l&#x27;objet. Mais Shakspeare peut fort bien n&#x27;y avoir pas regardé de si près, et s&#x27;être peu embarrassé de se rendre à lui-même un compte exact de la figure qui convenait à son monstre. Il s&#x27;est joué avec son sujet, et l&#x27;a laissé couler de sa brillante imagination revêtu des teintes poétiques qu&#x27;il y recevait en passant. La légèreté de son travail se fait assez connaître par les différentes inadvertances qui lui sont échappées; comme par exemple lorsqu&#x27;il fait dire à Ferdinand que le duc de Milan et son brave fils ont péri dans la tempête, quoiqu&#x27;il ne soit pas question de ce fils dans tout le reste de la pièce, et que rien ne puisse faire supposer qu&#x27;il existe dans l&#x27;île, bien qu&#x27;Ariel qui assure d&#x27;ailleurs à Prospero que personne n&#x27;a péri, n&#x27;ait renfermé sous les écoutilles que les gens de l&#x27;équipage.</p>
+<p>La Tempête est une pièce assez régulière quant aux unités, puisque l&#x27;orage qui submerge le vaisseau dans la première scène se passe en vue de l&#x27;île, et que toute l&#x27;action n&#x27;embrasse pas un intervalle de plus de trois heures. Quelques commentateurs ont pensé que Shakspeare pouvait avoir eu pour objet de répondre, par cet échantillon de ce qu&#x27;il pouvait faire, aux continuelles critiques de Ben Johnson sur l&#x27;irrégularité de ses ouvrages. Le docteur Johnson pense autrement, et regarde cette circonstance comme un effet du hasard et le résultat naturel du sujet; mais ce qui pourrait donner lieu de croire que du moins Shakspeare a voulu se prévaloir de cet avantage, c&#x27;est le soin avec lequel les différents personnages, jusqu&#x27;au bosseman qui a dormi pendant toute la durée de l&#x27;action, marquent le temps qui s&#x27;est écoulé depuis le commencement. Il y a plus; lorsqu&#x27;Ariel avertit Prospero qu&#x27;ils approchent de la sixième heure, celle où son maître lui a promis que finiraient leurs travaux: «Je l&#x27;ai annoncé, dit Prospero, au moment où j&#x27;ai soulevé la tempête.» Ce mot paraîtrait même indiquer une intention que le poëte a voulu faire sentir.</p>
+<p>On ignore où Shakspeare a puisé le sujet de la Tempête; il paraît cependant assez certain qu&#x27;il l&#x27;a emprunté à quelque nouvelle italienne que jusqu&#x27;à présent on n&#x27;a pu parvenir à retrouver.</p>
+<p>La chronologie de M. Malone place en 1612 la composition de la Tempête, ce qui s&#x27;accorde difficilement cependant avec une autre conjecture assez vraisemblable. En lisant le Masque, représenté devant Ferdinand et Miranda, il est impossible de n&#x27;être pas frappé de l&#x27;idée que la Tempête a été faite d&#x27;abord pour être représentée à quelque fête de mariage; et la légèreté du sujet, la brillante incurie qui se fait remarquer dans la composition, confirment tout à fait cette conjecture. M. Holt, l&#x27;un des commentateurs de Shakspeare, a pensé que le mariage sur lequel le poëte verse tant de bénédictions, par la bouche de Junon et de Cérès, pourrait bien être celui du comte d&#x27;Essex, qui épousa en 1611 lady Frances Howard, ou plutôt termina en cette année son mariage, contracté dès l&#x27;année 1606, mais dont les voyages du comte, et probablement la jeunesse des contractants, avaient jusqu&#x27;alors retardé la consommation. Cette dernière circonstance paraît même assez clairement indiquée dans la scène où l&#x27;on insiste principalement sur la continence qu&#x27;ont promis de garder les jeunes époux jusqu&#x27;au parfait accomplissement de toutes les cérémonies nécessaires. Ne serait-il pas possible de supposer que, composée en 1611 pour le mariage du comte d&#x27;Essex, cette pièce ne fut représentée à Londres que l&#x27;année suivante?</p>
+<h3 class="sub">La tempête — Tragédie</h3>
+<h3 class="sub">Personnages</h3>
+<p>ALONZO, roi de Naples. SÉBASTIEN, frère d&#x27;Alonzo. PROSPERO, duc légitime de Milan. ANTONIO, son frère, usurpateur du duché de Milan. FERDINAND, fils du roi de Naples. GONZALO, vieux et fidèle conseiller du roi de Naples. ADRIAN, FRANCISCO, seigneurs napolitains. CALIBAN, sauvage abject et difforme. TRINCULO, bouffon. STEPHANO, sommelier ivre. LE MAÎTRE du vaisseau, LE BOSSEMAN et des MATELOTS. MIRANDA, fille de Prospero. ARIEL, génie aérien. IRIS, CÉRÈS, JUNON, NYMPHES, MOISSONNEURS, génies employés dans le ballet. AUTRES génies soumis à Prospero.</p>
+<p>La scène représente d&#x27;abord la mer et un vaisseau, puis une île inhabitée.</p>
+<h2 class="chapter" id="c2">Acte premier — Scène I</h2>
+<p>Sur un vaisseau en mer. Une tempête mêlée de tonnerre et d&#x27;éclairs.</p>
+<p>(Entrent le maître et le bosseman.)</p>
+<p>LE MAÎTRE.--Bosseman?</p>
+<p>LE BOSSEMAN.--Me voici, maître. Où en sommes-nous?</p>
+<p>LE MAÎTRE.--Bon, parlez aux matelots.--Manoeuvrez rondement, ou nous courons à terre. De l&#x27;entrain! de l&#x27;entrain!</p>
+<p>LE BOSSEMAN.--Allons, mes enfants! courage, courage, mes enfants! vivement, vivement, vivement! Ferlez le hunier.--Attention au sifflet du maître.--Souffle, tempête, jusqu&#x27;à en crever si tu peux.</p>
+<p>(Entrent Alonzo, Sébastien, Antonio, Ferdinand, Gonzalo et plusieurs autres.)</p>
+<p>ALONZO.--Cher bosseman, je vous en prie, ne négligez rien. Où est le maître? Montrez-vous des hommes.</p>
+<p>LE BOSSEMAN.--Restez en bas, je vous prie.</p>
+<p>ANTONIO.--Bosseman, où est le maître?</p>
+<p>LE BOSSEMAN.--Ne l&#x27;entendez-vous pas? Vous troublez la manoeuvre. Restez dans vos cabines, vous aidez la tempête.</p>
+<p>GONZALO.--Voyons, mon cher, un peu de patience.</p>
+<p>LE BOSSEMAN.--Quand la mer en aura. Hors d&#x27;ici!--Les vagues se soucient bien de la qualité de roi. En bas! Silence! laissez-nous tranquilles.</p>
+<p>GONZALO.--Fort bien! cependant n&#x27;oublie pas qui tu as à bord.</p>
+<p>LE BOSSEMAN.--Personne qui me soit plus cher que moi-même. Vous êtes un conseiller: si vous pouvez imposer silence à ces éléments, et rétablir le calme à l&#x27;instant, nous ne remuerons plus un seul cordage; usez de votre autorité. Si vous ne le pouvez, rendez grâces d&#x27;avoir vécu si longtemps, et allez dans votre cabine vous préparer aux mauvaises chances du moment, s&#x27;il faut en passer par là.--Courage, mes enfants!--Hors de mon chemin, vous dis-je.</p>
+<p>GONZALO.--Ce drôle me rassure singulièrement. Il n&#x27;a rien d&#x27;un homme destiné à se noyer; tout son air est celui d&#x27;un gibier de potence. Bon Destin, tiens ferme pour la potence, et que la corde qui lui est réservée nous serve de câble, car le nôtre ne nous est pas bon à grand&#x27; chose. S&#x27;il n&#x27;est pas né pour être pendu, notre sort est pitoyable.</p>
+<p>(Ils sortent.)</p>
+<p>(Rentre le bosseman.)</p>
+<p>LE BOSSEMAN.--Amenez le mât de hune. Allons, plus bas, plus bas. Mettez à la cape sous la grande voile risée. (Un cri se fait entendre dans le corps du vaisseau.) Maudits soient leurs hurlements! Leur voix domine la tempête et la manoeuvre. (Entrent Sébastien, Antonio et Gonzalo.)--Encore! que faites-vous ici? Faut-il tout laisser là et se noyer? Avez-vous envie de couler bas?</p>
+<p>SÉBASTIEN.--La peste soit de tes poumons, braillard, blasphémateur, mauvais chien!</p>
+<p>LE BOSSEMAN.--Manoeuvrez donc vous-même.</p>
+<p>ANTONIO.--Puisses-tu être pendu, maudit roquet! Puisses-tu être pendu, vilain drôle, insolent criard! Nous avons moins peur d&#x27;être noyés que toi.</p>
+<p>GONZALO.--Je garantis qu&#x27;il ne sera pas noyé, le vaisseau fût-il mince comme une coquille de noix, et ouvert comme la porte d&#x27;une dévergondée[2].</p>
+<p>[Note 2: As leaky as an unstaunched wench.</p>
+<p>Le sens de ce passage, tel qu&#x27;il me paraît probable, est impossible à rendre en français. J&#x27;ai cherché seulement à en approcher autant qu&#x27;il se pouvait sans trop de grossièreté.]</p>
+<p>LE BOSSEMAN.--Serrez le vent! serrez le vent! Prenons deux basses voiles et élevons-nous en mer. Au large!</p>
+<p>(Entrent des matelots mouillés.)</p>
+<p>LES MATELOTS.--Tout est perdu.--En prières! en prières! Tout est perdu.</p>
+<p>(Ils sortent.)</p>
+<p>LE BOSSEMAN.--Quoi! faut-il que nos bouches soient glacées par la mort?</p>
+<p>GONZALO.--Le roi et le prince en prières! Imitons-les, car leur sort est le nôtre.</p>
+<p>SÉBASTIEN.--Ma patience est à bout.</p>
+<p>ANTONIO.--Nous périssons par la trahison de ces ivrognes. Ce bandit au gosier énorme, je voudrais le voir noyé et roulé par dix marées.</p>
+<p>GONZALO.--Il n&#x27;en sera pas moins pendu, quoique chaque goutte d&#x27;eau jure le contraire et bâille de toute sa largeur pour l&#x27;avaler.</p>
+<p>(Bruit confus au dedans du navire.)</p>
+<p>DES VOIX.--Miséricorde! nous sombrons, nous sombrons... Adieu, ma femme et mes enfants. Mon frère, adieu. Nous sombrons, nous sombrons, nous sombrons.</p>
+<p>ANTONIO.--Allons tous périr avec le roi.</p>
+<p>(Il sort.)</p>
+<p>SÉBASTIEN.--Allons prendre congé de lui.</p>
+<p>GONZALO.--Que je donnerais de bon coeur en ce moment mille lieues de mer pour un acre de terre aride, ajoncs ou bruyère, n&#x27;importe.--Les décrets d&#x27;en haut soient accomplis! Mais, au vrai, j&#x27;aurais mieux aimé mourir à sec.</p>
+<p>(La partie de l&#x27;île qui est devant la grotte de Prospero.)</p>
+<p>PROSPERO ET MIRANDA entrent.</p>
+<p>MIRANDA.--Si c&#x27;est vous, mon bien-aimé père, qui par votre art faites mugir ainsi les eaux en tumulte, apaisez-les. Il semble que le ciel serait prêt à verser de la poix enflammée, si la mer, s&#x27;élançant à la face du firmament, n&#x27;allait en éteindre les feux. Oh! j&#x27;ai souffert avec ceux que je voyais souffrir! Un brave vaisseau, qui sans doute renfermait de nobles créatures, brisé tout en pièces! Oh! leur cri a frappé mon coeur. Pauvres gens! ils ont péri. Si j&#x27;avais été quelque puissant dieu, j&#x27;aurais voulu précipiter la mer dans les gouffres de la terre, avant qu&#x27;elle eût ainsi englouti ce beau vaisseau et tous ceux qui le montaient.</p>
+<p>PROSPERO.--Recueillez vos sens, calmez votre effroi; dites à votre coeur compatissant qu&#x27;il n&#x27;est arrivé aucun mal.</p>
+<p>MIRANDA.--O jour de malheur!</p>
+<p>PROSPERO.--Il n&#x27;y a point eu de mal. Je n&#x27;ai rien fait que pour toi (toi que je chéris, toi ma fille) qui ne sais pas encore qui tu es, et ignores d&#x27;où je suis issu, et si je suis quelque chose de plus que Prospero, le maître de la plus pauvre caverne, ton père et rien de plus.</p>
+<p>MIRANDA.--Jamais l&#x27;envie d&#x27;en savoir davantage n&#x27;entra dans mes pensées.</p>
+<p>PROSPERO.--Il est temps que je t&#x27;apprenne quelque chose de plus. Viens m&#x27;aider; ôte-moi mon manteau magique.--Bon. (Il quitte son manteau.) Couche là, mon art.--Toi, essuie tes yeux, console-toi. Ce naufrage, dont l&#x27;affreux spectacle a remué en toi toutes les vertus de la compassion, a été, par la prévoyance de mon art, disposé avec tant de précaution qu&#x27;il n&#x27;y a pas une âme de perdue, que pas un seul cheveu n&#x27;est tombé de la tête d&#x27;aucune créature sur ce vaisseau dont tu as entendu le cri, et que tu as vu sombrer. Assieds-toi, car il faut maintenant que tu en saches davantage.</p>
+<p>MIRANDA.--Vous avez souvent commencé à m&#x27;apprendre qui je suis; mais vous vous êtes toujours arrêté me laissant à des conjectures sans terme, et finissant par ces mots: Restons-en là, pas encore.</p>
+<p>PROSPERO.--L&#x27;heure est venue maintenant; voici l&#x27;instant précis où tu dois ouvrir ton oreille: obéis et sois attentive. Peux-tu te souvenir d&#x27;une époque de ta vie où nous n&#x27;étions pas encore venus dans cette caverne? Je ne crois pas que tu le puisses, car tu n&#x27;avais pas alors plus de trois ans.</p>
+<p>MIRANDA.--Certainement, seigneur, je peux m&#x27;en souvenir.</p>
+<p>PROSPERO.--De quoi te souviens-tu? d&#x27;une autre demeure ou de quelque autre personne? Dis-moi quelle est l&#x27;image qui est restée gravée dans ton souvenir?</p>
+<p>MIRANDA.--Tout cela est bien loin, et plutôt comme un songe que comme une certitude que ma mémoire puisse me garantir. N&#x27;avais-je pas jadis quatre ou cinq femmes qui prenaient soin de moi?</p>
+<p>PROSPERO.--Tu les avais, Miranda; tu en avais même davantage. Mais comment se peut-il que ce souvenir vive encore dans ta mémoire? que vois-tu encore dans cet obscur passé, dans cet abîme du temps? Si tu te rappelles quelque chose de ce qui a précédé ton arrivée dans cette île, tu dois aussi te rappeler comment tu y es venue.</p>
+<p>MIRANDA.--Cependant je ne m&#x27;en souviens pas.</p>
+<p>PROSPERO.--Il y a douze ans, ma fille, il y a douze ans, ton père était duc de Milan et un puissant prince.</p>
+<p>MIRANDA.--Seigneur, n&#x27;êtes-vous pas mon père?</p>
+<p>PROSPERO.--Ta mère était un modèle de vertu, et elle m&#x27;a dit que tu étais ma fille. Ton père était duc de Milan, et son unique héritière était une princesse, pas moins que je ne te le dis.</p>
+<p>MIRANDA.--O ciel! faut-il avoir joué de malheur pour être venus ici! Ou bien, est-ce pour nous un bonheur qu&#x27;il en soit arrivé ainsi?</p>
+<p>PROSPERO.--L&#x27;un et l&#x27;autre, mon enfant, l&#x27;un et l&#x27;autre. On m&#x27;a cruellement joué, comme tu le dis[3], et c&#x27;est ainsi que nous avons été chassés de là; mais c&#x27;est par un grand bonheur que nous sommes arrivés ici.</p>
+<p>[Note 3: MIR. What foul play had we, etc. PRO. By foul play, as thou say&#x27;st were we, etc.</p>
+<p>Foul play, dans la question de Miranda, signifie mauvaise chance; dans la réponse de Prospero, il signifie artifices coupables. Prospero joue ici sur le mot d&#x27;une manière que la différence des langues ne permet pas de rendre avec une entière exactitude, à moins de défigurer le naturel du dialogue, ce qui serait, ce me semble, une inexactitude encore plus grande.]</p>
+<p>MIRANDA.--Oh! le coeur me saigne en songeant aux peines dont je renouvelle en vous l&#x27;idée, et qui sont sorties de ma mémoire. Je vous en prie, continuez.</p>
+<p>PROSPERO.--Mon frère,--ton oncle, appelé Antonio,--et, je t&#x27;en prie, remarque bien ceci: qu&#x27;un frère ait pu être si perfide;--lui que dans le monde entier je chérissais le plus après toi, lui à qui j&#x27;avais confié le gouvernement de mon État! et alors, de toutes les principautés, mon État était le premier, Prospero était le premier parmi les ducs, le premier en dignité, et, dans les arts libéraux, sans égal. Ces arts faisant toute mon étude, je me déchargeai du gouvernement sur mon frère, et, transporté, ravi dans mes secrètes occupations, je devins étranger à mon État. Ton perfide oncle... M&#x27;écoutes-tu?</p>
+<p>MIRANDA.--Avec la plus grande attention, seigneur.</p>
+<p>PROSPERO.--Dès qu&#x27;il se fut perfectionné dans l&#x27;art d&#x27;accorder les grâces ou de les refuser, de connaître ceux qu&#x27;il faut avancer et ceux qu&#x27;il faut abattre pour s&#x27;être trop élevés, il créa de nouveau mes créatures;--je veux dire qu&#x27;il les changea ou qu&#x27;il les transforma. Alors, ayant la clef des emplois et des employés, il monta tous les coeurs au ton qui plaisait à son oreille; et bientôt il fut le lierre qui enveloppa mon arbre princier et épuisa le suc de ma verdure.--Tu ne me suis pas.--Je t&#x27;en prie, écoute-moi.</p>
+<p>MIRANDA.--Mon cher seigneur, j&#x27;écoute.</p>
+<p>PROSPERO.--Ainsi, négligeant tous les intérêts de ce monde, dévoué tout entier à la retraite et au soin d&#x27;enrichir mon esprit de biens qui, s&#x27;ils n&#x27;étaient pas si secrets, seraient mis au-dessus de tout ce qu&#x27;estime le vulgaire, j&#x27;éveillai dans mon perfide frère un mauvais naturel: ma confiance, comme un bon père, engendra en lui une perfidie égale non moins que contraire à ma confiance, et en vérité elle n&#x27;avait point de limites; c&#x27;était une confiance sans réserve. Ainsi, devenu maître non-seulement de ce que me rendaient mes revenus, mais encore de ce que mon pouvoir était en état d&#x27;exiger, comme un homme qui, à force de se répéter, a rendu sa mémoire si coupable envers la vérité qu&#x27;il finit par croire à son propre mensonge, il crut qu&#x27;il était en effet le duc, parce qu&#x27;il se voyait substitué à mon pouvoir, parce qu&#x27;il exécutait les actes extérieurs de la souveraineté, et qu&#x27;il jouissait de ses prérogatives. De là son ambition croissante... M&#x27;écoutes-tu?</p>
+<p>MIRANDA.--Seigneur, votre récit guérirait la surdité.</p>
+<p>PROSPERO.--Pour supprimer toute distance entre ce rôle qu&#x27;il joue et celui dont il joue le rôle, il faut qu&#x27;il devienne réellement duc de Milan. Pour moi, pauvre homme, ma bibliothèque était un assez grand duché. Il me juge désormais inhabile à toute royauté temporelle: il se ligue avec le roi de Naples, et (tant il était altéré du pouvoir!) il consent à lui payer un tribut annuel, à lui faire hommage, à soumettre sa couronne ducale à la couronne royale; et mon duché (hélas! pauvre Milan), qui jusque-là n&#x27;avait jamais courbé la tête, il le condamne au plus honteux abaissement.</p>
+<p>MIRANDA.--O ciel!</p>
+<p>PROSPERO.--Remarque bien les conditions du traité et l&#x27;événement qui suivit, et dis-moi s&#x27;il est possible que ce soit là un frère.</p>
+<p>MIRANDA.--Ce serait pour moi un péché de former sur ma grand&#x27;mère quelque pensée déshonorante: un sein vertueux a plus d&#x27;une fois produit de mauvais fils.</p>
+<p>PROSPERO.--Voici les conditions de leur pacte. Ce roi de Naples, mon ennemi invétéré, écoute la requête de mon frère, c&#x27;est-à-dire qu&#x27;en retour des offres que je t&#x27;ai dites d&#x27;un hommage et d&#x27;un tribut dont j&#x27;ignore la valeur, il devait m&#x27;exclure à l&#x27;instant, moi et les miens, de mon duché, et faire passer à mon frère mon beau Milan avec tous ses honneurs. En conséquence, ils levèrent une armée de traîtres, et, un soir, à l&#x27;heure de minuit marquée pour l&#x27;exécution de leur projet, Antonio ouvrit les portes de Milan. Au plus profond de l&#x27;obscurité, des hommes apostés me chassèrent de la ville, moi et toi qui pleurais.</p>
+<p>MIRANDA.--Hélas! quelle pitié! moi qui ne me souviens plus comment je pleurai alors, je suis prête à pleurer: je sens des larmes prêtes à couler de mes yeux.</p>
+<p>PROSPERO.--Écoute un moment encore, et je vais t&#x27;amener à l&#x27;affaire qui nous presse aujourd&#x27;hui, et sans laquelle toute cette narration serait la plus ridicule du monde.</p>
+<p>MIRANDA.--Mais d&#x27;où vient qu&#x27;alors ils ne nous tuèrent pas sur-le-champ?</p>
+<p>PROSPERO.--Bien demandé, jeune fille; mon récit amenait naturellement la question. Mon enfant, ils n&#x27;osèrent pas, tant était grande l&#x27;affection que me portait mon peuple; ils n&#x27;osèrent pas non plus marquer cette affaire d&#x27;un signe aussi sanglant; mais ils peignirent de belles couleurs leurs criminels desseins: en un mot, ils nous traînèrent rapidement à bord d&#x27;une barque, et nous menèrent à quelques lieues en mer: là, ils avaient préparé la carcasse d&#x27;un bateau pourri, sans agrès, sans cordages, sans mâts ni voiles; les rats mêmes, avertis par l&#x27;instinct, l&#x27;avaient quitté. Ce fut là qu&#x27;ils nous hissèrent, et nous envoyèrent adresser nos gémissements à la mer qui mugissait contre nous, et soupirer aux vents qui, nous rendant avec pitié nos soupirs, ne nous firent du mal qu&#x27;avec de tendres ménagements.</p>
+<p>MIRANDA.--Hélas! quel embarras je dus être alors pour vous!</p>
+<p>PROSPERO.--Oh! tu étais un chérubin qui me sauva. Quand je mêlais à la mer mes larmes amères, quand je gémissais sous mon fardeau, tu souris, remplie d&#x27;une force qui venait du ciel, et je sentis naître en moi assez de courage pour supporter tout ce qui pourrait arriver.</p>
+<p>MIRANDA.--Comment pûmes-nous aborder à un rivage?</p>
+<p>PROSPERO.--Par une providence toute divine. Nous avions quelque nourriture et un peu d&#x27;eau fraîche qu&#x27;un noble Napolitain, Gonzalo, chargé en chef de l&#x27;exécution de ce dessein, nous avait données par pitié; il nous donna de plus de riches vêtements, du linge, des étoffes, et autres meubles nécessaires qui depuis nous ont bien servi; et de même, sachant que j&#x27;aimais mes livres, sa bonté me pourvut d&#x27;un certain nombre de volumes tirés de ma bibliothèque, et qui me sont plus précieux que mon duché.</p>
+<p>MIRANDA.--Je voudrais bien voir quelque jour cet homme.</p>
+<p>PROSPERO.--Maintenant je me lève; demeure encore assise, et écoute comment finirent nos tribulations maritimes. Nous arrivâmes dans cette île où nous sommes ici; devenu ton instituteur, je t&#x27;ai fait faire plus de progrès que n&#x27;en peuvent faire d&#x27;autres princesses qui ont plus de temps à dépenser en loisirs inutiles, et des maîtres moins vigilants.</p>
+<p>MIRANDA.--Que le ciel vous en récompense! A présent, seigneur, dites-moi, je vous prie, car cela agite toujours mon esprit, quel a été votre motif pour soulever cette tempête?</p>
+<p>PROSPERO.--Apprends encore cela. Par un hasard des plus étranges, la fortune bienfaisante, aujourd&#x27;hui ma compagne chérie, m&#x27;amène mes ennemis sur ce rivage, et ma science de l&#x27;avenir me découvre qu&#x27;une étoile propice domine à mon zénith, et que si, au lieu de soigner son influence, je la néglige, mon sort deviendra toujours moins favorable. Cesse ici tes questions; tu es disposée à t&#x27;endormir; c&#x27;est un favorable assoupissement; cède à sa puissance; je sais que tu n&#x27;es pas maîtresse d&#x27;y résister. (Miranda s&#x27;endort.)--Viens, mon serviteur, viens, me voilà prêt. Approche, mon Ariel; viens.</p>
+<p>(Entre Ariel.)</p>
+<p>ARIEL.--Profond salut, mon noble maître; sage seigneur, salut! Je suis là pour attendre ton bon plaisir: soit qu&#x27;il faille voler, ou nager, ou plonger dans les flammes, ou voyager sur les nuages onduleux, soumets à tes ordres puissants Ariel et toutes ses facultés.</p>
+<p>PROSPERO.--Esprit, as-tu exécuté de point en point la tempête que je t&#x27;ai commandée?</p>
+<p>ARIEL.--Jusqu&#x27;au plus petit détail. J&#x27;ai abordé le vaisseau du roi, et tour à tour sur la proue, dans les flancs, sur le tillac, dans les cabines, partout j&#x27;ai allumé l&#x27;épouvante. Tantôt, je me divisais et je brûlais en plusieurs endroits à la fois, tantôt je flambais séparément sur le grand mât, le mât de beaupré, les vergues; puis je rapprochais et unissais toutes ces flammes: les éclairs de Jupiter, précurseurs des terribles éclats du tonnerre, n&#x27;étaient pas plus passagers, n&#x27;échappaient pas plus rapidement à la vue; le feu, les craquements du soufre mugissant, semblaient assiéger le tout-puissant Neptune, faire trembler ses vagues audacieuses, et secouer jusqu&#x27;à son trident redouté.</p>
+<p>PROSPERO.--Mon brave esprit, s&#x27;est-il trouvé quelqu&#x27;un d&#x27;assez ferme, d&#x27;assez constant pour que ce bouleversement n&#x27;atteignît pas sa raison?</p>
+<p>ARIEL.--Pas une âme qui n&#x27;ait senti la fièvre de la folie, qui n&#x27;ait donné quelque signe de désespoir. Tous, hors les matelots, se sont jetés dans les flots écumants; tous ont abandonné le navire que je faisais en ce moment flamber de toutes parts. Le fils du roi, Ferdinand, les cheveux dressés sur la tête, semblables alors non à des cheveux, mais à des roseaux, s&#x27;est lancé le premier en criant: «L&#x27;enfer est vide, tous ses démons sont ici!»</p>
+<p>PROSPERO.--Vraiment c&#x27;est bien, mon esprit. Mais n&#x27;était-on pas près du rivage?</p>
+<p>ARIEL.--Tout près, mon maître.</p>
+<p>PROSPERO.--Mais, Ariel, sont-ils sauvés?</p>
+<p>ARIEL.--Pas un cheveu n&#x27;a péri; pas une tache sur leurs vêtements, qui les soutenaient sur l&#x27;onde, et qui sont plus frais qu&#x27;auparavant. Ensuite, comme tu me l&#x27;as ordonné, je les ai dispersés en troupes par toute l&#x27;île. J&#x27;ai mis à terre le fils du roi séparé des autres; je l&#x27;ai laissé dans un coin sauvage de l&#x27;île, rafraîchissant l&#x27;air de ses soupirs, assis, les bras tristement croisés de cette manière.</p>
+<p>PROSPERO.--Et les matelots des vaisseaux du roi, dis, qu&#x27;en as-tu fait? Et le reste de la flotte?</p>
+<p>ARIEL.--Le vaisseau du roi est en sûreté dans cette baie profonde où tu m&#x27;appelas une fois à minuit pour t&#x27;aller recueillir de la rosée sur les Bermudes, toujours tourmentées par la tempête: c&#x27;est là qu&#x27;il est caché. Les matelots sont couchés épars sous les écoutilles: joignant la puissance d&#x27;un charme à la fatigue qu&#x27;ils avaient endurée, je les ai laissés tous endormis. Quant au reste des vaisseaux que j&#x27;avais dispersés, ils se sont ralliés tous; et maintenant ils voguent sur les flots de la Méditerranée, faisant voile tristement vers Naples, persuadés qu&#x27;ils ont vu s&#x27;abîmer le vaisseau du roi, et périr sa personne auguste.</p>
+<p>PROSPERO.--Ariel, tu as rempli ton devoir avec exactitude; mais tu as encore à travailler. A quel moment du jour sommes-nous?</p>
+<p>ARIEL.--Passé l&#x27;époque du milieu.</p>
+<p>PROSPERO.--De deux sables au moins. Il nous faut employer précieusement le temps qui nous reste entre ce moment et la sixième heure.</p>
+<p>ARIEL.--Encore du travail! Puisque tu me donnes tant de fatigue, permets-moi de te rappeler ce que tu m&#x27;as promis et n&#x27;as pas encore accompli.</p>
+<p>PROSPERO.--Qu&#x27;est-ce que c&#x27;est, mutin? que peux-tu me demander?</p>
+<p>ARIEL.--Ma liberté.</p>
+<p>PROSPERO.--Avant que le temps soit expiré? Ne m&#x27;en parle plus.</p>
+<p>ARIEL.--Je te prie, souviens-toi que je t&#x27;ai bien servi, que je ne t&#x27;ai jamais dit de mensonge, que je n&#x27;ai jamais fait de bévue, que je t&#x27;ai obéi sans humeur ni murmure. Tu m&#x27;avais promis de me rabattre une année de mon temps.</p>
+<p>PROSPERO.--Oublies-tu donc de quels tourments je t&#x27;ai délivré?</p>
+<p>ARIEL.--Non.</p>
+<p>PROSPERO.--Tu l&#x27;oublies, et tu comptes pour beaucoup de fouler la vase des abîmes salés, de courir sur le vent aigu du nord, de travailler pour moi dans les veines de la terre quand elle est durcie par la gelée.</p>
+<p>ARIEL.--Il n&#x27;en est point ainsi, seigneur.</p>
+<p>PROSPERO.--Tu mens, maligne créature. As-tu donc oublié l&#x27;affreuse sorcière Sycorax, que la vieillesse et l&#x27;envie avaient courbée en cerceau? l&#x27;as-tu oubliée?</p>
+<p>ARIEL.--Non, seigneur.</p>
+<p>PROSPERO.--Tu l&#x27;as oubliée. Où était-elle née? Parle, dis-le moi.</p>
+<p>ARIEL.--Dans Alger, seigneur.</p>
+<p>PROSPERO.--Oui vraiment? Je suis obligé de te rappeler une fois par mois ce que tu as été et ce que tu oublies. Sycorax, cette sorcière maudite, fut, tu le sais, bannie d&#x27;Alger pour un grand nombre de maléfices et pour des sortilèges que l&#x27;homme s&#x27;épouvanterait d&#x27;entendre. Mais pour une seule chose qu&#x27;elle avait faite, on ne voulut pas lui ôter la vie. Cela n&#x27;est-il pas vrai?</p>
+<p>ARIEL.--Oui, seigneur.</p>
+<p>PROSPERO.--Cette furie aux yeux bleus fut conduite ici grosse, et laissée par les matelots. Toi, mon esclave, tu la servais alors, ainsi que tu me l&#x27;as raconté toi-même: mais étant un esprit trop délicat pour exécuter ses volontés terrestres et abhorrées, comme tu te refusas à ses grandes conjurations, aidée de serviteurs plus puissants, et possédée d&#x27;une rage implacable, elle t&#x27;enferma dans un pin éclaté, dans la fente duquel tu demeuras cruellement emprisonné pendant douze ans. Dans cet intervalle, la sorcière mourut, te laissant dans cette prison, où tu poussais des gémissements aussi fréquents que les coups que frappe la roue du moulin. Excepté le fils qu&#x27;elle avait mis bas ici, animal bigarré, race de sorcière, cette île n&#x27;était alors honorée d&#x27;aucune figure humaine.</p>
+<p>ARIEL.--Oui, Caliban, son fils.</p>
+<p>PROSPERO.--C&#x27;est ce que je dis, imbécile; c&#x27;est lui, ce Caliban que je tiens maintenant à mon service. Tu sais mieux que personne dans quels tourments je te trouvai: tes gémissements faisaient hurler les loups, et pénétraient les entrailles des ours toujours furieux. C&#x27;était un supplice destiné aux damnés, et que Sycorax ne pouvait plus faire cesser. Ce fut mon art, lorsque j&#x27;arrivai dans ces lieux et que je t&#x27;entendis, qui força le pin de s&#x27;ouvrir et de te laisser échapper.</p>
+<p>ARIEL.--Je te remercie, mon maître.</p>
+<p>PROSPERO.--Si tu murmures encore, je fendrai un chêne, je te chevillerai dans ses noueuses entrailles, et t&#x27;y laisserai hurler douze hivers.</p>
+<p>ARIEL.--Pardon, maître; je me conformerai à tes volontés, et je ferai de bonne grâce mon service d&#x27;esprit.</p>
+<p>PROSPERO.--Tiens parole, et dans deux jours je t&#x27;affranchis.</p>
+<p>ARIEL.--Voilà qui est dit, mon noble maître. Que dois-je faire? quoi? Dis-le moi, que dois-je faire?</p>
+<p>PROSPERO.--Va, métamorphose-toi en nymphe de la mer; ne sois soumis qu&#x27;à ma vue et à la tienne, invisible pour tous les autres yeux. Va prendre cette forme et reviens; pars et sois prompt. (Ariel disparaît.)--Réveille-toi, ma chère enfant, réveille-toi; tu as bien dormi. Éveille-toi.</p>
+<p>MIRANDA.--C&#x27;est votre étrange histoire qui m&#x27;a plongée dans cet assoupissement.</p>
+<p>PROSPERO.--Secoue ces vapeurs, lève-toi, viens. Allons voir Caliban, mon esclave, qui jamais ne nous fit une réponse obligeante.</p>
+<p>MIRANDA.--C&#x27;est un misérable, seigneur; je n&#x27;aime pas à le regarder.</p>
+<p>PROSPERO.--Mais, tel qu&#x27;il est, nous ne pouvons nous en passer. C&#x27;est lui qui fait notre feu, qui nous porte du bois: il nous rend des services utiles.--Holà, ho! esclave! Caliban, masse de terre, entends-tu! parle.</p>
+<p>CALIBAN, en dedans.--Il y a assez de bois ici.</p>
+<p>PROSPERO.--Sors, te dis-je. Tu as autre chose à faire. Allons, viens, tortue; viendras-tu! (Entre Ariel sous la figure d&#x27;une nymphe des eaux.)--Jolie apparition, mon gracieux Ariel, écoute un mot à l&#x27;oreille. (Il lui parle bas.)</p>
+<p>ARIEL.--Mon maître, cela sera fait.</p>
+<p>(Il sort.)</p>
+<p>PROSPERO.--Toi, esclave venimeux, que le démon lui-même a engendré à ta mère maudite, viens ici.</p>
+<p>(Entre Caliban.)</p>
+<p>CALIBAN.--Tombe sur vous deux le serein le plus maudit, que ma mère ait jamais ramassé avec la plume d&#x27;un corbeau sur un marais pestilentiel! Que le vent du sud-ouest souffle sur vous et vous couvre d&#x27;ampoules!</p>
+<p>PROSPERO.--Ce souhait te vaudra cette nuit des crampes, des élancements dans les flancs qui te couperont la respiration; les lutins, pendant tout ce temps de nuit profonde où il leur est permis d&#x27;agir, s&#x27;exerceront sur toi. Tu seras pincé aussi serré que le sont les cellules de la ruche, et chaque pincement sera aussi piquant que l&#x27;abeille qui les a faites.</p>
+<p>CALIBAN.--Il faut que je mange mon dîner. Cette île que tu me voles m&#x27;appartient par ma mère Sycorax. Lorsque tu y vins, tu me caressas d&#x27;abord et fis grand cas de moi. Tu me donnais de l&#x27;eau où tu avais mis à infuser des baies, et tu m&#x27;appris à nommer la grande et la petite lumière qui brûlent le jour et la nuit. Je t&#x27;aimais alors: aussi je te montrai toutes les qualités de l&#x27;île, les sources fraîches, les puits salés, les lieux arides et les endroits fertiles. Que je sois maudit pour l&#x27;avoir fait! Que tous les maléfices de Sycorax, crapauds, hannetons, chauves-souris, fondent sur vous! Car je suis à moi seul tous vos sujets, moi qui étais mon propre roi; et vous me donnez pour chenil ce dur rocher, tandis que vous m&#x27;enlevez le reste de mon île.</p>
+<p>PROSPERO.--O toi le plus menteur des esclaves, toi qui n&#x27;es sensible qu&#x27;aux coups et point aux bienfaits, je t&#x27;ai traité avec les soins de l&#x27;humanité, fange que tu es, te logeant dans ma propre caverne jusqu&#x27;au jour où tu entrepris d&#x27;attenter à l&#x27;honneur de mon enfant.</p>
+<p>CALIBAN.--O ho! ô ho! je voudrais en être venu à bout. Tu m&#x27;en empêchas: sans cela j&#x27;aurais peuplé cette île de Calibans.</p>
+<p>PROSPERO.--Esclave abhorré, qui ne peux recevoir aucune empreinte de bonté, en même temps que tu es capable de tout mal, j&#x27;eus pitié de toi: je me donnai de la peine pour te faire parler; à toute heure je t&#x27;enseignais tantôt une chose, tantôt une autre. Sauvage, lorsque tu ne savais pas te rendre compte de ta propre pensée et ne t&#x27;exprimais que par des cris confus, comme la plus vile brute, je fournis à tes idées des mots qui les firent connaître. Mais, bien que capable d&#x27;apprendre, tu avais dans ta vile espèce des instincts qui éloignaient de toi toutes les bonnes natures. Tu fus donc avec justice confiné dans ce rocher, toi qui méritais pis qu&#x27;une prison.</p>
+<p>CALIBAN.--Vous m&#x27;avez appris un langage, et le profit que j&#x27;en retire c&#x27;est de savoir maudire. Que l&#x27;érésipèle vous ronge, pour m&#x27;avoir appris votre langage!</p>
+<p>PROSPERO.--Hors d&#x27;ici, race de sorcière; apporte-nous là-dedans du bois pour le feu; et crois-moi, sois diligent à remplir tes autres devoirs. Tu regimbes, mauvaise bête? Si tu négliges ou fais de mauvaise grâce ce que je t&#x27;ordonne, je te torturerai de crampes invétérées, je remplirai tous tes os de douleurs, je te ferai mugir de telle sorte que les animaux trembleront au bruit de ton hurlement.</p>
+<p>CALIBAN.--Non, je t&#x27;en prie. (A part.) Il faut que j&#x27;obéisse; son art est si fort qu&#x27;il pourrait tenir tête à Sétébos, le dieu de ma mère, et en faire son sujet.</p>
+<p>PROSPERO.--Allons, esclave, sors d&#x27;ici.</p>
+<p>(Caliban s&#x27;en va.)</p>
+<p>(Ariel rentre invisible, chantant et jouant d&#x27;un instrument; Ferdinand le suit.)</p>
+<p>ARIEL chante.</p>
+<p>Venez sur ces sables jaunes, Et prenez-vous par les mains; Quand vous vous serez salués et baisés (Les vagues turbulentes se taisent), Pressez-les çà et là de vos pieds légers; Et que de doux esprits répètent le refrain. Écoutez, écoutez.</p>
+<p>REFRAIN. (Le son se fait entendre de différents endroits.)</p>
+<p>Ouauk, ouauk.</p>
+<h3 class="sub">Ariel.</h3>
+<p>Les chiens de garde aboient.</p>
+<h3 class="sub">Le même refrain.</h3>
+<p>Ouauk, ouauk.</p>
+<h3 class="sub">Ariel.</h3>
+<p>Écoutez, écoutez; j&#x27;entends La voix claire du coq crêté Qui crie: Cocorico.</p>
+<p>FERDINAND.--Où cette musique peut-elle être? Dans l&#x27;air ou sur la terre? Je ne l&#x27;entends plus: sans doute elle suit les pas de quelque divinité de l&#x27;île. Assis sur un rocher où je pleurais encore le naufrage du roi mon père, cette musique a glissé vers moi sur les eaux; ses doux sons calmaient à la fois la fureur des flots et ma douleur: je l&#x27;ai suivie depuis ce lieu, ou plutôt elle m&#x27;a entraîné.--Mais elle est partie. Non, elle recommence.</p>
+<p>ARIEL chante.</p>
+<p>A cinq brasses sous les eaux ton père est gisant, Ses os sont changés en corail; Ses yeux sont devenus deux perles; Rien de lui ne s&#x27;est flétri. Mais tout a subi dans la mer un changement En quelque chose de riche et de rare. D&#x27;heure en heure les nymphes de la mer tintent son glas. Écoutez, je les entends: ding dong, glas.</p>
+<h3 class="sub">Refrain.</h3>
+<p>Ding dong.</p>
+<p>FERDINAND.--Ce couplet est en mémoire de mon père noyé. Ce n&#x27;est point là l&#x27;ouvrage des mortels, ni un son que puisse rendre la terre. Je l&#x27;entends maintenant au-dessus de ma tête.</p>
+<p>PROSPERO, à Miranda.--Relève les rideaux frangés de tes yeux; et, dis-moi, qu&#x27;aperçois-tu là-bas?</p>
+<p>MIRANDA.--Qu&#x27;est-ce que c&#x27;est? Un esprit? Bon Dieu, comme il regarde autour de lui! Croyez-moi, seigneur, il a une forme bien noble. Mais c&#x27;est un esprit.</p>
+<p>PROSPERO.--Non, jeune fille; il mange, il dort, il a des sens comme nous, les mêmes que nous. Ce beau jeune homme que tu vois s&#x27;est trouvé dans le naufrage, et s&#x27;il n&#x27;était un peu flétri par la douleur (ce poison de la beauté), tu pourrais le nommer une charmante créature. Il a perdu ses compagnons, et il erre dans l&#x27;île pour les trouver.</p>
+<p>MIRANDA.--Je pourrais bien le nommer un objet divin, car jamais je n&#x27;ai rien vu de si noble dans la nature.</p>
+<p>PROSPERO, à part. Les choses vont au gré de ma volonté. Esprit, charmant esprit, je te délivrerai dans deux jours pour ta récompense.</p>
+<p>FERDINAND.--Oh! sûrement voici la déesse que suivent ces chants!--Souffrez que ma prière obtienne de vous de savoir si vous habitez cette île et si vous consentirez à me donner quelque utile instruction sur la manière dont je dois m&#x27;y conduire. Ma première requête, quoique je la prononce la dernière, c&#x27;est que vous m&#x27;appreniez, ô vous merveille, si vous êtes ou non une fille de la terre[4].</p>
+<p>[Note 4: If you be made or no. (Si vous êtes ou non un être créé.)</p>
+<p>Miranda répond:</p>
+<p>Not wonder, sir; But certainly a maid. (Pas une merveille, Seigneur; mais certainement une fille.)</p>
+<p>Il y a ici équivoque entre made et maid, qui se prononcent de même. Mais ce n&#x27;est point un pur jeu de mots, c&#x27;est une véritable erreur de Miranda, et qui convient à la naïveté de son caractère: on a été obligé, pour en conserver l&#x27;effet, de s&#x27;écarter un peu du sens littéral de la question de Ferdinand.]</p>
+<p>MIRANDA.--Je ne suis point une merveille, seigneur. Mais pour fille, bien certainement je le suis.</p>
+<p>FERDINAND.--Ma langue! ô ciel! Je serais le premier de ceux qui parlent cette langue si je me trouvais là où elle se parle.</p>
+<p>PROSPERO.--Comment? le premier? Eh! que serais-tu si le roi de Naples t&#x27;entendait?</p>
+<p>FERDINAND.--Ce que je suis maintenant, un être isolé qui s&#x27;étonne de t&#x27;entendre parler du roi de Naples. Hélas! il m&#x27;entend et c&#x27;est parce qu&#x27;il m&#x27;entend que je pleure. C&#x27;est moi qui suis le roi de Naples, moi qui de mes yeux, dont le flux de larmes ne s&#x27;est point arrêté depuis cet instant, ai vu le roi mon père englouti dans les flots.</p>
+<p>MIRANDA.--Hélas! miséricorde!</p>
+<p>FERDINAND.--Oui, et avec lui tous ses seigneurs, et le duc de Milan et son brave fils tous deux ensemble.</p>
+<p>PROSPERO.--Le duc de Milan et sa plus noble fille pourraient te démentir s&#x27;il était à propos de le faire en ce moment.--(A part.) Dès la première vue ils ont échangé leurs regards. Gentil Ariel, ceci te vaudra ta liberté.--(Haut.) Un mot, mon seigneur: je crains que vous ne vous soyez un peu compromis. Un mot.</p>
+<p>MIRANDA.--Pourquoi mon père parle-t-il si rudement? C&#x27;est là le troisième homme que j&#x27;aie jamais vu; c&#x27;est le premier pour qui j&#x27;aie soupiré. Puisse la pitié disposer mon père à pencher du même côté que moi!</p>
+<p>FERDINAND.--Oh! si vous êtes une vierge, et que votre coeur soit encore libre, je vous ferai reine de Naples.</p>
+<p>PROSPERO.--Doucement, jeune homme: un mot encore. (A part.) Les voilà au pouvoir l&#x27;un de l&#x27;autre. Mais il faut que je rende difficile cette affaire si prompte, de peur que si les fatigues de la conquête sont trop légères, le prix n&#x27;en paraisse léger.--Un mot de plus. Je t&#x27;ordonne de me suivre: tu usurpes ici un nom qui ne t&#x27;appartient pas. Tu t&#x27;es introduit dans cette île comme un espion pour m&#x27;en dépouiller, moi qui en suis le maître.</p>
+<p>FERDINAND.--Non, comme il est vrai que je suis un homme.</p>
+<p>MIRANDA.--Rien de méchant ne peut habiter dans un semblable temple. Si le mauvais esprit a une si belle demeure, les gens de bien s&#x27;efforceront de demeurer avec lui.</p>
+<p>PROSPERO, à Ferdinand.--Suis-moi.--Vous, ne me parlez pas pour lui; c&#x27;est un traître.--Viens, j&#x27;attacherai d&#x27;une même chaîne tes pieds et ton cou: tu boiras l&#x27;eau de la mer, et tu auras pour ta nourriture les coquillages des eaux vives, les racines desséchées, et les cosses où a été renfermé le gland. Suis-moi.</p>
+<p>FERDINAND.--Non, jusqu&#x27;à ce que mon ennemi soit plus puissant que moi, je résisterai à un pareil traitement.</p>
+<p>(Il tire son épée.)</p>
+<p>MIRANDA.--O mon bien-aimé père, ne le tentez pas avec trop d&#x27;imprudence. Il est doux et non pas craintif.</p>
+<p>PROSPERO.--Eh! dites donc, mon pied voudrait me servir de gouverneur!--Lève donc ce fer, traître qui dégaînes et qui n&#x27;oses frapper, tant ta conscience est préoccupée de ton crime! Cesse de te tenir en garde, car je pourrais te désarmer avec cette baguette, et faire tomber ton épée.</p>
+<p>MIRANDA.--Mon père, je vous conjure.</p>
+<p>PROSPERO.--Loin de moi. Ne te suspens pas ainsi à mes vêtements.</p>
+<p>MIRANDA.--Seigneur, ayez pitié.... Je serai sa caution.</p>
+<p>PROSPERO.--Tais-toi, un mot de plus m&#x27;obligera à te réprimander, si ce n&#x27;est même à te haïr. Comment! prendre la défense d&#x27;un imposteur!--Paix.--Tu t&#x27;imagines qu&#x27;il n&#x27;y a pas au monde de figures pareilles à la sienne; tu n&#x27;as vu que Caliban et lui. Petite sotte, c&#x27;est un Caliban auprès de la plupart des hommes, ils sont des anges auprès de lui.</p>
+<p>MIRANDA.--Mes affections sont donc des plus humbles: je n&#x27;ai point l&#x27;ambition de voir un homme plus parfait que lui.</p>
+<p>PROSPERO, à Ferdinand.--Allons, obéis. Tes nerfs sont retombés dans leur enfance; ils ne possèdent aucune vigueur.</p>
+<p>FERDINAND.--En effet; mes forces sont toutes enchaînées comme dans un songe. La perte de mon père, cette faiblesse que je sens, le naufrage de tous mes amis, et les menaces de cet homme par qui je me vois subjugué, me seraient des peines légères, si, seulement une fois par jour, je pouvais au travers de ma prison voir cette jeune fille. Que la liberté fasse usage de toutes les autres parties de la terre; il y aura assez d&#x27;espace pour moi dans une telle prison.</p>
+<p>PROSPERO.--L&#x27;ouvrage marche.--Avance.--Tu as bien travaillé, mon joli Ariel. (A Ferdinand et à Miranda.) Suivez-moi. (A Ariel.) Écoute ce qu&#x27;il faut que tu me fasses encore.</p>
+<p>MIRANDA.--Prenez courage. Mon père, seigneur, est d&#x27;un meilleur naturel qu&#x27;il ne le paraît à ce langage: le traitement que vous venez d&#x27;en recevoir est quelque chose d&#x27;inaccoutumé.</p>
+<p>PROSPERO.--Tu seras libre comme le vent des montagnes, mais exécute de point en point mes ordres.</p>
+<p>ARIEL.--A la lettre.</p>
+<p>PROSPERO.--Allons, suivez-moi.--Ne me parle pas pour lui.</p>
+<p>(Ils sortent.)</p>
+<h3 class="sub">Fin du premier Acte — Deuxième acte</h3>
+<h2 class="chapter" id="c3">Scène I</h2>
+<p>(Une autre partie de l&#x27;île.)</p>
+<p>Entrent ALONZO, SÉBASTIEN, ANTONIO, GONZALO, ADRIAN, FRANCISCO ET PLUSIEURS AUTRES.</p>
+<p>GONZALO.--Seigneur, je vous en conjure, de la gaieté. Vous avez, nous avons tous un sujet de joie, car ce que nous avons sauvé est bien au delà de ce que nous avons perdu; ce qui fait notre tristesse est une chose commune: tous les jours la femme de quelque marin, le patron de quelque navire marchand, et le négociant lui-même, ont de semblables motifs de chagrin. Mais sur des millions d&#x27;individus, il y en a bien peu qui aient comme nous à raconter un miracle: c&#x27;en est un que de nous voir sauvés. Ainsi, mon bon seigneur, mettez sagement en balance nos chagrins et nos motifs de consolation.</p>
+<p>ALONZO.--Je t&#x27;en prie, laisse-moi en paix.</p>
+<p>SÉBASTIEN.--Il prend goût à la consolation comme à une soupe froide.</p>
+<p>ANTONIO.--Il ne sera pas si aisément débarrassé du consolateur.</p>
+<p>SÉBASTIEN.--Tenez, le voilà qui monte l&#x27;horloge de son esprit; elle va sonner tout à l&#x27;heure.</p>
+<p>GONZALO.--Seigneur.</p>
+<p>SÉBASTIEN.--Une.... Parlez donc.</p>
+<p>GONZALO.--Lorsqu&#x27;on se plaît à nourrir quelque chagrin, tout ce qui se présente apporte à celui qui le nourrit....</p>
+<p>SÉBASTIEN.--Un dollar.</p>
+<p>GONZALO.--Tout lui apporte une douleur[5], en effet. Vous avez parlé plus juste que vous ne croyez.</p>
+<p>[Note 5: Dollar, dolour, ont, en anglais, à peu près la même prononciation.]</p>
+<p>SÉBASTIEN.--Et vous l&#x27;avez pris plus raisonnablement que je ne l&#x27;espérais.</p>
+<p>GONZALO.--Donc, mon seigneur....</p>
+<p>ANTONIO.--Fi! qu&#x27;il est prodigue de sa langue!</p>
+<p>ALONZO.--Je t&#x27;en prie, laisse-moi.</p>
+<p>GONZALO.--Bien, j&#x27;ai fini; mais cependant....</p>
+<p>SÉBASTIEN.--Cependant il continuera de parler.</p>
+<p>ANTONIO.--Parions qui de lui ou d&#x27;Adrian chantera le premier.</p>
+<p>SÉBASTIEN.--Va pour le vieux coq.</p>
+<p>ANTONIO.--Pour le jeune coq.</p>
+<p>SÉBASTIEN.--C&#x27;est dit. L&#x27;enjeu?</p>
+<p>ANTONIO.--Un éclat de rire.</p>
+<p>SÉBASTIEN.--Tope!</p>
+<p>ADRIAN.--Quoique cette île semble déserte....</p>
+<p>SÉBASTIEN.--Ah! ah! ah!</p>
+<p>ANTONIO.--Allons, vous avez payé[6].</p>
+<p>[Note 6: You&#x27;ve paid: Dans l&#x27;ancienne édition, You&#x27;re paid, corrigé, ce me semble avec raison, par M. Steevens. M. Malone paraît assez embarrassé du sens de ce passage, qui cependant ne peut, je crois, laisser aucun doute. On a parié un éclat de rire; Sébastien, qui a perdu, éclate de rire; Antonio le prend sur le fait et lui dit: Vous avez payé. Cela est d&#x27;un genre de plaisanterie tout à fait conforme au reste de l&#x27;entretien de ces deux personnages.]</p>
+<p>ADRIAN.--Inhabitable et presque inaccessible....</p>
+<p>SÉBASTIEN.--Cependant....</p>
+<p>ADRIAN.--Cependant....</p>
+<p>ANTONIO.--Cela ne pouvait pas manquer.</p>
+<p>ADRIAN.--Il faut qu&#x27;elle jouisse d&#x27;une température[7] subtile, moelleuse et délicate.</p>
+<p>[Note 7: Dans l&#x27;anglais, temperance. Il a été impossible, dans la traduction, de conserver le jeu de mots qui paraît de plus faire allusion à quelque allégorie de la tempérance.]</p>
+<p>ANTONIO.--La tempérance était une délicate donzelle.</p>
+<p>SÉBASTIEN.--Oui, et subtile, comme il l&#x27;a dit très-savamment.</p>
+<p>ADRIAN.--L&#x27;air souffle sur nous le plus doucement du monde.</p>
+<p>SÉBASTIEN.--Oui, comme s&#x27;il avait des poumons, et des poumons gâtés.</p>
+<p>ANTONIO.--Ou s&#x27;il était parfumé par un marais.</p>
+<p>GONZALO.--Tout ici semble favorable à la vie.</p>
+<p>ANTONIO.--Oui, sauf les moyens de vivre.</p>
+<p>SÉBASTIEN.--Il n&#x27;y en a pas, ou il n&#x27;y en a guère.</p>
+<p>GONZALO.--Comme l&#x27;herbe ici paraît abondante et verte! comme elle est verte!</p>
+<p>ANTONIO.--Le vrai, c&#x27;est que ces prairies sont jaunes.</p>
+<p>SÉBASTIEN.--Avec un soupçon de vert.</p>
+<p>ANTONIO.--Il ne se trompe pas de beaucoup.</p>
+<p>SÉBASTIEN.--Non, seulement du tout au tout.</p>
+<p>GONZALO.--Mais la merveille de tout ceci, c&#x27;est que, et cela est presque hors de toute croyance....</p>
+<p>SÉBASTIEN.--Comme beaucoup de merveilles attestées.</p>
+<p>GONZALO.--C&#x27;est que nos vêtements, trempés comme ils l&#x27;ont été dans la mer, aient cependant conservé leur fraîcheur et leur éclat; ils ont été plutôt reteints que tachés par l&#x27;eau salée.</p>
+<p>ANTONIO.--Si une de ses poches pouvait parler, ne dirait-elle pas qu&#x27;il ment?</p>
+<p>SÉBASTIEN.--Oui, ou bien elle empocherait très-faussement son récit.</p>
+<p>GONZALO.--Je crois que nos vêtements sont aussi frais maintenant que quand nous les portâmes pour la première fois en Afrique, au mariage de la fille du roi, la belle Claribel, avec le roi de Tunis.</p>
+<p>SÉBASTIEN.--C&#x27;était un beau mariage, et le retour nous a bien réussi.</p>
+<p>ADRIAN.--Jamais Tunis ne fut ornée d&#x27;une si incomparable reine.</p>
+<p>GONZALO.--Non, depuis le temps de la veuve Didon.</p>
+<p>ANTONIO.--La veuve! le diable l&#x27;emporte! à quel propos cette veuve? la veuve Didon!</p>
+<p>SÉBASTIEN.--Eh bien! quand il aurait dit aussi le veuf Énée? comme vous prenez cela, bon Dieu!</p>
+<p>ADRIAN.--La veuve Didon, avez-vous dit? Vous m&#x27;avez fait apprendre cela: elle était de Carthage et non de Tunis.</p>
+<p>GONZALO.--Cette Tunis, seigneur, était autrefois Carthage.</p>
+<p>ADRIAN.--Carthage?</p>
+<p>GONZALO.--Je vous l&#x27;assure, Carthage.</p>
+<p>ANTONIO.--Ses paroles sont plus puissantes que la harpe miraculeuse.</p>
+<p>SÉBASTIEN.--Il a élevé non-seulement les murailles, mais les maisons.</p>
+<p>ANTONIO.--Qu&#x27;y aura-t-il d&#x27;impossible qui ne lui devienne aisé maintenant?</p>
+<p>SÉBASTIEN.--Je suis persuadé qu&#x27;il emportera cette île chez lui dans sa poche, et la donnera à son fils comme une pomme.</p>
+<p>ANTONIO.--Dont il sèmera les pépins dans la mer et fera pousser d&#x27;autres îles.</p>
+<p>GONZALO.--Oui?</p>
+<p>ANTONIO.--Pourquoi pas, avec le temps?</p>
+<p>GONZALO.--Seigneur, nous parlions de nos vêtements qui semblent aussi frais que lorsque nous étions à Tunis au mariage de votre fille, la reine actuelle.</p>
+<p>ANTONIO.--Et la plus merveilleuse qu&#x27;on y ait jamais vue.</p>
+<p>SÉBASTIEN.--Exceptez-en, je vous prie, la veuve Didon.</p>
+<p>GONZALO.--N&#x27;est-ce pas, seigneur, que mon habit est aussi frais que la première fois que je l&#x27;ai porté? J&#x27;entends, en quelque sorte....</p>
+<p>ANTONIO.--Il a longtemps cherché pour pêcher ce en quelque sorte.</p>
+<p>GONZALO.--Quand je l&#x27;ai porté au mariage de votre fille.</p>
+<p>ALONZO.--Vous rassasiez mon oreille de ces mots, malgré la révolte de mon âme. Plût au ciel que je n&#x27;eusse jamais marié ma fille dans ce pays! car, maintenant que j&#x27;en reviens, mon fils est perdu, et selon moi ma fille l&#x27;est aussi; éloignée comme elle l&#x27;est de l&#x27;Italie, je ne la reverrai jamais. O toi l&#x27;héritier de mes États de Naples et de Milan, quel horrible poisson aura fait de toi son repas?</p>
+<p>FRANCISCO.--Seigneur, il se peut que votre fils soit vivant. Je l&#x27;ai vu frapper sous lui les vagues et avancer sur leur dos: il faisait route à travers les eaux, rejetant des deux côtés les ondes en furie, et opposant sa poitrine aux vagues gonflées qui venaient à sa rencontre; il élevait sa tête audacieuse au-dessus des flots en tumulte, et de ses bras robustes ramait à coups vigoureux vers le rivage, qui, courbé sur sa base minée par les eaux, semblait s&#x27;incliner pour lui porter secours. Je ne doute point qu&#x27;il ne soit arrivé vivant à terre.</p>
+<p>ALONZO.--Non, non, il a quitté ce monde.</p>
+<p>SÉBASTIEN.--Seigneur, c&#x27;est vous-même que vous devez remercier de cette grande perte, vous qui n&#x27;avez pas voulu faire de votre fille le bonheur de notre Europe, mais qui avez mieux aimé la sacrifier à un Africain, et l&#x27;avez ainsi pour le moins bannie de vos yeux, qui ont bien sujet de mouiller de larmes un tel regret.</p>
+<p>ALONZO.--Je t&#x27;en prie, laisse-moi en paix.</p>
+<p>SÉBASTIEN.--Nous nous sommes tous mis à vos genoux, nous vous avons importuné de toutes les manières; et cette fille charmante elle-même balança entre son aversion et l&#x27;obéissance, après quoi elle finit par plier la tête au joug. Nous avons, je le crains bien, perdu votre fils pour toujours: Naples et Milan vont avoir, par suite de cette affaire, plus de veuves que nous ne ramenons d&#x27;hommes pour les consoler: la faute en est à vous seul.</p>
+<p>ALONZO.--Et aussi la perte la plus chère.</p>
+<p>GONZALO.--Mon seigneur Sébastien, ces vérités manquent un peu de douceur et d&#x27;un temps propre à les dire. Vous écorchez la plaie, lorsque vous devriez y mettre un emplâtre.</p>
+<p>SÉBASTIEN.--Fort bien dit.</p>
+<p>ANTONIO.--Et de la manière la plus chirurgicale.</p>
+<p>GONZALO, au roi.--Mon bon seigneur, il fait mauvais temps pour nous dès que votre front se couvre de nuages.</p>
+<p>SÉBASTIEN.--Mauvais temps?</p>
+<p>ANTONIO.--Très-mauvais.</p>
+<p>GONZALO.--Si j&#x27;étais chargé de planter cette île, mon seigneur....</p>
+<p>ANTONIO.--Il y sèmerait des orties.</p>
+<p>SÉBASTIEN.--Avec des ronces et des mauves.</p>
+<p>GONZALO.--Et si j&#x27;en étais le roi, savez-vous ce que je ferais?</p>
+<p>SÉBASTIEN.--Vous seriez sûr de ne pas vous enivrer, faute de vin.</p>
+<p>GONZALO.--Je voudrais que dans ma république tout se fît à l&#x27;inverse du train ordinaire des choses. Il n&#x27;y aurait aucune espèce de trafic; on n&#x27;y entendrait point parler de magistrats; les procès, l&#x27;écriture, n&#x27;y seraient point connus; les serviteurs, les richesses, la pauvreté, y seraient des choses hors d&#x27;usage; point de contrats, d&#x27;héritages, de limites, de labourage; je n&#x27;y voudrais ni métal, ni blé, ni vin, ni huile; nul travail; tous les hommes seraient oisifs et les femmes aussi, mais elles seraient innocentes et pures; point de souveraineté....</p>
+<p>SÉBASTIEN.--Et cependant il voudrait en être le roi.</p>
+<p>ANTONIO.--La fin de sa république en a oublié le commencement.</p>
+<p>GONZALO.--La nature y produirait tout en commun, sans peine ni labeur. Je voudrais qu&#x27;il n&#x27;y eût ni trahison ni félonie, ni épée, ni pique, ni couteau, ni mousquet, ni aucun besoin de torture. Mais la nature, d&#x27;elle-même, par sa propre force, produirait tout à foison, tout en abondance, pour nourrir mon peuple innocent.</p>
+<p>SÉBASTIEN.--Pas de mariage parmi ses sujets?</p>
+<p>ANTONIO.--Non, mon cher, tous fainéants: des coquines et des fripons.</p>
+<p>GONZALO.--Je voudrais gouverner dans une telle perfection, seigneur, que mon règne surpassât l&#x27;âge d&#x27;or.</p>
+<p>SÉBASTIEN.--Dieu conserve Sa Majesté!</p>
+<p>ANTONIO.--Longue vie à Gonzalo!</p>
+<p>GONZALO.--Eh bien! m&#x27;écoutez-vous, seigneur?</p>
+<p>ALONZO.--Finis, je t&#x27;en prie; tes paroles ne me disent rien.</p>
+<p>GONZALO.--Je crois sans peine Votre Altesse: ce que j&#x27;en ai fait n&#x27;était que pour mettre en train ces deux nobles cavaliers qui ont les poumons si sensibles et si agiles, que leur habitude constante est de rire de rien.</p>
+<p>ANTONIO.--C&#x27;est de vous que nous avons ri.</p>
+<p>GONZALO.--De moi qui ne suis rien auprès de vous dans ce genre de bouffonneries? Ainsi vous pouvez continuer, et ce sera toujours rire de rien.</p>
+<p>ANTONIO.--Quel coup il nous a porté là!</p>
+<p>SÉBASTIEN.--S&#x27;il n&#x27;était pas tombé tout à plat.</p>
+<p>GONZALO.--Oh! vous êtes des personnages d&#x27;une bonne trempe; vous seriez capables d&#x27;enlever la lune de sa sphère, si elle y demeurait cinq semaines sans changer.</p>
+<p>(Ariel, invisible, entre en exécutant une musique grave et lente.)</p>
+<p>SÉBASTIEN.--Oui certainement, et alors nous ferions la chasse aux chauves-souris.</p>
+<p>ANTONIO.--Allons, mon bon seigneur, ne vous fâchez pas.</p>
+<p>GONZALO.--Non, sur ma parole, je ne compromets pas si légèrement ma prudence. Voulez-vous plaisanter assez pour m&#x27;endormir? car déjà je me sens appesanti.</p>
+<p>ANTONIO.--Allons, dormez et écoutez-nous.</p>
+<p>(Tous s&#x27;endorment, excepté Alonzo, Sébastien et Antonio.)</p>
+<p>ALONZO.--Quoi! déjà tous endormis! Je voudrais que mes yeux pussent, en se fermant, emprisonner mes pensées: je les sens disposés au sommeil.</p>
+<p>SÉBASTIEN.--Seigneur, s&#x27;il s&#x27;offre pesamment à vous, ne le repoussez pas. Rarement il visite le chagrin; quand il le fait, c&#x27;est un consolateur.</p>
+<p>ANTONIO.--Tous deux, seigneur, nous allons faire la garde auprès de votre personne tandis que vous prendrez du repos, et nous veillerons à votre sûreté.</p>
+<p>ALONZO.--Je vous remercie. Je suis étrangement assoupi.</p>
+<p>(Il s&#x27;endort.--Ariel sort.)</p>
+<p>SÉBASTIEN.--Quelle bizarre léthargie s&#x27;est emparée d&#x27;eux tous?</p>
+<p>ANTONIO.--C&#x27;est une propriété du climat.</p>
+<p>SÉBASTIEN.--Pourquoi n&#x27;a-t-elle pas forcé nos yeux à se fermer? Je ne me sens point disposé au sommeil.</p>
+<p>ANTONIO.--Ni moi; mes esprits sont en mouvement.--Ils sont tous tombés comme d&#x27;un commun accord; ils ont été abattus comme par un même coup de tonnerre.--Quel pouvoir est en nos mains, digne Sébastien! oh quel pouvoir! Je n&#x27;en dis pas davantage, et cependant il me semble que je vois sur ton visage ce que tu pourrais être. L&#x27;occasion te parle, et, dans la vivacité de mon imagination, je vois une couronne tomber sur ta tête.</p>
+<p>SÉBASTIEN.--Quoi! es-tu éveillé?</p>
+<p>ANTONIO.--Ne m&#x27;entendez-vous pas parler?</p>
+<p>SÉBASTIEN.--Je t&#x27;entends, et sûrement ce sont les paroles d&#x27;un homme endormi; c&#x27;est le sommeil qui te fait parler. Que me disais-tu? C&#x27;est un étrange sommeil que de dormir les yeux tout grands ouverts, debout, parlant, marchant, et cependant si profondément endormi.</p>
+<p>ANTONIO.--Noble Sébastien, tu laisses ta fortune dormir, ou plutôt mourir: tu fermes les yeux, toi, tout éveillé.</p>
+<p>SÉBASTIEN.--Tu ronfles distinctement; tes ronflements ont un sens.</p>
+<p>ANTONIO.--Je suis plus sérieux que je n&#x27;ai coutume de l&#x27;être: vous devez l&#x27;être aussi si vous faites attention à ce que je vous dis; y faire attention, c&#x27;est vous tripler vous-même.</p>
+<p>SÉBASTIEN.--A la bonne heure! mais je suis une eau stagnante.</p>
+<p>ANTONIO.--Je vous apprendrai à monter comme le flux.</p>
+<p>SÉBASTIEN.--Charge-toi de le faire, car une indolence héréditaire me dispose au reflux.</p>
+<p>ANTONIO.--O si vous saviez seulement combien ce projet vous est cher au moment même où vous vous en moquez! combien vous y entrez de plus en plus, en le rejetant! Les hommes de reflux sont si souvent entraînés tout près du fond par leur crainte et leur indolence même.</p>
+<p>SÉBASTIEN.--Je t&#x27;en prie, poursuis: la fermeté fixe de ton regard, de tes traits, annonce quelque chose qui veut sortir de toi, et un enfantement qui te presse et te travaille.</p>
+<p>ANTONIO.--Voilà ce qui en est, seigneur. Quoique ce gentilhomme au faible souvenir, et qui une fois enterré sera d&#x27;aussi petite mémoire, ait presque persuadé au roi (car il est possédé d&#x27;un esprit de persuasion) que son fils est vivant, il est aussi impossible que ce fils ne soit pas noyé, qu&#x27;il l&#x27;est que celui qui dort ici puisse nager.</p>
+<p>SÉBASTIEN.--Moi, je n&#x27;ai pas d&#x27;espoir qu&#x27;il ne soit pas noyé.</p>
+<p>ANTONIO.--O que de ce défaut d&#x27;espoir il sort pour vous une grande espérance! Point d&#x27;espérance de ce côté, c&#x27;est de l&#x27;autre une espérance si haute, que l&#x27;oeil de l&#x27;ambition elle-même ne peut percer au delà, et doute plutôt de ce qu&#x27;il y découvre. Voulez-vous demeurer d&#x27;accord avec moi que Ferdinand est noyé?</p>
+<p>SÉBASTIEN.--Il n&#x27;est plus de ce monde.</p>
+<p>ANTONIO.--Maintenant, dites-moi, quel est l&#x27;héritier le plus proche du royaume de Naples?</p>
+<p>SÉBASTIEN.--Claribel.</p>
+<p>ANTONIO.--Qui? la reine de Tunis? elle qui habite à dix lieues par delà la vie de l&#x27;homme? elle qui ne peut pas avoir de nouvelles de Naples, à moins que le soleil ne fasse office de poste (car l&#x27;homme de la lune est trop lent), avant que les mentons nouveau-nés ne soient durcis et devenus propres au rasoir? elle, à cause de qui nous avons été tous engloutis par la mer, bien qu&#x27;elle en ait rejeté quelques-uns, et que nous soyons par là destinés à exécuter une action dont ce qui vient d&#x27;arriver n&#x27;est que le prologue? Pour ce qui doit suivre, vous et moi en sommes chargés.</p>
+<p>SÉBASTIEN.--Quelles balivernes me contez-vous là? Que voulez-vous dire? Il est vrai que la fille de mon frère est reine de Tunis, et qu&#x27;elle est aussi l&#x27;héritière de Naples: entre ces deux régions il y a quelque distance.</p>
+<p>ANTONIO.--Une distance dont chaque coudée semble s&#x27;écrier: «Comment cette Claribel nous franchira-t-elle jamais pour retourner à Naples?» Garde Claribel, Tunis, et laisse Sébastien se réveiller! Dites, si ce qui vient de les saisir était la mort, eh bien! ils n&#x27;en seraient pas plus mal qu&#x27;ils ne sont en ce moment. Il y a des gens capables de gouverner Naples aussi bien que celui-ci qui dort; des courtisans qui sauront bavarder aussi longuement, aussi inutilement que ce Gonzalo; moi-même je pourrais faire un choucas aussi profondément babillard. Oh! si vous portiez en vous l&#x27;esprit qui est en moi, quel sommeil serait celui-ci pour votre élévation! Me comprenez-vous?</p>
+<p>SÉBASTIEN.--Je crois vous comprendre.</p>
+<p>ANTONIO.--Et comment la joie de votre coeur accueille-t-elle votre bonne fortune?</p>
+<p>SÉBASTIEN.--Je me rappelle que vous avez supplanté votre frère Prospero.</p>
+<p>ANTONIO.--Oui, et voyez comme je suis bien dans mes habits, et de bien meilleur air qu&#x27;auparavant. Les serviteurs de mon frère étaient mes compagnons alors; ce sont mes gens maintenant.</p>
+<p>SÉBASTIEN.--Mais votre conscience?</p>
+<p>ANTONIO.--Vraiment, seigneur, où cela loge-t-il? Si c&#x27;était une engelure à mon talon, elle me forcerait à garder mes pantoufles; mais je ne sens point cette déité dans mon sein. Vingt consciences fussent-elles entre moi et le trône de Milan, elles peuvent se candir et se fondre avant de me gêner. Voilà votre frère couché là, et s&#x27;il était ce qu&#x27;il paraît être en ce moment, c&#x27;est-à-dire mort, il ne vaudrait pas mieux que la terre sur laquelle il est couché. Moi, avec cette épée obéissante, rien que trois pouces de lame, je le mets au lit pour jamais; tandis que vous, de la même manière, vous faites cligner l&#x27;oeil pour l&#x27;éternité à ce vieux rogaton, ce sire Prudence qu&#x27;ainsi nous n&#x27;aurons plus pour censurer notre conduite. Quant aux autres, ils prendront ce que nous voudrons leur inspirer comme un chat lappe du lait: quelle que soit l&#x27;entreprise pour laquelle nous aurons fixé un certain moment, ils se chargeront de nous dire l&#x27;heure.</p>
+<p>SÉBASTIEN.--Ta destinée, cher ami, me servira d&#x27;exemple: comme tu gagnas Milan, je veux gagner Naples. Tire ton épée: un seul coup va t&#x27;affranchir du tribut que tu payes, et te donner pour roi moi qui t&#x27;aimerai.</p>
+<p>ANTONIO.--Tirons ensemble nos épées; et quand je lèverai mon bras en arrière, faites-en autant pour frapper aussitôt Gonzalo.</p>
+<p>SÉBASTIEN.--Oh! un mot encore.</p>
+<p>(Ils se parlent bas.)</p>
+<p>(Musique.--Ariel rentre invisible.)</p>
+<p>ARIEL.--Mon maître prévoit par son art le danger que courent ces hommes dont il est l&#x27;ami. Il m&#x27;envoie pour leur sauver la vie, car autrement son projet est mort.</p>
+<p>(Il chante à l&#x27;oreille de Gonzalo.)</p>
+<p>Tandis que vous dormez ici en ronflant, La conspiration à l&#x27;oeil ouvert Choisit son moment. Si vous attachez quelque prix à la vie, Secouez le sommeil et prenez garde. Réveillez-vous, réveillez-vous.</p>
+<p>ANTONIO.--Maintenant frappons tous deux à la fois.</p>
+<p>GONZALO s&#x27;éveille et s&#x27;écrie.--A nous, anges gardiens, sauvez le roi!</p>
+<p>(Ils s&#x27;éveillent)</p>
+<p>ALONZO.--Quoi! qu&#x27;est-ce que c&#x27;est? Oh! vous êtes réveillés! pourquoi vos épées nues? pourquoi ces regards effroyables?</p>
+<p>GONZALO.--De quoi s&#x27;agit-il?</p>
+<p>SÉBASTIEN.--Tandis que nous veillions ici à la sûreté de votre sommeil, nous avons entendu tout à coup un bruit sourd de rugissements comme de taureaux, ou plutôt de lions. Ne vous a-t-il pas réveillés? il a frappé mon oreille de la manière la plus terrible.</p>
+<p>ALONZO.--Je n&#x27;ai rien entendu.</p>
+<p>ANTONIO.--Oh! c&#x27;était un bruit capable d&#x27;effrayer l&#x27;oreille d&#x27;un monstre, de faire trembler la terre: sûrement c&#x27;étaient les rugissements d&#x27;un troupeau de lions.</p>
+<p>ALONZO.--L&#x27;avez-vous entendu, Gonzalo?</p>
+<p>GONZALO.--Sur mon honneur, seigneur, j&#x27;ai ouï un murmure, un étrange murmure qui m&#x27;a réveillé. Je vous ai poussé, seigneur, et j&#x27;ai crié. Quand mes yeux se sont ouverts, j&#x27;ai vu leurs épées nues. Un bruit s&#x27;est fait entendre, c&#x27;est la vérité: il sera bon de nous tenir sur nos gardes; ou plutôt quittons ce lieu; tirons nos épées.</p>
+<p>ALONZO.--Partons d&#x27;ici, et continuons à chercher mon pauvre fils.</p>
+<p>GONZALO.--Que le ciel le garde de ces monstres, car sûrement il est dans cette île!</p>
+<p>ALONZO.--Partons.</p>
+<p>ARIEL, à part.--Prospero, mon maître, saura ce que je viens de faire: maintenant, roi, tu peux aller sans danger à la recherche de ton fils.</p>
+<p>(Ils sortent.)</p>
+<h2 class="chapter" id="c4">Scène II</h2>
+<p>(Une autre partie de l&#x27;île. On entend le bruit du tonnerre.)</p>
+<p>CALIBAN entre avec une charge de bois.</p>
+<p>CALIBAN.--Que tous les venins que le soleil pompe des eaux croupies, des marais et des fondrières retombent sur Prospero, et ne laissent pas sans souffrance un pouce de son corps! Ses esprits m&#x27;entendent, et pourtant il faut que je le maudisse. D&#x27;ailleurs ils ne viendront pas sans son ordre me pincer, m&#x27;effrayer de leurs figures de lutins, me tremper dans la mare, ou, luisants comme des brandons de feu, m&#x27;égarer la nuit loin de ma route: mais pour chaque vétille il les lâche sur moi; tantôt en forme de singes qui me font la moue, me grincent des dents, et me mordent ensuite; tantôt ce sont des hérissons qui viennent se rouler sur le chemin où je marche pieds nus, et dressent leurs piquants au moment où je pose mon pied. Quelquefois je me sens enlacé par des serpents qui de leur langue fourchue sifflent sur moi jusqu&#x27;à me rendre fou.--(Trinculo parait.) Ah oui..... oh!--Voici un de ses esprits; il vient me tourmenter parce que je suis trop lent à porter ce bois. Je vais me jeter contre terre; peut-être qu&#x27;il ne prendra pas garde à moi.</p>
+<p>TRINCULO.--Point de buisson, pas le moindre arbrisseau pour se mettre à l&#x27;abri des injures du temps, et voilà un nouvel orage qui s&#x27;assemble: je l&#x27;entends siffler dans les vents. Ce nuage noir là-bas, ce gros nuage ressemble à un vilain tonneau qui va répandre sa liqueur. S&#x27;il tonne comme il a fait tantôt, je ne sais où cacher ma tête. Ce nuage ne peut manquer de tomber à pleins seaux.--Qu&#x27;avons-nous ici? Un homme ou un poisson? mort ou vif?--Un poisson; il sent le poisson, une odeur de vieux poisson.--Quelque chose comme cela, et pas du plus frais, un cabillaud.--Un étrange poisson! Si j&#x27;étais en Angleterre maintenant, comme j&#x27;y ai été une fois, et que j&#x27;eusse seulement ce poisson en peinture, il n&#x27;y aurait pas de badaud endimanché qui ne donnât une pièce d&#x27;argent pour le voir. C&#x27;est là que ce monstre ferait un homme riche: chaque bête singulière y fait un homme riche; tandis qu&#x27;ils refuseront une obole pour assister un mendiant boiteux, ils vous en jetteront dix pour voir un Indien mort.--Hé! il a des jambes comme un homme, et ses nageoires ressemblent à des bras! sur ma foi, il est chaud encore. Je laisse là ma première idée maintenant, elle ne tient plus. Ce n&#x27;est pas là un poisson, mais un insulaire que tantôt le tonnerre aura frappé.--(Il tonne.) Hélas! voilà la tempête revenue. Mon meilleur parti est de me blottir sous son manteau; je ne vois point d&#x27;autre abri autour de moi. Le malheur fait trouver à l&#x27;homme d&#x27;étranges compagnons de lit.--Allons, je veux me gîter ici jusqu&#x27;à ce que la queue de l&#x27;orage soit passée.</p>
+<p>(Entre Stephano chantant, et tenant une bouteille à la main.)</p>
+<h3 class="sub">Stephano.</h3>
+<p>Je n&#x27;irai plus à la mer, à la mer. Je veux mourir ici à terre.</p>
+<p>C&#x27;est une piètre chanson à chanter aux funérailles d&#x27;un homme. Bien, bien, voici qui me réconforte.</p>
+<p>(Il boit.)</p>
+<p>Le maître, le balayeur, le bosseman et moi, Le canonnier et son compagnon, Nous aimions Mall, Meg, et Marion et Marguerite; Mais aucun de nous ne se souciait de Kate, Car elle avait un aiguillon à la langue, Et criait au marinier: Va te faire pendre! Elle n&#x27;aimait pas l&#x27;odeur de la poix ni du goudron: Cependant un tailleur pouvait la gratter où il lui démangeait. Allons à la mer, enfants, et qu&#x27;elle aille se faire pendre!</p>
+<p>C&#x27;est aussi une piètre chanson. Mais voici qui me réconforte.</p>
+<p>(Il boit.)</p>
+<p>CALIBAN.--Ne me tourmente point. Oh!</p>
+<p>STEPHANO.--Qu&#x27;est ceci? avons-nous des diables dans ce pays? Vous accoutrez-vous en sauvages et en hommes de l&#x27;Inde pour nous faire niche? Je ne suis pas réchappé de l&#x27;eau pour avoir peur ici de vos quatre jambes? car il a été dit: L&#x27;homme le plus homme qui ait jamais cheminé sur quatre pieds ne le ferait pas reculer, et on le dira ainsi tant que l&#x27;air entrera par les narines de Stephano.</p>
+<p>CALIBAN.--L&#x27;esprit me tourmente. Oh!</p>
+<p>STEPHANO.--C&#x27;est là quelque monstre de l&#x27;île, avec quatre jambes. Celui-là, je m&#x27;imagine, aura gagné la fièvre. Où diable peut-il avoir appris notre langue? Ne fût-ce que pour cela, je veux lui donner quelque secours. Si je puis le guérir et l&#x27;apprivoiser, et lui faire gagner Naples avec moi, c&#x27;est un présent digne de quelque empereur que ce soit qui ait jamais marché sur cuir de boeuf.</p>
+<p>CALIBAN.--Ne me tourmente pas, je t&#x27;en prie; je porterai mon bois plus vite à la maison.</p>
+<p>STEPHANO.--Le voilà dans son accès maintenant! il n&#x27;est pas des plus sensés dans ce qu&#x27;il dit. Il tâtera de ma bouteille: s&#x27;il n&#x27;a jamais encore goûté de vin, il ne s&#x27;en faudra guère que cela ne guérisse son accès. Si je parviens à le guérir et à l&#x27;apprivoiser, je n&#x27;en demanderai jamais trop cher: il défrayera le maître qui l&#x27;aura, et comme il faut.</p>
+<p>CALIBAN.--Tu ne me fais pas encore grand mal, mais cela viendra bientôt; je le sens à ton tremblement. Dans ce moment Prospero agit sur toi.</p>
+<p>STEPHANO, à Caliban.--Allons, venez; voici qui vous donnera la parole, chat[8]. Ouvrez la bouche; je peux dire que cela secouera votre tremblement, et comme il faut. (Caliban boit avec plaisir.) Vous ne connaissez pas celui qui est ici votre ami. Allons, ouvrez encore vos mâchoires.</p>
+<p>[Note 8: Allusion au vieux dicton anglais: Ce vin est si bon qu&#x27;il ferait parler un chat.]</p>
+<p>TRINCULO.--Je crois reconnaître cette voix. Ce pourrait être.... Mais il est noyé. Ce sont des diables. O défendez-moi!</p>
+<p>STEPHANO.--Quatre jambes et deux voix! un monstre tout à fait mignon; sa voix de devant est sans doute pour dire du bien de son ami, sa voix de derrière pour tenir de mauvais discours et dénigrer. Si tout le vin de mon broc suffit pour le rétablir, je veux médicamenter sa fièvre. Allons, ainsi soit-il! Je vais en verser un peu dans ton autre bouche.</p>
+<p>TRINCULO.--Stephano?</p>
+<p>STEPHANO.--Comment, ton autre voix m&#x27;appelle?--Miséricorde! Miséricorde! ce n&#x27;est pas un monstre, c&#x27;est un diable. Laissons-le là, je n&#x27;ai pas une longue cuiller, moi[9].</p>
+<p>[Note 9: Allusion au proverbe écossais: Qui fait manger le diable a besoin d&#x27;une longue cuiller.]</p>
+<p>TRINCULO.--Stephano? si tu es Stephano, touche-moi, parle-moi. Je suis Trinculo;--ne sois pas effrayé,--ton bon ami Trinculo.</p>
+<p>STEPHANO.--Si tu es Trinculo, sors de là, je vais te tirer par les jambes les plus courtes. S&#x27;il y a ici des jambes à Trinculo, ce sont celles-là. En effet, tu es Trinculo lui-même: comment es-tu devenu le siège de ce veau de lune[10]? Rend-il des Trinculos?</p>
+<p>[Note 10: Toute génération informe et monstrueuse était attribuée à l&#x27;influence de la lune.]</p>
+<p>TRINCULO.--Je l&#x27;ai cru tué d&#x27;un coup de tonnerre. Mais n&#x27;es-tu donc pas noyé, Stephano? Je commence à espérer que tu n&#x27;es pas noyé. L&#x27;orage a-t-il crevé tout à fait? Moi, dans la peur de l&#x27;orage, je me suis caché sous le manteau de ce veau de la lune mort.--Es-tu bien vivant, Stephano? O Stephano? deux Napolitains de réchappés!</p>
+<p>STEPHANO.--Je te prie, ne tourne pas autour de moi; mon estomac n&#x27;est pas bien ferme.</p>
+<p>CALIBAN.--Ce sont là deux beaux objets, si ce ne sont pas des lutins. Celui-ci est un brave dieu qui porte avec lui une liqueur céleste: je veux me mettre à genoux devant lui.</p>
+<p>STEPHANO.--Comment t&#x27;es-tu sauvé? Comment es-tu arrivé ici? dis-le moi par serment sur ma bouteille, comment es-tu venu ici? Moi, je me suis sauvé sur un tonneau de vin de Canarie que les matelots avaient roulé à grand&#x27; peine hors du navire. J&#x27;en jure par cette bouteille que j&#x27;ai faite de mes propres mains, avec l&#x27;écorce d&#x27;un arbre, depuis que j&#x27;ai été jeté sur le rivage.</p>
+<p>CALIBAN.--Je veux jurer sur cette bouteille d&#x27;être ton fidèle sujet, car ta liqueur ne vient pas de la terre.</p>
+<p>STEPHANO.--Allons, jure: comment t&#x27;es-tu sauvé?</p>
+<p>TRINCULO.--J&#x27;ai nagé jusqu&#x27;au rivage, mon ami, comme un canard. Je nage comme un canard; j&#x27;en jurerai.</p>
+<p>STEPHANO.--Tiens, baise le livre.--Cependant tu ne peux nager comme un canard, car tu es fait comme une oie.</p>
+<p>TRINCULO.--O Stephano, as-tu encore de ceci?</p>
+<p>STEPHANO.--La futaille entière, mon ami; mon cellier est dans un rocher au bord de la mer: c&#x27;est là que j&#x27;ai caché mon vin.--Eh bien! maintenant, veau de lune, comment va ta fièvre?</p>
+<p>CALIBAN.--N&#x27;es-tu pas tombé du ciel?</p>
+<p>STEPHANO.--Oui vraiment, de la lune. J&#x27;étais de mon temps l&#x27;homme qu&#x27;on voyait dans la lune.</p>
+<p>CALIBAN.--Je t&#x27;y ai vu, et je t&#x27;adore. Ma maîtresse t&#x27;a montré à moi, toi, ton chien et ton buisson.</p>
+<p>STEPHANO.--Allons, jure-le, baise le livre; tout à l&#x27;heure je le remplirai de nouveau. Jure.</p>
+<p>TRINCULO.--Par cette bonne lumière, voilà un sot monstre! moi, avoir peur de lui! un imbécile de monstre! l&#x27;homme de la lune! un pauvre monstre bien crédule!--C&#x27;est boire net, monstre, sur ma parole.</p>
+<p>CALIBAN, à Stephano.--Je veux te montrer dans l&#x27;île chaque pouce de terre fertile, et je veux baiser ton pied. Je t&#x27;en prie, sois mon dieu.</p>
+<p>TRINCULO.--Par cette clarté, le plus perfide et le plus ivrogne des monstres!--Quand son dieu sera endormi, il lui volera sa bouteille.</p>
+<p>CALIBAN.--Je baiserai ton pied; je jurerai d&#x27;être ton sujet.</p>
+<p>STEPHANO.--Eh bien! approche; à terre, et jure.</p>
+<p>TRINCULO.--J&#x27;en mourrai à force de rire de ce monstre à tête de chien. Un monstre dégoûtant! je me sentirais en goût de le battre....</p>
+<p>STEPHANO.--Allons, baise.</p>
+<p>TRINCULO.--.... Si ce n&#x27;était que ce pauvre monstre est ivre. C&#x27;est un abominable monstre!</p>
+<p>CALIBAN.--Je te conduirai aux meilleures sources, je te cueillerai des baies. Je veux pêcher pour toi et t&#x27;apporter du bois à ta suffisance. La peste étreigne le tyran que je sers! je ne lui porterai plus de fagots; mais c&#x27;est toi que je servirai, homme merveilleux.</p>
+<p>TRINCULO.--Un monstre bien ridicule, de faire une merveille d&#x27;un pauvre ivrogne!</p>
+<p>CALIBAN.--Je t&#x27;en prie, laisse-moi te mener à l&#x27;endroit où croissent les pommes sauvages: de mes longs ongles je déterrerai des truffes; je te montrerai un nid de geais, et je t&#x27;enseignerai à prendre au piège le singe agile; je te conduirai à l&#x27;endroit où sont les bosquets de noisettes, et quelquefois je t&#x27;apporterai du rocher de jeunes pingouins. Veux-tu venir avec moi?</p>
+<p>STEPHANO.--J&#x27;y consens; marche devant nous sans babiller davantage.--Trinculo, le roi et tout le reste de la compagnie étant noyés, nous héritons de tout ici.--(A Caliban.) Viens, porte ma bouteille.--Camarade Trinculo, nous allons tout à l&#x27;heure la remplir de nouveau.</p>
+<p>CALIBAN chante comme un ivrogne.</p>
+<p>Adieu, mon maître; adieu, adieu.</p>
+<p>TRINCULO.--Monstre hurlant! ivrogne de monstre!</p>
+<h3 class="sub">Caliban.</h3>
+<p>Je ne ferai plus de viviers pour le poisson; Je n&#x27;apporterai plus à ton commandement de quoi faire le feu. Je ne gratterai plus la table et ne laverai plus les plats, Ban, ban, Ca.... Caliban A un autre maître, devient un autre homme.</p>
+<p>Liberté! vive la joie! vive la joie! liberté! liberté! vive la joie! liberté!</p>
+<p>STEPHANO.--Le brave monstre! Allons, conduis-nous.</p>
+<p>(Ils sortent.)</p>
+<h3 class="sub">Troisième acte — Scène I</h3>
+<p>(Le devant de la caverne de Prospero.)</p>
+<p>FERDINAND paraît chargé d&#x27;un morceau de bois.</p>
+<p>Il y a des jeux mêlés de travail, mais le plaisir qu&#x27;ils donnent fait oublier la fatigue. Il est telle sorte d&#x27;abaissement qu&#x27;on peut supporter avec noblesse; les plus misérables travaux peuvent avoir un but magnifique. Cette tâche ignoble qu&#x27;on m&#x27;impose serait pour moi aussi accablante qu&#x27;elle m&#x27;est odieuse; mais la maîtresse que je sers ranime ce qui est mort et change mes travaux en plaisir. Oh! elle est dix fois plus aimable que son père n&#x27;est rude, et il est tout composé de dureté. Un ordre menaçant m&#x27;oblige à transporter quelques milliers de ces morceaux de bois et à les mettre en tas. Ma douce maîtresse pleure quand elle me voit travailler, et dit que jamais si basse besogne ne fut faite par de telles mains. Je m&#x27;oublie; mais ces douces pensées me rafraîchissent même durant mon travail; je m&#x27;en sens moins surchargé.</p>
+<p>(Entrent Miranda, et Prospero à quelque distance.)</p>
+<p>MIRANDA.--Hélas! je vous en prie, ne travaillez pas si fort: je voudrais que la foudre eût brûlé tout ce bois qu&#x27;il vous faut entasser. De grâce, mettez-le à terre, et reposez-vous: quand il brûlera, il pleurera de vous avoir fatigué. Mon père est dans le fort de l&#x27;étude: reposez-vous, je vous en prie; nous n&#x27;avons pas à craindre qu&#x27;il vienne avant trois heures d&#x27;ici.</p>
+<p>FERDINAND.--O ma chère maîtresse, le soleil sera couché avant que j&#x27;aie fini la tâche que je dois m&#x27;efforcer de remplir.</p>
+<p>MIRANDA.--Si vous voulez vous asseoir, moi pendant ce temps je vais porter ce bois. Je vous en prie, donnez-moi cela, je le porterai au tas.</p>
+<p>FERDINAND.--Non, précieuse créature, j&#x27;aimerais mieux rompre mes muscles, briser mes reins, que de vous voir ainsi vous abaisser, tandis que je resterais là oisif.</p>
+<p>MIRANDA.--Cela me conviendrait tout aussi bien qu&#x27;à vous, et je le ferais avec bien moins de fatigue, car mon coeur serait à l&#x27;ouvrage, et le vôtre y répugne.</p>
+<p>PROSPERO.--Pauvre vermisseau, tu as pris le poison, cette visite en est la preuve.</p>
+<p>MIRANDA.--Vous avez l&#x27;air fatigué.</p>
+<p>FERDINAND.--Non, ma noble maîtresse: quand vous êtes près de moi, l&#x27;obscurité devient pour moi un brillant matin. Je vous en conjure, et c&#x27;est surtout pour le placer dans mes prières, quel est votre nom?</p>
+<p>MIRANDA.--Miranda. O mon père, en le disant, je viens de désobéir à vos ordres.</p>
+<p>FERDINAND.--Charmante Miranda! objet en effet de la plus haute admiration, digne de ce qu&#x27;il y a de plus précieux au monde! j&#x27;ai regardé beaucoup de femmes du regard le plus favorable; plus d&#x27;une fois la mélodie de leur voix a captivé mon oreille trop prompte à les écouter. Diverses femmes m&#x27;ont plu par des qualités diverses, mais jamais je n&#x27;en aimai aucune sans que quelque défaut vint s&#x27;opposer à l&#x27;effet de la plus noble grâce et la faire disparaître. Mais vous, vous si parfaite, si supérieure à toutes, vous avez été créée de ce qu&#x27;il y a de meilleur dans chaque créature.</p>
+<p>MIRANDA.--Je ne connais personne de mon sexe: je ne me rappelle aucun visage de femme, si ce n&#x27;est le mien reflété dans mon miroir, et je n&#x27;ai vu de ce que je puis appeler des hommes que vous, mon doux ami, et mon cher père. Je ne sais pas comment sont les traits hors de cette île; mais sur ma pudeur, qui est le joyau de ma dot, je ne pourrais souhaiter dans le monde d&#x27;autre compagnon que vous, et l&#x27;imagination ne saurait rêver d&#x27;autre forme à aimer que la vôtre. Mais je babille un peu trop follement, et j&#x27;oublie en le faisant les leçons de mon père.</p>
+<p>FERDINAND.--Je suis prince par ma condition, Miranda; je crois même être roi (je voudrais qu&#x27;il n&#x27;en fût pas ainsi), et je ne suis pas plus disposé à demeurer esclave sous ce bois, qu&#x27;à endurer sur ma bouche les piqûres de la grosse mouche à viande. Écoutez parler mon âme: à l&#x27;instant où je vous ai vue, mon coeur a volé à votre service; voilà ce qui m&#x27;enchaîne, et c&#x27;est pour l&#x27;amour de vous que je suis ce bûcheron si patient.</p>
+<p>MIRANDA.--M&#x27;aimez-vous?</p>
+<p>FERDINAND.--O ciel! O terre! rendez témoignage de cette parole, et si je parle sincèrement, couronnez de succès ce que je déclare; si mes discours sont trompeurs, convertissez en revers tout ce qui m&#x27;est présagé de bonheur. Je vous aime, vous prise, vous honore bien au delà de tout ce qui dans le monde n&#x27;est pas vous.</p>
+<p>MIRANDA.--Je suis une folle de pleurer de ce qui me donne de la joie.</p>
+<p>PROSPERO.--Belle rencontre de deux affections des plus rares! Ciel, verse tes faveurs sur le sentiment qui naît entre eux!</p>
+<p>FERDINAND.--Pourquoi pleurez-vous?</p>
+<p>MIRANDA.--A cause de mon peu de mérite, qui n&#x27;ose offrir ce que je désire donner, et qui ose encore moins accepter ce dont la privation me ferait mourir. Mais ce sont là des niaiseries; et plus mon amour cherche à se cacher, plus il s&#x27;accroît et devient apparent. Loin de moi, timides artifices; inspire-moi, franche et sainte innocence: je suis votre femme si vous voulez m&#x27;épouser; sinon je mourrai fille et le coeur à vous. Vous pouvez me refuser pour compagne; mais, que vous le vouliez ou non, je serai votre servante.</p>
+<p>FERDINAND.--Ma maîtresse, ma bien-aimée; et moi toujours ainsi à vos pieds.</p>
+<p>MIRANDA.--Vous serez donc mon mari?</p>
+<p>FERDINAND.--Oui, et d&#x27;un coeur aussi désireux que l&#x27;esclave l&#x27;est de la liberté. Voilà ma main.</p>
+<p>MIRANDA.--Et voilà la mienne, et dedans est mon coeur. Maintenant adieu, pour une demi-heure.</p>
+<p>FERDINAND.--Dites mille! mille!</p>
+<p>(Ferdinand et Miranda sortent.)</p>
+<p>PROSPERO.--Je ne puis être heureux de ce qui se passe autant qu&#x27;eux qui sont surpris du même coup; mais il n&#x27;est rien qui pût me donner plus de joie. Je retourne à mon livre, car il faut qu&#x27;avant l&#x27;heure du souper j&#x27;aie fait encore bien des choses pour l&#x27;accomplissement de ceci.</p>
+<p>(Il sort.)</p>
+<h2 class="chapter" id="c5">Scène II</h2>
+<p>(Une autre partie de l&#x27;île.)</p>
+<p>STEPHANO, TRINCULO, CALIBAN les suit tenant une bouteille.</p>
+<p>STEPHANO.--Ne m&#x27;en parle plus. Quand la futaille sera à sec, nous boirons de l&#x27;eau; pas une goutte auparavant. Ainsi, ferme et à l&#x27;abordage! Mon laquais de monstre, bois à ma santé.</p>
+<p>TRINCULO.--Son laquais de monstre! la folie de cette île les tient! On dit que l&#x27;île n&#x27;a en tout que cinq habitants: des cinq nous en voilà trois; si les deux autres ont le cerveau timbré comme nous, l&#x27;État chancelle.</p>
+<p>STEPHANO.--Bois donc, laquais de monstre, quand je te l&#x27;ordonne. Tu as tout à fait les yeux dans la tête.</p>
+<p>TRINCULO.--Où voudrais-tu qu&#x27;il les eût? Ce serait un monstre bien bâti s&#x27;il les avait dans la queue.</p>
+<p>STEPHANO.--Mon serviteur le monstre a noyé sa langue dans le vin. Pour moi, la mer ne peut me noyer. J&#x27;ai nagé trente-cinq lieues nord et sud avant de pouvoir gagner terre, vrai comme il fait jour. Tu seras mon lieutenant, monstre, ou mon enseigne.</p>
+<p>TRINCULO.--Votre lieutenant, si vous m&#x27;en croyez; il n&#x27;est pas bon à montrer comme enseigne[11].</p>
+<p>[Note 11: TRINCULO.--Your lieutenant, if you list; he&#x27;s no standard. Standard signifie enseigne, modèle: il signifie aussi un arbre fruitier qui se soutient sans tuteur. M. Steevens croit que la plaisanterie de Trinculo porte sur ce dernier sens du mot standard, et qu&#x27;il répond à Stephano que Caliban, trop ivre pour se tenir sur ses pieds, ne peut être pris pour un standard, une chose qui se tient debout (stands). On peut supposer aussi que Trinculo fait allusion à la difformité de Caliban, et dit qu&#x27;il ne peut être pris pour un modèle. Quel que soit celui des deux sens qu&#x27;a voulu présenter Shakspeare (et peut-être a-t-il songé à tous les deux), l&#x27;un et l&#x27;autre étaient impossibles à exprimer en français sans rendre la réponse de Trinculo tout à fait inintelligible: on s&#x27;est approché autant qu&#x27;on l&#x27;a pu du dernier.]</p>
+<p>STEPHANO.--Nous ne nous enfuirons pas, monsieur le monstre[12].</p>
+<p>[Note 12: Dans l&#x27;original, Monsieur Monster.]</p>
+<p>TRINCULO.--Vous n&#x27;avancerez pas non plus, mais vous demeurerez couchés comme des chiens, sans rien dire ni l&#x27;un ni l&#x27;autre.</p>
+<p>STEPHANO.--Veau de lune, parle une fois en ta vie, si tu es un homme, veau de lune.</p>
+<p>CALIBAN.-Comment se porte ta Grandeur? Permets-moi de baiser ton pied.--Je ne veux pas le servir lui, il n&#x27;est pas brave.</p>
+<p>TRINCULO.--Tu mens, le plus ignorant des monstres: je suis dans le cas de colleter un constable. Parle, toi, poisson débauché, a-t-on jamais fait passer pour un poltron un homme qui a bu autant de vin que j&#x27;en ai bu aujourd&#x27;hui? Iras-tu me faire un monstrueux mensonge, toi qui n&#x27;es que la moitié d&#x27;un poisson et la moitié d&#x27;un monstre?</p>
+<p>CALIBAN.--Là! comme il se moque de moi! Le laisseras-tu dire, mon seigneur?</p>
+<p>TRINCULO.--Mon seigneur, dit-il?--Qu&#x27;un monstre puisse être si niais!</p>
+<p>CALIBAN.--Là! là! encore! Je t&#x27;en prie, mords-le à mourir.</p>
+<p>STEPHANO.--Trinculo, tâche d&#x27;avoir dans ta tête une bonne langue. Si tu t&#x27;avisais de te mutiner, le premier arbre..... Ce pauvre monstre est mon sujet, et je ne souffrirai pas qu&#x27;on l&#x27;insulte.</p>
+<p>CALIBAN.--Je remercie mon noble maître. Te plaît-il d&#x27;ouïr encore la prière que je t&#x27;ai faite?</p>
+<p>STEPHANO.--Oui-da, j&#x27;y consens. A genoux, et répète-la. Je resterai debout, et Trinculo aussi.</p>
+<p>(Entre Ariel invisible.)</p>
+<p>CALIBAN.--Comme je te l&#x27;ai dit tantôt, je suis sujet d&#x27;un tyran, d&#x27;un sorcier qui par ses fraudes m&#x27;a volé cette île.</p>
+<p>ARIEL.--Tu mens.</p>
+<p>CALIBAN.--Tu mens toi-même, malicieux singe. Je voudrais bien qu&#x27;il plût à mon vaillant maître de t&#x27;exterminer. Je ne mens point.</p>
+<p>STEPHANO.--Trinculo, si vous le troublez encore dans son récit, par cette main, je ferai sauter quelqu&#x27;une de vos dents.</p>
+<p>TRINCULO.--Quoi! je n&#x27;ai rien dit.</p>
+<p>STEPHANO.--Tu peux murmurer tout bas, pas davantage. (A Caliban.) Poursuis.</p>
+<p>CALIBAN.--Je dis que par sortilège il a pris cette île; il l&#x27;a prise sur moi. S&#x27;il plaît à ta Grandeur de me venger de lui, car je sais bien que tu es courageux, mais celui-là ne l&#x27;est pas....</p>
+<p>STEPHANO.--Cela est très-certain.</p>
+<p>CALIBAN.--Tu seras le seigneur de l&#x27;île, et moi je te servirai.</p>
+<p>STEPHANO.--Mais comment en venir à bout? Peux-tu me conduire à l&#x27;ennemi?</p>
+<p>CALIBAN.--Oui, oui, mon seigneur; je promets de te le livrer endormi, de manière à ce que tu puisses lui enfoncer un clou dans la tête.</p>
+<p>ARIEL.--Tu mens, tu ne le peux pas.</p>
+<p>CALIBAN.--Quel fou bigarré est-ce là? Vilain pleutre! Je conjure ta Grandeur de lui donner des coups, et de lui reprendre cette bouteille: quand il ne l&#x27;aura plus, il faudra qu&#x27;il boive de l&#x27;eau de mare, car je ne lui montrerai pas où sont les sources vives.</p>
+<p>STEPHANO.--Crois-moi, Trinculo, ne t&#x27;expose pas davantage au danger. Interromps encore le monstre d&#x27;un seul mot, et je mets ma clémence à la porte, et je fais de toi un hareng sec.</p>
+<p>TRINCULO.--Eh quoi! que fais-je? Je n&#x27;ai rien fait; je vais m&#x27;éloigner de vous.</p>
+<p>STEPHANO.--N&#x27;as-tu pas dit qu&#x27;il mentait?</p>
+<p>ARIEL.--Tu mens.</p>
+<p>STEPHANO.--Oui? (Il le bat.) Prends ceci pour toi. Si cela vous plaît, donnez-moi un démenti une autre fois.</p>
+<p>TRINCULO.--Je ne vous ai point donné de démenti. Quoi! avez-vous perdu la raison et l&#x27;ouïe aussi? La peste soit de votre bouteille! Voilà ce qu&#x27;opèrent l&#x27;ivresse et le vin! La peste soit de votre monstre, et que le diable vous emporte les doigts!</p>
+<p>CALIBAN.--Ha, ha, ha!</p>
+<p>STEPHANO.--Maintenant continuez votre histoire.--Je t&#x27;en prie, va-t&#x27;en plus loin.</p>
+<p>CALIBAN.--Bats-le bien. Après quoi je le battrai aussi, moi.</p>
+<p>STEPHANO.--Tiens-toi plus loin.--Allons, toi, poursuis.</p>
+<p>CALIBAN.--Eh bien! comme je te l&#x27;ai dit, c&#x27;est sa coutume à lui de dormir dans l&#x27;après-midi. Alors tu peux lui faire sauter la cervelle après avoir d&#x27;abord saisi ses livres, ou avec une bûche lui briser le crâne, ou l&#x27;éventrer avec un pieu, ou lui couper la gorge avec un couteau. Mais souviens-toi de t&#x27;emparer d&#x27;abord de ses livres, car sans eux il n&#x27;est qu&#x27;un sot comme moi et n&#x27;a pas un seul esprit à ses ordres: ils le haïssent tous aussi radicalement que moi. Ne brûle que ses livres. Il a de beaux ustensiles, c&#x27;est ainsi qu&#x27;il les nomme, dont il ornera sa maison quand il en aura une: et surtout, ce qui mérite d&#x27;être sérieusement considéré, c&#x27;est la beauté de sa fille; lui-même il l&#x27;appelle incomparable. Jamais je n&#x27;ai vu de femme que ma mère Sycorax et elle; mais elle l&#x27;emporte autant sur Sycorax que le plus grand sur le plus petit.</p>
+<p>STEPHANO.--Est-ce donc un si beau brin de fille?</p>
+<p>CALIBAN.--Oui, mon prince: je te réponds qu&#x27;elle convient à ton lit, et qu&#x27;elle te produira une belle lignée.</p>
+<p>STEPHANO.--Monstre, je tuerai cet homme. Sa fille et moi, nous serons roi et reine. Dieu conserve nos excellences! et Trinculo et toi, vous serez nos vice-rois. Goûtes-tu le projet, Trinculo?</p>
+<p>TRINCULO.--Excellent.</p>
+<p>STEPHANO.--Donne-moi ta main. Je suis fâché de t&#x27;avoir battu; mais, tant que tu vivras, tâche ne n&#x27;avoir dans ta tête qu&#x27;une bonne langue.</p>
+<p>CALIBAN.--Dans moins d&#x27;une demi-heure il sera endormi: veux-tu l&#x27;exterminer alors?</p>
+<p>STEPHANO.--Oui, sur mon honneur!</p>
+<p>ARIEL.--Je dirai cela à mon maître.</p>
+<p>CALIBAN.--Tu me rends gai; je suis plein d&#x27;allégresse. Allons, soyons joyeux; voulez-vous chanter le canon[13] que vous m&#x27;avez appris tout à l&#x27;heure?</p>
+<p>[Note 13: Troll the catch. L&#x27;un des commentateurs de Shakspeare, M. Steevens, parait embarrassé du sens de cette expression. Mais il me semble que les deux mots dont elle se compose s&#x27;expliquent l&#x27;un l&#x27;autre. Troll signifie mouvoir circulairement, rouler, tourner, etc., catch, un chant successif (sung in succession); c&#x27;est là la définition du canon, sorte de figure que l&#x27;Académie appelle perpétuelle, qu&#x27;on pourrait aussi appeler circulaire, puisqu&#x27;elle consiste dans le retour perpétuel des mêmes passages successivement répétés par un certain nombre de personnes. Ce qui confirme cette explication, c&#x27;est que Stephano, accédant au désir de Caliban, appelle Trinculo pour chanter avec lui, puis commence seul (sings), parce qu&#x27;en effet un canon, toujours chanté par plusieurs voix, est nécessairement commencé par une seule.]</p>
+<p>STEPHANO.--Je veux faire raison à ta requête, monstre; oui, toujours raison. Allons, Trinculo, chantons.</p>
+<p>(Stephano chante.)</p>
+<p>Moquons-nous d&#x27;eux; observons-les, observons-les, et moquons-nous d&#x27;eux; La pensée est libre.</p>
+<p>CALIBAN.--Ce n&#x27;est pas l&#x27;air. (Ariel joue l&#x27;air sur un pipeau et s&#x27;accompagne d&#x27;un tambourin.)</p>
+<p>STEPHANO.--Qu&#x27;est-ce que c&#x27;est que cette répétition?</p>
+<p>TRINCULO.--C&#x27;est l&#x27;air de notre canon joué par la figure de personne.[14]</p>
+<p>[Note 14: La figure de no-body (de personne) est une figure ridicule, représentée quelquefois en Angleterre sur les enseignes.]</p>
+<p>STEPHANO.--Si tu es homme, montre-toi sous ta propre figure; si tu es le diable, prends celle que tu voudras.</p>
+<p>TRINCULO.--Oh! pardonnez-moi mes péchés.</p>
+<p>STEPHANO.--Qui meurt a payé toutes ses dettes.--Je te défie... merci de nous!</p>
+<p>CALIBAN.--As-tu peur?</p>
+<p>STEPHANO.--Moi, monstre? Non.</p>
+<p>CALIBAN.--N&#x27;aie pas peur: l&#x27;île est remplie de bruits, de sons et de doux airs qui donnent du plaisir sans jamais faire de mal. Quelquefois des milliers d&#x27;instruments tintent confusément autour de mes oreilles; quelquefois ce sont des voix telles que, si je m&#x27;éveillais alors après un long sommeil, elles me feraient dormir encore; et quelquefois en rêvant, il m&#x27;a semblé voir les nuées s&#x27;ouvrir et me montrer des richesses prêtes à pleuvoir sur moi; en sorte que lorsque je m&#x27;éveillais, je pleurais d&#x27;envie de rêver encore.</p>
+<p>STEPHANO.--Cela me fera un beau royaume où j&#x27;aurai ma musique pour rien.</p>
+<p>CALIBAN.--Quand Prospero sera tué.</p>
+<p>STEPHANO.--C&#x27;est ce qui arrivera tout à l&#x27;heure: je n&#x27;ai pas oublié ce que tu m&#x27;as conté.</p>
+<p>TRINCULO.--Le son s&#x27;éloigne. Suivons-le, et après faisons notre besogne.</p>
+<p>STEPHANO.--Guide-nous, monstre; nous te suivons.--Je serais bien aise de voir ce tambourineur: il va bon train.</p>
+<p>TRINCULO.--Viens-tu?--Je te suivrai, Stephano.</p>
+<p>(Ils sortent.)</p>
+<h2 class="chapter" id="c6">Scène III</h2>
+<p>(Une autre partie de l&#x27;île.)</p>
+<p>Entrent ALONZO, SÉBASTIEN, ANTONIO, GONZALO, ADRIAN, FRANCISCO ET AUTRES.</p>
+<p>GONZALO.--Par Notre-Dame, je ne puis aller plus loin, seigneur. Mes vieux os me font mal; c&#x27;est un vrai labyrinthe que nous avons parcouru là par tant de sentiers, droits ou tortueux. J&#x27;en jure par votre patience, j&#x27;ai besoin de me reposer.</p>
+<p>ALONZO.--Mon vieux seigneur, je ne peux te blâmer; je sens moi-même la lassitude tenir mes esprits dans l&#x27;engourdissement. Asseyez-vous et reposez-vous; et moi je veux laisser ici mon espoir, et ne pas plus longtemps lui permettre de me flatter. Il est noyé, celui après lequel nous errons ainsi, et la mer se rit de ces vaines recherches que nous avons faites sur la terre. Soit, qu&#x27;il repose en paix!</p>
+<p>ANTONIO, bas à Sébastien.--Je suis bien aise qu&#x27;il soit ainsi tout à fait sans espérance.--N&#x27;allez pas pour un contretemps renoncer au projet que vous étiez résolu d&#x27;exécuter.</p>
+<p>SÉBASTIEN.--Nous l&#x27;accomplirons à la première occasion favorable.</p>
+<p>ANTONIO.--Cette nuit donc; car, épuisés comme ils le sont par cette marche, ils ne voudront ni ne pourront exercer la même vigilance que lorsqu&#x27;ils sont frais et dispos.</p>
+<p>SÉBASTIEN.--Oui, cette nuit; n&#x27;en parlons plus.</p>
+<p>(On entend une musique solennelle et singulière. Prospero est invisible dans les airs. Entrent plusieurs fantômes sous des formes bizarres, qui apportent une table servie pour un festin. Ils forment autour de la table une danse mêlée de saluts et de signes engageants, invitant le roi et ceux de sa suite à manger. Ils disparaissant ensuite.)</p>
+<p>ALONZO.--Quelle est cette harmonie? mes bons amis, écoutons!</p>
+<p>GONZALO.--Une musique d&#x27;une douceur merveilleuse.</p>
+<p>ALONZO.--Ciel! ne nous livrez qu&#x27;à des puissances favorables. Quels étaient ces gens-là?</p>
+<p>SÉBASTIEN.--Des marionnettes vivantes. Maintenant je croirai qu&#x27;il existe des licornes, qu&#x27;il est dans l&#x27;Arabie un arbre servant de trône au phénix, et qu&#x27;un phénix y règne encore aujourd&#x27;hui.</p>
+<p>ANTONIO.--Je crois à tout cela; et, si l&#x27;on refuse d&#x27;ajouter foi à quelque autre chose, je jurerai qu&#x27;elle est vraie. Jamais les voyageurs n&#x27;ont menti, quoique dans leurs pays les idiots les condamnent.</p>
+<p>GONZALO.--Voudrait-on me croire si je racontais ceci à Naples? Si je leur disais que j&#x27;ai vu des insulaires ainsi faits, car certainement c&#x27;est là le peuple de cette île; et, qu&#x27;avec des formes monstrueuses, ils ont, remarquez bien ceci, des moeurs plus douces que vous n&#x27;en trouveriez chez beaucoup d&#x27;hommes de notre temps, je dirais presque chez aucun?</p>
+<p>PROSPERO, à part.--Honnête seigneur, tu as dit le mot; car quelques-uns de vous ici présents êtes pires que des démons.</p>
+<p>ALONZO.--Je ne me lasse point de songer à leurs formes étranges, à leurs gestes, à ces sons qui, bien qu&#x27;il y manque l&#x27;assistance de la parole, expriment pourtant dans leur langage muet d&#x27;excellentes choses.</p>
+<p>PROSPERO, à part.--Ne louez pas avant le départ.</p>
+<p>FRANCISCO.--Ils se sont étrangement évanouis.</p>
+<p>SÉBASTIEN.--Qu&#x27;importe! puisqu&#x27;ils ont laissé les munitions, car nous avons faim.--Vous plairait-il de goûter de ceci?</p>
+<p>ALONZO.--Non pas moi.</p>
+<p>GONZALO.--Ma foi, seigneur, vous n&#x27;avez rien à craindre. Quand nous étions enfants, qui aurait voulu croire qu&#x27;il existât des montagnards portant des fanons comme les taureaux, et ayant à leur cou des masses de chair pendantes; et qu&#x27;il y eût des hommes dont la tête fût placée au milieu de leur poitrine? Et cependant nous ne voyons pas aujourd&#x27;hui d&#x27;emprunteur de fonds à cinq pour un[15] qui ne nous rapporte ces faits dûment attestés.</p>
+<p>[Note 15: Allusion à la coutume où l&#x27;on était alors, quand on partait pour un voyage long et périlleux, de placer une somme d&#x27;argent dont on ne devait recevoir l&#x27;intérêt qu&#x27;à son retour; mais le placement se faisait alors à un taux très-élevé.]</p>
+<p>ALONZO.--Je m&#x27;approcherai de cette table et je mangerai, dût ce repas être pour moi le dernier. Eh! qu&#x27;importe! puisque le meilleur de ma vie est passé. Mon frère, seigneur duc, approchez-vous et faites comme nous.</p>
+<p>(Des éclairs et du tonnerre. Ariel, sous la forme d&#x27;une harpie, fond sur la table, secoue ses ailes sur les plats, et par un tour subtil le banquet disparaît.)</p>
+<p>ARIEL.--Vous êtes trois hommes de crime que la destinée (qui se sert comme instrument de ce bas monde et de tout ce qu&#x27;il renferme) a fait vomir par la mer insatiable dans cette île où n&#x27;habite point l&#x27;homme, parce que vous n&#x27;êtes point faits pour vivre parmi les hommes. Je vous ai rendus fous. (Voyant Alonzo, Sébastien et les autres tirer leurs épées.)</p>
+<p>C&#x27;est avec un courage de cette espèce que des hommes se pendent et se noient. Insensés que vous êtes, mes compagnons et moi nous sommes les ministres du Destin: les éléments dont se compose la trempe de vos épées peuvent aussi aisément blesser les vents bruyants ou, par de ridicules estocades, percer à mort l&#x27;eau qui se referme à l&#x27;instant, que raccourcir un seul brin de mes plumes. Mes compagnons sont invulnérables comme moi; et puissiez-vous nous blesser avec vos armes, elles sont maintenant trop pesantes pour vos forces: elles ne se laisseront plus soulever. Mais souvenez-vous, car tel est ici l&#x27;objet de mon message, que vous trois vous avez expulsé de son duché de Milan le vertueux Prospero; que vous l&#x27;avez exposé sur la mer (qui depuis vous en a payé le salaire), lui et sa fille innocente. C&#x27;est pour cette action odieuse que des destins qui tardent, mais qui n&#x27;oublient pas, ont irrité les mers et les rivages, et mêmes toutes les créatures contre votre repos. Toi, Alonzo, ils t&#x27;ont privé de ton fils. Ils vous annoncent par ma voix qu&#x27;une destruction prolongée (pire qu&#x27;une mort subite) va vous suivre pas à pas et dans toutes vos actions. Pour vous préserver des vengeances (qui autrement vont éclater sur vos têtes dans cette île désolée), il ne vous reste plus que le remords du coeur, et ensuite une vie sans reproche.</p>
+<p>(Ariel s&#x27;évapore au milieu d&#x27;un coup de tonnerre. Ensuite, au son d&#x27;une musique agréable, les fantômes rentrent et dansent en faisant des grimaces moqueuses, et emportent la table.)</p>
+<p>PROSPERO, à part, à Ariel.--Tu as très-bien joué ce rôle de harpie, mon Ariel: elle avait de la grâce en dévorant. Dans tout ce que tu as dit, tu n&#x27;as rien omis de l&#x27;instruction que je t&#x27;avais donnée. Mes esprits secondaires ont aussi rendu d&#x27;après nature et avec une vérité bizarre leurs différentes espèces de personnages. Mes charmes puissants opèrent, et ces hommes qui sont mes ennemis sont tout éperdus. Les voilà en mon pouvoir: je veux les laisser dans ces accès de frénésie, tandis que je vais revoir le jeune Ferdinand qu&#x27;ils croient noyé, et sa chère, ma chère bien-aimée.</p>
+<p>GONZALO.--Au nom de ce qui est saint, seigneur, pourquoi restez-vous ainsi, le regard fixe et effrayé?</p>
+<p>ALONZO.--O c&#x27;est horrible! horrible! il m&#x27;a semblé que les vagues avaient une voix et m&#x27;en parlaient. Les vents le chantaient autour de moi; et le tonnerre, ce profond et terrible tuyau d&#x27;orgue, prononçait le nom de Prospero, et de sa voix de basse récitait mon injustice. Mon fils est donc couché dans le limon de la mer! J&#x27;irai le chercher plus avant que jamais n&#x27;a pénétré la sonde, et je reposerai avec lui dans la vase.</p>
+<p>(Il sort.)</p>
+<p>SÉBASTIEN.--Un seul démon à la fois, et je vaincrai leurs légions.</p>
+<p>ANTONIO.--Je serai ton second.</p>
+<p>(Ils sortent.)</p>
+<p>GONZALO.--Ils sont tous trois désespérés. Leur crime odieux, comme un poison qui ne doit opérer qu&#x27;après un long espace de temps, commence à ronger leurs âmes. Je vous en conjure, vous dont les muscles sont plus souples que les miens, suivez-les rapidement, et sauvez-les des actions où peut les entraîner le désordre de leurs sens.</p>
+<p>ADRIAN.--Suivez-nous, je vous prie.</p>
+<p>(Ils sortent.)</p>
+<h3 class="sub">Fin du troisième acte — Acte quatrième</h3>
+<h2 class="chapter" id="c7">Scène I</h2>
+<p>(Le devant de la grotte de Prospero.)</p>
+<p>Entrent PROSPERO, FERDINAND ET MIRANDA.</p>
+<p>PROSPERO, à Ferdinand.--Si je vous ai puni trop sévèrement, tout est réparé par la compensation que je vous offre, car je vous ai donné ici un fil de ma propre vie, ou plutôt celle pour qui je vis. Je la remets encore une fois dans tes mains. Tous tes ennuis n&#x27;ont été que les épreuves que je voulais faire subir à ton amour, et tu les as merveilleusement soutenus. Ici, à la face du ciel, je ratifie ce don précieux que je t&#x27;ai fait. O Ferdinand, ne souris point de moi si je la vante; car tu reconnaîtras qu&#x27;elle surpasse toute louange, et la laisse bien loin derrière elle.</p>
+<p>FERDINAND.--Je le croirais, un oracle m&#x27;eût-il dit le contraire.</p>
+<p>PROSPERO.--Reçois donc ma fille comme un don de ma main, et aussi comme un bien qui t&#x27;appartient pour l&#x27;avoir dignement acquis. Mais si tu romps le noeud virginal avant que toutes les saintes cérémonies aient été accomplies dans la plénitude de leurs rites pieux, jamais le ciel ne répandra sur cette union les douces influences capables de la faire prospérer; la haine stérile, le dédain au regard amer, et la discorde, sèmeront votre lit nuptial de tant de ronces rebutantes, que vous le prendrez tous deux en haine. Ainsi, au nom de la lampe d&#x27;hymen qui doit vous éclairer, prenez garde à vous.</p>
+<p>FERDINAND.--Comme il est vrai que j&#x27;espère des jours paisibles, une belle lignée, une longue vie accompagnée d&#x27;un amour pareil à celui d&#x27;aujourd&#x27;hui, l&#x27;antre le plus sombre, le lieu le plus propice, les plus fortes suggestions de notre plus mauvais génie, rien ne pourra amollir mon honneur jusqu&#x27;à des désirs impurs; rien ne me fera consentir à dépouiller de son vif aiguillon ce jour de la célébration, que je passerai à imaginer que les coursiers de Phoebus se sont fourbus, ou que la nuit demeure là-bas enchaînée.</p>
+<p>PROSPERO.--Noblement parlé. Assieds-toi donc, et cause avec elle; elle est à toi.--Allons, Ariel, mon ingénieux serviteur, mon Ariel!</p>
+<p>(Entre Ariel.)</p>
+<p>ARIEL.--Que désire mon puissant maître? me voici.</p>
+<p>PROSPERO.--Toi et les esprits que tu commandes, vous avez tous dignement rempli votre dernier emploi. J&#x27;ai besoin de vous encore pour un autre artifice du même genre. Pars, et amène ici, dans ce lieu, tout ce menu peuple des esprits sur lesquels je t&#x27;ai donné pouvoir. Anime-les à de rapides mouvements, car il faut que je fasse voir à ce jeune couple quelques-uns des prestiges de mon art. C&#x27;est ma promesse, et ils l&#x27;attendent de moi.</p>
+<p>ARIEL.--Immédiatement?</p>
+<p>PROSPERO.--Oui, dans un clin d&#x27;oeil.</p>
+<p>ARIEL.--Vous n&#x27;aurez pas dit va et reviens, et respiré deux fois et crié allons, allons, que chacun, accourant à pas légers sur la pointe du pied, sera devant vous avec sa moue et ses grimaces. M&#x27;aimez-vous, mon maître? non?</p>
+<p>PROSPERO.--Tendrement, mon joli Ariel. N&#x27;approche pas que tu ne m&#x27;entendes appeler.</p>
+<p>ARIEL.--Oui, je comprends.</p>
+<p>(Il sort.)</p>
+<p>PROSPERO, à Ferdinand.--Songe à tenir ta parole; ne donne pas trop de liberté à tes caresses: lorsque le sang est enflammé, les serments les plus forts ne sont plus que de la paille. Sois plus retenu, ou autrement bonsoir à votre promesse.</p>
+<p>FERDINAND.--Je la garantis, seigneur. Le froid virginal de la blanche neige qui repose sur mon coeur amortit l&#x27;ardeur de mes sens[16].</p>
+<p>[Note 16: Of my liver, de mes reins.]</p>
+<p>PROSPERO.--Bien. (A Ariel.) Allons, mon Ariel, viens maintenant; amène un supplément plutôt que de manquer d&#x27;un seul esprit. Parais-ici, et vivement.... (A Ferdinand.) Point de langue; tout yeux; du silence.</p>
+<p>(Une musique douce.)</p>
+<h3 class="sub">Masque.</h3>
+<p>[Note 17: Le masque était une représentation allégorique qu&#x27;on donnait aux mariages des princes et aux fêtes des cours.]</p>
+<p>(Entre Iris.)</p>
+<p>IRIS.--Cérès, bienfaisante déesse, laisse tes riches plaines de froment, de seigle, d&#x27;orge, de vesce, d&#x27;avoine et de pois; tes montagnes herbues où vivent les broutantes brebis, et tes plates prairies où elles sont tenues à couvert sous le chaume; tes sillons aux bords bien creusés et fouillés qu&#x27;Avril, gonflé d&#x27;humidité, embellit à ta voix, pour former de chastes couronnes aux froides nymphes; et tes bois de genêts qu&#x27;aime le jeune homme délaissé par la jeune fille qu&#x27;il aime; et tes vignobles ceints de palissades; et tes grèves stériles hérissées de rocs où tu vas respirer le grand air: la reine du firmament, dont je suis l&#x27;humide arc-en-ciel et la messagère, te le demande, et te prie de venir ici sur ce gazon partager les jeux de sa souveraine grandeur; ses paons volent vite: approche, riche Cérès, pour la recevoir.</p>
+<p>(Entre Cérès.)</p>
+<p>CÉRÈS.--Salut, messagère aux diverses couleurs, toi qui ne désobéis jamais à l&#x27;épouse de Jupiter; toi qui de tes ailes de safran verses sur mes fleurs des rosées de miel et de fines pluies rafraîchissantes, et qui des deux bouts de ton arc bleu couronnes mes espaces boisés et mes plaines sans arbrisseaux; toi qui fais une riche écharpe à ma noble terre: pourquoi ta reine m&#x27;appelle-t-elle ici sur la verdure de cette herbe menue?</p>
+<p>IRIS.--Pour célébrer une alliance de vrai amour, et pour doter généreusement ces bienheureux amants.</p>
+<p>CÉRÈS.--Dis-moi, arc céleste, sais-tu si Vénus ou son fils accompagnent la reine? Depuis qu&#x27;ils ont tramé le complot qui livra ma fille au ténébreux Pluton, j&#x27;ai fait serment d&#x27;éviter la honteuse société de la mère et de son aveugle fils.</p>
+<p>IRIS.--Ne crains point sa présence ici. Je viens de rencontrer sa divinité fendant les nues vers Paphos, et son fils avec elle traîné par ses colombes. Ils croyaient avoir jeté quelque charme lascif sur cet homme et cette jeune fille, qui ont fait serment qu&#x27;aucun des mystères du lit nuptial ne serait accompli avant que l&#x27;hymen n&#x27;eût allumé son flambeau; mais en vain: l&#x27;amoureuse concubine de Mars s&#x27;en est retournée; sa mauvaise tête de fils a brisé ses flèches; il jure de n&#x27;en plus lancer, et désormais, jouant avec les passereaux, de n&#x27;être plus qu&#x27;un enfant.</p>
+<p>CÉRÈS.--La plus majestueuse des reines, l&#x27;auguste Junon s&#x27;avance: je la reconnais à sa démarche.</p>
+<p>(Entre Junon.)</p>
+<p>JUNON.--Comment se porte ma bienfaisante soeur? Venez avec moi bénir ce couple, afin que leur vie soit prospère, et qu&#x27;ils se voient honorés dans leurs enfants.</p>
+<p>(Elle chante.)</p>
+<p>Honneur, richesses, bénédictions du mariage; Longue continuation et accroissement de bonheur; Joie de toutes les heures soit et demeure sur vous. Junon chante sur vous sa bénédiction.</p>
+<h3 class="sub">Cérès.</h3>
+<p>Produits du sol, surabondance, Granges et greniers toujours remplis; Vignes couvertes de grappes pressées; Plantes courbées sous leurs riches fardeaux; Le printemps revenant pour vous au plus tard A la fin de la récolte; La disette et le besoin toujours loin de vous; Telle est pour vous la bénédiction de Cérès.</p>
+<p>FERDINAND.--Voilà la vision la plus majestueuse, les chants les plus harmonieux!... Y a-t-il de la hardiesse à croire que ce soient là des esprits?</p>
+<p>PROSPERO.--Ce sont des esprits que par mon art j&#x27;ai appelés des lieux où ils sont retenus, pour exécuter ces jeux de mon imagination.</p>
+<p>FERDINAND.--O que je vive toujours ici! Un père, une épouse, si rares, si merveilleux, font de ce lieu un paradis.</p>
+<p>(Junon et Cérès se parlent bas, et envoient Iris faire un message.)</p>
+<p>PROSPERO.--Silence, mon fils: Junon et Cérès s&#x27;entretiennent sérieusement tout bas. Il reste quelque autre chose à faire. Chut! pas une syllabe, ou notre charme est rompu.</p>
+<p>IRIS.--Vous qu&#x27;on appelle naïades, nymphes des ruisseaux sinueux, avec vos couronnes de jonc et vos regards toujours innocents, quittez l&#x27;onde ridée, et venez sur ce gazon vert obéir au signal qui vous appelle: Junon l&#x27;ordonne. Hâtez-vous, chastes nymphes; aidez-nous à célébrer une alliance de vrai amour: ne vous faites pas attendre.</p>
+<p>(Entrent des nymphes.)</p>
+<p>Et vous, moissonneurs armés de faucilles, brûlés du soleil et fatigués d&#x27;août, quittez vos sillons, et livrez-vous à la joie. Chômez ce jour de fête; couvrez-vous de vos chapeaux de paille de seigle, et que chacun de vous se joigne à l&#x27;une de ces fraîches nymphes dans une danse rustique.</p>
+<p>(Entrent des moissonneurs dans le costume de leur état; ils se joignent aux nymphes et forment une danse gracieuse vers la fin de laquelle Prospero tressaille tout à coup et prononce les mots suivants; après quoi les esprits disparaissent lentement avec un bruit étrange, sourd et confus.)</p>
+<p>PROSPERO.--J&#x27;avais oublié l&#x27;odieuse conspiration de cette brute de Caliban et de ses complices contre mes jours: l&#x27;instant où ils doivent exécuter leur complot est presque arrivé. (Aux esprits.) Fort bien.... Éloignez-vous. Rien de plus.</p>
+<p>FERDINAND.--Voilà qui est étrange! Votre père est agité par quelque passion qui travaille violemment son âme.</p>
+<p>MIRANDA.--Jamais jusqu&#x27;à ce jour je ne l&#x27;ai vu troublé d&#x27;une si violente colère.</p>
+<p>PROSPERO.--Vous avez l&#x27;air ému, mon fils, comme si vous étiez rempli d&#x27;effroi. Soyez tranquille. Maintenant voilà nos divertissements finis; nos acteurs, comme je vous l&#x27;ai dit d&#x27;avance, étaient tous des esprits; ils se sont fondus en air, en air subtil; et, pareils à l&#x27;édifice sans base de cette vision, se dissoudront aussi les tours qui se perdent dans les nues, les palais somptueux, les temples solennels, notre vaste globe, oui, notre globe lui-même, et tout ce qu&#x27;il reçoit de la succession des temps; et comme s&#x27;est évanoui cet appareil mensonger, ils se dissoudront, sans même laisser derrière eux la trace que laisse le nuage emporté par le vent. Nous sommes faits de la vaine substance dont se forment les songes, et notre chétive vie est environnée d&#x27;un sommeil.--Seigneur, j&#x27;éprouve quelque chagrin: supportez ma faiblesse; ma vieille tête est troublée; ne vous tourmentez point de mon infirmité. Veuillez rentrer dans ma caverne et vous y reposer. Je vais faire un tour ou deux pour calmer mon esprit agité.</p>
+<p>FERDINAND ET MIRANDA.--Nous vous souhaitons la paix.</p>
+<p>PROSPERO, à Ariel.--Arrive rapide comme ma pensée.--(A Ferdinand et Miranda.) Je vous remercie.--Viens, Ariel.</p>
+<p>ARIEL.--Je suis uni à tes pensées. Que désires-tu?</p>
+<p>PROSPERO.--Esprit, il faut nous préparer à faire face à Caliban.</p>
+<p>ARIEL.--Oui, mon maître. Lorsque je fis paraître Cérès, j&#x27;avais eu l&#x27;idée de t&#x27;en parler; mais j&#x27;ai craint d&#x27;éveiller ta colère.</p>
+<p>PROSPERO.--Redis-moi où tu as laissé ces misérables.</p>
+<p>ARIEL.--Je vous l&#x27;ai dit, seigneur: ils étaient enflammés de boisson, si remplis de bravoure qu&#x27;ils châtiaient l&#x27;air pour leur avoir soufflé dans le visage, et frappaient la terre pour avoir baisé leurs pieds; mais toujours suivant leur projet. Alors j&#x27;ai battu mon tambour: à ce bruit, comme des poulains indomptés, ils ont dressé les oreilles, porté en avant leurs paupières, et levé le nez du côté où ils flairaient la musique. J&#x27;ai tellement charmé leurs oreilles, que, comme des veaux, appelés par le mugissement de la vache, ils ont suivi mes sons au milieu des ronces dentées, des bruyères, des buissons hérissés, des épines qui pénétraient la peau mince de leurs jambes. A la fin, je les ai laissés dans l&#x27;étang au manteau de boue qui est au delà de ta grotte, s&#x27;agitant de tout le corps pour retirer leurs pieds enfoncés dans la fange noire et puante du lac.</p>
+<p>PROSPERO.--Tu as très-bien fait, mon oiseau. Garde encore ta forme invisible. Va, apporte ici tout ce qu&#x27;il y a d&#x27;oripeaux dans ma demeure: c&#x27;est l&#x27;appât où je prendrai ces voleurs.</p>
+<p>ARIEL.--J&#x27;y vais, j&#x27;y vais.</p>
+<p>(Il sort.)</p>
+<p>PROSPERO.--Un démon, un démon incarné dont la nature ne peut jamais offrir aucune prise à l&#x27;éducation, sur qui j&#x27;ai perdu, entièrement perdu toutes les peines que je me suis données par humanité! et comme son corps devient plus difforme avec les années, son âme se gangrène encore.... Je veux qu&#x27;ils souffrent tous jusqu&#x27;à en rugir.--(Rentre Ariel chargé d&#x27;habillements brillants et autres choses du même genre.)--Viens, range-les sur cette corde.</p>
+<p>(Prospero et Ariel demeurent invisibles.)</p>
+<p>(Entrent Caliban, Stephano et Trinculo tout mouillés.)</p>
+<p>CALIBAN.--Je t&#x27;en prie, va d&#x27;un pas si doux que la taupe aveugle ne puisse ouïr ton pied se poser. Nous voilà tout près de sa caverne.</p>
+<p>STEPHANO.--Eh bien! monstre, votre lutin, que vous disiez un lutin sans malice, ne nous a guère mieux traités que le Follet des champs[18].</p>
+<p>[Note 18: Le mot anglais est Jack. On l&#x27;appelle aussi Jack a lantern (Jacques à la lanterne.)]</p>
+<p>TRINCULO.--Monstre, je sens partout le pissat de cheval, ce dont mon nez est en grande indignation.</p>
+<p>STEPHANO.--Le mien aussi, entendez-vous, monstre? Si j&#x27;allais prendre de l&#x27;humeur contre vous, voyez-vous....</p>
+<p>TRINCULO.--Tu serais un monstre perdu.</p>
+<p>CALIBAN.--Mon bon prince, conserve-moi toujours tes bonnes grâces. Aie patience, car le butin auquel je te conduis couvrira bien cette mésaventure: ainsi, parle tout bas. Tout est coi ici, comme s&#x27;il était encore minuit.</p>
+<p>TRINCULO.--Oui, mais avoir perdu nos bouteilles dans la mare!</p>
+<p>STEPHANO.--Il n&#x27;y a pas à cela seulement de la honte, du déshonneur, monstre, mais une perte immense.</p>
+<p>TRINCULO.-Cela m&#x27;est encore plus sensible que de m&#x27;être mouillé.--C&#x27;est cependant votre lutin sans malice, monstre....</p>
+<p>STEPHANO.--Je veux aller rechercher ma bouteille, dussé-je, pour ma peine, en avoir jusque par-dessus les oreilles.</p>
+<p>CALIBAN.--Je t&#x27;en prie, mon prince, ne souffle pas.--Vois-tu bien? voici la bouche de la caverne: point de bruit; entre. Fais-nous ce bon méfait qui pour toujours te met, toi, en possession de cette île; et moi, ton Caliban à tes pieds, pour les lécher éternellement.</p>
+<p>STEPHANO.--Donne-moi ta main. Je commence à avoir des idées sanguinaires.</p>
+<p>TRINCULO.--O roi Stephano[19]! ô mon gentilhomme! ô digne Stephano! regarde; vois quelle garde-robe il y a ici pour toi!</p>
+<p>[Note 19: Allusion à une ancienne ballade King Stephens was a worthy peer (le roi Étienne était un digne gentilhomme), où l&#x27;on célèbre l&#x27;économie de ce prince relativement à sa garde-robe. Il y a dans Othello deux couplets de cette ballade.]</p>
+<p>CALIBAN.--Laisse tout cela, imbécile; ce n&#x27;est que de la drogue.</p>
+<p>TRINCULO.--Oh! oh! monstre, nous nous connaissons en friperie.--O roi Stephano!</p>
+<p>STEPHANO.--Lâche cette robe, Trinculo. Par ma main! je prétends avoir cette robe.</p>
+<p>TRINCULO.--Ta Grandeur l&#x27;aura.</p>
+<p>CALIBAN.--Que l&#x27;hydropisie étouffe cet imbécile! A quoi pensez-vous de vous amuser à ce bagage? Avançons, et faisons le meurtre d&#x27;abord. S&#x27;il se réveille, depuis la plante des pieds jusqu&#x27;au crâne, notre peau ne sera plus que pincements; oh! il nous accoutrera d&#x27;une étrange manière!</p>
+<p>STEPHANO.--Paix, monstre!--Madame la corde, ce pourpoint n&#x27;est-il pas pour moi?--Voilà le pourpoint hors de ligne.--A présent, pourpoint, vous êtes sous la ligne; vous courez risque de perdre vos crins et de devenir un faucon chauve[20].</p>
+<p>[Note 20: Mistress line, is not this my jerkin? Now is the jerkin under the line: now jerkin, you are like to lose your hair and prove a bald jerkin. Line est pris ici dans le sens de corde tendue au premier abord, puis, et en même temps dans celui de ligne équatoriale. Jerkin, d&#x27;un autre côté, signifie pourpoint et faucon. Le pourpoint a probablement été tiré avec quelque difficulté de dessous la corde (line), et sous la ligne (line), l&#x27;équateur, certaines maladies font tomber les cheveux, et les cordes où l&#x27;on tend les habits sont faites de crin (hair, crins et cheveux). Ainsi, le pourpoint (jerkin) tiré de la corde, ou sous la ligne, comme on voudra, perd ses crins ou ses cheveux, et devient un bald jerkin (faucon chauve), espèce d&#x27;oiseau connu sous le nom de choucas.</p>
+<p>Mais c&#x27;en est assez et plus qu&#x27;il ne faut sur cette bizarre plaisanterie.]</p>
+<p>TRINCULO.--Faites, faites. N&#x27;en déplaise à votre Grandeur, nous volons à la ligne et au cordeau.</p>
+<p>STEPHANO.--Je te remercie de ce bon mot. Tiens, voilà un habit pour la peine. Tant que je serai roi de ce pays, l&#x27;esprit n&#x27;ira point sans récompense. «Voler à la ligne et au cordeau!» c&#x27;est un excellent trait d&#x27;estoc. Tiens, encore un habit pour la peine.</p>
+<p>TRINCULO.--Allons, monstre, un peu de glu à vos doigts, et puis emportez-nous le reste.</p>
+<p>CALIBAN.--Je n&#x27;en veux pas. Nous perdrons là notre temps, et nous serons tous changés en oies de mer[21], ou en singes avec des fronts horriblement bas.</p>
+<p>[Note 21: Barnacles, gros oiseau qui, autrefois en Écosse, était supposé sortir d&#x27;une espèce de coquillage qui s&#x27;attachait à la quille des vaisseaux, et porte aussi le nom de barnacle. Dans le nord de l&#x27;Écosse, on croyait de plus que les coquillages d&#x27;où sortaient les barnacles croissaient sur les arbres. Dans le Lancashire, on les appelait tree geese, oies d&#x27;arbre.]</p>
+<p>STEPHANO.--Monstre, étendez vos doigts. Aidez-nous à transporter tout cela à l&#x27;endroit où j&#x27;ai mis mon tonneau de vin, ou je vous chasse de mon royaume. Vite, emportez ceci.</p>
+<p>TRINCULO.--Et ceci.</p>
+<p>STEPHANO.--Oui, et ceci encore.</p>
+<p>(On entend un bruit de chasseurs. Divers esprits accourent sous la forme de chiens de chasse, et poursuivent dans tous les sens Stephano, Trinculo et Caliban. Prospero et Ariel animent la meute.)</p>
+<p>PROSPERO.--Oh! la Montagne! oh!</p>
+<p>ARIEL.--Argent, ici la voie, Argent!</p>
+<p>PROSPERO.--Furie, Furie, là! Tyran, là!--Écoute, écoute! (Caliban, Trinculo et Stephano sont pourchassés hors de la scène.) Va, ordonne à mes lutins de moudre leurs jointures par de dures convulsions; que leurs nerfs se retirent dans des crampes racornies; qu&#x27;ils soient pincés jusqu&#x27;à en être couverts de plus de taches qu&#x27;il n&#x27;y en a sur la peau du léopard ou du chat de montagne.</p>
+<p>ARIEL.--Écoute comme ils rugissent.</p>
+<p>PROSPERO.--Qu&#x27;il leur soit fait une chasse vigoureuse. A l&#x27;heure qu&#x27;il est, tous mes ennemis sont à ma merci. Dans peu tous mes travaux vont finir; et toi, tu vas retrouver toute la liberté des airs. Suis-moi encore un instant, et rends-moi obéissance.</p>
+<p>(Ils sortent.)</p>
+<h3 class="sub">Fin du quatrième acte — Acte cinquième</h3>
+<h2 class="chapter" id="c8">Scène I</h2>
+<p>(Le devant de la grotte de Prospero.)</p>
+<p>Entrent PROSPERO vêtu de sa robe magique, ET ARIEL.</p>
+<p>PROSPERO.--Maintenant mon projet commence à se développer dans son ensemble; mes charmes n&#x27;ont pas été rompus. Mes esprits m&#x27;obéissent; et le Temps marche tête levée, chargé de ce qu&#x27;il apporte.... Où en est le jour?</p>
+<p>ARIEL.--Près de la sixième heure, de l&#x27;heure où vous avez dit, mon maître, que notre travail devait finir.</p>
+<p>PROSPERO.--Je l&#x27;ai annoncé au moment où j&#x27;ai soulevé la tempête. Dis-moi, mon génie, en quel état sont le roi et toute sa suite.</p>
+<p>ARIEL.--Renfermés ensemble, et précisément dans l&#x27;état où vous me les avez remis, seigneur. Toujours prisonniers comme vous les avez laissés dans le bocage de citronniers qui abrite votre grotte, ils ne peuvent faire un pas que vous ne les ayez déliés. Le roi, son frère, et le vôtre, sont encore tous les trois dans l&#x27;égarement; et le reste, comblé de douleur et d&#x27;effroi, gémit sur eux; mais plus que tous les autres celui que je vous ai entendu nommer le bon vieux seigneur Gonzalo: ses larmes descendent le long de sa barbe, comme les gouttes de la pluie d&#x27;hiver coulent de la tige creuse des roseaux. Vos charmes les travaillent avec tant de violence que, si vous les voyiez maintenant, votre âme en serait attendrie.</p>
+<p>PROSPERO.--Le penses-tu, esprit?</p>
+<p>ARIEL.--La mienne le serait, seigneur, si j&#x27;étais un homme.</p>
+<p>PROSPERO.--La mienne aussi s&#x27;attendrira. Comment, toi qui n&#x27;es formé que d&#x27;air, tu aurais éprouvé une impression, une émotion à la vue de leurs peines; et moi, créature de leur espèce, qui ressens aussi vivement qu&#x27;eux et les passions et les douleurs, je n&#x27;en serais pas plus tendrement ému que toi! Quoique, par de grands torts, ils m&#x27;aient blessé au vif, je me range contre mon courroux, du parti de ma raison plus noble que lui; il y a plus de gloire à la vertu qu&#x27;à la vengeance. Qu&#x27;ils se repentent, la fin dernière de mes desseins ne va pas au delà; ils n&#x27;auront même pas à essuyer un regard sévère. Va les élargir, Ariel. Je veux lever mes charmes, rétablir leurs facultés, et ils vont être rendus à eux-mêmes.</p>
+<p>ARIEL.--Je vais les amener, seigneur.</p>
+<p>(Ariel sort.)</p>
+<p>PROSPERO.--Vous, fées des collines et des ruisseaux, des lacs tranquilles et des bocages; et vous qui, sur les sables où votre pied ne laisse point d&#x27;empreinte, poursuivez Neptune lorsqu&#x27;il retire ses flots, et fuyez devant lui à son retour; vous, petites marionnettes, qui tracez au clair de la lune ces ronds[22] d&#x27;herbe amère que la brebis refuse de brouter; et vous dont le passe-temps est de faire naître à minuit les mousserons, et que réjouit le son solennel du couvre-feu; secondé par vous, j&#x27;ai pu, quelque faible que soit votre empire, obscurcir le soleil dans la splendeur de son midi, appeler les vents mutins, et soulever entre les vertes mers et la voûte azurée des cieux une guerre mugissante; le tonnerre aux éclats terribles a reçu de moi des feux; j&#x27;ai brisé le chêne orgueilleux de Jupiter avec le trait de sa foudre; par moi le promontoire a tremblé sur ses massifs fondements; le pin et le cèdre, saisis par leurs éperons, ont été arrachés de la terre; à mon ordre, les tombeaux ont réveillé leurs habitants endormis; ils se sont ouverts et les ont laissés fuir, tant mon art a de puissance! Mais j&#x27;abjure ici cette rude magie; et quand je vous aurai demandé, comme je le fais en ce moment, quelques airs d&#x27;une musique céleste pour produire sur leurs sens l&#x27;effet que je médite et que doit accomplir ce prodige aérien, aussitôt je brise ma baguette; je l&#x27;ensevelis à plusieurs toises dans la terre, et plus avant que n&#x27;est jamais descendue la sonde je noierai sous les eaux mon livre magique.</p>
+<p>[Note 22: Ces ronds ou petits cercles tracés sur les prairies sont fort communs dans les dunes de l&#x27;Angleterre: on remarque qu&#x27;ils sont plus élevés et d&#x27;une herbe plus épaisse et plus amère que l&#x27;herbe qui croît alentour, et les brebis n&#x27;y veulent pas paître. Le peuple les appelle fairy circles, cercles des fées, et les croit formés par les danses nocturnes des lutins. On en voit de pareils dans la Bourgogne. Partout où se trouvent ces ronds, on est sûr de trouver des mousserons.]</p>
+<p>(A l&#x27;instant une musique solennelle commence.)</p>
+<p>(Entre Ariel. Après lui s&#x27;avance Alonzo, faisant des gestes frénétiques; Gonzalo l&#x27;accompagne. Viennent ensuite Sébastien et Antonio dans le même état, accompagnés d&#x27;Adrian et de Francisco. Tous entrent dans le cercle tracé par Prospero. Ils y restent sous le charme.)</p>
+<p>PROSPERO, les observant.--Qu&#x27;une musique solennelle, que les sons les plus propres à calmer une imagination en désordre guérissent ton cerveau, maintenant inutile et bouillonnant au-dedans de ton crâne. Demeurez là, car un charme vous enchaîne.--Pieux Gonzalo, homme honorable, mes yeux, touchés de sympathie à la seule vue des tiens, laissent couler des larmes compagnes de tes larmes.--Le charme se dissout par degrés; et comme on voit l&#x27;aurore s&#x27;insinuer aux lieux où règne la nuit, fondant les ténèbres, de même leur intelligence chasse en s&#x27;élevant les vapeurs imbéciles qui enveloppaient les clartés de leur raison. O mon vertueux Gonzalo, mon véritable sauveur, sujet loyal du prince que tu sers, je veux dans ma patrie payer tes bienfaits en paroles et en actions.--Toi, Alonzo, tu nous as traités bien cruellement, ma fille et moi. Ton frère t&#x27;excita à cette action;--tu en pâtis, maintenant, Sébastien.--Vous, mon sang, vous formé de la même chair que moi, mon frère, qui, vous laissant séduire à l&#x27;ambition, avez chassé le remords et la nature; vous qui avec Sébastien (dont les déchirements intérieurs redoublent pour ce crime) vouliez ici assassiner votre roi; tout dénaturé que vous êtes, je vous pardonne.--Déjà se gonfle le flot de leur entendement; il s&#x27;approche et couvrira bientôt la plage de la raison, maintenant encore encombrée d&#x27;un limon impur. Jusqu&#x27;ici aucun d&#x27;eux ne me regarde ou ne pourrait me reconnaître.--Ariel, va me chercher dans ma grotte mon chaperon et mon épée: je veux quitter ces vêtements, et me montrer à eux tel que je fus quelquefois lorsque je régnais à Milan. Vite, esprit; avant bien peu de temps tu seras libre.</p>
+<p>ARIEL chante, en aidant Prospero à s&#x27;habiller.</p>
+<p>Je suce la fleur que suce l&#x27;abeille; J&#x27;habite le calice d&#x27;une primevère; Et là je me repose quand les hiboux crient. Monté sur le dos de la chauve-souris, je vole Gaiement après l&#x27;été. Gaiement, gaiement, je vivrai désormais Sous la fleur qui pend à la branche.</p>
+<p>PROSPERO.--Oui, mon gentil petit Ariel, il en sera ainsi. Je sentirai que tu me manques; mais tu n&#x27;en auras pas moins ta liberté. Allons, allons, allons! vite au vaisseau du roi, invisible comme tu l&#x27;es: tu trouveras les matelots endormis sous les écoutilles. Réveille le maître et le bosseman; force-les à te suivre en ce lieu. Dans l&#x27;instant, je t&#x27;en prie.</p>
+<p>ARIEL.--Je bois l&#x27;air devant moi, et je reviens avant que votre pouls ait battu deux fois.</p>
+<p>(Il sort.)</p>
+<p>GONZALO.--Tout ce qui trouble, étonne, tourmente, confond, habite en ce lieu. Oh! que quelque pouvoir céleste daigne nous guider hors de cette île redoutable!</p>
+<p>PROSPERO.--Seigneur roi, reconnais le duc outragé de Milan, Prospero. Pour te mieux convaincre que c&#x27;est un prince vivant qui te parle, je te presse dans mes bras, et je te souhaite cordialement la bienvenue à toi et à ceux qui t&#x27;accompagnent.</p>
+<p>ALONZO.--Es-tu Prospero? ne l&#x27;es-tu pas? N&#x27;es-tu qu&#x27;un vain enchantement dont je doive être abusé comme je l&#x27;ai été tout à l&#x27;heure? Je n&#x27;en sais rien. Ton pouls bat comme celui d&#x27;un corps de chair et de sang; et depuis que je te vois, je sens s&#x27;adoucir l&#x27;affliction de mon esprit, qui, je le crains, a été accompagnée de démence.--Tout cela (si tout cela existe réellement) doit nous faire aspirer après d&#x27;étranges récits. Je te remets ton duché et te conjure de me pardonner mes injustices. Mais comment Prospero pourrait-il être vivant et se trouver ici?</p>
+<p>PROSPERO, à Gonzalo.--D&#x27;abord, généreux ami, permets que j&#x27;embrasse ta vieillesse, que tu as honorée au delà de toute mesure et de toute limite.</p>
+<p>GONZALO.--Je ne saurais jurer que cela soit ou ne soit pas réel.</p>
+<p>PROSPERO.--Vous vous ressentez encore de quelques-unes des illusions que présente cette île; elles ne vous permettent plus de croire même aux choses certaines. Soyez tous les bienvenus, mes amis. Mais vous (A part, à Antonio et Sébastien), digne paire de seigneurs, si j&#x27;en avais l&#x27;envie, je pourrais ici recueillir pour vous de Sa Majesté quelques regards irrités, et démasquer en vous deux traîtres. En ce moment je ne veux point faire de mauvais rapports.</p>
+<p>SÉBASTIEN, à part.--Le démon parle par sa voix.</p>
+<p>PROSPERO.--Non.--Pour toi, le plus pervers des hommes, que je ne pourrais, sans souiller ma bouche, nommer mon frère, je te pardonne tes plus noirs attentats; je te les pardonne tous, mais je te redemande mon duché, qu&#x27;aujourd&#x27;hui, je le sais bien, tu es forcé de me rendre.</p>
+<p>ALONZO.--Si tu es en effet Prospero, raconte-nous quels événements ont sauvé tes jours. Dis-nous comment tu nous rencontres ici, nous qui depuis trois heures à peine avons fait naufrage sur ces bords où j&#x27;ai perdu (quel trait aigu porte avec lui ce souvenir!) où j&#x27;ai perdu mon cher fils Ferdinand.</p>
+<p>PROSPERO.--J&#x27;en suis affligé, seigneur.</p>
+<p>ALONZO.--Irréparable est ma perte, et la patience me dit qu&#x27;il est au delà de son pouvoir de m&#x27;en guérir.</p>
+<p>PROSPERO.--Je croirais plutôt que vous n&#x27;avez pas réclamé son assistance. Pour une perte semblable, sa douce faveur m&#x27;accorde ses tout-puissants secours, et je repose satisfait.</p>
+<p>ALONZO.--Vous, une perte semblable?</p>
+<p>PROSPERO.--Aussi grande pour moi, aussi récente; et pour supporter la perte d&#x27;un bien si cher, je n&#x27;ai autour de moi que des consolations bien plus faibles que celles que vous pouvez appeler à votre aide. J&#x27;ai perdu ma fille.</p>
+<p>ALONZO.--Une fille! vous? O ciel! que ne sont-ils tous deux vivants dans Naples! que n&#x27;y sont-ils roi et reine! Pour qu&#x27;ils y fussent, je demanderais à être enseveli dans la bourbe de ce lit fangeux où est étendu mon fils! Quand avez-vous perdu votre fille?</p>
+<p>PROSPERO.--Dans cette dernière tempête.--Ma rencontre ici, je le vois, a frappé ces seigneurs d&#x27;un tel étonnement qu&#x27;ils dévorent leur raison, croient à peine que leurs yeux les servent fidèlement, et que leurs paroles soient les sons naturels de leur voix. Mais, par quelques secousses que vous ayez été jetés hors de vos sens, tenez pour certain que je suis ce Prospero, ce même duc que la violence arracha de Milan, et qu&#x27;une étrange destinée a fait débarquer ici pour être le souverain de cette île où vous avez trouvé le naufrage.--Mais n&#x27;allons pas plus loin pour le moment: c&#x27;est une chronique à faire jour par jour, non un récit qui puisse figurer à un déjeuner, ou convenir à cette première entrevue. Vous êtes le bienvenu, seigneur. Cette grotte est ma cour: là j&#x27;ai peu de suivants; et de sujets au dehors, aucun. Je vous prie, jetez les yeux dans cet intérieur: puisque vous m&#x27;avez rendu mon duché, je veux m&#x27;acquitter envers vous par quelque chose d&#x27;aussi précieux; du moins je veux vous faire voir une merveille dont vous serez aussi satisfait que je peux l&#x27;être de mon duché.</p>
+<p>(La grotte s&#x27;ouvre, et l&#x27;on voit dans le fond Ferdinand et Miranda assis et jouant ensemble aux échecs.)</p>
+<p>MIRANDA.--Mon doux seigneur, vous me trichez.</p>
+<p>FERDINAND.--Non, mon très-cher amour; je ne le voudrais pas pour le monde entier.</p>
+<p>MIRANDA.--Oui, et quand même vous voudriez disputer pour une vingtaine de royaumes, je dirais que c&#x27;est de franc jeu.</p>
+<p>ALONZO.--Si c&#x27;est là une vision de cette île, il me faudra perdre deux fois un fils chéri.</p>
+<p>SÉBASTIEN.--Voici le plus grand des miracles!</p>
+<p>FERDINAND.--Si les mers menacent, elles font grâce aussi. Je les ai maudites sans sujet.</p>
+<p>(Il se met à genoux devant son père.)</p>
+<p>ALONZO.--Maintenant, que toutes les bénédictions d&#x27;un père rempli de joie t&#x27;environnent de toutes parts! Lève-toi; dis, comment es-tu venu ici?</p>
+<p>MIRANDA.--O merveille! combien d&#x27;excellentes créatures sont ici et là encore! Que le genre humain est beau! O glorieux nouveau monde, qui contient de pareils habitants!</p>
+<p>PROSPERO.--Il est nouveau pour toi.</p>
+<p>ALONZO.--Quelle est cette jeune fille avec laquelle tu étais au jeu? Votre plus ancienne connaissance ne peut dater de trois heures.... Est-elle la déesse qui nous a séparés, et qui nous réunit ainsi?</p>
+<p>FERDINAND.--C&#x27;est une mortelle; mais, grâce à l&#x27;immortelle Providence, elle est à moi: j&#x27;en ai fait choix dans un temps où je ne pouvais consulter mon père, où je ne croyais plus que j&#x27;eusse encore un père. Elle est la fille de ce fameux duc de Milan dont le renom a si souvent frappé mes oreilles, mais que je n&#x27;avais jamais vu jusqu&#x27;à ce jour. C&#x27;est de lui que j&#x27;ai reçu une seconde vie, et cette jeune dame me donne en lui un second père.</p>
+<p>ALONZO.--Je suis le sien. Mais, oh! de quel oeil verra-t-on qu&#x27;il me faille demander pardon à mon enfant?</p>
+<p>PROSPERO.--Arrêtez, seigneur: ne chargeons point notre mémoire du poids d&#x27;un mal qui nous a quittés.</p>
+<p>GONZALO.--Je pleurais au fond de mon âme, sans quoi j&#x27;aurais déjà parlé. Abaissez vos regards, ô dieux, et faites descendre sur ce couple une couronne de bénédiction; car vous seuls avez tracé la route qui nous a conduits ici.</p>
+<p>ALONZO.--Je te dis amen, Gonzalo.</p>
+<p>GONZALO.--Le duc de Milan fut donc chassé de Milan pour que sa race un jour donnât des rois à Naples. Oh! réjouissez-vous d&#x27;une joie plus qu&#x27;ordinaire; que ceci soit inscrit en or sur des colonnes impérissables! Dans le même voyage, Claribel a trouvé un époux à Tunis, Ferdinand, son frère, une épouse sur une terre où il était perdu, et Prospero son duché dans une île misérable; et nous tous sommes rendus à nous-mêmes, après avoir cessé de nous appartenir.</p>
+<p>ALONZO, à Ferdinand et à Miranda.--Donnez-moi vos mains. Que les chagrins, que la tristesse étreignent à jamais le coeur qui ne bénit pas votre union!</p>
+<p>GONZALO.--Ainsi soit-il. Amen.</p>
+<p>(Ariel reparaît avec le maître et le bosseman qui le suivent ébahis.)</p>
+<p>GONZALO.--Seigneur, seigneur, voyez, voyez: voici encore des nôtres. Je l&#x27;avais prédit que tant qu&#x27;il y aurait un gibet sur la terre, ce gaillard-là ne serait pas noyé.--Eh bien! bouche à blasphèmes, dont les imprécations chassent de ton bord la miséricorde du ciel, quoi! pas un jurement sur le rivage! n&#x27;as-tu donc plus de langue à terre! Quelles nouvelles?</p>
+<p>LE BOSSEMAN.--La meilleure de toutes, c&#x27;est que nous retrouvons ici notre roi et sa compagnie. Voici la seconde: notre navire, qui était tout ouvert, il y a trois heures, et que nous regardions comme perdu, est radoubé, debout, et aussi lestement gréé que lorsque nous avons mis à la mer pour la première fois.</p>
+<p>ARIEL, à part.--Maître, tout cet ouvrage, je l&#x27;ai fait depuis que tu ne m&#x27;as vu.</p>
+<p>PROSPERO, à part.--L&#x27;adroit petit lutin!</p>
+<p>ALONZO.--Ce ne sont point là des événements naturels: l&#x27;extraordinaire va croissant et s&#x27;ajoutant à l&#x27;extraordinaire. Dites, comment êtes-vous venus ici?</p>
+<p>LE BOSSEMAN.--Si je croyais être bien éveillé, seigneur, je tâcherais de vous le dire. Nous étions endormis, morts, et (comment? nous n&#x27;en savons rien) tous jetés sous les écoutilles. Là, il n&#x27;y a qu&#x27;un moment, des sons étranges et divers, des rugissements, des cris, des hurlements, des cliquetis de chaînes qui s&#x27;entre-choquaient, et beaucoup d&#x27;autres bruits tous horribles, nous ont réveillés. Nous ne faisons qu&#x27;un saut hors de là, et nous revoyons dans son assiette[23] et remis à neuf notre royal, notre bon et brave navire: notre maître bondit de joie en le regardant. En un clin d&#x27;oeil, pas davantage, s&#x27;il vous plaît, nous avons été séparés des autres, et, encore tout assoupis, amenés ici comme dans un songe.</p>
+<p>[Note 23: On dit qu&#x27;un vaisseau est en assiette quand il a toutes ses qualités, et qu&#x27;il est dans la meilleure situation possible.]</p>
+<p>ARIEL, à part.--Ai-je bien fait mon devoir?</p>
+<p>PROSPERO, à part.--A ravir! La diligence en personne! Tu vas être libre.</p>
+<p>ALONZO.--Voilà le plus surprenant dédale où jamais aient erré les hommes! Il y a dans tout ceci quelque chose au delà de ce qu&#x27;a jamais opéré la nature. Il faut qu&#x27;un oracle nous instruise de ce que nous en devons penser.</p>
+<p>PROSPERO.--Seigneur, mon suzerain, ne fatiguez point votre esprit à agiter en lui-même la singularité de ces événements: nous choisirons, et dans peu, un instant de loisir où je vous donnerai à vous seul (et vous le trouverez raisonnable) l&#x27;explication de tout ce qui est arrivé ici; jusque-là soyez tranquille, et croyez que tout est bien.--Approche, esprit; délivre Caliban et ses compagnons, lève le charme. (Ariel sort.)--Eh bien! comment se trouve mon gracieux seigneur? Il vous manque encore de votre suite quelques malotrus que vous oubliez.</p>
+<p>(Rentre Ariel, chassant devant lui Caliban, Stephano et Trinculo, vêtus des habits qu&#x27;ils ont volés.)</p>
+<p>STEPHANO.--Que chacun s&#x27;évertue pour le bien de tous les autres, et que personne ne s&#x27;inquiète de soi, car tout n&#x27;est que hasard dans la vie.--Corraggio! monstre fier-à-bras, corraggio!</p>
+<p>TRINCULO, à la vue du roi.--Si ces deux espions que je porte en tête ne me trompent pas, voilà une bienheureuse apparition!</p>
+<p>CALIBAN.--O Sétébos, que voilà des esprits de bonne mine! que mon maître est beau! j&#x27;ai bien peur qu&#x27;il ne me châtie.</p>
+<p>SÉBASTIEN.--Ah! ah! qu&#x27;est-ce que c&#x27;est que ces animaux-là, seigneur Antonio? les aurait-on pour de l&#x27;argent!</p>
+<p>ANTONIO.--Probablement: l&#x27;un d&#x27;eux est un vrai poisson, et sans doute à vendre.</p>
+<p>PROSPERO.--Seigneurs, considérez seulement ce que vous indique l&#x27;aspect de ces hommes, et décidez s&#x27;ils sont honnêtes gens. Cet esclave difforme eut pour mère une sorcière, et si puissante[24] qu&#x27;elle pouvait tenir tête à la lune, enfler ou abaisser les marées, et agir en son nom sans son aveu. Tous les trois m&#x27;ont volé: ce demi-démon, car c&#x27;est un démon bâtard, avait fait avec les deux autres le complot de m&#x27;ôter la vie. Des trois en voilà deux que vous devez connaître et réclamer. Quant à ce fruit des ténèbres, je déclare qu&#x27;il m&#x27;appartient.</p>
+<p>[Note 24: One so strong. Dans toutes les anciennes accusations de sorcellerie en Angleterre, on trouve constamment l&#x27;épithète de strong (forte, puissante), associée au mot witch (sorcière), comme une qualification spéciale et augmentative. Les tribunaux furent obligés de décider, contre l&#x27;opinion populaire, que le mot strong n&#x27;ajoutait rien à l&#x27;accusation, et ne pouvait être un motif de poursuivre.]</p>
+<p>CALIBAN.--Je serai pincé à mort.</p>
+<p>ALONZO.--N&#x27;est-ce pas là Stephano, mon ivrogne de sommelier?</p>
+<p>SÉBASTIEN.--Il est encore ivre. Où a-t-il eu du vin?</p>
+<p>ALONZO.--Et Trinculo est aussi tout branlant. Où ont-ils trouvé le grand élixir qui les a ainsi dorés[25]? Comment donc t&#x27;es-tu accommodé de cette sorte[26]?</p>
+<p>[Note 25: Allusion à l&#x27;élixir des alchimistes.]</p>
+<p>[Note 26: How cam&#x27;st thou in this pickle? Et Trinculo répond: I have been in such a pickle, etc. Pickle signifie saumure, les choses à conserver dans la saumure; et par extension et en plaisanterie, l&#x27;état, la condition où l&#x27;on se trouve, où l&#x27;on se conserve.]</p>
+<p>TRINCULO.--J&#x27;ai été accommodé dans une telle saumure depuis que je ne vous ai vu, que je crains bien qu&#x27;elle ne sorte plus de mes os. Je n&#x27;aurai plus peur des mouches.</p>
+<p>SÉBASTIEN.--Comment, qu&#x27;as-tu donc, Stephano?</p>
+<p>STEPHANO.--Oh! ne me touchez pas: je ne suis plus Stephano; Stephano n&#x27;est plus que crampes.</p>
+<p>PROSPERO.--Monsieur le drôle, vous vouliez être le roi de cette île.</p>
+<p>STEPHANO.--J&#x27;aurais donc été un cancre de roi.</p>
+<p>ALONZO, montrant Caliban.--Voilà l&#x27;objet le plus étrange que mes yeux aient jamais vu.</p>
+<p>PROSPERO.--Il est aussi monstrueux dans ses moeurs qu&#x27;il l&#x27;est dans sa forme.--Entrez dans la grotte, coquin. Prenez avec vous vos compagnons: si vous avez envie d&#x27;obtenir mon pardon, décorez-la soigneusement.</p>
+<p>CALIBAN.--Vraiment je n&#x27;y manquerai pas: je deviendrai sage, et je tâcherai d&#x27;obtenir ma grâce. Trois fois double âne que j&#x27;étais de prendre cet ivrogne pour un dieu, et d&#x27;adorer un si sot imbécile!</p>
+<p>PROSPERO.--Fais ce que je te dis; va-t&#x27;en.</p>
+<p>ALONZO.--Hors d&#x27;ici! Allez remettre tout cet équipage où vous l&#x27;avez trouvé.</p>
+<p>SÉBASTIEN.--Où ils l&#x27;ont volé plutôt.</p>
+<p>PROSPERO.--Seigneur, j&#x27;invite Votre Altesse et sa suite à entrer dans ma pauvre grotte: vous vous y reposerez cette seule nuit. J&#x27;en emploierai une partie à des entretiens qui, je n&#x27;en doute point, vous la feront passer rapidement. Je vous raconterai l&#x27;histoire de ma vie et des hasards divers qui se sont succédé depuis mon arrivée dans cette île; et dès l&#x27;aurore je vous conduirai à votre vaisseau, et de suite à Naples, où j&#x27;espère voir célébrer les noces de nos chers bien-aimés. De là je me retire à Milan, où désormais le tombeau va devenir ma troisième pensée.</p>
+<p>ALONZO.--Je languis d&#x27;entendre l&#x27;histoire de votre vie; elle doit intéresser étrangement l&#x27;oreille qui l&#x27;écoute.</p>
+<p>PROSPERO.--Je n&#x27;omettrai rien; et je vous promets des mers calmes, des vents propices, et un navire si agile qu&#x27;il devancera de bien loin votre royale flotte.--(A part.) Mon Ariel, mon oiseau, c&#x27;est toi que j&#x27;en charge. Libre ensuite, rends-toi aux éléments et vis joyeux.--Venez, de grâce.</p>
+<p>(Ils sortent.)</p>
+<h2 class="chapter" id="c9">Épilogue — Prononcé par Prospero.</h2>
+<p>Maintenant tous mes charmes sont détruits; Je n&#x27;ai plus d&#x27;autre force que la mienne. Elle est bien faible; et en ce moment, c&#x27;est la vérité, Il dépend de vous de me confiner en ce lieu Ou de m&#x27;envoyer à Naples. Puisque j&#x27;ai recouvré mon duché, Et que j&#x27;ai pardonné aux traîtres, que vos enchantements Ne me fassent pas demeurer dans cette île; Affranchissez-moi de mes liens, Par le secours de vos mains bienfaisantes. Il faut que votre souffle favorable Enfle mes voiles, ou mon projet échoue: Il était de vous plaire. Maintenant je n&#x27;ai plus Ni génies pour me seconder, ni magie pour enchanter, Et je finirai dans le désespoir, Si je ne suis pas secouru par la prière[27], Qui pénètre si loin qu&#x27;elle va assiéger La miséricorde elle-même, et délie toutes les fautes. Si vous voulez que vos offenses vous soient pardonnées, Que votre indulgence me renvoie absous.</p>
+<p>[Note 27: Allusion aux vieilles histoires sur le désespoir des nécromanciens dans leurs derniers moments, et l&#x27;efficacité des prières que leurs amis faisaient pour eux.]</p>
+<h3 class="sub">Fin du cinquième et dernier acte.</h3>
+<p class="colophon">Texte du domaine public. Édition numérique EbookClassics.</p>
+</body></html>

@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Macbeth — William Shakespeare</title><style>
+:root{--paper:#fbf8f1;--ink:#1f1b16;--muted:#6f6352;--accent:#9a6b2f;--rule:#e4dccb}
+@media (prefers-color-scheme:dark){:root{--paper:#16140f;--ink:#ece6d8;--muted:#a79c88;--accent:#d8a95e;--rule:#2e2a22}}
+html{background:var(--paper)}
+body{font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Libertinus Serif",Georgia,serif;color:var(--ink);
+     background:var(--paper);line-height:1.65;font-size:1.12rem;max-width:36em;margin:0 auto;padding:2.5em 1.25em 5em}
+.titlepage{text-align:center;min-height:70vh;display:flex;flex-direction:column;justify-content:center;gap:.6em;
+           border-bottom:1px solid var(--rule);margin-bottom:2.5em;padding-bottom:2.5em}
+.titlepage img{max-width:260px;width:60%;margin:0 auto 1.5em;border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+h1{font-size:2.4em;line-height:1.15;font-weight:600;margin:0;letter-spacing:-.01em}
+.author{font-style:italic;font-size:1.25em;color:var(--accent);margin:0}
+.translator{font-size:.95em;color:var(--muted);margin:0}
+nav.toc{margin:0 0 3em}
+nav.toc h2{font-size:.85em;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:left;margin:0 0 .8em}
+nav.toc ol{list-style:none;padding:0;margin:0;columns:1}
+nav.toc li{margin:.25em 0}
+nav.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent}
+nav.toc a:hover{border-color:var(--accent)}
+h2.chapter{font-size:1.45em;font-weight:600;text-align:center;margin:3.5em 0 1.6em;line-height:1.3}
+h2.chapter::before{content:"";display:block;width:3em;height:2px;background:var(--accent);margin:0 auto 1.1em}
+p{margin:0;text-indent:1.5em;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+h2.chapter + p, .titlepage + p{text-indent:0}
+h2.chapter + p::first-letter{font-size:3.1em;float:left;line-height:.85;padding:.08em .08em 0 0;color:var(--accent);font-weight:600}
+.colophon{margin-top:5em;padding-top:1.5em;border-top:1px solid var(--rule);text-align:center;color:var(--muted);font-size:.85em;text-indent:0}
+h3.sub{font-size:1em;font-weight:600;font-variant:small-caps;letter-spacing:.04em;text-align:center;margin:2.2em 0 1em}
+h3.sub + p{text-indent:0}
+@media print{h2.chapter{break-before:page}}
+</style></head><body>
+<header class="titlepage">
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjI0MDAiIHZpZXdCb3g9IjAgMCAxNjAwIDI0MDAiPgo8cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSIyNDAwIiBmaWxsPSIjMmYzZTJjIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjMwMCIgZmlsbD0iI2Q0YTM3MyIgb3BhY2l0eT0iLjkyIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMmYzZTJjIiBzdHJva2Utd2lkdGg9IjEyIiBvcGFjaXR5PSIuNSIvPgo8Y2lyY2xlIGN4PSIxMTIwIiBjeT0iNTYwIiByPSIxMjAiIGZpbGw9IiMyZjNlMmMiIG9wYWNpdHk9Ii4xOCIvPgo8cmVjdCB4PSIxNjAiIHk9IjkzMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIxMCIgZmlsbD0iI2Q0YTM3MyIvPgo8dGV4dCB4PSIxNjAiIHk9IjExODAiIGZvbnQtc2l6ZT0iMTUwIiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmM2VmZTYiPk1hY2JldGg8L3RleHQ+Cjx0ZXh0IHg9IjE2MCIgeT0iMTQxNSIgZm9udC1zaXplPSI2OCIgZm9udC1zdHlsZT0iaXRhbGljIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNkNGEzNzMiPldpbGxpYW0gU2hha2VzcGVhcmU8L3RleHQ+Cjx0ZXh0IHg9IjE2MCIgeT0iMjIzMCIgZm9udC1zaXplPSI0NCIgbGV0dGVyLXNwYWNpbmc9IjE0IiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmM2VmZTYiIG9wYWNpdHk9Ii43NSI+RUJPT0tDTEFTU0lDUzwvdGV4dD4KPC9zdmc+" alt="">
+<h1>Macbeth</h1>
+<p class="author">William Shakespeare</p>
+<p class="translator">Traduction de Guizot, François</p>
+</header>
+<nav class="toc"><h2>Table des matières</h2><ol>
+<li><a href="#c1">Acte premier — Scène I</a></li>
+<li><a href="#c2">Scène II</a></li>
+<li><a href="#c3">Scène III</a></li>
+<li><a href="#c4">Scène IV</a></li>
+<li><a href="#c5">Scène V</a></li>
+<li><a href="#c6">Scène vi</a></li>
+<li><a href="#c7">Scène VII</a></li>
+<li><a href="#c8">Scène I</a></li>
+<li><a href="#c9">Scène II</a></li>
+<li><a href="#c10">Scène III</a></li>
+<li><a href="#c11">MACBETH.--Il part: il l&#x27;a décidé ainsi.</a></li>
+<li><a href="#c12">Scène IV</a></li>
+<li><a href="#c13">Scène I</a></li>
+<li><a href="#c14">Scène II</a></li>
+<li><a href="#c15">Scène III</a></li>
+<li><a href="#c16">Scène IV</a></li>
+<li><a href="#c17">Scène V</a></li>
+<li><a href="#c18">Scène vi</a></li>
+<li><a href="#c19">Scène I</a></li>
+<li><a href="#c20">Chant.</a></li>
+<li><a href="#c21">Scène II</a></li>
+<li><a href="#c22">Scène III</a></li>
+<li><a href="#c23">Scène I</a></li>
+<li><a href="#c24">Scène II</a></li>
+<li><a href="#c25">Scène III</a></li>
+<li><a href="#c26">Scène IV</a></li>
+<li><a href="#c27">Scène V</a></li>
+<li><a href="#c28">Scène vi</a></li>
+<li><a href="#c29">Scène VII</a></li>
+</ol></nav>
+<p>====================================================================</p>
+<p>Ce document est tiré de:</p>
+<p>OEUVRES COMPLÈTES DE SHAKSPEARE</p>
+<p>TRADUCTION DE M. GUIZOT NOUVELLE ÉDITION ENTIÈREMENT REVUE AVEC UNE ÉTUDE SUR SHAKSPEARE DES NOTICES SUR CHAQUE PIÈCE ET DES NOTES</p>
+<p>Volume 2 Jules César. Cléopâtre.--Macbeth.--Les Méprises. Beaucoup de bruit pour rien.</p>
+<p>PARIS A LA LIBRAIRIE ACADÉMIQUE DIDIER ET Ce, LIBRAIRES-ÉDITEURS 35, QUAI DES AUGUSTINS 1864</p>
+<p>====================================================================</p>
+<h3 class="sub">Macbeth — Tragédie</h3>
+<h3 class="sub">Notice sur Macbeth</h3>
+<p>En l&#x27;année 1034, Duncan succéda sur le trône d&#x27;Écosse à son grand-père Malcolm. Il tenait son droit de sa mère Béatrix, fille aînée de Malcolm: la cadette, Doada, était mère de Macbeth, qui se trouvait ainsi cousin-germain de Duncan. Le père de Macbeth était Finleg, thane de Glamis, désigné sous le nom de Sinell dans la tragédie et dans la chronique de Hollinshed, d&#x27;après l&#x27;autorité d&#x27;Hector Boèce, à qui a été emprunté le récit des événements concernant Duncan et Macbeth. Comme Shakspeare a suivi de point en point la chronique de Hollinshed, les faits contenus dans cette chronique sont nécessaires à rappeler; ils ont d&#x27;ailleurs en eux-mêmes un intérêt véritable.</p>
+<p>Macbeth s&#x27;était rendu célèbre par son courage, et on l&#x27;eût jugé parfaitement digne de régner s&#x27;il n&#x27;eût été «de sa nature,» dit la chronique, «quelque peu cruel.» Duncan, au contraire, prince peu guerrier, poussait jusqu&#x27;à l&#x27;excès la douceur et la bonté; en sorte que si l&#x27;on eût pu fondre le caractère des deux cousins et les tempérer l&#x27;un par l&#x27;autre, on aurait eu, dit la chronique. «un digne roi et un excellent capitaine.»</p>
+<p>Après quelques années d&#x27;un règne paisible, la faiblesse de Duncan ayant encouragé les malfaiteurs, Banquo, thane de Lochaber, chargé de recueillir les revenus du roi, se vit forcé de punir un peu sévèrement (somewhat sharpelie) quelques-uns des plus coupables, ce qui occasionna une révolte. Banquo, dépouillé de tout l&#x27;argent qu&#x27;il avait reçu, faillit perdre la vie, et ne s&#x27;échappa qu&#x27;avec peine et couvert de blessures. Aussitôt qu&#x27;elles lui permirent de se rendre à la cour, il alla porter plainte à Duncan et il détermina enfin celui-ci à faire sommer les coupables de comparaître; mais ils tuèrent le sergent d&#x27;armes qu&#x27;on leur avait envoyé et se préparèrent à la défense, excités par Macdowald, le plus considéré d&#x27;entre eux, qui, réunissant autour de lui ses parents et ses amis, leur représenta Duncan comme un lâche au coeur faible (taint hearted milksop), plus propre à gouverner des moines qu&#x27;à régner sur une nation aussi guerrière que les Écossais. La révolte s&#x27;étendit particulièrement sur les îles de l&#x27;ouest, d&#x27;où une foule de guerriers vinrent dans le Lochaber se ranger autour de Macdowald; l&#x27;espoir du butin attira aussi d&#x27;Irlande un grand nombre de Kernes et de Gallouglasses[1], prêts à suivre Macdowald partout où il voudrait les conduire. Au moyen de ces renforts, Macdowald battit les troupes que le roi avait envoyées à sa rencontre, prit leur chef Malcolm, et, après la bataille, lui fit trancher la tête.</p>
+<p>Duncan, consterné de ces nouvelles, assembla un conseil où Macbeth lui ayant vivement reproché sa faiblesse et sa lenteur à punir, qui laissaient aux rebelles le temps de s&#x27;assembler, offrit cependant de se charger, avec Banquo, de la conduite de la guerre. Son offre ayant été acceptée, le seul bruit de son approche avec de nouvelles troupes effraya tellement les rebelles qu&#x27;un grand nombre déserta secrètement; et Macdowald, ayant essayé avec le reste, de tenir tête à Macbeth, fut mis en déroute et forcé de s&#x27;enfuir dans un château où il avait renfermé sa femme et ses enfants; mais, désespérant d&#x27;y pouvoir tenir, et dans la crainte des supplices, il se tua, après avoir tué d&#x27;abord sa femme et ses enfants. Macbeth entra sans obstacle dans le château, dont les portes étaient demeurées ouvertes. Il n&#x27;y trouva plus que le cadavre de Macdowald au milieu de ceux de sa famille; et la barbarie de ce temps fut révoltée de ce qu&#x27;insensible à ce tragique spectacle, Macbeth fit couper la tête de Macdowald pour l&#x27;envoyer au roi, et attacher le reste du corps à un gibet. Il fit acheter très-cher aux habitants des îles le pardon de leur révolte, ce qui ne l&#x27;empêcha pas de faire exécuter tous ceux qu&#x27;il put prendre encore dans le Lochaber. Les habitants se récrièrent hautement contre cette violation de la foi promise, et les injures qu&#x27;ils proférèrent contre lui, à cette occasion, irritèrent tellement Macbeth qu&#x27;il fut près de passer dans les îles avec une armée pour se venger; mais il fut détourné de ce projet par les conseils de ses amis, et surtout par les présents au moyen desquels les insulaires achetèrent une seconde fois leur pardon.</p>
+<p>[Note 1: Soldats d&#x27;infanterie, armés les premiers à la légère, les seconds d&#x27;armes pesantes.]</p>
+<p>Peu de temps après, Suénon, roi de Norwége, ayant fait une descente en Écosse, Duncan, pour lui résister, se mit à la tête de la portion la plus considérable de son armée, dont il confia le reste à Macbeth et à Banquo. Duncan, battu et près de s&#x27;enfuir, se réfugia dans le château de Perth, où Suénon vint l&#x27;assiéger. Duncan ayant secrètement instruit Macbeth de ses intentions, feignit de vouloir traiter et traîna la chose en longueur jusqu&#x27;à ce qu&#x27;enfin, averti que Macbeth avait réuni des forces suffisantes, il indiqua un jour pour livrer la place, et en attendant il offrit aux Norwégiens de leur envoyer des provisions de bouche, qu&#x27;ils acceptèrent avec d&#x27;autant plus d&#x27;empressement que depuis plusieurs jours ils souffraient beaucoup de la disette. Le pain et la bière qu&#x27;on leur livra avaient été mêlés du jus d&#x27;une baie extrêmement narcotique, en sorte que, s&#x27;en étant rassasiés avec avidité, ils tombèrent dans un sommeil dont il fut impossible de les tirer. Alors Duncan fit avertir Macbeth, qui, arrivant en diligence et entrant sans obstacle dans le camp, massacra tous les Norwégiens, dont la plupart ne se réveillèrent pas, et dont les autres se trouvèrent tellement étourdis par l&#x27;effet du soporifique qu&#x27;ils ne purent faire aucune défense. Un grand nombre de mariniers de la flotte norwégienne, qui étaient venus pour prendre leur part de l&#x27;abondance répandue dans le camp, partagèrent le sort de leurs compatriotes, et Suénon, qui se sauva, lui onzième, de cette boucherie, trouva à peine assez d&#x27;hommes pour conduire le vaisseau sur lequel il s&#x27;enfuit en Norwége. Ceux qu&#x27;il laissa derrière furent, trois jours après, tellement battus par un vent d&#x27;est qu&#x27;ils se brisèrent les uns contre les autres et s&#x27;enfoncèrent dans la mer, dans un lieu appelé les sables de Drownelow, où ils sont encore aujourd&#x27;hui (1574), dit la chronique, «au grand danger des vaisseaux qui viennent sur la côte, la mer les couvrant entièrement pendant le flux, tandis que le reflux en laisse paraître quelques parties au-dessus de l&#x27;eau.» Ce désastre causa une telle consternation en Norwége qu&#x27;encore plusieurs années après on n&#x27;y armait point un chevalier sans lui faire jurer de venger ses compatriotes tués en Écosse. Duncan, pour célébrer sa délivrance, ordonna de grandes processions; mais, pendant qu&#x27;on les célébrait, on apprit le débarquement d&#x27;une armée de Danois, sous les ordres de Canut, roi d&#x27;Angleterre, qui venait venger son frère Suénon. Macbeth et Banquo allerent au-devant d&#x27;eux, les défirent, les forcèrent à se rembarquer et à payer une somme considérable pour obtenir la permission d&#x27;enterrer leurs morts à Saint-Colmes-Inch, où, dit la chronique, on voit encore un grand nombre de vieux tombeaux sur lesquels sont gravés les armes des Danois.</p>
+<p>Tels sont, dans les exploits de Macbeth et de Banquo, ceux dont Shakspeare, d&#x27;après Hollinshed, a fait usage dans sa tragédie. Ce fut peu de temps après que Macbeth et Banquo, se rendant à Fores, où était le roi, et chassant en chemin à travers les bois et les champs, «sans autre compagnie que seulement eux-mêmes,» furent soudainement accostés, au milieu d&#x27;une lande, par trois femmes bizarrement vêtues et «semblables à des créatures de l&#x27;ancien monde» (elder world), qui saluèrent Macbeth précisément comme on le voit dans la tragédie. Sur quoi Banquo: «Quelle manière de femmes êtes-vous donc, dit-il, de vous montrer si peu favorables envers moi que vous assigniez à mon compagnon non-seulement de grands emplois, mais encore un royaume, tandis qu&#x27;à moi vous ne me donnez rien du tout?--Vraiment, dit la première d&#x27;entre elles, nous te promettons de plus grands biens qu&#x27;à lui, car il régnera en effet, mais avec une fin malheureuse, et il ne laissera aucune postérité pour lui succéder; tandis qu&#x27;au contraire toi, à la vérité, ne régneras pas du tout, mais de toi sortiront ceux qui gouverneront l&#x27;Écosse par une longue suite de postérité non interrompue.» Aussitôt elles disparurent. Quelque temps après, le thane de Cawdor ayant été mis à mort pour cause de trahison, son titre fut conféré à Macbeth, qui commença, ainsi que Banquo, à ajouter grande foi aux prédictions des sorcières et à rêver aux moyens de parvenir à la couronne.</p>
+<p>Il avait des chances d&#x27;y arriver légitimement, les fils de Duncan n&#x27;étant pas encore en âge de régner et la loi d&#x27;Écosse portant que si le roi mourait avant que ses fils ou descendants en ligne directe fussent assez âgés pour prendre le maniement des affaires, on élirait à leur place le plus proche parent du roi défunt. Mais Duncan ayant désigné, avant l&#x27;âge, son fils Malcolm pour prince de Cumberland et son successeur au trône, Macbeth, qui vit par là ses espérances renversées, se crut en droit de venger l&#x27;injustice qu&#x27;il éprouvait. Il y était d&#x27;ailleurs sans cesse excité par Caithness, sa femme, qui, brûlant du désir de se voir reine, «et impatiente de tout délai, dit Boèce, comme le sont toutes les femmes,» ne cessait de lui reprocher son manque de courage. Macbeth ayant donc assemblé à Inverness, d&#x27;autres disent à Botgsvane, un grand nombre de ses amis auxquels il fit part de son projet, tua Duncan, et se rendit avec son parti à Scone, où il se mit sans difficulté en possession de la couronne.</p>
+<p>La chronique de Hollinshed rapporte sans aucun détail le meurtre de Duncan. Les incidents qu&#x27;a mis en scène Shakspeare sont tirés d&#x27;une autre partie de cette même chronique concernant le meurtre du roi Duffe, assassiné, plus de soixante ans auparavant, par un seigneur écossais nommé Donwald. Voici les circonstances de ce meurtre telles que les rapporte la chronique.</p>
+<p>Duffe s&#x27;était montré, dès le commencement de son règne, très-occupé de protéger le peuple contre les malfaiteurs et «personnes oisives qui ne voulaient vivre que sur les biens des autres.» Il en fit exécuter plusieurs, força les autres à se retirer en Irlande ou bien à apprendre quelque métier pour vivre. Bien qu&#x27;ils ne tinssent, à ce qu&#x27;il paraît, à la haute noblesse d&#x27;Écosse que par des degrés assez «éloignés, les nobles, dit la chronique, furent très-offensés de cette extrême rigueur, regardant comme un déshonneur, pour des gens descendus de noble parentage, d&#x27;être contraints de gagner leur vie par le travail de leurs mains, ce qui n&#x27;appartient qu&#x27;aux hommes de la glèbe et autres de la basse classe, nés pour travailler à nourrir la noblesse et pour obéir à ses ordres.» Le roi fut, en conséquence, regardé par eux comme ennemi des nobles et indigne de les gouverner, étant, disaient-ils, uniquement dévoué aux intérêts du peuple et du clergé, qui faisaient, en ce temps, cause commune contre l&#x27;oppression des grands seigneurs. Le mécontentement s&#x27;accroissant tous les jours, il s&#x27;éleva plusieurs révoltes, dans l&#x27;une desquelles entrèrent quelques jeunes gentilshommes, parents de Donwald, lieutenant pour le roi du château de Fores. Ces jeunes gens furent pris, et Donwald, qui jusqu&#x27;alors avait servi fidèlement et utilement le roi, se flatta d&#x27;obtenir leur grâce; mais n&#x27;ayant pu y parvenir, il en conçut un violent ressentiment. Sa femme, que des causes pareilles irritaient contre le roi, n&#x27;épargna rien pour l&#x27;aigrir et lui fit comprendre combien il lui serait facile de se venger lorsque Duffe viendrait, comme cela lui arrivait souvent, loger à Fores, sans autre garde que la garnison du château, qui était entièrement à leur dévotion, et elle lui en indiqua tous les moyens.</p>
+<p>Duffe étant venu peu de temps après à Fores, la veille de son départ, lorsqu&#x27;il se fut couché après avoir prié Dieu beaucoup plus tard qu&#x27;à l&#x27;ordinaire, Donwald et sa femme se mirent à table avec les deux chambellans, dont ils avaient préparé avec soin «l&#x27;arrière-souper ou collation,» et les enivrèrent si bien qu&#x27;ils les firent tomber dans un sommeil léthargique. Alors Donwald, «quoique dans son coeur il abhorrât cette action,» excité par sa femme, appela quatre de ses domestiques instruits de son projet, et qu&#x27;il avait séduits par des présents. Ils entrèrent dans la chambre de Duffe, le tuèrent, emportèrent son corps hors du château par une poterne, et, le mettant sur un cheval préparé à cet effet, le transportèrent à deux milles de là, près d&#x27;une petite rivière qu&#x27;ils détournèrent avec l&#x27;aide de quelques paysans; puis, creusant une fosse dans le fond du lit de la rivière, ils y enterrèrent le cadavre et firent repasser les eaux par-dessus, dans la crainte que s&#x27;il venait à être découvert, ses blessures ne saignassent lorsque Donwald en approcherait, et ne le fissent ainsi reconnaître comme l&#x27;auteur du meurtre. Donwald, pendant ce temps, avait eu soin de se tenir parmi ceux qui faisaient la garde, et qu&#x27;il ne quitta pas pendant le reste de la nuit. Les circonstances subséquentes, relatives au meurtre des deux chambellans, sont telles que Shakspeare les a représentées dans Macbeth. Il en est de même des prodiges qu&#x27;il rapporte et qui eurent lieu à la mort de Duffe. Le soleil ne parut point durant six mois, jusqu&#x27;à ce qu&#x27;enfin les meurtriers ayant été découverts et exécutés, il brilla de nouveau sur la terre, et les champs se couvrirent de fleurs, bien que ce ne fût pas la saison.</p>
+<p>Pour revenir à Macbeth, les dix premières années de son règne furent signalées par un gouvernement sage, équitable et vigoureux. On rapporte plusieurs de ses lois, dont voici quelques-unes:</p>
+<p>«Celui qui en accompagnera un autre pour lui faire cortège, soit à l&#x27;église, au marché, ou à quelque autre lieu d&#x27;assemblée publique, sera mis à mort, à moins qu&#x27;il ne reçoive sa subsistance de celui qu&#x27;il accompagne.» La peine de mort était également portée contre celui qui prêtait serment à tout autre qu&#x27;au roi.</p>
+<p>«Aucune sorte de seigneurs et de grands barons ne pourront, sous peine de mort, contracter mariage les uns avec les autres, surtout si leurs terres sont voisines.»</p>
+<p>«Toute arme (armour) et toute épée portée pour un autre effet que la défense du roi et du royaume en temps de guerre sera confisquée à l&#x27;usage du roi, avec tous les autres biens meubles (moveable goods) de la personne délinquante.» Il est également défendu à tout homme du peuple d&#x27;entretenir un cheval pour aucun autre usage que l&#x27;agriculture, mais cela seulement sous peine de confiscation du cheval.</p>
+<p>«Tous ceux qui, nommés gouverneurs ou (comme je puis les appeler) capitaines, achèteront quelques terres ou possessions dans les limites de leur commandement, perdront ces terres ou possessions, et l&#x27;argent qui aura servi à les payer.» Il leur est également défendu, sous peine de perdre leurs charges, sans pouvoir être remplacés par personne de leur famille, de marier leurs fils ou filles dans leur gouvernement.</p>
+<p>«Personne ne pourra siéger dans une cour temporelle, sans y être autorisé par une convention du roi.» Tous les actes doivent être également passés au nom du roi.</p>
+<p>Quelques autres lois ont pour objet d&#x27;assurer les immunités du clergé et l&#x27;autorité des censures de l&#x27;Église, de régler les devoirs de la chevalerie, les successions, etc. Plusieurs de ces lois, dont quelques-unes assez singulières pour le temps, sont faites par des motifs d&#x27;ordre et de règle; d&#x27;autres sont destinées à maintenir l&#x27;indépendance civile contre le pouvoir des officiers de la couronne; mais la plupart ont évidemment pour objet de diminuer la puissance des nobles et de concentrer toute l&#x27;autorité dans les mains du roi. Toutes sont rapportées par les historiens du temps comme des lois sages et bienfaisantes; et si Macbeth fût arrivé au trône par des moyens légitimes, s&#x27;il eût continué dans les voies de la justice comme il avait commencé, il aurait pu, dit la chronique de Hollinshed, «être compté au nombre des plus grands princes qui eussent jamais régné.»</p>
+<p>Mais ce n&#x27;était, continue notre chronique, qu&#x27;un zèle d&#x27;équité contrefait et contraire à son inclination naturelle. Macbeth se montra enfin tel qu&#x27;il était; et le même sentiment de sa situation qui l&#x27;avait porté à rechercher la faveur publique par la justice changea la justice en cruauté; «car les remords de sa conscience le tenaient dans une crainte continuelle qu&#x27;on ne le servît de la même coupe qu&#x27;il avait administrée à son prédécesseur.» Dès lors commence le Macbeth de la tragédie. Le meurtre de Banquo, exécuté de la même manière et pour les mêmes motifs que ceux que lui attribue Shakspeare, est suivi d&#x27;un grand nombre d&#x27;autres crimes qui lui font «trouver une telle douceur à mettre ses nobles à mort que sa soif pour le sang ne peut plus être satisfaite, et le peuple n&#x27;est, pas plus que la noblesse, à l&#x27;abri de ses barbaries et de ses rapines.» Des magiciens l&#x27;avaient averti de se garder de Macduff, dont la puissance d&#x27;ailleurs lui faisait ombrage, et sa haine contre lui ne cherchait qu&#x27;un prétexte. Macduff, prévenu du danger, forma le projet de passer en Angleterre pour engager Malcolm, qui s&#x27;y était réfugié, à venir réclamer ses droits. Macbeth en fut informé, «car les rois, dit la chronique, ont des yeux aussi perçants que le lynx et des oreilles aussi longues que Midas,» et Macbeth tenait chez tous les nobles de son royaume des espions à ses gages. La fuite de Macduff, le massacre de tout ce qui lui appartenait, sa conversation avec Malcolm, sont des faits tirés de la chronique. Malcolm opposa d&#x27;abord aux empressements de Macduff des raisons tirées de sa propre incontinence, et Macduff lui répondit comme dans Shakspeare, en ajoutant seulement: «Fais-toi toujours roi, et j&#x27;arrangerai les choses avec tant de prudence que tu pourras te satisfaire à ton plaisir, si secrètement que personne ne s&#x27;en apercevra.» Le reste de la scène est fidèlement imité par le poëte; et tout ce qui concerne la mort de Macbeth, les prédictions qui lui avaient été faites et la manière dont elles furent à la fois éludées et accomplies, est tiré presque mot pour mot de la chronique où nous voyons enfin comment «par l&#x27;illusion du diable il déshonora, par la plus terrible cruauté, un règne dont les commencements avaient été utiles à son peuple[2].» Macbeth avait assassiné Duncan en 1040; il fut tué lui-même en 1057, après dix sept ans de règne.</p>
+<p>[Note 2: Chroniques de Hollinshed, édit. in-fol. de 1586, t. Ier, p. 168 et suiv., et pour ce qui concerne le meurtre du roi Duffe, p. 150 et suiv. C&#x27;est probablement des faits fournis par Hector Boèce à cette chronique que Buchanan, en rapportant beaucoup plus sommairement l&#x27;histoire de Macbeth, a dit: Multa hic fabulose quidam nostrorum affingunt; sed quia theatris aut milesiis fabulis sunt aptiora quam historiae, ea omitto. (Rerum Scot. Hist., t. VII.)]</p>
+<p>Tel est l&#x27;ensemble de faits auquel Shakspeare s&#x27;est chargé de donner l&#x27;âme et la vie. Il se place simplement au milieu des événements et des personnages, et d&#x27;un souffle mettant en mouvement toutes ces choses inanimées, il nous fait assister au spectacle de leur existence. Loin de rien ajouter aux incidents que lui a fournis la relation à laquelle il emprunte son sujet, il en retranche beaucoup; il élague surtout ce qui altérerait la simplicité de sa marche et embarrasserait l&#x27;action de ses personnages; il supprime ce qui l&#x27;empêcherait de les pénétrer d&#x27;une seule vue et de les peindre en quelques traits. Macbeth, avec les crimes et les grandes qualités que lui attribue son histoire, serait un être trop compliqué; il faudrait en lui trop d&#x27;ambition et trop de vertu à la fois pour que l&#x27;une de ses dispositions pût se soutenir quelque temps en présence de l&#x27;autre, et l&#x27;on aurait besoin de trop grandes machines pour faire pencher la balance de l&#x27;un ou l&#x27;autre côté. Le Macbeth de Shakspeare n&#x27;est brillant que par ses vertus guerrières, et surtout par sa valeur personnelle; il n&#x27;a que les qualités et les défauts d&#x27;un barbare: brave, mais point étranger à la crainte du péril dès qu&#x27;il y croit, cruel et sensible par accès, perfide par inconstance, toujours prêt à céder à la tentation qui se présente, qu&#x27;elle soit de crime ou de vertu, il a bien, dans son ambition et dans ses forfaits, ce caractère d&#x27;irréflexion et de mobilité qui appartient à une civilisation presque sauvage; ses passions sont impérieuses, mais aucune série de raisonnements et de projets ne les détermine et ne les gouverne; c&#x27;est un arbre élevé, mais sans racines, que le moindre vent peut ébranler et dont la chute est un désastre. De là naît sa grandeur tragique; elle est dans sa destinée plus que dans son caractère. Macbeth, placé plus loin des espérances du trône, fût demeuré vertueux, et sa vertu eût été inquiète, car elle eût été seulement le fruit de la circonstance; son crime devient pour lui un supplice, parce que c&#x27;est la circonstance qui le lui a fuit commettre: ce crime n&#x27;est pas sorti du fond de la nature de Macbeth; et cependant il s&#x27;attache à lui, l&#x27;enveloppe, l&#x27;enchaîne, le déchire de toutes parts, et lui crée ainsi une destinée tourmentée et irrémissible, où le malheureux s&#x27;agite vainement, ne faisant rien qui ne l&#x27;enfonce toujours davantage, et avec plus de désespoir, dans la carrière que lui prescrit désormais son implacable persécuteur. Macbeth est un de ces caractères marqués dans toutes les superstitions pour devenir la proie et l&#x27;instrument de l&#x27;esprit pervers, qui prend plaisir à les perdre parce qu&#x27;ils ont reçu quelque étincelle de la nature divine, et qui en même temps n&#x27;y rencontre que peu de difficultés, car cette lumière céleste ne lance en eux que des rayons passagers, à chaque instant obscurcis par des orages.</p>
+<p>Lady Macbeth est bien précisément la femme d&#x27;un tel homme, le produit d&#x27;un même état de civilisation, d&#x27;une même habitude de passions. Elle y joint de plus d&#x27;être une femme, c&#x27;est-à-dire sans prévoyance, sans généralité dans les vues, n&#x27;apercevant à la fois qu&#x27;une seule partie d&#x27;une seule idée, et s&#x27;y livrant tout entière sans jamais admettre ce qui pourrait l&#x27;en distraire et l&#x27;y troubler. Les sentiments qui appartiennent à son sexe ne lui sont point étrangers: elle aime son mari, connaît les joies d&#x27;une mère, et n&#x27;a pu tuer elle-même Duncan, parce qu&#x27;il ressemblait à son père endormi; mais elle veut être reine. Il faut pour cela que Duncan périsse; elle ne voit dans la mort de Duncan que le plaisir d&#x27;être reine; son courage est facile, car elle n&#x27;aperçoit pas ce qui pourrait la faire reculer. Lorsque la passion sera satisfaite et l&#x27;action commise, alors seulement les autres conséquences lui en seront révélées comme une nouveauté dont elle n&#x27;avait pas eu la plus légère prévision. Ces craintes, cette nécessité de nouveaux forfaits, que son mari avait entrevus d&#x27;avance, elle n&#x27;y avait jamais songé. Elle voulait bien rejeter le crime sur les deux chambellans; mais ce n&#x27;est pas elle qui songe à les tuer; ce n&#x27;est pas elle qui prépare le meurtre de Banquo, le massacre de la famille de Macduff. Elle n&#x27;a pas vu si loin; elle n&#x27;avait pas même deviné, en entrant dans la chambre de Duncan égorgé, l&#x27;effet que produirait sur elle un pareil spectacle. Elle en sort troublée, ne dédaignant plus les terreurs de son mari, mais l&#x27;engageant seulement à ne se pas trop arrêter sur des images, dont on voit qu&#x27;elle commence à se sentir elle-même obsédée. Le coup est porté et se révélera dans l&#x27;admirable et terrible scène du somnambulisme: c&#x27;est là que nous apprendrons ce que devient, lorsqu&#x27;il n&#x27;est plus soutenu par l&#x27;aveugle emportement de la passion, ce caractère en apparence si inébranlable. Macbeth s&#x27;est affermi dans le crime, après avoir hésité à le commettre, parce qu&#x27;il le comprenait; nous verrons sa femme, succombant sous la connaissance qu&#x27;elle en a trop tard acquise, substituer une idée fixe à une autre, mourir pour s&#x27;en délivrer, et punir par la folie du désespoir le crime que lui a fait commettre la folie de l&#x27;ambition.</p>
+<p>Les autres personnages, amenés seulement pour concourir à ce grand tableau de la marche et de la destinée du crime, n&#x27;ont d&#x27;autre couleur que celle de la situation que leur donne l&#x27;histoire. Les sorcières sont bien ce qu&#x27;elles doivent être, et je ne sais pourquoi il est d&#x27;usage de se récrier avec dégoût contre cette portion de la représentation de Macbeth: lorsqu&#x27;on voit ces viles créatures arbitres de la vie, de la mort, de toutes les chances et de tous les intérêts de l&#x27;humanité, et qui en disposent d&#x27;après les plus méprisables caprices de leur odieuse nature, à la terreur qu&#x27;inspire leur pouvoir se joint l&#x27;effroi que fait naître leur déraison, et le ridicule même d&#x27;un tel spectacle en augmente l&#x27;effet.</p>
+<p>Le style de Macbeth est remarquable, dans son énergie sauvage, par une recherche qu&#x27;on aura raison de lui reprocher, mais qu&#x27;à tort on regarderait comme contraire à la vérité autant qu&#x27;elle l&#x27;est au naturel: la recherche n&#x27;est point incompatible avec la grossièreté des moeurs et des idées; elle semble même assez ordinaire aux temps et aux situations où manquent les idées générales. L&#x27;esprit, qui ne peut demeurer oisif, s&#x27;attache alors aux plus petits rapports, s&#x27;y complaît et s&#x27;en fait une habitude que nous retrouvons dans toutes les situations analogues. Rien n&#x27;est plus alambiqué que l&#x27;esprit de la littérature du moyen âge. Ce que nous connaissons des discours des sauvages contient beaucoup d&#x27;idées recherchées; la recherche est le caractère des beaux esprits de la classe inférieure; les injures mêmes des gens du peuple sont composées quelquefois avec une recherche tout à fait singulière, comme si, dans ces moments où la colère exalte les facultés, leur esprit saisissait avec plus de facilité et d&#x27;abondance les rapports de ce genre, les seuls où il soit capable d&#x27;atteindre.</p>
+<p>On croit que Macbeth fut représenté en 1606; l&#x27;idée de faire une tragédie sur ce sujet, nécessairement agréable au roi Jacques, qui venait de monter sur le trône d&#x27;Angleterre, fut probablement inspirée à Shakspeare par une pièce de vers en une petite scène, qu&#x27;en 1605, des étudiants d&#x27;Oxford récitèrent en latin devant le roi, et en anglais devant la reine qui l&#x27;avait accompagné dans la ville. Les étudiants étaient au nombre de trois et parlaient probablement tour à tour; leurs discours roulèrent sur la prédiction faite à Banquo; et par une allusion au triple salut qu&#x27;avait reçu Macbeth, ils saluèrent Jacques roi d&#x27;Angleterre, d&#x27;Écosse et d&#x27;Irlande. Ils le saluèrent même roi de France, ce qui détruisait assez gratuitement la vertu du nombre trois.</p>
+<h3 class="sub">Macbeth — Tragédie</h3>
+<h3 class="sub">Personnages</h3>
+<p>DUNCAN, roi d&#x27;Écosse. MALCOLM,   | fils du roi. DONALBAIN, |</p>
+<p>MACBETH, | généraux de l&#x27;armée du roi. BANQUO,  |</p>
+<p>MACDUFF, | LENOX,   | ROSSE,   | seigneurs écossais. MENTEITH,| ANGUS,   | CAITHNESS. FLEANCE, fils de Banquo. SIWARD, comte de Northumberland, général de l&#x27;armée anglaise. LE FILS DE SIWARD. SEYTON, officier attaché à Macbeth. LE FILS DE MACDUFF. UN MÉDECIN ANGLAIS. UN MÉDECIN ÉCOSSAIS. LADY MACBETH. LADY MACDUFF. DAMES DE LA SUITE DE LADY MACBETH. LORDS, GENTILSHOMMES, OFFICIERS, SOLDATS, MEURTRIERS, SUIVANTS ET MESSAGERS. HECATE ET TROIS SORCIÈRES. L&#x27;OMBRE DE BANQUO ET AUTRES APPARITIONS.</p>
+<p>La scène est en Écosse, et surtout dans le château de Macbeth, excepté à la fin du quatrième acte, où elle se passe en Angleterre.</p>
+<h2 class="chapter" id="c1">Acte premier — Scène I</h2>
+<p>Un lieu découvert.--Tonnerre, éclairs.</p>
+<p>Entrent LES TROIS SORCIÈRES.</p>
+<p>PREMIÈRE SORCIÈRE.--Quand nous réunirons-nous maintenant toutes trois? Sera-ce par le tonnerre, les éclairs ou la pluie?</p>
+<p>DEUXIÈME SORCIÈRE.--Quand le bacchanal aura cessé, quand la bataille sera gagnée et perdue.</p>
+<p>TROISIÈME SORCIÈRE.--Ce sera avant le coucher du soleil.</p>
+<p>PREMIÈRE SORCIÈRE.--En quel lieu?</p>
+<p>DEUXIÈME SORCIÈRE.--Sur la bruyère.</p>
+<p>TROISIÈME SORCIÈRE.--Pour y rencontrer Macbeth.</p>
+<p>(Une voix les appelle.)</p>
+<p>PREMIÈRE SORCIÈRE.--J&#x27;y vais, Grimalkin[3]!</p>
+<p>LES TROIS SORCIÈRES, à la fois.--Paddock[4] appelle.--Tout à l&#x27;heure!--Horrible est le beau, beau est l&#x27;horrible. Volons à travers le brouillard et l&#x27;air impur.</p>
+<p>(Elles disparaissent.)</p>
+<p>[Note 3: Grimalkin, nom d&#x27;un vieux chat. Grimalkin est très-souvent, en Angleterre, le nom propre d&#x27;un chat.]</p>
+<p>[Note 4: Paddock, espèce de gros crapaud. Les chats et les crapauds jouaient, comme on sait, un rôle très-important dans la sorcellerie.]</p>
+<h2 class="chapter" id="c2">Scène II</h2>
+<p>Un camp près de Fores.</p>
+<p>Entrent LE ROI DUNCAN, MALCOLM, DONALBAIN, LENOX, et leur suite. Ils vont à la rencontre d&#x27;un soldat blessé et sanglant.</p>
+<p>DUNCAN.--Quel est cet homme tout couvert de sang? Il me semble, d&#x27;après son état, qu&#x27;il pourra nous dire où en est actuellement la révolte.</p>
+<p>MALCOLM.--C&#x27;est le sergent qui a combattu en brave et intrépide soldat pour me sauver de la captivité.--Salut, mon brave ami; apprends au roi ce que tu sais de la mêlée: en quel état l&#x27;as-tu laissée?</p>
+<p>LE SERGENT.--Elle demeurait incertaine, comme deux nageurs épuisés qui s&#x27;accrochent l&#x27;un à l&#x27;autre et paralysent tous leurs efforts. L&#x27;impitoyable Macdowald (bien fait pour être un rebelle, car tout l&#x27;essaim[5] des vices de la nature s&#x27;est abattu sur lui pour l&#x27;amener là) avait reçu des îles de l&#x27;ouest un renfort de Kernes[6] et de Gallow-Glasses; et la Fortune, souriant à sa cause maudite, semblait se faire la prostituée d&#x27;un rebelle. Mais tout cela n&#x27;a pas suffi. Le brave Macbeth (il a bien mérité ce nom) dédaignant la Fortune, comme le favori de la Valeur, avec son épée qu&#x27;il brandissait toute fumante d&#x27;une sanglante exécution, s&#x27;est ouvert un passage, jusqu&#x27;à ce qu&#x27;il se soit trouvé en face du traître, à qui il n&#x27;a pas donné de poignée de mains ni dit adieu, qu&#x27;il ne l&#x27;eût décousu du nombril à la mâchoire, et qu&#x27;il n&#x27;eût placé sa tête sur nos remparts.</p>
+<p>DUNCAN.--O mon brave cousin! digne gentilhomme!</p>
+<p>LE SERGENT.--De même que le point où le soleil commence à luire est celui d&#x27;où viennent éclater les tempêtes qui brisent nos vaisseaux, et les effroyables tonnerres, ainsi de la source d&#x27;où semblait devoir arriver le secours ont surgi de nouvelles détresses.--Écoute, roi d&#x27;Écosse, écoute.--A peine la justice, armée de la valeur, avait-elle forcé ces Kernes voltigeurs à se fier à leurs jambes, que le chef des Norwégiens, saisissant son avantage avec des bataillons tout frais et des armes bien fourbies, a commencé une seconde attaque.</p>
+<p>DUNCAN.--Cela n&#x27;a-t-il pas effrayé nos généraux Macbeth et Banquo?</p>
+<p>LE SERGENT.--Oui, comme les passereaux l&#x27;aigle, ou le lièvre le lion. Pour dire vrai, je ne les puis comparer qu&#x27;à deux canons chargés jusqu&#x27;à la gueule de doubles charges, tant ils redoublaient leurs coups redoublés sur les ennemis. À moins qu&#x27;ils n&#x27;eussent résolu de se baigner dans la fumée des blessures, ou de laisser à la mémoire le souvenir d&#x27;un autre Golgotha, je n&#x27;en sais rien.--Mais je me sens faible; mes plaies crient au secours.</p>
+<p>DUNCAN.--Tes paroles te vont aussi bien que tes blessures: elles ont un parfum d&#x27;honneur.--Allez avec lui, amenez-lui les chirurgiens.--(Le sergent sort accompagné.) Qui s&#x27;avance vers nous?</p>
+<p>(Entre Rosse.)</p>
+<p>MALCOLM.--C&#x27;est le digne thane de Rosse.</p>
+<p>LENOX.--Quel empressement peint dans ses regards! A le voir, il aurait l&#x27;air de nous annoncer d&#x27;étranges choses.</p>
+<p>ROSSE.--Dieu sauve le roi!</p>
+<p>DUNCAN.--D&#x27;où viens-tu, digne thane?</p>
+<p>ROSSE.--De Fife, grand roi, où les bannières des Norwégiens insultent les cieux et glacent nos gens du vent qu&#x27;elles agitent. Le roi de Norwége en personne, à la tête d&#x27;une armée terrible, et secondé par ce traitre déloyal, le thane de Cawdor, avait engagé un combat funeste, lorsque le nouvel époux de Bellone, revêtu d&#x27;une armure éprouvée, s&#x27;est mesuré avec lui à forces égales, et son fer opposé contre un fer rebelle, bras contre bras, a dompté son farouche courage.--Pour conclure, la victoire nous est restée.</p>
+<p>DUNCAN.--Quel bonheur!</p>
+<p>ROSSE.--Maintenant Suénon, le roi de Norwége, demande à entrer en composition: nous n&#x27;avons pas daigné lui permettre d&#x27;enterrer ses morts, qu&#x27;il n&#x27;eût déposé d&#x27;avance à Saint-Colmes-Inch dix mille dollars pour notre usage général.</p>
+<p>DUNCAN.--Le thane de Cawdor ne trahira plus nos intérêts confidentiels. Allez, ordonnez sa mort, et saluez Macbeth du titre qui lui a appartenu.</p>
+<p>ROSSE.--Je vais faire exécuter vos ordres.</p>
+<p>DUNCAN.--Ce qu&#x27;il a perdu, le brave Macbeth l&#x27;a gagné.</p>
+<p>(Ils sortent.)</p>
+<p>[Note 5:</p>
+<p>For to that The multiplying villainies of nature, Do swarm upon him.</p>
+<p>M. Steevens explique to that par in addition to that (outre cela); je crois qu&#x27;il se trompe et que to that signifie ici pour cela. Le sergent, qui vient de combattre loyalement un rebelle, regarde le caractère du rebelle comme le plus monstrueux de tous, et comme l&#x27;assemblage de tous les vices de la nature. Dans la chronique d&#x27;Hollinshed, le rebelle porte le nom de Macdowald.]</p>
+<p>[Note 6: Deux espèces de soldats, les premiers armés à la légère, les autres plus pesamment.]</p>
+<h2 class="chapter" id="c3">Scène III</h2>
+<p>Une bruyère.--Tonnerre.</p>
+<p>Entrent LES TROIS SORCIÈRES.</p>
+<p>PREMIÈRE SORCIÈRE.--Où as-tu été, ma soeur.</p>
+<p>DEUXIÈME SORCIÈRE.--Tuer les cochons.[7]</p>
+<p>TROISIÈME SORCIÈRE.--Et toi, ma soeur?</p>
+<p>PREMIÈRE SORCIÈRE.--La femme d&#x27;un matelot avait des châtaignes dans son tablier; elle mâchonnait, mâchonnait, mâchonnait.--Donne-m&#x27;en, lui ai-je dit.--Arrière, sorcière! m&#x27;a répondu cette maigrichonne[8] nourrie de croupions.--Son mari est parti pour Alep, comme patron du Tigre; mais je m&#x27;embarquerai avec lui dans un tamis, et sous la forme d&#x27;un rat sans queue,[9] je ferai, je ferai, je ferai.</p>
+<p>DEUXIÈME SORCIÈRE.--Je te donnerai un vent.</p>
+<p>PREMIÈRE SORCIÈRE.--Tu es bien bonne.</p>
+<p>TROISIÈME SORCIÈRE.--Et moi un autre.</p>
+<p>PREMIÈRE SORCIÈRE.--J&#x27;ai déjà tous les autres, les ports vers lesquels ils soufflent, et tous les endroits marqués sur la carte des marins. Je le rendrai sec comme du foin, le sommeil ne descendra ni jour ni nuit sur sa paupière enfoncée; il vivra comme un maudit, pendant neuf fois neuf longues semaines; il maigrira, s&#x27;affaiblira, languira; et si sa barque ne peut périr, du moins sera-t-elle battue par la tempête.--Voyez ce que j&#x27;ai là.</p>
+<p>DEUXIÈME SORCIÈRE.--Montre-moi, montre-moi.</p>
+<p>PREMIÈRE SORCIÈRE.--C&#x27;est le ponce d&#x27;un pilote qui a fait naufrage en revenant dans son pays.</p>
+<p>(Tambour derrière le théâtre.)</p>
+<p>TROISIÈME SORCIÈRE.--Le tambour! le tambour! Macbeth arrive.</p>
+<p>TOUTES TROIS ENSEMBLE.--Les soeurs du Destin[10] se tenant par la main, parcourant les terres et les mers, ainsi tournent, tournent, trois fois pour le tien, trois fois pour le mien, et trois fois encore pour faire neuf. Paix! le charme est accompli.</p>
+<p>(Macbeth et Banquo paraissent, traversant cette plaine de bruyères; ils sont suivis d&#x27;officiers et de soldats.)</p>
+<p>MACBETH.--Je n&#x27;ai jamais vu de jour si sombre et si beau.</p>
+<p>BANQUO.--Combien dit-on qu&#x27;il y a d&#x27;ici à Fores?--Quelles sont ces créatures si décharnées et vêtues d&#x27;une manière si bizarre? Elles ne ressemblent point aux habitants de la terre, et pourtant elles y sont.--Êtes-vous des êtres que l&#x27;homme puisse questionner? Vous semblez me comprendre, puisque vous placez toutes trois à la fois votre doigt décharné sur vos lèvres de parchemin. Je vous prendrais pour des femmes si votre barbe ne me défendait de le supposer.</p>
+<p>MACBETH.--Parlez, si vous pouvez; qui êtes-vous?</p>
+<p>PREMIÈRE SORCIÈRE.--Salut, Macbeth! salut à toi, thane de Glamis!</p>
+<p>DEUXIÈME SORCIÈRE.--Salut, Macbeth! salut à toi, thane de Cawdor!</p>
+<p>TROISIÈME SORCIÈRE.--Salut, Macbeth, qui seras roi un jour!</p>
+<p>BANQUO.--Mon bon seigneur, pourquoi tressaillez-vous, et semblez-vous craindre des choses dont le son vous doit être si doux?--Au nom de la vérité, êtes-vous des fantômes, ou êtes-vous en effet ce que vous paraissez être? Vous saluez mon noble compagnon d&#x27;un titre nouveau, de la haute prédiction d&#x27;une illustre fortune et de royales espérances, tellement qu&#x27;il en est comme hors de lui-même; et moi, vous ne me parlez pas: si vos regards peuvent pénétrer dans les germes du temps, et démêler les semences qui doivent pousser et celles qui avorteront, parlez-moi donc à moi qui ne sollicite ni ne redoute vos faveurs ou votre haine.</p>
+<p>PREMIÈRE SORCIÈRE.--Salut!</p>
+<p>DEUXIÈME SORCIÈRE.--Salut!</p>
+<p>TROISIÈME SORCIÈRE.--Salut!</p>
+<p>PREMIÈRE SORCIÈRE.--Moindre que Macbeth et plus grand.</p>
+<p>DEUXIÈME SORCIÈRE.--Moins heureux, et cependant beaucoup plus heureux.</p>
+<p>TROISIÈME SORCIÈRE.--Tu engendreras des rois, quoique tu ne le sois pas. Ainsi salut, Macbeth et Banquo!</p>
+<p>PREMIÈRE SORCIÈRE.--Banquo et Macbeth, salut!</p>
+<p>MACBETH.--Demeurez; vous dont les discours demeurent imparfaits, dites-m&#x27;en davantage. Par la mort de Sinel, je sais que je suis thane de Glamis; mais comment le serais-je de Cawdor? Le thane de Cawdor est vivant, est un seigneur prospère; et devenir roi n&#x27;entre pas dans la perspective de ma croyance, pas plus que d&#x27;être thane de Cawdor. Parlez, d&#x27;où tenez-vous ces étranges nouvelles, et pourquoi arrêtez-vous nos pas sur ces bruyères desséchées par vos prophétiques saluts?--Je vous somme de parler.</p>
+<p>(Les sorcières disparaissent.)</p>
+<p>BANQUO.--De la terre comme de l&#x27;eau s&#x27;élèvent des bulles d&#x27;air; c&#x27;est là ce que nous avons vu.--Où se sont-elles évanouies?</p>
+<p>MACBETH.--Dans l&#x27;air; et ce qui paraissait un corps s&#x27;est dissipé comme l&#x27;haleine dans les vents.--Plût à Dieu qu&#x27;elles eussent demeuré plus longtemps!</p>
+<p>BANQUO.--Étaient-elles réellement ici ces choses dont nous parlons, ou bien aurions-nous mangé de cette racine de folie[11] qui rend la raison captive?</p>
+<p>MACBETH.--Vos enfants seront rois.</p>
+<p>BANQUO.--Vous serez roi.</p>
+<p>MACBETH.--Et thane de Cawdor aussi: cela ne s&#x27;est-il pas dit ainsi?</p>
+<p>BANQUO.--Air et paroles.--Mais qui vient à nous?</p>
+<p>(Entrent Rosse et Angus.)</p>
+<p>ROSSE.--Macbeth, le roi a reçu avec joie la nouvelle de tes succès; et à la lecture de tes exploits dans le combat contre les rebelles, son étonnement et son admiration se disputaient en lui pour savoir ce qui devait lui rester ou t&#x27;appartenir[12]. Réduit par là au silence, en parcourant le reste des événements du même jour, il t&#x27;a trouvé au milieu des solides bataillons norwégiens, sans effroi au milieu de ces étranges spectacles de mort, ouvrage de ta main. Aussi pressés que la parole, les courriers succédaient aux courriers, chacun apportant et répandant devant lui les éloges que tu mérites pour cette étonnante défense de son royaume.</p>
+<p>ANGUS.--Nous avons été envoyés pour te porter les remerciements de notre royal maître, pour te conduire en sa présence, non pour te récompenser.</p>
+<p>ROSSE.--Et pour gage de plus grands honneurs, il m&#x27;a ordonné de te saluer de sa part thane de Cawdor. Ainsi, digne thane, salut sous ce nouveau titre, car il t&#x27;appartient.</p>
+<p>BANQUO.--Quoi! le diable peut-il dire vrai?</p>
+<p>MACBETH.--Le thane de Cawdor est vivant. Pourquoi venez-vous me revêtir de vêtements empruntés?</p>
+<p>ANGUS.--Celui qui fut thane de Cawdor vit encore; mais sous le poids d&#x27;un jugement auquel est soumise cette vie qu&#x27;il a mérité de perdre. S&#x27;il était d&#x27;intelligence avec le roi de Norwége, ou s&#x27;il prêtait aux rebelles une aide et des secours clandestins, ou si, de concert avec tous deux, il travaillait à la ruine de son pays, c&#x27;est ce que j&#x27;ignore; mais des trahisons capitales, avouées et prouvées, l&#x27;ont perdu sans ressource.</p>
+<p>MACBETH.--Thane de Glamis et thane de Cawdor! le plus grand est encore à venir.--Merci de votre peine.--N&#x27;espérez-vous pas à présent que vos enfants seront rois, puisque celles qui m&#x27;ont salué thane de Cawdor ne leur ont rien moins promis?</p>
+<p>BANQUO.--Si vous le croyez sincèrement, cela pourrait bien aussi vous faire aspirer à obtenir la couronne, outre le titre de thane de Cawdor; mais c&#x27;est étrange; et souvent, pour nous attirer à notre perte, les ministres des ténèbres nous disent la vérité: ils nous amorcent par des bagatelles permises, pour nous précipiter ensuite dans les conséquences les plus funestes.--Mes cousins, un mot, je vous prie.</p>
+<p>MACBETH.--Deux vérités m&#x27;ont été dites[13], favorables prologues de la grande scène de ce royal sujet.--Je vous remercie, messieurs.--Cette instigation surnaturelle ne peut être mauvaise, ne peut être bonne. Si elle est mauvaise, pourquoi me donnerait-elle un gage de succès, en commençant ainsi par une vérité? Je suis thane de Cawdor. Si elle est bonne, pourquoi est-ce que je cède à cette suggestion, dont l&#x27;horrible image agite mes cheveux et fait que mon coeur, retenu à sa place, va frapper mes côtes par un mouvement contraire aux lois de la nature? Les craintes présentes sont moins terribles que d&#x27;horribles pensées. Mon esprit, où le meurtre n&#x27;est encore qu&#x27;un fantôme, ébranle tellement mon individu que toutes les fonctions en sont absorbées par les conjectures; et rien n&#x27;y existe que ce qui n&#x27;est pas.</p>
+<p>BANQUO.--Voyez dans quelles réflexions est plongé notre compagnon.</p>
+<p>MACBETH.--Si le hasard veut me faire roi, eh bien! le hasard peut me couronner sans que je m&#x27;en mêlé.</p>
+<p>BANQUO.--Ces nouveaux honneurs lui font l&#x27;effet de nos habits neufs: ils ne collent au corps qu&#x27;avec un peu d&#x27;usage.</p>
+<p>MACBETH.--Arrive ce qui pourra; le temps et les heures avancent à travers la plus mauvaise journée.</p>
+<p>BANQUO.--Digne Macbeth, nous attendons votre bon plaisir.</p>
+<p>MACBETH.--Pardonnez-moi: ma mauvaise tête se travaillait à retrouver des choses oubliées.--Nobles seigneurs, vos services sont consignés dans un registre dont chaque jour je tournerai la feuille pour les relire.--Allons trouver le roi. (A Banquo.) Réfléchissez à ce qui est arrivé; et, plus à loisir, après avoir tout bien pesé, dans l&#x27;intervalle, nous en parlerons à coeur ouvert.</p>
+<p>BANQUO.--Très-volontiers.</p>
+<p>MACBETH.--Jusque-là c&#x27;est assez.--Allons, mes amis....</p>
+<p>(Ils sortent.)</p>
+<p>[Note 7: Killing swine. C&#x27;était une des grandes occupations des sorcières de faire mourir les cochons de ceux qui leur avaient déplu d&#x27;une façon quelconque.]</p>
+<p>[Note 8: La sorcière insulte ici la pauvreté de son ennemie qui vivait, disait-elle, des restes qu&#x27;on distribuait à la porte des couvents et des maisons opulentes.]</p>
+<p>[Note 9: Lorsqu&#x27;une sorcière prenait la forme d&#x27;un animal, la queue lui manquait toujours, parce que, disait-on, il n&#x27;y a pas dans le corps humain de partie correspondante dont on puisse façonner une queue, comme on fait du nez le museau, des pieds et des mains les pattes, etc.]</p>
+<p>[Note 10: The weird sisters. La chronique d&#x27;Hollinshed, en rapportant l&#x27;apparition des trois figures étranges qui prédirent à Macbeth sa future grandeur, dit que, d&#x27;après l&#x27;accomplissement de leurs prophéties, on fut généralement d&#x27;opinion que c&#x27;étaient ou the weird sisters, «comme qui dirait les déesses de la destinée, ou quelques nymphes ou fées que leurs connaissances nécromantiques douaient de la science de prophétie.» Warburton les prend pour les walkyries, nymphes du paradis d&#x27;Odin, chargées de conduire les âmes des morts et de verser à boire aux guerriers; et les fonctions que s&#x27;attribuent, dans leur chant magique, les sorcières de Shakspeare, étaient aussi, selon quelques auteurs, celles que la mythologie scandinave attribuait aux walkyries. Mais on oppose à cette opinion de Warburton, que les walkyries étaient très-belles, et ne peuvent être représentées par les sorcières de Shakspeare avec leurs barbes; que, d&#x27;ailleurs, les walkyries étaient plus de trois, ce qui paraît être le nombre fixe des weird sisters. Il y a lieu de croire que ces divinités avaient du rapport avec les Parques; et un ancien auteur anglais (Gawin Douglas), qui a donné une traduction de Virgile, y rend en effet le nom de Parcæ par ceux weird sisters, et on trouve le mot wierd ou weird employé dans le même sens par d&#x27;autres auteurs. D&#x27;autres en ont fait un substantif, et l&#x27;ont employé dans le sens de prophétie, d&#x27;après la signification du mot anglo-saxon wyrd, d&#x27;où il est dérivé. Ce qui paraît clair, c&#x27;est que Shakspeare, de même que dans la Tempête, au lieu de s&#x27;astreindre à suivre exactement un système de mythologie, a réuni sur un même personnage les diverses attributions appartenant à des êtres d&#x27;ordres fort différents, et a présenté comme identiques les soeurs du destin (weird sisters) et les sorcières (witches) que la chronique d&#x27;Hollinshed distingue positivement, attribuant la première prédiction faite à Macbeth et à Banquo aux weird sisters, tandis qu&#x27;elle attribue les prédictions subséquentes à certains sorciers et sorcières (wizards et witches), en qui Macbeth avait grande confiance, et qu&#x27;il consultait habituellement. Les weird sisters étaient des êtres surnaturels, de véritables déesses qui ne se communiquaient aux mortels que par des apparitions, tandis que les sorciers et les sorcières étaient simplement des hommes et des femmes initiés dans les mystères diaboliques de la sorcellerie. Shakspeare a de plus subordonné ses sorcières à Hécate, divinité du paganisme.]</p>
+<p>[Note 11: Probablement la ciguë; on lui attribuait autrefois la propriété de troubler la raison.]</p>
+<p>[Note 12:</p>
+<p>His wonders and his praises do contend Which should be thine or his.</p>
+<p>On a tâché de rendre ici exactement, mais sans espoir de la rendre clairement, une subtilité qui a d&#x27;autant plus embarrassé les commentateurs anglais, qu&#x27;ils ont voulu y trouver plus de sens qu&#x27;elle n&#x27;en a réellement. Shakspeare n&#x27;a prétendu dire autre chose, si ce n&#x27;est que Duncan ne savait s&#x27;il devait plus s&#x27;étonner des exploits de Macbeth ou l&#x27;en louer; en sorte que l&#x27;étonnement appartenant à Duncan, et les éloges à Macbeth, disputaient which should be thine or his.]</p>
+<p>[Note 13: Les commentateurs sont assez embarrassés à expliquer comment Macbeth, déjà thane de Glamis, par la mort de Sinel, lors de la rencontre des sorcières, peut regarder le salut qu&#x27;elles lui ont donné sous ce premier titre comme une preuve de leur science surnaturelle. Le traducteur écossais de Boèce semble faire entendre que Sinel ne mourut qu&#x27;après cette rencontre. Hollinshed dit, au contraire, que Macbeth, par la mort de son père, venait d&#x27;entrer (had lately entered) en possession du titre de thane de Glamis. C&#x27;est bien certainement la chronique d&#x27;Hollinshed que Shakspeare a suivie en ceci, comme dans tout le reste de la pièce; Macbeth, ayant soin de nous apprendre quel événement l&#x27;a rendu thane de Glamis, prouve clairement que la nouvelle en est si récente pour lui, que l&#x27;idée de ce titre ne lui est pas encore familière et ne se lie qu&#x27;à la circonstance qui l&#x27;en a rendu possesseur. Shakspeare a donc voulu indiquer un événement si nouveau que Macbeth peut s&#x27;étonner que des personnes qui lui sont étrangères en soient déjà instruites.]</p>
+<h2 class="chapter" id="c4">Scène IV</h2>
+<p>A Fores, un appartement dans le palais.--Fanfares.</p>
+<p>Entrent DUNCAN, MALCOLM, DONALBAIN, LENOX et leur suite.</p>
+<p>DUNCAN.--À-t-on exécuté Cawdor? Ceux que j&#x27;en avais chargés ne sont-ils pas encore revenus?</p>
+<p>MALCOLM.--Mon souverain, ils ne sont pas encore de retour; mais j&#x27;ai parlé à quelqu&#x27;un qui l&#x27;avait vu mourir. Il m&#x27;a rapporté qu&#x27;il avait très-franchement avoué sa trahison, imploré le pardon de Votre Majesté, et manifesté un profond repentir. Il n&#x27;y a rien eu dans sa vie d&#x27;aussi honorable que la manière dont il l&#x27;a quittée. Il est mort en homme qui s&#x27;est étudié, en mourant, à laisser échapper la plus chère de ses possessions comme une bagatelle sans importance.</p>
+<p>DUNCAN.--Il n&#x27;y a point d&#x27;art qui apprenne à découvrir sur le visage les inclinations de l&#x27;âme: c&#x27;était un homme en qui j&#x27;avais placé une confiance absolue.--(Entrent Macbeth, Banquo, Rosse et Angus.) O mon très-digne cousin, je sentais déjà peser sur moi le poids de l&#x27;ingratitude. Tu as tellement pris les devants, que la plus rapide récompense n&#x27;a pour t&#x27;atteindre qu&#x27;une aile bien lente.--Je voudrais que tu eusses moins mérité, et que tu m&#x27;eusses ainsi laissé les moyens de régler moi-même la mesure de ton salaire et de ma reconnaissance. Il me reste seulement à te dire qu&#x27;il t&#x27;est dû plus qu&#x27;on ne pourrait acquitter en allant au delà de toute récompense possible.</p>
+<p>MACBETH.--Le service et la fidélité que je vous dois, en s&#x27;acquittant, se récompensent eux-mêmes. Il appartient à Votre Majesté de recevoir le tribut de nos devoirs, et nos devoirs nous lient à votre trône et à votre État comme des enfants et des serviteurs, qui ne font que ce qu&#x27;ils doivent en faisant tout ce qui peut mériter votre affection et votre estime[14].</p>
+<p>DUNCAN.--Sois ici le bienvenu: j&#x27;ai commencé à te planter, et travaillerai à te faire parvenir à la plus haute croissance.--Noble Banquo, tu n&#x27;as pas moins mérité, et cela ne doit pas être moins connu. Laisse-moi t&#x27;embrasser et te presser sur mon coeur.</p>
+<p>BANQUO.--Si j&#x27;y acquiers du terrain, la moisson sera à vous.</p>
+<p>DUNCAN.--Tant de joies accumulées, prêtes à déborder par leur plénitude, cherchent à se cacher dans les larmes de la tristesse. Mes fils, mes parents, vous, thanes, et vous, après eux les premiers en dignités, sachez aujourd&#x27;hui que nous voulons transmettre notre couronne à Malcolm, l&#x27;aîné de nos enfants, qui portera désormais le titre de prince de Cumberland, honneur qui ne lui doit pas profiter à lui seul, et sans en amener d&#x27;autres à sa suite, mais qui fera briller comme autant d&#x27;étoiles des distinctions nouvelles sur tous ceux qui les ont méritées.--Partons pour Inverness; je veux vous avoir de nouvelles obligations.</p>
+<p>MACBETH.--Le repos est une fatigue quand je ne vous le consacre pas. Je veux vous annoncer moi-même, et remplir ma femme de joie par la nouvelle de votre arrivée. Ainsi, je prends humblement congé de vous.</p>
+<p>DUNCAN.--Mon digne Cawdor!</p>
+<p>MACBETH, à part.--Le prince de Cumberland! Voilà un obstacle sur lequel je dois trébucher si je ne saute pardessus, car il se trouve dans mon chemin.--Étoiles, cachez vos feux; que la lumière ne puisse voir mes profonds et sombres désirs; l&#x27;oeil se ferme devant la main. Mais il faut que cela se fasse, ce que mon oeil craindra de voir lorsque ce sera fait.</p>
+<p>(Il sort.)</p>
+<p>DUNCAN.--C&#x27;est la vérité, digne Banquo, il est aussi vaillant que vous le dites: je me nourris des éloges qu&#x27;on lui donne; c&#x27;est pour moi un festin. Suivons-le tandis que ses soins nous devancent pour nous préparer un bon accueil. C&#x27;est un parent sans égal.</p>
+<p>(Fanfares.--Ils sortent.)</p>
+<p>[Note 14:</p>
+<p>By doing every thing Safe toward your love and honour.</p>
+<p>Les commentateurs ont voulu expliquer ce passage assez obscur par une subtilité qui le rendrait inintelligible. Toute la difficulté porte sur le sens du mot safe, qui me paraît évidemment signifier ici entier, complet, à l&#x27;abri du reproche.]</p>
+<h2 class="chapter" id="c5">Scène V</h2>
+<p>À Inverness.--Un appartement du château de Macbeth.</p>
+<p>Entre LADY MACBETH, lisant une lettre.</p>
+<p>«Elles sont venues à moi au jour du succès, et j&#x27;ai appris par le plus incontestable témoignage qu&#x27;en elles résidait une intelligence plus qu&#x27;humaine. Lorsque je brûlais de leur faire d&#x27;autres questions, elles se sont confondues dans l&#x27;air et y ont disparu. J&#x27;étais encore éperdu de surprise lorsque des envoyés du roi sont venus me saluer thane de Cawdor. C&#x27;était sous ce titre que les soeurs du Destin m&#x27;avaient salué en me renvoyant ensuite à l&#x27;avenir par ces paroles: Salut, toi qui seras roi. J&#x27;ai cru que cela était bon à te faire connaître, chère compagne de ma grandeur: afin que tu ne perdisses pas la part de joie qui t&#x27;est due, par ignorance de la grandeur qui t&#x27;est promise. Place ceci dans ton coeur. Adieu.»</p>
+<p>Tu es thane de Glamis et de Cawdor, et tu seras aussi ce qu&#x27;on t&#x27;a prédit.--Cependant je crains ta nature, elle est trop pleine du lait des tendresses humaines pour te conduire par le chemin le plus court. Tu voudrais être grand, tu n&#x27;es pas sans ambition; mais tu ne la voudrais pas accompagnée du crime: ce que tu veux de grand, tu le voudrais saintement; tu ne voudrais pas jouer malhonnêtement, et cependant tu voudrais gagner déloyalement. Noble Glamis, tu voudrais obtenir ce qui te crie: «Voilà ce qu&#x27;il te faut faire si tu prétends obtenir; ce que tu crains de faire plutôt que tu ne désires que cela ne soit pas fait.» Hâte-toi d&#x27;arriver, que je verse dans tes oreilles l&#x27;esprit qui m&#x27;anime, et dompte par l&#x27;énergie de ma langue tout ce qui pourrait arrêter ta route vers ce cercle d&#x27;or dont les destins et cette assistance surnaturelle semblent vouloir te couronner.--(Entre un serviteur.) Quelles nouvelles apportes-tu?</p>
+<p>LE SERVITEUR.--Le roi arrive ici ce soir.</p>
+<p>LADY MACBETH.--Quelle jolie chose dis-tu là? Ton maître n&#x27;est-il pas avec lui? Si ce que tu dis était vrai, il m&#x27;aurait avertie de faire mes préparatifs.</p>
+<p>LE SERVITEUR.--Avec votre permission rien n&#x27;est plus vrai; notre thane est en chemin: un de mes camarades a été chargé de le devancer. Presque mort de fatigue, à peine lui est-il resté assez de souffle pour accomplir son message.</p>
+<p>LADY MACBETH.--Prends soin de lui; il apporte de grandes nouvelles! (Le serviteur sort.) La voix est près de manquer au corbeau lui-même, dont les croassements annoncent l&#x27;entrée fatale de Duncan entre mes remparts.--Venez, venez, esprits qui excitez les pensées homicides; changez à l&#x27;instant mon sexe, et remplissez-moi jusqu&#x27;au bord, du sommet de la tête jusqu&#x27;à la plante des pieds, de la plus atroce cruauté. Épaississez mon sang; fermez tout accès, tout passage aux remords; et que la nature, par aucun retour de componction, ne vienne ébranler mon cruel projet, ou faire trêve à son exécution[15]. Venez dans mes mamelles changer mon lait en fiel, ministres du meurtre, quelque part que vous soyez, substances invisibles, prêtes à nuire au genre humain.--Viens, épaisse nuit; enveloppe-toi des plus noires fumées de l&#x27;enfer, afin que mon poignard acéré ne voie pas la blessure qu&#x27;il va faire, et que le ciel ne puisse, perçant d&#x27;un regard ta ténébreuse couverture, me crier: Arrête! Arrête!--(Entre Macbeth.) Illustre Glamis, digne Cawdor, plus grand encore par le salut qui les a suivis, ta lettre m&#x27;a transportée au delà de ce présent rempli d&#x27;ignorance, et je sens déjà l&#x27;avenir exister pour moi.</p>
+<p>MACBETH.--Mon cher amour, Duncan arrive ici ce soir.</p>
+<p>LADY MACBETH.--Et quand part-il d&#x27;ici?</p>
+<p>MACBETH.--Demain; c&#x27;est son projet.</p>
+<p>LADY MACBETH.--Oh! jamais le soleil ne verra ce lendemain.--Votre visage, mon cher thane, est un livre où l&#x27;on pourrait lire d&#x27;étranges choses. Pour cacher vos desseins dans cette circonstance, prenez le maintien de la circonstance; que vos yeux, vos gestes, votre langue parlent de bienvenue; ayez l&#x27;air d&#x27;une fleur innocente, mais soyez le serpent caché dessous. Il faut pourvoir à la réception de celui qui va arriver; c&#x27;est moi que vous chargerez de dépêcher le grand ouvrage de cette nuit, qui donnera désormais à nos nuits et à nos jours la puissance et l&#x27;autorité souveraine.</p>
+<p>MACBETH.--Nous en reparlerons.</p>
+<p>LADY MACBETH.--Songez seulement à montrer un visage serein: changer de visage est toujours un signe de crainte.--Laissez-moi tout le reste.</p>
+<p>(Ils sortent.)</p>
+<p>[Note 15:</p>
+<p>Nor keep peace between The effect--and it.</p>
+<p>Johnson regarde ce passage comme inintelligible, et veut substituer à keep peace, keep pace, qui signifierait ici intervenir, tandis que keep pace signifie marcher d&#x27;un pas égal avec, et, selon l&#x27;aveu même de Johnson, n&#x27;a jamais-été employé dans le sens qu&#x27;il veut lui donner. Keep peace me paraît correspondre littéralement à notre expression française faire trêve, qui présente ici le sens le plus naturel.]</p>
+<h2 class="chapter" id="c6">Scène vi</h2>
+<p>Toujours à Inverness, devant le château de Macbeth.</p>
+<p>(Hautbois.--Cortège composé des gens de Macbeth.)</p>
+<p>Entrent DUNCAN, MALCOLM, DONALBAIN, BANQUO, LENOX, MACDUFF, ROSSE, ANGUS, suite.</p>
+<p>DUNCAN.--Ce château occupe une agréable situation; l&#x27;air, suave et léger, calme doucement les sens.</p>
+<p>BANQUO.--Cet hôte de l&#x27;été, le martinet, habitant des temples, cherchant en ces lieux son séjour favori, prouve que l&#x27;haleine des cieux les caresse avec amour. Pas une corniche, pas une frise, pas un créneau, pas un seul angle commode où cet oiseau n&#x27;ait suspendu son lit et le berceau de ses enfants. Partout où ces oiseaux nichent et abondent, j&#x27;ai remarqué que l&#x27;air est toujours pur.</p>
+<p>(Entre lady Macbeth.)</p>
+<p>DUNCAN.--Voyez, voilà notre honorable hôtesse.--L&#x27;affection qui nous suit nous cause quelquefois des embarras que nous accueillons encore avec des remerciements, comme des marques d&#x27;affection. Ainsi je suis pour vous une occasion d&#x27;apprendre à prier Dieu de vous récompenser de vos peines, et à vous remercier de l&#x27;embarras que nous vous donnons.</p>
+<p>LADY MACBETH.--Tout notre effort, fût-il doublé ou redoublé, ne serait qu&#x27;une faible et solitaire offrande à opposer à ce vaste amas d&#x27;honneurs dont Votre Majesté accable notre maison. Vos anciens bienfaits, et les dignités nouvelles que vous venez d&#x27;accumuler sur les premières, nous laissent le devoir de prier pour vous[16].</p>
+<p>DUNCAN.--Où est le thane de Cawdor? Nous courions sur ses talons, et voulions être son introducteur auprès de vous; mais il est bon cavalier, et la force de son amour, aussi aiguë que son éperon, lui a fait atteindre sa maison avant nous. Belle et noble dame, nous serons votre hôte pour cette nuit.</p>
+<p>LADY MACBETH.--Vos serviteurs ne se regarderont jamais eux-mêmes, les leurs et tout ce qu&#x27;ils possèdent, que comme des biens reçus en dépôt pour en rendre compte, selon le bon plaisir de Votre Majesté, toutes les fois qu&#x27;elle voudra réclamer ce qui lui appartient.</p>
+<p>DUNCAN.--Donnez-moi votre main, conduisez-moi vers mon hôte; nous l&#x27;aimons grandement, et continuerons de répandre sur lui nos bienfaits.--Avec la permission de notre hôtesse.</p>
+<p>(Ils sortent.)</p>
+<p>[Note 16:</p>
+<p>We rest your hermits.</p>
+<p>Hermit est pris ici pour beadsman. Le beadsman était, à ce qu&#x27;il paraît, un homme qui, sous certaines conditions, s&#x27;engageait à dire pour un autre un certain nombre de fois le chapelet (beads). C&#x27;étaient probablement des ermites qu&#x27;on chargeait le plus souvent de ce soin.]</p>
+<h2 class="chapter" id="c7">Scène VII</h2>
+<p>Toujours à Inverness.--Un appartement dans le château de Macbeth. Des hautbois, des flambeaux.</p>
+<p>Un maître d&#x27;hôtel et plusieurs domestiques portant des plats et faisant le service entrent et passent sur le théâtre. Entre ensuite MACBETH.</p>
+<p>MACBETH.--Si lorsque ce sera fait c&#x27;était fini, le plus tôt fait serait le mieux. Si l&#x27;assassinat tranchait à la fois toutes les conséquences, et que sa fin nous donnât le succès, ce seul coup, qui peut être tout et la fin de tout, au moins ici-bas, sur ce rivage, sur ce rocher du temps, nous hasarderions la vie à venir.--Mais en pareil cas, nous subissons toujours cet arrêt, que les sanglantes leçons enseignées par nous tournent, une fois apprises, à la ruine de leur inventeur. La Justice, à la main toujours égale, offre à nos propres lèvres le calice empoisonné que nous avons composé nous-mêmes.--Il est ici sous la foi d&#x27;une double sauvegarde. D&#x27;abord je suis son parent et son sujet, deux puissants motifs contre cette action; ensuite je suis son hôte, et devrais fermer la porte à son meurtrier, loin de saisir moi-même le couteau. D&#x27;ailleurs ce Duncan a porté si doucement ses honneurs, il a rempli si justement ses grands devoirs, que ses vertus, comme des anges à la voix de trompette s&#x27;élèveront contre le crime damnable de son meurtre, et la pitié, semblable à un enfant nouveau-né tout nu, montée sur le tourbillon, ou portée comme un chérubin du ciel sur les invisibles courriers de l&#x27;air, frappera si vivement tous les yeux de l&#x27;horreur de cette action, que les larmes feront tomber le vent. Je n&#x27;ai pour presser les flancs de mon projet d&#x27;autre éperon que cette ambition qui, s&#x27;élançant et se retournant sur elle-même, retombe sans cesse sur lui[17].--(Entre lady Macbeth.) Eh bien! quelles nouvelles?</p>
+<p>LADY MACBETH.--Il a bientôt soupé: pourquoi avez-vous quitté la salle?</p>
+<p>MACBETH.--M&#x27;a-t-il demandé?</p>
+<p>LADY MACBETH.--Ne le savez-vous pas?</p>
+<p>MACBETH.--Nous n&#x27;irons pas plus loin dans cette affaire. Il vient de me combler d&#x27;honneurs, et j&#x27;ai acquis parmi les hommes de toutes les classes une réputation brillante comme l&#x27;or, dont je dois me parer dans l&#x27;éclat de sa première fraîcheur, au lieu de m&#x27;en dépouiller si vite.</p>
+<p>LADY MACBETH.--Était-elle dans l&#x27;ivresse cette espérance dont vous vous étiez fait honneur? a-t-elle dormi depuis? et se réveille-t-elle maintenant pour paraître si pâle et si livide à l&#x27;aspect de ce qu&#x27;elle faisait de si bon coeur? Dès ce moment je commence à juger par là de ton amour pour moi. Crains-tu de te montrer par tes actions et ton courage ce que tu es par tes désirs? aspireras-tu à ce que tu regardes comme l&#x27;ornement de la vie, pour vivre en lâche à tes propres yeux, laissant, comme le pauvre chat du proverbe, le je n&#x27;ose pas se placer sans cesse auprès du je voudrais bien[18]?</p>
+<p>MACBETH.--Tais-toi, je t&#x27;en prie; j&#x27;ose tout ce qui convient à un homme: celui qui ose davantage n&#x27;en est pas un.</p>
+<p>LADY MACBETH.--A quelle bête apparteniez-vous donc lorsque vous vous êtes ouvert à moi de cette entreprise? Quand vous avez osé la former, c&#x27;est alors que vous étiez un homme; et en osant devenir plus grand que vous n&#x27;étiez, vous n&#x27;en seriez que plus homme. Ni l&#x27;occasion ni le lieu ne vous secondaient alors, et cependant vous vouliez les faire naître l&#x27;une et l&#x27;autre: elles se sont faites d&#x27;elles-mêmes; et vous, par l&#x27;à-propos qu&#x27;elles vous offrent, vous voilà défait! J&#x27;ai allaité, et je sais combien il est doux d&#x27;aimer le petit enfant qui me tette; eh bien! au moment où il me souriait, j&#x27;aurais arraché ma mamelle de ses molles gencives, et je lui aurais fait sauter la cervelle, si je l&#x27;avais juré comme vous avez juré ceci.</p>
+<p>MACBETH.--Si nous allions manquer notre coup?</p>
+<p>LADY MACBETH.--Nous, manquer notre coup! Vissez seulement votre courage au point d&#x27;arrêt, et nous ne manquerons pas notre coup. Lorsque Duncan sera endormi (et le fatigant voyage qu&#x27;il a fait aujourd&#x27;hui va l&#x27;entraîner dans un sommeil profond), j&#x27;aurai soin, à force de vin et de santés, de subjuguer si bien ses deux chambellans, que leur mémoire, cette gardienne du cerveau, ne sera plus qu&#x27;une fumée, et le réservoir de leur raison un alambic. Lorsqu&#x27;un sommeil brutal accablera comme la mort leurs corps saturés de liqueur, que ne pouvons-nous exécuter, vous et moi, sur Duncan sans défense? Que ne pouvons-nous pas imputer à ses officiers pleins de vin, qui porteront le crime de notre grand meurtre?</p>
+<p>MACBETH.--Ne mets au jour que des fils, car la trempe de ton âme inflexible ne peut convenir qu&#x27;à des hommes.--En effet, ne pourra-t-on pas croire, lorsque nous aurons teint de sang, dans leur sommeil, ces deux gardiens de sa chambre, après nous être servis de leurs poignards, que ce sont eux qui ont fait le coup?</p>
+<p>LADY MACBETH.--Et qui osera croire autre chose, lorsque nous ferons tout retentir de nos douleurs et de nos cris à cause de sa mort?</p>
+<p>MACBETH.--Je suis décidé, et je tends tous les agents de mon corps pour cette terrible action. Sortons, et amusons-les par les plus beaux dehors: un visage perfide doit cacher ce que sait le coeur perfide.</p>
+<p>(Il sortent.)</p>
+<p>[Note 17:</p>
+<p>I have no spur To prick the sides of my intent, but only Vaulting ambition, which overleaps itself, And falls on the other.</p>
+<p>Les commentateurs se sont inutilement donné beaucoup de peine pour expliquer cette phrase; leur embarras est venu de ce qu&#x27;ils n&#x27;ont pas fait attention au sens du verbe vault, qui signifie ici voltiger, faire des tours de force (to make postures), d&#x27;où il résulte qu&#x27;au lieu de comparer, ainsi que l&#x27;a cru M. Steevens, son ambition à un cheval qui, se renversant sur lui-même, écrase son cavalier, Macbeth la représente comme un voltigeur (vaulting ambition) qui, s&#x27;élançant et se retournant sur lui-même (overleaps itself), retombe continuellement sur le dos de son cheval, et lui tient ainsi lieu d&#x27;éperon (spur), pour le forcer à courir. L&#x27;image est ainsi parfaitement d&#x27;accord dans toutes ses parties; au lieu que, dans la signification supposée par M. Steevens, l&#x27;ambition, comme il le remarque lui-même, se trouverait jouer à la fois le rôle du cheval et celui de l&#x27;éperon. On est presque toujours sûr de se tromper lorsqu&#x27;on attribue à Shakspeare des images incohérentes; il a au contraire le défaut d&#x27;abandonner rarement une image ou une comparaison, avant de l&#x27;avoir épuisée sous tous ses aspects.]</p>
+<p>[Note 18: Catus amat pisces, sed non vult tingere plantas.]</p>
+<h3 class="sub">Fin du premier Acte — Acte deuxième</h3>
+<h2 class="chapter" id="c8">Scène I</h2>
+<p>Toujours à Inverness.--Cour dans l&#x27;intérieur du château.</p>
+<p>Entrent BANQUO ET FLEANCE, précédés d&#x27;un domestique qui porte un flambeau.</p>
+<p>BANQUO.--Où en sommes-nous de la nuit, mon garçon?</p>
+<p>FLEANCE.--La lune est couchée; je n&#x27;ai point entendu sonner l&#x27;heure.</p>
+<p>BANQUO.--Et elle se couche à minuit.</p>
+<p>FLEANCE.--Je crois qu&#x27;il est plus tard, monsieur.</p>
+<p>BANQUO.--Tiens, prends mon épée.--Ils sont économes dans le ciel; toutes leurs chandelles sont éteintes.--Prends encore cela; le besoin du sommeil pèse sur moi comme du plomb, et cependant je ne voudrais pas dormir. Miséricorde du ciel, réprimez en moi ces détestables pensées où se laisse aller la nature pendant notre repos. (Entre Macbeth, avec un domestique portant un flambeau.) (A Fleance.) Donne-moi mon épée.--Qui est là?</p>
+<p>MACBETH.--Un ami.</p>
+<p>BANQUO.--Quoi, monsieur! pas encore au lit? Le roi est couché.--Il a joui d&#x27;un plaisir inaccoutumé: vos serviteurs ont reçu de sa part de grandes largesses; il offre ce diamant à votre épouse, en la saluant du nom de la plus aimable hôtesse; et il s&#x27;est retiré satisfait au delà de toute expression.</p>
+<p>MACBETH.--N&#x27;étant pas préparés à le recevoir, notre volonté s&#x27;est trouvée assujettie à un défaut de moyens qui ne lui a pas permis de s&#x27;exercer librement.</p>
+<p>BANQUO.--Tout s&#x27;est bien passé.--La nuit dernière j&#x27;ai rêvé des trois soeurs du Destin: elles se sont montrées assez véridiques à votre égard.</p>
+<p>MACBETH.--Je n&#x27;y songe plus. Cependant, quand nous en trouverons le temps, je voudrais vous dire quelques mots de cette affaire, si vous pouvez m&#x27;en accorder le temps.</p>
+<p>BANQUO.--Quand cela vous sera agréable.</p>
+<p>MACBETH.--Si vous vous unissez à mes combinaisons, lorsqu&#x27;elles auront lieu, il vous en reviendra de l&#x27;honneur.[19]</p>
+<p>BANQUO.--Je me déterminerai pour ce qui ne m&#x27;exposera pas à le perdre en cherchant à l&#x27;augmenter, et me laissera conserver un coeur droit et une fidélité sans tache.</p>
+<p>MACBETH.--En attendant, bonne nuit.</p>
+<p>BANQUO.--Grand merci, monsieur! je vous en souhaite autant.</p>
+<p>(Banquo et Fleance sortent.)</p>
+<p>MACBETH.--Va, dis à ta maîtresse de sonner un coup de clochette quand ma boisson sera prête. Va te mettre au lit. (Le domestique sort.)--Est-ce un poignard que je vois devant moi, la poignée tournée vers ma main? Viens, que je te saisisse.--Je ne te tiens pas, et cependant je te vois toujours. Fatale vision, n&#x27;es-tu pas sensible au toucher comme à la vue? ou n&#x27;es-tu qu&#x27;un poignard né de ma pensée, le produit mensonger d&#x27;une tête fatiguée du battement de mes artères? Je te vois encore, et sous une forme aussi palpable que celui que je tire en ce moment. Tu me montres le chemin que j&#x27;allais suivre, et l&#x27;instrument dont j&#x27;allais me servir.--Ou mes yeux sont de mes sens les seuls abusés, ou bien ils valent seuls tous les autres.--Je te vois toujours, et sur ta lame, sur ta poignée, je vois des gouttes de sang qui n&#x27;y étaient pas tout à l&#x27;heure.--Il n&#x27;y a là rien de réel. C&#x27;est mon projet sanguinaire qui prend cette forme à mes yeux.--Maintenant dans la moitié du monde la nature semble morte, et des songes funestes abusent le sommeil enveloppé de rideaux. Maintenant les sorcières célèbrent leurs sacrifices à la pâle Hécate. Voici l&#x27;heure où le meurtre décharné, averti par sa sentinelle, le loup, dont les hurlements lui servent de garde, s&#x27;avance, comme un fantôme à pas furtifs, avec les enjambées de Tarquin le ravisseur, vers l&#x27;exécution de ses desseins.--O toi, terre solide et bien affermie, garde-toi d&#x27;entendre mes pas, quelque chemin qu&#x27;ils prennent, de peur que tes pierres n&#x27;aillent se dire entre elles où je suis, et ravir à ce moment l&#x27;horrible occasion qui lui convient si bien.--Tandis que je menace, il vit.--Les paroles portent un souffle trop froid sur la chaleur de l&#x27;action. (La cloche sonne.)--J&#x27;y vais. C&#x27;en est fait, la cloche m&#x27;avertit. Ne l&#x27;entends pas, Duncan; c&#x27;est le glas qui t&#x27;appelle au ciel ou aux enfers.</p>
+<p>(Il sort.)</p>
+<p>[Note 19: Selon la chronique de Hollinshed, Banquo fut averti du projet de Macbeth, et promit de le soutenir; mais Jacques Ier (Jacques VI d&#x27;Écosse) régnait en Angleterre lors de la représentation de Macbeth, et comme les Stuarts prétendaient descendre de Banquo, par Fleance, il était naturel que le poëte cherchât à dissimuler cette circonstance, faite pour diminuer l&#x27;intérêt qu&#x27;il s&#x27;est plu à répandre sur l&#x27;auteur de leur race. Fleance, selon la chronique d&#x27;Hollinshed, s&#x27;en fut en Écosse, où il fut très-bien accueilli par le roi, et si bien par la princesse sa fille, que celle-ci poussa la courtoisie, dit la chronique, jusqu&#x27;à souffrir qu&#x27;il lui fît un enfant (that she of courtsye in the end suffered him to get her with child). Cet enfant fut Walter, dont les grandes qualités regagnèrent ce que lui avait fait perdre la naissance; il finit par être nommé lord steward d&#x27;Écosse (grand sénéchal), et chargé de percevoir les revenus de la couronne. Le quatrième descendant de ce Walter épousa la fille de Robert Bruce, et en eut un fils qui fut Robert II, roi d&#x27;Écosse. On voit encore à Inverness, dans les îles occidentales d&#x27;Écosse, les ruines du château de Macbeth, mais la chronique ne dit pas si ce fut là qu&#x27;il tua Duncan.]</p>
+<h2 class="chapter" id="c9">Scène II</h2>
+<p>Le même lieu.</p>
+<p>LADY MACBETH entre.</p>
+<p>LADY MACBETH.--Ce qui les a enivrés m&#x27;a enhardie, ce qui les a éteints m&#x27;a remplie de flamme.--Écoutons; silence! C&#x27;est le cri du hibou, fatal sonneur qui donne le plus funeste bonsoir.--Il est à l&#x27;oeuvre; les portes sont ouvertes, et les serviteurs, pleins de vin, se moquent, en ronflant, de leurs devoirs. J&#x27;ai préparé leur boisson du soir[20], de telle sorte que la Nature et la Mort débattent entre elles s&#x27;ils vivent ou meurent.</p>
+<p>MACBETH, derrière le théâtre.--Qui est là? quoi? holà!</p>
+<p>LADY MACBETH.--Hélas! je tremble qu&#x27;ils ne se soient éveillés et que ce ne soit pas fait. La tentative sans l&#x27;action nous perd. Écoutons.--J&#x27;avais apprêté leurs poignards, il ne pouvait manquer de les voir.--S&#x27;il n&#x27;eût pas ressemblé à mon père endormi, je m&#x27;en serais chargée.--Mon mari!</p>
+<p>MACBETH.--J&#x27;ai frappé le coup.--N&#x27;as-tu pas entendu un bruit?</p>
+<p>LADY MACBETH.--J&#x27;ai entendu crier la chouette et chanter le grillon.--N&#x27;avez-vous pas parlé?</p>
+<p>MACBETH.--Quand?</p>
+<p>LADY MACBETH.--Tout à l&#x27;heure.</p>
+<p>MACBETH.--Comme je descendais?</p>
+<p>LADY MACBETH.--Oui.</p>
+<p>MACBETH.--Écoute!--Qui couche dans la seconde chambre?</p>
+<p>LADY MACBETH.--Donalbain.</p>
+<p>MACBETH, regardant ses mains.--C&#x27;est là une triste vue!</p>
+<p>LADY MACBETH.--Quelle folie d&#x27;appeler cela une triste vue!</p>
+<p>MACBETH.--L&#x27;un des deux a ri dans son sommeil, et l&#x27;autre a crié, au meurtre! Ils se sont éveillés l&#x27;un et l&#x27;autre: je me suis arrêté en les écoutant; mais ils ont dit leurs prières et se sont remis à dormir.</p>
+<p>LADY MACBETH.--Ils sont deux logés dans la même chambre.</p>
+<p>MACBETH.--L&#x27;un s&#x27;est écrié: Dieu nous bénisse! et l&#x27;autre, amen, comme s&#x27;ils m&#x27;avaient vu, avec ces mains de bourreau, écoutant leurs terreurs; je n&#x27;ai pu répondre amen lorsqu&#x27;ils ont dit Dieu nous bénisse!</p>
+<p>LADY MACBETH.--N&#x27;y pensez pas si sérieusement.</p>
+<p>MACBETH.--Mais pourquoi n&#x27;ai-je pu prononcer amen? J&#x27;avais grand besoin d&#x27;une bénédiction, et amen s&#x27;est arrêté dans mon gosier.</p>
+<p>LADY MACBETH.--Il ne faut pas penser ainsi à ces sortes d&#x27;actions, on en deviendrait fou.</p>
+<p>MACBETH.--Il m&#x27;a semblé entendre une voix crier: «Ne dormez plus! Macbeth assassine le sommeil, l&#x27;innocent sommeil, le sommeil qui débrouille l&#x27;écheveau confus de nos soucis; le sommeil, mort de la vie de chaque jour, bain accordé à l&#x27;âpre travail, baume des âmes blessées, loi tutélaire de la nature, l&#x27;aliment principal du tutélaire festin de la vie.»</p>
+<p>LADY MACBETH.--Que voulez-vous dire?</p>
+<p>MACBETH.--Elle criait encore à toute la maison: «Ne dormez plus. Glamis a assassiné le sommeil; c&#x27;est pourquoi Cawdor ne dormira plus, Macbeth ne dormira plus!»</p>
+<p>LADY MACBETH.--Qui donc criait ainsi?--Quoi! digne thane, vous laissez votre noble courage se relâcher jusqu&#x27;à ces rêveries d&#x27;un cerveau malade? Allez, prenez de l&#x27;eau, et lavez de vos mains ce sombre témoin.--Pourquoi avez-vous emporté ces poignards? Il faut qu&#x27;ils restent là-bas. Allez, reportez-les, et teignez de sang les deux serviteurs endormis.</p>
+<p>MACBETH.--Je n&#x27;y retournerai pas; je suis effrayé en songeant à ce que j&#x27;ai fait. Je n&#x27;ose pas le regarder de nouveau.</p>
+<p>LADY MACBETH.--Faible dans vos résolutions!--Donnez-moi ces poignards. Ceux qui dorment, ceux qui sont morts, ne sont que des images; c&#x27;est l&#x27;oeil de l&#x27;enfance qui craint un diable en peinture. Si son sang coule, j&#x27;en rougirai la face des deux serviteurs, car il faut que le crime leur soit attribué[21].</p>
+<p>(Elle sort.)</p>
+<p>(On frappe derrière le théâtre.)</p>
+<p>MACBETH.--Pourquoi frappe-t-on ainsi?--Que m&#x27;arrive-t-il, que le moindre bruit m&#x27;épouvante?--Quelles mains j&#x27;ai là! Elles me font sortir les yeux de la tête.--Est-ce que tout l&#x27;océan du grand Neptune pourra laver ce sang et nettoyer ma main! Non, ma main ensanglanterait plutôt l&#x27;immensité des mers, et ferait de leur teinte verdâtre une seule teinte rouge.</p>
+<p>(Rentre lady Macbeth.)</p>
+<p>LADY MACBETH.--Mes mains sont de la couleur des vôtres; mais j&#x27;ai honte d&#x27;avoir conservé un coeur si blanc.--J&#x27;entends frapper à la porte du sud.--Retirons-nous dans notre chambre: un peu d&#x27;eau va nous laver de cette action; voyez donc combien cela est aisé. Votre courage vous a abandonné. (On frappe.)--Écoutez: on frappe encore. Prenez votre robe de nuit, de peur que nous n&#x27;ayons occasion de paraître et de laisser voir que nous veillions. Ne restez donc pas ainsi misérablement perdu dans vos réflexions.</p>
+<p>MACBETH.--Connaître ce que j&#x27;ai fait!--Mieux vaudrait ne plus me connaître moi-même. (On frappe.)--Éveille Duncan à force de frapper. Plût au ciel vraiment que tu le pusses!</p>
+<p>(Ils sortent.)</p>
+<p>[Note 20: Possets, boisson composée, en général, à ce qu&#x27;il parait, de lait et de vin, et qu&#x27;il était alors d&#x27;usage de prendre en se couchant.]</p>
+<p>[Note 21:</p>
+<p>I&#x27;ll gild the faces of the grooms withal For it must seem their guilt.</p>
+<p>Il est plus que probable que Shakspeare a voulu jouer ici sur les mots gild et guilt, dont la prononciation est la même. Mais tout effort pour rendre en français ce jeu de mots eût été inutile et eût gâté une admirable scène. On a pensé qu&#x27;il suffisait de l&#x27;indiquer.]</p>
+<h2 class="chapter" id="c10">Scène III</h2>
+<p>Entre UN PORTIER.</p>
+<p>(On frappe derrière le théâtre.)</p>
+<p>On frappe ici, ma foi. Si un homme était le portier de l&#x27;enfer, il aurait assez l&#x27;habitude de tourner la clef. (On frappe.) Frappe, frappe, frappe. Qui est là, de par Belzébuth! C&#x27;est un fermier qui s&#x27;est pendu en attendant une bonne année. Entrez sur-le-champ, et ayez soin d&#x27;apporter assez de mouchoirs, car on vous fera suer ici pour cela. (On frappe.) Frappe, frappe, frappe. Qui est là, au nom d&#x27;un autre diable? Par ma foi, c&#x27;est un jésuite[22] qui aurait juré pour et contre chacun des bassins d&#x27;une balance. Il a commis assez de trahisons pour l&#x27;amour de Dieu, et cependant le ciel n&#x27;a pas voulu entendre à ses jésuitismes. Entrez, monsieur le jésuite. (On frappe.) Frappe, frappe, frappe. Qui est là? Ma foi, c&#x27;est un tailleur anglais qui vient ici pour avoir rogné sur un haut-de-chausses français[23]. Allons, entrez, tailleur, vous pourrez chauffer ici votre fer à repasser. (On frappe.) Frappe, frappe. Jamais un moment de repos. Qui êtes-vous? Mais il fait trop froid ici pour l&#x27;enfer: je ne veux plus faire le portier du diable. J&#x27;avais eu l&#x27;idée de laisser entrer un homme de toutes les professions qui vont par le chemin fleuri au feu de joie éternel. (On frappe.) Tout à l&#x27;heure, tout à l&#x27;heure. (Il ouvre.) Je vous prie, n&#x27;oubliez pas le portier.</p>
+<p>(Entrent Macduff et Lenox.)</p>
+<p>MACDUFF.--Ami, tu t&#x27;es donc couché bien tard, pour dormir encore?</p>
+<p>LE PORTIER.--Ma foi, monsieur, nous vidions encore, des rasades au second chant du coq; et la boisson, seigneur, provoque grandement trois choses.</p>
+<p>MACDUFF.--Quelles sont les trois choses que provoque la boisson?</p>
+<p>LE PORTIER.--Ma foi, monsieur, c&#x27;est le rouge au nez, le sommeil et l&#x27;envie de pisser. Pour la luxure, on peut dire qu&#x27;il la provoque et ne la provoque pas: il provoque le désir, mais il ôte la faculté; en sorte qu&#x27;on peut dire que le vin est un traître envers la luxure: il la cause et l&#x27;éteint; il l&#x27;aiguillonne et puis l&#x27;arrête en chemin; il l&#x27;excite, et puis la décourage; il la trahit par un sommeil qui lui donne le démenti, puis il la plante là.</p>
+<p>MACDUFF.--Je crois, l&#x27;ami, que le vin t&#x27;a donné un démenti la nuit dernière.</p>
+<p>LE PORTIER.--Il l&#x27;a fait, seigneur, à mon nez et à ma barbe; mais je lui ai revalu sa trahison; et me trouvant, je crois, plus fort que lui, quoiqu&#x27;il m&#x27;ait pris un moment par les jambes, j&#x27;ai trouvé moyen de le rejeter.</p>
+<p>MACDUFF.--Ton maître est-il levé?--Nous l&#x27;aurons éveillé en frappant à la porte.--Le voici qui vient.</p>
+<p>(Entre Macbeth.)</p>
+<p>LENOX.--Bonjour, noble Macbeth.</p>
+<p>MACBETH.--Bonjour à tous les deux.</p>
+<p>MACDUFF.--Le roi est-il levé, digne thane?</p>
+<p>MACBETH.--Pas encore.</p>
+<p>MACDUFF.--Il m&#x27;a ordonné de l&#x27;éveiller de bon matin; j&#x27;ai presque laissé passer l&#x27;heure.</p>
+<p>MACBETH.--Je vais vous conduire vers lui.</p>
+<p>MACDUFF.--Je sais que vous prenez cette peine avec plaisir, et cependant c&#x27;en est une.</p>
+<p>MACBETH.--Le plaisir que l&#x27;on prend à remplir un soin en guérit la peine.--Voici la porte.</p>
+<p>MACDUFF.--Je prendrai la liberté d&#x27;entrer, car il m&#x27;en a donné l&#x27;ordre.</p>
+<p>(Macduff sort.)</p>
+<p>LENOX.--Le roi part-il aujourd&#x27;hui d&#x27;ici?</p>
+<h2 class="chapter" id="c11">MACBETH.--Il part: il l&#x27;a décidé ainsi.</h2>
+<p>LENOX.--La nuit a été bien mauvaise; dans l&#x27;endroit où nous couchions, les cheminées ont été abattues par le vent: l&#x27;on a, dit-on, entendu dans les airs des lamentations, d&#x27;étranges cris de mort, annonçant, avec des accents terribles, d&#x27;affreux bouleversements et des événements confus, nouvellement éclos du sein de ces temps désastreux. L&#x27;oiseau des ténèbres a poussé toute la nuit des cris aigus; quelques-uns disent que la terre avait la la fièvre et tremblait.</p>
+<p>MACBETH.--Ç&#x27;a été une mauvaise nuit.</p>
+<p>LENOX.--Mon jeune souvenir ne peut en retrouver une comparable.</p>
+<p>(Rentre Macduff.)</p>
+<p>MACDUFF.--O horreur! horreur! horreur! ni la langue ni le coeur ne peuvent te concevoir ou t&#x27;exprimer.</p>
+<p>MACBETH ET LENOX.--Qu&#x27;y a-t-il?</p>
+<p>MACDUFF.--L&#x27;abomination a fait ici son chef-d&#x27;oeuvre. Le meurtre le plus sacrilège a ouvert par force le temple sacré du Seigneur, et a dérobé la vie qui en animait la structure[24].</p>
+<p>MACBETH.--Que dites-vous? la vie?</p>
+<p>LENOX.--Est-ce de Sa Majesté que vous parlez?</p>
+<p>MACDUFF.--Venez, entrez dans sa chambre; et que vos yeux s&#x27;éteignent à la vue d&#x27;une nouvelle Gorgone: ne me demandez pas de vous en dire davantage. Voyez, et parlez ensuite vous-mêmes.--Qu&#x27;on s&#x27;éveille, qu&#x27;on s&#x27;éveille; qu&#x27;on sonne le tocsin (Macbeth et Lenox sortent.)--Meurtre! trahison!--Banquo, Donalbain, Malcolm, éveillez-vous! secouez ce calme sommeil, simulacre de la mort et venez voir la mort elle-même.--Levez-vous, levez-vous, et voyez une image du grand jugement.--Malcolm, Banquo, levez-vous comme de vos tombeaux, et avancez comme des ombres, pour être en accord avec ces horreurs.</p>
+<p>(La cloche sonne.)</p>
+<p>(Entre lady Macbeth.)</p>
+<p>LADY MACBETH.--Pour quelle affaire cette odieuse trompette appelle-t-elle à se rassembler tous ceux qui dorment dans la maison? Parlez, parlez.</p>
+<p>MACDUFF.--O noble dame! ce n&#x27;est pas à vous à entendre ce que je pourrais vous dire: ce récit tuerait une femme au moment où il arriverait à son oreille.--(Banquo arrive.) O Banquo! Banquo! notre royal maître est assassiné!</p>
+<p>LADY MACBETH.--Oh malheur! quoi, dans notre maison!</p>
+<p>BANQUO.--Trop cruel malheur, n&#x27;importe en quel lieu! Cher Duff[25], je t&#x27;en prie, contredis-toi toi-même, et dis que ce n&#x27;est pas vrai.</p>
+<p>(Rentrent Macbeth et Lenox.)</p>
+<p>MACBETH.--Si j&#x27;étais mort une heure avant cet événement, j&#x27;aurais terminé une vie heureuse; car de cet instant il n&#x27;y aura plus rien d&#x27;important dans la vie de ce monde, tout n&#x27;est plus que vanité; gloire, grandeur, tout est mort; le vin de la vie est épuisé et la lie seule en reste dans la cave.</p>
+<p>(Entrent Malcolm et Donalbain.)</p>
+<p>DONALBAIN.--Qu&#x27;est-il arrivé de malheureux?</p>
+<p>MACBETH.--Vous l&#x27;êtes et vous ne le savez pas: la source, la fontaine de votre sang a cessé de couler, la source même en est arrêtée.</p>
+<p>MACDUFF.--Votre royal père est assassiné.</p>
+<p>MALCOLM.--Oh! par qui?</p>
+<p>LENOX.--Suivant les apparences, par ceux qui étaient chargés de garder sa chambre. Leurs mains et leurs visages étaient tout souillés de sang, ainsi que leurs poignards que nous avons trouvés, non encore essuyés, sur leur chevet. Ils ouvraient des yeux effarés et paraissaient hors d&#x27;eux-mêmes: on n&#x27;aurait pu leur confier la vie de personne.</p>
+<p>MACBETH.--Oh! cependant je me repens du mouvement de fureur qui me les a fait tuer!</p>
+<p>MACDUFF.--Pourquoi donc les avez-vous tués?</p>
+<p>MACBETH.--Eh! qui peut être dans le même moment sage et éperdu, modéré et furieux? qui peut être fidèle et rester neutre? Personne. La rapidité de ma violente affection a dépassé ma raison plus lente. Je voyais là Duncan étendu, l&#x27;argent de sa peau parsemé de son sang doré; et ses blessures ouvertes semblaient autant de brèches aux lois de la nature, par où devaient s&#x27;introduire les ravages de la désolation.... Là étaient les meurtriers teints des couleurs de leur métier, et leurs poignards honteusement couverts de sang. Comment aurait pu se contenir celui qui a un coeur pour aimer, et dans ce coeur le courage de manifester son amour?</p>
+<p>LADY MACBETH.--Aidez-moi à sortir d&#x27;ici. Oh!</p>
+<p>MACDUFF.--Secourez lady Macbeth.</p>
+<p>MALCOLM.--Pourquoi retenons-nous nos langues? C&#x27;est à elles surtout qu&#x27;il appartient d&#x27;exprimer de pareils sentiments.</p>
+<p>DONALBAIN.--Eh! pourquoi parlerions-nous ici, où notre destinée fatale, cachée dans le trou de l&#x27;ogre, peut s&#x27;élancer sur nous et nous saisir? Fuyons! nos larmes ne sont pas encore prêtes à couler.</p>
+<p>MALCOLM.--Ni notre chagrin sur le pied d&#x27;agir.</p>
+<p>BANQUO.--Secourez lady Macbeth (on emporte lady Macbeth), et lorsque nous aurons couvert la nudité de notre frêle nature, qui souffre ainsi exposée, rassemblons-nous et faisons des recherches sur cette sanglante action, afin de la connaître plus à fond. Nous sommes ébranlés par les terreurs et les doutes, mais je suis dans la puissante main de Dieu, et de là je combattrai les desseins secrets d&#x27;une méchanceté perfide.</p>
+<p>MACBETH.--Et moi aussi.</p>
+<p>TOUS.--Et nous tous de même.</p>
+<p>MACBETH.--Allons promptement nous vêtir tous d&#x27;une manière convenable, afin de nous rassembler ensuite dans la salle.</p>
+<p>TOUS.--Volontiers.</p>
+<p>(Ils sortent.)</p>
+<p>MALCOLM.--Que voulez-vous faire? Ne nous associons point avec eux. Montrer une douleur qu&#x27;on ne sent pas est un rôle aisé pour l&#x27;homme faux.--Je me retire en Angleterre.</p>
+<p>DONALBAIN.--Et moi en Irlande. En séparant nos fortunes nous serons plus en sûreté. Ici je vois des poignards dans les sourires, et celui qui est le plus près par le sang est le plus prêt à le verser.</p>
+<p>MALCOLM.--Le trait meurtrier qui a été lancé n&#x27;a pas encore atteint son but; et le parti le plus sûr pour nous est d&#x27;en éviter le coup. Ainsi donc, à cheval, et ne nous inquiétons pas de prendre congé: tirons-nous d&#x27;abord d&#x27;ici. Il est permis de commettre le vol, de se dérober soi-même, quand il ne reste plus d&#x27;espérance.</p>
+<p>(Ils sortent.)</p>
+<p>[Note 22: Equivocator. Warburton pense que par cette expression Shakspeare a positivement entendu un religieux, ou du moins un affilié de l&#x27;ordre des jésuites; mais toujours est-il certain qu&#x27;elle signifie précisément ce que nous entendons en français par jésuite, doué d&#x27;un esprit jésuitique.]</p>
+<p>[Note 23: La plaisanterie porte sur ce que les hauts-de-chausses français paraissaient aux Anglais si étroits et si mesquins, qu&#x27;il fallait être doublement damnable pour trouver encore à rogner dessus.]</p>
+<p>[Note 24:</p>
+<p>Most sacrilegious murder hath broke ope The lord&#x27;s anointed temple, and stole thence The life o&#x27; the building.</p>
+<p>The lord&#x27;s anointed temple signifie en même temps ici le temple oint de Dieu et la tempe ointe du roi; dans l&#x27;impossibilité de rendre ce jeu de mots, il a fallu choisir, et l&#x27;on a pris des deux sens celui qui formait avec le reste de la phrase une image plus complète et plus suivie.]</p>
+<p>[Note 25: Abréviation de Macduff.]</p>
+<h2 class="chapter" id="c12">Scène IV</h2>
+<p>Les dehors du château.</p>
+<p>ROSSE conversant avec UN VIEILLARD.</p>
+<p>LE VIEILLARD.--Je me souviens bien de soixante-dix années, et dans ce long espace de temps j&#x27;ai vu de terribles moments et d&#x27;étranges choses; mais tout ce que j&#x27;avais vu n&#x27;était rien auprès de cette cruelle nuit.</p>
+<p>ROSSE.--Ah! bon père, tu vois comme le ciel, troublé par une action de l&#x27;homme, en menace le sanglant théâtre. D&#x27;après l&#x27;horloge il devrait faire jour, et cependant une nuit sombre étouffe le flambeau voyageur. La nuit triomphe-t-elle? ou bien est-ce le jour, honteux de se montrer, qui laisse les ténèbres ensevelir la face de la terre, lorsqu&#x27;une vivante lumière devrait la caresser?</p>
+<p>LE VIEILLARD.--Cela est contre nature, comme l&#x27;action qui a été commise. Mardi dernier, on a vu un faucon qui s&#x27;élevait, fier de sa supériorité, saisi au vol et tué par un hibou preneur de souris.</p>
+<p>ROSSE.--Et les chevaux de Duncan (chose très-étrange, mais certaine), qui étaient si beaux, si légers, les plus estimés de leur race, sont tout à coup redevenus sauvages, ont brisé leurs râteliers, se sont échappés, se révoltant contre toute obéissance, comme s&#x27;ils eussent voulu entrer en guerre avec l&#x27;homme.</p>
+<p>LE VIEILLARD.--On dit qu&#x27;ils se sont mangés l&#x27;un l&#x27;autre.</p>
+<p>ROSSE.--Rien n&#x27;est plus vrai, au grand étonnement de mes yeux qui en ont été témoins. (Macduff paraît.) Voici l&#x27;honnête Macduff.--Eh bien! monsieur, comment va le monde maintenant?</p>
+<p>MACDUFF.--Quoi! ne le voyez-vous pas?</p>
+<p>ROSSE.--A-t-on découvert qui a commis cette action plus que sanguinaire?</p>
+<p>MACDUFF--Ceux que Macbeth a tués.</p>
+<p>ROSSE.--Hélas! mon Dieu, quel fruit en pouvaient-ils espérer?</p>
+<p>MACDUFF.--Ils ont été gagnés. Malcolm et Donalbain, les deux fils du roi, ont disparu et se sont sauvés. Ce qui fait tomber sur eux le soupçon du crime.</p>
+<p>ROSSE.--Encore contre nature!--Ambition désordonnée, qui détruis tes propres moyens d&#x27;existence!--Alors il est probable que la souveraineté va écheoir à Macbeth.</p>
+<p>MACDUFF.--Il est déjà élu, et parti pour se faire couronner à Scone.</p>
+<p>ROSSE.--Où est le corps de Duncan?</p>
+<p>MACDUFF.--On l&#x27;a porté à Colmes-Inch, sanctuaire où se conservent les os de ses prédécesseurs.</p>
+<p>ROSSE.--Irez-vous à Scone?</p>
+<p>MACDUFF.--Non, mon cousin, je vais à Fife.</p>
+<p>ROSSE.--A la bonne heure; moi, je vais à Scone.</p>
+<p>MACDUFF.--Allez: puissiez-vous y voir les choses se bien passer!--Adieu.--Pourvu que nous ne trouvions pas que nos vieux habits étaient plus commodes que les neufs!</p>
+<p>ROSSE, au vieillard.--Adieu, bon père.</p>
+<p>LE VIEILLARD.--La bénédiction de Dieu soit avec vous, et avec ceux qui voudraient changer le mal en bien, et les ennemis en amis!</p>
+<p>(Ils sortent.)</p>
+<h3 class="sub">Fin du deuxième acte — Acte troisième</h3>
+<h2 class="chapter" id="c13">Scène I</h2>
+<p>A Fores,--Un appartement dans le palais.</p>
+<p>Entre BANQUO.</p>
+<p>BANQUO.--Tu possèdes maintenant, roi, thane de Cawdor, thane de Glamis, tout ce que t&#x27;avaient promis les soeurs du Destin, et j&#x27;ai peur que tu n&#x27;aies joué pour cela un bien vilain jeu. Mais elles ont dit aussi que tout cela ne passerait pas à ta postérité, et que ce serait moi qui serais la tige et le père d&#x27;une race de rois. Si la vérité est sortie de leur bouche (comme on le voit paraître avec éclat dans leurs discours à ton égard, Macbeth), pourquoi ces vérités, justifiées pour toi, ne deviendraient-elles pas pour moi des oracles, et n&#x27;élèveraient-elles pas mes espérances? Mais, silence! taisons-nous.</p>
+<p>(Air de trompette.--Entrent Macbeth, roi; lady Macbeth, reine; Lenox, Rosse, seigneurs, dames, suite.)</p>
+<p>MACBETH.--Voici notre principal convive.</p>
+<p>LADY MACBETH.--S&#x27;il eût été oublié, c&#x27;eût été un vide dans notre grande fête, et rien ne s&#x27;y serait bien passé.</p>
+<p>MACBETH.--Ce soir, monsieur, nous donnons un souper de cérémonie, et nous y solliciterons votre présence.</p>
+<p>BANQUO.--Que Votre Altesse me donne ses ordres: mon obéissance y est attachée pour jamais par le lien le plus indissoluble.</p>
+<p>MACBETH.--Montez-vous à cheval cet après-midi?</p>
+<p>BANQUO.--Oui, mon gracieux seigneur.</p>
+<p>MACBETH.--Autrement nous aurions désiré vos avis que nous avons toujours trouvés sages et utiles, dans le conseil que nous tiendrons aujourd&#x27;hui; mais nous les prendrons demain. Allez-vous loin?</p>
+<p>BANQUO.--Assez loin, mon seigneur, pour remplir le temps qui doit s&#x27;écouler jusqu&#x27;à l&#x27;heure du souper; et si mon cheval ne va pas très-bien, il faudra que j&#x27;emprunte à la nuit une ou deux de ses heures obscures.</p>
+<p>MACBETH.--Ne manquez pas à notre fête.</p>
+<p>BANQUO.--Je n&#x27;y manquerai pas, mon seigneur.</p>
+<p>MACBETH.--Nous venons d&#x27;apprendre que nos sanguinaires cousins se sont rendus l&#x27;un en Angleterre, l&#x27;autre en Irlande; que, loin d&#x27;avouer leur affreux parricide, ils débitent à ceux qui les écoutent d&#x27;étranges impostures: mais nous en causerons demain; nous aurons aussi à discuter une affaire d&#x27;État qui exige notre présence à tous. Dépêchez-vous de monter à cheval. Adieu jusqu&#x27;à ce soir. Fleance va-t-il avec vous?</p>
+<p>BANQUO.--Oui, mon seigneur; il est temps que nous partions.</p>
+<p>MACBETH.--Je vous souhaite des chevaux légers et sûrs, et je vous recommande à leur dos[26]. Adieu. (Banquo sort.) (Aux courtisans.) Que chacun dispose à son gré de son temps jusqu&#x27;à sept heures du soir. Pour trouver nous-même plus de plaisir à la société, nous resterons seul jusqu&#x27;au souper: d&#x27;ici là, que Dieu soit avec vous.--(Sortent lady Macbeth, les seigneurs, les dames, etc.) Holà, un mot: ces hommes attendent-ils nos ordres?</p>
+<p>UN DOMESTIQUE.--Oui, mon seigneur, ils sont à la porte du palais.</p>
+<p>MACBETH.--Amenez-les devant nous.--Être où je suis n&#x27;est rien si l&#x27;on n&#x27;y est en sûreté.--Nos craintes sur Banquo sont profondes, et dans ce naturel empreint de souveraineté domine ce qu&#x27;il y a de plus à craindre. Il ose beaucoup, et à cette disposition d&#x27;esprit intrépide il joint une sagesse qui enseigne à sa valeur la route la plus sûre. Il n&#x27;y a que lui dont l&#x27;existence m&#x27;inspire de la crainte: il intimide mon génie, comme César, dit-on, celui de Marc-Antoine. Je l&#x27;ai vu gourmander les soeurs lorsqu&#x27;elles me donnèrent d&#x27;abord le nom de roi; il leur commanda de lui parler; et alors, d&#x27;une bouche prophétique, elles le proclamèrent père d&#x27;une race de rois.--Elles ont placé sur ma tête une couronne sans fruit et ont placé dans mes mains un sceptre stérile que m&#x27;arrachera un bras étranger, sans qu&#x27;aucun fils sorti de moi me succède. S&#x27;il en est ainsi, c&#x27;est pour la race de Banquo que j&#x27;ai souillé mon âme; c&#x27;est pour ses enfants que j&#x27;ai assassiné l&#x27;excellent Duncan; pour eux seuls j&#x27;ai versé les remords dans la coupe de mon repos, et livré à l&#x27;ennemi du genre humain mon éternel trésor pour les faire rois! Les enfants de Banquo rois! Plutôt qu&#x27;il en soit ainsi, je t&#x27;attends dans l&#x27;arène, destin; viens m&#x27;y combattre à outrance.--Qui va là? (Rentre le domestique avec deux assassins.) Retourne à la porte et restes-y jusqu&#x27;à ce que nous t&#x27;appelons. (Le domestique sort.)--N&#x27;est-ce pas hier que nous avons causé ensemble?</p>
+<p>PREMIER ASSASSIN.--C&#x27;était hier, avec la permission de Votre Altesse.</p>
+<p>MACBETH.--Eh bien! avez-vous réfléchi sur ce que je vous ai dit? Soyez sûrs que c&#x27;est lui qui autrefois vous a tenus dans l&#x27;abaissement, ce que vous m&#x27;avez attribué, à moi qui en étais innocent. Je vous en ai convaincus dans notre dernière entrevue; je vous ai fait voir jusqu&#x27;à l&#x27;évidence comment vous aviez été amusés, traversés, quels avaient été les instruments, qui les avait employés, et tant d&#x27;autres choses qui diraient à la moitié d&#x27;une âme et à une intelligence altérée: «Voilà ce qu&#x27;a fait Banquo.»</p>
+<p>PREMIER ASSASSIN.--Vous nous l&#x27;avez fait connaître.</p>
+<p>MACBETH.--Je l&#x27;ai fait et j&#x27;ai été plus loin, ce qui est l&#x27;objet de notre seconde entrevue.--Sentez-vous la patience tellement dominante en votre nature que vous laissiez passer tout ceci? Êtes-vous si pénétrés de l&#x27;Evangile que vous puissiez prier pour ce brave homme et ses enfants, lui dont la main vous a courbés vers la tombe et a réduit pour toujours les vôtres à la misère?</p>
+<p>PREMIER ASSASSIN.--Nous sommes des hommes, mon seigneur.</p>
+<p>MACBETH.--Oui, je sais que dans le catalogue vous comptez pour des hommes, de même que les chiens de chasse, les lévriers, les métis, épagneuls, barbets, bassets, loups et demi-loups, y sont tous appelés du nom de chien. Ensuite, parmi ceux qui en valent la peine, on distingue l&#x27;agile, le tranquille, le fin, le chien de garde, le chasseur, chacun selon la qualité qu&#x27;a renfermée en lui la bienfaisante nature, et il en reçoit un titre particulier ajouté au nom commun sous lequel on les a tous inscrits. Il en est de même des hommes. Si vous méritez de tenir quelque rang parmi les hommes, et de n&#x27;être pas rejetés dans la dernière classe, dites-le-moi, et alors je verserai dans votre sein ce projet dont l&#x27;exécution vous délivre de votre ennemi, vous établit dans notre coeur et notre affection; à nous qui ne pouvons avoir, tant qu&#x27;il vivra, qu&#x27;une santé languissante que sa mort rendra parfaite.</p>
+<p>SECOND ASSASSIN.--Je suis un homme, mon seigneur, tellement indigné par les indignes coups et rebuffades du monde, que peu m&#x27;importe ce que je fais pour me venger du monde.</p>
+<p>PREMIER ASSASSIN.--Et moi un homme si las de malheurs, si ballotté de la fortune, que je mettrais ma vie sur la première chance qui me promettrait de l&#x27;améliorer ou de m&#x27;en délivrer.</p>
+<p>MACBETH.--Vous savez tous deux que Banquo était votre ennemi?</p>
+<p>SECOND ASSASSIN.--Cela est vrai, mon seigneur,</p>
+<p>MACBETH.--Il est aussi le mien; et notre inimitié est si sanglante, que chaque minute de son existence me frappe dans ce qui tient de plus près à la vie. Je pourrais, en faisant ouvertement usage de mon pouvoir, le balayer de ma vue sans en donner d&#x27;autre raison que ma volonté; mais je ne dois pas le faire, à cause de quelques-uns de mes amis qui sont aussi les siens, dont je ne puis pas perdre l&#x27;affection, et avec qui il me faudra déplorer la chute de l&#x27;homme que j&#x27;aurai renversé moi-même. Voilà ce qui me fait rechercher votre assistance, en cachant cette action à l&#x27;oeil du public, pour beaucoup de raisons importantes.</p>
+<p>SECOND ASSASSIN.--Nous exécuterons, mon seigneur, ce que vous nous commanderez.</p>
+<p>PREMIER ASSASSIN.--Oui, quand notre vie...</p>
+<p>MACBETH.--Votre courage perce dans votre maintien. Dans une heure au plus, je vous indiquerai le lieu où vous devez vous poster. Ayez le plus grand soin d&#x27;épier et de choisir le moment convenable, car il faut que cela soit fait ce soir, et à quelque distance du palais; et rappelez-vous que j&#x27;en veux paraître entièrement innocent, et afin qu&#x27;il ne reste dans l&#x27;ouvrage ni accrocs ni défauts, il faut qu&#x27;avec Banquo son fils Fleance qui l&#x27;accompagne, et dont l&#x27;absence n&#x27;est pas moins importante pour moi que celle de son père, subisse les destinées de cette heure de ténèbres. Prenez votre résolution tout seuls. Je vous rejoins dans un moment.</p>
+<p>LES ASSASSINS.--Nous sommes décidés, seigneur.</p>
+<p>MACBETH.--Je vous ferai rappeler dans un instant. Ne sortez pas de notre palais. (Les assassins sortent.) C&#x27;est une affaire conclue.--Banquo, si c&#x27;est vers les cieux que ton âme doit prendre son vol, elle les verra ce soir.</p>
+<p>(Il sort.)</p>
+<p>[Note 26: And so I commend you to their backs. C&#x27;est une manière de donner congé. Les phrases de politesse et de cérémonie abondent dans cette tragédie.]</p>
+<h2 class="chapter" id="c14">Scène II</h2>
+<p>Un autre appartement dans le palais</p>
+<p>Entrent LADY MACBETH ET UN DOMESTIQUE.</p>
+<p>LADY MACBETH.--Banquo est-il sorti du palais?</p>
+<p>LE DOMESTIQUE.--Oui, madame; mais il revient ce soir.</p>
+<p>LADY MACBETH.--Avertissez le roi que je voudrais, s&#x27;il en a le loisir, lui dire quelques mots.</p>
+<p>LE DOMESTIQUE.--J&#x27;y vais, madame.</p>
+<p>(Il sort.)</p>
+<p>LADY MACBETH.--On n&#x27;a rien gagné, et tout dépensé, quand on a obtenu son désir sans être plus heureux: il vaut mieux être celui que nous détruisons, que de vivre par sa destruction dans une joie troublée. (Macbeth entre.)</p>
+<p>--Qu&#x27;avez-vous, mon seigneur? pourquoi restez-vous seul, ne cherchant pour compagnie que les images les plus funestes, toujours appliqué à des pensées qui, en vérité, devraient être mortes avec ceux dont elles vous occupent? On ne devrait pas penser aux choses sans remède, ce qui est fait est fait.</p>
+<p>MACBETH.--Nous avons blessé le serpent, mais nous ne l&#x27;avons pas tué; il réunira ses tronçons et redeviendra ce qu&#x27;il était, tandis que notre impuissante malice restera exposée aux dents dont elle aura retrouvé la force. Mais que la structure de l&#x27;univers se disjoigne, que les deux mondes périssent avant que nous consentions à prendre nos repas dans la crainte, à dormir dans l&#x27;affliction de ces terribles songes qui viennent nous ébranler toutes les nuits! Il vaudrait mieux être avec le mort que, pour arriver où nous sommes, nous avons envoyé dans la paix, que de demeurer ainsi, l&#x27;âme sur la roue, dans une angoisse sans relâche.--Duncan est dans son tombeau: après les accès de fièvre de la vie, il dort bien; la trahison a fait tout ce qu&#x27;elle pouvait faire: ni l&#x27;acier, ni le poison, ni les conspirations domestiques, ni les armées ennemies, rien ne peut plus l&#x27;atteindre.</p>
+<p>LADY MACBETH.--Venez, mon cher seigneur, calmez vos regards troublés: soyez brillant et joyeux ce soir au milieu de vos convives.</p>
+<p>MACBETH.--Je le serai, mon amour; et soyez de même aussi, je vous y exhorte: que votre souvenir revienne toujours à Banquo; indiquez sa prééminence par vos regards et vos paroles.--Nous ne serons jamais en sûreté tant qu&#x27;il nous faudra nous laver de notre grandeur dans ce cours de flatteries, et faire de nos visages des masques pour déguiser nos coeurs.</p>
+<p>LADY MACBETH.--Ne pensez plus à cela.</p>
+<p>MACBETH.--O chère épouse, mon esprit est rempli de scorpions. Tu sais que Banquo et son fils Fleance respirent?</p>
+<p>LADY MACBETH.--Mais le bail qu&#x27;ils tiennent de la nature n&#x27;est pas éternel.</p>
+<p>MACBETH.--Il y a encore de la consolation, ils sont attaquables. Ainsi, sois joyeuse. Avant que la chauve-souris ait achevé de voler dans les cloîtres, avant qu&#x27;aux appels de la noire Hécate l&#x27;escarbot cuirassé ait sonné, par son murmure assoupissant, la cloche qui appelle les bâillements de la nuit, on aura consommé une action importante et terrible.</p>
+<p>LADY MACBETH.--Que doit-on faire?</p>
+<p>MACBETH.--Demeure innocente de la connaissance du projet, ma chère poule, jusqu&#x27;à ce que tu applaudisses à l&#x27;action.--Viens, ô nuit, apportant ton bandeau: couvre l&#x27;oeil insensible du jour compatissant, et de ta main invisible et sanglante déchire et mets en pièces le lien puissant qui me rend pâle!--La lumière s&#x27;obscurcit, et déjà le corbeau dirige son vol vers la forêt qu&#x27;il habite. Les honnêtes habitués du jour commencent à languir et à s&#x27;assoupir, tandis que les noirs agents de la nuit se lèvent pour saisir leur proie.--Tu es étonnée de mes discours; mais sois tranquille: les choses que le mal a commencées se consolident par le mal. Ainsi, je te prie, viens avec moi.</p>
+<p>(Ils sortent.)</p>
+<h2 class="chapter" id="c15">Scène III</h2>
+<p>Toujours à Fores.--Un parc ou une prairie donnant sur une des portes du palais.</p>
+<p>Entrent TROIS ASSASSINS.</p>
+<p>PREMIER ASSASSIN.--Mais qui t&#x27;a dit de venir te joindre à nous?</p>
+<p>TROISIÈME ASSASSIN.--Macbeth.</p>
+<p>SECOND ASSASSIN.--Il ne doit pas nous donner de méfiance, puisque nous le voyons parfaitement instruit de notre commission et de ce que nous avons à faire.</p>
+<p>PREMIER ASSASSIN.--Reste donc avec nous.--Le couchant étincelle encore de quelques traces du jour: c&#x27;est le moment où le voyageur attardé use de l&#x27;éperon pour gagner l&#x27;auberge désirée; et celui que nous attendons approche de bien prés.</p>
+<p>TROISIÈME ASSASSIN.--Écoutez; j&#x27;entends des chevaux.</p>
+<p>BANQUO, derrière le théâtre.--Donnez-nous de la lumière, holà!</p>
+<p>SECOND ASSASSIN.--C&#x27;est sûrement lui. Tous ceux qui sont sur la liste des personnes attendues sont déjà rendus à la cour.</p>
+<p>PREMIER ASSASSIN.--On emmène ses chevaux.</p>
+<p>TROISIÈME ASSASSIN.--À près d&#x27;un mille d&#x27;ici; mais il a coutume, et tous en font autant, d&#x27;aller d&#x27;ici au palais en se promenant.</p>
+<p>(Entrent Banquo et Fleance; un domestique marche devant eux avec un flambeau.)</p>
+<p>SECOND ASSASSIN.--Un flambeau! un flambeau!</p>
+<p>TROISIÈME ASSASSIN.--C&#x27;est lui.</p>
+<p>PREMIER ASSASSIN.--Tenons-nous prêts.</p>
+<p>BANQUO.--Il tombera de la pluie cette nuit.</p>
+<p>PREMIER ASSASSIN.--Qu&#x27;elle tombe!</p>
+<p>(Il attaque Banquo.)</p>
+<p>BANQUO.--O trahison!--Fuis, cher Fleance, fuis, fuis, fuis; tu pourras me venger.--O scélérat!</p>
+<p>(Il meurt. Fleance et le domestique se sauvent.)</p>
+<p>TROISIÈME ASSASSIN.--Qui a donc éteint le flambeau?</p>
+<p>PREMIER ASSASSIN.--N&#x27;était-ce pas le parti le plus sûr?</p>
+<p>TROISIÈME ASSASSIN.--Il n&#x27;y en a qu&#x27;un de tombé: le fils s&#x27;est sauvé.</p>
+<p>SECOND ASSASSIN.--Nous avons manqué la plus belle moitié de notre coup.</p>
+<p>PREMIER ASSASSIN.--Allons toujours dire ce qu&#x27;il y a de fait.</p>
+<p>(Ils sortent.)</p>
+<h2 class="chapter" id="c16">Scène IV</h2>
+<p>Un appartement d&#x27;apparat dans le palais.--Le banquet est préparé.</p>
+<p>Entrent MACBETH, LADY MACBETH, ROSSE, LENOX et autres seigneurs; suite.</p>
+<p>MACBETH.--Vous connaissez chacun votre rang, prenez vos places. Depuis le premier jusqu&#x27;au dernier, je vous souhaite la bienvenue de tout mon coeur.</p>
+<p>LES SEIGNEURS.--Nous rendons grâce à Votre Majesté.</p>
+<p>MACBETH.--Pour nous, comme un hôte modeste, nous nous mêlerons parmi les convives, notre hôtesse garde sa place d&#x27;honneur; mais dans un moment favorable nous lui demanderons sa bienvenue.</p>
+<p>(Les courtisans et les seigneurs se placent, et laissent un siège au milieu pour Macbeth.)</p>
+<p>LADY MACBETH.--Acquittez-moi, seigneur, envers tous nos amis; car mon coeur leur dit qu&#x27;ils sont tous les bienvenus.</p>
+<p>(Entre le premier assassin; il se tient à la porte.)</p>
+<p>MACBETH.--Vois, ils te rendent tous des remerciements du fond de leur coeur.--Le nombre des convives est égal des deux côtés. Je m&#x27;assiérai ici au milieu.--Que la joie s&#x27;épanouisse. Tout à l&#x27;heure nous boirons une rasade à la ronde. (A l&#x27;assassin.) Il y a du sang sur ton visage.</p>
+<p>L&#x27;ASSASSIN.--C&#x27;est donc du sang de Banquo.</p>
+<p>MACBETH.--Il vaut mieux qu&#x27;il soit sur ton visage que lui ici. Est-il expédié?</p>
+<p>L&#x27;ASSASSIN.--Seigneur, il a la gorge coupée; c&#x27;est moi qui lui ai rendu ce service.</p>
+<p>MACBETH.--Tu es le premier des hommes pour couper la gorge; cependant celui qui en a fait autant à Fleance a bien son mérite; si c&#x27;est toi, tu n&#x27;as pas ton pareil.</p>
+<p>L&#x27;ASSASSIN.--Mon royal seigneur, Fleance s&#x27;est échappé.</p>
+<p>MACBETH.--Voilà mon accès qui me reprend. Sans cela tout était parfait: j&#x27;étais entier comme le marbre, établi comme le roc, au large et libre de me répandre comme l&#x27;air qui m&#x27;environne; mais maintenant je suis comprimé, resserré, emprisonné, et asservi à l&#x27;insolence de mes inquiétudes et de mes terreurs.--Mais Banquo est en sûreté?</p>
+<p>L&#x27;ASSASSIN.--Oui, mon bon seigneur, il est en sûreté dans un fossé, avec vingt larges ouvertures à la tête, dont la moindre est la mort d&#x27;un homme.</p>
+<p>MACBETH.--Je t&#x27;en remercie.... Ainsi, voilà le gros serpent écrasé. Le jeune reptile qui s&#x27;est sauvé est d&#x27;une nature qui dans son temps engendrera aussi du venin, mais à présent il n&#x27;a pas de dents.--Va-t&#x27;en, et demain nous t&#x27;entendrons de nouveau.</p>
+<p>(L&#x27;assassin sort.)</p>
+<p>LADY MACBETH.--Mon royal époux, vous ne nous mettez pas en train. C&#x27;est vendre un festin que de ne pas témoigner à chaque instant, pendant sa durée, qu&#x27;il est donné de bon coeur. Pour manger il vaudrait mieux être chez soi; hors de là, l&#x27;assaisonnement de la bonne chère, c&#x27;est la politesse; sans cela il y a peu de plaisir à se rassembler.</p>
+<p>MACBETH.--Ma chère mémoire!--Qu&#x27;une bonne digestion accompagne votre appétit, et qu&#x27;une bonne santé s&#x27;en suive.</p>
+<p>LENOX.--Plaît-il à Votre Majesté de s&#x27;asseoir?</p>
+<p>(L&#x27;ombre de Banquo sort de terre, et s&#x27;assied à la place de Macbeth.)</p>
+<p>MACBETH.--Nous verrions ici rassemblé sous notre toit l&#x27;honneur de notre pays, si notre cher Banquo nous avait gratifié de sa présence. Puissé-je avoir à le quereller d&#x27;un manque d&#x27;amitié, plutôt qu&#x27;à le plaindre d&#x27;un malheur!</p>
+<p>ROSSE.--Son absence, seigneur, compromet l&#x27;honneur de sa parole. Votre Altesse veut-elle bien nous honorer de son auguste compagnie?</p>
+<p>MACBETH.--La table est remplie!</p>
+<p>LENOX.--Voici une place réservée, seigneur.</p>
+<p>MACBETH.--Où cela?</p>
+<p>LENOX.--Ici, mon seigneur. Qui est-ce qui trouble Votre Altesse?</p>
+<p>MACBETH.--Qui de vous a fait cela?</p>
+<p>LES SEIGNEURS.--Quoi donc, mon bon seigneur?</p>
+<p>MACBETH.--Tu ne peux pas dire que ce soit moi qui l&#x27;aie fait.--Ne secoue point ainsi contre moi ta chevelure sanglante.</p>
+<p>ROSSE.--Messieurs, levez-vous; son Altesse est indisposée.</p>
+<p>LADY MACBETH.--Monsieur, mon digne ami, mon époux est souvent dans cet état, et il y est sujet depuis l&#x27;enfance. Je vous en prie, restez à vos places: c&#x27;est un accès passager; le temps d&#x27;y penser, et il sera aussi bien qu&#x27;à l&#x27;ordinaire. Si vous faites trop attention à lui, vous le blesserez et vous augmenterez son mal: continuez à manger, et ne prenez pas garde à lui.--Êtes-vous un homme?</p>
+<p>MACBETH.--Oui, et un homme intrépide, puisque j&#x27;ose regarder ce qui épouvanterait le diable.</p>
+<p>LADY MACBETH.--Quelles balivernes! C&#x27;est une vision créée par votre peur, comme ce poignard dans l&#x27;air qui, disiez-vous, guidait vos pas vers Duncan. Oh! ces tressaillements, ces soubresauts, simulacres d&#x27;une véritable peur, conviendraient à merveille au conte que fait une femme, en hiver, au coin du feu, d&#x27;après l&#x27;autorité de sa grand&#x27;mère.--C&#x27;est une vraie honte! Pourquoi faites-vous tant de grimaces? Après tout, vous ne regardez qu&#x27;une chaise!</p>
+<p>MACBETH.--Je te prie, regarde de ce côté; vois là, vois. Que me dites-vous? eh bien! que m&#x27;importe?--Puisque tu peux remuer la tête, tu peux aussi parler. Si les cimetières et les tombeaux doivent nous renvoyer ceux que nous ensevelissons, nos monuments seront donc semblables au gésier des milans?</p>
+<p>(L&#x27;ombre disparaît.)</p>
+<p>LADY MACBETH.--Quoi! vous perdez tout à fait la tête?</p>
+<p>MACBETH.--Comme je suis ici, je l&#x27;ai vu.</p>
+<p>LADY MACBETH.--Fi! quelle honte!</p>
+<p>MACBETH.--Ce n&#x27;est pas la première fois qu&#x27;on a répandu le sang. Dans les anciens temps, avant que des lois humaines eussent purgé de crimes les sociétés adoucies, oui vraiment, et même depuis, il s&#x27;est commis des meurtres trop terribles pour que l&#x27;oreille en supporte le récit; et l&#x27;on a vu le temps où lorsqu&#x27;on avait fait sauter la cervelle à un homme, il mourait, et tout était fini. Mais aujourd&#x27;hui ils se relèvent avec vingt blessures mortelles sur le crâne, et viennent nous chasser de nos sièges: cela est plus étrange que ne le peut être un pareil meurtre.</p>
+<p>LADY MACBETH.--Mon digne seigneur, vos dignes amis vous attendent. MACBETH.--J&#x27;oubliais.... Ne prenez pas garde à moi, mes dignes amis. J&#x27;ai une étrange infirmité qui n&#x27;est rien pour ceux qui me connaissent. Allons, amitié et santé à tous! Je vais m&#x27;asseoir: donnez-moi du vin; remplissez jusqu&#x27;au bord. Je bois au plaisir de toute la table, et à notre cher ami Banquo, qui nous manque ici. Que je voudrais qu&#x27;il y fût! (L&#x27;ombre sort de terre.) Nous buvons avec empressement à vous tous, à lui. Tout à tous!</p>
+<p>LES SEIGNEURS.--Nous vous présentons nos hommages et vous faisons raison.</p>
+<p>MACBETH.--Loin de moi! ôte-toi de mes yeux! que la terre te cache! Tes os sont desséchés, ton sang est glacé; rien ne se reflète dans ces yeux que tu fixes sur moi!</p>
+<p>LADY MACBETH.--Ne voyez là dedans, mes bons seigneurs, qu&#x27;une chose qui lui est ordinaire, rien de plus: seulement elle gâte tout le plaisir de ce moment.</p>
+<p>MACBETH.--Ce qu&#x27;un homme peut oser, je l&#x27;ose. Viens sous la forme de l&#x27;ours féroce de la Russie, du rhinocéros armé, ou du tigre d&#x27;Hyrcanie, prends la forme que tu voudras, excepté celle-ci, et la fermeté de mes nerfs ne sera pas un instant ébranlée; ou bien reviens à la vie, défie-moi au désert avec ton épée: si alors je demeure tremblant, déclare-moi une petite fille.--Loin d&#x27;ici, fantôme horrible, insultant mensonge! loin d&#x27;ici! (L&#x27;ombre disparaît.) A la bonne heure.--Il est parti, je redeviens un homme. De grâce, restez à vos places.</p>
+<p>LADY MACBETH.--Vous avez fait fuir la gaieté, détruit tout le plaisir de cette réunion par un désordre bien étrange.</p>
+<p>MACBETH.--De telles choses peuvent-elles arriver et nous surprendre, sans exciter en nous plus d&#x27;étonnement que ne le ferait un nuage d&#x27;été?--Vous me mettez de nouveau hors de moi-même, lorsque je songe maintenant que vous pouvez contempler de pareils spectacles et conserver le même incarnat sur vos joues, tandis que les miennes sont blanches de frayeur.</p>
+<p>ROSSE.--Quels spectacles, seigneur?</p>
+<p>LADY MACBETH.--Je vous prie, ne lui parlez pas; il va de mal en pis: les questions le mettent en fureur. Je vous souhaite le bonsoir à tous. Ne vous inquiétez pas de l&#x27;ordre de votre départ, mais partez de suite.</p>
+<p>LENOX.--Nous souhaitons à Votre Majesté une bonne nuit et une meilleure santé.</p>
+<p>LADY MACBETH.--Bonne et heureuse nuit à tous.</p>
+<p>(Sortent les seigneurs et leur suite.)</p>
+<p>MACBETH.--Il aura du sang: on dit que le sang veut du sang. On a vu les pierres se mouvoir et les arbres parler. Les devins, et ceux qui ont l&#x27;intelligence de certains rapports, ont souvent mis en lumière par le moyen des pies, des hiboux, des corbeaux, l&#x27;homme de sang le mieux caché.--Quelle heure est-il de la nuit?</p>
+<p>LADY MACBETH.--A ne savoir qui l&#x27;emporte d&#x27;elle ou du matin.</p>
+<p>MACBETH.--Que dites-vous de Macduff, qui refuse de se rendre en personne à nos ordres souverains?</p>
+<p>LADY MACBETH.--Avez-vous envoyé vers lui, seigneur?</p>
+<p>MACBETH.--Non, je l&#x27;ai su indirectement: mais j&#x27;enverrai. Il n&#x27;y a pas un seul d&#x27;entre eux dans la maison duquel je n&#x27;aie un homme à mes gages. J&#x27;irai trouver demain, et de bonne heure, les soeurs du Destin: elles m&#x27;en diront davantage; car à présent je suis décidé à savoir le pis par les pires moyens; je ferai tout céder à mon avantage. J&#x27;ai marché si avant dans le sang que si je cessais maintenant de m&#x27;y plonger, retourner en arrière serait aussi fatigant que d&#x27;aller en avant. J&#x27;ai dans la tête d&#x27;étranges choses qui passeront dans mes mains, des choses qu&#x27;il faut exécuter avant d&#x27;avoir le temps de les examiner.</p>
+<p>LADY MACBETH.--Vous avez besoin de ce qui ranime toutes les créatures, de sommeil.</p>
+<p>MACBETH.--Oui, allons dormir. L&#x27;étrange erreur où je suis tombé est l&#x27;effet d&#x27;une crainte novice et qu&#x27;il faut mener rudement. Nous sommes encore jeunes dans l&#x27;action.</p>
+<h2 class="chapter" id="c17">Scène V</h2>
+<p>La bruyère.--Tonnerre.</p>
+<p>Entrent HÉCATE; LES TROIS SORCIÈRES viennent à sa rencontre.</p>
+<p>PREMIÈRE SORCIÈRE.--Quoi! qu&#x27;y a-t-il donc, Hécate? Vous paraissez en colère.</p>
+<p>HÉCATE.--N&#x27;en ai-je pas sujet, sorcières que vous êtes, insolentes, effrontées? Comment avez-vous osé entrer avec Macbeth en traité et en commerce d&#x27;énigmes et d&#x27;annonces de mort, sans que moi, souveraine de vos enchantements, habile maîtresse de tout mal, j&#x27;aie jamais été appelée à y prendre part et à signaler la gloire de notre art? Et, ce qui est pis encore, c&#x27;est que tout ce que vous avez fait, vous l&#x27;avez fait pour un fils capricieux, chagrin, colère, qui, comme les autres, ne vous recherche que pour ses propres intérêts et nullement pour vous-mêmes. Réparez votre faute; partez, et demain matin, venez me trouver à la caverne de l&#x27;Achéron[27]. Il y viendra pour apprendre sa destinée: préparez vos vases, vos paroles magiques, vos charmes et tout ce qui est nécessaire. Je vais me rendre dans les airs: j&#x27;emploierai cette nuit à l&#x27;accomplissement d&#x27;un projet fatal et terrible; un grand ouvrage doit être terminé avant midi. A la pointe de la lune pend une épaisse goutte de vapeur; je la saisirai avant qu&#x27;elle tombe sur la terre; et, distillée par des artifices magiques, elle élèvera des visions fantastiques qui; par la force des illusions, entraîneront Macbeth à sa ruine. Il bravera les destins, méprisera la mort, et portera ses espérances au delà de toute sagesse, de toute pudeur, de toute crainte; et vous savez toutes que la sécurité est la plus grande ennemie des mortels.--(Chant derrière le théâtre.) «Viens, viens[28],...» Écoutez! on m&#x27;appelle. Vous voyez mon petit lutin assis dans ce gros nuage noir: il m&#x27;attend.</p>
+<p>(Elle sort.)</p>
+<p>PREMIÈRE SORCIÈRE.--Allons, hâtons-nous; il ne tardera pas à revenir.</p>
+<p>(Les sorcières sortent.)</p>
+<p>[Note 27: The pit of Acheron Probablement quelque caverne que l&#x27;on supposait devoir communiquer avec l&#x27;enfer.]</p>
+<p>[Note 28:</p>
+<p>Viens, viens; Hécate; Hécate, viens, viens.</p>
+<h3 class="sub">Hécate.</h3>
+<p>Je viens, je viens, je viens, je viens Tout aussi vite que je puis. Tout aussi vite que je puis.</p>
+<p>Ce chant n&#x27;est indiqué dans l&#x27;original que par les deux premiers mots, comme un chant connu pour être d&#x27;usage en ces sortes d&#x27;occasions. On le trouve tout entier dans la Sorcière de Middleton, pièce de théâtre composée, à ce qu&#x27;on croit, peu de temps avant Macbeth. La même remarque s&#x27;applique, dans la scène VI, au chant qui termine le charme: Esprits noirs et blancs, etc. Voyez, sur cela et sur une foule de détails relatifs aux croyances populaires que Shakspeare a employées dans Macbeth, l&#x27;édition de Shakspeare, de M. Steevens.]</p>
+<h2 class="chapter" id="c18">Scène vi</h2>
+<p>A Fores.--Un appartement du palais.</p>
+<p>Entrent LENOX ET un autre SEIGNEUR.</p>
+<p>LENOX.--Mes premiers discours n&#x27;ont fait que rencontrer vos pensées, qui peuvent aller plus loin. Seulement, je dis que les choses ont été prises d&#x27;une singulière manière. Le bon roi Duncan a été plaint de Macbeth! vraiment je le crois bien, il était mort.--Le brave et vaillant Banquo s&#x27;est promené trop tard, et vous pouvez dire, si vous voulez, que c&#x27;est Fleance qui l&#x27;a assassiné, car Fleance s&#x27;est enfui. Il ne faut pas se promener trop tard.--Qui de nous peut ne pas voir combien il était horrible de la part de Malcolm et de Donalbain d&#x27;assassiner leur bon père? Damnable crime! combien Macbeth en a été affligé! N&#x27;a-t-il pas aussitôt, dans une pieuse rage, mis en pièces les deux coupables qui étaient les esclaves de l&#x27;ivresse et les serfs du sommeil? N&#x27;était-ce pas une noble action? Oui, et pleine de prudence aussi, car toute âme sensible eût été irritée d&#x27;entendre ces hommes nier le crime. En sorte que j&#x27;en reviens à dire qu&#x27;il a très-bien pris toutes choses; et je pense que s&#x27;il tenait les fils de Duncan sous sa clef (ce qui ne sera pas, s&#x27;il plaît au ciel), ils verraient ce que c&#x27;est que de tuer un père, et Fleance aussi. Mais, chut! car j&#x27;apprends que pour quelques paroles trop libres, et parce qu&#x27;il a manqué de se rendre à la fête du tyran[29], Macduff est tombé en disgrâce. Pouvez-vous, monsieur, m&#x27;apprendre où il s&#x27;est réfugié?</p>
+<p>LE SEIGNEUR.--Le fils de Duncan, à qui le tyran retient son légitime héritage, vit à la cour du roi d&#x27;Angleterre. Le pieux Edouard lui a fait un accueil si gracieux, que la malveillance de la fortune ne lui a rien fait perdre de la considération due à son rang. C&#x27;est là que Macduff est allé demander au saint roi de l&#x27;aider à éveiller le Northumberland et le belliqueux Siward, afin que, par leur secours et avec l&#x27;approbation de Celui qui est là-haut, nous puissions prendre nos repas sur nos tables, accorder le sommeil à nos nuits, affranchir nos fêtes et nos banquets des poignards sanglants, rendre des hommages légitimes et recevoir des honneurs libres de contrainte, toutes choses après quoi nous soupirons aujourd&#x27;hui. Ce rapport a mis le roi dans une telle fureur, qu&#x27;il se prépare à tenter quelque expédition guerrière.</p>
+<p>LENOX.--A-t-il envoyé vers Macduff?</p>
+<p>LE SEIGNEUR.--Oui, et sur cette réponse décidée: «Moi, monsieur! non,» le sombre messager lui a tourné le dos en murmurant, comme s&#x27;il eût dit: «Vous regretterez le moment où vous m&#x27;avez embarrassé de cette réponse.»</p>
+<p>LENOX.--Et c&#x27;est un bon avis pour lui de se tenir aussi éloigné que sa prudence pourra lui en fournir les moyens. Que quelque saint ange vole à la cour d&#x27;Angleterre annoncer son message, avant qu&#x27;il arrive, afin que le bonheur rentre bientôt dans notre patrie, opprimée sous une main maudite!</p>
+<p>LE SEIGNEUR.--Mes prières sont avec lui.</p>
+<p>(Ils sortent.)</p>
+<p>[Note 29: Ce fut, selon Hollinshed, pour ne s&#x27;être pas rendu en personne à Dunsinane, que Macbeth faisait bâtir. Dans les terreurs perpétuelles où le tenait le souvenir de ses crimes, il avait employé l&#x27;argent pris sur les nobles, qu&#x27;il faisait journellement périr, à s&#x27;entourer d&#x27;une garde mercenaire; mais, non content de cette précaution, il voulut faire élever sur la colline de Dunsinane un château capable de résister à toutes les attaques. L&#x27;entreprise traînant en longueur, à cause de la difficulté et de la dépense, il ordonna à tous les thanes d&#x27;y envoyer des matériaux et de s&#x27;y rendre chacun à son tour avec ses vassaux pour aider aux travaux. Quand vint le tour de Macduff, il y envoya ses gens avec les matériaux nécessaires, leur recommandant de se conduire de manière à ce que Macbeth ne pût avoir aucun prétexte pour s&#x27;irriter de ce qu&#x27;il n&#x27;était pas venu lui-même; mais il ne voulut pas s&#x27;y rendre, jugeant qu&#x27;il n&#x27;était pas sans danger pour lui de se mettre au pouvoir de Macbeth, qui lui voulait du mal; ce qu&#x27;ayant appris Macbeth, il s&#x27;écria: «Je vois bien que cet homme n&#x27;obéira jamais à mes ordres qu&#x27;on ne le monte avec une bride.» Il ne se détermina pourtant pas immédiatement à le poursuivre.]</p>
+<h3 class="sub">Fin du troisième acte — Acte quatrième</h3>
+<h2 class="chapter" id="c19">Scène I</h2>
+<p>Une caverne obscure. Au milieu bout une chaudière.--Tonnerre.</p>
+<p>Entrent les trois SORCIÈRES.</p>
+<p>PREMIÈRE SORCIÈRE.--Trois fois le chat tigré a miaulé.</p>
+<p>DEUXIÈME SORCIÈRE.--Et trois fois le jeune hérisson a gémi une fois.</p>
+<p>TROISIÈME SORCIÈRE.--Harper[30] nous crie: «Il est temps, il est temps.»</p>
+<p>PREMIÈRE SORCIÈRE.--Tournons en rond autour de la chaudière, et jetons dans ses entrailles empoisonnées[31].</p>
+<p>Crapaud, qui, pendant trente et un jours et trente et une nuits, Endormi sous la plus froide pierre, T&#x27;es rempli d&#x27;un âcre venin, Bous le premier dans la marmite enchantée.</p>
+<h3 class="sub">Les trois sorcières ensemble.</h3>
+<p>Redoublons, redoublons de travail et de soins: Feu, brûle; et chaudière, bouillonne.</p>
+<h3 class="sub">Première Sorcière.</h3>
+<p>Filet d&#x27;un serpent des marais, bous, et cuis dans le chaudron, Oeil de lézard, pied de grenouille,</p>
+<p>Duvet de chauve-souris et langue de chien, Dard fourchu de vipère et aiguillon du reptile aveugle[32], Jambe de lézard et aile de hibou; Pour faire un charme puissant en désordre, Bouillez et écumez comme un bouillon d&#x27;enfer.</p>
+<h3 class="sub">Les trois sorcières ensemble.</h3>
+<p>Redoublons, redoublons de travail et de soins: Feu, brûle; et chaudière, bouillonne.</p>
+<h3 class="sub">Troisième sorcière.</h3>
+<p>Écailles de dragon et dents de loup, Momie de sorcière, estomac et gosier Du vorace requin des mers salées, Racine de ciguë arrachée dans la nuit, Foie de juif blasphémateur, Fiel de bouc, branches d&#x27;if Coupées pendant une éclipse de lune, Nez de Turc et lèvres de Tartare, Doigt de l&#x27;enfant d&#x27;une fille de joie Mis au monde dans un fossé et étranglé en naissant; Rendez la bouillie épaisse et visqueuse; Ajoutez-y des entrailles de tigre Pour compléter les ingrédients de notre chaudière.</p>
+<h3 class="sub">Les trois sorcières ensemble.</h3>
+<p>Redoublons, redoublons de travail et de soins: Feu, brûle; et chaudière, bouillonne.</p>
+<h3 class="sub">Deuxième sorcière.</h3>
+<p>Refroidissons le tout dans du sang de singe, Et notre charme est parfait et solide.</p>
+<p>(Entre Hécate, suivie de trois autres sorcières.)</p>
+<h3 class="sub">Hécate.</h3>
+<p>Oh! à merveille! j&#x27;applaudis à votre ouvrage, Et chacune de vous aura part au profit, Maintenant, chantez autour de la chaudière, Dansant en rond comme les lutins et les fées, Pour enchanter tout ce que vous y avez mis.</p>
+<p>(Musique.)</p>
+<h2 class="chapter" id="c20">Chant.</h2>
+<p>Esprits noirs et blancs, Esprits rouges et gris, Mêlez, mêlez, mêlez, Vous qui savez mêler.</p>
+<p>DEUXIÈME SORCIÈRE.--D&#x27;après la démangeaison de mes pouces, il vient par ici quelque maudit. Ouvrez-vous, verrous, qui que ce soit qui frappe.</p>
+<p>(Entre Macbeth.)</p>
+<p>MACBETH.--Eh bien! sorcières du mystère, des ténèbres et du minuit, que faites-vous là?</p>
+<p>LES TROIS SORCIÈRES ENSEMBLE.--Une oeuvre sans nom.</p>
+<p>MACBETH.--Je vous conjure par l&#x27;art que vous professez, de quelque manière que vous y soyez parvenues, répondez-moi. Dussent les vents par vous déchaînés livrer la guerre aux églises; dussent les vagues écumeuses bouleverser et engloutir les navires; dût le blé chargé d&#x27;épis verser, et les arbres être jetés à bas; dussent les châteaux s&#x27;écrouler sur la tête de leurs gardiens; dût le faîte des palais et des pyramides s&#x27;incliner vers leurs fondements; dût le trésor des germes de la nature rouler confondu jusqu&#x27;à rendre la destruction lasse d&#x27;elle-même: répondez à mes questions.</p>
+<p>PREMIÈRE SORCIÈRE.--Parle.</p>
+<p>DEUXIÈME SORCIÈRE.--Demande.</p>
+<p>TROISIÈME SORCIÈRE.--Nous répondrons.</p>
+<p>PREMIÈRE SORCIÈRE.--Dis, aimes-tu mieux recevoir la réponse de notre bouche ou de celle de nos maîtres?</p>
+<p>MACBETH.--Appelez-les, que je les voie.</p>
+<p>PREMIÈRE SORCIÈRE.--Versons du sang d&#x27;une truie qui a dévoré ses neuf marcassins, et de la graisse qui coule du gibet d&#x27;un meurtrier; et jetons-les dans la flamme.</p>
+<p>LES TROIS SORCIÈRES ENSEMBLE.--Viens, en haut ou en bas; montre-toi, et fais ton devoir comme il convient.</p>
+<p>(Tonnerre.--On voit s&#x27;élever le fantôme d&#x27;une tête armée d&#x27;un casque.)</p>
+<p>MACBETH.--Dis-moi, puissance inconnue....</p>
+<p>PREMIÈRE SORCIÈRE.--Il connaît ta pensée; écoute ses paroles, mais ne dis rien.</p>
+<p>LE FANTÔME.--Macbeth! Macbeth! Macbeth! garde-toi de Macduff; garde-toi du thane de Fife.--Laissez-moi partir.--C&#x27;est assez.</p>
+<p>(Le fantôme s&#x27;enfonce sous la terre.)</p>
+<p>MACBETH.--Qui que tu sois, je te rends grâce de ton bon avis. Tu as touché la corde de ma crainte. Mais un mot encore.</p>
+<p>PREMIÈRE SORCIÈRE.--Il ne souffre pas qu&#x27;on lui commande. En voici un autre plus puissant que le premier.</p>
+<p>(Tonnerre.--On voit s&#x27;élever le fantôme d&#x27;un enfant ensanglanté.)</p>
+<p>LE FANTÔME.--Macbeth! Macbeth! Macbeth!</p>
+<p>MACBETH.--Je t&#x27;écouterais de trois oreilles si je les avais.</p>
+<p>LE FANTÔME.--Sois sanguinaire, intrépide et décidé. Ris-toi dédaigneusement du pouvoir de l&#x27;homme. Nul homme né d&#x27;une femme ne peut nuire à Macbeth.</p>
+<p>(Le fantôme s&#x27;enfonce sous terre.)</p>
+<p>MACBETH.--Vis donc, Macduff; qu&#x27;ai-je besoin de te redouter? Cependant je veux rendre ma tranquillité doublement tranquille, et faire un bail avec le Destin. Tu ne vivras pas, afin que je puisse dire à la peur au pâle courage qu&#x27;elle en a menti, et dormir en dépit du tonnerre. (Tonnerre.--On voit s&#x27;élever le fantôme d&#x27;un enfant couronné, ayant un arbre dans la main.) Quel est celui-ci qui s&#x27;élève comme le fils d&#x27;un roi, et qui porte sur son front d&#x27;enfant la couronne fermée de la souveraineté?</p>
+<p>LES TROIS SORCIÈRES ENSEMBLE.--Écoute, mais ne parle pas.</p>
+<p>LE FANTÔME.--Sois fier comme un lion orgueilleux: ne t&#x27;embarrasse pas de ceux qui s&#x27;irritent, s&#x27;emportent et conspirent contre toi. Jamais Macbeth ne sera vaincu, jusqu&#x27;à ce que la grande forêt de Birnam marche contre lui vers la haute colline de Dunsinane.</p>
+<p>(Le fantôme rentre dans la terre.)</p>
+<p>MACBETH.--Cela n&#x27;arrivera jamais. Qui peut presser[33] la forêt, commander à l&#x27;arbre de détacher sa racine liée à la terre? O douces prédictions! ô bonheur! Rébellion, ne lève point la tête jusqu&#x27;à ce que la forêt de Birnam se lève; et Macbeth, au faîte de la grandeur, vivra tout le bail de la nature, et son dernier soupir sera le tribut payé à la vieillesse et à la loi mortelle.--Cependant mon coeur palpite encore du désir de savoir une chose: dites-moi (si votre art va jusqu&#x27;à me l&#x27;apprendre), la race de Banquo régnera-t-elle un jour dans ce royaume?</p>
+<p>TOUTES LES SORCIÈRES ENSEMBLE.--Ne cherche point à en savoir davantage.</p>
+<p>MACBETH.--Je veux être satisfait. Si vous me le refusez, qu&#x27;une malédiction éternelle tombe sur vous!--Faites-moi connaître ce qui en est.--Pourquoi cette chaudière disparaît-elle? Quel est ce bruit?</p>
+<p>(Hautbois.)</p>
+<p>PREMIÈRE SORCIÈRE.--Paraissez!</p>
+<p>DEUXIÈME SORCIÈRE.--Paraissez!</p>
+<p>TROISIÈME SORCIÈRE.--Paraissez!</p>
+<p>LES TROIS SORCIÈRES ENSEMBLE.--Paraissez à ses yeux et affligez son coeur.--Venez comme des ombres, et éloignez-vous de même.</p>
+<p>(Huit rois paraissent marchant à la file, le dernier tenant un miroir dans sa main. Banquo les suit.)</p>
+<p>MACBETH.--Tu ressembles trop à l&#x27;ombre de Banquo; à bas! ta couronne brûle mes yeux dans leur orbite.--Et toi, dont le front est également ceint d&#x27;un cercle d&#x27;or, tes cheveux sont pareils à ceux du premier.--Un troisième ressemble à celui qui le précède. Sorcières impures, pourquoi me montrez-vous ceci?--Un quatrième! Fuyez mes yeux.--Quoi! cette ligne se prolongera-t-elle jusqu&#x27;au jour du jugement? Encore un autre!--Un septième! Je n&#x27;en veux pas voir davantage.--Et cependant voilà le huitième qui paraît, portant un miroir où j&#x27;en découvre une foule d&#x27;autres: j&#x27;en vois quelques-uns qui portent deux globes et un triple sceptre[34]. Effroyable vue! Oui, je le vois maintenant, c&#x27;est vrai, car voilà Banquo, tout souillé du sang de ses plaies, qui me sourit et me les montre comme siens.--Quoi! en est-il ainsi?</p>
+<p>PREMIÈRE SORCIÈRE.--Oui, seigneur, il en est ainsi.--Mais pourquoi Macbeth reste-t-il ainsi saisi de stupeur? Venez, mes soeurs, égayons ses esprits, et faisons-lui connaître nos plus doux plaisirs. Je vais charmer l&#x27;air pour qu&#x27;il rende des sons, tandis que vous exécuterez votre antique ronde; il faut que ce grand roi puisse dire avec bonté que nous l&#x27;avons reçu avec les hommages qui lui sont dus.</p>
+<p>(Musique.--Les sorcières dansent et disparaissent.)</p>
+<p>MACBETH.--Où sont-elles? parties!--Que cette heure funeste soit maudite dans le calendrier!--Venez, vous qui êtes là dehors.</p>
+<p>(Entre Lenox.)</p>
+<p>LENOX.--Que désire votre grâce?</p>
+<p>MACBETH.--Avez-vous vu les soeurs du Destin?</p>
+<p>LENOX.--Non, mon seigneur.</p>
+<p>MACBETH.--N&#x27;ont-elles pas passé près de vous?</p>
+<p>LENOX.--Non, en vérité, mon seigneur.</p>
+<p>MACBETH.--Que l&#x27;air qu&#x27;elles traversent soit infecté, et damnation sur tous ceux qui croiront en elles!--J&#x27;ai entendu galoper des chevaux: qui donc est arrivé?</p>
+<p>LENOX.--Deux ou trois personnes, seigneur, apportant la nouvelle que Macduff s&#x27;est sauvé en Angleterre.</p>
+<p>MACBETH.--Il s&#x27;est sauvé en Angleterre?</p>
+<p>LENOX.--Oui, mon bon seigneur.</p>
+<p>MACBETH.--O temps! tu devances mes terribles exploits. On n&#x27;atteint jamais le dessein frivole si l&#x27;action ne marche pas avec lui. Désormais, les premiers mouvements de mon coeur seront aussi les premiers mouvements de ma main; dès à présent, pour couronner mes pensées par les actes, il faut penser et agir aussitôt; je vais surprendre le château de Macduff, m&#x27;emparer de Fife, passer au fil de l&#x27;épée sa femme et ses petits enfants, et tout ce qui a le malheur d&#x27;être de sa race. Inutile de se vanter comme un insensé; je vais accomplir cette entreprise avant que le projet se refroidisse. Mais, plus de visions!</p>
+<p>(À Lenox.) Où sont ces gentilshommes? Viens, conduis-moi vers eux.</p>
+<p>(Ils sortent.)</p>
+<p>[Note 30: Harper. On ne sait quel est ce Harper; il n&#x27;en est pas question dans la Sorcière de Middleton; c&#x27;est probablement quelque animal que la sorcière désigne ainsi en raison de la ressemblance de son cri avec le son d&#x27;une corde de harpe.]</p>
+<p>[Note 31: Shakspeare met souvent ainsi dans la bouche de ses sorcières des phrases interrompues auxquelles elles semblent attacher un sens complet. On peut le voir dans la première scène.]</p>
+<p>[Note 32: Espèce de serpent.]</p>
+<p>[Note 33: Impress, presser, forcer au service militaire.]</p>
+<p>[Note 34: Allusion à la réunion des deux îles et des trois royaumes de la Grande-Bretagne, sous Jacques VI d&#x27;Écosse.]</p>
+<h2 class="chapter" id="c21">Scène II</h2>
+<p>A Fife.--Un appartement du château de Macduff.</p>
+<p>Entrent lady MACDUFF, son JEUNE FILS, ROSSE.</p>
+<p>LADY MACDUFF.--Qu&#x27;avait-il fait qui pût le forcer à fuir son pays?</p>
+<p>ROSSE.--Ayez patience, madame.</p>
+<p>LADY MACDUFF.--Il n&#x27;en a pas eu, lui. Sa fuite est une folie; à défaut de nos actions, ce sont nos frayeurs qui font de nous des traîtres.</p>
+<p>ROSSE.--Vous ne savez pas si ç&#x27;a été en lui sagesse ou frayeur.</p>
+<p>LADY MACDUFF.--Sagesse! de laisser sa femme, laisser ses petits enfants, ses biens, ses titres dans un lieu d&#x27;où il s&#x27;enfuit! Il ne nous aime point, il ne ressent point les mouvements de la nature. Le pauvre roitelet, le plus faible des oiseaux dispute dans son nid ses petits au hibou. Il n&#x27;y a que de la frayeur, aucune affection, et tout aussi peu de sagesse, dans une fuite précipitée ainsi contre toute raison.</p>
+<p>ROSSE.--Chère cousine, je vous en prie, gouvernez-vous; car, pour votre époux, il est généreux, sage, judicieux, et connaît mieux que personne ce qui convient aux circonstances. Je n&#x27;ose pas trop en dire davantage; mais ce sont dis temps bien cruels que ceux où nous sommes des traîtres sans nous en douter nous-mêmes, où le bruit menaçant arrive jusqu&#x27;à nous sans que nous sachions ce qui nous menace, et ou nous flottons au hasard, sans nous diriger, sur une mer capricieuse et irritée[35]. Je prends congé de vous; vous ne tarderez pas à me revoir ici. Les choses arrivées au dernier degré du mal doivent s&#x27;arrêter ou remonter vers ce qu&#x27;elles étaient naguère.--Mon joli cousin, que le ciel veille sur vous.</p>
+<p>LADY MACDUFF.--Il a un père, et pourtant il n&#x27;a point de père.</p>
+<p>ROSSE.--Je suis si peu maître de moi-même, que si je m&#x27;arrêtais plus longtemps, je me perdrais et ne ferais qu&#x27;ajouter à vos peines. Adieu, je prends congé de vous pour cette fois.</p>
+<p>LADY MACDUFF.--Mon garçon, votre père est mort: qu&#x27;allez-vous devenir? Comment vivrez-vous?</p>
+<p>L&#x27;ENFANT.--Comme vivent les oiseaux, ma mère.</p>
+<p>LADY MACDUFF.--Quoi! de vers et de mouches?</p>
+<p>L&#x27;ENFANT.--De ce que je pourrai trouver, je veux dire: c&#x27;est ainsi que vivent les oiseaux.</p>
+<p>LADY MACDUFF.--Pauvre petit oiseau! ainsi tu ne craindrais pas le filet, la glu, le piège, le trébuchet?</p>
+<p>L&#x27;ENFANT.--Pourquoi les craindrais-je, ma mère? Ils ne sont pas destinés aux petits oiseaux.--Mon père n&#x27;est pas mort, quoi que vous en disiez.</p>
+<p>LADY MACDUFF.--Oui, il est mort. Comment feras-tu pour avoir un père?</p>
+<p>L&#x27;ENFANT.--Comment ferez-vous pour avoir un mari?</p>
+<p>LADY MACDUFF.--Moi! j&#x27;en pourrais acheter vingt au premier marché.</p>
+<p>L&#x27;ENFANT.--Vous les achèteriez donc pour les revendre?</p>
+<p>LADY MACDUFF.--Tu dis tout ce que tu sais, et en vérité cela n&#x27;est pas mal pour ton âge.</p>
+<p>L&#x27;ENFANT.--Mon père était-il un traître, ma mère?</p>
+<p>LADY MACDUFF.--Oui, c&#x27;était un traître.</p>
+<p>L&#x27;ENFANT.--Qu&#x27;est-ce que c&#x27;est qu&#x27;un traître?</p>
+<p>LADY MACDUFF.--C&#x27;est un homme qui jure et qui ment.</p>
+<p>L&#x27;ENFANT.--Et tous ceux qui font cela sont-ils des traîtres?</p>
+<p>LADY MACDUFF.--Oui, tout homme qui fait cela est un traître, et mérite d&#x27;être pendu.</p>
+<p>L&#x27;ENFANT.--Et doivent-ils être tous pendus, ceux, qui jurent et qui mentent?</p>
+<p>LADY MACDUFF.--Oui, tous.</p>
+<p>L&#x27;ENFANT.--Et qui est-ce qui doit les pendre?</p>
+<p>LADY MACDUFF.--Les honnêtes gens.</p>
+<p>L&#x27;ENFANT.--Alors les menteurs et les jureurs sont des imbéciles, car il y a assez de menteurs et de jureurs pour battre les honnêtes gens et pour les pendre.</p>
+<p>LADY MACDUFF.--Que Dieu te garde, pauvre petit singe! Mais comment feras-tu pour avoir un père?</p>
+<p>L&#x27;ENFANT.--S&#x27;il était mort, vous le pleureriez, et si vous ne pleuriez pas, ce serait un bon signe que j&#x27;aurais bientôt un nouveau père.</p>
+<p>LADY MACDUFF.--Pauvre petit causeur, comme tu babilles!</p>
+<p>(Arrive un messager.)</p>
+<p>LE MESSAGER.--Dieu vous garde, belle dame! je ne vous suis pas connu, quoique je sois parfaitement instruit du rang que vous tenez. Je crains que quelque danger ne soit prêt à fondre sur vous. Si vous voulez suivre l&#x27;avis d&#x27;un homme simple, qu&#x27;on ne vous trouve pas en ce lieu. Fuyez d&#x27;ici avec vos petits enfants. Je suis trop barbare, je le sens, de vous épouvanter ainsi: vous faire plus de mal encore serait une horrible cruauté qui est trop près de vous atteindre. Que le ciel vous protège! Je n&#x27;ose m&#x27;arrêter plus longtemps.</p>
+<p>(Il sort.)</p>
+<p>LADY MACDUFF.--Où pourrai-je fuir? Je n&#x27;ai point fait de mal: mais je me rappelle maintenant que je suis dans ce monde terrestre, où faire le mal est souvent regardé comme louable, et faire le bien passe quelquefois pour une dangereuse folie. Pourquoi donc, hélas! présenterais-je cette défense de femme, et dirais-je: Je n&#x27;ai point fait de mal?--(Entrent des assassins.) Quelles sont ces figures?</p>
+<p>UN ASSASSIN.--Où est votre mari?</p>
+<p>LADY MACDUFF.--Pas dans un lieu, j&#x27;espère, assez maudit du ciel pour qu&#x27;il puisse être trouvé par un homme tel que toi.</p>
+<p>L&#x27;ASSASSIN.--C&#x27;est un traître.</p>
+<p>L&#x27;ENFANT.--Tu en as menti, vilain, aux poils roux!</p>
+<p>L&#x27;ASSASSIN, poignardant l&#x27;enfant.--Comment, toi qui n&#x27;es pas sorti de ta coquille, petit frai de traître!</p>
+<p>L&#x27;ENFANT.--Il m&#x27;a tué, ma mère: sauvez-vous, je vous en prie.</p>
+<p>(Il meurt. Lady Macduff sort en criant au meurtre, et poursuivie par les assassins.)</p>
+<p>[Note 35:</p>
+<p>When we hold rumour From what we fear, yet know not what we fear. But float upon a wild and violent sea, Each way and move.</p>
+<p>Les commentateurs me paraissent n&#x27;avoir pas compris ce passage; ils veulent entendre hold dans le sens de keep, tenir, tenir pour certain, et je crois qu&#x27;il doit être pris pour celui catch, prendre, recevoir, comme prendre le mal, catch the infection. Ainsi le sens sera: nous recevons le bruit de ce que nous craignons sans savoir ce que nous craignons. Il a fallu rendre l&#x27;expression de cette pensée un peu moins littérale pour la rendre plus claire, ainsi qu&#x27;il arrive souvent en traduisant Shakspeare; mais elle me parait d&#x27;ailleurs entièrement d&#x27;accord avec la phrase suivante, encore imparfaitement comprise par les commentateurs, qui ne conçoivent pas qu&#x27;au mot float Shakspeare ait ajouté and move, «parce que, disent-ils, si nous flottons de tous côtés, il n&#x27;est pas nécessaire de nous apprendre que nous nous mouvons (move).» Il est cependant certain qu&#x27;arrêtés par un bruit vague dont nous ne connaissons pas la source, et ne sachant pas de quel côté nous devons agir, nous ajoutons à l&#x27;incertitude des événements celle de nos propres volontés: c&#x27;est ce que Shakspeare a dû et voulu exprimer.]</p>
+<h2 class="chapter" id="c22">Scène III</h2>
+<p>En Angleterre.--Un appartement dans le palais du roi.</p>
+<p>Entrent MALCOLM ET MACDUFF.</p>
+<p>MALCOLM.--Cherchons quelque sombre solitude où nous puissions vider de larmes nos tristes coeurs.</p>
+<p>MACDUFF.--Empoignons plutôt l&#x27;épée meurtrière, et, en hommes de courage, marchons à grands pas vers notre patrie abattue[36]. Chaque matin se lamentent de nouvelles veuves, de nouveaux orphelins pleurent; chaque jour de nouveaux accents de douleur vont frapper la face du ciel, qui en retentit, comme s&#x27;il était sensible aux maux de l&#x27;Écosse, et qu&#x27;il répondit par des cris aussi lamentables.</p>
+<p>MALCOLM.--Je pleure sur ce que je crois; je crois ce que j&#x27;ai appris, et ce que je puis redresser sera redressé dès que je trouverai l&#x27;occasion amie. Il peut se faire que ce que vous m&#x27;avez raconté soit vrai: cependant ce tyran, dont le nom seul blesse notre langue, passa autrefois pour un honnête homme; vous l&#x27;avez aimé chèrement; il ne vous a point encore fait de mal. Je suis jeune, mais vous pourriez vous faire un mérite près de lui à mes dépens; et c&#x27;est sagesse que d&#x27;offrir un pauvre, faible et innocent agneau pour apaiser un dieu irrité.</p>
+<p>MACDUFF.--Je ne suis pas traître.</p>
+<p>MALCOLM.--Mais Macbeth l&#x27;est. Un bon et vertueux naturel peut plier sous la main d&#x27;un monarque. Je vous demande pardon; mes idées ne changent point ce que vous êtes en effet: les anges sont demeurés brillants, quoique le plus brillant soit tombé; et quand tout ce qu&#x27;il y a d&#x27;odieux se présenterait sous les traits de la vertu, la vertu n&#x27;en conserverait pas moins son aspect ordinaire.</p>
+<p>MACDUFF.--J&#x27;ai perdu mes espérances.</p>
+<p>MALCOLM.--Peut-être là même où j&#x27;ai trouvé des doutes. Pourquoi avez-vous si brusquement quitté, sans prendre congé d&#x27;eux, votre femme et vos enfants, ces précieux motifs de nos actions, ces puissants liens d&#x27;amour?--Je vous prie, ne voyez pas dans mes soupçons des affronts pour vous, mais seulement des sûretés pour moi: vous pouvez être parfaitement honnête, quoique je puisse penser.</p>
+<p>MACDUFF.--Péris, péris, pauvre patrie! Tyrannie puissante, affermis-toi sur tes fondements, car la vertu n&#x27;ose te réprimer; et toi, subis tes injures, c&#x27;est maintenant à juste titre[37]. Adieu, prince: je ne voudrais pas être le misérable que tu soupçonnes pour tout l&#x27;espace qui est sous la main du tyran, avec le riche Orient par-dessus le marché.</p>
+<p>MALCOLM.--Ne vous offensez point: ce que je dis ne vient point d&#x27;une défiance décidée contre vous. Je crois que notre patrie succombe sous le joug, elle pleure, son sang coule, et chaque jour de plus ajoute une plaie à ses blessures; je crois aussi que plus d&#x27;une main se lèverait en faveur de mes droits, et je reçois ici de la généreuse Angleterre l&#x27;offre d&#x27;un million de bons soldats: mais après tout cela, quand j&#x27;aurai foulé aux pieds la tête du tyran, ou que je l&#x27;aurai placée sur la pointe de mon épée, ma pauvre patrie se trouvera en proie à plus de vices encore qu&#x27;auparavant; elle souffrira encore, et de plus de manières, de celui qui succédera.</p>
+<p>MACDUFF.--Et qui sera-ce donc?</p>
+<p>MALCOLM.--C&#x27;est moi-même dont je veux parler; je sens en moi toutes les sortes de vices tellement enracinés, que, quand ils viendront à s&#x27;épanouir, le noir Macbeth paraîtra pur comme la neige; et le pauvre État le tiendra pour un agneau en comparaison des maux sans bornes qui viendraient de moi.</p>
+<p>MACDUFF.--Jamais, aux légions de l&#x27;horrible enfer, il ne peut se joindre un démon assez maudit en méchanceté pour surpasser Macbeth.</p>
+<p>MALCOLM.--J&#x27;avoue qu&#x27;il est sanguinaire, esclave de la luxure, avare, faux, trompeur, capricieux, violent, et infecté de tous les vices qui ont un nom; mais il n&#x27;y a point de limites, il n&#x27;y en a aucune à mes ardeurs de volupté: vos femmes, vos filles, vos matrones et vos servantes, ne pourraient combler le gouffre de mon incontinence, et mes désirs renverseraient tous les obstacles que la vertu opposerait à ma volonté. Macbeth vaut mieux qu&#x27;un pareil roi,</p>
+<p>MACDUFF.--Une intempérance sans fin est une tyrannie de la nature; elle a plus d&#x27;une fois avant le temps rendu vacant un trône fortuné, et causé la chute de beaucoup de rois. Mais ne craignez point pour cela de vous charger de la couronne qui vous appartient. Vous pouvez abandonner à votre passion une vaste moisson de voluptés, et paraître encore tempérant, tant il vous sera aisé de fasciner le public. Nous avons assez de dames de bonne volonté, et vous ne pouvez renfermer en vous-même un vautour capable de dévorer toutes celles qui viendront s&#x27;offrir d&#x27;elles-mêmes à l&#x27;homme revêtu du pouvoir, aussitôt quelles auront découvert son inclination.</p>
+<p>MALCOLM.--Outre cela, au nombre de mes penchants désordonnés s&#x27;élève en moi une avarice si insatiable, que, si j&#x27;étais roi, je ferais périr les nobles pour avoir leurs terres; je convoiterais les joyaux de l&#x27;un, le château d&#x27;un autre; et plus j&#x27;aurais, plus cet assaisonnement augmenterait mon appétit, en sorte que je forgerais d&#x27;injustes accusations contre des hommes honnêtes et fidèles, et je les détruirais par avidité de richesses.</p>
+<p>MACDUFF.--L&#x27;avarice pénètre plus avant et jette des racines plus pernicieuses que l&#x27;incontinence, fruit de l&#x27;été[38]; elle a été le glaive qui a égorgé nos rois. Cependant ne craignez rien: l&#x27;Écosse contient des richesses à foison pour assouvir vos désirs, même de votre propre bien; tous ces vices sont tolérables quand ils sont balancés par des vertus.</p>
+<p>MALCOLM.--Mais je n&#x27;en ai point: tout ce qui fait l&#x27;ornement des rois, justice, franchise, tempérance, fermeté, libéralité, persévérance, clémence, modestie, piété, patience, courage, bravoure, tout cela n&#x27;a pour moi aucun attrait; mais j&#x27;abonde en vices de toutes sortes, chacun en particulier reproduit sous différentes formes. Oui! si j&#x27;en avais le pouvoir, je ferais couler dans l&#x27;enfer le doux lait de la concorde, je bouleverserais la paix universelle, et je porterais le désordre dans tout ce qui est uni sur la terre.</p>
+<p>MACDUFF.--O Écosse! Écosse!</p>
+<p>MALCOLM.--Si un pareil homme est fait pour gouverner, parlez; je suis tel que je vous l&#x27;ai dit.</p>
+<p>MACDUFF.--Fait pour gouverner! non, pas même pour vivre! O nation misérable! sous le joug d&#x27;un tyran usurpateur, armé d&#x27;un sceptre ensanglanté, quand reverras-tu des jours prospères, puisque le rejeton légitime de ton trône demeure réprouvé par son propre arrêt et blasphème contre sa race? Ton père était un saint roi; la reine qui t&#x27;a porté, plus souvent à genoux que sur ses pieds, mourait chaque jour à elle-même. Adieu: ces vices dont tu t&#x27;accuses toi-même m&#x27;ont banni d&#x27;Écosse. O mon coeur, ta dernière espérance s&#x27;évanouit ici!</p>
+<p>MALCOLM.--Macduff, ce noble transport, fils de l&#x27;intégrité, a effacé de mon âme tous ses noirs soupçons, m&#x27;a convaincu de ton honneur et de ta bonne foi. Le diabolique Macbeth a déjà tenté, par plusieurs artifices semblables, de m&#x27;attirer sous sa puissance; et une modeste prudence me défend contre une crédulité trop précipitée. Mais que le Dieu d&#x27;en haut traite seul entre toi et moi! De ce moment je m&#x27;abandonne à tes conseils; je rétracte les calomnies que j&#x27;ai proférées contre moi-même, et j&#x27;abjure ici tous les reproches, toutes les imputations dont je me suis chargé, comme étrangers à mon caractère. Je suis encore inconnu à une femme; jamais je ne fus parjure; à peine ai-je convoité la possession de mon propre bien; jamais je n&#x27;ai violé ma foi; je ne trahirais pas le diable à son compère; et la vérité m&#x27;est aussi chère que la vie. Mon premier mensonge est celui que je viens de faire contre moi. Ce que je suis en en effet, c&#x27;est à toi et à ma pauvre patrie à en disposer, et déjà, avant ton arrivée en ce lieu, le vieux Siward, à la tête de dix mille vaillants guerriers réunis sur un même point, allait se mettre en marche pour l&#x27;Écosse. Maintenant nous irons ensemble; et puisse le succès être aussi bon que la querelle que nous soutenons!--Pourquoi gardes-tu le silence?</p>
+<p>MACDUFF.--Tant d&#x27;idées agréables et tant d&#x27;idées fâcheuses à la fois ne sont pas aisées à concilier.</p>
+<p>(Entre un médecin.)</p>
+<p>MALCOLM, à Macduff.--Nous en reparlerons.--Je vous prie, le roi va-t-il paraître?</p>
+<p>LE MÉDECIN,--Oui, seigneur; il y a là une foule de malheureux qui attendent de lui leur guérison. Leur maladie triomphe des plus puissants moyens de l&#x27;art; mais dès qu&#x27;il les touche, telle est la vertu sainte dont le ciel a doué sa main, qu&#x27;ils guérissent à l&#x27;instant.</p>
+<p>MALCOLM.--Je vous remercie, docteur.</p>
+<p>(Le médecin sort.)</p>
+<p>MACDUFF.--Quelle est la maladie dont il veut parler?</p>
+<p>MALCOLM.--On l&#x27;appelle le mal du roi[39]: c&#x27;est une oeuvre miraculeuse de ce bon prince, et dont j&#x27;ai été moi-même souvent témoin depuis mon séjour dans cette cour. Comment il se fait exaucer du ciel, lui seul le sait; mais le fait est qu&#x27;il guérit des gens affligés d&#x27;un mal cruel, tout bouffis et couverts d&#x27;ulcères, pitoyables à voir, et désespoir de la médecine, en leur suspendant au cou une médaille d&#x27;or qu&#x27;il accompagne de saintes prières; et l&#x27;on dit qu&#x27;il transmettra aux rois ses successeurs ce bienfaisant pouvoir de guérir. Outre cette vertu singulière, il a encore reçu du ciel le don de prophétie; et les nombreuses bénédictions qui planent sur son trône annoncent assez qu&#x27;il est rempli de la grâce de Dieu.</p>
+<p>(Entre Rosse.)</p>
+<p>MACDUFF.--Voyez: qui vient à nous?</p>
+<p>MALCOLM.--Un de mes compatriotes, mais je ne le reconnais pas encore.</p>
+<p>MACDUFF, à Rosse.--Mon bon et cher cousin, soyez le bienvenu.</p>
+<p>MALCOLM.--Je le reconnais à présent. Dieu de bonté, écarte promptement les causes qui nous rendent ainsi étrangers les uns aux autres.</p>
+<p>ROSSE.--Amen, seigneur.</p>
+<p>MACDUFF.--L&#x27;Écosse est-elle toujours à sa place?</p>
+<p>ROSSE.--Hélas! pauvre pays qui n&#x27;ose presque plus se reconnaître! On ne peut l&#x27;appeler notre mère, mais notre tombeau, cette patrie où l&#x27;on n&#x27;a jamais vu sourire que ce qui est privé d&#x27;intelligence; où l&#x27;air est déchiré de soupirs, de gémissements, de cris douloureux qu&#x27;on ne remarque plus; où la violence de la douleur est regardée comme une folie ordinaire[40]; où la cloche mortuaire sonne sans qu&#x27;à peine on demande pour qui; où la vie des hommes de bien expire avant que soit séchée la fleur qu&#x27;ils portent à leur chapeau, ou même avant qu&#x27;elle commence à se flétrir.</p>
+<p>MACDUFF.--O récit trop exact, et cependant trop vrai!</p>
+<p>MALCOLM.--Quel est le malheur le plus nouveau?</p>
+<p>ROSSE.--Le malheur qui date d&#x27;une heure fait siffler celui qui le raconte; chaque minute en enfante un nouveau.</p>
+<p>MACDUFF.--Comment se porte ma femme?</p>
+<p>ROSSE.--Mais, bien.</p>
+<p>MACDUFF.--Et tous mes enfants?</p>
+<p>ROSSE.--Bien aussi.</p>
+<p>MACDUFF.--Et le tyran n&#x27;a pas attenté à leur paix?</p>
+<p>ROSSE.--Non, ils étaient bien en paix quand je les ai quittés.</p>
+<p>MACDUFF.--Ne soyez point avare de paroles: comment cela va-t-il?</p>
+<p>ROSSE.--Lorsque je suis arrivé ici pour apporter les nouvelles qui me pèsent si cruellement, le bruit courait que plusieurs hommes de coeur s&#x27;étaient mis en campagne; et, d&#x27;après ce que j&#x27;ai vu des forces que le tyran à sur pied en ce moment, je suis disposé à le croire. L&#x27;heure est venue de nous secourir; un de vos regards en Écosse créerait des soldats, et ferait combattre jusqu&#x27;aux femmes pour s&#x27;affranchir de tant d&#x27;horribles maux.</p>
+<p>MALCOLM.--Qu&#x27;ils se consolent, nous allons en Écosse. La généreuse Angleterre nous a prêté le brave Siward et dix mille hommes: la chrétienté ne fournit pas un plus ancien, ni un meilleur soldat.</p>
+<p>ROSSE.--Plût au ciel que je pusse répondre à cette consolation en vous rendant la pareille! mais j&#x27;ai à prononcer des paroles qu&#x27;il faudrait hurler dans l&#x27;air solitaire, là où l&#x27;ouïe ne pourrait les saisir.</p>
+<p>MACDUFF.--Qui intéressent-elles? Est-ce la cause générale? ou bien est-ce un patrimoine de douleur qu&#x27;un seul coeur puisse réclamer comme sien?</p>
+<p>ROSSE.--Il n&#x27;est point d&#x27;âme honnête qui ne partage cette douleur, bien que la principale part n&#x27;en appartienne qu&#x27;à vous.</p>
+<p>MACDUFF.--Si elle m&#x27;appartient, ne me la gardez pas plus longtemps; que j&#x27;en sois mis en possession sur-le-champ.</p>
+<p>ROSSE.--Que vos oreilles ne prennent pas pour jamais en aversion ma voix, qui va les frapper des sons les plus accablants qu&#x27;elles aient jamais entendus.</p>
+<p>MACDUFF.--Ouf! je devine!</p>
+<p>ROSSE.--Votre château a été surpris, votre femme et vos petits enfants inhumainement massacrés. Vous dire la manière, ce serait à la curée de ces daims massacrés vouloir ajouter encore votre mort.</p>
+<p>MALCOLM.--Dieu de miséricorde!--Allons, homme, n&#x27;enfoncez point votre chapeau sur vos yeux; donnez des expressions à la douleur: le chagrin qui ne parle pas murmure en secret au coeur surchargé et lui ordonne de se rompre,</p>
+<p>MACDUFF.--Mes enfants aussi?</p>
+<p>ROSSE.--Femmes, enfants, serviteurs, tout ce qu&#x27;ils ont pu trouver.</p>
+<p>MACDUFF.--Et fallait-il que je n&#x27;y fusse pas! Ma femme tuée aussi!</p>
+<p>ROSSE.--Je vous l&#x27;ai dit.</p>
+<p>MALCOLM.--Prenez courage: cherchons dans une grande vengeance des remèdes propres à guérir cette mortelle douleur.</p>
+<p>MACDUFF.--Il n&#x27;a point d&#x27;enfants[41]!--Tous mes jolis enfants, avez-vous dit? tous? Oh! milan d&#x27;enfer! Tous? quoi! tous mes pauvres petits poulets et leur mère, tous enlevés d&#x27;un seul horrible coup?</p>
+<p>MALCOLM.--Luttez en homme contre le malheur.</p>
+<p>MACDUFF.--Je le ferai; mais il faut bien aussi que je le sente en homme; il faut bien aussi que je me rappelle qu&#x27;il a existé dans le monde des êtres qui étaient pour moi ce qu&#x27;il y avait de plus précieux. Le ciel l&#x27;a vu et n&#x27;a pas pris leur défense! Coupable Macduff! ils ont tous été frappés pour toi! Misérable que je suis! ce n&#x27;est pas pour leurs fautes, mais pour les miennes, que le meurtre a fondu sur eux. Que le ciel maintenant leur donne la paix!</p>
+<p>MALCOLM.--Que ceci aiguise votre épée; que votre douleur se change en colère, qu&#x27;elle n&#x27;affaiblisse pas votre coeur, qu&#x27;elle l&#x27;enrage.</p>
+<p>MACDUFF.--Oh! je pourrais jouer le rôle d&#x27;une femme et celui d&#x27;un fanfaron avec ma langue; mais, ô ciel propice, abrège tout délai; mets-nous face à face ce démon de l&#x27;Écosse et moi; place-le à la longueur de mon épée, s&#x27;il m&#x27;échappe, que le ciel lui pardonne aussi!</p>
+<p>MALCOLM.--Ces accents sont d&#x27;un homme. Allons trouver le roi; notre armée est prête; nous n&#x27;avons plus qu&#x27;à prendre congé. Macbeth est mûr pour tomber, et les puissances d&#x27;en haut ont saisi la faucille.--Acceptez tout ce qui peut vous consoler. C&#x27;est une longue nuit que celle qui n&#x27;arrive point au jour.</p>
+<p>(Ils sortent.)</p>
+<p>[Note 36:</p>
+<p>And like goodmen Bestride our down fall&#x27;n birthdom.</p>
+<p>Les commentateurs ont voulu expliquer pur birth right, droit de naissance, le mot de birthdom, qui signifie, je crois, pays natal. Dans cette supposition, ils ont expliqué le mot bestride par être à cheval, à la manière d&#x27;un homme qui met entre ses jambes, pour le défendre, l&#x27;objet qu&#x27;on veut lui enlever. Cette explication me paraît être forcée et nullement en rapport avec le reste du dialogue.--Malcolm parle de se retirer dans un coin pour pleurer; Macduff veut au contraire qu&#x27;il se rende dans son pays, et part de là pour lui décrire les maux de ce pays: cela est naturel.]</p>
+<p>[Note 37:</p>
+<p>Wear thou thy wrongs, Thy title is affeer&#x27;d.</p>
+<p>Affeer&#x27;d est un terme de loi qui paraît signifier confirmer. Je pense, malgré l&#x27;opinion de la plupart des commentateurs, que Macduff s&#x27;adresse ici à Malcolm, et lui dit, pour lui reprocher sa lâcheté: «Subis tes injures, ton titre est consacré, tu y as droit.»]</p>
+<p>[Note 38: Summer seeding lust.]</p>
+<p>[Note 39: Les écrouelles.]</p>
+<p>[Note 40: Modern ecstasy.]</p>
+<p>[Note 41: He has no children! On est demeuré dans l&#x27;incertitude sur le sens de cette exclamation: quelques personnes pensent qu&#x27;elle s&#x27;adresse à Malcolm, dont les impuissantes consolations ne peuvent venir que d&#x27;un homme qui n&#x27;a pu connaître une pareille douleur; et il est certain qu&#x27;à l&#x27;appui de cette opinion vient ce qu&#x27;a dit lady Macbeth, dans le premier acte, du bonheur qu&#x27;elle a senti à allaiter son enfant; de plus, les chroniques d&#x27;Écosse parlent d&#x27;un fils de Macbeth, nommé Lulah, qui fut, après la mort de son père, couronné roi par quelques-uns de ses partisans, et fut ensuite tué quatre mois environ après la bataille de Dunsinane. Mais, d&#x27;un autre côté, il est clair que Macduff répond à Malcolm, et qu&#x27;il repousse ses consolations par l&#x27;impossibilité où il est de se venger sur un homme qui n&#x27;a pas d&#x27;enfants. Il faut remarquer d&#x27;ailleurs que rien dans la pièce n&#x27;a indiqué que Macbeth eût des enfants vivants, et que le désespoir avec lequel Macbeth apprend que des enfants de Banquo régneront après lui, ne parait pas porter sur l&#x27;idée de voir privé de la couronne un enfant déjà existant. Il ne dit point: not my son, mais no son of mine succeeding; enfin, ce sens exprime un sentiment beaucoup plus profond, et c&#x27;est une raison pour croire que c&#x27;est celui de Shakspeare.]</p>
+<h3 class="sub">Fin du quatrième acte — Acte cinquième</h3>
+<h2 class="chapter" id="c23">Scène I</h2>
+<p>A Dunsinane.--Un appartement du château.</p>
+<p>Entrent UN MÉDECIN ET UNE DAME suivante de la reine.</p>
+<p>LE MÉDECIN.--Voilà deux nuits que je veille avec vous, et rien ne m&#x27;a confirmé la vérité de votre rapport. Quand lui est-il arrivé la dernière fois de se promener ainsi?</p>
+<p>LA DAME SUIVANTE.--C&#x27;est depuis que Sa Majesté est entrée en campagne: je l&#x27;ai vue se lever de son lit, jeter sur elle sa robe de nuit, ouvrir son cabinet, prendre du papier, le plier, écrire dessus, le lire, le cacheter ensuite, puis retourner se mettre au lit; et pendant tout ce temps-là demeurer dans le plus profond sommeil.</p>
+<p>LE MÉDECIN.--Il faut qu&#x27;il existe un grand désordre dans les fonctions naturelles, pour qu&#x27;on puisse à la fois jouir des bienfaits du sommeil et agir comme si l&#x27;on était éveillé. Dites-moi, dans cette agitation endormie, outre sa promenade et les autres actions dont vous parlez, que lui avez-vous jamais entendu dire?</p>
+<p>LA DAME SUIVANTE.--Ce que je ne veux pas répéter après elle, monsieur.</p>
+<p>LE MÉDECIN.--Vous pouvez me le dire à moi, et cela est même très-nécessaire.</p>
+<p>LA DAME SUIVANTE.--Ni à vous, ni à personne, puisque je n&#x27;ai aucun témoin pour confirmer mon récit. (Entre lady Macbeth, avec un flambeau.) Tenez, la voilà qui vient absolument comme à l&#x27;ordinaire; et, sur ma vie, elle est profondément endormie. Observez-la; demeurez à l&#x27;écart.</p>
+<p>LE MÉDECIN.--Comment a-t-elle eu cette lumière?</p>
+<p>LA DAME SUIVANTE.--Ah! elle était près d&#x27;elle: elle a toujours de la lumière près d&#x27;elle; c&#x27;est son ordre.</p>
+<p>LE MÉDECIN.--Vous voyez que ses yeux sont ouverts.</p>
+<p>LA DAME SUIVANTE.--Oui, mais ils sont fermés à toute impression.</p>
+<p>LE MÉDECIN.--Que fait-elle donc là? Voyez comme elle se frotte les mains.</p>
+<p>LA DAME SUIVANTE.--C&#x27;est un geste qui lui est ordinaire: elle a toujours l&#x27;air de se laver les mains; je l&#x27;ai vue le faire sans relâche un quart d&#x27;heure de suite.</p>
+<p>LADY MACBETH.--Il y a toujours une tache.</p>
+<p>LE MÉDECIN.--Écoutez; elle parle. Je veux écrire ce qu&#x27;elle dira, afin d&#x27;en conserver plus nettement le souvenir.</p>
+<p>LADY MACBETH.--Va-t&#x27;en, maudite tache...; va-t&#x27;en, te dis-je.--Une, deux heures.--Allons, il est temps de le faire.--L&#x27;enfer est sombre!--Fi! mon seigneur, fi! un soldat avoir peur! Qu&#x27;avons-nous besoin de nous inquiéter, qui le saura, quand personne ne pourra demander de comptes à notre puissance?--Mais qui aurait cru que ce vieillard eut encore tant de sang dans le corps?</p>
+<p>LE MÉDECIN. à la dame suivante.--Remarquez-vous cela?</p>
+<p>LADY MACBETH.--Le thane de Fife avait une femme: où est-elle maintenant?--Quoi! ces mains ne seront-elles jamais propres?--Plus de cela, mon seigneur, plus de cela: vous gâtez tout par ces tressaillements.</p>
+<p>LE MÉDECIN.--Allez-vous-en, allez-vous-en; vous avez appris ce que vous ne deviez pas savoir.</p>
+<p>LA DAME SUIVANTE.--Elle a dit ce qu&#x27;elle ne devait pas dire, j&#x27;en suis sûre. Dieu sait tout ce qu&#x27;elle a su!</p>
+<p>LADY MACBETH.--Il y a toujours là une odeur de sang. Tous les parfums de l&#x27;Arabie ne peuvent purifier cette petite main!--Oh! oh! oh!</p>
+<p>LE MÉDECIN.--Quel profond soupir! Le coeur est cruellement chargé.</p>
+<p>LA DAME SUIVANTE.--Je ne voudrais pas avoir un pareil coeur dans mon sein, pour les grandeurs de tout ce corps.</p>
+<p>LE MÉDECIN.--Bien, bien, bien.</p>
+<p>LA DAME SUIVANTE.--Je prie Dieu qu&#x27;il en soit ainsi, docteur.</p>
+<p>LE MÉDECIN.--Cette maladie est au-dessus de mon art: cependant j&#x27;ai connu des personnes qui se promenaient durant leur sommeil, et qui sont mortes saintement dans leur lit.</p>
+<p>LADY MACBETH.--Lavez vos mains, mettez votre robe de nuit, ne soyez pas si pâle. Je vous le répète, Banquo est enterré, il ne peut pas sortir de son tombeau.</p>
+<p>LE MÉDECIN.--Et cela encore?</p>
+<p>LADY MACBETH.--Au lit, au lit: on frappe à la porte; venez, venez, venez, donnez-moi votre main. Ce qui est fait ne peut se défaire. Au lit, au lit, au lit!</p>
+<p>(Elle sort.)</p>
+<p>LE MÉDECIN.--Va-t-elle retourner à son lit?</p>
+<p>LA DAME SUIVANTE.--Tout droit.</p>
+<p>LE MÉDECIN.--Il a été murmuré d&#x27;horribles secrets.--Des actions contre nature produisent des désordres contre nature. Le sourd oreiller recevra les confidences des consciences souillées.--Elle a plus besoin d&#x27;un prêtre que d&#x27;un médecin. Dieu! Dieu! pardonne-nous à tous.--Suivez-la; écartez d&#x27;elle tout ce qui pourrait la déranger, et ayez toujours les yeux sur elle; je pense, mais je n&#x27;ose parler.</p>
+<p>LA DAME SUIVANTE.--Bonne nuit, cher docteur.</p>
+<p>(Ils sortent.)</p>
+<h2 class="chapter" id="c24">Scène II</h2>
+<p>Dans la campagne, près de Dunsinane.</p>
+<p>Entrent avec des enseignes et des tambours MENTEITH, CAITHNESS, ANGUS, LENOX, des soldats.</p>
+<p>MENTEITH.--L&#x27;armée anglaise approche: elle est conduite par Malcolm, son oncle Siward et le brave Macduff. La vengeance brûle dans leur coeur: une cause si chère exciterait l&#x27;homme le plus mort au monde à se lancer dans le sang et les terreurs de la guerre.</p>
+<p>ANGUS.--Nous ferons bien d&#x27;aller les joindre près de la forêt de Birnam; c&#x27;est par cette route qu&#x27;ils arrivent.</p>
+<p>CAITHNESS.--Qui sait si Donalbain est avec son frère?</p>
+<p>LENOX.--Certainement non, seigneur, il n&#x27;y est pas. J&#x27;ai une liste de toute cette noblesse: le fils de Siward en est, ainsi qu&#x27;un grand nombre de jeunes gens encore sans barbe, et qui vont pour la première fois faire acte de virilité.</p>
+<p>MENTEITH.--Que fait le tyran?</p>
+<p>CAITHNESS.--Il fait fortifier solidement le grand château de Dunsinane. Quelques-uns disent qu&#x27;il est fou; d&#x27;autres, qui le haïssent moins, appellent cela une courageuse fureur. Mais ce qu&#x27;il y a de certain, c&#x27;est qu&#x27;il ne peut plus boucler la ceinture de la règle sur une cause aussi malade.</p>
+<p>ANGUS.--Il sent maintenant ses meurtres secrets blesser ses propres mains. A chaque instant de nouvelles révoltes viennent lui reprocher son manque de foi. Ceux qu&#x27;il commande n&#x27;obéissent qu&#x27;à l&#x27;autorité, et nullement à l&#x27;amour. Il commence à sentir la dignité souveraine l&#x27;embarrasser de son ampleur inutile, comme la robe d&#x27;un géant volée par un nain.</p>
+<p>MENTEITH.--Qui pourra blâmer ses sens troublés de reculer et de tressaillir, quand tout ce qui est en lui se reproche sa propre existence?</p>
+<p>CAITHNESS.--Marchons; allons porter notre obéissance à qui elle est légitimement due. Allons trouver le médecin de cet État malade; et versons avec lui jusqu&#x27;à la dernière goutte de notre sang pour le remède de notre patrie.</p>
+<p>LENOX.--Tout ce qu&#x27;il en faudra du moins pour arroser la fleur royale et noyer les mauvaises herbes. Dirigeons notre marche vers Birnam.</p>
+<h2 class="chapter" id="c25">Scène III</h2>
+<p>A Dunsinane.--Un appartement du château.</p>
+<p>Entrent MACBETH, LE MÉDECIN; suite.</p>
+<p>MACBETH, aux personnes de sa suite.--Ne m&#x27;apportez plus de rapports. Qu&#x27;ils s&#x27;envolent tous; jusqu&#x27;à ce que la forêt de Birnam se mette en mouvement vers Dunsinane, la crainte ne pourra m&#x27;atteindre. Qu&#x27;est-ce que ce petit Malcolm? n&#x27;est-il pas né d&#x27;une femme? Les esprits, qui connaissent tout l&#x27;enchaînement des causes de mort, me l&#x27;ont ainsi déclaré: «Ne crains rien, Macbeth; nul homme né d&#x27;une femme n&#x27;aura jamais de pouvoir sur toi.»--Fuyez donc, perfides thanes, et allez vous confondre avec ces épicuriens d&#x27;Anglais. L&#x27;esprit par lequel je gouverne et le coeur que je porte ne seront jamais accablés par l&#x27;inquiétude, ni ébranlés par la crainte--(Entre un domestique.) Que le diable te grille, vilain à face de crème! où as-tu pris cet air d&#x27;oison?</p>
+<p>LE DOMESTIQUE.--Seigneur, il y a dix mille...</p>
+<p>MACBETH.--Oisons, misérable!</p>
+<p>LE DOMESTIQUE.--Soldats, seigneur.</p>
+<p>MACBETH.--Va-t&#x27;en te piquer la figure pour cacher ta frayeur sous un peu de rouge, drôle, au foie blanc de lis[42]. Quoi, soldats! vous voilà de toutes les couleurs!--Mort de mon âme! Tes joues de linge apprennent la peur aux autres. Quoi, soldats! des visages de petit-lait!</p>
+<p>LE DOMESTIQUE.--L&#x27;armée anglaise, sauf votre bon plaisir...</p>
+<p>MACBETH.--Ôte-moi d&#x27;ici ta face.--Seyton!--Le coeur me manque quand je vois....--Seyton!--De ce coup je vais être mis à l&#x27;aise pour toujours, ou jeté à bas.--J&#x27;ai vécu assez longtemps, la course de ma vie est arrivée à l&#x27;automne, les feuilles jaunissent, et tout ce qui devrait accompagner la vieillesse, comme l&#x27;honneur, l&#x27;amour, les troupes d&#x27;amis, je ne dois pas y prétendre: à leur place ce sont des malédictions prononcées tout bas, mais du fond de l&#x27;âme; des hommages de bouche, vain souffle que le pauvre coeur voudrait refuser et n&#x27;ose.--Seyton!</p>
+<p>(Entre Seyton.)</p>
+<p>SEYTON.--Quel est votre bon plaisir?</p>
+<p>MACBETH.--Quelles nouvelles y a-t-il encore?</p>
+<p>SEYTON.--Tout ce qu&#x27;on a annoncé est confirmé, seigneur.</p>
+<p>MACBETH.--Je combattrai jusqu&#x27;à ce que ma chair tombe en pièces de dessus mes os.--Donne-moi mon armure.</p>
+<p>SEYTON.--Vous n&#x27;en avez pas encore besoin.</p>
+<p>MACBETH.--Je veux la mettre. Envoie un plus grand nombre de cavaliers parcourir le pays, qu&#x27;on pende ceux qui parlent de peur. Donne-moi mon armure.--Comment va votre malade, docteur?</p>
+<p>LE MÉDECIN.--Elle n&#x27;est pas si malade, seigneur, qu&#x27;obsédée de rêveries qui se pressent dans son imagination et l&#x27;empêchent de reposer.</p>
+<p>MACBETH.--Guéris-la de cela. Ne peux-tu donc soigner un esprit malade, arracher de la mémoire un chagrin enraciné, effacer les soucis gravés dans le cerveau, et, par la vertu de quelque bienfaisant antidote d&#x27;oubli, nettoyer le sein encombré de cette matière pernicieuse qui pèse sur le coeur?</p>
+<p>LE MÉDECIN.--C&#x27;est au malade en pareil cas à se soigner lui-même.</p>
+<p>MACBETH.--Jette donc la médecine aux chiens; je n&#x27;en veux pas.--Allons, mets-moi mon armure; donne-moi ma lance.--Seyton, envoie la cavalerie.--Docteur, les thanes m&#x27;abandonnent.--Allons, monsieur, dépêchez-vous.--Docteur, si tu pouvais, à l&#x27;inspection de l&#x27;eau de mon royaume[43], reconnaître sa maladie, et lui rendre par tes remèdes sa bonne santé passée, je t&#x27;applaudirais à tous les échos capables de répéter mes applaudissements.--(A Seyton.) Ôte-la, te dis-je.--Quelle sorte de rhubarbe, de séné, ou de toute autre drogue purgative, pourrais-tu nous donner pour nous évacuer de ces Anglais? En as-tu entendu parler?</p>
+<p>LE MÉDECIN.--Mon bon seigneur, les préparatifs de Votre Majesté nous en disent quelque chose.</p>
+<p>MACBETH, à Seyton.--Porte-la derrière moi.--Je n&#x27;ai à craindre ni mort, ni ruine, jusqu&#x27;à ce que la forêt de Birnam vienne à Dunsinane.</p>
+<p>(Il sort.)</p>
+<p>LE MÉDECIN.--Si j&#x27;étais sain et sauf hors de Dunsinane, il ne serait pas aisé de m&#x27;y faire rentrer pour de l&#x27;argent.</p>
+<p>(Il sort.)</p>
+<p>[Note 42: La blancheur du foie passait pour une preuve de lâcheté.]</p>
+<p>[Note 43:</p>
+<p>Cast The water of my land.</p>
+<p>Cast the water était alors l&#x27;expression anglaise pour examiner les urines.]</p>
+<h2 class="chapter" id="c26">Scène IV</h2>
+<p>Dans la campagne près de Dunsinane, et en vue d&#x27;une forêt.</p>
+<p>Entrent avec des enseignes et des tambours MALCOLM, LE VIEUX SIWARD ET SON FILS, MACDUFF, MENTEITH, CAITHNESS, ANGUS, LENOX, ROSSE; soldats en marche.</p>
+<p>MALCOLM.--Cousins, j&#x27;espère que le jour n&#x27;est pas loin où nous serons en sûreté chez nous.</p>
+<p>MENTEITH.--Nous n&#x27;en doutons nullement.</p>
+<p>SIWARD.--Quelle est cette forêt que je vois devant nous?</p>
+<p>MENTEITH.--La forêt de Birnam.</p>
+<p>MALCOLM.--Que chaque soldat coupe une branche d&#x27;arbre et la porte devant lui: par-là nous dissimulerons à l&#x27;ennemi notre force, et tromperons ceux qu&#x27;il enverra à la découverte.</p>
+<p>LES SOLDATS.--Vous allez être obéi.</p>
+<p>SIWARD.--Nous n&#x27;avons rien appris, si ce n&#x27;est que le tyran, plein de confiance, se tient ferme dans Dunsinane et nous y laissera mettre le siège.</p>
+<p>MALCOLM.--C&#x27;est sa principale ressource, car, partout où l&#x27;on en trouve l&#x27;occasion, les grands et les petits se révoltent contre lui. Il n&#x27;est servi que par des machines qui lui obéissent de force, tandis que leurs coeurs sont ailleurs.</p>
+<p>MACDUFF.--Nous jugerons justement après l&#x27;événement qui ne trompe point. Ne négligeons aucune des ressources de l&#x27;art militaire.</p>
+<p>SIWARD.--Le temps approche où nous apprendrons décidément ce que nous avons et ce que nous devons. Les idées spéculatives nous entretiennent de leurs espérances incertaines, mais les coups déterminent l&#x27;événement d&#x27;une manière positive: c&#x27;est à ce but qu&#x27;il faut que la guerre marche.</p>
+<p>(Ils se mettent en marche.)</p>
+<h2 class="chapter" id="c27">Scène V</h2>
+<p>A Dunsinane.--Intérieur du château.</p>
+<p>Entrent avec des enseignes et des tambours MACBETH, SEYTON, soldats.</p>
+<p>MACBETH.--Plantez notre étendard sur le rempart extérieur. On crie toujours: Ils viennent! Mais la force de notre château se moque d&#x27;un siége. Qu&#x27;ils restent là jusqu&#x27;à ce que la famine et les maladies les consument. S&#x27;ils n&#x27;étaient pas renforcés par ceux mêmes qui devraient combattre pour nous, nous aurions pu hardiment les aller rencontrer face à face, et les reconduire battant jusque chez eux.--Quel est ce bruit?</p>
+<p>(On entend derrière le théâtre des cris de femmes.)</p>
+<p>SEYTON.--Ce sont des cris de femmes, mon bon seigneur.</p>
+<p>MACBETH.--J&#x27;ai presque oublié l&#x27;impression de la crainte. Il fut un temps où mes sens se seraient glacés an bruit d&#x27;un cri nocturne; où tous mes cheveux, à un récit funeste, se dressaient et s&#x27;agitaient comme s&#x27;ils eussent été doués de vie: mais je me suis rassasié d&#x27;horreurs. Ce qu&#x27;il y a de plus sinistre, devenu familier à mes pensées meurtrières, ne saurait me surprendre.--D&#x27;où venaient ces cris?</p>
+<p>SEYTON.--La reine est morte, mon seigneur.</p>
+<p>MACBETH.--Elle aurait dû mourir plus tard: il serait arrivé un moment auquel aurait convenu une semblable parole. Demain, demain, demain, se glisse ainsi à petits pas d&#x27;un jour à l&#x27;autre, jusqu&#x27;à la dernière syllabe du temps inscrit; et tous nos hier n&#x27;ont travaillé, les imbéciles, qu&#x27;à nous abréger le chemin de la mort poudreuse[44]. Éteins-toi, éteins-toi, court flambeau: la vie n&#x27;est qu&#x27;une ombre qui marche; elle ressemble à un comédien qui se pavane et s&#x27;agite sur le théâtre une heure; après quoi il n&#x27;en est plus question; c&#x27;est un conte raconté par un idiot avec beaucoup de bruit et de chaleur, et qui ne signifie rien.--(Entre un messager.) Tu viens pour faire usage de ta langue: vite, ton histoire.</p>
+<p>LE MESSAGER.--Mon gracieux seigneur, je voudrais vous rapporter ce que je puis dire avoir vu; mais je ne sais comment m&#x27;y prendre.</p>
+<p>MACBETH.--C&#x27;est bon, parlez, mon ami.</p>
+<p>LE MESSAGER.--J&#x27;étais de garde sur la colline, et je regardais du côté de Birnam, quand tout à l&#x27;heure il m&#x27;a semblé que la forêt se mettait en mouvement.</p>
+<p>MACBETH le frappant.--Menteur! misérable!</p>
+<p>LE MESSAGER.--Que j&#x27;endure votre colère si cela n&#x27;est pas vrai; vous pouvez, à la distance de trois milles, la voir qui s&#x27;approche: c&#x27;est, je vous le dis, un bois mouvant.</p>
+<p>MACBETH.--Si ton rapport est faux, tu seras suspendu vivant au premier arbre, jusqu&#x27;à ce que la famine te dessèche. Si ton récit est véritable, peu m&#x27;importe que tu m&#x27;en fasses autant: je prends mon parti résolument, et commence à douter des équivoques du démon qui ment sous l&#x27;apparence de la vérité: Ne crains rien jusqu&#x27;à ce que la forêt de Birnam marche sur Dunsinane, et voilà maintenant une forêt qui s&#x27;avance vers Dunsinane.--Aux armes, aux armes, et sortons!--S&#x27;il a vu en effet ce qu&#x27;il assure, il ne faut plus songer à s&#x27;échapper d&#x27;ici, ni à s&#x27;y renfermer plus longtemps.--Je commence à être las du soleil, et à souhaiter que toute la machine de l&#x27;univers périsse en ce moment.--Sonnez la cloche d&#x27;alarme.--Vents, soufflez; viens, destruction; du moins nous mourrons le harnais sur le dos.</p>
+<p>(Ils sortent.)</p>
+<p>[Note 44:</p>
+<p>And all our yesterdays have lighted fools The way to dusty death.</p>
+<p>To light se prend quelquefois pour to lighten, alléger, et je crois que c&#x27;en est ici la signification. Les jours passés n&#x27;ont point éclairé, mais allégé ou abrégé le chemin que nous avons à faire jusqu&#x27;à la mort. Les commentateurs ne paraissent pas l&#x27;avoir entendu dans ce sens.]</p>
+<h2 class="chapter" id="c28">Scène vi</h2>
+<p>Toujours à Dunsinane.--Une plaine devant le château.</p>
+<p>Entrent avec des enseignes et des tambours MALCOLM, LE VIEUX SIWARD, MACDUFF, ROSSE, LENOX, ANGUS, CAITHNESS, MENTEITH, et leurs soldats portant des branches d&#x27;arbres,</p>
+<p>MALCOLM, aux soldats.--Nous voilà assez près: jetez ces rideaux de feuillage, et montrez-vous pour ce que vous êtes.--Vous, mon digne oncle, avec mon cousin votre noble fils, vous commanderez le premier corps de bataille. Le brave Macduff et nous, nous nous chargerons de tout ce qui restera à faire, suivant le plan arrêté entre nous.</p>
+<p>SIWARD.--Adieu; joignons seulement l&#x27;armée du tyran; et je veux être battu si nous n&#x27;en venons pas aux mains dès ce soir.</p>
+<p>MACDUFF.--Faites parler toutes nos trompettes: donnez toute leur voix à ces bruyants précurseurs du sang et de la mort.</p>
+<p>(Ils sortent. Bruit continuel d&#x27;alarmes.)</p>
+<h2 class="chapter" id="c29">Scène VII</h2>
+<p>Toujours à Dunsinane.--Une autre partie de la plaine.</p>
+<p>Entre MACBETH.</p>
+<p>MACBETH.--Ils m&#x27;ont attaché à un poteau; je ne peux fuir, mais, comme l&#x27;ours, il faut que je me batte à tout venant. Où est celui qui n&#x27;est pas né de femme? Voilà l&#x27;homme que je dois craindre, ou je n&#x27;en crains aucun.</p>
+<p>(Entre le jeune Siward.)</p>
+<p>LE JEUNE SIWARD.--Quel est ton nom?</p>
+<p>MACBETH.--Tu seras enrayé de l&#x27;entendre.</p>
+<p>LE JEUNE SIWARD.--Non, quand tu porterais un nom plus brûlant qu&#x27;aucun de ceux des enfers.</p>
+<p>MACBETH.--Mon nom est Macbeth.</p>
+<p>LE JEUNE SIWARD.--Le diable lui-même ne pourrait prononcer un nom plus odieux à mon oreille.</p>
+<p>MACBETH.--Non, ni plus redoutable.</p>
+<p>LE JEUNE SIWARD.--Tu mens, tyran abhorré: mon épée va prouver ton mensonge.</p>
+<p>(Ils combattent. Le jeune Siward est tué.)</p>
+<p>MACBETH.--Tu étais né de femme. Je me moque des épées; je me ris avec mépris de toute arme maniée par l&#x27;homme qui est né de femme.</p>
+<p>(Il sort.--Alarme.)</p>
+<p>(Rentre Macduff.)</p>
+<p>MACDUFF.--C&#x27;est de ce côté que le bruit s&#x27;est fait entendre. Tyran, montre-toi! Si tu es tué sans avoir reçu un coup de ma main, les ombres de ma femme et de mes enfants ne cesseront de m&#x27;obséder. Je ne puis frapper sur de misérables Kernes, dont les bras sont loués pour porter leur lance. Ou toi, Macbeth, ou le tranchant de mon épée, demeuré inutile, rentrera dans le fourreau sans avoir frappé un seul coup. Tu dois être par là; ce grand cliquetis que j&#x27;entends semble annoncer un guerrier du premier rang. Fais-le moi trouver, Fortune, et je ne te demande plus rien.</p>
+<p>(Il sort.--Alarme.)</p>
+<p>(Entrent Malcolm et le vieux Siward.)</p>
+<p>SIWARD.--Par ici, mon seigneur: le château s&#x27;est rendu sans efforts; les soldats du tyran se partagent entre nous et lui. Les nobles thanes font bravement leur devoir de guerriers. La journée s&#x27;est presque entièrement déclarée pour vous, et il reste peu de chose à faire.</p>
+<p>MALCOLM.--Nous avons rencontré des ennemis qui frappaient à côté de nous.</p>
+<p>SIWARD.--Entrons, seigneur, dans le château.</p>
+<p>(Ils sortent.--Alarme.)</p>
+<p>(Rentre Macbeth.)</p>
+<p>MACBETH.--Pourquoi ferais-je ici sottement le Romain, et mourrais-je sur ma propre épée? Tant que je verrai devant moi des vies, les blessures y seront bien mieux placées.</p>
+<p>(Rentre Macduff.)</p>
+<p>MACDUFF.--Retourne, chien d&#x27;enfer, retourne.</p>
+<p>MACBETH.--De tous les hommes tu es le seul que j&#x27;aie évité: va-t&#x27;en, mon âme est déjà trop chargée du sang des tiens.</p>
+<p>MACDUFF.--Je n&#x27;ai rien à te dire, ma réponse est dans mon épée, misérable, plus sanguinaire qu&#x27;aucune parole ne pourrait l&#x27;exprimer.</p>
+<p>(Ils combattent.)</p>
+<p>MACBETH.--Tu perds ta peine. Tu pourrais aussi facilement imprimer sur l&#x27;air subtil le tranchant de ton épée que faire couler mon sang. Que ton fer tombe sur des têtes vulnérables: ma vie est sous un charme qui ne peut céder à un homme né de femme.</p>
+<p>MACDUFF.--N&#x27;espère plus en ton charme, et que l&#x27;ange que tu as toujours servi t&#x27;apprenne que Macduff a été arraché avant le temps du sein de sa mère.</p>
+<p>MACBETH.--Maudite soit la langue qui a prononcé ces paroles, car elle a subjugué la meilleure partie de moi-même! et que désormais on n&#x27;ajoute plus de foi à ces démons artificieux qui se jouent de nous par des paroles à double sens, qui tiennent leurs promesses à notre oreille en manquant à notre espoir.--Je ne veux point combattre avec toi.</p>
+<p>MACDUFF.--Rends-toi donc, lâche, et vis pour être exposé aux regards de notre temps. Ton portrait, comme celui des monstres les plus rares, sera suspendu à un poteau; et au-dessous sera écrit: «C&#x27;est ici qu&#x27;on voit le tyran.»</p>
+<p>MACBETH.--Je ne me rendrai point pour baiser la poussière devant les pas du jeune Malcolm, et pour être poussé à bout par les malédictions de la populace. Quoique la forêt de Birnam ait marché vers Dunsinane, et que je t&#x27;aie en tête, toi qui n&#x27;es pas né de femme, je tenterai un dernier effort. Je couvre mon corps de mon bouclier de guerre. Attaque-moi, Macduff: damné soit celui de nous deux qui criera le premier: «Arrête, c&#x27;est assez.»</p>
+<p>(Ils sortent en combattant. Retraite.--Fanfares.)</p>
+<p>(Rentrent, avec des enseignes et des tambours, Malcolm, le vieux Siward, Rosse, Lenox, Angus, Caithness, Menteith, soldats.)</p>
+<p>MALCOLM.--Je voudrais que ceux de nos amis qui nous manquent fussent arrivés en sûreté.</p>
+<p>SIWARD.--Il en faudra perdre quelques-uns. Cependant, par ceux que je vois ici, nous n&#x27;aurons pas acheté cher une si grande journée.</p>
+<p>MALCOLM.--Macduff nous manque, ainsi que votre noble fils.</p>
+<p>ROSSE, à Siward.--Votre fils, monseigneur, a payé la dette d&#x27;un soldat: il n&#x27;a vécu que pour devenir un homme, et n&#x27;a pas eu plutôt prouvé sa valeur, par l&#x27;intrépidité de sa contenance dans le combat, qu&#x27;il est mort en homme.</p>
+<p>SIWARD.--Il est donc mort?</p>
+<p>ROSSE.--Oui, et on l&#x27;a emporté du champ de bataille. Votre affliction ne doit pas être mesurée sur son mérite, car alors elle n&#x27;aurait point de terme.</p>
+<p>SIWARD.--A-t-il reçu ses blessures par devant?</p>
+<p>ROSSE.--Oui, au front.</p>
+<p>SIWARD.--Eh bien donc! qu&#x27;il devienne le soldat de Dieu! Eussé-je autant de fils que j&#x27;aide cheveux, je ne leur souhaiterais pas une plus belle mort: ainsi le glas est sonné pour lui.</p>
+<p>MALCOLM.--Il mérite plus de regrets; c&#x27;est à moi à les lui rendre.</p>
+<p>SIWARD.--Il a tout ce qu&#x27;il mérite: on dit qu&#x27;il est bien mort, et qu&#x27;il a payé ce qu&#x27;il devait. Ainsi, que Dieu soit avec lui!--(Rentre Macduff, avec la tête de Macbeth à la main.) Voici de nouveaux sujets de joie.</p>
+<p>MACDUFF.--Salut, roi, car tu l&#x27;es. Vois, je porte la tête maudite de l&#x27;usurpateur. Notre pays est libre. Je te vois entouré des perles de ton royaume: tous répètent mon hommage dans le fond de leurs coeurs. Que leurs voix s&#x27;unissent tout haut à la mienne: «Salut, roi d&#x27;Écosse!»</p>
+<p>TOUS.--Roi d&#x27;Écosse, salut!</p>
+<p>(Fanfares.)</p>
+<p>MALCOLM.--Nous ne laisserons pas écouler beaucoup de temps avant de compter avec les services de votre zèle, et sans vous rendre ce que nous vous devons. Mes thanes et cousins, désormais soyez comtes, les premiers que jamais l&#x27;Écosse ait vus honorés de ce titre. Ce qui nous reste à faire, tous les actes nouveaux nécessités par la circonstance, comme le rappel de ceux de nos amis qui se sont exilés pour fuir les pièges de l&#x27;inquiète tyrannie; la recherche des cruels ministres de ce boucher défunt et de son infernale compagne qui, à ce qu&#x27;on croit, s&#x27;est détruite de ses propres mains; ces devoirs, et tous les autres qui nous regardent, avec le secours de la grâce, nous les exécuterons à mesure en temps et lieu. Je vous rends grâces à tous ensemble et à chacun en particulier, et je vous invite tous à venir nous voir couronner à Scone.</p>
+<p>(Tous sortent au bruit des fanfares.)</p>
+<h3 class="sub">Fin du cinquième et dernier acte</h3>
+<p class="colophon">Texte du domaine public. Édition numérique EbookClassics.</p>
+</body></html>

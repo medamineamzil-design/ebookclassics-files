@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="2400" viewBox="0 0 1600 2400">
+<rect width="1600" height="2400" fill="#4a1526"/>
+<circle cx="1120" cy="560" r="300" fill="#f2c6a0" opacity=".92"/>
+<circle cx="1120" cy="560" r="210" fill="none" stroke="#4a1526" stroke-width="12" opacity=".5"/>
+<circle cx="1120" cy="560" r="120" fill="#4a1526" opacity=".18"/>
+<rect x="160" y="930" width="140" height="10" fill="#f2c6a0"/>
+<text x="160" y="1098" font-size="150" font-weight="600" font-family="Libertinus Serif, Georgia, serif" fill="#fbefe6">The Brothers</text><text x="160" y="1262" font-size="150" font-weight="600" font-family="Libertinus Serif, Georgia, serif" fill="#fbefe6">Karamazov</text>
+<text x="160" y="1498" font-size="68" font-style="italic" font-family="Libertinus Serif, Georgia, serif" fill="#f2c6a0">Fyodor Dostoevsky</text>
+<text x="160" y="2230" font-size="44" letter-spacing="14" font-family="Libertinus Serif, Georgia, serif" fill="#fbefe6" opacity=".75">EBOOKCLASSICS</text>
+</svg>

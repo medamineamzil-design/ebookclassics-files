@@ -1,5 +1,41 @@
 {
  "books": {
+  "a-christmas-carol": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "a-midsummer-night-s-dream": {
+   "de": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "a-tale-of-two-cities": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "aesop-s-fables": {
    "en": [
     "epub",
@@ -42,6 +78,20 @@
     "txt"
    ]
   },
+  "andersen-s-fairy-tales": {
+   "de": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "anna-karenina": {
    "de": [
     "epub",
@@ -57,6 +107,36 @@
    ]
   },
   "anne-of-green-gables": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "around-the-world-in-eighty-days": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "bel-ami": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "beowulf": {
    "en": [
     "epub",
     "html",
@@ -122,6 +202,14 @@
     "txt"
    ]
   },
+  "david-copperfield": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "don-quixote": {
    "en": [
     "epub",
@@ -150,7 +238,31 @@
     "txt"
    ]
   },
+  "dubliners": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "emma": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "extraordinary-popular-delusions-and-the-madness-of-crowds": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "father-goriot": {
    "en": [
     "epub",
     "html",
@@ -198,7 +310,49 @@
     "txt"
    ]
   },
+  "germinal": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "great-expectations": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "grimm-s-fairy-tales": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "gulliver-s-travels": {
    "en": [
     "epub",
     "html",
@@ -286,6 +440,48 @@
     "txt"
    ]
   },
+  "journey-to-the-centre-of-the-earth": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "kidnapped": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "king-lear": {
+   "de": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "les-miserables": {
    "en": [
     "epub",
@@ -302,6 +498,26 @@
   },
   "little-women": {
    "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "macbeth": {
+   "de": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
     "epub",
     "html",
     "pdf",
@@ -350,6 +566,14 @@
     "txt"
    ]
   },
+  "middlemarch": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "moby-dick": {
    "en": [
     "epub",
@@ -360,6 +584,34 @@
   },
   "nicomachean-ethics": {
    "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "notes-from-underground": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "oliver-twist": {
+   "de": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
     "epub",
     "html",
     "pdf",
@@ -402,6 +654,54 @@
     "txt"
    ]
   },
+  "othello": {
+   "de": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "paradise-lost": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "persuasion": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "peter-pan": {
    "en": [
     "epub",
@@ -420,6 +720,26 @@
   },
   "principles-of-political-economy": {
    "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "robinson-crusoe": {
+   "de": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
     "epub",
     "html",
     "pdf",
@@ -447,6 +767,30 @@
    ]
   },
   "second-treatise-of-government": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "sense-and-sensibility": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "tao-te-ching": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "tess-of-the-d-urbervilles": {
    "en": [
     "epub",
     "html",
@@ -504,6 +848,28 @@
     "txt"
    ]
   },
+  "the-age-of-innocence": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-arabian-nights": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-autobiography-of-benjamin-franklin": {
    "en": [
     "epub",
@@ -526,7 +892,23 @@
     "txt"
    ]
   },
+  "the-brothers-karamazov": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-call-of-the-wild": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-canterbury-tales": {
    "en": [
     "epub",
     "html",
@@ -642,6 +1024,28 @@
     "txt"
    ]
   },
+  "the-hunchback-of-notre-dame": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-idiot": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-iliad": {
    "en": [
     "epub",
@@ -708,6 +1112,14 @@
     "txt"
    ],
    "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-metamorphosis": {
+   "de": [
     "epub",
     "html",
     "pdf",
@@ -810,8 +1222,30 @@
     "txt"
    ]
   },
+  "the-prophet": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-railway-children": {
    "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-red-and-the-black": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
     "epub",
     "html",
     "pdf",
@@ -826,7 +1260,23 @@
     "txt"
    ]
   },
+  "the-rubaiyat-of-omar-khayyam": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-scarlet-letter": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-scarlet-pimpernel": {
    "en": [
     "epub",
     "html",
@@ -850,6 +1300,26 @@
     "txt"
    ],
    "es": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-tempest": {
+   "de": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "en": [
     "epub",
     "html",
     "pdf",
@@ -964,6 +1434,32 @@
     "txt"
    ]
   },
+  "treasure-island": {
+   "de": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "es": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "twenty-thousand-leagues-under-the-sea": {
    "en": [
     "epub",
@@ -978,6 +1474,14 @@
     "txt"
    ]
   },
+  "ulysses": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "uncle-tom-s-cabin": {
    "en": [
     "epub",
@@ -986,6 +1490,14 @@
     "txt"
    ],
    "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "vanity-fair": {
+   "en": [
     "epub",
     "html",
     "pdf",
@@ -1017,5 +1529,5 @@
    ]
   }
  },
- "generated": "2026-09-26T17:36:35Z"
+ "generated": "2026-09-26T18:32:57Z"
 }

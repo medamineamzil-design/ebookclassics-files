@@ -1,0 +1,16 @@
+{
+ "alice-s-adventures-in-wonderland": {
+  "de": {
+   "bytes": 82107160,
+   "duration": 10258,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/alice-s-adventures-in-wonderland/alice-s-adventures-in-wonderland-de.mp3"
+  },
+  "en": {
+   "bytes": 85861540,
+   "duration": 10731,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/alice-s-adventures-in-wonderland/alice-s-adventures-in-wonderland.mp3"
+  }
+ }
+}
