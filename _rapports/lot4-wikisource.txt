@@ -1,9 +1,11 @@
-Lot 4 (Wikisource) — 2026-09-26 16:43
-+ capital-volume-i [en] OK — Marxists Internet Archive, 34 chapitres, 331824 mots, 47 chapitres — epub:782Ko pdf:4094Ko txt:1943Ko html:1973Ko
-+ frankenstein [fr] OK — Wikisource (fr), « Frankenstein », 30 sous-pages, 77271 mots, 51 chapitres — epub:264Ko pdf:1084Ko txt:462Ko html:475Ko
-+ heart [it] OK — Wikisource (it), « Cuore (1889) », 111 sous-pages, 86980 mots, 16 chapitres — epub:256Ko pdf:1189Ko txt:506Ko html:522Ko
-+ the-house-by-the-medlar-tree [it] OK — Wikisource (it), « I Malavoglia », 16 sous-pages, 89066 mots, 14 chapitres — epub:254Ko pdf:1129Ko txt:507Ko html:521Ko
-+ the-decameron [it] OK — Wikisource (it), « Decameron », 135 sous-pages, 288857 mots, 6 chapitres — epub:639Ko pdf:3521Ko txt:1658Ko html:1677Ko
-+ the-prince [it] OK — Wikisource (it), « Il Principe », 27 sous-pages, 27550 mots, 26 chapitres — epub:136Ko pdf:430Ko txt:164Ko html:171Ko
-+ the-wonderful-adventures-of-nils [sv] OK — Wikisource (sv), « Nils Holgerssons underbara resa genom Sverige », 57 sous-pages, 198715 mots, 75 chapitres — epub:558Ko pdf:2551Ko txt:1131Ko html:1162Ko
-+ the-communist-manifesto [de] OK — Wikisource (de), « Manifest der Kommunistischen Partei (1848) », 0 sous-pages, 9580 mots, 4 chapitres — epub:106Ko pdf:253Ko txt:71Ko html:77Ko
+Lot 4 (Wikisource) — 2026-09-26 18:44
++ bel-ami [fr] OK — Wikisource (fr), « Bel-Ami », 43 sous-pages, 169732 mots, 67 chapitres — epub:479Ko pdf:2724Ko txt:986Ko html:1039Ko
++ father-goriot [fr] OK — Wikisource (fr), « Le Père Goriot », 4 sous-pages, 93096 mots, 7 chapitres — epub:266Ko pdf:1253Ko txt:546Ko html:561Ko
+! grimm-s-fairy-tales [de] : texte trop court (2553 mots, Gutenberg #None) — IGNORÉ
+= frankenstein [fr] déjà fait
+= heart [it] déjà fait
+= the-house-by-the-medlar-tree [it] déjà fait
+= the-decameron [it] déjà fait
+= the-prince [it] déjà fait
+= the-wonderful-adventures-of-nils [sv] déjà fait
+= the-communist-manifesto [de] déjà fait

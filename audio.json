@@ -11,6 +11,20 @@
    "duration": 10731,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/alice-s-adventures-in-wonderland/alice-s-adventures-in-wonderland.mp3"
+  },
+  "fr": {
+   "bytes": 97008466,
+   "duration": 12126,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/alice-s-adventures-in-wonderland/alice-s-adventures-in-wonderland-fr.mp3"
+  }
+ },
+ "an-essay-on-the-principle-of-population": {
+  "en": {
+   "bytes": 159493562,
+   "duration": 19931,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/an-essay-on-the-principle-of-population/an-essay-on-the-principle-of-population.mp3"
   }
  }
 }
