@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="2400" viewBox="0 0 1600 2400">
+<rect width="1600" height="2400" fill="#16302b"/>
+<circle cx="1120" cy="560" r="300" fill="#e9c46a" opacity=".92"/>
+<circle cx="1120" cy="560" r="210" fill="none" stroke="#16302b" stroke-width="12" opacity=".5"/>
+<circle cx="1120" cy="560" r="120" fill="#16302b" opacity=".18"/>
+<rect x="160" y="930" width="140" height="10" fill="#e9c46a"/>
+<text x="160" y="1098" font-size="150" font-weight="600" font-family="Libertinus Serif, Georgia, serif" fill="#f4ecd8">Fausto:</text><text x="160" y="1262" font-size="150" font-weight="600" font-family="Libertinus Serif, Georgia, serif" fill="#f4ecd8">Primera parte</text>
+<text x="160" y="1498" font-size="68" font-style="italic" font-family="Libertinus Serif, Georgia, serif" fill="#e9c46a">Johann Wolfgang von Goethe</text>
+<text x="160" y="2230" font-size="44" letter-spacing="14" font-family="Libertinus Serif, Georgia, serif" fill="#f4ecd8" opacity=".75">EBOOKCLASSICS</text>
+</svg>

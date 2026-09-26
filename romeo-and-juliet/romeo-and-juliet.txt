@@ -2,55 +2,23 @@ Romeo and Juliet
 William Shakespeare
 
 
-THE TRAGEDY OF ROMEO AND JULIET
-
-
-by William Shakespeare
-
-Contents
-
-
-THE PROLOGUE.
-
-
-ACT I Scene I. A public place. Scene II. A Street. Scene III. Room in Capulet’s House. Scene IV. A Street. Scene V. A Hall in Capulet’s House.
-
-ACT II CHORUS. Scene I. An open place adjoining Capulet’s Garden. Scene II. Capulet’s Garden. Scene III. Friar Lawrence’s Cell. Scene IV. A Street. Scene V. Capulet’s Garden. Scene VI. Friar Lawrence’s Cell.
-
-ACT III Scene I. A public Place. Scene II. A Room in Capulet’s House. Scene III. Friar Lawrence’s cell. Scene IV. A Room in Capulet’s House. Scene V. An open Gallery to Juliet’s Chamber, overlooking the Garden.
-
-ACT IV Scene I. Friar Lawrence’s Cell. Scene II. Hall in Capulet’s House. Scene III. Juliet’s Chamber. Scene IV. Hall in Capulet’s House. Scene V. Juliet’s Chamber; Juliet on the bed.
-
-ACT V Scene I. Mantua. A Street. Scene II. Friar Lawrence’s Cell. Scene III. A churchyard; in it a Monument belonging to the Capulets.
-
-Dramatis Personæ
-
-ESCALUS, Prince of Verona. MERCUTIO, kinsman to the Prince, and friend to Romeo. PARIS, a young Nobleman, kinsman to the Prince. Page to Paris.
-
-MONTAGUE, head of a Veronese family at feud with the Capulets. LADY MONTAGUE, wife to Montague. ROMEO, son to Montague. BENVOLIO, nephew to Montague, and friend to Romeo. ABRAM, servant to Montague. BALTHASAR, servant to Romeo.
-
 CAPULET, head of a Veronese family at feud with the Montagues. LADY CAPULET, wife to Capulet. JULIET, daughter to Capulet. TYBALT, nephew to Lady Capulet. CAPULET’S COUSIN, an old man. NURSE to Juliet. PETER, servant to Juliet’s Nurse. SAMPSON, servant to Capulet. GREGORY, servant to Capulet. Servants.
 
-FRIAR LAWRENCE, a Franciscan. FRIAR JOHN, of the same Order. An Apothecary. CHORUS. Three Musicians. An Officer. Citizens of Verona; several Men and Women, relations to both houses; Maskers, Guards, Watchmen and Attendants.
 
 SCENE. During the greater part of the Play in Verona; once, in the Fifth Act, at Mantua.
 
 
-THE PROLOGUE
+
+The Prologue
 
 
 Enter Chorus.
 
 CHORUS. Two households, both alike in dignity, In fair Verona, where we lay our scene, From ancient grudge break to new mutiny, Where civil blood makes civil hands unclean. From forth the fatal loins of these two foes A pair of star-cross’d lovers take their life; Whose misadventur’d piteous overthrows Doth with their death bury their parents’ strife. The fearful passage of their death-mark’d love, And the continuance of their parents’ rage, Which, but their children’s end, nought could remove, Is now the two hours’ traffic of our stage; The which, if you with patient ears attend, What here shall miss, our toil shall strive to mend.
 
-[Exit.]
 
 
-ACT I
-
-
-
-SCENE I. A PUBLIC PLACE.
+ACT I — SCENE I. A PUBLIC PLACE.
 
 
 Enter Sampson and Gregory armed with swords and bucklers.
@@ -142,7 +110,7 @@ SAMPSON. Draw, if you be men. Gregory, remember thy washing blow.
 [They fight.]
 
 
-BENVOLIO. PART, FOOLS! PUT UP YOUR SWORDS, YOU KNOW NOT WHAT YOU DO.
+BENVOLIO. Part, fools! put up your swords, you know not what you do.
 
 
 [Beats down their swords.]
@@ -278,7 +246,7 @@ BENVOLIO. I’ll pay that doctrine, or else die in debt.
 [Exeunt.]
 
 
-SCENE II. A STREET.
+Scene II. A Street.
 
 
 Enter Capulet, Paris and Servant.
@@ -356,10 +324,8 @@ ROMEO. I’ll go along, no such sight to be shown, But to rejoice in splendour o
 [Exeunt.]
 
 
-SCENE III. ROOM IN CAPULET’S HOUSE.
+Scene III. Room in Capulet’s House.
 
-
-Enter Lady Capulet and Nurse.
 
 LADY CAPULET. Nurse, where’s my daughter? Call her forth to me.
 
@@ -430,7 +396,7 @@ NURSE. Go, girl, seek happy nights to happy days.
 [Exeunt.]
 
 
-SCENE IV. A STREET.
+Scene IV. A Street.
 
 
 Enter Romeo, Mercutio, Benvolio, with five or six Maskers; Torch-bearers and others.
@@ -494,7 +460,7 @@ BENVOLIO. Strike, drum.
 [Exeunt.]
 
 
-SCENE V. A HALL IN CAPULET’S HOUSE.
+Scene V. A Hall in Capulet’s House.
 
 
 Musicians waiting. Enter Servants.
@@ -624,6 +590,7 @@ NURSE. Anon, anon! Come let’s away, the strangers all are gone.
 [Exeunt.]
 
 
+
 ACT II
 
 
@@ -634,7 +601,7 @@ CHORUS. Now old desire doth in his deathbed lie, And young affection gapes to be
 [Exit.]
 
 
-SCENE I. AN OPEN PLACE ADJOINING CAPULET’S GARDEN.
+Scene I. An open place adjoining Capulet’s Garden.
 
 
 Enter Romeo.
@@ -666,7 +633,7 @@ BENVOLIO. Go then; for ’tis in vain To seek him here that means not to be foun
 [Exeunt.]
 
 
-SCENE II. CAPULET’S GARDEN.
+Scene II. Capulet’s Garden.
 
 
 Enter Romeo.
@@ -800,7 +767,7 @@ ROMEO. Sleep dwell upon thine eyes, peace in thy breast. Would I were sleep and 
 [Exit.]
 
 
-SCENE III. FRIAR LAWRENCE’S CELL.
+Scene III. Friar Lawrence’s Cell.
 
 
 Enter Friar Lawrence with a basket.
@@ -850,7 +817,7 @@ FRIAR LAWRENCE. Wisely and slow; they stumble that run fast.
 [Exeunt.]
 
 
-SCENE IV. A STREET.
+Scene IV. A Street.
 
 
 Enter Benvolio and Mercutio.
@@ -1048,7 +1015,7 @@ NURSE. Before and apace.
 [Exeunt.]
 
 
-SCENE V. CAPULET’S GARDEN.
+Scene V. Capulet’s Garden.
 
 
 Enter Juliet.
@@ -1100,7 +1067,7 @@ JULIET. Hie to high fortune! Honest Nurse, farewell.
 [Exeunt.]
 
 
-SCENE VI. FRIAR LAWRENCE’S CELL.
+Scene VI. Friar Lawrence’s Cell.
 
 
 Enter Friar Lawrence and Romeo.
@@ -1130,11 +1097,8 @@ FRIAR LAWRENCE. Come, come with me, and we will make short work, For, by your le
 [Exeunt.]
 
 
-ACT III
 
-
-
-SCENE I. A PUBLIC PLACE.
+ACT III — SCENE I. A PUBLIC PLACE.
 
 
 Enter Mercutio, Benvolio, Page and Servants.
@@ -1286,7 +1250,7 @@ PRINCE. And for that offence Immediately we do exile him hence. I have an intere
 [Exeunt.]
 
 
-SCENE II. A ROOM IN CAPULET’S HOUSE.
+Scene II. A Room in Capulet’s House.
 
 
 Enter Juliet.
@@ -1346,7 +1310,7 @@ JULIET. O find him, give this ring to my true knight, And bid him come to take h
 [Exeunt.]
 
 
-SCENE III. FRIAR LAWRENCE’S CELL.
+Scene III. Friar Lawrence’s cell.
 
 
 Enter Friar Lawrence.
@@ -1450,7 +1414,7 @@ ROMEO. But that a joy past joy calls out on me, It were a grief so brief to part
 [Exeunt.]
 
 
-SCENE IV. A ROOM IN CAPULET’S HOUSE.
+Scene IV. A Room in Capulet’s House.
 
 
 Enter Capulet, Lady Capulet and Paris.
@@ -1474,7 +1438,7 @@ CAPULET. Well, get you gone. A Thursday be it then. Go you to Juliet ere you go 
 [Exeunt.]
 
 
-SCENE V. AN OPEN GALLERY TO JULIET’S CHAMBER, OVERLOOKING THE GARDEN.
+Scene V. An open Gallery to Juliet’s Chamber, overlooking the Garden.
 
 
 Enter Romeo and Juliet.
@@ -1636,11 +1600,8 @@ JULIET. Ancient damnation! O most wicked fiend! Is it more sin to wish me thus f
 [Exit.]
 
 
-ACT IV
 
-
-
-SCENE I. FRIAR LAWRENCE’S CELL.
+ACT IV — SCENE I. FRIAR LAWRENCE’S CELL.
 
 
 Enter Friar Lawrence and Paris.
@@ -1718,7 +1679,7 @@ JULIET. Love give me strength, and strength shall help afford. Farewell, dear fa
 [Exeunt.]
 
 
-SCENE II. HALL IN CAPULET’S HOUSE.
+Scene II. Hall in Capulet’s House.
 
 
 Enter Capulet, Lady Capulet, Nurse and Servants.
@@ -1774,7 +1735,7 @@ CAPULET. Tush, I will stir about, And all things shall be well, I warrant thee, 
 [Exeunt.]
 
 
-SCENE III. JULIET’S CHAMBER.
+Scene III. Juliet’s Chamber.
 
 
 Enter Juliet and Nurse.
@@ -1800,7 +1761,7 @@ What if it be a poison, which the Friar Subtly hath minister’d to have me dead
 [Throws herself on the bed.]
 
 
-SCENE IV. HALL IN CAPULET’S HOUSE.
+Scene IV. Hall in Capulet’s House.
 
 
 Enter Lady Capulet and Nurse.
@@ -1852,7 +1813,7 @@ Go waken Juliet, go and trim her up. I’ll go and chat with Paris. Hie, make ha
 [Exeunt.]
 
 
-SCENE V. JULIET’S CHAMBER; JULIET ON THE BED.
+Scene V. Juliet’s Chamber; Juliet on the bed.
 
 
 Enter Nurse.
@@ -1970,11 +1931,8 @@ SECOND MUSICIAN. Hang him, Jack. Come, we’ll in here, tarry for the mourners, 
 [Exeunt.]
 
 
-ACT V
 
-
-
-SCENE I. MANTUA. A STREET.
+ACT V — SCENE I. MANTUA. A STREET.
 
 
 Enter Romeo.
@@ -2022,7 +1980,7 @@ ROMEO. There is thy gold, worse poison to men’s souls, Doing more murder in th
 [Exeunt.]
 
 
-SCENE II. FRIAR LAWRENCE’S CELL.
+Scene II. Friar Lawrence’s Cell.
 
 
 Enter Friar John.
@@ -2050,7 +2008,7 @@ FRIAR LAWRENCE. Now must I to the monument alone. Within this three hours will f
 [Exit.]
 
 
-SCENE III. A CHURCHYARD; IN IT A MONUMENT BELONGING TO THE CAPULETS.
+Scene III. A churchyard; in it a Monument belonging to the Capulets.
 
 
 Enter Paris, and his Page bearing flowers and a torch.
@@ -2263,4 +2221,5 @@ PRINCE. A glooming peace this morning with it brings; The sun for sorrow will no
 
 [Exeunt.]
 
-Texte du domaine public, source : Project Gutenberg (#1513). Édition numérique EbookClassics.
+
+— Public domain text. EbookClassics digital edition.

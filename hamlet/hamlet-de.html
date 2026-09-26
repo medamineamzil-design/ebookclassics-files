@@ -1,19 +1,47 @@
 <!DOCTYPE html>
 <html lang="de"><head><meta charset="utf-8">
-<title>Hamlet, Prinz von Dännemark</title><style>
-@page { margin: 22mm 20mm; }
-body { font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', serif; line-height: 1.6;
-       color: #1f1a14; max-width: 38em; margin: 0 auto; padding: 1.5em 1.2em; }
-h1 { font-size: 2.1em; text-align: center; margin: 1.5em 0 .2em; letter-spacing: .01em; }
-.author { text-align: center; font-size: 1.15em; font-style: italic; margin-bottom: 3em; color: #5a4a36; }
-h2 { font-size: 1.25em; text-align: center; margin: 2.6em 0 1.2em; letter-spacing: .06em;
-     text-transform: uppercase; font-weight: normal; page-break-before: always; break-before: page; }
-p { margin: 0; text-indent: 1.4em; text-align: justify; hyphens: auto; }
-h2 + p, .first { text-indent: 0; }
-.colophon { font-size: .85em; color: #6b5d45; text-align: center; margin-top: 4em; text-indent: 0; }
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hamlet, Prinz von Dännemark — William Shakespeare</title><style>
+:root{--paper:#fbf8f1;--ink:#1f1b16;--muted:#6f6352;--accent:#9a6b2f;--rule:#e4dccb}
+@media (prefers-color-scheme:dark){:root{--paper:#16140f;--ink:#ece6d8;--muted:#a79c88;--accent:#d8a95e;--rule:#2e2a22}}
+html{background:var(--paper)}
+body{font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Libertinus Serif",Georgia,serif;color:var(--ink);
+     background:var(--paper);line-height:1.65;font-size:1.12rem;max-width:36em;margin:0 auto;padding:2.5em 1.25em 5em}
+.titlepage{text-align:center;min-height:70vh;display:flex;flex-direction:column;justify-content:center;gap:.6em;
+           border-bottom:1px solid var(--rule);margin-bottom:2.5em;padding-bottom:2.5em}
+.titlepage img{max-width:260px;width:60%;margin:0 auto 1.5em;border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+h1{font-size:2.4em;line-height:1.15;font-weight:600;margin:0;letter-spacing:-.01em}
+.author{font-style:italic;font-size:1.25em;color:var(--accent);margin:0}
+.translator{font-size:.95em;color:var(--muted);margin:0}
+nav.toc{margin:0 0 3em}
+nav.toc h2{font-size:.85em;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:left;margin:0 0 .8em}
+nav.toc ol{list-style:none;padding:0;margin:0;columns:1}
+nav.toc li{margin:.25em 0}
+nav.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent}
+nav.toc a:hover{border-color:var(--accent)}
+h2.chapter{font-size:1.45em;font-weight:600;text-align:center;margin:3.5em 0 1.6em;line-height:1.3}
+h2.chapter::before{content:"";display:block;width:3em;height:2px;background:var(--accent);margin:0 auto 1.1em}
+p{margin:0;text-indent:1.5em;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+h2.chapter + p, .titlepage + p{text-indent:0}
+h2.chapter + p::first-letter{font-size:3.1em;float:left;line-height:.85;padding:.08em .08em 0 0;color:var(--accent);font-weight:600}
+.colophon{margin-top:5em;padding-top:1.5em;border-top:1px solid var(--rule);text-align:center;color:var(--muted);font-size:.85em;text-indent:0}
+h3.sub{font-size:1em;font-weight:600;font-variant:small-caps;letter-spacing:.04em;text-align:center;margin:2.2em 0 1em}
+h3.sub + p{text-indent:0}
+@media print{h2.chapter{break-before:page}}
 </style></head><body>
+<header class="titlepage">
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjI0MDAiIHZpZXdCb3g9IjAgMCAxNjAwIDI0MDAiPgo8cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSIyNDAwIiBmaWxsPSIjNGExNTI2Ii8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjMwMCIgZmlsbD0iI2YyYzZhMCIgb3BhY2l0eT0iLjkyIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNGExNTI2IiBzdHJva2Utd2lkdGg9IjEyIiBvcGFjaXR5PSIuNSIvPgo8Y2lyY2xlIGN4PSIxMTIwIiBjeT0iNTYwIiByPSIxMjAiIGZpbGw9IiM0YTE1MjYiIG9wYWNpdHk9Ii4xOCIvPgo8cmVjdCB4PSIxNjAiIHk9IjkzMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIxMCIgZmlsbD0iI2YyYzZhMCIvPgo8dGV4dCB4PSIxNjAiIHk9IjEwOTgiIGZvbnQtc2l6ZT0iMTUwIiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmYmVmZTYiPkhhbWxldCwgUHJpbno8L3RleHQ+PHRleHQgeD0iMTYwIiB5PSIxMjYyIiBmb250LXNpemU9IjE1MCIgZm9udC13ZWlnaHQ9IjYwMCIgZm9udC1mYW1pbHk9IkxpYmVydGludXMgU2VyaWYsIEdlb3JnaWEsIHNlcmlmIiBmaWxsPSIjZmJlZmU2Ij52b24gRMOkbm5lbWFyazwvdGV4dD4KPHRleHQgeD0iMTYwIiB5PSIxNDk4IiBmb250LXNpemU9IjY4IiBmb250LXN0eWxlPSJpdGFsaWMiIGZvbnQtZmFtaWx5PSJMaWJlcnRpbnVzIFNlcmlmLCBHZW9yZ2lhLCBzZXJpZiIgZmlsbD0iI2YyYzZhMCI+V2lsbGlhbSBTaGFrZXNwZWFyZTwvdGV4dD4KPHRleHQgeD0iMTYwIiB5PSIyMjMwIiBmb250LXNpemU9IjQ0IiBsZXR0ZXItc3BhY2luZz0iMTQiIGZvbnQtZmFtaWx5PSJMaWJlcnRpbnVzIFNlcmlmLCBHZW9yZ2lhLCBzZXJpZiIgZmlsbD0iI2ZiZWZlNiIgb3BhY2l0eT0iLjc1Ij5FQk9PS0NMQVNTSUNTPC90ZXh0Pgo8L3N2Zz4=" alt="">
 <h1>Hamlet, Prinz von Dännemark</h1>
 <p class="author">William Shakespeare</p>
+<p class="translator">Übersetzt von Wieland, Christoph Martin</p>
+</header>
+<nav class="toc"><h2>Inhalt</h2><ol>
+<li><a href="#c1">Erster Aufzug.</a></li>
+<li><a href="#c2">Zweyter Aufzug.</a></li>
+<li><a href="#c3">Dritter Aufzug.</a></li>
+<li><a href="#c4">Vierter Aufzug.</a></li>
+<li><a href="#c5">Fünfter Aufzug.</a></li>
+</ol></nav>
 <p>Hamlet, Prinz von Dännemark.</p>
 <p>William Shakespeare</p>
 <p>Übersetzt von Christoph Martin Wieland</p>
@@ -22,7 +50,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Claudius, König in Dännemark. Fortinbras, Prinz von Norwegen. Hamlet, Sohn des vorigen, und Neffe des gegenwärtigen Königs. Polonius, Ober-Kämmerer. Horatio, Freund von Hamlet. Laertes, Sohn des Polonius. Voltimand, Cornelius, Rosenkranz und Güldenstern, Hofleute. Oßrich, ein Hofnarr. Marcellus, ein Officier. Bernardo und Francisco, zween Soldaten. Reinoldo, ein Bedienter des Polonius. Der Geist von Hamlets Vater. Gertrude, Königin von Dännemark, und Hamlets Mutter. Ophelia, Tochter des Polonius, von Hamlet geliebt. Verschiedene Damen, welche der Königin aufwarten. Comödianten, Todtengräber, Schiffleute, Boten, und andre stumme Personen.</p>
 <p>Der Schau-Plaz ist Elsinoor.</p>
 <p>Die Geschichte ist aus der Dänischen Historie des Saxo Grammaticus genommen.</p>
-<h2>Erster Aufzug.</h2>
+<h2 class="chapter" id="c1">Erster Aufzug.</h2>
 <p>Erste Scene. (Eine Terrasse vor dem Palast.) (Bernardo und Francisco, zween Schildwachen, treten auf.)</p>
 <p>Bernardo. Wer da?</p>
 <p>Francisco. Nein, gebt Antwort: Halt, und sagt wer ihr seyd.</p>
@@ -321,7 +349,7 @@ h2 + p, .first { text-indent: 0; }
 <p>(Sie schwören.)</p>
 <p>Hamlet. Gieb dich zur Ruh, gieb dich zur Ruh, unglüklicher Geist.  So, ihr Herren; ich empfehle und überlasse mich euch wie ein Freund seinen Freunden, und was ein so armer Mann als Hamlet ist, thun kan, euch seine Liebe und Freundschaft auszudrüken, das soll, ob Gott will, nicht fehlen.  Wir wollen gehen, aber immer eure Finger auf dem Mund, ich bitte euch: Die Zeit ist aus ihren Fugen gekommen; o! unseliger Zufall!  daß ich gebohren werden mußte, sie wieder zurecht zu sezen!  Nun, kommt, wir wollen mit einander gehen.</p>
 <p>(Sie gehen ab.)</p>
-<h2>Zweyter Aufzug.</h2>
+<h2 class="chapter" id="c2">Zweyter Aufzug.</h2>
 <p>Erste Scene. (Ein Zimmer in Polonius Hause.) (Polonius und Reinoldo treten auf.)</p>
 <p>Polonius. Übergieb ihm dieses Geld und diese Papiere.</p>
 <p>Reinoldo. Ich werde nicht ermangeln, Gnädiger Herr.</p>
@@ -562,7 +590,7 @@ h2 + p, .first { text-indent: 0; }
 <p>(Sie gehen ab.)</p>
 <p>Achte Scene.</p>
 <p>Hamlet (allein). Ja, so behüt euch Gott: endlich bin ich allein--O, was für ein Schurke, für ein nichtswürdiger Sclave bin ich!  Ist es nicht was ungeheures, daß dieser Comödiant hier, in einer blossen Fabel, im blossen Traum einer Leidenschaft, soviel Gewalt über seine Seele haben soll, daß durch ihre Würkung sein ganzes Gesicht sich entfärbt, Thränen seine Augen füllen, seine Stimme bricht, jeder Gesichtszug, jedes Gliedmaß, jede Muskel die Heftigkeit der Leidenschaft, die doch bloß in seinem Hirn ist, mit solcher Wahrheit ausdrükt--und das alles um nichts?  Um Hecuba--Was ist Hecuba für ihn, oder er für Hecuba, daß er um sie weinen soll?  Was würd er thun, wenn er die Ursache zur Leidenschaft hätte, die ich habe?  Er würde den Schauplaz in Thränen ersäuffen, und mit entsezlichen Reden jedes Ohr durchbohren; die Schuldigen würden von Sinnen kommen, und die Schuldlosen selbst wie Verbrecher erblassen-- und ich, träger schwermüthiger Tropf, härme mich wie ein milzsüchtiger Grillenfänger ab, fühle die Grösse meiner Sache nicht, und kan nichts sagen--nein, nichts, nichts für einen König, der auf eine so verruchte Art seiner Crone und seines Lebens beraubt worden ist!--Bin ich vielleicht eine Memme?  Wer darf mich einen Schurken nennen, mir ein Loch in den Kopf schlagen, mir den Bart ausrauffen, und ins Gesicht werfen?  Wer zwikt mich bey der Nase, oder wirft mir eine Lüge in den Hals, so tief bis in die Lunge hinab?  Wer thut mir das?  Und doch sollt&#x27; ich es leiden--Denn es kan nicht anders seyn, ich bin ein Daubenherziger Mensch, der keine Galle hat, die ihm seine Unterdrükung bitter mache; wenn es nicht so wäre, hätte ich nicht bereits alle Geyer der Gegend mit dem vorgeworfnen Aas dieses Sclaven gemästet?  Der blutige kupplerische Bube!  Der gewissenlose, verräthrische, unzüchtige, unbarmherzige Bösewicht!--Wie, was für eine niederträchtige Geduld hält mich zurük?  Ich, der Sohn eines theuren ermordeten Vaters, von Himmel und Hölle zur Rache aufgefodert, ich soll wie eine feige Meze, mein Herz durch Worte erleichtern, wie eine wahre Gassen-Hure in Schimpf- Worte und Flüche ausbrechen--und es ist Hirn in diesem Schedel!  Fy, der Niederträchtigkeit!  Es muß anders werden!--Ich habe gehört, daß Verbrecher unter einem Schauspiel durch die blosse Kunst des Poeten und des Schauspielers so in die Seele getroffen worden, daß sie auf der Stelle ihre Übelthaten bekennt haben.  Wenn ein Mord gleich keine Zunge hat, so muß doch ehe das lebloseste Ding Sprache bekommen, als daß er unentdekt bleiben sollte.  Ich will diese Comödianten etwas der Ermordung meines Vaters ähnliches vor meinem Oheim aufführen lassen.  Ich will sein Gesicht dabey beobachten; ich will ihm die Wike bis aufs Fleisch in die Wunde bohren; wenn er nur erblaßt, so weiß ich was ich zu thun habe.  Der Geist, den ich gesehen habe, kan der Teufel seyn; denn der Teufel hat die Macht eine gefällige Gestalt anzunehmen; vielleicht mißbraucht er meine Schwermuth und Trübsinnigkeit (Geister, durch die er eine besondere Gewalt hat) mich zu einer verdammlichen That zu verleiten.  Ich will einen überzeugendern Grund haben als diese Erscheinung; und im Schauspiel soll die Falle seyn, worinn ich das Gewissen des Königs fangen will.</p>
-<h2>Dritter Aufzug.</h2>
+<h2 class="chapter" id="c3">Dritter Aufzug.</h2>
 <p>Erste Scene. (Der Pallast.) (Der König, die Königin, Polonius, Ophelia, Rosenkranz, Güldenstern, und Herren vom Hofe treten auf.)</p>
 <p>König. Ihr habt also nicht von ihm herausbringen können, was die Ursache ist, warum er in den schönsten Tagen seines Lebens in diese stürmische und Gefahr-drohende Raserey gefallen?</p>
 <p>Rosenkranz. Er gesteht, daß er sich in einem ausserordentlichen Gemüths- Zustande fühle; aber was die Ursache davon sey, darüber will er sich schlechterdings nicht herauslassen.</p>
@@ -880,7 +908,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Königin. Ach ja, das hatt&#x27; ich vergessen; so ist&#x27;s beschlossen worden.</p>
 <p>Hamlet. Die Briefe sind schon gesiegelt, und meine zween Schul-Cameraden (denen ich trauen will, wie ich einer Otter in meiner Hand trauen wollte) tragen die Instruction; sie sollen mit mir reisen, und meine Wegweiser in die Grube seyn, die mir gegraben ist: Wir wollen sehen, was daraus wird--Denn das ist eben der Spaß, wenn der Artillerist in seiner eignen Mine in die Luft gesprengt wird; und es muß hart hergehen, wenn ich nicht eine Ruthe tiefer als sie grabe und sie in den Mond hinein blase.  O es ist ein Vergnügen, wenn eine List in gerader Linie auf die andre stößt!--Diesen wakern Mann hier will ich aufpaken--Er ist zu schwer; ich will den Wanst in das nächste Zimmer schleppen; gute Nacht, Mutter--In der That, dieser geheime Rath, der in seinem Leben ein alberner plauderhafter Bube war, ist nun auf einmal gesezt, gravitätisch und verschwiegen worden.  Kommt, Sir, wir wollen euch an Ort und Stelle bringen-- Gute Nacht, Mutter.</p>
 <p>(Hamlet geht ab, und schleppt den Polonius nach.)</p>
-<h2>Vierter Aufzug.</h2>
+<h2 class="chapter" id="c4">Vierter Aufzug.</h2>
 <p>Erste Scene. (Das Königliche Zimmer.) (Der König, die Königin, Rosenkranz und Güldenstern treten auf.)</p>
 <p>Der König (zur Königin.) Diese Seufzer sind von Inhalt schwer; es ist nöthig, daß wir ihre Bedeutung verstehen.  Wo ist euer Sohn?</p>
 <p>Königin. Laßt uns auf einen Augenblik allein.</p>
@@ -1104,7 +1132,7 @@ h2 + p, .first { text-indent: 0; }
 <p>(Er geht ab.)</p>
 <p>König. Kommt mit mir, Gertrude--Wie viel hatte ich zu thun, seine Wuth zu besänftigen!  Nun besorg ich, dieser Umstand wird sie von neuem anflammen--Wir wollen ihm folgen.</p>
 <p>(Sie gehen ab.)</p>
-<h2>Fünfter Aufzug.</h2>
+<h2 class="chapter" id="c5">Fünfter Aufzug.</h2>
 <p>Erste Scene. (Ein Kirch-Hof.) (Zween Todtengräber mit Grabscheitern und Spaten treten auf.)</p>
 <p>1. Todtengräber. Kan sie denn in ein Christliches Begräbniß gelegt werden, wenn sie eigenmächtig ihre (Salvation) gesucht hat?</p>
 <p>2. Todtengräber. Ich sage dir&#x27;s ja, sie kan; mach also ihr Grab unverzüglich; die Obrigkeit hat es durch einen Commissarius und Geschworne untersuchen lassen, und gefunden, daß sie wie andre Christen begraben werden soll.</p>
@@ -1320,5 +1348,5 @@ h2 + p, .first { text-indent: 0; }
 <p>Horatio. Auch hievon hab ich zu reden, und aus einem Munde, dessen Stimme manche andre nach sich ziehen wird: Aber lasset die Anstalten unverzüglich gemacht werden, izt, da die Gemüther noch bestürzt und unfähig sind Entwürfe zu machen, die zu neuen Verwirrungen Anlaß geben könnten.  (Fortinbras giebt Befehl, daß Hamlets Leiche unter kriegerischer Musik, von vier Hauptmännern auf das Gerüste getragen werde--(Sie marschieren ab, und das Stük hört mit einem abermaligen Salve aus dem kleinen Geschüz auf.)</p>
 <p>Ende dieses Projekt Gutenberg Etextes Hamlet, Prinz von Dännemark, von William Shakespeare (Übersetzt von Christoph Martin Wieland).</p>
 <p>End of Project Gutenberg&#x27;s Hamlet, Prinz von Dannemark, by William Shakespeare</p>
-<p class="colophon">Texte du domaine public, source : Project Gutenberg (#7276). Traduction : Wieland, Christoph Martin († 1813). Édition numérique EbookClassics.</p>
+<p class="colophon">Gemeinfreier Text. Digitale Ausgabe EbookClassics.</p>
 </body></html>

@@ -1,45 +1,86 @@
 <!DOCTYPE html>
 <html lang="fr"><head><meta charset="utf-8">
-<title>Le Merveilleux voyage de Nils Holgersson à travers la Suède</title><style>
-@page { margin: 22mm 20mm; }
-body { font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', serif; line-height: 1.6;
-       color: #1f1a14; max-width: 38em; margin: 0 auto; padding: 1.5em 1.2em; }
-h1 { font-size: 2.1em; text-align: center; margin: 1.5em 0 .2em; letter-spacing: .01em; }
-.author { text-align: center; font-size: 1.15em; font-style: italic; margin-bottom: 3em; color: #5a4a36; }
-h2 { font-size: 1.25em; text-align: center; margin: 2.6em 0 1.2em; letter-spacing: .06em;
-     text-transform: uppercase; font-weight: normal; page-break-before: always; break-before: page; }
-p { margin: 0; text-indent: 1.4em; text-align: justify; hyphens: auto; }
-h2 + p, .first { text-indent: 0; }
-.colophon { font-size: .85em; color: #6b5d45; text-align: center; margin-top: 4em; text-indent: 0; }
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Le Merveilleux voyage de Nils Holgersson à travers la Suède — Selma Lagerlöf</title><style>
+:root{--paper:#fbf8f1;--ink:#1f1b16;--muted:#6f6352;--accent:#9a6b2f;--rule:#e4dccb}
+@media (prefers-color-scheme:dark){:root{--paper:#16140f;--ink:#ece6d8;--muted:#a79c88;--accent:#d8a95e;--rule:#2e2a22}}
+html{background:var(--paper)}
+body{font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Libertinus Serif",Georgia,serif;color:var(--ink);
+     background:var(--paper);line-height:1.65;font-size:1.12rem;max-width:36em;margin:0 auto;padding:2.5em 1.25em 5em}
+.titlepage{text-align:center;min-height:70vh;display:flex;flex-direction:column;justify-content:center;gap:.6em;
+           border-bottom:1px solid var(--rule);margin-bottom:2.5em;padding-bottom:2.5em}
+.titlepage img{max-width:260px;width:60%;margin:0 auto 1.5em;border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+h1{font-size:2.4em;line-height:1.15;font-weight:600;margin:0;letter-spacing:-.01em}
+.author{font-style:italic;font-size:1.25em;color:var(--accent);margin:0}
+.translator{font-size:.95em;color:var(--muted);margin:0}
+nav.toc{margin:0 0 3em}
+nav.toc h2{font-size:.85em;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:left;margin:0 0 .8em}
+nav.toc ol{list-style:none;padding:0;margin:0;columns:1}
+nav.toc li{margin:.25em 0}
+nav.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent}
+nav.toc a:hover{border-color:var(--accent)}
+h2.chapter{font-size:1.45em;font-weight:600;text-align:center;margin:3.5em 0 1.6em;line-height:1.3}
+h2.chapter::before{content:"";display:block;width:3em;height:2px;background:var(--accent);margin:0 auto 1.1em}
+p{margin:0;text-indent:1.5em;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+h2.chapter + p, .titlepage + p{text-indent:0}
+h2.chapter + p::first-letter{font-size:3.1em;float:left;line-height:.85;padding:.08em .08em 0 0;color:var(--accent);font-weight:600}
+.colophon{margin-top:5em;padding-top:1.5em;border-top:1px solid var(--rule);text-align:center;color:var(--muted);font-size:.85em;text-indent:0}
+h3.sub{font-size:1em;font-weight:600;font-variant:small-caps;letter-spacing:.04em;text-align:center;margin:2.2em 0 1em}
+h3.sub + p{text-indent:0}
+@media print{h2.chapter{break-before:page}}
 </style></head><body>
+<header class="titlepage">
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjI0MDAiIHZpZXdCb3g9IjAgMCAxNjAwIDI0MDAiPgo8cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSIyNDAwIiBmaWxsPSIjMWIzYTRiIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjMwMCIgZmlsbD0iI2Y0YTI2MSIgb3BhY2l0eT0iLjkyIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMWIzYTRiIiBzdHJva2Utd2lkdGg9IjEyIiBvcGFjaXR5PSIuNSIvPgo8Y2lyY2xlIGN4PSIxMTIwIiBjeT0iNTYwIiByPSIxMjAiIGZpbGw9IiMxYjNhNGIiIG9wYWNpdHk9Ii4xOCIvPgo8cmVjdCB4PSIxNjAiIHk9IjkzMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIxMCIgZmlsbD0iI2Y0YTI2MSIvPgo8dGV4dCB4PSIxNjAiIHk9Ijk1MSIgZm9udC1zaXplPSIxMDQiIGZvbnQtd2VpZ2h0PSI2MDAiIGZvbnQtZmFtaWx5PSJMaWJlcnRpbnVzIFNlcmlmLCBHZW9yZ2lhLCBzZXJpZiIgZmlsbD0iI2ZkZjFlNiI+TGUgTWVydmVpbGxldXg8L3RleHQ+PHRleHQgeD0iMTYwIiB5PSIxMDY2IiBmb250LXNpemU9IjEwNCIgZm9udC13ZWlnaHQ9IjYwMCIgZm9udC1mYW1pbHk9IkxpYmVydGludXMgU2VyaWYsIEdlb3JnaWEsIHNlcmlmIiBmaWxsPSIjZmRmMWU2Ij52b3lhZ2UgZGUgTmlsczwvdGV4dD48dGV4dCB4PSIxNjAiIHk9IjExODAiIGZvbnQtc2l6ZT0iMTA0IiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmZGYxZTYiPkhvbGdlcnNzb24gw6A8L3RleHQ+PHRleHQgeD0iMTYwIiB5PSIxMjk0IiBmb250LXNpemU9IjEwNCIgZm9udC13ZWlnaHQ9IjYwMCIgZm9udC1mYW1pbHk9IkxpYmVydGludXMgU2VyaWYsIEdlb3JnaWEsIHNlcmlmIiBmaWxsPSIjZmRmMWU2Ij50cmF2ZXJzIGxhPC90ZXh0Pjx0ZXh0IHg9IjE2MCIgeT0iMTQwOSIgZm9udC1zaXplPSIxMDQiIGZvbnQtd2VpZ2h0PSI2MDAiIGZvbnQtZmFtaWx5PSJMaWJlcnRpbnVzIFNlcmlmLCBHZW9yZ2lhLCBzZXJpZiIgZmlsbD0iI2ZkZjFlNiI+U3XDqGRlPC90ZXh0Pgo8dGV4dCB4PSIxNjAiIHk9IjE1OTMiIGZvbnQtc2l6ZT0iNjgiIGZvbnQtc3R5bGU9Iml0YWxpYyIgZm9udC1mYW1pbHk9IkxpYmVydGludXMgU2VyaWYsIEdlb3JnaWEsIHNlcmlmIiBmaWxsPSIjZjRhMjYxIj5TZWxtYSBMYWdlcmzDtmY8L3RleHQ+Cjx0ZXh0IHg9IjE2MCIgeT0iMjIzMCIgZm9udC1zaXplPSI0NCIgbGV0dGVyLXNwYWNpbmc9IjE0IiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmZGYxZTYiIG9wYWNpdHk9Ii43NSI+RUJPT0tDTEFTU0lDUzwvdGV4dD4KPC9zdmc+" alt="">
 <h1>Le Merveilleux voyage de Nils Holgersson à travers la Suède</h1>
 <p class="author">Selma Lagerlöf</p>
-<p>Au lecteur</p>
-<p>Cette version numérisée reproduit dans son intégralité la version originale.</p>
-<p>L&#x27;orthographe a été conservée. Seules les erreurs évidentes de typographie ont été corrigées.</p>
-<p>La ponctuation n&#x27;a pas été modifiée hormis quelques corrections mineures.</p>
-<h2>SELMA LAGERLÖF</h2>
-<h2>LE MERVEILLEUX VOYAGE</h2>
-<p>DE</p>
-<h2>NILS HOLGERSSON</h2>
-<h2>A TRAVERS LA SUÈDE</h2>
-<h2>TRADUIT DU SUÉDOIS</h2>
-<p>=avec l&#x27;autorisation de l&#x27;auteur par T. HAMMAR=</p>
-<h2>PRÉFACE DE LUCIEN MAURY</h2>
-<p>Librairie académique PERRIN et Cie.</p>
-<h2>LE MERVEILLEUX VOYAGE</h2>
-<p>DE</p>
-<h2>NILS HOLGERSSON</h2>
-<p>Copyright by Perrin et Cie 1912.</p>
-<h2>IL A ÉTÉ TIRÉ DE CET OUVRAGE:</h2>
+<p class="translator">Traduction de Hammar, T</p>
+</header>
+<nav class="toc"><h2>Table des matières</h2><ol>
+<li><a href="#c1">Préface</a></li>
+<li><a href="#c2">II — Akka de Kebnekaïse</a></li>
+<li><a href="#c3">III — Avec les oiseaux sauvages</a></li>
+<li><a href="#c4">IV — Glimmingehus</a></li>
+<li><a href="#c5">V — La grande danse des grues a Kullaberg</a></li>
+<li><a href="#c6">VII — La vallée de la rivière de Ronneby</a></li>
+<li><a href="#c7">VIII — Karlskrona</a></li>
+<li><a href="#c8">IX — Voyage a Œland</a></li>
+<li><a href="#c9">X — La pointe méridionale d&#x27;œland</a></li>
+<li><a href="#c10">XI — Le grand papillon</a></li>
+<li><a href="#c11">XII — La petite ile Karl</a></li>
+<li><a href="#c12">XIII — Deux villes</a></li>
+<li><a href="#c13">XIV — La saga du Smâland</a></li>
+<li><a href="#c14">XV — Les corneilles</a></li>
+<li><a href="#c15">XVI — La vieille paysanne</a></li>
+<li><a href="#c16">XVII — Du Taberg a huskvarna</a></li>
+<li><a href="#c17">XVIII — La prédiction</a></li>
+<li><a href="#c18">XIX — Le lé de bure</a></li>
+<li><a href="#c19">XX — La saga de Karr et de Poil-gris</a></li>
+<li><a href="#c20">XXI — La débacle des glaces</a></li>
+<li><a href="#c21">XXII — La Dalécarlie. Le soir de la sainte-valborg</a></li>
+<li><a href="#c22">XXIII — L&#x27;inondation</a></li>
+<li><a href="#c23">XXIV — La saga de l&#x27;uppland</a></li>
+<li><a href="#c24">XXV — Finduvet</a></li>
+<li><a href="#c25">XXVI — Gorgo, l&#x27;aigle</a></li>
+<li><a href="#c26">XXVII — A travers le gestrikland</a></li>
+<li><a href="#c27">XXVIII — Une journée en Helsingland</a></li>
+<li><a href="#c28">XXIX — Le vesterbotten et la Laponie</a></li>
+<li><a href="#c29">XXX — Asa, la gardeuse d&#x27;oies, et le petit Mats</a></li>
+<li><a href="#c30">XXXI — Chez les Lapons</a></li>
+<li><a href="#c31">XXXII — Vers le sud! Vers le sud!</a></li>
+<li><a href="#c32">XXXIII — Légendes de Herjedalen</a></li>
+<li><a href="#c33">XXXIV — Un petit domaine</a></li>
+<li><a href="#c34">XXXV — En route vers la mer</a></li>
+<li><a href="#c35">XXXVI — Le retour a Vemmenhög</a></li>
+</ol></nav>
+<h3 class="sub">Il a été tiré de cet ouvrage:</h3>
 <p>Dix exemplaires numérotés sur papier de Hollande</p>
-<h2>PRÉFACE</h2>
+<h2 class="chapter" id="c1">Préface</h2>
 <p>Qui donc, en Suède, eut un jour cette idée si charmante? Quel fonctionnaire? Quel éditeur? Quel poète? L&#x27;histoire ne le dit point, et l&#x27;on hésite entre des hypothèses diversement plausibles; en cette Scandinavie lointaine, une fantaisie éparse, contagieuse, surgie des forêts ténébreuses et des lacs innombrables, assiège les cerveaux et parfois fait jaillir d&#x27;une âme de bureaucrate une flamme capricieuse éblouissante.</p>
 <p>Idée charmante, je ne me dédis point, si même quelque pédant de chez nous va l&#x27;estimer saugrenue, voire dangereuse: demander aux plus glorieux écrivains, aux moins contestables poètes d&#x27;écrire pour les écoles primaires--vous entendez bien, pour les écoles primaires, pour les fils et les filles des humbles campagnards, pour les enfants des cités ouvrières--des «livres de lecture», de ces livres de pauvres, sommairement édités, qui s&#x27;étaleront sur les pupitres, sommeilleront dans les cartables, échoueront en d&#x27;étroits logis, où nulle bibliothèque ne les accueillera, quelle charmante idée, et féconde, et digne d&#x27;être méditée, et sans doute imitée! De tout ce dénuement une richesse magnifique va éclore; une incomparable moisson spirituelle récompensera les écrivains qui ne dédaignèrent point le plus modeste emploi de leur génie; à ces écrivains, le pays tout entier devra un bienfait national.</p>
 <p>La Suède contemporaine ne manque ni de poètes ni de romanciers; romanciers et poètes tout à la fois, Verner von Heidenstam et Selma Lagerlöf paraissent être, de l&#x27;aveu universel, les plus puissants interprètes de l&#x27;atmosphère lyrique où vécurent de temps immémorial leurs compatriotes; les admirables traductions de M. André Bellessort ont fait connaître au public lettré de France les œuvres principales de cette intarissable et prestigieuse créatrice de contes et de légendes qu&#x27;est Selma Lagerlöf: la Légende de Gösta Berling est comme un répertoire des mille sources par où le merveilleux suédois pénètre et transfigure une familière et souvent brutale réalité; dans Jérusalem en Dalécarlie, l&#x27;âpre dévotion de mystiques protestants, la religion, les scrupules, les amours de paysans aristocrates, le charme idyllique d&#x27;une nature qui s&#x27;humanise aux bords du lac Siljan composent un tableau poétique, incomparable de relief et de mystérieuse profondeur. Récit, nouvelles, romans naissent de cette intuitive imagination avec une princière prodigalité; Selma Lagerlöf est la reine de la fantaisie suédoise; reine adulée: la séduction des spectacles qu&#x27;elle ne se lasse pas d&#x27;ordonner généreusement domine toutes les intelligences; nul cœur qui ne brûle pour elle de gratitude. L&#x27;attribution du prix Nobel marqua l&#x27;acquiescement d&#x27;une Académie retardataire à l&#x27;unanime désignation d&#x27;un public enthousiaste.</p>
 <p>Si son universelle popularité, la naïve couleur de son style, la candeur et la fraîcheur d&#x27;imagination dont témoignent maints contes délicieux pouvaient désigner Selma Lagerlöf aux sollicitations des éditeurs de «livres de lecture», l&#x27;art complexe, le style savant, le hautain lyrisme de Verner von Heidenstam semblaient devoir décourager de pareilles tentatives; scrupules chimériques: l&#x27;expérience a justifié une double audace; Selma Lagerlöf composa une sorte de description poétique du pays suédois contemporain, Verner von Heidenstam une série de tableaux, ou, si vous préférez, de fresques historiques; les deux livres, tirés à de nombreux milliers d&#x27;exemplaires, peu coûteux, sont entre les mains de tous les écoliers; de l&#x27;école, ils envahirent les lycées, les écoles de jeunes filles; le grand public leur faisait fête; la Suède possède deux chefs-d&#x27;œuvre dont elle a quelque droit d&#x27;être fière; je ne sache pas que l&#x27;on trouve rien de comparable en aucun autre pays.</p>
 <p>* * *</p>
-<h2>Il était une fois...</h2>
+<p>Il était une fois...</p>
 <p>Ce livre commence à la façon des contes; et c&#x27;est un conte, en effet, que Selma Lagerlöf, romancière illustre, entreprit d&#x27;écrire lorsque ses compatriotes lui demandèrent un «livre de lecture». On souhaitait une œuvre qui révélât aux petits Suédois la beauté de leur pays. Selma Lagerlöf écrivit un conte. Le bon Perrault et Mme d&#x27;Aulnoy eussent approuvé cette pédagogie; l&#x27;immense succès du livre prouve qu&#x27;elle n&#x27;est point surannée et que certaines chimères demeurent toujours le meilleur guide des intelligences puériles vers la poésie... et la réalité.</p>
 <p>Selma Lagerlöf écrivit un conte, un vrai conte de fées, où les fées elles-mêmes n&#x27;apparaissent guère, mais où leur pouvoir surnaturel est dévolu aux tomtes, aux lutins, à ces génies familiers du foyer scandinave, hanté depuis l&#x27;origine des temps par les «Invisibles» et les nains minuscules et bienfaisants du «petit peuple». Selma Lagerlöf écrivit un vrai conte, et tous les enfants de toutes les écoles du nord ne se lassent pas de l&#x27;en remercier; par delà la fiction le grand public aperçut un sentiment profond et beaucoup de vérité; même accueil en Allemagne, en Angleterre, en Amérique; Nils Holgersson est en train de conquérir le monde comme naguère les héros fameux d&#x27;Andersen.</p>
 <p>Un conte qui aurait les proportions d&#x27;une vaste épopée--et qui d&#x27;ailleurs doit à certaines nonchalances du récit, à certaines répétitions, à je ne sais quelle ampleur sereine et poétique, comme des allures épiques--voilà donc ce livre. Il est d&#x27;une étonnante variété. La fantaisie de Selma Lagerlöf s&#x27;y déploie sans crainte ni scrupules. La multiplicité des aventures, des scènes et des situations répond à la diversité des personnages, des lieux, des descriptions, et enfin des légendes recueillies et plus souvent imaginées par l&#x27;auteur. La Suède, est là tout entière--la Suède, ses provinces, ses lacs tranquilles, ses archipels, ses neiges et ses étés radieux, sa flore, sa faune, ses forêts, ses bourgades et ses villes; un parfum émane de ces pages, agreste et pénétrant, senteur humide et résineuse traversée d&#x27;effluves marins... Selma Lagerlöf nous révèle l&#x27;âme de son pays, cette âme lyrique et close, timide et hardie, vibrante de rêves démesurés, et qui ne reprend son équilibre qu&#x27;en face de la nature, et trouve son expression la plus émouvante dans l&#x27;intimité des forêts, des rocs moussus et des grandes eaux limpides.</p>
@@ -51,19 +92,13 @@ h2 + p, .first { text-indent: 0; }
 <p>Une odyssée, un vivant et mouvant poème; nul livre, moins didactique d&#x27;apparence, qui soit plus plein à en déborder d&#x27;un multiple enseignement. Chacun y puisera la leçon qui convient à son âge et à sa condition: l&#x27;enfant, une élémentaire leçon de morale et de sagesse puérile et honnête; l&#x27;homme et le vieillard, un avis de méditation, d&#x27;active résignation; tous un conseil de sérieux, de bonté, de respect... Le respect de tout ce qui vaut d&#x27;être respecté, n&#x27;est-ce point l&#x27;attitude que commande cette grave poétesse? Respect des plus modestes âmes et des douleurs les plus humbles, respect du labeur, de l&#x27;effort, même peu héroïque, du scrupule et du sentiment, respect du rêve bienfaisant qui réconforte ou exalte l&#x27;humanité endolorie, respect de la nature, du paysage, de l&#x27;arbre et de l&#x27;animal; devant la vie et le spectacle du monde, en quelque miroir qu&#x27;il se reflète, Selma Lagerlöf ne se défend point d&#x27;une perpétuelle et vibrante adoration. En d&#x27;autres livres elle a prouvé qu&#x27;elle n&#x27;ignore point le mal; romancière, elle débrida d&#x27;un geste fort et sûr des plaies sanguinolentes; elle n&#x27;a point à faire ici montre de son audace: tout au plus oppose-t-elle çà et là un discret et savoureux humour au travers de ses héros. Selma Lagerlöf aime l&#x27;humanité tout entière d&#x27;un amour plein de pitié; l&#x27;éternelle et secrète lamentation des cœurs retentit dans toute son œuvre; Nils Holgersson lui-même en perçoit l&#x27;angoissant écho au cours de ses célestes randonnées: «Les premiers qui aperçurent les oies sauvages ce jour-là, ce furent les mineurs de Taberg, occupés à extraire le minerai de la montagne; quand ils les entendirent caqueter, ils s&#x27;arrêtèrent de creuser leurs trous de mine, et l&#x27;un d&#x27;eux cria aux oiseaux: «Où allez-vous? où allez-vous?» Les oies ne comprirent pas ce qu&#x27;il disait, mais le petit garçon se pencha et répondit pour elles: «Là où il n&#x27;y a ni pic ni marteau.» Les mineurs crurent que c&#x27;était leur propre lœngtan qui faisait sonner comme une parole humaine le caquetage des oies.--«Emmenez-nous! Emmenez-nous! crièrent-ils.--Pas cette année, répondit le petit garçon, pas cette année!...» Les oies passent ensuite au-dessus de la grande papeterie de Munksjö; après leur repas de midi, les ouvriers regagnaient en foule l&#x27;entrée de la fabrique; eux aussi interrogent les voyageuses: «Où allez-vous? Où allez-vous?...--Là où il n&#x27;y a ni machines ni chaudières...--Emmenez-nous! Emmenez-nous!--Pas cette année! répondit le petit garçon, pas cette année!» Puis c&#x27;est la fabrique d&#x27;allumettes de Jönköping qui apparaît, vaste comme une forteresse; par une fenêtre une jeune ouvrière se penche; mêmes questions, mêmes réponses; aux malades d&#x27;un hôpital, Nils apprend que le pays où il se rend ne connaît ni la souffrance ni la maladie; aux enfants d&#x27;une école, qu&#x27;il ne redoutera, en cette lointaine patrie, ni livres ni leçons. Et tout le jour se poursuit le dialogue de la terre et des nuées, le colloque des hommes qui peinent et souffrent et de leurs vains désirs qui s&#x27;enfuient à tire-d&#x27;ailes dans le ciel du printemps.</p>
 <p>A l&#x27;horizon de ce livre chatoie un fond magnifiquement poétique; au premier plan, une ample comédie à cent actes divers captive l&#x27;attention des yeux trop faibles pour suivre le mystère des infinies perspectives; que d&#x27;aventures, que de héros, quelle vive peinture des dix mille habitants de la forêt, de la lande, des marais et des grèves! Quelle étonnante histoire naturelle en action! Nils Holgersson est initié aux mœurs de la gent innombrable, ailée, emplumée, velue, qui plane, rôde, rampe, nage, propage l&#x27;infini frémissement de la vie parmi les campagnes sauvages, les bois illimités, les lacs, les fleuves et les mers scandinaves: du lièvre à l&#x27;élan et à l&#x27;ours; de l&#x27;alouette à la gelinotte et au coq de bruyère; de l&#x27;oie sauvage au cygne, à la grue, au corbeau, à la cigogne, à toutes les sortes de grèbes, guillemots, plongeons, sarcelles et canards; du serpent à l&#x27;insecte; du chien domestique au loup et au renard, il n&#x27;est pas un figurant du théâtre de la nature septentrionale qui ne manifeste ici son caractère, ses habitudes, son genre de vie[1]: l&#x27;écureuil est un aimable avare; la martre est réputée pour son incivilité; la loutre est une maraudeuse incorrigible, toujours errante; l&#x27;instinct social des rats gris et de leurs ennemis les rats noirs les détermine à de véritables guerres nationales comparables à celles des hommes.</p>
 <p>[1] Quelques épisodes n&#x27;ont pu trouver place dans la traduction qui suit, où le lecteur français trouvera toutefois l&#x27;essentiel des deux volumes suédois.</p>
-<h2>(T. H.)</h2>
+<p>(T. H.)</p>
 <p>Les animaux de Selma Lagerlöf ignorent la subtilité, l&#x27;amoralité pratique et tout humaine que l&#x27;on connaît à ceux de La Fontaine; une moralité saine, très proche de la nature et de la providentielle sagesse des instincts, nuance leur courtoisie et règle leurs rapports: frappante leçon pour un fils des hommes, rude école d&#x27;honnêteté et de franchise, où Nils apprend d&#x27;abord le respect et l&#x27;amour de la vie sous toutes ses formes.</p>
 <p>Les animaux de Selma Lagerlöf sont peints avec une minutie précise; et si ses descriptions de paysages révèlent la compatriote de Linné, comment ne point découvrir en elle quelque chose du génie qui inspire cet autre Suédois, l&#x27;admirable peintre animalier Liljefors? Selma Lagerlöf décrit les habitants des grèves et des déserts forestiers avec précision, avec une pieuse exactitude, avec, fréquemment, un allègre et piquant humour; tel tableau, tel drame de la lande ou des fjells fait songer à la manière de Kipling; mais d&#x27;ordinaire, je ne sais quelle grâce rêveuse, je ne sais quelle douceur de l&#x27;atmosphère et de l&#x27;émotion qui enveloppent tout le livre signalent assez que nous sommes loin, très loin de la jungle orientale.</p>
 <p>Nous sommes en Suède, pays des longs frimas, des brusques printemps et des douces nuits d&#x27;été, pays étrangement poétique, tout bruissant de déchirantes mélodies, et de légendes, mélancoliques ou gaies, et de poèmes et de chansons; terre monotone, comme par exemple notre Bretagne, et comme elle ensorceleuse. Selma Lagerlöf nous en dira la variété, que l&#x27;étranger n&#x27;aperçoit pas tout d&#x27;abord. Chaque province a sa physionomie; de chacune de ces physionomies Nils apprend à distinguer les traits à travers une «saga» familière et naïvement expressive.</p>
 <p>Nulle part l&#x27;éminente dignité du roi de la création n&#x27;est sacrifiée: avec quelle émotion, Nils métamorphosé ne découvre-t-il pas sa déchéance! «Il commença à comprendre ce que cela signifiait de n&#x27;être plus un être humain. Il n&#x27;était plus un être humain, mais un monstre. Il était désormais séparé de tout; il ne pourrait plus jouer avec les autres gamins, ni se charger de la ferme après ses parents, et sûrement pas se marier avec une jeune fille. Il s&#x27;assit et regarda sa maison. C&#x27;était une petite maison aux poutres apparentes, blanchie à la chaux, qui semblait enfoncée dans le sol sous son toit de chaume haut et pointu. Les dépendances aussi étaient petites et les lopins de terre environnants si étroits qu&#x27;à peine un cheval pouvait s&#x27;y retourner. Mais si petit et pauvre que fût ce foyer, il était désormais trop bon pour lui. Il ne pouvait demander d&#x27;autre refuge qu&#x27;un trou dans le plancher de l&#x27;étable...»</p>
 <p>Pauvre maison du paysan suédois! Selma Lagerlöf en révèle aux enfants de son pays la secrète opulence. Elle leur révèle la beauté cachée du plus humble spectacle. Son art fleurit le plus simplement du monde en somptueuses images et en émouvant lyrisme. Selma Lagerlöf hausse un conte puéril à la pure poésie. Et l&#x27;on pourrait dire que ce conte est un vaste poème mouvementé, vivant, coloré.</p>
 <p>Quel pays n&#x27;envierait à la Suède le Merveilleux voyage?</p>
-<h2>LUCIEN MAURY.</h2>
-<h2>LE MERVEILLEUX VOYAGE</h2>
-<h2>DE NILS HOLGERSSON</h2>
-<h2>A TRAVERS LA SUÈDE</h2>
-<h2>I</h2>
-<h2>NILS HOLGERSSON</h2>
 <p>Dimanche, 20 mars.</p>
 <p>Il était une fois un gamin d&#x27;environ quatorze ans, grand, dégingandé, avec des cheveux blonds comme de la filasse. Il n&#x27;était pas bon à grand&#x27;chose. Dormir et manger étaient ses occupations favorites; il aimait aussi à jouer de mauvais tours.</p>
 <p>Un dimanche matin, ses parents s&#x27;apprêtaient à aller au temple; assis en bras de chemise sur un coin de la table, il se réjouissait de les voir partir et d&#x27;être son maître pendant une couple d&#x27;heures: «Je vais pouvoir, songeait-il, décrocher le fusil de père, et tirer deux ou trois cartouches sans que personne s&#x27;en aperçoive.»</p>
@@ -104,7 +139,7 @@ h2 + p, .first { text-indent: 0; }
 <p>--Celui-là est habillé exactement comme moi, s&#x27;écria-t-il en joignant les mains de surprise. Alors le petit bonhomme de la glace fit le même geste.</p>
 <p>Le gamin se mit à se tirer les cheveux, à se pincer, à pirouetter sur lui-même; aussitôt l&#x27;homme de la glace imitait ses mouvements.</p>
 <p>Rapidement il fit le tour de la glace pour voir s&#x27;il y avait quelqu&#x27;un caché là derrière. Mais il n&#x27;y avait personne. Il se prit alors à trembler, car il comprenait tout à coup que le tomte l&#x27;avait ensorcelé, et que l&#x27;image reflétée par la glace était son image à lui.</p>
-<h2>LES OIES SAUVAGES</h2>
+<h3 class="sub">Les oies sauvages</h3>
 <p>Cependant le gamin ne pouvait se faire à l&#x27;idée qu&#x27;il était transformé en tomte. «Ce ne peut être qu&#x27;un rêve ou une imagination», pensait-il. Si j&#x27;attends quelques instants, je serai encore un être humain.</p>
 <p>Il se posta devant le miroir et ferma les yeux. Il ne les rouvrit qu&#x27;au bout de quelques minutes, s&#x27;attendant à voir cesser l&#x27;enchantement. Mais non: il était toujours aussi petit. Sauf pour la taille, il était d&#x27;ailleurs exactement comme avant. Les cheveux filasse et les taches de rousseur sur le nez, et les pièces aux culottes de cuir, et le raccommodage des bas, il retrouvait tout, mais à une échelle minuscule.</p>
 <p>Rien ne servait d&#x27;attendre. Il fallait agir. Et ce qu&#x27;il y avait de mieux à faire, c&#x27;était de chercher le tomte pour s&#x27;efforcer de faire la paix avec lui.</p>
@@ -162,7 +197,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Mais juste à ce moment, le jars avait compris ce qu&#x27;il fallait faire pour s&#x27;élever du sol. Il ne put s&#x27;arrêter pour secouer le gamin, et celui-ci fut emporté dans l&#x27;air.</p>
 <p>Il fut enlevé avec une rapidité qui lui donna le vertige. Avant d&#x27;avoir pensé à lâcher prise, il se trouva si haut qu&#x27;il se serait tué s&#x27;il était tombé à terre.</p>
 <p>Il n&#x27;avait plus qu&#x27;à essayer de se hisser sur le dos de l&#x27;oie. Il y parvint, mais avec beaucoup de peine. Il n&#x27;était pas facile non plus de se maintenir sur le dos lisse et glissant, entre les deux ailes battantes. Il dut plonger ses deux mains dans les plumes et le duvet pour ne pas être précipité.</p>
-<h2>L&#x27;ÉTOFFE A CARREAUX</h2>
+<h3 class="sub">L&#x27;étoffe a carreaux</h3>
 <p>Un long moment le gamin eut des vertiges qui l&#x27;empêchèrent de se rendre compte de rien. L&#x27;air sifflait et le fouettait, les ailes frappaient, les plumes vibraient avec un bruit de tempête. Treize oies volaient autour de lui. Toutes caquetaient et battaient des ailes. Les yeux éblouis, les oreilles assourdies, il ne savait si elles volaient haut ou bas ni quel était le but du voyage.</p>
 <p>Enfin il se ressaisit, et comprit qu&#x27;il devait tâcher de savoir où on le conduisait. Mais comment aurait-il le courage de regarder en bas?</p>
 <p>Les oies sauvages ne volaient pas très haut, car leur nouveau compagnon de voyage n&#x27;aurait pu respirer un air trop léger. A cause de lui elles volaient aussi moins vite qu&#x27;à l&#x27;ordinaire.</p>
@@ -175,7 +210,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Le gamin ne put s&#x27;empêcher de rire en contemplant tous ces carreaux.</p>
 <p>Mais quand elles l&#x27;entendirent, les oies sauvages crièrent sur un ton de reproche: «Pays bon et fertile, pays bon et fertile».</p>
 <p>Il reprit vite son sérieux: «Comment, songeait-il, oses-tu rire après la plus terrible mésaventure qui puisse arriver à un être humain?»</p>
-<h2>Il demeura grave un moment, mais bientôt la gaieté le reprit.</h2>
+<p>Il demeura grave un moment, mais bientôt la gaieté le reprit.</p>
 <p>Il s&#x27;habituait à cette façon de voyager, à la vitesse, et pouvait songer à autre chose qu&#x27;à se maintenir sur le dos du jars; il commençait à observer combien l&#x27;espace était rempli de bandes d&#x27;oiseaux, tous en route vers le nord. Et c&#x27;étaient des cris et des appels d&#x27;une bande à l&#x27;autre.</p>
 <p>--Ah! vous voilà, vous avez fait la traversée aujourd&#x27;hui? criaient les uns.</p>
 <p>--Mais oui, mais oui, répondaient les oies. Où en est le printemps ici?</p>
@@ -198,9 +233,8 @@ h2 + p, .first { text-indent: 0; }
 <p>Les oies sauvages s&#x27;abaissaient encore davantage jusqu&#x27;à effleurer presque le sol, puis elles remontaient comme des flèches en faisant semblant d&#x27;être effrayées. «Aï, aï, aï! criaient-elles. Ce n&#x27;étaient pas des oies. Ce n&#x27;étaient que des moutons. Ce n&#x27;étaient que des moutons.»</p>
 <p>Alors les oies domestiques étaient furieuses et criaient: «Puisse-t-on vous fusiller et vous abattre toutes tant que vous êtes, tant que vous êtes!»</p>
 <p>En entendant ces plaisanteries, le gamin riait. Puis, l&#x27;idée de son malheur lui revenant, il pleurait, pour rire de nouveau quelques moments plus tard. Jamais auparavant il n&#x27;avait voyagé avec cette rapidité; il avait toujours aimé aller à cheval, vite, follement vite. Mais naturellement il n&#x27;avait jamais imaginé que l&#x27;air fût là-haut si délicieusement frais ni qu&#x27;on y respirât d&#x27;aussi bonnes senteurs de terre humide et de résine montant du sol. Jamais non plus il ne s&#x27;était rendu compte de ce que ce serait que de voler si haut au-dessus de la terre. C&#x27;était en quelque sorte s&#x27;envoler loin des soucis et des chagrins et des ennuis de toute espèce.</p>
-<h2>II</h2>
-<h2>AKKA DE KEBNEKAÏSE</h2>
-<h2>LE SOIR</h2>
+<h2 class="chapter" id="c2">II — Akka de Kebnekaïse</h2>
+<h3 class="sub">Le soir</h3>
 <p>Le grand jars qui s&#x27;était élancé à la suite des oies sauvages, se sentait très fier de parcourir le pays en leur compagnie et de taquiner et railler les oiseaux domestiques. Mais tout heureux qu&#x27;il fût, il n&#x27;en commença pas moins à se fatiguer vers le soir. Il essaya de respirer plus profondément et de donner des coups d&#x27;ailes plus rapides, mais il eut beau faire, il resta de plusieurs longueurs en arrière.</p>
 <p>Quand les oies de l&#x27;arrière-garde s&#x27;aperçurent que le jars domestique ne pouvait plus les suivre, elles crièrent à celle qui conduisait la bande et qui volait à la pointe de l&#x27;angle: «Akka de Kebnekaïse! Akka de Kebnekaïse!--Qu&#x27;est-ce qu&#x27;il y a?--Le blanc reste en arrière. Le blanc reste en arrière.--Dites-lui, qu&#x27;il est plus facile de voler vite que lentement!» cria Akka en continuant comme auparavant.</p>
 <p>Le jars essaya bien de profiter du conseil et d&#x27;augmenter sa vitesse, mais il se trouva bientôt épuisé et tomba presqu&#x27;au niveau des saules étêtés qui bordaient les routes et les champs.</p>
@@ -264,7 +298,7 @@ h2 + p, .first { text-indent: 0; }
 <p>--Etends maintenant l&#x27;herbe pour que j&#x27;aie quelque chose sous les pieds qui les empêche de coller à la glace! Aide-moi et je t&#x27;aiderai! dit le jars.</p>
 <p>Le gamin obéit, et quand il eut fini, le jars le saisit de nouveau par le col de la chemise et l&#x27;enfonça sous son aile. «Je pense que tu y seras au chaud,» dit-il en refermant son aile.</p>
 <p>Le gamin se trouva si bien enfoui dans le duvet qu&#x27;il ne put répondre; il était en effet au chaud; très fatigué, il ne tarda pas à s&#x27;endormir.</p>
-<h2>LA NUIT</h2>
+<h3 class="sub">La nuit</h3>
 <p>C&#x27;est une vérité reconnue que la glace est perfide et qu&#x27;on a tort de s&#x27;y fier. Au milieu de la nuit la plaque de glace flottante du Vombsjö, changea de place et vint s&#x27;échouer sur la rive. Or il arriva que Smirre, le renard, qui demeurait alors à l&#x27;est du lac dans le parc d&#x27;Œvedskloster s&#x27;en aperçut pendant sa chasse nocturne. Smirre avait vu les oies sauvages dès la veille au soir, mais il n&#x27;avait pas espéré pouvoir en attraper aucune. Il se mit tout de suite en route. Les oies se réveillèrent, et battirent des ailes pour s&#x27;envoler, mais Smirre fut plus rapide. Il fit un bond en avant, saisit l&#x27;une des oies par l&#x27;aile et s&#x27;enfuit avec elle vers la terre.</p>
 <p>Mais cette nuit-là les oies sauvages n&#x27;étaient pas seules; il y avait parmi elles un homme, quelque petit qu&#x27;il fût. Le gamin s&#x27;était réveillé lorsque le jars avait ouvert ses ailes. Il était tombé, et se retrouva tout à coup assis sur la glace, encore ahuri par son brusque réveil. Il n&#x27;avait rien compris à cette alerte, avant de voir un petit chien, bas sur pattes, qui se sauvait à travers la glace, une oie dans la gueule.</p>
 <p>Le gamin se précipita sur ses traces afin de reprendre l&#x27;oie au méchant chien. Il entendit bien que le grand jars criait derrière lui: «Prends garde, Poucet! Prends garde!» Mais Nils ne voyait pas pourquoi il devait avoir peur d&#x27;un aussi petit chien, et il continua à le poursuivre.</p>
@@ -293,7 +327,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Le gamin comprit que le soleil avait dit à tous ces petits êtres: «Éveillez-vous! et sortez de vos demeures! Je suis là. Vous n&#x27;avez plus rien à craindre.»</p>
 <p>On entendit du côté du lac les cris des oies qui se mettaient en rang pour s&#x27;envoler. Quelques moments après, les quatorze oies passèrent au-dessus de la forêt. Nils essaya de les appeler, mais elles volaient trop haut: sa voix ne parvint pas jusqu&#x27;à elles. Elles croyaient sans doute que le renard avait fini par le manger. Elles ne le cherchaient même pas.</p>
 <p>Le gamin aurait voulu pleurer d&#x27;angoisse, mais le soleil rayonnait maintenant dans le ciel; jaune comme l&#x27;or, et joyeux, il semblait donner du cœur à toute la création. «Comprends bien, Nils Holgersson, disait-il, que tu n&#x27;as ni à t&#x27;affliger ni à t&#x27;inquiéter, tant que je suis là.»</p>
-<h2>LE JEU DES OIES</h2>
+<h3 class="sub">Le jeu des oies</h3>
 <p>Lundi, 24 mars.</p>
 <p>Rien n&#x27;arriva plus dans la forêt pendant le temps qu&#x27;il faut à peu près à une oie pour déjeuner, mais vers la fin de la matinée, une oie sauvage solitaire passa, volant sous l&#x27;épais toit des branches. Elle semblait chercher lentement son chemin entre les troncs et les ramées, et avançait très lentement. Dès que Smirre l&#x27;aperçut, il quitta sa place sous le jeune hêtre, et se glissa vers elle. L&#x27;oie n&#x27;évita pas le renard, mais vola tout près de lui. Smirre fit un bond pour l&#x27;atteindre, mais la manqua, et l&#x27;oie continua son chemin vers le lac.</p>
 <p>Peu de moments après, une nouvelle oie apparut. Elle suivit le même chemin que la première, volant encore plus bas, et plus lentement. Elle aussi passa tout près de Smirre le renard, et il fit un grand bond après elle: ses oreilles effleurèrent presque les pattes de l&#x27;oie, mais elle poursuivit son chemin vers le lac, silencieuse comme une ombre.</p>
@@ -303,7 +337,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Puis ce furent cinq oies qui apparurent. Elles volaient mieux que les autres, et bien qu&#x27;elles semblassent vouloir tenter Smirre, il les laissa passer sans essayer de les attraper.</p>
 <p>Un assez long moment s&#x27;écoula; une oie seule apparut. C&#x27;était la treizième. Elle était si vieille, celle-là, qu&#x27;elle était uniformément grise, sans une seule strie foncée. Elle paraissait ne pas pouvoir se bien servir de l&#x27;une de ses ailes, et elle volait piteusement, tout de travers. Parfois elle effleurait presque le sol. Smirre ne se contenta pas de bondir après elle; il la poursuivit en courant et en sautant jusque vers le lac, mais cette fois encore ses efforts furent vains.</p>
 <p>Lorsque la quatorzième oie arriva, ce fut un joli spectacle. Elle était toute blanche; on aurait dit qu&#x27;une éclaircie courait dans la sombre forêt lorsqu&#x27;elle agitait ses grandes ailes. En la voyant, Smirre fit appel à toutes ses forces et sauta, mais l&#x27;oie blanche s&#x27;échappa saine et sauve comme les autres.</p>
-<h2>Il y eut un moment de tranquillité sous les hêtres.</h2>
+<p>Il y eut un moment de tranquillité sous les hêtres.</p>
 <p>Smirre se rappela soudain son prisonnier et leva les yeux vers l&#x27;arbre. Le petit Poucet n&#x27;y était plus, comme on peut bien s&#x27;y attendre.</p>
 <p>Smirre ne put réfléchir longtemps à sa perte, car la première oie revenait du côté du lac, volant lentement sous le feuillage. Malgré sa récente malchance, Smirre fut content de la voir revenir et se jeta à sa poursuite; il n&#x27;avait pas assez calculé son élan; il la manqua.</p>
 <p>Après cette oie il en vint encore une, puis une troisième, une quatrième, une cinquième, jusqu&#x27;à ce que la série s&#x27;achevât avec la vieille oie gris d&#x27;acier et la grande oie blanche. Toutes arrivaient très lentement et très bas; au moment de passer au-dessus de Smirre, elles s&#x27;abaissaient encore, comme pour l&#x27;inviter à sauter. Et Smirre sautait, il faisait des bonds et se lançait à leur poursuite, mais il ne réussit pas à en attraper une seule.</p>
@@ -315,9 +349,8 @@ h2 + p, .first { text-indent: 0; }
 <p>Pourtant les oies sauvages ne se lassaient pas de voler par la forêt et de tourmenter Smirre. Elles n&#x27;eurent aucune pitié, bien que Smirre fût anéanti, tremblant, fou. Elles continuaient encore bien qu&#x27;elles comprissent que Smirre les voyait à peine, bondissant après leurs ombres.</p>
 <p>Ce n&#x27;est que lorsque Smirre se fut affaissé sur un tas de feuilles sèches, impuissant et inerte, prêt à rendre l&#x27;âme, qu&#x27;elles cessèrent le jeu.</p>
 <p>«Tu sauras dorénavant, renard, ce qu&#x27;il en coûte d&#x27;attaquer Akka de Kebnekaïse», crièrent-elles à son oreille, en le laissant enfin.</p>
-<h2>III</h2>
-<h2>AVEC LES OISEAUX SAUVAGES</h2>
-<h2>DANS LA FERME</h2>
+<h2 class="chapter" id="c3">III — Avec les oiseaux sauvages</h2>
+<h3 class="sub">Dans la ferme</h3>
 <p>Jeudi 24 mars.</p>
 <p>Pendant les mêmes journées précisément il se passa en Scanie un événement qui fut très discuté, occupa même les journaux, et que beaucoup de gens qualifièrent de conte, faute de pouvoir en donner une explication.</p>
 <p>Voici l&#x27;histoire: une femelle d&#x27;écureuil avait été prise dans un taillis de coudriers sur les rives du Vombsjö; on l&#x27;avait portée dans une ferme voisine. Jeunes et vieux, tout le monde dans la ferme se réjouissait de regarder la petite bête, si jolie avec sa belle queue, ses yeux intelligents et curieux, et ses mignonnes petites pattes. On comptait se distraire tout l&#x27;été de ses mouvements agiles, de sa façon leste et rapide de décortiquer les noisettes et de ses jeux joyeux. On l&#x27;installa dans une vieille cage à écureuil, composée d&#x27;une petite maison peinte en vert et d&#x27;une roue en fil de fer. La petite maison, qui avait portes et fenêtres, servirait de salle à manger et de chambre à coucher; on y arrangea une couchette de feuilles et on y mit un bol de lait et une poignée de noisettes. La roue devait être la salle de jeu où la petite bête pourrait courir et grimper.</p>
@@ -338,7 +371,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Mais elle était sûre de ce qu&#x27;elle disait, et les pria d&#x27;aller regarder dans la cage. Ils le firent. Il y avait là sur le lit de feuillage quatre petits à demi-nus et demi-aveugles qui avaient au moins deux ou trois jours.</p>
 <p>Quand le patron de la ferme les vit, il dit: «Quoi qu&#x27;il en soit, une chose est certaine: nous devrions avoir honte.» Puis il tira de la cage l&#x27;écureuil et les petits, et les remit dans le tablier de la vieille grand&#x27;mère. «Emporte-les au bois de coudriers, dit-il, et rends-leur la liberté.»</p>
 <p>Tel est l&#x27;événement dont on parla tant jusque dans les journaux, et que beaucoup refusèrent de croire parce qu&#x27;ils ne pouvaient l&#x27;expliquer.</p>
-<h2>DANS LE PARC D&#x27;ŒVEDSKLOSTER</h2>
+<h3 class="sub">Dans le parc d&#x27;œvedskloster</h3>
 <p>Pendant toute la journée que les oies passèrent à se jouer du renard, Nils dormit dans un nid d&#x27;écureuil abandonné. Quand il s&#x27;éveilla vers le soir, il était très inquiet. «Je vais être renvoyé à la maison et ne pourrai éviter de me montrer à père et à mère», pensait-il. Mais quand il alla retrouver les oies qui se baignaient dans le Vombsjö, aucune ne lui parla du retour. «Elles pensent peut-être que le blanc est trop fatigué pour me ramener ce soir», songea-t-il.</p>
 <p>Le lendemain matin les oies étaient éveillées à la première aube, longtemps avant le lever du soleil.</p>
 <p>Nils crut qu&#x27;on allait sûrement le renvoyer, mais chose étrange, lui et le jars blanc purent suivre les oies sauvages dans leur promenade du matin.</p>
@@ -384,9 +417,8 @@ h2 + p, .first { text-indent: 0; }
 <p>--Non, dit le gamin, je ne regretterai rien. Je ne me suis jamais trouvé aussi bien qu&#x27;ici avec vous.</p>
 <p>--Alors qu&#x27;il en soit comme tu le désires.</p>
 <p>--Merci, répondit Nils. Il était si heureux qu&#x27;il pleura de joie comme auparavant il avait pleuré de chagrin.</p>
-<h2>IV</h2>
-<h2>GLIMMINGEHUS</h2>
-<h2>LES RATS NOIRS ET LES RATS GRIS</h2>
+<h2 class="chapter" id="c4">IV — Glimmingehus</h2>
+<h3 class="sub">Les rats noirs et les rats gris</h3>
 <p>Dans le sud-est de la Scanie, non loin de la mer, s&#x27;élève un vieux château, appelé Glimmingehus. Il se compose d&#x27;un seul corps de bâtiment en pierre, haut, grand et solide. On le voit à plusieurs milles dans la plaine. Il n&#x27;a pas plus de quatre étages, mais il est si énorme qu&#x27;une maison ordinaire, bâtie dans la cour, a l&#x27;air d&#x27;une maison de poupée.</p>
 <p>Les murs extérieurs, les murs intérieurs et les voûtes de ce château sont si épais qu&#x27;à peine y a-t-il place dans l&#x27;intérieur pour autre chose. Les escaliers sont étroits, les vestibules petits et les salles peu nombreuses. Pour que les murs aient toute leur solidité, il n&#x27;y a qu&#x27;un petit nombre de fenêtres aux étages supérieurs; au rez-de-chaussée il n&#x27;y en a aucune, mais seulement d&#x27;étroites lucarnes. Au temps des vieilles guerres, les hommes étaient aussi contents de s&#x27;enfermer dans une telle construction solide et imposante qu&#x27;ils le sont, de nos jours, d&#x27;endosser une pelisse en plein hiver. Mais quand vint le bon temps de la paix, ils ne voulurent plus vivre dans les salles de pierre sombres et froides du vieux château. Ils ont depuis longtemps abandonné le vaste Glimmingehus pour s&#x27;installer en des demeures pénétrables à la lumière et à l&#x27;air.</p>
 <p>Au temps où Nils Holgersson errait çà et là avec les oies sauvages, il n&#x27;y avait donc aucun être humain à Glimmingehus, qui toutefois ne manquait pas d&#x27;habitants. Sur le toit un couple de cigognes occupait chaque été un large nid; dans le grenier vivaient deux chouettes; dans les couloirs secrets des murs étaient suspendues des chauves-souris; un vieux chat s&#x27;était installé dans l&#x27;âtre de la cuisine, et dans la cave il y avait quelques centaines de rats de la vieille espèce noire.</p>
@@ -398,7 +430,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Le vieux château possédait des murs si sûrs, et un si petit nombre de passages les traversait que les rats noirs avaient réussi à en défendre l&#x27;accès. D&#x27;année en année, de nuit en nuit, la lutte avait duré entre défenseurs et assiégeants; les rats noirs faisaient bonne garde et se battaient avec le plus grand mépris de la mort; grâce au vieux château ils avaient été victorieux.</p>
 <p>Il faut l&#x27;avouer, au temps de leur puissance, les rats noirs avaient été aussi détestés de toutes les autres créatures vivantes que les rats gris l&#x27;étaient maintenant, et avec raison. Ils s&#x27;étaient attaqué à de pauvres prisonniers enchaînés dans les cachots, ils avaient gloutonnement dévoré des cadavres, ils avaient volé le dernier navet dans la cave du pauvre, mordu les pieds des oies endormies, saccagé les nids des poules en ravissant les œufs et les poussins, bref ils avaient commis mille méfaits. Mais depuis qu&#x27;ils étaient tombés dans l&#x27;infortune, tout semblait oublié, et l&#x27;on ne pouvait pas ne pas admirer les derniers de la race qui avaient tenu bon, si longtemps, contre leurs ennemis.</p>
 <p>Les rats gris, qui habitaient le domaine de Glimminge et le pays environnant, continuaient toujours la guerre, en guettant l&#x27;occasion de s&#x27;emparer du château. Il semblerait qu&#x27;ils eussent pu laisser tranquille dans Glimmingehus la petite tribu de rats noirs, maintenant qu&#x27;ils possédaient tout le reste du pays; mais telle n&#x27;était point leur idée. Ils disaient que c&#x27;était pour eux un point d&#x27;honneur de vaincre les rats noirs; ceux qui les connaissaient savaient bien que c&#x27;était simplement parce que les hommes employaient Glimmingehus comme magasin de céréales, que les rats gris étaient si impatients de s&#x27;en emparer.</p>
-<h2>LA CIGOGNE</h2>
+<h3 class="sub">La cigogne</h3>
 <p>Lundi, 28 mars.</p>
 <p>Un matin de bonne heure les oies sauvages qui dormaient debout sur la glace du Vombsjö furent éveillées par des cris aigus qui venaient du ciel. «Trirope, trirope! criait-on. Trianute, la grue, salue Akka, l&#x27;oie sauvage, et sa bande. Elle lui fait savoir que c&#x27;est demain la grande danse des grues à Kullaberg.»</p>
 <p>Akka tendit tout de suite le cou et répondit: «Salut et merci! Salut et merci!»</p>
@@ -434,7 +466,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Les douze rats noirs ne répliquaient pas un mot, mais la cigogne, malgré son ennui, ne put s&#x27;empêcher de taquiner un peu le chat. «N&#x27;aie crainte, matou!» dit-elle. Ne vois-tu pas que mère Akka et Poucet sont venus sauver le château? Tu peux être sûr qu&#x27;ils réussiront. Maintenant je vais me mettre à dormir, et je le fais avec la plus entière tranquillité. Demain, lorsque nous nous réveillerons, il n&#x27;y aura sûrement pas un seul rat gris à Glimmingehus.»</p>
 <p>Le gamin cligna de l&#x27;œil vers Akka, et lui fit signe qu&#x27;il voulait pousser et faire tomber par terre la cigogne lorsqu&#x27;elle se serait endormie, posée sur une seule patte à l&#x27;extrême bord du nid, mais Akka le retint. Elle n&#x27;avait nullement l&#x27;air fâché: «Ce serait malheureux si à mon âge on ne savait pas se tirer de pires difficultés que celle-ci. Si seulement le couple des chouettes, qui peuvent se tenir éveillées toute la nuit, veut porter quelques messages de ma part, je pense que tout ira bien.»</p>
 <p>Les deux chouettes se déclarèrent prêtes à exécuter ses ordres; Akka chargea le mari de rejoindre les rats noirs qui étaient partis, et de leur dire de revenir sur-le-champ. La mère chouette fut envoyée auprès de Flamméa, l&#x27;effraie, qui habitait la cathédrale de Lund. Elle devait porter un message si secret qu&#x27;à peine Akka osa-t-elle le lui chuchoter à voix basse.</p>
-<h2>LE CHARMEUR DE RATS</h2>
+<h3 class="sub">Le charmeur de rats</h3>
 <p>Il était près de minuit, lorsqu&#x27;enfin les rats gris découvrirent un soupirail laissé ouvert. Il était placé assez haut dans le mur, mais les rats firent la courte échelle, et bientôt le plus hardi d&#x27;entre eux se trouva dans l&#x27;ouverture, prêt à s&#x27;introduire dans le château, sous les murs duquel tant de ses ancêtres étaient tombés.</p>
 <p>Le rat gris resta un moment immobile dans le soupirail, s&#x27;attendant à être attaqué. Le corps principal de l&#x27;armée des défenseurs était certes parti, mais le rat gris supposait que les rats noirs laissés au château ne se rendraient pas sans combat. Le cœur palpitant, il épia les moindres bruits, mais tout demeurait silencieux. Alors le chef des rats gris s&#x27;enhardit et sauta dans la cave obscure.</p>
 <p>Les autres suivirent leur chef l&#x27;un après l&#x27;autre. Ils se glissaient dans le château avec beaucoup de prudence, et s&#x27;attendaient à des surprises. Ils ne poussèrent plus avant que lorsqu&#x27;il n&#x27;y eut plus de place pour de nouveaux envahisseurs sur le plancher.</p>
@@ -448,8 +480,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Quand le petit bonhomme eut attiré tous les rats gris hors de Glimmingehus, il se mit à marcher lentement sur le chemin, et tous le suivirent. Les notes du fifre étaient si douces à leurs oreilles qu&#x27;ils ne pouvaient leur résister.</p>
 <p>Le petit homme les précédant, les entraîna du côté de Vallby. Il les conduisait par mille méandres à travers haies et fossés; partout où il allait, ils le suivaient. Il jouait toujours de son fifre, qui semblait fait d&#x27;une corne d&#x27;animal, mais si petite qu&#x27;aucune bête de nos jours n&#x27;en possède de pareille. Personne n&#x27;aurait pu dire qui l&#x27;avait fabriqué. Flamméa, l&#x27;effraie, l&#x27;avait trouvé dans une niche de la tour de la cathédrale de Lund. Elle l&#x27;avait montré à Bataki, le corbeau, et tous deux s&#x27;étaient avisés que c&#x27;était une de ces cornes dont on se servait autrefois pour se rendre maître des rats et des souris. Le corbeau était l&#x27;ami d&#x27;Akka, et c&#x27;est de lui qu&#x27;elle avait appris que Flamméa possédait un tel trésor.</p>
 <p>Et certes les rats ne pouvaient résister au fifre. Le gamin les précéda en jouant aussi longtemps que dura la lumière des étoiles, et ils ne cessèrent pas de le suivre. Il joua à l&#x27;aube, il joua au lever du soleil, et toujours la foule des rats gris l&#x27;accompagnait, entraînée de plus en plus loin des vastes greniers à blé de Glimmingehus.</p>
-<h2>V</h2>
-<h2>LA GRANDE DANSE DES GRUES A KULLABERG</h2>
+<h2 class="chapter" id="c5">V — La grande danse des grues a Kullaberg</h2>
 <p>Mardi, 29 mars.</p>
 <p>Kullaberg est une montagne basse, longue, nullement grande ni puissante; son large sommet porte des champs, des bois et quelques petites landes; çà et là surgissent des renflements couverts de bruyère et de rocs nus; là-haut le paysage n&#x27;est pas particulièrement beau; il a l&#x27;aspect de la plupart des contrées élevées de Scanie.</p>
 <p>Quiconque suit le chemin du sommet est un peu déçu. Mais qu&#x27;il s&#x27;écarte de la piste, s&#x27;approche des flancs de la montagne, et jette un coup d&#x27;œil vers les pentes abruptes; il découvrira une foule de choses curieuses, et se demandera comment il pourra les examiner toutes. Kullaberg en effet ne repose pas comme tant d&#x27;autres montagnes sur la terre, entourée de plaines et de vallées: elle s&#x27;est élancée dans la mer aussi loin qu&#x27;elle a pu. Nulle bande de terre ne s&#x27;étend à ses pieds et ne la protège contre les vagues. Celles-ci atteignent ses murailles et ont eu le loisir de les former et de les user à leur guise. Aussi ces murailles se dressent-elles, ouvrées et sculptées par la mer et son auxiliaire le vent. Il y a des précipices taillés dans la falaise, et des pics noirs polis sous les coups de fouets incessants du vent. Il y a des colonnes isolées qui surgissent de l&#x27;eau, et de sombres cavernes aux entrées étroites. Il y a des escarpements verticaux et nus, et de douces pentes envahies par la végétation. Il y a de petits promontoires et de petites baies et de petits galets que les lames roulent dans un perpétuel bruissement. Il y a de superbes portails de pierre qui ouvrent leurs voûtes au-dessus de l&#x27;eau; il y a des récifs pointus que noie à chaque instant une écume blanche, et d&#x27;autres qui se mirent dans une eau glauque et noire, éternellement tranquille. Il y a des marmites géantes creusées dans le roc; d&#x27;énormes crevasses incitent le promeneur à se risquer dans l&#x27;intérieur de la montagne jusqu&#x27;à la caverne du gnome de Kullen.</p>
@@ -483,8 +514,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Mais les cerfs cessèrent leurs combats, et un murmure se propagea de colline en colline: «Les grues arrivent.»</p>
 <p>Ils arrivaient en effet, les oiseaux gris, vêtus de crépuscule, aux ailes ornées de longues plumes flottantes, une aigrette rouge sur la nuque. Les grands oiseaux aux longues pattes, aux fins cous déliés, aux petites têtes, descendirent la pente comme en glissant, et saisis d&#x27;un vertige mystérieux. Tout en glissant en avant, ils tournaient sur eux-mêmes, moitié volant, moitié dansant. Les ailes élégamment relevées, ils se mouvaient avec une rapidité incompréhensible. Leur danse avait quelque chose de singulier et d&#x27;étrange. On eût dit des ombres grises jouant un jeu que l&#x27;œil suivait difficilement, et ce jeu, il semblait qu&#x27;elles l&#x27;eussent appris des brouillards qui flottent sur les marécages déserts. Cela tenait du sortilège. Tous ceux qui venaient pour la première fois au mont Kullaberg comprirent enfin pourquoi la réunion était appelée la danse des grues. Il y avait de la sauvagerie dans cette danse, mais le sentiment qu&#x27;elle éveillait dans le spectateur n&#x27;en était pas moins une douce langueur. Personne ne songeait plus à lutter. Mais tous, ceux qui avaient des ailes et ceux qui n&#x27;en avaient pas, aspiraient à s&#x27;élever au-dessus des nuages, à chercher ce qu&#x27;il y avait derrière, à abandonner le corps pesant qui les entraînait vers la terre, à s&#x27;envoler vers le ciel.</p>
 <p>Cette nostalgie de l&#x27;inaccessible, de ce qui est caché au delà de la vie, les animaux ne la ressentent qu&#x27;une fois par an, et c&#x27;est en voyant la grande danse des grues.</p>
-<h2>VI</h2>
-<h2>TEMPS DE PLUIE</h2>
+<h3 class="sub">Vi — Temps de pluie</h3>
 <p>Mercredi, 30 mars.</p>
 <p>C&#x27;était le premier jour de pluie du voyage. Tant que les oies étaient restées dans les environs du Vombsjö, il avait fait beau. Mais le jour où elles se mirent en route vers le nord, il commença à pleuvoir; pendant plusieurs heures, le gamin dut rester sur le dos du jars, trempé et grelottant.</p>
 <p>Le matin, quand on était parti, le ciel était clair et calme. Les oies avaient volé très haut, régulièrement, sans hâte et strictement en ordre, Akka en tête, les autres sur deux rangs, en triangle. Elles n&#x27;avaient pas pris le temps de crier des méchancetés aux bêtes de la terre, mais comme elles étaient incapables de rester tout à fait silencieuses, elles lançaient continuellement, au rythme de leurs battements d&#x27;ailes, leur cri d&#x27;appel: «Où es-tu? Me voici! Où es-tu? Me voici!»</p>
@@ -510,8 +540,7 @@ h2 + p, .first { text-indent: 0; }
 <p>--Vole avec moi jusqu&#x27;au clocher, hibou, et je te dirai tout. J&#x27;ai peur que quelqu&#x27;un ne nous entende ici dans la rue.»</p>
 <p>Les oiseaux de nuit s&#x27;envolèrent. Nils lança sa casquette en l&#x27;air: «Si je veille sur le jars et le ramène sain et sauf, je redeviendrai homme. Hourrah! hourrah! Je redeviendrai homme.»</p>
 <p>Il est étrange qu&#x27;on ne l&#x27;ait pas entendu dans les maisons, tant il criait fort. Il courut à toutes jambes rejoindre les oies sauvages dans le marais humide.</p>
-<h2>VII</h2>
-<h2>LA VALLÉE DE LA RIVIÈRE DE RONNEBY</h2>
+<h2 class="chapter" id="c6">VII — La vallée de la rivière de Ronneby</h2>
 <p>Vendredi, 1er avril.</p>
 <p>Ni Smirre le renard ni les oies sauvages n&#x27;avaient cru qu&#x27;ils se rencontreraient jamais après avoir quitté la Scanie. Or nous avons vu que les oies sauvages avaient dû choisir le chemin du Blekinge, et c&#x27;est là que s&#x27;était réfugié Smirre. Il avait séjourné dans le nord de la province, mais il n&#x27;y avait point vu de grands parcs seigneuriaux remplis de chevreuils et de délicats broquarts. Il était on ne peut plus mécontent.</p>
 <p>Un après-midi qu&#x27;il flânait dans une contrée déserte et pauvre, non loin de la rivière de Ronneby, il aperçut une bande d&#x27;oies qui traversait l&#x27;air. Il remarqua tout de suite que l&#x27;une d&#x27;elles était blanche et comprit à qui il avait affaire. Il les vit voler vers l&#x27;est jusqu&#x27;au-dessus de la rivière. Puis elles changèrent de direction et suivirent la rivière vers le sud. Il comprit qu&#x27;elles cherchaient un gîte pour la nuit au bord de l&#x27;eau, et espéra pouvoir s&#x27;emparer d&#x27;une ou deux d&#x27;entre elles sans trop de mal.</p>
@@ -548,8 +577,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Ce cri éveilla Akka, l&#x27;oie-guide; bien qu&#x27;elle ne pût rien voir, elle reconnut la voix. «C&#x27;est toi Smirre, qui rôdes dans la nuit? dit-elle.--Oui, répondit Smirre, c&#x27;est moi. Je voudrais savoir ce que vous pensez de la nuit que vous avez eue grâce à moi.--Veux-tu dire que c&#x27;est toi qui nous as envoyé la martre et la loutre?--Pourquoi nier un bel exploit? Vous avez une fois joué avec moi le jeu des oies. Maintenant j&#x27;ai commencé avec vous le jeu des renards, et je ne l&#x27;interromprai pas tant qu&#x27;une seule d&#x27;entre vous sera encore vivante, dussé-je vous poursuivre à travers tout le pays.--Écoute, Smirre, est-ce bien de ta part, à toi qui es armé de dents et de griffes, de poursuivre ainsi des êtres sans défense?»</p>
 <p>Smirre s&#x27;imagina que la peur faisait parler Akka; il se hâta de proposer: «Akka, si tu veux me jeter ce Poucet qui tant de fois m&#x27;a résisté, je te promets de faire la paix avec toi. Je ne poursuivrai plus jamais personne de ta bande.--Te livrer Poucet! s&#x27;écria Akka, tu n&#x27;y penses pas! De la plus jeune jusqu&#x27;à la plus vieille d&#x27;entre nous, nous donnerions volontiers notre vie pour lui.--Vous l&#x27;aimez tant que ça, dit Smirre, alors je vous promets qu&#x27;il sera le premier d&#x27;entre vous sur qui je me vengerai.»</p>
 <p>Akka ne répondit plus rien. Smirre poussa encore quelques longs hurlements, puis le silence se fit. Nils ne pouvait toujours pas dormir. Cette fois c&#x27;était la réponse d&#x27;Akka au renard qui le tenait éveillé. Jamais il n&#x27;aurait cru qu&#x27;il entendrait une chose semblable, ni que personne se déclarerait prêt à risquer sa vie pour lui. A partir de ce moment on ne put plus dire de Nils Holgersson qu&#x27;il n&#x27;aimait personne.</p>
-<h2>VIII</h2>
-<h2>KARLSKRONA</h2>
+<h2 class="chapter" id="c7">VIII — Karlskrona</h2>
 <p>Samedi, 2 avril.</p>
 <p>C&#x27;était à Karlskrona, un soir de clair de lune. Il faisait un temps beau et calme, mais dans la journée une tempête avait sévi; il avait plu; les habitants de la ville s&#x27;imaginaient probablement que le mauvais temps continuait, car il n&#x27;y avait personne dans les rues.</p>
 <p>La ville semblait déserte quand Akka et sa bande y arrivèrent. Il était tard déjà, et les oies étaient à la recherche d&#x27;un gîte sûr dans les îles. Elles n&#x27;osaient pas rester sur la terre ferme par peur de Smirre le renard.</p>
@@ -605,8 +633,7 @@ h2 + p, .first { text-indent: 0; }
 <p>--Merci, Rosenbom. C&#x27;est bien dit, tu es un brave homme... Mais qu&#x27;est-ce que c&#x27;est que ça, Rosenbom?</p>
 <p>Il montrait Nils Holgersson debout sur le crâne nu de Rosenbom. Mais Nils n&#x27;avait plus peur: il agita son bonnet et cria: «Hourrah, hourrah pour l&#x27;homme à la grosse lèvre!»</p>
 <p>L&#x27;homme de bronze frappa la terre avec son gros bâton, mais le gamin ne put jamais savoir ce qu&#x27;il comptait faire, car à cet instant le soleil se leva; aussitôt l&#x27;homme de bronze et l&#x27;homme de bois disparurent comme s&#x27;ils avaient été faits de brouillards. Pendant qu&#x27;il restait encore là à les chercher des yeux, les oies sauvages s&#x27;envolèrent du toit de l&#x27;église et se mirent à planer sur la ville. Tout à coup, elles aperçurent Nils Holgersson, et le grand jars blanc fendit l&#x27;air et descendit le chercher.</p>
-<h2>IX</h2>
-<h2>VOYAGE A ŒLAND</h2>
+<h2 class="chapter" id="c8">IX — Voyage a Œland</h2>
 <p>Samedi, 3 avril.</p>
 <p>Les oies sauvages étaient allées paître sur un îlot voisin de la côte. Elles y rencontrèrent des oies grises qui furent fort surprises de les voir, sachant que d&#x27;ordinaire leurs parentes sauvages n&#x27;approchent pas de la côte. Elles étaient curieuses et indiscrètes et n&#x27;eurent de cesse que les arrivantes ne leur eussent conté la poursuite du renard. Le récit fini, une oie grise, qui semblait l&#x27;égale d&#x27;Akka pour l&#x27;âge et l&#x27;expérience, leur dit: «C&#x27;est un grand malheur pour vous que le renard ait été exilé de son pays. Il tiendra parole et vous suivra jusqu&#x27;en Laponie. Si j&#x27;étais vous, je ne volerais pas à travers le Smâland, je prendrais le chemin extérieur, et passerais par l&#x27;île d&#x27;Œland. Il perdrait votre trace. Et pour le dépister encore plus, vous feriez mieux de vous arrêter deux ou trois jours à la pointe sud de l&#x27;île. La nourriture y est abondante et la société également. Je ne crois pas que vous regretteriez votre voyage.»</p>
 <p>Le conseil était bon, et les oies sauvages résolurent de le suivre. Dès qu&#x27;elles furent rassasiées, elles se mirent en route pour Œland. Aucune d&#x27;elles n&#x27;y avait encore été, mais l&#x27;oie grise leur avait donné de bons points de repère. Elles n&#x27;avaient qu&#x27;à aller droit vers le sud jusqu&#x27;à ce qu&#x27;elles rencontrassent la grande route des oiseaux de passage, au large, le long de la côte du Blekinge. Tous les oiseaux qui ont leur séjour d&#x27;hiver sur la mer de l&#x27;Ouest, et qui au printemps vont en Finlande ou en Russie, suivent cette route; en passant ils font escale à Œland pour se reposer. Les oies sauvages ne manqueraient pas de guides.</p>
@@ -626,7 +653,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Tous savaient très bien où se trouvait l&#x27;île, mais ils faisaient leur possible pour se faire perdre mutuellement la tête. «Regardez donc ces fuligules! criait une voix dans le brouillard. Ils retournent vers la mer du Nord.--Prenez garde, oies grises, criait une autre voix. Si vous continuez dans cette direction, vous arriverez à l&#x27;île de Rügen.»</p>
 <p>Il n&#x27;y avait aucun danger de se perdre pour ceux qui avaient l&#x27;habitude de la traversée, mais pour les oies sauvages, ce fut dur. Les loustics ne furent pas longs à s&#x27;apercevoir qu&#x27;elles n&#x27;étaient pas sûres du chemin.</p>
 <p>--Où allez-vous, bonnes gens? cria un cygne.</p>
-<h2>Il vola droit sur Akka, l&#x27;air compatissant et grave.</h2>
+<p>Il vola droit sur Akka, l&#x27;air compatissant et grave.</p>
 <p>--Nous nous rendons à Œland, mais nous n&#x27;y avons encore jamais été, dit Akka.</p>
 <p>Elle croyait pouvoir se fier à cet oiseau.</p>
 <p>--C&#x27;est malheureux, dit le cygne. On vous a égarées. Vous allez vers le Blekinge. Venez avec moi et je vous montrerai le chemin.</p>
@@ -638,8 +665,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Nils s&#x27;accrocha au cou du jars. Voilà ce qu&#x27;il redoutait depuis un moment.</p>
 <p>Nul ne sait quand on serait arrivé si l&#x27;on n&#x27;avait tout à coup entendu une détonation qui roulait sourdement.</p>
 <p>Akka tendit le cou, fit claquer ses ailes et s&#x27;élança à toute vitesse. Elle avait enfin quelque chose sur quoi se guider. L&#x27;oie grise lui avait dit de ne pas descendre sur l&#x27;extrême pointe d&#x27;Œland, car les hommes y avaient installé un canon avec lequel ils tiraient dans le brouillard. Elle connaissait enfin la direction et désormais personne au monde ne l&#x27;égarerait plus.</p>
-<h2>X</h2>
-<h2>LA POINTE MÉRIDIONALE D&#x27;ŒLAND</h2>
+<h2 class="chapter" id="c9">X — La pointe méridionale d&#x27;œland</h2>
 <p>3-6 avril.</p>
 <p>Dans la partie la plus méridionale d&#x27;Œland, s&#x27;élève un vieux manoir royal appelé Ottenby. C&#x27;est un assez vaste domaine qui s&#x27;étend à travers l&#x27;île d&#x27;une côte à l&#x27;autre. Il a toujours été le refuge aimé d&#x27;une foule d&#x27;animaux. Au dix-septième siècle, quand les rois venaient chasser à Œland, le domaine n&#x27;était qu&#x27;un vaste parc à cerfs. Au dix-huitième siècle il y eut là un haras, où l&#x27;on élevait de nobles chevaux de race, et une bergerie où l&#x27;on nourrissait des centaines de moutons. De nos jours il n&#x27;y a à Ottenby ni chevaux pur sang ni brebis. On y nourrit un grand nombre de poulains destinés à nos régiments de cavalerie.</p>
 <p>Il ne peut guère y avoir dans tout le pays un endroit plus favorable aux animaux. Le long de la côte est s&#x27;étend l&#x27;ancien pâturage aux moutons qui a près de trois kilomètres de long; c&#x27;est le plus vaste pré de toute l&#x27;île; les animaux peuvent y paître, y jouer, et s&#x27;y ébattre à leur aise. Il y a aussi le célèbre bois d&#x27;Ottenby, avec ses chênes centenaires sous lesquels on est à l&#x27;abri du soleil et du terrible vent d&#x27;Œland. Il ne faut pas oublier non plus le long mur d&#x27;Ottenby, qui va d&#x27;une côte à l&#x27;autre et sépare le domaine du reste de l&#x27;île; il indique aux animaux jusqu&#x27;où s&#x27;étend le vieux domaine royal, et les avertit de ne pas s&#x27;aventurer sur une autre terre où ils seraient moins bien protégés.</p>
@@ -700,8 +726,7 @@ h2 + p, .first { text-indent: 0; }
 <p>--Je suis ici, jars; je suis ici. Je viens de prendre un bain matinal.</p>
 <p>Et la petite oie grise sortit de l&#x27;eau, saine et sauve. Elle raconta que Poucet lui avait remis l&#x27;aile en place, et qu&#x27;elle était guérie et prête à suivre les autres.</p>
 <p>Les gouttes d&#x27;eau faisaient comme un ruissellement de perles sur son plumage chatoyant, et de nouveau Nils se dit que c&#x27;était une vraie petite princesse.</p>
-<h2>XI</h2>
-<h2>LE GRAND PAPILLON</h2>
+<h2 class="chapter" id="c10">XI — Le grand papillon</h2>
 <p>Mercredi, 6 avril.</p>
 <p>Les oies longèrent l&#x27;île étroite que de là-haut elles voyaient en entier. Le gamin se sentait le cœur léger. Il était aussi heureux que la veille il avait été découragé et triste lorsqu&#x27;il avait erré dans l&#x27;île à la recherche du jars. Il semblait que l&#x27;intérieur de l&#x27;île fût un haut plateau dénudé, entouré d&#x27;une large bande de terre riche et fertile le long des côtes. Nils commença à comprendre le sens de quelque chose qu&#x27;il avait entendu raconter la veille au soir.</p>
 <p>Il se reposait au pied d&#x27;un des nombreux moulins à vent qui se dressent sur le plateau, lorsque deux bergers s&#x27;étaient approchés, escortés de leurs chiens, et précédés d&#x27;un grand troupeau de moutons. Le gamin ne s&#x27;était pas dérangé, car il était bien caché sous les marches du moulin, mais le hasard avait voulu que les deux bergers vinssent s&#x27;installer sur le même escalier, et Nils avait dû rester à sa place jusqu&#x27;à leur départ.</p>
@@ -710,7 +735,7 @@ h2 + p, .first { text-indent: 0; }
 <p>--Je vais te dire quelque chose, Erik, dit le vieillard. J&#x27;ai réfléchi, et je crois que jadis, dans le temps où hommes et bêtes étaient beaucoup plus grands que maintenant, les papillons ont dû être immensément grands. Il y avait une fois un papillon long de plusieurs milles; ses ailes étaient larges comme des lacs, bleues, avec des reflets d&#x27;argent, et si belles que tous les autres animaux s&#x27;arrêtaient pour contempler le papillon lorsqu&#x27;il volait.</p>
 <p>Malheureusement il était trop grand. Ses ailes le portaient difficilement. Tout se serait encore bien passé si seulement il avait eu la prudence de ne voler qu&#x27;au-dessus de la terre. Mais il se risqua sur la Baltique. Il n&#x27;était pas allé loin que déjà la tempête secouait ses ailes. Tu comprends, Erik, ce qui devait arriver lorsque de fragiles ailes de papillon étaient exposées à la tempête de la Baltique. Elles furent vite arrachées et emportées par les rafales, et le pauvre papillon tomba dans la mer. Il y fut ballotté par les vagues, jusqu&#x27;à ce qu&#x27;il échouât sur quelques écueils devant la côte du Smâland. Et là il resta, étendu tout de son long.</p>
 <p>Je suppose, Erik, que si le corps du papillon avait reposé sur la terre, il aurait vite pourri, et serait tombé en poussière. Mais comme il était tombé dans la mer, il s&#x27;y imprégna de chaux et devint dur comme de la pierre. Tu te rappelles, nous avons trouvé sur la rive des pierres qui sont des vers pétrifiés. Je crois que c&#x27;est ce qui est arrivé au corps du grand papillon. Je crois qu&#x27;il est devenu un long et étroit rocher au milieu de la Baltique. Qu&#x27;en penses-tu?</p>
-<h2>Il s&#x27;arrêta pour attendre une réponse; le camarade hocha la tête.</h2>
+<p>Il s&#x27;arrêta pour attendre une réponse; le camarade hocha la tête.</p>
 <p>--Continue, et dis-moi où tu veux en venir?</p>
 <p>--Remarque bien, Erik, que cet Œland où nous vivons, toi et moi, n&#x27;est autre chose que ce corps de papillon. Il n&#x27;y a qu&#x27;à réfléchir pour voir que l&#x27;île est bien un papillon. Au nord, on aperçoit le corselet étroit et la tête ronde; au sud, c&#x27;est l&#x27;abdomen, qui d&#x27;abord s&#x27;élargit, puis s&#x27;amincit et finit en pointe.</p>
 <p>Il s&#x27;arrêta un moment et jeta un regard inquiet sur son camarade pour voir comment il prendrait cette assertion, mais le jeune homme continuait à manger tranquillement son pain et lui fit seulement signe de poursuivre son récit.</p>
@@ -725,9 +750,8 @@ h2 + p, .first { text-indent: 0; }
 <p>--Je voudrais savoir, continua le vieillard, si aucun d&#x27;eux n&#x27;a eu le désir de donner aux moulins des ailes si grandes qu&#x27;elles pussent monter dans le ciel, si grandes qu&#x27;elles auraient la force de soulever toute l&#x27;île hors de la mer et de la faire voler comme un papillon parmi les papillons?</p>
 <p>--Il y a du vrai dans ce que tu dis, répliqua le jeune homme, car les nuits d&#x27;été, lorsque le ciel forme une immense voûte bleue au-dessus de l&#x27;île, il m&#x27;a bien semblé parfois qu&#x27;elle voulait s&#x27;élever de la mer et s&#x27;envoler.</p>
 <p>Mais le vieillard qui avait enfin amené le jeune homme à parler, ne l&#x27;écoutait pas: «Je voudrais savoir, continua-t-il encore plus bas, si quelqu&#x27;un pourrait m&#x27;expliquer pourquoi ici, sur le plateau, on éprouve cette nostalgie; je l&#x27;ai sentie tous les jours de ma vie, et je crois qu&#x27;elle s&#x27;insinue dans la poitrine de tous ceux qui vivent ici. Je voudrais savoir si personne n&#x27;a compris que cette langueur vient simplement de ce que l&#x27;île entière est un papillon qui aspire après ses ailes.»</p>
-<h2>XII</h2>
-<h2>LA PETITE ILE KARL</h2>
-<h2>LA TEMPÊTE</h2>
+<h2 class="chapter" id="c11">XII — La petite ile Karl</h2>
+<h3 class="sub">La tempête</h3>
 <p>Vendredi, 8 avril.</p>
 <p>Les oies sauvages avaient passé la nuit à la pointe nord de l&#x27;île et se dirigeaient vers la terre ferme. Un vent du sud assez fort soufflait dans le détroit de Kalmar et les avait jetées vers le nord. Elles n&#x27;en volaient pas moins avec une bonne vitesse vers la terre; elles approchaient déjà des premiers îlots de la côte; tout à coup elles entendirent un bruit puissant, comme si une foule d&#x27;oiseaux aux fortes ailes venaient derrière elles; subitement l&#x27;eau devint noire. Akka arrêta net le mouvement de ses ailes et se laissa tomber vers la mer. Mais avant que les oies eussent atteint l&#x27;eau, la tempête d&#x27;ouest les surprit. Elle chassait déjà devant elle des nuages de poussière, de l&#x27;écume salée et des petits oiseaux; elle entraîna aussi les oies sauvages, les culbuta et les rejeta vers le large.</p>
 <p>Ce fut une tempête épouvantable. Les oies essayèrent à maintes reprises de revenir en arrière, mais elles ne purent, et furent emportées à la dérive dans la Baltique. La tempête les eut bientôt entraînées au delà d&#x27;Œland; la mer s&#x27;étendait, vide et déserte, devant elles. Il n&#x27;y avait qu&#x27;à céder à la violence du vent.</p>
@@ -740,7 +764,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Vers le soir, comme la tempête ne semblait point vouloir s&#x27;apaiser, Akka commença à se demander si elle et toute la bande allaient périr. Elles étaient à bout de forces, et ne découvraient aucun refuge. On n&#x27;osait même plus flotter un moment sur l&#x27;eau, car la mer s&#x27;était couverte de grands bancs de glace qui s&#x27;entre-choquaient et auraient pu écraser les oies. Elles essayèrent bien de se poser sur la glace, mais le vent les balaya; une autre fois les cruels phoques grimpèrent sur la glace.</p>
 <p>Au coucher du soleil, les oies volaient encore, angoissées devant l&#x27;approche de la nuit. Les ténèbres semblaient tomber plus tôt qu&#x27;à l&#x27;ordinaire ce soir si rempli de dangers.</p>
 <p>Et toujours pas de terre. Le ciel était couvert, la lune était cachée et les ténèbres s&#x27;épaississaient. La nuit se remplissait d&#x27;épouvante et faisait trembler les cœurs les plus braves. Des cris d&#x27;oiseaux de passage en détresse avaient retenti sur la mer toute la journée, sans que personne y eût fait grande attention, mais maintenant qu&#x27;on ne voyait plus d&#x27;où ils partaient, ils paraissaient sinistres et effrayants. Là-bas sur la mer, les blocs de glace s&#x27;entre-choquaient avec un grand bruit. Les phoques faisaient entendre leurs féroces chants de chasse. Le ciel et la terre semblaient vouloir s&#x27;écrouler.</p>
-<h2>LES MOUTONS</h2>
+<h3 class="sub">Les moutons</h3>
 <p>Depuis quelques instants Nils avait les yeux fixés sur la mer. Tout à coup il lui sembla qu&#x27;elle bruissait plus fort. Il leva les yeux. Devant lui, à quelques mètres seulement, se dressait une paroi rocheuse et nue; en bas, les vagues s&#x27;éparpillaient en une écume jaillissante. Les oies sauvages piquaient droit sur le rocher, et Nils prévoyait qu&#x27;ils seraient fatalement écrasés contre la dure muraille.</p>
 <p>Il eut à peine le temps de s&#x27;étonner que le danger n&#x27;eût point été aperçu par Akka; déjà on arrivait sur la montagne. Alors seulement il vit que devant eux s&#x27;ouvrait la cavité demi-circulaire d&#x27;une grotte. Les oies s&#x27;y engouffrèrent; elles étaient sauvées.</p>
 <p>La première chose que firent les voyageuses, avant même de songer à se réjouir de leur chance, fut de se compter. Akka, Yksi, Kolme, Neljä, Viisi, Kuusi, les six jeunes oisons, le jars blanc, Finduvet et Poucet étaient là; seule manquait Kaksi de Nuolia, la première oie de gauche; personne ne savait ce qu&#x27;elle était devenue.</p>
@@ -800,14 +824,14 @@ h2 + p, .first { text-indent: 0; }
 <p>Le bélier porta un coup terrible qui prit de flanc le second renard; le renard fit plusieurs tours sur lui-même avant de reprendre pied et de pouvoir s&#x27;enfuir. Nils aurait bien voulu que le troisième eût son compte, mais il était déjà parti.</p>
 <p>--Voilà! j&#x27;espère qu&#x27;ils en ont eu assez pour cette nuit, dit Nils.</p>
 <p>--Je pense que oui, dit le bélier. Couche-toi maintenant sur mon dos en t&#x27;enfonçant dans la laine. Tu as bien mérité d&#x27;être au chaud et à l&#x27;abri après la tempête que tu as essuyée.</p>
-<h2>LE TROU DE L&#x27;ENFER</h2>
+<h3 class="sub">Le trou de l&#x27;enfer</h3>
 <p>Samedi, 9 avril.</p>
 <p>Le lendemain le bélier prit Nils sur son dos et lui fit faire le tour de l&#x27;île. Elle n&#x27;était qu&#x27;un seul et énorme rocher. On aurait dit une grande maison aux murs droits et au toit plat. Le bélier monta d&#x27;abord sur le toit pour faire voir à Nils les bons pâturages qu&#x27;on y trouvait; Nils dut reconnaître que l&#x27;île semblait créée exprès pour les moutons. Il n&#x27;y poussait que de la coquioule et quelques-unes de ces petites plantes aromatiques que les moutons affectionnent.</p>
 <p>Mais il y avait bien d&#x27;autres choses à regarder. D&#x27;abord on voyait toute la mer bleue et ensoleillée, qui roulait vers l&#x27;île de longues houles unies et lisses. Çà et là seulement, rencontrant un promontoire, elle se brisait et jaillissait en écume. Droit à l&#x27;est on distinguait l&#x27;île de Gottland avec une bande de côte unie et au sud-ouest la Grande île Karl construite comme la Petite île. Le bélier alla jusqu&#x27;au bord du plateau pour que Nils pût voir les parois de la montagne, couvertes de nids, et la mer, au pied de la falaise, où une foule d&#x27;oiseaux, macreuses, eiders, cormorans, guillemots, pingouins, paisiblement et en bonne entente étaient occupés à pêcher le hareng.</p>
 <p>--C&#x27;est la terre promise, dit le gamin. Vous êtes joliment bien logés, les moutons.</p>
 <p>--Mais oui, c&#x27;est très beau ici. Seulement, en te promenant seul, fais bien attention à ne pas tomber dans une de ces crevasses qui traversent le plateau, répondit le bélier en soupirant. Il semblait d&#x27;abord vouloir ajouter quelque chose, mais il se tut. C&#x27;était un avertissement utile, car les crevasses étaient nombreuses et profondes. La plus grande s&#x27;appelait le Trou de l&#x27;Enfer. Elle était profonde de plusieurs toises et large de près d&#x27;une toise.</p>
 <p>--Quelqu&#x27;un qui tomberait là s&#x27;y tuerait, dit le bélier.</p>
-<h2>Il parut à Nils que le ton de ces paroles indiquait une intention particulière.</h2>
+<p>Il parut à Nils que le ton de ces paroles indiquait une intention particulière.</p>
 <p>Puis le bélier conduisit Nils à la grève, où il put voir de près les géants qui l&#x27;avaient effrayé la veille. Ce n&#x27;étaient que des rocs isolés. Le bélier les appelait des «raukar».</p>
 <p>Nils ne se lassait pas de les regarder. Si jamais des trolls avaient été changés en pierre, ils devaient avoir cet aspect.</p>
 <p>Bien que ce fût très beau sur le rivage, Nils préférait retourner sur la hauteur. En bas on rencontrait partout des restes de moutons tués. C&#x27;est ici que les renards avaient fait leurs repas. Il y avait des squelettes bien rongés, mais aussi des corps à moitié dévorés, et d&#x27;autres que les renards avaient à peine touchés. Le cœur se serrait devant ce carnage que les renards avaient en grande partie fait pour le plaisir de chasser et de tuer.</p>
@@ -830,9 +854,8 @@ h2 + p, .first { text-indent: 0; }
 <p>En même temps ils entendirent derrière eux des cris féroces, un crissement de griffes et un bruit de chutes lourdes. Les renards avaient disparu.</p>
 <p>Le lendemain, le gardien du phare de la Grande île Karl trouva, sous sa porte, un morceau d&#x27;écorce où était écrit en lettres gauches et anguleuses:</p>
 <p>«Les renards de la Petite île sont tombés dans le Trou de l&#x27;Enfer. Vous pouvez aller les ramasser.»</p>
-<h2>XIII</h2>
-<h2>DEUX VILLES</h2>
-<h2>LA VILLE DU FOND DE LA MER</h2>
+<h2 class="chapter" id="c12">XIII — Deux villes</h2>
+<h3 class="sub">La ville du fond de la mer</h3>
 <p>Samedi, 9 avril.</p>
 <p>La nuit suivante fut calme et sereine. Les oies sauvages ne prirent même pas la peine de chercher un abri dans les grottes, mais dormirent sur le haut plateau. Nils s&#x27;était couché dans l&#x27;herbe à côté d&#x27;elles.</p>
 <p>Il faisait un beau clair de lune, si beau que Nils avait du mal à s&#x27;endormir. Il se demandait combien de temps il avait passé avec les oies, et calculait qu&#x27;il avait quitté sa maison depuis trois semaines. Il se rappela tout à coup que ce soir-là était la veille de Pâques.</p>
@@ -885,7 +908,7 @@ h2 + p, .first { text-indent: 0; }
 <p>--Mais l&#x27;heure écoulée, la ville s&#x27;enfonce de nouveau dans la mer, à moins toutefois qu&#x27;un des marchands de Vineta ait pu vendre quelque chose à un être vivant. Si tu avais eu la moindre petite monnaie, Poucet, pour payer les marchands, Vineta serait restée ici sur la terre, et ses habitants auraient pu vivre et mourir comme les autres mortels.</p>
 <p>--Monsieur Ermenrich, dit Nils, je comprends maintenant pourquoi vous êtes venu me chercher au milieu de la nuit. C&#x27;est parce que vous avez pensé que je pourrais sauver la vieille ville. Je suis très triste que votre plan ait échoué, monsieur Ermenrich.</p>
 <p>Il mit ses mains sur ses yeux et éclata en sanglots. On n&#x27;aurait pu dire qui avait l&#x27;air le plus désolé, du gamin ou de M. Ermenrich.</p>
-<h2>LA VILLE VIVANTE</h2>
+<h3 class="sub">La ville vivante</h3>
 <p>Lundi, 11 avril.</p>
 <p>Le lundi de Pâques, les oies sauvages et Poucet volaient dans la soirée au-dessus de Gottland.</p>
 <p>La grande île s&#x27;étendait sous eux, unie et plate. La terre était divisée en carreaux comme en Scanie, et il y avait beaucoup d&#x27;églises et de fermes. Mais ici les petits bois entre les champs étaient plus nombreux; il n&#x27;y avait nulle part de châteaux avec des tours et de vastes parcs comme en Scanie.</p>
@@ -910,8 +933,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Elles dormaient déjà que Poucet regardait encore, à travers les voûtes effondrées, le ciel rose pâle du soir. Il finit par se persuader qu&#x27;il ne devait plus se désoler de n&#x27;avoir pu sauver la ville submergée.</p>
 <p>Non, il ne se désolerait pas puisqu&#x27;il avait vu cette ville-ci. Si l&#x27;autre n&#x27;avait pas été engloutie de nouveau par la mer, elle aurait peut-être fini par déchoir comme celle-ci. Elle n&#x27;aurait probablement pas pu résister au temps et à la destruction; bientôt elle aurait, elle aussi, présenté des églises sans toit et des maisons sans ornements et des rues vides et inanimées. Il valait mieux qu&#x27;elle restât, toute sa splendeur intacte, dans le gouffre mystérieux.</p>
 <p>Beaucoup d&#x27;entre les jeunes pensent comme Nils. Mais lorsqu&#x27;on vieillit et qu&#x27;on s&#x27;est habitué à se contenter de peu, on préfère le Visby qui existe à une belle Vineta au fond de la mer.</p>
-<h2>XIV</h2>
-<h2>LA SAGA DU SMÂLAND</h2>
+<h2 class="chapter" id="c13">XIV — La saga du Smâland</h2>
 <p>Mardi, 12 avril.</p>
 <p>Les oies sauvages avaient heureusement traversé la mer et étaient descendues dans le canton de Tjust, dans le nord du Smâland. Le canton de Tjust semble n&#x27;avoir pu décider s&#x27;il voulait être terre ou mer. Partout des fjords s&#x27;enfoncent dans l&#x27;intérieur et découpent la terre en îles et en presqu&#x27;îles, en caps et en isthmes. La mer est une intruse à laquelle seules les collines et les montagnes ont pu résister; les terres basses ont disparu sous l&#x27;eau.</p>
 <p>Les oies arrivèrent sur le soir; le pays était beau avec ses petites collines ceintes de bras de mer scintillants. Nils pensa involontairement au Blekinge: c&#x27;était encore une province où la terre et la mer se rencontraient d&#x27;une manière douce et tranquille, se montrant l&#x27;une à l&#x27;autre leurs meilleures qualités.</p>
@@ -953,9 +975,8 @@ h2 + p, .first { text-indent: 0; }
 <p>Ainsi finissait l&#x27;histoire du petit Mats; si Nils Holgersson avait su se taire, il n&#x27;y aurait rien eu, mais Nils ne pouvait s&#x27;empêcher de demander comment saint Pierre avait réussi à créer les Scaniens.</p>
 <p>--Qu&#x27;est-ce que tu en penses, toi-même? répondait le petit Mats avec un air narquois.</p>
 <p>Nils se jetait incontinent sur lui, mais Mats n&#x27;était qu&#x27;un tout petit garçon et Asa, sa sœur, qui avait un an de plus que lui, accourait tout de suite à son secours. Elle était très douce, mais dès qu&#x27;on touchait à son frère, elle devenait comme une lionne. Nils Holgersson ne voulait pas se battre avec une gamine; il leur tournait le dos, s&#x27;en allait et ne les regardait même plus de la journée.</p>
-<h2>XV</h2>
-<h2>LES CORNEILLES</h2>
-<h2>LA CRUCHE DE GRÈS</h2>
+<h2 class="chapter" id="c14">XV — Les corneilles</h2>
+<h3 class="sub">La cruche de grès</h3>
 <p>Dans le coin sud-ouest du Smâland s&#x27;étend un canton nommé Sunnerbo. Le pays est assez plat et uni; quiconque le voit en hiver, lorsqu&#x27;il est couvert de neige, s&#x27;imagine que sous la neige s&#x27;étendent des champs labourés, des seigles verts et des prés de trèfle moissonnés. Mais lorsque la neige fond au commencement d&#x27;avril, ce qui est caché sous la neige apparaît: ce ne sont que landes de sable arides, rochers nus et vastes marais. Il y a certes quelques champs, mais si maigres qu&#x27;on les remarque à peine; il y a aussi de petites chaumières grises ou rouges, mais elles se dissimulent de préférence dans un bouquet de bouleaux comme si elles craignaient de se montrer.</p>
 <p>A la frontière du canton et du Halland, il y a une lande de sable si vaste que d&#x27;un bout on ne distingue pas l&#x27;autre bout; la bruyère y règne toute-puissante, sauf sur une basse colline pierreuse qui traverse la région et où l&#x27;on trouve des genévriers, des sorbiers et même quelques grands et élégants bouleaux. A l&#x27;époque où Nils Holgersson accompagnait les oies sauvages, on y voyait aussi une petite cabane entourée d&#x27;un lopin de terre défriché, mais les gens qui y avaient vécu, l&#x27;avaient abandonnée. La maisonnette restait vide et le champ inculte.</p>
 <p>En quittant leur cabane, les gens avaient clos la cheminée, les fenêtres et la porte. Mais ils avaient oublié qu&#x27;un carreau d&#x27;une des fenêtres était brisé; le trou était bouché d&#x27;un chiffon. En quelques années, les pluies avaient fait pourrir le chiffon qui céda un jour sous le bec d&#x27;une corneille.</p>
@@ -986,7 +1007,7 @@ h2 + p, .first { text-indent: 0; }
 <p>--Je ne vous le dirai pas, à moins que vous n&#x27;acceptiez mes conditions, leur fut-il répondu.</p>
 <p>Le renard parla alors aux corneilles de Poucet, affirmant qu&#x27;il serait capable d&#x27;ouvrir la cruche, si elles pouvaient le faire venir. En échange de son bon conseil, le renard exigeait que les corneilles lui livrassent Poucet, après qu&#x27;il leur aurait rendu ce service. Les corneilles, qui n&#x27;avaient aucune raison d&#x27;épargner Poucet, acceptèrent la proposition.</p>
 <p>Mais le plus difficile n&#x27;était pas fait: il fallait trouver les oies sauvages et Poucet. La Rafale se mit en route lui-même, accompagné de cinquante corneilles; il promettait d&#x27;être bientôt de retour. Mais les journées passèrent sans que les corneilles le vissent revenir.</p>
-<h2>ENLEVÉ PAR LES CORNEILLES</h2>
+<h3 class="sub">Enlevé par les corneilles</h3>
 <p>Mercredi, 13 avril.</p>
 <p>Les oies sauvages s&#x27;étaient réveillées dès l&#x27;aube pour manger un peu avant d&#x27;entreprendre la traversée de l&#x27;Ostrogothie. L&#x27;îlot où elles avaient dormi était étroit et nu, mais dans l&#x27;eau qui le baignait il y avait assez de plantes pour qu&#x27;elles pussent se rassasier. Le gamin était moins heureux: il avait beau chercher, il ne pouvait rien découvrir de mangeable.</p>
 <p>Affamé, transi par le froid du matin, il regardait autour de lui, lorsque ses yeux rencontrèrent deux écureuils qui jouaient dans les arbres sur une pointe de terre en face de l&#x27;île. Pensant que les écureuils n&#x27;avaient peut-être pas épuisé leurs provisions d&#x27;hiver, Nils pria le jars de le transporter à terre pour leur demander quelques noisettes.</p>
@@ -1083,7 +1104,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Les corneilles l&#x27;avaient entouré en un essaim épais, mais lorsqu&#x27;il commença à jeter l&#x27;argent, elles oublièrent leur soif de vengeance pour ramasser les petites pièces. Le gamin lançait l&#x27;argent par poignées et toutes les corneilles, la Bourrasque elle-même, se battaient pour les attraper. Dès qu&#x27;une corneille s&#x27;était emparée d&#x27;une monnaie, elle s&#x27;envolait en toute hâte pour cacher son trésor.</p>
 <p>Nils n&#x27;osa lever la tête que lorsqu&#x27;il eut jeté toutes les pièces d&#x27;argent; il n&#x27;y avait plus dans le trou qu&#x27;une seule corneille. C&#x27;était Fumle-Drumle avec sa plume blanche à l&#x27;aile, celui qui avait porté Poucet.</p>
 <p>--Tu m&#x27;as rendu un service plus grand que tu ne peux croire, Poucet, dit-il d&#x27;une voix toute changée; je te sauverai la vie. Grimpe sur mon dos, et je te conduirai dans une cachette où tu seras en sécurité pour cette nuit. Demain je m&#x27;arrangerai pour te ramener parmi les oies sauvages.</p>
-<h2>LA CABANE</h2>
+<h3 class="sub">La cabane</h3>
 <p>Jeudi, 14 avril.</p>
 <p>Le lendemain matin le gamin s&#x27;éveilla couché sur un lit; se trouvant entre quatre murs, sous un toit, il crut d&#x27;abord qu&#x27;il était à la maison. «Je me demande si mère ne viendra pas bientôt m&#x27;apporter le café», murmura-t-il. Puis, tout à coup, il se rappela qu&#x27;il était dans une maison abandonnée, où Fumle-Drumle à la plume blanche l&#x27;avait transporté la veille au soir.</p>
 <p>Comme il était encore tout meurtri, il trouva délicieux de se reposer encore un peu, en attendant Fumle-Drumle qui avait promis de venir le retrouver.</p>
@@ -1110,8 +1131,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Mais en voyant ce petit bout d&#x27;homme qui venait à eux la main tendue, les deux enfants se prirent par la main, reculèrent de quelques pas et parurent terrifiés.</p>
 <p>Devant leur effroi, Nils se réveilla de son rêve, et se rappela qui il était; rien de plus terrible ne pouvait lui arriver que d&#x27;être vu par ces enfants sous l&#x27;aspect d&#x27;un tomte. La honte et la douleur de n&#x27;être plus un homme l&#x27;assaillirent. Il se retourna et s&#x27;enfuit sans savoir où il allait.</p>
 <p>Mais en arrivant dans la lande, le gamin fit une bonne rencontre: parmi la bruyère, il entrevoyait quelque chose de blanc; le jars accompagné de Finduvet venait vers lui; voyant Nils accourir avec cette précipitation, le jars crut qu&#x27;il était poursuivi. Aussi le saisit-il vivement, le jeta sur son dos et l&#x27;emporta rapidement dans les airs.</p>
-<h2>XVI</h2>
-<h2>LA VIEILLE PAYSANNE</h2>
+<h2 class="chapter" id="c15">XVI — La vieille paysanne</h2>
 <p>Jeudi, 14 avril.</p>
 <p>Trois voyageurs fatigués étaient dehors très tard dans la soirée et cherchaient un gîte pour la nuit. Ils traversaient une partie pauvre et déserte du Smâland septentrional. Et certes ils auraient dû trouver un lieu de repos à leur convenance, car ils n&#x27;étaient pas de ces sybarites douillets qui exigent des lits confortables et des chambres bien closes.</p>
 <p>--Si parmi ces longues crêtes de montagnes il y avait un pic assez escarpé pour qu&#x27;un renard ne pût l&#x27;escalader, nous y serions bien pour passer la nuit, disait l&#x27;un.</p>
@@ -1157,7 +1177,7 @@ h2 + p, .first { text-indent: 0; }
 <p>A peine y eut-il jeté un coup d&#x27;œil, qu&#x27;il tressaillit et retira brusquement la tête. Une vieille femme en cheveux gris était étendue par terre. Elle ne bougeait ni ne gémissait; son visage luisait, étrangement blanc. On l&#x27;eût dit éclairé par la pâle lueur d&#x27;une lune invisible.</p>
 <p>Nils se rappela que son grand-père quand il était mort avait le visage de cette blancheur étrange; et il comprit que la vieille femme étendue là sur le plancher était morte. La mort avait dû la surprendre avant qu&#x27;elle n&#x27;eût eu le temps de se coucher dans son lit.</p>
 <p>Il eut terriblement peur à l&#x27;idée de se trouver seul dans la nuit avec une morte. Il descendit précipitamment le perron et retourna à la grange en courant éperdument.</p>
-<h2>Il raconta à la vache ce qu&#x27;il avait vu dans la maison; elle cessa de manger.</h2>
+<p>Il raconta à la vache ce qu&#x27;il avait vu dans la maison; elle cessa de manger.</p>
 <p>--Ah! elle est morte, la maîtresse, soupira-t-elle. Alors ce sera bientôt mon tour.</p>
 <p>--Il y aura toujours quelqu&#x27;un qui s&#x27;occupera de toi, dit Nils en essayant de la consoler.</p>
 <p>--Tu ne sais pas, répliqua la vache, que j&#x27;ai déjà deux fois l&#x27;âge des vaches que l&#x27;on abat. D&#x27;ailleurs je ne tiens plus à la vie, maintenant que ma vieille maîtresse ne viendra plus me soigner.</p>
@@ -1183,7 +1203,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Ce dernier soir elle avait paru plus tremblante et plus faible que jamais. Elle n&#x27;avait même pas pu achever de traire la Rousse. Un moment elle était restée appuyée contre la crèche et avait parlé de deux paysans qui étaient venus la voir pour demander à acheter le marais. Ils pensaient le dessécher, y semer et y faire des récoltes. «Tu entends, la Rousse, tu entends: ils ont dit qu&#x27;il peut pousser du seigle sur le marais. Je vais écrire sur-le-champ aux enfants pour qu&#x27;ils reviennent. Ils n&#x27;ont plus besoin de rester à l&#x27;étranger, ils trouveront leur pain ici à la maison.»</p>
 <p>C&#x27;est pour écrire qu&#x27;elle était rentrée dans la maison...</p>
 <p>Le gamin n&#x27;écoutait plus ce que racontait la vieille vache. Il avait ouvert la porte de l&#x27;étable et s&#x27;était rendu dans la maison près de la morte.</p>
-<h2>Il resta d&#x27;abord un moment sur le seuil à tout considérer.</h2>
+<p>Il resta d&#x27;abord un moment sur le seuil à tout considérer.</p>
 <p>La maison n&#x27;était pas aussi pauvre qu&#x27;il l&#x27;avait cru. Il y avait un grand nombre de ces objets qu&#x27;on trouve en général chez ceux qui ont des parents en Amérique. Dans un coin il y avait un rocking-chair américain; la table devant la fenêtre était couverte d&#x27;un tapis de peluche; une belle courte-pointe était jetée sur le lit; aux murs pendaient les photographies des enfants et des petits-enfants en de beaux cadres dorés; sur le coffre s&#x27;étalaient de grands vases et une paire de flambeaux avec de grosses bougies de couleur.</p>
 <p>Nils chercha une allumette et alluma ces bougies, non parce qu&#x27;il n&#x27;y voyait pas, mais parce que cela lui sembla une manière d&#x27;honorer la morte.</p>
 <p>Puis il s&#x27;approcha d&#x27;elle, lui ferma les paupières, lui croisa les bras sur la poitrine et écarta de son front les mèches clairsemées de cheveux blancs.</p>
@@ -1194,8 +1214,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Tout autour de lui il voyait les portraits des absents. C&#x27;étaient de grands hommes vigoureux et des femmes aux visages graves. C&#x27;étaient des mariées en longs voiles et des messieurs en habits de ville, et c&#x27;étaient des enfants aux cheveux frisés, en belles robes blanches. Et il semblait à Nils que tous ils regardaient fixement dans l&#x27;air avec des yeux aveugles qui ne voulaient pas voir.</p>
 <p>«Pauvres gens! dit Nils aux portraits. Votre mère est morte. Vous ne pouvez vous racheter d&#x27;être partis loin d&#x27;elle. Mais ma mère à moi, elle vit!»</p>
 <p>Il s&#x27;interrompit, hocha la tête et sourit. «Ma mère vit, répéta-t-il. Mon père et ma mère vivent tous les deux.»</p>
-<h2>XVII</h2>
-<h2>DU TABERG A HUSKVARNA</h2>
+<h2 class="chapter" id="c16">XVII — Du Taberg a huskvarna</h2>
 <p>Vendredi, 15 avril.</p>
 <p>Le gamin demeura éveillé toute la nuit; mais vers le matin il s&#x27;endormit et rêva de ses parents. Il pouvait à peine les reconnaître. Tous deux avaient des cheveux gris et de vieux visages ridés. Ils lui disaient qu&#x27;ils avaient ainsi vieilli, parce qu&#x27;ils l&#x27;avaient tant regretté. Il était ému et surpris, car il avait toujours cru qu&#x27;ils seraient contents d&#x27;être débarrassés de lui.</p>
 <p>Lorsque Nils s&#x27;éveilla, le matin était beau et clair. Il mangea un morceau de pain qu&#x27;il trouva dans la cuisine, donna ensuite du fourrage à la vache et aux oies et ouvrit enfin la porte de l&#x27;étable pour que la vache pût se rendre dans la ferme à côté. Les voisins comprendraient à la voir que quelque chose devait être arrivé à sa maîtresse. Ils accourraient, trouveraient son corps mort et l&#x27;enterreraient.</p>
@@ -1236,8 +1255,7 @@ h2 + p, .first { text-indent: 0; }
 <p>--Là où il n&#x27;y a ni livres, ni leçons, répondit le gamin.</p>
 <p>--Emmenez-nous! Emmenez-nous!</p>
 <p>--Pas cette année; une autre année! répondit Nils. Pas cette année, une autre année!</p>
-<h2>XVIII</h2>
-<h2>LA PRÉDICTION</h2>
+<h2 class="chapter" id="c17">XVIII — La prédiction</h2>
 <p>Vendredi, 22 avril.</p>
 <p>Nils dormait une nuit sur un îlot du lac Tâkern quand il fut réveillé par des coups de rames. A peine eut-il ouvert les yeux qu&#x27;une lumière éblouissante le fit cligner des paupières. Il ne comprit pas d&#x27;abord d&#x27;où venait cette clarté sur le lac; mais bientôt il vit un bachot rangé contre la bordure de roseaux; à l&#x27;arrière une grande torche goudronnée flambait, attachée à un piton de fer. Le feu rouge de la torche se reflétait dans l&#x27;eau nocturne du lac, et cette belle lueur attirait sans doute les poissons, car tout autour remuaient et s&#x27;agitaient une foule de traits noirs.</p>
 <p>Deux vieillards se tenaient dans le bachot. L&#x27;un était assis aux rames, l&#x27;autre, debout sur le banc d&#x27;arrière, tenait à la main un harpon assez court, grossièrement barbelé. Le rameur paraissait être un pauvre pêcheur. Il était petit, sec et hâlé et portait un veston mince et usé. On voyait qu&#x27;il avait l&#x27;habitude de sortir par tous les temps, et qu&#x27;il ne craignait pas le froid. L&#x27;autre, bien habillé et bien nourri, avait l&#x27;air autoritaire et important d&#x27;un paysan.</p>
@@ -1288,8 +1306,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Mais alors le paysan se leva, joyeux et satisfait, et la remercia chaleureusement. Il partait enfin heureux, dit-il.</p>
 <p>--En vérité, je ne comprends pas ta pensée, dit la dame d&#x27;Ulvâsa.</p>
 <p>--Eh bien! je pense, ma chère dame, expliqua le paysan, que tout ce que les rois et les gens des monastères et les seigneurs et les citadins pourront fonder et construire ne durera que quelques années, mais vous me dites que l&#x27;Ostrogothie aura toujours des paysans honnêtes et résistants. Alors, je sais que le pays gardera son vieil honneur. Car seuls ceux qui se penchent sur l&#x27;éternel labeur de la terre pourront maintenir de siècle en siècle la prospérité et la gloire de ma province.</p>
-<h2>XIX</h2>
-<h2>LE LÉ DE BURE</h2>
+<h2 class="chapter" id="c18">XIX — Le lé de bure</h2>
 <p>Samedi, 23 avril.</p>
 <p>Nils volait très haut dans l&#x27;air; au-dessous de lui s&#x27;étendait la grande plaine de l&#x27;Ostrogothie. Il s&#x27;amusait à compter les églises blanches dont les flèches surgissaient d&#x27;entre les bouquets d&#x27;arbres. Il eut vite fait d&#x27;en compter cinquante. Puis il s&#x27;embrouilla et ne continua pas.</p>
 <p>La plupart des fermes étaient de grandes maisons blanches à deux étages, d&#x27;aspect si superbe que Nils n&#x27;en revenait pas. «Il faut croire qu&#x27;il n&#x27;y a pas de paysans dans ce pays-ci, pensait-il, puisqu&#x27;il n&#x27;y a pas de fermes de paysans.»</p>
@@ -1333,15 +1350,14 @@ h2 + p, .first { text-indent: 0; }
 <p>--Oui, c&#x27;est vrai. Mais les lettres sont tellement fines.</p>
 <p>--Laisse-moi voir! Il y a... il y a écrit: Nils Holgersson de Vestra Vemmenhög.</p>
 <p>--Je n&#x27;ai jamais rien vu de plus extraordinaire! dit le petit Mats.</p>
-<h2>XX</h2>
-<h2>LA SAGA DE KARR ET DE POIL-GRIS</h2>
-<h2>LE KOLMÂRDEN</h2>
+<h2 class="chapter" id="c19">XX — La saga de Karr et de Poil-gris</h2>
+<h3 class="sub">Le Kolmârden</h3>
 <p>Au nord du golfe de Brâviken, à la frontière de l&#x27;Ostrogothie et de la Sudermanie, s&#x27;élève une montagne longue de plusieurs milles et large d&#x27;un mille. Si elle était haute en proportion, ce serait une des plus belles montagnes qu&#x27;on puisse voir, mais tel n&#x27;est point le cas.</p>
 <p>On rencontre parfois un bâtiment commencé sur une échelle si vaste que le constructeur n&#x27;a jamais pu l&#x27;achever: on voit des fondations solides, de fortes voûtes, mais point de murs ni de toits: la construction ne s&#x27;élève qu&#x27;à quelques pieds du sol. Rien ne donne mieux une idée de cette montagne frontière; on dirait les fondations d&#x27;une montagne plutôt qu&#x27;une montagne achevée. Elle surgit de la plaine en parois escarpées; partout de fières masses de rochers s&#x27;échafaudent, qui semblent destinées à supporter de hautes salles immenses. Tout est puissant et de grandiose proportion, mais cela manque de hauteur. Le constructeur s&#x27;est lassé et a abandonné son travail avant d&#x27;avoir bâti ces longues pentes, ces pointes et ces crêtes qui forment les murailles et la toiture des montagnes ordinaires.</p>
 <p>En compensation, la grande montagne est revêtue d&#x27;arbres puissants. De tout temps les chênes et les tilleuls ont poussé dans les vallons, les bouleaux et les aulnes sur les rives des lacs, les pins sur les escarpements, et les sapins partout où il y avait une pincée d&#x27;humus. Tous ces arbres forment la grande forêt de Kolmârden, jadis si redoutée que quiconque était forcé de la traverser se recommandait à Dieu et se préparait à sa dernière heure.</p>
 <p>Elle était un repaire merveilleux pour les animaux sauvages et les brigands qui savaient grimper, ramper, se glisser à travers les broussailles. Pour les honnêtes gens elle n&#x27;était pas attirante: sombre et sinistre, inexplorée et trompeuse, piquante et inextricable, elle avait de vieux arbres qui ressemblaient à des trolls avec leurs troncs moussus et leurs branches couvertes de longues barbes de lichens...</p>
 <p>Les hommes jetaient des regards sombres sur la forêt qui, dans sa vigueur luxuriante, semblait narguer leur pauvreté. Ils finirent cependant par s&#x27;aviser qu&#x27;ils pourraient peut-être en tirer quelque profit. Ils se mirent à l&#x27;exploiter, à en extraire du bois, des planches et des poutres et les vendirent aux gens de la plaine qui, eux, avaient déjà abattu leurs arbres. Ils découvrirent que la forêt pouvait les nourrir aussi bien que les champs. Ils furent ainsi amenés à la regarder d&#x27;un autre œil. Ils apprirent à la soigner et à l&#x27;aimer. Ils oublièrent tout à fait leur vieille hostilité et en arrivèrent à considérer la forêt comme leur meilleure amie.</p>
-<h2>KARR</h2>
+<h3 class="sub">Karr</h3>
 <p>Environ douze ans avant le grand voyage de Nils Holgersson, il arriva qu&#x27;un propriétaire du Kolmârden voulut se défaire d&#x27;un de ses chiens de chasse. Il envoya chercher son garde, et lui déclara qu&#x27;il ne pouvait plus garder le chien: celui-ci ne cessait de chasser les moutons et les poules; il devait en conséquence être emmené dans la forêt et fusillé.</p>
 <p>Le garde prit le chien en laisse et se rendit à l&#x27;endroit où l&#x27;on tuait et enfouissait les chiens hors de service. Ce n&#x27;était pas un méchant homme, mais il était plutôt content de se débarrasser du chien, car il savait que l&#x27;animal ne chassait pas seulement les moutons et les poules et s&#x27;échappait souvent dans la forêt pour attraper un lièvre ou un jeune coq des bois.</p>
 <p>Le chien, petit et noir, avait le poitrail et les pattes de devant jaunes. Il s&#x27;appelait Karr, et était si intelligent qu&#x27;il comprenait tout ce que disaient les hommes. Lorsque le garde l&#x27;emmena à travers la forêt, il se rendit très bien compte de ce qui l&#x27;attendait. Mais il n&#x27;en laissa rien voir. Il ne penchait la tête ni ne mettait la queue entre les jambes; il paraissait aussi insoucieux que d&#x27;ordinaire. Ne traversait-on pas la forêt où il avait été l&#x27;épouvante de tous les petits animaux qui y demeurent? «On serait content partout dans la broussaille, se disait-il, si l&#x27;on savait ce qui m&#x27;attend.» Il se mit à agiter la queue et à pousser un aboiement joyeux pour qu&#x27;on ne se doutât de rien.</p>
@@ -1361,7 +1377,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Le maître fut aussi d&#x27;avis que Karr s&#x27;était bien conduit, mais comme il ne voulait pas le garder, il hésita sur le parti à prendre.</p>
 <p>--Si vous voulez vous en charger et me garantir qu&#x27;il ne fera plus de sottises, je veux bien lui laisser la vie, dit-il enfin.</p>
 <p>Le garde accepta, et voilà comment Karr vint habiter la maison forestière.</p>
-<h2>LA FUITE DE POIL-GRIS</h2>
+<h3 class="sub">La fuite de Poil-gris</h3>
 <p>Dès lors Karr cessa complètement de braconner; beaucoup moins par peur que par désir de ne pas fâcher le garde, qui lui avait sauvé la vie, et à qui il s&#x27;était tout de suite attaché. Il le suivait partout: lorsque le garde faisait un tour, Karr le précédait pour surveiller la route, et lorsqu&#x27;il restait à la maison, Karr, couché devant la porte, inspectait tous ceux qui allaient et venaient.</p>
 <p>Lorsque tout était calme, que nul pas ne retentissait sur la route et que le garde s&#x27;occupait de sa pépinière et de ses carrés de légumes, Karr allait jouer avec le petit élan.</p>
 <p>Au début Karr n&#x27;avait point eu envie de s&#x27;occuper de lui, mais comme il suivait son maître partout, il l&#x27;accompagnait aussi à l&#x27;étable aux heures où l&#x27;on apportait du lait au petit. Karr s&#x27;asseyait devant le box et regardait boire l&#x27;élan. Le garde lui avait donné le nom de Poil-Gris, car il ne trouvait pas que l&#x27;élan méritât un plus beau nom, et Karr était parfaitement de cet avis. Chaque fois qu&#x27;il le voyait, il pensait qu&#x27;il n&#x27;avait jamais rien vu de plus laid et de plus mal bâti. Le petit élan avait de longues pattes dégingandées, si mal attachées qu&#x27;on l&#x27;eût dit monté sur des échasses. La tête était énorme, vieille et ridée, et penchait toujours d&#x27;un côté ou de l&#x27;autre. La peau, trop lâche, formait des plis et des bourrelets comme une pelisse trop grande. Il avait toujours l&#x27;air triste et découragé, mais, chose étrange, dès qu&#x27;il apercevait Karr, il se levait rapidement, comme content de le voir.</p>
@@ -1412,7 +1428,7 @@ h2 + p, .first { text-indent: 0; }
 <p>--Maintenant tu as vu ce qu&#x27;il y a dans la forêt, dit-il, quand Poil-Gris reparut. Veux-tu que nous rentrions?</p>
 <p>--Oui, rentrons, il est l&#x27;heure, répondit l&#x27;élan.</p>
 <p>Ils cheminèrent en silence. Karr soupira plusieurs fois comme s&#x27;il était déçu; Poil-Gris marchait la tête haute, content de son aventure. Il avança sans hésitation jusqu&#x27;à l&#x27;enclos, mais là il s&#x27;arrêta. Il parcourut des yeux l&#x27;étroit espace où il avait vécu, vit le sol piétiné, le foin fané, la petite auge où il avait bu et le sombre hangar où il avait dormi. «Les élans et la forêt font un», cria-t-il, puis il rejeta la tête en arrière et s&#x27;enfuit précipitamment vers la forêt.</p>
-<h2>LA MORT DE POIL-GRIS</h2>
+<h3 class="sub">La mort de Poil-gris</h3>
 <p>Un après-midi Akka de Kebnekaïse et sa bande vinrent s&#x27;abattre sur la rive d&#x27;un lac dans la forêt. Elles étaient encore dans le Kolmârden, mais en Sudermanie.</p>
 <p>Le printemps était en retard, comme toujours dans les montagnes; la glace couvrait encore le lac, sauf une mince bande d&#x27;eau libre le long de la terre. Les oies se précipitèrent dans l&#x27;eau pour se baigner et pour chercher de la nourriture; Nils Holgersson, qui le matin avait perdu un sabot, courut entre les aulnes et les bouleaux de la rive, cherchant quelque chose à rouler autour de son pied.</p>
 <p>Il dut aller assez loin pour trouver ce qu&#x27;il cherchait. Enfin il aperçut un lambeau d&#x27;écorce de bouleau; il l&#x27;ajustait autour de son pied, quand il entendit derrière lui un froissement de feuilles sèches. Il se retourna et aperçut un serpent qui venait droit sur lui. Il était très long et très gros, mais Nils vit qu&#x27;il avait une tache claire sur chaque joue et resta immobile: «Ce n&#x27;est qu&#x27;une couleuvre, pensa-t-il. Elle ne saurait me faire du mal.»</p>
@@ -1463,8 +1479,7 @@ h2 + p, .first { text-indent: 0; }
 <p>--Karr, Karr, appela en ce moment une voix humaine dans la forêt.</p>
 <p>Le vieux chien se releva de nouveau.</p>
 <p>--C&#x27;est mon maître qui m&#x27;appelle, dit-il, et je ne veux pas tarder. Je l&#x27;ai vu tout à l&#x27;heure charger son fusil. Nous allons une dernière fois dans la forêt, lui et moi. Je te remercie, oie sauvage. Je sais maintenant tout ce que j&#x27;ai besoin de savoir pour m&#x27;en aller satisfait vers la mort.</p>
-<h2>XXI</h2>
-<h2>LA DÉBACLE DES GLACES</h2>
+<h2 class="chapter" id="c20">XXI — La débacle des glaces</h2>
 <p>Jeudi, 28 avril.</p>
 <p>C&#x27;était le matin de très bonne heure. Les deux petits Smâlandais, Asa la gardeuse d&#x27;oies et le petit Mats, cheminaient sur la route qui de Sudermanie mène en Nerke. Cette route court le long de la rive sud du lac Hjelmar, et les enfants regardaient la glace qui couvrait encore la plus grande partie du lac. Le soleil du matin y répandait sa claire lumière et la glace n&#x27;avait point l&#x27;aspect sombre et traître qu&#x27;on lui voit souvent au printemps, mais luisait, blanche et attirante. Aussi loin qu&#x27;on pouvait voir, elle paraissait ferme et sèche. La pluie, qui était tombée abondamment la veille, s&#x27;était écoulée dans les fentes et les crevasses ou avait été absorbée par la glace même. Les enfants ne voyaient qu&#x27;une surface splendide.</p>
 <p>Asa la gardeuse d&#x27;oies et le petit Mats étaient en route vers le nord; ils songeaient à tous les pas qu&#x27;ils s&#x27;épargneraient s&#x27;ils pouvaient traverser le grand lac au lieu d&#x27;en faire le tour. Ils n&#x27;ignoraient pas qu&#x27;il est dangereux de se fier à la glace du printemps, mais celle-ci paraissait parfaitement solide. On voyait qu&#x27;elle avait près de la rive plusieurs pouces d&#x27;épaisseur. On y voyait aussi un chemin, et l&#x27;autre bord du lac semblait si proche qu&#x27;une heure devait suffire pour l&#x27;atteindre.</p>
@@ -1493,8 +1508,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Cela continua pendant une demi-heure. Enfin ils atteignirent la pointe de Lunger, et purent quitter la glace et gagner la terre à travers l&#x27;eau peu profonde. Arrivés sur le sol ferme, ils ne s&#x27;arrêtèrent même pas, tant la peur les harcelait, pour regarder le lac où les vagues commençaient à culbuter les blocs de glace. Ce ne fut qu&#x27;après un moment qu&#x27;Asa s&#x27;arrêta. «Attends un peu ici, petit Mats, dit-elle. J&#x27;ai oublié quelque chose.»</p>
 <p>Elle courut vers la rive, se mit à fouiller dans son sac, et en retira un petit sabot qu&#x27;elle posa sur une pierre bien en évidence. Puis elle rejoignit vite son frère.</p>
 <p>A peine eut-elle tourné le dos qu&#x27;une grande oie blanche piqua droit sur la pierre, s&#x27;empara du sabot et remonta aussi rapidement.</p>
-<h2>XXII</h2>
-<h2>LA DALÉCARLIE. LE SOIR DE LA SAINTE-VALBORG</h2>
+<h2 class="chapter" id="c21">XXII — La Dalécarlie. Le soir de la sainte-valborg</h2>
 <p>Vendredi, 29, et samedi, 30 avril.</p>
 <p>Ce jour-là, Nils vit le sud de la Dalécarlie. Les oies sauvages passèrent au-dessus des vastes mines de Grängesberg, des grands établissements de Ludvika, et continuèrent jusqu&#x27;aux plaines de Stora Tuna et au Dalelf. Tout d&#x27;abord, tant que Nils vit des cheminées d&#x27;usine pointer derrière chaque crête de montagne, il put se croire encore en Vestmanland, mais, arrivé près du grand fleuve, un spectacle nouveau lui apparut. C&#x27;était le premier vrai fleuve que Nils eût encore aperçu; il fut stupéfait de voir cette large nappe d&#x27;eau couler doucement à travers le pays.</p>
 <p>Lorsque les oies eurent atteint le pont flottant de Torsang, elles retournèrent vers le nord-ouest en suivant le fleuve, qui semblait leur servir de guide. Nils eut le loisir de contempler les rives du Dalelf, souvent bordées de maisons sur de longs espaces. Il vit les grandes chutes de Domnarvet et de Kvarnsveden et les vastes usines qu&#x27;elles font marcher. Il vit les ponts flottants qui reposent sur l&#x27;eau du fleuve, les bacs qu&#x27;il porte, les trains de bois qu&#x27;il charrie, les chemins de fer qui le suivent et le traversent, et il comprit que c&#x27;était un grand et merveilleux cours d&#x27;eau.</p>
@@ -1519,7 +1533,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Ils avaient commencé par «Je connais un pays très loin dans le Nord», et ils finissaient par «En Dalécarlie demeurait, en Dalécarlie demeure encore...» Sur l&#x27;embarcadère il n&#x27;y avait point de feu, et les chanteurs ne pouvaient pas voir loin. Mais avec les notes montait devant eux et devant tous l&#x27;image de leur pays, plus lumineuse et plus douce qu&#x27;à la pleine lumière du jour. Ils semblaient vouloir fléchir le printemps! «Regarde le pays qui t&#x27;attend! Ne nous viendras-tu pas en aide? Laisseras-tu encore longtemps l&#x27;hiver opprimer un aussi beau pays?»</p>
 <p>Tant que dura le chant, Nils Holgersson écouta; ensuite, il se remit à courir vers la terre. Un feu brûlait sur la grève même. Il s&#x27;approcha si près qu&#x27;il pouvait voir les hommes assis ou debout autour du bûcher. De nouveau il se demanda si ce n&#x27;était pas un mirage. Jamais il n&#x27;avait vu de gens ainsi vêtus. Les femmes portaient des coiffes noires et pointues comme des cornets, de courtes jaquettes de cuir blanches, des fichus à ramages autour du cou, des corsages de soie verts et des jupes noires dont le devant était orné de rayures blanches, rouges, vertes et noires. Les hommes étaient coiffés de chapeaux ronds et bas, et vêtus d&#x27;habits bleus très longs, dont les coutures étaient bordées de rouge, de culottes de cuir jaunes retenues aux genoux par des jarretières rouges ornées de boules de laine pendantes. Était-ce à cause de ces costumes? il parut à Nils que ces gens-là ne ressemblaient pas aux habitants des autres provinces; ils avaient l&#x27;air plus grands et plus nobles. Nils se rappela les anciens costumes que sa mère gardait au fond de son grand coffre et que personne en Scanie ne portait plus depuis longtemps. Lui était-il donc donné de voir des gens d&#x27;autrefois, qui avaient vécu il y a cent ans?</p>
 <p>Ce ne fut qu&#x27;une idée qui lui passa par la tête; il avait devant lui des hommes et des femmes bien vivants; mais les habitants de la Dalécarlie ont tant gardé du passé, dans leur langage, leurs mœurs et leurs costumes, qu&#x27;il ne faut pas s&#x27;étonner de sa brève illusion.</p>
-<h2>AUTOUR DES ÉGLISES</h2>
+<h3 class="sub">Autour des églises</h3>
 <p>Dimanche, 1er mai.</p>
 <p>Quand il s&#x27;éveilla le lendemain matin et se laissa glisser sur la glace, Nils ne put s&#x27;empêcher de rire. Il était tombé une grande quantité de neige pendant la nuit, et il neigeait encore; l&#x27;air était plein du tourbillonnement d&#x27;énormes flocons; on eût dit les ailes de papillons tués par le froid et qui tombaient. Sur le lac Siljan la neige formait une couche épaisse de plusieurs centimètres; les rives en étaient couvertes; les oies sauvages en avaient tant sur le dos qu&#x27;elles avaient l&#x27;aspect de petits tas neigeux.</p>
 <p>De temps en temps Akka ou Yksi ou Kaksi bougeait un peu, mais, voyant que la neige ne cessait de tomber, elles renfonçaient leur tête sous leur aile. Elles étaient évidemment d&#x27;avis que par un temps pareil on n&#x27;avait rien de mieux à faire qu&#x27;à dormir, et Nils ne leur donnait point tort.</p>
@@ -1533,8 +1547,7 @@ h2 + p, .first { text-indent: 0; }
 <p>«Chère mère Akka, vole lentement pour que je voie les jeunes mariés», pria Nils.</p>
 <p>L&#x27;oie-guide s&#x27;abaissa aussi bas qu&#x27;elle osa, et fit trois fois le tour de l&#x27;enceinte du temple. Il est difficile de dire comment ils étaient, vus de près, mais vus d&#x27;en haut jamais mariée ne fut plus douce, époux plus fier ni cortège de noce plus magnifique. «Je me demande si le roi et la reine portent de plus beaux habits dans leur château», se demanda Nils.</p>
 <p>A Floda, les oies trouvèrent enfin des champs découverts, et purent faire halte pour manger.</p>
-<h2>XXIII</h2>
-<h2>L&#x27;INONDATION</h2>
+<h2 class="chapter" id="c22">XXIII — L&#x27;inondation</h2>
 <p>1er-4 mai.</p>
 <p>Pendant plusieurs jours il avait fait un temps épouvantable au nord du lac Mälar. Le ciel était uniformément gris, le vent sifflait, la pluie battait le sol. Hommes et animaux savaient qu&#x27;on n&#x27;a pas le printemps à moins, mais ce temps n&#x27;en éprouvait pas moins leur patience.</p>
 <p>La neige entassée dans les forêts de sapins commença à fondre pour de bon; les petits ruisseaux du printemps précipitèrent leurs cours. Partout l&#x27;eau prisonnière des flaques des chemins, l&#x27;eau lente des fossés, l&#x27;eau qui sourdait entre les tertres des marais et des fondrières, partout l&#x27;eau se mettait en mouvement, et cherchait à rejoindre les ruisseaux pour être emportée vers la mer.</p>
@@ -1555,7 +1568,7 @@ h2 + p, .first { text-indent: 0; }
 <p>--Moi non plus, dit Smirre. Mais on dit qu&#x27;il vient à bout de toutes les difficultés.</p>
 <p>--Je m&#x27;étonne aussi que le roi des cygnes envoie ses messages par un renard, objecta Agar.</p>
 <p>--Nous sommes en effet ennemis en temps ordinaires, avoua Smirre, d&#x27;une voix très douce, mais dans les grands désastres, il faut bien qu&#x27;on s&#x27;entr&#x27;aide. En tout cas, tu feras peut-être mieux de ne pas dire à Akka que tu tiens le message d&#x27;un renard, car elle ne laisse pas d&#x27;être assez soupçonneuse.</p>
-<h2>LES CYGNES DE LA BAIE DE HJELSTA</h2>
+<h3 class="sub">Les cygnes de la baie de Hjelsta</h3>
 <p>Le refuge le plus sûr pour tous les oiseaux aquatiques qui séjournent dans le Mälar, est la baie de Hjelsta; on appelle ainsi la partie la plus reculée du golfe d&#x27;Ekolsund, prolongement de la nappe d&#x27;eau de Björkö, qui est la deuxième en grandeur des longues sinuosités par lesquelles le Mälar s&#x27;enfonce dans l&#x27;Uppland.</p>
 <p>La baie de Hjelsta a des rives très basses; l&#x27;eau peu profonde est envahie par les bancs de roseaux. Elle offre une résidence excellente aux oiseaux qui y vivent en paix. Il y a là un peuple nombreux de cygnes; le propriétaire de l&#x27;ancien domaine royal d&#x27;Ekolsund, situé tout auprès, a interdit la chasse dans la baie afin de ne pas les inquiéter.</p>
 <p>Akka, dès que le message lui fut parvenu, se rendit à la baie de Hjelsta. Elle y arriva avec sa bande un soir, et vit tout de suite l&#x27;étendue du désastre. Les grands nids des cygnes, arrachés de leur attaches, flottaient au gré du vent. Quelques-uns s&#x27;étaient déjà désagrégés, deux ou trois avaient chaviré, et les œufs qu&#x27;ils avaient contenus, brillaient au fond de l&#x27;eau.</p>
@@ -1592,7 +1605,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Une fauvette avait observé ce qui se passait. Elle lança l&#x27;appel aigu dont se servent les petits oiseaux pour se rallier afin de chasser un épervier ou un faucon. A peine l&#x27;appel eut-il retenti trois fois que tous les petits oiseaux de la contrée accoururent à tire d&#x27;ailes et se précipitèrent en un essaim bruyant vers la baie de Hjelsta.</p>
 <p>Ces petits êtres faibles se jetèrent sur les cygnes. Ils piaillaient à leurs oreilles, les aveuglaient avec leurs ailes, leur faisaient perdre la tête en criant: «Honte, honte, cygnes! Honte, honte, cygnes!»</p>
 <p>L&#x27;assaut des petits oiseaux fut de courte durée, mais lorsqu&#x27;ils furent partis et que les cygnes se furent ressaisis, les oies sauvages s&#x27;étaient envolées vers l&#x27;autre rive.</p>
-<h2>LE NOUVEAU CHIEN DE GARDE</h2>
+<h3 class="sub">Le nouveau chien de garde</h3>
 <p>Heureusement les cygnes étaient trop fiers pour poursuivre les oies. Elles purent en toute tranquillité s&#x27;endormir sur un banc de roseaux.</p>
 <p>Quant à Nils Holgersson, il avait si faim qu&#x27;il ne put fermer l&#x27;œil. «Il faut que je trouve quelque chose à manger», s&#x27;écria-t-il.</p>
 <p>Par ce temps d&#x27;inondation il n&#x27;était pas difficile de trouver une embarcation pour gagner la terre. Le gamin sauta sur un bout de planche que les vagues avaient poussé dans les roseaux, repêcha un petit bâton, et s&#x27;en servit pour naviguer à la perche vers la rive.</p>
@@ -1626,8 +1639,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Il y eut quelques instants de lutte, mais la victoire resta au chien; le renard gisait par terre, n&#x27;osant bouger:</p>
 <p>--Tiens-toi bien tranquille, grogna le chien, sinon je mords. Il saisit le renard par la peau du cou, le traîna vers sa niche. Le gamin vint au devant d&#x27;eux avec la chaîne, la mit au cou du renard, la boucla bien. Le renard n&#x27;osa bouger.</p>
 <p>--Maintenant j&#x27;espère, Smirre, que tu feras un bon chien de garde, dit Nils en guise d&#x27;adieu.</p>
-<h2>XXIV</h2>
-<h2>LA SAGA DE L&#x27;UPPLAND</h2>
+<h2 class="chapter" id="c23">XXIV — La saga de l&#x27;uppland</h2>
 <p>Jeudi, 5 mai.</p>
 <p>Le lendemain la pluie avait cessé, mais la tempête continuait et l&#x27;inondation s&#x27;étendait toujours. Un peu après midi il y eut un brusque changement et le temps devint superbe: il faisait chaud, calme et doux.</p>
 <p>Commodément étendu sur le dos au milieu d&#x27;une grosse touffe de soucis d&#x27;eau en pleine floraison, Nils contemplait le ciel; deux petits écoliers chargés de leurs livres et de leurs paniers de provisions passèrent sur un petit sentier le long de la rive. Ils allaient lentement et avaient l&#x27;air tristes et inquiets. Arrivés tout près de Nils, ils s&#x27;assirent sur des pierres pour parler de leur malheur.</p>
@@ -1663,9 +1675,8 @@ h2 + p, .first { text-indent: 0; }
 <p>«--Voilà une bonne parole! dit l&#x27;Uppland. Puisque vous parlez ainsi, je vous prends au mot; c&#x27;est moi qui logerai le roi et la capitale.</p>
 <p>«De nouveau les autres provinces étaient furieuses, mais elles ne purent se dédire de ce qui avait été une fois décidé.</p>
 <p>«Et l&#x27;Uppland eut le roi et la capitale et devint la principale des provinces. Et ce ne fut que justice, car l&#x27;intelligence et la sagesse sont les qualités qui aujourd&#x27;hui encore font des mendiants des princes.»</p>
-<h2>XXV</h2>
-<h2>FINDUVET</h2>
-<h2>LA VILLE-QUI-NAGE-SUR-L&#x27;EAU</h2>
+<h2 class="chapter" id="c24">XXV — Finduvet</h2>
+<h3 class="sub">La ville-qui-nage-sur-l&#x27;eau</h3>
 <p>Vendredi, 6 mai.</p>
 <p>Personne n&#x27;était plus doux ni doué d&#x27;un meilleur cœur que la petite oie cendrée Finduvet.</p>
 <p>Toutes les oies sauvages l&#x27;aimaient beaucoup, et le jars blanc se serait jeté au feu pour elle. Lorsque Finduvet demandait quelque chose, Akka elle-même ne pouvait rien lui refuser.</p>
@@ -1683,7 +1694,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Les oies s&#x27;abattirent sur un rocher, et Nils se tourna vers Finduvet:</p>
 <p>--Quelle est cette ville que nous avons traversée? demanda-t-il.</p>
 <p>--Je ne connais pas son nom parmi les hommes, répondit la petite oie cendrée, mais nous autres oies, nous l&#x27;appelons la Ville-qui-nage-sur-l&#x27;eau.</p>
-<h2>STOCKHOLM</h2>
+<h3 class="sub">Stockholm</h3>
 <p>Samedi, 7 mai.</p>
 <p>Il y a quelques années, vivait au Skansen, ce grand jardin de Stockholm où l&#x27;on a réuni tant de choses curieuses d&#x27;autrefois, un petit bonhomme, nommé Klement Larsson. Il était du Helsingland, et était venu au Skansen pour jouer des rondes populaires et de vieux airs sur son violon. C&#x27;était surtout les après-midi qu&#x27;il exerçait son art de ménétrier. Pendant la matinée il gardait l&#x27;une des curieuses vieilles maisons de paysan que l&#x27;on a transportées au Skansen de toutes les parties de la Suède.</p>
 <p>Les premiers temps, Klement s&#x27;estimait très heureux de pouvoir passer ainsi sa vieillesse, mais bientôt il commença à s&#x27;ennuyer terriblement, surtout aux heures de garde. Passe encore lorsqu&#x27;il venait du monde pour visiter la vieille maison, mais parfois Klement était seul des heures durant. Alors il souffrait si fort du mal du pays qu&#x27;il craignait d&#x27;être obligé de renoncer à sa place. Klement était très pauvre; il savait que, rentré dans son pays, il tomberait à la charge de l&#x27;assistance publique. Aussi s&#x27;efforçait-il de tenir le plus longtemps possible, mais il se sentait tous les jours plus malheureux.</p>
@@ -1730,7 +1741,7 @@ h2 + p, .first { text-indent: 0; }
 <p>--Qui es-tu? Es-tu une naufragée?</p>
 <p>L&#x27;ondine, en le voyant, courut vers lui, et dans sa détresse lui demanda s&#x27;il avait vu sa peau de phoque. Le pêcheur fit l&#x27;étonné, comme s&#x27;il ne comprenait même pas ce qu&#x27;elle voulait dire. Alors elle s&#x27;assit sur une pierre et pleura. Le pêcheur lui proposa de venir chez lui où sa mère la soignerait.</p>
 <p>--Tu ne peux rester toute la nuit ici, où tu n&#x27;as ni lit ni rien à manger.</p>
-<h2>Il parlait doucement et la persuada de l&#x27;accompagner.</h2>
+<p>Il parlait doucement et la persuada de l&#x27;accompagner.</p>
 <p>Le pêcheur et sa mère furent très bons envers la pauvre ondine; elle sembla se plaire parmi eux. Tous les jours elle devenait plus gaie, aidant la vieille femme dans le ménage, et parfaitement semblable à une jeune fille des îles, sauf qu&#x27;elle était plus belle que toutes les autres. Un jour le pêcheur lui demanda si elle voulait être sa femme; elle répondit oui sans hésiter.</p>
 <p>On prépara le mariage; à cette occasion la fiancée revêtit la robe verte et flottante et la couronne de perles scintillantes qu&#x27;elle portait lorsque le pêcheur l&#x27;avait vue pour la première fois. Puis les fiancés et le cortège de noce prirent place dans les bateaux pour aller à l&#x27;église dans le Mälar.</p>
 <p>Le pêcheur conduisait sa fiancée et sa mère; il manœuvra sa barque si habilement qu&#x27;il laissa derrière lui tous les autres. Arrivé devant l&#x27;île où il avait trouvé l&#x27;ondine, qui maintenant, fière et parée, était assise à côté de lui, il ne put réprimer un sourire.</p>
@@ -1767,9 +1778,8 @@ h2 + p, .first { text-indent: 0; }
 <p>En réalité Klement était dans un grand embarras: le roi lui avait ordonné d&#x27;apprendre à connaître Stockholm et à s&#x27;y plaire, mais comment Klement pourrait-il renoncer au bonheur de raconter dans son pays que le roi en personne lui avait donné cet ordre? Il avait besoin de réunir du monde autour de lui le dimanche, à la sortie de l&#x27;église du pays, et de raconter que le roi avait été bon pour lui, s&#x27;était assis à son côté sur un banc, et s&#x27;était donné le temps de parler avec lui, un pauvre vieux ménétrier de la campagne, pour le guérir de la nostalgie. C&#x27;était déjà beau de raconter cela aux vieux Lapons et aux petites Dalécarliennes du Skansen. Que serait-ce au pays?</p>
 <p>Même s&#x27;il échouait à l&#x27;asile des pauvres, Klement ne serait plus malheureux. Il était devenu un tout autre homme, et allait jouir d&#x27;une considération nouvelle.</p>
 <p>Et ce désir était invincible. Le directeur dut le laisser partir.</p>
-<h2>XXVI</h2>
-<h2>GORGO, L&#x27;AIGLE</h2>
-<h2>LA VALLÉE ALPESTRE</h2>
+<h2 class="chapter" id="c25">XXVI — Gorgo, l&#x27;aigle</h2>
+<h3 class="sub">La vallée alpestre</h3>
 <p>Très loin au nord, entre les fjells de Laponie, il y avait un vieux nid d&#x27;aigle perché sur une saillie d&#x27;une abrupte paroi de rocher. L&#x27;aire était construite avec des branches de pin. Au cours des années elle avait été augmentée et renforcée; à présent elle s&#x27;étalait sur près de deux mètres de largeur et s&#x27;élevait presque à la hauteur d&#x27;une tente de Lapon.</p>
 <p>La muraille de pierre dominait une assez grande vallée, habitée en été par une bande d&#x27;oies sauvages. Dissimulée entre les montagnes et presque ignorée des hommes, même des Lapons, la vallée était un refuge excellent. Au centre s&#x27;arrondissait un petit lac où il y avait abondance de nourriture pour les oisons, et les rives, couvertes de hautes touffes d&#x27;osiers nains et de petits bouleaux chétifs, offraient aux oies des cachettes excellentes pour couver leurs œufs.</p>
 <p>De tout temps, des aigles avaient habité le rocher et des oies sauvages le fond de la vallée. Tous les ans les aigles en ravissaient quelques-unes en ayant soin toutefois de ne pas en prendre tant que les oies ne revinssent plus. Les oies sauvages, de leur côté, profitaient malgré cela de la présence des aigles. Ils étaient des brigands, mais ils tenaient éloignés les autres brigands.</p>
@@ -1818,7 +1828,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Akka s&#x27;était fait un point d&#x27;honneur d&#x27;élever un aigle en faisant de lui un oiseau doux et inoffensif; elle ne voulut pas admettre que Gorgo allât vivre à sa guise. «Crois-tu donc que je serai l&#x27;amie d&#x27;un mangeur d&#x27;oiseaux? dit-elle. Vis comme je t&#x27;ai appris à vivre et je te permettrai de suivre la bande.»</p>
 <p>Tous les deux étaient fiers et indomptables, tous les deux incapables de céder. Akka finit par défendre à l&#x27;aigle de se montrer devant elle, et sa colère fut si forte que nul n&#x27;osa plus prononcer le nom de Gorgo.</p>
 <p>Depuis ce jour, Gorgo erra dans le pays, solitaire et haï de tous, brigand redoutable. Il était souvent d&#x27;humeur sombre, et souvent sans doute il regrettait le temps où il croyait être une oie sauvage et jouait avec les oisons. Parmi les animaux il avait acquis une grande renommée de hardiesse. On disait qu&#x27;il ne craignait au monde qu&#x27;un seul être, Akka, sa mère adoptive. On racontait en outre qu&#x27;il n&#x27;attaquait jamais une oie.</p>
-<h2>EN CAPTIVITÉ</h2>
+<h3 class="sub">En captivité</h3>
 <p>Gorgo n&#x27;avait que trois ans; il n&#x27;avait point encore songé à chercher une compagne et à se fixer, lorsqu&#x27;il fut pris par un chasseur et vendu au Skansen. Il y avait déjà là quelques aigles. Ils étaient enfermés dans une volière de barres et de fils de fer, élevée en plein air et assez vaste pour contenir un assez gros tas de pierres et deux arbres. Pourtant les oiseaux y languissaient. Ils demeuraient presque toute la journée immobiles à la même place. Leur beau plumage perdait son lustre et se hérissait, et leurs yeux plongeaient dans l&#x27;espace avec une fixité désespérée.</p>
 <p>Pendant la première semaine de sa captivité, Gorgo était encore vif et éveillé, mais peu à peu un lourd engourdissement l&#x27;assoupit. Comme ses camarades, il commença à rester immobile des heures durant, sans compter les jours.</p>
 <p>Un matin qu&#x27;il sommeillait selon son habitude, il s&#x27;entendit appeler d&#x27;en bas. Il eut peine à secouer sa torpeur pour baisser les yeux vers le sol et demander:</p>
@@ -1854,8 +1864,7 @@ h2 + p, .first { text-indent: 0; }
 <p>--Je te remercie de ta bienveillance, mais il faut que je la tienne, cette parole. Tu ne peux rien pour moi.</p>
 <p>--Je ne peux rien? Nous verrons bien, dit Gorgo.</p>
 <p>Au même moment il saisit Nils Holgersson entre ses fortes serres, s&#x27;éleva avec lui jusque dans les nuages, et disparut dans la direction du nord.</p>
-<h2>XXVII</h2>
-<h2>A TRAVERS LE GESTRIKLAND</h2>
+<h2 class="chapter" id="c26">XXVII — A travers le gestrikland</h2>
 <p>Mercredi, 15 juin.</p>
 <p>L&#x27;aigle ne s&#x27;arrêta que loin, au nord de Stockholm; il descendit sur une colline et rouvrit ses serres; aussitôt libre, Nils détala de toutes ses forces pour retourner au Skansen.</p>
 <p>L&#x27;aigle fit un bond, le rattrapa et mit la patte sur lui.</p>
@@ -1871,7 +1880,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Après avoir atteint la contrée forestière du nord de la province, Gorgo descendit, se posa sur le sommet d&#x27;une montagne dénudée, et, quand le gamin eut mis pied à terre, il lui dit:</p>
 <p>--Il y a du gibier ici, et je ne me croirai vraiment libre que lorsque j&#x27;aurai fait une partie de chasse. Occupe-toi comme tu voudras pendant ce temps, mais trouve-toi ici au coucher du soleil.</p>
 <p>Seul là-haut, le gamin se sentit assez désemparé. Il s&#x27;assit sur une pierre et regarda la montagne nue et les grandes forêts d&#x27;en bas. Il n&#x27;y était pas depuis longtemps, quand il entendit chanter dans les bois, et vit quelque chose de clair monter entre les arbres. Il reconnut bientôt un drapeau bleu et jaune, et comprit, par le chant et le gai brouhaha, que le drapeau précédait un cortège qu&#x27;il ne pouvait encore distinguer. Le drapeau montait le long des sentiers zigzaguants. Où allait-il? Montait-il par hasard au vilain plateau nu où Nils était assis? Cependant le drapeau débouchait à la lisière de la forêt, suivi par tous ceux à qui il montrait la route. Il y eut un fourmillement de têtes et tant d&#x27;animation, que Nils n&#x27;eut pas le temps de s&#x27;ennuyer un seul instant.</p>
-<h2>LE JOUR DE LA FORÊT</h2>
+<h3 class="sub">Le jour de la forêt</h3>
 <p>Sur le large dos de la montagne où Gorgo avait laissé Poucet, un incendie avait passé, une dizaine d&#x27;années auparavant. Les arbres carbonisés avaient été abattus et enlevés. La hauteur s&#x27;élevait, nue et terriblement déserte. Des souches noires entre les pierres témoignaient que jadis il y avait eu là des bois, mais on ne voyait nulle part les jeunes pousses sortir de la terre.</p>
 <p>Les gens s&#x27;étonnaient que la montagne ne se reboisât pas, mais on oubliait que lors du grand incendie le sol avait souffert d&#x27;une longue sécheresse. Aussi non seulement les arbres avaient tous brûlé ainsi que la bruyère et la mousse, le myrte bâtard et l&#x27;airelle, toute la végétation; mais le terreau même, peu profond sur le rocher, était devenu sec et friable comme de la cendre. Au moindre souffle il tourbillonnait, et la hauteur, balayée par tous les vents, découvrit bientôt son ossature de roc. L&#x27;eau des pluies contribuait encore à emporter la terre, et depuis dix ans que le vent et l&#x27;eau s&#x27;étaient conjurés pour nettoyer la montagne, elle était devenue si dénudée et si chauve qu&#x27;on pouvait croire qu&#x27;elle resterait ainsi jusqu&#x27;à la fin du monde.</p>
 <p>Mais voici qu&#x27;un jour, on avait convoqué tous les enfants de la commune devant une des écoles, chacun d&#x27;eux portant sur une épaule une pioche ou une bêche, et à la main un panier de provisions. La petite armée se mit en route vers la montagne, drapeau en tête, escortée des maîtres et des maîtresses d&#x27;écoles, et suivie de deux gardes forestiers et d&#x27;un cheval qui traînait une charretée de plants de pin et de graines de sapin.</p>
@@ -1891,8 +1900,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Et voilà père et mère arrivés là-haut. Ils se contentèrent d&#x27;abord de regarder avec plaisir tous les petits minois roses entre les pierres grises. Puis ils s&#x27;intéressèrent à leur travail; pendant que quelques-uns plantaient de petits arbres, d&#x27;autres traçaient des sillons et semaient des graines, d&#x27;autres arrachaient la bruyère qui étoufferait les plants. Les enfants se donnaient à l&#x27;ouvrage de tout leur cœur.</p>
 <p>Après avoir regardé un moment, père se mit à donner un coup de main pour arracher la bruyère. Et bientôt toutes les grandes personnes que la curiosité avait attirées prirent part au travail. Le plaisir pour les enfants en était doublé. Et toute la commune fut bientôt réunie là-haut et besognait ferme. Certes, c&#x27;est un plaisir que d&#x27;ensemencer son champ au printemps, en songeant aux belles gerbes de blé qui pousseront de la terre, mais comme ce travail était plus captivant encore!</p>
 <p>Ce ne seraient pas de faibles tiges vertes qui monteraient de ces semailles, mais des arbres aux troncs vigoureux et aux puissants rameaux. Ces semailles ne produiraient pas une récolte d&#x27;un été, mais la végétation de plusieurs années. Elles réveilleraient sur la montagne le bourdonnement des insectes, le chant des merles, le jeu des coqs de bruyères, toute l&#x27;animation de la vie sur le plateau désert. Et elles seraient comme un monument élevé pour les générations futures: on aurait pu leur laisser une hauteur dénudée et morne, et voilà qu&#x27;elles hériteraient d&#x27;une belle forêt fière. Les descendants, en y réfléchissant, comprendraient que leurs ancêtres avaient été des gens sages et bons, et penseraient à eux avec des sentiments de respect et de reconnaissance.</p>
-<h2>XXVIII</h2>
-<h2>UNE JOURNÉE EN HELSINGLAND</h2>
+<h2 class="chapter" id="c27">XXVIII — Une journée en Helsingland</h2>
 <p>Jeudi, 16 juin.</p>
 <p>Le lendemain Nils traversait le Helsingland. Le pays s&#x27;étendait, printanier, sous ses yeux; les pins et les sapins avaient arboré des pousses vert clair, les bouleaux des petits bois de tendres feuilles, l&#x27;herbe des prés une verdure nouvelle, et les champs un tapis de jeune blé. C&#x27;était un pays accidenté et boisé, mais traversé par une vallée qui s&#x27;étendait toute claire, d&#x27;où partaient d&#x27;autres vallées, les unes étroites et courtes, les autres larges et longues.</p>
 <p>«Ce pays, pensa Nils, est vert comme une feuille, et les vallées se ramifient à peu près comme les veines d&#x27;une feuille.»</p>
@@ -1917,9 +1925,8 @@ h2 + p, .first { text-indent: 0; }
 <p>--Je n&#x27;ai pas eu le temps moi-même d&#x27;acheter un bol bleu, répondit-il. Mais j&#x27;en ai chargé le vieux Lapon. Je ne sais pas du tout ce qu&#x27;il est devenu.</p>
 <p>A peine Klement eut-il dit ces mots, qu&#x27;une petite pomme de pin vint lui frapper le bout du nez. Personne ne l&#x27;avait jetée.</p>
 <p>--Aïe, aïe, Klement! dit la vachère. On dirait que «le peuple des petits» écoute ce que nous disons. Tu n&#x27;aurais pas dû laisser à un autre le soin de préparer le bol bleu du tomte.</p>
-<h2>XXIX</h2>
-<h2>LE VESTERBOTTEN ET LA LAPONIE</h2>
-<h2>LE PAYS EN MARCHE</h2>
+<h2 class="chapter" id="c28">XXIX — Le vesterbotten et la Laponie</h2>
+<h3 class="sub">Le pays en marche</h3>
 <p>Samedi, 18 juin.</p>
 <p>L&#x27;aigle avait dit à Nils que la large bande de côte qui s&#x27;étendait sous leurs yeux était le Vesterbotten, et que les crêtes de montagnes qui bleuissaient très loin à l&#x27;ouest se trouvaient en Laponie.</p>
 <p>Le voyage sur le dos de l&#x27;aigle allait si vite qu&#x27;on avait souvent l&#x27;impression de rester immobile, surtout depuis que le vent qui le matin venait du nord avait changé de direction. La terre au contraire semblait reculer vers le sud. Les forêts, les maisons, les prés, les clôtures, les îles, les nombreuses scieries de la côte, tout était en marche. On eût dit que lassés de demeurer si haut dans le nord ils déménageaient vers le sud.</p>
@@ -1928,7 +1935,7 @@ h2 + p, .first { text-indent: 0; }
 <p>La gloire du pays, c&#x27;étaient les puissants fleuves sombres entourés de leurs vallées habitées, remplis de bois flottant, avec leurs scieries, leurs villes, leurs embouchures encombrées de bateaux. Si l&#x27;un de ces fleuves se montrait au sud du Dalelf, les fleuves et rivières là-bas s&#x27;enfonceraient sous terre, de honte.</p>
 <p>Et pensez donc, si une plaine pareille aussi immense, aussi facile à cultiver et aussi bien située passait sous les yeux des paysans de Smâland! Ils abandonneraient pour la labourer, en hâte, leurs maigres lopins de terre et leurs champs pierreux!</p>
 <p>Une chose que ce pays possédait en abondance, c&#x27;était la lumière. Dans les marais les grues dormaient debout. La nuit devait être venue, mais la lumière demeurait. Le soleil, lui, n&#x27;avait pas tiré vers le sud. Au contraire, il était monté très haut vers le nord, et ses rayons frappaient maintenant le visage de Nils. Il ne manifestait encore aucune envie de se coucher. Pensez, si cette lumière, si ce soleil eût éclairé Vemmenhög! Voilà qui ferait l&#x27;affaire de Holger Nilsson et de sa femme: un jour de travail de vingt-quatre heures!</p>
-<h2>LE RÊVE</h2>
+<h3 class="sub">Le rêve</h3>
 <p>Dimanche, 19 juin.</p>
 <p>Nils leva la tête et regarda autour de lui, encore mal éveillé. Il était couché à un endroit qu&#x27;il ne reconnaissait pas. Jamais il n&#x27;avait vu cette vallée, ni les montagnes qui l&#x27;enfermaient de tous côtés. Il n&#x27;avait pas vu ce lac rond qui occupait le milieu de la vallée, il n&#x27;avait jamais vu de bouleaux aussi misérables, aussi rabougris que ceux au-dessous desquels il était étendu.</p>
 <p>Et où était l&#x27;aigle? Il ne l&#x27;apercevait nulle part. Quelle aventure!</p>
@@ -1968,7 +1975,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Il se redressa de nouveau et regarda autour de lui. Ses regards tombèrent sur un curieux édifice de rameaux de pin élevé sur un gradin de la montagne.</p>
 <p>--Ce doit être une aire, comme celles que Gorgo m&#x27;a décrites.</p>
 <p>Il n&#x27;acheva pas sa pensée. Il arracha son bonnet de sa tête, et l&#x27;agita en l&#x27;air joyeusement. Il venait de comprendre où Gorgo l&#x27;avait porté: c&#x27;était cette région où les aigles avaient habité le haut de la montagne, les oies sauvages le fond de la vallée. Il était arrivé! Dans quelques instants il reverrait le jars blanc et Akka et tous ses compagnons de voyage.</p>
-<h2>L&#x27;ARRIVÉE</h2>
+<h3 class="sub">L&#x27;arrivée</h3>
 <p>Nils alla doucement à la recherche de ses amis. Toute la vallée dormait. Le soleil n&#x27;avait pas encore paru, et Nils comprit qu&#x27;il était encore de trop bonne heure pour que les oies fussent éveillées. Aux premiers pas qu&#x27;il fit, il découvrit quelque chose de très joli: c&#x27;était une oie sauvage qui dormait dans un nid posé par terre; à côté d&#x27;elle se tenait le jars. Il dormait également, mais il s&#x27;était posté de manière à être présent au moindre danger.</p>
 <p>Nils ne les dérangea pas et continua d&#x27;explorer les petites touffes d&#x27;osier qui couvraient le sol. Bientôt il aperçut un nouveau couple. Il n&#x27;appartenait pas non plus à sa bande, mais Nils n&#x27;en fut pas moins content de les voir. C&#x27;étaient des oies sauvages. Il se mit à fredonner de plaisir.</p>
 <p>Il regarda ailleurs, et sous une autre touffe d&#x27;osier, il reconnut Neljä qui couvait ses œufs; le jars à côté d&#x27;elle ne pouvait être que Kolme. Il n&#x27;y avait pas à se tromper. Nils eut bien envie de les éveiller, mais il se retint.</p>
@@ -1985,9 +1992,8 @@ h2 + p, .first { text-indent: 0; }
 <p>--Je suis bien aise que vous m&#x27;approuviez, continua Nils. Il y a encore une chose que je voulais vous demander. J&#x27;ai vu un jour apporter au Skansen Gorgo, l&#x27;aigle. Il avait l&#x27;air piteux, et j&#x27;ai songé à limer quelques fils de fer de sa volière pour le laisser sortir. Puis je me suis dit que c&#x27;était un dangereux brigand, un mangeur d&#x27;oiseaux. Je ne savais si j&#x27;avais le droit de le relâcher, et j&#x27;ai pensé qu&#x27;il valait peut-être mieux le laisser où il était. Qu&#x27;en pensez-vous, mère Akka? Je n&#x27;ai pas eu tort, n&#x27;est-ce pas, de raisonner ainsi?</p>
 <p>--Tu as eu tort, répondit Akka sans hésiter. Quoi qu&#x27;on dise des aigles, ce sont des oiseaux fiers et qui aiment la liberté plus que tous les autres animaux, et l&#x27;on ne doit pas les retenir captifs. Sais-tu ce que je te proposerai? Dès que tu seras reposé, nous deux nous ferons un voyage jusqu&#x27;à cette grande prison d&#x27;oiseaux pour que tu délivres Gorgo.</p>
 <p>--J&#x27;attendais de vous ce mot-là, mère Akka, dit le gamin. On dit que vous n&#x27;avez plus d&#x27;affection pour celui que vous avez élevé avec tant de peine, parce qu&#x27;il vit comme sont forcés de vivre les aigles. Je vois bien qu&#x27;on se trompe. J&#x27;irai maintenant voir si le jars blanc est enfin éveillé; si, pendant ce temps vous vouliez remercier d&#x27;un mot celui qui m&#x27;a rapporté parmi vous, vous le trouverez, là-haut, sur le gradin où vous avez une fois trouvé un petit aiglon abandonné.</p>
-<h2>XXX</h2>
-<h2>ASA, LA GARDEUSE D&#x27;OIES, ET LE PETIT MATS</h2>
-<h2>LA MALADIE</h2>
+<h2 class="chapter" id="c29">XXX — Asa, la gardeuse d&#x27;oies, et le petit Mats</h2>
+<h3 class="sub">La maladie</h3>
 <p>L&#x27;année du voyage de Nils Holgersson, on parlait beaucoup de deux enfants, un garçon et une fille, qui traversaient tout le pays à la recherche de leur père. Ils étaient de Smâland, du canton de Sunnerbo; ils y avaient habité avec leurs parents et quatre frères et sœurs une petite cabane au bord d&#x27;une immense lande. Lorsque les deux enfants étaient encore petits, un soir, une pauvre vagabonde avait frappé à leur porte et avait demandé un gîte pour la nuit. Bien que la cabane fût toute petite et déjà comble, la mère lui avait arrangé un lit par terre. Pendant la nuit elle avait toussé à rendre l&#x27;âme, et le matin elle s&#x27;était trouvée trop malade pour continuer sa marche.</p>
 <p>Les parents des enfants avaient été aussi bons pour elle que possible. Ils lui avaient cédé leur propre lit, et le père était allé jusque chez le pharmacien pour chercher de la médecine. Les premiers jours, la malade avait été très exigeante et ingrate, mais peu à peu elle s&#x27;était adoucie; elle ne cessait de supplier qu&#x27;on la portât dehors sur la bruyère et qu&#x27;on la laissât mourir. Elle avait rôdé, raconta-t-elle, avec des tsiganes. Elle n&#x27;était pas elle-même d&#x27;origine tsigane: fille d&#x27;un paysan, elle s&#x27;était enfuie de chez elle pour suivre le peuple nomade. Une vieille femme de la bande, qui la détestait, lui avait envoyé cette maladie. Et, dans sa colère, cette femme lui avait aussi prédit que quiconque serait bon pour elle et l&#x27;hébergerait sous son toit aurait le même sort qu&#x27;elle. La pauvre malade croyait à ce maléfice de la tsigane et craignait maintenant de porter malheur à ses hôtes. Ceux-ci furent très impressionnés par ce récit, mais ils n&#x27;étaient pas gens à jeter à la porte une mourante.</p>
 <p>Peu de temps après la malade était morte, et les malheurs avaient commencé. Auparavant on avait été très gai dans la maison. On avait été pauvre, mais on n&#x27;avait pas connu la misère. Le père fabriquait des peignes de tisserand; la mère et les enfants l&#x27;aidaient au travail. Le père préparait les cadres des peignes, les enfants coupaient les dents et les limaient, tandis que la mère et la grande sœur les inséraient dans les cadres. On travaillait du matin au soir en plaisantant et en s&#x27;amusant, surtout lorsque le père racontait des histoires du temps où il avait parcouru des pays étrangers pour vendre ses peignes. Il était d&#x27;une humeur enjouée, le père, et l&#x27;on riait aux éclats à écouter ses histoires.</p>
@@ -2018,7 +2024,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Presque toujours, dans les fermes où on les envoyait ainsi, il y avait un poitrinaire. Et sans le savoir les deux enfants, parcourant le pays, mettaient les gens en garde contre la terrible maladie, en leur apprenant le moyen de la combattre.</p>
 <p>Il y a longtemps, longtemps, des siècles, lorsque la terrible peste, appelée la peste noire, ravageait le pays, on prétendait avoir vu un garçon et une fille qui allaient de ferme en ferme, de maison en maison. Le garçon portait un râteau, et s&#x27;il ratissait devant une maison c&#x27;était signe que beaucoup de personnes allaient mourir dans cette maison, mais pas tous, car le râteau a des dents espacées et n&#x27;enlève pas tout. La fillette avait un balai, et là où elle balayait devant une porte, c&#x27;était signe que tous les habitants de la maison allaient mourir, car le balai fait maison nette.</p>
 <p>Les deux enfants qui de nos jours parcouraient le pays, cette fois encore à cause d&#x27;une maladie terrible, n&#x27;effrayaient pas les gens avec le râteau et le balai; au contraire ils leur disaient: «Nous ne nous contenterons pas de ratisser la cour et de balayer les parquets. Nous prendrons aussi l&#x27;eau et la lessive et les brosses et le savon. Nous tiendrons propre le devant de notre porte, propre notre maison, propre notre corps. De cette façon nous finirons par nous rendre maîtres de la maladie.»</p>
-<h2>L&#x27;ENTERREMENT DU PETIT MATS</h2>
+<h3 class="sub">L&#x27;enterrement du petit Mats</h3>
 <p>Le petit Mats était mort. Cela paraissait incroyable à tous ceux qui l&#x27;avaient vu, gai et bien portant, il y avait seulement quelques heures. C&#x27;était pourtant vrai: le petit Mats était mort et allait être enterré.</p>
 <p>Le petit Mats était mort un matin de très bonne heure; seule sa sœur Asa avait été présente et l&#x27;avait vu mourir. «Ne va chercher personne!» avait dit le petit Mats, quand sa fin approchait, et la sœur avait obéi. «Je suis heureux de ne pas mourir de la «maladie», Asa, continua-t-il. Toi aussi, n&#x27;est-ce pas?» Comme Asa ne répondait pas: «Je trouve, continua-t-il, que ça ne fait rien de mourir, du moment que je ne meurs pas comme la mère et les frères et sœurs, car en ce cas je suis sûr que tu n&#x27;aurais jamais pu persuader à père qu&#x27;une maladie ordinaire les a emportés, mais maintenant tu vas voir que tu réussiras.»</p>
 <p>Lorsque tout fut fini, Asa resta une grande heure à réfléchir à tout ce que le petit Mats avait enduré dans la vie. Elle se disait qu&#x27;il avait supporté tous les malheurs avec le même courage qu&#x27;une grande personne. Elle pensait à ses derniers mots: toujours le même courage. Il lui sembla qu&#x27;une chose s&#x27;imposait: il fallait qu&#x27;on enterrât le petit Mats avec les mêmes honneurs qu&#x27;une grande personne.</p>
@@ -2066,8 +2072,7 @@ h2 + p, .first { text-indent: 0; }
 <p>--Et puisque je payerai moi-même tous les frais de l&#x27;enterrement, j&#x27;espérais... Elle s&#x27;interrompit de nouveau.</p>
 <p>Le directeur leva alors les yeux et regarda Asa, la petite gardeuse d&#x27;oies, jusqu&#x27;au fond des yeux. Il la mesura et la pesa pour ainsi dire avec le regard presque professionnel d&#x27;un homme qui a beaucoup de monde sous ses ordres. Il se dit qu&#x27;elle avait perdu foyer, parents, frères et sœurs, et n&#x27;était pas encore brisée. Quelle brave femme elle serait un jour! Mais oserait-il ajouter encore au fardeau qui pesait sur ses frêles épaules? Ne serait-ce pas le brin de paille qui la ferait tomber sous une charge trop lourde? Il comprenait ce qu&#x27;il avait dû en coûter à Asa de venir chez lui pour parler de son petit frère. Elle l&#x27;avait sans doute aimé plus que tout au monde, ce frère. Comment oserait-on opposer un refus à cet amour?</p>
 <p>--Fais comme tu voudras, ma petite fille, prononça enfin le directeur.</p>
-<h2>XXXI</h2>
-<h2>CHEZ LES LAPONS</h2>
+<h2 class="chapter" id="c30">XXXI — Chez les Lapons</h2>
 <p>Sur la rive occidentale du Luossajaure, petit lac situé à plusieurs milles au nord du Malmberg, il y avait un camp lapon. A la pointe sud du lac s&#x27;élève une montagne isolée toute ronde, appelée en lapon Kirunavara et qui, paraît-il, se compose presque exclusivement de minerai de fer. Au nord-est se trouve une autre montagne, appelée Luossavara, riche aussi en fer. On était en train de construire un chemin de fer entre Gellivare et ces montagnes, et au pied de Kirunavara s&#x27;élevaient une gare, un hôtel de voyageurs et des habitations pour les ouvriers et les ingénieurs. Toute une petite ville avec des maisons coquettes et gaies surgissait dans cette contrée si septentrionale que les petits bouleaux rabougris dont le sol est couvert ne déploient leurs bourgeons qu&#x27;après la Saint-Jean.</p>
 <p>A l&#x27;ouest du lac le terrain était découvert; quelques familles de la peuplade des Lapons s&#x27;y étaient installées. Les Lapons étaient là depuis seulement un ou deux mois, mais il ne leur avait pas fallu beaucoup de temps pour arranger leur installation. Ils n&#x27;avaient point creusé la terre, ni fait sauter des rochers, ni établi sur une solide maçonnerie les fondations de leur demeure: après avoir choisi un emplacement sec et agréable à proximité du lac, ils s&#x27;étaient contentés de couper quelques buissons d&#x27;osier et d&#x27;égaliser quelques tertres. Ils n&#x27;avaient point charpenté ni cloué des journées durant pour élever des murs de bois solides, ils ne s&#x27;étaient soucié ni de faîtage, ni de toitures, ni de revêtement de planches, ni de fenêtres, ni de portes et de serrures. Ils avaient solidement enfoncé en terre les pieux de leurs tentes, y avaient accroché la toile, et voilà leur demeure construite. Point de frais d&#x27;installation ni d&#x27;ameublement: une couche de branches de sapin et de peaux de rennes par terre, une crémaillère retenue par des chaînes au faîte de la tente pour suspendre la grande marmite où ils font cuire leur viande de renne.</p>
 <p>Les colons de la rive orientale du lac, qui besognaient pour achever leurs maisons avant l&#x27;arrivée du rude hiver, s&#x27;étonnaient des mœurs des Lapons qui habitent depuis des siècles le haut nord, et n&#x27;ont pas eu l&#x27;idée d&#x27;élever contre le froid et les tempêtes un abri plus solide que la toile des tentes. Et les Lapons ne comprenaient pas les colons qui se donnaient tant de mal, lorsque pour vivre il suffit de quelques rennes et d&#x27;une tente.</p>
@@ -2142,9 +2147,8 @@ h2 + p, .first { text-indent: 0; }
 <p>Le Suédois se mit presque à courir.</p>
 <p>--Je savais bien qu&#x27;il aurait peur si je le menaçais d&#x27;adopter sa fille dans le peuple same, se dit à lui-même le vieil Ola.</p>
 <p>Lorsque l&#x27;homme de Kiruna qui la veille avait conduit Asa à travers le lac jusqu&#x27;au campement lapon, s&#x27;en retourna dans la soirée, il emmena deux personnes qui avaient pris place très près l&#x27;une de l&#x27;autre et qui se tenaient la main dans la main, comme pour ne jamais plus se séparer. C&#x27;étaient Jon Assarsson et sa fille. Tous les deux semblaient changés: Jon Assarsson était moins voûté et paraissait moins las; ses yeux avaient pris un regard lumineux et bon comme s&#x27;il avait enfin trouvé la solution d&#x27;une question angoissante, et Asa, la gardeuse d&#x27;oies, ne regardait pas autour d&#x27;elle avec cette attention et cette prudence éveillée qui d&#x27;ordinaire la faisaient paraître plus vieille que son âge. Elle avait trouvé quelqu&#x27;un sur qui s&#x27;appuyer et elle semblait en voie de redevenir une enfant.</p>
-<h2>XXXII</h2>
-<h2>VERS LE SUD! VERS LE SUD!</h2>
-<h2>PREMIER JOUR DE VOYAGE</h2>
+<h2 class="chapter" id="c31">XXXII — Vers le sud! Vers le sud!</h2>
+<h3 class="sub">Premier Jour de voyage</h3>
 <p>Samedi, 1er octobre.</p>
 <p>Nils, sur le dos du jars blanc, voyageait au-dessus des nuages. Trente et une oies sauvages volaient rapidement vers le sud en un triangle bien régulier. Les plumes bruissaient, toutes ces ailes fouettaient l&#x27;air avec un sifflement; on ne pouvait entendre sa propre voix. Akka de Kebnekaïse volait en tête, derrière elle, à droite et à gauche, venaient Yksi et Kaksi, Kolme et Neljä, Viisi et Kuusi, le jars blanc et Finduvet. Les six jeunes oies qui avaient accompagné la bande, n&#x27;en faisaient plus partie. A leur place les vieilles oies emmenaient vingt-deux oisons, élevés cet été dans la vallée laponne. Onze volaient à droite et onze à gauche, et ils faisaient de leur mieux pour garder entre eux des intervalles aussi réguliers que les vieilles oies.</p>
 <p>Les pauvres oisons, qui n&#x27;avaient pas encore fait de voyage, eurent d&#x27;abord beaucoup de mal à suivre le vol rapide.</p>
@@ -2173,7 +2177,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Mais les ours, en voyant les oies, les montraient aux oursons en grognant: «Voyez-vous ces peureuses qui craignent un peu de froid, et qui n&#x27;osent pas rester chez elles en hiver!» Les vieilles oies ne restaient pas à court de réponse: «Voyez-vous ces fainéants qui aiment mieux dormir la moitié de l&#x27;année que de se donner la peine d&#x27;émigrer!»</p>
 <p>Dans les forêts de sapins les jeunes coqs de bruyères se blottissaient les uns contre les autres, hérissés et transis, regardant avec envie toutes ces bandes d&#x27;oiseaux qui avec des cris d&#x27;allégresse se rendaient vers le sud. «Quand sera-ce notre tour? demandaient-ils à leur mère. Quand sera-ce notre tour?»</p>
 <p>--Vous resterez ici auprès de votre père et de votre mère, répondait la poule. Vous resterez ici chez père et mère.</p>
-<h2>LE MONT ŒSTBERG</h2>
+<h3 class="sub">Le mont œstberg</h3>
 <p>Tant que les oies étaient encore en Laponie elles eurent un très beau temps; mais à peine entrées dans le Jemtland d&#x27;épais brouillards les enveloppèrent; elles descendirent au sommet d&#x27;une colline. Nils croyait bien être dans un pays habité, car il s&#x27;imaginait entendre des voix d&#x27;hommes et des grincements de voitures. Il aurait bien voulu chercher abri dans une ferme, mais par cet épais brouillard il avait peur de s&#x27;égarer. Tout ruisselait d&#x27;eau et d&#x27;humidité. Des gouttelettes pendaient au bout de chaque brin d&#x27;herbe et au moindre mouvement il recevait de véritables douches.</p>
 <p>Il fit quelques pas pour chercher un refuge, lorsqu&#x27;il aperçut devant lui un édifice très haut, mais pas très grand. La porte était fermée et l&#x27;édifice inhabité. Nils comprit que ce ne pouvait être qu&#x27;une tour élevée là pour permettre de mieux voir le paysage. Il retourna près des oies.</p>
 <p>--Mon bon jars, appela-t-il, prends-moi sur ton dos et porte-moi au sommet de cette tour là-bas. J&#x27;y trouverai peut-être une petite place sèche pour dormir.</p>
@@ -2182,8 +2186,7 @@ h2 + p, .first { text-indent: 0; }
 <p>En ce moment il sursauta. Plongé dans la contemplation du pays, il n&#x27;avait pas remarqué que des visiteurs s&#x27;étaient approchés de la tour. Ils montaient les escaliers d&#x27;un pas si rapide qu&#x27;il eut à peine le temps de trouver une cachette.</p>
 <p>C&#x27;étaient des jeunes gens et des jeunes filles qui faisaient ensemble une excursion à pied à travers le Jemtland. Ils se félicitaient d&#x27;être arrivés à la ville d&#x27;Œstersund la veille au soir pour jouir le matin de cette belle vue du Frösö, d&#x27;où l&#x27;on distinguait plus de vingt milles à la ronde. Ils se montraient et se nommaient les églises et les fjells. Les plus proches étaient les fjells d&#x27;Ovik, ils étaient d&#x27;accord sur ce point; mais lequel de ces sommets était l&#x27;Areskutan?</p>
 <p>Une jeune fille tira de son sac une carte qu&#x27;elle déploya sur ses genoux, et ils s&#x27;assirent pour l&#x27;étudier. Nils fut inquiet de les voir rester si longtemps. Le jars ne pourrait venir le chercher pendant qu&#x27;ils étaient là, et il savait que les oies avaient hâte de continuer leur voyage. Au milieu de la conversation des touristes, il crut un moment entendre un caquetage d&#x27;oies et des coups d&#x27;ailes, mais il n&#x27;osa sortir de sa cachette.</p>
-<h2>XXXIII</h2>
-<h2>LÉGENDES DE HERJEDALEN</h2>
+<h2 class="chapter" id="c32">XXXIII — Légendes de Herjedalen</h2>
 <p>Lorsque les touristes furent partis et que Nils put regarder autour de lui, il ne vit d&#x27;oies sauvages nulle part. Aucun jars blanc ne vint le chercher. Il appela plusieurs fois, mais en vain. Il ne crut pas un instant que les oies l&#x27;eussent abandonné, mais il eut peur qu&#x27;un malheur ne leur fût arrivé, et il se creusait la tête pour trouver un moyen de les rejoindre, quand Bataki, le corbeau, tout à coup s&#x27;abattit près de lui.</p>
 <p>Jamais Nils n&#x27;aurait cru qu&#x27;il saluerait Bataki aussi joyeusement:</p>
 <p>--Mon cher Bataki, lui dit-il, quelle chance que tu sois venu ici! Pourrais-tu me donner des nouvelles du jars blanc et des oies sauvages?</p>
@@ -2255,8 +2258,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Nils se leva d&#x27;un bond.</p>
 <p>--C&#x27;est une méchante invention que tu imagines là, Bataki! s&#x27;écria-t-il.</p>
 <p>--Tu vas pouvoir le demander toi-même à Akka, car la voici, je crois, qui s&#x27;approche avec sa bande. Mais n&#x27;oublie pas les histoires que je t&#x27;ai racontées aujourd&#x27;hui. Il y a un moyen de sortir de toutes les difficultés, si seulement on le trouve. Je serai curieux de voir comment tu réussiras.</p>
-<h2>XXXIV</h2>
-<h2>UN PETIT DOMAINE</h2>
+<h2 class="chapter" id="c33">XXXIV — Un petit domaine</h2>
 <p>Le lendemain Nils profita, pendant un arrêt, d&#x27;un moment où Akka en paissant s&#x27;était un peu éloignée des autres oies pour lui demander si ce que lui avait raconté Bataki était vrai. Akka ne put le nier. Le gamin fit alors promettre à la vieille oie de ne point laisser le jars blanc soupçonner ce secret. Brave et généreux comme il était, il aurait pu agir sans demander conseil à personne.</p>
 <p>Après cette conversation Nils resta silencieux et renfrogné sur le dos du jars sans s&#x27;intéresser à rien. Il entendit les oies crier aux oisons qu&#x27;on entrait en Dalécarlie et qu&#x27;on pouvait distinguer le Städjan.</p>
 <p>--Comme il est probable que je voyagerai toute ma vie avec les oies, j&#x27;aurai le temps de voir ce pays plus que je ne le désirerai, grommela Nils.</p>
@@ -2316,8 +2318,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Le gamin n&#x27;était pas fâché de confier à quelqu&#x27;un ses aventures; à mesure qu&#x27;il racontait, son interlocutrice était de plus en plus ébahie, émerveillée et contente.</p>
 <p>--Quelle chance étonnante de rencontrer quelqu&#x27;un qui a parcouru toute la Suède sur le dos d&#x27;une oie! se disait-elle. Je n&#x27;ai qu&#x27;à écrire son histoire pour faire ce livre qui m&#x27;a tant préoccupée. Comme j&#x27;ai bien fait de revenir à la maison! J&#x27;ai été aidée dès mon retour.</p>
 <p>En ce moment une idée lui traversa la tête, qu&#x27;elle osa à peine formuler. Elle avait envoyé avec les pigeons un message à son père pour lui dire qu&#x27;elle avait la nostalgie de la maison, et l&#x27;instant d&#x27;après elle s&#x27;était vue aider pour une affaire qui lui avait donné tant de souci. Serait-ce là une réponse de son père à ce qu&#x27;elle avait demandé?</p>
-<h2>XXXV</h2>
-<h2>EN ROUTE VERS LA MER</h2>
+<h2 class="chapter" id="c34">XXXV — En route vers la mer</h2>
 <p>Vendredi, 7 octobre.</p>
 <p>Depuis le commencement du voyage, les oies avaient volé droit vers le Sud, mais en quittant la vallée du Fryken, elles prirent une autre direction et, par le Vermland occidental et le Dalsland, elles se dirigèrent vers le Bohuslän.</p>
 <p>Ce fut un long voyage. Les oisons avaient eu assez d&#x27;exercice pour ne plus se plaindre de la fatigue, et Nils reprenait un peu de son ancienne bonne humeur. D&#x27;avoir parlé à un être humain, il se sentait tout ragaillardi. La dame lui avait dit que sûrement, en continuant de rendre service à tous ceux qu&#x27;il rencontrait, il n&#x27;était pas possible que son aventure ne finît bien. Certes, elle ne pouvait lui prédire comment il retrouverait sa vraie taille, mais elle lui avait rendu un peu de confiance et de courage. Il ne songeait maintenant qu&#x27;au moyen de dissuader le jars blanc de l&#x27;idée de retourner à Vemmenhög.</p>
@@ -2344,8 +2345,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Je me suis fâché et je l&#x27;ai menacé de lui crever les yeux s&#x27;il ne se rendait pas.</p>
 <p>--Fais de moi ce que tu voudras, a-t-il repris, il n&#x27;en sera pas moins pour Nils Holgersson comme je l&#x27;ai dit. Mais tu devrais l&#x27;avertir qu&#x27;il ferait bien de revenir avec son jars, car les affaires vont mal ici. Holger Nilsson s&#x27;était porté garant pour son frère et a dû payer une grosse somme. Puis il a acheté un cheval avec de l&#x27;argent emprunté, mais le cheval est tombé boiteux dès le premier jour, et depuis il n&#x27;en tire aucun profit. Dis donc à Nils Holgersson que ses parents ont déjà dû vendre leurs vaches, et qu&#x27;ils seront peut-être forcés de quitter la ferme si personne ne leur vient en aide.</p>
 <p>En entendant ce récit, Nils fronça les sourcils, et ses poings se serrèrent si fort que les articulations des doigts en étaient blanches. «Il a agi cruellement, le tomte, dit-il, en fixant une condition telle qu&#x27;il m&#x27;est impossible de retourner aider mes parents. Mais il ne fera pas de moi un traître, qui trompe son ami. Père et mère sont des gens honnêtes, et je sais qu&#x27;ils aimeraient mieux se passer de mon secours que de me voir revenir avec une mauvaise conscience.»</p>
-<h2>XXXVI</h2>
-<h2>LE RETOUR A VEMMENHÖG</h2>
+<h2 class="chapter" id="c35">XXXVI — Le retour a Vemmenhög</h2>
 <p>Akka conduisit les oies sauvages vers la plaine scanienne; à perte de vue c&#x27;étaient de vastes champs de blé et de betteraves, des fermes basses entourant de larges cours, une infinité de petites églises blanches, de vilaines usines à sucre grises, des bourgs pareils à des petites villes autour des gares. Il y avait des tourbières, des mines de houille avec de hauts amoncellements de charbon, des routes qui couraient entre des rangées de saules étêtés, des chemins de fer qui se croisaient et formaient un réseau aux mailles serrées. Des petits lacs entourés de bouquets de hêtres brillaient çà et là, flanqués de châteaux.</p>
 <p>--Regardez maintenant! Regardez bien! cria l&#x27;oie-guide. Voilà ce que vous verrez à l&#x27;étranger, depuis la côte de la Baltique jusqu&#x27;aux Alpes, que je n&#x27;ai jamais franchies.</p>
 <p>Lorsque les oisons eurent regardé la plaine, Akka les mena à la côte du Sund. De basses prairies y descendent doucement jusqu&#x27;à l&#x27;eau; de longues bandes de varech noirci rejeté par les vagues forment une bordure zigzaguante. A quelques endroits il y avait des collines et des champs de sable mouvant. Les hameaux de pêcheurs rangeaient sur la rive leurs maisonnettes de briques toutes pareilles, avec un petit phare au bout d&#x27;une jetée, et partout des filets suspendus à sécher.</p>
@@ -2353,7 +2353,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Enfin les oies passèrent au-dessus de quelques villes: une masse de cheminées d&#x27;usine, des rues encaissées entre de hautes maisons noircies de fumée, de grands et beaux jardins publics, des ports remplis de navires, parfois d&#x27;anciennes fortifications, des châteaux et de vieilles églises.</p>
 <p>--Voilà comment sont les villes de l&#x27;étranger, bien que beaucoup plus grandes, disait Akka. Mais celles-ci pourront bien un jour devenir grandes aussi.</p>
 <p>Après ces tours sur la plaine, Akka descendit avec sa bande dans un marais du canton de Vemmenhög. Nils ne put s&#x27;empêcher de se demander si ce jour-là elle n&#x27;avait pas fait tous ces coudes et ces cercles au-dessus de la Scanie pour lui montrer que son pays pouvait se comparer à n&#x27;importe quelle terre de l&#x27;étranger. Il se dit qu&#x27;elle s&#x27;était donné cette peine bien gratuitement: il ne songeait pas à se demander si son pays était riche ou pauvre: depuis qu&#x27;il avait aperçu les premiers saules en bordure des routes, la première maison basse à colombage, le mal du pays l&#x27;avait repris.</p>
-<h2>CHEZ HOLGER NILSSON</h2>
+<h3 class="sub">Chez Holger Nilsson</h3>
 <p>Le temps était gris et brumeux. Les oies sauvages faisaient la sieste, quand tout à coup Akka vint à Nils:</p>
 <p>--Le temps semble être au calme, dit-elle, et je pense que demain nous traverserons la Baltique.</p>
 <p>--Bon! dit Nils. Il ne put rien ajouter, tant sa gorge se serra. Il avait espéré, malgré tout, qu&#x27;il serait délivré de l&#x27;enchantement, pendant qu&#x27;on était encore en Scanie.</p>
@@ -2452,7 +2452,7 @@ h2 + p, .first { text-indent: 0; }
 <p>--Sois le bienvenu, fils, dit le père sans pouvoir proférer un mot de plus.</p>
 <p>Nils hésitait encore sur le seuil. Il ne comprenait pas leur joie. Mais la mère s&#x27;était élancée vers lui, et lui avait jeté les bras autour du cou. Alors Nils comprit ce qui était arrivé:</p>
 <p>«Père, mère, je suis redevenu grand! je suis redevenu un homme!» cria-t-il.</p>
-<h2>LES ADIEUX DE NILS AUX OIES SAUVAGES</h2>
+<h3 class="sub">Les adieux de Nils aux oies sauvages</h3>
 <p>Mercredi, 9 novembre.</p>
 <p>Nils se leva avant l&#x27;aube le lendemain matin et se rendit vers la côte.</p>
 <p>Lorsque le jour commença à poindre, il était au rendez-vous fixé par Akka, un peu à l&#x27;est du hameau de Smyge. Il était seul. Avant de partir, il était entré dans l&#x27;étable chez le jars blanc pour essayer de l&#x27;éveiller. Mais celui-ci n&#x27;avait pas dit un mot, avait de nouveau fourré sa tête sous son aile et s&#x27;était rendormi.</p>
@@ -2475,67 +2475,5 @@ h2 + p, .first { text-indent: 0; }
 <p>Lorsqu&#x27;il fut arrivé en haut de la dune, il se retourna et regarda tous les groupes d&#x27;oiseaux qui se préparaient à traverser la mer. Tous criaient leurs appels; seule une bande d&#x27;oies sauvages volait en silence, tant qu&#x27;il put la suivre des yeux.</p>
 <p>Mais leur triangle était en ordre parfait, les intervalles étaient bien respectés, la vitesse bonne et les coups d&#x27;ailes vigoureux et égaux. Nils sentit un tel élan de regret qu&#x27;il eût presque souhaité redevenir le Poucet qui pouvait voyager au-dessus de la terre et de la mer avec une bande d&#x27;oies sauvages.</p>
 <p>FIN</p>
-<h2>TABLE DES CHAPITRES</h2>
-<p>Pages</p>
-<h2>I. Nils Holgersson                                    1</h2>
-<h2>II. Akka de Kebnekaïse                                22</h2>
-<h2>III. Avec les oies sauvages                            43</h2>
-<h2>IV. Glimmingehus                                      58</h2>
-<h2>V. La grande danse des grues à Kullaberg             75</h2>
-<h2>VI. Temps de pluie                                    87</h2>
-<h2>VII. La vallée de la rivière de Ronneby                93</h2>
-<h2>VIII. Karlskrona                                       102</h2>
-<h2>IX. Voyage à Œland                                   114</h2>
-<h2>X. La pointe méridionale d&#x27;Œland                    120</h2>
-<h2>XI. Le grand papillon                                130</h2>
-<h2>XII. La petite île Karl                               135</h2>
-<h2>XIII. Deux villes                                      150</h2>
-<h2>XIV. La saga du Smâland                               164</h2>
-<h2>XV. Les corneilles                                   171</h2>
-<h2>XVI. La vieille paysanne                              192</h2>
-<h2>XVII. Du Taberg à Huskvarna                            205</h2>
-<h2>XVIII. La prédiction                                    210</h2>
-<h2>XIX. Le lé de bure                                    217</h2>
-<h2>XX. La saga de Karr et de Poil-Gris                  222</h2>
-<h2>XXI. La débâcle des glaces                            241</h2>
-<h2>XXII. La Dalécarlie. Le soir de la Sainte-Valborg      246</h2>
-<h2>XXIII. L&#x27;inondation                                     256</h2>
-<h2>XXIV. La saga de l&#x27;Uppland                             269</h2>
-<h2>XXV. Finduvet                                         275</h2>
-<h2>XXVI. Gorgo l&#x27;aigle                                    293</h2>
-<h2>XXVII. A travers le Gestrikland                         305</h2>
-<h2>XXVIII. Une journée en Helsingland                       311</h2>
-<h2>XXIX. Le Vesterbotten et la Laponie                    316</h2>
-<h2>XXX. Asa, la gardeuse d&#x27;oies, et le petit Mats        327</h2>
-<h2>XXXI. Chez les Lapons                                  344</h2>
-<h2>XXXII. Vers le sud! vers le sud!                        356</h2>
-<h2>XXXIII. Légendes de Herjedalen                           364</h2>
-<h2>XXXIV. Un petit domaine                                 373</h2>
-<h2>XXXV. En route vers la mer                             386</h2>
-<h2>XXXVI. Le retour à Vemmenhög                            391</h2>
-<p>LIBRAIRIE ACADÉMIQUE PERRIN ET Cie</p>
-<p>E. ANGOT.--Un neveu du Prince de Bénévent. =Louis de Talleyrand-Périgord= (1784-1808), d&#x27;après de nouveaux documents.1 volume in-16.                                     =3 50=</p>
-<p>RAOUL ARNAUD.--=La Princesse de Lamballe= (1749-1792), d&#x27;après des documents inédits.--Turin.--L&#x27;Epouse.--L&#x27;Amie. --Dans la tourmente.--Septembre. 1 volume in-8º écu, orné de 7 gravures.                                            =5= »</p>
-<p>ANDRÉ BELLESSORT.--=La Suède.=--La Nature.--L&#x27;Esprit et les Mœurs.--Deux représentants de la Suède littéraire. --La Suède religieuse. 1 vol. in-16.                          =3 50=</p>
-<p>ALPHONSE BERTRAND.--=Les origines de la Troisième République (1871-1876).=--L&#x27;Assemblée Nationale.--La Réorganisation de la France. Les lois constitutionnelles. 1 vol. in-8º carré.                                           =7 50=</p>
-<p>LOUIS BOUTIE.--=Paris au temps de saint Louis.= 1 vol. in-8º écu.                                                     =5= »</p>
-<p>AUGUSTIN CABAT.--=Les Porteurs du Flambeau=, d&#x27;Homère à Victor Hugo. 1 vol. in-16.                                    =3 50=</p>
-<p>CHATEAUBRIAND.--Un dernier amour de René. =Correspondance de Chateaubriand avec la Marquise de V.....= Avec une introduction et des Notes par T. DE WYZEWA. 1 vol. in-8º, écu, orné d&#x27;un portrait.                                      =3 50=</p>
-<p>Mme CRADOCK.--=La Vie française à la veille de la Révolution= (1783-1786). Journal inédit de Mme Cradock, traduit de l&#x27;anglais par Mme O. Delphin BALLEYGUIER. 1 volume in-16.                                               =3 50=</p>
-<p>ANDRÉ HALLAYS.--En flânant. A travers la France. =Autour de Paris.= Maintenon.--La Ferté-Milon.--Meaux et Germigny.--Sainte-Radegonde.--Senlis.--Juilly.--Maisons. --La Vallée de l&#x27;Oise.--Gallardon.--De Mantes à la Roche-Guyon. --Soissons.--Les Jardins de Betz.--Chantilly.--Wideville. --Livry. 1 vol. in-8º écu, orné de gravures.                   =5= »</p>
-<p>--En flânant. =A travers l&#x27;Alsace.= 1 vol. in-8º écu, orné de gravures.                                              =5= »</p>
-<p>VERNER VON HEIDENSTAM.--=Le Pélerinage de sainte Brigitte=, traduction du suédois avec l&#x27;autorisation de l&#x27;auteur par S. GARLING-PALMÉR. vol. in-16.                            =3 50=</p>
-<p>MARIUS-ARY LEBLOND.--=La Pologne Vivante.=--(Russie, Allemagne, Autriche). Une renaissance active sous l&#x27;horreur des persécutions.--Le Drame du Progrès national.--La Nationalité, la Religion, la Langue et la Littérature.--La Vie économique. 1 volume in-16.                                               =3 50=</p>
-<p>Dr LE DENTU.--=Visions d&#x27;Égypte.= 1 volume in-16.               =3 50=</p>
-<p>LUCIEN MAURY.--=Figures Littéraires.=--Écrivains français et étrangers. 1 volume in-16.                                    =3 50=</p>
-<p>GEORGES DE MOUSSAC.--=Dans la Mêlée.=--Journal d&#x27;un Cuirassier de 1870-1871.--De Reichshoffen à Sedan.--En Captivité à Ulm. --Contre la Commune. 1 vol. in-16.                            =3 50=</p>
-<p>MARQUIS DE MOUSSAC.--Un Prêtre d&#x27;Autrefois.--L&#x27;Abbé de Moussac, vicaire général de Poitiers (1753-1827), d&#x27;après des documents inédits. 1 vol. in-8º écu, avec gravures.                      =5= »</p>
-<p>FERNAND NICOLAY.--Aux «Classes dirigeantes». =Ce que les Pauvres pensent des Riches.=--Griefs contre les classes dirigeantes. 1 vol. in-16 (couronné par l&#x27;Académie française).           =3 50=</p>
-<p>--=L&#x27;Esprit de taquinerie.= Étude de psychologie comparée. 1 volume in-16.                                               =3 50=</p>
-<p>G. PAILHÉS.--=La Duchesse de Duras et Chateaubriand=, d&#x27;après des documents inédits. Un volume in-8º avec gravures.         =7 50=</p>
-<p>GILBERT STENGER.--=Grandes Dames du XIXe siècle.=--Chronique du temps de la Restauration. 1 beau vol. in-8º écu, orné de 9 portraits.                                                =5= »</p>
-<p>A. TORNEZY.--=La Légende des Philosophes.= Voltaire, Rousseau, Diderot, peints par eux-mêmes. 1 vol. in-8º carré.            =7 50=</p>
-<p>AMÉDÉE VIALAY.--=Les Cahiers de Doléances du Tiers-État= aux États-Généraux de 1789. Étude historique, économique et sociale. Préface de M. René STOURN, membre de l&#x27;Institut. 1 vol. in-8º écu (couronné par l&#x27;Académie des sciences morales).                                                     =5= »</p>
-<p>Paris.--Imp. E. CAPIOMONT et Cie, rue de Seine, 57.</p>
-<p class="colophon">Texte du domaine public, source : Project Gutenberg (#66480). Traduction : Hammar, T. (Thékla) († 1953). Édition numérique EbookClassics.</p>
+<p class="colophon">Texte du domaine public. Édition numérique EbookClassics.</p>
 </body></html>

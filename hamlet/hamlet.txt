@@ -2,37 +2,24 @@ Hamlet
 William Shakespeare
 
 
-THE TRAGEDY OF HAMLET, PRINCE OF DENMARK
+ACT II SCENE I. A ROOM IN POLONIUS’S HOUSE SCENE II. A ROOM IN THE CASTLE
 
 
-by William Shakespeare
 
-Contents
 
-ACT I Scene I. Elsinore. A platform before the Castle Scene II. Elsinore. A room of state in the Castle Scene III. A room in Polonius’s house Scene IV. The platform Scene V. A more remote part of the Castle
+ACT V SCENE I. A CHURCHYARD SCENE II. A HALL IN THE CASTLE
 
-ACT II Scene I. A room in Polonius’s house Scene II. A room in the Castle
-
-ACT III Scene I. A room in the Castle Scene II. A hall in the Castle Scene III. A room in the Castle Scene IV. Another room in the Castle
-
-ACT IV Scene I. A room in the Castle Scene II. Another room in the Castle Scene III. Another room in the Castle Scene IV. A plain in Denmark Scene V. Elsinore. A room in the Castle Scene VI. Another room in the Castle Scene VII. Another room in the Castle
-
-ACT V Scene I. A churchyard Scene II. A hall in the Castle
 
 Dramatis Personæ
 
 HAMLET, Prince of Denmark CLAUDIUS, King of Denmark, Hamlet’s uncle The GHOST of the late king, Hamlet’s father GERTRUDE, the Queen, Hamlet’s mother, now wife of Claudius POLONIUS, Lord Chamberlain LAERTES, Son to Polonius OPHELIA, Daughter to Polonius HORATIO, Friend to Hamlet FORTINBRAS, Prince of Norway VOLTEMAND, Courtier CORNELIUS, Courtier ROSENCRANTZ, Courtier GUILDENSTERN, Courtier MARCELLUS, Officer BARNARDO, Officer FRANCISCO, a Soldier OSRIC, Courtier REYNALDO, Servant to Polonius Players A Gentleman, Courtier A Priest Two Clowns, Grave-diggers A Captain English Ambassadors. Lords, Ladies, Officers, Soldiers, Sailors, Messengers, and Attendants
 
 
-SCENE. ELSINORE.
+SCENE. Elsinore — Act I
 
 
 
-ACT I
-
-
-
-SCENE I. ELSINORE. A PLATFORM BEFORE THE CASTLE.
+Scene I. Elsinore. A platform before the Castle.
 
 
 Enter Francisco and Barnardo, two sentinels.
@@ -178,7 +165,7 @@ MARCELLUS. Let’s do’t, I pray, and I this morning know Where we shall find h
 [Exeunt.]
 
 
-SCENE II. ELSINORE. A ROOM OF STATE IN THE CASTLE.
+Scene II. Elsinore. A room of state in the Castle.
 
 
 Enter Claudius King of Denmark, Gertrude the Queen, Hamlet, Polonius, Laertes, Voltemand, Cornelius, Lords and Attendant.
@@ -348,7 +335,7 @@ My father’s spirit in arms! All is not well; I doubt some foul play: would the
 [Exit.]
 
 
-SCENE III. A ROOM IN POLONIUS’S HOUSE.
+Scene III. A room in Polonius’s house.
 
 
 Enter Laertes and Ophelia.
@@ -416,7 +403,7 @@ OPHELIA. I shall obey, my lord.
 [Exeunt.]
 
 
-SCENE IV. THE PLATFORM.
+Scene IV. The platform.
 
 
 Enter Hamlet, Horatio and Marcellus.
@@ -500,7 +487,7 @@ MARCELLUS. Nay, let’s follow him.
 [Exeunt.]
 
 
-SCENE V. A MORE REMOTE PART OF THE CASTLE.
+Scene V. A more remote part of the Castle.
 
 
 Enter Ghost and Hamlet.
@@ -640,11 +627,8 @@ HAMLET. Rest, rest, perturbed spirit. So, gentlemen, With all my love I do comme
 [Exeunt.]
 
 
-ACT II
 
-
-
-SCENE I. A ROOM IN POLONIUS’S HOUSE.
+ACT II — SCENE I. A ROOM IN POLONIUS’S HOUSE.
 
 
 Enter Polonius and Reynaldo.
@@ -732,7 +716,7 @@ POLONIUS. That hath made him mad. I am sorry that with better heed and judgement
 [Exeunt.]
 
 
-SCENE II. A ROOM IN THE CASTLE.
+Scene II. A room in the Castle.
 
 
 Enter King, Queen, Rosencrantz, Guildenstern and Attendants.
@@ -1110,11 +1094,8 @@ HAMLET. Ay, so, God b’ wi’ ye. Now I am alone. O what a rogue and peasant sl
 [Exit.]
 
 
-ACT III
 
-
-
-SCENE I. A ROOM IN THE CASTLE.
+ACT III — SCENE I. A ROOM IN THE CASTLE.
 
 
 Enter King, Queen, Polonius, Ophelia, Rosencrantz and Guildenstern.
@@ -1224,7 +1205,7 @@ KING. It shall be so. Madness in great ones must not unwatch’d go.
 [Exeunt.]
 
 
-SCENE II. A HALL IN THE CASTLE.
+Scene II. A hall in the Castle.
 
 
 Enter Hamlet and certain Players.
@@ -1566,7 +1547,7 @@ HAMLET. By and by is easily said. Leave me, friends.
 [Exit.]
 
 
-SCENE III. A ROOM IN THE CASTLE.
+Scene III. A room in the Castle.
 
 
 Enter King, Rosencrantz and Guildenstern.
@@ -1608,7 +1589,7 @@ KING. My words fly up, my thoughts remain below. Words without thoughts never to
 [Exit.]
 
 
-SCENE IV. ANOTHER ROOM IN THE CASTLE.
+Scene IV. Another room in the Castle.
 
 
 Enter Queen and Polonius.
@@ -1744,11 +1725,8 @@ HAMLET. There’s letters seal’d: and my two schoolfellows, Whom I will trust 
 [Exit Hamlet dragging out Polonius.]
 
 
-ACT IV
 
-
-
-SCENE I. A ROOM IN THE CASTLE.
+ACT IV — SCENE I. A ROOM IN THE CASTLE.
 
 
 Enter King, Queen, Rosencrantz and Guildenstern.
@@ -1782,7 +1760,7 @@ Come, Gertrude, we’ll call up our wisest friends, And let them know both what 
 [Exeunt.]
 
 
-SCENE II. ANOTHER ROOM IN THE CASTLE.
+Scene II. Another room in the Castle.
 
 
 Enter Hamlet.
@@ -1826,7 +1804,7 @@ HAMLET. Of nothing. Bring me to him. Hide fox, and all after.
 [Exeunt.]
 
 
-SCENE III. ANOTHER ROOM IN THE CASTLE.
+Scene III. Another room in the Castle.
 
 
 Enter King, attended.
@@ -1902,7 +1880,7 @@ And England, if my love thou hold’st at aught,— As my great power thereof ma
 [Exit.]
 
 
-SCENE IV. A PLAIN IN DENMARK.
+Scene IV. A plain in Denmark.
 
 
 Enter Fortinbras and Forces marching.
@@ -1954,7 +1932,7 @@ How all occasions do inform against me, And spur my dull revenge. What is a man 
 [Exit.]
 
 
-SCENE V. ELSINORE. A ROOM IN THE CASTLE.
+Scene V. Elsinore. A room in the Castle.
 
 
 Enter Queen, Horatio and a Gentleman.
@@ -2128,7 +2106,7 @@ KING. So you shall. And where th’offence is let the great axe fall. I pray you
 [Exeunt.]
 
 
-SCENE VI. ANOTHER ROOM IN THE CASTLE.
+Scene VI. Another room in the Castle.
 
 
 Enter Horatio and a Servant.
@@ -2141,7 +2119,9 @@ HORATIO. Let them come in.
 
 [Exit Servant.]
 
+
 I do not know from what part of the world I should be greeted, if not from Lord Hamlet.
+
 
 Enter Sailors.
 
@@ -2158,7 +2138,7 @@ Come, I will give you way for these your letters, And do’t the speedier, that 
 [Exeunt.]
 
 
-SCENE VII. ANOTHER ROOM IN THE CASTLE.
+Scene VII. Another room in the Castle.
 
 
 Enter King and Laertes.
@@ -2262,11 +2242,8 @@ KING. Let’s follow, Gertrude; How much I had to do to calm his rage! Now fear 
 [Exeunt.]
 
 
-ACT V
 
-
-
-SCENE I. A CHURCHYARD.
+ACT V — SCENE I. A CHURCHYARD.
 
 
 Enter two Clowns with spades, &c.
@@ -2522,7 +2499,7 @@ KING. I pray thee, good Horatio, wait upon him.
 [Exeunt.]
 
 
-SCENE II. A HALL IN THE CASTLE.
+Scene II. A hall in the Castle.
 
 
 Enter Hamlet and Horatio.
@@ -2794,7 +2771,7 @@ LAERTES. Have at you now.
 [Laertes wounds Hamlet; then, in scuffling, they change rapiers, and Hamlet wounds Laertes.]
 
 
-KING. PART THEM; THEY ARE INCENS’D.
+KING. Part them; they are incens’d.
 
 
 HAMLET. Nay, come again!
@@ -2881,4 +2858,5 @@ FORTINBRAS. Let four captains Bear Hamlet like a soldier to the stage, For he wa
 
 [Exeunt, bearing off the bodies, after which a peal of ordnance is shot off.]
 
-Texte du domaine public, source : Project Gutenberg (#1524). Édition numérique EbookClassics.
+
+— Public domain text. EbookClassics digital edition.

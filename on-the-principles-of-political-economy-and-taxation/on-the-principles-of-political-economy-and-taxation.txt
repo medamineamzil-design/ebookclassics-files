@@ -1,42 +1,8 @@
 On the Principles of Political Economy and Taxation
 David Ricardo
 
-ON
 
-
-THE PRINCIPLES
-
-
-OF
-
-
-POLITICAL ECONOMY,
-
-
-AND
-
-
-TAXATION.
-
-
-BY DAVID RICARDO, Esq.
-
-
-LONDON:
-
-
-
-JOHN MURRAY, ALBEMARLE-STREET
-
-
-1817.
-
-J. M^{c}CREERY. Printer,
-
-Black Horse Court, London.
-
-
-PREFACE.
+Preface.
 
 
 The produce of the earth--all that is derived from its surface by the united application of labour, machinery, and capital, is divided among three classes of the community; namely, the proprietor of the land, the owner of the stock or capital necessary for its cultivation, and the labourers by whose industry it is cultivated.
@@ -54,39 +20,22 @@ The writer, in combating received opinions, has found it necessary to advert mor
 The same remark may be applied to the excellent works of M. Say, who not only was the first, or among the first, of continental writers, who justly appreciated and applied the principles of Smith, and who has done more than all other continental writers taken together, to recommend the principles of that enlightened and beneficial system to the nations of Europe; but who has succeeded in placing the science in a more logical, and more instructive order; and has enriched it by several discussions, original, accurate, and profound.[1] The respect, however, which the author entertains for the writings of this gentleman, has not prevented him from commenting with that freedom which he thinks the interests of science require, on such passages of the "Economie Politique," as appeared at variance with his own ideas.
 
 
-CONTENTS.
+Contents.
 
 
 CHAP.                                                           Page
 
-
-I. ON VALUE                                                   1
-
-
-
-II. ON RENT                                                   49
-
-
-
-III. ON THE RENT OF MINES                                      77
-
-
-
-IV. ON NATURAL AND MARKET PRICE                               82
-
-
-
-V. ON WAGES                                                  90
-
-
 V*. On Profits                                               116
+
 
 
 VI. ON FOREIGN TRADE                                         146
 
 
 
+
 VII. ON TAXES                                                 186
+
 
 
 
@@ -96,91 +45,8 @@ VIII. TAXES ON RAW PRODUCE                                     194
 VIII*. Taxes on Rent                                            221
 
 
-IX. TITHES                                                   225
 
-
-
-X. LAND-TAX                                                 232
-
-
-
-XI. TAXES ON GOLD                                            247
-
-
-
-XII. TAXES ON HOUSES                                          262
-
-
-
-XIII. TAXES ON PROFITS                                         269
-
-
-
-XIV. TAXES ON WAGES                                           285
-
-
-
-XV. TAXES ON OTHER COMMODITIES THAN RAW PRODUCE              330
-
-
-
-XVI. POOR RATES                                               354
-
-
-
-XVII. ON SUDDEN CHANGES IN THE CHANNELS OF TRADE               363
-
-
-
-XVIII. VALUE AND RICHES, THEIR DISTINCTIVE PROPERTIES           377
-
-
-
-XIX. EFFECTS OF ACCUMULATION ON PROFITS AND INTEREST          398
-
-
-XX. Bounties on Exportation, and Prohibitions of Importation                                         417
-
-
-XXI. ON BOUNTIES ON PRODUCTION                                449
-
-
-
-XXII. DOCTRINE OF ADAM SMITH CONCERNING THE RENT OF LAND       458
-
-
-
-XXIII. ON COLONIAL TRADE                                        476
-
-
-
-XXIV. ON GROSS AND NET REVENUE                                 491
-
-
-
-XXV. ON CURRENCY AND BANKS                                    499
-
-
-XXVI. On the comparative Value of Gold, Corn, and Labour, in Rich and in Poor Countries                          527
-
-
-XXVII. TAXES PAID BY THE PRODUCER                               538
-
-
-
-XXVIII. ON THE INFLUENCE OF DEMAND AND SUPPLY ON PRICES          542
-
-
-
-XXIX. MR. MALTHUS'S OPINIONS ON RENT                           549
-
-
-
-CHAPTER I.
-
-
-
-ON VALUE.
+XXVI. ON THE COMPARATIVE VALUE OF GOLD, CORN, AND LABOUR, IN RICH AND IN POOR COUNTRIES                          527
 
 
 It has been observed by Adam Smith, that "the word Value has two different meanings, and sometimes expresses the utility of some particular object, and sometimes the power of purchasing other goods which the possession of that object conveys. The one may be called value in use; the other, value in exchange. The things," he continues, "which have the greatest value in use, have frequently little or no value in exchange; and, on the contrary, those which have the greatest value in exchange, have little or no value in use." Water and air are abundantly useful; they are indeed indispensable to existence, yet, under ordinary circumstances, nothing can be obtained in exchange for them. Gold, on the contrary, though of little use compared with air or water, will exchange for a great quantity of other goods.
@@ -366,11 +232,8 @@ Commodities, though they continue to rise and fall, in proportion as more or les
 It appears too, that commodities may be lowered in value in consequence of a real rise of wages, but they never can be raised from that cause. On the other hand, they may rise from a fall of wages, as they then lose the peculiar advantages of production, which high wages afforded them.
 
 
-CHAPTER II.
 
-
-
-ON RENT.
+CHAPTER II — ON RENT.
 
 
 It remains however to be considered, whether the appropriation of land, and the consequent creation of rent, will occasion any variation in the relative value of commodities, independently of the quantity of labour necessary to production. In order to understand this part of the subject, we must inquire into the nature of rent, and the laws by which its rise or fall is regulated. Rent is that portion of the produce of the earth, which is paid to the landlord for the use of the original and indestructible powers of the soil. It is often however confounded with the interest and profit of capital, and in popular language the term is applied to whatever is annually paid by a farmer to his landlord. If, of two adjoining farms of the same extent, and of the same natural fertility, one had all the conveniences of farming buildings, were, besides, properly drained and manured, and advantageously divided by hedges, fences, and walls, while the other had none of these advantages, more remuneration would naturally be paid for the use of one, than for the use of the other; yet in both cases this remuneration would be called rent. But it is evident, that a portion only of the money annually to be paid for the improved farm, would be given for the original and indestructible powers of the soil; the other portion would be paid for the use of the capital which had been employed in ameliorating the quality of the land, and in erecting such buildings as were necessary to secure and preserve the produce. Adam Smith sometimes speaks of rent, in the strict sense to which I am desirous of confining it, but more often in the popular sense, in which the term is usually employed. He tells us, that the demand for timber, and its consequent high price, in the more southern countries of Europe, caused a rent to be paid for forests in Norway, which could before afford no rent. Is it not however evident, that the person who paid, what he thus calls rent, paid it in consideration of the valuable commodity which was then standing on the land, and that he actually repaid himself with a profit, by the sale of the timber? If, indeed, after the timber was removed, any compensation were paid to the landlord for the use of the land, for the purpose of growing timber or any other produce, with a view to future demand, such compensation might justly be called rent, because it would be paid for the productive powers of the land; but in the case stated by Adam Smith, the compensation was paid for the liberty of removing and selling the timber, and not for the liberty of growing it. He speaks also of the rent of coal mines, and of stone quarries, to which the same observation applies--that the compensation given for the mine or quarry, is paid for the value of the coal or stone which can be removed from them, and has no connexion with the original and indestructible powers of the land. This is a distinction of great importance, in an inquiry concerning rent and profits; for it is found, that the laws which regulate the progress of rent, are widely different from those which regulate the progress of profits, and seldom operate in the same direction. In all improved countries, that which is annually paid to the landlord, partaking of both characters, rent and profit, is sometimes kept stationary by the effects of opposing causes, at other times advances or recedes, as one or other of these causes preponderates. In the future pages of this work, then, whenever I speak of the rent of land, I wish to be understood as speaking of that compensation, which is paid to the owner of land for the use of its original and indestructible powers.
@@ -438,11 +301,8 @@ Without multiplying instances, I hope enough has been said to shew, that whateve
 In speaking of the rent of the landlord, we have rather considered it as the proportion of the whole produce, without any reference to its exchangeable value; but since the same cause, the difficulty of production, raises the exchangeable value of raw produce, and raises also the proportion of raw produce paid to the landlord for rent, it is obvious that the landlord is doubly benefited by difficulty of production. First he obtains a greater share, and secondly the commodity in which he is paid is of greater value.[8]
 
 
-CHAPTER III.
 
-
-
-ON THE RENT OF MINES.
+CHAPTER III — ON THE RENT OF MINES.
 
 
 The metals, like other things, are obtained by labour. Nature, indeed, produces them; but it is the labour of man which extracts them from the bowels of the earth, and prepares them for our service.
@@ -466,11 +326,8 @@ From whatever cause it may have proceeded, the effect has been so slow and gradu
 Having acknowledged the imperfections to which money made of gold and silver is liable as a measure of value, from the greater or less quantity of labour which may, under varying circumstances, be necessary for the production of those metals, we may be permitted to make the supposition that all these imperfections were removed, and that equal quantities of labour could at all times obtain, from that mine which paid no rent, equal quantities of gold. Gold would then be an invariable measure of value. The quantity indeed would enlarge with the demand, but its value would be invariable, and it would be eminently well calculated to measure the varying value of all other things. I have already in a former part of this work considered gold as endowed with this uniformity, and in the following chapter I shall continue the supposition. In speaking therefore of varying price, the variation will be always considered as being in the commodity, and never in the medium in which it is estimated.
 
 
-CHAPTER IV.
 
-
-
-ON NATURAL AND MARKET PRICE.
+CHAPTER IV — ON NATURAL AND MARKET PRICE.
 
 
 In making labour the foundation of the value of commodities, and the comparative quantity of labour which is necessary to their production, the rule which determines the respective quantities of goods which shall be given in exchange for each other, we must not be supposed to deny the accidental and temporary deviations of the actual or market price of commodities from this, their primary and natural price.
@@ -492,11 +349,8 @@ It is then the desire, which every capitalist has, of diverting his funds from a
 In the 7th chap. of the Wealth of Nations, all that concerns this question is most ably treated. Having fully acknowledged the temporary effects which, in particular employments of capital, may be produced on the prices of commodities, as well as on the wages of labour, and the profits of stock, by accidental causes, without influencing the general price of commodities, wages, or profits, since these effects are equally operative in all stages of society, we may be permitted to leave them entirely out of our consideration, whilst we are treating of the laws which regulate natural prices, natural wages, and natural profits, effects totally independent of these accidental causes. In speaking then of the exchangeable value of commodities, or the power of purchasing possessed by any one commodity, I mean always that power which it would possess, if not disturbed by any temporary or accidental cause, and which is its natural price.
 
 
-CHAPTER V.
 
-
-
-ON WAGES
+CHAPTER V — ON WAGES
 
 
 Labour, like all other things which are purchased and sold, and which may be increased or diminished in quantity, has its natural and its market price. The natural price of labour is that price which is necessary to enable the labourers, one with another, to subsist and to perpetuate their race, without either increase or diminution.
@@ -596,11 +450,8 @@ No scheme for the amendment of the poor laws merits the least attention, which h
 It is to this cause, that we must ascribe the fact of the poor laws not having yet absorbed all the net revenue of the country; it is to the rigour with which they are applied, that we are indebted for their not having become overwhelmingly oppressive. If by law every human being wanting support could be sure to obtain it, and obtain it in such a degree as to make life tolerably comfortable, theory would lead us to expect that all other taxes together would be light compared with the single one of poor rates. The principle of gravitation is not more certain than the tendency of such laws to change wealth and power into misery and weakness; to call away the exertions of labour from every object, except that of providing mere subsistence; to confound all intellectual distinction; to busy the mind continually in supplying the body's wants; until at last all classes should be infected with the plague of universal poverty. Happily these laws have been in operation during a period of progressive prosperity, when the funds for the maintenance of labour have regularly increased, and when an increase of population would be naturally called for. But if our progress should become more slow; if we should attain the stationary state, from which I trust we are yet far distant, then will the pernicious nature of these laws become more manifest and alarming; and then too will their removal be obstructed by many additional difficulties.
 
 
-CHAPTER V*.
 
-
-
-ON PROFITS.
+CHAPTER V* — ON PROFITS.
 
 
 The profits of stock in different employments, having been shewn to bear a proportion to each other, and to have a tendency to vary all in the same degree and in the same direction, it remains for us to consider what is the cause of the permanent variations in the rate of profit, and the consequent permanent alterations in the rate of interest.
@@ -700,11 +551,8 @@ Although a greater value is produced, a greater proportion of what remains of th
 Thus we again arrive at the same conclusion which we have before attempted to establish:--that in all countries, and at all times, profits depend on the quantity of labour requisite to provide necessaries for the labourers, on that land or with that capital which yields no rent. The effects then of accumulation will be different in different countries, and will depend chiefly on the fertility of the land. However extensive a country may be where the land is of a poor quality, and where the importation of food is prohibited, the most moderate accumulations of capital will be attended with great reductions in the rate of profit, and a rapid rise in rent; and on the contrary a small but fertile country, particularly if it freely permits the importation of food, may accumulate a large stock of capital without any great diminution in the rate of profits, or any great increase in the rent of land. In the Chapter on Wages, we have endeavoured to shew that the money price of commodities would not be raised by a rise of wages, either on the supposition that gold, the standard of money, was the produce of this country, or that it was imported from abroad. But if it were otherwise, if the prices of commodities were permanently raised by high wages, the proposition would not be less true, which asserts that high wages invariably affect the employers of labour, by depriving them of a portion of their real profits. Supposing the hatter, the hosier, and the shoemaker, each paid 10l. more wages in the manufacture of a particular quantity of their commodities, and that the price of hats, stockings, and shoes, rose by a sum sufficient to repay the manufacturer the 10l.; their situation would be no better than if no such rise took place. If the hosier sold his stockings for 110l. instead of 100l., his profits would be precisely the same money amount as before; but as he would obtain in exchange for this equal sum, one tenth less of hats, shoes, and every other commodity, and as he could with his former amount of savings employ fewer labourers at the increased wages, and purchase fewer raw materials at the increased prices, he would be in no better situation than if his money profits had been really diminished in amount, and every thing had remained at its former price. Thus then I have endeavoured to shew, first, that a rise of wages would not raise the price of commodities, but would invariably lower profits; and secondly, that if the prices of commodities could be raised, still the effect on profits would be the same; and that in fact the value of the medium only in which prices and profits are estimated would be lowered.
 
 
-CHAPTER VI.
 
-
-
-ON FOREIGN TRADE.
+CHAPTER VI — ON FOREIGN TRADE.
 
 
 No extension of foreign trade will immediately increase the amount of value in a country, although it will very powerfully contribute to increase the mass of commodities, and therefore the sum of enjoyments. As the value of all foreign goods is measured by the quantity of the produce of our land and labour, which is given in exchange for them, we should have no greater value, if by the discovery of new markets, we obtained double the quantity of foreign goods in exchange for a given quantity of ours. If by the purchase of English goods to the amount of 1000l. a merchant can obtain a quantity of foreign goods, which he can sell in the English market for 1,200l., he will obtain 20 per cent. profit by such an employment of his capital; but neither his gains, nor the value of the commodities imported, will be increased or diminished by the greater or smaller quantity of foreign goods obtained. Whether, for example, he imports twenty-five or fifty pipes of wine, his interest can be no way affected, if at one time the twenty-five pipes, and at another the fifty pipes, equally sell for 1,200l. In either case his profit will be limited to 200l., or 20 per cent. on his capital; and in either case the same value will be imported into England. If the fifty pipes sold for more than 1,200l., the profits of this individual merchant would exceed the general rate of profits, and capital would naturally flow into this advantageous trade, till the fall of the price of wine had brought every thing to the former level.
@@ -822,11 +670,8 @@ Some indeed more reasonably maintained, that 130l. in paper was not of equal val
 To this standard we must conform till the law is changed, and till some other commodity is discovered, by the use of which we shall obtain a more perfect standard, than that which we have established. While gold is exclusively the standard in this country, money will be depreciated, when a pound sterling is not of equal value with 5 dwts. and 3 grs. of standard gold, and that, whether gold rises or falls in general value.
 
 
-CHAPTER VII.
 
-
-
-ON TAXES.
+CHAPTER VII — ON TAXES.
 
 
 Taxes are a portion of the produce of the land and labour of a country, placed at the disposal of the government; and are always ultimately paid, either from the capital, or from the revenue of the country.
@@ -858,11 +703,8 @@ In England this policy has been neglected, in taxing the probates of wills, in t
 But this is not the only objection to taxes on the transference of property; they prevent the national capital from being distributed in the way most beneficial to the community. For the general prosperity, there cannot be too much facility given to the conveyance and exchange of all kinds of property, as it is by such means that capital of every species is likely to find its way into the hands of those who will best employ it in increasing the productions of the country. "Why," asks M. Say, "does an individual wish to sell his land? it is because he has another employment in view in which his funds will be more productive. Why does another wish to purchase this same land? it is to employ a capital which brings him in too little, which was unemployed, or the use of which he thinks susceptible of improvement. This exchange will increase the general income, since it increases the income of these parties. But if the charges are so exorbitant as to prevent the exchange, they are an obstacle to this increase of the general income." Those taxes however are easily collected; and this by many may be thought to afford some compensation for their injurious effects.
 
 
-CHAPTER VIII.
 
-
-
-TAXES ON RAW PRODUCE.
+CHAPTER VIII — TAXES ON RAW PRODUCE.
 
 
 Having in a former part of this work established, I hope satisfactorily, the principle, that the price of corn is regulated by the cost of its production on that land exclusively, or rather with that capital exclusively, which pays no rent, it will follow that whatever may increase the cost of production will increase the price; whatever may reduce it, will lower the price. The necessity of cultivating poorer land, or of obtaining a less return with a given additional capital on land already in cultivation, will inevitably raise the exchangeable value of raw produce. The discovery of machinery, which will enable the cultivator to obtain his corn at a less cost of production, will necessarily lower its exchangeable value. Any tax which may be imposed on the cultivator, whether in the shape of land-tax, tithes, or a tax on the produce when obtained, will increase the cost of production, and will therefore raise the price of raw produce.
@@ -966,11 +808,8 @@ To simplify the consideration of this subject, I have been supposing that a rise
 Although then the rise in the price of most of our own commodities, would for a time check exportation generally, and might permanently prevent the exportation of a few commodities, it could not materially interfere with foreign trade, and would not place us under any comparative disadvantage as far as regarded competition in foreign markets.
 
 
-CHAPTER VIII.*
 
-
-
-TAXES ON RENT.
+CHAPTER VIII.* — TAXES ON RENT.
 
 
 A tax on rent would affect rent only; it would fall wholly on landlords, and could not be shifted to any class of consumers. The landlord could not raise his rent, because he would leave unaltered the difference between the produce obtained from the least productive land in cultivation, and that obtained from land of every other quality. Three sorts of land, No. 1, 2, and 3, are in cultivation, and yield respectively with the same labour 180, 170, and 160 quarters of wheat; but No. 3 pays no rent, and is therefore untaxed: the rent then of No. 2 cannot be made to exceed the value of ten, nor No. 1, of twenty quarters. Such a tax could not raise the price of raw produce, because as the cultivator of No. 3 pays neither rent nor tax, he would in no way be enabled to raise the price of the commodity produced. A tax on rent would not discourage the cultivation of fresh land, for such land pays no rent, and would be untaxed. If No. 4 were taken into cultivation, and yielded 150 quarters, no tax would be paid for such land; but it would create a rent of ten quarters on No. 3, which would then commence paying the tax.
@@ -980,11 +819,8 @@ A tax on rent, as rent is constituted, would discourage cultivation, because it 
 There can be little doubt, but that if a tax were laid on rent, landlords would soon find a way to discriminate between that which was paid to them for the use of the land, and that which was paid for the use of the buildings, and the improvements which were made by the landlord's stock. The latter would either be called the rent of house and buildings, or in all new land taken into cultivation such buildings and improvements would be made by the tenant, and not by the landlord. The landlord's capital might indeed be really employed for that purpose; it might be nominally expended by the tenant, the landlord furnishing him with the means, either in the shape of a loan, or in the purchase of an annuity for the duration of the lease. Whether distinguished or not, there is a real difference between the nature of the compensations which the landlord receives for these different objects; and it is quite certain, that a tax on the real rent of land falls wholly on the landlord, but that a tax on that remuneration which the landlord receives for the use of his stock expended on the farm, falls on the consumer of raw produce. If a tax were laid on rent, and no means of separating the remuneration now paid by the tenant to the landlord under the name of rent were adopted, the tax, as far as it regarded the rent on the buildings and other fixtures, would never fall for any length of time on the landlord, but on the consumer. The capital expended on these buildings, &c., must afford the usual profits of stock; but it would cease to afford this profit on the land last cultivated, if the expenses of those buildings, &c. did not fall on the tenant; and if they did, the tenant would then cease to make his usual profits of stock, unless he could charge them on the consumer.
 
 
-CHAPTER IX.
 
-
-
-TITHES.
+CHAPTER IX — TITHES.
 
 
 Tithes are a tax on the gross produce of the land, and, like taxes on raw produce, fall wholly on the consumer. They differ from a tax on rent, inasmuch as they affect land which such a tax would not reach; and raise the price of raw produce, which that tax e of raw produce, which that tax would not alter. Lands of the worst quality, as well as of the best, pay tithes, and exactly in proportion to the quantity of produce obtained from them; tithes are therefore an equal tax.
@@ -1002,11 +838,8 @@ Tithes however may be considered as injurious to landlords, inasmuch as they act
 If the trade of cloth were left perfectly free, our manufacturers might be able to sell cloth cheaper than we could import it. If a tax were laid on the home manufacturer, and not on the importer of cloth, capital might be injuriously driven from the manufacture of cloth to the manufacture of some other commodity, as it might then be imported cheaper than it could be made at home. If imported cloth should also be taxed, cloth would again be manufactured at home. The consumer first bought cloth at home, because it was cheaper than foreign cloth; he then bought foreign cloth, because it was cheaper untaxed than home cloth taxed: he lastly bought it again at home, because it was cheaper when both home and foreign cloth were taxed. It is in the last case that he pays the greatest price for his cloth, but all his additional payment is gained by the state. In the second case, he pays more than in the first, but all he pays in addition is not received by the state, it is an increased price caused by difficulty of production, which is incurred, because the easiest means of production are taken away from us, by being fettered with a tax.
 
 
-CHAPTER X.
 
-
-
-LAND-TAX.
+CHAPTER X — LAND-TAX.
 
 
 A land-tax, levied in proportion to the rent of land, and varying with every variation of rent, is in effect a tax on rent; and as such a tax will not apply to that land which yields no rent, nor to the produce of that capital which is employed on the land with a view to profit merely, and which never pays rent, it will not in any way affect the price of raw produce, but will fall wholly on the landlords. In no respect would such a tax differ from a tax on rent. But if a land-tax be imposed on all cultivated land, however moderate that tax may be, it will be a tax on produce, and will therefore raise the price of produce. If No. 3 be the land last cultivated, although it should pay no rent, it cannot, after the tax, be cultivated, and afford the general rate of profit, unless the price of produce rise to meet the tax. Either capital will be withheld from that employment until the price of corn shall have risen, in consequence of demand, sufficiently to afford the usual profit; or if already employed on such land, it will quit it, to seek a more advantageous employment. The tax cannot be removed to the landlord, for by the supposition he receives no rent. Such a tax may be proportioned to the quality of the land and the abundance of its produce, and then it differs in no respect from tithes; or it may be a fixed tax per acre on all land cultivated, whatever its quality may be.
@@ -1052,11 +885,8 @@ Speaking of taxes in kind, or a tax of a certain proportion of the produce, whic
 M. Say's error in the above passage lies in supposing that because the value of the produce of one of these two farms, after re-instating the capital, is greater than the value of the produce of the other, on that account the net income of the cultivators will differ by the same amount. M. Say has wholly omitted the consideration of the different amount of rent, which these cultivators would have to pay. There cannot be two rates of profit in the same employment, and therefore when produce is in different proportions to capital, it is the rent which will differ, and not the profit. Upon what pretence would one man with a capital of 2000 francs, be allowed to obtain a net profit of 10,000 francs from its employment, whilst another with a capital of 8000 francs would only obtain 4000 francs? Let M. Say make a due allowance for rent; let him further allow for the effect which such a tax would have on the prices of these different kinds of raw produce, and he will then perceive that it is not an unequal tax, and further that the producers themselves will not otherwise contribute to it, than any other class of consumers.
 
 
-CHAPTER XI.
 
-
-
-TAXES ON GOLD.
+CHAPTER XI — TAXES ON GOLD.
 
 
 The rise in the price of commodities, in consequence of taxation or of difficulty of production, will in all cases ultimately ensue; but the duration of the interval, before the market price of commodities conforms to their natural price, must depend on the nature of the commodity, and on the facility with which it can be reduced in quantity. If the quantity of the commodity taxed could not be diminished, if the capital of the farmer or of the hatter for instance, could not be withdrawn to other employments, it would be of no consequence that their profits were reduced below the general level by means of a tax; unless the demand for their commodities should increase, they would never be able to elevate the market price of corn and hats up to the increased natural price. Their threats to leave their employments, and remove their capitals to more favoured trades, would be treated as an idle menace which could not be carried into effect; and consequently the price would not be raised by diminished production. Commodities however of all descriptions can be reduced in quantity, and capital can be removed from trades which are less profitable to those which are more so, but with different degrees of rapidity. In proportion as the supply of a particular commodity can be more easily reduced, the price of it will more quickly rise after the difficulty of its production has been increased by taxation, or by any other means. Corn being a commodity indispensably necessary to every one, little effect will be produced on the demand for it in consequence of a tax, and therefore the supply could not be long excessive, even if the producers had great difficulty in removing their capitals from the land; the price of corn therefore, will speedily be raised by taxation, and the farmer will be enabled to transfer the tax from himself to the consumer.
@@ -1088,11 +918,8 @@ Of the 7000 received by the king, the people of Spain would contribute only 1400
 If the tax, instead of being a fixed sum per mine worked, were a certain portion of its produce, the quantity would not be reduced in consequence. If a half, a fourth, or a third of each mine were taken for the tax, it would nevertheless be the interest of the proprietors to make their mines yield as abundantly as before; but if the quantity were not reduced, but only a part of it transferred from the proprietor to the king, its value would not rise; the tax would fall on the people of the colonies, and no advantage would be gained. A tax of this kind would have the effect that Adam Smith supposes taxes on raw produce would have on the rent of land--it would fall entirely on the rent of the mine. If pushed a little further, the tax would not only absorb the whole rent, but would deprive the worker of the mine of the common profits of stock, and he would consequently withdraw his capital from the production of gold. If still further extended, the rent of still better mines would be absorbed, and capital would be further withdrawn; and thus the quantity would be continually reduced, and its value raised, and the same effects would take place as we have already pointed out; a part of the tax would be paid by the people of the Spanish colonies, and the other part would be a new creation of produce, by increasing the power of the instrument used as a medium of exchange. Taxes on gold are of two kinds, one on the actual quantity of gold in circulation, the other on the quantity that is annually produced from the mines. Both have a tendency to reduce the quantity, and to raise the value of gold; but by neither will its value be raised till the quantity is reduced, and therefore such taxes will fall for a time, until the supply is diminished, on the proprietors of money, but ultimately they will be paid by the owner of the mine in the reduction of rent, and by the purchasers of that portion of gold, which is used as a commodity contributing to the enjoyments of mankind, and not set apart exclusively for a circulating medium.
 
 
-CHAPTER XII.
 
-
-
-TAXES ON HOUSES.
+CHAPTER XII — TAXES ON HOUSES.
 
 
 There are also other commodities besides gold which cannot be speedily reduced in quantity; any tax on which will therefore fall on the proprietor, if the increase of price should lessen the demand.
@@ -1108,11 +935,8 @@ The payment of this tax, then, would ultimately fall on the occupier and ground 
 Adam Smith considers ground rents as peculiarly fit subjects for taxation. "Both ground rents, and the ordinary rent of land," he says, "are a species of revenue, which the owner in many cases enjoys, without any care or attention of his own. Though a part of this revenue should be taken from him, in order to defray the expenses of the state, no discouragement will thereby be given to any sort of industry. The annual produce of the land and labour of the society, the real wealth and revenue of the great body of the people, might be the same after such a tax as before. Ground rents, and the ordinary rent of land, are, therefore, perhaps the species of revenue, which can best bear to have a peculiar tax imposed upon them." It must be admitted that the effects of these taxes would be such as Adam Smith has described; but it would surely be very unjust, to tax exclusively the revenue of any particular class of a community. The burdens of the state should be borne by all in proportion to their means: this is one of the four maxims mentioned by Adam Smith, which should govern all taxation. Rent often belongs to those who after many years of toil, have realised their gains, and expended their fortunes in the purchase of land; and it certainly would be an infringement of that principle which should ever be held sacred, the security of property, to subject it to unequal taxation. It is to be lamented, that the duty by stamps, with which the transfer of landed property is loaded, materially impedes the conveyance of it into those hands, where it would probably be made most productive. And if it be considered, that land, regarded as a fit subject for exclusive taxation, would not only be reduced in price, to compensate for the risk of that taxation, but in proportion to the indefinite nature and uncertain value of the risk, would become a fit subject for speculations, partaking more of the nature of gambling, than of sober trade, it will appear probable, that the hands into which land would in that case be most apt to fall, would be the hands of those, who possess more of the qualities of the gambler, than of the qualities of the sober-minded proprietor, who is likely to employ his land to the greatest advantage.
 
 
-CHAPTER XIII.
 
-
-
-TAXES ON PROFITS.
+CHAPTER XIII — TAXES ON PROFITS.
 
 
 Taxes on those commodities, which are generally denominated luxuries, fall on those only who make use of them. A tax on wine is paid by the consumer of wine. A tax on pleasure horses, or on coaches, is paid by those who provide for themselves such enjoyments, and in exact proportion as they provide them. But taxes on necessaries do not affect the consumers of necessaries, in proportion to the quantity that may be consumed by them, but often in a much higher proportion. A tax on corn, we have observed, not only affects a manufacturer in the proportion that he and his family may consume corn, but it alters the rate of profits of stock, and therefore also affects his income. Whatever raises the wages of labour, lowers the profits of stock; therefore every tax on any commodity consumed by the labourer, has a tendency to lower the rate of profits.
@@ -1148,11 +972,8 @@ As taxes on raw produce, tithes, taxes on wages, and on the necessaries of the l
 The discovery of machinery, which materially improves home manufactures, always tends to raise the relative value of money, and therefore to encourage its importation. All taxation, all increased impediments, either to the manufacturer, or the grower of commodities, tend on the contrary to lower the relative value of money, and therefore to encourage its exportation.
 
 
-CHAPTER XIV.
 
-
-
-TAXES ON WAGES.
+CHAPTER XIV — TAXES ON WAGES.
 
 
 Taxes on wages will raise wages, and therefore will diminish the rate of the profits of stock. We have already seen that a tax on necessaries will raise their prices, and will be followed by a rise of wages. The only difference between a tax on necessaries, and a tax on wages is, that the former will necessarily be accompanied by a rise in the price of necessaries, but the latter will not; towards a tax on wages, consequently, neither the stockholder, the landlord, nor any other class but the employers of labour will contribute. A tax on wages is wholly a tax on profits, a tax on necessaries is partly a tax on profits, and partly a tax on rich consumers. The ultimate effects which will result from such taxes then are precisely the same as those which result from a direct tax on profits.
@@ -1242,11 +1063,8 @@ Taxes on luxuries have some advantage over taxes on necessaries. They are genera
 Whatever habit has rendered delightful, will be relinquished with reluctance, and will continue to be consumed notwithstanding a very heavy tax; but this reluctance has its limits, and experience every day demonstrates that an increase in the nominal amount of taxation, often diminishes the produce. One man will continue to drink the same quantity of wine, though the price of every bottle should be raised three shillings, who would yet relinquish the use of wine rather than pay four. Another will be content to pay four, yet refuse to pay five shillings. The same may be said of other taxes on luxuries: many would pay a tax of 5l. for the enjoyment which a horse affords, who would not pay 10l. or 20l. It is not because they cannot pay more, that they give up the use of wine and of horses, but because they will not pay more. Every man has some standard in his own mind by which he estimates the value of his enjoyments, but that standard is as various as the human character. A country whose financial situation has become extremely artificial, by the mischievous policy of accumulating a large national debt, and a consequently enormous taxation, is particularly exposed to the inconvenience attendant on this mode of raising taxes. After visiting with a tax the whole round of luxuries; after laying horses, carriages, wine, servants, and all the other enjoyments of the rich, under contribution; a minister is disposed to conclude that the country is arrived at the maximum of taxation, because by increasing the rate, he cannot increase the amount of any one of these taxes. But in this conclusion he will not be always correct, for it is very possible that such a country could bear a very great addition to its burdens without infringing on the integrity of its capital.
 
 
-CHAPTER XV.
 
-
-
-TAXES ON OTHER COMMODITIES THAN RAW PRODUCE.
+CHAPTER XV — TAXES ON OTHER COMMODITIES THAN RAW PRODUCE.
 
 
 On the same principle that a tax on corn would raise the price of corn, a tax on any other commodity would raise the price of that commodity. If the commodity did not rise by a sum equal to the tax, it would not give the same profit to the producer which he had before, and he would remove his capital to some other employment.
@@ -1284,11 +1102,8 @@ If the tax "took away half, or even three-fourths of the net produce of the land
 "We see in Scotland poor lands thus cultivated by the proprietor, and which could be cultivated by no other person. Thus too we see in the interior provinces of the United States vast and fertile lands, the revenue of which alone would not be sufficient for the maintenance of the proprietor. These lands are cultivated nevertheless, but it must be by the proprietor himself, or, in other words, he must add to the rent, which is little or nothing, the profits of his capital and industry, to enable him to live in competence. It is well known that land, though cultivated, yields no revenue to the landlord when no farmer will be willing to pay a rent for it: which is a proof that such land will give only the profits of the capital and of the industry necessary for its cultivation."--Say, Vol. ii. p. 127.
 
 
-CHAPTER XVI.
 
-
-
-POOR RATES.
+CHAPTER XVI — POOR RATES.
 
 
 We have seen that taxes on raw produce, and on the profits of the farmer, will fall on the consumer of raw produce; since unless he had the power of remunerating himself by an increase of price, the tax would reduce his profits below the general level of profits, and would urge him to remove his capital to some other trade. We have seen too that he could not, by deducting it from his rent, transfer the tax to his landlord; because that farmer who paid no rent, would, equally with the cultivator of better land, be subject to the tax, whether it were laid on raw produce, or on the profits of the farmer. I have also attempted to shew, that if a tax were general, and affected equally all profits, whether manufacturing or agricultural, it would not operate either on the price of goods or raw produce, but would be immediately, as well as ultimately, paid by the producers. A tax on rent, it has been observed, would fall on the landlord only, and could not by any means be made to devolve on the tenant.
@@ -1304,11 +1119,8 @@ Nor would it make the slightest difference in this question, if the landlord had
 It must be acknowledged however, that in the actual state of the poor rates, a much larger amount falls on the farmer than on the manufacturer, in proportion to their respective profits; the farmer being rated according to the actual productions which he obtains, the manufacturer only according to the value of the buildings in which he works, without any regard to the value of the machinery, labour, or stock, which he may employ. From this circumstance it follows, that the farmer will be enabled to raise the price of his produce by this whole difference. For since the tax falls unequally, and peculiarly on his profits, he would have less motive to devote his capital to the land, than to employ it in some other trade, unless the price of raw produce were raised. If on the contrary, the rate had fallen with greater weight on the manufacturer than on the farmer, he would have been enabled to raise the price of his goods by the amount of the difference, for the same reason that the farmer, under similar circumstances, could raise the price of raw produce. In a society therefore, which is extending its agriculture, when poor rates fall with peculiar weight on the land, they will be paid partly by the employers of capital in a diminution of the profits of stock, and partly by the consumer of raw produce in its increased price. In such a state of things, the tax may, under some circumstances, be even advantageous rather than injurious to landlords; for if the tax paid by the cultivator of the worst land, be higher in proportion to the quantity of produce obtained, than that paid by the farmers of the more fertile lands, the rise in the price of corn, which will extend to all corn, will more than compensate the latter for the tax. This advantage will remain with them during the continuance of their leases, but it will afterwards be transferred to their landlords. This then would be the effect of poor rates in an advancing society; but in a stationary, or in a retrograde country, so far as capital could not be withdrawn from the land, if a further rate were levied for the support of the poor, that part of it which fell on agriculture would be paid, during the current leases, by the farmers, but at the expiration of those leases it would almost wholly fall on the landlords. The farmer, who during his former lease, had expended his capital in improving his land, if it were still in his own hands, would be rated for this new tax according to the new value which the land had acquired by its improvement, and this amount he would be obliged to pay during his lease, although his profits might thereby be reduced below the general rate of profits; for the capital which he has expended may be so incorporated with the land, that it cannot be removed from it. If indeed he, or his landlord, (should it have been expended by him) were able to remove this capital, and thereby reduce the annual value of the land, the rate would proportionably fall, and as the produce would at the same time be diminished, its price would rise; he would be compensated for the tax, by charging it to the consumer, and no part would fall on rent; but this is impossible, at least with respect to some proportion of the capital, and consequently in that proportion the tax will be paid by the farmers during their leases, and by landlords at their expiration. This additional tax, as far as it fell unequally on manufacturers, would under such circumstances be added to the price of their goods; for there can be no reason why their profits should be reduced below the general rate of profits, when their capitals might be easily removed to agriculture.[26]
 
 
-CHAPTER XVII.
 
-
-
-ON SUDDEN CHANGES IN THE CHANNELS OF TRADE.
+CHAPTER XVII — ON SUDDEN CHANGES IN THE CHANNELS OF TRADE.
 
 
 Nor will distress be experienced in that country alone where such difficulties originate, but in the countries to which its commodities were before exported. No country can long import unless it also exports, or can long export unless it also imports. If then any circumstance should occur, which should permanently prevent a country from importing the usual amount of foreign commodities, it will necessarily diminish the manufacture of some of those commodities which were usually exported; and although the total value of the productions of the country will probably be but little altered, since the same capital will be employed, yet they will not be equally abundant and cheap; and considerable distress will be experienced through the change of employments. If by the employment of 10,000l. in the manufacture of cotton goods for exportation, we imported annually 3000 pair of silk stockings of the value of 2000l., and by the interruption of foreign trade we should be obliged to withdraw this capital from the manufacture of cotton, and employ it ourselves in the manufacture of stockings, we should still obtain stockings of the value of 2000l. provided no part of the capital were destroyed; but instead of having 3000 pair, we might only have 2,500. In the removal of the capital from the cotton to the stocking trade, much distress might be experienced, but it would not considerably impair the value of the national property, although it might lessen the quantity of our annual productions.
@@ -1338,11 +1150,8 @@ This is true, even if the capital cannot be withdrawn from the land, and must be
 Agriculture like all other trades, and particularly in a commercial country, is subject to a re-action, which, in an opposite direction, succeeds the action of a strong stimulus. Thus, when war interrupts the importation of corn, its consequent high price attracts capital to the land, from the large profits which such an employment of it affords; this will probably cause more capital to be employed, and more raw produce to be brought to market than the demands of the country require. In such case, the price of corn will fall from the effects of a glut, and much agricultural distress will be produced, till the average supply is brought to a level with the average demand.
 
 
-CHAPTER XVIII.
 
-
-
-VALUE AND RICHES, THEIR DISTINCTIVE PROPERTIES.
+CHAPTER XVIII — VALUE AND RICHES, THEIR DISTINCTIVE PROPERTIES.
 
 
 "A man is rich or poor," says Adam Smith, "according to the degree in which he can afford to enjoy the necessaries, conveniences, and amusements of human life."
@@ -1380,11 +1189,8 @@ The confusion which arises from confounding the terms "value" and "riches" will 
 In the first passage we are told, that if every thing fell to half its value, from abundance, the society would be equally rich, because there would be double the quantity of commodities at half their former value, or in other words, there would be the same value. But in the last passage we are informed, that by doubling the quantity of commodities, although the value of each commodity should be diminished one half, and therefore the value of all the commodities together be precisely the same as before, yet the society would be twice as rich as before. In the first case riches are estimated by the amount of value: in the second, they are estimated by the abundance of commodities contributing to human enjoyments. M. Say further says, "that a man is infinitely rich without valuables, if he can for nothing obtain all the objects he desires;" yet in another place we are told, "that riches consist, not in the product itself, for it is not riches if it have not value, but in its value." Vol. ii. p. 2.
 
 
-CHAPTER XIX.
 
-
-
-EFFECTS OF ACCUMULATION ON PROFITS AND INTEREST.
+CHAPTER XIX — EFFECTS OF ACCUMULATION ON PROFITS AND INTEREST.
 
 
 From the account which has been given of the profits of stock, it will appear, that no accumulation of capital will permanently lower profits, unless there be some permanent cause for the rise of wages. If the funds for the maintenance of labour were doubled, trebled, or quadrupled, there would not long be any difficulty in procuring the requisite number of hands, to be employed by those funds; but owing to the increasing difficulty of making constant additions to the food of the country, funds of the same value would probably not maintain the same quantity of labour. If the necessaries of the workman could be constantly increased with the same facility, there could be no permanent alteration in the rate of profits or wages, to whatever amount capital might be accumulated. Adam Smith, however, uniformly ascribes the fall of profits to accumulation of capital, and to the competition which will result from it, without ever adverting to the increasing difficulty of providing food for the additional number of labourers which the additional capital will employ. "The increase of stock he says, which raises wages, tends to lower profit. When the stocks of many rich merchants are turned into the same trade, their mutual competition naturally tends to lower its profit; and when there is a like increase of stock in all the different trades carried on in the same society, the same competition must produce the same effect in all." Adam Smith speaks here of a rise of wages, but it is of a temporary rise, proceeding from increased funds before the population is increased; and he does not appear to see, that at the same time that capital is increased, the work to be effected by capital, is increased in the same proportion. M. Say has however most satisfactorily shewn, that there is no amount of capital which may not be employed in a country, because demand is only limited by production. No man produces, but with a view to consume or sell, and he never sells, but with an intention to purchase some other commodity, which may be immediately useful to him, or which may contribute to future production. By producing, then, he necessarily becomes either the consumer of his own goods, or the purchaser and consumer of the goods of some other person. It is not to be supposed that he should, for any length of time, be ill-informed of the commodities which he can most advantageously produce, to attain the object which he has in view, namely, the possession of other goods; and therefore it is not probable that he will continually produce a commodity for which there is no demand.[32]
@@ -1416,11 +1222,8 @@ The rate of interest, though ultimately and permanently governed by the rate of 
 The price of funded property is not a steady criterion by which to judge of the rate of interest. In time of war, the stock market is so loaded by the continual loans of Government, that the price of stock has not time to settle at its fair level before a new operation of funding takes place, or it is affected by anticipation of political events. In time of peace, on the contrary, the operations of the sinking fund, the unwillingness, which a particular class of persons feel to divert their funds to any other employment than that to which they have been accustomed, which they think secure, and in which their dividends are paid with the utmost regularity, elevates the price of stock, and consequently depresses the rate of interest on these securities below the general market rate. It is observable too, that for different securities, Government pays very different rates of interest. Whilst 100l. capital in 5 per cent. stock is selling for 95l., an exchequer bill of 100l., will be sometimes selling for 100l. 5s., for which exchequer bill, no more interest will be annually paid than 4l. 11s. 3d.: one of these securities pays to a purchaser at the above prices, an interest of more than 5-1/4 per cent., the other but little more than 4-1/4; a certain quantity of these exchequer bills is required as a safe and marketable investment for bankers; if they were increased much beyond this demand, they would probably be as much depreciated as the 5 per cent. stock. A stock paying 3 per cent. per annum will always sell at a proportionally greater price than stock paying 5 per cent., for the capital debt of neither can be discharged but at par, or 100l. money for 100l. stock. The market rate of interest may fall to 4 per cent., and Government would then pay the holder of 5 per cent. stock at par, unless he consented to take 4 per cent., or some diminished rate of interest under 5 per cent.: they would have no advantage from so paying the holder of 3 per cent. stock, till the market rate of interest had fallen below 3 per cent. per annum. To pay the interest on the national debt, large sums of money are withdrawn from circulation four times in the year for a few days. These demands for money being only temporary, seldom affect prices; they are generally surmounted by the payment of a large rate of interest.[36]
 
 
-CHAPTER XX.
 
-
-
-BOUNTIES ON EXPORTATION, AND PROHIBITIONS OF IMPORTATION.
+CHAPTER XX — BOUNTIES ON EXPORTATION, AND PROHIBITIONS OF IMPORTATION.
 
 
 A bounty on the exportation of corn tends to lower its price to the foreign consumer, but it has no permanent effect on its price in the home market.
@@ -1490,11 +1293,8 @@ It is the more necessary, to make this remark, as in the present day the authori
 "I have already had occasion to remark," observes M. Say, "in speaking of what is improperly called the balance of trade, that if it suits a merchant better to export the precious metals to a foreign country than any other goods, it is also the interest of the state that he should export them, because the state only gains or loses through the channel of its citizens; and in what concerns foreign trade, that which best suits the individual, best suits also the state; therefore, by opposing obstacles to the exportation which individuals would be inclined to make of the precious metals, nothing more is done, than to force them to substitute some other commodity less profitable to themselves, and to the state. It must however be remarked, that I say only in what concerns foreign trade; because the profits which merchants make by their dealings with their countrymen, as well as those which are made in the exclusive commerce with colonies, are not entirely gains for the state. In the trade between individuals of the same country, there is no other gain but the value of an utility produced; Que la valeur d'une utilite produite."[41] Vol. i. p. 401. I cannot see the distinction here made between the profits of the home and foreign trade. The object of all trade is to increase productions. If for the purchase of a pipe of wine, I had it in my power to export bullion, which was bought with the value of the produce of 100 days' labour, but Government, by prohibiting the exportation of bullion, should oblige me to purchase my wine with a commodity bought with the value of the produce of one hundred and five days' labour, the produce of five days' labour is lost to me, and, through me, to the state. But if these transactions took place between individuals, in different provinces of the same country, the same advantage would accrue both to the individual, and, through him, to the country, if he were unfettered in his choice of the commodities, with which he made his purchases; and the same disadvantage, if he were obliged by Government to purchase with the least beneficial commodity. If a manufacturer could work up with the same capital, more iron where coals are plentiful, than he could where coals are scarce, the country would be benefited by the difference. But if coals were no where plentiful, and he imported iron, and could get this additional quantity, by the manufacture of a commodity, with the same capital and labour, he would in like manner benefit his country by the additional quantity of iron. In the 6th Chap. of this work, I have endeavoured to shew that all trade, whether foreign or domestic, is beneficial, by increasing the quantity, and not by increasing the value of productions. We shall have no greater value, whether we carry on the most beneficial home and foreign trade, or in consequence of being fettered by prohibitory laws, we are obliged to content ourselves with the least advantageous. The rate of profits, and the value produced, will be the same. The advantage always resolves itself into that which M. Say appears to confine to the home trade; in both cases there is no other gain but that of the value of an utilite produite.
 
 
-CHAPTER XXI.
 
-
-
-ON BOUNTIES ON PRODUCTION.
+CHAPTER XXI — ON BOUNTIES ON PRODUCTION.
 
 
 It may not be uninstructive to consider the effects of a bounty on the production of raw produce and other commodities, with a view to observe the application of the principles which I have been endeavouring to establish, with regard to the profits of stock, the annual produce of the land and labour, and the relative prices of manufactures and raw produce. In the first place, let us suppose that a tax was imposed on all commodities, for the purpose of raising a fund to be employed by Government, in giving a bounty on the production of corn. As no part of such a tax would be expended by Government, and as all that was received from one class of the people, would be returned to another, the nation collectively would neither be richer nor poorer, from such a tax and bounty. It would be readily allowed, that the tax on commodities by which the fund was created, would raise the price of the commodities taxed; all the consumers of those commodities therefore would contribute towards that fund; in other words, their natural or necessary price being raised, so would too their market price. But for the same reason that the natural price of those commodities would be raised, the natural price of corn would be lowered; before the bounty was paid on production, the farmers obtained as great a price for their corn as was necessary to repay them their rent and their expenses, and afford them the general rate of profits; after the bounty, they would receive more than that rate, unless the price of corn fell by a sum at least equal to the bounty. The effect then of the tax and bounty, would be to raise the price of commodities in a degree equal to the tax levied on them, and to lower the price of corn by a sum equal to the bounty paid. It will be observed too, that no permanent alteration could be made in the distribution of capital between agriculture and manufactures, because as there would be no alteration, either in the amount of capital or population, there would be precisely the same demand for bread and manufactures. The profits of the farmer would be no higher than the general level, after the fall in the price of corn; nor would the profits of the manufacturer be lower after the rise of manufactured goods; the bounty then would not occasion any more capital to be employed on the land in the production of corn, nor any less in the manufacture of goods. But how would the interest of the landlord be affected? On the same principles that a tax on raw produce would lower the corn rent of land, leaving the money rent unaltered, a bounty on production, which is directly the contrary of a tax, would raise corn rent, leaving the money rent unaltered.[42] With the same money rent the landlord would have a greater price to pay for his manufactured goods, and a less price for his corn; he would probably therefore be neither richer nor poorer.
@@ -1512,11 +1312,8 @@ In such case, it is evident that corn would be dear, and commodities cheap; labo
 In considering this question, we have purposely left out of our consideration the effect of such a measure on foreign trade; we have rather been supposing the case of an insulated country, having no commercial connexion with other countries. We have seen that as the demand of the country for corn and commodities would be the same, whatever direction the bounty might take, there would be no temptation to remove capital from one employment to another: but this would no longer be the case if there were foreign commerce, and that commerce were free. By altering the relative value of commodities and corn, by producing so powerful an effect on their natural prices, we should be applying a strong stimulus to the exportation of those commodities whose natural prices were lowered, and an equal stimulus to the importation of those commodities whose natural prices were raised, and thus such a financial measure might entirely alter the natural distribution of employments; to the advantage indeed of the foreign countries, but ruinously to that in which so absurd a policy was adopted.
 
 
-CHAPTER XXII.
 
-
-
-DOCTRINE OF ADAM SMITH CONCERNING THE RENT OF LAND.
+CHAPTER XXII — DOCTRINE OF ADAM SMITH CONCERNING THE RENT OF LAND.
 
 
 "Such parts only of the produce of land," says Adam Smith, "can commonly be brought to market, of which the ordinary price is sufficient to replace the stock which must be employed in bringing them thither, together with its ordinary profits. If the ordinary price is more than this, the surplus part of it will naturally go to the rent of land. If it is not more, though the commodity can be brought to market, it can afford no rent to the landlord. Whether the price is, or is not more, depends upon the demand."
@@ -1556,11 +1353,8 @@ The following observation of Adam Smith is applicable to a low value of money, b
 A high or low money price of corn, arising from the abundance and cheapness of gold and silver, is of no importance to the landlord, as every sort of produce would be equally affected, just as Adam Smith describes; but a relatively high price of corn is at all times greatly beneficial to the landlord, as with the same quantity of corn it not only gives him a command over a greater quantity of money, but over a greater quantity of every commodity which money can purchase.
 
 
-CHAPTER XXIII.
 
-
-
-ON COLONIAL TRADE.
+CHAPTER XXIII — ON COLONIAL TRADE.
 
 
 Adam Smith, in his observations on colonial trade, has shewn, most satisfactorily, the advantages of a free trade, and the injustice suffered by colonies, in being prevented by their mother countries, from selling their produce at the dearest market, and buying their manufactures and stores at the cheapest. He has shewn, that by permitting every country freely to exchange the produce of its industry when and where it pleases, the best distribution of the labour of the world will be effected, and the greatest abundance of the necessaries and enjoyments of human life will be secured.
@@ -1569,7 +1363,9 @@ He has attempted also to shew, that this freedom of commerce, which undoubtedly 
 
 "The monopoly of the colony trade," he says, "like all the other mean and malignant expedients of the mercantile system, depresses the industry of all other countries, but chiefly that of the colonies, without, in the least, increasing, but on the contrary diminishing, that of the country in whose favour it is established."
 
+
 This part of his subject, however, is not treated in so clear and convincing a manner as that in which he shews the injustice of this system towards the colony.
+
 
 Without affirming or denying, that the actual practice of Europe with regard to their colonies is injurious to the mother countries, I may be permitted to doubt whether a mother country may not sometimes be benefited by the restraints to which she subjects her colonial possessions. Who can doubt, for example, that if England were the colony of France, the latter country would be benefited by a heavy bounty paid by England on the exportation of corn, cloth, or any other commodities? In examining the question of bounties, on the supposition of corn being at 4l. per quarter in this country, we saw, that with a bounty of 10s. per quarter, on exportation in England, corn would have been reduced to 3l. 10s. in France. Now, if corn had previously been at 3l. 15s. per quarter in France, the French consumers would have been benefited by 5s. per quarter on all imported corn; if the natural price of corn in France were before 4l., they would have gained the whole bounty of 10s. per quarter. France would thus be benefited by the loss sustained by England: she would not gain a part only of what England lost, but in some cases the whole.
 
@@ -1604,11 +1400,8 @@ I allow that the monopoly of the colony trade will change, and often prejudicial
 And does not Adam Smith agree in this opinion, when he says, that "the prices of commodities, or the value of gold and silver, as compared with commodities, depends upon the proportion between the quantity of labour which is necessary, in order to bring a certain quantity of gold and silver to market, and that which is necessary to bring thither a certain quantity of any other sort of goods?" That quantity will not be affected, whether profits be high or low, or wages low or high. How then can prices be raised by high profits?
 
 
-CHAPTER XXIV.
 
-
-
-ON GROSS AND NET REVENUE.
+CHAPTER XXIV — ON GROSS AND NET REVENUE.
 
 
 Adam Smith constantly magnifies the advantages which a country derives from a large gross, rather than a large net income. "In proportion as a greater share of the capital of a country is employed in agriculture," he says, "the greater will be the quantity of productive labour which it puts into motion within the country; as will likewise be the value which its employment adds to the annual produce of the land and labour of the society. After agriculture, the capital employed in manufactures puts into motion the greatest quantity of productive labour, and adds the greatest value to the annual produce. That which is employed in the trade of exportation has the least effect of any of the three."[43]
@@ -1628,11 +1421,8 @@ Although I admit, that from the nature of rent, a given capital employed in agri
 This argument appears to me to be fallacious; for though two capitals, one Portuguese and one English, be employed, as Dr. Smith supposes, still a capital will be employed in the foreign trade, double of what would be employed in the home trade. Suppose that Scotland employs a capital of a thousand pounds in making linen, which she exchanges for the produce of a similar capital employed in making silks in England. Two thousand pounds, and a proportional quantity of labour will be employed by the two countries. Suppose now, that England discovers, that she can import more linen from Germany, for the silks which she before exported to Scotland, and that Scotland discovers that she can obtain more silks from France in return for her linen, than she before obtained from England,--will not England and Scotland immediately cease trading with each other, and will not the home trade of consumption be changed for a foreign trade of consumption? But although two additional capitals will enter into this trade, the capital of Germany and that of France, will not the same amount of Scotch and of English capital continue to be employed, and will it not give motion to the same quantity of industry as when it was engaged in the home trade?
 
 
-CHAPTER XXV.
 
-
-
-ON CURRENCY AND BANKS.
+CHAPTER XXV — ON CURRENCY AND BANKS.
 
 
 It is not my intention to detain the reader by any long dissertation on the subject of money. So much has already been written on currency, that of those who give their attention to such subjects, none but the prejudiced are ignorant of its true principles. I shall therefore take only a brief survey of some of the general laws which regulate its quantity and value.
@@ -1714,6 +1504,7 @@ It appears to me, that the difficulty may be very simply solved, by referring th
 To a moderate seignorage on the coinage of money there cannot be much objection, particularly on that currency which is to effect the smaller payments. Money is generally enhanced in value to the full amount of the seignorage, and therefore it is a tax which in no way affects those who pay it, while the quantity of money is not in excess. It must, however, be remarked, that in a country where a paper currency is established, although the issuers of such paper should be liable to pay it in specie on the demand of the holder, still, both their notes and the coin might be depreciated to the full amount of the seignorage on that coin, which is alone the legal tender, before the check, which limits the circulation of paper, would operate. If the seignorage on gold coin were 5 per cent., for instance, the currency, by an abundant issue of bank-notes, might be really depreciated 5 per cent. before it would be the interest of the holders to demand coin for the purpose of melting it into bullion; a depreciation to which we should never be exposed, if either there was no seignorage on the gold coin; or, if a seignorage were allowed, the holders of bank-notes might demand bullion, and not coin, in exchange for them, at the mint price of 3l. 17s. 10-1/2d. Unless then the bank should be obliged to pay their notes in bullion or coin, at the will of the holder, the late law which allows a seignorage of 6 per cent., or four pence per oz., on the silver coin, but which directs that gold shall be coined by the mint without any charge whatever, is perhaps the most proper, as it will more effectually prevent any unnecessary variation of the currency.[48]
 
 
+
 CHAPTER XXVI.
 
 
@@ -1742,11 +1533,8 @@ But we have seen, that, estimated in corn, gold may be of very different value i
 Dr. Smith's argument appears to me to be this:--Gold, when estimated in corn, is cheaper in Spain than in other countries, and the proof of this is, not that corn is given by other countries to Spain for gold, but that cloth, sugar, hardware, are by those countries given in exchange for that metal.
 
 
-CHAPTER XXVII.
 
-
-
-TAXES PAID BY THE PRODUCER.
+CHAPTER XXVII — TAXES PAID BY THE PRODUCER.
 
 
 M. Say greatly magnifies the inconveniences which result if a tax on a manufactured commodity is levied at an early, rather than at a late period of its manufacture. The manufacturers, he observes, through whose hands the commodity may successively pass, must employ greater funds in consequence of having to advance the tax, which is often attended with considerable difficulty to a manufacturer of very limited capital and credit. To this observation no objection can be made.
@@ -1758,11 +1546,8 @@ In this latter objection I cannot agree with M. Say. The state, we will suppose,
 M. Simonde, in his excellent work, De la Richesse Commerciale, following the same line of argument as M. Say, has calculated that a tax of 4000 francs, paid originally by a manufacturer, whose profits were at the moderate rate of 10 per cent., would, if the commodity manufactured only passed through the hands of five different persons, be raised to the consumer to the sum of 6734 francs. This calculation proceeds on the supposition, that he who first advanced the tax, would receive from the next manufacturer 4400 francs, and he again from the next, 4840 francs; so that at each step 10 per cent. on its value would be added to it. This is to suppose that the value of the tax would be accumulating at compound interest, not at the rate of 10 per cent. per annum, but at an absolute rate of 10 per cent., at every step of its progress. This opinion of M. de Simonde would be correct if five years elapsed between the first advance of the tax, and the sale of the taxed commodity to the consumer; but if one year only elapsed, a remuneration of 400 francs, instead of 2734, would give a profit at the rate of 10 per cent. per annum, to all who had contributed to the advance of the tax, whether the commodity had passed through the hands of five manufacturers or fifty.
 
 
-CHAPTER XXVIII.
 
-
-
-ON THE INFLUENCE OF DEMAND AND SUPPLY ON PRICES.
+CHAPTER XXVIII — ON THE INFLUENCE OF DEMAND AND SUPPLY ON PRICES.
 
 
 It is the cost of production which must ultimately regulate the price of commodities, and not, as has been often said, the proportion between the supply and demand: the proportion between supply and demand may, indeed, for a time affect the market value of a commodity, until it is supplied in greater or less abundance, according as the demand may have increased or diminished; but this effect will be only of temporary duration.
@@ -1802,11 +1587,8 @@ This is true of monopolized commodities, and indeed of the market price of all o
 Commodities which are monopolized, either by an individual, or by a company, vary according to the law which Lord Lauderdale has laid down: they fall in proportion as the sellers augment their quantity, and rise in proportion to the eagerness of the buyers to purchase them; their price has no necessary connexion with their natural value: but the prices of commodities, which are subject to competition, and whose quantity may be increased in any moderate degree, will ultimately depend, not on the state of demand and supply, but on the increased or diminished cost of their production.
 
 
-CHAPTER XXIX.
 
-
-
-MR. MALTHUS'S OPINIONS ON RENT.
+CHAPTER XXIX — MR. MALTHUS'S OPINIONS ON RENT.
 
 
 Although the nature of rent has in the former pages of this work been treated on at some length; yet I consider myself bound to notice some opinions on the subject, which appear to me erroneous, and which are the more important, as they are found in the writings of one to whom, of all men of the present day, some branches of economical science are the most indebted. Of Mr. Malthus's Essay on Population, I am happy in the opportunity here afforded me of expressing my admiration. The assaults of the opponents of this great work have only served to prove its strength; and I am persuaded that its just reputation will spread with the cultivation of that science of which it is so eminent an ornament. Mr. Malthus too--has satisfactorily explained the principles of rent, and shewed that it rises or falls in proportion to the relative advantages, either of fertility or situation, of the different lands in cultivation, and has thereby thrown much light on many difficult points connected with the subject of rent, which were before either unknown, or very imperfectly understood; yet he appears to me to have fallen into some errors, which his authority makes it the more necessary, whilst his characteristic candour renders it less unpleasing to notice. One of these errors lies in supposing rent to be a clear gain and a new creation of riches.
@@ -1920,13 +1702,14 @@ Two men employ equal capitals--one in agriculture, the other in manufactures. Th
 Mr. Malthus says, "It has been justly observed by Adam Smith, that no equal quantity of productive labour employed in manufactures can ever occasion so great a reproduction as in agriculture." If Adam Smith speaks of value, he is correct, but if he speaks of riches, which is the important point, he is mistaken, for he has himself defined riches to consist of the necessaries, conveniences, and enjoyments of human life. One set of necessaries and conveniences admits of no comparison with another set; value in use cannot be measured by any known standard, it is differently estimated by different persons.
 
 
-FOOTNOTES:
+Footnotes:
 
 
 [1] Chap. xv. part i. "Des Debouches," contains in particular some very important principles, which I believe were first explained by this distinguished writer.
 
 
-[2] BOOK I. CHAP. 5.
+
+BOOK I. CHAP. 5.
 
 
 [3] "But though labour be the real measure of the exchangeable value of all commodities, it is not that by which their value is commonly estimated. It is often difficult to ascertain the proportion between two different quantities of labour. The time spent in two different sorts of work will not always alone determine this proportion. The different degrees of hardship endured, and of ingenuity exercised, must likewise be taken into account. There may be more labour in an hour's hard work, than in two hours' easy business; or, in an hour's application to a trade, which it costs ten years' labour to learn, than in a month's industry at an ordinary and obvious employment. But it is not easy to find any accurate measure, either of hardship or ingenuity. In exchanging, indeed, the different productions of different sorts of labour for one another, some allowance is commonly made for both. It is adjusted, however, not by any accurate measure, but by the higgling and bargaining of the market, according to that sort of rough equality, which, though not exact, is sufficient for carrying on the business of common life."--Wealth of Nations. Book i. chap. 10.
@@ -1972,7 +1755,8 @@ Price per qr.    Rent.      Profit.       Wages.      Total. L.  s.  d. L.  s.  
 [14] It will appear then, that a country possessing very considerable advantages in machinery and skill, and which may therefore be enabled to manufacture commodities with much less labour than her neighbours, may in return for such commodities, import a portion of the corn required for its consumption, even if its land were more fertile, and corn could be grown with less labour than in the country from which it was imported. Two men can both make shoes and hats, and one is superior to the other in both employments; but in making hats, he can only exceed his competitor by one-fifth or 20 per cent., and in making shoes he can excel him by one-third or 33 per cent.;--will it not be for the interest of both, that the superior man should employ himself exclusively in making shoes, and the inferior man in making hats?
 
 
-[15] BOOK V. CH. II.
+
+BOOK V. CH. II.
 
 
 [16] M. Say appears to have imbibed the general opinion on this subject. Speaking of corn, he says, "thence it results, that its price influences the price of all other commodities. A farmer, a manufacturer, or a merchant, employs a certain number of workmen, who all have occasion to consume a certain quantity of corn. If the price of corn rises, he is obliged to raise, in an equal proportion, the price of his productions." Vol. i. p. 255.
@@ -2034,7 +1818,7 @@ But how can they permanently support the market price of their goods above the n
 [41] Are not the following passages contradictory to the one above quoted? "Besides, that home trade, though less noticed, (because it is in a variety of hands) is the most considerable, it is also the most profitable. The commodities exchanged in that trade are necessarily the productions of the same country." Vol. i. p. 84.
 
 
-I SHALL, IN THE 24TH CHAPTER, EXAMINE THE SOUNDNESS OF THIS OPINION.
+I shall, in the 24th chapter, examine the soundness of this opinion.
 
 
 [42] See page 198.
@@ -2098,11 +1882,7 @@ Such a regulation would be extremely pernicious, and would expose us to consider
 [66] Mr. M'Culloch, in an able publication, has very strongly contended for the justice of making the dividends on the national debt conform to the reduced value of corn. He is in favour of a free trade in corn, but he thinks it should be accompanied by a reduction of interest to the national creditor.
 
 
-THE END.
-
-
-
-ERRATA.
+The End — Errata.
 
 
 Page 190, line 8, for obtained, read attained.
@@ -2114,7 +1894,7 @@ Page 190, line 8, for obtained, read attained.
 555, last line, for rent money, read money rent.
 
 
-INDEX.
+Index.
 
 
 A.
@@ -2130,6 +1910,7 @@ Banks, establishment of, affects the sole power of the state in coining money, 5
 Bounties, on the exportation of corn, lower its price to the foreign consumer, 417-427. Effects of a bounty in raising the price of corn, illustrated, 428. Though such bounty may cause a partial degradation in the value of money, yet such degradation cannot be permanent, 432-434. Bounties on the exportation of manufactures raise their market but not their natural price, 436-438. The sole effect of bounty is to divert a portion of capital to an employment which it would not naturally seek, 438. Evils of such a system, 439-445. A bounty on the production of corn, will produce no real effect on the annual produce of the land and labour of the country, though it would make corn relatively cheap, and manufactures relatively dear, 449-455. But the effect of a tax on corn, in order to afford a fund for a bounty on the production of commodities, would be to enhance the price of corn, and render commodities cheap, 456, 457.
 
 Buchanan (Mr.), observations of, on Adam Smith's doctrine of productive and unproductive labour, 64-66, note. Remarks on his opinions respecting bounties on exportation, 440-442.
+
 
 
 C.
@@ -2184,12 +1965,14 @@ Holland, low rate of interest in, accounted for, 400, note.
 Houses, rents of, distinguished into two parts, 263. Difference between rent of houses and that of land, 264. Taxes on houses by whom ultimately borne, 266.
 
 
+
 I.
 
 
 Importation of corn, effects of a prohibition of, considered, 437, 438.
 
 Interest, low rate of, in Holland, accounted for, 400, note. Effects of accumulation on profits and interest, 398-410. Observations on the rates of interest, 412-416. The interest for money is regulated by the rate of profits which can be made by the employment of capital, 512, 513.
+
 
 
 L.
@@ -2288,6 +2071,7 @@ U.
 Utility, essential to exchangeable value, 2.
 
 
+
 V.
 
 
@@ -2304,14 +2088,16 @@ J. M^{c}Creery, Printer, Black-Horse-court, London.
 Albemarle-street, London, May, 1817.
 
 
-NEW PUBLICATIONS.
+New Publications.
 
 
 SPEECH of the Rt. Hon. GEORGE CANNING, 25th Feb. on the Motion for a Reduction of the Lords of the Admiralty, 8vo. 2s.
 
 The APOSTATE; a Tragedy, in Five Acts: now performing at the Theatre in Covent Garden. By RICHARD SHEIL, Esq. 8vo. 3s.
 
-LETTER to WILLIAM SMITH, ESQ. M. P. for Norwich, from ROBERT SOUTHEY, ESQ. 8vo. 2s.
+
+Letter to WILLIAM SMITH, ESQ. M. P. for Norwich, from ROBERT SOUTHEY, ESQ. 8vo. 2s.
+
 
 A SERMON, preached at St. Mary's, Oxford, on Thursday, March 6, 1817, before the Honourable Sir James Allan Park, one of the Justices of his Majesty's Court of Common Pleas, and the Honourable Sir James Burrough, one of the Justices of His Majesty's Court of King's Bench, and before the University, at the Lent Assizes, by JOHN DAVISON, M. A. Fellow of Oriel College, Oxford, 4to. 1s. 6d.
 
@@ -2383,4 +2169,5 @@ HISTORY of the UNIVERSITY of EDINBURGH, compiled from Original Papers and Record
 
 London: Printed by W. Bulmer and Co. Cleveland-row, St. James's.
 
-Texte du domaine public, source : Project Gutenberg (#33310). Édition numérique EbookClassics.
+
+— Public domain text. EbookClassics digital edition.

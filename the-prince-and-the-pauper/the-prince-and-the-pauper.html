@@ -1,220 +1,76 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
-<title>The Prince and the Pauper</title><style>
-@page { margin: 22mm 20mm; }
-body { font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', serif; line-height: 1.6;
-       color: #1f1a14; max-width: 38em; margin: 0 auto; padding: 1.5em 1.2em; }
-h1 { font-size: 2.1em; text-align: center; margin: 1.5em 0 .2em; letter-spacing: .01em; }
-.author { text-align: center; font-size: 1.15em; font-style: italic; margin-bottom: 3em; color: #5a4a36; }
-h2 { font-size: 1.25em; text-align: center; margin: 2.6em 0 1.2em; letter-spacing: .06em;
-     text-transform: uppercase; font-weight: normal; page-break-before: always; break-before: page; }
-p { margin: 0; text-indent: 1.4em; text-align: justify; hyphens: auto; }
-h2 + p, .first { text-indent: 0; }
-.colophon { font-size: .85em; color: #6b5d45; text-align: center; margin-top: 4em; text-indent: 0; }
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Prince and the Pauper — Mark Twain</title><style>
+:root{--paper:#fbf8f1;--ink:#1f1b16;--muted:#6f6352;--accent:#9a6b2f;--rule:#e4dccb}
+@media (prefers-color-scheme:dark){:root{--paper:#16140f;--ink:#ece6d8;--muted:#a79c88;--accent:#d8a95e;--rule:#2e2a22}}
+html{background:var(--paper)}
+body{font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Libertinus Serif",Georgia,serif;color:var(--ink);
+     background:var(--paper);line-height:1.65;font-size:1.12rem;max-width:36em;margin:0 auto;padding:2.5em 1.25em 5em}
+.titlepage{text-align:center;min-height:70vh;display:flex;flex-direction:column;justify-content:center;gap:.6em;
+           border-bottom:1px solid var(--rule);margin-bottom:2.5em;padding-bottom:2.5em}
+.titlepage img{max-width:260px;width:60%;margin:0 auto 1.5em;border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+h1{font-size:2.4em;line-height:1.15;font-weight:600;margin:0;letter-spacing:-.01em}
+.author{font-style:italic;font-size:1.25em;color:var(--accent);margin:0}
+.translator{font-size:.95em;color:var(--muted);margin:0}
+nav.toc{margin:0 0 3em}
+nav.toc h2{font-size:.85em;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:left;margin:0 0 .8em}
+nav.toc ol{list-style:none;padding:0;margin:0;columns:1}
+nav.toc li{margin:.25em 0}
+nav.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent}
+nav.toc a:hover{border-color:var(--accent)}
+h2.chapter{font-size:1.45em;font-weight:600;text-align:center;margin:3.5em 0 1.6em;line-height:1.3}
+h2.chapter::before{content:"";display:block;width:3em;height:2px;background:var(--accent);margin:0 auto 1.1em}
+p{margin:0;text-indent:1.5em;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+h2.chapter + p, .titlepage + p{text-indent:0}
+h2.chapter + p::first-letter{font-size:3.1em;float:left;line-height:.85;padding:.08em .08em 0 0;color:var(--accent);font-weight:600}
+.colophon{margin-top:5em;padding-top:1.5em;border-top:1px solid var(--rule);text-align:center;color:var(--muted);font-size:.85em;text-indent:0}
+h3.sub{font-size:1em;font-weight:600;font-variant:small-caps;letter-spacing:.04em;text-align:center;margin:2.2em 0 1em}
+h3.sub + p{text-indent:0}
+@media print{h2.chapter{break-before:page}}
 </style></head><body>
+<header class="titlepage">
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjI0MDAiIHZpZXdCb3g9IjAgMCAxNjAwIDI0MDAiPgo8cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSIyNDAwIiBmaWxsPSIjNGExNTI2Ii8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjMwMCIgZmlsbD0iI2YyYzZhMCIgb3BhY2l0eT0iLjkyIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNGExNTI2IiBzdHJva2Utd2lkdGg9IjEyIiBvcGFjaXR5PSIuNSIvPgo8Y2lyY2xlIGN4PSIxMTIwIiBjeT0iNTYwIiByPSIxMjAiIGZpbGw9IiM0YTE1MjYiIG9wYWNpdHk9Ii4xOCIvPgo8cmVjdCB4PSIxNjAiIHk9IjkzMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIxMCIgZmlsbD0iI2YyYzZhMCIvPgo8dGV4dCB4PSIxNjAiIHk9IjEwOTgiIGZvbnQtc2l6ZT0iMTUwIiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmYmVmZTYiPlRoZSBQcmluY2UgYW5kPC90ZXh0Pjx0ZXh0IHg9IjE2MCIgeT0iMTI2MiIgZm9udC1zaXplPSIxNTAiIGZvbnQtd2VpZ2h0PSI2MDAiIGZvbnQtZmFtaWx5PSJMaWJlcnRpbnVzIFNlcmlmLCBHZW9yZ2lhLCBzZXJpZiIgZmlsbD0iI2ZiZWZlNiI+dGhlIFBhdXBlcjwvdGV4dD4KPHRleHQgeD0iMTYwIiB5PSIxNDk4IiBmb250LXNpemU9IjY4IiBmb250LXN0eWxlPSJpdGFsaWMiIGZvbnQtZmFtaWx5PSJMaWJlcnRpbnVzIFNlcmlmLCBHZW9yZ2lhLCBzZXJpZiIgZmlsbD0iI2YyYzZhMCI+TWFyayBUd2FpbjwvdGV4dD4KPHRleHQgeD0iMTYwIiB5PSIyMjMwIiBmb250LXNpemU9IjQ0IiBsZXR0ZXItc3BhY2luZz0iMTQiIGZvbnQtZmFtaWx5PSJMaWJlcnRpbnVzIFNlcmlmLCBHZW9yZ2lhLCBzZXJpZiIgZmlsbD0iI2ZiZWZlNiIgb3BhY2l0eT0iLjc1Ij5FQk9PS0NMQVNTSUNTPC90ZXh0Pgo8L3N2Zz4=" alt="">
 <h1>The Prince and the Pauper</h1>
 <p class="author">Mark Twain</p>
-<h2>THE PRINCE AND THE PAUPER</h2>
-<p>by Mark Twain</p>
-<p>The Great Seal</p>
+</header>
+<nav class="toc"><h2>Contents</h2><ol>
+<li><a href="#c1">Chapter II. Tom’s early life.</a></li>
+<li><a href="#c2">Chapter III. Tom’s meeting with the Prince.</a></li>
+<li><a href="#c3">Chapter IV. The Prince’s troubles begin.</a></li>
+<li><a href="#c4">Chapter V. Tom as a Patrician.</a></li>
+<li><a href="#c5">Chapter VI. Tom receives instructions.</a></li>
+<li><a href="#c6">Chapter VII. Tom’s first royal dinner.</a></li>
+<li><a href="#c7">Chapter VIII. The Question of the Seal.</a></li>
+<li><a href="#c8">Chapter IX. The river pageant.</a></li>
+<li><a href="#c9">Chapter X. The Prince in the toils.</a></li>
+<li><a href="#c10">Chapter XI. At Guildhall.</a></li>
+<li><a href="#c11">Chapter XII. The Prince and his Deliverer.</a></li>
+<li><a href="#c12">Chapter XIII. The disappearance of the Prince.</a></li>
+<li><a href="#c13">Chapter XIV. ‘Le Roi est mort--vive le Roi.’</a></li>
+<li><a href="#c14">Chapter XV. Tom as King.</a></li>
+<li><a href="#c15">Chapter XVI. The State Dinner.</a></li>
+<li><a href="#c16">Chapter XVII. Foo-foo the First.</a></li>
+<li><a href="#c17">Chapter XVIII. The Prince with the Tramps.</a></li>
+<li><a href="#c18">Chapter XIX. The Prince with the peasants.</a></li>
+<li><a href="#c19">Chapter XX. The Prince and the hermit.</a></li>
+<li><a href="#c20">Chapter XXI. Hendon to the rescue.</a></li>
+<li><a href="#c21">Chapter XXII. A Victim of Treachery.</a></li>
+<li><a href="#c22">Chapter XXIII. The Prince a prisoner.</a></li>
+<li><a href="#c23">Chapter XXIV. The Escape.</a></li>
+<li><a href="#c24">Chapter XXV. Hendon Hall.</a></li>
+<li><a href="#c25">Chapter XXVI. Disowned.</a></li>
+<li><a href="#c26">Chapter XXVII. In Prison.</a></li>
+<li><a href="#c27">Chapter XXVIII. The sacrifice.</a></li>
+<li><a href="#c28">Chapter XXIX. To London.</a></li>
+<li><a href="#c29">Chapter XXX. Tom’s progress.</a></li>
+<li><a href="#c30">Chapter XXXI. The Recognition procession.</a></li>
+<li><a href="#c31">Chapter XXXII. Coronation Day.</a></li>
+<li><a href="#c32">Chapter XXXIII. Edward as King.</a></li>
+</ol></nav>
 <p>I will set down a tale as it was told to me by one who had it of his father, which latter had it of HIS father, this last having in like manner had it of HIS father--and so on, back and still back, three hundred years and more, the fathers transmitting it to the sons and so preserving it.  It may be history, it may be only a legend, a tradition. It may have happened, it may not have happened:  but it COULD have happened.  It may be that the wise and the learned believed it in the old days; it may be that only the unlearned and the simple loved it and credited it.</p>
-<h2>CONTENTS</h2>
-<p>I.          The birth of the Prince and the Pauper. II.  Tom’s early life. III.    Tom’s meeting with the Prince. IV.  The Prince’s troubles begin. V.          Tom as a patrician. VI.  Tom receives instructions. VII.    Tom’s first royal dinner. VIII.    The question of the Seal. IX.  The river pageant. X.          The Prince in the toils. XI.  At Guildhall. XII.  The Prince and his deliverer. XIII.    The disappearance of the Prince. XIV.  ‘Le Roi est mort--vive le Roi.’ XV.  Tom as King. XVI.  The state dinner. XVII.    Foo-foo the First. XVIII.    The Prince with the tramps. XIX.  The Prince with the peasants. XX.  The Prince and the hermit. XXI.  Hendon to the rescue. XXII.  A victim of treachery. XXIII.    The Prince a prisoner. XXIV.  The escape. XXV.  Hendon Hall. XXVI.  Disowned. XXVII.  In prison. XXVIII.    The sacrifice. XXIX.  To London. XXX.  Tom’s progress. XXXI.  The Recognition procession. XXXII.  Coronation Day. XXXIII.  Edward as King. CONCLUSION.    Justice and Retribution. Notes.</p>
-<h2>ILLUSTRATIONS</h2>
-<p>THE GREAT SEAL (frontispiece)</p>
-<h2>THE BIRTH OF THE PRINCE AND THE PAUPER</h2>
-<h2>“SPLENDID PAGEANTS AND GREAT BONFIRES”</h2>
-<h2>TOM’S EARLY LIFE</h2>
-<h2>OFFAL COURT</h2>
-<h2>“WITH ANY MISERABLE CRUST”</h2>
-<h2>“HE OFTEN READ THE PRIEST’S BOOKS”</h2>
-<h2>“SAW POOR ANNE ASKEW BURNED”</h2>
-<h2>“BROUGHT THEIR PERPLEXITIES TO TOM”</h2>
-<h2>“LONGING FOR THE PORK-PIES”</h2>
-<h2>TOM’S MEETING WITH THE PRINCE</h2>
-<h2>“AT TEMPLE BAR”</h2>
-<h2>“LET HIM IN”</h2>
-<h2>“HOW OLD BE THESE</h2>
-<h2>“DOFF THY RAGS, AND DON THESE SPLENDORS”</h2>
-<h2>“I SALUTE YOUR GRACIOUS HIGHNESS!”</h2>
-<h2>THE PRINCE’S TROUBLES BEGIN</h2>
-<h2>“SET UPON BY DOGS”</h2>
-<h2>“A DRUNKEN RUFFIAN COLLARED HIM”</h2>
-<h2>TOM AS A PATRICIAN</h2>
-<h2>“NEXT HE DREW THE SWORD”</h2>
-<h2>“RESOLVED TO FLY”</h2>
-<h2>“THE BOY WAS ON HIS KNEES”</h2>
-<h2>“NOBLES WALKED UPON EACH SIDE OF HIM”</h2>
-<h2>“HE DROPPED UPON HIS KNEES”</h2>
-<h2>“HE TURNED WITH JOYFUL FACE”</h2>
-<h2>“THE PHYSICIAN BOWED LOW”</h2>
-<h2>“THE KING FELL BACK UPON HIS COUCH”</h2>
-<h2>“IS THIS MAN TO LIVE FOREVER?”</h2>
-<h2>TOM RECEIVES INSTRUCTIONS</h2>
-<h2>“PRITHEE, INSIST NOT”</h2>
-<h2>“THE LORD ST. JOHN MADE REVERENCE”</h2>
-<h2>HERTFORD AND THE PRINCESSES</h2>
-<h2>“SHE MADE REVERENCE”</h2>
-<h2>“OFFERED IT TO HIM ON A GOLDEN SALVER”</h2>
-<h2>“THEY MUSED A WHILE”</h2>
-<h2>“PEACE MY LORD, THOU UTTEREST TREASON!”</h2>
-<h2>“HE BEGAN TO PACE THE FLOOR”</h2>
-<h2>TOM’S FIRST ROYAL DINNER</h2>
-<h2>“FASTENED A NAPKIN ABOUT HIS NECK”</h2>
-<h2>“TOM ATE WITH HIS FINGERS”</h2>
-<h2>“HE GRAVELY TOOK A DRAUGHT”</h2>
-<h2>“TOM PUT ON THE GREAVES”</h2>
-<h2>THE QUESTION OF THE SEAL</h2>
-<h2>“EASED HIM BACK UPON HIS PILLOWS”</h2>
-<h2>THE RIVER PAGEANT</h2>
-<h2>“HALBERDIERS APPEARED IN THE GATEWAY”</h2>
-<h2>“TOM CANTY STEPPED INTO VIEW”</h2>
-<h2>THE PRINCE IN THE TOILS</h2>
-<h2>“A DIM FORM SANK TO THE GROUND”</h2>
-<h2>“WHO ART THOU?”</h2>
-<h2>“INTO GOOD WIFE CANTY’S ARMS”</h2>
-<h2>“BENT HEEDFULLY AND WARILY OVER HIM”</h2>
-<h2>“THE PRINCE SPRANG UP”</h2>
-<h2>“HURRIED HIM ALONG THE DARK WAY”</h2>
-<h2>“HE WASTE NO TIME”</h2>
-<h2>AT GUILDHALL</h2>
-<h2>“A RICH CANOPY OF STATE”</h2>
-<h2>“BEGAN TO LAY ABOUT HIM”</h2>
-<h2>“LONG LIVE THE KING!”</h2>
-<h2>THE PRINCE AND HIS DELIVERER</h2>
-<h2>“OUR FRIENDS THREADED THEIR WAY”</h2>
-<h2>“OBJECT LESSONS” IN ENGLISH HISTORY</h2>
-<h2>“JOHN CANTY MOVED OFF”</h2>
-<h2>“SMOOTHING BACK THE TANGLED CURLS”</h2>
-<h2>“PRITHEE, POUR THE WATER”</h2>
-<h2>“GO ON--TELL ME THY STORY</h2>
-<h2>“THOU HAST BEEN SHAMEFULLY ABUSED”</h2>
-<h2>“HE DROPPED ON ONE KNEE”</h2>
-<h2>“RISE, SIR MILES HENDON, BARONET”</h2>
-<h2>THE DISAPPEARANCE OF THE PRINCE</h2>
-<h2>“HE DROPPED ASLEEP”</h2>
-<h2>“THESE BE VERY GOOD AND SOUND”</h2>
-<h2>“EXPLAIN, THOU LIMB OF SATAN”</h2>
-<h2>“HENDON FOLLOWED AFTER HIM”</h2>
-<h2>“LE ROI EST MORT-VIVE LE ROI”</h2>
-<h2>“WILT DEIGN TO DELIVER THY COMMANDS?”</h2>
-<h2>“LORD OF THE BEDCHAMBER”</h2>
-<h2>“A SECRETARY OF STATE”</h2>
-<h2>“STOOD AT GRACEFUL EASE”</h2>
-<h2>“‘TIS I THAT TAKE THEM”</h2>
-<h2>“BUT TAX YOUR MEMORY”</h2>
-<h2>TOM AS KING</h2>
-<h2>“TOM HAD WANDERED TO A WINDOW”</h2>
-<h2>“TOM SCANNED THE PRISONERS”</h2>
-<h2>“LET THE PRISONER GO FREE!”</h2>
-<h2>“WHAT IS IT THAT THESE HAVE DONE?”</h2>
-<h2>“NODDED THEIR RECOGNITION”</h2>
-<h2>THE STATE DINNER</h2>
-<h2>“A GENTLEMAN BEARING A ROD”</h2>
-<h2>“THE CHANCELLOR BETWEEN TWO”</h2>
-<h2>“I THANK YOU MY GOOD PEOPLE”</h2>
-<h2>“IN THE MIDST OF HIS PAGEANT”</h2>
-<h2>FOO-FOO THE FIRST</h2>
-<h2>“RUFFIAN FOLLOWED THEIR STEPS”</h2>
-<h2>“HE SEIZED A BILLET OF WOOD”</h2>
-<h2>“HE WAS SOON ABSORBED IN THINKING”</h2>
-<h2>“A GRIM AND UNSIGHTLY PICTURE”</h2>
-<h2>“THEY ROARED OUT A ROLLICKING DITTY”</h2>
-<h2>“WHILST THE FLAMES LICKED UPWARDS”</h2>
-<h2>“THEY WERE WHIPPED AT THE CART’S TAIL”</h2>
-<h2>“THOU SHALT NOT”</h2>
-<h2>“KNOCKING HOBBS DOWN”</h2>
-<h2>“THRONE HIM”</h2>
-<h2>THE PRINCE WITH THE TRAMPS</h2>
-<h2>“TROOP OF VAGABONDS SET FORWARD”</h2>
-<h2>“THEY THREW BONES AND VEGETABLES</h2>
-<h2>“WRITHE AND WALLOW IN THE DIRT”</h2>
-<h2>“KING FLED IN THE OPPOSITE DIRECTION”</h2>
-<h2>“HE STUMBLED ALONG”</h2>
-<h2>“WHAT SEEMED TO BE A WARM ROPE”</h2>
-<h2>“CUDDLED UP TO THE CALF”</h2>
-<h2>THE PRINCE WITH THE PEASANTS</h2>
-<h2>“TOOK A GOOD SATISFYING STARE”</h2>
-<h2>“MOTHER RECEIVED THE KING KINDLY”</h2>
-<h2>“BROUGHT THE KING OUT OF HIS DREAMS”</h2>
-<h2>“GAVE HIM A BUTCHER KNIFE TO GRIND”</h2>
-<h2>THE PRINCE AND THE HERMIT</h2>
-<h2>“HE TURNED AND DESCRIED TWO FIGURES”</h2>
-<h2>“THE KING ENTERED AND PAUSED”</h2>
-<h2>“I WILL TELL YOU A SECRET”</h2>
-<h2>“CHATTING PLEASANTLY ALL THE TIME”</h2>
-<h2>“DREW HIS THUMB ALONG THE EDGE”</h2>
-<h2>“THE NEXT MOMENT THEY WERE BOUND”</h2>
-<h2>HENDON TO THE RESCUE</h2>
-<h2>“SUNK UPON HIS KNEES”</h2>
-<h2>“GOD MADE EVERY CREATURE BUT YOU!”</h2>
-<h2>“THE FETTERED LITTLE KING”</h2>
-<h2>A VICTIM OF TREACHERY</h2>
-<h2>“HUGO STOOD NO CHANCE”</h2>
-<h2>“BOUND THE POULTICE TIGHT AND FAST”</h2>
-<h2>“TARRY HERE TILL I COME AGAIN</h2>
-<h2>“KING SPRANG TO HIS DELIVERER’S SIDE”</h2>
-<h2>THE PRINCE A PRISONER</h2>
-<h2>“GENTLY, GOOD FRIEND”</h2>
-<h2>“SHE SPRANG TO HER FEET”</h2>
-<h2>THE ESCAPE</h2>
-<h2>“THE PIG MAY COST THY NECK, MAN”</h2>
-<h2>“BEAR ME UP, BEAR ME UP, SWEET SIR!”</h2>
-<h2>HENDON HALL</h2>
-<h2>“JOGGING EASTWARD ON SORRY STEEDS”</h2>
-<h2>“THERE IS THE VILLAGE, MY PRINCE!”</h2>
-<h2>“‘EMBRACE ME, HUGH,’ HE CRIED”</h2>
-<h2>“HUGH PUT UP HIS HAND IN DISSENT”</h2>
-<h2>“A BEAUTIFUL LADY, RICHLY CLOTHED”</h2>
-<h2>“HUGH WAS PINNED TO THE WALL”</h2>
-<h2>DISOWNED</h2>
-<h2>“OBEY, AND HAVE NO FEAR”</h2>
-<h2>“AM I MILES HENDON?”</h2>
-<h2>IN PRISON</h2>
-<h2>“CHAINED IN A LARGE ROOM”</h2>
-<h2>“THE OLD MAN LOOKED HENDON OVER”</h2>
-<h2>“INFORMATION DELIVERED IN A LOW VOICE”</h2>
-<h2>“THE KING!” HE CRIED. “WHAT KING?”</h2>
-<h2>“TWO WOMEN CHAINED TO POSTS”</h2>
-<h2>“TORN AWAY BY THE OFFICERS”</h2>
-<h2>“THE KING WAS FURIOUS”</h2>
-<h2>THE SACRIFICE</h2>
-<h2>“HE CONFRONTED THE OFFICER IN CHARGE”</h2>
-<h2>“WHILE THE LASH WAS APPLIED”</h2>
-<h2>“SIR HUGH SPURRED AWAY”</h2>
-<h2>TO LONDON</h2>
-<h2>“MOUNTED AND RODE OFF WITH THE KING”</h2>
-<h2>“MIDST OF A JAM OF HOWLING PEOPLE”</h2>
-<h2>TOM’S PROGRESS</h2>
-<h2>“TO KISS HIS HAND AT PARTING”</h2>
-<h2>“COMMANDED HER TO GO TO HER CLOSET”</h2>
-<h2>THE RECOGNITION PROCESSION</h2>
-<h2>THE START FOR THE TOWER</h2>
-<h2>“WELCOME, O KING!”</h2>
-<h2>“A LARGESS! A LARGESS!”</h2>
-<h2>“SHE WAS AT HIS SIDE”</h2>
-<h2>“IT IS AN ILL TIME FOR DREAMING”</h2>
-<h2>“SHE WAS MY MOTHER”</h2>
-<h2>CORONATION DAY</h2>
-<h2>“GATHERS UP THE LADY’S LONG TRAIN”</h2>
-<h2>“TOM CANTY APPEARED”</h2>
-<h2>“AND FELL ON HIS KNEES BEFORE HIM”</h2>
-<h2>“THE GREAT SEAL--FETCH IT HITHER”</h2>
-<h2>“SIRE, THE SEAL IS NOT THERE”</h2>
-<h2>“BETHINK THEE, MY KING”</h2>
-<h2>“LONG LIVE THE TRUE KING!”</h2>
-<h2>“TO CRACK NUTS WITH”</h2>
-<h2>EDWARD AS KING</h2>
-<h2>“HE STRETCHED HIMSELF ON THE GROUND”</h2>
-<h2>“ARRESTED AS A SUSPICIOUS CHARACTER”</h2>
-<h2>“IT IS HIS RIGHT”</h2>
-<h2>“STRIP THIS ROBBER”</h2>
-<h2>“TOM ROSE AND KISSED THE KING’S HAND”</h2>
-<h2>JUSTICE AND RETRIBUTION</h2>
-<h2>NOTES</h2>
-<h2>CHAPTER I. The birth of the Prince and the Pauper.</h2>
 <p>In the ancient city of London, on a certain autumn day in the second quarter of the sixteenth century, a boy was born to a poor family of the name of Canty, who did not want him.  On the same day another English child was born to a rich family of the name of Tudor, who did want him. All England wanted him too.  England had so longed for him, and hoped for him, and prayed God for him, that, now that he was really come, the people went nearly mad for joy.  Mere acquaintances hugged and kissed each other and cried. Everybody took a holiday, and high and low, rich and poor, feasted and danced and sang, and got very mellow; and they kept this up for days and nights together.  By day, London was a sight to see, with gay banners waving from every balcony and housetop, and splendid pageants marching along.  By night, it was again a sight to see, with its great bonfires at every corner, and its troops of revellers making merry around them.  There was no talk in all England but of the new baby, Edward Tudor, Prince of Wales, who lay lapped in silks and satins, unconscious of all this fuss, and not knowing that great lords and ladies were tending him and watching over him--and not caring, either.  But there was no talk about the other baby, Tom Canty, lapped in his poor rags, except among the family of paupers whom he had just come to trouble with his presence.</p>
-<h2>CHAPTER II. Tom’s early life.</h2>
+<h2 class="chapter" id="c1">Chapter II. Tom’s early life.</h2>
 <p>Let us skip a number of years.</p>
 <p>London was fifteen hundred years old, and was a great town--for that day. It had a hundred thousand inhabitants--some think double as many. The streets were very narrow, and crooked, and dirty, especially in the part where Tom Canty lived, which was not far from London Bridge.  The houses were of wood, with the second story projecting over the first, and the third sticking its elbows out beyond the second.  The higher the houses grew, the broader they grew.  They were skeletons of strong criss-cross beams, with solid material between, coated with plaster. The beams were painted red or blue or black, according to the owner’s taste, and this gave the houses a very picturesque look.  The windows were small, glazed with little diamond-shaped panes, and they opened outward, on hinges, like doors.</p>
 <p>The house which Tom’s father lived in was up a foul little pocket called Offal Court, out of Pudding Lane.  It was small, decayed, and rickety, but it was packed full of wretchedly poor families. Canty’s tribe occupied a room on the third floor.  The mother and father had a sort of bedstead in the corner; but Tom, his grandmother, and his two sisters, Bet and Nan, were not restricted--they had all the floor to themselves, and might sleep where they chose.  There were the remains of a blanket or two, and some bundles of ancient and dirty straw, but these could not rightly be called beds, for they were not organised; they were kicked into a general pile, mornings, and selections made from the mass at night, for service.</p>
@@ -230,7 +86,7 @@ h2 + p, .first { text-indent: 0; }
 <p>One January day, on his usual begging tour, he tramped despondently up and down the region round about Mincing Lane and Little East Cheap, hour after hour, bare-footed and cold, looking in at cook-shop windows and longing for the dreadful pork-pies and other deadly inventions displayed there--for to him these were dainties fit for the angels; that is, judging by the smell, they were--for it had never been his good luck to own and eat one. There was a cold drizzle of rain; the atmosphere was murky; it was a melancholy day.  At night Tom reached home so wet and tired and hungry that it was not possible for his father and grandmother to observe his forlorn condition and not be moved--after their fashion; wherefore they gave him a brisk cuffing at once and sent him to bed. For a long time his pain and hunger, and the swearing and fighting going on in the building, kept him awake; but at last his thoughts drifted away to far, romantic lands, and he fell asleep in the company of jewelled and gilded princelings who live in vast palaces, and had servants salaaming before them or flying to execute their orders.  And then, as usual, he dreamed that he was a princeling himself.</p>
 <p>All night long the glories of his royal estate shone upon him; he moved among great lords and ladies, in a blaze of light, breathing perfumes, drinking in delicious music, and answering the reverent obeisances of the glittering throng as it parted to make way for him, with here a smile, and there a nod of his princely head.</p>
 <p>And when he awoke in the morning and looked upon the wretchedness about him, his dream had had its usual effect--it had intensified the sordidness of his surroundings a thousandfold.  Then came bitterness, and heart-break, and tears.</p>
-<h2>CHAPTER III. Tom’s meeting with the Prince.</h2>
+<h2 class="chapter" id="c2">Chapter III. Tom’s meeting with the Prince.</h2>
 <p>Tom got up hungry, and sauntered hungry away, but with his thoughts busy with the shadowy splendours of his night’s dreams. He wandered here and there in the city, hardly noticing where he was going, or what was happening around him.  People jostled him, and some gave him rough speech; but it was all lost on the musing boy.  By-and-by he found himself at Temple Bar, the farthest from home he had ever travelled in that direction.  He stopped and considered a moment, then fell into his imaginings again, and passed on outside the walls of London.  The Strand had ceased to be a country-road then, and regarded itself as a street, but by a strained construction; for, though there was a tolerably compact row of houses on one side of it, there were only some scattered great buildings on the other, these being palaces of rich nobles, with ample and beautiful grounds stretching to the river--grounds that are now closely packed with grim acres of brick and stone.</p>
 <p>Tom discovered Charing Village presently, and rested himself at the beautiful cross built there by a bereaved king of earlier days; then idled down a quiet, lovely road, past the great cardinal’s stately palace, toward a far more mighty and majestic palace beyond--Westminster. Tom stared in glad wonder at the vast pile of masonry, the wide-spreading wings, the frowning bastions and turrets, the huge stone gateway, with its gilded bars and its magnificent array of colossal granite lions, and other the signs and symbols of English royalty.  Was the desire of his soul to be satisfied at last?  Here, indeed, was a king’s palace.  Might he not hope to see a prince now--a prince of flesh and blood, if Heaven were willing?</p>
 <p>At each side of the gilded gate stood a living statue--that is to say, an erect and stately and motionless man-at-arms, clad from head to heel in shining steel armour.  At a respectful distance were many country folk, and people from the city, waiting for any chance glimpse of royalty that might offer.  Splendid carriages, with splendid people in them and splendid servants outside, were arriving and departing by several other noble gateways that pierced the royal enclosure.</p>
@@ -306,7 +162,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“I salute your gracious Highness.”  Then angrily--“Be off, thou crazy rubbish!”</p>
 <p>Here the jeering crowd closed round the poor little prince, and hustled him far down the road, hooting him, and shouting--</p>
 <p>“Way for his Royal Highness!  Way for the Prince of Wales!”</p>
-<h2>CHAPTER IV. The Prince’s troubles begin.</h2>
+<h2 class="chapter" id="c3">Chapter IV. The Prince’s troubles begin.</h2>
 <p>After hours of persistent pursuit and persecution, the little prince was at last deserted by the rabble and left to himself.  As long as he had been able to rage against the mob, and threaten it royally, and royally utter commands that were good stuff to laugh at, he was very entertaining; but when weariness finally forced him to be silent, he was no longer of use to his tormentors, and they sought amusement elsewhere. He looked about him, now, but could not recognise the locality.  He was within the city of London--that was all he knew.  He moved on, aimlessly, and in a little while the houses thinned, and the passers-by were infrequent.  He bathed his bleeding feet in the brook which flowed then where Farringdon Street now is; rested a few moments, then passed on, and presently came upon a great space with only a few scattered houses in it, and a prodigious church.  He recognised this church. Scaffoldings were about, everywhere, and swarms of workmen; for it was undergoing elaborate repairs.  The prince took heart at once--he felt that his troubles were at an end, now.  He said to himself, “It is the ancient Grey Friars’ Church, which the king my father hath taken from the monks and given for a home for ever for poor and forsaken children, and new-named it Christ’s Church.  Right gladly will they serve the son of him who hath done so generously by them--and the more that that son is himself as poor and as forlorn as any that be sheltered here this day, or ever shall be.”</p>
 <p>He was soon in the midst of a crowd of boys who were running, jumping, playing at ball and leap-frog, and otherwise disporting themselves, and right noisily, too.  They were all dressed alike, and in the fashion which in that day prevailed among serving-men and ‘prentices{1}--that is to say, each had on the crown of his head a flat black cap about the size of a saucer, which was not useful as a covering, it being of such scanty dimensions, neither was it ornamental; from beneath it the hair fell, unparted, to the middle of the forehead, and was cropped straight around; a clerical band at the neck; a blue gown that fitted closely and hung as low as the knees or lower; full sleeves; a broad red belt; bright yellow stockings, gartered above the knees; low shoes with large metal buckles. It was a sufficiently ugly costume.</p>
 <p>The boys stopped their play and flocked about the prince, who said with native dignity--</p>
@@ -335,7 +191,7 @@ h2 + p, .first { text-indent: 0; }
 <p>The man stared down, stupefied, upon the lad, then shook his head and muttered--</p>
 <p>“Gone stark mad as any Tom o’ Bedlam!”--then collared him once more, and said with a coarse laugh and an oath, “But mad or no mad, I and thy Gammer Canty will soon find where the soft places in thy bones lie, or I’m no true man!”</p>
 <p>With this he dragged the frantic and struggling prince away, and disappeared up a front court followed by a delighted and noisy swarm of human vermin.</p>
-<h2>CHAPTER V. Tom as a Patrician.</h2>
+<h2 class="chapter" id="c4">Chapter V. Tom as a Patrician.</h2>
 <p>Tom Canty, left alone in the prince’s cabinet, made good use of his opportunity.  He turned himself this way and that before the great mirror, admiring his finery; then walked away, imitating the prince’s high-bred carriage, and still observing results in the glass.  Next he drew the beautiful sword, and bowed, kissing the blade, and laying it across his breast, as he had seen a noble knight do, by way of salute to the lieutenant of the Tower, five or six weeks before, when delivering the great lords of Norfolk and Surrey into his hands for captivity.  Tom played with the jewelled dagger that hung upon his thigh; he examined the costly and exquisite ornaments of the room; he tried each of the sumptuous chairs, and thought how proud he would be if the Offal Court herd could only peep in and see him in his grandeur.  He wondered if they would believe the marvellous tale he should tell when he got home, or if they would shake their heads, and say his overtaxed imagination had at last upset his reason.</p>
 <p>At the end of half an hour it suddenly occurred to him that the prince was gone a long time; then right away he began to feel lonely; very soon he fell to listening and longing, and ceased to toy with the pretty things about him; he grew uneasy, then restless, then distressed. Suppose some one should come, and catch him in the prince’s clothes, and the prince not there to explain.  Might they not hang him at once, and inquire into his case afterward?  He had heard that the great were prompt about small matters.  His fear rose higher and higher; and trembling he softly opened the door to the antechamber, resolved to fly and seek the prince, and, through him, protection and release.  Six gorgeous gentlemen-servants and two young pages of high degree, clothed like butterflies, sprang to their feet and bowed low before him.  He stepped quickly back and shut the door.  He said--</p>
 <p>“Oh, they mock at me!  They will go and tell.  Oh! why came I here to cast away my life?”</p>
@@ -350,7 +206,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Then she fled away in fright; and Tom, smitten with despair, sank down, murmuring--</p>
 <p>“There is no help, there is no hope.  Now will they come and take me.”</p>
 <p>Whilst he lay there benumbed with terror, dreadful tidings were speeding through the palace.  The whisper--for it was whispered always--flew from menial to menial, from lord to lady, down all the long corridors, from story to story, from saloon to saloon, “The prince hath gone mad, the prince hath gone mad!”  Soon every saloon, every marble hall, had its groups of glittering lords and ladies, and other groups of dazzling lesser folk, talking earnestly together in whispers, and every face had in it dismay. Presently a splendid official came marching by these groups, making solemn proclamation--</p>
-<h2>“IN THE NAME OF THE KING!</h2>
+<p>“IN THE NAME OF THE KING!</p>
 <p>Let none list to this false and foolish matter, upon pain of death, nor discuss the same, nor carry it abroad.  In the name of the King!”</p>
 <p>The whisperings ceased as suddenly as if the whisperers had been stricken dumb.</p>
 <p>Soon there was a general buzz along the corridors, of “The prince! See, the prince comes!”</p>
@@ -400,7 +256,7 @@ h2 + p, .first { text-indent: 0; }
 <p>His spirits sank lower and lower as he moved between the glittering files of bowing courtiers; for he recognised that he was indeed a captive now, and might remain for ever shut up in this gilded cage, a forlorn and friendless prince, except God in his mercy take pity on him and set him free.</p>
 <p>And, turn where he would, he seemed to see floating in the air the severed head and the remembered face of the great Duke of Norfolk, the eyes fixed on him reproachfully.</p>
 <p>His old dreams had been so pleasant; but this reality was so dreary!</p>
-<h2>CHAPTER VI. Tom receives instructions.</h2>
+<h2 class="chapter" id="c5">Chapter VI. Tom receives instructions.</h2>
 <p>Tom was conducted to the principal apartment of a noble suite, and made to sit down--a thing which he was loth to do, since there were elderly men and men of high degree about him.  He begged them to be seated also, but they only bowed their thanks or murmured them, and remained standing. He would have insisted, but his ‘uncle’ the Earl of Hertford whispered in his ear--</p>
 <p>“Prithee, insist not, my lord; it is not meet that they sit in thy presence.”</p>
 <p>The Lord St. John was announced, and after making obeisance to Tom, he said--</p>
@@ -458,7 +314,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“Tush, he must be the prince!  Will any be in all the land maintain there can be two, not of one blood and birth, so marvellously twinned? And even were it so, ’twere yet a stranger miracle that chance should cast the one into the other’s place. Nay, ’tis folly, folly, folly!”</p>
 <p>Presently he said--</p>
 <p>“Now were he impostor and called himself prince, look you that would be natural; that would be reasonable.  But lived ever an impostor yet, who, being called prince by the king, prince by the court, prince by all, denied his dignity and pleaded against his exaltation?  No!  By the soul of St. Swithin, no!  This is the true prince, gone mad!”</p>
-<h2>CHAPTER VII. Tom’s first royal dinner.</h2>
+<h2 class="chapter" id="c6">Chapter VII. Tom’s first royal dinner.</h2>
 <p>Somewhat after one in the afternoon, Tom resignedly underwent the ordeal of being dressed for dinner.  He found himself as finely clothed as before, but everything different, everything changed, from his ruff to his stockings.  He was presently conducted with much state to a spacious and ornate apartment, where a table was already set for one.  Its furniture was all of massy gold, and beautified with designs which well-nigh made it priceless, since they were the work of Benvenuto.  The room was half-filled with noble servitors.  A chaplain said grace, and Tom was about to fall to, for hunger had long been constitutional with him, but was interrupted by my lord the Earl of Berkeley, who fastened a napkin about his neck; for the great post of Diaperers to the Prince of Wales was hereditary in this nobleman’s family.  Tom’s cupbearer was present, and forestalled all his attempts to help himself to wine.  The Taster to his highness the Prince of Wales was there also, prepared to taste any suspicious dish upon requirement, and run the risk of being poisoned.  He was only an ornamental appendage at this time, and was seldom called upon to exercise his function; but there had been times, not many generations past, when the office of taster had its perils, and was not a grandeur to be desired.  Why they did not use a dog or a plumber seems strange; but all the ways of royalty are strange.  My Lord d’Arcy, First Groom of the Chamber, was there, to do goodness knows what; but there he was--let that suffice.  The Lord Chief Butler was there, and stood behind Tom’s chair, overseeing the solemnities, under command of the Lord Great Steward and the Lord Head Cook, who stood near.  Tom had three hundred and eighty-four servants beside these; but they were not all in that room, of course, nor the quarter of them; neither was Tom aware yet that they existed.</p>
 <p>All those that were present had been well drilled within the hour to remember that the prince was temporarily out of his head, and to be careful to show no surprise at his vagaries.  These ‘vagaries’ were soon on exhibition before them; but they only moved their compassion and their sorrow, not their mirth.  It was a heavy affliction to them to see the beloved prince so stricken.</p>
 <p>Poor Tom ate with his fingers mainly; but no one smiled at it, or even seemed to observe it.  He inspected his napkin curiously, and with deep interest, for it was of a very dainty and beautiful fabric, then said with simplicity--</p>
@@ -472,7 +328,7 @@ h2 + p, .first { text-indent: 0; }
 <p>This new eccentricity of the prince’s ruined mind made all the hearts about him ache; but the sad sight moved none to merriment.</p>
 <p>Tom’s next unconscious blunder was to get up and leave the table just when the chaplain had taken his stand behind his chair, and with uplifted hands, and closed, uplifted eyes, was in the act of beginning the blessing.  Still nobody seemed to perceive that the prince had done a thing unusual.</p>
 <p>By his own request our small friend was now conducted to his private cabinet, and left there alone to his own devices.  Hanging upon hooks in the oaken wainscoting were the several pieces of a suit of shining steel armour, covered all over with beautiful designs exquisitely inlaid in gold.  This martial panoply belonged to the true prince--a recent present from Madam Parr the Queen. Tom put on the greaves, the gauntlets, the plumed helmet, and such other pieces as he could don without assistance, and for a while was minded to call for help and complete the matter, but bethought him of the nuts he had brought away from dinner, and the joy it would be to eat them with no crowd to eye him, and no Grand Hereditaries to pester him with undesired services; so he restored the pretty things to their several places, and soon was cracking nuts, and feeling almost naturally happy for the first time since God for his sins had made him a prince.  When the nuts were all gone, he stumbled upon some inviting books in a closet, among them one about the etiquette of the English court.  This was a prize. He lay down upon a sumptuous divan, and proceeded to instruct himself with honest zeal.  Let us leave him there for the present.</p>
-<h2>CHAPTER VIII. The Question of the Seal.</h2>
+<h2 class="chapter" id="c7">Chapter VIII. The Question of the Seal.</h2>
 <p>About five o’clock Henry VIII. awoke out of an unrefreshing nap, and muttered to himself, “Troublous dreams, troublous dreams! Mine end is now at hand:  so say these warnings, and my failing pulses do confirm it.” Presently a wicked light flamed up in his eye, and he muttered, “Yet will not I die till He go before.”</p>
 <p>His attendants perceiving that he was awake, one of them asked his pleasure concerning the Lord Chancellor, who was waiting without.</p>
 <p>“Admit him, admit him!” exclaimed the King eagerly.</p>
@@ -499,14 +355,14 @@ h2 + p, .first { text-indent: 0; }
 <p>“Good your Majesty, I cry you mercy!  I but waited for the Seal.”</p>
 <p>“Man, hast lost thy wits?  The small Seal which aforetime I was wont to take with me abroad lieth in my treasury.  And, since the Great Seal hath flown away, shall not it suffice?  Hast lost thy wits?  Begone! And hark ye--come no more till thou do bring his head.”</p>
 <p>The poor Chancellor was not long in removing himself from this dangerous vicinity; nor did the commission waste time in giving the royal assent to the work of the slavish Parliament, and appointing the morrow for the beheading of the premier peer of England, the luckless Duke of Norfolk.</p>
-<h2>CHAPTER IX. The river pageant.</h2>
+<h2 class="chapter" id="c8">Chapter IX. The river pageant.</h2>
 <p>At nine in the evening the whole vast river-front of the palace was blazing with light.  The river itself, as far as the eye could reach citywards, was so thickly covered with watermen’s boats and with pleasure-barges, all fringed with coloured lanterns, and gently agitated by the waves, that it resembled a glowing and limitless garden of flowers stirred to soft motion by summer winds.  The grand terrace of stone steps leading down to the water, spacious enough to mass the army of a German principality upon, was a picture to see, with its ranks of royal halberdiers in polished armour, and its troops of brilliantly costumed servitors flitting up and down, and to and fro, in the hurry of preparation.</p>
 <p>Presently a command was given, and immediately all living creatures vanished from the steps.  Now the air was heavy with the hush of suspense and expectancy.  As far as one’s vision could carry, he might see the myriads of people in the boats rise up, and shade their eyes from the glare of lanterns and torches, and gaze toward the palace.</p>
 <p>A file of forty or fifty state barges drew up to the steps.  They were richly gilt, and their lofty prows and sterns were elaborately carved. Some of them were decorated with banners and streamers; some with cloth-of-gold and arras embroidered with coats-of-arms; others with silken flags that had numberless little silver bells fastened to them, which shook out tiny showers of joyous music whenever the breezes fluttered them; others of yet higher pretensions, since they belonged to nobles in the prince’s immediate service, had their sides picturesquely fenced with shields gorgeously emblazoned with armorial bearings.  Each state barge was towed by a tender.  Besides the rowers, these tenders carried each a number of men-at-arms in glossy helmet and breastplate, and a company of musicians.</p>
 <p>The advance-guard of the expected procession now appeared in the great gateway, a troop of halberdiers.  ‘They were dressed in striped hose of black and tawny, velvet caps graced at the sides with silver roses, and doublets of murrey and blue cloth, embroidered on the front and back with the three feathers, the prince’s blazon, woven in gold.  Their halberd staves were covered with crimson velvet, fastened with gilt nails, and ornamented with gold tassels.  Filing off on the right and left, they formed two long lines, extending from the gateway of the palace to the water’s edge.  A thick rayed cloth or carpet was then unfolded, and laid down between them by attendants in the gold-and-crimson liveries of the prince.  This done, a flourish of trumpets resounded from within.  A lively prelude arose from the musicians on the water; and two ushers with white wands marched with a slow and stately pace from the portal.  They were followed by an officer bearing the civic mace, after whom came another carrying the city’s sword; then several sergeants of the city guard, in their full accoutrements, and with badges on their sleeves; then the Garter King-at-arms, in his tabard; then several Knights of the Bath, each with a white lace on his sleeve; then their esquires; then the judges, in their robes of scarlet and coifs; then the Lord High Chancellor of England, in a robe of scarlet, open before, and purfled with minever; then a deputation of aldermen, in their scarlet cloaks; and then the heads of the different civic companies, in their robes of state. Now came twelve French gentlemen, in splendid habiliments, consisting of pourpoints of white damask barred with gold, short mantles of crimson velvet lined with violet taffeta, and carnation coloured hauts-de-chausses, and took their way down the steps.  They were of the suite of the French ambassador, and were followed by twelve cavaliers of the suite of the Spanish ambassador, clothed in black velvet, unrelieved by any ornament.  Following these came several great English nobles with their attendants.’</p>
 <p>There was a flourish of trumpets within; and the Prince’s uncle, the future great Duke of Somerset, emerged from the gateway, arrayed in a ‘doublet of black cloth-of-gold, and a cloak of crimson satin flowered with gold, and ribanded with nets of silver.’  He turned, doffed his plumed cap, bent his body in a low reverence, and began to step backward, bowing at each step.  A prolonged trumpet-blast followed, and a proclamation, “Way for the high and mighty the Lord Edward, Prince of Wales!”  High aloft on the palace walls a long line of red tongues of flame leapt forth with a thunder-crash; the massed world on the river burst into a mighty roar of welcome; and Tom Canty, the cause and hero of it all, stepped into view and slightly bowed his princely head.</p>
 <p>He was ‘magnificently habited in a doublet of white satin, with a front-piece of purple cloth-of-tissue, powdered with diamonds, and edged with ermine.  Over this he wore a mantle of white cloth-of-gold, pounced with the triple-feathered crest, lined with blue satin, set with pearls and precious stones, and fastened with a clasp of brilliants.  About his neck hung the order of the Garter, and several princely foreign orders;’ and wherever light fell upon him jewels responded with a blinding flash. O Tom Canty, born in a hovel, bred in the gutters of London, familiar with rags and dirt and misery, what a spectacle is this!</p>
-<h2>CHAPTER X. The Prince in the toils.</h2>
+<h2 class="chapter" id="c9">Chapter X. The Prince in the toils.</h2>
 <p>We left John Canty dragging the rightful prince into Offal Court, with a noisy and delighted mob at his heels.  There was but one person in it who offered a pleading word for the captive, and he was not heeded; he was hardly even heard, so great was the turmoil.  The Prince continued to struggle for freedom, and to rage against the treatment he was suffering, until John Canty lost what little patience was left in him, and raised his oaken cudgel in a sudden fury over the Prince’s head. The single pleader for the lad sprang to stop the man’s arm, and the blow descended upon his own wrist.  Canty roared out--</p>
 <p>“Thou’lt meddle, wilt thou?  Then have thy reward.”</p>
 <p>His cudgel crashed down upon the meddler’s head:  there was a groan, a dim form sank to the ground among the feet of the crowd, and the next moment it lay there in the dark alone.  The mob pressed on, their enjoyment nothing disturbed by this episode.</p>
@@ -573,7 +429,7 @@ h2 + p, .first { text-indent: 0; }
 <p>So a huge loving-cup was brought; the waterman, grasping it by one of its handles, and with the other hand bearing up the end of an imaginary napkin, presented it in due and ancient form to Canty, who had to grasp the opposite handle with one of his hands and take off the lid with the other, according to ancient custom. This left the Prince hand-free for a second, of course.  He wasted no time, but dived among the forest of legs about him and disappeared.  In another moment he could not have been harder to find, under that tossing sea of life, if its billows had been the Atlantic’s and he a lost sixpence.</p>
 <p>He very soon realised this fact, and straightway busied himself about his own affairs without further thought of John Canty.  He quickly realised another thing, too.  To wit, that a spurious Prince of Wales was being feasted by the city in his stead.  He easily concluded that the pauper lad, Tom Canty, had deliberately taken advantage of his stupendous opportunity and become a usurper.</p>
 <p>Therefore there was but one course to pursue--find his way to the Guildhall, make himself known, and denounce the impostor.  He also made up his mind that Tom should be allowed a reasonable time for spiritual preparation, and then be hanged, drawn and quartered, according to the law and usage of the day in cases of high treason.</p>
-<h2>CHAPTER XI. At Guildhall.</h2>
+<h2 class="chapter" id="c10">Chapter XI. At Guildhall.</h2>
 <p>The royal barge, attended by its gorgeous fleet, took its stately way down the Thames through the wilderness of illuminated boats. The air was laden with music; the river banks were beruffled with joy-flames; the distant city lay in a soft luminous glow from its countless invisible bonfires; above it rose many a slender spire into the sky, incrusted with sparkling lights, wherefore in their remoteness they seemed like jewelled lances thrust aloft; as the fleet swept along, it was greeted from the banks with a continuous hoarse roar of cheers and the ceaseless flash and boom of artillery.</p>
 <p>To Tom Canty, half buried in his silken cushions, these sounds and this spectacle were a wonder unspeakably sublime and astonishing. To his little friends at his side, the Princess Elizabeth and the Lady Jane Grey, they were nothing.</p>
 <p>Arrived at the Dowgate, the fleet was towed up the limpid Walbrook (whose channel has now been for two centuries buried out of sight under acres of buildings) to Bucklersbury, past houses and under bridges populous with merry-makers and brilliantly lighted, and at last came to a halt in a basin where now is Barge Yard, in the centre of the ancient city of London.  Tom disembarked, and he and his gallant procession crossed Cheapside and made a short march through the Old Jewry and Basinghall Street to the Guildhall.</p>
@@ -600,7 +456,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“Then shall the king’s law be law of mercy, from this day, and never more be law of blood!  Up from thy knees and away!  To the Tower, and say the King decrees the Duke of Norfolk shall not die!”</p>
 <p>The words were caught up and carried eagerly from lip to lip far and wide over the hall, and as Hertford hurried from the presence, another prodigious shout burst forth--</p>
 <p>“The reign of blood is ended!  Long live Edward, King of England!”</p>
-<h2>CHAPTER XII. The Prince and his Deliverer.</h2>
+<h2 class="chapter" id="c11">Chapter XII. The Prince and his Deliverer.</h2>
 <p>As soon as Miles Hendon and the little prince were clear of the mob, they struck down through back lanes and alleys toward the river.  Their way was unobstructed until they approached London Bridge; then they ploughed into the multitude again, Hendon keeping a fast grip upon the Prince’s--no, the King’s--wrist.  The tremendous news was already abroad, and the boy learned it from a thousand voices at once--“The King is dead!”  The tidings struck a chill to the heart of the poor little waif, and sent a shudder through his frame.  He realised the greatness of his loss, and was filled with a bitter grief; for the grim tyrant who had been such a terror to others had always been gentle with him.  The tears sprang to his eyes and blurred all objects.  For an instant he felt himself the most forlorn, outcast, and forsaken of God’s creatures--then another cry shook the night with its far-reaching thunders:  “Long live King Edward the Sixth!” and this made his eyes kindle, and thrilled him with pride to his fingers’ ends. “Ah,” he thought, “how grand and strange it seems--I am King!”</p>
 <p>Our friends threaded their way slowly through the throngs upon the bridge.  This structure, which had stood for six hundred years, and had been a noisy and populous thoroughfare all that time, was a curious affair, for a closely packed rank of stores and shops, with family quarters overhead, stretched along both sides of it, from one bank of the river to the other.  The Bridge was a sort of town to itself; it had its inn, its beer-houses, its bakeries, its haberdasheries, its food markets, its manufacturing industries, and even its church.  It looked upon the two neighbours which it linked together--London and Southwark--as being well enough as suburbs, but not otherwise particularly important.  It was a close corporation, so to speak; it was a narrow town, of a single street a fifth of a mile long, its population was but a village population and everybody in it knew all his fellow-townsmen intimately, and had known their fathers and mothers before them--and all their little family affairs into the bargain.  It had its aristocracy, of course--its fine old families of butchers, and bakers, and what-not, who had occupied the same old premises for five or six hundred years, and knew the great history of the Bridge from beginning to end, and all its strange legends; and who always talked bridgy talk, and thought bridgy thoughts, and lied in a long, level, direct, substantial bridgy way.  It was just the sort of population to be narrow and ignorant and self-conceited. Children were born on the Bridge, were reared there, grew to old age, and finally died without ever having set a foot upon any part of the world but London Bridge alone.  Such people would naturally imagine that the mighty and interminable procession which moved through its street night and day, with its confused roar of shouts and cries, its neighings and bellowing and bleatings and its muffled thunder-tramp, was the one great thing in this world, and themselves somehow the proprietors of it.  And so they were, in effect--at least they could exhibit it from their windows, and did--for a consideration--whenever a returning king or hero gave it a fleeting splendour, for there was no place like it for affording a long, straight, uninterrupted view of marching columns.</p>
 <p>Men born and reared upon the Bridge found life unendurably dull and inane elsewhere.  History tells of one of these who left the Bridge at the age of seventy-one and retired to the country.  But he could only fret and toss in his bed; he could not go to sleep, the deep stillness was so painful, so awful, so oppressive.  When he was worn out with it, at last, he fled back to his old home, a lean and haggard spectre, and fell peacefully to rest and pleasant dreams under the lulling music of the lashing waters and the boom and crash and thunder of London Bridge.</p>
@@ -657,7 +513,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“My poor service went not beyond the limit of a subject’s simple duty, and therefore hath no merit; but since your Majesty is pleased to hold it worthy some reward, I take heart of grace to make petition to this effect.  Near four hundred years ago, as your grace knoweth, there being ill blood betwixt John, King of England, and the King of France, it was decreed that two champions should fight together in the lists, and so settle the dispute by what is called the arbitrament of God.  These two kings, and the Spanish king, being assembled to witness and judge the conflict, the French champion appeared; but so redoubtable was he, that our English knights refused to measure weapons with him.  So the matter, which was a weighty one, was like to go against the English monarch by default.  Now in the Tower lay the Lord de Courcy, the mightiest arm in England, stripped of his honours and possessions, and wasting with long captivity.  Appeal was made to him; he gave assent, and came forth arrayed for battle; but no sooner did the Frenchman glimpse his huge frame and hear his famous name but he fled away, and the French king’s cause was lost.  King John restored De Courcy’s titles and possessions, and said, ‘Name thy wish and thou shalt have it, though it cost me half my kingdom;’ whereat De Courcy, kneeling, as I do now, made answer, ‘This, then, I ask, my liege; that I and my successors may have and hold the privilege of remaining covered in the presence of the kings of England, henceforth while the throne shall last.’ The boon was granted, as your Majesty knoweth; and there hath been no time, these four hundred years, that that line has failed of an heir; and so, even unto this day, the head of that ancient house still weareth his hat or helm before the King’s Majesty, without let or hindrance, and this none other may do. {3} Invoking this precedent in aid of my prayer, I beseech the King to grant to me but this one grace and privilege--to my more than sufficient reward--and none other, to wit:  that I and my heirs, for ever, may sit in the presence of the Majesty of England!”</p>
 <p>“Rise, Sir Miles Hendon, Knight,” said the King, gravely--giving the accolade with Hendon’s sword--“rise, and seat thyself.  Thy petition is granted.  Whilst England remains, and the crown continues, the privilege shall not lapse.”</p>
 <p>His Majesty walked apart, musing, and Hendon dropped into a chair at table, observing to himself, “‘Twas a brave thought, and hath wrought me a mighty deliverance; my legs are grievously wearied. An I had not thought of that, I must have had to stand for weeks, till my poor lad’s wits are cured.”  After a little, he went on, “And so I am become a knight of the Kingdom of Dreams and Shadows! A most odd and strange position, truly, for one so matter-of-fact as I.  I will not laugh--no, God forbid, for this thing which is so substanceless to me is real to him.  And to me, also, in one way, it is not a falsity, for it reflects with truth the sweet and generous spirit that is in him.”  After a pause: “Ah, what if he should call me by my fine title before folk!--there’d be a merry contrast betwixt my glory and my raiment!  But no matter, let him call me what he will, so it please him; I shall be content.”</p>
-<h2>CHAPTER XIII. The disappearance of the Prince.</h2>
+<h2 class="chapter" id="c12">Chapter XIII. The disappearance of the Prince.</h2>
 <p>A heavy drowsiness presently fell upon the two comrades.  The King said--</p>
 <p>“Remove these rags.”--meaning his clothing.</p>
 <p>Hendon disapparelled the boy without dissent or remark, tucked him up in bed, then glanced about the room, saying to himself, ruefully, “He hath taken my bed again, as before--marry, what shall I do?”  The little King observed his perplexity, and dissipated it with a word.  He said, sleepily--</p>
@@ -698,7 +554,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“Out of my sight, idiot!  Thy prating drives me mad!  Hold! Whither art flying?  Canst not bide still an instant?  Went they toward Southwark?”</p>
 <p>“Even so, your worship--for, as I said before, as to that detestable joint, the babe unborn is no whit more blameless than--”</p>
 <p>“Art here yet!  And prating still!  Vanish, lest I throttle thee!” The servitor vanished.  Hendon followed after him, passed him, and plunged down the stairs two steps at a stride, muttering, “‘Tis that scurvy villain that claimed he was his son.  I have lost thee, my poor little mad master--it is a bitter thought--and I had come to love thee so!  No! by book and bell, not lost!  Not lost, for I will ransack the land till I find thee again.  Poor child, yonder is his breakfast--and mine, but I have no hunger now; so, let the rats have it--speed, speed! that is the word!”  As he wormed his swift way through the noisy multitudes upon the Bridge he several times said to himself--clinging to the thought as if it were a particularly pleasing one--“He grumbled, but he went--he went, yes, because he thought Miles Hendon asked it, sweet lad--he would ne’er have done it for another, I know it well.”</p>
-<h2>CHAPTER XIV. ‘Le Roi est mort--vive le Roi.’</h2>
+<h2 class="chapter" id="c13">Chapter XIV. ‘Le Roi est mort--vive le Roi.’</h2>
 <p>Toward daylight of the same morning, Tom Canty stirred out of a heavy sleep and opened his eyes in the dark.  He lay silent a few moments, trying to analyse his confused thoughts and impressions, and get some sort of meaning out of them; then suddenly he burst out in a rapturous but guarded voice--</p>
 <p>“I see it all, I see it all!  Now God be thanked, I am indeed awake at last!  Come, joy! vanish, sorrow!  Ho, Nan! Bet! kick off your straw and hie ye hither to my side, till I do pour into your unbelieving ears the wildest madcap dream that ever the spirits of night did conjure up to astonish the soul of man withal! . . . Ho, Nan, I say!  Bet!”</p>
 <p>A dim form appeared at his side, and a voice said--</p>
@@ -777,7 +633,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Tom was at sea--a Great Seal was something which he was totally unacquainted with.  After a moment’s hesitation he looked up innocently and asked--</p>
 <p>“What was it like, my lord?”</p>
 <p>The Earl started, almost imperceptibly, muttering to himself, “Alack, his wits are flown again!--it was ill wisdom to lead him on to strain them”--then he deftly turned the talk to other matters, with the purpose of sweeping the unlucky seal out of Tom’s thoughts--a purpose which easily succeeded.</p>
-<h2>CHAPTER XV. Tom as King.</h2>
+<h2 class="chapter" id="c14">Chapter XV. Tom as King.</h2>
 <p>The next day the foreign ambassadors came, with their gorgeous trains; and Tom, throned in awful state, received them.  The splendours of the scene delighted his eye and fired his imagination at first, but the audience was long and dreary, and so were most of the addresses--wherefore, what began as a pleasure grew into weariness and home-sickness by-and-by.  Tom said the words which Hertford put into his mouth from time to time, and tried hard to acquit himself satisfactorily, but he was too new to such things, and too ill at ease to accomplish more than a tolerable success.  He looked sufficiently like a king, but he was ill able to feel like one.  He was cordially glad when the ceremony was ended.</p>
 <p>The larger part of his day was ‘wasted’--as he termed it, in his own mind--in labours pertaining to his royal office.  Even the two hours devoted to certain princely pastimes and recreations were rather a burden to him than otherwise, they were so fettered by restrictions and ceremonious observances.  However, he had a private hour with his whipping-boy which he counted clear gain, since he got both entertainment and needful information out of it.</p>
 <p>The third day of Tom Canty’s kingship came and went much as the others had done, but there was a lifting of his cloud in one way--he felt less uncomfortable than at first; he was getting a little used to his circumstances and surroundings; his chains still galled, but not all the time; he found that the presence and homage of the great afflicted and embarrassed him less and less sharply with every hour that drifted over his head.</p>
@@ -885,7 +741,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“I think the woman hath said true.  An’ my mother were in her place and gifted with the devil’s functions, she had not stayed a moment to call her storms and lay the whole land in ruins, if the saving of my forfeit life were the price she got!  It is argument that other mothers are made in like mould.  Thou art free, goodwife--thou and thy child--for I do think thee innocent.  Now thou’st nought to fear, being pardoned--pull off thy stockings!--an’ thou canst make me a storm, thou shalt be rich!”</p>
 <p>The redeemed creature was loud in her gratitude, and proceeded to obey, whilst Tom looked on with eager expectancy, a little marred by apprehension; the courtiers at the same time manifesting decided discomfort and uneasiness.  The woman stripped her own feet and her little girl’s also, and plainly did her best to reward the King’s generosity with an earthquake, but it was all a failure and a disappointment.  Tom sighed, and said--</p>
 <p>“There, good soul, trouble thyself no further, thy power is departed out of thee.  Go thy way in peace; and if it return to thee at any time, forget me not, but fetch me a storm.” {13}</p>
-<h2>CHAPTER XVI. The State Dinner.</h2>
+<h2 class="chapter" id="c15">Chapter XVI. The State Dinner.</h2>
 <p>The dinner hour drew near--yet strangely enough, the thought brought but slight discomfort to Tom, and hardly any terror.  The morning’s experiences had wonderfully built up his confidence; the poor little ash-cat was already more wonted to his strange garret, after four days’ habit, than a mature person could have become in a full month.  A child’s facility in accommodating itself to circumstances was never more strikingly illustrated.</p>
 <p>Let us privileged ones hurry to the great banqueting-room and have a glance at matters there whilst Tom is being made ready for the imposing occasion.  It is a spacious apartment, with gilded pillars and pilasters, and pictured walls and ceilings.  At the door stand tall guards, as rigid as statues, dressed in rich and picturesque costumes, and bearing halberds.  In a high gallery which runs all around the place is a band of musicians and a packed company of citizens of both sexes, in brilliant attire.  In the centre of the room, upon a raised platform, is Tom’s table. Now let the ancient chronicler speak:</p>
 <p>“A gentleman enters the room bearing a rod, and along with him another bearing a tablecloth, which, after they have both kneeled three times with the utmost veneration, he spreads upon the table, and after kneeling again they both retire; then come two others, one with the rod again, the other with a salt-cellar, a plate, and bread; when they have kneeled as the others had done, and placed what was brought upon the table, they too retire with the same ceremonies performed by the first; at last come two nobles, richly clothed, one bearing a tasting-knife, who, after prostrating themselves three times in the most graceful manner, approach and rub the table with bread and salt, with as much awe as if the King had been present.” {6}</p>
@@ -897,7 +753,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“The Yeomen of the Guard entered, bareheaded, clothed in scarlet, with golden roses upon their backs; and these went and came, bringing in each turn a course of dishes, served in plate.  These dishes were received by a gentleman in the same order they were brought, and placed upon the table, while the taster gave to each guard a mouthful to eat of the particular dish he had brought, for fear of any poison.”</p>
 <p>Tom made a good dinner, notwithstanding he was conscious that hundreds of eyes followed each morsel to his mouth and watched him eat it with an interest which could not have been more intense if it had been a deadly explosive and was expected to blow him up and scatter him all about the place.  He was careful not to hurry, and equally careful not to do anything whatever for himself, but wait till the proper official knelt down and did it for him.  He got through without a mistake--flawless and precious triumph.</p>
 <p>When the meal was over at last and he marched away in the midst of his bright pageant, with the happy noises in his ears of blaring bugles, rolling drums, and thundering acclamations, he felt that if he had seen the worst of dining in public it was an ordeal which he would be glad to endure several times a day if by that means he could but buy himself free from some of the more formidable requirements of his royal office.</p>
-<h2>CHAPTER XVII. Foo-foo the First.</h2>
+<h2 class="chapter" id="c16">Chapter XVII. Foo-foo the First.</h2>
 <p>Miles Hendon hurried along toward the Southwark end of the bridge, keeping a sharp look-out for the persons he sought, and hoping and expecting to overtake them presently.  He was disappointed in this, however.  By asking questions, he was enabled to track them part of the way through Southwark; then all traces ceased, and he was perplexed as to how to proceed.  Still, he continued his efforts as best he could during the rest of the day.  Nightfall found him leg-weary, half-famished, and his desire as far from accomplishment as ever; so he supped at the Tabard Inn and went to bed, resolved to make an early start in the morning, and give the town an exhaustive search.  As he lay thinking and planning, he presently began to reason thus:  The boy would escape from the ruffian, his reputed father, if possible; would he go back to London and seek his former haunts?  No, he would not do that, he would avoid recapture. What, then, would he do?  Never having had a friend in the world, or a protector, until he met Miles Hendon, he would naturally try to find that friend again, provided the effort did not require him to go toward London and danger.  He would strike for Hendon Hall, that is what he would do, for he knew Hendon was homeward bound and there he might expect to find him.  Yes, the case was plain to Hendon--he must lose no more time in Southwark, but move at once through Kent, toward Monk’s Holm, searching the wood and inquiring as he went. Let us return to the vanished little King now.</p>
 <p>The ruffian whom the waiter at the inn on the bridge saw ‘about to join’ the youth and the King did not exactly join them, but fell in close behind them and followed their steps.  He said nothing. His left arm was in a sling, and he wore a large green patch over his left eye; he limped slightly, and used an oaken staff as a support.  The youth led the King a crooked course through Southwark, and by-and-by struck into the high road beyond.  The King was irritated, now, and said he would stop here--it was Hendon’s place to come to him, not his to go to Hendon.  He would not endure such insolence; he would stop where he was.  The youth said--</p>
 <p>“Thou’lt tarry here, and thy friend lying wounded in the wood yonder? So be it, then.”</p>
@@ -950,7 +806,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“I am the King,” said Edward, turning toward him, “as thou shalt know to thy cost, in good time.  Thou hast confessed a murder--thou shalt swing for it.”</p>
 <p>“Thou’lt betray me?--thou?  An’ I get my hands upon thee--”</p>
 <p>“Tut-tut!” said the burley Ruffler, interposing in time to save the King, and emphasising this service by knocking Hobbs down with his fist, “hast respect for neither Kings nor Rufflers?  An’ thou insult my presence so again, I’ll hang thee up myself.”  Then he said to his Majesty, “Thou must make no threats against thy mates, lad; and thou must guard thy tongue from saying evil of them elsewhere.  Be king, if it please thy mad humour, but be not harmful in it.  Sink the title thou hast uttered--‘tis treason; we be bad men in some few trifling ways, but none among us is so base as to be traitor to his King; we be loving and loyal hearts, in that regard.  Note if I speak truth.  Now--all together:  ‘Long live Edward, King of England!’”</p>
-<h2>“LONG LIVE EDWARD, KING OF ENGLAND!”</h2>
+<p>“LONG LIVE EDWARD, KING OF ENGLAND!”</p>
 <p>The response came with such a thundergust from the motley crew that the crazy building vibrated to the sound.  The little King’s face lighted with pleasure for an instant, and he slightly inclined his head, and said with grave simplicity--</p>
 <p>“I thank you, my good people.”</p>
 <p>This unexpected result threw the company into convulsions of merriment. When something like quiet was presently come again, the Ruffler said, firmly, but with an accent of good nature--</p>
@@ -972,7 +828,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“Deign to spit upon us, O Sire, that our children’s children may tell of thy princely condescension, and be proud and happy for ever!”</p>
 <p>But the humorous tinker made the ‘hit’ of the evening and carried off the honours.  Kneeling, he pretended to kiss the King’s foot, and was indignantly spurned; whereupon he went about begging for a rag to paste over the place upon his face which had been touched by the foot, saying it must be preserved from contact with the vulgar air, and that he should make his fortune by going on the highway and exposing it to view at the rate of a hundred shillings a sight.  He made himself so killingly funny that he was the envy and admiration of the whole mangy rabble.</p>
 <p>Tears of shame and indignation stood in the little monarch’s eyes; and the thought in his heart was, “Had I offered them a deep wrong they could not be more cruel--yet have I proffered nought but to do them a kindness--and it is thus they use me for it!”</p>
-<h2>CHAPTER XVIII. The Prince with the Tramps.</h2>
+<h2 class="chapter" id="c17">Chapter XVIII. The Prince with the Tramps.</h2>
 <p>The troop of vagabonds turned out at early dawn, and set forward on their march.  There was a lowering sky overhead, sloppy ground under foot, and a winter chill in the air.  All gaiety was gone from the company; some were sullen and silent, some were irritable and petulant, none were gentle-humoured, all were thirsty.</p>
 <p>The Ruffler put ‘Jack’ in Hugo’s charge, with some brief instructions, and commanded John Canty to keep away from him and let him alone; he also warned Hugo not to be too rough with the lad.</p>
 <p>After a while the weather grew milder, and the clouds lifted somewhat. The troop ceased to shiver, and their spirits began to improve.  They grew more and more cheerful, and finally began to chaff each other and insult passengers along the highway.  This showed that they were awaking to an appreciation of life and its joys once more.  The dread in which their sort was held was apparent in the fact that everybody gave them the road, and took their ribald insolences meekly, without venturing to talk back. They snatched linen from the hedges, occasionally in full view of the owners, who made no protest, but only seemed grateful that they did not take the hedges, too.</p>
@@ -1015,7 +871,7 @@ h2 + p, .first { text-indent: 0; }
 <p>The King was not only delighted to find that the creature was only a calf, but delighted to have the calf’s company; for he had been feeling so lonesome and friendless that the company and comradeship of even this humble animal were welcome.  And he had been so buffeted, so rudely entreated by his own kind, that it was a real comfort to him to feel that he was at last in the society of a fellow-creature that had at least a soft heart and a gentle spirit, whatever loftier attributes might be lacking.  So he resolved to waive rank and make friends with the calf.</p>
 <p>While stroking its sleek warm back--for it lay near him and within easy reach--it occurred to him that this calf might be utilised in more ways than one.  Whereupon he re-arranged his bed, spreading it down close to the calf; then he cuddled himself up to the calf’s back, drew the covers up over himself and his friend, and in a minute or two was as warm and comfortable as he had ever been in the downy couches of the regal palace of Westminster.</p>
 <p>Pleasant thoughts came at once; life took on a cheerfuller seeming.  He was free of the bonds of servitude and crime, free of the companionship of base and brutal outlaws; he was warm; he was sheltered; in a word, he was happy.  The night wind was rising; it swept by in fitful gusts that made the old barn quake and rattle, then its forces died down at intervals, and went moaning and wailing around corners and projections--but it was all music to the King, now that he was snug and comfortable: let it blow and rage, let it batter and bang, let it moan and wail, he minded it not, he only enjoyed it.  He merely snuggled the closer to his friend, in a luxury of warm contentment, and drifted blissfully out of consciousness into a deep and dreamless sleep that was full of serenity and peace.  The distant dogs howled, the melancholy kine complained, and the winds went on raging, whilst furious sheets of rain drove along the roof; but the Majesty of England slept on, undisturbed, and the calf did the same, it being a simple creature, and not easily troubled by storms or embarrassed by sleeping with a king.</p>
-<h2>CHAPTER XIX. The Prince with the peasants.</h2>
+<h2 class="chapter" id="c18">Chapter XIX. The Prince with the peasants.</h2>
 <p>When the King awoke in the early morning, he found that a wet but thoughtful rat had crept into the place during the night and made a cosy bed for itself in his bosom.  Being disturbed now, it scampered away. The boy smiled, and said, “Poor fool, why so fearful?  I am as forlorn as thou.  ‘Twould be a sham in me to hurt the helpless, who am myself so helpless.  Moreover, I owe you thanks for a good omen; for when a king has fallen so low that the very rats do make a bed of him, it surely meaneth that his fortunes be upon the turn, since it is plain he can no lower go.”</p>
 <p>He got up and stepped out of the stall, and just then he heard the sound of children’s voices.  The barn door opened and a couple of little girls came in.  As soon as they saw him their talking and laughing ceased, and they stopped and stood still, gazing at him with strong curiosity; they presently began to whisper together, then they approached nearer, and stopped again to gaze and whisper.  By-and-by they gathered courage and began to discuss him aloud.  One said--</p>
 <p>“He hath a comely face.”</p>
@@ -1048,7 +904,7 @@ h2 + p, .first { text-indent: 0; }
 <p>He made a sufficiently poor job of it; and to his surprise too, for the cleaning of wooden spoons and trenchers had seemed an easy thing to do. It was a tedious and troublesome piece of work, but he finished it at last.  He was becoming impatient to get away on his journey now; however, he was not to lose this thrifty dame’s society so easily.  She furnished him some little odds and ends of employment, which he got through with after a fair fashion and with some credit.  Then she set him and the little girls to paring some winter apples; but he was so awkward at this service that she retired him from it and gave him a butcher knife to grind.</p>
 <p>Afterwards she kept him carding wool until he began to think he had laid the good King Alfred about far enough in the shade for the present in the matter of showy menial heroisms that would read picturesquely in story-books and histories, and so he was half-minded to resign.  And when, just after the noonday dinner, the goodwife gave him a basket of kittens to drown, he did resign.  At least he was just going to resign--for he felt that he must draw the line somewhere, and it seemed to him that to draw it at kitten-drowning was about the right thing--when there was an interruption.  The interruption was John Canty--with a peddler’s pack on his back--and Hugo.</p>
 <p>The King discovered these rascals approaching the front gate before they had had a chance to see him; so he said nothing about drawing the line, but took up his basket of kittens and stepped quietly out the back way, without a word.  He left the creatures in an out-house, and hurried on, into a narrow lane at the rear.</p>
-<h2>CHAPTER XX. The Prince and the hermit.</h2>
+<h2 class="chapter" id="c19">Chapter XX. The Prince and the hermit.</h2>
 <p>The high hedge hid him from the house, now; and so, under the impulse of a deadly fright, he let out all his forces and sped toward a wood in the distance.  He never looked back until he had almost gained the shelter of the forest; then he turned and descried two figures in the distance. That was sufficient; he did not wait to scan them critically, but hurried on, and never abated his pace till he was far within the twilight depths of the wood. Then he stopped; being persuaded that he was now tolerably safe. He listened intently, but the stillness was profound and solemn--awful, even, and depressing to the spirits.  At wide intervals his straining ear did detect sounds, but they were so remote, and hollow, and mysterious, that they seemed not to be real sounds, but only the moaning and complaining ghosts of departed ones.  So the sounds were yet more dreary than the silence which they interrupted.</p>
 <p>It was his purpose, in the beginning, to stay where he was the rest of the day; but a chill soon invaded his perspiring body, and he was at last obliged to resume movement in order to get warm. He struck straight through the forest, hoping to pierce to a road presently, but he was disappointed in this.  He travelled on and on; but the farther he went, the denser the wood became, apparently.  The gloom began to thicken, by-and-by, and the King realised that the night was coming on.  It made him shudder to think of spending it in such an uncanny place; so he tried to hurry faster, but he only made the less speed, for he could not now see well enough to choose his steps judiciously; consequently he kept tripping over roots and tangling himself in vines and briers.</p>
 <p>And how glad he was when at last he caught the glimmer of a light! He approached it warily, stopping often to look about him and listen.  It came from an unglazed window-opening in a shabby little hut.  He heard a voice, now, and felt a disposition to run and hide; but he changed his mind at once, for this voice was praying, evidently.  He glided to the one window of the hut, raised himself on tiptoe, and stole a glance within.  The room was small; its floor was the natural earth, beaten hard by use; in a corner was a bed of rushes and a ragged blanket or two; near it was a pail, a cup, a basin, and two or three pots and pans; there was a short bench and a three-legged stool; on the hearth the remains of a faggot fire were smouldering; before a shrine, which was lighted by a single candle, knelt an aged man, and on an old wooden box at his side lay an open book and a human skull.  The man was of large, bony frame; his hair and whiskers were very long and snowy white; he was clothed in a robe of sheepskins which reached from his neck to his heels.</p>
@@ -1085,7 +941,7 @@ h2 + p, .first { text-indent: 0; }
 <p>The hermit watched and listened, for a time, keeping his position and scarcely breathing; then he slowly lowered his arms, and presently crept away, saying,--</p>
 <p>“It is long past midnight; it is not best that he should cry out, lest by accident someone be passing.”</p>
 <p>He glided about his hovel, gathering a rag here, a thong there, and another one yonder; then he returned, and by careful and gentle handling he managed to tie the King’s ankles together without waking him.  Next he essayed to tie the wrists; he made several attempts to cross them, but the boy always drew one hand or the other away, just as the cord was ready to be applied; but at last, when the archangel was almost ready to despair, the boy crossed his hands himself, and the next moment they were bound. Now a bandage was passed under the sleeper’s chin and brought up over his head and tied fast--and so softly, so gradually, and so deftly were the knots drawn together and compacted, that the boy slept peacefully through it all without stirring.</p>
-<h2>CHAPTER XXI. Hendon to the rescue.</h2>
+<h2 class="chapter" id="c20">Chapter XXI. Hendon to the rescue.</h2>
 <p>The old man glided away, stooping, stealthy, cat-like, and brought the low bench.  He seated himself upon it, half his body in the dim and flickering light, and the other half in shadow; and so, with his craving eyes bent upon the slumbering boy, he kept his patient vigil there, heedless of the drift of time, and softly whetted his knife, and mumbled and chuckled; and in aspect and attitude he resembled nothing so much as a grizzly, monstrous spider, gloating over some hapless insect that lay bound and helpless in his web.</p>
 <p>After a long while, the old man, who was still gazing,--yet not seeing, his mind having settled into a dreamy abstraction,--observed, on a sudden, that the boy’s eyes were open! wide open and staring!--staring up in frozen horror at the knife.  The smile of a gratified devil crept over the old man’s face, and he said, without changing his attitude or his occupation--</p>
 <p>“Son of Henry the Eighth, hast thou prayed?”</p>
@@ -1129,7 +985,7 @@ h2 + p, .first { text-indent: 0; }
 <p>And now he heard the door open!  The sound chilled him to the marrow--already he seemed to feel the knife at his throat.  Horror made him close his eyes; horror made him open them again--and before him stood John Canty and Hugo!</p>
 <p>He would have said “Thank God!” if his jaws had been free.</p>
 <p>A moment or two later his limbs were at liberty, and his captors, each gripping him by an arm, were hurrying him with all speed through the forest.</p>
-<h2>CHAPTER XXII. A Victim of Treachery.</h2>
+<h2 class="chapter" id="c21">Chapter XXII. A Victim of Treachery.</h2>
 <p>Once more ‘King Foo-foo the First’ was roving with the tramps and outlaws, a butt for their coarse jests and dull-witted railleries, and sometimes the victim of small spitefulness at the hands of Canty and Hugo when the Ruffler’s back was turned.  None but Canty and Hugo really disliked him.  Some of the others liked him, and all admired his pluck and spirit.  During two or three days, Hugo, in whose ward and charge the King was, did what he covertly could to make the boy uncomfortable; and at night, during the customary orgies, he amused the company by putting small indignities upon him--always as if by accident.  Twice he stepped upon the King’s toes--accidentally--and the King, as became his royalty, was contemptuously unconscious of it and indifferent to it; but the third time Hugo entertained himself in that way, the King felled him to the ground with a cudgel, to the prodigious delight of the tribe. Hugo, consumed with anger and shame, sprang up, seized a cudgel, and came at his small adversary in a fury.  Instantly a ring was formed around the gladiators, and the betting and cheering began.</p>
 <p>But poor Hugo stood no chance whatever.  His frantic and lubberly ‘prentice-work found but a poor market for itself when pitted against an arm which had been trained by the first masters of Europe in single-stick, quarter-staff, and every art and trick of swordsmanship. The little King stood, alert but at graceful ease, and caught and turned aside the thick rain of blows with a facility and precision which set the motley on-lookers wild with admiration; and every now and then, when his practised eye detected an opening, and a lightning-swift rap upon Hugo’s head followed as a result, the storm of cheers and laughter that swept the place was something wonderful to hear.  At the end of fifteen minutes, Hugo, all battered, bruised, and the target for a pitiless bombardment of ridicule, slunk from the field; and the unscathed hero of the fight was seized and borne aloft upon the shoulders of the joyous rabble to the place of honour beside the Ruffler, where with vast ceremony he was crowned King of the Game-Cocks; his meaner title being at the same time solemnly cancelled and annulled, and a decree of banishment from the gang pronounced against any who should thenceforth utter it.</p>
 <p>All attempts to make the King serviceable to the troop had failed. He had stubbornly refused to act; moreover, he was always trying to escape. He had been thrust into an unwatched kitchen, the first day of his return; he not only came forth empty-handed, but tried to rouse the housemates. He was sent out with a tinker to help him at his work; he would not work; moreover, he threatened the tinker with his own soldering-iron; and finally both Hugo and the tinker found their hands full with the mere matter of keeping his from getting away.  He delivered the thunders of his royalty upon the heads of all who hampered his liberties or tried to force him to service.  He was sent out, in Hugo’s charge, in company with a slatternly woman and a diseased baby, to beg; but the result was not encouraging--he declined to plead for the mendicants, or be a party to their cause in any way.</p>
@@ -1157,7 +1013,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“Marry, good souls, let us proceed gently, not with ill blood and uncharitable words.  This is matter for the law’s consideration, not private and unofficial handling.  Loose thy hold from the boy, goodwife.”</p>
 <p>The blacksmith averaged the stalwart soldier with a glance, then went muttering away, rubbing his arm; the woman released the boy’s wrist reluctantly; the crowd eyed the stranger unlovingly, but prudently closed their mouths.  The King sprang to his deliverer’s side, with flushed cheeks and sparkling eyes, exclaiming--</p>
 <p>“Thou hast lagged sorely, but thou comest in good season, now, Sir Miles; carve me this rabble to rags!”</p>
-<h2>CHAPTER XXIII. The Prince a prisoner.</h2>
+<h2 class="chapter" id="c22">Chapter XXIII. The Prince a prisoner.</h2>
 <p>Hendon forced back a smile, and bent down and whispered in the King’s ear--</p>
 <p>“Softly, softly, my prince, wag thy tongue warily--nay, suffer it not to wag at all.  Trust in me--all shall go well in the end.” Then he added to himself:  “Sir Miles!  Bless me, I had totally forgot I was a knight! Lord, how marvellous a thing it is, the grip his memory doth take upon his quaint and crazy fancies! . . . An empty and foolish title is mine, and yet it is something to have deserved it; for I think it is more honour to be held worthy to be a spectre-knight in his Kingdom of Dreams and Shadows, than to be held base enough to be an earl in some of the real kingdoms of this world.”</p>
 <p>The crowd fell apart to admit a constable, who approached and was about to lay his hand upon the King’s shoulder, when Hendon said--</p>
@@ -1187,7 +1043,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“Idiot, dost imagine I will enter a common jail alive?”</p>
 <p>Hendon bent down and said, somewhat sharply--</p>
 <p>“Will you trust in me?  Peace! and forbear to worsen our chances with dangerous speech.  What God wills, will happen; thou canst not hurry it, thou canst not alter it; therefore wait, and be patient--‘twill be time enow to rail or rejoice when what is to happen has happened.” {1}</p>
-<h2>CHAPTER XXIV. The Escape.</h2>
+<h2 class="chapter" id="c23">Chapter XXIV. The Escape.</h2>
 <p>The short winter day was nearly ended.  The streets were deserted, save for a few random stragglers, and these hurried straight along, with the intent look of people who were only anxious to accomplish their errands as quickly as possible, and then snugly house themselves from the rising wind and the gathering twilight. They looked neither to the right nor to the left; they paid no attention to our party, they did not even seem to see them. Edward the Sixth wondered if the spectacle of a king on his way to jail had ever encountered such marvellous indifference before. By-and-by the constable arrived at a deserted market-square, and proceeded to cross it.  When he had reached the middle of it, Hendon laid his hand upon his arm, and said in a low voice--</p>
 <p>“Bide a moment, good sir, there is none in hearing, and I would say a word to thee.”</p>
 <p>“My duty forbids it, sir; prithee hinder me not, the night comes on.”</p>
@@ -1219,7 +1075,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“Good! now thou’rt wise and reasonable.  And thou’lt restore the pig?”</p>
 <p>“I will, I will indeed--nor ever touch another, though heaven send it and an archangel fetch it.  Go--I am blind for thy sake--I see nothing. I will say thou didst break in and wrest the prisoner from my hands by force.  It is but a crazy, ancient door--I will batter it down myself betwixt midnight and the morning.”</p>
 <p>“Do it, good soul, no harm will come of it; the judge hath a loving charity for this poor lad, and will shed no tears and break no jailer’s bones for his escape.”</p>
-<h2>CHAPTER XXV. Hendon Hall.</h2>
+<h2 class="chapter" id="c24">Chapter XXV. Hendon Hall.</h2>
 <p>As soon as Hendon and the King were out of sight of the constable, his Majesty was instructed to hurry to a certain place outside the town, and wait there, whilst Hendon should go to the inn and settle his account. Half an hour later the two friends were blithely jogging eastward on Hendon’s sorry steeds.  The King was warm and comfortable, now, for he had cast his rags and clothed himself in the second-hand suit which Hendon had bought on London Bridge.</p>
 <p>Hendon wished to guard against over-fatiguing the boy; he judged that hard journeys, irregular meals, and illiberal measures of sleep would be bad for his crazed mind; whilst rest, regularity, and moderate exercise would be pretty sure to hasten its cure; he longed to see the stricken intellect made well again and its diseased visions driven out of the tormented little head; therefore he resolved to move by easy stages toward the home whence he had so long been banished, instead of obeying the impulse of his impatience and hurrying along night and day.</p>
 <p>When he and the King had journeyed about ten miles, they reached a considerable village, and halted there for the night, at a good inn. The former relations were resumed; Hendon stood behind the King’s chair, while he dined, and waited upon him; undressed him when he was ready for bed; then took the floor for his own quarters, and slept athwart the door, rolled up in a blanket.</p>
@@ -1286,7 +1142,7 @@ h2 + p, .first { text-indent: 0; }
 <p>This reminder did not hearten the servants much; they still held back.</p>
 <p>“Then go, ye paltry cowards, and arm yourselves and guard the doors, whilst I send one to fetch the watch!” said Hugh.  He turned at the threshold, and said to Miles, “You’ll find it to your advantage to offend not with useless endeavours at escape.”</p>
 <p>“Escape?  Spare thyself discomfort, an’ that is all that troubles thee. For Miles Hendon is master of Hendon Hall and all its belongings.  He will remain--doubt it not.”</p>
-<h2>CHAPTER XXVI. Disowned.</h2>
+<h2 class="chapter" id="c25">Chapter XXVI. Disowned.</h2>
 <p>The King sat musing a few moments, then looked up and said--</p>
 <p>“‘Tis strange--most strange.  I cannot account for it.”</p>
 <p>“No, it is not strange, my liege.  I know him, and this conduct is but natural.  He was a rascal from his birth.”</p>
@@ -1320,7 +1176,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“Oh, this passes belief!”</p>
 <p>“Fly!  Why will you waste the precious time?  Fly, and save yourself.”</p>
 <p>At that moment the officers burst into the room, and a violent struggle began; but Hendon was soon overpowered and dragged away. The King was taken also, and both were bound and led to prison.</p>
-<h2>CHAPTER XXVII. In Prison.</h2>
+<h2 class="chapter" id="c26">Chapter XXVII. In Prison.</h2>
 <p>The cells were all crowded; so the two friends were chained in a large room where persons charged with trifling offences were commonly kept. They had company, for there were some twenty manacled and fettered prisoners here, of both sexes and of varying ages,--an obscene and noisy gang.  The King chafed bitterly over the stupendous indignity thus put upon his royalty, but Hendon was moody and taciturn.  He was pretty thoroughly bewildered; he had come home, a jubilant prodigal, expecting to find everybody wild with joy over his return; and instead had got the cold shoulder and a jail.  The promise and the fulfilment differed so widely that the effect was stunning; he could not decide whether it was most tragic or most grotesque.  He felt much as a man might who had danced blithely out to enjoy a rainbow, and got struck by lightning.</p>
 <p>But gradually his confused and tormenting thoughts settled down into some sort of order, and then his mind centred itself upon Edith.  He turned her conduct over, and examined it in all lights, but he could not make anything satisfactory out of it.  Did she know him--or didn’t she know him?  It was a perplexing puzzle, and occupied him a long time; but he ended, finally, with the conviction that she did know him, and had repudiated him for interested reasons.  He wanted to load her name with curses now; but this name had so long been sacred to him that he found he could not bring his tongue to profane it.</p>
 <p>Wrapped in prison blankets of a soiled and tattered condition, Hendon and the King passed a troubled night.  For a bribe the jailer had furnished liquor to some of the prisoners; singing of ribald songs, fighting, shouting, and carousing was the natural consequence.  At last, a while after midnight, a man attacked a woman and nearly killed her by beating her over the head with his manacles before the jailer could come to the rescue.  The jailer restored peace by giving the man a sound clubbing about the head and shoulders--then the carousing ceased; and after that, all had an opportunity to sleep who did not mind the annoyance of the moanings and groanings of the two wounded people.</p>
@@ -1390,7 +1246,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“These be honourable scars,” he said, and turned back his grey hair and showed the mutilated stubs of what had once been his ears.</p>
 <p>The King’s eye burned with passion.  He said--</p>
 <p>“None believe in me--neither wilt thou.  But no matter--within the compass of a month thou shalt be free; and more, the laws that have dishonoured thee, and shamed the English name, shall be swept from the statute books.  The world is made wrong; kings should go to school to their own laws, at times, and so learn mercy.” {1}</p>
-<h2>CHAPTER XXVIII. The sacrifice.</h2>
+<h2 class="chapter" id="c27">Chapter XXVIII. The sacrifice.</h2>
 <p>Meantime Miles was growing sufficiently tired of confinement and inaction.  But now his trial came on, to his great gratification, and he thought he could welcome any sentence provided a further imprisonment should not be a part of it.  But he was mistaken about that.  He was in a fine fury when he found himself described as a ‘sturdy vagabond’ and sentenced to sit two hours in the stocks for bearing that character and for assaulting the master of Hendon Hall.  His pretensions as to brothership with his prosecutor, and rightful heirship to the Hendon honours and estates, were left contemptuously unnoticed, as being not even worth examination.</p>
 <p>He raged and threatened on his way to punishment, but it did no good; he was snatched roughly along by the officers, and got an occasional cuff, besides, for his irreverent conduct.</p>
 <p>The King could not pierce through the rabble that swarmed behind; so he was obliged to follow in the rear, remote from his good friend and servant.  The King had been nearly condemned to the stocks himself for being in such bad company, but had been let off with a lecture and a warning, in consideration of his youth.  When the crowd at last halted, he flitted feverishly from point to point around its outer rim, hunting a place to get through; and at last, after a deal of difficulty and delay, succeeded.  There sat his poor henchman in the degrading stocks, the sport and butt of a dirty mob--he, the body servant of the King of England!  Edward had heard the sentence pronounced, but he had not realised the half that it meant.  His anger began to rise as the sense of this new indignity which had been put upon him sank home; it jumped to summer heat, the next moment, when he saw an egg sail through the air and crush itself against Hendon’s cheek, and heard the crowd roar its enjoyment of the episode.  He sprang across the open circle and confronted the officer in charge, crying--</p>
@@ -1406,14 +1262,14 @@ h2 + p, .first { text-indent: 0; }
 <p>“Kings cannot ennoble thee, thou good, great soul, for One who is higher than kings hath done that for thee; but a king can confirm thy nobility to men.”  He picked up the scourge from the ground, touched Hendon’s bleeding shoulders lightly with it, and whispered, “Edward of England dubs thee Earl!”</p>
 <p>Hendon was touched.  The water welled to his eyes, yet at the same time the grisly humour of the situation and circumstances so undermined his gravity that it was all he could do to keep some sign of his inward mirth from showing outside.  To be suddenly hoisted, naked and gory, from the common stocks to the Alpine altitude and splendour of an Earldom, seemed to him the last possibility in the line of the grotesque.  He said to himself, “Now am I finely tinselled, indeed! The spectre-knight of the Kingdom of Dreams and Shadows is become a spectre-earl--a dizzy flight for a callow wing!  An’ this go on, I shall presently be hung like a very maypole with fantastic gauds and make-believe honours.  But I shall value them, all valueless as they are, for the love that doth bestow them. Better these poor mock dignities of mine, that come unasked, from a clean hand and a right spirit, than real ones bought by servility from grudging and interested power.”</p>
 <p>The dreaded Sir Hugh wheeled his horse about, and as he spurred away, the living wall divided silently to let him pass, and as silently closed together again.  And so remained; nobody went so far as to venture a remark in favour of the prisoner, or in compliment to him; but no matter--the absence of abuse was a sufficient homage in itself.  A late comer who was not posted as to the present circumstances, and who delivered a sneer at the ‘impostor,’ and was in the act of following it with a dead cat, was promptly knocked down and kicked out, without any words, and then the deep quiet resumed sway once more.</p>
-<h2>CHAPTER XXIX. To London.</h2>
+<h2 class="chapter" id="c28">Chapter XXIX. To London.</h2>
 <p>When Hendon’s term of service in the stocks was finished, he was released and ordered to quit the region and come back no more. His sword was restored to him, and also his mule and his donkey. He mounted and rode off, followed by the King, the crowd opening with quiet respectfulness to let them pass, and then dispersing when they were gone.</p>
 <p>Hendon was soon absorbed in thought.  There were questions of high import to be answered.  What should he do?  Whither should he go? Powerful help must be found somewhere, or he must relinquish his inheritance and remain under the imputation of being an impostor besides.  Where could he hope to find this powerful help?  Where, indeed!  It was a knotty question. By-and-by a thought occurred to him which pointed to a possibility--the slenderest of slender possibilities, certainly, but still worth considering, for lack of any other that promised anything at all.  He remembered what old Andrews had said about the young King’s goodness and his generous championship of the wronged and unfortunate.  Why not go and try to get speech of him and beg for justice?  Ah, yes, but could so fantastic a pauper get admission to the august presence of a monarch? Never mind--let that matter take care of itself; it was a bridge that would not need to be crossed till he should come to it.  He was an old campaigner, and used to inventing shifts and expedients:  no doubt he would be able to find a way.  Yes, he would strike for the capital. Maybe his father’s old friend Sir Humphrey Marlow would help him--‘good old Sir Humphrey, Head Lieutenant of the late King’s kitchen, or stables, or something’--Miles could not remember just what or which.  Now that he had something to turn his energies to, a distinctly defined object to accomplish, the fog of humiliation and depression which had settled down upon his spirits lifted and blew away, and he raised his head and looked about him.  He was surprised to see how far he had come; the village was away behind him.  The King was jogging along in his wake, with his head bowed; for he, too, was deep in plans and thinkings.  A sorrowful misgiving clouded Hendon’s new-born cheerfulness:  would the boy be willing to go again to a city where, during all his brief life, he had never known anything but ill-usage and pinching want?  But the question must be asked; it could not be avoided; so Hendon reined up, and called out--</p>
 <p>“I had forgotten to inquire whither we are bound.  Thy commands, my liege!”</p>
 <p>“To London!”</p>
 <p>Hendon moved on again, mightily contented with the answer--but astounded at it too.</p>
 <p>The whole journey was made without an adventure of importance. But it ended with one.  About ten o’clock on the night of the 19th of February they stepped upon London Bridge, in the midst of a writhing, struggling jam of howling and hurrahing people, whose beer-jolly faces stood out strongly in the glare from manifold torches--and at that instant the decaying head of some former duke or other grandee tumbled down between them, striking Hendon on the elbow and then bounding off among the hurrying confusion of feet. So evanescent and unstable are men’s works in this world!--the late good King is but three weeks dead and three days in his grave, and already the adornments which he took such pains to select from prominent people for his noble bridge are falling.  A citizen stumbled over that head, and drove his own head into the back of somebody in front of him, who turned and knocked down the first person that came handy, and was promptly laid out himself by that person’s friend.  It was the right ripe time for a free fight, for the festivities of the morrow--Coronation Day--were already beginning; everybody was full of strong drink and patriotism; within five minutes the free fight was occupying a good deal of ground; within ten or twelve it covered an acre of so, and was become a riot.  By this time Hendon and the King were hopelessly separated from each other and lost in the rush and turmoil of the roaring masses of humanity.  And so we leave them.</p>
-<h2>CHAPTER XXX. Tom’s progress.</h2>
+<h2 class="chapter" id="c29">Chapter XXX. Tom’s progress.</h2>
 <p>Whilst the true King wandered about the land poorly clad, poorly fed, cuffed and derided by tramps one while, herding with thieves and murderers in a jail another, and called idiot and impostor by all impartially, the mock King Tom Canty enjoyed quite a different experience.</p>
 <p>When we saw him last, royalty was just beginning to have a bright side for him.  This bright side went on brightening more and more every day: in a very little while it was become almost all sunshine and delightfulness.  He lost his fears; his misgivings faded out and died; his embarrassments departed, and gave place to an easy and confident bearing.  He worked the whipping-boy mine to ever-increasing profit.</p>
 <p>He ordered my Lady Elizabeth and my Lady Jane Grey into his presence when he wanted to play or talk, and dismissed them when he was done with them, with the air of one familiarly accustomed to such performances. It no longer confused him to have these lofty personages kiss his hand at parting.</p>
@@ -1423,7 +1279,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Did Tom Canty never feel troubled about the poor little rightful prince who had treated him so kindly, and flown out with such hot zeal to avenge him upon the insolent sentinel at the palace-gate? Yes; his first royal days and nights were pretty well sprinkled with painful thoughts about the lost prince, and with sincere longings for his return, and happy restoration to his native rights and splendours.  But as time wore on, and the prince did not come, Tom’s mind became more and more occupied with his new and enchanting experiences, and by little and little the vanished monarch faded almost out of his thoughts; and finally, when he did intrude upon them at intervals, he was become an unwelcome spectre, for he made Tom feel guilty and ashamed.</p>
 <p>Tom’s poor mother and sisters travelled the same road out of his mind. At first he pined for them, sorrowed for them, longed to see them, but later, the thought of their coming some day in their rags and dirt, and betraying him with their kisses, and pulling him down from his lofty place, and dragging him back to penury and degradation and the slums, made him shudder.  At last they ceased to trouble his thoughts almost wholly.  And he was content, even glad:  for, whenever their mournful and accusing faces did rise before him now, they made him feel more despicable than the worms that crawl.</p>
 <p>At midnight of the 19th of February, Tom Canty was sinking to sleep in his rich bed in the palace, guarded by his loyal vassals, and surrounded by the pomps of royalty, a happy boy; for tomorrow was the day appointed for his solemn crowning as King of England. At that same hour, Edward, the true king, hungry and thirsty, soiled and draggled, worn with travel, and clothed in rags and shreds--his share of the results of the riot--was wedged in among a crowd of people who were watching with deep interest certain hurrying gangs of workmen who streamed in and out of Westminster Abbey, busy as ants:  they were making the last preparation for the royal coronation.</p>
-<h2>CHAPTER XXXI. The Recognition procession.</h2>
+<h2 class="chapter" id="c30">Chapter XXXI. The Recognition procession.</h2>
 <p>When Tom Canty awoke the next morning, the air was heavy with a thunderous murmur:  all the distances were charged with it.  It was music to him; for it meant that the English world was out in its strength to give loyal welcome to the great day.</p>
 <p>Presently Tom found himself once more the chief figure in a wonderful floating pageant on the Thames; for by ancient custom the ‘recognition procession’ through London must start from the Tower, and he was bound thither.</p>
 <p>When he arrived there, the sides of the venerable fortress seemed suddenly rent in a thousand places, and from every rent leaped a red tongue of flame and a white gush of smoke; a deafening explosion followed, which drowned the shoutings of the multitude, and made the ground tremble; the flame-jets, the smoke, and the explosions, were repeated over and over again with marvellous celerity, so that in a few moments the old Tower disappeared in the vast fog of its own smoke, all but the very top of the tall pile called the White Tower; this, with its banners, stood out above the dense bank of vapour as a mountain-peak projects above a cloud-rack.</p>
@@ -1452,7 +1308,7 @@ h2 + p, .first { text-indent: 0; }
 <p>The gorgeous figure turned a lustreless eye upon the Duke, and said in a dead voice--</p>
 <p>“She was my mother!”</p>
 <p>“My God!” groaned the Protector as he reined his horse backward to his post, “the omen was pregnant with prophecy.  He is gone mad again!”</p>
-<h2>CHAPTER XXXII. Coronation Day.</h2>
+<h2 class="chapter" id="c31">Chapter XXXII. Coronation Day.</h2>
 <p>Let us go backward a few hours, and place ourselves in Westminster Abbey, at four o’clock in the morning of this memorable Coronation Day. We are not without company; for although it is still night, we find the torch-lighted galleries already filling up with people who are well content to sit still and wait seven or eight hours till the time shall come for them to see what they may not hope to see twice in their lives--the coronation of a King.  Yes, London and Westminster have been astir ever since the warning guns boomed at three o’clock, and already crowds of untitled rich folk who have bought the privilege of trying to find sitting-room in the galleries are flocking in at the entrances reserved for their sort.</p>
 <p>The hours drag along tediously enough.  All stir has ceased for some time, for every gallery has long ago been packed.  We may sit, now, and look and think at our leisure.  We have glimpses, here and there and yonder, through the dim cathedral twilight, of portions of many galleries and balconies, wedged full with other people, the other portions of these galleries and balconies being cut off from sight by intervening pillars and architectural projections.  We have in view the whole of the great north transept--empty, and waiting for England’s privileged ones.  We see also the ample area or platform, carpeted with rich stuffs, whereon the throne stands.  The throne occupies the centre of the platform, and is raised above it upon an elevation of four steps. Within the seat of the throne is enclosed a rough flat rock--the stone of Scone--which many generations of Scottish kings sat on to be crowned, and so it in time became holy enough to answer a like purpose for English monarchs.  Both the throne and its footstool are covered with cloth of gold.</p>
 <p>Stillness reigns, the torches blink dully, the time drags heavily. But at last the lagging daylight asserts itself, the torches are extinguished, and a mellow radiance suffuses the great spaces. All features of the noble building are distinct now, but soft and dreamy, for the sun is lightly veiled with clouds.</p>
@@ -1529,7 +1385,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“To crack nuts with!”</p>
 <p>Poor child, the avalanche of laughter that greeted this nearly swept him off his feet.  But if a doubt remained in any mind that Tom Canty was not the King of England and familiar with the august appurtenances of royalty, this reply disposed of it utterly.</p>
 <p>Meantime the sumptuous robe of state had been removed from Tom’s shoulders to the King’s, whose rags were effectually hidden from sight under it.  Then the coronation ceremonies were resumed; the true King was anointed and the crown set upon his head, whilst cannon thundered the news to the city, and all London seemed to rock with applause.</p>
-<h2>CHAPTER XXXIII. Edward as King.</h2>
+<h2 class="chapter" id="c32">Chapter XXXIII. Edward as King.</h2>
 <p>Miles Hendon was picturesque enough before he got into the riot on London Bridge--he was more so when he got out of it.  He had but little money when he got in, none at all when he got out.  The pickpockets had stripped him of his last farthing.</p>
 <p>But no matter, so he found his boy.  Being a soldier, he did not go at his task in a random way, but set to work, first of all, to arrange his campaign.</p>
 <p>What would the boy naturally do?  Where would he naturally go? Well--argued Miles--he would naturally go to his former haunts, for that is the instinct of unsound minds, when homeless and forsaken, as well as of sound ones.  Whereabouts were his former haunts?  His rags, taken together with the low villain who seemed to know him and who even claimed to be his father, indicated that his home was in one or another of the poorest and meanest districts of London.  Would the search for him be difficult, or long?  No, it was likely to be easy and brief.  He would not hunt for the boy, he would hunt for a crowd; in the centre of a big crowd or a little one, sooner or later, he should find his poor little friend, sure; and the mangy mob would be entertaining itself with pestering and aggravating the boy, who would be proclaiming himself King, as usual.  Then Miles Hendon would cripple some of those people, and carry off his little ward, and comfort and cheer him with loving words, and the two would never be separated any more.</p>
@@ -1581,7 +1437,7 @@ h2 + p, .first { text-indent: 0; }
 <p>There was a stir at the other end of the room, now; the assemblage fell apart, and Tom Canty, quaintly but richly clothed, marched down, between these living walls, preceded by an usher.  He knelt before the King, who said--</p>
 <p>“I have learned the story of these past few weeks, and am well pleased with thee.  Thou hast governed the realm with right royal gentleness and mercy.  Thou hast found thy mother and thy sisters again?  Good; they shall be cared for--and thy father shall hang, if thou desire it and the law consent.  Know, all ye that hear my voice, that from this day, they that abide in the shelter of Christ’s Hospital and share the King’s bounty shall have their minds and hearts fed, as well as their baser parts; and this boy shall dwell there, and hold the chief place in its honourable body of governors, during life.  And for that he hath been a king, it is meet that other than common observance shall be his due; wherefore note this his dress of state, for by it he shall be known, and none shall copy it; and wheresoever he shall come, it shall remind the people that he hath been royal, in his time, and none shall deny him his due of reverence or fail to give him salutation.  He hath the throne’s protection, he hath the crown’s support, he shall be known and called by the honourable title of the King’s Ward.”</p>
 <p>The proud and happy Tom Canty rose and kissed the King’s hand, and was conducted from the presence.  He did not waste any time, but flew to his mother, to tell her and Nan and Bet all about it and get them to help him enjoy the great news. {1}</p>
-<h2>Conclusion. Justice and retribution.</h2>
+<h3 class="sub">Conclusion. Justice and retribution.</h3>
 <p>When the mysteries were all cleared up, it came out, by confession of Hugh Hendon, that his wife had repudiated Miles by his command, that day at Hendon Hall--a command assisted and supported by the perfectly trustworthy promise that if she did not deny that he was Miles Hendon, and stand firmly to it, he would have her life; whereupon she said, “Take it!”--she did not value it--and she would not repudiate Miles; then the husband said he would spare her life but have Miles assassinated!  This was a different matter; so she gave her word and kept it.</p>
 <p>Hugh was not prosecuted for his threats or for stealing his brother’s estates and title, because the wife and brother would not testify against him--and the former would not have been allowed to do it, even if she had wanted to.  Hugh deserted his wife and went over to the continent, where he presently died; and by-and-by the Earl of Kent married his relict. There were grand times and rejoicings at Hendon village when the couple paid their first visit to the Hall.</p>
 <p>Tom Canty’s father was never heard of again.</p>
@@ -1595,7 +1451,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Yes, King Edward VI. lived only a few years, poor boy, but he lived them worthily.  More than once, when some great dignitary, some gilded vassal of the crown, made argument against his leniency, and urged that some law which he was bent upon amending was gentle enough for its purpose, and wrought no suffering or oppression which any one need mightily mind, the young King turned the mournful eloquence of his great compassionate eyes upon him and answered--</p>
 <p>“What dost thou know of suffering and oppression?  I and my people know, but not thou.”</p>
 <p>The reign of Edward VI. was a singularly merciful one for those harsh times.  Now that we are taking leave of him, let us try to keep this in our minds, to his credit.</p>
-<h2>FOOTNOTES AND TWAIN’S NOTES</h2>
+<h3 class="sub">Footnotes and Twain’s Notes</h3>
 <p>{1}  For Mark Twain’s note see below under the relevant chapter heading.</p>
 <p>{2}  He refers to the order of baronets, or baronettes; the barones minores, as distinct from the parliamentary barons--not, it need hardly be said, to the baronets of later creation.</p>
 <p>{3}  The lords of Kingsale, descendants of De Courcy, still enjoy this curious privilege.</p>
@@ -1647,8 +1503,8 @@ h2 + p, .first { text-indent: 0; }
 <p>The Dining Hall, with its lobby and organ-gallery, occupies the entire storey, which is 187 feet long, 51 feet wide, and 47 feet high; it is lit by nine large windows, filled with stained glass on the south side; and is, next to Westminster Hall, the noblest room in the metropolis. Here the boys, now about 800 in number, dine; and here are held the ‘Suppings in Public,’ to which visitors are admitted by tickets issued by the Treasurer and by the Governors of Christ’s Hospital.  The tables are laid with cheese in wooden bowls, beer in wooden piggins, poured from leathern jacks, and bread brought in large baskets.  The official company enter; the Lord Mayor, or President, takes his seat in a state chair made of oak from St. Catherine’s Church, by the Tower; a hymn is sung, accompanied by the organ; a ‘Grecian,’ or head boy, reads the prayers from the pulpit, silence being enforced by three drops of a wooden hammer.  After prayer the supper commences, and the visitors walk between the tables.  At its close the ’trade-boys’ take up the baskets, bowls, jacks, piggins, and candlesticks, and pass in procession, the bowing to the Governors being curiously formal.  This spectacle was witnessed by Queen Victoria and Prince Albert in 1845.</p>
 <p>Among the more eminent Bluecoat boys are Joshua Barnes, editor of Anacreon and Euripides; Jeremiah Markland, the eminent critic, particularly in Greek Literature; Camden, the antiquary; Bishop Stillingfleet; Samuel Richardson, the novelist; Thomas Mitchell, the translator of Aristophanes; Thomas Barnes, many years editor of the London Times; Coleridge, Charles Lamb, and Leigh Hunt.</p>
 <p>No boy is admitted before he is seven years old, or after he is nine; and no boy can remain in the school after he is fifteen, King’s boys and ‘Grecians’ alone excepted.  There are about 500 Governors, at the head of whom are the Sovereign and the Prince of Wales.  The qualification for a Governor is payment of 500 pounds.--Ibid.</p>
-<h2>GENERAL NOTE.</h2>
+<h3 class="sub">General Note.</h3>
 <p>One hears much about the ‘hideous Blue Laws of Connecticut,’ and is accustomed to shudder piously when they are mentioned.  There are people in America--and even in England!--who imagine that they were a very monument of malignity, pitilessness, and inhumanity; whereas in reality they were about the first sweeping departure from judicial atrocity which the ‘civilised’ world had seen.  This humane and kindly Blue Law Code, of two hundred and forty years ago, stands all by itself, with ages of bloody law on the further side of it, and a century and three-quarters of bloody English law on this side of it.</p>
 <p>There has never been a time--under the Blue Laws or any other--when above fourteen crimes were punishable by death in Connecticut.  But in England, within the memory of men who are still hale in body and mind, two hundred and twenty-three crimes were punishable by death! {10} These facts are worth knowing--and worth thinking about, too.</p>
-<p class="colophon">Texte du domaine public, source : Project Gutenberg (#1837). Édition numérique EbookClassics.</p>
+<p class="colophon">Public domain text. EbookClassics digital edition.</p>
 </body></html>

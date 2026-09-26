@@ -1,37 +1,75 @@
 <!DOCTYPE html>
 <html lang="fr"><head><meta charset="utf-8">
-<title>Le livre de la Jungle</title><style>
-@page { margin: 22mm 20mm; }
-body { font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', serif; line-height: 1.6;
-       color: #1f1a14; max-width: 38em; margin: 0 auto; padding: 1.5em 1.2em; }
-h1 { font-size: 2.1em; text-align: center; margin: 1.5em 0 .2em; letter-spacing: .01em; }
-.author { text-align: center; font-size: 1.15em; font-style: italic; margin-bottom: 3em; color: #5a4a36; }
-h2 { font-size: 1.25em; text-align: center; margin: 2.6em 0 1.2em; letter-spacing: .06em;
-     text-transform: uppercase; font-weight: normal; page-break-before: always; break-before: page; }
-p { margin: 0; text-indent: 1.4em; text-align: justify; hyphens: auto; }
-h2 + p, .first { text-indent: 0; }
-.colophon { font-size: .85em; color: #6b5d45; text-align: center; margin-top: 4em; text-indent: 0; }
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Le livre de la Jungle — Rudyard Kipling</title><style>
+:root{--paper:#fbf8f1;--ink:#1f1b16;--muted:#6f6352;--accent:#9a6b2f;--rule:#e4dccb}
+@media (prefers-color-scheme:dark){:root{--paper:#16140f;--ink:#ece6d8;--muted:#a79c88;--accent:#d8a95e;--rule:#2e2a22}}
+html{background:var(--paper)}
+body{font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Libertinus Serif",Georgia,serif;color:var(--ink);
+     background:var(--paper);line-height:1.65;font-size:1.12rem;max-width:36em;margin:0 auto;padding:2.5em 1.25em 5em}
+.titlepage{text-align:center;min-height:70vh;display:flex;flex-direction:column;justify-content:center;gap:.6em;
+           border-bottom:1px solid var(--rule);margin-bottom:2.5em;padding-bottom:2.5em}
+.titlepage img{max-width:260px;width:60%;margin:0 auto 1.5em;border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+h1{font-size:2.4em;line-height:1.15;font-weight:600;margin:0;letter-spacing:-.01em}
+.author{font-style:italic;font-size:1.25em;color:var(--accent);margin:0}
+.translator{font-size:.95em;color:var(--muted);margin:0}
+nav.toc{margin:0 0 3em}
+nav.toc h2{font-size:.85em;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:left;margin:0 0 .8em}
+nav.toc ol{list-style:none;padding:0;margin:0;columns:1}
+nav.toc li{margin:.25em 0}
+nav.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent}
+nav.toc a:hover{border-color:var(--accent)}
+h2.chapter{font-size:1.45em;font-weight:600;text-align:center;margin:3.5em 0 1.6em;line-height:1.3}
+h2.chapter::before{content:"";display:block;width:3em;height:2px;background:var(--accent);margin:0 auto 1.1em}
+p{margin:0;text-indent:1.5em;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+h2.chapter + p, .titlepage + p{text-indent:0}
+h2.chapter + p::first-letter{font-size:3.1em;float:left;line-height:.85;padding:.08em .08em 0 0;color:var(--accent);font-weight:600}
+.colophon{margin-top:5em;padding-top:1.5em;border-top:1px solid var(--rule);text-align:center;color:var(--muted);font-size:.85em;text-indent:0}
+h3.sub{font-size:1em;font-weight:600;font-variant:small-caps;letter-spacing:.04em;text-align:center;margin:2.2em 0 1em}
+h3.sub + p{text-indent:0}
+@media print{h2.chapter{break-before:page}}
 </style></head><body>
+<header class="titlepage">
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjI0MDAiIHZpZXdCb3g9IjAgMCAxNjAwIDI0MDAiPgo8cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSIyNDAwIiBmaWxsPSIjNGExNTI2Ii8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjMwMCIgZmlsbD0iI2YyYzZhMCIgb3BhY2l0eT0iLjkyIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNGExNTI2IiBzdHJva2Utd2lkdGg9IjEyIiBvcGFjaXR5PSIuNSIvPgo8Y2lyY2xlIGN4PSIxMTIwIiBjeT0iNTYwIiByPSIxMjAiIGZpbGw9IiM0YTE1MjYiIG9wYWNpdHk9Ii4xOCIvPgo8cmVjdCB4PSIxNjAiIHk9IjkzMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIxMCIgZmlsbD0iI2YyYzZhMCIvPgo8dGV4dCB4PSIxNjAiIHk9IjEwOTgiIGZvbnQtc2l6ZT0iMTUwIiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmYmVmZTYiPkxlIGxpdnJlIGRlIGxhPC90ZXh0Pjx0ZXh0IHg9IjE2MCIgeT0iMTI2MiIgZm9udC1zaXplPSIxNTAiIGZvbnQtd2VpZ2h0PSI2MDAiIGZvbnQtZmFtaWx5PSJMaWJlcnRpbnVzIFNlcmlmLCBHZW9yZ2lhLCBzZXJpZiIgZmlsbD0iI2ZiZWZlNiI+SnVuZ2xlPC90ZXh0Pgo8dGV4dCB4PSIxNjAiIHk9IjE0OTgiIGZvbnQtc2l6ZT0iNjgiIGZvbnQtc3R5bGU9Iml0YWxpYyIgZm9udC1mYW1pbHk9IkxpYmVydGludXMgU2VyaWYsIEdlb3JnaWEsIHNlcmlmIiBmaWxsPSIjZjJjNmEwIj5SdWR5YXJkIEtpcGxpbmc8L3RleHQ+Cjx0ZXh0IHg9IjE2MCIgeT0iMjIzMCIgZm9udC1zaXplPSI0NCIgbGV0dGVyLXNwYWNpbmc9IjE0IiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmYmVmZTYiIG9wYWNpdHk9Ii43NSI+RUJPT0tDTEFTU0lDUzwvdGV4dD4KPC9zdmc+" alt="">
 <h1>Le livre de la Jungle</h1>
 <p class="author">Rudyard Kipling</p>
+<p class="translator">Traduction de Fabulet, Louis, Humières, Robert d&#x27;</p>
+</header>
+<nav class="toc"><h2>Table des matières</h2><ol>
+<li><a href="#c1">Le livre de la jungle — Justification du tirage</a></li>
+<li><a href="#c2">Rudyard kipling — Le Livre</a></li>
+<li><a href="#c3">Paris — Société dv mercvre de france</a></li>
+<li><a href="#c4">XV, Rve de l&#x27;échavdé-saint-germain, XV</a></li>
+<li><a href="#c5">Les frères de Mowgli</a></li>
+<li><a href="#c6">Chanson de nuit dans la jungle.</a></li>
+<li><a href="#c7">Chanson de chasse — Du clan de Seeonee</a></li>
+<li><a href="#c8">La chasse de Kaa</a></li>
+<li><a href="#c9">Maximes de Baloo.</a></li>
+<li><a href="#c10">Chanson de route des Bandar-log</a></li>
+<li><a href="#c11">La chanson de Mowgli</a></li>
+<li><a href="#c12">Le phoque blanc</a></li>
+<li><a href="#c13">Lukannon</a></li>
+<li><a href="#c14">L&#x27;ode de Darzee</a></li>
+<li><a href="#c15">Toomai des éléphants</a></li>
+<li><a href="#c16">Shiva et la sauterelle</a></li>
+<li><a href="#c17">Service de la reine</a></li>
+<li><a href="#c18">Chant de parade des animaux du camp</a></li>
+</ol></nav>
 <p>Au lecteur</p>
 <p>Ce livre électronique reproduit intégralement le texte original, et l&#x27;orthographe d&#x27;origine a été conservée. Seules les erreurs clairement introduites par le typographe ont été corrigées. La liste de ces corrections se trouve à la fin du texte.</p>
 <p>Cependant «Shere-Khan» a été tacitement remplacé par «Shere Khan» et «Bandar Log» par «Bandar-Log».</p>
-<h2>LE LIVRE DE LA JUNGLE</h2>
-<h2>JUSTIFICATION DU TIRAGE</h2>
+<h2 class="chapter" id="c1">Le livre de la jungle — Justification du tirage</h2>
 <p>Droits de reproduction réservés pour tous pays, y compris la Suède et la Norvège.</p>
-<h2>RUDYARD KIPLING</h2>
-<h2>Le Livre</h2>
+<h2 class="chapter" id="c2">Rudyard kipling — Le Livre</h2>
 <p>de la Jungle</p>
 <p>Traduction de</p>
 <p>LOUIS FABULET et ROBERT d&#x27;HUMIÈRES</p>
-<h2>PARIS</h2>
-<h2>SOCIÉTÉ DV MERCVRE DE FRANCE</h2>
-<h2>XV, RVE DE L&#x27;ÉCHAVDÉ-SAINT-GERMAIN, XV</h2>
+<h2 class="chapter" id="c3">Paris — Société dv mercvre de france</h2>
+<h2 class="chapter" id="c4">XV, Rve de l&#x27;échavdé-saint-germain, XV</h2>
 <p>Tous droits réservés</p>
-<h2>LES FRÈRES DE MOWGLI</h2>
+<h2 class="chapter" id="c5">Les frères de Mowgli</h2>
 <p>Chil Vautour conduit les pas de la nuit Que Mang le Vampire délivre-- Dorment les troupeaux dans l&#x27;étable clos. La terre à nous, l&#x27;ombre la livre! C&#x27;est l&#x27;heure du soir, orgueil et pouvoir A la serre, le croc et l&#x27;ongle. Nous entendez-vous? Bonne chasse à tous Qui gardez la Loi de la Jungle!</p>
-<h2>CHANSON DE NUIT DANS LA JUNGLE.</h2>
+<h2 class="chapter" id="c6">Chanson de nuit dans la jungle.</h2>
 <p>Il était sept heures d&#x27;une soirée très chaude, sur les collines de Seeonee, quand père Loup s&#x27;éveilla de son somme journalier, se gratta, bâilla et détendit ses pattes l&#x27;une après l&#x27;autre pour dissiper la sensation de paresse qu&#x27;il sentait encore à leurs extrémités. Mère Louve était étendue, son gros nez gris tombé parmi ses quatre petits qui se culbutaient et criaient, et la lune luisait par l&#x27;ouverture de la caverne où ils vivaient tous.</p>
 <p>--Augrh! dit père Loup, il est temps de se remettre en chasse.</p>
 <p>Et il allait s&#x27;élancer vers le fond de la vallée, quand une petite ombre à queue touffue barra l&#x27;ouverture et jappa:</p>
@@ -114,7 +152,7 @@ h2 + p, .first { text-indent: 0; }
 <p>--Sachant que je n&#x27;ai aucun droit de parler ici, je demande votre permission.</p>
 <p>--Parle donc, crièrent vingt voix.</p>
 <p>--Tuer un petit nu est une honte. En outre, il pourra nous aider à chasser mieux quand il sera en âge. Baloo a parlé en sa faveur. Maintenant, à ce qu&#x27;a dit Baloo j&#x27;ajouterai l&#x27;offre d&#x27;un taureau, et bien gras, fraîchement tué, à un demi-mille d&#x27;ici à peine, si vous acceptez le petit d&#x27;homme, conformément à la Loi. Y a-t-il une difficulté?</p>
-<h2>Il s&#x27;éleva une clameur de voix disant par vingtaines:</h2>
+<p>Il s&#x27;éleva une clameur de voix disant par vingtaines:</p>
 <p>--Qu&#x27;importe? Il mourra sous les pluies de l&#x27;hiver; il sera grillé par le soleil... Quel mal peut nous faire une grenouille nue?... Qu&#x27;il coure avec le clan!... Où est le taureau, Bagheera?... Qu&#x27;on l&#x27;accepte.</p>
 <p>Et alors revint l&#x27;aboiement profond d&#x27;Akela.</p>
 <p>--Regardez bien... regardez bien, ô loups.</p>
@@ -190,7 +228,7 @@ h2 + p, .first { text-indent: 0; }
 <p>--Peuple Libre, s&#x27;écria-t-il, est-ce que Shere Khan est notre chef?... Qu&#x27;est-ce qu&#x27;un tigre peut avoir à faire avec la direction du clan?</p>
 <p>--Voyant que la succession était ouverte, et comme on m&#x27;avait prié de parler..., commença Shere Khan.</p>
 <p>--Qui t&#x27;en avait prié? fit Mowgli. Sommes-nous tous des chacals pour flagorner ce boucher? La direction du clan regarde le clan seul.</p>
-<h2>Il y eut des hurlements:</h2>
+<p>Il y eut des hurlements:</p>
 <p>--Silence, toi, petit homme!</p>
 <p>--Laissez-le parler. Il a gardé notre loi!</p>
 <p>Et, à la fin, les anciens du clan tonnèrent:</p>
@@ -220,7 +258,7 @@ h2 + p, .first { text-indent: 0; }
 <p>--Tu es le maître! fit Bagheera à voix basse. Sauve Akela de la mort. Il a toujours été ton ami.</p>
 <p>Akela, le vieux loup farouche, qui n&#x27;avait jamais imploré de merci dans sa vie, jeta un regard suppliant à Mowgli, debout auprès de lui, tout nu, sa longue chevelure noire flottant sur ses épaules, dans la lumière de la branche flamboyante qui faisait danser et vaciller les ombres.</p>
 <p>--Bien! dit Mowgli, en promenant avec lenteur un regard circulaire. Je vois que vous êtes des chiens. Je vous quitte pour retourner à mes pareils... si vraiment ils sont mes pareils... La jungle m&#x27;est fermée, je dois oublier votre langue et votre compagnie; mais je serai plus miséricordieux que vous: parce que j&#x27;ai été votre frère en tout, sauf par le sang, je promets que lorsque je serai un homme parmi les hommes, je ne vous trahirai pas auprès d&#x27;eux comme vous m&#x27;avez trahi.</p>
-<h2>Il donna un coup de pied dans le feu, et les étincelles volèrent.</h2>
+<p>Il donna un coup de pied dans le feu, et les étincelles volèrent.</p>
 <p>--Il n&#x27;y aura point de guerre entre aucun de nous dans le clan. Mais il y a une dette qu&#x27;il faut que je paye avant de m&#x27;en aller.</p>
 <p>Il marcha à grands pas vers l&#x27;endroit où Shere Khan était couché, clignant de l&#x27;œil stupidement aux flammes, et le prit, par la touffe de poils, sous le menton. Bagheera suivait en cas d&#x27;accident.</p>
 <p>--Debout, chien! cria Mowgli. Debout quand un homme parle, ou je mets le feu à ta robe!</p>
@@ -240,14 +278,13 @@ h2 + p, .first { text-indent: 0; }
 <p>--Reviens bientôt, dit mère Louve, mon petit tout nu; car écoute, enfant de l&#x27;homme, je t&#x27;aimais plus que je n&#x27;ai jamais aimé mes petits.</p>
 <p>--Je reviendrai sûrement, dit Mowgli; et quand je reviendrai, ce sera pour étaler la peau de Shere Khan sur le Rocher du Conseil. Ne m&#x27;oubliez pas! Dites-leur, dans la jungle, de ne jamais m&#x27;oublier!</p>
 <p>L&#x27;aurore commençait à poindre quand Mowgli descendit la colline, tout seul, en route vers ces êtres mystérieux qu&#x27;on appelle les hommes.</p>
-<h2>CHANSON DE CHASSE</h2>
-<h2>DU CLAN DE SEEONEE</h2>
+<h2 class="chapter" id="c7">Chanson de chasse — Du clan de Seeonee</h2>
 <p>A la pointe de l&#x27;aube, un Sambhur meugla. Un, deux, puis encore! Un daim bondit, un daim bondit à travers Les taillis de la mare où boivent les cerfs. Moi seul, battant le bois, j&#x27;ai vu cela, Un, deux, puis encore!</p>
 <p>A la pointe de l&#x27;aube, un Sambhur meugla Un, deux, puis encore! A pas de veloux, à pas de veloux, Va porter la nouvelle au clan des loups, Cherchez, trouvez, et puis de la gorge tous, Un, deux, puis encore!</p>
 <p>A la pointe de l&#x27;aube, le Clan hurla. Un, deux, puis encore! Pied qui, sans laisser de marque, fuit, Œil qui sait percer la nuit--la nuit! Prête-lui ta voix! Ecoutez le bruit! Un, deux, puis encore!</p>
-<h2>LA CHASSE DE KAA</h2>
+<h2 class="chapter" id="c8">La chasse de Kaa</h2>
 <p>Ses taches sont l&#x27;orgueil du chat-pard, ses cornes du buffle sont l&#x27;honneur. Sois net, car à l&#x27;éclat de la robe on connaît la force du chasseur. Que le sambhur ait la corne aiguë, et le taureau les muscles puissants, Ne prends pas le soin de nous l&#x27;apprendre: on savait cela depuis dix ans. Ne moleste jamais les petits d&#x27;autrui, mais nomme-les Sœur et Frère. Sans doute ils sont faibles et balourds, mais peut-être que l&#x27;Ourse est leur mère. La jeunesse dit: «Qui donc me vaut!» en l&#x27;orgueil de son premier gibier; Mais la Jungle est grande et le jeune est petit. Il doit se taire et méditer.</p>
-<h2>MAXIMES DE BALOO.</h2>
+<h2 class="chapter" id="c9">Maximes de Baloo.</h2>
 <p>Tout ce que nous allons dire ici arriva quelque temps avant que Mowgli eût été banni du clan des loups de Seeonee, ou se fût vengé sur Shere Khan, le tigre.</p>
 <p>C&#x27;était aux jours où Baloo lui enseignait la Loi de la Jungle. Le grand ours brun, vieux et grave, se réjouissait d&#x27;un élève à l&#x27;intelligence si prompte; car les jeunes loups ne veulent apprendre de la Loi de la Jungle que ce qui concerne leur clan et leur tribu, et décampent, dès qu&#x27;ils peuvent répéter le refrain de chasse: «Pieds qui ne font pas de bruit; yeux qui voient dans l&#x27;ombre; oreilles tendues au vent, du fond des cavernes, et dents blanches pour mordre: qui porte ces signes est de nos frères, sauf Tabaqui le Chacal et l&#x27;Hyène que nous haïssons.» Mais Mowgli, comme petit d&#x27;homme, en dut apprendre bien plus long.</p>
 <p>Quelquefois Bagheera, la panthère noire, venait, en flânant, au travers de la jungle, voir ce que devenait son favori, et restait à ronronner, la tête contre un arbre, pendant que Mowgli récitait à Baloo la leçon du jour. L&#x27;enfant savait grimper presque aussi bien qu&#x27;il savait nager, et nager presque aussi bien qu&#x27;il savait courir: aussi Baloo, le professeur de la Loi, lui apprenait-il les Lois des Bois et des Eaux: à distinguer une branche pourrie d&#x27;une branche saine; à parler poliment aux abeilles sauvages quand il rencontrait par surprise un de leurs essaims à cinquante pieds au-dessus du sol; les paroles à dire à Mang, la chauve-souris, quand il la dérangeait dans les branches au milieu du jour; et la façon d&#x27;avertir les serpents d&#x27;eau dans les mares avant de plonger au milieu d&#x27;eux. Dans la jungle, personne n&#x27;aime à être dérangé, et on y est toujours prêt à se jeter sur l&#x27;intrus.</p>
@@ -287,7 +324,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Mowgli regarda Bagheera pour voir si la panthère était en colère aussi: les yeux de Bagheera étaient aussi durs que des pierres de jade.</p>
 <p>--Tu as été avec le Peuple Singe,... les singes gris... le peuple sans loi... les mangeurs de tout. C&#x27;est une grande honte.</p>
 <p>--Quand Baloo m&#x27;a fait du mal à la tête--dit Mowgli (il était encore sur le dos),--je suis parti, et les singes gris sont descendus des arbres pour s&#x27;apitoyer sur moi. Personne autre ne se souciait de moi.</p>
-<h2>Il se mit à pleurnicher.</h2>
+<p>Il se mit à pleurnicher.</p>
 <p>--L&#x27;apitoiement du Peuple Singe! ronfla Baloo. Le calme du torrent de la montagne! La fraîcheur du soleil d&#x27;été!... Et alors, petit d&#x27;homme?</p>
 <p>--Et alors... alors, ils m&#x27;ont donné des noix et tout plein de bonnes choses à manger, et ils... ils m&#x27;ont emporté dans leurs bras au sommet des arbres, pour me dire que j&#x27;étais leur frère par le sang, sauf que je n&#x27;avais pas de queue, et qu&#x27;un jour je serais leur chef.</p>
 <p>--Ils n&#x27;ont pas de chefs, dit Bagheera. Ils mentent, ils ont toujours menti.</p>
@@ -341,7 +378,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Comme tous les serpents de son espèce, Kaa était presque sourd, et tout d&#x27;abord il n&#x27;entendit pas l&#x27;appel. Cependant il se leva, prêt à tout événement, la tête basse:</p>
 <p>--Bonne chasse pour nous tous, répondit-il enfin. Oh! oh! Baloo, que fais-tu ici?... Bonne chasse, Bagheera... L&#x27;un de nous au moins a besoin de nourriture. A-t-on entendu parler de gibier sur pied? Une biche peut-être, ou même un jeune chevreuil? Je suis aussi vide qu&#x27;un puits à sec.</p>
 <p>--Nous sommes en train de chasser, dit Baloo négligemment.</p>
-<h2>Il savait qu&#x27;on ne doit pas presser Kaa. Il est trop gros.</h2>
+<p>Il savait qu&#x27;on ne doit pas presser Kaa. Il est trop gros.</p>
 <p>--Permettez-moi de me joindre à vous, dit Kaa. Un coup de patte de plus ou de moins n&#x27;est rien pour toi, Bagheera, ni pour toi, Baloo; alors que moi... moi, il me faut attendre et attendre des jours dans un sentier, et grimper la moitié d&#x27;une nuit pour le maigre hasard d&#x27;un jeune singe. Psshaw! Les arbres ne sont plus ce qu&#x27;ils étaient dans ma jeunesse. Tous rameaux pourris et branches sèches.</p>
 <p>--Il se peut que ton grand poids y soit pour quelque chose, répliqua Baloo.</p>
 <p>--Oui, je suis d&#x27;une jolie longueur,--d&#x27;une jolie longueur,--dit Kaa avec une pointe d&#x27;orgueil. Mais malgré tout, c&#x27;est la faute de ce bois nouveau. J&#x27;ai été bien près de tomber lors de ma dernière prise.... bien près en vérité.... et, en glissant, car ma queue n&#x27;enveloppait pas étroitement l&#x27;arbre, j&#x27;ai réveillé les Bandar-Log qui m&#x27;ont donné les plus vilains noms.</p>
@@ -489,7 +526,7 @@ h2 + p, .first { text-indent: 0; }
 <p>--Maintenant, dit Bagheera, saute sur mon dos, petit frère, et retournons à la maison.</p>
 <p>Une des beautés de la Loi de la Jungle, c&#x27;est que la punition règle tous les comptes. C&#x27;en est fini après de toutes tracasseries.</p>
 <p>Mowgli laissa tomber sa tête sur le dos de Bagheera, et s&#x27;endormit si profondément qu&#x27;il ne s&#x27;éveilla même pas lorsqu&#x27;on le déposa dans la caverne de ses frères.</p>
-<h2>CHANSON DE ROUTE DES BANDAR-LOG</h2>
+<h2 class="chapter" id="c10">Chanson de route des Bandar-log</h2>
 <p>Voyez-nous passer festonnant la brume A mi-chemin de la jalouse lune! N&#x27;enviez-vous pas nos libres tribus? Que penseriez-vous de deux mains de plus? N&#x27;aimeriez-vous pas cette queue au tour Plus harmonieux que l&#x27;arc de l&#x27;Amour?... Vous vous fâchez?... Ça n&#x27;est pas important,</p>
 <p>Frère, regarde ta queue Qui pend!</p>
 <p>Sur la branche haute en rangs nous rêvons A de beaux secrets que seuls nous savons, Songeant aux exploits que le monde espère, Et qu&#x27;à l&#x27;instant notre génie opère, Quelque chose de noble et sage fait De par la vertu d&#x27;un simple souhait... Quoi?... Je ne sais plus... Etait-ce important?</p>
@@ -497,7 +534,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Tous les différents langages ou cris D&#x27;oiseau, de reptile ou de fauve appris, Plume, écaille, poil, chants de plaine ou bois, Jacassons-les vite et tous à la fois! Excellent! Parfait! Voilà que nous sommes Maintenant pareils tout à fait aux hommes! Jouons à l&#x27;homme... est-ce bien important?</p>
 <p>Frère, regarde ta queue Qui pend!</p>
 <p>Le peuple-singe est étonnant. Venez! Notre essaim, bondissant dans les grands bois, monte et descend En fusée aux sommets légers où mûrit le raisin sauvage, Par le bois mort que nous cassons et le beau bruit que nous faisons, Oh, soyez sûrs que nous allons consommer un sublime ouvrage!</p>
-<h2>«AU TIGRE, AU TIGRE!»</h2>
+<p>«AU TIGRE, AU TIGRE!»</p>
 <p>Reviens-tu content, chasseur fier? Frère, à l&#x27;affût j&#x27;eus froid hier. C&#x27;est ton gibier que j&#x27;aperçois? Frère, il broute encore sous bois. Où donc ta force et ton orgueil? Frère, ils ont fui mon cœur en deuil. Si vite pourquoi donc courir? Frère, à mon trou je vais mourir.</p>
 <p>Quand Mowgli quitta la caverne du loup, après sa querelle avec le clan au Rocher du Conseil, il descendit aux terres cultivées où habitaient les villageois, mais il ne voulut pas s&#x27;y arrêter: la jungle était trop proche, et il savait qu&#x27;il s&#x27;était fait au moins un ennemi dangereux au Conseil. Il continua sa course par le chemin raboteux qui descendait la vallée; il le suivit au grand trot, d&#x27;une seule traite, environ vingt milles, et parvint à une contrée qu&#x27;il ne connaissait pas. La vallée s&#x27;ouvrait sur une grande plaine parsemée de rochers et coupée de ravins. A un bout se trouvait un petit village, et à l&#x27;autre l&#x27;épaisse jungle s&#x27;abaissait rapidement vers les pâturages et s&#x27;y arrêtait net, comme si on l&#x27;eût coupée d&#x27;un coup de bêche. Partout dans la plaine les bœufs et les buffles paissaient, et, quand les petits garçons qui sont chargés de la garde des troupeaux aperçurent Mowgli, ils poussèrent des cris et se sauvèrent, et les chiens parias jaunes, qui errent toujours autour d&#x27;un village hindou, se mirent à aboyer. Mowgli avança, car il se sentait très faim, et en arrivant à la barrière du village, il vit le gros buisson épineux, que l&#x27;on tirait devant, chaque jour au crépuscule, poussé sur l&#x27;un des côtés.</p>
 <p>--Hum!--dit-il, car il avait rencontré plus d&#x27;une de ces barricades dans ses expéditions nocturnes en quête de choses à manger.--Ainsi, les hommes craignent le peuple de la jungle même ici!</p>
@@ -647,7 +684,7 @@ h2 + p, .first { text-indent: 0; }
 <p>--Et nous chasserons avec toi! dirent les quatre louveteaux.</p>
 <p>Mowgli s&#x27;en alla, et, dès ce jour, il chassa dans la jungle avec les quatre petits. Mais il ne fut pas toujours seul, car, au bout de quelques années, il devint homme et se maria.</p>
 <p>Mais c&#x27;est là une histoire pour les grandes personnes.</p>
-<h2>LA CHANSON DE MOWGLI</h2>
+<h2 class="chapter" id="c11">La chanson de Mowgli</h2>
 <p>(Telle qu&#x27;il la chanta au Rocher du Conseil lorsqu&#x27;il dansa sur la peau de Shere Khan)</p>
 <p>C&#x27;est la chanson de Mowgli.--Moi, Mowgli, je chante. Que la Jungle écoute quelles choses j&#x27;ai faites:</p>
 <p>Shere Khan dit qu&#x27;il tuerait--qu&#x27;il tuerait--que près des portes, au crépuscule, il tuerait Mowgli la Grenouille!</p>
@@ -655,8 +692,8 @@ h2 + p, .first { text-indent: 0; }
 <p>Je suis seul dans les pâturages. Viens, Frère Gris! Et toi, Solitaire, viens, nous chassons la grosse bête ce soir.</p>
 <p>Rassemblez les grands taureaux buffles, les taureaux à la peau bleue, aux yeux furieux. Menez-les çà et là selon que je l&#x27;ordonne. Dors-tu encore Shere Khan? Debout, oh! debout. Voici que je viens et les taureaux derrière moi!</p>
 <p>Rama, le roi des buffles, frappa du pied. Eaux de la Waingunga, où Shere Khan s&#x27;en est-il allé?</p>
-<h2>Il n&#x27;est point Sahi pour creuser des trous, ni Mor le Paon pour voler.</h2>
-<h2>Il n&#x27;est point Mang, la Chauve-Souris, pour se suspendre aux branches.</h2>
+<p>Il n&#x27;est point Sahi pour creuser des trous, ni Mor le Paon pour voler.</p>
+<p>Il n&#x27;est point Mang, la Chauve-Souris, pour se suspendre aux branches.</p>
 <p>Petits bambous qui craquez, dites-moi où il a fui?</p>
 <p>Ow! il est là. Ahao! il est là. Sous les pieds de Rama gît le boiteux. Lève-toi et tue! Voici du gibier; brise le cou des taureaux!</p>
 <p>Chut! il dort. Nous ne l&#x27;éveillerons pas, car sa force est très grande. Les vautours sont descendus pour la voir. Les fourmis noires sont montées pour la connaître. Il se tient grande assemblée en son honneur.</p>
@@ -674,7 +711,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Ces deux choses se combattent en moi comme les serpents se battent au printemps. L&#x27;eau tombe de mes yeux, et pourtant, je ris. Pourquoi?</p>
 <p>Je suis deux Mowglis, mais la peau de Shere Khan est sous mes pieds. Toute la Jungle sait que j&#x27;ai tué Shere Khan. Regardez, regardez bien, ô Loups!</p>
 <p>Ahae! Mon cœur est lourd de choses que je ne comprends pas.</p>
-<h2>LE PHOQUE BLANC</h2>
+<h2 class="chapter" id="c12">Le phoque blanc</h2>
 <p>Dors, mon baby, la nuit est derrière nous, Et noires sont les eaux qui brillaient si vertes; Par-dessus les brisants la lune nous cherche Au repos entre leurs seins soyeux et doux. Où flot touche flot, fais là ton nid clos, Roule ton corps las, mon petit nageur, Ni vent, ni requin t&#x27;éveille ou te blesse Dormant dans les bras des lents flots berceurs.</p>
 <p>(Berceuse phoque).</p>
 <p>Les choses que je vais raconter sont arrivées il y a plusieurs années, en un lieu appelé Novastoshnah, à la pointe nord-est de l&#x27;île de Saint-Paul, là-bas, là-bas, dans la mer de Behring. Limmershin, le roitelet d&#x27;hiver, m&#x27;a raconté l&#x27;histoire quand il fut jeté par le vent dans le gréement d&#x27;un steamer en route pour le Japon. Je l&#x27;avais descendu dans ma cabine, réchauffé et nourri durant deux jours, jusqu&#x27;à ce qu&#x27;il fût en état de retourner à Saint-Paul. Limmershin est un drôle de petit oiseau, mais qui sait dire la vérité.</p>
@@ -825,7 +862,7 @@ h2 + p, .first { text-indent: 0; }
 <p>--Nous viendrons, dirent des milliers de voix lasses. Nous suivrons Kotick, le Phoque Blanc.</p>
 <p>Alors, Kotick enfonça sa tête entre ses épaules et ferma les yeux, orgueilleusement. Ce n&#x27;était plus un phoque blanc, en ce moment, mais il était rouge de la tête à la queue. Malgré cela, il eût dédaigné de regarder ou de toucher une seule de ses blessures.</p>
 <p>Une semaine plus tard, lui et son armée (environ un millier de holluschickies et de vieux phoques pour le moment) partirent vers le nord, vers le tunnel des Vaches-Marines. Kotick les guidait. Et les phoques qui demeurèrent à Novastoshnah les traitèrent de fous. Mais, le printemps suivant, quand ils se retrouvèrent tous parmi les bancs de pêche du Pacifique, les phoques de Kotick firent de tels récits des grèves d&#x27;au delà le tunnel de Sea Cow, que des phoques de plus en plus nombreux quittèrent Novastoshnah. Sans doute, cela ne se fit pas tout de suite, car les phoques ne sont pas des gens fort malins, et il leur faut du temps pour peser le pour et le contre des choses; mais, d&#x27;année en année, un plus grand nombre d&#x27;entre eux s&#x27;en allaient de Novastoshnah, de Lukannon et des autres nurseries, vers les calmes grèves abritées où Kotick trône tout l&#x27;été, plus grand chaque année, plus gros et plus fort pendant que les holluschickies jouent autour de lui, en cette mer où nul homme ne vient.</p>
-<h2>LUKANNON</h2>
+<h2 class="chapter" id="c13">Lukannon</h2>
 <p>(Ceci est une sorte d&#x27;hymne national phoque, sur le mode triste.)</p>
 <p>Au matin, j&#x27;ai trouvé mes frères (oh! que je suis vieux!) Là-bas où la houle d&#x27;été rugit aux caps rocheux. Leur chœur montant couvre le chant des brisants, et de joie Chante, grève de Lukannon, par deux millions de voix!</p>
 <p>Chantez la lente sieste, au bord de la lagune, Les escadrons soufflant qui descendent les dunes, Les danses, aux minuits fouettés de feux marins, Grève de Lukannon, avant que l&#x27;homme vînt!</p>
@@ -833,7 +870,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Grève de Lukannon... l&#x27;avoine aux longs épis, La brume ruisselante, et lichens en tapis, Les plateaux de nos jeux et leurs roches usées, Grève de Lukannon... ô plage où je suis né!</p>
 <p>Au matin, j&#x27;ai trouvé mes frères, tristes, solitaires; Qu&#x27;on nous fusille dans l&#x27;eau, qu&#x27;on nous assomme sur terre, Que l&#x27;homme nous mène au saloir, sot bétail orphelin, Pourtant nous chantons Lukannon... avant que l&#x27;homme vînt.</p>
 <p>En route, au Sud, au Sud... ô Goverooshka, va, Dis notre deuil aux Rois des Mers tandis qu&#x27;hélas, Vide bientôt ainsi que l&#x27;œuf du requin mort, Grève de Lukannon, tu nous connais encore!</p>
-<h2>«RIKKI-TIKKI-TAVI»</h2>
+<p>«RIKKI-TIKKI-TAVI»</p>
 <p>L&#x27;Œil-Rouge à la Peau-Ridée Au trou devant lui dardée, L&#x27;Œil-Rouge a crié très fort: Viens danser avec la mort! Œil à œil, et tête à tête, (En mesure, Nag) L&#x27;un mort, finira la fête (A ta guise, Nag) Tour pour tour, et rond pour rond (Cours, cache-toi, Nag) Manqué!... mort à Chaperon! (Malheur à toi, Nag!)</p>
 <p>Ceci est l&#x27;histoire de la grande guerre que Rikki-tikki-tavi livra tout seul dans les salles de bain du grand bungalow, au cantonnement de Segowlee. Darzee, l&#x27;oiseau-tailleur, l&#x27;aida, et Chuchundra, le rat-musqué, qui n&#x27;ose jamais marcher au milieu du plancher, mais se glisse toujours le long du mur, lui donna un avis; mais Rikki-tikki fit la vraie besogne.</p>
 <p>C&#x27;était une mangouste. Il rappelait assez un petit chat par la fourrure et la queue, mais plutôt une belette par la tête et les habitudes. Ses yeux étaient roses comme le bout de son nez affairé; il pouvait se gratter partout où il lui plaisait, avec n&#x27;importe quelle patte, de devant ou de derrière, à son choix; il pouvait gonfler sa queue jusqu&#x27;à ce qu&#x27;elle ressemblât à un goupillon pour nettoyer les bouteilles, et son cri de guerre, lorsqu&#x27;il louvoyait à travers l&#x27;herbe longue, était: Rikk-tikk-tikki-tikki-tchk!</p>
@@ -986,11 +1023,11 @@ h2 + p, .first { text-indent: 0; }
 <p>Rikki-tikki se réveilla en sursaut, car les mangoustes dorment légèrement.</p>
 <p>--Oh, c&#x27;est vous, dit-il. De quoi vous tourmentez-vous? Tous les cobras sont morts; et s&#x27;il en restait..., je suis là.</p>
 <p>Rikki-tikki pouvait à bon droit être fier de lui; mais il n&#x27;en devint pas trop fier, et il garda ce jardin, dorénavant, en vraie mangouste... de la dent et du jarret, si bien que jamais un cobra n&#x27;osa montrer sa tête à l&#x27;intérieur des murs.</p>
-<h2>L&#x27;ODE DE DARZEE</h2>
+<h2 class="chapter" id="c14">L&#x27;ode de Darzee</h2>
 <p>(Chantée en l&#x27;honneur de Rikki-tikki-tavi)</p>
 <p>Tailleur et chantre je suis, Je connais doubles déduits; Fier de ma vive chanson, Fier de coudre ma maison. Dessus, puis dessous, ainsi j&#x27;ai tissé ma musique, ainsi ma maison. Mère, relève la tête! Plus de danger qui nous guette. Chante à tes petits encor, Morte au jardin gît la mort. L&#x27;effroi qui dormit sous les roses, dort sur le fumier, inerte et mort. Qui donc nous délivre, qui? Quel est son nom tout puissant? C&#x27;est le pur, le grand Rikki Tikki, dont l&#x27;œil est de sang... Rikk-tikki-tikki, à l&#x27;ivoire en fleur, le chasseur dont l&#x27;œil est de sang! Rendez-lui grâces, oiseaux, Avec queue en oriflamme, Rossignol, prête des mots... Non, car son los me réclame. Écoutez, je chante un los à Rikki, ô queue en panache, œil de flamme!..</p>
 <p>(Ici Rikki-tikki interrompit, de sorte que le reste de la chanson est perdu.)</p>
-<h2>TOOMAI DES ÉLÉPHANTS</h2>
+<h2 class="chapter" id="c15">Toomai des éléphants</h2>
 <p>Je me souviens de qui je fus. J&#x27;ai brisé la corde et la chaîne, Je me souviens de ma forêt et de ma vigueur ancienne. Je ne veux plus vendre mon dos pour une botte de roseaux: Je veux retourner à mes pairs, aux gîtes verts des taillis clos.</p>
 <p>Je veux m&#x27;en aller jusqu&#x27;au jour, partir dans le matin nouveau, Parmi le pur baiser des vents, la claire caresse de l&#x27;eau. J&#x27;oublierai l&#x27;anneau de mon pied, l&#x27;entrave qui veut me soumettre; Je veux revoir mes vieux amours, les jeux de mes frères sans maître.</p>
 <p>Kala Nag--autrement dit Serpent Noir--avait servi le Gouvernement de l&#x27;Inde, de toutes les manières dont un éléphant peut servir, pendant quarante-sept années; et, comme il avait au moins vingt ans lorsqu&#x27;il fut pris, cela lui faisait presque soixante-dix ans à cette heure, l&#x27;âge mur des éléphants.</p>
@@ -1087,13 +1124,13 @@ h2 + p, .first { text-indent: 0; }
 <p>--Écoutez, frères! Écoutez aussi, vous, messeigneurs, là, dans les lignes, car c&#x27;est moi, Machua Appa, qui parle! Ce petit ne s&#x27;appellera plus Petit Toomai, mais Toomai des Éléphants, comme son arrière-grand-père fut appelé avant lui. Ce que jamais homme n&#x27;a vu, il l&#x27;a vu durant la longue nuit, et la faveur du peuple éléphant et des dieux des jungles est avec lui. Il deviendra un grand traqueur, il deviendra plus grand que moi, oui moi, Machua Appa! Il suivra la piste fraîche, la piste éventée et la piste mêlée, d&#x27;un œil clair! Il ne lui arrivera pas de mal dans le keddah lorsqu&#x27;il courra sous le ventre des solitaires afin de les garrotter, et s&#x27;il glisse sous les pieds d&#x27;un mâle en train de charger, le mâle le reconnaîtra et ne l&#x27;écrasera pas. Aihai! messeigneurs, ici près dans les chaînes,--cria-t-il en courant sur le front de la ligne de piquets,--voici le petit qui a vu vos danses au fond de vos retraites cachées, le spectacle que jamais homme ne vit! Rendez-lui hommage, messeigneurs, Salaam Karo, mes enfants. Faites votre salut à Toomai des Éléphants! Gunya Pershad, ahaa! Hira Guj, Birchi Guj, ahaa!... Et toi, Pudmini, tu l&#x27;as vu à la danse; et toi aussi, Kala Nag, ô ma perle des Éléphants!... Ahaa! Ensemble! A Toomai des Éléphants! Barrao!</p>
 <p>Et au signal de cette clameur sauvage, la ligne entière des éléphants leva ses trompes jusqu&#x27;à ce que le bout de chacun touchât le front, et ils entonnèrent le plein salut, l&#x27;éclatante salve de trompettes, que seul entend le vice-roi des Indes, le Salaamut du Keddah.</p>
 <p>Mais, cette fois en l&#x27;unique honneur de Petit Toomai, qui avait vu ce que jamais homme ne vit auparavant, la danse des éléphants, la nuit, tout seul, au cœur des montagnes de Garo!</p>
-<h2>SHIVA ET LA SAUTERELLE</h2>
+<h2 class="chapter" id="c16">Shiva et la sauterelle</h2>
 <p>(La chanson que la mère de Toomai chantait à son bébé.)</p>
 <p>Shiv qui versa les moissons et qui fit souffler les vents, Assis aux portes en fleur d&#x27;un jour des anciens temps, Donnait à chacun sa part: vivre, labeur, destinée, Du mendiant sur le seuil à la tête couronnée. Toutes choses a-t-il faites, Shiva le Préservateur, Mahadeo! Mahadeo! toutes choses: L&#x27;épine pour le chameau roux, le foin pour les bœufs du labour Et le sein des mères pour la tête endormie, ô petit fils de mon amour! Au riche il donne du blé, du mil au pauvre, il apporte Des reliefs à l&#x27;homme saint qui quête de porte en porte, Au tigre des bestiaux, des charognes au vautour, Des os aux loups méchants qui la nuit hurlent alentour; Nul ne lui parut trop haut, nul ne lui sembla trop bas... A ses côtés Parvâti suivait chacun de leurs pas, Puis, par jeu, de son mari pour éprouver le dessein Elle prit la sauterelle et la cacha dans son sein!</p>
 <p>C&#x27;est ainsi que fut joué Shiva le Préservateur, Mahadeo! Mahadeo! Viens, regarde. Très grands sont les chameaux roux, pesants les bœufs du labour, Mais c&#x27;était la Moindre des Petites Choses, ô petit fils de mon amour!</p>
 <p>Lorsque tous furent passés, elle dit, rieuse: O Maître, Tant de milliers d&#x27;affamés as-tu pu tous les repaître? Shiva, riant, répondit: Tous ont une part, la leur, Tous, même le Tout-Petit qui se cache sur ton cœur.</p>
 <p>La voleuse Parvâti tira de sa robe ouverte Le moindre des Tout-Petits qui rongeait une herbe verte, Ce voyant, elle craignit, et s&#x27;émerveilla devant Shiva le Dispensateur qui nourrit chaque vivant. Toutes choses a-t-il faites, Shiva le Préservateur Mahadeo! Mahadeo! toutes choses: L&#x27;épine pour le chameau roux, le foin pour les bœufs du labour, Et le sein des mères pour la tête endormie, ô petit fils de mon amour!</p>
-<h2>SERVICE DE LA REINE</h2>
+<h2 class="chapter" id="c17">Service de la reine</h2>
 <p>Il avait plu à verse pendant un grand mois--plu sur un camp de trente mille hommes et de milliers de chameaux, d&#x27;éléphants, de chevaux, de bœufs, et de mulets, tous rassemblés dans un endroit appelé Rawal Pindi, pour être passés en revue par le vice-roi de l&#x27;Inde.</p>
 <p>Le vice-roi recevait la visite de l&#x27;Émir d&#x27;Afghanistan--roi sauvage d&#x27;un pays plus sauvage encore; et l&#x27;Émir avait amené comme garde du corps huit cents hommes avec leurs chevaux, qui n&#x27;avaient jamais vu un camp ni une locomotive de leur vie--des hommes sauvages et des chevaux sauvages nés quelque part au fond de l&#x27;Asie centrale. Chaque nuit on pouvait être sûr qu&#x27;une troupe de ces chevaux briseraient leurs entraves et galoperaient du haut en bas du camp à travers la boue, dans l&#x27;obscurité, ou que les chameaux rompraient leurs entraves, et se mettraient à courir et à tomber par-dessus les cordes des tentes, et l&#x27;on peut imaginer quel agrément c&#x27;était là pour des gens qui avaient envie de dormir.</p>
 <p>Ma tente était dressée loin des lignes de chameaux, et je la croyais à l&#x27;abri; mais, une nuit quelqu&#x27;un passa brusquement la tête dans l&#x27;intérieur et cria:</p>
@@ -1208,7 +1245,7 @@ h2 + p, .first { text-indent: 0; }
 <p>--Tout cela est très beau, dit Billy, mais il ne suffit pas de donner à une chose un nom qui n&#x27;en finit pas pour y changer quoi que ce soit.</p>
 <p>--Chut! dit le cheval de troupe. Je crois que je comprends ce que Double-Queue veut dire.</p>
 <p>--Vous comprendrez mieux dans une minute, dit Double-Queue en colère. Pour le moment, expliquez-moi pourquoi vous n&#x27;aimez pas ceci!</p>
-<h2>Il commença à trompeter furieusement de toute sa force.</h2>
+<p>Il commença à trompeter furieusement de toute sa force.</p>
 <p>--Arrêtez! dirent ensemble Billy et le cheval de troupe.</p>
 <p>Et je pus les entendre trépigner et trembler. Le trompettement d&#x27;un éléphant est toujours désagréable, spécialement dans la nuit noire.</p>
 <p>--Je ne m&#x27;arrêterai pas, dit Double-Queue. Ne m&#x27;expliquerez-vous pas cela, s&#x27;il vous plaît? Hhrrmph! Rrrt! Rrrmph! Rrrhha!</p>
@@ -1272,7 +1309,7 @@ h2 + p, .first { text-indent: 0; }
 <p>--Elles obéissent, comme font les hommes: mulet, cheval, éléphant, ou bœuf, obéit à son conducteur, le conducteur à son sergent, le sergent à son lieutenant, le lieutenant à son capitaine, le capitaine à son major, le major à son colonel, le colonel au brigadier commandant trois régiments, le brigadier au général, qui obéit au Vice-Roi, qui est le serviteur de l&#x27;Impératrice. Voilà comment cela se fait.</p>
 <p>--Je voudrais bien qu&#x27;il en soit de même en Afghanistan! dit le chef; car, là, nous n&#x27;obéissons qu&#x27;à notre propre volonté.</p>
 <p>--Et c&#x27;est pour cela,--dit l&#x27;officier indigène, en frisant sa moustache,--que votre Émir, auquel vous n&#x27;obéissez pas, doit venir ici prendre les ordres de notre Vice-Roi.</p>
-<h2>CHANT DE PARADE DES ANIMAUX DU CAMP</h2>
+<h2 class="chapter" id="c18">Chant de parade des animaux du camp</h2>
 <p>Eléphants de batterie.</p>
 <p>Alexandre nous emprunta la force de l&#x27;Alcide, La sagesse de nos fronts, la ruse de nos genoux, Depuis, aux cous asservis pèse encor son joug solide. Aux attelages de dix pieds faites place, tous, Au cortège Des grosses pièces de siège!</p>
 <p>Bœufs de batterie.</p>
@@ -1290,33 +1327,5 @@ h2 + p, .first { text-indent: 0; }
 <p>Nous sommes les Enfants du Camp, Nous servons chacun à son rang, Fils du joug, du bât, des fardeaux, Harnais au flanc, ou sac au dos. Voyez notre ligne ondulée, Ainsi qu&#x27;une entrave doublée, Qui par la plaine va, glissant, Tout balayer au champ du sang; Tandis qu&#x27;à nos côtés les hommes, Poudreux, muets et les yeux lourds, Ne savent pas pourquoi nous sommes, Eux et nous, voués sans retours, A souffrir et marcher toujours. Nous sommes les Enfants du Camp, Nous servons chacun à son rang, Fils du joug, du bât, des fardeaux, Harnais au flanc, et sac au dos!</p>
 <p>[2] Vieil air de ralliement des partisans des Stuarts au temps de Cromwell. Il rythme, en général, les défilés au galop, dans la cavalerie anglaise.</p>
 <p>FIN</p>
-<h2>TABLE</h2>
-<p>LES FRÈRES DE MOWGLI                                 5 Chanson de chasse du clan de Seeonee          47</p>
-<p>LA CHASSE DE KAA                                    49 Chanson de route des Bandar-Log              101</p>
-<p>«AU TIGRE, AU TIGRE!»                              103 La Chanson de Mowgli                         139</p>
-<p>LE PHOQUE BLANC                                    141 Lukannon                                     181</p>
-<p>«RIKKI-TIKKI-TAVI»                                 183 L&#x27;Ode de Darzee                              217</p>
-<p>TOOMAI DES ÉLÉPHANTS                               219 Shiva et la Sauterelle                       258</p>
-<p>SERVICE DE LA REINE                                261 Chant de parade des animaux du Camp          296</p>
-<h2>POITIERS</h2>
-<h2>IMPRIMERIE BLAIS ET ROY</h2>
-<h2>7, RUE VICTOR-HUGO, 7.</h2>
-<p>Liste des corrections</p>
-<p>Page 32: «sûr» remplacé par «sûre» (Mais es-tu sûre, ô ma Bagheera...)</p>
-<p>Page 44: «es» remplacé par «est» (la jungle t&#x27;est bien fermée...)</p>
-<p>Page 93: «cruellelement» remplacé par «cruellement» (ils vous ont cruellement malmenés.)</p>
-<p>Page 122: «le le» remplacé par «le» (le service de couper le troupeau en deux?)</p>
-<p>Page 131: «Khanhiwara» remplacé par «Khaniwara» (tu emporteras la peau à Khaniwara pour avoir la récompense.)</p>
-<p>Pages 146 à 180: «holluschickie» remplacé par «holluschickies» quand ce mot devrait clairement être au pluriel.</p>
-<p>Page 164: «Sea Witch» remplacé par «Sea Vitch» (tandis que Sea Vitch roulait d&#x27;un flanc sur l&#x27;autre...)</p>
-<p>Page 175: «va» remplacé par «vas» (mais tu ne vas pas arriver...)</p>
-<p>Page 200: «à» ajouté (il y a quelque chose à gagner en tuant les gens!)</p>
-<p>Page 202: «arcbouta» remplacé par «arc-bouta» (Rikki s&#x27;arc-bouta...)</p>
-<p>Page 240: «Siva» remplacé par «Shiva» (vieille chanson sur le grand dieu Shiva.)</p>
-<p>Page 245: «ils» remplacé par «il» (quand il les posait...)</p>
-<p>Page 246: «alourdis» remplacé par «alourdies» (les fleurs en forme de cloches, grands liserons d&#x27;un blanc de cire, tombaient comme alourdies de sommeil)</p>
-<p>Page 270: «je ne ne pouvais même pas vous trouver» remplacé par «je ne pouvais même pas vous trouver».</p>
-<p>Page 296: «du» remplacé par «de» (Des grosses pièces de siège!)</p>
-<p>End of Project Gutenberg&#x27;s Le livre de la Jungle, by Rudyard Kipling</p>
-<p class="colophon">Texte du domaine public, source : Project Gutenberg (#54183). Traduction : Fabulet, Louis († 1933), Humières, Robert d&#x27; († 1915). Édition numérique EbookClassics.</p>
+<p class="colophon">Texte du domaine public. Édition numérique EbookClassics.</p>
 </body></html>

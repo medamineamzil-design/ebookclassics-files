@@ -1,18 +1,8 @@
 An Essay on the Principle of Population
 Thomas Malthus
 
-An Essay on the Principle of Population
 
-Thomas Malthus
-
-1798
-
-AN ESSAY ON THE PRINCIPLE OF POPULATION, AS IT AFFECTS THE FUTURE IMPROVEMENT OF SOCIETY WITH REMARKS ON THE SPECULATIONS OF MR. GODWIN, M. CONDORCET, AND OTHER WRITERS.
-
-LONDON, PRINTED FOR J. JOHNSON, IN ST. PAUL'S CHURCH-YARD, 1798.
-
-
-PREFACE
+Preface
 
 
 The following Essay owes its origin to a conversation with a friend, on the subject of Mr Godwin's essay on avarice and profusion, in his Enquirer. The discussion started the general question of the future improvement of society, and the Author at first sat down with an intention of merely stating his thoughts to his friend, upon paper, in a clearer manner than he thought he could do in conversation. But as the subject opened upon him, some ideas occurred, which he did not recollect to have met with before; and as he conceived that every least light, on a topic so generally interesting, might be received with candour, he determined to put his thoughts in a form for publication.
@@ -26,6 +16,7 @@ The view which he has given of human life has a melancholy hue, but he feels con
 If he should succeed in drawing the attention of more able men to what he conceives to be the principal difficulty in the way to the improvement of society and should, in consequence, see this difficulty removed, even in theory, he will gladly retract his present opinions and rejoice in a conviction of his error.
 
 7 June 1798
+
 
 
 CHAPTER 1
@@ -60,7 +51,7 @@ The cause of this neglect on the part of the advocates for the perfectibility of
 In entering upon the argument I must premise that I put out of the question, at present, all mere conjectures, that is, all suppositions, the probable realization of which cannot be inferred upon any just philosophical grounds. A writer may tell me that he thinks man will ultimately become an ostrich. I cannot properly contradict him. But before he can expect to bring any reasonable person over to his opinion, he ought to shew that the necks of mankind have been gradually elongating, that the lips have grown harder and more prominent, that the legs and feet are daily altering their shape, and that the hair is beginning to change into stubs of feathers. And till the probability of so wonderful a conversion can be shewn, it is surely lost time and lost eloquence to expatiate on the happiness of man in such a state; to describe his powers, both of running and flying, to paint him in a condition where all narrow luxuries would be contemned, where he would be employed only in collecting the necessaries of life, and where, consequently, each man's share of labour would be light, and his portion of leisure ample.
 
 
-I THINK I MAY FAIRLY MAKE TWO POSTULATA.
+I think I may fairly make two postulata.
 
 
 First, That food is necessary to the existence of man.
@@ -88,10 +79,13 @@ Consequently, if the premises are just, the argument is conclusive against the p
 I have thus sketched the general outline of the argument, but I will examine it more particularly, and I think it will be found that experience, the true source and foundation of all knowledge, invariably confirms its truth.
 
 
+
 CHAPTER 2
 
 
+
 I said that population, when unchecked, increased in a geometrical ratio, and subsistence for man in an arithmetical ratio.
+
 
 Let us examine whether this position be just. I think it will be allowed, that no state has hitherto existed (at least that we have any account of) where the manners were so pure and simple, and the means of subsistence so abundant, that no check whatever has existed to early marriages, among the lower classes, from a fear of not providing well for their families, or among the higher classes, from a fear of lowering their condition in life. Consequently in no state that we have yet known has the power of population been left to exert itself with perfect freedom.
 
@@ -158,6 +152,7 @@ And that the superior power of population cannot be checked without producing mi
 But, in order more fully to ascertain the validity of these three propositions, let us examine the different states in which mankind have been known to exist. Even a cursory review will, I think, be sufficient to convince us that these propositions are incontrovertible truths.
 
 
+
 CHAPTER 3
 
 
@@ -184,6 +179,7 @@ Where there is any inequality of conditions, and among nations of shepherds this
 But without knowing enough of the minute and intimate history of these people, to point out precisely on what part the distress for want of food chiefly fell, and to what extent it was generally felt, I think we may fairly say, from all the accounts that we have of nations of shepherds, that population invariably increased among them whenever, by emigration or any other cause, the means of subsistence were increased, and that a further population was checked, and the actual population kept equal to the means of subsistence, by misery and vice.
 
 For, independently of any vicious customs that might have prevailed amongst them with regard to women, which always operate as checks to population, it must be acknowledged, I think, that the commission of war is vice, and the effect of it misery, and none can doubt the misery of want of food.
+
 
 
 CHAPTER 4
@@ -220,6 +216,7 @@ The labourer who earns eighteen pence a day and lives with some degree of comfor
 The servants who live in gentlemen's families have restraints that are yet stronger to break through in venturing upon marriage. They possess the necessaries, and even the comforts of life, almost in as great plenty as their masters. Their work is easy and their food luxurious compared with the class of labourers. And their sense of dependence is weakened by the conscious power of changing their masters, if they feel themselves offended. Thus comfortably situated at present, what are their prospects in marrying? Without knowledge or capital, either for business, or farming, and unused and therefore unable, to earn a subsistence by daily labour, their only refuge seems to be a miserable ale-house, which certainly offers no very enchanting prospect of a happy evening to their lives. By much the greater part, therefore, deterred by this uninviting view of their future situation, content themselves with remaining single where they are.
 
 If this sketch of the state of society in England be near the truth, and I do not conceive that it is exaggerated, it will be allowed that the preventive check to population in this country operates, though with varied force, through all the classes of the community. The same observation will hold true with regard to all old states. The effects, indeed, of these restraints upon marriage are but too conspicuous in the consequent vices that are produced in almost every part of the world, vices that are continually involving both sexes in inextricable unhappiness.
+
 
 
 CHAPTER 5
@@ -286,6 +283,7 @@ To these two great checks to population, in all long occupied countries, which I
 All these checks may be fairly resolved into misery and vice. And that these are the true causes of the slow increase of population in all the states of modern Europe, will appear sufficiently evident from the comparatively rapid increase that has invariably taken place whenever these causes have been in any considerable degree removed.
 
 
+
 CHAPTER 6
 
 
@@ -310,6 +308,7 @@ The population of the thirteen American States before the war was reckoned at ab
 The fertile province of Flanders, which has been so often the seat of the most destructive wars, after a respite of a few years, has appeared always as fruitful and as populous as ever. Even the Palatinate lifted up its head again after the execrable ravages of Louis the Fourteenth. The effects of the dreadful plague in London in 1666 were not perceptible fifteen or twenty years afterwards. The traces of the most destructive famines in China and Indostan are by all accounts very soon obliterated. It may even be doubted whether Turkey and Egypt are upon an average much less populous for the plagues that periodically lay them waste. If the number of people which they contain be less now than formerly, it is, probably, rather to be attributed to the tyranny and oppression of the government under which they groan, and the consequent discouragements to agriculture, than to the loss which they sustain by the plague. The most tremendous convulsions of nature, such as volcanic eruptions and earthquakes, if they do not happen so frequently as to drive away the inhabitants, or to destroy their spirit of industry, have but a trifling effect on the average population of any state. Naples, and the country under Vesuvius, are still very populous, notwithstanding the repeated eruptions of that mountain. And Lisbon and Lima are now, probably, nearly in the same state with regard to population as they were before the last earthquakes.
 
 
+
 CHAPTER 7
 
 
@@ -318,7 +317,7 @@ A probable cause of epidemics--Extracts from Mr Suessmilch's tables--Periodical 
 By great attention to cleanliness, the plague seems at length to be completely expelled from London. But it is not improbable that among the secondary causes that produce even sickly seasons and epidemics ought to be ranked a crowded population and unwholesome and insufficient food. I have been led to this remark, by looking over some of the tables of Mr Suessmilch, which Dr Price has extracted in one of his notes to the postscript on the controversy respecting the population of England and Wales. They are considered as very correct, and if such tables were general, they would throw great light on the different ways by which population is repressed and prevented from increasing beyond the means of subsistence in any country. I will extract a part of the tables, with Dr Price's remarks.
 
 
-IN THE KINGDOM OF PRUSSIA, AND DUKEDOM OF LITHUANIA
+In the Kingdom of Prussia, and Dukedom of Lithuania
 
 
 Proportion   Proportion Births  Burials Marriages of Births to of Births to Marriages     Burials 10 Yrs to 1702   21,963  14,718   5,928      37 to 10    150 to 100 5 Yrs to 1716    21,602  11,984   4,968      37 to 10    180 to 100 5 Yrs to 1756    28,392  19,154   5,599      50 to 10    148 to 100
@@ -328,7 +327,7 @@ Proportion   Proportion Births  Burials Marriages of Births to of Births to Marr
 It may be remarked, that the greatest proportion of births to burials, was in the five years after the great pestilence.
 
 
-DUCHY OF POMERANIA
+Duchy of Pomerania
 
 
 Proportion   Proportion Annual Average   Births  Burials Marriages of Births to of Births to Marriages     Burials 6 yrs to 1702   6,540     4,647   1,810      36 to 10    140 to 100 6 yrs to 1708   7,455     4,208   1,875      39 to 10    177 to 100 6 yrs to 1726   8,432     5,627   2,131      39 to 10    150 to 100 6 yrs to 1756  12,767     9,281   2,957      43 to 10    137 to 100
@@ -338,7 +337,7 @@ Proportion   Proportion Annual Average   Births  Burials Marriages of Births to 
 Is it not probable that in this case the number of inhabitants had increased faster than the food and the accommodations necessary to preserve them in health? The mass of the people would, upon this supposition, be obliged to live harder, and a greater number would be crowded together in one house, and it is not surely improbable that these were among the natural causes that produced the three sickly years. These causes may produce such an effect, though the country, absolutely considered, may not be extremely crowded and populous. In a country even thinly inhabited, if an increase of population take place, before more food is raised, and more houses are built, the inhabitants must be distressed in some degree for room and subsistence. Were the marriages in England, for the next eight or ten years, to be more prolifick than usual, or even were a greater number of marriages than usual to take place, supposing the number of houses to remain the same, instead of five or six to a cottage, there must be seven or eight, and this, added to the necessity of harder living, would probably have a very unfavourable effect on the health of the common people.
 
 
-NEUMARK OF BRANDENBURGH
+Neumark of Brandenburgh
 
 
 Proportion   Proportion Annual Average   Births  Burials Marriages of Births to of Births to Marriages    Burials 5 yrs to 1701    5,433    3,483  1,436      37 to 10    155 to 100 5 yrs to 1726    7,012    4,254  1,713      40 to 10    164 to 100 5 yrs to 1756    7,978    5,567  1,891      42 to 10    143 to 100
@@ -346,7 +345,7 @@ Proportion   Proportion Annual Average   Births  Burials Marriages of Births to 
 "Epidemics prevailed for six years, from 1736, to 1741, which checked the increase."
 
 
-DUKEDOM OF MAGDEBURGH
+Dukedom of Magdeburgh
 
 
 Proportion   Proportion Annual Average   Births  Burials Marriages of Births to of Births to Marriages    Burials 5 yrs to 1702    6,431   4,103   1,681      38 to 10    156 to 100 5 yrs to 1717    7,590   5,335   2,076      36 to 10    142 to 100 5 yrs to 1756    8,850   8,069   2,193      40 to 10    109 to 100
@@ -394,6 +393,7 @@ That the increase of population is necessarily limited by the means of subsisten
 That population does invariably increase when the means of subsistence increase. And that the superior power of population it repressed, and the actual population kept equal to the means of subsistence, by misery and vice?
 
 
+
 CHAPTER 8
 
 
@@ -422,6 +422,7 @@ There is no person who does not see how very distant such a period is from us, b
 Mr Condorcet's picture of what may be expected to happen when the number of men shall surpass the means of their subsistence is justly drawn. The oscillation which he describes will certainly take place and will without doubt be a constantly subsisting cause of periodical misery. The only point in which I differ from Mr Condorcet with regard to this picture is the period when it may be applied to the human race. Mr Condorcet thinks that it cannot possibly be applicable but at an era extremely distant. If the proportion between the natural increase of population and food which I have given be in any degree near the truth, it will appear, on the contrary, that the period when the number of men surpass their means of subsistence has long since arrived, and that this necessity oscillation, this constantly subsisting cause of periodical misery, has existed ever since we have had any histories of mankind, does exist at present, and will for ever continue to exist, unless some decided change take place in the physical constitution of our nature.
 
 Mr Condorcet, however, goes on to say that should the period, which he conceives to be so distant, ever arrive, the human race, and the advocates for the perfectibility of man, need not be alarmed at it. He then proceeds to remove the difficulty in a manner which I profess not to understand. Having observed, that the ridiculous prejudices of superstition would by that time have ceased to throw over morals a corrupt and degrading austerity, he alludes, either to a promiscuous concubinage, which would prevent breeding, or to something else as unnatural. To remove the difficulty in this way will, surely, in the opinion of most men, be to destroy that virtue and purity of manners, which the advocates of equality, and of the perfectibility of man, profess to be the end and object of their views.
+
 
 
 CHAPTER 9
@@ -468,6 +469,7 @@ Many, I doubt not, will think that the attempting gravely to controvert so absur
 On the contrary, a candid investigation of these subjects, accompanied with a perfect readiness to adopt any theory warranted by sound philosophy, may have a tendency to convince them that in forming improbable and unfounded hypotheses, so far from enlarging the bounds of human science, they are contracting it, so far from promoting the improvement of the human mind, they are obstructing it; they are throwing us back again almost into the infancy of knowledge and weakening the foundations of that mode of philosophising, under the auspices of which science has of late made such rapid advances. The present rage for wide and unrestrained speculation seems to be a kind of mental intoxication, arising, perhaps, from the great and unexpected discoveries which have been made of late years, in various branches of science. To men elate and giddy with such successes, every thing appeared to be within the grasp of human powers; and, under this illusion, they confounded subjects where no real progress could be proved with those where the progress had been marked, certain, and acknowledged. Could they be persuaded to sober themselves with a little severe and chastised thinking, they would see, that the cause of truth, and of sound philosophy, cannot but suffer by substituting wild flights and unsupported assertions for patient investigation, and well authenticated proofs.
 
 Mr Condorcet's book may be considered not only as a sketch of the opinions of a celebrated individual, but of many of the literary men in France at the beginning of the Revolution. As such, though merely a sketch, it seems worthy of attention.
+
 
 
 CHAPTER 10
@@ -546,6 +548,7 @@ In the supposition I have made, I have undoubtedly taken the increase of populat
 I have taken no notice of emigration for obvious reasons. If such societies were instituted in other parts of Europe, these countries would be under the same difficulties with regard to population, and could admit no fresh members into their bosoms. If this beautiful society were confined to this island, it must have degenerated strangely from its original purity, and administer but a very small portion of the happiness it proposed; in short, its essential principle must be completely destroyed, before any of its members would voluntarily consent to leave it, and live under such governments as at present exist in Europe, or submit to the extreme hardships of first settlers in new regions. We well know, from repeated experience, how much misery and hardship men will undergo in their own country, before they can determine to desert it; and how often the most tempting proposals of embarking for new settlements have been rejected by people who appeared to be almost starving.
 
 
+
 CHAPTER 11
 
 
@@ -562,6 +565,7 @@ In the pursuit of every enjoyment, whether sensual or intellectual, reason, that
 I have endeavoured to expose the fallacy of that argument which infers an unlimited progress from a partial improvement, the limits of which cannot be exactly ascertained. It has appeared, I think, that there are many instances in which a decided progress has been observed, where yet it would be a gross absurdity to suppose that progress indefinite. But towards the extinction of the passion between the sexes, no observable progress whatever has hitherto been made. To suppose such an extinction, therefore, is merely to offer an unfounded conjecture, unsupported by any philosophical probabilities.
 
 It is a truth, which history I am afraid makes too clear, that some men of the highest mental powers have been addicted not only to a moderate, but even to an immoderate indulgence in the pleasures of sensual love. But allowing, as I should be inclined to do, notwithstanding numerous instances to the contrary, that great intellectual exertions tend to diminish the empire of this passion over man, it is evident that the mass of mankind must be improved more highly than the brightest ornaments of the species at present before any difference can take place sufficient sensibly to affect population. I would by no means suppose that the mass of mankind has reached its term of improvement, but the principal argument of this essay tends to place in a strong point of view the improbability that the lower classes of people in any country should ever be sufficiently free from want and labour to obtain any high degree of intellectual improvement.
+
 
 
 CHAPTER 12
@@ -612,6 +616,7 @@ The powers of selection, combination, and transmutation, which every seed shews,
 I ought perhaps again to make an apology to my readers for dwelling so long upon a conjecture which many, I know, will think too absurd and improbable to require the least discussion. But if it be as improbable and as contrary to the genuine spirit of philosophy as I own I think it is, why should it not be shewn to be so in a candid examination? A conjecture, however improbable on the first view of it, advanced by able and ingenious men, seems at least to deserve investigation. For my own part I feel no disinclination whatever to give that degree of credit to the opinion of the probable immortality of man on earth, which the appearances that can be brought in support of it deserve. Before we decide upon the utter improbability of such an event, it is but fair impartially to examine these appearances; and from such an examination I think we may conclude, that we have rather less reason for supposing that the life of man may be indefinitely prolonged, than that trees may be made to grow indefinitely high, or potatoes indefinitely large. Though Mr Godwin advances the idea of the indefinite prolongation of human life merely as a conjecture, yet as he has produced some appearances, which in his conception favour the supposition, he must certainly intend that these appearances should be examined and this is all that I have meant to do.
 
 
+
 CHAPTER 13
 
 
@@ -638,6 +643,7 @@ The frequency of crime among men, who, as the common saying is, know better, suf
 Under such circumstances, reasoning and arguments are not instruments from which success can be expected. At some future time perhaps, real satiety of sensual pleasures, or some accidental impressions that awakened the energies of his mind, might effect that, in a month, which the most patient and able expostulations might be incapable of effecting in forty years.
 
 
+
 CHAPTER 14
 
 
@@ -662,6 +668,7 @@ Were it of consequence to improve pinks and carnations, though we could have no 
 As the five propositions which I have been examining may be considered as the corner stones of Mr Godwin's fanciful structure, and, indeed, as expressing the aim and bent of his whole work, however excellent much of his detached reasoning may be, he must be considered as having failed in the great object of his undertaking. Besides the difficulties arising from the compound nature of man, which he has by no means sufficiently smoothed, the principal argument against the perfectibility of man and society remains whole and unimpaired from any thing that he has advanced. And as far as I can trust my own judgement, this argument appears to be conclusive, not only against the perfectibility of man, in the enlarged sense in which Mr Godwin understands the term, but against any very marked and striking change for the better, in the form and structure of general society; by which I mean any great and decided amelioration of the condition of the lower classes of mankind, the most numerous, and, consequently, in a general view of the subject, the most important part of the human race. Were I to live a thousand years, and the laws of nature to remain the same, I should little fear, or rather little hope, a contradiction from experience in asserting that no possible sacrifices or exertions of the rich, in a country which had been long inhabited, could for any time place the lower classes of the community in a situation equal, with regard to circumstances, to the situation of the common people about thirty years ago in the northern States of America.
 
 The lower classes of people in Europe may at some future period be much better instructed than they are at present; they may be taught to employ the little spare time they have in many better ways than at the ale-house; they may live under better and more equal laws than they have ever hitherto done, perhaps, in any country; and I even conceive it possible, though not probable that they may have more leisure; but it is not in the nature of things that they can be awarded such a quantity of money or subsistence as will allow them all to marry early, in the full confidence that they shall be able to provide with ease for a numerous family.
+
 
 
 CHAPTER 15
@@ -710,6 +717,7 @@ Perhaps there is no possible way in which wealth could in general be employed so
 The labour created by luxuries, though useful in distributing the produce of the country, without vitiating the proprietor by power, or debasing the labourer by dependence, has not, indeed, the same beneficial effects on the state of the poor. A great accession of work from manufacturers, though it may raise the price of labour even more than an increasing demand for agricultural labour, yet, as in this case the quantity of food in the country may not be proportionably increasing, the advantage to the poor will be but temporary, as the price of provisions must necessarily rise in proportion to the price of labour. Relative to this subject, I cannot avoid venturing a few remarks on a part of Dr Adam Smith's Wealth of Nations, speaking at the same time with that diffidence which I ought certainly to feel in differing from a person so justly celebrated in the political world.
 
 
+
 CHAPTER 16
 
 
@@ -754,6 +762,7 @@ An immense capital could not be employed in China in preparing manufactures for 
 The argument, perhaps, appears clearer when applied to China, because it is generally allowed that the wealth of China has been long stationary. With regard to any other country it might be always a matter of dispute at which of the two periods, compared, wealth was increasing the fastest, as it is upon the rapidity of the increase of wealth at any particular period that Dr Adam Smith says the condition of the poor depends. It is evident, however, that two nations might increase exactly with the same rapidity in the exchangeable value of the annual produce of their land and labour, yet if one had applied itself chiefly to agriculture, and the other chiefly to commerce, the funds for the maintenance of labour, and consequently the effect of the increase of wealth in each nation, would be extremely different. In that which had applied itself chiefly to agriculture, the poor would live in great plenty, and population would rapidly increase. In that which had applied itself chiefly to commerce, the poor would be comparatively but little benefited and consequently population would increase slowly.
 
 
+
 CHAPTER 17
 
 
@@ -782,6 +791,7 @@ Dr Price, speaking of the different stages of the civilized state, says, 'The fi
 A person who contemplated the happy state of the lower classes of people in America twenty years ago would naturally wish to retain them for ever in that state, and might think, perhaps, that by preventing the introduction of manufactures and luxury he might effect his purpose, but he might as reasonably expect to prevent a wife or mistress from growing old by never exposing her to the sun or air. The situation of new colonies, well governed, is a bloom of youth that no efforts can arrest. There are, indeed, many modes of treatment in the political, as well as animal, body, that contribute to accelerate or retard the approaches of age, but there can be no chance of success, in any mode that could be devised, for keeping either of them in perpetual youth. By encouraging the industry of the towns more than the industry of the country, Europe may be said, perhaps, to have brought on a premature old age. A different policy in this respect would infuse fresh life and vigour into every state. While from the law of primogeniture, and other European customs, land bears a monopoly price, a capital can never be employed in it with much advantage to the individual; and, therefore, it is not probable that the soil should be properly cultivated. And, though in every civilized state a class of proprietors and a class of labourers must exist, yet one permanent advantage would always result from a nearer equalization of property. The greater the number of proprietors, the smaller must be the number of labourers: a greater part of society would be in the happy state of possessing property: and a smaller part in the unhappy state of possessing no other property than their labour. But the best directed exertions, though they may alleviate, can never remove the pressure of want, and it will be difficult for any person who contemplates the genuine situation of man on earth, and the general laws of nature, to suppose it possible that any, the most enlightened, efforts could place mankind in a state where 'few would die without measuring out the whole period of present existence allotted to them; where pain and distemper would be unknown among them; and death would come upon them like a sleep, in consequence of no other cause than gradual and unavoidable decay.'
 
 It is, undoubtedly, a most disheartening reflection that the great obstacle in the way to any extraordinary improvement in society is of a nature that we can never hope to overcome. The perpetual tendency in the race of man to increase beyond the means of subsistence is one of the general laws of animated nature which we can have no reason to expect will change. Yet, discouraging as the contemplation of this difficulty must be to those whose exertions are laudably directed to the improvement of the human species, it is evident that no possible good can arise from any endeavours to slur it over or keep it in the background. On the contrary, the most baleful mischiefs may be expected from the unmanly conduct of not daring to face truth because it is unpleasing. Independently of what relates to this great obstacle, sufficient yet remains to be done for mankind to animate us to the most unremitted exertion. But if we proceed without a thorough knowledge and accurate comprehension of the nature, extent, and magnitude of the difficulties we have to encounter, or if we unwisely direct our efforts towards an object in which we cannot hope for success, we shall not only exhaust our strength in fruitless exertions and remain at as great a distance as ever from the summit of our wishes, but we shall be perpetually crushed by the recoil of this rock of Sisyphus.
+
 
 
 CHAPTER 18
@@ -818,6 +828,7 @@ In the same manner, though we cannot possibly expect to exclude riches and pover
 Leisure is, without doubt, highly valuable to man, but taking man as he is, the probability seems to be that in the greater number of instances it will produce evil rather than good. It has been not infrequently remarked that talents are more common among younger brothers than among elder brothers, but it can scarcely be imagined that younger brothers are, upon an average, born with a greater original susceptibility of parts. The difference, if there really is any observable difference, can only arise from their different situations. Exertion and activity are in general absolutely necessary in one case and are only optional in the other.
 
 That the difficulties of life contribute to generate talents, every day's experience must convince us. The exertions that men find it necessary to make, in order to support themselves or families, frequently awaken faculties that might otherwise have lain for ever dormant, and it has been commonly remarked that new and extraordinary situations generally create minds adequate to grapple with the difficulties in which they are involved.
+
 
 
 CHAPTER 19
@@ -863,4 +874,5 @@ The idea that the impressions and excitements of this world are the instruments 
 
 Evil exists in the world not to create despair but activity. We are not patiently to submit to it, but to exert ourselves to avoid it. It is not only the interest but the duty of every individual to use his utmost efforts to remove evil from himself and from as large a circle as he can influence, and the more he exercises himself in this duty, the more wisely he directs his efforts, and the more successful these efforts are; the more he will probably improve and exalt his own mind, and the more completely does he appear to fulfil the will of his Creator.
 
-Texte du domaine public, source : Project Gutenberg (#4239). Édition numérique EbookClassics.
+
+— Public domain text. EbookClassics digital edition.

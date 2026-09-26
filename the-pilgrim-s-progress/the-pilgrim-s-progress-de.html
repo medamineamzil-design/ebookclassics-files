@@ -1,19 +1,68 @@
 <!DOCTYPE html>
 <html lang="de"><head><meta charset="utf-8">
-<title>Pilgerreise zur seligen Ewigkeit</title><style>
-@page { margin: 22mm 20mm; }
-body { font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', serif; line-height: 1.6;
-       color: #1f1a14; max-width: 38em; margin: 0 auto; padding: 1.5em 1.2em; }
-h1 { font-size: 2.1em; text-align: center; margin: 1.5em 0 .2em; letter-spacing: .01em; }
-.author { text-align: center; font-size: 1.15em; font-style: italic; margin-bottom: 3em; color: #5a4a36; }
-h2 { font-size: 1.25em; text-align: center; margin: 2.6em 0 1.2em; letter-spacing: .06em;
-     text-transform: uppercase; font-weight: normal; page-break-before: always; break-before: page; }
-p { margin: 0; text-indent: 1.4em; text-align: justify; hyphens: auto; }
-h2 + p, .first { text-indent: 0; }
-.colophon { font-size: .85em; color: #6b5d45; text-align: center; margin-top: 4em; text-indent: 0; }
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pilgerreise zur seligen Ewigkeit — John Bunyan</title><style>
+:root{--paper:#fbf8f1;--ink:#1f1b16;--muted:#6f6352;--accent:#9a6b2f;--rule:#e4dccb}
+@media (prefers-color-scheme:dark){:root{--paper:#16140f;--ink:#ece6d8;--muted:#a79c88;--accent:#d8a95e;--rule:#2e2a22}}
+html{background:var(--paper)}
+body{font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Libertinus Serif",Georgia,serif;color:var(--ink);
+     background:var(--paper);line-height:1.65;font-size:1.12rem;max-width:36em;margin:0 auto;padding:2.5em 1.25em 5em}
+.titlepage{text-align:center;min-height:70vh;display:flex;flex-direction:column;justify-content:center;gap:.6em;
+           border-bottom:1px solid var(--rule);margin-bottom:2.5em;padding-bottom:2.5em}
+.titlepage img{max-width:260px;width:60%;margin:0 auto 1.5em;border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+h1{font-size:2.4em;line-height:1.15;font-weight:600;margin:0;letter-spacing:-.01em}
+.author{font-style:italic;font-size:1.25em;color:var(--accent);margin:0}
+.translator{font-size:.95em;color:var(--muted);margin:0}
+nav.toc{margin:0 0 3em}
+nav.toc h2{font-size:.85em;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:left;margin:0 0 .8em}
+nav.toc ol{list-style:none;padding:0;margin:0;columns:1}
+nav.toc li{margin:.25em 0}
+nav.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent}
+nav.toc a:hover{border-color:var(--accent)}
+h2.chapter{font-size:1.45em;font-weight:600;text-align:center;margin:3.5em 0 1.6em;line-height:1.3}
+h2.chapter::before{content:"";display:block;width:3em;height:2px;background:var(--accent);margin:0 auto 1.1em}
+p{margin:0;text-indent:1.5em;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+h2.chapter + p, .titlepage + p{text-indent:0}
+h2.chapter + p::first-letter{font-size:3.1em;float:left;line-height:.85;padding:.08em .08em 0 0;color:var(--accent);font-weight:600}
+.colophon{margin-top:5em;padding-top:1.5em;border-top:1px solid var(--rule);text-align:center;color:var(--muted);font-size:.85em;text-indent:0}
+h3.sub{font-size:1em;font-weight:600;font-variant:small-caps;letter-spacing:.04em;text-align:center;margin:2.2em 0 1em}
+h3.sub + p{text-indent:0}
+@media print{h2.chapter{break-before:page}}
 </style></head><body>
+<header class="titlepage">
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjI0MDAiIHZpZXdCb3g9IjAgMCAxNjAwIDI0MDAiPgo8cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSIyNDAwIiBmaWxsPSIjMmQxZTNlIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjMwMCIgZmlsbD0iI2U4YTg3YyIgb3BhY2l0eT0iLjkyIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMmQxZTNlIiBzdHJva2Utd2lkdGg9IjEyIiBvcGFjaXR5PSIuNSIvPgo8Y2lyY2xlIGN4PSIxMTIwIiBjeT0iNTYwIiByPSIxMjAiIGZpbGw9IiMyZDFlM2UiIG9wYWNpdHk9Ii4xOCIvPgo8cmVjdCB4PSIxNjAiIHk9IjkzMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIxMCIgZmlsbD0iI2U4YTg3YyIvPgo8dGV4dCB4PSIxNjAiIHk9IjEwNDQiIGZvbnQtc2l6ZT0iMTI0IiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmNmVkZTQiPlBpbGdlcnJlaXNlPC90ZXh0Pjx0ZXh0IHg9IjE2MCIgeT0iMTE4MCIgZm9udC1zaXplPSIxMjQiIGZvbnQtd2VpZ2h0PSI2MDAiIGZvbnQtZmFtaWx5PSJMaWJlcnRpbnVzIFNlcmlmLCBHZW9yZ2lhLCBzZXJpZiIgZmlsbD0iI2Y2ZWRlNCI+enVyIHNlbGlnZW48L3RleHQ+PHRleHQgeD0iMTYwIiB5PSIxMzE2IiBmb250LXNpemU9IjEyNCIgZm9udC13ZWlnaHQ9IjYwMCIgZm9udC1mYW1pbHk9IkxpYmVydGludXMgU2VyaWYsIEdlb3JnaWEsIHNlcmlmIiBmaWxsPSIjZjZlZGU0Ij5Fd2lna2VpdDwvdGV4dD4KPHRleHQgeD0iMTYwIiB5PSIxNTIzIiBmb250LXNpemU9IjY4IiBmb250LXN0eWxlPSJpdGFsaWMiIGZvbnQtZmFtaWx5PSJMaWJlcnRpbnVzIFNlcmlmLCBHZW9yZ2lhLCBzZXJpZiIgZmlsbD0iI2U4YTg3YyI+Sm9obiBCdW55YW48L3RleHQ+Cjx0ZXh0IHg9IjE2MCIgeT0iMjIzMCIgZm9udC1zaXplPSI0NCIgbGV0dGVyLXNwYWNpbmc9IjE0IiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmNmVkZTQiIG9wYWNpdHk9Ii43NSI+RUJPT0tDTEFTU0lDUzwvdGV4dD4KPC9zdmc+" alt="">
 <h1>Pilgerreise zur seligen Ewigkeit</h1>
 <p class="author">John Bunyan</p>
+<p class="translator">Anonyme Übersetzung</p>
+</header>
+<nav class="toc"><h2>Inhalt</h2><ol>
+<li><a href="#c1">I. Teil.</a></li>
+<li><a href="#c2">II. Teil.</a></li>
+<li><a href="#c3">Erster Teil:</a></li>
+<li><a href="#c4">Erstes Kapitel.</a></li>
+<li><a href="#c5">Zweites Kapitel.</a></li>
+<li><a href="#c6">Drittes Kapitel.</a></li>
+<li><a href="#c7">Viertes Kapitel.</a></li>
+<li><a href="#c8">Fünftes Kapitel.</a></li>
+<li><a href="#c9">Sechstes Kapitel.</a></li>
+<li><a href="#c10">Siebtes Kapitel.</a></li>
+<li><a href="#c11">Achtes Kapitel.</a></li>
+<li><a href="#c12">Neuntes Kapitel.</a></li>
+<li><a href="#c13">Zehntes Kapitel.</a></li>
+<li><a href="#c14">Elftes Kapitel.</a></li>
+<li><a href="#c15">Zwölftes Kapitel.</a></li>
+<li><a href="#c16">Zweiter Teil:</a></li>
+<li><a href="#c17">Erstes Kapitel.</a></li>
+<li><a href="#c18">Zweites Kapitel.</a></li>
+<li><a href="#c19">Drittes Kapitel.</a></li>
+<li><a href="#c20">Viertes Kapitel.</a></li>
+<li><a href="#c21">Fünftes Kapitel.</a></li>
+<li><a href="#c22">Sechstes Kapitel.</a></li>
+<li><a href="#c23">Siebentes Kapitel.</a></li>
+<li><a href="#c24">Achtes Kapitel.</a></li>
+<li><a href="#c25">Neuntes Kapitel.</a></li>
+<li><a href="#c26">Zehntes Kapitel.</a></li>
+</ol></nav>
 <p>####################################################################</p>
 <p>Der vorliegende Text wurde anhand der Buchausgabe von 1922 so weit wie möglich originalgetreu wiedergegeben. Typographische Fehler wurden stillschweigend korrigiert. Ungewöhnliche und heute nicht mehr verwendete Schreibweisen bleiben gegenüber dem Original unverändert; fremdsprachliche Ausdrücke wurden nicht korrigiert.</p>
 <p>Für Zitate innerhalb wörtlicher Rede wurden der besseren Übersichtlickeit halber einfache Anführungszeichen verwendet. Die Namen der Handelnden werden in der Regel in gesperrter Schrift dargestellt, überwiegend in Zusammenhang mit der wörtlichen Rede, allerdings wird dies nicht einheitlich so gehandhabt.</p>
@@ -29,7 +78,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Verlag der St.-Johannis-Druckerei, Dinglingen (Baden).</p>
 <p>St.-Johannis-Druckerei, Dinglingen (Baden). 1922.</p>
 <p>Inhalt.</p>
-<h2>I. Teil.</h2>
+<h2 class="chapter" id="c1">I. Teil.</h2>
 <p>Seite</p>
 <p>Aus Bunyans Leben                                                5</p>
 <p>1. Der Weg zur engen Pforte                                     25</p>
@@ -44,7 +93,7 @@ h2 + p, .first { text-indent: 0; }
 <p>10. Die Geschichte von Kleinglaube                             149</p>
 <p>11. Durch einen falschen Apostel betört. Über den bezauberten Grund                                                      159</p>
 <p>12. Durch die Fluten der letzten Trübsal und Eingang in die himmlische Stadt                                       181</p>
-<h2>II. Teil.</h2>
+<h2 class="chapter" id="c2">II. Teil.</h2>
 <p>1. Christin schickt sich zur Pilgerreise an                   193</p>
 <p>2. Wer da anklopft, dem wird aufgetan                         206</p>
 <p>3. In Anfechtung und im Hause des Auslegers                   215</p>
@@ -93,9 +142,9 @@ h2 + p, .first { text-indent: 0; }
 <p>Seine sterbliche Hülle wurde auf dem Friedhof in Finsbury (dem Bunhillkirchhof) beigesetzt, wo auch Watt, Owen und Wesley ruhen. Ein würdiges Denkmal mit seinem Bildnis bezeichnet heute noch seine Grabstätte, und durch die vor uns liegende „Pilgerreise“ redet er noch zu uns, wiewohl er gestorben ist.</p>
 <p>Pilgerreise</p>
 <p>zur seligen Ewigkeit.</p>
-<h2>Erster Teil:</h2>
+<h2 class="chapter" id="c3">Erster Teil:</h2>
 <p>Der Pilger.</p>
-<h2>Erstes Kapitel.</h2>
+<h2 class="chapter" id="c4">Erstes Kapitel.</h2>
 <p>Der Weg zur engen Pforte.</p>
 <p>Als ich durch die Wüste dieser Welt wanderte, kam ich an einen Ort, wo eine Höhle war[1]; ich legte mich daselbst zum Schlafen nieder und hatte nun, als ich schlief, einen Traum. Siehe, ich sah an einem Ort einen Mann stehen in einem unflätigen und zerrissenen Kleid[2], sein Antlitz von seinem Hause abgewandt[3], mit einem Buch in der Hand und einer großen Last auf seinem Rücken[4]. Ich sah zu und ward gewahr, daß er das Buch öffnete und darin las, und während er las, weinte und zitterte er, und da er sich nicht länger halten konnte, brach er in den Angstschrei aus: „Was soll ich tun?“ (Apostelg. 2, 37; 9, 6.)</p>
 <p>In diesem Zustand ging er nach Hause und suchte die Angst seines Herzens solange als möglich vor seiner Familie zu verbergen. Aber er konnte nicht lange schweigen, denn seine Unruhe zwang ihn, vor Frau und Kindern sein Herz auszuschütten, indem er sagte: „Ach meine liebe Frau und ihr, meine teuren Kinder, ich bin verloren, denn eine schwere Bürde lastet auf mir! Überdies wurde mir auch für gewiß berichtet, daß Feuer vom Himmel diese unsre Stadt[5] verzehren wird (2. Petr. 3, 7). Dabei werden wir alle, ich, du, meine teure Frau, und ihr, meine süßen Kindlein, elendiglich umkommen, wenn wir nicht beizeiten einen Weg zu unsrer Rettung finden.“</p>
@@ -242,7 +291,7 @@ h2 + p, .first { text-indent: 0; }
 <p>[30] Viele wandeln, und sind die Feinde des Kreuzes Christi (Phil. 3, 18).</p>
 <p>[31] Mose erwählte viel lieber, mit dem Volk Gottes Ungemach zu leiden, denn die zeitliche Ergötzung der Sünde zu haben, und achtete die Schmach Christi für größern Reichtum denn die Schätze Ägyptens; denn er sah an die Belohnung (Hebr. 11, 25. 26).</p>
 <p>[32] Wir wissen, daß der Mensch durch des Gesetzes Werke nicht gerecht wird, sondern durch den Glauben an Jesus Christus (Gal. 2, 16).</p>
-<h2>Zweites Kapitel.</h2>
+<h2 class="chapter" id="c5">Zweites Kapitel.</h2>
 <p>Der Weg zum Frieden.</p>
 <p>In kurzem hatte nun +Christ+ die Pforte erreicht. Über ihr bemerkte er mit großer Freude die Inschrift: „+Klopfet an, so wird euch aufgetan!+“ (Matth. 7, 7) und indem er zu wiederholten Malen anklopfte, sprach er bei sich selbst:</p>
 <p>Wird Er mir auftun Seine Gnadentür? Wird Er den schnöden Knecht nicht von sich weisen? Ach, dürft’ ich eingehn, wahrlich für und für Wollt’ ich die Größe der Erbarmung preisen!</p>
@@ -366,7 +415,7 @@ h2 + p, .first { text-indent: 0; }
 <p>[56] Wer überwindet, auf den will Ich schreiben den Namen meines Gottes und den Namen des neuen Jerusalem und Meinen Namen, den neuen (Offenb. 3, 12).</p>
 <p>[57] Der Heilige Geist gibt Zeugnis unserm Geist, daß wir Gottes Kinder sind (Röm. 8, 16).</p>
 <p>[58] Durch Christus seid ihr, da ihr gläubig wurdet, versiegelt worden mit den Heiligen Geist der Verheißung (Eph. 1, 13).</p>
-<h2>Drittes Kapitel.</h2>
+<h2 class="chapter" id="c6">Drittes Kapitel.</h2>
 <p>Der Berg der Beschwerde.</p>
 <p>Nun sah ich in meinem Traum, wie +Christ+, als er also fröhlich seines Weges zog, in ein Tal kam. Dort erblickte er etwas abseits vom Weg drei schlafende Männer mit Fesseln an ihren Füßen. Der eine von ihnen hieß +Albern+, der andre +Träge+ und der dritte +Eigendünkel+. Als +Christ+ sie so daliegen sah, trat er näher zu ihnen hin, ob er sie vielleicht aufwecken könnte, und rief ihnen mit lauter Stimme zu: „Ihr seid gleich denen, die oben auf dem Mastbaum schlafen (Spr. 23, 34), mitten im ungestümen Meer, über einer Tiefe, die keinen Grund hat. Wacht auf und kommt her! Wenn ihr wollt, so will ich euch helfen, von euren Fesseln loszukommen; denn wenn der, welcher umhergeht wie ein brüllender Löwe und sucht, welchen er verschlinge (1. Petr. 5, 8), über euch kommt, so werdet ihr gewiß ein Raub seiner Zähne werden.“ Bei diesen Worten schlugen sie ihre schlaftrunkenen Augen auf und antworteten ihm, ein jeder nach seiner Weise. +Albern+ sprach: „Ich sehe keine Gefahr;“ +Träge+ wollte nur noch ein wenig länger schlummern, und +Eigendünkel+ sagte trotzig: „Jeder muß auf seinen eigenen Füßen stehen.“ Sie legten sich alle drei gleich wieder zum Schlafen nieder, und +Christ+ ging seines Wegs. Gleichwohl verdroß es ihn, wenn er daran dachte, daß Menschen, die in solcher Gefahr schweben, die Güte dessen, der sich aus freien Stücken ihnen zu helfen erbot, so wenig achteten, indem er sie aufgeweckt, ihnen einen guten Rat gegeben und beim Entledigen der Fesseln behilflich sein wollte. Während er noch darüber betrübt war, bemerkte er mit Erstaunen, wie über die Mauer, die sich zur Linken des Wegs hinzog, zwei Männer herüberstiegen und eiligen Schrittes sich ihm näherten. Der eine hieß +Werkheilig+, der andre +Heuchler+. Diese machten sich nun an +Christ+ heran, der sie also anredete:</p>
 <p>„Woher kommt ihr, meine Herren, und wohin geht eure Reise?“</p>
@@ -495,7 +544,7 @@ h2 + p, .first { text-indent: 0; }
 <p>[70] Jesus Christus ist das Ebenbild des unsichtbaren Gottes, der Erstgeborene vor allen Kreaturen (Kol. 1, 15), welche Ausgang von Anfang und von Ewigkeit her gewesen ist (Micha 5, 1).</p>
 <p>[71] In Meines Vaters Hause sind viele Wohnungen, und Ich will wiederkommen und euch zu Mir nehmen, auf daß ihr seid, wo Ich bin (Joh. 14, 2. 3).</p>
 <p>[72] Der Gerechte wird in der Höhe wohnen, und Felsen werden seine Feste und Schutz sein. Sein Brot wird ihm gegeben, sein Wasser hat er gewiß (Jes. 33, 16).</p>
-<h2>Viertes Kapitel.</h2>
+<h2 class="chapter" id="c7">Viertes Kapitel.</h2>
 <p>Das Tal der Demut und der Todesschatten.</p>
 <p>Wie ich in meinem Traum sah, wanderte nun +Christ+ durch das +Tal der Demut+. Er hatte erst eine kleine Strecke des Weges zurückgelegt, als er den Engel des Abgrunds, der +Apollyon+ heißt (Offenb. 9, 11), durch das Feld auf ihn zukommen sah. +Christ+ geriet hierüber in sehr große Angst. Sollte er zurückfliehen oder standhalten? So bange es ihm war, so erkannte er es doch für das beste, sein Heil im Kampf und nicht in der Flucht zu suchen, da sein Rücken, unbeschirmt, wie er war, leicht mit den feurigen Pfeilen dieses Bösewichtes durchbohrt werden konnte. Er entschloß sich, es mit ihm zu wagen und das Feld zu behaupten. „Denn,“ sagte er zu sich selbst, „hätte ich auch weiter nichts als meines Lebens Rettung im Auge, so würde es doch das beste sein, nicht zu fliehen.“</p>
 <p>So ging er denn voran, und +Apollyon+ kam auf ihn zu. Er war ein Ungeheuer, schauerlich anzusehen. Er war mit Schuppen bedeckt gleich einem Fisch -- und das ist sein Stolz --, er hatte Flügel wie ein Drache, Füße wie ein Bär; aus seinem Bauch kam Feuer und Rauch, und sein Maul war gleich eines Löwen Rachen. Er sah +Christ+ an mit einem Blick von Grausamkeit und Verachtung und begann also ihn auszufragen:</p>
@@ -563,7 +612,7 @@ h2 + p, .first { text-indent: 0; }
 <p>[81] Betet stets in allem Anliegen mit Bitten und Flehen im Geist und wachet dazu mit allem Anhalten und Flehen! (Eph. 6, 18.)</p>
 <p>[82] Es hoffen auf Dich, die Deinen Namen kennen; denn Du verlässest nicht, die Dich, Herr, suchen (Ps. 9, 11).</p>
 <p>[83] Das römische Heidentum mit seinen Christenverfolgungen.</p>
-<h2>Fünftes Kapitel.</h2>
+<h2 class="chapter" id="c8">Fünftes Kapitel.</h2>
 <p>Ein treuer Gefährte und ein frömmelnder Schwätzer.</p>
 <p>Der Weg führte nun +Christ+ über eine kleine Anhöhe, die zu dem Zweck aufgeworfen war, damit die Pilger von hier aus den Weg vor sich übersehen konnten. Als er daselbst Umschau hielt, erblickte er +Getreu+ in einiger Entfernung seines Weges wandeln. Mit lauter Stimme rief er ihm nach, er möge ein wenig warten. +Getreu+ wandte sich um nach ihm, und +Christ+ rief abermals, so laut er konnte: „Warte, warte doch, bis ich zu dir komme!“</p>
 <p>„Nein,“ antwortete +Getreu+, „es gilt mein Leben, der Bluträcher ist hinter mir!“</p>
@@ -711,7 +760,7 @@ h2 + p, .first { text-indent: 0; }
 <p>[95] Ich will Mich mit dir verloben in Ewigkeit (Hos. 2, 21) und: Ich lebe aber; doch nun nicht ich, sondern Christus lebt in mir (Gal. 2, 20).</p>
 <p>[96] Selig sind, die da hungert und dürstet nach der Gerechtigkeit; denn sie sollen satt werden (Matth. 5, 6) und Ich will dem Durstigen geben von dem Brunnen des lebendigen Wassers umsonst (Offenb. 21, 6).</p>
 <p>[97] Liebet ihr Mich, so haltet Meine Gebote (Joh. 14, 15).</p>
-<h2>Sechstes Kapitel.</h2>
+<h2 class="chapter" id="c9">Sechstes Kapitel.</h2>
 <p>Der Markt der Eitelkeit und die Treue bis in den Tod.</p>
 <p>Fröhlich wanderten die Pilger ihres Weges weiter. Sie kamen nun durch eine Wildnis, deren Öde sie jedoch über ihrem brüderlichen Gespräch fast vergaßen. Gegen das Ende dieser wüsten Gegend rief +Getreu+: „O wer kommt denn dort?“ +Christ+ wandte sich um und sprach: „Das ist ja der +Evangelist+, mein treuer Freund!“ -- „Auch mein lieber Freund,“ versetzte +Getreu+, „denn er war es, der mich zur engen Pforte hinwies.“ In kurzem hatte sie der +Evangelist+ erreicht und grüßte sie: „Friede sei mit euch, meine Geliebten!“</p>
 <p>„Willkommen, willkommen, mein lieber +Evangelist+!“ rief +Christ+ mit großer Freude. „O wie treu, wie unermüdlich hast du für mein ewiges Wohl gesorgt!“</p>
@@ -790,7 +839,7 @@ h2 + p, .first { text-indent: 0; }
 <p>[101] Wir sind ein Schauspiel geworden der Welt; wir sind Narren um Christi willen (1. Kor. 4, 9. 10).</p>
 <p>[102] Die Welt kennt euch nicht; denn sie kennt Ihn nicht (1. Joh. 3, 1).</p>
 <p>[103] Unser Wandel ist im Himmel, von dannen wir auch warten des Heilands Jesu Christi, des Herrn (Phil. 3, 20).</p>
-<h2>Siebtes Kapitel.</h2>
+<h2 class="chapter" id="c10">Siebtes Kapitel.</h2>
 <p>Ein neuer Begleiter und die Gefahren an der Silbergrube.</p>
 <p>Ich sah nun in meinem Traum, daß +Christ+ nicht allein weiterzog, denn es gesellte sich einer zu ihm mit Namen +Hoffnungsvoll+; das war er geworden durch die Beobachtung des stillen Duldens der beiden Pilger bei aller Schmach und Verfolgung, das männliche Bekenntnis des +Getreu+, das er im Angesicht des Todes ablegte. Und wie das Blut der Märtyrer immer der Same der Kirche gewesen ist, so erhoben sich aus der Asche des +Getreu+ neue Bekenner des Herrn. Er schloß mit +Christ+ einen Bruderbund und bot sich ihm zum Begleiter an, indem er versicherte, in kurzer Zeit würden ihm noch viele andre folgen.</p>
 <p>Sie hatten erst eine kleine Strecke Weges zurückgelegt, als sie einen Mann einholten, der vor ihnen herging; er hieß +Nebenwege+. „Was für ein Landsmann bist du, lieber Herr?“ redeten sie ihn an, „und wohin geht deine Reise?“</p>
@@ -889,7 +938,7 @@ h2 + p, .first { text-indent: 0; }
 <p>[106] Der Apostel Paulus schreibt: Demas hat mich verlassen und diese Welt liebgewonnen (2. Tim. 4, 10).</p>
 <p>[107] Die da reich werden wollen, die fallen in Versuchung und Stricke und viel törichte und schädliche Lüste, welche versenken die Menschen ins Verderben und Verdammnis (1. Tim. 6, 9).</p>
 <p>[108] Das unter die Dornen gesät ist, das ist, wenn jemand das Wort Gottes hört, und der Betrug des Reichtums erstickt das Wort, und er bringt nicht Frucht (Matth. 13, 22).</p>
-<h2>Achtes Kapitel.</h2>
+<h2 class="chapter" id="c11">Achtes Kapitel.</h2>
 <p>Nach großer Freude eine schwere Verirrung.</p>
 <p>Auf ihrem Wege kamen nun die Pilger an einen herrlichen Strom. Der König David nennt ihn +Gottes Brünnlein+[109] und Johannes den +Strom des lebendigen Wassers+[110]. Der Weg zog sich gerade am Ufer dieses Stromes entlang. Hier wanderten +Christ+ und sein Gefährte mit großer Wonne, und durch jeden Trunk aus diesem Wasser des Lebens ward ihr ermatteter Geist sehr erquickt. Auf beiden Seiten des Stromes standen Fruchtbäume aller Art, deren Blätter das Blut der erhitzten Wanderer kühlten. Grüne, das ganze Jahr mit Lilien prangende Wiesen begleiteten den Strom, hier konnten sich die Pilgrime zum Schlafe niederlegen und im Frieden ruhen[111]. Wachten sie auf, so aßen sie von den Früchten der Lebensbäume und tranken von dem Wasser des Stromes. Das taten sie viele Tage und Nächte. Dabei sangen sie:</p>
 <p>Wie herrlich ist’s, ein Schäflein Christi werden Und in der Huld des treusten Hirten stehn! Kein höhrer Stand ist auf der ganzen Erden, Als unverrückt dem Lamme nachzugehn. Was alle Welt nicht geben kann, Das trifft ein solches Schaf bei seinem Hirten an.</p>
@@ -948,7 +997,7 @@ h2 + p, .first { text-indent: 0; }
 <p>[111] Er weidet mich auf einer grünen Aue und führet mich zum frischen Wasser; Er erquicket meine Seele (Ps. 23, 2. 3).</p>
 <p>[112] Und das Volk ward verdrossen auf dem Weg (4. Mos. 21, 4).</p>
 <p>[113] Ich bin elend und ohnmächtig, daß ich so verstoßen bin; ich leide Deine Schrecken, daß ich schier verzage (Ps. 88, 16).</p>
-<h2>Neuntes Kapitel.</h2>
+<h2 class="chapter" id="c12">Neuntes Kapitel.</h2>
 <p>Bei den Hirten auf den lieblichen Bergen.</p>
 <p>Die Pilger erreichten bald die +lieblichen Berge+, welche dem Herrn des Hügels, von dem wir zuvor gesprochen, gehörten. Die Abhänge dieser Berge waren mit den anmutigsten Gärten, Baumanlagen und Weingärten bedeckt, zwischen denen man grüne Wiesen sah, durch welche frische Gebirgsbäche herabrauschten. Hier stillten sie den Durst, wuschen sich und aßen von den Früchten des Weinstocks nach Herzenslust. Auf einer Anhöhe nahe an der Heerstraße trafen die Pilger Hirten, die ihre Herden weideten. Zu diesen gingen sie hin, und, auf ihre Stäbe gelehnt, wie müde Pilger zu tun pflegen, wenn sie stillstehen, um mit jemand am Weg zu reden, fragten sie: „Wem gehören diese lieblichen Berge, und wes sind die Herden, die ihr weidet?“</p>
 <p>+Hirten.+ Diese Berge sind +Immanuels Land+ und liegen im Gesichtskreis Seiner Stadt. Ihm gehören diese Schafe, und Er hat Sein Leben für sie gelassen (Joh. 10, 12).</p>
@@ -991,7 +1040,7 @@ h2 + p, .first { text-indent: 0; }
 <p>[114] Die Wege des Herrn sind richtig, und die Gerechten wandeln darin; aber die Übertreter fallen darin (Hos. 14, 10).</p>
 <p>[115] Gastfrei zu sein vergesset nicht, denn dadurch haben etliche ohne ihr Wissen Engel beherbergt (Hebr. 13, 2).</p>
 <p>[116] Hymenäus und Philetus sind von der Wahrheit irregegangen und sagen, die Auferstehung der Toten sei schon geschehen, und haben etlicher Glauben verkehrt (2. Tim. 2, 17. 18).</p>
-<h2>Zehntes Kapitel.</h2>
+<h2 class="chapter" id="c13">Zehntes Kapitel.</h2>
 <p>Die Geschichte von Kleinglaube.</p>
 <p>Abermals schlief ich ein und träumte: Ich sah dieselben Pilger den Berg hinab längs der Landstraße nach der Stadt zu gehen. Ein wenig jenseits des Gebirges liegt auf der linken Seite eine Landschaft mit Namen +Einbildung+, von wo ein krummer Fußpfad auf den Weg der Pilger herüberführte. Hier trafen sie mit einem lebhaften jungen Mann zusammen, der aus jener Gegend kam, sein Name war +Unwissend+.</p>
 <p>+Christ+ fragte ihn nach seiner Heimat und nach dem Ziel seiner Reise.</p>
@@ -1045,7 +1094,7 @@ h2 + p, .first { text-indent: 0; }
 <p>[121] Daß nicht jemand sei ein Gottloser wie Esau, der um einer Speise willen seine Erstgeburt verkaufte (Hebr. 12, 16).</p>
 <p>[122] Und ob ich schon wanderte im finstern Tal, fürchte ich kein Unglück; denn Du bist bei mir (Ps. 23, 4).</p>
 <p>[123] Wo nicht Dein Angesicht vorangeht, so führe uns nicht von dannen hinauf (2. Mos. 33, 15).</p>
-<h2>Elftes Kapitel.</h2>
+<h2 class="chapter" id="c14">Elftes Kapitel.</h2>
 <p>Durch einen falschen Apostel betört. Über den bezauberten Grund.</p>
 <p>So gingen die Pilger ihres Wegs, und +Unwissend+ folgte. Bald kamen sie an eine Stelle, wo sich der Weg auf eine solche Weise teilt, daß sie den rechten Weg durchaus nicht von dem falschen zu unterscheiden wußten. Während sie noch miteinander berieten, kam ein schwarzer Mann mit einem hellstrahlenden Kleid[124] auf sie zu und fragte, warum sie hier stehengeblieben. Sie antworteten, daß sie nach der himmlischen Stadt gingen, aber nicht wüßten, welchen von beiden Wegen sie einschlagen sollten.</p>
 <p>„Folget mir,“ sagte der Mann, „auch ich gehe dahin.“</p>
@@ -1283,7 +1332,7 @@ h2 + p, .first { text-indent: 0; }
 <p>[139] Herr, Du erforschest mich und kennst mich; Du verstehst meine Gedanken von ferne (Ps. 139, 1. 2).</p>
 <p>[140] Sie erkennen die Gerechtigkeit nicht, die vor Gott gilt, und trachten, ihre eigene Gerechtigkeit aufzurichten, und sind also der Gerechtigkeit, die vor Gott gilt, nicht untertan (Röm. 10, 3. 4).</p>
 <p>[141] Petrus sprach: Du bist Christus, des lebendigen Gottes Sohn! Jesus antwortete und sprach zu ihm: Fleisch und Blut hat dir das nicht offenbart, sondern Mein Vater in Himmel (Matth. 16, 16. 17).</p>
-<h2>Zwölftes Kapitel.</h2>
+<h2 class="chapter" id="c15">Zwölftes Kapitel.</h2>
 <p>Durch die Fluten der letzten Trübsal und Eingang in die himmlische Stadt.</p>
 <p>Unter diesen Betrachtungen legten sie die letzte Strecke des +bezauberten Grundes+ zurück und betraten das Land der +Vermählung+, wo ihnen sogleich eine lieblich erfrischende Luft entgegenwehte. Da ihr Weg hier hindurchführte, so erquickten sie sich daselbst eine Zeitlang. „Siehe, der Winter ist vergangen,“ rief +Hoffnungsvoll+, „die Blumen sind hervorgekommen im Land, der Lenz ist herbeigekommen, und die Turteltaube läßt sich hören in unserm Land“ (Hohesl. 2, 12). Hier geht die Sonne nicht unter, das +Tal der Todesschatten+ ist weit entfernt, der Riese der +Verzweiflung+ dringt hier niemals ein; die +Zweifelsburg+ sieht man nicht mehr; die himmlische Stadt, zu der sie wanderten, strahlte ihnen in hellem Licht entgegen, und es begegneten ihnen schon einige der +Glänzenden+, die hier an den Grenzen des Himmels gewöhnlich zu lustwandeln pflegen. Hier ward nun die Verlobung zwischen der Braut und dem Bräutigam erneuert, +ja wie sich ein Bräutigam freut über die Braut, so freut sich ihr Gott über sie+ (Jes. 62, 5). Hier hatten sie auch keinen Mangel an Korn und Wein, sondern fanden alles das im Überfluß, was sie auf ihrer ganzen Pilgerreise gesucht hatten. Von der Stadt her drangen laute Stimmen an ihr Ohr, welche riefen: „+Saget der Tochter Zion: Siehe, dein Heil kommt! siehe, Sein Lohn ist bei Ihm!+“ (Jes. 62, 11), und von den Einwohnern des Landes wurden sie genannt: „+Das heilige Volk, die Erlösten des Herrn+“ (Jes. 62, 12).</p>
 <p>Während sie hier wanderten, durchströmte eine nie gekannte Freude ihr Herz. Sie kamen nun der Stadt immer näher, und immer vollkommener wurde deren Anblick; sie sahen schon die Mauern von edlem Gestein, sie sahen die Perlentore und die Straßen von lauterm Gold. Dieser Glanz und diese Herrlichkeit, welche die darauf fallenden Sonnenstrahlen zurückwarfen, erweckten in ihrem Herzen eine unendliche Sehnsucht nach dem Herrn. Daher legten sie sich eine Weile nieder und riefen in ihrem Heimweh aus: „+Findet ihr meinen Freund, so sagt Ihm, daß ich vor Liebe krank liege!+“ (Hohesl. 5, 8). Als sie sich wieder ein wenig gefaßt hatten, zogen sie weiter. Der Weg führte sie an lieblichen Obst- und Weingärten vorüber, deren Türen nach der Straße hin offen standen. Der Gärtner stand am Weg, und den fragten sie: „Wem gehören diese herrlichen Weinberge und lieblichen Gärten?“ Er antwortete: „Dies sind die Besitzungen des Königs, die Er für sich und zur Erquickung der Pilger angelegt hat.“ Hierauf führte der Gärtner sie in die Weingärten und hieß sie sich erfrischen mit den darin wachsenden köstlichen Früchten. Er zeigte ihnen auch des Königs Lustgänge und Sommerlauben, in denen sich aufzuhalten Seine Lust war. Allda verweilten sie ein wenig und schliefen ein.</p>
@@ -1340,9 +1389,9 @@ h2 + p, .first { text-indent: 0; }
 <p>[144] Was der Mensch sät, das wird er ernten. Wer auf sein Fleisch sät, der wird von dem Fleisch das Verderben ernten; wer aber auf den Geist sät, der wird von dem Geist das ewige Leben ernten (Gal. 6, 7. 8).</p>
 <p>[145] Siehe, der Herr kommt mit vielen tausend Heiligen, Gericht zu halten über alle und zu strafen alle Gottlosen um alle Werke ihres gottlosen Wandels (Jud. 14. 15).</p>
 <p>Pilgerreise zur seligen Ewigkeit.</p>
-<h2>Zweiter Teil:</h2>
+<h2 class="chapter" id="c16">Zweiter Teil:</h2>
 <p>Die Pilgerin.</p>
-<h2>Erstes Kapitel.</h2>
+<h2 class="chapter" id="c17">Erstes Kapitel.</h2>
 <p>Christin schickt sich zur Pilgerreise an.</p>
 <p>Liebe Mitpilger!</p>
 <p>Vor einiger Zeit hatte ich die Freude, euch zu eurem Nutz und Frommen zu erzählen, was mir von +Christ+, dem Pilger, und seiner gefahrvollen Reise nach dem himmlischen Land träumte. Ich habe euch damals auch berichtet, wie seine Frau und Kinder sich weigerten, ihn auf seiner Pilgerfahrt zu begleiten. Da er sich der drohenden Gefahr des Gerichts, das über der Stadt +Verderben+ schwebte, nicht länger aussetzen durfte, war er genötigt, seine Familie zu verlassen und allein die Reise zu unternehmen.</p>
@@ -1412,7 +1461,7 @@ h2 + p, .first { text-indent: 0; }
 <p>[158] Deine Rechte sind mein Lied in dem Hause meiner Wallfahrt (Ps. 119, 54).</p>
 <p>[159] So laßt uns nun Fleiß tun, einzukommen zu dieser Ruhe (Hebr. 4, 11).</p>
 <p>[160] Das befremdet sie, daß ihr nicht mit ihnen laufet in dasselbe wüste, unordentliche Wesen, und sie lästern (1. Petr. 4, 4).</p>
-<h2>Zweites Kapitel.</h2>
+<h2 class="chapter" id="c18">Zweites Kapitel.</h2>
 <p>Wer da anklopft, dem wird aufgetan.</p>
 <p>Mittlerweile hatte sich +Christin+ mit ihren Knaben auf den Weg gemacht, und +Barmherzig+ begleitete sie. Indem sie miteinander gingen, entspann sich unter ihnen folgendes Gespräch:</p>
 <p>„+Barmherzig+,“ sagte +Christin+, „ich betrachte es wirklich als eine unverdiente Gnade, daß du mit mir ausgezogen bist, um mir noch ein wenig Gesellschaft zu leisten.“</p>
@@ -1476,7 +1525,7 @@ h2 + p, .first { text-indent: 0; }
 <p>[165] Ich bitte nicht allein für sie, sondern auch für die, so durch ihr Wort an Mich glauben werden (Joh. 17, 20).</p>
 <p>[166] Von ferne sahen sie Christus am Kreuz.</p>
 <p>[167] Das Reich Gottes leidet Gewalt, und die Gewalt tun, die reißen es an sich (Matth. 11, 12).</p>
-<h2>Drittes Kapitel.</h2>
+<h2 class="chapter" id="c19">Drittes Kapitel.</h2>
 <p>In Anfechtung und im Hause des Auslegers.</p>
 <p>Ich sah nun in meinen Traum, daß sie ihren Weg weiterzogen und dabei sehr angenehmes Wetter hatten. Da fing +Christin+ an zu singen:</p>
 <p>Ich danke Dir, Du wahre Sonne, daß mir Dein Glanz hat Licht gebracht; Ich danke Dir, Du Himmelswonne, daß Du mich froh und frei gemacht; Ich danke Dir, Du heil’ger Mund, Dein Wort macht mich gesund.</p>
@@ -1577,7 +1626,7 @@ h2 + p, .first { text-indent: 0; }
 <p>[174] Jesus klagt über Jerusalem: Wie oft habe Ich deine Kinder versammeln wollen, wie eine Henne versammelt ihre Küchlein unter ihre Flügel, und ihr habt nicht gewollt! (Matth. 23, 37.)</p>
 <p>[175] Dieweil wir solche Verheißungen haben, meine Liebsten, so lasset uns von aller Befleckung des Fleisches und des Geistes uns reinigen und fortfahren mit der Heiligung in der Furcht Gottes (2. Kor. 7, 1).</p>
 <p>[176] Die köstliche Leinwand aber ist die Gerechtigkeit der Heiligen (Offenb. 19, 8).</p>
-<h2>Viertes Kapitel.</h2>
+<h2 class="chapter" id="c20">Viertes Kapitel.</h2>
 <p>Belehrungen und Erfahrungen unter dem Geleit eines treuen Führers.</p>
 <p>Unter der Führung von +Mutherz+ kamen sie bald an den Ort, wo +Christ+ die Bürde vom Rücken fiel und in ein Grab rollte. Hier standen sie still und priesen Gott darüber.</p>
 <p>„Eben fällt mir wieder ein,“ sprach +Christin+, „was uns an der Pforte gesagt ward: daß wir Vergebung erhalten sollen durch Wort und Tat, nämlich durch Wort, das ist durch die Verheißung, durch Tat, das ist in der Weise, wie sie erlangt worden ist. Was die Verheißung ist, davon weiß ich etwas; was es aber heißt, Vergebung erlangen durch die Tat oder in der Weise, wie sie erworben wurde, das nehme ich an, weißt du, Herr +Mutherz+; deshalb bitten wir dich: unterweise uns darüber!“</p>
@@ -1647,7 +1696,7 @@ h2 + p, .first { text-indent: 0; }
 <p>[181] Deine Tröstungen ergötzen meine Seele (Ps. 94, 19), daß wir auch andre trösten können mit den Trost, damit wir getröstet werden von Gott (2. Kor. 1, 4).</p>
 <p>[182] Daß ihr euch nicht bald bewegen lasset von eurem Sinn, noch erschrecken. Lasset euch niemand verführen in keinerlei Weise; denn der Herr kommt nicht, es sei denn, daß zuvor der Abfall komme und offenbart werde der Mensch der Sünde, das Kind des Verderbens, der da ist der Widersacher und sich überhebt über alles, was Gott und Gottesdienst heißt (2. Thess. 2, 2-4).</p>
 <p>[183] Das Schwert des Geistes, welches ist das Wort Gottes (Eph. 6, 17).</p>
-<h2>Fünftes Kapitel.</h2>
+<h2 class="chapter" id="c21">Fünftes Kapitel.</h2>
 <p>Der Aufenthalt im Palast Prachtvoll.</p>
 <p>Sobald die Pilger an den Löwen vorüber waren, sahen sie auch schon vor sich in kleiner Entfernung den Palast +Prachtvoll+ auftauchen. Sie beeilten sich um so mehr, dorthin zu kommen, weil das Reisen bei Nacht in dieser Gegend sehr gefährlich ist. Bei der Pforte angekommen, klopfte der Führer an, und der Pförtner +Wachsam+ rief: „Wer da?“ -- „Ich bin’s!“ antwortete der Führer; und alsbald ward seine Stimme erkannt, denn er hatte schon viele Pilger hierher geleitet. +Wachsam+ kam und öffnete das Tor; aber er sah die Frauen nicht, denn sie hatten sich hinter ihren Führer gestellt, und er sprach: „Nun, +Mutherz+, was führt dich denn so spät in der Nacht hierher?“</p>
 <p>„Ich habe,“ erwiderte dieser, „einige Pilgrime hergebracht, und sie sollen auf meines Herrn Befehl hier übernachten. Ich wäre schon früher hier angelangt, wenn nicht der Riese, der die Löwen zu verteidigen pflegte, mir widerstanden hätte. Nach langem heißem Kampf habe ich ihn nun aber erschlagen und die Pilger wohlbehalten hindurchgebracht.“</p>
@@ -1832,7 +1881,7 @@ h2 + p, .first { text-indent: 0; }
 <p>[189] So lasset uns nun opfern durch Ihn das Lobopfer Gott allezeit, das ist die Frucht der Lippen, die Seinen Namen bekennen (Hebr. 13, 15).</p>
 <p>[190] Jesus spricht: Ich bin das lebendige Brot, vom Himmel gekommen. Wer von diesem Brot essen wird, der wird leben in Ewigkeit. Und das Brot, das Ich geben werde, ist Mein Fleisch, welches Ich geben werde für das Leben der Welt (Joh. 6, 51).</p>
 <p>[191] Du bist der Geringen Stärke, der Armen Stärke in der Trübsal, eine Zuflucht vor dem Ungewitter, ein Schatten vor der Hitze, wenn die Tyrannen wüten wie ein Ungewitter wider eine Wand (Jes. 25, 4).</p>
-<h2>Sechstes Kapitel.</h2>
+<h2 class="chapter" id="c22">Sechstes Kapitel.</h2>
 <p>Im Tal der Demut und der Todesschatten.</p>
 <p>Bald hatten sie die Höhe des Berges erreicht, da blieb +Gottesfurcht+ plötzlich sinnend stehen und rief aus: „Ach, ich habe vergessen, was ich +Christin+ und ihrem Gefährten mitgeben wollte; ich will zurückgehen und es holen.“ Also lief sie, um es zu holen. Als sie fort war, dünkte es +Christin+, als höre sie aus einem Wäldchen, das zur rechten Hand ein wenig abseits lag, eine wunderbare Melodie ertönen; sie lauschte und glaubte folgende Worte zu verstehen:</p>
 <p>Mir ist Erbarmung widerfahren, Erbarmung, deren ich nicht wert; Das zähl’ ich zu dem Wunderbaren, mein stolzes Herz hat’s nie begehrt. Nun weiß ich das und bin erfreut und rühme die Barmherzigkeit!</p>
@@ -1903,7 +1952,7 @@ h2 + p, .first { text-indent: 0; }
 <p>[195] Es ist mir lieb, daß Du mich gedemütigt hast, daß ich deine Rechte lerne (Ps. 119, 71).</p>
 <p>[196] Jesus spricht: Lernet von Mir, denn Ich bin sanftmütig und von Herzen demütig, so werdet ihr Ruhe finden für eure Seelen (Matth. 11, 29).</p>
 <p>[197] Euer Widersacher, der Teufel, geht umher wie ein brüllender Löwe und sucht, welchen er verschlinge. Dem widerstehet, fest im Glauben! (1. Petr. 5, 8. 9.)</p>
-<h2>Siebentes Kapitel.</h2>
+<h2 class="chapter" id="c23">Siebentes Kapitel.</h2>
 <p>Redlich, ein treuer Mitpilger.</p>
 <p>Der Weg führte nun über eine kleine Anhöhe, die zu dem Zweck aufgeworfen war, damit die Pilger hier einige Aussicht hätten. Es war derselbe Hügel, von wo aus einst +Christ+ seinen Freund +Getreu+ erblickte. Allda hielten sie kurze Rast, aßen und tranken von dem, was sie bei sich hatten, und ihre Herzen waren voll Lob und Dank gegen Gott ob all Seiner herrlichen Durchhilfe.</p>
 <p>„Herr +Mutherz+,“ redete +Christin+ den Führer an, „hast du aus dem Kampf mit dem Riesen keine Verletzung davon getragen?“</p>
@@ -1999,7 +2048,7 @@ h2 + p, .first { text-indent: 0; }
 <p>[204] Es gefällt manchem ein Weg wohl; aber endlich bringt er ihn zum Tode (Spr. 14, 12).</p>
 <p>[205] Sie fressen die Sündopfer meines Volks und sind begierig nach ihren Sünden (Hos. 4, 8).</p>
 <p>[206] Lehre uns bedenken, daß wir sterben müssen, auf daß wir klug werden (Ps. 90, 12).</p>
-<h2>Achtes Kapitel.</h2>
+<h2 class="chapter" id="c24">Achtes Kapitel.</h2>
 <p>In der Herberge des Gajus und auf dem Eitelkeitsmarkt.</p>
 <p>+Christin+ verlangte nun für sich und ihre Kinder nach einer Herberge, denn sie waren alle sehr müde. Da sagte +Redlich+: „Dort ein wenig vor uns liegt eine solche, in der ein sehr trefflicher Jünger, namens +Gajus+, wohnt“ (Röm. 16, 23). So beschlossen sie, dort einzukehren, und das um so lieber, weil der alte +Redlich+ ihm ein so gutes Zeugnis gab.</p>
 <p>Bei der Herberge angekommen, traten sie alsbald ein, ohne anzuklopfen, wie man dies ja an der Tür eines Gasthauses nicht zu tun pflegt. Sie fragten nach dem Herrn des Hauses. Dieser kam, und sie erkundigten sich, ob sie die Nacht über hier bleiben könnten.</p>
@@ -2144,7 +2193,7 @@ h2 + p, .first { text-indent: 0; }
 <p>[218] Einer trage des andern Last, so werdet ihr das Gesetz Christi erfüllen (Gal. 6, 2).</p>
 <p>[219] Sehet zu, daß eure Freiheit nicht gerate zu einem Anstoß der Schwachen! (1. Kor. 8, 9)</p>
 <p>[220] Der Apostel schreibt: Den Schwachen bin ich geworden wie ein Schwacher, auf daß ich die Schwachen gewinne. Ich bin jedermann allerlei geworden, auf daß ich allenthalben ja etliche selig mache (1. Kor. 9, 22).</p>
-<h2>Neuntes Kapitel.</h2>
+<h2 class="chapter" id="c25">Neuntes Kapitel.</h2>
 <p>Die Zerstörung der Zweifelsburg und auf den lieblichen Bergen.</p>
 <p>Kurz nachdem die Pilgerschar sich von ihren Freunden verabschiedet hatte, kamen sie zu dem Platz, wo +Getreu+ den Tod erlitten hatte. Hier machten sie halt, und in tiefer Bewegung standen sie da, daran gedenkend, wie sein männliches Dulden nun auch ihnen zugute gekommen war, und sie dankten dem Herrn dafür, daß Er ihm die Kraft verliehen, Ihn mit solchem Tode zu preisen. -- Sie setzten ihren Weg fort und sprachen davon, wie +Hoffnungsvoll+ nach +Getreus+ Tod sich zu +Christ+ gesellte. Darüber gelangten sie bis an den Hügel +Gewinn+, wo +Demas+ durch die +Silbergrube+ von der Pilgerschaft abgezogen ward und wo auch +Nebenwege+ vermutlich hineinfiel und umkam. Dies gab ihnen besonders zu denken. -- Nicht weit davon entfernt, dem Hügel +Gewinn+ gegenüber, stießen sie auf das alte Denkmal, die +Salzsäule+, die im Angesicht Sodoms und des Toten Meeres stand; da verwunderten sie sich, wie auch +Christ+ vor ihnen, daß Männer von solcher Erkenntnis und Reife des Verstandes wie +Demas+ und seine Gefährten im Anblick dieses Warnungszeichens so verblendet sein konnten, hier umzuwenden. Sie bedachten aber, daß die Menschen im allgemeinen sich durch den Schaden andrer nicht belehren lassen, besonders wenn etwas, wie hier die Silbermine, noch eine solche Anziehungskraft auf sie auszuüben vermag.</p>
 <p>Ich sah nun in meinem Traum, daß sie an den Strom kamen, der diesseits der lieblichen Berge fließt. Das war der Strom, an dessen Ufer prächtige Bäume stehen, deren Blätter zur Gesundheit der Menschen dienen, wo die immergrünen Wiesen sind und man sicher ruhen kann (Ps. 23). An diesem Wasser waren auch Hütten und Hürden für die Schafe und ein Haus zur Aufnahme und Pflege der Lämmer, das sind die Kindlein der Frauen, welche die Pilgerfahrt angetreten haben. Da war auch einer, der ihrer wartete, der Mitleiden haben konnte mit ihrer Schwachheit (Hebr. 4, 15) und der diese Lämmer in Seine Arme sammelt und in Seinem Busen trägt und die Schafmütter führt (Jes. 40, 11). +Christin+ riet ihren vier Schwiegertöchtern, ihre Kleinen der Obhut dieses Mannes anzuvertrauen, damit sie an diesen Wassern auferzogen, ernährt, gehegt und gepflegt würden und keines von ihnen verlorengehe. Wenn nämlich eines sich verirrt, so sucht Er es und bringt es wieder; Er verbindet das Verwundete und wartet des Schwachen (Hes. 34, 16). Sie erhalten guten Unterricht, und, was von großer Wichtigkeit ist, sie werden gelehrt, den richtigen Weg zu wandeln. Hier gebricht es ihnen niemals an Speise und Trank oder Kleidung. Es gibt da, wie ihr seht, klare Bäche, anmutige Wiesen, duftende Blumen und allerlei Bäume, deren Früchte nicht schädlich sind wie die aus +Beelzebubs+ Garten, welche +Matthäus+ aß, sondern die die Gesundheit der Menschen fördern und erhalten und in Krankheit als Heilmittel dienen. Hier sind sie auch sicher vor Dieben und Räubern, denn eher gibt dieser Mann Sein Leben hin, als daß Er eines Seiner Pflegebefohlenen umkommen läßt. Also waren sie es wohl zufrieden, ihre Kleinen Ihm zu übergeben, und das um so mehr, da der König dieses Haus zur Erziehung junger Kinder und Waisen hatte erbauen lassen.</p>
@@ -2247,7 +2296,7 @@ h2 + p, .first { text-indent: 0; }
 <p>[225] So jemand ist ein Hörer des Worts und nicht ein Täter, der ist gleich einem Mann, der sein leiblich Angesicht im Spiegel beschaut (Jak. 1, 23).</p>
 <p>[226] Wir sehen jetzt durch einen Spiegel in einem dunklen Wort; dann aber von Angesicht zu Angesicht (1. Kor. 13, 12).</p>
 <p>[227] Von Zion wird das Gesetz ausgehen und des Herrn Wort von Jerusalem (Jes. 2, 3). Die Waffen unsrer Ritterschaft sind nicht fleischlich, sondern mächtig vor Gott, zu zerstören Befestigungen (2. Kor. 10, 4).</p>
-<h2>Zehntes Kapitel.</h2>
+<h2 class="chapter" id="c26">Zehntes Kapitel.</h2>
 <p>Über den bezauberten Grund und der Abruf aus dieser Welt.</p>
 <p>Während sie noch also sprachen, kamen sie zu dem +bezauberten Grund+, wo die Luft die Wirkung hat, daß die Wanderer schläfrig werden. Diese Gegend war ganz mit Sträuchern und Dornen bewachsen bis auf einzelne Stellen wo bezauberte Lauben errichtet waren. Wenn ein Mensch in einer solchen sitzt oder schläft, so ist es fraglich -- wie etliche sagen --, ob er jemals wieder in dieser Welt aufsteht oder erwacht. Durch dieses Gestrüpp nun mußte die Pilgerschar hindurch; +Mutherz+ als Führer zog voran, +Kämpfer-für-die-Wahrheit+ bildete die Nachhut, damit nicht etwa ein Feind oder Drache oder ein Riese oder Dieb ihnen in den Rücken falle und Unheil anrichte. Angesichts solcher Gefahren zogen die Männer ihre Schwerter, und im Gehen sprach einer dem andern Mut zu. +Kleinmütig+ hielt sich dicht zu +Mutherz+, und +Verzagt+ kam unter +Kämpfers+ Obhut.</p>
 <p>Noch waren sie nicht weit gekommen, da überfiel sie ein dicker Nebel und eine Finsternis dergestalt, daß eine geraume Zeit hindurch einer den andern nicht sehen konnte. Daher mußten sie die Verbindung untereinander durch gegenseitiges Zurufen zu erhalten suchen; denn sie wandelten nicht im Schauen (2. Kor. 5, 7). Man kann sich denken, daß unter diesen Umständen das Wandern sehr erschwert war, selbst für die Besten unter ihnen, wieviel mehr für die Frauen und Kinder, bei denen Herz und Fuß nur schwach und zart war. Doch gelang es ihnen, dank der aufmunternden Worte des Führers und +Kämpfers+, ohne Schaden hindurchkommen.</p>
@@ -2336,5 +2385,5 @@ h2 + p, .first { text-indent: 0; }
 <p>[233] Rufe Mich an in der Not, so will Ich dich erretten, so sollst du Mich preisen (Ps. 50, 15).</p>
 <p>[234] Ihr Ehebrecher und Ehebrecherinnen, wisset ihr nicht, daß der Welt Freundschaft Gottes Feindschaft ist. Wer der Welt Freund sein will, der wird Gottes Feind sein (Jak. 4, 4).</p>
 <p>[235] Die hier und auf den folgenden Seiten angeführten Stellen aus Prediger 12, 1-7 sind eine bilderreiche Schilderung des Alters. Zur Erklärung diene folgendes: „Der zerrissene silberne Strick“ bedeutet das Schwinden des Rückenmarks, wodurch die ganze Leibestätigkeit lahmgelegt wird; „die zerbrochene goldene Schale“ ist das stillstehende Herz; „die finster durch die Fenster sehen“ -- das abnehmende Augenlicht; „die beladene Heuschrecke“ -- die vom Alter beschwerte Hüfte; „die sich duckenden Töchter des Gesangs“ -- die Stimme wird leise wie das Piepen eines Vögleins; „der zerfallende Eimer an der Quelle“ -- man ringt, um Luft zu schöpfen; „das am Born zerbrochene Rad“ -- die den Dienst versagenden Verdauungsorgane; „die sich krümmenden Starken“ sind die wackeligen Beine.</p>
-<p class="colophon">Texte du domaine public, source : Project Gutenberg (#70845). Traduction allemande non signée (édition de 1922). Édition numérique EbookClassics.</p>
+<p class="colophon">Gemeinfreier Text. Digitale Ausgabe EbookClassics.</p>
 </body></html>

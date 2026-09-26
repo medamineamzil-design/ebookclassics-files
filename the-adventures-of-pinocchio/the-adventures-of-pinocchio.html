@@ -1,49 +1,82 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
-<title>The Adventures of Pinocchio</title><style>
-@page { margin: 22mm 20mm; }
-body { font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', serif; line-height: 1.6;
-       color: #1f1a14; max-width: 38em; margin: 0 auto; padding: 1.5em 1.2em; }
-h1 { font-size: 2.1em; text-align: center; margin: 1.5em 0 .2em; letter-spacing: .01em; }
-.author { text-align: center; font-size: 1.15em; font-style: italic; margin-bottom: 3em; color: #5a4a36; }
-h2 { font-size: 1.25em; text-align: center; margin: 2.6em 0 1.2em; letter-spacing: .06em;
-     text-transform: uppercase; font-weight: normal; page-break-before: always; break-before: page; }
-p { margin: 0; text-indent: 1.4em; text-align: justify; hyphens: auto; }
-h2 + p, .first { text-indent: 0; }
-.colophon { font-size: .85em; color: #6b5d45; text-align: center; margin-top: 4em; text-indent: 0; }
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Adventures of Pinocchio — Carlo Collodi</title><style>
+:root{--paper:#fbf8f1;--ink:#1f1b16;--muted:#6f6352;--accent:#9a6b2f;--rule:#e4dccb}
+@media (prefers-color-scheme:dark){:root{--paper:#16140f;--ink:#ece6d8;--muted:#a79c88;--accent:#d8a95e;--rule:#2e2a22}}
+html{background:var(--paper)}
+body{font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Libertinus Serif",Georgia,serif;color:var(--ink);
+     background:var(--paper);line-height:1.65;font-size:1.12rem;max-width:36em;margin:0 auto;padding:2.5em 1.25em 5em}
+.titlepage{text-align:center;min-height:70vh;display:flex;flex-direction:column;justify-content:center;gap:.6em;
+           border-bottom:1px solid var(--rule);margin-bottom:2.5em;padding-bottom:2.5em}
+.titlepage img{max-width:260px;width:60%;margin:0 auto 1.5em;border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+h1{font-size:2.4em;line-height:1.15;font-weight:600;margin:0;letter-spacing:-.01em}
+.author{font-style:italic;font-size:1.25em;color:var(--accent);margin:0}
+.translator{font-size:.95em;color:var(--muted);margin:0}
+nav.toc{margin:0 0 3em}
+nav.toc h2{font-size:.85em;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:left;margin:0 0 .8em}
+nav.toc ol{list-style:none;padding:0;margin:0;columns:1}
+nav.toc li{margin:.25em 0}
+nav.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent}
+nav.toc a:hover{border-color:var(--accent)}
+h2.chapter{font-size:1.45em;font-weight:600;text-align:center;margin:3.5em 0 1.6em;line-height:1.3}
+h2.chapter::before{content:"";display:block;width:3em;height:2px;background:var(--accent);margin:0 auto 1.1em}
+p{margin:0;text-indent:1.5em;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+h2.chapter + p, .titlepage + p{text-indent:0}
+h2.chapter + p::first-letter{font-size:3.1em;float:left;line-height:.85;padding:.08em .08em 0 0;color:var(--accent);font-weight:600}
+.colophon{margin-top:5em;padding-top:1.5em;border-top:1px solid var(--rule);text-align:center;color:var(--muted);font-size:.85em;text-indent:0}
+h3.sub{font-size:1em;font-weight:600;font-variant:small-caps;letter-spacing:.04em;text-align:center;margin:2.2em 0 1em}
+h3.sub + p{text-indent:0}
+@media print{h2.chapter{break-before:page}}
 </style></head><body>
+<header class="titlepage">
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjI0MDAiIHZpZXdCb3g9IjAgMCAxNjAwIDI0MDAiPgo8cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSIyNDAwIiBmaWxsPSIjMGYyYTQ0Ii8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjMwMCIgZmlsbD0iIzhlY2FlNiIgb3BhY2l0eT0iLjkyIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMGYyYTQ0IiBzdHJva2Utd2lkdGg9IjEyIiBvcGFjaXR5PSIuNSIvPgo8Y2lyY2xlIGN4PSIxMTIwIiBjeT0iNTYwIiByPSIxMjAiIGZpbGw9IiMwZjJhNDQiIG9wYWNpdHk9Ii4xOCIvPgo8cmVjdCB4PSIxNjAiIHk9IjkzMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIxMCIgZmlsbD0iIzhlY2FlNiIvPgo8dGV4dCB4PSIxNjAiIHk9IjEwOTgiIGZvbnQtc2l6ZT0iMTUwIiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNlZWY2ZmIiPlRoZSBBZHZlbnR1cmVzPC90ZXh0Pjx0ZXh0IHg9IjE2MCIgeT0iMTI2MiIgZm9udC1zaXplPSIxNTAiIGZvbnQtd2VpZ2h0PSI2MDAiIGZvbnQtZmFtaWx5PSJMaWJlcnRpbnVzIFNlcmlmLCBHZW9yZ2lhLCBzZXJpZiIgZmlsbD0iI2VlZjZmYiI+b2YgUGlub2NjaGlvPC90ZXh0Pgo8dGV4dCB4PSIxNjAiIHk9IjE0OTgiIGZvbnQtc2l6ZT0iNjgiIGZvbnQtc3R5bGU9Iml0YWxpYyIgZm9udC1mYW1pbHk9IkxpYmVydGludXMgU2VyaWYsIEdlb3JnaWEsIHNlcmlmIiBmaWxsPSIjOGVjYWU2Ij5DYXJsbyBDb2xsb2RpPC90ZXh0Pgo8dGV4dCB4PSIxNjAiIHk9IjIyMzAiIGZvbnQtc2l6ZT0iNDQiIGxldHRlci1zcGFjaW5nPSIxNCIgZm9udC1mYW1pbHk9IkxpYmVydGludXMgU2VyaWYsIEdlb3JnaWEsIHNlcmlmIiBmaWxsPSIjZWVmNmZiIiBvcGFjaXR5PSIuNzUiPkVCT09LQ0xBU1NJQ1M8L3RleHQ+Cjwvc3ZnPg==" alt="">
 <h1>The Adventures of Pinocchio</h1>
 <p class="author">Carlo Collodi</p>
-<h2>THE ADVENTURES OF PINOCCHIO</h2>
-<p>by C. Collodi</p>
-<p>[Pseudonym of Carlo Lorenzini]</p>
-<p>Translated from the Italian by Carol Della Chiesa</p>
-<h2>CHAPTER 1</h2>
-<p>How it happened that Mastro Cherry, carpenter, found a piece of wood that wept and laughed like a child.</p>
-<p>Centuries ago there lived--</p>
-<p>“A king!” my little readers will say immediately.</p>
+</header>
+<nav class="toc"><h2>Contents</h2><ol>
+<li><a href="#c1">Chapter 2</a></li>
+<li><a href="#c2">Chapter 3</a></li>
+<li><a href="#c3">Chapter 4</a></li>
+<li><a href="#c4">Chapter 5</a></li>
+<li><a href="#c5">Chapter 6</a></li>
+<li><a href="#c6">Chapter 7</a></li>
+<li><a href="#c7">Chapter 8</a></li>
+<li><a href="#c8">Chapter 9</a></li>
+<li><a href="#c9">Chapter 10</a></li>
+<li><a href="#c10">Chapter 11</a></li>
+<li><a href="#c11">Chapter 12</a></li>
+<li><a href="#c12">Chapter 13</a></li>
+<li><a href="#c13">Chapter 14</a></li>
+<li><a href="#c14">Chapter 15</a></li>
+<li><a href="#c15">Chapter 16</a></li>
+<li><a href="#c16">Chapter 17</a></li>
+<li><a href="#c17">Chapter 18</a></li>
+<li><a href="#c18">Chapter 19</a></li>
+<li><a href="#c19">Chapter 20</a></li>
+<li><a href="#c20">Chapter 21</a></li>
+<li><a href="#c21">Chapter 22</a></li>
+<li><a href="#c22">Chapter 23</a></li>
+<li><a href="#c23">Chapter 24</a></li>
+<li><a href="#c24">Chapter 25</a></li>
+<li><a href="#c25">Chapter 26</a></li>
+<li><a href="#c26">Chapter 27</a></li>
+<li><a href="#c27">Chapter 28</a></li>
+<li><a href="#c28">Chapter 29</a></li>
+<li><a href="#c29">Chapter 30</a></li>
+<li><a href="#c30">Chapter 31</a></li>
+<li><a href="#c31">Chapter 32</a></li>
+<li><a href="#c32">Chapter 33</a></li>
+<li><a href="#c33">Chapter 34</a></li>
+<li><a href="#c34">Chapter 35</a></li>
+<li><a href="#c35">Chapter 36</a></li>
+</ol></nav>
 <p>No, children, you are mistaken. Once upon a time there was a piece of wood. It was not an expensive piece of wood. Far from it. Just a common block of firewood, one of those thick, solid logs that are put on the fire in winter to make cold rooms cozy and warm.</p>
 <p>I do not know how this really happened, yet the fact remains that one fine day this piece of wood found itself in the shop of an old carpenter. His real name was Mastro Antonio, but everyone called him Mastro Cherry, for the tip of his nose was so round and red and shiny that it looked like a ripe cherry.</p>
-<p>As soon as he saw that piece of wood, Mastro Cherry was filled with joy. Rubbing his hands together happily, he mumbled half to himself:</p>
-<p>“This has come in the nick of time. I shall use it to make the leg of a table.”</p>
 <p>He grasped the hatchet quickly to peel off the bark and shape the wood. But as he was about to give it the first blow, he stood still with arm uplifted, for he had heard a wee, little voice say in a beseeching tone: “Please be careful! Do not hit me so hard!”</p>
-<p>What a look of surprise shone on Mastro Cherry’s face! His funny face became still funnier.</p>
 <p>He turned frightened eyes about the room to find out where that wee, little voice had come from and he saw no one! He looked under the bench--no one! He peeped inside the closet--no one! He searched among the shavings--no one! He opened the door to look up and down the street--and still no one!</p>
-<p>“Oh, I see!” he then said, laughing and scratching his Wig. “It can easily be seen that I only thought I heard the tiny voice say the words! Well, well--to work once more.”</p>
-<p>He struck a most solemn blow upon the piece of wood.</p>
-<p>“Oh, oh! You hurt!” cried the same far-away little voice.</p>
-<p>Mastro Cherry grew dumb, his eyes popped out of his head, his mouth opened wide, and his tongue hung down on his chin.</p>
-<p>As soon as he regained the use of his senses, he said, trembling and stuttering from fright:</p>
 <p>“Where did that voice come from, when there is no one around? Might it be that this piece of wood has learned to weep and cry like a child? I can hardly believe it. Here it is--a piece of common firewood, good only to burn in the stove, the same as any other. Yet--might someone be hidden in it? If so, the worse for him. I’ll fix him!”</p>
-<p>With these words, he grabbed the log with both hands and started to knock it about unmercifully. He threw it to the floor, against the walls of the room, and even up to the ceiling.</p>
-<p>He listened for the tiny voice to moan and cry. He waited two minutes--nothing; five minutes--nothing; ten minutes--nothing.</p>
-<p>“Oh, I see,” he said, trying bravely to laugh and ruffling up his wig with his hand. “It can easily be seen I only imagined I heard the tiny voice! Well, well--to work once more!”</p>
-<p>The poor fellow was scared half to death, so he tried to sing a gay song in order to gain courage.</p>
-<p>He set aside the hatchet and picked up the plane to make the wood smooth and even, but as he drew it to and fro, he heard the same tiny voice. This time it giggled as it spoke:</p>
-<p>“Stop it! Oh, stop it! Ha, ha, ha! You tickle my stomach.”</p>
-<p>This time poor Mastro Cherry fell as if shot. When he opened his eyes, he found himself sitting on the floor.</p>
-<p>His face had changed; fright had turned even the tip of his nose from red to deepest purple.</p>
-<h2>CHAPTER 2</h2>
+<h2 class="chapter" id="c1">Chapter 2</h2>
 <p>Mastro Cherry gives the piece of wood to his friend Geppetto, who takes it to make himself a Marionette that will dance, fence, and turn somersaults.</p>
 <p>In that very instant, a loud knock sounded on the door. “Come in,” said the carpenter, not having an atom of strength left with which to stand up.</p>
 <p>At the words, the door opened and a dapper little old man came in. His name was Geppetto, but to the boys of the neighborhood he was Polendina,* on account of the wig he always wore which was just the color of yellow corn.</p>
@@ -65,10 +98,6 @@ h2 + p, .first { text-indent: 0; }
 <p>“You called me Polendina.”</p>
 <p>“I did not.”</p>
 <p>“I suppose you think I did! Yet I KNOW it was you.”</p>
-<p>“No!”</p>
-<p>“Yes!”</p>
-<p>“No!”</p>
-<p>“Yes!”</p>
 <p>And growing angrier each moment, they went from words to blows, and finally began to scratch and bite and slap each other.</p>
 <p>When the fight was over, Mastro Antonio had Geppetto’s yellow wig in his hands and Geppetto found the carpenter’s curly wig in his mouth.</p>
 <p>“Give me back my wig!” shouted Mastro Antonio in a surly voice.</p>
@@ -94,7 +123,7 @@ h2 + p, .first { text-indent: 0; }
 <p>On hearing himself called Polendina for the third time, Geppetto lost his head with rage and threw himself upon the carpenter. Then and there they gave each other a sound thrashing.</p>
 <p>After this fight, Mastro Antonio had two more scratches on his nose, and Geppetto had two buttons missing from his coat. Thus having settled their accounts, they shook hands and swore to be good friends for the rest of their lives.</p>
 <p>Then Geppetto took the fine piece of wood, thanked Mastro Antonio, and limped away toward home.</p>
-<h2>CHAPTER 3</h2>
+<h2 class="chapter" id="c2">Chapter 3</h2>
 <p>As soon as he gets home, Geppetto fashions the Marionette and calls it Pinocchio. The first pranks  of the Marionette.</p>
 <p>Little as Geppetto’s house was, it was neat and comfortable. It was a small room on the ground floor, with a tiny window under the stairway. The furniture could not have been much simpler: a very old chair, a rickety old bed, and a tumble-down table. A fireplace full of burning logs was painted on the wall opposite the door. Over the fire, there was painted a pot full of something which kept boiling happily away and sending up clouds of what looked like real steam.</p>
 <p>As soon as he reached home, Geppetto took his tools and began to cut and shape the wood into a Marionette.</p>
@@ -136,7 +165,7 @@ h2 + p, .first { text-indent: 0; }
 <p>They said so much that, finally, the Carabineer ended matters by setting Pinocchio at liberty and dragging Geppetto to prison. The poor old fellow did not know how to defend himself, but wept and wailed like a child and said between his sobs:</p>
 <p>“Ungrateful boy! To think I tried so hard to make you a well-behaved Marionette! I deserve it, however! I should have given the matter more thought.”</p>
 <p>What happened after this is an almost unbelievable story, but you may read it, dear children, in the chapters that follow.</p>
-<h2>CHAPTER 4</h2>
+<h2 class="chapter" id="c3">Chapter 4</h2>
 <p>The story of Pinocchio and the Talking Cricket, in which one sees that bad children do not like to be corrected by those who know more than they do.</p>
 <p>Very little time did it take to get poor old Geppetto to prison. In the meantime that rascal, Pinocchio, free now from the clutches of the Carabineer, was running wildly across fields and meadows, taking one short cut after another toward home. In his wild flight, he leaped over brambles and bushes, and across brooks and ponds, as if he were a goat or a hare chased by hounds.</p>
 <p>On reaching home, he found the house door half open. He slipped into the room, locked the door, and threw himself on the floor, happy at his escape.</p>
@@ -167,7 +196,7 @@ h2 + p, .first { text-indent: 0; }
 <p>At these last words, Pinocchio jumped up in a fury, took a hammer from the bench, and threw it with all his strength at the Talking Cricket.</p>
 <p>Perhaps he did not think he would strike it. But, sad to relate, my dear children, he did hit the Cricket, straight on its head.</p>
 <p>With a last weak “cri-cri-cri” the poor Cricket fell from the wall, dead!</p>
-<h2>CHAPTER 5</h2>
+<h2 class="chapter" id="c4">Chapter 5</h2>
 <p>Pinocchio is hungry and looks for an egg to cook himself an omelet; but, to his surprise, the omelet flies out of the window.</p>
 <p>If the Cricket’s death scared Pinocchio at all, it was only for a very few moments. For, as night came on, a queer, empty feeling at the pit of his stomach reminded the Marionette that he had eaten nothing as yet.</p>
 <p>A boy’s appetite grows very fast, and in a few moments the queer, empty feeling had become hunger, and the hunger grew bigger and bigger, until soon he was as ravenous as a bear.</p>
@@ -183,7 +212,7 @@ h2 + p, .first { text-indent: 0; }
 <p>The poor Marionette stood as if turned to stone, with wide eyes, open mouth, and the empty halves of the egg-shell in his hands. When he came to himself, he began to cry and shriek at the top of his lungs, stamping his feet on the ground and wailing all the while:</p>
 <p>“The Talking Cricket was right! If I had not run away from home and if Father were here now, I should not be dying of hunger. Oh, how horrible it is to be hungry!”</p>
 <p>And as his stomach kept grumbling more than ever and he had nothing to quiet it with, he thought of going out for a walk to the near-by village, in the hope of finding some charitable person who might give him a bit of bread.</p>
-<h2>CHAPTER 6</h2>
+<h2 class="chapter" id="c5">Chapter 6</h2>
 <p>Pinocchio falls asleep with his feet on a foot warmer, and awakens the next day with his feet all burned off.</p>
 <p>Pinocchio hated the dark street, but he was so hungry that, in spite of it, he ran out of the house. The night was pitch black. It thundered, and bright flashes of lightning now and again shot across the sky, turning it into a sea of fire. An angry wind blew cold and raised dense clouds of dust, while the trees shook and moaned in a weird way.</p>
 <p>Pinocchio was greatly afraid of thunder and lightning, but the hunger he felt was far greater than his fear. In a dozen leaps and bounds, he came to the village, tired out, puffing like a whale, and with tongue hanging.</p>
@@ -203,7 +232,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“Who is it?” he called, yawning and rubbing his eyes.</p>
 <p>“It is I,” answered a voice.</p>
 <p>It was the voice of Geppetto.</p>
-<h2>CHAPTER 7</h2>
+<h2 class="chapter" id="c6">Chapter 7</h2>
 <p>Geppetto returns home and gives his own breakfast to the Marionette</p>
 <p>The poor Marionette, who was still half asleep, had not yet found out that his two feet were burned and gone. As soon as he heard his Father’s voice, he jumped up from his seat to open the door, but, as he did so, he staggered and fell headlong to the floor.</p>
 <p>In falling, he made as much noise as a sack of wood falling from the fifth story of a house.</p>
@@ -239,7 +268,7 @@ h2 + p, .first { text-indent: 0; }
 <p>At first he made a wry face, but, one after another, the skins and the cores disappeared.</p>
 <p>“Ah! Now I feel fine!” he said after eating the last one.</p>
 <p>“You see,” observed Geppetto, “that I was right when I told you that one must not be too fussy and too dainty about food. My dear, we never know what life may have in store for us!”</p>
-<h2>CHAPTER 8</h2>
+<h2 class="chapter" id="c7">Chapter 8</h2>
 <p>Geppetto makes Pinocchio a new pair of feet, and sells his coat to buy him an A-B-C book.</p>
 <p>The Marionette, as soon as his hunger was appeased, started to grumble and cry that he wanted a new pair of feet.</p>
 <p>But Mastro Geppetto, in order to punish him for his mischief, let him alone the whole morning. After dinner he said to him:</p>
@@ -275,7 +304,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“Why did you sell your coat?”</p>
 <p>“It was too warm.”</p>
 <p>Pinocchio understood the answer in a twinkling, and, unable to restrain his tears, he jumped on his father’s neck and kissed him over and over.</p>
-<h2>CHAPTER 9</h2>
+<h2 class="chapter" id="c8">Chapter 9</h2>
 <p>Pinocchio sells his A-B-C book to pay his way into the Marionette Theater.</p>
 <p>See Pinocchio hurrying off to school with his new A-B-C book under his arm! As he walked along, his brain was busy planning hundreds of wonderful things, building hundreds of castles in the air. Talking to himself, he said:</p>
 <p>“In school today, I’ll learn to read, tomorrow to write, and the day after tomorrow I’ll do arithmetic. Then, clever as I am, I can earn a lot of money. With the very first pennies I make, I’ll buy Father a new cloth coat. Cloth, did I say? No, it shall be of gold and silver with diamond buttons. That poor man certainly deserves it; for, after all, isn’t he in his shirt sleeves because he was good enough to buy a book for me? On this cold day, too! Fathers are indeed good to their children!”</p>
@@ -308,7 +337,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“I am a boy and I buy nothing from boys,” said the little fellow with far more common sense than the Marionette.</p>
 <p>“I’ll give you four pennies for your A-B-C book,” said a ragpicker who stood by.</p>
 <p>Then and there, the book changed hands. And to think that poor old Geppetto sat at home in his shirt sleeves, shivering with cold, having sold his coat to buy that little book for his son!</p>
-<h2>CHAPTER 10</h2>
+<h2 class="chapter" id="c9">Chapter 10</h2>
 <p>The Marionettes recognize their brother Pinocchio, and greet him with loud cheers; but the Director, Fire Eater, happens along and poor Pinocchio almost loses his life.</p>
 <p>Quick as a flash, Pinocchio disappeared into the Marionette Theater. And then something happened which almost caused a riot.</p>
 <p>The curtain was up and the performance had started.</p>
@@ -334,7 +363,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“Bring that Marionette to me! He looks as if he were made of well-seasoned wood. He’ll make a fine fire for this spit.”</p>
 <p>Harlequin and Pulcinella hesitated a bit. Then, frightened by a look from their master, they left the kitchen to obey him. A few minutes later they returned, carrying poor Pinocchio, who was wriggling and squirming like an eel and crying pitifully:</p>
 <p>“Father, save me! I don’t want to die! I don’t want to die!”</p>
-<h2>CHAPTER 11</h2>
+<h2 class="chapter" id="c10">Chapter 11</h2>
 <p>Fire Eater sneezes and forgives Pinocchio, who saves his friend, Harlequin, from death.</p>
 <p>In the theater, great excitement reigned.</p>
 <p>Fire Eater (this was really his name) was very ugly, but he was far from being as bad as he looked. Proof of this is that, when he saw the poor Marionette being brought in to him, struggling with fear and crying, “I don’t want to die! I don’t want to die!” he felt sorry for him and began first to waver and then to weaken. Finally, he could control himself no longer and gave a loud sneeze.</p>
@@ -371,7 +400,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“Has pardon been granted to me?” asked poor Harlequin with a voice that was hardly a breath.</p>
 <p>“Pardon is yours!” answered Fire Eater; and sighing and wagging his head, he added: “Well, tonight I shall have to eat my lamb only half cooked, but beware the next time, Marionettes.”</p>
 <p>At the news that pardon had been given, the Marionettes ran to the stage and, turning on all the lights, they danced and sang till dawn.</p>
-<h2>CHAPTER 12</h2>
+<h2 class="chapter" id="c11">Chapter 12</h2>
 <p>Fire Eater gives Pinocchio five gold pieces for his father, Geppetto; but the Marionette meets a Fox and a Cat and follows them.</p>
 <p>The next day Fire Eater called Pinocchio aside and asked him:</p>
 <p>“What is your father’s name?”</p>
@@ -436,7 +465,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“To enrich others!” repeated the Cat.</p>
 <p>“What good people,” thought Pinocchio to himself. And forgetting his father, the new coat, the A-B-C book, and all his good resolutions, he said to the Fox and to the Cat:</p>
 <p>“Let us go. I am with you.”</p>
-<h2>CHAPTER 13</h2>
+<h2 class="chapter" id="c12">Chapter 13</h2>
 <p>The Inn of the Red Lobster</p>
 <p>Cat and Fox and Marionette walked and walked and walked. At last, toward evening, dead tired, they came to the Inn of the Red Lobster.</p>
 <p>“Let us stop here a while,” said the Fox, “to eat a bite and rest for a few hours. At midnight we’ll start out again, for at dawn tomorrow we must be at the Field of Wonders.”</p>
@@ -478,7 +507,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“The same nonsense. Good-by, Cricket.”</p>
 <p>“Good night, Pinocchio, and may Heaven preserve you from the Assassins.”</p>
 <p>There was silence for a minute and the light of the Talking Cricket disappeared suddenly, just as if someone had snuffed it out. Once again the road was plunged in darkness.</p>
-<h2>CHAPTER 14</h2>
+<h2 class="chapter" id="c13">Chapter 14</h2>
 <p>Pinocchio, not having listened to the good advice of the Talking Cricket, falls into the hands of the Assassins.</p>
 <p>“Dear, oh, dear! When I come to think of it,” said the Marionette to himself, as he once more set out on his journey, “we boys are really very unlucky. Everybody scolds us, everybody gives us advice, everybody warns us. If we were to allow it, everyone would try to be father and mother to us; everyone, even the Talking Cricket. Take me, for example. Just because I would not listen to that bothersome Cricket, who knows how many misfortunes may be awaiting me! Assassins indeed! At least I have never believed in them, nor ever will. To speak sensibly, I think assassins have been invented by fathers and mothers to frighten children who want to run away at night. And then, even if I were to meet them on the road, what matter? I’ll just run up to them, and say, ‘Well, signori, what do you want? Remember that you can’t fool with me! Run along and mind your business.’ At such a speech, I can almost see those poor fellows running like the wind. But in case they don’t run away, I can always run myself. . .”</p>
 <p>Pinocchio was not given time to argue any longer, for he thought he heard a slight rustle among the leaves behind him.</p>
@@ -507,7 +536,7 @@ h2 + p, .first { text-indent: 0; }
 <p>What was there to do? With a “One, two, three!” he jumped clear across it. The Assassins jumped also, but not having measured their distance well--splash!!!--they fell right into the middle of the pool. Pinocchio who heard the splash and felt it, too, cried out, laughing, but never stopping in his race:</p>
 <p>“A pleasant bath to you, signori!”</p>
 <p>He thought they must surely be drowned and turned his head to see. But there were the two somber figures still following him, though their black sacks were drenched and dripping with water.</p>
-<h2>CHAPTER 15</h2>
+<h2 class="chapter" id="c14">Chapter 15</h2>
 <p>The Assassins chase Pinocchio, catch him, and hang him to the branch of a giant oak tree.</p>
 <p>As he ran, the Marionette felt more and more certain that he would have to give himself up into the hands of his pursuers. Suddenly he saw a little cottage gleaming white as the snow among the trees of the forest.</p>
 <p>“If I have enough breath left with which to reach that little house, I may be saved,” he said to himself.</p>
@@ -536,7 +565,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Death was creeping nearer and nearer, and the Marionette still hoped for some good soul to come to his rescue, but no one appeared. As he was about to die, he thought of his poor old father, and hardly conscious of what he was saying, murmured to himself:</p>
 <p>“Oh, Father, dear Father! If you were only here!”</p>
 <p>These were his last words. He closed his eyes, opened his mouth, stretched out his legs, and hung there, as if he were dead.</p>
-<h2>CHAPTER 16</h2>
+<h2 class="chapter" id="c15">Chapter 16</h2>
 <p>The Lovely Maiden with Azure Hair sends for the poor Marionette, puts him to bed, and calls three Doctors to tell her if Pinocchio is dead or alive.</p>
 <p>If the poor Marionette had dangled there much longer, all hope would have been lost. Luckily for him, the Lovely Maiden with Azure Hair once again looked out of her window. Filled with pity at the sight of the poor little fellow being knocked helplessly about by the wind, she clapped her hands sharply together three times.</p>
 <p>At the signal, a loud whirr of wings in quick flight was heard and a large Falcon came and settled itself on the window ledge.</p>
@@ -568,7 +597,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Long shuddering sobs were heard, cries, and deep sighs. Think how surprised everyone was when, on raising the sheets, they discovered Pinocchio half melted in tears!</p>
 <p>“When the dead weep, they are beginning to recover,” said the Crow solemnly.</p>
 <p>“I am sorry to contradict my famous friend and colleague,” said the Owl, “but as far as I’m concerned, I think that when the dead weep, it means they do not want to die.”</p>
-<h2>CHAPTER 17</h2>
+<h2 class="chapter" id="c16">Chapter 17</h2>
 <p>Pinocchio eats sugar, but refuses to take medicine. When the undertakers come for him, he drinks the medicine and feels better. Afterwards he tells a lie and, in punishment, his nose grows longer and longer.</p>
 <p>As soon as the three doctors had left the room, the Fairy went to Pinocchio’s bed and, touching him on the forehead, noticed that he was burning with fever.</p>
 <p>She took a glass of water, put a white powder into it, and, handing it to the Marionette, said lovingly to him:</p>
@@ -643,7 +672,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“How do you know I am lying?”</p>
 <p>“Lies, my boy, are known in a moment. There are two kinds of lies, lies with short legs and lies with long noses. Yours, just now, happen to have long noses.”</p>
 <p>Pinocchio, not knowing where to hide his shame, tried to escape from the room, but his nose had become so long that he could not get it out of the door.</p>
-<h2>CHAPTER 18</h2>
+<h2 class="chapter" id="c17">Chapter 18</h2>
 <p>Pinocchio finds the Fox and the Cat again, and goes with them to sow the gold pieces in the Field of Wonders.</p>
 <p>Crying as if his heart would break, the Marionette mourned for hours over the length of his nose. No matter how he tried, it would not go through the door. The Fairy showed no pity toward him, as she was trying to teach him a good lesson, so that he would stop telling lies, the worst habit any boy may acquire. But when she saw him, pale with fright and with his eyes half out of his head from terror, she began to feel sorry for him and clapped her hands together. A thousand woodpeckers flew in through the window and settled themselves on Pinocchio’s nose. They pecked and pecked so hard at that enormous nose that in a few moments, it was the same size as before.</p>
 <p>“How good you are, my Fairy,” said Pinocchio, drying his eyes, “and how much I love you!”</p>
@@ -698,7 +727,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Pinocchio, beside himself with joy, thanked the Fox and the Cat many times and promised them each a beautiful gift.</p>
 <p>“We don’t want any of your gifts,” answered the two rogues. “It is enough for us that we have helped you to become rich with little or no trouble. For this we are as happy as kings.”</p>
 <p>They said good-by to Pinocchio and, wishing him good luck, went on their way.</p>
-<h2>CHAPTER 19</h2>
+<h2 class="chapter" id="c18">Chapter 19</h2>
 <p>Pinocchio is robbed of his gold pieces and, in punishment, is sentenced to four months in prison.</p>
 <p>If the Marionette had been told to wait a day instead of twenty minutes, the time could not have seemed longer to him. He walked impatiently to and fro and finally turned his nose toward the Field of Wonders.</p>
 <p>And as he walked with hurried steps, his heart beat with an excited tic, tac, tic, tac, just as if it were a wall clock, and his busy brain kept thinking:</p>
@@ -727,7 +756,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“Not you,” answered the Jailer. “You are one of those--”</p>
 <p>“I beg your pardon,” interrupted Pinocchio, “I, too, am a thief.”</p>
 <p>“In that case you also are free,” said the Jailer. Taking off his cap, he bowed low and opened the door of the prison, and Pinocchio ran out and away, with never a look backward.</p>
-<h2>CHAPTER 20</h2>
+<h2 class="chapter" id="c19">Chapter 20</h2>
 <p>Freed from prison, Pinocchio sets out to return to the Fairy; but on the way he meets a Serpent and later is caught in a trap.</p>
 <p>Fancy the happiness of Pinocchio on finding himself free! Without saying yes or no, he fled from the city and set out on the road that was to take him back to the house of the lovely Fairy.</p>
 <p>It had rained for many days, and the road was so muddy that, at times, Pinocchio sank down almost to his knees.</p>
@@ -749,7 +778,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Pinocchio freed himself from his awkward position and once more began to run in order to reach the Fairy’s house before dark. As he went, the pangs of hunger grew so strong that, unable to withstand them, he jumped into a field to pick a few grapes that tempted him. Woe to him!</p>
 <p>No sooner had he reached the grapevine than--crack! went his legs.</p>
 <p>The poor Marionette was caught in a trap set there by a Farmer for some Weasels which came every night to steal his chickens.</p>
-<h2>CHAPTER 21</h2>
+<h2 class="chapter" id="c20">Chapter 21</h2>
 <p>Pinocchio is caught by a Farmer, who uses him as a watchdog for his chicken coop.</p>
 <p>Pinocchio, as you may well imagine, began to scream and weep and beg; but all was of no use, for no houses were to be seen and not a soul passed by on the road.</p>
 <p>Night came on.</p>
@@ -775,7 +804,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Poor Pinocchio huddled close to the doghouse more dead than alive from cold, hunger, and fright. Now and again he pulled and tugged at the collar which nearly choked him and cried out in a weak voice:</p>
 <p>“I deserve it! Yes, I deserve it! I have been nothing but a truant and a vagabond. I have never obeyed anyone and I have always done as I pleased. If I were only like so many others and had studied and worked and stayed with my poor old father, I should not find myself here now, in this field and in the darkness, taking the place of a farmer’s watchdog. Oh, if I could start all over again! But what is done can’t be undone, and I must be patient!”</p>
 <p>After this little sermon to himself, which came from the very depths of his heart, Pinocchio went into the doghouse and fell asleep.</p>
-<h2>CHAPTER 22</h2>
+<h2 class="chapter" id="c21">Chapter 22</h2>
 <p>Pinocchio discovers the thieves and, as a reward for faithfulness, he regains his liberty.</p>
 <p>Even though a boy may be very unhappy, he very seldom loses sleep over his worries. The Marionette, being no exception to this rule, slept on peacefully for a few hours till well along toward midnight, when he was awakened by strange whisperings and stealthy sounds coming from the yard. He stuck his nose out of the doghouse and saw four slender, hairy animals. They were Weasels, small animals very fond of both eggs and chickens. One of them left her companions and, going to the door of the doghouse, said in a sweet voice:</p>
 <p>“Good evening, Melampo.”</p>
@@ -814,7 +843,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“I was asleep,” answered Pinocchio, “but they awakened me with their whisperings. One of them even came to the door of the doghouse and said to me, ‘If you promise not to bark, we will make you a present of one of the chickens for your breakfast.’ Did you hear that? They had the audacity to make such a proposition as that to me! For you must know that, though I am a very wicked Marionette full of faults, still I never have been, nor ever shall be, bribed.”</p>
 <p>“Fine boy!” cried the Farmer, slapping him on the shoulder in a friendly way. “You ought to be proud of yourself. And to show you what I think of you, you are free from this instant!”</p>
 <p>And he slipped the dog collar from his neck.</p>
-<h2>CHAPTER 23</h2>
+<h2 class="chapter" id="c22">Chapter 23</h2>
 <p>Pinocchio weeps upon learning that the Lovely Maiden with Azure Hair is dead. He meets a Pigeon, who carries him to the seashore. He throws himself into the sea to go to the aid of his father.</p>
 <p>As soon as Pinocchio no longer felt the shameful weight of the dog collar around his neck, he started to run across the fields and meadows, and never stopped till he came to the main road that was to take him to the Fairy’s house.</p>
 <p>When he reached it, he looked into the valley far below him and there he saw the wood where unluckily he had met the Fox and the Cat, and the tall oak tree where he had been hanged; but though he searched far and near, he could not see the house where the Fairy with the Azure Hair lived.</p>
@@ -871,7 +900,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“I’ll save him! I’ll save my father!”</p>
 <p>The Marionette, being made of wood, floated easily along and swam like a fish in the rough water. Now and again he disappeared only to reappear once more. In a twinkling, he was far away from land. At last he was completely lost to view.</p>
 <p>“Poor boy!” cried the fisher folk on the shore, and again they mumbled a few prayers, as they returned home.</p>
-<h2>CHAPTER 24</h2>
+<h2 class="chapter" id="c23">Chapter 24</h2>
 <p>Pinocchio reaches the Island of the Busy Bees and finds the Fairy once more.</p>
 <p>Pinocchio, spurred on by the hope of finding his father and of being in time to save him, swam all night long.</p>
 <p>And what a horrible night it was! It poured rain, it hailed, it thundered, and the lightning was so bright that it turned the night into day.</p>
@@ -938,7 +967,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“Why all this surprise?” asked the good woman, laughing.</p>
 <p>“Because--” answered Pinocchio, stammering and stuttering, “because--you look like--you remind me of--yes, yes, the same voice, the same eyes, the same hair--yes, yes, yes, you also have the same azure hair she had--Oh, my little Fairy, my little Fairy! Tell me that it is you! Don’t make me cry any longer! If you only knew! I have cried so much, I have suffered so!”</p>
 <p>And Pinocchio threw himself on the floor and clasped the knees of the mysterious little woman.</p>
-<h2>CHAPTER 25</h2>
+<h2 class="chapter" id="c24">Chapter 25</h2>
 <p>Pinocchio promises the Fairy to be good and to study, as he is growing tired of being a Marionette, and wishes to become a real boy.</p>
 <p>If Pinocchio cried much longer, the little woman thought he would melt away, so she finally admitted that she was the little Fairy with Azure Hair.</p>
 <p>“You rascal of a Marionette! How did you know it was I?” she asked, laughing.</p>
@@ -988,7 +1017,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“My dear boy,” said the Fairy, “people who speak as you do usually end their days either in a prison or in a hospital. A man, remember, whether rich or poor, should do something in this world. No one can find happiness without work. Woe betide the lazy fellow! Laziness is a serious illness and one must cure it immediately; yes, even from early childhood. If not, it will kill you in the end.”</p>
 <p>These words touched Pinocchio’s heart. He lifted his eyes to his Fairy and said seriously: “I’ll work; I’ll study; I’ll do all you tell me. After all, the life of a Marionette has grown very tiresome to me and I want to become a boy, no matter how hard it is. You promise that, do you not?”</p>
 <p>“Yes, I promise, and now it is up to you.”</p>
-<h2>CHAPTER 26</h2>
+<h2 class="chapter" id="c25">Chapter 26</h2>
 <p>Pinocchio goes to the seashore with his friends to see the Terrible Shark.</p>
 <p>In the morning, bright and early, Pinocchio started for school.</p>
 <p>Imagine what the boys said when they saw a Marionette enter the classroom! They laughed until they cried. Everyone played tricks on him. One pulled his hat off, another tugged at his coat, a third tried to paint a mustache under his nose. One even attempted to tie strings to his feet and his hands to make him dance.</p>
@@ -1022,7 +1051,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“Very well, then. Let’s see who gets there first!” cried Pinocchio.</p>
 <p>At the signal, the little troop, with books under their arms, dashed across the fields. Pinocchio led the way, running as if on wings, the others following as fast as they could.</p>
 <p>Now and again, he looked back and, seeing his followers hot and tired, and with tongues hanging out, he laughed out heartily. Unhappy boy! If he had only known then the dreadful things that were to happen to him on account of his disobedience!</p>
-<h2>CHAPTER 27</h2>
+<h2 class="chapter" id="c26">Chapter 27</h2>
 <p>The great battle between Pinocchio and his playmates. One is wounded. Pinocchio is arrested.</p>
 <p>Going like the wind, Pinocchio took but a very short time to reach the shore. He glanced all about him, but there was no sign of a Shark. The sea was as smooth as glass.</p>
 <p>“Hey there, boys! Where’s that Shark?” he asked, turning to his playmates.</p>
@@ -1099,7 +1128,7 @@ h2 + p, .first { text-indent: 0; }
 <p>The Marionette went, picked up his cap--but instead of putting it on his head, he stuck it between his teeth and then raced toward the sea.</p>
 <p>He went like a bullet out of a gun.</p>
 <p>The Carabineers, judging that it would be very difficult to catch him, sent a large Mastiff after him, one that had won first prize in all the dog races. Pinocchio ran fast and the Dog ran faster. At so much noise, the people hung out of the windows or gathered in the street, anxious to see the end of the contest. But they were disappointed, for the Dog and Pinocchio raised so much dust on the road that, after a few moments, it was impossible to see them.</p>
-<h2>CHAPTER 28</h2>
+<h2 class="chapter" id="c27">Chapter 28</h2>
 <p>Pinocchio runs the danger of being fried in a pan like a fish</p>
 <p>During that wild chase, Pinocchio lived through a terrible moment when he almost gave himself up as lost. This was when Alidoro (that was the Mastiff’s name), in a frenzy of running, came so near that he was on the very point of reaching him.</p>
 <p>The Marionette heard, close behind him, the labored breathing of the beast who was fast on his trail, and now and again even felt his hot breath blow over him.</p>
@@ -1150,7 +1179,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Then he pulled a wooden bowl full of flour out of a cupboard and started to roll the fish into it, one by one. When they were white with it, he threw them into the pan. The first to dance in the hot oil were the mullets, the bass followed, then the whitefish, the flounders, and the anchovies. Pinocchio’s turn came last. Seeing himself so near to death (and such a horrible death!) he began to tremble so with fright that he had no voice left with which to beg for his life.</p>
 <p>The poor boy beseeched only with his eyes. But the Green Fisherman, not even noticing that it was he, turned him over and over in the flour until he looked like a Marionette made of chalk.</p>
 <p>Then he took him by the head and . . .</p>
-<h2>CHAPTER 29</h2>
+<h2 class="chapter" id="c28">Chapter 29</h2>
 <p>Pinocchio returns to the Fairy’s house and she promises him that, on the morrow, he will cease to be a Marionette and become a boy. A wonderful party of coffee-and-milk to celebrate the great event.</p>
 <p>Mindful of what the Fisherman had said, Pinocchio knew that all hope of being saved had gone. He closed his eyes and waited for the final moment.</p>
 <p>Suddenly, a large Dog, attracted by the odor of the boiling oil, came running into the cave.</p>
@@ -1244,7 +1273,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Pinocchio was beside himself with joy. All his friends and schoolmates must be invited to celebrate the great event! The Fairy promised to prepare two hundred cups of coffee-and-milk and four hundred slices of toast buttered on both sides.</p>
 <p>The day promised to be a very gay and happy one, but--</p>
 <p>Unluckily, in a Marionette’s life there’s always a BUT which is apt to spoil everything.</p>
-<h2>CHAPTER 30</h2>
+<h2 class="chapter" id="c29">Chapter 30</h2>
 <p>Pinocchio, instead of becoming a boy, runs away to the Land of Toys with his friend, Lamp-Wick.</p>
 <p>Coming at last out of the surprise into which the Fairy’s words had thrown him, Pinocchio asked for permission to give out the invitations.</p>
 <p>“Indeed, you may invite your friends to tomorrow’s party. Only remember to return home before dark. Do you understand?”</p>
@@ -1339,7 +1368,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“But is it really true that in that country boys never have to study?”</p>
 <p>“Never, never, never!”</p>
 <p>“What a wonderful, beautiful, marvelous country! Oh--h--h!!”</p>
-<h2>CHAPTER 31</h2>
+<h2 class="chapter" id="c30">Chapter 31</h2>
 <p>After five months of play, Pinocchio wakes up one fine morning and finds a great surprise awaiting him.</p>
 <p>Finally the wagon arrived. It made no noise, for its wheels were bound with straw and rags.</p>
 <p>It was drawn by twelve pair of donkeys, all of the same size, but all of different color. Some were gray, others white, and still others a mixture of brown and black. Here and there were a few with large yellow and blue stripes.</p>
@@ -1397,7 +1426,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“Poor teacher!” answered the other, nodding his head. “Indeed I know how much he disliked me and how he enjoyed speaking ill of me. But I am of a generous nature, and I gladly forgive him.”</p>
 <p>“Great soul!” said Pinocchio, fondly embracing his friend.</p>
 <p>Five months passed and the boys continued playing and enjoying themselves from morn till night, without ever seeing a book, or a desk, or a school. But, my children, there came a morning when Pinocchio awoke and found a great surprise awaiting him, a surprise which made him feel very unhappy, as you shall see.</p>
-<h2>CHAPTER 32</h2>
+<h2 class="chapter" id="c31">Chapter 32</h2>
 <p>Pinocchio’s ears become like those of a Donkey. In a little while he changes into a real Donkey and begins to bray.</p>
 <p>Everyone, at one time or another, has found some surprise awaiting him. Of the kind which Pinocchio had on that eventful morning of his life, there are but few.</p>
 <p>What was it? I will tell you, my dear little readers. On awakening, Pinocchio put his hand up to his head and there he found--</p>
@@ -1405,7 +1434,7 @@ h2 + p, .first { text-indent: 0; }
 <p>He found that, during the night, his ears had grown at least ten full inches!</p>
 <p>You must know that the Marionette, even from his birth, had very small ears, so small indeed that to the naked eye they could hardly be seen. Fancy how he felt when he noticed that overnight those two dainty organs had become as long as shoe brushes!</p>
 <p>He went in search of a mirror, but not finding any, he just filled a basin with water and looked at himself. There he saw what he never could have wished to see. His manly figure was adorned and enriched by a beautiful pair of donkey’s ears.</p>
-<p>I leave you to think of the terrible grief, the shame, the despair of the poor Marionette.</p>
+<h3 class="sub">I leave you to think of the terrible grief, the shame, the despair of the poor Marionette.</h3>
 <p>He began to cry, to scream, to knock his head against the wall, but the more he shrieked, the longer and the more hairy grew his ears.</p>
 <p>At those piercing shrieks, a Dormouse came into the room, a fat little Dormouse, who lived upstairs. Seeing Pinocchio so grief-stricken, she asked him anxiously:</p>
 <p>“What is the matter, dear little neighbor?”</p>
@@ -1483,7 +1512,7 @@ h2 + p, .first { text-indent: 0; }
 <p>But what is done can’t be undone! Instead of moans and cries, they burst forth into loud donkey brays, which sounded very much like, “Haw! Haw! Haw!”</p>
 <p>At that moment, a loud knocking was heard at the door and a voice called to them:</p>
 <p>“Open! I am the Little Man, the driver of the wagon which brought you here. Open, I say, or beware!”</p>
-<h2>CHAPTER 33</h2>
+<h2 class="chapter" id="c32">Chapter 33</h2>
 <p>Pinocchio, having become a Donkey, is bought by the owner of a Circus, who wants to teach him to do tricks. The Donkey becomes lame and is sold to a man who wants to use his skin for a drumhead.</p>
 <p>Very sad and downcast were the two poor little fellows as they stood and looked at each other. Outside the room, the Little Man grew more and more impatient, and finally gave the door such a violent kick that it flew open. With his usual sweet smile on his lips, he looked at Pinocchio and Lamp-Wick and said to them:</p>
 <p>“Fine work, boys! You have brayed well, so well that I recognized your voices immediately, and here I am.”</p>
@@ -1514,9 +1543,9 @@ h2 + p, .first { text-indent: 0; }
 <p>GREAT SPECTACLE TONIGHT LEAPS AND EXERCISES BY THE GREAT ARTISTS AND THE FAMOUS HORSES of the COMPANY</p>
 <p>First Public Appearance</p>
 <p>of the</p>
-<h2>FAMOUS DONKEY</h2>
+<h3 class="sub">Famous Donkey</h3>
 <p>called</p>
-<h2>PINOCCHIO</h2>
+<h3 class="sub">Pinocchio</h3>
 <p>THE STAR OF THE DANCE ---- The Theater will be as Light as Day</p>
 <p>That night, as you can well imagine, the theater was filled to overflowing one hour before the show was scheduled to start.</p>
 <p>Not an orchestra chair could be had, not a balcony seat, nor a gallery seat; not even for their weight in gold.</p>
@@ -1555,10 +1584,10 @@ h2 + p, .first { text-indent: 0; }
 <p>“How much do you ask for that little lame Donkey?” he asked.</p>
 <p>“Four dollars.”</p>
 <p>“I’ll give you four cents. Don’t think I’m buying him for work. I want only his skin. It looks very tough and I can use it to make myself a drumhead. I belong to a musical band in my village and I need a drum.”</p>
-<p>I leave it to you, my dear children, to picture to yourself the great pleasure with which Pinocchio heard that he was to become a drumhead!</p>
+<h3 class="sub">I leave it to you, my dear children, to picture to yourself the great pleasure with which Pinocchio heard that he was to become a drumhead!</h3>
 <p>As soon as the buyer had paid the four cents, the Donkey changed hands. His new owner took him to a high cliff overlooking the sea, put a stone around his neck, tied a rope to one of his hind feet, gave him a push, and threw him into the water.</p>
 <p>Pinocchio sank immediately. And his new master sat on the cliff waiting for him to drown, so as to skin him and make himself a drumhead.</p>
-<h2>CHAPTER 34</h2>
+<h2 class="chapter" id="c33">Chapter 34</h2>
 <p>Pinocchio is thrown into the sea, eaten by fishes, and becomes a Marionette once more. As he swims to land, he is swallowed by the Terrible Shark.</p>
 <p>Down into the sea, deeper and deeper, sank Pinocchio, and finally, after fifty minutes of waiting, the man on the cliff said to himself:</p>
 <p>“By this time my poor little lame Donkey must be drowned. Up with him and then I can get to work on my beautiful drum.”</p>
@@ -1568,7 +1597,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“And the Donkey I threw into the sea?”</p>
 <p>“I am that Donkey,” answered the Marionette laughing.</p>
 <p>“You?”</p>
-<h2>“I.”</h2>
+<h3 class="sub">“i.”</h3>
 <p>“Ah, you little cheat! Are you poking fun at me?”</p>
 <p>“Poking fun at you? Not at all, dear Master. I am talking seriously.”</p>
 <p>“But, then, how is it that you, who a few minutes ago were a donkey, are now standing before me a wooden Marionette?”</p>
@@ -1632,7 +1661,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“Good-by, Marionette, and good luck.”</p>
 <p>“When shall I see you again?”</p>
 <p>“Who knows? It is better not to think about it.”</p>
-<h2>CHAPTER 35</h2>
+<h2 class="chapter" id="c34">Chapter 35</h2>
 <p>In the Shark’s body Pinocchio finds whom? Read this chapter, my children, and you will know.</p>
 <p>Pinocchio, as soon as he had said good-by to his good friend, the Tunny, tottered away in the darkness and began to walk as well as he could toward the faint light which glowed in the distance.</p>
 <p>As he walked his feet splashed in a pool of greasy and slippery water, which had such a heavy smell of fish fried in oil that Pinocchio thought it was Lent.</p>
@@ -1672,7 +1701,7 @@ h2 + p, .first { text-indent: 0; }
 <p>With these words Pinocchio took his father by the hand and, always walking on tiptoes, they climbed up the monster’s throat for a second time. They then crossed the whole tongue and jumped over three rows of teeth. But before they took the last great leap, the Marionette said to his father:</p>
 <p>“Climb on my back and hold on tightly to my neck. I’ll take care of everything else.”</p>
 <p>As soon as Geppetto was comfortably seated on his shoulders, Pinocchio, very sure of what he was doing, dived into the water and started to swim. The sea was like oil, the moon shone in all splendor, and the Shark continued to sleep so soundly that not even a cannon shot would have awakened him.</p>
-<h2>CHAPTER 36</h2>
+<h2 class="chapter" id="c35">Chapter 36</h2>
 <p>Pinocchio finally ceases to be a Marionette and becomes a boy</p>
 <p>“My dear Father, we are saved!” cried the Marionette. “All we have to do now is to get to the shore, and that is easy.”</p>
 <p>Without another word, he swam swiftly away in an effort to reach land as soon as possible. All at once he noticed that Geppetto was shivering and shaking as if with a high fever.</p>
@@ -1808,5 +1837,5 @@ h2 + p, .first { text-indent: 0; }
 <p>“There he is,” answered Geppetto. And he pointed to a large Marionette leaning against a chair, head turned to one side, arms hanging limp, and legs twisted under him.</p>
 <p>After a long, long look, Pinocchio said to himself with great content:</p>
 <p>“How ridiculous I was as a Marionette! And how happy I am, now that I have become a real boy!”</p>
-<p class="colophon">Texte du domaine public, source : Project Gutenberg (#500). Édition numérique EbookClassics.</p>
+<p class="colophon">Public domain text. EbookClassics digital edition.</p>
 </body></html>

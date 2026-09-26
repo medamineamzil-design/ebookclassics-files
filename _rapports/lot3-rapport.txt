@@ -1,5 +1,46 @@
-Lot 3 (traductions) — 2026-09-26 14:50
-+ crime-and-punishment [es] OK — Gutenberg #61851, 176236 mots, 51 chapitres — epub:465Ko pdf:2113Ko txt:1054Ko html:1079Ko
-! the-communist-manifesto [de] ERREUR : texte introuvable pour Gutenberg #21147
-+ the-betrothed [it] OK — Gutenberg #45334, 229651 mots, 87 chapitres — epub:624Ko pdf:2497Ko txt:1382Ko html:1453Ko
-Traductions produites : 2 | cas limites (à décider) : 0 | absentes de Gutenberg : 156 | erreurs : 0
+Lot 3 (traductions) — 2026-09-26 16:34
++ les-miserables [fr] OK — Project Gutenberg (#17489), 513717 mots, 401 chapitres — epub:1612Ko pdf:7925Ko txt:3104Ko html:3387Ko
++ crime-and-punishment [es] OK — Project Gutenberg (#61851), 176138 mots, 28 chapitres — epub:505Ko pdf:2527Ko txt:1053Ko html:1083Ko
++ anna-karenina [de] OK — Project Gutenberg (#44956), 350298 mots, 9 chapitres — epub:880Ko pdf:5030Ko txt:2230Ko html:2289Ko
++ jane-eyre [fr] OK — Project Gutenberg (#16235), 185733 mots, 37 chapitres — epub:531Ko pdf:2544Ko txt:1099Ko html:1190Ko
++ great-expectations [fr] OK — Project Gutenberg (#17565), 190498 mots, 56 chapitres — epub:551Ko pdf:2614Ko txt:1117Ko html:1215Ko
++ the-strange-case-of-dr-jekyll-and-mr-hyde [fr] OK — Project Gutenberg (#76412), 33778 mots, 8 chapitres — epub:168Ko pdf:525Ko txt:202Ko html:221Ko
++ the-strange-case-of-dr-jekyll-and-mr-hyde [es] OK — Project Gutenberg (#62627), 26531 mots, 34 chapitres — epub:158Ko pdf:515Ko txt:159Ko html:168Ko
++ the-picture-of-dorian-gray [fr] OK — Project Gutenberg (#14192), 75945 mots, 19 chapitres — epub:267Ko pdf:1145Ko txt:458Ko html:498Ko
++ the-picture-of-dorian-gray [de] OK — Project Gutenberg (#44238), 78148 mots, 20 chapitres — epub:282Ko pdf:1179Ko txt:489Ko html:504Ko
++ don-quixote [fr] OK — Project Gutenberg (#42524), 343132 mots, 219 chapitres — epub:1036Ko pdf:4767Ko txt:2003Ko html:2177Ko
++ the-adventures-of-huckleberry-finn [de] OK — Project Gutenberg (#64482), 90453 mots, 6 chapitres — epub:271Ko pdf:1264Ko txt:530Ko html:554Ko
++ alice-s-adventures-in-wonderland [fr] OK — Project Gutenberg (#55456), 25953 mots, 11 chapitres — epub:140Ko pdf:468Ko txt:152Ko html:181Ko
++ alice-s-adventures-in-wonderland [de] OK — Project Gutenberg (#19778), 25359 mots, 12 chapitres — epub:138Ko pdf:466Ko txt:155Ko html:165Ko
++ alice-s-adventures-in-wonderland [it] OK — Project Gutenberg (#28371), 23278 mots, 11 chapitres — epub:140Ko pdf:444Ko txt:142Ko html:166Ko
++ the-odyssey [fr] OK — Project Gutenberg (#14286), 112545 mots, 1 chapitres — epub:268Ko pdf:1346Ko txt:651Ko html:693Ko
++ the-odyssey [es] OK — Project Gutenberg (#58221), 172062 mots, 25 chapitres — epub:450Ko pdf:2170Ko txt:979Ko html:997Ko
++ the-iliad [fr] OK — Project Gutenberg (#14285), 139620 mots, 24 chapitres — epub:361Ko pdf:1717Ko txt:820Ko html:872Ko
++ the-iliad [es] OK — Project Gutenberg (#57654), 181726 mots, 25 chapitres — epub:474Ko pdf:2383Ko txt:1051Ko html:1074Ko
++ the-divine-comedy [de] OK — Project Gutenberg (#8085), 102888 mots, 0 chapitres — epub:313Ko pdf:1361Ko txt:616Ko html:631Ko
++ the-divine-comedy [es] OK — Project Gutenberg (#57303), 120565 mots, 96 chapitres — epub:427Ko pdf:1718Ko txt:677Ko html:701Ko
++ hamlet [fr] OK — Project Gutenberg (#15032), 50830 mots, 21 chapitres — epub:198Ko pdf:829Ko txt:311Ko html:338Ko
++ hamlet [de] OK — Project Gutenberg (#7276), 33556 mots, 5 chapitres — epub:159Ko pdf:636Ko txt:213Ko html:225Ko
++ hamlet [es] OK — Project Gutenberg (#56454), 34835 mots, 101 chapitres — epub:221Ko pdf:855Ko txt:214Ko html:233Ko
++ hamlet [pt] OK — Project Gutenberg (#25667), 30924 mots, 860 chapitres — epub:547Ko pdf:2458Ko txt:188Ko html:258Ko
++ romeo-and-juliet [fr] OK — Project Gutenberg (#18143), 35187 mots, 23 chapitres — epub:169Ko pdf:639Ko txt:214Ko html:237Ko
++ romeo-and-juliet [de] OK — Project Gutenberg (#6996), 20977 mots, 19 chapitres — epub:129Ko pdf:458Ko txt:126Ko html:138Ko
++ faust [fr] OK — Project Gutenberg (#54202), 41019 mots, 722 chapitres — epub:516Ko pdf:2283Ko txt:246Ko html:324Ko
++ faust [es] OK — Project Gutenberg (#68566), 46662 mots, 766 chapitres — epub:549Ko pdf:2449Ko txt:279Ko html:345Ko
++ meditations [de] OK — Project Gutenberg (#15028), 40092 mots, 12 chapitres — epub:175Ko pdf:668Ko txt:249Ko html:260Ko
++ candide [es] OK — Project Gutenberg (#7109), 32663 mots, 30 chapitres — epub:162Ko pdf:499Ko txt:184Ko html:191Ko
++ the-prince [de] OK — Project Gutenberg (#39816), 51417 mots, 6 chapitres — epub:196Ko pdf:777Ko txt:336Ko html:342Ko
++ uncle-tom-s-cabin [fr] OK — Project Gutenberg (#38704), 175843 mots, 46 chapitres — epub:540Ko pdf:2614Ko txt:1054Ko html:1146Ko
++ on-the-origin-of-species [fr] OK — Project Gutenberg (#14158), 215471 mots, 15 chapitres — epub:529Ko pdf:2739Ko txt:1397Ko html:1475Ko
++ on-the-origin-of-species [de] OK — Project Gutenberg (#69172), 168496 mots, 30 chapitres — epub:522Ko pdf:2575Ko txt:1183Ko html:1196Ko
++ the-jungle-book [fr] OK — Project Gutenberg (#54183), 53668 mots, 18 chapitres — epub:194Ko pdf:824Ko txt:311Ko html:339Ko
++ the-last-of-the-mohicans [fr] OK — Project Gutenberg (#16236), 161227 mots, 34 chapitres — epub:478Ko pdf:2102Ko txt:959Ko html:1031Ko
++ the-war-of-the-worlds [fr] OK — Project Gutenberg (#60656), 65378 mots, 55 chapitres — epub:238Ko pdf:1045Ko txt:418Ko html:433Ko
++ madame-bovary [de] OK — Project Gutenberg (#15711), 115385 mots, 36 chapitres — epub:403Ko pdf:1810Ko txt:732Ko html:756Ko
++ the-betrothed [it] OK — Project Gutenberg (#45334), 229417 mots, 46 chapitres — epub:654Ko pdf:2947Ko txt:1380Ko html:1456Ko
++ heart [es] OK — Project Gutenberg (#73486), 87781 mots, 114 chapitres — epub:336Ko pdf:1343Ko txt:511Ko html:526Ko
++ the-adventures-of-tom-sawyer [de] OK — Project Gutenberg (#30165), 67242 mots, 35 chapitres — epub:268Ko pdf:1110Ko txt:414Ko html:445Ko
++ the-wonderful-adventures-of-nils [fr] OK — Project Gutenberg (#66480), 106166 mots, 35 chapitres — epub:358Ko pdf:1539Ko txt:622Ko html:678Ko
++ the-wonderful-adventures-of-nils [de] OK — Project Gutenberg (#31114), 206652 mots, 0 chapitres — epub:551Ko pdf:2789Ko txt:1261Ko html:1292Ko
++ the-pilgrim-s-progress [de] OK — Project Gutenberg (#70845), 104827 mots, 26 chapitres — epub:348Ko pdf:1533Ko txt:643Ko html:662Ko
+Traductions produites : 44 | cas limites (à décider) : 0 | absentes de Gutenberg : 157 | erreurs : 0

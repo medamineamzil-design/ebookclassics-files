@@ -1,30 +1,24 @@
 The Theory of Moral Sentiments
 Adam Smith
 
+
 THE THEORY OF MORAL SENTIMENTS; OR, AN ESSAY TOWARDS An ANALYSIS of the PRINCIPLES by which MEN naturally judge concerning the CONDUCT and CHARACTER, first of their NEIGHBOURS, and afterwards of THEMSELVES. TO WHICH IS ADDED, A DISSERTATION ON THE ORIGIN OF LANGUAGES.
 
 
-BY ADAM SMITH, L.L.D. F.R.S.
+By Adam Smith, L.l.d. F.r.s.
 
 
 Formerly Professor of Philosophy in the University of Glasgow; and Author of the Nature and Cause of the Wealth of Nations.
 
 
-THE SIXTH EDITION.
-
-
-
-DUBLIN:
+The Sixth Edition — Dublin:
 
 
 Printed for J. BEATTY and C. JACKSON, No. 32, SKINNER-ROW.
 
 
-M,DCC,LXXVII.
+M,dcc,lxxvii — Contents.
 
-
-
-CONTENTS.
 
 
 
@@ -34,7 +28,7 @@ PART I.
 Of the Propriety of Action.
 
 
-SECTION I.
+Section I.
 
 
 Of the sense of propriety                                          Page 1.
@@ -50,7 +44,7 @@ CHAP. IV. The same subject continued                               19
 CHAP. V. Of the amiable and respectable virtues                    27
 
 
-SECTION II.
+Section II.
 
 
 Of the degrees of the different passions which are consistent with propriety                                                     33
@@ -66,7 +60,7 @@ CHAP. IV. Of the social passions                                   54
 CHAP. V. Of the selfish passions                                   58
 
 
-SECTION III.
+Section III.
 
 
 Of the effects of prosperity and adversity upon the judgment of mankind with regard to the propriety of action; and why it is more easy to obtain their approbation in the one state than in the other                                                          64
@@ -78,13 +72,14 @@ CHAP. II. Of the origin of ambition, and of the distinction of ranks            
 CHAP. III. Of the stoical philosophy                               89
 
 
+
 PART II.
 
 
 Of Merit and Demerit; or of the objects of reward and punishment.
 
 
-SECTION I.
+Section I.
 
 
 Of the sense of merit and demerit                                    97
@@ -100,7 +95,7 @@ CHAP. IV. Recapitulation of the foregoing chapters                109
 CHAP. V. The analysis of the sense of merit and demerit           112
 
 
-SECTION II.
+Section II.
 
 
 Of justice and beneficence                                          119
@@ -112,7 +107,7 @@ CHAP. II. Of the sense of justice, of remorse, and of the consciousness of merit
 CHAP. III. Of the utility of this constitution of nature          132
 
 
-SECTION III.
+Section III.
 
 
 Of the influence of fortune upon the sentiments of mankind, with regard to the merit or demerit of actions                         145
@@ -122,6 +117,7 @@ CHAP. I. Of the causes of this influence of fortune               148
 CHAP. II. Of the extent of this influence of fortune              154
 
 CHAP. III. Of the final cause of this irregularity of sentiments                                                       167
+
 
 
 PART III.
@@ -138,6 +134,7 @@ CHAP. III. Of the influence and authority of the general rules of morality, and 
 CHAP. IV. In what cases the sense of duty ought to be the sole principle of our conduct; and in what cases it ought to concur with other motives                                               223
 
 
+
 PART IV.
 
 
@@ -146,6 +143,7 @@ Of the effect of utility upon the sentiments of approbation.
 CHAP. I. Of the beauty which the appearance of Utility bestows upon all the productions of art, and of the extensive influence of this species of beauty                                        237
 
 CHAP. II. Of the beauty which the appearance of utility bestows upon the characters and actions of men; and how far the perception of this beauty may be regarded as one of the original principles of approbation                               250
+
 
 
 PART V.
@@ -158,19 +156,20 @@ CHAP. I. Of the influence of custom and fashion upon our notions of beauty and d
 CHAP. II. Of the influence of custom and fashion upon moral sentiments                                                       271
 
 
+
 PART VI.
 
 
 Of Systems of Moral Philosophy.
 
 
-SECTION I.
+Section I.
 
 
 Of the questions which ought to be examined in a theory of moral sentiments                                                        291
 
 
-SECTION II.
+Section II.
 
 
 Of the different accounts which have been given of the nature of virtue                                                            294
@@ -184,7 +183,7 @@ CHAP. III. Of those systems which make virtue consist in benevolence            
 CHAP. IV. Of licentious systems                                   331
 
 
-SECTION III.
+Section III.
 
 
 Of the different systems which have been formed concerning the principle of approbation                                          345
@@ -196,12 +195,13 @@ CHAP. II. Of those systems which make reason the principle of approbation       
 CHAP. III. Of those systems which make sentiment the principle of approbation                                                   356
 
 
-SECTION IV.
+Section IV.
 
 
 Of the manner in which different authors have treated of the practical rules of morality                                       367
 
 Considerations concerning the first formation of languages, and the different genius of original and compound languages          389
+
 
 
 PART I. OF THE PROPRIETY OF ACTION.
@@ -322,7 +322,7 @@ It is in the same manner that we judge of the productions of all arts which addr
 SECTION II. Of the degrees of the different passions which are consistent with propriety.
 
 
-INTRODUCTION.
+Introduction.
 
 
 The propriety of every passion excited by objects peculiarly related to ourselves the pitch which the spectator can go along with, must lie, it is evident, in certain mediocrity. If the passion is too high, or if it is too low, he cannot enter into it. Grief and resentment for private misfortunes and injuries may easily, for example, be too high, and in the greater part of mankind they are so. They may likewise, though this more rarely happens, be too low. We denominate the excess, weakness and fury: and we call the defect, stupidity, insensibility, and want of spirit. We can enter into neither of them, but are astonished and confounded to see them.
@@ -476,17 +476,18 @@ A brave man is not rendered contemptible by being brought to the scaffold; he is
 Human virtue is superior to pain, to poverty, to danger, and to death; nor does it even require its utmost efforts to despise them. But to have its misery exposed to insult and derision, to be led in triumph, to be set up for the hand of scorn to point at, is a situation in which its constancy is much more apt to fail. Compared with the contempt of mankind, all other evils are easily supported.
 
 
+
 PART II. OF MERIT AND DEMERIT; OR, OF THE OBJECTS OF REWARD AND PUNISHMENT.
 
 
 
-CONSISTING OF THREE SECTIONS.
+Consisting of Three Sections.
 
 
 SECTION I. Of the sense of merit and demerit.
 
 
-INTRODUCTION.
+Introduction.
 
 
 There is another set of qualities ascribed to the actions and conduct of mankind, distinct from their propriety or impropriety, their decency or ungracefulness, and which are the objects of a distinct species of approbation and disapprobation. These are merit and demerit, the qualities of deserving reward, and of deserving punishment.
@@ -630,7 +631,7 @@ That the Deity loves virtue and hates vice, as a voluptuous man loves riches and
 SECTION III. Of the influence of fortune upon the sentiments of mankind, with regard to the merit or demerit of actions.
 
 
-INTRODUCTION.
+Introduction.
 
 
 Whatever praise or blame can be due to any action, must belong either, first, to the intention or affection of the heart, from which it proceeds; or, secondly, to the external action or movement of the body, which this affection gives occasion to; or, last, to all the good or bad consequences, which actually, and in fact, proceed from it. These three different things constitute the whole nature and circumstances of the action, and must be the foundation of whatever quality can belong to it.
@@ -707,10 +708,13 @@ It is even of use that the evil which is done without design should be regarded 
 
 Notwithstanding, however, all these seeming irregularities of sentiment, if man should unfortunately either give occasion to those evils which he did not intend, or fail in producing that good which he intended, nature has not left his innocence altogether without consolation, nor his virtue altogether without reward. He then calls to his assistance that just and equitable maxim, that those events which did not depend upon our conduct ought not to diminish the esteem that is due to us. He summons up his whole magnanimity and firmness of soul, and strives to regard himself, not in the light in which he at present appears, but in that in which he ought to appear, in which he would have appeared had his generous designs been crowned with success, and in which he would still appear, notwithstanding their miscarriage, if the sentiments of mankind were either altogether candid and equitable, or even perfectly consistent with themselves. The more candid and humane part of mankind entirely go along with the efforts which he thus makes to support himself in his own opinion. They exert their whole generosity and greatness of mind, to correct in themselves this irregularity of human nature, and endeavour to regard his unfortunate magnanimity in the same light in which, had it been successful, they would, without any such generous exertion, have naturally been disposed to consider it.
 
-PART III. Of the foundation of our judgments concerning our own sentiments and conduct, and of the sense of duty.
 
 
-CONSISTING OF ONE SECTION.
+PART III. OF THE FOUNDATION OF OUR JUDGMENTS CONCERNING OUR OWN SENTIMENTS AND CONDUCT, AND OF THE SENSE OF DUTY.
+
+
+
+Consisting of One Section.
 
 
 CHAP. I. Of the consciousness of merited praise or blame.
@@ -858,11 +862,12 @@ It may sometimes happen, that with the most serious and earnest desire of acting
 As a person may act wrong by following a wrong sense of duty, so nature may sometimes prevail, and lead him to act right in opposition to it. We cannot in this case be displeased to see that motive prevail, which we think ought to prevail, though the person himself is so weak as to think otherwise. As his conduct, however, is the effect of weakness, not principle, we are far from bestowing upon it any thing that approaches to complete approbation. A bigotted Roman Catholic, who, during the massacre of St. Bartholomew, had been so overcome by compassion, as to save some unhappy protestants, whom he thought it his duty to destroy, would not seem to be entitled to that high applause which we should have bestowed upon him, had he exerted the same generosity with complete self-approbation. We might be pleased with the humanity of his temper, but we should still regard him with a sort of pity which is altogether inconsistent with the admiration that is due to perfect virtue. It is the same case with all the other passions. We do not dislike to see them exert themselves properly, even when a false notion of duty would direct the person to restrain them. A very devout Quaker, who upon being struck upon one cheek, instead of turning up the other, should so far forget his literal interpretation of our Saviour’s precept, as to bestow some good discipline upon the brute that insulted him, would not be disagreeable to us. We should laugh and be diverted with his spirit, and rather like him the better for it. But we should by no means regard him with that respect and esteem which would seem due to one who, upon a like occasion, had acted properly from a just sense of what was proper to be done. No action can properly be called virtuous, which is not accompanied with the sentiment of self-approbation.
 
 
+
 PART IV. OF THE EFFECT OF UTILITY UPON THE SENTIMENT OF APPROBATION.
 
 
 
-CONSISTING OF ONE SECTION.
+Consisting of One Section.
 
 
 CHAP. I. Of the beauty which the appearance of UTILITY bestows upon all the productions of art, and of the extensive influence of this species of beauty.
@@ -919,10 +924,13 @@ It is the same case with the greater exertions of public spirit. When a young of
 
 It is to be observed, that so far as the sentiment of approbation arises from the perception of this beauty of utility, it has no reference of any kind to the sentiments of others. If it was possible, therefore, that a person should grow up to manhood without any communication with society, his own actions might, notwithstanding, be agreeable or disagreeable to him on account of their tendency to his happiness or disadvantage. He might perceive a beauty of this kind in prudence, temperance, and good conduct, and a deformity in the opposite behaviour: He might view his own temper and character with that sort of satisfaction with which we consider a well contrived machine, in the one case; or with that sort of distaste and dissatisfaction with which we regard a very awkward and clumsy contrivance, in the other. As these perceptions, however, are merely a matter of taste, and have all the feebleness and delicacy of that species of perceptions, upon the justness of which what is properly called taste is founded, they probably would not be much attended to by one in his solitary and miserable condition. Even though they should occur to him, they would by no means have the same effect upon him, antecedent to his connexion with society, which they would have in consequence of that connexion. He would not be cast down with inward shame at the thought of this deformity; nor would he be elevated with secret triumph of mind from the consciousness of the contrary beauty. He would not exult from the notion of deserving reward in the one case, nor tremble from the suspicion of meriting punishment in the other. All such sentiments suppose the idea of some other being, who is the natural judge of the person that feels them; and it is only by sympathy with the decisions of this arbiter of his conduct, that he can conceive, either the triumph of self-applause, or the shame of self-condemnation.
 
-PART V. Of the INFLUENCE of CUSTOM and FASHION upon the sentiments of moral approbation and disapprobation.
 
 
-CONSISTING OF ONE SECTION.
+PART V. OF THE INFLUENCE OF CUSTOM AND FASHION UPON THE SENTIMENTS OF MORAL APPROBATION AND DISAPPROBATION.
+
+
+
+Consisting of One Section.
 
 
 CHAP. I. Of the influence of custom and fashion upon our notions of beauty and deformity.
@@ -984,11 +992,8 @@ Can there be greater barbarity, for example, than to hurt an infant? Its helples
 There is an obvious reason why custom should never pervert our sentiments with regard to the general style and character of conduct and behaviour, in the same degree as with regard to the propriety or unlawfulness of particular usages. There never can be any such custom. No society could subsist a moment, in which the usual strain of mens conduct and behaviour was of a piece with the horrible practice I just now mentioned.
 
 
-PART VI. OF SYSTEMS OF MORAL PHILOSOPHY.
 
-
-
-CONSISTING OF FOUR SECTIONS.
+PART VI. OF SYSTEMS OF MORAL PHILOSOPHY — CONSISTING OF FOUR SECTIONS.
 
 
 SECTION I. Of the questions which ought to be examined in a theory of moral sentiments.
@@ -1006,7 +1011,7 @@ I shall begin with considering the systems which have been formed concerning the
 SECTION II. Of the different accounts which have been given of the nature of virtue.
 
 
-INTRODUCTION.
+Introduction.
 
 
 The different accounts which have been given of the nature of virtue, or of the temper of mind which constitutes the excellent and praise-worthy character, may be reduced to three different classes. According to some, the virtuous temper of mind does not consist in any one species of affections, but in the proper government and direction of all our affections, which may be either virtuous or vicious according to the objects which they pursue, and the degree of vehemence with which they pursue them. According to these authors, therefore, virtue consists in propriety.
@@ -1021,7 +1026,10 @@ CHAP. I. Of those systems which make virtue consist in propriety.
 
 According to Plato, to Aristotle, and to Zeno, virtue consists in the propriety of conduct, or in the suitableness of the affection from which we act to the object which excites it.
 
-I. In the system of Plato[8] the soul is considered as something like a little state or republic, composed of three different faculties or orders.
+
+
+I. IN THE SYSTEM OF PLATO THE SOUL IS CONSIDERED AS SOMETHING LIKE A LITTLE STATE OR REPUBLIC, COMPOSED OF THREE DIFFERENT FACULTIES OR ORDERS.
+
 
 Footnote 8:
 
@@ -1222,7 +1230,7 @@ It is the great fallacy of Dr. Mandeville’s book[21] to represent every passio
 Footnote 21:
 
 
-FABLE OF THE BEES.
+Fable of the Bees.
 
 
 Such is the system of Dr. Mandeville, which once made so much noise in the world, and which, though perhaps, it never gave occasion to more vice than what would have been without it, at least taught that vice, which arose from other causes, to appear with more effrontery, and to avow the corruption of its motives with a profligate audaciousness which had never been heard of before.
@@ -1232,7 +1240,7 @@ But how destructive soever this system may appear, it could never have imposed u
 SECTION III. Of the different systems which have been formed concerning the principle of approbation.
 
 
-INTRODUCTION.
+Introduction.
 
 
 After the inquiry concerning the nature of virtue, the next question of importance in Moral Philosophy, is concerning the principle of approbation, concerning the power or faculty of the mind which renders certain characters agreeable or disagreeable to us, makes us prefer one tenour of conduct to another, denominate the one right and the other wrong, and consider the one as the object of approbation, honour, and reward; the other as that of blame, censure, and punishment.
@@ -1390,7 +1398,7 @@ Every system of positive law may be regarded as a more or less imperfect attempt
 It might have been expected that the reasonings of lawyers, upon the different imperfections and improvements of the laws of different countries, should have given occasion to an inquiry into what were the natural rules of justice independent of all positive institution. It might have been expected that these reasonings should have led them to aim at establishing a system of what might properly be called natural jurisprudence, or a theory of the general principles which ought to run through and be the foundation of the laws of all nations. But tho’ the reasonings of lawyers did produce something of this kind, and though no man has treated systematically of the laws of any particular country, without intermixing in his work many observations of this sort; it was very late in the world before any such general system was thought of, or before the philosophy of law was treated of by itself, and without regard to the particular institutions of any one nation. In none of the ancient moralists, do we find any attempt towards a particular enumeration of the rules of justice. Cicero in his Offices, and Aristotle in his Ethics, treat of justice in the same general manner in which they treat of all the other virtues. In the laws of Cicero and Plato, where we might naturally have expected some attempts towards an enumeration of those rules of natural equity, which ought to be enforced by the positive laws of every country, there is however, nothing of this kind. Their laws are laws of police, not of justice. Grotius seems to have been the first, who attempted to give the world any thing like a system of those principles which ought to run through, and be the foundation of the laws of all nations; and his treatise of the laws of war and peace, with all its imperfections, is perhaps at this day the most complete work that has yet been given upon this subject. I shall in another discourse endeavour to give an account of the general principles of law and government, and of the different revolutions they have undergone in the different ages and periods of society, not only in what concerns justice, but in what concerns police, revenue, and arms, and whatever else is the object of law. I shall not, therefore, at present enter into any further detail concerning the history of jurisprudence.
 
 
-THE END.
+The End.
 
 
 CONSIDERATIONS Concerning the FIRST FORMATION OF LANGUAGES, AND THE Different Genius of original and compounded LANGUAGES.
@@ -1506,15 +1514,7 @@ Qui nunc te fruitur credulus aureâ, Qui semper vacuam, semper amabilem Sperat t
 Because the terminations in the Latin determine the reference of each adjective to its proper substantive, which it is impossible for any thing in the English to do. How much this power of transposing the order of their words must have facilitated the composition of the ancients, both in verse and prose, can hardly be imagined. That it must greatly have facilitated their versification it is needless to observe; and in prose, whatever beauty depends upon the arrangement and construction of the several members of the period, must to them have been acquirable with much more ease, and to much greater perfection, than it can be to those whose expression is constantly confined by the prolixness, constraint and monotony of modern languages.
 
 
-FINIS.
+Finis.
 
 
-------------------------------------------------------------------------
-
-
-TRANSCRIBER’S NOTES
-
-
-1. Silently corrected obvious typographical errors and variations in spelling. 2. Retained archaic, non-standard, and uncertain spellings as printed. 3. Enclosed italics font in underscores.
-
-Texte du domaine public, source : Project Gutenberg (#67363). Édition numérique EbookClassics.
+— Public domain text. EbookClassics digital edition.

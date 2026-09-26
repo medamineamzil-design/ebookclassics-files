@@ -1,40 +1,52 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
-<title>Romeo and Juliet</title><style>
-@page { margin: 22mm 20mm; }
-body { font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', serif; line-height: 1.6;
-       color: #1f1a14; max-width: 38em; margin: 0 auto; padding: 1.5em 1.2em; }
-h1 { font-size: 2.1em; text-align: center; margin: 1.5em 0 .2em; letter-spacing: .01em; }
-.author { text-align: center; font-size: 1.15em; font-style: italic; margin-bottom: 3em; color: #5a4a36; }
-h2 { font-size: 1.25em; text-align: center; margin: 2.6em 0 1.2em; letter-spacing: .06em;
-     text-transform: uppercase; font-weight: normal; page-break-before: always; break-before: page; }
-p { margin: 0; text-indent: 1.4em; text-align: justify; hyphens: auto; }
-h2 + p, .first { text-indent: 0; }
-.colophon { font-size: .85em; color: #6b5d45; text-align: center; margin-top: 4em; text-indent: 0; }
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Romeo and Juliet — William Shakespeare</title><style>
+:root{--paper:#fbf8f1;--ink:#1f1b16;--muted:#6f6352;--accent:#9a6b2f;--rule:#e4dccb}
+@media (prefers-color-scheme:dark){:root{--paper:#16140f;--ink:#ece6d8;--muted:#a79c88;--accent:#d8a95e;--rule:#2e2a22}}
+html{background:var(--paper)}
+body{font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Libertinus Serif",Georgia,serif;color:var(--ink);
+     background:var(--paper);line-height:1.65;font-size:1.12rem;max-width:36em;margin:0 auto;padding:2.5em 1.25em 5em}
+.titlepage{text-align:center;min-height:70vh;display:flex;flex-direction:column;justify-content:center;gap:.6em;
+           border-bottom:1px solid var(--rule);margin-bottom:2.5em;padding-bottom:2.5em}
+.titlepage img{max-width:260px;width:60%;margin:0 auto 1.5em;border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+h1{font-size:2.4em;line-height:1.15;font-weight:600;margin:0;letter-spacing:-.01em}
+.author{font-style:italic;font-size:1.25em;color:var(--accent);margin:0}
+.translator{font-size:.95em;color:var(--muted);margin:0}
+nav.toc{margin:0 0 3em}
+nav.toc h2{font-size:.85em;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:left;margin:0 0 .8em}
+nav.toc ol{list-style:none;padding:0;margin:0;columns:1}
+nav.toc li{margin:.25em 0}
+nav.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent}
+nav.toc a:hover{border-color:var(--accent)}
+h2.chapter{font-size:1.45em;font-weight:600;text-align:center;margin:3.5em 0 1.6em;line-height:1.3}
+h2.chapter::before{content:"";display:block;width:3em;height:2px;background:var(--accent);margin:0 auto 1.1em}
+p{margin:0;text-indent:1.5em;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+h2.chapter + p, .titlepage + p{text-indent:0}
+h2.chapter + p::first-letter{font-size:3.1em;float:left;line-height:.85;padding:.08em .08em 0 0;color:var(--accent);font-weight:600}
+.colophon{margin-top:5em;padding-top:1.5em;border-top:1px solid var(--rule);text-align:center;color:var(--muted);font-size:.85em;text-indent:0}
+h3.sub{font-size:1em;font-weight:600;font-variant:small-caps;letter-spacing:.04em;text-align:center;margin:2.2em 0 1em}
+h3.sub + p{text-indent:0}
+@media print{h2.chapter{break-before:page}}
 </style></head><body>
+<header class="titlepage">
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjI0MDAiIHZpZXdCb3g9IjAgMCAxNjAwIDI0MDAiPgo8cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSIyNDAwIiBmaWxsPSIjM2IxZjE5Ii8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjMwMCIgZmlsbD0iI2U5Yjg3MiIgb3BhY2l0eT0iLjkyIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjM2IxZjE5IiBzdHJva2Utd2lkdGg9IjEyIiBvcGFjaXR5PSIuNSIvPgo8Y2lyY2xlIGN4PSIxMTIwIiBjeT0iNTYwIiByPSIxMjAiIGZpbGw9IiMzYjFmMTkiIG9wYWNpdHk9Ii4xOCIvPgo8cmVjdCB4PSIxNjAiIHk9IjkzMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIxMCIgZmlsbD0iI2U5Yjg3MiIvPgo8dGV4dCB4PSIxNjAiIHk9IjEwOTgiIGZvbnQtc2l6ZT0iMTUwIiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmN2VjZGMiPlJvbWVvIGFuZDwvdGV4dD48dGV4dCB4PSIxNjAiIHk9IjEyNjIiIGZvbnQtc2l6ZT0iMTUwIiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmN2VjZGMiPkp1bGlldDwvdGV4dD4KPHRleHQgeD0iMTYwIiB5PSIxNDk4IiBmb250LXNpemU9IjY4IiBmb250LXN0eWxlPSJpdGFsaWMiIGZvbnQtZmFtaWx5PSJMaWJlcnRpbnVzIFNlcmlmLCBHZW9yZ2lhLCBzZXJpZiIgZmlsbD0iI2U5Yjg3MiI+V2lsbGlhbSBTaGFrZXNwZWFyZTwvdGV4dD4KPHRleHQgeD0iMTYwIiB5PSIyMjMwIiBmb250LXNpemU9IjQ0IiBsZXR0ZXItc3BhY2luZz0iMTQiIGZvbnQtZmFtaWx5PSJMaWJlcnRpbnVzIFNlcmlmLCBHZW9yZ2lhLCBzZXJpZiIgZmlsbD0iI2Y3ZWNkYyIgb3BhY2l0eT0iLjc1Ij5FQk9PS0NMQVNTSUNTPC90ZXh0Pgo8L3N2Zz4=" alt="">
 <h1>Romeo and Juliet</h1>
 <p class="author">William Shakespeare</p>
-<h2>THE TRAGEDY OF ROMEO AND JULIET</h2>
-<p>by William Shakespeare</p>
-<p>Contents</p>
-<h2>THE PROLOGUE.</h2>
-<p>ACT I Scene I. A public place. Scene II. A Street. Scene III. Room in Capulet’s House. Scene IV. A Street. Scene V. A Hall in Capulet’s House.</p>
-<p>ACT II CHORUS. Scene I. An open place adjoining Capulet’s Garden. Scene II. Capulet’s Garden. Scene III. Friar Lawrence’s Cell. Scene IV. A Street. Scene V. Capulet’s Garden. Scene VI. Friar Lawrence’s Cell.</p>
-<p>ACT III Scene I. A public Place. Scene II. A Room in Capulet’s House. Scene III. Friar Lawrence’s cell. Scene IV. A Room in Capulet’s House. Scene V. An open Gallery to Juliet’s Chamber, overlooking the Garden.</p>
-<p>ACT IV Scene I. Friar Lawrence’s Cell. Scene II. Hall in Capulet’s House. Scene III. Juliet’s Chamber. Scene IV. Hall in Capulet’s House. Scene V. Juliet’s Chamber; Juliet on the bed.</p>
-<p>ACT V Scene I. Mantua. A Street. Scene II. Friar Lawrence’s Cell. Scene III. A churchyard; in it a Monument belonging to the Capulets.</p>
-<p>Dramatis Personæ</p>
-<p>ESCALUS, Prince of Verona. MERCUTIO, kinsman to the Prince, and friend to Romeo. PARIS, a young Nobleman, kinsman to the Prince. Page to Paris.</p>
-<p>MONTAGUE, head of a Veronese family at feud with the Capulets. LADY MONTAGUE, wife to Montague. ROMEO, son to Montague. BENVOLIO, nephew to Montague, and friend to Romeo. ABRAM, servant to Montague. BALTHASAR, servant to Romeo.</p>
+</header>
+<nav class="toc"><h2>Contents</h2><ol>
+<li><a href="#c1">Act I — Scene I. A public place.</a></li>
+<li><a href="#c2">Act II</a></li>
+<li><a href="#c3">Act III — Scene I. A public Place.</a></li>
+<li><a href="#c4">Act IV — Scene I. Friar Lawrence’s Cell.</a></li>
+<li><a href="#c5">Act V — Scene I. Mantua. A Street.</a></li>
+</ol></nav>
 <p>CAPULET, head of a Veronese family at feud with the Montagues. LADY CAPULET, wife to Capulet. JULIET, daughter to Capulet. TYBALT, nephew to Lady Capulet. CAPULET’S COUSIN, an old man. NURSE to Juliet. PETER, servant to Juliet’s Nurse. SAMPSON, servant to Capulet. GREGORY, servant to Capulet. Servants.</p>
-<p>FRIAR LAWRENCE, a Franciscan. FRIAR JOHN, of the same Order. An Apothecary. CHORUS. Three Musicians. An Officer. Citizens of Verona; several Men and Women, relations to both houses; Maskers, Guards, Watchmen and Attendants.</p>
-<p>SCENE. During the greater part of the Play in Verona; once, in the Fifth Act, at Mantua.</p>
-<h2>THE PROLOGUE</h2>
+<h3 class="sub">SCENE. During the greater part of the Play in Verona; once, in the Fifth Act, at Mantua.</h3>
+<h3 class="sub">The Prologue</h3>
 <p>Enter Chorus.</p>
 <p>CHORUS. Two households, both alike in dignity, In fair Verona, where we lay our scene, From ancient grudge break to new mutiny, Where civil blood makes civil hands unclean. From forth the fatal loins of these two foes A pair of star-cross’d lovers take their life; Whose misadventur’d piteous overthrows Doth with their death bury their parents’ strife. The fearful passage of their death-mark’d love, And the continuance of their parents’ rage, Which, but their children’s end, nought could remove, Is now the two hours’ traffic of our stage; The which, if you with patient ears attend, What here shall miss, our toil shall strive to mend.</p>
-<p>[Exit.]</p>
-<h2>ACT I</h2>
-<h2>SCENE I. A public place.</h2>
+<h2 class="chapter" id="c1">Act I — Scene I. A public place.</h2>
 <p>Enter Sampson and Gregory armed with swords and bucklers.</p>
 <p>SAMPSON. Gregory, on my word, we’ll not carry coals.</p>
 <p>GREGORY. No, for then we should be colliers.</p>
@@ -79,7 +91,7 @@ h2 + p, .first { text-indent: 0; }
 <p>ABRAM. You lie.</p>
 <p>SAMPSON. Draw, if you be men. Gregory, remember thy washing blow.</p>
 <p>[They fight.]</p>
-<h2>BENVOLIO. Part, fools! put up your swords, you know not what you do.</h2>
+<h3 class="sub">BENVOLIO. Part, fools! put up your swords, you know not what you do.</h3>
 <p>[Beats down their swords.]</p>
 <p>Enter Tybalt.</p>
 <p>TYBALT. What, art thou drawn among these heartless hinds? Turn thee Benvolio, look upon thy death.</p>
@@ -146,7 +158,7 @@ h2 + p, .first { text-indent: 0; }
 <p>ROMEO. ’Tis the way To call hers, exquisite, in question more. These happy masks that kiss fair ladies’ brows, Being black, puts us in mind they hide the fair; He that is strucken blind cannot forget The precious treasure of his eyesight lost. Show me a mistress that is passing fair, What doth her beauty serve but as a note Where I may read who pass’d that passing fair? Farewell, thou canst not teach me to forget.</p>
 <p>BENVOLIO. I’ll pay that doctrine, or else die in debt.</p>
 <p>[Exeunt.]</p>
-<h2>SCENE II. A Street.</h2>
+<h3 class="sub">Scene II. A Street.</h3>
 <p>Enter Capulet, Paris and Servant.</p>
 <p>CAPULET. But Montague is bound as well as I, In penalty alike; and ’tis not hard, I think, For men so old as we to keep the peace.</p>
 <p>PARIS. Of honourable reckoning are you both, And pity ’tis you liv’d at odds so long. But now my lord, what say you to my suit?</p>
@@ -184,8 +196,7 @@ h2 + p, .first { text-indent: 0; }
 <p>BENVOLIO. Tut, you saw her fair, none else being by, Herself pois’d with herself in either eye: But in that crystal scales let there be weigh’d Your lady’s love against some other maid That I will show you shining at this feast, And she shall scant show well that now shows best.</p>
 <p>ROMEO. I’ll go along, no such sight to be shown, But to rejoice in splendour of my own.</p>
 <p>[Exeunt.]</p>
-<h2>SCENE III. Room in Capulet’s House.</h2>
-<p>Enter Lady Capulet and Nurse.</p>
+<h3 class="sub">Scene III. Room in Capulet’s House.</h3>
 <p>LADY CAPULET. Nurse, where’s my daughter? Call her forth to me.</p>
 <p>NURSE. Now, by my maidenhead, at twelve year old, I bade her come. What, lamb! What ladybird! God forbid! Where’s this girl? What, Juliet!</p>
 <p>Enter Juliet.</p>
@@ -220,7 +231,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Juliet, the County stays.</p>
 <p>NURSE. Go, girl, seek happy nights to happy days.</p>
 <p>[Exeunt.]</p>
-<h2>SCENE IV. A Street.</h2>
+<h3 class="sub">Scene IV. A Street.</h3>
 <p>Enter Romeo, Mercutio, Benvolio, with five or six Maskers; Torch-bearers and others.</p>
 <p>ROMEO. What, shall this speech be spoke for our excuse? Or shall we on without apology?</p>
 <p>BENVOLIO. The date is out of such prolixity: We’ll have no Cupid hoodwink’d with a scarf, Bearing a Tartar’s painted bow of lath, Scaring the ladies like a crow-keeper; Nor no without-book prologue, faintly spoke After the prompter, for our entrance: But let them measure us by what they will, We’ll measure them a measure, and be gone.</p>
@@ -251,7 +262,7 @@ h2 + p, .first { text-indent: 0; }
 <p>ROMEO. I fear too early: for my mind misgives Some consequence yet hanging in the stars, Shall bitterly begin his fearful date With this night’s revels; and expire the term Of a despised life, clos’d in my breast By some vile forfeit of untimely death. But he that hath the steerage of my course Direct my suit. On, lusty gentlemen!</p>
 <p>BENVOLIO. Strike, drum.</p>
 <p>[Exeunt.]</p>
-<h2>SCENE V. A Hall in Capulet’s House.</h2>
+<h3 class="sub">Scene V. A Hall in Capulet’s House.</h3>
 <p>Musicians waiting. Enter Servants.</p>
 <p>FIRST SERVANT. Where’s Potpan, that he helps not to take away? He shift a trencher! He scrape a trencher!</p>
 <p>SECOND SERVANT. When good manners shall lie all in one or two men’s hands, and they unwash’d too, ’tis a foul thing.</p>
@@ -315,11 +326,11 @@ h2 + p, .first { text-indent: 0; }
 <p>[One calls within, ‘Juliet’.]</p>
 <p>NURSE. Anon, anon! Come let’s away, the strangers all are gone.</p>
 <p>[Exeunt.]</p>
-<h2>ACT II</h2>
+<h2 class="chapter" id="c2">Act II</h2>
 <p>Enter Chorus.</p>
 <p>CHORUS. Now old desire doth in his deathbed lie, And young affection gapes to be his heir; That fair for which love groan’d for and would die, With tender Juliet match’d, is now not fair. Now Romeo is belov’d, and loves again, Alike bewitched by the charm of looks; But to his foe suppos’d he must complain, And she steal love’s sweet bait from fearful hooks: Being held a foe, he may not have access To breathe such vows as lovers use to swear; And she as much in love, her means much less To meet her new beloved anywhere. But passion lends them power, time means, to meet, Tempering extremities with extreme sweet.</p>
 <p>[Exit.]</p>
-<h2>SCENE I. An open place adjoining Capulet’s Garden.</h2>
+<h3 class="sub">Scene I. An open place adjoining Capulet’s Garden.</h3>
 <p>Enter Romeo.</p>
 <p>ROMEO. Can I go forward when my heart is here? Turn back, dull earth, and find thy centre out.</p>
 <p>[He climbs the wall and leaps down within it.]</p>
@@ -334,7 +345,7 @@ h2 + p, .first { text-indent: 0; }
 <p>MERCUTIO. If love be blind, love cannot hit the mark. Now will he sit under a medlar tree, And wish his mistress were that kind of fruit As maids call medlars when they laugh alone. O Romeo, that she were, O that she were An open-arse and thou a poperin pear! Romeo, good night. I’ll to my truckle-bed. This field-bed is too cold for me to sleep. Come, shall we go?</p>
 <p>BENVOLIO. Go then; for ’tis in vain To seek him here that means not to be found.</p>
 <p>[Exeunt.]</p>
-<h2>SCENE II. Capulet’s Garden.</h2>
+<h3 class="sub">Scene II. Capulet’s Garden.</h3>
 <p>Enter Romeo.</p>
 <p>ROMEO. He jests at scars that never felt a wound.</p>
 <p>Juliet appears above at a window.</p>
@@ -400,7 +411,7 @@ h2 + p, .first { text-indent: 0; }
 <p>[Exit.]</p>
 <p>ROMEO. Sleep dwell upon thine eyes, peace in thy breast. Would I were sleep and peace, so sweet to rest. Hence will I to my ghostly Sire’s cell, His help to crave and my dear hap to tell.</p>
 <p>[Exit.]</p>
-<h2>SCENE III. Friar Lawrence’s Cell.</h2>
+<h3 class="sub">Scene III. Friar Lawrence’s Cell.</h3>
 <p>Enter Friar Lawrence with a basket.</p>
 <p>FRIAR LAWRENCE. The grey-ey’d morn smiles on the frowning night, Chequering the eastern clouds with streaks of light; And fleckled darkness like a drunkard reels From forth day’s pathway, made by Titan’s fiery wheels Now, ere the sun advance his burning eye, The day to cheer, and night’s dank dew to dry, I must upfill this osier cage of ours With baleful weeds and precious-juiced flowers. The earth that’s nature’s mother, is her tomb; What is her burying grave, that is her womb: And from her womb children of divers kind We sucking on her natural bosom find. Many for many virtues excellent, None but for some, and yet all different. O, mickle is the powerful grace that lies In plants, herbs, stones, and their true qualities. For naught so vile that on the earth doth live But to the earth some special good doth give; Nor aught so good but, strain’d from that fair use, Revolts from true birth, stumbling on abuse. Virtue itself turns vice being misapplied, And vice sometime’s by action dignified.</p>
 <p>Enter Romeo.</p>
@@ -424,7 +435,7 @@ h2 + p, .first { text-indent: 0; }
 <p>ROMEO. O let us hence; I stand on sudden haste.</p>
 <p>FRIAR LAWRENCE. Wisely and slow; they stumble that run fast.</p>
 <p>[Exeunt.]</p>
-<h2>SCENE IV. A Street.</h2>
+<h3 class="sub">Scene IV. A Street.</h3>
 <p>Enter Benvolio and Mercutio.</p>
 <p>MERCUTIO. Where the devil should this Romeo be? Came he not home tonight?</p>
 <p>BENVOLIO. Not to his father’s; I spoke with his man.</p>
@@ -522,7 +533,7 @@ h2 + p, .first { text-indent: 0; }
 <p>PETER. Anon.</p>
 <p>NURSE. Before and apace.</p>
 <p>[Exeunt.]</p>
-<h2>SCENE V. Capulet’s Garden.</h2>
+<h3 class="sub">Scene V. Capulet’s Garden.</h3>
 <p>Enter Juliet.</p>
 <p>JULIET. The clock struck nine when I did send the Nurse, In half an hour she promised to return. Perchance she cannot meet him. That’s not so. O, she is lame. Love’s heralds should be thoughts, Which ten times faster glides than the sun’s beams, Driving back shadows over lowering hills: Therefore do nimble-pinion’d doves draw love, And therefore hath the wind-swift Cupid wings. Now is the sun upon the highmost hill Of this day’s journey, and from nine till twelve Is three long hours, yet she is not come. Had she affections and warm youthful blood, She’d be as swift in motion as a ball; My words would bandy her to my sweet love, And his to me. But old folks, many feign as they were dead; Unwieldy, slow, heavy and pale as lead.</p>
 <p>Enter Nurse and Peter.</p>
@@ -547,7 +558,7 @@ h2 + p, .first { text-indent: 0; }
 <p>NURSE. Then hie you hence to Friar Lawrence’ cell; There stays a husband to make you a wife. Now comes the wanton blood up in your cheeks, They’ll be in scarlet straight at any news. Hie you to church. I must another way, To fetch a ladder by the which your love Must climb a bird’s nest soon when it is dark. I am the drudge, and toil in your delight; But you shall bear the burden soon at night. Go. I’ll to dinner; hie you to the cell.</p>
 <p>JULIET. Hie to high fortune! Honest Nurse, farewell.</p>
 <p>[Exeunt.]</p>
-<h2>SCENE VI. Friar Lawrence’s Cell.</h2>
+<h3 class="sub">Scene VI. Friar Lawrence’s Cell.</h3>
 <p>Enter Friar Lawrence and Romeo.</p>
 <p>FRIAR LAWRENCE. So smile the heavens upon this holy act That after-hours with sorrow chide us not.</p>
 <p>ROMEO. Amen, amen, but come what sorrow can, It cannot countervail the exchange of joy That one short minute gives me in her sight. Do thou but close our hands with holy words, Then love-devouring death do what he dare, It is enough I may but call her mine.</p>
@@ -561,8 +572,7 @@ h2 + p, .first { text-indent: 0; }
 <p>JULIET. Conceit more rich in matter than in words, Brags of his substance, not of ornament. They are but beggars that can count their worth; But my true love is grown to such excess, I cannot sum up sum of half my wealth.</p>
 <p>FRIAR LAWRENCE. Come, come with me, and we will make short work, For, by your leaves, you shall not stay alone Till holy church incorporate two in one.</p>
 <p>[Exeunt.]</p>
-<h2>ACT III</h2>
-<h2>SCENE I. A public Place.</h2>
+<h2 class="chapter" id="c3">Act III — Scene I. A public Place.</h2>
 <p>Enter Mercutio, Benvolio, Page and Servants.</p>
 <p>BENVOLIO. I pray thee, good Mercutio, let’s retire: The day is hot, the Capulets abroad, And if we meet, we shall not scape a brawl, For now these hot days, is the mad blood stirring.</p>
 <p>MERCUTIO. Thou art like one of these fellows that, when he enters the confines of a tavern, claps me his sword upon the table, and says ‘God send me no need of thee!’ and by the operation of the second cup draws him on the drawer, when indeed there is no need.</p>
@@ -637,7 +647,7 @@ h2 + p, .first { text-indent: 0; }
 <p>MONTAGUE. Not Romeo, Prince, he was Mercutio’s friend; His fault concludes but what the law should end, The life of Tybalt.</p>
 <p>PRINCE. And for that offence Immediately we do exile him hence. I have an interest in your hate’s proceeding, My blood for your rude brawls doth lie a-bleeding. But I’ll amerce you with so strong a fine That you shall all repent the loss of mine. I will be deaf to pleading and excuses; Nor tears nor prayers shall purchase out abuses. Therefore use none. Let Romeo hence in haste, Else, when he is found, that hour is his last. Bear hence this body, and attend our will. Mercy but murders, pardoning those that kill.</p>
 <p>[Exeunt.]</p>
-<h2>SCENE II. A Room in Capulet’s House.</h2>
+<h3 class="sub">Scene II. A Room in Capulet’s House.</h3>
 <p>Enter Juliet.</p>
 <p>JULIET. Gallop apace, you fiery-footed steeds, Towards Phoebus’ lodging. Such a waggoner As Phaeton would whip you to the west And bring in cloudy night immediately. Spread thy close curtain, love-performing night, That runaway’s eyes may wink, and Romeo Leap to these arms, untalk’d of and unseen. Lovers can see to do their amorous rites By their own beauties: or, if love be blind, It best agrees with night. Come, civil night, Thou sober-suited matron, all in black, And learn me how to lose a winning match, Play’d for a pair of stainless maidenhoods. Hood my unmann’d blood, bating in my cheeks, With thy black mantle, till strange love, grow bold, Think true love acted simple modesty. Come, night, come Romeo; come, thou day in night; For thou wilt lie upon the wings of night Whiter than new snow upon a raven’s back. Come gentle night, come loving black-brow’d night, Give me my Romeo, and when I shall die, Take him and cut him out in little stars, And he will make the face of heaven so fine That all the world will be in love with night, And pay no worship to the garish sun. O, I have bought the mansion of a love, But not possess’d it; and though I am sold, Not yet enjoy’d. So tedious is this day As is the night before some festival To an impatient child that hath new robes And may not wear them. O, here comes my Nurse, And she brings news, and every tongue that speaks But Romeo’s name speaks heavenly eloquence.</p>
 <p>Enter Nurse, with cords.</p>
@@ -666,7 +676,7 @@ h2 + p, .first { text-indent: 0; }
 <p>NURSE. Hie to your chamber. I’ll find Romeo To comfort you. I wot well where he is. Hark ye, your Romeo will be here at night. I’ll to him, he is hid at Lawrence’ cell.</p>
 <p>JULIET. O find him, give this ring to my true knight, And bid him come to take his last farewell.</p>
 <p>[Exeunt.]</p>
-<h2>SCENE III. Friar Lawrence’s cell.</h2>
+<h3 class="sub">Scene III. Friar Lawrence’s cell.</h3>
 <p>Enter Friar Lawrence.</p>
 <p>FRIAR LAWRENCE. Romeo, come forth; come forth, thou fearful man. Affliction is enanmour’d of thy parts And thou art wedded to calamity.</p>
 <p>Enter Romeo.</p>
@@ -717,7 +727,7 @@ h2 + p, .first { text-indent: 0; }
 <p>FRIAR LAWRENCE. Go hence, good night, and here stands all your state: Either be gone before the watch be set, Or by the break of day disguis’d from hence. Sojourn in Mantua. I’ll find out your man, And he shall signify from time to time Every good hap to you that chances here. Give me thy hand; ’tis late; farewell; good night.</p>
 <p>ROMEO. But that a joy past joy calls out on me, It were a grief so brief to part with thee. Farewell.</p>
 <p>[Exeunt.]</p>
-<h2>SCENE IV. A Room in Capulet’s House.</h2>
+<h3 class="sub">Scene IV. A Room in Capulet’s House.</h3>
 <p>Enter Capulet, Lady Capulet and Paris.</p>
 <p>CAPULET. Things have fallen out, sir, so unluckily That we have had no time to move our daughter. Look you, she lov’d her kinsman Tybalt dearly, And so did I. Well, we were born to die. ’Tis very late; she’ll not come down tonight. I promise you, but for your company, I would have been abed an hour ago.</p>
 <p>PARIS. These times of woe afford no tune to woo. Madam, good night. Commend me to your daughter.</p>
@@ -728,7 +738,7 @@ h2 + p, .first { text-indent: 0; }
 <p>PARIS. My lord, I would that Thursday were tomorrow.</p>
 <p>CAPULET. Well, get you gone. A Thursday be it then. Go you to Juliet ere you go to bed, Prepare her, wife, against this wedding day. Farewell, my lord.—Light to my chamber, ho! Afore me, it is so very very late that we May call it early by and by. Good night.</p>
 <p>[Exeunt.]</p>
-<h2>SCENE V. An open Gallery to Juliet’s Chamber, overlooking the Garden.</h2>
+<h3 class="sub">Scene V. An open Gallery to Juliet’s Chamber, overlooking the Garden.</h3>
 <p>Enter Romeo and Juliet.</p>
 <p>JULIET. Wilt thou be gone? It is not yet near day. It was the nightingale, and not the lark, That pierc’d the fearful hollow of thine ear; Nightly she sings on yond pomegranate tree. Believe me, love, it was the nightingale.</p>
 <p>ROMEO. It was the lark, the herald of the morn, No nightingale. Look, love, what envious streaks Do lace the severing clouds in yonder east. Night’s candles are burnt out, and jocund day Stands tiptoe on the misty mountain tops. I must be gone and live, or stay and die.</p>
@@ -808,8 +818,7 @@ h2 + p, .first { text-indent: 0; }
 <p>[Exit.]</p>
 <p>JULIET. Ancient damnation! O most wicked fiend! Is it more sin to wish me thus forsworn, Or to dispraise my lord with that same tongue Which she hath prais’d him with above compare So many thousand times? Go, counsellor. Thou and my bosom henceforth shall be twain. I’ll to the Friar to know his remedy. If all else fail, myself have power to die.</p>
 <p>[Exit.]</p>
-<h2>ACT IV</h2>
-<h2>SCENE I. Friar Lawrence’s Cell.</h2>
+<h2 class="chapter" id="c4">Act IV — Scene I. Friar Lawrence’s Cell.</h2>
 <p>Enter Friar Lawrence and Paris.</p>
 <p>FRIAR LAWRENCE. On Thursday, sir? The time is very short.</p>
 <p>PARIS. My father Capulet will have it so; And I am nothing slow to slack his haste.</p>
@@ -847,7 +856,7 @@ h2 + p, .first { text-indent: 0; }
 <p>FRIAR LAWRENCE. Hold; get you gone, be strong and prosperous In this resolve. I’ll send a friar with speed To Mantua, with my letters to thy lord.</p>
 <p>JULIET. Love give me strength, and strength shall help afford. Farewell, dear father.</p>
 <p>[Exeunt.]</p>
-<h2>SCENE II. Hall in Capulet’s House.</h2>
+<h3 class="sub">Scene II. Hall in Capulet’s House.</h3>
 <p>Enter Capulet, Lady Capulet, Nurse and Servants.</p>
 <p>CAPULET. So many guests invite as here are writ.</p>
 <p>[Exit first Servant.]</p>
@@ -874,7 +883,7 @@ h2 + p, .first { text-indent: 0; }
 <p>LADY CAPULET. We shall be short in our provision, ’Tis now near night.</p>
 <p>CAPULET. Tush, I will stir about, And all things shall be well, I warrant thee, wife. Go thou to Juliet, help to deck up her. I’ll not to bed tonight, let me alone. I’ll play the housewife for this once.—What, ho!— They are all forth: well, I will walk myself To County Paris, to prepare him up Against tomorrow. My heart is wondrous light Since this same wayward girl is so reclaim’d.</p>
 <p>[Exeunt.]</p>
-<h2>SCENE III. Juliet’s Chamber.</h2>
+<h3 class="sub">Scene III. Juliet’s Chamber.</h3>
 <p>Enter Juliet and Nurse.</p>
 <p>JULIET. Ay, those attires are best. But, gentle Nurse, I pray thee leave me to myself tonight; For I have need of many orisons To move the heavens to smile upon my state, Which, well thou know’st, is cross and full of sin.</p>
 <p>Enter Lady Capulet.</p>
@@ -886,7 +895,7 @@ h2 + p, .first { text-indent: 0; }
 <p>[Laying down her dagger.]</p>
 <p>What if it be a poison, which the Friar Subtly hath minister’d to have me dead, Lest in this marriage he should be dishonour’d, Because he married me before to Romeo? I fear it is. And yet methinks it should not, For he hath still been tried a holy man. How if, when I am laid into the tomb, I wake before the time that Romeo Come to redeem me? There’s a fearful point! Shall I not then be stifled in the vault, To whose foul mouth no healthsome air breathes in, And there die strangled ere my Romeo comes? Or, if I live, is it not very like, The horrible conceit of death and night, Together with the terror of the place, As in a vault, an ancient receptacle, Where for this many hundred years the bones Of all my buried ancestors are pack’d, Where bloody Tybalt, yet but green in earth, Lies festering in his shroud; where, as they say, At some hours in the night spirits resort— Alack, alack, is it not like that I, So early waking, what with loathsome smells, And shrieks like mandrakes torn out of the earth, That living mortals, hearing them, run mad. O, if I wake, shall I not be distraught, Environed with all these hideous fears, And madly play with my forefathers’ joints? And pluck the mangled Tybalt from his shroud? And, in this rage, with some great kinsman’s bone, As with a club, dash out my desperate brains? O look, methinks I see my cousin’s ghost Seeking out Romeo that did spit his body Upon a rapier’s point. Stay, Tybalt, stay! Romeo, Romeo, Romeo, here’s drink! I drink to thee.</p>
 <p>[Throws herself on the bed.]</p>
-<h2>SCENE IV. Hall in Capulet’s House.</h2>
+<h3 class="sub">Scene IV. Hall in Capulet’s House.</h3>
 <p>Enter Lady Capulet and Nurse.</p>
 <p>LADY CAPULET. Hold, take these keys and fetch more spices, Nurse.</p>
 <p>NURSE. They call for dates and quinces in the pastry.</p>
@@ -911,7 +920,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Re-enter Nurse.</p>
 <p>Go waken Juliet, go and trim her up. I’ll go and chat with Paris. Hie, make haste, Make haste; the bridegroom he is come already. Make haste I say.</p>
 <p>[Exeunt.]</p>
-<h2>SCENE V. Juliet’s Chamber; Juliet on the bed.</h2>
+<h3 class="sub">Scene V. Juliet’s Chamber; Juliet on the bed.</h3>
 <p>Enter Nurse.</p>
 <p>NURSE. Mistress! What, mistress! Juliet! Fast, I warrant her, she. Why, lamb, why, lady, fie, you slug-abed! Why, love, I say! Madam! Sweetheart! Why, bride! What, not a word? You take your pennyworths now. Sleep for a week; for the next night, I warrant, The County Paris hath set up his rest That you shall rest but little. God forgive me! Marry and amen. How sound is she asleep! I needs must wake her. Madam, madam, madam! Ay, let the County take you in your bed, He’ll fright you up, i’faith. Will it not be? What, dress’d, and in your clothes, and down again? I must needs wake you. Lady! Lady! Lady! Alas, alas! Help, help! My lady’s dead! O, well-a-day that ever I was born. Some aqua vitae, ho! My lord! My lady!</p>
 <p>Enter Lady Capulet.</p>
@@ -969,8 +978,7 @@ h2 + p, .first { text-indent: 0; }
 <p>FIRST MUSICIAN. What a pestilent knave is this same!</p>
 <p>SECOND MUSICIAN. Hang him, Jack. Come, we’ll in here, tarry for the mourners, and stay dinner.</p>
 <p>[Exeunt.]</p>
-<h2>ACT V</h2>
-<h2>SCENE I. Mantua. A Street.</h2>
+<h2 class="chapter" id="c5">Act V — Scene I. Mantua. A Street.</h2>
 <p>Enter Romeo.</p>
 <p>ROMEO. If I may trust the flattering eye of sleep, My dreams presage some joyful news at hand. My bosom’s lord sits lightly in his throne; And all this day an unaccustom’d spirit Lifts me above the ground with cheerful thoughts. I dreamt my lady came and found me dead,— Strange dream, that gives a dead man leave to think!— And breath’d such life with kisses in my lips, That I reviv’d, and was an emperor. Ah me, how sweet is love itself possess’d, When but love’s shadows are so rich in joy.</p>
 <p>Enter Balthasar.</p>
@@ -993,7 +1001,7 @@ h2 + p, .first { text-indent: 0; }
 <p>APOTHECARY. Put this in any liquid thing you will And drink it off; and, if you had the strength Of twenty men, it would despatch you straight.</p>
 <p>ROMEO. There is thy gold, worse poison to men’s souls, Doing more murder in this loathsome world Than these poor compounds that thou mayst not sell. I sell thee poison, thou hast sold me none. Farewell, buy food, and get thyself in flesh. Come, cordial and not poison, go with me To Juliet’s grave, for there must I use thee.</p>
 <p>[Exeunt.]</p>
-<h2>SCENE II. Friar Lawrence’s Cell.</h2>
+<h3 class="sub">Scene II. Friar Lawrence’s Cell.</h3>
 <p>Enter Friar John.</p>
 <p>FRIAR JOHN. Holy Franciscan Friar! Brother, ho!</p>
 <p>Enter Friar Lawrence.</p>
@@ -1006,7 +1014,7 @@ h2 + p, .first { text-indent: 0; }
 <p>[Exit.]</p>
 <p>FRIAR LAWRENCE. Now must I to the monument alone. Within this three hours will fair Juliet wake. She will beshrew me much that Romeo Hath had no notice of these accidents; But I will write again to Mantua, And keep her at my cell till Romeo come. Poor living corse, clos’d in a dead man’s tomb.</p>
 <p>[Exit.]</p>
-<h2>SCENE III. A churchyard; in it a Monument belonging to the Capulets.</h2>
+<h3 class="sub">Scene III. A churchyard; in it a Monument belonging to the Capulets.</h3>
 <p>Enter Paris, and his Page bearing flowers and a torch.</p>
 <p>PARIS. Give me thy torch, boy. Hence and stand aloof. Yet put it out, for I would not be seen. Under yond yew tree lay thee all along, Holding thy ear close to the hollow ground; So shall no foot upon the churchyard tread, Being loose, unfirm, with digging up of graves, But thou shalt hear it. Whistle then to me, As signal that thou hear’st something approach. Give me those flowers. Do as I bid thee, go.</p>
 <p>PAGE. [Aside.] I am almost afraid to stand alone Here in the churchyard; yet I will adventure.</p>
@@ -1112,5 +1120,5 @@ h2 + p, .first { text-indent: 0; }
 <p>CAPULET. As rich shall Romeo’s by his lady’s lie, Poor sacrifices of our enmity.</p>
 <p>PRINCE. A glooming peace this morning with it brings; The sun for sorrow will not show his head. Go hence, to have more talk of these sad things. Some shall be pardon’d, and some punished, For never was a story of more woe Than this of Juliet and her Romeo.</p>
 <p>[Exeunt.]</p>
-<p class="colophon">Texte du domaine public, source : Project Gutenberg (#1513). Édition numérique EbookClassics.</p>
+<p class="colophon">Public domain text. EbookClassics digital edition.</p>
 </body></html>

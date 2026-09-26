@@ -1,5 +1,7 @@
 Romeo und Julia
 William Shakespeare
+Übersetzt von Schlegel, August Wilhelm von
+
 
 Thanks are given to Delphine Lettau for finding a huge collection of ancient German books in London.
 
@@ -12,6 +14,7 @@ Romeo und Julia
 William Shakespeare
 
 Übersetzt von August Wilhelm von Schlegel
+
 
 
 PERSONEN
@@ -56,6 +59,7 @@ Ein PAGE des Paris; ein weiterer Page
 Ein APOTHEKER
 
 
+
 CHORUS
 
 
@@ -76,6 +80,7 @@ Masken, Garde, Wächter, Gefolge
 Die Szene ist den größten Teil des Stücks hindurch in Verona; zu Anfange des fünften Aktes in Mantua
 
 
+
 PROLOG
 
 
@@ -84,11 +89,8 @@ PROLOG
 CHORUS Zwei Häuser waren--gleich an Würdigkeit-- Hier in Verona, wo die Handlung steckt, Durch alten Groll zu neuem Kampf bereit, Wo Bürgerblut die Bürgerhand befleckt. Aus dieser Feinde unheilvollem Schoß Das Leben zweier Liebender entsprang, Die durch ihr unglückselges Ende bloß Im Tod begraben elterlichen Zank. Der Hergang ihrer todgeweihten Lieb Und der Verlauf der elterlichen Wut, Die nur der Kinder Tod von dannen trieb, Ist nun zwei Stunden lang der Bühne Gut; Was dran noch fehlt, hört mit geduldgem Ohr, Bringt hoffentlich nun unsre Müh hervor.
 
 
+
 ERSTER AKT
-
-
-
-ERSTE SZENE
 
 
 (Ein öffentlicher Platz)
@@ -295,14 +297,6 @@ ROMEO Das ist der Weg, Mir ihren Reiz in vollem Licht zu zeigen. Die Schwärze j
 
 BENVOLIO Dein Schuldner sterb ich, glückt mir nicht die Müh.
 
-(Beide ab.)
-
-
-ZWEITE SZENE
-
-
-(Eine Straße)
-
 (Capulet, Paris und ein Diener kommen.)
 
 CAPULET Und Montague ist mit derselben Buße Wie ich bedroht?  Für Greise, wie wir sind, Ist Frieden halten, denk ich, nicht so schwer.
@@ -322,14 +316,6 @@ und sag mit Höflichkeit: Mein Haus und mein Empfang steh ihrem Dienst bereit.
 (Capulet und Paris gehen ab.)
 
 DIENER Die Leute soll ich suchen, wovon die Namen hier geschrieben stehn?  Es steht geschrieben, der Schuster soll sich um seine Elle kümmern, der Schneider um seinen Leisten, der Fischer um seinen Pinsel, der Maler um seine Netze.  Aber mich schicken sie, um die Leute ausfindig zu machen, wovon die Namen hier geschrieben stehn, und ich kann doch gar nicht ausfindig machen, was für Namen der Schreiber hier aufgeschrieben hat. Ich muß zu den Gelahrten!--
-
-
-DRITTE SZENE
-
-
-(Ein Zimmer in Capulets Hause)
-
-(Gräfin Capulet und die Wärterin.)
 
 GRÄFIN CAPULET Ruft meine Tochter her; wo ist sie, Amme?
 
@@ -396,14 +382,6 @@ GRÄFIN CAPULET Gleich!--
 Paris wartet; Julia, komm geschwind!
 
 WÄRTERIN Such frohe Nacht auf frohe Tage, Kind!
-
-(Alle ab.)
-
-
-VIERTE SZENE
-
-
-(Eine Straße)
 
 (Romeo, Mercutio, Benvolio mit fünf oder sechs Masken, Fackelträgern und anderen.)
 
@@ -478,14 +456,6 @@ BENVOLIO Der Wind, von dem Ihr sprecht, entführt uns selbst. Man hat gespeist; 
 ROMEO Zu früh, befürcht ich; denn mein Herz erbangt Und ahnet ein Verhängnis, welches, noch Verborgen in den Sternen, heute nacht Bei dieser Lustbarkeit den furchtbarn Zeitlauf Beginnen und das Ziel des lästgen Lebens, Das meine Brust verschließt, mir kürzen wird Durch einen schnöd verwirkten frühen Tod. Doch er, der mir zur Fahrt das Steuer lenkt, Richt auch mein Segel!--Auf, ihr lustgen Freunde!
 
 BENVOLIO Rührt Trommeln!
-
-(Alle ab.)
-
-
-FÜNFTE SZENE
-
-
-(Ein Saal in Capulets Hause)
 
 (Musikanten warten.  Diener kommen.)
 
@@ -624,11 +594,8 @@ CHORUS Die alte Liebe stirbt in ihm dahin, Und junge Zuneigung beerbt sie da; Di
 (Geht ab.)
 
 
-ZWEITER AKT
 
-
-
-ERSTE SZENE
+ZWEITER AKT — ERSTE SZENE
 
 
 (Ein offner Platz, der an Capulets Garten stößt)
@@ -658,6 +625,7 @@ MERCUTIO Ist Liebe blind, so zielt sie freilich schlecht. Nun sitzt er wohl an e
 BENVOLIO Ja, es ist vergeblich, ihn Zu suchen, der nicht will gefunden sein.
 
 (Beide ab.)
+
 
 
 ZWEITE SZENE
@@ -796,6 +764,7 @@ ROMEO Schlaf wohn auf deinem Aug, Fried in der Brust! O wär ich Fried und Schla
 (Ab.)
 
 
+
 DRITTE SZENE
 
 
@@ -844,6 +813,7 @@ ROMEO O laß uns fort von hier!  Ich bin in großer Eil.
 LORENZO Wer hastig läuft, der fällt; drum eile nur mit Weil.
 
 (Beide ab.)
+
 
 
 VIERTE SZENE
@@ -1056,6 +1026,7 @@ WÄRTERIN Peter, nimm meinen Fächer und geh vorauf!
 (Beide ab.)
 
 
+
 FÜNFTE SZENE
 
 
@@ -1114,6 +1085,7 @@ JULIA Zu hohem Glücke, treue Pflegerin!
 (Beide ab.)
 
 
+
 SECHSTE SZENE
 
 
@@ -1148,11 +1120,8 @@ LORENZO Kommt, kommt mit mir, wir schreiten gleich zur Sache. Ich leide nicht, d
 (Alle ab.)
 
 
-DRITTER AKT
 
-
-
-ERSTE SZENE
+DRITTER AKT — ERSTE SZENE
 
 
 (Ein öffentlicher Platz)
@@ -1302,6 +1271,7 @@ PRINZ Weil er das verbrochen, Sei über ihn sofort der Bann gesprochen. Mich sel
 (Alle ab.)
 
 
+
 ZWEITE SZENE
 
 
@@ -1368,6 +1338,7 @@ WÄRTERIN Geht nur ins Schlafgemach!  Zum Troste find ich Euch Romeo: ich weiß 
 JULIA O such ihn auf!  Gib diesen Ring dem Treuen; Bescheid aufs letzte Lebewohl ihn her!
 
 (Beide ab.)
+
 
 
 DRITTE SZENE
@@ -1450,6 +1421,7 @@ ROMEO Mich rufen Freuden über alle Freuden, Sonst wärs ein Leid, von dir so sc
 (Beide ab.)
 
 
+
 VIERTE SZENE
 
 
@@ -1478,6 +1450,7 @@ CAPULET Gut, geht nur heim!  Sei's denn am Donnerstag.-- Geh, Frau, zu Julien, e
 He!  Licht auf meine Kammer! Nach meiner Weise ists so spät, daß wir Bald früh es nennen können.  Gute Nacht!
 
 ([Capulet und die Gräfin ab.] Alle ab.)
+
 
 
 FÜNFTE SZENE
@@ -1672,6 +1645,7 @@ CAPULET Blitz!  Ich will frisch mich rühren, Und alles soll schon gehn, Frau, d
 (Capulet und die Gräfin ab.)
 
 
+
 DRITTE SZENE
 
 
@@ -1698,6 +1672,7 @@ JULIA Lebt wohl!--Gott weiß, wann wir uns wiedersehn. Kalt rieselt matter Schau
 Wie?  Wär es Gift, das mir mit schlauer Kunst Der Mönch bereitet, mir den Tod zu bringen, Auf daß ihn diese Heirat nicht entehre, Weil er zuvor mich Romeo vermählt? So, fürcht ich, ists!--Doch dünkt mich, kanns nicht sein, Denn er ward stets ein frommer Mann erfunden. Ich will nicht Raum so bösem Argwohn geben. Wie aber, wenn ich, in die Gruft gelegt, Erwache vor der Zeit, da Romeo Mich zu erlösen kommt?  Furchtbarer Fall! Werd ich dann nicht in dem Gewölb ersticken, Des giftger Mund nie reine Lüfte einhaucht, Und so erwürgt da liegen, wann er kommt? Und leb ich auch, könnt es nicht leicht geschehn, Daß mich das grause Bild von Tod und Nacht Zusammen mit den Schrecken jenes Ortes Dort im Gewölb in alter Katakombe, Wo die Gebeine aller meiner Ahnen Seit vielen hundert Jahren aufgehäuft, Wo frisch beerdigt erst der blutge Tybalt Im Leichentuch verwest; wo, wie man sagt, In mitternächtger Stunde Geister hausen-- Weh, weh!--könnt es nicht leicht geschehn, daß ich, Zu früh erwachend--und nun ekler Dunst, Gekreisch wie von Alraunen, die man aufwühlt, Das Sterbliche, die's hören, sinnlos macht-- Oh, wach ich auf, werd ich nicht rasend werden, Umringt von all den greuelvollen Schrecken, Und toll mit meiner Väter Gliedern spielen? Und Tybalt aus dem Leichentuche zerren? Und in der Wut mit irgendeines Ahnherrn Gebein zerschlagen mein zerrüttet Hirn? O da!  Mich dünkt, ich sehe Tybalts Geist! Er späht nach Romeo, der seinen Leib Auf einen Degen spießte.--Tybalt, halt!-- Ich komme, Romeo!  Dies trink ich dir!
 
 ([Sie trinkt und] wirft sich auf das Bett.)
+
 
 
 VIERTE SZENE
@@ -1754,6 +1729,7 @@ Frau!  Wärterin!  He, sag ich, Wärterin!
 Weckt Julien auf!  Geht, putzt sie mir heraus! Ich geh indes und plaudre mit dem Grafen. Eilt Euch, macht fort!  Der Bräutgam ist schon da. Fort, sag ich Euch.
 
 (Beide ab.)
+
 
 
 FÜNFTE SZENE
@@ -1860,11 +1836,8 @@ ZWEITER MUSIKANT Hol ihn der Henker!  Kommt, wir wollen hier hineingehn, auf die
 (Alle ab.)
 
 
-FÜNFTER AKT
 
-
-
-ERSTE SZENE
+FÜNFTER AKT — ERSTE SZENE
 
 
 (Mantua.  Eine Straße)
@@ -2107,4 +2080,5 @@ PRINZ Nur düstern Frieden bringt uns dieser Morgen; Die Sonne scheint, verhüll
 
 Ende dieses Projekt Gutenberg Etextes Romeo und Julia, von William Shakespeare (Übersetzt von August Wilhelm von Schlegel)
 
-Texte du domaine public, source : Project Gutenberg (#6996). Traduction : Schlegel, August Wilhelm von († 1845). Édition numérique EbookClassics.
+
+— Gemeinfreier Text. Digitale Ausgabe EbookClassics.

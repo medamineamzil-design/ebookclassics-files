@@ -1,40 +1,119 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
-<title>The Three Musketeers</title><style>
-@page { margin: 22mm 20mm; }
-body { font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', serif; line-height: 1.6;
-       color: #1f1a14; max-width: 38em; margin: 0 auto; padding: 1.5em 1.2em; }
-h1 { font-size: 2.1em; text-align: center; margin: 1.5em 0 .2em; letter-spacing: .01em; }
-.author { text-align: center; font-size: 1.15em; font-style: italic; margin-bottom: 3em; color: #5a4a36; }
-h2 { font-size: 1.25em; text-align: center; margin: 2.6em 0 1.2em; letter-spacing: .06em;
-     text-transform: uppercase; font-weight: normal; page-break-before: always; break-before: page; }
-p { margin: 0; text-indent: 1.4em; text-align: justify; hyphens: auto; }
-h2 + p, .first { text-indent: 0; }
-.colophon { font-size: .85em; color: #6b5d45; text-align: center; margin-top: 4em; text-indent: 0; }
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Three Musketeers — Alexandre Dumas</title><style>
+:root{--paper:#fbf8f1;--ink:#1f1b16;--muted:#6f6352;--accent:#9a6b2f;--rule:#e4dccb}
+@media (prefers-color-scheme:dark){:root{--paper:#16140f;--ink:#ece6d8;--muted:#a79c88;--accent:#d8a95e;--rule:#2e2a22}}
+html{background:var(--paper)}
+body{font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Libertinus Serif",Georgia,serif;color:var(--ink);
+     background:var(--paper);line-height:1.65;font-size:1.12rem;max-width:36em;margin:0 auto;padding:2.5em 1.25em 5em}
+.titlepage{text-align:center;min-height:70vh;display:flex;flex-direction:column;justify-content:center;gap:.6em;
+           border-bottom:1px solid var(--rule);margin-bottom:2.5em;padding-bottom:2.5em}
+.titlepage img{max-width:260px;width:60%;margin:0 auto 1.5em;border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+h1{font-size:2.4em;line-height:1.15;font-weight:600;margin:0;letter-spacing:-.01em}
+.author{font-style:italic;font-size:1.25em;color:var(--accent);margin:0}
+.translator{font-size:.95em;color:var(--muted);margin:0}
+nav.toc{margin:0 0 3em}
+nav.toc h2{font-size:.85em;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:left;margin:0 0 .8em}
+nav.toc ol{list-style:none;padding:0;margin:0;columns:1}
+nav.toc li{margin:.25em 0}
+nav.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent}
+nav.toc a:hover{border-color:var(--accent)}
+h2.chapter{font-size:1.45em;font-weight:600;text-align:center;margin:3.5em 0 1.6em;line-height:1.3}
+h2.chapter::before{content:"";display:block;width:3em;height:2px;background:var(--accent);margin:0 auto 1.1em}
+p{margin:0;text-indent:1.5em;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+h2.chapter + p, .titlepage + p{text-indent:0}
+h2.chapter + p::first-letter{font-size:3.1em;float:left;line-height:.85;padding:.08em .08em 0 0;color:var(--accent);font-weight:600}
+.colophon{margin-top:5em;padding-top:1.5em;border-top:1px solid var(--rule);text-align:center;color:var(--muted);font-size:.85em;text-indent:0}
+h3.sub{font-size:1em;font-weight:600;font-variant:small-caps;letter-spacing:.04em;text-align:center;margin:2.2em 0 1em}
+h3.sub + p{text-indent:0}
+@media print{h2.chapter{break-before:page}}
 </style></head><body>
+<header class="titlepage">
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjI0MDAiIHZpZXdCb3g9IjAgMCAxNjAwIDI0MDAiPgo8cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSIyNDAwIiBmaWxsPSIjMmYzZTJjIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjMwMCIgZmlsbD0iI2Q0YTM3MyIgb3BhY2l0eT0iLjkyIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMmYzZTJjIiBzdHJva2Utd2lkdGg9IjEyIiBvcGFjaXR5PSIuNSIvPgo8Y2lyY2xlIGN4PSIxMTIwIiBjeT0iNTYwIiByPSIxMjAiIGZpbGw9IiMyZjNlMmMiIG9wYWNpdHk9Ii4xOCIvPgo8cmVjdCB4PSIxNjAiIHk9IjkzMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIxMCIgZmlsbD0iI2Q0YTM3MyIvPgo8dGV4dCB4PSIxNjAiIHk9IjEwOTgiIGZvbnQtc2l6ZT0iMTUwIiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmM2VmZTYiPlRoZSBUaHJlZTwvdGV4dD48dGV4dCB4PSIxNjAiIHk9IjEyNjIiIGZvbnQtc2l6ZT0iMTUwIiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmM2VmZTYiPk11c2tldGVlcnM8L3RleHQ+Cjx0ZXh0IHg9IjE2MCIgeT0iMTQ5OCIgZm9udC1zaXplPSI2OCIgZm9udC1zdHlsZT0iaXRhbGljIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNkNGEzNzMiPkFsZXhhbmRyZSBEdW1hczwvdGV4dD4KPHRleHQgeD0iMTYwIiB5PSIyMjMwIiBmb250LXNpemU9IjQ0IiBsZXR0ZXItc3BhY2luZz0iMTQiIGZvbnQtZmFtaWx5PSJMaWJlcnRpbnVzIFNlcmlmLCBHZW9yZ2lhLCBzZXJpZiIgZmlsbD0iI2YzZWZlNiIgb3BhY2l0eT0iLjc1Ij5FQk9PS0NMQVNTSUNTPC90ZXh0Pgo8L3N2Zz4=" alt="">
 <h1>The Three Musketeers</h1>
 <p class="author">Alexandre Dumas</p>
-<p>The Three Musketeers</p>
-<p>By Alexandre Dumas, Père</p>
-<p>First Volume of the D’Artagnan Series</p>
-<h2>CONTENTS</h2>
+</header>
+<nav class="toc"><h2>Contents</h2><ol>
+<li><a href="#c1">Chapter I. THE THREE PRESENTS OF D’ARTAGNAN THE ELDER</a></li>
+<li><a href="#c2">Chapter II. THE ANTECHAMBER OF M. DE TRÉVILLE</a></li>
+<li><a href="#c3">Chapter III. THE AUDIENCE</a></li>
+<li><a href="#c4">Chapter IV. THE SHOULDER OF ATHOS, THE BALDRIC OF PORTHOS AND THE HANDKERCHIEF OF ARAMIS</a></li>
+<li><a href="#c5">Chapter V. THE KING’S MUSKETEERS AND THE CARDINAL’S GUARDS</a></li>
+<li><a href="#c6">Chapter VI. HIS MAJESTY KING LOUIS XIII.</a></li>
+<li><a href="#c7">Chapter VII. THE INTERIOR OF THE MUSKETEERS</a></li>
+<li><a href="#c8">Chapter VIII. CONCERNING A COURT INTRIGUE</a></li>
+<li><a href="#c9">Chapter IX. D’ARTAGNAN SHOWS HIMSELF</a></li>
+<li><a href="#c10">Chapter X. A MOUSETRAP IN THE SEVENTEENTH CENTURY</a></li>
+<li><a href="#c11">Chapter XI. IN WHICH THE PLOT THICKENS</a></li>
+<li><a href="#c12">Chapter XII. GEORGE VILLIERS, DUKE OF BUCKINGHAM</a></li>
+<li><a href="#c13">Chapter XIII. MONSIEUR BONACIEUX</a></li>
+<li><a href="#c14">Chapter XIV. THE MAN OF MEUNG</a></li>
+<li><a href="#c15">Chapter XV. MEN OF THE ROBE AND MEN OF THE SWORD</a></li>
+<li><a href="#c16">Chapter XVI. IN WHICH M. SÉGUIER, KEEPER OF THE SEALS, LOOKS MORE THAN ONCE FOR THE BELL</a></li>
+<li><a href="#c17">Chapter XVII. BONACIEUX AT HOME</a></li>
+<li><a href="#c18">Chapter XVIII. LOVER AND HUSBAND</a></li>
+<li><a href="#c19">Chapter XIX. PLAN OF CAMPAIGN</a></li>
+<li><a href="#c20">Chapter XX. THE JOURNEY</a></li>
+<li><a href="#c21">Chapter XXI. THE COUNTESS DE WINTER</a></li>
+<li><a href="#c22">Chapter XXII. THE BALLET OF LA MERLAISON</a></li>
+<li><a href="#c23">Chapter XXIII. THE RENDEZVOUS</a></li>
+<li><a href="#c24">Chapter XXIV. THE PAVILION</a></li>
+<li><a href="#c25">Chapter XXV. PORTHOS</a></li>
+<li><a href="#c26">Chapter XXVI. ARAMIS AND HIS THESIS</a></li>
+<li><a href="#c27">Chapter XXVII. THE WIFE OF ATHOS</a></li>
+<li><a href="#c28">Chapter XXVIII. THE RETURN</a></li>
+<li><a href="#c29">Chapter XXIX. HUNTING FOR THE EQUIPMENTS</a></li>
+<li><a href="#c30">Chapter XXX. D’ARTAGNAN AND THE ENGLISHMAN</a></li>
+<li><a href="#c31">Chapter XXXI. ENGLISH AND FRENCH</a></li>
+<li><a href="#c32">Chapter XXXII. A PROCURATOR’S DINNER</a></li>
+<li><a href="#c33">Chapter XXXIII. SOUBRETTE AND MISTRESS</a></li>
+<li><a href="#c34">Chapter XXXIV. IN WHICH THE EQUIPMENT OF ARAMIS AND PORTHOS IS TREATED OF</a></li>
+<li><a href="#c35">Chapter XXXV. A GASCON A MATCH FOR CUPID</a></li>
+<li><a href="#c36">Chapter XXXVI. DREAM OF VENGEANCE</a></li>
+<li><a href="#c37">Chapter XXXVII. MILADY’S SECRET</a></li>
+<li><a href="#c38">Chapter XXXVIII. HOW, WITHOUT INCOMMDING HIMSELF, ATHOS PROCURES HIS EQUIPMENT</a></li>
+<li><a href="#c39">Chapter XXXIX. A VISION</a></li>
+<li><a href="#c40">Chapter XL. A TERRIBLE VISION</a></li>
+<li><a href="#c41">Chapter XLI. THE SIEGE OF LA ROCHELLE</a></li>
+<li><a href="#c42">Chapter XLII. THE ANJOU WINE</a></li>
+<li><a href="#c43">Chapter XLIII. THE SIGN OF THE RED DOVECOT</a></li>
+<li><a href="#c44">Chapter XLIV. THE UTILITY OF STOVEPIPES</a></li>
+<li><a href="#c45">Chapter XLV. A CONJUGAL SCENE</a></li>
+<li><a href="#c46">Chapter XLVI. THE BASTION SAINT-GERVAIS</a></li>
+<li><a href="#c47">Chapter XLVII. THE COUNCIL OF THE MUSKETEERS</a></li>
+<li><a href="#c48">Chapter XLVIII. A FAMILY AFFAIR</a></li>
+<li><a href="#c49">Chapter XLIX. FATALITY</a></li>
+<li><a href="#c50">Chapter L. CHAT BETWEEN BROTHER AND SISTER</a></li>
+<li><a href="#c51">Chapter LI. OFFICER</a></li>
+<li><a href="#c52">Chapter LII. CAPTIVITY: THE FIRST DAY</a></li>
+<li><a href="#c53">Chapter LIII. CAPTIVITY: THE SECOND DAY</a></li>
+<li><a href="#c54">Chapter LIV. CAPTIVITY: THE THIRD DAY</a></li>
+<li><a href="#c55">Chapter LV. CAPTIVITY: THE FOURTH DAY</a></li>
+<li><a href="#c56">Chapter LVI. CAPTIVITY: THE FIFTH DAY</a></li>
+<li><a href="#c57">Chapter LVII. MEANS FOR CLASSICAL TRAGEDY</a></li>
+<li><a href="#c58">Chapter LVIII. ESCAPE</a></li>
+<li><a href="#c59">Chapter LIX. WHAT TOOK PLACE AT PORTSMOUTH AUGUST 23, 1628</a></li>
+<li><a href="#c60">Chapter LX. IN FRANCE</a></li>
+<li><a href="#c61">Chapter LXI. THE CARMELITE CONVENT AT BÉTHUNE</a></li>
+<li><a href="#c62">Chapter LXII. TWO VARIETIES OF DEMONS</a></li>
+<li><a href="#c63">Chapter LXIII. THE DROP OF WATER</a></li>
+<li><a href="#c64">Chapter LXIV. THE MAN IN THE RED CLOAK</a></li>
+<li><a href="#c65">Chapter LXV. TRIAL</a></li>
+<li><a href="#c66">Chapter LXVI. EXECUTION</a></li>
+<li><a href="#c67">Chapter LXVII. CONCLUSION</a></li>
+</ol></nav>
 <p>AUTHOR’S PREFACE Chapter I. THE THREE PRESENTS OF D’ARTAGNAN THE ELDER Chapter II. THE ANTECHAMBER OF M. DE TRÉVILLE Chapter III. THE AUDIENCE Chapter IV. THE SHOULDER OF ATHOS, THE BALDRIC OF PORTHOS AND THE HANDKERCHIEF OF ARAMIS Chapter V. THE KING’S MUSKETEERS AND THE CARDINAL’S GUARDS Chapter VI. HIS MAJESTY KING LOUIS XIII. Chapter VII. THE INTERIOR OF THE MUSKETEERS Chapter VIII. CONCERNING A COURT INTRIGUE Chapter IX. D’ARTAGNAN SHOWS HIMSELF Chapter X. A MOUSETRAP IN THE SEVENTEENTH CENTURY Chapter XI. IN WHICH THE PLOT THICKENS Chapter XII. GEORGE VILLIERS, DUKE OF BUCKINGHAM Chapter XIII. MONSIEUR BONACIEUX Chapter XIV. THE MAN OF MEUNG Chapter XV. MEN OF THE ROBE AND MEN OF THE SWORD Chapter XVI. IN WHICH M. SÉGUIER, KEEPER OF THE SEALS, LOOKS MORE THAN ONCE FOR THE BELL Chapter XVII. BONACIEUX AT HOME Chapter XVIII. LOVER AND HUSBAND Chapter XIX. PLAN OF CAMPAIGN Chapter XX. THE JOURNEY Chapter XXI. THE COUNTESS DE WINTER Chapter XXII. THE BALLET OF LA MERLAISON Chapter XXIII. THE RENDEZVOUS Chapter XXIV. THE PAVILION Chapter XXV. PORTHOS Chapter XXVI. ARAMIS AND HIS THESIS Chapter XXVII. THE WIFE OF ATHOS Chapter XXVIII. THE RETURN Chapter XXIX. HUNTING FOR THE EQUIPMENTS Chapter XXX. D’ARTAGNAN AND THE ENGLISHMAN Chapter XXXI. ENGLISH AND FRENCH Chapter XXXII. A PROCURATOR’S DINNER Chapter XXXIII. SOUBRETTE AND MISTRESS Chapter XXXIV. IN WHICH THE EQUIPMENT OF ARAMIS AND PORTHOS IS TREATED OF Chapter XXXV. A GASCON A MATCH FOR CUPID Chapter XXXVI. DREAM OF VENGEANCE Chapter XXXVII. MILADY’S SECRET Chapter XXXVIII. HOW, WITHOUT INCOMMDING HIMSELF, ATHOS PROCURES HIS EQUIPMENT Chapter XXXIX. A VISION Chapter XL. A TERRIBLE VISION Chapter XLI. THE SIEGE OF LA ROCHELLE Chapter XLII. THE ANJOU WINE Chapter XLIII. THE SIGN OF THE RED DOVECOT Chapter XLIV. THE UTILITY OF STOVEPIPES Chapter XLV. A CONJUGAL SCENE Chapter XLVI. THE BASTION SAINT-GERVAIS Chapter XLVII. THE COUNCIL OF THE MUSKETEERS Chapter XLVIII. A FAMILY AFFAIR Chapter XLIX. FATALITY Chapter L. CHAT BETWEEN BROTHER AND SISTER Chapter LI. OFFICER Chapter LII. CAPTIVITY: THE FIRST DAY Chapter LIII. CAPTIVITY: THE SECOND DAY Chapter LIV. CAPTIVITY: THE THIRD DAY Chapter LV. CAPTIVITY: THE FOURTH DAY Chapter LVI. CAPTIVITY: THE FIFTH DAY Chapter LVII. MEANS FOR CLASSICAL TRAGEDY Chapter LVIII. ESCAPE Chapter LIX. WHAT TOOK PLACE AT PORTSMOUTH AUGUST 23, 1628 Chapter LX. IN FRANCE Chapter LXI. THE CARMELITE CONVENT AT BÉTHUNE Chapter LXII. TWO VARIETIES OF DEMONS Chapter LXIII. THE DROP OF WATER Chapter LXIV. THE MAN IN THE RED CLOAK Chapter LXV. TRIAL Chapter LXVI. EXECUTION Chapter LXVII. CONCLUSION EPILOGUE</p>
-<h2>AUTHOR’S PREFACE</h2>
-<p>In which it is proved that, notwithstanding their names’ ending in os and is, the heroes of the story which we are about to have the honor to relate to our readers have nothing mythological about them.</p>
 <p>A short time ago, while making researches in the Royal Library for my History of Louis XIV., I stumbled by chance upon the Memoirs of M. d’Artagnan, printed—as were most of the works of that period, in which authors could not tell the truth without the risk of a residence, more or less long, in the Bastille—at Amsterdam, by Pierre Rouge. The title attracted me; I took them home with me, with the permission of the guardian, and devoured them.</p>
 <p>It is not my intention here to enter into an analysis of this curious work; and I shall satisfy myself with referring such of my readers as appreciate the pictures of the period to its pages. They will therein find portraits penciled by the hand of a master; and although these squibs may be, for the most part, traced upon the doors of barracks and the walls of cabarets, they will not find the likenesses of Louis XIII., Anne of Austria, Richelieu, Mazarin, and the courtiers of the period, less faithful than in the history of M. Anquetil.</p>
 <p>But, it is well known, what strikes the capricious mind of the poet is not always what affects the mass of readers. Now, while admiring, as others doubtless will admire, the details we have to relate, our main preoccupation concerned a matter to which no one before ourselves had given a thought.</p>
 <p>D’Artagnan relates that on his first visit to M. de Tréville, captain of the king’s Musketeers, he met in the antechamber three young men, serving in the illustrious corps into which he was soliciting the honor of being received, bearing the names of Athos, Porthos, and Aramis.</p>
 <p>We must confess these three strange names struck us; and it immediately occurred to us that they were but pseudonyms, under which D’Artagnan had disguised names perhaps illustrious, or else that the bearers of these borrowed names had themselves chosen them on the day in which, from caprice, discontent, or want of fortune, they had donned the simple Musketeer’s uniform.</p>
-<p>From that moment we had no rest till we could find some trace in contemporary works of these extraordinary names which had so strongly awakened our curiosity.</p>
 <p>The catalogue alone of the books we read with this object would fill a whole chapter, which, although it might be very instructive, would certainly afford our readers but little amusement. It will suffice, then, to tell them that at the moment at which, discouraged by so many fruitless investigations, we were about to abandon our search, we at length found, guided by the counsels of our illustrious friend Paulin Paris, a manuscript in folio, endorsed 4772 or 4773, we do not recollect which, having for title, “Memoirs of the Comte de la Fère, Touching Some Events Which Passed in France Toward the End of the Reign of King Louis XIII. and the Commencement of the Reign of King Louis XIV.”</p>
 <p>It may be easily imagined how great was our joy when, in turning over this manuscript, our last hope, we found at the twentieth page the name of Athos, at the twenty-seventh the name of Porthos, and at the thirty-first the name of Aramis.</p>
 <p>The discovery of a completely unknown manuscript at a period in which historical science is carried to such a high degree appeared almost miraculous. We hastened, therefore, to obtain permission to print it, with the view of presenting ourselves someday with the pack of others at the doors of the Académie des Inscriptions et Belles Lettres, if we should not succeed—a very probable thing, by the by—in gaining admission to the Académie Française with our own proper pack. This permission, we feel bound to say, was graciously granted; which compels us here to give a public contradiction to the slanderers who pretend that we live under a government but moderately indulgent to men of letters.</p>
 <p>Now, this is the first part of this precious manuscript which we offer to our readers, restoring it to the title which belongs to it, and entering into an engagement that if (of which we have no doubt) this first part should obtain the success it merits, we will publish the second immediately.</p>
-<p>In the meanwhile, as the godfather is a second father, we beg the reader to lay to our account, and not to that of the Comte de la Fère, the pleasure or the ennui he may experience.</p>
-<p>This being understood, let us proceed with our history.</p>
-<p>The Three Musketeers</p>
-<h2>Chapter I. THE THREE PRESENTS OF D’ARTAGNAN THE ELDER</h2>
+<h2 class="chapter" id="c1">Chapter I. THE THREE PRESENTS OF D’ARTAGNAN THE ELDER</h2>
 <p>On the first Monday of the month of April, 1625, the market town of Meung, in which the author of Romance of the Rose was born, appeared to be in as perfect a state of revolution as if the Huguenots had just made a second La Rochelle of it. Many citizens, seeing the women flying toward the High Street, leaving their children crying at the open doors, hastened to don the cuirass, and supporting their somewhat uncertain courage with a musket or a partisan, directed their steps toward the hostelry of the Jolly Miller, before which was gathered, increasing every minute, a compact group, vociferous and full of curiosity.</p>
 <p>In those times panics were common, and few days passed without some city or other registering in its archives an event of this kind. There were nobles, who made war against each other; there was the king, who made war against the cardinal; there was Spain, which made war against the king. Then, in addition to these concealed or public, secret or open wars, there were robbers, mendicants, Huguenots, wolves, and scoundrels, who made war upon everybody. The citizens always took up arms readily against thieves, wolves or scoundrels, often against nobles or Huguenots, sometimes against the king, but never against the cardinal or Spain. It resulted, then, from this habit that on the said first Monday of April, 1625, the citizens, on hearing the clamor, and seeing neither the red-and-yellow standard nor the livery of the Duc de Richelieu, rushed toward the hostel of the Jolly Miller. When arrived there, the cause of the hubbub was apparent to all.</p>
 <p>A young man—we can sketch his portrait at a dash. Imagine to yourself a Don Quixote of eighteen; a Don Quixote without his corselet, without his coat of mail, without his cuisses; a Don Quixote clothed in a woolen doublet, the blue color of which had faded into a nameless shade between lees of wine and a heavenly azure; face long and brown; high cheek bones, a sign of sagacity; the maxillary muscles enormously developed, an infallible sign by which a Gascon may always be detected, even without his cap—and our young man wore a cap set off with a sort of feather; the eye open and intelligent; the nose hooked, but finely chiseled. Too big for a youth, too small for a grown man, an experienced eye might have taken him for a farmer’s son upon a journey had it not been for the long sword which, dangling from a leather baldric, hit against the calves of its owner as he walked, and against the rough side of his steed when he was on horseback.</p>
@@ -149,7 +228,7 @@ h2 + p, .first { text-indent: 0; }
 <p>As soon as the earnest money was paid, D’Artagnan took possession of his lodging, and passed the remainder of the day in sewing onto his doublet and hose some ornamental braiding which his mother had taken off an almost-new doublet of the elder M. d’Artagnan, and which she had given her son secretly. Next he went to the Quai de Feraille to have a new blade put to his sword, and then returned toward the Louvre, inquiring of the first Musketeer he met for the situation of the hôtel of M. de Tréville, which proved to be in the Rue du Vieux-Colombier; that is to say, in the immediate vicinity of the chamber hired by D’Artagnan—a circumstance which appeared to furnish a happy augury for the success of his journey.</p>
 <p>After this, satisfied with the way in which he had conducted himself at Meung, without remorse for the past, confident in the present, and full of hope for the future, he retired to bed and slept the sleep of the brave.</p>
 <p>This sleep, provincial as it was, brought him to nine o’clock in the morning; at which hour he rose, in order to repair to the residence of M. de Tréville, the third personage in the kingdom, in the paternal estimation.</p>
-<h2>Chapter II. THE ANTECHAMBER OF M. DE TRÉVILLE</h2>
+<h2 class="chapter" id="c2">Chapter II. THE ANTECHAMBER OF M. DE TRÉVILLE</h2>
 <p>M. de Troisville, as his family was still called in Gascony, or M. de Tréville, as he has ended by styling himself in Paris, had really commenced life as D’Artagnan now did; that is to say, without a sou in his pocket, but with a fund of audacity, shrewdness, and intelligence which makes the poorest Gascon gentleman often derive more in his hope from the paternal inheritance than the richest Perigordian or Berrichan gentleman derives in reality from his. His insolent bravery, his still more insolent success at a time when blows poured down like hail, had borne him to the top of that difficult ladder called Court Favor, which he had climbed four steps at a time.</p>
 <p>He was the friend of the king, who honored highly, as everyone knows, the memory of his father, Henry IV. The father of M. de Tréville had served him so faithfully in his wars against the league that in default of money—a thing to which the Béarnais was accustomed all his life, and who constantly paid his debts with that of which he never stood in need of borrowing, that is to say, with ready wit—in default of money, we repeat, he authorized him, after the reduction of Paris, to assume for his arms a golden lion passant upon gules, with the motto Fidelis et fortis. This was a great matter in the way of honor, but very little in the way of wealth; so that when the illustrious companion of the great Henry died, the only inheritance he was able to leave his son was his sword and his motto. Thanks to this double gift and the spotless name that accompanied it, M. de Tréville was admitted into the household of the young prince where he made such good use of his sword, and was so faithful to his motto, that Louis XIII., one of the good blades of his kingdom, was accustomed to say that if he had a friend who was about to fight, he would advise him to choose as a second, himself first, and Tréville next—or even, perhaps, before himself.</p>
 <p>Thus Louis XIII. had a real liking for Tréville—a royal liking, a self-interested liking, it is true, but still a liking. At that unhappy period it was an important consideration to be surrounded by such men as Tréville. Many might take for their device the epithet strong, which formed the second part of his motto, but very few gentlemen could lay claim to the faithful, which constituted the first. Tréville was one of these latter. His was one of those rare organizations, endowed with an obedient intelligence like that of the dog; with a blind valor, a quick eye, and a prompt hand; to whom sight appeared only to be given to see if the king were dissatisfied with anyone, and the hand to strike this displeasing personage, whether a Besme, a Maurevers, a Poltiot de Méré, or a Vitry. In short, up to this period nothing had been wanting to Tréville but opportunity; but he was ever on the watch for it, and he faithfully promised himself that he would not fail to seize it by its three hairs whenever it came within reach of his hand. At last Louis XIII. made Tréville the captain of his Musketeers, who were to Louis XIII. in devotedness, or rather in fanaticism, what his Ordinaries had been to Henry III., and his Scotch Guard to Louis XI.</p>
@@ -213,7 +292,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“Gentlemen! Gentlemen!” cried the surrounding group.</p>
 <p>“Monsieur de Tréville awaits Monsieur d’Artagnan,” cried a servant, throwing open the door of the cabinet.</p>
 <p>At this announcement, during which the door remained open, everyone became mute, and amid the general silence the young man crossed part of the length of the antechamber, and entered the apartment of the captain of the Musketeers, congratulating himself with all his heart at having so narrowly escaped the end of this strange quarrel.</p>
-<h2>Chapter III. THE AUDIENCE</h2>
+<h2 class="chapter" id="c3">Chapter III. THE AUDIENCE</h2>
 <p>M. de Tréville was at the moment in rather ill-humor, nevertheless he saluted the young man politely, who bowed to the very ground; and he smiled on receiving D’Artagnan’s response, the Béarnese accent of which recalled to him at the same time his youth and his country—a double remembrance which makes a man smile at all ages; but stepping toward the antechamber and making a sign to D’Artagnan with his hand, as if to ask his permission to finish with others before he began with him, he called three times, with a louder voice at each time, so that he ran through the intervening tones between the imperative accent and the angry accent.</p>
 <p>“Athos! Porthos! Aramis!”</p>
 <p>The two Musketeers with whom we have already made acquaintance, and who answered to the last of these three names, immediately quitted the group of which they had formed a part, and advanced toward the cabinet, the door of which closed after them as soon as they had entered. Their appearance, although it was not quite at ease, excited by its carelessness, at once full of dignity and submission, the admiration of D’Artagnan, who beheld in these two men demigods, and in their leader an Olympian Jupiter, armed with all his thunders.</p>
@@ -304,7 +383,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“And who?” asked M. de Tréville.</p>
 <p>“He, my thief!” replied D’Artagnan. “Ah, the traitor!” and he disappeared.</p>
 <p>“The devil take the madman!” murmured M. de Tréville, “unless,” added he, “this is a cunning mode of escaping, seeing that he had failed in his purpose!”</p>
-<p>Chapter IV. THE SHOULDER OF ATHOS, THE BALDRIC OF PORTHOS AND THE HANDKERCHIEF OF ARAMIS</p>
+<h2 class="chapter" id="c4">Chapter IV. THE SHOULDER OF ATHOS, THE BALDRIC OF PORTHOS AND THE HANDKERCHIEF OF ARAMIS</h2>
 <p>D’Artagnan, in a state of fury, crossed the antechamber at three bounds, and was darting toward the stairs, which he reckoned upon descending four at a time, when, in his heedless course, he ran head foremost against a Musketeer who was coming out of one of M. de Tréville’s private rooms, and striking his shoulder violently, made him utter a cry, or rather a howl.</p>
 <p>“Excuse me,” said D’Artagnan, endeavoring to resume his course, “excuse me, but I am in a hurry.”</p>
 <p>Scarcely had he descended the first stair, when a hand of iron seized him by the belt and stopped him.</p>
@@ -381,7 +460,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“Yes. Monsieur does not postpone an interview through prudence?”</p>
 <p>“Prudence, monsieur, is a virtue sufficiently useless to Musketeers, I know, but indispensable to churchmen; and as I am only a Musketeer provisionally, I hold it good to be prudent. At two o’clock I shall have the honor of expecting you at the hôtel of Monsieur de Tréville. There I will indicate to you the best place and time.”</p>
 <p>The two young men bowed and separated, Aramis ascending the street which led to the Luxembourg, while D’Artagnan, perceiving the appointed hour was approaching, took the road to the Carmes-Deschaux, saying to himself, “Decidedly I can’t draw back; but at least, if I am killed, I shall be killed by a Musketeer.”</p>
-<h2>Chapter V. THE KING’S MUSKETEERS AND THE CARDINAL’S GUARDS</h2>
+<h2 class="chapter" id="c5">Chapter V. THE KING’S MUSKETEERS AND THE CARDINAL’S GUARDS</h2>
 <p>D’Artagnan was acquainted with nobody in Paris. He went therefore to his appointment with Athos without a second, determined to be satisfied with those his adversary should choose. Besides, his intention was formed to make the brave Musketeer all suitable apologies, but without meanness or weakness, fearing that might result from this duel which generally results from an affair of this kind, when a young and vigorous man fights with an adversary who is wounded and weakened—if conquered, he doubles the triumph of his antagonist; if a conqueror, he is accused of foul play and want of courage.</p>
 <p>Now, we must have badly painted the character of our adventure seeker, or our readers must have already perceived that D’Artagnan was not an ordinary man; therefore, while repeating to himself that his death was inevitable, he did not make up his mind to die quietly, as one less courageous and less restrained might have done in his place. He reflected upon the different characters of those with whom he was going to fight, and began to view his situation more clearly. He hoped, by means of loyal excuses, to make a friend of Athos, whose lordly air and austere bearing pleased him much. He flattered himself he should be able to frighten Porthos with the adventure of the baldric, which he might, if not killed upon the spot, relate to everybody a recital which, well managed, would cover Porthos with ridicule. As to the astute Aramis, he did not entertain much dread of him; and supposing he should be able to get so far, he determined to dispatch him in good style or at least, by hitting him in the face, as Cæsar recommended his soldiers do to those of Pompey, to damage forever the beauty of which he was so proud.</p>
 <p>In addition to this, D’Artagnan possessed that invincible stock of resolution which the counsels of his father had implanted in his heart: “Endure nothing from anyone but the king, the cardinal, and Monsieur de Tréville.” He flew, then, rather than walked, toward the convent of the Carmes Déchaussés, or rather Deschaux, as it was called at that period, a sort of building without a window, surrounded by barren fields—an accessory to the Preaux-Clercs, and which was generally employed as the place for the duels of men who had no time to lose.</p>
@@ -502,7 +581,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Bravery is always respected, even in an enemy. The Musketeers saluted Bicarat with their swords, and returned them to their sheaths. D’Artagnan did the same. Then, assisted by Bicarat, the only one left standing, they bore Jussac, Cahusac, and one of Aramis’s adversaries who was only wounded, under the porch of the convent. The fourth, as we have said, was dead. They then rang the bell, and carrying away four swords out of five, they took their road, intoxicated with joy, toward the hôtel of M. de Tréville.</p>
 <p>They walked arm in arm, occupying the whole width of the street and taking in every Musketeer they met, so that in the end it became a triumphal march. The heart of D’Artagnan swam in delirium; he marched between Athos and Porthos, pressing them tenderly.</p>
 <p>“If I am not yet a Musketeer,” said he to his new friends, as he passed through the gateway of M. de Tréville’s hôtel, “at least I have entered upon my apprenticeship, haven’t I?”</p>
-<h2>Chapter VI. HIS MAJESTY KING LOUIS XIII.</h2>
+<h2 class="chapter" id="c6">Chapter VI. HIS MAJESTY KING LOUIS XIII.</h2>
 <p>This affair made a great noise. M. de Tréville scolded his Musketeers in public, and congratulated them in private; but as no time was to be lost in gaining the king, M. de Tréville hastened to report himself at the Louvre. It was already too late. The king was closeted with the cardinal, and M. de Tréville was informed that the king was busy and could not receive him at that moment. In the evening M. de Tréville attended the king’s gaming table. The king was winning; and as he was very avaricious, he was in an excellent humor. Perceiving M. de Tréville at a distance—</p>
 <p>“Come here, Monsieur Captain,” said he, “come here, that I may growl at you. Do you know that his Eminence has been making fresh complaints against your Musketeers, and that with so much emotion, that this evening his Eminence is indisposed? Ah, these Musketeers of yours are very devils—fellows to be hanged.”</p>
 <p>“No, sire,” replied Tréville, who saw at the first glance how things would go, “on the contrary, they are good creatures, as meek as lambs, and have but one desire, I’ll be their warranty. And that is that their swords may never leave their scabbards but in your majesty’s service. But what are they to do? The Guards of Monsieur the Cardinal are forever seeking quarrels with them, and for the honor of the corps even, the poor young men are obliged to defend themselves.”</p>
@@ -638,9 +717,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“What?”</p>
 <p>“It is that your Majesty will make him come here, will interrogate him yourself, tête-à-tête, without witnesses, and that I shall see your Majesty as soon as you have seen the duke.”</p>
 <p>“What, then! You will bind yourself,” cried the king, “by what Monsieur de la Trémouille shall say?”</p>
-<p>“Yes, sire.”</p>
 <p>“You will accept his judgment?”</p>
-<p>“Undoubtedly.”</p>
 <p>“And you will submit to the reparation he may require?”</p>
 <p>“Certainly.”</p>
 <p>“La Chesnaye,” said the king. “La Chesnaye!”</p>
@@ -692,7 +769,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“Well, well, but keep whole; that will be better, and you will be more useful to me. Tréville,” added the king, in a low voice, as the others were retiring, “as you have no room in the Musketeers, and as we have besides decided that a novitiate is necessary before entering that corps, place this young man in the company of the Guards of Monsieur Dessessart, your brother-in-law. Ah, pardieu, Tréville! I enjoy beforehand the face the cardinal will make. He will be furious; but I don’t care. I am doing what is right.”</p>
 <p>The king waved his hand to Tréville, who left him and rejoined the Musketeers, whom he found sharing the forty pistoles with D’Artagnan.</p>
 <p>The cardinal, as his Majesty had said, was really furious, so furious that during eight days he absented himself from the king’s gaming table. This did not prevent the king from being as complacent to him as possible whenever he met him, or from asking in the kindest tone, “Well, Monsieur Cardinal, how fares it with that poor Jussac and that poor Bernajoux of yours?”</p>
-<h2>Chapter VII. THE INTERIOR OF THE MUSKETEERS</h2>
+<h2 class="chapter" id="c7">Chapter VII. THE INTERIOR OF THE MUSKETEERS</h2>
 <p>When D’Artagnan was out of the Louvre, and consulted his friends upon the use he had best make of his share of the forty pistoles, Athos advised him to order a good repast at the Pomme-de-Pin, Porthos to engage a lackey, and Aramis to provide himself with a suitable mistress.</p>
 <p>The repast was carried into effect that very day, and the lackey waited at table. The repast had been ordered by Athos, and the lackey furnished by Porthos. He was a Picard, whom the glorious Musketeer had picked up on the Bridge Tournelle, making rings and plashing in the water.</p>
 <p>Porthos pretended that this occupation was proof of a reflective and contemplative organization, and he had brought him away without any other recommendation. The noble carriage of this gentleman, for whom he believed himself to be engaged, had won Planchet—that was the name of the Picard. He felt a slight disappointment, however, when he saw that this place was already taken by a compeer named Mousqueton, and when Porthos signified to him that the state of his household, though great, would not support two servants, and that he must enter into the service of D’Artagnan. Nevertheless, when he waited at the dinner given by his master, and saw him take out a handful of gold to pay for it, he believed his fortune made, and returned thanks to heaven for having thrown him into the service of such a Crœsus. He preserved this opinion even after the feast, with the remnants of which he repaired his own long abstinence; but when in the evening he made his master’s bed, the chimeras of Planchet faded away. The bed was the only one in the apartment, which consisted of an antechamber and a bedroom. Planchet slept in the antechamber upon a coverlet taken from the bed of D’Artagnan, and which D’Artagnan from that time made shift to do without.</p>
@@ -737,7 +814,7 @@ h2 + p, .first { text-indent: 0; }
 <p>On their side, the three Musketeers were much attached to their young comrade. The friendship which united these four men, and the need they felt of seeing another three or four times a day, whether for dueling, business, or pleasure, caused them to be continually running after one another like shadows; and the Inseparables were constantly to be met with seeking one another, from the Luxembourg to the Place St. Sulpice, or from the Rue du Vieux-Colombier to the Luxembourg.</p>
 <p>In the meanwhile the promises of M. de Tréville went on prosperously. One fine morning the king commanded M. de Chevalier Dessessart to admit D’Artagnan as a cadet in his company of Guards. D’Artagnan, with a sigh, donned his uniform, which he would have exchanged for that of a Musketeer at the expense of ten years of his existence. But M. de Tréville promised this favor after a novitiate of two years—a novitiate which might besides be abridged if an opportunity should present itself for D’Artagnan to render the king any signal service, or to distinguish himself by some brilliant action. Upon this promise D’Artagnan withdrew, and the next day he began service.</p>
 <p>Then it became the turn of Athos, Porthos, and Aramis to mount guard with D’Artagnan when he was on duty. The company of M. le Chevalier Dessessart thus received four instead of one when it admitted D’Artagnan.</p>
-<h2>Chapter VIII. CONCERNING A COURT INTRIGUE</h2>
+<h2 class="chapter" id="c8">Chapter VIII. CONCERNING A COURT INTRIGUE</h2>
 <p>In the meantime, the forty pistoles of King Louis XIII., like all other things of this world, after having had a beginning had an end, and after this end our four companions began to be somewhat embarrassed. At first, Athos supported the association for a time with his own means.</p>
 <p>Porthos succeeded him; and thanks to one of those disappearances to which he was accustomed, he was able to provide for the wants of all for a fortnight. At last it became Aramis’s turn, who performed it with a good grace and who succeeded—as he said, by selling some theological books—in procuring a few pistoles.</p>
 <p>Then, as they had been accustomed to do, they had recourse to M. de Tréville, who made some advances on their pay; but these advances could not go far with three Musketeers who were already much in arrears and a Guardsman who as yet had no pay at all.</p>
@@ -865,7 +942,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Aramis said that as these sorts of affairs were mysterious, it was better not to fathom them.</p>
 <p>They understood, then, from the few words which escaped from D’Artagnan, what affair was in hand, and as they thought that overtaking his man, or losing sight of him, D’Artagnan would return to his rooms, they kept on their way.</p>
 <p>When they entered D’Artagnan’s chamber, it was empty; the landlord, dreading the consequences of the encounter which was doubtless about to take place between the young man and the stranger, had, consistent with the character he had given himself, judged it prudent to decamp.</p>
-<h2>Chapter IX. D’ARTAGNAN SHOWS HIMSELF</h2>
+<h2 class="chapter" id="c9">Chapter IX. D’ARTAGNAN SHOWS HIMSELF</h2>
 <p>As Athos and Porthos had foreseen, at the expiration of a half hour, D’Artagnan returned. He had again missed his man, who had disappeared as if by enchantment. D’Artagnan had run, sword in hand, through all the neighboring streets, but had found nobody resembling the man he sought for. Then he came back to the point where, perhaps, he ought to have begun, and that was to knock at the door against which the stranger had leaned; but this proved useless—for though he knocked ten or twelve times in succession, no one answered, and some of the neighbors, who put their noses out of their windows or were brought to their doors by the noise, had assured him that that house, all the openings of which were tightly closed, had not been inhabited for six months.</p>
 <p>While D’Artagnan was running through the streets and knocking at doors, Aramis had joined his companions; so that on returning home D’Artagnan found the reunion complete.</p>
 <p>“Well!” cried the three Musketeers all together, on seeing D’Artagnan enter with his brow covered with perspiration and his countenance upset with anger.</p>
@@ -985,7 +1062,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Overcome by example, grumbling to himself, nevertheless, Porthos stretched out his hand, and the four friends repeated with one voice the formula dictated by D’Artagnan:</p>
 <p>“All for one, one for all.”</p>
 <p>“That’s well! Now let us everyone retire to his own home,” said D’Artagnan, as if he had done nothing but command all his life; “and attention! For from this moment we are at feud with the cardinal.”</p>
-<h2>Chapter X. A MOUSETRAP IN THE SEVENTEENTH CENTURY</h2>
+<h2 class="chapter" id="c10">Chapter X. A MOUSETRAP IN THE SEVENTEENTH CENTURY</h2>
 <p>The invention of the mousetrap does not date from our days; as soon as societies, in forming, had invented any kind of police, that police invented mousetraps.</p>
 <p>As perhaps our readers are not familiar with the slang of the Rue de Jerusalem, and as it is fifteen years since we applied this word for the first time to this thing, allow us to explain to them what is a mousetrap.</p>
 <p>When in a house, of whatever kind it may be, an individual suspected of any crime is arrested, the arrest is held secret. Four or five men are placed in ambuscade in the first room. The door is opened to all who knock. It is closed after them, and they are arrested; so that at the end of two or three days they have in their power almost all the habitués of the establishment. And that is a mousetrap.</p>
@@ -1113,7 +1190,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“That’s true,” said M. de Tréville; “I believed it later. But what can I do for you?”</p>
 <p>Then D’Artagnan told M. de Tréville a long history about the queen. He expressed to him the fears he entertained with respect to her Majesty; he related to him what he had heard of the projects of the cardinal with regard to Buckingham, and all with a tranquillity and candor of which M. de Tréville was the more the dupe, from having himself, as we have said, observed something fresh between the cardinal, the king, and the queen.</p>
 <p>As ten o’clock was striking, D’Artagnan left M. de Tréville, who thanked him for his information, recommended him to have the service of the king and queen always at heart, and returned to the saloon; but at the foot of the stairs, D’Artagnan remembered he had forgotten his cane. He consequently sprang up again, re-entered the office, with a turn of his finger set the clock right again, that it might not be perceived the next day that it had been put wrong, and certain from that time that he had a witness to prove his alibi, he ran downstairs and soon found himself in the street.</p>
-<h2>Chapter XI. IN WHICH THE PLOT THICKENS</h2>
+<h2 class="chapter" id="c11">Chapter XI. IN WHICH THE PLOT THICKENS</h2>
 <p>His visit to M. de Tréville being paid, the pensive D’Artagnan took the longest way homeward.</p>
 <p>On what was D’Artagnan thinking, that he strayed thus from his path, gazing at the stars of heaven, and sometimes sighing, sometimes smiling?</p>
 <p>He was thinking of Mme. Bonacieux. For an apprentice Musketeer the young woman was almost an ideal of love. Pretty, mysterious, initiated in almost all the secrets of the court, which reflected such a charming gravity over her pleasing features, it might be surmised that she was not wholly unmoved; and this is an irresistible charm to novices in love. Moreover, D’Artagnan had delivered her from the hands of the demons who wished to search and ill treat her; and this important service had established between them one of those sentiments of gratitude which so easily assume a more tender character.</p>
@@ -1335,7 +1412,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Fortunately, he had no opportunity to give the duke this proof of his devotion, and the young woman and the handsome Musketeer entered the Louvre by the wicket of the Echelle without any interference.</p>
 <p>As for D’Artagnan, he immediately repaired to the cabaret of the Pomme-de-Pin, where he found Porthos and Aramis awaiting him. Without giving them any explanation of the alarm and inconvenience he had caused them, he told them that he had terminated the affair alone in which he had for a moment believed he should need their assistance.</p>
 <p>Meanwhile, carried away as we are by our narrative, we must leave our three friends to themselves, and follow the Duke of Buckingham and his guide through the labyrinths of the Louvre.</p>
-<h2>Chapter XII. GEORGE VILLIERS, DUKE OF BUCKINGHAM</h2>
+<h2 class="chapter" id="c12">Chapter XII. GEORGE VILLIERS, DUKE OF BUCKINGHAM</h2>
 <p>Mme. Bonacieux and the duke entered the Louvre without difficulty. Mme. Bonacieux was known to belong to the queen; the duke wore the uniform of the Musketeers of M. de Tréville, who, as we have said, were that evening on guard. Besides, Germain was in the interests of the queen; and if anything should happen, Mme. Bonacieux would be accused of having introduced her lover into the Louvre, that was all. She took the risk upon herself. Her reputation would be lost, it is true; but of what value in the world was the reputation of the little wife of a mercer?</p>
 <p>Once within the interior of the court, the duke and the young woman followed the wall for the space of about twenty-five steps. This space passed, Mme. Bonacieux pushed a little servants’ door, open by day but generally closed at night. The door yielded. Both entered, and found themselves in darkness; but Mme. Bonacieux was acquainted with all the turnings and windings of this part of the Louvre, appropriated for the people of the household. She closed the door after her, took the duke by the hand, and after a few experimental steps, grasped a balustrade, put her foot upon the bottom step, and began to ascend the staircase. The duke counted two stories. She then turned to the right, followed the course of a long corridor, descended a flight, went a few steps farther, introduced a key into a lock, opened a door, and pushed the duke into an apartment lighted only by a lamp, saying, “Remain here, my Lord Duke; someone will come.” She then went out by the same door, which she locked, so that the duke found himself literally a prisoner.</p>
 <p>Nevertheless, isolated as he was, we must say that the Duke of Buckingham did not experience an instant of fear. One of the salient points of his character was the search for adventures and a love of romance. Brave, rash, and enterprising, this was not the first time he had risked his life in such attempts. He had learned that the pretended message from Anne of Austria, upon the faith of which he had come to Paris, was a snare; but instead of regaining England, he had, abusing the position in which he had been placed, declared to the queen that he would not depart without seeing her. The queen had at first positively refused; but at length became afraid that the duke, if exasperated, would commit some folly. She had already decided upon seeing him and urging his immediate departure, when, on the very evening of coming to this decision, Mme. Bonacieux, who was charged with going to fetch the duke and conducting him to the Louvre, was abducted. For two days no one knew what had become of her, and everything remained in suspense; but once free, and placed in communication with Laporte, matters resumed their course, and she accomplished the perilous enterprise which, but for her arrest, would have been executed three days earlier.</p>
@@ -1387,7 +1464,6 @@ h2 + p, .first { text-indent: 0; }
 <p>“Yes.”</p>
 <p>“Oh, then, some pledge of your indulgence, some object which came from you, and may remind me that I have not been dreaming; something you have worn, and that I may wear in my turn—a ring, a necklace, a chain.”</p>
 <p>“Will you depart—will you depart, if I give you that you demand?”</p>
-<p>“Yes.”</p>
 <p>“This very instant?”</p>
 <p>“Yes.”</p>
 <p>“You will leave France, you will return to England?”</p>
@@ -1401,7 +1477,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Anne of Austria stretched forth her hand, closing her eyes, and leaning with the other upon Estafania, for she felt that her strength was about to fail her.</p>
 <p>Buckingham pressed his lips passionately to that beautiful hand, and then rising, said, “Within six months, if I am not dead, I shall have seen you again, madame—even if I have to overturn the world.” And faithful to the promise he had made, he rushed out of the apartment.</p>
 <p>In the corridor he met Mme. Bonacieux, who waited for him, and who, with the same precautions and the same good luck, conducted him out of the Louvre.</p>
-<h2>Chapter XIII. MONSIEUR BONACIEUX</h2>
+<h2 class="chapter" id="c13">Chapter XIII. MONSIEUR BONACIEUX</h2>
 <p>There was in all this, as may have been observed, one personage concerned, of whom, notwithstanding his precarious position, we have appeared to take but very little notice. This personage was M. Bonacieux, the respectable martyr of the political and amorous intrigues which entangled themselves so nicely together at this gallant and chivalric period.</p>
 <p>Fortunately, the reader may remember, or may not remember—fortunately we have promised not to lose sight of him.</p>
 <p>The officers who arrested him conducted him straight to the Bastille, where he passed trembling before a party of soldiers who were loading their muskets. Thence, introduced into a half-subterranean gallery, he became, on the part of those who had brought him, the object of the grossest insults and the harshest treatment. The officers perceived that they had not to deal with a gentleman, and they treated him like a very peasant.</p>
@@ -1513,7 +1589,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Farther on, a still greater terror seized him on passing by the cemetery of St. Jean, where state criminals were buried. One thing, however, reassured him; he remembered that before they were buried their heads were generally cut off, and he felt that his head was still on his shoulders. But when he saw the carriage take the way to La Grêve, when he perceived the pointed roof of the Hôtel de Ville, and the carriage passed under the arcade, he believed it was over with him. He wished to confess to the officer, and upon his refusal, uttered such pitiable cries that the officer told him that if he continued to deafen him thus, he should put a gag in his mouth.</p>
 <p>This measure somewhat reassured Bonacieux. If they meant to execute him at La Grêve, it could scarcely be worth while to gag him, as they had nearly reached the place of execution. Indeed, the carriage crossed the fatal spot without stopping. There remained, then, no other place to fear but the Traitor’s Cross; the carriage was taking the direct road to it.</p>
 <p>This time there was no longer any doubt; it was at the Traitor’s Cross that lesser criminals were executed. Bonacieux had flattered himself in believing himself worthy of St. Paul or of the Place de Grêve; it was at the Traitor’s Cross that his journey and his destiny were about to end! He could not yet see that dreadful cross, but he felt somehow as if it were coming to meet him. When he was within twenty paces of it, he heard a noise of people and the carriage stopped. This was more than poor Bonacieux could endure, depressed as he was by the successive emotions which he had experienced; he uttered a feeble groan which might have been taken for the last sigh of a dying man, and fainted.</p>
-<h2>Chapter XIV. THE MAN OF MEUNG</h2>
+<h2 class="chapter" id="c14">Chapter XIV. THE MAN OF MEUNG</h2>
 <p>The crowd was caused, not by the expectation of a man to be hanged, but by the contemplation of a man who was hanged.</p>
 <p>The carriage, which had been stopped for a minute, resumed its way, passed through the crowd, threaded the Rue St. Honoré, turned into the Rue des Bons Enfants, and stopped before a low door.</p>
 <p>The door opened; two guards received Bonacieux in their arms from the officer who supported him. They carried him through an alley, up a flight of stairs, and deposited him in an antechamber.</p>
@@ -1699,7 +1775,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Here is what the letter contained:</p>
 <p>MILADY, Be at the first ball at which the Duke of Buckingham shall be present. He will wear on his doublet twelve diamond studs; get as near to him as you can, and cut off two.</p>
 <p>As soon as these studs shall be in your possession, inform me.</p>
-<h2>Chapter XV. MEN OF THE ROBE AND MEN OF THE SWORD</h2>
+<h2 class="chapter" id="c15">Chapter XV. MEN OF THE ROBE AND MEN OF THE SWORD</h2>
 <p>On the day after these events had taken place, Athos not having reappeared, M. de Tréville was informed by D’Artagnan and Porthos of the circumstance. As to Aramis, he had asked for leave of absence for five days, and was gone, it was said, to Rouen on family business.</p>
 <p>M. de Tréville was the father of his soldiers. The lowest or the least known of them, as soon as he assumed the uniform of the company, was as sure of his aid and support as if he had been his own brother.</p>
 <p>He repaired, then, instantly to the office of the lieutenant-criminel. The officer who commanded the post of the Red Cross was sent for, and by successive inquiries they learned that Athos was then lodged in Fort l’Evêque.</p>
@@ -1786,7 +1862,7 @@ h2 + p, .first { text-indent: 0; }
 <p>M. de Tréville made his entrance triumphantly into the Fort l’Evêque, whence he delivered the Musketeer, whose peaceful indifference had not for a moment abandoned him.</p>
 <p>The first time he saw D’Artagnan, “You have come off well,” said he to him; “there is your Jussac thrust paid for. There still remains that of Bernajoux, but you must not be too confident.”</p>
 <p>As to the rest, M. de Tréville had good reason to mistrust the cardinal and to think that all was not over, for scarcely had the captain of the Musketeers closed the door after him, than his Eminence said to the king, “Now that we are at length by ourselves, we will, if your Majesty pleases, converse seriously. Sire, Buckingham has been in Paris five days, and only left this morning.”</p>
-<p>Chapter XVI. IN WHICH M. SÉGUIER, KEEPER OF THE SEALS, LOOKS MORE THAN ONCE FOR THE BELL</p>
+<h2 class="chapter" id="c16">Chapter XVI. IN WHICH M. SÉGUIER, KEEPER OF THE SEALS, LOOKS MORE THAN ONCE FOR THE BELL</h2>
 <p>It is impossible to form an idea of the impression these few words made upon Louis XIII. He grew pale and red alternately; and the cardinal saw at once that he had recovered by a single blow all the ground he had lost.</p>
 <p>“Buckingham in Paris!” cried he, “and why does he come?”</p>
 <p>“To conspire, no doubt, with your enemies, the Huguenots and the Spaniards.”</p>
@@ -1921,7 +1997,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“Well, Monsieur Duke,” said the king, “have you made your calculations?”</p>
 <p>“Yes, sire. Today is the twentieth of September. The aldermen of the city give a fête on the third of October. That will fall in wonderfully well; you will not appear to have gone out of your way to please the queen.”</p>
 <p>Then the cardinal added, “A propos, sire, do not forget to tell her Majesty the evening before the fête that you should like to see how her diamond studs become her.”</p>
-<h2>Chapter XVII. BONACIEUX AT HOME</h2>
+<h2 class="chapter" id="c17">Chapter XVII. BONACIEUX AT HOME</h2>
 <p>It was the second time the cardinal had mentioned these diamond studs to the king. Louis XIII. was struck with this insistence, and began to fancy that this recommendation concealed some mystery.</p>
 <p>More than once the king had been humiliated by the cardinal, whose police, without having yet attained the perfection of the modern police, were excellent, being better informed than himself, even upon what was going on in his own household. He hoped, then, in a conversation with Anne of Austria, to obtain some information from that conversation, and afterward to come upon his Eminence with some secret which the cardinal either knew or did not know, but which, in either case, would raise him infinitely in the eyes of his minister.</p>
 <p>He went then to the queen, and according to custom accosted her with fresh menaces against those who surrounded her. Anne of Austria lowered her head, allowed the torrent to flow on without replying, hoping that it would cease of itself; but this was not what Louis XIII. meant. Louis XIII. wanted a discussion from which some light or other might break, convinced as he was that the cardinal had some afterthought and was preparing for him one of those terrible surprises which his Eminence was so skillful in getting up. He arrived at this end by his persistence in accusation.</p>
@@ -2100,7 +2176,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Bonacieux kissed his wife’s hand, and set off at a quick pace.</p>
 <p>“Well,” said Mme. Bonacieux, when her husband had shut the street door and she found herself alone; “that imbecile lacked but one thing: to become a cardinalist. And I, who have answered for him to the queen—I, who have promised my poor mistress—ah, my God, my God! She will take me for one of those wretches with whom the palace swarms and who are placed about her as spies! Ah, Monsieur Bonacieux, I never did love you much, but now it is worse than ever. I hate you, and on my word you shall pay for this!”</p>
 <p>At the moment she spoke these words a rap on the ceiling made her raise her head, and a voice which reached her through the ceiling cried, “Dear Madame Bonacieux, open for me the little door on the alley, and I will come down to you.”</p>
-<h2>Chapter XVIII. LOVER AND HUSBAND</h2>
+<h2 class="chapter" id="c18">Chapter XVIII. LOVER AND HUSBAND</h2>
 <p>Ah, Madame,” said D’Artagnan, entering by the door which the young woman opened for him, “allow me to tell you that you have a bad sort of a husband.”</p>
 <p>“You have, then, overheard our conversation?” asked Mme. Bonacieux, eagerly, and looking at D’Artagnan with disquiet.</p>
 <p>“The whole.”</p>
@@ -2241,7 +2317,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“To her and to you!” cried D’Artagnan. “Be satisfied, beautiful Constance. I shall become worthy of her gratitude; but shall I likewise return worthy of your love?”</p>
 <p>The young woman only replied by the beautiful glow which mounted to her cheeks. A few seconds afterward D’Artagnan also went out enveloped in a large cloak, which ill-concealed the sheath of a long sword.</p>
 <p>Mme. Bonacieux followed him with her eyes, with that long, fond look with which he had turned the angle of the street, she fell on her knees, and clasping her hands, “Oh, my God,” cried she, “protect the queen, protect me!”</p>
-<h2>Chapter XIX. PLAN OF CAMPAIGN</h2>
+<h2 class="chapter" id="c19">Chapter XIX. PLAN OF CAMPAIGN</h2>
 <p>D’Artagnan went straight to M. de Tréville’s. He had reflected that in a few minutes the cardinal would be warned by this cursed stranger, who appeared to be his agent, and he judged, with reason, he had not a moment to lose.</p>
 <p>The heart of the young man overflowed with joy. An opportunity presented itself to him in which there would be at the same time glory to be acquired, and money to be gained; and as a far higher encouragement, it brought him into close intimacy with a woman he adored. This chance did, then, for him at once more than he would have dared to ask of Providence.</p>
 <p>M. de Tréville was in his saloon with his habitual court of gentlemen. D’Artagnan, who was known as a familiar of the house, went straight to his office, and sent word that he wished to see him on something of importance.</p>
@@ -2386,7 +2462,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“Well,” said D’Artagnan, “I decide that we should adopt Athos’s plan, and that we set off in half an hour.”</p>
 <p>“Agreed!” shouted the three Musketeers in chorus.</p>
 <p>Each one, stretching out his hand to the bag, took his seventy-five pistoles, and made his preparations to set out at the time appointed.</p>
-<h2>Chapter XX. THE JOURNEY</h2>
+<h2 class="chapter" id="c20">Chapter XX. THE JOURNEY</h2>
 <p>At two o’clock in the morning, our four adventurers left Paris by the Barrière St. Denis. As long as it was dark they remained silent; in spite of themselves they submitted to the influence of the obscurity, and apprehended ambushes on every side.</p>
 <p>With the first rays of day their tongues were loosened; with the sun gaiety revived. It was like the eve of a battle; the heart beat, the eyes laughed, and they felt that the life they were perhaps going to lose, was, after all, a good thing.</p>
 <p>Besides, the appearance of the caravan was formidable. The black horses of the Musketeers, their martial carriage, with the regimental step of these noble companions of the soldier, would have betrayed the most strict incognito. The lackeys followed, armed to the teeth.</p>
@@ -2543,7 +2619,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“You are wounded?” asked Buckingham, as he opened the letter.</p>
 <p>“Oh, nothing but a scratch,” said D’Artagnan.</p>
 <p>“Just heaven, what have I read?” cried the duke. “Patrick, remain here, or rather join the king, wherever he may be, and tell his Majesty that I humbly beg him to excuse me, but an affair of the greatest importance recalls me to London. Come, monsieur, come!” and both set off towards the capital at full gallop.</p>
-<h2>Chapter XXI. THE COUNTESS DE WINTER</h2>
+<h2 class="chapter" id="c21">Chapter XXI. THE COUNTESS DE WINTER</h2>
 <p>As they rode along, the duke endeavored to draw from D’Artagnan, not all that had happened, but what D’Artagnan himself knew. By adding all that he heard from the mouth of the young man to his own remembrances, he was enabled to form a pretty exact idea of a position of the seriousness of which, for the rest, the queen’s letter, short but explicit, gave him the clue. But that which astonished him most was that the cardinal, so deeply interested in preventing this young man from setting his foot in England, had not succeeded in arresting him on the road. It was then, upon the manifestation of this astonishment, that D’Artagnan related to him the precaution taken, and how, thanks to the devotion of his three friends, whom he had left scattered and bleeding on the road, he had succeeded in coming off with a single sword thrust, which had pierced the queen’s letter and for which he had repaid M. de Wardes with such terrible coin. While he was listening to this recital, delivered with the greatest simplicity, the duke looked from time to time at the young man with astonishment, as if he could not comprehend how so much prudence, courage, and devotedness could be allied with a countenance which indicated not more than twenty years.</p>
 <p>The horses went like the wind, and in a few minutes they were at the gates of London. D’Artagnan imagined that on arriving in town the duke would slacken his pace, but it was not so. He kept on his way at the same rate, heedless about upsetting those whom he met on the road. In fact, in crossing the city two or three accidents of this kind happened; but Buckingham did not even turn his head to see what became of those he had knocked down. D’Artagnan followed him amid cries which strongly resembled curses.</p>
 <p>On entering the court of his hôtel, Buckingham sprang from his horse, and without thinking what became of the animal, threw the bridle on his neck, and sprang toward the vestibule. D’Artagnan did the same, with a little more concern, however, for the noble creatures, whose merits he fully appreciated; but he had the satisfaction of seeing three or four grooms run from the kitchens and the stables, and busy themselves with the steeds.</p>
@@ -2645,7 +2721,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“A good journey, gentlemen! Do you want anything?”</p>
 <p>D’Artagnan shook his head, and set off at full speed. At Eccuis, the same scene was repeated. He found as provident a host and a fresh horse. He left his address as he had done before, and set off again at the same pace for Pontoise. At Pontoise he changed his horse for the last time, and at nine o’clock galloped into the yard of Tréville’s hôtel. He had made nearly sixty leagues in little more than twelve hours.</p>
 <p>M. de Tréville received him as if he had seen him that same morning; only, when pressing his hand a little more warmly than usual, he informed him that the company of Dessessart was on duty at the Louvre, and that he might repair at once to his post.</p>
-<h2>Chapter XXII. THE BALLET OF LA MERLAISON</h2>
+<h2 class="chapter" id="c22">Chapter XXII. THE BALLET OF LA MERLAISON</h2>
 <p>On the morrow, nothing was talked of in Paris but the ball which the aldermen of the city were to give to the king and queen, and in which their Majesties were to dance the famous La Merlaison—the favorite ballet of the king.</p>
 <p>Eight days had been occupied in preparations at the Hôtel de Ville for this important evening. The city carpenters had erected scaffolds upon which the invited ladies were to be placed; the city grocer had ornamented the chambers with two hundred flambeaux of white wax, a piece of luxury unheard of at that period; and twenty violins were ordered, and the price for them fixed at double the usual rate, upon condition, said the report, that they should be played all night.</p>
 <p>At ten o’clock in the morning the Sieur de la Coste, ensign in the king’s Guards, followed by two officers and several archers of that body, came to the city registrar, named Clement, and demanded of him all the keys of the rooms and offices of the hôtel. These keys were given up to him instantly. Each of them had a ticket attached to it, by which it might be recognized; and from that moment the Sieur de la Coste was charged with the care of all the doors and all the avenues.</p>
@@ -2703,7 +2779,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“But where and when shall I see you again?” cried D’Artagnan.</p>
 <p>“A note which you will find at home will tell you. Begone, begone!”</p>
 <p>At these words she opened the door of the corridor, and pushed D’Artagnan out of the room. D’Artagnan obeyed like a child, without the least resistance or objection, which proved that he was really in love.</p>
-<h2>Chapter XXIII. THE RENDEZVOUS</h2>
+<h2 class="chapter" id="c23">Chapter XXIII. THE RENDEZVOUS</h2>
 <p>D’Artagnan ran home immediately, and although it was three o’clock in the morning and he had some of the worst quarters of Paris to traverse, he met with no misadventure. Everyone knows that drunkards and lovers have a protecting deity.</p>
 <p>He found the door of his passage open, sprang up the stairs and knocked softly in a manner agreed upon between him and his lackey. Planchet*, whom he had sent home two hours before from the Hôtel de Ville, telling him to sit up for him, opened the door for him.</p>
 <p>* The reader may ask, “How came Planchet here?” when he was left “stiff as a rush” in London. In the intervening time Buckingham perhaps sent him to Paris, as he did the horses.</p>
@@ -2865,7 +2941,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“Undeniably, my friend. At nine o’clock, then, be ready here at the hôtel, I will come and take you.”</p>
 <p>Planchet seeing there was no longer any hope of making his master renounce his project, heaved a profound sigh and set to work to groom the third horse.</p>
 <p>As to D’Artagnan, being at bottom a prudent youth, instead of returning home, went and dined with the Gascon priest, who, at the time of the distress of the four friends, had given them a breakfast of chocolate.</p>
-<h2>Chapter XXIV. THE PAVILION</h2>
+<h2 class="chapter" id="c24">Chapter XXIV. THE PAVILION</h2>
 <p>At nine o’clock D’Artagnan was at the Hôtel des Gardes; he found Planchet all ready. The fourth horse had arrived.</p>
 <p>Planchet was armed with his musketoon and a pistol. D’Artagnan had his sword and placed two pistols in his belt; then both mounted and departed quietly. It was quite dark, and no one saw them go out. Planchet took place behind his master, and kept at a distance of ten paces from him.</p>
 <p>D’Artagnan crossed the quays, went out by the gate of La Conférence and followed the road, much more beautiful then than it is now, which leads to St. Cloud.</p>
@@ -2954,7 +3030,7 @@ h2 + p, .first { text-indent: 0; }
 <p>At the sixth he began to reflect that the search was rather dubious. D’Artagnan had appointed six o’clock in the morning for his lackey, and wherever he might be, he was right.</p>
 <p>Besides, it came into the young man’s mind that by remaining in the environs of the spot on which this sad event had passed, he would, perhaps, have some light thrown upon the mysterious affair. At the sixth cabaret, then, as we said, D’Artagnan stopped, asked for a bottle of wine of the best quality, and placing himself in the darkest corner of the room, determined thus to wait till daylight; but this time again his hopes were disappointed, and although he listened with all his ears, he heard nothing, amid the oaths, coarse jokes, and abuse which passed between the laborers, servants, and carters who comprised the honorable society of which he formed a part, which could put him upon the least track of her who had been stolen from him. He was compelled, then, after having swallowed the contents of his bottle, to pass the time as well as to evade suspicion, to fall into the easiest position in his corner and to sleep, whether well or ill. D’Artagnan, be it remembered, was only twenty years old, and at that age sleep has its imprescriptible rights which it imperiously insists upon, even with the saddest hearts.</p>
 <p>Toward six o’clock D’Artagnan awoke with that uncomfortable feeling which generally accompanies the break of day after a bad night. He was not long in making his toilet. He examined himself to see if advantage had been taken of his sleep, and having found his diamond ring on his finger, his purse in his pocket, and his pistols in his belt, he rose, paid for his bottle, and went out to try if he could have any better luck in his search after his lackey than he had had the night before. The first thing he perceived through the damp gray mist was honest Planchet, who, with the two horses in hand, awaited him at the door of a little blind cabaret, before which D’Artagnan had passed without even a suspicion of its existence.</p>
-<h2>Chapter XXV. PORTHOS</h2>
+<h2 class="chapter" id="c25">Chapter XXV. PORTHOS</h2>
 <p>Instead of returning directly home, D’Artagnan alighted at the door of M. de Tréville, and ran quickly up the stairs. This time he had decided to relate all that had passed. M. de Tréville would doubtless give him good advice as to the whole affair. Besides, as M. de Tréville saw the queen almost daily, he might be able to draw from her Majesty some intelligence of the poor young woman, whom they were doubtless making pay very dearly for her devotedness to her mistress.</p>
 <p>M. de Tréville listened to the young man’s account with a seriousness which proved that he saw something else in this adventure besides a love affair. When D’Artagnan had finished, he said, “Hum! All this savors of his Eminence, a league off.”</p>
 <p>“But what is to be done?” said D’Artagnan.</p>
@@ -3191,7 +3267,7 @@ h2 + p, .first { text-indent: 0; }
 <p>As D’Artagnan was tolerably reassured with regard to Porthos, and as he was anxious to obtain news of his two other friends, he held out his hand to the wounded man, and told him he was about to resume his route in order to continue his researches. For the rest, as he reckoned upon returning by the same route in seven or eight days, if Porthos were still at the Great St. Martin, he would call for him on his way.</p>
 <p>Porthos replied that in all probability his sprain would not permit him to depart yet awhile. Besides, it was necessary he should stay at Chantilly to wait for the answer from his duchess.</p>
 <p>D’Artagnan wished that answer might be prompt and favorable; and having again recommended Porthos to the care of Mousqueton, and paid his bill to the host, he resumed his route with Planchet, already relieved of one of his led horses.</p>
-<h2>Chapter XXVI. ARAMIS AND HIS THESIS</h2>
+<h2 class="chapter" id="c26">Chapter XXVI. ARAMIS AND HIS THESIS</h2>
 <p>D’Artagnan had said nothing to Porthos of his wound or of his procurator’s wife. Our Béarnais was a prudent lad, however young he might be. Consequently he had appeared to believe all that the vainglorious Musketeer had told him, convinced that no friendship will hold out against a surprised secret. Besides, we feel always a sort of mental superiority over those whose lives we know better than they suppose. In his projects of intrigue for the future, and determined as he was to make his three friends the instruments of his fortune, D’Artagnan was not sorry at getting into his grasp beforehand the invisible strings by which he reckoned upon moving them.</p>
 <p>And yet, as he journeyed along, a profound sadness weighed upon his heart. He thought of that young and pretty Mme. Bonacieux who was to have paid him the price of his devotedness; but let us hasten to say that this sadness possessed the young man less from the regret of the happiness he had missed, than from the fear he entertained that some serious misfortune had befallen the poor woman. For himself, he had no doubt she was a victim of the cardinal’s vengeance; and, as was well known, the vengeance of his Eminence was terrible. How he had found grace in the eyes of the minister, he did not know; but without doubt M. de Cavois would have revealed this to him if the captain of the Guards had found him at home.</p>
 <p>Nothing makes time pass more quickly or more shortens a journey than a thought which absorbs in itself all the faculties of the organization of him who thinks. External existence then resembles a sleep of which this thought is the dream. By its influence, time has no longer measure, space has no longer distance. We depart from one place, and arrive at another, that is all. Of the interval passed, nothing remains in the memory but a vague mist in which a thousand confused images of trees, mountains, and landscapes are lost. It was as a prey to this hallucination that D’Artagnan traveled, at whatever pace his horse pleased, the six or eight leagues that separated Chantilly from Crèvecœur, without his being able to remember on his arrival in the village any of the things he had passed or met with on the road.</p>
@@ -3374,7 +3450,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Bazin, who looked at his master, without comprehending the cause of this change, in a melancholy manner, allowed the omelet to slip into the spinach, and the spinach onto the floor.</p>
 <p>“Now this is the moment to consecrate your existence to the King of kings,” said D’Artagnan, “if you persist in offering him a civility. Non inutile desiderium oblatione.”</p>
 <p>“Go to the devil with your Latin. Let us drink, my dear D’Artagnan, morbleu! Let us drink while the wine is fresh! Let us drink heartily, and while we do so, tell me a little of what is going on in the world yonder.”</p>
-<h2>Chapter XXVII. THE WIFE OF ATHOS</h2>
+<h2 class="chapter" id="c27">Chapter XXVII. THE WIFE OF ATHOS</h2>
 <p>We have now to search for Athos,” said D’Artagnan to the vivacious Aramis, when he had informed him of all that had passed since their departure from the capital, and an excellent dinner had made one of them forget his thesis and the other his fatigue.</p>
 <p>“Do you think, then, that any harm can have happened to him?” asked Aramis. “Athos is so cool, so brave, and handles his sword so skillfully.”</p>
 <p>“No doubt. Nobody has a higher opinion of the courage and skill of Athos than I have; but I like better to hear my sword clang against lances than against staves. I fear lest Athos should have been beaten down by serving men. Those fellows strike hard, and don’t leave off in a hurry. This is why I wish to set out again as soon as possible.”</p>
@@ -3622,7 +3698,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“What a pity it is there were only four like this in the cellar. I could have drunk fifty bottles more.”</p>
 <p>D’Artagnan could no longer endure this conversation, which had made him bewildered. Allowing his head to sink upon his two hands, he pretended to sleep.</p>
 <p>“These young fellows can none of them drink,” said Athos, looking at him with pity, “and yet this is one of the best!”</p>
-<h2>Chapter XXVIII. THE RETURN</h2>
+<h2 class="chapter" id="c28">Chapter XXVIII. THE RETURN</h2>
 <p>D’Artagnan was astounded by the terrible confidence of Athos; yet many things appeared very obscure to him in this half revelation. In the first place it had been made by a man quite drunk to one who was half drunk; and yet, in spite of the incertainty which the vapor of three or four bottles of Burgundy carries with it to the brain, D’Artagnan, when awaking on the following morning, had all the words of Athos as present to his memory as if they then fell from his mouth—they had been so impressed upon his mind. All this doubt only gave rise to a more lively desire of arriving at a certainty, and he went into his friend’s chamber with a fixed determination of renewing the conversation of the preceding evening; but he found Athos quite himself again—that is to say, the most shrewd and impenetrable of men. Besides which, the Musketeer, after having exchanged a hearty shake of the hand with him, broached the matter first.</p>
 <p>“I was pretty drunk yesterday, D’Artagnan,” said he, “I can tell that by my tongue, which was swollen and hot this morning, and by my pulse, which was very tremulous. I wager that I uttered a thousand extravagances.”</p>
 <p>While saying this he looked at his friend with an earnestness that embarrassed him.</p>
@@ -3841,7 +3917,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“Well, that’s something, for I have not the shadow of one,” said Athos coolly; “but as to D’Artagnan, gentlemen, the idea of belonging to ours has driven him out of his senses. A thousand livres! For my part, I declare I want two thousand.”</p>
 <p>“Four times two makes eight,” then said Aramis; “it is eight thousand that we want to complete our outfits, toward which, it is true, we have already the saddles.”</p>
 <p>“Besides,” said Athos, waiting till D’Artagnan, who went to thank Monsieur de Tréville, had shut the door, “besides, there is that beautiful ring which beams from the finger of our friend. What the devil! D’Artagnan is too good a comrade to leave his brothers in embarrassment while he wears the ransom of a king on his finger.”</p>
-<h2>Chapter XXIX. HUNTING FOR THE EQUIPMENTS</h2>
+<h2 class="chapter" id="c29">Chapter XXIX. HUNTING FOR THE EQUIPMENTS</h2>
 <p>The most preoccupied of the four friends was certainly D’Artagnan, although he, in his quality of Guardsman, would be much more easily equipped than Messieurs the Musketeers, who were all of high rank; but our Gascon cadet was, as may have been observed, of a provident and almost avaricious character, and with that (explain the contradiction) so vain as almost to rival Porthos. To this preoccupation of his vanity, D’Artagnan at this moment joined an uneasiness much less selfish. Notwithstanding all his inquiries respecting Mme. Bonacieux, he could obtain no intelligence of her. M. de Tréville had spoken of her to the queen. The queen was ignorant where the mercer’s young wife was, but had promised to have her sought for; but this promise was very vague and did not at all reassure D’Artagnan.</p>
 <p>Athos did not leave his chamber; he made up his mind not to take a single step to equip himself.</p>
 <p>“We have still fifteen days before us,” said he to his friends, “well, if at the end of a fortnight I have found nothing, or rather if nothing has come to find me, as I, too good a Catholic to kill myself with a pistol bullet, I will seek a good quarrel with four of his Eminence’s Guards or with eight Englishmen, and I will fight until one of them has killed me, which, considering the number, cannot fail to happen. It will then be said of me that I died for the king; so that I shall have performed my duty without the expense of an outfit.”</p>
@@ -3942,7 +4018,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“Till we meet again, my forgetful charmer!”</p>
 <p>“Tomorrow, my angel!”</p>
 <p>“Tomorrow, flame of my life!”</p>
-<h2>Chapter XXX. D’ARTAGNAN AND THE ENGLISHMAN</h2>
+<h2 class="chapter" id="c30">Chapter XXX. D’ARTAGNAN AND THE ENGLISHMAN</h2>
 <p>D’Artagnan followed Milady without being perceived by her. He saw her get into her carriage, and heard her order the coachman to drive to St. Germain.</p>
 <p>It was useless to try to keep pace on foot with a carriage drawn by two powerful horses. D’Artagnan therefore returned to the Rue Férou.</p>
 <p>In the Rue de Seine he met Planchet, who had stopped before the house of a pastry cook, and was contemplating with ecstasy a cake of the most appetizing appearance.</p>
@@ -4034,7 +4110,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Aramis, who was constantly at work at his poem, shut himself up in Athos’s closet, and begged not to be disturbed before the moment of drawing swords.</p>
 <p>Athos, by signs, desired Grimaud to bring another bottle of wine.</p>
 <p>D’Artagnan employed himself in arranging a little plan, of which we shall hereafter see the execution, and which promised him some agreeable adventure, as might be seen by the smiles which from time to time passed over his countenance, whose thoughtfulness they animated.</p>
-<h2>Chapter XXXI. ENGLISH AND FRENCH</h2>
+<h2 class="chapter" id="c31">Chapter XXXI. ENGLISH AND FRENCH</h2>
 <p>The hour having come, they went with their four lackeys to a spot behind the Luxembourg given up to the feeding of goats. Athos threw a piece of money to the goatkeeper to withdraw. The lackeys were ordered to act as sentinels.</p>
 <p>A silent party soon drew near to the same enclosure, entered, and joined the Musketeers. Then, according to foreign custom, the presentations took place.</p>
 <p>The Englishmen were all men of rank; consequently the odd names of their adversaries were for them not only a matter of surprise, but of annoyance.</p>
@@ -4123,7 +4199,7 @@ h2 + p, .first { text-indent: 0; }
 <p>At the same hour as on the preceding evening, D’Artagnan retired. In the corridor he again met the pretty Kitty; that was the name of the soubrette. She looked at him with an expression of kindness which it was impossible to mistake; but D’Artagnan was so preoccupied by the mistress that he noticed absolutely nothing but her.</p>
 <p>D’Artagnan came again on the morrow and the day after that, and each day Milady gave him a more gracious reception.</p>
 <p>Every evening, either in the antechamber, the corridor, or on the stairs, he met the pretty soubrette. But, as we have said, D’Artagnan paid no attention to this persistence of poor Kitty.</p>
-<h2>Chapter XXXII. A PROCURATOR’S DINNER</h2>
+<h2 class="chapter" id="c32">Chapter XXXII. A PROCURATOR’S DINNER</h2>
 <p>However brilliant had been the part played by Porthos in the duel, it had not made him forget the dinner of the procurator’s wife.</p>
 <p>On the morrow he received the last touches of Mousqueton’s brush for an hour, and took his way toward the Rue aux Ours with the steps of a man who was doubly in favor with fortune.</p>
 <p>His heart beat, but not like D’Artagnan’s with a young and impatient love. No; a more material interest stirred his blood. He was about at last to pass that mysterious threshold, to climb those unknown stairs by which, one by one, the old crowns of M. Coquenard had ascended. He was about to see in reality a certain coffer of which he had twenty times beheld the image in his dreams—a coffer long and deep, locked, bolted, fastened in the wall; a coffer of which he had so often heard, and which the hands—a little wrinkled, it is true, but still not without elegance—of the procurator’s wife were about to open to his admiring looks.</p>
@@ -4225,7 +4301,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Finally, the rest of the equipment was successively debated in the same manner; and the result of the sitting was that the procurator’s wife should give eight hundred livres in money, and should furnish the horse and the mule which should have the honor of carrying Porthos and Mousqueton to glory.</p>
 <p>These conditions being agreed to, Porthos took leave of Mme. Coquenard. The latter wished to detain him by darting certain tender glances; but Porthos urged the commands of duty, and the procurator’s wife was obliged to give place to the king.</p>
 <p>The Musketeer returned home hungry and in bad humor.</p>
-<h2>Chapter XXXIII. SOUBRETTE AND MISTRESS</h2>
+<h2 class="chapter" id="c33">Chapter XXXIII. SOUBRETTE AND MISTRESS</h2>
 <p>Meantime, as we have said, despite the cries of his conscience and the wise counsels of Athos, D’Artagnan became hourly more in love with Milady. Thus he never failed to pay his diurnal court to her; and the self-satisfied Gascon was convinced that sooner or later she could not fail to respond.</p>
 <p>One day, when he arrived with his head in the air, and as light at heart as a man who awaits a shower of gold, he found the soubrette under the gateway of the hôtel; but this time the pretty Kitty was not contented with touching him as he passed, she took him gently by the hand.</p>
 <p>“Good!” thought D’Artagnan, “She is charged with some message for me from her mistress; she is about to appoint some rendezvous of which she had not courage to speak.” And he looked down at the pretty girl with the most triumphant air imaginable.</p>
@@ -4357,7 +4433,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“By the scorn I will throw upon her.”</p>
 <p>D’Artagnan took a pen and wrote:</p>
 <p>MADAME, Until the present moment I could not believe that it was to me your first two letters were addressed, so unworthy did I feel myself of such an honor; besides, I was so seriously indisposed that I could not in any case have replied to them. But now I am forced to believe in the excess of your kindness, since not only your letter but your servant assures me that I have the good fortune to be beloved by you. She has no occasion to teach me the way in which a man of spirit may obtain his pardon. I will come and ask mine at eleven o’clock this evening. To delay it a single day would be in my eyes now to commit a fresh offense. From him whom you have rendered the happiest of men,</p>
-<h2>COMTE DE WARDES</h2>
+<h3 class="sub">Comte de Wardes</h3>
 <p>This note was in the first place a forgery; it was likewise an indelicacy. It was even, according to our present manners, something like an infamous action; but at that period people did not manage affairs as they do today. Besides, D’Artagnan from her own admission knew Milady culpable of treachery in matters more important, and could entertain no respect for her. And yet, notwithstanding this want of respect, he felt an uncontrollable passion for this woman boiling in his veins—passion drunk with contempt; but passion or thirst, as the reader pleases.</p>
 <p>D’Artagnan’s plan was very simple. By Kitty’s chamber he could gain that of her mistress. He would take advantage of the first moment of surprise, shame, and terror, to triumph over her. He might fail, but something must be left to chance. In eight days the campaign would open, and he would be compelled to leave Paris; D’Artagnan had no time for a prolonged love siege.</p>
 <p>“There,” said the young man, handing Kitty the letter sealed; “give that to Milady. It is the count’s reply.”</p>
@@ -4369,7 +4445,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“Milady will tell you.”</p>
 <p>“Ah, you do not love me!” cried Kitty, “and I am very wretched.”</p>
 <p>To this reproach there is always one response which deludes women. D’Artagnan replied in such a manner that Kitty remained in her great delusion. Although she cried freely before deciding to transmit the letter to her mistress, she did at last so decide, which was all D’Artagnan wished. Finally he promised that he would leave her mistress’s presence at an early hour that evening, and that when he left the mistress he would ascend with the maid. This promise completed poor Kitty’s consolation.</p>
-<h2>Chapter XXXIV. IN WHICH THE EQUIPMENT OF ARAMIS AND PORTHOS IS TREATED OF</h2>
+<h2 class="chapter" id="c34">Chapter XXXIV. IN WHICH THE EQUIPMENT OF ARAMIS AND PORTHOS IS TREATED OF</h2>
 <p>Since the four friends had been each in search of his equipments, there had been no fixed meeting between them. They dined apart from one another, wherever they might happen to be, or rather where they could. Duty likewise on its part took a portion of that precious time which was gliding away so rapidly—only they had agreed to meet once a week, about one o’clock, at the residence of Athos, seeing that he, in agreement with the vow he had formed, did not pass over the threshold of his door.</p>
 <p>This day of reunion was the same day as that on which Kitty came to find D’Artagnan. Soon as Kitty left him, D’Artagnan directed his steps toward the Rue Férou.</p>
 <p>He found Athos and Aramis philosophizing. Aramis had some slight inclination to resume the cassock. Athos, according to his system, neither encouraged nor dissuaded him. Athos believed that everyone should be left to his own free will. He never gave advice but when it was asked, and even then he required to be asked twice.</p>
@@ -4476,7 +4552,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“You pardon me?”</p>
 <p>“We shall see,” said Porthos, majestically; and the two separated saying, “Till this evening.”</p>
 <p>“The devil!” thought Porthos, as he walked away, “it appears I am getting nearer to Monsieur Coquenard’s strongbox at last.”</p>
-<h2>Chapter XXXV. A GASCON A MATCH FOR CUPID</h2>
+<h2 class="chapter" id="c35">Chapter XXXV. A GASCON A MATCH FOR CUPID</h2>
 <p>The evening so impatiently waited for by Porthos and by D’Artagnan at last arrived.</p>
 <p>As was his custom, D’Artagnan presented himself at Milady’s at about nine o’clock. He found her in a charming humor. Never had he been so well received. Our Gascon knew, by the first glance of his eye, that his billet had been delivered, and that this billet had had its effect.</p>
 <p>Kitty entered to bring some sherbet. Her mistress put on a charming face, and smiled on her graciously; but alas! the poor girl was so sad that she did not even notice Milady’s condescension.</p>
@@ -4540,7 +4616,7 @@ h2 + p, .first { text-indent: 0; }
 <p>On reaching home D’Artagnan found Kitty waiting for him. A month of fever could not have changed her more than this one night of sleeplessness and sorrow.</p>
 <p>She was sent by her mistress to the false De Wardes. Her mistress was mad with love, intoxicated with joy. She wished to know when her lover would meet her a second night; and poor Kitty, pale and trembling, awaited D’Artagnan’s reply. The counsels of his friend, joined to the cries of his own heart, made him determine, now his pride was saved and his vengeance satisfied, not to see Milady again. As a reply, he wrote the following letter:</p>
 <p>Do not depend upon me, madame, for the next meeting. Since my convalescence I have so many affairs of this kind on my hands that I am forced to regulate them a little. When your turn comes, I shall have the honor to inform you of it. I kiss your hands.</p>
-<h2>COMTE DE WARDES</h2>
+<h3 class="sub">Comte de Wardes</h3>
 <p>Not a word about the sapphire. Was the Gascon determined to keep it as a weapon against Milady, or else, let us be frank, did he not reserve the sapphire as a last resource for his outfit? It would be wrong to judge the actions of one period from the point of view of another. That which would now be considered as disgraceful to a gentleman was at that time quite a simple and natural affair, and the younger sons of the best families were frequently supported by their mistresses. D’Artagnan gave the open letter to Kitty, who at first was unable to comprehend it, but who became almost wild with joy on reading it a second time. She could scarcely believe in her happiness; and D’Artagnan was forced to renew with the living voice the assurances which he had written. And whatever might be—considering the violent character of Milady—the danger which the poor girl incurred in giving this billet to her mistress, she ran back to the Place Royale as fast as her legs could carry her.</p>
 <p>The heart of the best woman is pitiless toward the sorrows of a rival.</p>
 <p>Milady opened the letter with eagerness equal to Kitty’s in bringing it; but at the first words she read she became livid. She crushed the paper in her hand, and turning with flashing eyes upon Kitty, she cried, “What is this letter?”</p>
@@ -4549,7 +4625,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“I thought that Madame was ill, and I wished to bring her help,” responded the maid, frightened at the terrible expression which had come over her mistress’s face.</p>
 <p>“I faint? I? I? Do you take me for half a woman? When I am insulted I do not faint; I avenge myself!”</p>
 <p>And she made a sign for Kitty to leave the room.</p>
-<h2>Chapter XXXVI. DREAM OF VENGEANCE</h2>
+<h2 class="chapter" id="c36">Chapter XXXVI. DREAM OF VENGEANCE</h2>
 <p>That evening Milady gave orders that when M. d’Artagnan came as usual, he should be immediately admitted; but he did not come.</p>
 <p>The next day Kitty went to see the young man again, and related to him all that had passed on the preceding evening. D’Artagnan smiled; this jealous anger of Milady was his revenge.</p>
 <p>That evening Milady was still more impatient than on the preceding evening. She renewed the order relative to the Gascon; but as before she expected him in vain.</p>
@@ -4684,7 +4760,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“It appears that these appointments are all made for eleven o’clock,” thought D’Artagnan; “that’s a settled custom.”</p>
 <p>Milady held out her hand to him, which he kissed tenderly.</p>
 <p>“But,” said he, as he retired as quickly as possible from the reproaches of Kitty, “I must not play the fool. This woman is certainly a great liar. I must take care.”</p>
-<h2>Chapter XXXVII. MILADY’S SECRET</h2>
+<h2 class="chapter" id="c37">Chapter XXXVII. MILADY’S SECRET</h2>
 <p>D’Artagnan left the hôtel instead of going up at once to Kitty’s chamber, as she endeavored to persuade him to do—and that for two reasons: the first, because by this means he should escape reproaches, recriminations, and prayers; the second, because he was not sorry to have an opportunity of reading his own thoughts and endeavoring, if possible, to fathom those of this woman.</p>
 <p>What was most clear in the matter was that D’Artagnan loved Milady like a madman, and that she did not love him at all. In an instant D’Artagnan perceived that the best way in which he could act would be to go home and write Milady a long letter, in which he would confess to her that he and De Wardes were, up to the present moment absolutely the same, and that consequently he could not undertake, without committing suicide, to kill the Comte de Wardes. But he also was spurred on by a ferocious desire of vengeance. He wished to subdue this woman in his own name; and as this vengeance appeared to him to have a certain sweetness in it, he could not make up his mind to renounce it.</p>
 <p>He walked six or seven times round the Place Royale, turning at every ten steps to look at the light in Milady’s apartment, which was to be seen through the blinds. It was evident that this time the young woman was not in such haste to retire to her apartment as she had been the first.</p>
@@ -4768,7 +4844,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“That’s true,” said D’Artagnan, then first thinking of the costume he found himself in, “that’s true. But dress me as well as you are able, only make haste; think, my dear girl, it’s life and death!”</p>
 <p>Kitty was but too well aware of that. In a turn of the hand she muffled him up in a flowered robe, a large hood, and a cloak. She gave him some slippers, in which he placed his naked feet, and then conducted him down the stairs. It was time. Milady had already rung her bell, and roused the whole hôtel. The porter was drawing the cord at the moment Milady cried from her window, “Don’t open!”</p>
 <p>The young man fled while she was still threatening him with an impotent gesture. The moment she lost sight of him, Milady tumbled fainting into her chamber.</p>
-<h2>Chapter XXXVIII. HOW, WITHOUT INCOMMDING HIMSELF, ATHOS PROCURES HIS EQUIPMENT</h2>
+<h2 class="chapter" id="c38">Chapter XXXVIII. HOW, WITHOUT INCOMMDING HIMSELF, ATHOS PROCURES HIS EQUIPMENT</h2>
 <p>D’Artagnan was so completely bewildered that without taking any heed of what might become of Kitty he ran at full speed across half Paris, and did not stop till he came to Athos’s door. The confusion of his mind, the terror which spurred him on, the cries of some of the patrol who started in pursuit of him, and the hooting of the people who, notwithstanding the early hour, were going to their work, only made him precipitate his course.</p>
 <p>He crossed the court, ran up the two flights to Athos’s apartment, and knocked at the door enough to break it down.</p>
 <p>Grimaud came, rubbing his half-open eyes, to answer this noisy summons, and D’Artagnan sprang with such violence into the room as nearly to overturn the astonished lackey.</p>
@@ -4915,7 +4991,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“Ready money is needful for the present time, and we must learn how to make sacrifices. Go, D’Artagnan, go; Grimaud will accompany you with his musketoon.”</p>
 <p>A half hour afterward, D’Artagnan returned with the two thousand livres, and without having met with any accident.</p>
 <p>It was thus Athos found at home resources which he did not expect.</p>
-<h2>Chapter XXXIX. A VISION</h2>
+<h2 class="chapter" id="c39">Chapter XXXIX. A VISION</h2>
 <p>At four o’clock the four friends were all assembled with Athos. Their anxiety about their outfits had all disappeared, and each countenance only preserved the expression of its own secret disquiet—for behind all present happiness is concealed a fear for the future.</p>
 <p>Suddenly Planchet entered, bringing two letters for D’Artagnan.</p>
 <p>The one was a little billet, genteelly folded, with a pretty seal in green wax on which was impressed a dove bearing a green branch.</p>
@@ -5025,7 +5101,7 @@ h2 + p, .first { text-indent: 0; }
 <p>The usher introduced him, and retired without speaking a word. D’Artagnan remained standing and examined this man.</p>
 <p>D’Artagnan at first believed that he had to do with some judge examining his papers; but he perceived that the man at the desk wrote, or rather corrected, lines of unequal length, scanning the words on his fingers. He saw then that he was with a poet. At the end of an instant the poet closed his manuscript, upon the cover of which was written “Mirame, a Tragedy in Five Acts,” and raised his head.</p>
 <p>D’Artagnan recognized the cardinal.</p>
-<h2>Chapter XL. A TERRIBLE VISION</h2>
+<h2 class="chapter" id="c40">Chapter XL. A TERRIBLE VISION</h2>
 <p>The cardinal leaned his elbow on his manuscript, his cheek upon his hand, and looked intently at the young man for a moment. No one had a more searching eye than the Cardinal de Richelieu, and D’Artagnan felt this glance run through his veins like a fever.</p>
 <p>He however kept a good countenance, holding his hat in his hand and awaiting the good pleasure of his Eminence, without too much assurance, but also without too much humility.</p>
 <p>“Monsieur,” said the cardinal, “are you a D’Artagnan from Béarn?”</p>
@@ -5105,7 +5181,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Athos sipped the last bottle of his Spanish wine.</p>
 <p>In the meantime D’Artagnan was defiling with his company. Arriving at the Faubourg St. Antoine, he turned round to look gaily at the Bastille; but as it was the Bastille alone he looked at, he did not observe Milady, who, mounted upon a light chestnut horse, designated him with her finger to two ill-looking men who came close up to the ranks to take notice of him. To a look of interrogation which they made, Milady replied by a sign that it was he. Then, certain that there could be no mistake in the execution of her orders, she started her horse and disappeared.</p>
 <p>The two men followed the company, and on leaving the Faubourg St. Antoine, mounted two horses properly equipped, which a servant without livery had waiting for them.</p>
-<h2>Chapter XLI. THE SIEGE OF LA ROCHELLE</h2>
+<h2 class="chapter" id="c41">Chapter XLI. THE SIEGE OF LA ROCHELLE</h2>
 <p>The Siege of La Rochelle was one of the great political events of the reign of Louis XIII., and one of the great military enterprises of the cardinal. It is, then, interesting and even necessary that we should say a few words about it, particularly as many details of this siege are connected in too important a manner with the story we have undertaken to relate to allow us to pass it over in silence.</p>
 <p>The political plans of the cardinal when he undertook this siege were extensive. Let us unfold them first, and then pass on to the private plans which perhaps had not less influence upon his Eminence than the others.</p>
 <p>Of the important cities given up by Henry IV. to the Huguenots as places of safety, there only remained La Rochelle. It became necessary, therefore, to destroy this last bulwark of Calvinism—a dangerous leaven with which the ferments of civil revolt and foreign war were constantly mingling.</p>
@@ -5226,7 +5302,7 @@ h2 + p, .first { text-indent: 0; }
 <p>The Guardsman who had returned at the first discharge announced the death of his four companions. They were therefore much astonished and delighted in the regiment when they saw the young man come back safe and sound.</p>
 <p>D’Artagnan explained the sword wound of his companion by a sortie which he improvised. He described the death of the other soldier, and the perils they had encountered. This recital was for him the occasion of veritable triumph. The whole army talked of this expedition for a day, and Monsieur paid him his compliments upon it. Besides this, as every great action bears its recompense with it, the brave exploit of D’Artagnan resulted in the restoration of the tranquility he had lost. In fact, D’Artagnan believed that he might be tranquil, as one of his two enemies was killed and the other devoted to his interests.</p>
 <p>This tranquillity proved one thing—that D’Artagnan did not yet know Milady.</p>
-<h2>Chapter XLII. THE ANJOU WINE</h2>
+<h2 class="chapter" id="c42">Chapter XLII. THE ANJOU WINE</h2>
 <p>After the most disheartening news of the king’s health, a report of his convalescence began to prevail in the camp; and as he was very anxious to be in person at the siege, it was said that as soon as he could mount a horse he would set forward.</p>
 <p>Meantime, Monsieur, who knew that from one day to the other he might expect to be removed from his command by the Duc d’Angoulême, by Bassompierre, or by Schomberg, who were all eager for his post, did but little, lost his days in wavering, and did not dare to attempt any great enterprise to drive the English from the Isle of Ré, where they still besieged the citadel St. Martin and the fort of La Prée, as on their side the French were besieging La Rochelle.</p>
 <p>D’Artagnan, as we have said, had become more tranquil, as always happens after a past danger, particularly when the danger seems to have vanished. He only felt one uneasiness, and that was at not hearing any tidings from his friends.</p>
@@ -5343,7 +5419,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“You, Aramis?” cried the three friends. “You! And how?”</p>
 <p>“By the queen’s almoner, to whom I am very intimately allied,” said Aramis, coloring.</p>
 <p>And on this assurance, the four friends, who had finished their modest repast, separated, with the promise of meeting again that evening. D’Artagnan returned to less important affairs, and the three Musketeers repaired to the king’s quarters, where they had to prepare their lodging.</p>
-<h2>Chapter XLIII. THE SIGN OF THE RED DOVECOT</h2>
+<h2 class="chapter" id="c43">Chapter XLIII. THE SIGN OF THE RED DOVECOT</h2>
 <p>Meanwhile the king, who, with more reason than the cardinal, showed his hatred for Buckingham, although scarcely arrived was in such a haste to meet the enemy that he commanded every disposition to be made to drive the English from the Isle of Ré, and afterward to press the siege of La Rochelle; but notwithstanding his earnest wish, he was delayed by the dissensions which broke out between MM. Bassompierre and Schomberg, against the Duc d’Angoulême.</p>
 <p>MM. Bassompierre and Schomberg were marshals of France, and claimed their right of commanding the army under the orders of the king; but the cardinal, who feared that Bassompierre, a Huguenot at heart, might press but feebly the English and Rochellais, his brothers in religion, supported the Duc d’Angoulême, whom the king, at his instigation, had named lieutenant general. The result was that to prevent MM. Bassompierre and Schomberg from deserting the army, a separate command had to be given to each. Bassompierre took up his quarters on the north of the city, between Leu and Dompierre; the Duc d’Angoulême on the east, from Dompierre to Perigny; and M. de Schomberg on the south, from Perigny to Angoutin.</p>
 <p>The quarters of Monsieur were at Dompierre; the quarters of the king were sometimes at Estrée, sometimes at Jarrie; the cardinal’s quarters were upon the downs, at the bridge of La Pierre, in a simple house without any entrenchment. So that Monsieur watched Bassompierre; the king, the Duc d’Angoulême; and the cardinal, M. de Schomberg.</p>
@@ -5426,7 +5502,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“I have this,” said he.</p>
 <p>“That will do,” replied the cardinal. “Enter, gentlemen, and be kind enough to wait for me; I shall not be more than half an hour.”</p>
 <p>And while the three Musketeers entered the ground floor room, the cardinal, without asking further information, ascended the staircase like a man who has no need of having his road pointed out to him.</p>
-<h2>Chapter XLIV. THE UTILITY OF STOVEPIPES</h2>
+<h2 class="chapter" id="c44">Chapter XLIV. THE UTILITY OF STOVEPIPES</h2>
 <p>It was evident that without suspecting it, and actuated solely by their chivalrous and adventurous character, our three friends had just rendered a service to someone the cardinal honored with his special protection.</p>
 <p>Now, who was that someone? That was the question the three Musketeers put to one another. Then, seeing that none of their replies could throw any light on the subject, Porthos called the host and asked for dice.</p>
 <p>Porthos and Aramis placed themselves at the table and began to play. Athos walked about in a contemplative mood.</p>
@@ -5535,7 +5611,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“Be easy on that head,” replied Athos; “you know I am cool enough.”</p>
 <p>Porthos and Aramis resumed their places by the stovepipe.</p>
 <p>As to Athos, he went out without any mystery, took his horse, which was tied with those of his friends to the fastenings of the shutters, in four words convinced the attendant of the necessity of a vanguard for their return, carefully examined the priming of his pistols, drew his sword, and took, like a forlorn hope, the road to the camp.</p>
-<h2>Chapter XLV. A CONJUGAL SCENE</h2>
+<h2 class="chapter" id="c45">Chapter XLV. A CONJUGAL SCENE</h2>
 <p>As Athos had foreseen, it was not long before the cardinal came down. He opened the door of the room in which the Musketeers were, and found Porthos playing an earnest game of dice with Aramis. He cast a rapid glance around the room, and perceived that one of his men was missing.</p>
 <p>“What has become of Monseigneur Athos?” asked he.</p>
 <p>“Monseigneur,” replied Porthos, “he has gone as a scout, on account of some words of our host, which made him believe the road was not safe.”</p>
@@ -5590,7 +5666,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Athos took the paper, returned the pistol to his belt, approached the lamp to be assured that it was the paper, unfolded it, and read:</p>
 <p>“Dec. 3, 1627</p>
 <p>“It is by my order and for the good of the state that the bearer of this has done what he has done.</p>
-<h2>“RICHELIEU”</h2>
+<p>“RICHELIEU”</p>
 <p>“And now,” said Athos, resuming his cloak and putting on his hat, “now that I have drawn your teeth, viper, bite if you can.”</p>
 <p>And he left the chamber without once looking behind him.</p>
 <p>At the door he found the two men and the spare horse which they held.</p>
@@ -5608,7 +5684,7 @@ h2 + p, .first { text-indent: 0; }
 <p>And the three friends did not exchange another word till they reached their quarters, except to give the watchword to the sentinels. Only they sent Mousqueton to tell Planchet that his master was requested, the instant that he left the trenches, to come to the quarters of the Musketeers.</p>
 <p>Milady, as Athos had foreseen, on finding the two men that awaited her, made no difficulty in following them. She had had for an instant an inclination to be reconducted to the cardinal, and relate everything to him; but a revelation on her part would bring about a revelation on the part of Athos. She might say that Athos had hanged her; but then Athos would tell that she was branded. She thought it was best to preserve silence, to discreetly set off to accomplish her difficult mission with her usual skill; and then, all things being accomplished to the satisfaction of the cardinal, to come to him and claim her vengeance.</p>
 <p>In consequence, after having traveled all night, at seven o’clock she was at the fort of the Point; at eight o’clock she had embarked; and at nine, the vessel, which with letters of marque from the cardinal was supposed to be sailing for Bayonne, raised anchor, and steered its course toward England.</p>
-<h2>Chapter XLVI. THE BASTION SAINT-GERVAIS</h2>
+<h2 class="chapter" id="c46">Chapter XLVI. THE BASTION SAINT-GERVAIS</h2>
 <p>On arriving at the lodgings of his three friends, D’Artagnan found them assembled in the same chamber. Athos was meditating; Porthos was twisting his mustache; Aramis was saying his prayers in a charming little Book of Hours, bound in blue velvet.</p>
 <p>“Pardieu, gentlemen,” said he. “I hope what you have to tell me is worth the trouble, or else, I warn you, I will not pardon you for making me come here instead of getting a little rest after a night spent in taking and dismantling a bastion. Ah, why were you not there, gentlemen? It was warm work.”</p>
 <p>“We were in a place where it was not very cold,” replied Porthos, giving his mustache a twist which was peculiar to him.</p>
@@ -5709,7 +5785,7 @@ h2 + p, .first { text-indent: 0; }
 <p>More than three hundred soldiers of all kinds were assembled at the gate of the camp; and in a separate group might be distinguished M. de Busigny, the dragoon, the Swiss, and the fourth bettor.</p>
 <p>Athos took off his hat, placed it on the end of his sword, and waved it in the air.</p>
 <p>All the spectators returned him his salute, accompanying this courtesy with a loud hurrah which was audible to the four; after which all four disappeared in the bastion, whither Grimaud had preceded them.</p>
-<h2>Chapter XLVII. THE COUNCIL OF THE MUSKETEERS</h2>
+<h2 class="chapter" id="c47">Chapter XLVII. THE COUNCIL OF THE MUSKETEERS</h2>
 <p>As Athos had foreseen, the bastion was only occupied by a dozen corpses, French and Rochellais.</p>
 <p>“Gentlemen,” said Athos, who had assumed the command of the expedition, “while Grimaud spreads the table, let us begin by collecting the guns and cartridges together. We can talk while performing that necessary task. These gentlemen,” added he, pointing to the bodies, “cannot hear us.”</p>
 <p>“But we could throw them into the ditch,” said Porthos, “after having assured ourselves they have nothing in their pockets.”</p>
@@ -5801,7 +5877,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“Here it is,” said Athos; and he took the invaluable paper from the pocket of his uniform. D’Artagnan unfolded it with one hand, whose trembling he did not even attempt to conceal, to read:</p>
 <p>“Dec. 3, 1627</p>
 <p>“It is by my order and for the good of the state that the bearer of this has done what he has done.</p>
-<h2>“RICHELIEU”</h2>
+<p>“RICHELIEU”</p>
 <p>“In fact,” said Aramis, “it is an absolution according to rule.”</p>
 <p>“That paper must be torn to pieces,” said D’Artagnan, who fancied he read in it his sentence of death.</p>
 <p>“On the contrary,” said Athos, “it must be preserved carefully. I would not give up this paper if covered with as many gold pieces.”</p>
@@ -5988,7 +6064,7 @@ h2 + p, .first { text-indent: 0; }
 <p>D’Artagnan refused; but thinking the opportunity a good one, he begged him to have the diamond he put into his hand valued, as he wished to turn it into money.</p>
 <p>The next day, M. Dessessart’s valet came to D’Artagnan’s lodging, and gave him a bag containing seven thousand livres.</p>
 <p>This was the price of the queen’s diamond.</p>
-<h2>Chapter XLVIII. A FAMILY AFFAIR</h2>
+<h2 class="chapter" id="c48">Chapter XLVIII. A FAMILY AFFAIR</h2>
 <p>Athos had invented the phrase, family affair. A family affair was not subject to the investigation of the cardinal; a family affair concerned nobody. People might employ themselves in a family affair before all the world. Therefore Athos had invented the phrase, family affair.</p>
 <p>Aramis had discovered the idea, the lackeys.</p>
 <p>Porthos had discovered the means, the diamond.</p>
@@ -6118,7 +6194,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“See what she writes to me, Athos,” said he.</p>
 <p>Athos cast a glance over the epistle, and to disperse all the suspicions that might have been created, read aloud:</p>
 <p>“MY COUSIN, My sister and I are skillful in interpreting dreams, and even entertain great fear of them; but of yours it may be said, I hope, every dream is an illusion. Adieu! Take care of yourself, and act so that we may from time to time hear you spoken of.</p>
-<h2>“MARIE MICHON”</h2>
+<p>“MARIE MICHON”</p>
 <p>“And what dream does she mean?” asked the dragoon, who had approached during the reading.</p>
 <p>“Yez; what’s the dream?” said the Swiss.</p>
 <p>“Well, pardieu!” said Aramis, “it was only this: I had a dream, and I related it to her.”</p>
@@ -6167,7 +6243,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“And me, too!” said Porthos.</p>
 <p>“And me, too!” said Aramis.</p>
 <p>“Well, if you will have the truth, and me, too!” said Athos.</p>
-<h2>Chapter XLIX. FATALITY</h2>
+<h2 class="chapter" id="c49">Chapter XLIX. FATALITY</h2>
 <p>Meantime Milady, drunk with passion, roaring on the deck like a lioness that has been embarked, had been tempted to throw herself into the sea that she might regain the coast, for she could not get rid of the thought that she had been insulted by D’Artagnan, threatened by Athos, and that she had quit France without being revenged on them. This idea soon became so insupportable to her that at the risk of whatever terrible consequences might result to herself from it, she implored the captain to put her on shore; but the captain, eager to escape from his false position—placed between French and English cruisers, like the bat between the mice and the birds—was in great haste to regain England, and positively refused to obey what he took for a woman’s caprice, promising his passenger, who had been particularly recommended to him by the cardinal, to land her, if the sea and the French permitted him, at one of the ports of Brittany, either at Lorient or Brest. But the wind was contrary, the sea bad; they tacked and kept offshore. Nine days after leaving the Charente, pale with fatigue and vexation, Milady saw only the blue coasts of Finisterre appear.</p>
 <p>She calculated that to cross this corner of France and return to the cardinal it would take her at least three days. Add another day for landing, and that would make four. Add these four to the nine others, that would be thirteen days lost—thirteen days, during which so many important events might pass in London. She reflected likewise that the cardinal would be furious at her return, and consequently would be more disposed to listen to the complaints brought against her than to the accusations she brought against others.</p>
 <p>She allowed the vessel to pass Lorient and Brest without repeating her request to the captain, who, on his part, took care not to remind her of it. Milady therefore continued her voyage, and on the very day that Planchet embarked at Portsmouth for France, the messenger of his Eminence entered the port in triumph.</p>
@@ -6249,7 +6325,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“But this is a frightful abuse of power!”</p>
 <p>“No high-sounding words! Let us sit down and chat quietly, as brother and sister ought to do.”</p>
 <p>Then, turning toward the door, and seeing that the young officer was waiting for his last orders, he said. “All is well, I thank you; now leave us alone, Mr. Felton.”</p>
-<h2>Chapter L. CHAT BETWEEN BROTHER AND SISTER</h2>
+<h2 class="chapter" id="c50">Chapter L. CHAT BETWEEN BROTHER AND SISTER</h2>
 <p>During the time which Lord de Winter took to shut the door, close a shutter, and draw a chair near to his sister-in-law’s fauteuil, Milady, anxiously thoughtful, plunged her glance into the depths of possibility, and discovered all the plan, of which she could not even obtain a glance as long as she was ignorant into whose hands she had fallen. She knew her brother-in-law to be a worthy gentleman, a bold hunter, an intrepid player, enterprising with women, but by no means remarkable for his skill in intrigues. How had he discovered her arrival, and caused her to be seized? Why did he detain her?</p>
 <p>Athos had dropped some words which proved that the conversation she had with the cardinal had fallen into outside ears; but she could not suppose that he had dug a countermine so promptly and so boldly. She rather feared that her preceding operations in England might have been discovered. Buckingham might have guessed that it was she who had cut off the two studs, and avenge himself for that little treachery; but Buckingham was incapable of going to any excess against a woman, particularly if that woman was supposed to have acted from a feeling of jealousy.</p>
 <p>This supposition appeared to her most reasonable. It seemed to her that they wanted to revenge the past, and not to anticipate the future. At all events, she congratulated herself upon having fallen into the hands of her brother-in-law, with whom she reckoned she could deal very easily, rather than into the hands of an acknowledged and intelligent enemy.</p>
@@ -6320,7 +6396,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Milady let her head sink, as if crushed by this sentence. Lord de Winter went out, making a sign to Felton, who followed him, shutting the door after him.</p>
 <p>One instant after, the heavy step of a marine who served as sentinel was heard in the corridor—his ax in his girdle and his musket on his shoulder.</p>
 <p>Milady remained for some minutes in the same position, for she thought they might perhaps be examining her through the keyhole; she then slowly raised her head, which had resumed its formidable expression of menace and defiance, ran to the door to listen, looked out of her window, and returning to bury herself again in her large armchair, she reflected.</p>
-<h2>Chapter LI. OFFICER</h2>
+<h2 class="chapter" id="c51">Chapter LI. OFFICER</h2>
 <p>Meanwhile, the cardinal looked anxiously for news from England; but no news arrived that was not annoying and threatening.</p>
 <p>Although La Rochelle was invested, however certain success might appear—thanks to the precautions taken, and above all to the dyke, which prevented the entrance of any vessel into the besieged city—the blockade might last a long time yet. This was a great affront to the king’s army, and a great inconvenience to the cardinal, who had no longer, it is true, to embroil Louis XIII. with Anne of Austria—for that affair was over—but he had to adjust matters for M. de Bassompierre, who was embroiled with the Duc d’Angoulême.</p>
 <p>As to Monsieur, who had begun the siege, he left to the cardinal the task of finishing it.</p>
@@ -6389,7 +6465,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“You had only read a line or two,” said D’Artagnan; “read the letter again from the commencement.”</p>
 <p>“Willingly,” said Aramis.</p>
 <p>“MY DEAR COUSIN, I think I shall make up my mind to set out for Béthune, where my sister has placed our little servant in the convent of the Carmelites; this poor child is quite resigned, as she knows she cannot live elsewhere without the salvation of her soul being in danger. Nevertheless, if the affairs of our family are arranged, as we hope they will be, I believe she will run the risk of being damned, and will return to those she regrets, particularly as she knows they are always thinking of her. Meanwhile, she is not very wretched; what she most desires is a letter from her intended. I know that such viands pass with difficulty through convent gratings; but after all, as I have given you proofs, my dear cousin, I am not unskilled in such affairs, and I will take charge of the commission. My sister thanks you for your good and eternal remembrance. She has experienced much anxiety; but she is now at length a little reassured, having sent her secretary away in order that nothing may happen unexpectedly. “Adieu, my dear cousin. Tell us news of yourself as often as you can; that is to say, as often as you can with safety. I embrace you.</p>
-<h2>“MARIE MICHON”</h2>
+<p>“MARIE MICHON”</p>
 <p>“Oh, what do I not owe you, Aramis?” said D’Artagnan. “Dear Constance! I have at length, then, intelligence of you. She lives; she is in safety in a convent; she is at Béthune! Where is Béthune, Athos?”</p>
 <p>“Why, upon the frontiers of Artois and of Flanders. The siege once over, we shall be able to make a tour in that direction.”</p>
 <p>“And that will not be long, it is to be hoped,” said Porthos; “for they have this morning hanged a spy who confessed that the Rochellais were reduced to the leather of their shoes. Supposing that after having eaten the leather they eat the soles, I cannot see much that is left unless they eat one another.”</p>
@@ -6403,7 +6479,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Grimaud silently swallowed the glass of Bordeaux wine; but his eyes, raised toward heaven during this delicious occupation, spoke a language which, though mute, was not the less expressive.</p>
 <p>“And now,” said Athos, “unless Monsieur Cardinal should form the ingenious idea of ripping up Grimaud, I think we may be pretty much at our ease respecting the letter.”</p>
 <p>Meantime, his Eminence continued his melancholy ride, murmuring between his mustaches, “These four men must positively be mine.”</p>
-<h2>Chapter LII. CAPTIVITY: THE FIRST DAY</h2>
+<h2 class="chapter" id="c52">Chapter LII. CAPTIVITY: THE FIRST DAY</h2>
 <p>Let us return to Milady, whom a glance thrown upon the coast of France has made us lose sight of for an instant.</p>
 <p>We shall find her still in the despairing attitude in which we left her, plunged in an abyss of dismal reflection—a dark hell at the gate of which she has almost left hope behind, because for the first time she doubts, for the first time she fears.</p>
 <p>On two occasions her fortune has failed her, on two occasions she has found herself discovered and betrayed; and on these two occasions it was to one fatal genius, sent doubtlessly by the Lord to combat her, that she has succumbed. D’Artagnan has conquered her—her, that invincible power of evil.</p>
@@ -6465,7 +6541,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Felton, then, had spoken in her favor, since Lord de Winter had not been willing to listen to him.</p>
 <p>“Weak or strong,” repeated Milady, “that man has, then, a spark of pity in his soul; of that spark I will make a flame that shall devour him. As to the other, he knows me, he fears me, and knows what he has to expect of me if ever I escape from his hands. It is useless, then, to attempt anything with him. But Felton—that’s another thing. He is a young, ingenuous, pure man who seems virtuous; him there are means of destroying.”</p>
 <p>And Milady went to bed and fell asleep with a smile upon her lips. Anyone who had seen her sleeping might have said she was a young girl dreaming of the crown of flowers she was to wear on her brow at the next festival.</p>
-<h2>Chapter LIII. CAPTIVITY: THE SECOND DAY</h2>
+<h2 class="chapter" id="c53">Chapter LIII. CAPTIVITY: THE SECOND DAY</h2>
 <p>Milady dreamed that she at length had D’Artagnan in her power, that she was present at his execution; and it was the sight of his odious blood, flowing beneath the ax of the headsman, which spread that charming smile upon her lips.</p>
 <p>She slept as a prisoner sleeps, rocked by his first hope.</p>
 <p>In the morning, when they entered her chamber she was still in bed. Felton remained in the corridor. He brought with him the woman of whom he had spoken the evening before, and who had just arrived; this woman entered, and approaching Milady’s bed, offered her services.</p>
@@ -6545,7 +6621,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“No, no, madame,” said Felton, “only do not sing so loud, particularly at night.”</p>
 <p>And at these words Felton, feeling that he could not long maintain his severity toward his prisoner, rushed out of the room.</p>
 <p>“You have done right, Lieutenant,” said the soldier. “Such songs disturb the mind; and yet we become accustomed to them, her voice is so beautiful.”</p>
-<h2>Chapter LIV. CAPTIVITY: THE THIRD DAY</h2>
+<h2 class="chapter" id="c54">Chapter LIV. CAPTIVITY: THE THIRD DAY</h2>
 <p>Felton had fallen; but there was still another step to be taken. He must be retained, or rather he must be left quite alone; and Milady but obscurely perceived the means which could lead to this result.</p>
 <p>Still more must be done. He must be made to speak, in order that he might be spoken to—for Milady very well knew that her greatest seduction was in her voice, which so skillfully ran over the whole gamut of tones from human speech to language celestial.</p>
 <p>Yet in spite of all this seduction Milady might fail—for Felton was forewarned, and that against the least chance. From that moment she watched all his actions, all his words, from the simplest glance of his eyes to his gestures—even to a breath that could be interpreted as a sigh. In short, she studied everything, as a skillful comedian does to whom a new part has been assigned in a line to which he is not accustomed.</p>
@@ -6641,7 +6717,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“It is he,” said she. And she began the same religious chant which had so strongly excited Felton the evening before.</p>
 <p>But although her voice—sweet, full, and sonorous—vibrated as harmoniously and as affectingly as ever, the door remained shut. It appeared however to Milady that in one of the furtive glances she darted from time to time at the grating of the door she thought she saw the ardent eyes of the young man through the narrow opening. But whether this was reality or vision, he had this time sufficient self-command not to enter.</p>
 <p>However, a few instants after she had finished her religious song, Milady thought she heard a profound sigh. Then the same steps she had heard approach slowly withdrew, as if with regret.</p>
-<h2>Chapter LV. CAPTIVITY: THE FOURTH DAY</h2>
+<h2 class="chapter" id="c55">Chapter LV. CAPTIVITY: THE FOURTH DAY</h2>
 <p>The next day, when Felton entered Milady’s apartment he found her standing, mounted upon a chair, holding in her hands a cord made by means of torn cambric handkerchiefs, twisted into a kind of rope one with another, and tied at the ends. At the noise Felton made in entering, Milady leaped lightly to the ground, and tried to conceal behind her the improvised cord she held in her hand.</p>
 <p>The young man was more pale than usual, and his eyes, reddened by want of sleep, denoted that he had passed a feverish night. Nevertheless, his brow was armed with a severity more austere than ever.</p>
 <p>He advanced slowly toward Milady, who had seated herself, and taking an end of the murderous rope which by neglect, or perhaps by design, she allowed to be seen, “What is this, madame?” he asked coldly.</p>
@@ -6731,7 +6807,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Then, through the grating to which she had drawn near, Milady saw the young man make a sign with delirious fervor, and depart in an apparent transport of joy.</p>
 <p>As for her, she returned to her place with a smile of savage contempt upon her lips, and repeated, blaspheming, that terrible name of God, by whom she had just sworn without ever having learned to know Him.</p>
 <p>“My God,” said she, “what a senseless fanatic! My God, it is I—I—and this fellow who will help me to avenge myself.”</p>
-<h2>Chapter LVI. CAPTIVITY: THE FIFTH DAY</h2>
+<h2 class="chapter" id="c56">Chapter LVI. CAPTIVITY: THE FIFTH DAY</h2>
 <p>Milady had however achieved a half-triumph, and success doubled her forces.</p>
 <p>It was not difficult to conquer, as she had hitherto done, men prompt to let themselves be seduced, and whom the gallant education of a court led quickly into her net. Milady was handsome enough not to find much resistance on the part of the flesh, and she was sufficiently skillful to prevail over all the obstacles of the mind.</p>
 <p>But this time she had to contend with an unpolished nature, concentrated and insensible by force of austerity. Religion and its observances had made Felton a man inaccessible to ordinary seductions. There fermented in that sublimated brain plans so vast, projects so tumultuous, that there remained no room for any capricious or material love—that sentiment which is fed by leisure and grows with corruption. Milady had, then, made a breach by her false virtue in the opinion of a man horribly prejudiced against her, and by her beauty in the heart of a man hitherto chaste and pure. In short, she had taken the measure of motives hitherto unknown to herself, through this experiment, made upon the most rebellious subject that nature and religion could submit to her study.</p>
@@ -6879,7 +6955,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“‘Very well, it is your own doing. Till tomorrow evening, then!’</p>
 <p>“‘Till tomorrow evening, then!’ replied I, allowing myself to fall, and biting the carpet with rage.”</p>
 <p>Felton leaned for support upon a piece of furniture; and Milady saw, with the joy of a demon, that his strength would fail him perhaps before the end of her recital.</p>
-<h2>Chapter LVII. MEANS FOR CLASSICAL TRAGEDY</h2>
+<h2 class="chapter" id="c57">Chapter LVII. MEANS FOR CLASSICAL TRAGEDY</h2>
 <p>After a moment of silence employed by Milady in observing the young man who listened to her, Milady continued her recital.</p>
 <p>“It was nearly three days since I had eaten or drunk anything. I suffered frightful torments. At times there passed before me clouds which pressed my brow, which veiled my eyes; this was delirium.</p>
 <p>“When the evening came I was so weak that every time I fainted I thanked God, for I thought I was about to die.</p>
@@ -6966,7 +7042,7 @@ h2 + p, .first { text-indent: 0; }
 <p>At this injunction from his superior, Felton obeyed; but in going out, he put the knife into his bosom.</p>
 <p>As to Lord de Winter, he contented himself with calling the woman who waited on Milady, and when she was come, he recommended the prisoner, who was still fainting, to her care, and left them alone.</p>
 <p>Meanwhile, all things considered and notwithstanding his suspicions, as the wound might be serious, he immediately sent off a mounted man to find a physician.</p>
-<h2>Chapter LVIII. ESCAPE</h2>
+<h2 class="chapter" id="c58">Chapter LVIII. ESCAPE</h2>
 <p>As Lord de Winter had thought, Milady’s wound was not dangerous. So soon as she was left alone with the woman whom the baron had summoned to her assistance she opened her eyes.</p>
 <p>It was, however, necessary to affect weakness and pain—not a very difficult task for so finished an actress as Milady. Thus the poor woman was completely the dupe of the prisoner, whom, notwithstanding her hints, she persisted in watching all night.</p>
 <p>But the presence of this woman did not prevent Milady from thinking.</p>
@@ -7112,7 +7188,7 @@ h2 + p, .first { text-indent: 0; }
 <p>On her side, Milady tried to encourage Felton in his project; but at the first words which issued from her mouth, she plainly saw that the young fanatic stood more in need of being moderated than urged.</p>
 <p>It was agreed that Milady should wait for Felton till ten o’clock; if he did not return by ten o’clock she was to sail.</p>
 <p>In that case, and supposing he was at liberty, he was to rejoin her in France, at the convent of the Carmelites at Béthune.</p>
-<p>Chapter LIX. WHAT TOOK PLACE AT PORTSMOUTH AUGUST 23, 1628</p>
+<h2 class="chapter" id="c59">Chapter LIX. WHAT TOOK PLACE AT PORTSMOUTH AUGUST 23, 1628</h2>
 <p>Felton took leave of Milady as a brother about to go for a mere walk takes leave of his sister, kissing her hand.</p>
 <p>His whole body appeared in its ordinary state of calmness, only an unusual fire beamed from his eyes, like the effects of a fever; his brow was more pale than it generally was; his teeth were clenched, and his speech had a short dry accent which indicated that something dark was at work within him.</p>
 <p>As long as he remained in the boat which conveyed him to land, he kept his face toward Milady, who, standing on the deck, followed him with her eyes. Both were free from the fear of pursuit; nobody ever came into Milady’s apartment before nine o’clock, and it would require three hours to go from the castle to London.</p>
@@ -7259,7 +7335,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“Be punished alone, for the first, miserable man!” said Lord de Winter to Felton, who was being dragged away with his eyes turned toward the sea; “but I swear to you by the memory of my brother whom I have loved so much that your accomplice is not saved.”</p>
 <p>Felton lowered his head without pronouncing a syllable.</p>
 <p>As to Lord de Winter, he descended the stairs rapidly, and went straight to the port.</p>
-<h2>Chapter LX. IN FRANCE</h2>
+<h2 class="chapter" id="c60">Chapter LX. IN FRANCE</h2>
 <p>The first fear of the King of England, Charles I., on learning of the death of the duke, was that such terrible news might discourage the Rochellais; he tried, says Richelieu in his Memoirs, to conceal it from them as long as possible, closing all the ports of his kingdom, and carefully keeping watch that no vessel should sail until the army which Buckingham was getting together had gone, taking upon himself, in default of Buckingham, to superintend the departure.</p>
 <p>He carried the strictness of this order so far as to detain in England the ambassadors of Denmark, who had taken their leave, and the regular ambassador of Holland, who was to take back to the port of Flushing the Indian merchantmen of which Charles I. had made restitution to the United Provinces.</p>
 <p>But as he did not think of giving this order till five hours after the event—that is to say, till two o’clock in the afternoon—two vessels had already left the port, the one bearing, as we know, Milady, who, already anticipating the event, was further confirmed in that belief by seeing the black flag flying at the masthead of the admiral’s ship.</p>
@@ -7273,7 +7349,7 @@ h2 + p, .first { text-indent: 0; }
 <p>To this letter was added an order, conceived in these terms:</p>
 <p>“At the Louvre, August 10, 1628</p>
 <p>“The superior of the convent of Béthune will place in the hands of the person who shall present this note to her the novice who entered the convent upon my recommendation and under my patronage.</p>
-<h2>“ANNE”</h2>
+<p>“ANNE”</p>
 <p>It may be easily imagined how the relationship between Aramis and a seamstress who called the queen her sister amused the young men; but Aramis, after having blushed two or three times up to the whites of his eyes at the gross pleasantry of Porthos, begged his friends not to revert to the subject again, declaring that if a single word more was said to him about it, he would never again implore his cousins to interfere in such affairs.</p>
 <p>There was no further question, therefore, about Marie Michon among the four Musketeers, who besides had what they wanted: that was, the order to withdraw Mme. Bonacieux from the convent of the Carmelites of Béthune. It was true that this order would not be of great use to them while they were in camp at La Rochelle; that is to say, at the other end of France. Therefore D’Artagnan was going to ask leave of absence of M. de Tréville, confiding to him candidly the importance of his departure, when the news was transmitted to him as well as to his three friends that the king was about to set out for Paris with an escort of twenty Musketeers, and that they formed part of the escort.</p>
 <p>Their joy was great. The lackeys were sent on before with the baggage, and they set out on the morning of the sixteenth.</p>
@@ -7310,14 +7386,14 @@ h2 + p, .first { text-indent: 0; }
 <p>“And that name of a town or village is written in her hand!” cried Athos.</p>
 <p>“Come on, come on!” said D’Artagnan; “let us keep that paper carefully, perhaps I have not thrown away my half-pistole. To horse, my friends, to horse!”</p>
 <p>And the four friends flew at a gallop along the road to Béthune.</p>
-<h2>Chapter LXI. THE CARMELITE CONVENT AT BÉTHUNE</h2>
+<h2 class="chapter" id="c61">Chapter LXI. THE CARMELITE CONVENT AT BÉTHUNE</h2>
 <p>Great criminals bear about them a kind of predestination which makes them surmount all obstacles, which makes them escape all dangers, up to the moment which a wearied Providence has marked as the rock of their impious fortunes.</p>
 <p>It was thus with Milady. She escaped the cruisers of both nations, and arrived at Boulogne without accident.</p>
 <p>When landing at Portsmouth, Milady was an Englishwoman whom the persecutions of the French drove from La Rochelle; when landing at Boulogne, after a two days’ passage, she passed for a Frenchwoman whom the English persecuted at Portsmouth out of their hatred for France.</p>
 <p>Milady had, likewise, the best of passports—her beauty, her noble appearance, and the liberality with which she distributed her pistoles. Freed from the usual formalities by the affable smile and gallant manners of an old governor of the port, who kissed her hand, she only remained long enough at Boulogne to put into the post a letter, conceived in the following terms:</p>
 <p>“To his Eminence Monseigneur the Cardinal Richelieu, in his camp before La Rochelle.</p>
 <p>“MONSEIGNEUR, Let your Eminence be reassured. His Grace the Duke of Buckingham will not set out for France.</p>
-<h2>“MILADY DE ——</h2>
+<p>“MILADY DE ——</p>
 <p>“BOULOGNE, evening of the twenty-fifth. “P.S.—According to the desire of your Eminence, I report to the convent of the Carmelites at Béthune, where I will await your orders.”</p>
 <p>Accordingly, that same evening Milady commenced her journey. Night overtook her; she stopped, and slept at an inn. At five o’clock the next morning she again proceeded, and in three hours after entered Béthune. She inquired for the convent of the Carmelites, and went thither immediately.</p>
 <p>The superior met her; Milady showed her the cardinal’s order. The abbess assigned her a chamber, and had breakfast served.</p>
@@ -7487,7 +7563,7 @@ h2 + p, .first { text-indent: 0; }
 <p>The superior and Mme. Bonacieux retired.</p>
 <p>Milady remained alone, with her eyes fixed upon the door. An instant later, the jingling of spurs was heard upon the stairs, steps drew near, the door opened, and a man appeared.</p>
 <p>Milady uttered a cry of joy; this man was the Comte de Rochefort—the demoniacal tool of his Eminence.</p>
-<h2>Chapter LXII. TWO VARIETIES OF DEMONS</h2>
+<h2 class="chapter" id="c62">Chapter LXII. TWO VARIETIES OF DEMONS</h2>
 <p>Ah,” cried Milady and Rochefort together, “it is you!”</p>
 <p>“Yes, it is I.”</p>
 <p>“And you come?” asked Milady.</p>
@@ -7615,7 +7691,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“Commend me to Satan.”</p>
 <p>Milady and Rochefort exchanged a smile and separated. An hour afterward Rochefort set out at a grand gallop; five hours after that he passed through Arras.</p>
 <p>Our readers already know how he was recognized by D’Artagnan, and how that recognition by inspiring fear in the four Musketeers had given fresh activity to their journey.</p>
-<h2>Chapter LXIII. THE DROP OF WATER</h2>
+<h2 class="chapter" id="c63">Chapter LXIII. THE DROP OF WATER</h2>
 <p>Rochefort had scarcely departed when Mme. Bonacieux re-entered. She found Milady with a smiling countenance.</p>
 <p>“Well,” said the young woman, “what you dreaded has happened. This evening, or tomorrow, the cardinal will send someone to take you away.”</p>
 <p>“Who told you that, my dear?” asked Milady.</p>
@@ -7841,7 +7917,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“Now, retire to your chambers,” said Athos, “and leave me to act. You must perceive that in my quality of a husband this concerns me. Only, D’Artagnan, if you have not lost it, give me the paper which fell from that man’s hat, upon which is written the name of the village of—”</p>
 <p>“Ah,” said D’Artagnan, “I comprehend! that name written in her hand.”</p>
 <p>“You see, then,” said Athos, “there is a god in heaven still!”</p>
-<h2>Chapter LXIV. THE MAN IN THE RED CLOAK</h2>
+<h2 class="chapter" id="c64">Chapter LXIV. THE MAN IN THE RED CLOAK</h2>
 <p>The despair of Athos had given place to a concentrated grief which only rendered more lucid the brilliant mental faculties of that extraordinary man.</p>
 <p>Possessed by one single thought—that of the promise he had made, and of the responsibility he had taken—he retired last to his chamber, begged the host to procure him a map of the province, bent over it, examined every line traced upon it, perceived that there were four different roads from Béthune to Armentières, and summoned the lackeys.</p>
 <p>Planchet, Grimaud, Bazin, and Mousqueton presented themselves, and received clear, positive, and serious orders from Athos.</p>
@@ -7888,7 +7964,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Lord de Winter and the three Musketeers looked at one another inquiringly. Neither could give the others any information, for all were ignorant who this man could be; nevertheless, they felt convinced that all was as it should be, as it was done by the order of Athos.</p>
 <p>At nine o’clock, guided by Planchet, the little cavalcade set out, taking the route the carriage had taken.</p>
 <p>It was a melancholy sight—that of these six men, traveling in silence, each plunged in his own thoughts, sad as despair, gloomy as chastisement.</p>
-<h2>Chapter LXV. TRIAL</h2>
+<h2 class="chapter" id="c65">Chapter LXV. TRIAL</h2>
 <p>It was a stormy and dark night; vast clouds covered the heavens, concealing the stars; the moon would not rise till midnight.</p>
 <p>Occasionally, by the light of a flash of lightning which gleamed along the horizon, the road stretched itself before them, white and solitary; the flash extinct, all remained in darkness.</p>
 <p>Every minute Athos was forced to restrain D’Artagnan, constantly in advance of the little troop, and to beg him to keep in the line, which in an instant he again departed from. He had but one thought—to go forward; and he went.</p>
@@ -7996,7 +8072,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“Charlotte Backson, Comtesse de la Fère, Milady de Winter,” said he, “your crimes have wearied men on earth and God in heaven. If you know a prayer, say it—for you are condemned, and you shall die.”</p>
 <p>At these words, which left no hope, Milady raised herself in all her pride, and wished to speak; but her strength failed her. She felt that a powerful and implacable hand seized her by the hair, and dragged her away as irrevocably as fatality drags humanity. She did not, therefore, even attempt the least resistance, and went out of the cottage.</p>
 <p>Lord de Winter, D’Artagnan, Athos, Porthos, and Aramis, went out close behind her. The lackeys followed their masters, and the chamber was left solitary, with its broken window, its open door, and its smoky lamp burning sadly on the table.</p>
-<h2>Chapter LXVI. EXECUTION</h2>
+<h2 class="chapter" id="c66">Chapter LXVI. EXECUTION</h2>
 <p>It was near midnight; the moon, lessened by its decline, and reddened by the last traces of the storm, arose behind the little town of Armentières, which showed against its pale light the dark outline of its houses, and the skeleton of its high belfry. In front of them the Lys rolled its waters like a river of molten tin; while on the other side was a black mass of trees, profiled on a stormy sky, invaded by large coppery clouds which created a sort of twilight amid the night. On the left was an old abandoned mill, with its motionless wings, from the ruins of which an owl threw out its shrill, periodical, and monotonous cry. On the right and on the left of the road, which the dismal procession pursued, appeared a few low, stunted trees, which looked like deformed dwarfs crouching down to watch men traveling at this sinister hour.</p>
 <p>From time to time a broad sheet of lightning opened the horizon in its whole width, darted like a serpent over the black mass of trees, and like a terrible scimitar divided the heavens and the waters into two parts. Not a breath of wind now disturbed the heavy atmosphere. A deathlike silence oppressed all nature. The soil was humid and glittering with the rain which had recently fallen, and the refreshed herbs sent forth their perfume with additional energy.</p>
 <p>Two lackeys dragged Milady, whom each held by one arm. The executioner walked behind them, and Lord de Winter, D’Artagnan, Porthos, and Aramis walked behind the executioner. Planchet and Bazin came last.</p>
@@ -8057,7 +8133,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Three days afterward the four Musketeers were in Paris; they had not exceeded their leave of absence, and that same evening they went to pay their customary visit to M. de Tréville.</p>
 <p>“Well, gentlemen,” said the brave captain, “I hope you have been well amused during your excursion.”</p>
 <p>“Prodigiously,” replied Athos in the name of himself and his comrades.</p>
-<h2>Chapter LXVII. CONCLUSION</h2>
+<h2 class="chapter" id="c67">Chapter LXVII. CONCLUSION</h2>
 <p>On the sixth of the following month the king, in compliance with the promise he had made the cardinal to return to La Rochelle, left his capital still in amazement at the news which began to spread itself of Buckingham’s assassination.</p>
 <p>Although warned that the man she had loved so much was in great danger, the queen, when his death was announced to her, would not believe the fact, and even imprudently exclaimed, “it is false; he has just written to me!”</p>
 <p>But the next day she was obliged to believe this fatal intelligence; Laporte, detained in England, as everyone else had been, by the orders of Charles I., arrived, and was the bearer of the duke’s dying gift to the queen.</p>
@@ -8138,7 +8214,7 @@ h2 + p, .first { text-indent: 0; }
 <p>His Eminence took the paper, and read in a slow voice, dwelling upon every syllable:</p>
 <p>“Dec. 3, 1627</p>
 <p>“It is by my order and for the good of the state that the bearer of this has done what he has done.</p>
-<h2>“RICHELIEU”</h2>
+<p>“RICHELIEU”</p>
 <p>The cardinal, after having read these two lines, sank into a profound reverie; but he did not return the paper to D’Artagnan.</p>
 <p>“He is meditating by what sort of punishment he shall cause me to die,” said the Gascon to himself. “Well, my faith! he shall see how a gentleman can die.”</p>
 <p>The young Musketeer was in excellent disposition to die heroically.</p>
@@ -8189,7 +8265,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“I shall then have no more friends,” said the young man. “Alas! nothing but bitter recollections.”</p>
 <p>And he let his head sink upon his hands, while two large tears rolled down his cheeks.</p>
 <p>“You are young,” replied Athos; “and your bitter recollections have time to change themselves into sweet remembrances.”</p>
-<h2>EPILOGUE</h2>
+<h3 class="sub">Epilogue</h3>
 <p>La Rochelle, deprived of the assistance of the English fleet and of the diversion promised by Buckingham, surrendered after a siege of a year. On the twenty-eighth of October, 1628, the capitulation was signed.</p>
 <p>The king made his entrance into Paris on the twenty-third of December of the same year. He was received in triumph, as if he came from conquering an enemy and not Frenchmen. He entered by the Faubourg St. Jacques, under verdant arches.</p>
 <p>D’Artagnan took possession of his command. Porthos left the service, and in the course of the following year married Mme. Coquenard; the coffer so much coveted contained eight hundred thousand livres.</p>
@@ -8204,5 +8280,5 @@ h2 + p, .first { text-indent: 0; }
 <p>They this time embraced heartily, and without retaining any malice.</p>
 <p>Planchet obtained from Rochefort the rank of sergeant in the Piedmont regiment.</p>
 <p>M. Bonacieux lived on very quietly, wholly ignorant of what had become of his wife, and caring very little about it. One day he had the imprudence to recall himself to the memory of the cardinal. The cardinal had him informed that he would provide for him so that he should never want for anything in future. In fact, M. Bonacieux, having left his house at seven o’clock in the evening to go to the Louvre, never appeared again in the Rue des Fossoyeurs; the opinion of those who seemed to be best informed was that he was fed and lodged in some royal castle, at the expense of his generous Eminence.</p>
-<p class="colophon">Texte du domaine public, source : Project Gutenberg (#1257). Édition numérique EbookClassics.</p>
+<p class="colophon">Public domain text. EbookClassics digital edition.</p>
 </body></html>

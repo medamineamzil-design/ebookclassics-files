@@ -1,50 +1,156 @@
 <!DOCTYPE html>
 <html lang="es"><head><meta charset="utf-8">
-<title>Hamlet: Drama en cinco actos</title><style>
-@page { margin: 22mm 20mm; }
-body { font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', serif; line-height: 1.6;
-       color: #1f1a14; max-width: 38em; margin: 0 auto; padding: 1.5em 1.2em; }
-h1 { font-size: 2.1em; text-align: center; margin: 1.5em 0 .2em; letter-spacing: .01em; }
-.author { text-align: center; font-size: 1.15em; font-style: italic; margin-bottom: 3em; color: #5a4a36; }
-h2 { font-size: 1.25em; text-align: center; margin: 2.6em 0 1.2em; letter-spacing: .06em;
-     text-transform: uppercase; font-weight: normal; page-break-before: always; break-before: page; }
-p { margin: 0; text-indent: 1.4em; text-align: justify; hyphens: auto; }
-h2 + p, .first { text-indent: 0; }
-.colophon { font-size: .85em; color: #6b5d45; text-align: center; margin-top: 4em; text-indent: 0; }
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hamlet: Drama en cinco actos — William Shakespeare</title><style>
+:root{--paper:#fbf8f1;--ink:#1f1b16;--muted:#6f6352;--accent:#9a6b2f;--rule:#e4dccb}
+@media (prefers-color-scheme:dark){:root{--paper:#16140f;--ink:#ece6d8;--muted:#a79c88;--accent:#d8a95e;--rule:#2e2a22}}
+html{background:var(--paper)}
+body{font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Libertinus Serif",Georgia,serif;color:var(--ink);
+     background:var(--paper);line-height:1.65;font-size:1.12rem;max-width:36em;margin:0 auto;padding:2.5em 1.25em 5em}
+.titlepage{text-align:center;min-height:70vh;display:flex;flex-direction:column;justify-content:center;gap:.6em;
+           border-bottom:1px solid var(--rule);margin-bottom:2.5em;padding-bottom:2.5em}
+.titlepage img{max-width:260px;width:60%;margin:0 auto 1.5em;border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+h1{font-size:2.4em;line-height:1.15;font-weight:600;margin:0;letter-spacing:-.01em}
+.author{font-style:italic;font-size:1.25em;color:var(--accent);margin:0}
+.translator{font-size:.95em;color:var(--muted);margin:0}
+nav.toc{margin:0 0 3em}
+nav.toc h2{font-size:.85em;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:left;margin:0 0 .8em}
+nav.toc ol{list-style:none;padding:0;margin:0;columns:1}
+nav.toc li{margin:.25em 0}
+nav.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent}
+nav.toc a:hover{border-color:var(--accent)}
+h2.chapter{font-size:1.45em;font-weight:600;text-align:center;margin:3.5em 0 1.6em;line-height:1.3}
+h2.chapter::before{content:"";display:block;width:3em;height:2px;background:var(--accent);margin:0 auto 1.1em}
+p{margin:0;text-indent:1.5em;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+h2.chapter + p, .titlepage + p{text-indent:0}
+h2.chapter + p::first-letter{font-size:3.1em;float:left;line-height:.85;padding:.08em .08em 0 0;color:var(--accent);font-weight:600}
+.colophon{margin-top:5em;padding-top:1.5em;border-top:1px solid var(--rule);text-align:center;color:var(--muted);font-size:.85em;text-indent:0}
+h3.sub{font-size:1em;font-weight:600;font-variant:small-caps;letter-spacing:.04em;text-align:center;margin:2.2em 0 1em}
+h3.sub + p{text-indent:0}
+@media print{h2.chapter{break-before:page}}
 </style></head><body>
+<header class="titlepage">
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjI0MDAiIHZpZXdCb3g9IjAgMCAxNjAwIDI0MDAiPgo8cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSIyNDAwIiBmaWxsPSIjNGExNTI2Ii8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjMwMCIgZmlsbD0iI2YyYzZhMCIgb3BhY2l0eT0iLjkyIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNGExNTI2IiBzdHJva2Utd2lkdGg9IjEyIiBvcGFjaXR5PSIuNSIvPgo8Y2lyY2xlIGN4PSIxMTIwIiBjeT0iNTYwIiByPSIxMjAiIGZpbGw9IiM0YTE1MjYiIG9wYWNpdHk9Ii4xOCIvPgo8cmVjdCB4PSIxNjAiIHk9IjkzMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIxMCIgZmlsbD0iI2YyYzZhMCIvPgo8dGV4dCB4PSIxNjAiIHk9IjEwOTgiIGZvbnQtc2l6ZT0iMTUwIiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmYmVmZTYiPkhhbWxldDogRHJhbWE8L3RleHQ+PHRleHQgeD0iMTYwIiB5PSIxMjYyIiBmb250LXNpemU9IjE1MCIgZm9udC13ZWlnaHQ9IjYwMCIgZm9udC1mYW1pbHk9IkxpYmVydGludXMgU2VyaWYsIEdlb3JnaWEsIHNlcmlmIiBmaWxsPSIjZmJlZmU2Ij5lbiBjaW5jbyBhY3RvczwvdGV4dD4KPHRleHQgeD0iMTYwIiB5PSIxNDk4IiBmb250LXNpemU9IjY4IiBmb250LXN0eWxlPSJpdGFsaWMiIGZvbnQtZmFtaWx5PSJMaWJlcnRpbnVzIFNlcmlmLCBHZW9yZ2lhLCBzZXJpZiIgZmlsbD0iI2YyYzZhMCI+V2lsbGlhbSBTaGFrZXNwZWFyZTwvdGV4dD4KPHRleHQgeD0iMTYwIiB5PSIyMjMwIiBmb250LXNpemU9IjQ0IiBsZXR0ZXItc3BhY2luZz0iMTQiIGZvbnQtZmFtaWx5PSJMaWJlcnRpbnVzIFNlcmlmLCBHZW9yZ2lhLCBzZXJpZiIgZmlsbD0iI2ZiZWZlNiIgb3BhY2l0eT0iLjc1Ij5FQk9PS0NMQVNTSUNTPC90ZXh0Pgo8L3N2Zz4=" alt="">
 <h1>Hamlet: Drama en cinco actos</h1>
 <p class="author">William Shakespeare</p>
-<h2>HAMLET</h2>
-<h2>DRAMA EN CINCO ACTOS</h2>
-<h2>TRADUCCION DE LA OBRA</h2>
+<p class="translator">Traducción de Fernández de Moratín, Leandro</p>
+</header>
+<nav class="toc"><h2>Índice</h2><ol>
+<li><a href="#c1">Guillermo shakespeare</a></li>
+<li><a href="#c2">L. Fernandez moratin — Casa editorial maucci</a></li>
+<li><a href="#c3">Personajes</a></li>
+<li><a href="#c4">Acto primero — Escena primera</a></li>
+<li><a href="#c5">Francisco, Bernardo</a></li>
+<li><a href="#c6">Escena II</a></li>
+<li><a href="#c7">Escena IV</a></li>
+<li><a href="#c8">Hamlet, Horacio, Bernardo, marcelo</a></li>
+<li><a href="#c9">Escena VII</a></li>
+<li><a href="#c10">Laertes, Ofelia</a></li>
+<li><a href="#c11">Escena VIII — Polonio, Laertes, Ofelia</a></li>
+<li><a href="#c12">Escena X</a></li>
+<li><a href="#c13">Hamlet, Horacio, marcelo</a></li>
+<li><a href="#c14">Escena XI — Horacio, marcelo</a></li>
+<li><a href="#c15">Escena XII — Parte remota cercana al mar vista á lo lejos del palacio de Elsingor</a></li>
+<li><a href="#c16">Escena XIII</a></li>
+<li><a href="#c17">Acto II — Escena primera</a></li>
+<li><a href="#c18">Polonio, reinaldo</a></li>
+<li><a href="#c19">Escena II — Polonio, Ofelia</a></li>
+<li><a href="#c20">Escena IV</a></li>
+<li><a href="#c21">Escena V</a></li>
+<li><a href="#c22">Escena vi — Claudio, gertrudis, polonio</a></li>
+<li><a href="#c23">Escena VII — Polonio, Hamlet</a></li>
+<li><a href="#c24">Escena VIII — Hamlet, ricardo, guillermo</a></li>
+<li><a href="#c25">Escena IX</a></li>
+<li><a href="#c26">Escena X</a></li>
+<li><a href="#c27">Escena XI — Hamlet</a></li>
+<li><a href="#c28">Acto III — Escena primera</a></li>
+<li><a href="#c29">Claudio, gertrudis, polonio, Ofelia, ricardo, guillermo</a></li>
+<li><a href="#c30">Escena II — Claudio, gertrudis, polonio, Ofelia</a></li>
+<li><a href="#c31">Escena III — Claudio, polonio, Ofelia</a></li>
+<li><a href="#c32">Escena IV — Hamlet, Ofelia</a></li>
+<li><a href="#c33">Escena V — Ofelia</a></li>
+<li><a href="#c34">Escena vi — Claudio, polonio, Ofelia</a></li>
+<li><a href="#c35">Escena VII — Claudio, polonio</a></li>
+<li><a href="#c36">Escena VIII</a></li>
+<li><a href="#c37">Escena IX — Hamlet, polonio, ricardo, guillermo</a></li>
+<li><a href="#c38">Escena X — Hamlet, Horacio</a></li>
+<li><a href="#c39">Escena XI</a></li>
+<li><a href="#c40">Escena XII</a></li>
+<li><a href="#c41">Escena XIII</a></li>
+<li><a href="#c42">Escena XIV</a></li>
+<li><a href="#c43">Escena XV</a></li>
+<li><a href="#c44">Escena XVI — Hamlet, Horacio, ricardo, guillermo</a></li>
+<li><a href="#c45">Escena XVII</a></li>
+<li><a href="#c46">Escena XVIII</a></li>
+<li><a href="#c47">Escena XIX — Hamlet</a></li>
+<li><a href="#c48">Escena XX</a></li>
+<li><a href="#c49">Claudio, ricardo, guillermo</a></li>
+<li><a href="#c50">Escena XXI — Claudio, polonio</a></li>
+<li><a href="#c51">Escena XXII — Claudio</a></li>
+<li><a href="#c52">Escena XXIII — Claudio, Hamlet</a></li>
+<li><a href="#c53">Escena XXIV — Claudio</a></li>
+<li><a href="#c54">Escena XXV</a></li>
+<li><a href="#c55">Gertrudis, polonio, Hamlet</a></li>
+<li><a href="#c56">Escena XXVI — Gertrudis, Hamlet, polonio</a></li>
+<li><a href="#c57">Escena XXVII</a></li>
+<li><a href="#c58">Escena XXVIII — Gertrudis, Hamlet</a></li>
+<li><a href="#c59">Acto IV — Escena primera</a></li>
+<li><a href="#c60">Claudio, gertrudis, ricardo, guillermo</a></li>
+<li><a href="#c61">Escena II — Claudio, gertrudis, ricardo, guillermo</a></li>
+<li><a href="#c62">Escena III</a></li>
+<li><a href="#c63">Hamlet, ricardo, guillermo</a></li>
+<li><a href="#c64">Escena IV</a></li>
+<li><a href="#c65">Claudio</a></li>
+<li><a href="#c66">Escena V — Claudio, ricardo</a></li>
+<li><a href="#c67">Escena vi</a></li>
+<li><a href="#c68">Escena VII — Claudio, ricardo, guillermo</a></li>
+<li><a href="#c69">Escena VIII</a></li>
+<li><a href="#c70">Escena IX</a></li>
+<li><a href="#c71">Escena X — Hamlet</a></li>
+<li><a href="#c72">Escena XI</a></li>
+<li><a href="#c73">Gertrudis, Horacio</a></li>
+<li><a href="#c74">Escena XII — Gertrudis, Ofelia, Horacio</a></li>
+<li><a href="#c75">Escena XIII — Claudio, gertrudis, Ofelia, Horacio</a></li>
+<li><a href="#c76">Escena XIV — Claudio, gertrudis</a></li>
+<li><a href="#c77">Escena XV</a></li>
+<li><a href="#c78">Escena XVI</a></li>
+<li><a href="#c79">Escena XVII</a></li>
+<li><a href="#c80">Escena XVIII — Claudio, gertrudis, Laertes</a></li>
+<li><a href="#c81">Escena XIX</a></li>
+<li><a href="#c82">Escena XX</a></li>
+<li><a href="#c83">Escena XXI</a></li>
+<li><a href="#c84">Claudio, Laertes</a></li>
+<li><a href="#c85">Escena XXII</a></li>
+<li><a href="#c86">Escena XXIII — Claudio, Laertes</a></li>
+<li><a href="#c87">Escena XXIV — Gertrudis, Claudio, Laertes</a></li>
+<li><a href="#c88">Acto V — Escena primera</a></li>
+<li><a href="#c89">Escena II</a></li>
+<li><a href="#c90">Escena III</a></li>
+<li><a href="#c91">Escena IV</a></li>
+<li><a href="#c92">Hamlet, Horacio</a></li>
+<li><a href="#c93">Escena V — Hamlet, Horacio, enrique</a></li>
+<li><a href="#c94">Escena vi — Hamlet, Horacio</a></li>
+<li><a href="#c95">Escena VII</a></li>
+<li><a href="#c96">Escena VIII — Hamlet, Horacio</a></li>
+<li><a href="#c97">Escena IX</a></li>
+<li><a href="#c98">Escena X</a></li>
+<li><a href="#c99">Escena XI</a></li>
+<li><a href="#c100">Fin del drama</a></li>
+<li><a href="#c101">Teatro facil</a></li>
+</ol></nav>
 <p>DE</p>
-<h2>GUILLERMO SHAKESPEARE</h2>
+<h2 class="chapter" id="c1">Guillermo shakespeare</h2>
 <p>POR</p>
-<h2>L. FERNANDEZ MORATIN</h2>
-<h2>CASA EDITORIAL MAUCCI</h2>
+<h2 class="chapter" id="c2">L. Fernandez moratin — Casa editorial maucci</h2>
 <p>Gran medalla de oro en las Exposiciones de Viena de 1903, Madrid 1907, Budapest 1907, Londres 1913, París 1913, y gran premio en la de Buenos Aires 1910</p>
 <p>Calle de Mallorca, núm. 166</p>
-<h2>SHAKESPEARE</h2>
-<h2>PRINTED IN SPAIN</h2>
-<h2>ES PROPIEDAD DE ESTA CASA EDITORIAL</h2>
-<h2>HAMLET</h2>
-<h2>DRAMA EN CINCO ACTOS</h2>
-<h2>TRADUCCION DE LA OBRA</h2>
-<p>DE</p>
-<h2>GUILLERMO SHAKESPEARE</h2>
-<p>POR</p>
-<h2>L. FERNANDEZ MORATIN</h2>
-<h2>CASA EDITORIAL MAUCCI</h2>
-<p>Gran medalla de oro en las Exposiciones de Viena de 1903, Madrid 1907, Budapest 1907, Londres 1913, París 1913, y gran premio en la de Buenos Aires 1910</p>
-<p>Calle de Mallorca, núm. 166</p>
-<h2>PERSONAJES</h2>
+<h2 class="chapter" id="c3">Personajes</h2>
 <p>CLAUDIO, rey de Dinamarca. GERTRUDIS, reina de Dinamarca. HAMLET, príncipe. FORTIMBRAS, príncipe de Noruega. La sombra del rey Hamlet. POLONIO, sumiller de corps. LAERTES, hijo de Polonio. OFELIA, hija de Polonio. HORACIO, amigo de Hamlet. VOLTIMAN,    | CORNELIO,    } RICARDO,     } cortesanos. GUILLERMO,   } ENRIQUE,     | MARCELO,     } BERNARDO,    } soldados. FRANCISCO,   } REINALDO, criado de Polonio. Dos embajadores de Inglaterra. Un cura. Un caballero. Un capitán. Un guardia. Un criado. Dos marineros. Dos sepultureros. Cuatro cómicos. Acompañamiento de grandes, caballeros, damas, soldados, curas, cómicos, criados, etc.</p>
 <p>*       *       *       *       *</p>
 <p>La escena se representa en el palacio y ciudad de Elsingor, en sus cercanías y en las fronteras de Dinamarca.</p>
-<h2>ACTO PRIMERO</h2>
-<h2>ESCENA PRIMERA</h2>
+<h2 class="chapter" id="c4">Acto primero — Escena primera</h2>
 <p>Explanada delante del palacio real de Elsingor. Noche obscura</p>
-<h2>FRANCISCO, BERNARDO</h2>
+<h2 class="chapter" id="c5">Francisco, Bernardo</h2>
 <p>Francisco estará paseándose haciendo centinela. Bernardo se va acercando hacia él. Estos personajes y los de la escena siguiente estarán armados con espada y lanza.</p>
 <p>BERNARDO.--¿Quién está ahí?</p>
 <p>FRANCISCO.--No: respóndame él á mí. Deténgase, y diga quién es...</p>
@@ -58,7 +164,7 @@ h2 + p, .first { text-indent: 0; }
 <p>FRANCISCO.--Ni un ratón se ha movido.</p>
 <p>BERNARDO.--Muy bien. Buenas noches. Si encuentras á Horacio y Marcelo, mis compañeros de guardia, diles que vengan presto.</p>
 <p>FRANCISCO.--Me parece que los oigo... Alto ahí. ¡Eh! ¿Quién va?</p>
-<h2>ESCENA II</h2>
+<h2 class="chapter" id="c6">Escena II</h2>
 <p>HORACIO, MARCELO y dichos</p>
 <p>HORACIO.--Amigos de este país.</p>
 <p>MARCELO.--Y fieles vasallos del rey de Dinamarca.</p>
@@ -113,13 +219,10 @@ h2 + p, .first { text-indent: 0; }
 <p>MARCELO.--En efecto, desapareció al cantar el gallo. Algunos dicen que cuando se acerca el tiempo en que se celebra el nacimiento de nuestro Redentor, este pájaro matutino canta toda la noche, y que entonces ningún espíritu se atreve á salir de su morada; las noches son saludables, ningún planeta influye siniestramente, ningún maleficio produce efecto, ni las hechiceras tienen poder para sus encantos: ¡tan sagrados son y tan felices aquellos días!</p>
 <p>HORACIO.--Yo también lo tengo entendido así, y en parte lo creo. Pero ved cómo ya la mañana, cubierta con la rosada túnica, viene pisando el rocío de aquel alto monte oriental. Demos fin á la guardia, y soy de opinión que digamos al joven Hamlet lo que hemos visto esta noche; porque yo os prometo que este espíritu hablará con él, aunque ha sido para nosotros mudo. ¿No os parece que le demos esta noticia, indispensable en nuestro celo y tan propia de nuestra obligación?</p>
 <p>MARCELO.--Sí, sí, hagámoslo. Yo sé en dónde le hallaremos esta mañana con más seguridad.</p>
-<h2>ESCENA III</h2>
-<p>Salón de palacio</p>
-<p>CLAUDIO, GERTRUDIS, HAMLET, POLONIO, LAERTES, VOLTIMAN, CORNELIO, caballeros, damas y acompañamiento.</p>
 <p>CLAUDIO.--Aunque la muerte de mi querido hermano Hamlet está todavía tan reciente en nuestra memoria, que obliga á mantener en tristeza los corazones, y á que en todo el reino sólo se observe la imagen del dolor, con todo eso, tanto ha combatido en mí la razón á la naturaleza, que he conservado un prudente sentimiento de su pérdida, junto con la memoria de lo que á nosotros nos debemos. A este fin he recibido por esposa á la que un tiempo fué mi hermana y hoy reina conmigo, compañera en el trono de esta belicosa nación; si bien estas alegrías son imperfectas, pues en ellas se han unido á la felicidad las lágrimas, las fiestas á la pompa fúnebre, los cánticos de muerte á los epitalamios de himeneo, pesados en igual balanza el placer y la aflicción. Ni hemos dejado de seguir los dictámenes de vuestra prudencia, que en esta ocasión ha procedido con absoluta libertad, de lo cual os quedo muy agradecido. Ahora falta deciros que el joven Fortimbrás, estimándome en poco, ó presumiendo que la reciente muerte de mi querido hermano habrá producido en el reino trastorno y desunión, fiado en esta soñada superioridad, no ha cesado de importunarme con mensajes, pidiéndome le restituya aquellas tierras que perdió su padre, y adquirió mi valeroso hermano con todas las formalidades de la ley. Basta ya lo que de él he dicho. Por lo que á mí toca, y en cuanto al objeto que hoy nos reune, véisle aquí: Escribo al rey de Noruega, tío del joven Fortimbrás, que doliente y postrado en el lecho apenas tiene noticia de los proyectos de su sobrino, á fin de que le impida llevarlos adelante; pues tengo ya exactos informes de la gente que levanta contra mí, su calidad, su número y fuerzas. Prudente Cornelio, y tú, Voltiman, vosotros saludaréis en mi nombre al anciano rey; aunque no os doy facultad personal para celebrar con él tratado alguno que exceda los límites expresados en estos artículos. (Les da unas cartas). Id con Dios, y espero que manifestaréis en vuestra diligencia el celo de servirme.</p>
 <p>VOLTIMAN.--En ésta y cualquiera otra comisión os daremos pruebas de nuestro respeto.</p>
 <p>CLAUDIO.--No lo dudaré. El cielo os guarde.</p>
-<h2>ESCENA IV</h2>
+<h2 class="chapter" id="c7">Escena IV</h2>
 <p>CLAUDIO, GERTRUDIS, HAMLET, POLONIO, LAERTES, damas, caballeros y acompañamiento</p>
 <p>CLAUDIO.--Y tú, Laertes, ¿qué solicitas? Me has hablado de una pretensión: ¿no me dirás cuál sea? En cualquiera cosa justa que pidas al rey de Dinamarca, no será vano el ruego. ¿Ni qué podrás pedirme, que no sea más ofrecimiento mío que demanda tuya? No es más adicto á la cabeza el corazón, ni más pronta la mano en servir á la boca, que lo es el trono de Dinamarca para con tu padre. En fin, ¿qué pretendes?</p>
 <p>LAERTES.--Respetable soberano, solicito la gracia de vuestro permiso para volver á Francia. De allí he venido voluntariamente á Dinamarca á manifestaros mi leal afecto, con motivo de vuestra coronación; pero ya cumplida esta deuda, fuerza es confesaros que mis ideas y mi inclinación me llaman de nuevo á aquel país, y espero de vuestra mucha bondad esta licencia.</p>
@@ -137,11 +240,8 @@ h2 + p, .first { text-indent: 0; }
 <p>GERTRUDIS.--Yo te ruego, Hamlet, que no vayas á Witemberga: quédate con nosotros. No sean vanas las súplicas de tu madre.</p>
 <p>HAMLET.--Obedeceros en todo será siempre mi primer conato.</p>
 <p>CLAUDIO.--Por esa afectuosa y plausible respuesta quiero que seas otro yo en el imperio danés. Venid, señora. La sincera y fiel condescendencia de Hamlet ha llenado de alegría mi corazón. En aplauso de este acontecimiento no celebrará hoy Dinamarca festivos brindis, sin que lo anuncie á las nubes el cañón robusto, y el cielo retumbe muchas veces á las aclamaciones del rey, repitiendo el trueno de la tierra. Venid.</p>
-<h2>ESCENA V</h2>
-<h2>HAMLET</h2>
 <p>¡Oh, si esta demasiado sólida masa de carne pudiera ablandarse y liquidarse disuelta en lluvia de lágrimas, ó el Todopoderoso no asestara el cañón contra el homicida de sí mismo! ¡Oh Dios! ¡oh Dios mío! ¡Cuán fatigado ya de todo, juzgo molestos, insípidos y vanos los placeres del mundo! Nada, nada quiero de él: es un campo inculto y rudo, que sólo abunda en frutos groseros y amargos. ¡Que esto haya llegado á suceder á los dos meses que él ha muerto!... No, ni tanto; aun no há dos meses. Aquel excelente rey que fué, comparado con éste, como con un sátiro, Hiperión; tan amante de mi madre, que ni á los aires celestes permitía llegar atrevidos á su rostro. ¡Oh cielo y tierra!... ¿para qué conservo la memoria? Ella, que se le mostraba tan amorosa como si en la posesión hubieran crecido sus deseos. Y no obstante, en un mes... ¡ah! no quisiera pensar en esto. ¡Fragilidad, tú tienes nombre de mujer! En el corto espacio de un mes, y aun antes de romper los zapatos con que, semejante á Niobe, bañada en lágrimas, acompañó el cuerpo de mi triste padre... sí, ella, ella misma... ¡Cielos! una fiera, incapaz de razón y discurso, hubiera mostrado aflicción más durable. Se ha casado, en fin, con mi tío, hermano de mi padre; pero no más parecido á él, que yo lo soy á Hércules. En un mes... enrojecidos aún los ojos con el pérfido llanto, se casó. ¡Ah delincuente precipitación, ir á ocupar con tal diligencia un lecho incestuoso! Ni esto es bueno, ni puede producir bien. Pero hazte pedazos, corazón mío, que mi lengua debe reprimirse.</p>
-<h2>ESCENA VI</h2>
-<h2>HAMLET, HORACIO, BERNARDO, MARCELO</h2>
+<h2 class="chapter" id="c8">Hamlet, Horacio, Bernardo, marcelo</h2>
 <p>HORACIO.--Buenos días, señor.</p>
 <p>HAMLET.--Me alegro de verte bueno... ¿Es Horacio, ó me he olvidado de mí propio?</p>
 <p>HORACIO.--El mismo soy, y siempre vuestro humilde criado.</p>
@@ -198,9 +298,9 @@ h2 + p, .first { text-indent: 0; }
 <p>HAMLET.--Si él se me presenta en la figura de mi noble padre, yo le hablaré, aunque el infierno mismo abriendo sus entrañas, me impusiera silencio. Yo os pido á todos, que así como hasta ahora habéis callado a los demás lo que visteis, de hoy en adelante lo ocultéis con el mayor sigilo; y sea cual fuere el suceso de esta noche, fiadlo al pensamiento, pero no a la lengua; yo sabré remunerar vuestro celo. Dios os guarde, amigos. Entre once y doce iré á buscaros á la muralla.</p>
 <p>TODOS.--Nuestra obligación es serviros.</p>
 <p>HAMLET.--Sí, conservadme vuestro amor, y estad seguros del mío. Adiós. (Vanse los tres.) El espíritu de mi padre... con armas... no es esto bueno. Recelo alguna maldad. ¡Oh, si la noche hubiese ya llegado! Esperémosla tranquilamente, alma mía. Las malas acciones, aunque toda la tierra las oculte, se descubren al fin á la vista humana.</p>
-<h2>ESCENA VII</h2>
+<h2 class="chapter" id="c9">Escena VII</h2>
 <p>Sala de casa de Polonio</p>
-<h2>LAERTES, OFELIA</h2>
+<h2 class="chapter" id="c10">Laertes, Ofelia</h2>
 <p>LAERTES.--Ya tengo todo mi equipaje á bordo. Adiós, hermana, y cuando los vientos sean favorables y seguro el paso del mar, no te descuides en darme nuevas de ti.</p>
 <p>OFELIA.--¿Puedes dudarlo?</p>
 <p>LAERTES.--Por lo que hace al frívolo obsequio de Hamlet, debes considerarle como una mera cortesanía, un hervor de la sangre, una violeta que en la primavera juvenil de la naturaleza se adelanta á vivir, y no permanece; hermosa, no durable; perfume de un momento, y nada más.</p>
@@ -208,8 +308,7 @@ h2 + p, .first { text-indent: 0; }
 <p>LAERTES.--Pienso que no; porque no sólo en nuestra juventud se aumentan las fuerzas y tamaño del cuerpo, sino que las facultades interiores del talento y del alma crecen también con el templo en que ella reside. Puede ser que él te ame ahora con sinceridad, sin que manche borrón alguno la pureza de su intención; pero debes temer al considerar su grandeza, que no tiene voluntad propia, y que vive sujeto á obrar según á su nacimiento corresponde. El no puede, como una persona vulgar, elegir por sí mismo, puesto que de su elección depende la salud y la prosperidad de todo un reino; y ve aquí por qué esta elección debe arreglarse a la condescendencia unánime de aquel cuerpo de quien es cabeza. Así pues, cuando él diga que te ama, será prudencia en ti no darle crédito, reflexionando que en el alto lugar que ocupa, nada puede cumplir de lo que promete, sino aquello que obtenga el consentimiento de la parte más principal de Dinamarca. Considera cuál pérdida padecería tu honor, si con demasiada credulidad dieras oídos á su voz lisonjera, perdiendo la libertad del corazón, ó facilitando á sus instancias impetuosas el tesoro de tu honestidad. Teme, Ofelia; teme, querida hermana; no sigas inconsiderada tu inclinación; huye el peligro, colocándote fuera de tiro de los amorosos deseos. La doncella más honesta es libre en exceso, si descubre su belleza al rayo de la luna. La virtud misma no puede librarse de los golpes de la calumnia. Muchas veces el insecto roe las flores hijas del verano, aun antes que su botón se rompa; y al tiempo que la aurora matutina de la juventud esparce su blando rocío, los vientos mortíferos son más frecuentes. Conviene pues no omitir precaución alguna, pues la mayor seguridad estriba en el temor prudente. La juventud, aun cuando nadie la combata, halla en sí misma su propio enemigo.</p>
 <p>OFELIA.--Yo conservaré para defensa de mi corazón tus saludables máximas. Pero, mi buen hermano, mira no hagas tú lo que algunos rígidos pastores hacen, mostrando áspero y espinoso el camino del cielo, mientras como impíos y abandonados disolutos pisan ellos la senda florida de los placeres, sin cuidarse de practicar su propia doctrina.</p>
 <p>LAERTES.--¡Oh! no lo receles. Yo me detengo demasiado; pero allí viene mi padre: pues la ocasión es favorable, me despediré de él otra vez. Su bendición repetida será un nuevo consuelo para mí.</p>
-<h2>ESCENA VIII</h2>
-<h2>POLONIO, LAERTES, OFELIA</h2>
+<h2 class="chapter" id="c11">Escena VIII — Polonio, Laertes, Ofelia</h2>
 <p>POLONIO.--¿Aún estás aquí? ¡Qué mala vergüenza! A bordo, á bordo; el viento impele ya por la popa tus velas, y á ti solo aguardan. Recibe mi bendición, y procura imprimir en la memoria estos pocos preceptos: No publiques con facilidad lo que pienses, ni ejecutes cosa no bien premeditada primero. Debes ser afable, pero no vulgar en el trato. Une á tu alma con vínculos de acero aquellos amigos que adoptaste después de examinada su conducta; pero no acaricies con mano pródiga á los que acaban de salir del cascarón y aún están sin plumas. Huye siempre de mezclarte en disputas; pero una vez metido en ellas, obra de manera que tu contrario huya de ti. Presta el oído á todos, y á pocos la voz. Oye las censuras de los demás; pero reserva tu propia opinión. Sea tu vestido tan costoso cuanto tus facultades lo permitan, pero no afectado en su hechura; rico, no extravagante; porque el traje dice por lo común quién es el sujeto, y los caballeros y principales señores franceses tienen el gusto muy delicado en esta materia. Procura no dar ni pedir prestado á nadie; porque el que presta suele perder á un tiempo el dinero y el amigo, y el que se acostumbra á pedir prestado falta al espíritu de economía y buen orden que nos es tan útil. Pero sobre todo, usa de ingenuidad contigo mismo, y no podrás ser falso con los demás: consecuencia tan necesaria como que la noche suceda al día. Adiós, y él permita que mi bendición haga fructificar en ti esos consejos.</p>
 <p>LAERTES.--Humildemente os pido vuestra licencia.</p>
 <p>(Se arrodilla y besa la mano á Polonio.)</p>
@@ -217,10 +316,7 @@ h2 + p, .first { text-indent: 0; }
 <p>LAERTES.--Adiós, Ofelia (abrazándose Ofelia y Laertes) y acuérdate bien de lo que te he dicho.</p>
 <p>OFELIA.--En mi memoria queda guardado, y tú mismo tendrás la llave.</p>
 <p>LAERTES.--Adiós.</p>
-<h2>ESCENA IX</h2>
-<h2>POLONIO, OFELIA</h2>
 <p>POLONIO.--¿Y qué es lo que te ha dicho, Ofelia?</p>
-<p>OFELIA.--Si gustáis de saberlo, cosas relativas al príncipe Hamlet.</p>
 <p>POLONIO.--Bien pensado, en verdad. Me han dicho que de poco tiempo á esta parte te ha visitado varias veces privadamente, y que tú le has admitido con mucha complacencia y libertad. Si esto es así (como me lo han asegurado, á fin de que prevenga el riesgo), debo advertirte que no te has portado con aquella delicadeza que corresponde á una hija mía y á tu propio honor. ¿Qué es lo que ha pasado entre los dos? Dime la verdad.</p>
 <p>OFELIA.--Ultimamente me ha declarado con mucha ternura su amor.</p>
 <p>POLONIO.--¡Amor! ¡ah! Tú hablas como una muchacha loquilla y sin experiencia en circunstancias tan peligrosas. ¡Ternura la llamas! ¿Y tú das crédito á esa ternura?</p>
@@ -231,9 +327,9 @@ h2 + p, .first { text-indent: 0; }
 <p>OFELIA.--Y autorizó cuanto me decía con los más sagrados juramentos.</p>
 <p>POLONIO.--Sí, ésas son redes para coger codornices. Yo sé muy bien, cuando la sangre hierve, con cuánta prodigalidad presta el alma juramentos á la lengua; pero son relámpagos, hija mía, que dan más luz que calor: éstos y aquéllos se apagan pronto, y no debes tomarlos por fuego verdadero, ni aun en el instante mismo en que parece que sus promesas van á efectuarse. De hoy en adelante cuida de ser más avara de tu presencia virginal; pon tu conversación á precio más alto, y no á la primera insinuación admitas coloquios. Por lo que toca al príncipe, debes creer de él solamente que es un joven, y que si una vez afloja las riendas, pasará más allá de lo que tú le puedes permitir. En suma, Ofelia, no creas sus palabras, que son fementidas, ni es verdadero el color que aparenta; son intercesoras de profanos deseos; y si parecen sagrados y piadosos votos, es sólo para engañar mejor. Por último, te digo claramente, que de hoy más no quiero que pierdas los momentos ociosos en hablar ni mantener conversación con el príncipe. Cuidado con hacerlo así; yo te lo mando. Vete á tu aposento.</p>
 <p>OFELIA.--Así lo haré, señor.</p>
-<h2>ESCENA X</h2>
+<h2 class="chapter" id="c12">Escena X</h2>
 <p>Explanada delante del palacio. Noche obscura</p>
-<h2>HAMLET, HORACIO, MARCELO</h2>
+<h2 class="chapter" id="c13">Hamlet, Horacio, marcelo</h2>
 <p>HAMLET.--El aire es frío y sutil en demasía.</p>
 <p>HORACIO.--En efecto, es agudo y penetrante.</p>
 <p>HAMLET.--¿Qué hora es ya?</p>
@@ -260,16 +356,14 @@ h2 + p, .first { text-indent: 0; }
 <p>HAMLET.--Dejadme.</p>
 <p>HORACIO.--Creedme, no le sigáis.</p>
 <p>HAMLET.--Mis hados me conducen y prestan á la menor fibra de mi cuerpo la nerviosa robustez del león de Nemea. Aun me llama... Señores, apartad esas manos... por Dios... ó quedará muerto á las mías el que me detenga... Otra vez te digo que andes, que voy á seguirte.</p>
-<h2>ESCENA XI</h2>
-<h2>HORACIO, MARCELO</h2>
+<h2 class="chapter" id="c14">Escena XI — Horacio, marcelo</h2>
 <p>HORACIO.--Su exaltada imaginación le arrebata.</p>
 <p>MARCELO.--Sigámosle, que en esto no debemos obedecerle.</p>
 <p>HORACIO.--Sí, vamos detrás de él... ¿Cuál será el fin de este suceso?</p>
 <p>MARCELO.--Algún grave mal se oculta en Dinamarca.</p>
 <p>HORACIO.--Los cielos dirigirán el éxito.</p>
 <p>MARCELO.--Vamos, sigámosle.</p>
-<h2>ESCENA XII</h2>
-<h2>Parte remota cercana al mar vista á lo lejos del palacio de Elsingor</h2>
+<h2 class="chapter" id="c15">Escena XII — Parte remota cercana al mar vista á lo lejos del palacio de Elsingor</h2>
 <p>HAMLET, la sombra del rey HAMLET</p>
 <p>HAMLET.--¿A dónde me quieres llevar? Habla, yo no paso de aquí.</p>
 <p>LA SOMBRA.--Mírame.</p>
@@ -289,7 +383,7 @@ h2 + p, .first { text-indent: 0; }
 <p>LA SOMBRA.--Ya veo cuán dispuesto te hallas, y aunque tan insensible fueras como las malezas que se pudren incultas en las orillas del Leteo, no dejaría de conmoverte lo que voy á decir. Escúchame ahora, Hamlet. Esparcióse la voz de que estando en mi jardín dormido me mordió una serpiente. Todos los oídos de Dinamarca fueron groseramente engañados con esta fabulosa invención; pero tú debes saber, mancebo generoso, que la serpiente que mordió á tu padre hoy ciñe su corona.</p>
 <p>HAMLET.--¡Oh! Présago me lo decía el corazón. ¡Mi tío!...</p>
 <p>LA SOMBRA.--Sí, aquel incestuoso, aquel monstruo adúltero, valiéndose de su talento diabólico, valiéndose de traidores dádivas... (¡Oh, talento y dádivas malditas, que tal poder tenéis para seducir!) supo inclinar á su deshonesto apetito la voluntad de la reina mi esposa, que yo creía tan llena de virtud. ¡Oh, Hamlet, cuan grande fué su caída! Yo, cuyo amor para con ella fué tan puro... yo, siempre tan fiel á los solemnes juramentos que en nuestro desposorio le hice, yo fuí aborrecido, y se rindió a aquel miserable, cuyas prendas eran en verdad harto inferiores á las mías. Pero así como la virtud será incorruptible aunque la disolución procure excitarla bajo divina forma, así la incontinencia, aunque viviese unida á un ángel radiante, profanará con oprobio su tálamo celeste... Pero ya me parece que percibo el ambiente de la mañana. Debo ser breve. Dormía yo una tarde en mi jardín, según lo acostumbraba siempre. Tu tío me sorprende en aquella hora de quietud, y trayendo consigo una ampolla de licor venenoso, derrama en mi oído su ponzoñosa destilación, la cual de tal manera es contraria á la sangre del hombre, que semejante en la sutileza al mercurio, se dilata por todas las entradas y conductos del cuerpo, y con súbita fuerza le ocupa, cuajando la más pura y robusta sangre como la leche con las gotas ácidas. Este efecto produjo inmediatamente en mí, y el cutis hinchado, comenzó á despegarse á trechos con una especie de lepra en ásperas y asquerosas costras. Así fué, que estando durmiendo perdí á manos de mi hermano mismo mi corona, mi esposa y mi vida á un tiempo. Perdí la vida cuando mi pecado estaba en todo su vigor, sin hallarme dispuesto para aquel trance, sin haber recibido el pan eucarístico, sin haber sonado el clamor de la agonía, sin lugar al reconocimiento de tanta culpa, presentado al tribunal eterno con todas mis imperfecciones sobre mi cabeza. ¡Oh, maldad horrible, horrible!... Si oyes la voz de la naturaleza, no sufras, no, que el tálamo real de Dinamarca sea el lecho de la lujuria y abominable incesto. Pero de cualquier modo que dirijas la acción, no manches con delito el alma, previniendo ofensas á tu madre. Abandona este cuidado al cielo; deja que aquellas agudas puntas, que tiene fijas en su pecho, la hieran y atormenten. Adiós. Ya la luciérnaga, amortiguando su aparente fuego, nos anuncia la proximidad del día. Adiós, adiós. Acuérdate de mí.</p>
-<h2>ESCENA XIII</h2>
+<h2 class="chapter" id="c16">Escena XIII</h2>
 <p>HAMLET, y después HORACIO y MARCELO</p>
 <p>HAMLET.--¡Oh vosotros, ejércitos celestiales! ¡oh tierra!... ¿y quién más? ¿invocaré al infierno también?... ¡Eh! no... Deténte, corazón mío, deténte; y vos, mis nervios, no así os debilitéis en un momento, sostenedme robustos... ¡Acordarme de ti! Sí, alma infeliz, mientras haya memoria en este agitado mundo. ¡Acordarme de ti! Sí, yo me acordaré y yo borraré de mi fantasía todos los recuerdos frívolos, las sentencias de los libros, las ideas é impresiones de lo pasado que la juventud y la observación estamparon en ella. Tu precepto solo, sin mezcla de otra cosa menos digna, vivirá escrito en el volumen de mi entendimiento. Sí, por los cielos te lo juro... ¡Oh, mujer la más delincuente! ¡Oh, malvado, malvado! ¡halagüeño y execrable malvado! Conviene que yo apunte en este libro... (Saca un libro de memorias y escribe en él.) Sí... que un hombre puede halagar y sonreirse, y ser un malvado: á lo menos estoy seguro de que en Dinamarca hay un hombre así, y éste es mi tío... Sí, tú eres... ¡ Ah! pero la expresión que debo conservar es ésta: «Adiós, adiós, acuérdate de mí». Yo he jurado acordarme.</p>
 <p>HORACIO (gritando desde adentro).--¡Señor! ¡señor!</p>
@@ -337,10 +431,9 @@ h2 + p, .first { text-indent: 0; }
 <p>HAMLET.--Por eso como á un extraño debéis hospedarle y tenerle oculto. Ello es, Horacio, que en el cielo y en la tierra hay más de lo que puede soñar tu filosofía. Pero venid acá, y, como antes dije, prometedme (así el cielo os haga felices) que por más singular y extraordinaria que sea de hoy más mi conducta (puesto que acaso juzgaré á propósito afectar un proceder del todo extravagante), nunca vosotros al verme así daréis nada á entender, cruzando los brazos de esta manera, ó haciendo con la cabeza este movimiento, ó con frases equívocas como: sí, sí, nosotros sabemos; nosotros pudiéramos si quisiéramos... si gustáramos de hablar; hay tanto que decir en eso; pudiera ser que... ó en fin, cualquiera otra expresión ambigua, semejante á estas, por donde se infiera que vosotros sabéis algo de mí. Juradlo: así en vuestras necesidades os asista el favor de Dios. Juradlo.</p>
 <p>LA SOMBRA.--Jurad.</p>
 <p>HAMLET.--Descansa, descansa, agitado espíritu. Señores, yo me recomiendo a vosotros con la mayor instancia, y creed que por más infeliz que Hamlet se halle, Dios querrá que no le falten medios para manifestaros la estimación y amistad que os profesa. Vámonos. Poned el dedo en la boca, yo os lo ruego... La naturaleza está en desorden... ¡Iniquidad execrable! ¡Oh! ¡nunca yo hubiera nacido para castigarla! Venid, vámonos juntos.</p>
-<h2>ACTO II</h2>
-<h2>ESCENA PRIMERA</h2>
+<h2 class="chapter" id="c17">Acto II — Escena primera</h2>
 <p>Sala en casa de Polonio</p>
-<h2>POLONIO, REINALDO</h2>
+<h2 class="chapter" id="c18">Polonio, reinaldo</h2>
 <p>POLONIO.--Reinaldo, entrégale este dinero y estas cartas.</p>
 <p>(Le da un bolsillo y unas cartas.)</p>
 <p>REINALDO.--Así lo haré, señor.</p>
@@ -369,8 +462,7 @@ h2 + p, .first { text-indent: 0; }
 <p>POLONIO.--Dejándole que obre libremente.</p>
 <p>REINALDO.--Está bien, señor.</p>
 <p>POLONIO.--Adiós.</p>
-<h2>ESCENA II</h2>
-<h2>POLONIO, OFELIA</h2>
+<h2 class="chapter" id="c19">Escena II — Polonio, Ofelia</h2>
 <p>POLONIO.--Y bien, Ofelia, ¿qué hay de nuevo?</p>
 <p>OFELIA.--¡Ay, señor, que he tenido un susto muy grande!</p>
 <p>POLONIO.--¿Con qué motivo? Por Dios que me lo digas.</p>
@@ -382,9 +474,6 @@ h2 + p, .first { text-indent: 0; }
 <p>POLONIO.--Ven, conmigo; quiero ver al rey. Ese es un verdadero éxtasis de amor, que siempre fatal á sí mismo en un exceso violento, inclina la voluntad á empresas temerarias, más que ninguna otra pasión de cuantas debajo del cielo combaten nuestra naturaleza. Mucho siento este accidente. Pero dime, ¿le has tratado con dureza en estos últimos días?</p>
 <p>OFELIA.--No, señor: sólo en cumplimiento de lo que mandasteis, le he devuelto sus cartas, y me he negado á sus visitas.</p>
 <p>POLONIO.--Y eso basta para haberle trastornado así. Me pesa no haber juzgado con más acierto de su pasión. Yo temí que era sólo un artificio suyo para perderte... ¡Sospecha indigna! ¡Eh! Tan propio parece de la edad anciana pasar más allá de lo justo en sus conjeturas, como lo es en la juventud la falta de previsión. Vamos á ver al rey. Conviene que lo sepa. Si le callo este amor, sería más grande el sentimiento que pudiera causarte teniéndole oculto, que el disgusto que recibirá al saberlo. Vamos.</p>
-<h2>ESCENA III</h2>
-<p>Salón de palacio</p>
-<p>CLAUDIO, GERTRUDIS, RICARDO, GUILLERMO, acompañamiento</p>
 <p>CLAUDIO.--Bien venido, Guillermo; y tú también, querido Ricardo. Además de lo mucho que se me dilata el veros, la necesidad que tengo de vosotros me ha determinado á solicitar vuestra venida. Algo habéis oído ya de la transformación de Hamlet. Así puedo llamarla, puesto que ni en lo interior ni en lo exterior se parece nada al que antes era; ni llego á imaginar qué otra causa haya podido privarle así de la razón, si ya no es la muerte de su padre. Yo os ruego á entrambos, pues desde la primera infancia os habéis criado con él, y existe entre vosotros aquella intimidad nacida de la igualdad en los años y el genio, que tengáis á bien deteneros en mi corte algunos días. Acaso el trato vuestro restablecerá su alegría; y aprovechando las ocasiones que se presenten, ved cuál sea la ignorada aflicción que así le consume, para que descubriéndola procuremos su alivio.</p>
 <p>GERTRUDIS.--El ha hablado mucho de vosotros, mis buenos señores, y estoy segura de que no se hallarán otros dos sujetos á quienes él profese mayor cariño. Si tanta fuese vuestra bondad, que gustéis de pasar con nosotros algún tiempo para contribuir al logro de mi esperanza, vuestra asistencia será remunerada como corresponde al agradecimiento de un rey.</p>
 <p>RICARDO.--VV. MM. tienen soberana autoridad en nosotros, y en vez de rogar deben mandarnos.</p>
@@ -393,7 +482,7 @@ h2 + p, .first { text-indent: 0; }
 <p>GERTRUDIS.--Os quedo muy agradecida, señores, y os pido que veáis cuanto antes á mi doliente hijo. (A los criados.) Conduzca alguno de vosotros á estos caballeros adonde Hamlet se halle.</p>
 <p>GUILLERMO.--Haga el cielo que nuestra compañía y nuestros conatos puedan serle agradables y útiles.</p>
 <p>GERTRUDIS.--Sí. Amén.</p>
-<h2>ESCENA IV</h2>
+<h2 class="chapter" id="c20">Escena IV</h2>
 <p>CLAUDIO, GERTRUDIS, POLONIO, acompañamiento</p>
 <p>POLONIO.--Señor: los embajadores enviados a Noruega han vuelto ya en extremo contentos.</p>
 <p>CLAUDIO.--Siempre has sido tú padre de buenas nuevas.</p>
@@ -403,14 +492,13 @@ h2 + p, .first { text-indent: 0; }
 <p>CLAUDIO.--Tú mismo puedes ir á cumplimentarlos é introducirlos. (Vase Polonio.) Dice que ha descubierto, amada Gertrudis, la causa verdadera de la indisposición de tu hijo.</p>
 <p>GERTRUDIS.--¡Ah! yo dudo que él tenga otra mayor que la muerte de su padre y nuestro acelerado casamiento.</p>
 <p>CLAUDIO.--Yo sabré examinarle.</p>
-<h2>ESCENA V</h2>
+<h2 class="chapter" id="c21">Escena V</h2>
 <p>CLAUDIO, GERTRUDIS, POLONIO, VOLTIMAN, CORNELIO, acompañamiento</p>
 <p>CLAUDIO.--Bien venidos, amigos. Dí, Voltiman, ¿qué respondió nuestro hermano el rey de Noruega?</p>
 <p>VOLTIMAN.--Corresponde con la más sincera amistad á vuestras atenciones y á vuestro ruego. Así que llegamos mandó suspender los armamentos que hacía su sobrino, fingiendo ser preparativos contra el polaco; pero mejor informado después halló ser cierto que se dirigían en ofensa vuestra. Indignado de que abusaran así de la impotencia á que le han reducido su edad y sus males, envió estrechas órdenes á Fortimbrás, que sometiéndose prontamente á las reprensiones del tío, le ha jurado por último que nunca más tomará las armas contra V. M. Satisfecho de este procedimiento el anciano rey, le señala sesenta mil escudos anuales, y le permite emplear contra Polonia las tropas que había levantado. A este fin os ruega concedáis paso libre por vuestros estados al ejército prevenido para tal empresa, bajo las condiciones de recíproca seguridad, expresadas aquí.</p>
 <p>(Saca unos papeles y se los da a Claudio.)</p>
 <p>CLAUDIO.--Está bien: leeré en tiempo más oportuno sus proposiciones, y reflexionaré lo que debo en este caso responderle. Entre tanto os doy gracias por el feliz desempeño de vuestro encargo. Descansad. A la noche seréis conmigo en el festín. Tendré gusto de veros.</p>
-<h2>ESCENA VI</h2>
-<h2>CLAUDIO, GERTRUDIS, POLONIO</h2>
+<h2 class="chapter" id="c22">Escena vi — Claudio, gertrudis, polonio</h2>
 <p>POLONIO.--Este asunto se ha concluído muy bien. (Claudio hace una seña, y se retira el acompañamiento). Mi soberano, y vos, señora: explicar lo que es la dignidad de un monarca, las obligaciones del vasallo, por qué el día es día, noche la noche, y tiempo el tiempo. Así pues, como quiera que la brevedad es el alma del talento, y que nada hay más enfadoso que los rodeos y perífrasis... seré muy breve. Vuestro noble hijo está loco; y le llamo loco, porque, si en rigor se examina, ¿qué otra cosa es la locura sino estar uno enteramente loco? Pero dejando esto aparte...</p>
 <p>GERTRUDIS.--Al caso, Polonio, al caso, y menos artificios.</p>
 <p>POLONIO.--Yo os prometo, señora, que no me valgo de artificio alguno; ¡es cierto que él está loco! es cierto que es lástima, y es lástima que sea cierto; pero dejemos á un lado pueril antítesis, que no quiero usar de artificios. Convengamos pues en que está loco, y ahora falta descubrir la causa de este efecto, ó por decir, la causa de este defecto; porque este efecto defectuoso nace de una causa, y así resta considerar lo restante. Yo tengo una hija... la tengo mientras es mía: que en prueba de su respeto y sumisión... notad lo que os digo... me ha entregado esta carta. (Saca una carta y lee en ella los pedazos que indica el diálogo.) Ahora resumid los hechos y sacaréis la consecuencia. «Al ídolo celestial de mi alma, á la sin par Ofelia»... Es una alta frase... una falta de frase sin par... Es una falta de frase, pero oíd lo demás. Estas letras destinadas á que tu blanco y hermoso pecho las guarde: estas...</p>
@@ -435,8 +523,7 @@ h2 + p, .first { text-indent: 0; }
 <p>CLAUDIO.--Sí, y lo quiero averiguar.</p>
 <p>GERTRUDIS.--Pero, ¿veis? ¡Qué lástima! Leyendo viene el infeliz.</p>
 <p>POLONIO.--Retiraos, yo os lo suplico: retiraos entrambos, que le quiero hablar si me dais licencia.</p>
-<h2>ESCENA VII</h2>
-<h2>POLONIO, HAMLET</h2>
+<h2 class="chapter" id="c23">Escena VII — Polonio, Hamlet</h2>
 <p>POLONIO.--¿Cómo os va, mi buen señor?</p>
 <p>(Hamlet sale leyendo un libro.)</p>
 <p>HAMLET.--Bien, á Dios gracias.</p>
@@ -463,8 +550,7 @@ h2 + p, .first { text-indent: 0; }
 <p>POLONIO.--Adiós, señor.</p>
 <p>HAMLET.--¡Fastidiosos y extravagantes viejos!</p>
 <p>POLONIO (á Guillermo y Ricardo, que salen por donde él se va).--Si buscáis al príncipe, vedle ahí.</p>
-<h2>ESCENA VIII</h2>
-<h2>HAMLET, RICARDO, GUILLERMO</h2>
+<h2 class="chapter" id="c24">Escena VIII — Hamlet, ricardo, guillermo</h2>
 <p>RICARDO.--Buenos días, señor.</p>
 <p>GUILLERMO.--Dios guarde á V. A.</p>
 <p>RICARDO.--Mi venerado príncipe.</p>
@@ -524,7 +610,7 @@ h2 + p, .first { text-indent: 0; }
 <p>HAMLET.--Pues, caballeros, muy bien venidos á Elsingor; acercaos aquí, dadme las manos. Las señales de una buena acogida consisten por lo común en ceremonias y cumplimientos; pero permitid que os trate así, porque os hago saber que yo debo recibir muy bien á los cómicos en lo exterior, y no quisiera que las distinciones que á ellos les haga pareciesen mayores que las que os hago á vosotros. Bien venidos... Pero mi tío padre, y mi madre tía, á fe á fe, que se equivocan mucho.</p>
 <p>GUILLERMO.--¿En qué, señor?</p>
 <p>HAMLET.--Yo no estoy loco, sino cuando sopla el nordeste; pero cuando corre el sur, distingo muy bien un huevo de una castaña.</p>
-<h2>ESCENA IX</h2>
+<h2 class="chapter" id="c25">Escena IX</h2>
 <p>POLONIO y dichos</p>
 <p>POLONIO.--Dios os guarde, señores.</p>
 <p>HAMLET.--Oye aquí, Guillermo, y tú también... un oyente á cada lado. ¿Veis aquel vejestorio que acaba de entrar? Pues aun no ha salido de mantillas.</p>
@@ -551,7 +637,7 @@ h2 + p, .first { text-indent: 0; }
 <p>No hay más suerte que Dios, ni más destino. Y luego, ya sabes:</p>
 <p>Que cuanto nos sucede El lo previno.</p>
 <p>Lee la primera línea de aquella devota canción, y ella sola te manifestará lo demás. Pero, ¿veis? Ahí vienen otros á hablar por mí.</p>
-<h2>ESCENA X</h2>
+<h2 class="chapter" id="c26">Escena X</h2>
 <p>HAMLET, RICARDO, GUILLERMO, POLONIO y cuatro cómicos</p>
 <p>HAMLET.--Bien venidos, señores; me alegro de veros á todos tan buenos. Bien venidos... ¡Oh! ¡oh camarada antiguo! mucho se te ha arrugado la cara desde la última vez que te vi. ¿Vienes á Dinamarca á hacerme parecer viejo á mí también? ¡Y tú, mi niña, oiga! ya eres una señorita; por la Virgen, que ya está vuesamerced una cuarta más cerca del cielo desde que no la he visto. Dios quiera que tu voz, semejante á una pieza de oro falso, no se descubra al echarla en el crisol. Señores, muy bien venidos todos. Pero, amigos, yo voy en derechura al caso, y corro detrás del primer objeto que se me presenta, como halconero francés. Yo quiero al instante una relación. Sí, veamos alguna prueba de vuestra habilidad. Vaya un pasaje afectuoso.</p>
 <p>CÓMICO 1.º--¿Y cuál queréis, señor?</p>
@@ -581,13 +667,11 @@ h2 + p, .first { text-indent: 0; }
 <p>HAMLET.--Muy bien; pues vete con aquel caballero, y cuenta no hagáis burla de él. Amigos, hasta la noche. Pasadlo bien.</p>
 <p>RICARDO.--Señor...</p>
 <p>HAMLET.--Id con Dios.</p>
-<h2>ESCENA XI</h2>
-<h2>HAMLET</h2>
+<h2 class="chapter" id="c27">Escena XI — Hamlet</h2>
 <p>Ya estoy solo. ¡Qué abatido, qué insensible soy! ¿No es admirable que este actor, en una fábula, en una ficción, pueda dirigir tan á su placer el ánimo, que así agite y desfigure el rostro en la declamación, vertiendo de sus ojos lágrimas, débil la voz, y todas sus acciones tan acomodadas á lo que quiere expresar? Y esto por nadie: por Hécuba. ¿Y quién es Hécuba para él, ó él para ella, que así llora sus infortunios? Pues ¡qué no haría si él tuviese los tristes motivos de dolor que yo tengo! Inundaría el teatro con llanto, su terrible acento conturbaría á cuantos le oyesen, llenaría de desesperación al culpado, de temor al inocente, al ignorante de confusión, y sorprendería con asombro la facultad de los ojos y los oídos. ¡Pero yo, miserable, sin vigor y estúpido, sueño adormecido, permanezco mudo, y miro con tal indiferencia mis agravios! Qué, ¿nada merece un rey con quien se cometió el más atroz delito para despojarle del cetro y la vida? ¿Soy cobarde yo? ¿Quién se atreve á llamarme villano, ó á insultarme en mi presencia, arrancarme la barba, soplármela al rostro, asirme de la nariz, ó hacerme tragar lejía que me llegue al pulmón? ¿Quién se atreve a tanto? ¿Sería yo capaz de sufrirlo? Sí, que no es posible sino que yo sea como la paloma, que carece de hiel, incapaz de acciones crueles; á no ser esto, ya se hubieran cebado los milanos del aire en los despojos de aquel indigno, deshonesto, homicida, pérfido seductor, feroz malvado, que vive sin remordimientos de su culpa. Pero ¿por qué he de ser tan necio? ¿Será generoso proceder el mío, que yo, hijo de un querido padre (de cuya muerte alevosa el cielo y el infierno mismo me piden venganza), afeminado y débil desahogue con palabras el corazón, prorrumpa en execraciones vanas como una prostituta vil ó un pillo de cocina? ¡Ah! no, ni aun sólo imaginarlo. ¡Eh!... Yo he oído que tal vez asistiendo á una representación hombres muy culpados, han sido heridos en el alma con tal violencia por la ilusión del teatro, que á vista de todos han publicado sus delitos; que la culpa, aunque sin lengua, siempre se manifestará por medios maravillosos. Yo haré que estos actores representen delante de mi tío algún pasaje que tenga semejanza con la muerte de mi padre. Yo le heriré en lo más vivo del corazón, observaré sus miradas; si muda de color, si se estremece, ya sé lo que me toca hacer. La aparición que vi pudiera ser un espíritu del infierno. Al demonio no le es difícil presentarse bajo la más agradable forma; sí, y acaso como él es tan poderoso sobre una imaginación perturbada, valiéndose de mi propia debilidad y melancolía, me engaña para perderme. Yo voy á adquirir pruebas más sólidas, y esta representación ha de ser el lazo en que se enrede la conciencia del rey.</p>
-<h2>ACTO III</h2>
-<h2>ESCENA PRIMERA</h2>
+<h2 class="chapter" id="c28">Acto III — Escena primera</h2>
 <p>Galería de palacio</p>
-<h2>CLAUDIO, GERTRUDIS, POLONIO, OFELIA, RICARDO, GUILLERMO</h2>
+<h2 class="chapter" id="c29">Claudio, gertrudis, polonio, Ofelia, ricardo, guillermo</h2>
 <p>CLAUDIO.--¿Y no os fué posible indagar en la conversación que con él tuvisteis, de qué nace aquel desorden de espíritu que tan cruelmente altera su quietud con turbulenta y peligrosa demencia?</p>
 <p>RICARDO.--El mismo reconoce los extravíos de su razón, pero no ha querido manifestarnos el origen de ellos.</p>
 <p>GUILLERMO.--Ni le hallamos en disposición de ser examinado, porque siempre huye de la cuestión con un rasgo de locura, cuando ve que le conducimos al punto de descubrir la verdad.</p>
@@ -600,18 +684,15 @@ h2 + p, .first { text-indent: 0; }
 <p>POLONIO.--Así es la verdad, y me ha encargado de suplicar á VV. MM. que asistan á verla y oirla.</p>
 <p>CLAUDIO.--Con mucho gusto: me complace en extremo saber que tiene tal inclinación. Vosotros, señores, excitadle á ella, y aplaudid su propensión á este género de placeres.</p>
 <p>RICARDO.--Así lo haremos.</p>
-<h2>ESCENA II</h2>
-<h2>CLAUDIO, GERTRUDIS, POLONIO, OFELIA</h2>
+<h2 class="chapter" id="c30">Escena II — Claudio, gertrudis, polonio, Ofelia</h2>
 <p>CLAUDIO.--Tú, mi amada Gertrudis, deberás también retirarte, porque hemos dispuesto que Hamlet al venir aquí, como si fuera casualidad, encuentre á Ofelia. Su padre y yo, testigos los más aptos para el fin, nos colocaremos donde veamos sin ser vistos: así podremos juzgar de lo que entre ambos pase, y en las acciones y palabras del príncipe conoceremos si es pasión de amor el mal de que adolece.</p>
 <p>GERTRUDIS.--Voy á obedeceros; y por mi parte, Ofelia, ¡oh, cuánto desearía que tu rara hermosura fuese el dichoso origen de la demencia de Hamlet! Entonces yo debería esperar que tus prendas amables pudieran para vuestra mutua felicidad restituirle su salud perdida.</p>
 <p>OFELIA.--Yo, señora, también quisiera que fuese así.</p>
-<h2>ESCENA III</h2>
-<h2>CLAUDIO, POLONIO, OFELIA</h2>
+<h2 class="chapter" id="c31">Escena III — Claudio, polonio, Ofelia</h2>
 <p>POLONIO.--Paséate por aquí, Ofelia. Si V. M. gusta podemos ya ocultarnos. Haz que lees en este libro (dándole un libro): esta ocupación disculpará la soledad del sitio... ¡Materia es por cierto en que tenemos mucho de que acusarnos! ¡Cuántas veces con el semblante de la devoción y la apariencia de acciones piadosas engañamos al diablo mismo!</p>
 <p>CLAUDIO.--Demasiado cierto es... (Ap.) ¡Qué cruelmente ha herido esa reflexión mi conciencia! El rostro de la meretriz, hermoseada con el arte, no es más feo despojado de los afeites, que lo es mi delito disimulado en palabras traidoras. ¡Oh, qué pesada carga me oprime!</p>
 <p>POLONIO.--Ya le siento llegar, señor; conviene retirarnos.</p>
-<h2>ESCENA IV</h2>
-<h2>HAMLET, OFELIA</h2>
+<h2 class="chapter" id="c32">Escena IV — Hamlet, Ofelia</h2>
 <p>(Hamlet dirá este monólogo, creyéndose solo. Ofelia á un extremo del teatro lee.)</p>
 <p>HAMLET.--Existir o no existir, ésta es la cuestión. ¿Cuál es más digna acción del ánimo: sufrir los tiros penetrantes de la fortuna injusta, ú oponer los brazos a este torrente de calamidades, y darles fin con atrevida resistencia? Morir es dormir. ¿No más? ¿Y por un sueño, diremos, las aflicciones se acabaron y los dolores sin número, patrimonio de nuestra débil naturaleza?... Este es un término que deberíamos solicitar con ansia. Morir es dormir... y tal vez soñar. Sí, y ved aquí el grande obstáculo; porque el considerar qué sueños podrán ocurrir en el silencio del sepulcro, cuando hayamos abandonado este despojo mortal, es razón harto poderosa para detenernos. Esta es la consideración que hace nuestra infelicidad tan larga. ¿Quién, si esto no fuese, aguantaría la lentitud de los tribunales, la insolencia de los empleados, las tropelías que recibe pacífico el mérito, de los hombres más indignos, las angustias de un mal pagado amor, las injurias y quebrantos de la edad, la violencia de los tiranos, el desprecio de los soberbios, cuando el que esto sufre pudiera procurar su quietud con sólo un puñal? ¿Quién podría tolerar tanta opresión, sudando, gimiendo bajo el peso de una vida molesta, si no fuese que el temor de que existe alguna cosa más allá de la muerte (aquel país desconocido, de cuyos límites ningún caminante torna) nos embaraza en dudas y nos hace sufrir los males que nos cercan, antes que ir á buscar otros de que no tenemos seguro conocimiento? Esta previsión nos hace á todos cobardes: así la natural tintura de valor se debilita con los barnices pálidos de la prudencia; las empresas de mayor importancia por esta sola consideración mudan camino, no se ejecutan, y se reducen á designios vanos. Pero... ¡la hermosa Ofelia! Graciosa niña, espero que mis defectos no serán olvidados en tus oraciones.</p>
 <p>OFELIA.--¿Cómo os habéis sentido, señor, en todos estos días?</p>
@@ -639,18 +720,15 @@ h2 + p, .first { text-indent: 0; }
 <p>(Hace, que se va, y vuelve).</p>
 <p>OFELIA.--¡El cielo con su poder le alivie!</p>
 <p>HAMLET.--He oído hablar mucho de vuestros afeites y embelecos. La naturaleza os dió una cara, y vosotras os hacéis otra distinta. Con esos brinquillos, ese pasito corto, ese hablar aniñado, pasáis por inocentes y convertís en gracia vuestros defectos mismos. Pero no hablemos más de esta materia, que me ha hecho perder la razón... Digo sólo que de hoy en adelante no habrá más casamientos; los que ya están casados (exceptuando uno) permanecerán así; los otros se quedarán solteros... Véte al convento, véte.</p>
-<h2>ESCENA V</h2>
-<h2>OFELIA</h2>
+<h2 class="chapter" id="c33">Escena V — Ofelia</h2>
 <p>¡Oh, qué trastorno ha padecido esa alma generosa! La penetración del cortesano, la lengua del sabio, la espada del guerrero, la esperanza y delicias del estado, el espejo de la cultura, el modelo de la gentileza que estudiaban los más advertidos, todo, todo se ha aniquilado. Y yo, la más desconsolada é infeliz de las mujeres, que gusté algún día la miel de sus promesas suaves, veo ahora aquel noble y sublime entendimiento desacordado, como la campana sonora que se hiende; aquella incomparable presencia, aquel semblante de florida juventud, alterado con el frenesí. ¡ Oh, cuánta, cuánta es mi desdicha de haber visto lo que vi, para ver ahora lo que veo!</p>
-<h2>ESCENA VI</h2>
-<h2>CLAUDIO, POLONIO, OFELIA</h2>
+<h2 class="chapter" id="c34">Escena vi — Claudio, polonio, Ofelia</h2>
 <p>CLAUDIO.--¡Amor! ¡Qué! No van por este camino sus afectos; ni en lo que ha dicho, aunque algo falto de orden, hay nada que parezca locura. Alguna idea tiene en el ánimo que cubre y fomenta su melancolía, y recelo que ha de ser un mal el fruto que produzca. A fin de prevenirlo, he resuelto que salga prontamente para Inglaterra á pedir en mi nombre los atrasados tributos. Acaso el mar y los países diferentes podrán con la variedad de objetos alejar esta pasión que le ocupa, sea la que fuere, sobre la cual su imaginación sin cesar golpea. ¿Qué te parece?</p>
 <p>POLONIO.--Que así es lo mejor. Pero yo creo, no obstante, que el origen y principio de su aflicción provengan de un amor mal correspondido. Tú, Ofelia, no hay para qué nos cuentes lo que te ha dicho el príncipe, que todo lo hemos oído.</p>
-<h2>ESCENA VII</h2>
-<h2>CLAUDIO, POLONIO</h2>
+<h2 class="chapter" id="c35">Escena VII — Claudio, polonio</h2>
 <p>POLONIO.--Haced lo que os parezca, señor; pero si lo juzgáis á propósito, sería bien que la reina retirada á solas con él, luego que se acabe el espectáculo le inste a que le manifieste sus penas, hablándole con entera libertad. Yo, si lo permitís, me pondré en paraje de donde pueda oir toda la conversación. Si no logra su madre descubrir este arcano, enviadle á Inglaterra, ó desterradle adonde vuestra prudencia os dicte.</p>
 <p>CLAUDIO.--Así se hará. La locura de los poderosos debe ser examinada con escrupulosa atención.</p>
-<h2>ESCENA VIII</h2>
+<h2 class="chapter" id="c36">Escena VIII</h2>
 <p>Salón de palacio</p>
 <p>El salón estará iluminado; habrá asientos que formen semicírculo para el concurso que ha de asistir al espectáculo. Ha de haber en el foro una gran puerta con pabellones y cortina, por donde saldrán á su tiempo los actores que deben representar.</p>
 <p>HAMLET y dos cómicos</p>
@@ -659,14 +737,12 @@ h2 + p, .first { text-indent: 0; }
 <p>HAMLET.--Ni seas tampoco demasiado frío; tu misma prudencia debe guiarte. La acción debe corresponder á la palabra, y ésta á la acción, cuidando siempre de no atropellar la simplicidad de la naturaleza. No hay defecto que más se oponga al fin de la representación, que desde el principio hasta ahora ha sido y es ofrecer á la naturaleza un espejo en que vea la virtud su propia forma, el vicio su imagen, cada nación y cada siglo sus principales caracteres. Si esta pintura se exagera ó se debilita, excitará la risa de los ignorantes; pero no puede menos de disgustar á los hombres de buena razón, cuya censura debe ser para vosotros de más peso que la de toda la multitud que llena el teatro. Yo he visto representar á algunos cómicos, que otros aplaudían con entusiasmo, por no decir con escándalo, los cuales no tenían acento ni figura de cristianos, ni de gentiles, ni de hombres; que al verlos hincharse y bramar no los juzgué de la especie humana, sino unos simulacros rudos de hombres, hechos por algún mal aprendiz. Tan inicuamente imitaban la naturaleza.</p>
 <p>CÓMICO 1.º--Yo creo que en nuestra compañía se ha corregido bastante ese defecto.</p>
 <p>HAMLET.--Corregidle del todo, y cuidad también que los que hacen de payos no añadan nada á lo que está escrito en su papel; porque algunos de ellos, para hacer reir á los oyentes más adustos, empiezan á dar risotadas, cuando el interés del drama debería ocupar toda la atención. Esto es indigno, y manifiesta en los necios que lo practican el ridículo empeño de lucirlo. Id á prepararos.</p>
-<h2>ESCENA IX</h2>
-<h2>HAMLET, POLONIO, RICARDO, GUILLERMO</h2>
+<h2 class="chapter" id="c37">Escena IX — Hamlet, polonio, ricardo, guillermo</h2>
 <p>HAMLET.--Y bien, Polonio, ¿gustará al rey de oir esta pieza?</p>
 <p>POLONIO.--Sí, señor, al instante, y la reina también.</p>
 <p>HAMLET.--Ve á decir á los cómicos que se despachen. ¿Queréis ir vosotros á darles prisa?</p>
 <p>RICARDO.--Con mucho gusto.</p>
-<h2>ESCENA X</h2>
-<h2>HAMLET, HORACIO</h2>
+<h2 class="chapter" id="c38">Escena X — Hamlet, Horacio</h2>
 <p>HAMLET.--¿Quién es?... ¡Ah! Horacio.</p>
 <p>HORACIO.--Veisme aquí, señor, á vuestras órdenes.</p>
 <p>HAMLET.--Tú, Horacio, eres un hombre cuyo trato me ha agradado siempre.</p>
@@ -674,7 +750,7 @@ h2 + p, .first { text-indent: 0; }
 <p>HAMLET.--No creas que pretendo adularte; ¿ni qué utilidades puedo yo esperar de ti, que exceptuando tus buenas prendas, no tienes otras rentas para alimentarte y vestirte? ¿Habrá quien adule al pobre? No... Los que tienen almibarada la lengua, váyanse á lamer con ella la grandeza estúpida, y doblen los goznes de sus rodillas donde la lisonja encuentre galardón. ¿Me has entendido? Desde que mi alma se halló capaz de conocer á los hombres y pudo elegirlos, tú fuiste el escogido y marcado para ella; porque siempre, ó desgraciado ó feliz, has recibido con igual semblante los premios y los reveses de la fortuna. Dichosos aquéllos cuyo temperamento y juicio se combinan con tal acuerdo, que no son entre los dedos de la fortuna una flauta dispuesta á sonar según ella guste. Dame un hombre que no sea esclavo de sus pasiones, y yo le colocaré en el centro de mi corazón: sí, en el corazón de mi corazón, como lo hago contigo. Pero yo me dilato demasiado en esto. Esta noche se representa un drama delante del rey; una de sus escenas contiene circunstancias muy parecidas á las de la muerte de mi padre, de que ya te hablé. Te encargo que cuando este paso se represente observes á mi tío con la más viva atención del alma; si al ver uno de aquellos lances su oculto delito no se descubre por sí solo, sin duda el que hemos visto es un espíritu infernal, y son todas mis ideas más negras que los yunques de Vulcano. Examínale cuidadosamente: yo también fijaré mi vista en su rostro, y después uniremos nuestras observaciones para juzgar lo que su exterior nos anuncie.</p>
 <p>HORACIO.--Está bien, señor; y si durante el espectáculo logra hurtar á nuestra indagación el menor arcano, yo pago el hurto.</p>
 <p>HAMLET.--Ya vienen á la función; vuélvome á hacer el loco, y tú busca asiento.</p>
-<h2>ESCENA XI</h2>
+<h2 class="chapter" id="c39">Escena XI</h2>
 <p>CLAUDIO, GERTRUDIS, HAMLET, HORACIO, POLONIO, OFELIA, RICARDO, GUILLERMO y acompañamiento de damas, caballeros, pajes y guardias.</p>
 <p>(Suena marcha dánica).</p>
 <p>CLAUDIO.--¿Cómo estás, mi querido Hamlet?</p>
@@ -710,7 +786,7 @@ h2 + p, .first { text-indent: 0; }
 <p>OFELIA.--¿Qué significa esto, señor?</p>
 <p>HAMLET.--Esto es un asesinato oculto, y anuncia grandes maldades.</p>
 <p>OFELIA.--Según parece, la escena muda contiene el argumento del drama.</p>
-<h2>ESCENA XII</h2>
+<h2 class="chapter" id="c40">Escena XII</h2>
 <p>Cómico cuarto y dichos</p>
 <p>HAMLET.--Ahora lo sabremos por lo que nos diga ese actor; los cómicos no pueden callar un secreto, todo lo cuentan.</p>
 <p>OFELIA.--¿Nos dirá éste lo que significa la escena que hemos visto?</p>
@@ -720,7 +796,7 @@ h2 + p, .first { text-indent: 0; }
 <p>HAMLET.--¿Es esto prólogo, ú mote de sortija?</p>
 <p>OFELIA.--¡Qué corto ha sido!</p>
 <p>HAMLET.--Como cariño de mujer.</p>
-<h2>ESCENA XIII</h2>
+<h2 class="chapter" id="c41">Escena XIII</h2>
 <p>Cómico primero, cómico segundo y dichos</p>
 <p>CÓMICO 1.º--Ya treinta vueltas dió de Febo el carro á las ondas saladas de Nereo y al globo de la tierra, y treinta veces con luz prestada han alumbrado el suelo doce lunas, en giros repetidos, después que el dios de amor y el himeneo nos enlazaron, para dicha nuestra, en nudo santo el corazón y el cuello.</p>
 <p>CÓMICO 2.º--Y ¡oh! quiera el cielo que otros tantos giros á la luna y al sol, señor, contemos antes que el fuego; de este amor se apague. Pero es mi pena inconsolable al veros doliente, triste y tan diverso ahora de aquel que fuisteis... Tímida recelo... Mas toda mi aflicción nada os conturbe; que en pecho femenil llega al exceso el temor y el amor. Allí residen en igual proporción ambos afectos, ó no existe ninguno, ó se combinan éste y aquél con el mayor extremo. Cuán grande es el amor que á vos me inclina, las pruebas lo dirán que dadas tengo; pues tal es mi temor. Si un fino amante, sin motivo tal vez vive temiendo, la que al veros así toda es temores, muy puro amor abrigará en el pecho.</p>
@@ -741,7 +817,7 @@ h2 + p, .first { text-indent: 0; }
 <p>HAMLET.--No, señor, no. Si todo ello es mera ficción; un veneno... fingido; pero mal ejemplo, ¡qué! no, señor.</p>
 <p>CLAUDIO.--¿Cómo se intitula este drama?</p>
 <p>HAMLET.--La Ratonera. Cierto que sí... es un título metafórico. En esta pieza se trata de un homicidio cometido en Viena... el duque se llama Gonzago, y su mujer Baptista... Ya, ya veréis presto... ¡Oh! ¡es un enredo maldito! ¿Y qué importa? A V. M. y á mí, que no tenemos culpado el ánimo, no nos puede incomodar; al rocín que esté lleno de mataduras le hará dar coces; pero á bien que nosotros no tenemos desollado el lomo.</p>
-<h2>ESCENA XIV</h2>
+<h2 class="chapter" id="c42">Escena XIV</h2>
 <p>Cómico tercero y dichos</p>
 <p>HAMLET.--Este que sale ahora se llama Luciano, sobrino del duque.</p>
 <p>OFELIA.--Vos suplís perfectamente la falta del coro.</p>
@@ -760,7 +836,7 @@ h2 + p, .first { text-indent: 0; }
 <p>POLONIO.--No paséis adelante, dejadlo.</p>
 <p>CLAUDIO.--Traed luces. Vamos de aquí.</p>
 <p>TODOS.--Luces, luces.</p>
-<h2>ESCENA XV</h2>
+<h2 class="chapter" id="c43">Escena XV</h2>
 <p>HAMLET, HORACIO, cómico primero, cómico tercero</p>
 <p>(Hamlet canta estos versos en voz baja, y representa los que siguen después. Los cómicos primero y tercero estarán retirados á un extremo del teatro, esperando sus órdenes).</p>
 <p>HAMLET.--El ciervo herido llora, y el corzo no tocado de flecha voladora, se huelga por el prado; duerme aquel, y á deshora veis éste desvelado; que tanto el mundo va desordenado.</p>
@@ -773,8 +849,7 @@ h2 + p, .first { text-indent: 0; }
 <p>HAMLET.--¿Cuando se trató del veneno?</p>
 <p>HORACIO.--Bien, bien le observé entonces.</p>
 <p>HAMLET.--¡Ah! quisiera algo de música (A los cómicos:) traedme unas flautas... Si el rey no gusta de la comedia, será sin duda porque... porque no le gusta. Vaya un poco de música.</p>
-<h2>ESCENA XVI</h2>
-<h2>HAMLET, HORACIO, RICARDO, GUILLERMO</h2>
+<h2 class="chapter" id="c44">Escena XVI — Hamlet, Horacio, ricardo, guillermo</h2>
 <p>GUILLERMO.--Señor, ¿permitiréis que os diga una palabra?</p>
 <p>HAMLET.--Y una historia entera.</p>
 <p>GUILLERMO.--El rey...</p>
@@ -801,7 +876,7 @@ h2 + p, .first { text-indent: 0; }
 <p>HAMLET.--Estoy muy atrasado.</p>
 <p>RICARDO.--¿Cómo es posible, cuando tenéis el voto del rey mismo para sucederle en el trono de Dinamarca?</p>
 <p>HAMLET.--Sí, pero mientras nace la hierba... Ya es un poco antiguo el tal refrán. ¡Ah! ya están aquí las flautas.</p>
-<h2>ESCENA XVII</h2>
+<h2 class="chapter" id="c45">Escena XVII</h2>
 <p>Cómico tercero y dichos</p>
 <p>HAMLET.--Dejadme ver una.... ¿A qué tengo de ir ahí? (Guillermo y Ricardo se acercan á Hamlet con ademán obsequioso, siguiéndole adonde quiera que se vuelve, hasta que viendo su enfado se apartan) Parece que me quieres hacer caer en alguna trampa, según me cercas por todos lados.</p>
 <p>GUILLERMO.--Ya veo, señor, que si el deseo de cumplir con mi obligación me da osadía, acaso el amor que os tengo me hace grosero también é importuno.</p>
@@ -814,7 +889,7 @@ h2 + p, .first { text-indent: 0; }
 <p>HAMLET.--Más fácil es que tenderse á la larga. Mira, pon el pulgar y los demás dedos según convenga sobre estos agujeros, sopla con la boca, y verás qué lindo sonido resulta. ¿Ves? Estos son los puntos.</p>
 <p>GUILLERMO.--Bien, pero si no sé hacer uso de ellos para que produzcan armonía. Como ignoro el arte...</p>
 <p>HAMLET.--Pues mira tú en qué opinión tan baja me tienes. Tú me quieres tocar, presumes conocer mis registros, pretendes extraer lo más íntimo de mis secretos, quieres hacer que suene desde el más grave al más agudo de mis tonos; y ve aquí este pequeño órgano, capaz de excelentes voces y de armonía, que tú no puedes hacer sonar. ¿Y juzgas que se me tañe á mí con más facilidad que á una flauta? No, dame el nombre del instrumento que quieras: por más que le manejes y te fatigues, jamás conseguirás hacerle producir el menor sonido.</p>
-<h2>ESCENA XVIII</h2>
+<h2 class="chapter" id="c46">Escena XVIII</h2>
 <p>POLONIO y otros</p>
 <p>HAMLET.--¡Oh! Dios te bendiga.</p>
 <p>POLONIO.--Señor, la reina quisiera hablaros al instante.</p>
@@ -827,40 +902,34 @@ h2 + p, .first { text-indent: 0; }
 <p>HAMLET.--Pues al instante iré á ver á mi madre. Tanto harán éstos, que me volverán loco de veras. Iré, iré al instante.</p>
 <p>POLONIO.--Así se lo diré.</p>
 <p>HAMLET.--Fácilmente se dice: al instante viene... Dejadme solo, amigos.</p>
-<h2>ESCENA XIX</h2>
-<h2>HAMLET</h2>
+<h2 class="chapter" id="c47">Escena XIX — Hamlet</h2>
 <p>Este es el espacio de la noche apto á los maleficios. Esta es la hora en que los cementerios se abren, y el infierno respira contagios al mundo. Ahora podría yo beber caliente sangre; ahora podría ejecutar tales acciones, que el día se estremeciese al verlas. Pero vamos á ver á mi madre. ¡Oh corazón! no desconozcas la naturaleza, ni permitas que en este firme pecho se albergue la fiereza de Nerón. Déjame ser cruel, pero no parricida. El puñal que ha de herirla esté en mis palabras, no en mi mano; disimulen el corazón y la lengua; sean las que fueren las execraciones que contra ella pronuncie, nunca, nunca mi alma solicitará que se cumplan.</p>
-<h2>ESCENA XX</h2>
+<h2 class="chapter" id="c48">Escena XX</h2>
 <p>Gabinete</p>
-<h2>CLAUDIO, RICARDO, GUILLERMO</h2>
+<h2 class="chapter" id="c49">Claudio, ricardo, guillermo</h2>
 <p>CLAUDIO.--No, no le quiero aquí, ni conviene á nuestra seguridad dejar libre el campo á su locura. Preveníos, pues, y haré que inmediatamente se os despache para que él os acompañe á Inglaterra. El interés de mi corona no permite ya exponerme á un riesgo tan inmediato, que crece por instantes en los accesos de su demencia.</p>
 <p>GUILLERMO.--Al momento dispondremos nuestra marcha. El más santo y religioso temor es aquél que procura la existencia de tantos individuos, cuya vida pende de V. M.</p>
 <p>RICARDO.--Si es obligación en un particular defender su vida de toda ofensa, por medio de la fuerza y el arte, ¿cuánto más lo será conservar aquélla en quien estriba la felicidad pública? Cuando llega á faltar el monarca, no muere él solo, sino que á manera de un torrente precipitado arrebata consigo cuanto le rodea, como una gran rueda colocada en la cima del más alto monte, á cuyos enormes rayos están asidas innumerables piezas menores, que si llega á caer, no hay ninguna de ellas, por más pequeña que sea, que no padezca igualmente en el total destrozo. Nunca el soberano exhala un suspiro, sin excitar en su nación general lamento.</p>
 <p>CLAUDIO.--Yo os ruego que os prevengáis sin dilación para el viaje. Quiero encadenar este temor, que ahora camina demasiado libre.</p>
 <p>LOS DOS.--Vamos á obedeceros con la mayor prontitud.</p>
-<h2>ESCENA XXI</h2>
-<h2>CLAUDIO, POLONIO</h2>
+<h2 class="chapter" id="c50">Escena XXI — Claudio, polonio</h2>
 <p>POLONIO.--Señor, ya se ha encaminado al cuarto de su madre. Voy á ocultarme detrás de los tapices para ver el suceso. Es seguro que ella le reprenderá fuertemente; y como vos mismo habéis observado muy bien, conviene que asista á oir la conversación alguien más que su madre, que naturalmente le ha de ser parcial, como á todas sucede. Quedaos adiós; yo volveré á veros antes que os recojáis, para deciros lo que haya pasado.</p>
 <p>CLAUDIO.--Gracias, querido Polonio.</p>
-<h2>ESCENA XXII</h2>
-<h2>CLAUDIO</h2>
+<h2 class="chapter" id="c51">Escena XXII — Claudio</h2>
 <p>¡Oh, mi culpa es atroz! Su hedor sube al cielo, llevando consigo la maldición más terrible; la muerte de un hermano. No puedo recogerme á orar, por más que eficazmente lo procuro; que es más fuerte que mi voluntad el delito que la destruye. Como el hombre á quien dos obligaciones llaman, me detengo á considerar por cuál empezaré primero, y no cumplo ninguna... Pero si este brazo execrable estuviese aún más teñido en la sangre fraterna, ¿faltará en los cielos piadosos suficiente lluvia para volverle cándido como la nieve misma? ¿De qué sirve la misericordia, si se niega a ver el rostro del pecado? ¿Qué hay en la oración sino aquella duplicada fuerza, capaz de sostenernos al ir á caer, ó de adquirirnos el perdón habiendo caído? Sí, alzaré mis ojos al cielo, y quedará borrada mi culpa... Pero ¿qué género de oración habré de usar? Olvida, Señor, olvida el horrible homicidio que cometí... ¡Ah! que será imposible, mientras vivo poseyendo los objetos que me determinaron á la maldad: mi ambición, mi corona, mi esposa... ¿Podrá merecerse el perdón cuando la ofensa existe? En este mundo estragado sucede con frecuencia que la mano delincuente, derramando el oro, aleja la justicia y corrompe con dádivas la integridad de las leyes; no así en el cielo, que allí no hay engaños, allí comparecen las acciones humanas como ellas son, y nos vemos compelidos á manifestar nuestras faltas todas sin excusa, sin rebozo alguno... En fin, ¿qué debo hacer?... Probemos lo que puede el arrepentimiento... ¿y qué no podrá?... Pero ¿qué ha de poder con quien no puede arrepentirse? ¡Oh situación infeliz! ¡Oh conciencia, ennegrecida con sombras de muerte! ¡Oh alma mía aprisionada! que cuanto más te esfuerzas para ser libre, más quedas oprimida. ¡Angeles, asistidme! Probad en mí vuestro poder. Dóblense mis rodillas tenaces; y tú, corazón mío de aceradas fibras, hazte blando como los nervios del niño que acaba de nacer. Todo, todo puede enmendarse.</p>
 <p>(Se arrodilla y apoya los brazos y la cabeza en un sillón).</p>
-<h2>ESCENA XXIII</h2>
-<h2>CLAUDIO, HAMLET</h2>
+<h2 class="chapter" id="c52">Escena XXIII — Claudio, Hamlet</h2>
 <p>HAMLET.--Esta es la ocasión propicia. Ahora está rezando, ahora le mato... (Saca la espada, da algunos pasos en ademán de herirle; se detiene, y se retira otra vez hacia la puerta). Y así se irá al cielo... ¿Y es esta mi venganza? No, reflexionemos. Un malvado asesina á mi padre, y yo, su hijo único, aseguro al malhechor la gloria; ¿no es esto, en vez de castigo, premio y recompensa? El sorprendió á mi padre acabados los desórdenes del banquete, cubierto de más culpas que mayo tiene flores... ¿Quién sabe, sino Dios, la estrecha cuenta que hubo de dar? Pero, según nuestra razón concibe, terrible ha sido su sentencia. ¿Y quedaré vengado dándole á éste la muerte, precisamente cuando purifica su alma, cuando se dispone para la partida? No, espada mía, vuelve á tu lugar, y espera ocasión de ejecutar más tremendo golpe. Cuando esté ocupado en el juego, cuando blasfeme colérico, ó duerma con la embriaguez, ó se abandone á los placeres incestuosos del lecho, ó cometa acciones contrarias á su salvación, hiérele entonces; caiga precipitado al profundo, y su alma quede negra y maldita, como el infierno que ha de recibirle. (Envaina la espada). Mi madre me espera. Malvado, esta medicina, que te dilata la dolencia, no evitará tu muerte.</p>
-<h2>ESCENA XXIV</h2>
-<h2>CLAUDIO</h2>
+<h2 class="chapter" id="c53">Escena XXIV — Claudio</h2>
 <p>Mis palabras suben al cielo, mis afectos quedan en la tierra. (Se levanta, con agitación). Palabras sin afectos nunca llegan á los oídos de Dios.</p>
-<h2>ESCENA XXV</h2>
+<h2 class="chapter" id="c54">Escena XXV</h2>
 <p>Cuarto de la reina</p>
-<h2>GERTRUDIS, POLONIO, HAMLET</h2>
+<h2 class="chapter" id="c55">Gertrudis, polonio, Hamlet</h2>
 <p>POLONIO.--Va á venir al momento. Mostradle entereza; decidle que sus locuras han sido demasiado atrevidas é intolerables, que vuestra bondad le ha protegido, mediando entre él y la justa indignación que excitó. Yo entre tanto retirado aquí, guardaré silencio. Habladle con libertad, yo os lo suplico.</p>
 <p>HAMLET (gritando desde adentro).--¡Madre! ¡madre!</p>
 <p>GERTRUDIS.--Así te lo prometo; nada temo. Ya le siento llegar. Retírate.</p>
 <p>(Polonio se oculta detrás de unos tapices).</p>
-<h2>ESCENA XXVI</h2>
-<h2>GERTRUDIS, HAMLET, POLONIO</h2>
+<h2 class="chapter" id="c56">Escena XXVI — Gertrudis, Hamlet, polonio</h2>
 <p>HAMLET.--¿Qué me mandáis, señora?</p>
 <p>GERTRUDIS.--Hamlet, muy ofendido tienes á tu padre.</p>
 <p>HAMLET.--Madre, muy ofendido tenéis al mío.</p>
@@ -892,7 +961,7 @@ h2 + p, .first { text-indent: 0; }
 <p>GERTRUDIS.--No más, no más, que esas palabras como agudos puñales hieren mis oídos... No más, querido Hamlet.</p>
 <p>HAMLET.--Un asesino... un malvado... vil... inferior mil veces á vuestro difunto esposo... escarnio de los reyes, ratero del imperio y el mando, que robó la preciosa corona, y se la guardó en el bolsillo.</p>
 <p>GERTRUDIS.--No más...</p>
-<h2>ESCENA XXVII</h2>
+<h2 class="chapter" id="c57">Escena XXVII</h2>
 <p>GERTRUDIS, HAMLET, la sombra del rey Hamlet</p>
 <p>HAMLET.--Un rey de botarga... ¡Oh espíritus celestes! defendedme, cubridme con vuestras alas... ¿Qué quieres, venerada sombra?</p>
 <p>GERTRUDIS.--¡Ay! que está fuera de sí.</p>
@@ -907,8 +976,7 @@ h2 + p, .first { text-indent: 0; }
 <p>HAMLET.--¿Ni oísteis nada tampoco?</p>
 <p>GERTRUDIS.--Nada más que lo que nosotros hablamos.</p>
 <p>HAMLET.--Mirad, allí... ¿Le veis?... Ahora se va... Mi padre... con el traje mismo que se vestía... ¿Veis por dónde va?... Ahora llega al pórtico.</p>
-<h2>ESCENA XXVIII</h2>
-<h2>GERTRUDIS, HAMLET</h2>
+<h2 class="chapter" id="c58">Escena XXVIII — Gertrudis, Hamlet</h2>
 <p>GERTRUDIS.--Todo es efecto de la fantasía. El desorden que padece tu espíritu produce esas ilusiones vanas.</p>
 <p>HAMLET.--¿Desorden? Mi pulso, como el vuestro late con regular intervalo, y anuncia igual salud en sus compases... Nada de lo que he dicho es locura. Haced la prueba, y veréis si os repito cuantas ideas y palabras acabo de proferir, y un loco no puede hacerlo. ¡Ah, madre mía! en merced os pido que no apliquéis al alma esa unción halagüeña, creyendo que es mi locura la que habla, y no vuestro delito. Con tal medicina lograréis sólo irritar la parte ulcerada, aumentando la ponzoña pestífera que interiormente la corrompe... Confesad al cielo vuestra culpa, llorad lo pasado, precaved lo futuro, y no extendáis el beneficio sobre las malas hierbas para que prosperen lozanas. Perdonad este desahogo á mi virtud, ya que en esta delincuente edad la virtud misma tiene que pedir perdón al vicio, y aun para hacerle bien le halaga y le ruega.</p>
 <p>GERTRUDIS.--¡Ay, Hamlet! tú despedazas mi corazón.</p>
@@ -919,10 +987,9 @@ h2 + p, .first { text-indent: 0; }
 <p>HAMLET.--¿Sabéis que debo ir á Inglaterra?</p>
 <p>GERTRUDIS.--¡Ah! ya lo había olvidado. Sí, es cosa resuelta.</p>
 <p>HAMLET.--He sabido que hay ciertas cartas selladas, y que mis dos condiscípulos (de quienes yo me fiaré como de una víbora ponzoñosa) van encargados de llevar el mensaje, facilitarme la marcha y conducirme al precipicio. Pero yo los dejaré hacer; que es mucho gusto ver volar al minador con su propio hornillo, y mal irán las cosas o yo excavaré una vara no más, debajo de sus minas, y los haré saltar hasta la luna. ¡Oh, es mucho gusto cuando un pícaro tropieza con quien se las entiende!..... Este hombre me hace ahora su ganapán... (Quiere llevar á cuestas el cadáver, y no pudiendo hacerlo cómodamente, le ase de un pie, y se le lleva arrastrando) le llevaré arrastrando á la pieza inmediata. Madre, buenas noches... Por cierto que el señor consejero (que fué en vida un hablador impertinente) es ahora bien reposado, bien serio y taciturno. Vamos, amigo, que es menester sacaros de aquí y acabar con ello. Buenas noches, madre.</p>
-<h2>ACTO IV</h2>
-<h2>ESCENA PRIMERA</h2>
+<h2 class="chapter" id="c59">Acto IV — Escena primera</h2>
 <p>Salón de palacio</p>
-<h2>CLAUDIO, GERTRUDIS, RICARDO, GUILLERMO</h2>
+<h2 class="chapter" id="c60">Claudio, gertrudis, ricardo, guillermo</h2>
 <p>CLAUDIO.--Esos suspiros, esos profundos sollozos alguna causa tienen; dime cuál es, conviene que la sepa yo... ¿En dónde está tu hijo?</p>
 <p>GERTRUDIS.--Dejadnos solos un instante. (Vanse Ricardo y Guillermo). ¡Ah, señor, lo que he visto esta noche!</p>
 <p>CLAUDIO.--¿Qué ha sido, Gertrudis? ¿Qué hace Hamlet?</p>
@@ -930,12 +997,11 @@ h2 + p, .first { text-indent: 0; }
 <p>CLAUDIO.--¡Funesto accidente! Lo mismo hubiera hecho conmigo si hubiera estado allí. Ese desenfreno insolente amenaza á todos: á mí, á ti misma, á todos en fin. ¡Oh!... ¿y cómo disculparemos una acción tan sangrienta? Nos la imputarán, sin duda, á nosotros, porque nuestra autoridad debería haber reprimido á ese joven loco, poniéndole en paraje donde á nadie pudiera ofender. Pero el excesivo amor que le tenemos nos ha impedido hacer lo que más convenía; bien así como el que padece una enfermedad vergonzosa, que por no declararla, consiente primero que le devore la sustancia vital. ¿Y dónde ha ido?</p>
 <p>GERTRUDIS.--A retirar de allí el difunto cuerpo, y en medio de su locura llora el error que ha cometido. Así el oro manifiesta su pureza, aunque mezclado tal vez con metales viles.</p>
 <p>CLAUDIO.--Vamos, Gertrudis, y apenas toque el sol la cima de los montes haré que se embarque y se vaya; en tanto será necesario emplear toda nuestra autoridad y nuestra prudencia para ocultar ó disculpar un hecho tan indigno.</p>
-<h2>ESCENA II</h2>
-<h2>CLAUDIO, GERTRUDIS, RICARDO, GUILLERMO</h2>
+<h2 class="chapter" id="c61">Escena II — Claudio, gertrudis, ricardo, guillermo</h2>
 <p>CLAUDIO.--¡Oh Guillermo, amigos! Id entrambos con alguna gente que os ayude... Hamlet, ciego de frenesí, ha muerto á Polonio, y le ha sacado arrastrando del cuarto de su madre. Id á buscarle; habladle con dulzura; y haced llevar el cadáver á la capilla. No os detengáis. (Vanse Ricardo y Guillermo). Vamos, que pienso llamar á nuestros más prudentes amigos para darles cuenta de esta imprevista desgracia, y de lo que resuelvo hacer. Acaso por este medio la calumnia (cuyo rumor ocupa la extensión del orbe, y dirige sus emponzoñados tiros con la certeza que el cañón á su blanco), errando esta vez el golpe, dejará nuestro nombre ileso y herirá sólo al viento insensible. ¡Oh!... Vamos de aquí... mi alma está llena de agitación y de terror.</p>
-<h2>ESCENA III</h2>
+<h2 class="chapter" id="c62">Escena III</h2>
 <p>Cuarto de Hamlet</p>
-<h2>HAMLET, RICARDO, GUILLERMO</h2>
+<h2 class="chapter" id="c63">Hamlet, ricardo, guillermo</h2>
 <p>HAMLET.--Colocado ya en lugar seguro... Pero...</p>
 <p>RICARDO (desde adentro).--¡Hamlet! ¡señor!</p>
 <p>HAMLET.--¿Qué ruido es este? ¿Quién llama á Hamlet?... ¡Oh! ya están aquí. (Salen Ricardo y Guillermo).</p>
@@ -953,19 +1019,18 @@ h2 + p, .first { text-indent: 0; }
 <p>HAMLET.--El cuerpo está con el rey; pero el rey no está con el cuerpo. El rey viene á ser una cosa, como...</p>
 <p>GUILLERMO.--¿Qué cosa, señor?</p>
 <p>HAMLET.--Una cosa que no vale nada... Pero guarda, Pablo... Vamos á verle.</p>
-<h2>ESCENA IV</h2>
+<h2 class="chapter" id="c64">Escena IV</h2>
 <p>Salón de palacio</p>
-<h2>CLAUDIO</h2>
+<h2 class="chapter" id="c65">Claudio</h2>
 <p>Le he enviado á llamar, y he mandado buscar el cadáver. ¡Qué peligroso es dejar en libertad á este mancebo! Pero no es posible tampoco ejercer sobre él la severidad de las leyes. Está muy querido de la fanática multitud, cuyos afectos se determinan por los ojos, no por la razón, y que en tales casos considera el castigo del delincuente, y no el delito. Conviene, para mantener la tranquilidad, que esa repentina ausencia de Hamlet aparezca como cosa muy de antemano meditada y resuelta. Los males desesperados, ó son incurables, ó se alivian con desesperados remedios.</p>
-<h2>ESCENA V</h2>
-<h2>CLAUDIO, RICARDO</h2>
+<h2 class="chapter" id="c66">Escena V — Claudio, ricardo</h2>
 <p>CLAUDIO.--¿Qué hay, qué ha sucedido?</p>
 <p>RICARDO.--No hemos podido lograr que nos diga adonde ha llevado el cadáver.</p>
 <p>CLAUDIO.--Pero él ¿en dónde está?</p>
 <p>RICARDO.--Afuera quedó con gente que le guarda, esperando vuestras órdenes.</p>
 <p>CLAUDIO.--Traedle á mi presencia.</p>
 <p>RICARDO.--Guillermo: que venga el príncipe.</p>
-<h2>ESCENA VI</h2>
+<h2 class="chapter" id="c67">Escena vi</h2>
 <p>CLAUDIO, RICARDO, HAMLET, GUILLERMO, criados</p>
 <p>CLAUDIO.--Y bien, Hamlet, ¿en dónde está Polonio?</p>
 <p>HAMLET.--Ha ido á cenar.</p>
@@ -988,16 +1053,15 @@ h2 + p, .first { text-indent: 0; }
 <p>HAMLET.--Yo veo un ángel que los ve... Pero vamos á Inglaterra. ¡Adiós, mi querida madre!</p>
 <p>CLAUDIO.--¿Y tu padre que te ama, Hamlet?</p>
 <p>HAMLET.--Mi madre... Padre y madre son marido y mujer; marido y mujer son una carne misma, con que... mi madre... ¡Eh! Vamos á Inglaterra.</p>
-<h2>ESCENA VII</h2>
-<h2>CLAUDIO, RICARDO, GUILLERMO</h2>
+<h2 class="chapter" id="c68">Escena VII — Claudio, ricardo, guillermo</h2>
 <p>CLAUDIO.--Seguidle inmediatamente; instad con viveza su embarco, no se dilate un punto. Quiero verle fuera de aquí esta noche. Partid. Cuanto es necesario á esta comisión, está sellado y pronto. Id, no os detengáis. (Vanse Ricardo y Guillermo.) Y tú, Inglaterra, si en algo estimas mi amistad (de cuya importancia mi gran poder te avisa), pues aun miras sangrientas las heridas que recibiste del acero dinamarqués, y en dócil temor me pagas tributos, no dilates tibia la ejecución de mi suprema voluntad, que por cartas escritas á este fin te pide con la mayor instancia la pronta muerte de Hamlet. Su vida es para mí una fiebre ardiente, y tú sola puedes aliviarme. Hazlo así, Inglaterra, y hasta que sepa que descargaste el golpe, por más feliz que mi suerte sea, no se restablecerán en mi corazón la tranquilidad ni la alegría.</p>
-<h2>ESCENA VIII</h2>
+<h2 class="chapter" id="c69">Escena VIII</h2>
 <p>Campo solitario en las fronteras de Dinamarca</p>
 <p>FORTIMBRAS, un capitán, soldados</p>
 <p>FORTIMBRÁS.--Id, capitán, saludad en mi nombre al monarca danés; decidle que en virtud de su licencia, Fortimbrás pide el paso libre por su reino, según se le ha prometido. Ya sabéis el sitio de nuestra reunión. Si algo quiere S. M. comunicarme, hacedle saber que estoy pronto á ir en persona á darle pruebas de mi respeto.</p>
 <p>CAPITÁN.--Así lo haré, señor.</p>
 <p>FORTIMBRÁS.--Y vosotros caminad con paso vagaroso.</p>
-<h2>ESCENA IX</h2>
+<h2 class="chapter" id="c70">Escena IX</h2>
 <p>Un capitán, HAMLET, RICARDO, GUILLERMO, soldados</p>
 <p>HAMLET.--Caballero, ¿de dónde son estas tropas?</p>
 <p>CAPITÁN.--De Noruega, señor.</p>
@@ -1014,19 +1078,17 @@ h2 + p, .first { text-indent: 0; }
 <p>(Vanse el capitán y los soldados).</p>
 <p>RICARDO.--¿Queréis proseguir el camino?</p>
 <p>HAMLET.--Presto os alcanzaré. Id adelante un poco.</p>
-<h2>ESCENA X</h2>
-<h2>HAMLET</h2>
+<h2 class="chapter" id="c71">Escena X — Hamlet</h2>
 <p>Cuantos accidentes ocurren, todos me acusan, excitando á la venganza mi adormecido aliento. ¿Qué es el hombre que funda su mayor felicidad, y emplea todo su tiempo sólo en dormir y alimentarse? Es un bruto y no más. No: aquel que nos formó dotados de tan extenso conocimiento, que con él podemos ver lo pasado y lo futuro, no nos dió ciertamente esta facultad, esta razón divina, para que estuviera nosotros sin uso y torpe. Sea, pues, brutal negligencia, sea tímido escrúpulo que no se atreve á penetrar los casos venideros (proceder en que hay más parte de cobardía que de prudencia), yo no sé para qué existo, diciendo siempre: razón, voluntad, fuerza y medios para ejecutarla. Por todas partes hallo ejemplos grandes que me estimulan. Prueba es bastante ese fuerte y numeroso ejército conducido por un príncipe joven y delicado, cuyo espíritu impelido de ambición generosa desprecia la incertidumbre de los sucesos, y expone su existencia frágil y mortal á los golpes de la fortuna, á la muerte, á los peligros más terribles, y todo por un objeto de tan leve interés. El ser grande no consiste, por cierto, en obrar sólo cuando ocurre un gran motivo, sino en saber hallar una razón plausible de contienda, aunque sea pequeña la causa, cuando se trata de adquirir honor. ¿Cómo, pues, permanezco yo en ocio indigno, muerto mi padre alevosamente, mi madre envilecida... estímulos capaces de excitar mi razón y mi ardimiento, que yacen dormidos? Mientras para vergüenza mía veo la destrucción inmediata de veinte mil hombres, que por un capricho, por una estéril gloria van al sepulcro como á sus lechos, combatiendo por una causa que la multitud es incapaz de comprender, por un terreno que aun no es suficiente sepultura á tantos cadáveres... ¡Oh! de hoy más, ó no existirá en mi fantasía idea ninguna, ó cuantas forme serán sangrientas.</p>
-<h2>ESCENA XI</h2>
+<h2 class="chapter" id="c72">Escena XI</h2>
 <p>Galería de palacio</p>
-<h2>GERTRUDIS, HORACIO</h2>
+<h2 class="chapter" id="c73">Gertrudis, Horacio</h2>
 <p>GERTRUDIS.--No, no quiero hablarla.</p>
 <p>HORACIO.--Ella insta por veros. Está loca, es verdad; pero eso mismo debe excitar vuestra compasión.</p>
 <p>GERTRUDIS.--¿Y qué pretende? ¿Qué dice?</p>
 <p>HORACIO.--Habla mucho de su padre: dice que continuamente oye que el mundo está lleno de maldad; solloza, se lastima el pecho, y airada trastorna con el pie cuanto tal pasar encuentra. Profiere razones equívocas en que apenas se halla sentido; pero la misma extravagancia de ellas mueve á los que las oyen á retenerlas, examinando el fin con que las dice, y dando á sus palabras una combinación arbitraria, según la idea de cada uno. Al observar sus miradas, sus movimientos de cabeza, su gesticulación expresiva, llegan á creer que puede haber en ella algún asomo de razón; pero nada hay de cierto sino que se halla en el estado más infeliz.</p>
 <p>GERTRUDIS.--Será bien hablarla, antes que mi repulsa esparza conjeturas fatales en aquellos ánimos que todo lo interpretan siniestramente. Hazla venir. (Vase Horacio). El más frívolo acaso parece á mi dañada conciencia presagio de algún grave desastre. Propia es de la culpa esta desconfianza. Tan lleno está siempre de recelos el delincuente, que el temor de ser descubierto hace tal vez que él mismo se descubra.</p>
-<h2>ESCENA XII</h2>
-<h2>GERTRUDIS, OFELIA, HORACIO</h2>
+<h2 class="chapter" id="c74">Escena XII — Gertrudis, Ofelia, Horacio</h2>
 <p>OFELIA.--¿En dónde está la hermosa reina de Dinamarca?</p>
 <p>GERTRUDIS.--¿Cómo va, Ofelia?</p>
 <p>OFELIA.--(Estos versos, y todos los que siguen en el presente acto, los canta Ofelia).</p>
@@ -1038,8 +1100,7 @@ h2 + p, .first { text-indent: 0; }
 <p>GERTRUDIS.--Sí; pero, Ofelia...</p>
 <p>OFELIA.--Oíd, oíd.</p>
 <p>Blancos pañales le vestían...</p>
-<h2>ESCENA XIII</h2>
-<h2>CLAUDIO, GERTRUDIS, OFELIA, HORACIO</h2>
+<h2 class="chapter" id="c75">Escena XIII — Claudio, gertrudis, Ofelia, Horacio</h2>
 <p>GERTRUDIS.--¡Desgraciada! ¿Veis esto, señor?</p>
 <p>OFELIA.--Blancos pañales le vestían como la nieve del monte, y al sepulcro le conducen cubierto de bellas flores, que en tierno llanto de amor se humedecieron entonces.</p>
 <p>CLAUDIO.--¿Cómo estás, graciosa niña?</p>
@@ -1055,18 +1116,17 @@ h2 + p, .first { text-indent: 0; }
 <p>CLAUDIO.--¿Cuánto ha que está así?</p>
 <p>OFELIA.--Yo espero que todo irá bien... Debemos tener paciencia... (Se entristece y llora). Pero yo no puedo menos de llorar considerando que le han dejado sobre la tierra fría... Mi hermano lo sabrá... preciso... Y yo os doy las gracias por vuestros buenos consejos... (Con mucha viveza y alegría). Vamos, la carroza. Buenas noches, señoras, buenas noches. Amiguitas, buenas noches, buenas noches, buenas noches.</p>
 <p>CLAUDIO (á Horacio).--Acompáñala á su cuarto, y haz que la asista suficiente guardia. Yo te lo ruego.</p>
-<h2>ESCENA XIV</h2>
-<h2>CLAUDIO, GERTRUDIS</h2>
+<h2 class="chapter" id="c76">Escena XIV — Claudio, gertrudis</h2>
 <p>CLAUDIO.--¡Oh! todo es efecto de un profundo dolor; todo nace de la muerte de su padre; y ahora observo, Gertrudis, que cuando los males vienen, no vienen esparcidos como espías, sino reunidos en escuadrones. Su padre muerto, tu hijo ausente habiendo dado él mismo justo motivo á su destierro), el pueblo alterado en tumulto con dañadas ideas y murmuraciones sobre la muerte del buen Polonio, cuyo entierro oculto ha sido no leve imprudencia de nuestra parte; la desdichada Ofelia fuera de sí, turbada su razón, sin la cual somos vanos simulacros, ó comparables sólo á los brutos, y por último (y esto no es menos esencial que todo lo restante), su hermano, que ha venido secretamente de Francia, y en medio de tan extraños casos, se oculta entre sombras misteriosas, sin que falten lenguas maldicientes que envenenen sus oídos, hablándole de la muerte de su padre. Ni en tales discursos, á falta de noticias seguras, dejaremos de ser citados continuamente de boca en boca. Todos estos afanes juntos, mi querida Gertrudis, como una máquina destructora que se dispara, me dan muchas muertes á un tiempo.</p>
 <p>(Suena á lo lejos un rumor confuso, que se irá aumentando durante la escena siguiente).</p>
 <p>GERTRUDIS.--¡Ay Dios! ¿Qué estruendo es éste?</p>
-<h2>ESCENA XV</h2>
+<h2 class="chapter" id="c77">Escena XV</h2>
 <p>CLAUDIO, GERTRUDIS, un caballero</p>
 <p>CLAUDIO.--¿En dónde está mi guardia?... Acudid... defended las puertas... ¿Qué es esto?</p>
 <p>CABALLERO.--Huíd, señor. El Océano, sobrepujando sus términos, no traga las llanuras con ímpetu más espantoso, que el que manifiesta el joven Laertes ciego de furor, venciendo la resistencia que le oponen vuestros soldados. El vulgo le apellida señor; y como si ahora comenzase á existir el mundo, la antigüedad y la costumbre (apoyo y seguridad de todo buen gobierno) se olvidan y se desconocen. Gritan por todas partes: «Nosotros elegimos por rey a Laertes.» Los sombreros arrojados al aire, las manos y las lenguas le aplauden, llegando á las nubes la voz general que repite: «Laertes será nuestro rey. ¡Viva Laertes!»</p>
 <p>GERTRUDIS.--¡Con qué alegría sigue, ladrando, esa traílla pérfida el rastro mal seguro en que va á perderse!</p>
 <p>CLAUDIO.--Ya han roto las puertas.</p>
-<h2>ESCENA XVI</h2>
+<h2 class="chapter" id="c78">Escena XVI</h2>
 <p>LAERTES, CLAUDIO, GERTRUDIS, soldados y pueblo</p>
 <p>LAERTES.--¿En dónde está el rey? (Volviéndose hacia la puerta por donde ha salido, detiene á los conjurados que le acompañan, y hace que se retiren). Vosotros quedaos todos afuera.</p>
 <p>VOCES.--No, entremos.</p>
@@ -1091,7 +1151,7 @@ h2 + p, .first { text-indent: 0; }
 <p>VOCES.--Dejadla entrar.</p>
 <p>(Ruido y voces dentro).</p>
 <p>LAERTES.--¿Qué novedad... qué ruido es éste?</p>
-<h2>ESCENA XVII</h2>
+<h2 class="chapter" id="c79">Escena XVII</h2>
 <p>CLAUDIO, GERTRUDIS, LAERTES, OFELIA, acompañamiento. Ofelia sale vestida de blanco, el cabello suelto, y una guirnalda en la cabeza, hecha de paja y flores silvestres, trayendo, en el faldellín muchas flores y hierbas.</p>
 <p>LAERTES.--¡Oh, calor activo, abrasa mi cerebro! ¡Lágrimas en extremo cáusticas, consumid la potencia y la sensibilidad de mis ojos! Por los cielos te juro que esa demencia tuya será pagada por mí con tal exceso, que el peso del castigo tuerza el fiel y baje la balanza... ¡Oh, rosa de mayo! ¡amable niña! ¡mi querida Ofelia! ¡mi dulce hermana!... ¡Oh cielos! ¿y es posible que el entendimiento de una tierna joven sea tan frágil como la vida del hombre decrépito?... Pero la naturaleza es muy fina en amor y cuando éste llega al exceso, el alma se desprende tal vez de alguna preciosa parte de sí misma, para ofrecérsela en don al objeto amado.</p>
 <p>OFELIA.--Lleváronle en su ataúd con el rostro descubierto. Ay no ni, ay ay ay no ni. Y sobre su sepultura muchas lágrimas llovieron. Ay no ni, ay ay ay no ni.</p>
@@ -1108,42 +1168,40 @@ h2 + p, .first { text-indent: 0; }
 <p>LAERTES.--Ideas funestas, aflicción, pasiones terribles, los horrores del infierno mismo, todo en su boca es gracioso y suave.</p>
 <p>OFELIA.--Nos deja, se va, y no ha de volver. No, que ya murió, no vendrá otra vez... Su barba era nieve, su pelo también. Se fué ¡dolorosa partida! se fué. En vano exhalamos suspiros por él. Los cielos piadosos descanso le den.</p>
 <p>A él y á todas las almas cristianas. Dios lo quiera... ¡Eh! señores, adiós.</p>
-<h2>ESCENA XVIII</h2>
-<h2>CLAUDIO, GERTRUDIS, LAERTES</h2>
+<h2 class="chapter" id="c80">Escena XVIII — Claudio, gertrudis, Laertes</h2>
 <p>LAERTES.--¡Veis esto, Dios mío!</p>
 <p>CLAUDIO.--Yo debo tomar parte en tu aflicción, Laertes: no me niegues este derecho. Oyeme aparte. Elige entre los más prudentes de tus amigos aquéllos que te parezca. Oigannos á entrambos, y juzguen. Si por mí propio ó por mano ajena resultó culpado, mi reino, mi corona, mi vida, cuanto puedo llamar mío, todo te lo daré para satisfacerte. Si no hay culpa en mí, deberé contar otra vez con tu obediencia, y unidos ambos, buscaremos los medios de aliviar tu dolor.</p>
 <p>LAERTES.--Hágase lo que decís... Su arrebatada muerte, su obscuro funeral, sin trofeos, armas, ni escudos sobre el cadáver, ni debidos honores, ni decorosa pompa; todo, todo está clamando del cielo á la tierra por un examen el más riguroso.</p>
 <p>CLAUDIO.--Tú le obtendrás, y la segur terrible de la justicia caerá sobre el que fuere delincuente. Ven conmigo.</p>
-<h2>ESCENA XIX</h2>
+<h2 class="chapter" id="c81">Escena XIX</h2>
 <p>Sala en casa de Horacio</p>
 <p>HORACIO, un criado</p>
 <p>HORACIO.--¿Quiénes son los que me quieren hablar?</p>
 <p>CRIADO.--Unos marineros que, según dicen, os traen cartas.</p>
 <p>HORACIO.--Hazlos entrar. (Vase el criado). Yo no sé de qué parte del mundo pueda nadie escribirme, si ya no es Hamlet mi señor.</p>
-<h2>ESCENA XX</h2>
+<h2 class="chapter" id="c82">Escena XX</h2>
 <p>HORACIO, dos marineros</p>
 <p>MARINERO 1.º--Dios os guarde.</p>
 <p>HORACIO.--Y á vosotros también.</p>
 <p>MARINERO 1.º--Así lo hará, si es su voluntad. Estas cartas del embajador que se embarcó para Inglaterra vienen dirigidas á vos, si os llamáis Horacio como nos han dicho.</p>
 <p>HORACIO. (Lee la carta.)--«Horacio: luego que hayas leído esta, dirigirás esos hombres al rey, para el cual les he dado una carta. Apenas llevábamos dos días de navegación, cuando empezó á darnos caza un pirata muy bien armado. Viendo que nuestro navío era poco velero, nos vimos precisados á apelar al valor. Llegamos al abordaje: yo salté el primero en la embarcación enemiga, que al mismo tiempo logró desaferrarse de la nuestra, y por consiguiente me hallé solo y prisionero. Ellos se han portado conmigo como ladrones compasivos; pero ya sabían lo que se hacían, y se lo he pagado muy bien. Haz que el rey reciba las cartas que le envío, y tú ven á verme con tanta diligencia como si huyeras de la muerte. Tengo unas cuantas palabras que decirte al oído, que te dejarán atónito, bien que todas ellas no serán suficientes á expresar la importancia del caso. Esos buenos hombres te conducirán hasta aquí. Guillermo y Ricardo siguieron su camino á Inglaterra. Mucho tengo que decirte de ellos. Adiós. Tuyo siempre.--HAMLET.»</p>
 <p>Vamos. Yo os introduciré para que presentéis esas cartas. Conviene hacerlo pronto, á fin de que me llevéis después adonde queda el que os las entregó.</p>
-<h2>ESCENA XXI</h2>
+<h2 class="chapter" id="c83">Escena XXI</h2>
 <p>Gabinete del rey</p>
-<h2>CLAUDIO, LAERTES</h2>
+<h2 class="chapter" id="c84">Claudio, Laertes</h2>
 <p>CLAUDIO.--Sin duda tu rectitud aprobará ya mi descargo, y me darás lugar en el corazón como á tu amigo, después que has oído con pruebas evidentes que el matador de tu noble padre conspiraba contra mi vida.</p>
 <p>LAERTES.--Claramente se manifiesta... Pero decidme: ¿por qué no procedéis contra excesos tan graves y culpables, cuando vuestra prudencia, vuestra grandeza, vuestra propia seguridad, todas las consideraciones juntas deberían excitaros tan particularmente á reprimirlos?</p>
 <p>CLAUDIO.--Por dos razones, que aunque tal vez las juzgarás débiles, para mí han sido muy poderosas. Una es que la reina su madre vive pendiente casi de sus miradas, y al mismo tiempo (sea desgracia ó felicidad mía) tan estrechamente unió el amor mi vida y mi alma á la de mi esposa, que así como los astros no se mueven sino dentro de su propia esfera, así en mí no hay movimiento alguno que no dependa de su voluntad. La otra razón por que no puedo proceder contra el agresor públicamente, es el grande cariño que le tiene el pueblo; el cual, como la fuente cuyas aguas mudan los troncos en piedras, bañando en su afecto las faltas del príncipe, convierte en gracias todos sus yerros. Mis flechas no pueden con tal violencia dispararse, que resistan á huracán tan fuerte; y sin tocar el punto á que las dirija, se volverán otra vez al arco.</p>
 <p>LAERTES.--Sí, y en tanto yo he perdido á un ilustre padre, y hallo á una hermana en la más deplorable situación... Mi hermana, cuyo mérito (si alcanza el elogio á lo que ya no existe) se levantó sobre lo más sublime de su siglo, por las raras prendas que en ella se admiraron juntas... Pero llegará, llegará el tiempo de mi venganza.</p>
 <p>CLAUDIO.--Ese cuidado no debe interrumpirte el sueño, ni has de presumir que yo esté formado de materia tan insensible y dura, que me deje remesar la barba y lo tome á fiesta... Presto te informaré de lo demás. Basta decirte que amé á tu padre, que nosotros nos amamos también, y que espero darte á conocer la... Pero... ¿Qué noticias traes?</p>
-<h2>ESCENA XXII</h2>
+<h2 class="chapter" id="c85">Escena XXII</h2>
 <p>CLAUDIO, LAERTES, un guardia</p>
 <p>GUARDIA.--Señor, veis aquí las cartas del príncipe: ésta, para V. M., y ésta, para la reina.</p>
 <p>(Da unas cartas á Claudio).</p>
 <p>CLAUDIO.--¡De Hamlet! ¿Quién las ha traído!</p>
 <p>GUARDIA.--Dicen que unos marineros; yo no los he visto. Horacio, que las recibió del que las trajo, es el que me las ha entregado á mí.</p>
 <p>CLAUDIO.--Oirás lo que dicen, Laertes. Déjanos solos.</p>
-<h2>ESCENA XXIII</h2>
-<h2>CLAUDIO, LAERTES</h2>
+<h2 class="chapter" id="c86">Escena XXIII — Claudio, Laertes</h2>
 <p>CLAUDIO. (Lee una carta.)--«Alto y poderoso señor: os hago saber cómo he llegado desnudo á vuestro reino. Mañana os pediré permiso de ver vuestra presencia real; y entonces, mediante vuestro perdón, os diré la causa de mi extraña y repentina vuelta.--HAMLET.»</p>
 <p>¿Qué quiere decir esto? ¿Se habrán vuelto los otros también, ó hay alguna equivocación, ó acaso todo es falso?</p>
 <p>LAERTES.--¿Conocéis la letra?</p>
@@ -1171,8 +1229,7 @@ h2 + p, .first { text-indent: 0; }
 <p>LAERTES.--Así lo haré, y á ese fin quiero envenenar la espada con cierto ungüento que compré de un charlatán, de cualidad tan mortífera, que mojando un cuchillo en él, adondequiera que haga sangre introduce la muerte, sin que haya emplasto eficaz que pueda evitarla, por más que se componga de cuantos simples medicinales crecen debajo de la luna. Yo bañaré la punta de mi espada con este veneno, para que apenas le toque muera.</p>
 <p>CLAUDIO.--Reflexionemos más sobre esto... Examinemos qué ocasión, qué medios serán más oportunos á nuestro engaño; porque si tal vez se malogra, y equivocada la ejecución se descubren los fines, valiera más no haberlo emprendido. Conviene, pues, que este proyecto vaya sostenido con otro segundo, capaz de asegurar el golpe, cuando por el primero no se consiga. Espera... Déjame ver si... Haremos una apuesta solemne sobre vuestra habilidad y... Sí, ya hallé el medio. Cuando con la agitación os sintáis acalorados y sedientos (puesto que al fin deberá ser mayor la violencia del combate), él pedirá de beber, y yo le tendré prevenida expresamente una copa, que al gustarla sólo, aunque haya podido librarse de tu espada ungida, veremos cumplido nuestro deseo. Pero... calla... ¿Qué ruido se escucha?</p>
 <p>(Suena ruido dentro).</p>
-<h2>ESCENA XXIV</h2>
-<h2>GERTRUDIS, CLAUDIO, LAERTES</h2>
+<h2 class="chapter" id="c87">Escena XXIV — Gertrudis, Claudio, Laertes</h2>
 <p>CLAUDIO.--¿Qué ocurre de nuevo, amada reina?</p>
 <p>GERTRUDIS.--Una desgracia va siempre pisando las ropas de otra; tan inmediatas caminan. Laertes, tu hermana acaba de ahogarse.</p>
 <p>LAERTES.--¡Ahogada!... ¿En dónde?... ¡Cielos!</p>
@@ -1182,8 +1239,7 @@ h2 + p, .first { text-indent: 0; }
 <p>LAERTES.--¡Desdichada Ofelia! demasiada agua tienes ya; por eso quisiera reprimir la de mis ojos.... Bien que á pesar de todos nuestros esfuerzos, imperiosa la naturaleza sigue su costumbre, por más que el valor se avergüence... Pero luego que este llanto se vierta, nada quedará en mí de femenil ni de cobarde... Adiós, señores... Mis palabras de fuego arderían en llamas, si no las apagasen estas lágrimas imprudentes.</p>
 <p>(Vase Laertes).</p>
 <p>CLAUDIO.--Sigámosle, Gertrudis, que después de haberme costado tanto aplacar su cólera, temo ahora que esta desgracia no la irrite otra vez. Conviene seguirle.</p>
-<h2>ACTO V</h2>
-<h2>ESCENA PRIMERA</h2>
+<h2 class="chapter" id="c88">Acto V — Escena primera</h2>
 <p>Cementerio contiguo á una iglesia</p>
 <p>Sepultureros primero y segundo</p>
 <p>SEPULTURERO 1.º--¿Y es la que ha de sepultarse en tierra sagrada, la que deliberadamente ha conspirado contra su propia salvación?</p>
@@ -1209,7 +1265,7 @@ h2 + p, .first { text-indent: 0; }
 <p>SEPULTURERO 1.º--Pues vamos.</p>
 <p>SEPULTURERO 2.º--Pues no puedo decirlo.</p>
 <p>SEPULTURERO 1.º--Vaya, no te rompas la cabeza sobre ello... Tú eres un burro lerdo que no saldrá de su paso por más que le apaleen. Cuando te hagan esta pregunta, has de responder: «El sepulturero.» ¿No ves que las casas que él hace duran hasta el día del juicio?... Anda, ve ahí á casa de Juanillo, y tráeme una copa de aguardiente.</p>
-<h2>ESCENA II</h2>
+<h2 class="chapter" id="c89">Escena II</h2>
 <p>HAMLET, HORACIO, sepulturero primero</p>
 <p>SEPULTURERO 1.º--Yo amé en mis primeros años,</p>
 <p>(Cantando).</p>
@@ -1276,7 +1332,7 @@ h2 + p, .first { text-indent: 0; }
 <p>HAMLET.--¡En qué abatimiento hemos de parar, Horacio!... Y ¿por qué no podría la imaginación seguir las ilustres cenizas de Alejandro hasta encontrarlas tapando la boca de algún barril?</p>
 <p>HORACIO.--A fe, que sería excesiva curiosidad ir á examinarlo.</p>
 <p>HAMLET.--No, no por cierto. No hay sino irle siguiendo hasta conducirle allí con probabilidad y sin violencia alguna. Como si dijéramos: Alejandro murió, Alejandro fué sepultado, Alejandro se redujo á polvo, el polvo es tierra, de la tierra hacemos barro... Y ¿por qué con este barro, en que él está ya convertido, no habrán podido tapar un barril de cerveza? El emperador César, muerto y hecho tierra, puede tapar un agujero para estorbar que pase el aire... ¡Oh! Y aquella tierra que tuvo atemorizado el orbe, servirá tal vez de reparar las hendiduras de un tabique contra las intemperies del invierno... Pero callemos... hagámonos á un lado, que... Sí... aquí viene el rey, la reina, los grandes... ¿A quién acompañan? ¡Qué ceremonial tan incompleto es éste!... Todo ello me anuncia que el difunto que conducen dió fin á su vida con desesperada mano... Sin duda era persona de calidad. Ocultémonos un poco, y observa.</p>
-<h2>ESCENA III</h2>
+<h2 class="chapter" id="c90">Escena III</h2>
 <p>CLAUDIO, GERTRUDIS, HAMLET, LAERTES, HORACIO, un cura, dos sepultureros, acompañamiento de damas, caballeros y criados.</p>
 <p>(Conducen entre cuatro hombres el cadáver de Ofelia, vestida con túnica blanca y coronada de flores. Detrás sigue el preste y todos los que hacen el duelo, atravesando el teatro á paso lento, hasta llegar á donde está la sepultura. Suena el clamor de las campanas. Hamlet y Horacio se retiran á un extremo del teatro.)</p>
 <p>LAERTES.--¿Qué otra ceremonia falta?</p>
@@ -1306,9 +1362,9 @@ h2 + p, .first { text-indent: 0; }
 <p>GERTRUDIS.--Todos son efectos de su frenesí, cuya violencia podrá agitarle por algún tiempo; pero después, semejante á la mansa paloma cuando siente animadas las mellizas crías, le veréis sin movimiento y mudo.</p>
 <p>HAMLET.--Oyeme: ¿cuál es la razón de obrar así conmigo?... Siempre te he querido bien... Pero... nada importa. Aunque el mismo Hércules con todo su poder quisiera estorbarlo, el gato mayará y el perro quedará vencedor. (Vase Hamlet y Horacio le sigue).</p>
 <p>CLAUDIO.--Horacio, ve, no le abandones... Laertes, nuestra plática de la noche anterior fortificará tu paciencia mientras dispongo lo que importa en la ocasión presente... Amada Gertrudis, será bien que alguno se encargue de la guarda de tu hijo... Esta sepultura se adornará con un monumento durable... Espero que gozaremos brevemente horas más tranquilas; pero entre tanto conviene sufrir.</p>
-<h2>ESCENA IV</h2>
+<h2 class="chapter" id="c91">Escena IV</h2>
 <p>Salón de palacio, el mismo que sirvió para la representación, con asientos que han de ocuparse en la escena IX.</p>
-<h2>HAMLET, HORACIO</h2>
+<h2 class="chapter" id="c92">Hamlet, Horacio</h2>
 <p>HAMLET.--Baste ya lo dicho sobre esta materia. Ahora quisiera informarte de lo demás; pero, ¿te acuerdas bien de todas las circunstancias?</p>
 <p>HORACIO.--¿No he de acordarme, señor?</p>
 <p>HAMLET.--Pues sabrás, amigo, que agitado continuamente mi corazón en una especie de combate, no me permitía conciliar el sueño, y en tal situación me juzgaba más infeliz que el delincuente cargado de prisiones. Una temeridad... Bien que debo dar gracias á esta temeridad, pues por ella existo... Sí, confesemos que tal vez nuestra indiscreción suele sernos útil, al paso que los planes concertados con la mayor sagacidad se malogran; prueba certísima de que la mano de Dios conduce á su fin todas nuestras acciones, por más que el hombre las ordene sin inteligencia.</p>
@@ -1329,8 +1385,7 @@ h2 + p, .first { text-indent: 0; }
 <p>HORACIO.--Presto le avisarán de Inglaterra cuál ha sido el éxito de su solicitud.</p>
 <p>HAMLET.--Sí, presto lo sabrá; pero entre tanto el tiempo es mío, y para quitar á un hombre la vida un instante basta... Sólo me disgusta, amigo Horacio, el lance ocurrido con Laertes, en que olvidado de mí propio, no vi en mi sentimiento la imagen y semejanza del suyo. Procuraré su amistad, sí... Pero, ciertamente, aquel tono amenazador que daba á sus quejas irritó en exceso mi cólera.</p>
 <p>HORACIO.--Callad... ¿Quién viene aquí?</p>
-<h2>ESCENA V</h2>
-<h2>HAMLET, HORACIO, ENRIQUE</h2>
+<h2 class="chapter" id="c93">Escena V — Hamlet, Horacio, enrique</h2>
 <p>ENRIQUE.--En hora feliz haya regresado V. A. á Dinamarca.</p>
 <p>HAMLET.--Muchas gracias, caballero... ¿Conoces á este moscón?</p>
 <p>HORACIO.--No, señor.</p>
@@ -1374,12 +1429,11 @@ h2 + p, .first { text-indent: 0; }
 <p>HAMLET.--Esta es la substancia; después lo podéis adornar con todas las flores de vuestro ingenio.</p>
 <p>ENRIQUE.--Señor, recomiendo nuevamente mis respetos á vuestra grandeza.</p>
 <p>HAMLET.--Siempre vuestro, siempre.</p>
-<h2>ESCENA VI</h2>
-<h2>HAMLET, HORACIO</h2>
+<h2 class="chapter" id="c94">Escena vi — Hamlet, Horacio</h2>
 <p>HAMLET.--El hace muy bien de recomendarse á si mismo; porque si no, dudo mucho que nadie lo hiciese por él.</p>
 <p>HORACIO.--Este me parece un vencejo que empezó á volar y chillar con el cascarón pegado á las plumas.</p>
 <p>HAMLET.--Sí, y aun antes de mamar hacía ya cumplimientos á la teta... Este es uno de los muchos que en nuestra corrompida edad son estimados, únicamente porque saben acomodarse al gusto del día con esa exterioridad halagüeña y obsequiosa... y con ella tal vez suelen sorprender el aprecio de los hombres prudentes; pero se parecen demasiado á la espuma, que por más que hierva y abulte, al dar un soplo se reconoce lo que es; todas las ampollas huecas se deshacen, y no queda nada en el vaso.</p>
-<h2>ESCENA VII</h2>
+<h2 class="chapter" id="c95">Escena VII</h2>
 <p>HAMLET, HORACIO, un Caballero</p>
 <p>CABALLERO.--Señor, parece que S. M. os envió un recado con el joven Enrique, y éste ha vuelto diciendo que esperabais en esta sala. El rey me envía á saber si gustáis de batallar con Laertes inmediatamente, ó si queréis que se dilate.</p>
 <p>HAMLET.--Yo soy constante en mi resolución, y la sujeto á la voluntad del rey. Si esta hora fuese cómoda para él, también lo es para mí: conque hágase al instante ó cuando guste, con tal que me halle en la buena disposición que ahora.</p>
@@ -1387,15 +1441,14 @@ h2 + p, .first { text-indent: 0; }
 <p>HAMLET.--Muy bien.</p>
 <p>CABALLERO.--La reina quisiera que antes de comenzar la batalla, hablarais á Laertes con dulzura y expresiones de amistad.</p>
 <p>HAMLET.--Es advertencia muy prudente.</p>
-<h2>ESCENA VIII</h2>
-<h2>HAMLET, HORACIO</h2>
+<h2 class="chapter" id="c96">Escena VIII — Hamlet, Horacio</h2>
 <p>HORACIO.--Temo que habéis de perder, señor.</p>
 <p>HAMLET.--No, yo pienso que no. Desde que él partió para Francia, no he cesado de ejercitarme, y creo que le llevaré ventaja... Pero... no podrás imaginarte qué angustia siento aquí en el corazón... ¿Y sobre qué?... No hay motivo...</p>
 <p>HORACIO.--Con todo eso, señor...</p>
 <p>HAMLET.--¡Ilusiones vanas!... Especies de presentimientos capaces sólo de turbar un alma femenil.</p>
 <p>HORACIO.--Si sentís interiormente alguna repugnancia, no hay por qué empeñaros. Yo me adelantaré á encontrarlos, y les diré que estáis indispuesto.</p>
 <p>HAMLET.--No, no... Me burlo yo de tales presagios. Hasta en la muerte de un pajarillo interviene una providencia irresistible. Si mi hora es llegada, no hay que esperarla; si no ha de venir ya, señal que es hora; y si ahora no fuese, habrá de ser después: todo consiste en hallarse prevenido para cuando venga. Si el hombre al terminar su vida ignora siempre lo que podría ocurrir después, ¿qué importa que la pierda tarde ó presto? Sepa morir.</p>
-<h2>ESCENA IX</h2>
+<h2 class="chapter" id="c97">Escena IX</h2>
 <p>HAMLET, HORACIO, CLAUDIO, GERTRUDIS, LAERTES, ENRIQUE, caballeros, damas, acompañamiento</p>
 <p>CLAUDIO.--Ven, Hamlet, ven y recibe esta mano que te presento. (Hace que Hamlet y Laertes se den la mano).</p>
 <p>HAMLET.--Laertes, si estáis ofendido de mí, os pido perdón. Perdonadme como caballero. Cuantos se hallan presentes saben, y aun vos mismo lo habréis oído, el desorden que mi razón padece. Cuanto haya hecho insultando la ternura de vuestro corazón, vuestra nobleza ó vuestro honor, cualquiera acción, en fin, capaz de irritaros, declaro solemnemente en este lugar que ha sido efecto de mi locura. ¿Puede Hamlet haber ofendido á Laertes? No. Hamlet no ha sido, porque estaba fuera de sí; y si en tal ocasión (en que él á sí propio se desconocía) ofendió á Laertes, no fué Hamlet el agresor, porque Hamlet lo desaprueba y lo desmiente. Pues ¿quién puede ser? Su demencia sola... Siendo esto así, el desdichado Hamlet es partidario del ofendido, al paso que en su propia locura reconoce su mayor contrario. Permitid, pues, que delante de esta asamblea me justifique de toda siniestra intención, y espero de vuestro ánimo generoso el olvido de mis desaciertos. Disparaba el arpón sobre los muros de ese edificio; y por error herí á mi hermano.</p>
@@ -1465,13 +1518,13 @@ h2 + p, .first { text-indent: 0; }
 <p>(Busca en la mesa el jarro del veneno, echa porción de él en una copa, va á beber. Hamlet quiere estorbárselo. Los criados quitan la copa á Horacio, la toma Hamlet, y la tira al suelo.)</p>
 <p>HAMLET.--Dame esa copa... presto... por Dios te lo pido. ¡Oh, querido Horacio! si esto permanece oculto, ¡qué manchada reputación dejaré después de mi muerte! Si alguna vez me diste lugar en tu corazón, retarda un poco esa felicidad que apeteces, alarga por algún tiempo la fatigosa vida en este mundo lleno de miserias, y divulga por él mi historia... ¿Qué estrépito militar es éste?</p>
 <p>(Suena música militar, que se va aproximando lentamente).</p>
-<h2>ESCENA X</h2>
+<h2 class="chapter" id="c98">Escena X</h2>
 <p>HAMLET, HORACIO, ENRIQUE, un Caballero y acompañamiento</p>
 <p>CABALLERO.--El joven Fortimbrás, que vuelve vencedor de Polonia, saluda con la salva marcial que oís, a los embajadores de Inglaterra.</p>
 <p>HAMLET.--Yo espiro, Horacio; la activa ponzoña sofoca mi aliento... No puedo vivir para saber nuevas de Inglaterra; pero me atrevo á anunciar que Fortimbrás será elegido por aquella nación. Yo moribundo le doy mi voto... Díselo tú, e infórmale de cuanto acaba de ocurrir... ¡Oh! Para mí sólo queda ya... silencio eterno.</p>
 <p>(Muere).</p>
 <p>HORACIO.--¡En fin, se rompe ese gran corazón!... Adiós, adiós, amado príncipe. (Le besa las manos, y hace ademanes de dolor). ¡Los coros angélicos te acompañen al celeste descanso!... Pero, ¿cómo se acerca hasta aquí ese estruendo de tambores?</p>
-<h2>ESCENA XI</h2>
+<h2 class="chapter" id="c99">Escena XI</h2>
 <p>FORTIMBRAS, dos embajadores, HORACIO, ENRIQUE, soldados, acompañamiento</p>
 <p>FORTIMBRÁS.--¿En dónde está ese espectáculo?</p>
 <p>HORACIO.--¿Qué buscáis aquí? Si no queréis ver desgracias espantosas, no paséis adelante.</p>
@@ -1481,9 +1534,9 @@ h2 + p, .first { text-indent: 0; }
 <p>FORTIMBRÁS.--Deseo con impaciencia oiros, y convendrá que se reuna con este objeto la nobleza de la nación. No puedo mirar sin horror los dones que me ofrece la fortuna; pero tengo derechos muy antiguos á esta corona, y en tal ocasión es justo reclamarlos.</p>
 <p>HORACIO.--También puedo hablar en ese propósito, declarando el voto que pronunció aquella boca que ya no formará sonido alguno... Pero ahora que los ánimos están en peligroso movimiento, no se dilate la ejecución un instante solo, para evitar los males que pudieran causar la malignidad ó el error.</p>
 <p>FORTIMBRÁS.--Cuatro de mis capitanes lleven al túmulo el cuerpo de Hamlet con las insignias correspondientes á un guerrero. ¡Ah! si él hubiese ocupado el trono, sin duda hubiera sido un excelente monarca... Resuene la música militar por donde pase la pompa fúnebre, y hágansele todos los honores de la guerra... Quitad, quitad de ahí esos cadáveres. Espectáculo sangriento más es propio de un campo de batalla que de este sitio... Y vosotros haced que salude con descargas todo el ejército.</p>
-<h2>FIN DEL DRAMA</h2>
+<h2 class="chapter" id="c100">Fin del drama</h2>
 <p>*       *       *       *       *</p>
-<h2>TEATRO FACIL</h2>
+<h2 class="chapter" id="c101">Teatro facil</h2>
 <p>Obras de facilísima representación por su sencillez de decorado y pocos personajes</p>
 <p>Hombres Mujeres</p>
 <p>1        0 =Como rezan las solteras=, por R. de Campoamor</p>
@@ -1518,5 +1571,5 @@ h2 + p, .first { text-indent: 0; }
 <p>1        5 =El señor empresario=, por Gil Pimoñon</p>
 <p>=A 50 céntimos cada obra=</p>
 <p>Casa Editorial Maucci, Mallorca, 166.--Barcelona</p>
-<p class="colophon">Texte du domaine public, source : Project Gutenberg (#56454). Traduction : Fernández de Moratín, Leandro († 1828). Édition numérique EbookClassics.</p>
+<p class="colophon">Texto de dominio público. Edición digital EbookClassics.</p>
 </body></html>

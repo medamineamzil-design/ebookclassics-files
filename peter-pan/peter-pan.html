@@ -1,26 +1,60 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
-<title>Peter Pan</title><style>
-@page { margin: 22mm 20mm; }
-body { font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', serif; line-height: 1.6;
-       color: #1f1a14; max-width: 38em; margin: 0 auto; padding: 1.5em 1.2em; }
-h1 { font-size: 2.1em; text-align: center; margin: 1.5em 0 .2em; letter-spacing: .01em; }
-.author { text-align: center; font-size: 1.15em; font-style: italic; margin-bottom: 3em; color: #5a4a36; }
-h2 { font-size: 1.25em; text-align: center; margin: 2.6em 0 1.2em; letter-spacing: .06em;
-     text-transform: uppercase; font-weight: normal; page-break-before: always; break-before: page; }
-p { margin: 0; text-indent: 1.4em; text-align: justify; hyphens: auto; }
-h2 + p, .first { text-indent: 0; }
-.colophon { font-size: .85em; color: #6b5d45; text-align: center; margin-top: 4em; text-indent: 0; }
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Peter Pan — J. M. Barrie</title><style>
+:root{--paper:#fbf8f1;--ink:#1f1b16;--muted:#6f6352;--accent:#9a6b2f;--rule:#e4dccb}
+@media (prefers-color-scheme:dark){:root{--paper:#16140f;--ink:#ece6d8;--muted:#a79c88;--accent:#d8a95e;--rule:#2e2a22}}
+html{background:var(--paper)}
+body{font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Libertinus Serif",Georgia,serif;color:var(--ink);
+     background:var(--paper);line-height:1.65;font-size:1.12rem;max-width:36em;margin:0 auto;padding:2.5em 1.25em 5em}
+.titlepage{text-align:center;min-height:70vh;display:flex;flex-direction:column;justify-content:center;gap:.6em;
+           border-bottom:1px solid var(--rule);margin-bottom:2.5em;padding-bottom:2.5em}
+.titlepage img{max-width:260px;width:60%;margin:0 auto 1.5em;border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+h1{font-size:2.4em;line-height:1.15;font-weight:600;margin:0;letter-spacing:-.01em}
+.author{font-style:italic;font-size:1.25em;color:var(--accent);margin:0}
+.translator{font-size:.95em;color:var(--muted);margin:0}
+nav.toc{margin:0 0 3em}
+nav.toc h2{font-size:.85em;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:left;margin:0 0 .8em}
+nav.toc ol{list-style:none;padding:0;margin:0;columns:1}
+nav.toc li{margin:.25em 0}
+nav.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent}
+nav.toc a:hover{border-color:var(--accent)}
+h2.chapter{font-size:1.45em;font-weight:600;text-align:center;margin:3.5em 0 1.6em;line-height:1.3}
+h2.chapter::before{content:"";display:block;width:3em;height:2px;background:var(--accent);margin:0 auto 1.1em}
+p{margin:0;text-indent:1.5em;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+h2.chapter + p, .titlepage + p{text-indent:0}
+h2.chapter + p::first-letter{font-size:3.1em;float:left;line-height:.85;padding:.08em .08em 0 0;color:var(--accent);font-weight:600}
+.colophon{margin-top:5em;padding-top:1.5em;border-top:1px solid var(--rule);text-align:center;color:var(--muted);font-size:.85em;text-indent:0}
+h3.sub{font-size:1em;font-weight:600;font-variant:small-caps;letter-spacing:.04em;text-align:center;margin:2.2em 0 1em}
+h3.sub + p{text-indent:0}
+@media print{h2.chapter{break-before:page}}
 </style></head><body>
+<header class="titlepage">
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjI0MDAiIHZpZXdCb3g9IjAgMCAxNjAwIDI0MDAiPgo8cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSIyNDAwIiBmaWxsPSIjNGExNTI2Ii8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjMwMCIgZmlsbD0iI2YyYzZhMCIgb3BhY2l0eT0iLjkyIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNGExNTI2IiBzdHJva2Utd2lkdGg9IjEyIiBvcGFjaXR5PSIuNSIvPgo8Y2lyY2xlIGN4PSIxMTIwIiBjeT0iNTYwIiByPSIxMjAiIGZpbGw9IiM0YTE1MjYiIG9wYWNpdHk9Ii4xOCIvPgo8cmVjdCB4PSIxNjAiIHk9IjkzMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIxMCIgZmlsbD0iI2YyYzZhMCIvPgo8dGV4dCB4PSIxNjAiIHk9IjExODAiIGZvbnQtc2l6ZT0iMTUwIiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmYmVmZTYiPlBldGVyIFBhbjwvdGV4dD4KPHRleHQgeD0iMTYwIiB5PSIxNDE1IiBmb250LXNpemU9IjY4IiBmb250LXN0eWxlPSJpdGFsaWMiIGZvbnQtZmFtaWx5PSJMaWJlcnRpbnVzIFNlcmlmLCBHZW9yZ2lhLCBzZXJpZiIgZmlsbD0iI2YyYzZhMCI+Si4gTS4gQmFycmllPC90ZXh0Pgo8dGV4dCB4PSIxNjAiIHk9IjIyMzAiIGZvbnQtc2l6ZT0iNDQiIGxldHRlci1zcGFjaW5nPSIxNCIgZm9udC1mYW1pbHk9IkxpYmVydGludXMgU2VyaWYsIEdlb3JnaWEsIHNlcmlmIiBmaWxsPSIjZmJlZmU2IiBvcGFjaXR5PSIuNzUiPkVCT09LQ0xBU1NJQ1M8L3RleHQ+Cjwvc3ZnPg==" alt="">
 <h1>Peter Pan</h1>
 <p class="author">J. M. Barrie</p>
-<p>Peter Pan</p>
-<h2>[PETER AND WENDY]</h2>
-<p>by J. M. Barrie [James Matthew Barrie]</p>
+</header>
+<nav class="toc"><h2>Contents</h2><ol>
+<li><a href="#c1">Chapter I. PETER BREAKS THROUGH</a></li>
+<li><a href="#c2">Chapter II. THE SHADOW</a></li>
+<li><a href="#c3">Chapter III. COME AWAY, COME AWAY!</a></li>
+<li><a href="#c4">Chapter IV. THE FLIGHT</a></li>
+<li><a href="#c5">Chapter V. THE ISLAND COME TRUE</a></li>
+<li><a href="#c6">Chapter VI. THE LITTLE HOUSE</a></li>
+<li><a href="#c7">Chapter VII. THE HOME UNDER THE GROUND</a></li>
+<li><a href="#c8">Chapter VIII. THE MERMAIDS’ LAGOON</a></li>
+<li><a href="#c9">Chapter IX. THE NEVER BIRD</a></li>
+<li><a href="#c10">Chapter X. THE HAPPY HOME</a></li>
+<li><a href="#c11">Chapter XI. WENDY’S STORY</a></li>
+<li><a href="#c12">Chapter XII. THE CHILDREN ARE CARRIED OFF</a></li>
+<li><a href="#c13">Chapter XIII. DO YOU BELIEVE IN FAIRIES?</a></li>
+<li><a href="#c14">Chapter XIV. THE PIRATE SHIP</a></li>
+<li><a href="#c15">Chapter XV. “HOOK OR ME THIS TIME”</a></li>
+<li><a href="#c16">Chapter XVI. THE RETURN HOME</a></li>
+<li><a href="#c17">Chapter XVII. WHEN WENDY GREW UP</a></li>
+</ol></nav>
 <p>A Millennium Fulcrum Edition produced in 1991 by Duncan Research. Note that while a copyright was initially claimed for the labor involved in digitization, that copyright claim is not consistent with current copyright requirements. This text, which matches the 1911 original publication, is in the public domain in the US.</p>
-<p>Contents</p>
-<p>Chapter I. PETER BREAKS THROUGH Chapter II. THE SHADOW Chapter III. COME AWAY, COME AWAY! Chapter IV. THE FLIGHT Chapter V. THE ISLAND COME TRUE Chapter VI. THE LITTLE HOUSE Chapter VII. THE HOME UNDER THE GROUND Chapter VIII. THE MERMAIDS’ LAGOON Chapter IX. THE NEVER BIRD Chapter X. THE HAPPY HOME Chapter XI. WENDY’S STORY Chapter XII. THE CHILDREN ARE CARRIED OFF Chapter XIII. DO YOU BELIEVE IN FAIRIES? Chapter XIV. THE PIRATE SHIP Chapter XV. “HOOK OR ME THIS TIME” Chapter XVI. THE RETURN HOME Chapter XVII. WHEN WENDY GREW UP</p>
-<h2>Chapter I. PETER BREAKS THROUGH</h2>
+<h2 class="chapter" id="c1">Chapter I. PETER BREAKS THROUGH</h2>
 <p>All children, except one, grow up. They soon know that they will grow up, and the way Wendy knew was this. One day when she was two years old she was playing in a garden, and she plucked another flower and ran with it to her mother. I suppose she must have looked rather delightful, for Mrs. Darling put her hand to her heart and cried, “Oh, why can’t you remain like this for ever!” This was all that passed between them on the subject, but henceforth Wendy knew that she must grow up. You always know after you are two. Two is the beginning of the end.</p>
 <p>Of course they lived at 14, and until Wendy came her mother was the chief one. She was a lovely lady, with a romantic mind and such a sweet mocking mouth. Her romantic mind was like the tiny boxes, one within the other, that come from the puzzling East, however many you discover there is always one more; and her sweet mocking mouth had one kiss on it that Wendy could never get, though there it was, perfectly conspicuous in the right-hand corner.</p>
 <p>The way Mr. Darling won her was this: the many gentlemen who had been boys when she was a girl discovered simultaneously that they loved her, and they all ran to her house to propose to her except Mr. Darling, who took a cab and nipped in first, and so he got her. He got all of her, except the innermost box and the kiss. He never knew about the box, and in time he gave up trying for the kiss. Wendy thought Napoleon could have got it, but I can picture him trying, and then going off in a passion, slamming the door.</p>
@@ -73,7 +107,7 @@ h2 + p, .first { text-indent: 0; }
 <p>While she slept she had a dream. She dreamt that the Neverland had come too near and that a strange boy had broken through from it. He did not alarm her, for she thought she had seen him before in the faces of many women who have no children. Perhaps he is to be found in the faces of some mothers also. But in her dream he had rent the film that obscures the Neverland, and she saw Wendy and John and Michael peeping through the gap.</p>
 <p>The dream by itself would have been a trifle, but while she was dreaming the window of the nursery blew open, and a boy did drop on the floor. He was accompanied by a strange light, no bigger than your fist, which darted about the room like a living thing and I think it must have been this light that wakened Mrs. Darling.</p>
 <p>She started up with a cry, and saw the boy, and somehow she knew at once that he was Peter Pan. If you or I or Wendy had been there we should have seen that he was very like Mrs. Darling’s kiss. He was a lovely boy, clad in skeleton leaves and the juices that ooze out of trees but the most entrancing thing about him was that he had all his first teeth. When he saw she was a grown-up, he gnashed the little pearls at her.</p>
-<h2>Chapter II. THE SHADOW</h2>
+<h2 class="chapter" id="c2">Chapter II. THE SHADOW</h2>
 <p>Mrs. Darling screamed, and, as if in answer to a bell, the door opened, and Nana entered, returned from her evening out. She growled and sprang at the boy, who leapt lightly through the window. Again Mrs. Darling screamed, this time in distress for him, for she thought he was killed, and she ran down into the street to look for his little body, but it was not there; and she looked up, and in the black night she could see nothing but what she thought was a shooting star.</p>
 <p>She returned to the nursery, and found Nana with something in her mouth, which proved to be the boy’s shadow. As he leapt at the window Nana had closed it quickly, too late to catch him, but his shadow had not had time to get out; slam went the window and snapped it off.</p>
 <p>You may be sure Mrs. Darling examined the shadow carefully, but it was quite the ordinary kind.</p>
@@ -178,7 +212,7 @@ h2 + p, .first { text-indent: 0; }
 <p>She went from bed to bed singing enchantments over them, and little Michael flung his arms round her. “Mother,” he cried, “I’m glad of you.” They were the last words she was to hear from him for a long time.</p>
 <p>No. 27 was only a few yards distant, but there had been a slight fall of snow, and Father and Mother Darling picked their way over it deftly not to soil their shoes. They were already the only persons in the street, and all the stars were watching them. Stars are beautiful, but they may not take an active part in anything, they must just look on for ever. It is a punishment put on them for something they did so long ago that no star now knows what it was. So the older ones have become glassy-eyed and seldom speak (winking is the star language), but the little ones still wonder. They are not really friendly to Peter, who had a mischievous way of stealing up behind them and trying to blow them out; but they are so fond of fun that they were on his side to-night, and anxious to get the grown-ups out of the way. So as soon as the door of 27 closed on Mr. and Mrs. Darling there was a commotion in the firmament, and the smallest of all the stars in the Milky Way screamed out:</p>
 <p>“Now, Peter!”</p>
-<h2>Chapter III. COME AWAY, COME AWAY!</h2>
+<h2 class="chapter" id="c3">Chapter III. COME AWAY, COME AWAY!</h2>
 <p>For a moment after Mr. and Mrs. Darling left the house the night-lights by the beds of the three children continued to burn clearly. They were awfully nice little night-lights, and one cannot help wishing that they could have kept awake to see Peter; but Wendy’s light blinked and gave such a yawn that the other two yawned also, and before they could close their mouths all the three went out.</p>
 <p>There was another light in the room now, a thousand times brighter than the night-lights, and in the time we have taken to say this, it had been in all the drawers in the nursery, looking for Peter’s shadow, rummaged the wardrobe and turned every pocket inside out. It was not really a light; it made this light by flashing about so quickly, but when it came to rest for a second you saw it was a fairy, no longer than your hand, but still growing. It was a girl called Tinker Bell exquisitely gowned in a skeleton leaf, cut low and square, through which her figure could be seen to the best advantage. She was slightly inclined to embonpoint.</p>
 <p>A moment after the fairy’s entrance the window was blown open by the breathing of the little stars, and Peter dropped in. He had carried Tinker Bell part of the way, and his hand was still messy with the fairy dust.</p>
@@ -370,7 +404,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“Cave, Peter!”</p>
 <p>Then Peter knew that there was not a moment to lose. “Come,” he cried imperiously, and soared out at once into the night, followed by John and Michael and Wendy.</p>
 <p>Mr. and Mrs. Darling and Nana rushed into the nursery too late. The birds were flown.</p>
-<h2>Chapter IV. THE FLIGHT</h2>
+<h2 class="chapter" id="c4">Chapter IV. THE FLIGHT</h2>
 <p>“Second to the right, and straight on till morning.”</p>
 <p>That, Peter had told Wendy, was the way to the Neverland; but even birds, carrying maps and consulting them at windy corners, could not have sighted it with these instructions. Peter, you see, just said anything that came into his head.</p>
 <p>At first his companions trusted him implicitly, and so great were the delights of flying that they wasted time circling round church spires or any other tall objects on the way that took their fancy.</p>
@@ -501,7 +535,7 @@ h2 + p, .first { text-indent: 0; }
 <p>I don’t know whether the idea came suddenly to Tink, or whether she had planned it on the way, but she at once popped out of the hat and began to lure Wendy to her destruction.</p>
 <p>Tink was not all bad; or, rather, she was all bad just now, but, on the other hand, sometimes she was all good. Fairies have to be one thing or the other, because being so small they unfortunately have room for one feeling only at a time. They are, however, allowed to change, only it must be a complete change. At present she was full of jealousy of Wendy. What she said in her lovely tinkle Wendy could not of course understand, and I believe some of it was bad words, but it sounded kind, and she flew back and forward, plainly meaning “Follow me, and all will be well.”</p>
 <p>What else could poor Wendy do? She called to Peter and John and Michael, and got only mocking echoes in reply. She did not yet know that Tink hated her with the fierce hatred of a very woman. And so, bewildered, and now staggering in her flight, she followed Tink to her doom.</p>
-<h2>Chapter V. THE ISLAND COME TRUE</h2>
+<h2 class="chapter" id="c5">Chapter V. THE ISLAND COME TRUE</h2>
 <p>Feeling that Peter was on his way back, the Neverland had again woke into life. We ought to use the pluperfect and say wakened, but woke is better and was always used by Peter.</p>
 <p>In his absence things are usually quiet on the island. The fairies take an hour longer in the morning, the beasts attend to their young, the redskins feed heavily for six days and nights, and when pirates and lost boys meet they merely bite their thumbs at each other. But with the coming of Peter, who hates lethargy, they are under way again: if you put your ear to the ground now, you would hear the whole island seething with life.</p>
 <p>On this evening the chief forces of the island were disposed as follows. The lost boys were out looking for Peter, the pirates were out looking for the lost boys, the redskins were out looking for the pirates, and the beasts were out looking for the redskins. They were going round and round the island, but they did not meet because all were going at the same rate.</p>
@@ -589,7 +623,7 @@ h2 + p, .first { text-indent: 0; }
 <p>All but Tootles popped down their trees. He had a bow and arrow with him, and Tink noted it, and rubbed her little hands.</p>
 <p>“Quick, Tootles, quick,” she screamed. “Peter will be so pleased.”</p>
 <p>Tootles excitedly fitted the arrow to his bow. “Out of the way, Tink,” he shouted, and then he fired, and Wendy fluttered to the ground with an arrow in her breast.</p>
-<h2>Chapter VI. THE LITTLE HOUSE</h2>
+<h2 class="chapter" id="c6">Chapter VI. THE LITTLE HOUSE</h2>
 <p>Foolish Tootles was standing like a conqueror over Wendy’s body when the other boys sprang, armed, from their trees.</p>
 <p>“You are too late,” he cried proudly, “I have shot the Wendy. Peter will be so pleased with me.”</p>
 <p>Overhead Tinker Bell shouted “Silly ass!” and darted into hiding. The others did not hear her. They had crowded round Wendy, and as they looked a terrible silence fell upon the wood. If Wendy’s heart had been beating they would all have heard it.</p>
@@ -725,7 +759,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“It is, it is,” they all cried; “we saw it at once.”</p>
 <p>“Very well,” she said, “I will do my best. Come inside at once, you naughty children; I am sure your feet are damp. And before I put you to bed I have just time to finish the story of Cinderella.”</p>
 <p>In they went; I don’t know how there was room for them, but you can squeeze very tight in the Neverland. And that was the first of the many joyous evenings they had with Wendy. By and by she tucked them up in the great bed in the home under the trees, but she herself slept that night in the little house, and Peter kept watch outside with drawn sword, for the pirates could be heard carousing far away and the wolves were on the prowl. The little house looked so cosy and safe in the darkness, with a bright light showing through its blinds, and the chimney smoking beautifully, and Peter standing on guard. After a time he fell asleep, and some unsteady fairies had to climb over him on their way home from an orgy. Any of the other boys obstructing the fairy path at night they would have mischiefed, but they just tweaked Peter’s nose and passed on.</p>
-<h2>Chapter VII. THE HOME UNDER THE GROUND</h2>
+<h2 class="chapter" id="c7">Chapter VII. THE HOME UNDER THE GROUND</h2>
 <p>One of the first things Peter did next day was to measure Wendy and John and Michael for hollow trees. Hook, you remember, had sneered at the boys for thinking they needed a tree apiece, but this was ignorance, for unless your tree fitted you it was difficult to go up and down, and no two of the boys were quite the same size. Once you fitted, you drew in your breath at the top, and down you went at exactly the right speed, while to ascend you drew in and let out alternately, and so wriggled up. Of course, when you have mastered the action you are able to do these things without thinking of them, and nothing can be more graceful.</p>
 <p>But you simply must fit, and Peter measures you for your tree as carefully as for a suit of clothes: the only difference being that the clothes are made to fit you, while you have to be made to fit the tree. Usually it is done quite easily, as by your wearing too many garments or too few, but if you are bumpy in awkward places or the only available tree is an odd shape, Peter does some things to you, and after that you fit. Once you fit, great care must be taken to go on fitting, and this, as Wendy was to discover to her delight, keeps a whole family in perfect condition.</p>
 <p>Wendy and Michael fitted their trees at the first try, but John had to be altered a little.</p>
@@ -747,7 +781,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Or suppose we tell of the birds that were Peter’s friends, particularly of the Never bird that built in a tree overhanging the lagoon, and how the nest fell into the water, and still the bird sat on her eggs, and Peter gave orders that she was not to be disturbed. That is a pretty story, and the end shows how grateful a bird can be; but if we tell it we must also tell the whole adventure of the lagoon, which would of course be telling two adventures rather than just one. A shorter adventure, and quite as exciting, was Tinker Bell’s attempt, with the help of some street fairies, to have the sleeping Wendy conveyed on a great floating leaf to the mainland. Fortunately the leaf gave way and Wendy woke, thinking it was bath-time, and swam back. Or again, we might choose Peter’s defiance of the lions, when he drew a circle round him on the ground with an arrow and dared them to cross it; and though he waited for hours, with the other boys and Wendy looking on breathlessly from trees, not one of them dared to accept his challenge.</p>
 <p>Which of these adventures shall we choose? The best way will be to toss for it.</p>
 <p>I have tossed, and the lagoon has won. This almost makes one wish that the gulch or the cake or Tink’s leaf had won. Of course I could do it again, and make it best out of three; however, perhaps fairest to stick to the lagoon.</p>
-<h2>Chapter VIII. THE MERMAIDS’ LAGOON</h2>
+<h2 class="chapter" id="c8">Chapter VIII. THE MERMAIDS’ LAGOON</h2>
 <p>If you shut your eyes and are a lucky one, you may see at times a shapeless pool of lovely pale colours suspended in the darkness; then if you squeeze your eyes tighter, the pool begins to take shape, and the colours become so vivid that with another squeeze they must go on fire. But just before they go on fire you see the lagoon. This is the nearest you ever get to it on the mainland, just one heavenly moment; if there could be two moments you might see the surf and hear the mermaids singing.</p>
 <p>The children often spent long summer days on this lagoon, swimming or floating most of the time, playing the mermaid games in the water, and so forth. You must not think from this that the mermaids were on friendly terms with them: on the contrary, it was among Wendy’s lasting regrets that all the time she was on the island she never had a civil word from one of them. When she stole softly to the edge of the lagoon she might see them by the score, especially on Marooners’ Rock, where they loved to bask, combing out their hair in a lazy way that quite irritated her; or she might even swim, on tiptoe as it were, to within a yard of them, but then they saw her and dived, probably splashing her with their tails, not by accident, but intentionally.</p>
 <p>They treated all the boys in the same way, except of course Peter, who chatted with them on Marooners’ Rock by the hour, and sat on their tails when they got cheeky. He gave Wendy one of their combs.</p>
@@ -911,7 +945,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“And you a lady; never.” Already he had tied the tail round her. She clung to him; she refused to go without him; but with a “Good-bye, Wendy,” he pushed her from the rock; and in a few minutes she was borne out of his sight. Peter was alone on the lagoon.</p>
 <p>The rock was very small now; soon it would be submerged. Pale rays of light tiptoed across the waters; and by and by there was to be heard a sound at once the most musical and the most melancholy in the world: the mermaids calling to the moon.</p>
 <p>Peter was not quite like other boys; but he was afraid at last. A tremour ran through him, like a shudder passing over the sea; but on the sea one shudder follows another till there are hundreds of them, and Peter felt just the one. Next moment he was standing erect on the rock again, with that smile on his face and a drum beating within him. It was saying, “To die will be an awfully big adventure.”</p>
-<h2>Chapter IX. THE NEVER BIRD</h2>
+<h2 class="chapter" id="c9">Chapter IX. THE NEVER BIRD</h2>
 <p>The last sound Peter heard before he was quite alone were the mermaids retiring one by one to their bedchambers under the sea. He was too far away to hear their doors shut; but every door in the coral caves where they live rings a tiny bell when it opens or closes (as in all the nicest houses on the mainland), and he heard the bells.</p>
 <p>Steadily the waters rose till they were nibbling at his feet; and to pass the time until they made their final gulp, he watched the only thing on the lagoon. He thought it was a piece of floating paper, perhaps part of the kite, and wondered idly how long it would take to drift ashore.</p>
 <p>Presently he noticed as an odd thing that it was undoubtedly out upon the lagoon with some definite purpose, for it was fighting the tide, and sometimes winning; and when it won, Peter, always sympathetic to the weaker side, could not help clapping; it was such a gallant piece of paper.</p>
@@ -936,7 +970,7 @@ h2 + p, .first { text-indent: 0; }
 <p>The Never bird saw at once what he was up to, and screamed her admiration of him; and, alas, Peter crowed his agreement with her. Then he got into the nest, reared the stave in it as a mast, and hung up his shirt for a sail. At the same moment the bird fluttered down upon the hat and once more sat snugly on her eggs. She drifted in one direction, and he was borne off in another, both cheering.</p>
 <p>Of course when Peter landed he beached his barque in a place where the bird would easily find it; but the hat was such a great success that she abandoned the nest. It drifted about till it went to pieces, and often Starkey came to the shore of the lagoon, and with many bitter feelings watched the bird sitting on his hat. As we shall not see her again, it may be worth mentioning here that all Never birds now build in that shape of nest, with a broad brim on which the youngsters take an airing.</p>
 <p>Great were the rejoicings when Peter reached the home under the ground almost as soon as Wendy, who had been carried hither and thither by the kite. Every boy had adventures to tell; but perhaps the biggest adventure of all was that they were several hours late for bed. This so inflated them that they did various dodgy things to get staying up still longer, such as demanding bandages; but Wendy, though glorying in having them all home again safe and sound, was scandalised by the lateness of the hour, and cried, “To bed, to bed,” in a voice that had to be obeyed. Next day, however, she was awfully tender, and gave out bandages to every one, and they played till bed-time at limping about and carrying their arms in slings.</p>
-<h2>Chapter X. THE HAPPY HOME</h2>
+<h2 class="chapter" id="c10">Chapter X. THE HAPPY HOME</h2>
 <p>One important result of the brush on the lagoon was that it made the redskins their friends. Peter had saved Tiger Lily from a dreadful fate, and now there was nothing she and her braves would not do for him. All night they sat above, keeping watch over the home under the ground and awaiting the big attack by the pirates which obviously could not be much longer delayed. Even by day they hung about, smoking the pipe of peace, and looking almost as if they wanted tit-bits to eat.</p>
 <p>They called Peter the Great White Father, prostrating themselves before him; and he liked this tremendously, so that it was not really good for him.</p>
 <p>“The great white father,” he would say to them in a very lordly manner, as they grovelled at his feet, “is glad to see the Piccaninny warriors protecting his wigwam from the pirates.”</p>
@@ -1036,7 +1070,7 @@ h2 + p, .first { text-indent: 0; }
 <p>None of them knew. Perhaps it was best not to know. Their ignorance gave them one more glad hour; and as it was to be their last hour on the island, let us rejoice that there were sixty glad minutes in it. They sang and danced in their night-gowns. Such a deliciously creepy song it was, in which they pretended to be frightened at their own shadows, little witting that so soon shadows would close in upon them, from whom they would shrink in real fear. So uproariously gay was the dance, and how they buffeted each other on the bed and out of it! It was a pillow fight rather than a dance, and when it was finished, the pillows insisted on one bout more, like partners who know that they may never meet again. The stories they told, before it was time for Wendy’s good-night story! Even Slightly tried to tell a story that night, but the beginning was so fearfully dull that it appalled not only the others but himself, and he said gloomily:</p>
 <p>“Yes, it is a dull beginning. I say, let us pretend that it is the end.”</p>
 <p>And then at last they all got into bed for Wendy’s story, the story they loved best, the story Peter hated. Usually when she began to tell this story he left the room or put his hands over his ears; and possibly if he had done either of those things this time they might all still be on the island. But to-night he remained on his stool; and we shall see what happened.</p>
-<h2>Chapter XI. WENDY’S STORY</h2>
+<h2 class="chapter" id="c11">Chapter XI. WENDY’S STORY</h2>
 <p>“Listen, then,” said Wendy, settling down to her story, with Michael at her feet and seven boys in the bed. “There was once a gentleman—”</p>
 <p>“I had rather he had been a lady,” Curly said.</p>
 <p>“I wish he had been a white rat,” said Nibs.</p>
@@ -1098,7 +1132,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“Wendy, you are wrong about mothers.”</p>
 <p>They all gathered round him in affright, so alarming was his agitation; and with a fine candour he told them what he had hitherto concealed.</p>
 <p>“Long ago,” he said, “I thought like you that my mother would always keep the window open for me, so I stayed away for moons and moons and moons, and then flew back; but the window was barred, for mother had forgotten all about me, and there was another little boy sleeping in my bed.”</p>
-<p>I am not sure that this was true, but Peter thought it was true; and it scared them.</p>
+<h3 class="sub">I am not sure that this was true, but Peter thought it was true; and it scared them.</h3>
 <p>“Are you sure mothers are like that?”</p>
 <p>“Yes.”</p>
 <p>So this was the truth about mothers. The toads!</p>
@@ -1165,7 +1199,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“Ay, ay.”</p>
 <p>“Then lead the way.”</p>
 <p>Tink darted up the nearest tree; but no one followed her, for it was at this moment that the pirates made their dreadful attack upon the redskins. Above, where all had been so still, the air was rent with shrieks and the clash of steel. Below, there was dead silence. Mouths opened and remained open. Wendy fell on her knees, but her arms were extended toward Peter. All arms were extended to him, as if suddenly blown in his direction; they were beseeching him mutely not to desert them. As for Peter, he seized his sword, the same he thought he had slain Barbecue with, and the lust of battle was in his eye.</p>
-<h2>Chapter XII. THE CHILDREN ARE CARRIED OFF</h2>
+<h2 class="chapter" id="c12">Chapter XII. THE CHILDREN ARE CARRIED OFF</h2>
 <p>The pirate attack had been a complete surprise: a sure proof that the unscrupulous Hook had conducted it improperly, for to surprise redskins fairly is beyond the wit of the white man.</p>
 <p>By all the unwritten laws of savage warfare it is always the redskin who attacks, and with the wiliness of his race he does it just before the dawn, at which time he knows the courage of the whites to be at its lowest ebb. The white men have in the meantime made a rude stockade on the summit of yonder undulating ground, at the foot of which a stream runs, for it is destruction to be too far from water. There they await the onslaught, the inexperienced ones clutching their revolvers and treading on twigs, but the old hands sleeping tranquilly until just before the dawn. Through the long black night the savage scouts wriggle, snake-like, among the grass without stirring a blade. The brushwood closes behind them, as silently as sand into which a mole has dived. Not a sound is to be heard, save when they give vent to a wonderful imitation of the lonely call of the coyote. The cry is answered by other braves; and some of them do it even better than the coyotes, who are not very good at it. So the chill hours wear on, and the long suspense is horribly trying to the paleface who has to live through it for the first time; but to the trained hand those ghastly calls and still ghastlier silences are but an intimation of how the night is marching.</p>
 <p>That this was the usual procedure was so well known to Hook that in disregarding it he cannot be excused on the plea of ignorance.</p>
@@ -1187,7 +1221,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Twice Smee beat upon the instrument, and then stopped to listen gleefully.</p>
 <p>“The tom-tom,” the miscreants heard Peter cry; “an Indian victory!”</p>
 <p>The doomed children answered with a cheer that was music to the black hearts above, and almost immediately they repeated their good-byes to Peter. This puzzled the pirates, but all their other feelings were swallowed by a base delight that the enemy were about to come up the trees. They smirked at each other and rubbed their hands. Rapidly and silently Hook gave his orders: one man to each tree, and the others to arrange themselves in a line two yards apart.</p>
-<h2>Chapter XIII. DO YOU BELIEVE IN FAIRIES?</h2>
+<h2 class="chapter" id="c13">Chapter XIII. DO YOU BELIEVE IN FAIRIES?</h2>
 <p>The more quickly this horror is disposed of the better. The first to emerge from his tree was Curly. He rose out of it into the arms of Cecco, who flung him to Smee, who flung him to Starkey, who flung him to Bill Jukes, who flung him to Noodler, and so he was tossed from one to another till he fell at the feet of the black pirate. All the boys were plucked from their trees in this ruthless manner; and several of them were in the air at a time, like bales of goods flung from hand to hand.</p>
 <p>A different treatment was accorded to Wendy, who came last. With ironical politeness Hook raised his hat to her, and, offering her his arm, escorted her to the spot where the others were being gagged. He did it with such an air, he was so frightfully distingué, that she was too fascinated to cry out. She was only a little girl.</p>
 <p>Perhaps it is tell-tale to divulge that for a moment Hook entranced her, and we tell on her only because her slip led to strange results. Had she haughtily unhanded him (and we should have loved to write it of her), she would have been hurled through the air like the others, and then Hook would probably not have been present at the tying of the children; and had he not been at the tying he would not have discovered Slightly’s secret, and without the secret he could not presently have made his foul attempt on Peter’s life.</p>
@@ -1258,7 +1292,7 @@ h2 + p, .first { text-indent: 0; }
 <p>The crocodile passed him, but not another living thing, not a sound, not a movement; and yet he knew well that sudden death might be at the next tree, or stalking him from behind.</p>
 <p>He swore this terrible oath: “Hook or me this time.”</p>
 <p>Now he crawled forward like a snake, and again erect, he darted across a space on which the moonlight played, one finger on his lip and his dagger at the ready. He was frightfully happy.</p>
-<h2>Chapter XIV. THE PIRATE SHIP</h2>
+<h2 class="chapter" id="c14">Chapter XIV. THE PIRATE SHIP</h2>
 <p>One green light squinting over Kidd’s Creek, which is near the mouth of the pirate river, marked where the brig, the Jolly Roger, lay, low in the water; a rakish-looking craft foul to the hull, every beam in her detestable, like ground strewn with mangled feathers. She was the cannibal of the seas, and scarce needed that watchful eye, for she floated immune in the horror of her name.</p>
 <p>She was wrapped in the blanket of night, through which no sound from her could have reached the shore. There was little sound, and none agreeable save the whir of the ship’s sewing machine at which Smee sat, ever industrious and obliging, the essence of the commonplace, pathetic Smee. I know not why he was so infinitely pathetic, unless it were because he was so pathetically unaware of it; but even strong men had to turn hastily from looking at him, and more than once on summer evenings he had touched the fount of Hook’s tears and made it flow. Of this, as of almost everything else, Smee was quite unconscious.</p>
 <p>A few of the pirates leant over the bulwarks, drinking in the miasma of the night; others sprawled by barrels over games of dice and cards; and the exhausted four who had carried the little house lay prone on the deck, where even in their sleep they rolled skillfully to this side or that out of Hook’s reach, lest he should claw them mechanically in passing.</p>
@@ -1337,7 +1371,7 @@ h2 + p, .first { text-indent: 0; }
 <p>They gathered round him, all eyes averted from the thing that was coming aboard. They had no thought of fighting it. It was Fate.</p>
 <p>Only when Hook was hidden from them did curiosity loosen the limbs of the boys so that they could rush to the ship’s side to see the crocodile climbing it. Then they got the strangest surprise of the Night of Nights; for it was no crocodile that was coming to their aid. It was Peter.</p>
 <p>He signed to them not to give vent to any cry of admiration that might rouse suspicion. Then he went on ticking.</p>
-<h2>Chapter XV. “HOOK OR ME THIS TIME”</h2>
+<h2 class="chapter" id="c15">Chapter XV. “HOOK OR ME THIS TIME”</h2>
 <p>Odd things happen to all of us on our way through life without our noticing for a time that they have happened. Thus, to take an instance, we suddenly discover that we have been deaf in one ear for we don’t know how long, but, say, half an hour. Now such an experience had come that night to Peter. When last we saw him he was stealing across the island with one finger to his lips and his dagger at the ready. He had seen the crocodile pass by without noticing anything peculiar about it, but by and by he remembered that it had not been ticking. At first he thought this eerie, but soon concluded rightly that the clock had run down.</p>
 <p>Without giving a thought to what might be the feelings of a fellow-creature thus abruptly deprived of its closest companion, Peter began to consider how he could turn the catastrophe to his own use; and he decided to tick, so that wild beasts should believe he was the crocodile and let him pass unmolested. He ticked superbly, but with one unforeseen result. The crocodile was among those who heard the sound, and it followed him, though whether with the purpose of regaining what it had lost, or merely as a friend under the belief that it was again ticking itself, will never be certainly known, for, like slaves to a fixed idea, it was a stupid beast.</p>
 <p>Peter reached the shore without mishap, and went straight on, his legs encountering the water as if quite unaware that they had entered a new element. Thus many animals pass from land to water, but no other human of whom I know. As he swam he had but one thought: “Hook or me this time.” He had ticked so long that he now went on ticking without knowing that he was doing it. Had he known he would have stopped, for to board the brig by help of the tick, though an ingenious idea, had not occurred to him.</p>
@@ -1439,7 +1473,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“Seventeen,” Slightly sang out; but he was not quite correct in his figures. Fifteen paid the penalty for their crimes that night; but two reached the shore: Starkey to be captured by the redskins, who made him nurse for all their papooses, a melancholy come-down for a pirate; and Smee, who henceforth wandered about the world in his spectacles, making a precarious living by saying he was the only man that Jas. Hook had feared.</p>
 <p>Wendy, of course, had stood by taking no part in the fight, though watching Peter with glistening eyes; but now that all was over she became prominent again. She praised them equally, and shuddered delightfully when Michael showed her the place where he had killed one; and then she took them into Hook’s cabin and pointed to his watch which was hanging on a nail. It said “half-past one!”</p>
 <p>The lateness of the hour was almost the biggest thing of all. She got them to bed in the pirates’ bunks pretty quickly, you may be sure; all but Peter, who strutted up and down on the deck, until at last he fell asleep by the side of Long Tom. He had one of his dreams that night, and cried in his sleep for a long time, and Wendy held him tightly.</p>
-<h2>Chapter XVI. THE RETURN HOME</h2>
+<h2 class="chapter" id="c16">Chapter XVI. THE RETURN HOME</h2>
 <p>By three bells that morning they were all stirring their stumps; for there was a big sea running; and Tootles, the bo’sun, was among them, with a rope’s end in his hand and chewing tobacco. They all donned pirate clothes cut off at the knee, shaved smartly, and tumbled up, with the true nautical roll and hitching their trousers.</p>
 <p>It need not be said who was the captain. Nibs and John were first and second mate. There was a woman aboard. The rest were tars before the mast, and lived in the fo’c’sle. Peter had already lashed himself to the wheel; but he piped all hands and delivered a short address to them; said he hoped they would do their duty like gallant hearties, but that he knew they were the scum of Rio and the Gold Coast, and if they snapped at him he would tear them. The bluff strident words struck the note sailors understood, and they cheered him lustily. Then a few sharp orders were given, and they turned the ship round, and nosed her for the mainland.</p>
 <p>Captain Pan calculated, after consulting the ship’s chart, that if this weather lasted they should strike the Azores about the 21st of June, after which it would save time to fly.</p>
@@ -1521,7 +1555,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“Mother!” cried Michael. He knew her now.</p>
 <p>“That’s Michael,” she said, and she stretched out her arms for the three little selfish children they would never envelop again. Yes, they did, they went round Wendy and John and Michael, who had slipped out of bed and run to her.</p>
 <p>“George, George!” she cried when she could speak; and Mr. Darling woke to share her bliss, and Nana came rushing in. There could not have been a lovelier sight; but there was none to see it except a little boy who was staring in at the window. He had had ecstasies innumerable that other children can never know; but he was looking through the window at the one joy from which he must be for ever barred.</p>
-<h2>Chapter XVII. WHEN WENDY GREW UP</h2>
+<h2 class="chapter" id="c17">Chapter XVII. WHEN WENDY GREW UP</h2>
 <p>I hope you want to know what became of the other boys. They were waiting below to give Wendy time to explain about them; and when they had counted five hundred they went up. They went up by the stair, because they thought this would make a better impression. They stood in a row in front of Mrs. Darling, with their hats off, and wishing they were not wearing their pirate clothes. They said nothing, but their eyes asked her to have them. They ought to have looked at Mr. Darling also, but they forgot about him.</p>
 <p>Of course Mrs. Darling said at once that she would have them; but Mr. Darling was curiously depressed, and they saw that he considered six a rather large number.</p>
 <p>“I must say,” he said to Wendy, “that you don’t do things by halves,” a grudging remark which the twins thought was pointed at them.</p>
@@ -1585,7 +1619,7 @@ h2 + p, .first { text-indent: 0; }
 <p>When she expressed a doubtful hope that Tinker Bell would be glad to see her he said, “Who is Tinker Bell?”</p>
 <p>“O Peter,” she said, shocked; but even when she explained he could not remember.</p>
 <p>“There are such a lot of them,” he said. “I expect she is no more.”</p>
-<p>I expect he was right, for fairies don’t live long, but they are so little that a short time seems a good while to them.</p>
+<h3 class="sub">I expect he was right, for fairies don’t live long, but they are so little that a short time seems a good while to them.</h3>
 <p>Wendy was pained too to find that the past year was but as yesterday to Peter; it had seemed such a long year of waiting to her. But he was exactly as fascinating as ever, and they had a lovely spring cleaning in the little house on the tree tops.</p>
 <p>Next year he did not come for her. She waited in a new frock because the old one simply would not meet; but he never came.</p>
 <p>“Perhaps he is ill,” Michael said.</p>
@@ -1690,6 +1724,6 @@ h2 + p, .first { text-indent: 0; }
 <p>“You see you can’t fly,” said Jane.</p>
 <p>Of course in the end Wendy let them fly away together. Our last glimpse of her shows her at the window, watching them receding into the sky until they were as small as stars.</p>
 <p>As you look at Wendy, you may see her hair becoming white, and her figure little again, for all this happened long ago. Jane is now a common grown-up, with a daughter called Margaret; and every spring cleaning time, except when he forgets, Peter comes for Margaret and takes her to the Neverland, where she tells him stories about himself, to which he listens eagerly. When Margaret grows up she will have a daughter, who is to be Peter’s mother in turn; and thus it will go on, so long as children are gay and innocent and heartless.</p>
-<h2>THE END</h2>
-<p class="colophon">Texte du domaine public, source : Project Gutenberg (#16). Édition numérique EbookClassics.</p>
+<h3 class="sub">The End</h3>
+<p class="colophon">Public domain text. EbookClassics digital edition.</p>
 </body></html>

@@ -1,18 +1,6 @@
 The Phantom of the Opera
 Gaston Leroux
 
-The footnotes have been incrementally numbered in [ ] marks, and placed after the paragraph in which they appear
-
-The Phantom of the Opera
-
-by
-
-Gaston Leroux
-
-Author of "The Mystery of the Yellow Room" and "The Perfume of the Lady in Black"
-
-Contents
-
 
 CHAPTER
 
@@ -24,7 +12,7 @@ PROLOGUE I  IS IT A GHOST? II  THE NEW MARGARITA III  THE MYSTERIOUS REASON IV  
 The Phantom of the Opera
 
 
-PROLOGUE
+Prologue
 
 
 IN WHICH THE AUTHOR OF THIS SINGULAR WORK INFORMS THE READER HOW HE ACQUIRED THE CERTAINTY THAT THE OPERA GHOST REALLY EXISTED
@@ -48,7 +36,7 @@ I have, I know, been told that this correspondence may have been forged from fir
 This, moreover, was the opinion of the more serious people who, at one time or other, were mixed up in the Chagny case, who were friends of the Chagny family, to whom I showed all my documents and set forth all my inferences.  In this connection, I should like to print a few lines which I received from General D----:
 
 
-SIR:
+Sir:
 
 
 I can not urge you too strongly to publish the results of your inquiry. I remember perfectly that, a few weeks before the disappearance of that great singer, Christine Daae, and the tragedy which threw the whole of the Faubourg Saint-Germain into mourning, there was a great deal of talk, in the foyer of the ballet, on the subject of the "ghost;" and I believe that it only ceased to be discussed in consequence of the later affair that excited us all so greatly.  But, if it be possible--as, after hearing you, I believe--to explain the tragedy through the ghost, then I beg you sir, to talk to us about the ghost again.
@@ -66,11 +54,7 @@ But we will return to the corpse and what ought to be done with it. For the pres
 And I should be ungrateful indeed if I omitted, while standing on the threshold of this dreadful and veracious story, to thank the present management the Opera, which has so kindly assisted me in all my inquiries, and M. Messager in particular, together with M. Gabion, the acting-manager, and that most amiable of men, the architect intrusted with the preservation of the building, who did not hesitate to lend me the works of Charles Garnier, although he was almost sure that I would never return them to him.  Lastly, I must pay a public tribute to the generosity of my friend and former collaborator, M. J. Le Croze, who allowed me to dip into his splendid theatrical library and to borrow the rarest editions of books by which he set great store.
 
 
-GASTON LEROUX.
-
-
-
-CHAPTER I  IS IT THE GHOST?
+Gaston Leroux — Chapter I  Is it the Ghost?
 
 
 It was the evening on which MM. Debienne and Poligny, the managers of the Opera, were giving a last gala performance to mark their retirement.  Suddenly the dressing-room of La Sorelli, one of the principal dancers, was invaded by half-a-dozen young ladies of the ballet, who had come up from the stage after "dancing" Polyeucte.  They rushed in amid great confusion, some giving vent to forced and unnatural laughter, others to cries of terror.  Sorelli, who wished to be alone for a moment to "run through" the speech which she was to make to the resigning managers, looked around angrily at the mad and tumultuous crowd.  It was little Jammes--the girl with the tip-tilted nose, the forget-me-not eyes, the rose-red cheeks and the lily-white neck and shoulders--who gave the explanation in a trembling voice:
@@ -278,6 +262,7 @@ The horrid news soon spread all over the Opera, where Joseph Buquet was very pop
 [1] I have the anecdote, which is quite authentic, from M. Pedro Gailhard himself, the late manager of the Opera.
 
 
+
 CHAPTER II  THE NEW MARGARITA
 
 
@@ -408,6 +393,7 @@ The workmen answered:
 He took off his hat, fell back to make room for the procession and went out.
 
 
+
 CHAPTER III THE MYSTERIOUS REASON
 
 
@@ -491,15 +477,14 @@ The two managers, or rather ex-managers, at once rose and stared strangely at th
 
 "'But when he comes to his box?'
 
-
 "'WE HAVE NEVER SEEN HIM IN HIS BOX.'
-
 
 "'Then sell it.'
 
 "'Sell the Opera ghost's box!  Well, gentlemen, try it.'
 
 "Thereupon we all four left the office.  Richard and I had 'never laughed so much in our lives.'"
+
 
 
 CHAPTER IV  BOX FIVE
@@ -512,7 +497,7 @@ Firmin Richard was a very distinguished composer, who had published a number of 
 The first few days which the partners spent at the Opera were given over to the delight of finding themselves the head of so magnificent an enterprise; and they had forgotten all about that curious, fantastic story of the ghost, when an incident occurred that proved to them that the joke--if joke it were--was not over.  M. Firmin Richard reached his office that morning at eleven o'clock. His secretary, M. Remy, showed him half a dozen letters which he had not opened because they were marked "private." One of the letters had at once attracted Richard's attention not only because the envelope was addressed in red ink, but because he seemed to have seen the writing before.  He soon remembered that it was the red handwriting in which the memorandum-book had been so curiously completed.  He recognized the clumsy childish hand.  He opened the letter and read:
 
 
-DEAR MR.  MANAGER:
+Dear Mr. Manager:
 
 
 I am sorry to have to trouble you at a time when you must be so very busy, renewing important engagements, signing fresh ones and generally displaying your excellent taste.  I know what you have done for Carlotta, Sorelli and little Jammes and for a few others whose admirable qualities of talent or genius you have suspected.
@@ -566,7 +551,7 @@ The whole day was spent in discussing, negotiating, signing or cancelling contra
 Next morning, the managers received a card of thanks from the ghost:
 
 
-DEAR, MR.  MANAGER:
+Dear, Mr. Manager:
 
 
 Thanks.  Charming evening.  Daae exquisite.  Choruses want waking up. Carlotta a splendid commonplace instrument.  Will write you soon for the 240,000 francs, or 233,424 fr. 70 c., to be correct.  Mm. Debienne and Poligny have sent me the 6,575 fr. 30 c. representing the first ten days of my allowance for the current year; their privileges finished on the evening of the tenth inst.
@@ -576,7 +561,7 @@ Kind regards.  O. G.
 On the other hand, there was a letter from Mm. Debienne and Poligny:
 
 
-GENTLEMEN:
+Gentlemen:
 
 
 We are much obliged for your kind thought of us, but you will easily understand that the prospect of again hearing Faust, pleasant though it is to ex-managers of the Opera, can not make us forget that we have no right to occupy Box Five on the grand tier, which is the exclusive property of HIM of whom we spoke to you when we went through the memorandum-book with you for the last time.  See Clause 98, final paragraph.
@@ -746,6 +731,7 @@ Here the inspector's voice was raised.
 When Mme. Giry had bowed herself out, with the dignity that never deserted her, the manager told the inspector that they had decided to dispense with that old madwoman's services; and, when he had gone in his turn, they instructed the acting-manager to make up the inspector's accounts.  Left alone, the managers told each other of the idea which they both had in mind, which was that they should look into that little matter of Box Five themselves.
 
 
+
 CHAPTER V THE ENCHANTED VIOLIN
 
 
@@ -758,7 +744,7 @@ She knew that the Comte de Chagny, to please his brother, had done his best on h
 She showed herself nowhere; and the Vicomte de Chagny tried in vain to meet her.  He wrote to her, asking to call upon her, but despaired of receiving a reply when, one morning, she sent him the following note:
 
 
-MONSIEUR:
+Monsieur:
 
 
 I have not forgotten the little boy who went into the sea to rescue my scarf.  I feel that I must write to you to-day, when I am going to Perros, in fulfilment of a sacred duty.  To-morrow is the anniversary of the death of my poor father, whom you knew and who was very fond of you.  He is buried there, with his violin, in the graveyard of the little church, at the bottom of the slope where we used to play as children, beside the road where, when we were a little bigger, we said good-by for the last time.
@@ -996,6 +982,7 @@ Q. "Then what happened that you were found in the morning lying half-dead on the
 R. "First a skull rolled to my feet ... then another ... then another ... It was as if I were the mark of that ghastly game of bowls.  And I had an idea that false step must have destroyed the balance of the structure behind which our musician was concealed.  This surmise seemed to be confirmed when I saw a shadow suddenly glide along the sacristy wall.  I ran up.  The shadow had already pushed open the door and entered the church.  But I was quicker than the shadow and caught hold of a corner of its cloak.  At that moment, we were just in front of the high altar; and the moonbeams fell straight upon us through the stained-glass windows of the apse.  As I did not let go of the cloak, the shadow turned round; and I saw a terrible death's head, which darted a look at me from a pair of scorching eyes.  I felt as if I were face to face with Satan; and, in the presence of this unearthly apparition, my heart gave way, my courage failed me ... and I remember nothing more until I recovered consciousness at the Setting Sun."
 
 
+
 CHAPTER VI  A VISIT TO BOX FIVE
 
 
@@ -1014,13 +1001,14 @@ Box Five is just like all the other grand tier boxes.  There is nothing to disti
 "Those people are all making fools of us!"  Firmin Richard ended by exclaiming.  "It will be FAUST on Saturday:  let us both see the performance from Box Five on the grand tier!"
 
 
+
 CHAPTER VII  FAUST AND WHAT FOLLOWED
 
 
 On the Saturday morning, on reaching their office, the joint managers found a letter from O. G. worded in these terms:
 
 
-MY DEAR MANAGERS:
+My Dear Managers:
 
 
 So it is to be war between us?
@@ -1284,7 +1272,7 @@ And he wondered what she wanted.  What she was hoping for... She was a virtuous 
 Raoul, behind the curtain of his hands that veiled his boyish tears, thought only of the letter which he received on his return to Paris, where Christine, fleeing from Perros like a thief in the night, had arrived before him:
 
 
-MY DEAR LITTLE PLAYFELLOW:
+My Dear Little Playfellow:
 
 
 You must have the courage not to see me again, not to speak of me again.  If you love me just a little, do this for me, for me who will never forget you, my dear Raoul.  My life depends upon it.  Your life depends upon it.  YOUR LITTLE CHRISTINE.
@@ -1339,19 +1327,18 @@ The toad also had started afresh!
 
 The house broke into a wild tumult.  The two managers collapsed in their chairs and dared not even turn round; they had not the strength; the ghost was chuckling behind their backs!  And, at last, they distinctly heard his voice in their right ears, the impossible voice, the mouthless voice, saying:
 
-
 "SHE IS SINGING TO-NIGHT TO BRING THE CHANDELIER DOWN!"
-
 
 With one accord, they raised their eyes to the ceiling and uttered a terrible cry.  The chandelier, the immense mass of the chandelier was slipping down, coming toward them, at the call of that fiendish voice. Released from its hook, it plunged from the ceiling and came smashing into the middle of the stalls, amid a thousand shouts of terror.  A wild rush for the doors followed.
 
 The papers of the day state that there were numbers wounded and one killed.  The chandelier had crashed down upon the head of the wretched woman who had come to the Opera for the first time in her life, the one whom M. Richard had appointed to succeed Mme. Giry, the ghost's box-keeper, in her functions!  She died on the spot and, the next morning, a newspaper appeared with this heading:
 
 
-TWO HUNDRED KILOS ON THE HEAD OF A CONCIERGE
+Two Hundred Kilos On the Head of a Concierge
 
 
 That was her sole epitaph!
+
 
 
 CHAPTER VIII  THE MYSTERIOUS BROUGHAM
@@ -1508,10 +1495,11 @@ She had passed without answering his cry ...  And he was thinking of dying; and 
 His valet found him in the morning sitting on his bed.  He had not undressed and the servant feared, at the sight of his face, that some disaster had occurred.  Raoul snatched his letters from the man's hands.  He had recognized Christine's paper and hand-writing. She said:
 
 
-DEAR:
+Dear:
 
 
 Go to the masked ball at the Opera on the night after to-morrow.  At twelve o'clock, be in the little room behind the chimney-place of the big crush-room. Stand near the door that leads to the Rotunda.  Don't mention this appointment to any one on earth.  Wear a white domino and be carefully masked.  As you love me, do not let yourself be recognized.  CHRISTINE.
+
 
 
 CHAPTER IX  AT THE MASKED BALL
@@ -1668,6 +1656,7 @@ Then, worn out, beaten, empty-brained, he sat down on the chair which Christine 
 "Who is this Erik?" he said.
 
 
+
 CHAPTER X  FORGET THE NAME OF THE MAN'S VOICE
 
 
@@ -1798,6 +1787,7 @@ Raoul uttered this "perhaps" with so much love and despair in his voice that Chr
 "Then I swear to do as you ask."
 
 He kissed her hands and went away, cursing Erik and resolving to be patient.
+
 
 
 CHAPTER XI  ABOVE THE TRAP-DOORS
@@ -1962,6 +1952,7 @@ He had a difficulty in following her.  They were soon under the very roof, in th
 And, despite the care which she took to look behind her at every moment, she failed to see a shadow which followed her like her own shadow, which stopped when she stopped, which started again when she did and which made no more noise than a well-conducted shadow should. As for Raoul, he saw nothing either; for, when he had Christine in front of him, nothing interested him that happened behind.
 
 
+
 CHAPTER XII  APOLLO'S LYRE
 
 
@@ -2001,9 +1992,7 @@ Her teeth chattered.
 
 "Why?" asked Raoul, really frightened at the aspect which this strange confidence was taking.
 
-
 "BECAUSE I HAD SEEN HIM!"
-
 
 This time, Raoul and Christine turned round at the same time:
 
@@ -2162,6 +2151,7 @@ She rose in her turn, put her two trembling arms round the young man's neck and 
 "Oh, my betrothed of a day, if I did not love you, I would not give you my lips!  Take them, for the first time and the last."
 
 He kissed her lips; but the night that surrounded them was rent asunder, they fled as at the approach of a storm and their eyes, filled with dread of Erik, showed them, before they disappeared, high up above them, an immense night-bird that stared at them with its blazing eyes and seemed to cling to the string of Apollo's lyre.
+
 
 
 CHAPTER XIII  A MASTER-STROKE OF THE TRAP-DOOR LOVER
@@ -2436,6 +2426,7 @@ At last, the curtain rose slowly and Carolus Fonta stepped to the conductor's de
 "Ladies and gentlemen, an unprecedented event has taken place and thrown us into a state of the greatest alarm.  Our sister-artist, Christine Daae, has disappeared before our eyes and nobody can tell us how!"
 
 
+
 CHAPTER XIV  THE SINGULAR ATTITUDE OF A SAFETY-PIN
 
 
@@ -2553,9 +2544,7 @@ Gabriel raised his arms and dropped them to his sides again, which gesture was m
 
 "What?  WON'T THEY HAVE ANY ONE COME NEAR THEM?"
 
-
 "AND THEY WON'T LET ANY ONE TOUCH THEM!"
-
 
 "Really?  Have you noticed THAT THEY WON'T LET ANY ONE TOUCH THEM? That is certainly odd!"
 
@@ -2577,9 +2566,7 @@ Gabriel raised his arms and dropped them to his sides again, which gesture was m
 
 "What was he doing?  Why, you saw him!  He turned about, BOWED IN FRONT OF HIM, THOUGH THERE WAS NOBODY IN FRONT OF HIM, AND WITHDREW BACKWARD."
 
-
 "BACKWARD?"
-
 
 "And Moncharmin, behind Richard, also turned about; that is, he described a semicircle behind Richard and also WALKED BACKWARD! ... And they went LIKE THAT to the staircase leading to the managers' office: BACKWARD, BACKWARD, BACKWARD!  ...  Well, if they are not mad, will you explain what it means?"
 
@@ -2620,6 +2607,7 @@ Suddenly a voice made them all three turn round.
 "I beg your pardon, gentlemen.  Could you tell me where Christine Daae is?"
 
 In spite of the seriousness of the circumstances, the absurdity of the question would have made them roar with laughter, if they had not caught sight of a face so sorrow-stricken that they were at once seized with pity.  It was the Vicomte Raoul de Chagny.
+
 
 
 CHAPTER XV  CHRISTINE!  CHRISTINE!
@@ -2697,13 +2685,14 @@ At last the door was opened.  All rushed in to the office, on the commissary's h
 
 Raoul was the last to enter.  As he was about to follow the rest into the room, a hand was laid on his shoulder and he heard these words spoken in his ear:
 
-
 "ERIK'S SECRETS CONCERN NO ONE BUT HIMSELF!"
-
 
 He turned around, with a stifled exclamation.  The hand that was laid on his shoulder was now placed on the lips of a person with an ebony skin, with eyes of jade and with an astrakhan cap on his head: the Persian!  The stranger kept up the gesture that recommended discretion and then, at the moment when the astonished viscount was about to ask the reason of his mysterious intervention, bowed and disappeared.
 
-Chapter XVI  Mme. Giry's Astounding Revelations as to Her Personal Relations with the Opera Ghost
+
+
+CHAPTER XVI  MME. GIRY'S ASTOUNDING REVELATIONS AS TO HER PERSONAL RELATIONS WITH THE OPERA GHOST
+
 
 Before following the commissary into the manager's office I must describe certain extraordinary occurrences that took place in that office which Remy and Mercier had vainly tried to enter and into which MM. Richard and Moncharmin had locked themselves with an object which the reader does not yet know, but which it is my duty, as an historian, to reveal without further postponement.
 
@@ -2808,7 +2797,7 @@ Mme. Giry looked at the managers as though they were talking Chinese. She walked
 And Mme. Giry, drawing herself up, recited the letter with touching eloquence:
 
 
-MADAM:
+Madam:
 
 
 1825.  Mlle. Menetrier, leader of the ballet, became Marquise de Cussy.
@@ -2867,9 +2856,7 @@ Mine.  Giry looked into the envelope with a lackluster eye, which soon recovered
 
 The two black feathers on the dingy bonnet, which usually affected the attitude of two notes of interrogation, changed into two notes of exclamation; as for the bonnet itself, it swayed in menace on the old lady's tempestuous chignon.  Surprise, indignation, protest and dismay were furthermore displayed by little Meg's mother in a sort of extravagant movement of offended virtue, half bound, half slide, that brought her right under the nose of M. Richard, who could not help pushing back his chair.
 
-
 "HAVE ME ARRESTED!"
-
 
 The mouth that spoke those words seemed to spit the three teeth that were left to it into Richard's face.
 
@@ -2984,6 +2971,7 @@ And Mme. Giry once more suited the action to the word, She passed behind M. Rich
 "Oh, wonderful, no doubt!"  Moncharmin agreed.  "Only, you forget, Richard, that I provided ten-thousand francs of the twenty and that nobody put anything in my pocket!"
 
 [1] Flash notes drawn on the "Bank of St. Farce" in France correspond with those drawn on the "Bank of Engraving" in England.--Translator's Note.
+
 
 
 CHAPTER XVII  THE SAFETY-PIN AGAIN
@@ -3148,6 +3136,7 @@ But Richard suddenly sprang upon his partner.
 "On my soul," sighed Moncharmin, who was ready to swoon, "on my soul, I swear that I haven't got it!"
 
 Then somebody knocked at the door.  Moncharmin opened it automatically, seemed hardly to recognize Mercier, his business-manager, exchanged a few words with him, without knowing what he was saying and, with an unconscious movement, put the safety-pin, for which he had no further use, into the hands of his bewildered subordinate ...
+
 
 
 CHAPTER XVIII  THE COMMISSARY, THE VISCOUNT AND THE PERSIAN
@@ -3318,6 +3307,7 @@ Raoul impatiently raised his eyes and recognized the astrakhan cap of an hour ag
 "It's you!" he cried, in a feverish voice.  "You, who know Erik's secrets and don't want me to speak of them.  Who are you?"
 
 "You know who I am! ... I am the Persian!"
+
 
 
 CHAPTER XIX  THE VISCOUNT AND THE PERSIAN
@@ -3520,6 +3510,7 @@ Raoul looked at him in amazement; but the Persian made a sign to him to be silen
 He himself raised his pistol opposite the glass.  Raoul imitated his movement.  With his free arm, the Persian drew the young man to his chest and, suddenly, the mirror turned, in a blinding daze of cross-lights: it turned like one of those revolving doors which have lately been fixed to the entrances of most restaurants, it turned, carrying Raoul and the Persian with it and suddenly hurling them from the full light into the deepest darkness.
 
 
+
 CHAPTER XX  IN THE CELLARS OF THE OPERA
 
 
@@ -3549,9 +3540,7 @@ The first lay on the narrow landing of the little staircase; the two others had 
 
 He too had seen the bodies and he gave one word in explanation:
 
-
 "HE!"
-
 
 The commissary's voice was now heard more distinctly.  He was asking for information about the system of lighting, which the stage-manager supplied.  The commissary therefore must be in the "organ" or its immediate neighborhood.
 
@@ -3563,7 +3552,9 @@ But now Mauclair was not in his box and his assistants not in their places.
 
 The stage-manager's voice echoed through the cellars.  But Mauclair did not reply.
 
+
 I have said that a door opened on a little staircase that led to the second cellar.  The commissary pushed it, but it resisted.
+
 
 "I say," he said to the stage-manager, "I can't open this door: is it always so difficult?"
 
@@ -3817,10 +3808,13 @@ What the Persian knew of this torture-chamber and what there befell him and his 
 
 [5] These two pairs of boots, which were placed, according to the Persian's papers, just between the set piece and the scene from the ROI DE LAHORE, on the spot where Joseph Buquet was found hanging, were never discovered.  They must have been taken by some stage-carpenter or "door-shutter."
 
-Chapter XXI  Interesting and Instructive Vicissitudes of a Persian in the Cellars of the Opera
 
 
-THE PERSIAN'S NARRATIVE
+CHAPTER XXI  INTERESTING AND INSTRUCTIVE VICISSITUDES OF A PERSIAN IN THE CELLARS OF THE OPERA
+
+
+
+The Persian's Narrative
 
 
 It was the first time that I entered the house on the lake.  I had often begged the "trap-door lover," as we used to call Erik in my country, to open its mysterious doors to me.  He always refused.  I made very many attempts, but in vain, to obtain admittance.  Watch him as I might, after I first learned that he had taken up his permanent abode at the Opera, the darkness was always too thick to enable me to see how he worked the door in the wall on the lake.  One day, when I thought myself alone, I stepped into the boat and rowed toward that part of the wall through which I had seen Erik disappear.  It was then that I came into contact with the siren who guarded the approach and whose charm was very nearly fatal to me.
@@ -3840,7 +3834,7 @@ He laughed and showed me a long reed.
 "It's the silliest trick you ever saw," he said, "but it's very useful for breathing and singing in the water.  I learned it from the Tonkin pirates, who are able to remain hidden for hours in the beds of the rivers."[1]
 
 
-I SPOKE TO HIM SEVERELY.
+I spoke to him severely.
 
 
 "It's a trick that nearly killed me!"  I said.  "And it may have been fatal to others!  You know what you promised me, Erik?  No more murders!"
@@ -3978,7 +3972,7 @@ M. de Chagny noticed it and asked:
 "What is the matter, sir?"
 
 
-I MADE HIM A VIOLENT SIGN TO BE SILENT.
+I made him a violent sign to be silent.
 
 
 [1] An official report from Tonkin, received in Paris at the end of July, 1909, relates how the famous pirate chief De Tham was tracked, together with his men, by our soldiers; and how all of them succeeded in escaping, thanks to this trick of the reeds.
@@ -3988,11 +3982,8 @@ I MADE HIM A VIOLENT SIGN TO BE SILENT.
 [3] The Persian might easily have admitted that Erik's fate also interested himself, for he was well aware that, if the government of Teheran had learned that Erik was still alive, it would have been all up with the modest pension of the erstwhile daroga.  It is only fair, however, to add that the Persian had a noble and generous heart; and I do not doubt for a moment that the catastrophes which he feared for others greatly occupied his mind.  His conduct, throughout this business, proves it and is above all praise.
 
 
-CHAPTER XXII  IN THE TORTURE CHAMBER
 
-
-
-THE PERSIAN'S NARRATIVE CONTINUED
+CHAPTER XXII  IN THE TORTURE CHAMBER — THE PERSIAN'S NARRATIVE CONTINUED
 
 
 We were in the middle of a little six-cornered room, the sides of which were covered with mirrors from top to bottom.  In the corners, we could clearly see the "joins" in the glasses, the segments intended to turn on their gear; yes, I recognized them and I recognized the iron tree in the corner, at the bottom of one of those segments ... the iron tree, with its iron branch, for the hanged men.
@@ -4158,11 +4149,8 @@ And I remembered the two arms that had emerged from the inky waters... What poor
 Erik sang like the god of thunder, sang a DIES IRAE that enveloped us as in a storm.  The elements seemed to rage around us.  Suddenly, the organ and the voice ceased so suddenly that M. de Chagny sprang back, on the other side of the wall, with emotion.  And the voice, changed and transformed, distinctly grated out these metallic syllables: "WHAT HAVE YOU DONE WITH MY BAG?"
 
 
-CHAPTER XXIII  THE TORTURES BEGIN
 
-
-
-THE PERSIAN'S NARRATIVE CONTINUED.
+CHAPTER XXIII  THE TORTURES BEGIN — THE PERSIAN'S NARRATIVE CONTINUED.
 
 
 The voice repeated angrily:  "What have you done with my bag?  So it was to take my bag that you asked me to release you!"
@@ -4297,18 +4285,17 @@ Soon we heard nothing more at all, for this is what happened:
 
 "Well, what has that to do with it?  The forest?"
 
-
 "WHY, DIDN'T YOU SEE THAT IT WAS AN AFRICAN FOREST?"
 
-
 And the monster laughed so loudly and hideously that we could no longer distinguish Christine's supplicating cries!  The Vicomte de Chagny shouted and banged against the walls like a madman.  I could not restrain him.  But we heard nothing except the monster's laughter, and the monster himself can have heard nothing else.  And then there was the sound of a body falling on the floor and being dragged along and a door slammed and then nothing, nothing more around us save the scorching silence of the south in the heart of a tropical forest!
+
 
 
 CHAPTER XXIV  "BARRELS! ... BARRELS! ... ANY BARRELS TO SELL?"
 
 
 
-THE PERSIAN'S NARRATIVE CONTINUED
+The Persian's Narrative Continued
 
 
 I have said that the room in which M. le Vicomte de Chagny and I were imprisoned was a regular hexagon, lined entirely with mirrors.  Plenty of these rooms have been seen since, mainly at exhibitions: they are called "palaces of illusion," or some such name.  But the invention belongs entirely to Erik, who built the first room of this kind under my eyes, at the time of the rosy hours of Mazenderan.  A decorative object, such as a column, for instance, was placed in one of the corners and immediately produced a hall of a thousand columns; for, thanks to the mirrors, the real room was multiplied by six hexagonal rooms, each of which, in its turn, was multiplied indefinitely.  But the little sultana soon tired of this infantile illusion, whereupon Erik altered his invention into a "torture-chamber." For the architectural motive placed in one corner, he substituted an iron tree. This tree, with its painted leaves, was absolutely true to life and was made of iron so as to resist all the attacks of the "patient" who was locked into the torture-chamber.  We shall see how the scene thus obtained was twice altered instantaneously into two successive other scenes, by means of the automatic rotation of the drums or rollers in the corners.  These were divided into three sections, fitting into the angles of the mirrors and each supporting a decorative scheme that came into sight as the roller revolved upon its axis.
@@ -4468,11 +4455,8 @@ What I had seen in M. de Chagny's hands ... was gun-powder!
 [1] It is very natural that, at the time when the Persian was writing, he should take so many precautions against any spirit of incredulity on the part of those who were likely to read his narrative.  Nowadays, when we have all seen this sort of room, his precautions would be superfluous.
 
 
-CHAPTER XXV  THE SCORPION OR THE GRASSHOPPER:  WHICH?
 
-
-
-THE PERSIAN'S NARRATIVE CONCLUDED
+CHAPTER XXV  THE SCORPION OR THE GRASSHOPPER:  WHICH? — THE PERSIAN'S NARRATIVE CONCLUDED
 
 
 The discovery flung us into a state of alarm that made us forget all our past and present sufferings.  We now knew all that the monster meant to convey when he said to Christine Daae:
@@ -4511,7 +4495,9 @@ But perhaps it was not the eleven o'clock of which we stood in dread. Perhaps we
 
 Suddenly, I exclaimed:  "Hush!"
 
+
 I seemed to hear footsteps in the next room.  Some one tapped against the wall.  Christine Daae's voice said:
+
 
 "Raoul!  Raoul!"  We were now all talking at once, on either side of the wall.  Christine sobbed; she was not sure that she would find M. de Chagny alive.  The monster had been terrible, it seemed, had done nothing but rave, waiting for her to give him the "yes" which she refused.  And yet she had promised him that "yes," if he would take her to the torture-chamber. But he had obstinately declined, and had uttered hideous threats against all the members of the human race!  At last, after hours and hours of that hell, he had that moment gone out, leaving her alone to reflect for the last time.
 
@@ -4550,7 +4536,7 @@ With extraordinary calmness, he at once replied:
 "So you are not dead in there?  Well, then, see that you keep quiet."
 
 
-I TRIED TO SPEAK, BUT HE SAID COLDLY:
+I tried to speak, but he said coldly:
 
 
 "Not a word, daroga, or I shall blow everything up."  And he added, "The honor rests with mademoiselle ...  Mademoiselle has not touched the scorpion"--how deliberately he spoke!--"mademoiselle has not touched the grasshopper"--with that composure!--"but it is not too late to do the right thing.  There, I open the caskets without a key, for I am a trap-door lover and I open and shut what I please and as I please. I open the little ebony caskets: mademoiselle, look at the little dears inside.  Aren't they pretty?  If you turn the grasshopper, mademoiselle, we shall all be blown up.  There is enough gun-powder under our feet to blow up a whole quarter of Paris.  If you turn the scorpion, mademoiselle, all that powder will be soaked and drowned. Mademoiselle, to celebrate our wedding, you shall make a very handsome present to a few hundred Parisians who are at this moment applauding a poor masterpiece of Meyerbeer's ... you shall make them a present of their lives ...  For, with your own fair hands, you shall turn the scorpion ...  And merrily, merrily, we will be married!"
@@ -4573,7 +4559,9 @@ The terrible silence began anew.  The Vicomte de Chagny, realizing that there wa
 
 "Enough!"
 
+
 I was crying out in concert with Christine.  M. de Chagny was still on his knees, praying.
+
 
 "Erik!  I have turned the scorpion!"
 
@@ -4630,6 +4618,7 @@ But I lost my strength; I tried to lay hold of the walls!  Oh, how those glass w
 And, before losing consciousness entirely, I seemed to hear, between two guggles:
 
 "Barrels!  Barrels!  Any barrels to sell?"
+
 
 
 CHAPTER XXVI  THE END OF THE GHOST'S LOVE STORY
@@ -4746,7 +4735,7 @@ The Persian had seen the poor, unfortunate Erik for the last time. Three weeks l
 "Erik is dead."
 
 
-EPILOGUE.
+Epilogue.
 
 
 I have now told the singular, but veracious story of the Opera ghost. As I declared on the first page of this work, it is no longer possible to deny that Erik really lived.  There are to-day so many proofs of his existence within the reach of everybody that we can follow Erik's actions logically through the whole tragedy of the Chagnys.
@@ -4812,37 +4801,7 @@ And, now, what do they mean to do with that skeleton?  Surely they will not bury
 [2] See the interview of the special correspondent of the MATIN, with Mohammed-Ali Bey, on the day after the entry of the Salonika troops into Constantinople.
 
 
-THE END
+The End
 
 
-The Paris Opera House
-
-THE SCENE OF GASTON LEROUX'S NOVEL, "THE PHANTOM OF THE OPERA"
-
-That Mr. Leroux has used, for the scene of his story, the Paris Opera House as it really is and has not created a building out of his imagination, is shown by this interesting description of it taken from an article which appeared in Scribner's Magazine in 1879, a short time after the building was completed:
-
-"The new Opera House, commenced under the Empire and finished under the Republic, is the most complete building of the kind in the world and in many respects the most beautiful.  No European capital possesses an opera house so comprehensive in plan and execution, and none can boast an edifice equally vast and splendid.
-
-"The site of the Opera House was chosen in 1861.  It was determined to lay the foundation exceptionally deep and strong.  It was well known that water would be met with, but it was impossible to foresee at what depth or in what quantity it would be found.  Exceptional depth also was necessary, as the stage arrangements were to be such as to admit a scene fifty feet high to be lowered on its frame.  It was therefore necessary to lay a foundation in a soil soaked with water which should be sufficiently solid to sustain a weight of 22,000,000 pounds, and at the same time to be perfectly dry, as the cellars were intended for the storage of scenery and properties.  While the work was in progress, the excavation was kept free from water by means of eight pumps, worked by steam power, and in operation, without interruption, day and night, from March second to October thirteenth.  The floor of the cellar was covered with a layer of concrete, then with two coats of cement, another layer of concrete and a coat of bitumen.  The wall includes an outer wall built as a coffer-dam, a brick wall, a coat of cement, and a wall proper, a little over a yard thick.  After all this was done the whole was filled with water, in order that the fluid, by penetrating into the most minute interstices, might deposit a sediment which would close them more surely and perfectly than it would be possible to do by hand.  Twelve years elapsed before the completion of the building, and during that time it was demonstrated that the precautions taken secured absolute impermeability and solidity.
-
-"The events of 1870 interrupted work just as it was about to be prosecuted most vigorously, and the new Opera House was put to new and unexpected uses.  During the siege, it was converted into a vast military storehouse and filled with a heterogeneous mass of goods. After the siege the building fell into the hands of the Commune and the roof was turned into a balloon station.  The damage done, however, was slight.
-
-"The fine stone employed in the construction was brought from quarries in Sweden, Scotland, Italy, Algeria, Finland, Spain, Belgium and France.  While work on the exterior was in progress, the building was covered in by a wooden shell, rendered transparent by thousands of small panes of glass.  In 1867 a swarm of men, supplied with hammers and axes, stripped the house of its habit, and showed in all its splendor the great structure.  No picture can do justice to the rich colors of the edifice or to the harmonious tone resulting from the skilful use of many diverse materials.  The effect of the frontage is completed by the cupola of the auditorium, topped with a cap of bronze sparingly adorned with gilding.  Farther on, on a level with the towers of Notre-Dame, is the gable end of the roof of the stage, a 'Pegasus', by M. Lequesne, rising at either end of the roof, and a bronze group by M. Millet, representing 'Apollo lifting his golden lyre', commanding the apex.  Apollo, it may here be mentioned, is useful as well as ornamental, for his lyre is tipped with a metal point which does duty as a lightning-rod, and conducts the fluid to the body and down the nether limbs of the god.
-
-"The spectator, having climbed ten steps and left behind him a gateway, reaches a vestibule in which are statues of Lully, Rameau, Gluck, and Handel.  Ten steps of green Swedish marble lead to a second vestibule for ticket-sellers. Visitors who enter by the pavilion reserved for carriages pass through a hallway where ticket offices are situated. The larger number of the audience, before entering the auditorium, traverse a large circular vestibule located exactly beneath it.  The ceiling of this portion of the building is upheld by sixteen fluted columns of Jura stone, with white marble capitals, forming a portico. Here servants are to await their masters, and spectators may remain until their carriages are summoned.  The third entrance, which is quite distinct from the others, is reserved for the Executive.  The section of the building set aside for the use of the Emperor Napoleon was to have included an antechamber for the bodyguards; a salon for the aides-de-camp; a large salon and a smaller one for the Empress; hat and cloak rooms, etc.  Moreover, there were to be in close proximity to the entrance, stables for three coaches, for the outriders' horses, and for the twenty-one horsemen acting as an escort; a station for a squad of infantry of thirty-one men and ten cent-gardes, and a stable for the horses of the latter; and, besides, a salon for fifteen or twenty domestics.  Thus arrangements had to be made to accommodate in this part of the building about one hundred persons, fifty horses, and half-a-dozen carriages.  The fall of the Empire suggested some changes, but ample provision still exists for emergencies.
-
-"Its novel conception, perfect fitness, and rare splendor of material, make the grand stairway unquestionably one of the most remarkable features of the building.  It presents to the spectator, who has just passed through the subscribers' pavilion, a gorgeous picture.  From this point he beholds the ceiling formed by the central landing; this and the columns sustaining it, built of Echaillon stone, are honeycombed with arabesques and heavy with ornaments; the steps are of white marble, and antique red marble balusters rest on green marble sockets and support a balustrade of onyx.  To the right and to the left of this landing are stairways to the floor, on a plane with the first row of boxes.  On this floor stand thirty monolith columns of Sarrancolin marble, with white marble bases and capitals.  Pilasters of peach-blossom and violet stone are against the corresponding walls. More than fifty blocks had to be extracted from the quarry to find thirty perfect monoliths.
-
-"The foyer de la danse has particular interest for the habitues of the Opera.  It is a place of reunion to which subscribers to three performances a week are admitted between the acts in accordance with a usage established in 1870.  Three immense looking-glasses cover the back wall of the FOYER, and a chandelier with one hundred and seven burners supplies it with light.  The paintings include twenty oval medallions, in which are portrayed the twenty danseuses of most celebrity since the opera has existed in France, and four panels by M. Boulanger, typifying 'The War Dance', 'The Rustic Dance', 'The Dance of Love' and 'The Bacchic Dance.' While the ladies of the ballet receive their admirers in this foyer, they can practise their steps. Velvet-cushioned bars have to this end been secured at convenient points, and the floor has been given the same slope as that of the stage, so that the labor expended may be thoroughly profitable to the performance. The singers' foyer, on the same floor, is a much less lively resort than the foyer de la danse, as vocalists rarely leave their dressing-rooms before they are summoned to the stage.  Thirty panels with portraits of the artists of repute in the annals of the Opera adorn this foyer.
-
-"Some estimate ... may be arrived at by sitting before the concierge an hour or so before the representation commences.  First appear the stage carpenters, who are always seventy, and sometimes, when L'Africaine, for example, with its ship scene, is the opera, one hundred and ten strong.  Then come stage upholsterers, whose sole duty is to lay carpets, hang curtains, etc.; gas-men, and a squad of firemen. Claqueurs, call-boys, property-men, dressers, coiffeurs, supernumeraries, and artists, follow.  The supernumeraries number about one hundred; some are hired by the year, but the 'masses' are generally recruited at the last minute and are generally working-men who seek to add to their meagre earnings.  There are about a hundred choristers, and about eighty musicians.
-
-"Next we behold equeries, whose horses are hoisted on the stage by means of an elevator; electricians who manage the light-producing batteries; hydrauliciens to take charge of the water-works in ballets like La Source; artificers who prepare the conflagration in Le Profeta; florists who make ready Margarita's garden, and a host of minor employees.  This personnel is provided for as follows:  Eighty dressing-rooms are reserved for the artists, each including a small antechamber, the dressing-room proper, and a little closet.  Besides these apartments, the Opera has a dressing-room for sixty male, and another for fifty female choristers; a third for thirty-four male dancers; four dressing-rooms for twenty female dancers of different grades; a dressing-room for one hundred and ninety supernumeraries, etc."
-
-A few figures taken from the article will suggest the enormous capacity and the perfect convenience of the house.  "There are 2,531 doors and 7,593 keys; 14 furnaces and grates heat the house; the gaspipes if connected would form a pipe almost 16 miles long; 9 reservoirs, and two tanks hold 22,222 gallons of water and distribute their contents through 22,829 2-5 feet of piping; 538 persons have places assigned wherein to change their attire.  The musicians have a foyer with 100 closets for their instruments."
-
-The author remarks of his visit to the Opera House that it "was almost as bewildering as it was agreeable.  Giant stairways and colossal halls, huge frescoes and enormous mirrors, gold and marble, satin and velvet, met the eye at every turn."
-
-In a recent letter Mr. Andre Castaigne, whose remarkable pictures illustrate the text, speaks of a river or lake under the Opera House and mentions the fact that there are now also three metropolitan railway tunnels, one on top of the other.
-
-Texte du domaine public, source : Project Gutenberg (#175). Édition numérique EbookClassics.
+— Public domain text. EbookClassics digital edition.

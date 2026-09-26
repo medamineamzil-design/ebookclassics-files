@@ -1,20 +1,50 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
-<title>The Jungle Book</title><style>
-@page { margin: 22mm 20mm; }
-body { font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', serif; line-height: 1.6;
-       color: #1f1a14; max-width: 38em; margin: 0 auto; padding: 1.5em 1.2em; }
-h1 { font-size: 2.1em; text-align: center; margin: 1.5em 0 .2em; letter-spacing: .01em; }
-.author { text-align: center; font-size: 1.15em; font-style: italic; margin-bottom: 3em; color: #5a4a36; }
-h2 { font-size: 1.25em; text-align: center; margin: 2.6em 0 1.2em; letter-spacing: .06em;
-     text-transform: uppercase; font-weight: normal; page-break-before: always; break-before: page; }
-p { margin: 0; text-indent: 1.4em; text-align: justify; hyphens: auto; }
-h2 + p, .first { text-indent: 0; }
-.colophon { font-size: .85em; color: #6b5d45; text-align: center; margin-top: 4em; text-indent: 0; }
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Jungle Book — Rudyard Kipling</title><style>
+:root{--paper:#fbf8f1;--ink:#1f1b16;--muted:#6f6352;--accent:#9a6b2f;--rule:#e4dccb}
+@media (prefers-color-scheme:dark){:root{--paper:#16140f;--ink:#ece6d8;--muted:#a79c88;--accent:#d8a95e;--rule:#2e2a22}}
+html{background:var(--paper)}
+body{font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Libertinus Serif",Georgia,serif;color:var(--ink);
+     background:var(--paper);line-height:1.65;font-size:1.12rem;max-width:36em;margin:0 auto;padding:2.5em 1.25em 5em}
+.titlepage{text-align:center;min-height:70vh;display:flex;flex-direction:column;justify-content:center;gap:.6em;
+           border-bottom:1px solid var(--rule);margin-bottom:2.5em;padding-bottom:2.5em}
+.titlepage img{max-width:260px;width:60%;margin:0 auto 1.5em;border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+h1{font-size:2.4em;line-height:1.15;font-weight:600;margin:0;letter-spacing:-.01em}
+.author{font-style:italic;font-size:1.25em;color:var(--accent);margin:0}
+.translator{font-size:.95em;color:var(--muted);margin:0}
+nav.toc{margin:0 0 3em}
+nav.toc h2{font-size:.85em;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:left;margin:0 0 .8em}
+nav.toc ol{list-style:none;padding:0;margin:0;columns:1}
+nav.toc li{margin:.25em 0}
+nav.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent}
+nav.toc a:hover{border-color:var(--accent)}
+h2.chapter{font-size:1.45em;font-weight:600;text-align:center;margin:3.5em 0 1.6em;line-height:1.3}
+h2.chapter::before{content:"";display:block;width:3em;height:2px;background:var(--accent);margin:0 auto 1.1em}
+p{margin:0;text-indent:1.5em;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+h2.chapter + p, .titlepage + p{text-indent:0}
+h2.chapter + p::first-letter{font-size:3.1em;float:left;line-height:.85;padding:.08em .08em 0 0;color:var(--accent);font-weight:600}
+.colophon{margin-top:5em;padding-top:1.5em;border-top:1px solid var(--rule);text-align:center;color:var(--muted);font-size:.85em;text-indent:0}
+h3.sub{font-size:1em;font-weight:600;font-variant:small-caps;letter-spacing:.04em;text-align:center;margin:2.2em 0 1em}
+h3.sub + p{text-indent:0}
+@media print{h2.chapter{break-before:page}}
 </style></head><body>
+<header class="titlepage">
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjI0MDAiIHZpZXdCb3g9IjAgMCAxNjAwIDI0MDAiPgo8cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSIyNDAwIiBmaWxsPSIjMTYzMDJiIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjMwMCIgZmlsbD0iI2U5YzQ2YSIgb3BhY2l0eT0iLjkyIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTYzMDJiIiBzdHJva2Utd2lkdGg9IjEyIiBvcGFjaXR5PSIuNSIvPgo8Y2lyY2xlIGN4PSIxMTIwIiBjeT0iNTYwIiByPSIxMjAiIGZpbGw9IiMxNjMwMmIiIG9wYWNpdHk9Ii4xOCIvPgo8cmVjdCB4PSIxNjAiIHk9IjkzMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIxMCIgZmlsbD0iI2U5YzQ2YSIvPgo8dGV4dCB4PSIxNjAiIHk9IjEwOTgiIGZvbnQtc2l6ZT0iMTUwIiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmNGVjZDgiPlRoZSBKdW5nbGU8L3RleHQ+PHRleHQgeD0iMTYwIiB5PSIxMjYyIiBmb250LXNpemU9IjE1MCIgZm9udC13ZWlnaHQ9IjYwMCIgZm9udC1mYW1pbHk9IkxpYmVydGludXMgU2VyaWYsIEdlb3JnaWEsIHNlcmlmIiBmaWxsPSIjZjRlY2Q4Ij5Cb29rPC90ZXh0Pgo8dGV4dCB4PSIxNjAiIHk9IjE0OTgiIGZvbnQtc2l6ZT0iNjgiIGZvbnQtc3R5bGU9Iml0YWxpYyIgZm9udC1mYW1pbHk9IkxpYmVydGludXMgU2VyaWYsIEdlb3JnaWEsIHNlcmlmIiBmaWxsPSIjZTljNDZhIj5SdWR5YXJkIEtpcGxpbmc8L3RleHQ+Cjx0ZXh0IHg9IjE2MCIgeT0iMjIzMCIgZm9udC1zaXplPSI0NCIgbGV0dGVyLXNwYWNpbmc9IjE0IiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmNGVjZDgiIG9wYWNpdHk9Ii43NSI+RUJPT0tDTEFTU0lDUzwvdGV4dD4KPC9zdmc+" alt="">
 <h1>The Jungle Book</h1>
 <p class="author">Rudyard Kipling</p>
-<h2>THE JUNGLE BOOK</h2>
+</header>
+<nav class="toc"><h2>Contents</h2><ol>
+<li><a href="#c1">The Jungle Book</a></li>
+<li><a href="#c2">I heard him feeling about with his trunk.</a></li>
+<li><a href="#c3">Elephants of the Gun Teams</a></li>
+<li><a href="#c4">Gun Bullocks</a></li>
+<li><a href="#c5">Cavalry Horses</a></li>
+<li><a href="#c6">Screw-gun Mules</a></li>
+<li><a href="#c7">Commissariat Camels</a></li>
+<li><a href="#c8">All the Beasts Together</a></li>
+</ol></nav>
+<h2 class="chapter" id="c1">The Jungle Book</h2>
 <p>By Rudyard Kipling</p>
 <p>Contents</p>
 <p>Mowgli’s Brothers Hunting-Song of the Seeonee Pack Kaa’s Hunting Road-Song of the Bandar-Log “Tiger! Tiger!” Mowgli’s Song The White Seal Lukannon “Rikki-Tikki-Tavi” Darzee’s Chant Toomai of the Elephants Shiv and the Grasshopper Her Majesty’s Servants Parade Song of the Camp Animals</p>
@@ -910,7 +940,7 @@ h2 + p, .first { text-indent: 0; }
 <p>“Seems to me,” said Billy to the troop horse, “that our friend Two Tails is afraid of most things. Now, if I had a full meal for every dog I’ve kicked across the parade-ground I should be as fat as Two Tails nearly.”</p>
 <p>I whistled, and Vixen ran up to me, muddy all over, and licked my nose, and told me a long tale about hunting for me all through the camp. I never let her know that I understood beast talk, or she would have taken all sorts of liberties. So I buttoned her into the breast of my overcoat, and Two Tails shuffled and stamped and growled to himself.</p>
 <p>“Extraordinary! Most extraordinary!” he said. “It runs in our family. Now, where has that nasty little beast gone to?”</p>
-<h2>I heard him feeling about with his trunk.</h2>
+<h2 class="chapter" id="c2">I heard him feeling about with his trunk.</h2>
 <p>“We all seem to be affected in various ways,” he went on, blowing his nose. “Now, you gentlemen were alarmed, I believe, when I trumpeted.”</p>
 <p>“Not alarmed, exactly,” said the troop-horse, “but it made me feel as though I had hornets where my saddle ought to be. Don’t begin again.”</p>
 <p>“I’m frightened of a little dog, and the camel here is frightened by bad dreams in the night.”</p>
@@ -954,19 +984,19 @@ h2 + p, .first { text-indent: 0; }
 <p>“Would it were so in Afghanistan!” said the chief, “for there we obey only our own wills.”</p>
 <p>“And for that reason,” said the native officer, twirling his mustache, “your Amir whom you do not obey must come here and take orders from our Viceroy.”</p>
 <p>Parade Song of the Camp Animals</p>
-<h2>ELEPHANTS OF THE GUN TEAMS</h2>
+<h2 class="chapter" id="c3">Elephants of the Gun Teams</h2>
 <p>We lent to Alexander the strength of Hercules, The wisdom of our foreheads, the cunning of our knees; We bowed our necks to service: they ne’er were loosed again,-- Make way there--way for the ten-foot teams Of the Forty-Pounder train!</p>
-<h2>GUN BULLOCKS</h2>
+<h2 class="chapter" id="c4">Gun Bullocks</h2>
 <p>Those heroes in their harnesses avoid a cannon-ball, And what they know of powder upsets them one and all; Then we come into action and tug the guns again-- Make way there--way for the twenty yoke Of the Forty-Pounder train!</p>
-<h2>CAVALRY HORSES</h2>
+<h2 class="chapter" id="c5">Cavalry Horses</h2>
 <p>By the brand on my shoulder, the finest of tunes Is played by the Lancers, Hussars, and Dragoons, And it’s sweeter than “Stables” or “Water” to me-- The Cavalry Canter of “Bonnie Dundee”!</p>
 <p>Then feed us and break us and handle and groom, And give us good riders and plenty of room, And launch us in column of squadron and see The way of the war-horse to “Bonnie Dundee”!</p>
-<h2>SCREW-GUN MULES</h2>
+<h2 class="chapter" id="c6">Screw-gun Mules</h2>
 <p>As me and my companions were scrambling up a hill, The path was lost in rolling stones, but we went forward still; For we can wriggle and climb, my lads, and turn up everywhere, Oh, it’s our delight on a mountain height, with a leg or two to spare!</p>
 <p>Good luck to every sergeant, then, that lets us pick our road; Bad luck to all the driver-men that cannot pack a load: For we can wriggle and climb, my lads, and turn up everywhere, Oh, it’s our delight on a mountain height, with a leg or two to spare!</p>
-<h2>COMMISSARIAT CAMELS</h2>
+<h2 class="chapter" id="c7">Commissariat Camels</h2>
 <p>We haven’t a camelty tune of our own To help us trollop along, But every neck is a hair trombone (Rtt-ta-ta-ta! is a hair trombone!) And this our marching-song: Can’t!  Don’t!  Sha’n’t!  Won’t! Pass it along the line! Somebody’s pack has slid from his back, Wish it were only mine! Somebody’s load has tipped off in the road-- Cheer for a halt and a row! Urrr!  Yarrh!  Grr!  Arrh! Somebody’s catching it now!</p>
-<h2>ALL THE BEASTS TOGETHER</h2>
+<h2 class="chapter" id="c8">All the Beasts Together</h2>
 <p>Children of the Camp are we, Serving each in his degree; Children of the yoke and goad, Pack and harness, pad and load. See our line across the plain, Like a heel-rope bent again, Reaching, writhing, rolling far, Sweeping all away to war! While the men that walk beside, Dusty, silent, heavy-eyed, Cannot tell why we or they March and suffer day by day. Children of the Camp are we, Serving each in his degree; Children of the yoke and goad, Pack and harness, pad and load!</p>
-<p class="colophon">Texte du domaine public, source : Project Gutenberg (#236). Édition numérique EbookClassics.</p>
+<p class="colophon">Public domain text. EbookClassics digital edition.</p>
 </body></html>

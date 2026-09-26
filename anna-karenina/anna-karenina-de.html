@@ -1,31 +1,53 @@
 <!DOCTYPE html>
 <html lang="de"><head><meta charset="utf-8">
-<title>Anna Karenina</title><style>
-@page { margin: 22mm 20mm; }
-body { font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', serif; line-height: 1.6;
-       color: #1f1a14; max-width: 38em; margin: 0 auto; padding: 1.5em 1.2em; }
-h1 { font-size: 2.1em; text-align: center; margin: 1.5em 0 .2em; letter-spacing: .01em; }
-.author { text-align: center; font-size: 1.15em; font-style: italic; margin-bottom: 3em; color: #5a4a36; }
-h2 { font-size: 1.25em; text-align: center; margin: 2.6em 0 1.2em; letter-spacing: .06em;
-     text-transform: uppercase; font-weight: normal; page-break-before: always; break-before: page; }
-p { margin: 0; text-indent: 1.4em; text-align: justify; hyphens: auto; }
-h2 + p, .first { text-indent: 0; }
-.colophon { font-size: .85em; color: #6b5d45; text-align: center; margin-top: 4em; text-indent: 0; }
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anna Karenina — Leo Tolstoy</title><style>
+:root{--paper:#fbf8f1;--ink:#1f1b16;--muted:#6f6352;--accent:#9a6b2f;--rule:#e4dccb}
+@media (prefers-color-scheme:dark){:root{--paper:#16140f;--ink:#ece6d8;--muted:#a79c88;--accent:#d8a95e;--rule:#2e2a22}}
+html{background:var(--paper)}
+body{font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Libertinus Serif",Georgia,serif;color:var(--ink);
+     background:var(--paper);line-height:1.65;font-size:1.12rem;max-width:36em;margin:0 auto;padding:2.5em 1.25em 5em}
+.titlepage{text-align:center;min-height:70vh;display:flex;flex-direction:column;justify-content:center;gap:.6em;
+           border-bottom:1px solid var(--rule);margin-bottom:2.5em;padding-bottom:2.5em}
+.titlepage img{max-width:260px;width:60%;margin:0 auto 1.5em;border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+h1{font-size:2.4em;line-height:1.15;font-weight:600;margin:0;letter-spacing:-.01em}
+.author{font-style:italic;font-size:1.25em;color:var(--accent);margin:0}
+.translator{font-size:.95em;color:var(--muted);margin:0}
+nav.toc{margin:0 0 3em}
+nav.toc h2{font-size:.85em;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:left;margin:0 0 .8em}
+nav.toc ol{list-style:none;padding:0;margin:0;columns:1}
+nav.toc li{margin:.25em 0}
+nav.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent}
+nav.toc a:hover{border-color:var(--accent)}
+h2.chapter{font-size:1.45em;font-weight:600;text-align:center;margin:3.5em 0 1.6em;line-height:1.3}
+h2.chapter::before{content:"";display:block;width:3em;height:2px;background:var(--accent);margin:0 auto 1.1em}
+p{margin:0;text-indent:1.5em;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+h2.chapter + p, .titlepage + p{text-indent:0}
+h2.chapter + p::first-letter{font-size:3.1em;float:left;line-height:.85;padding:.08em .08em 0 0;color:var(--accent);font-weight:600}
+.colophon{margin-top:5em;padding-top:1.5em;border-top:1px solid var(--rule);text-align:center;color:var(--muted);font-size:.85em;text-indent:0}
+h3.sub{font-size:1em;font-weight:600;font-variant:small-caps;letter-spacing:.04em;text-align:center;margin:2.2em 0 1em}
+h3.sub + p{text-indent:0}
+@media print{h2.chapter{break-before:page}}
 </style></head><body>
+<header class="titlepage">
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjI0MDAiIHZpZXdCb3g9IjAgMCAxNjAwIDI0MDAiPgo8cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSIyNDAwIiBmaWxsPSIjMWQxZDFmIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjMwMCIgZmlsbD0iI2Q5YjI2ZiIgb3BhY2l0eT0iLjkyIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMWQxZDFmIiBzdHJva2Utd2lkdGg9IjEyIiBvcGFjaXR5PSIuNSIvPgo8Y2lyY2xlIGN4PSIxMTIwIiBjeT0iNTYwIiByPSIxMjAiIGZpbGw9IiMxZDFkMWYiIG9wYWNpdHk9Ii4xOCIvPgo8cmVjdCB4PSIxNjAiIHk9IjkzMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIxMCIgZmlsbD0iI2Q5YjI2ZiIvPgo8dGV4dCB4PSIxNjAiIHk9IjExODAiIGZvbnQtc2l6ZT0iMTUwIiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmMmVkZTMiPkFubmEgS2FyZW5pbmE8L3RleHQ+Cjx0ZXh0IHg9IjE2MCIgeT0iMTQxNSIgZm9udC1zaXplPSI2OCIgZm9udC1zdHlsZT0iaXRhbGljIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNkOWIyNmYiPkxlbyBUb2xzdG95PC90ZXh0Pgo8dGV4dCB4PSIxNjAiIHk9IjIyMzAiIGZvbnQtc2l6ZT0iNDQiIGxldHRlci1zcGFjaW5nPSIxNCIgZm9udC1mYW1pbHk9IkxpYmVydGludXMgU2VyaWYsIEdlb3JnaWEsIHNlcmlmIiBmaWxsPSIjZjJlZGUzIiBvcGFjaXR5PSIuNzUiPkVCT09LQ0xBU1NJQ1M8L3RleHQ+Cjwvc3ZnPg==" alt="">
 <h1>Anna Karenina</h1>
 <p class="author">Leo Tolstoy</p>
-<p>Anna Karenina.</p>
-<p>Roman aus dem Russischen</p>
-<p>des</p>
-<p>Grafen Leo N. Tolstoi.</p>
-<p>Nach der siebenten Auflage übersetzt</p>
-<p>von</p>
-<p>Hans Moser.</p>
+<p class="translator">Übersetzt von Hans Moser</p>
+</header>
+<nav class="toc"><h2>Inhalt</h2><ol>
+<li><a href="#c1">Erster Teil.</a></li>
+<li><a href="#c2">Zweiter Teil.</a></li>
+<li><a href="#c3">Dritter Teil.</a></li>
+<li><a href="#c4">Vierter Teil.</a></li>
+<li><a href="#c5">Fünfter Teil.</a></li>
+<li><a href="#c6">»Ein Buch?«</a></li>
+<li><a href="#c7">Sechster Teil.</a></li>
+<li><a href="#c8">Siebenter Teil.</a></li>
+<li><a href="#c9">Achter Teil.</a></li>
+</ol></nav>
 <p>Erster Band.</p>
-<p>Leipzig</p>
-<p>Druck und Verlag von Philipp Reclam jun.</p>
-<p>*       *       *       *       *</p>
-<h2>Erster Teil.</h2>
+<h2 class="chapter" id="c1">Erster Teil.</h2>
 <p>»Die Rache ist mein, ich will vergelten.«</p>
 <p>1.</p>
 <p>Alle glücklichen Familien sind einander ähnlich; jede unglückliche Familie ist auf ihre Weise unglücklich. --</p>
@@ -1501,7 +1523,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Nachdem Wronskiy alle Neuigkeiten vernommen hatte, warf er sich mit Hilfe seines Dieners in die Uniform und fuhr ab, um sich wieder zu zeigen.</p>
 <p>Nachdem dies geschehen, beabsichtigte er zunächst, zu seinem Bruder zu fahren und dann zu Bezzy, sowie einige Visiten zu machen, in der Absicht sich in denjenigen Kreis Eintritt zu verschaffen, in welchem er hoffen konnte, der Karenina zu begegnen.</p>
 <p>Wie er gewöhnlich in Petersburg that, fuhr er nicht anders von Hause weg, als erst in später Nacht wieder heimzukehren.</p>
-<h2>Zweiter Teil.</h2>
+<h2 class="chapter" id="c2">Zweiter Teil.</h2>
 <p>1.</p>
 <p>Zu Ende des Winters fand im Hause der Schtscherbazkiy ein Familienrat statt, welcher darüber zu entscheiden hatte, wie es mit der Gesundheit Kitys stehe und welche Schritte zu thun seien, deren geschwächte Kräfte wieder zu heben.</p>
 <p>Sie war krank und mit der Annäherung des Frühjahrs verschlimmerte sich ihr Zustand noch mehr.</p>
@@ -3186,7 +3208,7 @@ h2 + p, .first { text-indent: 0; }
 <p>»Dann werde ich niemals kommen!«</p>
 <p>»Also werde ich dann nur deshalb heiraten! Seht zu, seid Eures Versprechens eingedenk!« sagte Kity.</p>
 <p>Die Prophezeiungen des Arztes hatten sich erfüllt. Kity kehrte wiederhergestellt nach Rußland zurück. Sie war nicht mehr so sorglos und heiter, wie vordem, sondern sie war ruhig geworden. Die bitteren Erfahrungen in Moskau waren ihr nur noch eine Erinnerung.</p>
-<h2>Dritter Teil.</h2>
+<h2 class="chapter" id="c3">Dritter Teil.</h2>
 <p>1.</p>
 <p>Sergey Iwanowitsch Kosnyscheff wollte sich von der geistigen Arbeit erholen und ging -- anstatt wie üblich ins Ausland -- Ende Mai auf das Land zu seinem Bruder.</p>
 <p>Seiner Überzeugung nach war das schönste Leben das Landleben, und er kam jetzt zu seinem Bruder, um dieses Leben zu genießen.</p>
@@ -4307,7 +4329,7 @@ h2 + p, .first { text-indent: 0; }
 <p>»Das ist doch dein Spaß!« lachte Schtscherbazkiy, »ich bin ja erst im Begriff anzufangen!«</p>
 <p>»So meinte ich auch noch vor kurzem, jetzt aber weiß ich, daß ich bald sterbe.«</p>
 <p>Lewin sprach damit nur aus, was er wahrhaft gedacht hatte in diesen letzten Tagen. In allem sah er nur den Tod oder die Annäherung an denselben. Aber das von ihm unternommene Werk beschäftigte ihn nur um so mehr. Es galt ihm jetzt, sein Leben irgendwie fertig zu leben, bevor noch der Tod kam. Dunkelheit verschleierte für ihn alles, aber gerade mit dieser Dunkelheit fühlte er, daß der einzige leitende Faden in ihr nur noch sein Werk war, und mit den letzten Kräften widmete er sich diesem, klammerte er sich an ihm an.</p>
-<h2>Vierter Teil.</h2>
+<h2 class="chapter" id="c4">Vierter Teil.</h2>
 <p>1.</p>
 <p>Die Karenin, Gatte und Gattin, fuhren fort in einem Hause zusammen zu leben; sie sahen sich wohl alltäglich, waren aber einander vollständig entfremdet.</p>
 <p>Aleksey Aleksandrowitsch hatte es sich zum Gesetz gemacht, sein Weib alltäglich nur deshalb zu sehen, daß die Dienerschaft kein Recht haben möchte, Vermutungen zu hegen. Die Mittagstafel daheim mied er jedoch. Wronskiy war nie im Hause Aleksey Aleksandrowitschs erschienen, Anna sah ihn aber außerhalb desselben und ihr Gatte wußte dies.</p>
@@ -5204,7 +5226,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Leipzig</p>
 <p>Druck und Verlag von Philipp Reclam jun.</p>
 <p>*       *       *       *       *</p>
-<h2>Fünfter Teil.</h2>
+<h2 class="chapter" id="c5">Fünfter Teil.</h2>
 <p>1.</p>
 <p>Die Fürstin Schtscherbazkaja fand, daß es unmöglich sei, die Hochzeit vor den Fasten, bis zu denen noch fünf Wochen waren, zu feiern, da die eine Hälfte der Ausstattung bis dahin nicht fertig zu stellen war; doch konnte sie nicht umhin, sich mit Lewin einverstanden zu erklären, daß es nach den Fasten wieder viel zu spät werden würde, da eine alte Tante des Fürsten Schtscherbazkiy sehr krank war und bald sterben konnte, und alsdann die Trauer die Hochzeit noch weiter verzögert haben würde. Die Fürstin erklärte sich infolge dessen, nachdem sie die Mitgift in zwei Partieen -- eine große und eine kleine geteilt hatte, damit einverstanden, daß die Hochzeit zu den Fasten gefeiert würde. Sie beschloß den kleineren Teil der Mitgift schon jetzt bereit zu machen, während der größere später folgen würde, und war sehr erbost über Lewin, weil dieser ihr durchaus nicht ernsthaft zu antworten vermochte, ob er hiermit einverstanden sei oder nicht. Diese Ordnung der Dinge war um so bequemer, als die jungen Eheleute sogleich nach der Hochzeit auf das Land gingen, wo die große Mitgift gar nicht erforderlich war.</p>
 <p>Lewin befand sich noch immer in jenem Zustande der Verzücktheit, in welchem es ihm schien, als ob er und sein Glück den hauptsächlichsten und einzigen Zweck alles Seienden bildete, daß er jetzt an nichts denken, für nichts sorgen dürfe, daß vielmehr alles für ihn von anderen gemacht wurde oder gemacht werden würde. Er hatte durchaus keine Pläne oder Ziele für sein zukünftiges Leben, sondern gab die Entscheidung hierüber anderen anheim in der Überzeugung, es werde schon alles gut gehen. Sein Bruder Sergey Iwanowitsch, Stefan Arkadjewitsch und die Fürstin leiteten ihn an, was er zu thun habe, und er war vollständig einverstanden mit allem, was man ihm vorschlug. Sein Bruder nahm Geld für ihn auf, die Fürstin riet, nach der Hochzeit Moskau zu verlassen, Stefan Arkadjewitsch riet, eine Hochzeitsreise ins Ausland zu machen. Er war mit allem einverstanden. »Thut was Ihr wollt, wenn es Euch Vergnügen macht. Ich bin glücklich, und mein Glück kann nicht größer sein und nicht kleiner, was immer Ihr auch thun möget,« dachte er.</p>
@@ -5953,7 +5975,7 @@ h2 + p, .first { text-indent: 0; }
 <p>»Korney hat es zu Papa getragen. Es scheint etwas recht Schönes.«</p>
 <p>»Wie groß ist es denn? -- So?« -- --</p>
 <p>»Kleiner, aber was Hübsches.«</p>
-<h2>»Ein Buch?«</h2>
+<h2 class="chapter" id="c6">»Ein Buch?«</h2>
 <p>»Nein, ein Spielzeug. Aber geht, geht, Wasiliy Lukitsch wird gleich rufen,« sagte der Portier, die nahenden Schritte des Gouverneurs vernehmend und behutsam das bis zur Hälfte im abgezogenen Handschuh steckende Händchen, welches ihn noch bei seinem Ledergurt hielt, losmachend.</p>
 <p>»Wasiliy Lukitsch, diese Minute!« antwortete Sergey mit dem nämlichen heiteren und lieblichen Lächeln, welches den seines Amtes beflissenen Wasiliy Lukitsch stets besiegte.</p>
 <p>Sergey war in viel zu heiterer und glücklicher Stimmung, als daß er sich mit seinem Freund, dem Portier, nicht erst noch hätte in das freudige Familienereignis teilen sollen, von dem er auf dem Spaziergang im Sommergarten durch die Nichte der Gräfin Lydia Iwanowna erfahren hatte.</p>
@@ -6261,7 +6283,7 @@ h2 + p, .first { text-indent: 0; }
 <p>»Ja, wenn du mich liebtest, wie ich dich liebe, wenn du dich martertest, wie ich mich martere« -- sprach sie, mit dem Ausdruck des Entsetzens auf ihn blickend.</p>
 <p>Es that ihm wehe um sie, und dennoch empfand er auch Verdruß. Er versicherte sie seiner Liebe, weil er sah, daß nur dies allein sie jetzt beruhigen konnte, und machte ihr keine Vorwürfe mit Worten; wohl aber tadelte er sie in seinem Innern.</p>
 <p>Und jene Versicherungen der Liebe, die ihm so niedrig erschienen, daß es ihm schwer ankam, sie auszusprechen, sog sie in sich ein und wurde etwas ruhiger. Am andern Tage fuhren beide, vollständig ausgesöhnt, auf das Land.</p>
-<h2>Sechster Teil.</h2>
+<h2 class="chapter" id="c7">Sechster Teil.</h2>
 <p>1.</p>
 <p>Darja Aleksandrowna verbrachte den Sommer mit den Kindern in Pokrowskoje bei ihrer Schwester Kity Lewina.</p>
 <p>Auf ihrem Gute war das Wohnhaus gänzlich in Verfall geraten, und Lewin mit seiner Gattin hatten ihr zugeredet, den Sommer bei ihnen zuzubringen.</p>
@@ -7568,7 +7590,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Sie sah diesen Blick und erriet richtig seine Bedeutung.</p>
 <p>»Wenn es so steht, so ist es ein Unglück!« sprach dieser Blick. Es war dies nur ein augenblicklicher Eindruck, aber sie hatte ihn nie mehr vergessen können.</p>
 <p>Anna schrieb an ihren Mann einen Brief, mit der Bitte um die Ehescheidung, und reiste zu Ende des November, sich von der Fürstin Barbara trennend, welche nach Petersburg fahren mußte, zusammen mit Wronskiy nach Moskau. Täglich eine Antwort von Aleksey Aleksandrowitsch erwartend, und nach dieser die Ehescheidung, hatten sie sich jetzt wie Eheleute zusammen einquartiert.</p>
-<h2>Siebenter Teil.</h2>
+<h2 class="chapter" id="c8">Siebenter Teil.</h2>
 <p>1.</p>
 <p>Die Lewins wohnten bereits im dritten Monat in Moskau. Schon längst war der Zeitpunkt verstrichen, wo nach den sichersten Berechnungen der Leute, welche sich auf die Sache verstanden, Kity niederkommen mußte; aber sie ging immer noch und an nichts war bemerkbar, daß die Zeit jetzt näher gekommen sei, als sie zwei Monate vorher gewesen.</p>
 <p>Der Arzt, wie die Wehfrau, Dolly und die Mutter, und besonders Lewin, vermochten nicht ohne Schrecken an das Kommende zu denken, und begannen Ungeduld und Unruhe zu empfinden; allein Kity fühlte sich vollkommen ruhig und glücklich.</p>
@@ -8608,7 +8630,7 @@ h2 + p, .first { text-indent: 0; }
 <p>»Dahin!« -- sprach sie zu sich selbst, nach dem Schatten des Waggons auf dem mit Kohlenstaub vermischten Sand, von welchem der Boden bedeckt war, schauend, »dahin, gerade in die Mitte, und ich strafe ihn und bin von allem erlöst; wie von mir selbst.« -- --</p>
 <p>Sie wollte sich unter den ersten Waggon, der mit seinem Mittelpunkt neben ihr angekommen war, werfen, allein die rote Reisetasche, die sie nun von dem Arme nahm, hinderte sie und es war schon zu spät. Der Mittelpunkt war an ihr vorüber. Sie mußte also den folgenden Waggon erwarten. Ein Gefühl, ähnlich dem, wie sie es empfunden hatte, wenn sie sich beim Baden bereit machte, in das Wasser zu steigen, wandelte sie an, und sie bekreuzte sich. Die gewohnte Geste der Bekreuzigung rief in ihrer Seele eine ganze Reihe von Erinnerungen aus ihrer Mädchen- und Kinderzeit herauf, und plötzlich zerriß die Finsternis, die alles vor ihr verdeckt hatte, und das Leben trat für einen Moment vor sie hin, mit all seinen lichten, vergangenen Freuden.</p>
 <p>Sie verwandte während dessen kein Auge von den Rädern des herankommenden Waggons, und genau in dem Augenblick, als der Mittelpunkt zwischen den Rädern vor ihr war, schleuderte sie den roten Reisesack von sich, fiel, den Kopf zwischen die Schultern ziehend, auf die Hände unter dem Waggon, und ließ sich mit einer leichten Bewegung, als sei sie bereit, sofort wieder aufzustehen, in die Kniee sinken. In dem nämlichen Augenblick aber erschrak sie über das, was sie gethan hatte, »wo bin ich, was thue ich, warum?« -- Sie wollte sich wieder erheben, sich zurückwerfen, aber etwas Ungeheures, Unerbittliches stieß sie vor den Kopf und nahm sie beim Rücken mit. »Herr Gott vergieb mir alles!« sprach sie, die Unmöglichkeit eines Kampfes fühlend. Der Mensch arbeitete im Selbstgespräch in dem Eisen. Das Licht, bei welchem sie das von Mühsal und Lüge, Weh und Übel erfüllte Buch gelesen hatte, flammte in noch hellerem Glanze empor als je, und erleuchtete alles vor ihr, was früher für sie im Dunkeln gelegen hatte, es prasselte, verdunkelte sich und erlosch auf ewig.</p>
-<h2>Achter Teil.</h2>
+<h2 class="chapter" id="c9">Achter Teil.</h2>
 <p>1.</p>
 <p>Fast zwei Monate waren vergangen. Die Hälfte der heißen Jahreszeit war schon verstrichen und Sergey Iwanowitsch machte erst jetzt Anstalt, Moskau zu verlassen.</p>
 <p>Im Leben Sergey Iwanowitschs hatte sich während dieser Zeit Mehrfaches ereignet. Ein Jahr vorher bereits war sein Buch, die Frucht einer sechsjährigen Arbeit mit dem Titel: »Versuch eines Überblickes über die Grundlagen und Formen des Staatswesens in Europa und Rußland«, beendet worden.</p>
@@ -9046,13 +9068,5 @@ h2 + p, .first { text-indent: 0; }
 <p>»Mein Konstantin, thu&#x27; mir doch den Gefallen,« sagte sie, »und gehe nach dem Eckzimmer, um nachzusehen, ob für Sergey Iwanowitsch alles in Ordnung gebracht ist. Für mich ist das nicht recht schicklich. Hat man ein neues Waschbecken hineingestellt?«</p>
 <p>»Gut, ich werde sofort gehen,« sagte Lewin, indem er aufstand und sie küßte. »Nein, ich brauche nicht zu reden,« dachte er, während sie ihm voranschritt. »Dies ist ein Geheimnis, das nur für mich war, wichtig und nicht in Worten auszudrücken. Dieses neue Gefühl hat mich nicht verraten, nicht des Glückes beraubt, mich nicht plötzlich erleuchtet, wie ich geträumt hatte -- ebensowenig wie die Empfindung für meinen Sohn. Es war auch keine Überraschung dabei. Ist dies nun der Glaube, oder ist er es nicht, ich weiß nicht, was es ist, aber es ist mir unmerklich in meinen Leiden gekommen und hat sich in meiner Seele fest eingenistet. Ich werde noch immer so auf meinen Kutscher Iwan zornig werden, werde noch so weiter disputieren, meine Gedanken rückhaltlos aussprechen, es wird die heilige Mauer bestehen bleiben zwischen meiner Seele und den anderen, selbst meinem Weibe, ich werde dieses auch tadeln wegen seiner Furcht, und Reue darüber empfinden und werde nicht mit dem Verstande begreifen, warum ich bete; aber ich werde beten und mein Leben, mein ganzes Leben soll jetzt von allem unabhängig sein, was sich mit mir ereignen kann; keine Minute desselben soll mehr gedankenlos bleiben -- wie früher -- sondern die nicht anzuzweifelnde Idee des Guten in sich tragen, die ich die Macht besitze, ihr einzupflanzen.«</p>
 <p>Ende.</p>
-<p>*       *       *       *       *</p>
-<p>Die Originalschreibweise und kleinere Inkonsistenzen in der Schreibweise und Formatierung wurden prinzipiell beibehalten.</p>
-<p>Die unterschiedlichen Schreibweisen der Vor- und Zunamen wurden beibehalten, außer es handelt sich um offensichtliche Druckfehler.</p>
-<p>In der Fußnote [C] wurde der Punkt über dem Buchstaben z in [.z] in den Worten [.z]yda und do[.z]idalsja geändert.</p>
-<p>Gesperrter Text wurde mit Unterstrich markiert (Text). Text in Antiqua wurde mit Gleichheitszeichen markiert (=text=).</p>
-<p>Die nachfolgende Tabelle enthält eine Auflistung aller gegenüber dem Originaltext vorgenommenen Korrekturen.</p>
-<p>S. 10: aller Gebräuche beharrte -&gt; beharrten S. 11: mit seiner, auf der -&gt; dem S. 16: versetzte Lewin und befahl Kuzma -&gt; Kusma S. 17: Fonds des Ikonastas -&gt; Ikonostas S. 28: sie so verweint -&gt; verweint aus S. 30: deswegen wird der Mensch -&gt; »deswegen S. 30: »Jesu freue dich« ausführte -&gt; ausführten S. 35: einem zärtlichen langem -&gt; langen S. 38: das Böse, daß -&gt; das sie S. 40: klammerte er sich an jeder -&gt; jede S. 50: um es zu berechnen -&gt; brechen S. 51: aber seine Lippen fibrierten -&gt; vibrierten S. 52: haben, was sie sah -&gt; sahen S. 53: noch nicht angeschlagenes. -&gt; angeschlagenes.« S. 53: die Einheit des Eindrucks. -&gt; Eindrucks.« S. 55: Standpunkte der Ueberzeugung -&gt; Überzeugung S. 67: Du hast da ein -&gt; »Du S. 67: sonst werde ich in -&gt; »sonst S. 69: sie beide in beständigen -&gt; beständigem S. 77: Gatten blickend, welchen -&gt; welchem S. 101: Ich thue das nicht von mir aus -&gt; aus. S. 102: Zeit in Petersburg verbereitet -&gt; verbreitet S. 110: welch ein herrlicher Tag ist -&gt; »welch S. 121: Sergey schaute mit erschreckten -&gt; erschrecktem S. 124: Sagt mirs doch, -&gt; doch,« S. 127: er diese wenige -&gt; wenigen S. 136: seine Mutter versetzten -&gt; versetzte S. 136: was der Mutter sogar -&gt; so gar S. 144: seiner Worte gar nicht zu verstehen -&gt; verstehen. S. 156: hübscher Zeitvertreib ist. -&gt; ist.« S. 160: aber er konnte -&gt; könnte S. 169: »Ich werde jetzt -&gt; Ich S. 185: daß er in meinem -&gt; »daß S. 186: in der Luft drehend, Krack -&gt; Krak S. 192: bei der Ankunft witterte Krack -&gt; Krak S. 192: in welches Krack -&gt; Krak S. 193: Eine Bekasse machte sich -&gt; Bekassine S. 197: Wjeslowskij, der wolgemut -&gt; wohlgemut S. 205: nur aus Prinzip nicht? -&gt; nicht?« S. 208: ihm mit schnellen, leichten -&gt; schnellem, leichtem S. 211: nicht erfahren, wo sie sind. -&gt; sind.« S. 211: stell&#x27;, mein Laska, stell&#x27;! -&gt; stell, mein Laska, stell! S. 213: Maria Wlasjewna -&gt; Marja S. 225: sehr recht die Lewin hatte -&gt; hatten S. 227: an der Krippe -&gt; in der Krippe S. 228: mich ereifernd, schaltend -&gt; scheltend S. 230: Sensendängelns -&gt; Sensendengelns S. 237: in nichts verändert worden, -&gt; worden. S. 241: Die Ani? -&gt; Any S. 242: yes, mylady! -&gt; »yes S. 244: Il est très-gentil -&gt; très gentil S. 245: au breakfeast -&gt; breakfast S. 245: Lown tennis -&gt; Lawn tennis S. 255: Gerade als ob sie -&gt; »Gerade S. 259: die Plinte -&gt; Plinthe S. 269: Ich sehe nur -&gt; »Ich S. 275: wenn er zurückkehren -&gt; wann er zurückkehren S. 281: wie im kleinen Sale -&gt; Saale S. 287: welches ihr liebes Enkelchen -&gt; welche S. 289: neben ihm saß -&gt; der neben ihm saß S. 293: sagte Swijashskiy -&gt; Swijashskiy. S. 304: Unterhaltungen mit der Fürstin Barbara -&gt; Barbara, S. 310: in einer Weise, das -&gt; daß S. 313: doch nicht darüber, das -&gt; daß S. 314: frug Lewin.« -&gt; Lewin. S. 315: und für den Wagen Katarina -&gt; Katharina S. 320: nach dem Metroff -&gt; nachdem S. 321: Verse des Dichters Mcnt -&gt; Ment S. 324: mit den Knaben -&gt; »mit S. 329: plötzlichen Tode der Arpaksin -&gt; Apraksina S. 331: verursachte, die Galoschen -&gt; Kaloschen S. 336: etwas Witziges zu sagen.« -&gt; sagen. S. 338: Solltet Ihr? -&gt; Ihr! S. 338: Lewin spielst du?« -&gt; du? S. 345: Graf Aleksey Kyrillowitsch -&gt; Kyrillowitsch« S. 349: warum sie ihn gebeten -&gt; worum S. 350: waren endgiltig entschieden -&gt; endgültig S. 364: Arzt, welche eine -&gt; welcher S. 366: Antlitz Kitys mit den -&gt; dem S. 371: sagte Lisebetha Petrowna -&gt; Lisabetha S. 372: welche er nun eine Attake -&gt; Attacke S. 373: las Aleksey Alesandrowitsch -&gt; Aleksandrowitsch S. 375: Die moskauer -&gt; Moskauer S. 382: das sind die Passagiere; -&gt; Passagiere. S. 382: voll Wemut -&gt; Wehmut S. 382: schlug, purporrot werdend -&gt; purpurrot S. 387: zu der Gräfin Lydia Iwanowna. -&gt; Iwanowna.« S. 388: zu ihrem Sohne gemacht hat. -&gt; hat.« S. 389: hat er die Stimme gehört, -&gt; gehört,« S. 390: warum es sich handelte -&gt; worum S. 402: Aber wenn -&gt; wann S. 402: Wenn wir reisen -&gt; Wann S. 404: ohne seine finstere -&gt; finster S. 404: daß er schlimmer -&gt; »daß S. 405: ich nicht gestorben? -&gt; gestorben?« S. 405: sie mußte sterben«. -&gt; sterben.« S. 406: auf welcher -&gt; welchen S. 406: gerade sein Beafsteak -&gt; Beefsteak S. 407: versprach er einen entgültigen -&gt; endgültigen S. 407: dachte sie dabe -&gt; dabei S. 410: Wenn reist Ihr -&gt; Wann S. 415: in lilafarbigen Hut -&gt; im S. 418: frisiert, aber wenn -&gt; wann S. 418: nicht erinnern, wenn -&gt; wann S. 418: Wie konnte er nur -&gt; »Wie S. 426: Das ist Gerechtigkeit! -&gt; Gerechtigkeit!« S. 427: auf der Strecke Nishnegorod -&gt; Nishegorod S. 428: mit selbst -&gt; mit sich selbst S. 429: aber nun unaufenthaltsam -&gt; unaufhaltsam S. 430: Stationsgebäude der Nishnegoroder -&gt; Nishegoroder S. 432: anders, als solche klägliche -&gt; kläglichen S. 439: folgte ein tötliches -&gt; tödliches S. 440: Speechs -&gt; Speeches S. 447: gegen wenn -&gt; wen S. 447: als vorzügliche Bursche -&gt; Burschen S. 449: unter dem Eisenbahnzug -&gt; den S. 455: Man muß es hübsch -&gt; »Man S. 455: Es weiß es ja -&gt; Er S. 460: solchen neuen zu vertauscht -&gt; solchen neuen vertauscht S. 465: aufzugeben, ebenso -&gt; ebensowenig S. 470: 13. -&gt; 12. S. 471: daß es ihn ganz -&gt; ihm S. 473: fordert, das man alle -&gt; daß S. 476: Was ist der Erlöser?« -&gt; Erlöser? S. 476: sich schauend -&gt; scheuend S. 477: Wagen mit den -&gt; dem S. 483: darüber gegeben hat. -&gt; hat.« S. 483: warum es sich handelt -&gt; worum S. 495: unter dem Köpfchen -&gt; Köpfchen, S. 496: so wohlkannten Sternendreieck -&gt; wohlbekannten</p>
-<p>End of Project Gutenberg&#x27;s Anna Karenina, 2. Band, by Leo N. Tolstoi</p>
-<p class="colophon">Texte du domaine public, source : Project Gutenberg (#44956). Traduction : Hans Moser (d&#x27;après la 7e édition), 2 volumes réunis. Édition numérique EbookClassics.</p>
+<p class="colophon">Gemeinfreier Text. Digitale Ausgabe EbookClassics.</p>
 </body></html>

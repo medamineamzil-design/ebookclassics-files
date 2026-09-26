@@ -1,65 +1,62 @@
 <!DOCTYPE html>
 <html lang="fr"><head><meta charset="utf-8">
-<title>Aventures d&#x27;Alice au pays des merveilles</title><style>
-@page { margin: 22mm 20mm; }
-body { font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', serif; line-height: 1.6;
-       color: #1f1a14; max-width: 38em; margin: 0 auto; padding: 1.5em 1.2em; }
-h1 { font-size: 2.1em; text-align: center; margin: 1.5em 0 .2em; letter-spacing: .01em; }
-.author { text-align: center; font-size: 1.15em; font-style: italic; margin-bottom: 3em; color: #5a4a36; }
-h2 { font-size: 1.25em; text-align: center; margin: 2.6em 0 1.2em; letter-spacing: .06em;
-     text-transform: uppercase; font-weight: normal; page-break-before: always; break-before: page; }
-p { margin: 0; text-indent: 1.4em; text-align: justify; hyphens: auto; }
-h2 + p, .first { text-indent: 0; }
-.colophon { font-size: .85em; color: #6b5d45; text-align: center; margin-top: 4em; text-indent: 0; }
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aventures d&#x27;Alice au pays des merveilles — Lewis Carroll</title><style>
+:root{--paper:#fbf8f1;--ink:#1f1b16;--muted:#6f6352;--accent:#9a6b2f;--rule:#e4dccb}
+@media (prefers-color-scheme:dark){:root{--paper:#16140f;--ink:#ece6d8;--muted:#a79c88;--accent:#d8a95e;--rule:#2e2a22}}
+html{background:var(--paper)}
+body{font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Libertinus Serif",Georgia,serif;color:var(--ink);
+     background:var(--paper);line-height:1.65;font-size:1.12rem;max-width:36em;margin:0 auto;padding:2.5em 1.25em 5em}
+.titlepage{text-align:center;min-height:70vh;display:flex;flex-direction:column;justify-content:center;gap:.6em;
+           border-bottom:1px solid var(--rule);margin-bottom:2.5em;padding-bottom:2.5em}
+.titlepage img{max-width:260px;width:60%;margin:0 auto 1.5em;border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+h1{font-size:2.4em;line-height:1.15;font-weight:600;margin:0;letter-spacing:-.01em}
+.author{font-style:italic;font-size:1.25em;color:var(--accent);margin:0}
+.translator{font-size:.95em;color:var(--muted);margin:0}
+nav.toc{margin:0 0 3em}
+nav.toc h2{font-size:.85em;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:left;margin:0 0 .8em}
+nav.toc ol{list-style:none;padding:0;margin:0;columns:1}
+nav.toc li{margin:.25em 0}
+nav.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent}
+nav.toc a:hover{border-color:var(--accent)}
+h2.chapter{font-size:1.45em;font-weight:600;text-align:center;margin:3.5em 0 1.6em;line-height:1.3}
+h2.chapter::before{content:"";display:block;width:3em;height:2px;background:var(--accent);margin:0 auto 1.1em}
+p{margin:0;text-indent:1.5em;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+h2.chapter + p, .titlepage + p{text-indent:0}
+h2.chapter + p::first-letter{font-size:3.1em;float:left;line-height:.85;padding:.08em .08em 0 0;color:var(--accent);font-weight:600}
+.colophon{margin-top:5em;padding-top:1.5em;border-top:1px solid var(--rule);text-align:center;color:var(--muted);font-size:.85em;text-indent:0}
+h3.sub{font-size:1em;font-weight:600;font-variant:small-caps;letter-spacing:.04em;text-align:center;margin:2.2em 0 1em}
+h3.sub + p{text-indent:0}
+@media print{h2.chapter{break-before:page}}
 </style></head><body>
+<header class="titlepage">
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjI0MDAiIHZpZXdCb3g9IjAgMCAxNjAwIDI0MDAiPgo8cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSIyNDAwIiBmaWxsPSIjMmQxZTNlIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjMwMCIgZmlsbD0iI2U4YTg3YyIgb3BhY2l0eT0iLjkyIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMmQxZTNlIiBzdHJva2Utd2lkdGg9IjEyIiBvcGFjaXR5PSIuNSIvPgo8Y2lyY2xlIGN4PSIxMTIwIiBjeT0iNTYwIiByPSIxMjAiIGZpbGw9IiMyZDFlM2UiIG9wYWNpdHk9Ii4xOCIvPgo8cmVjdCB4PSIxNjAiIHk9IjkzMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIxMCIgZmlsbD0iI2U4YTg3YyIvPgo8dGV4dCB4PSIxNjAiIHk9IjEwMDgiIGZvbnQtc2l6ZT0iMTA0IiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmNmVkZTQiPkF2ZW50dXJlczwvdGV4dD48dGV4dCB4PSIxNjAiIHk9IjExMjMiIGZvbnQtc2l6ZT0iMTA0IiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmNmVkZTQiPmQmI3gyNztBbGljZSBhdTwvdGV4dD48dGV4dCB4PSIxNjAiIHk9IjEyMzciIGZvbnQtc2l6ZT0iMTA0IiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmNmVkZTQiPnBheXMgZGVzPC90ZXh0Pjx0ZXh0IHg9IjE2MCIgeT0iMTM1MiIgZm9udC1zaXplPSIxMDQiIGZvbnQtd2VpZ2h0PSI2MDAiIGZvbnQtZmFtaWx5PSJMaWJlcnRpbnVzIFNlcmlmLCBHZW9yZ2lhLCBzZXJpZiIgZmlsbD0iI2Y2ZWRlNCI+bWVydmVpbGxlczwvdGV4dD4KPHRleHQgeD0iMTYwIiB5PSIxNTM2IiBmb250LXNpemU9IjY4IiBmb250LXN0eWxlPSJpdGFsaWMiIGZvbnQtZmFtaWx5PSJMaWJlcnRpbnVzIFNlcmlmLCBHZW9yZ2lhLCBzZXJpZiIgZmlsbD0iI2U4YTg3YyI+TGV3aXMgQ2Fycm9sbDwvdGV4dD4KPHRleHQgeD0iMTYwIiB5PSIyMjMwIiBmb250LXNpemU9IjQ0IiBsZXR0ZXItc3BhY2luZz0iMTQiIGZvbnQtZmFtaWx5PSJMaWJlcnRpbnVzIFNlcmlmLCBHZW9yZ2lhLCBzZXJpZiIgZmlsbD0iI2Y2ZWRlNCIgb3BhY2l0eT0iLjc1Ij5FQk9PS0NMQVNTSUNTPC90ZXh0Pgo8L3N2Zz4=" alt="">
 <h1>Aventures d&#x27;Alice au pays des merveilles</h1>
 <p class="author">Lewis Carroll</p>
-<p>Au lecteur</p>
-<p>Cette version électronique reproduit dans son intégralité la version originale.</p>
-<p>La ponctuation n&#x27;a pas été modifiée hormis quelques corrections mineures.</p>
-<p>L&#x27;orthographe a été conservée. Seuls quelques mots ont été modifiés. La liste des modifications se trouve à la fin du texte.</p>
-<h2>AVENTURES D&#x27;ALICE</h2>
-<p>AU</p>
-<h2>PAYS DES MERVEILLES.</h2>
-<h2>AVENTURES D&#x27;ALICE</h2>
-<h2>AU PAYS DES MERVEILLES.</h2>
-<p>PAR</p>
-<h2>LEWIS CARROLL.</h2>
-<h2>TRADUIT DE L&#x27;ANGLAIS PAR HENRI BUÉ.</h2>
-<p>OUVRAGE ILLUSTRÉ DE 42 VIGNETTES PAR JOHN TENNIEL.</p>
-<p>Londres:</p>
-<h2>MACMILLAN AND CO.</h2>
-<p>1869.</p>
-<p>[Le Droit de Traduction et de Reproduction est réservé.]</p>
+<p class="translator">Traduction de Bué, Henri</p>
+</header>
+<nav class="toc"><h2>Table des matières</h2><ol>
+<li><a href="#c1">Chapitre II — La mare aux larmes.</a></li>
+<li><a href="#c2">Chapitre III — La course cocasse.</a></li>
+<li><a href="#c3">Chapitre IV — L&#x27;habitation du Lapin Blanc.</a></li>
+<li><a href="#c4">Chapitre V — Conseils d&#x27;une Chenille.</a></li>
+<li><a href="#c5">Chapitre VI — Porc et poivre.</a></li>
+<li><a href="#c6">Chapitre VII — Un thé de fous.</a></li>
+<li><a href="#c7">Chapitre VIII — Le croquet de la Reine.</a></li>
+<li><a href="#c8">Chapitre IX — Histoire de la Fausse-tortue.</a></li>
+<li><a href="#c9">Chapitre X — Le quadrille de homards.</a></li>
+<li><a href="#c10">Chapitre XI — Qui a volé les tartes?</a></li>
+<li><a href="#c11">Chapitre XII — Déposition d&#x27;alice.</a></li>
+</ol></nav>
 <p>[L&#x27;Auteur désire exprimer ici sa reconnaissance envers le Traducteur de ce qu&#x27;il a remplacé par des parodies de sa composition quelques parodies de morceaux de poésie anglais, qui n&#x27;avaient de valeur que pour des enfants anglais; et aussi, de ce qu&#x27;il a su donner en jeux de mots français les équivalents des jeux de mots anglais, dont la traduction n&#x27;était pas possible.]</p>
-<p>LONDRES.--IMPRIMERIE DE R. CLAY, FILS, ET TAYLOR, BREAD STREET HILL.</p>
 <p>Notre barque glisse sur l&#x27;onde Que dorent de brûlants rayons; Sa marche lente et vagabonde Témoigne que des bras mignons, Pleins d&#x27;ardeur, mais encore novices, Tout fiers de ce nouveau travail, Mènent au gré de leurs caprices Les rames et le gouvernail.</p>
 <p>Soudain trois cris se font entendre, Cris funestes à la langueur Dont je ne pouvais me défendre Par ce temps chaud, qui rend rêveur. &quot;Un conte! Un conte!&quot; disent-elles Toutes d&#x27;une commune voix. Il fallait céder aux cruelles; Que pouvais-je, hélas! contre trois?</p>
 <p>La première, d&#x27;un ton suprême, Donne l&#x27;ordre de commencer. La seconde, la douceur même, Se contente de demander Des choses à ne pas y croire. Nous ne fûmes interrompus Par la troisième, c&#x27;est notoire, Qu&#x27;une fois par minute, au plus.</p>
 <p>Puis, muettes, prêtant l&#x27;oreille Au conte de l&#x27;enfant rêveur, Qui va de merveille en merveille Causant avec l&#x27;oiseau causeur; Leur esprit suit la fantaisie Où se laisse aller le conteur. Et la vérité tôt oublie Pour se confier à l&#x27;erreur.</p>
-<p>Le conteur (espoir chimérique!) Cherche, se sentant épuisé, A briser le pouvoir magique Du charme qu&#x27;il a composé, Et &quot;Tantôt&quot; voudrait de ce rêve Finir le récit commencé: &quot;Non, non, c&#x27;est tantôt! pas de trêve!&quot; Est le jugement prononcé.</p>
-<p>Ainsi du pays des merveilles Se racontèrent lentement Les aventures sans pareilles, Incident après incident. Alors vers le prochain rivage Où nous devions tous débarquer Rama le joyeux équipage; La nuit commençait à tomber.</p>
 <p>Douce Alice, acceptez l&#x27;offrande De ces gais récits enfantins, Et tressez-en une guirlande, Comme on voit faire aux pèlerins De ces fleurs qu&#x27;ils ont recueillies, Et que plus tard, dans l&#x27;avenir, Bien qu&#x27;elles soient, hélas! flétries, Ils chérissent en souvenir.</p>
-<h2>TABLE.</h2>
-<h2>CHAPITRE.                                 PAGE.</h2>
-<h2>I. AU FOND DU TERRIER.                     1</h2>
-<h2>II. LA MARE AUX LARMES.                    15</h2>
-<h2>III. LA COURSE COCASSE.                     29</h2>
-<h2>IV. L&#x27;HABITATION DU LAPIN BLANC.           41</h2>
-<h2>V. CONSEILS D&#x27;UNE CHENILLE.               60</h2>
-<h2>VI. PORC ET POIVRE.                        78</h2>
-<h2>VII. UN THÉ DE FOUS.                        98</h2>
-<h2>VIII. LE CROQUET DE LA REINE.               115</h2>
-<h2>IX. HISTOIRE DE LA FAUSSE-TORTUE.         133</h2>
-<h2>X. LE QUADRILLE DE HOMARDS.              151</h2>
-<h2>XI. QUI A VOLÉ LES TARTES?                164</h2>
-<h2>XII. DÉPOSITION D&#x27;ALICE.                   179</h2>
-<h2>CHAPITRE PREMIER.</h2>
-<h2>AU FOND DU TERRIER.</h2>
 <p>ALICE, assise auprès de sa sœur sur le gazon, commençait à s&#x27;ennuyer de rester là à ne rien faire; une ou deux fois elle avait jeté les yeux sur le livre que lisait sa sœur; mais quoi! pas d&#x27;images, pas de dialogues! &quot;La belle avance,&quot; pensait Alice, &quot;qu&#x27;un livre sans images, sans causeries!&quot;.</p>
 <p>Elle s&#x27;était mise à réfléchir, (tant bien que mal, car la chaleur du jour l&#x27;endormait et la rendait lourde,) se demandant si le plaisir de faire une couronne de marguerites valait bien la peine de se lever et de cueillir les fleurs, quand tout à coup un lapin blanc aux yeux roses passa près d&#x27;elle.</p>
 <p>Il n&#x27;y avait rien là de bien étonnant, et Alice ne trouva même pas très-extraordinaire d&#x27;entendre parler le Lapin qui se disait: &quot;Ah! j&#x27;arriverai trop tard!&quot; (En y songeant après, il lui sembla bien qu&#x27;elle aurait dû s&#x27;en étonner, mais sur le moment cela lui avait paru tout naturel.) Cependant, quand le Lapin vint à tirer une montre de son gousset, la regarda, puis se prit à courir de plus belle, Alice sauta sur ses pieds, frappée de cette idée que jamais elle n&#x27;avait vu de lapin avec un gousset et une montre. Entraînée par la curiosité elle s&#x27;élança sur ses traces à travers le champ, et arriva tout juste à temps pour le voir disparaître dans un large trou au pied d&#x27;une haie.</p>
-<p>Un instant après, Alice était à la poursuite du Lapin dans le terrier, sans songer comment elle en sortirait.</p>
 <p>Pendant un bout de chemin le trou allait tout droit comme un tunnel, puis tout à coup il plongeait perpendiculairement d&#x27;une façon si brusque qu&#x27;Alice se sentit tomber comme dans un puits d&#x27;une grande profondeur, avant même d&#x27;avoir pensé à se retenir.</p>
 <p>De deux choses l&#x27;une, ou le puits était vraiment bien profond, ou elle tombait bien doucement; car elle eut tout le loisir, dans sa chute, de regarder autour d&#x27;elle et de se demander avec étonnement ce qu&#x27;elle allait devenir. D&#x27;abord elle regarda dans le fond du trou pour savoir où elle allait; mais il y faisait bien trop sombre pour y rien voir. Ensuite elle porta les yeux sur les parois du puits, et s&#x27;aperçut qu&#x27;elles étaient garnies d&#x27;armoires et d&#x27;étagères; çà et là, elle vit pendues à des clous des cartes géographiques et des images. En passant elle prit sur un rayon un pot de confiture portant cette étiquette, &quot;MARMELADE D&#x27;ORANGES.&quot; Mais, à son grand regret, le pot était vide: elle n&#x27;osait le laisser tomber dans la crainte de tuer quelqu&#x27;un; aussi s&#x27;arrangea-t-elle de manière à le déposer en passant dans une des armoires.</p>
 <p>&quot;Certes,&quot; dit Alice, &quot;après une chute pareille je ne me moquerai pas mal de dégringoler l&#x27;escalier! Comme ils vont me trouver brave chez nous! Je tomberais du haut des toits que je ne ferais pas entendre une plainte.&quot; (Ce qui était bien probable.)</p>
@@ -72,20 +69,12 @@ h2 + p, .first { text-indent: 0; }
 <p>Comme cela n&#x27;avançait à rien de passer son temps à attendre à la petite porte, elle retourna vers la table, espérant presque y trouver une autre clef, ou tout au moins quelque grimoire donnant les règles à suivre pour se fermer comme un télescope. Cette fois elle trouva sur la table une petite bouteille (qui certes n&#x27;était pas là tout à l&#x27;heure). Au cou de cette petite bouteille était attachée une étiquette en papier, avec ces mots &quot;BUVEZ-MOI&quot; admirablement imprimés en grosses lettres.</p>
 <p>C&#x27;est bien facile à dire &quot;Buvez-moi&quot; mais Alice était trop fine pour obéir à l&#x27;aveuglette. &quot;Examinons d&#x27;abord,&quot; dit-elle, &quot;et voyons s&#x27;il y a écrit dessus &#x27;Poison&#x27; ou non.&quot; Car elle avait lu dans de jolis petits contes, que des enfants avaient été brûlés, dévorés par des bêtes féroces, et qu&#x27;il leur était arrivé d&#x27;autres choses très-désagréables, tout cela pour ne s&#x27;être pas souvenus des instructions bien simples que leur donnaient leurs parents: par exemple, que le tisonnier chauffé à blanc brûle les mains qui le tiennent trop longtemps; que si on se fait au doigt une coupure profonde, il saigne d&#x27;ordinaire; et elle n&#x27;avait point oublié que si l&#x27;on boit immodérément d&#x27;une bouteille marquée &quot;Poison&quot; cela ne manque pas de brouiller le cœur tôt ou tard.</p>
 <p>Cependant, comme cette bouteille n&#x27;était pas marquée &quot;Poison,&quot; Alice se hasarda à en goûter le contenu, et le trouvant fort bon, (au fait c&#x27;était comme un mélange de tarte aux cerises, de crème, d&#x27;ananas, de dinde truffée, de nougat, et de rôties au beurre,) elle eut bientôt tout avalé.</p>
-<p>*         *         *         *         *</p>
-<p>*         *         *         *</p>
-<p>*         *         *         *         *</p>
 <p>&quot;Je me sens toute drôle,&quot; dit Alice, &quot;on dirait que je rentre en moi-même et que je me ferme comme un télescope.&quot; C&#x27;est bien ce qui arrivait en effet. Elle n&#x27;avait plus que dix pouces de haut, et un éclair de joie passa sur son visage à la pensée qu&#x27;elle était maintenant de la grandeur voulue pour pénétrer par la petite porte dans ce beau jardin. Elle attendit pourtant quelques minutes, pour voir si elle allait rapetisser encore. Cela lui faisait bien un peu peur. &quot;Songez donc,&quot; se disait Alice, &quot;je pourrais bien finir par m&#x27;éteindre comme une chandelle. Que deviendrais-je alors?&quot; Et elle cherchait à s&#x27;imaginer l&#x27;air que pouvait avoir la flamme d&#x27;une chandelle éteinte, car elle ne se rappelait pas avoir jamais rien vu de la sorte.</p>
 <p>Un moment après, voyant qu&#x27;il ne se passait plus rien, elle se décida à aller de suite au jardin; mais hélas, pauvre Alice! en arrivant à la porte, elle s&#x27;aperçut qu&#x27;elle avait oublié la petite clef d&#x27;or. Elle revint sur ses pas pour la prendre sur la table. Bah! impossible d&#x27;atteindre à la clef qu&#x27;elle voyait bien clairement à travers le verre. Elle fit alors tout son possible pour grimper le long d&#x27;un des pieds de la table, mais il était trop glissant; et enfin, épuisée de fatigue, la pauvre enfant s&#x27;assit et pleura.</p>
 <p>&quot;Allons, à quoi bon pleurer ainsi,&quot; se dit Alice vivement. &quot;Je vous conseille, Mademoiselle, de cesser tout de suite!&quot; Elle avait pour habitude de se donner de très-bons conseils (bien qu&#x27;elle les suivît rarement), et quelquefois elle se grondait si fort que les larmes lui en venaient aux yeux; une fois même elle s&#x27;était donné des tapes pour avoir triché dans une partie de croquet qu&#x27;elle jouait toute seule; car cette étrange enfant aimait beaucoup à faire deux personnages. &quot;Mais,&quot; pensa la pauvre Alice, &quot;il n&#x27;y a plus moyen de faire deux personnages, à présent qu&#x27;il me reste à peine de quoi en faire un.&quot;</p>
 <p>Elle aperçut alors une petite boîte en verre qui était sous la table, l&#x27;ouvrit et y trouva un tout petit gâteau sur lequel les mots &quot;MANGEZ-MOI&quot; étaient admirablement tracés avec des raisins de Corinthe. &quot;Tiens, je vais le manger,&quot; dit Alice: &quot;si cela me fait grandir, je pourrai atteindre à la clef; si cela me fait rapetisser, je pourrai ramper sous la porte; d&#x27;une façon ou de l&#x27;autre, je pénétrerai dans le jardin, et alors, arrive que pourra!&quot;</p>
 <p>Elle mangea donc un petit morceau du gâteau, et, portant sa main sur sa tête, elle se dit tout inquiète: &quot;Lequel est-ce? Lequel est-ce?&quot; Elle voulait savoir si elle grandissait ou rapetissait, et fut tout étonnée de rester la même; franchement, c&#x27;est ce qui arrive le plus souvent lorsqu&#x27;on mange du gâteau; mais Alice avait tellement pris l&#x27;habitude de s&#x27;attendre à des choses extraordinaires, que cela lui paraissait ennuyeux et stupide de vivre comme tout le monde.</p>
-<p>Aussi elle se remit à l&#x27;œuvre, et eut bien vite fait disparaître le gâteau.</p>
-<p>*         *         *         *         *</p>
-<p>*         *         *         *</p>
-<p>*         *         *         *         *</p>
-<h2>CHAPITRE II.</h2>
-<h2>LA MARE AUX LARMES.</h2>
+<h2 class="chapter" id="c1">Chapitre II — La mare aux larmes.</h2>
 <p>&quot;DE plus très-curieux en plus très-curieux!&quot; s&#x27;écria Alice (sa surprise était si grande qu&#x27;elle ne pouvait s&#x27;exprimer correctement): &quot;Voilà que je m&#x27;allonge comme le plus grand télescope qui fût jamais! Adieu mes pieds!&quot; (Elle venait de baisser les yeux, et ses pieds lui semblaient s&#x27;éloigner à perte de vue.) &quot;Oh! mes pauvres petits pieds! Qui vous mettra vos bas et vos souliers maintenant, mes mignons? Quant à moi, je ne le pourrai certainement pas! Je serai bien trop loin pour m&#x27;occuper de vous: arrangez-vous du mieux que vous pourrez.--Il faut cependant que je sois bonne pour eux,&quot; pensa Alice, &quot;sans cela ils refuseront peut-être d&#x27;aller du côté que je voudrai. Ah! je sais ce que je ferai: je leur donnerai une belle paire de bottines à Noël.&quot;</p>
 <p>Puis elle chercha dans son esprit comment elle s&#x27;y prendrait. &quot;Il faudra les envoyer par le messager,&quot; pensa-t-elle; &quot;quelle étrange chose d&#x27;envoyer des présents à ses pieds! Et l&#x27;adresse donc! C&#x27;est cela qui sera drôle.</p>
 <p>_A Monsieur Lepiédroit d&#x27;Alice,</p>
@@ -116,8 +105,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Alice la rappela doucement: &quot;Ma petite Souris! Revenez, je vous en prie, nous ne parlerons plus ni de chien ni de chat, puisque vous ne les aimez pas!&quot;</p>
 <p>A ces mots la Souris fit volte-face, et se rapprocha tout doucement; elle était toute pâle (de colère, pensait Alice). La Souris dit d&#x27;une voix basse et tremblante: &quot;Gagnons la rive, je vous conterai mon histoire, et vous verrez pourquoi je hais les chats et les chiens.&quot;</p>
 <p>Il était grand temps de s&#x27;en aller, car la mare se couvrait d&#x27;oiseaux et de toutes sortes d&#x27;animaux qui y étaient tombés. Il y avait un canard, un dodo, un lory, un aiglon, et d&#x27;autres bêtes extraordinaires. Alice prit les devants, et toute la troupe nagea vers la rive.</p>
-<h2>CHAPITRE III.</h2>
-<h2>LA COURSE COCASSE.</h2>
+<h2 class="chapter" id="c2">Chapitre III — La course cocasse.</h2>
 <p>ILS formaient une assemblée bien grotesque ces êtres singuliers réunis sur le bord de la mare; les uns avaient leurs plumes tout en désordre, les autres le poil plaqué contre le corps. Tous étaient trempés, de mauvaise humeur, et fort mal à l&#x27;aise.</p>
 <p>&quot;Comment faire pour nous sécher?&quot; ce fut la première question, cela va sans dire. Au bout de quelques instants, il sembla tout naturel à Alice de causer familièrement avec ces animaux, comme si elle les connaissait depuis son berceau. Elle eut même une longue discussion avec le Lory, qui, à la fin, lui fit la mine et lui dit d&#x27;un air boudeur: &quot;Je suis plus âgé que vous, et je dois par conséquent en savoir plus long.&quot; Alice ne voulut pas accepter cette conclusion avant de savoir l&#x27;âge du Lory, et comme celui-ci refusa tout net de le lui dire, cela mit un terme au débat.</p>
 <p>Enfin la Souris, qui paraissait avoir un certain ascendant sur les autres, leur cria: &quot;Asseyez-vous tous, et écoutez-moi! Je vais bientôt vous faire sécher, je vous en réponds!&quot; Vite, tout le monde s&#x27;assit en rond autour de la Souris, sur qui Alice tenait les yeux fixés avec inquiétude, car elle se disait: &quot;Je vais attraper un vilain rhume si je ne sèche pas bientôt.&quot;</p>
@@ -169,8 +157,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Enfin, sous un prétexte ou sous un autre, chacun s&#x27;esquiva, et Alice se trouva bientôt seule.</p>
 <p>&quot;Je voudrais bien n&#x27;avoir pas parlé de Dinah,&quot; se dit-elle tristement. &quot;Personne ne l&#x27;aime ici, et pourtant c&#x27;est la meilleure chatte du monde! Oh! chère Dinah, te reverrai-je jamais?&quot; Ici la pauvre Alice se reprit à pleurer; elle se sentait seule, triste, et abattue.</p>
 <p>Au bout de quelque temps elle entendit au loin un petit bruit de pas; elle s&#x27;empressa de regarder, espérant que la Souris avait changé d&#x27;idée et revenait finir son histoire.</p>
-<h2>CHAPITRE IV.</h2>
-<h2>L&#x27;HABITATION DU LAPIN BLANC.</h2>
+<h2 class="chapter" id="c3">Chapitre IV — L&#x27;habitation du Lapin Blanc.</h2>
 <p>C&#x27;ÉTAIT le Lapin Blanc qui revenait en trottinant, et qui cherchait de tous côtés, d&#x27;un air inquiet, comme s&#x27;il avait perdu quelque chose; Alice l&#x27;entendit qui marmottait: &quot;La Duchesse! La Duchesse! Oh! mes pauvres pattes; oh! ma robe et mes moustaches! Elle me fera guillotiner aussi vrai que des furets sont des furets! Où pourrais-je bien les avoir perdus?&quot; Alice devina tout de suite qu&#x27;il cherchait l&#x27;éventail et la paire de gants paille, et, comme elle avait bon cœur, elle se mit à les chercher aussi; mais pas moyen de les trouver.</p>
 <p>Du reste, depuis son bain dans la mare aux larmes, tout était changé: la salle, la table de verre, et la petite porte avaient complétement disparu.</p>
 <p>Bientôt le Lapin aperçut Alice qui furetait; il lui cria d&#x27;un ton d&#x27;impatience: &quot;Eh bien! Marianne, que faites-vous ici? Courez vite à la maison me chercher une paire de gants et un éventail! Allons, dépêchons-nous.&quot;</p>
@@ -216,8 +203,7 @@ h2 + p, .first { text-indent: 0; }
 <p>En effet, la grande question était bien de savoir quoi? Alice regarda tout autour d&#x27;elle les fleurs et les brins d&#x27;herbes; mais elle ne vit rien qui lui parût bon à boire ou à manger dans les circonstances présentes.</p>
 <p>Près d&#x27;elle poussait un large champignon, à peu près haut comme elle. Lorsqu&#x27;elle l&#x27;eut examiné par-dessous, d&#x27;un côté et de l&#x27;autre, par-devant et par-derrière, l&#x27;idée lui vint qu&#x27;elle ferait bien de regarder ce qu&#x27;il y avait dessus.</p>
 <p>Elle se dressa sur la pointe des pieds, et, glissant les yeux par-dessus le bord du champignon, ses regards rencontrèrent ceux d&#x27;une grosse chenille bleue assise au sommet, les bras croisés, fumant tranquillement une longue pipe turque sans faire la moindre attention à elle ni à quoi que ce fût.</p>
-<h2>CHAPITRE V.</h2>
-<h2>CONSEILS D&#x27;UNE CHENILLE.</h2>
+<h2 class="chapter" id="c4">Chapitre V — Conseils d&#x27;une Chenille.</h2>
 <p>LA Chenille et Alice se considérèrent un instant en silence. Enfin la Chenille sortit le houka de sa bouche, et lui adressa la parole d&#x27;une voix endormie et traînante.</p>
 <p>&quot;Qui êtes-vous?&quot; dit la Chenille. Ce n&#x27;était pas là une manière encourageante d&#x27;entamer la conversation. Alice répondit, un peu confuse: &quot;Je----je le sais à peine moi-même quant à présent. Je sais bien ce que j&#x27;étais en me levant ce matin, mais je crois avoir changé plusieurs fois depuis.&quot;</p>
 <p>&quot;Qu&#x27;entendez-vous par là?&quot; dit la Chenille d&#x27;un ton sévère. &quot;Expliquez-vous.&quot;</p>
@@ -296,8 +282,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;Cela m&#x27;importe beaucoup à moi,&quot; dit Alice vivement; &quot;mais je ne cherche pas d&#x27;œufs justement, et quand même j&#x27;en chercherais je ne voudrais pas des vôtres; je ne les aime pas crus.&quot;</p>
 <p>&quot;Eh bien! allez-vous-en alors,&quot; dit le Pigeon d&#x27;un ton boudeur en se remettant dans son nid. Alice se glissa parmi les arbres du mieux qu&#x27;elle put en se baissant, car son cou s&#x27;entortillait dans les branches, et à chaque instant il lui fallait s&#x27;arrêter et le désentortiller. Au bout de quelque temps, elle se rappela qu&#x27;elle tenait encore dans ses mains les morceaux de champignon, et elle se mit à l&#x27;œuvre avec grand soin, grignotant tantôt l&#x27;un, tantôt l&#x27;autre, et tantôt grandissant, tantôt rapetissant, jusqu&#x27;à ce qu&#x27;enfin elle parvint à se ramener à sa grandeur naturelle.</p>
 <p>Il y avait si longtemps qu&#x27;elle n&#x27;avait été d&#x27;une taille raisonnable que cela lui parut d&#x27;abord tout drôle, mais elle finit par s&#x27;y accoutumer, et commença à se parler à elle-même, comme d&#x27;habitude. &quot;Allons, voilà maintenant la moitié de mon projet exécuté. Comme tous ces changements sont embarrassants! Je ne suis jamais sûre de ce que je vais devenir d&#x27;une minute à l&#x27;autre. Toutefois, je suis redevenue de la bonne grandeur; il me reste maintenant à pénétrer dans ce magnifique jardin. Comment faire?&quot; En disant ces mots elle arriva tout à coup à une clairière, où se trouvait une maison d&#x27;environ quatre pieds de haut. &quot;Quels que soient les gens qui demeurent là,&quot; pensa Alice, &quot;il ne serait pas raisonnable de se présenter à eux grande comme je suis. Ils deviendraient fous de frayeur.&quot; Elle se mit de nouveau à grignoter le morceau qu&#x27;elle tenait dans sa main droite, et ne s&#x27;aventura pas près de la maison avant d&#x27;avoir réduit sa taille à neuf pouces.</p>
-<h2>CHAPITRE VI.</h2>
-<h2>PORC ET POIVRE.</h2>
+<h2 class="chapter" id="c5">Chapitre VI — Porc et poivre.</h2>
 <p>ALICE resta une ou deux minutes à regarder à la porte; elle se demandait ce qu&#x27;il fallait faire, quand tout à coup un laquais en livrée sortit du bois en courant. (Elle le prit pour un laquais à cause de sa livrée; sans cela, à n&#x27;en juger que par la figure, elle l&#x27;aurait pris pour un poisson.) Il frappa fortement avec son doigt à la porte. Elle fut ouverte par un autre laquais en livrée qui avait la face toute ronde et de gros yeux comme une grenouille. Alice remarqua que les deux laquais avaient les cheveux poudrés et tout frisés. Elle se sentit piquée de curiosité, et, voulant savoir ce que tout cela signifiait, elle se glissa un peu en dehors du bois afin d&#x27;écouter.</p>
 <p>Le Laquais-Poisson prit de dessous son bras une lettre énorme, presque aussi grande que lui, et la présenta au Laquais-Grenouille en disant d&#x27;un ton solennel: &quot;Pour Madame la Duchesse, une invitation de la Reine à une partie de croquet.&quot; Le Laquais-Grenouille répéta sur le même ton solennel, en changeant un peu l&#x27;ordre des mots: &quot;De la part de la Reine une invitation pour Madame la Duchesse à une partie de croquet;&quot; puis tous deux se firent un profond salut et les boucles de leurs chevelures s&#x27;entremêlèrent.</p>
 <p>Cela fit tellement rire Alice qu&#x27;elle eut à rentrer bien vite dans le bois de peur d&#x27;être entendue; et quand elle avança la tête pour regarder de nouveau, le Laquais-Poisson était parti, et l&#x27;autre était assis par terre près de la route, regardant niaisement en l&#x27;air.</p>
@@ -333,12 +318,12 @@ h2 + p, .first { text-indent: 0; }
 <p>Alice jeta un regard inquiet sur la cuisinière pour voir si elle allait obéir; mais la cuisinière était tout occupée à brasser la soupe et paraissait ne pas écouter. Alice continua donc: &quot;Vingt-quatre heures, je crois, ou bien douze? Je pense----&quot;</p>
 <p>&quot;Oh! laissez-moi la paix,&quot; dit la Duchesse, &quot;je n&#x27;ai jamais pu souffrir les chiffres.&quot; Et là-dessus elle recommença à dorloter son enfant, lui chantant une espèce de chanson pour l&#x27;endormir et lui donnant une forte secousse au bout de chaque vers.</p>
 <p>&quot;Grondez-moi ce vilain garçon! Battez-le quand il éternue; A vous taquiner, sans façon Le méchant enfant s&#x27;évertue.&quot;</p>
-<h2>REFRAIN</h2>
+<h3 class="sub">Refrain</h3>
 <p>(que reprirent en chœur la cuisinière et le bébé).</p>
 <p>&quot;Brou, Brou, Brou!&quot; (bis.)</p>
 <p>En chantant le second couplet de la chanson la Duchesse faisait sauter le bébé et le secouait violemment, si bien que le pauvre petit être hurlait au point qu&#x27;Alice put à peine entendre ces mots:</p>
 <p>&quot;Oui, oui, je m&#x27;en vais le gronder, Et le battre, s&#x27;il éternue; Car bientôt à savoir poivrer, Je veux que l&#x27;enfant s&#x27;habitue.&quot;</p>
-<h2>REFRAIN.</h2>
+<h3 class="sub">Refrain.</h3>
 <p>&quot;Brou, Brou, Brou!&quot; (bis.)</p>
 <p>&quot;Tenez, vous pouvez le dorloter si vous voulez!&quot; dit la Duchesse à Alice: et à ces mots elle lui jeta le bébé. &quot;Il faut que j&#x27;aille m&#x27;apprêter pour aller jouer au croquet avec la Reine.&quot; Et elle se précipita hors de la chambre. La cuisinière lui lança une poêle comme elle s&#x27;en allait, mais elle la manqua tout juste.</p>
 <p>Alice eut de la peine à attraper le bébé. C&#x27;était un petit être d&#x27;une forme étrange qui tenait ses bras et ses jambes étendus dans toutes les directions; &quot;Tout comme une étoile de mer,&quot; pensait Alice. La pauvre petite créature ronflait comme une machine à vapeur lorsqu&#x27;elle l&#x27;attrapa, et ne cessait de se plier en deux, puis de s&#x27;étendre tout droit, de sorte qu&#x27;avec tout cela, pendant les premiers instants, c&#x27;est tout ce qu&#x27;elle pouvait faire que de le tenir.</p>
@@ -379,8 +364,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;C&#x27;est bon,&quot; dit le Chat, et cette fois il s&#x27;évanouit tout doucement à commencer par le bout de la queue, et finissant par sa grimace qui demeura quelque temps après que le reste fut disparu.</p>
 <p>&quot;Certes,&quot; pensa Alice, &quot;j&#x27;ai souvent vu un chat sans grimace, mais une grimace sans chat, je n&#x27;ai jamais de ma vie rien vu de si drôle.&quot;</p>
 <p>Elle ne fit pas beaucoup de chemin avant d&#x27;arriver devant la maison du Lièvre. Elle pensa que ce devait bien être là la maison, car les cheminées étaient en forme d&#x27;oreilles et le toit était couvert de fourrure. La maison était si grande qu&#x27;elle n&#x27;osa s&#x27;approcher avant d&#x27;avoir grignoté encore un peu du morceau de champignon qu&#x27;elle avait dans la main gauche, et d&#x27;avoir atteint la taille de deux pieds environ; et même alors elle avança timidement en se disant: &quot;Si après tout il était fou furieux! Je voudrais presque avoir été faire visite au Chapelier plutôt que d&#x27;être venue ici.&quot;</p>
-<h2>CHAPITRE VII.</h2>
-<h2>UN THÉ DE FOUS.</h2>
+<h2 class="chapter" id="c6">Chapitre VII — Un thé de fous.</h2>
 <p>IL y avait une table servie sous un arbre devant la maison, et le Lièvre y prenait le thé avec le Chapelier. Un Loir profondément endormi était assis entre les deux autres qui s&#x27;en servaient comme d&#x27;un coussin, le coude appuyé sur lui et causant par-dessus sa tête. &quot;Bien gênant pour le Loir,&quot; pensa Alice. &quot;Mais comme il est endormi je suppose que cela lui est égal.&quot;</p>
 <p>Bien que la table fût très-grande, ils étaient tous trois serrés l&#x27;un contre l&#x27;autre à un des coins. &quot;Il n&#x27;y a pas de place! Il n&#x27;y a pas de place!&quot; crièrent-ils en voyant Alice. &quot;Il y a abondance de place,&quot; dit Alice indignée, et elle s&#x27;assit dans un large fauteuil à l&#x27;un des bouts de la table.</p>
 <p>&quot;Prenez donc du vin,&quot; dit le Lièvre d&#x27;un ton engageant.</p>
@@ -481,8 +465,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Comme elle disait cela, elle s&#x27;aperçut qu&#x27;un des arbres avait une porte par laquelle on pouvait pénétrer à l&#x27;intérieur. &quot;Voilà qui est curieux,&quot; pensa-t-elle. &quot;Mais tout est curieux aujourd&#x27;hui. Je crois que je ferai bien d&#x27;entrer tout de suite.&quot; Elle entra.</p>
 <p>Elle se retrouva encore dans la longue salle tout près de la petite table de verre.</p>
 <p>&quot;Cette fois je m&#x27;y prendrai mieux,&quot; se dit-elle, et elle commença par saisir la petite clef d&#x27;or et par ouvrir la porte qui menait au jardin, et puis elle se mit à grignoter le morceau de champignon qu&#x27;elle avait mis dans sa poche, jusqu&#x27;à ce qu&#x27;elle fût réduite à environ deux pieds de haut; elle prit alors le petit passage; et enfin---- elle se trouva dans le superbe jardin au milieu des brillants parterres et des fraîches fontaines.</p>
-<h2>CHAPITRE VIII.</h2>
-<h2>LE CROQUET DE LA REINE.</h2>
+<h2 class="chapter" id="c7">Chapitre VIII — Le croquet de la Reine.</h2>
 <p>UN grand rosier se trouvait à l&#x27;entrée du jardin; les roses qu&#x27;il portait étaient blanches, mais trois jardiniers étaient en train de les peindre en rouge. Alice s&#x27;avança pour les regarder, et, au moment où elle approchait, elle en entendit un qui disait: &quot;Fais donc attention, Cinq, et ne m&#x27;éclabousse pas ainsi avec ta peinture.&quot;</p>
 <p>&quot;Ce n&#x27;est pas de ma faute,&quot; dit Cinq d&#x27;un ton bourru, &quot;c&#x27;est Sept qui m&#x27;a poussé le coude.&quot;</p>
 <p>Là-dessus Sept leva les yeux et dit: &quot;C&#x27;est cela, Cinq! Jetez toujours le blâme sur les autres!&quot;</p>
@@ -556,8 +539,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Alice ne trouva rien de mieux à dire que: &quot;Il appartient à la Duchesse; c&#x27;est elle que vous feriez bien de consulter à ce sujet.&quot;</p>
 <p>&quot;Elle est en prison,&quot; dit la Reine au bourreau. &quot;Qu&#x27;on l&#x27;amène ici.&quot; Et le bourreau partit comme un trait.</p>
 <p>La tête du Chat commença à s&#x27;évanouir aussitôt que le bourreau fut parti, et elle avait complétement disparu quand il revint accompagné de la Duchesse; de sorte que le Roi et le bourreau se mirent à courir de côté et d&#x27;autre comme des fous pour trouver cette tête, tandis que le reste de la compagnie retournait au jeu.</p>
-<h2>CHAPITRE IX.</h2>
-<h2>HISTOIRE DE LA FAUSSE-TORTUE.</h2>
+<h2 class="chapter" id="c8">Chapitre IX — Histoire de la Fausse-tortue.</h2>
 <p>&quot;VOUS ne sauriez croire combien je suis heureuse de vous voir, ma bonne vieille fille!&quot; dit la Duchesse, passant amicalement son bras sous celui d&#x27;Alice, et elles s&#x27;éloignèrent ensemble.</p>
 <p>Alice était bien contente de la trouver de si bonne humeur, et pensait en elle-même que c&#x27;était peut-être le poivre qui l&#x27;avait rendue si méchante, lorsqu&#x27;elles se rencontrèrent dans la cuisine. &quot;Quand je serai Duchesse, moi,&quot; se dit-elle (d&#x27;un ton qui exprimait peu d&#x27;espérance cependant), &quot;je n&#x27;aurai pas de poivre dans ma cuisine, pas le moindre grain. La soupe peut très-bien s&#x27;en passer. Ça pourrait bien être le poivre qui échauffe la bile des gens,&quot; continua-t-elle, enchantée d&#x27;avoir fait cette découverte; &quot;ça pourrait bien être le vinaigre qui les aigrit; la camomille qui les rend amères; et le sucre d&#x27;orge et d&#x27;autres choses du même genre qui adoucissent le caractère des enfants. Je voudrais bien que tout le monde sût cela; on ne serait pas si chiche de sucreries, voyez-vous.&quot;</p>
 <p>Elle avait alors complétement oublié la Duchesse, et tressaillit en entendant sa voix tout près de son oreille. &quot;Vous pensez à quelque chose, ma chère petite, et cela vous fait oublier de causer. Je ne puis pas vous dire en ce moment quelle est la morale de ce fait, mais je m&#x27;en souviendrai tout à l&#x27;heure.&quot;</p>
@@ -649,8 +631,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;Assurément,&quot; répondit la Fausse-Tortue.</p>
 <p>&quot;Et comment vous arrangiez-vous le douzième jour?&quot; s&#x27;empressa de demander Alice.</p>
 <p>&quot;En voilà assez sur les leçons,&quot; dit le Griffon intervenant d&#x27;un ton très-décidé; &quot;parlez-lui des jeux maintenant.&quot;</p>
-<h2>CHAPITRE X.</h2>
-<h2>LE QUADRILLE DE HOMARDS.</h2>
+<h2 class="chapter" id="c9">Chapitre X — Le quadrille de homards.</h2>
 <p>LA Fausse-Tortue soupira profondément et passa le dos d&#x27;une de ses nageoires sur ses yeux. Elle regarda Alice et s&#x27;efforça de parler, mais les sanglots étouffèrent sa voix pendant une ou deux minutes. &quot;On dirait qu&#x27;elle a un os dans le gosier,&quot; dit le Griffon, et il se mit à la secouer et à lui taper dans le dos. Enfin la Fausse-Tortue retrouva la voix, et, tandis que de grosses larmes coulaient le long de ses joues, elle continua:</p>
 <p>&quot;Peut-être n&#x27;avez-vous pas beaucoup vécu au fond de la mer?&quot;--(&quot;Non,&quot; dit Alice)--&quot;et peut-être ne vous a-t-on jamais présentée à un homard?&quot; (Alice allait dire: &quot;J&#x27;en ai goûté une fois----&quot; mais elle se reprit vivement, et dit: &quot;Non, jamais.&quot;) &quot;De sorte que vous ne pouvez pas du tout vous figurer quelle chose délicieuse c&#x27;est qu&#x27;un quadrille de homards.&quot;</p>
 <p>&quot;Non, vraiment,&quot; dit Alice. &quot;Qu&#x27;est-ce que c&#x27;est que cette danse-là?&quot;</p>
@@ -716,8 +697,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;Venez donc!&quot; cria le Griffon; et, prenant Alice par la main, il se mit à courir sans attendre la fin de la chanson.</p>
 <p>&quot;Qu&#x27;est-ce que c&#x27;est que ce procès?&quot; demanda Alice hors d&#x27;haleine; mais le Griffon se contenta de répondre: &quot;Venez donc!&quot; en courant de plus belle, tandis que leur parvenaient, de plus en plus faibles, apportées par la brise qui les poursuivait, ces paroles pleines de mélancolie:</p>
 <p>&quot;Plonger dans ma soupière Cette vaste cuillère Est un bonheur Qui me réjouit le cœur.&quot;</p>
-<h2>CHAPITRE XI.</h2>
-<h2>QUI A VOLÉ LES TARTES?</h2>
+<h2 class="chapter" id="c10">Chapitre XI — Qui a volé les tartes?</h2>
 <p>LE Roi et la Reine de Cœur étaient assis sur leur trône, entourés d&#x27;une nombreuse assemblée: toutes sortes de petits oiseaux et d&#x27;autres bêtes, ainsi que le paquet de cartes tout entier. Le Valet, chargé de chaînes, gardé de chaque côté par un soldat, se tenait debout devant le trône, et près du roi se trouvait le Lapin Blanc, tenant d&#x27;une main une trompette et de l&#x27;autre un rouleau de parchemin. Au beau milieu de la salle était une table sur laquelle on voyait un grand plat de tartes; ces tartes semblaient si bonnes que cela donna faim à Alice, rien que de les regarder. &quot;Je voudrais bien qu&#x27;on se dépêchât de finir le procès,&quot; pensa-t-elle, &quot;et qu&#x27;on fît passer les rafraîchissements,&quot; mais cela ne paraissait guère probable, aussi se mit-elle à regarder tout autour d&#x27;elle pour passer le temps.</p>
 <p>C&#x27;était la première fois qu&#x27;Alice se trouvait dans une cour de justice, mais elle en avait lu des descriptions dans les livres, et elle fut toute contente de voir qu&#x27;elle savait le nom de presque tout ce qu&#x27;il y avait là. &quot;Ça, c&#x27;est le juge,&quot; se dit-elle; &quot;je le reconnais à sa grande perruque.&quot;</p>
 <p>Le juge, disons-le en passant, était le Roi, et, comme il portait sa couronne par-dessus sa perruque (regardez le frontispice, si vous voulez savoir comment il s&#x27;était arrangé) il n&#x27;avait pas du tout l&#x27;air d&#x27;être à son aise, et cela ne lui allait pas bien du tout.</p>
@@ -774,7 +754,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;Si c&#x27;est là tout ce que vous savez de l&#x27;affaire, vous pouvez vous prosterner,&quot; continua le Roi.</p>
 <p>&quot;Je ne puis pas me prosterner plus bas que cela,&quot; dit le Chapelier; &quot;je suis déjà par terre.&quot;</p>
 <p>&quot;Alors asseyez-vous,&quot; répondit le Roi.</p>
-<h2>Ici l&#x27;autre cochon d&#x27;Inde applaudit et fut réprimé.</h2>
+<p>Ici l&#x27;autre cochon d&#x27;Inde applaudit et fut réprimé.</p>
 <p>&quot;Bon, cela met fin aux cochons d&#x27;Inde!&quot; pensa Alice. &quot;Maintenant ça va mieux aller.&quot;</p>
 <p>&quot;J&#x27;aimerais bien aller finir de prendre mon thé,&quot; dit le Chapelier, en lançant un regard inquiet sur la Reine, qui lisait la liste des chanteurs.</p>
 <p>&quot;Vous pouvez vous retirer,&quot; dit le Roi; et le Chapelier se hâta de quitter la cour, sans même prendre le temps de mettre ses souliers.</p>
@@ -791,8 +771,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Pendant quelques instants, toute la cour fut sens dessus dessous pour mettre le Loir à la porte; et, quand le calme fut rétabli, la cuisinière avait disparu.</p>
 <p>&quot;Cela ne fait rien,&quot; dit le Roi, comme soulagé d&#x27;un grand poids. &quot;Appelez le troisième témoin;&quot; et il ajouta à voix basse en s&#x27;adressant à la Reine: &quot;Vraiment, mon amie, il faut que vous interrogiez cet autre témoin; cela me fait trop mal au front!&quot;</p>
 <p>Alice regardait le Lapin Blanc tandis qu&#x27;il tournait la liste dans ses doigts, curieuse de savoir quel serait l&#x27;autre témoin. &quot;Car les dépositions ne prouvent pas grand&#x27;chose jusqu&#x27;à présent,&quot; se dit-elle. Imaginez sa surprise quand le Lapin Blanc cria, du plus fort de sa petite voix criarde: &quot;Alice!&quot;</p>
-<h2>CHAPITRE XII.</h2>
-<h2>DÉPOSITION D&#x27;ALICE.</h2>
+<h2 class="chapter" id="c11">Chapitre XII — Déposition d&#x27;alice.</h2>
 <p>&quot;VOILA!&quot; cria Alice, oubliant tout à fait dans le trouble du moment combien elle avait grandi depuis quelques instants, et elle se leva si brusquement qu&#x27;elle accrocha le banc des jurés avec le bord de sa robe, et le renversa, avec tous ses occupants, sur la tête de la foule qui se trouvait au-dessous, et on les vit se débattant de tous côtés, comme les poissons rouges du vase qu&#x27;elle se rappelait avoir renversé par accident la semaine précédente.</p>
 <p>&quot;Oh! je vous demande bien pardon!&quot; s&#x27;écria-t-elle toute confuse, et elle se mit à les ramasser bien vite, car l&#x27;accident arrivé aux poissons rouges lui trottait dans la tête, et elle avait une idée vague qu&#x27;il fallait les ramasser tout de suite et les remettre sur les bancs, sans quoi ils mourraient.</p>
 <p>&quot;Le procès ne peut continuer,&quot; dit le Roi d&#x27;une voix grave, &quot;avant que les jurés soient tous à leurs places; tous!&quot; répéta-t-il avec emphase en regardant fixement Alice.</p>
@@ -863,10 +842,6 @@ h2 + p, .first { text-indent: 0; }
 <p>D&#x27;abord elle rêva de la petite Alice personnellement:--les petites mains de l&#x27;enfant étaient encore jointes sur ses genoux, et ses yeux vifs et brillants plongeaient leur regard dans les siens. Elle entendait jusqu&#x27;au son de sa voix; elle voyait ce singulier petit mouvement de tête par lequel elle rejetait en arrière les cheveux vagabonds qui sans cesse lui revenaient dans les yeux; et, comme elle écoutait ou paraissait écouter, tout s&#x27;anima autour d&#x27;elle et se peupla des étranges créatures du rêve de sa jeune sœur. Les longues herbes bruissaient à ses pieds sous les pas précipités du Lapin Blanc; la Souris effrayée faisait clapoter l&#x27;eau en traversant la mare voisine; elle entendait le bruit des tasses, tandis que le Lièvre et ses amis prenaient leur repas qui ne finissait jamais, et la voix perçante de la Reine envoyant à la mort ses malheureux invités. Une fois encore l&#x27;enfant-porc éternuait sur les genoux de la Duchesse, tandis que les assiettes et les plats se brisaient autour de lui; une fois encore la voix criarde du Griffon, le grincement du crayon d&#x27;ardoise du Lézard, et les cris étouffés des cochons d&#x27;Inde mis dans le sac par ordre de la cour, remplissaient les airs, en se mêlant aux sanglots que poussait au loin la malheureuse Fausse-Tortue.</p>
 <p>C&#x27;est ainsi qu&#x27;elle demeura assise, les yeux fermés, et se croyant presque dans le Pays des Merveilles, bien qu&#x27;elle sût qu&#x27;elle n&#x27;avait qu&#x27;à rouvrir les yeux pour que tout fût changé en une triste réalité: les herbes ne bruiraient plus alors que sous le souffle du vent, et l&#x27;eau de la mare ne murmurerait plus qu&#x27;au balancement des roseaux; le bruit des tasses deviendrait le tintement des clochettes au cou des moutons, et elle reconnaîtrait les cris aigus de la Reine dans la voix perçante du petit berger; l&#x27;éternuement du bébé, le cri du Griffon et tous les autres bruits étranges ne seraient plus, elle le savait bien, que les clameurs confuses d&#x27;une cour de ferme, tandis que le beuglement des bestiaux dans le lointain remplacerait les lourds sanglots de la Fausse-Tortue.</p>
 <p>Enfin elle se représenta cette même petite sœur, dans l&#x27;avenir, devenue elle aussi une grande personne; elle se la représenta conservant, jusque dans l&#x27;âge mûr, le cœur simple et aimant de son enfance, et réunissant autour d&#x27;elle d&#x27;autres petits enfants dont elle ferait briller les yeux vifs et curieux au récit de bien des aventures étranges, et peut-être même en leur contant le songe du Pays des Merveilles du temps jadis: elle la voyait partager leurs petits chagrins et trouver plaisir à leurs innocentes joies, se rappelant sa propre enfance et les heureux jours d&#x27;été.</p>
-<h2>FIN.</h2>
-<p>LONDRES.--IMPRIMERIE DE R. CLAY, FILS, ET TAYLOR, BREAD STREET HILL.</p>
-<p>*       *       *       *       *</p>
-<p>Liste des modifications:</p>
-<p>Page 140: «condammés» remplacé par «condamnés» (étaient arrêtés et condamnés) Page 166: «très-occuppés» par «très-occupés» (très-occupés à écrire)</p>
-<p class="colophon">Texte du domaine public, source : Project Gutenberg (#55456). Traduction : Bué, Henri († 1929). Édition numérique EbookClassics.</p>
+<h3 class="sub">Fin.</h3>
+<p class="colophon">Texte du domaine public. Édition numérique EbookClassics.</p>
 </body></html>

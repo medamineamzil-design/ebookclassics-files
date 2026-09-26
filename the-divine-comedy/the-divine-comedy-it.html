@@ -1,21 +1,50 @@
 <!DOCTYPE html>
 <html lang="it"><head><meta charset="utf-8">
-<title>The Divine Comedy</title><style>
-@page { margin: 22mm 20mm; }
-body { font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', serif; line-height: 1.6;
-       color: #1f1a14; max-width: 38em; margin: 0 auto; padding: 1.5em 1.2em; }
-h1 { font-size: 2.1em; text-align: center; margin: 1.5em 0 .2em; letter-spacing: .01em; }
-.author { text-align: center; font-size: 1.15em; font-style: italic; margin-bottom: 3em; color: #5a4a36; }
-h2 { font-size: 1.25em; text-align: center; margin: 2.6em 0 1.2em; letter-spacing: .06em;
-     text-transform: uppercase; font-weight: normal; page-break-before: always; break-before: page; }
-p { margin: 0; text-indent: 1.4em; text-align: justify; hyphens: auto; }
-h2 + p, .first { text-indent: 0; }
-.colophon { font-size: .85em; color: #6b5d45; text-align: center; margin-top: 4em; text-indent: 0; }
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Divine Comedy — Dante Alighieri</title><style>
+:root{--paper:#fbf8f1;--ink:#1f1b16;--muted:#6f6352;--accent:#9a6b2f;--rule:#e4dccb}
+@media (prefers-color-scheme:dark){:root{--paper:#16140f;--ink:#ece6d8;--muted:#a79c88;--accent:#d8a95e;--rule:#2e2a22}}
+html{background:var(--paper)}
+body{font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Libertinus Serif",Georgia,serif;color:var(--ink);
+     background:var(--paper);line-height:1.65;font-size:1.12rem;max-width:36em;margin:0 auto;padding:2.5em 1.25em 5em}
+.titlepage{text-align:center;min-height:70vh;display:flex;flex-direction:column;justify-content:center;gap:.6em;
+           border-bottom:1px solid var(--rule);margin-bottom:2.5em;padding-bottom:2.5em}
+.titlepage img{max-width:260px;width:60%;margin:0 auto 1.5em;border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+h1{font-size:2.4em;line-height:1.15;font-weight:600;margin:0;letter-spacing:-.01em}
+.author{font-style:italic;font-size:1.25em;color:var(--accent);margin:0}
+.translator{font-size:.95em;color:var(--muted);margin:0}
+nav.toc{margin:0 0 3em}
+nav.toc h2{font-size:.85em;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:left;margin:0 0 .8em}
+nav.toc ol{list-style:none;padding:0;margin:0;columns:1}
+nav.toc li{margin:.25em 0}
+nav.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent}
+nav.toc a:hover{border-color:var(--accent)}
+h2.chapter{font-size:1.45em;font-weight:600;text-align:center;margin:3.5em 0 1.6em;line-height:1.3}
+h2.chapter::before{content:"";display:block;width:3em;height:2px;background:var(--accent);margin:0 auto 1.1em}
+p{margin:0;text-indent:1.5em;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+h2.chapter + p, .titlepage + p{text-indent:0}
+h2.chapter + p::first-letter{font-size:3.1em;float:left;line-height:.85;padding:.08em .08em 0 0;color:var(--accent);font-weight:600}
+.colophon{margin-top:5em;padding-top:1.5em;border-top:1px solid var(--rule);text-align:center;color:var(--muted);font-size:.85em;text-indent:0}
+h3.sub{font-size:1em;font-weight:600;font-variant:small-caps;letter-spacing:.04em;text-align:center;margin:2.2em 0 1em}
+h3.sub + p{text-indent:0}
+@media print{h2.chapter{break-before:page}}
 </style></head><body>
+<header class="titlepage">
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjI0MDAiIHZpZXdCb3g9IjAgMCAxNjAwIDI0MDAiPgo8cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSIyNDAwIiBmaWxsPSIjMTYzMDJiIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjMwMCIgZmlsbD0iI2U5YzQ2YSIgb3BhY2l0eT0iLjkyIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTYzMDJiIiBzdHJva2Utd2lkdGg9IjEyIiBvcGFjaXR5PSIuNSIvPgo8Y2lyY2xlIGN4PSIxMTIwIiBjeT0iNTYwIiByPSIxMjAiIGZpbGw9IiMxNjMwMmIiIG9wYWNpdHk9Ii4xOCIvPgo8cmVjdCB4PSIxNjAiIHk9IjkzMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIxMCIgZmlsbD0iI2U5YzQ2YSIvPgo8dGV4dCB4PSIxNjAiIHk9IjEwOTgiIGZvbnQtc2l6ZT0iMTUwIiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmNGVjZDgiPlRoZSBEaXZpbmU8L3RleHQ+PHRleHQgeD0iMTYwIiB5PSIxMjYyIiBmb250LXNpemU9IjE1MCIgZm9udC13ZWlnaHQ9IjYwMCIgZm9udC1mYW1pbHk9IkxpYmVydGludXMgU2VyaWYsIEdlb3JnaWEsIHNlcmlmIiBmaWxsPSIjZjRlY2Q4Ij5Db21lZHk8L3RleHQ+Cjx0ZXh0IHg9IjE2MCIgeT0iMTQ5OCIgZm9udC1zaXplPSI2OCIgZm9udC1zdHlsZT0iaXRhbGljIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNlOWM0NmEiPkRhbnRlIEFsaWdoaWVyaTwvdGV4dD4KPHRleHQgeD0iMTYwIiB5PSIyMjMwIiBmb250LXNpemU9IjQ0IiBsZXR0ZXItc3BhY2luZz0iMTQiIGZvbnQtZmFtaWx5PSJMaWJlcnRpbnVzIFNlcmlmLCBHZW9yZ2lhLCBzZXJpZiIgZmlsbD0iI2Y0ZWNkOCIgb3BhY2l0eT0iLjc1Ij5FQk9PS0NMQVNTSUNTPC90ZXh0Pgo8L3N2Zz4=" alt="">
 <h1>The Divine Comedy</h1>
 <p class="author">Dante Alighieri</p>
+</header>
+<nav class="toc"><h2>Indice</h2><ol>
+<li><a href="#c1">Inferno</a></li>
+<li><a href="#c2">Ciascuna parte, fuor che l’oro, è rotta d’una fessura che lagrime goccia, le quali, accolte, fóran quella grotta.</a></li>
+<li><a href="#c3">Parte sen giva, e io retro li andava, lo duca, già faccendo la risposta, e soggiugnendo: «Dentro a quella cava</a></li>
+<li><a href="#c4">Purgatorio</a></li>
+<li><a href="#c5">Paradiso</a></li>
+<li><a href="#c6">in parte fia la tua voglia contenta, perché vedrai la pianta onde si scheggia, e vedra’ il corrègger che argomenta</a></li>
+<li><a href="#c7">canto che tanto vince nostre muse, nostre serene in quelle dolci tube, quanto primo splendor quel ch’e’ refuse.</a></li>
+</ol></nav>
 <p>LA DIVINA COMMEDIA di Dante Alighieri</p>
-<h2>INFERNO</h2>
+<h2 class="chapter" id="c1">Inferno</h2>
 <p>Inferno • Canto I</p>
 <p>Nel mezzo del cammin di nostra vita mi ritrovai per una selva oscura, ché la diritta via era smarrita.</p>
 <p>Ahi quanto a dir qual era è cosa dura esta selva selvaggia e aspra e forte che nel pensier rinova la paura!</p>
@@ -661,7 +690,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Dentro dal monte sta dritto un gran veglio, che tien volte le spalle inver’ Dammiata e Roma guarda come süo speglio.</p>
 <p>La sua testa è di fin oro formata, e puro argento son le braccia e ’l petto, poi è di rame infino a la forcata;</p>
 <p>da indi in giuso è tutto ferro eletto, salvo che ’l destro piede è terra cotta; e sta ’n su quel, più che ’n su l’altro, eretto.</p>
-<p>Ciascuna parte, fuor che l’oro, è rotta d’una fessura che lagrime goccia, le quali, accolte, fóran quella grotta.</p>
+<h2 class="chapter" id="c2">Ciascuna parte, fuor che l’oro, è rotta d’una fessura che lagrime goccia, le quali, accolte, fóran quella grotta.</h2>
 <p>Lor corso in questa valle si diroccia; fanno Acheronte, Stige e Flegetonta; poi sen van giù per questa stretta doccia,</p>
 <p>infin, là ove più non si dismonta, fanno Cocito; e qual sia quello stagno tu lo vedrai, però qui non si conta».</p>
 <p>E io a lui: «Se ’l presente rigagno si diriva così dal nostro mondo, perché ci appar pur a questo vivagno?».</p>
@@ -1353,7 +1382,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Tu non hai fatto sì a l’altre bolge; pensa, se tu annoverar le credi, che miglia ventidue la valle volge.</p>
 <p>E già la luna è sotto i nostri piedi; lo tempo è poco omai che n’è concesso, e altro è da veder che tu non vedi».</p>
 <p>«Se tu avessi», rispuos’ io appresso, «atteso a la cagion per ch’io guardava, forse m’avresti ancor lo star dimesso».</p>
-<p>Parte sen giva, e io retro li andava, lo duca, già faccendo la risposta, e soggiugnendo: «Dentro a quella cava</p>
+<h2 class="chapter" id="c3">Parte sen giva, e io retro li andava, lo duca, già faccendo la risposta, e soggiugnendo: «Dentro a quella cava</h2>
 <p>dov’ io tenea or li occhi sì a posta, credo ch’un spirto del mio sangue pianga la colpa che là giù cotanto costa».</p>
 <p>Allor disse ’l maestro: «Non si franga lo tuo pensier da qui innanzi sovr’ ello. Attendi ad altro, ed ei là si rimanga;</p>
 <p>ch’io vidi lui a piè del ponticello mostrarti e minacciar forte col dito, e udi’ ’l nominar Geri del Bello.</p>
@@ -1646,7 +1675,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Lo duca e io per quel cammino ascoso intrammo a ritornar nel chiaro mondo; e sanza cura aver d’alcun riposo,</p>
 <p>salimmo sù, el primo e io secondo, tanto ch’i’ vidi de le cose belle che porta ’l ciel, per un pertugio tondo.</p>
 <p>E quindi uscimmo a riveder le stelle.</p>
-<h2>PURGATORIO</h2>
+<h2 class="chapter" id="c4">Purgatorio</h2>
 <p>Purgatorio • Canto I</p>
 <p>Per correr miglior acque alza le vele omai la navicella del mio ingegno, che lascia dietro a sé mar sì crudele;</p>
 <p>e canterò di quel secondo regno dove l’umano spirito si purga e di salire al ciel diventa degno.</p>
@@ -3287,7 +3316,7 @@ h2 + p, .first { text-indent: 0; }
 <p>ma perché piene son tutte le carte ordite a questa cantica seconda, non mi lascia più ir lo fren de l’arte.</p>
 <p>Io ritornai da la santissima onda rifatto sì come piante novelle rinovellate di novella fronda,</p>
 <p>puro e disposto a salire a le stelle.</p>
-<h2>PARADISO</h2>
+<h2 class="chapter" id="c5">Paradiso</h2>
 <p>Paradiso • Canto I</p>
 <p>La gloria di colui che tutto move per l’universo penetra, e risplende in una parte più e meno altrove.</p>
 <p>Nel ciel che più de la sua luce prende fu’ io, e vidi cose che ridire né sa né può chi di là sù discende;</p>
@@ -3827,12 +3856,12 @@ h2 + p, .first { text-indent: 0; }
 <p>e quanto le sue pecore remote e vagabunde più da esso vanno, più tornano a l’ovil di latte vòte.</p>
 <p>Ben son di quelle che temono ’l danno e stringonsi al pastor; ma son sì poche, che le cappe fornisce poco panno.</p>
 <p>Or, se le mie parole non son fioche, se la tua audïenza è stata attenta, se ciò ch’è detto a la mente revoche,</p>
-<p>in parte fia la tua voglia contenta, perché vedrai la pianta onde si scheggia, e vedra’ il corrègger che argomenta</p>
+<h2 class="chapter" id="c6">in parte fia la tua voglia contenta, perché vedrai la pianta onde si scheggia, e vedra’ il corrègger che argomenta</h2>
 <p>“U’ ben s’impingua, se non si vaneggia”».</p>
 <p>Paradiso • Canto XII</p>
 <p>Sì tosto come l’ultima parola la benedetta fiamma per dir tolse, a rotar cominciò la santa mola;</p>
 <p>e nel suo giro tutta non si volse prima ch’un’altra di cerchio la chiuse, e moto a moto e canto a canto colse;</p>
-<p>canto che tanto vince nostre muse, nostre serene in quelle dolci tube, quanto primo splendor quel ch’e’ refuse.</p>
+<h2 class="chapter" id="c7">canto che tanto vince nostre muse, nostre serene in quelle dolci tube, quanto primo splendor quel ch’e’ refuse.</h2>
 <p>Come si volgon per tenera nube due archi paralelli e concolori, quando Iunone a sua ancella iube,</p>
 <p>nascendo di quel d’entro quel di fori, a guisa del parlar di quella vaga ch’amor consunse come sol vapori,</p>
 <p>e fanno qui la gente esser presaga, per lo patto che Dio con Noè puose, del mondo che già mai più non s’allaga:</p>
@@ -4942,5 +4971,5 @@ h2 + p, .first { text-indent: 0; }
 <p>• = middot</p>
 <p>. . . = ellipsis</p>
 <p>End of Project Gutenberg&#x27;s La Divina Commedia di Dante, by Dante Alighieri</p>
-<p class="colophon">Texte du domaine public, source : Project Gutenberg (#1012). Édition numérique EbookClassics.</p>
+<p class="colophon">Testo di pubblico dominio. Edizione digitale EbookClassics.</p>
 </body></html>

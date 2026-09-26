@@ -1,32 +1,74 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
-<title>Candide</title><style>
-@page { margin: 22mm 20mm; }
-body { font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', serif; line-height: 1.6;
-       color: #1f1a14; max-width: 38em; margin: 0 auto; padding: 1.5em 1.2em; }
-h1 { font-size: 2.1em; text-align: center; margin: 1.5em 0 .2em; letter-spacing: .01em; }
-.author { text-align: center; font-size: 1.15em; font-style: italic; margin-bottom: 3em; color: #5a4a36; }
-h2 { font-size: 1.25em; text-align: center; margin: 2.6em 0 1.2em; letter-spacing: .06em;
-     text-transform: uppercase; font-weight: normal; page-break-before: always; break-before: page; }
-p { margin: 0; text-indent: 1.4em; text-align: justify; hyphens: auto; }
-h2 + p, .first { text-indent: 0; }
-.colophon { font-size: .85em; color: #6b5d45; text-align: center; margin-top: 4em; text-indent: 0; }
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Candide — Voltaire</title><style>
+:root{--paper:#fbf8f1;--ink:#1f1b16;--muted:#6f6352;--accent:#9a6b2f;--rule:#e4dccb}
+@media (prefers-color-scheme:dark){:root{--paper:#16140f;--ink:#ece6d8;--muted:#a79c88;--accent:#d8a95e;--rule:#2e2a22}}
+html{background:var(--paper)}
+body{font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Libertinus Serif",Georgia,serif;color:var(--ink);
+     background:var(--paper);line-height:1.65;font-size:1.12rem;max-width:36em;margin:0 auto;padding:2.5em 1.25em 5em}
+.titlepage{text-align:center;min-height:70vh;display:flex;flex-direction:column;justify-content:center;gap:.6em;
+           border-bottom:1px solid var(--rule);margin-bottom:2.5em;padding-bottom:2.5em}
+.titlepage img{max-width:260px;width:60%;margin:0 auto 1.5em;border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+h1{font-size:2.4em;line-height:1.15;font-weight:600;margin:0;letter-spacing:-.01em}
+.author{font-style:italic;font-size:1.25em;color:var(--accent);margin:0}
+.translator{font-size:.95em;color:var(--muted);margin:0}
+nav.toc{margin:0 0 3em}
+nav.toc h2{font-size:.85em;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:left;margin:0 0 .8em}
+nav.toc ol{list-style:none;padding:0;margin:0;columns:1}
+nav.toc li{margin:.25em 0}
+nav.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent}
+nav.toc a:hover{border-color:var(--accent)}
+h2.chapter{font-size:1.45em;font-weight:600;text-align:center;margin:3.5em 0 1.6em;line-height:1.3}
+h2.chapter::before{content:"";display:block;width:3em;height:2px;background:var(--accent);margin:0 auto 1.1em}
+p{margin:0;text-indent:1.5em;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+h2.chapter + p, .titlepage + p{text-indent:0}
+h2.chapter + p::first-letter{font-size:3.1em;float:left;line-height:.85;padding:.08em .08em 0 0;color:var(--accent);font-weight:600}
+.colophon{margin-top:5em;padding-top:1.5em;border-top:1px solid var(--rule);text-align:center;color:var(--muted);font-size:.85em;text-indent:0}
+h3.sub{font-size:1em;font-weight:600;font-variant:small-caps;letter-spacing:.04em;text-align:center;margin:2.2em 0 1em}
+h3.sub + p{text-indent:0}
+@media print{h2.chapter{break-before:page}}
 </style></head><body>
+<header class="titlepage">
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjI0MDAiIHZpZXdCb3g9IjAgMCAxNjAwIDI0MDAiPgo8cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSIyNDAwIiBmaWxsPSIjMGYyYTQ0Ii8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjMwMCIgZmlsbD0iIzhlY2FlNiIgb3BhY2l0eT0iLjkyIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMGYyYTQ0IiBzdHJva2Utd2lkdGg9IjEyIiBvcGFjaXR5PSIuNSIvPgo8Y2lyY2xlIGN4PSIxMTIwIiBjeT0iNTYwIiByPSIxMjAiIGZpbGw9IiMwZjJhNDQiIG9wYWNpdHk9Ii4xOCIvPgo8cmVjdCB4PSIxNjAiIHk9IjkzMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIxMCIgZmlsbD0iIzhlY2FlNiIvPgo8dGV4dCB4PSIxNjAiIHk9IjExODAiIGZvbnQtc2l6ZT0iMTUwIiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNlZWY2ZmIiPkNhbmRpZGU8L3RleHQ+Cjx0ZXh0IHg9IjE2MCIgeT0iMTQxNSIgZm9udC1zaXplPSI2OCIgZm9udC1zdHlsZT0iaXRhbGljIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiM4ZWNhZTYiPlZvbHRhaXJlPC90ZXh0Pgo8dGV4dCB4PSIxNjAiIHk9IjIyMzAiIGZvbnQtc2l6ZT0iNDQiIGxldHRlci1zcGFjaW5nPSIxNCIgZm9udC1mYW1pbHk9IkxpYmVydGludXMgU2VyaWYsIEdlb3JnaWEsIHNlcmlmIiBmaWxsPSIjZWVmNmZiIiBvcGFjaXR5PSIuNzUiPkVCT09LQ0xBU1NJQ1M8L3RleHQ+Cjwvc3ZnPg==" alt="">
 <h1>Candide</h1>
 <p class="author">Voltaire</p>
-<p>*       *       *       *       *</p>
-<h2>THE MODERN LIBRARY</h2>
-<h2>OF THE WORLD&#x27;S BEST BOOKS</h2>
-<h2>CANDIDE BY VOLTAIRE</h2>
+</header>
+<nav class="toc"><h2>Contents</h2><ol>
+<li><a href="#c1">I. How Candide was brought up in a Magnificent Castle, and how he was expelled thence                                          1</a></li>
+<li><a href="#c2">II. What became of Candide among the Bulgarians                                               5</a></li>
+<li><a href="#c3">III. How Candide made his escape from the Bulgarians, and what afterwards became of him                                                   9</a></li>
+<li><a href="#c4">IV. How Candide found his old Master Pangloss, and what happened to them                     13</a></li>
+<li><a href="#c5">V. Tempest, Shipwreck, Earthquake, and what became of Doctor Pangloss, Candide, and James the Anabaptist                       18</a></li>
+<li><a href="#c6">VII. How the Old Woman took care of Candide, and how he found the Object he loved                                                26</a></li>
+<li><a href="#c7">VIII. The History of Cunegonde                                30</a></li>
+<li><a href="#c8">IX. What became of Cunegonde, Candide, the Grand Inquisitor, and the Jew                       35</a></li>
+<li><a href="#c9">X. In what distress Candide, Cunegonde, and the Old Woman arrived at Cadiz; and of their Embarkation                         38</a></li>
+<li><a href="#c10">XVI. Adventures of the Two Travellers, with Two Girls, Two Monkeys, and the Savages called Oreillons                            68</a></li>
+<li><a href="#c11">XVII. Arrival of Candide and his Valet at El Dorado, and what they saw there                         74</a></li>
+<li><a href="#c12">XXIII. Candide and Martin touched upon the Coast of England, and what they saw there                                                  122</a></li>
+<li><a href="#c13">XXIV. Of Paquette and Friar Giroflee                         125</a></li>
+<li><a href="#c14">XXV. The Visit to Lord Pococurante, a Noble Venetian                                         133</a></li>
+<li><a href="#c15">XXVI. Of a Supper which Candide and Martin took with Six Strangers, and who they were                                              142</a></li>
+<li><a href="#c16">III</a></li>
+<li><a href="#c17">IV</a></li>
+<li><a href="#c18">V</a></li>
+<li><a href="#c19">VI</a></li>
+<li><a href="#c20">VII</a></li>
+<li><a href="#c21">IX</a></li>
+<li><a href="#c22">X</a></li>
+<li><a href="#c23">XIII</a></li>
+<li><a href="#c24">XIV</a></li>
+<li><a href="#c25">XVI</a></li>
+<li><a href="#c26">XVII</a></li>
+<li><a href="#c27">XIX</a></li>
+<li><a href="#c28">XXI</a></li>
+<li><a href="#c29">XXIII</a></li>
+<li><a href="#c30">XXVI</a></li>
+</ol></nav>
+<h3 class="sub">Candide By Voltaire</h3>
 <p>The Publishers will be glad to mail complete list of titles in the Modern Library. The list is representative of the Great Moderns and is one of the most important contributions to publishing that has been made for many years. Every reader of books will find titles he needs at a low price in an attractive form.</p>
-<h2>CANDIDE</h2>
-<h2>BY VOLTAIRE</h2>
-<h2>INTRODUCTION BY PHILIP LITTELL</h2>
-<h2>BONI AND LIVERIGHT, INC.</h2>
-<h2>PUBLISHERS NEW YORK</h2>
-<p>Copyright, 1918, by BONI &amp; LIVERIGHT, INC.</p>
-<p>Printed in the United States of America</p>
-<h2>INTRODUCTION</h2>
+<h3 class="sub">Introduction</h3>
 <p>Ever since 1759, when Voltaire wrote &quot;Candide&quot; in ridicule of the notion that this is the best of all possible worlds, this world has been a gayer place for readers. Voltaire wrote it in three days, and five or six generations have found that its laughter does not grow old.</p>
 <p>&quot;Candide&quot; has not aged. Yet how different the book would have looked if Voltaire had written it a hundred and fifty years later than 1759. It would have been, among other things, a book of sights and sounds. A modern writer would have tried to catch and fix in words some of those Atlantic changes which broke the Atlantic monotony of that voyage from Cadiz to Buenos Ayres. When Martin and Candide were sailing the length of the Mediterranean we should have had a contrast between naked scarped Balearic cliffs and headlands of Calabria in their mists. We should have had quarter distances, far horizons, the altering silhouettes of an Ionian island. Colored birds would have filled Paraguay with their silver or acid cries.</p>
 <p>Dr. Pangloss, to prove the existence of design in the universe, says that noses were made to carry spectacles, and so we have spectacles. A modern satirist would not try to paint with Voltaire&#x27;s quick brush the doctrine that he wanted to expose. And he would choose a more complicated doctrine than Dr. Pangloss&#x27;s optimism, would study it more closely, feel his destructive way about it with a more learned and caressing malice. His attack, stealthier, more flexible and more patient than Voltaire&#x27;s, would call upon us, especially when his learning got a little out of control, to be more than patient. Now and then he would bore us. &quot;Candide&quot; never bored anybody except William Wordsworth.</p>
@@ -37,40 +79,23 @@ h2 + p, .first { text-indent: 0; }
 <p>One of Max Beerbohm&#x27;s cartoons shows us the young Twentieth Century going at top speed, and watched by two of his predecessors. Underneath is this legend: &quot;The Grave Misgivings of the Nineteenth Century, and the Wicked Amusement of the Eighteenth, in Watching the Progress (or whatever it is) of the Twentieth.&quot; This Eighteenth Century snuff-taking and malicious, is like Voltaire, who nevertheless must know, if he happens to think of it, that not yet in the Twentieth Century, not for all its speed mania, has any one come near to equalling the speed of a prose tale by Voltaire. &quot;Candide&quot; is a full book. It is filled with mockery, with inventiveness, with things as concrete as things to eat and coins, it has time for the neatest intellectual clickings, it is never hurried, and it moves with the most amazing rapidity. It has the rapidity of high spirits playing a game. The dry high spirits of this destroyer of optimism make most optimists look damp and depressed. Contemplation of the stupidity which deems happiness possible almost made Voltaire happy. His attack on optimism is one of the gayest books in the world. Gaiety has been scattered everywhere up and down its pages by Voltaire&#x27;s lavish hand, by his thin fingers.</p>
 <p>Many propagandist satirical books have been written with &quot;Candide&quot; in mind, but not too many. To-day, especially, when new faiths are changing the structure of the world, faiths which are still plastic enough to be deformed by every disciple, each disciple for himself, and which have not yet received the final deformation known as universal acceptance, to-day &quot;Candide&quot; is an inspiration to every narrative satirist who hates one of these new faiths, or hates every interpretation of it but his own. Either hatred will serve as a motive to satire.</p>
 <p>That is why the present is one of the right moments to republish &quot;Candide.&quot; I hope it will inspire younger men and women, the only ones who can be inspired, to have a try at Theodore, or Militarism; Jane, or Pacifism; at So-and-So, the Pragmatist or the Freudian. And I hope, too, that they will without trying hold their pens with an eighteenth century lightness, not inappropriate to a philosophic tale. In Voltaire&#x27;s fingers, as Anatole France has said, the pen runs and laughs. PHILIP LITTELL.</p>
-<h2>CONTENTS</h2>
-<h2>CHAPTER                                                       PAGE</h2>
-<p>I. How Candide was brought up in a Magnificent Castle, and how he was expelled thence                                          1</p>
-<p>II. What became of Candide among the Bulgarians                                               5</p>
-<p>III. How Candide made his escape from the Bulgarians, and what afterwards became of him                                                   9</p>
-<p>IV. How Candide found his old Master Pangloss, and what happened to them                     13</p>
-<p>V. Tempest, Shipwreck, Earthquake, and what became of Doctor Pangloss, Candide, and James the Anabaptist                       18</p>
+<h3 class="sub">Contents — Chapter Page</h3>
+<h2 class="chapter" id="c1">I. How Candide was brought up in a Magnificent Castle, and how he was expelled thence                                          1</h2>
+<h2 class="chapter" id="c2">II. What became of Candide among the Bulgarians                                               5</h2>
+<h2 class="chapter" id="c3">III. How Candide made his escape from the Bulgarians, and what afterwards became of him                                                   9</h2>
+<h2 class="chapter" id="c4">IV. How Candide found his old Master Pangloss, and what happened to them                     13</h2>
+<h2 class="chapter" id="c5">V. Tempest, Shipwreck, Earthquake, and what became of Doctor Pangloss, Candide, and James the Anabaptist                       18</h2>
 <p>VI. How the Portuguese made a Beautiful Auto-da-fe, to prevent any further Earthquakes: and how Candide was publicly whipped                                        23</p>
-<p>VII. How the Old Woman took care of Candide, and how he found the Object he loved                                                26</p>
-<h2>VIII. The History of Cunegonde                                30</h2>
-<p>IX. What became of Cunegonde, Candide, the Grand Inquisitor, and the Jew                       35</p>
-<p>X. In what distress Candide, Cunegonde, and the Old Woman arrived at Cadiz; and of their Embarkation                         38</p>
-<h2>XI. History of the Old Woman                                42</h2>
-<p>XII. The Adventures of the Old Woman continued                                               48</p>
-<p>XIII. How Candide was forced away from his fair Cunegonde and the Old Woman                        54</p>
-<p>XIV. How Candide and Cacambo were received by the Jesuits of Paraguay                              58</p>
-<p>XV. How Candide killed the brother of his dear Cunegonde                                          64</p>
-<p>XVI. Adventures of the Two Travellers, with Two Girls, Two Monkeys, and the Savages called Oreillons                            68</p>
-<p>XVII. Arrival of Candide and his Valet at El Dorado, and what they saw there                         74</p>
-<p>XVIII. What they saw in the Country of El Dorado                                                  80</p>
-<p>XIX. What happened to them at Surinam and how Candide got acquainted with Martin                                                  89</p>
-<p>XX. What happened at Sea to Candide and Martin                                                  98</p>
-<p>XXI. Candide and Martin, reasoning, draw near the Coast of France                               102</p>
-<p>XXII. What happened in France to Candide and Martin                                             105</p>
-<p>XXIII. Candide and Martin touched upon the Coast of England, and what they saw there                                                  122</p>
-<h2>XXIV. Of Paquette and Friar Giroflee                         125</h2>
-<p>XXV. The Visit to Lord Pococurante, a Noble Venetian                                         133</p>
-<p>XXVI. Of a Supper which Candide and Martin took with Six Strangers, and who they were                                              142</p>
-<h2>XXVII. Candide&#x27;s Voyage to Constantinople                     148</h2>
-<p>XXVIII. What happened to Candide, Cunegonde, Pangloss, Martin, etc.                                 154</p>
-<p>XXIX. How Candide found Cunegonde and the Old Woman again                                    159</p>
-<h2>XXX. The Conclusion                                         161</h2>
-<h2>CANDIDE</h2>
-<h2>I</h2>
+<h2 class="chapter" id="c6">VII. How the Old Woman took care of Candide, and how he found the Object he loved                                                26</h2>
+<h2 class="chapter" id="c7">VIII. The History of Cunegonde                                30</h2>
+<h2 class="chapter" id="c8">IX. What became of Cunegonde, Candide, the Grand Inquisitor, and the Jew                       35</h2>
+<h2 class="chapter" id="c9">X. In what distress Candide, Cunegonde, and the Old Woman arrived at Cadiz; and of their Embarkation                         38</h2>
+<h2 class="chapter" id="c10">XVI. Adventures of the Two Travellers, with Two Girls, Two Monkeys, and the Savages called Oreillons                            68</h2>
+<h2 class="chapter" id="c11">XVII. Arrival of Candide and his Valet at El Dorado, and what they saw there                         74</h2>
+<h2 class="chapter" id="c12">XXIII. Candide and Martin touched upon the Coast of England, and what they saw there                                                  122</h2>
+<h2 class="chapter" id="c13">XXIV. Of Paquette and Friar Giroflee                         125</h2>
+<h2 class="chapter" id="c14">XXV. The Visit to Lord Pococurante, a Noble Venetian                                         133</h2>
+<h2 class="chapter" id="c15">XXVI. Of a Supper which Candide and Martin took with Six Strangers, and who they were                                              142</h2>
 <p>HOW CANDIDE WAS BROUGHT UP IN A MAGNIFICENT CASTLE, AND HOW HE WAS EXPELLED THENCE.</p>
 <p>In a castle of Westphalia, belonging to the Baron of Thunder-ten-Tronckh, lived a youth, whom nature had endowed with the most gentle manners. His countenance was a true picture of his soul. He combined a true judgment with simplicity of spirit, which was the reason, I apprehend, of his being called Candide. The old servants of the family suspected him to have been the son of the Baron&#x27;s sister, by a good, honest gentleman of the neighborhood, whom that young lady would never marry because he had been able to prove only seventy-one quarterings, the rest of his genealogical tree having been lost through the injuries of time.</p>
 <p>The Baron was one of the most powerful lords in Westphalia, for his castle had not only a gate, but windows. His great hall, even, was hung with tapestry. All the dogs of his farm-yards formed a pack of hounds at need; his grooms were his huntsmen; and the curate of the village was his grand almoner. They called him &quot;My Lord,&quot; and laughed at all his stories.</p>
@@ -80,8 +105,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Candide listened attentively and believed innocently; for he thought Miss Cunegonde extremely beautiful, though he never had the courage to tell her so. He concluded that after the happiness of being born of Baron of Thunder-ten-Tronckh, the second degree of happiness was to be Miss Cunegonde, the third that of seeing her every day, and the fourth that of hearing Master Pangloss, the greatest philosopher of the whole province, and consequently of the whole world.</p>
 <p>One day Cunegonde, while walking near the castle, in a little wood which they called a park, saw between the bushes, Dr. Pangloss giving a lesson in experimental natural philosophy to her mother&#x27;s chamber-maid, a little brown wench, very pretty and very docile. As Miss Cunegonde had a great disposition for the sciences, she breathlessly observed the repeated experiments of which she was a witness; she clearly perceived the force of the Doctor&#x27;s reasons, the effects, and the causes; she turned back greatly flurried, quite pensive, and filled with the desire to be learned; dreaming that she might well be a sufficient reason for young Candide, and he for her.</p>
 <p>She met Candide on reaching the castle and blushed; Candide blushed also; she wished him good morrow in a faltering tone, and Candide spoke to her without knowing what he said. The next day after dinner, as they went from table, Cunegonde and Candide found themselves behind a screen; Cunegonde let fall her handkerchief, Candide picked it up, she took him innocently by the hand, the youth as innocently kissed the young lady&#x27;s hand with particular vivacity, sensibility, and grace; their lips met, their eyes sparkled, their knees trembled, their hands strayed. Baron Thunder-ten-Tronckh passed near the screen and beholding this cause and effect chased Candide from the castle with great kicks on the backside; Cunegonde fainted away; she was boxed on the ears by the Baroness, as soon as she came to herself; and all was consternation in this most magnificent and most agreeable of all possible castles.</p>
-<h2>II</h2>
-<h2>WHAT BECAME OF CANDIDE AMONG THE BULGARIANS.</h2>
+<h3 class="sub">II — What Became of Candide Among the Bulgarians.</h3>
 <p>Candide, driven from terrestrial paradise, walked a long while without knowing where, weeping, raising his eyes to heaven, turning them often towards the most magnificent of castles which imprisoned the purest of noble young ladies. He lay down to sleep without supper, in the middle of a field between two furrows. The snow fell in large flakes. Next day Candide, all benumbed, dragged himself towards the neighbouring town which was called Waldberghofftrarbk-dikdorff, having no money, dying of hunger and fatigue, he stopped sorrowfully at the door of an inn. Two men dressed in blue observed him.</p>
 <p>&quot;Comrade,&quot; said one, &quot;here is a well-built young fellow, and of proper height.&quot;</p>
 <p>They went up to Candide and very civilly invited him to dinner.</p>
@@ -101,7 +125,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Instantly they fettered him, and carried him away to the regiment. There he was made to wheel about to the right, and to the left, to draw his rammer, to return his rammer, to present, to fire, to march, and they gave him thirty blows with a cudgel. The next day he did his exercise a little less badly, and he received but twenty blows. The day following they gave him only ten, and he was regarded by his comrades as a prodigy.</p>
 <p>Candide, all stupefied, could not yet very well realise how he was a hero. He resolved one fine day in spring to go for a walk, marching straight before him, believing that it was a privilege of the human as well as of the animal species to make use of their legs as they pleased. He had advanced two leagues when he was overtaken by four others, heroes of six feet, who bound him and carried him to a dungeon. He was asked which he would like the best, to be whipped six-and-thirty times through all the regiment, or to receive at once twelve balls of lead in his brain. He vainly said that human will is free, and that he chose neither the one nor the other. He was forced to make a choice; he determined, in virtue of that gift of God called liberty, to run the gauntlet six-and-thirty times. He bore this twice. The regiment was composed of two thousand men; that composed for him four thousand strokes, which laid bare all his muscles and nerves, from the nape of his neck quite down to his rump. As they were going to proceed to a third whipping, Candide, able to bear no more, begged as a favour that they would be so good as to shoot him. He obtained this favour; they bandaged his eyes, and bade him kneel down. The King of the Bulgarians passed at this moment and ascertained the nature of the crime. As he had great talent, he understood from all that he learnt of Candide that he was a young metaphysician, extremely ignorant of the things of this world, and he accorded him his pardon with a clemency which will bring him praise in all the journals, and throughout all ages.</p>
 <p>An able surgeon cured Candide in three weeks by means of emollients taught by Dioscorides. He had already a little skin, and was able to march when the King of the Bulgarians gave battle to the King of the Abares.[2]</p>
-<h2>III</h2>
+<h2 class="chapter" id="c16">III</h2>
 <p>HOW CANDIDE MADE HIS ESCAPE FROM THE BULGARIANS, AND WHAT AFTERWARDS BECAME OF HIM.</p>
 <p>There was never anything so gallant, so spruce, so brilliant, and so well disposed as the two armies. Trumpets, fifes, hautboys, drums, and cannon made music such as Hell itself had never heard. The cannons first of all laid flat about six thousand men on each side; the muskets swept away from this best of worlds nine or ten thousand ruffians who infested its surface. The bayonet was also a sufficient reason for the death of several thousands. The whole might amount to thirty thousand souls. Candide, who trembled like a philosopher, hid himself as well as he could during this heroic butchery.</p>
 <p>At length, while the two kings were causing Te Deum to be sung each in his own camp, Candide resolved to go and reason elsewhere on effects and causes. He passed over heaps of dead and dying, and first reached a neighbouring village; it was in cinders, it was an Abare village which the Bulgarians had burnt according to the laws of war. Here, old men covered with wounds, beheld their wives, hugging their children to their bloody breasts, massacred before their faces; there, their daughters, disembowelled and breathing their last after having satisfied the natural wants of Bulgarian heroes; while others, half burnt in the flames, begged to be despatched. The earth was strewed with brains, arms, and legs.</p>
@@ -117,7 +141,7 @@ h2 + p, .first { text-indent: 0; }
 <p>A man who had never been christened, a good Anabaptist, named James, beheld the cruel and ignominious treatment shown to one of his brethren, an unfeathered biped with a rational soul, he took him home, cleaned him, gave him bread and beer, presented him with two florins, and even wished to teach him the manufacture of Persian stuffs which they make in Holland. Candide, almost prostrating himself before him, cried:</p>
 <p>&quot;Master Pangloss has well said that all is for the best in this world, for I am infinitely more touched by your extreme generosity than with the inhumanity of that gentleman in the black coat and his lady.&quot;</p>
 <p>The next day, as he took a walk, he met a beggar all covered with scabs, his eyes diseased, the end of his nose eaten away, his mouth distorted, his teeth black, choking in his throat, tormented with a violent cough, and spitting out a tooth at each effort.</p>
-<h2>IV</h2>
+<h2 class="chapter" id="c17">IV</h2>
 <p>HOW CANDIDE FOUND HIS OLD MASTER PANGLOSS, AND WHAT HAPPENED TO THEM.</p>
 <p>Candide, yet more moved with compassion than with horror, gave to this shocking beggar the two florins which he had received from the honest Anabaptist James. The spectre looked at him very earnestly, dropped a few tears, and fell upon his neck. Candide recoiled in disgust.</p>
 <p>&quot;Alas!&quot; said one wretch to the other, &quot;do you no longer know your dear Pangloss?&quot;</p>
@@ -141,7 +165,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;It is more likely,&quot; said he, &quot;mankind have a little corrupted nature, for they were not born wolves, and they have become wolves; God has given them neither cannon of four-and-twenty pounders, nor bayonets; and yet they have made cannon and bayonets to destroy one another. Into this account I might throw not only bankrupts, but Justice which seizes on the effects of bankrupts to cheat the creditors.&quot;</p>
 <p>&quot;All this was indispensable,&quot; replied the one-eyed doctor, &quot;for private misfortunes make the general good, so that the more private misfortunes there are the greater is the general good.&quot;</p>
 <p>While he reasoned, the sky darkened, the winds blew from the four quarters, and the ship was assailed by a most terrible tempest within sight of the port of Lisbon.</p>
-<h2>V</h2>
+<h2 class="chapter" id="c18">V</h2>
 <p>TEMPEST, SHIPWRECK, EARTHQUAKE, AND WHAT BECAME OF DOCTOR PANGLOSS, CANDIDE, AND JAMES THE ANABAPTIST.</p>
 <p>Half dead of that inconceivable anguish which the rolling of a ship produces, one-half of the passengers were not even sensible of the danger. The other half shrieked and prayed. The sheets were rent, the masts broken, the vessel gaped. Work who would, no one heard, no one commanded. The Anabaptist being upon deck bore a hand; when a brutish sailor struck him roughly and laid him sprawling; but with the violence of the blow he himself tumbled head foremost overboard, and stuck upon a piece of the broken mast. Honest James ran to his assistance, hauled him up, and from the effort he made was precipitated into the sea in sight of the sailor, who left him to perish, without deigning to look at him. Candide drew near and saw his benefactor, who rose above the water one moment and was then swallowed up for ever. He was just going to jump after him, but was prevented by the philosopher Pangloss, who demonstrated to him that the Bay of Lisbon had been made on purpose for the Anabaptist to be drowned. While he was proving this a priori, the ship foundered; all perished except Pangloss, Candide, and that brutal sailor who had drowned the good Anabaptist. The villain swam safely to the shore, while Pangloss and Candide were borne thither upon a plank.</p>
 <p>As soon as they recovered themselves a little they walked toward Lisbon. They had some money left, with which they hoped to save themselves from starving, after they had escaped drowning. Scarcely had they reached the city, lamenting the death of their benefactor, when they felt the earth tremble under their feet. The sea swelled and foamed in the harbour, and beat to pieces the vessels riding at anchor. Whirlwinds of fire and ashes covered the streets and public places; houses fell, roofs were flung upon the pavements, and the pavements were scattered. Thirty thousand inhabitants of all ages and sexes were crushed under the ruins.[4] The sailor, whistling and swearing, said there was booty to be gained here.</p>
@@ -163,7 +187,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;Sir,&quot; said the Familiar, &quot;you do not then believe in liberty?&quot;</p>
 <p>&quot;Your Excellency will excuse me,&quot; said Pangloss; &quot;liberty is consistent with absolute necessity, for it was necessary we should be free; for, in short, the determinate will----&quot;</p>
 <p>Pangloss was in the middle of his sentence, when the Familiar beckoned to his footman, who gave him a glass of wine from Porto or Opporto.</p>
-<h2>VI</h2>
+<h2 class="chapter" id="c19">VI</h2>
 <p>HOW THE PORTUGUESE MADE A BEAUTIFUL AUTO-DA-FE, TO PREVENT ANY FURTHER EARTHQUAKES; AND HOW CANDIDE WAS PUBLICLY WHIPPED.</p>
 <p>After the earthquake had destroyed three-fourths of Lisbon, the sages of that country could think of no means more effectual to prevent utter ruin than to give the people a beautiful auto-da-fe[6]; for it had been decided by the University of Coimbra, that the burning of a few people alive by a slow fire, and with great ceremony, is an infallible secret to hinder the earth from quaking.</p>
 <p>In consequence hereof, they had seized on a Biscayner, convicted of having married his godmother, and on two Portuguese, for rejecting the bacon which larded a chicken they were eating[7]; after dinner, they came and secured Dr. Pangloss, and his disciple Candide, the one for speaking his mind, the other for having listened with an air of approbation. They were conducted to separate apartments, extremely cold, as they were never incommoded by the sun. Eight days after they were dressed in san-benitos[8] and their heads ornamented with paper mitres. The mitre and san-benito belonging to Candide were painted with reversed flames and with devils that had neither tails nor claws; but Pangloss&#x27;s devils had claws and tails and the flames were upright. They marched in procession thus habited and heard a very pathetic sermon, followed by fine church music. Candide was whipped in cadence while they were singing; the Biscayner, and the two men who had refused to eat bacon, were burnt; and Pangloss was hanged, though that was not the custom. The same day the earth sustained a most violent concussion.</p>
@@ -171,7 +195,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;If this is the best of possible worlds, what then are the others? Well, if I had been only whipped I could put up with it, for I experienced that among the Bulgarians; but oh, my dear Pangloss! thou greatest of philosophers, that I should have seen you hanged, without knowing for what! Oh, my dear Anabaptist, thou best of men, that thou should&#x27;st have been drowned in the very harbour! Oh, Miss Cunegonde, thou pearl of girls! that thou should&#x27;st have had thy belly ripped open!&quot;</p>
 <p>Thus he was musing, scarce able to stand, preached at, whipped, absolved, and blessed, when an old woman accosted him saying:</p>
 <p>&quot;My son, take courage and follow me.&quot;</p>
-<h2>VII</h2>
+<h2 class="chapter" id="c20">VII</h2>
 <p>HOW THE OLD WOMAN TOOK CARE OF CANDIDE, AND HOW HE FOUND THE OBJECT HE LOVED.</p>
 <p>Candide did not take courage, but followed the old woman to a decayed house, where she gave him a pot of pomatum to anoint his sores, showed him a very neat little bed, with a suit of clothes hanging up, and left him something to eat and drink.</p>
 <p>&quot;Eat, drink, sleep,&quot; said she, &quot;and may our lady of Atocha,[9] the great St. Anthony of Padua, and the great St. James of Compostella, receive you under their protection. I shall be back to-morrow.&quot;</p>
@@ -194,8 +218,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;And why are you in Portugal? and how did you know of my being here? and by what strange adventure did you contrive to bring me to this house?&quot;</p>
 <p>&quot;I will tell you all that,&quot; replied the lady, &quot;but first of all let me know your history, since the innocent kiss you gave me and the kicks which you received.&quot;</p>
 <p>Candide respectfully obeyed her, and though he was still in a surprise, though his voice was feeble and trembling, though his back still pained him, yet he gave her a most ingenuous account of everything that had befallen him since the moment of their separation. Cunegonde lifted up her eyes to heaven; shed tears upon hearing of the death of the good Anabaptist and of Pangloss; after which she spoke as follows to Candide, who did not lose a word and devoured her with his eyes.</p>
-<h2>VIII</h2>
-<h2>THE HISTORY OF CUNEGONDE.</h2>
+<h3 class="sub">VIII — The History of Cunegonde.</h3>
 <p>&quot;I was in bed and fast asleep when it pleased God to send the Bulgarians to our delightful castle of Thunder-ten-Tronckh; they slew my father and brother, and cut my mother in pieces. A tall Bulgarian, six feet high, perceiving that I had fainted away at this sight, began to ravish me; this made me recover; I regained my senses, I cried, I struggled, I bit, I scratched, I wanted to tear out the tall Bulgarian&#x27;s eyes--not knowing that what happened at my father&#x27;s house was the usual practice of war. The brute gave me a cut in the left side with his hanger, and the mark is still upon me.&quot;</p>
 <p>&quot;Ah! I hope I shall see it,&quot; said honest Candide.</p>
 <p>&quot;You shall,&quot; said Cunegonde, &quot;but let us continue.&quot;</p>
@@ -206,7 +229,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;At length, to avert the scourge of earthquakes, and to intimidate Don Issachar, my Lord Inquisitor was pleased to celebrate an auto-da-fe. He did me the honour to invite me to the ceremony. I had a very good seat, and the ladies were served with refreshments between Mass and the execution. I was in truth seized with horror at the burning of those two Jews, and of the honest Biscayner who had married his godmother; but what was my surprise, my fright, my trouble, when I saw in a san-benito and mitre a figure which resembled that of Pangloss! I rubbed my eyes, I looked at him attentively, I saw him hung; I fainted. Scarcely had I recovered my senses than I saw you stripped, stark naked, and this was the height of my horror, consternation, grief, and despair. I tell you, truthfully, that your skin is yet whiter and of a more perfect colour than that of my Bulgarian captain. This spectacle redoubled all the feelings which overwhelmed and devoured me. I screamed out, and would have said, &#x27;Stop, barbarians!&#x27; but my voice failed me, and my cries would have been useless after you had been severely whipped. How is it possible, said I, that the beloved Candide and the wise Pangloss should both be at Lisbon, the one to receive a hundred lashes, and the other to be hanged by the Grand Inquisitor, of whom I am the well-beloved? Pangloss most cruelly deceived me when he said that everything in the world is for the best.</p>
 <p>&quot;Agitated, lost, sometimes beside myself, and sometimes ready to die of weakness, my mind was filled with the massacre of my father, mother, and brother, with the insolence of the ugly Bulgarian soldier, with the stab that he gave me, with my servitude under the Bulgarian captain, with my hideous Don Issachar, with my abominable Inquisitor, with the execution of Doctor Pangloss, with the grand Miserere to which they whipped you, and especially with the kiss I gave you behind the screen the day that I had last seen you. I praised God for bringing you back to me after so many trials, and I charged my old woman to take care of you, and to conduct you hither as soon as possible. She has executed her commission perfectly well; I have tasted the inexpressible pleasure of seeing you again, of hearing you, of speaking with you. But you must be hungry, for myself, I am famished; let us have supper.&quot;</p>
 <p>They both sat down to table, and, when supper was over, they placed themselves once more on the sofa; where they were when Signor Don Issachar arrived. It was the Jewish Sabbath, and Issachar had come to enjoy his rights, and to explain his tender love.</p>
-<h2>IX</h2>
+<h2 class="chapter" id="c21">IX</h2>
 <p>WHAT BECAME OF CUNEGONDE, CANDIDE, THE GRAND INQUISITOR, AND THE JEW.</p>
 <p>This Issachar was the most choleric Hebrew that had ever been seen in Israel since the Captivity in Babylon.</p>
 <p>&quot;What!&quot; said he, &quot;thou bitch of a Galilean, was not the Inquisitor enough for thee? Must this rascal also share with me?&quot;</p>
@@ -222,7 +245,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;There are three Andalusian horses in the stable with bridles and saddles, let the brave Candide get them ready; madame has money, jewels; let us therefore mount quickly on horseback, though I can sit only on one buttock; let us set out for Cadiz, it is the finest weather in the world, and there is great pleasure in travelling in the cool of the night.&quot;</p>
 <p>Immediately Candide saddled the three horses, and Cunegonde, the old woman and he, travelled thirty miles at a stretch. While they were journeying, the Holy Brotherhood entered the house; my lord the Inquisitor was interred in a handsome church, and Issachar&#x27;s body was thrown upon a dunghill.</p>
 <p>Candide, Cunegonde, and the old woman, had now reached the little town of Avacena in the midst of the mountains of the Sierra Morena, and were speaking as follows in a public inn.</p>
-<h2>X</h2>
+<h2 class="chapter" id="c22">X</h2>
 <p>IN WHAT DISTRESS CANDIDE, CUNEGONDE, AND THE OLD WOMAN ARRIVED AT CADIZ; AND OF THEIR EMBARKATION.</p>
 <p>&quot;Who was it that robbed me of my money and jewels?&quot; said Cunegonde, all bathed in tears. &quot;How shall we live? What shall we do? Where find Inquisitors or Jews who will give me more?&quot;</p>
 <p>&quot;Alas!&quot; said the old woman, &quot;I have a shrewd suspicion of a reverend Grey Friar, who stayed last night in the same inn with us at Badajos. God preserve me from judging rashly, but he came into our room twice, and he set out upon his journey long before us.&quot;</p>
@@ -241,8 +264,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;Alas!&quot; said Cunegonde, &quot;my good mother, unless you have been ravished by two Bulgarians, have received two deep wounds in your belly, have had two castles demolished, have had two mothers cut to pieces before your eyes, and two of your lovers whipped at an auto-da-fe, I do not conceive how you could be more unfortunate than I. Add that I was born a baroness of seventy-two quarterings--and have been a cook!&quot;</p>
 <p>&quot;Miss,&quot; replied the old woman, &quot;you do not know my birth; and were I to show you my backside, you would not talk in that manner, but would suspend your judgment.&quot;</p>
 <p>This speech having raised extreme curiosity in the minds of Cunegonde and Candide, the old woman spoke to them as follows.</p>
-<h2>XI</h2>
-<h2>HISTORY OF THE OLD WOMAN.</h2>
+<h3 class="sub">XI — History of the Old Woman.</h3>
 <p>&quot;I had not always bleared eyes and red eyelids; neither did my nose always touch my chin; nor was I always a servant. I am the daughter of Pope Urban X,[10] and of the Princess of Palestrina. Until the age of fourteen I was brought up in a palace, to which all the castles of your German barons would scarcely have served for stables; and one of my robes was worth more than all the magnificence of Westphalia. As I grew up I improved in beauty, wit, and every graceful accomplishment, in the midst of pleasures, hopes, and respectful homage. Already I inspired love. My throat was formed, and such a throat! white, firm, and shaped like that of the Venus of Medici; and what eyes! what eyelids! what black eyebrows! such flames darted from my dark pupils that they eclipsed the scintillation of the stars--as I was told by the poets in our part of the world. My waiting women, when dressing and undressing me, used to fall into an ecstasy, whether they viewed me before or behind; how glad would the gentlemen have been to perform that office for them!</p>
 <p>&quot;I was affianced to the most excellent Prince of Massa Carara. Such a prince! as handsome as myself, sweet-tempered, agreeable, brilliantly witty, and sparkling with love. I loved him as one loves for the first time--with idolatry, with transport. The nuptials were prepared. There was surprising pomp and magnificence; there were fetes, carousals, continual opera bouffe; and all Italy composed sonnets in my praise, though not one of them was passable. I was just upon the point of reaching the summit of bliss, when an old marchioness who had been mistress to the Prince, my husband, invited him to drink chocolate with her. He died in less than two hours of most terrible convulsions. But this is only a bagatelle. My mother, in despair, and scarcely less afflicted than myself, determined to absent herself for some time from so fatal a place. She had a very fine estate in the neighbourhood of Gaeta. We embarked on board a galley of the country which was gilded like the great altar of St. Peter&#x27;s at Rome. A Sallee corsair swooped down and boarded us. Our men defended themselves like the Pope&#x27;s soldiers; they flung themselves upon their knees, and threw down their arms, begging of the corsair an absolution in articulo mortis.</p>
 <p>&quot;Instantly they were stripped as bare as monkeys; my mother, our maids of honour, and myself were all served in the same manner. It is amazing with what expedition those gentry undress people. But what surprised me most was, that they thrust their fingers into the part of our bodies which the generality of women suffer no other instrument but--pipes to enter. It appeared to me a very strange kind of ceremony; but thus one judges of things when one has not seen the world. I afterwards learnt that it was to try whether we had concealed any diamonds. This is the practice established from time immemorial, among civilised nations that scour the seas. I was informed that the very religious Knights of Malta never fail to make this search when they take any Turkish prisoners of either sex. It is a law of nations from which they never deviate.</p>
@@ -250,8 +272,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;Morocco swam in blood when we arrived. Fifty sons of the Emperor Muley-Ismael[11] had each their adherents; this produced fifty civil wars, of blacks against blacks, and blacks against tawnies, and tawnies against tawnies, and mulattoes against mulattoes. In short it was a continual carnage throughout the empire.</p>
 <p>&quot;No sooner were we landed, than the blacks of a contrary faction to that of my captain attempted to rob him of his booty. Next to jewels and gold we were the most valuable things he had. I was witness to such a battle as you have never seen in your European climates. The northern nations have not that heat in their blood, nor that raging lust for women, so common in Africa. It seems that you Europeans have only milk in your veins; but it is vitriol, it is fire which runs in those of the inhabitants of Mount Atlas and the neighbouring countries. They fought with the fury of the lions, tigers, and serpents of the country, to see who should have us. A Moor seized my mother by the right arm, while my captain&#x27;s lieutenant held her by the left; a Moorish soldier had hold of her by one leg, and one of our corsairs held her by the other. Thus almost all our women were drawn in quarters by four men. My captain concealed me behind him; and with his drawn scimitar cut and slashed every one that opposed his fury. At length I saw all our Italian women, and my mother herself, torn, mangled, massacred, by the monsters who disputed over them. The slaves, my companions, those who had taken them, soldiers, sailors, blacks, whites, mulattoes, and at last my captain, all were killed, and I remained dying on a heap of dead. Such scenes as this were transacted through an extent of three hundred leagues--and yet they never missed the five prayers a day ordained by Mahomet.</p>
 <p>&quot;With difficulty I disengaged myself from such a heap of slaughtered bodies, and crawled to a large orange tree on the bank of a neighbouring rivulet, where I fell, oppressed with fright, fatigue, horror, despair, and hunger. Immediately after, my senses, overpowered, gave themselves up to sleep, which was yet more swooning than repose. I was in this state of weakness and insensibility, between life and death, when I felt myself pressed by something that moved upon my body. I opened my eyes, and saw a white man, of good countenance, who sighed, and who said between his teeth: &#x27;O che sciagura d&#x27;essere senza coglioni!&#x27;&quot;[12]</p>
-<h2>XII</h2>
-<h2>THE ADVENTURES OF THE OLD WOMAN CONTINUED.</h2>
+<h3 class="sub">XII — The Adventures of the Old Woman Continued.</h3>
 <p>&quot;Astonished and delighted to hear my native language, and no less surprised at what this man said, I made answer that there were much greater misfortunes than that of which he complained. I told him in a few words of the horrors which I had endured, and fainted a second time. He carried me to a neighbouring house, put me to bed, gave me food, waited upon me, consoled me, flattered me; he told me that he had never seen any one so beautiful as I, and that he never so much regretted the loss of what it was impossible to recover.</p>
 <p>&quot;&#x27;I was born at Naples,&#x27; said he, &#x27;there they geld two or three thousand children every year; some die of the operation, others acquire a voice more beautiful than that of women, and others are raised to offices of state.[13] This operation was performed on me with great success and I was chapel musician to madam, the Princess of Palestrina.&#x27;</p>
 <p>&quot;&#x27;To my mother!&#x27; cried I.</p>
@@ -270,7 +291,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;Scarcely had the Janissaries finished the repast with which we had furnished them, than the Russians came in flat-bottomed boats; not a Janissary escaped. The Russians paid no attention to the condition we were in. There are French surgeons in all parts of the world; one of them who was very clever took us under his care--he cured us; and as long as I live I shall remember that as soon as my wounds were healed he made proposals to me. He bid us all be of good cheer, telling us that the like had happened in many sieges, and that it was according to the laws of war.</p>
 <p>&quot;As soon as my companions could walk, they were obliged to set out for Moscow. I fell to the share of a Boyard who made me his gardener, and gave me twenty lashes a day. But this nobleman having in two years&#x27; time been broke upon the wheel along with thirty more Boyards for some broils at court, I profited by that event; I fled. I traversed all Russia; I was a long time an inn-holder&#x27;s servant at Riga, the same at Rostock, at Vismar, at Leipzig, at Cassel, at Utrecht, at Leyden, at the Hague, at Rotterdam. I waxed old in misery and disgrace, having only one-half of my posteriors, and always remembering I was a Pope&#x27;s daughter. A hundred times I was upon the point of killing myself; but still I loved life. This ridiculous foible is perhaps one of our most fatal characteristics; for is there anything more absurd than to wish to carry continually a burden which one can always throw down? to detest existence and yet to cling to one&#x27;s existence? in brief, to caress the serpent which devours us, till he has eaten our very heart?</p>
 <p>&quot;In the different countries which it has been my lot to traverse, and the numerous inns where I have been servant, I have taken notice of a vast number of people who held their own existence in abhorrence, and yet I never knew of more than eight who voluntarily put an end to their misery; three negroes, four Englishmen, and a German professor named Robek.[14] I ended by being servant to the Jew, Don Issachar, who placed me near your presence, my fair lady. I am determined to share your fate, and have been much more affected with your misfortunes than with my own. I would never even have spoken to you of my misfortunes, had you not piqued me a little, and if it were not customary to tell stories on board a ship in order to pass away the time. In short, Miss Cunegonde, I have had experience, I know the world; therefore I advise you to divert yourself, and prevail upon each passenger to tell his story; and if there be one of them all, that has not cursed his life many a time, that has not frequently looked upon himself as the unhappiest of mortals, I give you leave to throw me headforemost into the sea.&quot;</p>
-<h2>XIII</h2>
+<h2 class="chapter" id="c23">XIII</h2>
 <p>HOW CANDIDE WAS FORCED AWAY FROM HIS FAIR CUNEGONDE AND THE OLD WOMAN.</p>
 <p>The beautiful Cunegonde having heard the old woman&#x27;s history, paid her all the civilities due to a person of her rank and merit. She likewise accepted her proposal, and engaged all the passengers, one after the other, to relate their adventures; and then both she and Candide allowed that the old woman was in the right.</p>
 <p>&quot;It is a great pity,&quot; said Candide, &quot;that the sage Pangloss was hanged contrary to custom at an auto-da-fe; he would tell us most amazing things in regard to the physical and moral evils that overspread earth and sea, and I should be able, with due respect, to make a few objections.&quot;</p>
@@ -285,7 +306,7 @@ h2 + p, .first { text-indent: 0; }
 <p>She then ran immediately to Candide.</p>
 <p>&quot;Fly,&quot; said she, &quot;or in an hour you will be burnt.&quot;</p>
 <p>There was not a moment to lose; but how could he part from Cunegonde, and where could he flee for shelter?</p>
-<h2>XIV</h2>
+<h2 class="chapter" id="c24">XIV</h2>
 <p>HOW CANDIDE AND CACAMBO WERE RECEIVED BY THE JESUITS OF PARAGUAY.</p>
 <p>Candide had brought such a valet with him from Cadiz, as one often meets with on the coasts of Spain and in the American colonies. He was a quarter Spaniard, born of a mongrel in Tucuman; he had been singing-boy, sacristan, sailor, monk, pedlar, soldier, and lackey. His name was Cacambo, and he loved his master, because his master was a very good man. He quickly saddled the two Andalusian horses.</p>
 <p>&quot;Come, master, let us follow the old woman&#x27;s advice; let us start, and run without looking behind us.&quot;</p>
@@ -321,8 +342,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;Where?&quot;</p>
 <p>&quot;In your neighbourhood, with the Governor of Buenos Ayres; and I was going to fight against you.&quot;</p>
 <p>Every word which they uttered in this long conversation but added wonder to wonder. Their souls fluttered on their tongues, listened in their ears, and sparkled in their eyes. As they were Germans, they sat a good while at table, waiting for the reverend Father Provincial, and the Commandant spoke to his dear Candide as follows.</p>
-<h2>XV</h2>
-<h2>HOW CANDIDE KILLED THE BROTHER OF HIS DEAR CUNEGONDE.</h2>
+<h3 class="sub">XV — How Candide Killed the Brother of His Dear Cunegonde.</h3>
 <p>&quot;I shall have ever present to my memory the dreadful day, on which I saw my father and mother killed, and my sister ravished. When the Bulgarians retired, my dear sister could not be found; but my mother, my father, and myself, with two maid-servants and three little boys all of whom had been slain, were put in a hearse, to be conveyed for interment to a chapel belonging to the Jesuits, within two leagues of our family seat. A Jesuit sprinkled us with some holy water; it was horribly salt; a few drops of it fell into my eyes; the father perceived that my eyelids stirred a little; he put his hand upon my heart and felt it beat. I received assistance, and at the end of three weeks I recovered. You know, my dear Candide, I was very pretty; but I grew much prettier, and the reverend Father Didrie,[16] Superior of that House, conceived the tenderest friendship for me; he gave me the habit of the order, some years after I was sent to Rome. The Father-General needed new levies of young German-Jesuits. The sovereigns of Paraguay admit as few Spanish Jesuits as possible; they prefer those of other nations as being more subordinate to their commands. I was judged fit by the reverend Father-General to go and work in this vineyard. We set out--a Pole, a Tyrolese, and myself. Upon my arrival I was honoured with a sub-deaconship and a lieutenancy. I am to-day colonel and priest. We shall give a warm reception to the King of Spain&#x27;s troops; I will answer for it that they shall be excommunicated and well beaten. Providence sends you here to assist us. But is it, indeed, true that my dear sister Cunegonde is in the neighbourhood, with the Governor of Buenos Ayres?&quot;</p>
 <p>Candide assured him on oath that nothing was more true, and their tears began afresh.</p>
 <p>The Baron could not refrain from embracing Candide; he called him his brother, his saviour.</p>
@@ -339,7 +359,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;Let us gallop fast, master, everybody will take you for a Jesuit, going to give directions to your men, and we shall have passed the frontiers before they will be able to overtake us.&quot;</p>
 <p>He flew as he spoke these words, crying out aloud in Spanish:</p>
 <p>&quot;Make way, make way, for the reverend Father Colonel.&quot;</p>
-<h2>XVI</h2>
+<h2 class="chapter" id="c25">XVI</h2>
 <p>ADVENTURES OF THE TWO TRAVELLERS, WITH TWO GIRLS, TWO MONKEYS, AND THE SAVAGES CALLED OREILLONS.</p>
 <p>Candide and his valet had got beyond the barrier, before it was known in the camp that the German Jesuit was dead. The wary Cacambo had taken care to fill his wallet with bread, chocolate, bacon, fruit, and a few bottles of wine. With their Andalusian horses they penetrated into an unknown country, where they perceived no beaten track. At length they came to a beautiful meadow intersected with purling rills. Here our two adventurers fed their horses. Cacambo proposed to his master to take some food, and he set him an example.</p>
 <p>&quot;How can you ask me to eat ham,&quot; said Candide, &quot;after killing the Baron&#x27;s son, and being doomed never more to see the beautiful Cunegonde? What will it avail me to spin out my wretched days and drag them far from her in remorse and despair? And what will the Journal of Trevoux[17] say?&quot;</p>
@@ -365,7 +385,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;He is no Jesuit! He is no Jesuit!&quot;</p>
 <p>Candide could not help being surprised at the cause of his deliverance.</p>
 <p>&quot;What people!&quot; said he; &quot;what men! what manners! If I had not been so lucky as to run Miss Cunegonde&#x27;s brother through the body, I should have been devoured without redemption. But, after all, pure nature is good, since these people, instead of feasting upon my flesh, have shown me a thousand civilities, when then I was not a Jesuit.&quot;</p>
-<h2>XVII</h2>
+<h2 class="chapter" id="c26">XVII</h2>
 <p>ARRIVAL OF CANDIDE AND HIS VALET AT EL DORADO, AND WHAT THEY SAW THERE.</p>
 <p>&quot;You see,&quot; said Cacambo to Candide, as soon as they had reached the frontiers of the Oreillons, &quot;that this hemisphere is not better than the others, take my word for it; let us go back to Europe by the shortest way.&quot;</p>
 <p>&quot;How go back?&quot; said Candide, &quot;and where shall we go? to my own country? The Bulgarians and the Abares are slaying all; to Portugal? there I shall be burnt; and if we abide here we are every moment in danger of being spitted. But how can I resolve to quit a part of the world where my dear Cunegonde resides?&quot;</p>
@@ -391,8 +411,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;Gentlemen,&quot; said the landlord, &quot;it is plain you are strangers, and such guests we are not accustomed to see; pardon us therefore for laughing when you offered us the pebbles from our highroads in payment of your reckoning. You doubtless have not the money of the country; but it is not necessary to have any money at all to dine in this house. All hostelries established for the convenience of commerce are paid by the government. You have fared but very indifferently because this is a poor village; but everywhere else, you will be received as you deserve.&quot;</p>
 <p>Cacambo explained this whole discourse with great astonishment to Candide, who was as greatly astonished to hear it.</p>
 <p>&quot;What sort of a country then is this,&quot; said they to one another; &quot;a country unknown to all the rest of the world, and where nature is of a kind so different from ours? It is probably the country where all is well; for there absolutely must be one such place. And, whatever Master Pangloss might say, I often found that things went very ill in Westphalia.&quot;</p>
-<h2>XVIII</h2>
-<h2>WHAT THEY SAW IN THE COUNTRY OF EL DORADO.</h2>
+<h3 class="sub">XVIII — What They Saw in the Country of el Dorado.</h3>
 <p>Cacambo expressed his curiosity to the landlord, who made answer:</p>
 <p>&quot;I am very ignorant, but not the worse on that account. However, we have in this neighbourhood an old man retired from Court who is the most learned and most communicative person in the kingdom.&quot;</p>
 <p>At once he took Cacambo to the old man. Candide acted now only a second character, and accompanied his valet. They entered a very plain house, for the door was only of silver, and the ceilings were only of gold, but wrought in so elegant a taste as to vie with the richest. The antechamber, indeed, was only encrusted with rubies and emeralds, but the order in which everything was arranged made amends for this great simplicity.</p>
@@ -433,7 +452,7 @@ h2 + p, .first { text-indent: 0; }
 <p>At once he gave directions that his engineers should construct a machine to hoist up these two extraordinary men out of the kingdom. Three thousand good mathematicians went to work; it was ready in fifteen days, and did not cost more than twenty million sterling in the specie of that country. They placed Candide and Cacambo on the machine. There were two great red sheep saddled and bridled to ride upon as soon as they were beyond the mountains, twenty pack-sheep laden with provisions, thirty with presents of the curiosities of the country, and fifty with gold, diamonds, and precious stones. The King embraced the two wanderers very tenderly.</p>
 <p>Their departure, with the ingenious manner in which they and their sheep were hoisted over the mountains, was a splendid spectacle. The mathematicians took their leave after conveying them to a place of safety, and Candide had no other desire, no other aim, than to present his sheep to Miss Cunegonde.</p>
 <p>&quot;Now,&quot; said he, &quot;we are able to pay the Governor of Buenos Ayres if Miss Cunegonde can be ransomed. Let us journey towards Cayenne. Let us embark, and we will afterwards see what kingdom we shall be able to purchase.&quot;</p>
-<h2>XIX</h2>
+<h2 class="chapter" id="c27">XIX</h2>
 <p>WHAT HAPPENED TO THEM AT SURINAM AND HOW CANDIDE GOT ACQUAINTED WITH MARTIN.</p>
 <p>Our travellers spent the first day very agreeably. They were delighted with possessing more treasure than all Asia, Europe, and Africa could scrape together. Candide, in his raptures, cut Cunegonde&#x27;s name on the trees. The second day two of their sheep plunged into a morass, where they and their burdens were lost; two more died of fatigue a few days after; seven or eight perished with hunger in a desert; and others subsequently fell down precipices. At length, after travelling a hundred days, only two sheep remained. Said Candide to Cacambo:</p>
 <p>&quot;My friend, you see how perishable are the riches of this world; there is nothing solid but virtue, and the happiness of seeing Cunegonde once more.&quot;</p>
@@ -472,8 +491,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;This Pangloss,&quot; said he, &quot;would be puzzled to demonstrate his system. I wish that he were here. Certainly, if all things are good, it is in El Dorado and not in the rest of the world.&quot;</p>
 <p>At length he made choice of a poor man of letters, who had worked ten years for the booksellers of Amsterdam. He judged that there was not in the whole world a trade which could disgust one more.</p>
 <p>This philosopher was an honest man; but he had been robbed by his wife, beaten by his son, and abandoned by his daughter who got a Portuguese to run away with her. He had just been deprived of a small employment, on which he subsisted; and he was persecuted by the preachers of Surinam, who took him for a Socinian. We must allow that the others were at least as wretched as he; but Candide hoped that the philosopher would entertain him during the voyage. All the other candidates complained that Candide had done them great injustice; but he appeased them by giving one hundred piastres to each.</p>
-<h2>XX</h2>
-<h2>WHAT HAPPENED AT SEA TO CANDIDE AND MARTIN.</h2>
+<h3 class="sub">XX — What Happened At Sea to Candide and Martin.</h3>
 <p>The old philosopher, whose name was Martin, embarked then with Candide for Bordeaux. They had both seen and suffered a great deal; and if the vessel had sailed from Surinam to Japan, by the Cape of Good Hope, the subject of moral and natural evil would have enabled them to entertain one another during the whole voyage.</p>
 <p>Candide, however, had one great advantage over Martin, in that he always hoped to see Miss Cunegonde; whereas Martin had nothing at all to hope. Besides, Candide was possessed of money and jewels, and though he had lost one hundred large red sheep, laden with the greatest treasure upon earth; though the knavery of the Dutch skipper still sat heavy upon his mind; yet when he reflected upon what he had still left, and when he mentioned the name of Cunegonde, especially towards the latter end of a repast, he inclined to Pangloss&#x27;s doctrine.</p>
 <p>&quot;But you, Mr. Martin,&quot; said he to the philosopher, &quot;what do you think of all this? what are your ideas on moral and natural evil?&quot;</p>
@@ -493,7 +511,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;Yes,&quot; said Martin; &quot;but why should the passengers be doomed also to destruction? God has punished the knave, and the devil has drowned the rest.&quot;</p>
 <p>The French and Spanish ships continued their course, and Candide continued his conversation with Martin. They disputed fifteen successive days, and on the last of those fifteen days, they were as far advanced as on the first. But, however, they chatted, they communicated ideas, they consoled each other. Candide caressed his sheep.</p>
 <p>&quot;Since I have found thee again,&quot; said he, &quot;I may likewise chance to find my Cunegonde.&quot;</p>
-<h2>XXI</h2>
+<h2 class="chapter" id="c28">XXI</h2>
 <p>CANDIDE AND MARTIN, REASONING, DRAW NEAR THE COAST OF FRANCE.</p>
 <p>At length they descried the coast of France.</p>
 <p>&quot;Were you ever in France, Mr. Martin?&quot; said Candide.</p>
@@ -514,8 +532,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;Well, then,&quot; said Martin, &quot;if hawks have always had the same character why should you imagine that men may have changed theirs?&quot;</p>
 <p>&quot;Oh!&quot; said Candide, &quot;there is a vast deal of difference, for free will----&quot;</p>
 <p>And reasoning thus they arrived at Bordeaux.</p>
-<h2>XXII</h2>
-<h2>WHAT HAPPENED IN FRANCE TO CANDIDE AND MARTIN.</h2>
+<h3 class="sub">XXII — What Happened in France to Candide and Martin.</h3>
 <p>Candide stayed in Bordeaux no longer than was necessary for the selling of a few of the pebbles of El Dorado, and for hiring a good chaise to hold two passengers; for he could not travel without his Philosopher Martin. He was only vexed at parting with his sheep, which he left to the Bordeaux Academy of Sciences, who set as a subject for that year&#x27;s prize, &quot;to find why this sheep&#x27;s wool was red;&quot; and the prize was awarded to a learned man of the North, who demonstrated by A plus B minus C divided by Z, that the sheep must be red, and die of the rot.</p>
 <p>Meanwhile, all the travellers whom Candide met in the inns along his route, said to him, &quot;We go to Paris.&quot; This general eagerness at length gave him, too, a desire to see this capital; and it was not so very great a detour from the road to Venice.</p>
 <p>He entered Paris by the suburb of St. Marceau, and fancied that he was in the dirtiest village of Westphalia.</p>
@@ -613,7 +630,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Immediately he ordered his irons to be struck off, acknowledged himself mistaken, sent away his men, set out with Candide and Martin for Dieppe, and left them in the care of his brother.</p>
 <p>There was then a small Dutch ship in the harbour. The Norman, who by the virtue of three more diamonds had become the most subservient of men, put Candide and his attendants on board a vessel that was just ready to set sail for Portsmouth in England.</p>
 <p>This was not the way to Venice, but Candide thought he had made his way out of hell, and reckoned that he would soon have an opportunity for resuming his journey.</p>
-<h2>XXIII</h2>
+<h2 class="chapter" id="c29">XXIII</h2>
 <p>CANDIDE AND MARTIN TOUCHED UPON THE COAST OF ENGLAND, AND WHAT THEY SAW THERE.</p>
 <p>&quot;Ah, Pangloss! Pangloss! Ah, Martin! Martin! Ah, my dear Cunegonde, what sort of a world is this?&quot; said Candide on board the Dutch ship.</p>
 <p>&quot;Something very foolish and abominable,&quot; said Martin.</p>
@@ -629,8 +646,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Candide was so shocked and bewildered by what he saw and heard, that he would not set foot on shore, and he made a bargain with the Dutch skipper (were he even to rob him like the Surinam captain) to conduct him without delay to Venice.</p>
 <p>The skipper was ready in two days. They coasted France; they passed in sight of Lisbon, and Candide trembled. They passed through the Straits, and entered the Mediterranean. At last they landed at Venice.</p>
 <p>&quot;God be praised!&quot; said Candide, embracing Martin. &quot;It is here that I shall see again my beautiful Cunegonde. I trust Cacambo as myself. All is well, all will be well, all goes as well as possible.&quot;</p>
-<h2>XXIV</h2>
-<h2>OF PAQUETTE AND FRIAR GIROFLEE.</h2>
+<h3 class="sub">XXIV — Of Paquette and Friar Giroflee.</h3>
 <p>Upon their arrival at Venice, Candide went to search for Cacambo at every inn and coffee-house, and among all the ladies of pleasure, but to no purpose. He sent every day to inquire on all the ships that came in. But there was no news of Cacambo.</p>
 <p>&quot;What!&quot; said he to Martin, &quot;I have had time to voyage from Surinam to Bordeaux, to go from Bordeaux to Paris, from Paris to Dieppe, from Dieppe to Portsmouth, to coast along Portugal and Spain, to cross the whole Mediterranean, to spend some months, and yet the beautiful Cunegonde has not arrived! Instead of her I have only met a Parisian wench and a Perigordian Abbe. Cunegonde is dead without doubt, and there is nothing for me but to die. Alas! how much better it would have been for me to have remained in the paradise of El Dorado than to come back to this cursed Europe! You are in the right, my dear Martin: all is misery and illusion.&quot;</p>
 <p>He fell into a deep melancholy, and neither went to see the opera, nor any of the other diversions of the Carnival; nay, he was proof against the temptations of all the ladies.</p>
@@ -667,8 +683,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;People talk,&quot; said Candide, &quot;of the Senator Pococurante, who lives in that fine palace on the Brenta, where he entertains foreigners in the politest manner. They pretend that this man has never felt any uneasiness.&quot;</p>
 <p>&quot;I should be glad to see such a rarity,&quot; said Martin.</p>
 <p>Candide immediately sent to ask the Lord Pococurante permission to wait upon him the next day.</p>
-<h2>XXV</h2>
-<h2>THE VISIT TO LORD POCOCURANTE, A NOBLE VENETIAN.</h2>
+<h3 class="sub">XXV — The Visit to Lord Pococurante, a Noble Venetian.</h3>
 <p>Candide and Martin went in a gondola on the Brenta, and arrived at the palace of the noble Signor Pococurante. The gardens, laid out with taste, were adorned with fine marble statues. The palace was beautifully built. The master of the house was a man of sixty, and very rich. He received the two travellers with polite indifference, which put Candide a little out of countenance, but was not at all disagreeable to Martin.</p>
 <p>First, two pretty girls, very neatly dressed, served them with chocolate, which was frothed exceedingly well. Candide could not refrain from commending their beauty, grace, and address.</p>
 <p>&quot;They are good enough creatures,&quot; said the Senator. &quot;I make them lie with me sometimes, for I am very tired of the ladies of the town, of their coquetries, of their jealousies, of their quarrels, of their humours, of their pettinesses, of their prides, of their follies, and of the sonnets which one must make, or have made, for them. But after all, these two girls begin to weary me.&quot;</p>
@@ -709,7 +724,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;Well, well,&quot; said Candide, &quot;I find that I shall be the only happy man when I am blessed with the sight of my dear Cunegonde.&quot;</p>
 <p>&quot;It is always well to hope,&quot; said Martin.</p>
 <p>However, the days and the weeks passed. Cacambo did not come, and Candide was so overwhelmed with grief that he did not even reflect that Paquette and Friar Giroflee did not return to thank him.</p>
-<h2>XXVI</h2>
+<h2 class="chapter" id="c30">XXVI</h2>
 <p>OF A SUPPER WHICH CANDIDE AND MARTIN TOOK WITH SIX STRANGERS, AND WHO THEY WERE.[34]</p>
 <p>One evening that Candide and Martin were going to sit down to supper with some foreigners who lodged in the same inn, a man whose complexion was as black as soot, came behind Candide, and taking him by the arm, said:</p>
 <p>&quot;Get yourself ready to go along with us; do not fail.&quot;</p>
@@ -746,8 +761,7 @@ h2 + p, .first { text-indent: 0; }
 <p>The other five kings listened to this speech with generous compassion. Each of them gave twenty sequins to King Theodore to buy him clothes and linen; and Candide made him a present of a diamond worth two thousand sequins.</p>
 <p>&quot;Who can this private person be,&quot; said the five kings to one another, &quot;who is able to give, and really has given, a hundred times as much as any of us?&quot;</p>
 <p>Just as they rose from table, in came four Serene Highnesses, who had also been stripped of their territories by the fortune of war, and were come to spend the Carnival at Venice. But Candide paid no regard to these newcomers, his thoughts were entirely employed on his voyage to Constantinople, in search of his beloved Cunegonde.</p>
-<h2>XXVII</h2>
-<h2>CANDIDE&#x27;S VOYAGE TO CONSTANTINOPLE.</h2>
+<h3 class="sub">XXVII — Candide&#x27;s Voyage to Constantinople.</h3>
 <p>The faithful Cacambo had already prevailed upon the Turkish skipper, who was to conduct the Sultan Achmet to Constantinople, to receive Candide and Martin on his ship. They both embarked after having made their obeisance to his miserable Highness.</p>
 <p>&quot;You see,&quot; said Candide to Martin on the way, &quot;we supped with six dethroned kings, and of those six there was one to whom I gave charity. Perhaps there are many other princes yet more unfortunate. For my part, I have only lost a hundred sheep; and now I am flying into Cunegonde&#x27;s arms. My dear Martin, yet once more Pangloss was right: all is for the best.&quot;</p>
 <p>&quot;I wish it,&quot; answered Martin.</p>
@@ -787,16 +801,14 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;But is it indeed possible that my sister can be in Turkey?&quot; said he.</p>
 <p>&quot;Nothing is more possible,&quot; said Cacambo, &quot;since she scours the dishes in the service of a Transylvanian prince.&quot;</p>
 <p>Candide sent directly for two Jews and sold them some more diamonds, and then they all set out together in another galley to deliver Cunegonde from slavery.</p>
-<h2>XXVIII</h2>
-<h2>WHAT HAPPENED TO CANDIDE, CUNEGONDE, PANGLOSS, MARTIN, ETC.</h2>
+<h3 class="sub">XXVIII — What Happened to Candide, Cunegonde, Pangloss, Martin, Etc.</h3>
 <p>&quot;I ask your pardon once more,&quot; said Candide to the Baron, &quot;your pardon, reverend father, for having run you through the body.&quot;</p>
 <p>&quot;Say no more about it,&quot; answered the Baron. &quot;I was a little too hasty, I own, but since you wish to know by what fatality I came to be a galley-slave I will inform you. After I had been cured by the surgeon of the college of the wound you gave me, I was attacked and carried off by a party of Spanish troops, who confined me in prison at Buenos Ayres at the very time my sister was setting out thence. I asked leave to return to Rome to the General of my Order. I was appointed chaplain to the French Ambassador at Constantinople. I had not been eight days in this employment when one evening I met with a young Ichoglan, who was a very handsome fellow. The weather was warm. The young man wanted to bathe, and I took this opportunity of bathing also. I did not know that it was a capital crime for a Christian to be found naked with a young Mussulman. A cadi ordered me a hundred blows on the soles of the feet, and condemned me to the galleys. I do not think there ever was a greater act of injustice. But I should be glad to know how my sister came to be scullion to a Transylvanian prince who has taken shelter among the Turks.&quot;</p>
 <p>&quot;But you, my dear Pangloss,&quot; said Candide, &quot;how can it be that I behold you again?&quot;</p>
 <p>&quot;It is true,&quot; said Pangloss, &quot;that you saw me hanged. I should have been burnt, but you may remember it rained exceedingly hard when they were going to roast me; the storm was so violent that they despaired of lighting the fire, so I was hanged because they could do no better. A surgeon purchased my body, carried me home, and dissected me. He began with making a crucial incision on me from the navel to the clavicula. One could not have been worse hanged than I was. The executioner of the Holy Inquisition was a sub-deacon, and knew how to burn people marvellously well, but he was not accustomed to hanging. The cord was wet and did not slip properly, and besides it was badly tied; in short, I still drew my breath, when the crucial incision made me give such a frightful scream that my surgeon fell flat upon his back, and imagining that he had been dissecting the devil he ran away, dying with fear, and fell down the staircase in his flight. His wife, hearing the noise, flew from the next room. She saw me stretched out upon the table with my crucial incision. She was seized with yet greater fear than her husband, fled, and tumbled over him. When they came to themselves a little, I heard the wife say to her husband: &#x27;My dear, how could you take it into your head to dissect a heretic? Do you not know that these people always have the devil in their bodies? I will go and fetch a priest this minute to exorcise him.&#x27; At this proposal I shuddered, and mustering up what little courage I had still remaining I cried out aloud, &#x27;Have mercy on me!&#x27; At length the Portuguese barber plucked up his spirits. He sewed up my wounds; his wife even nursed me. I was upon my legs at the end of fifteen days. The barber found me a place as lackey to a knight of Malta who was going to Venice, but finding that my master had no money to pay me my wages I entered the service of a Venetian merchant, and went with him to Constantinople. One day I took it into my head to step into a mosque, where I saw an old Iman and a very pretty young devotee who was saying her paternosters. Her bosom was uncovered, and between her breasts she had a beautiful bouquet of tulips, roses, anemones, ranunculus, hyacinths, and auriculas. She dropped her bouquet; I picked it up, and presented it to her with a profound reverence. I was so long in delivering it that the Iman began to get angry, and seeing that I was a Christian he called out for help. They carried me before the cadi, who ordered me a hundred lashes on the soles of the feet and sent me to the galleys. I was chained to the very same galley and the same bench as the young Baron. On board this galley there were four young men from Marseilles, five Neapolitan priests, and two monks from Corfu, who told us similar adventures happened daily. The Baron maintained that he had suffered greater injustice than I, and I insisted that it was far more innocent to take up a bouquet and place it again on a woman&#x27;s bosom than to be found stark naked with an Ichoglan. We were continually disputing, and received twenty lashes with a bull&#x27;s pizzle when the concatenation of universal events brought you to our galley, and you were good enough to ransom us.&quot;</p>
 <p>&quot;Well, my dear Pangloss,&quot; said Candide to him, &quot;when you had been hanged, dissected, whipped, and were tugging at the oar, did you always think that everything happens for the best?&quot;</p>
 <p>&quot;I am still of my first opinion,&quot; answered Pangloss, &quot;for I am a philosopher and I cannot retract, especially as Leibnitz could never be wrong; and besides, the pre-established harmony is the finest thing in the world, and so is his plenum and materia subtilis.&quot;</p>
-<h2>XXIX</h2>
-<h2>HOW CANDIDE FOUND CUNEGONDE AND THE OLD WOMAN AGAIN.</h2>
+<h3 class="sub">XXIX — How Candide Found Cunegonde and the Old Woman Again.</h3>
 <p>While Candide, the Baron, Pangloss, Martin, and Cacambo were relating their several adventures, were reasoning on the contingent or non-contingent events of the universe, disputing on effects and causes, on moral and physical evil, on liberty and necessity, and on the consolations a slave may feel even on a Turkish galley, they arrived at the house of the Transylvanian prince on the banks of the Propontis. The first objects which met their sight were Cunegonde and the old woman hanging towels out to dry.</p>
 <p>The Baron paled at this sight. The tender, loving Candide, seeing his beautiful Cunegonde embrowned, with blood-shot eyes, withered neck, wrinkled cheeks, and rough, red arms, recoiled three paces, seized with horror, and then advanced out of good manners. She embraced Candide and her brother; they embraced the old woman, and Candide ransomed them both.</p>
 <p>There was a small farm in the neighbourhood which the old woman proposed to Candide to make a shift with till the company could be provided for in a better manner. Cunegonde did not know she had grown ugly, for nobody had told her of it; and she reminded Candide of his promise in so positive a tone that the good man durst not refuse her. He therefore intimated to the Baron that he intended marrying his sister.</p>
@@ -804,8 +816,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Cunegonde flung herself at his feet, and bathed them with her tears; still he was inflexible.</p>
 <p>&quot;Thou foolish fellow,&quot; said Candide; &quot;I have delivered thee out of the galleys, I have paid thy ransom, and thy sister&#x27;s also; she was a scullion, and is very ugly, yet I am so condescending as to marry her; and dost thou pretend to oppose the match? I should kill thee again, were I only to consult my anger.&quot;</p>
 <p>&quot;Thou mayest kill me again,&quot; said the Baron, &quot;but thou shalt not marry my sister, at least whilst I am living.&quot;</p>
-<h2>XXX</h2>
-<h2>THE CONCLUSION.</h2>
+<h3 class="sub">XXX — The Conclusion.</h3>
 <p>At the bottom of his heart Candide had no wish to marry Cunegonde. But the extreme impertinence of the Baron determined him to conclude the match, and Cunegonde pressed him so strongly that he could not go from his word. He consulted Pangloss, Martin, and the faithful Cacambo. Pangloss drew up an excellent memorial, wherein he proved that the Baron had no right over his sister, and that according to all the laws of the empire, she might marry Candide with her left hand. Martin was for throwing the Baron into the sea; Cacambo decided that it would be better to deliver him up again to the captain of the galley, after which they thought to send him back to the General Father of the Order at Rome by the first ship. This advice was well received, the old woman approved it; they said not a word to his sister; the thing was executed for a little money, and they had the double pleasure of entrapping a Jesuit, and punishing the pride of a German baron.</p>
 <p>It is natural to imagine that after so many disasters Candide married, and living with the philosopher Pangloss, the philosopher Martin, the prudent Cacambo, and the old woman, having besides brought so many diamonds from the country of the ancient Incas, must have led a very happy life. But he was so much imposed upon by the Jews that he had nothing left except his small farm; his wife became uglier every day, more peevish and unsupportable; the old woman was infirm and even more fretful than Cunegonde. Cacambo, who worked in the garden, and took vegetables for sale to Constantinople, was fatigued with hard work, and cursed his destiny. Pangloss was in despair at not shining in some German university. For Martin, he was firmly persuaded that he would be as badly off elsewhere, and therefore bore things patiently. Candide, Martin, and Pangloss sometimes disputed about morals and metaphysics. They often saw passing under the windows of their farm boats full of Effendis, Pashas, and Cadis, who were going into banishment to Lemnos, Mitylene, or Erzeroum. And they saw other Cadis, Pashas, and Effendis coming to supply the place of the exiles, and afterwards exiled in their turn. They saw heads decently impaled for presentation to the Sublime Porte. Such spectacles as these increased the number of their dissertations; and when they did not dispute time hung so heavily upon their hands, that one day the old woman ventured to say to them:</p>
 <p>&quot;I want to know which is worse, to be ravished a hundred times by negro pirates, to have a buttock cut off, to run the gauntlet among the Bulgarians, to be whipped and hanged at an auto-da-fe, to be dissected, to row in the galleys--in short, to go through all the miseries we have undergone, or to stay here and have nothing to do?&quot;</p>
@@ -839,7 +850,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Pangloss sometimes said to Candide:</p>
 <p>&quot;There is a concatenation of events in this best of all possible worlds: for if you had not been kicked out of a magnificent castle for love of Miss Cunegonde: if you had not been put into the Inquisition: if you had not walked over America: if you had not stabbed the Baron: if you had not lost all your sheep from the fine country of El Dorado: you would not be here eating preserved citrons and pistachio-nuts.&quot;</p>
 <p>&quot;All that is very well,&quot; answered Candide, &quot;but let us cultivate our garden.&quot;</p>
-<h2>FOOTNOTES:</h2>
+<h3 class="sub">Footnotes:</h3>
 <p>[1] P. 2. The name Pangloss is derived from two Greek words signifying &quot;all&quot; and &quot;language.&quot;</p>
 <p>[2] P. 8. The Abares were a tribe of Tartars settled on the shores of the Danube, who later dwelt in part of Circassia.</p>
 <p>[3] P. 15. Venereal disease was said to have been first brought from Hispaniola, in the West Indies, by some followers of Columbus who were later employed in the siege of Naples. From this latter circumstance it was at one time known as the Neapolitan disease.</p>
@@ -879,5 +890,5 @@ h2 + p, .first { text-indent: 0; }
 <p>*       *       *       *       *</p>
 <p>+------------------------------------------------------------+ | Typographical errors corrected in text:                    | |                                                            | | Page xiv: Chapter XIII heading in Table of Contents        | | amended to match chapter heading on page 54.               | | Page 2: metaphysicotheo-logico-cosmolo-nigology            | | amended to metaphysico-theologico-cosmolo-nigology.        | | Page 158: Liebnitz amended to Leibnitz.                    | | Page 168: perserved amended to preserved.                  | | Page 172: rougish amended to roguish; crows amended to     | | crowns.                                                    | |                                                            | | Where there is an equal number of instances of a word      | | being hyphenated and unhyphenated, both versions           | | of the word have been retained: dung-hill/dunghill;        | | and new-comers/newcomers.                                  | |                                                            | | A single footnote on page 90 has been moved                | | to the endnotes, and the notes numbers re-indexed. A       | | page reference was added to the moved footnote to          | | match the format of other endnotes.                        | |                                                            | | Modern Library blurb: &quot;mail complete list of titles&quot; left  | | as is.                                                     | |                                                            | | There are two instances of Massa Carara (pp. 43 and 45)    | | and one instance of Massa-Carrara (page ix). As this       | | latter is in the Introduction, i.e. distinct from the book | | proper, it has been retained.                              | |                                                            | | The different spellings of Cunegonde (which occurs only    | | in the Introduction) and Robeck (which occurs in the       | | Notes [p. 170]; spelt Robek in the text [p. 53]) have      | | been retained for the same reason.                         | |                                                            | +------------------------------------------------------------+</p>
 <p>*       *       *       *       *</p>
-<p class="colophon">Texte du domaine public, source : Project Gutenberg (#19942). Édition numérique EbookClassics.</p>
+<p class="colophon">Public domain text. EbookClassics digital edition.</p>
 </body></html>

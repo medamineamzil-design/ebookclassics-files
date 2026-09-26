@@ -1,26 +1,68 @@
 <!DOCTYPE html>
 <html lang="de"><head><meta charset="utf-8">
-<title>Romeo und Julia</title><style>
-@page { margin: 22mm 20mm; }
-body { font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', serif; line-height: 1.6;
-       color: #1f1a14; max-width: 38em; margin: 0 auto; padding: 1.5em 1.2em; }
-h1 { font-size: 2.1em; text-align: center; margin: 1.5em 0 .2em; letter-spacing: .01em; }
-.author { text-align: center; font-size: 1.15em; font-style: italic; margin-bottom: 3em; color: #5a4a36; }
-h2 { font-size: 1.25em; text-align: center; margin: 2.6em 0 1.2em; letter-spacing: .06em;
-     text-transform: uppercase; font-weight: normal; page-break-before: always; break-before: page; }
-p { margin: 0; text-indent: 1.4em; text-align: justify; hyphens: auto; }
-h2 + p, .first { text-indent: 0; }
-.colophon { font-size: .85em; color: #6b5d45; text-align: center; margin-top: 4em; text-indent: 0; }
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Romeo und Julia — William Shakespeare</title><style>
+:root{--paper:#fbf8f1;--ink:#1f1b16;--muted:#6f6352;--accent:#9a6b2f;--rule:#e4dccb}
+@media (prefers-color-scheme:dark){:root{--paper:#16140f;--ink:#ece6d8;--muted:#a79c88;--accent:#d8a95e;--rule:#2e2a22}}
+html{background:var(--paper)}
+body{font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Libertinus Serif",Georgia,serif;color:var(--ink);
+     background:var(--paper);line-height:1.65;font-size:1.12rem;max-width:36em;margin:0 auto;padding:2.5em 1.25em 5em}
+.titlepage{text-align:center;min-height:70vh;display:flex;flex-direction:column;justify-content:center;gap:.6em;
+           border-bottom:1px solid var(--rule);margin-bottom:2.5em;padding-bottom:2.5em}
+.titlepage img{max-width:260px;width:60%;margin:0 auto 1.5em;border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+h1{font-size:2.4em;line-height:1.15;font-weight:600;margin:0;letter-spacing:-.01em}
+.author{font-style:italic;font-size:1.25em;color:var(--accent);margin:0}
+.translator{font-size:.95em;color:var(--muted);margin:0}
+nav.toc{margin:0 0 3em}
+nav.toc h2{font-size:.85em;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:left;margin:0 0 .8em}
+nav.toc ol{list-style:none;padding:0;margin:0;columns:1}
+nav.toc li{margin:.25em 0}
+nav.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent}
+nav.toc a:hover{border-color:var(--accent)}
+h2.chapter{font-size:1.45em;font-weight:600;text-align:center;margin:3.5em 0 1.6em;line-height:1.3}
+h2.chapter::before{content:"";display:block;width:3em;height:2px;background:var(--accent);margin:0 auto 1.1em}
+p{margin:0;text-indent:1.5em;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+h2.chapter + p, .titlepage + p{text-indent:0}
+h2.chapter + p::first-letter{font-size:3.1em;float:left;line-height:.85;padding:.08em .08em 0 0;color:var(--accent);font-weight:600}
+.colophon{margin-top:5em;padding-top:1.5em;border-top:1px solid var(--rule);text-align:center;color:var(--muted);font-size:.85em;text-indent:0}
+h3.sub{font-size:1em;font-weight:600;font-variant:small-caps;letter-spacing:.04em;text-align:center;margin:2.2em 0 1em}
+h3.sub + p{text-indent:0}
+@media print{h2.chapter{break-before:page}}
 </style></head><body>
+<header class="titlepage">
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjI0MDAiIHZpZXdCb3g9IjAgMCAxNjAwIDI0MDAiPgo8cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSIyNDAwIiBmaWxsPSIjMWIzYTRiIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjMwMCIgZmlsbD0iI2Y0YTI2MSIgb3BhY2l0eT0iLjkyIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMWIzYTRiIiBzdHJva2Utd2lkdGg9IjEyIiBvcGFjaXR5PSIuNSIvPgo8Y2lyY2xlIGN4PSIxMTIwIiBjeT0iNTYwIiByPSIxMjAiIGZpbGw9IiMxYjNhNGIiIG9wYWNpdHk9Ii4xOCIvPgo8cmVjdCB4PSIxNjAiIHk9IjkzMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIxMCIgZmlsbD0iI2Y0YTI2MSIvPgo8dGV4dCB4PSIxNjAiIHk9IjEwOTgiIGZvbnQtc2l6ZT0iMTUwIiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmZGYxZTYiPlJvbWVvIHVuZDwvdGV4dD48dGV4dCB4PSIxNjAiIHk9IjEyNjIiIGZvbnQtc2l6ZT0iMTUwIiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmZGYxZTYiPkp1bGlhPC90ZXh0Pgo8dGV4dCB4PSIxNjAiIHk9IjE0OTgiIGZvbnQtc2l6ZT0iNjgiIGZvbnQtc3R5bGU9Iml0YWxpYyIgZm9udC1mYW1pbHk9IkxpYmVydGludXMgU2VyaWYsIEdlb3JnaWEsIHNlcmlmIiBmaWxsPSIjZjRhMjYxIj5XaWxsaWFtIFNoYWtlc3BlYXJlPC90ZXh0Pgo8dGV4dCB4PSIxNjAiIHk9IjIyMzAiIGZvbnQtc2l6ZT0iNDQiIGxldHRlci1zcGFjaW5nPSIxNCIgZm9udC1mYW1pbHk9IkxpYmVydGludXMgU2VyaWYsIEdlb3JnaWEsIHNlcmlmIiBmaWxsPSIjZmRmMWU2IiBvcGFjaXR5PSIuNzUiPkVCT09LQ0xBU1NJQ1M8L3RleHQ+Cjwvc3ZnPg==" alt="">
 <h1>Romeo und Julia</h1>
 <p class="author">William Shakespeare</p>
+<p class="translator">Übersetzt von Schlegel, August Wilhelm von</p>
+</header>
+<nav class="toc"><h2>Inhalt</h2><ol>
+<li><a href="#c1">Personen</a></li>
+<li><a href="#c2">Chorus</a></li>
+<li><a href="#c3">Prolog</a></li>
+<li><a href="#c4">Erster Akt</a></li>
+<li><a href="#c5">Zweiter akt — Erste Szene</a></li>
+<li><a href="#c6">Zweite Szene</a></li>
+<li><a href="#c7">Dritte Szene</a></li>
+<li><a href="#c8">Vierte Szene</a></li>
+<li><a href="#c9">Fünfte Szene</a></li>
+<li><a href="#c10">Sechste Szene</a></li>
+<li><a href="#c11">Dritter akt — Erste Szene</a></li>
+<li><a href="#c12">Zweite Szene</a></li>
+<li><a href="#c13">Dritte Szene</a></li>
+<li><a href="#c14">Vierte Szene</a></li>
+<li><a href="#c15">Fünfte Szene</a></li>
+<li><a href="#c16">Dritte Szene</a></li>
+<li><a href="#c17">Vierte Szene</a></li>
+<li><a href="#c18">Fünfte Szene</a></li>
+<li><a href="#c19">Fünfter akt — Erste Szene</a></li>
+</ol></nav>
 <p>Thanks are given to Delphine Lettau for finding a huge collection of ancient German books in London.</p>
 <p>This Etext is in German.</p>
 <p>We are releasing two versions of this Etext, one in 7-bit format, known as Plain Vanilla ASCII, which can be sent via plain email-- and one in 8-bit format, which includes higher order characters-- which requires a binary transfer, or sent as email attachment and may require more specialized programs to display the accents. This is the 8-bit version.</p>
 <p>Romeo und Julia</p>
 <p>William Shakespeare</p>
 <p>Übersetzt von August Wilhelm von Schlegel</p>
-<h2>PERSONEN</h2>
+<h2 class="chapter" id="c1">Personen</h2>
 <p>ESCALUS, Prinz von Verona</p>
 <p>[GRAF] PARIS, ein junger Edelmann, Verwandter des Prinzen</p>
 <p>MONTAGUE und CAPULET } Häupter zweier Häuser, welche in Zwist miteinander sind</p>
@@ -40,7 +82,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Drei MUSIKANTEN</p>
 <p>Ein PAGE des Paris; ein weiterer Page</p>
 <p>Ein APOTHEKER</p>
-<h2>CHORUS</h2>
+<h2 class="chapter" id="c2">Chorus</h2>
 <p>Ein Offizier</p>
 <p>Gräfin MONTAGUE, Ehefrau des Montague</p>
 <p>Gräfin CAPULET, Ehefrau des Capulet</p>
@@ -49,11 +91,10 @@ h2 + p, .first { text-indent: 0; }
 <p>Bürger von Verona.  Verschiedene Männer und Frauen, Verwandte beider Häuser.</p>
 <p>Masken, Garde, Wächter, Gefolge</p>
 <p>Die Szene ist den größten Teil des Stücks hindurch in Verona; zu Anfange des fünften Aktes in Mantua</p>
-<h2>PROLOG</h2>
+<h2 class="chapter" id="c3">Prolog</h2>
 <p>(Der Chorus tritt auf.)</p>
 <p>CHORUS Zwei Häuser waren--gleich an Würdigkeit-- Hier in Verona, wo die Handlung steckt, Durch alten Groll zu neuem Kampf bereit, Wo Bürgerblut die Bürgerhand befleckt. Aus dieser Feinde unheilvollem Schoß Das Leben zweier Liebender entsprang, Die durch ihr unglückselges Ende bloß Im Tod begraben elterlichen Zank. Der Hergang ihrer todgeweihten Lieb Und der Verlauf der elterlichen Wut, Die nur der Kinder Tod von dannen trieb, Ist nun zwei Stunden lang der Bühne Gut; Was dran noch fehlt, hört mit geduldgem Ohr, Bringt hoffentlich nun unsre Müh hervor.</p>
-<h2>ERSTER AKT</h2>
-<h2>ERSTE SZENE</h2>
+<h2 class="chapter" id="c4">Erster Akt</h2>
 <p>(Ein öffentlicher Platz)</p>
 <p>(Simson und Gregorio, [zwei Bediente Capulets,] treten bewaffnet mit Schwertern und Schilden auf.)</p>
 <p>SIMSON Auf mein Wort, Gregorio, wir wollen nichts in die Tasche stecken.</p>
@@ -156,9 +197,6 @@ h2 + p, .first { text-indent: 0; }
 <p>BENVOLIO Gib deinen Augen Freiheit, lenke sie Auf andre Reize hin.</p>
 <p>ROMEO Das ist der Weg, Mir ihren Reiz in vollem Licht zu zeigen. Die Schwärze jener neidenswerten Larven, Die schöner Frauen Stirne küssen, bringt Uns in den Sinn, daß sie das Schöne bergen. Der, welchen Blindheit schlug, kann nie das Kleinod Des eingebüßten Augenlichts vergessen. Zeigt mir ein Weib, unübertroffen schön: Mir gilt ihr Reiz wie eine Weisung nur, Worin ich lese, wer sie übertrifft. Leb wohl!  Vergessen lehrest du mich nie.</p>
 <p>BENVOLIO Dein Schuldner sterb ich, glückt mir nicht die Müh.</p>
-<p>(Beide ab.)</p>
-<h2>ZWEITE SZENE</h2>
-<p>(Eine Straße)</p>
 <p>(Capulet, Paris und ein Diener kommen.)</p>
 <p>CAPULET Und Montague ist mit derselben Buße Wie ich bedroht?  Für Greise, wie wir sind, Ist Frieden halten, denk ich, nicht so schwer.</p>
 <p>PARIS Ihr geltet beid als ehrenwerte Männer, Und Jammer ists um Euren langen Zwiespalt. Doch, edler Graf, wie dünkt Euch mein Gesuch?</p>
@@ -169,9 +207,6 @@ h2 + p, .first { text-indent: 0; }
 <p>und sag mit Höflichkeit: Mein Haus und mein Empfang steh ihrem Dienst bereit.</p>
 <p>(Capulet und Paris gehen ab.)</p>
 <p>DIENER Die Leute soll ich suchen, wovon die Namen hier geschrieben stehn?  Es steht geschrieben, der Schuster soll sich um seine Elle kümmern, der Schneider um seinen Leisten, der Fischer um seinen Pinsel, der Maler um seine Netze.  Aber mich schicken sie, um die Leute ausfindig zu machen, wovon die Namen hier geschrieben stehn, und ich kann doch gar nicht ausfindig machen, was für Namen der Schreiber hier aufgeschrieben hat. Ich muß zu den Gelahrten!--</p>
-<h2>DRITTE SZENE</h2>
-<p>(Ein Zimmer in Capulets Hause)</p>
-<p>(Gräfin Capulet und die Wärterin.)</p>
 <p>GRÄFIN CAPULET Ruft meine Tochter her; wo ist sie, Amme?</p>
 <p>WÄRTERIN Bei meiner Jungfernschaft im zwölften Jahr, Ich rief sie schon.--He, Lämmchen!  zartes Täubchen-- Daß Gott!  wo ist das Kind?  He, Juliette!</p>
 <p>(Julia kommt.)</p>
@@ -205,9 +240,6 @@ h2 + p, .first { text-indent: 0; }
 <p>(Der Diener geht ab.)</p>
 <p>Paris wartet; Julia, komm geschwind!</p>
 <p>WÄRTERIN Such frohe Nacht auf frohe Tage, Kind!</p>
-<p>(Alle ab.)</p>
-<h2>VIERTE SZENE</h2>
-<p>(Eine Straße)</p>
 <p>(Romeo, Mercutio, Benvolio mit fünf oder sechs Masken, Fackelträgern und anderen.)</p>
 <p>ROMEO Soll diese Red uns zur Entschuldgung dienen? Wie?  Oder treten wir nur grad hinein?</p>
 <p>BENVOLIO Umschweife solcher Art sind nicht mehr Sitte. Wir wollen keinen Amor, mit der Schärpe Geblendet, der den bunt bemalten Bogen Wie ein Tatar geschnitzt aus Latten trägt Und wie &#x27;ne Vogelscheuch die Frauen schreckt; Auch keinen hergebeteten Prolog, Wobei viel zugeblasen wird, zum Eintritt. Laßt sie uns nur, wofür sie wollen, nehmen, Wir nehmen ein paar Tänze mit und gehn.</p>
@@ -245,9 +277,6 @@ h2 + p, .first { text-indent: 0; }
 <p>BENVOLIO Der Wind, von dem Ihr sprecht, entführt uns selbst. Man hat gespeist; wir kamen schon zu spät.</p>
 <p>ROMEO Zu früh, befürcht ich; denn mein Herz erbangt Und ahnet ein Verhängnis, welches, noch Verborgen in den Sternen, heute nacht Bei dieser Lustbarkeit den furchtbarn Zeitlauf Beginnen und das Ziel des lästgen Lebens, Das meine Brust verschließt, mir kürzen wird Durch einen schnöd verwirkten frühen Tod. Doch er, der mir zur Fahrt das Steuer lenkt, Richt auch mein Segel!--Auf, ihr lustgen Freunde!</p>
 <p>BENVOLIO Rührt Trommeln!</p>
-<p>(Alle ab.)</p>
-<h2>FÜNFTE SZENE</h2>
-<p>(Ein Saal in Capulets Hause)</p>
 <p>(Musikanten warten.  Diener kommen.)</p>
 <p>ERSTER DIENER Wo ist Schmorpfanne, daß er nicht abräumen hilft?  Der wird Teller wechseln, Teller scheuern!</p>
 <p>ZWEITER DIENER Wenn die gute Lebensart in eines oder zweier Menschen Händen sein soll, die noch obendrein ungewaschen sind: &#x27;s ist ein unsaubrer Handel.</p>
@@ -316,8 +345,7 @@ h2 + p, .first { text-indent: 0; }
 <p>(Der Chorus tritt auf.)</p>
 <p>CHORUS Die alte Liebe stirbt in ihm dahin, Und junge Zuneigung beerbt sie da; Die Schöne, nach der schmachtend stand sein Sinn, Scheint nicht mehr schön nun neben Julia. Er wird geliebt und liebt nun auch zum Schluß, Ein Zauberblick kann beiderseits nicht fehln, Doch scheint als Feind sie, der ers klagen muß, Und seiner Falle Köder muß sie stehln. Als Feind gesehn, darf er nicht zu ihr her, Zu schwörn, wie wirs sonst bei Verliebten sehn; Auch sie liebt ihn, doch kann noch weniger Zum neu geliebten irgendwohin gehn: Doch Zeit schafft Rat, Verlangen leiht die Kraft Und lindert Leid durch süße Leidenschaft.</p>
 <p>(Geht ab.)</p>
-<h2>ZWEITER AKT</h2>
-<h2>ERSTE SZENE</h2>
+<h2 class="chapter" id="c5">Zweiter akt — Erste Szene</h2>
 <p>(Ein offner Platz, der an Capulets Garten stößt)</p>
 <p>(Romeo tritt auf.)</p>
 <p>ROMEO Kann ich von hinnen, da mein Herz hier bleibt? Geh, frostge Erde, suche deine Sonne!</p>
@@ -332,7 +360,7 @@ h2 + p, .first { text-indent: 0; }
 <p>MERCUTIO Ist Liebe blind, so zielt sie freilich schlecht. Nun sitzt er wohl an einen Baum gelehnt Und wünscht, sein Liebchen wär die reife Frucht Und fiel ihm in den Schoß.  Doch, gute Nacht, Freund Romeo!  Ich will ins Federbett; Das Feldbett ist zum Schlafen mir zu kalt. Komm, gehn wir?</p>
 <p>BENVOLIO Ja, es ist vergeblich, ihn Zu suchen, der nicht will gefunden sein.</p>
 <p>(Beide ab.)</p>
-<h2>ZWEITE SZENE</h2>
+<h2 class="chapter" id="c6">Zweite Szene</h2>
 <p>(Capulets Garten)</p>
 <p>(Romeo kommt.)</p>
 <p>ROMEO Der Narben lacht, wer Wunden nie gefühlt.</p>
@@ -399,7 +427,7 @@ h2 + p, .first { text-indent: 0; }
 <p>(Sie geht zurück.)</p>
 <p>ROMEO Schlaf wohn auf deinem Aug, Fried in der Brust! O wär ich Fried und Schlaf und ruht in solcher Lust! Ich will zur Zell des frommen Vaters gehen, Mein Glück ihm sagen und um Hülf ihn flehen.</p>
 <p>(Ab.)</p>
-<h2>DRITTE SZENE</h2>
+<h2 class="chapter" id="c7">Dritte Szene</h2>
 <p>([Ein Klostergarten] Bruder Lorenzos Zelle)</p>
 <p>(Bruder Lorenzo mit einem Körbchen.)</p>
 <p>LORENZO Der Morgen lächelt froh der Nacht ins Angesicht Und säumet das Gewölk im Ost mit Streifen Licht. Die matte Finsternis flieht wankend, wie betrunken, Von Titans Pfad, besprüht von seiner Rosse Funken. Eh höher nun die Sonn ihr glühend Aug erhebt, Den Tau der Nacht verzehrt und neu die Welt belebt, Muß ich dies Körbchen hier voll Kraut und Blumen lesen, Voll Pflanzen giftger Art und diensam zum Genesen. Die Mutter der Natur, die Erd, ist auch ihr Grab, Und was ihr Schoß gebar, sinkt tot in ihn hinab, Und Kinder mannigfalt, so all ihr Schoß empfangen, Sehn wir, gesäugt von ihr, an ihren Brüsten hangen. An vielen Tugenden sind viele drunter reich, Ganz ohne Wert nicht eins, doch keins dem andern gleich. Oh, große Kräfte sinds, weiß man sie recht zu pflegen, Die Pflanzen, Kräuter, Stein in ihrem Innern hegen; Was nur auf Erden lebt, da ist auch nichts so schlecht, Daß es der Erde nicht besondern Nutzen brächt. Doch ist auch nichts so gut, das, diesem Ziel entwendet, Abtrünnig seiner Art, sich nicht durch Mißbrauch schändet. In Laster wandelt sich selbst Tugend, falsch geübt, Wie Ausführung auch wohl dem Laster Würde gibt. Die kleine Blume hier beherbergt giftge Säfte In ihrer zarten Hüll und milde Heilungskräfte! Sie labet den Geruch und dadurch jeden Sinn; Gekostet, dringt sie gleich zum Herzen tötend hin. Zwei Feinde lagern so im menschlichen Gemüte Sich immerdar im Kampf: verderbter Will und Güte, Und wo das Schlechtre herrscht mit siegender Gewalt, Dergleichen Pflanze frißt des Todes Wurm gar bald.</p>
@@ -423,7 +451,7 @@ h2 + p, .first { text-indent: 0; }
 <p>ROMEO O laß uns fort von hier!  Ich bin in großer Eil.</p>
 <p>LORENZO Wer hastig läuft, der fällt; drum eile nur mit Weil.</p>
 <p>(Beide ab.)</p>
-<h2>VIERTE SZENE</h2>
+<h2 class="chapter" id="c8">Vierte Szene</h2>
 <p>(Eine Straße)</p>
 <p>(Benvolio und Mercutio kommen.)</p>
 <p>MERCUTIO Wo, Teufel, kann der Romeo stecken?  Kam er heute nacht nicht nach Hause?</p>
@@ -527,7 +555,7 @@ h2 + p, .first { text-indent: 0; }
 <p>PETER Was beliebt?</p>
 <p>WÄRTERIN Peter, nimm meinen Fächer und geh vorauf!</p>
 <p>(Beide ab.)</p>
-<h2>FÜNFTE SZENE</h2>
+<h2 class="chapter" id="c9">Fünfte Szene</h2>
 <p>(Capulets Garten)</p>
 <p>(Julia tritt auf.)</p>
 <p>JULIA Neun schlug die Glock, als ich die Amme sandte. In einer halben Stunde wollte sie Schon wieder hier sein.  Kann sie ihn vielleicht Nicht treffen?  Nein, das nicht.  Oh, sie ist lahm! Zu Liebesboten taugen nur Gedanken, Die zehnmal schneller fliehn als Sonnenstrahlen, Wenn sie die Nacht von finstern Hügeln scheuchen. Deswegen ziehn ja leichtbeschwingte Tauben Der Liebe Wagen, und Cupido hat Windschnelle Flügel.  Auf der steilsten Höhe Der Tagereise steht die Sonne jetzt; Von neun bis zwölf, drei lange Stunden sinds, Und dennoch bleibt sie aus.  O hätte sie Ein Herz und warmes, jugendliches Blut, Sie würde wie ein Ball behende fliegen, Es schnellte sie mein Wort dem Trauten zu Und seines mir. Doch Alte tun, als lebten sie nicht mehr, Träg, unbehülflich, und wie Blei so schwer.</p>
@@ -555,7 +583,7 @@ h2 + p, .first { text-indent: 0; }
 <p>WÄRTERIN So macht Euch auf zu Eures Paters Zelle, Da harrt ein Mann, um Euch zur Frau zu machen. Nun steigt das lose Blut Euch in die Wangen, Gleich sind sie Scharlach, wenns was Neues gibt. Eilt Ihr ins Kloster; ich muß sonst wohin, Die Leiter holen, die der Liebste bald Zum Nest hinan, wenns Nacht wird, klimmen soll. Ich bin das Lasttier, muß für Euch mich plagen, Doch Ihr sollt Eure Last zur Nacht schon tragen. Ich will zur Mahlzeit erst; eilt Ihr zur Zelle hin!</p>
 <p>JULIA Zu hohem Glücke, treue Pflegerin!</p>
 <p>(Beide ab.)</p>
-<h2>SECHSTE SZENE</h2>
+<h2 class="chapter" id="c10">Sechste Szene</h2>
 <p>(Bruder Lorenzos Zelle)</p>
 <p>(Lorenzo und Romeo.)</p>
 <p>LORENZO Der Himmel lächle so dem heilgen Bund, Daß künftge Tag&#x27; uns nicht durch Kummer schelten!</p>
@@ -571,8 +599,7 @@ h2 + p, .first { text-indent: 0; }
 <p>JULIA Gefühl, an Inhalt reicher als an Worten, Ist stolz auf seinen Wert und nicht auf Schmuck. Nur Bettler wissen ihres Guts Betrag; Doch meine treue Liebe stieg so hoch, Daß keine Schätzung ihre Schätz erreicht.</p>
 <p>LORENZO Kommt, kommt mit mir, wir schreiten gleich zur Sache. Ich leide nicht, daß ihr allein mir bleibt, Bis euch die Kirch einander einverleibt.</p>
 <p>(Alle ab.)</p>
-<h2>DRITTER AKT</h2>
-<h2>ERSTE SZENE</h2>
+<h2 class="chapter" id="c11">Dritter akt — Erste Szene</h2>
 <p>(Ein öffentlicher Platz)</p>
 <p>(Mercutio, Benvolio, Page und Diener.)</p>
 <p>BENVOLIO Ich bitt dich, Freund, laß uns nach Hause gehn! Der Tag ist heiß, die Capulets sind draußen, Und treffen wir, so gibt es sicher Zank: Denn bei der Hitze tobt das tolle Blut.</p>
@@ -646,7 +673,7 @@ h2 + p, .first { text-indent: 0; }
 <p>GRÄFIN MONTAGUE Fürst, nicht mein Sohn, der Freund Mercutios; Was dem Gesetz doch heimfiel, nahm er bloß: Das Leben Tybalts.</p>
 <p>PRINZ Weil er das verbrochen, Sei über ihn sofort der Bann gesprochen. Mich selber trifft der Ausbruch eurer Wut, Um euren Zwiespalt fließt mein eignes Blut; Allein ich will dafür so streng euch büßen, Daß mein Verlust euch ewig soll verdrießen. Taub bin ich jeglicher Beschönigung, Kein Flehn, kein Weinen kauft Begnadigung; Drum spart sie.  Romeo flieh schnell von hinnen! Greift man ihn, soll er nicht dem Tod entrinnen. Tragt diese Leiche weg!  Vernehmt mein Wort! Wenn Gnade Mörder schont, verübt sie Mord!</p>
 <p>(Alle ab.)</p>
-<h2>ZWEITE SZENE</h2>
+<h2 class="chapter" id="c12">Zweite Szene</h2>
 <p>(Ein Zimmer in Capulets Hause)</p>
 <p>(Julia tritt auf.)</p>
 <p>JULIA Hinab, du flammenhufiges Gespann, Zu Phöbus&#x27; Wohnung!  Solch ein Wagenlenker Wie Phaethon jagt&#x27; euch gen Westen wohl Und brächte schnell die wolkige Nacht herauf. Verbreite deinen dichten Vorhang, Nacht, Du Liebespflegerin, damit das Auge Der Neubegier sich schließ und Romeo Mir unbelauscht in diese Arme schlüpfe. Verliebten gnügt zu der geheimen Weihe Das Licht der eignen Schönheit, oder wenn Die Liebe blind ist, stimmt sie wohl zur Nacht. Komm, ernste Nacht, du züchtig stille Frau, Ganz angetan mit Schwarz, und lehre mich Ein Spiel, wo jedes reiner Jugend Blüte Zum Pfände setzt, gewinnend zu verlieren! Verhülle mit dem schwarzen Mantel mir Das wilde Blut, das in den Wangen flattert, Bis scheue Liebe kühner wird und nichts Als Unschuld sieht in innger Liebe Tun. Komm, Nacht!  Komm, Romeo, du Tag in Nacht, Denn du wirst ruhn auf Fittichen der Nacht Wie frischer Schnee auf eines Raben Rücken. Komm, milde, liebevolle Nacht!  Komm, gib Mir meinen Romeo!  Und stirbt er einst, Nimm ihn, zerteil in kleine Sterne ihn: Er wird des Himmels Antlitz so verschönen, Daß alle Welt sich in die Nacht verliebt Und niemand mehr der eitlen Sonne huldigt.-- Ich habe Lieb erworben wie ein Haus, Und durfte noch nicht einziehn; bin verkauft, Doch noch nicht übergeben.  Dieser Tag Währt so verdrießlich lang mir wie die Nacht Vor einem Fest dem ungeduldgen Kinde, Das noch sein neues Kleid nicht tragen durfte.</p>
@@ -679,7 +706,7 @@ h2 + p, .first { text-indent: 0; }
 <p>WÄRTERIN Geht nur ins Schlafgemach!  Zum Troste find ich Euch Romeo: ich weiß wohl, wo er steckt. Hört, Romeo soll Euch zur Nacht erfreuen; Ich geh zu ihm; beim Pater wartet er.</p>
 <p>JULIA O such ihn auf!  Gib diesen Ring dem Treuen; Bescheid aufs letzte Lebewohl ihn her!</p>
 <p>(Beide ab.)</p>
-<h2>DRITTE SZENE</h2>
+<h2 class="chapter" id="c13">Dritte Szene</h2>
 <p>(Bruder Lorenzos Zelle)</p>
 <p>(Lorenzo und Romeo kommen.] Bruder Lorenzo tritt auf.)</p>
 <p>LORENZO Komm, Romeo!  Hervor, du Mann der Furcht! Bekümmernis hängt sich mit Lieb an dich, Und mit dem Mißgeschick bist du vermählt.</p>
@@ -718,7 +745,7 @@ h2 + p, .first { text-indent: 0; }
 <p>LORENZO Geh!  Gute Nacht!  Und hieran hängt dein Los: Entweder geh, bevor man Wachen stellt, Wo nicht, verkleidet in der Frühe fort. Verweil in Mantua; ich forsch indessen Nach deinem Diener, und er meldet dir Von Zeit zu Zeit ein jedes gute Glück, Das hier begegnet.  Gib mir deine Hand! Es ist schon spät.  Fahr wohl denn!  Gute Nacht!</p>
 <p>ROMEO Mich rufen Freuden über alle Freuden, Sonst wärs ein Leid, von dir so schnell zu scheiden. Leb wohl!</p>
 <p>(Beide ab.)</p>
-<h2>VIERTE SZENE</h2>
+<h2 class="chapter" id="c14">Vierte Szene</h2>
 <p>(Ein Zimmer in Capulets Hause)</p>
 <p>(Capulet, Gräfin Capulet, Paris.)</p>
 <p>CAPULET Es ist so schlimm ergangen, Graf, daß wir Nicht Zeit gehabt, die Tochter anzumahnen. Denn seht, sie liebte herzlich ihren Vetter. Das tat ich auch; nun, einmal stirbt man doch.-- Es ist schon spät, sie kommt nicht mehr herunter, Ich sag Euch, wärs nicht der Gesellschaft wegen, Seit einer Stunde läg ich schon im Bett.</p>
@@ -732,7 +759,7 @@ h2 + p, .first { text-indent: 0; }
 <p>(Paris ab.)</p>
 <p>He!  Licht auf meine Kammer! Nach meiner Weise ists so spät, daß wir Bald früh es nennen können.  Gute Nacht!</p>
 <p>([Capulet und die Gräfin ab.] Alle ab.)</p>
-<h2>FÜNFTE SZENE</h2>
+<h2 class="chapter" id="c15">Fünfte Szene</h2>
 <p>(Eine offene Galerie vor Juliens Zimmer mit Blick auf den Garten)</p>
 <p>(Romeo und Julia.)</p>
 <p>JULIA Willst du schon gehn?  Der Tag ist ja noch fern. Es war die Nachtigall und nicht die Lerche, Die eben jetzt dein banges Ohr durchdrang; Sie singt des Nachts auf dem Granatbaum dort. Glaub, Lieber, mir: es war die Nachtigall.</p>
@@ -827,7 +854,7 @@ h2 + p, .first { text-indent: 0; }
 <p>GRÄFIN CAPULET Die Zeit wird kurz zu unsrer Anstalt fallen; Es ist fast Nacht.</p>
 <p>CAPULET Blitz!  Ich will frisch mich rühren, Und alles soll schon gehn, Frau, dafür steh ich. Geh du zu Julien, hilf an ihrem Putz. Ich gehe nicht zu Bett; laß mich gewähren, Ich will die Hausfrau diesmal machen.--Heda!-- Kein Mensch zur Hand?--Gut, ich will selber gehn Zum Grafen Paris, um ihn anzutreiben Auf morgen früh; mein Herz ist mächtig leicht, Seit dies verkehrte Mädchen sich besonnen.</p>
 <p>(Capulet und die Gräfin ab.)</p>
-<h2>DRITTE SZENE</h2>
+<h2 class="chapter" id="c16">Dritte Szene</h2>
 <p>(Juliens Kammer)</p>
 <p>(Julia und die Wärterin.)</p>
 <p>JULIA Ja, dieser Anzug ist der beste.--Doch Ich bitt dich, liebe Amme, laß mich nun Für diese Nacht allein; denn viel Gebete Tun not mir, um den Himmel zu bewegen, Daß er auf meinen Zustand gnädig lächle, Der, wie du weißt, verderbt und sündlich ist.</p>
@@ -840,7 +867,7 @@ h2 + p, .first { text-indent: 0; }
 <p>(Sie legt einen Dolch neben sich.)</p>
 <p>Wie?  Wär es Gift, das mir mit schlauer Kunst Der Mönch bereitet, mir den Tod zu bringen, Auf daß ihn diese Heirat nicht entehre, Weil er zuvor mich Romeo vermählt? So, fürcht ich, ists!--Doch dünkt mich, kanns nicht sein, Denn er ward stets ein frommer Mann erfunden. Ich will nicht Raum so bösem Argwohn geben. Wie aber, wenn ich, in die Gruft gelegt, Erwache vor der Zeit, da Romeo Mich zu erlösen kommt?  Furchtbarer Fall! Werd ich dann nicht in dem Gewölb ersticken, Des giftger Mund nie reine Lüfte einhaucht, Und so erwürgt da liegen, wann er kommt? Und leb ich auch, könnt es nicht leicht geschehn, Daß mich das grause Bild von Tod und Nacht Zusammen mit den Schrecken jenes Ortes Dort im Gewölb in alter Katakombe, Wo die Gebeine aller meiner Ahnen Seit vielen hundert Jahren aufgehäuft, Wo frisch beerdigt erst der blutge Tybalt Im Leichentuch verwest; wo, wie man sagt, In mitternächtger Stunde Geister hausen-- Weh, weh!--könnt es nicht leicht geschehn, daß ich, Zu früh erwachend--und nun ekler Dunst, Gekreisch wie von Alraunen, die man aufwühlt, Das Sterbliche, die&#x27;s hören, sinnlos macht-- Oh, wach ich auf, werd ich nicht rasend werden, Umringt von all den greuelvollen Schrecken, Und toll mit meiner Väter Gliedern spielen? Und Tybalt aus dem Leichentuche zerren? Und in der Wut mit irgendeines Ahnherrn Gebein zerschlagen mein zerrüttet Hirn? O da!  Mich dünkt, ich sehe Tybalts Geist! Er späht nach Romeo, der seinen Leib Auf einen Degen spießte.--Tybalt, halt!-- Ich komme, Romeo!  Dies trink ich dir!</p>
 <p>([Sie trinkt und] wirft sich auf das Bett.)</p>
-<h2>VIERTE SZENE</h2>
+<h2 class="chapter" id="c17">Vierte Szene</h2>
 <p>(Ein Saal in Capulets Hause)</p>
 <p>(Gräfin Capulet und die Wärterin.)</p>
 <p>GRÄFIN CAPULET Da, nehmt die Schlüssel, holt noch mehr Gewürz!</p>
@@ -867,7 +894,7 @@ h2 + p, .first { text-indent: 0; }
 <p>(Die Wärterin kommt.)</p>
 <p>Weckt Julien auf!  Geht, putzt sie mir heraus! Ich geh indes und plaudre mit dem Grafen. Eilt Euch, macht fort!  Der Bräutgam ist schon da. Fort, sag ich Euch.</p>
 <p>(Beide ab.)</p>
-<h2>FÜNFTE SZENE</h2>
+<h2 class="chapter" id="c18">Fünfte Szene</h2>
 <p>(Juliens Kammer)</p>
 <p>(Julia auf dem Bett.  Die Wärterin kommt.)</p>
 <p>WÄRTERIN Fräulein!--Nun, Fräulein!  Julia!--Nun, das schläft! He, Lamm!  He, Fräulein!  Pfui, Langschläferin! Mein Schätzchen, sag ich!  Süßes Herz!  Mein Bräutchen! Was, nicht ein Laut?  Ihr nehmt Eur Teil voraus, Schlaft für &#x27;ne Woche; denn ich steh dafür, Auf nächste Nacht hat seine Ruh Graf Paris Daran gesetzt, daß wenig Ruh Ihr habt! Behüt der Herr sie!  Wie gesund sie schläft! Ich muß sie aber wecken.--Fräulein!  Fräulein! Laßt Euch den Grafen nur im Bett ertappen, Der wird Euch schon ermuntern; meint Ihr nicht?-- Was, schon in vollen Kleidern?  Und so wieder Sich hingelegt?  Ich muß durchaus Euch wecken. He, Fräulein!  Fräulein!  Fräulein!-- Daß Gott, daß Gott!  Zu Hülfe!  Sie ist tot! Ach, liebe Zeit!  Daß ich je ward geboren! Bringt Weingeist, he!  He, gnädger Herr!  Frau Gräfin!</p>
@@ -918,8 +945,7 @@ h2 + p, .first { text-indent: 0; }
 <p>ERSTER MUSIKANT Was für ein Pestkerl ist das?</p>
 <p>ZWEITER MUSIKANT Hol ihn der Henker!  Kommt, wir wollen hier hineingehn, auf die Trauerleute warten und sehen, ob es nichts zu essen gibt.</p>
 <p>(Alle ab.)</p>
-<h2>FÜNFTER AKT</h2>
-<h2>ERSTE SZENE</h2>
+<h2 class="chapter" id="c19">Fünfter akt — Erste Szene</h2>
 <p>(Mantua.  Eine Straße)</p>
 <p>(Romeo tritt auf.)</p>
 <p>ROMEO Darf ich dem Schmeichelblick des Schlafes traun, So deuten meine Träum ein nahes Glück. Leicht auf dem Thron sitzt meiner Brust Gebieter; Mich hebt ein ungewohnter Geist mit frohen Gedanken diesen ganzen Tag empor. Mein Mädchen, träumt ich, kam und fand mich tot --Seltsamer Traum, der Tote denken läßt!-- Und hauchte mir solch Leben ein mit Küssen, Daß ich vom Tod erstand und Kaiser war. Ach Herz!  Wie süß ist Liebe selbst begabt, Da schon so reich an Freud ihr Schatten ist!</p>
@@ -1040,5 +1066,5 @@ h2 + p, .first { text-indent: 0; }
 <p>PRINZ Nur düstern Frieden bringt uns dieser Morgen; Die Sonne scheint, verhüllt vor Weh, zu weilen. Kommt, offenbart mir ferner, was verborgen, Ich will dann strafen oder Gnad erteilen, Denn nie verdarben Liebende noch so Wie diese: Julia und ihr Romeo.</p>
 <p>(Alle ab.)</p>
 <p>Ende dieses Projekt Gutenberg Etextes Romeo und Julia, von William Shakespeare (Übersetzt von August Wilhelm von Schlegel)</p>
-<p class="colophon">Texte du domaine public, source : Project Gutenberg (#6996). Traduction : Schlegel, August Wilhelm von († 1845). Édition numérique EbookClassics.</p>
+<p class="colophon">Gemeinfreier Text. Digitale Ausgabe EbookClassics.</p>
 </body></html>

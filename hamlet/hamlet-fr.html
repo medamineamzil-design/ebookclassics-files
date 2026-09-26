@@ -1,29 +1,72 @@
 <!DOCTYPE html>
 <html lang="fr"><head><meta charset="utf-8">
-<title>Hamlet</title><style>
-@page { margin: 22mm 20mm; }
-body { font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', serif; line-height: 1.6;
-       color: #1f1a14; max-width: 38em; margin: 0 auto; padding: 1.5em 1.2em; }
-h1 { font-size: 2.1em; text-align: center; margin: 1.5em 0 .2em; letter-spacing: .01em; }
-.author { text-align: center; font-size: 1.15em; font-style: italic; margin-bottom: 3em; color: #5a4a36; }
-h2 { font-size: 1.25em; text-align: center; margin: 2.6em 0 1.2em; letter-spacing: .06em;
-     text-transform: uppercase; font-weight: normal; page-break-before: always; break-before: page; }
-p { margin: 0; text-indent: 1.4em; text-align: justify; hyphens: auto; }
-h2 + p, .first { text-indent: 0; }
-.colophon { font-size: .85em; color: #6b5d45; text-align: center; margin-top: 4em; text-indent: 0; }
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hamlet — William Shakespeare</title><style>
+:root{--paper:#fbf8f1;--ink:#1f1b16;--muted:#6f6352;--accent:#9a6b2f;--rule:#e4dccb}
+@media (prefers-color-scheme:dark){:root{--paper:#16140f;--ink:#ece6d8;--muted:#a79c88;--accent:#d8a95e;--rule:#2e2a22}}
+html{background:var(--paper)}
+body{font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Libertinus Serif",Georgia,serif;color:var(--ink);
+     background:var(--paper);line-height:1.65;font-size:1.12rem;max-width:36em;margin:0 auto;padding:2.5em 1.25em 5em}
+.titlepage{text-align:center;min-height:70vh;display:flex;flex-direction:column;justify-content:center;gap:.6em;
+           border-bottom:1px solid var(--rule);margin-bottom:2.5em;padding-bottom:2.5em}
+.titlepage img{max-width:260px;width:60%;margin:0 auto 1.5em;border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+h1{font-size:2.4em;line-height:1.15;font-weight:600;margin:0;letter-spacing:-.01em}
+.author{font-style:italic;font-size:1.25em;color:var(--accent);margin:0}
+.translator{font-size:.95em;color:var(--muted);margin:0}
+nav.toc{margin:0 0 3em}
+nav.toc h2{font-size:.85em;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:left;margin:0 0 .8em}
+nav.toc ol{list-style:none;padding:0;margin:0;columns:1}
+nav.toc li{margin:.25em 0}
+nav.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent}
+nav.toc a:hover{border-color:var(--accent)}
+h2.chapter{font-size:1.45em;font-weight:600;text-align:center;margin:3.5em 0 1.6em;line-height:1.3}
+h2.chapter::before{content:"";display:block;width:3em;height:2px;background:var(--accent);margin:0 auto 1.1em}
+p{margin:0;text-indent:1.5em;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+h2.chapter + p, .titlepage + p{text-indent:0}
+h2.chapter + p::first-letter{font-size:3.1em;float:left;line-height:.85;padding:.08em .08em 0 0;color:var(--accent);font-weight:600}
+.colophon{margin-top:5em;padding-top:1.5em;border-top:1px solid var(--rule);text-align:center;color:var(--muted);font-size:.85em;text-indent:0}
+h3.sub{font-size:1em;font-weight:600;font-variant:small-caps;letter-spacing:.04em;text-align:center;margin:2.2em 0 1em}
+h3.sub + p{text-indent:0}
+@media print{h2.chapter{break-before:page}}
 </style></head><body>
+<header class="titlepage">
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjI0MDAiIHZpZXdCb3g9IjAgMCAxNjAwIDI0MDAiPgo8cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSIyNDAwIiBmaWxsPSIjNGExNTI2Ii8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjMwMCIgZmlsbD0iI2YyYzZhMCIgb3BhY2l0eT0iLjkyIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNGExNTI2IiBzdHJva2Utd2lkdGg9IjEyIiBvcGFjaXR5PSIuNSIvPgo8Y2lyY2xlIGN4PSIxMTIwIiBjeT0iNTYwIiByPSIxMjAiIGZpbGw9IiM0YTE1MjYiIG9wYWNpdHk9Ii4xOCIvPgo8cmVjdCB4PSIxNjAiIHk9IjkzMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIxMCIgZmlsbD0iI2YyYzZhMCIvPgo8dGV4dCB4PSIxNjAiIHk9IjExODAiIGZvbnQtc2l6ZT0iMTUwIiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmYmVmZTYiPkhhbWxldDwvdGV4dD4KPHRleHQgeD0iMTYwIiB5PSIxNDE1IiBmb250LXNpemU9IjY4IiBmb250LXN0eWxlPSJpdGFsaWMiIGZvbnQtZmFtaWx5PSJMaWJlcnRpbnVzIFNlcmlmLCBHZW9yZ2lhLCBzZXJpZiIgZmlsbD0iI2YyYzZhMCI+V2lsbGlhbSBTaGFrZXNwZWFyZTwvdGV4dD4KPHRleHQgeD0iMTYwIiB5PSIyMjMwIiBmb250LXNpemU9IjQ0IiBsZXR0ZXItc3BhY2luZz0iMTQiIGZvbnQtZmFtaWx5PSJMaWJlcnRpbnVzIFNlcmlmLCBHZW9yZ2lhLCBzZXJpZiIgZmlsbD0iI2ZiZWZlNiIgb3BhY2l0eT0iLjc1Ij5FQk9PS0NMQVNTSUNTPC90ZXh0Pgo8L3N2Zz4=" alt="">
 <h1>Hamlet</h1>
 <p class="author">William Shakespeare</p>
+<p class="translator">Traduction de Guizot, François</p>
+</header>
+<nav class="toc"><h2>Table des matières</h2><ol>
+<li><a href="#c1">Volume 1 Vie de Shakspeare Hamlet.--La Tempête.--Coriolan.</a></li>
+<li><a href="#c2">Acte premier — Scène I</a></li>
+<li><a href="#c3">Scène II</a></li>
+<li><a href="#c4">Scène III</a></li>
+<li><a href="#c5">Scène IV</a></li>
+<li><a href="#c6">Scène V</a></li>
+<li><a href="#c7">Scène I</a></li>
+<li><a href="#c8">Scène I</a></li>
+<li><a href="#c9">Scène II</a></li>
+<li><a href="#c10">HAMLET.--A part entière, vous dis-je!</a></li>
+<li><a href="#c11">Scène III</a></li>
+<li><a href="#c12">Scène IV</a></li>
+<li><a href="#c13">Scène I</a></li>
+<li><a href="#c14">Scène II</a></li>
+<li><a href="#c15">Scène III</a></li>
+<li><a href="#c16">Scène IV</a></li>
+<li><a href="#c17">Scène V</a></li>
+<li><a href="#c18">Scène vi</a></li>
+<li><a href="#c19">Scène VII</a></li>
+<li><a href="#c20">Scène I</a></li>
+<li><a href="#c21">Scène II</a></li>
+</ol></nav>
 <p>====================================================================== Ce document est tiré de:</p>
 <p>OEUVRES COMPLÈTES DE SHAKSPEARE</p>
 <p>TRADUCTION DE M. GUIZOT</p>
 <p>NOUVELLE ÉDITION ENTIÈREMENT REVUE AVEC UNE ÉTUDE SUR SHAKSPEARE DES NOTICES SUR CHAQUE PIÈCE ET DES NOTES</p>
-<p>Volume 1 Vie de Shakspeare Hamlet.--La Tempête.--Coriolan.</p>
+<h2 class="chapter" id="c1">Volume 1 Vie de Shakspeare Hamlet.--La Tempête.--Coriolan.</h2>
 <p>PARIS A LA LIBRAIRIE ACADÉMIQUE DIDIER ET Ce, LIBRAIRES-ÉDITEURS 35, QUAI DES AUGUSTINS 1864</p>
 <p>======================================================================</p>
-<h2>HAMLET</h2>
-<h2>TRAGÉDIE</h2>
-<h2>NOTICE SUR HAMLET</h2>
+<h3 class="sub">Hamlet — Tragédie</h3>
+<h3 class="sub">Notice sur Hamlet</h3>
 <p>Hamlet n&#x27;est pas le plus beau des drames de Shakspeare; Macbeth et, je crois aussi Othello, lui sont, à tout prendre, supérieurs; mais c&#x27;est peut-être celui qui contient les plus éclatants exemples de ses beautés les plus sublimes comme de ses plus choquants défauts. Jamais il n&#x27;a dévoilé avec plus d&#x27;originalité, de profondeur et d&#x27;effet dramatique, l&#x27;état intime d&#x27;une grande âme; jamais aussi il ne s&#x27;est plus abandonné aux fantaisies terribles ou burlesques de son imagination, et à cette abondante intempérance d&#x27;un esprit pressé de répandre ses idées sans les choisir, et qui se plaît à les rendre frappantes par une expression forte, ingénieuse et inattendue, sans aucun souci de leur forme naturelle et pure.</p>
 <p>Selon sa coutume, Shakspeare ne s&#x27;est point inquiété, dans Hamlet, d&#x27;inventer ni d&#x27;arranger son sujet: il a pris les faits tels qu&#x27;il les a trouvés dans les récits fabuleux de l&#x27;ancienne histoire de Danemark, par Saxon le Grammairien, transformés en histoires tragiques par Belleforest, vers le milieu du XVIe siècle, et aussitôt traduits et devenus populaires en Angleterre, non-seulement dans le public, mais sur le théâtre, car il paraît certain que six ou sept ans avant Shakspeare, en 1589, un poëte anglais, nommé Thomas Kyd, avait déjà fait de Hamlet une tragédie. Voici le texte du roman historique dans lequel, comme un sculpteur dans un bloc de marbre, Shakspeare a taillé la sienne.</p>
 <p>«Fengon, ayant gagné secrètement des hommes, se rua un jour en un banquet sur son frère Horwendille, lequel occit traîtreusement, puis cauteleusement se purgea devant ses sujets d&#x27;un si détestable massacre. Avant de mettre sa main sanguinolente et parricide sur son frère, il avoit incestueusement souillé la couche fraternelle, abusant de la femme de celui dont il pourchassa l&#x27;honneur devant qu&#x27;il effectuât sa ruine....</p>
@@ -41,18 +84,15 @@ h2 + p, .first { text-indent: 0; }
 <p>Mais Shakspeare a fait bien davantage: sous sa main la folie de Hamlet devient tout autre chose que la préméditation obstinée ou l&#x27;exaltation mélancolique d&#x27;un jeune prince du moyen âge, placé dans une situation périlleuse et plongé dans un sombre dessein: c&#x27;est un grave état moral, une grande maladie de l&#x27;âme qui, à certaines époques et dans certaines conditions de l&#x27;état social et des moeurs, se répand parmi les hommes, atteint souvent les mieux doués et les plus nobles, et les frappe d&#x27;un trouble quelquefois bien voisin de la folie. Le monde est plein de mal, de toute sorte de mal. Que de souffrances et de crimes, et d&#x27;erreurs fatales, quoique innocentes! Que d&#x27;iniquités générales et privées, éclatantes et ignorées! Que de mérites étouffés ou méconnus, perdus pour le public, à charge pour leurs possesseurs! Que de mensonges et de froideur, et de légèreté, et d&#x27;ingratitude, et d&#x27;oubli dans les relations et les sentiments des hommes! La vie si courte et pourtant si agitée, tantôt si pesante et tantôt si vide! L&#x27;avenir si obscur! tant de ténèbres au terme de tant d&#x27;épreuves! A ceux qui ne voient que cette face du monde et de la destinée humaine, on comprend que l&#x27;esprit se trouble, que le coeur défaille, et qu&#x27;une mélancolie misanthropique devienne une disposition habituelle qui les jette tour à tour dans l&#x27;irritation ou dans le doute, dans le mépris ironique ou dans l&#x27;abattement.</p>
 <p>Ce n&#x27;était point là, à coup sûr, la maladie des temps où la chronique fait vivre Hamlet, ni de celui où vivait Shakspeare lui-même. Le moyen âge et le XVIe siècle étaient des époques trop actives et trop rudes pour que ces contemplations amères et ces développements malsains de la sensibilité humaine y trouvassent aisément accès. Ils appartiennent bien plutôt à des temps de vie molle et d&#x27;une excitation morale à la fois vive et oisive, quand les âmes sont jetées hors de leur repos et dépourvues de toute occupation forte et obligée. C&#x27;est alors que naissent ces mécontentements méditatifs, ces impressions partiales et irritées, cet entier oubli des biens, cette susceptibilité passionnée devant les maux de la condition humaine, et toute cette colère savante de l&#x27;homme contre l&#x27;ordre et les lois de cet univers.</p>
 <p>Ce malaise douloureux, ce trouble profond que porte dans l&#x27;âme une si sombre et si fausse appréciation des choses en général et de l&#x27;homme lui-même, et qu&#x27;il ne rencontrait guère dans son propre temps, ni dans les temps dont il lisait l&#x27;histoire, Shakspeare les a devinés et en a fait la figure et le caractère de Hamlet. Qu&#x27;on relise les quatre grands monologues où le prince de Danemark s&#x27;abandonne à l&#x27;expression réfléchie de ses sentiments intimes[2]; qu&#x27;on recueille dans toute la pièce les mots épars où il les manifeste en passant; qu&#x27;on recherche et qu&#x27;on résume ce qui éclate et ce qui se cache dans tout ce qu&#x27;il pense et ce qu&#x27;il dit; partout on reconnaîtra la maladie morale que je viens de décrire. Là réside vraiment, bien plus que dans ses chagrins ou dans ses périls personnels, la source de la mélancolie de Hamlet; c&#x27;est là son idée fixe et sa folie.</p>
-<p>[Note 2: Acte Ier, scène II;--Acte II, scène II;--Acte III, scène Ire--Acte IV, scène IV.]</p>
 <p>Et avec l&#x27;admirable bon sens du génie, pour rendre, non-seulement supportable, mais saisissant, le spectacle d&#x27;une maladie si sombre, Shakspeare a mis, dans le malade lui-même, les qualités les plus douces et les plus attrayantes. Il a fait Hamlet beau, populaire, généreux, affectueux, tendre même. Il a voulu que le caractère instinctif de son héros relevât en quelque sorte la nature humaine des méfiances et des anathèmes dont sa mélancolie philosophique l&#x27;accablait.</p>
 <p>Mais, en même temps, guidé par cet instinct d&#x27;harmonie qui n&#x27;abandonne jamais le vrai poëte, Shakspeare a répandu sur tout le drame la même couleur sombre qui ouvre la scène: le spectre du roi assassiné imprime dès les premiers pas et conduit jusqu&#x27;au terme le mouvement. Et quand le terme arrive, c&#x27;est aussi la mort qui règne; tous meurent, les innocents comme les coupables, la jeune fille comme le prince, et plus folle que lui: tous vont rejoindre le spectre qui n&#x27;est sorti de son tombeau que pour les y pousser tous avec lui. L&#x27;événement tout entier est aussi lugubre que la pensée de Hamlet. Il ne reste sur la scène que les étrangers norwégiens, qui y paraissent pour la première fois et qui n&#x27;ont pris aucune part à l&#x27;action.</p>
 <p>Après cette grande peinture morale, vient la seconde des beautés supérieures de Shakspeare, l&#x27;effet dramatique. Elle n&#x27;est nulle part plus complète et plus frappante que dans Hamlet, car les deux conditions du grand effet dramatique s&#x27;y trouvent, l&#x27;unité dans la variété; une seule impression constante, dominante; et cette même impression diversifiée selon le caractère, le tour d&#x27;esprit, la condition des divers personnages dans lesquels elle se reproduit. La mort plane sur tout le drame; le spectre du roi assassiné la représente et la personnifie; il est toujours là, tantôt présent lui-même, tantôt présent à la pensée et dans les discours des autres personnages. Grands ou petits, coupables ou innocents, intéressés ou indifférents à son histoire, ils sont tous constamment occupés de lui; les uns avec remords, les autres avec affection et douleur, d&#x27;autres encore simplement avec curiosité, quelques-uns même sans curiosité et uniquement par occasion: par exemple, ce grossier fossoyeur qui avait, dit-il, commencé son métier le jour où feu ce grand roi avait remporté une grande victoire sur son voisin le roi de Norwège, et qui, en le continuant pour creuser la fosse de la belle Ophélia, la maîtresse folle de Hamlet fou, retrouve le crâne du pauvre Yorick, ce bouffon du roi défunt, le crâne du bouffon de ce spectre qui sort à chaque instant de son tombeau pour troubler les vivants et obtenir justice de son assassin. Tous ces personnages, au milieu de toutes ces circonstances, sont amenés, retirés, ramenés tour à tour, chacun avec sa physionomie, son langage, son impression propre; et tous concourent incessamment à entretenir, à répandre, à fortifier cette impression unique et générale de la mort, de la mort juste ou injuste, naturelle ou violente, oubliée ou pleurée, mais toujours présente, et qui est la loi suprême et devrait être la pensée permanente des hommes.</p>
 <p>Au théâtre, devant des spectateurs réunis en grand nombre et mêlés, l&#x27;effet de ce drame, à la fois si lugubre et si animé, est irrésistible; l&#x27;âme est remuée dans ses dernières profondeurs, en même temps que l&#x27;imagination et les sens sont occupés et entraînés par un mouvement extérieur continu et rapide. C&#x27;est là le double génie de Shakspeare, philosophe et poëte également inépuisable, moraliste et machiniste tour à tour, aussi habile à remplir bruyamment la scène qu&#x27;à pénétrer et à mettre en lumière les plus intimes secrets du coeur humain. Soumis à l&#x27;action immédiate d&#x27;une telle puissance, les hommes en masse ne lui demandent rien au delà de ce qu&#x27;elle leur donne; elle les domine et emporte d&#x27;assaut leur sympathie et leur admiration. Les esprits difficiles et délicats, qui jugent presque au même moment où ils sentent, et qui portent le besoin de la perfection jusque dans leurs plus vifs plaisirs, goûtent et admirent aussi immensément Shakspeare; mais ils sont désagréablement troublés dans leur admiration et leur jouissance, tantôt par l&#x27;entassement et la confusion des personnages et des incidents inutiles; tantôt par les longs et subtils développements d&#x27;une réflexion ou d&#x27;une idée qu&#x27;il conviendrait au personnage d&#x27;indiquer en passant, mais dans laquelle le poëte se complaît et s&#x27;arrête pour son propre compte; plus souvent encore par ce bizarre mélange de grossièreté et de recherche dans le langage qui donne quelquefois, aux sentiments les plus vrais, des formes factices et pédantes, et, aux plus belles inspirations de la philosophie ou de la poésie, une physionomie barbare. Ces défauts abondent dans Hamlet. Je ne veux ni me donner la pénible satisfaction de le prouver, ni me dispenser de le dire. En fait de génie, Shakspeare n&#x27;a peut-être point de rivaux; dans les hautes et pures régions de l&#x27;art, il ne saurait être un modèle.</p>
-<h2>HAMLET</h2>
-<h2>TRAGÉDIE</h2>
-<h2>PERSONNAGES</h2>
+<h3 class="sub">Hamlet — Tragédie</h3>
+<h3 class="sub">Personnages</h3>
 <p>CLAUDIUS, roi de Danemark. HAMLET, fils de Hamlet et neveu de Claudius. POLONIUS, seigneur chambellan. HORATIO, ami de Hamlet. LAERTES, fils de Polonius. VOLTIMAND, CORNÉLIUS, ROSENCRANTZ, GUILDENSTERN, seigneurs de la cour de Danemark. OSRICK, seigneur de la cour. UN AUTRE SEIGNEUR DE LA COUR. UN PRÊTRE. MARCELLUS, BERNARDO, officiers. FRANCISCO, soldat. REYNALDO, domestique de Polonius. UN CAPITAINE, ambassadeur. L&#x27;OMBRE du père d&#x27;Hamlet. FORTINBRAS, prince de Norwége. GERTRUDE, reine de Danemark et mère d&#x27;Hamlet. OPHÉLIA, fille de Polonius. SEIGNEURS, DAMES, OFFICIERS, SOLDATS, COMÉDIENS, FOSSOYEURS, MATELOTS, MESSAGERS et autres serviteurs.</p>
 <p>La scène est à Elseneur.</p>
-<h2>ACTE PREMIER</h2>
-<h2>SCÈNE I</h2>
+<h2 class="chapter" id="c2">Acte premier — Scène I</h2>
 <p>Elseneur.--Une plate-forme devant le château.</p>
 <p>FRANCISCO montant la garde, BERNARDO vient à lui.</p>
 <p>BERNARDO.--Qui va là?</p>
@@ -123,7 +163,7 @@ h2 + p, .first { text-indent: 0; }
 <p>MARCELLUS.--Il s&#x27;est évanoui au cri du coq. Quelques-uns disent que, toujours, quand la saison s&#x27;approche où la naissance de notre Sauveur est célébrée, cet oiseau de l&#x27;aurore chante durant toute la nuit; alors, dit-on, aucun esprit n&#x27;ose se risquer dehors; les nuits sont saines; alors nulle planète dont l&#x27;action nous frappe, nulle fée qui nous surprenne, nulle sorcière qui ait le pouvoir de charmer, tant ce moment de l&#x27;année est sanctifié et riche de grâces.</p>
 <p>HORATIO.--Je l&#x27;ai ouï dire ainsi, et je le crois en partie. Mais voyez: le matin, drapés dans son manteau rougissant, s&#x27;avance parmi la rosée sur cette haute colline à l&#x27;orient. Descendons notre garde, et si vous m&#x27;en croyez, faisons part au jeune Hamlet de ce que nous avons vu cette nuit; car, sur ma vie, cet esprit, muet pour nous, lui parlera. Vous accordez-vous à vouloir que nous l&#x27;instruisions de cela, comme nous l&#x27;ordonnent nos affections, conformes à notre devoir?</p>
 <p>MARCELLUS.--Faisons cela, je vous prie; je sais où nous pourrons le trouver ce matin fort à propos.</p>
-<h2>SCÈNE II</h2>
+<h2 class="chapter" id="c3">Scène II</h2>
 <p>Une salle de réception dans le château.</p>
 <p>LE ROI, LA REINE, HAMLET, POLONIUS, LAERTES, VOLTIMAND, CORNÉLIUS, et des seigneurs de leur suite, entrent.</p>
 <p>LE ROI.--Bien que le souvenir de la mort de Hamlet, notre frère bien-aimé, soit encore vert et vivace, bien qu&#x27;il nous convînt, à nous, délaisser nos coeurs dans la tristesse, et à notre royaume tout entier de montrer comme un seul front contracté par la même douleur, la raison, cependant, combattant la nature, nous a amenés à penser à lui avec une sage douleur et non sans quelque souvenir de nous-mêmes. C&#x27;est pourquoi voici celle qui fut d&#x27;abord notre soeur, maintenant notre reine, compagne de notre empire sur ces belliqueux États, et que, avec une joie déroutée, avec un oeil brillant, tandis que l&#x27;autre versait des larmes, mêlant les réjouissances aux funérailles et les obsèques au mariage, pesant dans une balance égale le plaisir et l&#x27;affliction, nous avons prise pour femme. Nous n&#x27;avons point résisté en ceci à vos sagesses supérieures, qui ont eu leur libre allure dans tout le cours de cette affaire. Recevez tous nos remercîments.</p>
@@ -208,7 +248,7 @@ h2 + p, .first { text-indent: 0; }
 <p>TOUS.--Nos respects à votre seigneurie.</p>
 <p>HAMLET.--Non, votre affection, comme la mienne est à vous. Adieu! (Horatio, Marcellus et Bernardo sortent.)--L&#x27;âme de mon père tout armée! tout ne va pas bien. Je soupçonne quelque mauvais mystère. Oh! je voudrais que la nuit fût venue! Jusque-là, sois calme, mon âme! Les mauvaises actions, quand la terre entière pèserait sur elles, surgiront aux yeux des hommes.</p>
 <p>(Il sort.)</p>
-<h2>SCÈNE III</h2>
+<h2 class="chapter" id="c4">Scène III</h2>
 <p>Un appartement dans la maison de Polonius.</p>
 <p>LAERTES ET OPHÉLIA entrent.</p>
 <p>LAERTES.--Mes bagages sont embarqués; adieu! Et maintenant, soeur, quand les vents en offriront l&#x27;occasion et qu&#x27;un convoi nous viendra en aide, ne vous endormez pas, mais donnez-moi de vos nouvelles.</p>
@@ -238,7 +278,7 @@ h2 + p, .first { text-indent: 0; }
 <p>POLONIUS.--Ah! oui, pièges à attraper des bécasses! Je sais, quand le sang brûle, combien l&#x27;âme est prodigue à prêter à la langue des serments. Ce sont des éclairs, ma fille, donnant plus de lumière que de chaleur, qui perdent aussitôt chaleur et lumière, et dont les promesses mêmes s&#x27;éteignent aussitôt faites. Vous ne devez pas les prendre pour du feu. A partir de cette heure, soyez un peu plus avare de votre virginale présence; mettez vos entretiens à plus haut prix, et que votre conversation ne soit pas à commandement. Quant au seigneur Hamlet, ce que vous en devez croire, c&#x27;est qu&#x27;il est jeune et qu&#x27;il lui est permis d&#x27;aller au bout d&#x27;une longe plus longue que ne saurait être la vôtre. Bref, Ophélia, ne croyez pas à ses serments; ce sont des enjôleurs, ils n&#x27;ont pas la couleur dont ils sont revêtus en dehors; ce ne sont rien qu&#x27;entremetteurs de projets fort profanes, qui ne semblent respirer que saintes et dévotes instances, afin de mieux tromper. Une fois pour toutes, et pour parler clairement, je ne veux pas que désormais vous fassiez mauvais usage de votre loisir en parlant au seigneur Hamlet, ou en l&#x27;écoutant; prenez-y garde, entendez-vous, et passez votre chemin.</p>
 <p>OPHÉLIA.--J&#x27;obéirai, mon seigneur.</p>
 <p>(Ils sortent.)</p>
-<h2>SCÈNE IV</h2>
+<h2 class="chapter" id="c5">Scène IV</h2>
 <p>La plate-forme.</p>
 <p>HAMLET, HORATIO ET MARCELLUS entrent.</p>
 <p>HAMLET.--L&#x27;air est subtil et mordant; il fait très-froid.</p>
@@ -273,7 +313,7 @@ h2 + p, .first { text-indent: 0; }
 <p>HORATIO.--Le ciel en décidera.</p>
 <p>MARCELLUS.--Eh bien! suivons-le.</p>
 <p>(Ils sortent.)</p>
-<h2>SCÈNE V</h2>
+<h2 class="chapter" id="c6">Scène V</h2>
 <p>Un endroit plus écarté de la plate-forme.</p>
 <p>LE FANTOME ET HAMLET entrent.</p>
 <p>HAMLET.--Où veux-tu me conduire? Parle, je n&#x27;irai pas plus loin.</p>
@@ -341,9 +381,8 @@ h2 + p, .first { text-indent: 0; }
 <p>LE FANTOME, sous la terre.--Jurez!</p>
 <p>HAMLET.--Calme-toi, calme-toi, âme en peine!... Ainsi, messieurs, je me recommande à vous de toute mon affection, et tout ce qu&#x27;un aussi pauvre homme que Hamlet pourra faire pour vous exprimer son attachement et son amitié, Dieu aidant, ne vous manquera pas. Allons-nous en ensemble; et toujours le doigt sur les lèvres, je vous prie. Notre siècle est en désarroi. O fatalité maudite, que je sois jamais né pour le remettre en ordre! Allons, venez, partons ensemble.</p>
 <p>(Ils sortent.)</p>
-<h2>FIN DU PREMIER ACTE.</h2>
-<h2>ACTE DEUXIÈME</h2>
-<h2>SCÈNE I</h2>
+<h3 class="sub">Fin du premier Acte — Acte deuxième</h3>
+<h2 class="chapter" id="c7">Scène I</h2>
 <p>Une chambre dans la maison de Polonius.</p>
 <p>POLONIUS ET REYNALDO entrent.</p>
 <p>POLONIUS.--Donnez-lui cet argent et ces lettres, Reynaldo.</p>
@@ -385,9 +424,6 @@ h2 + p, .first { text-indent: 0; }
 <p>POLONIUS.--Allons, viens avec moi; je vais trouver le roi. C&#x27;est là, au vrai, le délire de l&#x27;amour qui se ravage lui-même par la violence qui lui appartient, et entraîne la volonté à des entreprises désespérées, aussi souvent que toute autre passion qui soit sous le ciel pour affliger notre nature. J&#x27;en suis fâché. Mais quoi? Lui avez-vous adressé dernièrement quelques paroles rudes?</p>
 <p>OPHÉLIA.--Non, mon bon seigneur; mais, comme vous l&#x27;aviez commande, j&#x27;ai repoussé ses lettres, et j&#x27;ai refusé ses visites.</p>
 <p>POLONIUS.--C&#x27;est cela qui l&#x27;a rendu fou. Je suis fâché de ne l&#x27;avoir pas observé avec plus d&#x27;attention et de discernement; je craignais que ce ne fût seulement une plaisanterie, et qu&#x27;il ne se proposât ton naufrage. Mais maudits soient mes soupçons jaloux! Il semble que ce soit le propre de notre âge de dépasser notre portée, en nos jugements, comme, parmi les gens plus jeunes, c&#x27;est le défaut commun de manquer de réflexion. Viens, allons vers le roi; ceci doit être connu, dont le secret gardé pourrait causer plus de peine que ne causera de haine cet amour révélé. Allons.</p>
-<p>(Ils sortent.)</p>
-<h2>SCÈNE II</h2>
-<p>Un appartement dans le château.</p>
 <p>LE ROI, LA REINE, ROSENCRANTZ, GUILDENSTERN, SUITE, entrent.</p>
 <p>LE ROI.--Soyez les bienvenus, cher Rosencrantz, et vous, Guildenstern! Outre le grand désir que, depuis longtemps, nous avions de vous voir, le besoin que nous avons de vos services a provoqué notre hâtif appel. Vous avez su quelque chose de la transformation de Hamlet; je dis transformation, car en lui ni l&#x27;homme extérieur ni l&#x27;intérieur ne ressemblent plus à ce qu&#x27;il était. Quelle pourrait être la cause, autre que la mort de son père, qui l&#x27;a jeté à ce point hors de toute conscience de lui-même, je ne saurais l&#x27;imaginer. Vous donc qui avez été dès un si jeune âge élevés avec lui, et qui, depuis lors, avez vécu si voisins de sa jeunesse et de ses goûts, je vous prie tous deux de vouloir bien consacrer à notre cour quelque peu de votre loisir, afin de l&#x27;attirer vers les plaisirs par votre compagnie, et de saisir, par tous les indices que le hasard vous permettra de glaner, s&#x27;il y a quelque motif à nous inconnu qui l&#x27;afflige ainsi, et qui, venant à être découvert, serait à portée de nos remèdes.</p>
 <p>LA REINE.--Mes bons messieurs, il a beaucoup parlé de vous; et je suis sûre qu&#x27;il n&#x27;y a pas en ce monde deux hommes à qui il soit plus attaché. S&#x27;il vous plaît de nous montrer assez de courtoisie et de bon vouloir pour passer quelque temps avec nous, au secours et au profit de nos espérances, votre visite sera comblée de tous les remerciements qui conviennent à la gratitude d&#x27;un roi.</p>
@@ -426,7 +462,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Le verbe anglais to doubt signifie tantôt douter, tantôt soupçonner. Fallait-il traduire le troisième vers par: «Soupçonne la vérité d&#x27;être une menteuse»--ou par: «Doute que la vérité soit une menteuse?» Les deux sens sont dans le texte; il fallait les garder dans la traduction, confondus et même confus. N&#x27;enlevons jamais au langage de Hamlet, surtout à partir du second acte, après qu&#x27;il a vu le spectre, appris le crime et conçu la vengeance, après qu&#x27;il a annoncé à ses amis l&#x27;intention de feindre un caractère fantasque, après que le roi l&#x27;a dépeint comme tout transformé et malade, n&#x27;enlevons jamais à son langage ni un trait de brusquerie, ni une goutte d&#x27;amertume, ni une ombre d&#x27;obscurité. Hamlet dit-il que le vrai est vrai, ou que ce qu&#x27;on appelle ainsi n&#x27;est que mensonge? Est-ce un axiome de sens commun ou un axiome de scepticisme subtil et triste qu&#x27;il propose à Ophélia? Est-ce à la certitude de la vérité ou à la vérité de l&#x27;incertitude qu&#x27;il compare et préfère l&#x27;évidence de son amour? Qui sait? Mais quoi qu&#x27;il en soit, voulue ou fortuite, la confusion des deux sens est de Shakspeare. On dirait volontiers qu&#x27;Ophélia, en lisant ce vers, l&#x27;a compris dans le sens le plus simple, et que Hamlet l&#x27;avait écrit dans l&#x27;autre sens, le plus dérobé et le plus désolé.]</p>
 <p>O chère Ophélia! je suis mal à l&#x27;aise dans ce mètre; je n&#x27;ai pas l&#x27;art de calculer la longueur de mes gémissements. Mais que je t&#x27;aime bien, oh! parfaitement bien, crois-le. Adieu.</p>
 <p>A toi pour toujours, dame chérie, tant que cette machine mortelle lui appartiendra.</p>
-<h2>HAMLET.</h2>
+<h3 class="sub">Hamlet.</h3>
 <p>C&#x27;est là ce que ma fille, par obéissance, m&#x27;a montré; et de plus, les instances de votre fils, à quelles dates, de quelles manières et en quels lieux elles se produisirent, elle a tout confié à mon oreille.</p>
 <p>LE ROI.--Mais comment a-t-elle reçu son amour?</p>
 <p>POLONIUS.--Quelle idée avez-vous de moi?</p>
@@ -557,7 +593,7 @@ h2 + p, .first { text-indent: 0; }
 <p>HAMLET.--Eh bien!</p>
 <p>Comme par hasard, Dieu le sait!....</p>
 <p>Et puis vous savez:</p>
-<h2>Il advint donc, Comme on pouvait le croire?</h2>
+<p>Il advint donc, Comme on pouvait le croire?</p>
 <p>Le premier couplet de la pieuse complainte vous en apprendra plus long, car, regardez! voici venir mon interruption. (Quatre ou cinq comédiens entrent.) Vous êtes les bienvenus, mes maîtres, tous les bienvenus.--Je suis enchanté de te voir bien portant.--Bonjour, mes bons amis.--Oh! mon vieil ami, qu&#x27;est-ce donc? ta tête a pris de la frange depuis la dernière fois que je t&#x27;ai vu; viens-tu en Danemark pour me faire la barbe? Eh quoi! ma jeune dame et princesse, par Notre-Dame! Votre Seigneurie est plus près du ciel que la dernière fois où je vous vis, de toute la hauteur d&#x27;un socque à l&#x27;italienne! Dieu veuille que votre voix, comme une pièce d&#x27;or qui n&#x27;a plus cours, ne se soit pas fêlée au delà de l&#x27;anneau[7]! Mes maîtres, vous êtes tous les bienvenus. Allons, sus tout de suite, sus, comme des fauconniers de France, et volons au premier gibier que nous voyons. Il nous faut une tirade à l&#x27;instant; donnez-nous un avant-goût de votre talent; allons, quelque tirade passionnée.</p>
 <p>[Note 7: Cela s&#x27;adresse à un jeune acteur chargé des rôles de femmes. Hamlet, le voyant grandi, suppose que sa voix a mué ou va muer et le rendre impropre à ses anciens rôles. C&#x27;était la règle, en Angleterre, qu&#x27;une pièce d&#x27;or n&#x27;avait plus cours quand elle était entamée par quelque fêlure au delà du cercle dont l&#x27;effigie était entourée.]</p>
 <p>LE PREMIER COMÉDIEN.--Quelle tirade, mon seigneur?</p>
@@ -595,9 +631,8 @@ h2 + p, .first { text-indent: 0; }
 <p>Who calls me villain? breaks my pate across?</p>
 <p>Mais il me semble évident qu&#x27;il faut lire: my pace où my path. L&#x27;extrême négligence avec laquelle ont été imprimées les premières éditions de Shakspeare excuse, et au delà, cette petite correction. Tel quel, le texte voudrait dire: «Qui vient me fendre d&#x27;outre en outre la caboche?» Après cela, le nez tiré et les plus profonds démentis seraient peu de chose, et Hamlet ne serait pas très-lâche de prendre bien un traitement qui le mettrait hors d&#x27;état de prendre mal quoi que ce fût. Sa folie, si folie il y a, n&#x27;est pas si sotte; elle a de la méthode, comme nous l&#x27;a dit Polonius. A chaque pensée qu&#x27;il conçoit, à chaque fait qu&#x27;il imagine, on le voit rapidement aller et rouler de conséquence en conséquence, raisonneur passionné qui s&#x27;enivre de ses remarques, de ses calculs, de ses soupçons, du jeu qu&#x27;il joue devant les autres, de sa sévérité envers lui-même. Ce cours précipitamment régulier, ces bonds suivis par lesquels avance l&#x27;impétueuse logique des pensées et des paroles de Hamlet étaient trop selon le génie de Shakspeare pour n&#x27;être pas partout dans le caractère de son héros. Hamlet, dans le passage qui nous occupe ici, se représente une série graduée d&#x27;injures dont il se trouve digne; il y pense, il la voit, il y est; son adversaire s&#x27;emporte à plus d&#x27;insolence à mesure que lui-même il s&#x27;abaisse à plus de patience; c&#x27;est ainsi que tout se passe dans son esprit. C&#x27;est ainsi que, peu de lignes plus haut, quand il suppose un comédien poussé par les motifs qui laissent Hamlet immobile, quand il se représente en même temps l&#x27;acteur et les spectateurs sous le coup d&#x27;une réalité si poignante, il arrive enfin à «frapper de stupeur les facultés même d&#x27;entendre et de voir.» Notez cette abstraction. L&#x27;oreille était déjà déchirée, l&#x27;oeil déjà épouvanté; mais plus loin encore, tout au fond de la cervelle et de l&#x27;âme, Hamlet va chercher la faculté même d&#x27;entendre et de voir; c&#x27;est la dernière hyperbole d&#x27;un analyste furieux. On est trop heureux quand il n&#x27;a qu&#x27;à traduire avec une véritable exactitude pour reproduire ces nuances admirablement raisonnables de Shakspeare. Quand il n&#x27;y a qu&#x27;une lettre à changer pour les lui rendre, faut-il respecter jusqu&#x27;à la superstition un vieux texte, condamné en cent autres endroits?]</p>
 <p>[Note 12: Il est probable que Shakspeare avait en vue une aventure de son temps. La vieille histoire du frère François était jouée par les comédiens du comte de Sussex, à Lynn, dans la province de Norfolk; une femme y était représentée éprise d&#x27;un jeune gentilhomme; et, pour mieux s&#x27;assurer la possession de son amant, elle avait secrètement assassiné son mari, dont l&#x27;ombre la poursuivait et se présentait différentes fois devant elle dans les lieux les plus retirés où elle s&#x27;enfermait. Il y avait au spectacle une femme de la ville qui jusqu&#x27;alors avait joui d&#x27;une bonne réputation, et qui sentit en ce moment sa conscience extrêmement troublée et poussa ce cri soudain: «O mon mari! mon mari!» «Je vois l&#x27;ombre de mon mari qui me poursuit et me menace..» A ces cris aigus et inattendus, le peuple qui l&#x27;environnait fut étonné, et lui en demanda la raison. Aussitôt, sans autres instances, elle répondit qu&#x27;il y avait sept ans que pour jouir d&#x27;un jeune amant qu&#x27;elle nomma, elle avait empoisonné son mari, dont l&#x27;image terrible s&#x27;était représentée à elle sous la forme de ce spectre; elle avoua tout devant les juges, et fut condamnée. Les acteurs et plusieurs habitants de la ville furent témoins de ce fait.]</p>
-<h2>FIN DU DEUXIÈME ACTE.</h2>
-<h2>ACTE TROISIÈME</h2>
-<h2>SCÈNE I</h2>
+<h3 class="sub">Fin du deuxième acte — Acte troisième</h3>
+<h2 class="chapter" id="c8">Scène I</h2>
 <p>(Un appartement dans le château.)</p>
 <p>LE ROI, LA REINE, POLONIUS, OPHÉLIA, ROSENCRANTZ ET GUILDENSTERN entrent.</p>
 <p>LE ROI.--Et vous ne pouvez pas, en faisant dériver la conversation, savoir de lui pourquoi il montre ce désordre, déchirant si cruellement tous ses jours de repos par une turbulente et dangereuse démence?</p>
@@ -652,7 +687,7 @@ h2 + p, .first { text-indent: 0; }
 <p>POLONIUS.--Cela fera bon effet; mais néanmoins je crois que l&#x27;origine et le commencement de son chagrin proviennent d&#x27;un amour maltraité.--Eh bien! Ophélia, vous n&#x27;avez pas besoin de nous dire ce que le seigneur Hamlet a dit; nous avons tout entendu.--Mon seigneur, agissez comme il vous plait; mais, si vous le trouvez bon, faites qu&#x27;après la représentation, la reine sa mère, toute seule avec lui, le presse de dévoiler son chagrin. Qu&#x27;elle le traite rondement; et moi, si tel est votre bon plaisir, je me placerai dans le vent de toute leur conversation. Si elle ne le pénètre pas, envoyez-le en Angleterre, ou confinez-le dans le lieu que votre sagesse croira le meilleur.</p>
 <p>LE ROI.--C&#x27;est ce que nous ferons; la folie d&#x27;un homme de haut rang ne peut rester sans surveillance.</p>
 <p>(Ils sortent.)</p>
-<h2>SCÈNE II</h2>
+<h2 class="chapter" id="c9">Scène II</h2>
 <p>(Une salle dans le château.) HAMLET entre avec quelques comédiens.</p>
 <p>HAMLET.--Dites ce discours, je vous prie, comme je l&#x27;ai prononcé devant vous, en le laissant légèrement courir sur la langue; mais si vous le déclamez à pleine bouche, comme font beaucoup de nos acteurs, j&#x27;aurais tout aussi bien pour agréable que mes vers fussent dits par le crieur de la ville. N&#x27;allez pas non plus trop scier l&#x27;air en long et en large avec votre main, de cette façon; mais usez de tout sobrement car dans le torrent même et la tempête et, pour ainsi dire, le tourbillon de votre passion, vous devez prendre sur vous et garder une tempérance qui puisse lui donner une douceur coulante. Oh! cela me choque dans l&#x27;âme d&#x27;entendre un robuste gaillard, grossi d&#x27;une perruque, déchiqueter une passion, la mettre en lambeaux, en vrais haillons, pour fendre les oreilles du parterre, qui, le plus souvent, n&#x27;est à la hauteur que d&#x27;une absurde pantomime muette, ou de beaucoup de bruit. Je voudrais qu&#x27;un tel gaillard fût fouetté, pour charger ainsi les Termagants;[14] c&#x27;est se faire plus Hérode qu&#x27;Hérode lui-même. Je vous en prie, évitez cela.</p>
 <p>[Note 14: Termagant était, dit-on, dans les vieux poëmes romanesques, le nom donné au dieu des tempêtes chez les Sarrasins. De là son nom vint, dans les vieux mystères, partager avec le nom d&#x27;Hérode le privilège de désigner un tyran plein de violence et d&#x27;ostentatoire orgueil, personnage presque obligé de ce théâtre primitif, sorte de Matamore tragique et toujours pris au sérieux.]</p>
@@ -760,7 +795,7 @@ h2 + p, .first { text-indent: 0; }
 <p>HAMLET.--«Eh bien! que le daim frappé s&#x27;échappe et pleure; que le cerf non blessé se joue! Les uns doivent veiller, les autres doivent dormir. Ainsi va le monde.»</p>
 <p>Ne croyez-vous pas, monsieur, qu&#x27;un coup de théâtre comme celui-ci, avec accompagnement d&#x27;une forêt de plumes sur la tête, et deux roses de Provins sur des souliers tailladés,[21] pourrait, si la fortune, par la suite, me traitait de Turc à More, me faire recevoir compagnon dans une meute de comédiens?</p>
 <p>HORATIO.--À demi-part.</p>
-<h2>HAMLET.--A part entière, vous dis-je![22]</h2>
+<h2 class="chapter" id="c10">HAMLET.--A part entière, vous dis-je!</h2>
 <p>«Car tu sais, bien-aimé Damon, que ce royaume démantélé appartenant à Jupiter lui-même, et maintenant règne en ces lieux un vrai... un vrai... un vrai paon.»</p>
 <p>HORATIO.--Vous auriez pu mettre la rime.[23]</p>
 <p>[Note 21: Au temps de Shakspeare, sur les souliers élégants, tailladés comme l&#x27;étaient souvent les vêtements, pour laisser-voir des crevés d&#x27;étoffes brillantes, on portait de gros noeuds de rubans disposés en forme de roses, et la ville de Provins était dès lors partout célèbre par ses roses dont elle fait commerce depuis six siècles, pour la pharmacie comme pour les jardins.]</p>
@@ -825,7 +860,7 @@ h2 + p, .first { text-indent: 0; }
 <p>(Polonius sort.)</p>
 <p>HAMLET.--Tout à l&#x27;heure est aisé à dire. Laissez-moi, mes amis. (Rosencrantz, Guildenstern, Horatio, etc., sortent.) Voici justement l&#x27;heure de la nuit, cette heure qui ensorcelle, l&#x27;heure où les cimetières bâillent et où l&#x27;enfer même souffle sur ce monde la contagion. Maintenant, je pourrais boire du sang chaud et faire des actions si amères que le jour frémirait de les regarder... Doucement! chez ma mère, maintenant? O mon coeur! ne perds pas ta nature; que jamais l&#x27;âme de Néron ne pénètre dans cette ferme poitrine; soyons cruel, mais-non dénaturé: je lui parlerai de poignards, mais je n&#x27;en mettrai point en usage. Ma langue et mon âme, soyez hypocrites en ceci, et de quelque façon que mes discours puissent frapper sur elle,--quant à les sceller des sceaux qui font agir, ô mon âme! n&#x27;y consens jamais!</p>
 <p>(Il sort.)</p>
-<h2>SCÈNE III</h2>
+<h2 class="chapter" id="c11">Scène III</h2>
 <p>(Un appartement dans le château.)</p>
 <p>LE ROI, ROSENCRANTZ ET GUILDENSTERN entrent.</p>
 <p>LE ROI.--Il m&#x27;est déplaisant; et, d&#x27;ailleurs, il n&#x27;y a point de sûreté pour nous à laisser errer sa folie. Préparez-vous donc; je vais expédier sur-le-champ votre commission, et il partira pour l&#x27;Angleterre avec vous. Les intérêts de notre empire ne peuvent endurer ces hasards dangereux, et croissant d&#x27;heure en heure, qui naissent de ses accès.</p>
@@ -842,7 +877,7 @@ h2 + p, .first { text-indent: 0; }
 <p>LE ROI.--Mes paroles s&#x27;envolent, mes pensées demeurent ici-bas. Les paroles sans les pensées ne vont jamais au ciel.</p>
 <p>(Il sort.)</p>
 <p>[Note 27: Expression biblique empruntée à Ézéchiel, XVI, 49: «Voici! ç&#x27;a été ici l&#x27;iniquité de Sodome, ta soeur: l&#x27;orgueil, la plénitude de pain et une molle oisiveté.»]</p>
-<h2>SCÈNE IV</h2>
+<h2 class="chapter" id="c12">Scène IV</h2>
 <p>(Un autre appartement dans le château.)</p>
 <p>LA REINE ET POLONIUS entrent.</p>
 <p>POLONIUS.--Il va venir tout de suite. N&#x27;oubliez pas de le réprimander sans cérémonie. Dites-lui que ses écarts se sont donné trop large carrière pour être supportés, et que Votre Grâce a eu à se dresser comme abri entre lui et une grande chaleur de colère. Je rentre en silence, ici même; mais, je vous en prie, menez-le rondement.</p>
@@ -915,9 +950,8 @@ h2 + p, .first { text-indent: 0; }
 <p>et n&#x27;eût point été accusé de tomber dans la bassesse du langage, car les euphuïstes eux-mêmes s&#x27;en servaient sans scrupule, quoique ces précieux et précieuses d&#x27;outre-Manche fussent aussi célèbres que nos femmes savantes</p>
 <p>Par les proscriptions de tous les maux divers Dont ils voulaient purger et la prose et les vers.</p>
 <p>Mais en même temps que je me reporte à la date du texte que je traduis, il faut que je me pénètre de l&#x27;intention de l&#x27;auteur; ce n&#x27;est pas seulement d&#x27;un siècle à un autre siècle que le sens d&#x27;un mot peut changer, mais aussi d&#x27;une page à l&#x27;autre, surtout dans la variété du drame, de ses scènes et de ses personnages: guts n&#x27;est pas grossier, au temps de Shakspeare, mais il est sarcastique dans la bouche de Hamlet; traduire par boyaux serait un contre-sens contre le XVIe siècle; par entrailles, un contre-sens contre Hamlet et contre son mépris de Polonius; il ne regarde Polonius que comme un gros corps à tête vide, et il l&#x27;appelle «cette panse,» à peu près comme, selon saint Paul, Épiménide ou Callimaque appelait les Crétois: «mauvaises bêtes, ventres paresseux» (Ép. à Tite, I, 12). Sans doute, Hamlet aurait pu se dispenser de cette dernière insulte à un cadavre: mais ne soyons pas trop prompts à blâmer Shakspeare, quand il y a un mort sur le théâtre; de son temps, les acteurs étaient peu nombreux dans les troupes, les personnages très-nombreux dans les pièces, de sorte que chaque comédien avait plusieurs rôles à remplir et que les comparses mêmes suffisaient difficilement à leur tâche multipliée; de plus, il n&#x27;y avait pas d&#x27;entr&#x27;actes, puisqu&#x27;il n&#x27;y avait pas d&#x27;actes, et les scènes se suivaient sans interruption; aussi quand un des personnages venait de mourir devant le public, la plus pressante affaire était de le faire rentrer dans les coulisses, afin que le cadavre redevînt un acteur et passât à un autre rôle; quand, pour satisfaire à cette nécessité, l&#x27;auteur ne pouvait introduire un comparse à cause du caractère intime de la scène, comme dans le cas présent, ou pour toute autre cause, il fallait bien qu&#x27;un des interlocuteurs se chargeât de tirer ou d&#x27;emporter le mort, et il fallait sauver tant bien que mal l&#x27;invraisemblance. Shakspeare tâchait toujours d&#x27;accommoder à la situation et aux personnages les expédients que cette gêne scénique l&#x27;obligeait à inventer; il en a de toute sorte: railleries, imprécations, adieux pathétiques, promesses de vengeance, précautions du meurtrier, etc., etc., toujours quelques paroles qui conviennent à l&#x27;action du moment accompagnent le cadavre emporté et motivent l&#x27;incident; rien que dans la trilogie de Henri VI, on en peut remarquer neuf exemples (part. I, act. I, sc. IV; act. II, sc. V; act. IV; sc. VII;--part. II, act. IV, sc. I; act. IV, sc. X; act. V, sc. II;--part. III, act II, sc. V, deux fois dans la même scène; et act. V, sc. VI). Si quelques-uns trouvent indigne de Shakspeare son attention à de telles minuties, ou si d&#x27;autres trouvent mal dissimulées les ruses qu&#x27;il imagine pour sortir d&#x27;embarras, nous ne sommes ni de l&#x27;un ni de l&#x27;autre avis. Passionnément inspiré et profondément moraliste, Shakspeare nous semble encore admirable par cela même qu&#x27;il se rappelle à chaque instant qu&#x27;il écrit pour le théâtre, et parce qu&#x27;il prépare de détails en détails l&#x27;effet de la représentation, tout en se livrant à sa verve de poëte et en développant sa connaissance du coeur humain; et en même temps il a raison de traiter les expédients comme des expédients; il a raison de ne pas ciseler avec un art prétentieux les chevilles nécessaires à ses grandes charpentes; quand quelque chose manque à ses ressources d&#x27;impresario, il a raison d&#x27;y suppléer par l&#x27;adresse, mais simplement, et de n&#x27;y point attarder son génie.]</p>
-<h2>FIN DU TROISIÈME ACTE.</h2>
-<h2>ACTE QUATRIÈME</h2>
-<h2>SCÈNE I</h2>
+<h3 class="sub">Fin du troisième acte — Acte quatrième</h3>
+<h2 class="chapter" id="c13">Scène I</h2>
 <p>Le château.</p>
 <p>LE ROI, LA REINE, ROSENCRANTZ ET GUILDENSTERN entrent.</p>
 <p>LE ROI.--Ces sanglots ont une cause; ces profonds soulèvements de votre coeur, il faut les expliquer; il est à propos que nous les comprenions. Où est votre fils?</p>
@@ -928,7 +962,7 @@ h2 + p, .first { text-indent: 0; }
 <p>LA REINE.--Tirer à l&#x27;écart le corps qu&#x27;il a tué; et sur ce corps sa folie même, comme un peu d&#x27;or dans un minerai de vils métaux, se montre pure. Il pleure de ce qu&#x27;il a fait.</p>
 <p>LE ROI.--O Gertrude, venez! Le soleil n&#x27;aura pas plutôt touché les montagnes, que nous le ferons embarquer. Quant à cette affreuse action, nous devons tous deux employer toute notre majesté et notre adresse à la couvrir et à l&#x27;excuser.--Holà! Guildenstern (Rosencrantz et Guildenstern entrent.) Amis, allez tous deux, prenez avec vous quelque renfort; Hamlet, dans son délire, a tué Polonius, et l&#x27;a traîné hors du cabinet de sa mère. Allez, cherchez-le; parlez-lui comme il faut; et portez le corps dans la chapelle: je vous prie, faites diligence. (Rosencrantz et Guildenstern sortent.) Venez, Gertrude; nous convoquerons nos plus sages amis, et nous leur ferons connaître en même temps ce que nous comptons faire et ce qui est malheureusement déjà fait. Ainsi nous avons chance que la calomnie,--dont le murmure, parcourant la circonférence du monde, lance, aussi droit que le canon à son but, sa charge empoisonnée,--manque pourtant notre nom, et ne frappe que l&#x27;air insensible. Oh! venez; mon âme est pleine de discorde et d&#x27;effroi.</p>
 <p>(Ils sortent.)</p>
-<h2>SCÈNE II</h2>
+<h2 class="chapter" id="c14">Scène II</h2>
 <p>Un autre appartement dans le château.</p>
 <p>HAMLET entre.</p>
 <p>HAMLET.--Déposé en lieu sûr...</p>
@@ -951,7 +985,7 @@ h2 + p, .first { text-indent: 0; }
 <p>HAMLET.--...de rien. Conduisez-moi vers lui. Cache-toi, renard! et tous en chasse![32]</p>
 <p>(Ils sortent.)</p>
 <p>[Note 32: Remarquez-vous comme les paroles de Hamlet deviennent tantôt plus hardies, tant plus obscures, à mesure que l&#x27;action avance? De plus en plus obsédé par la certitude croissante du crime qu&#x27;il doit punir, par les émotions qui se multiplient, par les pièges qui s&#x27;ouvrent sous ses pas, par la haine qu&#x27;il voit s&#x27;amonceler sur lui, par l&#x27;idée de la vengeance dont il est, de minute en minute, plus altéré et plus effrayé tout ensemble, parce que chaque minute l&#x27;a retardée et la rapproche, il parle comme il sent, et les saccades de son langage reproduisent le tumulte de son âme. La plupart de ses répliques aux courtisans ont un sens confus et une portée manifeste: on voit plus d&#x27;ombre envahir son esprit et plus d&#x27;amertume jaillir de son coeur. Il faut renoncer à expliquer des phrases comme: «Le corps est avec le roi, mais le roi n&#x27;est pas avec le corps.» Veut-il dire que le cadavre est dans le palais, comme le roi, maïs que le roi a encore à mourir, comme Polonius, et à rejoindre de plus près le cadavre? Ou bien parle-t-il tour à tour des deux rois, du faux roi vivant, son oncle, et du vrai roi mort, son père? Mais à, quoi bon expliquer? Il ne veut pas être compris et ne peut pas se retenir d&#x27;être menaçant. Il appelle le roi une chose, les courtisans l&#x27;interrompent à ce mot méprisant, et il coupe court aux périls de l&#x27;entretien, mais par une pire insolence: «Le roi est une chose de rien,» expression toute faite et courante chez tous les poëtes du même temps et qui leur venait, comme tant d&#x27;autres, de la Bible, du quatrième verset du psaume CXLIV, où il est dit, selon la traduction anglaise: «L&#x27;homme est comme une chose de rien.» Quant aux derniers mots de Hamlet, c&#x27;est le refrain du jeu des enfants anglais qui correspond à notre cache-cache. Les sources de la langue de Shakspeare sont aussi diverses que les courants des pensées de Hamlet.]</p>
-<h2>SCÈNE III</h2>
+<h2 class="chapter" id="c15">Scène III</h2>
 <p>Un autre appartement dans le château. LE ROI entre avec sa suite.</p>
 <p>LE ROI.--Je l&#x27;ai envoyé quérir, et l&#x27;on cherche le corps. Combien il est dangereux que cet homme aille en liberté! Il ne faut pas, cependant, lui appliquer la loi rigoureuse; il est aimé de la multitude désordonnée, qui aime, non d&#x27;après son jugement, mais d&#x27;après ses yeux; et là où il en est ainsi, on pèse le fléau qui frappe l&#x27;offenseur, jamais on ne pèse l&#x27;offense. Pour que tout se passe doucement et sans bruit, il faut que cet éloignement soudain paraisse une décision réfléchie. Les maux qui sont devenus désespérés veulent des remèdes désespérés pour être guéris ou ne le sont pas du tout. (Rosencrantz entre.) Eh bien! qu&#x27;est-il arrivé?</p>
 <p>ROSENCRANTZ.--Où le corps est-il déposé? c&#x27;est ce que nous ne pouvons tirer de lui, mon seigneur.</p>
@@ -985,7 +1019,7 @@ h2 + p, .first { text-indent: 0; }
 <p>(Il sort.)</p>
 <p>LE ROI.--Suivez-le pas à pas; attirez-le en toute hâte à bord. Ne différez pas; je veux qu&#x27;il soit hors d&#x27;ici ce soir. Allez, car tout ce qui touche, d&#x27;ailleurs, à cette affaire est fait et scellé; je vous prie, hâtez-vous. (Rosencrantz et Guildenstern sortent.) Et toi, Angleterre, si tu tiens mon amitié pour quelque chose (comme ma grande puissance peut te rendre ce point sensible, puisque ta cicatrice se montre encore vive et rouge là où a passé l&#x27;épée danoise, et puisque le libre mouvement de ta crainte nous rend hommage), tu n&#x27;accueilleras pas froidement notre message souverain, qui implique nettement, par lettres instantes à cet effet, la mort immédiate de Hamlet; entends-moi, Angleterre! car il fait rage comme la fièvre dans mon sang, et il faut que tu me guérisses. Jusqu&#x27;à ce que je sache que c&#x27;en est fait, quoi qu&#x27;il m&#x27;arrive, mes joies ne recommenceront pas.</p>
 <p>(Il sort.)</p>
-<h2>SCÈNE IV</h2>
+<h2 class="chapter" id="c16">Scène IV</h2>
 <p>Une plaine en Danemark.</p>
 <p>FORTINBRAS entre à la tête de ses troupes.</p>
 <p>FORTINBRAS.--Allez, capitaine, saluer de ma part le roi de Danemark; dites-lui, qu&#x27;avec son agrément, Fortinbras réclame le passage promis pour une expédition à travers son royaume. Vous savez où est le rendez-vous. Si Sa Majesté nous veut quelque chose, nous irons en personne lui rendre nos devoirs; faites-le-lui savoir.</p>
@@ -1009,7 +1043,7 @@ h2 + p, .first { text-indent: 0; }
 <p>ROSENCRANTZ.--Vous plaira-t-il d&#x27;avancer, mon seigneur?</p>
 <p>HAMLET.--Je vous aurai rejoints dans un instant. Allez un peu en avant. (Rosencrantz et Guildenstern sortent.) Comme toutes les circonstances témoignent contre moi et éperonnent ma molle vengeance!... Qu&#x27;est-ce qu&#x27;un homme pour qui le bien suprême et le seul débit de son temps ne seraient que de dormir et de manger? un animal, et rien de plus. Certes, celui qui nous a créés, avec cette vaste intelligence qui regarde en avant et en arrière, ne nous a pas donné cette capacité et cette raison divine pour moisir en nous sans emploi. Maintenant donc, que ce soit par un bestial oubli, ou par quelque lâche scrupule de vouloir réfléchir trop précisément à l&#x27;issue.... et dans ces réflexions-là, à les couper en quatre, il n&#x27;y a qu&#x27;un quart de sagesse et toujours trois quarts de couardise... je ne sais pourquoi je continue à vivre pour dire: «Cela est à faire;» tandis que j&#x27;ai motif, volonté, force et moyen de Je faire. J&#x27;en ai gros comme la terre, d&#x27;exemples qui m&#x27;exhortent! Témoin cette armée, d&#x27;une telle masse et d&#x27;un tel poids, conduite par un prince délicat et frêle, dont l&#x27;âme, enflée d&#x27;une ambition divine, fait une grimace de défi, à l&#x27;invisible événement, et qui expose tout ce qui, en lui, est mortel et fragile, à tout ce que peuvent oser la fortune, la mort et le péril; et cela pour une coquille d&#x27;oeuf! A le bien prendre, être grand, c&#x27;est ne s&#x27;émouvoir pas sans une grande cause, mais grandement aussi tirer une querelle d&#x27;un fétu, lorsque l&#x27;honneur est en jeu. Comment puis-je donc rester là, moi, qui ai un père assassiné, une mère déshonorée, tant d&#x27;excitants de ma raison et de mon sang! et laisser tout cela dormir, tandis qu&#x27;à ma honte je vois la mort imminente de vingt mille hommes, qui, pour une fantaisie et une babiole de gloire, s&#x27;en vont à leur tombeau comme à un lit, combattant pour un coin de sol, où les joueurs trop nombreux ne pourront engager la partie, et qui n&#x27;est même pas une fosse et un espace suffisants pour cacher les morts?... Oh! désormais que mes pensées soient sanglantes, ou estimées à néant!</p>
 <p>(Il sort.)</p>
-<h2>SCÈNE V</h2>
+<h2 class="chapter" id="c17">Scène V</h2>
 <p>Elseneur.--Un appartement dans le château. LA REINE ET HORATIO entrent.</p>
 <p>LA REINE.--Je ne veux pas lui parler.</p>
 <p>HORATIO.--Elle est pressante, en vérité; elle est en délire: toutes ses façons vous feront certainement pitié.</p>
@@ -1033,7 +1067,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Son linceul, blanc comme la neige des montagnes...</p>
 <p>(Le roi entre.)</p>
 <p>LA REINE.--Hélas! voyez ceci, mon seigneur.</p>
-<h2>OPHÉLIA.</h2>
+<h3 class="sub">Ophélia.</h3>
 <p>...est tout semé de douces fleurs, qui, tout humides de pleurs, allèrent au tombeau, humides des ondées du sincère amour.</p>
 <p>LE ROI.--Comment vous trouvez-vous, ma belle demoiselle?</p>
 <p>OPHÉLIA.--Bien. Dieu vous assiste! Ils disent que la chouette était la fille d&#x27;un boulanger[35]. Seigneur, nous savons ce que nous sommes, mais nous ne savons pas ce que nous pouvons être. Que Dieu soit à votre table!</p>
@@ -1113,7 +1147,7 @@ h2 + p, .first { text-indent: 0; }
 <p>LAERTES.--Qu&#x27;il en soit donc ainsi. Le genre de sa mort, son obscur enterrement, point de trophée, ni d&#x27;épée, ni d&#x27;écusson sur son cercueil, point de rite nobiliaire, ni d&#x27;appareil officiel, tout cela me crie, comme une voix qui se ferait entendre de ciel en terre, que je dois en demander compte.</p>
 <p>LE ROI.--Ainsi ferez-vous; et là où est le crime, que la grande hache y tombe! Je vous prie, venez avec moi.</p>
 <p>(Ils sortent.)</p>
-<h2>SCÈNE VI</h2>
+<h2 class="chapter" id="c18">Scène vi</h2>
 <p>Un autre appartement dans le château.</p>
 <p>HORATIO ET UN SERVITEUR entrent.</p>
 <p>HORATIO.--Qui sont les gens qui veulent me parler?</p>
@@ -1125,10 +1159,10 @@ h2 + p, .first { text-indent: 0; }
 <p>PREMIER MATELOT.--Ainsi fera-t-il, monsieur, si tel est son bon plaisir. Voici une lettre pour vous, monsieur,--elle vient de l&#x27;ambassadeur qui s&#x27;était embarqué pour l&#x27;Angleterre,--si votre nom est Horatio, comme je me le suis laissé dire.</p>
 <p>HORATIO, lisant.--«Horatio, quand tu auras lu ceci, donne à ces gens-là quelque moyen d&#x27;arriver jusqu&#x27;au roi; ils ont des lettres pour lui. Nous n&#x27;avions pas vieilli de deux jours en mer, lorsqu&#x27;un pirate, très-bien équipé en guerre, nous a donné la chasse. Nous trouvant trop faibles de voiles, nous avons eu recours à un courage forcé. Les grappins jetés, j&#x27;ai monté à l&#x27;abordage. Au même instant ils se sont dégagés de notre vaisseau; ainsi je suis demeuré seul leur prisonnier. Ils en ont usé avec moi en brigands pleins de miséricorde; mais ils savaient bien ce qu&#x27;ils faisaient: je suis en passe de leur donner du retour. Que le roi ait les lettres que je lui envoie; et toi, viens me rejoindre avec autant de hâte que si tu fuyais la mort. J&#x27;ai à te dire à l&#x27;oreille des paroles qui te rendront muet; encore seront-elles bien trop légères pour le calibre de cette affaire. Ces braves gens t&#x27;amèneront là où je suis. Rosencrantz et Guildenstern continuent leur route vers l&#x27;Angleterre; j&#x27;ai beaucoup à te dire sur eux. Adieu.</p>
 <p>«Celui que tu sais à toi,</p>
-<h2>«HAMLET.»</h2>
+<p>«HAMLET.»</p>
 <p>Venez, je vous donnerai le moyen de remettre vos lettres: faites au plus vite, afin que vous puissiez me conduire vers celui qui vous en avait chargés.</p>
 <p>(Ils sortent.)</p>
-<h2>SCÈNE VII</h2>
+<h2 class="chapter" id="c19">Scène VII</h2>
 <p>Un autre appartement dans le château.</p>
 <p>LE ROI ET LAERTES entrent.</p>
 <p>LE ROI.--Maintenant votre conscience doit sceller mon acquittement, et vous devez me donner place dans votre coeur comme à un ami; car vous avez entendu,--et d&#x27;une oreille qui sait ce qu&#x27;elle entend,--comment celui qui a tué votre noble père en voulait à ma vie.</p>
@@ -1144,7 +1178,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Le roi lit:</p>
 <p>«Haut et puissant seigneur,</p>
 <p>Vous saurez que j&#x27;ai été débarqué nu en votre royaume. Demain je demanderai la permission d&#x27;être admis en votre royale présence, et alors, après avoir imploré votre pardon pour tout ceci, je vous raconterai les circonstances de mon si soudain et encore plus étrange retour.</p>
-<h2>HAMLET.»</h2>
+<h3 class="sub">Hamlet.»</h3>
 <p>Que signifie ceci? Est-ce que tous les autres sont aussi de retour? ou bien est-ce quelque tromperie, et n&#x27;y a-t-il rien de vrai?</p>
 <p>LAERTES.--Reconnaissez-vous la main?</p>
 <p>LE ROI.--C&#x27;est l&#x27;écriture de Hamlet. Nu! et, dans ce post-scriptum, il ajoute: seul. Pouvez-vous me conseiller?</p>
@@ -1181,9 +1215,8 @@ h2 + p, .first { text-indent: 0; }
 <p>LE ROI.--Suivons-le, Gertrude. Combien j&#x27;ai eu à faire pour calmer sa rage! maintenant je crains que ceci ne lui donne un nouvel élan. Ainsi donc, suivons-le.</p>
 <p>(Ils sortent.)</p>
 <p>[Note 45: Ainsi dans Henri V, acte IV, scène vi: «Mais toute ma mère me monta aux yeux et me livra en proie aux larmes.»]</p>
-<h2>FIN DU QUATRIÈME ACTE.</h2>
-<h2>ACTE CINQUIÈME</h2>
-<h2>SCÈNE I</h2>
+<h3 class="sub">Fin du quatrième acte — Acte cinquième</h3>
+<h2 class="chapter" id="c20">Scène I</h2>
 <p>Un cimetière.</p>
 <p>DEUX PAYSANS entrent avec leurs bêches, etc.</p>
 <p>PREMIER PAYSAN.--Doit-elle être enterrée en terre chrétienne, celle qui volontairement est allée chercher son salut?</p>
@@ -1327,7 +1360,7 @@ h2 + p, .first { text-indent: 0; }
 <p>(Il sort.)</p>
 <p>LE ROI.--Je te prie, cher Horatio, ne le quitte pas. (Horatio sort.)--À Laërtes_. Que votre patience s&#x27;affermisse sur notre entretien d&#x27;hier soir. Nous allons mettre cette affaire en train.--Chère Gertrude, ordonnez quelque surveillance autour de votre fils... Il faut à cette tombe un monument vivant; nous verrons ainsi venir l&#x27;heure du repos; d&#x27;ici là, usons de patience dans nos entreprises.</p>
 <p>(Ils sortent.)</p>
-<h2>SCÈNE II</h2>
+<h2 class="chapter" id="c21">Scène II</h2>
 <p>Une salle dans le château.</p>
 <p>HAMLET ET HORATIO entrent.</p>
 <p>HAMLET.--Assez sur ce sujet, monsieur; maintenant passons à l&#x27;autre. Vous vous souvenez bien de toutes les circonstances?</p>
@@ -1512,8 +1545,7 @@ h2 + p, .first { text-indent: 0; }
 <p>HORATIO.--J&#x27;ai aussi mission de parler sur ce point, et de la part d&#x27;une bouche dont la voix en entraînera d&#x27;autres; mais accomplissons sur-le-champ ce projet, pendant que les esprits sont encore agités, de peur que, par complots ou par méprises, il n&#x27;arrive de nouveaux malheurs.</p>
 <p>FORTINBRAS.--Que quatre de mes capitaines portent Hamlet, comme un soldat, vers l&#x27;estrade, car il donnait à croire que s&#x27;il était monté sur le trône, il se serait montré vraiment roi; que, sur son passage, la musique militaire et tous les honneurs de la guerre parlent hautement de lui. Emportez ces corps; un tel spectacle convient aux champs de bataille, mais il fait mal ici. Allez, et ordonnez aux soldats de faire feu.</p>
 <p>(Marche funèbre.--Ils sortent, portant les corps; puis l&#x27;on entend une décharge d&#x27;artillerie.)</p>
-<h2>FIN DU CINQUIÈME ET DERNIER ACTE.</h2>
-<h2>NOTE SUR LA DATE DE HAMLET.</h2>
+<h3 class="sub">Fin du cinquième et dernier acte — Note sur la date de Hamlet.</h3>
 <p>La préface qui précède cette traduction de Hamlet contient une assertion qui doit être rectifiée. Nous voulons parler de la conjecture, citée comme presque certaine, qui attribue à Thomas Kyd une tragédie écrite, dit-on, six ou sept ans avant celle de Shakspeare, sur le sujet de Hamlet. Voici l&#x27;origine de cette conjecture.</p>
 <p>Jusqu&#x27;en 1825, la plus ancienne édition qu&#x27;on eût conservée du Hamlet de Shakspeare était un in 4°, daté Je 1604, dont le titre donnait la pièce comme «imprimée de nouveau et augmentée presque du double, suivant le texte véritable et parfait.» On croyait que l&#x27;édition antérieure, indiquée par ce titre même, devait être de 1602, parce qu&#x27;on trouvait la pièce inscrite sur les registres de la librairie au 26 juillet 1602, au nom de l&#x27;imprimeur James Roberts. On croyait aussi que la pièce avait été écrite en 1600, à cause du passage du second acte (scène II), où il est dit que l&#x27;empêchement des comédiens, c&#x27;est-à-dire la nécessité où ils se sont vus de faire une troupe ambulante, vient de la récente innovation; or, cette innovation ne peut pas être l&#x27;ordonnance rendue par le conseil privé, le 22 juin 1600, pour réduire à deux le nombre des salles de théâtre, car cette ordonnance favorisait la troupe de Shakspeare au lieu de lui nuire; et d&#x27;ailleurs elle ne fut jamais exécutée, quoique renouvelée en termes encore plus forts l&#x27;année suivante. Le fait auquel se rapporte le passage ci-dessus indiqué est donc au contraire la permission rendue, en 1600, aux enfants de la chapelle de Saint-Paul, qui reprirent alors avec une vogue nouvelle leurs représentations interrompues depuis 1591.</p>
 <p>Ainsi, 1604, date de la plus ancienne édition conservée; 1602, date probable de la première édition; 1600, dale évidente de la composition de la pièce; telle était, en 1825, la chronologie du Hamlet de Shakspeare. Et cependant, plusieurs documents antérieurs à l&#x27;an 1600 parlaient d&#x27;une tragédie de Hamlet. Thomas Lodge, en 1596, pour donner l&#x27;idée d&#x27;une extrême pâleur, disait; «pâle comme le masque de ce spectre qui criait si misérablement, au théâtre: Hamlet, venge-moi!» Une troupe d&#x27;acteurs avait, en 1594, joué un Hamlet à Newington. Thomas Nash, en 1589, dans une épître qui sert de préface à l&#x27;Arcadie de Greene, écrivait ce qui suit: «Il y a aujourd&#x27;hui une espèce de compagnons vagabonds qui traversent tous les métiers sans faire leur chemin par aucun, et qui, abandonnant le commerce du droit pour lequel ils étaient nés, s&#x27;adonnent aux tentatives de l&#x27;art, eux qui sauraient à peine mettre un vers en latin, s&#x27;ils en avaient besoin; mais le Sénèque traduit en anglais, lu à la lueur d&#x27;une chandelle, fournit un bon nombre de bonnes sentences, comme: le sang est un mendiant, et ainsi de suite; et si vous l&#x27;implorez bien, par une froide matinée, il vous donnera de pleins Hamlets, je veux dire de pleines poignées de discours tragiques.»</p>
@@ -1525,5 +1557,5 @@ h2 + p, .first { text-indent: 0; }
 <p>Shakspeare était né en 1564; ce serait donc à vingt-cinq ans qu&#x27;il aurait écrit son premier Hamlet. Une telle oeuvre, conçue par un si jeune homme, n&#x27;est-ce pas déjà le plus singulier exemple de la précocité du génie? Tous les admirateurs de Shakspeare ne se tiennent cependant pas pour satisfaits, et il en est qui voudraient fixer à 1584 la date du premier Hamlet. Deux arguments les y décident. Il est dit, dans le premier Hamlet, que les comédiens nomades se sont faits nomades parce que «la nouveauté l&#x27;emporte,» et que la majeure partie du public qui venait chez eux s&#x27;est tournée vers les théâtres privés «et vers les divertissements des enfants;» or, c&#x27;est en 1584 que les enfants de choeur de la chapelle Saint-Paul commencèrent à jouer, et que leurs divertissements furent, dit-on, une nouveauté. On a, de plus, remarqué que Shakspeare eut, en 1584, deux enfants jumeaux, une fille nommée Judith et un fils nommé Hamlet; or, ce dernier nom a semblé permettre de supposer que Shakspeare avait déjà en tête son grand drame danois, et que peut-être même, se sentant en proie à la misère et à la fatalité, il avait voulu pour ainsi dire se baptiser par avance un tragique vengeur en la personne de son fils nouveau-né. On peut répondre à ces arguments par plus d&#x27;une objection.</p>
 <p>Examinons d&#x27;abord la phrase relative aux comédiens nomades. Elle prouve, comme nous l&#x27;avons dit plus haut, que le premier Hamlet ne peut pas être postérieur à 1591; voilà ce qu&#x27;elle prouve, et rien de plus; elle indique une période dont on sait la limite, non un fait précis dont on sache la date spéciale. Ce n&#x27;est pas aux débuts des enfants de Saint-Paul, mais à leur succès déjà décidé que cette phrase fait allusion; pour que l&#x27;ancienne troupe renonçât à son séjour accoutumé, il n&#x27;a pas suffi qu&#x27;une nouveauté se produisît près d&#x27;elle: il a fallu que la nouveauté l&#x27;emportât sur elle et lui enlevât la majeure partie du public.--Mais en 1589, dira-t-on, les représentations des enfants de Saint-Paul duraient déjà depuis cinq ans, et leur succès même ne pouvait plus passer pour la vogue d&#x27;une nouveauté.--Aux yeux du public, non, peut-être; mais aux yeux de l&#x27;ancienne troupe, assurément oui. Combien longtemps, pour quiconque a réussi, ceux qui réussissent après lui ne restent-ils pas des intrus! Combien longtemps, en France et dans notre siècle, n&#x27;a-t-on pas continué à appeler «poëtes de la nouvelle école» ceux qui étaient déjà passés au rang de modèles! Hernani, pendant bien des années, quoique faisant loi pour les uns, n&#x27;était encore pour beaucoup d&#x27;autres qu&#x27;une nouveauté à la mode. Mais pour en revenir au premier Hamlet et à la phrase qui nous occupe, il est singulier qu&#x27;on y cherche une allusion précise aux débuts des enfants de Saint-Paul, si l&#x27;on remarque que Shakspeare parle en même temps des théâtres privés. Quand les enfants de Saint-Paul commencèrent leurs représentations, il y avait déjà nombre d&#x27;années que les riches seigneurs de la cour avaient pris l&#x27;habitude d&#x27;enrôler parmi leurs serviteurs des troupes de comédiens; Élizabeth était depuis peu sur le trône, lorsque lord Leicester donna l&#x27;exemple, et avant 1584 il avait déjà eu dix imitateurs. C&#x27;est à l&#x27;ensemble de ces concurrences gênantes que Shakspeare, dans le premier Hamlet, attribue les défections du public; il n&#x27;y a point de chronologie exacte à tirer d&#x27;une phrase où sont rapprochés des faits qui s&#x27;espacent sur plus de dix années; la troupe où Shakspeare était engagé datait de 1575, et c&#x27;est à cause de son existence ancienne et non interrompue que cette troupe, par l&#x27;organe de son poëte, traitait de nouveaux venus tous ses rivaux. Ainsi, soit que l&#x27;on considère en elle-même cette phrase du premier Hamlet, soit qu&#x27;on la compare au passage correspondant du second Hamlet, tout ce qu&#x27;on en peut conclure, c&#x27;est que le second Hamlet a été écrit après 1600, et le premier avant 1591; mais elle ne prouve aucunement que le premier Hamlet date de 1584.</p>
 <p>Mais Shakspeare, en 1584, donnait à son fils le nom de Hamlet! Oui, ou du moins celui de Hamnet; ainsi le mentionne le registre de l&#x27;état civil de Stratford-sur-Avon. Mais Hamlet ou Hamnet, peu importe: on voit, dans divers actes, les deux noms couramment confondus; seulement, comment voir dans cet acte de baptême la moindre trace d&#x27;intentions sombres ou de préoccupations poétiques? L&#x27;enfant reçut son nom tout simplement de son parrain, M. Hamnet ou Hamlet Sadler, comme sa soeur jumelle recevait le sien de Mme Judith Sadler, sa marraine; et si Amleth, le héros de la légende danoise et des histoires de Belleforest, a quelque chose à voir en tout ceci, ce n&#x27;est pas qu&#x27;il ait servi de patron au fils de Shakspeare: très-évidemment, au contraire, le prince de Danemark ne naquit pour la scène et ne s&#x27;appela Hamlet qu&#x27;après l&#x27;enfant obscur de Stratford-sur-Avon, à qui il emprunta l&#x27;orthographe anglaise du nom sous lequel il est à jamais connu. D&#x27;ailleurs, le lecteur trouvera à la fin de ce volume un Appendice consacré à la comparaison des différents textes de Hamlet, et cette étude plus générale lui fournira, nous l&#x27;espérons, quelques raisons encore de conclure comme nous sur le point du débat spécial auquel nous avons dû nous borner ici.</p>
-<p class="colophon">Texte du domaine public, source : Project Gutenberg (#15032). Traduction : Guizot, François († 1874). Édition numérique EbookClassics.</p>
+<p class="colophon">Texte du domaine public. Édition numérique EbookClassics.</p>
 </body></html>

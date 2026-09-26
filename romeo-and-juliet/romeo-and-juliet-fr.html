@@ -1,27 +1,72 @@
 <!DOCTYPE html>
 <html lang="fr"><head><meta charset="utf-8">
-<title>Roméo et Juliette</title><style>
-@page { margin: 22mm 20mm; }
-body { font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', serif; line-height: 1.6;
-       color: #1f1a14; max-width: 38em; margin: 0 auto; padding: 1.5em 1.2em; }
-h1 { font-size: 2.1em; text-align: center; margin: 1.5em 0 .2em; letter-spacing: .01em; }
-.author { text-align: center; font-size: 1.15em; font-style: italic; margin-bottom: 3em; color: #5a4a36; }
-h2 { font-size: 1.25em; text-align: center; margin: 2.6em 0 1.2em; letter-spacing: .06em;
-     text-transform: uppercase; font-weight: normal; page-break-before: always; break-before: page; }
-p { margin: 0; text-indent: 1.4em; text-align: justify; hyphens: auto; }
-h2 + p, .first { text-indent: 0; }
-.colophon { font-size: .85em; color: #6b5d45; text-align: center; margin-top: 4em; text-indent: 0; }
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roméo et Juliette — William Shakespeare</title><style>
+:root{--paper:#fbf8f1;--ink:#1f1b16;--muted:#6f6352;--accent:#9a6b2f;--rule:#e4dccb}
+@media (prefers-color-scheme:dark){:root{--paper:#16140f;--ink:#ece6d8;--muted:#a79c88;--accent:#d8a95e;--rule:#2e2a22}}
+html{background:var(--paper)}
+body{font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Libertinus Serif",Georgia,serif;color:var(--ink);
+     background:var(--paper);line-height:1.65;font-size:1.12rem;max-width:36em;margin:0 auto;padding:2.5em 1.25em 5em}
+.titlepage{text-align:center;min-height:70vh;display:flex;flex-direction:column;justify-content:center;gap:.6em;
+           border-bottom:1px solid var(--rule);margin-bottom:2.5em;padding-bottom:2.5em}
+.titlepage img{max-width:260px;width:60%;margin:0 auto 1.5em;border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+h1{font-size:2.4em;line-height:1.15;font-weight:600;margin:0;letter-spacing:-.01em}
+.author{font-style:italic;font-size:1.25em;color:var(--accent);margin:0}
+.translator{font-size:.95em;color:var(--muted);margin:0}
+nav.toc{margin:0 0 3em}
+nav.toc h2{font-size:.85em;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:left;margin:0 0 .8em}
+nav.toc ol{list-style:none;padding:0;margin:0;columns:1}
+nav.toc li{margin:.25em 0}
+nav.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent}
+nav.toc a:hover{border-color:var(--accent)}
+h2.chapter{font-size:1.45em;font-weight:600;text-align:center;margin:3.5em 0 1.6em;line-height:1.3}
+h2.chapter::before{content:"";display:block;width:3em;height:2px;background:var(--accent);margin:0 auto 1.1em}
+p{margin:0;text-indent:1.5em;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+h2.chapter + p, .titlepage + p{text-indent:0}
+h2.chapter + p::first-letter{font-size:3.1em;float:left;line-height:.85;padding:.08em .08em 0 0;color:var(--accent);font-weight:600}
+.colophon{margin-top:5em;padding-top:1.5em;border-top:1px solid var(--rule);text-align:center;color:var(--muted);font-size:.85em;text-indent:0}
+h3.sub{font-size:1em;font-weight:600;font-variant:small-caps;letter-spacing:.04em;text-align:center;margin:2.2em 0 1em}
+h3.sub + p{text-indent:0}
+@media print{h2.chapter{break-before:page}}
 </style></head><body>
+<header class="titlepage">
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjI0MDAiIHZpZXdCb3g9IjAgMCAxNjAwIDI0MDAiPgo8cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSIyNDAwIiBmaWxsPSIjMWIzYTRiIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjMwMCIgZmlsbD0iI2Y0YTI2MSIgb3BhY2l0eT0iLjkyIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMWIzYTRiIiBzdHJva2Utd2lkdGg9IjEyIiBvcGFjaXR5PSIuNSIvPgo8Y2lyY2xlIGN4PSIxMTIwIiBjeT0iNTYwIiByPSIxMjAiIGZpbGw9IiMxYjNhNGIiIG9wYWNpdHk9Ii4xOCIvPgo8cmVjdCB4PSIxNjAiIHk9IjkzMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIxMCIgZmlsbD0iI2Y0YTI2MSIvPgo8dGV4dCB4PSIxNjAiIHk9IjEwOTgiIGZvbnQtc2l6ZT0iMTUwIiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmZGYxZTYiPlJvbcOpbyBldDwvdGV4dD48dGV4dCB4PSIxNjAiIHk9IjEyNjIiIGZvbnQtc2l6ZT0iMTUwIiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmZGYxZTYiPkp1bGlldHRlPC90ZXh0Pgo8dGV4dCB4PSIxNjAiIHk9IjE0OTgiIGZvbnQtc2l6ZT0iNjgiIGZvbnQtc3R5bGU9Iml0YWxpYyIgZm9udC1mYW1pbHk9IkxpYmVydGludXMgU2VyaWYsIEdlb3JnaWEsIHNlcmlmIiBmaWxsPSIjZjRhMjYxIj5XaWxsaWFtIFNoYWtlc3BlYXJlPC90ZXh0Pgo8dGV4dCB4PSIxNjAiIHk9IjIyMzAiIGZvbnQtc2l6ZT0iNDQiIGxldHRlci1zcGFjaW5nPSIxNCIgZm9udC1mYW1pbHk9IkxpYmVydGludXMgU2VyaWYsIEdlb3JnaWEsIHNlcmlmIiBmaWxsPSIjZmRmMWU2IiBvcGFjaXR5PSIuNzUiPkVCT09LQ0xBU1NJQ1M8L3RleHQ+Cjwvc3ZnPg==" alt="">
 <h1>Roméo et Juliette</h1>
 <p class="author">William Shakespeare</p>
+<p class="translator">Traduction de Guizot, François</p>
+</header>
+<nav class="toc"><h2>Table des matières</h2><ol>
+<li><a href="#c1">Prologue</a></li>
+<li><a href="#c2">Acte premier — Scène I</a></li>
+<li><a href="#c3">Scène IV</a></li>
+<li><a href="#c4">Scène V</a></li>
+<li><a href="#c5">Scène I</a></li>
+<li><a href="#c6">Scène II</a></li>
+<li><a href="#c7">Scène III</a></li>
+<li><a href="#c8">Scène IV</a></li>
+<li><a href="#c9">Scène V</a></li>
+<li><a href="#c10">Scène vi</a></li>
+<li><a href="#c11">Scène I</a></li>
+<li><a href="#c12">Scène II</a></li>
+<li><a href="#c13">Scène III</a></li>
+<li><a href="#c14">Scène IV</a></li>
+<li><a href="#c15">Scène V</a></li>
+<li><a href="#c16">Scène I</a></li>
+<li><a href="#c17">Scène II</a></li>
+<li><a href="#c18">Scène III</a></li>
+<li><a href="#c19">Scène IV</a></li>
+<li><a href="#c20">Scène V</a></li>
+<li><a href="#c21">Scène I</a></li>
+<li><a href="#c22">Scène II</a></li>
+<li><a href="#c23">Scène III</a></li>
+</ol></nav>
 <p>OEUVRES COMPLÈTES DE SHAKSPEARE</p>
 <p>TRADUCTION DE M. GUIZOT</p>
 <p>NOUVELLE ÉDITION ENTIÈREMENT REVUE AVEC UNE ÉTUDE SUR SHAKSPEARE DES NOTICES SUR CHAQUE PIÈCE ET DES NOTES</p>
 <p>Volume 3 Timon d&#x27;Athènes Le Jour des Rois.--Les deux gentilshommes de Vérone. Roméo et Juliette.--Le Songe d&#x27;une nuit d&#x27;été. Tout est bien qui finit bien.</p>
 <p>PARIS A LA LIBRAIRIE ACADÉMIQUE DIDIER ET Cie, LIBRAIRES-ÉDITEURS 35, QUAI DES AUGUSTINS 1864 =====================================================</p>
-<h2>ROMÉO ET JULIETTE</h2>
-<h2>TRAGÉDIE</h2>
-<h2>NOTICE SUR ROMÉO ET JULIETTE</h2>
+<h3 class="sub">Roméo et Juliette — Tragédie</h3>
+<h3 class="sub">Notice sur Roméo et Juliette</h3>
 <p>Deux grandes familles de Vérone, les Montecchi et les Capelletti (les Montaigu et les Capulet), vivaient depuis longtemps dans une inimitié qui avait souvent donné lieu, dans les rues, à des combats sanglants. Alberto della Scala, second capitaine perpétuel de Vérone, avait inutilement travaillé à les réconcilier; mais du moins était-il parvenu à les contenir de telle sorte que lorsqu&#x27;ils se rencontraient, dit l&#x27;historien de Vérone, Girolamo della Corte, «les plus jeunes cédaient le pas aux plus âgés, ils se saluaient et se rendaient le salut.»</p>
 <p>En 1303, sous Bartolommeo della Scala, élu capitaine perpétuel après la mort de son père Alberto, Antonio Cappelletto, chef de sa faction, donna, dans le carnaval, une grande fête, à laquelle il invita une partie de la noblesse de Vérone. Roméo Montecchio, âgé de vingt à vingt et un ans, et l&#x27;un des plus beaux et des plus aimables jeunes gens de la ville; s&#x27;y rendit masqué avec quelques-uns de ses amis. Au bout de quelque temps, ayant ôté son masque, il s&#x27;assit dans un coin d&#x27;où il pouvait voir et être vu. On s&#x27;étonna beaucoup de la hardiesse avec laquelle il venait ainsi au milieu de ses ennemis. Cependant, comme il était jeune et de manières agréables, ceux-ci, dit l&#x27;historien, «n&#x27;y firent pas autant d&#x27;attention qu&#x27;ils en auraient fait peut-être s&#x27;il eût été plus âgé.» Ses yeux et ceux de Juliette Cappelletto se rencontrèrent bientôt, et, frappés également d&#x27;admiration, ils ne cessèrent plus de se regarder. La fête s&#x27;étant terminée par une danse appelée chez nous, dit Girolamo, «la danse du chapeau» (dal cappello), une dame vint prendre Roméo, qui, se trouvant ainsi introduit dans la danse, après avoir fait quelques tours avec sa danseuse, la quitta pour aller prendre Juliette, qui dansait avec un autre. Aussitôt qu&#x27;elle l&#x27;eût senti lui toucher la main, elle lui dit: «Bénie soit votre venue!» Et lui, lui serrant la main, répondit: «Quelles bénédictions en recevez-vous, madame?» Et elle reprit en souriant: «Ne vous étonnez pas, seigneur, si je bénis votre venue; M. Mercutio était là depuis longtemps à me glacer, et par votre politesse vous êtes venu me réchauffer.» (Ce jeune homme, qui s&#x27;appelait Mercutio, dit le louche, et que l&#x27;agrément de son esprit faisait aimer de tout le monde, avait toujours eu les mains plus froides que la glace.) A ces mots, Roméo répondit: «Je suis grandement heureux de vous rendre service en quoi que ce soit.» Comme la danse finissait, Juliette ne put dire que ces mots: «Hélas! je suis plus à vous qu&#x27;à moi-même.»</p>
 <p>Roméo s&#x27;étant rendu plusieurs fois dans une petite rue, sur laquelle donnaient les fenêtres de Juliette, un soir elle le reconnut à «son éternuement ou à quelque autre signe,» et elle ouvrit la fenêtre. Ils se saluèrent «très-poliment (cortesissimamente),» et, après s&#x27;être longtemps entretenus de leurs amours, ils convinrent qu&#x27;il fallait qu&#x27;ils se mariassent, quoi qu&#x27;il en pût arriver; et que cela devait se faire par l&#x27;entremise du frère Lonardo, franciscain, «théologien, grand philosophe, distillateur admirable, savant dans l&#x27;art de la magie,» et confesseur de presque toute la ville. Roméo l&#x27;alla trouver, et le frère, songeant au crédit qu&#x27;il acquerrait, non-seulement auprès du capitaine perpétuel, mais dans toute la ville, s&#x27;il parvenait à réconcilier les deux familles, se prêta aux désirs des deux jeunes gens. A l&#x27;époque de la Quadragésime, où la confession était d&#x27;obligation, Juliette se rendit avec sa mère dans l&#x27;église de Saint-François, dans la citadelle, et étant entrée la première dans le confessionnal, de l&#x27;autre côté duquel se trouvait Roméo, également venu à l&#x27;église avec son père, ils reçurent la bénédiction nuptiale par la fenêtre du confessionnal, que le frère avait eu soin d&#x27;ouvrir; puis, par les soins d&#x27;une très adroite vieille de la maison de Juliette, ils passèrent la nuit ensemble dans son jardin.</p>
@@ -51,16 +96,14 @@ h2 + p, .first { text-indent: 0; }
 <p>Le rôle de la nourrice de Juliette offre également peu de ces subtilités que Shakspeare paraît, dans cet ouvrage, avoir réservées aux gens de la haute classe, et quelquefois aux valets qui les imitent. Ce caractère de la nourrice est indiqué dans le poëme d&#x27;Arthur Brooke, où il est loin cependant d&#x27;avoir la même vérité grossière que dans la pièce de Shakspeare.</p>
 <p>Partout où ils échappent aux concetti, les vers de Roméo et Juliette sont peut-être les plus gracieux et les plus brillants qui soient sortis de la plume de Shakspeare; ils sont en grande partie rimés, autre hommage rendu aux habitudes italiennes.</p>
 <p>Roméo et Juliette fut jouée pour la première fois, en 1596, par les serviteurs de lord Hundsdon, les grands seigneurs ayant joui jusqu&#x27;au règne de Jacques Ier d&#x27;une liberté illimitée quant à la protection qu&#x27;ils accordaient aux acteurs. Un acte du Parlement y apporta alors quelque restriction.</p>
-<h2>ROMÉO ET JULIETTE</h2>
-<h2>PERSONNAGES</h2>
+<h3 class="sub">Roméo et Juliette — Personnages</h3>
 <p>ESCALUS, prince de Vérone. PARIS, jeune seigneur, parent du prince. MONTAIGU, CAPULET, chefs des deux maisons ennemies. UN VIEILLARD, oncle de Capulet. ROMÉO, fils de Montaigu. MERCUTIO, parent du prince et ami de Roméo. BENVOLIO, neveu de Montaigu et ami de Roméo. TYBALT, neveu de la signora Capulet. FRERE LAURENCE, franciscain. FRERE JEAN, religieux du même ordre. BALTHASAR, domestique de Roméo. SAMSON, GREGOIRE, domestique de Capulet. ABRAHAM, domestique de Montaigu. UN APOTHICAIRE. TROIS MUSICIENS. UN VALET. UN PAGE de Pâris. PIERRE. UN OFFICIER. CHOEUR. LA SIGNORA MONTAIGU, femme de Montaigu. LA SIGNORA CAPULET, femme de Capulet. JULIETTE, fille de Capulet. LA NOURRICE de Juliette.</p>
 <p>CITOYENS DE VÉRONE, PLUSIEURS HOMMES ET FEMMES DES DEUX FAMILLES, MASQUES, GARDES, GENS DU GUET ET SERVITEURS.</p>
 <p>La scène est pendant presque toute la pièce à Vérone.</p>
 <p>Au cinquième acte elle est une fois à Mantoue.</p>
-<h2>PROLOGUE</h2>
+<h2 class="chapter" id="c1">Prologue</h2>
 <p>Dans la belle Vérone, où nous plaçons notre scène, l&#x27;antique haine de deux maisons égales en dignité vient d&#x27;éclater par de nouveaux troubles, où le sang des citoyens a souillé les mains des citoyens. De la race funeste de ces deux ennemis a pris naissance, sous des étoiles funestes, un couple d&#x27;amants infortunés dont les malheurs et la ruine déplorable enseveliront avec eux les luttes de leurs parents. L&#x27;épisode terrible de cet amour marqué de mort, l&#x27;obstination de leurs parents dans des fureurs dont la mort de leurs enfants peut seule terminer le cours, vont pendant ces deux heures occuper notre scène. Si vous nous prêtez la faveur d&#x27;une oreille attentive, nous travaillerons par nos efforts à perfectionner ce qui pourrait manquer ici.</p>
-<h2>ACTE PREMIER</h2>
-<h2>SCÈNE I</h2>
+<h2 class="chapter" id="c2">Acte premier — Scène I</h2>
 <p>Une place publique.</p>
 <p>Entrent SAMSON et GRÉGOIRE, armés d&#x27;épées et de boucliers.</p>
 <p>SAMSON.--Tiens, Grégoire, sur ma parole, on ne nous fera plus avaler de pilules[4].</p>
@@ -184,9 +227,6 @@ h2 + p, .first { text-indent: 0; }
 <p>BENVOLIO.--En donnant à tes yeux quelque liberté: considère d&#x27;autres beautés.</p>
 <p>ROMÉO.--Ce serait le moyen de me faire penser plus souvent à son exquise beauté. Ces masques fortunés, qui caressent le front de nos belles dames, ne font par leur noirceur que nous rappeler la beauté qu&#x27;ils cachent. Celui qui est frappé d&#x27;aveuglement ne peut oublier le précieux trésor de la vue qu&#x27;il a perdu. Montre-moi une maîtresse belle par-dessus toutes les autres, que me sera sa beauté, sinon un livre de souvenirs où je lirai le nom de celle qui surpasse cette beauté incomparable? Adieu, tu ne peux m&#x27;apprendre à oublier.</p>
 <p>BENVOLIO.--Tu recevras de moi cette doctrine, ou j&#x27;en mourrai ton débiteur.</p>
-<p>(Ils sortent.)</p>
-<h2>SCÈNE II</h2>
-<p>Une rue.</p>
 <p>Entrent CAPULET, PARIS, UN DOMESTIQUE.</p>
 <p>CAPULET.--Montaigu est lié par la même défense que moi, et sous des peines semblables; et il ne sera pas difficile, je pense, à deux vieillards comme nous de vivre en paix.</p>
 <p>PARIS.--Vous jouissez tous d&#x27;une existence honorable, et c&#x27;est pitié que vous ayez été si longtemps ennemis. Mais parlez, seigneur, que répondez-vous à ma demande?</p>
@@ -220,9 +260,6 @@ h2 + p, .first { text-indent: 0; }
 <p>ROMÉO.--Quand la religieuse dévotion de mes yeux pourra me soutenir un pareil mensonge, que mes larmes se changent en flammes, et que ces hérétiques diaphanes, si souvent noyés sans pouvoir mourir, soient brûlés comme imposteurs. Une femme plus belle que mon amante! Le soleil qui voit tout n&#x27;a jamais vu son égale depuis le commencement du monde.</p>
 <p>BENVOLIO.--Bon, vous l&#x27;avez vue belle parce qu&#x27;il n&#x27;y avait personne autre à côté; elle se balançait elle-même dans vos deux yeux: mais pesez dans ces balances de cristal la dame de vos pensées avec telle autre jeune fille que je vous montrerai brillant à cette fête, et à peine trouverez-vous bien celle qui vous paraît maintenant la plus belle de toutes.</p>
 <p>ROMÉO.--J&#x27;irai, non pour y voir un semblable objet, mais pour m&#x27;y pénétrer de plaisir dans la splendeur de celui qui m&#x27;est cher.</p>
-<p>(Ils sortent.)</p>
-<h2>SCÈNE III</h2>
-<p>Un appartement de la maison de Capulet.</p>
 <p>LA SIGNORA CAPULET, LA NOURRICE de Juliette.</p>
 <p>LA SIGNORA CAPULET.--Nourrice, où est ma fille? Appelle-la, qu&#x27;elle vienne.</p>
 <p>LA NOURRICE.--Dans l&#x27;instant, sur mon honneur[12]..... à l&#x27;âge de douze ans--Je lui ai dit de venir.....--Quoi, mon agneau, mon oiseau du bon Dieu..... Dieu nous préserve..... Où est donc cette petite fille? Juliette!</p>
@@ -260,7 +297,7 @@ h2 + p, .first { text-indent: 0; }
 <p>LA SIGNORA CAPULET.--Nous te suivons. Allons, Juliette, le comte nous attend.</p>
 <p>LA NOURRICE.--Allez, ma fille, chercher ce qui donnera d&#x27;heureuses nuits à vos heureux jours.</p>
 <p>(Elles sortent.)</p>
-<h2>SCÈNE IV</h2>
+<h2 class="chapter" id="c3">Scène IV</h2>
 <p>Une rue.</p>
 <p>Entrent ROMÉO, MERCUTIO, BENVOLIO, avec cinq ou six autres masques et des porteurs de flambeaux.</p>
 <p>ROMÉO.--Eh bien! est-ce là ce que nous dirons pour notre excuse, ou entrerons nous sans apologie?</p>
@@ -307,7 +344,7 @@ h2 + p, .first { text-indent: 0; }
 <p>ROMÉO.--Trop tôt, au contraire, j&#x27;en ai peur. Un pressentiment funeste semble me dire qu&#x27;au milieu des réjouissances de cette nuit quelque événement encore suspendu dans les astres va commencer son cours terrible, et amener, par le traître coup d&#x27;une mort prématurée, le terme de cette vie méprisée que je renferme en mon sein. Mais, que celui qui gouverne ma course dirige ma voile! Allons, joyeux seigneurs.</p>
 <p>BENVOLIO.--Battez, tambours.</p>
 <p>(Ils sortent.)</p>
-<h2>SCÈNE V</h2>
+<h2 class="chapter" id="c4">Scène V</h2>
 <p>Une salle de la maison de Capulet, garnie de musiciens.</p>
 <p>Entrent des DOMESTIQUES.</p>
 <p>PREMIER DOMESTIQUE.--Où est Potpan, qu&#x27;il ne m&#x27;aide pas à desservir? Lui, manier le tranchoir! jouer du tranchoir!</p>
@@ -378,9 +415,8 @@ h2 + p, .first { text-indent: 0; }
 <p>(Entre le choeur.)</p>
 <p>LE CHOEUR.--Une ancienne passion languit maintenant sur son lit de mort, et de jeunes désirs soupirent après son héritage. Cette beauté pour qui l&#x27;amour gémissait et demandait à mourir, comparée à la tendre Juliette, a maintenant cessé d&#x27;être belle. Maintenant Roméo est aimé, et il aime à son tour; la magie des regards a jeté sur eux le même charme. Cependant il faut qu&#x27;il se plaigne à celle qu&#x27;il croit son ennemie, et qu&#x27;elle dérobe sur de cruels hameçons le doux appât de l&#x27;Amour. Étant tenu pour un ennemi, il ne pourra avoir accès près d&#x27;elle pour exprimer ces voeux que les amants ont accoutumé de jurer; tandis qu&#x27;elle, aussi pressée d&#x27;amour, aura bien moins de moyens encore de chercher à rencontrer celui qu&#x27;elle aime depuis un moment, mais la passion leur prête sa puissance, l&#x27;occasion leur fournira les moyens de se rapprocher, et tempérera leur détresse par une douceur extrême.</p>
 <p>(Il sort.)</p>
-<h2>FIN DU PREMIER ACTE.</h2>
-<h2>ACTE DEUXIÈME</h2>
-<h2>SCÈNE I</h2>
+<h3 class="sub">Fin du premier Acte — Acte deuxième</h3>
+<h2 class="chapter" id="c5">Scène I</h2>
 <p>Un lieu ouvert touchant le jardin de Capulet.</p>
 <p>Entre ROMÉO.</p>
 <p>ROMÉO.--Puis-je aller plus loin lorsque mon coeur est ici? Marche, terre insensible, et retourne vers ton centre.</p>
@@ -406,7 +442,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Ces deux derniers vers, dont les commentateurs ne sont pas trop parvenus à saisir le sens, leur ont cependant paru d&#x27;une telle indécence qu&#x27;ils n&#x27;ont osé les insérer dans le texte, et les ont rejetés dans une note où ils nous apprennent que l&#x27;et cætera est l&#x27;indication d&#x27;une obscénité encore plus grossière, l&#x27;usage, du temps de Shakspeare étant, lorsque quelque expression prononcée sur la scène paraissait trop indécente pour l&#x27;impression, de la suppléer par un et cætera.]</p>
 <p>BENVOLIO.--Allons, car il serait fort inutile de le chercher ici, puisqu&#x27;il ne veut pas qu&#x27;on le trouve.</p>
 <p>(Ils sortent.)</p>
-<h2>SCÈNE II</h2>
+<h2 class="chapter" id="c6">Scène II</h2>
 <p>Le jardin de Capulet.</p>
 <p>Entre ROMÉO.</p>
 <p>ROMÉO.--Il se rit des cicatrices, celui qui n&#x27;a jamais reçu une blessure. (Juliette paraît à une fenêtre.)--Mais doucement! Quelle lumière brille soudain à travers cette fenêtre? C&#x27;est l&#x27;Orient; Juliette est le soleil.--Lève-toi, soleil de beauté; tue la lune jalouse, déjà malade et pâle de douleur de ce que toi, sa servante, es bien plus belle qu&#x27;elle. Ne sois pas sa servante, puisqu&#x27;elle est jalouse. La couleur dont se revêtent ses vestales est une couleur malade et livide; on ne la voit qu&#x27;aux imbéciles, rejette-la loin de toi. Oui, c&#x27;est ma dame; oui, ce sont mes amours: oh! si elle pouvait savoir ce qu&#x27;elle est pour moi!--Elle parle, et cependant elle ne fait entendre aucun son. Qu&#x27;importe! ses yeux ont un langage; je veux leur répondre.--Je suis trop téméraire; ce n&#x27;est pas à moi qu&#x27;elle parle. Deux des plus brillantes étoiles du ciel, appelées ailleurs par quelque soin, conjurent ses yeux de briller dans leur sphère jusqu&#x27;à leur retour. Mais quoi? si ses yeux étaient au ciel, et que les étoiles fussent dans sa tête, l&#x27;éclat de ses joues leur ferait honte comme le jour à une lampe; et ses yeux, de la voûte du ciel, verseraient à travers les régions éthérées des flots si brillants de lumière, que les oiseaux chanteraient pensant qu&#x27;il n&#x27;est pas nuit!--Voyez comme elle appuie sa joue sur sa main. Oh! que ne suis-je un gant placé sur cette main, pour toucher cette joue!</p>
@@ -472,7 +508,7 @@ h2 + p, .first { text-indent: 0; }
 <p>(Elle sort.)</p>
 <p>ROMÉO.--Que le sommeil descende sur tes yeux, et la paix dans ton coeur! Que ne suis-je le sommeil et la paix, pour obtenir un si doux lieu de repos!--Je vais chercher dans sa cellule mon père spirituel pour implorer son assistance et lui apprendre mon heureuse chance.</p>
 <p>(Il sort.)</p>
-<h2>SCÈNE III</h2>
+<h2 class="chapter" id="c7">Scène III</h2>
 <p>La cellule de frère Laurence.</p>
 <p>Entre FRÈRE LAURENCE avec un panier.</p>
 <p>FRÈRE LAURENCE.--Le matin, de ses yeux grisâtres, sourit sur le front ténébreux de la nuit, rayant de traits de lumière les nuages de l&#x27;orient. La Nuit au teint vergeté s&#x27;éloigne, en chancelant comme un ivrogne, de la route du jour et des roues enflammées du char de Titan[36]. Maintenant, avant que le Soleil ait avancé sur l&#x27;horizon son oeil brûlant pour égayer le jour et sécher l&#x27;humide rosée de la nuit, il faut que je remplisse l&#x27;osier de cette corbeille d&#x27;herbes malfaisantes et de fleurs d&#x27;un suc précieux.--La terre, cette mère de la nature, est aussi son tombeau; et le sépulcre de la mort renferme aussi le germe de la vie. Nous trouvons des enfants de diverses sortes nés de ses flancs et nourris sur son sein maternel, nombre d&#x27;entre eux excellent en nombreuses vertus, aucun qui n&#x27;en possède quelques-unes, et cependant tous différents. Quelle abondance de puissants bienfaits sont déposés dans les plantes, les pierres, et dans leur véritable destination! car il n&#x27;existe sur la terre rien de si méprisable que la terre n&#x27;en reçoive quelque bienfait spécial, et rien de si bon qui, s&#x27;il est détourné de ce légitime usage, infidèle à sa vraie source, ne se précipite dans l&#x27;abus. Mal appliquée, la vertu même se change en vice; et le vice est quelquefois purifié par l&#x27;action. Dans l&#x27;enveloppe naissante de cette petite fleur, le poison a établi son séjour, et la médecine sa puissance; offerte à l&#x27;odorat, elle le réveille et tous les sens à la fois; si on la goûte, elle paralyse en même temps les sens et le coeur. Ainsi, de même que dans les plantes, demeurent toujours en présence dans le sein de l&#x27;homme deux ennemis en lutte, la grâce et la volonté grossière; et là où domine le principe pervers, l&#x27;ulcère de la mort a bientôt dévoré le germe vital.</p>
@@ -497,9 +533,9 @@ h2 + p, .first { text-indent: 0; }
 <p>ROMÉO.--Oh! partons: je tiens à ce que nous nous hâtions au plus vite.</p>
 <p>FRÈRE LAURENCE.--Sagement et lentement: qui court trébuche.</p>
 <p>(Ils sortent.)</p>
-<h2>SCÈNE IV</h2>
+<h2 class="chapter" id="c8">Scène IV</h2>
 <p>Une rue de Vérone.</p>
-<h2>BENVOLIO, MERCUTIO.</h2>
+<h3 class="sub">Benvolio, Mercutio.</h3>
 <p>MERCUTIO.--Où diable ce Roméo peut-il être? N&#x27;est-il pas rentré chez lui cette nuit?</p>
 <p>BENVOLIO.--Il n&#x27;est pas rentré chez son père; j&#x27;ai parlé à son domestique.</p>
 <p>MERCUTIO.--C&#x27;est toujours cette pâle cruelle, cette Rosaline, qui le tourmente tant que pour sûr il deviendra fou.</p>
@@ -638,9 +674,9 @@ h2 + p, .first { text-indent: 0; }
 <p>PIERRE.--Me voilà.</p>
 <p>LA NOURRICE.--Prends mon éventail et marche devant.</p>
 <p>(Ils sortent.)</p>
-<h2>SCÈNE V</h2>
+<h2 class="chapter" id="c9">Scène V</h2>
 <p>Le jardin de Capulet.</p>
-<h2>JULIETTE.</h2>
+<h3 class="sub">Juliette.</h3>
 <p>JULIETTE.--Neuf heures sonnaient quand j&#x27;ai envoyé la nourrice: elle m&#x27;avait promis qu&#x27;elle serait de retour au bout d&#x27;une demi-heure; peut-être n&#x27;aura-t-elle pu le trouver. Non, ce n&#x27;est pas cela.--Oh! elle est boiteuse! La messagère de l&#x27;Amour devrait être la pensée, dix fois plus rapide que les rayons du soleil lorsqu&#x27;ils chassent les ombres des sombres collines. Aussi l&#x27;Amour est-il traîné par des colombes aux ailes agiles; aussi, prompt comme le vent, Cupidon porte-t-il des ailes.--Déjà le soleil arrive au point le plus élevé de sa course journalière, et depuis neuf heures jusqu&#x27;à midi il s&#x27;est écoulé trois longues heures, et cependant elle ne revient pas. Si elle avait les affections et le sang brûlant de la jeunesse, son mouvement serait aussi prompt que celui d&#x27;une balle; d&#x27;un mot je la ferais bondir vers mon tendre amant, et un mot de lui me la renverrait. Mais ces vieilles gens, il semble qu&#x27;ils soient morts; on ne saurait les remuer; ils sont d&#x27;une lenteur! lourds et pâles comme le plomb! (Entrent la nourrice et Pierre.)--O Dieu! la voilà qui revient. O ma douce nourrice! quelle nouvelle? l&#x27;as-tu vu? L&#x27;as-tu trouvé? Renvoie ton valet.</p>
 <p>LA NOURRICE.--Pierre, restez à la porte.</p>
 <p>JULIETTE.--Eh bien, bonne, chère nourrice?--O Dieu! pourquoi cet air triste? Eusses-tu de mauvaises nouvelles, annonce-les moi gaiement; si elles sont bonnes, c&#x27;est faire honte à la musique des douces nouvelles que de me les dire sur un air si discordant.</p>
@@ -661,7 +697,7 @@ h2 + p, .first { text-indent: 0; }
 <p>LA NOURRICE.--Eh bien! dépêchez-vous de vous rendre à la cellule du père Laurence; il y a là un mari qui va vous rendre femme. A présent, voilà le sang léger qui vous monte aux joues: elles deviennent écarlates à la moindre nouvelle. Dépêchez-vous d&#x27;aller à l&#x27;église; moi, il faut que j&#x27;aille d&#x27;un autre côté chercher une échelle au moyen de laquelle votre amant grimpera aussitôt qu&#x27;il fera nuit, pour vous dénicher un oiseau. J&#x27;ai toute la peine, et je travaille pour votre plaisir; mais bientôt, ce soir, vous aurez votre part du fardeau. Allez, je vais dîner; dépêchez-vous de vous rendre à la cellule.</p>
 <p>JULIETTE.--De voler au plus beau sort.--Excellente nourrice, adieu.</p>
 <p>(Elles sortent.)</p>
-<h2>SCÈNE VI</h2>
+<h2 class="chapter" id="c10">Scène vi</h2>
 <p>La cellule du frère Laurence.</p>
 <p>Entrent FRÈRE LAURENCE et ROMÉO.</p>
 <p>FRÈRE LAURENCE.--Veuille le ciel, souriant à notre cérémonie sainte, ne pas envoyer le chagrin nous la reprocher dans les heures à venir!</p>
@@ -674,9 +710,8 @@ h2 + p, .first { text-indent: 0; }
 <p>JULIETTE.--Il est des pensées qui sont plus riches de fond que de paroles, et qui se sentent de leur trésor et non de leur parure. Ils sont dans la misère ceux qui peuvent calculer ce qu&#x27;ils possèdent. Mais tel est l&#x27;excès de fortune où s&#x27;est élevé mon sincère amour, que je ne saurais compter seulement jusqu&#x27;à moitié la valeur de mes richesses.</p>
 <p>FRÈRE LAURENCE.--Allons, allons, venez avec moi, et nous aurons bientôt fait; car, avec votre permission, vous ne resterez pas seuls jusqu&#x27;à ce que la sainte Église ait fait de vous deux une seule chair.</p>
 <p>(Ils sortent.)</p>
-<h2>FIN DU DEUXIÈME ACTE.</h2>
-<h2>ACTE TROISIÈME</h2>
-<h2>SCÈNE I</h2>
+<h3 class="sub">Fin du deuxième acte — Acte troisième</h3>
+<h2 class="chapter" id="c11">Scène I</h2>
 <p>Un lieu public.</p>
 <p>Entrent BENVOLIO, MERCUTIO, UN PAGE et des VALETS.</p>
 <p>BENVOLIO.--Je t&#x27;en prie, cher Mercutio, retirons-nous. Le jour est brûlant, les Capulet sont dehors, si nous venons à les rencontrer, jamais nous n&#x27;éviterons une querelle, car dans ces chaleurs où nous sommes le sang bouillonne avec furie[50].</p>
@@ -759,7 +794,7 @@ h2 + p, .first { text-indent: 0; }
 <p>LA SIGNORA MONTAIGU.--Ce n&#x27;est pas Roméo, prince; il était l&#x27;ami de Mercutio: sa faute a seulement terminé la vie de Tybalt, comme l&#x27;aurait fait la loi.</p>
 <p>LE PRINCE.--Et pour cette offense, nous l&#x27;exilons sur l&#x27;heure. Je suis intéressé dans l&#x27;effet de vos haines: mon sang coule ici pour vos querelles féroces; mais je saurai vous imposer une si forte amende que je vous ferai tous repentir de mes pertes. Je serai sourd à toute défense et à toute excuse; ni larmes ni prières ne pourront racheter de pareils délits: ne songez donc point à en faire usage. Que Roméo quitte ces lieux en toute hâte, ou l&#x27;heure qui l&#x27;y verra surprendre sera la dernière de sa vie. (A sa suite.)--Emportez ce corps, et attendez mes ordres: la clémence devient meurtrière quand elle pardonne à l&#x27;homicide.</p>
 <p>(Ils sortent.)</p>
-<h2>SCÈNE II</h2>
+<h2 class="chapter" id="c12">Scène II</h2>
 <p>Un appartement dans la maison de Capulet.</p>
 <p>Entre JULIETTE.</p>
 <p>JULIETTE.--Qu&#x27;un galop rapide, coursiers aux pieds brûlants, vous emporte vers le palais du Soleil: de son fouet, un conducteur tel que Phaéton vous aurait précipités vers le couchant et aurait ramené la sombre Nuit. Étends ton épais rideau. Nuit qui couronne l&#x27;amour; ferme les yeux errants, et que Roméo puisse voler dans mes bras sans qu&#x27;on le dise et sans qu&#x27;on le voie. La lumière de leurs mutuelles beautés suffit aux amants pour accomplir leurs amoureux mystères; ou si l&#x27;Amour est aveugle, il ne s&#x27;en accorde que mieux avec la Nuit. Viens, Nuit obligeante, matrone aux vêtements modestes, tout en noir, apprends-moi à perdre au jeu de qui perd gagne, où l&#x27;enjeu est deux virginités sans tache; couvre de ton obscur manteau mes joues où se révolte mon sang effarouché, jusqu&#x27;à ce que mon craintif amour, devenu plus hardi dans l&#x27;épreuve d&#x27;un amour fidèle, n&#x27;y voie plus qu&#x27;un chaste devoir.--Viens, ô Nuit; viens, Roméo; viens, toi qui es le jour au milieu de la nuit; car sur les ailes de la nuit tu arriveras plus éclatant que n&#x27;est sur les plumes du corbeau la neige nouvellement tombée. Viens, douce nuit; viens, nuit amoureuse, le front couvert de ténèbres: donne-moi mon Roméo; et quand il aura cessé de vivre, reprends-le, et, partage-le en petites étoiles, il rendra la face des cieux si belle, que le monde deviendra amoureux de la nuit et renoncera au culte du soleil indiscret. Oh! j&#x27;ai acheté une demeure d&#x27;amour, mais je n&#x27;en suis pas encore en possession, et celui qui m&#x27;a acquise n&#x27;est pas encore en jouissance. Ce jour est aussi ennuyeux que la veille d&#x27;une fête pour l&#x27;enfant qui a une robe neuve et qui ne peut encore la mettre.--Oh! voilà ma nourrice. (Entre la nourrice avec une échelle de cordes.) Elle m&#x27;apporte des nouvelles, et la bouche qui prononce seulement le nom de Roméo devient l&#x27;organe d&#x27;une éloquence céleste.--Eh bien! nourrice, quelles nouvelles? Qu&#x27;as-tu là? l&#x27;échelle que Roméo t&#x27;a dit d&#x27;apporter?</p>
@@ -790,7 +825,7 @@ h2 + p, .first { text-indent: 0; }
 <p>LA NOURRICE.--Hâtez-vous de vous rendre à votre chambre: je trouverai Roméo pour vous consoler; je sais bien où il est. Écoutez-moi, votre Roméo sera ici ce soir; je vais le trouver; il est caché dans la cellule du frère Laurence.</p>
 <p>JULIETTE.--Oh! trouve-le. Donne cet anneau à mon fidèle chevalier, et dis-lui de venir recevoir mon dernier adieu.</p>
 <p>(Elles sortent.)</p>
-<h2>SCÈNE III</h2>
+<h2 class="chapter" id="c13">Scène III</h2>
 <p>La cellule du frère Laurence.</p>
 <p>Entrent FRÈRE LAURENCE et ROMÉO.</p>
 <p>FRÈRE LAURENCE.--Roméo, sors de ta retraite: viens ici, homme craintif; l&#x27;affliction s&#x27;est éprise de tes mérites, et la calamité t&#x27;a épousé.</p>
@@ -841,9 +876,9 @@ h2 + p, .first { text-indent: 0; }
 <p>FRÈRE LAURENCE.--Partez, bonne nuit. Toute votre destinée dépend de ceci: ou sortez de la ville avant que la garde soit postée, ou au point du jour sortez déguisé. Restez à Mantoue; je trouverai votre domestique; de temps en temps, il vous instruira de tout ce qu&#x27;il arrivera de favorable pour vous ici. Donne-moi ta main; il est tard; adieu, bonne nuit.</p>
 <p>ROMÉO.--Si je n&#x27;étais appelé par une joie au-dessus de toutes les joies, ce serait un chagrin de me séparer de toi si brusquement. Adieu!</p>
 <p>(Ils sortent.)</p>
-<h2>SCÈNE IV</h2>
+<h2 class="chapter" id="c14">Scène IV</h2>
 <p>La maison de Capulet.</p>
-<h2>CAPULET, LA SIGNORA CAPULET, PARIS.</h2>
+<h3 class="sub">Capulet, la signora Capulet, paris.</h3>
 <p>CAPULET.--Il est arrivé, seigneur, des choses si malheureuses, que nous n&#x27;avons pas eu le temps de disposer notre fille. Voyez-vous, elle aimait chèrement son cousin Tybalt, et moi je l&#x27;aimais bien aussi. Enfin, nous sommes nés pour mourir.--Il est très-tard, elle ne descendra pas ce soir; et je vous réponds que, sans votre compagnie, il y a une heure que je serais au lit.</p>
 <p>PARIS.--Ces moments amers ne sont pas des moments d&#x27;amour[59].--Bonne nuit, madame; présentez mes hommages à votre fille.</p>
 <p>[Note 59: Those times of woe afford no time to woo.]</p>
@@ -854,7 +889,7 @@ h2 + p, .first { text-indent: 0; }
 <p>PARIS.--Seigneur, je voudrais que jeudi vînt demain.</p>
 <p>CAPULET.--Fort bien; allons, retirez-vous.--Ainsi, jeudi.--Vous, ma femme, voyez Juliette avant de vous mettre au lit; préparez-la au jour de ses noces.--Adieu, seigneur.... Holà! de la lumière dans ma chambre; marchez devant moi.... Il est si tard que bientôt l&#x27;on pourra dire qu&#x27;il est de bonne heure.--Bonne nuit.</p>
 <p>(Ils sortent.)</p>
-<h2>SCÈNE V</h2>
+<h2 class="chapter" id="c15">Scène V</h2>
 <p>La chambre de Juliette.</p>
 <p>Entrent ROMÉO et JULIETTE.</p>
 <p>JULIETTE.--Veux-tu donc déjà me quitter? le jour n&#x27;est pas encore prêt de paraître: c&#x27;est le rossignol, et non l&#x27;alouette, dont la voix a pénétré ton oreille inquiète; toute la nuit il chante là-bas sur ce grenadier. Crois-moi, cher amour, c&#x27;était le rossignol.</p>
@@ -935,9 +970,8 @@ h2 + p, .first { text-indent: 0; }
 <p>(Elle sort.)</p>
 <p>JULIETTE.--Vieille réprouvée! démon maudit! je ne sais quel est ton plus grand péché, ou de souhaiter que je me parjure ainsi, ou de déprécier mon époux avec cette même langue qui l&#x27;avait tant de milliers de fois exalté au-dessus de toute comparaison. Va, conseillère: mon coeur et toi sommes désormais séparés. Je vais trouver le frère, savoir quel expédient il aura à m&#x27;offrir; et si tout le reste me manque, moi, j&#x27;ai le pouvoir de mourir.</p>
 <p>(Elle sort.)</p>
-<h2>FIN DU TROISIÈME ACTE.</h2>
-<h2>ACTE QUATRIÈME</h2>
-<h2>SCÈNE I</h2>
+<h3 class="sub">Fin du troisième acte — Acte quatrième</h3>
+<h2 class="chapter" id="c16">Scène I</h2>
 <p>La cellule du frère Laurence.</p>
 <p>Entrent FRÈRE LAURENCE ET PARIS.</p>
 <p>FRÈRE LAURENCE.--Quoi! jeudi, seigneur? le terme est bien court.</p>
@@ -976,7 +1010,7 @@ h2 + p, .first { text-indent: 0; }
 <p>FRÈRE LAURENCE.--Tiens, et va-t&#x27;en: sois forte et prospère dans cette résolution! J&#x27;enverrai en hâte à Mantoue un moine porter mes lettres à ton époux.</p>
 <p>JULIETTE.--Amour, donne-moi la force, et la force me sauvera. Adieu, mon bon père.</p>
 <p>(Ils se quittent.)</p>
-<h2>SCÈNE II</h2>
+<h2 class="chapter" id="c17">Scène II</h2>
 <p>Un appartement de la maison de Capulet.</p>
 <p>Entrent CAPULET, LA SIGNORA CAPULET, LA NOURRICE et des DOMESTIQUES.</p>
 <p>CAPULET.--Invite toutes les personnes dont le nom est écrit là-dessus. (Le domestique sort.)--Toi, drôle, va m&#x27;arrêter vingt habiles cuisiniers.</p>
@@ -1000,7 +1034,7 @@ h2 + p, .first { text-indent: 0; }
 <p>LA SIGNORA CAPULET.--Nous serons bien à court pour nos préparatifs: il est déjà presque nuit.</p>
 <p>CAPULET.--Bon, bon; je me donnerai du mouvement et tout ira bien, je te le garantis, ma femme. Va rejoindre Juliette, aide-la à se parer; je ne me coucherai point cette nuit. Laisse-moi tranquille: pour cette fois, c&#x27;est moi qui ferai la ménagère.--Holà! mon chapeau.--Ils sont tous sortis. Allons, je vais aller moi-même chez le comte Pâris, et le disposer à la cérémonie de demain.--Mon coeur est merveilleusement léger depuis que cette fille entêtée est rentrée dans son devoir.</p>
 <p>(Ils sortent.)</p>
-<h2>SCÈNE III</h2>
+<h2 class="chapter" id="c18">Scène III</h2>
 <p>La chambre de Juliette.</p>
 <p>Entrent JULIETTE ET LA NOURRICE.</p>
 <p>JULIETTE.--Oui, cet ajustement est celui qui conviendra le mieux; mais, bonne nourrice, je t&#x27;en prie, laisse-moi seule cette nuit: j&#x27;ai besoin de bien des oraisons pour obtenir du ciel un regard propice dans l&#x27;état où je suis, qui est plein, comme tu sais, d&#x27;irrégularités et de péché.</p>
@@ -1012,7 +1046,7 @@ h2 + p, .first { text-indent: 0; }
 <p>JULIETTE.--Adieu.--Dieu sait quand nous nous reverrons. (Elle ferme la porte.) Je sens courir dans mes veines un frisson de peur, qui glace presque en moi la chaleur de la vie. Il faut que je les rappelle pour me rassurer.--Nourrice! Ah! que ferait-elle ici? il faut que je joue seule ma scène funèbre.--Viens, fiole.--Mais si ce breuvage n&#x27;opérait aucun effet, serais-je donc mariée de force au comte? Non, non, ceci me préservera. Repose ici. (Elle place un poignard à côté d&#x27;elle.)--Mais si c&#x27;était un poison que le frère m&#x27;eût adroitement fourni pour me faire mourir, dans la crainte de se voir déshonoré par ce mariage, lui qui m&#x27;a mariée avec Roméo... Je crains qu&#x27;il n&#x27;en soit ainsi, et cependant quand j&#x27;y songe, cela ne doit pas être, car il a toujours été reconnu pour un saint homme. Je ne veux pas entretenir une si mauvaise pensée.--Mais quoi! si, après que je serai déposée dans le tombeau, j&#x27;allais me réveiller avant le moment où Roméo doit venir me délivrer... C&#x27;est là une chose bien effrayante. Ne serais-je pas alors suffoquée sous cette voûte dont la sombre entrée ne reçoit aucun air salutaire, et étouffée avant que mon Roméo arrivât? ou, si je suis vivante, n&#x27;est-il pas vraisemblable que l&#x27;horrible idée de la mort et de la nuit jointe à la terreur du lieu, sous cette voûte, antique réceptacle où depuis tant de siècles sont entassés les ossements de mes ancêtres qu&#x27;on y a tous ensevelis; où Tybalt, tout sanglant et encore tout frais enterré, est là à se corrompre dans son linceul; où l&#x27;on dit que les spectres nocturnes viennent s&#x27;assembler à certaines heures de la nuit?... Hélas! hélas! n&#x27;est-il pas probable que, trop tôt éveillée, au milieu de ces odeurs infectes, de ces cris semblables à ceux de la mandragore[61] qu&#x27;on arrache de la terre, et qui font, dit-on, perdre la raison à ceux qui les entendent... Oh! si je m&#x27;éveille, ne pourra-t-il pas arriver que ma tête s&#x27;égare, assiégée de ces hideuses terreurs? Ne puis-je pas dans ma folie aller me jouer avec les restes de mes aïeux, et arracher de son linceul Tybalt tout défiguré; ou, dans cette frénésie, me servir, comme d&#x27;un bâton, de quelque os d&#x27;un de mes grands-pères pour briser ma cervelle désespérée?--Oh! regardez! Il me semble voir l&#x27;ombre de mon cousin chercher Roméo, qui a enfoncé dans son corps la pointe d&#x27;une épée.... Arrête, Tybalt, arrête!--Roméo, je viens. Je bois ceci à ta santé.</p>
 <p>(Elle se jette sur le lit.)</p>
 <p>[Note 61: On attribuait à la mandragore, entre autres propriétés singulières, celle de pousser, lorsqu&#x27;on l&#x27;arrachait, des cris qui faisaient perdre la raison à ceux qui les entendaient. On prétendait qu&#x27;elle croissait sur la fosse des hommes mis à mort pour quelque crime, et qu&#x27;elle était le produit de la corruption de leur corps; aussi la regardait-on comme douée de vie.]</p>
-<h2>SCÈNE IV</h2>
+<h2 class="chapter" id="c19">Scène IV</h2>
 <p>Une salle dans la maison de Capulet.</p>
 <p>Entrent LA SIGNORA CAPULET et LA NOURRICE.</p>
 <p>LA SIGNORA CAPULET.--Nourrice, prenez ces clefs et allez chercher encore des épices.</p>
@@ -1034,7 +1068,7 @@ h2 + p, .first { text-indent: 0; }
 <p>SERVANT. I have a head, sir, that will find out logs And never trouble Peter for the matter.</p>
 <p>CAPULET. &#x27;Mass, and well said; a merry whoreson! ha! Thou shalt be logger-head.</p>
 <p>Logs et Logger-head (bûches, têtes de bois). Il a fallu trouver un équivalent.]</p>
-<h2>SCÈNE V</h2>
+<h2 class="chapter" id="c20">Scène V</h2>
 <p>La chambre de Juliette.--Juliette est sur son lit.</p>
 <p>Entre LA NOURRICE.</p>
 <p>LA NOURRICE.--Ma maîtresse! allons, ma maîtresse! Juliette!... Ma foi, pour elle, elle dort profondément.--Eh bien! mon agneau; eh bien, madame! Fi! paresseuse! Allons, mon amour, levez-vous, dis-je. Madame! mon cher coeur, allons, madame la mariée...--Quoi, pas le mot! Vous vous en donnez pour quatre sous maintenant[64], vous dormez pour huit jours; car la nuit prochaine, j&#x27;en réponds, le comte Pâris a gagé son repos que vous ne sommeilleriez guère.... Dieu me pardonne (ma foi, amen)! Comme elle dort profondément! Il faut absolument que je l&#x27;éveille.--Madame, madame, madame! Voulez-vous que le comte vous surprenne au lit[65]? Vous vous lèveriez bien vite, de frayeur, j&#x27;en suis sûre, n&#x27;est-ce pas?... Comment! tout habillée! vous n&#x27;avez pas quitté votre robe, et vous voilà encore couchée! il faut absolument que je vous réveille.--Madame, madame, madame!... Hélas! au secours! au secours! ma maîtresse est morte. Oh! malheureux jour, faut-il que je sois jamais née! De l&#x27;eau-de-vie! oh! seigneur! oh! madame!</p>
@@ -1109,9 +1143,8 @@ h2 + p, .first { text-indent: 0; }
 <p>PREMIER MUSICIEN.--Quel malin diable est-ce là?</p>
 <p>SECOND MUSICIEN.--Qu&#x27;il s&#x27;aille faire pendre. Venez entrons là dedans; nous y attendrons le retour du convoi et nous resterons à dîner.</p>
 <p>(Ils sortent.)</p>
-<h2>FIN DU QUATRIÈME ACTE.</h2>
-<h2>ACTE CINQUIÈME</h2>
-<h2>SCÈNE I</h2>
+<h3 class="sub">Fin du quatrième acte — Acte cinquième</h3>
+<h2 class="chapter" id="c21">Scène I</h2>
 <p>Une rue de Mantoue.</p>
 <p>Entre ROMÉO.</p>
 <p>ROMÉO.--Si l&#x27;oeil du sommeil ne m&#x27;a pas trompé par de flatteuses illusions, mes songes m&#x27;annoncent prochainement d&#x27;heureuses nouvelles. Le maître de ma poitrine siége légèrement sur son trône, et une humeur inaccoutumée m&#x27;a, durant toute cette journée, élevé au-dessus de la terre dans des pensées joyeuses. J&#x27;ai rêvé que mon épouse arrivait et me trouvait mort (étrange songe, qui laisse à un mort la faculté de penser!) et que ses baisers communiquaient à mes lèvres un tel souffle de vie, que je me suis ranimé et me suis vu empereur. O ciel! quelle est donc la douceur des jouissances réelles de l&#x27;amour, puisque l&#x27;ombre de l&#x27;amour seulement est si riche de bonheur? (Entre Balthasar.)--Des nouvelles de Vérone!--Eh bien! Balthasar, ne m&#x27;apportes-tu pas des lettres du frère Laurence? Comment se porte ma Juliette? Mon père jouit-il d&#x27;une bonne santé? Comment se porte ma Juliette? C&#x27;est cela que je te redemande, car rien ne peut être mal si ma Juliette est bien.</p>
@@ -1131,7 +1164,7 @@ h2 + p, .first { text-indent: 0; }
 <p>L&#x27;APOTHICAIRE.--Mettez ceci dans un liquide quelconque, celui que vous voudrez; avalez-le, et eussiez-vous la force de vingt hommes ensemble, il vous aura expédié sur-le-champ.</p>
 <p>ROMÉO.--Tiens, voilà ton or, poison plus funeste pour la vie des hommes, et qui commet bien plus de meurtres dans ce monde odieux que ces pauvres compositions que tu n&#x27;as pas la permission de vendre. C&#x27;est moi qui te vends du poison; toi tu ne m&#x27;en as pas vendu.--Adieu, achète de quoi manger et te remettre en chair.--Viens, cordial et non pas poison, viens avec moi au tombeau de Juliette: c&#x27;est là que tu dois me servir!</p>
 <p>(Il sort.)</p>
-<h2>SCÈNE II</h2>
+<h2 class="chapter" id="c22">Scène II</h2>
 <p>La cellule du frère Laurence.</p>
 <p>Entre FRÈRE JEAN.</p>
 <p>FRÈRE JEAN.--Saint franciscain, mon frère, holà!</p>
@@ -1145,7 +1178,7 @@ h2 + p, .first { text-indent: 0; }
 <p>(Il sort.)</p>
 <p>FRÈRE LAURENCE.--Maintenant il faut que je me rende seul au monument. Dans trois heures la belle Juliette s&#x27;éveillera. Elle va me maudire en apprenant que Roméo n&#x27;a pas été instruit de ce qui vient d&#x27;arriver. Mais j&#x27;écrirai de nouveau à Mantoue, et je garderai Juliette dans ma cellule jusqu&#x27;à l&#x27;arrivée de Roméo.--Pauvre cadavre vivant enfermé dans la tombe d&#x27;un mort!</p>
 <p>(Il sort.)</p>
-<h2>SCÈNE III</h2>
+<h2 class="chapter" id="c23">Scène III</h2>
 <p>Un cimetière dans lequel se voit un monument appartenant à la famille des Capulet.</p>
 <p>Entre PARIS et son PAGE qui porte une torche et des fleurs.</p>
 <p>PARIS.--Page, donne-moi ton flambeau. Éloigne-toi et te tiens à l&#x27;écart.--Non, éteins-le; je ne veux pas être vu. Va te coucher sous ces cyprès, et applique ton oreille contre le sol creusé: les nombreux tombeaux qu&#x27;on y a ouverts ont tellement ébranlé sa solidité que personne ne pourra marcher dans le cimetière que tu ne l&#x27;entendes: alors, siffle pour m&#x27;avertir que tu entends approcher quelqu&#x27;un.--Donne-moi ces fleurs; fais ce que je t&#x27;ordonne: va.</p>
@@ -1233,7 +1266,7 @@ h2 + p, .first { text-indent: 0; }
 <p>CAPULET.--Roméo, aussi riche que son épouse, reposera près d&#x27;elle: chétives expiations de nos inimitiés!</p>
 <p>LE PRINCE.--L&#x27;aurore de ce jour apporte avec elle une sombre paix, et de douleur le soleil a caché son visage. Sortez de ce lieu, et allez vous entretenir de ces tristes aventures. Quelques-uns auront leur pardon, quelques-uns aussi seront punis, car il n&#x27;y eut jamais une histoire plus douloureuse que celle de Juliette et de son Roméo.</p>
 <p>(Ils sortent.)</p>
-<h2>FIN DU CINQUIÈME ET DERNIER ACTE.</h2>
+<h3 class="sub">Fin du cinquième et dernier acte.</h3>
 <p>End of Project Gutenberg&#x27;s Roméo et Juliette, by William Shakespeare</p>
-<p class="colophon">Texte du domaine public, source : Project Gutenberg (#18143). Traduction : Guizot, François († 1874). Édition numérique EbookClassics.</p>
+<p class="colophon">Texte du domaine public. Édition numérique EbookClassics.</p>
 </body></html>

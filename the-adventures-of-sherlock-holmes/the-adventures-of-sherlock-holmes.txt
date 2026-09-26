@@ -1,20 +1,8 @@
 The Adventures of Sherlock Holmes
 Arthur Conan Doyle
 
-The Adventures of Sherlock Holmes
 
-by Arthur Conan Doyle
-
-Contents
-
-I.     A Scandal in Bohemia II.    The Red-Headed League III.   A Case of Identity IV.    The Boscombe Valley Mystery V.     The Five Orange Pips VI.    The Man with the Twisted Lip VII.   The Adventure of the Blue Carbuncle VIII.  The Adventure of the Speckled Band IX.    The Adventure of the Engineer’s Thumb X.     The Adventure of the Noble Bachelor XI.    The Adventure of the Beryl Coronet XII.   The Adventure of the Copper Beeches
-
-
-I. A SCANDAL IN BOHEMIA
-
-
-
-I.
+I. A SCANDAL IN BOHEMIA — I.
 
 
 To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect reasoning and observing machine that the world has seen, but as a lover he would have placed himself in a false position. He never spoke of the softer passions, save with a gibe and a sneer. They were admirable things for the observer—excellent for drawing the veil from men’s motives and actions. But for the trained reasoner to admit such intrusions into his own delicate and finely adjusted temperament was to introduce a distracting factor which might throw a doubt upon all his mental results. Grit in a sensitive instrument, or a crack in one of his own high-power lenses, would not be more disturbing than a strong emotion in a nature such as his. And yet there was but one woman to him, and that woman was the late Irene Adler, of dubious and questionable memory.
@@ -66,14 +54,16 @@ The note was undated, and without either signature or address.
 “I have no data yet. It is a capital mistake to theorise before one has data. Insensibly one begins to twist facts to suit theories, instead of theories to suit facts. But the note itself. What do you deduce from it?”
 
 
-I CAREFULLY EXAMINED THE WRITING, AND THE PAPER UPON WHICH IT WAS WRITTEN.
+I carefully examined the writing, and the paper upon which it was written.
 
 
 “The man who wrote it was presumably well to do,” I remarked, endeavouring to imitate my companion’s processes. “Such paper could not be bought under half a crown a packet. It is peculiarly strong and stiff.”
 
 “Peculiar—that is the very word,” said Holmes. “It is not an English paper at all. Hold it up to the light.”
 
+
 I did so, and saw a large “E” with a small “g,” a “P,” and a large “G” with a small “t” woven into the texture of the paper.
+
 
 “What do you make of that?” asked Holmes.
 
@@ -260,6 +250,7 @@ Holmes took a note of it. “One other question,” said he. “Was the photogra
 “Then, good-night, your Majesty, and I trust that we shall soon have some good news for you. And good-night, Watson,” he added, as the wheels of the royal brougham rolled down the street. “If you will be good enough to call to-morrow afternoon at three o’clock I should like to chat this little matter over with you.”
 
 
+
 II.
 
 
@@ -347,11 +338,7 @@ It was close upon four before the door opened, and a drunken-looking groom, ill-
 
 “You are to watch me, for I will be visible to you.”
 
-“Yes.”
-
 “And when I raise my hand—so—you will throw into the room what I give you to throw, and will, at the same time, raise the cry of fire. You quite follow me?”
-
-“Entirely.”
 
 “It is nothing very formidable,” he said, taking a long cigar-shaped roll from his pocket. “It is an ordinary plumber’s smoke-rocket, fitted with a cap at either end to make it self-lighting. Your task is confined to that. When you raise your cry of fire, it will be taken up by quite a number of people. You may then walk to the end of the street, and I will rejoin you in ten minutes. I hope that I have made myself clear?”
 
@@ -454,10 +441,13 @@ There were several people on the pavement at the time, but the greeting appeared
 “I’ve heard that voice before,” said Holmes, staring down the dimly lit street. “Now, I wonder who the deuce that could have been.”
 
 
+
 III.
 
 
+
 I slept at Baker Street that night, and we were engaged upon our toast and coffee in the morning when the King of Bohemia rushed into the room.
+
 
 “You have really got it!” he cried, grasping Sherlock Holmes by either shoulder and looking eagerly into his face.
 
@@ -546,6 +536,7 @@ The King stared at him in amazement.
 And that was how a great scandal threatened to affect the kingdom of Bohemia, and how the best plans of Mr. Sherlock Holmes were beaten by a woman’s wit. He used to make merry over the cleverness of women, but I have not heard him do it of late. And when he speaks of Irene Adler, or when he refers to her photograph, it is always under the honourable title of the woman.
 
 
+
 II. THE RED-HEADED LEAGUE
 
 
@@ -604,7 +595,7 @@ Mr. Jabez Wilson laughed heavily. “Well, I never!” said he. “I thought at 
 “Yes, I have got it now,” he answered with his thick red finger planted halfway down the column. “Here it is. This is what began it all. You just read it for yourself, sir.”
 
 
-I TOOK THE PAPER FROM HIM AND READ AS FOLLOWS:
+I took the paper from him and read as follows:
 
 
 “TO THE RED-HEADED LEAGUE: On account of the bequest of the late Ezekiah Hopkins, of Lebanon, Pennsylvania, U.S.A., there is now another vacancy open which entitles a member of the League to a salary of £ 4 a week for purely nominal services. All red-headed men who are sound in body and mind and above the age of twenty-one years, are eligible. Apply in person on Monday, at eleven o’clock, to Duncan Ross, at the offices of the League, 7 Pope’s Court, Fleet Street.”
@@ -982,6 +973,7 @@ Sherlock Holmes had sprung out and seized the intruder by the collar. The other 
 He shrugged his shoulders. “Well, perhaps, after all, it is of some little use,” he remarked. “‘L’homme c’est rien—l’œuvre c’est tout,’ as Gustave Flaubert wrote to George Sand.”
 
 
+
 III. A CASE OF IDENTITY
 
 
@@ -1260,6 +1252,7 @@ Our visitor had recovered something of his assurance while Holmes had been talki
 “If I tell her she will not believe me. You may remember the old Persian saying, ‘There is danger for him who taketh the tiger cub, and danger also for whoso snatches a delusion from a woman.’ There is as much sense in Hafiz as in Horace, and as much knowledge of the world.”
 
 
+
 IV. THE BOSCOMBE VALLEY MYSTERY
 
 
@@ -1327,7 +1320,9 @@ We had the carriage to ourselves save for an immense litter of papers which Holm
 
 “On the contrary,” said Holmes, “it is the brightest rift which I can at present see in the clouds. However innocent he might be, he could not be such an absolute imbecile as not to see that the circumstances were very black against him. Had he appeared surprised at his own arrest, or feigned indignation at it, I should have looked upon it as highly suspicious, because such surprise or anger would not be natural under the circumstances, and yet might appear to be the best policy to a scheming man. His frank acceptance of the situation marks him as either an innocent man, or else as a man of considerable self-restraint and firmness. As to his remark about his deserts, it was also not unnatural if you consider that he stood beside the dead body of his father, and that there is no doubt that he had that very day so far forgotten his filial duty as to bandy words with him, and even, according to the little girl whose evidence is so important, to raise his hand as if to strike him. The self-reproach and contrition which are displayed in his remark appear to me to be the signs of a healthy mind rather than of a guilty one.”
 
+
 I shook my head. “Many men have been hanged on far slighter evidence,” I remarked.
+
 
 “So they have. And many men have been wrongfully hanged.”
 
@@ -1595,9 +1590,7 @@ Sherlock Holmes took a folded paper from his pocket and flattened it out on the 
 
 “And now?” He raised his hand.
 
-
 “BALLARAT.”
-
 
 “Quite so. That was the word the man uttered, and of which his son only caught the last two syllables. He was trying to utter the name of his murderer. So and so, of Ballarat.”
 
@@ -1694,6 +1687,7 @@ Holmes rose and sat down at the table with his pen in his hand and a bundle of p
 “God help us!” said Holmes after a long silence. “Why does fate play such tricks with poor, helpless worms? I never hear of such a case as this that I do not think of Baxter’s words, and say, ‘There, but for the grace of God, goes Sherlock Holmes.’”
 
 James McCarthy was acquitted at the Assizes on the strength of a number of objections which had been drawn out by Holmes and submitted to the defending counsel. Old Turner lived for seven months after our interview, but he is now dead; and there is every prospect that the son and daughter may come to live happily together in ignorance of the black cloud which rests upon their past.
+
 
 
 V. THE FIVE ORANGE PIPS
@@ -2056,6 +2050,7 @@ He took a large sheet of paper from his pocket, all covered with dates and names
 There is ever a flaw, however, in the best laid of human plans, and the murderers of John Openshaw were never to receive the orange pips which would show them that another, as cunning and as resolute as themselves, was upon their track. Very long and very severe were the equinoctial gales that year. We waited long for news of the Lone Star of Savannah, but none ever reached us. We did at last hear that somewhere far out in the Atlantic a shattered stern-post of a boat was seen swinging in the trough of a wave, with the letters “L. S.” carved upon it, and that is all which we shall ever know of the fate of the Lone Star.
 
 
+
 VI. THE MAN WITH THE TWISTED LIP
 
 
@@ -2066,7 +2061,7 @@ One night—it was in June, ’89—there came a ring to my bell, about the hour
 “A patient!” said she. “You’ll have to go out.”
 
 
-I GROANED, FOR I WAS NEWLY COME BACK FROM A WEARY DAY.
+I groaned, for I was newly come back from a weary day.
 
 
 We heard the door open, a few hurried words, and then quick steps upon the linoleum. Our own door flew open, and a lady, clad in some dark-coloured stuff, with a black veil, entered the room.
@@ -2506,6 +2501,7 @@ Sherlock Holmes sat down beside him on the couch and patted him kindly on the sh
 “I reached this one,” said my friend, “by sitting upon five pillows and consuming an ounce of shag. I think, Watson, that if we drive to Baker Street we shall just be in time for breakfast.”
 
 
+
 VII. THE ADVENTURE OF THE BLUE CARBUNCLE
 
 
@@ -2936,6 +2932,7 @@ There was a long silence, broken only by his heavy breathing and by the measured
 And no more words were needed. There was a rush, a clatter upon the stairs, the bang of a door, and the crisp rattle of running footfalls from the street.
 
 “After all, Watson,” said Holmes, reaching up his hand for his clay pipe, “I am not retained by the police to supply their deficiencies. If Horner were in danger it would be another thing; but this fellow will not appear against him, and the case must collapse. I suppose that I am commuting a felony, but it is just possible that I am saving a soul. This fellow will not go wrong again; he is too terribly frightened. Send him to gaol now, and you make him a gaol-bird for life. Besides, it is the season of forgiveness. Chance has put in our way a most singular and whimsical problem, and its solution is its own reward. If you will have the goodness to touch the bell, Doctor, we will begin another investigation, in which, also a bird will be the chief feature.”
+
 
 
 VIII. THE ADVENTURE OF THE SPECKLED BAND
@@ -3396,19 +3393,19 @@ I had forgotten the strange pets which the Doctor affected. There was a cheetah,
 “The least sound would be fatal to our plans.”
 
 
-I NODDED TO SHOW THAT I HAD HEARD.
+I nodded to show that I had heard.
 
 
 “We must sit without light. He would see it through the ventilator.”
 
 
-I NODDED AGAIN.
+I nodded again.
 
 
 “Do not go asleep; your very life may depend upon it. Have your pistol ready in case we should need it. I will sit on the side of the bed, and you in that chair.”
 
 
-I TOOK OUT MY REVOLVER AND LAID IT ON THE CORNER OF THE TABLE.
+I took out my revolver and laid it on the corner of the table.
 
 
 Holmes had brought up a long thin cane, and this he placed upon the bed beside him. By it he laid the box of matches and the stump of a candle. Then he turned down the lamp, and we were left in darkness.
@@ -3448,6 +3445,7 @@ Such are the true facts of the death of Dr. Grimesby Roylott, of Stoke Moran. It
 “With the result of driving it through the ventilator.”
 
 “And also with the result of causing it to turn upon its master at the other side. Some of the blows of my cane came home and roused its snakish temper, so that it flew upon the first person it saw. In this way I am no doubt indirectly responsible for Dr. Grimesby Roylott’s death, and I cannot say that it is likely to weigh very heavily upon my conscience.”
+
 
 
 IX. THE ADVENTURE OF THE ENGINEER’S THUMB
@@ -3806,6 +3804,7 @@ How our hydraulic engineer had been conveyed from the garden to the spot where h
 “Experience,” said Holmes, laughing. “Indirectly it may be of value, you know; you have only to put it into words to gain the reputation of being excellent company for the remainder of your existence.”
 
 
+
 X. THE ADVENTURE OF THE NOBLE BACHELOR
 
 
@@ -3843,9 +3842,7 @@ He broke the seal and glanced over the contents.
 
 “‘MY DEAR MR. SHERLOCK HOLMES,—Lord Backwater tells me that I may place implicit reliance upon your judgment and discretion. I have determined, therefore, to call upon you and to consult you in reference to the very painful event which has occurred in connection with my wedding. Mr. Lestrade, of Scotland Yard, is acting already in the matter, but he assures me that he sees no objection to your co-operation, and that he even thinks that it might be of some assistance. I will call at four o’clock in the afternoon, and, should you have any other engagement at that time, I hope that you will postpone it, as this matter is of paramount importance. Yours faithfully,
 
-
 “‘ROBERT ST. SIMON.’
-
 
 “It is dated from Grosvenor Mansions, written with a quill pen, and the noble lord has had the misfortune to get a smear of ink upon the outer side of his right little finger,” remarked Holmes as he folded up the epistle.
 
@@ -4264,6 +4261,7 @@ Lord St. Simon had by no means relaxed his rigid attitude, but had listened with
 “Ah, Watson,” said Holmes, smiling, “perhaps you would not be very gracious either, if, after all the trouble of wooing and wedding, you found yourself deprived in an instant of wife and of fortune. I think that we may judge Lord St. Simon very mercifully and thank our stars that we are never likely to find ourselves in the same position. Draw your chair up and hand me my violin, for the only problem we have still to solve is how to while away these bleak autumnal evenings.”
 
 
+
 XI. THE ADVENTURE OF THE BERYL CORONET
 
 
@@ -4633,9 +4631,7 @@ It was, indeed, our friend the financier. I was shocked by the change which had 
 
 “‘MY DEAREST UNCLE,—I feel that I have brought trouble upon you, and that if I had acted differently this terrible misfortune might never have occurred. I cannot, with this thought in my mind, ever again be happy under your roof, and I feel that I must leave you forever. Do not worry about my future, for that is provided for; and, above all, do not search for me, for it will be fruitless labour and an ill-service to me. In life or in death, I am ever your loving,
 
-
 “‘MARY.’
-
 
 “What could she mean by that note, Mr. Holmes? Do you think it points to suicide?”
 
@@ -4714,6 +4710,7 @@ The reaction of joy was as passionate as his grief had been, and he hugged his r
 “I think that we may safely say,” returned Holmes, “that she is wherever Sir George Burnwell is. It is equally certain, too, that whatever her sins are, they will soon receive a more than sufficient punishment.”
 
 
+
 XII. THE ADVENTURE OF THE COPPER BEECHES
 
 
@@ -4739,9 +4736,7 @@ It was dated from Montague Place upon the preceding evening, and ran thus:
 
 “DEAR MR. HOLMES,—I am very anxious to consult you as to whether I should or should not accept a situation which has been offered to me as governess. I shall call at half-past ten to-morrow if I do not inconvenience you. Yours faithfully,
 
-
 “VIOLET HUNTER.”
-
 
 “Do you know the young lady?” I asked.
 
@@ -4845,9 +4840,7 @@ I could see that Holmes was favourably impressed by the manner and speech of his
 
 “‘DEAR MISS HUNTER,—Miss Stoper has very kindly given me your address, and I write from here to ask you whether you have reconsidered your decision. My wife is very anxious that you should come, for she has been much attracted by my description of you. We are willing to give £ 30 a quarter, or £ 120 a year, so as to recompense you for any little inconvenience which our fads may cause you. They are not very exacting, after all. My wife is fond of a particular shade of electric blue and would like you to wear such a dress indoors in the morning. You need not, however, go to the expense of purchasing one, as we have one belonging to my dear daughter Alice (now in Philadelphia), which would, I should think, fit you very well. Then, as to sitting here or there, or amusing yourself in any manner indicated, that need cause you no inconvenience. As regards your hair, it is no doubt a pity, especially as I could not help remarking its beauty during our short interview, but I am afraid that I must remain firm upon this point, and I only hope that the increased salary may recompense you for the loss. Your duties, as far as the child is concerned, are very light. Now do try to come, and I shall meet you with the dog-cart at Winchester. Let me know your train. Yours faithfully,
 
-
 “‘JEPHRO RUCASTLE.’
-
 
 “That is the letter which I have just received, Mr. Holmes, and my mind is made up that I will accept it. I thought, however, that before taking the final step I should like to submit the whole matter to your consideration.”
 
@@ -4893,9 +4886,7 @@ The summons was a brief and urgent one.
 
 “Please be at the Black Swan Hotel at Winchester at midday to-morrow,” it said. “Do come! I am at my wit’s end.
 
-
 “HUNTER.”
-
 
 “Will you come with me?” asked Holmes, glancing up.
 
@@ -5147,4 +5138,5 @@ Holmes and I rushed out and round the angle of the house, with Toller hurrying b
 
 And thus was solved the mystery of the sinister house with the copper beeches in front of the door. Mr. Rucastle survived, but was always a broken man, kept alive solely through the care of his devoted wife. They still live with their old servants, who probably know so much of Rucastle’s past life that he finds it difficult to part from them. Mr. Fowler and Miss Rucastle were married, by special license, in Southampton the day after their flight, and he is now the holder of a government appointment in the island of Mauritius. As to Miss Violet Hunter, my friend Holmes, rather to my disappointment, manifested no further interest in her when once she had ceased to be the centre of one of his problems, and she is now the head of a private school at Walsall, where I believe that she has met with considerable success.
 
-Texte du domaine public, source : Project Gutenberg (#1661). Édition numérique EbookClassics.
+
+— Public domain text. EbookClassics digital edition.

@@ -1,73 +1,132 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
-<title>The Wonderful Adventures of Nils</title><style>
-@page { margin: 22mm 20mm; }
-body { font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', serif; line-height: 1.6;
-       color: #1f1a14; max-width: 38em; margin: 0 auto; padding: 1.5em 1.2em; }
-h1 { font-size: 2.1em; text-align: center; margin: 1.5em 0 .2em; letter-spacing: .01em; }
-.author { text-align: center; font-size: 1.15em; font-style: italic; margin-bottom: 3em; color: #5a4a36; }
-h2 { font-size: 1.25em; text-align: center; margin: 2.6em 0 1.2em; letter-spacing: .06em;
-     text-transform: uppercase; font-weight: normal; page-break-before: always; break-before: page; }
-p { margin: 0; text-indent: 1.4em; text-align: justify; hyphens: auto; }
-h2 + p, .first { text-indent: 0; }
-.colophon { font-size: .85em; color: #6b5d45; text-align: center; margin-top: 4em; text-indent: 0; }
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Wonderful Adventures of Nils — Selma Lagerlöf</title><style>
+:root{--paper:#fbf8f1;--ink:#1f1b16;--muted:#6f6352;--accent:#9a6b2f;--rule:#e4dccb}
+@media (prefers-color-scheme:dark){:root{--paper:#16140f;--ink:#ece6d8;--muted:#a79c88;--accent:#d8a95e;--rule:#2e2a22}}
+html{background:var(--paper)}
+body{font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Libertinus Serif",Georgia,serif;color:var(--ink);
+     background:var(--paper);line-height:1.65;font-size:1.12rem;max-width:36em;margin:0 auto;padding:2.5em 1.25em 5em}
+.titlepage{text-align:center;min-height:70vh;display:flex;flex-direction:column;justify-content:center;gap:.6em;
+           border-bottom:1px solid var(--rule);margin-bottom:2.5em;padding-bottom:2.5em}
+.titlepage img{max-width:260px;width:60%;margin:0 auto 1.5em;border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+h1{font-size:2.4em;line-height:1.15;font-weight:600;margin:0;letter-spacing:-.01em}
+.author{font-style:italic;font-size:1.25em;color:var(--accent);margin:0}
+.translator{font-size:.95em;color:var(--muted);margin:0}
+nav.toc{margin:0 0 3em}
+nav.toc h2{font-size:.85em;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:left;margin:0 0 .8em}
+nav.toc ol{list-style:none;padding:0;margin:0;columns:1}
+nav.toc li{margin:.25em 0}
+nav.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent}
+nav.toc a:hover{border-color:var(--accent)}
+h2.chapter{font-size:1.45em;font-weight:600;text-align:center;margin:3.5em 0 1.6em;line-height:1.3}
+h2.chapter::before{content:"";display:block;width:3em;height:2px;background:var(--accent);margin:0 auto 1.1em}
+p{margin:0;text-indent:1.5em;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+h2.chapter + p, .titlepage + p{text-indent:0}
+h2.chapter + p::first-letter{font-size:3.1em;float:left;line-height:.85;padding:.08em .08em 0 0;color:var(--accent);font-weight:600}
+.colophon{margin-top:5em;padding-top:1.5em;border-top:1px solid var(--rule);text-align:center;color:var(--muted);font-size:.85em;text-indent:0}
+h3.sub{font-size:1em;font-weight:600;font-variant:small-caps;letter-spacing:.04em;text-align:center;margin:2.2em 0 1em}
+h3.sub + p{text-indent:0}
+@media print{h2.chapter{break-before:page}}
 </style></head><body>
+<header class="titlepage">
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjI0MDAiIHZpZXdCb3g9IjAgMCAxNjAwIDI0MDAiPgo8cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSIyNDAwIiBmaWxsPSIjMTYzMDJiIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjMwMCIgZmlsbD0iI2U5YzQ2YSIgb3BhY2l0eT0iLjkyIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTYzMDJiIiBzdHJva2Utd2lkdGg9IjEyIiBvcGFjaXR5PSIuNSIvPgo8Y2lyY2xlIGN4PSIxMTIwIiBjeT0iNTYwIiByPSIxMjAiIGZpbGw9IiMxNjMwMmIiIG9wYWNpdHk9Ii4xOCIvPgo8cmVjdCB4PSIxNjAiIHk9IjkzMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIxMCIgZmlsbD0iI2U5YzQ2YSIvPgo8dGV4dCB4PSIxNjAiIHk9IjEwNDQiIGZvbnQtc2l6ZT0iMTI0IiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmNGVjZDgiPlRoZSBXb25kZXJmdWw8L3RleHQ+PHRleHQgeD0iMTYwIiB5PSIxMTgwIiBmb250LXNpemU9IjEyNCIgZm9udC13ZWlnaHQ9IjYwMCIgZm9udC1mYW1pbHk9IkxpYmVydGludXMgU2VyaWYsIEdlb3JnaWEsIHNlcmlmIiBmaWxsPSIjZjRlY2Q4Ij5BZHZlbnR1cmVzIG9mPC90ZXh0Pjx0ZXh0IHg9IjE2MCIgeT0iMTMxNiIgZm9udC1zaXplPSIxMjQiIGZvbnQtd2VpZ2h0PSI2MDAiIGZvbnQtZmFtaWx5PSJMaWJlcnRpbnVzIFNlcmlmLCBHZW9yZ2lhLCBzZXJpZiIgZmlsbD0iI2Y0ZWNkOCI+TmlsczwvdGV4dD4KPHRleHQgeD0iMTYwIiB5PSIxNTIzIiBmb250LXNpemU9IjY4IiBmb250LXN0eWxlPSJpdGFsaWMiIGZvbnQtZmFtaWx5PSJMaWJlcnRpbnVzIFNlcmlmLCBHZW9yZ2lhLCBzZXJpZiIgZmlsbD0iI2U5YzQ2YSI+U2VsbWEgTGFnZXJsw7ZmPC90ZXh0Pgo8dGV4dCB4PSIxNjAiIHk9IjIyMzAiIGZvbnQtc2l6ZT0iNDQiIGxldHRlci1zcGFjaW5nPSIxNCIgZm9udC1mYW1pbHk9IkxpYmVydGludXMgU2VyaWYsIEdlb3JnaWEsIHNlcmlmIiBmaWxsPSIjZjRlY2Q4IiBvcGFjaXR5PSIuNzUiPkVCT09LQ0xBU1NJQ1M8L3RleHQ+Cjwvc3ZnPg==" alt="">
 <h1>The Wonderful Adventures of Nils</h1>
 <p class="author">Selma Lagerlöf</p>
+</header>
+<nav class="toc"><h2>Contents</h2><ol>
+<li><a href="#c1">Selma Lagerlöf</a></li>
+<li><a href="#c2">Contents</a></li>
+<li><a href="#c3">V.s.h_ — The Boy</a></li>
+<li><a href="#c4">The Elf</a></li>
+<li><a href="#c5">The Wild Geese</a></li>
+<li><a href="#c6">The Big Checked Cloth</a></li>
+<li><a href="#c7">Akka From Kebnekaise — Evening</a></li>
+<li><a href="#c8">Night</a></li>
+<li><a href="#c9">Goose-play</a></li>
+<li><a href="#c10">The Wonderful Journey of Nils — On the Farm</a></li>
+<li><a href="#c11">Vittskövle</a></li>
+<li><a href="#c12">In Övid Cloister Park</a></li>
+<li><a href="#c13">Glimminge Castle — Black Rats and Gray Rats</a></li>
+<li><a href="#c14">The Stork</a></li>
+<li><a href="#c15">The Rat Charmer</a></li>
+<li><a href="#c16">The Great Crane Dance On Kullaberg</a></li>
+<li><a href="#c17">In Rainy Weather</a></li>
+<li><a href="#c18">The Stairway With the Three Steps</a></li>
+<li><a href="#c19">By Ronneby River</a></li>
+<li><a href="#c20">Karlskrona</a></li>
+<li><a href="#c21">The Trip to Öland</a></li>
+<li><a href="#c22">Öland&#x27;s Southern Point</a></li>
+<li><a href="#c23">The Big Butterfly</a></li>
+<li><a href="#c24">Little Karl&#x27;s Island — The Storm</a></li>
+<li><a href="#c25">The Sheep</a></li>
+<li><a href="#c26">Hell&#x27;s Hole</a></li>
+<li><a href="#c27">Two Cities — The City At the Bottom of the Sea</a></li>
+<li><a href="#c28">The Living City</a></li>
+<li><a href="#c29">The Legend of Småland</a></li>
+<li><a href="#c30">The Crows — The Earthen Crock</a></li>
+<li><a href="#c31">Kidnapped By Crows</a></li>
+<li><a href="#c32">The Cabin</a></li>
+<li><a href="#c33">The Old Peasant Woman</a></li>
+<li><a href="#c34">From Taberg to Huskvarna</a></li>
+<li><a href="#c35">The Big Bird Lake — Jarro, the Wild Duck</a></li>
+<li><a href="#c36">The Decoy-duck</a></li>
+<li><a href="#c37">The Lowering of the Lake</a></li>
+<li><a href="#c38">Ulvåsa-lady — The Prophecy</a></li>
+<li><a href="#c39">The Homespun Cloth</a></li>
+<li><a href="#c40">The Story of Karr and Grayskin — Karr</a></li>
+<li><a href="#c41">Grayskin&#x27;s Flight</a></li>
+<li><a href="#c42">Helpless, the Water-snake</a></li>
+<li><a href="#c43">The Nun Moths</a></li>
+<li><a href="#c44">The Big War of the Moths</a></li>
+<li><a href="#c45">Retribution</a></li>
+<li><a href="#c46">The Wind Witch — In Närke</a></li>
+<li><a href="#c47">Market Eve</a></li>
+<li><a href="#c48">The Breaking Up of the Ice</a></li>
+<li><a href="#c49">Thumbietot and the Bears — The Ironworks</a></li>
+<li><a href="#c50">The Flood — The Swans</a></li>
+<li><a href="#c51">The New Watch-dog</a></li>
+<li><a href="#c52">Dunfin — The City That Floats On the Water</a></li>
+<li><a href="#c53">The Sisters</a></li>
+<li><a href="#c54">Stockholm — Skansen</a></li>
+<li><a href="#c55">Gorgo, the Eagle — In the Mountain Glen</a></li>
+<li><a href="#c56">In Captivity</a></li>
+<li><a href="#c57">On Over Gästrikland — The Precious Girdle</a></li>
+<li><a href="#c58">Forest Day</a></li>
+<li><a href="#c59">A Day in Hälsingland — A Large Green Leaf</a></li>
+<li><a href="#c60">The Animals&#x27; New Year&#x27;s Eve</a></li>
+<li><a href="#c61">In Medelpad</a></li>
+<li><a href="#c62">A Morning in Ångermanland — The Bread</a></li>
+<li><a href="#c63">The Forest Fire</a></li>
+<li><a href="#c64">Westbottom and Lapland — The Five Scouts</a></li>
+<li><a href="#c65">The Moving Landscape</a></li>
+<li><a href="#c66">He Had Arrived!</a></li>
+<li><a href="#c67">The Meeting</a></li>
+<li><a href="#c68">Osa, the Goose Girl, and Little Mats</a></li>
+<li><a href="#c69">With the Laplanders</a></li>
+<li><a href="#c70">The Next Morning</a></li>
+<li><a href="#c71">Homeward Bound! — The First Travelling Day</a></li>
+<li><a href="#c72">Legends From Härjedalen</a></li>
+<li><a href="#c73">Vermland and Dalsland</a></li>
+<li><a href="#c74">A Little Homestead</a></li>
+<li><a href="#c75">The Treasure On the Island — On Their Way to the Sea</a></li>
+<li><a href="#c76">The Gift of the Wild Geese</a></li>
+<li><a href="#c77">The Journey to Vemminghög</a></li>
+<li><a href="#c78">Home At Last</a></li>
+<li><a href="#c79">The Parting With the Wild Geese</a></li>
+<li><a href="#c80">Table of Pronunciation</a></li>
+<li><a href="#c81">Velma Swanston Howard.</a></li>
+</ol></nav>
 <p>THE WONDERFUL ADVENTURES of NILS</p>
 <p>by</p>
-<h2>SELMA LAGERLÖF</h2>
+<h2 class="chapter" id="c1">Selma Lagerlöf</h2>
 <p>TRANSLATED FROM THE SWEDISH BY VELMA SWANSTON HOWARD</p>
-<h2>CONTENTS</h2>
-<p>The Boy</p>
-<p>Akka from Kebnekaise</p>
-<p>The Wonderful Journey of Nils</p>
-<p>Glimminge Castle</p>
-<p>The Great Crane Dance on Kullaberg</p>
-<p>In Rainy Weather</p>
-<p>The Stairway with the Three Steps</p>
-<p>By Ronneby River</p>
-<p>Karlskrona</p>
-<p>The Trip to Öland</p>
-<p>Öland&#x27;s Southern Point</p>
-<p>The Big Butterfly</p>
-<p>Little Karl&#x27;s Island</p>
-<p>Two Cities</p>
-<p>The Legend of Småland</p>
-<p>The Crows</p>
-<p>The Old Peasant Woman</p>
-<p>From Taberg to Huskvarna</p>
-<p>The Big Bird Lake</p>
-<p>Ulvåsa-Lady</p>
-<p>The Homespun Cloth</p>
-<p>The Story of Karr and Grayskin</p>
-<p>The Wind Witch</p>
-<p>The Breaking Up of the Ice</p>
-<p>Thumbietot and the Bears</p>
-<p>The Flood</p>
-<p>Dunfin</p>
-<p>Stockholm</p>
-<p>Gorgo the Eagle</p>
-<p>On Over Gästrikland</p>
-<p>A Day in Hälsingland</p>
-<p>In Medelpad</p>
-<p>A Morning in Ångermanland</p>
-<p>Westbottom and Lapland</p>
-<p>Osa, the Goose Girl, and Little Mats</p>
-<p>With the Laplanders</p>
-<p>Homeward Bound</p>
-<p>Legends from Härjedalen</p>
-<p>Vermland and Dalsland</p>
-<p>The Treasure on the Island</p>
-<p>The Journey to Vemminghög</p>
-<p>Home at Last</p>
-<p>The Parting with the Wild Geese</p>
+<h2 class="chapter" id="c2">Contents</h2>
 <p>_Some of the purely geographical matter in the Swedish original of the &quot;Further Adventures of Nils&quot; has been eliminated from the English version.</p>
 <p>The author has rendered valuable assistance in cutting certain chapters and abridging others. Also, with the author&#x27;s approval, cuts have been made where the descriptive matter was merely of local interest.</p>
 <p>But the story itself is intact.</p>
-<h2>V.S.H_.</h2>
-<h2>THE BOY</h2>
-<h2>THE ELF</h2>
+<h2 class="chapter" id="c3">V.s.h_ — The Boy</h2>
+<h2 class="chapter" id="c4">The Elf</h2>
 <p>Sunday, March twentieth.</p>
 <p>Once there was a boy. He was--let us say--something like fourteen years old; long and loose-jointed and towheaded. He wasn&#x27;t good for much, that boy. His chief delight was to eat and sleep; and after that--he liked best to make mischief.</p>
 <p>It was a Sunday morning and the boy&#x27;s parents were getting ready to go to church. The boy sat on the edge of the table, in his shirt sleeves, and thought how lucky it was that both father and mother were going away, and the coast would be clear for a couple of hours. &quot;Good! Now I can take down pop&#x27;s gun and fire off a shot, without anybody&#x27;s meddling interference,&quot; he said to himself.</p>
@@ -103,7 +162,7 @@ h2 + p, .first { text-indent: 0; }
 <p>For in the glass he saw plainly a little, little creature who was dressed in a hood and leather breeches.</p>
 <p>&quot;Why, that one is dressed exactly like me!&quot; said the boy, and clasped his hands in astonishment. But then he saw that the thing in the mirror did the same thing. Then he began to pull his hair and pinch his arms and swing round; and instantly he did the same thing after him; he, who was seen in the mirror.</p>
 <p>The boy ran around the glass several times, to see if there wasn&#x27;t a little man hidden behind it, but he found no one there; and then he began to shake with terror. For now he understood that the elf had bewitched him, and that the creature whose image he saw in the glass--was he, himself.</p>
-<h2>THE WILD GEESE</h2>
+<h2 class="chapter" id="c5">The Wild Geese</h2>
 <p>The boy simply could not make himself believe that he had been transformed into an elf. &quot;It can&#x27;t be anything but a dream--a queer fancy,&quot; thought he. &quot;If I wait a few moments, I&#x27;ll surely be turned back into a human being again.&quot;</p>
 <p>He placed himself before the glass and closed his eyes. He opened them again after a couple of minutes, and then expected to find that it had all passed over--but it hadn&#x27;t. He was--and remained--just as little. In other respects, he was the same as before. The thin, straw-coloured hair; the freckles across his nose; the patches on his leather breeches and the darns on his stockings, were all like themselves, with this exception--that they had become diminished.</p>
 <p>No, it would do no good for him to stand still and wait, of this he was certain. He must try something else. And he thought the wisest thing that he could do was to try and find the elf, and make his peace with him.</p>
@@ -160,7 +219,7 @@ h2 + p, .first { text-indent: 0; }
 <p>But just about then, the gander was considering how he should go to work to raise himself from the ground. He couldn&#x27;t stop to shake the boy off, hence he had to go along with him--up in the air.</p>
 <p>They bore on toward the heights so rapidly, that the boy fairly gasped. Before he had time to think that he ought to let go his hold around the gander&#x27;s neck, he was so high up that he would have been killed instantly, if he had fallen to the ground.</p>
 <p>The only thing that he could do to make himself a little more comfortable, was to try and get upon the gander&#x27;s back. And there he wriggled himself forthwith; but not without considerable trouble. And it was not an easy matter, either, to hold himself secure on the slippery back, between two swaying wings. He had to dig deep into feathers and down with both hands, to keep from tumbling to the ground.</p>
-<h2>THE BIG CHECKED CLOTH</h2>
+<h2 class="chapter" id="c6">The Big Checked Cloth</h2>
 <p>The boy had grown so giddy that it was a long while before he came to himself. The winds howled and beat against him, and the rustle of feathers and swaying of wings sounded like a whole storm. Thirteen geese flew around him, flapping their wings and honking. They danced before his eyes and they buzzed in his ears. He didn&#x27;t know whether they flew high or low, or in what direction they were travelling.</p>
 <p>After a bit, he regained just enough sense to understand that he ought to find out where the geese were taking him. But this was not so easy, for he didn&#x27;t know how he should ever muster up courage enough to look down. He was sure he&#x27;d faint if he attempted it.</p>
 <p>The wild geese were not flying very high because the new travelling companion could not breathe in the very thinnest air. For his sake they also flew a little slower than usual.</p>
@@ -192,8 +251,7 @@ h2 + p, .first { text-indent: 0; }
 <p>The ones on the ground were beside themselves with rage and shrieked: &quot;May you be shot, the whole lot o&#x27; you! The whole lot o&#x27; you!&quot;</p>
 <p>When the boy heard all this teasing he laughed. Then he remembered how badly things had gone with him, and he cried. But the next second, he was laughing again.</p>
 <p>Never before had he ridden so fast; and to ride fast and recklessly--that he had always liked. And, of course, he had never dreamed that it could be as fresh and bracing as it was, up in the air; or that there rose from the earth such a fine scent of resin and soil. Nor had he ever dreamed what it could be like--to ride so high above the earth. It was just like flying away from sorrow and trouble and annoyances of every kind that could be thought of.</p>
-<h2>AKKA FROM KEBNEKAISE</h2>
-<h2>EVENING</h2>
+<h2 class="chapter" id="c7">Akka From Kebnekaise — Evening</h2>
 <p>The big tame goosey-gander that had followed them up in the air, felt very proud of being permitted to travel back and forth over the South country with the wild geese, and crack jokes with the tame birds. But in spite of his keen delight, he began to tire as the afternoon wore on. He tried to take deeper breaths and quicker wing-strokes, but even so he remained several goose-lengths behind the others.</p>
 <p>When the wild geese who flew last, noticed that the tame one couldn&#x27;t keep up with them, they began to call to the goose who rode in the centre of the angle and led the procession: &quot;Akka from Kebnekaise! Akka from Kebnekaise!&quot; &quot;What do you want of me?&quot; asked the leader. &quot;The white one will be left behind; the white one will be left behind.&quot; &quot;Tell him it&#x27;s easier to fly fast than slow!&quot; called the leader, and raced on as before.</p>
 <p>The goosey-gander certainly tried to follow the advice, and increase his speed; but then he became so exhausted that he sank away down to the drooping willows that bordered the fields and meadows.</p>
@@ -254,7 +312,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;Now spread out the grass on the ice, so there&#x27;ll be something to stand on, to keep me from freezing fast. You help me and I&#x27;ll help you,&quot; said the goosey-gander.</p>
 <p>This the boy did. And when he had finished, the goosey-gander picked him up, once again, by the shirt-band, and tucked him under his wing. &quot;I think you&#x27;ll lie snug and warm there,&quot; said the goosey-gander as he covered him with his wing.</p>
 <p>The boy was so imbedded in down that he couldn&#x27;t answer, and he was nice and comfy. Oh, but he was tired!--And in less than two winks he was fast asleep.</p>
-<h2>NIGHT</h2>
+<h2 class="chapter" id="c8">Night</h2>
 <p>It is a fact that ice is always treacherous and not to be trusted. In the middle of the night the loosened ice-cake on Vomb Lake moved about, until one corner of it touched the shore. Now it happened that Mr. Smirre Fox, who lived at this time in Övid Cloister Park--on the east side of the lake--caught a glimpse of that one corner, while he was out on his night chase. Smirre had seen the wild geese early in the evening, and hadn&#x27;t dared to hope that he might get at one of them, but now he walked right out on the ice.</p>
 <p>When Smirre was very near to the geese, his claws scraped the ice, and the geese awoke, flapped their wings, and prepared for flight. But Smirre was too quick for them. He darted forward as though he&#x27;d been shot; grabbed a goose by the wing, and ran toward land again.</p>
 <p>But this night the wild geese were not alone on the ice, for they had a human being among them--little as he was. The boy had awakened when the goosey-gander spread his wings. He had tumbled down on the ice and was sitting there, dazed. He hadn&#x27;t grasped the whys and wherefores of all this confusion, until he caught sight of a little long-legged dog who ran over the ice with a goose in his mouth.</p>
@@ -283,7 +341,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Then the boy understood that the sun had said to all these tiny creatures: &quot;Wake up now, and come out of your nests! I&#x27;m here! Now you need be afraid of nothing.&quot;</p>
 <p>The wild-goose call was heard from the lake, as they were preparing for flight; and soon all fourteen geese came flying through the forest. The boy tried to call to them, but they flew so high that his voice couldn&#x27;t reach them. They probably believed the fox had eaten him up; and they didn&#x27;t trouble themselves to look for him.</p>
 <p>The boy came near crying with regret; but the sun stood up there--orange-coloured and happy--and put courage into the whole world. &quot;It isn&#x27;t worth while, Nils Holgersson, for you to be troubled about anything, as long as I&#x27;m here,&quot; said the sun.</p>
-<h2>GOOSE-PLAY</h2>
+<h2 class="chapter" id="c9">Goose-play</h2>
 <p>Monday, March twenty-first.</p>
 <p>Everything remained unchanged in the forest--about as long as it takes a goose to eat her breakfast. But just as the morning was verging on forenoon, a goose came flying, all by herself, under the thick tree-canopy. She groped her way hesitatingly, between the stems and branches, and flew very slowly. As soon as Smirre Fox saw her, he left his place under the beech tree, and sneaked up toward her. The wild goose didn&#x27;t avoid the fox, but flew very close to him. Smirre made a high jump for her but he missed her; and the goose went on her way down to the lake.</p>
 <p>It was not long before another goose came flying. She took the same route as the first one; and flew still lower and slower. She, too, flew close to Smirre Fox, and he made such a high spring for her, that his ears brushed her feet. But she, too, got away from him unhurt, and went her way toward the lake, silent as a shadow.</p>
@@ -303,8 +361,7 @@ h2 + p, .first { text-indent: 0; }
 <p>The wild geese flew and flew, unceasingly. All day long they continued to torment Smirre. They were not moved to pity because Smirre was done up, fevered, and out of his head. They continued without a let-up, although they understood that he hardly saw them, and that he jumped after their shadows.</p>
 <p>When Smirre Fox sank down on a pile of dry leaves, weak and powerless and almost ready to give up the ghost, they stopped teasing him.</p>
 <p>&quot;Now you know, Mr. Fox, what happens to the one who dares to come near Akka of Kebnekaise!&quot; they shouted in his ear; and with that they left him in peace.</p>
-<h2>THE WONDERFUL JOURNEY OF NILS</h2>
-<h2>ON THE FARM</h2>
+<h2 class="chapter" id="c10">The Wonderful Journey of Nils — On the Farm</h2>
 <p>Thursday, March twenty-fourth.</p>
 <p>Just at that time a thing happened in Skåne which created a good deal of discussion and even got into the newspapers but which many believed to be a fable, because they had not been able to explain it.</p>
 <p>It was about like this: A lady squirrel had been captured in the hazelbrush that grew on the shores of Vomb Lake, and was carried to a farmhouse close by. All the folks on the farm--both young and old--were delighted with the pretty creature with the bushy tail, the wise, inquisitive eyes, and the natty little feet. They intended to amuse themselves all summer by watching its nimble movements; its ingenious way of shelling nuts; and its droll play. They immediately put in order an old squirrel cage with a little green house and a wire-cylinder wheel. The little house, which had both doors and windows, the lady squirrel was to use as a dining room and bedroom. For this reason they placed therein a bed of leaves, a bowl of milk and some nuts. The cylinder wheel, on the other hand, she was to use as a play-house, where she could run and climb and swing round.</p>
@@ -323,7 +380,7 @@ h2 + p, .first { text-indent: 0; }
 <p>But she was sure of her ground, and begged them to take a look into the squirrel cage and this they did. And there lay on the bed of leaves, four tiny half-naked, half blind baby squirrels, who were at least a couple of days old.</p>
 <p>When the farmer himself saw the young ones, he said: &quot;Be it as it may with this; but one thing is certain, we, on this farm, have behaved in such a manner that we are shamed before both animals and human beings.&quot; And, thereupon, he took the mother squirrel and all her young ones from the cage, and laid them in the old grandma&#x27;s lap. &quot;Go thou out to the hazel-grove with them,&quot; said he, &quot;and let them have their freedom back again!&quot;</p>
 <p>It was this event that was so much talked about, and which even got into the newspapers, but which the majority would not credit because they were not able to explain how anything like that could have happened.</p>
-<h2>VITTSKÖVLE</h2>
+<h2 class="chapter" id="c11">Vittskövle</h2>
 <p>Saturday, March twenty-sixth.</p>
 <p>Two days later, another strange thing happened. A flock of wild geese came flying one morning, and lit on a meadow down in Eastern Skåne not very far from Vittskövle manor. In the flock were thirteen wild geese, of the usual gray variety, and one white goosey-gander, who carried on his back a tiny lad dressed in yellow leather breeches, green vest, and a white woollen toboggan hood.</p>
 <p>They were now very near the Eastern sea; and on the meadow where the geese had alighted the soil was sandy, as it usually is on the sea-coast. It looked as if, formerly, there had been flying sand in this vicinity which had to be held down; for in several directions large, planted pine-woods could be seen.</p>
@@ -364,7 +421,7 @@ h2 + p, .first { text-indent: 0; }
 <p>And a lucky thing it was that the woman hadn&#x27;t started the clipping sooner. Now only two quills had fallen under the shears&#x27; when the door was opened--and the boy stood on the door-sill. But a creature like that the woman had never seen before. She couldn&#x27;t believe anything else but that it was Goa-Nisse himself; and in her terror she dropped the shears, clasped her hands--and forgot to hold on to the goosey-gander.</p>
 <p>As soon as he felt himself freed, he ran toward the door. He didn&#x27;t give himself time to stop; but, as he ran past him, he grabbed the boy by the neck-band and carried him along with him. On the stoop he spread his wings and flew up in the air; at the same time he made a graceful sweep with his neck and seated the boy on his smooth, downy back.</p>
 <p>And off they flew--while all Vittskövle stood and stared after them.</p>
-<h2>IN ÖVID CLOISTER PARK</h2>
+<h2 class="chapter" id="c12">In Övid Cloister Park</h2>
 <p>All that day, when the wild geese played with the fox, the boy lay and slept in a deserted squirrel nest. When he awoke, along toward evening, he felt very uneasy. &quot;Well, now I shall soon be sent home again! Then I&#x27;ll have to exhibit myself before father and mother,&quot; thought he. But when he looked up and saw the wild geese, who lay and bathed in Vomb Lake--not one of them said a word about his going. &quot;They probably think the white one is too tired to travel home with me to-night,&quot; thought the boy.</p>
 <p>The next morning the geese were awake at daybreak, long before sunrise. Now the boy felt sure that he&#x27;d have to go home; but, curiously enough, both he and the white goosey-gander were permitted to follow the wild ones on their morning tour. The boy couldn&#x27;t comprehend the reason for the delay, but he figured it out in this way, that the wild geese did not care to send the goosey-gander on such a long journey until they had both eaten their fill. Come what might, he was only glad for every moment that should pass before he must face his parents.</p>
 <p>The wild geese travelled over Övid&#x27;s Cloister estate which was situated in a beautiful park east of the lake, and looked very imposing with its great castle; its well planned court surrounded by low walls and pavilions; its fine old-time garden with covered arbours, streams and fountains; its wonderful trees, trimmed bushes, and its evenly mown lawns with their beds of beautiful spring flowers.</p>
@@ -412,8 +469,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;No,&quot; said the boy, &quot;that&#x27;s nothing to regret. I have never been as well off as here with you.&quot;</p>
 <p>&quot;Well then, let it be as you wish,&quot; said Akka.</p>
 <p>&quot;Thanks!&quot; said the boy, and he felt so happy that he had to cry for very joy--just as he had cried before from sorrow.</p>
-<h2>GLIMMINGE CASTLE</h2>
-<h2>BLACK RATS AND GRAY RATS</h2>
+<h2 class="chapter" id="c13">Glimminge Castle — Black Rats and Gray Rats</h2>
 <p>In south-eastern Skåne--not far from the sea there is an old castle called Glimminge. It is a big and substantial stone house; and can be seen over the plain for miles around. It is not more than four stories high; but it is so ponderous that an ordinary farmhouse, which stands on the same estate, looks like a little children&#x27;s playhouse in comparison.</p>
 <p>The big stone house has such thick ceilings and partitions that there is scarcely room in its interior for anything but the thick walls. The stairs are narrow, the entrances small; and the rooms few. That the walls might retain their strength, there are only the fewest number of windows in the upper stories, and none at all are found in the lower ones. In the old war times, the people were just as glad that they could shut themselves up in a strong and massive house like this, as one is nowadays to be able to creep into furs in a snapping cold winter. But when the time of peace came, they did not care to live in the dark and cold stone halls of the old castle any longer. They have long since deserted the big Glimminge castle, and moved into dwelling places where the light and air can penetrate.</p>
 <p>At the time when Nils Holgersson wandered around with the wild geese, there were no human beings in Glimminge castle; but for all that, it was not without inhabitants. Every summer there lived a stork couple in a large nest on the roof. In a nest in the attic lived a pair of gray owls; in the secret passages hung bats; in the kitchen oven lived an old cat; and down in the cellar there were hundreds of old black rats.</p>
@@ -425,7 +481,7 @@ h2 + p, .first { text-indent: 0; }
 <p>The old castle had such secure walls and such few rat passages led through these, that the black rats had managed to protect themselves, and to prevent the gray rats from crowding in. Night after night, year after year, the struggle had continued between the aggressors and the defenders; but the black rats had kept faithful watch, and had fought with the utmost contempt for death, and, thanks to the fine old house, they had always conquered.</p>
 <p>It will have to be acknowledged that as long as the black rats were in power they were as much shunned by all other living creatures as the gray rats are in our day--and for just cause; they had thrown themselves upon poor, fettered prisoners, and tortured them; they had ravished the dead; they had stolen the last turnip from the cellars of the poor; bitten off the feet of sleeping geese; robbed eggs and chicks from the hens; and committed a thousand depredations. But since they had come to grief, all this seemed to have been forgotten; and no one could help but marvel at the last of a race that had held out so long against its enemies.</p>
 <p>The gray rats that lived in the courtyard at Glimminge and in the vicinity, kept up a continuous warfare and tried to watch out for every possible chance to capture the castle. One would fancy that they should have allowed the little company of black rats to occupy Glimminge castle in peace, since they themselves had acquired all the rest of the country; but you may be sure this thought never occurred to them. They were wont to say that it was a point of honour with them to conquer the black rats at some time or other. But those who were acquainted with the gray rats must have known that it was because the human kind used Glimminge castle as a grain store-house that the gray ones could not rest before they had taken possession of the place.</p>
-<h2>THE STORK</h2>
+<h2 class="chapter" id="c14">The Stork</h2>
 <p>Monday, March twenty-eighth.</p>
 <p>Early one morning the wild geese who stood and slept on the ice in Vomb Lake were awakened by long calls from the air. &quot;Trirop, Trirop!&quot; it sounded, &quot;Trianut, the crane, sends greetings to Akka, the wild goose, and her flock. To-morrow will be the day of the great crane dance on Kullaberg.&quot;</p>
 <p>Akka raised her head and answered at once: &quot;Greetings and thanks! Greetings and thanks!&quot;</p>
@@ -463,7 +519,7 @@ h2 + p, .first { text-indent: 0; }
 <p>The twelve black rats did not say a word. But the stork, despite his misery, could not refrain from teasing the cat. &quot;Don&#x27;t worry so, Monsie house-cat!&quot; said he. &quot;Can&#x27;t you see that mother Akka and Thumbietot have come to save the castle? You can be certain that they&#x27;ll succeed. Now I must stand up to sleep--and I do so with the utmost calm. To-morrow, when I awaken, there won&#x27;t be a single gray rat in Glimminge castle.&quot;</p>
 <p>The boy winked at Akka, and made a sign--as the stork stood upon the very edge of the nest, with one leg drawn up, to sleep--that he wanted to push him down to the ground; but Akka restrained him. She did not seem to be the least bit angry. Instead, she said in a confident tone of voice: &quot;It would be pretty poor business if one who is as old as I am could not manage to get out of worse difficulties than this. If only Mr. and Mrs. Owl, who can stay awake all night, will fly off with a couple of messages for me, I think that all will go well.&quot;</p>
 <p>Both owls were willing. Then Akka bade the gentleman owl that he should go and seek the black rats who had gone off, and counsel them to hurry home immediately. The lady owl she sent to Flammea, the steeple-owl, who lived in Lund cathedral, with a commission which was so secret that Akka only dared to confide it to her in a whisper.</p>
-<h2>THE RAT CHARMER</h2>
+<h2 class="chapter" id="c15">The Rat Charmer</h2>
 <p>It was getting on toward midnight when the gray rats after a diligent search succeeded in finding an open air-hole in the cellar. This was pretty high upon the wall; but the rats got up on one another&#x27;s shoulders, and it wasn&#x27;t long before the most daring among them sat in the air-hole, ready to force its way into Glimminge castle, outside whose walls so many of its forebears had fallen.</p>
 <p>The gray rat sat still for a moment in the hole, and waited for an attack from within. The leader of the defenders was certainly away, but she assumed that the black rats who were still in the castle wouldn&#x27;t surrender without a struggle. With thumping heart she listened for the slightest sound, but everything remained quiet. Then the leader of the gray rats plucked up courage and jumped down in the coal-black cellar.</p>
 <p>One after another of the gray rats followed the leader. They all kept very quiet; and all expected to be ambushed by the black rats. Not until so many of them had crowded into the cellar that the floor couldn&#x27;t hold any more, did they venture farther.</p>
@@ -476,7 +532,7 @@ h2 + p, .first { text-indent: 0; }
 <p>In the middle of the courtyard stood a tiny creature, who blew upon a pipe. All round him he had a whole circle of rats who listened to him, astonished and fascinated; and every moment brought more. Once he took the pipe from his lips--only for a second--put his thumb to his nose and wiggled his fingers at the gray rats; and then it looked as if they wanted to throw themselves on him and bite him to death; but as soon as he blew on his pipe they were in his power.</p>
 <p>When the tiny creature had played all the gray rats out of Glimminge castle, he began to wander slowly from the courtyard out on the highway; and all the gray rats followed him, because the tones from that pipe sounded so sweet to their ears that they could not resist them.</p>
 <p>The tiny creature walked before them and charmed them along with him, on the road to Vallby. He led them into all sorts of crooks and turns and bends--on through hedges and down into ditches--and wherever he went they had to follow. He blew continuously on his pipe, which appeared to be made from an animal&#x27;s horn, although the horn was so small that, in our days, there were no animals from whose foreheads it could have been broken. No one knew, either, who had made it. Flammea, the steeple-owl, had found it in a niche, in Lund cathedral. She had shown it to Bataki, the raven; and they had both figured out that this was the kind of horn that was used in former times by those who wished to gain power over rats and mice. But the raven was Akka&#x27;s friend; and it was from him she had learned that Flammea owned a treasure like this. And it was true that the rats could not resist the pipe. The boy walked before them and played as long as the starlight lasted--and all the while they followed him. He played at daybreak; he played at sunrise; and the whole time the entire procession of gray rats followed him, and were enticed farther and farther away from the big grain loft at Glimminge castle.</p>
-<h2>THE GREAT CRANE DANCE ON KULLABERG</h2>
+<h2 class="chapter" id="c16">The Great Crane Dance On Kullaberg</h2>
 <p>Tuesday, March twenty-ninth.</p>
 <p>Although there are many magnificent buildings in Skåne, it must be acknowledged that there&#x27;s not one among them that has such pretty walls as old Kullaberg.</p>
 <p>Kullaberg is low and rather long. It is not by any means a big or imposing mountain. On its broad summit you&#x27;ll find woods and grain fields, and one and another heather-heath. Here and there, round heather-knolls and barren cliffs rise up. It is not especially pretty up there. It looks a good deal like all the other upland places in Skåne.</p>
@@ -513,7 +569,7 @@ h2 + p, .first { text-indent: 0; }
 <p>But the stags stopped wrestling just at the right moment, and instantly a whisper went from knoll to knoll: &quot;The cranes are coming!&quot;</p>
 <p>And then came the gray, dusk-clad birds with plumes in their wings, and red feather-ornaments on their necks. The big birds with their tall legs, their slender throats, their small heads, came gliding down the knoll with an abandon that was full of mystery. As they glided forward they swung round--half flying, half dancing. With wings gracefully lifted, they moved with an inconceivable rapidity. There was something marvellous and strange about their dance. It was as though gray shadows had played a game which the eye could scarcely follow. It was as if they had learned it from the mists that hover over desolate morasses. There was witchcraft in it. All those who had never before been on Kullaberg understood why the whole meeting took its name from the crane&#x27;s dance. There was wildness in it; but yet the feeling which it awakened was a delicious longing. No one thought any more about struggling. Instead, both the winged and those who had no wings, all wanted to raise themselves eternally, lift themselves above the clouds, seek that which was hidden beyond them, leave the oppressive body that dragged them down to earth and soar away toward the infinite.</p>
 <p>Such longing after the unattainable, after the hidden mysteries back of this life, the animals felt only once a year; and this was on the day when they beheld the great crane dance.</p>
-<h2>IN RAINY WEATHER</h2>
+<h2 class="chapter" id="c17">In Rainy Weather</h2>
 <p>Wednesday, March thirtieth.</p>
 <p>It was the first rainy day of the trip. As long as the wild geese had remained in the vicinity of Vomb Lake, they had had beautiful weather; but on the day when they set out to travel farther north, it began to rain, and for several hours the boy had to sit on the goose-back, soaking wet, and shivering with the cold.</p>
 <p>In the morning when they started, it had been clear and mild. The wild geese had flown high up in the air--evenly, and without haste--with Akka at the head maintaining strict discipline, and the rest in two oblique lines back of her. They had not taken the time to shout any witty sarcasms to the animals on the ground; but, as it was simply impossible for them to keep perfectly silent, they sang out continually--in rhythm with the wing-strokes--their usual coaxing call: &quot;Where are you? Here am I. Where are you? Here am I.&quot;</p>
@@ -549,7 +605,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;What more, Lady Brown Owl? What more? What more?&quot;</p>
 <p>&quot;Fly with me up to the church tower, Mr. Gray Owl, and you shall hear the whole story! I fear there may be someone listening down here in the street.&quot; With that, the owls flew their way; but the boy flung his cap in the air, and shouted: &quot;If I only watch over the goosey-gander, so that he gets back safe and sound, then I shall become a human being again. Hurrah! Hurrah! Then I shall become a human being again!&quot;</p>
 <p>He shouted &quot;hurrah&quot; until it was strange that they did not hear him in the houses--but they didn&#x27;t, and he hurried back to the wild geese, out in the wet morass, as fast as his legs could carry him.</p>
-<h2>THE STAIRWAY WITH THE THREE STEPS</h2>
+<h2 class="chapter" id="c18">The Stairway With the Three Steps</h2>
 <p>Thursday, March thirty-first.</p>
 <p>The following day the wild geese intended to travel northward through Allbo district, in Småland. They sent Iksi and Kaksi to spy out the land. But when they returned, they said that all the water was frozen, and all the land was snow-covered. &quot;We may as well remain where we are,&quot; said the wild geese. &quot;We cannot travel over a country where there is neither water nor food.&quot; &quot;If we remain where we are, we may have to wait here until the next moon,&quot; said Akka. &quot;It is better to go eastward, through Blekinge, and see if we can&#x27;t get to Småland by way of Möre, which lies near the coast, and has an early spring.&quot;</p>
 <p>Thus the boy came to ride over Blekinge the next day. Now, that it was light again, he was in a merry mood once more, and could not comprehend what had come over him the night before. He certainly didn&#x27;t want to give up the journey and the outdoor life now.</p>
@@ -567,7 +623,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;How true this is, one can see by the number of islands and points that lie along the coast of Blekinge, and which are nothing in the world but the big stones that the giant threw.</p>
 <p>&quot;One can also tell because the salmon always go up in the Blekinge streams and work their way up through rapids and still water, all the way to Småland.</p>
 <p>&quot;That giant is worthy of great thanks and much honour from the Blekinge people; for salmon in the streams, and stone-cutting on the island--that means work which gives food to many of them even to this day.&quot;</p>
-<h2>BY RONNEBY RIVER</h2>
+<h2 class="chapter" id="c19">By Ronneby River</h2>
 <p>Friday, April first.</p>
 <p>Neither the wild geese nor Smirre Fox had believed that they should ever run across each other after they had left Skåne. But now it turned out so that the wild geese happened to take the route over Blekinge and thither Smirre Fox had also gone.</p>
 <p>So far he had kept himself in the northern parts of the province; and since he had not as yet seen any manor parks, or hunting grounds filled with game and dainty young deer, he was more disgruntled than he could say.</p>
@@ -611,7 +667,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;You, Smirre, ought at least to think whether it is right for you, who are weaponed with both teeth and claws, to hound us in this way; we, who are without defence,&quot; said Akka.</p>
 <p>Smirre thought that Akka sounded scared, and he said quickly: &quot;If you, Akka, will take that Thumbietot--who has so often opposed me--and throw him down to me, I&#x27;ll promise to make peace with you. Then I&#x27;ll never more pursue you or any of yours.&quot; &quot;I&#x27;m not going to give you Thumbietot,&quot; said Akka. &quot;From the youngest of us to the oldest, we would willingly give our lives for his sake!&quot; &quot;Since you&#x27;re so fond of him,&quot; said Smirre, &quot;I&#x27;ll promise you that he shall be the first among you that I will wreak vengeance upon.&quot;</p>
 <p>Akka said no more, and after Smirre had sent up a few more yowls, all was still. The boy lay all the while awake. Now it was Akka&#x27;s words to the fox that prevented him from sleeping. Never had he dreamed that he should hear anything so great as that anyone was willing to risk life for his sake. From that moment, it could no longer be said of Nils Holgersson that he did not care for anyone.</p>
-<h2>KARLSKRONA</h2>
+<h2 class="chapter" id="c20">Karlskrona</h2>
 <p>Saturday, April second.</p>
 <p>It was a moonlight evening in Karlskrona--calm and beautiful. But earlier in the day, there had been rain and wind; and the people must have thought that the bad weather still continued, for hardly one of them had ventured out on the streets.</p>
 <p>While the city lay there so desolate, Akka, the wild goose, and her flock, came flying toward it over Vemmön and Pantarholmen. They were out in the late evening to seek a sleeping place on the islands. They couldn&#x27;t remain inland because they were disturbed by Smirre Fox wherever they lighted.</p>
@@ -669,7 +725,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;Thanks, Rosenbom! That was well spoken. Rosenbom is a fine man. But what is this, Rosenbom?&quot;</p>
 <p>For there stood Nils Holgersson, right on the top of Rosenbom&#x27;s bald pate. He wasn&#x27;t afraid any longer; but raised his white toboggan hood, and shouted: &quot;Hurrah for you, Longlip!&quot;</p>
 <p>The bronze man struck the ground hard with his stick; but the boy never learned what he had intended to do for now the sun ran up, and, at the same time, both the bronze man and the wooden man vanished--as if they had been made of mists. While he still stood and stared after them, the wild geese flew up from the church tower, and swayed back and forth over the city. Instantly they caught sight of Nils Holgersson; and then the big white one darted down from the sky and fetched him.</p>
-<h2>THE TRIP TO ÖLAND</h2>
+<h2 class="chapter" id="c21">The Trip to Öland</h2>
 <p>Sunday, April third.</p>
 <p>The wild geese went out on a wooded island to feed. There they happened to run across a few gray geese, who were surprised to see them--since they knew very well that their kinsmen, the wild geese, usually travel over the interior of the country.</p>
 <p>They were curious and inquisitive, and wouldn&#x27;t be satisfied with less than that the wild geese should tell them all about the persecution which they had to endure from Smirre Fox. When they had finished, a gray goose, who appeared to be as old and as wise as Akka herself, said: &quot;It was a great misfortune for you that Smirre Fox was declared an outlaw in his own land. He&#x27;ll be sure to keep his word, and follow you all the way up to Lapland. If I were in your place, I shouldn&#x27;t travel north over Småland, but would take the outside route over Öland instead, so that he&#x27;ll be thrown off the track entirely. To really mislead him, you must remain for a couple of days on Öland&#x27;s southern point. There you&#x27;ll find lots of food and lots of company. I don&#x27;t believe you&#x27;ll regret it, if you go over there.&quot;</p>
@@ -700,7 +756,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;Be careful! Can&#x27;t you see that you are flying up and down?&quot; shouted a loon as he rushed by. The boy positively clutched the goosey-gander around the neck. This was something which he had feared for a long time.</p>
 <p>No one can tell when they would have arrived, if they hadn&#x27;t heard a rolling and muffled sound in the distance.</p>
 <p>Then Akka craned her neck, snapped hard with her wings, and rushed on at full speed. Now she had something to go by. The gray goose had told her not to light on Öland&#x27;s southern point, because there was a cannon there, which the people used to shoot the mist with. Now she knew the way, and now no one in the world should lead her astray again.</p>
-<h2>ÖLAND&#x27;S SOUTHERN POINT</h2>
+<h2 class="chapter" id="c22">Öland&#x27;s Southern Point</h2>
 <p>April third to sixth.</p>
 <p>On the most southerly part of Öland lies a royal demesne, which is called Ottenby. It is a rather large estate which extends from shore to shore, straight across the island; and it is remarkable because it has always been a haunt for large bird-companies. In the seventeenth century, when the kings used to go over to Öland to hunt, the entire estate was nothing but a deer park. In the eighteenth century there was a stud there, where blooded race-horses were bred; and a sheep farm, where several hundred sheep were maintained. In our days you&#x27;ll find neither blooded horses nor sheep at Ottenby. In place of them live great herds of young horses, which are to be used by the cavalry.</p>
 <p>In all the land there is certainly no place that could be a better abode for animals. Along the extreme eastern shore lies the old sheep meadow, which is a mile and a half long, and the largest meadow in all Öland, where animals can graze and play and run about, as free as if they were in a wilderness. And there you will find the celebrated Ottenby grove with the hundred-year-old oaks, which give shade from the sun, and shelter from the severe Öland winds. And we must not forget the long Ottenby wall, which stretches from shore to shore, and separates Ottenby from the rest of the island, so that the animals may know how far the old royal demesne extends, and be careful about getting in on other ground, where they are not so well protected.</p>
@@ -744,7 +800,7 @@ h2 + p, .first { text-indent: 0; }
 <p>With a few wing-strokes he was over the stone pile; but then, there lay no young gray goose between the stones. &quot;Dunfin! Dunfin! Where art thou?&quot; called the goosey-gander.</p>
 <p>&quot;The fox has probably been here and taken her,&quot; thought the boy. But at that moment he heard a pretty voice answer the goosey-gander. &quot;Here am I, goosey-gander; here am I! I have only been taking a morning bath.&quot; And up from the water came the little gray goose--fresh and in good trim--and told how Thumbietot had pulled her wing into place, and that she was entirely well, and ready to follow them on the journey.</p>
 <p>The drops of water lay like pearl-dew on her shimmery satin-like feathers, and Thumbietot thought once again that she was a real little princess.</p>
-<h2>THE BIG BUTTERFLY</h2>
+<h2 class="chapter" id="c23">The Big Butterfly</h2>
 <p>Wednesday, April sixth.</p>
 <p>The geese travelled alongside the coast of the long island, which lay distinctly visible under them. The boy felt happy and light of heart during the trip. He was just as pleased and well satisfied as he had been glum and depressed the day before, when he roamed around down on the island, and hunted for the goosey-gander.</p>
 <p>He saw now that the interior of the island consisted of a barren high plain, with a wreath of fertile land along the coast; and he began to comprehend the meaning of something which he had heard the other evening.</p>
@@ -766,8 +822,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;I want to ask,&quot; said the old one, &quot;if no one has had the desire to give wings to the windmills--so large that they could reach to heaven, so large that they could lift the whole island out of the sea and let it fly like a butterfly among butterflies.&quot;</p>
 <p>&quot;It may be possible that there is something in what you say,&quot; said the young one; &quot;for on summer nights, when the heavens widen and open over the island, I have sometimes thought that it was as if it wanted to raise itself from the sea, and fly away.&quot;</p>
 <p>But when the old one had finally gotten the young one to talk, he didn&#x27;t listen to him very much. &quot;I would like to know,&quot; the old one said in a low tone, &quot;if anyone can explain why one feels such a longing up here on Alvaret. I have felt it every day of my life; and I think it preys upon each and every one who must go about here. I want to know if no one else has understood that all this wistfulness is caused by the fact that the whole island is a butterfly that longs for its wings.&quot;</p>
-<h2>LITTLE KARL&#x27;S ISLAND</h2>
-<h2>THE STORM</h2>
+<h2 class="chapter" id="c24">Little Karl&#x27;s Island — The Storm</h2>
 <p>Friday, April eighth.</p>
 <p>The wild geese had spent the night on Öland&#x27;s northern point, and were now on their way to the continent. A strong south wind blew over Kalmar Sound, and they had been thrown northward. Still they worked their way toward land with good speed. But when they were nearing the first islands a powerful rumbling was heard, as if a lot of strong-winged birds had come flying; and the water under them, all at once, became perfectly black. Akka drew in her wings so suddenly that she almost stood still in the air. Thereupon, she lowered herself to light on the edge of the sea. But before the geese had reached the water, the west storm caught up with them. Already, it drove before it fogs, salt scum and small birds; it also snatched with it the wild geese, threw them on end, and cast them toward the sea.</p>
 <p>It was a rough storm. The wild geese tried to turn back, time and again, but they couldn&#x27;t do it and were driven out toward the East sea. The storm had already blown them past Öland, and the sea lay before them--empty and desolate. There was nothing for them to do but to keep out of the water.</p>
@@ -781,7 +836,7 @@ h2 + p, .first { text-indent: 0; }
 <p>At sundown the wild geese were once more up in the air. They flew on--fearful for the night. The darkness seemed to come upon them much too quickly this night--which was so full of dangers.</p>
 <p>It was terrible that they, as yet, saw no land. How would it go with them if they were forced to stay out on the sea all night? They would either be crushed between the ice-cakes or devoured by seals or separated by the storm.</p>
 <p>The heavens were cloud-bedecked, the moon hid itself, and the darkness came quickly. At the same time all nature was filled with a horror which caused the most courageous hearts to quail. Distressed bird-travellers&#x27; cries had sounded over the sea all day long, without anyone having paid the slightest attention to them; but now, when one no longer saw who it was that uttered them, they seemed mournful and terrifying. Down on the sea, the ice-drifts crashed against each other with a loud rumbling noise. The seals tuned up their wild hunting songs. It was as though heaven and earth were, about to clash.</p>
-<h2>THE SHEEP</h2>
+<h2 class="chapter" id="c25">The Sheep</h2>
 <p>The boy sat for a moment and looked down into the sea. Suddenly he thought that it began to roar louder than ever. He looked up. Right in front of him--only a couple of metres away--stood a rugged and bare mountain-wall. At its base the waves dashed into a foaming spray. The wild geese flew straight toward the cliff, and the boy did not see how they could avoid being dashed to pieces against it. Hardly had he wondered that Akka hadn&#x27;t seen the danger in time, when they were over by the mountain. Then he also noticed that in front of them was the half-round entrance to a grotto. Into this the geese steered; and the next moment they were safe.</p>
 <p>The first thing the wild geese thought of--before they gave themselves time to rejoice over their safety--was to see if all their comrades were also harboured. Yes, there were Akka, Iksi, Kolmi, Nelja, Viisi, Knusi, all the six goslings, the goosey-gander, Dunfin and Thumbietot; but Kaksi from Nuolja, the first left-hand goose, was missing--and no one knew anything about her fate.</p>
 <p>When the wild geese discovered that no one but Kaksi had been separated from the flock, they took the matter lightly. Kaksi was old and wise. She knew all their byways and their habits, and she, of course, would know how to find her way back to them.</p>
@@ -803,7 +858,7 @@ h2 + p, .first { text-indent: 0; }
 <p>When they came farther in, in the grotto, they stopped and sniffed. &quot;Who shall we take to-night?&quot; whispered the one who went first. &quot;To-night we will take the big ram,&quot; said the last. &quot;After that, we&#x27;ll have easy work with the rest.&quot;</p>
 <p>The boy sat on the old ram&#x27;s back and saw how they sneaked along. &quot;Now butt straight forward!&quot; whispered the boy. The ram butted, and the first fox was thrust--top over tail--back to the opening. &quot;Now butt to the left!&quot; said the boy, and turned the big ram&#x27;s head in that direction. The ram measured a terrific assault that caught the second fox in the side. He rolled around several times before he got to his feet again and made his escape. The boy had wished that the third one, too, might have gotten a bump, but this one had already gone.</p>
 <p>&quot;Now I think that they&#x27;ve had enough for to-night,&quot; said the boy. &quot;I think so too,&quot; said the big ram. &quot;Now lie down on my back, and creep into the wool! You deserve to have it warm and comfortable, after all the wind and storm that you have been out in.&quot;</p>
-<h2>HELL&#x27;S HOLE</h2>
+<h2 class="chapter" id="c26">Hell&#x27;s Hole</h2>
 <p>The next day the big ram went around with the boy on his back, and showed him the island. It consisted of a single massive mountain. It was like a large house with perpendicular walls and a flat roof. First the ram walked up on the mountain-roof and showed the boy the good grazing lands there, and he had to admit that the island seemed to be especially created for sheep. There wasn&#x27;t much else than sheep-sorrel and such little spicy growths as sheep are fond of that grew on the mountain.</p>
 <p>But indeed there was something beside sheep fodder to look at, for one who had gotten well up on the steep. To begin with, the largest part of the sea--which now lay blue and sunlit, and rolled forward in glittering swells--was visible. Only upon one and another point, did the foam spray up. To the east lay Gottland, with even and long-stretched coast; and to the southwest lay Great Karl&#x27;s Island, which was built on the same plan as the little island. When the ram walked to the very edge of the mountain roof, so the boy could look down the mountain walls, he noticed that they were simply filled with birds&#x27; nests; and in the blue sea beneath him, lay surf-scoters and eider-ducks and kittiwakes and guillemots and razor-bills--so pretty and peaceful--busying themselves with fishing for small herring.</p>
 <p>&quot;This is really a favoured land,&quot; said the boy. &quot;You live in a pretty place, you sheep.&quot; &quot;Oh, yes! it&#x27;s pretty enough here,&quot; said the big ram. It was as if he wished to add something; but he did not, only sighed. &quot;If you go about here alone you must look out for the crevices which run all around the mountain,&quot; he continued after a little. And this was a good warning, for there were deep and broad crevices in several places. The largest of them was called Hell&#x27;s Hole. That crevice was many fathoms deep and nearly one fathom wide. &quot;If anyone fell down there, it would certainly be the last of him,&quot; said the big ram. The boy thought it sounded as if he had a special meaning in what he said.</p>
@@ -825,8 +880,7 @@ h2 + p, .first { text-indent: 0; }
 <p>At that instant they heard a number of wild howls behind them, and a scraping of claws, and heavy falls. But of the foxes they saw nothing more.</p>
 <p>The next morning the lighthouse keeper on Great Karl&#x27;s Island found a bit of bark poked under the entrance-door, and on it had been cut, in slanting, angular letters: &quot;The foxes on the little island have fallen down into Hell&#x27;s Hole. Take care of them!&quot;</p>
 <p>And this the lighthouse keeper did, too.</p>
-<h2>TWO CITIES</h2>
-<h2>THE CITY AT THE BOTTOM OF THE SEA</h2>
+<h2 class="chapter" id="c27">Two Cities — The City At the Bottom of the Sea</h2>
 <p>Saturday, April ninth.</p>
 <p>It was a calm and clear night. The wild geese did not trouble themselves to seek shelter in any of the grottoes, but stood and slept upon the mountain top; and the boy had lain down in the short, dry grass beside the geese.</p>
 <p>It was bright moonlight that night; so bright that it was difficult for the boy to go to sleep. He lay there and thought about just how long he had been away from home; and he figured out that it was three weeks since he had started on the trip. At the same time he remembered that this was Easter-eve.</p>
@@ -883,7 +937,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;But when the hour is up, it sinks again into the sea, if, during that time, no merchant in Vineta has sold anything to a single living creature. If you, Thumbietot, only had had an ever so tiny coin, to pay the merchants, Vineta might have remained up here on the shore; and its people could have lived and died like other human beings.&quot;</p>
 <p>&quot;Herr Ermenrich,&quot; said the boy, &quot;now I understand why you came and fetched me in the middle of the night. It was because you believed that I should be able to save the old city. I am so sorry it didn&#x27;t turn out as you wished, Herr Ermenrich.&quot;</p>
 <p>He covered his face with his hands and wept. It wasn&#x27;t easy to say which one looked the more disconsolate--the boy, or Herr Ermenrich.</p>
-<h2>THE LIVING CITY</h2>
+<h2 class="chapter" id="c28">The Living City</h2>
 <p>Monday, April eleventh.</p>
 <p>On the afternoon of Easter Monday, the wild geese and Thumbietot were on the wing. They travelled over Gottland.</p>
 <p>The large island lay smooth and even beneath them. The ground was checked just as it was in Skåne and there were many churches and farms. But there was this difference, however, that there were more leafy meadows between the fields here, and then the farms were not built up with small houses. And there were no large manors with ancient tower-ornamented castles.</p>
@@ -909,7 +963,7 @@ h2 + p, .first { text-indent: 0; }
 <p>No, that he didn&#x27;t want to do, now that he had seen this one. If that city, which he had seen, had not sunk into the sea again, then it would perhaps become as dilapidated as this one in a little while. Perhaps it could not have withstood time and decay, but would have stood there with roofless churches and bare houses and desolate, empty streets--just like this one. Then it was better that it should remain in all its glory down in the deep.</p>
 <p>&quot;It was best that it happened as it happened,&quot; thought he. &quot;If I had the power to save the city, I don&#x27;t believe that I should care to do it.&quot; Then he no longer grieved over that matter.</p>
 <p>And there are probably many among the young who think in the same way. But when people are old, and have become accustomed to being satisfied with little, then they are more happy over the Visby that exists, than over a magnificent Vineta at the bottom of the sea.</p>
-<h2>THE LEGEND OF SMÅLAND</h2>
+<h2 class="chapter" id="c29">The Legend of Småland</h2>
 <p>Tuesday, April twelfth.</p>
 <p>The wild geese had made a good trip over the sea, and had lighted in Tjust Township, in northern Småland. That township didn&#x27;t seem able to make up its mind whether it wanted to be land or sea. Fiords ran in everywhere, and cut the land up into islands and peninsulas and points and capes. The sea was so forceful that the only things which could hold themselves above it were hills and mountains. All the lowlands were hidden away under the water exterior.</p>
 <p>It was evening when the wild geese came in from the sea; and the land with the little hills lay prettily between the shimmering fiords. Here and there, on the islands, the boy saw cabins and cottages; and the farther inland he came, the bigger and better became the dwelling houses. Finally, they grew into large, white manors. Along the shores there was generally a border of trees; and within this lay field-plots, and on the tops of the little hills there were trees again. He could not help but think of Blekinge. Here again was a place where land and sea met, in such a pretty and peaceful sort of way, just as if they tried to show each other the best and loveliest which they possessed.</p>
@@ -936,8 +990,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;That was the end of our Lord&#x27;s patience--and he said: &#x27;No! you can go down to Skåne and make the Skåninge, but the Smålander I will create myself.&#x27; And so our Lord created the Smålander, and made him quick-witted and contented and happy and thrifty and enterprising and capable, that he might be able to get his livelihood in his poor country.&quot;</p>
 <p>Then little Mats was silent; and if Nils Holgersson had also kept still, all would have gone well; but he couldn&#x27;t possibly refrain from asking how Saint Peter had succeeded in creating the Skåninge.</p>
 <p>&quot;Well, what do you think yourself?&quot; said little Mats, and looked so scornful that Nils Holgersson threw himself upon him, to thrash him. But Mats was only a little tot, and Osa, the goose-girl, who was a year older than he, ran forward instantly to help him. Good-natured though she was, she sprang like a lion as soon as anyone touched her brother. And Nils Holgersson did not care to fight a girl, but turned his back, and didn&#x27;t look at those Småland children for the rest of the day.</p>
-<h2>THE CROWS</h2>
-<h2>THE EARTHEN CROCK</h2>
+<h2 class="chapter" id="c30">The Crows — The Earthen Crock</h2>
 <p>In the southwest corner of Småland lies a township called Sonnerbo. It is a rather smooth and even country. And one who sees it in winter, when it is covered with snow, cannot imagine that there is anything under the snow but garden-plots, rye-fields and clover-meadows as is generally the case in flat countries. But, in the beginning of April when the snow finally melts away in Sonnerbo, it is apparent that that which lies hidden under it is only dry, sandy heaths, bare rocks, and big, marshy swamps. There are fields here and there, to be sure, but they are so small that they are scarcely worth mentioning; and one also finds a few little red or gray farmhouses hidden away in some beech-coppice--almost as if they were afraid to show themselves.</p>
 <p>Where Sonnerbo township touches the boundaries of Halland, there is a sandy heath which is so far-reaching that he who stands upon one edge of it cannot look across to the other. Nothing except heather grows on the heath, and it wouldn&#x27;t be easy either to coax other growths to thrive there. To start with one would have to uproot the heather; for it is thus with heather: although it has only a little shrunken root, small shrunken branches, and dry, shrunken leaves it fancies that it&#x27;s a tree. Therefore it acts just like real trees--spreads itself out in forest fashion over wide areas; holds together faithfully, and causes all foreign growths that wish to crowd in upon its territory to die out.</p>
 <p>The only place on the heath where the heather is not all-powerful, is a low, stony ridge which passes over it. There you&#x27;ll find juniper bushes, mountain ash, and a few large, fine oaks. At the time when Nils Holgersson travelled around with the wild geese, a little cabin stood there, with a bit of cleared ground around it. But the people who had lived there at one time, had, for some reason or other, moved away. The little cabin was empty, and the ground lay unused.</p>
@@ -957,7 +1010,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;Hear how it rattles!&quot; said the fox and rolled the crock around once more. &quot;Only I can&#x27;t understand how we shall get at it.&quot; &quot;That will surely be impossible,&quot; said the crows. The fox stood and rubbed his head against his left leg, and pondered. Now perhaps he might succeed, with the help of the crows, in becoming master of that little imp who always eluded him. &quot;Oh! I know someone who could open the crock for you,&quot; said the fox. &quot;Then tell us! Tell us!&quot; cried the crows; and they were so excited that they tumbled down into the pit. &quot;That I will do, if you&#x27;ll first promise me that you will agree to my terms,&quot; said he.</p>
 <p>Then the fox told the crows about Thumbietot, and said that if they could bring him to the heath he would open the crock for them. But in payment for this counsel, he demanded that they should deliver Thumbietot to him, as soon as he had gotten the silver money for them. The crows had no reason to spare Thumbietot, so agreed to the compact at once. It was easy enough to agree to this; but it was harder to find out where Thumbietot and the wild geese were stopping.</p>
 <p>Wind-Rush himself travelled away with fifty crows, and said that he should soon return. But one day after another passed without the crows on crow-ridge seeing a shadow of him.</p>
-<h2>KIDNAPPED BY CROWS</h2>
+<h2 class="chapter" id="c31">Kidnapped By Crows</h2>
 <p>Wednesday, April thirteenth.</p>
 <p>The wild geese were up at daybreak, so they should have time to get themselves a bite of food before starting out on the journey toward Östergötland. The island in Goosefiord, where they had slept, was small and barren, but in the water all around it were growths which they could eat their fill upon. It was worse for the boy, however. He couldn&#x27;t manage to find anything eatable.</p>
 <p>As he stood there hungry and drowsy, and looked around in all directions, his glance fell upon a pair of squirrels, who played upon the wooded point, directly opposite the rock island. He wondered if the squirrels still had any of their winter supplies left, and asked the white goosey-gander to take him over to the point, that he might beg them for a couple of hazelnuts.</p>
@@ -1008,7 +1061,7 @@ h2 + p, .first { text-indent: 0; }
 <p>The boy thought that things looked very bad for him now. He couldn&#x27;t run away from the crows, and there was no place where he could hide. Then he happened to think of the earthen crock. He took a firm hold on the clasp, and pulled it off. Then he hopped into the crock to hide in it. But the crock was a poor hiding place, for it was nearly filled to the brim with little, thin silver coins. The boy couldn&#x27;t get far enough down, so he stooped and began to throw out the coins.</p>
 <p>Until now the crows had fluttered around him in a thick swarm and pecked at him, but when he threw out the coins they immediately forgot their thirst for vengeance, and hurried to gather the money. The boy threw out handfuls of it, and all the crows--yes, even Wind-Air herself--picked them up. And everyone who succeeded in picking up a coin ran off to the nest with the utmost speed to conceal it.</p>
 <p>When the boy had thrown out all the silver pennies from the crock he glanced up. Not more than a single crow was left in the sandpit. That was Fumle-Drumle, with the white feather in his wing; he who had carried Thumbietot. &quot;You have rendered me a greater service than you understand,&quot; said the crow--with a very different voice, and a different intonation than the one he had used heretofore--&quot;and I want to save your life. Sit down on my back, and I&#x27;ll take you to a hiding place where you can be secure for to-night. To-morrow, I&#x27;ll arrange it so that you will get back to the wild geese.&quot;</p>
-<h2>THE CABIN</h2>
+<h2 class="chapter" id="c32">The Cabin</h2>
 <p>Thursday, April fourteenth.</p>
 <p>The following morning when the boy awoke, he lay in a bed. When he saw that he was in a house with four walls around him, and a roof over him, he thought that he was at home. &quot;I wonder if mother will come soon with some coffee,&quot; he muttered to himself where he lay half-awake. Then he remembered that he was in a deserted cabin on the crow-ridge, and that Fumle-Drumle with the white feather had borne him there the night before.</p>
 <p>The boy was sore all over after the journey he had made the day before, and he thought it was lovely to lie still while he waited for Fumle-Drumle who had promised to come and fetch him.</p>
@@ -1026,7 +1079,7 @@ h2 + p, .first { text-indent: 0; }
 <p>But when the children saw such a little creature coming up to them with outstretched hands, they grabbed hold of each other, took a couple of steps backward, and looked scared to death.</p>
 <p>When the boy noticed their terror he woke up and remembered who he was. And then it seemed to him that nothing worse could happen to him than that those children should see how he had been bewitched. Shame and grief because he was no longer a human being overpowered him. He turned and fled. He knew not whither.</p>
 <p>But a glad meeting awaited the boy when he came down to the heath. For there, in the heather, he spied something white, and toward him came the white goosey-gander, accompanied by Dunfin. When the white one saw the boy running with such speed, he thought that dreadful fiends were pursuing him. He flung him in all haste upon his back and flew off with him.</p>
-<h2>THE OLD PEASANT WOMAN</h2>
+<h2 class="chapter" id="c33">The Old Peasant Woman</h2>
 <p>Thursday, April fourteenth.</p>
 <p>Three tired wanderers were out in the late evening in search of a night harbour. They travelled over a poor and desolate portion of northern Småland. But the sort of resting place which they wanted, they should have been able to find; for they were no weaklings who asked for soft beds or comfortable rooms. &quot;If one of these long mountain-ridges had a peak so high and steep that a fox couldn&#x27;t in any way climb up to it, then we should have a good sleeping-place,&quot; said one of them. &quot;If a single one of the big swamps was thawed out, and was so marshy and wet that a fox wouldn&#x27;t dare venture out on it, this, too, would be a right good night harbour,&quot; said the second. &quot;If the ice on one of the large lakes we travel past were loose, so that a fox could not come out on it, then we should have found just what we are seeking,&quot; said the third.</p>
 <p>The worst of it was that when the sun had gone down, two of the travellers became so sleepy that every second they were ready to fall to the ground. The third one, who could keep himself awake, grew more and more uneasy as night approached. &quot;Then it was a misfortune that we came to a land where lakes and swamps are frozen, so that a fox can get around everywhere. In other places the ice has melted away; but now we&#x27;re well up in the very coldest Småland, where spring has not as yet arrived. I don&#x27;t know how I shall ever manage to find a good sleeping-place! Unless I find some spot that is well protected, Smirre Fox will be upon us before morning.&quot;</p>
@@ -1078,7 +1131,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Round about him he saw the portraits of those who were away. They were big, strong men and women with earnest faces. There were brides in long veils, and gentlemen in fine clothes; and there were children with waved hair and pretty white dresses. And he thought that they all stared blindly into vacancy--and did not want to see.</p>
 <p>&quot;Poor you!&quot; said the boy to the portraits. &quot;Your mother is dead. You cannot make reparation now, because you went away from her. But my mother is living!&quot;</p>
 <p>Here he paused, and nodded and smiled to himself. &quot;My mother is living,&quot; said he. &quot;Both father and mother are living.&quot;</p>
-<h2>FROM TABERG TO HUSKVARNA</h2>
+<h2 class="chapter" id="c34">From Taberg to Huskvarna</h2>
 <p>Friday, April fifteenth.</p>
 <p>The boy sat awake nearly all night, but toward morning he fell asleep and then he dreamed of his father and mother. He could hardly recognise them. They had both grown gray, and had old and wrinkled faces. He asked how this had come about, and they answered that they had aged so because they had longed for him. He was both touched and astonished, for he had never believed but what they were glad to be rid of him.</p>
 <p>When the boy awoke the morning was come, with fine, clear weather. First, he himself ate a bit of bread which he found in the cabin; then he gave morning feed to both geese and cow, and opened the cowhouse door so that the cow could go over to the nearest farm. When the cow came along all by herself the neighbours would no doubt understand that something was wrong with her mistress. They would hurry over to the desolate farm to see how the old woman was getting along, and then they would find her dead body and bury it.</p>
@@ -1094,8 +1147,7 @@ h2 + p, .first { text-indent: 0; }
 <p>The wild geese travelled forward over the long, narrow city, and behaved themselves here just as they had done in the country. But in the city there was no one who answered them. It was not to be expected that city folks should stop out in the streets, and call to the wild geese.</p>
 <p>The trip extended further along Vettern&#x27;s shores; and after a little they came to Sanna Sanitarium. Some of the patients had gone out on the veranda to enjoy the spring air, and in this way they heard the goose-cackle. &quot;Where are you going?&quot; asked one of them with such a feeble voice that he was scarcely heard. &quot;To that land where there is neither sorrow nor sickness,&quot; answered the boy. &quot;Take us along with you!&quot; said the sick ones. &quot;Not this year,&quot; answered the boy. &quot;Not this year.&quot;</p>
 <p>When they had travelled still farther on, they came to Huskvarna. It lay in a valley. The mountains around it were steep and beautifully formed. A river rushed along the heights in long and narrow falls. Big workshops and factories lay below the mountain walls; and scattered over the valley-bottom were the workingmens&#x27; homes, encircled by little gardens; and in the centre of the valley lay the schoolhouse. Just as the wild geese came along, a bell rang, and a crowd of school children marched out in line. They were so numerous that the whole schoolyard was filled with them. &quot;Where are you going? Where are you going?&quot; the children shouted when they heard the wild geese. &quot;Where there are neither books nor lessons to be found,&quot; answered the boy. &quot;Take us along!&quot; shrieked the children. &quot;Not this year, but next,&quot; cried the boy. &quot;Not this year, but next.&quot;</p>
-<h2>THE BIG BIRD LAKE</h2>
-<h2>JARRO, THE WILD DUCK</h2>
+<h2 class="chapter" id="c35">The Big Bird Lake — Jarro, the Wild Duck</h2>
 <p>On the eastern shore of Vettern lies Mount Omberg; east of Omberg lies Dagmosse; east of Dagmosse lies Lake Takern. Around the whole of Takern spreads the big, even Östergöta plain.</p>
 <p>Takern is a pretty large lake and in olden times it must have been still larger. But then the people thought it covered entirely too much of the fertile plain, so they attempted to drain the water from it, that they might sow and reap on the lake-bottom. But they did not succeed in laying waste the entire lake--which had evidently been their intention--therefore it still hides a lot of land. Since the draining the lake has become so shallow that hardly at any point is it more than a couple of metres deep. The shores have become marshy and muddy; and out in the lake, little mud-islets stick up above the water&#x27;s surface.</p>
 <p>Now, there is one who loves to stand with his feet in the water, if he can just keep his body and head in the air, and that is the reed. And it cannot find a better place to grow upon, than the long, shallow Takern shores, and around the little mud-islets. It thrives so well that it grows taller than a man&#x27;s height, and so thick that it is almost impossible to push a boat through it. It forms a broad green enclosure around the whole lake, so that it is only accessible in a few places where the people have taken away the reeds.</p>
@@ -1127,7 +1179,7 @@ h2 + p, .first { text-indent: 0; }
 <p>The cat looked down at Caesar with a knowing smile. &quot;I believe that Caesar doesn&#x27;t care to answer you,&quot; she said to Jarro. &quot;It is with him as with all dogs; they will never acknowledge that humans can do any wrong. But you can rely upon my word, at any rate. I shall tell you why they wish to drain the lake just now. As long as you wild ducks still had the power on Takern, they did not wish to drain it, for, at least, they got some good out of you; but now, grebes and coots and other birds who are no good as food, have infested nearly all the reed-banks, and the people don&#x27;t think they need let the lake remain on their account.&quot;</p>
 <p>Jarro didn&#x27;t trouble himself to answer Clawina, but raised his head, and shouted in Caesar&#x27;s ear: &quot;Caesar! You know that on Takern there are still so many ducks left that they fill the air like clouds. Say it isn&#x27;t true that human beings intend to make all of these homeless!&quot;</p>
 <p>Then Caesar sprang up with such a sudden outburst at Clawina that she had to save herself by jumping up on a shelf. &quot;I&#x27;ll teach you to keep quiet when I want to sleep,&quot; bawled Caesar. &quot;Of course I know that there is some talk about draining the lake this year. But there&#x27;s been talk of this many times before without anything coming of it. And that draining business is a matter in which I take no stock whatever. For how would it go with the game if Takern were laid waste. You&#x27;re a donkey to gloat over a thing like that. What will you and I have to amuse ourselves with, when there are no more birds on Takern?&quot;</p>
-<h2>THE DECOY-DUCK</h2>
+<h2 class="chapter" id="c36">The Decoy-duck</h2>
 <p>Sunday, April seventeenth.</p>
 <p>A couple of days later Jarro was so well that he could fly all about the house. Then he was petted a good deal by the mistress, and the little boy ran out in the yard and plucked the first grass-blades for him which had sprung up. When the mistress caressed him, Jarro thought that, although he was now so strong that he could fly down to Takern at any time, he shouldn&#x27;t care to be separated from the human beings. He had no objection to remaining with them all his life.</p>
 <p>But early one morning the mistress placed a halter, or noose, over Jarro, which prevented him from using his wings, and then she turned him over to the farm-hand who had found him in the yard. The farm-hand poked him under his arm, and went down to Takern with him.</p>
@@ -1148,7 +1200,7 @@ h2 + p, .first { text-indent: 0; }
 <p>The hunter had had his gaze fixed upon the geese, and hadn&#x27;t observed that Jarro had been freed; but Caesar had followed more carefully that which happened; and just as Jarro raised his wings, he dashed forward and grabbed him by the neck.</p>
 <p>Jarro cried pitifully; and the boy who had freed him said quietly to Caesar: &quot;If you are just as honourable as you look, surely you cannot wish to force a good bird to sit here and entice others into trouble.&quot;</p>
 <p>When Caesar heard these words, he grinned viciously with his upper lip, but the next second he dropped Jarro. &quot;Fly, Jarro!&quot; said he. &quot;You are certainly too good to be a decoy-duck. It wasn&#x27;t for this that I wanted to keep you here; but because it will be lonely in the cottage without you.&quot;</p>
-<h2>THE LOWERING OF THE LAKE</h2>
+<h2 class="chapter" id="c37">The Lowering of the Lake</h2>
 <p>Wednesday, April twentieth.</p>
 <p>It was indeed very lonely in the cottage without Jarro. The dog and the cat found the time long, when they didn&#x27;t have him to wrangle over; and the housewife missed the glad quacking which he had indulged in every time she entered the house. But the one who longed most for Jarro, was the little boy, Per Ola. He was but three years old, and the only child; and in all his life he had never had a playmate like Jarro. When he heard that Jarro had gone back to Takern and the wild ducks, he couldn&#x27;t be satisfied with this, but thought constantly of how he should get him back again.</p>
 <p>Per Ola had talked a good deal with Jarro while he lay still in his basket, and he was certain that the duck understood him. He begged his mother to take him down to the lake that he might find Jarro, and persuade him to come back to them. Mother wouldn&#x27;t listen to this; but the little one didn&#x27;t give up his plan on that account.</p>
@@ -1177,8 +1229,7 @@ h2 + p, .first { text-indent: 0; }
 <p>He stood and pondered if God&#x27;s hand was back of the fact that Takern had taken his son from him on the day before he was to draw up the contract to lay it waste. The wife didn&#x27;t have to say many words to him, before he answered: &quot;It may be that God does not want us to interfere with His order. I&#x27;ll talk with the others about this to-morrow, and I think we&#x27;ll conclude that all may remain as it is.&quot;</p>
 <p>While the farmer-folk were talking this over, Caesar lay before the fire. He raised his head and listened very attentively. When he thought that he was sure of the outcome, he walked up to the mistress, took her by the skirt, and led her to the door. &quot;But Caesar!&quot; said she, and wanted to break loose. &quot;Do you know where Per Ola is?&quot; she exclaimed. Caesar barked joyfully, and threw himself against the door. She opened it, and Caesar dashed down toward Takern. The mistress was so positive he knew where Per Ola was, that she rushed after him. And no sooner had they reached the shore than they heard a child&#x27;s cry out on the lake.</p>
 <p>Per Ola had had the best day of his life, in company with Thumbietot and the birds; but now he had begun to cry because he was hungry and afraid of the darkness. And he was glad when father and mother and Caesar came for him.</p>
-<h2>ULVÅSA-LADY</h2>
-<h2>THE PROPHECY</h2>
+<h2 class="chapter" id="c38">Ulvåsa-lady — The Prophecy</h2>
 <p>Friday, April twenty-second.</p>
 <p>One night when the boy lay and slept on an island in Takern, he was awakened by oar-strokes. He had hardly gotten his eyes open before there fell such a dazzling light on them that he began to blink.</p>
 <p>At first he couldn&#x27;t make out what it was that shone so brightly out here on the lake; but he soon saw that a scow with a big burning torch stuck up on a spike, aft, lay near the edge of the reeds. The red flame from the torch was clearly reflected in the night-dark lake; and the brilliant light must have lured the fish, for round about the flame in the deep a mass of dark specks were seen, that moved continually, and changed places.</p>
@@ -1217,7 +1268,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;Hardly had Ulvåsa-lady said this before the peasant rose--happy and satisfied--and thanked her for a good answer. Now, at last, he was satisfied, he said.</p>
 <p>&quot;&#x27;Verily, I understand now how you look at it,&#x27; then said Ulvåsa-lady.</p>
 <p>&quot;&#x27;Well, I look at it in this way, dear lady,&#x27; said the peasant, &#x27;that everything which kings and priests and noblemen and merchants build and accomplish, can only endure for a few years. But when you tell me that in Östergötland there will always be peasants who are honour-loving and persevering, then I know also that it will be able to keep its ancient glory. For it is only those who go bent under the eternal labour with the soil, who can hold this land in good repute and honour--from one time to another.&#x27;&quot;</p>
-<h2>THE HOMESPUN CLOTH</h2>
+<h2 class="chapter" id="c39">The Homespun Cloth</h2>
 <p>Saturday, April twenty-third.</p>
 <p>The boy rode forward--way up in the air. He had the great Östergötland plain under him, and sat and counted the many white churches which towered above the small leafy groves around them. It wasn&#x27;t long before he had counted fifty. After that he became confused and couldn&#x27;t keep track of the counting.</p>
 <p>Nearly all the farms were built up with large, whitewashed two-story houses, which looked so imposing that the boy couldn&#x27;t help admiring them. &quot;There can&#x27;t be any peasants in this land,&quot; he said to himself, &quot;since I do not see any peasant farms.&quot;</p>
@@ -1241,8 +1292,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;Wait, wait, little Mats!&quot; said Osa, the goose-girl. &quot;There is something written on one side of it.&quot;</p>
 <p>&quot;Why, so there is! but they are such tiny letters.&quot;</p>
 <p>&quot;Let me see! It says--it says: &#x27;Nils Holgersson from W. Vemminghög.&#x27; That&#x27;s the most wonderful thing I&#x27;ve ever heard!&quot; said little Mats.</p>
-<h2>THE STORY OF KARR AND GRAYSKIN</h2>
-<h2>KARR</h2>
+<h2 class="chapter" id="c40">The Story of Karr and Grayskin — Karr</h2>
 <p>About twelve years before Nils Holgersson started on his travels with the wild geese there was a manufacturer at Kolmården who wanted to be rid of one of his dogs. He sent for his game-keeper and said to him that it was impossible to keep the dog because he could not be broken of the habit of chasing all the sheep and fowl he set eyes on, and he asked the man to take the dog into the forest and shoot him.</p>
 <p>The game-keeper slipped the leash on the dog to lead him to a spot in the forest where all the superannuated dogs from the manor were shot and buried. He was not a cruel man, but he was very glad to shoot that dog, for he knew that sheep and chickens were not the only creatures he hunted. Times without number he had gone into the forest and helped himself to a hare or a grouse-chick.</p>
 <p>The dog was a little black-and-tan setter. His name was Karr, and he was so wise he understood all that was said.</p>
@@ -1273,7 +1323,7 @@ h2 + p, .first { text-indent: 0; }
 <p>The master thought that Karr had conducted himself well, but as he did not want the dog, he could not decide at once what should be done with him.</p>
 <p>&quot;If you will take charge of him and answer for his good behaviour in the future, he may as well live,&quot; he said, finally.</p>
 <p>This the game-keeper was only too glad to do, and that was how Karr came to move to the game-keeper&#x27;s lodge.</p>
-<h2>GRAYSKIN&#x27;S FLIGHT</h2>
+<h2 class="chapter" id="c41">Grayskin&#x27;s Flight</h2>
 <p>From the day that Karr went to live with the game-keeper he abandoned entirely his forbidden chase in the forest. This was due not only to his having been thoroughly frightened, but also to the fact that he did not wish to make the game-keeper angry at him. Ever since his new master saved his life the dog loved him above everything else. He thought only of following him and watching over him. If he left the house, Karr would run ahead to make sure that the way was clear, and if he sat at home, Karr would lie before the door and keep a close watch on every one who came and went.</p>
 <p>When all was quiet at the lodge, when no footsteps were heard on the road, and the game-keeper was working in his garden, Karr would amuse himself playing with the baby elk.</p>
 <p>At first the dog had no desire to leave his master even for a moment. Since he accompanied him everywhere, he went with him to the cow shed. When he gave the elk calf its milk, the dog would sit outside the stall and gaze at it. The game-keeper called the calf Grayskin because he thought it did not merit a prettier name, and Karr agreed with him on that point.</p>
@@ -1333,7 +1383,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;Yes, it&#x27;s about time,&quot; observed the elk.</p>
 <p>Both were silent on the way home. Karr sighed several times, as if he was disappointed about something; but Grayskin stepped along--his head in the air--and seemed delighted over the adventure. He walked ahead unhesitatingly until they came to the enclosure. There he paused. He looked in at the narrow pen where he had lived up till now; saw the beaten ground, the stale fodder, the little trough where he had drunk water, and the dark shed in which he had slept.</p>
 <p>&quot;The elk are one with the forest!&quot; he cried. Then he threw back his head, so that his neck rested against his back, and rushed wildly into the woods.</p>
-<h2>HELPLESS, THE WATER-SNAKE</h2>
+<h2 class="chapter" id="c42">Helpless, the Water-snake</h2>
 <p>In a pine thicket in the heart of Liberty Forest, every year, in the month of August, there appeared a few grayish-white moths of the kind which are called nun moths. They were small and few in number, and scarcely any one noticed them. When they had fluttered about in the depth of the forest a couple of nights, they laid a few thousand eggs on the branches of trees; and shortly afterward dropped lifeless to the ground.</p>
 <p>When spring came, little prickly caterpillars crawled out from the eggs and began to eat the pine needles. They had good appetites, but they never seemed to do the trees any serious harm, because they were hotly pursued by birds. It was seldom that more than a few hundred caterpillars escaped the pursuers.</p>
 <p>The poor things that lived to be full grown crawled up on the branches, spun white webs around themselves, and sat for a couple of weeks as motionless pupae. During this period, as a rule, more than half of them were abducted. If a hundred nun moths came forth in August, winged and perfect, it was reckoned a good year for them.</p>
@@ -1367,7 +1417,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;Yes, it would be well if you who have some authority in the forest should do this,&quot; said Helpless.</p>
 <p>&quot;I might also drop a good word for the pine needle pickers among the thrushes?&quot; volunteered the adder. &quot;I will gladly serve you when you do not demand anything unreasonable.&quot;</p>
 <p>&quot;Now you have given me a good promise, Crawlie,&quot; said Helpless, &quot;and I&#x27;m glad that I came to you.&quot;</p>
-<h2>THE NUN MOTHS</h2>
+<h2 class="chapter" id="c43">The Nun Moths</h2>
 <p>One morning--several years later--Karr lay asleep on the porch. It was in the early summer, the season of light nights, and it was as bright as day, although the sun was not yet up. Karr was awakened by some one calling his name.</p>
 <p>&quot;Is it you, Grayskin?&quot; he asked, for he was accustomed to the elk&#x27;s nightly visits. Again he heard the call; then he recognized Grayskin&#x27;s voice, and hastened in the direction of the sound.</p>
 <p>Karr heard the elk&#x27;s footfalls in the distance, as he dashed into the thickest pine wood, and straight through the brush, following no trodden path. Karr could not catch up with him, and he had great difficulty in even following the trail. &quot;Karr, Karri&quot; came the cry, and the voice was certainly Grayskin&#x27;s, although it had a ring now which the dog had never heard before.</p>
@@ -1426,7 +1476,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;He has slain the one whom I loved best,&quot; the snake declared, &quot;and I want to be avenged.&quot;</p>
 <p>Before the snake had finished speaking, Karr made a dash for him; but the reptile lay safely hidden under the tree stump.</p>
 <p>&quot;Stay where you are!&quot; Karr concluded. &quot;We&#x27;ll manage to drive out the caterpillars without your help.&quot;</p>
-<h2>THE BIG WAR OF THE MOTHS</h2>
+<h2 class="chapter" id="c44">The Big War of the Moths</h2>
 <p>The following spring, as Karr was dashing through the forest one morning, he heard some one behind him calling: &quot;Karr! Karr!&quot;</p>
 <p>He turned and saw an old fox standing outside his lair.</p>
 <p>&quot;You must tell me if the humans are doing anything for the forest,&quot; said the fox.</p>
@@ -1499,7 +1549,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Karr lived in a state of continual grief, yearning, and anxiety. Yet he had to wait two whole summers more before there was an end of the caterpillars!</p>
 <p>Karr no sooner heard the game-keeper say that the forest was out of danger than he started on a hunt for Helpless. But when he was in the thick of the forest he made a frightful discovery: He could not hunt any more, he could not run, he could not track his enemy, and he could not see at all!</p>
 <p>During the long years of waiting, old age had overtaken Karr. He had grown old without having noticed it. He had not the strength even to kill a water-snake. He was not able to save his friend Grayskin from his enemy.</p>
-<h2>RETRIBUTION</h2>
+<h2 class="chapter" id="c45">Retribution</h2>
 <p>One afternoon Akka from Kebnekaise and her flock alighted on the shore of a forest lake.</p>
 <p>Spring was backward--as it always is in the mountain districts. Ice covered all the lake save a narrow strip next the land. The geese at once plunged into the water to bathe and hunt for food. In the morning Nils Holgersson had dropped one of his wooden shoes, so he went down by the elms and birches that grew along the shore, to look for something to bind around his foot.</p>
 <p>The boy walked quite a distance before he found anything that he could use. He glanced about nervously, for he did not fancy being in the forest.</p>
@@ -1573,8 +1623,7 @@ h2 + p, .first { text-indent: 0; }
 <p>The old dog rose obediently.</p>
 <p>&quot;My master is calling me,&quot; he said, &quot;and I must not tarry longer. I just saw him load his gun. Now we two are going into the forest for the last time.</p>
 <p>&quot;Many thanks, wild goose! I know everything that I need know to die content!&quot;</p>
-<h2>THE WIND WITCH</h2>
-<h2>IN NÄRKE</h2>
+<h2 class="chapter" id="c46">The Wind Witch — In Närke</h2>
 <p>In bygone days there was something in Närke the like of which was not to be found elsewhere: it was a witch, named Ysätter-Kaisa.</p>
 <p>The name Kaisa had been given her because she had a good deal to do with wind and storm--and these wind witches are always so called. The surname was added because she was supposed to have come from Ysätter swamp in Asker parish.</p>
 <p>It seemed as though her real abode must have been at Asker; but she used also to appear at other places. Nowhere in all Närke could one be sure of not meeting her.</p>
@@ -1587,7 +1636,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Then she would laugh wildly and, chattering like a magpie, would rush off, dancing and spinning from one end of the plain to the other. When a Närke man saw her come dragging her dust trail over the plain, he could not help smiling. Provoking and tiresome she certainly was, but she had a merry spirit. It was just as refreshing for the peasants to meet Ysätter-Kaisa as it was for the plain to be lashed by the windstorm.</p>
 <p>Nowadays &#x27;tis said that Ysätter-Kaisa is dead and gone, like all other witches, but this one can hardly believe. It is as if some one were to come and tell you that henceforth the air would always be still on the plain, and the wind would never more dance across it with blustering breezes and drenching showers.</p>
 <p>He who fancies that Ysätter-Kaisa is dead and gone may as well hear what occurred in Närke the year that Nils Holgersson travelled over that part of the country. Then let him tell what he thinks about it.</p>
-<h2>MARKET EVE</h2>
+<h2 class="chapter" id="c47">Market Eve</h2>
 <p>Wednesday, April twenty-seventh.</p>
 <p>It was the day before the big Cattle Fair at Örebro; it rained in torrents and people thought: &quot;This is exactly as in Ysätter-Kaisa&#x27;s time! At fairs she used to be more prankish than usual. It was quite in her line to arrange a downpour like this on a market eve.&quot;</p>
 <p>As the day wore on, the rain increased, and toward evening came regular cloud-bursts. The roads were like bottomless swamps. The farmers who had started from home with their cattle early in the morning, that they might arrive at a seasonable hour, fared badly. Cows and oxen were so tired they could hardly move, and many of the poor beasts dropped down in the middle of the road, to show that they were too exhausted to go any farther. All who lived along the roadside had to open their doors to the market-bound travellers, and harbour them as best they could. Farm houses, barns, and sheds were soon crowded to their limit.</p>
@@ -1704,7 +1753,7 @@ h2 + p, .first { text-indent: 0; }
 <p>He was enraged at the intrusion and began storming and shrieking to rouse the sleepers and drive them out. But the creatures lay still and would not let themselves be disturbed. The only one that rose was an old horse that came slowly toward him.</p>
 <p>All of a sudden the man became silent. He recognized the beast by its gait. He raised the lantern, and the horse came over and laid its head on his shoulder. The master patted and stroked it.</p>
 <p>&quot;My old horsy, my old horsy!&quot; he said. &quot;What have they done to you? Yes, dear, I&#x27;ll buy you back. You&#x27;ll never again have to leave this place. You shall do whatever you like, horsy mine! Those whom you have brought with you may remain here, but you shall come with me to the stable. Now I can give you all the oats you are able to eat, without having to smuggle them. And you&#x27;re not all used up, either! The handsomest horse on the church knoll--that&#x27;s what you shall be once more! There, there! There, there!&quot;</p>
-<h2>THE BREAKING UP OF THE ICE</h2>
+<h2 class="chapter" id="c48">The Breaking Up of the Ice</h2>
 <p>Thursday, April twenty-eighth.</p>
 <p>The following day the weather was clear and beautiful. There was a strong west wind; people were glad of that, for it dried up the roads, which had been soaked by the heavy rains of the day before.</p>
 <p>Early in the morning the two Småland children, Osa, the goose girl, and little Mats, were out on the highway leading from Sörmland to Närke. The road ran alongside the southern shore of Hjälmar Lake and the children were walking along looking at the ice, which covered the greater part of it. The morning sun darted its clear rays upon the ice, which did not look dark and forbidding, like most spring ice, but sparkled temptingly. As far as they could see, the ice was firm and dry. The rain had run down into cracks and hollows, or been absorbed by the ice itself. The children saw only the sound ice.</p>
@@ -1738,8 +1787,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;Wait here, little Mats,&quot; she said; &quot;I have forgotten something.&quot;</p>
 <p>Osa, the goose girl, went down to the strand again, where she stopped to rummage in her bag. Finally she fished out a little wooden shoe, which she placed on a stone where it could be plainly seen. Then she ran to little Mats without once looking back.</p>
 <p>But the instant her back was turned, a big white goose shot down from the sky, like a streak of lightning, snatched the wooden shoe, and flew away with it.</p>
-<h2>THUMBIETOT AND THE BEARS</h2>
-<h2>THE IRONWORKS</h2>
+<h2 class="chapter" id="c49">Thumbietot and the Bears — The Ironworks</h2>
 <p>Thursday, April twenty-eighth.</p>
 <p>When the wild geese and Thumbietot had helped Osa, the goose girl, and little Mats across the ice, they flew into Westmanland, where they alighted in a grain field to feed and rest.</p>
 <p>A strong west wind blew almost the entire day on which the wild geese travelled over the mining districts, and as soon as they attempted to direct their course northward they were buffeted toward the east. Now, Akka thought that Smirre Fox was at large in the eastern part of the province; therefore she would not fly in that direction, but turned back, time and again, struggling westward with great difficulty. At this rate the wild geese advanced very slowly, and late in the afternoon they were still in the Westmanland mining districts. Toward evening the wind abated suddenly, and the tired travellers hoped that they would have an interval of easy flight before sundown. Then along came a violent gust of wind, which tossed the geese before it, like balls, and the boy, who was sitting comfortably, with no thought of peril, was lifted from the goose&#x27;s back and hurled into space.</p>
@@ -1861,8 +1909,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;I had never before seen an eagle,&quot; said the boy, &quot;but he was so big and splendid that I can&#x27;t give him a lowlier name!&quot;</p>
 <p>Morten Goosey-Gander turned to the wild geese to hear what they thought of this; but they stood gazing into the air, as though they were thinking of something else.</p>
 <p>&quot;We must not forget entirely to eat breakfast today,&quot; said Akka, quickly spreading her wings.</p>
-<h2>THE FLOOD</h2>
-<h2>THE SWANS</h2>
+<h2 class="chapter" id="c50">The Flood — The Swans</h2>
 <p>May first to fourth.</p>
 <p>There was a terrible storm raging in the district north of Lake Mälar, which lasted several days. The sky was a dull gray, the wind whistled, and the rain beat. Both people and animals knew the spring could not be ushered in with anything short of this; nevertheless they thought it unbearable.</p>
 <p>After it had been raining for a whole day, the snowdrifts in the pine forests began to melt in earnest, and the spring brooks grew lively. All the pools on the farms, the standing water in the ditches, the water that oozed between the tufts in marshes and swamps--all were in motion and tried to find their way to creeks, that they might be borne along to the sea.</p>
@@ -1928,7 +1975,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Three calls had barely sounded when all the little birds in the vicinity came shooting down to Hjälsta Bay, as if on wings of lightning.</p>
 <p>These delicate little creatures swooped down upon the swans, screeched in their ears, and obstructed their view with the flutter of their tiny wings. They made them dizzy with their fluttering and drove them to distraction with their cries of &quot;Shame, shame, swans!&quot;</p>
 <p>The attack of the small birds lasted but a moment. When they were gone and the swans came to their senses, they saw that the geese had risen and flown over to the other end of the bay.</p>
-<h2>THE NEW WATCH-DOG</h2>
+<h2 class="chapter" id="c51">The New Watch-dog</h2>
 <p>There was this at least to be said in the swans&#x27; favour--when they saw that the wild geese had escaped, they were too proud to chase them. Moreover, the geese could stand on a clump of reeds with perfect composure, and sleep.</p>
 <p>Nils Holgersson was too hungry to sleep.</p>
 <p>&quot;It is necessary for me to get something to eat,&quot; he said.</p>
@@ -1974,8 +2021,7 @@ h2 + p, .first { text-indent: 0; }
 <p>There was a hot struggle, but it was soon over. The dog was the victor. The fox lay on the ground and dared not move.</p>
 <p>&quot;Don&#x27;t stir or I&#x27;ll kill you!&quot; snarled the dog. Then he took the fox by the scruff of the neck and dragged him to the kennel. There the boy was ready with the chain. He placed the dog collar around the neck of the fox, tightening it so that he was securely chained. During all this the fox had to lie still, for he was afraid to move.</p>
 <p>&quot;Now, Smirre Fox, I hope you&#x27;ll make a good watch-dog,&quot; laughed the boy when he had finished.</p>
-<h2>DUNFIN</h2>
-<h2>THE CITY THAT FLOATS ON THE WATER</h2>
+<h2 class="chapter" id="c52">Dunfin — The City That Floats On the Water</h2>
 <p>Friday, May sixth.</p>
 <p>No one could be more gentle and kind than the little gray goose Dunfin. All the wild geese loved her, and the tame white goosey-gander would have died for her. When Dunfin asked for anything not even Akka could say no.</p>
 <p>As soon as Dunfin came to Lake Mälar the landscape looked familiar to her. Just beyond the lake lay the sea, with many wooded islands, and there, on a little islet, lived her parents and her brothers and sisters. She begged the wild geese to fly to her home before travelling farther north, that she might let her family see that she was still alive. It would be such a joy to them.</p>
@@ -1998,7 +2044,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Here the wild geese alighted on a cliff island, and as soon as their feet touched the ground the boy turned to Dunfin.</p>
 <p>&quot;What city did we fly over just now?&quot; he asked.</p>
 <p>&quot;I don&#x27;t know what human beings have named it,&quot; said Dunfin. &quot;We gray geese call it the &#x27;City that Floats on the Water&#x27;.&quot;</p>
-<h2>THE SISTERS</h2>
+<h2 class="chapter" id="c53">The Sisters</h2>
 <p>Dunfin had two sisters, Prettywing and Goldeye. They were strong and intelligent birds, but they did not have such a soft and shiny feather dress as Dunfin, nor did they have her sweet and gentle disposition. From the time they had been little, yellow goslings, their parents and relatives and even the old fisherman had plainly shown them that they thought more of Dunfin than of them. Therefore the sisters had always hated her.</p>
 <p>When the wild geese landed on the cliff island, Prettywing and Goldeye were feeding on a bit of grass close to the strand, and immediately caught sight of the strangers.</p>
 <p>&quot;See, Sister Goldeye, what fine-looking geese have come to our island!&quot; exclaimed Prettywing, &quot;I have rarely seen such graceful birds. Do you notice that they have a white goosey-gander among them? Did you ever set eyes on a handsomer bird? One could almost take him for a swan!&quot;</p>
@@ -2069,8 +2115,7 @@ h2 + p, .first { text-indent: 0; }
 <p>There was a wild chase over the archipelago. Prettywing flew fast, but the wild geese were close behind her, and there was no chance for her to escape.</p>
 <p>Suddenly they saw a puff of smoke rise up from the sea, and heard an explosion. In their excitement they had not noticed that they were directly above a boat in which a lone fisherman was seated.</p>
 <p>However, none of the geese was hurt; but just there, above the boat, Prettywing opened her bill and dropped Thumbietot into the sea.</p>
-<h2>STOCKHOLM</h2>
-<h2>SKANSEN</h2>
+<h2 class="chapter" id="c54">Stockholm — Skansen</h2>
 <p>A few years ago, at Skansen--the great park just outside of Stockholm where they have collected so many wonderful things--there lived a little old man, named Clement Larsson. He was from Hälsingland and had come to Skansen with his fiddle to play folk dances and other old melodies. As a performer, he appeared mostly in the evening. During the day it was his business to sit on guard in one of the many pretty peasant cottages which have been moved to Skansen from all parts of the country.</p>
 <p>In the beginning Clement thought that he fared better in his old age than he had ever dared dream; but after a time he began to dislike the place terribly, especially while he was on watch duty. It was all very well when visitors came into the cottage to look around, but some days Clement would sit for many hours all alone. Then he felt so homesick that he feared he would have to give up his place. He was very poor and knew that at home he would become a charge on the parish. Therefore he tried to hold out as long as he could, although he felt more unhappy from day to day.</p>
 <p>One beautiful evening in the beginning of May Clement had been granted a few hours&#x27; leave of absence. He was on his way down the steep hill leading out of Skansen, when he met an island fisherman coming along with his game bag. The fisherman was an active young man who came to Skansen with seafowl that he had managed to capture alive. Clement had met him before, many times.</p>
@@ -2152,8 +2197,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Clement was quite perturbed because the King had said that he should learn all about Stockholm and be happy there. But he could not rest until he had told every one at home that the King had said those words to him. He could not renounce the idea of standing on the church knoll at home and telling high and low that the King had been so kind to him, that he had sat beside him on the bench, and had sent him a book, and had taken the time to talk to him--a poor fiddler--for a whole hour, in order to cure him of his homesickness. It was good to relate this to the Laplanders and Dalecarlian peasant girls at Skansen, but what was that compared to being able to tell of it at home?</p>
 <p>Even if Clement were to end in the poorhouse, it wouldn&#x27;t be so hard after this. He was a totally different man from what he had been, and he would be respected and honoured in a very different way.</p>
 <p>This new yearning took possession of Clement. He simply had to go up to the doctor and say that he must go home.</p>
-<h2>GORGO, THE EAGLE</h2>
-<h2>IN THE MOUNTAIN GLEN</h2>
+<h2 class="chapter" id="c55">Gorgo, the Eagle — In the Mountain Glen</h2>
 <p>Far up among the mountains of Lapland there was an old eagle&#x27;s nest on a ledge which projected from a high cliff. The nest was made of dry twigs of pine and spruce, interlaced one with another until they formed a perfect network. Year by year the nest had been repaired and strengthened. It was about two metres wide, and nearly as high as a Laplander&#x27;s hut.</p>
 <p>The cliff on which the eagle&#x27;s nest was situated towered above a big glen, which was inhabited in summer by a flock of wild geese, as it was an excellent refuge for them. It was so secluded between cliffs that not many knew of it, even among the Laplanders themselves.</p>
 <p>In the heart of this glen there was a small, round lake in which was an abundance of food for the tiny goslings, and on the tufted lake shores which were covered with osier bushes and dwarfed birches the geese found fine nesting places.</p>
@@ -2202,7 +2246,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Both were proud and stubborn, and neither of them would yield. It ended in Akka&#x27;s forbidding the eagle to show his face in her neighbourhood, and her anger toward him was so intense that no one dared speak his name in her presence.</p>
 <p>After that Gorgo roamed around the country, alone and shunned, like all great robbers. He was often downhearted, and certainly longed many a time for the days when he thought himself a wild goose, and played with the merry goslings.</p>
 <p>Among the animals he had a great reputation for courage. They used to say of him that he feared no one but his foster-mother, Akka. And they could also say of him that he never used violence against a wild goose.</p>
-<h2>IN CAPTIVITY</h2>
+<h2 class="chapter" id="c56">In Captivity</h2>
 <p>Gorgo was only three years old, and had not as yet thought about marrying and procuring a home for himself, when he was captured one day by a hunter, and sold to the Skansen Zoölogical Garden, where there were already two eagles held captive in a cage built of iron bars and steel wires. The cage stood out in the open, and was so large that a couple of trees had easily been moved into it, and quite a large cairn was piled up in there. Notwithstanding all this, the birds were unhappy. They sat motionless on the same spot nearly all day. Their pretty, dark feather dresses became rough and lustreless, and their eyes were riveted with hopeless longing on the sky without.</p>
 <p>During the first week of Gorgo&#x27;s captivity he was still awake and full of life, but later a heavy torpor came upon him. He perched himself on one spot, like the other eagles, and stared at vacancy. He no longer knew how the days passed.</p>
 <p>One morning when Gorgo sat in his usual torpor, he heard some one call to him from below. He was so drowsy that he could barely rouse himself enough to lower his glance.</p>
@@ -2240,8 +2284,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;What sort of nonsense are you talking?&quot; protested Gorgo. &quot;In the first place they brought you here against your will; then they forced you to promise that you would remain here. Surely you must understand that such a promise one need not keep?&quot;</p>
 <p>&quot;Oh, no, I must keep it,&quot; said the boy. &quot;I thank you all the same for your kind intention, but you can&#x27;t help me.&quot;</p>
 <p>&quot;Oh, can&#x27;t I?&quot; said Gorgo. &quot;We&#x27;ll see about that!&quot; In a twinkling he grasped Nils Holgersson in his big talons, and rose with him toward the skies, disappearing in a northerly direction.</p>
-<h2>ON OVER GÄSTRIKLAND</h2>
-<h2>THE PRECIOUS GIRDLE</h2>
+<h2 class="chapter" id="c57">On Over Gästrikland — The Precious Girdle</h2>
 <p>Wednesday, June fifteenth.</p>
 <p>The eagle kept on flying until he was a long distance north of Stockholm. Then he sank to a wooded hillock where he relaxed his hold on the boy.</p>
 <p>The instant Thumbietot was out of Gorgo&#x27;s clutches he started to run back to the city as fast as he could.</p>
@@ -2272,7 +2315,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;You may go where you like if only you are back here by sundown,&quot; said the eagle, as he flew off.</p>
 <p>The boy sat on a stone gazing across the bare, rocky ground and the great forests round about.</p>
 <p>He felt rather lonely. But soon he heard singing in the forest below, and saw something bright moving amongst the trees. Presently he saw a blue and yellow banner, and he knew by the songs and the merry chatter that it was being borne at the head of a procession. On it came, up the winding path; he wondered where it and those who followed it were going. He couldn&#x27;t believe that anybody would come up to such an ugly, desolate waste as the place where he sat. But the banner was nearing the forest border, and behind it marched many happy people for whom it had led the way. Suddenly there was life and movement all over the mountain plain; after that there was so much for the boy to see that he didn&#x27;t have a dull moment.</p>
-<h2>FOREST DAY</h2>
+<h2 class="chapter" id="c58">Forest Day</h2>
 <p>On the mountain&#x27;s broad back, where Gorgo left Thumbietot, there had been a forest fire ten years before. Since that time the charred trees had been felled and removed, and the great fire-swept area had begun to deck itself with green along the edges, where it skirted the healthy forest. However, the larger part of the top was still barren and appallingly desolate. Charred stumps, standing sentinel-like between the rock ledges, bore witness that once there had been a fine forest here; but no fresh roots sprang from the ground.</p>
 <p>One day in the early summer all the children in the parish had assembled in front of the schoolhouse near the fire-swept mountain. Each child carried either a spade or a hoe on its shoulder, and a basket of food in its hand. As soon as all were assembled, they marched in a long procession toward the forest. The banner came first, with the teachers on either side of it; then followed a couple of foresters and a wagon load of pine shrubs and spruce seeds; then the children.</p>
 <p>The procession did not pause in any of the birch groves near the settlements, but marched on deep into the forest. As it moved along, the foxes stuck their heads out of the lairs in astonishment, and wondered what kind of backwoods people these were. As they marched past old coal pits where charcoal kilns were fired every autumn, the cross-beaks twisted their hooked bills, and asked one another what kind of coalers these might be who were now thronging the forest.</p>
@@ -2299,8 +2342,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;It&#x27;s a pleasure to sow one&#x27;s own acres in the spring, and to think of the grain that will spring up from the earth, but this work is even more alluring,&quot; they thought.</p>
 <p>Not only slender blades would come from that sowing, but mighty trees with tall trunks and sturdy branches. It meant giving birth not merely to a summer&#x27;s grain, but to many years&#x27; growths. It meant the awakening hum of insects, the song of the thrush, the play of grouse and all kinds of life on the desolate mountain. Moreover, it was like raising a memorial for coming generations. They could have left a bare, treeless height as a heritage. Instead they were to leave a glorious forest.</p>
 <p>Coming generations would know their forefathers had been a good and wise folk and they would remember them with reverence and gratitude.</p>
-<h2>A DAY IN HÄLSINGLAND</h2>
-<h2>A LARGE GREEN LEAF</h2>
+<h2 class="chapter" id="c59">A Day in Hälsingland — A Large Green Leaf</h2>
 <p>Thursday, June sixteenth.</p>
 <p>The following day the boy travelled over Hälsingland. It spread beneath him with new, pale-green shoots on the pine trees, new birch leaves in the groves, new green grass in the meadows, and sprouting grain in the fields. It was a mountainous country, but directly through it ran a broad, light valley from either side of which branched other valleys--some short and narrow, some broad and long.</p>
 <p>&quot;This land resembles a leaf,&quot; thought the boy, &quot;for it&#x27;s as green as a leaf, and the valleys subdivide it in about the same way as the veins of a leaf are foliated.&quot;</p>
@@ -2318,7 +2360,7 @@ h2 + p, .first { text-indent: 0; }
 <p>He sank, and, to his great astonishment, the boy saw that the eagle was right. There indeed stood little Clement Larsson chopping wood.</p>
 <p>Gorgo alighted on a pine tree in the thick woods a little away from the house.</p>
 <p>&quot;I have fulfilled my obligation,&quot; said the eagle, with a proud toss of his head. &quot;Now you must try and have a word with the man. I&#x27;ll perch here at the top of the thick pine and wait for you.&quot;</p>
-<h2>THE ANIMALS&#x27; NEW YEAR&#x27;S EVE</h2>
+<h2 class="chapter" id="c60">The Animals&#x27; New Year&#x27;s Eve</h2>
 <p>The day&#x27;s work was done at the forest ranches, supper was over, and the peasants sat about and chatted. It was a long time since they had been in the forest of a summer&#x27;s night, and they seemed reluctant to go to bed and sleep. It was as light as day, and the dairymaids were busy with their needle-work. Ever and anon they raised their heads, looked toward the forest and smiled. &quot;Now we are here again!&quot; they said. The town, with its unrest, faded from their minds, and the forest, with its peaceful stillness, enfolded them. When at home they had wondered how they should ever be able to endure the loneliness of the woods; but once there, they felt that they were having their best time.</p>
 <p>Many of the young girls and young men from neighbouring ranches had come to call upon them, so that there were quite a lot of folk seated on the grass before the cabins, but they did not find it easy to start conversation. The men were going home the next day, so the dairymaids gave them little commissions and bade them take greetings to their friends in the village. This was nearly all that had been said.</p>
 <p>Suddenly the eldest of the dairy girls looked up from her work and said laughingly:</p>
@@ -2385,7 +2427,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;I had no time to set out the blue bowl for him myself,&quot; said Clement, &quot;so I asked the old Laplander to do it. What has become of him since then I don&#x27;t know.&quot;</p>
 <p>No sooner had he spoken than a little pine cone came along and struck him on the nose. It did not drop from a tree, and none of the peasants had thrown it. It was simply impossible to tell whence it had come.</p>
 <p>&quot;Aha, Clement!&quot; winked the dairymaid, &quot;it appears as if the tiny folk were listening to us. You should not have left it to another to set out that blue bowl!&quot;</p>
-<h2>IN MEDELPAD</h2>
+<h2 class="chapter" id="c61">In Medelpad</h2>
 <p>Friday, June seventeenth.</p>
 <p>The boy and the eagle were out bright and early the next morning. Gorgo hoped that he would get far up into West Bothnia that day. As luck would have it, he heard the boy remark to himself that in a country like the one through which they were now travelling it must be impossible for people to live.</p>
 <p>The land which spread below them was Southern Medelpad. When the eagle heard the boy&#x27;s remark, he replied:</p>
@@ -2432,8 +2474,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;This must be both a wealthy and powerful city,&quot; remarked the boy. &quot;Can it be possible that the poor forest soil is the source of all this?&quot;</p>
 <p>The eagle flapped his wings again, and went over to Aln Island, which lies opposite Sundsvall. The boy was greatly surprised to see all the sawmills that decked the shores. On Aln Island they stood, one next another, and on the mainland opposite were mill upon mill, lumber yard upon lumber yard. He counted forty, at least, but believed there were many more.</p>
 <p>&quot;How wonderful it all looks from up here!&quot; he marvelled. &quot;So much life and activity I have not seen in any place save this on the whole trip. It is a great country that we have! Wherever I go, there is always something new for people to live upon.&quot;</p>
-<h2>A MORNING IN ÅNGERMANLAND</h2>
-<h2>THE BREAD</h2>
+<h2 class="chapter" id="c62">A Morning in Ångermanland — The Bread</h2>
 <p>Saturday, June eighteenth.</p>
 <p>Next morning, when the eagle had flown some distance into Ångermanland, he remarked that to-day he was the one who was hungry, and must find something to eat! He set the boy down in an enormous pine on a high mountain ridge, and away he flew.</p>
 <p>The boy found a comfortable seat in a cleft branch from which he could look down over Ångermanland. It was a glorious morning! The sunshine gilded the treetops; a soft breeze played in the pine needles; the sweetest fragrance was wafted through the forest; a beautiful landscape spread before him; and the boy himself was happy and care-free. He felt that no one could be better off.</p>
@@ -2459,7 +2500,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Where he now sat on the pine branch he could recall at will the tall, fair woman as she stood in the yard and held up the bread.</p>
 <p>She must have known that the large bird was a golden eagle--a plunderer, who was usually welcomed with loud shots; doubtless she had also seen the queer changeling he bore on his back. But she had not thought of what they were. As soon as she understood that they were hungry, she shared her good bread with them.</p>
 <p>&quot;If I ever become human again,&quot; thought the boy, &quot;I shall look up the pretty woman who lives near the great river, and thank her for her kindness to us.&quot;</p>
-<h2>THE FOREST FIRE</h2>
+<h2 class="chapter" id="c63">The Forest Fire</h2>
 <p>While the boy was still at his breakfast he smelled a faint odour of smoke coming from the north. He turned and saw a tiny spiral, white as a mist, rise from a forest ridge--not from the one nearest him, but from the one beyond it. It looked strange to see smoke in the wild forest, but it might be that a mountain stock farm lay over yonder, and the women were boiling their morning coffee.</p>
 <p>It was remarkable the way that smoke increased and spread! It could not come from a ranch, but perhaps there were charcoal kilns in the forest.</p>
 <p>The smoke increased every moment. Now it curled over the whole mountain top. It was not possible that so much smoke could come from a charcoal kiln. There must be a conflagration of some sort, for many birds flew over to the nearest ridge. Hawks, grouse, and other birds, who were so small that it was impossible to recognize them at such a distance, fled from the fire.</p>
@@ -2483,8 +2524,7 @@ h2 + p, .first { text-indent: 0; }
 <p>But think! After a while the loud roar of the flames decreased, and the smoke cleared. By that time the leaf trees had lost all their foliage, the ground under them was charred, the faces of the men were blackened by smoke and dripping with sweat; but the forest fire was conquered. It had ceased to flame up. Soft white smoke crept along the ground, and from it peeped out a lot of black stumps. This was all there was left of the beautiful forest!</p>
 <p>The boy scrambled up on a rock, so that he might see how the fire had been quenched. But now that the forest was saved, his peril began. The owl and the hawk simultaneously turned their eyes toward him. Just then he heard a familiar voice calling to him.</p>
 <p>Gorgo, the golden eagle, came sweeping through the forest, and soon the boy was soaring among the clouds--rescued from every peril.</p>
-<h2>WESTBOTTOM AND LAPLAND</h2>
-<h2>THE FIVE SCOUTS</h2>
+<h2 class="chapter" id="c64">Westbottom and Lapland — The Five Scouts</h2>
 <p>Once, at Skansen, the boy had sat under the steps at Bollnäs cottage and had overheard Clement Larsson and the old Laplander talk about Norrland. Both agreed that it was the most beautiful part of Sweden. Clement thought that the southern part was the best, while the Laplander favoured the northern part.</p>
 <p>As they argued, it became plain that Clement had never been farther north than Härnösand. The Laplander laughed at him for speaking with such assurance of places that he had never seen.</p>
 <p>&quot;I think I shall have to tell you a story, Clement, to give you some idea of Lapland, since you have not seen it,&quot; volunteered the Laplander.</p>
@@ -2512,7 +2552,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;When the five scouts had presented their reports to the assembly, they began to call one another liars, and were ready to fly at each other to prove the truth of their arguments.</p>
 <p>&quot;But the old and wise birds who had sent them out, listened to their accounts with joy, and calmed their fighting propensities.</p>
 <p>&quot;&#x27;You mustn&#x27;t quarrel among yourselves,&#x27; they said. &#x27;We understand from your reports that up north there are large mountain tracts, a big lake region, great forest lands, a wide plain, and a big group of islands. This is more than we have expected--more than many a mighty kingdom can boast within its borders.&#x27;&quot;</p>
-<h2>THE MOVING LANDSCAPE</h2>
+<h2 class="chapter" id="c65">The Moving Landscape</h2>
 <p>Saturday, June eighteenth.</p>
 <p>The boy had been reminded of the old Laplander&#x27;s story because he himself was now travelling over the country of which he had spoken. The eagle told him that the expanse of coast which spread beneath them was Westbottom, and that the blue ridges far to the west were in Lapland.</p>
 <p>Only to be once more seated comfortably on Gorgo&#x27;s back, after all that he had suffered during the forest fire, was a pleasure. Besides, they were having a fine trip. The flight was so easy that at times it seemed as if they were standing still in the air. The eagle beat and beat his wings, without appearing to move from the spot; on the other hand, everything under them seemed in motion. The whole earth and all things on it moved slowly southward. The forests, the fields, the fences, the rivers, the cities, the islands, the sawmills--all were on the march. The boy wondered whither they were bound. Had they grown tired of standing so far north, and wished to move toward the south?</p>
@@ -2571,9 +2611,9 @@ h2 + p, .first { text-indent: 0; }
 <p>He arose and looked all around him. Then he happened to glance upward and saw a peculiar structure of pine twigs and branches that stood on a cliff-ledge.</p>
 <p>&quot;That must be one of those eagle nests that Gorgo--&quot; But this was as far as he got. He tore off his cap, waved it in the air, and cheered.</p>
 <p>Now he understood where Gorgo had brought him. This was the very glen where the wild geese lived in summer, and just above it was the eagles&#x27; cliff.</p>
-<h2>HE HAD ARRIVED!</h2>
+<h2 class="chapter" id="c66">He Had Arrived!</h2>
 <p>He would meet Morten Goosey-Gander and Akka and all the other comrades in a few moments. Hurrah!</p>
-<h2>THE MEETING</h2>
+<h2 class="chapter" id="c67">The Meeting</h2>
 <p>All was still in the glen. The sun had not yet stepped above the cliffs, and Nils Holgersson knew that it was too early in the morning for the geese to be awake.</p>
 <p>The boy walked along leisurely and searched for his friends. Before he had gone very far, he paused with a smile, for he saw such a pretty sight. A wild goose was sleeping in a neat little nest, and beside her stood her goosey-gander. He too, slept, but it was obvious that he had stationed himself thus near her that he might be on hand in the possible event of danger.</p>
 <p>The boy went on without disturbing them and peeped into the willow brush that covered the ground. It was not long before he spied another goose couple. These were strangers, not of his flock, but he was so happy that he began to hum--just because he had come across wild geese.</p>
@@ -2597,7 +2637,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;That is just the word I was expecting from you, Mother Akka,&quot; returned the boy eagerly.</p>
 <p>&quot;There are those who say that you no longer have any love in your heart for the one you reared so tenderly, because he lives as eagles must live. But I know now that it isn&#x27;t true. And now I want to see if Morten Goosey-Gander is awake.</p>
 <p>&quot;Meanwhile, if you wish to say a &#x27;thank you&#x27; to the one who brought me here to you, I think you&#x27;ll find him up there on the cliff ledge, where once you found a helpless eaglet.&quot;</p>
-<h2>OSA, THE GOOSE GIRL, AND LITTLE MATS</h2>
+<h2 class="chapter" id="c68">Osa, the Goose Girl, and Little Mats</h2>
 <p>The year that Nils Holgersson travelled with the wild geese everybody was talking about two little children, a boy and a girl, who tramped through the country. They were from Sunnerbo township, in Småland, and had once lived with their parents and four brothers and sisters in a little cabin on the heath.</p>
 <p>While the two children, Osa and Mats, were still small, a poor, homeless woman came to their cabin one night and begged for shelter. Although the place could hardly hold the family, she was taken in and the mother spread a bed for her on the floor. In the night she coughed so hard that the children fancied the house shook. By morning she was too ill to continue her wanderings. The children&#x27;s father and mother were as kind to her as could be. They gave up their bed to her and slept on the floor, while the father went to the doctor and brought her medicine.</p>
 <p>The first few days the sick woman behaved like a savage; she demanded constant attention and never uttered a word of thanks. Later she became more subdued and finally begged to be carried out to the heath and left there to die.</p>
@@ -2650,7 +2690,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Then she was so terrified at the thought of talking with an elf that she could not say thank you or anything else, but quickly shut the door.</p>
 <p>As she did that she thought she saw an expression of pain flash across the elf&#x27;s face, but she could not help what she did, for she was beside herself with fright. She crept into bed as quickly as she could and drew the covers over her head.</p>
 <p>Although she was afraid of the elf, she had a feeling that he meant well by her. So the next day she made haste to do as he had told her.</p>
-<h2>WITH THE LAPLANDERS</h2>
+<h2 class="chapter" id="c69">With the Laplanders</h2>
 <p>One afternoon in July it rained frightfully up around Lake Luossajaure. The Laplanders, who lived mostly in the open during the summer, had crawled under the tent and were squatting round the fire drinking coffee.</p>
 <p>The new settlers on the east shore of the lake worked diligently to have their homes in readiness before the severe Arctic winter set in. They wondered at the Laplanders, who had lived in the far north for centuries without even thinking that better protection was needed against cold and storm than thin tent covering.</p>
 <p>The Laplanders, on the other hand, wondered at the new settlers giving themselves so much needless, hard work, when nothing more was necessary to live comfortably than a few reindeer and a tent.</p>
@@ -2667,7 +2707,7 @@ h2 + p, .first { text-indent: 0; }
 <p>She became so uneasy that she could no longer endure the suspense and asked Söderberg what the Laplanders knew of her father.</p>
 <p>&quot;They say he has gone fishing,&quot; said the workman. &quot;They&#x27;re not sure that he can get back to the camp to-night; but as soon as the weather clears, one of them will go in search of him.&quot;</p>
 <p>Thereupon he turned to the Lapps and went on talking to them. He did not wish to give Osa an opportunity to question him further about Jon Esserson.</p>
-<h2>THE NEXT MORNING</h2>
+<h2 class="chapter" id="c70">The Next Morning</h2>
 <p>Ola Serka himself, who was the most distinguished man among the Lapps, had said that he would find Osa&#x27;s father, but he appeared to be in no haste and sat huddled outside the tent, thinking of Jon Esserson and wondering how best to tell him of his daughter&#x27;s arrival. It would require diplomacy in order that Jon Esserson might not become alarmed and flee. He was an odd sort of man who was afraid of children. He used to say that the sight of them made him so melancholy that he could not endure it.</p>
 <p>While Ola Serka deliberated, Osa, the goose girl, and Aslak, the young Lapp boy who had stared so hard at her the night before, sat on the ground in front of the tent and chatted.</p>
 <p>Aslak had been to school and could speak Swedish. He was telling Osa about the life of the &quot;Saméfolk,&quot; assuring her that they fared better than other people.</p>
@@ -2748,8 +2788,7 @@ h2 + p, .first { text-indent: 0; }
 <p>They were Jon Esserson and his daughter. Both were unlike what they had been a few hours earlier.</p>
 <p>The father looked less bent and weary and his eyes were clear and good, as if at last he had found the answer to that which had troubled him so long.</p>
 <p>Osa, the goose girl, did not glance longingly about, for she had found some one to care for her, and now she could be a child again.</p>
-<h2>HOMEWARD BOUND!</h2>
-<h2>THE FIRST TRAVELLING DAY</h2>
+<h2 class="chapter" id="c71">Homeward Bound! — The First Travelling Day</h2>
 <p>Saturday, October first.</p>
 <p>The boy sat on the goosey-gander&#x27;s back and rode up amongst the clouds. Some thirty geese, in regular order, flew rapidly southward. There was a rustling of feathers and the many wings beat the air so noisily that one could scarcely hear one&#x27;s own voice. Akka from Kebnekaise flew in the lead; after her came Yksi and Kaksi, Kolme and Neljä, Viisi and Kuusi, Morten Goosey-Gander and Dunfin. The six goslings which had accompanied the flock the autumn before had now left to look after themselves. Instead, the old geese were taking with them twenty-two goslings that had grown up in the glen that summer. Eleven flew to the right, eleven to the left; and they did their best to fly at even distances, like the big birds.</p>
 <p>The poor youngsters had never before been on a long trip and at first they had difficulty in keeping up with the rapid flight.</p>
@@ -2790,7 +2829,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Down in the pine forest the young grouse sat huddled together and gazed longingly after the big bird flocks which, amid joy and merriment, proceeded southward.</p>
 <p>&quot;When will our turn come?&quot; they asked the mother grouse.</p>
 <p>&quot;You will have to stay at home with mamma and papa,&quot; she said.</p>
-<h2>LEGENDS FROM HÄRJEDALEN</h2>
+<h2 class="chapter" id="c72">Legends From Härjedalen</h2>
 <p>Tuesday, October fourth.</p>
 <p>The boy had had three days&#x27; travel in the rain and mist and longed for some sheltered nook, where he might rest awhile.</p>
 <p>At last the geese alighted to feed and ease their wings a bit. To his great relief the boy saw an observation tower on a hill close by, and dragged himself to it.</p>
@@ -2895,7 +2934,7 @@ h2 + p, .first { text-indent: 0; }
 <p>The boy leaped up.</p>
 <p>&quot;That&#x27;s only one of your base fabrications,&quot; he cried indignantly.</p>
 <p>&quot;You can ask Akka yourself,&quot; said Bataki. &quot;I see her coming up there with her whole flock. And don&#x27;t forget what I have told you to-day. There is usually a way out of all difficulties, if only one can find it. I shall be interested to see what success you have.&quot;</p>
-<h2>VERMLAND AND DALSLAND</h2>
+<h2 class="chapter" id="c73">Vermland and Dalsland</h2>
 <p>Wednesday, October fifth.</p>
 <p>To-day the boy took advantage of the rest hour, when Akka was feeding apart from the other wild geese, to ask her if that which Bataki had related was true, and Akka could not deny it. The boy made the leader-goose promise that she would not divulge the secret to Morten Goosey-Gander. The big white gander was so brave and generous that he might do something rash were he to learn of the elf&#x27;s stipulations.</p>
 <p>Later the boy sat on the goose-back, glum and silent, and hung his head. He heard the wild geese call out to the goslings that now they were in Dalarne, they could see Städjan in the north, and that now they were flying over Österdal River to Horrmund Lake and were coming to Vesterdal River. But the boy did not care even to glance at all this.</p>
@@ -2903,7 +2942,7 @@ h2 + p, .first { text-indent: 0; }
 <p>He was quite as indifferent when the wild geese called out to him that now they had arrived in Vermland and that the stream they were following southward was Klarälven.</p>
 <p>&quot;I&#x27;ve seen so many rivers already,&quot; thought the boy, &quot;why bother to look at one more?&quot;</p>
 <p>Even had he been more eager for sight-seeing, there was not very much to be seen, for northern Vermland is nothing but vast, monotonous forest tracts, through which Klarälven winds--narrow and rich in rapids. Here and there one can see a charcoal kiln, a forest clearing, or a few low, chimneyless huts, occupied by Finns. But the forest as a whole is so extensive one might fancy it was far up in Lapland.</p>
-<h2>A LITTLE HOMESTEAD</h2>
+<h2 class="chapter" id="c74">A Little Homestead</h2>
 <p>Thursday, October sixth.</p>
 <p>The wild geese followed Klarälven as far as the big iron foundries at Monk Fors. Then they proceeded westward to Fryksdalen. Before they got to Lake Fryken it began to grow dusky, and they lit in a little wet morass on a wooded hill. The morass was certainly a good night quarter for the wild geese, but the boy thought it dismal and rough, and wished for a better sleeping place. While he was still high in the air, he had noticed that below the ridge lay a number of farms, and with great haste he proceeded to seek them out.</p>
 <p>They were farther away than he had fancied and several times he was tempted to turn back. Presently the woods became less dense, and he came to a road skirting the edge of the forest. From it branched a pretty birch-bordered lane, which led down to a farm, and immediately he hastened toward it.</p>
@@ -2961,8 +3000,7 @@ h2 + p, .first { text-indent: 0; }
 <p>The boy did not mind telling her of his adventures, and, as the narrative proceeded, she who listened to him grew more and more astonished and happy.</p>
 <p>&quot;What luck to run across one who has travelled all over Sweden on the back of a goose!&quot; thought she. &quot;Just this which he is relating I shall write down in my book. Now I need worry no more over that matter. It was well that I came home. To think that I should find such help as soon as I came to the old place!&quot;</p>
 <p>Instantly another thought flashed into her mind. She had sent word to her father by the doves that she longed for home, and almost immediately she had received help in the matter she had pondered so long. Might not this be the father&#x27;s answer to her prayer?</p>
-<h2>THE TREASURE ON THE ISLAND</h2>
-<h2>ON THEIR WAY TO THE SEA</h2>
+<h2 class="chapter" id="c75">The Treasure On the Island — On Their Way to the Sea</h2>
 <p>Friday, October seventh.</p>
 <p>From the very start of the autumn trip the wild geese had flown straight south; but when they left Fryksdalen they veered in another direction, travelling over western Vermland and Dalsland, toward Bohuslän.</p>
 <p>That was a jolly trip! The goslings were now so used to flying that they complained no more of fatigue, and the boy was fast recovering his good humour. He was glad that he had talked with a human being. He felt encouraged when she said to him that if he were to continue doing good to all whom he met, as heretofore, it could not end badly for him. She was not able to tell him how to get back his natural form, but she had given him a little hope and assurance, which inspired the boy to think out a way to prevent the big white gander from going home.</p>
@@ -2982,7 +3020,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Finally, in the west, they saw a shining strip of light, which grew broader and broader with every wing stroke. Soon the sea spread before them, milk white with a shimmer of rose red and sky blue, and when they had circled past the coast cliffs they saw the sun again, as it hung over the sea, big and red and ready to plunge into the waves.</p>
 <p>As the boy gazed at the broad, endless sea and the red evening sun, which had such a kindly glow that he dared to look straight at it, he felt a sense of peace and calm penetrate his soul.</p>
 <p>&quot;It&#x27;s not worth while to be sad, Nils Holgersson,&quot; said the Sun. &quot;This is a beautiful world to live in both for big and little. It is also good to be free and happy, and to have a great dome of open sky above you.&quot;</p>
-<h2>THE GIFT OF THE WILD GEESE</h2>
+<h2 class="chapter" id="c76">The Gift of the Wild Geese</h2>
 <p>The geese stood sleeping on a little rock islet just beyond Fjällbacka. When it drew on toward midnight, and the moon hung high in the heavens, old Akka shook the sleepiness out of her eyes. After that she walked around and awakened Yksi and Kaksi, Kolme and Neljä, Viisi and Kuusi, and, last of all, she gave Thumbietot a nudge with her bill that startled him.</p>
 <p>&quot;What is it, Mother Akka?&quot; he asked, springing up in alarm.</p>
 <p>&quot;Nothing serious,&quot; assured the leader-goose. &quot;It&#x27;s just this: we seven who have been long together want to fly a short distance out to sea to-night, and we wondered if you would care to come with us.&quot;</p>
@@ -3026,7 +3064,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;&#x27;You may do as you like,&#x27; he retorted, &#x27;but as to Nils Holgersson, it will turn out exactly as I have said. You can tell him from me that he would do well to return soon with his goose, for matters on the farm are in a bad shape. His father has had to forfeit a bond for his brother, whom he trusted. He has bought a horse with borrowed money, and the beast went lame the first time he drove it. Since then it has been of no earthly use to him. Tell Nils Holgersson that his parents have had to sell two of the cows and that they must give up the croft unless they receive help from somewhere.&quot;</p>
 <p>When the boy heard this he frowned and clenched his fists so hard that the nails dug into his flesh.</p>
 <p>&quot;It is cruel of the elf to make the conditions so hard for me that I can not go home and relieve my parents, but he sha&#x27;n&#x27;t turn me into a traitor to a friend! My father and mother are square and upright folk. I know they would rather forfeit my help than have me come back to them with a guilty conscience.&quot;</p>
-<h2>THE JOURNEY TO VEMMINGHÖG</h2>
+<h2 class="chapter" id="c77">The Journey to Vemminghög</h2>
 <p>Thursday, November third.</p>
 <p>One day in the beginning of November the wild geese flew over Halland Ridge and into Skåne. For several weeks they had been resting on the wide plains around Falköping. As many other wild goose flocks also stopped there, the grown geese had had a pleasant time visiting with old friends, and there had been all kinds of games and races between the younger birds.</p>
 <p>Nils Holgersson had not been happy over the delay in Westergötland. He had tried to keep a stout heart; but it was hard for him to reconcile himself to his fate.</p>
@@ -3050,7 +3088,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;Now look down! Look well! This is how it looks along the coasts in foreign lands.&quot;</p>
 <p>After Akka had been flying about in this manner a long time she alighted suddenly on a marsh in Vemminghög township and the boy could not help thinking that she had travelled over Skåne just to let him see that his was a country which could compare favourably with any in the world. This was unnecessary, for the boy was not thinking of whether the country was rich or poor.</p>
 <p>From the moment that he had seen the first willow grove his heart ached with homesickness.</p>
-<h2>HOME AT LAST</h2>
+<h2 class="chapter" id="c78">Home At Last</h2>
 <p>Tuesday, November eighth.</p>
 <p>The atmosphere was dull and hazy. The wild geese had been feeding on the big meadow around Skerup church and were having their noonday rest when Akka came up to the boy.</p>
 <p>&quot;It looks as if we should have calm weather for awhile,&quot; she remarked, &quot;and I think we&#x27;ll cross the Baltic to-morrow.&quot;</p>
@@ -3170,7 +3208,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;Welcome!&quot; added his father, and not another word could he utter.</p>
 <p>But the boy still lingered at the threshold. He could not comprehend why they were so glad to see him--such as he was. Then his mother came and put her arms around him and drew him into the room, and he knew that he was all right.</p>
 <p>&quot;Mother and father!&quot; he cried. &quot;I&#x27;m a big boy. I am a human being again!&quot;</p>
-<h2>THE PARTING WITH THE WILD GEESE</h2>
+<h2 class="chapter" id="c79">The Parting With the Wild Geese</h2>
 <p>Wednesday, November ninth.</p>
 <p>The boy arose before dawn and wandered down to the coast. He was standing alone on the strand east of Smyge fishing hamlet before sunrise. He had already been in the pen with Morten Goosey-Gander to try to rouse him, but the big white gander had no desire to leave home. He did not say a word, but only stuck his bill under his wing and went to sleep again.</p>
 <p>To all appearances the weather promised to be almost as perfect as it had been that spring day when the wild geese came to Skåne. There was hardly a ripple on the water; the air was still and the boy thought of the good passage the geese would have. He himself was as yet in a kind of daze--sometimes thinking he was an elf, sometimes a human being. When he saw a stone hedge alongside the road, he was afraid to go farther until he had made sure that no wild animal or vulture lurked behind it. Very soon he laughed to himself and rejoiced because he was big and strong and did not have to be afraid of anything.</p>
@@ -3194,7 +3232,7 @@ h2 + p, .first { text-indent: 0; }
 <p>After that he walked farther up the strand. He knew perfectly well that the sorrows of the birds do not last long, and he wanted to part with them while they were still sad at losing him.</p>
 <p>As he crossed the shore meadows he turned and watched the many flocks of birds that were flying over the sea. All were shrieking their coaxing calls--only one goose flock flew silently on as long as he could follow it with his eyes. The wedge was perfect, the speed good, and the wing strokes strong and certain.</p>
 <p>The boy felt such a yearning for his departing comrades that he almost wished he were Thumbietot again and could travel over land and sea with a flock of wild geese.</p>
-<h2>TABLE OF PRONUNCIATION</h2>
+<h2 class="chapter" id="c80">Table of Pronunciation</h2>
 <p>The final e is sounded in Skåne, Sirle, Gripe, etc.</p>
 <p>The å in Skåne and Småland is pronounced like o in ore.</p>
 <p>j is like the English y. Nuolja, Oviksfjällen, Sjangeli, Jarro, etc., should sound as if they were spelled like this: Nuolya, Oviksfyellen, Syang [one syllable] elee, Yarro, etc.</p>
@@ -3214,6 +3252,6 @@ h2 + p, .first { text-indent: 0; }
 <p>Mårten gåskarl (Morten Goosie-gander) is a pet name for a tame gander, just as we use Dickie-bird for a pet bird.</p>
 <p>Fru is the Swedish for Mrs. This title is usually applied to gentlewomen only. The author has used this meaning of &quot;fru.&quot;</p>
 <p>A Goa-Nisse is an elf-king, and corresponds to the English Puck or Robin Goodfellow.</p>
-<h2>VELMA SWANSTON HOWARD.</h2>
-<p class="colophon">Texte du domaine public, source : Project Gutenberg (#10935). Édition numérique EbookClassics.</p>
+<h2 class="chapter" id="c81">Velma Swanston Howard.</h2>
+<p class="colophon">Public domain text. EbookClassics digital edition.</p>
 </body></html>

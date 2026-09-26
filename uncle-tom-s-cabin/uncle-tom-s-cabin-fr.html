@@ -1,36 +1,89 @@
 <!DOCTYPE html>
 <html lang="fr"><head><meta charset="utf-8">
-<title>La case de l&#x27;oncle Tom; ou, vie des nègres en Amérique</title><style>
-@page { margin: 22mm 20mm; }
-body { font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', serif; line-height: 1.6;
-       color: #1f1a14; max-width: 38em; margin: 0 auto; padding: 1.5em 1.2em; }
-h1 { font-size: 2.1em; text-align: center; margin: 1.5em 0 .2em; letter-spacing: .01em; }
-.author { text-align: center; font-size: 1.15em; font-style: italic; margin-bottom: 3em; color: #5a4a36; }
-h2 { font-size: 1.25em; text-align: center; margin: 2.6em 0 1.2em; letter-spacing: .06em;
-     text-transform: uppercase; font-weight: normal; page-break-before: always; break-before: page; }
-p { margin: 0; text-indent: 1.4em; text-align: justify; hyphens: auto; }
-h2 + p, .first { text-indent: 0; }
-.colophon { font-size: .85em; color: #6b5d45; text-align: center; margin-top: 4em; text-indent: 0; }
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La case de l&#x27;oncle Tom; ou, vie des nègres en Amérique — Harriet Beecher Stowe</title><style>
+:root{--paper:#fbf8f1;--ink:#1f1b16;--muted:#6f6352;--accent:#9a6b2f;--rule:#e4dccb}
+@media (prefers-color-scheme:dark){:root{--paper:#16140f;--ink:#ece6d8;--muted:#a79c88;--accent:#d8a95e;--rule:#2e2a22}}
+html{background:var(--paper)}
+body{font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Libertinus Serif",Georgia,serif;color:var(--ink);
+     background:var(--paper);line-height:1.65;font-size:1.12rem;max-width:36em;margin:0 auto;padding:2.5em 1.25em 5em}
+.titlepage{text-align:center;min-height:70vh;display:flex;flex-direction:column;justify-content:center;gap:.6em;
+           border-bottom:1px solid var(--rule);margin-bottom:2.5em;padding-bottom:2.5em}
+.titlepage img{max-width:260px;width:60%;margin:0 auto 1.5em;border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+h1{font-size:2.4em;line-height:1.15;font-weight:600;margin:0;letter-spacing:-.01em}
+.author{font-style:italic;font-size:1.25em;color:var(--accent);margin:0}
+.translator{font-size:.95em;color:var(--muted);margin:0}
+nav.toc{margin:0 0 3em}
+nav.toc h2{font-size:.85em;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:left;margin:0 0 .8em}
+nav.toc ol{list-style:none;padding:0;margin:0;columns:1}
+nav.toc li{margin:.25em 0}
+nav.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent}
+nav.toc a:hover{border-color:var(--accent)}
+h2.chapter{font-size:1.45em;font-weight:600;text-align:center;margin:3.5em 0 1.6em;line-height:1.3}
+h2.chapter::before{content:"";display:block;width:3em;height:2px;background:var(--accent);margin:0 auto 1.1em}
+p{margin:0;text-indent:1.5em;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+h2.chapter + p, .titlepage + p{text-indent:0}
+h2.chapter + p::first-letter{font-size:3.1em;float:left;line-height:.85;padding:.08em .08em 0 0;color:var(--accent);font-weight:600}
+.colophon{margin-top:5em;padding-top:1.5em;border-top:1px solid var(--rule);text-align:center;color:var(--muted);font-size:.85em;text-indent:0}
+h3.sub{font-size:1em;font-weight:600;font-variant:small-caps;letter-spacing:.04em;text-align:center;margin:2.2em 0 1em}
+h3.sub + p{text-indent:0}
+@media print{h2.chapter{break-before:page}}
 </style></head><body>
+<header class="titlepage">
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjI0MDAiIHZpZXdCb3g9IjAgMCAxNjAwIDI0MDAiPgo8cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSIyNDAwIiBmaWxsPSIjMTYzMDJiIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjMwMCIgZmlsbD0iI2U5YzQ2YSIgb3BhY2l0eT0iLjkyIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTYzMDJiIiBzdHJva2Utd2lkdGg9IjEyIiBvcGFjaXR5PSIuNSIvPgo8Y2lyY2xlIGN4PSIxMTIwIiBjeT0iNTYwIiByPSIxMjAiIGZpbGw9IiMxNjMwMmIiIG9wYWNpdHk9Ii4xOCIvPgo8cmVjdCB4PSIxNjAiIHk9IjkzMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIxMCIgZmlsbD0iI2U5YzQ2YSIvPgo8dGV4dCB4PSIxNjAiIHk9Ijk1MSIgZm9udC1zaXplPSIxMDQiIGZvbnQtd2VpZ2h0PSI2MDAiIGZvbnQtZmFtaWx5PSJMaWJlcnRpbnVzIFNlcmlmLCBHZW9yZ2lhLCBzZXJpZiIgZmlsbD0iI2Y0ZWNkOCI+TGEgY2FzZSBkZTwvdGV4dD48dGV4dCB4PSIxNjAiIHk9IjEwNjYiIGZvbnQtc2l6ZT0iMTA0IiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmNGVjZDgiPmwmI3gyNztvbmNsZSBUb207PC90ZXh0Pjx0ZXh0IHg9IjE2MCIgeT0iMTE4MCIgZm9udC1zaXplPSIxMDQiIGZvbnQtd2VpZ2h0PSI2MDAiIGZvbnQtZmFtaWx5PSJMaWJlcnRpbnVzIFNlcmlmLCBHZW9yZ2lhLCBzZXJpZiIgZmlsbD0iI2Y0ZWNkOCI+b3UsIHZpZSBkZXM8L3RleHQ+PHRleHQgeD0iMTYwIiB5PSIxMjk0IiBmb250LXNpemU9IjEwNCIgZm9udC13ZWlnaHQ9IjYwMCIgZm9udC1mYW1pbHk9IkxpYmVydGludXMgU2VyaWYsIEdlb3JnaWEsIHNlcmlmIiBmaWxsPSIjZjRlY2Q4Ij5uw6hncmVzIGVuPC90ZXh0Pjx0ZXh0IHg9IjE2MCIgeT0iMTQwOSIgZm9udC1zaXplPSIxMDQiIGZvbnQtd2VpZ2h0PSI2MDAiIGZvbnQtZmFtaWx5PSJMaWJlcnRpbnVzIFNlcmlmLCBHZW9yZ2lhLCBzZXJpZiIgZmlsbD0iI2Y0ZWNkOCI+QW3DqXJpcXVlPC90ZXh0Pgo8dGV4dCB4PSIxNjAiIHk9IjE1OTMiIGZvbnQtc2l6ZT0iNjgiIGZvbnQtc3R5bGU9Iml0YWxpYyIgZm9udC1mYW1pbHk9IkxpYmVydGludXMgU2VyaWYsIEdlb3JnaWEsIHNlcmlmIiBmaWxsPSIjZTljNDZhIj5IYXJyaWV0IEJlZWNoZXIgU3Rvd2U8L3RleHQ+Cjx0ZXh0IHg9IjE2MCIgeT0iMjIzMCIgZm9udC1zaXplPSI0NCIgbGV0dGVyLXNwYWNpbmc9IjE0IiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmNGVjZDgiIG9wYWNpdHk9Ii43NSI+RUJPT0tDTEFTU0lDUzwvdGV4dD4KPC9zdmc+" alt="">
 <h1>La case de l&#x27;oncle Tom; ou, vie des nègres en Amérique</h1>
 <p class="author">Harriet Beecher Stowe</p>
-<p>Au lecteur</p>
-<p>Cette version électronique reproduit dans son intégralité la version originale.</p>
-<p>La ponctuation n&#x27;a pas été modifiée hormis quelques corrections mineures.</p>
-<p>L&#x27;orthographe a été conservée. Seuls quelques mots ont été modifiés. La liste des modifications se trouve à la fin du texte.</p>
-<p>BIBLIOTHÈQUE DES CHEMINS DE FER</p>
-<h2>QUATRIÈME SÉRIE</h2>
-<h2>LITTÉRATURES ANCIENNES ET ÉTRANGÈRES</h2>
-<p>Imprimerie de Ch. Lahure (ancienne maison Crapelet) rue de Vaugirard, 9, près de l&#x27;Odéon.</p>
-<p>LA CASE L&#x27;ONCLE TOM</p>
-<p>OU</p>
-<h2>VIE DES NÈGRES EN AMÉRIQUE</h2>
-<p>PAR</p>
-<p>Mss HARRIET BEECHER STOWE</p>
-<p>TRADUCTION DE LOUIS ÉNAULT</p>
-<p>PARIS LIBRAIRIE DE L. HACHETTE ET Cie RUE PIERRE-SARRAZIN, No 14</p>
-<p>1853</p>
-<h2>PRÉFACE.</h2>
+<p class="translator">Traduction de Enault, Louis</p>
+</header>
+<nav class="toc"><h2>Table des matières</h2><ol>
+<li><a href="#c1">Chapitre premier.</a></li>
+<li><a href="#c2">Chapitre II.</a></li>
+<li><a href="#c3">Chapitre III.</a></li>
+<li><a href="#c4">Chapitre IV.</a></li>
+<li><a href="#c5">Chapitre V.</a></li>
+<li><a href="#c6">Chapitre VI.</a></li>
+<li><a href="#c7">Chapitre VII.</a></li>
+<li><a href="#c8">Chapitre VIII.</a></li>
+<li><a href="#c9">Chapitre IX.</a></li>
+<li><a href="#c10">Chapitre X.</a></li>
+<li><a href="#c11">Chapitre XI.</a></li>
+<li><a href="#c12">Chapitre XII.</a></li>
+<li><a href="#c13">Chapitre XIII.</a></li>
+<li><a href="#c14">Chapitre XIV.</a></li>
+<li><a href="#c15">Chapitre XV.</a></li>
+<li><a href="#c16">Chapitre XVI.</a></li>
+<li><a href="#c17">Chapitre XVII.</a></li>
+<li><a href="#c18">Chapitre XVIII.</a></li>
+<li><a href="#c19">Chapitre XIX.</a></li>
+<li><a href="#c20">Chapitre XX.</a></li>
+<li><a href="#c21">Chapitre XXI.</a></li>
+<li><a href="#c22">Chapitre XXII.</a></li>
+<li><a href="#c23">Chapitre XXIII.</a></li>
+<li><a href="#c24">Chapitre XXIV.</a></li>
+<li><a href="#c25">Chapitre XXV.</a></li>
+<li><a href="#c26">Chapitre XXVI.</a></li>
+<li><a href="#c27">Chapitre XXVII.</a></li>
+<li><a href="#c28">Chapitre XXVIII.</a></li>
+<li><a href="#c29">Chapitre XXIX.</a></li>
+<li><a href="#c30">Chapitre XXX.</a></li>
+<li><a href="#c31">Chapitre XXXI.</a></li>
+<li><a href="#c32">Chapitre XXXII.</a></li>
+<li><a href="#c33">Chapitre XXXIII.</a></li>
+<li><a href="#c34">Chapitre XXXIV.</a></li>
+<li><a href="#c35">Chapitre XXXV.</a></li>
+<li><a href="#c36">Chapitre XXXVI.</a></li>
+<li><a href="#c37">Chapitre XXXVII.</a></li>
+<li><a href="#c38">Chapitre xxxviii.</a></li>
+<li><a href="#c39">Chapitre XXXIX.</a></li>
+<li><a href="#c40">Chapitre XL.</a></li>
+<li><a href="#c41">Chapitre XLI.</a></li>
+<li><a href="#c42">Chapitre XLII.</a></li>
+<li><a href="#c43">Chapitre XLIII.</a></li>
+<li><a href="#c44">Chapitre XLIV.</a></li>
+<li><a href="#c45">Chapitre XLV.</a></li>
+<li><a href="#c46">Chapitre I.--Où le lecteur fait connaissance avec un homme vraiment humain                                                  1</a></li>
+</ol></nav>
+<h3 class="sub">Préface.</h3>
 <p>L&#x27;Oncle Tom est moins un roman qu&#x27;un plaidoyer politique et social; le côté artistique de l&#x27;oeuvre est bien le dernier souci de l&#x27;auteur. Son livre est conçu dans le même système, exécuté dans les mêmes conditions que les discours prononcés chaque jour par les orateurs américains dans les clubs ou à la tribune de Washington. Il va au but, il y va tout droit, à travers les obstacles, emportant tout avec lui, et se faisant un auxiliaire et un moyen de tout ce qu&#x27;il rencontre. Tout lui est bon, pourvu que ce soit une arme, offensive ou défensive. Ne lui demandez pas les secrets, la recherche, la finesse de la composition, les ficelles du métier, comme on dit chez nous, les ingénieuses délicatesses de l&#x27;art, comme nous les entendons aujourd&#x27;hui. Mme Beecher haussera les épaules et passera outre.</p>
 <p>On a comparé avec raison son livre à un grand meeting religieux et politique, un meeting abolitionniste, où l&#x27;orateur produit une armée de témoins, blancs, noirs, libres, esclaves, qui viennent des quatre points cardinaux; ils ne se connaissent pas, ils s&#x27;étonnent de se trouver ensemble, mais tous leurs témoignages concourent au même but, et l&#x27;orateur qui les résume en fait un magnifique plaidoyer!</p>
 <p>Le héros du roman, Tom, prend des proportions grandioses. C&#x27;est un Prométhée nègre dont l&#x27;esclavage est le vautour; mais c&#x27;est aussi un Prométhée résigné, chrétien, qui répond à l&#x27;insulte par le pardon, aux blasphèmes par les prières. Il aime ceux qui le persécutent, il donnerait sa vie pour ses bourreaux. C&#x27;est en un mot le type de la plus parfaite vertu: la vertu chrétienne.</p>
@@ -41,9 +94,9 @@ h2 + p, .first { text-indent: 0; }
 <p>Si, du reste, on comprit jamais le trouble et l&#x27;émotion d&#x27;un auteur, c&#x27;est bien quand il plaide la cause de l&#x27;humanité.</p>
 <p>Mme Beecher Stowe, comme tous les grands poëtes, a le sentiment vif et profond de la nature. Je ne connais rien de plus jeune et de plus frais que ses paysages; avec elle l&#x27;eau frissonne, les fleurs embaument, les forêts ont de doux murmures. J&#x27;ai vu dans son livre des couchers de soleil tout pleins de tièdes rayons. Ses paysages sont splendides comme la jeune nature de l&#x27;Amérique. Mais ce qu&#x27;elle peint mieux encore, ce sont les splendeurs du monde moral et le charme délicat des âmes choisies. «Autrefois, me disait une jeune femme, je ne pleurais qu&#x27;à ce qui était triste; maintenant je pleure à ce qui est beau!» Elle venait de fermer l&#x27;Oncle Tom. Mme Beecher Stowe a fait de délicieux pastels d&#x27;enfant. Le petit Harry, le fils de Georges, est un chérubin joufflu à qui sa mère a coupé les ailes. Les sentiments de la famille, l&#x27;amour maternel, par exemple, prennent chez l&#x27;auteur une intensité toute-puissante. Je ne parle pas de cette belle et violente Élisa; c&#x27;est une figure épique, une Andromaque au teint bistré; mais cette affection sainte, quand elle se mélange de larmes et de regrets, prend tout à coup des attendrissements infinis. Je ne connais rien de plus charmant que cette scène où Mme Bird donne à l&#x27;esclave fugitif les vêtements de son petit enfant mort. C&#x27;est en même temps un tableau d&#x27;intérieur peint avec une finesse de touche incomparable: un pinceau hollandais qui aurait le don des larmes.</p>
 <p>La Case de l&#x27;oncle Tom n&#x27;est pas seulement un beau livre, c&#x27;est encore une bonne action, et il est heureux de penser qu&#x27;au milieu du débordement des mauvaises moeurs littéraires de ce siècle, c&#x27;est là une des causes de son succès. Ce succès honore la civilisation chrétienne.</p>
-<h2>LOUIS ÉNAULT.</h2>
+<h3 class="sub">Louis énault.</h3>
 <p>LA CASE DE L&#x27;ONCLE TOM.</p>
-<h2>CHAPITRE PREMIER.</h2>
+<h2 class="chapter" id="c1">Chapitre premier.</h2>
 <p>Où le lecteur fait connaissance avec un homme vraiment humain.</p>
 <p>Vers le soir d&#x27;une froide journée de février, deux gentlemen étaient assis devant une bouteille vide, dans une salle à manger confortablement meublée de la ville de P..., dans le Kentucky. Pas de domestiques autour d&#x27;eux: les siéges étaient fort rapprochés, et les deux gentlemen semblaient discuter quelque question d&#x27;un vif intérêt.</p>
 <p>C&#x27;est par politesse que nous avons employé jusqu&#x27;ici le mot de gentlemen[1]. Un de ces deux hommes, quand on l&#x27;examinait avec attention, ne paraissait pas mériter cette qualification: il n&#x27;avait vraiment pas la mine d&#x27;un gentleman. Il était court et épais; ses traits étaient grossiers et communs; son air à la fois prétentieux et insolent révélait l&#x27;homme d&#x27;une condition inférieure voulant se pousser dans le monde et faire sa route en jouant des coudes. Il avait une mise exagérée: gilet brillant et de toutes couleurs, cravate bleue semée de points jaunes, et noeud pimpant, tout à fait en harmonie avec l&#x27;aspect du personnage. Ses mains, courtes et larges, étaient surabondamment ornées d&#x27;anneaux. Il portait une massive chaîne de montre en or, avec une grappe de breloques gigantesques; il avait l&#x27;habitude, dans l&#x27;ardeur de la conversation, de les faire sonner et retentir avec des marques de vive satisfaction. Sa conversation était un défi audacieux jeté sans cesse à la grammaire de Muray; il avait soin de temps en temps de la munir de termes assez profanes, que notre vif désir d&#x27;être exact ne nous permet cependant point de rapporter.</p>
@@ -112,7 +165,7 @@ h2 + p, .first { text-indent: 0; }
 <p>--Eh bien! reprit Haley, après que tous deux eurent pendant un instant silencieusement épluché leurs noix.... eh bien! que dites-vous?</p>
 <p>--Je vais y réfléchir et en parler avec ma femme, dit M. Shelby. Cependant, Haley, si vous voulez que cette affaire soit menée avec la discrétion dont vous parlez, ne laissez rien transpirer dans le voisinage; le bruit s&#x27;en répandrait parmi les miens, et je vous déclare qu&#x27;il ne serait pas facile alors de les calmer.</p>
 <p>--Motus! je vous le promets! mais en même temps je vous déclare que je suis diablement pressé et qu&#x27;il faut que je sache le plus tôt possible sur quoi je puis compter.»</p>
-<h2>Il se leva et mit son par-dessus.</h2>
+<p>Il se leva et mit son par-dessus.</p>
 <p>«Faites-moi demander ce soir, entre six et sept heures, dit M. Shelby, et vous aurez ma réponse.»</p>
 <p>Le marchand salua et sortit.</p>
 <p>«Dire que je ne puis pas le jeter du haut en bas de l&#x27;escalier! pensa M. Shelby quand il vit la porte bien fermée. Quelle impudente effronterie!... Il connaît ses avantages. Ah! si on m&#x27;eût dit qu&#x27;un jour j&#x27;aurais été obligé de vendre Tom à un de ces damnés marchands, j&#x27;aurais répondu: «Votre serviteur est-il un chien pour en agir ainsi?....» Et maintenant cela doit être... je le vois.... Et l&#x27;enfant d&#x27;Élisa! Je vais avoir maille à partir avec ma femme à ce sujet-là.... et pour Tom aussi.... Oh! les dettes! les dettes! Le drôle sait ses avantages.... il en profite.»</p>
@@ -137,7 +190,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Mme Shelby était une femme supérieure, comme sentiment et comme intelligence; à cette grandeur d&#x27;âme naturelle, à cette élévation d&#x27;esprit, qui souvent est le caractère distinctif des femmes du Kentucky, elle joignait des principes d&#x27;une haute moralité et des sentiments religieux qui la guidaient, avec autant de fermeté que d&#x27;habileté, dans toutes les circonstances pratiques de sa vie. Son mari, qui ne faisait profession d&#x27;aucune religion plus particulièrement, avait la plus grande déférence pour la religion de sa femme. Il tenait à son opinion; il lui laissait donner librement carrière à sa bienveillance dans tout ce qui regardait l&#x27;amélioration, l&#x27;instruction et le bien-être des esclaves; quant à lui, il ne s&#x27;en mêlait pas directement. Sans croire très-fermement à la réversibilité des mérites des saints, il laissait assez voir qu&#x27;à son avis sa femme était bonne et vertueuse pour deux, et qu&#x27;il espérait gagner le ciel avec le surplus de ses vertus: ceci le dispensait de toute prétention personnelle.</p>
 <p>Après sa conversation avec le marchand, il eut comme un poids sur l&#x27;esprit: il fallait faire connaître ses projets à sa femme... il prévoyait l&#x27;opposition et la résistance....</p>
 <p>Mme Shelby, ignorant complétement les embarras de son mari, et le sachant très-bon au fond, avait été sincèrement incrédule devant les craintes d&#x27;Élisa: elle ne s&#x27;en occupa même plus. Elle se préparait à une visite pour le soir: le reste lui sortit complétement de la tête.</p>
-<h2>CHAPITRE II.</h2>
+<h2 class="chapter" id="c2">Chapitre II.</h2>
 <p>La mère.</p>
 <p>Élevée depuis l&#x27;enfance par sa maîtresse, Élisa avait toujours été traitée en favorite que l&#x27;on gâte un peu.</p>
 <p>Ceux qui ont voyagé dans l&#x27;Amérique du sud ont pu remarquer l&#x27;élégance raffinée, la douceur de voix et de manières qui semblent être le don particulier de certaines mulâtresses. Ces grâces naturelles des quarteronnes sont souvent unies à une beauté vraiment éblouissante, et presque toujours rehaussées par des agréments personnels. Élisa telle que nous l&#x27;avons peinte n&#x27;est point un tableau de fantaisie: c&#x27;est un portrait; nous avons vu l&#x27;original dans le Kentucky. Défendue par l&#x27;affection protectrice de sa maîtresse, Élisa avait atteint la jeunesse sans être exposée à ces tentations qui font de la beauté un héritage si fatal à l&#x27;esclave. Elle avait été mariée à un jeune homme de sa condition, habile et beau, vivant sur une possession voisine. Il s&#x27;appelait Georges Harris.</p>
@@ -165,7 +218,7 @@ h2 + p, .first { text-indent: 0; }
 <p>--Je comprends, monsieur.... J&#x27;ai surpris l&#x27;autre jour vos menées et vos chuchotements; mais on ne m&#x27;en impose pas de cette façon-là, monsieur!... Nous sommes dans un pays libre, monsieur; l&#x27;homme est à moi, j&#x27;en fais ce que je veux: voilà!»</p>
 <p>Ainsi s&#x27;évanouit la dernière espérance de Georges.... Il n&#x27;a plus maintenant devant lui qu&#x27;une vie de travail et de misère, rendue plus amère encore par toutes les taquineries mesquines et toutes les vexations à coups d&#x27;épingles d&#x27;une tyrannie inventive.</p>
 <p>Un jurisconsulte humain disait un jour: «Vous ne pouvez faire pis à un homme que de le pendre.» Il se trompait: on peut lui faire pis!</p>
-<h2>CHAPITRE III.</h2>
+<h2 class="chapter" id="c3">Chapitre III.</h2>
 <p>Époux et père.</p>
 <p>Mme Shelby était partie. Élisa se tenait sous la véranda. Triste, elle suivait de l&#x27;oeil la voiture qui s&#x27;éloignait. Une main se posa sur son épaule. Elle se retourna, et un brillant sourire illumina son visage.</p>
 <p>«Georges, est-ce vous? vous m&#x27;avez fait peur! Oh! je suis si heureuse de vous voir! Madame est absente pour toute la soirée. Venez dans ma petite chambre; nous avons du temps devant nous.»</p>
@@ -221,7 +274,7 @@ h2 + p, .first { text-indent: 0; }
 <p>--Allons! adieu,» dit Georges en prenant les mains d&#x27;Élisa et en fixant ses yeux sur ceux de la jeune femme....</p>
 <p>Ils se tinrent un moment silencieux, puis il y eut les dernières paroles, les sanglots et les larmes amères.... Ce sont là des adieux comme en savent faire ceux dont l&#x27;espérance du revoir est suspendue à un fil léger comme la trame de l&#x27;araignée....</p>
 <p>Le mari et la femme se séparèrent.</p>
-<h2>CHAPITRE IV.</h2>
+<h2 class="chapter" id="c4">Chapitre IV.</h2>
 <p>Une soirée dans la case de l&#x27;oncle Tom.</p>
 <p>La case de l&#x27;oncle Tom était une petite construction faite de troncs d&#x27;arbres, attenant à la maison, comme le nègre appelle par excellence l&#x27;habitation de son maître. Devant la case, un morceau de jardin, où, chaque été, les framboises, les fraises et d&#x27;autres fruits, mêlés aux légumes, prospéraient sous l&#x27;effort d&#x27;une culture soigneuse. Toute la façade était couverte par un large bégonia écarlate et un rosier multiflore: leurs rameaux confondus, se nouant et s&#x27;enlaçant, laissaient à peine entrevoir çà et là quelques traces des grossiers matériaux du petit édifice. La famille brillante et variée des plantes annuelles, les chrysanthèmes, les pétunias, trouvaient aussi une petite place pour étaler leurs splendeurs, qui faisaient les délices et l&#x27;orgueil de la tante Chloé.</p>
 <p>Cependant entrons dans la case.</p>
@@ -237,7 +290,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Il était alors très-laborieusement occupé: une ardoise était placée devant lui, et il s&#x27;efforçait, avec un soin plein de lenteur, de tracer quelques lettres. Il était surveillé dans cette opération par le jeune monsieur Georges, vif et pétulant garçon de treize ans, qui s&#x27;élevait en ce moment à toute la dignité de sa position d&#x27;instituteur:</p>
 <p>«Pas de ce côté, père Tom, pas de ce côté, s&#x27;écria-t-il vivement en voyant que l&#x27;oncle Tom faisait tourner à droite la queue d&#x27;un g; cela fait un q, vous voyez bien!</p>
 <p>--En vérité!» dit l&#x27;oncle Tom en regardant avec un air de respect et d&#x27;admiration les q et les g sans nombre que son jeune instituteur semait sur l&#x27;ardoise pour son édification.</p>
-<h2>Il prit alors le crayon dans ses gros doigts pesants et recommença patiemment.</h2>
+<p>Il prit alors le crayon dans ses gros doigts pesants et recommença patiemment.</p>
 <p>«Comme ces blancs font tout bien! dit la tante Chloé en s&#x27;arrêtant, la fourchette en l&#x27;air et un morceau de lard au bout; elle regarda M. Georges avec orgueil. Il sait écrire déjà! et lire aussi! et chaque soir, il veut bien venir nous donner des leçons... Que c&#x27;est bon à lui!</p>
 <p>--Mais, tante Chloé, dit Georges, voilà que je meurs de faim... Est-ce que cette galette que je vois dans le poêlon n&#x27;est pas à peu près cuite?</p>
 <p>--Bientôt, monsieur Georges, dit Chloé en soulevant le couvercle... bientôt. Oh! le brun magnifique! Elle est vraiment d&#x27;un brun superbe! Ah! il n&#x27;y a que moi pour cela. Madame permit l&#x27;autre jour à Sally d&#x27;essayer.... pour apprendre, disait-elle. Ah! madame, lui disais-je, ça me fend le coeur de voir ainsi gâter les bonnes choses. Le gâteau ne monta que d&#x27;un côté.... et plus ferme que ma savate... Ah! fi!»</p>
@@ -257,7 +310,7 @@ h2 + p, .first { text-indent: 0; }
 <p>--Oui, je l&#x27;ai dit, et je puis le répéter.... bonne, mais vulgaire, commune.... propre à faire la cuisine de tous les jours; mais l&#x27;extra, monsieur, l&#x27;extra!... elle n&#x27;y atteint pas.... Elle fait bien une galette de maïs.... et c&#x27;est tout.... Je sais qu&#x27;elle s&#x27;essaye aux pâtés.... mais la croûte.... elle manque les croûtes! Elle n&#x27;arrivera jamais à cette pâtisserie molle et fondante qui s&#x27;élève et se gonfle comme un soufflet.... non, jamais! Quand miss Mary se maria.... Jenny me montra les gâteaux de mariage.... Jenny et moi nous sommes bonnes amies, vous savez: je ne dis rien.... Mais allez, monsieur Georges, je ne fermerais pas l&#x27;oeil d&#x27;une semaine si j&#x27;avais fait des pâtés pareils.... Ce n&#x27;était rien qui vaille....</p>
 <p>--Je suis sûr, reprit Georges, que Jenny les trouvait fort beaux.</p>
 <p>--Eh! sans doute, elle les montrait comme une innocente. Vous voyez, c&#x27;est bien cela! Jenny ne sait pas! C&#x27;est une famille de rien.... Elle ne peut pas savoir, cette fille; ce n&#x27;est pas sa faute. Ah! monsieur Georges, vous ignorez la moitié des avantages et priviléges de votre famille.»</p>
-<h2>Ici Chloé soupira et roula des yeux attendris.</h2>
+<p>Ici Chloé soupira et roula des yeux attendris.</p>
 <p>«Je suis sûr, Chloé, que je comprends tous mes priviléges. Quant au pudding et au gâteau, demandez à Lincoln si je ne le raille pas chaque fois que je le rencontre.»</p>
 <p>Chloé se renversa dans sa chaise: l&#x27;esprit de son jeune maître excita en elle des accès de gaieté retentissante. Elle rit, elle rit jusqu&#x27;à ce que les larmes couvrissent ses joues noires et brillantes..... Cependant elle pinçait le jeune homme, et lui donnait même quelques coups de poing, en disant qu&#x27;il était son bourreau et qu&#x27;il la tuerait un de ces jours; et, entre chacune de ces prédictions funèbres, les éclats de rire sonores recommençaient de plus belle. Georges commença à croire qu&#x27;il avait trop d&#x27;esprit.... que c&#x27;était un danger, et qu&#x27;il devait prendre garde à ce que ses conversations fussent moins meurtrières.</p>
 <p>«Ah! vous avez dit cela à Tom? reprit-elle; quel jeune homme vous ferez! Ah! vous avez raillé Lincoln? Ah! Seigneur Dieu! monsieur Georges, vous feriez rire un fantôme!</p>
@@ -331,7 +384,7 @@ h2 + p, .first { text-indent: 0; }
 <p>--Vous savez quelle nécessité m&#x27;a contraint!</p>
 <p>--Mais elle pourrait m&#x27;obliger aussi, moi, reprit Haley. Cependant je ferai de mon mieux pour donner une bonne place à Tom. Quant à le maltraiter moi-même, vous n&#x27;avez rien à craindre de ce côté-là. Si je remercie Dieu de quelque chose, c&#x27;est de ne m&#x27;avoir pas fait cruel.»</p>
 <p>Le marchand avait trop bien expliqué tout d&#x27;abord comment il entendait l&#x27;humanité pour rassurer beaucoup M. Shelby par ses protestations. Mais, comme dans les circonstances actuelles il ne pouvait exiger rien de plus, il le laissa partir sans observation, et il alluma un cigare pour se distraire.</p>
-<h2>CHAPITRE V.</h2>
+<h2 class="chapter" id="c5">Chapitre V.</h2>
 <p>Où l&#x27;on voit les sentiments de la marchandise humaine quand elle change de propriétaire.</p>
 <p>M. et Mme Shelby s&#x27;étaient retirés dans leur appartement pour la nuit.</p>
 <p>Le mari s&#x27;était étendu dans un fauteuil confortable: il parcourait quelques lettres arrivées par la poste de l&#x27;après-dîner; la femme était debout devant son miroir, déroulant les boucles et dénouant les tresses de ses cheveux, élégant ouvrage d&#x27;Élisa. Mme Shelby, remarquant la pâleur et l&#x27;oeil hagard d&#x27;Élisa, l&#x27;avait dispensée de son service pour ce soir-là; l&#x27;occupation du moment lui rappela la conversation du matin, et se tournant vers son mari, elle lui dit avec assez d&#x27;insouciance:</p>
@@ -407,7 +460,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Elle se retourna vers la muraille, leur déroba un instant son visage, puis elle reprit d&#x27;une voix brève:</p>
 <p>«Dites-lui d&#x27;être aussi bon qu&#x27;il pourra, pour que nous nous retrouvions au ciel!... Appelez Bruno, fermez la porte sur lui; pauvre bête! il ne faut pas qu&#x27;il me suive!»</p>
 <p>Il y eut encore quelques dernières paroles, quelques larmes, quelques adieux bien simples, mêlés de bénédictions; puis, soulevant dans ses bras son enfant étonné et effrayé, elle disparut silencieusement.</p>
-<h2>CHAPITRE VI.</h2>
+<h2 class="chapter" id="c6">Chapitre VI.</h2>
 <p>Découverte.</p>
 <p>Après leur longue discussion, M. et Mme Shelby ne s&#x27;endormirent pas tout d&#x27;abord. Aussi le lendemain se réveillèrent-ils plus tard que de coutume.</p>
 <p>«Je ne sais ce qui retient Élisa ce matin,» dit Mme Shelby, après avoir sonné plusieurs fois inutilement.</p>
@@ -516,7 +569,7 @@ h2 + p, .first { text-indent: 0; }
 <p>--Remarquez, dit Samuel tout en lavant le poney, remarquez, André, comme j&#x27;ai l&#x27;habitude de l&#x27;observation; c&#x27;est bien important dans la vie, André! Cultivez l&#x27;observation pendant que vous êtes jeune. Levez donc le pied de derrière. Voyez-vous, l&#x27;observation, c&#x27;est ce qui fait la différence entre un nègre et un nègre. N&#x27;ai-je pas vu de quel côté soufflait le vent, ce matin? N&#x27;ai-je pas compris ce que madame voulait, quoiqu&#x27;elle ne le dît pas?... C&#x27;est de l&#x27;observation, André! Je pense que vous appellerez cela une faculté! Les facultés diffèrent suivant les natures; mais l&#x27;éducation y est aussi pour beaucoup, André!</p>
 <p>--Je crois, répondit celui-ci, que si je n&#x27;avais pas aidé votre observation ce matin, vous n&#x27;auriez pas vu si clair.</p>
 <p>--André, vous êtes un enfant qui promettez beaucoup; cela ne fait pas un doute. J&#x27;ai bonne opinion de vous, et je n&#x27;ai pas honte de vous emprunter une idée. Il ne faut mépriser personne, André. Les plus malins peuvent quelquefois se tromper. Mais rentrons.... Je gage qu&#x27;aujourd&#x27;hui madame nous donnera quelque bon morceau.»</p>
-<h2>CHAPITRE VII.</h2>
+<h2 class="chapter" id="c7">Chapitre VII.</h2>
 <p>Les angoisses d&#x27;une mère.</p>
 <p>Jamais une créature humaine ne se sentit plus malheureuse et plus abandonnée qu&#x27;Élisa, au moment où elle s&#x27;éloigna de la case de l&#x27;oncle Tom. Les souffrances et les dangers de son mari, le danger de son enfant, tout cela se mêlait dans son âme avec le sentiment confus et douloureux de tous les périls qu&#x27;elle-même allait courir en quittant cette maison, la seule qu&#x27;elle eût jamais connue, en quittant une maîtresse qu&#x27;elle avait toujours aimée et respectée. N&#x27;allait-elle pas quitter aussi tous ces objets familiers qui nous attachent, le lieu où elle avait grandi, les arbres dont l&#x27;ombre avait abrité ses jeux, les bosquets où elle s&#x27;était promenée, le soir des jours heureux, à côté de son jeune époux? Tous ces objets, qu&#x27;elle apercevait à la lueur froide et brillante des étoiles, semblaient prendre une voix pour lui adresser des reproches et lui demander où elle pourrait aller en les quittant.</p>
 <p>Mais, plus puissant que tout le reste, l&#x27;amour maternel la rendait folle de terreur en lui faisant pressentir l&#x27;approche de quelque danger terrible. L&#x27;enfant était assez grand pour marcher à côté d&#x27;elle; dans toute autre circonstance, elle se fût contentée de le conduire par la main: mais alors la seule pensée de ne plus le serrer dans ses bras la faisait tressaillir; et, tout en hâtant sa marche, elle le pressait contre sa poitrine avec une étreinte convulsive.</p>
@@ -657,7 +710,7 @@ h2 + p, .first { text-indent: 0; }
 <p>--Je vais vous faire rire d&#x27;autre sorte,» s&#x27;écria-t-il en brandissant son fouet sur leurs têtes.</p>
 <p>Ils baissèrent le cou, s&#x27;élancèrent au haut de la berge avec des hourras, et se trouvèrent en selle avant qu&#x27;il fût remonté.</p>
 <p>«Bonsoir, m&#x27;sieu, dit Samuel avec beaucoup de gravité; j&#x27;ai grand&#x27;peur que madame ne soit inquiète de Jerry. M. Haley ne voudrait pas nous retenir plus longtemps. Madame ne serait pas contente que nous ayons fait passer la nuit à nos bêtes sur le pont de Lisa. «Et, après avoir donné un facétieux coup de poing dans les côtes d&#x27;André, il partit à toute vitesse, suivi de ce dernier. Peu à peu leurs joyeux éclats s&#x27;éteignirent dans le vent.</p>
-<h2>CHAPITRE VIII.</h2>
+<h2 class="chapter" id="c8">Chapitre VIII.</h2>
 <p>Les chasseurs d&#x27;hommes.</p>
 <p>Élisa avait miraculeusement traversé le fleuve aux dernières lueurs du crépuscule. Les grises vapeurs du soir, s&#x27;élevant lentement des eaux, la dérobèrent bientôt aux yeux. Le courant grossi et les monceaux de glaces flottantes mettaient une infranchissable barrière entre elle et son persécuteur. Haley, fort désappointé, retourna à la petite auberge pour réfléchir sur le parti qu&#x27;il avait à prendre. L&#x27;hôtesse lui ouvrit la porte d&#x27;un petit salon dont le plancher était couvert d&#x27;un tapis déchiré. Quant au tapis de la table, il brillait de taches d&#x27;huile. Tout était mesquin et dépareillé: des chaises avec de hauts dossiers de bois; des figurines de plâtre aux vives enluminures décoraient la cheminée. Un banc également en bois et d&#x27;une longueur désespérante s&#x27;étendait devant l&#x27;âtre. C&#x27;est là que Haley s&#x27;assit pour méditer sur l&#x27;instabilité des espérances et du bonheur des humains.</p>
 <p>«Qu&#x27;avais-je besoin de ce marmot? se demandait-il à lui-même. Me fourrer dans un tel guêpier! Sot que je suis!» Et Haley, pour retrouver un peu de calme, se récita des litanies d&#x27;imprécations contre lui-même. Nous reconnaissons volontiers qu&#x27;elles étaient assez bien méritées; nous demandons seulement la permission de ne pas les rapporter ici.</p>
@@ -811,7 +864,7 @@ h2 + p, .first { text-indent: 0; }
 <p>--Bien! bien! dit Chloé; mais qu&#x27;un de vos principes soit d&#x27;aller vous coucher cette nuit, et de ne pas nous faire tenir debout jusqu&#x27;au matin. Toute cette jeunesse, qui n&#x27;a pas besoin d&#x27;avoir le cerveau fêlé, va aller à la paille.... et vite!</p>
 <p>--Nègres ici présents, dit Samuel en agitant son chapeau de palmier avec une grande bénignité, je vous donne ma bénédiction. Allez vous coucher, et soyez tous bons enfants!»</p>
 <p>Après cette bénédiction pathétique, l&#x27;assemblée se dispersa.</p>
-<h2>CHAPITRE IX.</h2>
+<h2 class="chapter" id="c9">Chapitre IX.</h2>
 <p>Où l&#x27;on voit qu&#x27;un sénateur n&#x27;est qu&#x27;un homme.</p>
 <p>Les lueurs d&#x27;un feu joyeux se reflétaient sur le tapis et les tentures d&#x27;un beau salon, et brillaient sur le ventre resplendissant d&#x27;une théière et de ses tasses. M. Bird, le sénateur, tirait ses bottes et se préparait à mettre à ses pieds une paire de pantoufles neuves, que sa femme venait d&#x27;achever pour lui pendant la session du sénat. Mme Bird, image vivante du bonheur, surveillait l&#x27;arrangement de la table, tout en adressant de temps en temps des admonestations à un certain nombre d&#x27;enfants turbulents, qui se livraient à tout le désordre et à toutes les malices qui font le tourment des mères depuis le déluge.</p>
 <p>«Tom, laissez donc le bouton de la porte; là! voilà qui est bien! Mary, Mary! ne tirez pas la queue du chat.... ce pauvre animal! Jean, il ne faut pas monter sur la table! non! vous dis-je.»</p>
@@ -959,7 +1012,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Il passa ses doigts dans les touffes de cheveux qui couvraient sa tête comme un toit de chaume, et il partit d&#x27;un grand éclat de rire.</p>
 <p>Tombant de fatigue, épuisée, à demi morte, Élisa se traîna jusqu&#x27;à la porte, tenant son enfant endormi dans ses bras. John, toujours brusque, lui approcha le flambeau du visage, et, faisant entendre un grognement plein de compassion émue, il ouvrit la porte d&#x27;une petite chambre à coucher qui donnait sur la vaste cuisine où ils se trouvaient. Il la fit entrer, alluma un autre flambeau qu&#x27;il posa sur la table, puis il lui dit:</p>
 <p>«Maintenant, ma fille, vous n&#x27;avez plus rien à craindre. Arrive qui voudra; je suis prêt à tout, dit-il en montrant deux ou trois carabines suspendues au-dessus du manteau de la cheminée. Ceux qui me connaissent savent bien qu&#x27;il ne serait pas sain de vouloir faire sortir quelqu&#x27;un de chez moi quand je ne veux pas. Et maintenant, mon enfant, dormez aussi tranquillement que si votre mère vous gardait.»</p>
-<h2>Il sortit du cabinet et ferma la porte.</h2>
+<p>Il sortit du cabinet et ferma la porte.</p>
 <p>«Elle est des plus jolies, dit-il au sénateur. Hélas! souvent c&#x27;est leur beauté même qui les force de fuir, quand elles ont des sentiments d&#x27;honnêtes femmes. Allez, je sais ce qui en est!»</p>
 <p>Le sénateur raconta brièvement, en quelques mots, l&#x27;histoire d&#x27;Élisa.</p>
 <p>«Oh!... Hélas!... Quoi! il serait vrai!... Je suis bien aise de savoir cela. Poursuivie! poursuivie pour avoir obéi au cri de la nature! Pauvre femme! Chassée comme un daim! chassée pour avoir fait ce qu&#x27;aucune mère ne pourrait pas ne pas faire! Oh! ces choses-là me feraient blasphémer....»</p>
@@ -973,7 +1026,7 @@ h2 + p, .first { text-indent: 0; }
 <p>«Pour elle! dit-il laconiquement.</p>
 <p>--Bien!» répondit John avec une égale concision.</p>
 <p>Ils se serrèrent la main et se quittèrent.</p>
-<h2>CHAPITRE X.</h2>
+<h2 class="chapter" id="c10">Chapitre X.</h2>
 <p>Livraison de la marchandise.</p>
 <p>Un matin de février, morne et gris, éclairait les fenêtres de l&#x27;oncle Tom: les visages étaient bien tristes dans la case; les visages reflétaient la tristesse des coeurs. La petite table était dressée devant le feu et couverte de la nappe à repasser. Une ou deux chemises grossières, mais propres, étaient étendues sur le dos d&#x27;une chaise, devant la cheminée; une autre était déployée sur la table devant Chloé. Avec un soin minutieux, elle ouvrait et repassait chaque pli, et, de temps en temps, portait la main à son visage pour essuyer les larmes qui coulaient le long de ses joues.</p>
 <p>Tom s&#x27;assit à côté d&#x27;elle, sa Bible ouverte sur ses genoux, sa tête appuyée dans sa main. Ni l&#x27;un ni l&#x27;autre ne parlait. Il était de bonne heure, et les enfants dormaient encore tous ensemble dans leur lit grossier.</p>
@@ -1005,7 +1058,7 @@ h2 + p, .first { text-indent: 0; }
 <p>«Voyons, dit Chloé essuyant ses yeux et prenant le baby dans ses bras, voyons, c&#x27;est fini; mangez quelque chose. Tom, c&#x27;est mon meilleur poulet, et vous, enfants, vous allez en avoir aussi, pauvres chéris! Maman a été bien méchante pour vous!»</p>
 <p>Les enfants n&#x27;eurent pas besoin d&#x27;une seconde invitation. Ils accoururent autour de la table avec le plus louable empressement.... Ils firent bien; car autrement ils couraient grand risque de se voir un peu négligés.</p>
 <p>«Maintenant, dit Chloé, quittant vivement la table, je vais m&#x27;occuper de votre paquet. Peut-être ne vous le laissera-t-il pas emporter; je connais leurs façons. Voyons! dans ce coin la flanelle pour votre rhumatisme. Ménagez-la; vous n&#x27;aurez plus personne pour vous en préparer d&#x27;autre! Voilà vos vieilles chemises; voici les neuves. J&#x27;ai reprisé vos bas hier la nuit, j&#x27;y ai mis des talons.... Ah! qui les raccommodera maintenant?»</p>
-<h2>Ici Chloé appuya sa tête sur la petite malle et sanglota....</h2>
+<p>Ici Chloé appuya sa tête sur la petite malle et sanglota....</p>
 <p>«Et dire que personne au monde ne s&#x27;occupera plus de toi, continua-t-elle, bien portant ou malade!... Ah! je sens que c&#x27;est fini! je ne serai plus jamais bonne maintenant.»</p>
 <p>Les enfants, après avoir dévoré tout ce qui se trouvait sur la table, commencèrent à réfléchir sur ce qui se passait autour d&#x27;eux. Voyant leur mère pleurer et leur père tout triste, ils commencèrent à soupirer et à se frotter les yeux. L&#x27;oncle Tom prit sur ses genoux la petite fille, qui se livrait à son divertissement favori, égratignant le visage et tirant les cheveux du vieux nègre, et de temps en temps se livrant à des accès de gaieté retentissante, qui semblaient être le résultat de ses réflexions intimes.</p>
 <p>«Ris donc, ris, pauvre créature, s&#x27;écria Chloé; ton tour viendra aussi à toi: tu vivras pour voir ton mari vendu et peut-être pour être vendue toi-même! et tes frères que voilà, ils seront vendus aussi, sans doute, dès qu&#x27;ils vaudront un peu d&#x27;argent... N&#x27;est-ce pas ainsi que l&#x27;on nous traite, nous autres nègres?»</p>
@@ -1087,7 +1140,7 @@ h2 + p, .first { text-indent: 0; }
 <p>L&#x27;exhortation était au moins inutile, s&#x27;adressant à un homme qui avait une lourde paire de fers aux pieds. Tom répondit qu&#x27;il n&#x27;avait pas l&#x27;intention de s&#x27;enfuir.</p>
 <p>C&#x27;était l&#x27;habitude de Haley, après ces achats, de procéder par des insinuations de cette nature; il voulait inspirer un peu de confiance et de gaieté à sa marchandise, afin d&#x27;éviter les scènes désagréables.</p>
 <p>Nous prendrons ici congé de l&#x27;oncle Tom, pour suivre les aventures des autres personnages de notre histoire.</p>
-<h2>CHAPITRE XI.</h2>
+<h2 class="chapter" id="c11">Chapitre XI.</h2>
 <p>Vers le soir d&#x27;une brumeuse journée, un voyageur descendit à la porte d&#x27;une petite auberge de campagne, au village de N., dans le Kentucky. Il trouva, dans la salle commune, une compagnie assez mêlée; l&#x27;inclémence du temps contraignait tous ces voyageurs à chercher un abri; c&#x27;était la mise en scène ordinaire de ces sortes de réunions. Des habitants du Kentucky, grands, forts, osseux, vêtus de blouses de chasse, et couvrant de leurs vastes membres une superficie considérable, s&#x27;étendaient tout de leur long, avec la nonchalance particulière à leur race; des carnassières, des poires à poudre, des chiens de chasse et de petits nègres se roulaient pêle-mêle dans les angles. A chaque coin du foyer était assis un homme aux longues jambes, sa chaise à demi renversée, son chapeau sur la tête, et les talons de ses boites souillées de boue sur le manteau de la cheminée. Nous devons avertir nos lecteurs que c&#x27;est la position préférée de ceux qui fréquentent les tavernes de l&#x27;ouest. Cette attitude favorise chez eux l&#x27;exercice de la pensée.</p>
 <p>Comme la plupart de ses compatriotes, l&#x27;hôte, qui se tenait derrière son comptoir, était grand, de mine joviale; ses membres étaient souples; sa tête, couverte de cheveux abondants, était surmontée d&#x27;un très-haut chapeau.</p>
 <p>A vrai dire, chacun, dans l&#x27;appartement, portait cet emblème caractéristique de la souveraineté de l&#x27;homme. Qu&#x27;il fût de paille ou de palmier, de castor épais ou de soie brillante, le chapeau révélait chez tous l&#x27;indépendance républicaine. Le chapeau, c&#x27;est l&#x27;homme. Les uns le portaient crânement sur le côté: c&#x27;étaient les hommes de joyeuse humeur, les sans-gêne et les malins. Les autres l&#x27;enfonçaient jusque sur leur nez: c&#x27;étaient les indomptables et les tapageurs, qui portent ainsi leurs chapeaux, parce que c&#x27;est ainsi qu&#x27;ils veulent le porter. D&#x27;autres, au contraire, l&#x27;avaient renversé en arrière, hommes vifs et alertes qui veulent tout voir. Les autres, vrais sans-soucis, le placent de toutes sortes de façons.</p>
@@ -1210,16 +1263,16 @@ h2 + p, .first { text-indent: 0; }
 <p>--Ah! mon enfant, ne pensez pas ainsi, dit le vieillard avec des sanglots. Dieu existe.... il existe! Autour de lui, il y a des nuages et de l&#x27;obscurité, mais son trône est placé entre la justice et la vérité. Il y a un Dieu, Georges; croyez en lui, confiez-vous en lui, et, j&#x27;en suis sûr, il vous assistera. Chaque chose sera mise à sa place, sinon en cette vie, au moins en l&#x27;autre!»</p>
 <p>La véritable piété, la bienveillance de ce simple vieillard semblaient le revêtir d&#x27;une sorte de dignité et donnaient à ses paroles une autorité souveraine. Georges, qui se promenait à grands pas dans la chambre, s&#x27;arrêta un instant tout pensif; puis il lui dit tranquillement:</p>
 <p>«Je vous remercie de me parler ainsi, mon ami; j&#x27;y penserai.»</p>
-<h2>CHAPITRE XII.</h2>
+<h2 class="chapter" id="c12">Chapitre XII.</h2>
 <p>Un commerce permis par la loi.</p>
 <p>«Dans Rama, une voix fut entendue; il y eut des pleurs, des lamentations et une grande douleur. Rachel pleurait ses enfants et ne voulait pas être consolée.»</p>
-<h2>LA BIBLE.</h2>
+<h3 class="sub">La Bible.</h3>
 <p>.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .</p>
 <p>M. Haley et Tom continuèrent leur route, absorbés l&#x27;un et l&#x27;autre dans leurs réflexions. C&#x27;est une chose curieuse que les réflexions de deux personnes assises l&#x27;une à côté de l&#x27;autre. Elles sont sur le même siége: elles ont les mêmes yeux, les mêmes oreilles, les mêmes mains, enfin les mêmes organes, et ce sont les mêmes objets qui passent devant leurs yeux.... Et cependant quelle profonde différence dans leur pensée!</p>
 <p>Voici, par exemple, M. Haley: eh bien! il songe à la taille de Tom, à sa hauteur, à sa largeur, au prix qu&#x27;il en aura, s&#x27;il parvient à le conserver gras et en bon état jusqu&#x27;au marché; il se demande de combien de têtes il devra composer son troupeau; il suppute la valeur de certains arrangements d&#x27;hommes, de femmes et d&#x27;enfants.... puis il réfléchit à son humanité; il se dit que tant d&#x27;autres mettent les fers aux pieds et aux mains de leurs nègres, tandis que lui veut bien se contenter des fers aux pieds, et laisser à Tom l&#x27;usage de ses mains.... aussi longtemps du moins qu&#x27;il se conduira bien.... puis il soupire en pensant à l&#x27;ingratitude humaine, et il en arrive à se demander si Tom apprécie bien ses bontés.... Il a été tellement trompé par des nègres, qu&#x27;il avait pourtant bien traités.... il s&#x27;étonne de voir combien, malgré cela, il est cependant resté bon!</p>
 <p>Quant à Tom, il réfléchit à quelques mots d&#x27;un gros vieux livre, qui lui trottent par la tête. «Nous n&#x27;avons point ici-bas de demeure permanente, mais nous en cherchons une pour la vie à venir. C&#x27;est pourquoi Dieu lui-même n&#x27;a pas honte d&#x27;être appelé NOTRE Dieu, car il nous a préparé lui-même une cité.» Ces paroles d&#x27;un vieux livre, que consultent surtout les illettrés et les ignorants, ont eu, dans tous les temps, un étrange pouvoir sur l&#x27;esprit du pauvre et du simple; elles soulèvent l&#x27;esprit des profondeurs de l&#x27;abîme, et là où il n&#x27;y avait que le sombre désespoir, elles réveillent, comme l&#x27;appel de la trompette, le courage, l&#x27;énergie et l&#x27;enthousiasme....</p>
 <p>Haley tira plusieurs journaux de sa poche et se mit à lire les annonces avec une attention qui l&#x27;absorbait complétement. Il n&#x27;était pas positivement fort sur la lecture; sa lecture à lui était une sorte de récitatif à demi-voix, comme s&#x27;il eût eu besoin du contrôle de ses oreilles, avant d&#x27;accepter le témoignage de ses yeux. Il voulait s&#x27;entendre. C&#x27;est ainsi qu&#x27;il récita lentement le paragraphe suivant:</p>
-<h2>VENTE PAR AUTORITÉ DE JUSTICE.--NÈGRES.</h2>
+<h3 class="sub">Vente par autorité de justice.--nègres.</h3>
 <p>Conformément à l&#x27;arrêt de la cour, seront vendus le mardi 21 février, devant la porte du palais, en la ville de Washington, dans le Kentucky, les nègres dont les noms suivent:</p>
 <p>Agar, âgée de 60 ans; John, âgé de 30 ans; Ben, âgé de 21 ans; Saül, âgé de 25 ans; Albert, âgé de 14 ans.</p>
 <p>Ils seront vendus au bénéfice et pour le compte des créanciers et héritiers de la succession de Josse Blutchford, esquire.</p>
@@ -1388,7 +1441,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Le marchand, qui était, après tout, aussi humain que la plupart de nos hommes politiques, se préparait à lui offrir toutes les consolations que pouvaient exiger les circonstances.</p>
 <p>«Je sais bien, Lucy, que c&#x27;est toujours dur dans le premier moment; mais une fille intelligente et raisonnable comme vous n&#x27;en fait rien paraître.... Vous savez que c&#x27;est nécessaire.... on ne peut empêcher cela!</p>
 <p>--Oh! monsieur.... ne me dites pas cela.... oh! non!...»</p>
-<h2>Il continua:</h2>
+<p>Il continua:</p>
 <p>«Vous êtes une fille de mérite, Lucy; je veux bien agir avec vous, vous trouver une bonne place, au bas de la rivière.... Vous aurez bientôt un autre mari.... Une aussi jolie femme que vous!</p>
 <p>--Ah! monsieur! si vous vouliez seulement ne pas me parler....» dit la femme.</p>
 <p>Et il y avait dans sa voix une si poignante angoisse, que le marchand comprit bien qu&#x27;il était au-dessus de ses moyens, à lui, de consoler une telle douleur.</p>
@@ -1422,7 +1475,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Croyez-le, au jour du jugement, ces raisons-là seront pour lui et contre vous!</p>
 <p>Après avoir offert ces échantillons du commerce légal, nous devons prier que l&#x27;on ne croie pas que les législateurs américains sont complétement dépourvus d&#x27;humanité.... comme on serait tenté de le penser, en voyant les efforts que l&#x27;on fait chez nous pour protéger et perpétuer ce commerce.</p>
 <p>Qui ne sait que nos grands hommes se surpassent eux-mêmes quand ils déclament contre la traite.... chez les étrangers? Nous avons une armée de Clarkson et de Wilberforce, vraiment fort édifiante à entendre! Faire la traite en Afrique, c&#x27;est horrible...! c&#x27;est à n&#x27;y pas penser! Mais la traite dans le Kentucky!... oh! c&#x27;est une tout autre affaire!</p>
-<h2>CHAPITRE XIII.</h2>
+<h2 class="chapter" id="c13">Chapitre XIII.</h2>
 <p>Chez les quakers.</p>
 <p>Une scène heureuse et paisible se déroule maintenant devant nos yeux. Nous pénétrons dans une cuisine vaste et spacieuse; les murs sont rehaussés de riches couleurs; pas un atome de poussière sur les briques jaunes de l&#x27;aire, frottées et polies; des piles de vaisselle d&#x27;étain brillant excitent l&#x27;appétit, en vous faisant songer à une foule de bonnes choses. Le noir fourneau reluit; les chaises de bois, vieilles et massives, reluisent aussi. On aperçoit une petite chaise à bascule et qui se referme; le coussin est rapiécé. Tout auprès il y en a une plus grande, une chaise antique et maternelle, dont les larges bras ouverts semblent vous convier doucement à goûter l&#x27;hospitalité de ses coussins de plumes. C&#x27;est là un véritable siége attrayant, confortable, et qui, pour les honnêtes et chères joies du foyer, vaut vraiment bien une douzaine de vos chaises de velours ou de brocatelle des salons à la mode.</p>
 <p>Dans cette chaise, où elle se balance doucement, les yeux attachés sur son ouvrage, se trouve notre ancienne amie, la fugitive Élisa. Oui, elle est là, plus pâle et plus maigre que dans le Kentucky; on devine sous ses longues paupières, on lit dans les plis de sa bouche une douleur à la fois calme et profonde. Il était facile de voir combien ce jeune coeur était devenu ferme et vaillant sous l&#x27;austère discipline du malheur. Elle relevait de temps en temps les yeux pour suivre les ébats du petit Henri, brillant et léger comme un papillon des tropiques. On découvrait chez elle une puissance de volonté, une inébranlable résolution inconnue à ses jeunes et heureuses années.</p>
@@ -1531,7 +1584,7 @@ h2 + p, .first { text-indent: 0; }
 <p>--Ne crains rien, ami Georges; ce n&#x27;est pas pour toi, c&#x27;est pour Dieu et l&#x27;humanité, ce que nous en faisons.... Reste ici tranquillement tout le jour. Cette nuit, à dix heures, Phinéas Fletcher vous conduira tous à la prochaine station. Les persécuteurs se hâtent après toi, nous ne voulons pas te retenir.</p>
 <p>--Alors, pourquoi attendre? dit Georges.</p>
 <p>--Tu es ici en sûreté tout le jour. Dans notre colonie, tous sont fidèles et tous veillent. D&#x27;ailleurs il est plus sûr pour toi de voyager pendant la nuit.»</p>
-<h2>CHAPITRE XIV.</h2>
+<h2 class="chapter" id="c14">Chapitre XIV.</h2>
 <p>Évangéline.</p>
 <p>Une jeune étoile qui brillait sur la vie, trop douce image pour un tel miroir! Un être charmant à peine formé; un bouton de rose qui n&#x27;a pas encore déplié ses feuilles.</p>
 <p>Le Mississipi! Quelle baguette magique l&#x27;a ainsi changé, depuis que Chateaubriand, dans sa prose poétique, le décrivait comme le fleuve des solitudes vierges, des déserts immenses, roulant parmi ces merveilles de la nature, que l&#x27;on n&#x27;avait même pas rêvées?</p>
@@ -1628,7 +1681,7 @@ h2 + p, .first { text-indent: 0; }
 <p>--Oh! je vous en réponds, maître!</p>
 <p>--Et vous serez heureux, dit Évangéline, papa est très-bon pour tout le monde; seulement il aime un peu à se moquer des gens.</p>
 <p>--Papa vous remercie bien de cet éloge,» dit Saint-Clare en riant; et, pirouettant sur ses talons, il se disposa à partir.</p>
-<h2>CHAPITRE XV.</h2>
+<h2 class="chapter" id="c15">Chapitre XV.</h2>
 <p>Le nouveau maître de Tom.</p>
 <p>Puisque notre héros mêle la trame de son humble vie à la destinée des grands, il faut bien que nous nous occupions aussi des grands.</p>
 <p>Augustin Saint-Clare était fils d&#x27;un riche planteur de la Louisiane; sa famille était originaire du Canada. De deux frères, assez semblables d&#x27;humeur et de tempérament, l&#x27;un s&#x27;était établi dans une ferme opulente du Vermont, l&#x27;autre était devenu un riche planteur de la Louisiane.</p>
@@ -1638,7 +1691,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Les mariés passèrent la lune de miel au milieu d&#x27;un cercle brillant d&#x27;amis, dans leur splendide villa, au bord du lac Pontchartrain. Un jour on apporta au jeune mari une lettre de cette écriture qu&#x27;il se rappelait si bien.</p>
 <p>Elle lui fut remise en plein salon. La causerie était gaie, vive, étincelante de mots.</p>
 <p>En reconnaissant l&#x27;écriture, il devint pâle comme la mort; il se contint cependant et poussa jusqu&#x27;au bout un assaut d&#x27;esprit et d&#x27;enjouement où il avait une femme pour adversaire. Il sortit bientôt. Une fois seul dans sa chambre, il ouvrit cette lettre.... désormais inutile, plus qu&#x27;inutile, hélas! C&#x27;était une lettre d&#x27;elle; elle racontait longuement les persécutions de la famille de son tuteur; on voulait lui faire épouser le fils de cet homme. On avait d&#x27;abord supprimé les lettres d&#x27;Augustin.... elle avait longtemps continué d&#x27;écrire.... puis étaient venus le chagrin et le doute. Au milieu de ces anxiétés poignantes elle était tombée malade. A la fin elle avait découvert le complot.... La lettre racontait tout cela, elle finissait par des expressions de reconnaissance et d&#x27;espoir, et des protestations d&#x27;une éternelle affection, plus cruelles que la mort même pour l&#x27;infortuné jeune homme.</p>
-<h2>Il lui répondit immédiatement:</h2>
+<p>Il lui répondit immédiatement:</p>
 <p>«J&#x27;ai reçu votre lettre, mais trop tard. J&#x27;ai cru ce qu&#x27;on m&#x27;a dit, j&#x27;ai désespéré. Je suis marié, tout est fini: l&#x27;oubli, voilà tout ce qui nous reste, à vous et à moi!»</p>
 <p>Ainsi se termina le roman et l&#x27;idéal dans la vie d&#x27;Augustin Saint-Clare. Il lui restait le positif; le positif, c&#x27;est-à-dire la vase noire, nauséabonde et fétide, que le reflux nous laisse, tandis que là-bas étincelle la vague bleue, emportant ses flottilles de barques brillantes et ses voiles étendues, blanches ailes des vaisseaux, et les avirons aux cadences harmonieuses, et tout le gai murmure de ses eaux.... Et puis tout cela disparaît, s&#x27;évanouit, tombe dans l&#x27;abîme, et il nous reste à nous rêveurs.... la vase, le positif!</p>
 <p>Au fait, dans un roman, on brise le coeur des gens, on les tue même, et tout est dit: la fable est intéressante, que vous faut-il de plus? Mais, hélas! dans la vie réelle, nous ne mourons pas dès que nous avons vu mourir pour nous ce qui nous faisait la vie brillante et radieuse! Il nous reste l&#x27;ennui des nécessités. On boit, on mange, on s&#x27;habille, on se promène, on visite, on parle, on lit, on vend, on achète! C&#x27;est ce qu&#x27;on appelle vulgairement la vie. On passe à travers cela.... et cela restait à Augustin. Si du moins sa femme eût été vraiment une femme, elle aurait pu, une femme peut toujours, essayer de renouer cette trame d&#x27;une existence brisée, et mêler encore des fleurs au tissu reformé;... mais Marie Saint-Clare ne pouvait même pas voir que la trame était rompue. Nous l&#x27;avons déjà dit, Mme Saint-Clare, c&#x27;était une belle figure, deux yeux magnifiques, et cent mille dollars. Rien de cela ne guérit une âme malade.</p>
@@ -1654,7 +1707,7 @@ h2 + p, .first { text-indent: 0; }
 <p>C&#x27;est dans une telle ferme, une telle maison, une telle famille, que miss Ophélia avait passé quelque quarante-cinq ans d&#x27;une heureuse existence, quand son cousin vint la chercher pour visiter ses propriétés du sud. Ophélia était l&#x27;aînée d&#x27;une nombreuse famille; pour le père et la mère, elle était toujours rangée parmi les enfants, et la proposition d&#x27;aller à la Nouvelle-Orléans fut quelque chose de bien grave aux yeux de la famille. Le père, à la tête grise, prit l&#x27;atlas de Morse dans la bibliothèque, mesura exactement la longitude et la latitude, puis il lut le Voyage de Flint dans le sud et dans l&#x27;ouest, pour se familiariser avec le pays.</p>
 <p>La bonne mère, tout inquiète, demanda si ce n&#x27;était point une bien méchante ville, et dit qu&#x27;elle n&#x27;hésitait pas à la comparer aux îles Sandwich, ou à tout autre pays occupé par des païens.</p>
 <p>On sut chez le pasteur, chez le médecin et chez miss Rabody, la marchande de modes, qu&#x27;Ophélia Saint-Clare parlait d&#x27;aller à Orléans avec son cousin. Ce sujet important fut bientôt la matière de toutes les conversations du village. Le pasteur, qui penchait fortement du côté des abolitionnistes, se demandait si un pareil voyage n&#x27;était point un encouragement donné aux possesseurs d&#x27;esclaves. Le docteur, au contraire, qui était tout à fait partisan de la colonisation, voulait que miss Ophélia fît le voyage, pour montrer aux habitants de la Nouvelle-Orléans que leurs frères du nord, après tout, n&#x27;étaient pas si mal disposés contre eux.</p>
-<h2>Il pensait, lui, qu&#x27;il fallait encourager le sud!</h2>
+<p>Il pensait, lui, qu&#x27;il fallait encourager le sud!</p>
 <p>Quand sa résolution fut annoncée dans le public, miss Ophélia fut, pendant quinze jours, invitée chaque soir à prendre le thé chez les voisins et amis. Ses plans et projets furent examinés et discutés.</p>
 <p>Miss Moseley, chargée de compléter la garde-robe de voyage, en acquit aux yeux de tous une notable importance. On admit généralement que l&#x27;esquire Saint-Clare avait compté cinquante dollars à miss Ophélia, en lui disant d&#x27;acheter les plus beaux vêtements.... On ajoutait que deux robes de soie et un chapeau lui avaient été expédiés de Boston.... Quant à la question de convenance, elle divisait les esprits: les uns soutenaient qu&#x27;on pouvait bien se permettre une pareille dépense une fois dans sa vie; les autres prétendaient au contraire qu&#x27;il eût mieux valu envoyer l&#x27;argent aux missionnaires; tout le monde reconnaissait du reste que l&#x27;on n&#x27;avait jamais vu une plus riche ombrelle, et que, quelque opinion que l&#x27;on pût avoir de sa maîtresse, il fallait bien avouer que la robe de soie se tenait debout toute seule. Le mouchoir de poche excita d&#x27;incroyables rumeurs: on le disait garni de dentelles et brodé aux coins. Cette dernière assertion ne fut jamais vérifiée: c&#x27;est un point encore douteux aujourd&#x27;hui.</p>
 <p>Miss Ophélia, telle que nous la voyons dans sa belle robe de voyage en toile brune, est grande, carrée, anguleuse. Sa face est maigre: toutes les lignes en sont aiguës. Elles serre les lèvres comme les personnes qui ont sur toutes choses des résolutions arrêtées. Ses yeux noirs et perçants étaient inquisiteurs, rusés, et furetaient partout, comme si elle eût eu sans cesse quelque chose à remettre en ordre.</p>
@@ -1725,7 +1778,7 @@ h2 + p, .first { text-indent: 0; }
 <p>«Ah! c&#x27;est vous, Adolphe, dit le maître en lui tendant la main. Comment cela va-t-il, mon garçon?»</p>
 <p>Adolphe récita avec beaucoup de volubilité un discours improvisé.... depuis quinze jours!</p>
 <p>«Très-bien, très-bien, dit Saint-Clare avec son air insouciant et ironique. C&#x27;est bien dit, Adolphe; mais voulez-vous veiller aux bagages? Je reviens à nos gens dans une minute.»</p>
-<h2>Il conduisit miss Ophélia dans un grand salon qui ouvrait sur le vestibule.</h2>
+<p>Il conduisit miss Ophélia dans un grand salon qui ouvrait sur le vestibule.</p>
 <p>Cependant Éva, s&#x27;élançant à travers le portique et le salon, était entrée dans un petit boudoir qui s&#x27;ouvrait également sous le vestibule.</p>
 <p>Une grande femme pâle, aux yeux noirs, se souleva à demi sur son lit de repos.</p>
 <p>«Maman! dit Éva avec une sorte d&#x27;ivresse en se jetant à son cou et l&#x27;embrassant mille fois.</p>
@@ -1781,7 +1834,7 @@ h2 + p, .first { text-indent: 0; }
 <p>La mulâtresse qu&#x27;Éva avait si joyeusement embrassée entra, coiffée, par Éva elle-même, d&#x27;un turban rouge et jaune que l&#x27;enfant venait de lui donner.</p>
 <p>«Mammy, dit Saint-Clare, je confie madame à vos soins. Elle est fatiguée et a besoin de repos. Conduisez-la à sa chambre, et que tout soit confortable.»</p>
 <p>Mammy sortit, précédant miss Ophélia.</p>
-<h2>CHAPITRE XVI.</h2>
+<h2 class="chapter" id="c16">Chapitre XVI.</h2>
 <p>La maîtresse de Tom et ses opinions.</p>
 <p>«Maintenant, Marie, dit Saint-Clare, voici l&#x27;aurore de vos jours dorés. Je vous ai amené notre cousine de la Nouvelle-Angleterre, la femme pratique, qui va décharger vos épaules du poids des soucis, et vous donner le temps de redevenir jeune et belle. L&#x27;ennui de donner les clefs ne vous tourmentera plus.»</p>
 <p>Cette remarque était faite à la table du déjeuner, quelques instants après l&#x27;arrivée de miss Ophélia.</p>
@@ -1979,7 +2032,7 @@ h2 + p, .first { text-indent: 0; }
 <p>--Alors il ne serait pas trop poli.... car il disait au bon Dieu son opinion de moi assez librement.... Il trouvait que j&#x27;avais beaucoup de progrès à faire, et c&#x27;est pour ma conversion qu&#x27;il priait.</p>
 <p>--Eh bien, songez-y! fit miss Ophélia.</p>
 <p>--C&#x27;est aussi votre avis, je m&#x27;en doute bien, dit Saint-Clare.... Eh! nous verrons.... n&#x27;est-ce pas, Éva?»</p>
-<h2>CHAPITRE XVII.</h2>
+<h2 class="chapter" id="c17">Chapitre XVII.</h2>
 <p>Comment se défend un homme libre.</p>
 <p>Nous retournons maintenant chez les quakers. Le soir approche; il y a un peu d&#x27;agitation au logis. Rachel Halliday va d&#x27;une place à l&#x27;autre; elle met ses provisions à contribution pour fournir un petit viatique aux amis qui vont partir. Les ombres du soir s&#x27;allongent vers l&#x27;Orient; à l&#x27;horizon le soleil rougissant s&#x27;arrête tout pensif et verse ses rayons calmes et dorés dans la petite chambre où sont assis l&#x27;un près de l&#x27;autre Georges et Élisa. Georges a l&#x27;enfant sur ses genoux, et dans sa main la main de sa femme. Ils paraissent sérieux et tristes, il y a sur leurs joues des traces de larmes.</p>
 <p>«Oui, Élisa, disait Georges, je reconnais que tout ce que vous dites est vrai: vous valez bien des fois mieux que moi! J&#x27;essayerai de faire comme vous voulez..... J&#x27;essayerai d&#x27;avoir des sentiments dignes d&#x27;un homme libre, dignes d&#x27;un chrétien! Le Dieu tout-puissant sait que j&#x27;ai voulu bien faire.... que j&#x27;ai péniblement essayé de bien faire, quand tout était contre moi!... et maintenant, je vais oublier le passé.... je vais rejeter loin de moi tout sentiment amer et dur.... je vais lire ma Bible et apprendre à être bon.</p>
@@ -2068,12 +2121,12 @@ h2 + p, .first { text-indent: 0; }
 <p>«Adieu, mes amis! dit Siméon.</p>
 <p>--Dieu vous bénisse!» répondit-on.</p>
 <p>Et la voiture partit en faisant craquer le sol gelé sous les roues.</p>
-<h2>Il n&#x27;y avait pas moyen de causer.</h2>
+<p>Il n&#x27;y avait pas moyen de causer.</p>
 <p>On roula à travers les chemins du bois à demi défriché; on franchit de larges plaines, on gravit des collines, on descendit dans les vallées, et les heures passaient.</p>
 <p>L&#x27;enfant s&#x27;endormit bientôt et tomba lourdement sur le sein de sa mère. La pauvre vieille négresse oublia ses craintes, et, vers le point du jour, Élisa elle-même ferma les yeux. Phinéas était le plus gai de la compagnie; il sifflait, pour abréger la route, certains airs un peu profanes... pour un quaker.</p>
 <p>Vers trois heures, l&#x27;oreille de Georges saisit le bruit vif et rapide d&#x27;un sabot de cheval; il donna un coup de coude à Phinéas, qui arrêta pour écouter.</p>
 <p>«Ce doit être Michaël; je reconnais le galop de son bidet.»</p>
-<h2>Il se leva et regarda avec une certaine inquiétude.</h2>
+<p>Il se leva et regarda avec une certaine inquiétude.</p>
 <p>Ils aperçurent, au sommet d&#x27;une colline assez éloignée, un homme qui venait vers eux à fond de train.</p>
 <p>«C&#x27;est lui!» dit Phinéas.</p>
 <p>Georges et Jim sautèrent à bas avant de savoir trop ce qu&#x27;ils allaient faire; ils se tournèrent silencieusement du côté où ils voyaient venir le messager attendu. Il avançait toujours; une hauteur le déroba un instant, mais ils entendaient toujours l&#x27;allure précipitée: enfin on l&#x27;aperçut au sommet d&#x27;une éminence, et à portée de la voix.</p>
@@ -2175,7 +2228,7 @@ h2 + p, .first { text-indent: 0; }
 <p>--Que ferons-nous de ce pauvre diable? dit Georges.</p>
 <p>--Nous allons le conduire chez Amariah! Il y a là la grand&#x27;maman Stéphens Dorcas, comme ils l&#x27;appellent; c&#x27;est la meilleure garde-malade.... En quinze jours elle le rétablira.»</p>
 <p>Une heure après, nos voyageurs arrivaient dans une jolie ferme, où les attendait un excellent déjeûner. Tom fut déposé avec soin sur un lit plus propre et plus doux que ceux dont il se servait d&#x27;habitude. Sa blessure fut pansée et bandée: comme un enfant fatigué, il ouvrait et fermait languissamment ses yeux, et les reposait sur les rideaux blancs de ses fenêtres pendant que les joyeux amis glissaient devant lui dans sa chambre de malade.</p>
-<h2>CHAPITRE XVIII.</h2>
+<h2 class="chapter" id="c18">Chapitre XVIII.</h2>
 <p>Expériences et opinions de miss Ophélia.</p>
 <p>Notre ami Tom, dans ses rêveries naïves, comparait sa position d&#x27;esclave heureux à celle de Joseph en Égypte. En effet, avec le temps, et à mesure qu&#x27;il se révélait de plus en plus à son maître, le parallèle devenait juste de plus en plus.</p>
 <p>Saint-Clare était indolent de sa nature et n&#x27;avait aucun souci de l&#x27;argent. Jusque-là le marché et l&#x27;approvisionnement avaient été confiés aux soins d&#x27;Adolphe, aussi insouciant lui-même et aussi extravagant que son maître. Avec eux la dissipation et le gaspillage allaient leur train. Tom, en entrant chez Saint-Clare, accoutumé depuis des années à regarder la fortune de ses maîtres comme une chose livrée à sa garde, Tom voyait avec un malaise qu&#x27;il ne pouvait dissimuler toutes les dépenses de la maison, et, avec cette habileté dans l&#x27;emploi des insinuations détournées, que possèdent les gens de sa classe, il faisait parfois d&#x27;humbles remontrances.</p>
@@ -2359,7 +2412,7 @@ h2 + p, .first { text-indent: 0; }
 <p>--C&#x27;est vrai, miss Éva! mais je vais préparer vos chevaux.</p>
 <p>--Mais, dites-moi d&#x27;abord ce que vous avez, Tom. Je vous ai vu parler à cette pauvre vieille Prue.»</p>
 <p>Tom, avec simplicité, mais avec émotion, raconta à la petite Évangéline toute l&#x27;histoire de la pauvre femme. Évangéline ne se récria pas, ne pleura pas, comme eussent fait d&#x27;autres enfants; mais ses joues devinrent pâles, un nuage sombre passa sur ses yeux. Elle mit ses deux mains sur sa poitrine et poussa un profond soupir.</p>
-<h2>CHAPITRE XIX.</h2>
+<h2 class="chapter" id="c19">Chapitre XIX.</h2>
 <p>Où l&#x27;on parle encore des expériences et des opinions de miss Ophélia.</p>
 <p>«Tom, il est inutile de mettre les chevaux.... je ne veux pas sortir, dit Évangéline.</p>
 <p>--Pas sortir, miss Éva?</p>
@@ -2463,7 +2516,7 @@ h2 + p, .first { text-indent: 0; }
 <p>«Quand de pauvres diables, indolents et étourdis, mettaient des pierres au fond de leurs balles de coton pour les rendre plus pesantes, ou remplissaient leurs sacs de poussière avec du coton par-dessus, il me semblait si bien qu&#x27;à leur place j&#x27;en aurais fait tout autant, que je ne pouvais pas consentir à leur laisser donner le fouet.... Il n&#x27;y eut bientôt plus de discipline dans la plantation. J&#x27;en vins avec Alfred au point où j&#x27;en étais, quelques années auparavant, avec mon honoré père.... Il me dit que j&#x27;avais une sentimentalité de femme, et que je ne ferais jamais d&#x27;affaires au moyen des esclaves. Il me conseilla de prendre la maison de banque et l&#x27;habitation de famille à Orléans.... et de faire des vers.... Il garderait, lui, la direction de la plantation. Nous nous séparâmes donc, et je vins ici.</p>
 <p>--Pourquoi alors n&#x27;avez-vous pas affranchi vos esclaves?</p>
 <p>--Je n&#x27;en ai pas eu le courage. Les employer comme des instruments pour gagner de l&#x27;argent, je ne pouvais pas! Les garder pour dépenser mon argent avec eux, cela me parut moins mal.... Quelques-uns étaient des esclaves d&#x27;intérieur; j&#x27;y étais fort attaché.... Les plus jeunes étaient les enfants des plus vieux..., ils étaient tous enchantés de leur sort avec moi....»</p>
-<h2>Ici Saint-Clare se tut un moment et se mit à marcher tout pensif dans le salon.</h2>
+<p>Ici Saint-Clare se tut un moment et se mit à marcher tout pensif dans le salon.</p>
 <p>«Il y eut, reprit-il bientôt, il y eut un temps dans ma vie où j&#x27;eus des projets et des espérances.... Je voulais alors faire quelque chose et non pas me laisser aller au flot et au courant; j&#x27;eus comme le vague instinct de devenir un émancipateur, de laver ma patrie de cette tache et de cette honte.... Tous les jeunes gens, j&#x27;imagine, ont de pareils accès de fièvre, au moins une fois.</p>
 <p>--Mais alors.... pourquoi ne l&#x27;avez-vous pas fait? pourquoi, après avoir mis la main à la charrue, avoir ensuite regardé en arrière?</p>
 <p>--Les choses ne tournèrent pas comme je m&#x27;y attendais, et j&#x27;eus, comme Salomon, le désespoir de la vie! Chez moi, comme chez lui, c&#x27;était peut-être la condition nécessaire de la sagesse.... Mais enfin, pour une cause ou pour une autre, au lieu de prendre une place dans ce monde et de le régénérer, je devins un morceau de bois flottant, emporté et rapporté par chaque marée.... Alfred m&#x27;attaque chaque fois que nous nous rencontrons, et il a facilement raison de moi. Sa vie est le résultat logique de ses principes, tandis qu&#x27;avec moi les principes sont d&#x27;un côté et la vie de l&#x27;autre.</p>
@@ -2519,7 +2572,7 @@ h2 + p, .first { text-indent: 0; }
 <p>L&#x27;élite de la domesticité, Adolphe, Jane et Rosa, assuraient que ce n&#x27;était point une dame, les dames ne s&#x27;occupant pas ainsi de tout comme elle; elle n&#x27;avait pas d&#x27;air[17]; ils s&#x27;étonnaient qu&#x27;elle pût être apparentée aux Saint-Clare.</p>
 <p>[17] Le mot français se trouve dans le texte américain.</p>
 <p>M. Saint-Clare, de son côté, déclarait qu&#x27;il était fatigant de voir Ophélia aussi occupée. L&#x27;activité d&#x27;Ophélia était vraiment assez grande pour donner quelque prétexte à la plainte. Elle cousait et rapiéçait depuis l&#x27;aube jusqu&#x27;à la nuit, comme si elle eût été sous la tyrannie de quelques pressantes nécessités.... Le soir venu, elle repliait l&#x27;ouvrage.... mais pour reprendre immédiatement le tricot.... et les aiguilles d&#x27;aller, d&#x27;aller, d&#x27;aller! Oui, c&#x27;était vraiment une fatigue de la voir.</p>
-<h2>CHAPITRE XX.</h2>
+<h2 class="chapter" id="c20">Chapitre XX.</h2>
 <p>Topsy.</p>
 <p>Un matin, pendant que miss Ophélia vaquait aux soins du ménage, elle entendit la voix de Saint-Clare qui l&#x27;appelait du bas de l&#x27;escalier.</p>
 <p>«Descendez, cousine, j&#x27;ai quelque chose à vous montrer.</p>
@@ -2713,7 +2766,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Ainsi se poursuivit, pendant un an ou deux, l&#x27;éducation de Topsy. Miss Ophélia s&#x27;habitua de jour en jour à elle comme on s&#x27;habitue aux maladies chroniques, à la névralgie et à la migraine.</p>
 <p>Saint-Clare s&#x27;en amusait comme on s&#x27;amuse d&#x27;un perroquet ou d&#x27;un chien d&#x27;arrêt. Quand les fautes de Topsy lui fermaient tout autre asile, elle venait se réfugier derrière sa chaise, et Saint-Clare trouvait toujours le moyen de faire sa paix; elle trouvait, elle, le moyen de lui soutirer quelque monnaie pour acheter des noix ou du sucre candi qu&#x27;elle distribuait avec une inépuisable générosité aux autres enfants de la maison: car, pour être juste, nous devons dire que Topsy était libérale, et qu&#x27;elle avait le coeur très-haut.... Elle ne faisait de mal qu&#x27;à elle.</p>
 <p>Et maintenant que la voilà introduite dans notre corps de ballet, elle y figurera, à son tour, avec nos autres personnages.</p>
-<h2>CHAPITRE XXI.</h2>
+<h2 class="chapter" id="c21">Chapitre XXI.</h2>
 <p>Le Kentucky.</p>
 <p>Peut-être nos lecteurs voudront-ils bien jeter un coup d&#x27;oeil en arrière, revenir vers la ferme du Kentucky, à la case du père Tom, et voir un peu ce qui se passe chez ceux que nous avons depuis si longtemps négligés.</p>
 <p>C&#x27;est le soir, le soir d&#x27;un jour d&#x27;été.... les portes et les fenêtres du grand salon sont ouvertes.... on attend la brise qui rafraîchit: on la désire, on l&#x27;appelle. M. Shelby est assis dans une vaste pièce qui communique avec le salon, et qui s&#x27;étend sur toute la façade de la maison.... il est à demi renversé sur une chaise, les pieds étendus sur une autre; il fume le cigare de l&#x27;après-dînée. Mme Shelby est assise à la porte de l&#x27;appartement, elle travaille à quelque belle couture. On voit qu&#x27;elle a quelque chose sur l&#x27;esprit et qu&#x27;elle cherche l&#x27;occasion et le moment favorable pour le dire.</p>
@@ -2781,7 +2834,7 @@ h2 + p, .first { text-indent: 0; }
 <p>--Demain matin, avec Sam. Et maintenant, monsieur Georges, vous allez vous asseoir là et écrire à mon pauvre homme.... et lui dire tout.... Vous voulez bien?</p>
 <p>--Certainement! dit Georges. Le père Tom sera joliment content de recevoir de nos nouvelles.... Je vais chercher de l&#x27;encre et du papier.... Je vais lui parler des nouveaux poulains et de tout!</p>
 <p>--Oui! oui! monsieur Georges, allez.... Je vais vous avoir un morceau de poulet ou quelque autre chose.... Vous ne souperez plus bien des fois avec votre pauvre mère Chloé!»</p>
-<h2>CHAPITRE XXII.</h2>
+<h2 class="chapter" id="c22">Chapitre XXII.</h2>
 <p>L&#x27;arbre se flétrit.--La fleur se fane.</p>
 <p>La vie passe jour après jour; ainsi s&#x27;écoulèrent deux années de l&#x27;existence de notre ami Tom. Il était séparé de tout ce que son coeur aimait; il soupirait après tout ce qu&#x27;il avait laissé derrière lui, et cependant nous ne pouvons pas dire qu&#x27;il fût malheureux.... La harpe des sentiments humains est ainsi tendue, que si un choc n&#x27;en brise pas à la fois toutes les cordes, il leur reste toujours quelques harmonies. Si nous jetons les yeux en arrière, vers les époques de nos épreuves et de nos malheurs, nous voyons que chaque heure, en passant, nous apporta ses douceurs et ses allégements, et que, si nous n&#x27;avons pas été complétement heureux, nous n&#x27;avons pas été non plus complétement malheureux....</p>
 <p>Tom avait appris à se contenter de son sort, quel qu&#x27;il pût être. C&#x27;est la Bible qui lui avait enseigné cette doctrine; elle lui semblait raisonnable et juste. Elle était en parfait accord avec la tendance de son âme pensive et réfléchie.</p>
@@ -2860,7 +2913,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Mme Saint-Clare tenait toujours un mal de tête en réserve pour le cas où la conversation n&#x27;était pas de son goût.</p>
 <p>Éva sortit.</p>
 <p>A partir de ce moment, elle donna très-assidûment des leçons de lecture à Mammy.</p>
-<h2>CHAPITRE XXIII.</h2>
+<h2 class="chapter" id="c23">Chapitre XXIII.</h2>
 <p>Henrique.</p>
 <p>Ce fut vers cette époque de notre histoire qu&#x27;Alfred, le frère de Saint-Clare, vint avec son fils, jeune garçon de douze ans, passer un jour ou deux dans la villa du lac Pontchartrain.</p>
 <p>On ne pouvait rien voir de plus étrange et de plus beau que ces deux frères jumeaux l&#x27;un près de l&#x27;autre. La nature, au lieu de les faire ressemblants, avait comme pris à tâche de n&#x27;établir entre eux que des différences.</p>
@@ -2980,7 +3033,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Henrique prononça ces mots avec une vivacité qui fit monter le sang à son beau visage. Éva reçut sa promesse avec une simplicité parfaite et sans aucune émotion.</p>
 <p>«Je suis bien aise, mon cher Henrique, répondit-elle, que vous pensiez ainsi; vous ne l&#x27;oublierez pas, j&#x27;espère.»</p>
 <p>La cloche du dîner mit fin à l&#x27;entretien.</p>
-<h2>CHAPITRE XXIV.</h2>
+<h2 class="chapter" id="c24">Chapitre XXIV.</h2>
 <p>Sinistres présages.</p>
 <p>Deux jours après cette petite scène, Alfred et Augustin se séparaient. Éva, que la compagnie de son jeune cousin avait un peu excitée, s&#x27;était livrée à des exercices au-dessus de ses forces; elle commença à décliner rapidement. Saint-Clare songea donc à consulter. Il avait toujours reculé. Appeler un médecin, n&#x27;était-ce pas reconnaître la triste vérité? Mais Éva ayant été assez mal pour garder deux jours la chambre, le médecin fut appelé.</p>
 <p>Marie Saint-Clare n&#x27;avait pas remarqué ce déclin rapide de la force et de la santé de sa fille. Elle était alors absorbée par l&#x27;étude de deux ou trois maladies nouvelles, dont elle-même se croyait atteinte, mais elle ne croyait pas que personne pût souffrir autant qu&#x27;elle: c&#x27;était son premier article de foi. Elle repoussait avec une sorte d&#x27;indignation l&#x27;idée que quelqu&#x27;un pût être malade autour d&#x27;elle. Elle était toujours certaine que, pour les autres, c&#x27;était paresse ou manque d&#x27;énergie. «S&#x27;ils avaient eu, pensait-elle, tous les maux qui l&#x27;accablaient, ils auraient bientôt vu la différence!»</p>
@@ -3049,7 +3102,7 @@ h2 + p, .first { text-indent: 0; }
 <p>«Oui, je vous suivrai, dit Saint-Clare.... je ne vous oublierai pas....»</p>
 <p>Cependant le soir versait autour d&#x27;eux une ombre plus solennelle. Saint-Clare s&#x27;assit. Il ne parlait plus, mais il serrait contre son coeur cette forme frêle et charmante. Il ne voyait plus le regard profond, mais la voix venait encore à lui, pareille à la voix d&#x27;un esprit; et alors, comme une sorte de vision du jugement dernier, il lui sembla revoir tout le passé de sa vie, qui se levait devant ses yeux. Il entendait les prières et les cantiques de sa mère; il sentait de nouveau ses jeunes désirs et ses aspirations vers le bien; et puis, entre ces moments bénis et l&#x27;heure présente, il y avait les années sceptiques et mondaines, ce que l&#x27;on appelle la vie comme il faut! Ah! nous pensons beaucoup, beaucoup dans un tel moment.... Les réflexions et les sentiments se pressaient dans l&#x27;âme de Saint-Clare, mais il ne trouvait pas de paroles.</p>
 <p>La nuit était venue.... Il porta sa fille dans sa chambre, et, quand elle fut prête pour la nuit, il renvoya les femmes, et la prenant encore une fois dans ses bras, il la berça jusqu&#x27;à ce qu&#x27;elle se fût doucement endormie.</p>
-<h2>CHAPITRE XXV.</h2>
+<h2 class="chapter" id="c25">Chapitre XXV.</h2>
 <p>La petite Évangéliste.</p>
 <p>C&#x27;était une après-midi de dimanche. Saint-Clare était étendu sur une chaise longue. Il fumait sous la véranda. Marie était couchée sur un sofa, contre la fenêtre du salon qui s&#x27;ouvrait sur la galerie. Elle était protégée contre les moustiques par un voile de gaze. Elle tenait, d&#x27;une main languissante, un livre de prières élégamment relié; elle tenait ce livre parce que c&#x27;était dimanche, et elle s&#x27;imaginait qu&#x27;elle l&#x27;avait lu, bien qu&#x27;en réalité elle se fût contentée de faire quelques petits sommes, le livre à la main.</p>
 <p>Miss Ophélia qui, après bien des recherches, avait découvert, à quelque distance, une réunion méthodiste, y était allée, conduite par Tom et accompagnée d&#x27;Éva.</p>
@@ -3111,7 +3164,7 @@ h2 + p, .first { text-indent: 0; }
 <p>--Voyez Éva!</p>
 <p>--Oh! Éva! elle est si aimante!.... Après tout, elle fait comme le Christ.... Ah! je voudrais être comme elle: elle me fait ma leçon!</p>
 <p>--Ce ne serait pas la première fois qu&#x27;un petit enfant aurait instruit un vieil écolier,» répondit Saint-Clare.</p>
-<h2>CHAPITRE XXVI.</h2>
+<h2 class="chapter" id="c26">Chapitre XXVI.</h2>
 <p>La mort.</p>
 <p>«Non, jamais il ne faut pleurer la fleur cueillie Par la faux de la mort au matin de la vie.</p>
 <p>La chambre à coucher d&#x27;Éva était très-grande; comme toutes les autres, elle ouvrait sur la véranda. Cette chambre communiquait d&#x27;un côté avec l&#x27;appartement de ses parents, de l&#x27;autre avec celui de miss Ophélia. Saint-Clare s&#x27;était donné cette joie du coeur et des yeux, de décorer l&#x27;appartement de façon à le mettre en harmonie avec la personne à qui il était destiné. Les fenêtres étaient tendues de mousseline blanche et rose. Le tapis, exécuté à Paris sur ses dessins, était encadré de feuilles et de boutons de roses. Au milieu, c&#x27;étaient des touffes de roses épanouies.... Le bois du lit, les chaises, les fauteuils de bambou étaient travaillés en mille formes de la plus gracieuse fantaisie. Au-dessus du lit, sur une console d&#x27;albâtre, un ange, admirablement sculpté, déployait ses ailes et tendait une couronne de feuilles de myrte.... De cette couronne descendaient sur le lit de légers rideaux de gaze rose rayée d&#x27;argent, protection indispensable du sommeil, sous ce climat livré aux moustiques. Les beaux sofas de bambou étaient garnis de coussins de damas rose, tandis que des figures posées sur le dossier laissaient tomber des tentures pareilles aux rideaux du lit. Au milieu de l&#x27;appartement, sur une petite table de bambou, on voyait un vase en marbre de Paros, taillé en forme de lis entouré de ses blancs boutons: son calice était toujours rempli de fleurs. C&#x27;était sur cette table qu&#x27;Éva plaçait ses livres, ses petits bijoux et son pupitre d&#x27;ivoire sculpté. Son père le lui avait donné quand il vit qu&#x27;elle voulait sérieusement apprendre à écrire.</p>
@@ -3196,7 +3249,7 @@ h2 + p, .first { text-indent: 0; }
 <p>«Oui, je le sais bien! il n&#x27;y en a pas un seul parmi vous qui n&#x27;ait toujours été bon pour moi. Je vais vous donner quelque chose qui, quand vous le regarderez, vous fera penser à moi.... je vais vous donner à tous une boucle de mes cheveux. Oui, quand vous la regarderez, pensez que je vous aimais tous.... que je suis partie au ciel.... et que j&#x27;espère vous y revoir!...»</p>
 <p>Il est impossible de décrire une pareille scène, pleine de larmes et de gémissements. Ils se pressaient autour de la chère créature, ils recevaient de ses mains cette dernière marque d&#x27;amour.... Ils s&#x27;agenouillaient, ils pleuraient, ils priaient, ils baisaient le bas de ses vêtements.... et les plus anciens laissaient tomber, selon l&#x27;usage de leur race enthousiaste, des paroles de tendresse, des bénédictions et des prières....</p>
 <p>Miss Ophélia, qui connaissait l&#x27;effet de cette scène sur la petite malade, les faisait successivement sortir dès qu&#x27;ils avaient reçu leur présent.</p>
-<h2>Il ne resta bientôt plus que Tom et Mammy.</h2>
+<p>Il ne resta bientôt plus que Tom et Mammy.</p>
 <p>«Tenez, père Tom, dit Éva, en voici une belle pour vous! Oh! je suis bien heureuse, père Tom, de penser que je vous reverrai dans le ciel.... Et vous, Mammy, chère, bonne et tendre Mammy, lui dit-elle en jetant affectueusement ses bras autour du cou de la vieille nourrice, je sais bien que vous aussi vous irez au ciel!</p>
 <p>--Oh! miss Éva, comment pourrai-je vivre sans vous? dit la fidèle créature. Vous partez, il n&#x27;y aura plus rien ici!» Et Mammy s&#x27;abandonna à toute l&#x27;effusion de sa douleur.</p>
 <p>Miss Ophélia poussa doucement dehors Tom et Mammy. Elle crut qu&#x27;ils étaient tous partis.... Elle se retourna et aperçut Topsy.</p>
@@ -3212,7 +3265,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Saint-Clare frissonna et ne trouva pas une parole.</p>
 <p>«Cher papa! reprit Éva.</p>
 <p>--Eh bien! non, dit Saint-Clare en se levant. Je ne puis pas.... non! je ne puis pas porter cette douleur. Ah! le ciel m&#x27;a bien cruellement traité!»</p>
-<h2>Il prononça ces mots d&#x27;une voix où l&#x27;on devinait tant d&#x27;amertume!</h2>
+<p>Il prononça ces mots d&#x27;une voix où l&#x27;on devinait tant d&#x27;amertume!</p>
 <p>«Augustin, dit Ophélia, Dieu n&#x27;a-t-il pas le droit d&#x27;agir avec les siens comme il lui plaît?</p>
 <p>--Oui, sans doute, mais cela ne console pas, reprit-il avec une sécheresse sans larmes.</p>
 <p>--Papa, vous me brisez le coeur, dit Éva en se levant et en se jetant dans ses bras.» Et elle sanglota et pleura avec tant de violence, qu&#x27;elle les effraya tous.</p>
@@ -3293,7 +3346,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Un radieux sourire passa sur son visage, et d&#x27;une voix entrecoupée elle murmura:</p>
 <p>«Oh! amour... joie... paix!» Puis elle poussa un soupir... et elle passa de la mort à la vraie vie.</p>
 <p>Et maintenant, adieu, ô bien-aimée! les portes étincelantes, les portes éternelles se sont refermées sur toi... ton doux visage, nous ne le verrons plus... oh! malheur à ceux qui t&#x27;ont vue monter dans les cieux.... malheur à eux, quand ils se réveilleront, et qu&#x27;ils ne retrouveront plus que les nuages froids et gris de la vie quotidienne... toi absente pour toujours!</p>
-<h2>CHAPITRE XXVII.</h2>
+<h2 class="chapter" id="c27">Chapitre XXVII.</h2>
 <p>La fin de tout ce qui est terrestre.</p>
 <p>Les statuettes et les peintures de la chambre d&#x27;Éva furent recouvertes de voiles blancs; on n&#x27;entendait que des murmures, des soupirs et des pas furtifs... la lumière glissait à travers les stores abaissés, comme pour éclairer ces ténèbres solennelles.</p>
 <p>Le petit lit était drapé de blanc, et, sous la protection de l&#x27;ange incliné, la jeune fille reposait dans ce sommeil dont on ne s&#x27;éveille plus.</p>
@@ -3312,7 +3365,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Il y avait dans ce cri quelque chose de si poignant et de si ému, que le sang remonta au visage pâle et marbré de Saint-Clare, et pour la première fois, depuis la mort d&#x27;Éva, il sentit des larmes dans ses yeux.</p>
 <p>«Relevez-vous, mon enfant, disait miss Ophélia d&#x27;une voix douce, miss Éva est au ciel; c&#x27;est un ange!</p>
 <p>--Mais je ne puis la voir, dit Topsy... je ne la reverrai jamais!» Et elle sanglotait de nouveau.</p>
-<h2>Il y eut un moment de silence.</h2>
+<p>Il y eut un moment de silence.</p>
 <p>«Elle disait qu&#x27;elle m&#x27;aimait, reprit Topsy. Oui, elle m&#x27;aimait! Hélas! hélas! je n&#x27;ai plus personne maintenant.... personne!</p>
 <p>--C&#x27;est assez vrai, dit Saint-Clare. Mais voyons, ajouta-t-il en se tournant vers miss Ophélia, tâchez de consoler cette pauvre créature!</p>
 <p>--Je voudrais n&#x27;être jamais née, disait Topsy.... Je ne voulais pas naître, moi! Pourquoi suis-je née?»</p>
@@ -3382,7 +3435,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Le coeur de Tom était plein; il se répandit dans la prière, comme des eaux trop longtemps contenues. On voyait que Tom était convaincu que quelqu&#x27;un l&#x27;écoutait, absent ou présent! Saint-Clare se sentit soulevé par cet océan de foi sincère et de charité, et porté jusqu&#x27;au seuil de ce ciel que Tom se représentait avec une si vive ardeur; il lui semblait être maintenant près d&#x27;Éva!</p>
 <p>«Merci, mon ami! dit Saint-Clare, quand Tom se releva; j&#x27;aime à vous entendre, Tom; mais allez! il faut maintenant que je sois seul; quelque autre jour, je vous parlerai davantage.»</p>
 <p>Tom se retira silencieusement.</p>
-<h2>CHAPITRE XXVIII.</h2>
+<h2 class="chapter" id="c28">Chapitre XXVIII.</h2>
 <p>Réunion.</p>
 <p>L&#x27;une après l&#x27;autre, les semaines s&#x27;écoulaient dans la maison de Saint-Clare, et les flots de la vie reprenaient leur cours, se refermant sur le frêle esquif disparu.... Oh! les réalités de chaque jour, dures, froides, impitoyables, impérieuses.... comme elles foulent aux pieds les sentiments de nos coeurs! Il faut manger, il faut boire, il faut dormir.... il faut même s&#x27;éveiller! Il faut acheter, il faut vendre, il faut interroger, il faut répondre!... En un mot, il faut poursuivre des ombres, quand on a perdu les réalités.... L&#x27;habitude machinale et glacée de la vie survit à la vie même!</p>
 <p>Les espérances de Saint-Clare, ses intérêts, sans qu&#x27;il en eût conscience, s&#x27;étaient enlacés autour de cette enfant.... C&#x27;était pour Éva qu&#x27;il soignait, qu&#x27;il embellissait sa propriété. Son temps, c&#x27;était à elle qu&#x27;il le donnait.... Tout chez lui était à Éva, pour Éva! Il ne faisait rien qui ne fût pour elle.... Elle absente.... il perdait à la fois et l&#x27;action et la pensée!</p>
@@ -3409,7 +3462,7 @@ h2 + p, .first { text-indent: 0; }
 <p>--Tom, vous croyez que Dieu a bien besoin qu&#x27;on travaille pour lui? dit Saint-Clare en souriant.</p>
 <p>--Quand nous travaillons pour ses créatures, nous travaillons pour Dieu, dit Tom.</p>
 <p>--Bonne théologie, Tom! bien meilleure, je le jure, que celle du docteur B***.»</p>
-<h2>Ici la conversation fut interrompue par l&#x27;arrivée de quelques visites.</h2>
+<p>Ici la conversation fut interrompue par l&#x27;arrivée de quelques visites.</p>
 <p>Marie Saint-Clare ressentait la perte d&#x27;Éva autant qu&#x27;il lui était possible de ressentir quelque chose, et, comme elle était femme à rendre malheureux de son malheur tous ceux qui l&#x27;approchaient, les esclaves attachés à son service n&#x27;avaient que trop de raisons de regretter la jeune maîtresse dont les douces façons et l&#x27;aimable intercession les avaient si souvent protégés contre la tyrannie et les égoïstes exigences de sa mère. Mammy surtout, la pauvre Mammy, dont l&#x27;âme, sevrée de toutes les tendresses de la famille, s&#x27;était consolée par l&#x27;affection de cet être charmant, Mammy n&#x27;était plus qu&#x27;un coeur brisé.... Nuit et jour elle pleurait.... et l&#x27;excès même de son chagrin la rendait moins habile et moins prompte.... ce qui attirait une tempête d&#x27;invectives sur sa tête, désormais sans défense....</p>
 <p>Miss Ophélia ressentait aussi cette perte; mais dans ce coeur honnête et bon la douleur portait les fruits de l&#x27;autre vie, la vie qui ne finira pas. Elle était plus facile et plus douce.... aussi zélée pour chaque devoir, elle avait quelque chose de plus calme et de plus modeste.... on voyait qu&#x27;elle rentrait plus souvent en son coeur, et ce n&#x27;était pas en vain: elle s&#x27;occupait plus activement de l&#x27;éducation de Topsy. Elle lui apprenait des passages de la Bible. Elle ne frissonnait plus à son approche, elle n&#x27;avait plus à cacher une répugnance qu&#x27;elle n&#x27;éprouvait pas! Elle la voyait à travers ce milieu si doucement évoqué devant ses yeux par Éva; et ce qu&#x27;elle voyait en elle, c&#x27;était une créature immortelle, que Dieu lui avait envoyée pour qu&#x27;elle la conduisît à la gloire et à la vertu.... Topsy n&#x27;était pas devenue une sainte tout d&#x27;un coup; mais cependant la vie et la mort d&#x27;Éva avaient produit en elle un notable changement.</p>
 <p>La dure indifférence était partie.... il y avait maintenant en elle de la sensibilité, et l&#x27;espérance, le désir, l&#x27;effort du bien, effort irrégulier, suspendu, interrompu.... mais renouvelé.</p>
@@ -3468,11 +3521,11 @@ h2 + p, .first { text-indent: 0; }
 <p>--Plus tard....</p>
 <p>--Et si vous mourriez auparavant?...</p>
 <p>--Eh bien! cousine, qu&#x27;est-ce à dire?...»</p>
-<h2>Il quitta son journal et la regarda fixement.</h2>
+<p>Il quitta son journal et la regarda fixement.</p>
 <p>«Me trouvez-vous des symptômes de fièvre jaune ou de choléra?... pourquoi me poussez-vous, avec tant de persévérance, à faire des arrangements en cas de mort?</p>
 <p>--En pleine vie, nous sommes dans la mort!»</p>
 <p>Saint-Clare se leva, rejeta le journal et marcha avec assez d&#x27;insouciance jusqu&#x27;à la porte qui s&#x27;ouvrait sur la véranda. Il voulait mettre fin à cette conversation qui lui était désagréable; mais tout seul et machinalement il répétait ce mot, la mort!... Il s&#x27;appuya sur le balcon et regarda le jet d&#x27;eau étincelant, qui s&#x27;élançait et retombait dans le bassin. Puis, comme à travers un brouillard épais et gris, il aperçut vaguement les fleurs, les arbres, les vases de la cour, et il répéta encore ce mot mystérieux, ce mot qu&#x27;on trouve dans toutes les bouches, ce mot terrible:</p>
-<h2>LA MORT!</h2>
+<h3 class="sub">La mort!</h3>
 <p>«Il est vraiment étrange, se disait-il, qu&#x27;il y ait un tel mot et une telle chose, et que nous l&#x27;oubliions toujours!... On vit, on est ardent, on est jeune, on est beau, plein d&#x27;espérances, de désirs, de besoins, et le lendemain on est parti.... parti sans retour, pour toujours parti!...»</p>
 <p>C&#x27;était une de ces belles soirées du sud, tiède et pleine de rayons d&#x27;or.... Il alla jusqu&#x27;au bout du balcon.... il vit Tom, penché sur sa Bible, se montrant chaque mot du doigt et se le murmurant à lui-même avec toutes les marques d&#x27;une profonde attention.</p>
 <p>«Voulez-vous que je vous lise, Tom? dit Saint-Clare en s&#x27;asseyant auprès de lui.</p>
@@ -3537,7 +3590,7 @@ h2 + p, .first { text-indent: 0; }
 <p>«Je ne sais, dit-il, ce qui me fait ce soir si souvent penser à ma mère. Je me sens dans l&#x27;âme je ne sais quels attendrissements, comme si ma mère était près de moi. Je pense à tout ce qu&#x27;elle avait l&#x27;habitude de me dire.... Quelle étrange chose que parfois le passé revienne à nous si vivant!»</p>
 <p>Saint-Clare marcha encore quelques instants dans le salon.</p>
 <p>«Je crois, dit-il, que je vais sortir un peu. Qu&#x27;est-ce qu&#x27;on dit ce soir?... Il faut que je voie cela.»</p>
-<h2>Il prit son chapeau et quitta le salon.</h2>
+<p>Il prit son chapeau et quitta le salon.</p>
 <p>Tom le suivit jusqu&#x27;à la porte de la cour et lui demanda s&#x27;il devait l&#x27;accompagner.</p>
 <p>«Non, mon garçon, je serai ici dans une heure...»</p>
 <p>Tom s&#x27;assit sous la véranda.</p>
@@ -3563,9 +3616,9 @@ h2 + p, .first { text-indent: 0; }
 <p>--Au contraire, il se retrouve enfin, dit Saint-Clare avec énergie; enfin, enfin!...»</p>
 <p>Cet effort l&#x27;épuisa.</p>
 <p>La pâleur de la mort s&#x27;étendit sur ses traits, et avec elle, comme si elle fût tombée des ailes d&#x27;un ange compatissant, une expression de paix et de calme. On eût dit un enfant qui s&#x27;endort.</p>
-<h2>Il resta quelques instants immobile.</h2>
+<p>Il resta quelques instants immobile.</p>
 <p>Tous voyaient que la main du Tout-Puissant était sur lui. Avant que l&#x27;âme prît son essor, il ouvrit encore les yeux. Il y eut comme une lueur de joie, de cette joie qu&#x27;on éprouve à reconnaître ceux qu&#x27;on aime.... Il murmura: «Ma mère!» Tout était fini.</p>
-<h2>CHAPITRE XXIX.</h2>
+<h2 class="chapter" id="c29">Chapitre XXIX.</h2>
 <p>Les abandonnés.</p>
 <p>On parle souvent du malheur des nègres qui perdent un bon maître. On a raison. Je ne connais pas, sur la terre de Dieu, de créatures plus infortunées et plus vraiment à plaindre....</p>
 <p>L&#x27;enfant qui a perdu son père a du moins pour lui la protection de ses amis et de la loi. Il est quelque chose.... il peut quelque chose.... il a une position, il a des droits reconnus. L&#x27;esclave.... rien! la loi ne lui reconnaît pas de droits: c&#x27;est un paquet.... une marchandise.... Si jamais on a reconnu en lui quelques-uns des désirs et des besoins d&#x27;une créature humaine.... et immortelle.... il le doit à la volonté souveraine et irresponsable de son maître. Ce maître une fois disparu.... il n&#x27;y a plus rien!</p>
@@ -3642,7 +3695,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Et Marie sanglota à perdre haleine et appela Mammy pour ouvrir la fenêtre, lui donner son flacon de camphre, baigner sa tête, ouvrir sa robe.... Ce fut un moment de confusion dont miss Ophélia profita pour regagner son appartement.</p>
 <p>Miss Ophélia vit bien que tout était inutile; Mme Saint-Clare trouvait des ressources inépuisables d&#x27;arguments dans ses attaques de nerfs: c&#x27;était sa réponse dès qu&#x27;on lui rappelait les voeux de sa fille et de son mari. Miss Ophélia prit le meilleur parti qui lui restât: elle écrivit à Mme Shelby, exposant les malheurs de Tom et réclamant une prompte assistance.</p>
 <p>Le lendemain, Tom, Adolphe, et une demi-douzaine d&#x27;autres, furent conduits au magasin des esclaves, pour y attendre le bon plaisir du marchand, qui devait en faire un lot.</p>
-<h2>CHAPITRE XXX.</h2>
+<h2 class="chapter" id="c30">Chapitre XXX.</h2>
 <p>Un magasin d&#x27;esclaves.</p>
 <p>Un magasin d&#x27;esclaves! Peut-être ce mot seul évoque-t-il, devant quelques-uns de mes lecteurs, des visions horribles; ils se figurent quelque horrible Tartare, bien noir et bien affreux.</p>
 <p>. . . . . . Informe, ingens, cui lumen ademptum!</p>
@@ -3745,7 +3798,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Le nouveau maître s&#x27;appelle M. Legree, il possède une plantation sur les bords de la rivière Rouge. On pousse Emmeline dans le lot de Tom, avec les deux autres hommes, et elle s&#x27;en va, et en s&#x27;en allant elle pleure.</p>
 <p>Le bon gentleman est désolé..., mais on voit ces choses-là tous les jours.... Oui! à ces ventes on voit des mères et des filles qui pleurent en répétant le mot toujours.... On ne peut pas empêcher cela.... et... et... et... et il s&#x27;en va de son côté avec sa nouvelle acquisition.</p>
 <p>Deux jours après l&#x27;homme de loi de la maison chrétienne B. et Cie de New-York envoyait l&#x27;argent à ses commettants. Ah! sur le revers de la traite qui paye ce marché, écrivons ces mots du grand PAYEUR GÉNÉRAL, à qui un jour tous viendront rendre leurs comptes: «Il fera une enquête sur le sang, et il n&#x27;oubliera pas les pleurs des humbles!»</p>
-<h2>CHAPITRE XXXI.</h2>
+<h2 class="chapter" id="c31">Chapitre XXXI.</h2>
 <p>La traversée.</p>
 <p>Tes yeux sont trop purs pour contempler le mal, et tu ne peux pas regarder l&#x27;iniquité: prends donc garde à ceux qui agissent cruellement, et retiens ta langue pendant que les méchants dévorent celui qui est plus juste que toi.</p>
 <p>Au fond d&#x27;un bateau, qui remontait la rivière Rouge, Tom était assis, les chaînes aux mains, les chaînes aux pieds.... et sur le coeur un froid plus pesant que ses chaînes! Pour lui, toutes les clartés étaient éteintes dans les cieux, et la lune et les étoiles; et, devant ses yeux, pareils aux arbres de la rive, tous ses rêves s&#x27;étaient enfuis à jamais.... et la ferme de Kentucky, et sa femme et ses enfants, et ses bons maîtres, et la maison Saint-Clare, avec ses splendeurs et son opulence, et la blonde tête d&#x27;Éva, et son regard angélique, et Saint-Clare, fier, superbe, triomphant, beau, insouciant parfois, mais toujours bon, et ces heures paresseuses, et ce loisir indulgent..., tout cela était parti, parti pour toujours; et à la place, que restait-il?</p>
@@ -3810,12 +3863,12 @@ h2 + p, .first { text-indent: 0; }
 <p>--Assez, jusqu&#x27;au moment où il tomba malade; mais il a été malade plus de six mois, et il était devenu bien difficile. Il ne voulait pas qu&#x27;on dormît... ni jour ni nuit. Personne ne lui convenait: il devenait plus difficile de jour en jour. Il me garda je ne sais combien de nuits... Je tombais d&#x27;épuisement... Un matin, il me trouva endormie: il entra dans une si grande colère, qu&#x27;il résolut de me vendre au plus dur maître qu&#x27;il pourrait trouver; et pourtant il m&#x27;avait promis qu&#x27;à sa mort j&#x27;aurais ma liberté.</p>
 <p>--Aviez-vous des amis?</p>
 <p>--J&#x27;avais mon mari, qui est forgeron. Mon maître le louait dehors... J&#x27;ai été emmenée si vite que je n&#x27;ai pas eu même le temps de le voir. J&#x27;ai aussi quatre enfants... Oh! mon Dieu!...»</p>
-<h2>Ici la femme couvrit son visage de ses mains.</h2>
+<p>Ici la femme couvrit son visage de ses mains.</p>
 <p>Quand on entend ces tristes récits, on tâche toujours de trouver quelque parole de consolation. Emmeline chercha, mais ne trouva pas... et que dire, en effet? Toutes deux, unies par un commun accord qui naissait de leur frayeur, ne voulaient même pas faire allusion à leur nouveau maître.</p>
 <p>Pour les plus sombres heures, il y a les consolations religieuses, je le sais. La mulâtresse appartenait à l&#x27;Église méthodiste. Sa piété n&#x27;était pas éclairée sans doute, mais elle était sincère. Emmeline avait reçu une éducation plus soignée, elle avait appris à lire et à écrire. Elle connaissait la Bible; elle avait reçu les soins d&#x27;une pieuse et bonne maîtresse. Et cependant, même pour la plus robuste foi chrétienne, n&#x27;est-ce point une bien rude épreuve que de se voir, du moins en apparence, abandonnée de Dieu et entre les mains d&#x27;une violence que rien n&#x27;émeut? et combien cette foi doit être encore plus ébranlée dans de jeunes âmes faibles et ignorantes!</p>
 <p>Le bateau s&#x27;avançait, portant son fret de douleurs! il remontait le courant fangeux et agité, à travers les sinuosités abruptes et capricieuses de la rivière Rouge. Les yeux attristés rencontraient partout devant eux ses bords escarpés, rouges comme ses ondes, qui les éblouissaient de leur éternelle et terrible uniformité.</p>
 <p>Enfin le steamer s&#x27;arrêta devant une petite ville, et Legree descendit avec sa troupe.</p>
-<h2>CHAPITRE XXXII.</h2>
+<h2 class="chapter" id="c32">Chapitre XXXII.</h2>
 <p>Lieux sombres.</p>
 <p>«La terre est couverte de ténèbres et pleine de cruauté.»</p>
 <p>Tom et ses compagnons se rangèrent derrière une lourde voiture, et s&#x27;avancèrent péniblement par une route malaisée.</p>
@@ -3913,7 +3966,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Et peu à peu les mots semblaient se fondre en une musique divine. L&#x27;enfant relevait ses grands yeux et les fixait doucement sur lui; et de ces doux yeux vers son coeur il s&#x27;échappait comme de chauds et bienfaisants effluves de rayons. Et puis, comme emportée par la musique, elle s&#x27;éleva sur des ailes brillantes d&#x27;où tombaient des étincelles d&#x27;or, pareilles à des étoiles, et elle disparut.</p>
 <p>Tom s&#x27;éveilla. Était-ce un rêve? Dites que c&#x27;est un rêve! mais osez donc prétendre que cette douce et jeune âme, dont toute la vie se passa à soulager et à consoler, Dieu ne permettra pas qu&#x27;après la mort elle remplisse toujours cette sainte mission!</p>
 <p>Sous le mal, lourd fardeau, nous sommes affaissés.... Voyons, du moins, en nos rêves étranges Sur l&#x27;aile des archanges Errer autour de nous l&#x27;âme des trépassés.</p>
-<h2>CHAPITRE XXXIII.</h2>
+<h2 class="chapter" id="c33">Chapitre XXXIII.</h2>
 <p>Cassy.</p>
 <p>J&#x27;ai vu les larmes des opprimés, et ils n&#x27;avaient point de soutien, et du côté des oppresseurs était la puissance.</p>
 <p>Il ne fallut pas beaucoup de temps à Tom pour savoir ce qu&#x27;il avait à craindre ou à espérer de son genre de vie; dans tout ce qu&#x27;il entreprenait, c&#x27;était un homme habile et capable. Par principe et par habitude, il était laborieux et fidèle. Tranquille et rangé, il comptait, à force de diligence, éloigner de lui, du moins en partie, les maux ordinaires de sa position. Il voyait assez de vexations et d&#x27;injustices pour être triste et malheureux, mais il avait pris la résolution de tout supporter avec une religieuse patience, s&#x27;en remettant à celui dont les jugements sont conformes à la justice. Il se disait aussi que peut-être une chance de salut s&#x27;offrirait à lui.</p>
@@ -3930,7 +3983,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Tom, ce jour-là, travailla à côté de la mulâtresse achetée avec lui. On voyait qu&#x27;elle souffrait beaucoup: elle tremblait et semblait à chaque instant prête à défaillir. Tom l&#x27;entendit prier. Il s&#x27;approcha d&#x27;elle sans dire une parole, et tirant de son propre sac quelques poignées de coton, il les fit passer dans le sac de la pauvre femme.</p>
 <p>«Non! non! ne faites pas cela, disait la femme.... cela vous attirera quelque désagrément.»</p>
 <p>Au même moment Sambo arrivait.</p>
-<h2>Il détestait cette femme. Il brandit son fouet, et d&#x27;une voix rauque:</h2>
+<p>Il détestait cette femme. Il brandit son fouet, et d&#x27;une voix rauque:</p>
 <p>«Eh bien! Lucy, je vous y prends.... vous fraudez!» Et il lui donna un coup de pied; il avait de grosses chaussures de cuir de vache. Quant au pauvre Tom, il lui sangla le visage d&#x27;un coup de fouet.</p>
 <p>Tom reprit sa tâche sans rien dire; mais la femme, épuisée, émue, s&#x27;évanouit.</p>
 <p>«Je vais bien la faire revenir, dit brutalement Sambo,... j&#x27;ai quelque chose qui vaut mieux pour cela que le camphre....» Et prenant une épingle sur la manche de sa veste, il l&#x27;enfonça jusqu&#x27;à la tête dans la chair de cette malheureuse.... Elle poussa un gémissement et se leva à moitié.... «Debout! sotte bête, et travaillez!... entendez-vous?... ou je recommence!»</p>
@@ -4006,7 +4059,7 @@ h2 + p, .first { text-indent: 0; }
 <p>«Non! non! mon âme n&#x27;est pas à vous, maître.... vous ne l&#x27;avez pas achetée.... vous ne pourriez pas la payer.... Elle a été achetée et payée par quelqu&#x27;un qui est bien capable de la garder.... Qu&#x27;importe? qu&#x27;importe? vous ne pouvez me faire de mal.</p>
 <p>--Ah! je ne puis! dit Legree avec une infernale ironie.... Nous allons voir.... Sambo, Quimbo, ici!... Donnez à ce chien une telle volée de coups qu&#x27;il ne s&#x27;en relève d&#x27;ici un mois.»</p>
 <p>Les deux gigantesques noirs s&#x27;emparèrent de Tom. On voyait sur leur visage le triomphe de la férocité. C&#x27;était la personnification de la puissance des ténèbres. La pauvre mulâtresse jeta un cri de douleur; tous les esclaves se levèrent d&#x27;un même élan; Quimbo et Sambo emmenèrent Tom qui ne résistait pas.</p>
-<h2>CHAPITRE XXXIV.</h2>
+<h2 class="chapter" id="c34">Chapitre XXXIV.</h2>
 <p>Histoire de la quarteronne.</p>
 <p>La nuit était fort avancée déjà. Tom, sanglant et gémissant, est étendu dans une pièce abandonnée, qui avait fait partie du magasin, au milieu des instruments brisés, du coton gâté, enfin de tout le rebut de la maison.</p>
 <p>L&#x27;obscurité est profonde; dans l&#x27;atmosphère épaisse bourdonnent par essaims des myriades de moustiques; une soif brûlante, le plus cruel des supplices, comble la dernière mesure des angoisses de Tom.</p>
@@ -4084,7 +4137,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Tom voulut parler, mais elle lui imposa silence par un geste impérieux.</p>
 <p>«Ne parlez plus, mon pauvre homme.... tâchez de dormir, si vous pouvez....»</p>
 <p>Elle mit de l&#x27;eau tout près de lui, fit tous les petits arrangements nécessaires à la nuit d&#x27;un malade.... et elle sortit.</p>
-<h2>CHAPITRE XXXV.</h2>
+<h2 class="chapter" id="c35">Chapitre XXXV.</h2>
 <p>Les gages de tendresse.</p>
 <p>Et souvent ce sont de bien petites choses qui font retomber sur le coeur ce poids qu&#x27;il voulait rejeter pour toujours; c&#x27;est un son, une fleur.... le vent, l&#x27;Océan.... qui rouvrent la blessure, en donnant un choc à cette chaîne électrique qui nous enserre dans ses noirs anneaux.</p>
 <p>BYRON, Childe-Harold, chant IV.</p>
@@ -4163,13 +4216,13 @@ h2 + p, .first { text-indent: 0; }
 <p>Cassy appuya sa petite main fine sur le rebord de la fenêtre.... On pouvait lire dans ses yeux de l&#x27;angoisse, de la colère et du mépris, et elle se dit:</p>
 <p>«Serait-ce vraiment un péché que de délivrer le monde de ces misérables?»</p>
 <p>Elle se détourna précipitamment et, passant par une porte de derrière, elle s&#x27;élança dans l&#x27;escalier et frappa bientôt à la porte d&#x27;Emmeline.</p>
-<h2>CHAPITRE XXXVI.</h2>
+<h2 class="chapter" id="c36">Chapitre XXXVI.</h2>
 <p>Emmeline et Cassy.</p>
 <p>Cassy entra dans la chambre et trouva Emmeline, pâle de terreur, assise à l&#x27;extrémité la plus éloignée de la porte. Quand elle entra, la jeune fille se leva par un mouvement nerveux.... mais, en reconnaissant Cassy, elle s&#x27;élança vers elle, et lui prenant le bras:</p>
 <p>«Oh! Cassy, est-ce vous? Je suis si heureuse que vous veniez.... j&#x27;avais si peur que ce ne fût!... Vous ne savez pas quel terrible tapage ils ont fait toute la nuit....</p>
 <p>--Je dois le savoir, fit Cassy d&#x27;un ton sec; je l&#x27;ai entendu assez souvent....</p>
 <p>--Oh! Cassy, dites-moi, ne pourrions-nous pas nous échapper? N&#x27;importe où.... dans les savanes.... parmi les serpents.... où vous voudrez! Ne pourrions-nous point aller quelque part.... loin d&#x27;ici?</p>
-<h2>--Nulle part que dans le tombeau....</h2>
+<h3 class="sub">--Nulle part que dans le tombeau....</h3>
 <p>--N&#x27;avez-vous jamais essayé?</p>
 <p>--J&#x27;ai assez vu essayer, et je sais le résultat.</p>
 <p>--Je voudrais vivre dans les savanes, arracher l&#x27;écorce des arbres avec mes dents. Je n&#x27;ai pas peur des serpents; j&#x27;aimerais mieux en avoir un.... que lui.... auprès de moi!</p>
@@ -4237,7 +4290,7 @@ h2 + p, .first { text-indent: 0; }
 <p>--Monsieur Legree, dit Tom, je ne puis pas faire cela! J&#x27;ai fait ce que j&#x27;ai cru juste; j&#x27;agirai toujours ainsi à l&#x27;avenir. Je ne ferai jamais rien de mal.... advienne que pourra!</p>
 <p>--Ah! vous ne savez pas ce qui adviendra, maître Tom!... Vous croyez que c&#x27;est quelque chose, ce que l&#x27;on vous a fait. Ce n&#x27;est rien! rien du tout.... Aimeriez-vous à être attaché à un arbre et à voir allumer un petit feu autour de vous? Ne serait-ce pas agréable, Tom.... hein?</p>
 <p>--Maître, je sais que vous pouvez faire de terribles choses; mais....»</p>
-<h2>Il se redressa et joignit les mains.</h2>
+<p>Il se redressa et joignit les mains.</p>
 <p>«Mais, quand vous aurez tué le corps, vous ne pourrez plus rien; et, après cela, il y aura l&#x27;ÉTERNITÉ!»</p>
 <p>ÉTERNITÉ! ce seul mot remplit de force et de lumière l&#x27;âme du pauvre esclave,... et le pécheur se sentit au coeur comme une morsure de scorpion.... Legree grinça des dents, mais sa rage même le fit taire; et Tom, comme un homme délivré de toute contrainte, parla d&#x27;une voix claire et joyeuse.</p>
 <p>«Monsieur Legree, vous m&#x27;avez acheté, je vous serai un bon et fidèle esclave; je vous donnerai tout le travail de mes mains, tout mon temps, toute ma force.... Mais mon âme! je ne veux pas la donner à un homme mortel.... je la garde pour Dieu: ses commandements, à lui, je les mets avant tout, avant la vie, avant la mort.... Vous pouvez en être sûr, monsieur Legree, je n&#x27;ai pas le moins du monde peur de la mort.... je l&#x27;attends.... dès qu&#x27;on voudra! Vous pouvez me fouetter.... me faire mourir de faim.... me brûler.... ce sera m&#x27;envoyer plus tôt où je dois aller!</p>
@@ -4257,10 +4310,10 @@ h2 + p, .first { text-indent: 0; }
 <p>«Eh bien! comment êtes-vous, mon pauvre garçon?</p>
 <p>--Dieu m&#x27;a envoyé un de ses anges, et il a fermé la bouche du lion, répondit Tom.</p>
 <p>--Pour un temps, dit Cassy, mais il vous en veut; sa colère va vous suivre, jour par jour, s&#x27;élançant comme un chien à votre gorge, buvant votre sang, épuisant votre vie goutte à goutte.... Je connais l&#x27;homme.</p>
-<h2>CHAPITRE XXXVII.</h2>
+<h2 class="chapter" id="c37">Chapitre XXXVII.</h2>
 <p>Liberté.</p>
 <p>Peu importe avec quelle solennité on l&#x27;ait dévoué sur l&#x27;autel de l&#x27;esclavage, du moment où il touche le sol sacré de l&#x27;Angleterre, l&#x27;autel et le Dieu tombent dans la poussière, et l&#x27;esclave est racheté, régénéré, sauvé par l&#x27;invincible génie de la liberté.</p>
-<h2>CURRAN.</h2>
+<h3 class="sub">Curran.</h3>
 <p>Laissons, pour quelque temps du moins, le pauvre Tom aux mains de ses persécuteurs, et voyons ce que deviennent Georges et sa femme, que nous avons abandonnés au milieu de leur fuite.</p>
 <p>Quand nous avons quitté Tom Loker, il soupirait et s&#x27;agitait sur la couche immaculée d&#x27;un quaker, entouré des soins maternels de la vieille Dorcas, qui le trouvait aussi patient et aussi traitable qu&#x27;un buffle malade.</p>
 <p>Imaginez-vous une grande femme, aimable, digne et réservée. Un bonnet de mousseline cache à moitié ses cheveux blancs et bouclés, partagés sur un front large et lumineux; ses yeux sont gris, pleins de pensées. Un mouchoir de crêpe lisse, blanc comme la neige, se croise chastement sur sa poitrine. Sa robe de soie, brune et brillante, fait entendre son frôlement pacifique chaque fois qu&#x27;elle traverse la chambre.</p>
@@ -4330,7 +4383,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Qui pourra jamais dire les ravissements de ce premier jour de liberté?</p>
 <p>Oh! il y a un sixième sens, le sens de la liberté, plus noble et plus élevé cent fois que les autres sens! Se mouvoir, parler, respirer, aller, venir, sans contrôle et sans danger! Qui pourra jamais dire ce repos béni, qui descend sur l&#x27;oreiller d&#x27;un homme libre, à qui les lois assurent la jouissance des droits que Dieu lui a donnés? Qu&#x27;il était charmant et beau pour sa mère, ce visage endormi d&#x27;un enfant que le souvenir de mille dangers rendait plus cher!... Oh! pour eux, dans l&#x27;exubérance de leur félicité, le sommeil ne leur était pas possible: et cependant ils n&#x27;avaient pas un pouce de terre à eux, pas un toit qui leur appartînt; ils avaient dépensé jusqu&#x27;à leur dernier dollar.... Ils avaient ce qu&#x27;a l&#x27;oiseau dans les airs, la fleur dans les champs.... et ils ne pouvaient pas dormir à force de bonheur!</p>
 <p>Ah! vous qui prenez à l&#x27;homme la liberté, quelles paroles trouverez-vous pour répondre à Dieu?</p>
-<h2>CHAPITRE XXXVIII.</h2>
+<h2 class="chapter" id="c38">Chapitre xxxviii.</h2>
 <p>La victoire.</p>
 <p>Combien parmi nous, dans ce chemin pénible de la vie, n&#x27;ont pas trop souvent éprouvé qu&#x27;il est bien plus aisé de mourir que de vivre?</p>
 <p>Le martyr, en face de la mort pleine d&#x27;horreurs, de tourments et d&#x27;angoisses, trouve dans les terreurs mêmes de son destin un aiguillon et un soutien; il y a comme une excitation vive, une fièvre, une ardeur qui nous fait bravement traverser cette crise de souffrance--le sentiment de l&#x27;éternelle gloire.</p>
@@ -4345,7 +4398,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Tom releva les yeux; il aperçut Legree.</p>
 <p>«Eh bien! vieux, vous trouvez à la fin que la religion ne sert pas à grand&#x27;chose.... Je savais bien que je fourrerais cela dans votre tête de laine!»</p>
 <p>Ce sarcasme fut plus cruel pour Tom que la faim, que le froid, que la nudité!</p>
-<h2>Il ne répondit rien.</h2>
+<p>Il ne répondit rien.</p>
 <p>«Vous êtes une bête! reprit Legree: quand je vous achetai, j&#x27;avais de bonnes intentions pour vous. Vous auriez été ici beaucoup mieux que Sambo et Quimbo, vous auriez eu du bon temps: au lieu d&#x27;être fouetté tous les jours ou tous les deux jours, c&#x27;est vous qui auriez fouetté les autres; vous vous seriez promené partout, et de temps en temps, pour vous réchauffer, on vous aurait donné un verre de punch ou de wisky.... Allons! est-ce que cela n&#x27;eût pas été bien plus raisonnable? Voyons, jetez-moi au feu ce paquet de bêtises, et entrez dans mon Église.</p>
 <p>--Dieu m&#x27;en garde! s&#x27;écria Tom avec ferveur.</p>
 <p>--Vous voyez bien que Dieu ne vous protége pas.... s&#x27;il vous protégeait, il n&#x27;aurait pas permis que je vous achetasse! votre religion, c&#x27;est un tas de mensonges!... je le sais bien, allez! vous feriez mieux de vous attacher à moi.... je suis quelqu&#x27;un et je puis quelque chose!</p>
@@ -4353,7 +4406,7 @@ h2 + p, .first { text-indent: 0; }
 <p>--Vous n&#x27;en êtes que plus stupide, fit Legree en crachant dédaigneusement sur lui et en le repoussant du pied; n&#x27;importe, je vous abattrai, je vous réduirai.... vous verrez!»</p>
 <p>Et Legree s&#x27;éloigna.</p>
 <p>Quand un poids pesant nous oppresse et qu&#x27;il nous a refoulés aussi bas que possible, il y a en nous comme un effort soudain et désespéré, et nous voulons soulever ce poids.... Souvent l&#x27;angoisse la plus douloureuse précède le reflux de la joie et du courage.</p>
-<h2>Il en fut ainsi pour Tom.</h2>
+<p>Il en fut ainsi pour Tom.</p>
 <p>Le sarcasme athée et cruel de son maître acheva d&#x27;abattre son âme; il se cramponnait encore d&#x27;une main fidèle au roc de la foi, mais par une étreinte désespérée et bientôt vaincue.... il restait assis auprès du feu, dans une immobilité de statue. Tout à coup il lui sembla qu&#x27;autour de lui les objets disparaissaient, et une vision passa devant ses yeux. Il voyait une tête couronnée d&#x27;épines, souffletée et sanglante. Il contemplait, avec autant d&#x27;étonnement que de respect, la majestueuse patience de ce visage; le regard mélancolique et profond de ces yeux lui remuait le coeur; il sentait couler en lui des torrents d&#x27;émotion, il étendit les bras et tomba à genoux.... Mais tout à coup la vision changea: les épines aiguës devinrent des rayons de gloire, et ce même visage, éclatant d&#x27;ineffables splendeurs, se pencha, plein de tendresse et de compassion, vers lui, et une voix dit:</p>
 <p>«Celui qui aura vaincu viendra s&#x27;asseoir avec moi sur mon trône, comme moi qui ai vaincu je me suis assis avec mon Père sur son trône!»</p>
 <p>Combien de temps dura cette extase, Tom lui-même ne le sut jamais. Quand il revint à lui, le feu s&#x27;était éteint, la rosée abondante et pénétrante avait mouillé ses vêtements; mais la crise terrible était passée, et, dans la joie qui remplissait son âme, il ne sentait ni la faim, ni le froid, ni l&#x27;outrage, ni la misère! Oui, dans le plus profond de son coeur, à ce même instant, il renonça pour jamais à toutes les espérances de la vie présente, et il offrit sa propre volonté en sacrifice d&#x27;immolation au Dieu infini! puis il porta ses regards vers ces étoiles, silencieuses, éternelles images de ces troupes d&#x27;anges qui ne cessent jamais d&#x27;abaisser leurs regards sur l&#x27;homme, et dans la solitude de la nuit il entendit retentir les paroles triomphantes d&#x27;un hymne qu&#x27;il avait souvent chanté dans des jours plus heureux, mais jamais avec un tel sentiment:</p>
@@ -4418,10 +4471,10 @@ h2 + p, .first { text-indent: 0; }
 <p>Cassy, pendant de longues heures, avait médité toutes les probabilités d&#x27;une évasion possible, elle avait formé mille plans qu&#x27;elle avait bientôt rejetés comme impraticables.... et maintenant il se présentait à elle une idée si simple, si complétement réalisable, qu&#x27;elle se sentait toute remplie d&#x27;espérances....</p>
 <p>«Père Tom, j&#x27;essayerai!</p>
 <p>--Amen! dit Tom; que Dieu vous aide!»</p>
-<h2>CHAPITRE XXXIX.</h2>
+<h2 class="chapter" id="c39">Chapitre XXXIX.</h2>
 <p>Le stratagème.</p>
 <p>La route du méchant est ténébreuse: il ne sait point où est la pierre d&#x27;achoppement.</p>
-<h2>PROVERBES, IV, 19.</h2>
+<h3 class="sub">Proverbes, IV, 19.</h3>
 <p>Le grenier de Simon Legree était, comme tous les greniers du monde, un lieu désolé, immense, plein de poussière, tendu de toiles d&#x27;araignée et jonché de débris de toute espèce. L&#x27;opulente famille qui avait occupé cette maison aux jours de sa splendeur y avait apporté des meubles magnifiques. On en avait repris une partie; le reste avait été laissé là, oublié, négligé, moisissant dans la chambre ou entassé dans ce grenier. Deux immenses caisses d&#x27;emballage se tenaient debout, appuyées au mur du grenier. Il n&#x27;y avait qu&#x27;une petite fenêtre; à travers sa vitre terne et souillée glissait un jour douteux et rare qui tombait sur des chaises aux grands dossiers, sur des tables poudreuses qui avaient eu jadis de plus brillantes destinées. Ce grenier faisait rêver sorcières et revenants. Il avait aussi ses légendes qui augmentaient encore la terreur superstitieuse des nègres.</p>
 <p>Il y avait de cela quelques années, une négresse qui avait encouru la disgrâce de Legree y avait été renfermée plusieurs semaines. Que se passa-t-il là? Nous ne le dirons pas!... Mais un beau jour, on en retira le corps de cette malheureuse pour le porter en terre.... Et depuis, le bruit courut que l&#x27;on entendait des jurements, des malédictions et des coups retentissants, mêlés à des voix plaintives et aux gémissements du désespoir! Ces légendes parvinrent aux oreilles de Legree; il entra dans une violente colère, et fit serment que le premier qui s&#x27;aviserait jamais d&#x27;en reparler aurait l&#x27;occasion d&#x27;aller voir par lui-même ce qu&#x27;il en fallait croire.... Legree ne menaçait de rien moins que d&#x27;enchaîner le coupable dans le grenier toute une semaine; cette menace n&#x27;ébranla pas la croyance des nègres, mais elle suffit pour leur imposer silence.</p>
 <p>Peu à peu l&#x27;escalier qui conduisait au grenier, et même le vestibule qui conduisait à l&#x27;escalier, furent bientôt abandonnés de tout le monde. La peur empêchait de parler; on oublia.</p>
@@ -4445,7 +4498,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Legree tempêta, jura, menaça de jeter la porte à terre.... ce qu&#x27;il ne fit toutefois pas; il se ravisa et arpenta la chambre d&#x27;un pas inquiet. Cassy vit bien que la flèche avait touché le but, et depuis ce moment, avec la plus habile persévérance, elle ne cessa d&#x27;accroître les vaines terreurs de son maître.</p>
 <p>Elle planta dans les crevasses du toit des goulots de bouteilles, et le plus léger vent qui passait au travers se changeait en soupirs plaintifs et en gémissements douloureux, et, si le vent devenait plus fort, c&#x27;étaient des sanglots et des cris de désespoir.</p>
 <p>Quelquefois les esclaves entendaient tous ces bruits étranges, et le souvenir de la vieille légende leur revenait à l&#x27;esprit. Une sorte de terreur mystérieuse planait sur toute la maison. On n&#x27;osait pas s&#x27;en entretenir devant Legree; mais cette atmosphère d&#x27;invincible horreur l&#x27;enveloppait et pesait sur lui.</p>
-<h2>Il n&#x27;y a au monde que l&#x27;athée pour être superstitieux.</h2>
+<p>Il n&#x27;y a au monde que l&#x27;athée pour être superstitieux.</p>
 <p>Le chrétien se repose plein de calme dans sa foi en un père sage et souverain régulateur, dont la présence remplit d&#x27;ordre et de lumière le vide de l&#x27;inconnu.... Mais pour l&#x27;homme qui a détrôné Dieu, le monde des esprits est, suivant l&#x27;expression du poëte hébreu «un monde de ténèbres et l&#x27;ombre de la mort!» Pour lui, la vie et la mort sont peuplées de spectres et de fantômes terriblement inconnus, mystérieusement vagues!</p>
 <p>L&#x27;élément moral, endormi dans l&#x27;âme de Legree, avait été réveillé à chacune de ses rencontres avec Tom, mais réveillé pour rencontrer les terribles résistances de l&#x27;esprit du mal; et cependant il y avait en lui un frémissement, une émotion qui se faisait sentir jusque dans les abîmes du monde intérieur, chaque fois qu&#x27;il entendait une syllabe de ces prières et de ces hymnes.... et tout cela se convertissait en mystérieuses terreurs.</p>
 <p>Rien de plus étrange que l&#x27;influence de Cassy sur cet homme.</p>
@@ -4547,10 +4600,10 @@ h2 + p, .first { text-indent: 0; }
 <p>--Oh! taisez-vous, dit Emmeline, s&#x27;ils vous entendaient!</p>
 <p>--S&#x27;ils entendent quelque chose, ils se garderont bien de venir. Il n&#x27;y a pas de danger.... Nous pouvons faire tout le bruit que nous voudrons.... ça n&#x27;en sera que mieux.»</p>
 <p>Enfin le silence de minuit descendit sur la maison; Legree, maudissant sa mauvaise chance et méditant pour le lendemain de terribles vengeances, alla prosaïquement se mettre au lit.</p>
-<h2>CHAPITRE XL.</h2>
+<h2 class="chapter" id="c40">Chapitre XL.</h2>
 <p>Le martyr.</p>
 <p>Non le ciel n&#x27;oublie pas le juste: la vie peut lui refuser ses vulgaires faveurs; méprisé des hommes, brisé, le coeur saignant, il peut mourir; mais Dieu a marqué tous ses jours de douleur, il a accepté toutes ses larmes amères, et, dans le ciel, de longues années de bonheur le payeront de tout ce que ses enfants souffrent ici-bas.</p>
-<h2>BRYANT.</h2>
+<h3 class="sub">Bryant.</h3>
 <p>Le plus long voyage a son terme, la nuit la plus sombre aboutit à une aurore.... La fuite incessante, inexorable des heures, pousse le jour du méchant vers l&#x27;éternelle nuit, et la nuit du bon vers le jour éternel. Nous avons marché bien longtemps avec notre humble ami dans la vallée de l&#x27;esclavage. Nous avons traversé les champs en fleur de l&#x27;indulgence et de la bonté. Nous avons assisté aux séparations qui brisent le coeur, quand l&#x27;homme est arraché à tout ce qui lui est cher. Nous avons abordé avec lui dans cette île pleine de soleil, où des mains généreuses cachaient les chaînes sous les guirlandes de fleurs. Enfin, toujours près de lui, nous avons vu les derniers rayons de l&#x27;espérance terrestre s&#x27;éteindre dans les ombres. Nous avons vu comment, dans l&#x27;horreur des plus profondes ténèbres, le firmament de l&#x27;inconnu s&#x27;était tout à coup illuminé des splendeurs prophétiques des nouvelles étoiles.</p>
 <p>Et maintenant voici l&#x27;étoile du matin qui se lève sur la montagne! nous sentons des brises et des zéphyrs qui ne viennent pas de ce monde.... Voici que bientôt vont s&#x27;ouvrir les portes du jour éternel.</p>
 <p>La fuite d&#x27;Emmeline et de Cassy irrita au dernier point le caractère déjà si terrible de Legree. Ainsi qu&#x27;on devait bien s&#x27;y attendre, sa colère retomba sur la tête de Tom, innocent et sans défense. Quand Legree annonça cette fuite aux esclaves, il y eut chez Tom un éclair des yeux, un geste des mains, qui se tendirent vers le ciel. Legree vit tout. Il remarqua que Tom ne se joignait point à la meute des persécuteurs. Il songea bien à l&#x27;y contraindre, mais il connaissait l&#x27;inflexibilité des principes de Tom; il était trop pressé pour entrer maintenant en lutte avec lui.</p>
@@ -4623,7 +4676,7 @@ h2 + p, .first { text-indent: 0; }
 <p>«Pourquoi donc n&#x27;en avons-nous point entendu parler plus tôt? dit Sambo; mais je crois! je ne puis m&#x27;empêcher de croire!... Seigneur Jésus, ayez pitié de nous!</p>
 <p>--Pauvres créatures! disait Tom, que je voudrais donc souffrir encore pour vous conduire au Christ! O Seigneur! donne-moi ces deux âmes encore!»</p>
 <p>Dieu entendit cette prière.</p>
-<h2>CHAPITRE XLI.</h2>
+<h2 class="chapter" id="c41">Chapitre XLI.</h2>
 <p>Le jeune maître.</p>
 <p>Deux jours plus tard, un jeune homme, conduisant une légère voiture, traversait l&#x27;avenue bordée des arbres de Chine. Il jeta vivement les rênes sur le cou des chevaux et demanda où était le maître du logis.</p>
 <p>Ce jeune homme était Georges Shelby.</p>
@@ -4673,9 +4726,9 @@ h2 + p, .first { text-indent: 0; }
 <p>«Qui donc, qui donc nous séparera de l&#x27;amour du Christ?» murmurait-il d&#x27;une voix qui luttait contre les dernières faiblesses.... et il s&#x27;endormit avec un sourire.</p>
 <p>Georges s&#x27;assit, immobile et respectueux.... Pour lui cette place était sainte.... Il ferma ces yeux éteints pour toujours.... et, quand il se releva, il n&#x27;avait plus dans l&#x27;âme que cette pensée, exprimée par son vieil ami:</p>
 <p>«Être chrétien.... quelle chose!»</p>
-<h2>Il se retourna. Legree était debout derrière lui, la mine refrognée....</h2>
+<p>Il se retourna. Legree était debout derrière lui, la mine refrognée....</p>
 <p>L&#x27;influence de cette scène de mort avait calmé la fougue impétueuse du jeune homme. La présence de Legree lui était cependant toujours pénible. Il voulait s&#x27;éloigner de lui, en échangeant aussi peu de paroles qu&#x27;il serait possible.</p>
-<h2>Il fixa sur le planteur son oeil noir et perçant, et montrant le cadavre:</h2>
+<p>Il fixa sur le planteur son oeil noir et perçant, et montrant le cadavre:</p>
 <p>«Vous avez eu de lui tout ce que vous avez pu en tirer. Combien pour le corps? Je veux l&#x27;emporter et lui donner une honnête sépulture....</p>
 <p>--Je ne vends pas les nègres morts, dit Legree d&#x27;un ton rogue: libre à vous de l&#x27;enterrer où vous voudrez et quand vous voudrez.</p>
 <p>--Enfants, dit Georges, d&#x27;un ton d&#x27;autorité, à deux ou trois nègres qui se trouvaient là et qui regardaient le corps, aidez-moi à le soulever et à le mettre dans ma voiture: ensuite vous me donnerez une bêche!»</p>
@@ -4706,7 +4759,7 @@ h2 + p, .first { text-indent: 0; }
 <p>A quoi bon? Son Dieu sait où il est couché, et il le relèvera,--immortel!--pour apparaître avec lui dans sa gloire.</p>
 <p>Ne le plaignez point: ni cette vie ni cette mort ne demandent votre pitié. Ce n&#x27;est pas dans les splendeurs de la puissance que Dieu place ses héros; c&#x27;est dans le dévouement, c&#x27;est dans le sacrifice, c&#x27;est dans l&#x27;amour qui souffre.... Bénis soient les hommes appelés à partager le sort de Jésus, et à porter avec patience sa croix sur leurs épaules! C&#x27;est d&#x27;eux qu&#x27;il a été écrit:</p>
 <p>«Bienheureux ceux qui pleurent! car ils seront consolés.»</p>
-<h2>CHAPITRE XLII.</h2>
+<h2 class="chapter" id="c42">Chapitre XLII.</h2>
 <p>Une histoire de revenants véritable.</p>
 <p>On comprendra facilement que les histoires de revenants et de fantômes durent se propager activement parmi les esclaves de Legree.</p>
 <p>On se disait à l&#x27;oreille que, pendant la nuit, on entendait des bruits de pas qui descendaient l&#x27;escalier du grenier et parcouraient toute la maison. C&#x27;est en vain que l&#x27;on avait fermé au verrou la porte des étages supérieurs. Le fantôme avait une double clef dans sa poche, ou bien, en vertu du privilége qu&#x27;ont eu de tout temps les fantômes, il passait à travers le trou de la serrure, et continuait sa promenade, comme devant, avec une liberté vraiment alarmante.</p>
@@ -4717,7 +4770,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Le murmure de ces conversations arrivait jusqu&#x27;à Legree. Plus on voulait le lui cacher et plus il en fut impressionné. Il but plus d&#x27;eau-de-vie que jamais, eut la tête toujours échauffée, et jura un peu plus fort qu&#x27;auparavant.... pendant le jour. La nuit, il rêvait, et ses visions prenaient un caractère de moins en moins agréable. La nuit qui suivit l&#x27;enterrement de Tom, il se rendit à la ville voisine pour faire une orgie. Elle fut complète. Il revint tard, fatigué, ferma sa porte, retira la clef et se mit au lit.</p>
 <p>On a beau dire, quelque peine qu&#x27;il se donne pour la soumettre, l&#x27;âme d&#x27;un méchant homme est pour lui une hôtesse inquiète et terrible! Qui peut comprendre ses doutes et ses terreurs? Qui pourra sonder ses formidables peut-être? ces frissons et ces tremblements, qu&#x27;il ne peut pas plus réprimer qu&#x27;il ne peut anéantir l&#x27;éternité qui l&#x27;attend? Oh! le fou qui ferme sa porte pour empêcher les fantômes d&#x27;entrer, et qui renferme dans sa poitrine un fantôme qu&#x27;il n&#x27;ose pas affronter seul, et dont la voix étouffée, et comme accablée par la montagne que le monde jette dessus, retentit pourtant, comme la trompette du jugement dernier!</p>
 <p>Ceci n&#x27;empêcha pas Legree de fermer sa porte à clef et de mettre une chaise contre la porte. Il plaça une veilleuse à la tête de son lit et ses pistolets à côté. Il examina les espagnolettes et la ferrure des fenêtres, puis il jura qu&#x27;il ne craignait ni les anges ni les démons.</p>
-<h2>Il s&#x27;endormit.</h2>
+<p>Il s&#x27;endormit.</p>
 <p>Il dormit, car il était fatigué; il dormit profondément. Mais il passa bientôt comme une ombre sur son sommeil, une terreur, la crainte vague de quelque chose d&#x27;affreux; il crut reconnaître le linceul de sa mère; mais c&#x27;était Cassy qui le portait; elle le tenait, elle le montrait à Legree.... Il entendit un bruit confus de cris et de gémissements, et au milieu de tout cela il sentait qu&#x27;il dormait, et il faisait mille efforts pour se réveiller. Il se réveilla à moitié.... Il était bien sûr que quelque chose venait dans sa chambre. Il s&#x27;apercevait que la porte était ouverte.... mais il ne pouvait remuer ni les pieds, ni les mains.... Enfin il se retourna d&#x27;une pièce..... La porte était ouverte; il vit une main qui éteignait la lampe.</p>
 <p>La lune était voilée de nuages et de brouillards, et il vit pourtant, il vit quelque chose de blanc qui glissait.... Il entendit le petit frôlement des vêtements du fantôme.... Le fantôme se tint immobile auprès de son lit.... Une forte main toucha sa main trois fois, et une voix qui parlait tout bas, mais avec un accent terrible, répéta par trois fois: «Viens! viens! viens!...» Il suait de peur; mais, sans qu&#x27;il sût quand ni comment, la chose avait disparu. Legree sauta du lit, il courut à la porte; elle était fermée et verrouillée.... Legree perdit connaissance.</p>
 <p>A partir de ce moment, Legree fut plus intrépide buveur que jamais: il ne buvait plus, comme auparavant, avec prudence et réserve; il buvait avec fureur.... encore.... encore.... toujours!</p>
@@ -4777,7 +4830,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Pauvre Cassy! Quand elle fut revenue à elle, elle se tourna du côté du mur, et pleura et sanglota comme un enfant. O mères qui me lisez! vous pouvez peut-être dire quelles étaient alors ses pensées. Peut-être aussi ne le pouvez-vous pas! Mais, en ce moment, elle sentit que Dieu avait pitié d&#x27;elle et qu&#x27;elle reverrait sa fille....</p>
 <p>Et en effet, quelques mois après....</p>
 <p>Mais n&#x27;anticipons point sur les événements.</p>
-<h2>CHAPITRE XLIII.</h2>
+<h2 class="chapter" id="c43">Chapitre XLIII.</h2>
 <p>Résultats.</p>
 <p>Le reste de l&#x27;histoire sera bientôt dit.</p>
 <p>Georges Shelby, comme tout jeune homme l&#x27;eût été à sa place, fut vivement intéressé par ce qu&#x27;il y avait de romanesque dans ce nouvel incident.... Il était d&#x27;ailleurs humain et bon. Il fit parvenir à Cassy le billet de vente d&#x27;Élisa; la date, le nom, tout coïncidait. Il ne restait plus dans son esprit le moindre doute sur l&#x27;identité de l&#x27;enfant. Il n&#x27;y avait plus qu&#x27;une chose à faire: se mettre sur la trace des fugitifs.</p>
@@ -4843,14 +4896,14 @@ h2 + p, .first { text-indent: 0; }
 <p>«Je me rends justice, je sens que je suis trop faible pour cette mission.... J&#x27;ai dans les veines trop de ce sang brûlé et corrompu des Saxons.... Mais j&#x27;ai tout près de moi un éloquent prédicateur de l&#x27;Évangile.... ma femme.... ma belle Élisa! Quand je m&#x27;égare, son doux esprit me retient; elle remet sous mes yeux la mission chrétienne de notre race. Comme patriote chrétien, comme prédicateur de l&#x27;Évangile, je retourne vers mon pays, ma glorieuse Afrique, la terre de mon choix! C&#x27;est à elle, dans mon coeur, que j&#x27;applique parfois ces splendides paroles des prophètes: «Parce que tu es abandonnée et détestée, et que les hommes ne voulaient plus te traverser, je te donnerai une éternelle suprématie, qui fera la joie de tes générations sans nombre!»</p>
 <p>«Vous me direz que je suis un enthousiaste, que je n&#x27;ai pas réfléchi à ce que j&#x27;entreprends.... Au contraire, j&#x27;ai pesé et calculé. Je vais à Libéria, non pas comme à un Élysée romanesque, mais comme à un champ de travail.... et je travaillerai des deux mains.... je travaillerai dur.... malgré les difficultés et les obstacles.... je travaillerai jusqu&#x27;à ce que je meure! Voilà pourquoi je pars.... je n&#x27;aurai pas de déceptions.</p>
 <p>«Quoi que vous pensiez de ma détermination, gardez-moi toujours votre confiance.... et pensez, quoi que je fasse, que j&#x27;agirai toujours avec un coeur dévoué à mon peuple!</p>
-<h2>«GEORGES HARRIS.»</h2>
+<p>«GEORGES HARRIS.»</p>
 <p>.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .</p>
 <p>Quelques semaines après, Georges, sa soeur, sa mère, sa femme et ses enfants s&#x27;embarquaient pour l&#x27;Afrique. Nous nous trompons fort, ou le monde entendra encore parler de lui!</p>
 <p>Nous n&#x27;avons rien à dire de nos autres personnages.</p>
 <p>Un mot pourtant sur miss Ophélia et sur Topsy, et un chapitre d&#x27;adieu, que nous dédierons à Georges Shelby!</p>
 <p>Miss Ophélia emmena Topsy avec elle dans le Vermont. Grande fut la surprise de ce respectable corps délibérant, qu&#x27;une bouche de la Nouvelle-Angleterre appelle toujours «nos gens.» Nos gens pensèrent donc tout d&#x27;abord que c&#x27;était une addition aussi bizarre qu&#x27;inutile à leur maison, très-complétement montée. Mais les efforts de miss Ophélia pour remplir le devoir d&#x27;éducation qu&#x27;elle avait accepté avaient été couronnés d&#x27;un tel succès, que Topsy se concilia rapidement les bonnes grâces et les faveurs de la famille et de tout le voisinage. Parvenue à l&#x27;adolescence, elle demanda à être baptisée, et elle devint membre de l&#x27;Église chrétienne de sa ville. Elle montra tant d&#x27;intelligence, de zèle, d&#x27;activité et un si vif désir de faire le bien, qu&#x27;on l&#x27;envoya, en qualité de missionnaire, dans une des stations d&#x27;Afrique; et cet actif et ingénieux esprit, qui avait fait d&#x27;elle un enfant si remuant et si vif, elle l&#x27;employa, d&#x27;une façon plus utile et plus noble, à instruire les enfants de son pays.</p>
 <p>Peut-être quelques mères seront heureuses d&#x27;apprendre que les recherches de Mme de Thou la mirent enfin sur les traces du fils de Cassy. C&#x27;était un grand jeune homme énergique; il avait réussi à s&#x27;enfuir quelques années avant sa mère. Il avait été accueilli et instruit dans le nord par des amis dévoués au malheur. Il rejoindra bientôt sa famille en Afrique.</p>
-<h2>CHAPITRE XLIV.</h2>
+<h2 class="chapter" id="c44">Chapitre XLIV.</h2>
 <p>Le libérateur.</p>
 <p>Georges Shelby n&#x27;avait écrit qu&#x27;une seule ligne à sa mère pour lui apprendre le moment de son retour. Il n&#x27;avait pas eu le coeur de raconter la scène de mort à laquelle il avait assisté; il avait essayé plusieurs fois.... ses souvenirs l&#x27;avaient comme suffoqué. Il finissait toujours par déchirer son papier, essuyait ses yeux et sortait pour retrouver un peu de calme.</p>
 <p>Toute la maison fut en rumeur joyeuse le jour où l&#x27;on attendait l&#x27;arrivée du jeune maître.</p>
@@ -4886,7 +4939,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Chloé appuya sa tête sur l&#x27;épaule de sa maîtresse, et sanglota.</p>
 <p>«Oh! madame excusez-moi! mon coeur se brise.... voilà tout!</p>
 <p>--Je comprends, Chloé, dit Mme Shelby en versant des larmes abondantes. Je ne puis vous consoler.... Jésus le peut: il guérit le coeur malade, il ferme les blessures....»</p>
-<h2>Il y eut quelques instants de silence, et ils pleurèrent tous ensemble.</h2>
+<p>Il y eut quelques instants de silence, et ils pleurèrent tous ensemble.</p>
 <p>Enfin, Georges s&#x27;assit auprès de l&#x27;affligée et, avec une éloquence pleine de simplicité, il lui dépeignit cette scène de mort, glorieuse comme un triomphe, et répéta les paroles d&#x27;amour et de tendresse de son dernier message.</p>
 <p>Un mois après, tous les esclaves de l&#x27;habitation Shelby étaient réunis dans le grand salon, pour entendre une communication de leur jeune maître.</p>
 <p>Quelle fut leur surprise, quand ils le virent paraître avec une liasse de papiers! c&#x27;étaient leurs billets d&#x27;affranchissement, il les lut tous successivement et les leur présenta à chacun: c&#x27;étaient des larmes, des sanglots et des acclamations!</p>
@@ -4897,9 +4950,9 @@ h2 + p, .first { text-indent: 0; }
 <p>Pécheurs rachetés, enfin voici l&#x27;heure, L&#x27;heure de rentrer dans votre demeure!</p>
 <p>«Encore un mot, dit Georges en mettant un terme à toutes ces félicitations. Vous vous rappelez, leur dit-il, notre bon père Tom?»</p>
 <p>Il leur fit alors un récit rapide de sa mort, et leur redit les adieux dont il s&#x27;était chargé pour tous les habitants de la ferme.</p>
-<h2>Il ajouta:</h2>
+<p>Il ajouta:</p>
 <p>«C&#x27;est sur son tombeau, mes amis, que j&#x27;ai résolu devant Dieu que je ne posséderais jamais un esclave, tant qu&#x27;il me serait possible de l&#x27;affranchir.... et que personne, à cause de moi, ne courrait le risque d&#x27;être arraché à son foyer, à sa famille, pour aller mourir, comme il est mort, sur une plantation solitaire.... Amis! chaque fois que vous vous réjouirez d&#x27;être libres, songez que votre liberté, vous la devez à cette pauvre bonne âme, et payez votre dette en tendresse à sa femme et à ses enfants.... Pensez à votre liberté chaque fois que vous verrez la case de l&#x27;oncle Tom; qu&#x27;elle vous rappelle l&#x27;exemple qu&#x27;il vous a laissé, marchez sur ses traces, et, comme lui, soyez honnêtes, fidèles et chrétiens.»</p>
-<h2>CHAPITRE XLV.</h2>
+<h2 class="chapter" id="c45">Chapitre XLV.</h2>
 <p>Quelques remarques pour conclure.</p>
 <p>On a souvent demandé à l&#x27;auteur si cette histoire était réelle. A des questions venues de divers pays, nous devons faire une réponse générale.</p>
 <p>Tous les épisodes qui composent ce récit sont de la plus sévère authenticité. L&#x27;auteur en a été le témoin ou il les tient de ses amis personnels. Les caractères sont des portraits d&#x27;après nature. La plupart des paroles qu&#x27;il met dans la bouche des personnes ont été prononcées par elles; c&#x27;est une fidélité textuelle.</p>
@@ -4971,10 +5024,9 @@ h2 + p, .first { text-indent: 0; }
 <p>Mais qui pourra donc habiter le jour de son apparition? «Car ce jour brûlera comme une fournaise, et il apparaîtra, irrécusable témoin, contre ceux qui volent le salaire des pauvres, qui dépouillent l&#x27;orphelin et la veuve et qui violent les droits de l&#x27;étranger, et il mettra en pièces l&#x27;oppresseur.»</p>
 <p>Ah! ces terribles paroles ne sont-elles point adressées à la nation qui porte dans son sein une si grande injustice? Chrétiens! chaque fois que vous priez pour l&#x27;avènement du royaume du Christ, pouvez-vous oublier les menaçantes prophéties qui l&#x27;accompagnent? Redoutable association! le jour des vengeances dans l&#x27;année de la Rédemption!</p>
 <p>Et cependant, un jour de grâce nous est accordé. Le nord comme le sud a été coupable devant Dieu, et l&#x27;Église du Christ a un terrible compte à rendre! Ce n&#x27;est pas en se réunissant pour protéger l&#x27;injustice et la cruauté, et en mettant en commun leur capital de péchés, que les États de l&#x27;Union américaine parviendront à se sauver: ils se sauveront par le repentir, par la justice, par la pitié. La loi éternelle de la pesanteur qui précipite la meule de moulin au fond de l&#x27;Océan n&#x27;est pas plus certaine que cette loi, éternelle aussi, qui veut que l&#x27;injustice et la cruauté fassent descendre sur les nations la colère du Dieu tout-puissant!</p>
-<h2>FIN.</h2>
-<h2>TABLE DES CHAPITRES.</h2>
-<h2>Préface                                                      Page. I</h2>
-<p>CHAPITRE I.--Où le lecteur fait connaissance avec un homme vraiment humain                                                  1</p>
+<h3 class="sub">Fin — Table des chapitres.</h3>
+<h3 class="sub">Préface                                                      Page. I</h3>
+<h2 class="chapter" id="c46">Chapitre I.--Où le lecteur fait connaissance avec un homme vraiment humain                                                  1</h2>
 <p>CHAP. II.--La mère                                                11</p>
 <p>CHAP. III.--Époux et père                                         14</p>
 <p>CHAP. IV.--Une soirée dans la case de l&#x27;oncle Tom                 19</p>
@@ -5024,5 +5076,5 @@ h2 + p, .first { text-indent: 0; }
 <p>Liste des modifications:</p>
 <p>Page   4: «Cudjoex» remplacé par «Cudjox» (comme le vieux père Cudjox) Page  32: «cemme» par «comme» (et poussa comme un gémissement) Page  53: «la» par «le» (ajouta le trafiquant) Page  58: «attrappe» par «attrape» (s&#x27;il attrape jamais une de mes femmes) Page  65: «pous» par «pour» (Nous allons travailler ici pour notre compte) Page  69: «maîtreese» par «maîtresse» (et dites à votre maîtresse) Page  71: «snrtout» par «surtout» (surtout quand il voit agir) Page 125: «Halley» par «Haley» (reprit Haley en crachant) Page 136: «chuchotter» par «chuchoter» (chuchoter tout bas) Page 145: «chétiennes» par «chrétiennes» (toutes les qualités morales et chrétiennes) Page 200: «cuillière» par «cuiller» (au bout de sa cuiller à pouding) Page 204: «sacripans» par «sacripants» (une bande de sacripants dans nos maisons) Page 239: «possseseur» par «posseseur» (quand je suis devenu possesseur d&#x27;esclaves) Page 246: «qu&#x27;elle» par «qu&#x27;elles» (qu&#x27;elles ne conviennent pas) Page 302: «mouriez» par «mourriez» (Et si vous mourriez auparavant?...) Page 304: «d&#x27;un» par «d&#x27;une» (à l&#x27;abri d&#x27;une moustiquaire de soie) Page 309: «assités» par «assité» (assisté de miss Ophélia et de Tom) Page 389: «formée» par «formé» (elle avait formé mille plans) Page 399: «n&#x27;oubie» par «n&#x27;oublie» (Non le ciel n&#x27;oublie pas le juste) Page 415: «baut» par «haut» (Cassy, du haut de son observatoire) Page 423: «allanguie» par «alanguie» (était abâtardie, épuisée, alanguie;) Page 432: rajouté «de» (Pendant de longues années) Page 439: «Kentucki» par «Kentucky» Homogénéisation: remplacement de «hymme» par «hymne» pages: 252, 334, 386, 392</p>
 <p>End of Project Gutenberg&#x27;s La case de l&#x27;oncle Tom, by Harriet Beecher Stowe</p>
-<p class="colophon">Texte du domaine public, source : Project Gutenberg (#38704). Traduction : Enault, Louis († 1900). Édition numérique EbookClassics.</p>
+<p class="colophon">Texte du domaine public. Édition numérique EbookClassics.</p>
 </body></html>

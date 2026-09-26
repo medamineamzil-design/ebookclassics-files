@@ -1,86 +1,82 @@
 <!DOCTYPE html>
 <html lang="it"><head><meta charset="utf-8">
-<title>The Adventures of Pinocchio</title><style>
-@page { margin: 22mm 20mm; }
-body { font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', serif; line-height: 1.6;
-       color: #1f1a14; max-width: 38em; margin: 0 auto; padding: 1.5em 1.2em; }
-h1 { font-size: 2.1em; text-align: center; margin: 1.5em 0 .2em; letter-spacing: .01em; }
-.author { text-align: center; font-size: 1.15em; font-style: italic; margin-bottom: 3em; color: #5a4a36; }
-h2 { font-size: 1.25em; text-align: center; margin: 2.6em 0 1.2em; letter-spacing: .06em;
-     text-transform: uppercase; font-weight: normal; page-break-before: always; break-before: page; }
-p { margin: 0; text-indent: 1.4em; text-align: justify; hyphens: auto; }
-h2 + p, .first { text-indent: 0; }
-.colophon { font-size: .85em; color: #6b5d45; text-align: center; margin-top: 4em; text-indent: 0; }
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Adventures of Pinocchio — Carlo Collodi</title><style>
+:root{--paper:#fbf8f1;--ink:#1f1b16;--muted:#6f6352;--accent:#9a6b2f;--rule:#e4dccb}
+@media (prefers-color-scheme:dark){:root{--paper:#16140f;--ink:#ece6d8;--muted:#a79c88;--accent:#d8a95e;--rule:#2e2a22}}
+html{background:var(--paper)}
+body{font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Libertinus Serif",Georgia,serif;color:var(--ink);
+     background:var(--paper);line-height:1.65;font-size:1.12rem;max-width:36em;margin:0 auto;padding:2.5em 1.25em 5em}
+.titlepage{text-align:center;min-height:70vh;display:flex;flex-direction:column;justify-content:center;gap:.6em;
+           border-bottom:1px solid var(--rule);margin-bottom:2.5em;padding-bottom:2.5em}
+.titlepage img{max-width:260px;width:60%;margin:0 auto 1.5em;border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+h1{font-size:2.4em;line-height:1.15;font-weight:600;margin:0;letter-spacing:-.01em}
+.author{font-style:italic;font-size:1.25em;color:var(--accent);margin:0}
+.translator{font-size:.95em;color:var(--muted);margin:0}
+nav.toc{margin:0 0 3em}
+nav.toc h2{font-size:.85em;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:left;margin:0 0 .8em}
+nav.toc ol{list-style:none;padding:0;margin:0;columns:1}
+nav.toc li{margin:.25em 0}
+nav.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent}
+nav.toc a:hover{border-color:var(--accent)}
+h2.chapter{font-size:1.45em;font-weight:600;text-align:center;margin:3.5em 0 1.6em;line-height:1.3}
+h2.chapter::before{content:"";display:block;width:3em;height:2px;background:var(--accent);margin:0 auto 1.1em}
+p{margin:0;text-indent:1.5em;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+h2.chapter + p, .titlepage + p{text-indent:0}
+h2.chapter + p::first-letter{font-size:3.1em;float:left;line-height:.85;padding:.08em .08em 0 0;color:var(--accent);font-weight:600}
+.colophon{margin-top:5em;padding-top:1.5em;border-top:1px solid var(--rule);text-align:center;color:var(--muted);font-size:.85em;text-indent:0}
+h3.sub{font-size:1em;font-weight:600;font-variant:small-caps;letter-spacing:.04em;text-align:center;margin:2.2em 0 1em}
+h3.sub + p{text-indent:0}
+@media print{h2.chapter{break-before:page}}
 </style></head><body>
+<header class="titlepage">
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjI0MDAiIHZpZXdCb3g9IjAgMCAxNjAwIDI0MDAiPgo8cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSIyNDAwIiBmaWxsPSIjMGYyYTQ0Ii8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjMwMCIgZmlsbD0iIzhlY2FlNiIgb3BhY2l0eT0iLjkyIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMGYyYTQ0IiBzdHJva2Utd2lkdGg9IjEyIiBvcGFjaXR5PSIuNSIvPgo8Y2lyY2xlIGN4PSIxMTIwIiBjeT0iNTYwIiByPSIxMjAiIGZpbGw9IiMwZjJhNDQiIG9wYWNpdHk9Ii4xOCIvPgo8cmVjdCB4PSIxNjAiIHk9IjkzMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIxMCIgZmlsbD0iIzhlY2FlNiIvPgo8dGV4dCB4PSIxNjAiIHk9IjEwOTgiIGZvbnQtc2l6ZT0iMTUwIiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNlZWY2ZmIiPlRoZSBBZHZlbnR1cmVzPC90ZXh0Pjx0ZXh0IHg9IjE2MCIgeT0iMTI2MiIgZm9udC1zaXplPSIxNTAiIGZvbnQtd2VpZ2h0PSI2MDAiIGZvbnQtZmFtaWx5PSJMaWJlcnRpbnVzIFNlcmlmLCBHZW9yZ2lhLCBzZXJpZiIgZmlsbD0iI2VlZjZmYiI+b2YgUGlub2NjaGlvPC90ZXh0Pgo8dGV4dCB4PSIxNjAiIHk9IjE0OTgiIGZvbnQtc2l6ZT0iNjgiIGZvbnQtc3R5bGU9Iml0YWxpYyIgZm9udC1mYW1pbHk9IkxpYmVydGludXMgU2VyaWYsIEdlb3JnaWEsIHNlcmlmIiBmaWxsPSIjOGVjYWU2Ij5DYXJsbyBDb2xsb2RpPC90ZXh0Pgo8dGV4dCB4PSIxNjAiIHk9IjIyMzAiIGZvbnQtc2l6ZT0iNDQiIGxldHRlci1zcGFjaW5nPSIxNCIgZm9udC1mYW1pbHk9IkxpYmVydGludXMgU2VyaWYsIEdlb3JnaWEsIHNlcmlmIiBmaWxsPSIjZWVmNmZiIiBvcGFjaXR5PSIuNzUiPkVCT09LQ0xBU1NJQ1M8L3RleHQ+Cjwvc3ZnPg==" alt="">
 <h1>The Adventures of Pinocchio</h1>
 <p class="author">Carlo Collodi</p>
-<h2>C. COLLODI</h2>
-<p>Le Avventure di Pinocchio</p>
-<p>Storia di un burattino</p>
-<p>illustrata da CARLO CHIOSTRI</p>
-<p>Incisioni di A. BONGINI</p>
-<p>Nuova edizione</p>
-<p>FIRENZE R. Bemporad &amp; Figlio — Editori.</p>
-<p>PROPRIETÀ LETTERARIA DEGLI EDITORI R. BEMPORAD &amp; FIGLIO</p>
-<p>12 — 1902. — Tip. di V. Sieni, Corso de&#x27; Tintori, Firenze.</p>
-<h2>I.</h2>
-<p>Come andò che Maestro Ciliegia, falegname trovò un pezzo di legno che piangeva e rideva come un bambino.</p>
-<p>— C&#x27;era una volta....</p>
-<p>— Un re! — diranno subito i miei piccoli lettori.</p>
-<p>— No, ragazzi, avete sbagliato. C&#x27;era una volta un pezzo di legno.</p>
-<p>Non era un legno di lusso, ma un semplice pezzo da catasta, di quelli che d&#x27;inverno si mettono nelle stufe e nei caminetti per accendere il fuoco e per riscaldare le stanze.</p>
+</header>
+<nav class="toc"><h2>Indice</h2><ol>
+<li><a href="#c1">III.</a></li>
+<li><a href="#c2">IV.</a></li>
+<li><a href="#c3">V.</a></li>
+<li><a href="#c4">VII.</a></li>
+<li><a href="#c5">VIII.</a></li>
+<li><a href="#c6">IX.</a></li>
+<li><a href="#c7">X.</a></li>
+<li><a href="#c8">XI.</a></li>
+<li><a href="#c9">XII.</a></li>
+<li><a href="#c10">XIII.</a></li>
+<li><a href="#c11">XIV.</a></li>
+<li><a href="#c12">XV.</a></li>
+<li><a href="#c13">XVI.</a></li>
+<li><a href="#c14">XVII.</a></li>
+<li><a href="#c15">XVIII.</a></li>
+<li><a href="#c16">XIX.</a></li>
+<li><a href="#c17">XX.</a></li>
+<li><a href="#c18">XXI.</a></li>
+<li><a href="#c19">XXII.</a></li>
+<li><a href="#c20">XXIII.</a></li>
+<li><a href="#c21">XXIV.</a></li>
+<li><a href="#c22">XXV.</a></li>
+<li><a href="#c23">XXVI.</a></li>
+<li><a href="#c24">XXVII.</a></li>
+<li><a href="#c25">XXVIII.</a></li>
+<li><a href="#c26">XXIX.</a></li>
+<li><a href="#c27">XXX.</a></li>
+<li><a href="#c28">XXXI.</a></li>
+<li><a href="#c29">XXXII.</a></li>
+<li><a href="#c30">XXXIII.</a></li>
+<li><a href="#c31">XXXIV.</a></li>
+<li><a href="#c32">XXXV.</a></li>
+<li><a href="#c33">XXXVI.</a></li>
+</ol></nav>
 <p>Non so come andasse, ma il fatto gli è che un bel giorno questo pezzo di legno capitò nella bottega di un vecchio falegname, il quale aveva nome mastr&#x27;Antonio, se non che tutti lo chiamavano maestro Ciliegia, per via della punta del suo naso, che era sempre lustra e paonazza, come una ciliegia matura.</p>
-<p>Appena maestro Ciliegia ebbe visto quel pezzo di legno, si rallegrò tutto; e dandosi una fregatina di mani per la contentezza, borbottò a mezza voce:</p>
-<p>— Questo legno è capitato a tempo; voglio servirmene per fare una gamba di tavolino. —</p>
 <p>Detto fatto, prese subito l&#x27;ascia arrotata per cominciare a levargli la scorza e a digrossarlo; ma quando fu lì per lasciare andare la prima asciata, rimase col braccio sospeso in aria, perchè sentì una vocina sottile sottile, che disse raccomandandosi:</p>
-<p>— Non mi picchiar tanto forte! —</p>
-<p>Figuratevi come rimase quel buon vecchio di maestro Ciliegia!</p>
 <p>Girò gli occhi smarriti intorno alla stanza per vedere di dove mai poteva essere uscita quella vocina, e non vide nessuno! Guardò sotto il banco, e nessuno: guardò dentro un armadio che stava sempre chiuso, e nessuno; guardò nel corbello dei trucioli e della segatura, e nessuno; aprì l&#x27;uscio di bottega per dare un&#x27;occhiata anche sulla strada, e nessuno. O dunque?...</p>
-<p>— Ho capito; — disse allora ridendo e grattandosi la parrucca — si vede che quella vocina me la son figurata io. Rimettiamoci a lavorare. —</p>
-<p>E ripresa l&#x27;ascia in mano, tirò giù un solennissimo colpo sul pezzo di legno.</p>
-<p>— Ohi! tu m&#x27;hai fatto male! — gridò rammaricandosi la solita vocina.</p>
-<p>Questa volta maestro Ciliegia restò di stucco, cogli occhi fuori del capo per la paura, colla bocca spalancata e colla lingua giù ciondoloni fino al mento, come un mascherone da fontana.</p>
-<p>Appena riebbe l&#x27;uso della parola, cominciò a dire tremando e balbettando dallo spavento:</p>
 <p>— Ma di dove sarà uscita questa vocina che ha detto ohi?... Eppure qui non c&#x27;è anima viva. Che sia per caso questo pezzo di legno che abbia imparato a piangere e a lamentarsi come un bambino? Io non lo posso credere. Questo legno eccolo qui; è un pezzo di legno da caminetto, come tutti gli altri, e a buttarlo sul fuoco, c&#x27;è da far bollire una pentola di fagioli.... O dunque? Che ci sia nascosto dentro qualcuno? Se c&#x27;è nascosto qualcuno, tanto peggio per lui. Ora l&#x27;accomodo io! —</p>
-<p>E così dicendo, agguantò con tutt&#x27;e due le mani quel povero pezzo di legno, e si pose a sbatacchiarlo senza carità contro le pareti della stanza.</p>
-<p>Poi si messe in ascolto, per sentire se c&#x27;era qualche vocina che si lamentasse. Aspettò due minuti, e nulla; cinque minuti, e nulla; dieci minuti, e nulla!</p>
-<p>— Ho capito — disse allora sforzandosi di ridere e arruffandosi la parrucca — si vede che quella vocina che ha detto ohi, me la son figurata io! Rimettiamoci a lavorare. —</p>
-<p>E perchè gli era entrato addosso una gran paura, si provò a canterellare per farsi un po&#x27; di coraggio.</p>
 <p>Intanto, posata da una parte l&#x27;ascia, prese in mano la pialla, per piallare e tirare a pulimento il pezzo di legno; ma nel mentre che lo piallava in su e in giù, sentì la solita vocina che gli disse ridendo:</p>
-<p>— Smetti! tu mi fai il pizzicorino sul corpo! —</p>
-<p>Questa volta il povero maestro Ciliegia cadde giù come fulminato. Quando riaprì gli occhi, si trovò seduto per terra.</p>
-<p>Il suo viso pareva trasfigurito, e perfino la punta del naso, di paonazza come era quasi sempre, gli era diventata turchina dalla gran paura.</p>
-<h2>II.</h2>
-<p>Maestro Ciliegia regala il pezzo di legno al suo amico Geppetto, il quale lo prende per fabbricarsi un burattino maraviglioso, che sappia ballare, tirar di scherma e fare i salti mortali.</p>
-<p>In quel punto fu bussato alla porta.</p>
-<p>— Passate pure, — disse il falegname, senza aver la forza di rizzarsi in piedi.</p>
 <p>Allora entrò in bottega un vecchietto tutto arzillo, il quale aveva nome Geppetto; ma i ragazzi del vicinato, quando lo volevano far montare su tutte le furie, lo chiamavano col soprannome di Polendina, a motivo della sua parrucca gialla, che somigliava moltissimo alla polendina di granturco.</p>
-<p>Geppetto era bizzosissimo. Guai a chiamarlo Polendina! Diventava subito una bestia, e non c&#x27;era più verso di tenerlo.</p>
-<p>— Buon giorno, mastr&#x27;Antonio, — disse Geppetto. — Che cosa fate costì per terra?</p>
-<p>— Insegno l&#x27;abbaco alle formicole.</p>
-<p>— Buon pro vi faccia.</p>
-<p>— Chi vi ha portato da me, compar Geppetto?</p>
-<p>— Le gambe. Sappiate, mastr&#x27;Antonio, che son venuto da voi, per chiedervi un favore.</p>
-<p>— Eccomi qui, pronto a servirvi, — replicò il falegname rizzandosi su i ginocchi.</p>
-<p>— Stamani m&#x27;è piovuta nel cervello un&#x27;idea.</p>
-<p>— Sentiamola.</p>
 <p>— Ho pensato di fabbricarmi da me un bel burattino di legno: ma un burattino maraviglioso, che sappia ballare, tirar di scherma e fare i salti mortali. Con questo burattino voglio girare il mondo, per buscarmi un tozzo di pane e un bicchier di vino: che ve ne pare?</p>
-<p>— Bravo Polendina! — gridò la solita vocina, che non si capiva di dove uscisse.</p>
-<p>A sentirsi chiamar Polendina, compar Geppetto diventò rosso come un peperone dalla bizza, e voltandosi verso il falegname, gli disse imbestialito:</p>
-<p>— Perchè mi offendete?</p>
-<p>— Chi vi offende?</p>
-<p>— Mi avete detto Polendina!</p>
-<p>— Non sono stato io.</p>
-<p>— Sta&#x27; un po&#x27; a vedere che sarò stato io! Io dico che siete stato voi.</p>
-<p>— No!</p>
-<p>— Sì!</p>
-<p>— No!</p>
-<p>— Sì! —</p>
-<p>E riscaldandosi sempre più, vennero dalle parole ai fatti, e acciuffatisi fra di loro, si graffiarono, si morsero e si sbertucciarono.</p>
-<p>Finito il combattimento, mastr&#x27;Antonio si trovò fra le mani la parrucca gialla di Geppetto, e Geppetto si accòrse di avere in bocca la parrucca brizzolata del falegname.</p>
-<p>— Rendimi la mia parrucca! — gridò mastr&#x27;Antonio.</p>
-<p>— E tu rendimi la mia, e rifacciamo la pace. —</p>
-<p>I due vecchietti, dopo aver ripreso ognuno di loro la propria parrucca, si strinsero la mano e giurarono di rimanere buoni amici per tutta la vita.</p>
+<h3 class="sub">I due vecchietti, dopo aver ripreso ognuno di loro la propria parrucca, si strinsero la mano e giurarono di rimanere buoni amici per tutta la vita.</h3>
 <p>— Dunque, compar Geppetto, — disse il falegname in segno di pace fatta — qual è il piacere che volete da me?</p>
 <p>— Vorrei un po&#x27; di legno per fabbricare il mio burattino; me lo date? —</p>
 <p>Mastr&#x27;Antonio, tutto contento, andò subito a prendere sul banco quel pezzo del legno che era stato cagione a lui di tante paure. Ma quando fu lì per consegnarlo all&#x27;amico, il pezzo di legno dette uno scossone, e sgusciandogli violentemente dalle mani, andò a battere con forza negli stinchi impresciuttiti del povero Geppetto.</p>
@@ -101,7 +97,7 @@ h2 + p, .first { text-indent: 0; }
 <p>A sentirsi chiamar Polendina per la terza volta, Geppetto perse il lume degli occhi, si avventò sul falegname e lì se ne dettero un sacco e una sporta.</p>
 <p>A battaglia finita, mastr&#x27;Antonio si trovò due graffi di più sul naso, e quell&#x27;altro due bottoni di meno al giubbetto. Pareggiati in questo modo i loro conti, si strinsero la mano e giurarono di rimanere buoni amici per tutta la vita.</p>
 <p>Intanto Geppetto prese con sè il suo bravo pezzo di legno, e ringraziato mastr&#x27;Antonio, se ne tornò zoppicando a casa.</p>
-<h2>III.</h2>
+<h2 class="chapter" id="c1">III.</h2>
 <p>Geppetto, tornato a casa, comincia subito a fabbricarsi il burattino e gli mette il nome di Pinocchio. Prime monellerie del burattino.</p>
 <p>La casa di Geppetto era una stanzina terrena, che pigliava luce da un sottoscala. La mobilia non poteva esser più semplice: una seggiola cattiva, un letto poco buono e un tavolino tutto rovinato. Nella parete di fondo si vedeva un caminetto col fuoco acceso; ma il fuoco era dipinto, e accanto al fuoco c&#x27;era dipinta una pentola che bolliva allegramente e mandava fuori una nuvola di fumo, che pareva fumo davvero.</p>
 <p>Appena entrato in casa, Geppetto prese subito gli arnesi e si pose a intagliare e a fabbricare il suo burattino.</p>
@@ -146,7 +142,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Insomma, tanto dissero e tanto fecero, che il carabiniere rimesse in libertà Pinocchio, e condusse in prigione quel pover&#x27;uomo di Geppetto. Il quale non avendo parole lì per lì per difendersi, piangeva come un vitellino, e nell&#x27;avviarsi verso il carcere, balbettava singhiozzando:</p>
 <p>— Sciagurato figliuolo! E pensare che ho penato tanto a farlo un burattino per bene! Ma mi sta il dovere! Dovevo pensarci prima!... —</p>
 <p>Quello che accadde dopo, è una storia così strana, da non potersi quasi credere, e ve la racconterò in quest&#x27;altri capitoli.</p>
-<h2>IV.</h2>
+<h2 class="chapter" id="c2">IV.</h2>
 <p>La storia di Pinocchio col Grillo-parlante, dove si vede come i ragazzi cattivi hanno a noja di sentirsi correggere da chi ne sa più di loro.</p>
 <p>Vi dirò dunque, ragazzi, che mentre il povero Geppetto era condotto senza sua colpa in prigione, quel monello di Pinocchio, rimasto libero dalle grinfie del carabiniere, se la dava a gambe giù attraverso ai campi, per far più presto a tornarsene a casa; e nella gran furia del correre saltava greppi altissimi, siepi di pruni e fossi pieni d&#x27;acqua, tale e quale come avrebbe potuto fare un capretto o un leprottino inseguito dai cacciatori.</p>
 <p>Giunto dinanzi a casa, trovò l&#x27;uscio di strada socchiuso. Lo spinse, entrò dentro, e appena ebbe messo tanto di paletto, si gettò a sedere per terra, lasciando andare un gran sospirone di contentezza.</p>
@@ -176,7 +172,7 @@ h2 + p, .first { text-indent: 0; }
 <p>— Perchè sei un burattino e, quel che è peggio, perchè hai la testa di legno. —</p>
 <p>A queste ultime parole, Pinocchio saltò su tutt&#x27;infuriato, e preso di sul banco un martello di legno, lo scagliò contro il Grillo-parlante.</p>
 <p>Forse non credeva nemmeno di colpirlo; ma disgraziatamente lo colse per l&#x27;appunto nel capo, tanto che il povero Grillo ebbe appena il fiato di fare crì-crì-crì, e poi rimase lì stecchito e appiccicato alla parete.</p>
-<h2>V.</h2>
+<h2 class="chapter" id="c3">V.</h2>
 <p>Pinocchio ha fame e cerca un uovo per farsi una frittata; ma sul più bello, la frittata gli vola via dalla finestra.</p>
 <p>Intanto cominciò a farsi notte, e Pinocchio, ricordandosi che non aveva mangiato nulla, sentì un&#x27;uggiolina allo stomaco, che somigliava moltissimo all&#x27;appetito.</p>
 <p>Ma l&#x27;appetito dei ragazzi cammina presto, e difatti, dopo pochi minuti l&#x27;appetito diventò fame, e la fame, dal vedere al non vedere si convertì in una fame da lupi, in una fame da tagliarsi col coltello.</p>
@@ -195,7 +191,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Il povero burattino rimase lì, come incantato, cogli occhi fissi, colla bocca aperta e coi gusci dell&#x27;uovo in mano. Riavutosi, peraltro, dal primo sbigottimento, cominciò a piangere, a strillare, a battere i piedi in terra per la disperazione, e piangendo diceva:</p>
 <p>— Eppure il Grillo-parlante aveva ragione! Se non fossi scappato di casa e se il mio babbo fosse qui, ora non mi troverei a morire di fame. Eh! che brutta malattia che è la fame!... —</p>
 <p>E perchè il corpo gli seguitava a brontolare più che mai, e non sapeva come fare a chetarlo, pensò di uscir di casa e di dare una scappata al paesello vicino, nella speranza di trovare qualche persona caritatevole, che gli facesse l&#x27;elemosina di un po&#x27; di pane.</p>
-<h2>VI.</h2>
+<h3 class="sub">Vi.</h3>
 <p>Pinocchio si addormenta coi piedi sul caldano, e la mattina dopo si sveglia coi piedi tutti bruciati.</p>
 <p>Per l&#x27;appunto era una nottataccia d&#x27;inferno. Tonava forte forte, lampeggiava come se il cielo pigliasse fuoco, e un ventaccio freddo e strapazzone, fischiando rabbiosamente e sollevando un immenso nuvolo di polvere, faceva stridere e cigolare tutti gli alberi della campagna.</p>
 <p>Pinocchio aveva una gran paura dei tuoni e dei lampi: se non che la fame era più forte della paura: motivo per cui accostò l&#x27;uscio di casa, e presa la carriera, in un centinaio di salti arrivò fino al paese, colla lingua fuori e col fiato grosso, come un can da caccia.</p>
@@ -215,7 +211,7 @@ h2 + p, .first { text-indent: 0; }
 <p>— Chi è? — domandò sbadigliando e stropicciandosi gli occhi.</p>
 <p>— Sono io! — rispose una voce.</p>
 <p>Quella voce era la voce di Geppetto.</p>
-<h2>VII.</h2>
+<h2 class="chapter" id="c4">VII.</h2>
 <p>Geppetto torna a casa, e dà al burattino la colazione che il pover&#x27;uomo aveva portata per sè.</p>
 <p>Il povero Pinocchio, che aveva sempre gli occhi fra il sonno, non s&#x27;era ancora avvisto dei piedi che gli si erano tutti bruciati: per cui appena sentì la voce di suo padre, schizzò giù dallo sgabello per correre a tirare il paletto; ma invece, dopo due o tre traballoni, cadde di picchio tutto lungo disteso sul pavimento.</p>
 <p>E nel battere in terra fece lo stesso rumore, che avrebbe fatto un sacco di mestoli, cascato da un quinto piano.</p>
@@ -252,7 +248,7 @@ h2 + p, .first { text-indent: 0; }
 <p>E cominciò a masticare. Da principio storse un po&#x27; la bocca: ma poi una dietro l&#x27;altra, spolverò in un soffio tutte le bucce; e dopo le bucce anche i torsoli, e quand&#x27;ebbe finito di mangiare ogni cosa, si battè tutto contento le mani sul corpo, e disse gongolando:</p>
 <p>— Ora sì, che sto bene!</p>
 <p>— Vedi, dunque, — osservò Geppetto — che avevo ragione io, quando ti dicevo che non bisogna avvezzarsi nè troppo sofistici nè troppo delicati di palato. Caro mio, non si sa mai quel che ci può capitare in questo mondo. I casi son tanti!... —</p>
-<h2>VIII.</h2>
+<h2 class="chapter" id="c5">VIII.</h2>
 <p>Geppetto rifà i piedi a Pinocchio, e vende la propria casacca per comprargli l&#x27;Abbecedario.</p>
 <p>Il burattino, appena che si fu levata la fame, cominciò subito a bofonchiare e a piangere, perchè voleva un paio di piedi nuovi.</p>
 <p>Ma Geppetto, per punirlo della monelleria fatta, lo lasciò piangere e disperarsi per una mezza giornata; poi gli disse:</p>
@@ -291,7 +287,7 @@ h2 + p, .first { text-indent: 0; }
 <p>— Perchè l&#x27;avete venduta?</p>
 <p>— Perchè mi faceva caldo. —</p>
 <p>Pinocchio capì questa risposta a volo, e non potendo frenare l&#x27;impeto del suo buon cuore, saltò al collo di Geppetto e cominciò a baciarlo per tutto il viso.</p>
-<h2>IX.</h2>
+<h2 class="chapter" id="c6">IX.</h2>
 <p>Pinocchio vende l&#x27;Abbecedario per andare a vedere il teatro dei burattini.</p>
 <p>Smesso che fu di nevicare, Pinocchio, col suo bravo Abbecedario nuovo sotto il braccio, prese la strada che menava alla scuola: e strada facendo, fantasticava nel suo cervellino mille ragionamenti e mille castelli in aria, uno più bello dell&#x27;altro.</p>
 <p>E discorrendo da sè solo, diceva:</p>
@@ -325,7 +321,7 @@ h2 + p, .first { text-indent: 0; }
 <p>— Io sono un ragazzo e non compro nulla dai ragazzi — gli rispose il suo piccolo interlocutore, che aveva più giudizio di lui.</p>
 <p>— Per quattro soldi l&#x27;Abbecedario lo prendo io — gridò un rivenditore di panni usati, che s&#x27;era trovato presente alla conversazione.</p>
 <p>E il libro fu venduto lì su due piedi. E pensare che quel pover&#x27;uomo di Geppetto era rimasto a casa, a tremare dal freddo in maniche di camicia, per comprare l&#x27;Abbecedario al figliuolo!</p>
-<h2>X.</h2>
+<h2 class="chapter" id="c7">X.</h2>
 <p>I burattini riconoscono il loro fratello Pinocchio e gli fanno una grandissima festa; ma sul più bello esce fuori il burattinaio Mangiafoco, e Pinocchio corre pericolo di fare una brutta fine.</p>
 <p>Quando Pinocchio entrò nel teatrino delle marionette, accadde un fatto che destò una mezza rivoluzione.</p>
 <p>Bisogna sapere che il sipario era tirato su, e la commedia era già incominciata.</p>
@@ -350,7 +346,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Difatti, finita la recita della commedia, il burattinaio andò in cucina, dov&#x27;egli s&#x27;era preparato per cena un bel montone, che girava lentamente infilato nello spiede. E perchè gli mancavano le legna per finirlo di cuocere e di rosolare, chiamò Arlecchino e Pulcinella e disse loro:</p>
 <p>— Portatemi di qua quel burattino, che troverete attaccato al chiodo. Mi pare un burattino fatto di un legname molto asciutto, e sono sicuro che a buttarlo sul fuoco, mi darà una bellissima fiammata all&#x27;arrosto. —</p>
 <p>Arlecchino e Pulcinella da principio esitarono; ma impauriti da un&#x27;occhiataccia del loro padrone, obbedirono: e dopo tornarono in cucina portando sulle braccia il povero Pinocchio, il quale, divincolandosi come un&#x27;anguilla fuori dell&#x27;acqua, strillava disperatamente: — Babbo mio, salvatemi! Non voglio morire, no, non voglio morire!... —</p>
-<h2>XI.</h2>
+<h2 class="chapter" id="c8">XI.</h2>
 <p>Mangiafoco starnutisce e perdona a Pinocchio, il quale poi difende dalla morte il suo amico Arlecchino.</p>
 <p>Il burattinaio Mangiafoco (che questo era il suo nome) pareva un uomo spaventoso, non dico di no, specie con quella sua barbaccia nera che, a uso grembiale, gli copriva tutto il petto e tutte le gambe; ma nel fondo poi non era un cattiv&#x27;uomo. Prova ne sia, che quando vide portarsi davanti quel povero Pinocchio, che si dibatteva per ogni verso, urlando «Non voglio morire, non voglio morire!» principiò subito a commuoversi e a impietosirsi; e dopo aver resistito un bel pezzo, alla fine non ne potè più, e lasciò andare un sonorosissimo starnuto.</p>
 <p>A quello starnuto, Arlecchino che fino allora era stato afflitto e ripiegato come un salcio piangente, si fece tutto allegro in viso, e chinatosi verso Pinocchio gli bisbigliò sottovoce:</p>
@@ -390,9 +386,9 @@ h2 + p, .first { text-indent: 0; }
 <p>— Pazienza! per questa sera mi rassegnerò a mangiare il montone mezzo crudo: ma un&#x27;altra volta, guai a chi toccherà!... —</p>
 <p>Alla notizia della grazia ottenuta, i burattini corsero tutti sul palcoscenico e, accesi i lumi e i lampadari come in serata di gala, cominciarono a saltare e a ballare.</p>
 <p>Era l&#x27;alba e ballavano sempre.</p>
-<h2>XII.</h2>
+<h2 class="chapter" id="c9">XII.</h2>
 <p>Il burattinaio Mangiafoco regala cinque monete d&#x27;oro a Pinocchio perchè le porti al suo babbo Geppetto: e Pinocchio, invece, si lascia abbindolare dalla Volpe e dal Gatto e se ne va con loro.</p>
-<h2>Il giorno dipoi Mangiafoco chiamò in disparte Pinocchio e gli domandò:</h2>
+<p>Il giorno dipoi Mangiafoco chiamò in disparte Pinocchio e gli domandò:</p>
 <p>— Come si chiama tuo padre?</p>
 <p>— Geppetto.</p>
 <p>— E che mestiere fa?</p>
@@ -455,7 +451,7 @@ h2 + p, .first { text-indent: 0; }
 <p>— Gli altri! — ripetè il Gatto.</p>
 <p>— Che brave persone! — pensò dentro di sè Pinocchio: e dimenticandosi lì sul tamburo, del suo babbo, della casacca nuova, dell&#x27;Abbecedario e di tutti i buoni proponimenti fatti, disse alla Volpe e al Gatto:</p>
 <p>— Andiamo subito, io vengo con voi. —</p>
-<h2>XIII.</h2>
+<h2 class="chapter" id="c10">XIII.</h2>
 <p>L&#x27;osteria del «Gambero Rosso.»</p>
 <p>Cammina, cammina, cammina, alla fine sul far della sera arrivarono stanchi morti all&#x27;osteria del Gambero Rosso.</p>
 <p>— Fermiamoci un po&#x27; qui, — disse la Volpe — tanto per mangiare un boccone e per riposarci qualche ora. A mezzanotte poi ripartiremo, per essere domani, all&#x27;alba, nel Campo dei miracoli. —</p>
@@ -498,7 +494,7 @@ h2 + p, .first { text-indent: 0; }
 <p>— Le solite storie. Buona notte, Grillo.</p>
 <p>— Buona notte, Pinocchio, e che il cielo ti salvi dalla guazza e dagli assassini. —</p>
 <p>Appena dette queste ultime parole, il Grillo-parlante si spense a un tratto, come si spenge un lume soffiandoci sopra, e la strada rimase più buia di prima.</p>
-<h2>XIV.</h2>
+<h2 class="chapter" id="c11">XIV.</h2>
 <p>Pinocchio, per non aver dato retta ai buoni consigli del Grillo-parlante, s&#x27;imbatte negli assassini.</p>
 <p>— Davvero.... — disse fra sè il burattino rimettendosi in viaggio — come siamo disgraziati noialtri poveri ragazzi! Tutti ci sgridano, tutti ci ammoniscono, tutti ci dànno dei consigli. A lasciarli dire, tutti si metterebbero in capo di essere i nostri babbi e i nostri maestri; tutti; anche i Grilli-parlanti. Ecco qui: perchè io non ho voluto dar retta a quell&#x27;uggioso di Grillo, chi lo sa quante disgrazie, secondo lui, mi dovrebbero accadere! Dovrei incontrare anche gli assassini! Meno male che agli assassini io non ci credo, nè ci ho creduto mai. Per me gli assassini sono stati inventati apposta dai babbi, per far paura ai ragazzi che vogliono andar fuori la notte. E poi, se anche li trovassi qui sulla strada, mi darebbero forse soggezione? Neanche per sogno, anderei loro sul viso, gridando: «Signori assassini, che cosa vogliono da me? Si rammentino che con me non si scherza! Se ne vadano dunque per i fatti loro, e zitti!» A questa parlantina fatta sul serio, quei poveri assassini, mi par di vederli, scapperebbero via come il vento. Caso poi fossero tanto ineducati da non volere scappare, allora scapperei io, e così la farei finita.... —</p>
 <p>Ma Pinocchio non potè finire il suo ragionamento, perchè in quel punto gli parve di sentire dietro di sè un leggerissimo fruscìo di foglie.</p>
@@ -525,7 +521,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Intanto cominciava a baluginare il giorno e si trovò improvvisamente sbarrato il passo da un fosso largo e profondissimo, tutto pieno di acquaccia sudicia, color del caffè e latte. Che fare? «Una, due, tre!» gridò il burattino, e slanciandosi con una gran rincorsa, saltò dall&#x27;altra parte. E gli assassini saltarono anche loro, ma non avendo preso bene la misura, patatunfete!... cascarono giù nel bel mezzo del fosso. Pinocchio che sentì il tonfo e gli schizzi dell&#x27;acqua, urlò ridendo e seguitando a correre:</p>
 <p>— Buon bagno, signori assassini. —</p>
 <p>E già si figurava che fossero bell&#x27;e affogati, quando invece, voltandosi a guardare, si accòrse che gli correvano dietro tutt&#x27;e due, sempre imbacuccati nei loro sacchi, e grondanti acqua come due panieri sfondati.</p>
-<h2>XV.</h2>
+<h2 class="chapter" id="c12">XV.</h2>
 <p>Gli assassini inseguono Pinocchio; e dopo averlo raggiunto lo impiccano a un ramo della Quercia grande.</p>
 <p>Allora il burattino, perdutosi d&#x27;animo fu proprio sul punto di gettarsi a terra e di darsi per vinto, quando, nel girare gli occhi all&#x27;intorno, vide fra mezzo al verde cupo degli alberi biancheggiare in lontananza una casina candida come la neve.</p>
 <p>— Se io avessi tanto fiato da arrivare fino a quella casa, forse sarei salvo! — disse dentro di sè.</p>
@@ -560,7 +556,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Ma quando, aspetta aspetta, vide che non compariva nessuno, proprio nessuno, allora gli tornò in mente il suo povero babbo.... e balbettò quasi moribondo:</p>
 <p>— Oh babbo mio! se tu fossi qui!... —</p>
 <p>E non ebbe fiato per dir altro. Chiuse gli occhi, aprì la bocca, stirò le gambe, e dato un grande scrollone, rimase lì come intirizzito.</p>
-<h2>XVI.</h2>
+<h2 class="chapter" id="c13">XVI.</h2>
 <p>La bella Bambina dai capelli turchini fa raccogliere il burattino: lo mette a letto, e chiama tre medici per sapere se sia vivo o morto.</p>
 <p>In quel mentre che il povero Pinocchio impiccato dagli assassini a un ramo della Quercia grande, pareva oramai più morto che vivo, la bella Bambina dai capelli turchini si affacciò daccapo alla finestra, e impietositasi alla vista di quell&#x27;infelice che, sospeso per il collo, ballava il trescone alle ventate di tramontana, battè per tre volte le mani insieme, e fece tre piccoli colpi.</p>
 <p>A questo segnale si sentì un gran rumore di ali che volavano con foga precipitosa, e un grosso Falco venne a posarsi sul davanzale della finestra.</p>
@@ -568,7 +564,7 @@ h2 + p, .first { text-indent: 0; }
 <p>— Vedi tu quel burattino attaccato penzoloni a un ramo della Quercia grande?</p>
 <p>— Lo vedo.</p>
 <p>— Orbene: vola subito laggiù; rompi col tuo fortissimo becco il nodo che lo tiene sospeso in aria, e posalo delicatamente sdraiato sull&#x27;erba, a piè della Quercia. —</p>
-<h2>Il Falco volò via, e dopo due minuti tornò dicendo:</h2>
+<p>Il Falco volò via, e dopo due minuti tornò dicendo:</p>
 <p>— Quel che mi avete comandato è fatto.</p>
 <p>— E come l&#x27;hai trovato? Vivo o morto?</p>
 <p>— A vederlo pareva morto, ma non dev&#x27;essere ancora morto perbene, perchè appena gli ho sciolto il nodo scorsoio che lo stringeva intorno alla gola, ha lasciato andare un sospiro, balbettando a mezza voce: «Ora mi sento meglio!...» —</p>
@@ -594,7 +590,7 @@ h2 + p, .first { text-indent: 0; }
 <p>A questo punto si sentì nella camera un suono soffocato di pianti e singhiozzi. Figuratevi come rimasero tutti, allorchè, sollevati un poco i lenzuoli, si accorsero che quello che piangeva e singhiozzava era Pinocchio.</p>
 <p>— Quando il morto piange è segno che è in via di guarigione — disse solennemente il Corvo.</p>
 <p>— Mi duole di contraddire il mio illustre amico e collega, — soggiunse la Civetta — ma per me quando il morto piange, è segno che gli dispiace a morire. —</p>
-<h2>XVII.</h2>
+<h2 class="chapter" id="c14">XVII.</h2>
 <p>Pinocchio mangia lo zucchero, ma non vuol purgarsi; però quando vede i becchini che vengono a portarlo via, allora si purga. Poi dice una bugia e per gastigo gli cresce il naso.</p>
 <p>Appena i tre medici furono usciti di camera, la Fata si accostò a Pinocchio, e, dopo averlo toccato sulla fronte, si accòrse che era travagliato da un febbrone da non si dire.</p>
 <p>Allora sciolse un certa polverina bianca in un mezzo bicchier d&#x27;acqua, e porgendolo al burattino, gli disse amorosamente:</p>
@@ -669,7 +665,7 @@ h2 + p, .first { text-indent: 0; }
 <p>— Come mai sapete che ho detto una bugia?</p>
 <p>— Le bugie, ragazzo mio, si riconoscono subito, perchè ve ne sono di due specie: vi sono le bugie che hanno le gambe corte, e le bugie che hanno il naso lungo: la tua per l&#x27;appunto è di quelle che hanno il naso lungo. —</p>
 <p>Pinocchio, non sapendo più dove nascondersi per la vergogna, si provò a fuggire di camera, ma non gli riuscì. Il suo naso era cresciuto tanto, che non passava più dalla porta.</p>
-<h2>XVIII.</h2>
+<h2 class="chapter" id="c15">XVIII.</h2>
 <p>Pinocchio ritrova la Volpe e il Gatto, e va con loro a seminare le quattro monete nel Campo dei miracoli.</p>
 <p>Come potete immaginarvelo, la Fata lasciò che il burattino piangesse e urlasse una buona mezz&#x27;ora a motivo di quel suo naso che non passava più dalla porta di camera: e lo fece per dargli una severa lezione e perchè si correggesse dal brutto vizio di dire bugie, il più brutto vizio che possa avere un ragazzo. Ma quando lo vide trasfigurato e cogli occhi fuori della testa dalla gran disperazione, allora, mossa a pietà, battè le mani insieme, e a quel segnale entrarono in camera dalla finestra un migliaio di grossi uccelli chiamati Picchi, i quali, posatisi tutti sul naso di Pinocchio, cominciarono a beccarglielo tanto e poi tanto, che in pochi minuti quel naso enorme e spropositato si trovò ridotto alla sua grandezza naturale.</p>
 <p>— Quanto siete buona, Fata mia, — disse il burattino, asciugandosi gli occhi — e quanto bene vi voglio!</p>
@@ -724,7 +720,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Il povero burattino, fuori di sè dalla gran contentezza, ringraziò mille volte la Volpe e il Gatto, e promise loro un bellissimo regalo.</p>
 <p>— Noi non vogliamo regali; — risposero que&#x27; due malanni — a noi ci basta di averti insegnato il modo di arricchire senza durar fatica, e siamo contenti come pasque. —</p>
 <p>Ciò detto salutarono Pinocchio, e augurandogli una buona raccolta, se ne andarono per i fatti loro.</p>
-<h2>XIX.</h2>
+<h2 class="chapter" id="c16">XIX.</h2>
 <p>Pinocchio è derubato delle sue monete d&#x27;oro, e per gastigo si busca quattro mesi di prigione.</p>
 <p>Il burattino, ritornato in città, cominciò a contare i minuti a uno a uno: e quando gli parve che fosse l&#x27;ora, riprese subito la strada che menava al Campo dei miracoli.</p>
 <p>E mentre camminava con passo frettoloso, il cuore gli batteva forte e gli faceva tic, tac, tic, tac, come un orologio da sala, quando corre davvero. E intanto pensava dentro di sè:</p>
@@ -755,7 +751,7 @@ h2 + p, .first { text-indent: 0; }
 <p>— Voi no, — rispose il carceriere — perchè voi non siete del bel numero....</p>
 <p>— Domando scusa; — replicò Pinocchio — sono un malandrino anch&#x27;io.</p>
 <p>— In questo caso avete mille ragioni, — disse il carceriere; e levandosi il berretto rispettosamente e salutandolo, gli aprì le porte della prigione e lo lasciò scappare.</p>
-<h2>XX.</h2>
+<h2 class="chapter" id="c17">XX.</h2>
 <p>Liberato dalla prigione, si avvia per tornare a casa della Fata; ma lungo la strada trova un serpente orribile, e poi rimane preso alla tagliuola.</p>
 <p>Figuratevi l&#x27;allegrezza di Pinocchio quando si sentì libero. Senza stare a dire che è e che non è, uscì subito fuori della città e riprese la strada che doveva ricondurlo alla Casina della Fata.</p>
 <p>A cagione del tempo piovigginoso, la strada era diventata tutta un pantano e ci si andava fino a mezza gamba.</p>
@@ -779,7 +775,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Allora Pinocchio ricominciò a correre per arrivare a casa della Fata avanti che si facesse buio. Ma lungo la strada, non potendo più reggere ai morsi terribili della fame, saltò in un campo coll&#x27;intenzione di cogliere poche ciocche d&#x27;uva moscadella. Non l&#x27;avesse mai fatto!</p>
 <p>Appena giunto sotto la vite, crac.... sentì stringersi le gambe da due ferri taglienti, che gli fecero vedere quante stelle c&#x27;erano in cielo.</p>
 <p>Il povero burattino era rimasto preso a una tagliuola appostata là da alcuni contadini per beccarvi alcune grosse faine, che erano il flagello di tutti i polli del vicinato.</p>
-<h2>XXI.</h2>
+<h2 class="chapter" id="c18">XXI.</h2>
 <p>Pinocchio è preso da un contadino, il quale lo costringe a far da can di guardia a un pollaio.</p>
 <p>Pinocchio, come potete figurarvelo, si dètte a piangere, a strillare, a raccomandarsi: ma erano pianti e grida inutili, perchè lì all&#x27;intorno non si vedevano case, e dalla strada non passava anima viva.</p>
 <p>Intanto si fece notte.</p>
@@ -806,7 +802,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Dopo quest&#x27;ultimo avvertimento, il contadino entrò in casa chiudendo la porta con tanto di catenaccio: e il povero Pinocchio rimase accovacciato sull&#x27;aia più morto che vivo, a motivo del freddo, della fame e della paura. E di tanto in tanto cacciandosi rabbiosamente le mani dentro il collare, che gli serrava la gola, diceva piangendo:</p>
 <p>— Mi sta bene!... Pur troppo mi sta bene! Ho voluto fare lo svogliato, il vagabondo.... ho voluto dar retta ai cattivi compagni, e per questo la fortuna mi perseguita sempre. Se fossi stato un ragazzino per bene, come ce n&#x27;è tanti; se avessi avuto voglia di studiare e di lavorare, se fossi rimasto in casa col mio povero babbo, a quest&#x27;ora non mi troverei qui, in mezzo ai campi, a fare il cane di guardia alla casa di un contadino. Oh se potessi rinascere un&#x27;altra volta!... Ma oramai è tardi e ci vuol pazienza! —</p>
 <p>Fatto questo piccolo sfogo, che gli venne proprio dal cuore, entrò dentro il casotto e si addormentò.</p>
-<h2>XXII.</h2>
+<h2 class="chapter" id="c19">XXII.</h2>
 <p>Pinocchio scuopre i ladri, e in ricompensa di essere stato fedele vien posto in libertà.</p>
 <p>Ed era già più di due ore che dormiva saporitamente, quando verso la mezzanotte fu svegliato da un bisbiglio e da un pissi—pissi di vocine strane, che gli parve di sentir nell&#x27;aia. Messa fuori la punta del naso dalla buca del casotto, vide riunite a consiglio quattro bestiole di pelame scuro che parevano gatti. Ma non erano gatti: erano faine, animaletti carnivori, ghiottissimi d&#x27;uova e di pollastrine giovani. Una di queste faine, staccandosi dalle sue compagne, andò alla buca del casotto, e disse sottovoce:</p>
 <p>— Buona sera, Melampo.</p>
@@ -847,7 +843,7 @@ h2 + p, .first { text-indent: 0; }
 <p>— Dormivo: — rispose Pinocchio — ma le faine mi hanno svegliato coi loro chiacchiericci, e una è venuta fin qui al casotto per dirmi: «Se prometti di non abbaiare, e di non svegliare il padrone, noi ti regaleremo una pollastra bell&#x27;e pelata!» Capite, eh? Avere la sfacciataggine di fare a me una simile proposta! Perchè bisogna sapere che io sono un burattino, che avrò tutti i difetti di questo mondo: ma non avrò mai quello di star di balla e di reggere il sacco alla gente disonesta!</p>
 <p>— Bravo ragazzo! — gridò il contadino, battendogli sur una spalla. — Cotesti sentimenti ti fanno onore: e per provarti la mia grande soddisfazione, ti lascio libero fin d&#x27;ora di tornare a casa. —</p>
 <p>E gli levò il collare da cane.</p>
-<h2>XXIII.</h2>
+<h2 class="chapter" id="c20">XXIII.</h2>
 <p>Pinocchio piange la morte della bella Bambina dai capelli turchini: poi trova un Colombo, che lo porta sulla riva del mare, e lì si getta nell&#x27;acqua per andare in aiuto del suo babbo Geppetto.</p>
 <p>Appena Pinocchio non sentì più il peso durissimo e umiliante di quel collare intorno al collo, si pose a scappare attraverso ai campi, e non si fermò un solo minuto finchè non ebbe raggiunta la strada maestra, che doveva ricondurlo alla casina della Fata.</p>
 <p>Arrivato sulla strada maestra, si voltò in giù a guardare nella sottoposta pianura, e vide benissimo, a occhio nudo, il bosco dove disgraziatamente aveva incontrato la Volpe e il Gatto: vide, fra mezzo agli alberi, inalzarsi la cima di quella Quercia grande, alla quale era stato appeso ciondoloni per il collo; ma, guarda di qui, guarda di là, non gli fu possibile di vedere la piccola casa della bella Bambina dai capelli turchini.</p>
@@ -901,7 +897,7 @@ h2 + p, .first { text-indent: 0; }
 <p>— Voglio salvare il mio babbo! —</p>
 <p>Pinocchio, essendo tutto di legno, galleggiava facilmente e nuotava come un pesce. Ora si vedeva sparire sott&#x27;acqua, portato dall&#x27;impeto dei flutti, ora riappariva fuori con una gamba o con un braccio, a grandissima distanza dalla terra. Alla fine lo persero d&#x27;occhio, non lo videro più.</p>
 <p>— Povero ragazzo! — dissero allora i pescatori, che erano raccolti sulla spiaggia; e brontolando sottovoce una preghiera, tornarono alle loro case.</p>
-<h2>XXIV.</h2>
+<h2 class="chapter" id="c21">XXIV.</h2>
 <p>Pinocchio arriva all&#x27;isola delle «Api industriose» e ritrova la Fata.</p>
 <p>Pinocchio, animato dalla speranza di arrivare in tempo a dare aiuto al suo povero babbo, nuotò tutta quanta la notte.</p>
 <p>E che orribile nottata fu quella! Diluviò, grandinò, tuonò spaventosamente e con certi lampi, che pareva di giorno.</p>
@@ -969,7 +965,7 @@ h2 + p, .first { text-indent: 0; }
 <p>— Che cosa è mai tutta questa meraviglia? — disse ridendo la buona donna.</p>
 <p>— Egli è.... — rispose balbettando Pinocchio — egli è.... egli è.... che voi mi somigliate.... voi mi rammentate... sì, sì, sì, la stessa voce.... gli stessi occhi.... gli stessi capelli.... sì sì, sì.... anche voi avete i capelli turchini.... come lei! O Fatina mia!... O Fatina mia!... ditemi che siete voi, proprio voi!... Non mi fate più piangere! Se sapeste! Ho pianto tanto, ho patito tanto!... —</p>
 <p>E nel dir così, Pinocchio piangeva dirottamente, e gettatosi ginocchioni per terra abbracciava i ginocchi di quella donnina misteriosa.</p>
-<h2>XXV.</h2>
+<h2 class="chapter" id="c22">XXV.</h2>
 <p>Pinocchio promette alla Fata di esser buono e di studiare, perchè è stufo di fare il burattino e vuol diventare un bravo ragazzo.</p>
 <p>In sulle prime, la buona donnina cominciò col dire che lei non era la piccola Fata dai capelli turchini: ma poi, vedendosi ormai scoperta e non volendo mandare più in lungo la commedia, finì per farsi riconoscere, e disse a Pinocchio:</p>
 <p>— Birba d&#x27;un burattino! Come mai ti sei accorto che ero io?</p>
@@ -1021,9 +1017,9 @@ h2 + p, .first { text-indent: 0; }
 <p>Queste parole toccarono l&#x27;animo di Pinocchio, il quale, rialzando vivacemente la testa, disse alla Fata:</p>
 <p>— Io studierò, io lavorerò, io farò tutto quello che mi dirai, perchè insomma, la vita del burattino mi è venuta a noia, e voglio diventare un ragazzo a tutti i costi. Me l&#x27;hai promesso, non è vero?</p>
 <p>— Te l&#x27;ho promesso, e ora dipende da te. —</p>
-<h2>XXVI.</h2>
+<h2 class="chapter" id="c23">XXVI.</h2>
 <p>Pinocchio va co&#x27; suoi compagni di scuola in riva al mare, per vedere il terribile Pesce-cane.</p>
-<h2>Il giorno dopo Pinocchio andò alla Scuola comunale.</h2>
+<p>Il giorno dopo Pinocchio andò alla Scuola comunale.</p>
 <p>Figuratevi quelle birbe di ragazzi, quando videro entrare nella loro scuola un burattino! Fu una risata, che non finiva più. Chi gli faceva uno scherzo, chi un altro: chi gli levava il berretto di mano: chi gli tirava il giubbettino di dietro; chi si provava a fargli coll&#x27;inchiostro due grandi baffi sotto il naso, e chi si attentava perfino a legargli dei fili ai piedi e alle mani, per farlo ballare.</p>
 <p>Per un poco Pinocchio usò disinvoltura e tirò via; ma finalmente, sentendosi scappar la pazienza, si rivolse a quelli che più lo tafanavano e si pigliavano giuoco di lui, e disse loro a muso duro:</p>
 <p>— Badate, ragazzi: io non son venuto qui per essere il vostro buffone. Io rispetto gli altri e voglio esser rispettato.</p>
@@ -1056,7 +1052,7 @@ h2 + p, .first { text-indent: 0; }
 <p>— Dunque, via! e chi più corre, è più bravo! — gridò Pinocchio.</p>
 <p>Dato così il segnale della partenza, quel branco di monelli coi loro libri e i loro quaderni sotto il braccio si messero a correre attraverso ai campi e Pinocchio era sempre avanti a tutti, pareva che avesse le ali ai piedi.</p>
 <p>Di tanto in tanto, voltandosi indietro, canzonava i suoi compagni rimasti a una bella distanza, e nel vederli ansanti, trafelati, polverosi, e con tanto di lingua fuori, se la rideva proprio di cuore. Lo sciagurato, in quel momento, non sapeva a quali paure e a quali orribili disgrazie andava incontro.</p>
-<h2>XXVII.</h2>
+<h2 class="chapter" id="c24">XXVII.</h2>
 <p>Gran combattimento fra Pinocchio e i suoi compagni: uno dei quali essendo rimasto ferito, Pinocchio viene arrestato dai carabinieri.</p>
 <p>Giunto che fu sulla spiaggia, Pinocchio dètte subito una grande occhiata sul mare; ma non vide nessun Pesce-cane. Il mare era tutto liscio come un gran cristallo da specchio.</p>
 <p>— O il Pesce-cane dov&#x27;è? — domandò, voltandosi ai compagni.</p>
@@ -1133,7 +1129,7 @@ h2 + p, .first { text-indent: 0; }
 <p>— Vai pure; ma facciamo una cosa lesta. —</p>
 <p>Il burattino andò, raccattò il berretto.... ma invece di metterselo in capo, se lo mise in bocca fra i denti, e poi cominciò a correre di gran carriera verso la spiaggia del mare. Andava via come una palla di fucile.</p>
 <p>I carabinieri, giudicando che fosse difficile raggiungerlo, gli aizzarono dietro un grosso cane mastino che aveva guadagnato il primo premio a tutte le corse dei cani. Pinocchio correva, e il cane correva più di lui; per cui tutta la gente si affacciava alle finestre e si affollava in mezzo alla strada, ansiosa di veder la fine di un palio così inferocito. Ma non potè levarsi questa voglia, perchè il can mastino e Pinocchio sollevarono lungo la strada un tal polverone, che dopo pochi minuti non era possibile di veder più nulla.</p>
-<h2>XXVIII.</h2>
+<h2 class="chapter" id="c25">XXVIII.</h2>
 <p>Pinocchio corre pericolo di esser fritto in padella, come un pesce.</p>
 <p>Durante quella corsa disperata, vi fu un momento terribile, un momento in cui Pinocchio si credè perduto: perchè bisogna sapere che Alidoro (era questo il nome del can mastino) a furia di correre e correre, l&#x27;aveva quasi raggiunto.</p>
 <p>Basti dire che il burattino sentiva dietro di sè, alla distanza d&#x27;un palmo, l&#x27;ansare affannoso di quella bestiaccia, e ne sentiva perfino la vampa calda delle fiatate.</p>
@@ -1187,7 +1183,7 @@ h2 + p, .first { text-indent: 0; }
 <p>I primi a ballare nell&#x27;olio bollente furono i poveri naselli: poi toccò ai ragnotti, poi ai muggini, poi alle sogliole e alle acciughe, e poi venne la volta di Pinocchio. Il quale, a vedersi così vicino alla morte (e che brutta morte!) fu preso da tanto tremito e da tanto spavento, che non aveva più nè voce nè fiato per raccomandarsi.</p>
 <p>Il povero figliuolo si raccomandava cogli occhi! Ma il pescatore verde, senza badarlo neppure, lo avvoltò cinque o sei volte nella farina, infarinandolo così bene dal capo ai piedi, che pareva diventato un burattino di gesso.</p>
 <p>Poi lo prese per il capo, e....</p>
-<h2>XXIX.</h2>
+<h2 class="chapter" id="c26">XXIX.</h2>
 <p>Ritorna a casa della Fata, la quale gli promette che il giorno dopo non sarà più un burattino, ma diventerà un ragazzo. Gran colazione di caffè-e-latte per festeggiare questo grande avvenimento.</p>
 <p>Mentre il pescatore era proprio sul punto di buttar Pinocchio nella padella, entrò nella grotta un grosso cane, condotto là dall&#x27;odore acutissimo e ghiotto della frittura.</p>
 <p>— Passa via! — gli gridò il pescatore minacciandolo e tenendo sempre in mano il burattino infarinato.</p>
@@ -1278,7 +1274,7 @@ h2 + p, .first { text-indent: 0; }
 <p>— Domani finirai di essere un burattino di legno, e diventerai un ragazzo per bene. —</p>
 <p>Chi non ha veduto la gioia di Pinocchio, a questa notizia tanto sospirata, non potrà mai figurarsela. Tutti i suoi amici e compagni di scuola dovevano essere invitati per il giorno dopo a una gran colazione in casa della Fata, per festeggiare insieme il grande avvenimento: e la Fata aveva fatto preparare dugento tazze di caffè-e-latte e quattrocento panini imburrati di dentro e di fuori. Quella giornata prometteva di riuscire molto bella e molto allegra: ma....</p>
 <p>Disgraziatamente, nella vita dei burattini, c&#x27;è sempre un ma, che sciupa ogni cosa.</p>
-<h2>XXX.</h2>
+<h2 class="chapter" id="c27">XXX.</h2>
 <p>Pinocchio, invece di diventare un ragazzo, parte di nascosto col suo amico Lucignolo per il «Paese dei balocchi.»</p>
 <p>Com&#x27;è naturale, Pinocchio chiese subito alla Fata il permesso di andare in giro per la città a fare gl&#x27;inviti: e la Fata gli disse:</p>
 <p>— Va&#x27; pure a invitare i tuoi compagni per la colazione di domani: ma ricordati di tornare a casa prima che faccia notte. Hai capito?</p>
@@ -1372,7 +1368,7 @@ h2 + p, .first { text-indent: 0; }
 <p>— Ma è proprio vero — domandò il burattino — che in quel paese i ragazzi non hanno mai l&#x27;obbligo di studiare?</p>
 <p>— Mai, mai, mai!</p>
 <p>— Che bel paese!... che bel paese!... Che bel paese!... —</p>
-<h2>XXXI.</h2>
+<h2 class="chapter" id="c28">XXXI.</h2>
 <p>Dopo cinque mesi di cuccagna, Pinocchio con sua gran meraviglia sente spuntarsi un bel pajo d&#x27;orecchie asinine, e diventa un ciuchino, con la coda e tutto.</p>
 <p>Finalmente il carro arrivò: e arrivò senza fare il più piccolo rumore, perchè le sue ruote erano fasciate di stoppa e di cenci.</p>
 <p>Lo tiravano dodici pariglie di ciuchini, tutti della medesima grandezza, ma di diverso pelame.</p>
@@ -1432,7 +1428,7 @@ h2 + p, .first { text-indent: 0; }
 <p>— Povero maestro! — replicò l&#x27;altro tentennando il capo. — Lo so pur troppo che mi aveva a noia, e che si divertiva sempre a calunniarmi; ma io sono generoso e gli perdono!</p>
 <p>— Anima grande! — disse Pinocchio abbracciando affettuosamente l&#x27;amico, e dandogli un bacio in mezzo agli occhi.</p>
 <p>Intanto era già da cinque mesi che durava questa bella cuccagna di baloccarsi e di divertirsi le giornate intere, senza mai vedere in faccia nè un libro nè una scuola; quando una mattina Pinocchio, svegliandosi, ebbe, come si suol dire, una gran brutta sorpresa, che lo messe proprio di malumore.</p>
-<h2>XXXII.</h2>
+<h2 class="chapter" id="c29">XXXII.</h2>
 <p>A Pinocchio gli vengono gli orecchi di ciuco, e poi diventa un ciuchino vero e comincia a ragliare.</p>
 <p>E questa sorpresa quale fu?</p>
 <p>Ve lo dirò io, miei cari e piccoli lettori: la sorpresa fu che a Pinocchio, svegliandosi, gli venne fatto naturalmente di grattarsi il capo; e nel grattarsi il capo si accòrse...</p>
@@ -1518,7 +1514,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Non l&#x27;avessero mai fatto! Invece di gemiti e di lamenti, mandavano fuori dei ragli asinini: e ragliando sonoramente, facevano tutt&#x27;e due in coro: j-a, j-a, j-a.</p>
 <p>In quel frattempo fu bussato alla porta, e una voce di fuori disse:</p>
 <p>— Aprite! Sono l&#x27;omino, sono il conduttore del carro che vi portò in questo paese. Aprite subito, guai a voi! —</p>
-<h2>XXXIII.</h2>
+<h2 class="chapter" id="c30">XXXIII.</h2>
 <p>Diventato un ciuchino vero è portato a vendere, e lo compra il Direttore di una compagnia di pagliacci, per insegnargli a ballare e saltare i cerchi: ma una sera azzoppisce e allora lo ricompra un altro, per far con la sua pelle un tamburo.</p>
 <p>Vedendo che la porta non si apriva, l&#x27;omino la spalancò con un violentissimo calcio: ed entrato nella stanza, disse col suo solito risolino a Pinocchio e a Lucignolo:</p>
 <p>— Bravi ragazzi! Avete ragliato bene; io vi ho subito riconosciuti alla voce, e per questo eccomi qui. —</p>
@@ -1550,9 +1546,9 @@ h2 + p, .first { text-indent: 0; }
 <p>GRANDE SPETTACOLO DI GALA</p>
 <p>Per questa sera AVRANNO LUOGO I SOLITI SALTI ED ESERCIZI SORPRENDENTI ESEGUITI DA TUTTI GLI ARTISTI e da tutti i cavalli d&#x27;ambo i sessi della Compagnia e più</p>
 <p>Sarà presentato per la prima volta il famoso</p>
-<h2>CIUCHINO PINOCCHIO</h2>
+<h3 class="sub">Ciuchino Pinocchio</h3>
 <p>detto LA STELLA DELLA DANZA</p>
-<h2>Il teatro sarà illuminato a giorno</h2>
+<p>Il teatro sarà illuminato a giorno</p>
 <p>Quella sera, come potete figurarvelo, un&#x27;ora prima che cominciasse lo spettacolo, il teatro era pieno stipato.</p>
 <p>Non si trovava più nè una poltrona, nè un posto distinto, nè un palco, nemmeno a pagarlo a peso d&#x27;oro.</p>
 <p>Le gradinate del Circo formicolavano di bambini, di bambine e di ragazzi di tutte le età, che avevano la febbre addosso per la smania di veder ballare il famoso ciuchino Pinocchio.</p>
@@ -1561,7 +1557,7 @@ h2 + p, .first { text-indent: 0; }
 <p>«L&#x27;umile sottoscritto essendo di passaggio per questa illustre metropolitana, ho voluto procrearmi l&#x27;onore nonchè il piacere di presentare a questo intelligente e cospicuo uditorio un celebre ciuchino, che ebbe già l&#x27;onore di ballare al cospetto di sua maestà l&#x27;imperatore di tutte le principali corti di Europa.</p>
 <p>«E col ringraziandoli, aiutateci della vostra animatrice presenza e compatiteci!»</p>
 <p>Questo discorso fu accolto da molte risate e da molti applausi: ma gli applausi raddoppiarono e diventarono una specie di uragano alla comparsa del ciuchino Pinocchio in mezzo al Circo. Egli era tutto agghindato a festa. Aveva una briglia nuova di pelle lustra, con fibbie e borchie d&#x27;ottone; due camelie bianche agli orecchi: la criniera divisa in tanti riccioli legati con fiocchettini di seta rossa: una gran fascia d&#x27;oro e d&#x27;argento attraverso alla vita, e la coda tutta intrecciata con nastri di velluto paonazzo e celeste. Era, insomma, un ciuchino da innamorare!</p>
-<h2>Il direttore, nel presentarlo al pubblico, aggiunse queste parole:</h2>
+<p>Il direttore, nel presentarlo al pubblico, aggiunse queste parole:</p>
 <p>«Miei rispettabili auditori! Non starò qui a farvi menzogna delle grandi difficoltà da me soppressate per comprendere e soggiogare questo mammifero, mentre pascolava liberamente di montagna in montagna nelle pianure della zona torrida. Osservate, vi prego, quanta selvaggina trasudi da&#x27; suoi occhi, conciossiachè essendo riusciti vanitosi tutti i mezzi per addomesticarlo al vivere dei quadrupedi civili, ho dovuto più volte ricorrere all&#x27;affabile dialetto della frusta. Ma ogni mia gentilezza invece di farmi da lui ben volere, me ne ha maggiormente cattivato l&#x27;animo. Io però, seguendo il sistema di Galles, trovai nel suo cranio una piccola cartagine ossea che la stessa Facoltà Medicea di Parigi riconobbe esser quello il bulbo rigeneratore dei capelli e della danza pirrica. E per questo io lo volli ammaestrare nel ballo nonchè nei relativi salti dei cerchi e delle botti foderate di foglio. Ammiratelo, e poi giudicatelo! Prima però di prendere cognato da voi, permettete, o signori, che io v&#x27;inviti al diurno spettacolo di domani sera: ma nell&#x27;apoteosi che il tempo piovoso minacciasse acqua, allora lo spettacolo, invece di domani sera, sarà posticipato a domattina, alle ore 11 antimeridiane del pomeriggio.»</p>
 <p>E qui il Direttore fece un&#x27;altra profondissima riverenza: quindi volgendosi a Pinocchio gli disse:</p>
 <p>— Animo, Pinocchio! Avanti di dar principio ai vostri esercizi, salutate questo rispettabile pubblico, cavalieri, dame e ragazzi! —</p>
@@ -1596,7 +1592,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Lascio pensare a voi, ragazzi, il bel piacere che fu per il povero Pinocchio, quando sentì che era destinato a diventare un tamburo!</p>
 <p>Fatto sta che il compratore, appena pagati i venti soldi, condusse il ciuchino sopra uno scoglio ch&#x27;era sulla riva del mare; e messogli un sasso al collo e legatolo per una zampa con una fune che teneva in mano, gli diè improvvisamente uno spintone e lo gettò nell&#x27;acqua.</p>
 <p>Pinocchio con quel macigno al collo, andò subito a fondo; e il compratore, tenendo sempre stretta in mano la fune, si pose a sedere sullo scoglio, aspettando che il ciuchino avesse tutto il tempo di morire affogato, per poi scorticarlo e levargli la pelle.</p>
-<h2>XXXIV.</h2>
+<h2 class="chapter" id="c31">XXXIV.</h2>
 <p>Pinocchio gettato in mare, è mangiato dai pesci, e ritorna ad essere un burattino come prima: ma mentre nuota per salvarsi, è ingoiato dal terribile Pesce-cane.</p>
 <p>Dopo cinquanta minuti che il ciuchino era sott&#x27;acqua, il compratore disse, discorrendo da sè solo:</p>
 <p>— A quest&#x27;ora il mio povero ciuchino zoppo deve essere bell&#x27;e affogato. Ritiriamolo dunque su, e facciamo con la sua pelle questo bel tamburo. —</p>
@@ -1671,7 +1667,7 @@ h2 + p, .first { text-indent: 0; }
 <p>— Addio, burattino; e buona fortuna.</p>
 <p>— Dove ci rivedremo?...</p>
 <p>— Chi lo sa?... È meglio non pensarci neppure! —</p>
-<h2>XXXV.</h2>
+<h2 class="chapter" id="c32">XXXV.</h2>
 <p>Pinocchio ritrova in corpo al Pesce-cane.... chi ritrova? Leggete questo capitolo e lo saprete.</p>
 <p>Pinocchio, appena che ebbe detto addio al suo buon amico Tonno, si mosse brancolando in mezzo a quel buio, e camminando a tastoni dentro il corpo del Pesce-cane, si avviò, un passo dietro l&#x27;altro, verso quel piccolo chiarore che vedeva baluginare lontano lontano.</p>
 <p>E nel camminare sentì che i suoi piedi sguazzavano in una pozzanghera d&#x27;acqua grassa e sdrucciolona, e quell&#x27;acqua sapeva di un odore così acuto di pesce fritto, che gli pareva d&#x27;essere a mezza quaresima.</p>
@@ -1711,7 +1707,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Ciò detto, Pinocchio prese il suo babbo per la mano: e camminando sempre in punta di piedi, risalirono insieme su per la gola del mostro: poi traversarono tutta la lingua e scavalcarono i tre filari di denti. Prima però di fare il gran salto, il burattino disse al suo babbo:</p>
 <p>— Montatemi a cavalluccio sulle spalle e abbracciatemi forte forte. Al resto ci penso io. —</p>
 <p>Appena Geppetto si fu accomodato per bene sulle spalle del figliuolo, il bravo Pinocchio, sicuro del fatto suo, si gettò nell&#x27;acqua e cominciò a nuotare. Il mare era tranquillo come un olio: la luna splendeva in tutto il suo chiarore, e il Pesce-cane seguitava a dormire di un sonno così profondo, che non l&#x27;avrebbe svegliato nemmeno una cannonata.</p>
-<h2>XXXVI.</h2>
+<h2 class="chapter" id="c33">XXXVI.</h2>
 <p>Finalmente Pinocchio cessa d&#x27;essere un burattino e diventa un ragazzo.</p>
 <p>Mentre Pinocchio nuotava alla svelta per raggiungere la spiaggia, si accòrse che il suo babbo, il quale gli stava a cavalluccio sulle spalle e aveva le gambe mezze nell&#x27;acqua, tremava fitto fitto, come se al pover&#x27;uomo gli battesse la febbre terzana.</p>
 <p>Tremava di freddo o di paura? Chi lo sa?... Forse un po&#x27; dell&#x27;uno e un po&#x27; dell&#x27;altra. Ma Pinocchio, credendo che quel tremito fosse di paura, gli disse per confortarlo:</p>
@@ -1849,46 +1845,45 @@ h2 + p, .first { text-indent: 0; }
 <p>— Eccolo là! — rispose Geppetto; e gli accennò un grosso burattino appoggiato a una seggiola, col capo girato sur una parte, con le braccia ciondoloni e con le gambe incrocicchiate e ripiegate a mezzo, da parere un miracolo se stava ritto.</p>
 <p>Pinocchio si voltò a guardarlo: e dopo che l&#x27;ebbe guardato un poco, disse dentro di sè con grandissima compiacenza:</p>
 <p>— Com&#x27;ero buffo, quand&#x27;ero un burattino! e come ora son contento di esser diventato un ragazzino perbene!... —</p>
-<h2>FINE.</h2>
-<h2>INDICE</h2>
-<p>I       Come andò che maestro Ciliegia, falegname, trovò un pezzo di legno, che piangeva e rideva come un bambino                                        Pag. 5</p>
+<h3 class="sub">Fine — Indice</h3>
+<h3 class="sub">I       Come andò che maestro Ciliegia, falegname, trovò un pezzo di legno, che piangeva e rideva come un bambino                                        Pag. 5</h3>
 <p>II      Maestro Ciliegia regala il pezzo di legno al suo amico Geppetto, il quale lo prende per fabbricarsi un burattino maraviglioso, che sappia ballare, tirare di scherma e fare i salti mortali                                         10</p>
-<p>III     Geppetto, tornato a casa, comincia subito a fabbricarsi il burattino e gli mette il nome di Pinocchio. Prime monellerie del burattino          15</p>
-<p>IV      La storia di Pinocchio col Grillo-parlante, dove si vede come i ragazzi cattivi hanno a noia di sentirsi correggere da chi ne sa più di loro          23</p>
+<h3 class="sub">III     Geppetto, tornato a casa, comincia subito a fabbricarsi il burattino e gli mette il nome di Pinocchio. Prime monellerie del burattino          15</h3>
+<h3 class="sub">IV      La storia di Pinocchio col Grillo-parlante, dove si vede come i ragazzi cattivi hanno a noia di sentirsi correggere da chi ne sa più di loro          23</h3>
 <p>V       Pinocchio ha fame e cerca un uovo per farsi una frittata; ma sul più bello, la frittata gli vola via dalla finestra                                    27</p>
-<p>VI      Pinocchio si addormenta coi piedi sul caldano, e la mattina dopo si sveglia coi piedi tutti bruciati   31</p>
-<p>VII     Geppetto torna a casa, e dà al burattino la colazione che il pover&#x27;uomo aveva portata per sè                34</p>
-<p>VIII    Geppetto rifà i piedi a Pinocchio, e vende la propria casacca per comprargli l&#x27;Abbecedario                  40</p>
-<p>IX      Pinocchio vende l&#x27;Abbecedario per andare a vedere il teatro dei burattini                               46</p>
+<h3 class="sub">VI      Pinocchio si addormenta coi piedi sul caldano, e la mattina dopo si sveglia coi piedi tutti bruciati   31</h3>
+<h3 class="sub">VII     Geppetto torna a casa, e dà al burattino la colazione che il pover&#x27;uomo aveva portata per sè                34</h3>
+<h3 class="sub">Viii    Geppetto rifà i piedi a Pinocchio, e vende la propria casacca per comprargli l&#x27;Abbecedario                  40</h3>
+<h3 class="sub">IX      Pinocchio vende l&#x27;Abbecedario per andare a vedere il teatro dei burattini                               46</h3>
 <p>X       I burattini riconoscono il loro fratello Pinocchio e gli fanno una grandissima festa; ma sul più bello esce fuori il burattinaio Mangiafoco, e Pinocchio corre pericolo di fare una brutta fine                51</p>
-<p>XI      Mangiafoco starnutisce e perdona a Pinocchio, il quale poi difende dalla morte il suo amico Arlecchino                                            56</p>
+<h3 class="sub">XI      Mangiafoco starnutisce e perdona a Pinocchio, il quale poi difende dalla morte il suo amico Arlecchino                                            56</h3>
 <p>XII     Il burattinaio Mangiafoco regala cinque monete d&#x27;oro a Pinocchio perchè le porti al suo babbo Geppetto: e Pinocchio, invece, si lascia abbindolare dalla Volpe e dal Gatto e se ne va con loro                                              64</p>
-<h2>XIII    L&#x27;osteria del «Gambero Rosso»                           72</h2>
-<p>XIV     Pinocchio, per non aver dato retta ai buoni consigli del Grillo-parlante, s&#x27;imbatte negli assassini        78</p>
-<p>XV      Gli assassini inseguono Pinocchio; e dopo averlo raggiunto lo impiccano a un ramo della Quercia grande                                                84</p>
-<p>XVI     La bella Bambina dai capelli turchini fa raccogliere il burattino: lo mette a letto, e chiama tre medici per sapere se sia vivo o morto             89</p>
+<h3 class="sub">Xiii    L&#x27;osteria del «Gambero Rosso»                           72</h3>
+<h3 class="sub">XIV     Pinocchio, per non aver dato retta ai buoni consigli del Grillo-parlante, s&#x27;imbatte negli assassini        78</h3>
+<h3 class="sub">XV      Gli assassini inseguono Pinocchio; e dopo averlo raggiunto lo impiccano a un ramo della Quercia grande                                                84</h3>
+<h3 class="sub">XVI     La bella Bambina dai capelli turchini fa raccogliere il burattino: lo mette a letto, e chiama tre medici per sapere se sia vivo o morto             89</h3>
 <p>XVII    Pinocchio mangia lo zucchero, ma non vuol purgarsi; però quando vede i becchini che vengono a portarlo via, allora si purga. Poi dice una bugia, e per gastigo gli cresce il naso           96</p>
-<p>XVIII   Pinocchio ritrova la Volpe e il Gatto, e va con loro a seminare le quattro monete nel Campo dei miracoli                                         105</p>
-<p>XIX     Pinocchio è derubato delle sue monete d&#x27;oro, e per gastigo si busca quattro mesi di prigione        113</p>
+<h3 class="sub">Xviii   Pinocchio ritrova la Volpe e il Gatto, e va con loro a seminare le quattro monete nel Campo dei miracoli                                         105</h3>
+<h3 class="sub">XIX     Pinocchio è derubato delle sue monete d&#x27;oro, e per gastigo si busca quattro mesi di prigione        113</h3>
 <p>XX      Liberato dalla prigione, si avvia per tornare a casa della Fata; ma lungo la strada trova un serpente orribile, e poi rimane preso alla tagliuola                                            122</p>
-<p>XXI     Pinocchio è preso da un contadino, il quale lo costringe a far da can di guardia a un pollaio       127</p>
-<p>XXII    Pinocchio scuopre i ladri, e in ricompensa di essere stato fedele vien posto in libertà            132</p>
+<h3 class="sub">XXI     Pinocchio è preso da un contadino, il quale lo costringe a far da can di guardia a un pollaio       127</h3>
+<h3 class="sub">Xxii    Pinocchio scuopre i ladri, e in ricompensa di essere stato fedele vien posto in libertà            132</h3>
 <p>XXIII   Pinocchio piange la morte della bella Bambina dai capelli turchini: poi trova un Colombo, che lo porta sulla riva del mare, e lì si getta nell&#x27;acqua per andare in aiuto del suo babbo Geppetto                                             137</p>
-<p>XXIV    Pinocchio arriva all&#x27;isola delle «Api industriose» e ritrova la Fata                                    147</p>
+<h3 class="sub">Xxiv    Pinocchio arriva all&#x27;isola delle «Api industriose» e ritrova la Fata                                    147</h3>
 <p>XXV     Pinocchio promette alla Fata di esser buono e di studiare, perchè è stufo di fare il burattino e vuol diventare un bravo ragazzo                      157</p>
-<p>XXVI    Pinocchio va co&#x27; suoi compagni di scuola in riva al mare, per vedere il terribile Pesce-cane          163</p>
-<p>XXVII   Gran combattimento fra Pinocchio e i suoi compagni: uno dei quali essendo rimasto ferito, Pinocchio viene arrestato dai carabinieri            169</p>
-<p>XXVIII  Pinocchio corre pericolo di esser fritto in padella, come un pesce                                        180</p>
+<h3 class="sub">Xxvi    Pinocchio va co&#x27; suoi compagni di scuola in riva al mare, per vedere il terribile Pesce-cane          163</h3>
+<h3 class="sub">Xxvii   Gran combattimento fra Pinocchio e i suoi compagni: uno dei quali essendo rimasto ferito, Pinocchio viene arrestato dai carabinieri            169</h3>
+<h3 class="sub">Xxviii  Pinocchio corre pericolo di esser fritto in padella, come un pesce                                        180</h3>
 <p>XXIX    Ritorna a casa della Fata, la quale gli promette che il giorno dopo non sarà più un burattino, ma diventerà un ragazzo. Gran colazione di caffè-e-latte per festeggiare questo grande avvenimento                                          189</p>
-<p>XXX     Pinocchio, invece di diventare un ragazzo, parte di nascosto col suo amico Lucignolo per il «Paese dei balocchi»                                 204</p>
+<h3 class="sub">XXX     Pinocchio, invece di diventare un ragazzo, parte di nascosto col suo amico Lucignolo per il «Paese dei balocchi»                                 204</h3>
 <p>XXXI    Dopo cinque mesi di cuccagna, Pinocchio, con sua gran meraviglia, sente spuntarsi un bel paio d&#x27;orecchie asinine, e diventa un ciuchino, con la coda e tutto                                  212</p>
-<p>XXXII   A Pinocchio gli vengono gli orecchi di ciuco, e poi diventa un ciuchino vero e comincia a ragliare                                             226</p>
+<h3 class="sub">Xxxii   A Pinocchio gli vengono gli orecchi di ciuco, e poi diventa un ciuchino vero e comincia a ragliare                                             226</h3>
 <p>XXXIII  Diventato un ciuchino vero, è portato a vendere, e lo compra il Direttore di una compagnia di pagliacci, per insegnargli a ballare e saltare i cerchi: ma una sera azzoppisce e allora lo ricompra un altro, per far con la sua pelle un tamburo        238</p>
 <p>XXXIV   Pinocchio, gettato in mare, è mangiato dai pesci, e ritorna ad essere un burattino come prima: ma mentre nuota per salvarsi, è ingoiato dal terribile Pesce-cane                                 252</p>
-<p>XXXV    Pinocchio ritrova in corpo al Pesce-cane.... chi ritrova? Leggete questo capitolo e lo saprete        264</p>
-<p>XXXVI   Finalmente Pinocchio cessa d&#x27;essere un burattino e diventa un ragazzo                                 276</p>
+<h3 class="sub">Xxxv    Pinocchio ritrova in corpo al Pesce-cane.... chi ritrova? Leggete questo capitolo e lo saprete        264</h3>
+<h3 class="sub">Xxxvi   Finalmente Pinocchio cessa d&#x27;essere un burattino e diventa un ragazzo                                 276</h3>
 <p>Nota del Trascrittore</p>
 <p>Ortografia e punteggiatura originali sono state mantenute, correggendo senza annotazione minimi errori tipografici.</p>
 <p>End of Project Gutenberg&#x27;s Le avventure di Pinocchio, by Carlo Collodi</p>
-<p class="colophon">Texte du domaine public, source : Project Gutenberg (#52484). Édition numérique EbookClassics.</p>
+<p class="colophon">Testo di pubblico dominio. Edizione digitale EbookClassics.</p>
 </body></html>

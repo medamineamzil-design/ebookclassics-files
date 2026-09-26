@@ -1,24 +1,8 @@
 Nicomachean Ethics
 Aristotle
 
-The Nicomachean Ethics of Aristotle
 
-By Aristotle
-
-
-INTRODUCTION BY J. A. SMITH
-
-
-Contents
-
-
-INTRODUCTION
-
-
-ARISTOTLE’S ETHICS BOOK I BOOK II BOOK III BOOK IV BOOK V BOOK VI BOOK VII BOOK VIII BOOK IX BOOK X NOTES
-
-
-INTRODUCTION
+Introduction — Introduction
 
 
 The Ethics of Aristotle is one half of a single treatise of which his Politics is the other half. Both deal with one and the same subject. This subject is what Aristotle calls in one place the “philosophy of human affairs;” but more frequently Political or Social Science. In the two works taken together we have their author’s whole theory of human conduct or practical activity, that is, of all human activity which is not directed merely to knowledge or truth. The two parts of this treatise are mutually complementary, but in a literary sense each is independent and self-contained. The proem to the Ethics is an introduction to the whole subject, not merely to the first part; the last chapter of the Ethics points forward to the Politics, and sketches for that part of the treatise the order of enquiry to be pursued (an order which in the actual treatise is not adhered to).
@@ -92,7 +76,7 @@ This view has the great advantage of exhibiting morality as essentially reasonab
 But this does not mean that Moral Philosophy has not still much to learn from Aristotle’s Ethics. The work still remains one of the best introductions to a study of its important subject-matter, it spreads before us a view of the relevant facts, it reduces them to manageable compass and order, it raises some of the central problems, and makes acute and valuable suggestions towards their solution. Above all, it perpetually incites to renewed and independent reflection upon them.
 
 
-J. A. SMITH
+J. A. Smith
 
 
 The following is a list of the works of Aristotle:—
@@ -124,11 +108,8 @@ ENGLISH TRANSLATIONS OF ONE OR MORE WORKS De Anima (with Parva Naturalia), by W 
 LIFE, ETC J W Blakesley, 1839, A Crichton (Jardine’s Naturalist’s Library), 1843, JS Blackie, Four Phases of Morals, Socrates, Aristotle, etc, 1871, G Grote, Aristotle, edited by A Bain and G C Robertson, 1872, 1880, E Wallace, Outlines of the Philosophy of Aristotle, 1875, 1880, A Grant (Ancient Classics for English readers), 1877, T Davidson, Aristotle and Ancient Educational Ideals (Great Educators), 1892, F Sewall, Swedenborg and Aristotle, 1895, W A Heidel, The Necessary and the Contingent of the Aristotelian System (University of Chicago Contributions to Philosophy), 1896, F W Bain, On the Realisation of the Possible, and the Spirit of Aristotle, 1899, J H Hyslop, The Ethics of the Greek Philosophers, etc (Evolution of Ethics), 1903, M V Williams, Six Essays on the Platonic Theory of Knowledge as expounded in the later dialogues and reviewed by Aristotle, 1908, J M Watson, Aristotle’s Criticism of Plato, 1909 A E Taylor, Aristotle, 1919, W D Ross, Aristotle, 1923.
 
 
-ARISTOTLE’S ETHICS
+Aristotle’s Ethics — Book I
 
-
-
-BOOK I
 
 
 
@@ -162,6 +143,7 @@ And I draw no distinction between young in years, and youthful in temper and dis
 Let thus much suffice by way of preface on these three points, the student, the spirit in which our observations should be received, and the object which we propose.
 
 
+
 CHAPTER II.
 
 
@@ -176,6 +158,7 @@ And here we must not forget the difference between reasoning from principles, an
 Of course, we must begin with what is known; but then this is of two kinds, what we do know, and what we may know:[5] perhaps then as individuals we must begin with what we do know. Hence the necessity that he should have been well trained in habits, who is to study, with any tolerable chance of profit, the principles of nobleness and justice and moral philosophy generally. For a principle is a matter of fact, and if the fact is sufficiently clear to a man there will be no need in addition of the reason for the fact. And he that has been thus trained either has principles already, or can receive them easily: as for him who neither has nor can receive them, let him hear his sentence from Hesiod:
 
 He is best of all who of himself conceiveth all things; Good again is he too who can adopt a good suggestion; But whoso neither of himself conceiveth nor hearing from another Layeth it to heart;—he is a useless man.
+
 
 
 CHAPTER III.
@@ -216,6 +199,7 @@ It may readily occur to any one, that it would be better to attain a knowledge o
 Some plausibility, it is true, this argument possesses, but it is contradicted by the facts of the Arts and Sciences; for all these, though aiming at some good, and seeking that which is deficient, yet pretermit the knowledge of it: now it is not exactly probable that all artisans without exception should be ignorant of so great a help as this would be, and not even look after it; neither is it easy to see wherein a weaver or a carpenter will be profited in respect of his craft by knowing the very-good, or how a man will be the more apt to effect cures or to command an army for having seen the ἰδέα itself. For manifestly it is not health after this general and abstract fashion which is the subject of the physician’s investigation, but the health of Man, or rather perhaps of this or that man; for he has to heal individuals.—Thus much on these points.
 
 
+
 CHAPTER IV.
 
 
@@ -232,6 +216,7 @@ And of this nature Happiness is mostly thought to be, for this we choose always 
 The same result[15] is seen to follow also from the notion of self-sufficiency, a quality thought to belong to the final good. Now by sufficient for Self, we mean not for a single individual living a solitary life, but for his parents also and children and wife, and, in general, friends and countrymen; for man is by nature adapted to a social existence. But of these, of course, some limit must be fixed: for if one extends it to parents and descendants and friends’ friends, there is no end to it. This point, however, must be left for future investigation: for the present we define that to be self-sufficient “which taken alone makes life choice-worthy, and to be in want of nothing;” now of such kind we think Happiness to be: and further, to be most choice-worthy of all things; not being reckoned with any other thing,[16] for if it were so reckoned, it is plain we must then allow it, with the addition of ever so small a good, to be more choice-worthy than it was before:[17] because what is put to it becomes an addition of so much more good, and of goods the greater is ever the more choice-worthy.
 
 So then Happiness is manifestly something final and self-sufficient, being the end of all things which are and may be done.
+
 
 
 CHAPTER V.
@@ -254,6 +239,7 @@ So then should one do in other matters, that the incidental matters may not exce
 And again, you must not demand the reason either in all things alike,[21] because in some it is sufficient that the fact has been well demonstrated, which is the case with first principles; and the fact is the first step, i.e. starting-point or principle.
 
 And of these first principles some are obtained by induction, some by perception,[22] some by a course of habituation, others in other different ways. And we must try to trace up each in their own nature, and take pains to secure their being well defined, because they have great influence on what follows: it is thought, I mean, that the starting-point or principle is more than half the whole matter, and that many of the points of enquiry come simultaneously into view thereby.
+
 
 
 CHAPTER VI.
@@ -286,6 +272,7 @@ For all these co-exist in the best acts of working: and we say that Happiness is
 Still[26] it is quite plain that it does require the addition of external goods, as we have said: because without appliances it is impossible, or at all events not easy, to do noble actions: for friends, money, and political influence are in a manner instruments whereby many things are done: some things there are again a deficiency in which mars blessedness; good birth, for instance, or fine offspring, or even personal beauty: for he is not at all capable of Happiness who is very ugly, or is ill-born, or solitary and childless; and still less perhaps supposing him to have very bad children or friends, or to have lost good ones by death. As we have said already, the addition of prosperity of this kind does seem necessary to complete the idea of Happiness; hence some rank good fortune, and others virtue, with Happiness.
 
 
+
 CHAPTER VII.
 
 
@@ -304,6 +291,7 @@ These considerations will harmonise also with what we said at the commencement: 
 With good reason then neither ox nor horse nor any other brute animal do we call happy, for none of them can partake in such working: and for this same reason a child is not happy either, because by reason of his tender age he cannot yet perform such actions: if the term is applied, it is by way of anticipation.
 
 For to constitute Happiness, there must be, as we have said, complete virtue and a complete life: for many changes and chances of all kinds arise during a life, and he who is most prosperous may become involved in great misfortunes in his old age, as in the heroic poems the tale is told of Priam: but the man who has experienced such fortune and died in wretchedness, no man calls happy.
+
 
 
 CHAPTER VIII.
@@ -338,6 +326,7 @@ Or we must add, that not only is he to live so, but his death must be in keeping
 On these points then let it suffice to have denned thus much.
 
 
+
 CHAPTER IX.
 
 
@@ -350,6 +339,7 @@ If then, as of the misfortunes which happen to one’s self, some have a certain
 It is plain then that the good or ill fortunes of their friends do affect the dead somewhat: but in such kind and degree as neither to make the happy unhappy nor produce any other such effect.
 
 
+
 CHAPTER X.
 
 
@@ -360,6 +350,7 @@ Now it is plain that everything which is a subject of praise is praised for bein
 Eudoxus[40] too is thought to have advanced a sound argument in support of the claim of pleasure to the highest prize: for the fact that, though it is one of the good things, it is not praised, he took for an indication of its superiority to those which are subjects of praise: a superiority he attributed also to a god and the Chief Good, on the ground that they form the standard to which everything besides is referred. For praise applies to virtue, because it makes men apt to do what is noble; but encomia to definite works of body or mind.[41]
 
 However, it is perhaps more suitable to a regular treatise on encomia to pursue this topic with exactness: it is enough for our purpose that from what has been said it is evident that Happiness belongs to the class of things precious and final. And it seems to be so also because of its being a starting-point; which it is, in that with a view to it we all do everything else that is done; now the starting-point and cause of good things we assume to be something precious and divine.
+
 
 
 CHAPTER XI.
@@ -390,11 +381,8 @@ Now that the Irrational is in some way persuaded by the Reason, admonition, and 
 The Excellence of Man then is divided in accordance with this difference: we make two classes, calling the one Intellectual, and the other Moral; pure science, intelligence, and practical wisdom—Intellectual: liberality, and perfected self-mastery—Moral: in speaking of a man’s Moral character, we do not say he is a scientific or intelligent but a meek man, or one of perfected self-mastery: and we praise the man of science in right of his mental state;[45] and of these such as are praiseworthy we call Excellences.
 
 
-BOOK II
 
-
-
-CHAPTER I.
+BOOK II — CHAPTER I.
 
 
 Well: human Excellence is of two kinds, Intellectual and Moral:[1] now the Intellectual springs originally, and is increased subsequently, from teaching (for the most part that is[2]), and needs therefore experience and time; whereas the Moral comes from custom, and so the Greek term denoting it is but a slight deflection from the term denoting custom in that language.
@@ -412,6 +400,7 @@ So too then is it with the Virtues: for by acting in the various relations in wh
 Similarly is it also with respect to the occasions of lust and anger: for some men come to be perfected in self-mastery and mild, others destitute of all self-control and passionate; the one class by behaving in one way under them, the other by behaving in another. Or, in one word, the habits are produced from the acts of working like to them: and so what we have to do is to give a certain character to these particular acts, because the habits formed correspond to the differences of these.
 
 So then, whether we are accustomed this way or that straight from childhood, makes not a small but an important difference, or rather I would say it makes all the difference.
+
 
 
 CHAPTER II.
@@ -442,6 +431,7 @@ Again, we adopt pleasure and pain (some of us more, and some less) as the measur
 Let us then be understood to have stated, that Virtue has for its object-matter pleasures and pains, and that it is either increased or marred by the same circumstances (differently used) by which it is originally generated, and that it exerts itself on the same circumstances out of which it was generated.
 
 
+
 CHAPTER III.
 
 
@@ -450,6 +440,7 @@ Now I can conceive a person perplexed as to the meaning of our statement, that m
 The facts,[8] it is true, are called by the names of these habits when they are such as the just or perfectly self-mastering man would do; but he is not in possession of the virtues who merely does these facts, but he who also so does them as the just and self-mastering do them.
 
 We are right then in saying, that these virtues are formed in a man by his doing the actions; but no one, if he should leave them undone, would be even in the way to become a good man. Yet people in general do not perform these actions, but taking refuge in talk they flatter themselves they are philosophising, and that they will so be good men: acting in truth very like those sick people who listen to the doctor with great attention but do nothing that he tells them: just as these then cannot be well bodily under such a course of treatment, so neither can those be mentally by such philosophising.
+
 
 
 CHAPTER IV.
@@ -472,6 +463,7 @@ And for these same reasons they are not Capacities, for we are not called good o
 And again, Capacities we have by nature, but we do not come to be good or bad by nature, as we have said before.
 
 Since then the virtues are neither Feelings nor Capacities, it remains that they must be States.
+
 
 
 CHAPTER V.
@@ -498,6 +490,7 @@ Again, one may go wrong in many different ways (because, as the Pythagoreans exp
 “Men may be bad in many ways, But good in one alone.”
 
 
+
 CHAPTER VI.
 
 
@@ -516,6 +509,7 @@ You might as well require that there should be determined a mean state, an exces
 But just as of perfected self-mastery and courage there is no excess and defect, because the mean is in one point of view the highest possible state, so neither of those faulty states can you have a mean state, excess, or defect, but howsoever done they are wrong: you cannot, in short, have of excess and defect a mean state, nor of a mean state excess and defect.
 
 
+
 CHAPTER VII.
 
 
@@ -524,20 +518,26 @@ It is not enough, however, to state this in general terms, we must also apply it
 We must take these details then from the well-known scheme.[15]
 
 
+
 I. IN RESPECT OF FEARS AND CONFIDENCE OR BOLDNESS:
 
 
 The Mean state is Courage: men may exceed, of course, either in absence of fear or in positive confidence: the former has no name (which is a common case), the latter is called rash: again, the man who has too much fear and too little confidence is called a coward.
 
-II. In respect of pleasures and pains (but not all, and perhaps fewer pains than pleasures):
+
+
+II. IN RESPECT OF PLEASURES AND PAINS (BUT NOT ALL, AND PERHAPS FEWER PAINS THAN PLEASURES):
+
 
 The Mean state here is perfected Self-Mastery, the defect total absence of Self-control. As for defect in respect of pleasure, there are really no people who are chargeable with it, so, of course, there is really no name for such characters, but, as they are conceivable, we will give them one and call them insensible.
 
 
-III. IN RESPECT OF GIVING AND TAKING WEALTH[16] (A):
+
+III. IN RESPECT OF GIVING AND TAKING WEALTH (A):
 
 
 The mean state is Liberality, the excess Prodigality, the defect Stinginess: here each of the extremes involves really an excess and defect contrary to each other: I mean, the prodigal gives out too much and takes in too little, while the stingy man takes in too much and gives out too little. (It must be understood that we are now giving merely an outline and summary, intentionally: and we will, in a later part of the treatise, draw out the distinctions with greater exactness.)
+
 
 
 IV. IN RESPECT OF WEALTH (B):
@@ -546,16 +546,19 @@ IV. IN RESPECT OF WEALTH (B):
 There are other dispositions besides these just mentioned; a mean state called Munificence (for the munificent man differs from the liberal, the former having necessarily to do with great wealth, the latter with but small); the excess called by the names either of Want of taste or Vulgar Profusion, and the defect Paltriness (these also differ from the extremes connected with liberality, and the manner of their difference shall also be spoken of later).
 
 
+
 V. IN RESPECT OF HONOUR AND DISHONOUR (A):
 
 
 The mean state Greatness of Soul, the excess which may be called χαυνότης,[17] and the defect Littleness of Soul.
 
 
+
 VI. IN RESPECT OF HONOUR AND DISHONOUR (B):
 
 
 Now there is a state bearing the same relation to Greatness of Soul as we said just now Liberality does to Munificence, with the difference that is of being about a small amount of the same thing: this state having reference to small honour, as Greatness of Soul to great honour; a man may, of course, grasp at honour either more than he should or less; now he that exceeds in his grasping at it is called ambitious, he that falls short unambitious, he that is just as he should be has no proper name: nor in fact have the states, except that the disposition of the ambitious man is called ambition. For this reason those who are in either extreme lay claim to the mean as a debateable land, and we call the virtuous character sometimes by the name ambitious,[18] sometimes by that of unambitious, and we commend sometimes the one and sometimes the other. Why we do it shall be said in the subsequent part of the treatise; but now we will go on with the rest of the virtues after the plan we have laid down.
+
 
 
 VII. IN RESPECT OF ANGER:
@@ -568,16 +571,19 @@ There are also three other mean states, having some mutual resemblance, but stil
 Now of these, it is true, the majority have really no proper names, but still we must try, as in the other cases, to coin some for them for the sake of clearness and intelligibleness.
 
 
+
 I. IN RESPECT OF TRUTH:
 
 
 The man who is in the mean state we will call Truthful, and his state Truthfulness, and as to the disguise of truth, if it be on the side of exaggeration, Braggadocia, and him that has it a Braggadocio; if on that of diminution, Reserve and Reserved shall be the terms.
 
 
+
 II. IN RESPECT OF WHAT IS PLEASANT IN THE WAY OF RELAXATION OR AMUSEMENT.
 
 
 The mean state shall be called Easy-pleasantry, and the character accordingly a man of Easy-pleasantry; the excess Buffoonery, and the man a Buffoon; the man deficient herein a Clown, and his state Clownishness.
+
 
 
 III. IN RESPECT OF WHAT IS PLEASANT IN DAILY LIFE.
@@ -588,6 +594,7 @@ He that is as he should be may be called Friendly, and his mean state Friendline
 There are mean states likewise in feelings and matters concerning them. Shamefacedness, for instance, is no virtue, still a man is praised for being shamefaced: for in these too the one is denominated the man in the mean state, the other in the excess; the Dumbfoundered, for instance, who is overwhelmed with shame on all and any occasions: the man who is in the defect, i.e. who has no shame at all in his composition, is called Shameless: but the right character Shamefaced.
 
 But for the discussion of these also there will be another opportunity, as of Justice too, because the term is used in more senses than one. So after this we will go accurately into each and say how they are mean states: and in like manner also with respect to the Intellectual Excellences.
+
 
 
 CHAPTER VIII.
@@ -604,6 +611,7 @@ Further: of the extremes in some cases the excess, and in others the defect, is 
 And for this there are two reasons to be given; one from the nature of the thing itself, because from the one extreme being nearer and more like the mean, we do not put this against it, but the other; as, for instance, since rashness is thought to be nearer to courage than cowardice is, and to resemble it more, we put cowardice against courage rather than rashness, because those things which are further from the mean are thought to be more contrary to it. This then is one reason arising from the thing itself; there is another arising from our own constitution and make: for in each man’s own case those things give the impression of being more contrary to the mean to which we individually have a natural bias. Thus we have a natural bias towards pleasures, for which reason we are much more inclined to the rejection of all self-control, than to self-discipline.
 
 These things then to which the bias is, we call more contrary, and so total want of self-control (the excess) is more contrary than the defect is to perfected self-mastery.
+
 
 
 CHAPTER IX.
@@ -634,11 +642,8 @@ Then, again, he who makes a small deflection from what is right, be it on the si
 At all events thus much is plain, that the mean state is in all things praiseworthy, and that practically we must deflect sometimes towards excess sometimes towards defect, because this will be the easiest method of hitting on the mean, that is, on what is right.
 
 
-BOOK III
 
-
-
-CHAPTER I.
+BOOK III — CHAPTER I.
 
 
 Now since Virtue is concerned with the regulation of feelings and actions, and praise and blame arise upon such as are voluntary, while for the involuntary allowance is made, and sometimes compassion is excited, it is perhaps a necessary task for those who are investigating the nature of Virtue to draw out the distinction between what is voluntary and what involuntary; and it is certainly useful for legislators, with respect to the assigning of honours and punishments.
@@ -667,11 +672,10 @@ But what kind of things one ought to choose instead of what, it is not easy to s
 
 But suppose a person should say, things pleasant and honourable exert a compulsive force (for that they are external and do compel); at that rate every action is on compulsion, because these are universal motives of action.
 
-Again, they who act on compulsion and against their will do so with pain; but they who act by reason of what is pleasant or honourable act with pleasure.
-
 It is truly absurd for a man to attribute his actions to external things instead of to his own capacity for being easily caught by them;[1] or, again, to ascribe the honourable to himself, and the base ones to pleasure.
 
 So then that seems to be compulsory “whose origination is from without, the party compelled contributing nothing.”
+
 
 
 CHAPTER II.
@@ -696,6 +700,7 @@ Now since ignorance is possible in respect to all these details in which the act
 Further, not only must the ignorance be of this kind, to constitute an action involuntary, but it must be also understood that the action is followed by pain and regret.
 
 
+
 CHAPTER III.
 
 
@@ -708,6 +713,7 @@ Because, in the first place, if this be so no other animal but man, and not even
 Again, whereas actions strictly involuntary are thought to be attended with pain, those which are done to gratify lust are thought to be pleasant.
 
 Again: how does the involuntariness make any difference[7] between wrong actions done from deliberate calculation, and those done by reason of anger? for both ought to be avoided, and the irrational feelings are thought to be just as natural to man as reason, and so of course must be such actions of the individual as are done from Anger and Lust. It is absurd then to class these actions among the involuntary.
+
 
 
 CHAPTER IV.
@@ -744,6 +750,7 @@ It may be urged, that Opinion always precedes or accompanies Moral Choice; be it
 Since then it is none of the aforementioned things, what is it, or how is it characterised? Voluntary it plainly is, but not all voluntary action is an object of Moral Choice. May we not say then, it is “that voluntary which has passed through a stage of previous deliberation?” because Moral Choice is attended with reasoning and intellectual process. The etymology of its Greek name seems to give a hint of it, being when analysed “chosen in preference to somewhat else.”
 
 
+
 CHAPTER V.
 
 
@@ -759,7 +766,9 @@ Nor in fact even about all human affairs; no Lacedæmonian, for instance, delibe
 
 But we do deliberate respecting such practical matters as are in our own power (which are what are left after all our exclusions).
 
+
 I have adopted this division because causes seem to be divisible into nature, necessity, chance, and moreover intellect, and all human powers.
+
 
 And as man in general deliberates about what man in general can effect, so individuals do about such practical things as can be effected through their own instrumentality.
 
@@ -782,6 +791,7 @@ Now since that which is the object of Moral Choice is something in our own power
 Let this be accepted as a sketch of the nature and object of Moral Choice, that object being “Means to Ends.”
 
 
+
 CHAPTER VI.
 
 
@@ -794,6 +804,7 @@ But, if these opinions do not satisfy us, may we not say that, abstractedly and 
 For there are fair and pleasant things peculiar to, and so varying with, each state; and perhaps the most distinguishing characteristic of the good man is his seeing the truth in every instance, he being, in fact, the rule and measure of these matters.
 
 The multitude of men seem to be deceived by reason of pleasure, because though it is not really a good it impresses their minds with the notion of goodness, so they choose what is pleasant as good and avoid pain as an evil.
+
 
 
 CHAPTER VII.
@@ -832,12 +843,14 @@ Whether then we suppose that the End impresses each man’s mind with certain no
 If then, as is commonly said, the Virtues are voluntary (because we at least cooperate[15] in producing our moral states, and we assume the End to be of a certain kind according as we are ourselves of certain characters), the Vices must be voluntary also, because the cases are exactly similar.
 
 
+
 CHAPTER VIII.
 
 
 Well now, we have stated generally respecting the Moral Virtues, the genus (in outline), that they are mean states, and that they are habits, and how they are formed, and that they are of themselves calculated to act upon the circumstances out of which they were formed, and that they are in our own power and voluntary, and are to be done so as right Reason may direct.
 
 But the particular actions and the habits are not voluntary in the same sense; for of the actions we are masters from beginning to end (supposing of course a knowledge of the particular details), but only of the origination of the habits, the addition by small particular accessions not being cognisiable (as is the case with sicknesses): still they are voluntary because it rested with us to use our circumstances this way or that.
+
 
 
 CHAPTER IX.
@@ -858,6 +871,7 @@ What kind of fearful things then do constitute the object-matter of the Brave ma
 He then may be most properly denominated Brave who is fearless in respect of honourable death and such sudden emergencies as threaten death; now such specially are those which arise in the course of war.
 
 It is not meant but that the Brave man will be fearless also on the sea (and in sickness), but not in the same way as sea-faring men; for these are light-hearted and hopeful by reason of their experience, while landsmen though Brave are apt to give themselves up for lost and shudder at the notion of such a death: to which it should be added that Courage is exerted in circumstances which admit of doing something to help one’s self, or in which death would be honourable; now neither of these requisites attach to destruction by drowning or sickness.
+
 
 
 CHAPTER X.
@@ -882,6 +896,7 @@ The man moreover who exceeds in feeling fear is a coward, since there attach to 
 So the coward, the rash, and the Brave man have exactly the same object-matter, but stand differently related to it: the two first-mentioned respectively exceed and are deficient, the last is in a mean state and as he ought to be. The rash again are precipitate, and, being eager before danger, when actually in it fall away, while the Brave are quick and sharp in action, but before are quiet and composed.
 
 Well then, as has been said, Courage is a mean state in respect of objects inspiring boldness or fear, in the circumstances which have been stated, and the Brave man chooses his line and withstands danger either because to do so is honourable, or because not to do so is base. But dying to escape from poverty, or the pangs of love, or anything that is simply painful, is the act not of a Brave man but of a coward; because it is mere softness to fly from what is toilsome, and the suicide braves the terrors of death not because it is honourable but to get out of the reach of evil.
+
 
 
 CHAPTER XI.
@@ -928,6 +943,7 @@ For this reason it is thought to be a greater proof of Courage to be fearless an
 Fifthly and lastly, those who are acting under Ignorance have a show of Courage and are not very far from the Hopeful; but still they are inferior inasmuch as they have no opinion of themselves; which the others have, and therefore stay and contest a field for some little time; but they who have been deceived fly the moment they know things to be otherwise than they supposed, which the Argives experienced when they fell on the Lacedæmonians, taking them for the men of Sicyon.
 
 
+
 CHAPTER XII.
 
 
@@ -944,6 +960,7 @@ If then we may say the same of Courage, of course death and wounds must be painf
 But there is perhaps no reason why not such men should make the best soldiers, but those who are less truly Brave but have no other good to care for: these being ready to meet danger and bartering their lives against small gain.
 
 Let thus much be accepted as sufficient on the subject of Courage; the true nature of which it is not difficult to gather, in outline at least, from what has been said.
+
 
 
 CHAPTER XIII.
@@ -986,6 +1003,7 @@ As for men who are defective on the side of pleasure, who take less pleasure in 
 But the man of Perfected Self-Mastery is in the mean with respect to these objects: that is to say, he neither takes pleasure in the things which delight the vicious man, and in fact rather dislikes them, nor at all in improper objects; nor to any great degree in any object of the class; nor is he pained at their absence; nor does he desire them; or, if he does, only in moderation, and neither more than he ought, nor at improper times, and so forth; but such things as are conducive to health and good condition of body, being also pleasant, these he will grasp at in moderation and as he ought to do, and also such other pleasant things as do not hinder these objects, and are not unseemly or disproportionate to his means; because he that should grasp at such would be liking such pleasures more than is proper; but the man of Perfected Self-Mastery is not of this character, but regulates his desires by the dictates of right reason.
 
 
+
 CHAPTER XIV.
 
 
@@ -1006,11 +1024,8 @@ In short, as the child ought to live with constant regard to the orders of its e
 So then in the man of Perfected Self-Mastery, the appetitive principle must be accordant with Reason: for what is right is the mark at which both principles aim: that is to say, the man of perfected self-mastery desires what he ought in right manner and at right times, which is exactly what Reason directs. Let this be taken for our account of Perfected Self-Mastery.
 
 
-BOOK IV
 
-
-
-CHAPTER I.
+BOOK IV — CHAPTER I.
 
 
 We will next speak of Liberality. Now this is thought to be the mean state, having for its object-matter Wealth: I mean, the Liberal man is praised not in the circumstances of war, nor in those which constitute the character of perfected self-mastery, nor again in judicial decisions, but in respect of giving and receiving Wealth, chiefly the former. By the term Wealth I mean “all those things whose worth is measured by money.”
@@ -1050,6 +1065,7 @@ Again, should it happen to him to spend money beyond what is needful, or otherwi
 The Liberal man is also a good man to have for a partner in respect of wealth: for he can easily be wronged, since he values not wealth, and is more vexed at not spending where he ought to have done so than at spending where he ought not, and he relishes not the maxim of Simonides.
 
 
+
 CHAPTER II.
 
 
@@ -1076,6 +1092,7 @@ Now the dicer and bath-plunderer and the robber belong to the class of the Sting
 So both classes, as wishing to make gain from improper sources, are given to base gain, and all such receivings are Stingy. And with good reason is Stinginess called the contrary of Liberality: both because it is a greater evil than Prodigality, and because men err rather in this direction than in that of the Prodigality which we have spoken of as properly and completely such.
 
 Let this be considered as what we have to say respecting Liberality and the contrary vices.
+
 
 
 CHAPTER III.
@@ -1108,6 +1125,7 @@ The man who is in the state of excess, called one of Vulgar Profusion, is in exc
 The Mean man will be deficient in every case, and even where he has spent the most he will spoil the whole effect for want of some trifle; he is procrastinating in all he does, and contrives how he may spend the least, and does even that with lamentations about the expense, and thinking that he does all things on a greater scale than he ought.
 
 Of course, both these states are faulty, but they do not involve disgrace because they are neither hurtful to others nor very unseemly.
+
 
 
 CHAPTER IV.
@@ -1148,6 +1166,7 @@ And he is by no means apt to make laments about things which cannot be helped, o
 Also slow motion, deep-toned voice, and deliberate style of speech, are thought to be characteristic of the Great-minded man: for he who is earnest about few things is not likely to be in a hurry, nor he who esteems nothing great to be very intent: and sharp tones and quickness are the result of these.
 
 
+
 CHAPTER V.
 
 
@@ -1156,6 +1175,7 @@ This then is my idea of the Great-minded man; and he who is in the defect is a S
 The Small-minded man, for instance, being really worthy of good deprives himself of his deserts, and seems to have somewhat faulty from not having a sufficiently high estimate of his own desert, in fact from self-ignorance: because, but for this, he would have grasped after what he really is entitled to, and that is good. Still such characters are not thought to be foolish, but rather laggards. But the having such an opinion of themselves seems to have a deteriorating effect on the character: because in all cases men’s aims are regulated by their supposed desert, and thus these men, under a notion of their own want of desert, stand aloof from honourable actions and courses, and similarly from external goods.
 
 But the Vain are foolish and self-ignorant, and that palpably: because they attempt honourable things, as though they were worthy, and then they are detected. They also set themselves off, by dress, and carriage, and such-like things, and desire that their good circumstances may be seen, and they talk of them under the notion of receiving honour thereby. Small-mindedness rather than Vanity is opposed to Great-mindedness, because it is more commonly met with and is worse.
+
 
 
 CHAPTER VI.
@@ -1168,6 +1188,7 @@ For we blame the lover of Honour as aiming at Honour more than he ought, and fro
 It is clear then that since “Lover of so and so” is a term capable of several meanings, we do not always denote the same quality by the term “Lover of Honour;” but when we use it as a term of commendation we denote more than the mass of men are; when for blame more than a man should be.
 
 And the mean state having no proper name the extremes seem to dispute for it as unoccupied ground: but of course where there is excess and defect there must be also the mean. And in point of fact, men do grasp at Honour more than they should, and less, and sometimes just as they ought; for instance, this state is praised, being a mean state in regard of Honour, but without any appropriate name. Compared with what is called Ambition it shows like a want of love for Honour, and compared with this it shows like Ambition, or compared with both, like both faults: nor is this a singular case among the virtues. Here the extreme characters appear to be opposed, because the mean has no name appropriated to it.
+
 
 
 CHAPTER VII.
@@ -1196,6 +1217,7 @@ It is clear, therefore, that the mean state is what we are to hold to.
 This then is to be taken as our account of the various moral states which have Anger for their object-matter.
 
 
+
 CHAPTER VIII.
 
 
@@ -1214,6 +1236,7 @@ Again, he will regulate differently his intercourse with great men and with ordi
 Again, he will inflict trifling pain with a view to consequent pleasure.
 
 Well, the man bearing the mean character is pretty well such as I have described him, but he has no name appropriated to him: of those who try to give pleasure, the man who simply and disinterestedly tries to be agreeable is called Over-Complaisant, he who does it with a view to secure some profit in the way of wealth, or those things which wealth may procure, is a Flatterer: I have said before, that the man who is “always non-content” is Cross and Contentious. Here the extremes have the appearance of being opposed to one another, because the mean has no appropriate name.
+
 
 
 CHAPTER IX.
@@ -1242,6 +1265,7 @@ The Reserved, who depreciate their own qualities, have the appearance of being m
 This very Reserve sometimes shows like Exaggeration; take, for instance, the excessive plainness of dress affected by the Lacedæmonians: in fact, both excess and the extreme of deficiency partake of the nature of Exaggeration. But they who practise Reserve in moderation, and in cases in which the truth is not very obvious and plain, give an impression of refinement. Here it is the Exaggerator (as being the worst character) who appears to be opposed to the Truthful Man.
 
 
+
 CHAPTER X.
 
 
@@ -1266,6 +1290,7 @@ Yet some pause and amusement in life are generally judged to be indispensable.
 The three mean states which have been described do occur in life, and the object-matter of all is interchange of words and deeds. They differ, in that one of them is concerned with truth, and the other two with the pleasurable: and of these two again, the one is conversant with the jocosities of life, the other with all other points of social intercourse.
 
 
+
 CHAPTER XI.
 
 
@@ -1278,11 +1303,8 @@ True it is, that Shame may be good on a certain supposition, as “if a man shou
 Nor is Self-Control properly a Virtue, but a kind of mixed state: however, all about this shall be set forth in a future Book.
 
 
-BOOK V
 
-
-
-CHAPTER I.
+BOOK V — CHAPTER I.
 
 
 Now the points for our enquiry in respect of Justice and Injustice are, what kind of actions are their object-matter, and what kind of a mean state Justice is, and between what points the abstract principle of it, i.e. the Just, is a mean. And our enquiry shall be, if you please, conducted in the same method as we have observed in the foregoing parts of this Treatise.
@@ -1300,6 +1322,7 @@ Let it be ascertained then in how many senses the term “Unjust man” is used.
 Well, since the Unjust man is also a grasping man, he will be so, of course, with respect to good things, but not of every kind, only those which are the subject-matter of good and bad fortune and which are in themselves always good but not always to the individual.[4] Yet men pray for and pursue these things: this they should not do but pray that things which are in the abstract good may be so also to them, and choose what is good for themselves.
 
 But the Unjust man does not always choose actually the greater part, but even sometimes the less; as in the case of things which are simply evil: still, since the less evil is thought to be in a manner a good and the grasping is after good, therefore even in this case he is thought to be a grasping man, i.e. one who strives for more good than fairly falls to his share: of course he is also an unequal man, this being an inclusive and common term.
+
 
 
 CHAPTER II.
@@ -1326,6 +1349,7 @@ for he who bears Rule is necessarily in contact with others, i.e. in a community
 However, Justice in this sense is not a part of Virtue but is co-extensive with Virtue; nor is the Injustice which answers to it a part of Vice but co-extensive with Vice. Now wherein Justice in this sense differs from Virtue appears from what has been said: it is the same really, but the point of view is not the same: in so far as it has respect to one’s neighbour it is Justice, in so far as it is such and such a moral state it is simply Virtue.
 
 
+
 CHAPTER III.
 
 
@@ -1336,6 +1360,7 @@ Again, suppose one man seduces a man’s wife with a view to gain and actually g
 Again, all other acts of Injustice we refer to some particular depravity, as, if a man commits adultery, to abandonment to his passions; if he deserts his comrade, to cowardice; if he strikes another, to anger: but if he gains by the act to no other vice than to Injustice.
 
 Thus it is clear that there is a kind of Injustice different from and besides that which includes all Vice, having the same name because the definition is in the same genus; for both have their force in dealings with others, but the one acts upon honour, or wealth, or safety, or by whatever one name we can include all these things, and is actuated by pleasure attendant on gain, while the other acts upon all things which constitute the sphere of the good man’s action.
+
 
 
 CHAPTER IV.
@@ -1350,6 +1375,7 @@ Here then let us dismiss any further consideration of the Justice ranking as co-
 By the way, as to individual education, in respect of which a man is simply good without reference to others, whether it is the province of πολιτικὴ or some other science we must determine at a future time: for it may be it is not the same thing to be a good man and a good citizen in every case.[8]
 
 
+
 CHAPTER V.
 
 
@@ -1358,6 +1384,7 @@ Now of the Particular Justice, and the Just involved in it, one species is that 
 And of this latter there are two parts: because of transactions some are voluntary and some involuntary; voluntary, such as follow; selling, buying, use, bail, borrowing, deposit, hiring: and this class is called voluntary because the origination of these transactions is voluntary.
 
 The involuntary again are either such as effect secrecy; as theft, adultery, poisoning, pimping, kidnapping of slaves, assassination, false witness; or accompanied with open violence; as insult, bonds, death, plundering, maiming, foul language, slanderous abuse.
+
 
 
 CHAPTER VI.
@@ -1372,6 +1399,7 @@ The Just, then, is a certain proportionable thing. For proportion does not apply
 The Just then is this proportionate, and the Unjust that which violates the proportionate; and so there comes to be the greater and the less: which in fact is the case in actual transactions, because he who acts unjustly has the greater share and he who is treated unjustly has the less of what is good: but in the case of what is bad this is reversed: for the less evil compared with the greater comes to be reckoned for good, because the less evil is more choice-worthy than the greater, and what is choice-worthy is good, and the more so the greater good.
 
 This then is the one species of the Just.
+
 
 
 CHAPTER VII.
@@ -1392,6 +1420,7 @@ This, by the way, accounts for the etymology of the term by which we in Greek ex
 Thus let there be three straight lines equal to one another. From one of them cut off a portion, and add as much to another of them. The whole line thus made will exceed the remainder of the first-named line, by twice the portion added, and will exceed the untouched line by that portion.[14] And these terms loss and gain are derived from voluntary exchange: that is to say, the having more than what was one’s own is called gaining, and the having less than one’s original stock is called losing; for instance, in buying or selling, or any other transactions which are guaranteed by law: but when the result is neither more nor less, but exactly the same as there was originally,[15] people say they have their own, and neither lose nor gain.
 
 So then the Just we have been speaking of is a mean between loss and gain arising in involuntary transactions; that is, it is the having the same after the transaction as one had before it took place.
+
 
 
 CHAPTER VIII.
@@ -1424,6 +1453,7 @@ And further, money is a kind of security to us in respect of exchange at some fu
 It is obvious also that exchange was thus conducted before the existence of money: for it makes no difference whether you give for a house five beds or the price of five beds.
 
 
+
 CHAPTER IX.
 
 
@@ -1436,6 +1466,7 @@ And Justice is the moral state in virtue of which the just man is said to have t
 Injustice is all this with respect to the Unjust: and since the Unjust is excess or defect of what is good or hurtful respectively, in violation of the proportionate, therefore Injustice is both excess and defect because it aims at producing excess and defect; excess, that is, in a man’s own case of what is simply advantageous, and defect of what is hurtful: and in the case of other men in like manner generally speaking, only that the proportionate is violated not always in one direction as before but whichever way it happens in the given case. And of the Unjust act the less is being acted unjustly towards, and the greater the acting unjustly towards others.[20]
 
 Let this way of describing the nature of Justice and Injustice, and likewise the Just and the Unjust generally, be accepted as sufficient.
+
 
 
 CHAPTER X.
@@ -1468,6 +1499,7 @@ Nay, we may go further, and say that it is practically plain what among things w
 A parallel may be drawn between the Justs which depend upon convention and expedience, and measures; for wine and corn measures are not equal in all places, but where men buy they are large, and where these same sell again they are smaller: well, in like manner the Justs which are not natural, but of human invention, are not everywhere the same, for not even the forms of government are, and yet there is one only which by nature would be best in all places.
 
 
+
 CHAPTER XI.
 
 
@@ -1492,6 +1524,7 @@ And on this principle acts done from anger are fairly judged not to be from mali
 Well then, a man acts unjustly if he has hurt another of deliberate purpose, and he who commits such acts of injustice is ipso facto an unjust character when they are in violation of the proportionate or the equal; and in like manner also a man is a just character when he acts justly of deliberate purpose, and he does act justly if he acts voluntarily.
 
 Then as for involuntary acts of harm, they are either such as are excusable or such as are not: under the former head come all errors done not merely in ignorance but from ignorance; under the latter all that are done not from ignorance but in ignorance caused by some passion which is neither natural nor fairly attributable to human infirmity.
+
 
 
 CHAPTER XII.
@@ -1522,6 +1555,7 @@ And again, he that gives away his own property (as Homer says Glaucus gave to Di
 With respect to being unjustly dealt with then, it is clear that it is not voluntary.
 
 
+
 CHAPTER XIII.
 
 
@@ -1536,6 +1570,7 @@ It is evident also that it is the distributor who acts unjustly and not the man 
 Again, suppose that a man has made a wrongful award in ignorance; in the eye of the law he does not act unjustly nor is his awarding unjust, but yet he is in a certain sense: for the Just according to law and primary or natural Just are not coincident: but, if he knowingly decided unjustly, then he himself as well as the receiver got the larger share, that is, either of favour from the receiver or private revenge against the other party: and so the man who decided unjustly from these motives gets a larger share, in exactly the same sense as a man would who received part of the actual matter of the unjust action: because in this case the man who wrongly adjudged, say a field, did not actually get land but money by his unjust decision.
 
 
+
 CHAPTER XIV.
 
 
@@ -1544,6 +1579,7 @@ Now men suppose that acting Unjustly rests entirely with themselves, and conclud
 From this very same mistake they suppose also, that acting Unjustly is equally in the power of the Just man, for the Just man no less, nay even more, than the Unjust, may be able to do the particular acts; he may be able to have intercourse with a woman or strike a man; or the brave man to throw away his shield and turn his back and run this way or that. True: but then it is not the mere doing these things which constitutes acts of cowardice or injustice (except accidentally), but the doing them with certain inward dispositions: just as it is not the mere using or not using the knife, administering or not administering certain drugs, which constitutes medical treatment or curing, but doing these things in a certain particular way.
 
 Again the abstract principles of Justice have their province among those who partake of what is abstractedly good, and can have too much or too little of these.[28] Now there are beings who cannot have too much of them, as perhaps the gods; there are others, again, to whom no particle of them is of use, those who are incurably wicked to whom all things are hurtful; others to whom they are useful to a certain degree: for this reason then the province of Justice is among Men.
+
 
 
 CHAPTER XV.
@@ -1560,6 +1596,7 @@ When then the law has spoken in general terms, and there arises a case of except
 This is the reason why not all things are according to law, because there are things about which it is simply impossible to lay down a law, and so we want special enactments for particular cases. For to speak generally, the rule of the undefined must be itself undefined also, just as the rule to measure Lesbian building is made of lead: for this rule shifts according to the form of each stone and the special enactment according to the facts of the case in question.
 
 It is clear then what the Equitable is; namely that it is Just but better than one form of Just: and hence it appears too who the Equitable man is: he is one who has a tendency to choose and carry out these principles, and who is not apt to press the letter of the law on the worse side but content to waive his strict claims though backed by the law: and this moral state is Equity, being a species of Justice, not a different moral state from Justice.
+
 
 
 CHAPTER XVI.
@@ -1580,6 +1617,7 @@ And, besides all this, a man cannot act Unjustly without his act falling under s
 After all, the general answer to the question is to allege what was settled respecting being Unjustly dealt with with one’s own consent.
 
 
+
 CHAPTER XVII.
 
 
@@ -1594,11 +1632,8 @@ Now, taking these into consideration, there is thought to be a possibility of in
 Let this then be accepted as an account of the distinctions which we recognise respecting Justice and the rest of the moral virtues.[30]
 
 
-BOOK VI
 
-
-
-CHAPTER I.
+BOOK VI — CHAPTER I.
 
 
 Having stated in a former part of this treatise that men should choose the mean instead of either the excess or defect, and that the mean is according to the dictates of Right Reason; we will now proceed to explain this term.
@@ -1608,6 +1643,7 @@ For in all the habits which we have expressly mentioned, as likewise in all the 
 Now to speak thus is true enough but conveys no very definite meaning: as, in fact, in all other pursuits requiring attention and diligence on which skill and science are brought to bear; it is quite true of course to say that men are neither to labour nor relax too much or too little, but in moderation, and as Right Reason directs; yet if this were all a man had he would not be greatly the wiser; as, for instance, if in answer to the question, what are proper applications to the body, he were to be told, “Oh! of course, whatever the science of medicine, and in such manner as the physician, directs.”
 
 And so in respect of the mental states it is requisite not merely that this should be true which has been already stated, but further that it should be expressly laid down what Right Reason is, and what is the definition of it.
+
 
 
 CHAPTER II.
@@ -1636,6 +1672,7 @@ But nothing which is done and past can be the object of Moral Choice; for instan
 Thus then Truth is the work of both the Intellectual Parts of the Soul; those states therefore are the Excellences of each in which each will best attain truth.
 
 
+
 CHAPTER III.
 
 
@@ -1652,6 +1689,7 @@ So Knowledge is “a state or mental faculty apt to demonstrate syllogistically,
 Let thus much be accepted as a definition of Knowledge.
 
 
+
 CHAPTER IV.
 
 
@@ -1664,6 +1702,7 @@ And, so neither things which exist or come into being necessarily, nor things in
 “Art Fortune loves, and is of her beloved.”
 
 So Art, as has been stated, is “a certain state of mind, apt to Make, conjoined with true Reason;” its absence, on the contrary, is the same state conjoined with false Reason, and both are employed upon Contingent matter.
+
 
 
 CHAPTER V.
@@ -1686,12 +1725,14 @@ Then again Art admits of degrees of excellence, but Practical Wisdom does not:[2
 Now as there are two parts of the Soul which have Reason, it must be the Excellence of the Opinionative [which we called before calculative or deliberative], because both Opinion and Practical Wisdom are exercised upon Contingent matter. And further, it is not simply a state conjoined with Reason, as is proved by the fact that such a state may be forgotten and so lost while Practical Wisdom cannot.
 
 
+
 CHAPTER VI.
 
 
 Now Knowledge is a conception concerning universals and Necessary matter, and there are of course certain First Principles in all trains of demonstrative reasoning (that is of all Knowledge because this is connected with reasoning): that faculty, then, which takes in the first principles of that which comes under the range of Knowledge, cannot be either Knowledge, or Art, or Practical Wisdom: not Knowledge, because what is the object of Knowledge must be derived from demonstrative reasoning; not either of the other two, because they are exercised upon Contingent matter only. Nor can it be Science which takes in these, because the Scientific Man must in some cases depend on demonstrative Reasoning.
 
 It comes then to this: since the faculties whereby we always attain truth and are never deceived when dealing with matter Necessary or even Contingent are Knowledge, Practical Wisdom, Science, and Intuition, and the faculty which takes in First Principles cannot be any of the three first; the last, namely Intuition, must be it which performs this function.
+
 
 
 CHAPTER VII.
@@ -1708,6 +1749,7 @@ And it is quite plain that Science and πολιτικὴ cannot be identical: be
 If it is urged that man is superior to all other animals, that makes no difference: for there are many other things more Godlike in their nature than Man, as, most obviously, the elements of which the Universe is composed.[25]
 
 It is plain then that Science is the union of Knowledge and Intuition, and has for its objects those things which are most precious in their nature. Accordingly, Anexagoras, Thales, and men of that stamp, people call Scientific, but not Practically Wise because they see them ignorant of what concerns themselves; and they say that what they know is quite out of the common run certainly, and wonderful, and hard, and very fine no doubt, but still useless because they do not seek after what is good for them as men.
+
 
 
 CHAPTER VIII.
@@ -1738,6 +1780,7 @@ To Intuition it is opposed, for this takes in those principles which cannot be p
 This however is Sense rather than Practical Wisdom, which is of another kind.[34]
 
 
+
 CHAPTER IX.
 
 
@@ -1762,6 +1805,7 @@ Once more. One may deliberate well either generally or towards some particular E
 Since then deliberating well is a quality of men possessed of Practical Wisdom, Good Counsel must be “Rightness in respect of what conduces to a given End, of which[39] Practical Wisdom is the true conception.”
 
 
+
 CHAPTER X.
 
 
@@ -1772,6 +1816,7 @@ Now Judiciousness is neither entirely identical with Knowledge or Opinion (for t
 And so it has the same object matter as Practical Wisdom; yet the two faculties are not identical, because Practical Wisdom has the capacity for commanding and taking the initiative, for its End is “what one should do or not do:” but Judiciousness is only apt to decide upon suggestions (though we do in Greek put “well” on to the faculty and its concrete noun, these really mean exactly the same as the plain words), and Judiciousness is neither the having Practical Wisdom, nor attaining it: but just as learning is termed συνιέναι when a man uses his knowledge, so judiciousness consists in employing the Opinionative faculty in judging concerning those things which come within the province of Practical Wisdom, when another enunciates them; and not judging merely, but judging well (for εὐ and καλῶς mean exactly the same thing). And the Greek name of this faculty is derived from the use of the term συνιέναι in learning: μανθάνειν and συνιέναι being often used as synonymous.
 
 The faculty called γνώμη,[40] in right of which we call men εὐγνώμονες, or say they have γνώμη, is “the right judgment of the equitable man.” A proof of which is that we most commonly say that the equitable man has a tendency to make allowance, and the making allowance in certain cases is equitable. And συγγνώμη (the word denoting allowance) is right γνώμη having a capacity of making equitable decisions, By “right” I mean that of the Truthful man.
+
 
 
 CHAPTER XI.
@@ -1786,6 +1831,7 @@ Intuition, moreover, takes in the extremes at both ends:[43] I mean, the first a
 And for this reason these are thought to be simply gifts of nature; and whereas no man is thought to be Scientific by nature, men are thought to have γνώμη, and Judiciousness, and Practical Intuition: a proof of which is that we think these faculties are a consequence even of particular ages, and this given age has Practical Intuition and γνώμη, we say, as if under the notion that nature is the cause. And thus Intuition is both the beginning and end, because the proofs are based upon the one kind of extremes and concern the other.
 
 And so[46] one should attend to the undemonstrable dicta and opinions of the skilful, the old and the Practically-Wise, no less than to those which are based on strict reasoning, because they see aright, having gained their power of moral vision from experience.
+
 
 
 CHAPTER XII.
@@ -1832,7 +1878,7 @@ Then again, it is not Master of Science (i.e. of the superior part of the Soul),
 The objection is, in fact, about as valid as if a man should say πολιτικὴ governs the gods because it gives orders about all things in the communty.
 
 
-APPENDIX
+Appendix
 
 
 On ἐπισπήμη, from I. Post. Analyt. chap. i. and ii.
@@ -1842,7 +1888,7 @@ On ἐπισπήμη, from I. Post. Analyt. chap. i. and ii.
 All teaching, and all intellectual learning, proceeds on the basis of previous knowledge, as will appear on an examination of all. The Mathematical Sciences, and every other system, draw their conclusions in this method. So too of reasonings, whether by syllogism, or induction: for both teach through what is previously known, the former assuming the premisses as from wise men, the latter proving universals from the evidentness of the particulars. In like manner too rhetoricians persuade, either through examples (which amounts to induction), or through enthymemes (which amounts to syllogism).
 
 
-CHAP. II
+Chap. II
 
 
 Well, we suppose that we know things (in the strict and proper sense of the word) when we suppose ourselves to know the cause by reason of which the thing is to be the cause of it; and that this cannot be otherwise. It is plain that the idea intended to be conveyed by the term knowing is something of this kind; because they who do not really know suppose themselves thus related to the matter in hand and they who do know really are so that of whatsoever there is properly speaking Knowledge this cannot be otherwise than it is Whether or no there is another way of knowing we will say afterwards, but we do say that we know through demonstration, by which I mean a syllogism apt to produce Knowledge, i.e. in right of which through having it, we know.
@@ -1862,11 +1908,8 @@ Further, since one is to believe and know the thing by having a syllogism of the
 Further: the man who is to have the Knowledge which comes through demonstration must not merely know and believe his principles better than he does his conclusion, but he must believe nothing more firmly than the contradictories of those principles out of which the contrary fallacy may be constructed: since he who knows, is to be simply and absolutely infallible.
 
 
-BOOK VII
 
-
-
-CHAPTER I.
+BOOK VII — CHAPTER I.
 
 
 Next we must take a different point to start from,[1] and observe that of what is to be avoided in respect of moral character there are three forms; Vice, Imperfect Self-Control, and Brutishness. Of the two former it is plain what the contraries are, for we call the one Virtue, the other Self-Control; and as answering to Brutishness it will be most suitable to assign Superhuman, i.e. heroical and godlike Virtue, as, in Homer, Priam says of Hector “that he was very excellent, nor was he like the offspring of mortal man, but of a god.” and so, if, as is commonly said, men are raised to the position of gods by reason of very high excellence in Virtue, the state opposed to the Brutish will plainly be of this nature: because as brutes are not virtuous or vicious so neither are gods; but the state of these is something more precious than Virtue, of the former something different in kind from Vice.
@@ -1885,13 +1928,20 @@ III. That the man of Imperfect Self-Control does things at the instigation of hi
 
 IV. That the man of Perfected Self-Mastery unites the qualities of Self-Control and Endurance, and some say that every one who unites these is a man of Perfect Self-Mastery, others do not.
 
-V. Some confound the two characters of the man who has no Self-Control, and the man of Imperfect Self-Control, while others distinguish between them.
+
+
+V. SOME CONFOUND THE TWO CHARACTERS OF THE MAN WHO HAS NO SELF-CONTROL, AND THE MAN OF IMPERFECT SELF-CONTROL, WHILE OTHERS DISTINGUISH BETWEEN THEM.
+
 
 VI. It is sometimes said that the man of Practical Wisdom cannot be a man of Imperfect Self-Control, sometimes that men who are Practically Wise and Clever are of Imperfect Self-Control.
 
-VII. Again, men are said to be of Imperfect Self-Control, not simply but with the addition of the thing wherein, as in respect of anger, of honour, and gain.
+
+
+VII. AGAIN, MEN ARE SAID TO BE OF IMPERFECT SELF-CONTROL, NOT SIMPLY BUT WITH THE ADDITION OF THE THING WHEREIN, AS IN RESPECT OF ANGER, OF HONOUR, AND GAIN.
+
 
 These then are pretty well the common statements.
+
 
 
 CHAPTER II.
@@ -1924,6 +1974,7 @@ Again, if any and every thing is the object-matter of Imperfect and Perfect Self
 Well, the difficulties raised are pretty near such as I have described them, and of these theories we must remove some and leave others as established; because the solving of a difficulty is a positive act of establishing something as true.
 
 
+
 CHAPTER III.
 
 
@@ -1952,6 +2003,7 @@ As to the manner in which the ignorance is removed and the man of Imperfect Self
 Let this account then be accepted of the question respecting the failure in Self-Control, whether it is with Knowledge, and the manner in which such failure is possible or not, though a man possesses Knowledge.
 
 
+
 CHAPTER IV.
 
 
@@ -1976,6 +2028,7 @@ Now depravity there is none in regard of these things, for the reason assigned a
 But because of the resemblance of the affection to the Imperfection of Self-Control the term is used with the addition in each case of the particular object-matter, just as men call a man a bad physician, or bad actor, whom they would not think of calling simply bad. As then in these cases we do not apply the term simply because each of the states is not a vice, but only like a vice in the way of analogy,[12] so it is plain that in respect of Imperfect Self-Control and Self-Control we must limit the names to those states which have the same object-matter as Perfected Self-Mastery and utter loss of Self-Control, and that we do apply it to the case of anger only in the way of resemblance: for which reason, with an addition, we designate a man of Imperfect Self-Control in respect of anger, as of honour or of gain.
 
 
+
 CHAPTER V.
 
 
@@ -1986,6 +2039,7 @@ I mean the Brutish, as in the case of the female who, they say, would rip up wom
 The having any of these inclinations is something foreign to what is denominated Vice, just as Brutishness is: and when a man has them his mastering them is not properly Self-Control, nor his being mastered by them Imperfection of Self-Control in the proper sense, but only in the way of resemblance; just as we may say a man of ungovernable wrath fails of Self-Control in respect of anger but not simply fails of Self-Control. For all excessive folly, cowardice, absence of Self-Control, or irritability, are either Brutish or morbid. The man, for instance, who is naturally afraid of all things, even if a mouse should stir, is cowardly after a Brutish sort; there was a man again who, by reason of disease, was afraid of a cat: and of the fools, they who are naturally destitute of Reason and live only by Sense are Brutish, as are some tribes of the far-off barbarians, while others who are so by reason of diseases, epileptic or frantic, are in morbid states.
 
 So then, of these inclinations, a man may sometimes merely have one without yielding to it: I mean, suppose that Phalaris had restrained his unnatural desire to eat a child: or he may both have and yield to it. As then Vice when such as belongs to human nature is called Vice simply, while the other is so called with the addition of “brutish” or “morbid,” but not simply Vice, so manifestly there is Brutish and Morbid Imperfection of Self-Control, but that alone is entitled to the name without any qualification which is of the nature of utter absence of Self-Control, as it is found in Man.
+
 
 
 CHAPTER VI.
@@ -2018,6 +2072,7 @@ Brutishness is not so low in the scale as Vice, yet it is to be regarded with mo
 It is much the same, therefore, as if one should compare an inanimate with an animate being, which were the worse: for the badness of that which has no principle of origination is always less harmful; now Intellect is a principle of origination. A similar case would be the comparing injustice and an unjust man together: for in different ways each is the worst: a bad man would produce ten thousand times as much harm as a bad brute.
 
 
+
 CHAPTER VII.
 
 
@@ -2048,6 +2103,7 @@ Again, there is a character liable to be taken off his feet in defiance of Right
 It is evident then from all this, that Self-Control is a good state and the Imperfection of it a bad one.
 
 
+
 CHAPTER VIII.
 
 
@@ -2060,6 +2116,7 @@ There are also people, who have a trick of abiding by their, own opinions, who a
 Again, there are some who depart from their resolutions not by reason of any Imperfection of Self-Control; take, for instance, Neoptolemus in the Philoctetes of Sophocles. Here certainly pleasure was the motive of his departure from his resolution, but then it was one of a noble sort: for to be truthful was noble in his eyes and he had been persuaded by Ulysses to lie.
 
 So it is not every one who acts from the motive of pleasure who is utterly destitute of Self-Control or base or of Imperfect Self-Control, only he who acts from the impulse of a base pleasure.
+
 
 
 CHAPTER IX.
@@ -2092,7 +2149,7 @@ Again, of the two forms of Imperfect Self-Control that is more easily cured whic
 We have now said then what Self-Control is, what Imperfection of Self-Control, what Endurance, and what Softness, and how these states are mutually related.
 
 
-APPENDIX. BOOK VII. CHAPTERS 12 TO 15. (BEKKER.)
+APPENDIX. Book VII. Chapters 12 to 15. (Bekker.)
 
 
 To consider the subject of Pleasure and Pain falls within the province of the Social-Science Philosopher, since he it is who has to fix the Master-End which is to guide us in dominating any object absolutely evil or good.
@@ -2198,11 +2255,8 @@ The reason why the Poet’s dictum “change is of all things most pleasant” i
 We have now said our say about Self-Control and its opposite; and about Pleasure and Pain. What each is, and how the one set is good the other bad. We have yet to speak of Friendship.
 
 
-BOOK VIII
 
-
-
-CHAPTER I.
+BOOK VIII — CHAPTER I.
 
 
 Next would seem properly to follow a dissertation on Friendship: because, in the first place, it is either itself a virtue or connected with virtue; and next it is a thing most necessary for life, since no one would choose to live without friends though he should have all the other good things in the world: and, in fact, men who are rich or possessed of authority and influence are thought to have special need of friends: for where is the use of such prosperity if there be taken away the doing of kindnesses of which friends are the most usual and most commendable objects? Or how can it be kept or preserved without friends? because the greater it is so much the more slippery and hazardous: in poverty moreover and all other adversities men think friends to be their only refuge.
@@ -2216,6 +2270,7 @@ Furthermore, Friendship seems to be the bond of Social Communities, and legislat
 Again, where people are in Friendship Justice is not required;[1] but, on the other hand, though they are just they need Friendship in addition, and that principle which is most truly just is thought to partake of the nature of Friendship.
 
 Lastly, not only is it a thing necessary but honourable likewise: since we praise those who are fond of friends, and the having numerous friends is thought a matter of credit to a man; some go so far as to hold, that “good man” and “friend” are terms synonymous.
+
 
 
 CHAPTER II.
@@ -2234,6 +2289,7 @@ Empedocles, among others, in direct opposition to these, affirms, that “like a
 These physical questions we will take leave to omit, inasmuch as they are foreign to the present enquiry; and we will examine such as are proper to man and concern moral characters and feelings: as, for instance, “Does Friendship arise among all without distinction, or is it impossible for bad men to be friends?” and, “Is there but one species of Friendship, or several?” for they who ground the opinion that there is but one on the fact that Friendship admits of degrees hold that upon insufficient proof; because things which are different in species admit likewise of degrees (on this point we have spoken before).
 
 
+
 CHAPTER III.
 
 
@@ -2244,6 +2300,7 @@ A question here arises; whether it is good absolutely or that which is good to t
 There are then three causes from which men feel Friendship: but the term is not applied to the case of fondness for things inanimate because there is no requital of the affection nor desire for the good of those objects: it certainly savours of the ridiculous to say that a man fond of wine wishes well to it: the only sense in which it is true being that he wishes it to be kept safe and sound for his own use and benefit.[3] But to the friend they say one should wish all good for his sake. And when men do thus wish good to another (he not reciprocating the feeling), people call them Kindly; because Friendship they describe as being “Kindliness between persons who reciprocate it.” But must they not add that the feeling must be mutually known? for many men are kindly disposed towards those whom they have never seen but whom they conceive to be amiable or useful: and this notion amounts to the same thing as a real feeling between them.
 
 Well, these are plainly Kindly-disposed towards one another: but how can one call them friends while their mutual feelings are unknown to one another? to complete the idea of Friendship, then, it is requisite that they have kindly feelings towards one another, and wish one another good from one of the aforementioned causes, and that these kindly feelings should be mutually known.
+
 
 
 CHAPTER IV.
@@ -2264,6 +2321,7 @@ But the Friendship of the young is thought to be based on the motive of pleasure
 This is the reason why they form and dissolve Friendships rapidly: since the Friendship changes with the pleasurable object and such pleasure changes quickly.
 
 The young are also much given up to Love; this passion being, in great measure, a matter of impulse and based on pleasure: for which cause they conceive Friendships and quickly drop them, changing often in the same day: but these wish for society and intimate intercourse with their friends, since they thus attain the object of their Friendship.
+
 
 
 CHAPTER V.
@@ -2294,12 +2352,14 @@ These secondary Friendships, however, do not combine very well; that is to say, 
 These last may be termed abstractedly and simply friends, the former as a matter of result and termed friends from their resemblance to these last.
 
 
+
 CHAPTER VI.
 
 
 Further; just as in respect of the different virtues some men are termed good in respect of a certain inward state, others in respect of acts of working, so is it in respect of Friendship: I mean, they who live together take pleasure in, and impart good to, one another: but they who are asleep or are locally separated do not perform acts, but only are in such a state as to act in a friendly way if they acted at all: distance has in itself no direct effect upon Friendship, but only prevents the acting it out: yet, if the absence be protracted, it is thought to cause a forgetfulness even of the Friendship: and hence it has been said, “many and many a Friendship doth want of intercourse destroy.”
 
 Accordingly, neither the old nor the morose appear to be calculated for Friendship, because the pleasurableness in them is small, and no one can spend his days in company with that which is positively painful or even not pleasurable; since to avoid the painful and aim at the pleasurable is one of the most obvious tendencies of human nature. They who get on with one another very fairly, but are not in habits of intimacy, are rather like people having kindly feelings towards one another than friends; nothing being so characteristic of friends as the living with one another, because the necessitous desire assistance, and the happy companionship, they being the last persons in the world for solitary existence: but people cannot spend their time together unless they are mutually pleasurable and take pleasure in the same objects, a quality which is thought to appertain to the Friendship of companionship.
+
 
 
 CHAPTER VII.
@@ -2324,6 +2384,7 @@ Then again, the very happy have no need of persons who are profitable, but of pl
 Men in power are often seen to make use of several distinct friends: for some are useful to them and others pleasurable, but the two are not often united: because they do not, in fact, seek such as shall combine pleasantness and goodness, nor such as shall be useful for honourable purposes: but with a view to attain what is pleasant they look out for men of easy-pleasantry; and again, for men who are clever at executing any business put into their hands: and these qualifications are not commonly found united in the same man.
 
 It has been already stated that the good man unites the qualities of pleasantness and usefulness: but then such a one will not be a friend to a superior unless he be also his superior in goodness: for if this be not the case, he cannot, being surpassed in one point, make things equal by a proportionate degree of Friendship.[5] And characters who unite superiority of station and goodness are not common.
+
 
 
 CHAPTER VIII.
@@ -2360,6 +2421,7 @@ Perhaps, moreover, the contrary does not aim at its contrary for its own sake bu
 However, let us drop these questions, because they are in fact somewhat foreign to our purpose.
 
 
+
 CHAPTER IX.
 
 
@@ -2374,6 +2436,7 @@ All the other cases of Communion aim at advantage in particular points; the crew
 Some of them are thought to be formed for pleasure’s sake, those, for instance, of bacchanals or club-fellows, which are with a view to Sacrifice or merely company. But all these seem to be ranged under the great Social one, inasmuch as the aim of this is, not merely the expediency of the moment but, for life and at all times; with a view to which the members of it institute sacrifices and their attendant assemblies, to render honour to the gods and procure for themselves respite from toil combined with pleasure. For it appears that sacrifices and religious assemblies in old times were made as a kind of first-fruits after the ingathering of the crops, because at such seasons they had most leisure.
 
 So then it appears that all the instances of Communion are parts of the great Social one: and corresponding Friendships will follow upon such Communions.
+
 
 
 CHAPTER X.
@@ -2400,6 +2463,7 @@ Between Husband and Wife the relation takes the form of Aristocracy, because he 
 Timocracy finds its type in the relation of Brothers: they being equal except as to such differences as age introduces: for which reason, if they are very different in age, the Friendship comes to be no longer a fraternal one: while Democracy is represented specially by families which have no head (all being there equal), or in which the proper head is weak and so every member does that which is right in his own eyes.
 
 
+
 CHAPTER XI.
 
 
@@ -2412,6 +2476,7 @@ Now between Husband and Wife there is the same Friendship as in Aristocracy: for
 The Fraternal Friendship is like that of Companions, because brothers are equal and much of an age, and such persons have generally like feelings and like dispositions. Like to this also is the Friendship of a Timocracy, because the citizens are intended to be equal and equitable: rule, therefore, passes from hand to hand, and is distributed on equal terms: so too is the Friendship accordingly.
 
 In the deflections from the constitutional forms, just as the principle of Justice is but small so is the Friendship also: and least of all in the most perverted form: in Despotism there is little or no Friendship. For generally wherever the ruler and the ruled have nothing in common there is no Friendship because there is no Justice; but the case is as between an artisan and his tool, or between soul and body, and master and slave; all these are benefited by those who use them, but towards things inanimate there is neither Friendship nor Justice: nor even towards a horse or an ox, or a slave quâ slave, because there is nothing in common: a slave as such is an animate tool, a tool an inanimate slave. Quâ slave, then, there is no Friendship towards him, only quâ man: for it is thought that there is some principle of Justice between every man, and every other who can share in law and be a party to an agreement; and so somewhat of Friendship, in so far as he is man. So in Despotisms the Friendships and the principle of Justice are inconsiderable in extent, but in Democracies they are most considerable because they who are equal have much in common.
+
 
 
 CHAPTER XII.
@@ -2440,6 +2505,7 @@ And for these reasons this Friendship is thought to combine the profitable and t
 The question how a man is to live with his wife, or (more generally) one friend with another, appears to be no other than this, how it is just that they should: because plainly there is not the same principle of Justice between a friend and friend, as between strangers, or companions, or mere chance fellow-travellers.
 
 
+
 CHAPTER XIII.
 
 
@@ -2466,6 +2532,7 @@ May we not say, that as utility is the motive of the Friendship the advantage co
 In Friendships based on goodness, the question, of course, is never raised, but herein the motive of the doer seems to be the proper standard, since virtue and moral character depend principally on motive.
 
 
+
 CHAPTER XIV.
 
 
@@ -2486,11 +2553,8 @@ For this reason it may be judged never to be allowable for a son to disown his f
 Let thus much suffice on these points.
 
 
-BOOK IX
 
-
-
-CHAPTER I.
+BOOK IX — CHAPTER I.
 
 
 Well, in all the Friendships the parties to which are dissimilar it is the proportionate which equalises and preserves the Friendship, as has been already stated: I mean, in the Social Friendship the cobbler, for instance, gets an equivalent for his shoes after a certain rate; and the weaver, and all others in like manner. Now in this case a common measure has been provided in money, and to this accordingly all things are referred and by this are measured: but in the Friendship of Love the complaint is sometimes from the lover that, though he loves exceedingly, his love is not requited; he having perhaps all the time nothing that can be the object of Friendship: again, oftentimes from the object of love that he who as a suitor promised any and every thing now performs nothing. These cases occur because the Friendship of the lover for the beloved object is based upon pleasure, that of the other for him upon utility, and in one of the parties the requisite quality is not found: for, as these are respectively the grounds of the Friendship, the Friendship comes to be broken up because the motives to it cease to exist: the parties loved not one another but qualities in one another which are not permanent, and so neither are the Friendships: whereas the Friendship based upon the moral character of the parties, being independent and disinterested, is permanent, as we have already stated.
@@ -2508,6 +2572,7 @@ In cases where no stipulation as to the respective services is made they who dis
 And it would seem the same rule should be laid down for those who are connected with one another as teachers and learners of philosophy; for here the value of the commodity cannot be measured by money, and, in fact, an exactly equivalent price cannot be set upon it, but perhaps it is sufficient to do what one can, as in the case of the gods or one’s parents.
 
 But where the original giving is not upon these terms but avowedly for some return, the most proper course is perhaps for the requital to be such as both shall allow to be proportionate, and, where this cannot be, then for the receiver to fix the value would seem to be not only necessary but also fair: because when the first giver gets that which is equivalent to the advantage received by the other, or to what he would have given to secure the pleasure he has had, then he has the value from him: for not only is this seen to be the course adopted in matters of buying and selling but also in some places the law does not allow of actions upon voluntary dealings; on the principle that when one man has trusted another he must be content to have the obligation discharged in the same spirit as he originally contracted it: that is to say, it is thought fairer for the trusted, than for the trusting, party, to fix the value. For, in general, those who have and those who wish to get things do not set the same value on them: what is their own, and what they give in each case, appears to them worth a great deal: but yet the return is made according to the estimate of those who have received first, it should perhaps be added that the receiver should estimate what he has received, not by the value he sets upon it now that he has it, but by that which he set upon it before he obtained it.
+
 
 
 CHAPTER II.
@@ -2528,6 +2593,7 @@ And this is seen to be the course commonly pursued: to marriages men commonly in
 And it would seem that in respect of maintenance it is our duty to assist our parents in preference to all others, as being their debtors, and because it is more honourable to succour in these respects the authors of our existence than ourselves. Honour likewise we ought to pay to our parents just as to the gods, but then, not all kinds of honour: not the same, for instance, to a father as to a mother: nor again to a father the honour due to a scientific man or to a general but that which is a father’s due, and in like manner to a mother that which is a mother’s.
 
 To all our elders also the honour befitting their age, by rising up in their presence, turning out of the way for them, and all similar marks of respect: to our companions again, or brothers, frankness and free participation in all we have. And to those of the same family, or tribe, or city, with ourselves, and all similarly connected with us, we should constantly try to render their due, and to discriminate what belongs to each in respect of nearness of connection, or goodness, or intimacy: of course in the case of those of the same class the discrimination is easier; in that of those who are in different classes it is a matter of more trouble. This, however, should not be a reason for giving up the attempt, but we must observe the distinctions so far as it is practicable to do so.
+
 
 
 CHAPTER III.
@@ -2554,6 +2620,7 @@ Well then, is the improved party to bear himself towards his former friend in no
 Surely he ought to bear in mind the intimacy of past times, and just as we think ourselves bound to do favours for our friends in preference to strangers, so to those who have been friends and are so no longer we should allow somewhat on the score of previous Friendship, whenever the cause of severance is not excessive depravity on their part.
 
 
+
 CHAPTER IV.
 
 
@@ -2578,6 +2645,7 @@ Neither, in fact, can they who are of this character sympathise with their Selve
 It is plain then that the wicked man cannot be in the position of a friend even towards himself, because he has in himself nothing which can excite the sentiment of Friendship. If then to be thus is exceedingly wretched it is a man’s duty to flee from wickedness with all his might and to strive to be good, because thus may he be friends with himself and may come to be a friend to another.
 
 
+
 CHAPTER V.
 
 
@@ -2588,6 +2656,7 @@ What it does seem to be is the starting point of a Friendship; just as pleasure,
 I mean, he who has received a kindness requites it by Kindly Feeling towards his benefactor, and is right in so doing: but he who wishes another to be prosperous, because he has hope of advantage through his instrumentality, does not seem to be kindly disposed to that person but rather to himself; just as neither is he his friend if he pays court to him for any interested purpose.
 
 Kindly Feeling always arises by reason of goodness and a certain amiability, when one man gives another the notion of being a fine fellow, or brave man, etc., as we said was the case sometimes with those matched against one another.
+
 
 
 CHAPTER VI.
@@ -2604,6 +2673,7 @@ Thus Unity of Sentiment is plainly a social Friendship, as it is also said to be
 And this Unity exists among the good: for they have it towards themselves and towards one another, being, if I may be allowed the expression, in the same position: I mean, the wishes of such men are steady and do not ebb and flow like the Euripus, and they wish what is just and expedient and aim at these things in common.
 
 The bad, on the contrary, can as little have Unity of Sentiment as they can be real friends, except to a very slight extent, desiring as they do unfair advantage in things profitable while they shirk labour and service for the common good: and while each man wishes for these things for himself he is jealous of and hinders his neighbour: and as they do not watch over the common good it is lost. The result is that they quarrel while they are for keeping one another to work but are not willing to perform their just share.
+
 
 
 CHAPTER VII.
@@ -2634,6 +2704,7 @@ So then, entertaining the sentiment of Friendship, and all feelings connected wi
 Once more: all people value most what has cost them much labour in the production; for instance, people who have themselves made their money are fonder of it than those who have inherited it: and receiving kindness is, it seems, unlaborious, but doing it is laborious. And this is the reason why the female parents are most fond of their offspring; for their part in producing them is attended with most labour, and they know more certainly that they are theirs. This feeling would seem also to belong to benefactors.
 
 
+
 CHAPTER VIII.
 
 
@@ -2660,6 +2731,7 @@ And so the good man ought to be Self-loving: because by doing what is noble he w
 Of the good man it is true likewise that he does many things for the sake of his friends and his country, even to the extent of dying for them, if need be: for money and honours, and, in short, all the good things which others fight for, he will throw away while eager to secure to himself the καλὸν: he will prefer a brief and great joy to a tame and enduring one, and to live nobly for one year rather than ordinarily for many, and one great and noble action to many trifling ones. And this is perhaps that which befals men who die for their country and friends; they choose great glory for themselves: and they will lavish their own money that their friends may receive more, for hereby the friend gets the money but the man himself the καλὸν; so, in fact he gives to himself the greater good. It is the same with honours and offices; all these things he will give up to his friend, because this reflects honour and praise on himself: and so with good reason is he esteemed a fine character since he chooses the honourable before all things else. It is possible also to give up the opportunities of action to a friend; and to have caused a friend’s doing a thing may be more noble than having done it one’s self.
 
 In short, in all praiseworthy things the good man does plainly give to himself a larger share of the honourable. In this sense it is right to be Self-loving, in the vulgar acceptation of the term it is not.
+
 
 
 CHAPTER IX.
@@ -2696,6 +2768,7 @@ But the good man is to his friend as to himself, friend being but a name for a s
 If then to the man in a high state of happiness existence is in itself choice-worthy, being naturally good and pleasant, and so too a friend’s existence, then the friend also must be among things choice-worthy. But whatever is choice-worthy to a man he should have or else he will be in this point deficient. The man therefore who is to come up to our notion “Happy” will need good Friends.
 
 
+
 CHAPTER X.
 
 
@@ -2714,6 +2787,7 @@ Perhaps then it is well not to endeavour to have very many friends but so many a
 And if we look to facts this seems to be so: for not many at a time become friends in the way of companionship, all the famous Friendships of the kind are between two persons: whereas they who have many friends, and meet everybody on the footing of intimacy, seem to be friends really to no one except in the way of general society; I mean the characters denominated as over-complaisant.
 
 To be sure, in the way merely of society, a man may be a friend to many without being necessarily over-complaisant, but being truly good: but one cannot be a friend to many because of their virtue, and for the persons’ own sake; in fact, it is a matter for contentment to find even a few such.
+
 
 
 CHAPTER XI.
@@ -2740,6 +2814,7 @@ One should perhaps be cautious not to present the appearance of sullenness in de
 It appears then that the presence of friends is, under all circumstances, choice-worthy.
 
 
+
 CHAPTER XII.
 
 
@@ -2758,11 +2833,8 @@ Therefore the Friendship of the wicked comes to be depraved; for, being unstable
 Here then we will terminate our discourse of Friendship. The next thing is to go into the subject of Pleasure.
 
 
-BOOK X
 
-
-
-CHAPTER I.
+BOOK X — CHAPTER I.
 
 
 Next, it would seem, follows a discussion respecting Pleasure, for it is thought to be most closely bound up with our kind: and so men train the young, guiding them on their course by the rudders of Pleasure and Pain. And to like and dislike what one ought is judged to be most important for the formation of good moral character: because these feelings extend all one’s life through, giving a bias towards and exerting an influence on the side of Virtue and Happiness, since men choose what is pleasant and avoid what is painful.
@@ -2774,6 +2846,7 @@ I confess I suspect the soundness of this policy; in matters respecting men’s 
 Real accounts, therefore, of such matters seem to be most expedient, not with a view to knowledge merely but to life and conduct: for they are believed as being in harm with facts, and so they prevail with the wise to live in accordance with them.
 
 But of such considerations enough: let us now proceed to the current maxims respecting Pleasure.
+
 
 
 CHAPTER II.
@@ -2836,6 +2909,7 @@ There are many things also about which we should be diligent even though they br
 It seems then to be plain that Pleasure is not the Chief Good, nor is every kind of it choice-worthy: and that there are some choice-worthy in themselves, differing in kind, i.e. in the sources from which they are derived. Let this then suffice by way of an account of the current maxims respecting Pleasure and Pain.
 
 
+
 CHAPTER III.
 
 
@@ -2854,6 +2928,7 @@ Of Movement I have discoursed exactly in another treatise. I will now therefore 
 But of Pleasure the whole nature is complete at any given moment: it is plain then that Pleasure and Movement must be different from one another, and that Pleasure belongs to the class of things whole and complete. And this might appear also from the impossibility of moving except in a definite time, whereas there is none with respect to the sensation of Pleasure, for what exists at the very present moment is a kind of “whole.”
 
 From these considerations then it is plain that people are not warranted in saying that Pleasure is a Movement or a Generation: because these terms are not applicable to all things, only to such as are divisible and not “wholes:” I mean that of an act of Sight there is no Generation, nor is there of a point, nor of a monad, nor is any one of these a Movement or a Generation: neither then of Pleasure is there Movement or Generation, because it is, as one may say, “a whole.”[11]
+
 
 
 CHAPTER IV.
@@ -2900,6 +2975,7 @@ Well of course, you may say, it is obvious that we must assert those which are c
 If then there be one or several Workings which belong to the perfect and blessed man, the Pleasures which perfect these Workings must be said to be specially and properly The Pleasures of Man; and all the rest in a secondary sense, and in various degrees according as the Workings are related to those highest and best ones.
 
 
+
 CHAPTER V.
 
 
@@ -2922,6 +2998,7 @@ Rest, therefore, is not an End, because it is adopted with a view to Working aft
 Again, it is held that the Happy Life must be one in the way of Excellence, and this is accompanied by earnestness,[13] and stands not in amusement. Moreover those things which are done in earnest, we say, are better than things merely ludicrous and joined with amusement: and we say that the Working of the better part, or the better man, is more earnest; and the Working of the better is at once better and more capable of Happiness.
 
 Then, again, as for bodily Pleasures, any ordinary person, or even a slave, might enjoy them, just as well as the best man living but Happiness no one supposes a slave to share except so far as it is implied in life: because Happiness stands not in such pastimes but in the Workings in the way of Excellence, as has also been stated before.
+
 
 
 CHAPTER VI.
@@ -2974,6 +3051,7 @@ To the Gods then all their life is blessed; and to men in so far as there is in 
 Happiness then is co-extensive with this Contemplative Speculation, and in proportion as people have the act of Contemplation so far have they also the being happy, not incidentally, but in the way of Contemplative Speculation because it is in itself precious.
 
 
+
 CHAPTER VII.
 
 
@@ -2992,6 +3070,7 @@ And thus the opinions of the Wise seem to be accordant with our account of the m
 Now he that works in accordance with, and pays observance to, Pure Intellect, and tends this, seems likely to be both in the best frame of mind and dearest to the Gods: because if, as is thought, any care is bestowed on human things by the Gods then it must be reasonable to think that they take pleasure in what is best and most akin to themselves (and this must be the Pure Intellect); and that they requite with kindness those who love and honour this most, as paying observance to what is dear to them, and as acting rightly and nobly. And it is quite obvious that the man of Science chiefly combines all these: he is therefore dearest to the Gods, and it is probable that he is at the same time most Happy.
 
 Thus then on this view also the man of Science will be most Happy.
+
 
 
 CHAPTER VIII.
@@ -3042,11 +3121,7 @@ Since then those who have preceded us have left uninvestigated the subject of Le
 First then, let us endeavour to get whatever fragments of good there may be in the statements of our predecessors, next, from the Polities we have collected, ascertain what kind of things preserve or destroy Communities, and what, particular Constitutions; and the cause why some are well and others ill managed, for after such enquiry, we shall be the better able to take a concentrated view as to what kind of Constitution is best, what kind of regulations are best for each, and what laws and customs.
 
 
-NOTES
-
-
-
-BOOK I
+Notes — Book I
 
 
 [1] For this term, as here employed, our language contains no equivalent expression except an inconvenient paraphrase.
@@ -3182,6 +3257,7 @@ By the law of habits the former is constantly approximating to a state in which 
 [45] [Greek: xin] may be taken as opposed to [Greek: energeian], and the meaning will be, to show a difference between Moral and Intellectual Excellences, that men are commended for merely having the latter, but only for exerting and using the former.
 
 
+
 BOOK II
 
 
@@ -3240,6 +3316,7 @@ The reference is to Iliad iii. 154-160. The old counsellors, as Helen comes upon
 This exactly represents Aristotle’s relation to Pleasure he does not, with Eudoxus and his followers, exalt it into the Summum Bonum (as Paris would risk all for Helen), nor does he the the Stoics call it wholly evil, as Hector might have said that the woes Helen had caused had “banished all the beauty from her cheek,” but, with the aged counsellors, admits its charms, but aware of their dangerousness resolves to deny himself, he “feels her sweetness, yet defies her thrall.”
 
 [24] Αἴσθησις is here used as an analogous noun, to denote the faculty which, in respect of moral matters, discharges the same function that bodily sense does in respect of physical objects. It is worth while to notice how in our colloquial language we carry out the same analogy. We say of a transaction, that it “looks ugly,” “sounds oddly,” is a “nasty job,” “stinks in our nostrils,” is a “hard dealing.”
+
 
 
 BOOK III
@@ -3304,6 +3381,7 @@ The illustration then afforded by the polities alluded to is this, as the Kings 
 [23] By the difference of tense it seems Aristotle has mixed up two things, beginning to speak of the particular instance, and then carried into the general statement again. This it is scarce worth while to imitate.
 
 [24] The meaning of the phrase [Greek: kata sumbebaekos], as here used, in given in the Seventh Book, chap. X. [Greek: ei gar tis todi dia todi aireitai ae diokei, kath ahuto men touto diokei kai aireitai, kata sumbebaekos de to proteron].
+
 
 
 BOOK V
@@ -3396,6 +3474,7 @@ Builder : Shoemaker : : 1  pr.  shoes      : 1 house—wrong. ——          �
 Hae men gar psuchae tou somatos archei despotikaen archaen, o de nous taes orexeos politikaen kai despotikaev.
 
 Compare also Bishop Butler’s account of human nature as a system—of the different authority of certain principles, and specially the supremacy of Conscience.
+
 
 
 BOOK VI
@@ -3547,7 +3626,9 @@ Of course the same will apply to [Greek: euektikon].
 
 [48] Healthiness is the formal cause of health. Medicine is the efficient cause of health.
 
+
 See Book X. chap. iv. [Greek: hosper oud hæ hygieia kai ho iatros homoios aitia esti tou ugiainein].
+
 
 [49] [Greek: phronæsis] is here used in a partial sense to signify the Intellectual, as distinct from the Moral, element of Practical Wisdom.
 
@@ -3572,6 +3653,7 @@ We may paraphrase [Greek: to telos] by [Greek: ti dei prattein—ti gar dei prat
 [57] Compare the passage at the commencement of Book X. [Greek: nun de phainontai] [Greek: katokochimon ek tæs aretæs].
 
 [58] It must be remembered, that [Greek: phronæsis] is used throughout this chapter in two senses, its proper and complete sense of Practical Wisdom, and its incomplete one of merely the Intellectual Element of it.
+
 
 
 BOOK VII
@@ -3638,6 +3720,7 @@ Or the words may be understood as referring to the class of wrong acts caused by
 See Bishop Butler’s first Sermon on Compassion, and the conclusion of note on p. 129.
 
 
+
 BOOK VIII
 
 
@@ -3662,6 +3745,7 @@ BOOK VIII
 [9] Which one would be assuming he was, if one declined to recognise the obligation to requite the favour or kindness.
 
 
+
 BOOK IX
 
 
@@ -3670,6 +3754,7 @@ BOOK IX
 “In a few instances the Second Intention, or Philosophical employment of a Term, is more extensive than the First Intention, or popular use.” Whately, Logic, iii. 10.
 
 [2] “I have sometimes considered in what troublesome case is that Chamberlain in an Inn who being but one is to give attendance to many guests. For suppose them all in one chamber, yet, if one shall command him to come to the window, and the other to the table, and another to the bed, and another to the chimney, and another to come upstairs, and another to go downstairs, and all in the same instant, how would he be distracted to please them all? And yet such is the sad condition of nay soul by nature, not only a servant but a slave unto sin. Pride calls me to the window, gluttony to the table, wantonness to the bed, laziness to the chimney, ambition commands me to go upstairs, and covetousness to come down. Vices, I see, are as well contrary to themselves as to Virtue.” (Fuller’s Good Thoughts in Bad Times. Mix’t Contemplations, viii.)
+
 
 
 BOOK X
@@ -3711,4 +3796,5 @@ P. 238, 1. 24. Movement is, according to Aristotle, of six kinds: From not being
 
 [17] See note, page 146, 1. 17.
 
-Texte du domaine public, source : Project Gutenberg (#8438). Édition numérique EbookClassics.
+
+— Public domain text. EbookClassics digital edition.

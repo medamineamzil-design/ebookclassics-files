@@ -1,51 +1,105 @@
 <!DOCTYPE html>
 <html lang="es"><head><meta charset="utf-8">
-<title>El caso extraño del Doctor Jekyll</title><style>
-@page { margin: 22mm 20mm; }
-body { font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', serif; line-height: 1.6;
-       color: #1f1a14; max-width: 38em; margin: 0 auto; padding: 1.5em 1.2em; }
-h1 { font-size: 2.1em; text-align: center; margin: 1.5em 0 .2em; letter-spacing: .01em; }
-.author { text-align: center; font-size: 1.15em; font-style: italic; margin-bottom: 3em; color: #5a4a36; }
-h2 { font-size: 1.25em; text-align: center; margin: 2.6em 0 1.2em; letter-spacing: .06em;
-     text-transform: uppercase; font-weight: normal; page-break-before: always; break-before: page; }
-p { margin: 0; text-indent: 1.4em; text-align: justify; hyphens: auto; }
-h2 + p, .first { text-indent: 0; }
-.colophon { font-size: .85em; color: #6b5d45; text-align: center; margin-top: 4em; text-indent: 0; }
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>El caso extraño del Doctor Jekyll — Robert Louis Stevenson</title><style>
+:root{--paper:#fbf8f1;--ink:#1f1b16;--muted:#6f6352;--accent:#9a6b2f;--rule:#e4dccb}
+@media (prefers-color-scheme:dark){:root{--paper:#16140f;--ink:#ece6d8;--muted:#a79c88;--accent:#d8a95e;--rule:#2e2a22}}
+html{background:var(--paper)}
+body{font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Libertinus Serif",Georgia,serif;color:var(--ink);
+     background:var(--paper);line-height:1.65;font-size:1.12rem;max-width:36em;margin:0 auto;padding:2.5em 1.25em 5em}
+.titlepage{text-align:center;min-height:70vh;display:flex;flex-direction:column;justify-content:center;gap:.6em;
+           border-bottom:1px solid var(--rule);margin-bottom:2.5em;padding-bottom:2.5em}
+.titlepage img{max-width:260px;width:60%;margin:0 auto 1.5em;border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+h1{font-size:2.4em;line-height:1.15;font-weight:600;margin:0;letter-spacing:-.01em}
+.author{font-style:italic;font-size:1.25em;color:var(--accent);margin:0}
+.translator{font-size:.95em;color:var(--muted);margin:0}
+nav.toc{margin:0 0 3em}
+nav.toc h2{font-size:.85em;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:left;margin:0 0 .8em}
+nav.toc ol{list-style:none;padding:0;margin:0;columns:1}
+nav.toc li{margin:.25em 0}
+nav.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent}
+nav.toc a:hover{border-color:var(--accent)}
+h2.chapter{font-size:1.45em;font-weight:600;text-align:center;margin:3.5em 0 1.6em;line-height:1.3}
+h2.chapter::before{content:"";display:block;width:3em;height:2px;background:var(--accent);margin:0 auto 1.1em}
+p{margin:0;text-indent:1.5em;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+h2.chapter + p, .titlepage + p{text-indent:0}
+h2.chapter + p::first-letter{font-size:3.1em;float:left;line-height:.85;padding:.08em .08em 0 0;color:var(--accent);font-weight:600}
+.colophon{margin-top:5em;padding-top:1.5em;border-top:1px solid var(--rule);text-align:center;color:var(--muted);font-size:.85em;text-indent:0}
+h3.sub{font-size:1em;font-weight:600;font-variant:small-caps;letter-spacing:.04em;text-align:center;margin:2.2em 0 1em}
+h3.sub + p{text-indent:0}
+@media print{h2.chapter{break-before:page}}
 </style></head><body>
+<header class="titlepage">
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjI0MDAiIHZpZXdCb3g9IjAgMCAxNjAwIDI0MDAiPgo8cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSIyNDAwIiBmaWxsPSIjMmQxZTNlIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjMwMCIgZmlsbD0iI2U4YTg3YyIgb3BhY2l0eT0iLjkyIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMmQxZTNlIiBzdHJva2Utd2lkdGg9IjEyIiBvcGFjaXR5PSIuNSIvPgo8Y2lyY2xlIGN4PSIxMTIwIiBjeT0iNTYwIiByPSIxMjAiIGZpbGw9IiMyZDFlM2UiIG9wYWNpdHk9Ii4xOCIvPgo8cmVjdCB4PSIxNjAiIHk9IjkzMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIxMCIgZmlsbD0iI2U4YTg3YyIvPgo8dGV4dCB4PSIxNjAiIHk9IjEwNDQiIGZvbnQtc2l6ZT0iMTI0IiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmNmVkZTQiPkVsIGNhc288L3RleHQ+PHRleHQgeD0iMTYwIiB5PSIxMTgwIiBmb250LXNpemU9IjEyNCIgZm9udC13ZWlnaHQ9IjYwMCIgZm9udC1mYW1pbHk9IkxpYmVydGludXMgU2VyaWYsIEdlb3JnaWEsIHNlcmlmIiBmaWxsPSIjZjZlZGU0Ij5leHRyYcOxbyBkZWw8L3RleHQ+PHRleHQgeD0iMTYwIiB5PSIxMzE2IiBmb250LXNpemU9IjEyNCIgZm9udC13ZWlnaHQ9IjYwMCIgZm9udC1mYW1pbHk9IkxpYmVydGludXMgU2VyaWYsIEdlb3JnaWEsIHNlcmlmIiBmaWxsPSIjZjZlZGU0Ij5Eb2N0b3IgSmVreWxsPC90ZXh0Pgo8dGV4dCB4PSIxNjAiIHk9IjE1MjMiIGZvbnQtc2l6ZT0iNjgiIGZvbnQtc3R5bGU9Iml0YWxpYyIgZm9udC1mYW1pbHk9IkxpYmVydGludXMgU2VyaWYsIEdlb3JnaWEsIHNlcmlmIiBmaWxsPSIjZThhODdjIj5Sb2JlcnQgTG91aXMgU3RldmVuc29uPC90ZXh0Pgo8dGV4dCB4PSIxNjAiIHk9IjIyMzAiIGZvbnQtc2l6ZT0iNDQiIGxldHRlci1zcGFjaW5nPSIxNCIgZm9udC1mYW1pbHk9IkxpYmVydGludXMgU2VyaWYsIEdlb3JnaWEsIHNlcmlmIiBmaWxsPSIjZjZlZGU0IiBvcGFjaXR5PSIuNzUiPkVCT09LQ0xBU1NJQ1M8L3RleHQ+Cjwvc3ZnPg==" alt="">
 <h1>El caso extraño del Doctor Jekyll</h1>
 <p class="author">Robert Louis Stevenson</p>
+<p class="translator">Traducción de Emilio Augusto Soulère</p>
+</header>
+<nav class="toc"><h2>Índice</h2><ol>
+<li><a href="#c1">Pepita jiménez — Por don juan valera.</a></li>
+<li><a href="#c2">La casa en el desierto.</a></li>
+<li><a href="#c3">Por el capitán mayne reid.</a></li>
+<li><a href="#c4">Las minas del rey salomón — Por h. Rider haggard.</a></li>
+<li><a href="#c5">Novela escrita en inglés</a></li>
+<li><a href="#c6">Sobre la presente obra.</a></li>
+<li><a href="#c7">Los editores.</a></li>
+<li><a href="#c8">El caso extraño del doctor Jekyll — Historia de la puerta.</a></li>
+<li><a href="#c9">En busca del sr. Hyde.</a></li>
+<li><a href="#c10">El dr. Jekyll estaba tranquilo.</a></li>
+<li><a href="#c11">El caso del asesino de carew.</a></li>
+<li><a href="#c12">Incidente de la carta.</a></li>
+<li><a href="#c13">Notable incidente del dr. Lanyón.</a></li>
+<li><a href="#c14">Incidente de la ventana.</a></li>
+<li><a href="#c15">La última noche.</a></li>
+<li><a href="#c16">Enrique jekyll.&quot;</a></li>
+<li><a href="#c17">Relación del doctor Lanyón.</a></li>
+<li><a href="#c18">Enrique jekyll.&quot;</a></li>
+<li><a href="#c19">Hastie lanyón.&quot;</a></li>
+<li><a href="#c20">Fin — Sumario</a></li>
+<li><a href="#c21">Páginas — Historia de la puerta 5</a></li>
+<li><a href="#c22">En busca del sr. Hyde 21 — El dr. Jekyll estaba tranquilo 41</a></li>
+<li><a href="#c23">El caso del asesino de carew 47 — Incidente de la carta 58</a></li>
+<li><a href="#c24">Notable incidente del dr. Lanyón 70 — Incidente de la ventana 80</a></li>
+<li><a href="#c25">La última noche 84 — Relación del dr. Lanyón 112</a></li>
+<li><a href="#c26">María antonieta y su hijo.</a></li>
+<li><a href="#c27">Misterio * * * *</a></li>
+<li><a href="#c28">Por hugh conway.</a></li>
+<li><a href="#c29">La isla del tesoro.</a></li>
+<li><a href="#c30">Por roberto L. Estevenson.</a></li>
+<li><a href="#c31">La casa del pantano.</a></li>
+<li><a href="#c32">Su cara mitad — Por j. Barrett.</a></li>
+<li><a href="#c33">El ídolo caído — Novela inglesa de anstey.</a></li>
+<li><a href="#c34">Cuentos en el mar.</a></li>
+</ol></nav>
 <p>Se ha respetado la ortografía y la acentuación del original.</p>
 <p>Errores obvios de imprenta han sido corregidos.</p>
 <p>Páginas en blanco han sido eliminadas.</p>
 <p>Letras itálicas son denotadas con líneas.</p>
 <p>Las versalitas (letras mayúsculas de tamaño igual a las minúsculas) han sido sustituidas por letras mayúsculas de tamaño normal.</p>
 <p>NOVELAS PUBLICADAS EN ESPAÑOL POR D. APPLETON Y CÍA., NUEVA YORK.</p>
-<h2>PEPITA JIMÉNEZ.</h2>
-<h2>POR DON JUAN VALERA.</h2>
+<h2 class="chapter" id="c1">Pepita jiménez — Por don juan valera.</h2>
 <p>Edición Americana Ilustrada. Un hermoso tomo de 219 páginas, con 7 láminas, el retrato y autógrafo del autor y varias viñetas alegóricas. Encuadernación de mucho gusto artístico y bonitamente decorada. Buen papel, tipo claro, etc., etc. Precio, $1.25.</p>
-<h2>LA CASA EN EL DESIERTO.</h2>
+<h2 class="chapter" id="c2">La casa en el desierto.</h2>
 <p>Aventuras de una familia perdida en las soledades de la América del Norte.</p>
-<h2>POR EL CAPITÁN MAYNE REID.</h2>
+<h2 class="chapter" id="c3">Por el capitán mayne reid.</h2>
 <p>Un bonito tomo de 348 páginas con 12 láminas, encuadernado en tela inglesa. $1.25.</p>
 <p>La misma, edición económica, 50 centavos.</p>
-<h2>LAS MINAS DEL REY SALOMÓN.</h2>
-<h2>POR H. RIDER HAGGARD.</h2>
+<h2 class="chapter" id="c4">Las minas del rey salomón — Por h. Rider haggard.</h2>
 <p>Una novela inglesa llena de aventuras y de escenas interesantísimas. 50 centavos.</p>
 <p>EL CASO EXTRAÑO DEL DOCTOR JEKYLL</p>
-<h2>NOVELA ESCRITA EN INGLÉS</h2>
+<h2 class="chapter" id="c5">Novela escrita en inglés</h2>
 <p>POR ROVERTO LUIS STEVENSON</p>
 <p>TRADUCIDA AL ESPAÑOL POR EMILIO SOULÉRE</p>
 <p>NUEVA YORK D. APPLETON Y COMPAÑÍA 1, 3, Y 5 BOND STREET 1891</p>
 <p>COPYRIGHT, 1891, BY D. APPLETON AND COMPANY.</p>
 <p>La propiedad de esta obra está protegida por la ley en varios países, donde se perseguirá á los que la reproduzcan fraudulentamente.</p>
-<h2>SOBRE LA PRESENTE OBRA.</h2>
+<h2 class="chapter" id="c6">Sobre la presente obra.</h2>
 <p>El Caso extraño del Dr. Jekyll, ó sea del Dr. Jekyll y de Mister Hyde, es, después de La Isla del Tesoro, la obra más afamada de Stevenson y no será dudoso el que la primera sea aún más conocida que la segunda en los países anglosajones. Débese esto indudablemente á que además de haber sido y ser constantemente leída por casi todo el mundo, fué dramatizada y obtuvo tan buen éxito que se ha representado centenares de veces. Recientemente se publicó también una versión francesa: Le Cas Étrange du Docteur Jekyll, hecha con no poco gusto y tino por Mme. B. J. Low, esposa del reputado artista de este nombre, y ahora aparece la española, que estamos seguros ha de ser tan bien recibida como aquélla.</p>
 <p>La novela posee ya de por sí un interés dramático poco común, y en toda ella se revela ese arte peculiar y característico de su autor en el relato, que desde el principio atrae la curiosidad del que la lee. En este trabajo psicológico ó psico-fisiológico, Stevenson ha logrado sacar, del misterio de la dualidad humana, efectos irresistibles, uniendo discretamente lo maravilloso con lo científico y la enseñanza moral con la narración más interesante de ese combate entre dos naturalezas distintamente opuestas, que luchan sin cesar entre sí, revelando el imperio que ejerce la más ruin sobre la más noble, cuando á tiempo no se logran dominar sus exigencias y caprichos.</p>
 <p>La historia del Dr. Jekyll, despojada de ciertos atavíos, de todo adorno maravilloso y de la parte fantástica, es la historia de muchos que acaso todos conocemos y tratamos diariamente, sólo que en el presente caso está trazada por la mano maestra del reputado autor escocés.</p>
-<h2>LOS EDITORES.</h2>
+<h2 class="chapter" id="c7">Los editores.</h2>
 <p>NUEVA YORK, Abril, 1891.</p>
-<h2>EL CASO EXTRAÑO DEL DOCTOR JEKYLL.</h2>
-<h2>HISTORIA DE LA PUERTA.</h2>
+<h2 class="chapter" id="c8">El caso extraño del doctor Jekyll — Historia de la puerta.</h2>
 <p>El Sr. Utterson, el abogado, era un hombre de rostro duro en el cual no brillaba jamás una sonrisa; frío, lacónico y confuso en su modo de hablar; poco expansivo; flaco, alto, de porte descuidado, triste, y sin embargo, capaz no sé por qué, de inspirar afecto. En las reuniones de amigos, y cuando el vino era de su gusto, había en todo su ser algo eminentemente humano que chispeaba en sus ojos; pero ese no sé qué, nunca se traducía en palabras; sólo lo manifestaba por medio de esos síntomas mudos que aparecen en el rostro después de la comida, y de un modo más ostensible, por los actos de su vida. Era rígido y severo para consigo mismo; bebía ginebra cuando se hallaba solo, para mortificarse por su afición al vino; y, aunque le agradaba el teatro, hacía veinte años que no había penetrado por la puerta de ninguno. Pero tenía para con los demás una tolerancia particular; á veces se sorprendía, no sin una especie de envidia, de las desgracias ocurridas á hombres inteligentes, complicados ó envueltos en sus propias maldades, y siempre procuraba más bien ayudar que censurar. &quot;Me inclino,--tenía por costumbre decir, no sin cierta agudeza--hacia la herejía de Caín; dejo que mi hermano siga su camino en busca del diablo.&quot; Con ese carácter, resultaba á menudo, que era el último conocido honrado y la última influencia buena para aquellos cuya vida iba á mal fin; y aún á esos, durante todo el tiempo que andaban á su alrededor, jamás llegaba á demostrar ni siquiera la sombra de un cambio en su manera de ser.</p>
 <p>Sin duda era fácil esa actitud para Utterson, pues era absolutamente impasible, y hasta sus amistades parecían fundadas en sentimientos similares de natural bondad. Es característico en un hombre modesto el aceptar de manos de la casualidad las amistades, y eso es lo que había hecho el abogado. Sus amigos eran sus parientes ó aquellos á quienes había conocido desde hacía mucho tiempo; sus afecciones, como la hiedra, crecían con el tiempo, pero no procedían de ninguna inclinación especial. De ahí, sin duda, provenía la amistad que le unía á Ricardo Enfield, uno de sus lejanos parientes, y hombre que frecuentaba mucho la sociedad. Para algunos había en ello un enigma; ¿qué podrían hallar uno en otro, y qué podía haber de común entre ambos? Los que los encontraban en sus paseos del domingo, referían que no se hablaban, que parecían sombríos, y que la aparición ó la llegada de algún amigo era acogida por ellos con evidentes signos de satisfacción y hasta de consuelo.</p>
 <p>Á pesar de todo, ambos daban gran importancia á aquellos paseos, que eran como el principal placer para ellos, y no sólo rechazaban todas las demás distracciones, sino que prescindían en absoluto de los negocios, para disfrutar con mayor libertad de sus paseos.</p>
@@ -81,7 +135,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Utterson lanzó un profundo suspiro, pero no volvió á hablar; y el joven, reanudando entonces la conversación, añadió:</p>
 <p>--Hé aquí para mí una nueva lección y otro motivo para callar. Me avergüenzo de haber tenido la lengua demasiado larga, y convengamos en no volver á tratar ese asunto.</p>
 <p>--De todo corazón--respondió el abogado--os doy mi palabra y un apretón de manos, Ricardo.</p>
-<h2>EN BUSCA DEL SR. HYDE.</h2>
+<h2 class="chapter" id="c9">En busca del sr. Hyde.</h2>
 <p>Aquella noche, el Sr. Utterson volvió á su habitación de soltero, con el ánimo sombrío, y se sentó sin placer ante la mesa en donde se hallaba servida la comida. Tenía costumbre, el domingo, cuando concluía de comer, de ir á sentarse junto al fuego, con un tomo de cualquier teólogo árido sobre su pupitre, permaneciendo así hasta que el reloj de la vecina iglesia tocaba doce campanadas, y entonces iba tranquilamente á acostarse. Sin embargo, la noche aquella, así que quitaron el mantel, tomó una bujía y fué á su gabinete. Allí abrió su cofre y sacó del sitio más secreto un documento envuelto en un sobre, en el cual estaba escrito lo siguiente: &quot;Testamento del Doctor Jekyll,&quot; y se sentó melancólicamente para estudiar su contenido. El testamento era ológrafo, pues aunque Utterson se había encargado de guardarlo una vez hecho, no quiso intervenir en su redacción. Aquel testamento declaraba, que no sólo en el caso del fallecimiento de Enrique Jekyll, Doctor en Medicina, etc., etc., todos sus bienes deberían pasar á manos de su amigo y bienhechor Eduardo Hyde, sino que por la desaparición ó una ausencia inexplicable del Dr. Jekyll, ausencia que excediese de un período de tres meses, el referido Eduardo Hyde debería tomar posesión de los bienes de dicho Enrique Jekyll, sin ningún otro plazo, y libre de toda carga ú obligación, salvo algunas pequeñas sumas que pagar á los criados de la casa del doctor. Hacía ya mucho tiempo que aquel documento desagradaba al abogado. Le molestaba á la vez en su calidad de jurisconsulto, y en el concepto de partidario de los usos sensatos y ordinarios de la vida, y de enemigo de todo lo extravagante. Además, su desconocimiento de la persona del Sr. Hyde era lo que había aumentado su indignación; y ahora, gracias á un acontecimiento inesperado, le conocía. Ya era bastante malo que tuviese un nombre respecto del cual nada podía saber, que nada decía, y era mucho peor cuando aquel nombre fué revestido con detestables imputaciones; y el espeso y nebuloso velo que había cubierto sus ojos durante tanto tiempo se rasgó de golpe para dejarle ver á un verdadero demonio.</p>
 <p>Después de esto, apagó la bujía, se puso un gabán, y salió. Encaminóse hacia la plaza Cavendish, ciudadela de la Medicina, en donde su amigo, el gran doctor Lanyón, tenía su casa, y recibía á sus numerosos clientes. &quot;Si alguien sabe, será Lanyón,&quot; se dijo á sí mismo el jurisconsulto.</p>
 <p>El solemne ayuda de cámara le conocía, y le saludó; como no se le sometía á las interminables antesalas de las visitas ordinarias, fué directamente desde la puerta hasta el comedor, en donde se hallaba el doctor Lanyón.</p>
@@ -143,7 +197,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Asustado por sus mismas ideas, recordó su pasado, buscando y escudriñando en todos los rincones de su memoria, temeroso de que algún antiguo pecado se mostrase en plena luz. Su pasado era bastante limpio y sin tacha; pocos hombres hubieran podido leer las páginas de su vida con menos temor y aprensión, y sin embargo, sentíase como profundamente humillado á causa de las numerosas malas acciones que creía haber cometido, al mismo tiempo que se gozaba con el recuerdo de las que había sabido evitar.</p>
 <p>Volviendo al asunto que le preocupaba, tuvo un rayo de esperanza.</p>
 <p>Si se pudiera profundizar en el estudio de ese Hyde.... dijo para sí--debe tener grandes secretos; secretos siniestros, á juzgar por su cara; secretos ante los cuales las peores acciones del pobre Jekyll serían como brillantes rayos de sol. Pero las cosas no pueden seguir así. Se me hiela la sangre cuando pienso que ese ser se arrastra como un ladrón hasta el lecho de Enrique; ¡Pobre Enrique, qué despertar el tuyo! Y lo más peligroso de todo eso es que si el tal Hyde sospecha la existencia del testamento, tendrá prisa por heredar. Es preciso que yo me ocupe de este asunto--si Jekyll quiere permitírmelo--añadió--si Jekyll quiere dejarme obrar--pues una vez más vió ante sus ojos escritas, con igual claridad que en el papel, las extrañas cláusulas del testamento.</p>
-<h2>EL DR. JEKYLL ESTABA TRANQUILO.</h2>
+<h2 class="chapter" id="c10">El dr. Jekyll estaba tranquilo.</h2>
 <p>Quince días después, por una feliz casualidad, el doctor daba una de sus alegres comidas á cinco ó seis antiguos amigos, hombres inteligentes, respetables y conocedores del buen vino; el Sr. Utterson, que era uno de ellos, se arregló de modo que permaneció allí después de haberse marchado los demás. No fué aquello un hecho fortuito, porque ya había ocurrido otras veces. En donde querían á Utterson, lo querían de veras. Los anfitriones se complacían en retener al austero abogado, cuando los demás convidados, con la lengua suelta y el corazón alegre, habían traspasado el umbral de la puerta; les era grato permanecer algún tiempo en su discreta compañía, comenzando así á acostumbrarse á la soledad en que iban á quedar, y habituando el espíritu al silencio, pasada la exuberante alegría producida por el banquete. El Dr. Jekyll no era una excepción de esta regla; y sentado en el lado opuesto al fuego, él, hombre de unos cincuenta años, bien constituído, de rostro barbilampiño, con un aspecto quizá algo disimulado, pero de apariencia inteligente y bondadosa, daba á entender que experimentaba por Utterson una amistad tan viva como sincera.</p>
 <p>--Deseaba hablaros, Jekyll--comenzó diciendo el Sr. Utterson--¿recordáis aquel testamento vuestro?</p>
 <p>Un atento observador hubiera podido notar que el asunto no era agradable al doctor, pero lo acogió alegremente, al parecer.</p>
@@ -164,7 +218,7 @@ h2 + p, .first { text-indent: 0; }
 <p>--No es eso lo que os pido--contestó Jekyll, como si defendiese una causa, y apoyando la mano sobre el brazo de Utterson--no os pido más que justicia; os pido que le ayudéis por amor á mí, cuando yo no esté aquí.</p>
 <p>Utterson no pudo impedir que se le escapase un profundo suspiro.</p>
 <p>--Bien--dijo--lo prometo.</p>
-<h2>EL CASO DEL ASESINO DE CAREW.</h2>
+<h2 class="chapter" id="c11">El caso del asesino de carew.</h2>
 <p>Un año después, poco más ó menos, en el mes de octubre de 18**, la ciudad de Londres quedó horrorizada por un crimen que demostraba una brutalidad poco común, siendo el hecho más ruidoso aun á causa de la alta posición de la víctima. Una criada que vivía en una casa situada cerca del río, subía á acostarse hacia las once. Aunque la neblina había cubierto á la ciudad durante las primeras horas del día, la noche estaba clara, y la callejuela á la cual tenía vistas la ventana del cuarto de la criada, se hallaba brillantemente iluminada por la luz de la luna llena. Nuestra mujer tenía ideas románticas, pues se sentó sobre su baúl, que estaba colocado precisamente al lado de la ventana, y se entregó por completo á sus ensueños.</p>
 <p>Jamás--acostumbraba á decir, derramando lágrimas, cuando refería después el acontecimiento--jamás se había sentido tan en paz con todos los hombres, ni había tenido ideas tan buenas acerca del mundo. Hallándose sentada así, vió á un caballero de edad, de buen porte, con el pelo blanco, que caminaba casi rozando la pared de la callejuela; á su encuentro fué otro caballero, de pequeña estatura, en quien no había reparado ella al principio. Cuando llegaron bastante cerca uno de otro para poder hablar, el hombre de más edad se inclinó, acercándose al otro con la mayor deferencia.</p>
 <p>No pareció que el objeto de su pregunta fuese de grande importancia; y, según su manera de hablar, podía suponerse que sólo preguntaba el camino; la luna se reflejaba en su rostro mientras hablaba, y la muchacha se alegraba de verlo, porque parecía indicar un carácter ingénuo, con un no sé qué de altivo, y como de amor propio bien fundado.</p>
@@ -194,7 +248,7 @@ h2 + p, .first { text-indent: 0; }
 <p>En toda la extensión de la casa, que estaba enteramente vacía, salvo la presencia de la vieja, Hyde sólo ocupaba dos piezas, que se hallaban adornadas con lujo y buen gusto. Un armario estaba lleno de botellas de vino, la vajilla era de plata, la mantelería elegante, de la pared colgaba un buen cuadro, regalo (supuso Utterson) de Enrique Jekyll, quien era muy inteligente en pinturas, las alfombras gruesas y de colores agradables. Pero en aquel momento había en las dos habitaciones indicios numerosos de un desorden reciente y precipitado; se veían trajes en el suelo, con los bolsillos vueltos para fuera; en el hogar un montón de ceniza gris, como si hubiesen quemado muchos papeles. De entre las cenizas, calientes aún, sacó el inspector el lomo verde de un libro talonario de vales, que había resistido á la acción del fuego; la segunda parte del bastón roto se encontró detrás de la puerta; y como esto confirmaba las sospechas, el inspector se regocijó de ello. Una visita al Banco, en donde el asesino tenía un crédito de varios miles de libras, completó su satisfacción.</p>
 <p>--Podéis estar seguro, caballero--dijo el inspector á Utterson--de que caerá en mi poder. Es preciso que haya perdido la cabeza, pues de otro modo jamás hubiera dejado aquí el trozo del bastón roto, ni el pedazo del libro talonario. No tenemos más que esperarlo en el Banco, y mandar publicar los anuncios con su filiación.</p>
 <p>Sin embargo, esas señas no eran fáciles de dar, pues el Sr. Hyde tenía pocas intimidades; el amo de la criada sólo le había visto dos veces; no se tenía ninguna noticia respecto de su familia; jamás había sido fotografiado; y aquellas personas que pudieron describirlo, no estuvieron conformes en muchos puntos, como acostumbra suceder comunmente con los observadores inexpertos. Sólo convenían en una cosa, en esa idea vaga de una deformidad difícil de describir, que había llamado la atención de cuantos lo habían visto.</p>
-<h2>INCIDENTE DE LA CARTA.</h2>
+<h2 class="chapter" id="c12">Incidente de la carta.</h2>
 <p>Era ya muy entrada la tarde cuando Utterson llegó á la puerta de la casa del Doctor Jekyll, en donde fué recibido por Poole, quien lo condujo por las cocinas y atravesando un patio, que en otro tiempo fué jardín, hasta el edificio llamado indistintamente laboratorio ó gabinete de disección. El doctor había comprado aquella casa á los herederos de un célebre cirujano; pero como sus aficiones particulares le inducían más bien á la química que á la anatomía, había cambiado el destino del edificio situado al extremo del jardín. Era la primera vez que el abogado penetraba en aquella parte de las habitaciones de su amigo; examinó con curiosidad aquel edificio desaseado y sin ventanas; miró á su alrededor con extrañeza, mientras atravesaba la sala que antes se llenaba de estudiantes, y ahora se hallaba vacía y silenciosa. Las mesas estaban cubiertas materialmente de aparatos químicos, y el suelo de tarros y de manojos de paja. La luz bajaba obscura desde la cúpula, como en medio de una atmósfera nebulosa; en el extremo, unos cuantos escalones conducían á una puerta tapada con un lienzo rojo, y pasando por esa puerta, entró, en fin, Utterson en el gabinete del doctor. Era una pieza espaciosa, adornada con armarios con puertas de cristal, y entre cuyos muebles se veían un espejo grande, de cuerpo entero, y una mesa escritorio. Ese gabinete recibía luz por tres ventanas cubiertas de polvo, con vistas al patio. El fuego chisporroteaba en el hogar; una lámpara estaba colocada sobre la piedra de la chimenea, pues hasta dentro de la casa dejaba sentir sus efectos la neblina; muy cerca del fuego se hallaba sentado el Doctor Jekyll, al parecer, enfermo de cuidado.</p>
 <p>No se levantó para ir al encuentro de su amigo, pero le alargó una mano helada, y le dió la bienvenida con voz conmovida.</p>
 <p>--Y bien--le dijo Utterson, así que Poole se hubo marchado--¿ya sabéis la noticia?</p>
@@ -247,7 +301,7 @@ h2 + p, .first { text-indent: 0; }
 <p>--Sí, señor--contestó el pasante--ya comprendo.</p>
 <p>Tan pronto como Utterson se quedó solo, se apresuró á guardar el documento en la caja de hierro, en donde permaneció siempre.</p>
 <p>--¡Cómo!--pensó.--¿Será posible que Enrique Jekyll haya falsificado la letra de un asesino?--y la sangre se le heló en las venas.</p>
-<h2>NOTABLE INCIDENTE DEL DR. LANYÓN.</h2>
+<h2 class="chapter" id="c13">Notable incidente del dr. Lanyón.</h2>
 <p>Transcurrió algún tiempo; ofreciéronse miles de libras esterlinas de recompensa, pues la muerte de Sir Danvers fué considerada por todos como un ultraje público, pero Hyde había desaparecido á pesar de las investigaciones de la policía, lo mismo que si jamás hubiese existido. Desentrañáronse, descubriéronse muchas cosas respecto de su vida pasada, y verdaderamente, el conjunto era vergonzoso. Refiriéronse historias sobre la crueldad á la vez insensible y violenta del hombre, sobre su vida abyecta, sus extraños conocidos, sobre el odio que había ido dejando tras sí; pero del momento presente, ni siquiera un indicio. Desde la mañana del asesinato, en que había dejado la casa de Soho, había desaparecido por completo; poco á poco, y con ayuda del tiempo, Utterson comenzó á reponerse de sus temores, y su tranquilidad fué aumentando. Á su juicio, la muerte de Sir Danvers se hallaba ampliamente compensada con la desaparición de Hyde. Ahora que aquella nefasta influencia no se ejercía, el Doctor Jekyll tenía una vida nueva. Dejó el encierro, reanudó las relaciones con sus amigos, volvió á ser su huésped familiar y su anfitrión, y como antes por su caridad, se hizo entonces notar por sus sentimientos religiosos. Estaba ocupado á menudo, fuera de su casa; tenía buena salud; su rostro parecía más franco, más dilatado, como si sintiese el golpe de rechazo del bien que hacía; y durante más de dos meses el doctor llevó una vida apacible.</p>
 <p>El ocho de enero, Utterson había comido en casa del doctor en compañía de un pequeño grupo de invitados, Lanyón entre ellos; las miradas del doctor se dirigían de unos á otros, como en otro tiempo, cuando formaban los tres un trío de amigos inseparables. El doce, y después el catorce, cerróse la puerta para el abogado: &quot;el doctor está encerrado en sus habitaciones--decía Poole--y no recibe á nadie.&quot; El quince trató otra vez de entrar, pero obtuvo igual negativa; y como durante los dos meses que acababan de transcurrir, se había acostumbrado á ver á su amigo casi todos los días, aquella vuelta á la soledad influyó en su ánimo. Cinco días después convidó á Guest á comer, y al siguiente se decidió á ir á casa del Doctor Lanyón.</p>
 <p>Allí, á lo menos, no se le negó la entrada; pero desde que llegó junto al doctor, quedó sorprendido por el cambio operado en todo su ser. El doctor llevaba escrito en su rostro el signo de la muerte. Aquel hombre de tez sonrosada, se había vuelto pálido; sus carnes estaban caídas; distintamente se le veía más calvo y más viejo; pero no fueron sólo aquellas visibles pruebas de rápida decadencia física lo que llamaron la atención del abogado, sino más bien la mirada y la manera de ser del doctor, testimonio evidente de algún terrible espanto en su espíritu. Era poco probable que el doctor tuviese miedo á la muerte; así lo sospechó Utterson.--Es médico--pensó,--debe conocer su estado y saber que sus días están contados; y esa revelación es superior á lo que sus fuerzas le permiten soportar.--Y como Utterson le hizo notar su mala cara, el doctor con un acento de gran firmeza, le declaró que estaba perdido.</p>
@@ -265,7 +319,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Pero en el testamento, la idea de desaparición era debida á la siniestra sugestión de Hyde, estaba allí con un fin harto claro y harto horrible. Mas, en la pluma de Lanyón, ¿qué significaba aquella palabra? Una gran curiosidad se apoderó del fideicomisario; tuvo deseos de no atender á la prohibición y de penetrar hasta el fondo, en busca de todos aquellos misterios.</p>
 <p>Pero su profesión y la confianza que tenía en su difunto amigo le imponían severos deberes; de modo que el paquete fué á descansar en el más secreto cajón de su cofre particular.</p>
 <p>Si por una parte su curiosidad se hallaba mortificada, por otra parecía excitada con violencia; y casi puede dudarse si desde aquel momento deseó Utterson con igual vehemencia la sociedad del amigo superviviente. Pensaba en él con afecto, sin duda; pero sus ideas estaban perturbadas y eran temerosas. Fué á verlo, sin embargo; quizá se congratuló de no ser conducido hasta su presencia; quizá también, en el fondo de su corazón, prefería hablar con Poole en la escalera y en medio de la atmósfera y de los ruidos de la gran ciudad, á penetrar en aquella casa en donde reinaba una esclavitud voluntaria, y sentarse á hablar con su impenetrable prisionero. Poole, además, no tenía nada bueno que comunicarle. El doctor, al parecer, se encerraba más que nunca en su gabinete ó en el laboratorio, en donde llegaba algunas veces, hasta á quedarse dormido. Estaba muy triste; hablaba poco, no leía, y hubiérase dicho que pesaba algo sobre su ánimo. Utterson estaba ya tan acostumbrado á aquellas respuestas idénticas, que poco á poco fué disminuyendo las visitas.</p>
-<h2>INCIDENTE DE LA VENTANA.</h2>
+<h2 class="chapter" id="c14">Incidente de la ventana.</h2>
 <p>Aconteció un domingo, que dando su acostumbrado paseo con el Sr. Enfield, la casualidad los condujo de nuevo á pasar por la callejuela; cuando llegaron frente á la puerta, ambos se detuvieron un instante para examinarla.</p>
 <p>--En fin--dijo Enfield--esa historia ha concluído. No volveremos á ver al Sr. Hyde.</p>
 <p>--Así lo creo--repuso Utterson.--¿Os he dicho que lo vi una sola vez y que experimenté la misma repulsión que vos?</p>
@@ -283,7 +337,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Ambos estaban pálidos, y había en sus ojos una expresión de horror tan grande, que decía bastante por sí misma.</p>
 <p>--¡Que Dios nos perdone! ¡Que Dios nos perdone!--exclamó Utterson.</p>
 <p>El Sr. Enfield hizo gravemente un signo con la cabeza, y siguió en silencio su camino.</p>
-<h2>LA ÚLTIMA NOCHE.</h2>
+<h2 class="chapter" id="c15">La última noche.</h2>
 <p>Una tarde, después de comer, Utterson estaba sentado junto al hogar, cuando quedó sorprendido por la visita de Poole.</p>
 <p>--¡Dios mío! ¿qué es lo que os trae aquí, Poole?--le dijo el abogado; y mirándolo de nuevo, añadió:</p>
 <p>--¿Qué os apena? ¿está enfermo el doctor?</p>
@@ -392,12 +446,12 @@ h2 + p, .first { text-indent: 0; }
 <p>--¿Por qué no leéis lo demás?--preguntó Poole.</p>
 <p>--Porque temo--repuso el abogado con tono solemne--¡quiera Dios que no tenga ningún motivo para temer!--y hablando así, acercó el papel á sus ojos y leyó lo siguiente:</p>
 <p>&quot;Querido Utterson: cuando estas líneas caigan en vuestras manos, habré desaparecido; en qué circunstancias, no tengo la presidencia requerida para preverlo, pero mi instinto y todas las condiciones de mi indefinible vida me dicen que mi fin es seguro y debe estar próximo. Id, pues, y leed primero la relación que Lanyón me ha avisado haber dejado en vuestro poder, y si queréis saber más todavía, leed después la confesión de vuestro indigno y desgraciado amigo</p>
-<h2>ENRIQUE JEKYLL.&quot;</h2>
+<h2 class="chapter" id="c16">Enrique jekyll.&quot;</h2>
 <p>--¿Hay otro sobre?--preguntó Utterson.</p>
 <p>--Aquí está, señor--dijo Poole entregándole un paquete cerrado con varios sellos.</p>
 <p>El abogado lo guardó en uno de sus bolsillos.--No hablaré de este paquete--añadió.--Si vuestro amo ha huído ó ha muerto, podemos á lo menos salvar su honor. Son las diez; debo volver á mi casa y leer con calma esos documentos; pero volveré antes de las doce, para enviar á buscar á la policía.</p>
 <p>Salieron, cerrando tras sí la puerta del laboratorio, y Utterson, dejando de nuevo á los criados reunidos alrededor del fuego en la antesala, regresó tranquilamente á su despacho para leer los dos documentos, en los cuales va á descorrerse el velo de este misterio.</p>
-<h2>RELACIÓN DEL DOCTOR LANYÓN.</h2>
+<h2 class="chapter" id="c17">Relación del doctor Lanyón.</h2>
 <p>&quot;El nueve de enero, hace hoy cuatro días, recibí por el correo, en el reparto de la tarde, una carta certificada, cuyo sobre estaba escrito del propio puño y letra de mi colega y antiguo compañero Enrique Jekyll. Quedé sumamente sorprendido, pues no teníamos costumbre de corresponder por escrito; además, había visto al doctor el día anterior y comido con él, y no podía adivinar lo que en nuestras relaciones exigía las formalidades del certificado. El contenido de la carta aumentó aún mi sorpresa; hé aquí los términos en que se hallaba concebida:</p>
 <p>&quot;10 de diciembre de 18**</p>
 <p>&quot;QUERIDO LANYÓN: Sois uno de mis más antiguos amigos; aunque hayamos tenido á veces discusiones sobre asuntos científicos, no recuerdo, por lo que á mí se refiere, á lo menos, la menor interrupción en nuestra amistad. Si hubiese llegado un día en que me hubiéseis dicho:--Jekyll, mi vida, mi honra, mi razón se hallan á vuestra merced, hubiera sacrificado mi fortuna y mi mano derecha para ir en vuestra ayuda. Lanyón, mi vida, mi honra, mi razón se hallan enteramente á vuestra merced; si me faltáis esta noche, estoy perdido. Después de este prefacio vais á creer que necesito pediros alguna cosa deshonrosa. Juzgad vos mismo.</p>
@@ -407,7 +461,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;Á pesar de la confianza en que estoy de que no os burlaréis de mi ruego, mi corazón desfallece, y tiembla mi mano sólo con pensar en semejante posibilidad. Acordaos de mí en esta hora, de mí que estoy en una extraña situación, atormentado por la negrura de una desgracia que ninguna imaginación podría llegar á exagerar; pensad, también, que si queréis servirme con puntualidad, desaparecerá mi turbación y todo ello no será más que una historia enterrada.</p>
 <p>&quot;Prestadme ese servicio, mi querido Lanyón y salvad á vuestro amigo--E. J.</p>
 <p>&quot;P. S.--Había cerrado ya esta carta cuando un nuevo terror se apodera de mi alma. Es posible que el correo cometa un error y que esta carta no llegue á vuestras manos hasta mañana por la mañana. En ese caso, querido Lanyón, cumplid mi encargo durante el día á la hora que os sea más cómoda, y aguardad otra vez mi mensajero á media noche. Pero quizá será demasiado tarde; y si transcurre entonces la noche sin ninguna novedad, podréis decir que habéis recibido la última noticia de,</p>
-<h2>ENRIQUE JEKYLL.&quot;</h2>
+<h2 class="chapter" id="c18">Enrique jekyll.&quot;</h2>
 <p>Al leer aquella carta me convencí de que mi colega estaba loco; pero hasta que la cosa no ofreciese género ninguno de duda, decidí ejecutar lo que me pedía. Cuanto menos comprendía yo todo aquel fárrago, menos me hallaba en el caso de juzgar de su importancia, y tal petición dirigida en semejantes términos, no podía ser rechazada sin incurrir en grave responsabilidad. Me levanté inmediatamente de la mesa y fuí á buscar un carruaje que me condujo directamente á casa de Jekyll. El criado aguardaba mi llegada; había recibido por el mismo correo que yo un pliego certificado que contenía sus instrucciones, y envió á buscar en el acto á un cerrajero y un carpintero. Ambos obreros llegaron mientras estábamos hablando, y fuimos todos juntos á la sala de disección del viejo Doctor Denman, por el extremo de la cual, según lo sabéis probablemente, se entra con mayor comodidad en el gabinete particular de Jekyll. La puerta era muy sólida, la cerradura excelente; el carpintero confesó que tendría mucho trabajo y que haría mucho destrozo, si tenía que emplear la fuerza; el cerrajero llegó á creer que no podría descerrajarla, pero era un hábil obrero, y después de dos horas de trabajo, quedó abierta la puerta.</p>
 <p>El armario señalado con la letra E no estaba cerrado; saqué la gaveta, la hice rellenar con paja y envolver en papel, llevándomela á la plaza de Cavendish.</p>
 <p>Así que llegué, me puse á examinar su contenido. Los polvos estaban bastante bien arreglados, pero no con el cuidado de un químico fabricante ó vendedor, de modo que, á no dudarlo, habían sido manipulados personalmente por el Doctor Jekyll. Abriendo uno de los sobres, vi que su contenido se parecía, sencillamente, á una sal cristalizada de color blanco. El frasco, que examiné después, estaba lleno hasta la mitad; contenía un licor rojo, con un olor muy agrio, con algo de fósforo y éter volátil. En cuanto á los otros ingredientes, no pude saber lo que eran. El cuaderno ó carterita de apuntes era como casi todos los que usan los colegiales, y sólo contenía unas cortas series de fechas. Esas fechas se extendían á un largo período de años, pero observé que las entradas habían cesado hacía un año poco más ó menos, y bruscamente. Aquí y allí, se veía añadida alguna breve observación, á una fecha, que generalmente era nada más que la palabra doble, que se hallaba repetida quizá seis veces en un total de algunos centenares de entradas; una vez, enteramente al principio de la lista, y seguidas de algunos signos de admiración, estaban las palabras fracaso total.</p>
@@ -441,7 +495,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Lo que me dijo durante la hora siguiente me es imposible reconcentrar suficientemente el espíritu para escribirlo. Vi lo que vi, oí lo que oí, y mi alma iba enfermando; y hoy que aquella visión se borra de mis ojos, me pregunto á mí mismo si creo en ella, y no puedo contestar. Mi vida está resentida hasta en los cimientos; un terror mortal se apodera de mí continuamente, noche y día; comprendo que mis días están contados y que es preciso morir; y lo que es más, moriré incrédulo.</p>
 <p>En cuanto á la ignominia moral que ese hombre enseñó ante mí, ni con lágrimas de penitencia, podría, ni aun como recuerdo, pensar en ella sin estremecerme de horror. Sólo puedo decir una cosa, Utterson, y será (si podéis creerla cierta) más de lo necesario.</p>
 <p>Ese ser que se arrastró aquella noche por mi casa, era, según confesión del mismo Jekyll, conocido bajo el nombre de Hyde y perseguido en todos los rincones del país como asesino de Carew.</p>
-<h2>HASTIE LANYÓN.&quot;</h2>
+<h2 class="chapter" id="c19">Hastie lanyón.&quot;</h2>
 <p>EXPLICACIÓN COMPLETA DEL CASO EXTRAÑO DEL DR. ENRIQUE JEKYLL.</p>
 <p>Nací en el año de 18**, heredero de una gran fortuna, dotado con excelentes cualidades; mi naturaleza me inducía al trabajo, estimaba mucho la consideración de aquellos de mis compañeros que me parecían prudentes y buenos, en una palabra, hasta donde era posible creerlo, poseía las condiciones necesarias para tener un porvenir honroso y distinguido. En realidad, el peor de mis defectos era una tendencia excesiva hacia la alegría, lo que causa el júbilo en otros, pero difícil de conciliar con mi vivo deseo de llevar la frente alta y afectar en público una actitud más seria de la que generalmente tienen los otros hombres. De ahí resultó que comencé á ocultar mis diversiones y placeres, y cuando llegué á la edad en que se piensa y reflexiona, empecé á mirar á mi alrededor y á considerar la próspera posición que ocupaba en el mundo. Me sentí ya destinado á una profunda duplicidad en mi manera de vivir. Más de uno hubiera tenido á gloria las irregularidades de que era yo culpable, pero desde el alto punto de vista en el cual me había colocado, las miraba y las ocultaba con una sensación de vergüenza casi mórbida. De modo que fué más bien la naturaleza exigente de mis aspiraciones, que ninguna clase de degradación particular en mis faltas, lo que me llevó á ser cuanto fuí, lo que con un surco más hondo del que ordinariamente existe para la mayor parte de los hombres, dividió en dos, en mi ser, aquellas provincias del bien y del mal, que parten y forman el dualismo de la naturaleza humana. En tal estado de ánimo, me vi inclinado á reflexionar profundamente y sin descanso respecto de esa dura ley de la existencia que reposa sobre las bases de la religión y que es una de las causas de la desgracia de nuestra raza. Á pesar de ser en modo tan absoluto un hombre de doble faz, no era hipócrita en la acepción que se da á esta palabra; las dos partes de mi yo eran ambas verdaderamente serias. No era más yo en realidad, cuando arrojando todo freno, obraba vergonzosamente, que cuando, á la luz del día, trabajaba para aumentar mis conocimientos, ó cuando procuraba aliviar á los desgraciados y á los enfermos. La casualidad quiso que la orientación de mis estudios científicos, que me guiaban absolutamente hacia lo místico y trascendental, diese de rechazo ejerciendo como una fuerza de repulsión, y me hiciese comprender, iluminándolo con mayor claridad, ese estado de perpetua lucha entre las distintas partes de mi ser. Cada día, y desde el doble punto de vista de la moral y de la inteligencia, llegaba con mayor seguridad al conocimiento de aquella verdad, cuyo descubrimiento parcial me arrastró á este espantoso naufragio: á saber que el hombre no es realmente una entidad, sino que existen dos entidades en él. Digo dos, porque el estado de mi propia ciencia no me ha permitido pasar de ahí. Otros me seguirán, otros irán más allá en esa vía; y aventuro, y me atrevo á emitir la opinión de que ulteriormente se reconocerá que el hombre es una simple aglomeración de diversos individuos sin ninguna relación entre sí. En cuanto á mí, por la misma naturaleza de mi vida, adelanté forzosamente en una sola y única dirección.</p>
 <p>En el ser moral y en mi propia persona aprendí á conocer el perfecto y primitivo dualismo del hombre; vi que, de las dos naturalezas que parecían satisfechas en la extensión de mi conciencia, aunque hubiese podido realmente ser la una y la otra, era únicamente porque, en absoluto, tenía ó poseía las dos á la vez; y desde aquel momento, antes de que hubiese comenzado la marcha de mis descubrimientos científicos á sugerirme la más evidente posibilidad de semejante milagro, había aprendido á insistir con placer, como en un sueño despierto, en la idea de la separación de esos dos elementos. &quot;Si--me decía á mí mismo--cada uno de ellos pudiese estar domiciliado en entidades diferentes, la vida se hallaría desembarazada de todo cuanto la hace insoportable; lo injusto seguiría su camino, libre de las aspiraciones y de los remordimientos de la parte gemela, de la parte más virtuosa; y lo justo podría á su vez viajar segura y constantemente por sus elevados senderos, llevando á cabo el bien que le llenaría de satisfacción, y sin verse expuesto á los disgustos y remordimientos que le ocasionarían los actos de la parte extraña y mala. Fué, pues, destino fatal de la humanidad ver unir esos haces opuestos y disparatados, y que en la matriz agonizante de la conciencia, aquellas dos estrellas polares estuviesen luchando continuamente. ¿Cómo, entonces, podrían ser separadas?&quot;</p>
@@ -488,39 +542,31 @@ h2 + p, .first { text-indent: 0; }
 <p>Es inútil y me falta tiempo para prolongar esta descripción; bástame decir que nadie ha sufrido jamás tormentos iguales; y sin embargo, el hábito de sobrellevarlos ha producido, no un alivio, no un descargo, sino cierta dureza del alma, cierto abandono, cierta indiferencia para con la desesperación; mi castigo hubiera podido durar años todavía, si no me hubiese ocurrido la última desgracia, y por fin, no me hubiese separado de mi propia personalidad. Mi provisión de sal, que jamás había renovado desde mi primer experimento, comenzaba á disminuir. Envié á buscar nuevas provisiones y compuse la pócima; prodújose la ebullición, el primer cambio de color también, pero no el segundo; la bebí, pero no produjo efecto. Sabréis por Poole cómo y hasta qué punto he registrado todo Londres, pero inútilmente, y estoy persuadido hoy de que mi primera provisión era impura (tenía mezcla) constituyendo precisamente esa impureza desconocida la eficacia de la pócima.</p>
 <p>Ha transcurrido una semana, y concluyo esta relación gracias al efecto producido por los últimos paquetes de mis antiguos polvos. Es, pues, la última vez--salvo un milagro--en que Enrique Jekyll puede decir sus propias ideas, ver su propio rostro (y ¡cuán cambiado está!) en el espejo. Además, no puedo demorar el concluir este escrito, pues si hasta aquí ha podido salvarse de la destrucción, débese á una gran prudencia de mi parte, y á una gran casualidad. Si los dolores de la transformación me acometen mientras escribo, Hyde lo hará pedazos; pero si ha transcurrido algún tiempo después que lo haya puesto aparte, su egoísmo increíble y sus ideas siempre fijas en el presente, lo salvarán otra vez de su maldad de mono; pues el destino que pesa á la vez sobre nosotros dos, ha contribuído también á cambiarlo y á anonadarlo. Me queda todavía media hora que esperar antes de volver á entrar para siempre en esa personalidad maldecida, y sé cómo estaré entonces sentado, gimiendo y tiritando en una silla, escuchando con atención y espanto, yendo y viniendo en esta habitación (mi último asilo en la tierra) sin cesar un instante, deteniéndome para escuchar los ruidos amenazadores.</p>
 <p>¿Morirá Hyde en el patíbulo? ¿ó tendrá á última hora el valor de librarse de sí propio? Sólo Dios lo sabe. Poco cuidado me da; éste es el verdadero término de mi muerte, y todo cuanto venga después corresponde á otro que yo. Aquí, pues, dejando la pluma y sellando mi confesión, concluyo de referir la vida del desgraciado ENRIQUE JEKYLL.&quot;</p>
-<h2>FIN.</h2>
-<h2>SUMARIO</h2>
-<h2>PÁGINAS</h2>
-<h2>HISTORIA DE LA PUERTA                       5</h2>
-<h2>EN BUSCA DEL SR. HYDE                      21</h2>
-<h2>EL DR. JEKYLL ESTABA TRANQUILO             41</h2>
-<h2>EL CASO DEL ASESINO DE CAREW               47</h2>
-<h2>INCIDENTE DE LA CARTA                      58</h2>
-<h2>NOTABLE INCIDENTE DEL DR. LANYÓN           70</h2>
-<h2>INCIDENTE DE LA VENTANA                    80</h2>
-<h2>LA ÚLTIMA NOCHE                            84</h2>
-<h2>RELACIÓN DEL DR. LANYÓN                   112</h2>
+<h2 class="chapter" id="c20">Fin — Sumario</h2>
+<h2 class="chapter" id="c21">Páginas — Historia de la puerta 5</h2>
+<h2 class="chapter" id="c22">En busca del sr. Hyde 21 — El dr. Jekyll estaba tranquilo 41</h2>
+<h2 class="chapter" id="c23">El caso del asesino de carew 47 — Incidente de la carta 58</h2>
+<h2 class="chapter" id="c24">Notable incidente del dr. Lanyón 70 — Incidente de la ventana 80</h2>
+<h2 class="chapter" id="c25">La última noche 84 — Relación del dr. Lanyón 112</h2>
 <p>EXPLICACIÓN COMPLETA DEL CASO EXTRAÑO DEL DR. ENRIQUE JEKYLL                    130</p>
 <p>NOVELAS PUBLICADAS EN ESPAÑOL POR D. APPLETON Y CÍA., NUEVA YORK.</p>
-<h2>MARÍA ANTONIETA Y SU HIJO.</h2>
+<h2 class="chapter" id="c26">María antonieta y su hijo.</h2>
 <p>Traducción del alemán. Un tomo de 173 páginas, con varias láminas y un retrato de María Antonieta, en el frontispicio. 60 centavos.</p>
-<h2>MISTERIO * * * *</h2>
+<h2 class="chapter" id="c27">Misterio * * * *</h2>
 <p>Novela original, escrita en inglés bajo el nombre de CALLED BACK,</p>
-<h2>POR HUGH CONWAY.</h2>
+<h2 class="chapter" id="c28">Por hugh conway.</h2>
 <p>Obra dramatizada. 800,000 ejemplares vendidos de las ediciones inglesas. Forma un bonito tomo en 12º de unas 230 páginas, tipo claro, buena impresión, cubierta de papel de color artísticamente decorada. 50 centavos.</p>
-<h2>LA ISLA DEL TESORO.</h2>
+<h2 class="chapter" id="c29">La isla del tesoro.</h2>
 <p>Una preciosa novela escrita en inglés</p>
-<h2>POR ROBERTO L. ESTEVENSON.</h2>
+<h2 class="chapter" id="c30">Por roberto L. Estevenson.</h2>
 <p>Con ilustraciones, y un mapa, uniforme con la novela MISTERIO * * * *. Un tomo de 342 páginas. 50 centavos.</p>
-<h2>LA CASA DEL PANTANO.</h2>
+<h2 class="chapter" id="c31">La casa del pantano.</h2>
 <p>Una de las novelas más populares en Inglaterra y en los Estados Unidos. 50 centavos.</p>
-<h2>SU CARA MITAD.</h2>
-<h2>POR J. BARRETT.</h2>
+<h2 class="chapter" id="c32">Su cara mitad — Por j. Barrett.</h2>
 <p>Es una preciosa novela inglesa, llena de amenidad y de ejemplos filosófico-morales de la vida real, escrita en un lenguaje claro, sencillo y lleno de interés. La versión española es muy buena.</p>
-<h2>EL ÍDOLO CAÍDO.</h2>
-<h2>NOVELA INGLESA DE ANSTEY.</h2>
+<h2 class="chapter" id="c33">El ídolo caído — Novela inglesa de anstey.</h2>
 <p>Anstey es un novelista peculiar como lo demuestra su Vice-Versa y otras de sus obras, llenas de una fantasía siempre fundada en alguna tradición más ó menos imposible, pero al fin tradición que instruye y deleita á la vez; puede considerarse como el Julio Verne de alguna creencia antigua ó de alguna superstición ó leyenda del pasado. El estilo está lleno de genialidades, de humor y de sátira.</p>
-<h2>CUENTOS EN EL MAR.</h2>
+<h2 class="chapter" id="c34">Cuentos en el mar.</h2>
 <p>Es una preciosa colección de cuentos, referidos durante un accidente en el mar por varios novelistas ingleses y americanos que se suponen reunidos á bordo de un vapor.</p>
-<p class="colophon">Texte du domaine public, source : Project Gutenberg (#62627). Traduction : Emilio Augusto Soulère (né en 1840). Édition numérique EbookClassics.</p>
+<p class="colophon">Texto de dominio público. Edición digital EbookClassics.</p>
 </body></html>

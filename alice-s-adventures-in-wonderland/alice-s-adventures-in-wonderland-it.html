@@ -1,60 +1,60 @@
 <!DOCTYPE html>
 <html lang="it"><head><meta charset="utf-8">
-<title>Le avventure d&#x27;Alice nel paese delle meraviglie</title><style>
-@page { margin: 22mm 20mm; }
-body { font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', serif; line-height: 1.6;
-       color: #1f1a14; max-width: 38em; margin: 0 auto; padding: 1.5em 1.2em; }
-h1 { font-size: 2.1em; text-align: center; margin: 1.5em 0 .2em; letter-spacing: .01em; }
-.author { text-align: center; font-size: 1.15em; font-style: italic; margin-bottom: 3em; color: #5a4a36; }
-h2 { font-size: 1.25em; text-align: center; margin: 2.6em 0 1.2em; letter-spacing: .06em;
-     text-transform: uppercase; font-weight: normal; page-break-before: always; break-before: page; }
-p { margin: 0; text-indent: 1.4em; text-align: justify; hyphens: auto; }
-h2 + p, .first { text-indent: 0; }
-.colophon { font-size: .85em; color: #6b5d45; text-align: center; margin-top: 4em; text-indent: 0; }
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Le avventure d&#x27;Alice nel paese delle meraviglie — Lewis Carroll</title><style>
+:root{--paper:#fbf8f1;--ink:#1f1b16;--muted:#6f6352;--accent:#9a6b2f;--rule:#e4dccb}
+@media (prefers-color-scheme:dark){:root{--paper:#16140f;--ink:#ece6d8;--muted:#a79c88;--accent:#d8a95e;--rule:#2e2a22}}
+html{background:var(--paper)}
+body{font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Libertinus Serif",Georgia,serif;color:var(--ink);
+     background:var(--paper);line-height:1.65;font-size:1.12rem;max-width:36em;margin:0 auto;padding:2.5em 1.25em 5em}
+.titlepage{text-align:center;min-height:70vh;display:flex;flex-direction:column;justify-content:center;gap:.6em;
+           border-bottom:1px solid var(--rule);margin-bottom:2.5em;padding-bottom:2.5em}
+.titlepage img{max-width:260px;width:60%;margin:0 auto 1.5em;border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+h1{font-size:2.4em;line-height:1.15;font-weight:600;margin:0;letter-spacing:-.01em}
+.author{font-style:italic;font-size:1.25em;color:var(--accent);margin:0}
+.translator{font-size:.95em;color:var(--muted);margin:0}
+nav.toc{margin:0 0 3em}
+nav.toc h2{font-size:.85em;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:left;margin:0 0 .8em}
+nav.toc ol{list-style:none;padding:0;margin:0;columns:1}
+nav.toc li{margin:.25em 0}
+nav.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent}
+nav.toc a:hover{border-color:var(--accent)}
+h2.chapter{font-size:1.45em;font-weight:600;text-align:center;margin:3.5em 0 1.6em;line-height:1.3}
+h2.chapter::before{content:"";display:block;width:3em;height:2px;background:var(--accent);margin:0 auto 1.1em}
+p{margin:0;text-indent:1.5em;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+h2.chapter + p, .titlepage + p{text-indent:0}
+h2.chapter + p::first-letter{font-size:3.1em;float:left;line-height:.85;padding:.08em .08em 0 0;color:var(--accent);font-weight:600}
+.colophon{margin-top:5em;padding-top:1.5em;border-top:1px solid var(--rule);text-align:center;color:var(--muted);font-size:.85em;text-indent:0}
+h3.sub{font-size:1em;font-weight:600;font-variant:small-caps;letter-spacing:.04em;text-align:center;margin:2.2em 0 1em}
+h3.sub + p{text-indent:0}
+@media print{h2.chapter{break-before:page}}
 </style></head><body>
+<header class="titlepage">
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjI0MDAiIHZpZXdCb3g9IjAgMCAxNjAwIDI0MDAiPgo8cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSIyNDAwIiBmaWxsPSIjMmQxZTNlIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjMwMCIgZmlsbD0iI2U4YTg3YyIgb3BhY2l0eT0iLjkyIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMmQxZTNlIiBzdHJva2Utd2lkdGg9IjEyIiBvcGFjaXR5PSIuNSIvPgo8Y2lyY2xlIGN4PSIxMTIwIiBjeT0iNTYwIiByPSIxMjAiIGZpbGw9IiMyZDFlM2UiIG9wYWNpdHk9Ii4xOCIvPgo8cmVjdCB4PSIxNjAiIHk9IjkzMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIxMCIgZmlsbD0iI2U4YTg3YyIvPgo8dGV4dCB4PSIxNjAiIHk9IjEwMDgiIGZvbnQtc2l6ZT0iMTA0IiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmNmVkZTQiPkxlIGF2dmVudHVyZTwvdGV4dD48dGV4dCB4PSIxNjAiIHk9IjExMjMiIGZvbnQtc2l6ZT0iMTA0IiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmNmVkZTQiPmQmI3gyNztBbGljZSBuZWw8L3RleHQ+PHRleHQgeD0iMTYwIiB5PSIxMjM3IiBmb250LXNpemU9IjEwNCIgZm9udC13ZWlnaHQ9IjYwMCIgZm9udC1mYW1pbHk9IkxpYmVydGludXMgU2VyaWYsIEdlb3JnaWEsIHNlcmlmIiBmaWxsPSIjZjZlZGU0Ij5wYWVzZSBkZWxsZTwvdGV4dD48dGV4dCB4PSIxNjAiIHk9IjEzNTIiIGZvbnQtc2l6ZT0iMTA0IiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmNmVkZTQiPm1lcmF2aWdsaWU8L3RleHQ+Cjx0ZXh0IHg9IjE2MCIgeT0iMTUzNiIgZm9udC1zaXplPSI2OCIgZm9udC1zdHlsZT0iaXRhbGljIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNlOGE4N2MiPkxld2lzIENhcnJvbGw8L3RleHQ+Cjx0ZXh0IHg9IjE2MCIgeT0iMjIzMCIgZm9udC1zaXplPSI0NCIgbGV0dGVyLXNwYWNpbmc9IjE0IiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmNmVkZTQiIG9wYWNpdHk9Ii43NSI+RUJPT0tDTEFTU0lDUzwvdGV4dD4KPC9zdmc+" alt="">
 <h1>Le avventure d&#x27;Alice nel paese delle meraviglie</h1>
 <p class="author">Lewis Carroll</p>
-<p>Note: Project Gutenberg also has an HTML version of this file which includes the original illustrations. See 28371-h.htm or 28371-h.zip: (https://www.gutenberg.org/dirs/2/8/3/7/28371/28371-h/28371-h.htm) or (https://www.gutenberg.org/dirs/2/8/3/7/28371/28371-h.zip)</p>
-<p>Images of the original pages are available through Internet Archive. See http://www.archive.org/details/leavventuredalic00carr</p>
-<p>LE AVVENTURE D&#x27;ALICE NEL PAESE DELLE MERAVIGLIE.</p>
-<p>LE AVVENTURE D&#x27;ALICE NEL PAESE DELLE MERAVIGLIE.</p>
-<p>per</p>
-<h2>LEWIS CARROLL.</h2>
-<h2>TRADOTTE DALL&#x27;INGLESE DA T. PIETROCÒLA-ROSSETTI.</h2>
-<h2>CON 42 VIGNETTE DI GIOVANNI TENNIEL.</h2>
-<p>Londra: MacMillan and Co. 1872.</p>
-<p>(Proprietà letteraria dell&#x27;autore.)</p>
-<p>Londra: R. Clay, Figli, E Taylor, Stampatori, Bread Street Hill.</p>
-<p>In su&#x27; vespri giocondi, dolcemente Sul lago tranquillissimo voghiamo, Da delicate mani facilmente Son mossi i remi, e alla ventura andiamo, E pel timon che incerto fende l&#x27;onda Va la barchetta errante e vagabonda.</p>
-<p>Mentre oppresso dal sonno, in luminose Visioni il mio pensiero vaneggiava, Mi destaron tre voci armonïose Chiedendomi un Racconto! Io non osava Fare il broncio severo ed il ribelle A tre bocche di rose,--a tre donzelle!</p>
-<p>La Prima, con la voce di comando, Fieramente m&#x27;impone &quot;Cominciate!&quot; La Seconda mi dice &quot;Io ti domando Un racconto di silfidi e di fate.&quot; La Terza (io non l&#x27;avrei giammai creduto), M&#x27;interrompe una volta ogni minuto.</p>
-<p>Eccole! ferme, attente, silenziose, Seguire con l&#x27;accesa fantasia La Fanciulla vagante in portentose Regïoni di sogni e poesia, Che con bestie ed uccelli ognor favella, E con forma del Ver l&#x27;Errore abbella.</p>
+<p class="translator">Traduzione di Teodorico Pietrocòla-Rossetti</p>
+</header>
+<nav class="toc"><h2>Indice</h2><ol>
+<li><a href="#c1">Capitolo II — Lo stagno di lagrime.</a></li>
+<li><a href="#c2">Capitolo III — Corsa arruffata, e racconto con la coda.</a></li>
+<li><a href="#c3">Capitolo IV — La casettina del Coniglio.</a></li>
+<li><a href="#c4">Capitolo V — Consigli d&#x27;un Bruco.</a></li>
+<li><a href="#c5">Capitolo VI — Porco e pepe.</a></li>
+<li><a href="#c6">Capitolo VII — Un tè di matti.</a></li>
+<li><a href="#c7">Capitolo VIII — Il croquet della Regina.</a></li>
+<li><a href="#c8">Capitolo IX — Storia della Falsa-testuggine.</a></li>
+<li><a href="#c9">Capitolo X — La contraddanza de&#x27; Gamberi.</a></li>
+<li><a href="#c10">Capitolo XI — Chi ha rubato le torte?</a></li>
+<li><a href="#c11">Capitolo XII — Testimonianza d&#x27;alice.</a></li>
+</ol></nav>
 <p>La Storia non toccava ancora il fine E appariva di già confusa e incolta; Allor pregai le care fanciulline Di finir la novella un&#x27;altra volta, Ma risposer più vispe e più raggianti, &quot;No, questa è la tua volta! Avanti, avanti!&quot;</p>
-<p>E così le Avventure raccontai Ad una ad una alle fanciulle amate, Ed or questa novella ne formai Ch&#x27;è un tessuto di favole accozzate;-- Ma il Sol già volge al suo tramonto, andiamo! Alla sponda! alla sponda, orsù, voghiamo!--</p>
 <p>O Alice, accogli questa mia Novella, E fra i sogni d&#x27;infanzia la riponi, Deh! fanne d&#x27;essa una ghirlanda bella, E sulla tua memoria la deponi, Qual pellegrin che serba un arso fiore Di suol lontano, e lo tien stretto al côre!--</p>
-<h2>INDICE.</h2>
-<h2>CAP.                                             PAGE.</h2>
-<h2>I. GIÙ NELLA CONIGLIERA                           1</h2>
-<h2>II. LO STAGNO DI LAGRIME                          15</h2>
-<h2>III. CORSA ARRUFFATA, E RACCONTO CON LA CODA       29</h2>
-<h2>IV. LA CASETTINA DEL CONIGLIO                     41</h2>
-<h2>V. CONSIGLI D&#x27;UN BRUCO                           58</h2>
-<h2>VI. PORCO E PEPE                                  74</h2>
-<h2>VII. UN TÈ DI MATTI                                93</h2>
-<h2>VIII. IL CROQUET DELLA REGINA                      110</h2>
-<h2>IX. STORIA DELLA FALSA-TESTUGGINE                128</h2>
-<h2>X. LA CONTRADDANZA DE&#x27; GAMBERI                  145</h2>
-<h2>XI. CHI HA RUBATO LE TORTE?                      158</h2>
-<h2>XII. TESTIMONIANZA D&#x27;ALICE                        172</h2>
-<h2>CAPITOLO I.</h2>
-<h2>GIÙ NELLA CONIGLIERA.</h2>
 <p>Alice cominciava a sentirsi mortalmente stanca di sedere sul poggio, accanto a sua sorella, senza far nulla: una o due volte aveva gittato lo sguardo sul libro che leggeva sua sorella, ma non c&#x27;erano imagini nè dialoghi, &quot;e a che serve un libro,&quot; pensò Alice, &quot;senza imagini e dialoghi?&quot;</p>
 <p>E andava fantasticando col suo cervello (come meglio poteva, perchè lo stellone l&#x27;avea resa sonnacchiosa e grullina), se il piacere di fare una ghirlanda di margherite valesse la noja di levarsi su, e cogliere i fiori, quand&#x27;ecco un Coniglio bianco con gli occhi di rubino le passò da vicino.</p>
 <p>Davvero non c&#x27;era troppo da meravigliarsi di ciò, nè Alice pensò che fosse cosa troppo stravagante di sentire parlare il Coniglio, il quale diceva fra sè &quot;Oimè! Oimèi! ho fatto tardi!&quot; (quando se lo rammentò in seguito s&#x27;accorse che avrebbe dovuto meravigliarsene, ma allora le sembrò una cosa assai naturale): ma quando il Coniglio trasse un oriuolo dal taschino del panciotto, e vi affisò gli occhi, e scappò via, Alice saltò in piedi, perchè l&#x27;era venuto in mente ch&#x27;ella non avea mai veduto un Coniglio col panciotto e il suo rispettivo taschino, nè con un oriuolo da starvici dentro, e divorata dalla curiosità, traversò il campo correndogli appresso, e giunse proprio a tempo di vederlo slanciarsi in una spaziosa conigliera, di sotto alla siepe.</p>
-<p>In un altro istante, giù Alice scivolò, correndogli appresso, senza punto riflettere come mai avrebbe fatto per riuscirne fuori.</p>
 <p>La buca della conigliera sfilava diritto come una galleria di tunnel, e poi s&#x27;inabissava tanto rapidamente che Alice non ebbe un solo istante per considerare se avesse potuto fermarsi, poichè si sentiva cader giù rotoloni in qualche precipizio che rassomigliava a un pozzo profondissimo.</p>
 <p>Una delle due, o il pozzo era arci-profondo, o ella vi ruzzolava assai adagino, poichè ebbe tempo, mentre cadeva, di guardare tutto intorno, e stupiva pensando a ciò che le avverrebbe poi. Prima di tutto aguzzò la vista e cercò di vedere nel fondo per scoprire ciò che le accaderebbe, ma gli era bujo affatto e non ci si vedea punto: indi guardò alle pareti del pozzo ed osservò ch&#x27;erano ricoperte di credenze e di scaffali da libri; quà e là vide mappe e quadri che pendeano da&#x27; chiodi. Andando giù prese di volo un vasettino che aveva un cartello, lo lesse: &quot;CONSERVA D&#x27;ARANCE,&quot; ma oimè! era vuoto e restò delusa: non volle lasciar cadere il vasettino per non ammazzare chi era in fondo, e andando sempre giù lo depose in un&#x27;altra credenza.</p>
-<p>&quot;Bene,&quot; pensò Alice, &quot;dopo una caduta tale, mi parrà proprio un niente il ruzzolare per le scale! A casa poi, come mi crederanno coraggiosa! D&#x27;ora innanzi, ancorchè cadessi dal tetto, non ne farei caso!&quot; (E probabilmente dicea la verità.)</p>
 <p>E giù--e giù--e giù! Finirà mai quella caduta? &quot;Chi sa quante miglia ho percorse a quest&#x27;ora?&quot; sclamò. &quot;Davvero io stò per toccare il centro della terra. Vediamo: suppongo che saranno quattrocento miglia di profondità--&quot; (come vedete, Alice aveva imparate molte di tali cose nelle sue lezioni, ma non era quella la migliore occasione per fare sfoggio della sua erudizione, poichè non c&#x27;era niuno che l&#x27;ascoltasse, ciò non di meno era bene di ripassarle a mente)--&quot;sì, la sarà questa la vera distanza, o press&#x27;a poco--ma vorrei sapere a quale grado di Latitudine o di Longitudine io sia giunta!&quot; (Alice non sapea mica che fosse Longitudine o Latitudine, ma pensò ch&#x27;erano belle parolone a dire, e le disse!)</p>
 <p>Passò qualche istante e poi rincominciò. &quot;Che dovessi io traversare la terra? Sarebbe bella s&#x27;io uscissi fra le genti che camminano col capo in giù! Credo che si chiamino le Antipatie--&quot; (questa volta fu contenta che non ci fosse niuno che l&#x27;ascoltasse, perchè quel nome non le suonava giusto all&#x27;orecchio) &quot;--ma domanderò loro che nome abbia quel paese. Di grazia, Signora, è questa la Nuova Zelanda? o l&#x27;Australia?&quot; (e cercò di fare una riverenza mentre parlava--figuratevi, far riverenza mentre si casca giù a precipizio! Dite, potreste farla voi?) &quot;Ma se farò una tale domanda mi crederanno una sciocca. No, non la farò: forse troverò scritto il nome in qualche parte colaggiù.&quot;</p>
 <p>E giù--e giù--e giù! Non avendo nulla da fare, Alice rincominciò a cinguettare. &quot;Dina mi cercherà stanotte!&quot; (Dina era il nome della gatta). &quot;Spero che si rammenteranno di darle il suo piattino di latte quando prenderanno il tè. Cara Dina mia! Vorrei che tu fossi meco quaggiù! Non vi son sorci nell&#x27;aria, ma sai, tu potresti afferrare una nottola ch&#x27;è simile al sorcio. Ma che! i gatti mangiano le nottole?&quot; E quì Alice cominciò a sonniferare, e fra il sonno e la veglia continuò a ruminare fra&#x27; denti, &quot;I gatti mangiano le nottole? I gatti mangiano le nottole?&quot; E talvolta, &quot;Le nottole mangiano i gatti?&quot; perchè, vedete, non potendo rispondere a nessuna delle due quistioni, non le importava se invertiva il senso di esse. Sonnecchiava di già, e proprio allora cominciava a sognare che se ne andava a braccetto con Dina e che le diceva con faccia austera: &quot;Dina, dìmmi la verità: hai tu mai mangiata una nottola?&quot; quando, tonfete! cascò d&#x27;un subito sopra un mucchio di ramicelli e di foglie secche, e la caduta finì.</p>
@@ -65,16 +65,12 @@ h2 + p, .first { text-indent: 0; }
 <p>Era proprio tempo perso star lì piantata davanti all&#x27;usciolino, perciò Alice ritornò verso la tavola con una mezza speranza di potervi trovare sopra un&#x27;altra chiave, o almeno un libro il quale insegnasse alla gente a riserrarsi come un cannocchiale: questa volta vi trovò un&#x27;ampolla, (&quot;e certo non c&#x27;era prima,&quot; disse Alice,) e aveva attaccato al collo un cartello sul quale a lettere di scatola era magnificamente scritta questa parola &quot;BEVI.&quot;</p>
 <p>Và benissimo il dire &quot;Bevi,&quot; ma Alice ch&#x27;era una ragazzina prudente, lì per lì non volle bere. &quot;Nò, voglio prima vedere se c&#x27;è scritto &#x27;veleno;&#x27;&quot; poichè ella aveva letto molte belle novellette sopra ragazzi ch&#x27;erano stati abbruciati, e mangiati vivi da bestie feroci, e cose simiglianti, e tutto ciò perchè non vollero ricordarsi della prudenza ch&#x27;era stata loro insegnata in casi simili; come per esempio, non maneggiare le molle infocate perchè scottano; se col coltello ti fai sul dito un taglio molto profondo, certo n&#x27;uscirà sangue; ed ella non avea dimenticato quell&#x27;altro avvertimento, se tu bevi smodatamente d&#x27;una bottiglia che ha l&#x27;iscrizione &quot;veleno,&quot; presto o tardi ti farà male.</p>
 <p>Ciò non di meno quell&#x27;ampolla non aveva l&#x27;iscrizione &quot;veleno,&quot; perciò Alice si avventurò di assaggiarne il contenuto, e trovandolo delizioso (di fatto aveva un sapore misto di torta di ciliegie, di crema, d&#x27;ananasso, di tacchino arrosto, di torrone, e di crostini burrati), lo vuotò tutto d&#x27;un fiato.</p>
-<p>*       *       *       *       *</p>
-<p>&quot;Che curiosa sensazione!&quot; disse Alice: &quot;mi vo ristringendo come un cannocchiale!&quot;</p>
 <p>Ed era proprio così: non aveva più che dieci pollici d&#x27;altezza, e il suo bel visino s&#x27;illuminò di gioja pensando che finalmente era giunta alla giusta statura per traversare l&#x27;usciolino, ed entrare nel bel giardino. Prima aspettò qualche minuto per vedere se rimpicciolisse di più; è vero che provò una certa ansietà su quel mutamento; &quot;perchè, sapete, potrei rimpicciolirmi tanto da sparire affatto come una candela,&quot; disse Alice. &quot;A chi assomiglierei allora?&quot; E cercò di farsi un&#x27;idea dell&#x27;apparenza della fiamma d&#x27;una candela smorzata, poichè non potea nemmeno ricordarsi se mai avesse veduta una cosa simile!</p>
 <p>E scorsero alcuni momenti, e veggendo che nulla di nuovo le accadeva, si accinse ad entrare nel giardino; ma--povera Alice!--quando fu all&#x27;uscio, si accorse che avea dimenticata la chiavettina d&#x27;oro, e quando si rivolse verso la tavola dove l&#x27;avea lasciata, vide che non potea più arrivarla: essa la vedea chiaramente a traverso del cristallo, e fece ogni sforzo possibile per arrampicarsi ad uno de&#x27; piedi della tavola e montar su, ma gli era troppo sdrucciolevole; e dopo essersi affaticata invano per vincere quella difficoltà, la poverina si sedette e pianse.</p>
 <p>&quot;Via! che vale abbandonarsi al pianto!&quot; disse Alice a sè stessa; &quot;io ti consiglio invece, o Signorina, di smetter subito quel piagnucolare!&quot; Generalmente ella dava a sè stessa dei buoni consigli (benchè raramente poi li seguisse), e talvolta si rimproverava tanto severamente che le lagrime le scorrevano per le gote; e si rammentò che una volta stava lì lì per schiaffeggiarsi perchè s&#x27;era truffata in una partita di croquet che giuocava contro a sè medesima, che questa straordinaria bimba trovava piacere a fingersi di essere due persone. &quot;Ma ora è inutile voler credermi due persone,&quot; pensò la povera Alice, &quot;me ne resta appena tanto per comporne una!&quot;.</p>
 <p>Ed ecco, le cadde sott&#x27;occhio una cassettina di cristallo che giaceva sotto la tavola: l&#x27;aprì, e vi trovò dentro un piccolo pasticcino, sul quale, con uva di Corinto, era scritto in belli caratteri &quot;MANGIA.&quot; &quot;Bene! lo mangerò,&quot; disse Alice, &quot;e se mi farà crescere di molto, giungerò ad afferrare la chiavettina, e se mi farà rimpicciolire mi striscerò sotto l&#x27;uscio: così in un modo o in un altro entrerò nel giardino, e poi, sarà quel che sarà!&quot;</p>
 <p>Ne mangiò un bocconcino, e mettendosi la mano sul capo, sclamò ansiosamente: &quot;In qual modo? In qual modo?&quot; per vedere in qual modo si mutava, ma restò molto sorpresa nel vedersi della stessa statura: certo, così accade a tutti coloro che mangiano pasticci, ma Alice s&#x27;era tanto abituata a veder cose straordinarie, che le sembrava una cosa stupida e sciocca quella di crescere, come si cresce generalmente.</p>
-<p>E tornò alla bisogna, e in pochi istanti ingoiò tutto il pasticcio.</p>
-<h2>CAPITOLO II.</h2>
-<h2>LO STAGNO DI LAGRIME.</h2>
+<h2 class="chapter" id="c1">Capitolo II — Lo stagno di lagrime.</h2>
 <p>&quot;Curiosissimo e sempre più curiosissimo!&quot; gridò Alice (era tanta la sua sorpresa che non sapeva più parlar correttamente la sua lingua); &quot;mi stò allungando come un cannocchiale, e il più lungo che mai vi sia stato! Addio piedi!&quot; (perchè appena guardò giù a&#x27; suoi piedi le sembrò che li avesse quasi perduti di vista, tanto erano lontani). &quot;Oh i miei poveri piedini! chi mai in terra v&#x27;infilerà le calze, e vi metterà le scarpettine? Davvero io non potrò farlo più! Oramai sarò tanto lungi da voi, che certo io non mi prenderò più briga di voi altri: bisogna che vi accomodiate alla meglio;--eppure bisognerebbe ch&#x27;io li trattassi bene,&quot; pensò Alice, &quot;se nò, non vorranno andare per la via ch&#x27;io vorrei battere! Vediamo un po&#x27;: ogni anno a Natale darò loro un bel pajo di stivaletti.&quot;</p>
 <p>E andava mulinando col cervello come farebbe. &quot;Glieli manderò col procaccino,&quot; pensò la bimba; &quot;ma gli è davvero strano il mandar regali a&#x27; proprii piedi! E quanto sarà curioso l&#x27;indirizzo!</p>
 <p>Al Signor Piedestro d&#x27;Alice, Tappeto, Presso il parafuoco, (coi saluti d&#x27;Alice).</p>
@@ -102,8 +98,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;No, davvero!&quot; rispose sollecitamente Alice, e mutando argomento, soggiunse. &quot;Dica, le piacciono forse--le piacciono--i--i cani?&quot; Il Sorcio non rispose, e Alice seguitò così. &quot;Vicino a casa nostra, c&#x27;è un bellissimo cagnolino, se lo vedesse! È un canbassetto con certi belli occhi luccicanti, e col pelo cenerino, arricciato e lungo! Ei busca, benissimo le cose che gli si gittano, e siede sulle zampine di dietro per pitoccare il suo desinaruccio, e fa tante altre belle cosettine--non potrei neppure rammentarne la metà--appartiene a un fattore, ed egli dice che la bestiolina vale proprio un Perù, perchè gli è utile di molto, e uccide tutt&#x27;i topi, e--oimè!&quot; gridò Alice tutta sconsolata. &quot;Temo d&#x27;averla offesa di nuovo!&quot; E davvero l&#x27;aveva offeso perchè il Sorcio si allontanò nuotando furiosamente ed agitando le acque dello stagno.</p>
 <p>Alice lo richiamò con un soave tuono di voce, &quot;Sorcio caro, ritorni pure, ed io le prometto che non parlerò più di gatti nè di cani!&quot; A queste parole, il Sorcio si rivoltò indietro, nuotando lentamente verso di lei: la sua faccia era pallida (di rabbia, pensò Alice), e disse con voce sommessa e tremante, &quot;Approdiamo alla spiaggia, e le racconterò la mia storia, allora lei capirà perchè io detesti tanto i gatti e i cani.&quot;</p>
 <p>Era proprio tempo d&#x27;uscir fuori, perchè lo stagno si stava riempendo di uccelli e d&#x27;altri animali che v&#x27;eran caduti dentro: un&#x27;Anitra, un Dronte, un Lori, un Aquilotto, ed altre curiose bestioline. Alice aprì la via, e tutti, nuotando, la seguirono alla spiaggia.</p>
-<h2>CAPITOLO III.</h2>
-<h2>CORSA ARRUFFATA, E RACCONTO CON LA CODA.</h2>
+<h2 class="chapter" id="c2">Capitolo III — Corsa arruffata, e racconto con la coda.</h2>
 <p>L&#x27;assemblea che si riunì alla spiaggia era oltremodo bizzarra--figuratevi, gli uccelli avevano le piume fradice, e gli altri animali avevano il pelo incollato a&#x27; loro corpicciuoli; e tutti erano inzuppati, grondanti acqua, tristi e malcontenti.</p>
 <p>Naturalmente la prima quistione che fu posta fu quella di sapere come si sarebbero asciugati: si consultarono insieme su questo argomento, e pochi minuti dopo Alice si mise a parlare familiarmente con loro, come se li avesse conosciuti da un secolo. Ebbe una lunga discussione col Lori, ma bentosto quest&#x27;ultimo le fece un viso arcigno, e disse perentoriamente, &quot;Son più vecchio di lei, perciò devo saper più di lei;&quot; ma Alice non volle convenirne se prima non le avesse detto quanti anni aveva. Il Lori non volle dirlo, e la loro conversazione cessò.</p>
 <p>Finalmente il Sorcio, che sembrava essere persona d&#x27;una certa autorità fra loro, gridò, &quot;Si seggano signori, e mi ascoltino! Io seccherò tutti in pochi momenti!&quot; Tutti sedettero, in circolo, col Sorcio in mezzo. Alice gli affisò ansiosamente gli occhi in faccia, perchè era sicura che se non si fosse presto rasciugata avrebbe guadagnata una infreddatura solenne.</p>
@@ -153,8 +148,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Alice rispose sollecitamente, perchè la era sempre pronta a parlare della sua prediletta: &quot;Dina è la nostra gatta. È un vero paladino quando va a caccia di sorci! E se la vedeste correr dietro agli uccelli! Visti e presi!&quot;</p>
 <p>Questo discorso produsse un impressione vivissima nell&#x27;assemblea. Alcuni uccelli volarono via di botto: una gazza vecchia si avviluppò ben bene dicendo, &quot;È ormai tempo di tornare a casa; l&#x27;aria della notte mi fa male alla gola!&quot; e un canarino chiamò con voce tremula tutt&#x27;i suoi piccini, &quot;Venite, venite carini! Gli è tempo di andare a letto!&quot; E così chi con un pretesto chi con un altro, tutti andarono via, ed Alice rimase sola.</p>
 <p>&quot;Ho fatto male di nominare Dina!&quot; disse fra sè assai mestamente. &quot;Ei pare che niuno l&#x27;ami quaggiù, eppure la è la miglior gatta del mondo! Oh Dina mia cara! Chi sa, se ti rivedrò mai più!&quot; E la povera Alice rincominciò a piangere perchè si sentiva tutta soletta e sconsolata. Ma alcuni momenti dopo, sentì di nuovo uno scalpiccío in lontananza, e guardò fissamente, nella speranza che il Sorcio avesse mutato pensiero, e tornasse per finire il suo racconto.</p>
-<h2>CAPITOLO IV.</h2>
-<h2>LA CASETTINA DEL CONIGLIO.</h2>
+<h2 class="chapter" id="c3">Capitolo IV — La casettina del Coniglio.</h2>
 <p>Era il Coniglio bianco che ritornava bel bello indietro, guardando ansiosamente quà e là, come che avesse smarrito qualche cosa, e mormorando fra sè stesso: &quot;Oh la Duchessa! la Duchessa! Oh zampine mie! pelle e baffi miei state freschi ora! Ella mi farà impiccare, e ne son tanto sicuro come son certo che le donnole sono donnole! Ma dove mai mi son caduti?&quot; Alice indovinò subito ch&#x27;egli andava ricercando il ventaglio e il paio di guanti bianchi, e buona e servizievole com&#x27;era, si dette attorno per ritrovarli, ma fu inutile, non si trovarono più--ogni cosa sembrava mutata dal momento ch&#x27;era cascata nello stagno; e la gran sala, e il tavolino di cristallo, e l&#x27;usciolino erano svaniti totalmente.</p>
 <p>Bentosto il Coniglio si accorse di Alice, mentr&#x27;ella si affannava alla ricerca, e gridò con voce irata, &quot;Marianna che cosa stai facendo quì? Via corri a casa, e portami un paio di guanti ed un ventaglio! Subito, ti dico!&quot; Alice fu tanto spaventata da quella voce che senza perder tempo corse velocemente verso il luogo indicato, senza dir nulla sullo sbaglio che il Coniglio faceva.</p>
 <p>&quot;Mi ha presa per la cameriera,&quot; disse fra sè mentre continuava a correre. &quot;Ei sarà molto sorpreso quando scoprirà chi io sia! Ma è meglio recargli il ventaglio e i guanti, cioè, purchè io li possa trovare.&quot; E giunse innanzi a una bella casettina, e sull&#x27;uscio v&#x27;era un cartello inciso sopra una rilucente lamina di ottone, con questo nome &quot;CONIGLIO B.&quot; Entrò, senza picchiare all&#x27;uscio, e frettolosamente divorò tutta la scala temendo d&#x27;incontrare la vera Marianna, ed esser da lei cacciata via dalla casa prima di trovare il ventaglio e i guanti.</p>
@@ -197,8 +191,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;Eppure che caro cucciolo era quello!&quot; disse Alice, appoggiandosi a un ranuncolo e facendosi vento con una delle sue foglie: &quot;Oh quanto avrei desiderato d&#x27;insegnargli dei giuocolini se--se fossi stata d&#x27;una statura adeguata! Oimè! avevo quasi dimenticato che mi convien crescere ancora! Vediamo--come potrei fare? Suppongo che dovrei mangiare o bere qualche cosa; ma quale cosa? quì sta il punto!&quot;</p>
 <p>Davvero la gran quistione si aggirava su quale cosa? Alice guardò tutt&#x27;intorno, i fiori, l&#x27;erba, ma non trovò niente che le paresse adatto a mangiare o bere per quell&#x27;occorrenza. C&#x27;era però un grosso fungo vicino a lei, press&#x27;a poco alto quanto lei, e dopo che l&#x27;ebbe osservato di sotto, ai lati, e di dietro, le parve cosa naturale di vedere ciò che v&#x27;era di sopra.</p>
 <p>Si alzò sulla punta de&#x27; piedi, e affacciossi all&#x27;orlo del fungo, ed ecco gli occhi suoi s&#x27;incontrarono con quelli di un grosso Bruco turchino che se ne stava seduto nel mezzo con le braccia conserte, fumando tranquillamente una lunga pipa turca, non facendo la minima attenzione a lei, nè ad alcun&#x27;altra cosa.</p>
-<h2>CAPITOLO V.</h2>
-<h2>CONSIGLI D&#x27;UN BRUCO.</h2>
+<h2 class="chapter" id="c4">Capitolo V — Consigli d&#x27;un Bruco.</h2>
 <p>Il Bruco ed Alice si guardarono in faccia per qualche istante senza far motto; finalmente il Bruco staccò la pipa di bocca, e le parlò con voce languida e sonnacchiosa.</p>
 <p>&quot;Chi siete voi?&quot; disse il Bruco.</p>
 <p>Questa domanda non invitava troppo a una conversazione. Alice rispose con un pò di timidezza, &quot;Davvero io--io non saprei dirlo ora--so almeno chi ero quando mi levai questa mattina, ma d&#x27;allora in poi temo essere stata scambiata più volte.&quot;</p>
@@ -236,7 +229,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;Non l&#x27;avete recitata bene,&quot; disse il Bruco.</p>
 <p>&quot;Temo di no,&quot; rispose timidamente Alice, &quot;certo alcune parole sono scambiate.&quot;</p>
 <p>&quot;Male dal principio alla fine,&quot; disse il Bruco con accento risoluto, e successe un silenzio per qualche minuto.</p>
-<h2>Il Bruco fu il primo a parlare.</h2>
+<p>Il Bruco fu il primo a parlare.</p>
 <p>&quot;Di che statura vorreste essere?&quot; domandò.</p>
 <p>&quot;Oh non vado tanto pel sottile in quanto alla statura,&quot; rispose in fretta Alice; &quot;soltanto non mi piace di mutar tanto spesso, sa.&quot;</p>
 <p>&quot;Non so niente,&quot; disse il Bruco.</p>
@@ -275,8 +268,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;Ma importa moltissimo a me,&quot; rispose subito Alice; &quot;pure ora non vado cercando uova; e quando anche ne cercassi non vorrei delle tue; crude non mi piacciono.&quot;</p>
 <p>&quot;Via dunque da me!&quot; disse brontolando il Colombo, e si accovacciò nel nido. Alice s&#x27;appiattò il meglio che potea fra gli alberi, perchè il suo collo s&#x27;intralciava fra i rami, e spesso dovea fermarsi per sbrogliarsene. Dopo qualche istante si rammentò che avea tuttavia nelle mani i due pezzettini di fungo, e si mise all&#x27;opera con molta avvedutezza morsecchiando or l&#x27;uno or l&#x27;altro, e così ora cresceva ed or diminuiva, sinchè riuscì a riavere la sua statura naturale.</p>
 <p>Era tanto tempo che non avea più avuto la sua statura naturale, che da prima le parve strano, ma vi si abituò in pochi minuti, e rincominciò a parlare fra sè secondo il solito. &quot;Ecco, sono a metà del mio piano! Sono pure strane tutte queste trasformazioni! Non son mai certa di che addiventerò da un minuto all&#x27;altro! Ad ogni modo sono tornata alla mia giusta statura: ora bisognerebbe pensare al modo di penetrare nell&#x27;ameno giardino--come potrò farlo, pagherei saperlo!&quot; E così dicendo, giunse senza avvedersene a una piazza che avea nel mezzo una casettina alta quattro piedi circa. &quot;Chiunque sia che vi abiti,&quot; pensò Alice, &quot;non converrebbe mai con questa mia statura andare a visitarli così all&#x27;improvviso; farei loro una paura terribile!&quot; E rincominciò a morsecchiare il pezzettino che aveva alla man destra, e non osò di avvicinarsi alla casa, se non quando si rimpiccolì tanto che avea nove pollici di altezza.</p>
-<h2>CAPITOLO VI.</h2>
-<h2>PORCO E PEPE.</h2>
+<h2 class="chapter" id="c5">Capitolo VI — Porco e pepe.</h2>
 <p>Per qualche istante si mise a guardar la casa, e non sapea che fare, quando ecco un servo in livrea venne frettolosamente dalla foresta--(lo prese per un servitore perchè era in livrea, altrimenti al viso l&#x27;avrebbe creduto un pesce),--e picchiò furiosamente all&#x27;uscio colle nocche. La porta fu spalancata da un altro servitore in livrea, con una faccia rotonda, e occhi grossi come un ranocchio; ed Alice osservò che entrambi aveano in testa parrucche incipriate ed inanellate. Tutto questo le eccitò la curiosità, e uscì un poco dalla foresta e si mise ad origliare.</p>
 <p>Il Pesce-Servo cavò di sotto il braccio un letterone, grande quasi quanto lui, e lo presentò all&#x27;altro, dicendo con voce solenne, &quot;Per la Duchessa. Un invito della Regina per giuocare una partita di croquet.&quot; Il Ranocchio-Servo rispose con lo stesso tuono di voce, ma invertendo l&#x27;ordine delle parole, &quot;Da parte della Regina. Un invito alla Duchessa per giuocare una partita di croquet.&quot;</p>
 <p>Ed entrambi s&#x27;inchinarono sino a terra, e le ciocche de&#x27; loro capelli s&#x27;imbrogliarono insieme.</p>
@@ -317,7 +309,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;Guai! Guai! Guai! Guai!&quot;</p>
 <p>Mentre la Duchessa cantava la seconda strofa, faceva saltare il bimbo su e giù con molta violenza, e il poverino guaiva tanto che Alice appena potette udire le parole della poesia:--</p>
 <p>&quot;Parlo duro al mio bambino, Lo sculaccio se starnuta, Perchè il pepe, il malandrino, Quando ei vuol, non lo rifiuta. Ei ci annoia co&#x27; suoi lai!&quot;</p>
-<h2>CORO.</h2>
+<h3 class="sub">Coro.</h3>
 <p>&quot;Guai! Guai! Guai! Guai!&quot;</p>
 <p>&quot;Tenete! voi ve lo potrete ninnare un poco se v&#x27;aggrada!&quot; disse la Duchessa ad Alice, buttandole il bimbo in braccio. &quot;Bisogna ch&#x27;io vada a prepararmi per giuocare una partita a croquet con la Regina,&quot; e scappò via. La cuoca le scaraventò addosso una padella, e per poco non la colse.</p>
 <p>Alice afferrò il bimbo ma con qualche difficoltà, perchè la era una creaturina molto strana; e le sue mani e i suoi piedi guizzavano verso tutt&#x27;i lati, &quot;proprio come quell&#x27;animaletto marino che si chiama stella,&quot; pensò Alice. Il poverino, quando Alice lo prese, stronfiava come una macchina a vapore, e continuava a contorcersi e a stiracchiarsi, di tal che ella ebbe la maggior pena del mondo per tenerlo.</p>
@@ -357,8 +349,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;Sta bene,&quot; disse il Gatto; e questa volta sparì lentamente; cominciò con la punta della coda, e finì col suo ghigno, e questo restò come una visione sul ramo dopo che tutto era sparito.</p>
 <p>&quot;Oh bella! Ho veduto spesso un gatto senza ghigno,&quot; osservò Alice, &quot;ma un ghigno senza gatto! È la cosa più curiosa ch&#x27;io abbia mai veduta in tutta la mia vita!&quot;</p>
 <p>Non si era dilungata di molto quando si trovò in faccia alla dimora della Lepre-marzolina: pensò che quella fosse proprio la casa, perchè le gole dei camini aveano la forma di orecchie, e il tetto era coperto di pelo. La casa era tanto grande che ella non osò di avvicinarvisi se non dopo aver morsecchiato un poco del fungo che avea nella mano sinistra, e crebbe quasi due piedi di altezza: ciò non la liberò dall&#x27;ansietà, e mentre si avvicinava timidamente alla porta, diceva fra sè, &quot;E se poi fosse matto furioso! Quasi quasi vorrei essere andata a trovare il Cappellaio!&quot;</p>
-<h2>CAPITOLO VII.</h2>
-<h2>UN TÈ DI MATTI.</h2>
+<h2 class="chapter" id="c6">Capitolo VII — Un tè di matti.</h2>
 <p>Sotto un albero in faccia alla casa c&#x27;era una tavola apparecchiata, e vi prendevano il tè la Lepre-marzolina e il Cappellaio: un Ghiro che dormiva profondamente stava fra loro, ed essi se ne servivano come se fosse un guanciale, appoggiando i gomiti su lui e discorrendo sopra il suo capo. &quot;Che disturbo pel Ghiro,&quot; pensò Alice, &quot;ma siccome dorme, m&#x27;immagino che non ci farà attenzione.&quot;</p>
 <p>La tavola era spaziosa, pure i tre stavano aggruppati insieme a un angolo: &quot;Non c&#x27;è posto! Non c&#x27;è posto!&quot; gridarono, quando videro che Alice si avvicinava. &quot;C&#x27;è molto posto!&quot; disse Alice, sdegnosa, e si mise a sedere in un comodissimo seggiolone che stava ad una delle estremità della tavola.</p>
 <p>&quot;Vuole del vino?&quot; disse la Lepre-marzolina con modo attraente.</p>
@@ -440,7 +431,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;Niuno ha domandato il suo parere,&quot; soggiunse Alice.</p>
 <p>&quot;Chi è che fa ora delle questioni personali?&quot; domandò il Cappellaio con aria di trionfo.</p>
 <p>Alice non seppe bene che rispondere, ma preso una tazza di tè con pane e burro, e rivolgendosi al Ghiro, gli domandò di nuovo: &quot;Perchè vivevano nel fondo del pozzo?&quot;</p>
-<h2>Il Ghiro si mise a riflettere un poco, e rispose, &quot;Era un pozzo di melazzo.&quot;</h2>
+<p>Il Ghiro si mise a riflettere un poco, e rispose, &quot;Era un pozzo di melazzo.&quot;</p>
 <p>&quot;Ma non s&#x27;è udito mai una cosa simile!&quot; interruppe Alice con voce sdegnosa; ma la Lepre-marzolina e il Cappellaio vociarono &quot;St! st!&quot; e il Ghiro continuò con voce burbera, &quot;Se non ha creanza, finisca la novelletta da sè.&quot;</p>
 <p>&quot;Nò, la prego di continuare!&quot; disse Alice molto umilmente: &quot;Non la interromperò più. Forse ce ne sarà uno di quei pozzi.&quot;</p>
 <p>&quot;Uno, eh via!&quot; rispose il Ghiro sdegnosamente. Ciò non di meno, pregato, continuò: &quot;E quelle tre sorelle--imparavano a trarne----&quot;</p>
@@ -462,8 +453,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;Mai più ci tornerò,&quot; disse Alice internandosi nella foresta. &quot;È la più stupida società in mezzo a cui io mi sia trovata!&quot;</p>
 <p>Mentre parlava così, osservò che un albero aveva un uscio pel quale s&#x27;entrava proprio dentro. &quot;Oh ciò è molto curioso!&quot; pensò Alice. &quot;Ma ogni cosa oggi è curiosa. Credo che farò bene ad entrare.&quot; Ed entrò.</p>
 <p>Si trovò di nuovo nel lungo salone, e presso al tavolino di cristallo. &quot;Questa volta farò meglio,&quot; disse fra sè, e prese la chiavettina d&#x27;oro ed aprì l&#x27;uscio che conduceva al giardino. Poi si mise a morsecchiare il fungo (ne avea conservato un pezzettino nella tasca), sino a che ebbe un piede d&#x27;altezza o giù di lì: traversò il piccolo andito: e poi--si ritrovò finalmente nell&#x27;ameno giardino in mezzo ad aiuole lussureggianti di fiori, ed a fontane fresche.</p>
-<h2>CAPITOLO VIII.</h2>
-<h2>IL CROQUET DELLA REGINA.</h2>
+<h2 class="chapter" id="c7">Capitolo VIII — Il croquet della Regina.</h2>
 <p>Un magnifico rosajo stava vicino all&#x27;ingresso del giardino: le sue rose erano bianche, ma tre giardinieri che gli stavano d&#x27;intorno erano occupati a colorirle di rosso. Davvero, è curioso! pensò Alice, e si avvicinò per osservarli, e quando vi fu presso sentì che uno di loro diceva, &quot;Fa attenzione, Cinque! Non mi schizzare con le tue pennellate!&quot;</p>
 <p>&quot;Non ho potuto farne di meno,&quot; rispose Cinque, con tuono burbero; &quot;Sette mi ha urtato il gomito.&quot;</p>
 <p>Sette lo guardò e disse, &quot;Ma bene! Cinque incolpa sempre gli altri!&quot;</p>
@@ -485,7 +475,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;Eh, via!&quot; rispose Alice a voce alta e con fermezza, e la Regina si tacque.</p>
 <p>Il Re appoggiò la mano sul braccio della Regina, e disse timidamente, &quot;Cara mia, riflettici bene su: la è una bambina!&quot;</p>
 <p>La Regina gli voltò le spalle con viso irato, e disse al Fante, &quot;Rivoltateli!&quot;</p>
-<h2>Il Fante ubbidì, e con un piede li rivoltò cautamente.</h2>
+<p>Il Fante ubbidì, e con un piede li rivoltò cautamente.</p>
 <p>&quot;Levatevi!&quot; urlò la Regina, e i tre giardinieri si alzarono immediatamente, e s&#x27;inchinarono davanti al Re, alla Regina, ai figli reali, e a tutti gli altri.</p>
 <p>&quot;Basta!&quot; sclamò la Regina. &quot;Mi fate girare il capo.&quot; E guardando al rosajo, continuò, &quot;Che cosa avete fatto al rosajo?&quot;</p>
 <p>&quot;Con la buona grazia della Maestà vostra,&quot; rispose Due, con voce umile, e piegando il ginocchio a terra, &quot;noi volevamo----&quot;</p>
@@ -494,7 +484,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;Avete loro recisa la testa?&quot; gridò la Regina.</p>
 <p>&quot;Maestà, le loro teste non sono più!&quot; risposero i soldati.</p>
 <p>&quot;Bene!&quot; gridò la Regina. &quot;Sapete giuocare a croquet?&quot;</p>
-<p>I soldati zittirono, e guardarono Alice, credendo che la domanda fosse rivolta a lei.</p>
+<h3 class="sub">I soldati zittirono, e guardarono Alice, credendo che la domanda fosse rivolta a lei.</h3>
 <p>&quot;Sì!&quot; gridò Alice.</p>
 <p>&quot;Avvicinatevi dunque!&quot; urlò la Regina, ed Alice raggiunse la processione, curiosa di sapere ciò che avverrebbe in seguito.</p>
 <p>&quot;Fa--fa bel tempo!&quot; disse una timida vocettina presso a lei. Vide che ella camminava a canto del Coniglio bianco, che la stava occhiando, affissandola in faccia con un certo fare inquieto e timoroso.</p>
@@ -536,8 +526,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Alice non seppe trovar altro a dire che, &quot;Il gatto appartiene alla Duchessa: fareste bene di consultar lei su di ciò.&quot;</p>
 <p>&quot;Ella è in prigione,&quot; disse la Regina al boja: &quot;Conducetela quì.&quot; E il boja andò via come una saetta.</p>
 <p>Appena il boja sparì, la testa del Gatto andò dileguandosi, e quando ritornò con la Duchessa, era sparita totalmente: il Re e il boja corsero quà e là all&#x27;impazzata per ritrovarla, mentre gl&#x27;invitati ritornarono a giuocare.</p>
-<h2>CAPITOLO IX.</h2>
-<h2>STORIA DELLA FALSA-TESTUGGINE.</h2>
+<h2 class="chapter" id="c8">Capitolo IX — Storia della Falsa-testuggine.</h2>
 <p>&quot;Non potete credere quanto son lieta di ritrovarvi, bambina mia!&quot; disse la Duchessa, mettendo amichevolmente il suo braccio in quello di Alice, e camminando insieme.</p>
 <p>Alice era lieta di rivederla in tale buon umore, e pensò che forse era il pepe che l&#x27;avea resa tanto irritabile quando la vide in cucina. &quot;Allorchè sarò Duchessa,&quot; disse fra sè (ma senza troppo sperarlo), &quot;non voglio aver punto pepe nella mia cucina. La minestra è buona anche senza. Chi sa che non sia il pepe che rende la gente cotanto piccosa?&quot; continuò tutta lieta d&#x27;aver scoperta una specie di nuova teoria, &quot;è l&#x27;aceto che la rende aspra--è la camomilla che la rende amara--e sono i confetti e cose simili che addolciscono il carattere de&#x27; bambini. Vorrei che si conoscesse ciò; le persone non sarebbero tanto tirchie a darcene----&quot;</p>
 <p>E così discorrendo avea quasi dimenticata la Duchessa, e trasaltò quando si udì dire all&#x27;orecchio. &quot;Cara mia, voi avete la testa ad altro, e dimenticate di parlare con me. Non potrei dirvene ora la morale, ma me ne ricorderò fra breve.&quot;</p>
@@ -630,8 +619,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;S&#x27;intende,&quot; disse la Falsa-Testuggine.</p>
 <p>&quot;E come facevate nel duodecimo?&quot; domandò vivamente Alice.</p>
 <p>Ma il Grifone l&#x27;interruppe, e disse con voce risoluta, &quot;Basta in quanto alle lezioni: dìlle ora qualche cosa dei giuochi.&quot;</p>
-<h2>CAPITOLO X.</h2>
-<h2>LA CONTRADDANZA DE&#x27; GAMBERI.</h2>
+<h2 class="chapter" id="c9">Capitolo X — La contraddanza de&#x27; Gamberi.</h2>
 <p>La Falsa-Testuggine diè fuori un gran sospiro e passò il rovescio d&#x27;una natatoia sugli occhi. Riguardò ad Alice e cercò di parlare, ma per qualche istante i singhiozzi glielo impedirono. &quot;Ei pare ch&#x27;abbia un osso a traverso della gola,&quot; disse il Grifone, e si accinse a scuoterla e a batterle la schiena. Finalmente la Falsa-Testuggine ricoverò la voce, e con le lagrime che gli colavano sulle guancie, riprese il discorso:--</p>
 <p>&quot;Forse voi non siete vissuta lungo tempo nel fondo del mare&quot;--(&quot;Nò, certo,&quot; disse Alice)--&quot;e forse non siete stata mai presentata a un Gambero&quot;--(Alice stava per dire &quot;Una volta gustai----&quot; ma inghiottì la frase, e disse, &quot;Nò mai&quot;)--&quot;così voi non potete farvi una idea della bellezza d&#x27;una contraddanza de&#x27; Gamberi!&quot;</p>
 <p>&quot;Nò, davvero,&quot; rispose Alice. &quot;Ma ch&#x27;è mai la contraddanza de&#x27; Gamberi?&quot;</p>
@@ -697,8 +685,7 @@ h2 + p, .first { text-indent: 0; }
 <p>&quot;Vieni, vieni!&quot; gridò il Grifone, e prendendo Alice per mano, fuggì con lei, senza aspettar la fine del coro.</p>
 <p>&quot;Che processo?&quot; domandò Alice, tutta affannata mentre fuggiva, ma il Grifone rispose soltanto &quot;Vieni!&quot; e scappava più lesto, mentre il vento portava sempre più debolmente alle loro orecchie l&#x27;eco fuggevole delle parole soavi e malinconiche:--</p>
 <p>&quot;Canto all&#x27;Astro di sera; Canto la tua bon--ta ci--vile--Zuppa!&quot;</p>
-<h2>CAPITOLO XI.</h2>
-<h2>CHI HA RUBATO LE TORTE?</h2>
+<h2 class="chapter" id="c10">Capitolo XI — Chi ha rubato le torte?</h2>
 <p>E giunsero; e videro che il Re e la Regina di Cuori erano seduti in trono, circondati da una gran folla composta di uccellini, di bestioline e da tutto il mazzo di carte: il Fante stava davanti, incatenato, con un soldato a destra e un altro a sinistra: presso al Re stava il Coniglio bianco con la tromba in una mano, e un ruotolo di pergamene nell&#x27;altra. Nel mezzo della corte c&#x27;era una tavola, con un gran piatto di torte le quali sembravano tanto buone che risvegliarono l&#x27;appetito ad Alice--&quot;Vorrei che finissero presto il processo,&quot; pensò Alice, &quot;e che ci servissero quelle buone torte!&quot; Ma siccome non ce n&#x27;era neppure la speranza allora, ella cominciò a guardare tutt&#x27;intorno per uccidere il tempo.</p>
 <p>Alice non era stata mai in un tribunale, ma ne avea letto alcunchè ne&#x27; libri, e fu lieta di poter chiamare per nome tutti coloro che vedea. &quot;Quegli è il giudice,&quot; disse fra sè, &quot;perchè porta quel gran parruccone.&quot;</p>
 <p>E il giudice non era altro che il Re, e siccome portava la corona sopra la parrucca (guardate il frontespizio per averne un&#x27;idea), era un poco imbarazzato; certo non gli andava bene.</p>
@@ -771,8 +758,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Durante qualche istante il Tribunale fu una vera confusione, mentre il Ghiro era preso; e quando si ristabiliva l&#x27;ordine, la cuoca era sparita.</p>
 <p>&quot;Non importa!&quot; disse il Re con un&#x27;aria di sollievo. &quot;Chiamate l&#x27;altro testimone.&quot; E bisbigliò all&#x27;orecchio della Regina: &quot;Cara mia dovreste esaminar voi l&#x27;altro testimone.&quot;</p>
 <p>Alice stava osservando il Coniglio che ripassava la lista, curiosa di vedere chi mai sarebbe l&#x27;altro testimone--&quot;perchè sin&#x27; ad ora non hanno affatto prove,&quot; diceva fra sè. Figuratevi la sua sorpresa, quando il Coniglio bianco chiamò con la sua voce stridula &quot;Alice!&quot;</p>
-<h2>CAPITOLO XII.</h2>
-<h2>TESTIMONIANZA D&#x27;ALICE.</h2>
+<h2 class="chapter" id="c11">Capitolo XII — Testimonianza d&#x27;alice.</h2>
 <p>&quot;Eccomi!&quot; rispose Alice, e dimenticando che in quegli ultimi momenti era cresciuta smisuratamente, saltò su molto lesta, rovesciando col suo gonnellino il palchetto de&#x27; giurati, di tal che questi capitombolarono con la testa in giù sulla folla ch&#x27;era di sotto, e restarono con le gambe all&#x27;aria. Ciò le rammentò il rovescione che la settimana avanti aveva casualmente dato a un globo di cristallo che conteneva de&#x27; pesciolini dorati.</p>
 <p>&quot;Oh, vi prego d&#x27;avermi per iscusata!&quot; sclamò con voce d&#x27;angoscia, e cominciò a raccattarli con molta sollecitudine, perchè piena dell&#x27;idea de&#x27; pesciolini dorati caduti dal globo, pensava che dovea prontamente raccoglierli e rimetterli nel palchetto de&#x27; giurati, se no sarebbero morti.</p>
 <p>&quot;Il processo,&quot; disse il Re con voce autorevole e grave, &quot;non potrà andare innanzi, se non quando tutt&#x27;i giurati saranno rimessi ne&#x27; loro proprii posti,--dico tutti&quot; soggiunse con molta enfasi, riguardando fieramente Alice.</p>
@@ -844,13 +830,11 @@ h2 + p, .first { text-indent: 0; }
 <p>L&#x27;erba rigogliosa stormiva sotto di lei, mentre il Coniglio bianco scappava via--il Sorcio spaventato s&#x27;apriva, sguazzando, una via in mezzo dello stagno vicino--poteva sentire il rumore delle tazze, mentre la Lepre-marzolina e gli amici suoi partecipavano a quel loro perenne pasto--udiva la voce strillante della Regina che mandava i suoi invitati al patibolo--anche una volta il bimbo porcellino starnutiva sulle ginocchia della Duchessa, mentre i tondi e i piatti volavano d&#x27;ogni intorno--anche una volta l&#x27;urlo del Grifone, lo scricchiolìo della matita della Lucertola, la soppressione de&#x27; porcellini d&#x27;India riempivano l&#x27;aria, sposati al singhiozzar lontano della miserabile Falsa-Testuggine.</p>
 <p>E sedette, con gli occhi a metà chiusi, e quasi si credette davvero nel paese delle Meraviglie; benchè sapesse che, aprendo gli occhi, tutto sarebbe mutato in realtà desolante--avrebbe sentito l&#x27;erba stormire all&#x27;agitar del vento--avrebbe veduto lo stagno increspato a causa delle canne--il rumore delle tazze si sarebbe mutato nel tintinnìo dei campanelli delle pecore, e la voce stridente della Regina nella voce del pastorello--e gli starnuti del bimbo, l&#x27;urlo del Grifone, e tutti gli altri strepiti curiosi, si sarebbero mutati (e lei n&#x27;era persuasa) nel rumore confuso d&#x27;una fattoria, e il muggito lontano degli armenti avrebbe surrogato i profondi singhiozzi della Falsa-Testuggine.</p>
 <p>Finalmente, volle figurarsi la sua sorellina già cresciuta e diventata donna,--conservare ne&#x27; suoi anni maturi il cuore affettuoso e semplice della sua fanciullezza--raccogliere intorno a sè altre fanciulle, e far loro brillare gli occhi beandoli con istorielle curiose e strane, e forse anche col sogno delle Avventure nel Paese delle Meraviglie; e con quanta simpatica tenerezza avrebbe ella stessa partecipato alle loro innocenti angosce, e con quanta letizia alle loro gioje, riandando i beati giorni della fanciullezza, e le gioconde giornate dell&#x27;estate.</p>
-<h2>FINE.</h2>
-<h2>LONDRA:</h2>
-<h2>R. CLAY, FIGLI, E TAYLOR, STAMPATORI,</h2>
-<h2>BREAD STREET HILL.</h2>
+<h3 class="sub">Fine — Londra:</h3>
+<h3 class="sub">R. Clay, figli, e taylor, stampatori, — Bread street hill.</h3>
 <p>*       *       *       *       *</p>
 <p>Nota del Trascrittore</p>
 <p>La punteggiatura e l&#x27;ortografia originali sono state mantenute. Minimi errori di stampa sono stati corretti senza annotazione. Sono stati inoltre corretti i seguenti refusi (tra parentesi il testo originale):</p>
 <p>mancò che non glielo [gielo] portasse via. affissandola in faccia con un certo fare [faze] inquieto bisbigliò all&#x27;orecchio della fanciulla, &quot;È [E] sotto che s&#x27;era avvicinato [avvicinata] ad Alice, ed osservava la vuole [voule].&quot; fra [far] breve.&quot; le [e] tre date, sopra le lavagne, e poi le sommarono [sommaronol]</p>
-<p class="colophon">Texte du domaine public, source : Project Gutenberg (#28371). Traduction : Teodorico Pietrocòla-Rossetti († 1883). Édition numérique EbookClassics.</p>
+<p class="colophon">Testo di pubblico dominio. Edizione digitale EbookClassics.</p>
 </body></html>

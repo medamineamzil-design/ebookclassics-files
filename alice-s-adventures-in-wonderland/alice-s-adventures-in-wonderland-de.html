@@ -1,53 +1,56 @@
 <!DOCTYPE html>
 <html lang="de"><head><meta charset="utf-8">
-<title>Alice&#x27;s Abenteuer im Wunderland</title><style>
-@page { margin: 22mm 20mm; }
-body { font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', serif; line-height: 1.6;
-       color: #1f1a14; max-width: 38em; margin: 0 auto; padding: 1.5em 1.2em; }
-h1 { font-size: 2.1em; text-align: center; margin: 1.5em 0 .2em; letter-spacing: .01em; }
-.author { text-align: center; font-size: 1.15em; font-style: italic; margin-bottom: 3em; color: #5a4a36; }
-h2 { font-size: 1.25em; text-align: center; margin: 2.6em 0 1.2em; letter-spacing: .06em;
-     text-transform: uppercase; font-weight: normal; page-break-before: always; break-before: page; }
-p { margin: 0; text-indent: 1.4em; text-align: justify; hyphens: auto; }
-h2 + p, .first { text-indent: 0; }
-.colophon { font-size: .85em; color: #6b5d45; text-align: center; margin-top: 4em; text-indent: 0; }
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alice&#x27;s Abenteuer im Wunderland — Lewis Carroll</title><style>
+:root{--paper:#fbf8f1;--ink:#1f1b16;--muted:#6f6352;--accent:#9a6b2f;--rule:#e4dccb}
+@media (prefers-color-scheme:dark){:root{--paper:#16140f;--ink:#ece6d8;--muted:#a79c88;--accent:#d8a95e;--rule:#2e2a22}}
+html{background:var(--paper)}
+body{font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Libertinus Serif",Georgia,serif;color:var(--ink);
+     background:var(--paper);line-height:1.65;font-size:1.12rem;max-width:36em;margin:0 auto;padding:2.5em 1.25em 5em}
+.titlepage{text-align:center;min-height:70vh;display:flex;flex-direction:column;justify-content:center;gap:.6em;
+           border-bottom:1px solid var(--rule);margin-bottom:2.5em;padding-bottom:2.5em}
+.titlepage img{max-width:260px;width:60%;margin:0 auto 1.5em;border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+h1{font-size:2.4em;line-height:1.15;font-weight:600;margin:0;letter-spacing:-.01em}
+.author{font-style:italic;font-size:1.25em;color:var(--accent);margin:0}
+.translator{font-size:.95em;color:var(--muted);margin:0}
+nav.toc{margin:0 0 3em}
+nav.toc h2{font-size:.85em;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:left;margin:0 0 .8em}
+nav.toc ol{list-style:none;padding:0;margin:0;columns:1}
+nav.toc li{margin:.25em 0}
+nav.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent}
+nav.toc a:hover{border-color:var(--accent)}
+h2.chapter{font-size:1.45em;font-weight:600;text-align:center;margin:3.5em 0 1.6em;line-height:1.3}
+h2.chapter::before{content:"";display:block;width:3em;height:2px;background:var(--accent);margin:0 auto 1.1em}
+p{margin:0;text-indent:1.5em;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+h2.chapter + p, .titlepage + p{text-indent:0}
+h2.chapter + p::first-letter{font-size:3.1em;float:left;line-height:.85;padding:.08em .08em 0 0;color:var(--accent);font-weight:600}
+.colophon{margin-top:5em;padding-top:1.5em;border-top:1px solid var(--rule);text-align:center;color:var(--muted);font-size:.85em;text-indent:0}
+h3.sub{font-size:1em;font-weight:600;font-variant:small-caps;letter-spacing:.04em;text-align:center;margin:2.2em 0 1em}
+h3.sub + p{text-indent:0}
+@media print{h2.chapter{break-before:page}}
 </style></head><body>
+<header class="titlepage">
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjI0MDAiIHZpZXdCb3g9IjAgMCAxNjAwIDI0MDAiPgo8cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSIyNDAwIiBmaWxsPSIjMmQxZTNlIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjMwMCIgZmlsbD0iI2U4YTg3YyIgb3BhY2l0eT0iLjkyIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMmQxZTNlIiBzdHJva2Utd2lkdGg9IjEyIiBvcGFjaXR5PSIuNSIvPgo8Y2lyY2xlIGN4PSIxMTIwIiBjeT0iNTYwIiByPSIxMjAiIGZpbGw9IiMyZDFlM2UiIG9wYWNpdHk9Ii4xOCIvPgo8cmVjdCB4PSIxNjAiIHk9IjkzMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIxMCIgZmlsbD0iI2U4YTg3YyIvPgo8dGV4dCB4PSIxNjAiIHk9IjEwNDQiIGZvbnQtc2l6ZT0iMTI0IiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmNmVkZTQiPkFsaWNlJiN4Mjc7czwvdGV4dD48dGV4dCB4PSIxNjAiIHk9IjExODAiIGZvbnQtc2l6ZT0iMTI0IiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmNmVkZTQiPkFiZW50ZXVlciBpbTwvdGV4dD48dGV4dCB4PSIxNjAiIHk9IjEzMTYiIGZvbnQtc2l6ZT0iMTI0IiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmNmVkZTQiPld1bmRlcmxhbmQ8L3RleHQ+Cjx0ZXh0IHg9IjE2MCIgeT0iMTUyMyIgZm9udC1zaXplPSI2OCIgZm9udC1zdHlsZT0iaXRhbGljIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNlOGE4N2MiPkxld2lzIENhcnJvbGw8L3RleHQ+Cjx0ZXh0IHg9IjE2MCIgeT0iMjIzMCIgZm9udC1zaXplPSI0NCIgbGV0dGVyLXNwYWNpbmc9IjE0IiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmNmVkZTQiIG9wYWNpdHk9Ii43NSI+RUJPT0tDTEFTU0lDUzwvdGV4dD4KPC9zdmc+" alt="">
 <h1>Alice&#x27;s Abenteuer im Wunderland</h1>
 <p class="author">Lewis Carroll</p>
-<p>Alice&#x27;s Abenteuer</p>
-<p>im Wunderland</p>
-<p>von</p>
-<p>Lewis Carroll.</p>
-<p>Aus dem Englischen von Antonie Zimmermann.</p>
-<p>Mit zweiundvierzig Illustrationen</p>
-<p>von</p>
-<p>John Tenniel.</p>
-<p>Autorisirte Ausgabe.</p>
-<p>Leipzig</p>
-<p>Johann Friedrich Hartknoch.</p>
-<p>Originally published in 1869.</p>
-<p>O schöner, goldner Nachmittag, Wo Flut und Himmel lacht! Von schwacher Kindeshand bewegt, Die Ruder plätschern sacht -- Das Steuer hält ein Kindesarm Und lenket unsre Fahrt.</p>
-<p>So fuhren wir gemächlich hin Auf träumerischen Wellen -- Doch ach! die drei vereinten sich, Den müden Freund zu quälen -- Sie trieben ihn, sie drängten ihn, Ein Mährchen zu erzählen.</p>
-<p>Die erste gab&#x27;s Commandowort; O schnell, o fange an! Und mach&#x27; es so, die Zweite bat, Daß man recht lachen kann! Die Dritte ließ ihm keine Ruh Mit wie? und wo? und wann?</p>
-<p>Jetzt lauschen sie vom Zauberland Der wunderbaren Mähr&#x27;; Mit Thier und Vogel sind sie bald In freundlichem Verkehr, Und fühlen sich so heimisch dort, Als ob es Wahrheit wär&#x27;. --</p>
-<p>Und jedes Mal, wenn Fantasie Dem Freunde ganz versiegt: -- »Das Uebrige ein ander Mal!« O nein, sie leiden&#x27;s nicht. »»Es ist ja schon ein ander Mal!«« -- So rufen sie vergnügt.</p>
-<p>So ward vom schönen Wunderland Das Märchen ausgedacht, So langsam Stück für Stück erzählt, Beplaudert und belacht, Und froh, als es zu Ende war, Der Weg nach Haus gemacht.</p>
-<p>Alice! o nimm es freundlich an! Leg&#x27; es mit güt&#x27;ger Hand Zum Strauße, den Erinnerung Aus Kindheitsträumen band, Gleich welken Blüthen, mitgebracht Aus liebem, fernen Land.</p>
+<p class="translator">Übersetzt von Antonie Zimmermann</p>
+</header>
+<nav class="toc"><h2>Inhalt</h2><ol>
+<li><a href="#c1">Erstes Kapitel</a></li>
+<li><a href="#c2">Zweites Kapitel.</a></li>
+<li><a href="#c3">Drittes Kapitel.</a></li>
+<li><a href="#c4">Viertes Kapitel.</a></li>
+<li><a href="#c5">Fünftes Kapitel.</a></li>
+<li><a href="#c6">Sechstes Kapitel.</a></li>
+<li><a href="#c7">Siebentes Kapitel.</a></li>
+<li><a href="#c8">Achtes Kapitel.</a></li>
+<li><a href="#c9">Neuntes Kapitel.</a></li>
+<li><a href="#c10">Zehntes Kapitel.</a></li>
+<li><a href="#c11">Elftes Kapitel.</a></li>
+<li><a href="#c12">Zwölftes Kapitel.</a></li>
+</ol></nav>
 <p>[Der Verfasser wünscht hiermit seine Anerkennung gegen die Uebersetzerin auszusprechen, die einige eingestreute Parodien englischer Kinderlieder, welche der deutschen Jugend unverständlich gewesen wären, durch dergleichen von bekannten deutschen Gedichten ersetzt hat. Ebenso sind für die oft unübersetzbaren englischen Wortspiele passende deutsche eingeschoben worden, welche das Buch allein der Gewandtheit der Uebersetzerin verdankt.]</p>
-<p>Inhalt.</p>
-<p>1. Hinunter in den Kaninchenbau                   1</p>
-<p>2. Der Thränenpfuhl                              14</p>
-<p>3. Caucus-Rennen, und was daraus wird            27</p>
-<p>4. Die Wohnung des Kaninchens                    39</p>
-<p>5. Guter Rath von einer Raupe                    55</p>
-<p>6. Ferkel und Pfeffer                            71</p>
-<p>7. Die tolle Theegesellschaft                    88</p>
-<p>8. Das Croquetfeld der Königin                  104</p>
-<p>9. Die Geschichte der falschen Schildkröte      121</p>
-<p>10. Das Hummerballet                            137</p>
-<p>11. Wer hat die Kuchen gestohlen?               150</p>
-<p>12. Alice ist die Klügste                       163</p>
-<h2>Erstes Kapitel</h2>
+<h2 class="chapter" id="c1">Erstes Kapitel</h2>
 <p>Hinunter in den Kaninchenbau.</p>
 <p>Alice fing an sich zu langweilen; sie saß schon lange bei ihrer Schwester am Ufer und hatte nichts zu thun. Das Buch, das ihre Schwester las, gefiel ihr nicht; denn es waren weder Bilder noch Gespräche darin. »Und was nützen Bücher,« dachte Alice, »ohne Bilder und Gespräche?«</p>
 <p>Sie überlegte sich eben, (so gut es ging, denn sie war schläfrig und dumm von der Hitze,) ob es der Mühe werth sei aufzustehen und Gänseblümchen zu pflücken, um eine Kette damit zu machen, als plötzlich ein weißes Kaninchen mit rothen Augen dicht an ihr vorbeirannte.</p>
@@ -74,7 +77,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Bald fiel ihr Auge auf eine kleine Glasbüchse, die unter dem Tische lag; sie öffnete sie und fand einen sehr kleinen Kuchen darin, auf welchem die Worte »Iß mich!« schön in kleinen Rosinen geschrieben standen. »Gut, ich will ihn essen,« sagte Alice, »und wenn ich davon größer werde, so kann ich den Schlüssel erreichen; wenn ich aber kleiner davon werde, so kann ich unter der Thür durchkriechen. So, auf jeden Fall, gelange ich in den Garten, -- es ist mir einerlei wie.«</p>
 <p>Sie aß ein Bißchen, und sagte neugierig zu sich selbst: »Aufwärts oder abwärts?« Dabei hielt sie die Hand prüfend auf ihren Kopf und war ganz erstaunt zu bemerken, daß sie dieselbe Größe behielt. Freilich geschieht dies gewöhnlich, wenn man Kuchen ißt; aber Alice war schon so an wunderbare Dinge gewöhnt, daß es ihr ganz langweilig schien, wenn das Leben so natürlich fortging.</p>
 <p>Sie machte sich also daran, und verzehrte den Kuchen völlig.</p>
-<h2>Zweites Kapitel.</h2>
+<h2 class="chapter" id="c2">Zweites Kapitel.</h2>
 <p>Der Thränenpfuhl.</p>
 <p>»Verquerer und verquerer!« rief Alice. (Sie war so überrascht, daß sie im Augenblick ihre eigene Sprache ganz vergaß.) »Jetzt werde ich auseinander geschoben wie das längste Teleskop das es je gab! Lebt wohl, Füße!« (Denn als sie auf ihre Füße hinabsah, konnte sie sie kaum mehr zu Gesicht bekommen, so weit fort waren sie schon.) »O meine armen Füßchen! wer euch wohl nun Schuhe und Strümpfe anziehen wird, meine Besten? denn ich kann es unmöglich thun! Ich bin viel zu weit ab, um mich mit euch abzugeben! ihr müßt sehen, wie ihr fertig werdet. Aber gut muß ich zu ihnen sein,« dachte Alice, »sonst gehen sie vielleicht nicht, wohin ich gehen möchte. Laß mal sehen: ich will ihnen jeden Weihnachten ein Paar neue Stiefel schenken.«</p>
 <p>Und sie dachte sich aus, wie sie das anfangen würde. »Sie müssen per Fracht gehen,« dachte sie; »wie drollig es sein wird, seinen eignen Füßen ein Geschenk zu schicken! und wie komisch die Adresse aussehen wird! --</p>
@@ -102,7 +105,7 @@ h2 + p, .first { text-indent: 0; }
 <p>»Nein, gewiß nicht!« sagte Alice, eifrig bemüht, einen andern Gegenstand der Unterhaltung zu suchen. »Magst du -- magst du gern Hunde?« Die Maus antwortete nicht, daher fuhr Alice eifrig fort: »Es wohnt ein so reizender kleiner Hund nicht weit von unserm Hause. Den möchte ich dir zeigen können! Ein kleiner klaräugiger Wachtelhund, weißt du, ach, mit solch krausem braunen Fell! Und er apportirt Alles, was man ihm hinwirft, und er kann aufrecht stehen und um sein Essen betteln, und so viel Kunststücke -- ich kann mich kaum auf die Hälfte besinnen -- und er gehört einem Amtmann, weißt du, und er sagt, er ist so nützlich, er ist ihm hundert Pfund werth! Er sagt, er vertilgt alle Ratten und -- oh wie dumm!« sagte Alice in reumüthigem Tone. »Ich fürchte, ich habe ihr wieder weh gethan!« Denn die Maus schwamm so schnell sie konnte von ihr fort und brachte den Pfuhl dadurch in förmliche Bewegung.</p>
 <p>Sie rief ihr daher zärtlich nach: »Liebes Mäuschen! Komm wieder zurück, und wir wollen weder von Katzen noch von Hunden reden, wenn du sie nicht gern hast!« Als die Maus das hörte, wandte sie sich um und schwamm langsam zu ihr zurück; ihr Gesicht war ganz blaß (vor Aerger, dachte Alice), und sie sagte mit leiser, zitternder Stimme: »Komm mit mir an&#x27;s Ufer, da will ich dir meine Geschichte erzählen; dann wirst du begreifen, warum ich Katzen und Hunde nicht leiden kann.«</p>
 <p>Es war hohe Zeit sich fortzumachen; denn der Pfuhl begann von allerlei Vögeln und Gethier zu wimmeln, die hinein gefallen waren: da war eine Ente und ein Dodo, ein rother Papagei und ein junger Adler, und mehre andere merkwürdige Geschöpfe. Alice führte sie an, und die ganze Gesellschaft schwamm an&#x27;s Ufer.</p>
-<h2>Drittes Kapitel.</h2>
+<h2 class="chapter" id="c3">Drittes Kapitel.</h2>
 <p>Caucus-Rennen und was daraus wird.</p>
 <p>Es war in der That eine wunderliche Gesellschaft, die sich am Strande versammelte -- die Vögel mit triefenden Federn, die übrigen Thiere mit fest anliegendem Fell, Alle durch und durch naß, verstimmt und unbehaglich. --</p>
 <p>Die erste Frage war, wie sie sich trocknen könnten: es wurde eine Berathung darüber gehalten, und nach wenigen Minuten kam es Alice ganz natürlich vor, vertraulich mit ihnen zu schwatzen, als ob sie sie ihr ganzes Leben gekannt hätte. Sie hatte sogar eine lange Auseinandersetzung mit dem Papagei, der zuletzt brummig wurde und nur noch sagte: »ich bin älter als du und muß es besser wissen;« dies wollte Alice nicht zugeben und fragte nach seinem Alter, und da der Papagei es durchaus nicht sagen wollte, so blieb die Sache unentschieden.</p>
@@ -152,7 +155,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Alice antwortete eifrig, denn sie sprach gar zu gern von ihrem Liebling: »Dinah ist unsere Katze, und sie ist euch so geschickt im Mäusefangen, ihr könnt&#x27;s euch gar nicht denken! Und ach, hättet ihr sie nur Vögel jagen sehen. Ich sage euch, sie frißt einen kleinen Vogel, so wie sie ihn zu Gesicht bekommt.«</p>
 <p>Diese Mittheilung verursachte große Aufregung in der Gesellschaft. Einige der Vögel machten sich augenblicklich davon; eine alte Elster fing an, sich sorgfältig einzuwickeln, indem sie bemerkte: »Ich muß wirklich nach Hause gehen; die Nachtluft ist nicht gut für meinen Hals!« und ein Canarienvogel piepte zitternd zu seinen Kleinen, »Kommt fort, Kinder! es ist die höchste Zeit für euch, zu Bett zu gehen!« Unter verschiedenen Entschuldigungen entfernten sie sich Alle, und Alice war bald ganz allein.</p>
 <p>»Hätte ich nur Dinah nicht erwähnt!« sprach sie bei sich mit betrübtem Tone. »Niemand scheint sie gern zu haben, hier unten, und dabei ist sie doch die beste Katze von der Welt! Oh, meine liebe Dinah! ob ich dich wohl je wieder sehen werde!« dabei fing die arme Alice von Neuem zu weinen an, denn sie fühlte sich gar zu einsam und muthlos. Nach einem Weilchen jedoch hörte sie wieder ein Trappeln von Schritten in der Entfernung und blickte aufmerksam hin, halb in der Hoffnung, daß die Maus sich besonnen habe und zurückkomme, ihre Geschichte auszuerzählen.</p>
-<h2>Viertes Kapitel.</h2>
+<h2 class="chapter" id="c4">Viertes Kapitel.</h2>
 <p>Die Wohnung des Kaninchens.</p>
 <p>Es war das weiße Kaninchen, das langsam zurückgewandert kam, indem es sorgfältig beim Gehen umhersah, als ob es etwas verloren hätte, und sie hörte wie es für sich murmelte: »die Herzogin! die Herzogin! Oh, meine weichen Pfoten! o mein Fell und Knebelbart! Sie wird mich hängen lassen, so gewiß Frettchen Frettchen sind! Wo ich sie kann haben fallen lassen, begreife ich nicht!« Alice errieth augenblicklich, daß es den Fächer und die weißen Glaceehandschuhe meinte, und gutmüthig genug fing sie an, danach umher zu suchen, aber sie waren nirgends zu sehen -- Alles schien seit ihrem Bade in dem Pfuhl verwandelt zu sein, und der große Corridor mit dem Glastische und der kleinen Thür war gänzlich verschwunden.</p>
 <p>Das Kaninchen erblickte Alice bald, und wie sie überall suchte, rief es ihr ärgerlich zu: »Was, Marianne, was hast du hier zu schaffen? Renne augenblicklich nach Hause, und hole mir ein Paar Handschuhe und einen Fächer! Schnell, vorwärts!« Alice war so erschrocken, daß sie schnell in der angedeuteten Richtung fortlief, ohne ihm zu erklären, daß es sich versehen habe.</p>
@@ -196,7 +199,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Dies schien Alice eine gute Gelegenheit zu sein, fortzukommen; sie machte sich also gleich davon, und rannte bis sie ganz müde war und keine Luft mehr hatte, und bis das Bellen nur noch ganz schwach in der Ferne zu hören war.</p>
 <p>»Und doch war es ein lieber kleiner Hund!« sagte Alice, indem sie sich an eine Butterblume lehnte um auszuruhen, und sich mit einem der Blätter fächelte. »Ich hätte ihn gern Kunststücke gelehrt, wenn -- wenn ich nur groß genug dazu gewesen wäre! O ja! das hätte ich beinah vergessen, ich muß ja machen, daß ich wieder wachse! Laß sehen -- wie fängt man es doch an? Ich dächte, ich sollte irgend etwas essen oder trinken; aber die Frage ist, was?«</p>
 <p>Das war in der That die Frage. Alice blickte um sich nach allen Blumen und Grashalmen; aber gar nichts sah aus, als ob es das Rechte sei, das sie unter den Umständen essen oder trinken müsse. In der Nähe wuchs ein großer Pilz, ungefähr so hoch wie sie; nachdem sie ihn sich von unten, von beiden Seiten, rückwärts und vorwärts betrachtet hatte, kam es ihr in den Sinn zu sehen, was oben darauf sei. Sie stellte sich also auf die Fußspitzen und guckte über den Rand des Pilzes, und sogleich begegnete ihr Blick dem einer großen blauen Raupe, die mit kreuzweise gelegten Armen da saß und ruhig aus einer großen Huhka rauchte, ohne die geringste Notiz von ihr noch sonst irgend Etwas zu nehmen.</p>
-<h2>Fünftes Kapitel.</h2>
+<h2 class="chapter" id="c5">Fünftes Kapitel.</h2>
 <p>Guter Rath von einer Raupe.</p>
 <p>Die Raupe und Alice sahen sich eine Zeit lang schweigend an; endlich nahm die Raupe die Huhka aus dem Munde und redete sie mit schmachtender, langsamer Stimme an. »Wer bist du?« fragte die Raupe.</p>
 <p>Das war kein sehr ermuthigender Anfang einer Unterhaltung. Alice antwortete, etwas befangen: »Ich -- ich weiß nicht recht, diesen Augenblick -- vielmehr ich weiß, wer ich heut früh war, als ich aufstand; aber ich glaube, ich muß seitdem ein paar Mal verwechselt worden sein.«</p>
@@ -273,7 +276,7 @@ h2 + p, .first { text-indent: 0; }
 <p>»Aber mich kümmert es sehr,« sagte Alice schnell; »übrigens suche ich zufällig nicht Eier, und wenn ich es thäte, so würde ich deine nicht brauchen können; ich esse sie nicht gern roh.«</p>
 <p>»Dann mach&#x27;, daß du fortkommst!« sagte die Taube verdrießlich, indem sie sich in ihrem Nest wieder zurecht setzte. Alice duckte sich unter die Bäume so gut sie konnte; denn ihr Hals verwickelte sich fortwährend in die Zweige, und mehre Male mußte sie anhalten und ihn losmachen. Nach einer Weile fiel es ihr wieder ein, daß sie noch die Stückchen Pilz in den Händen hatte, und sie machte sich sorgfältig daran, knabberte bald an dem einen, bald an dem andern, und wurde abwechselnd größer und kleiner, bis es ihr zuletzt gelang, ihre gewöhnliche Größe zu bekommen.</p>
 <p>Es war so lange her, daß sie auch nur ungefähr ihre richtige Höhe gehabt hatte, daß es ihr erst ganz komisch vorkam; aber nach einigen Minuten hatte sie sich daran gewöhnt und sprach mit sich selbst wie gewöhnlich. »Schön, nun ist mein Plan halb ausgeführt! Wie verwirrt man von dem vielen Wechseln wird! Ich weiß nie, wie ich den nächsten Augenblick sein werde! Doch jetzt habe ich meine richtige Größe: nun kommt es darauf an, in den schönen Garten zu gelangen -- wie kann ich das anstellen? das möchte ich wissen!« Wie sie dies sagte, kam sie in eine Lichtung mit einem Häuschen in der Mitte, ungefähr vier Fuß hoch. »Wer auch darin wohnen mag, es geht nicht an, daß ich so groß wie ich jetzt bin hineingehe: sie würden vor Angst nicht wissen wohin!« Also knabberte sie wieder an dem Stückchen in der rechten Hand, und wagte sich nicht an das Häuschen heran, bis sie sich auf neun Zoll herunter gebracht hatte.</p>
-<h2>Sechstes Kapitel.</h2>
+<h2 class="chapter" id="c6">Sechstes Kapitel.</h2>
 <p>Ferkel und Pfeffer.</p>
 <p>Noch ein bis zwei Augenblicke stand sie und sah das Häuschen an, ohne recht zu wissen was sie nun thun solle, als plötzlich ein Lackei in Livree vom Walde her gelaufen kam -- (sie hielt ihn für einen Lackeien, weil er Livree trug, sonst, nach seinem Gesichte zu urtheilen, würde sie ihn für einen Fisch angesehen haben) -- und mit den Knöcheln laut an die Thür klopfte. Sie wurde von einem andern Lackeien in Livree geöffnet, der ein rundes Gesicht und große Augen wie ein Frosch hatte, und beide Lackeien hatten, wie Alice bemerkte, gepuderte Lockenperücken über den ganzen Kopf. Sie war sehr neugierig, was nun geschehen würde, und schlich sich etwas näher, um zuzuhören.</p>
 <p>Der Fisch-Lackei fing damit an, einen ungeheuren Brief, beinah so groß wie er selbst, unter dem Arme hervorzuziehen; diesen überreichte er dem anderen, in feierlichem Tone sprechend: »Für die Herzogin. Eine Einladung von der Königin, Croquet zu spielen.« Der Frosch-Lackei erwiederte in demselben feierlichen Tone, indem er nur die Aufeinanderfolge der Wörter etwas veränderte: »Von der Königin. Eine Einladung für die Herzogin, Croquet zu spielen.«</p>
@@ -354,7 +357,7 @@ h2 + p, .first { text-indent: 0; }
 <p>»Schon gut,« sagte die Katze, und diesmal verschwand sie ganz langsam, wobei sie mit der Schwanzspitze anfing und mit dem Grinsen aufhörte, das noch einige Zeit sichtbar blieb, nachdem das Uebrige verschwunden war.</p>
 <p>»Oho, ich habe oft eine Katze ohne Grinsen gesehen,« dachte Alice, »aber ein Grinsen ohne Katze! so etwas Merkwürdiges habe ich in meinem Leben noch nicht gesehen!«</p>
 <p>Sie brauchte nicht weit zu gehen, so erblickte sie das Haus des Faselhasen; sie dachte, es müsse das rechte Haus sein, weil die Schornsteine wie Ohren geformt waren, und das Dach war mit Pelz gedeckt. Es war ein so großes Haus, daß, ehe sie sich näher heran wagte, sie ein wenig von dem Stück Pilz in ihrer linken Hand abknabberte, und sich bis auf zwei Fuß hoch brachte: trotzdem näherte sie sich etwas furchtsam, für sich sprechend: »Wenn er nur nicht ganz rasend ist! Wäre ich doch lieber zu dem Hutmacher gegangen!«</p>
-<h2>Siebentes Kapitel.</h2>
+<h2 class="chapter" id="c7">Siebentes Kapitel.</h2>
 <p>Die tolle Theegesellschaft.</p>
 <p>Vor dem Hause stand ein gedeckter Theetisch, an welchem der Faselhase und der Hutmacher saßen; ein Murmelthier saß zwischen ihnen, fest eingeschlafen, und die beiden Andern benutzten es als Kissen, um ihre Ellbogen darauf zu stützen, und redeten über seinem Kopfe mit einander. »Sehr unbequem für das Murmelthier,« dachte Alice; »nun, da es schläft, wird es sich wohl nichts daraus machen.«</p>
 <p>Der Tisch war groß, aber die Drei saßen dicht zusammengedrängt an einer Ecke: »Kein Platz! Kein Platz!« riefen sie aus, sobald sie Alice kommen sahen. »Ueber und über genug Platz!« sagte Alice unwillig und setzte sich in einen großen Armstuhl am Ende des Tisches.</p>
@@ -458,7 +461,7 @@ h2 + p, .first { text-indent: 0; }
 <p>»Auf keinen Fall will ich da je wieder hingehen!« sagte Alice, während sie sich einen Weg durch den Wald suchte. »Es ist die dümmste Theegesellschaft, in der ich in meinem ganzen Leben war!«</p>
 <p>Gerade wie sie so sprach, bemerkte sie, daß einer der Bäume eine kleine Thür hatte. »Das ist höchst komisch!« dachte sie. »Aber Alles ist heute komisch! Ich will lieber gleich hinein gehen.«</p>
 <p>Wie gesagt, so gethan: und sie befand sich wieder in dem langen Corridor, und dicht bei dem kleinen Glastische. »Diesmal will ich es gescheidter anfangen,« sagte sie zu sich selbst, nahm das goldne Schlüsselchen und schloß die Thür auf, die in den Garten führte. Sie machte sich daran, an dem Pilz zu knabbern (sie hatte ein Stückchen in ihrer Tasche behalten), bis sie ungefähr einen Fuß hoch war, dann ging sie den kleinen Gang hinunter; und dann -- war sie endlich in dem schönen Garten, unter den prunkenden Blumenbeeten und kühlen Springbrunnen.</p>
-<h2>Achtes Kapitel.</h2>
+<h2 class="chapter" id="c8">Achtes Kapitel.</h2>
 <p>Das Croquetfeld der Königin.</p>
 <p>Ein großer hochstämmiger Rosenstrauch stand nahe bei&#x27;m Eingang; die Rosen, die darauf wuchsen, waren weiß, aber drei Gärtner waren damit beschäftigt, sie roth zu malen. Alice kam dies wunderbar vor, und da sie näher hinzutrat, um ihnen zuzusehen, hörte sie einen von ihnen sagen: »Nimm dich in Acht, Fünf! Bespritze mich nicht so mit Farbe!«</p>
 <p>»Ich konnte nicht dafür,« sagte Fünf in verdrießlichem Tone; »Sieben hat mich an den Ellbogen gestoßen.«</p>
@@ -531,7 +534,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Alice wußte nichts Besseres zu sagen als: &quot;Er gehört der Herzogin, es wäre am besten sie zu fragen.&quot;</p>
 <p>&quot;Sie ist im Gefängnis,&quot; sagte die Königin zum Henker, &quot;hole sie her.&quot; Und der Henker lief davon wie ein Pfeil.</p>
 <p>Da wurde der Kopf des Katers undeutlicher und undeutlicher; und gerade in dem Augenblicke, als der Henker mit der Herzogin zurück kam, verschwand er gänzlich; der König und der Henker liefen ganz wild umher, ihn zu suchen, während die übrige Gesellschaft zum Spiele zurückging.</p>
-<h2>Neuntes Kapitel.</h2>
+<h2 class="chapter" id="c9">Neuntes Kapitel.</h2>
 <p>Die Geschichte der falschen Schildkröte.</p>
 <p>»Du kannst dir gar nicht denken, wie froh ich bin, dich wieder zu sehen, du liebes altes Herz!« sagte die Herzogin, indem sie Alice liebevoll unterfaßte, und beide zusammen fortspazierten.</p>
 <p>Alice war sehr froh, sie bei so guter Laune zu finden, und dachte bei sich, es wäre vielleicht nur der Pfeffer, der sie so böse gemacht habe, als sie sich zuerst in der Küche trafen. »Wenn ich Herzogin bin,« sagte sie für sich (doch nicht in sehr hoffnungsvollem Tone), »will ich gar keinen Pfeffer in meiner Küche dulden. Suppe schmeckt sehr gut ohne -- Am Ende ist es immer Pfeffer, der die Leute heftig macht,« sprach sie weiter, sehr glücklich, eine neue Art Regel erfunden zu haben, »und Essig, der sie sauertöpfisch macht -- und Kamillenthee, der sie bitter macht -- und Gerstenzucker und dergleichen, was Kinder zuckersüß macht. Ich wünschte nur, die großen Leute wüßten das, dann würden sie nicht so sparsam damit sein --«</p>
@@ -624,7 +627,7 @@ h2 + p, .first { text-indent: 0; }
 <p>»Natürlich!« sagte die falsche Schildkröte.</p>
 <p>»Und wie wurde es den zwölften Tag gemacht?« fuhr Alice eifrig fort.</p>
 <p>»Das ist genug von Stunden,« unterbrach der Greif sehr bestimmt: »erzähle ihr jetzt etwas von den Spielen.«</p>
-<h2>Zehntes Kapitel.</h2>
+<h2 class="chapter" id="c10">Zehntes Kapitel.</h2>
 <p>Das Hummerballet.</p>
 <p>Die falsche Schildkröte seufzte tief auf und wischte sich mit dem Rücken ihrer Pfote die Augen. Sie sah Alice an und versuchte zu sprechen, aber ein bis zwei Minuten lang erstickte lautes Schluchzen ihre Stimme. »Sieht aus, als ob sie einen Knochen in der Kehle hätt&#x27;,« sagte der Greif und machte sich daran, sie zu schütteln und auf den Rücken zu klopfen. Endlich erhielt die falsche Schildkröte den Gebrauch ihrer Stimme wieder, und während Thränen ihre Wangen herabflossen, erzählte sie weiter.</p>
 <p>»Vielleicht hast du nicht viel unter dem Wasser gelebt --« (»Nein,« sagte Alice) -- »und vielleicht hast du nie die Bekanntschaft eines Hummers gemacht --« (Alice wollte eben sagen: »ich kostete einmal,« aber sie hielt schnell ein und sagte: »Nein, niemals«) -- »du kannst dir also nicht vorstellen, wie reizend ein Hummerballet ist.«</p>
@@ -693,7 +696,7 @@ h2 + p, .first { text-indent: 0; }
 <p>»Komm schnell!« rief der Greif, und Alice bei der Hand nehmend lief er fort, ohne auf das Ende des Gesanges zu warten.</p>
 <p>»Was für ein Verhör?« keuchte Alice bei&#x27;m Rennen; aber der Greif antwortete nichts als: »Komm schnell!« und rannte weiter, während schwächer und schwächer, vom Winde getragen, die Worte ihnen folgten: --</p>
 <p>»Kö -- önigin der Su -- uppen, Wunder-wunderschöne Supp&#x27;!«</p>
-<h2>Elftes Kapitel.</h2>
+<h2 class="chapter" id="c11">Elftes Kapitel.</h2>
 <p>Wer hat die Kuchen gestohlen?</p>
 <p>Der König und die Königin der Herzen saßen auf ihrem Throne, als sie ankamen, und eine große Menge war um sie versammelt -- allerlei kleine Vögel und Thiere, außerdem das ganze Pack Karten: der Bube stand vor ihnen, in Ketten, einen Soldaten an jeder Seite, um ihn zu bewachen; dicht bei dem Könige befand sich das weiße Kaninchen, eine Trompete in einer Hand, in der andern eine Pergamentrolle. Im Mittelpunkte des Gerichtshofes stand ein Tisch mit einer Schüssel voll Torten: sie sahen so appetitlich aus, daß der bloße Anblick Alice ganz hungrig darauf machte. -- »Ich wünschte, sie machten schnell mit dem Verhör und reichten die Erfrischungen herum.« Aber dazu schien wenig Aussicht zu sein, so daß sie anfing, Alles genau in Augenschein zu nehmen, um sich die Zeit zu vertreiben.</p>
 <p>Alice war noch nie in einem Gerichtshofe gewesen, aber sie hatte in ihren Büchern davon gelesen und bildete sich etwas Rechtes darauf ein, daß sie Alles, was sie dort sah, bei Namen zu nennen wußte. »Das ist der Richter,« sagte sie für sich, »wegen seiner großen Perrücke.«</p>
@@ -768,7 +771,7 @@ h2 + p, .first { text-indent: 0; }
 <p>Einige Minuten lang war das ganze Gericht in Bewegung, um das Murmelthier fortzuschaffen; und als endlich Alles wieder zur Ruhe gekommen war, war die Köchin verschwunden.</p>
 <p>»Schadet nichts!« sagte der König und sah aus, als falle ihm ein Stein vom Herzen. »Ruft den nächsten Zeugen.« Und zu der Königin gewandt, fügte er leise hinzu: »Wirklich, meine Liebe, du mußt das nächste Kreuzverhör übernehmen, meine Arme sind schon ganz lahm.«</p>
 <p>Alice beobachtete das weiße Kaninchen, das die Liste durchsuchte, da sie sehr neugierig war, wer wohl der nächste Zeuge sein möchte, -- »denn sie haben noch nicht viel Beweise,« sagte sie für sich. Denkt euch ihre Ueberraschung, als das weiße Kaninchen mit seiner höchsten Kopfstimme vorlas: »Alice!«</p>
-<h2>Zwölftes Kapitel.</h2>
+<h2 class="chapter" id="c12">Zwölftes Kapitel.</h2>
 <p>Alice ist die Klügste.</p>
 <p>»Hier!« rief Alice, in der augenblicklichen Erregung ganz vergessend, wie sehr sie die letzten Minuten gewachsen war; sie sprang in solcher Eile auf, daß sie mit ihrem Rock das Pult vor sich umstieß, so daß alle Geschworne auf die Köpfe der darunter sitzenden Versammlung fielen. Da lagen sie unbehülflich umher und erinnerten sie sehr an ein Glas mit Goldfischen, das sie die Woche vorher aus Versehen umgestoßen hatte.</p>
 <p>»Oh, ich bitte um Verzeihung,« rief sie mit sehr bestürztem Tone, und fing an, sie so schnell wie möglich aufzunehmen; denn der Unfall mit den Goldfischen lag ihr noch im Sinne, und sie hatte eine unbestimmte Art Vorstellung, als ob sie gleich gesammelt und wieder in ihr Pult gethan werden müßten, sonst würden sie sterben.</p>
@@ -842,5 +845,5 @@ h2 + p, .first { text-indent: 0; }
 <p>So saß sie da, mit geschlossenen Augen, und glaubte fast, sie sei im Wunderlande, obgleich sie ja wußte, daß sobald sie die Augen öffnete, Alles wieder zur alltäglichen Wirklichkeit werden würde; das Gras würde dann nur im Winde rauschen, der Teich mit seinem Rieseln das Wogen des Rohres begleiten; das Klappern der Theetassen würde sich in klingende Heerdenglocken verwandeln und die gellende Stimme der Königin in die Rufe des Hirtenknaben -- und das Niesen des Kindes, das Geschrei des Greifen und all die andern außerordentlichen Töne würden sich (das wußte sie) in das verworrene Getöse des geschäftigen Gutshofes verwandeln -- während sie statt des schwermüthigen Schluchzens der falschen Schildkröte in der Ferne das wohlbekannte Brüllen des Rindviehes hören würde.</p>
 <p>Endlich malte sie sich aus, wie ihre kleine Schwester Alice in späterer Zeit selbst erwachsen sein werde; und wie sie durch alle reiferen Jahre hindurch das einfache liebevolle Herz ihrer Kindheit bewahren, und wie sie andere kleine Kinder um sich versammeln und deren Blicke neugierig und gespannt machen werde mit manch einer wunderbaren Erzählung, vielleicht sogar mit dem Traume vom Wunderlande aus alten Zeiten; und wie sie alle ihre kleinen Sorgen nachfühlen, sich über alle ihre kleinen Freuden mitfreuen werde in der Erinnerung an ihr eigenes Kindesleben und die glücklichen Sommertage.</p>
 <p>End of Project Gutenberg&#x27;s Alice&#x27;s Abenteuer im Wunderland, by Lewis Carroll</p>
-<p class="colophon">Texte du domaine public, source : Project Gutenberg (#19778). Traduction : Antonie Zimmermann (1869). Édition numérique EbookClassics.</p>
+<p class="colophon">Gemeinfreier Text. Digitale Ausgabe EbookClassics.</p>
 </body></html>
