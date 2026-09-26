@@ -1,2 +1,5 @@
-Lot 3 (traductions) — 2026-09-26 14:34
-Traductions produites : 0 | cas limites (à décider) : 1 | absentes de Gutenberg : 158 | erreurs : 0
+Lot 3 (traductions) — 2026-09-26 14:50
++ crime-and-punishment [es] OK — Gutenberg #61851, 176236 mots, 51 chapitres — epub:465Ko pdf:2113Ko txt:1054Ko html:1079Ko
+! the-communist-manifesto [de] ERREUR : texte introuvable pour Gutenberg #21147
++ the-betrothed [it] OK — Gutenberg #45334, 229651 mots, 87 chapitres — epub:624Ko pdf:2497Ko txt:1382Ko html:1453Ko
+Traductions produites : 2 | cas limites (à décider) : 0 | absentes de Gutenberg : 156 | erreurs : 0
