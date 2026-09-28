@@ -201,6 +201,13 @@
    "duration": 41238,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/father-goriot/father-goriot.mp3"
+  },
+  "fr": {
+   "bytes": 280865509,
+   "dl": true,
+   "duration": 35092,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/father-goriot/father-goriot-fr.mp3"
   }
  },
  "faust": {
