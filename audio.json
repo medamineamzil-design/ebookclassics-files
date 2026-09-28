@@ -90,6 +90,13 @@
    "duration": 25335,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/around-the-world-in-eighty-days/around-the-world-in-eighty-days.mp3"
+  },
+  "fr": {
+   "bytes": 233104719,
+   "dl": true,
+   "duration": 29121,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/around-the-world-in-eighty-days/around-the-world-in-eighty-days-fr.mp3"
   }
  },
  "candide": {
