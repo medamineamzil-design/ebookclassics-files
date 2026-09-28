@@ -185,6 +185,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/dubliners/dubliners.mp3"
   }
  },
+ "emma": {
+  "en": {
+   "bytes": 519837572,
+   "dl": true,
+   "duration": 64950,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/emma/emma.mp3"
+  }
+ },
  "faust": {
   "de": {
    "bytes": 139994445,
