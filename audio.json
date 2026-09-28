@@ -434,6 +434,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/othello/othello.mp3"
   }
  },
+ "paradise-lost": {
+  "en": {
+   "bytes": 279091482,
+   "dl": true,
+   "duration": 34876,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/paradise-lost/paradise-lost.mp3"
+  }
+ },
  "peter-pan": {
   "en": {
    "bytes": 154635356,
