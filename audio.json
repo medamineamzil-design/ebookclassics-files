@@ -276,6 +276,13 @@
    "duration": 13300,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/hamlet/hamlet.mp3"
+  },
+  "es": {
+   "bytes": 134883085,
+   "dl": true,
+   "duration": 16862,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/hamlet/hamlet-es.mp3"
   }
  },
  "heart": {
