@@ -425,6 +425,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/on-liberty/on-liberty.mp3"
   }
  },
+ "othello": {
+  "en": {
+   "bytes": 89802383,
+   "dl": true,
+   "duration": 11223,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/othello/othello.mp3"
+  }
+ },
  "peter-pan": {
   "en": {
    "bytes": 154635356,
