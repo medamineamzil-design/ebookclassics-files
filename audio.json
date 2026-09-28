@@ -8,6 +8,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/a-midsummer-night-s-dream/a-midsummer-night-s-dream.mp3"
   }
  },
+ "a-tale-of-two-cities": {
+  "en": {
+   "bytes": 434648859,
+   "dl": true,
+   "duration": 54329,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/a-tale-of-two-cities/a-tale-of-two-cities.mp3"
+  }
+ },
  "alice-s-adventures-in-wonderland": {
   "de": {
    "bytes": 82107160,
