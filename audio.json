@@ -83,6 +83,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/anne-of-green-gables/anne-of-green-gables.mp3"
   }
  },
+ "around-the-world-in-eighty-days": {
+  "en": {
+   "bytes": 202696289,
+   "dl": true,
+   "duration": 25335,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/around-the-world-in-eighty-days/around-the-world-in-eighty-days.mp3"
+  }
+ },
  "candide": {
   "en": {
    "bytes": 114666102,
