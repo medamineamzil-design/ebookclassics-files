@@ -149,6 +149,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/common-sense/common-sense.mp3"
   }
  },
+ "david-copperfield": {
+  "en": {
+   "bytes": 1028014100,
+   "dl": true,
+   "duration": 128470,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/david-copperfield/david-copperfield.mp3"
+  }
+ },
  "don-quixote": {
   "en": {
    "bytes": 1124738739,
