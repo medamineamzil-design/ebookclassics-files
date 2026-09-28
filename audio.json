@@ -176,6 +176,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/dracula/dracula.mp3"
   }
  },
+ "dubliners": {
+  "en": {
+   "bytes": 200367405,
+   "dl": true,
+   "duration": 25041,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/dubliners/dubliners.mp3"
+  }
+ },
  "faust": {
   "de": {
    "bytes": 139994445,
