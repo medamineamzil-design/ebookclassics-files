@@ -194,6 +194,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/emma/emma.mp3"
   }
  },
+ "father-goriot": {
+  "en": {
+   "bytes": 329907177,
+   "dl": true,
+   "duration": 41238,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/father-goriot/father-goriot.mp3"
+  }
+ },
  "faust": {
   "de": {
    "bytes": 139994445,
