@@ -2,18 +2,21 @@
  "alice-s-adventures-in-wonderland": {
   "de": {
    "bytes": 82107160,
+   "dl": true,
    "duration": 10258,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/alice-s-adventures-in-wonderland/alice-s-adventures-in-wonderland-de.mp3"
   },
   "en": {
    "bytes": 85861540,
+   "dl": true,
    "duration": 10731,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/alice-s-adventures-in-wonderland/alice-s-adventures-in-wonderland.mp3"
   },
   "fr": {
    "bytes": 97008466,
+   "dl": true,
    "duration": 12126,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/alice-s-adventures-in-wonderland/alice-s-adventures-in-wonderland-fr.mp3"
@@ -22,6 +25,7 @@
  "an-essay-on-the-principle-of-population": {
   "en": {
    "bytes": 159493562,
+   "dl": true,
    "duration": 19931,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/an-essay-on-the-principle-of-population/an-essay-on-the-principle-of-population.mp3"
@@ -30,12 +34,14 @@
  "anna-karenina": {
   "de": {
    "bytes": 1370173370,
+   "dl": true,
    "duration": 171266,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/anna-karenina/anna-karenina-de.mp3"
   },
   "en": {
    "bytes": 1063146649,
+   "dl": true,
    "duration": 132759,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/anna-karenina/anna-karenina.mp3"
@@ -44,6 +50,7 @@
  "anne-of-green-gables": {
   "en": {
    "bytes": 320195883,
+   "dl": true,
    "duration": 40005,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/anne-of-green-gables/anne-of-green-gables.mp3"
@@ -52,18 +59,21 @@
  "candide": {
   "en": {
    "bytes": 114666102,
+   "dl": true,
    "duration": 14317,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/candide/candide.mp3"
   },
   "es": {
    "bytes": 143510540,
+   "dl": true,
    "duration": 17939,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/candide/candide-es.mp3"
   },
   "fr": {
    "bytes": 111942679,
+   "dl": true,
    "duration": 13977,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/candide/candide-fr.mp3"
@@ -72,6 +82,7 @@
  "civil-disobedience": {
   "en": {
    "bytes": 30103839,
+   "dl": true,
    "duration": 3761,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/civil-disobedience/civil-disobedience.mp3"
@@ -80,6 +91,7 @@
  "common-sense": {
   "en": {
    "bytes": 69853404,
+   "dl": true,
    "duration": 8729,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/common-sense/common-sense.mp3"
@@ -88,6 +100,7 @@
  "don-quixote": {
   "en": {
    "bytes": 1124738739,
+   "dl": true,
    "duration": 140575,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/don-quixote/don-quixote.mp3"
@@ -96,6 +109,7 @@
  "dracula": {
   "en": {
    "bytes": 475861170,
+   "dl": true,
    "duration": 59469,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/dracula/dracula.mp3"
@@ -104,18 +118,21 @@
  "faust": {
   "de": {
    "bytes": 139994445,
+   "dl": true,
    "duration": 17496,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/faust/faust-de.mp3"
   },
   "en": {
    "bytes": 124333335,
+   "dl": true,
    "duration": 15538,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/faust/faust.mp3"
   },
   "es": {
    "bytes": 128654200,
+   "dl": true,
    "duration": 16081,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/faust/faust-es.mp3"
@@ -124,6 +141,7 @@
  "frankenstein": {
   "en": {
    "bytes": 238547350,
+   "dl": true,
    "duration": 29808,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/frankenstein/frankenstein.mp3"
@@ -132,6 +150,7 @@
  "great-expectations": {
   "en": {
    "bytes": 590069161,
+   "dl": true,
    "duration": 73563,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/great-expectations/great-expectations.mp3"
@@ -140,6 +159,7 @@
  "hamlet": {
   "en": {
    "bytes": 106408947,
+   "dl": true,
    "duration": 13300,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/hamlet/hamlet.mp3"
@@ -148,6 +168,7 @@
  "heart": {
   "en": {
    "bytes": 296831952,
+   "dl": true,
    "duration": 37103,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/heart/heart.mp3"
@@ -156,6 +177,7 @@
  "heart-of-darkness": {
   "en": {
    "bytes": 120115515,
+   "dl": true,
    "duration": 15012,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/heart-of-darkness/heart-of-darkness.mp3"
@@ -164,6 +186,7 @@
  "jane-eyre": {
   "en": {
    "bytes": 593768532,
+   "dl": true,
    "duration": 74196,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/jane-eyre/jane-eyre.mp3"
@@ -172,6 +195,7 @@
  "little-women": {
   "en": {
    "bytes": 565862230,
+   "dl": true,
    "duration": 70707,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/little-women/little-women.mp3"
@@ -180,18 +204,21 @@
  "madame-bovary": {
   "de": {
    "bytes": 409393164,
+   "dl": true,
    "duration": 51172,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/madame-bovary/madame-bovary-de.mp3"
   },
   "en": {
    "bytes": 374113651,
+   "dl": true,
    "duration": 46747,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/madame-bovary/madame-bovary.mp3"
   },
   "fr": {
    "bytes": 380019831,
+   "dl": true,
    "duration": 47490,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/madame-bovary/madame-bovary-fr.mp3"
@@ -200,6 +227,7 @@
  "meditations": {
   "en": {
    "bytes": 201175959,
+   "dl": true,
    "duration": 25160,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/meditations/meditations.mp3"
@@ -208,6 +236,7 @@
  "metamorphoses": {
   "en": {
    "bytes": 427368098,
+   "dl": true,
    "duration": 53408,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/metamorphoses/metamorphoses.mp3"
@@ -216,6 +245,7 @@
  "moby-dick": {
   "en": {
    "bytes": 679222653,
+   "dl": true,
    "duration": 84888,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/moby-dick/moby-dick.mp3"
@@ -224,6 +254,7 @@
  "nicomachean-ethics": {
   "en": {
    "bytes": 288266965,
+   "dl": true,
    "duration": 36028,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/nicomachean-ethics/nicomachean-ethics.mp3"
@@ -232,6 +263,7 @@
  "on-liberty": {
   "en": {
    "bytes": 154530681,
+   "dl": true,
    "duration": 19314,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/on-liberty/on-liberty.mp3"
@@ -240,6 +272,7 @@
  "peter-pan": {
   "en": {
    "bytes": 154635356,
+   "dl": true,
    "duration": 19329,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/peter-pan/peter-pan.mp3"
@@ -248,6 +281,7 @@
  "pride-and-prejudice": {
   "en": {
    "bytes": 416316845,
+   "dl": true,
    "duration": 52012,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/pride-and-prejudice/pride-and-prejudice.mp3"
@@ -256,6 +290,7 @@
  "romeo-and-juliet": {
   "en": {
    "bytes": 87392659,
+   "dl": true,
    "duration": 10922,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/romeo-and-juliet/romeo-and-juliet.mp3"
@@ -264,6 +299,7 @@
  "the-adventures-of-huckleberry-finn": {
   "de": {
    "bytes": 343252247,
+   "dl": true,
    "duration": 42905,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-adventures-of-huckleberry-finn/the-adventures-of-huckleberry-finn-de.mp3"
@@ -272,6 +308,7 @@
  "the-betrothed": {
   "en": {
    "bytes": 840701906,
+   "dl": true,
    "duration": 105052,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-betrothed/the-betrothed.mp3"
@@ -280,6 +317,7 @@
  "the-call-of-the-wild": {
   "en": {
    "bytes": 102775852,
+   "dl": true,
    "duration": 12846,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-call-of-the-wild/the-call-of-the-wild.mp3"
@@ -288,12 +326,14 @@
  "the-divine-comedy": {
   "de": {
    "bytes": 212941296,
+   "dl": true,
    "duration": 26600,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-divine-comedy/the-divine-comedy-de.mp3"
   },
   "es": {
    "bytes": 358074797,
+   "dl": true,
    "duration": 44747,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-divine-comedy/the-divine-comedy-es.mp3"
@@ -302,6 +342,7 @@
  "the-hound-of-the-baskervilles": {
   "en": {
    "bytes": 194200050,
+   "dl": true,
    "duration": 24267,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-hound-of-the-baskervilles/the-hound-of-the-baskervilles.mp3"
@@ -310,6 +351,7 @@
  "the-house-by-the-medlar-tree": {
   "en": {
    "bytes": 268049244,
+   "dl": true,
    "duration": 33504,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-house-by-the-medlar-tree/the-house-by-the-medlar-tree.mp3"
@@ -318,6 +360,7 @@
  "the-iliad": {
   "es": {
    "bytes": 556191089,
+   "dl": true,
    "duration": 69522,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-iliad/the-iliad-es.mp3"
@@ -326,6 +369,7 @@
  "the-invisible-man": {
   "en": {
    "bytes": 131844685,
+   "dl": true,
    "duration": 16473,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-invisible-man/the-invisible-man.mp3"
@@ -334,6 +378,7 @@
  "the-jungle-book": {
   "en": {
    "bytes": 215079176,
+   "dl": true,
    "duration": 26884,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-jungle-book/the-jungle-book.mp3"
@@ -342,6 +387,7 @@
  "the-wind-in-the-willows": {
   "en": {
    "bytes": 187168502,
+   "dl": true,
    "duration": 23398,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-wind-in-the-willows/the-wind-in-the-willows.mp3"
@@ -350,12 +396,14 @@
  "twenty-thousand-leagues-under-the-sea": {
   "en": {
    "bytes": 475490718,
+   "dl": true,
    "duration": 59409,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/twenty-thousand-leagues-under-the-sea/twenty-thousand-leagues-under-the-sea.mp3"
   },
   "fr": {
    "bytes": 448250248,
+   "dl": true,
    "duration": 56011,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/twenty-thousand-leagues-under-the-sea/twenty-thousand-leagues-under-the-sea-fr.mp3"
