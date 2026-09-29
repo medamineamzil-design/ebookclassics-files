@@ -678,6 +678,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-metamorphosis/the-metamorphosis-de.mp3"
   }
  },
+ "the-odyssey": {
+  "es": {
+   "bytes": 403746952,
+   "dl": true,
+   "duration": 50440,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-odyssey/the-odyssey-es.mp3"
+  }
+ },
  "the-wind-in-the-willows": {
   "en": {
    "bytes": 187168502,
