@@ -441,6 +441,13 @@
    "duration": 34876,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/paradise-lost/paradise-lost.mp3"
+  },
+  "fr": {
+   "bytes": 421282251,
+   "dl": true,
+   "duration": 52659,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/paradise-lost/paradise-lost-fr.mp3"
   }
  },
  "peter-pan": {
