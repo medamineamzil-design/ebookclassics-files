@@ -522,6 +522,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-adventures-of-pinocchio/the-adventures-of-pinocchio.mp3"
   }
  },
+ "the-adventures-of-sherlock-holmes": {
+  "en": {
+   "bytes": 323893842,
+   "dl": true,
+   "duration": 40483,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-adventures-of-sherlock-holmes/the-adventures-of-sherlock-holmes.mp3"
+  }
+ },
  "the-betrothed": {
   "en": {
    "bytes": 840701906,
