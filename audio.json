@@ -531,6 +531,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-adventures-of-sherlock-holmes/the-adventures-of-sherlock-holmes.mp3"
   }
  },
+ "the-adventures-of-tom-sawyer": {
+  "de": {
+   "bytes": 211686399,
+   "dl": true,
+   "duration": 26452,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-adventures-of-tom-sawyer/the-adventures-of-tom-sawyer-de.mp3"
+  }
+ },
  "the-betrothed": {
   "en": {
    "bytes": 840701906,
