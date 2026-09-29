@@ -653,6 +653,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-jungle-book/the-jungle-book.mp3"
   }
  },
+ "the-last-of-the-mohicans": {
+  "en": {
+   "bytes": 444351684,
+   "dl": true,
+   "duration": 55457,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-last-of-the-mohicans/the-last-of-the-mohicans.mp3"
+  }
+ },
  "the-wind-in-the-willows": {
   "en": {
    "bytes": 187168502,
