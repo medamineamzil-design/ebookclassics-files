@@ -602,6 +602,13 @@
   }
  },
  "the-iliad": {
+  "en": {
+   "bytes": 552620876,
+   "dl": true,
+   "duration": 69075,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-iliad/the-iliad.mp3"
+  },
   "es": {
    "bytes": 556191089,
    "dl": true,
