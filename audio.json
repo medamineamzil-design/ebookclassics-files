@@ -468,6 +468,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/pride-and-prejudice/pride-and-prejudice.mp3"
   }
  },
+ "robinson-crusoe": {
+  "en": {
+   "bytes": 400920301,
+   "dl": true,
+   "duration": 50112,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/robinson-crusoe/robinson-crusoe.mp3"
+  }
+ },
  "romeo-and-juliet": {
   "en": {
    "bytes": 87392659,
