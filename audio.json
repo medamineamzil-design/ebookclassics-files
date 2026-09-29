@@ -495,6 +495,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/sense-and-sensibility/sense-and-sensibility.mp3"
   }
  },
+ "tess-of-the-d-urbervilles": {
+  "en": {
+   "bytes": 471229635,
+   "dl": true,
+   "duration": 58903,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/tess-of-the-d-urbervilles/tess-of-the-d-urbervilles.mp3"
+  }
+ },
  "the-adventures-of-huckleberry-finn": {
   "de": {
    "bytes": 343252247,
