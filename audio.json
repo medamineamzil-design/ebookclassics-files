@@ -760,6 +760,13 @@
    "duration": 67652,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-red-and-the-black/the-red-and-the-black.mp3"
+  },
+  "fr": {
+   "bytes": 537114594,
+   "dl": true,
+   "duration": 67127,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-red-and-the-black/the-red-and-the-black-fr.mp3"
   }
  },
  "the-wind-in-the-willows": {
