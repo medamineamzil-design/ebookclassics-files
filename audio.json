@@ -855,6 +855,13 @@
    "duration": 89386,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-three-musketeers/the-three-musketeers.mp3"
+  },
+  "fr": {
+   "bytes": 776732652,
+   "dl": true,
+   "duration": 97055,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-three-musketeers/the-three-musketeers-fr.mp3"
   }
  },
  "the-wind-in-the-willows": {
