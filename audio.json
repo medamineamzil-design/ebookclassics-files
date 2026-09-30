@@ -900,6 +900,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-wonderful-adventures-of-nils/the-wonderful-adventures-of-nils.mp3"
   }
  },
+ "the-wonderful-wizard-of-oz": {
+  "en": {
+   "bytes": 118320579,
+   "dl": true,
+   "duration": 14779,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-wonderful-wizard-of-oz/the-wonderful-wizard-of-oz.mp3"
+  }
+ },
  "twenty-thousand-leagues-under-the-sea": {
   "en": {
    "bytes": 475490718,
