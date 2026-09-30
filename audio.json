@@ -249,6 +249,13 @@
    "duration": 72459,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/germinal/germinal.mp3"
+  },
+  "fr": {
+   "bytes": 539943115,
+   "dl": true,
+   "duration": 67489,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/germinal/germinal-fr.mp3"
   }
  },
  "great-expectations": {
