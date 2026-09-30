@@ -717,6 +717,13 @@
    "duration": 34214,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-picture-of-dorian-gray/the-picture-of-dorian-gray.mp3"
+  },
+  "fr": {
+   "bytes": 254890209,
+   "dl": true,
+   "duration": 31861,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-picture-of-dorian-gray/the-picture-of-dorian-gray-fr.mp3"
   }
  },
  "the-wind-in-the-willows": {
