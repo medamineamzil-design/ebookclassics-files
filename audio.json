@@ -726,6 +726,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-picture-of-dorian-gray/the-picture-of-dorian-gray-fr.mp3"
   }
  },
+ "the-prince-and-the-pauper": {
+  "en": {
+   "bytes": 221333498,
+   "dl": true,
+   "duration": 27665,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-prince-and-the-pauper/the-prince-and-the-pauper.mp3"
+  }
+ },
  "the-wind-in-the-willows": {
   "en": {
    "bytes": 187168502,
