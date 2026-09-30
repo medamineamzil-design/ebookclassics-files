@@ -787,6 +787,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-rubaiyat-of-omar-khayyam/the-rubaiyat-of-omar-khayyam.mp3"
   }
  },
+ "the-scarlet-letter": {
+  "en": {
+   "bytes": 264435128,
+   "dl": true,
+   "duration": 33039,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-scarlet-letter/the-scarlet-letter.mp3"
+  }
+ },
  "the-wind-in-the-willows": {
   "en": {
    "bytes": 187168502,
