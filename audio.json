@@ -933,5 +933,14 @@
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/twenty-thousand-leagues-under-the-sea/twenty-thousand-leagues-under-the-sea-fr.mp3"
   }
+ },
+ "ulysses": {
+  "en": {
+   "bytes": 914392713,
+   "dl": true,
+   "duration": 114293,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/ulysses/ulysses.mp3"
+  }
  }
 }
