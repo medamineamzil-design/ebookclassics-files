@@ -805,6 +805,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-scarlet-pimpernel/the-scarlet-pimpernel.mp3"
   }
  },
+ "the-secret-garden": {
+  "en": {
+   "bytes": 263360346,
+   "dl": true,
+   "duration": 32905,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-secret-garden/the-secret-garden.mp3"
+  }
+ },
  "the-wind-in-the-willows": {
   "en": {
    "bytes": 187168502,
