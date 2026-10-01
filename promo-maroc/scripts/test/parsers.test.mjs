@@ -92,11 +92,16 @@ test("PrestaShop sans product-title (Univers Para, Maparami)", () => {
   assert.deepEqual([b[0].product, b[0].brand, b[0].originalPrice, b[0].promoPrice], ["Acretin C Gel Anti-Acné 30g original", "Acretin C", 340, 198]);
 });
 
-test("Decathlon product-card", () => {
-  const html = `<div class="product-card u-flex"><a href="/p/123-short.html" class="product-card_link"><img src="https://d.ma/s.jpg"></a>
-    <p class="product-card_brand">KALENJI</p><h2 class="product-card_title u-typo">Short running homme</h2>
-    <div class="price -sale"><span class="price_amount" data-testid="current-price" data-value="179"><span class="u-sr-only"> Current price 179 MAD </span></span>
-    <span class="price_amount" data-testid="previous-price" data-value="249"></span></div></div>`;
+test("Decathlon product-card (HTML réel)", () => {
+  const html = `<li class="js-product-card"> <article class="product-card" data-sku="87be"> <div class="product-card_media"> <div class="product-card_image">
+    <a href=https://www.decathlon.ma/p/313049-116672-chaussures-nh100-noir.html class="js-product-card-link" tabindex="-1" aria-hidden="true">
+    <img alt="Chaussures de randonnée à scratch 24 au 34 enfant, NH100 noir" width="200" loading="lazy" src="https://contents.mediadecathlon.com/p2578793/prod.jpg?format=auto&f=1024x0"></a></div></div>
+    <div class="price -sale"> <div class="price_items"> <div class="price_item u-typo-body-s"> <span class="price_amount" data-testid="current-price" data-value="179"> <span class="u-sr-only"> Current price 179 MAD </span> <span aria-hidden="true"> 179 MAD </span> </span>
+    <span class="price_barred-amount" data-testid="price-before-reduction"> <span class="u-sr-only">Prix avant la réduction 229 MAD</span> <span aria-hidden="true">229 MAD</span> </span>
+    <span class="price_discount" data-testid="discount-amount"> <span aria-hidden="true">21%</span> </span> </div> </div> </div> </article> </li>
+    <li class="js-product-card"><article class="product-card"><img alt="Sans promo"><span class="price_amount" data-testid="current-price" data-value="99"></span></article></li>`;
   const items = parseDecathlon(html, "https://www.decathlon.ma/5080-promotions");
-  assert.deepEqual(items[0], { product: "Short running homme", brand: "KALENJI", originalPrice: 249, promoPrice: 179, url: "https://www.decathlon.ma/p/123-short.html", image: "https://d.ma/s.jpg" });
+  assert.equal(items.length, 1);
+  assert.deepEqual(items[0], { product: "Chaussures de randonnée à scratch 24 au 34 enfant, NH100 noir", brand: "", originalPrice: 229, promoPrice: 179,
+    url: "https://www.decathlon.ma/p/313049-116672-chaussures-nh100-noir.html", image: "https://contents.mediadecathlon.com/p2578793/prod.jpg?format=auto&f=1024x0" });
 });
