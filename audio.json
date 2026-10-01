@@ -779,6 +779,13 @@
   }
  },
  "the-odyssey": {
+  "en": {
+   "bytes": 340970537,
+   "dl": true,
+   "duration": 40705,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-odyssey/the-odyssey.mp3"
+  },
   "es": {
    "bytes": 403746952,
    "dl": true,
