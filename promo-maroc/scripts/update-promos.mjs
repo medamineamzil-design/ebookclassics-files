@@ -19,6 +19,7 @@ import { parseShopify, parseWooStore, parseJumia, parseAnyHtml, isValidPromo, gu
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const OUT = process.env.PROMO_OUT || join(ROOT, "data", "promotions.json");
 const MANUAL = join(ROOT, "data", "manual.json");
+const CATALOGUES = process.env.PROMO_CATALOGUES || join(ROOT, "data", "catalogues.json");
 const UA = "Mozilla/5.0 (compatible; PromoMarocBot/1.0; +https://github.com/medamineamzil-design/ebookclassics-files)";
 const MAX_PAGES = 5;
 const KEEP_IF_SOURCE_DOWN_DAYS = 3; // site en panne : on garde ses promos d'hier au plus 3 jours
@@ -73,7 +74,7 @@ const withPage = (url, n) => {
 // ---------- Adaptateurs ----------
 async function tryShopify(src) {
   const items = [];
-  for (let page = 1; page <= MAX_PAGES; page++) {
+  for (let page = 1; page <= (src.maxPages || MAX_PAGES); page++) {
     const json = await get(`${src.url.replace(/\/$/, "")}/products.json?limit=250&page=${page}`, { json: true });
     if (!json?.products?.length) break;
     items.push(...parseShopify(json, src.url));
@@ -84,7 +85,7 @@ async function tryShopify(src) {
 
 async function tryWooStore(src) {
   const items = [];
-  for (let page = 1; page <= MAX_PAGES; page++) {
+  for (let page = 1; page <= (src.maxPages || MAX_PAGES); page++) {
     const json = await get(`${src.url.replace(/\/$/, "")}/wp-json/wc/store/v1/products?on_sale=true&per_page=100&page=${page}`, { json: true });
     if (!Array.isArray(json) || !json.length) break;
     items.push(...parseWooStore(json));
@@ -97,7 +98,7 @@ async function tryHtml(src, parser) {
   const items = [];
   let platform = null;
   const seen = new Set();
-  for (let page = 1; page <= MAX_PAGES; page++) {
+  for (let page = 1; page <= (src.maxPages || MAX_PAGES); page++) {
     let html;
     try { html = await get(withPage(src.promoUrl, page)); }
     catch (e) { if (page === 1) throw e; break; } // fin de la pagination
@@ -201,6 +202,26 @@ async function main() {
       percent: percentOf(o, p), startDate: m.startDate, endDate: m.endDate,
       url: m.source || "", image: m.image || "", conditions: m.conditions || ""
     });
+  }
+
+  // Promotions lues dans les catalogues des grandes surfaces (scripts/catalogues.mjs), avec leurs vraies dates
+  const catalogues = await readFile(CATALOGUES, "utf8").then(JSON.parse).catch(() => ({ catalogues: {} }));
+  const seenCat = new Set();
+  for (const c of Object.values(catalogues.catalogues || {})) {
+    if (!c.startDate || !c.endDate || c.endDate < today) continue; // sans date de fin ou terminé : pas affiché
+    for (const p of c.products || []) {
+      const id = "c-" + hash(`${c.store}|${p.product}|${p.promoPrice}|${c.startDate}`);
+      if (seenCat.has(id)) continue;
+      seenCat.add(id);
+      promotions.push({
+        id, origin: "catalogue", sourceId: c.sourceId,
+        product: p.product, brand: p.brand || "", store: c.store, city: "Tout le Maroc",
+        category: p.category || guessCategory(p.product), originalPrice: p.originalPrice, promoPrice: p.promoPrice,
+        percent: percentOf(p.originalPrice, p.promoPrice), startDate: c.startDate, endDate: c.endDate,
+        url: c.file || c.page || "", image: "",
+        conditions: [c.title && `Catalogue « ${c.title} »`, c.cities && `Magasins : ${c.cities}`, p.conditions].filter(Boolean).join(" · ")
+      });
+    }
   }
 
   promotions.sort((a, b) => b.percent - a.percent);

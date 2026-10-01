@@ -146,7 +146,8 @@
   function featuredPromos() {
     const active = allPromos().filter((p) => statusOf(p) === "active" &&
       (state.city === "Toutes les villes" || p.city === state.city || p.city === "Tout le Maroc"));
-    const score = (p) => p.percent + Math.min(20, Math.log10(Math.max(1, p.originalPrice - p.promoPrice)) * 5);
+    // Les promos de catalogue (avec de vraies dates de début et de fin) sont mises en avant
+    const score = (p) => p.percent + Math.min(20, Math.log10(Math.max(1, p.originalPrice - p.promoPrice)) * 5) + (p.endDate ? 15 : 0);
     const perStore = new Map();
     const out = [];
     for (const p of active.sort((a, b) => score(b) - score(a))) {
@@ -211,7 +212,7 @@
           <p class="dates">📅 ${p.endDate ? `${fmtDate(p.startDate)} → ${fmtDate(p.endDate)}` : `Depuis le ${fmtDate(p.startDate)}`}</p>
           <div class="foot">
             <span class="time ${st}">${timeLabel(p)}</span>
-            ${p.demo ? '<span class="tag">Exemple</span>' : p.remote ? '<span class="tag ok">Mise à jour auto</span>' : p.source ? '<span class="tag ok">Sourcée</span>' : ""}
+            ${p.demo ? '<span class="tag">Exemple</span>' : p.origin === "catalogue" ? '<span class="tag ok">Catalogue</span>' : p.remote ? '<span class="tag ok">Mise à jour auto</span>' : p.source ? '<span class="tag ok">Sourcée</span>' : ""}
           </div>
         </div>
         <button class="fav${fav ? " on" : ""}" data-fav="${esc(p.id)}" aria-label="${fav ? "Retirer des" : "Ajouter aux"} favoris">${fav ? "♥" : "♡"}</button>
@@ -320,7 +321,7 @@
         ${total ? `<dt>Durée</dt><dd>${total} jour${total > 1 ? "s" : ""}</dd>` : ""}
         ${p.remote && p.lastSeen ? `<dt>Prix vérifié le</dt><dd>${fmtDate(p.lastSeen)}</dd>` : ""}
         ${p.conditions ? `<dt>Conditions</dt><dd>${esc(p.conditions)}</dd>` : p.remote ? `<dt>Conditions</dt><dd>Prix relevé sur le site du vendeur ; date de fin non communiquée (jusqu'à épuisement ou fin de l'offre).</dd>` : ""}
-        ${p.source ? `<dt>Source</dt><dd><a href="${esc(p.source)}" target="_blank" rel="noopener noreferrer">${p.remote ? "Voir chez le vendeur" : "Voir la source"}</a></dd>` : ""}
+        ${p.source ? `<dt>Source</dt><dd><a href="${esc(p.source)}" target="_blank" rel="noopener noreferrer">${p.origin === "catalogue" ? "Voir le catalogue" : p.remote ? "Voir chez le vendeur" : "Voir la source"}</a></dd>` : ""}
       </dl>
       ${total ? `<div class="progress" aria-label="Avancement de la promotion"><span style="width:${st === "upcoming" ? 0 : (elapsed / total) * 100}%"></span></div>` : ""}
       <p class="time ${st}">${timeLabel(p)}</p>

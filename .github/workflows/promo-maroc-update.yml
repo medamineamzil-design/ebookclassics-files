@@ -28,10 +28,15 @@ jobs:
         working-directory: promo-maroc
     steps:
       - uses: actions/checkout@v4
+        with:
+          sparse-checkout: promo-maroc   # inutile de télécharger les ebooks
 
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+
+      - name: Installation (SDK Claude pour la lecture des catalogues)
+        run: npm ci --no-audit --no-fund
 
       - name: Tests des analyseurs
         run: node --test scripts/test/parsers.test.mjs
@@ -41,6 +46,13 @@ jobs:
         env:
           DEBUG_IDS: ${{ inputs.debug }}
         run: node scripts/debug-source.mjs "$DEBUG_IDS"
+
+      - name: Lecture des catalogues des grandes surfaces (IA)
+        if: ${{ !inputs.debug }}
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ONLY: ${{ inputs.only }}
+        run: node scripts/catalogues.mjs ${ONLY:+--only="$ONLY"}
 
       - name: Collecte des promotions
         if: ${{ !inputs.debug }}
@@ -54,7 +66,7 @@ jobs:
           git config user.name "promo-maroc-bot"
           git config user.email "promo-maroc-bot@users.noreply.github.com"
           git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
-          git add data/promotions.json
+          git add data/promotions.json data/catalogues.json
           if git diff --cached --quiet; then
             echo "Aucun changement."
           else
