@@ -34,7 +34,16 @@ const hash = (s) => createHash("sha1").update(s).digest("hex").slice(0, 12);
 const round2 = (n) => Math.round(n * 100) / 100;
 const percentOf = (o, p) => Math.round(((o - p) / o) * 1000) / 10;
 
-async function get(url, { json = false } = {}) {
+async function get(url, opts = {}) {
+  try { return await getOnce(url, opts); }
+  catch (e) {
+    if (/HTTP 4\d\d/.test(e.message)) throw e; // refus explicite : inutile d'insister
+    await sleep(5000);
+    return getOnce(url, opts); // une nouvelle tentative pour les erreurs réseau passagères
+  }
+}
+
+async function getOnce(url, { json = false } = {}) {
   const ctrl = new AbortController();
   const t = setTimeout(() => ctrl.abort(), 25000);
   try {
@@ -171,6 +180,8 @@ async function main() {
   }
   for (const prev of prevById.values()) {
     if (found.has(prev.id)) continue;
+    const srcInfo = sources.find((x) => x.id === prev.sourceId);
+    if (srcInfo?.store) prev.store = srcInfo.store;
     if (failed.has(prev.sourceId) && !prev.endDate && prev.lastSeen >= addDays(today, -7)) { promotions.push(prev); continue; }
     const ended = prev.endDate ? prev : { ...prev, endDate: prev.lastSeen };
     if (ended.endDate >= addDays(today, -KEEP_EXPIRED_DAYS)) promotions.push(ended);

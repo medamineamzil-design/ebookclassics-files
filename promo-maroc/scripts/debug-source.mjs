@@ -21,6 +21,11 @@ for (const src of sources.filter((s) => ids.includes(s.id))) {
       console.log("   titre : " + (body.match(/<title[^>]*>([\s\S]*?)<\/title>/i) || [])[1]?.trim());
       const res2 = parseAnyHtml(body, src.promoUrl);
       console.log(`   analyseur : ${res2.platform} ${res2.items.length} produits`);
+      const anchor = body.search(/data-testid="current-price"|regular-price/);
+      if (anchor > 0) {
+        const start = Math.max(body.lastIndexOf("product-card", anchor - 1) - 200, anchor - 3000, 0);
+        console.log("   carte produit complète : " + body.slice(start, anchor + 1800).replace(/\s+/g, " "));
+      }
       const re = /(regular-price|old-price|oldPrice|price--compare|<del|data-price|class="[^"]*price[^"]*")/gi;
       let m, n = 0;
       while ((m = re.exec(body)) && n < 4) { console.log("   extrait : " + body.slice(Math.max(0, m.index - 400), m.index + 300).replace(/\s+/g, " ")); n++; re.lastIndex = m.index + 2000; }

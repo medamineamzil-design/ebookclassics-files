@@ -1,9 +1,9 @@
 # Recueil des sources de promotions au Maroc
 
-61 sources, dont 19 collectées automatiquement chaque jour. Généré depuis `sources.json` (mise à jour 2026-10-01).
+61 sources, dont 14 collectées automatiquement chaque jour. Généré depuis `sources.json`.
 
 - **Auto** = le robot quotidien relève les prix (prix barré → prix promo) ; la date de début = premier jour de détection.
-- **Manuel** = catalogues avec dates de validité (souvent en images / PDF) : à saisir dans `data/manual.json` ou via l'application.
+- **Manuel** = catalogues avec dates de validité, ou sites qui refusent les robots : à saisir dans `data/manual.json` ou via l'application.
 - **Relais** = site non officiel qui republie les catalogues ; à utiliser comme référence, pas comme source de collecte automatique.
 
 ## Enseignes et grandes surfaces (catalogues) (16)
@@ -15,7 +15,7 @@
 | Carrefour Maroc – catalogues | oui | manuel | Hebdomadaire | oui | [carrefour.ma/catalogues](https://carrefour.ma/catalogues/) |
 | Aswak Assalam | oui | manuel | Catalogue d'environ 3 semaines | oui | [aswakassalam.com/promotions](https://aswakassalam.com/promotions/) |
 | Aswak Assalam – catalogue PDF | oui | manuel | Catalogue d'environ 3 semaines | oui | [aswakassalam.com/catalogue](https://aswakassalam.com/catalogue/) |
-| BIM Maroc | oui | manuel | Arrivages mardi et vendredi | oui | [www.bim.ma](https://www.bim.ma) |
+| BIM Maroc | oui | manuel (Adresse officielle à confirmer ; catalogues relayés par les agrégateurs) | Arrivages mardi et vendredi | oui | [www.bim.ma](https://www.bim.ma) |
 | Groupe Label'Vie (Carrefour, Carrefour Market, Atacadao, Supeco) | oui | manuel | - | non | [labelvie.ma/en/our-business/our-brands](https://labelvie.ma/en/our-business/our-brands/) |
 | Kazyon | relais | manuel | Hebdomadaire (jeudi → mercredi) | oui | [depenseless.com/magasin/kazyon](https://depenseless.com/magasin/kazyon/) |
 | Supeco | relais | manuel | Hebdomadaire | oui | [hmizate.ma/deal/catalogue-supeco-c24](https://hmizate.ma/deal/catalogue-supeco-c24) |
@@ -31,22 +31,22 @@
 
 | Source | Officiel | Collecte | Fréquence | Dates | Lien |
 |---|---|---|---|---|---|
-| Marjanemall | oui | auto (auto) | Quotidienne (ventes flash) | non | [www.marjanemall.ma](https://www.marjanemall.ma/) |
+| Marjanemall | oui | manuel (Le site refuse les robots (HTTP 403) : consultation / saisie manuelle) | Quotidienne (ventes flash) | non | [www.marjanemall.ma](https://www.marjanemall.ma/) |
 | Jumia – Ventes flash | oui | auto (jumia) | Plusieurs fois par jour | non | [www.jumia.ma/flash-sales](https://www.jumia.ma/flash-sales/) |
 | Jumia – Soldes | oui | auto (jumia) | Quotidienne | non | [www.jumia.ma/mlp-soldes](https://www.jumia.ma/mlp-soldes/) |
 | Jumia – Hot deals | oui | auto (jumia) | Quotidienne | non | [www.jumia.ma/mlp-destockage-massif](https://www.jumia.ma/mlp-destockage-massif/) |
 | Jumia – Ventes flash électronique | oui | auto (jumia) | Quotidienne | non | [www.jumia.ma/electronique/flash-sales](https://www.jumia.ma/electronique/flash-sales/) |
-| Electroplanet – Vente flash | oui | auto (auto) | Quotidienne | non | [www.electroplanet.ma/vente-flash](https://www.electroplanet.ma/vente-flash) |
+| Electroplanet – Vente flash | oui | manuel (Le site refuse les robots (HTTP 403) : consultation / saisie manuelle) | Quotidienne | non | [www.electroplanet.ma/vente-flash](https://www.electroplanet.ma/vente-flash) |
 | Decathlon Maroc – Promotions | oui | auto (auto) | Quotidienne | non | [www.decathlon.ma/5080-promotions](https://www.decathlon.ma/5080-promotions) |
 | Decathlon Maroc – Soldes | oui | manuel | Périodes de soldes | non | [www.decathlon.ma/content/179-soldes](https://www.decathlon.ma/content/179-soldes) |
 | UltraPC – Promotions | oui | auto (auto) | Quotidienne | non | [www.ultrapc.ma/promotions](https://www.ultrapc.ma/promotions) |
-| Iris – Bons plans | oui | auto (auto) | Quotidienne | non | [www.iris.ma/en/bons-plans](https://www.iris.ma/en/bons-plans) |
-| Cosmos Electro | oui | auto (auto) | Quotidienne | non | [www.cosmoselectro.ma](https://www.cosmoselectro.ma/) |
-| Parapharma.ma – Promotions | oui | auto (auto) | Quotidienne | non | [www.parapharma.ma/promotion](http://www.parapharma.ma/promotion) |
+| Iris – Bons plans | oui | manuel (Le site refuse les robots (HTTP 403) : consultation / saisie manuelle) | Quotidienne | non | [www.iris.ma/en/bons-plans](https://www.iris.ma/en/bons-plans) |
+| Cosmos Electro | oui | auto (auto) (Site injoignable lors des premiers passages) | Quotidienne | non | [www.cosmoselectro.ma](https://www.cosmoselectro.ma/) |
+| Parapharma.ma – Promotions | oui | manuel (Le site refuse les robots (HTTP 401 « Bot check ») : consultation / saisie manuelle) | Quotidienne | non | [www.parapharma.ma/promotion](http://www.parapharma.ma/promotion) |
 | Univers Para Discount – Bons deals | oui | auto (auto) | Quotidienne | non | [universparadiscount.ma/428-les-bons-deals](https://universparadiscount.ma/428-les-bons-deals) |
 | Atlas Para – Promotions | oui | auto (auto) | Quotidienne | non | [www.atlaspara.ma/promotions](https://www.atlaspara.ma/promotions) |
 | La Maison Para | oui | auto (auto) | Quotidienne | non | [lamaisonpara.ma](https://lamaisonpara.ma/) |
-| Mapara.ma | oui | auto (auto) | Quotidienne | non | [mapara.ma](https://mapara.ma/) |
+| Mapara.ma | oui | manuel (Le site refuse les robots (HTTP 403) : consultation / saisie manuelle) | Quotidienne | non | [mapara.ma](https://mapara.ma/) |
 | Maparami.ma | oui | auto (auto) | Quotidienne | non | [maparami.ma](https://maparami.ma/) |
 | BeautyMall.ma | oui | auto (auto) | Quotidienne | non | [beautymall.ma](https://beautymall.ma/) |
 | Nova Parapharmacie | oui | auto (auto) | Quotidienne | non | [novapara.ma](https://novapara.ma/) |

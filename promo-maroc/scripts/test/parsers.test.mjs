@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { parsePrice, parseShopify, parseWooStore, parseJumia, parsePrestashop, parseMagento, parseWooHtml, parseAnyHtml, isValidPromo, guessCategory } from "../lib/parsers.mjs";
+import { parseDecathlon, parsePrice, parseShopify, parseWooStore, parseJumia, parsePrestashop, parseMagento, parseWooHtml, parseAnyHtml, isValidPromo, guessCategory } from "../lib/parsers.mjs";
 
 test("parsePrice gère les formats marocains", () => {
   assert.equal(parsePrice("1 299,00 DH"), 1299);
@@ -74,4 +74,29 @@ test("validation et catégories", () => {
   assert.equal(guessCategory("Machine à laver Beko 8kg"), "electromenager");
   assert.equal(guessCategory("Huile de table Lesieur 5L"), "alimentation");
   assert.equal(guessCategory("Truc inconnu", "sante"), "sante");
+});
+
+test("PrestaShop sans product-title (Univers Para, Maparami)", () => {
+  const up = `<div class="js-product-miniature" data-id-product="15410"><div class="element-top"><a href="https://u.ma/p/15410-algo.html" class="thumbnail"><img src="https://u.ma/i.jpg"></a></div>
+    <div class="product-name"><a href="https://u.ma/p/15410-algo.html" title="ALGOLOGIE COFFRET TRESORS">ALGOLOGIE COFFRET TRESORS</a></div>
+    <div class="ax-product-cats"><a href="https://u.ma/857-promotions" title="PROMOTIONS">PROMOTIONS</a></div>
+    <div class="product-price-and-shipping"> <span class="regular-price">892,50&nbsp;MAD</span> <span class="price"> 589,05&nbsp;MAD </span></div></div>
+    <div class="js-product-miniature" data-id-product="1"><a href="https://u.ma/x.html" title="Sans promo">Sans promo</a><span class="price"> 1 440,00&nbsp;MAD </span></div>`;
+  const a = parsePrestashop(up, "https://u.ma/");
+  assert.equal(a.length, 1);
+  assert.deepEqual([a[0].product, a[0].originalPrice, a[0].promoPrice, a[0].url], ["ALGOLOGIE COFFRET TRESORS", 892.5, 589.05, "https://u.ma/p/15410-algo.html"]);
+  const mp = `<article class="product-miniature js-product-miniature" data-id-product="9898"><div class="manufacturer"><a href="//m.ma/brand/705">Acretin C</a></div>
+    <h3 ><a href="https://m.ma/9898-acretin.html" class="product_name one_line" title="Acretin C Gel Anti-Acné 30g original">Acretin C Gel Anti-Acné...</a></h3>
+    <div class="product-price-and-shipping"> <span class="regular-price" aria-label="Prix de base">340,00&nbsp;Dh</span><span class="price price-sale" aria-label="Prix"> 198,00&nbsp;Dh </span></div></article>`;
+  const b = parsePrestashop(mp, "https://m.ma/");
+  assert.deepEqual([b[0].product, b[0].brand, b[0].originalPrice, b[0].promoPrice], ["Acretin C Gel Anti-Acné 30g original", "Acretin C", 340, 198]);
+});
+
+test("Decathlon product-card", () => {
+  const html = `<div class="product-card u-flex"><a href="/p/123-short.html" class="product-card_link"><img src="https://d.ma/s.jpg"></a>
+    <p class="product-card_brand">KALENJI</p><h2 class="product-card_title u-typo">Short running homme</h2>
+    <div class="price -sale"><span class="price_amount" data-testid="current-price" data-value="179"><span class="u-sr-only"> Current price 179 MAD </span></span>
+    <span class="price_amount" data-testid="previous-price" data-value="249"></span></div></div>`;
+  const items = parseDecathlon(html, "https://www.decathlon.ma/5080-promotions");
+  assert.deepEqual(items[0], { product: "Short running homme", brand: "KALENJI", originalPrice: 249, promoPrice: 179, url: "https://www.decathlon.ma/p/123-short.html", image: "https://d.ma/s.jpg" });
 });

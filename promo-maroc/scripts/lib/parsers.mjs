@@ -94,16 +94,50 @@ export function parseJumia(html, base) {
 export function parsePrestashop(html, base) {
   const out = [];
   for (const b of blocks(html, /<(?:article|div)[^>]*class="[^"]*product-miniature[^"]*"/)) {
-    const title = b.match(/class="[^"]*product-title[^"]*"[^>]*>\s*(?:<a([^>]*)>)?([\s\S]*?)<\/(?:a|h\d)>/i);
     const regular = (b.match(/class="[^"]*regular-price[^"]*"[^>]*>([\s\S]*?)<\/span>/i) || [])[1];
     const price = (b.match(/<span[^>]*class="(?:[^"]*\s)?(?:price|product-price)(?:\s[^"]*)?"[^>]*>([\s\S]*?)<\/span>/i) || [])[1];
-    if (!title || !regular || !price) continue;
+    if (!regular || !price) continue;
+    // Nom du produit : titre de thème classique, sinon lien "product_name", sinon premier lien produit avec attribut title
+    let title = b.match(/class="[^"]*product-title[^"]*"[^>]*>\s*(?:<a([^>]*)>)?([\s\S]*?)<\/(?:a|h\d)>/i);
+    let name = title && decode(title[2]);
+    let linkAttrs = title?.[1] || "";
+    if (!name) {
+      const a = b.match(/<a([^>]*class="[^"]*product[_-]?name[^"]*"[^>]*)>([\s\S]*?)<\/a>/i) ||
+        b.match(/<a([^>]*href="[^"]*\.html"[^>]*title="[^"]+"[^>]*)>([\s\S]*?)<\/a>/i);
+      if (a) { linkAttrs = a[1]; name = attr(a[1], "title") || decode(a[2]); }
+    } else if (/\.\.\.$|…$/.test(name) && attr(linkAttrs, "title")) name = attr(linkAttrs, "title");
+    if (!name) continue;
+    const brand = decode((b.match(/class="[^"]*manufacturer[^"]*"[^>]*>([\s\S]*?)<\/div>/i) || [])[1]);
     const img = (b.match(/<img[^>]*>/i) || [""])[0];
+    title = [null, linkAttrs];
     out.push({
-      product: decode(title[2]), brand: "",
+      product: name, brand,
       originalPrice: parsePrice(decode(regular)), promoPrice: parsePrice(decode(price)),
       url: absUrl(attr(title[1] || "", "href"), base),
       image: absUrl(attr(img, "data-full-size-image-url") || attr(img, "data-src") || attr(img, "src"), base)
+    });
+  }
+  return out;
+}
+
+// ---------- Decathlon Maroc : cartes product-card avec data-testid / data-value ----------
+export function parseDecathlon(html, base) {
+  const out = [];
+  for (const b of blocks(html, /<(?:article|div|li)[^>]*class="[^"]*\bproduct-card\b[^"]*"/)) {
+    const cur = b.match(/data-testid="current-price"[^>]*data-value="([\d.]+)"|data-value="([\d.]+)"[^>]*data-testid="current-price"/i);
+    const old = b.match(/data-testid="(?:previous|old|original|regular|reference|crossed|strike)[a-z-]*price"[^>]*data-value="([\d.]+)"|data-value="([\d.]+)"[^>]*data-testid="(?:previous|old|original|regular|reference|crossed|strike)[a-z-]*price"/i);
+    if (!cur || !old) continue;
+    const link = b.match(/<a([^>]*href="[^"]*"[^>]*)>([\s\S]*?)<\/a>/i);
+    const titleEl = b.match(/class="[^"]*product-card_title[^"]*"[^>]*>([\s\S]*?)<\/(?:h\d|p|span|a|div)>/i) ||
+      b.match(/data-testid="product-(?:title|name)"[^>]*>([\s\S]*?)<\/(?:h\d|p|span|a|div)>/i);
+    const name = titleEl ? decode(titleEl[1]) : link ? (attr(link[1], "title") || attr(link[1], "aria-label")) : "";
+    if (!name) continue;
+    const brand = decode((b.match(/class="[^"]*product-card_brand[^"]*"[^>]*>([\s\S]*?)<\/(?:p|span|div)>/i) || [])[1]);
+    const img = (b.match(/<img[^>]*>/i) || [""])[0];
+    out.push({
+      product: name, brand,
+      originalPrice: parseFloat(old[1] || old[2]), promoPrice: parseFloat(cur[1] || cur[2]),
+      url: absUrl(link ? attr(link[1], "href") : "", base), image: absUrl(attr(img, "src") || attr(img, "data-src"), base)
     });
   }
   return out;
@@ -152,6 +186,7 @@ export function parseAnyHtml(html, base) {
     ["jumia", parseJumia(html, base)],
     ["prestashop", parsePrestashop(html, base)],
     ["magento", parseMagento(html, base)],
+    ["decathlon", parseDecathlon(html, base)],
     ["woocommerce-html", parseWooHtml(html, base)]
   ].sort((a, b) => b[1].length - a[1].length);
   return { platform: results[0][1].length ? results[0][0] : null, items: results[0][1] };
