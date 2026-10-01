@@ -163,7 +163,10 @@ async function main() {
   }
 
   // Sources en échec aujourd'hui : on garde leurs promos d'hier telles quelles plutôt que de les déclarer terminées
+  // (de même pour les sources non collectées lors d'un passage partiel --only)
   const failed = new Set(report.filter((r) => !r.ok || r.count === 0).map((r) => r.id));
+  const ran = new Set(report.map((r) => r.id));
+  for (const prev of prevById.values()) if (!ran.has(prev.sourceId)) failed.add(prev.sourceId);
 
   const promotions = [];
   for (const [id, it] of found) {
