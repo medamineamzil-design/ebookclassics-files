@@ -73,6 +73,8 @@ test("validation et catégories", () => {
   assert.equal(guessCategory("Smartphone Samsung Galaxy A15"), "high-tech");
   assert.equal(guessCategory("Machine à laver Beko 8kg"), "electromenager");
   assert.equal(guessCategory("Huile de table Lesieur 5L"), "alimentation");
+  assert.equal(guessCategory("BATTEUR ELECTRIQUE 120W 5V ROYAL", "alimentation"), "electromenager");
+  assert.equal(guessCategory("PLANCHA 2000W KROHLER", "alimentation"), "electromenager");
   assert.equal(guessCategory("Truc inconnu", "sante"), "sante");
 });
 
