@@ -123,21 +123,21 @@ export function parsePrestashop(html, base) {
 // ---------- Decathlon Maroc : cartes product-card avec data-testid / data-value ----------
 export function parseDecathlon(html, base) {
   const out = [];
-  for (const b of blocks(html, /<(?:article|div|li)[^>]*class="[^"]*\bproduct-card\b[^"]*"/)) {
+  for (const b of blocks(html, /<article[^>]*class="[^"]*\bproduct-card\b[^"]*"/)) {
     const cur = b.match(/data-testid="current-price"[^>]*data-value="([\d.]+)"|data-value="([\d.]+)"[^>]*data-testid="current-price"/i);
-    const old = b.match(/data-testid="(?:previous|old|original|regular|reference|crossed|strike)[a-z-]*price"[^>]*data-value="([\d.]+)"|data-value="([\d.]+)"[^>]*data-testid="(?:previous|old|original|regular|reference|crossed|strike)[a-z-]*price"/i);
+    // Prix barré : <span data-testid="price-before-reduction"> … <span aria-hidden="true">229 MAD</span>
+    const old = b.match(/data-testid="price-before-reduction"[^>]*>[\s\S]*?aria-hidden="true"[^>]*>([^<]+)</i);
     if (!cur || !old) continue;
-    const link = b.match(/<a([^>]*href="[^"]*"[^>]*)>([\s\S]*?)<\/a>/i);
-    const titleEl = b.match(/class="[^"]*product-card_title[^"]*"[^>]*>([\s\S]*?)<\/(?:h\d|p|span|a|div)>/i) ||
-      b.match(/data-testid="product-(?:title|name)"[^>]*>([\s\S]*?)<\/(?:h\d|p|span|a|div)>/i);
-    const name = titleEl ? decode(titleEl[1]) : link ? (attr(link[1], "title") || attr(link[1], "aria-label")) : "";
+    const href = b.match(/<a[^>]*\shref=(?:"([^"]*)"|'([^']*)'|([^\s>]+))/i);
+    const img = (b.match(/<img[^>]*>/i) || [""])[0];
+    const titleEl = b.match(/class="[^"]*product-card_title[^"]*"[^>]*>([\s\S]*?)<\/(?:h\d|p|span|a|div)>/i);
+    const name = (titleEl && decode(titleEl[1])) || attr(img, "alt");
     if (!name) continue;
     const brand = decode((b.match(/class="[^"]*product-card_brand[^"]*"[^>]*>([\s\S]*?)<\/(?:p|span|div)>/i) || [])[1]);
-    const img = (b.match(/<img[^>]*>/i) || [""])[0];
     out.push({
       product: name, brand,
-      originalPrice: parseFloat(old[1] || old[2]), promoPrice: parseFloat(cur[1] || cur[2]),
-      url: absUrl(link ? attr(link[1], "href") : "", base), image: absUrl(attr(img, "src") || attr(img, "data-src"), base)
+      originalPrice: parsePrice(decode(old[1])), promoPrice: parseFloat(cur[1] || cur[2]),
+      url: absUrl(href ? href[1] || href[2] || href[3] : "", base), image: absUrl(attr(img, "src") || attr(img, "data-src"), base)
     });
   }
   return out;
