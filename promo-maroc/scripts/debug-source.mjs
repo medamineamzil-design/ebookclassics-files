@@ -36,6 +36,13 @@ for (const src of sources) {
       console.log("   images : " + (imgs.join(" | ") || "aucune"));
       console.log("   liens catalogue : " + (links.join(" | ") || "aucun"));
       console.log("   dates : " + (dates.join(" | ") || "aucune"));
+      // Sites construits dans le navigateur (Next.js…) : adresses d'API visibles dans la page
+      const apis = uniq([...body.matchAll(/https?:\/\/[a-z0-9.-]+(?:\/[^"'\s<>\\]*)?(?:api|graphql|catalog|promo|flyer|cms)[^"'\s<>\\]*/gi)].map((m) => m[0]));
+      console.log("   API repérées : " + (apis.join(" | ") || "aucune"));
+      const nextData = body.match(/<script id="__NEXT_DATA__"[^>]*>([\s\S]{0,1500})/);
+      if (nextData) console.log("   __NEXT_DATA__ : " + nextData[1].replace(/\s+/g, " "));
+      const rsc = [...body.matchAll(/self\.__next_f\.push\(\[1,"([\s\S]{0,600}?)"\]\)/g)].map((m) => m[1]).filter((x) => /promo|catalog|prix|price|pdf|jpg/i.test(x)).slice(0, 6);
+      if (rsc.length) console.log("   données Next.js : " + rsc.join(" || ").replace(/\s+/g, " "));
       const res2 = parseAnyHtml(body, src.promoUrl);
       console.log(`   analyseur : ${res2.platform} ${res2.items.length} produits`);
       const anchor = body.search(/data-testid="current-price"|regular-price/);

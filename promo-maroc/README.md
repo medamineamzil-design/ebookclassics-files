@@ -47,6 +47,31 @@ Chrome / Safari puis « Ajouter à l'écran d'accueil ».
 > dans l'onglet Sources de l'application.
 > Respectez les conditions d'utilisation des sites collectés ; retirez une source (`"adapter": null`) si son site l'interdit.
 
+### Catalogues des grandes surfaces (lecture par IA)
+
+`scripts/catalogues.mjs` lit chaque jour, avant la collecte, les catalogues des sources ayant un bloc `catalogue`
+dans `sources.json` (BIM : dépliants d'arrivage en images ; Aswak Assalam : catalogue feuilletable). Claude
+(`claude-opus-5-5`, sortie structurée) en extrait produit, marque, prix original, prix promo et dates de validité.
+Un catalogue n'est lu qu'une fois (cache `data/catalogues.json`), au plus 6 nouveaux par jour.
+
+- **Activation** : ajouter le secret `ANTHROPIC_API_KEY` dans GitHub → Settings → Secrets and variables → Actions.
+  Sans ce secret, l'étape est ignorée.
+- Seules les promos avec prix original, prix promo, date de début **et** date de fin imprimées sont publiées ;
+  elles disparaissent automatiquement après leur date de fin.
+- Marjane refuse les robots (403) et Kazyon n'a pas de site joignable : saisie manuelle (`data/manual.json`).
+
+### Règle de retrait
+
+- Promo de boutique en ligne (sans date de fin) : retirée dès qu'elle n'est plus sur le site du vendeur
+  (gardée au plus 3 jours si le site ne répond pas).
+- Promo de catalogue ou saisie à la main : retirée le lendemain de sa date de fin.
+
+### Publication du site (GitHub Pages)
+
+`.github/workflows/promo-maroc-pages.yml` publie `promo-maroc/` à chaque modification et après chaque mise à jour.
+À activer une fois : GitHub → Settings → Pages → Source : **GitHub Actions**. Adresse :
+`https://medamineamzil-design.github.io/ebookclassics-files/`
+
 ### Saisie des catalogues (`data/manual.json`)
 
 ```json

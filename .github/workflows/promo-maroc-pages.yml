@@ -1,0 +1,49 @@
+name: Promo Maroc – publication du site
+
+# Publie le dossier promo-maroc/ sur GitHub Pages :
+# à chaque modification de l'application et après chaque mise à jour quotidienne des promotions.
+on:
+  push:
+    branches: [main]
+    paths: ["promo-maroc/**"]
+  workflow_run:
+    workflows: ["Promo Maroc – mise à jour quotidienne des promotions"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: promo-maroc-pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: promo-maroc
+
+      - name: Préparer le site (sans les scripts du robot)
+        run: |
+          mkdir -p _site
+          cp -r promo-maroc/. _site/
+          rm -rf _site/scripts _site/node_modules _site/package.json _site/package-lock.json
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - id: deployment
+        uses: actions/deploy-pages@v4
