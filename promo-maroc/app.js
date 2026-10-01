@@ -44,6 +44,7 @@
     sources: [],     // recueil des sources (sources.json)
     view: "all",
     category: "all",
+    storeFilter: "all",
     query: "",
     city: "Toutes les villes",
     status: "active",
@@ -111,6 +112,7 @@
     if (state.view === "fav") list = list.filter((p) => state.favs.has(p.id));
     if (state.view === "mine") list = list.filter((p) => !p.demo && !p.remote);
     if (state.category !== "all") list = list.filter((p) => p.category === state.category);
+    if (state.storeFilter !== "all") list = list.filter((p) => p.store === state.storeFilter);
     if (state.city !== "Toutes les villes") list = list.filter((p) => p.city === state.city || p.city === "Tout le Maroc");
     if (state.status !== "all") list = list.filter((p) => statusOf(p) === state.status);
     if (state.minPct) list = list.filter((p) => p.percent >= state.minPct);
@@ -127,7 +129,59 @@
   }
 
   // ---------- Rendu ----------
+  // Liste des magasins présents dans les promotions (avec leur nombre de promos en cours)
+  function renderStoreFilter() {
+    const counts = new Map();
+    for (const p of allPromos()) if (statusOf(p) === "active") counts.set(p.store, (counts.get(p.store) || 0) + 1);
+    for (const p of allPromos()) if (!counts.has(p.store)) counts.set(p.store, 0);
+    const stores = [...counts].sort((a, b) => a[0].localeCompare(b[0], "fr"));
+    if (state.storeFilter !== "all" && !counts.has(state.storeFilter)) state.storeFilter = "all";
+    $("#fStore").innerHTML = `<option value="all">🏬 Magasins</option>` +
+      stores.map(([n, c]) => `<option value="${esc(n)}"${n === state.storeFilter ? " selected" : ""}>${esc(n)}${c ? ` (${c})` : ""}</option>`).join("");
+  }
+
+  // Promotions phares : fortes remises en cours, au plus 2 par magasin pour varier
+  function featuredPromos() {
+    const active = allPromos().filter((p) => statusOf(p) === "active" &&
+      (state.city === "Toutes les villes" || p.city === state.city || p.city === "Tout le Maroc"));
+    const score = (p) => p.percent + Math.min(20, Math.log10(Math.max(1, p.originalPrice - p.promoPrice)) * 5);
+    const perStore = new Map();
+    const out = [];
+    for (const p of active.sort((a, b) => score(b) - score(a))) {
+      const n = perStore.get(p.store) || 0;
+      if (n >= 2) continue;
+      perStore.set(p.store, n + 1);
+      out.push(p);
+      if (out.length === 10) break;
+    }
+    return out;
+  }
+
+  function renderFeatured() {
+    const show = state.view === "all" && !state.query.trim();
+    const items = show ? featuredPromos() : [];
+    $("#featured").hidden = !items.length;
+    if (!items.length) return;
+    $("#featuredInfo").textContent = `${items.length} offres`;
+    $("#featuredList").innerHTML = items.map((p) => {
+      const cat = catOf(p.category);
+      return `
+        <article class="hero" data-id="${esc(p.id)}" tabindex="0">
+          <div class="hero-img">${p.image ? `<img src="${esc(p.image)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : `<span>${cat.icon}</span>`}
+            <b class="hero-badge">-${Math.round(p.percent)}%</b></div>
+          <div class="hero-body">
+            <p class="hero-store">${esc(p.store)}</p>
+            <h3>${esc(p.product)}</h3>
+            <p><span class="promo">${fmtPrice(p.promoPrice)}</span> <s>${fmtPrice(p.originalPrice)}</s></p>
+            <p class="hero-time">${timeLabel(p)}</p>
+          </div>
+        </article>`;
+    }).join("");
+  }
+
   function renderFilters() {
+    $("#fCat").innerHTML = `<option value="all">🧺 Produits</option>` +
+      CATEGORIES.map((c) => `<option value="${c.id}">${c.icon} ${esc(c.label)}</option>`).join("");
     $("#fCity").innerHTML = ["Toutes les villes", ...CITIES.slice(1)].map((c) => `<option>${esc(c)}</option>`).join("");
     $("#formCity").innerHTML = CITIES.map((c) => `<option>${esc(c)}</option>`).join("");
     $("#formCategory").innerHTML = CATEGORIES.map((c) => `<option value="${c.id}">${c.icon} ${esc(c.label)}</option>`).join("");
@@ -164,6 +218,11 @@
 
   function render() {
     document.body.classList.toggle("view-sources", state.view === "sources");
+    renderStoreFilter();
+    renderFeatured();
+    $("#fCat").value = state.category;
+    const filtersOn = state.category !== "all" || state.storeFilter !== "all" || state.city !== "Toutes les villes" || state.minPct > 0 || state.query.trim();
+    $("#btnClear").hidden = !filtersOn || state.view === "sources";
     if (state.view === "sources") return renderSources();
     const list = filtered();
     $("#list").innerHTML = list.map(card).join("");
@@ -405,6 +464,15 @@
   // ---------- Événements ----------
   $("#search").addEventListener("input", (e) => { state.query = e.target.value; render(); });
   $("#fCity").addEventListener("change", (e) => { state.city = e.target.value; render(); });
+  $("#fStore").addEventListener("change", (e) => { state.storeFilter = e.target.value; render(); });
+  $("#fCat").addEventListener("change", (e) => { state.category = e.target.value; render(); });
+  $("#btnClear").addEventListener("click", () => {
+    Object.assign(state, { category: "all", storeFilter: "all", city: "Toutes les villes", minPct: 0, query: "" });
+    $("#search").value = ""; $("#fCity").value = state.city; $("#fMin").value = "0";
+    render();
+  });
+  $("#featuredList").addEventListener("click", (e) => { const c = e.target.closest(".hero"); if (c) openDetail(c.dataset.id); });
+  $("#featuredList").addEventListener("keydown", (e) => { if (e.key === "Enter" && e.target.classList.contains("hero")) openDetail(e.target.dataset.id); });
   $("#fStatus").addEventListener("change", (e) => { state.status = e.target.value; render(); });
   $("#fSort").addEventListener("change", (e) => { state.sort = e.target.value; render(); });
   $("#fMin").addEventListener("change", (e) => { state.minPct = Number(e.target.value); render(); });

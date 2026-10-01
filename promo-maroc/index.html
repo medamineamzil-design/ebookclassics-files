@@ -24,9 +24,20 @@
     <button id="btnTheme" class="icon-btn" aria-label="Changer de thème">◐</button>
   </header>
 
+  <section id="featured" class="featured" aria-labelledby="featuredTitle">
+    <div class="featured-head">
+      <h2 id="featuredTitle">🔥 Promotions phares</h2>
+      <span id="featuredInfo" class="muted"></span>
+    </div>
+    <div id="featuredList" class="featured-list"></div>
+  </section>
+
   <section class="search-zone">
+    <h2 class="section-title">Toutes les promotions</h2>
     <input id="search" type="search" placeholder="Rechercher un produit, une enseigne…" autocomplete="off">
     <div class="filters">
+      <select id="fStore" aria-label="Magasin"></select>
+      <select id="fCat" aria-label="Nature du produit"></select>
       <select id="fCity" aria-label="Ville"></select>
       <select id="fStatus" aria-label="Statut">
         <option value="active">En cours</option>
@@ -49,7 +60,8 @@
         <option value="50">≥ 50 %</option>
       </select>
     </div>
-    <div id="categories" class="chips" role="tablist" aria-label="Catégories"></div>
+    <div id="categories" class="chips" role="tablist" aria-label="Nature du produit"></div>
+    <button id="btnClear" class="link-btn" hidden>✕ Effacer les filtres</button>
   </section>
 
   <main>
