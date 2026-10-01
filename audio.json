@@ -608,6 +608,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-call-of-the-wild/the-call-of-the-wild.mp3"
   }
  },
+ "the-count-of-monte-cristo": {
+  "en": {
+   "bytes": 1434840456,
+   "dl": true,
+   "duration": 179299,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-count-of-monte-cristo/the-count-of-monte-cristo.mp3"
+  }
+ },
  "the-divine-comedy": {
   "de": {
    "bytes": 212941296,
