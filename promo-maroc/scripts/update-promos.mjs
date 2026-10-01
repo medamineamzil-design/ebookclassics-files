@@ -21,7 +21,7 @@ const OUT = process.env.PROMO_OUT || join(ROOT, "data", "promotions.json");
 const MANUAL = join(ROOT, "data", "manual.json");
 const UA = "Mozilla/5.0 (compatible; PromoMarocBot/1.0; +https://github.com/medamineamzil-design/ebookclassics-files)";
 const MAX_PAGES = 5;
-const KEEP_EXPIRED_DAYS = 14;
+const KEEP_IF_SOURCE_DOWN_DAYS = 3; // site en panne : on garde ses promos d'hier au plus 3 jours
 const DELAY_MS = Number(process.env.PROMO_DELAY_MS ?? 1500);
 
 const args = Object.fromEntries(process.argv.slice(2).map((a) => a.replace(/^--/, "").split("=")).map(([k, v]) => [k, v ?? true]));
@@ -185,15 +185,15 @@ async function main() {
     if (found.has(prev.id)) continue;
     const srcInfo = sources.find((x) => x.id === prev.sourceId);
     if (srcInfo?.store) prev.store = srcInfo.store;
-    if (failed.has(prev.sourceId) && !prev.endDate && prev.lastSeen >= addDays(today, -7)) { promotions.push(prev); continue; }
-    const ended = prev.endDate ? prev : { ...prev, endDate: prev.lastSeen };
-    if (ended.endDate >= addDays(today, -KEEP_EXPIRED_DAYS)) promotions.push(ended);
+    // Promo sans date de fin qui n'est plus sur le site du vendeur : elle est retirée.
+    // Exception : si le site n'a pas répondu aujourd'hui, on la garde quelques jours.
+    if (failed.has(prev.sourceId) && !prev.endDate && prev.lastSeen >= addDays(today, -KEEP_IF_SOURCE_DOWN_DAYS)) promotions.push(prev);
   }
 
   // Promotions saisies à partir des catalogues (avec dates réelles)
   for (const m of manual) {
     const o = Number(m.originalPrice), p = Number(m.promoPrice);
-    if (!(o > p && p > 0) || !m.startDate || !m.endDate || m.endDate < addDays(today, -KEEP_EXPIRED_DAYS)) continue;
+    if (!(o > p && p > 0) || !m.startDate || !m.endDate || m.endDate < today) continue; // terminée : retirée
     promotions.push({
       id: "m-" + hash(`${m.store}|${m.product}|${m.startDate}`), origin: "manual", sourceId: m.sourceId || "",
       product: m.product, brand: m.brand || "", store: m.store, city: m.city || "Tout le Maroc",
