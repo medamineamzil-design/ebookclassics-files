@@ -125,6 +125,8 @@ async function main() {
 
   const report = [];
   const found = new Map();
+  const seenKeys = new Set(); // dédoublonnage entre sources (même lien ou même produit au même prix)
+  const normUrl = (u) => (u || "").split(/[?#]/)[0].replace(/\/$/, "").toLowerCase();
 
   for (const src of sources.filter((s) => s.adapter && (!only || only.has(s.id)))) {
     const started = Date.now();
@@ -136,8 +138,11 @@ async function main() {
         it.promoPrice = round2(it.promoPrice);
         if (!isValidPromo(it)) continue;
         const id = "a-" + hash(src.id + "|" + (it.url || it.product));
-        if (found.has(id)) continue;
-        found.set(id, { ...it, sourceId: src.id, store: src.name.split(" – ")[0], sector: src.sector });
+        const store = src.store || src.name.split(" – ")[0];
+        const keys = [it.url && "u:" + normUrl(it.url), `p:${store}|${it.product.toLowerCase()}|${it.promoPrice}`].filter(Boolean);
+        if (found.has(id) || keys.some((k) => seenKeys.has(k))) continue;
+        keys.forEach((k) => seenKeys.add(k));
+        found.set(id, { ...it, sourceId: src.id, store, sector: src.sector });
         kept++;
       }
       report.push({ id: src.id, ok: true, platform, count: kept, ms: Date.now() - started });
@@ -161,14 +166,13 @@ async function main() {
       originalPrice: it.originalPrice, promoPrice: it.promoPrice, percent: percentOf(it.originalPrice, it.promoPrice),
       startDate: prev && !prev.endDate ? prev.startDate : today,
       endDate: null, lastSeen: today,
-      url: it.url, image: it.image || "",
-      conditions: "Prix relevé en ligne ; date de fin non communiquée par le vendeur (jusqu'à épuisement ou fin de l'offre)."
+      url: it.url, image: it.image || ""
     });
   }
   for (const prev of prevById.values()) {
     if (found.has(prev.id)) continue;
     if (failed.has(prev.sourceId) && !prev.endDate && prev.lastSeen >= addDays(today, -7)) { promotions.push(prev); continue; }
-    const ended = prev.endDate ? prev : { ...prev, endDate: prev.lastSeen, conditions: "Promotion plus visible sur le site du vendeur depuis le " + addDays(prev.lastSeen, 1) + "." };
+    const ended = prev.endDate ? prev : { ...prev, endDate: prev.lastSeen };
     if (ended.endDate >= addDays(today, -KEEP_EXPIRED_DAYS)) promotions.push(ended);
   }
 
@@ -193,7 +197,10 @@ async function main() {
     return;
   }
   await mkdir(dirname(OUT), { recursive: true });
-  await writeFile(OUT, JSON.stringify(data, null, 1) + "\n");
+  // Une promo par ligne : fichier compact mais lisible dans les diffs git
+  const body = JSON.stringify({ ...data, promotions: [] }).replace(/"promotions":\[\]/, () =>
+    '"promotions":[\n' + promotions.map((p) => JSON.stringify(p)).join(",\n") + "\n]");
+  await writeFile(OUT, body + "\n");
   const okCount = report.filter((r) => r.ok && r.count > 0).length;
   console.log(`\n${promotions.length} promotions écrites dans data/promotions.json — ${okCount}/${report.length} sources avec résultats`);
 }

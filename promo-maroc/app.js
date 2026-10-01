@@ -34,6 +34,8 @@
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const catOf = (id) => CATEGORIES.find((c) => c.id === id) || CATEGORIES[CATEGORIES.length - 1];
 
+  const PAGE = 40;
+
   // ---------- État ----------
   const state = {
     userPromos: store.get(STORAGE.promos, []),
@@ -173,7 +175,7 @@
             <p class="hero-store">${esc(p.store)}</p>
             <h3>${esc(p.product)}</h3>
             <p><span class="promo">${fmtPrice(p.promoPrice)}</span> <s>${fmtPrice(p.originalPrice)}</s></p>
-            <p class="hero-time">${timeLabel(p)}</p>
+            <p class="hero-time">${p.endDate ? timeLabel(p) : `Repérée le ${fmtDate(p.startDate)}`}</p>
           </div>
         </article>`;
     }).join("");
@@ -225,7 +227,12 @@
     $("#btnClear").hidden = !filtersOn || state.view === "sources";
     if (state.view === "sources") return renderSources();
     const list = filtered();
-    $("#list").innerHTML = list.map(card).join("");
+    // Affichage par paquets de 40 (des milliers de promos réelles) ; on revient à 40 quand les filtres changent
+    const sig = JSON.stringify([state.view, state.category, state.storeFilter, state.city, state.status, state.sort, state.minPct, state.query]);
+    if (sig !== state.sig) { state.sig = sig; state.limit = PAGE; }
+    const shown = list.slice(0, state.limit);
+    $("#list").innerHTML = shown.map(card).join("") + (list.length > shown.length
+      ? `<button id="btnMoreItems" class="btn ghost more">Voir plus (${list.length - shown.length} restantes)</button>` : "");
     $("#empty").hidden = list.length > 0;
     const best = list.reduce((m, p) => Math.max(m, p.percent), 0);
     const saving = list.reduce((s, p) => s + (p.originalPrice - p.promoPrice), 0);
@@ -312,7 +319,7 @@
         <dt>Date fin</dt><dd>${p.endDate ? fmtDate(p.endDate) : "Non communiquée par le vendeur"}</dd>
         ${total ? `<dt>Durée</dt><dd>${total} jour${total > 1 ? "s" : ""}</dd>` : ""}
         ${p.remote && p.lastSeen ? `<dt>Prix vérifié le</dt><dd>${fmtDate(p.lastSeen)}</dd>` : ""}
-        ${p.conditions ? `<dt>Conditions</dt><dd>${esc(p.conditions)}</dd>` : ""}
+        ${p.conditions ? `<dt>Conditions</dt><dd>${esc(p.conditions)}</dd>` : p.remote ? `<dt>Conditions</dt><dd>Prix relevé sur le site du vendeur ; date de fin non communiquée (jusqu'à épuisement ou fin de l'offre).</dd>` : ""}
         ${p.source ? `<dt>Source</dt><dd><a href="${esc(p.source)}" target="_blank" rel="noopener noreferrer">${p.remote ? "Voir chez le vendeur" : "Voir la source"}</a></dd>` : ""}
       </dl>
       ${total ? `<div class="progress" aria-label="Avancement de la promotion"><span style="width:${st === "upcoming" ? 0 : (elapsed / total) * 100}%"></span></div>` : ""}
@@ -482,6 +489,7 @@
   });
 
   $("#list").addEventListener("click", (e) => {
+    if (e.target.id === "btnMoreItems") { state.limit += PAGE; render(); return; }
     const favBtn = e.target.closest("[data-fav]");
     if (favBtn) {
       const id = favBtn.dataset.fav;
@@ -548,6 +556,15 @@
     const next = dark ? "light" : "dark";
     applyTheme(next); store.set(STORAGE.theme, next);
   });
+
+  // Image produit indisponible : on affiche l'icône de la catégorie à la place
+  document.addEventListener("error", (e) => {
+    const img = e.target;
+    if (img.tagName !== "IMG") return;
+    const holder = img.closest(".hero-img, .card-icon");
+    if (holder) { const span = document.createElement("span"); span.textContent = "🏷️"; img.replaceWith(span); }
+    else if (img.classList.contains("detail-img")) img.remove();
+  }, true);
 
   // ---------- Démarrage ----------
   applyTheme(store.get(STORAGE.theme, null));

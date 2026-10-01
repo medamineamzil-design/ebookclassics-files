@@ -1,5 +1,5 @@
 /* Service worker : permet d'utiliser Promo Maroc hors ligne. */
-const CACHE = "promo-maroc-v3";
+const CACHE = "promo-maroc-v4";
 const ASSETS = ["./", "index.html", "styles.css", "app.js", "data.js", "icon.svg", "manifest.webmanifest", "sources.json", "data/promotions.json"];
 
 self.addEventListener("install", (e) => {
