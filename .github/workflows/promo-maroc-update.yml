@@ -8,6 +8,9 @@ on:
       only:
         description: "Identifiants de sources à collecter (séparés par des virgules), vide = toutes"
         required: false
+      debug:
+        description: "Diagnostic seulement (aucune écriture) : identifiants de sources à analyser"
+        required: false
 
 permissions:
   contents: write
@@ -33,15 +36,24 @@ jobs:
       - name: Tests des analyseurs
         run: node --test scripts/test/parsers.test.mjs
 
+      - name: Diagnostic des sources
+        if: ${{ inputs.debug }}
+        env:
+          DEBUG_IDS: ${{ inputs.debug }}
+        run: node scripts/debug-source.mjs "$DEBUG_IDS"
+
       - name: Collecte des promotions
+        if: ${{ !inputs.debug }}
         env:
           ONLY: ${{ inputs.only }}
         run: node scripts/update-promos.mjs ${ONLY:+--only="$ONLY"}
 
       - name: Enregistrer les nouvelles promotions
+        if: ${{ !inputs.debug }}
         run: |
           git config user.name "promo-maroc-bot"
           git config user.email "promo-maroc-bot@users.noreply.github.com"
+          git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
           git add data/promotions.json
           if git diff --cached --quiet; then
             echo "Aucun changement."

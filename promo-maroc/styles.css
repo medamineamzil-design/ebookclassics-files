@@ -199,3 +199,4 @@ body.view-sources .filters, body.view-sources .chips { display: none; }
 .hero-time { font-size: 12px; color: var(--green); font-weight: 600; margin-top: 4px !important; }
 .link-btn { border: 0; background: none; color: var(--red); font-weight: 600; padding: 4px 0; cursor: pointer; }
 body.view-sources .section-title { display: none; }
+.btn.more { grid-column: 1 / -1; width: 100%; margin: 4px 0 12px; }
