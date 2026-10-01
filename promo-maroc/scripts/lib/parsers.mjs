@@ -206,7 +206,7 @@ const KEYWORDS = [
   ["telecom", /\b(forfait|recharge|carte sim|internet 4g|5g box)\b/i],
   ["informatique", /\b(laptop|ordinateur|pc |pc$|portable \d|imprimante|clavier|souris|ssd|disque dur|écran pc|moniteur|carte graphique|processeur|routeur|cl[ée] usb)\b/i],
   ["high-tech", /\b(smartphone|t[ée]l[ée]phone|iphone|galaxy|redmi|xiaomi|tablette|ipad|tv|t[ée]l[ée]viseur|televiseur|smart tv|écouteurs|ecouteurs|casque|airpods|enceinte|montre connect|smartwatch|console|playstation|ps5|xbox|camera|appareil photo)\b/i],
-  ["electromenager", /\b(r[ée]frig[ée]rateur|frigo|cong[ée]lateur|machine [àa] laver|lave[- ]linge|lave[- ]vaisselle|four|micro[- ]ondes|cuisini[èe]re|plaque|climatiseur|aspirateur|bouilloire|mixeur|blender|robot|friteuse|air fryer|cafeti[èe]re|fer [àa] repasser|s[èe]che[- ]cheveux|lisseur|ventilateur|chauffage|radiateur|chauffe[- ]eau)\b/i],
+  ["electromenager", /\b(r[ée]frig[ée]rateur|frigo|cong[ée]lateur|machine [àa] laver|lave[- ]linge|lave[- ]vaisselle|four|micro[- ]ondes|cuisini[èe]re|plaque|climatiseur|aspirateur|bouilloire|mixeur|blender|robot|friteuse|air fryer|batteur|plancha|gaufrier|grille[- ]pain|presse[- ]agrumes|extracteur de jus|glaci[èe]re [ée]lectrique|hachoir|appareil [àa] |po[êe]le [ée]lectrique|cafeti[èe]re|fer [àa] repasser|s[èe]che[- ]cheveux|lisseur|ventilateur|chauffage|radiateur|chauffe[- ]eau)\b/i],
   ["bebe", /\b(b[ée]b[ée]|couche|poussette|biberon|enfant|lait infantile)\b/i],
   ["sante", /\b(vitamine|compl[ée]ment|cr[èe]me solaire|spf|cerave|la roche[- ]posay|vichy|av[èe]ne|bioderma|uriage|svr|nuxe|a-derma|parapharm)\b/i],
   ["hygiene", /\b(shampo|gel douche|d[ée]odorant|parfum|maquillage|mascara|rouge [àa] l[èe]vres|soin|cr[èe]me|savon|dentifrice|rasoir|s[ée]rum)\b/i],
