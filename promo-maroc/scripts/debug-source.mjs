@@ -4,11 +4,14 @@
 import { readFile } from "node:fs/promises";
 import { parseAnyHtml } from "./lib/parsers.mjs";
 
-const ids = (process.argv[2] || "").split(",").filter(Boolean);
-const { sources } = JSON.parse(await readFile(new URL("../sources.json", import.meta.url), "utf8"));
+const ids = (process.argv[2] || "").split(",").map((x) => x.trim()).filter(Boolean);
+const { sources: all } = JSON.parse(await readFile(new URL("../sources.json", import.meta.url), "utf8"));
+// Un identifiant peut aussi être une adresse directe (https://…) pour tester une page candidate
+const sources = [...all.filter((s) => ids.includes(s.id)),
+  ...ids.filter((x) => /^https?:\/\//.test(x)).map((u) => ({ id: u, url: new URL(u).origin, promoUrl: u }))];
 const UA = "Mozilla/5.0 (compatible; PromoMarocBot/1.0; +https://github.com/medamineamzil-design/ebookclassics-files)";
 
-for (const src of sources.filter((s) => ids.includes(s.id))) {
+for (const src of sources) {
   console.log(`\n===== ${src.id} : ${src.promoUrl}`);
   for (const url of [src.promoUrl, src.url.replace(/\/$/, "") + "/products.json?limit=1", src.url.replace(/\/$/, "") + "/wp-json/wc/store/v1/products?per_page=1"]) {
     try {
@@ -19,6 +22,20 @@ for (const src of sources.filter((s) => ids.includes(s.id))) {
       const marks = ["product-miniature", "product-item", 'class="prd', "woocommerce", "cdn.shopify", "__NEXT_DATA__", "application/ld+json", "regular-price", "old-price", "oldPrice", "price--compare", "<del", "data-price", "prestashop", "Magento", "vtex", "salesforce", "algolia"];
       console.log("   marqueurs : " + marks.map((m) => `${m}=${body.split(m).length - 1}`).join(" "));
       console.log("   titre : " + (body.match(/<title[^>]*>([\s\S]*?)<\/title>/i) || [])[1]?.trim());
+      // Catalogues : liens PDF, liseuses intégrées (iframe) et grandes images
+      const uniq = (a) => [...new Set(a)].slice(0, 15);
+      const pdfs = uniq([...body.matchAll(/(?:href|src|data-[a-z-]+)=["']([^"']+\.pdf[^"']*)["']/gi)].map((m) => m[1]));
+      const frames = uniq([...body.matchAll(/<iframe[^>]*src=["']([^"']+)["']/gi)].map((m) => m[1]));
+      const imgs = uniq([...body.matchAll(/(?:src|data-src|href)=["']([^"']+\.(?:jpe?g|png|webp)[^"']*)["']/gi)].map((m) => m[1])
+        .filter((u) => /catalog|depliant|flyer|promo|leaflet|brochure|upload|wp-content|cdn/i.test(u)));
+      const links = uniq([...body.matchAll(/<a[^>]*href=["']([^"']+)["'][^>]*>([\s\S]{0,160}?)<\/a>/gi)]
+        .filter((m) => /catalog|d[ée]pliant|promo|offre|arrivage/i.test(m[1] + m[2])).map((m) => `${m[1]} « ${m[2].replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim().slice(0, 80)} »`));
+      const dates = uniq([...body.replace(/<[^>]+>/g, " ").matchAll(/(?:du|valable|jusqu'au|au)\s+\d{1,2}(?:er)?\s*(?:[\/.-]\d{1,2}|\s+[a-zéû]+)[^.<]{0,40}/gi)].map((m) => m[0].replace(/\s+/g, " ")));
+      console.log("   PDF : " + (pdfs.join(" | ") || "aucun"));
+      console.log("   iframes : " + (frames.join(" | ") || "aucune"));
+      console.log("   images : " + (imgs.join(" | ") || "aucune"));
+      console.log("   liens catalogue : " + (links.join(" | ") || "aucun"));
+      console.log("   dates : " + (dates.join(" | ") || "aucune"));
       const res2 = parseAnyHtml(body, src.promoUrl);
       console.log(`   analyseur : ${res2.platform} ${res2.items.length} produits`);
       const anchor = body.search(/data-testid="current-price"|regular-price/);
