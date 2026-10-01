@@ -38,7 +38,10 @@
   const state = {
     userPromos: store.get(STORAGE.promos, []),
     favs: new Set(store.get(STORAGE.favs, [])),
-    showDemo: store.get(STORAGE.demo, true),
+    showDemo: store.get(STORAGE.demo, null), // null = automatique (exemples seulement sans données réelles)
+    remote: [],      // promotions collectées chaque jour (data/promotions.json)
+    remoteInfo: null,
+    sources: [],     // recueil des sources (sources.json)
     view: "all",
     category: "all",
     query: "",
@@ -61,12 +64,31 @@
     }));
   }
 
-  const allPromos = () => [...state.userPromos, ...(state.showDemo ? demoPromos() : [])];
+  const demoVisible = () => state.showDemo ?? state.remote.length === 0;
+  const allPromos = () => [...state.remote, ...state.userPromos, ...(demoVisible() ? demoPromos() : [])];
+
+  // Promotions réelles : fichier mis à jour chaque jour par le robot de collecte
+  async function loadRemote() {
+    try {
+      const [data, src] = await Promise.all([
+        fetch("data/promotions.json", { cache: "no-cache" }).then((r) => r.ok ? r.json() : null),
+        fetch("sources.json", { cache: "no-cache" }).then((r) => r.ok ? r.json() : null)
+      ]);
+      if (src) state.sources = src.sources || [];
+      if (data) {
+        state.remoteInfo = data;
+        state.remote = (data.promotions || []).map((p) => ({
+          ...p, remote: true, source: p.url || "", createdAt: parseISO(p.startDate).getTime()
+        }));
+      }
+    } catch { /* hors ligne sans cache : on garde les données locales */ }
+    render();
+  }
 
   function statusOf(p) {
     const t = toISO(today());
     if (t < p.startDate) return "upcoming";
-    if (t > p.endDate) return "expired";
+    if (p.endDate && t > p.endDate) return "expired";
     return "active";
   }
 
@@ -75,6 +97,7 @@
     const st = statusOf(p);
     if (st === "upcoming") { const n = daysBetween(t, p.startDate); return n === 1 ? "Commence demain" : `Commence dans ${n} j`; }
     if (st === "expired") return "Terminée";
+    if (!p.endDate) return "Fin non communiquée";
     const n = daysBetween(t, p.endDate);
     if (n === 0) return "Dernier jour !";
     if (n === 1) return "Se termine demain";
@@ -86,7 +109,7 @@
     const q = state.query.trim().toLowerCase();
     let list = allPromos();
     if (state.view === "fav") list = list.filter((p) => state.favs.has(p.id));
-    if (state.view === "mine") list = list.filter((p) => !p.demo);
+    if (state.view === "mine") list = list.filter((p) => !p.demo && !p.remote);
     if (state.category !== "all") list = list.filter((p) => p.category === state.category);
     if (state.city !== "Toutes les villes") list = list.filter((p) => p.city === state.city || p.city === "Tout le Maroc");
     if (state.status !== "all") list = list.filter((p) => statusOf(p) === state.status);
@@ -95,7 +118,7 @@
 
     const sorters = {
       discount: (a, b) => b.percent - a.percent,
-      ending: (a, b) => a.endDate.localeCompare(b.endDate),
+      ending: (a, b) => (a.endDate || "9999").localeCompare(b.endDate || "9999"),
       saving: (a, b) => (b.originalPrice - b.promoPrice) - (a.originalPrice - a.promoPrice),
       priceAsc: (a, b) => a.promoPrice - b.promoPrice,
       recent: (a, b) => b.createdAt - a.createdAt
@@ -121,7 +144,7 @@
     return `
       <article class="card ${st}" data-id="${esc(p.id)}" tabindex="0">
         <div class="badge">-${p.percent.toLocaleString("fr-FR")}%</div>
-        <div class="card-icon" aria-hidden="true">${cat.icon}</div>
+        <div class="card-icon" aria-hidden="true">${p.image ? `<img src="${esc(p.image)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : cat.icon}</div>
         <div class="card-body">
           <h3>${esc(p.product)}</h3>
           <p class="meta">${esc(p.brand ? p.brand + " · " : "")}<b>${esc(p.store)}</b> · ${esc(p.city)}</p>
@@ -129,10 +152,10 @@
             <span class="promo">${fmtPrice(p.promoPrice)}</span>
             <span class="orig">${fmtPrice(p.originalPrice)}</span>
           </div>
-          <p class="dates">📅 ${fmtDate(p.startDate)} → ${fmtDate(p.endDate)}</p>
+          <p class="dates">📅 ${p.endDate ? `${fmtDate(p.startDate)} → ${fmtDate(p.endDate)}` : `Depuis le ${fmtDate(p.startDate)}`}</p>
           <div class="foot">
             <span class="time ${st}">${timeLabel(p)}</span>
-            ${p.demo ? '<span class="tag">Exemple</span>' : p.source ? '<span class="tag ok">Sourcée</span>' : ""}
+            ${p.demo ? '<span class="tag">Exemple</span>' : p.remote ? '<span class="tag ok">Mise à jour auto</span>' : p.source ? '<span class="tag ok">Sourcée</span>' : ""}
           </div>
         </div>
         <button class="fav${fav ? " on" : ""}" data-fav="${esc(p.id)}" aria-label="${fav ? "Retirer des" : "Ajouter aux"} favoris">${fav ? "♥" : "♡"}</button>
@@ -140,6 +163,8 @@
   }
 
   function render() {
+    document.body.classList.toggle("view-sources", state.view === "sources");
+    if (state.view === "sources") return renderSources();
     const list = filtered();
     $("#list").innerHTML = list.map(card).join("");
     $("#empty").hidden = list.length > 0;
@@ -148,7 +173,53 @@
     $("#stats").innerHTML = list.length
       ? `<span><b>${list.length}</b> promo${list.length > 1 ? "s" : ""}</span><span>Jusqu'à <b>-${best}%</b></span><span>Économie cumulée <b>${fmtPrice(round2(saving))}</b></span>`
       : "";
+    $("#stats").innerHTML += updateInfo();
     document.querySelectorAll(".chip").forEach((c) => c.classList.toggle("active", c.dataset.cat === state.category));
+    document.querySelectorAll(".bottombar [data-view]").forEach((b) => b.classList.toggle("active", b.dataset.view === state.view));
+  }
+
+  function updateInfo() {
+    const d = state.remoteInfo?.generatedAt;
+    if (!d) return `<span class="upd">Promotions réelles : en attente de la première collecte</span>`;
+    return `<span class="upd">Mise à jour : ${new Date(d).toLocaleString("fr-FR", { dateStyle: "medium", timeStyle: "short" })}</span>`;
+  }
+
+  const KINDS = [
+    ["enseigne", "🏬 Enseignes et grandes surfaces (catalogues)"],
+    ["e-commerce", "🛍️ Boutiques en ligne"],
+    ["operateur", "📶 Opérateurs télécom"],
+    ["deals", "🎟️ Deals services et loisirs"],
+    ["agregateur", "📚 Agrégateurs de catalogues"]
+  ];
+
+  function renderSources() {
+    const q = state.query.trim().toLowerCase();
+    const report = new Map((state.remoteInfo?.sources || []).map((r) => [r.id, r]));
+    const list = state.sources.filter((s) => !q || `${s.name} ${s.url} ${s.format}`.toLowerCase().includes(q));
+    const auto = state.sources.filter((s) => s.adapter).length;
+    $("#stats").innerHTML = `<span><b>${state.sources.length}</b> sources</span><span><b>${auto}</b> collectées chaque jour</span>` + updateInfo();
+    $("#list").innerHTML = KINDS.map(([kind, title]) => {
+      const items = list.filter((s) => s.kind === kind);
+      if (!items.length) return "";
+      return `<h2 class="group">${title} <small>${items.length}</small></h2>` + items.map((s) => {
+        const r = report.get(s.id);
+        const status = !s.adapter ? `<span class="tag">Consultation / saisie manuelle</span>`
+          : !r ? `<span class="tag">Collecte auto · en attente</span>`
+          : r.ok && r.count ? `<span class="tag ok">✔ ${r.count} promo${r.count > 1 ? "s" : ""} aujourd'hui</span>`
+          : `<span class="tag err">✘ ${esc(r.error || "aucune promo trouvée")}</span>`;
+        return `
+          <article class="source">
+            <div class="source-head">
+              <h3>${esc(s.name)}</h3>
+              ${s.official ? '<span class="tag ok">Officiel</span>' : '<span class="tag">Relais</span>'}
+            </div>
+            <p class="meta">${catOf(s.sector).icon} ${esc(s.format)} · ${esc(s.frequency)}${s.hasDates ? " · dates de validité" : ""}</p>
+            ${s.notes ? `<p class="meta">${esc(s.notes)}</p>` : ""}
+            <div class="foot">${status}<a class="btn small" href="${esc(s.promoUrl)}" target="_blank" rel="noopener noreferrer">Ouvrir ↗</a></div>
+          </article>`;
+      }).join("");
+    }).join("");
+    $("#empty").hidden = list.length > 0;
     document.querySelectorAll(".bottombar [data-view]").forEach((b) => b.classList.toggle("active", b.dataset.view === state.view));
   }
 
@@ -156,7 +227,7 @@
     const p = allPromos().find((x) => x.id === id);
     if (!p) return;
     const cat = catOf(p.category);
-    const total = daysBetween(p.startDate, p.endDate) + 1;
+    const total = p.endDate ? daysBetween(p.startDate, p.endDate) + 1 : 0;
     const elapsed = Math.min(total, Math.max(0, daysBetween(p.startDate, toISO(today())) + 1));
     const st = statusOf(p);
     const dlg = $("#dlgDetail");
@@ -166,6 +237,7 @@
         <button type="button" class="icon-btn" data-close aria-label="Fermer">✕</button>
       </div>
       ${p.demo ? '<p class="warn">Exemple de démonstration : prix non vérifiés.</p>' : ""}
+      ${p.image ? `<img class="detail-img" src="${esc(p.image)}" alt="" referrerpolicy="no-referrer">` : ""}
       <div class="detail-prices">
         <div><small>Prix original</small><s>${fmtPrice(p.originalPrice)}</s></div>
         <div class="big"><small>Prix promo</small><b>${fmtPrice(p.promoPrice)}</b></div>
@@ -178,17 +250,18 @@
         <dt>Ville</dt><dd>${esc(p.city)}</dd>
         <dt>Catégorie</dt><dd>${esc(cat.label)}</dd>
         <dt>Date début</dt><dd>${fmtDate(p.startDate)}</dd>
-        <dt>Date fin</dt><dd>${fmtDate(p.endDate)}</dd>
-        <dt>Durée</dt><dd>${total} jour${total > 1 ? "s" : ""}</dd>
+        <dt>Date fin</dt><dd>${p.endDate ? fmtDate(p.endDate) : "Non communiquée par le vendeur"}</dd>
+        ${total ? `<dt>Durée</dt><dd>${total} jour${total > 1 ? "s" : ""}</dd>` : ""}
+        ${p.remote && p.lastSeen ? `<dt>Prix vérifié le</dt><dd>${fmtDate(p.lastSeen)}</dd>` : ""}
         ${p.conditions ? `<dt>Conditions</dt><dd>${esc(p.conditions)}</dd>` : ""}
-        ${p.source ? `<dt>Source</dt><dd><a href="${esc(p.source)}" target="_blank" rel="noopener noreferrer">Voir la source</a></dd>` : ""}
+        ${p.source ? `<dt>Source</dt><dd><a href="${esc(p.source)}" target="_blank" rel="noopener noreferrer">${p.remote ? "Voir chez le vendeur" : "Voir la source"}</a></dd>` : ""}
       </dl>
-      <div class="progress" aria-label="Avancement de la promotion"><span style="width:${st === "upcoming" ? 0 : (elapsed / total) * 100}%"></span></div>
+      ${total ? `<div class="progress" aria-label="Avancement de la promotion"><span style="width:${st === "upcoming" ? 0 : (elapsed / total) * 100}%"></span></div>` : ""}
       <p class="time ${st}">${timeLabel(p)}</p>
       <div class="actions wrap">
         <button class="btn ghost" data-share="${esc(p.id)}">📤 Partager</button>
         <a class="btn ghost" target="_blank" rel="noopener" href="https://wa.me/?text=${encodeURIComponent(shareText(p))}">💬 WhatsApp</a>
-        ${p.demo ? "" : `<button class="btn ghost" data-edit="${esc(p.id)}">✏️ Modifier</button><button class="btn danger" data-del="${esc(p.id)}">🗑️ Supprimer</button>`}
+        ${p.demo || p.remote ? "" : `<button class="btn ghost" data-edit="${esc(p.id)}">✏️ Modifier</button><button class="btn danger" data-del="${esc(p.id)}">🗑️ Supprimer</button>`}
       </div>`;
     dlg.showModal();
   }
@@ -196,7 +269,7 @@
   const shareText = (p) =>
     `🏷️ ${p.product}${p.brand ? " (" + p.brand + ")" : ""} chez ${p.store} – ${p.city}\n` +
     `${fmtPrice(p.originalPrice)} ➜ ${fmtPrice(p.promoPrice)} (-${p.percent}%)\n` +
-    `Du ${fmtDate(p.startDate)} au ${fmtDate(p.endDate)}` + (p.source ? `\n${p.source}` : "");
+    (p.endDate ? `Du ${fmtDate(p.startDate)} au ${fmtDate(p.endDate)}` : `Depuis le ${fmtDate(p.startDate)}`) + (p.source ? `\n${p.source}` : "");
 
   // ---------- Formulaire ----------
   const form = $("#promoForm");
@@ -382,12 +455,17 @@
   document.querySelectorAll(".bottombar [data-view]").forEach((b) => b.addEventListener("click", () => {
     state.view = b.dataset.view;
     // Dans Favoris / Mes ajouts on montre aussi les promos à venir et expirées
-    if (state.view !== "all") { state.status = "all"; $("#fStatus").value = "all"; }
+    if (state.view === "fav" || state.view === "mine") { state.status = "all"; $("#fStatus").value = "all"; }
     render();
     window.scrollTo({ top: 0, behavior: "smooth" });
   }));
   $("#btnAdd").addEventListener("click", () => openForm());
-  $("#btnMore").addEventListener("click", () => { $("#toggleDemo").checked = state.showDemo; $("#dlgMore").showModal(); });
+  $("#btnMore").addEventListener("click", () => { $("#toggleDemo").checked = demoVisible(); $("#dlgMore").showModal(); });
+  $("#btnMine").addEventListener("click", () => {
+    $("#dlgMore").close();
+    state.view = "mine"; state.status = "all"; $("#fStatus").value = "all";
+    render();
+  });
   $("#btnExport").addEventListener("click", exportJSON);
   $("#fileImport").addEventListener("change", (e) => { if (e.target.files[0]) importJSON(e.target.files[0]); e.target.value = ""; });
   $("#toggleDemo").addEventListener("change", (e) => { state.showDemo = e.target.checked; store.set(STORAGE.demo, state.showDemo); render(); });
@@ -407,6 +485,7 @@
   applyTheme(store.get(STORAGE.theme, null));
   renderFilters();
   render();
+  loadRemote();
   if ("serviceWorker" in navigator && location.protocol !== "file:") {
     navigator.serviceWorker.register("sw.js").catch(() => {});
   }

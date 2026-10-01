@@ -62,7 +62,7 @@
     <button data-view="all" class="active"><span>🏷️</span>Promos</button>
     <button data-view="fav"><span>♥</span>Favoris</button>
     <button id="btnAdd" class="add"><span>＋</span>Ajouter</button>
-    <button data-view="mine"><span>📝</span>Mes ajouts</button>
+    <button data-view="sources"><span>📚</span>Sources</button>
     <button id="btnMore"><span>⋯</span>Plus</button>
   </nav>
 
@@ -112,6 +112,7 @@
       <button type="button" class="icon-btn" data-close aria-label="Fermer">✕</button>
     </div>
     <div class="menu">
+      <button id="btnMine" class="btn ghost">📝 Mes promotions ajoutées</button>
       <button id="btnExport" class="btn ghost">⬇️ Exporter mes promotions (JSON)</button>
       <label class="btn ghost file">⬆️ Importer des promotions (JSON)
         <input id="fileImport" type="file" accept="application/json,.json" hidden>
@@ -120,9 +121,10 @@
       <button id="btnReset" class="btn danger">Effacer toutes mes données</button>
     </div>
     <p class="about">
-      Promo Maroc fonctionne hors ligne. Les promotions marquées <b>Exemple</b> servent uniquement de démonstration :
-      vérifiez toujours en magasin ou sur le catalogue officiel de l'enseigne. Les promotions que vous ajoutez restent
-      sur votre téléphone.
+      Les promotions <b>Mise à jour auto</b> sont relevées chaque matin sur les sites des vendeurs (onglet <b>Sources</b>) ;
+      quand le vendeur n'affiche pas de date de fin, la date de début est le jour de la première détection.
+      Les promotions marquées <b>Exemple</b> servent uniquement de démonstration. Vérifiez toujours le prix final chez le vendeur.
+      Les promotions que vous ajoutez restent sur votre téléphone.
     </p>
   </dialog>
 
