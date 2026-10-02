@@ -1023,6 +1023,13 @@
    "duration": 27241,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/treasure-island/treasure-island.mp3"
+  },
+  "es": {
+   "bytes": 323773203,
+   "dl": true,
+   "duration": 40441,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/treasure-island/treasure-island-es.mp3"
   }
  },
  "twenty-thousand-leagues-under-the-sea": {
