@@ -640,6 +640,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-call-of-the-wild/the-call-of-the-wild.mp3"
   }
  },
+ "the-canterbury-tales": {
+  "en": {
+   "bytes": 558511204,
+   "dl": true,
+   "duration": 69799,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-canterbury-tales/the-canterbury-tales.mp3"
+  }
+ },
  "the-count-of-monte-cristo": {
   "en": {
    "bytes": 1434840456,
