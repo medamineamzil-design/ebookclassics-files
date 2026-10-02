@@ -1,4 +1,13 @@
 {
+ "a-christmas-carol": {
+  "en": {
+   "bytes": 91755106,
+   "dl": true,
+   "duration": 11468,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/a-christmas-carol/a-christmas-carol.mp3"
+  }
+ },
  "a-midsummer-night-s-dream": {
   "en": {
    "bytes": 59745929,
