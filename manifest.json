@@ -8,6 +8,14 @@
     "txt"
    ]
   },
+  "a-journal-of-the-plague-year": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "a-midsummer-night-s-dream": {
    "de": [
     "epub",
@@ -714,6 +722,14 @@
     "txt"
    ]
   },
+  "nicholas-nickleby": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "nicomachean-ethics": {
    "en": [
     "epub",
@@ -937,6 +953,14 @@
    ]
   },
   "sense-and-sensibility": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "shirley": {
    "en": [
     "epub",
     "html",
@@ -1484,6 +1508,14 @@
     "txt"
    ]
   },
+  "the-return-of-the-native": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-rubaiyat-of-omar-khayyam": {
    "en": [
     "epub",
@@ -1610,6 +1642,20 @@
   },
   "the-time-machine": {
    "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-vicar-of-wakefield": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
     "epub",
     "html",
     "pdf",
@@ -1861,5 +1907,5 @@
    ]
   }
  },
- "generated": "2026-10-03T23:29:43Z"
+ "generated": "2026-10-03T23:30:27Z"
 }
