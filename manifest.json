@@ -28,6 +28,26 @@
     "txt"
    ]
   },
+  "a-study-in-scarlet": {
+   "de": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "a-tale-of-two-cities": {
    "en": [
     "epub",
@@ -1152,6 +1172,22 @@
     "txt"
    ]
   },
+  "the-moonstone": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-mysteries-of-udolpho": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-odyssey": {
    "en": [
     "epub",
@@ -1312,6 +1348,20 @@
   },
   "the-secret-garden": {
    "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-sign-of-the-four": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
     "epub",
     "html",
     "pdf",
@@ -1546,6 +1596,26 @@
     "txt"
    ]
   },
+  "white-fang": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "it": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "wuthering-heights": {
    "en": [
     "epub",
@@ -1555,5 +1625,5 @@
    ]
   }
  },
- "generated": "2026-09-27T21:21:12Z"
+ "generated": "2026-10-03T00:55:06Z"
 }
