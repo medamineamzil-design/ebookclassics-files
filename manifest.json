@@ -172,6 +172,14 @@
     "txt"
    ]
   },
+  "barchester-towers": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "bel-ami": {
    "en": [
     "epub",
@@ -262,6 +270,14 @@
     "txt"
    ],
    "es": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "daniel-deronda": {
+   "en": [
     "epub",
     "html",
     "pdf",
@@ -854,6 +870,14 @@
     "txt"
    ]
   },
+  "our-mutual-friend": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "paradise-lost": {
    "en": [
     "epub",
@@ -1242,6 +1266,14 @@
     "txt"
    ],
    "it": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-house-of-mirth": {
+   "en": [
     "epub",
     "html",
     "pdf",
@@ -1910,6 +1942,14 @@
     "txt"
    ]
   },
+  "washington-square": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "waverley": {
    "en": [
     "epub",
@@ -1947,5 +1987,5 @@
    ]
   }
  },
- "generated": "2026-10-03T23:31:03Z"
+ "generated": "2026-10-03T23:39:26Z"
 }
