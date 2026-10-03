@@ -336,6 +336,14 @@
     "txt"
    ]
   },
+  "ethan-frome": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "evelina": {
    "en": [
     "epub",
@@ -754,6 +762,14 @@
     "txt"
    ]
   },
+  "my-antonia": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "nicholas-nickleby": {
    "en": [
     "epub",
@@ -1118,6 +1134,14 @@
     "txt"
    ]
   },
+  "the-awakening": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-betrothed": {
    "en": [
     "epub",
@@ -1442,6 +1466,14 @@
     "txt"
    ]
   },
+  "the-old-curiosity-shop": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-phantom-of-the-opera": {
    "en": [
     "epub",
@@ -1550,6 +1582,14 @@
     "txt"
    ],
    "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-red-badge-of-courage": {
+   "en": [
     "epub",
     "html",
     "pdf",
@@ -1987,5 +2027,5 @@
    ]
   }
  },
- "generated": "2026-10-03T23:39:26Z"
+ "generated": "2026-10-03T23:40:03Z"
 }
