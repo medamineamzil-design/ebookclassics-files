@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Le Jour des Rois — William Shakespeare</title><style>
+:root{--paper:#fbf8f1;--ink:#1f1b16;--muted:#6f6352;--accent:#9a6b2f;--rule:#e4dccb}
+@media (prefers-color-scheme:dark){:root{--paper:#16140f;--ink:#ece6d8;--muted:#a79c88;--accent:#d8a95e;--rule:#2e2a22}}
+html{background:var(--paper)}
+body{font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Libertinus Serif",Georgia,serif;color:var(--ink);
+     background:var(--paper);line-height:1.65;font-size:1.12rem;max-width:36em;margin:0 auto;padding:2.5em 1.25em 5em}
+.titlepage{text-align:center;min-height:70vh;display:flex;flex-direction:column;justify-content:center;gap:.6em;
+           border-bottom:1px solid var(--rule);margin-bottom:2.5em;padding-bottom:2.5em}
+.titlepage img{max-width:260px;width:60%;margin:0 auto 1.5em;border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+h1{font-size:2.4em;line-height:1.15;font-weight:600;margin:0;letter-spacing:-.01em}
+.author{font-style:italic;font-size:1.25em;color:var(--accent);margin:0}
+.translator{font-size:.95em;color:var(--muted);margin:0}
+nav.toc{margin:0 0 3em}
+nav.toc h2{font-size:.85em;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:left;margin:0 0 .8em}
+nav.toc ol{list-style:none;padding:0;margin:0;columns:1}
+nav.toc li{margin:.25em 0}
+nav.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent}
+nav.toc a:hover{border-color:var(--accent)}
+h2.chapter{font-size:1.45em;font-weight:600;text-align:center;margin:3.5em 0 1.6em;line-height:1.3}
+h2.chapter::before{content:"";display:block;width:3em;height:2px;background:var(--accent);margin:0 auto 1.1em}
+p{margin:0;text-indent:1.5em;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+h2.chapter + p, .titlepage + p{text-indent:0}
+h2.chapter + p::first-letter{font-size:3.1em;float:left;line-height:.85;padding:.08em .08em 0 0;color:var(--accent);font-weight:600}
+.colophon{margin-top:5em;padding-top:1.5em;border-top:1px solid var(--rule);text-align:center;color:var(--muted);font-size:.85em;text-indent:0}
+h3.sub{font-size:1em;font-weight:600;font-variant:small-caps;letter-spacing:.04em;text-align:center;margin:2.2em 0 1em}
+h3.sub + p{text-indent:0}
+@media print{h2.chapter{break-before:page}}
+</style></head><body>
+<header class="titlepage">
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjI0MDAiIHZpZXdCb3g9IjAgMCAxNjAwIDI0MDAiPgo8cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSIyNDAwIiBmaWxsPSIjMWQxZDFmIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjMwMCIgZmlsbD0iI2Q5YjI2ZiIgb3BhY2l0eT0iLjkyIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMWQxZDFmIiBzdHJva2Utd2lkdGg9IjEyIiBvcGFjaXR5PSIuNSIvPgo8Y2lyY2xlIGN4PSIxMTIwIiBjeT0iNTYwIiByPSIxMjAiIGZpbGw9IiMxZDFkMWYiIG9wYWNpdHk9Ii4xOCIvPgo8cmVjdCB4PSIxNjAiIHk9IjkzMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIxMCIgZmlsbD0iI2Q5YjI2ZiIvPgo8dGV4dCB4PSIxNjAiIHk9IjEwOTgiIGZvbnQtc2l6ZT0iMTUwIiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmMmVkZTMiPkxlIEpvdXIgZGVzPC90ZXh0Pjx0ZXh0IHg9IjE2MCIgeT0iMTI2MiIgZm9udC1zaXplPSIxNTAiIGZvbnQtd2VpZ2h0PSI2MDAiIGZvbnQtZmFtaWx5PSJMaWJlcnRpbnVzIFNlcmlmLCBHZW9yZ2lhLCBzZXJpZiIgZmlsbD0iI2YyZWRlMyI+Um9pczwvdGV4dD4KPHRleHQgeD0iMTYwIiB5PSIxNDk4IiBmb250LXNpemU9IjY4IiBmb250LXN0eWxlPSJpdGFsaWMiIGZvbnQtZmFtaWx5PSJMaWJlcnRpbnVzIFNlcmlmLCBHZW9yZ2lhLCBzZXJpZiIgZmlsbD0iI2Q5YjI2ZiI+V2lsbGlhbSBTaGFrZXNwZWFyZTwvdGV4dD4KPHRleHQgeD0iMTYwIiB5PSIyMjMwIiBmb250LXNpemU9IjQ0IiBsZXR0ZXItc3BhY2luZz0iMTQiIGZvbnQtZmFtaWx5PSJMaWJlcnRpbnVzIFNlcmlmLCBHZW9yZ2lhLCBzZXJpZiIgZmlsbD0iI2YyZWRlMyIgb3BhY2l0eT0iLjc1Ij5CT09LQ0xBU1NJQ1M8L3RleHQ+Cjwvc3ZnPg==" alt="">
+<h1>Le Jour des Rois</h1>
+<p class="author">William Shakespeare</p>
+<p class="translator">Traduction de François Guizot</p>
+</header>
+<nav class="toc"><h2>Table des matières</h2><ol>
+<li><a href="#c1">Acte premier — Scène I</a></li>
+<li><a href="#c2">Scène II</a></li>
+<li><a href="#c3">Scène IV</a></li>
+<li><a href="#c4">Scène I</a></li>
+<li><a href="#c5">Scène II</a></li>
+<li><a href="#c6">Scène III</a></li>
+<li><a href="#c7">Scène IV</a></li>
+<li><a href="#c8">Scène V</a></li>
+<li><a href="#c9">Scène I</a></li>
+<li><a href="#c10">Scène II</a></li>
+<li><a href="#c11">Scène III</a></li>
+<li><a href="#c12">Scène IV.</a></li>
+<li><a href="#c13">Scène I</a></li>
+<li><a href="#c14">Scène II</a></li>
+<li><a href="#c15">Scène III</a></li>
+<li><a href="#c16">Scène I</a></li>
+</ol></nav>
+<p>OEUVRES COMPLÈTES DE SHAKSPEARE</p>
+<p>TRADUCTION DE M. GUIZOT</p>
+<p>NOUVELLE ÉDITION ENTIÈREMENT REVUE AVEC UNE ÉTUDE SUR SHAKSPEARE DES NOTICES SUR CHAQUE PIÈCE ET DES NOTES</p>
+<p>Volume 3 Timon d&#x27;Athènes. Le Jour des Rois.--Les deux gentilshommes de Vérone. Roméo et Juliette.--Le Songe d&#x27;une nuit d&#x27;été. Tout est bien qui finit bien.</p>
+<p>PARIS A LA LIBRAIRIE ACADÉMIQUE DIDIER ET Cie, LIBRAIRES-ÉDITEURS 35, QUAI DES AUGUSTINS 1862</p>
+<p>======================================================================</p>
+<h3 class="sub">Notice sur le jour des rois</h3>
+<p>Quoique la partie comique de cette pièce appartienne tout entière à Shakspeare, il est encore redevable de son sujet à Bandello. Nous y retrouvons cette ressemblance extraordinaire de deux personnes dont Plaute s&#x27;est plus d&#x27;une fois servie pour le noeud de ses comédies, et que Shakspeare lui a déjà empruntée dans ses Méprises.</p>
+<p>Lorsque Rome fut conquise, en 1527, par les Espagnols et les Allemands; il se trouva parmi les prisonniers un riche marchand nommé Ambrogio, qui avait un fils et une fille, tous les deux d&#x27;une beauté et d&#x27;une ressemblance si parfaites que, s&#x27;ils changeaient d&#x27;habillements, le père lui-même avait peine à les distinguer[1]. Paolo, c&#x27;est le nom du garçon, fut le partage d&#x27;un Allemand, et sa soeur jumelle, Nicuola, tomba entre les mains de deux soldats qui la traitèrent avec beaucoup de douceur, dans l&#x27;espérance qu&#x27;ils en tireraient une rançon considérable. Ambrogio parvint à se sauver de la captivité, et ayant soustrait, en les cachant dans la terre, une grande partie de ses richesses à la cupidité des ennemis, il se mit à la recherche de ses enfants, racheta sa fille, mais ne put retrouver son fils, et le crut mort.</p>
+<p>[Note 1:</p>
+<p>....................... Simillima proles, Indiscreta suis, gratusque parentibus error. (VIRGILE.)]</p>
+<p>Cette pensée le tourmentant de plus en plus, il quitta Rome et se retira à Erte, lieu de sa naissance. Ce fut là qu&#x27;un autre marchand, veuf depuis plusieurs années, devint amoureux de Nicuola et la demanda en mariage; mais Ambrogio, craignant que cette union peu assortie du côté de l&#x27;âge, ne fût pas heureuse pour Nicuola, et ne voulant pas refuser trop brusquement ce vieux soupirant, lui dit qu&#x27;il ne se séparerait pas de sa fille qu&#x27;il n&#x27;eût retrouvé son fils, espoir qu&#x27;il conservait toujours.</p>
+<p>Cependant Nicuola avait aussi fait impression sur le coeur d&#x27;un jeune gentilhomme nommé Lattanzio Puccini, et n&#x27;était pas indifférente à son amour. Dans ce temps-là, des affaires appelèrent Ambrogio à Rome, et il conduisit sa fille à Fabriano, chez un de ses parents, pour ne pas la laisser seule. Cette absence arrêta la passion de Lattanzio, qui changea bientôt d&#x27;objet et se porta vers la fille de Lanzetti, la belle Catella. Au contraire, Nicuola revint à Erte toujours plus éprise, et apprit avec la plus vive douleur la nouvelle inclination de son amant. Ambrogio fut obligé de faire un second voyage, et cette fois-ci il laissa sa fille dans un couvent où était Camilla, nièce de Lattanzio. Celui-ci y venait souvent commander toutes sortes d&#x27;ouvrages à l&#x27;aiguille que faisaient les religieuses. Nicuola écoutait quelquefois les conversations qu&#x27;il avait avec sa nièce Camilla. Un jour, il lui racontait avec tristesse qu&#x27;il avait perdu un jeune page qu&#x27;il aimait, et qui lui était très-nécessaire. Ce récit fit naître à Nicuola l&#x27;idée de s&#x27;habiller en homme, et d&#x27;entrer chez Lattanzio en qualité de page. Sa gouvernante l&#x27;aida dans ce projet. Elle fut admise, en effet, sous le nom de Romulo, dans la maison de son infidèle amant; et comme Julia, dans les Deux Gentilshommes de Vérone, elle fut bientôt chargée d&#x27;aller parler à sa rivale de l&#x27;amour de son maître. Catella était peu sensible aux sollicitations de Lattanzio; mais le faux page fit une telle impression sur son coeur qu&#x27;elle n&#x27;éprouva plus que de la répugnance pour celui qui l&#x27;envoyait.</p>
+<p>Pendant ces intrigues, le maître de Paolo l&#x27;avait pris en affection, au point que, venant à mourir, il l&#x27;avait fait son héritier. Paolo s&#x27;empressa de retourner à Rome, et de là à Erte pour y chercher son père. Il passe sous la fenêtre de Catella, qui le prend pour le prétendu page. Ambrogio arrive: Nicuola l&#x27;aperçoit dans la rue, et, dans sa frayeur, elle se sauve chez sa gouvernante. Celle-ci lui conseille de reprendre les habits de son sexe, et court annoncer au père qu&#x27;elle lui conduira sa fille le lendemain.</p>
+<p>Cependant Lattanzio attend Romulo avec inquiétude et impatience; il le cherche partout, et on lui montre la maison de la gouvernante, où l&#x27;on avait vu entrer Nicuola sous son déguisement. Il lie conversation avec la duègne, qui lui découvre tout, lui vante la constance de son ancienne maîtresse, et prépare la réconciliation qu&#x27;achève la vue de Nicuola elle-même.</p>
+<p>Catella prend toujours Paolo pour Romulo. Paolo, qui l&#x27;aime, s&#x27;aperçoit de sa méprise et la détrompe.</p>
+<p>Bientôt tout s&#x27;éclaircit. Ambrogio se réjouit du retour de son fils et consent au mariage de sa fille. Lanzetti, qui a cru que Paolo n&#x27;était autre que Nicuola déguisée, revient de son erreur et accorde aussi Catella au fils d&#x27;Ambrogio.</p>
+<p>Shakspeare a mis cette nouvelle sur la scène avec sa négligence ordinaire, car le déguisement de Viola, amoureuse du duc qu&#x27;elle ne connaît point, n&#x27;est pas aussi bien motivé que celui de la Nicuola de Bandello. En général, les événements de la nouvelle sont conduits avec beaucoup plus d&#x27;art que ceux de la comédie; mais c&#x27;est dans les caractères, le comique des situations et la poésie des détails, que Shakspeare retrouve sa supériorité et fait oublier tous les reproches d&#x27;invraisemblance que la critique pourrait lui adresser. L&#x27;originalité de sir André, de sir Tobie et du bouffon, les espiègleries de la friponne Marie, la gravité comique et les prétentions de Malvolio, la scène délicieuse du jardin et de la lettre, le duel de sir André et du faux page, le charme que répand sur toute la pièce l&#x27;amour de Viola, un heureux mélange de sentiment et de cette gaieté que les Anglais appellent humour, tout contribue à rendre cette pièce une des plus agréables de Shakspeare.</p>
+<p>Selon le docteur Malone, elle aurait été écrite dans l&#x27;année 1614; mais dans une comédie de Ben Jonson, antérieure à cette date, on trouve un passage qui semblerait applicable au Jour des rois, Ben Jonson saisissait toutes les occasions de tourner en ridicule les défauts de Shakspeare. Un de ses personnages dit, à la fin de l&#x27;acte III de sa pièce intitulée: Every man out of his humour:</p>
+<p>«.....Il eût fallu que sa comédie fût fondée sur une autre intrigue que celle d&#x27;un duc amoureux d&#x27;une comtesse, tandis que cette comtesse serait amoureuse du fils du duc, et ce fils du duc amoureux de la suivante de la dame. Vivent ces amours embrouillés, avec un paysan bouffon pour valet, plutôt que des événements trop rapprochés de notre temps!»</p>
+<p>Un autre témoignage tout à fait décisif est la découverte faite par M. Collier d&#x27;un petit journal manuscrit du temps, dans lequel une représentation du Jour des Rois, ou Ce que vous voudrez, est indiquée à la date du 2 février 1601.</p>
+<h3 class="sub">Le jour des rois</h3>
+<p>OU</p>
+<h3 class="sub">Ce que vous voudrez — Comédie</h3>
+<h3 class="sub">Personnages</h3>
+<p>ORSINO, duc d&#x27;Illyrie. SEBASTIEN, jeune gentilhomme, frère de Viola. ANTONIO, capitaine de vaisseau, ami de Sébastien. VALENTIN,   } CURIO,      } gentilshommes de la suite du duc. SIR TOBIE BELCH, oncle d&#x27;Olivia. UN CAPITAINE DE VAISSEAU, ami de Viola. SIR ANDRÉ AGUE-CHEEK[2]. MALVOLIO, intendant d&#x27;Olivia. FABIEN,         } PAYSAN BOUFFON, }au service d&#x27;Olivia. OLIVIA, riche comtesse. VIOLA, amoureuse du duc. MARIE, suivante d&#x27;Olivia. UN PRÊTRE. SEIGNEURS, MATELOTS, OFFICIERS, MUSICIENS, SERVITEURS, etc.</p>
+<p>[Note 2: Ague cheek, mal de joue.]</p>
+<p>La scène est dans une ville d&#x27;Illyrie et sur la côte voisine.</p>
+<h2 class="chapter" id="c1">Acte premier — Scène I</h2>
+<p>Appartement dans le palais du duc.</p>
+<p>LE DUC, CURIO, seigneurs.</p>
+<p>(Des musiciens jouent.)</p>
+<p>LE DUC.--Si la musique est l&#x27;aliment de l&#x27;amour, jouez donc; donnez-m&#x27;en jusqu&#x27;à ce que ma passion surchargée en soit malade et expire.--Répétez cet air; il avait une chute mourante: oh! il a fait sur mon oreille l&#x27;impression du doux vent du midi dont le souffle, en passant sur un champ de violettes, leur dérobe et leur rend à la fois des parfums.--C&#x27;est assez, pas davantage: ces sons ne sont plus aussi doux qu&#x27;ils l&#x27;étaient tout à l&#x27;heure. O esprit de l&#x27;amour, que tu es avide de fraîcheur et de nouveauté! Aussi vaste que la mer, et, comme elle, recevant tout dans ton sein, rien n&#x27;y entre, quelle que soit sa valeur et son mérite, sans dégénérer et perdre tout son prix au bout d&#x27;une minute. L&#x27;imagination est si féconde en formes changeantes, que rien n&#x27;égale ses bizarres fantaisies.</p>
+<p>CURIO.--Voulez-vous venir chasser, seigneur?</p>
+<p>LE DUC.--Quoi donc, Curio?</p>
+<p>CURIO.--La biche.</p>
+<p>LE DUC.--C&#x27;est ce que je fais: je poursuis la plus noble biche que j&#x27;aie vue. Ah! la première fois que mes yeux ont contemplé Olivia, il me sembla que sa présence purifiait l&#x27;air: de cet instant je fus changé en cerf[3], et mes désirs, comme une meute féroce et cruelle, n&#x27;ont cessé depuis de me poursuivre.--(Valentin entre.) Eh bien! quelles nouvelles d&#x27;Olivia?</p>
+<p>[Note 3: Allusion à l&#x27;histoire d&#x27;Actéon.]</p>
+<p>VALENTIN.--Sous votre bon plaisir, seigneur, je n&#x27;ai pu être admis devant elle, et je ne vous rapporte que cette réponse de la part de sa suivante. Le ciel même, avant qu&#x27;il ait été réchauffé pendant sept années, ne jouira point librement de sa vue; mais, comme une religieuse cloîtrée, elle ne marchera que sous le voile; elle arrosera une fois chaque jour le pavé de sa chambre de ses larmes amères, et le tout pour pleurer un frère qui n&#x27;est plus, et dont elle veut entretenir la tendre et vive image dans son triste souvenir.</p>
+<p>LE DUC.--Oh! celle qui a un coeur assez sensible pour payer ce tribut de tendresse à un frère, combien elle aimera quand le trait doré de l&#x27;amour aura donné la mort à la foule de toutes les autres affections qui vivent en elle, quand ses nobles perfections, son foie, son cerveau, son coeur[4], ces trônes souverains, seront une fois occupés et remplis tout entiers par un seul roi suprême!--Allons nous coucher sur ces doux lits de fleurs: les pensers de l&#x27;amour reposent mollement sous le dais d&#x27;une voûte de feuillage.</p>
+<p>[Note 4: Le foie, le cerveau et le coeur étaient regardés comme le siége des passions, des jugements, des sentiments.]</p>
+<p>(Ils sortent.)</p>
+<h2 class="chapter" id="c2">Scène II</h2>
+<p>La côte de la mer.</p>
+<p>VIOLA, UN CAPITAINE, suivi de matelots.</p>
+<p>VIOLA.--Amis, quel est ce pays?</p>
+<p>LE CAPITAINE.--C&#x27;est l&#x27;Illyrie, madame.</p>
+<p>VIOLA.--Et que ferai-je en Illyrie? mon frère est dans l&#x27;Élysée. Peut-être n&#x27;est-il pas noyé. Qu&#x27;en pensez-vous, matelots?</p>
+<p>LE CAPITAINE.--C&#x27;est par un hasard que vous avez été sauvée vous-même.</p>
+<p>VIOLA.--O mon pauvre frère!--Et peut-être pourra-t-il l&#x27;être aussi par hasard.</p>
+<p>LE CAPITAINE.--Cela est vrai, madame; et pour augmenter votre confiance dans le hasard, soyez assurée que lorsque notre vaisseau s&#x27;est ouvert, au moment où vous, et ces tristes restes échappés avec vous, vous êtes attachés au bord de notre chaloupe, j&#x27;ai vu votre frère, plein de prévoyance dans le péril, se lier avec une adresse que lui suggéraient le courage et l&#x27;espoir à un gros mât qui surnageait sur les flots: je l&#x27;y ai vu assis comme Arion sur le dos d&#x27;un dauphin, en allant de front avec les vagues, tant que j&#x27;ai pu le voir.</p>
+<p>VIOLA.--Tenez, voilà de l&#x27;or, pour ce que vous venez de me dire. Mon propre salut me fait naître l&#x27;espérance (et votre récit l&#x27;encourage) qu&#x27;il pourra lui en arriver autant. Connaissez-vous ce pays?</p>
+<p>LE CAPITAINE.--Oui, madame, très-bien; car je suis né et j&#x27;ai été élevé à moins de trois lieues de cet endroit même.</p>
+<p>VIOLA.--Qui gouverne ici?</p>
+<p>LE CAPITAINE.--Un duc aussi illustre par son caractère que par son nom.</p>
+<p>VIOLA.--Quel est son nom?</p>
+<p>LE CAPITAINE.--Orsino.</p>
+<p>VIOLA.--Orsino! J&#x27;ai entendu mon père le nommer; il était garçon alors.</p>
+<p>LE CAPITAINE.--Il l&#x27;est encore, ou du moins il l&#x27;était tout dernièrement; car il n&#x27;y a pas un mois que je suis parti d&#x27;ici, et alors il courait un bruit tout récent (vous savez que les petits causent toujours sur ce que font les grands) qu&#x27;il sollicitait l&#x27;amour de la belle Olivia.</p>
+<p>VIOLA.--Qui est-elle?</p>
+<p>LE CAPITAINE.--Une vertueuse jeune personne, la fille d&#x27;un comte qui est mort il y a environ un an; il la laissa en mourant à la protection de son fils, son frère, qui est mort aussi peu de temps après, et c&#x27;est pour l&#x27;amour de ce frère qu&#x27;elle a, dit-on, renoncé à la vue et à la société des hommes.</p>
+<p>VIOLA.--Oh! que je voudrais être au service de cette dame et y rester inconnue au monde jusqu&#x27;à ce que j&#x27;aie eu le temps de mûrir mes desseins!</p>
+<p>LE CAPITAINE.--Cela serait difficile à obtenir. Elle ne veut écouter aucune proposition, non pas même celle du duc.</p>
+<p>VIOLA.--Capitaine, tu as une heureuse physionomie; et quoique la nature renferme souvent la corruption sous une belle enveloppe, cependant je suis portée à croire de toi que tu as une âme qui convient à ces beaux dehors. Je te prie, et je t&#x27;en récompenserai généreusement, cache ce que je suis, et aide-moi à me procurer le déguisement dont j&#x27;aurai peut-être besoin pour exécuter mes projets. Je veux m&#x27;attacher au service de ce duc. Tu me présenteras à lui en qualité d&#x27;eunuque: cela peut en valoir la peine, car je sais chanter; je saurai lui parler sur divers tons de musique variée, qui lui rendront mon service agréable. Ce qui peut advenir plus tard, je l&#x27;abandonne au temps: conforme seulement ton silence à mes désirs.</p>
+<p>LE CAPITAINE.--Soyez son eunuque, moi je serai votre muet. Quand ma langue sera indiscrète, que mes yeux cessent de voir!</p>
+<p>VIOLA.--Je te remercie, conduis-moi.</p>
+<p>SIR TOBIE et MARIE.</p>
+<p>SIR TOBIE.--Que diable prétend ma nièce en prenant si fort à coeur la mort de son frère? Je suis sûr, moi, que le chagrin est ennemi de la vie.</p>
+<p>MARIE.--Sur ma parole, sir Tobie, il faut que vous veniez de meilleure heure le soir. Madame votre nièce a de grandes objections[5] à vos heures indues.</p>
+<p>SIR TOBIE.--Eh bien! qu&#x27;elle excipe avant d&#x27;être excipée[6].</p>
+<p>[Note 5: En anglais exceptions, d&#x27;où la réponse de sir Tobie.]</p>
+<p>[Note 6: Let her except before excepted.]</p>
+<p>MARIE.--Fort bien; mais il faut vous confiner dans les modestes limites de l&#x27;ordre.</p>
+<p>SIR TOBIE.--Confiner[7]! je ne me tiendrai pas plus finement que je ne fais; ces habits sont assez bons pour boire et ces bottes aussi, ou sinon qu&#x27;elles se pendent à leurs propres tirants.</p>
+<p>[Note 7: To confine, jeu de mots sur confine et fine.]</p>
+<p>MARIE.--Ces grandes rasades vous tueront: j&#x27;entendais madame en parler encore hier, ainsi que de cet imbécile chevalier que vous avez amené un soir ici pour lui faire la cour.</p>
+<p>SIR TOBIE.--Quoi? sir André Ague-cheek?</p>
+<p>MARIE.--Oui, lui-même.</p>
+<p>SIR TOBIE.--C&#x27;est un homme des plus braves qu&#x27;il y ait en Illyrie.</p>
+<p>MARIE.--Et qu&#x27;importe à la chose?</p>
+<p>SIR TOBIE.--Comment! il a trois mille ducats de rente.</p>
+<p>MARIE.--Oui! mais il ne fera qu&#x27;une année de tous ses ducats: c&#x27;est un vrai fou, un prodigue.</p>
+<p>SIR TOBIE.--Fi! n&#x27;avez-vous pas honte de dire cela? Il joue de la viole de Gambo[8], il parle trois ou quatre langues, mot à mot, sans livre, et il possède les meilleurs dons de nature.</p>
+<p>[Note 8: Instrument qu&#x27;on tenait entre les jambes.]</p>
+<p>MARIE.--Oh! oui, certes, il les possède au naturel; car, outre que c&#x27;est un sot, c&#x27;est un grand querelleur; et si ce n&#x27;est qu&#x27;il a le don d&#x27;un lâche pour apaiser la fougue qui l&#x27;emporte dans une querelle, c&#x27;est l&#x27;opinion des gens sensés qu&#x27;on lui ferait bientôt le don d&#x27;un tombeau.</p>
+<p>SIR TOBIE.--Par cette main, ce sont des bélîtres, des détracteurs, que ceux qui tiennent de lui ces propos.--Qui sont-ils?</p>
+<p>MARIE.--Ce sont des gens qui ajoutent encore qu&#x27;il est ivre toutes les nuits en votre compagnie.</p>
+<p>SIR TOBIE.--A force de porter des santés à ma nièce: je boirai à sa santé aussi longtemps qu&#x27;il y aura un passage dans mon gosier, et du vin en Illyrie. C&#x27;est un lâche et un poltron[9] que celui qui ne veut pas boire à ma nièce, jusqu&#x27;à ce que la cervelle lui tourne comme un sabot de village. Allons, fille, castiliano vulgo[10]: voici sir André Ague-face.</p>
+<p>[Note 9: Coystril, un coq peureux.]</p>
+<p>[Note 10: Castiliano vulgo, à l&#x27;espagnole.]</p>
+<p>(Entre sir André Ague-cheek.)</p>
+<p>SIR ANDRÉ.--Ah! sir Tobie Belch! Comment vous va, sir Tobie Belch?</p>
+<p>SIR TOBIE.--Ah! mon cher sir André!</p>
+<p>SIR ANDRÉ, à Marie.--Salut, jolie grondeuse.</p>
+<p>MARIE.--Salut, monsieur.</p>
+<p>SIR TOBIE.--Accoste, sir André, accoste.</p>
+<p>SIR ANDRÉ.--Qu&#x27;est-ce que c&#x27;est?</p>
+<p>SIR TOBIE.--La femme de chambre de ma nièce.</p>
+<p>SIR ANDRÉ.--Belle madame Accoste, je désire faire connaissance avec vous.</p>
+<p>MARIE.--Mon nom est Marie, monsieur.</p>
+<p>SIR ANDRÉ.--Belle madame Marie Accoste....</p>
+<p>SIR TOBIE.--Vous vous méprenez, chevalier. Quand je dis accoste, je veux dire envisagez-la, abordez-la, faites-lui votre cour, attaquez-la.</p>
+<p>SIR ANDRÉ.--Sur ma foi, je ne voudrais pas l&#x27;attaquer ainsi en compagnie. Est-ce là le sens du mot accoste?</p>
+<p>MARIE.--Portez-vous bien, messieurs.</p>
+<p>SIR TOBIE.--Si tu la laisses partir ainsi, sir André, puisses-tu ne jamais tirer l&#x27;épée!</p>
+<p>SIR ANDRÉ.--Si vous partez ainsi, mademoiselle, je ne veux jamais tirer l&#x27;épée. Belle dame, croyez-vous avoir des sots sous la main?</p>
+<p>MARIE.--Monsieur, je ne vous ai pas sous la main.</p>
+<p>SIR ANDRÉ.--Par ma foi, vous allez l&#x27;avoir tout à l&#x27;heure, car voici ma main.</p>
+<p>MARIE.--Maintenant, monsieur, la pensée est libre. Je vous prie de porter votre main à la baratte au beurre, et laissez-la boire.</p>
+<p>SIR ANDRÉ.--Pourquoi, mon cher coeur? quelle est votre métaphore?</p>
+<p>MARIE.--Elle est sèche, monsieur[11].</p>
+<p>[Note 11: Peut-être pour dire: elle est vide; ou bien, d&#x27;après la chiromancie, une main sèche signifie ici une constitution froide.]</p>
+<p>SIR ANDRÉ.--Comment donc! je le crois bien; je ne suis pas assez âne pour ne pas tenir ma main sèche. Mais que signifie votre plaisanterie?</p>
+<p>MARIE.--C&#x27;est une plaisanterie toute sèche, monsieur.</p>
+<p>SIR ANDRÉ.--En avez-vous beaucoup de semblables?</p>
+<p>MARIE.--Oui, monsieur, je les ai au bout de mes doigts: allons, je laisse aller votre main, je suis desséchée[12].</p>
+<p>(Marie sort.)</p>
+<p>[Note 12: I am barren.]</p>
+<p>SIR TOBIE.--Chevalier, tu as besoin d&#x27;une coupe de vin des Canaries; je ne t&#x27;ai jamais vu si bien terrassé.</p>
+<p>SIR ANDRÉ.--Jamais de votre vie, je pense, à moins que vous ne me voyez terrassé par le canarie. Il me semble qu&#x27;il y a des jours où je n&#x27;ai pas plus d&#x27;esprit qu&#x27;un chrétien ou qu&#x27;un homme ordinaire. Mais je suis un grand mangeur de boeuf, et je crois que cela fait tort à mon esprit.</p>
+<p>SIR TOBIE.--Il n&#x27;y a pas de doute.</p>
+<p>SIR ANDRÉ.--Si je le croyais, je m&#x27;en abstiendrais.--Je retourne chez moi à cheval demain, sir Tobie.</p>
+<p>SIR TOBIE.--Pourquoi, mon cher chevalier?</p>
+<p>SIR ANDRÉ.--Que signifie pourquoi[13]? Le faire ou ne le pas faire? Je voudrais avoir employé à apprendre les langues le temps que j&#x27;ai mis à l&#x27;escrime, à la danse, à la chasse à l&#x27;ours.--Oh! si j&#x27;avais suivi les beaux-arts!</p>
+<p>[Note 13: Pourquoi, en français dans le texte.]</p>
+<p>SIR TOBIE.--Oh! vous auriez eu une superbe chevelure.</p>
+<p>SIR ANDRÉ.--Quoi, cela aurait-il amendé mes cheveux?</p>
+<p>SIR TOBIE.--Sans contredit, car vous voyez qu&#x27;ils ne frisent pas naturellement.</p>
+<p>SIR ANDRÉ.--Mais cela me sied assez bien, n&#x27;est-il pas vrai?</p>
+<p>SIR TOBIE.--A merveille. Ils pendent droit comme le lin sur une quenouille, et j&#x27;espère un jour voir une ménagère vous prendre entre ses jambes et vous filer.</p>
+<p>SIR ANDRÉ.--Ma foi, je retourne chez moi demain, sir Tobie. Votre nièce ne veut pas se laisser voir, ou, si elle voit quelqu&#x27;un, il y a quatre à parier contre un qu&#x27;elle ne voudra pas de moi. Le comte lui-même, qui est ici tout près, lui fait la cour.</p>
+<p>SIR TOBIE.--Elle ne veut point du comte. Elle ne veut point de mari au-dessus d&#x27;elle, ni en fortune, ni en âge, ni en esprit. Je lui en ai entendu faire le serment. Hem! il y a de la résolution là-dedans, ami!</p>
+<p>SIR ANDRÉ.--Je veux rester un mois de plus. Je suis l&#x27;homme du monde qui a les idées les plus drôles: j&#x27;aime extrêmement les mascarades et les bals tout à la fois.</p>
+<p>SIR TOBIE.--Êtes-vous bon pour ces balivernes, chevalier?</p>
+<p>SIR ANDRÉ.--Autant qu&#x27;homme en Illyrie, quel qu&#x27;il soit, au-dessous du rang de mes supérieurs....; et cependant je ne veux pas me comparer à un vieillard.</p>
+<p>SIR TOBIE.--Quel est votre talent pour une gaillarde[14], chevalier?</p>
+<p>[Note 14: Espèce de danse.]</p>
+<p>SIR ANDRÉ.--Hé! je suis en état de faire une cabriole[15].</p>
+<p>[Note 15: Caper, cabriole, capre.]</p>
+<p>SIR TOBIE.--Et moi je sais découper le mouton.</p>
+<p>SIR ANDRÉ.--Et je me flatte d&#x27;avoir le saut en arrière aussi vigoureux qu&#x27;aucun homme de l&#x27;Illyrie.</p>
+<p>SIR TOBIE.--Pourquoi donc cacher ces talents? Pourquoi tenir ces dons derrière le rideau? Craignez-vous qu&#x27;ils prennent la poussière comme le portrait de madame Mall[16]? Que n&#x27;allez-vous à l&#x27;église en dansant une gaillarde, pour revenir chez vous en dansant une courante? Je ne marcherais plus qu&#x27;au pas d&#x27;une gigue; je ne voudrais même uriner que sur un pas de cinq[17]. Que prétendez-vous? Le monde est-il fait pour qu&#x27;on enfouisse ses talents? Je croyais bien, à voir la merveilleuse constitution de votre jambe, que vous aviez été formé sous l&#x27;étoile d&#x27;une gaillarde.</p>
+<p>[Note 16: Mall, surnommée Coupe-Bourse, femme fameuse dans les annales des lieux de prostitution.]</p>
+<p>[Note 17: A cinque-pace.]</p>
+<p>SIR ANDRÉ.--Oui, elle est fortement constituée, et elle a assez bonne grâce avec un bas de couleur de flamme. Irons-nous à quelques divertissements?</p>
+<p>SIR TOBIE.--Que ferons-nous de mieux? Ne sommes-nous pas nés sous le Taureau?</p>
+<p>SIR ANDRÉ.--Le taureau? c&#x27;est-à-dire, les flancs et le coeur[18].</p>
+<p>[Note 18: Allusion à l&#x27;astrologie médicale, qui rapporte les différentes affections des parties du corps à l&#x27;influence dominante de certaines constellations.]</p>
+<p>SIR TOBIE.--Non, monsieur, ce sont les jambes et les cuisses. Que je vous voie faire la cabriole. Ah! plus haut: ah! ah! à merveille.</p>
+<p>(Ils sortent.)</p>
+<h2 class="chapter" id="c3">Scène IV</h2>
+<p>Appartement du palais du duc.</p>
+<p>VALENTIN ET VIOLA en habit de page</p>
+<p>VALENTIN.--Si le duc vous continue ses faveurs, vraiment, Césario, vous avez bien l&#x27;air de faire une grande fortune: il n&#x27;y a encore que trois jours qu&#x27;il vous connaît, et vous n&#x27;êtes déjà plus un étranger.</p>
+<p>VIOLA.--Vous craignez donc ou l&#x27;inconstance de son humeur, ou ma négligence, pour mettre ainsi en doute la durée de son affection? Est-il inconstant, monsieur, dans ses goûts?</p>
+<p>VALENTIN.--Non, croyez-moi.</p>
+<p>(Entrent le duc et Curio; suite.)</p>
+<p>VIOLA, à Valentin.--Je vous remercie.--Voici le comte qui vient.</p>
+<p>LE DUC.--Qui de vous a vu Césario?</p>
+<p>VIOLA.--Il est à votre suite, seigneur: me voici.</p>
+<p>LE DUC, aux autres.--Retirez-vous un moment à l&#x27;écart.--Césario, tu es instruit de tout; je t&#x27;ai ouvert le livre secret de mon coeur. Ainsi, bon jeune homme, dirige tes pas vers elle. Ne te laisse pas interdire l&#x27;entrée: poste-toi à ses portes, et dis-leur que ton pied y prendra racine jusqu&#x27;à ce que tu obtiennes une audience.</p>
+<p>VIOLA.--Sûrement, mon noble duc, si elle est aussi abandonnée à son chagrin qu&#x27;on le dit, jamais elle ne voudra me recevoir.</p>
+<p>LE DUC.--Fais du bruit, brave toutes les bienséances, plutôt que de revenir sans succès.</p>
+<p>VIOLA.--Admettez que je puisse lui parler, seigneur; que lui dirai-je alors?</p>
+<p>LE DUC.--Ah! dévoile-lui toute la violence de mon amour; étonne-la du récit de ma tendresse. Il te siéra bien de lui représenter mes souffrances; elle l&#x27;écoutera avec plus d&#x27;intérêt dans la bouche de ta jeunesse, qu&#x27;elle ne ferait dans celle d&#x27;un député plus grave.</p>
+<p>VIOLA.--Je ne le pense pas, seigneur.</p>
+<p>LE DUC.--Crois-le, cher enfant, car c&#x27;est mentir à tes belles années, que de dire que tu es un homme. Les lèvres de Diane ne sont pas plus fraîches, ni plus vermeilles. Ton filet de voix ressemble à l&#x27;organe d&#x27;une jeune vierge: elle est perçante et sonore; et tout en toi te rend propre à jouer le rôle d&#x27;une femme. Je sais que ton étoile te destine à cette négociation.--(Aux autres.) Accompagnez-le, au nombre de quatre ou cinq, tous même si vous voulez; car pour moi, je ne me trouve jamais mieux que quand je suis seul.--(A Viola.) Réussis dans ce message, et tu vivras aussi indépendant que ton maître; sa fortune sera la tienne.</p>
+<p>VIOLA.--Je ferai donc de mon mieux ma cour à votre maîtresse.--(Le duc sort.) Lutte remplie d&#x27;obstacles! Quel que soit mon rôle en lui faisant ma cour, je voudrais, moi, devenir la femme du duc.</p>
+<p>(Tous sortent.)</p>
+<p>MARIE.--Allons, dis-moi où tu as été, ou je n&#x27;ouvrirai pas assez mes lèvres pour qu&#x27;un crin puisse y entrer, dans le but de t&#x27;excuser; ma maîtresse te fera pendre pour t&#x27;être absenté.</p>
+<p>LE BOUFFON.--Eh bien! qu&#x27;elle me pende; quiconque est bien pendu dans ce monde n&#x27;a plus rien à redouter.</p>
+<p>MARIE.--Compte là-dessus.</p>
+<p>LE BOUFFON.--Il ne voit plus personne à craindre.</p>
+<p>MARIE.--Bonne réponse de carême[19]! Je puis t&#x27;apprendre l&#x27;origine de ces mots.</p>
+<p>[Note 19: A lenten answer, réponse brève et misérable.]</p>
+<p>LE BOUFFON.--D&#x27;où vient-il, bonne dame Marie?</p>
+<p>MARIE.--De la guerre; et tu peux le dire hardiment dans tes folies.</p>
+<p>LE BOUFFON.--Eh bien! que Dieu donne la sagesse à ceux qui l&#x27;ont, et que ceux qui sont fous fassent usage de leurs talents.</p>
+<p>MARIE.--Mais tu seras pendu pour être resté si longtemps absent, ou tout au moins renvoyé; n&#x27;est-ce pas la même chose pour toi que d&#x27;être pendu?</p>
+<p>LE BOUFFON.--Vraiment, une bonne pendaison prévient un mauvais mariage[20]. Et quant au malheur d&#x27;être renvoyé, l&#x27;été y pourvoira[21].</p>
+<p>[Note 20: Gray dit qu&#x27;une coutume espagnole autorisait toute femme veuve à sauver, en l&#x27;épousant, un malfaiteur condamné à être pendu. Un voleur, qui marchait au supplice, plut à une femme, qui s&#x27;écria qu&#x27;elle demandait sa grâce avec la condition d&#x27;usage. Le condamné se retourne, et à peine l&#x27;a-t-il aperçue du haut de la charrette, qu&#x27;il dit: Allons, fouette, cocher!]</p>
+<p>[Note 21: Les fainéants le deviennent encore davantage vers la saison de l&#x27;été, plus sûrs de trouver leur subsistance et de pouvoir coucher à la belle étoile.]</p>
+<p>MARIE.--Tu es donc bien résolu?</p>
+<p>LE BOUFFON.--Non pas; mais je suis résolu sur deux points.</p>
+<p>MARIE.--En sorte que si l&#x27;un manque, l&#x27;autre tiendra; ou si tous les deux viennent à manquer, ton haut-de-chausses tombe par terre.</p>
+<p>LE BOUFFON.--Juste; en bonne foi, tout juste! Allons, va ton chemin. Si sir Tobie voulait quitter la boisson, tu serais une aussi spirituelle pièce de la chair d&#x27;Ève qu&#x27;aucune en Illyrie.</p>
+<p>MARIE.--Tais-toi, faquin; plus de cela: voici ma maîtresse; fais tes excuses sagement, cela vaudra mieux.</p>
+<p>(Marie sort.)</p>
+<p>(Entrent Olivia, Malvolio et suite.)</p>
+<p>LE BOUFFON.--Esprit, si c&#x27;est ton bon plaisir, mets-moi en bonne veine de folies. Les gens d&#x27;esprit qui s&#x27;imaginent te posséder ne sont souvent que des fous; et moi, qui suis bien sûr de ne pas t&#x27;avoir, je pourrais passer pour un homme sensé; car que dit Quinapalus? Un fou spirituel vaut mieux qu&#x27;un esprit fou.--Dieu vous bénisse, maîtresse!</p>
+<p>OLIVIA.--Faites sortir cet imbécile.</p>
+<p>LE BOUFFON.--Est-ce que vous n&#x27;entendez pas, camarades? Emmenez madame.</p>
+<p>OLIVIA.--Va-t&#x27;en; tu es un fou à sec: je ne veux plus de toi; d&#x27;ailleurs tu deviens malhonnête.</p>
+<p>LE BOUFFON.--Deux défauts, madonna, que la boisson et les bons conseils corrigeront; car donnez à boire à un fou à sec, et le fou cessera d&#x27;être à sec; recommandez à un homme malhonnête de se corriger, s&#x27;il se corrige, il ne sera plus malhonnête, et s&#x27;il ne peut se corriger, que le ravaudeur le corrige; tout ce qui dans le monde est corrigé n&#x27;est que rapetassé: la vertu qui s&#x27;égare n&#x27;est que rapetassée de vice, et le vice qui s&#x27;amende n&#x27;est que rapetassé de vertu. Si ce syllogisme tout simple peut me servir, à la bonne heure; sinon, quel remède? Comme il n&#x27;y a point d&#x27;homme vraiment déshonoré autre que le misérable, de même la beauté n&#x27;est qu&#x27;une fleur.--La dame a commandé de faire sortir l&#x27;imbécile; en conséquence, je le répète, faites-la sortir.</p>
+<p>OLIVIA.--Monsieur, je leur ai commandé de vous faire sortir.</p>
+<p>LE BOUFFON.--Une méprise du plus haut degré! Madame, cuclus non facit monachum[22]; c&#x27;est comme qui dirait, je ne porte pas d&#x27;habit de fou dans le cerveau. Bonne madonna, donnez-moi la permission de prouver que vous êtes une folle.</p>
+<p>[Note 22: Le capuchon ne fait pas le moine.]</p>
+<p>OLIVIA.--Peux-tu le prouver?</p>
+<p>LE BOUFFON.--Très-adroitement, bonne madonna.</p>
+<p>OLIVIA.--Voyons ta preuve.</p>
+<p>LE BOUFFON.--Il faut que je vous catéchise pour cela, madame.--Ma bonne petite souris de vertu, répondez-moi.</p>
+<p>OLIVIA.--Allons, monsieur, à défaut d&#x27;autre passe-temps, je vous demanderai votre preuve.</p>
+<p>LE BOUFFON.--Bonne madame, pourquoi êtes-vous en deuil?</p>
+<p>OLIVIA.--Mon cher fou, pour la mort de mon frère.</p>
+<p>LE BOUFFON.--Je crois, madame, que son âme est en enfer.</p>
+<p>OLIVIA.--Moi, je sais, fou, que son âme est dans le ciel.</p>
+<p>LE BOUFFON.--Vous n&#x27;en êtes que d&#x27;autant plus folle, madame, d&#x27;être en deuil, de ce que l&#x27;âme de votre frère est dans le ciel.--Emmenez la folle, messieurs.</p>
+<p>OLIVIA.--Que pensez-vous de ce fou, Malvolio? Ne s&#x27;amende-t-il pas?</p>
+<p>MALVOLIO.--Oui, et il continuera ainsi jusqu&#x27;à ce que les angoisses de la mort l&#x27;ébranlent. L&#x27;infirmité qui fait déchoir le sage amende toujours le fou.</p>
+<p>LE BOUFFON.--Dieu veuille vous envoyer, monsieur, une prompte infirmité, afin d&#x27;augmenter votre folie! Sir Tobie jurera que je ne suis pas un renard; mais il ne risquerait pas sa parole sur deux sous, pour gager que vous n&#x27;êtes pas fou.</p>
+<p>OLIVIA.--Que répondez-vous à cela, Malvolio?</p>
+<p>MALVOLIO.--Je m&#x27;étonne que vous, madame, vous puissiez vous amuser des stériles propos d&#x27;un pareil coquin; je l&#x27;ai vu terrassé l&#x27;autre jour par un fou ordinaire qui n&#x27;a pas plus de cervelle qu&#x27;une pierre. Voyez, il est déjà hors de parade; si vous ne riez pas, et que vous ne lui fournissiez pas matière, le voilà bâillonné. Je proteste que je tiens tous ces hommes sensés, qui rient ainsi de ces sortes de fous, pour n&#x27;être eux-mêmes rien de mieux que les bouffons de fous.</p>
+<p>OLIVIA.--Oh! vous êtes malade à force d&#x27;amour-propre, Malvolio, et votre goût en est dépravé. Quiconque est généreux, sans reproche, et d&#x27;une humeur franche, gaie, prend pour des flèches d&#x27;oiseau ces traits que vous croyez des boulets de canon; il n&#x27;y a aucune médisance dans un fou de profession, quoiqu&#x27;il ne fasse que railler, et il n&#x27;y a point d&#x27;amertume dans les railleries d&#x27;un homme connu pour sage, quoiqu&#x27;il ne fasse que censurer.</p>
+<p>LE BOUFFON.--Que Mercure te donne le don de mentir, en récompense de ce que tu parles si bien des fous!</p>
+<p>(Entre Marie.)</p>
+<p>MARIE.--Madame, il y a à votre porte un jeune gentilhomme qui désire beaucoup vous parler.</p>
+<p>OLIVIA.--De la part du comte Orsino, n&#x27;est-ce pas?</p>
+<p>MARIE.--Je l&#x27;ignore, madame; c&#x27;est un beau jeune homme, et bien accompagné.</p>
+<p>OLIVIA.--Qui de mes gens l&#x27;arrête à ma porte?</p>
+<p>MARIE.--Sir Tobie, madame, votre parent.</p>
+<p>OLIVIA.--Écartez-le, je vous prie: il ne dit pas un mot qui ne soit d&#x27;un insensé. (Marie sort.)--Allez, Malvolio; si c&#x27;est un message de la part du comte, je suis malade, ou je ne suis pas chez moi; tout ce que vous voudrez pour m&#x27;en débarrasser. (Malvolio sort.) (Au bouffon.) Tu vois, l&#x27;ami, que ta folie devient surannée et qu&#x27;elle déplaît aux gens.</p>
+<p>LE BOUFFON.--Vous avez parlé pour nous, madame, comme si votre fils aîné était un fou. Que Jupiter veuille remplir son crâne de cervelle; car voici un de vos parents qui a une pie-mère[23] des plus faibles.</p>
+<p>[Note 23: La pie-mère, membrane du cerveau, prise ici pour le cerveau lui-même.]</p>
+<p>(Entre sir Tobie Belch.)</p>
+<p>OLIVIA.--Sur mon honneur, il est à demi-ivre.--Qui est-ce qui est à la porte, cousin?</p>
+<p>SIR TOBIE.--Un gentilhomme.</p>
+<p>OLIVIA.--Un gentilhomme! quel gentilhomme?</p>
+<p>SIR TOBIE.--C&#x27;est un gentilhomme.... La peste soit des harengs saurs! Eh bien! sot?</p>
+<p>LE BOUFFON.--Bon! Sir Tobie....</p>
+<p>OLIVIA.--Mon oncle, mon oncle, comment se fait-il que vous ayez gagné de si bonne heure cette léthargie?</p>
+<p>SIR TOBIE.--La luxure[24]; je défie la luxure.--Il y a quelqu&#x27;un à la porte.</p>
+<p>[Note 24: Équivoque entre lechery et lethargy.]</p>
+<p>OLIVIA.--Oui, certes: qui est-ce?</p>
+<p>SIR TOBIE.--Qu&#x27;il soit le diable, s&#x27;il veut, je ne m&#x27;en embarrasse guère. Oh! vous pouvez m&#x27;en croire, comme je vous le dis: oui, cela m&#x27;est égal. (Il sort.)</p>
+<p>OLIVIA.--A quoi ressemble un homme ivre, fou?</p>
+<p>LE BOUFFON.--A un homme noyé, à un fou, et à un frénétique; un verre de plus après qu&#x27;il est en chaleur en fait un fou: le second le jette dans la frénésie, et un troisième le noie.</p>
+<p>OLIVIA.--Va chercher l&#x27;officier de paix, et qu&#x27;il veille sur mon cousin; car il en est au troisième degré de la boisson, il est noyé; va, veille sur lui.</p>
+<p>LE BOUFFON.--Il n&#x27;est encore que fou, madame; et le fou aura soin du fou. (Le bouffon sort.)</p>
+<p>(Malvolio rentre.)</p>
+<p>MALVOLIO.--Madame, il jure qu&#x27;il vous parlera. Je lui ai dit que vous étiez malade: il répond qu&#x27;il s&#x27;attendait à cela, et que c&#x27;est pour cela qu&#x27;il vient vous parler: je lui ai dit que vous étiez endormie; il semble qu&#x27;il en avait aussi un pressentiment, et il dit que c&#x27;est pour cela qu&#x27;il vient vous parler; que lui dira-t-on, madame? Il est cuirassé contre toute espèce de refus.</p>
+<p>OLIVIA.--Dites-lui qu&#x27;il ne me parlera pas.</p>
+<p>MALVOLIO.--On le lui a déjà dit; et il déclare qu&#x27;il va s&#x27;établir à votre porte, comme le poteau d&#x27;un shériff[25], et se faire pied de banc; mais qu&#x27;il vous parlera.</p>
+<p>[Note 25: Les poteaux placés à la porte du shériff, pour afficher les actes publics, les ordonnances, etc.]</p>
+<p>OLIVIA.--Quelle espèce d&#x27;homme est-ce?</p>
+<p>MALVOLIO.--Mais de l&#x27;espèce des hommes.</p>
+<p>OLIVIA.--Et quelles sont ses manières?</p>
+<p>MALVOLIO.--De fort mauvaises manières. Il veut vous parler, que vous vouliez ou non.</p>
+<p>OLIVIA.--Et sa personne, son âge?</p>
+<p>MALVOLIO.--Il n&#x27;est pas encore assez âgé pour un homme, ni assez jeune pour un enfant; il est ce qu&#x27;est une cosse avant qu&#x27;elle devienne pois; ou un fruit vert, quand il est sur le point d&#x27;être une pomme; au point de séparation entre l&#x27;enfant et l&#x27;homme; il a un fort beau visage, et il parle d&#x27;un ton mutin; on croirait que le lait de sa mère n&#x27;est pas encore tout à fait sorti de ses veines.</p>
+<p>OLIVIA.--Qu&#x27;il vienne; appelez ma demoiselle.</p>
+<p>MALVOLIO.--Mademoiselle, madame vous appelle.</p>
+<p>(Il sort.)</p>
+<p>(Marie rentre.)</p>
+<p>OLIVIA.--Donnez-moi mon voile; jetez-le-moi sur mon visage: nous consentons à écouter encore une fois l&#x27;ambassade d&#x27;Orsino.</p>
+<p>(Entre Viola.)</p>
+<p>VIOLA.--Laquelle est ici l&#x27;honorable maîtresse du logis?</p>
+<p>OLIVIA.--Adressez-moi la parole, je répondrai pour elle; que voulez-vous?</p>
+<p>VIOLA.--Très-radieuse, parfaite et incomparable beauté....--Je vous prie, dites-moi si c&#x27;est là la maîtresse de la maison, car je ne l&#x27;ai jamais vue. Je serais bien fâché de perdre mal à propos ma harangue; car outre qu&#x27;elle est admirablement bien écrite, je me suis donné beaucoup de peine, pour l&#x27;apprendre par coeur. Généreuses beautés, ne me faites essuyer aucun dédain; je suis extrêmement susceptible à la plus légère marque de mépris.</p>
+<p>OLIVIA.--De quelle part venez-vous, monsieur?</p>
+<p>VIOLA.--Je ne suis pas en état d&#x27;en dire beaucoup plus que je n&#x27;ai étudié; et cette question s&#x27;écarte de mon rôle. Aimable dame, donnez-moi l&#x27;assurance positive que vous êtes la maîtresse du logis, afin que je puisse procéder à ma harangue.</p>
+<p>OLIVIA.--Êtes-vous comédien?</p>
+<p>VIOLA.--Non, à vous parler du fond du coeur; et cependant je jure par les griffes de la méchanceté que je ne suis pas ce que je représente. Êtes-vous la dame du logis?</p>
+<p>OLIVIA.--Si je ne me vole pas moi-même, je la suis.</p>
+<p>VIOLA.--Très-certainement si vous l&#x27;êtes, vous vous volez vous-même. Car ce qui est à vous, pour en faire don, n&#x27;est pas à vous pour le tenir en réserve. Mais cela sort de ma commission. Je veux d&#x27;abord débiter mon discours à votre louange, et en venir ensuite au fait de mon message.</p>
+<p>OLIVIA.--Venez tout de suite à ce qu&#x27;il y a d&#x27;important, je vous dispense de l&#x27;éloge.</p>
+<p>VIOLA.--Hélas! j&#x27;ai pris tant de peine à l&#x27;étudier; et il est poétique.</p>
+<p>OLIVIA.--Il n&#x27;en ressemble que mieux à une fiction; je vous en prie, gardez-le pour vous. On m&#x27;a dit que vous étiez impertinent à ma porte, et j&#x27;ai permis votre entrée, plus pour vous contempler avec étonnement, que pour vous écouter. Si vous n&#x27;êtes pas insensé, retirez-vous; si vous jouissez de votre raison, soyez court: je ne suis pas dans une lune à soutenir un dialogue aussi extravagant.</p>
+<p>MARIE.--Voulez-vous déployer les voiles, monsieur? Voici votre chemin.</p>
+<p>VIOLA.--Non, joli mousse, je dois rester à flot ici un peu plus longtemps.--(A Olivia.) Pacifiez un peu votre géant, ma chère dame[26].</p>
+<p>[Note 26: Allusion aux géants préposés à la garde des demoiselles dans les romans, et à la petite taille de Marie.]</p>
+<p>OLIVIA.--Déclarez-moi vos intentions.</p>
+<p>VIOLA.--Je suis un messager.</p>
+<p>OLIVIA.--Sûrement, vous avez quelque chose de bien affreux à m&#x27;apprendre, puisque le début de votre politesse est si craintif; expliquez l&#x27;objet de votre message.</p>
+<p>VIOLA.--Il n&#x27;est destiné qu&#x27;à votre oreille; je ne vous apporte ni déclaration de guerre, ni imposition d&#x27;hommage; je porte la branche d&#x27;olivier dans ma main: mes paroles sont, comme le sujet, des paroles de paix.</p>
+<p>OLIVIA.--Et cependant vous avez commencé bien brusquement. Qu&#x27;êtes-vous? Que voulez-vous?</p>
+<p>VIOLA.--Si j&#x27;ai montré quelque grossièreté, c&#x27;est de mon rôle que je l&#x27;ai empruntée. Ce que je suis et ce que je veux sont des choses aussi secrètes que la virginité, sacrées pour vos oreilles, profanation pour toute autre.</p>
+<p>OLIVIA, à Marie.--Laissez-nous seuls. Nous désirons connaître ces choses sacrées. (Marie sort.) Maintenant, monsieur, votre texte?</p>
+<p>VIOLA.--Très-chère dame....</p>
+<p>OLIVIA.--Une doctrine vraiment consolante, et sur laquelle on peut dire beaucoup de choses!--Où est votre texte?</p>
+<p>VIOLA.--Dans le sein d&#x27;Orsino.</p>
+<p>OLIVIA.--Dans son sein? Dans quel chapitre de son sein?</p>
+<p>VIOLA.--Pour vous répondre avec méthode, dans le premier chapitre de son coeur.</p>
+<p>OLIVIA.--Oh! je l&#x27;ai lu; c&#x27;est de l&#x27;hérésie toute pure. N&#x27;avez-vous rien de plus à dire?</p>
+<p>VIOLA.--Chère madame, laissez-moi voir votre visage.</p>
+<p>OLIVIA.--Avez-vous quelque commission de votre maître à négocier avec mon visage? Vous voilà maintenant hors de votre texte; mais nous allons tirer le rideau et vous montrer le portrait. Regardez, monsieur: voilà comme je suis pour le moment; n&#x27;est-ce pas bien fait?</p>
+<p>(Elle ôte son voile.)</p>
+<p>VIOLA.--Admirablement bien fait, si Dieu a tout fait.</p>
+<p>OLIVIA.--C&#x27;est dans le grain, monsieur; cela résistera à la pluie et au vent.</p>
+<p>VIOLA.--C&#x27;est la beauté même, mélange heureux des roses et des lis, et la main délicate et savante de la nature en a pétri elle-même les couleurs. Madame, vous êtes la plus cruelle des femmes qui respirent, si vous conduisez toutes ces grâces au tombeau sans en laisser de copie au monde.</p>
+<p>OLIVIA.--Oh! monsieur, je n&#x27;aurai pas le coeur si dur: je donnerai plusieurs cédules de ma beauté. Elle sera inventoriée, et chaque parcelle, chaque article sera coté dans mon testament; par exemple, item, deux lèvres passablement vermeilles: item, deux yeux gris avec des paupières dessus: item, un cou, un menton, et ainsi de suite. Avez-vous été envoyé ici pour faire mon estimation?</p>
+<p>VIOLA.--Je vois ce que vous êtes: vous êtes trop fière; mais fussiez-vous le diable, vous êtes belle: mon seigneur et maître vous aime. Oh! un pareil amour mérite d&#x27;être récompensé, fussiez-vous couronnée comme la beauté incomparable.</p>
+<p>OLIVIA.--Comment m&#x27;aime-t-il?</p>
+<p>VIOLA.--Avec des adorations, des larmes fécondes, des gémissements qui tonnent l&#x27;amour, et des soupirs de feu[27].</p>
+<p>[Note 27: Ridicule jeté sur les hyperboles amoureuses.]</p>
+<p>OLIVIA.--Votre maître connaît mes dispositions: je ne puis l&#x27;aimer. Cependant je le crois vertueux, je sais qu&#x27;il est noble, d&#x27;un rang illustre, d&#x27;une jeunesse sans tache et dans toute sa fraîcheur. Il a les suffrages de tout le monde; il est libéral, savant et vaillant; et plein de grâce dans sa taille et sa tournure; mais malgré toutes ces qualités, je ne puis l&#x27;aimer: il y a longtemps qu&#x27;il aurait dû se le tenir pour dit.</p>
+<p>VIOLA.--Si je vous aimais de toute la passion de mon maître, si je souffrais comme il souffre, si ma vie était une mort, je ne trouverais aucun sens dans votre refus, et je ne le comprendrais pas.</p>
+<p>OLIVIA.--Eh! que feriez-vous?</p>
+<p>VIOLA.--Je me bâtirais une cabane de saule[28] à votre porte, et j&#x27;irais voir mon âme dans sa demeure; je composerais des chants loyaux sur l&#x27;amour méprisé, et je les chanterais de toute ma voix même au milieu de la nuit; je crierais votre nom aux collines qui le répercuteraient, et je forcerais la babillarde commère de l&#x27;air à répéter Olivia! Oh! vous ne pourriez trouver de repos entre les éléments de l&#x27;air et de la terre, que vous n&#x27;eussiez eu pitié de moi.</p>
+<p>[Note 28: Arbre de la mélancolie et des amants.]</p>
+<p>OLIVIA.--Vous pourriez faire beaucoup de choses! Quelle est votre parenté?</p>
+<p>VIOLA.--Au-dessus de ma fortune; et cependant ma fortune est suffisante: je suis gentilhomme.</p>
+<p>OLIVIA.--Retournez vers votre maître: je ne puis l&#x27;aimer; qu&#x27;il n&#x27;envoie plus chez moi; à moins que, par hasard, vous ne reveniez encore, pour me dire comment il prend la chose. Adieu! je vous remercie de vos peines; dépensez ceci pour l&#x27;amour de moi.</p>
+<p>VIOLA.--Je ne suis point un messager à gages, madame: gardez votre bourse; c&#x27;est mon maître, et non pas moi, qui a besoin de récompense. Puisse l&#x27;amour changer en pierre le coeur de celui que vous aimerez; et que votre ardeur, comme celle de mon maître, ne rencontre que le mépris! Adieu, beauté cruelle.</p>
+<p>(Elle sort.)</p>
+<p>OLIVIA.--Quelle est votre parenté?--Au-dessus de ma fortune, répond-il, et pourtant ma fortune est suffisante.--Je suis gentilhomme. Oui, je le jurerais, que tu l&#x27;es en effet. Ton langage, ta physionomie, ta tournure, tes actions et tes sentiments te donnent dix fois des armoiries.--N&#x27;allons pas trop vite.--Doucement, doucement! Si le maître était le serviteur! Allons donc!--Comment peut-on prendre si promptement la contagion? Il me semble que je sens toutes les perfections de ce jeune homme se glisser furtivement et subtilement dans mes yeux. Allons, soit.--Holà, Malvolio!</p>
+<p>(Rentre Malvolio.)</p>
+<p>MALVOLIO.--Me voici, madame, à vos ordres.</p>
+<p>OLIVIA.--Cours après ce messager impertinent, l&#x27;homme du comte: il a laissé cette bague ici malgré moi; dis-lui que je n&#x27;en veux point. Recommande-lui bien de ne pas flatter son maître, et de ne pas nourrir ses espérances: je ne suis point pour lui. Si le jeune homme veut revenir ici demain, je lui expliquerai les raisons de mon refus. Cours vite, Malvolio.</p>
+<p>MALVOLIO.--Madame, j&#x27;y cours.</p>
+<p>(Il sort.)</p>
+<p>OLIVIA.--Je ne sais trop ce que je fais; et je crains de trouver que mes yeux sont des flatteurs qui en imposent à mon jugement[29]. Destin, montre ta puissance: nous ne disposons pas de nous-mêmes. Ce qui est décrété doit arriver; qu&#x27;il en soit fait ainsi!</p>
+<p>(Elle sort.)</p>
+<p>[Note 29: Mine eye too great a flatterer for my mind.]</p>
+<h3 class="sub">Fin du premier Acte — Acte deuxième</h3>
+<h2 class="chapter" id="c4">Scène I</h2>
+<p>Le bord de la mer.</p>
+<h3 class="sub">Antonio, Sébastien.</h3>
+<p>ANTONIO.--Vous ne voulez pas rester plus longtemps? Et vous ne voulez pas que je vous accompagne?</p>
+<p>SÉBASTIEN.--Non, je vous en prie; mon étoile jette sur moi une clarté sinistre: la malignité de ma destinée pourrait peut-être empoisonner la vôtre. Je vous demanderai donc la permission de porter mes maux tout seul: ce serait bien mal reconnaître votre amitié pour moi, que d&#x27;en faire retomber une partie sur vous.</p>
+<p>ANTONIO.--Faites-moi connaître au moins en quel lieu vous vous proposez d&#x27;aller.</p>
+<p>SÉBASTIEN.--Non, non, monsieur; le voyage que j&#x27;ai résolu est une véritable extravagance.--Cependant je remarque en vous une discrétion si délicate que vous ne chercherez pas à m&#x27;extorquer le secret que je veux garder... Et la politesse me fait un devoir de vous le révéler moi-même. Il faut donc que vous sachiez de moi, Antonio, que mon nom est Sébastien, que j&#x27;ai changé en celui de Rodrigo; mon père était ce Sébastien de Messaline, dont je sais que vous avez ouï parler. Il a laissé après lui deux enfants, moi, et une soeur, tous deux nés à la même heure: s&#x27;il eût plu au ciel, nous aurions de même fini notre vie ensemble; mais, vous, monsieur, vous avez changé mes destins; car quelques heures avant que vous m&#x27;ayez retiré des abîmes de la mer, ma soeur était noyée.</p>
+<p>ANTONIO.--Hélas! funeste jour!</p>
+<p>SÉBASTIEN.--Une jeune personne, monsieur, qui, quoiqu&#x27;on dît qu&#x27;elle me ressemblait beaucoup, passait pour belle aux yeux de beaucoup de gens. Il ne me convient pas à moi d&#x27;oser avoir d&#x27;elle une aussi haute idée que les autres; mais du moins puis-je assurer hardiment qu&#x27;elle portait une âme que l&#x27;envie même était forcée de dire belle. Elle est noyée, monsieur, dans l&#x27;eau salée, et il me semble que je vais encore y noyer son souvenir.</p>
+<p>ANTONIO.--Excusez-moi, monsieur, de la mauvaise chère que je vous ai fait faire.</p>
+<p>SÉBASTIEN.--Cher Antonio, c&#x27;est moi qui vous prie de me pardonner l&#x27;embarras que je vous ai causé.</p>
+<p>ANTONIO.--Si, pour prix de mon amitié, vous ne voulez pas me tuer, permettez-moi d&#x27;être votre serviteur.</p>
+<p>SÉBASTIEN.--Si vous ne voulez pas détruire votre ouvrage, je veux dire, tuer celui que vous avez sauvé, n&#x27;exigez pas cela de moi. Adieu, en un mot: mon coeur est plein de reconnaissance; et je suis encore si près d&#x27;avoir les manières de ma mère, qu&#x27;un peu plus et mes yeux vont me trahir. Je vais à la cour du comte Orsino: adieu.</p>
+<p>(Il sort.)</p>
+<p>ANTONIO.--Que la bonté de tous les dieux ensemble accompagne tes pas! J&#x27;ai beaucoup d&#x27;ennemis à la cour d&#x27;Orsino; sans cela, je ne tarderais pas à t&#x27;y revoir.--Mais, advienne que pourra, je t&#x27;adore tant, que pour toi tous les dangers me sembleront un jeu, et je veux y aller.</p>
+<p>(Il sort.)</p>
+<h2 class="chapter" id="c5">Scène II</h2>
+<p>Une rue.</p>
+<p>VIOLA entre, MALVOLIO la suit.</p>
+<p>MALVOLIO.--N&#x27;étiez-vous pas, il y a un moment, avec la comtesse Olivia?</p>
+<p>VIOLA.--A l&#x27;instant même, monsieur; en marchant d&#x27;un pas ordinaire je ne suis encore arrivé qu&#x27;ici.</p>
+<p>MALVOLIO.--Elle vous renvoie cette bague, monsieur; vous auriez pu m&#x27;épargner cette peine, et la reprendre vous-même. Elle ajoute, en outre, que vous ayez à bien assurer votre maître qu&#x27;il peut désespérer, et qu&#x27;elle ne veut point de lui; et ceci encore, que vous n&#x27;ayez jamais la hardiesse de revenir négocier pour lui, à moins que ce ne soit pour rapporter la manière dont votre seigneur, entendez-le bien, aura pris son refus.</p>
+<p>VIOLA.--Elle a reçu cette bague de moi: je n&#x27;en veux point.</p>
+<p>MALVOLIO.--Allons, monsieur, vous la lui avez méchamment jetée: et son intention est qu&#x27;elle vous soit rendue. (Il la jette à ses pieds.) Si elle vaut la peine que vous vous baissiez, la voilà sous vos yeux; sinon, qu&#x27;elle soit à celui qui la trouvera.</p>
+<p>(Il sort.)</p>
+<p>VIOLA.--Je n&#x27;ai point laissé de bague chez elle; que veut dire cette dame? Que ma fortune ne permette pas que ma figure l&#x27;ait charmée!--Elle m&#x27;a bien regardée, et si attentivement qu&#x27;il me semblait que ses yeux égaraient sa langue; car elle ne me parlait que par mots interrompus et d&#x27;un air distrait. Elle m&#x27;aime sûrement. C&#x27;est une ruse de sa passion qui m&#x27;invite à la revoir par ce grossier messager. Ce n&#x27;est point du tout une bague de mon maître! D&#x27;abord, il ne lui en a point envoyé; c&#x27;est pour moi-même.--Si cela est (comme cela est en effet), pauvre femme, il vaudrait mieux pour elle être amoureuse d&#x27;un songe! Déguisement, tu es, je le vois, une méchanceté, dont l&#x27;adroit ennemi du genre humain sait tirer grand parti. Combien il est aisé à ceux qui ont quelques appas pour tromper de faire impression sur la molle cire du coeur des femmes! Hélas! c&#x27;est la faute de notre fragilité, et non pas la nôtre; car nous sommes ce que nous avons été faites. Comment ceci s&#x27;arrangera-t-il? Mon maître l&#x27;aime passionnément; et moi, pauvre fille métamorphosée, je suis aussi éprise de lui. Et elle, dans sa méprise, parait raffoler de moi. Qu&#x27;est-ce que tout ceci deviendra? Mon état me fait désespérer de l&#x27;amour de mon maître; et étant une femme, hélas! que d&#x27;inutiles soupirs poussera l&#x27;infortunée Olivia! O temps! c&#x27;est à toi de débrouiller ceci et non à moi: le noeud est trop compliqué pour que je le puisse dénouer.</p>
+<p>(Elle sort.)</p>
+<h2 class="chapter" id="c6">Scène III</h2>
+<p>Appartement de la maison d&#x27;Olivia.</p>
+<h3 class="sub">Sir tobie Belch, sir André ague-cheek.</h3>
+<p>SIR TOBIE.--Approchez, sir André. N&#x27;être pas au lit après minuit, c&#x27;est être levé de bonne heure; et diluculo surgere[30]....., vous savez....</p>
+<p>[Note 30: «Se lever au petit jour est utile à la santé,» adage latin.]</p>
+<p>SIR ANDRÉ.--Non, en bonne foi, je ne sais pas, moi; mais je sais qu&#x27;être levé tard c&#x27;est être levé tard.</p>
+<p>SIR TOBIE.--Fausse conclusion, que je hais autant qu&#x27;un flacon vide! Être debout après minuit, et aller alors au lit, c&#x27;est se coucher matin; en sorte qu&#x27;aller se coucher après minuit, c&#x27;est aller se coucher de bonne heure. Notre vie n&#x27;est-elle pas composée de quatre éléments?</p>
+<p>SIR ANDRÉ.--On le dit: mais je crois, moi, qu&#x27;elle est plutôt composée du boire et du manger.</p>
+<p>SIR TOBIE.--Vous êtes un savant: allons donc manger et boire.--Holà! Marianne, entendez-vous?--Un flacon de vin.</p>
+<p>(Entre le bouffon.)</p>
+<p>SIR ANDRÉ.--Voici, ma foi, le fou qui vient.</p>
+<p>LE BOUFFON.--Eh bien! mes coeurs? N&#x27;avez-vous jamais vu notre portrait à nous trois?</p>
+<p>SIR TOBIE.--Sois le bienvenu, ânon; allons, une chanson.</p>
+<p>SIR ANDRÉ.--Sur ma foi, ce fou a une excellente voix! Je voudrais pour quarante shillings avoir sa jambe, et une voix pour chanter aussi douce que celle du fou. En vérité, tu étais dans tes plus charmantes folies hier au soir, lorsque tu parlas de Pigrogromitus, des Vapians passant l&#x27;équinoxiale de Queubus: cela était excellent, en vérité; je t&#x27;ai envoyé douze sous pour ta bonne amie; les as-tu reçus?</p>
+<p>LE BOUFFON.--Oui, j&#x27;ai remis ta gracieuseté à mon jupon court; car le nez de Malvolio n&#x27;est pas un manche de fouet[31]; madame a la main blanche, et le myrmidon n&#x27;est pas un bouchon.</p>
+<p>[Note 31: A whipstock, il a l&#x27;odorat fin.]</p>
+<p>SIR ANDRÉ.--Excellent! c&#x27;est la plus jolie folie pour la fin. Allons, une chanson.</p>
+<p>SIR TOBIE.--Avance; voilà douze sous pour toi; chante-nous une chanson.</p>
+<p>SIR ANDRÉ.--Voilà encore un teston de moi; si un chevalier donne....</p>
+<p>LE BOUFFON.--Voudriez-vous une chanson d&#x27;amour, ou une chanson morale?</p>
+<p>SIR TOBIE.--Une chanson d&#x27;amour, une chanson d&#x27;amour!</p>
+<p>SIR ANDRÉ.--Oui, oui; je ne me soucie point de morale.</p>
+<p>LE BOUFFON chante.</p>
+<p>O ma maîtresse! où êtes-vous errante? Arrêtez et m&#x27;écoutez: Votre sincère amant s&#x27;avance, Votre amant qui peut chanter haut ou bas. Ne trotte pas plus loin, mon cher coeur: Les voyages finissent par la rencontre des amants, C&#x27;est ce que sait le fils de tout homme sage.</p>
+<p>SIR ANDRÉ.--Admirable, en vérité!</p>
+<p>SIR TOBIE.--Bien, très-bien.</p>
+<p>LE BOUFFON.</p>
+<p>Qu&#x27;est-ce que l&#x27;amour? Il n&#x27;est pas fait pour l&#x27;avenir. La joie présente fait rire dans le présent; Ce qui est à venir est encore incertain; Il n&#x27;y a point de moisson à recueillir des délais. Viens donc, ma chérie, me donner vingt baisers, La jeunesse est une étoffe qui ne peut durer.</p>
+<p>SIR ANDRÉ.--Une voix douce comme du miel, aussi vrai que je suis chevalier.</p>
+<p>SIR TOBIE.--Une voix contagieuse!</p>
+<p>SIR ANDRÉ.--Des plus douces et des plus contagieuses, sur ma foi.</p>
+<p>SIR TOBIE.--A entendre par le nez, c&#x27;est une douce contagion[32]. Mais commencerons-nous une danse de tourne-ciel[33]? Éveillerons-nous la chouette par un canon, qui ravisse les trois âmes[34] d&#x27;un tisserand? Ferons-nous cela?</p>
+<p>[Note 32: A dulcet in contagion, jeu de mots intraduisible.]</p>
+<p>[Note 33: A welkin-dance, boire jusqu&#x27;à ce que le ciel tourne sur nos têtes.]</p>
+<p>[Note 34: Apparemment l&#x27;âme végétative, l&#x27;âme sensitive et l&#x27;âme raisonnable.]</p>
+<p>SIR ANDRÉ.--Si vous m&#x27;aimez, faisons-le. Allons, commence. Je suis un chien pour les canons.</p>
+<p>LE BOUFFON.--Par Notre-Dame, monsieur, il y a des chiens qui vont bien au canon.</p>
+<p>SIR ANDRÉ.--Certainement; chantons: Coquin, tais-toi.</p>
+<p>LE BOUFFON.--Tais-toi, coquin, chevalier? Je serai donc forcé de vous appeler coquin, chevalier?</p>
+<p>SIR ANDRÉ.--Ce n&#x27;est pas la première fois que j&#x27;ai forcé un homme à m&#x27;appeler coquin. Commence, fou; la chanson commence par Tais-toi.</p>
+<p>LE BOUFFON.--Je ne commencerai jamais si je me tais.</p>
+<p>SIR ANDRÉ.--Bon là, ma foi. Allons, commence.</p>
+<p>(Ils chantent.)</p>
+<p>(Entre Marie.)</p>
+<p>MARIE.--Quels hurlements de chats faites-vous donc ici? Si ma maîtresse n&#x27;a pas appelé son intendant, Malvolio, et ne lui a pas ordonné de vous mettre à la porte, ne me croyez jamais.</p>
+<p>SIR TOBIE.--Madame est une Catayenne[35]; nous sommes des politiques: Malvolio est une canaille, et nous sommes trois joyeux garçons[36]. Ne suis-je pas son parent? Ne suis-je pas de son sang? Foin de madame!--(Chantant.) Il était un homme à Babylone, madame, madame.</p>
+<p>[Note 35: «Terme de mépris, dont l&#x27;origine est indifférente.» (STEEVENS.)]</p>
+<p>[Note 36: Malvolio is a peg-a-ramsey, and three merry men be we. Ces derniers mots sont le commencement d&#x27;une chanson; Peg-a-ramsey est le titre d&#x27;une ballade ancienne.]</p>
+<p>LE BOUFFON.--Malepeste! le chevalier est dans une merveilleuse folie.</p>
+<p>SIR ANDRÉ.--Oui, il s&#x27;en tire assez bien, quand il est bien disposé, et moi aussi: il fait le fou avec plus de grâce que moi; mais je le fais plus au naturel.</p>
+<p>SIR TOBIE, chantant.--Ah! le douzième jour de décembre.</p>
+<p>MARIE.--Au nom de Dieu, taisez-vous.</p>
+<p>(Entre Malvolio.)</p>
+<p>MALVOLIO.--Hé! mes maîtres, êtes-vous fous? ou qu&#x27;êtes-vous donc? N&#x27;avez-vous ni esprit, ni savoir-vivre, ni honnêteté, pour bavarder comme des chaudronniers à cette heure de la nuit? Faites-vous une taverne de la maison de madame, que vous vous égosillez ainsi à crier vos airs de tailleurs, sans adoucir ou baisser vos voix? N&#x27;avez-vous donc aucun respect pour le lieu, les personnes et les temps?</p>
+<p>SIR TOBIE.--Nous avons gardé les temps, monsieur, dans nos canons. Allez au diable[37].</p>
+<p>[Note 37: C&#x27;est le sens qu&#x27;il faut donner, selon Malone, à ces mots: Sneck up.]</p>
+<p>MALVOLIO.--Sir Tobie, il faut que je sois tout rond avec vous. Ma maîtresse m&#x27;a donné ordre de vous dire que, quoiqu&#x27;elle vous reçoive comme son parent, elle n&#x27;a point de parenté avec vos désordres. Si vous pouvez vous séparer de votre mauvaise conduite, vous serez toujours le bienvenu dans sa maison: sinon, s&#x27;il vous plaisait de prendre congé d&#x27;elle, elle est toute disposée à vous faire ses adieux.</p>
+<p>SIR TOBIE, chantant.--Adieu, cher coeur, puisqu&#x27;il faut que je parte[38].</p>
+<p>[Note 38: Chanson qu&#x27;on trouve dans le recueil de Percy.]</p>
+<p>MALVOLIO.--Oui, bon sir Tobie.</p>
+<p>SIR TOBIE, chantant.--Ses yeux dénotent que ses jours sont bientôt à leur fin.</p>
+<p>MALVOLIO.--Les choses en sont-elles là?</p>
+<p>SIR TOBIE, chantant.--Mais moi, je ne mourrai jamais.</p>
+<p>LE BOUFFON.--En cela vous mentez, sir Tobie.</p>
+<p>MALVOLIO.--Pour cela, je suis très-disposé à vous croire.</p>
+<p>SIR TOBIE, en chantant.--Lui dirai-je de s&#x27;en aller?</p>
+<p>LE BOUFFON.--Et quand vous le feriez?</p>
+<p>SIR TOBIE.--Lui dirai-je de s&#x27;en aller, sans le ménager?</p>
+<p>LE BOUFFON.--Oh! non, non, vous n&#x27;oseriez.</p>
+<p>SIR TOBIE.--Vous détonnez, l&#x27;ami; vous mentez.--Êtes-vous plus qu&#x27;un intendant? Croyez-vous que, parce que vous êtes vertueux[39], il n&#x27;y aura plus ni gâteaux, ni bière?</p>
+<p>[Note 39: C&#x27;était la coutume de faire des gâteaux en famille à la Toussaint. Les puritains traitaient cette coutume de superstition.]</p>
+<p>LE BOUFFON.--Oui, par sainte Anne, et le gingembre aussi sera chaud dans la bouche.</p>
+<p>SIR TOBIE.--Tu as raison.--Allez, monsieur, allez frotter votre chaîne avec de la mie de pain[40]. Un flacon de vin, Marie!</p>
+<p>[Note 40: «Les intendants ou maîtres d&#x27;hôtel portaient au cou une chaîne en signe de supériorité sur les autres domestiques; et le meilleur moyen d&#x27;éclaircir un métal, c&#x27;est de le frotter avec de la mie de pain.» (STEEVENS.)]</p>
+<p>MALVOLIO.--Mademoiselle Marie, si vous faisiez quelque cas de la faveur de ma maîtresse, vous ne voudriez pas prêter les mains à cette conduite grossière; ma maîtresse en sera informée, je vous le jure.</p>
+<p>(Il sort.)</p>
+<p>MARIE.--Va secouer les oreilles.</p>
+<p>SIR ANDRÉ.--Lui donner un rendez-vous en duel, et puis lui manquer de parole et se jouer de lui, ce serait une aussi bonne oeuvre que de boire quand on a faim.</p>
+<p>SIR TOBIE.--Faites cela, chevalier. Je vais vous écrire un cartel ou je lui ferai connaître de vive voix votre indignation contre lui.</p>
+<p>MARIE.--Mon cher sir Tobie, soyez patient pour ce soir; depuis que le jeune page du comte a vu aujourd&#x27;hui ma maîtresse, elle est fort troublée. Quant à monsieur Malvolio, laissez-moi faire: si je ne le mystifie pas au point de le faire passer en proverbe, et de le rendre un objet de risée publique, croyez que je n&#x27;ai pas assez d&#x27;esprit pour me coucher tout à l&#x27;heure dans mon lit; je sais que je suis en état de le faire.</p>
+<p>SIR TOBIE.--Instruis, instruis-nous: conte-nous quelque chose de lui.</p>
+<p>MARIE.--Ma foi, monsieur, il est quelquefois une espèce de puritain.</p>
+<p>SIR ANDRÉ.--Oh! si je le croyais, je le battrais comme un chien.</p>
+<p>SIR TOBIE.--Quoi, pour être puritain? Ta sublime raison, cher chevalier?</p>
+<p>SIR ANDRÉ.--Je n&#x27;ai point de sublime raison pour cela, mais j&#x27;ai d&#x27;assez bonnes raisons.</p>
+<p>MARIE.--Le diable, c&#x27;est qu&#x27;il n&#x27;est pas toujours un puritain, ni quoi que ce soit avec suite, si ce n&#x27;est un serviteur des circonstances; un sot plein d&#x27;affectation qui sait par coeur les affaires d&#x27;État, sans livre et sans étude, et vous débite sa science par grands morceaux; un homme qui a la meilleure opinion de lui-même, et si farci, à ce qu&#x27;il s&#x27;imagine, de perfections, que c&#x27;est un article de foi pour lui qu&#x27;on ne peut le voir sans l&#x27;aimer; et c&#x27;est sur ce vice-là que ma vengeance trouvera matière à s&#x27;exercer.</p>
+<p>SIR TOBIE.--Que feras-tu?</p>
+<p>MARIE.--Je glisserai sur son chemin quelques épîtres d&#x27;amour en style obscur, dans lesquelles, à la couleur de sa barbe, à la forme de sa jambe, à sa tournure, à sa démarche, à l&#x27;expression de ses yeux, à son front, à son teint, il se reconnaîtra dépeint de la manière la plus palpable. Je peux écrire tout comme ferait madame votre nièce; nous pouvons à peine distinguer nos deux écritures dans une lettre dont le sujet est oublié.</p>
+<p>SIR TOBIE.--Excellent! Je flaire la ruse.</p>
+<p>SIR ANDRÉ.--Elle me monte aussi au nez.</p>
+<p>SIR TOBIE.--Il croira, par des lettres que vous laisserez tomber sur son passage, qu&#x27;elles viennent de ma nièce, et qu&#x27;elle est amoureuse de lui.</p>
+<p>MARIE.--Oui, mon projet est un cheval de cette couleur-là.</p>
+<p>SIR ANDRÉ[41].--Et votre cheval fera de lui un âne.</p>
+<p>[Note 41: Tirwhylt pense qu&#x27;il faut donner cette réponse et celle d&#x27;après à sir Tobie; il les trouve trop fines pour sir André, qui ne juge rien par lui-même, et ne fait que répéter l&#x27;avis des autres.]</p>
+<p>MARIE.--Oui, un âne, je n&#x27;en doute pas</p>
+<p>SIR ANDRÉ.--Oh! cela sera admirable.</p>
+<p>MARIE.--Un plaisir de roi, je vous en assure. Je sais que ma médecine opérera sur lui. Je vous posterai tous deux en embuscade, et le fou fera le troisième dans un lieu où il trouvera la lettre: observez bien comme il l&#x27;interprétera. Pour ce soir, au lit; et rêvons à l&#x27;événement. Adieu!</p>
+<p>(Elle sort.)</p>
+<p>SIR TOBIE.--Bonne nuit, Penthésilée[42].</p>
+<p>[Note 42: Nom d&#x27;une amazone.]</p>
+<p>SIR ANDRÉ.--Par ma foi, c&#x27;est une brave fille.</p>
+<p>SIR TOBIE.--C&#x27;est une excellente levrette, et de race pure, et une fille qui m&#x27;adore. Qu&#x27;en dites-vous?</p>
+<p>SIR ANDRÉ.--J&#x27;ai été adoré aussi jadis, moi.</p>
+<p>SIR TOBIE.--Allons-nous mettre au lit, chevalier.--Tu aurais besoin d&#x27;envoyer demander plus d&#x27;argent.</p>
+<p>SIR ANDRÉ.--Si je ne peux regagner votre nièce, je suis dans un mauvais pas.</p>
+<p>SIR TOBIE.--Envoie demander de l&#x27;argent, chevalier: si tu ne parviens pas à la fin à l&#x27;avoir, dis que je suis un chien à la queue coupée[43].</p>
+<p>[Note 43: «Cut. Par les lois forestières, on coupait la queue aux chiens des paysans et roturiers.» (STEEVENS.) Selon d&#x27;autres, il faut traduire cut par cheval: «Dis que je suis un cheval.»]</p>
+<p>SIR ANDRÉ.--Si je ne le fais pas, ne faites jamais fond sur ma parole; prenez-le comme vous voudrez.</p>
+<p>SIR TOBIE.--Allons, venez, je vais brûler un peu de rhum; il est trop tard pour aller se coucher maintenant; allons, chevalier, venez.</p>
+<p>(Ils sortent.)</p>
+<h2 class="chapter" id="c7">Scène IV</h2>
+<p>Appartement dans le palais du duc.</p>
+<p>LE DUC, VIOLA, CURIO et autres.</p>
+<p>LE DUC.--Faites-nous un peu de musique.--Ah! bonjour, mes amis.--Allons, bon Césario, seulement ce morceau de chant, cette vieille chanson ancienne que nous entendîmes hier au soir. Il me semblait qu&#x27;elle soulageait beaucoup mon âme souffrante, plus que ces airs légers et ces refrains répétés dans ces mesures vives et brusques.--Allons, seulement un couplet.</p>
+<p>CURIO.--Avec la permission de Votre Altesse, celui qui pourrait le chanter n&#x27;est pas ici.</p>
+<p>LE DUC.--Qui était-ce donc!</p>
+<p>CURIO.--Feste le bouffon, seigneur; un fou qui amusait beaucoup le père de madame Olivia: il est quelque part dans la maison.</p>
+<p>LE DUC.--Cherchez-le, et qu&#x27;on joue l&#x27;air en l&#x27;attendant. (Curio sort. Musique.) Approche, jeune homme; si tu aimes jamais, dans les doux transports de ta passion souviens-toi de moi; car tous les vrais amants sont tels que je suis, changeants et volages dans tous les autres sentiments, excepté dans la constante pensée de l&#x27;objet aimé.--Comment trouves-tu cet air?</p>
+<p>VIOLA.--Il retentit comme un écho dans le coeur qui sert de trône à l&#x27;amour.</p>
+<p>LE DUC.--Tu en parles en maître; je gagerais ma vie que, tout jeune que tu es, ton oeil s&#x27;est fixé sur quelque beauté qui le charme. N&#x27;est-il pas vrai, mon enfant?</p>
+<p>VIOLA.--Un peu, avec votre permission.</p>
+<p>LE DUC.--Quelle espèce de femme est-ce?</p>
+<p>VIOLA.--De votre complexion.</p>
+<p>LE DUC.--Elle n&#x27;est donc pas digne de toi. Quel âge, au vrai?</p>
+<p>VIOLA.--Environ de votre âge, seigneur.</p>
+<p>LE DUC.--Elle est trop âgée, par le ciel! Qu&#x27;une femme choisisse toujours un époux plus âgé qu&#x27;elle, c&#x27;est le moyen qu&#x27;elle lui soit plus assortie, et plus sûre de régner dans son coeur; car, mon enfant, nous avons beau nous vanter, nous sommes plus étourdis, plus flottants dans nos caprices; nous sommes aisément emportés par le désir et par l&#x27;inconstance; notre amour s&#x27;use et se perd plus vite que celui des femmes.</p>
+<p>VIOLA.--Je le crois, seigneur.</p>
+<p>LE DUC.--Aie donc soin que ton amante soit plus jeune que toi, ou ton affection ne pourra durer. Les femmes sont comme les roses; leur belle fleur, une fois épanouie, tombe dans l&#x27;heure même.</p>
+<p>VIOLA.--Et cela est vrai. Hélas! quel triste sort que de se flétrir au moment où elles atteignent la perfection!</p>
+<p>(Rentrent Curio et le bouffon.)</p>
+<p>LE DUC.--Allons, mon ami, la chanson que tu as chantée hier au soir. Remarque-la, Césario; elle est ancienne et simple. Les fileuses, et celles qui tricotent au soleil, et les jeunes filles dont le coeur est libre, tout en tissant leur fil avec des outils d&#x27;os, ont coutume de la chanter: c&#x27;est la naïve vérité, et elle peint bien l&#x27;innocence de l&#x27;amour comme le bon vieux temps.</p>
+<p>LE BOUFFON.--Êtes-vous prêt, monsieur?</p>
+<p>LE DUC--Oui, je t&#x27;en prie, chante.</p>
+<p>LE BOUFFON.</p>
+<p>(Chant.)</p>
+<p>Viens; ô mort! viens; Qu&#x27;on me couche sous un triste cyprès: Fuis, fuis, souffle de ma vie. Une beauté cruelle m&#x27;a donné la mort. Semez de branches d&#x27;if mon blanc linceul; Préparez-le. Jamais homme ne joua dans la mort un rôle aussi sincère Que le mien.</p>
+<p>Point de fleurs, pas une douce fleur Sur mon noir cercueil. Point d&#x27;ami, pas un seul ami pour saluer Mon pauvre corps et l&#x27;endroit où mes os seront jetés; Pour épargner mille et mille soupirs, Ah! couchez-moi-là, Où l&#x27;amant, triste et fidèle, ne trouve jamais mon tombeau, Pour y pleurer.</p>
+<p>LE DUC, lui donnant sa bourse.--Voilà pour ta peine.</p>
+<p>LE BOUFFON.--Il n&#x27;y a nulle peine; j&#x27;ai du plaisir à chanter, monsieur.</p>
+<p>LE DUC.--Eh bien! je veux te payer ton plaisir.</p>
+<p>LE BOUFFON.--A vrai dire, monsieur, le plaisir se paye une fois ou l&#x27;autre.</p>
+<p>LE DUC.--A présent, permets-moi de te quitter.</p>
+<p>LE BOUFFON.--Allons, que le dieu de la mélancolie te protège, et que ton tailleur te fasse un habit de taffetas changeant; car ton âme est une véritable opale. Je voudrais embarquer des hommes aussi constants sur la mer, afin qu&#x27;ils eussent affaire partout, et que leur but ne fût nulle part; car c&#x27;est là ce qui fait toujours un bon voyage de rien. Adieu.</p>
+<p>(Le bouffon sort.)</p>
+<p>LE DUC.--Qu&#x27;on me laisse. (Curio sort avec la suite du duc, excepté Viola.) Encore une fois, Césario, va trouver cette souveraine cruelle; dis-lui que mon amour, plus noble que les trésors de l&#x27;univers, ne met aucun prix à une étendue de terres boueuses; dis-lui que je fais des dons que la Fortune lui a accordés le cas que je fais de cette volage déesse; mais que c&#x27;est cette merveille, cette reine des joyaux que la nature a enchâssée en elle, qui seule attire mon âme.</p>
+<p>VIOLA.--Mais, seigneur, si elle ne peut vous aimer?</p>
+<p>LE DUC.--Je ne puis recevoir une pareille réponse.</p>
+<p>VIOLA.--Ma foi, il le faudra bien. Supposez que quelque dame, comme il en est peut-être, souffre pour l&#x27;amour de vous, dans son coeur, des tourments aussi violents que vous en souffrez pour Olivia; vous ne pouvez l&#x27;aimer et vous le lui déclarez, n&#x27;est-elle pas forcée de recevoir votre refus?</p>
+<p>LE DUC.--Il n&#x27;est point de coeur de femme qui puisse contenir les battements d&#x27;une passion aussi forte que celle dont l&#x27;amour tourmente mon coeur; il n&#x27;est point de coeur de femme assez vaste pour contenir autant d&#x27;amour; elles ne savent pas garder. Hélas! on peut bien appeler leur amour un appétit des sens. Ce n&#x27;est qu&#x27;un goût qui irrite leur palais sans affecter leur coeur: il s&#x27;éteint dans la satiété, et finit par le dégoût et l&#x27;aversion. Mais le mien est aussi affamé que la mer, et peut digérer autant qu&#x27;elle. N&#x27;établis aucune comparaison entre l&#x27;amour qu&#x27;une femme peut concevoir pour moi, et celui que j&#x27;ai pour Olivia.</p>
+<p>VIOLA.--Oui, mais je sais....</p>
+<p>LE DUC.--Que sais-tu?</p>
+<p>VIOLA.--Je sais trop bien l&#x27;amour que les femmes ont pour les hommes. Je vous l&#x27;assure, elles ont le coeur aussi fidèle que nous. Mon père avait une fille qui aimait un homme, comme il se pourrait par aventure que moi, si j&#x27;étais femme, j&#x27;aimasse Votre Altesse.</p>
+<p>LE DUC.--Et quelle est son histoire?</p>
+<p>VIOLA.--Une page blanche[44], seigneur. Jamais elle n&#x27;a déclaré son amour, mais elle a laissé sa passion, cachée comme le ver dans le bouton, dévorer les roses de ses joues: elle languissait dans ses pensées; et, pâle et mélancolique, elle était tranquille comme la patience sur un monument, souriant à la douleur. N&#x27;était-ce pas là véritablement de l&#x27;amour? Nous autres hommes, nous pouvons en dire davantage, en jurer davantage: mais, en vérité, nos démonstrations vont plus loin que notre volonté; car toujours nous prouvons beaucoup par nos serments, et bien peu par notre amour.</p>
+<p>[Note 44: A blank.]</p>
+<p>LE DUC.--Mais ta soeur est-elle morte de son amour, mon enfant?</p>
+<p>VIOLA.--Je suis tout ce qui reste de filles dans la maison de mon père, et de frères aussi, et cependant je ne sais....--Seigneur, irai-je trouver cette dame?</p>
+<p>LE DUC.--Oui, voilà ce dont il s&#x27;agit. Vole vers elle; donne-lui ce bijou: dis-lui que mon amour ne peut céder ni supporter aucun refus.</p>
+<p>(Ils sortent.)</p>
+<h2 class="chapter" id="c8">Scène V</h2>
+<p>Le jardin d&#x27;Olivia.</p>
+<p>SIR TOBIE, SIR ANDRÉ et FABIAN.</p>
+<p>SIR TOBIE.--Viens avec nous, seigneur Fabian.</p>
+<p>FABIAN.--Oui, je viendrai; si je perds un atome de ce plaisir, que je sois rongé de mélancolie jusqu&#x27;à en mourir.</p>
+<p>SIR TOBIE.--Ne serais-tu pas bien aise de voir ce gredin, cette canaille, ce galefretier, essuyer quelque notable avanie?</p>
+<p>FABIAN.--Oh! j&#x27;en serais transporté. Vous savez qu&#x27;il m&#x27;a fait perdre les bonnes grâces de ma maîtresse, à l&#x27;occasion d&#x27;un combat d&#x27;ours.</p>
+<p>SIR TOBIE.--Pour le mettre en fureur, nous ferons revenir l&#x27;ours, et nous le ferons écumer de colère jusqu&#x27;à ce qu&#x27;il en soit noir et bleu. N&#x27;est-ce pas, sir André?</p>
+<p>SIR ANDRÉ.--Si nous ne le faisons pas, c&#x27;est fait de notre vie.</p>
+<p>(Entre Marie.)</p>
+<p>SIR TOBIE.--Voici notre petite scélérate.--Eh bien! comment vous va, mon ortie des Indes[45]?</p>
+<p>[Note 45: «Apparemment l&#x27;ortie marine, qui abonde dans les mers de l&#x27;Inde.» (JOHNS OX.)]</p>
+<p>MARIE.--Cachez-vous tous trois dans le bosquet de buis: Malvolio descend le long de cette allée; il était là-bas, au soleil, l&#x27;air occupé, faisant des politesses à son ombre depuis une demi-heure: observez-le, je vous en prie, si vous aimez à rire; car je suis certaine que cette lettre va faire de lui un idiot en extase. Cachez-vous, au nom de la plaisanterie! (Ils se cachent.)--Tenez-vous là (Marie laisse tomber une lettre); car voici la truite qu&#x27;il faut attraper en la chatouillant.</p>
+<p>(Marie sort.)</p>
+<p>(Entre Malvolio.)</p>
+<p>MALVOLIO.--C&#x27;est la fortune: tout est une affaire de fortune. Marie m&#x27;a dit une fois que sa maîtresse avait du penchant pour moi, et je l&#x27;ai entendue elle-même aller jusqu&#x27;à dire que si jamais elle prenait une fantaisie, ce serait pour un homme de ma physionomie; de plus, elle me traite avec des égards plus distingués qu&#x27;aucun de ceux qui sont attachés à son service. Que dois-je penser de tout cela?</p>
+<p>SIR TOBIE.--Ce coquin a bien de la présomption.</p>
+<p>FABIAN.--Oh! paix! ses contemplations font de lui un fameux dindon! Comme il se rengorge en étalant son plumage!</p>
+<p>SIR ANDRÉ.--Morbleu! je vous battrais ce maraud....</p>
+<p>SIR TOBIE.--Paix! vous dis-je.</p>
+<p>MALVOLIO.--Devenir comte Malvolio....</p>
+<p>SIR TOBIE.--Ah! coquin....</p>
+<p>SIR ANDRÉ.--Un coup de pistolet, un coup de pistolet sur lui.</p>
+<p>SIR TOBIE.--Paix! paix!</p>
+<p>MALVOLIO.--Il y en a des exemples. La dame de Strachy[46] a épousé un valet de garde-robe.</p>
+<p>[Note 46: Ce mot est resté sans explication, en dépit de tous les commentaires.]</p>
+<p>SIR ANDRÉ.--Fi de lui, par Jézabel!</p>
+<p>FABIAN.--Oh! paix! L&#x27;y voilà à fond: voyez comme son imagination le gonfle!</p>
+<p>MALVOLIO.--Après avoir été marié trois mois avec elle, assis dans ma grandeur....</p>
+<p>SIR TOBIE.--Oh! si j&#x27;avais une arbalète pour lui lancer une pierre dans l&#x27;oeil!</p>
+<p>MALVOLIO.--Appelant mes officiers autour de moi, dans ma robe de velours à ramages, après avoir quitté mon lit de repos où j&#x27;aurai laissé Olivia endormie....</p>
+<p>SIR TOBIE.--Feux et soufre!</p>
+<p>FABIAN.--Oh! paix donc, paix!</p>
+<p>MALVOLIO.--Alors prendre l&#x27;humeur de la grandeur; et, après avoir promené sur eux un regard dédaigneux, leur dire que je connais ma place, et que je voudrais qu&#x27;ils connussent aussi la leur.... Mander mon cousin Tobie....</p>
+<p>SIR TOBIE.--Chaînes et verrous!</p>
+<p>FABIAN.--Oh! paix, paix, paix: voyez, voyez.</p>
+<p>MALVOLIO.--Sept de mes gens, obéissant au premier signal, sortent pour l&#x27;aller chercher; je parais sombre en attendant, et peut-être je remonte ma montre, ou je joue avec quelque riche bijou. Tobie s&#x27;avance; il me fait la révérence....</p>
+<p>SIR TOBIE.--Laisserons-nous vivre ce faquin?</p>
+<p>FABIAN.--Paix! quand six chevaux attelés voudraient nous arracher notre silence.</p>
+<p>MALVOLIO.--Je lui tends la main ainsi, mêlant à mon sourire familier un regard austère et impérieux.</p>
+<p>SIR TOBIE.--Est-ce que sir Tobie ne vous applique pas alors un soufflet?</p>
+<p>MALVOLIO.--En lui disant: «Cousin Tobie, puisque ma fortune a jeté votre nièce dans mes bras, accordez-moi le privilége de vous dire....</p>
+<p>SIR TOBIE.--Quoi, quoi?</p>
+<p>MALVOLIO.--«Il faut vous corriger de votre ivrognerie.</p>
+<p>SIR TOBIE.--Veux-tu, canaille....</p>
+<p>FABIAN.--Patience, ou nous rompons tous les fils de notre plan.</p>
+<p>MALVOLIO.--«De plus, vous dépensez le trésor de votre temps avec un imbécile de chevalier.</p>
+<p>SIR ANDRÉ.--C&#x27;est moi, je vous le garantis.</p>
+<p>MALVOLIO.--«Un sir André!»</p>
+<p>SIR ANDRÉ.--Je le savais bien que c&#x27;était moi; car bien des gens me traitent de sot.</p>
+<p>MALVOLIO.--Qu&#x27;avons-nous ici?</p>
+<p>(Ramassant la lettre.)</p>
+<p>FABIAN.--Voilà ma bécasse tout près du piége.</p>
+<p>SIR TOBIE.--Oh! paix! et que le génie de la gaieté lui inspire de lire tout haut.</p>
+<p>MALVOLIO.--Sur ma vie, c&#x27;est la main de ma maîtresse: voilà ses c, ses v, ses t, et voilà comme elle fait ses grands P. Il n&#x27;y a pas de doute, c&#x27;est son écriture.</p>
+<p>SIR ANDRÉ.--Ses c, ses v, ses t. Pourquoi cela?</p>
+<p>MALVOLIO, lisant.--A mon bien-aimé inconnu, cette lettre et mes tendres aveux! Juste, voilà ses phrases. Permets, cire. Doucement.... et le cachet est une Lucrèce dont elle a coutume de sceller ses lettres. C&#x27;est ma maîtresse.--A qui cela s&#x27;adresserait-il?</p>
+<p>FABIAN.--Ceci l&#x27;enivrera: coeur et tout.</p>
+<p>MALVOLIO, lisant.</p>
+<p>Jupiter sait que j&#x27;aime. Mais qui?</p>
+<p>Lèvres, ne remuez pas; Nul mortel ne doit le savoir.</p>
+<p>Nul mortel ne doit le savoir? Voyons la suite: la mesure est changée. Nul mortel ne doit le savoir. Si c&#x27;était toi, Malvolio!</p>
+<p>SIR TOBIE.--Je te le conseille: va te pendre, blaireau.</p>
+<p>MALVOLIO continue de lire.</p>
+<p>Je pourrais commander où j&#x27;adore, Mais le silence, comme le poignard de Lucrèce, Déchire mon coeur sans l&#x27;ensanglanter. M.O.A.I, règne sur ma vie.</p>
+<p>FABIAN.--Une énigme dans le grand genre!</p>
+<p>SIR TOBIE.--C&#x27;est une fille admirable, par ma foi!</p>
+<p>MALVOLIO.--M.O.A.I. règne sur ma vie. Mais d&#x27;abord, voyons, voyons.</p>
+<p>FABIAN.--Quel plat de poisson elle lui a servi là!</p>
+<p>SIR TOBIE.--Et avec quelle avidité ce faucon sauvage vole à cet appât!</p>
+<p>MALVOLIO.--Je puis commander où j&#x27;adore. En effet elle peut me commander. Je la sers: elle est ma maîtresse. Oh! voilà qui est évident pour toute intelligence ordinaire; il n&#x27;y a pas de difficulté là.... Et la fin?... que signifie cet arrangement alphabétique? Si je pouvais le faire un peu ressembler à mon nom..... doucement. M.O.A.I.</p>
+<p>SIR TOBIE.--Oh! oui, viens-en à bout: le voilà maintenant dérouté et en défaut.</p>
+<p>FABIAN.--Sowter[47] va donner de la voix là-dessus, quoique cela sente aussi fort qu&#x27;un renard.</p>
+<p>[Note 47: Nom de chien de chasse.]</p>
+<p>MALVOLIO.--M--Malvolio.--Eh bien! c&#x27;est la lettre initiale de mon nom.</p>
+<p>FABIAN.--Ne vous ai-je pas bien dit qu&#x27;il ferait quelque chose de ces lettres? Oh! c&#x27;est un excellent chien quand on est en défaut!</p>
+<p>MALVOLIO.--M--Oui.... mais nulle consonnance avec la suite: cela demande preuve. Ce serait un A qui devrait suivre, et c&#x27;est un O.</p>
+<p>FABIAN.--Et O[48] suivra, j&#x27;espère.</p>
+<p>[Note 48: Allusion à la forme d&#x27;un collier de chasse.]</p>
+<p>SIR TOBIE.--Ou je le bâtonnerai et lui ferai crier O.</p>
+<p>MALVOLIO.--C&#x27;est l&#x27;I qui vient par derrière.</p>
+<p>FABIAN.--Oui, si vous aviez un oeil[49] par derrière, vous pourriez voir plus de châtiments à vos talons que de bonnes fortunes devant vous.</p>
+<p>[Note 49: Jeu de mots sur I et eye, oeil, qui se prononcent de la même manière.]</p>
+<p>MALVOLIO.--M.O.A.I, cela ne s&#x27;ajuste pas si bien qu&#x27;auparavant; et pourtant en forçant un peu, l&#x27;apparence pourrait pencher vers moi: car chacune de ces lettres se trouve dans mon nom. Doucement: voyons; voici de la prose qui suit: «Si cette lettre tombe dans tes mains, médite-la. Mon étoile m&#x27;a placée au-dessus de toi; mais ne t&#x27;effraye point de la grandeur. Quelques-uns naissent grands; d&#x27;autres parviennent à la grandeur, et il en est que la grandeur vient chercher elle-même. Ta destinée t&#x27;ouvre les bras, que ton audace et ton courage l&#x27;embrassent. Et pour l&#x27;accoutumer à ce que tu dois vraisemblablement devenir, sors de ton humble obscurité, et parais fier et brillant. Sois contredisant avec un parent, hautain avec les serviteurs: que ta bouche raisonne politique, prends les manières d&#x27;un homme original. Voilà les conseils que donne celle qui soupire pour toi. Souviens-toi de celle qui fit l&#x27;éloge de tes bas jaunes et qui souhaita de te voir toujours les jarretières croisées. Souviens-t&#x27;en, je te le répète. Va, poursuis: ta fortune est faite, si tu le veux; si tu ne le veux pas, reste donc un simple intendant, le compagnon des valets, et un homme indigne de toucher la main de la fortune. Adieu: celle qui voudrait changer d&#x27;état avec toi.--L&#x27;HEUREUSE INFORTUNÉE.» La lumière du jour et la plaine ouverte n&#x27;en montrent pas davantage: cela est évident. Je veux devenir fier; lire les auteurs politiques; je contrecarrerai sir Tobie; je me décrasserai de mes grossières connaissances; je serai tiré à quatre épingles; je deviendrai l&#x27;homme par excellence.--Je ne fais pas maintenant l&#x27;imbécile; je ne laisse pas mon imagination se jouer de moi: car toutes sortes de raisons concourent à me prouver que ma maîtresse est amoureuse de moi: elle louait dernièrement mes bas jaunes; elle a vanté ma jambe et sa jarretière; et dans cette lettre elle se découvre elle-même à mon amour; c&#x27;est avec une espèce d&#x27;injonction, qu&#x27;elle m&#x27;invite à porter les parures qu&#x27;elle préfère. Je rends grâces à mon étoile; je suis heureux. Je me singulariserai, je me pavanerai, en bas jaunes, et en riches jarretières, et tout cela le temps de les mettre. Louange à Jupiter et à mon étoile!--Ah! voici encore un post-scriptum.--«Il est impossible que tu ne devines pas qui je suis. Si tu agrées mon amour, fais-le voir dans ton sourire: ton sourire te sied à merveille: souris donc toujours en ma présence, mon doux ami, je t&#x27;en conjure.» O Jupiter, je te remercie.--Je sourirai: je ferai tout ce que tu voudras que je fasse.</p>
+<p>(Il sort.)</p>
+<p>FABIAN.--Je ne donnerais pas ma part de cette scène divertissante pour une pension de mille roupies que me payerait le sophi[50].</p>
+<p>[Note 50: Allusion à sir Robert Shirley, ambassadeur près du sophi.]</p>
+<p>SIR TOBIE.--J&#x27;épouserais cette fille pour cette seule invention.</p>
+<p>SIR ANDRÉ.--Et moi aussi.</p>
+<p>SIR TOBIE.--Et sans lui demander d&#x27;autre dot qu&#x27;une seconde plaisanterie pareille.</p>
+<p>SIR ANDRÉ.--J&#x27;en dis autant.</p>
+<p>(Entre Marie.)</p>
+<p>FABIAN.--Voilà venir celle qui attrape si bien les dupes.</p>
+<p>SIR TOBIE à Marie.--Veux-tu mettre ton pied sur ma tête?</p>
+<p>SIR ANDRÉ.--Ou sur la mienne?</p>
+<p>SIR TOBIE.--Jouerai-je avec toi ma liberté, aux dames? Et deviendrai-je ton esclave?</p>
+<p>SIR ANDRÉ.--Oui, d&#x27;honneur; ou veux-tu que ce soit moi?</p>
+<p>SIR TOBIE.--Tu l&#x27;as plongé dans un tel rêve, que quand il en perdra l&#x27;image, il en deviendra fou.</p>
+<p>MARIE.--Allons, dites la vérité: cela fait-il effet sur lui?</p>
+<p>SIR TOBIE.--Comme l&#x27;eau-de-vie sur une sage-femme.</p>
+<p>MARIE.--Alors, si vous voulez voir les fruits de cette farce, remarquez bien son premier abord devant ma maîtresse. Il va aller la trouver en bas jaunes, et c&#x27;est une couleur qu&#x27;elle abhorre; les jarretières en croix, mode qu&#x27;elle déteste; et il va lui faire des sourires qui cadreront si mal avec la tristesse et la mélancolie où elle est plongée, qu&#x27;il est impossible qu&#x27;il n&#x27;en résulte pas pour lui le plus insigne mépris; si vous voulez le voir, suivez-moi.</p>
+<p>SIR TOBIE.--Je te suivrais aux portes du Tartare merveilleux démon d&#x27;esprit.</p>
+<p>SIR ANDRÉ.--Je veux en être aussi.</p>
+<p>(Ils sortent.)</p>
+<h3 class="sub">Fin du deuxième acte — Acte troisième</h3>
+<h2 class="chapter" id="c9">Scène I</h2>
+<p>Le jardin d&#x27;Olivia.</p>
+<p>VIOLA, LE BOUFFON avec un tambourin.</p>
+<p>VIOLA.--Avec ta permission, l&#x27;ami, et celle de ta musique, vis-tu avec ton tambourin[51].</p>
+<p>[Note 51: Équivoque sur le mot by, qui peut exprimer également par et près de.]</p>
+<p>LE BOUFFON.--Non, monsieur; je vis avec l&#x27;église.</p>
+<p>VIOLA.--Es-tu un homme d&#x27;église?</p>
+<p>LE BOUFFON.--Rien de pareil, monsieur; je vis à côté de l&#x27;église, car je vis dans ma maison, et ma maison est près de l&#x27;église.</p>
+<p>VIOLA.--Tu pourrais donc dire de même que le roi vit près d&#x27;un mendiant, si un mendiant habite près de lui; ou que l&#x27;église est à côté de ton tambourin, si ton tambourin est près de l&#x27;église.</p>
+<p>LE BOUFFON.--Vous l&#x27;avez dit, monsieur.--Ce que c&#x27;est que ce siècle!--une phrase n&#x27;est qu&#x27;un gant de peau de daim dans les mains d&#x27;un homme d&#x27;esprit: avec quelle rapidité il sait la retourner à l&#x27;envers!</p>
+<p>VIOLA.--Oui, cela est certain: ceux qui savent jouer adroitement avec les mots peuvent aisément les rendre libertins.</p>
+<p>LE BOUFFON.--En ce cas, je voudrais bien que ma soeur n&#x27;eût pas eu de nom, monsieur.</p>
+<p>VIOLA.--Pourquoi, l&#x27;ami?</p>
+<p>LE BOUFFON.--Pourquoi, monsieur? C&#x27;est que son nom est un mot; et en jouant sur ce mot, on pourrait rendre ma soeur libertine; mais à vrai dire, les mots sont devenus de vrais coquins, depuis que les billets les ont déshonorés.</p>
+<p>VIOLA.--La raison?</p>
+<p>LE BOUFFON.--Vraiment, monsieur, je ne puis vous en donner aucune sans paroles, et les paroles sont devenues si fausses que je suis dégoûté de m&#x27;en servir pour prouver la raison.</p>
+<p>VIOLA.--Je garantis que tu es un joyeux drôle, et qui n&#x27;as souci de rien.</p>
+<p>LE BOUFFON.--Non pas, s&#x27;il vous plaît, monsieur, je me soucie de quelque chose; mais en conscience, monsieur, je ne me soucie pas de vous: si cela s&#x27;appelle n&#x27;avoir souci de rien, monsieur, je voudrais que cela pût vous rendre invisible.</p>
+<p>VIOLA.--N&#x27;es-tu pas le fou de madame Olivia?</p>
+<p>LE BOUFFON.--Non, en vérité, monsieur. Madame Olivia n&#x27;a point de folie, et elle n&#x27;entretiendra de fou, monsieur, jusqu&#x27;à ce qu&#x27;elle soit mariée; car les fous ressemblent aux maris, comme les harenguets aux harengs. Le mari est le plus gros. Je ne suis vraiment point son fou; je ne suis que son corrupteur de mots.</p>
+<p>VIOLA.--Je t&#x27;ai vu dernièrement chez le comte Orsino.</p>
+<p>LE BOUFFON.--La folie, monsieur, fait le tour du globe comme le soleil; elle brille partout. Je serais bien fâché, monsieur, que le fou fût aussi souvent avec votre maître qu&#x27;il l&#x27;est avec ma maîtresse.--Je crois avoir aperçu votre sagesse dans la même maison.</p>
+<p>VIOLA.--Allons, si tu veux l&#x27;exercer sur moi, nous n&#x27;aurons pas un mot de plus ensemble. Tiens, voilà de quoi dépenser.</p>
+<p>LE BOUFFON.--Ah! que Jupiter, à sa première occasion de cheveux, vous envoie une barbe!</p>
+<p>VIOLA.--Ma foi, je te dirai..... que je suis presque malade d&#x27;amour pour une barbe: quoique je ne voulusse pas la voir croître sur mon menton.--Ta maîtresse est-elle chez elle?</p>
+<p>LE BOUFFON, regardant l&#x27;argent.--Un couple de cette espèce ne pourrait-il pas multiplier, monsieur?</p>
+<p>VIOLA.--Oui, si on les tenait ensemble et qu&#x27;on les mît en oeuvre.</p>
+<p>LE BOUFFON.--Je jouerais alors le rôle du seigneur Pandare de Phrygie, monsieur, en amenant une Cressida à ce Troïlus.</p>
+<p>VIOLA.--Je te comprends, l&#x27;ami; c&#x27;est mendier adroitement.</p>
+<p>LE BOUFFON.--Ce n&#x27;est pas une grande affaire, monsieur; j&#x27;espère, puisque je ne demande qu&#x27;une mendiante: Cressida était une mendiante. Ma maîtresse est chez elle, monsieur, je veux lui déduire d&#x27;où vous venez: quant à ce que vous désirez, cela est hors de mon firmament; j&#x27;aurais pu dire élément; mais ce mot est suranné.</p>
+<p>(Il sort.)</p>
+<p>VIOLA.--Cet original est assez sensé pour jouer le fou; et pour bien faire le fou, cela demande une sorte d&#x27;esprit. Il faut qu&#x27;il observe l&#x27;humeur de ceux qu&#x27;il plaisante, la qualité des personnes et les circonstances; et qu&#x27;il n&#x27;aille pas, comme le faucon non dressé, fondre sur toutes les plumes qui passent devant ses yeux. C&#x27;est là un travail, aussi difficile que l&#x27;art de l&#x27;homme sensé; car la folie qu&#x27;on montre à propos est de saison: mais la folie des sages qui extravaguent ternit leur sagesse.</p>
+<p>(Entrent sir Tobie et sir André.)</p>
+<p>SIR ANDRÉ.--Salut à vous, mon gentilhomme.</p>
+<p>VIOLA.--Et à vous, monsieur.</p>
+<p>SIR TOBIE.--Dieu vous garde, monsieur[52].</p>
+<p>[Note 52: Les mots sont en français dans l&#x27;original.]</p>
+<p>VIOLA.--Et vous aussi; votre serviteur.</p>
+<p>SIR ANDRÉ.--J&#x27;espère, monsieur, que vous l&#x27;êtes comme je suis le vôtre.</p>
+<p>SIR TOBIE.--Voulez-vous approcher de la maison? Ma nièce est fort désireuse de vous y voir entrer, si c&#x27;est à elle que vous avez affaire.</p>
+<p>VIOLA.--Je me rends chez votre nièce, monsieur; je veux dire qu&#x27;elle est le but de mon voyage.</p>
+<p>SIR TOBIE.--Tâtez vos jambes, monsieur; mettez-les en mouvement.</p>
+<p>VIOLA.--Mes jambes m&#x27;entendent mieux, monsieur, que je n&#x27;entends ce que vous voulez dire en me disant de tâter mes jambes.</p>
+<p>SIR TOBIE.--Je veux dire que vous marchiez, monsieur, que vous entriez.</p>
+<p>VIOLA.--Je vous répondrai en marchant et en entrant; mais nous sommes prévenus. (Entrent Olivia et Marie.) Excellente et parfaite dame, que le ciel fasse pleuvoir ses parfums sur vous!</p>
+<p>SIR ANDRÉ.--Ce jeune homme est un fameux courtisan. Pleuvoir des parfums! A merveille!</p>
+<p>VIOLA.--Mon message n&#x27;a de voix, belle dame, que pour votre oreille indulgente et libérale.</p>
+<p>SIR ANDRÉ.--Des parfums! libérale! indulgente! Je veux avoir ces trois mots tout prêts.</p>
+<p>OLIVIA.--Qu&#x27;on ferme la porte du jardin, et qu&#x27;on me laisse l&#x27;entendre seule. (Sir Tobie, sir André et Marie sortent.) Donnez-moi votre main, monsieur.</p>
+<p>VIOLA.--Mon humble respect, madame, et mon dévouement à votre service.</p>
+<p>OLIVIA.--Quel est votre nom?</p>
+<p>VIOLA.--Césario est le nom de votre serviteur, belle princesse.</p>
+<p>OLIVIA.--Mon serviteur, monsieur! Jamais il n&#x27;y a eu de joie dans le monde, depuis qu&#x27;on a appelé compliments d&#x27;humbles mensonges. Vous êtes le serviteur du comte Orsino, jeune homme.</p>
+<p>VIOLA.--Et lui est le vôtre, et les siens sont nécessairement les vôtres. Le serviteur de votre serviteur est votre serviteur, madame.</p>
+<p>OLIVIA.--Pour le comte, je ne songe pas à lui: quant à ses pensées, je voudrais qu&#x27;elles fussent vides plutôt que pleines de moi!</p>
+<p>VIOLA.--Madame, je viens pour éveiller vos bonnes pensées en sa faveur.</p>
+<p>OLIVIA.--Oh! avec votre permission, je vous prie, je vous ai ordonné de ne me jamais reparler de lui; mais si vous vouliez entamer une autre négociation j&#x27;aurais plus de plaisir à vous l&#x27;entendre traiter, qu&#x27;à écouter l&#x27;harmonie des sphères.</p>
+<p>VIOLA.--Chère dame.....</p>
+<p>OLIVIA.--Permettez, je vous prie, j&#x27;ai envoyé après votre dernière apparition pleine de charme, une bague sur vos traces: c&#x27;est ainsi que je me suis trompée moi-même, et mon valet; et, j&#x27;en ai peur, vous aussi. Il faut que je me soumette à vos dures interprétations pour vous forcer, par une ruse honteuse, à prendre ce que vous saviez n&#x27;être pas à vous. Que pouvez-vous penser? N&#x27;avez-vous pas mis mon honneur au pilori pour l&#x27;exposer aux attaques de toutes les pensées déchaînées que peut concevoir un coeur tyrannique? Pour un homme de votre pénétration, c&#x27;est vous en montrer assez: au lieu du sein qui le cachait, ce n&#x27;est plus qu&#x27;une gaze qui voile mon pauvre coeur. A présent, que je vous entende me répondre.</p>
+<p>VIOLA.--Je vous plains.</p>
+<p>OLIVIA.--C&#x27;est déjà un pas vers l&#x27;amour.</p>
+<p>VIOLA.--Non, ce n&#x27;est pas un pas; car il est d&#x27;expérience journalière que très-souvent nous plaignons nos ennemis.</p>
+<p>OLIVIA.--Allons, il me semble qu&#x27;il est encore temps d&#x27;en rire. O monde! que le pauvre est prompt à s&#x27;enorgueillir! S&#x27;il faut être la proie de quelqu&#x27;un, combien il vaut mieux succomber devant le lion que devant le loup! (L&#x27;heure sonne.) Cette horloge me reproche la perte que je fais du temps. Rassurez-vous, bon jeune homme, je ne veux pas de vous; et pourtant quand une fois la raison et la jeunesse seront mûries chez vous, votre femme recueillera probablement un beau mari.--Voilà votre chemin à l&#x27;occident.</p>
+<p>VIOLA.--Eh bien! en route pour l&#x27;occident[53]. Que la grâce et la belle humeur vous accompagnent! Vous ne voulez donc, madame, me charger de rien pour mon maître?</p>
+<p>[Note 53: «Westward ho!» c&#x27;était le cri des mariniers de la Tamise à cette époque, où elle servait de grande voie de communication pour les habitants de Londres.]</p>
+<p>OLIVIA.--Arrêtez, je vous prie; dites-moi, que pensez-vous de moi?</p>
+<p>VIOLA.--Que vous pensez ne pas être ce que vous êtes.</p>
+<p>OLIVIA.--Si je pense cela, je le pense aussi de vous.</p>
+<p>VIOLA.--Eh bien! vous pensez juste: je ne suis pas ce que je suis.</p>
+<p>OLIVIA.--Je voudrais que vous fussiez ce que je vous souhaiterais être.</p>
+<p>VIOLA.--Si c&#x27;était pour être mieux que je ne suis, madame, je souhaiterais que votre voeu s&#x27;accomplît; car maintenant je suis votre jouet.</p>
+<p>OLIVIA.--Oh! comme le dédain semble beau dans le mépris et le courroux qui se peignent sur ses lèvres! Un meurtrier criminel ne se trahit pas plus vite que l&#x27;amour qui voudrait se cacher. La nuit de l&#x27;amour est aussi claire que le plein midi. Césario, par les roses du printemps, par la virginité, par l&#x27;honneur, par la foi, par tout ce qu&#x27;il y a de plus sacré, je le jure, je t&#x27;aime tant que, malgré tes dédains, ni l&#x27;esprit, ni la raison ne peuvent cacher ma passion. Ne va pas puiser dans cet aveu des raisons; car, quoique je te recherche, ce n&#x27;est pas pour toi un motif. Impose plutôt silence à tes raisonnements par cette réflexion: l&#x27;amour qu&#x27;on a cherché est bon, mais l&#x27;amour qui se donne sans qu&#x27;on le cherche vaut mieux.</p>
+<p>VIOLA.--Je jure, par mon innocence et par ma jeunesse, que j&#x27;ai aussi un coeur, une âme, une foi, mais qu&#x27;aucune femme ne les possède, et que jamais femme n&#x27;en sera la maîtresse que moi seule. Et adieu, chère dame; je ne viendrai plus déplorer devant vous les larmes de mon maître.</p>
+<p>OLIVIA.--Revenez encore, peut-être pourrez-vous émouvoir et porter à goûter son amour ce coeur qui le hait maintenant.</p>
+<p>(Elles sortent.)</p>
+<h2 class="chapter" id="c10">Scène II</h2>
+<p>Un appartement dans la maison d&#x27;Olivia.</p>
+<p>SIR TOBIE, SIR ANDRÉ et FABIAN.</p>
+<p>SIR ANDRÉ.--Non, par ma foi; je ne resterai pas une minute de plus.</p>
+<p>SIR TOBIE.--Ta raison, mon cher furieux; donne-moi ta raison.</p>
+<p>FABIAN.--Il faut absolument que vous donniez votre raison, sir André.</p>
+<p>SIR ANDRÉ.--Comment? J&#x27;ai vu votre nièce prodiguer plus de faveurs au serviteur du comte qu&#x27;elle ne m&#x27;en a jamais accordé; j&#x27;ai vu tout ce qui s&#x27;est passé dans le verger.</p>
+<p>SIR TOBIE.--T&#x27;a-t-elle vu pendant ce temps-là, mon vieux garçon, dis-moi cela?</p>
+<p>SIR ANDRÉ.--Aussi clairement que je vous vois à présent.</p>
+<p>FABIAN.--C&#x27;est là une grande preuve de l&#x27;amour qu&#x27;elle a pour vous.</p>
+<p>SIR ANDRÉ.--Morbleu! voulez-vous faire de moi un âne?</p>
+<p>FABIAN.--Je vous prouverai la légitimité de ma conséquence, sir André, sur les témoignages du jugement et de la raison.</p>
+<p>SIR TOBIE.--Et tous les deux ont été de grands juristes, bien avant que Noé fût devenu marin.</p>
+<p>FABIAN.--Elle n&#x27;a fait un favorable accueil à ce page, en votre présence, que pour vous exaspérer, pour réveiller votre valeur endormie; que pour vous mettre du feu dans le coeur, et du soufre dans le foie. Vous auriez dû l&#x27;aborder alors; et par quelques fines railleries, tout fraîchement frappées à la monnaie, vous auriez pétrifié et rendu muet le jeune page: voilà ce qu&#x27;on attendait de vous, et cela a été manqué; vous avez laissé le temps effacer la double dorure de cette occasion; et vous voilà voguant au pôle nord de la bonne opinion de ma maîtresse. Vous y resterez suspendu comme un glaçon à la barbe d&#x27;un Hollandais, à moins que vous ne rachetiez cette faute par quelque louable tentative de valeur ou de politique.</p>
+<p>SIR ANDRÉ.--S&#x27;il faut tenter quelque chose, il faut que ce soit par la valeur, car je déteste la politique; j&#x27;aimerais autant être un Browniste[54] qu&#x27;un politique.</p>
+<p>[Note 54: Secte dissidente dont le chef, nommé Robert Browne, était l&#x27;objet des quolibets du temps.]</p>
+<p>SIR TOBIE.--Eh bien! en ce cas, bâtis-moi donc ta fortune sur la base de la valeur. Envoie-moi un cartel au page du comte: bats-toi avec lui: blesse-le en onze endroits: ma nièce en tiendra note, et sois bien sûr qu&#x27;il n&#x27;y a point dans le monde d&#x27;entremetteur d&#x27;amour qui puisse rendre un homme recommandable aux yeux d&#x27;une femme comme la réputation de valeur.</p>
+<p>FABIAN.--Il n&#x27;y a pas d&#x27;autre parti que celui-là, sir André.</p>
+<p>SIR ANDRÉ.--Voulez-vous, l&#x27;un de vous deux, lui porter mon défi?</p>
+<p>SIR TOBIE.--Allons, écris-le d&#x27;une écriture martiale: sois tranchant et court. Peu importe qu&#x27;il soit spirituel, pourvu qu&#x27;il soit éloquent, et plein d&#x27;invention. Insulte-le avec toute la licence de l&#x27;encre. Si tu le tutoies deux ou trois fois, cela ne fera pas mal; et accumule autant de démentis qu&#x27;il en pourra tenir dans ta feuille de papier, fût-elle assez grande pour servir de lit à la Ware, en Angleterre. Allons, à l&#x27;ouvrage! qu&#x27;il y ait assez de fiel dans ton encre; peu importe que tu écrives avec une plume d&#x27;oie: allons, à l&#x27;oeuvre.</p>
+<p>SIR ANDRÉ.--Où vous retrouverai-je?</p>
+<p>SIR TOBIE.--Nous irons te demander au cubiculo[55]: va.</p>
+<p>(Sir André sort.)</p>
+<p>[Note 55: Cubiculo, dans la chambre à coucher.]</p>
+<p>FABIAN.--Voilà un bout d&#x27;homme qui vous est bien cher, sir Tobie.</p>
+<p>SIR TOBIE.--Je lui ai été très-cher, mon garçon, jusqu&#x27;à concurrence de deux mille écus ou quelque chose comme cela.</p>
+<p>FABIAN.--Nous aurons une bonne lettre de lui: mais vous ne la remettrez pas à son adresse?</p>
+<p>SIR TOBIE.--Si fait, ou ne te fie jamais à ma parole; je veux user de tous les moyens pour exciter le jeune homme à y répondre. Je crois que ni boeufs, ni câbles ne pourront jamais venir à bout de les joindre; car, pour sir André, si on l&#x27;ouvrait et qu&#x27;on trouvât seulement autant de sang dans son foie qu&#x27;il en faut pour embarrasser le pied d&#x27;une mouche, je consens à manger le reste de la dissection.</p>
+<p>FABIAN.--Et son adversaire, le jeune page, ne porte pas sur sa figure de grands symptômes de férocité.</p>
+<p>(Entre Marie.)</p>
+<p>SIR TOBIE.--Vois, voici le plus jeune roitelet de la couvée qui vient à nous.</p>
+<p>MARIE.--Si vous voulez vous dilater la rate, et que vous soyez curieux de rire à vous tenir les côtés, suivez-moi. Ce stupide Malvolio est changé en païen, en vrai renégat: car il n&#x27;est point de chrétien, pour peu qu&#x27;il veuille être sauvé en croyant la vérité, qui puisse jamais croire à des extravagances pareilles et aussi grossières: il est en bas jaunes.</p>
+<p>SIR TOBIE.--Et les jarretières en croix?</p>
+<p>MARIE.--De la plus ridicule manière; comme un pédant qui tient école dans l&#x27;église.--Je l&#x27;ai suivi pas à pas, comme si j&#x27;eusse été son assassin; il obéit de point en point à la lettre que j&#x27;ai laissé tomber pour lui faire niche. Pour sourire, il contourne son visage en plus de lignes qu&#x27;il n&#x27;y en a dans la nouvelle carte, augmentée encore des Indes: vous n&#x27;avez jamais rien vu de semblable. J&#x27;ai bien de la peine à m&#x27;empêcher de lui lancer quelque chose à la tête. Je sais que ma maîtresse lui donnera quelque soufflet; si elle le fait, il sourira encore, et le prendra pour une faveur signalée.</p>
+<p>SIR TOBIE.--Allons, mène-nous, mène-nous où il est.</p>
+<p>(Ils sortent.)</p>
+<h2 class="chapter" id="c11">Scène III</h2>
+<p>Une rue.</p>
+<h3 class="sub">Antonio, Sébastien.</h3>
+<p>SÉBASTIEN.--Je ne voulais pas volontairement vous déranger: mais puisque vous faites votre plaisir de vos peines, je ne gronde plus.</p>
+<p>ANTONIO.--Je n&#x27;ai pu rester derrière vous: un désir, plus pénétrant que l&#x27;acier affilé, m&#x27;a aiguillonné et forcé à marcher en avant. Et ce n&#x27;est pas purement par besoin de vous voir, ce n&#x27;est pas seulement par amitié, quoiqu&#x27;elle soit assez forte pour m&#x27;avoir fait entreprendre une plus longue route; mais c&#x27;est aussi par inquiétude de ce qui pourrait vous arriver dans votre voyage, à vous qui n&#x27;avez aucune connaissance de ce pays, qui souvent se montre sauvage, inhospitalier pour un étranger sans guide et sans ami. Mon affection, poussée par ces motifs de crainte, m&#x27;a engagé à vous suivre.</p>
+<p>SÉBASTIEN.--Mon cher Antonio, je ne peux vous répondre que par des remerciements, et des remerciements, et toujours des remerciements. Souvent les services de l&#x27;amitié se payent avec cette monnaie qui n&#x27;a pas cours. Mais si ma puissance égalait mon désir, vous seriez mieux récompensé.--Que ferons-nous? Irons-nous voir ensemble les ruines de cette ville?</p>
+<p>ANTONIO.--Demain, seigneur. Il vaut mieux d&#x27;abord aller voir votre logement.</p>
+<p>SÉBASTIEN.--Je ne suis point fatigué, et il y a loin encore d&#x27;ici à la nuit: je vous en prie, allons récréer nos yeux par la vue des monuments, des choses célèbres, qui donnent du renom à cette ville.</p>
+<p>ANTONIO.--Je vous demanderai de m&#x27;excuser. Je ne me promène point sans danger dans ces rues. Une fois, dans un combat de mer, j&#x27;ai rendu quelque service contre les galères du comte; et un service vraiment si important, que si j&#x27;étais pris ici, j&#x27;aurais peine à me tirer d&#x27;affaire.</p>
+<p>SÉBASTIEN.--Probablement vous avez tué beaucoup de ses sujets.</p>
+<p>ANTONIO.--Mon offense n&#x27;est pas d&#x27;une nature si sanguinaire; quoique les circonstances et la querelle nous missent bien en droit d&#x27;en venir à cet argument sanglant. On aurait pu l&#x27;apaiser depuis en restituant ce que nous avions pris: et c&#x27;est ce que firent la plupart des citoyens de notre ville, pour l&#x27;intérêt du commerce: il n&#x27;y a eu que moi seul qui ai refusé; et à cause de cela, si j&#x27;étais surpris ici, je le payerais cher.</p>
+<p>SÉBASTIEN.--Ne vous montrez donc pas trop ouvertement.</p>
+<p>ANTONIO.--Cela ne serait pas prudent à moi. Tenez, monsieur, voilà ma bourse: la meilleure auberge où vous puissiez loger, c&#x27;est à l&#x27;Éléphant, dans les faubourgs du midi. Je vais y commander notre repas, tandis que vous passerez le temps et que vous satisferez votre curiosité en voyant la ville, vous me retrouverez là.</p>
+<p>SÉBASTIEN.--Pourquoi aurais-je votre bourse?</p>
+<p>ANTONIO.--Peut-être vos yeux tomberont-ils sur quelque bagatelle qu&#x27;il vous prendra envie d&#x27;acheter; et vos fonds, à ce que j&#x27;imagine, ne sont pas destinés à de frivoles emplettes.</p>
+<p>SÉBASTIEN.--Je serai votre porte-bourse, et je vous quitte pour une heure.</p>
+<p>ANTONIO.--A l&#x27;Éléphant....</p>
+<p>SÉBASTIEN.--Je m&#x27;en souviens bien.</p>
+<h2 class="chapter" id="c12">Scène IV.</h2>
+<p>Le jardin d&#x27;Olivia.</p>
+<h3 class="sub">Olivia, Marie.</h3>
+<p>OLIVIA, à part.--J&#x27;ai envoyé après lui. Je suppose qu&#x27;il dise qu&#x27;il viendra..., comment le fêterai-je? Quel don lui ferai-je? car la jeunesse aime plus souvent à se faire acheter qu&#x27;elle ne se donne ou ne se prête... Je parle trop haut.--Où est Malvolio?--Il est grave et civil; et c&#x27;est un serviteur qui cadre bien avec ma position.--Où est Malvolio?</p>
+<p>MARIE.--Il vient, madame: mais dans un étrange accoutrement: il est sûrement possédé, madame.</p>
+<p>OLIVIA.--Quoi, que veux-tu dire? Est-ce qu&#x27;il extravague?</p>
+<p>MARIE.--Non, madame; il ne fait que sourire continuellement.--Il serait bon, madame, que vous fussiez entourée, s&#x27;il vient: car il est certain que cet homme a la tête timbrée.</p>
+<p>OLIVIA.--Va le chercher. (Marie sort.)--Je suis aussi insensée qu&#x27;il peut l&#x27;être, si la folie gaie et la folie triste sont égales. (Rentrent Marie et Malvolio.) Eh bien! Malvolio?</p>
+<p>MALVOLIO.--Belle dame.... ho! ho! ho!</p>
+<p>OLIVIA.--Tu ris? Je t&#x27;ai envoyé chercher pour une triste circonstance.</p>
+<p>MALVOLIO.--Triste, madame? Je pourrais être triste; ces jarretières croisées causent toujours quelque obstruction dans le sang: mais qu&#x27;est-ce que cela fait? Si elles plaisent à l&#x27;oeil d&#x27;une seule personne, je suis dans le cas du sonnet qui dit bien vrai: Plaire à une seule, c&#x27;est plaire à tout le monde.</p>
+<p>OLIVIA.--Qu&#x27;est-ce que tu as donc? Que t&#x27;arrive-t-il?</p>
+<p>MALVOLIO.--Il n&#x27;y a point de noir dans mon âme, quoiqu&#x27;il y ait du jaune à mes jambes.--Elle est tombée dans ses mains, et les ordres seront exécutés. Je m&#x27;imagine que nous savons reconnaître sa belle main romaine.</p>
+<p>OLIVIA.--Veux-tu aller te mettre au lit, Malvolio?</p>
+<p>MALVOLIO.--Au lit? Oui, ma chère âme, et je viendrai te trouver!</p>
+<p>OLIVIA.--Dieu te bénisse! Pourquoi ris-tu ainsi et baises-tu ta main si souvent?</p>
+<p>MARIE.--Que faites-vous, Malvolio?</p>
+<p>MALVOLIO.--Répondre à vos questions? Oui, comme les rossignols répondent aux corneilles.</p>
+<p>MARIE.--Pourquoi paraissez-vous avec cette ridicule hardiesse devant madame?</p>
+<p>MALVOLIO.--Ne t&#x27;effraye point de la grandeur?--Cela est bien écrit.</p>
+<p>OLIVIA.--Que veux-tu dire par là, Malvolio?</p>
+<p>MALVOLIO.--Quelques-uns naissent grands.</p>
+<p>OLIVIA.--Quoi?</p>
+<p>MALVOLIO.--D&#x27;autres parviennent à la grandeur.</p>
+<p>OLIVIA.--Que dis-tu?</p>
+<p>MALVOLIO.--Et il en est que la grandeur vient chercher d&#x27;elle-même.</p>
+<p>OLIVIA.--Que le ciel te rétablisse!</p>
+<p>MALVOLIO.--Rappelle-toi qui t&#x27;a fait l&#x27;éloge de tes bas jaunes.</p>
+<p>OLIVIA.--Tes bas jaunes?</p>
+<p>MALVOLIO.--Et qui a souhaité te voir en jarretières croisées.</p>
+<p>OLIVIA.--En jarretières croisées?</p>
+<p>MALVOLIO.--Poursuis, ta fortune est faite, pour peu que tu le veuilles.</p>
+<p>OLIVIA.--Ma fortune est faite?</p>
+<p>MALVOLIO.--Si tu ne le veux pas, je ne verrai donc en toi qu&#x27;un serviteur.</p>
+<p>OLIVIA.--Mais c&#x27;est une vraie folie de canicule.</p>
+<p>(Entre un domestique.)</p>
+<p>LE DOMESTIQUE.--Madame, le jeune gentilhomme du comte Orsino est revenu: il me serait bien difficile de le prier de se retirer, il attend le bon plaisir de Votre Seigneurie.</p>
+<p>OLIVIA.--Je vais aller le trouver. (Le domestique sort.)--Bonne Marie, aie soin qu&#x27;on veille sur ce garçon. Où est mon oncle Tobie? Que quelques-uns de mes gens le gardent à vue: je ne voudrais pas pour la moitié de ma fortune qu&#x27;il lui arrivât quelque malheur.</p>
+<p>(Olivia sort avec Marie.)</p>
+<p>MALVOLIO seul.--Oh! oh! qu&#x27;on m&#x27;approche maintenant? Pas moins que sir Tobie, pour m&#x27;accompagner! Cela s&#x27;accorde parfaitement avec la lettre; elle me l&#x27;envoie exprès pour que je le traite cavalièrement: car dans la lettre elle m&#x27;excite à cela. Secoue ton humble poussière, dit-elle: tiens tête au parent, sois hautain avec les serviteurs, que ta langue raisonne sur les affaires d&#x27;État, prends les airs d&#x27;un homme original; et ensuite elle me dicte la manière dont je dois m&#x27;y prendre: un visage sérieux, un maintien digne, une prononciation lente, à la manière de quelqu&#x27;un de grande considération, et le reste à l&#x27;avenant. Je l&#x27;ai prise dans mes filets: mais c&#x27;est l&#x27;oeuvre de Jupiter: et que Jupiter me rende reconnaissant!--Oui, et quand elle m&#x27;a quitté: Qu&#x27;on veille sur ce garçon! garçon, non pas Malvolio, ni suivant mon rang: mais garçon. Allons, tout se tient, en sorte que pas une drachme de scrupule, pas un scrupule de scrupule, pas le moindre obstacle, pas la moindre circonstance qui offre le moindre doute, la moindre incertitude.... Que peut-on dire à cela? Rien qui soit possible ne peut s&#x27;interposer entre moi et la perspective de mes espérances. Allons, c&#x27;est Jupiter, et non pas moi, qui est l&#x27;auteur de tout ceci, et je dois lui en rendre grâces.</p>
+<p>(Marie revient avec sir Tobie et Fabian.)</p>
+<p>SIR TOBIE.--Au nom du ciel, quel chemin a-t-il pris? Quand tous les diables de l&#x27;enfer seraient entrés dans ce petit corps, et que Légion même le posséderait, je lui parlerai.</p>
+<p>FABIAN.--Le voici, le voici.--(A Malvolio.) Comment vous va, monsieur? Comment vous trouvez-vous, ami?</p>
+<p>MALVOLIO.--Éloignez-vous, je vous congédie.--Laissez-moi jouir de mon particulier, retirez-vous.</p>
+<p>MARIE.--Voyez, comme l&#x27;esprit malin parle dans ses entrailles d&#x27;une voix sépulcrale! Ne vous l&#x27;avais-je pas dit? Sir Tobie, ma maîtresse vous prie de bien veiller sur lui.</p>
+<p>MALVOLIO.--Ha! ha! l&#x27;a-t-elle recommandé?</p>
+<p>SIR TOBIE.--Allez, allez; paix, paix! il faut que nous nous y prenions doucement avec lui. Laissez-moi faire.--Comment vous va, Malvolio? Comment vous trouvez-vous? Allons, du courage, mon garçon; défie le diable, souviens-toi qu&#x27;il est l&#x27;ennemi du genre humain.</p>
+<p>MALVOLIO.--Savez-vous bien ce que vous dites?</p>
+<p>MARIE.--Eh bien! voyez-vous, lorsque vous parlez mal du diable, comme il le prend à coeur? Prions Dieu qu&#x27;il ne soit pas ensorcelé.</p>
+<p>FABIAN.--Il faut porter de son urine à la sage-femme.</p>
+<p>MARIE.--Vraiment, c&#x27;est ce que je ne manquerai pas de faire dès demain matin, si je vis. Ma maîtresse ne voudrait pas le perdre pour plus de choses que je ne puis dire.</p>
+<p>MALVOLIO, à Marie.--Comment donc, mademoiselle?</p>
+<p>MARIE.--O mon Dieu!</p>
+<p>SIR TOBIE.--Je t&#x27;en prie, tais-toi; ce n&#x27;est pas là le moyen. Ne vois-tu pas que tu l&#x27;émeus? Laisse-moi seul avec lui.</p>
+<p>FABIAN.--Il n&#x27;y a pas d&#x27;autre voie que la douceur: doucement, doucement; l&#x27;esprit est brutal, et il ne veut pas être traité brutalement.</p>
+<p>SIR TOBIE.--Eh bien! mon dindonneau, comment cela va-t-il? Comment es-tu, mon poulet?</p>
+<p>MALVOLIO.--Monsieur?</p>
+<p>SIR TOBIE.--Oui! je t&#x27;en prie; viens avec moi. Allons, mon garçon, il ne sied pas à un homme sage comme toi, de jouer ainsi avec Satan; aux enfers, l&#x27;infâme charbonnier[56]!</p>
+<p>[Note 56: Le mot de charbonnier était, dans ce temps-là, une insulte grave.]</p>
+<p>MARIE.--Tâchez de lui faire dire ses prières; mon bon sir Tobie, engagez-le à prier.</p>
+<p>MALVOLIO.--Mes prières, effrontée!</p>
+<p>MARIE.--Non, je vous proteste qu&#x27;il ne voudra pas entendre parler de rien de sacré.</p>
+<p>MALVOLIO.--Allez tous vous faire pendre! Vous êtes des têtes vides et légères; je ne suis pas formé des mêmes éléments que vous: vous en saurez davantage par la suite.</p>
+<p>(Il sort.)</p>
+<p>SIR TOBIE.--Est-il possible?</p>
+<p>FABIAN.--Si on jouait ceci sur un théâtre, je pourrais bien le condamner comme une fiction invraisemblable.</p>
+<p>SIR TOBIE.--Oh! son esprit tout entier s&#x27;est laissé prendre au piége.</p>
+<p>MARIE.--Allons, suivez-le à présent, de peur que notre projet ne s&#x27;évente et ne se gâte.</p>
+<p>FABIAN.--En vérité, vous le rendrez fou.</p>
+<p>MARIE.--La maison n&#x27;en sera que plus tranquille.</p>
+<p>SIR TOBIE.--Allons, nous l&#x27;enfermerons dans une chambre obscure, enchaîné. Ma nièce est déjà dans la persuasion qu&#x27;il est fou! Nous pouvons continuer cette farce, pour notre amusement et sa pénitence, jusqu&#x27;à ce que, las de nous amuser, nous nous sentions disposés à avoir pitié de lui. Alors, nous porterons ton plan au tribunal, et nous te couronnerons en qualité de femme habile à trouver des fous. Mais voyez, voyez.</p>
+<p>(Entre sir André Ague-cheek.)</p>
+<p>FABIAN.--Nouvelle matière à divertissement pour le matin du premier mai[57].</p>
+<p>[Note 57: Jour consacré aux fêtes.]</p>
+<p>SIR ANDRÉ.--Voici le cartel. Lisez-le. Je garantis, qu&#x27;il y a du poivre et du vinaigre.</p>
+<p>FABIAN.--Est-il bien insultant?</p>
+<p>SIR ANDRÉ.--S&#x27;il l&#x27;est? Oh! je vous en réponds; lisez-le seulement.</p>
+<p>SIR TOBIE.--Donnez-moi. (Sir Tobie lit.) «Jeune homme, qui que tu sois, tu n&#x27;es qu&#x27;un vil drôle.</p>
+<p>FABIAN.--Bien, courageux!</p>
+<p>SIR TOBIE, lisant.--«Ne t&#x27;étonne pas, et ne te demande pas dans tes pensées pourquoi je te traite ainsi; car je ne t&#x27;en donnerai aucune raison.</p>
+<p>FABIAN.--Bonne note! qui vous met hors de la prise de la loi.</p>
+<p>SIR TOBIE, lisant.--«Tu viens chez la dame Olivia, et sous mes yeux elle te traite avec bonté! Mais tu mens par la gorge: ce n&#x27;est pas là la raison pourquoi je te provoque en duel.</p>
+<p>FABIAN.--Fort laconique, et d&#x27;une bêtise exquise.</p>
+<p>SIR TOBIE, lisant.--«Je te surprendrai en chemin, retournant chez toi, et là, s&#x27;il t&#x27;arrive de me tuer....</p>
+<p>FABIAN.--Fort bien!</p>
+<p>SIR TOBIE, lisant.--«Tu me tueras comme un lâche et un vaurien.</p>
+<p>FABIAN.--Bon! Vous vous mettez toujours au-dessus du vent de la loi.</p>
+<p>SIR TOBIE, lisant.--«Porte-toi bien; et que Dieu fasse merci à l&#x27;une de nos deux âmes; il pourrait faire merci à la mienne; mais j&#x27;espère mieux que cela, et ainsi songe à toi. Ton ami, selon que tu le traiteras, et ton ennemi juré. «ANDRÉ AGUE-CHEEK.»</p>
+<p>--Si cette lettre n&#x27;est pas capable de le mouvoir, ses jambes ne le pourront pas davantage. Je veux la lui remettre.</p>
+<p>MARIE.--Vous avez une belle occasion pour cela: il a maintenant un entretien avec madame et il va partir prochainement.</p>
+<p>SIR TOBIE.--Allons, sir André; attends-le au coin du verger, en vrai prévôt: du plus loin que tu l&#x27;apercevras, dégaine; et en tirant ton épée, jure à faire peur, car il arrive souvent qu&#x27;un effroyable serment, prononcé d&#x27;un accent insultant et d&#x27;une voix foudroyante, vaut plus d&#x27;applaudissements au courage que ne lui en auraient gagné les preuves mêmes. Allons, pars.</p>
+<p>SIR ANDRÉ.--Oh! laissez-moi le soin de jurer comme il faut.</p>
+<p>(Il sort.)</p>
+<p>SIR TOBIE.--Maintenant.... je ne lui donnerai pas la lettre; car les manières du jeune gentilhomme me prouvent qu&#x27;il est intelligent et bien élevé: la négociation où il est employé entre son maître et ma nièce le confirme; en conséquence cette lettre, chef-d&#x27;oeuvre d&#x27;ignorance, n&#x27;inspirerait aucune terreur au jeune homme, et il s&#x27;apercevrait aisément qu&#x27;elle vient d&#x27;un butor. Mais, voyez-vous, je lui rendrai le défi de bouche; je vanterai sir André pour avoir la réputation d&#x27;un brave; et j&#x27;inspirerai au jeune homme (que son âge rendra crédule, je le sais) la plus formidable idée de sa fureur, de sa science, de sa rage, et de son impétuosité. Et cela les épouvantera si fort tous deux, qu&#x27;ils se tueront mutuellement de leur regard, comme des basilics.</p>
+<p>FABIAN.--Le voici qui vient avec votre nièce; laissez-les ensemble, jusqu&#x27;à ce qu&#x27;il prenne congé d&#x27;elle, et alors suivez-le.</p>
+<p>SIR TOBIE.--Je vais en attendant méditer quelque terrible message pour rendre un défi.</p>
+<p>(Ils sortent.)</p>
+<p>(Entrent Olivia et Viola.)</p>
+<p>OLIVIA.--J&#x27;en ai trop dit à un coeur de pierre, et j&#x27;ai exposé mon honneur à trop bon marché. Il y a quelque chose en moi qui me reproche ma faute; mais ma faute est si entêtée et si opiniâtre qu&#x27;elle se rit des reproches.</p>
+<p>VIOLA.--Les chagrins de mon maître tiennent la même conduite que votre passion.</p>
+<p>OLIVIA.--Tenez, portez ce bijou pour l&#x27;amour de moi; c&#x27;est mon portrait: ne refusez pas; il n&#x27;a point de langue qui puisse vous être importune, et je vous en conjure, revenez demain. Que pourrez-vous me demander que je vous refuse, de ce que l&#x27;honneur peut, sans se compromettre, accorder à une demande?</p>
+<p>VIOLA.--Rien autre chose que cette grâce: votre amour sincère pour mon maître.</p>
+<p>OLIVIA.--Comment puis-je, avec honneur, lui donner ce que je vous ai donné?</p>
+<p>VIOLA.--Je vous tiendrai quitte.</p>
+<p>OLIVIA.--Allons, revenez demain; adieu: un démon qui te ressemblerait pourrait conduire mon âme en enfer!</p>
+<p>(Elle sort.)</p>
+<p>(Rentrent Sir Tobie Belch et Fabian.)</p>
+<p>SIR TOBIE.--Mon gentilhomme, Dieu te garde!</p>
+<p>VIOLA.--Et vous aussi, monsieur!</p>
+<p>SIR TOBIE.--Recours à tous les moyens que tu as de te défendre. De quelle nature sont les insultes que tu lui as faites, c&#x27;est ce que j&#x27;ignore: mais ton ennemi en embuscade, plein de courroux, avide de sang comme un chasseur, t&#x27;attend au bout du verger. Dégaine ta courte épée, sois leste à te mettre en garde; car ton assaillant est vif, habile, et poussé par une haine mortelle.</p>
+<p>VIOLA.--Vous vous méprenez, monsieur. Je suis certain que nul homme au monde n&#x27;est en querelle avec moi: ma mémoire est bien nette et ne me retrace pas la moindre idée d&#x27;une offense quelconque faite à qui que ce soit.</p>
+<p>SIR TOBIE.--Vous verrez le contraire, je vous assure: ainsi, si vous attachez quelque prix à votre vie, songez à vous bien mettre en garde; car votre adversaire a pour lui tous les avantages que peuvent donner la jeunesse, la vigueur, l&#x27;art et la fureur.</p>
+<p>VIOLA.--Je vous prie, monsieur, qui est-ce?</p>
+<p>SIR TOBIE.--Il est chevalier; il a reçu l&#x27;accolade avec une rapière sans brèche et sur un tapis[58]: mais c&#x27;est un démon dans une querelle privée: il a déjà fait divorcer trois âmes et trois corps; et sa furie est dans ce moment si implacable, qu&#x27;il n&#x27;y a point d&#x27;autre satisfaction qu&#x27;il accepte que l&#x27;agonie de la mort et le tombeau: à toute outrance[59] est son mot; il faut la donner ou la recevoir.</p>
+<p>[Note 58: C&#x27;est un chevalier de salon: Carpet-knight.]</p>
+<p>[Note 59: «Hob nob, corruption de ces mots: let it happen or not.» (STEEVENS.)]</p>
+<p>VIOLA.--Je vais rentrer dans la maison, et demander à madame Olivia quelques avis sur la conduite que je dois tenir. Je ne suis point un duelliste. J&#x27;ai ouï parler de certaines gens qui suscitent exprès des querelles aux autres, pour éprouver leur valeur: probablement que c&#x27;est un homme de cette espèce.</p>
+<p>SIR TOBIE.--Non; son indignation vient d&#x27;une injure très-positive: ainsi avancez, et donnez-lui satisfaction. Vous ne retournerez point à la maison, à moins que vous ne veuilliez tenter avec moi ce que vous pouvez avec autant de sûreté vider avec lui. Ainsi, en avant ou tirez votre épée de son fourreau: car il faut vous battre, cela est certain; ou bien renoncer à porter cette arme à votre côté.</p>
+<p>VIOLA.--Mais cela est aussi incivil qu&#x27;étrange. Je vous en conjure, rendez-moi le bon service de savoir du chevalier en quoi je l&#x27;ai offensé, cela vient peut-être d&#x27;une négligence de ma part, mais non certainement de mes intentions.</p>
+<p>SIR TOBIE.--Je le veux bien; seigneur Fabian, restez auprès de ce gentilhomme jusqu&#x27;à mon retour.</p>
+<p>(Sir Tobie sort.)</p>
+<p>VIOLA.--De grâce, monsieur: êtes-vous instruit de cette affaire?</p>
+<p>FABIAN.--Ce que je sais, c&#x27;est que le chevalier est irrité contre vous, au point de vouloir un duel à mort; mais je ne sais rien des circonstances.</p>
+<p>VIOLA.--Dites-moi, je vous prie, quelle espèce d&#x27;homme est-ce?</p>
+<p>FABIAN.--Son air ne promet rien d&#x27;extraordinaire, et l&#x27;on ne lit point sur sa figure ce que vous le trouverez être en éprouvant sa valeur. C&#x27;est l&#x27;adversaire le plus habile, le plus sanguinaire, et le plus dangereux, que vous puissiez trouver dans toute l&#x27;Illyrie. Voulez-vous que nous marchions à sa rencontre? Je ferai votre paix avec lui, si je puis.</p>
+<p>VIOLA.--Je vous en aurai grande obligation. Je suis un de ces hommes qui aimeraient beaucoup mieux faire société avec messire le curé qu&#x27;avec messire le chevalier; peu m&#x27;importe qu&#x27;on sache jusqu&#x27;où va mon courage.</p>
+<p>(Ils sortent, et sir Tobie revient avec sir André.)</p>
+<p>SIR TOBIE.--Oh! ma foi, c&#x27;est un vrai démon; je n&#x27;ai jamais vu un tel champion. J&#x27;ai fait un assaut avec lui, lame, fourreau, tout; il m&#x27;a porté la botte, et d&#x27;une rapidité de mouvement si dangereuse qu&#x27;il est impossible de l&#x27;éviter; et à la riposte, il vous répond aussi sûrement que votre pied frappe la terre sur laquelle il marche. On dit qu&#x27;il a été le maître d&#x27;armes du sophi.</p>
+<p>SIR ANDRÉ.--La peste l&#x27;étouffe; je ne veux point avoir affaire à lui.</p>
+<p>SIR TOBIE.--Oui, mais maintenant il ne se laissera pas apaiser. Fabian a bien de la peine à le retenir là-bas.</p>
+<p>SIR ANDRÉ.--Malepeste! Si j&#x27;avais pu croire qu&#x27;il fût si vaillant, et si consommé dans l&#x27;escrime, je l&#x27;aurais vu damné avant de le défier. S&#x27;il veut laisser passer l&#x27;affaire, je lui donnerai mon cheval gris, Capilet.</p>
+<p>SIR TOBIE.--Je veux bien lui en faire la proposition; restez ici, faites bonne contenance; cela finira, j&#x27;espère, sans perte d&#x27;âmes. (A part.) Mordienne, je ferai aller votre cheval tout aussi bien que vous. (Rentrent Fabian et Viola.)--(A Fabian.) J&#x27;ai son cheval pour apaiser la querelle. Je lui ai persuadé que le jeune homme était un diable.</p>
+<p>FABIAN, à sir Tobie.--Il a de lui une idée tout aussi formidable, et il est haletant et pâle, comme s&#x27;il avait un ours sur les talons.</p>
+<p>SIR TOBIE, à Viola.--Il n&#x27;y a point de remède. Il faut qu&#x27;il se batte avec vous, à cause de son serment. Il a réfléchi depuis sur sa querelle, et il trouve à présent qu&#x27;à peine vaut-elle la peine d&#x27;en parler: ainsi, dégainez seulement pour l&#x27;honneur de sa parole: il proteste qu&#x27;il ne vous blessera pas.</p>
+<p>VIOLA.--Dieu me protége; il ne s&#x27;en faut guère que je ne leur dise tout ce qu&#x27;il me manque pour être un homme.</p>
+<p>FABIAN.--Cédez le terrain, si vous le voyez trop furieux.</p>
+<p>SIR TOBIE, à sir André.--Allons, sir André, il n&#x27;y a pas de remède, il n&#x27;y a pas moyen de l&#x27;éviter, le gentilhomme ne poussera qu&#x27;une botte contre vous, pour sauver son honneur: il ne peut, par les lois du duel, s&#x27;en dispenser: mais il m&#x27;a promis, foi de gentilhomme et de soldat, qu&#x27;il ne vous blessera pas. Allons, en garde.</p>
+<p>SIR ANDRÉ.--Dieu veuille qu&#x27;il tienne sa parole!</p>
+<p>(Il tire l&#x27;épée.)</p>
+<p>VIOLA.--Je vous assure que c&#x27;est contre ma volonté.</p>
+<p>(Elle tire l&#x27;épée.)</p>
+<p>(Entre Antonio.)</p>
+<p>ANTONIO, à sir André.--Remettez votre épée: si ce jeune gentilhomme vous a fait quelque insulte, j&#x27;en prends la faute sur moi. Si vous l&#x27;offensez, je vous défie en son nom, j&#x27;embrasse sa défense et vous attaque.</p>
+<p>(Dégaînant.)</p>
+<p>SIR TOBIE, à Antonio.--Vous, monsieur? Quoi! qui êtes-vous?</p>
+<p>ANTONIO.--Un homme, monsieur, qui, pour l&#x27;amour de ce jeune cavalier, fera plus encore que vous ne l&#x27;avez entendu se vanter à vous de faire.</p>
+<p>SIR TOBIE.--Si vous êtes un entrepreneur[60], je suis à vous.</p>
+<p>(Il tire l&#x27;épée.)</p>
+<p>(Entrent les officiers de justice.)</p>
+<p>[Note 60: Undertaker devint un terme satirique à l&#x27;occasion que voici. A la session du parlement, en 1614, ce fut l&#x27;opinion générale que le roi avait été engagé à convoquer le parlement par certaines personnes qui avaient entrepris (undertaken) de favoriser les vues du roi par leur influence dans la Chambre des communes. On les appela undertakers; la chose devint si sérieuse que le roi jugea nécessaire de dissuader le peuple par deux discours. Bacon fit aussi une harangue à cette occasion. Peut-être aussi undertaker n&#x27;est-il ici que pour désigner ces bretteurs de profession qui se chargent des affaires des autres.]</p>
+<p>FABIAN.--Ah! bon sir Tobie, arrêtez; voici les officiers de justice.</p>
+<p>SIR TOBIE, à Antonio.--Je serai à vous tout à l&#x27;heure.</p>
+<p>VIOLA, à sir André.--Je vous prie, monsieur, remettez votre épée, si c&#x27;est votre bon plaisir.</p>
+<p>SIR ANDRÉ.--Oh! bien volontiers, monsieur; et quant à ce que je vous ai promis, je vous réponds de tenir ma parole. Il vous portera bien doucement, et il a la bouche fine.</p>
+<p>PREMIER OFFICIER.--Voilà l&#x27;homme; faites votre devoir.</p>
+<p>SECOND OFFICIER.--Antonio, je vous arrête à la requête du comte Orsino.</p>
+<p>ANTONIO.--Vous vous méprenez, monsieur.</p>
+<p>PREMIER OFFICIER.--Non, monsieur, pas du tout.--Je connais bien vos traits, quoique vous n&#x27;ayez pas maintenant le bonnet de marin sur la tête.--Emmenez-le: il sait que je le connais bien.</p>
+<p>ANTONIO, à Viola.--Je suis forcé d&#x27;obéir.--Voilà ce qui m&#x27;arrive en vous cherchant, mais il n&#x27;y a pas de remède. Je saurai me tirer d&#x27;affaire: vous, que ferez-vous? Maintenant la nécessité me force de vous demander ma bourse; je ressens bien plus de peine de ne pouvoir rien faire pour vous, que du malheur qui m&#x27;arrive. Vous restez confondu; allons, consolez-vous.</p>
+<p>SECOND OFFICIER.--Allons, monsieur, partons.</p>
+<p>ANTONIO.--Il faut que je vous demande une partie de cet argent.</p>
+<p>VIOLA.--Quel argent, monsieur? Je veux bien, en considération de l&#x27;intérêt généreux que vous venez de montrer ici pour moi, et touché aussi de l&#x27;accident qui vous arrive, vous prêter quelque chose de mes minces et modiques ressources: ce que je possède n&#x27;est pas grand&#x27;chose; je le partagerai volontiers avec vous: tenez, voilà la moitié de ma bourse.</p>
+<p>ANTONIO.--Voulez-vous me refuser à présent? Est-il possible que mes services envers vous ne soient pas capables de vous persuader? N&#x27;insultez pas à mon infortune, de crainte que le ressentiment ne me pousse à l&#x27;inconséquence de vous reprocher les services que je vous ai rendus.</p>
+<p>VIOLA.--Je n&#x27;en connais aucun; et je ne vous reconnais ni au son de voix, ni à vos traits; je hais plus dans un homme l&#x27;ingratitude que le mensonge, la vanité, le bavardage, l&#x27;ivrognerie, ou tout autre trace de vice, dont le germe impur corrompt notre sang.</p>
+<p>ANTONIO.--O ciel!</p>
+<p>SECOND OFFICIER.--Allons, monsieur, je vous prie, suivez-nous.</p>
+<p>ANTONIO.--Laissez-moi dire encore un mot. Ce jeune homme, que vous voyez là, je l&#x27;ai arraché à la mort qui l&#x27;avait déjà à moitié englouti; je l&#x27;ai secouru avec l&#x27;affection la plus sainte,.... et je m&#x27;étais dévoué à lui, séduit par son visage, qui promettait, à ce que je m&#x27;imaginais, le plus respectable mérite.</p>
+<p>SECOND OFFICIER.--Qu&#x27;est-ce que cela nous fait? Le temps se passe.--Allons.</p>
+<p>ANTONIO.--Mais quelle vile idole se trouve être ce dieu!--Sébastien, tu fais tort à ton beau visage.--Il n&#x27;est dans la nature de véritables difformités que celles de l&#x27;âme; nul ne peut être taxé de laideur que l&#x27;ingrat. La vraie beauté, c&#x27;est la vertu; mais le mal caché dans une belle apparence n&#x27;est qu&#x27;un coffre vide que le démon a décoré à l&#x27;extérieur.</p>
+<p>PREMIER OFFICIER.--Cet homme devient fou; emmenez-le sans délai.--Allons, allons, monsieur.</p>
+<p>ANTONIO.--Conduisez-moi.</p>
+<p>(Les officiers emmènent Antonio.)</p>
+<p>VIOLA.--Il me semble que ses paroles partent d&#x27;une passion si vive qu&#x27;il croit ce qu&#x27;il dit, je n&#x27;en fais pas autant. Oh! réalise-toi, illusion; réalise-toi! que je sois en effet prise ici pour mon cher frère!</p>
+<p>SIR TOBIE.--Approche, chevalier; approche, Fabian; nous nous dirons tout bas un ou deux couplets de sages sentences.</p>
+<p>VIOLA.--Il a nommé Sébastien! Je sais que mon frère vit encore dans mon image. Oui, c&#x27;étaient bien là les traits de mon frère; et il était toujours vêtu de cette façon: même couleur, mêmes ornements; car je l&#x27;imite en tout. Oh! si cela est vrai, la tempête est donc compatissante, et les flots savent s&#x27;attendrir!</p>
+<p>(Elle sort.)</p>
+<p>SIR TOBIE.--Voilà un jeune homme sans honneur et bien méprisable: il est plus poltron qu&#x27;un lièvre; sa malhonnêteté se manifeste en laissant ici son ami dans le besoin, et il pousse la lâcheté jusqu&#x27;à le renier; quant à sa poltronnerie, interrogez Fabian.</p>
+<p>FABIAN.--Un poltron, un poltron des plus parfaits, poltron jusqu&#x27;au scrupule.</p>
+<p>SIR ANDRÉ.--Ma foi, je veux courir après lui et le battre.</p>
+<p>SIR TOBIE.--C&#x27;est cela, étrillez-le d&#x27;importance; mais ne tirez pas l&#x27;épée.</p>
+<p>SIR ANDRÉ.--Et je ne la tire pas non plus.</p>
+<p>(Sir André sort.)</p>
+<p>FABIAN.--Allons, voyons le dénoûment.</p>
+<p>SIR TOBIE.--Je gagerais bien tout l&#x27;argent qu&#x27;on voudrait qu&#x27;il n&#x27;arrivera rien encore.</p>
+<p>(Ils sortent.)</p>
+<h3 class="sub">Fin du troisième acte — Acte quatrième</h3>
+<h2 class="chapter" id="c13">Scène I</h2>
+<p>La rue, devant la maison d&#x27;Olivia.</p>
+<p>Entrent SÉBASTIEN et LE BOUFFON.</p>
+<p>LE BOUFFON.--Voudriez-vous me faire croire que ce n&#x27;est pas vous qu&#x27;on m&#x27;a envoyé chercher?</p>
+<p>SÉBASTIEN.--Va-t&#x27;en, va-t&#x27;en; tu n&#x27;es qu&#x27;un fou. Débarrasse-moi de ta personne.</p>
+<p>LE BOUFFON.--Fort bien soutenu, ma foi! Non, sans doute, je ne vous connais pas; et je ne vous suis pas envoyé par ma maîtresse pour vous dire de venir lui parler, et votre nom n&#x27;est pas monsieur Césario, et ce nez n&#x27;est pas à moi non plus?--Non, tout ce qui est n&#x27;est pas.</p>
+<p>SÉBASTIEN.--Je t&#x27;en prie, va exhaler ta folie ailleurs. Tu ne me connais point.</p>
+<p>LE BOUFFON.--Exhaler ma folie! Il a entendu dire ce mot par quelque grand homme, et maintenant il l&#x27;applique à un fou. Exhaler ma folie! J&#x27;ai bien peur que ce grand lourdaud, qu&#x27;on appelle le monde, ne devienne tout à fait badaud. Je vous en prie instamment, débarrassez-vous de cet air de surprise, et dites-moi ce que je dois exhaler à ma maîtresse; irai-je lui exhaler que vous allez venir?</p>
+<p>SÉBASTIEN.--Je t&#x27;en conjure, Grec sans cervelle[61], laisse-moi; voilà de l&#x27;argent pour toi: si tu restes plus longtemps, je te payerai d&#x27;une plus mauvaise monnaie.</p>
+<p>[Note 61: Grec est ici pour entremetteur, comme Corinthe se disait pour un lieu de débauche.]</p>
+<p>LE BOUFFON.--Sur ma foi, tu as la main ouverte.--Les hommes sages qui donnent de l&#x27;argent aux fous savent se procurer des décisions favorables après un marché de quatorze ans.</p>
+<p>(Entrent sir André, sir Tobie et Fabian.)</p>
+<p>SIR ANDRÉ, prenant Sébastien pour Viola.--Quoi! je vous rencontre encore ici, monsieur? Voilà pour vous!</p>
+<p>(Il frappe Sébastien.)</p>
+<p>SÉBASTIEN.--Et voilà pour toi (il le lui rend), et encore, et encore! Tout le monde est-il fou ici?</p>
+<p>SIR TOBIE.--Arrêtez, monsieur, ou je jetterai votre épée par-dessus la maison.</p>
+<p>LE BOUFFON.--Je veux aller annoncer cela tout de suite à ma maîtresse. Je ne voudrais pas être dans l&#x27;un de vos habits pour deux sous.</p>
+<p>(Il sort.)</p>
+<p>SIR TOBIE, contenant Sébastien.--Allons, monsieur, arrêtez.</p>
+<p>SIR ANDRÉ.--Oh! laissez-le faire; je vais m&#x27;y prendre d&#x27;une autre façon pour l&#x27;arranger; j&#x27;aurai contre lui une action en batterie pour peu qu&#x27;il y ait des lois en Illyrie; quoique je l&#x27;aie frappé le premier, cela ne fait rien à la chose.</p>
+<p>SÉBASTIEN.--Ôtez votre main.</p>
+<p>SIR TOBIE.--Allons, monsieur, je ne vous lâcherai point. Allons, mon jeune soldat, rengaînez votre fer. Vous êtes bien échauffé. Allons.</p>
+<p>SÉBASTIEN.--Je veux me débarrasser de toi. (Il se dégage.) Que veux-tu à présent? Si tu oses me provoquer encore, tire ton épée.</p>
+<p>SIR TOBIE.--Quoi donc? quoi donc? Allons, il faut que je te tire une ou deux onces de ce sang insolent.</p>
+<p>(Ils tirent l&#x27;épée et se battent.)</p>
+<p>(Entre Olivia.)</p>
+<p>OLIVIA.--Arrêtez, Tobie. Sur votre vie, je vous l&#x27;ordonne, arrêtez.</p>
+<p>SIR TOBIE.--Madame?</p>
+<p>OLIVIA.--Sera-ce toujours la même chose? Homme grossier, fait pour habiter les montagnes et les cavernes sauvages, où jamais l&#x27;on n&#x27;enseigna la politesse, sortez de ma vue.--Ne vous fâchez pas, cher Césario.--Brutal, sortez. (Sir Tobie et sir André sortent.)--(A Césario.) Je vous prie, mon cher ami, que votre sage prudence, et non la passion, vous gouverne dans cette incivile et injuste attaque contre votre tranquillité. Venez avec moi dans ma maison, et après que je vous aurai conté combien de folies extravagantes ce rustre a faites, vous ne ferez que rire de celle-ci; vous ne pouvez vous dispenser de venir. Ne me refusez pas; maudite soit son âme! il a effrayé mon pauvre coeur en votre personne.</p>
+<p>SÉBASTIEN.--A quoi ceci ressemble-t-il? De quel côté s&#x27;en va l&#x27;eau? Ou je suis fou, ou tout ceci est un songe!--Que mon imagination plonge ainsi mes sens dans le Léthé! et si c&#x27;est un songe, que je dorme toujours!</p>
+<p>OLIVIA.--Allons, venez, je vous en prie; je voudrais que vous vous laissassiez conduire par mes conseils.</p>
+<p>SÉBASTIEN.--Madame, je le veux bien.</p>
+<p>OLIVIA.--O redites-le, et faites-le!</p>
+<h2 class="chapter" id="c14">Scène II</h2>
+<p>Appartement dans la maison d&#x27;Olivia.</p>
+<p>MARIE et LE BOUFFON.</p>
+<p>MARIE.--Voyons, je t&#x27;en prie, mets cette robe, et cette barbe; fais-lui croire que tu es messire Topas, le curé: fais-le croire promptement; je vais pendant ce temps-là chercher sir Tobie.</p>
+<p>(Marie sort.)</p>
+<p>LE BOUFFON.--Eh bien! je vais la mettre, et me déguiser; et je voudrais être le premier qui se fût jamais travesti sous une pareille robe. Je ne suis pas assez grand pour bien remplir cet office, ni assez maigre pour être réputé bon étudiant; mais si l&#x27;on dit d&#x27;un homme qu&#x27;il est honnête homme, et qu&#x27;il sait bien tenir une maison, cela vaut bien autant que si l&#x27;on disait qu&#x27;il est un homme sage et un grand savant. Voici les confédérés qui viennent.</p>
+<p>(Entrent sir Tobie Belch et Marie.)</p>
+<p>SIR TOBIE.--Que Jupiter vous bénisse, monsieur le curé.</p>
+<p>LE BOUFFON.--Bonos dies[62], sir Tobie; car de même que le vieil ermite de Prague, qui de sa vie n&#x27;avait vu plume ni encre, dit fort ingénieusement à la nièce du roi Gorboduc[63] ce qui est, est[64]; de même, moi, étant monsieur le curé, je suis monsieur le curé: qu&#x27;est-ce cela, si ce n&#x27;est cela? et qu&#x27;est-ce qui est, que ce qui est?</p>
+<p>[Note 62: D&#x27;heureux jours.]</p>
+<p>[Note 63: Tragédie de Gorboduc, par le comte Dorset.]</p>
+<p>[Note 64: Argument de l&#x27;école, tourné en ridicule.]</p>
+<p>SIR TOBIE, indiquant Malvolio.--A lui, messire Topas.</p>
+<p>LE BOUFFON.--Holà, dis-je! La paix soit dans cette prison!</p>
+<p>SIR TOBIE.--Le coquin contrefait à merveille; c&#x27;est un adroit coquin.</p>
+<p>MALVOLIO, dans une chambre.--Qui appelle là?</p>
+<p>LE BOUFFON.--Messire Topas le curé, qui vient visiter Malvolio le lunatique.</p>
+<p>MALVOLIO.--Messire Topas, messire Topas, bon messire Topas, allez trouver madame.</p>
+<p>LE BOUFFON.--Hors d&#x27;ici, démon hyperbolique! comme tu tourmentes ce malheureux! Ne parles-tu donc jamais que de dames?</p>
+<p>SIR TOBIE.--Bien dit, monsieur le curé.</p>
+<p>MALVOLIO.--Messire Topas, jamais on n&#x27;a fait tant de tort à un homme: bon messire Topas, ne croyez point que je sois fou; ils m&#x27;ont mis ici dans une horrible obscurité.</p>
+<p>LE BOUFFON.--Fi donc, malhonnête Satan! Je t&#x27;appelle des noms les plus modérés, car je suis un de ces hommes doux qui savent traiter poliment le diable lui-même: tu dis que la maison est ténébreuse?</p>
+<p>MALVOLIO.--Comme l&#x27;enfer, messire Topas.</p>
+<p>LE BOUFFON.--Elle a des fenêtres cintrées qui sont transparentes comme des treillages, et les pierres qui sont vers le sud-nord sont reluisantes comme l&#x27;ébène, et tu te plains que le passage de la lumière soit obstrué?</p>
+<p>MALVOLIO.--Je ne suis pas fou, messire Topas; je vous dis qu&#x27;il fait noir dans cette maison.</p>
+<p>LE BOUFFON.--Insensé, tu te trompes. Je te dis, moi, qu&#x27;il n&#x27;y a point d&#x27;autres ténèbres que l&#x27;ignorance; et tu y es enfoncé plus avant que les Égyptiens dans leur brouillard..</p>
+<p>MALVOLIO.--Je vous dis que cette maison est sombre comme l&#x27;ignorance, l&#x27;ignorance fût-elle noire comme l&#x27;enfer; et je dis que jamais homme ne fut aussi indignement traité. Je ne suis pas plus fou que vous; mettez-moi à l&#x27;épreuve par quelque question régulière.</p>
+<p>LE BOUFFON.--Quelle est l&#x27;opinion de Pythagore sur les oiseaux sauvages?</p>
+<p>MALVOLIO.--Que l&#x27;âme de notre grand&#x27;mère pourrait bien loger dans le corps d&#x27;un oiseau.</p>
+<p>LE BOUFFON.--Et que penses-tu de son opinion?</p>
+<p>MALVOLIO.--J&#x27;ai de l&#x27;âme une idée noble, et je n&#x27;approuve nullement son opinion.</p>
+<p>BOUFFON.--Adieu, reste dans les ténèbres; tu soutiendras l&#x27;opinion de Pythagore avant que je te croie dans ton bon sens; et tu craindras de tuer une bécasse, de peur de déposséder l&#x27;âme de ta grand&#x27;mère: allons, porte-toi bien.</p>
+<p>MALVOLIO.--Messire Topas! messire Topas!</p>
+<p>SIR TOBIE.--Mon cher et coquin messire Topas!</p>
+<p>LE BOUFFON.--Je suis bon pour toutes les eaux[65].</p>
+<p>[Note 65: Bon pour toutes les friponneries. «Tu hai mantillo da ogni acqua.» Et aussi le mot water, eau, peut être pris dans le sens qu&#x27;y attachent les joailliers, ce qui fait une équivoque.]</p>
+<p>MARIE.--Tu pouvais jouer ce rôle sans robe ni barbe il ne te voit pas.</p>
+<p>SIR TOBIE.--Va le trouver et parle-lui de ta voix naturelle, et tu viendras me rendre compte de l&#x27;état où tu l&#x27;auras trouvé. Je voudrais que nous fussions tous heureusement quittes de ce méchant tour. Si on peut lui rendre sa liberté sans inconvénient, je voudrais que cela fût déjà fait, car me voilà si mal avec ma nièce que je ne peux conduire cette farce jusqu&#x27;au bout. Viens me trouver ensuite dans ma chambre.</p>
+<p>(Il sort avec Marie.)</p>
+<p>LE BOUFFON, chantant.</p>
+<p>Allons, Robin, joyeux Robin, Dis-moi comment va ta maîtresse.</p>
+<p>MALVOLIO.--Fou!</p>
+<p>LE BOUFFON, chantant.</p>
+<p>Ma maîtresse est par ma foi une cruelle.</p>
+<p>MALVOLIO.--Fou!</p>
+<p>LE BOUFFON.</p>
+<p>Hélas! pourquoi l&#x27;est-elle?</p>
+<p>MALVOLIO.--Fou, réponds-moi donc.</p>
+<p>LE BOUFFON.</p>
+<p>C&#x27;est qu&#x27;elle en aime un autre.</p>
+<p>Qui m&#x27;appelle ici?</p>
+<p>MALVOLIO.--Bon fou, si jamais tu veux bien mériter de moi, procure-moi de la lumière, une plume, de l&#x27;encre et du papier: comme je suis gentihomme, je t&#x27;en serai reconnaissant toute ma vie.</p>
+<p>LE BOUFFON.--Quoi, monsieur Malvolio?</p>
+<p>MALVOLIO.--Oui, mon bon fou.</p>
+<p>LE BOUFFON.--Hélas! monsieur, comment avez-vous perdu l&#x27;usage de vos cinq sens?</p>
+<p>MALVOLIO.--Fou, il n&#x27;y eut jamais d&#x27;homme insulté d&#x27;une manière aussi indigne: je jouis de tout mon bon sens aussi bien que toi, fou.</p>
+<p>LE BOUFFON.--Aussi bien que moi? En ce cas vous êtes donc fou, si vous n&#x27;êtes pas plus dans votre bon sens qu&#x27;un fou.</p>
+<p>MALVOLIO.--Ils ont pris possession de moi ici; ils me tiennent dans l&#x27;obscurité, ils m&#x27;envoient des ministres, des ânes, et font tout ce qu&#x27;ils peuvent pour me faire perdre la raison.</p>
+<p>LE BOUFFON.--Faites bien attention à ce que vous dites: le ministre est ici présent. (Le Bouffon aussitôt varie sa voix et contrefait dans l&#x27;obscurité celle du ministre.)--Malvolio, Malvolio, que le ciel veuille te rendre la raison! Tâche de dormir, et laisse là ton vain babil.</p>
+<p>MALVOLIO.--Messire Topas!</p>
+<p>LE BOUFFON, même jeu.--Ne perdez point de paroles avec lui, mon garçon.--Qui, moi, monsieur? Non pas moi, monsieur. Dieu soit avec vous, bon messire Topas!--Ainsi soit-il! Ainsi soit-il!--Je le ferai, monsieur, je le ferai.</p>
+<p>MALVOLIO.--Fou! fou! fou! réponds-moi donc.</p>
+<p>LE BOUFFON, reprenant son ton naturel.--Hélas, monsieur, un peu de patience. Que dites-vous, monsieur? On me gronde, parce que je vous parle.</p>
+<p>MALVOLIO.--Mon bon fou, oblige-moi de m&#x27;apporter de la lumière et un peu de papier. Je te dis que je suis dans mon sens, autant qu&#x27;homme qui soit dans toute l&#x27;Illyrie.</p>
+<p>LE BOUFFON.--Plût au ciel qu&#x27;il en fût ainsi, monsieur!</p>
+<p>MALVOLIO.--Par cette main, cela est. Cher fou, un peu d&#x27;encre, de papier et de lumière, et ensuite porte à madame ce que j&#x27;aurai écrit. Ce message te sera plus avantageux qu&#x27;aucune lettre que tu aies jamais portée.</p>
+<p>LE BOUFFON.--Je veux bien vous obliger en cela. Mais dites-moi la vérité: n&#x27;êtes-vous pas fou réellement, ou si vous ne faites que le contrefaire?</p>
+<p>MALVOLIO.--Crois-moi, je ne suis point fou: je te dis la vérité.</p>
+<p>LE BOUFFON.--Allons, je ne croirai plus jamais qu&#x27;un homme soit fou que je n&#x27;aie vu sa cervelle. Je vais vous chercher de la lumière, du papier et de l&#x27;encre.</p>
+<p>MALVOLIO.--Fou, je ne mettrai point de bornes à ta récompense. Je t&#x27;en prie, va.</p>
+<p>LE BOUFFON sort en chantant.</p>
+<p>Je suis parti, monsieur; Et dans un moment, monsieur, Je vous rejoins Dans un clin d&#x27;oeil, Pour pourvoir à vos besoins;</p>
+<p>Comme l&#x27;antique fou, Qui, avec une dague de bois: Dans sa colère et sa rage, Crie: Ah! ah! au diable, Comme un enfant insensé: Rogne tes ongles, papa! Adieu, écume d&#x27;un honnête homme.</p>
+<h2 class="chapter" id="c15">Scène III</h2>
+<p>Le jardin d&#x27;Olivia.</p>
+<p>Entre SÉBASTIEN.</p>
+<p>SÉBASTIEN.--C&#x27;est bien l&#x27;air: c&#x27;est bien le glorieux soleil. Voilà bien la perle qu&#x27;elle m&#x27;a donnée; je le sens, je la vois; et quoique je sois plongé dans l&#x27;étonnement, je ne suis pas dans le délire. Où est donc Antonio? Je n&#x27;ai pu le découvrir à l&#x27;Éléphant: et cependant il y avait été et on y croyait qu&#x27;il parcourait la ville pour me chercher. Ses conseils pourraient maintenant me rendre des services d&#x27;or; car quoique ma raison remontre bien à mes sens que tout ceci peut bien être une méprise, et non pas de la folie, cependant les hasards singuliers de cette aventure surpassent si fort tout exemple, tout raisonnement ordinaire, que je suis prêt à me défier de mes yeux, et à chercher querelle à ma raison, qui me persuade que tout est possible, sauf que je sois fou ou que la dame soit folle. Cependant si elle l&#x27;était, elle serait incapable de gouverner sa maison, de commander à ses gens, de prendre en mains les affaires, et de les expédier avec cette suite, cette prudence, ce calme que je remarque dans toute sa conduite: il y a là-dessous quelque illusion.--Mais voici venir la dame.</p>
+<p>(Entre Olivia avec un prêtre.)</p>
+<p>OLIVIA.--Ne blâmez point cette précipitation de ma part. Si vos intentions sont bonnes, venez avec moi et ce saint homme dans la chapelle voisine: là, devant lui et sous ces lambris sacrés, engagez-moi la pleine assurance de votre foi, afin que mon âme jalouse et trop défiante puisse vivre en paix. Ce prêtre cachera notre union jusqu&#x27;au moment où vous trouverez bon de la rendre publique; et alors nous célébrerons nos noces comme il convient à ma naissance.--Que dites-vous?</p>
+<p>SÉBASTIEN.--Je suis prêt à suivre ce saint homme, et à vous accompagner; et quand une fois je vous aurai juré fidélité, je vous serai toujours fidèle.</p>
+<p>OLIVIA.--En ce cas, montrez-nous le chemin, mon bon père. Et que le ciel éclaire d&#x27;une lumière propice l&#x27;acte que je veux accomplir!</p>
+<p>(Ils sortent tous trois.)</p>
+<h3 class="sub">Fin du quatrième acte — Acte cinquième</h3>
+<h2 class="chapter" id="c16">Scène I</h2>
+<p>La rue devant la maison d&#x27;Olivia.</p>
+<p>LE BOUFFON et FABIAN.</p>
+<p>FABIAN.--Maintenant, si tu m&#x27;aimes, laisse-moi voir sa lettre.</p>
+<p>LE BOUFFON.--Et vous, mon cher monsieur Fabian, accordez-moi une autre requête.</p>
+<p>FABIAN.--Tout ce que tu voudras.</p>
+<p>LE BOUFFON.--Ne demandez pas à voir cette lettre.</p>
+<p>FABIAN.--Eh! mais, c&#x27;est me donner un chien, et puis, pour récompense, me redemander mon chien.</p>
+<p>(Entrent le duc, Viola, et suite.)</p>
+<p>LE DUC.--Mes amis, appartenez-vous à madame Olivia?</p>
+<p>LE BOUFFON.--Oui, monsieur, nous faisons partie des meubles de sa maison.</p>
+<p>LE DUC.--Je te connais bien: eh bien! comment t&#x27;en va, mon garçon?</p>
+<p>LE BOUFFON.--Vraiment, monsieur, bien pour mes ennemis, et mal pour mes amis.</p>
+<p>LE DUC.--C&#x27;est précisément le contraire; bien pour tes amis.</p>
+<p>LE BOUFFON.--Non, monsieur, mal.</p>
+<p>LE DUC.--Comment l&#x27;entends-tu?</p>
+<p>LE BOUFFON.--Eh! monsieur, mes amis me flattent et font de moi un âne; au lieu que mes ennemis me disent tout uniment que je suis un âne: en sorte que, grâce à mes ennemis, je profite dans la connaissance de moi-même, tandis que mes amis me trompent; bref, si les conséquences sont comme les baisers, quatre négations équivalent à deux affirmations[66]. Voilà pourquoi je suis mal pour mes amis et bien pour mes ennemis.</p>
+<p>[Note 66: Apparemment allusion aux non d&#x27;une jeune fille, qui veulent souvent dire oui.]</p>
+<p>LE DUC.--Ton explication est excellente.</p>
+<p>LE BOUFFON.--Par ma foi! non, monsieur, quoiqu&#x27;il vous plaise d&#x27;être un de mes amis.</p>
+<p>LE DUC.--Tu ne diras pas que tu sois mal par ma faute: voilà de l&#x27;or.</p>
+<p>LE BOUFFON.--Si ce n&#x27;est que cela aurait l&#x27;air de duplicité, monsieur, je voudrais que vous pussiez redoubler.</p>
+<p>LE DUC.--Ah! tu me donnes là un mauvais conseil.</p>
+<p>LE BOUFFON.--Mettez votre grandeur dans votre poche, seigneur, pour cette seule fois, et laissez obéir la chair et le sang.</p>
+<p>LE DUC.--Allons, je veux bien être assez grand pécheur pour me rendre coupable de duplicité: voilà une seconde pièce.</p>
+<p>LE BOUFFON.--Primo, secundo, tertio, c&#x27;est un beau jeu, et le vieux proverbe dit que la troisième fois paye pour toutes les autres: les triples, monsieur, sont une vive et joyeuse mesure; et les cloches de Saint-Bennet, monsieur, peuvent vous rappeler, une, deux, trois.</p>
+<p>LE DUC.--Tu ne m&#x27;attraperas plus d&#x27;argent ce coup-ci. Si tu veux faire savoir à ta maîtresse que je suis ici pour lui parler, et l&#x27;amener avec toi, cela pourrait encore réveiller ma générosité.</p>
+<p>LE BOUFFON.--Ah! monsieur, bercez-la, votre générosité, jusqu&#x27;à ce que je revienne; j&#x27;y vais, monsieur. Mais je ne voudrais pas que vous crussiez que mon désir d&#x27;avoir est le péché de convoitise. Mais comme vous le dites, monsieur, je vous en prie, que votre générosité fasse un somme, et je viendrai la réveiller tout à l&#x27;heure.</p>
+<p>(Le bouffon sort.)</p>
+<p>(Entrent Antonio et officiers de justice.)</p>
+<p>VIOLA.--Seigneur, voici l&#x27;homme qui m&#x27;a sauvé.</p>
+<p>LE DUC.--Je me rappelle bien son visage, et cependant la dernière fois que je l&#x27;ai vu, il était noirci comme celui de Vulcain par la fumée du combat. Il était le capitaine d&#x27;un malheureux vaisseau qu&#x27;on méprisait pour sa petitesse et le peu d&#x27;eau qu&#x27;il tirait; et pourtant il aborda avec tant de fureur le plus noble navire de notre flotte, que l&#x27;envie même, et le parti vaincu, poussèrent des cris d&#x27;admiration à sa gloire.--De quoi s&#x27;agit-il?</p>
+<p>PREMIER OFFICIER.--Orsino, voici cet Antonio qui prit le Phénix et sa cargaison, à son retour de Candie; et c&#x27;est encore lui qui monta à l&#x27;abordage du Tigre, dans le combat où votre jeune neveu Titus perdit une jambe: nous l&#x27;avons arrêté au milieu d&#x27;une querelle particulière, dans les rues de cette ville, où il méprisait la honte et la convenance comme un désespéré.</p>
+<p>VIOLA.--Il m&#x27;a rendu service, seigneur: il a tiré l&#x27;épée pour ma défense; mais il a fini par m&#x27;adresser un discours si étrange que je ne puis y comprendre autre chose, sinon que ce doit être du délire.</p>
+<p>LE DUC, à Antonio.--Insigne pirate, voleur d&#x27;eau salée, quelle audace insensée t&#x27;a conduit ici à la merci de ceux que tu as rendus tes ennemis à des conditions si sanglantes et si cruelles?</p>
+<p>ANTONIO.--Orsino, noble seigneur, souffrez que je repousse les noms que vous me donnez. Jamais Antonio ne fut un pirate ni un brigand, quoiqu&#x27;il soit, je l&#x27;avoue, et cela par des motifs bien fondés, l&#x27;ennemi d&#x27;Orsino. C&#x27;est un véritable enchantement qui m&#x27;a attiré ici: ce jeune homme, qui est à côté de vous, le plus grand des ingrats, c&#x27;est moi qui l&#x27;ai arraché aux gouffres écumants d&#x27;une mer furieuse: il avait fait naufrage, et n&#x27;avait plus d&#x27;espoir; je lui ai donné la vie, et j&#x27;ai encore ajouté à ce don celui de mon amitié, sans restriction ni réserve, en me dévouant entièrement à lui. C&#x27;est pour ses intérêts, par pur amour pour lui, que je me suis exposé au danger d&#x27;entrer dans cette ville ennemie. J&#x27;ai tiré l&#x27;épée pour le défendre quand il était attaqué; et c&#x27;est là que j&#x27;ai été arrêté; et qu&#x27;inspiré par une perfide dissimulation, il a refusé de prendre aucune part à mon danger, et m&#x27;a renié pour être de sa connaissance; il est devenu en un clin d&#x27;oeil comme un étranger qui ne m&#x27;aurait pas vu depuis vingt ans; il a refusé de me rendre ma propre bourse, dont je lui avais recommandé de se servir il n&#x27;y avait pas une demi-heure.</p>
+<p>VIOLA.--Comment cela peut-il être?</p>
+<p>LE DUC.--Depuis quand ce jeune homme est-il venu dans cette ville?</p>
+<p>ANTONIO.--D&#x27;aujourd&#x27;hui, seigneur. Et nous étions ensemble depuis trois mois, sans nous être quittés d&#x27;un instant, d&#x27;une seule minute, ni le jour ni la nuit.</p>
+<p>(Entre Olivia avec sa suite.)</p>
+<p>LE DUC.--Voici la comtesse qui s&#x27;avance: voilà le ciel qui se promène sur la terre. (A Antonio.) Quant à toi, mon ami, ce que tu dis est de la démence. Il y a trois mois que ce jeune homme est attaché à mon service.--Mais nous reparlerons tout à l&#x27;heure.--Qu&#x27;on l&#x27;emmène à l&#x27;écart.</p>
+<p>OLIVIA.--Que désire mon seigneur, excepté ce qu&#x27;Olivia ne peut lui accorder, en quoi puis-je lui rendre service?--Césario, vous ne me tenez pas votre parole.</p>
+<p>VIOLA.--Madame?</p>
+<p>LE DUC.--Aimable Olivia.</p>
+<p>OLIVIA.--Que dites-vous, Césario?--Mon cher seigneur....</p>
+<p>VIOLA.--Son Altesse veut parler; et mon respect m&#x27;impose silence.</p>
+<p>OLIVIA.--Si c&#x27;est toujours sur l&#x27;ancien air, seigneur, il est aussi dissonant, aussi fâcheux à mon oreille, que des hurlements après la musique.</p>
+<p>LE DUC.--Toujours aussi cruelle?</p>
+<p>OLIVIA.--Toujours aussi constante, seigneur.</p>
+<p>LE DUC.--Quoi! jusqu&#x27;à l&#x27;entêtement? Vous, cruelle dame, qui avez vu mon coeur offrir à vos autels ingrats et défavorables les voeux les plus fidèles que la dévotion ait jamais offerts! Que dois-je faire?</p>
+<p>OLIVIA.--Tout ce qui plaira à Votre Seigneurie qui puisse lui convenir.</p>
+<p>LE DUC.--Pourquoi ne ferais-je pas, si j&#x27;avais le coeur de le faire, comme le ravisseur égyptien[67] sur le point de mourir, et ne tuerais-je pas ce que j&#x27;aime? C&#x27;est une jalousie sauvage, mais qui parfois annonce de la noblesse.--Écoutez ce que je vais vous dire: puisque vous rebutez ma foi avec dédain, et que je connais en partie l&#x27;instrument qui me chasse de ma véritable place dans votre faveur, vivez tranquille, tyran au coeur de marbre: mais celui-ci, votre favori, que je sais que vous aimez, et que, j&#x27;en jure par le ciel, je chéris moi-même tendrement, je l&#x27;arracherai de ces yeux cruels, où il est assis couronné du dédain qu&#x27;on montre à son maître.--Venez, jeune homme, suivez-moi: mon coeur est mûr pour la vengeance, je vais immoler l&#x27;agneau que j&#x27;aime, et déchirer un coeur de corbeau dans le sein d&#x27;une colombe.</p>
+<p>[Note 67: Théagène et Chariclée tombèrent entre les mains de Thyamis de Memphis, chef d&#x27;une bande de voleurs, qui devint amoureux de Chariclée. Peu après, une autre troupe fondit sur celle de Thyamis, qui, craignant pour sa maîtresse, l&#x27;enferma dans une caverne, avec son trésor. La coutume de ces barbares était de tuer en même temps qu&#x27;eux tous ceux qui leur étaient chers, afin de les avoir avec eux dans l&#x27;autre monde. Thyamis se trouvant entouré d&#x27;ennemis, court à sa caverne et appelle à haute voix, en langue égyptienne; il entend répondre en grec, et, suivant la direction de la voix, il saisit par les cheveux la première personne qu&#x27;il rencontre dans les ténèbres, et, supposant qu&#x27;elle est Chariclée, il lui plonge son épée dans le sein. (HÉRODOTE.)]</p>
+<p>(Il fait quelques pas pour s&#x27;en aller.)</p>
+<p>VIOLA.--Et moi, je subirais volontiers mille morts joyeusement et avec plaisir pour vous rendre le repos.</p>
+<p>(Elle va pour suivre le duc.)</p>
+<p>OLIVIA.--Où va Césario?</p>
+<p>VIOLA.--Sur les pas de celui que j&#x27;aime plus que mes yeux, plus que ma vie, et mille fois plus que je n&#x27;aimerai jamais ma femme. Si je mens, ô vous, témoins célestes, punissez sur ma vie mes fautes contre l&#x27;amour.</p>
+<p>OLIVIA.--Hélas! malheureuse que je suis, comme je suis trompée!</p>
+<p>VIOLA.--Qui vous trompe? qui vous outrage?</p>
+<p>OLIVIA.--T&#x27;es-tu donc oublié toi-même? Y a-t-il si longtemps que...? Allez chercher le saint père.</p>
+<p>(Un domestique sort.)</p>
+<p>LE DUC, à Viola.--Allons, viens.</p>
+<p>OLIVIA.--Où voulez-vous qu&#x27;il aille, seigneur? Césario, mon époux, arrête.</p>
+<p>LE DUC.--Votre époux?</p>
+<p>OLIVIA.--Oui, mon époux: peut-il le nier?</p>
+<p>LE DUC, à Viola.--Tu serais son époux, misérable.</p>
+<p>VIOLA.--Non, seigneur; non pas moi.</p>
+<p>OLIVIA.--Hélas! c&#x27;est la lâcheté de ta crainte qui te fait désavouer ta propriété. Ne crains point, Césario: prends possession de ta fortune. Sois ce que tu sais être, et tu seras aussi grand que celui que tu redoutes.--(Entre le prêtre.) Ah! soyez le bienvenu, mon père! Mon père, je vous somme, au nom de votre saint état, de déclarer ici ouvertement ce que nous avions résolu de tenir dans l&#x27;obscurité, et que les circonstances forcent maintenant de révéler avant la maturité.--Oui, dites ce que vous savez qui s&#x27;est récemment passé entre ce jeune homme et moi.</p>
+<p>LE PRÊTRE.--Un contrat d&#x27;union éternelle, confirmé par vos mains jointes, attesté par la sainte promesse de vos lèvres, fortifié par l&#x27;échange de vos anneaux: toutes les cérémonies de cet engagement ont été scellées par mon ministère, et appuyées de mon témoignage; et depuis lors, ma montre me dit que je n&#x27;ai avancé vers mon tombeau que de l&#x27;espace de deux heures.</p>
+<p>LE DUC, à Viola.--O toi, perfide renard, que seras-tu donc quand le temps aura semé les cheveux blancs sur ta tête? ou ta perfidie grandira-t-elle si rapidement que tes efforts pour en supplanter un autre te feront tomber toi-même? Adieu, prends-la; mais songe à conduire tes pas en des lieux où toi et moi ne nous rencontrions jamais.</p>
+<p>VIOLA.--Seigneur, je vous proteste....</p>
+<p>OLIVIA.--Ah! ne fais point de serments: conserve un peu de foi au milieu de tes craintes exagérées.</p>
+<p>(Entre sir André la tête fendue.)</p>
+<p>SIR ANDRÉ.--Pour l&#x27;amour de Dieu, un chirurgien; et envoyez quelqu&#x27;un à l&#x27;instant à sir Tobie.</p>
+<p>OLIVIA.--Qu&#x27;y a-t-il donc?</p>
+<p>SIR ANDRÉ.--Il m&#x27;a fendu la tête, et a aussi ensanglanté le visage de sir Tobie.--Au nom de Dieu, du secours: je donnerais quarante livres pour être chez moi.</p>
+<p>OLIVIA.--Quel est le coupable, sir André?</p>
+<p>SIR ANDRÉ.--Le gentilhomme du comte, un nommé Césario. Nous l&#x27;avions pris pour un poltron, mais c&#x27;est un vrai diable incarné.</p>
+<p>LE DUC.--Mon gentilhomme, Césario?</p>
+<p>SIR ANDRÉ.--Mort de ma vie! le voilà ici.--Oui, vous m&#x27;avez fendu la tête pour rien; et ce que j&#x27;ai fait, je ne l&#x27;ai fait que par l&#x27;instigation de sir Tobie.</p>
+<p>VIOLA.--Pourquoi vous adressez-vous à moi? Jamais je ne vous ai fait aucun mal. Vous avez tiré votre épée contre moi sans aucun sujet: mais je vous ai parlé avec douceur, et je ne vous ai fait aucune blessure.</p>
+<p>SIR ANDRÉ.--Si une tête ensanglantée est une blessure, vous m&#x27;avez blessé; je crois que vous ne faites pas cas d&#x27;une tête ensanglantée. (Entre sir Tobie ivre et soutenu par le bouffon.) Voici sir Tobie qui vient tout chancelant: vous allez en entendre davantage. Mais, s&#x27;il n&#x27;avait pas été pris de vin, il vous aurait chatouillé d&#x27;une autre manière qu&#x27;il n&#x27;a fait.</p>
+<p>LE DUC.--Eh bien! chevalier, en quel état êtes-vous donc?</p>
+<p>SIR TOBIE.--Cela est égal: il m&#x27;a blessé, et voilà tout.--(Au fou.) Sot, as-tu vu Dick le chirurgien? réponds, sot?</p>
+<p>LE BOUFFON.--Oh! il est ivre, sir Tobie, depuis plus d&#x27;une heure. Ses yeux étaient fermés à huit heures du matin.</p>
+<p>SIR TOBIE.--Eh bien! c&#x27;est un drôle; et après un passamezze et une pavane[68], ce que je hais le plus, c&#x27;est un drôle qui s&#x27;enivre.</p>
+<p>[Note 68: Danses d&#x27;un caractère sérieux.]</p>
+<p>OLIVIA.--Qu&#x27;on l&#x27;emmène. Qui a fait ce dégât sur leurs personnes?</p>
+<p>SIR ANDRÉ.--Je vais vous aider, sir Tobie; nous nous ferons panser ensemble.</p>
+<p>SIR TOBIE.--Voulez-vous m&#x27;aider? Tête d&#x27;âne, fat, drôle!... drôle à la face effilée, buse!</p>
+<p>(Le bouffon, Fabian, sir André et sir Tobie sortent.)</p>
+<p>(Sébastien entre.)</p>
+<p>OLIVIA.--Qu&#x27;on le mette au lit et qu&#x27;on soigne sa blessure.</p>
+<p>SÉBASTIEN.--Je suis fâché, madame, d&#x27;avoir blessé votre parent; mais eût-il été mon propre frère, je n&#x27;aurais pu en faire moins, avec prudence et sûreté. Vous jetez sur moi un regard étrange, qui me fait sentir que je vous ai offensée. Pardonnez-moi, ma bien-aimée, au nom des serments que nous nous sommes mutuellement faits il y a si peu de temps.</p>
+<p>LE DUC.--Une même figure, une même voix, un même habillement, et deux personnes! C&#x27;est une perspective naturelle qui existe et n&#x27;existe pas[69].</p>
+<p>[Note 69: «Perspective naturelle.» On appelle perspective naturelle les jeux d&#x27;optique où plusieurs traits et objets forment, dans leur ensemble et à un certain point de vue, une figure régulière avec laquelle ils n&#x27;ont rien de semblable dans le détail, par exemple le kaléidoscope.]</p>
+<p>SÉBASTIEN.--Antonio! ô mon cher Antonio! dans quelles tortures, dans quels cruels tourments j&#x27;ai passé les heures qui se sont écoulées depuis que je t&#x27;ai perdu!</p>
+<p>ANTONIO.--Êtes-vous Sébastien?</p>
+<p>SÉBASTIEN.--Crains-tu le contraire, Antonio?</p>
+<p>ANTONIO.--Comment t&#x27;es-tu partagé? Une pomme, coupée en deux, ne donne pas deux moitiés plus semblables que ces deux créatures. Lequel est Sébastien?</p>
+<p>OLIVIA.--Cela tient du prodige!</p>
+<p>SÉBASTIEN.--Suis-je présent ici, ou non? Jamais je n&#x27;ai eu de frère, et je ne possède pas dans mon essence le privilège de la Divinité, d&#x27;être à la fois ici et partout. J&#x27;avais une soeur, que l&#x27;aveugle fureur des flots a engloutie. (A Viola.) Par charité, quelle parenté avez-vous avec moi? Êtes-vous mon compatriote? Quel est votre nom, votre famille?</p>
+<p>VIOLA.--Je suis de Messaline: mon père s&#x27;appelait Sébastien: j&#x27;avais aussi pour frère un Sébastien: telle était sa physionomie, tels étaient ses habits, lorsqu&#x27;il est descendu dans sa tombe humide. Si les esprits peuvent revêtir la forme et les vêtements des vivants, vous venez pour nous effrayer.</p>
+<p>SÉBASTIEN.--Je suis un esprit en effet, mais revêtu de ces dimensions matérielles que j&#x27;ai puisées dans le sein de ma mère. S&#x27;il était vrai que vous fussiez aussi une femme, je laisserais couler mes larmes sur vos joues, et je dirais: Sois trois fois la bienvenue, Viola, la noyée.</p>
+<p>VIOLA.--Mon père avait un signe sur le front.</p>
+<p>SÉBASTIEN.--Et le mien aussi.</p>
+<p>VIOLA.--Et il est mort le jour même que Viola comptait treize années depuis sa naissance.</p>
+<p>SÉBASTIEN.--Oh! ce souvenir est vivant dans mon âme! Il finit en effet le cours de sa vie mortelle le jour qui compléta les treize années de ma soeur.</p>
+<p>VIOLA.--Si nul autre obstacle ne s&#x27;oppose à notre bonheur mutuel que cet habillement d&#x27;homme et ce costume usurpé, ne m&#x27;embrasse qu&#x27;après t&#x27;être convaincu que chaque circonstance des lieux, des temps et de la fortune s&#x27;accorde et concourt à prouver que je suis Viola: et pour te le confirmer, je vais te conduire au capitaine qui est dans cette ville, et chez qui sont déposés mes vêtements de fille. C&#x27;est par son généreux secours que j&#x27;ai été sauvée pour servir cet illustre comte; et depuis ce moment, tous les événements de mon histoire se sont passés entre cette dame et ce seigneur.</p>
+<p>SÉBASTIEN, à Olivia.--Il résulte de là, madame, que vous vous êtes méprise; mais la nature a suivi en cela son instinct. Vous vouliez vous unir à une fille; sur ma vie, vous ne vous êtes pas trompée, et vous êtes fiancée à la fois avec une fille et avec un homme.</p>
+<p>LE DUC, à Olivia.--Ne restez point confondue: son sang est noble. Si tout cela est vérité, comme le montrent jusqu&#x27;ici les apparences, j&#x27;aurai ma part dans cet heureux naufrage.--(A Viola.) Jeune homme, tu m&#x27;as dit mille fois que tu n&#x27;aimerais jamais une femme autant que tu m&#x27;aimes.</p>
+<p>VIOLA.--Je confirmerai par mes serments ce que je vous ai dit; et je garderai aussi fidèlement dans mon coeur tous ces serments, que ce globe garde le feu qui sépare le jour de la nuit.</p>
+<p>LE DUC.--Donne-moi ta main; et que je te voie avec tes habits de femme.</p>
+<p>VIOLA.--Le capitaine qui m&#x27;a amenée sur le rivage a mes vêtements de fille; il est maintenant en prison pour quelque affaire à la requête de Malvolio, gentilhomme attaché au service de madame.</p>
+<p>OLIVIA.--Il le fera élargir: qu&#x27;on fasse venir ici Malvolio. Et pourtant, hélas! je me souviens qu&#x27;on dit que ce pauvre gentilhomme est en démence. (Entrent Fabian et le bouffon avec une lettre.) Un accès de folie des plus violents, que j&#x27;ai éprouvé, a banni tout à fait de ma mémoire l&#x27;idée de la sienne.--Comment est-il, drôle?</p>
+<p>LE BOUFFON.--En vérité, madame, il tient Belzébuth à bout de bras, autant qu&#x27;un homme dans son état puisse le faire: il vous a écrit ici une lettre que je devais vous rendre ce matin; mais comme les épîtres d&#x27;un fou ne sont pas paroles d&#x27;Évangile, il importe peu en quel temps elles sont remises à leur adresse.</p>
+<p>OLIVIA.--Ouvre-la, et lis-la.</p>
+<p>LE BOUFFON.--Attendez-vous donc à être édifiée, quand le fou remet la lettre d&#x27;un insensé.--(Lisant.) «Par le Seigneur, madame.....»</p>
+<p>OLIVIA.--Comment, es-tu fou?</p>
+<p>LE BOUFFON.--Non, madame: je ne fais que lire de la folie. Si vous voulez qu&#x27;elle soit lue comme il faut, vous pouvez lui prêter vous-même une voix.</p>
+<p>OLIVIA.--Je t&#x27;en prie, lis-la en homme qui jouit de sa raison.</p>
+<p>LE BOUFFON.--C&#x27;est ce que je fais, madame. Pour représenter en lisant l&#x27;état de son esprit, il faut le lire comme je fais: ainsi attention, ma princesse, et prêtez l&#x27;oreille.</p>
+<p>OLIVIA, à Fabian.--Lis-la, toi, maraud.</p>
+<p>FABIAN prend la lettre et lit.--«Par le Seigneur, madame, vous me faites injure, et le monde en sera instruit; quoique vous m&#x27;ayez fait mettre dans les ténèbres, et que vous ayez donné à votre ivrogne d&#x27;oncle l&#x27;empire sur moi, cependant je jouis de mes facultés aussi bien que vous, madame. Je possède votre propre lettre qui m&#x27;a excité à prendre le maintien que j&#x27;ai emprunté, et cette lettre me servira, j&#x27;en suis certain, ou à me faire rendre justice, ou à vous couvrir de honte. Pensez de moi ce qu&#x27;il vous plaira. J&#x27;oublie un peu le respect que je vous dois, pour ne songer qu&#x27;à l&#x27;affront que j&#x27;ai reçu.</p>
+<p>«MALVOLIO, qu&#x27;on a traité en insensé.»</p>
+<p>OLIVIA.--Est-ce bien lui qui a écrit cette lettre?</p>
+<p>LE BOUFFON.--Oui, madame.</p>
+<p>LE DUC.--Cela ne sent pas trop la folie.</p>
+<p>OLIVIA.--Fabian, voyez à ce qu&#x27;on le mette en liberté: amenez-le ici. Seigneur, laissons ces soins à d&#x27;autres temps, et daignez me vouloir autant de bien comme soeur que comme épouse; qu&#x27;un seul et même jour couronne cette double alliance, ici dans mon palais, et à mes frais.</p>
+<p>LE DUC.--Madame, je suis très-disposé à accepter votre offre. (A Viola.) Votre maître vous tient quitte; et pour les services que vous lui avez rendus, si opposés au caractère de votre sexe, si au-dessous de votre éducation et de votre naissance, et, en récompense de ce que vous m&#x27;avez appelé si longtemps votre maître, voilà ma main: vous serez désormais la maîtresse de votre maître.</p>
+<p>OLIVIA.--Ma soeur? Oui, vous l&#x27;êtes.</p>
+<p>(Fabian amène Malvolio.)</p>
+<p>LE DUC.--Est-ce là le fou?</p>
+<p>OLIVIA.--Oui, seigneur, c&#x27;est lui-même.--Eh bien! Malvolio?</p>
+<p>MALVOLIO.--Madame, vous m&#x27;avez fait un outrage, un insigne outrage.</p>
+<p>OLIVIA.--Moi, Malvolio? Non.</p>
+<p>MALVOLIO.--Vous, madame, vous-même, je vous en prie, lisez cette lettre. Vous ne pouvez pas nier que ce ne soit là votre écriture. Écrivez autrement, si vous le pouvez, soit pour le caractère, soit pour le style; ou dites que ce n&#x27;est pas là votre cachet, ni votre ouvrage; vous ne pouvez rien dire de tout cela. Allons, convenez-en donc, et dites-moi, sans blesser votre honneur, pourquoi vous m&#x27;avez donné tant de marques irrécusables de faveur, pourquoi vous m&#x27;avez recommandé de vous aborder en souriant, et en jarretières croisées, de mettre des bas jaunes, de montrer un front grondeur à sir Tobie et aux gens de bas étage; pourquoi, lorsque l&#x27;espoir de vous plaire m&#x27;a fait remplir ce rôle par obéissance, vous avez souffert qu&#x27;on m&#x27;emprisonnât dans une maison ténébreuse, où j&#x27;ai reçu la visite du prêtre, et suis devenu la dupe et le jouet le plus ridicule dont la malice se soit jamais amusée? Dites-moi pourquoi?</p>
+<p>OLIVIA.--Hélas! Malvolio, cette lettre n&#x27;est pas de moi, quoique, je l&#x27;avoue, cette écriture ressemble beaucoup à la mienne: mais, sans aucun doute, c&#x27;est la main de Marie; et, en ce moment je me le rappelle, c&#x27;est elle qui m&#x27;a dit la première que vous étiez devenu fou: et aussitôt après je vous ai vu venir le sourire sur les lèvres, et mis de la manière qu&#x27;on vous indiquait ici dans cette lettre. Je vous en prie, apaisez-vous; c&#x27;est un bien méchant tour qu&#x27;on s&#x27;est permis de vous jouer là: mais quand nous en connaîtrons les motifs et les auteurs, vous serez, je vous le promets, juge et partie dans votre propre cause.</p>
+<p>FABIAN.--Daignez, madame, m&#x27;écouter un moment, et ne permettez-pas qu&#x27;aucune querelle, aucune discorde vienne troubler la joie de cette heure fortunée, dont les aventures m&#x27;ont rempli d&#x27;admiration. C&#x27;est dans l&#x27;espérance que vous ne le permettrez pas, que je vous avoue franchement que c&#x27;est moi-même et sir Tobie, qui avons comploté cette farce contre Malvolio que voilà, pour nous venger de certains procédés incivils et brutaux que nous avions endurés de lui: c&#x27;est Marie qui a écrit la lettre, pressée par les importunités de sir Tobie; et en récompense, il l&#x27;a épousée. Toutes les malignes plaisanteries qui en ont été la suite méritent plutôt d&#x27;exciter le rire que la vengeance, si l&#x27;on veut bien peser avec justice les torts réciproques dont les deux parties ont à se plaindre.</p>
+<p>OLIVIA.--Hélas! pauvre homme, comme ils se sont moqués de toi!</p>
+<p>LE BOUFFON.--Quoi! il est des hommes qui naissent dans la grandeur, d&#x27;autres qui parviennent à la grandeur, et d&#x27;autres que la grandeur vient chercher d&#x27;elle-même (A Malvolio.) J&#x27;ai fait un rôle, monsieur, dans cet intermède; oui, j&#x27;ai fait un certain messire Topas, monsieur: mais qu&#x27;est-ce que cela fait?--Par le Seigneur, fou, je ne suis pas insensé. Mais vous rappelez-vous ce que vous disiez: «Madame, pourquoi riez-vous des platitudes de ce fou? Si vous ne riiez pas, il aurait un bâillon dans la bouche.» C&#x27;est ainsi que les pirouettes du temps amènent les vengeances.</p>
+<p>MALVOLIO.--Je me vengerai de toute votre meute.</p>
+<p>(Il sort.)</p>
+<p>OLIVIA.--Il a été cruellement joué!</p>
+<p>LE DUC.--Courez après lui, et engagez-le à faire la paix. Il ne nous a encore rien dit du capitaine; quand ceci sera connu et que l&#x27;heure dorée nous rassemblera, nos tendres coeurs s&#x27;uniront par un noeud solennel.--En attendant, chère soeur, nous ne sortirons pas d&#x27;ici.--Césario, venez, car vous serez toujours Césario, tant que vous serez un homme; mais dès que vous apparaîtrez sous d&#x27;autres habits, vous serez la maîtresse d&#x27;Orsino, et la reine de ses volontés.</p>
+<p>(Ils sortent.)</p>
+<p>LE BOUFFON.</p>
+<p>Quand j&#x27;étais un petit garçon Et hi, et ho, au vent et à la pluie, Toutes nos folies Passaient pour enfantillage, Car la pluie tombe tous les jours.</p>
+<p>Mais lorsque je devins grand, Et hi, et ho, le vent et la pluie; Les gens ferment leurs portes contre les filous et les voleurs, Car la pluie tombe tous les jours.</p>
+<p>Mais quand je vins à prendre femme, Et hi, et ho, le vent et la pluie, Je ne pus faire fortune en faisant le brave, Car la pluie tombe tous les jours.</p>
+<p>Mais quand j&#x27;allais au lit, Et hi, et ho, le vent et la pluie, Je me grisais avec des ivrognes, Car la pluie tombe tous les jours.</p>
+<p>Il y a longtemps que le monde a commencé, Et hi, et ho, le vent et la pluie, Mais, n&#x27;importe, la pièce est finie, Et nous tâcherons de vous plaire tous les jours.</p>
+<p>(Il sort.)</p>
+<h3 class="sub">Fin du cinquième et dernier acte.</h3>
+<p class="colophon">Texte du domaine public. Édition numérique BookClassics.</p>
+</body></html>

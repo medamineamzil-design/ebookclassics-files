@@ -464,6 +464,20 @@
     "txt"
    ]
   },
+  "ivanhoe": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "it": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "jane-eyre": {
    "en": [
     "epub",
@@ -629,6 +643,14 @@
    ]
   },
   "nicomachean-ethics": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "northanger-abbey": {
    "en": [
     "epub",
     "html",
@@ -1510,6 +1532,34 @@
     "txt"
    ]
   },
+  "through-the-looking-glass": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "thus-spake-zarathustra": {
+   "de": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "treasure-island": {
    "de": [
     "epub",
@@ -1524,6 +1574,20 @@
     "txt"
    ],
    "es": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "twelfth-night": {
+   "en": [
     "epub",
     "html",
     "pdf",
@@ -1625,5 +1689,5 @@
    ]
   }
  },
- "generated": "2026-10-03T00:55:06Z"
+ "generated": "2026-10-03T13:01:10Z"
 }
