@@ -1,0 +1,27 @@
+=== BookClassics — lot 2026-10-03 — 2026-10-03 15:17 ===
+== 1/4 Fabrication des livres (EPUB, PDF, TXT, HTML) ==
+… Mansfield Park [en] — Gutenberg #141
+   + mansfield-park [en] OK — Project Gutenberg (#141), 159610 mots, 48 chapitres — epub:437Ko pdf:1947Ko txt:870Ko html:888Ko
+… The Woman in White [en] — Gutenberg #583
+   + the-woman-in-white [en] OK — Project Gutenberg (#583), 244034 mots, 49 chapitres — epub:616Ko pdf:3031Ko txt:1337Ko html:1369Ko
+… North and South [en] — Gutenberg #4276
+   + north-and-south [en] OK — Project Gutenberg (#4276), 180637 mots, 51 chapitres — epub:501Ko pdf:2291Ko txt:987Ko html:1014Ko
+… Silas Marner [en] — Gutenberg #550
+   + silas-marner [en] OK — Project Gutenberg (#550), 70900 mots, 21 chapitres — epub:227Ko pdf:905Ko txt:392Ko html:402Ko
+… Silas Marner [es] — Gutenberg #24823
+   + silas-marner [es] OK — Project Gutenberg (#24823), 76495 mots, 20 chapitres — epub:245Ko pdf:1033Ko txt:443Ko html:454Ko
+… Far from the Madding Crowd [en] — Gutenberg #27
+   + far-from-the-madding-crowd [en] OK — Project Gutenberg (#27), 136550 mots, 63 chapitres — epub:438Ko pdf:1985Ko txt:771Ko html:801Ko
+== 2/4 Dépôt des livres ==
++ Mansfield Park : en
++ The Woman in White : en
++ North and South : en
++ Silas Marner : en, es
++ Far from the Madding Crowd : en
+   publié : ebookclassics-files — Nouveaux livres : Mansfield Park, The Woman in White, North and South, Silas Marner, Far from the Madding Crowd
+== 3/4 Site : catalogue, pages livres, plan du site ==
+   141 pages livres, 140 couvertures, 146 adresses dans le sitemap
+   5 livre(s) ajouté(s) au catalogue
+!! ERREUR : push impossible sur /home/runner/ebookclassics-site
+!! lot en erreur : lot-2026-10-03.json
+FIN 2026-10-03 15:19
