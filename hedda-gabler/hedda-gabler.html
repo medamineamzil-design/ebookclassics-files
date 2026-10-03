@@ -1,0 +1,3023 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hedda Gabler — Henrik Ibsen</title><style>
+:root{--paper:#fbf8f1;--ink:#1f1b16;--muted:#6f6352;--accent:#9a6b2f;--rule:#e4dccb}
+@media (prefers-color-scheme:dark){:root{--paper:#16140f;--ink:#ece6d8;--muted:#a79c88;--accent:#d8a95e;--rule:#2e2a22}}
+html{background:var(--paper)}
+body{font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Libertinus Serif",Georgia,serif;color:var(--ink);
+     background:var(--paper);line-height:1.65;font-size:1.12rem;max-width:36em;margin:0 auto;padding:2.5em 1.25em 5em}
+.titlepage{text-align:center;min-height:70vh;display:flex;flex-direction:column;justify-content:center;gap:.6em;
+           border-bottom:1px solid var(--rule);margin-bottom:2.5em;padding-bottom:2.5em}
+.titlepage img{max-width:260px;width:60%;margin:0 auto 1.5em;border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+h1{font-size:2.4em;line-height:1.15;font-weight:600;margin:0;letter-spacing:-.01em}
+.author{font-style:italic;font-size:1.25em;color:var(--accent);margin:0}
+.translator{font-size:.95em;color:var(--muted);margin:0}
+nav.toc{margin:0 0 3em}
+nav.toc h2{font-size:.85em;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:left;margin:0 0 .8em}
+nav.toc ol{list-style:none;padding:0;margin:0;columns:1}
+nav.toc li{margin:.25em 0}
+nav.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent}
+nav.toc a:hover{border-color:var(--accent)}
+h2.chapter{font-size:1.45em;font-weight:600;text-align:center;margin:3.5em 0 1.6em;line-height:1.3}
+h2.chapter::before{content:"";display:block;width:3em;height:2px;background:var(--accent);margin:0 auto 1.1em}
+p{margin:0;text-indent:1.5em;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+h2.chapter + p, .titlepage + p{text-indent:0}
+h2.chapter + p::first-letter{font-size:3.1em;float:left;line-height:.85;padding:.08em .08em 0 0;color:var(--accent);font-weight:600}
+.colophon{margin-top:5em;padding-top:1.5em;border-top:1px solid var(--rule);text-align:center;color:var(--muted);font-size:.85em;text-indent:0}
+h3.sub{font-size:1em;font-weight:600;font-variant:small-caps;letter-spacing:.04em;text-align:center;margin:2.2em 0 1em}
+h3.sub + p{text-indent:0}
+@media print{h2.chapter{break-before:page}}
+</style></head><body>
+<header class="titlepage">
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjI0MDAiIHZpZXdCb3g9IjAgMCAxNjAwIDI0MDAiPgo8cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSIyNDAwIiBmaWxsPSIjMmQxZTNlIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjMwMCIgZmlsbD0iI2U4YTg3YyIgb3BhY2l0eT0iLjkyIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMmQxZTNlIiBzdHJva2Utd2lkdGg9IjEyIiBvcGFjaXR5PSIuNSIvPgo8Y2lyY2xlIGN4PSIxMTIwIiBjeT0iNTYwIiByPSIxMjAiIGZpbGw9IiMyZDFlM2UiIG9wYWNpdHk9Ii4xOCIvPgo8cmVjdCB4PSIxNjAiIHk9IjkzMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIxMCIgZmlsbD0iI2U4YTg3YyIvPgo8dGV4dCB4PSIxNjAiIHk9IjExODAiIGZvbnQtc2l6ZT0iMTUwIiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmNmVkZTQiPkhlZGRhIEdhYmxlcjwvdGV4dD4KPHRleHQgeD0iMTYwIiB5PSIxNDE1IiBmb250LXNpemU9IjY4IiBmb250LXN0eWxlPSJpdGFsaWMiIGZvbnQtZmFtaWx5PSJMaWJlcnRpbnVzIFNlcmlmLCBHZW9yZ2lhLCBzZXJpZiIgZmlsbD0iI2U4YTg3YyI+SGVucmlrIElic2VuPC90ZXh0Pgo8dGV4dCB4PSIxNjAiIHk9IjIyMzAiIGZvbnQtc2l6ZT0iNDQiIGxldHRlci1zcGFjaW5nPSIxNCIgZm9udC1mYW1pbHk9IkxpYmVydGludXMgU2VyaWYsIEdlb3JnaWEsIHNlcmlmIiBmaWxsPSIjZjZlZGU0IiBvcGFjaXR5PSIuNzUiPkJPT0tDTEFTU0lDUzwvdGV4dD4KPC9zdmc+" alt="">
+<h1>Hedda Gabler</h1>
+<p class="author">Henrik Ibsen</p>
+<p class="translator">Translated by Edmund Gosse, William Archer</p>
+</header>
+<nav class="toc"><h2>Contents</h2><ol>
+<li><a href="#c1">Act First.</a></li>
+<li><a href="#c2">Act Second.</a></li>
+<li><a href="#c3">Act Third.</a></li>
+<li><a href="#c4">Part!</a></li>
+<li><a href="#c5">Act Fourth.</a></li>
+<li><a href="#c6">Part of the time.</a></li>
+</ol></nav>
+<h3 class="sub">Introduction by William Archer — Introduction.</h3>
+<p>From Munich, on June 29, 1890, Ibsen wrote to the Swedish poet, Count Carl Soilsky: &quot;Our intention has all along been to spend the summer in the Tyrol again. But circumstances are against our doing so. I am at present engaged upon a new dramatic work, which for several reasons has made very slow progress, and I do not leave Munich until I can take with me the completed first draft. There is little or no prospect of my being able to complete it in July.&quot; Ibsen did not leave Munich at all that season. On October 30 he wrote: &quot;At present I am utterly engrossed in a new play. Not one leisure hour have I had for several months.&quot; Three weeks later (November 20) he wrote to his French translator, Count Prozor: &quot;My new play is finished; the manuscript went off to Copenhagen the day before yesterday.... It produces a curious feeling of emptiness to be thus suddenly separated from a work which has occupied one&#x27;s time and thoughts for several months, to the exclusion of all else. But it is a good thing, too, to have done with it. The constant intercourse with the fictitious personages was beginning to make me quite nervous.&quot; To the same correspondent he wrote on December 4: &quot;The title of the play is Hedda Gabler. My intention in giving it this name was to indicate that Hedda, as a personality, is to be regarded rather as her father&#x27;s daughter than as her husband&#x27;s wife. It was not my desire to deal in this play with so-called problems. What I principally wanted to do was to depict human beings, human emotions, and human destinies, upon a groundwork of certain of the social conditions and principles of the present day.&quot;</p>
+<p>So far we read the history of the play in the official &quot;Correspondence.&quot;(1) Some interesting glimpses into the poet&#x27;s moods during the period between the completion of The Lady from the Sea and the publication of Hedda Gabler are to be found in the series of letters to Fraulein Emilie Bardach, of Vienna, published by Dr. George Brandes.(2) This young lady Ibsen met at Gossensass in the Tyrol in the autumn of 1889. The record of their brief friendship belongs to the history of The Master Builder rather than to that of Hedda Gabler, but the allusions to his work in his letters to her during the winter of 1889 demand some examination.</p>
+<p>So early as October 7, 1889, he writes to her: &quot;A new poem begins to dawn in me. I will execute it this winter, and try to transfer to it the bright atmosphere of the summer. But I feel that it will end in sadness--such is my nature.&quot; Was this &quot;dawning&quot; poem Hedda Gabler? Or was it rather The Master Builder that was germinating in his mind? Who shall say? The latter hypothesis seems the more probable, for it is hard to believe that at any stage in the incubation of Hedda Gabler he can have conceived it as even beginning in gaiety. A week later, however, he appears to have made up his mind that the time had not come for the poetic utilisation of his recent experiences. He writes on October 15: &quot;Here I sit as usual at my writing-table. Now I would fain work, but am unable to. My fancy, indeed, is very active. But it always wanders away ours. I cannot repress my summer memories--nor do I wish to. I live through my experience again and again and yet again. To transmute it all into a poem, I find, in the meantime, impossible.&quot; Clearly, then, he felt that his imagination ought to have been engaged on some theme having no relation to his summer experiences--the theme, no doubt, of Hedda Gabler. In his next letter, dated October 29, he writes: &quot;Do not be troubled because I cannot, in the meantime, create (dichten). In reality I am for ever creating, or, at any rate, dreaming of something which, when in the fulness of time it ripens, will reveal itself as a creation (Dichtung).&quot; On November 19 he says: &quot;I am very busily occupied with preparations for my new poem. I sit almost the whole day at my writing-table. Go out only in the evening for a little while.&quot; The five following letters contain no allusion to the play; but on September 18, 1890, he wrote: &quot;My wife and son are at present at Riva, on the Lake of Garda, and will probably remain there until the middle of October, or even longer. Thus I am quite alone here, and cannot get away. The new play on which I am at present engaged will probably not be ready until November, though I sit at my writing-table daily, and almost the whole day long.&quot;</p>
+<p>Here ends the history of Hedda Gabler, so far as the poet&#x27;s letters carry us. Its hard clear outlines, and perhaps somewhat bleak atmosphere, seem to have resulted from a sort of reaction against the sentimental &quot;dreamery&quot; begotten of his Gossensass experiences. He sought refuge in the chill materialism of Hedda from the ardent transcendentalism of Hilda, whom he already heard knocking at the door. He was not yet in the mood to deal with her on the plane of poetry.(3)</p>
+<p>Hedda Gabler was published in Copenhagen on December 16, 1890. This was the first of Ibsen&#x27;s plays to be translated from proof-sheets and published in England and America almost simultaneously with its first appearance in Scandinavia. The earliest theatrical performance took place at the Residenz Theater, Munich, on the last day of January 1891, in the presence of the poet, Frau Conrad-Ramlo playing the title-part. The Lessing Theater, Berlin, followed suit on February 10. Not till February 25 was the play seen in Copenhagen, with Fru Hennings as Hedda. On the following night it was given for the first time in Christiania, the Norwegian Hedda being Froken Constance Bruun. It was this production which the poet saw when he visited the Christiania Theater for the first time after his return to Norway, August 28, 1891. It would take pages to give even the baldest list of the productions and revivals of Hedda Gabler in Scandinavia and Germany, where it has always ranked among Ibsen&#x27;s most popular works. The admirable production of the play by Miss Elizabeth Robins and Miss Marion Lea, at the Vaudeville Theatre, London, April 20, 1891, may rank as the second great step towards the popularisation of Ibsen in England, the first being the Charrington-Achurch production of A Doll&#x27;s House in 1889. Miss Robins afterwards repeated her fine performance of Hedda many times, in London, in the English provinces, and in New York. The character has also been acted in London by Eleonora Duse, and as I write (March, 5, 1907) by Mrs. Patrick Campbell, at the Court Theatre. In Australia and America, Hedda has frequently been acted by Miss Nance O&#x27;Neill and other actresses--quite recently by a Russian actress, Madame Alla Nazimova, who (playing in English) seems to have made a notable success both in this part and in Nora. The first French Hedda Gabler was Mlle. Marthe Brandes, who played the part at the Vaudeville Theatre, Paris, on December 17, 1891, the performance being introduced by a lecture by M. Jules Lemaitre. In Holland, in Italy, in Russia, the play has been acted times without number. In short (as might easily have been foretold) it has rivalled A Doll&#x27;s House in world-wide popularity.</p>
+<p>It has been suggested,(4) I think without sufficient ground, that Ibsen deliberately conceived Hedda Gabler as an &quot;international&quot; play, and that the scene is really the &quot;west end&quot; of any European city. To me it seems quite clear that Ibsen had Christiania in mind, and the Christiania of a somewhat earlier period than the &#x27;nineties. The electric cars, telephones, and other conspicuous factors in the life of a modern capital are notably absent from the play. There is no electric light in Secretary Falk&#x27;s villa. It is still the habit for ladies to return on foot from evening parties, with gallant swains escorting them. This &quot;suburbanism,&quot; which so distressed the London critics of 1891, was characteristic of the Christiania Ibsen himself had known in the &#x27;sixties--the Christiania of Love&#x27;s Comedy--rather than of the greatly extended and modernised city of the end of the century. Moreover Lovborg&#x27;s allusions to the fiord, and the suggested picture of Sheriff Elvsted, his family and his avocations are all distinctively Norwegian. The truth seems to be very simple--the environment and the subsidiary personages are all thoroughly national, but Hedda herself is an &quot;international&quot; type, a product of civilisation by no means peculiar to Norway.</p>
+<p>We cannot point to any individual model or models who &quot;sat to&quot; Ibsen for the character of Hedda.(5) The late Grant Allen declared that Hedda was &quot;nothing more nor less than the girl we take down to dinner in London nineteen times out of twenty&quot;; in which case Ibsen must have suffered from a superfluidity of models, rather than from any difficulty in finding one. But the fact is that in this, as in all other instances, the word &quot;model&quot; must be taken in a very different sense from that in which it is commonly used in painting. Ibsen undoubtedly used models for this trait and that, but never for a whole figure. If his characters can be called portraits at all, they are composite portraits. Even when it seems pretty clear that the initial impulse towards the creation of a particular character came from some individual, the original figure is entirely transmuted in the process of harmonisation with the dramatic scheme. We need not, therefore, look for a definite prototype of Hedda; but Dr. Brandes shows that two of that lady&#x27;s exploits were probably suggested by the anecdotic history of the day.</p>
+<p>Ibsen had no doubt heard how the wife of a well-known Norwegian composer, in a fit of raging jealousy excited by her husband&#x27;s prolonged absence from home, burnt the manuscript of a symphony which he had just finished. The circumstances under which Hedda burns Lovborg&#x27;s manuscript are, of course, entirely different and infinitely more dramatic; but here we have merely another instance of the dramatisation or &quot;poetisation&quot; of the raw material of life. Again, a still more painful incident probably came to his knowledge about the same time. A beautiful and very intellectual woman was married to a well-known man who had been addicted to drink, but had entirely conquered the vice. One day a mad whim seized her to put his self-mastery and her power over him to the test. As it happened to be his birthday, she rolled into his study a small keg of brandy, and then withdrew. She returned some time after wards to find that he had broached the keg, and lay insensible on the floor. In this anecdote we cannot but recognise the germ, not only of Hedda&#x27;s temptation of Lovborg, but of a large part of her character.</p>
+<p>&quot;Thus,&quot; says Dr. Brandes, &quot;out of small and scattered traits of reality Ibsen fashioned his close-knit and profoundly thought-out works of art.&quot;</p>
+<p>For the character of Eilert Lovborg, again, Ibsen seem unquestionably to have borrowed several traits from a definite original. A young Danish man of letters, whom Dr. Brandes calls Holm, was an enthusiastic admirer of Ibsen, and came to be on very friendly terms with him. One day Ibsen was astonished to receive, in Munich, a parcel addressed from Berlin by this young man, containing, without a word of explanation, a packet of his (Ibsen&#x27;s) letters, and a photograph which he had presented to Holm. Ibsen brooded and brooded over the incident, and at last came to the conclusion that the young man had intended to return her letters and photograph to a young lady to whom he was known to be attached, and had in a fit of aberration mixed up the two objects of his worship. Some time after, Holm appeared at Ibsen&#x27;s rooms. He talked quite rationally, but professed to have no knowledge whatever of the letter-incident, though he admitted the truth of Ibsen&#x27;s conjecture that the &quot;belle dame sans merci&quot; had demanded the return of her letters and portrait. Ibsen was determined to get at the root of the mystery; and a little inquiry into his young friend&#x27;s habits revealed the fact that he broke his fast on a bottle of port wine, consumed a bottle of Rhine wine at lunch, of Burgundy at dinner, and finished off the evening with one or two more bottles of port. Then he heard, too, how, in the course of a night&#x27;s carouse, Holm had lost the manuscript of a book; and in these traits he saw the outline of the figure of Eilert Lovborg.</p>
+<p>Some time elapsed, and again Ibsen received a postal packet from Holm. This one contained his will, in which Ibsen figured as his residuary legatee. But many other legatees were mentioned in the instrument--all of them ladies, such as Fraulein Alma Rothbart, of Bremen, and Fraulein Elise Kraushaar, of Berlin. The bequests to these meritorious spinsters were so generous that their sum considerably exceeded the amount of the testator&#x27;s property. Ibsen gently but firmly declined the proffered inheritance; but Holm&#x27;s will no doubt suggested to him the figure of that red-haired &quot;Mademoiselle Diana,&quot; who is heard of but not seen in Hedda Gabler, and enabled him to add some further traits to the portraiture of Lovborg. When the play appeared, Holm recognised himself with glee in the character of the bibulous man of letters, and thereafter adopted &quot;Eilert Lovborg&quot; as his pseudonym. I do not, therefore, see why Dr. Brandes should suppress his real name; but I willingly imitate him in erring on the side of discretion. The poor fellow died several years ago.</p>
+<p>Some critics have been greatly troubled as to the precise meaning of Hedda&#x27;s fantastic vision of Lovborg &quot;with vine-leaves in his hair.&quot; Surely this is a very obvious image or symbol of the beautiful, the ideal, aspect of bacchic elation and revelry. Antique art, or I am much mistaken, shows us many figures of Dionysus himself and his followers with vine-leaves entwined their hair. To Ibsen&#x27;s mind, at any rate, the image had long been familiar. In Peer Gynt (Act iv. sc. 8), when Peer, having carried off Anitra, finds himself in a particularly festive mood, he cries: &quot;Were there vine-leaves around, I would garland my brow.&quot; Again, in Emperor and Galilean (Pt. ii. Act 1) where Julian, in the procession of Dionysus, impersonates the god himself, it is directed that he shall wear a wreath of vine-leaves. Professor Dietrichson relates that among the young artists whose society Ibsen frequented during his first years in Rome, it was customary, at their little festivals, for the revellers to deck themselves in this fashion. But the image is so obvious that there is no need to trace it to any personal experience. The attempt to place Hedda&#x27;s vine-leaves among Ibsen&#x27;s obscurities is an example of the firm resolution not to understand which animated the criticism of the &#x27;nineties.</p>
+<p>Dr. Brandes has dealt very severely with the character of Eilert Lovborg, alleging that we cannot believe in the genius attributed to him. But where is he described as a genius? The poet represents him as a very able student of sociology; but that is quite a different thing from attributing to him such genius as must necessarily shine forth in every word he utters. Dr. Brandes, indeed, declines to believe even in his ability as a sociologist, on the ground that it is idle to write about the social development of the future. &quot;To our prosaic minds,&quot; he says, &quot;it may seem as if the most sensible utterance on the subject is that of the fool of the play: &#x27;The future! Good heavens, we know nothing of the future.&#x27;&quot; The best retort to this criticism is that which Eilert himself makes: &quot;There&#x27;s a thing or two to be said about it all the same.&quot; The intelligent forecasting of the future (as Mr. H. G. Wells has shown) is not only clearly distinguishable from fantastic Utopianism, but is indispensable to any large statesmanship or enlightened social activity. With very real and very great respect for Dr. Brandes, I cannot think that he has been fortunate in his treatment of Lovborg&#x27;s character. It has been represented as an absurdity that he would think of reading abstracts from his new book to a man like Tesman, whom he despises. But though Tesman is a ninny, he is, as Hedda says, a &quot;specialist&quot;--he is a competent, plodding student of his subject. Lovborg may quite naturally wish to see how his new method, or his excursion into a new field, strikes the average scholar of the Tesman type. He is, in fact, &quot;trying it on the dog&quot;--neither an unreasonable nor an unusual proceeding. There is, no doubt, a certain improbability in the way in which Lovborg is represented as carrying his manuscript around, and especially in Mrs. Elvsted&#x27;s production of his rough draft from her pocket; but these are mechanical trifles, on which only a niggling criticism would dream of laying stress.</p>
+<p>Of all Ibsen&#x27;s works, Hedda Gabler is the most detached, the most objective--a character-study pure and simple. It is impossible--or so it seems to me--to extract any sort of general idea from it. One cannot even call it a satire, unless one is prepared to apply that term to the record of a &quot;case&quot; in a work of criminology. Reverting to Dumas&#x27;s dictum that a play should contain &quot;a painting, a judgment, an ideal,&quot; we may say the Hedda Gabler fulfils only the first of these requirements. The poet does not even pass judgment on his heroine: he simply paints her full-length portrait with scientific impassivity. But what a portrait! How searching in insight, how brilliant in colouring, how rich in detail! Grant Allen&#x27;s remark, above quoted, was, of course, a whimsical exaggeration; the Hedda type is not so common as all that, else the world would quickly come to an end. But particular traits and tendencies of the Hedda type are very common in modern life, and not only among women. Hyperaesthesia lies at the root of her tragedy. With a keenly critical, relentlessly solvent intelligence, she combines a morbid shrinking from all the gross and prosaic detail of the sensual life. She has nothing to take her out of herself--not a single intellectual interest or moral enthusiasm. She cherishes, in a languid way, a petty social ambition; and even that she finds obstructed and baffled. At the same time she learns that another woman has had the courage to love and venture all, where she, in her cowardice, only hankered and refrained. Her malign egoism rises up uncontrolled, and calls to its aid her quick and subtle intellect. She ruins the other woman&#x27;s happiness, but in doing so incurs a danger from which her sense of personal dignity revolts. Life has no such charm for her that she cares to purchase it at the cost of squalid humiliation and self-contempt. The good and the bad in her alike impel her to have done with it all; and a pistol-shot ends what is surely one of the most poignant character-tragedies in literature. Ibsen&#x27;s brain never worked at higher pressure than in the conception and adjustment of those &quot;crowded hours&quot; in which Hedda, tangled in the web of Will and Circumstance, struggles on till she is too weary to struggle any more.</p>
+<p>It may not be superfluous to note that the &quot;a&quot; in &quot;Gabler&quot; should be sounded long and full, like the &quot;a&quot; in &quot;Garden&quot;--NOT like the &quot;a&quot; in &quot;gable&quot; or in &quot;gabble.&quot;</p>
+<h3 class="sub">W. A — Footnotes.</h3>
+<p>(1)Letters 214, 216, 217, 219.</p>
+<p>(2)In the Ibsen volume of Die Literatur (Berlin).</p>
+<p>(3)Dr. Julius Elias (Neue deutsche Rundschau, December 1906, p. 1462) makes the curious assertion that the character of Thea Elvsted was in part borrowed from this &quot;Gossensasser Hildetypus.&quot;  It is hard to see how even Gibes&#x27; ingenuity could distil from the same flower two such different essences as Thea and Hilda.</p>
+<p>(4)See article by Herman Bang in Neue deutsche Rundschau, December 1906, p. 1495.</p>
+<p>(5)Dr. Brahm (Neue deutsche Rundschau, December 1906, P. 1422) says that after the first performance of Hedda Gabler in Berlin Ibsen confided to him that the character had been suggested by a German lady whom he met in Munich, and who did not shoot, but poisoned herself.  Nothing more seems to be known of this lady.  See, too, an article by Julius Elias in the same magazine, p. 1460.</p>
+<h3 class="sub">Hedda Gabler — Play in Four Acts.</h3>
+<h3 class="sub">Characters.</h3>
+<p>GEORGE TESMAN.* HEDDA TESMAN, his wife. MISS JULIANA TESMAN, his aunt. MRS. ELVSTED. JUDGE** BRACK. EILERT LOVBORG. BERTA, servant at the Tesmans.</p>
+<p>*Tesman, whose Christian name in the original is &quot;Jorgen,&quot; is described as &quot;stipendiat i kulturhistorie&quot;--that is to say, the holder of a scholarship for purposes of research into the History of Civilisation.</p>
+<p>**In the original &quot;Assessor.&quot;</p>
+<p>The scene of the action is Tesman&#x27;s villa, in the west end of Christiania.</p>
+<h2 class="chapter" id="c1">Act First.</h2>
+<p>A spacious, handsome, and tastefully furnished drawing room, decorated in dark colours.  In the back, a wide doorway with curtains drawn back, leading into a smaller room decorated in the same style as the drawing-room.  In the right-hand wall of the front room, a folding door leading out to the hall.  In the opposite wall, on the left, a glass door, also with curtains drawn back.  Through the panes can be seen part of a verandah outside, and trees covered with autumn foliage.  An oval table, with a cover on it, and surrounded by chairs, stands well forward.  In front, by the wall on the right, a wide stove of dark porcelain, a high-backed arm-chair, a cushioned foot-rest, and two footstools.  A settee, with a small round table in front of it, fills the upper right-hand corner.  In front, on the left, a little way from the wall, a sofa.  Further back than the glass door, a piano.  On either side of the doorway at the back a whatnot with terra-cotta and majolica ornaments.-- Against the back wall of the inner room a sofa, with a table, and one or two chairs.  Over the sofa hangs the portrait of a handsome elderly man in a General&#x27;s uniform. Over the table a hanging lamp, with an opal glass shade.--A number of bouquets are arranged about the drawing-room, in vases and glasses.  Others lie upon the tables.  The floors in both rooms are covered with thick carpets.--Morning light. The sun shines in through the glass door.</p>
+<p>MISS JULIANA TESMAN, with her bonnet on a carrying a parasol, comes in from the hall, followed by BERTA, who carries a bouquet wrapped in paper.  MISS TESMAN is a comely and pleasant- looking lady of about sixty-five.  She is nicely but simply dressed in a grey walking-costume.  BERTA is a middle-aged woman of plain and rather countrified appearance.</p>
+<p>MISS TESMAN.</p>
+<p>[Stops close to the door, listens, and says softly:] Upon my word, I don&#x27;t believe they are stirring yet!</p>
+<p>[Also softly.] I told you so, Miss. Remember how late the steamboat got in last night. And then, when they got home!--good Lord, what a lot the young mistress had to unpack before she could get to bed.</p>
+<p>Well well--let them have their sleep out. But let us see that they get a good breath of the fresh morning air when they do appear.</p>
+<p>[She goes to the glass door and throws it open.</p>
+<p>[Beside the table, at a loss what to do with the bouquet in her hand.] I declare there isn&#x27;t a bit of room left. I think I&#x27;ll put it down here, Miss. [She places it on the piano.</p>
+<p>So you&#x27;ve got a new mistress now, my dear Berta. Heaven knows it was a wrench to me to part with you.</p>
+<p>[On the point of weeping.] And do you think it wasn&#x27;t hard for me, too, Miss? After all the blessed years I&#x27;ve been with you and Miss Rina.(1)</p>
+<p>We must make the best of it, Berta. There was nothing else to be done. George can&#x27;t do without you, you see-he absolutely can&#x27;t. He has had you to look after him ever since he was a little boy.</p>
+<p>Ah but, Miss Julia, I can&#x27;t help thinking of Miss Rina lying helpless at home there, poor thing. And with only that new girl too! She&#x27;ll never learn to take proper care of an invalid.</p>
+<p>Oh, I shall manage to train her. And of course, you know, I shall take most of it upon myself. You needn&#x27;t be uneasy about my poor sister, my dear Berta.</p>
+<p>Well, but there&#x27;s another thing, Miss. I&#x27;m so mortally afraid I shan&#x27;t be able to suit the young mistress.</p>
+<p>Oh well--just at first there may be one or two things--</p>
+<p>Most like she&#x27;ll be terrible grand in her ways.</p>
+<p>Well, you can&#x27;t wonder at that--General Gabler&#x27;s daughter! Think of the sort of life she was accustomed to in her father&#x27;s time. Don&#x27;t you remember how we used to see her riding down the road along with the General? In that long black habit--and with feathers in her hat?</p>
+<p>Yes, indeed--I remember well enough!--But, good Lord, I should never have dreamt in those days that she and Master George would make a match of it.</p>
+<p>Nor I.--But by-the-bye, Berta--while I think of it: in future you mustn&#x27;t say Master George. You must say Dr. Tesman.</p>
+<p>Yes, the young mistress spoke of that too--last night--the moment they set foot in the house. Is it true then, Miss?</p>
+<p>Yes, indeed it is. Only think, Berta--some foreign university has made him a doctor--while he has been abroad, you understand. I hadn&#x27;t heard a word about it, until he told me himself upon the pier.</p>
+<p>Well well, he&#x27;s clever enough for anything, he is. But I didn&#x27;t think he&#x27;d have gone in for doctoring people.</p>
+<p>No no, it&#x27;s not that sort of doctor he is. [Nods significantly.] But let me tell you, we may have to call him something still grander before long.</p>
+<p>You don&#x27;t say so! What can that be, Miss?</p>
+<p>[Smiling.] H&#x27;m--wouldn&#x27;t you like to know! [With emotion.] Ah, dear dear--if my poor brother could only look up from his grave now, and see what his little boy has grown into! [Looks around.] But bless me, Berta--why have you done this? Taken the chintz covers off all the furniture.</p>
+<p>The mistress told me to. She can&#x27;t abide covers on the chairs, she says.</p>
+<p>Are they going to make this their everyday sitting-room then?</p>
+<p>Yes, that&#x27;s what I understood--from the mistress. Master George--the doctor--he said nothing.</p>
+<p>GEORGE TESMAN comes from the right into the inner room, humming to himself, and carrying an unstrapped empty portmanteau.  He is a middle-sized, young-looking man of thirty-three, rather stout, with a round, open, cheerful face, fair hair and beard.  He wears spectacles, and is somewhat carelessly dressed in comfortable indoor clothes.</p>
+<p>Good morning, good morning, George.</p>
+<p>[In the doorway between the rooms.] Aunt Julia! Dear Aunt Julia! [Goes up to her and shakes hands warmly.] Come all this way--so early! Eh?</p>
+<p>Why, of course I had to come and see how you were getting on.</p>
+<p>In spite of your having had no proper night&#x27;s rest?</p>
+<p>Oh, that makes no difference to me.</p>
+<p>Well, I suppose you got home all right from the pier? Eh?</p>
+<p>Yes, quite safely, thank goodness. Judge Brack was good enough to see me right to my door.</p>
+<p>We were so sorry we couldn&#x27;t give you a seat in the carriage. But you saw what a pile of boxes Hedda had to bring with her.</p>
+<p>Yes, she had certainly plenty of boxes.</p>
+<p>[To TESMAN.] Shall I go in and see if there&#x27;s anything I can do for the mistress?</p>
+<p>No thank you, Berta--you needn&#x27;t. She said she would ring if she wanted anything.</p>
+<p>[Going towards the right.] Very well.</p>
+<p>But look here--take this portmanteau with you.</p>
+<p>[Taking it.] I&#x27;ll put it in the attic.</p>
+<p>[She goes out by the hall door.</p>
+<p>Fancy, Auntie--I had the whole of that portmanteau chock full of copies of the documents. You wouldn&#x27;t believe how much I have picked up from all the archives I have been examining--curious old details that no one has had any idea of--</p>
+<p>Yes, you don&#x27;t seem to have wasted your time on your wedding trip, George.</p>
+<p>No, that I haven&#x27;t. But do take off your bonnet, Auntie. Look here! Let me untie the strings--eh?</p>
+<p>[While he does so.] Well well--this is just as if you were still at home with us.</p>
+<p>[With the bonnet in his hand, looks at it from all sides.] Why, what a gorgeous bonnet you&#x27;ve been investing in!</p>
+<h3 class="sub">I bought it on Hedda&#x27;s account.</h3>
+<p>On Hedda&#x27;s account? Eh?</p>
+<p>Yes, so that Hedda needn&#x27;t be ashamed of me if we happened to go out together.</p>
+<p>[Patting her cheek.] You always think of everything, Aunt Julia. [Lays the bonnet on a chair beside the table.] And now, look here--suppose we sit comfortably on the sofa and have a little chat, till Hedda comes.</p>
+<p>[They seat themselves.  She places her parasol in the corner of the sofa.</p>
+<p>[Takes both his hands and looks at him.] What a delight it is to have you again, as large as life, before my very eyes, George! My George--my poor brother&#x27;s own boy!</p>
+<p>And it&#x27;s a delight for me, too, to see you again, Aunt Julia! You, who have been father and mother in one to me.</p>
+<p>Oh yes, I know you will always keep a place in your heart for your old aunts.</p>
+<p>And what about Aunt Rina? No improvement--eh?</p>
+<p>Oh, no--we can scarcely look for any improvement in her case, poor thing. There she lies, helpless, as she has lain for all these years. But heaven grant I may not lose her yet awhile! For if I did, I don&#x27;t know what I should make of my life, George--especially now that I haven&#x27;t you to look after any more.</p>
+<p>[Patting her back.] There there there--!</p>
+<p>[Suddenly changing her tone.] And to think that here are you a married man, George!--And that you should be the one to carry off Hedda Gabler --the beautiful Hedda Gabler! Only think of it--she, that was so beset with admirers!</p>
+<p>[Hums a little and smiles complacently.] Yes, I fancy I have several good friends about town who would like to stand in my shoes--eh?</p>
+<p>And then this fine long wedding-tour you have had! More than five-- nearly six months--</p>
+<p>Well, for me it has been a sort of tour of research as well. I have had to do so much grubbing among old records--and to read no end of books too, Auntie.</p>
+<p>Oh yes, I suppose so. [More confidentially, and lowering her voice a little.] But listen now, George,--have you nothing--nothing special to tell me?</p>
+<p>As to our journey?</p>
+<p>No, I don&#x27;t know of anything except what I have told you in my letters. I had a doctor&#x27;s degree conferred on me--but that I told you yesterday.</p>
+<p>Yes, yes, you did. But what I mean is--haven&#x27;t you any--any-- expectations--?</p>
+<p>Expectations?</p>
+<p>Why you know, George--I&#x27;m your old auntie!</p>
+<p>Why, of course I have expectations.</p>
+<h3 class="sub">I have every expectation of being a professor one of these days.</h3>
+<p>Oh yes, a professor--</p>
+<p>Indeed, I may say I am certain of it. But my dear Auntie--you know all about that already!</p>
+<p>[Laughing to herself.] Yes, of course I do. You are quite right there. [Changing the subject.] But we were talking about your journey. It must have cost a great deal of money, George?</p>
+<p>Well, you see--my handsome travelling-scholarship went a good way.</p>
+<p>But I can&#x27;t understand how you can have made it go far enough for two.</p>
+<p>No, that&#x27;s not easy to understand--eh?</p>
+<p>And especially travelling with a lady--they tell me that makes it ever so much more expensive.</p>
+<p>Yes, of course--it makes it a little more expensive. But Hedda had to have this trip, Auntie! She really had to. Nothing else would have done.</p>
+<p>No no, I suppose not. A wedding-tour seems to be quite indispensable nowadays.--But tell me now--have you gone thoroughly over the house yet?</p>
+<p>Yes, you may be sure I have. I have been afoot ever since daylight.</p>
+<p>And what do you think of it all?</p>
+<p>I&#x27;m delighted! Quite delighted! Only I can&#x27;t think what we are to do with the two empty rooms between this inner parlour and Hedda&#x27;s bedroom.</p>
+<p>[Laughing.] Oh my dear George, I daresay you may find some use for them--in the course of time.</p>
+<p>Why of course you are quite right, Aunt Julia! You mean as my library increases--eh?</p>
+<p>Yes, quite so, my dear boy. It was your library I was thinking of.</p>
+<p>I am specially pleased on Hedda&#x27;s account. Often and often, before we were engaged, she said that she would never care to live anywhere but in Secretary Falk&#x27;s villa.(2)</p>
+<p>Yes, it was lucky that this very house should come into the market, just after you had started.</p>
+<p>Yes, Aunt Julia, the luck was on our side, wasn&#x27;t it--eh?</p>
+<p>But the expense, my dear George! You will find it very expensive, all this.</p>
+<p>[Looks at her, a little cast down.] Yes, I suppose I shall, Aunt!</p>
+<p>Oh, frightfully!</p>
+<p>How much do you think? In round numbers?--Eh?</p>
+<p>Oh, I can&#x27;t even guess until all the accounts come in.</p>
+<p>Well, fortunately, Judge Brack has secured the most favourable terms for me, so he said in a letter to Hedda.</p>
+<p>Yes, don&#x27;t be uneasy, my dear boy.--Besides, I have given security for the furniture and all the carpets.</p>
+<p>Security? You? My dear Aunt Julia--what sort of security could you give?</p>
+<h3 class="sub">I have given a mortgage on our annuity.</h3>
+<p>[Jumps up.] What! On your--and Aunt Rina&#x27;s annuity!</p>
+<p>Yes, I knew of no other plan, you see.</p>
+<p>[Placing himself before her.] Have you gone out of your senses, Auntie? Your annuity--it&#x27;s all that you and Aunt Rina have to live upon.</p>
+<p>Well well--don&#x27;t get so excited about it. It&#x27;s only a matter of form you know--Judge Brack assured me of that. It was he that was kind enough to arrange the whole affair for me. A mere matter of form, he said.</p>
+<p>Yes, that may be all very well. But nevertheless--</p>
+<p>You will have your own salary to depend upon now. And, good heavens, even if we did have to pay up a little--! To eke things out a bit at the start--! Why, it would be nothing but a pleasure to us.</p>
+<p>Oh Auntie--will you never be tired of making sacrifices for me!</p>
+<p>[Rises and lays her hand on his shoulders.] Have I any other happiness in this world except to smooth your way for you, my dear boy. You, who have had neither father nor mother to depend on. And now we have reached the goal, George! Things have looked black enough for us, sometimes; but, thank heaven, now you have nothing to fear.</p>
+<p>Yes, it is really marvellous how every thing has turned out for the best.</p>
+<p>And the people who opposed you--who wanted to bar the way for you-- now you have them at your feet. They have fallen, George. Your most dangerous rival--his fall was the worst.--And now he has to lie on the bed he has made for himself--poor misguided creature.</p>
+<p>Have you heard anything of Eilert? Since I went away, I mean.</p>
+<p>Only that he is said to have published a new book.</p>
+<p>Yes, so they say. Heaven knows whether it can be worth anything! Ah, when your new book appears--that will be another story, George! What is it to be about?</p>
+<p>It will deal with the domestic industries of Brabant during the Middle Ages.</p>
+<p>Fancy--to be able to write on such a subject as that!</p>
+<p>However, it may be some time before the book is ready. I have all these collections to arrange first, you see.</p>
+<p>Yes, collecting and arranging--no one can beat you at that. There you are my poor brother&#x27;s own son.</p>
+<h3 class="sub">I am looking forward eagerly to setting to work at it; especially now that I have my own delightful home to work in.</h3>
+<p>And, most of all, now that you have got the wife of your heart, my dear George.</p>
+<p>[Embracing her.] Oh yes, yes, Aunt Julia! Hedda--she is the best part of it all! I believe I hear her coming--eh?</p>
+<p>HEDDA enters from the left through the inner room.  Her face and figure show refinement and distinction.  Her complexion is pale and opaque.  Her steel-grey eyes express a cold, unruffled repose.  Her hair is of an agreeable brown, but not particularly abundant.  She is dressed in a tasteful, somewhat loose-fitting morning gown.</p>
+<p>[Going to meet HEDDA.] Good morning, my dear Hedda! Good morning, and a hearty welcome!</p>
+<p>[With some embarrassment.] Well--has the bride slept well in her new home?</p>
+<p>Oh yes, thanks. Passably.</p>
+<p>[Laughing.] Passably! Come, that&#x27;s good, Hedda! You were sleeping like a stone when I got up.</p>
+<p>[Going towards the door.] Well, then we will shut it.</p>
+<p>No no, not that! Tesman, please draw the curtains. That will give a softer light.</p>
+<p>[At the door.] All right--all right.--There now, Hedda, now you have both shade and fresh air.</p>
+<p>No, thank you. Now that I have seen that everything is all right here--thank heaven!--I must be getting home again. My sister is lying longing for me, poor thing.</p>
+<p>Give her my very best love, Auntie; and say I shall look in and see her later in the day.</p>
+<p>Yes, yes, I&#x27;ll be sure to tell her. But by-the-bye, George--[Feeling in her dress pocket]--I had almost forgotten--I have something for you here.</p>
+<p>What is it, Auntie? Eh?</p>
+<p>[Produces a flat parcel wrapped in newspaper and hands it to him.] Look here, my dear boy.</p>
+<p>[Opening the parcel.] Well, I declare!--Have you really saved them for me, Aunt Julia! Hedda! isn&#x27;t this touching--eh?</p>
+<p>[Beside the whatnot on the right.] Well, what is it?</p>
+<p>My old morning-shoes! My slippers.</p>
+<p>Indeed. I remember you often spoke of them while we were abroad.</p>
+<p>Yes, I missed them terribly. [Goes up to her.] Now you shall see them, Hedda!</p>
+<p>[Going towards the stove.] Thanks, I really don&#x27;t care about it.</p>
+<p>[Following her.] Only think--ill as she was, Aunt Rina embroidered these for me. Oh you can&#x27;t think how many associations cling to them.</p>
+<p>[At the table.] Scarcely for me.</p>
+<p>Of course not for Hedda, George.</p>
+<p>Well, but now that she belongs to the family, I thought--</p>
+<p>[Interrupting.] We shall never get on with this servant, Tesman.</p>
+<p>Not get on with Berta?</p>
+<p>Why, dear, what puts that in your head? Eh?</p>
+<p>[Pointing.] Look there! She has left her old bonnet lying about on a chair.</p>
+<p>[In consternation, drops the slippers on the floor.] Why, Hedda--</p>
+<p>Just fancy, if any one should come in and see it!</p>
+<p>But Hedda--that&#x27;s Aunt Julia&#x27;s bonnet.</p>
+<p>Is it!</p>
+<p>[Taking up the bonnet.] Yes, indeed it&#x27;s mine. And, what&#x27;s more, it&#x27;s not old, Madam Hedda.</p>
+<h3 class="sub">I really did not look closely at it, Miss Tesman.</h3>
+<p>[Trying on the bonnet.] Let me tell you it&#x27;s the first time I have worn it--the very first time.</p>
+<p>And a very nice bonnet it is too--quite a beauty!</p>
+<p>Oh, it&#x27;s no such great things, George. [Looks around her.] My parasol--? Ah, here. [Takes it.] For this is mine too-- [mutters] --not Berta&#x27;s.</p>
+<p>A new bonnet and a new parasol! Only think, Hedda.</p>
+<p>Very handsome indeed.</p>
+<p>Yes, isn&#x27;t it? Eh? But Auntie, take a good look at Hedda before you go! See how handsome she is!</p>
+<p>Oh, my dear boy, there&#x27;s nothing new in that. Hedda was always lovely.</p>
+<p>[She nods and goes toward the right.</p>
+<p>[Following.] Yes, but have you noticed what splendid condition she is in? How she has filled out on the journey?</p>
+<p>[Crossing the room.] Oh, do be quiet--!</p>
+<p>[Who has stopped and turned.] Filled out?</p>
+<p>Of course you don&#x27;t notice it so much now that she has that dress on. But I, who can see--</p>
+<p>[At the glass door, impatiently.] Oh, you can&#x27;t see anything.</p>
+<p>It must be the mountain air in the Tyrol--</p>
+<p>[Curtly, interrupting.] I am exactly as I was when I started.</p>
+<p>So you insist; but I&#x27;m quite certain you are not. Don&#x27;t you agree with me, Auntie?</p>
+<p>[Who has been gazing at her with folded hands.] Hedda is lovely-- lovely--lovely. [Goes up to her, takes her head between both hands, draws it downwards, and kisses her hair.] God bless and preserve Hedda Tesman--for George&#x27;s sake.</p>
+<p>[Gently freeing herself.] Oh--! Let me go.</p>
+<p>[In quiet emotion.] I shall not let a day pass without coming to see you.</p>
+<p>No you won&#x27;t, will you, Auntie? Eh?</p>
+<p>MISS TESMAN.</p>
+<p>Good-bye--good-bye!</p>
+<p>[She goes out by the hall door.  TESMAN accompanies her.  The door remains half open.  TESMAN can be heard repeating his message to Aunt Rina and his thanks for the slippers.</p>
+<p>[In the meantime, HEDDA walks about the room, raising her arms and clenching her hands as if in desperation.  Then she flings back the curtains from the glass door, and stands there looking out.</p>
+<p>[Presently, TESMAN returns and closes the door behind him.</p>
+<p>TESMAN.</p>
+<p>[Picks up the slippers from the floor.] What are you looking at, Hedda?</p>
+<p>[Once more calm and mistress of herself.] I am only looking at the leaves. They are so yellow--so withered.</p>
+<p>[Wraps up the slippers and lays them on the table.] Well, you see, we are well into September now.</p>
+<p>[Again restless.] Yes, to think of it!--already in--in September.</p>
+<p>Don&#x27;t you think Aunt Julia&#x27;s manner was strange, dear? Almost solemn? Can you imagine what was the matter with her? Eh?</p>
+<h3 class="sub">I scarcely know her, you see. Is she not often like that?</h3>
+<p>No, not as she was to-day.</p>
+<p>[Leaving the glass door.] Do you think she was annoyed about the bonnet?</p>
+<p>Oh, scarcely at all. Perhaps a little, just at the moment--</p>
+<p>But what an idea, to pitch her bonnet about in the drawing-room! No one does that sort of thing.</p>
+<p>Well you may be sure Aunt Julia won&#x27;t do it again.</p>
+<p>In any case, I shall manage to make my peace with her.</p>
+<p>Yes, my dear, good Hedda, if you only would.</p>
+<p>When you call this afternoon, you might invite her to spend the evening here.</p>
+<p>Yes, that I will. And there&#x27;s one thing more you could do that would delight her heart.</p>
+<p>What is it?</p>
+<p>If you could only prevail on yourself to say du(3) to her. For my sake, Hedda? Eh?</p>
+<p>No, no, Tesman--you really mustn&#x27;t ask that of me. I have told you so already. I shall try to call her &quot;Aunt&quot;; and you must be satisfied with that.</p>
+<p>Well well. Only I think now that you belong to the family, you--</p>
+<p>H&#x27;m--I can&#x27;t in the least see why--</p>
+<p>[She goes up towards the middle doorway.</p>
+<p>[After a pause.] Is there anything the matter with you, Hedda? Eh?</p>
+<p>I&#x27;m only looking at my old piano. It doesn&#x27;t go at all well with all the other things.</p>
+<p>The first time I draw my salary, we&#x27;ll see about exchanging it.</p>
+<p>No, no--no exchanging. I don&#x27;t want to part with it. Suppose we put it there in the inner room, and then get another here in its place. When it&#x27;s convenient, I mean.</p>
+<p>[A little taken aback.] Yes--of course we could do that.</p>
+<p>[Takes up the bouquet from the piano.] These flowers were not here last night when we arrived.</p>
+<p>Aunt Julia must have brought them for you.</p>
+<p>[Examining the bouquet.] A visiting-card. [Takes it out and reads:] &quot;Shall return later in the day.&quot; Can you guess whose card it is?</p>
+<p>No. Whose? Eh?</p>
+<p>The name is &quot;Mrs. Elvsted.&quot;</p>
+<p>Is it really? Sheriff Elvsted&#x27;s wife? Miss Rysing that was.</p>
+<p>Exactly. The girl with the irritating hair, that she was always showing off. An old flame of yours I&#x27;ve been told.</p>
+<p>[Laughing.] Oh, that didn&#x27;t last long; and it was before I met you, Hedda. But fancy her being in town!</p>
+<p>It&#x27;s odd that she should call upon us. I have scarcely seen her since we left school.</p>
+<h3 class="sub">I haven&#x27;t see her either for--heaven knows how long. I wonder how she can endure to live in such an out-of-the way hole--eh?</h3>
+<p>Yes, he is somewhere in that part of the country.</p>
+<p>BERTA enters by the hall door.</p>
+<p>That lady, ma&#x27;am, that brought some flowers a little while ago, is here again. [Pointing.] The flowers you have in your hand, ma&#x27;am.</p>
+<p>Ah, is she? Well, please show her in.</p>
+<p>BERTA opens the door for MRS. ELVSTED, and goes out herself. --MRS. ELVSTED is a woman of fragile figure, with pretty, soft features.  Her eyes are light blue, large, round, and somewhat prominent, with a startled, inquiring expression. Her hair is remarkably light, almost flaxen, and unusually abundant and wavy.  She is a couple of years younger than HEDDA.  She wears a dark visiting dress, tasteful, but not quite in the latest fashion.</p>
+<p>[Receives her warmly.] How do you do, my dear Mrs. Elvsted? It&#x27;s delightful to see you again.</p>
+<p>[Nervously, struggling for self-control.] Yes, it&#x27;s a very long time since we met.</p>
+<p>[Gives her his hand.] And we too--eh?</p>
+<p>Thanks for your lovely flowers--</p>
+<p>Oh, not at all--. I would have come straight here yesterday afternoon; but I heard that you were away--</p>
+<p>Have you just come to town? Eh?</p>
+<h3 class="sub">I arrived yesterday, about midday. Oh, I was quite in despair when I heard that you were not at home.</h3>
+<p>In despair! How so?</p>
+<p>Why, my dear Mrs. Rysing--I mean Mrs. Elvsted--</p>
+<h3 class="sub">I hope that you are not in any trouble?</h3>
+<p>Yes, I am. And I don&#x27;t know another living creature here that I can turn to.</p>
+<p>[Laying the bouquet on the table.] Come--let us sit here on the sofa--</p>
+<p>Oh, I am too restless to sit down.</p>
+<p>Oh no, you&#x27;re not. Come here.</p>
+<p>[She draws MRS. ELVSTED down upon the sofa and sits at her side.</p>
+<p>Well? What is it, Mrs. Elvsted--?</p>
+<p>Has anything particular happened to you at home?</p>
+<p>Yes--and no. Oh--I am so anxious you should not misunderstand me--</p>
+<p>Then your best plan is to tell us the whole story, Mrs. Elvsted.</p>
+<h3 class="sub">I suppose that&#x27;s what you have come for--eh?</h3>
+<p>Well well--I hear it.</p>
+<p>He has been here a week already. Just fancy--a whole week! In this terrible town, alone! With so many temptations on all sides.</p>
+<p>But, my dear Mrs. Elvsted--how does he concern you so much?</p>
+<p>[Looks at her with a startled air, and says rapidly.] He was the children&#x27;s tutor.</p>
+<p>Your children&#x27;s?</p>
+<p>My husband&#x27;s. I have none.</p>
+<p>Your step-children&#x27;s, then?</p>
+<p>[Somewhat hesitatingly.] Then was he--I don&#x27;t know how to express it--was he--regular enough in his habits to be fit for the post? Eh?</p>
+<p>For the last two years his conduct has been irreproachable.</p>
+<p>Has it indeed? Fancy that, Hedda!</p>
+<h3 class="sub">I hear it.</h3>
+<p>Perfectly irreproachable, I assure you! In every respect. But all the same--now that I know he is here--in this great town--and with a large sum of money in his hands--I can&#x27;t help being in mortal fear for him.</p>
+<p>Why did he not remain where he was? With you and your husband? Eh?</p>
+<p>After his book was published he was too restless and unsettled to remain with us.</p>
+<p>Yes, by-the-bye, Aunt Julia told me he had published a new book.</p>
+<p>Yes, a big book, dealing with the march of civilisation--in broad outline, as it were. It came out about a fortnight ago. And since it has sold so well, and been so much read--and made such a sensation--</p>
+<p>Has it indeed? It must be something he has had lying by since his better days.</p>
+<p>Long ago, you mean?</p>
+<p>No, he has written it all since he has been with us--within the last year.</p>
+<p>Isn&#x27;t that good news, Hedda? Think of that.</p>
+<p>Ah yes, if only it would last!</p>
+<p>Have you seen him here in town?</p>
+<p>No, not yet. I have had the greatest difficulty in finding out his address. But this morning I discovered it at last.</p>
+<p>[Looks searchingly at her.] Do you know, it seems to me a little odd of your husband--h&#x27;m--</p>
+<p>[Starting nervously.] Of my husband! What?</p>
+<p>That he should send you to town on such an errand--that he does not come himself and look after his friend.</p>
+<p>Oh no, no--my husband has no time. And besides, I--I had some shopping to do.</p>
+<p>[With a slight smile.] Ah, that is a different matter.</p>
+<p>We used to be at any rate.</p>
+<p>That is why I beg so earnestly that you--you too--will keep a sharp eye upon him. Oh, you will promise me that, Mr. Tesman--won&#x27;t you?</p>
+<p>With the greatest of pleasure, Mrs. Rysing--</p>
+<p>Elvsted.</p>
+<h3 class="sub">I assure you I shall do all I possibly can for Eilert. You may rely upon me.</h3>
+<p>Oh, how very, very kind of you! [Presses his hands.] Thanks, thanks, thanks! [Frightened.] You see, my husband is so very fond of him!</p>
+<p>[Rising.] You ought to write to him, Tesman. Perhaps he may not care to come to you of his own accord.</p>
+<p>Well, perhaps it would be the right thing to do, Hedda? Eh?</p>
+<p>And the sooner the better. Why not at once?</p>
+<p>[Imploringly.] Oh, if you only would!</p>
+<p>I&#x27;ll write this moment. Have you his address, Mrs.--Mrs. Elvsted.</p>
+<p>Yes. [Takes a slip of paper from her pocket, and hands it to him.] Here it is.</p>
+<p>Good, good. Then I&#x27;ll go in-- [Looks about him.] By-the-bye,--my slippers? Oh, here. [Takes the packet and is about to go.</p>
+<p>Be sure you write him a cordial, friendly letter. And a good long one too.</p>
+<p>Yes, I will.</p>
+<p>But please, please don&#x27;t say a word to show that I have suggested it.</p>
+<p>No, how could you think I would? Eh?</p>
+<p>[He goes out to the right, through the inner room.</p>
+<p>[Goes up to MRS. ELVSTED, smiles, and says in a low voice.] There! We have killed two birds with one stone.</p>
+<p>Could you not see that I wanted him to go?</p>
+<p>Yes, to write the letter--</p>
+<p>And that I might speak to you alone.</p>
+<p>[Confused.] About the same thing?</p>
+<p>[Apprehensively.] But there is nothing more, Mrs. Tesman! Absolutely nothing!</p>
+<p>Oh yes, but there is. There is a great deal more--I can see that. Sit here--and we&#x27;ll have a cosy, confidential chat.</p>
+<p>[She forces MRS. ELVSTED to sit in the easy-chair beside the stove, and seats herself on one of the footstools.</p>
+<p>[Anxiously, looking at her watch.] But, my dear Mrs. Tesman--I was really on the point of going.</p>
+<p>Oh, you can&#x27;t be in such a hurry.--Well? Now tell me something about your life at home.</p>
+<p>Oh, that is just what I care least to speak about.</p>
+<p>But to me, dear--? Why, weren&#x27;t we schoolfellows?</p>
+<p>Yes, but you were in the class above me. Oh, how dreadfully afraid of you I was then!</p>
+<p>Afraid of me?</p>
+<p>Yes, dreadfully. For when we met on the stairs you used always to pull my hair.</p>
+<p>Did I, really?</p>
+<p>Yes, and once you said you would burn it off my head.</p>
+<p>Oh that was all nonsense, of course.</p>
+<p>Yes, but I was so silly in those days.--And since then, too--we have drifted so far--far apart from each other. Our circles have been so entirely different.</p>
+<p>Well then, we must try to drift together again. Now listen. At school we said du(4) to each other; and we called each other by our Christian names--</p>
+<p>No, I am sure you must be mistaken.</p>
+<p>No, not at all! I can remember quite distinctly. So now we are going to renew our old friendship. [Draws the footstool closer to MRS. ELVSTED.] There now! [Kisses her cheek.] You must say du to me and call me Hedda.</p>
+<p>[Presses and pats her hands.] Oh, how good and kind you are! I am not used to such kindness.</p>
+<p>There, there, there! And I shall say du to you, as in the old days, and call you my dear Thora.</p>
+<p>My name is Thea.(5)</p>
+<p>Why, of course! I meant Thea. [Looks at her compassionately.] So you are not accustomed to goodness and kindness, Thea? Not in your own home?</p>
+<p>Oh, if I only had a home! But I haven&#x27;t any; I have never had a home.</p>
+<p>[Looks at her for a moment.] I almost suspected as much.</p>
+<p>[Gazing helplessly before her.] Yes--yes--yes.</p>
+<h3 class="sub">I don&#x27;t quite remember--was it not as housekeeper that you first went to Mr. Elvsted&#x27;s?</h3>
+<h3 class="sub">I really went as governess. But his wife--his late wife--was an invalid,--and rarely left her room. So I had to look after the housekeeping as well.</h3>
+<p>And then--at last--you became mistress of the house.</p>
+<p>[Sadly.] Yes, I did.</p>
+<p>Let me see--about how long ago was that?</p>
+<p>My marriage?</p>
+<p>Five years ago.</p>
+<p>To be sure; it must be that.</p>
+<p>Oh those five years--! Or at all events the last two or three of them! Oh, if you(6) could only imagine--</p>
+<p>[Giving her a little slap on the hand.] De? Fie, Thea!</p>
+<p>Yes, yes, I will try--. Well, if--you could only imagine and understand--</p>
+<p>Had you known him before, in town here?</p>
+<p>Scarcely at all. I mean--I knew him by name of course.</p>
+<p>But you saw a good deal of him in the country?</p>
+<p>Yes, he came to us every day. You see, he gave the children lessons; for in the long run I couldn&#x27;t manage it all myself.</p>
+<p>No, that&#x27;s clear.--And your husband--? I suppose he is often away from home?</p>
+<p>Yes. Being sheriff, you know, he has to travel about a good deal in his district.</p>
+<p>[Leaning against the arm of the chair.] Thea--my poor, sweet Thea--now you must tell me everything--exactly as it stands.</p>
+<p>Well, then you must question me.</p>
+<p>What sort of a man is your husband, Thea? I mean--you know--in everyday life. Is he kind to you?</p>
+<p>[Evasively.] I am sure he means well in everything.</p>
+<h3 class="sub">I should think he must be altogether too old for you. There is at least twenty years&#x27; difference between you, is there not?</h3>
+<p>[Irritably.] Yes, that is true, too. Everything about him is repellent to me! We have not a thought in common. We have no single point of sympathy--he and I.</p>
+<p>But is he not fond of you all the same? In his own way?</p>
+<p>Oh I really don&#x27;t know. I think he regards me simply as a useful property. And then it doesn&#x27;t cost much to keep me. I am not expensive.</p>
+<p>That is stupid of you.</p>
+<p>[Shakes her head.] It cannot be otherwise--not with him. I don&#x27;t think he really cares for any one but himself--and perhaps a little for the children.</p>
+<p>Well, my dear--I should say, when he sends you after him all the way to town-- [Smiling almost imperceptibly.] And besides, you said so yourself, to Tesman.</p>
+<p>[With a little nervous twitch.] Did I? Yes, I suppose I did. [Vehemently, but not loudly.] No--I may just as well make a clean breast of it at once! For it must all come out in any case.</p>
+<p>Why, my dear Thea--?</p>
+<p>Well, to make a long story short: My husband did not know that I was coming.</p>
+<p>What! Your husband didn&#x27;t know it!</p>
+<p>No, of course not. For that matter, he was away from home himself-- he was travelling. Oh, I could bear it no longer, Hedda! I couldn&#x27;t indeed--so utterly alone as I should have been in future.</p>
+<p>Well? And then?</p>
+<p>So I put together some of my things--what I needed most--as quietly as possible. And then I left the house.</p>
+<p>Without a word?</p>
+<p>Yes--and took the train to town.</p>
+<p>Why, my dear, good Thea--to think of you daring to do it!</p>
+<p>[Rises and moves about the room.] What else could I possibly do?</p>
+<p>But what do you think your husband will say when you go home again?</p>
+<p>[At the table, looks at her.] Back to him?</p>
+<h3 class="sub">I shall never go back to him again.</h3>
+<p>[Rising and going towards her.] Then you have left your home--for good and all?</p>
+<p>Yes. There was nothing else to be done.</p>
+<p>But then--to take flight so openly.</p>
+<p>Oh, it&#x27;s impossible to keep things of that sort secret.</p>
+<p>But what do you think people will say of you, Thea?</p>
+<p>They may say what they like, for aught I care. [Seats herself wearily and sadly on the sofa.] I have done nothing but what I had to do.</p>
+<p>[After a short silence.] And what are your plans now? What do you think of doing.</p>
+<h3 class="sub">I don&#x27;t know yet. I only know this, that I must live here, where Eilert Lovborg is--if I am to live at all.</h3>
+<p>Oh it grew up gradually. I gained a sort of influence over him.</p>
+<p>He gave up his old habits. Not because I asked him to, for I never dared do that. But of course he saw how repulsive they were to me; and so he dropped them.</p>
+<p>[Concealing an involuntary smile of scorn.] Then you have reclaimed him--as the saying goes--my little Thea.</p>
+<p>So he says himself, at any rate. And he, on his side, has made a real human being of me--taught me to think, and to understand so many things.</p>
+<p>Did he give you lessons too, then?</p>
+<p>No, not exactly lessons. But he talked to me--talked about such an infinity of things. And then came the lovely, happy time when I began to share in his work--when he allowed me to help him!</p>
+<p>Oh he did, did he?</p>
+<p>Yes! He never wrote anything without my assistance.</p>
+<p>You were two good comrades, in fact?</p>
+<p>[Eagerly.] Comrades! Yes, fancy, Hedda--that is the very word he used!--Oh, I ought to feel perfectly happy; and yet I cannot; for I don&#x27;t know how long it will last.</p>
+<p>Are you no surer of him than that?</p>
+<p>[Looks at her anxiously.] Who can that be?</p>
+<h3 class="sub">I don&#x27;t know. Some one he knew in his--in his past. Some one he has never been able wholly to forget.</h3>
+<p>What has he told you--about this?</p>
+<p>He has only once--quite vaguely--alluded to it.</p>
+<p>Well! And what did he say?</p>
+<p>He said that when they parted, she threatened to shoot him with a pistol.</p>
+<p>[With cold composure.] Oh nonsense! No one does that sort of thing here.</p>
+<p>No. And that is why I think it must have been that red-haired singing-woman whom he once--</p>
+<p>Yes, very likely.</p>
+<p>For I remember they used to say of her that she carried loaded firearms.</p>
+<p>Oh--then of course it must have been she.</p>
+<p>[Wringing her hands.] And now just fancy, Hedda--I hear that this singing-woman--that she is in town again! Oh, I don&#x27;t know what to do--</p>
+<p>[Glancing towards the inner room.] Hush! Here comes Tesman. [Rises and whispers.] Thea--all this must remain between you and me.</p>
+<p>[Springing up.] Oh yes--yes! For heaven&#x27;s sake--!</p>
+<p>GEORGE TESMAN, with a letter in his hand, comes from the right through the inner room.</p>
+<p>There now--the epistle is finished.</p>
+<p>That&#x27;s right. And now Mrs. Elvsted is just going. Wait a moment--I&#x27;ll go with you to the garden gate.</p>
+<p>Do you think Berta could post the letter, Hedda dear?</p>
+<p>[Takes it.] I will tell her to.</p>
+<p>BERTA enters from the hall.</p>
+<p>Yes, ask Judge Brack to come in. And look here--put this letter in the post.</p>
+<p>BERTA. [Taking the letter.] Yes, ma&#x27;am.</p>
+<p>[She opens the door for JUDGE BRACK and goes out herself.  Brack is a man of forty-five; thick set, but well-built and elastic in his movements.  His face is roundish with an aristocratic profile.  His hair is short, still almost black, and carefully dressed.  His eyebrows thick.  His moustaches are also thick, with short-cut ends.  He wears a well-cut walking-suit, a little too youthful for his age.  He uses an eye-glass, which he now and then lets drop.</p>
+<h3 class="sub">Judge Brack.</h3>
+<p>[With his hat in his hand, bowing.] May one venture to call so early in the day?</p>
+<p>HEDDA.</p>
+<p>Of course one may.</p>
+<p>TESMAN.</p>
+<p>[Presses his hand.] You are welcome at any time. [Introducing him.] Judge Brack--Miss Rysing--</p>
+<p>HEDDA.</p>
+<p>Oh--!</p>
+<p>BRACK.</p>
+<p>[Bowing.] Ah--delighted--</p>
+<p>HEDDA.</p>
+<p>[Looks at him and laughs.] It&#x27;s nice to have a look at you by daylight, Judge!</p>
+<p>BRACK.</p>
+<p>So you find me--altered?</p>
+<p>HEDDA.</p>
+<p>A little younger, I think.</p>
+<p>BRACK.</p>
+<p>Thank you so much.</p>
+<p>TESMAN.</p>
+<p>But what do you think of Hedda--eh? Doesn&#x27;t she look flourishing? She has actually--</p>
+<p>HEDDA.</p>
+<p>Oh, do leave me alone. You haven&#x27;t thanked Judge Brack for all the trouble he has taken--</p>
+<p>BRACK.</p>
+<p>Oh, nonsense--it was a pleasure to me--</p>
+<p>HEDDA.</p>
+<p>Yes, you are a friend indeed. But here stands Thea all impatience to be off--so au revoir Judge. I shall be back again presently.</p>
+<p>[Mutual salutations.  MRS. ELVSTED and HEDDA go out by the hall door.</p>
+<p>BRACK.</p>
+<p>Well,--is your wife tolerably satisfied--</p>
+<p>TESMAN.</p>
+<p>Yes, we can&#x27;t thank you sufficiently. Of course she talks of a little re-arrangement here and there; and one or two things are still wanting. We shall have to buy some additional trifles.</p>
+<p>BRACK.</p>
+<p>Indeed!</p>
+<p>TESMAN.</p>
+<p>But we won&#x27;t trouble you about these things. Hedda says she herself will look after what is wanting.--Shan&#x27;t we sit down? Eh?</p>
+<p>BRACK.</p>
+<p>Thanks, for a moment. [Seats himself beside the table.] There is something I wanted to speak to you about, my dear Tesman.</p>
+<p>TESMAN.</p>
+<p>Indeed? Ah, I understand! [Seating himself.] I suppose it&#x27;s the serious part of the frolic that is coming now. Eh?</p>
+<p>BRACK.</p>
+<p>Oh, the money question is not so very pressing; though, for that matter, I wish we had gone a little more economically to work.</p>
+<p>TESMAN.</p>
+<p>But that would never have done, you know! Think of Hedda, my dear fellow! You, who know her so well--! I couldn&#x27;t possibly ask her to put up with a shabby style of living!</p>
+<p>BRACK.</p>
+<p>No, no--that is just the difficulty.</p>
+<p>TESMAN.</p>
+<p>And then--fortunately--it can&#x27;t be long before I receive my appointment.</p>
+<p>BRACK.</p>
+<p>Well, you see--such things are often apt to hang fire for a long time.</p>
+<p>TESMAN.</p>
+<p>Have you heard anything definite? Eh?</p>
+<p>BRACK.</p>
+<p>Nothing exactly definite--. [Interrupting himself.] But by-the-bye--I have one piece of news for you.</p>
+<p>TESMAN.</p>
+<p>Well?</p>
+<p>BRACK.</p>
+<p>Your old friend, Eilert Lovborg, has returned to town.</p>
+<p>TESMAN.</p>
+<h3 class="sub">I know that already.</h3>
+<p>BRACK.</p>
+<p>Indeed! How did you learn it?</p>
+<p>TESMAN.</p>
+<p>From that lady who went out with Hedda.</p>
+<p>BRACK.</p>
+<p>Really? What was her name? I didn&#x27;t quite catch it.</p>
+<p>TESMAN.</p>
+<p>Mrs. Elvsted.</p>
+<p>BRACK.</p>
+<p>Aha--Sheriff Elvsted&#x27;s wife? Of course--he has been living up in their regions.</p>
+<p>TESMAN.</p>
+<p>And fancy--I&#x27;m delighted to hear that he is quite a reformed character.</p>
+<p>BRACK.</p>
+<p>So they say.</p>
+<p>TESMAN.</p>
+<p>And then he has published a new book--eh?</p>
+<p>BRACK.</p>
+<p>Yes, indeed he has.</p>
+<p>TESMAN.</p>
+<p>And I hear it has made some sensation!</p>
+<p>BRACK.</p>
+<p>Quite an unusual sensation.</p>
+<p>TESMAN.</p>
+<p>Fancy--isn&#x27;t that good news! A man of such extraordinary talents--. I felt so grieved to think that he had gone irretrievably to ruin.</p>
+<p>BRACK.</p>
+<p>That was what everybody thought.</p>
+<p>TESMAN.</p>
+<p>But I cannot imagine what he will take to now! How in the world will he be able to make his living? Eh?</p>
+<p>[During the last words, HEDDA has entered by the hall door.</p>
+<p>HEDDA.</p>
+<p>[To BRACK, laughing with a touch of scorn.] Tesman is for ever worrying about how people are to make their living.</p>
+<p>TESMAN.</p>
+<p>Well you see, dear--we were talking about poor Eilert Lovborg.</p>
+<p>HEDDA.</p>
+<p>[Glancing at him rapidly.] Oh, indeed? [Sets herself in the arm-chair beside the stove and asks indifferently:] What is the matter with him?</p>
+<p>TESMAN.</p>
+<p>Well--no doubt he has run through all his property long ago; and he can scarcely write a new book every year--eh? So I really can&#x27;t see what is to become of him.</p>
+<p>BRACK.</p>
+<p>Perhaps I can give you some information on that point.</p>
+<p>TESMAN.</p>
+<p>Indeed!</p>
+<p>BRACK.</p>
+<p>You must remember that his relations have a good deal of influence.</p>
+<p>TESMAN.</p>
+<p>Oh, his relations, unfortunately, have entirely washed their hands of him.</p>
+<p>BRACK.</p>
+<p>At one time they called him the hope of the family.</p>
+<p>TESMAN.</p>
+<p>At one time, yes! But he has put an end to all that.</p>
+<p>HEDDA.</p>
+<p>Who knows? [With a slight smile.] I hear they have reclaimed him up at Sheriff Elvsted&#x27;s--</p>
+<p>BRACK.</p>
+<p>And then this book that he has published--</p>
+<p>TESMAN.</p>
+<p>Well well, I hope to goodness they may find something for him to do. I have just written to him. I asked him to come and see us this evening, Hedda dear.</p>
+<p>BRACK.</p>
+<p>But my dear fellow, you are booked for my bachelor&#x27;s party this evening. You promised on the pier last night.</p>
+<p>HEDDA.</p>
+<p>Had you forgotten, Tesman?</p>
+<p>TESMAN.</p>
+<p>Yes, I had utterly forgotten.</p>
+<p>BRACK.</p>
+<p>But it doesn&#x27;t matter, for you may be sure he won&#x27;t come.</p>
+<p>TESMAN.</p>
+<p>What makes you think that? Eh?</p>
+<p>BRACK.</p>
+<p>[With a little hesitation, rising and resting his hands on the back of his chair.] My dear Tesman--and you too, Mrs. Tesman--I think I ought not to keep you in the dark about something that--that--</p>
+<p>TESMAN.</p>
+<p>That concerns Eilert--?</p>
+<p>BRACK.</p>
+<p>Both you and him.</p>
+<p>TESMAN.</p>
+<p>Well, my dear Judge, out with it.</p>
+<p>BRACK.</p>
+<p>You must be prepared to find your appointment deferred longer than you desired or expected.</p>
+<p>TESMAN.</p>
+<p>[Jumping up uneasily.] Is there some hitch about it? Eh?</p>
+<p>BRACK.</p>
+<p>The nomination may perhaps be made conditional on the result of a competition--</p>
+<p>TESMAN.</p>
+<p>Competition! Think of that, Hedda!</p>
+<p>HEDDA.</p>
+<p>[Leans further back in the chair.] Aha--aha!</p>
+<p>TESMAN.</p>
+<p>But who can my competitor be? Surely not--?</p>
+<p>BRACK.</p>
+<p>Yes, precisely--Eilert Lovborg.</p>
+<p>TESMAN.</p>
+<p>[Clasping his hands.] No, no--it&#x27;s quite impossible! Eh?</p>
+<p>BRACK.</p>
+<p>H&#x27;m--that is what it may come to, all the same.</p>
+<p>TESMAN.</p>
+<p>Well but, Judge Brack--it would show the most incredible lack of consideration for me. [Gesticulates with his arms.] For--just think--I&#x27;m a married man! We have married on the strength of these prospects, Hedda and I; and run deep into debt; and borrowed money from Aunt Julia too. Good heavens, they had as good as promised me the appointment. Eh?</p>
+<p>BRACK.</p>
+<p>Well, well, well--no doubt you will get it in the end; only after a contest.</p>
+<p>HEDDA.</p>
+<p>[Immovable in her arm-chair.] Fancy, Tesman, there will be a sort of sporting interest in that.</p>
+<p>TESMAN.</p>
+<p>Why, my dearest Hedda, how can you be so indifferent about it?</p>
+<p>HEDDA.</p>
+<p>[As before.] I am not at all indifferent. I am most eager to see who wins.</p>
+<p>BRACK.</p>
+<p>In any case, Mrs. Tesman, it is best that you should know how matters stand. I mean--before you set about the little purchases I hear you are threatening.</p>
+<p>HEDDA.</p>
+<p>This can make no difference.</p>
+<p>BRACK.</p>
+<p>Indeed! Then I have no more to say. Good-bye! [To TESMAN.] I shall look in on my way back from my afternoon walk, and take you home with me.</p>
+<p>TESMAN.</p>
+<p>Oh yes, yes--your news has quite upset me.</p>
+<p>HEDDA.</p>
+<p>[Reclining, holds out her hand.] Good-bye, Judge; and be sure you call in the afternoon.</p>
+<p>BRACK.</p>
+<p>Many thanks. Good-bye, good-bye!</p>
+<p>TESMAN.</p>
+<p>[Accompanying him to the door.] Good-bye my dear Judge! You must really excuse me-- [JUDGE BRACK goes out by the hall door.</p>
+<p>TESMAN.</p>
+<p>[Crosses the room.] Oh Hedda--one should never rush into adventures. Eh?</p>
+<p>HEDDA.</p>
+<p>[Looks at him, smiling.] Do you do that?</p>
+<p>TESMAN.</p>
+<p>Yes, dear--there is no denying--it was adventurous to go and marry and set up house upon mere expectations.</p>
+<p>HEDDA.</p>
+<p>Perhaps you are right there.</p>
+<p>TESMAN.</p>
+<p>Well--at all events, we have our delightful home, Hedda! Fancy, the home we both dreamed of--the home we were in love with, I may almost say. Eh?</p>
+<p>HEDDA.</p>
+<p>[Rising slowly and wearily.] It was part of our compact that we were to go into society--to keep open house.</p>
+<p>TESMAN.</p>
+<p>Yes, if you only knew how I had been looking forward to it! Fancy--to see you as hostess--in a select circle! Eh? Well, well, well--for the present we shall have to get on without society, Hedda--only to invite Aunt Julia now and then.--Oh, I intended you to lead such an utterly different life, dear--!</p>
+<p>HEDDA.</p>
+<p>Of course I cannot have my man in livery just yet.</p>
+<p>TESMAN.</p>
+<p>Oh, no, unfortunately. It would be out of the question for us to keep a footman, you know.</p>
+<p>HEDDA.</p>
+<p>And the saddle-horse I was to have had--</p>
+<p>TESMAN.</p>
+<p>[Aghast.] The saddle-horse!</p>
+<p>HEDDA.</p>
+<p>--I suppose I must not think of that now.</p>
+<p>TESMAN.</p>
+<p>Good heavens, no!--that&#x27;s as clear as daylight!</p>
+<p>HEDDA.</p>
+<p>[Goes up the room.] Well, I shall have one thing at least to kill time with in the meanwhile.</p>
+<p>TESMAN.</p>
+<p>[Beaming.] Oh thank heaven for that! What is it, Hedda. Eh?</p>
+<p>HEDDA.</p>
+<p>[In the middle doorway, looks at him with covert scorn.] My pistols, George.</p>
+<p>TESMAN.</p>
+<p>[In alarm.] Your pistols!</p>
+<p>HEDDA.</p>
+<p>[With cold eyes.] General Gabler&#x27;s pistols.</p>
+<p>[She goes out through the inner room, to the left.</p>
+<p>TESMAN.</p>
+<p>[Rushes up to the middle doorway and calls after her:] No, for heaven&#x27;s sake, Hedda darling--don&#x27;t touch those dangerous things! For my sake Hedda! Eh?</p>
+<h2 class="chapter" id="c2">Act Second.</h2>
+<p>The room at the TESMANS&#x27; as in the first Act, except that the piano has been removed, and an elegant little writing-table with the book-shelves put in its place.  A smaller table stands near the sofa on the left.  Most of the bouquets have been taken away.  MRS. ELVSTED&#x27;S bouquet is upon the large table in front.--It is afternoon.</p>
+<p>HEDDA, dressed to receive callers, is alone in the room. She stands by the open glass door, loading a revolver.  The fellow to it lies in an open pistol-case on the writing- table.</p>
+<p>HEDDA.</p>
+<p>[Looks down the garden, and calls:] So you are here again, Judge!</p>
+<p>BRACK.</p>
+<p>[Is heard calling from a distance.] As you see, Mrs. Tesman!</p>
+<p>HEDDA.</p>
+<p>[Raises the pistol and points.] Now I&#x27;ll shoot you, Judge Brack!</p>
+<p>BRACK.</p>
+<p>[Calling unseen.] No, no, no! Don&#x27;t stand aiming at me!</p>
+<p>HEDDA.</p>
+<p>This is what comes of sneaking in by the back way.(7) [She fires.</p>
+<p>BRACK.</p>
+<p>[Nearer.] Are you out of your senses--!</p>
+<p>HEDDA.</p>
+<p>Dear me--did I happen to hit you?</p>
+<p>BRACK.</p>
+<p>[Still outside.] I wish you would let these pranks alone!</p>
+<p>HEDDA.</p>
+<p>Come in then, Judge.</p>
+<p>JUDGE BRACK, dressed as though for a men&#x27;s party, enters by the glass door.  He carries a light overcoat over his arm.</p>
+<p>BRACK.</p>
+<p>What the deuce--haven&#x27;t you tired of that sport, yet? What are you shooting at?</p>
+<p>HEDDA.</p>
+<p>Oh, I am only firing in the air.</p>
+<p>BRACK.</p>
+<p>[Gently takes the pistol out of her hand.] Allow me, madam! [Looks at it.] Ah--I know this pistol well! [Looks around.] Where is the case? Ah, here it is. [Lays the pistol in it, and shuts it.] Now we won&#x27;t play at that game any more to-day.</p>
+<p>HEDDA.</p>
+<p>Then what in heaven&#x27;s name would you have me do with myself?</p>
+<p>BRACK.</p>
+<p>Have you had no visitors?</p>
+<p>HEDDA.</p>
+<p>[Closing the glass door.] Not one. I suppose all our set are still out of town.</p>
+<p>BRACK.</p>
+<p>And is Tesman not at home either?</p>
+<p>HEDDA.</p>
+<p>[At the writing-table, putting the pistol-case in a drawer which she shuts.] No. He rushed off to his aunt&#x27;s directly after lunch; he didn&#x27;t expect you so early.</p>
+<p>BRACK.</p>
+<p>H&#x27;m--how stupid of me not to have thought of that!</p>
+<p>HEDDA.</p>
+<p>[Turning her head to look at him.] Why stupid?</p>
+<p>BRACK.</p>
+<p>Because if I had thought of it I should have come a little--earlier.</p>
+<p>HEDDA.</p>
+<p>[Crossing the room.] Then you would have found no one to receive you; for I have been in my room changing my dress ever since lunch.</p>
+<p>BRACK.</p>
+<p>And is there no sort of little chink that we could hold a parley through?</p>
+<p>HEDDA.</p>
+<p>You have forgotten to arrange one.</p>
+<p>BRACK.</p>
+<p>That was another piece of stupidity.</p>
+<p>HEDDA.</p>
+<p>Well, we must just settle down here--and wait. Tesman is not likely to be back for some time yet.</p>
+<p>BRACK.</p>
+<p>Never mind; I shall not be impatient.</p>
+<p>HEDDA seats herself in the corner of the sofa.  BRACK lays his overcoat over the back of the nearest chair, and sits down, but keeps his hat in his hand.  A short silence.  They look at each other.</p>
+<p>HEDDA.</p>
+<p>Well?</p>
+<p>BRACK.</p>
+<p>[In the same tone.] Well?</p>
+<p>HEDDA.</p>
+<h3 class="sub">I spoke first.</h3>
+<p>BRACK.</p>
+<p>[Bending a little forward.] Come, let us have a cosy little chat, Mrs. Hedda.(8)</p>
+<p>HEDDA.</p>
+<p>[Leaning further back in the sofa.] Does it not seem like a whole eternity since our last talk? Of course I don&#x27;t count those few words yesterday evening and this morning.</p>
+<p>BRACK.</p>
+<p>You mean since our last confidential talk? Our last tete-a-tete?</p>
+<p>HEDDA.</p>
+<p>Well yes--since you put it so.</p>
+<p>BRACK.</p>
+<p>Not a day passed but I have wished that you were home again.</p>
+<p>HEDDA.</p>
+<p>And I have done nothing but wish the same thing.</p>
+<p>BRACK.</p>
+<p>You? Really, Mrs. Hedda? And I thought you had been enjoying your tour so much!</p>
+<p>HEDDA.</p>
+<p>Oh yes, you may be sure of that!</p>
+<p>BRACK.</p>
+<p>But Tesman&#x27;s letters spoke of nothing but happiness.</p>
+<p>HEDDA.</p>
+<p>Oh, Tesman! You see, he thinks nothing is so delightful as grubbing in libraries and making copies of old parchments, or whatever you call them.</p>
+<p>BRACK.</p>
+<p>[With a smile of malice.] Well, that is his vocation in life--or part of it at any rate.</p>
+<p>HEDDA.</p>
+<p>Yes, of course; and no doubt when it&#x27;s your vocation--. But I! Oh, my dear Mr. Brack, how mortally bored I have been.</p>
+<p>BRACK.</p>
+<p>[Sympathetically.] Do you really say so? In downright earnest?</p>
+<p>HEDDA.</p>
+<p>Yes, you can surely understand it--! To go for six whole months without meeting a soul that knew anything of our circle, or could talk about things we were interested in.</p>
+<p>BRACK.</p>
+<p>Yes, yes--I too should feel that a deprivation.</p>
+<p>HEDDA.</p>
+<p>And then, what I found most intolerable of all--</p>
+<p>BRACK.</p>
+<p>Well?</p>
+<p>HEDDA.</p>
+<p>--was being everlastingly in the company of--one and the same person--</p>
+<p>BRACK.</p>
+<p>[With a nod of assent.] Morning, noon, and night, yes--at all possible times and seasons.</p>
+<p>HEDDA.</p>
+<h3 class="sub">I said &quot;everlastingly.&quot;</h3>
+<p>BRACK.</p>
+<p>Just so. But I should have thought, with our excellent Tesman, one could--</p>
+<p>HEDDA.</p>
+<p>Tesman is--a specialist, my dear Judge.</p>
+<p>BRACK.</p>
+<p>Undeniable.</p>
+<p>HEDDA.</p>
+<p>And specialists are not at all amusing to travel with. Not in the long run at any rate.</p>
+<p>BRACK.</p>
+<p>Not even--the specialist one happens to love?</p>
+<p>HEDDA.</p>
+<p>Faugh--don&#x27;t use that sickening word!</p>
+<p>BRACK.</p>
+<p>[Taken aback.] What do you say, Mrs. Hedda?</p>
+<p>HEDDA.</p>
+<p>[Half laughing, half irritated.] You should just try it! To hear of nothing but the history of civilisation, morning, noon, and night--</p>
+<p>BRACK.</p>
+<p>Everlastingly.</p>
+<p>HEDDA.</p>
+<p>Yes yes yes! And then all this about the domestic industry of the middle ages--! That&#x27;s the most disgusting part of it!</p>
+<p>BRACK.</p>
+<p>[Looks searchingly at her.] But tell me--in that case, how am I to understand your--? H&#x27;m--</p>
+<p>HEDDA.</p>
+<p>My accepting George Tesman, you mean?</p>
+<p>BRACK.</p>
+<p>Well, let us put it so.</p>
+<p>HEDDA.</p>
+<p>Good heavens, do you see anything so wonderful in that?</p>
+<p>BRACK.</p>
+<p>Yes and no--Mrs. Hedda.</p>
+<p>HEDDA.</p>
+<h3 class="sub">I had positively danced myself tired, my dear Judge. My day was done-- [With a slight shudder.] Oh no--I won&#x27;t say that; nor think it either!</h3>
+<p>BRACK.</p>
+<p>You have assuredly no reason to.</p>
+<p>HEDDA.</p>
+<p>Oh, reasons-- [Watching him closely.] And George Tesman--after all, you must admit that he is correctness itself.</p>
+<p>BRACK.</p>
+<p>His correctness and respectability are beyond all question.</p>
+<p>HEDDA.</p>
+<p>And I don&#x27;t see anything absolutely ridiculous about him.--Do you?</p>
+<p>BRACK.</p>
+<p>Ridiculous? N--no--I shouldn&#x27;t exactly say so--</p>
+<p>HEDDA.</p>
+<p>Well--and his powers of research, at all events, are untiring.--I see no reason why he should not one day come to the front, after all.</p>
+<p>BRACK.</p>
+<p>[Looks at her hesitatingly.] I thought that you, like every one else, expected him to attain the highest distinction.</p>
+<p>HEDDA.</p>
+<p>[With an expression of fatigue.] Yes, so I did.--And then, since he was bent, at all hazards, on being allowed to provide for me--I really don&#x27;t know why I should not have accepted his offer?</p>
+<p>BRACK.</p>
+<p>No--if you look at it in that light--</p>
+<p>HEDDA.</p>
+<p>It was more than my other adorers were prepared to do for me, my dear Judge.</p>
+<p>BRACK.</p>
+<p>[Laughing.] Well, I can&#x27;t answer for all the rest; but as for myself, you know quite well that I have always entertained a--a certain respect for the marriage tie--for marriage as an institution, Mrs. Hedda.</p>
+<p>HEDDA.</p>
+<p>[Jestingly.] Oh, I assure you I have never cherished any hopes with respect to you.</p>
+<p>BRACK.</p>
+<p>All I require is a pleasant and intimate interior, where I can make myself useful in every way, and am free to come and go as--as a trusted friend--</p>
+<p>HEDDA.</p>
+<p>Of the master of the house, do you mean?</p>
+<p>BRACK.</p>
+<p>[Bowing.] Frankly--of the mistress first of all; but of course of the master too, in the second place. Such a triangular friendship--if I may call it so--is really a great convenience for all the parties, let me tell you.</p>
+<p>HEDDA.</p>
+<p>Yes, I have many a time longed for some one to make a third on our travels. Oh--those railway-carriage tete-a-tetes--!</p>
+<p>BRACK.</p>
+<p>Fortunately your wedding journey is over now.</p>
+<p>HEDDA.</p>
+<p>[Shaking her head.] Not by a long--long way. I have only arrived at a station on the line.</p>
+<p>BRACK.</p>
+<p>Well, then the passengers jump out and move about a little, Mrs. Hedda.</p>
+<p>HEDDA.</p>
+<h3 class="sub">I never jump out.</h3>
+<p>BRACK.</p>
+<p>Really?</p>
+<p>HEDDA.</p>
+<p>No--because there is always some one standing by to--</p>
+<p>BRACK.</p>
+<p>[Laughing.] To look at your ankles, do you mean?</p>
+<p>HEDDA.</p>
+<p>Precisely.</p>
+<p>BRACK.</p>
+<p>Well but, dear me--</p>
+<p>HEDDA.</p>
+<p>[With a gesture of repulsion.] I won&#x27;t have it. I would rather keep my seat where I happen to be--and continue the tete-a-tete.</p>
+<p>BRACK.</p>
+<p>But suppose a third person were to jump in and join the couple.</p>
+<p>HEDDA.</p>
+<p>Ah--that is quite another matter!</p>
+<p>BRACK.</p>
+<p>A trusted, sympathetic friend--</p>
+<p>HEDDA.</p>
+<p>--with a fund of conversation on all sorts of lively topics--</p>
+<p>BRACK.</p>
+<p>--and not the least bit of a specialist!</p>
+<p>HEDDA.</p>
+<p>[With an audible sigh.] Yes, that would be a relief indeed.</p>
+<p>BRACK.</p>
+<p>[Hears the front door open, and glances in that direction.] The triangle is completed.</p>
+<p>HEDDA.</p>
+<p>[Half aloud.] And on goes the train.</p>
+<p>GEORGE TESMAN, in a grey walking-suit, with a soft felt hat, enters from the hall.  He has a number of unbound books under his arm and in his pockets.</p>
+<p>TESMAN.</p>
+<p>[Goes up to the table beside the corner settee.] Ouf--what a load for a warm day--all these books. [Lays them on the table.] I&#x27;m positively perspiring, Hedda. Hallo--are you there already, my dear Judge? Eh? Berta didn&#x27;t tell me.</p>
+<p>BRACK.</p>
+<p>[Rising.] I came in through the garden.</p>
+<p>HEDDA.</p>
+<p>What books have you got there?</p>
+<p>TESMAN.</p>
+<p>[Stands looking them through.] Some new books on my special subjects --quite indispensable to me.</p>
+<p>HEDDA.</p>
+<p>Your special subjects?</p>
+<p>BRACK.</p>
+<p>Yes, books on his special subjects, Mrs. Tesman.</p>
+<p>[BRACK and HEDDA exchange a confidential smile.</p>
+<p>HEDDA.</p>
+<p>Do you need still more books on your special subjects?</p>
+<p>TESMAN.</p>
+<p>Yes, my dear Hedda, one can never have too many of them. Of course one must keep up with all that is written and published.</p>
+<p>HEDDA.</p>
+<p>Yes, I suppose one must.</p>
+<p>TESMAN.</p>
+<p>[Searching among his books.] And look here--I have got hold of Eilert Lovborg&#x27;s new book too. [Offering it to her.] Perhaps you would like to glance through it, Hedda? Eh?</p>
+<p>HEDDA.</p>
+<p>No, thank you. Or rather--afterwards perhaps.</p>
+<p>TESMAN.</p>
+<h3 class="sub">I looked into it a little on the way home.</h3>
+<p>BRACK.</p>
+<p>Well, what do you think of it--as a specialist?</p>
+<p>TESMAN.</p>
+<p>I think it shows quite remarkable soundness of judgment. He never wrote like that before. [Putting the books together.] Now I shall take all these into my study. I&#x27;m longing to cut the leaves--! And then I must change my clothes. [To BRACK.] I suppose we needn&#x27;t start just yet? Eh?</p>
+<p>BRACK.</p>
+<p>Oh, dear no--there is not the slightest hurry.</p>
+<p>TESMAN.</p>
+<p>Well then, I will take my time. [Is going with his books, but stops in the doorway and turns.] By-the-bye, Hedda--Aunt Julia is not coming this evening.</p>
+<p>HEDDA.</p>
+<p>Not coming? Is it that affair of the bonnet that keeps her away?</p>
+<p>TESMAN.</p>
+<p>Oh, not at all. How could you think such a thing of Aunt Julia? Just fancy--! The fact is, Aunt Rina is very ill.</p>
+<p>HEDDA.</p>
+<p>She always is.</p>
+<p>TESMAN.</p>
+<p>Yes, but to-day she is much worse than usual, poor dear.</p>
+<p>HEDDA.</p>
+<p>Oh, then it&#x27;s only natural that her sister should remain with her. I must bear my disappointment.</p>
+<p>TESMAN.</p>
+<p>And you can&#x27;t imagine, dear, how delighted Aunt Julia seemed to be-- because you had come home looking so flourishing!</p>
+<p>HEDDA.</p>
+<p>[Half aloud, rising.] Oh, those everlasting Aunts!</p>
+<p>TESMAN.</p>
+<p>What?</p>
+<p>HEDDA.</p>
+<p>[Going to the glass door.] Nothing.</p>
+<p>TESMAN.</p>
+<p>Oh, all right. [He goes through the inner room, out to the right.</p>
+<p>BRACK.</p>
+<p>What bonnet were you talking about?</p>
+<p>HEDDA.</p>
+<p>Oh, it was a little episode with Miss Tesman this morning. She had laid down her bonnet on the chair there--[Looks at him and smiles.]--and I pretended to think it was the servant&#x27;s.</p>
+<p>BRACK.</p>
+<p>[Shaking his head.] Now my dear Mrs. Hedda, how could you do such a thing? To the excellent old lady, too!</p>
+<p>HEDDA.</p>
+<p>[Nervously crossing the room.] Well, you see--these impulses come over me all of a sudden; and I cannot resist them. [Throws herself down in the easy-chair by the stove.] Oh, I don&#x27;t know how to explain it.</p>
+<p>BRACK.</p>
+<p>[Behind the easy-chair.] You are not really happy--that is at the bottom of it.</p>
+<p>HEDDA.</p>
+<p>[Looking straight before her.] I know of no reason why I should be-- happy. Perhaps you can give me one?</p>
+<p>BRACK.</p>
+<p>Well-amongst other things, because you have got exactly the home you had set your heart on.</p>
+<p>HEDDA.</p>
+<p>[Looks up at him and laughs.] Do you too believe in that legend?</p>
+<p>BRACK.</p>
+<p>Is there nothing in it, then?</p>
+<p>HEDDA.</p>
+<p>Oh yes, there is something in it.</p>
+<p>BRACK.</p>
+<p>Well?</p>
+<p>HEDDA.</p>
+<p>There is this in it, that I made use of Tesman to see me home from evening parties last summer--</p>
+<p>BRACK.</p>
+<p>I, unfortunately, had to go quite a different way.</p>
+<p>HEDDA.</p>
+<p>That&#x27;s true. I know you were going a different way last summer.</p>
+<p>BRACK.</p>
+<p>[Laughing.] Oh fie, Mrs. Hedda! Well, then--you and Tesman--?</p>
+<p>HEDDA.</p>
+<p>Well, we happened to pass here one evening; Tesman, poor fellow, was writhing in the agony of having to find conversation; so I took pity on the learned man--</p>
+<p>BRACK.</p>
+<p>[Smiles doubtfully.] You took pity? H&#x27;m--</p>
+<p>HEDDA.</p>
+<p>Yes, I really did. And so--to help him out of his torment--I happened to say, in pure thoughtlessness, that I should like to live in this villa.</p>
+<p>BRACK.</p>
+<p>No more than that?</p>
+<p>HEDDA.</p>
+<p>Not that evening.</p>
+<p>BRACK.</p>
+<p>But afterwards?</p>
+<p>HEDDA.</p>
+<p>Yes, my thoughtlessness had consequences, my dear Judge.</p>
+<p>BRACK.</p>
+<p>Unfortunately that too often happens, Mrs. Hedda.</p>
+<p>HEDDA.</p>
+<p>Thanks! So you see it was this enthusiasm for Secretary Falk&#x27;s villa that first constituted a bond of sympathy between George Tesman and me. From that came our engagement and our marriage, and our wedding journey, and all the rest of it. Well, well, my dear Judge--as you make your bed so you must lie, I could almost say.</p>
+<p>BRACK.</p>
+<p>This is exquisite! And you really cared not a rap about it all the time?</p>
+<p>HEDDA.</p>
+<p>No, heaven knows I didn&#x27;t.</p>
+<p>BRACK.</p>
+<p>But now? Now that we have made it so homelike for you?</p>
+<p>HEDDA.</p>
+<p>Uh--the rooms all seem to smell of lavender and dried rose-leaves.--But perhaps it&#x27;s Aunt Julia that has brought that scent with her.</p>
+<p>BRACK.</p>
+<p>[Laughing.] No, I think it must be a legacy from the late Mrs. Secretary Falk.</p>
+<p>HEDDA.</p>
+<p>Yes, there is an odour of mortality about it. It reminds me of a bouquet--the day after the ball. [Clasps her hands behind her head, leans back in her chair and looks at him.] Oh, my dear Judge--you cannot imagine how horribly I shall bore myself here.</p>
+<p>BRACK.</p>
+<p>Why should not you, too, find some sort of vocation in life, Mrs. Hedda?</p>
+<p>HEDDA.</p>
+<p>A vocation--that should attract me?</p>
+<p>BRACK.</p>
+<p>If possible, of course.</p>
+<p>HEDDA.</p>
+<p>Heaven knows what sort of a vocation that could be. I often wonder whether-- [Breaking off.] But that would never do either.</p>
+<p>BRACK.</p>
+<p>Who can tell? Let me hear what it is.</p>
+<p>HEDDA.</p>
+<p>Whether I might not get Tesman to go into politics, I mean.</p>
+<p>BRACK.</p>
+<p>[Laughing.] Tesman? No really now, political life is not the thing for him--not at all in his line.</p>
+<p>HEDDA.</p>
+<p>No, I daresay not.--But if I could get him into it all the same?</p>
+<p>BRACK.</p>
+<p>Why--what satisfaction could you find in that? If he is not fitted for that sort of thing, why should you want to drive him into it?</p>
+<p>HEDDA.</p>
+<p>Because I am bored, I tell you! [After a pause.] So you think it quite out of the question that Tesman should ever get into the ministry?</p>
+<p>BRACK.</p>
+<p>H&#x27;m--you see, my dear Mrs. Hedda--to get into the ministry, he would have to be a tolerably rich man.</p>
+<p>HEDDA.</p>
+<p>[Rising impatiently.] Yes, there we have it! It is this genteel poverty I have managed to drop into--! [Crosses the room.] That is what makes life so pitiable! So utterly ludicrous!--For that&#x27;s what it is.</p>
+<p>BRACK.</p>
+<p>Now I should say the fault lay elsewhere.</p>
+<p>HEDDA.</p>
+<p>Where, then?</p>
+<p>BRACK.</p>
+<p>You have never gone through any really stimulating experience.</p>
+<p>HEDDA.</p>
+<p>Anything serious, you mean?</p>
+<p>BRACK.</p>
+<p>Yes, you may call it so. But now you may perhaps have one in store.</p>
+<p>HEDDA.</p>
+<p>[Tossing her head.] Oh, you&#x27;re thinking of the annoyances about this wretched professorship! But that must be Tesman&#x27;s own affair. I assure you I shall not waste a thought upon it.</p>
+<p>BRACK.</p>
+<p>No, no, I daresay not. But suppose now that what people call--in elegant language--a solemn responsibility were to come upon you? [Smiling.] A new responsibility, Mrs. Hedda?</p>
+<p>HEDDA.</p>
+<p>[Angrily.] Be quiet! Nothing of that sort will ever happen!</p>
+<p>BRACK.</p>
+<p>[Warily.] We will speak of this again a year hence--at the very outside.</p>
+<p>HEDDA.</p>
+<p>[Curtly.] I have no turn for anything of the sort, Judge Brack. No responsibilities for me!</p>
+<p>BRACK.</p>
+<p>Are you so unlike the generality of women as to have no turn for duties which--?</p>
+<p>HEDDA.</p>
+<p>[Beside the glass door.] Oh, be quiet, I tell you!--I often think there is only one thing in the world I have any turn for.</p>
+<p>BRACK.</p>
+<p>[Drawing near to her.] And what is that, if I may ask?</p>
+<p>HEDDA.</p>
+<p>[Stands looking out.] Boring myself to death. Now you know it. [Turns, looks towards the inner room, and laughs.] Yes, as I thought! Here comes the Professor.</p>
+<p>BRACK.</p>
+<p>[Softly, in a tone of warning.] Come, come, come, Mrs. Hedda!</p>
+<p>GEORGE TESMAN, dressed for the party, with his gloves and hat in his hand, enters from the right through the inner room.</p>
+<p>TESMAN.</p>
+<p>Hedda, has no message come from Eilert Lovborg? Eh?</p>
+<p>HEDDA.</p>
+<p>No.</p>
+<p>TESMAN.</p>
+<p>Then you&#x27;ll see he&#x27;ll be here presently.</p>
+<p>BRACK.</p>
+<p>Do you really think he will come?</p>
+<p>TESMAN.</p>
+<p>Yes, I am almost sure of it. For what you were telling us this morning must have been a mere floating rumour.</p>
+<p>BRACK.</p>
+<p>You think so?</p>
+<p>TESMAN.</p>
+<p>At any rate, Aunt Julia said she did not believe for a moment that he would ever stand in my way again. Fancy that!</p>
+<p>BRACK.</p>
+<p>Well then, that&#x27;s all right.</p>
+<p>TESMAN.</p>
+<p>[Placing his hat and gloves on a chair on the right.] Yes, but you must really let me wait for him as long as possible.</p>
+<p>BRACK.</p>
+<p>We have plenty of time yet. None of my guests will arrive before seven or half-past.</p>
+<p>TESMAN.</p>
+<p>Then meanwhile we can keep Hedda company, and see what happens. Eh?</p>
+<p>HEDDA.</p>
+<p>[Placing BRACK&#x27;S hat and overcoat upon the corner settee.] And at the worst Mr. Lovborg can remain here with me.</p>
+<p>BRACK.</p>
+<p>[Offering to take his things.] Oh, allow me, Mrs. Tesman!--What do you mean by &quot;At the worst&quot;?</p>
+<p>HEDDA.</p>
+<p>If he won&#x27;t go with you and Tesman.</p>
+<p>TESMAN.</p>
+<p>[Looks dubiously at her.] But, Hedda dear--do you think it would quite do for him to remain here with you? Eh? Remember, Aunt Julia can&#x27;t come.</p>
+<p>HEDDA.</p>
+<p>No, but Mrs. Elvsted is coming. We three can have a cup of tea together.</p>
+<p>TESMAN.</p>
+<p>Oh yes, that will be all right.</p>
+<p>BRACK.</p>
+<p>[Smiling.] And that would perhaps be the safest plan for him.</p>
+<p>HEDDA.</p>
+<p>Why so?</p>
+<p>BRACK.</p>
+<p>Well, you know, Mrs. Tesman, how you used to gird at my little bachelor parties. You declared they were adapted only for men of the strictest principles.</p>
+<p>HEDDA.</p>
+<p>But no doubt Mr. Lovborg&#x27;s principles are strict enough now. A converted sinner-- [BERTA appears at the hall door.</p>
+<p>BERTA.</p>
+<p>There&#x27;s a gentleman asking if you are at home, ma&#x27;am--</p>
+<p>HEDDA.</p>
+<p>Well, show him in.</p>
+<p>TESMAN.</p>
+<p>[Softly.] I&#x27;m sure it is he! Fancy that!</p>
+<p>EILERT LOVBORG enters from the hall.  He is slim and lean; of the same age as TESMAN, but looks older and somewhat worn-out.  His hair and beard are of a blackish brown, his face long and pale, but with patches of colour on the cheeks. He is dressed in a well-cut black visiting suit, quite new. He has dark gloves and a silk hat.  He stops near the door, and makes a rapid bow, seeming somewhat embarrassed.</p>
+<p>TESMAN.</p>
+<p>[Goes up to him and shakes him warmly by the hand.] Well, my dear Eilert--so at last we meet again!</p>
+<h3 class="sub">Eilert Lovborg.</h3>
+<p>[Speaks in a subdued voice.] Thanks for your letter, Tesman. [Approaching HEDDA.] Will you too shake hands with me, Mrs. Tesman?</p>
+<p>HEDDA.</p>
+<p>[Taking his hand.] I am glad to see you, Mr. Lovborg. [With a motion of her hand.] I don&#x27;t know whether you two gentlemen--?</p>
+<p>LOVBORG.</p>
+<p>[Bowing slightly.] Judge Brack, I think.</p>
+<p>BRACK.</p>
+<p>[Doing likewise.] Oh yes,--in the old days--</p>
+<p>TESMAN.</p>
+<p>[To LOVBORG, with his hands on his shoulders.] And now you must make yourself entirely at home, Eilert! Mustn&#x27;t he, Hedda?--For I hear you are going to settle in town again? Eh?</p>
+<p>LOVBORG.</p>
+<p>Yes, I am.</p>
+<p>TESMAN.</p>
+<p>Quite right, quite right. Let me tell you, I have got hold of your new book; but I haven&#x27;t had time to read it yet.</p>
+<p>LOVBORG.</p>
+<p>You may spare yourself the trouble.</p>
+<p>TESMAN.</p>
+<p>Why so?</p>
+<p>LOVBORG.</p>
+<p>Because there is very little in it.</p>
+<p>TESMAN.</p>
+<p>Just fancy--how can you say so?</p>
+<p>BRACK.</p>
+<p>But it has been very much praised, I hear.</p>
+<p>LOVBORG.</p>
+<p>That was what I wanted; so I put nothing into the book but what every one would agree with.</p>
+<p>BRACK.</p>
+<p>Very wise of you.</p>
+<p>TESMAN.</p>
+<p>Well but, my dear Eilert--!</p>
+<p>LOVBORG.</p>
+<p>For now I mean to win myself a position again--to make a fresh start.</p>
+<p>TESMAN.</p>
+<p>[A little embarrassed.] Ah, that is what you wish to do? Eh?</p>
+<p>LOVBORG.</p>
+<p>[Smiling, lays down his hat, and draws a packet wrapped in paper, from his coat pocket.] But when this one appears, George Tesman, you will have to read it. For this is the real book--the book I have put my true self into.</p>
+<p>TESMAN.</p>
+<p>Indeed? And what is it?</p>
+<p>LOVBORG.</p>
+<p>It is the continuation.</p>
+<p>TESMAN.</p>
+<p>The continuation? Of what?</p>
+<p>LOVBORG.</p>
+<p>Of the book.</p>
+<p>TESMAN.</p>
+<p>Of the new book?</p>
+<p>LOVBORG.</p>
+<p>Of course.</p>
+<p>TESMAN.</p>
+<p>Why, my dear Eilert--does it not come down to our own days?</p>
+<p>LOVBORG.</p>
+<p>Yes, it does; and this one deals with the future.</p>
+<p>TESMAN.</p>
+<p>With the future! But, good heavens, we know nothing of the future!</p>
+<p>LOVBORG.</p>
+<p>No; but there is a thing or two to be said about it all the same. [Opens the packet.] Look here--</p>
+<p>TESMAN.</p>
+<p>Why, that&#x27;s not your handwriting.</p>
+<p>LOVBORG.</p>
+<p>I dictated it. [Turning over the pages.] It falls into two sections. The first deals with the civilising forces of the future. And here is the second--[running through the pages towards the end]--forecasting the probable line of development.</p>
+<p>TESMAN.</p>
+<p>How odd now! I should never have thought of writing anything of that sort.</p>
+<p>HEDDA.</p>
+<p>[At the glass door, drumming on the pane.] H&#x27;m--. I daresay not.</p>
+<p>LOVBORG.</p>
+<p>[Replacing the manuscript in its paper and laying the packet on the table.] I brought it, thinking I might read you a little of it this evening.</p>
+<p>TESMAN.</p>
+<p>That was very good of you, Eilert. But this evening--? [Looking back at BRACK.] I don&#x27;t see how we can manage it--</p>
+<p>LOVBORG.</p>
+<p>Well then, some other time. There is no hurry.</p>
+<p>BRACK.</p>
+<h3 class="sub">I must tell you, Mr. Lovborg--there is a little gathering at my house this evening--mainly in honour of Tesman, you know--</h3>
+<p>LOVBORG.</p>
+<p>[Looking for his hat.] Oh--then I won&#x27;t detain you--</p>
+<p>BRACK.</p>
+<p>No, but listen--will you not do me the favour of joining us?</p>
+<p>LOVBORG.</p>
+<p>[Curtly and decidedly.] No, I can&#x27;t--thank you very much.</p>
+<p>BRACK.</p>
+<p>Oh, nonsense--do! We shall be quite a select little circle. And I assure you we shall have a &quot;lively time,&quot; as Mrs. Hed--as Mrs. Tesman says.</p>
+<p>LOVBORG.</p>
+<h3 class="sub">I have no doubt of it. But nevertheless--</h3>
+<p>BRACK.</p>
+<p>And then you might bring your manuscript with you, and read it to Tesman at my house. I could give you a room to yourselves.</p>
+<p>TESMAN.</p>
+<p>Yes, think of that, Eilert,--why shouldn&#x27;t you? Eh?</p>
+<p>HEDDA.</p>
+<p>[Interposing.] But, Tesman, if Mr. Lovborg would really rather not! I am sure Mr. Lovborg is much more inclined to remain here and have supper with me.</p>
+<p>LOVBORG.</p>
+<p>[Looking at her.] With you, Mrs. Tesman?</p>
+<p>HEDDA.</p>
+<p>And with Mrs. Elvsted.</p>
+<p>LOVBORG.</p>
+<p>Ah-- [Lightly.] I saw her for a moment this morning.</p>
+<p>HEDDA.</p>
+<p>Did you? Well, she is coming this evening. So you see you are almost bound to remain, Mr. Lovborg, or she will have no one to see her home.</p>
+<p>LOVBORG.</p>
+<p>That&#x27;s true. Many thanks, Mrs. Tesman--in that case I will remain.</p>
+<p>HEDDA.</p>
+<p>Then I have one or two orders to give the servant--</p>
+<p>[She goes to the hall door and rings.  BERTA enters. HEDDA talks to her in a whisper, and points towards the inner room.  BERTA nods and goes out again.</p>
+<p>TESMAN.</p>
+<p>[At the same time, to LOVBORG.] Tell me, Eilert--is it this new subject--the future--that you are going to lecture about?</p>
+<p>LOVBORG.</p>
+<p>Yes.</p>
+<p>TESMAN.</p>
+<p>They told me at the bookseller&#x27;s that you are going to deliver a course of lectures this autumn.</p>
+<p>LOVBORG.</p>
+<p>That is my intention. I hope you won&#x27;t take it ill, Tesman.</p>
+<p>TESMAN.</p>
+<p>Oh no, not in the least! But--?</p>
+<p>LOVBORG.</p>
+<h3 class="sub">I can quite understand that it must be very disagreeable to you.</h3>
+<p>TESMAN.</p>
+<p>[Cast down.] Oh, I can&#x27;t expect you, out of consideration for me, to--</p>
+<p>LOVBORG.</p>
+<p>But I shall wait till you have received your appointment.</p>
+<p>TESMAN.</p>
+<p>Will you wait? Yes but--yes but--are you not going to compete with me? Eh?</p>
+<p>LOVBORG.</p>
+<p>No; it is only the moral victory I care for.</p>
+<p>TESMAN.</p>
+<p>Why, bless me--then Aunt Julia was right after all! Oh yes--I knew it! Hedda! Just fancy--Eilert Lovborg is not going to stand in our way!</p>
+<p>HEDDA.</p>
+<p>[Curtly.] Our way? Pray leave me out of the question.</p>
+<p>[She goes up towards the inner room, where BERTA is placing a tray with decanters and glasses on the table.  HEDDA nods approval, and comes forward again.  BERTA goes out.</p>
+<p>TESMAN.</p>
+<p>[At the same time.] And you, Judge Brack--what do you say to this? Eh?</p>
+<p>BRACK.</p>
+<p>Well, I say that a moral victory--h&#x27;m--may be all very fine--</p>
+<p>TESMAN.</p>
+<p>Yes, certainly. But all the same--</p>
+<p>HEDDA.</p>
+<p>[Looking at TESMAN with a cold smile.] You stand there looking as if you were thunderstruck--</p>
+<p>TESMAN.</p>
+<p>Yes--so I am--I almost think--</p>
+<p>BRACK.</p>
+<p>Don&#x27;t you see, Mrs. Tesman, a thunderstorm has just passed over?</p>
+<p>HEDDA.</p>
+<p>[Pointing towards the room.] Will you not take a glass of cold punch, gentlemen?</p>
+<p>BRACK.</p>
+<p>[Looking at his watch.] A stirrup-cup? Yes, it wouldn&#x27;t come amiss.</p>
+<p>TESMAN.</p>
+<p>A capital idea, Hedda! Just the thing! Now that the weight has been taken off my mind--</p>
+<p>HEDDA.</p>
+<p>Will you not join them, Mr. Lovborg?</p>
+<p>LOVBORG.</p>
+<p>[With a gesture of refusal.] No, thank you. Nothing for me.</p>
+<p>BRACK.</p>
+<p>Why bless me--cold punch is surely not poison.</p>
+<p>LOVBORG.</p>
+<p>Perhaps not for everyone.</p>
+<p>HEDDA.</p>
+<h3 class="sub">I will keep Mr. Lovborg company in the meantime.</h3>
+<p>TESMAN.</p>
+<p>Yes, yes, Hedda dear, do.</p>
+<p>[He and BRACK go into the inner room, seat themselves, drink punch, smoke cigarettes, and carry on a lively conversation during what follows.  EILERT LOVBORG remains standing beside the stove.  HEDDA goes to the writing-table.</p>
+<p>HEDDA.</p>
+<p>[Raising her voice a little.] Do you care to look at some photographs, Mr. Lovborg? You know Tesman and I made a tour in the Tyrol on our way home?</p>
+<p>[She takes up an album, and places it on the table beside the sofa, in the further corner of which she seats herself.  EILERT LOVBORG approaches, stops, and looks at her.  Then he takes a chair and seats himself to her left.</p>
+<p>HEDDA.</p>
+<p>[Opening the album.] Do you see this range of mountains, Mr. Lovborg? It&#x27;s the Ortler group. Tesman has written the name underneath. Here it is: &quot;The Ortler group near Meran.&quot;</p>
+<p>LOVBORG.</p>
+<p>[Who has never taken his eyes off her, says softly and slowly:] Hedda--Gabler!</p>
+<p>HEDDA.</p>
+<p>[Glancing hastily at him.] Ah! Hush!</p>
+<p>LOVBORG.</p>
+<p>[Repeats softly.] Hedda Gabler!</p>
+<p>HEDDA.</p>
+<p>[Looking at the album.] That was my name in the old days--when we two knew each other.</p>
+<p>LOVBORG.</p>
+<p>And I must teach myself never to say Hedda Gabler again--never, as long as I live.</p>
+<p>HEDDA.</p>
+<p>[Still turning over the pages.] Yes, you must. And I think you ought to practise in time. The sooner the better, I should say.</p>
+<p>LOVBORG.</p>
+<p>[In a tone of indignation.] Hedda Gabler married? And married to-- George Tesman!</p>
+<p>HEDDA.</p>
+<p>Yes--so the world goes.</p>
+<p>LOVBORG.</p>
+<p>Oh, Hedda, Hedda--how could you(9) throw yourself away!</p>
+<p>HEDDA.</p>
+<p>[Looks sharply at him.] What? I can&#x27;t allow this!</p>
+<p>LOVBORG.</p>
+<p>What do you mean?</p>
+<p>[TESMAN comes into the room and goes towards the sofa.</p>
+<p>HEDDA.</p>
+<p>[Hears him coming and says in an indifferent tone.] And this is a view from the Val d&#x27;Ampezzo, Mr. Lovborg. Just look at these peaks! [Looks affectionately up at TESMAN.] What&#x27;s the name of these curious peaks, dear?</p>
+<p>TESMAN.</p>
+<p>Let me see. Oh, those are the Dolomites.</p>
+<p>HEDDA.</p>
+<p>Yes, that&#x27;s it!--Those are the Dolomites, Mr. Lovborg.</p>
+<p>TESMAN.</p>
+<p>Hedda, dear,--I only wanted to ask whether I shouldn&#x27;t bring you a little punch after all? For yourself at any rate--eh?</p>
+<p>HEDDA.</p>
+<p>Yes, do, please; and perhaps a few biscuits.</p>
+<p>TESMAN.</p>
+<p>No cigarettes?</p>
+<p>HEDDA.</p>
+<p>No.</p>
+<p>TESMAN.</p>
+<p>Very well.</p>
+<p>[He goes into the inner room and out to the right.  BRACK sits in the inner room, and keeps an eye from time to time on HEDDA and LOVBORG.</p>
+<p>LOVBORG.</p>
+<p>[Softly, as before.] Answer me, Hedda--how could you go and do this?</p>
+<p>HEDDA.</p>
+<p>[Apparently absorbed in the album.] If you continue to say du to me I won&#x27;t talk to you.</p>
+<p>LOVBORG.</p>
+<p>May I not say du even when we are alone?</p>
+<p>HEDDA.</p>
+<p>No. You may think it; but you mustn&#x27;t say it.</p>
+<p>LOVBORG.</p>
+<p>Ah, I understand. It is an offence against George Tesman, whom you(10)--love.</p>
+<p>HEDDA.</p>
+<p>[Glances at him and smiles.] Love? What an idea!</p>
+<p>LOVBORG.</p>
+<p>You don&#x27;t love him then!</p>
+<p>HEDDA.</p>
+<p>But I won&#x27;t hear of any sort of unfaithfulness! Remember that.</p>
+<p>LOVBORG.</p>
+<p>Hedda--answer me one thing--</p>
+<p>HEDDA.</p>
+<p>Hush! [TESMAN enters with a small tray from the inner room.</p>
+<p>TESMAN.</p>
+<p>Here you are! Isn&#x27;t this tempting? [He puts the tray on the table.</p>
+<p>HEDDA.</p>
+<p>Why do you bring it yourself?</p>
+<p>TESMAN.</p>
+<p>[Filling the glasses.] Because I think it&#x27;s such fun to wait upon you, Hedda.</p>
+<p>HEDDA.</p>
+<p>But you have poured out two glasses. Mr. Lovborg said he wouldn&#x27;t have any--</p>
+<p>TESMAN.</p>
+<p>No, but Mrs. Elvsted will soon be here, won&#x27;t she?</p>
+<p>HEDDA.</p>
+<p>Yes, by-the-bye--Mrs. Elvsted--</p>
+<p>TESMAN.</p>
+<p>Had you forgotten her? Eh?</p>
+<p>HEDDA.</p>
+<p>We were so absorbed in these photographs. [Shows him a picture.] Do you remember this little village?</p>
+<p>TESMAN.</p>
+<p>Oh, it&#x27;s that one just below the Brenner Pass. It was there we passed the night--</p>
+<p>HEDDA.</p>
+<p>--and met that lively party of tourists.</p>
+<p>TESMAN.</p>
+<p>Yes, that was the place. Fancy--if we could only have had you with us, Eilert! Eh?</p>
+<p>[He returns to the inner room and sits beside BRACK.</p>
+<p>LOVBORG.</p>
+<p>Answer me one thing, Hedda--</p>
+<p>HEDDA.</p>
+<p>Well?</p>
+<p>LOVBORG.</p>
+<p>Was there no love in your friendship for me either? Not a spark--not a tinge of love in it?</p>
+<p>HEDDA.</p>
+<h3 class="sub">I wonder if there was? To me it seems as though we were two good comrades--two thoroughly intimate friends. [Smilingly.] You especially were frankness itself.</h3>
+<p>LOVBORG.</p>
+<p>It was you that made me so.</p>
+<p>HEDDA.</p>
+<p>As I look back upon it all, I think there was really something beautiful, something fascinating--something daring--in--in that secret intimacy--that comradeship which no living creature so much as dreamed of.</p>
+<p>LOVBORG.</p>
+<p>Yes, yes, Hedda! Was there not?--When I used to come to your father&#x27;s in the afternoon--and the General sat over at the window reading his papers--with his back towards us--</p>
+<p>HEDDA.</p>
+<p>And we two on the corner sofa--</p>
+<p>LOVBORG.</p>
+<p>Always with the same illustrated paper before us--</p>
+<p>HEDDA.</p>
+<p>For want of an album, yes.</p>
+<p>LOVBORG.</p>
+<p>Yes, Hedda, and when I made my confessions to you--told you about myself, things that at that time no one else knew! There I would sit and tell you of my escapades--my days and nights of devilment. Oh, Hedda--what was the power in you that forced me to confess these things?</p>
+<p>HEDDA.</p>
+<p>Do you think it was any power in me?</p>
+<p>LOVBORG.</p>
+<p>How else can I explain it? And all those--those roundabout questions you used to put to me--</p>
+<p>HEDDA.</p>
+<p>Which you understood so particularly well--</p>
+<p>LOVBORG.</p>
+<p>How could you sit and question me like that? Question me quite frankly--</p>
+<p>HEDDA.</p>
+<p>In roundabout terms, please observe.</p>
+<p>LOVBORG.</p>
+<p>Yes, but frankly nevertheless. Cross-question me about--all that sort of thing?</p>
+<p>HEDDA.</p>
+<p>And how could you answer, Mr. Lovborg?</p>
+<p>LOVBORG.</p>
+<p>Yes, that is just what I can&#x27;t understand--in looking back upon it. But tell me now, Hedda--was there not love at the bottom of our friendship? On your side, did you not feel as though you might purge my stains away--if I made you my confessor? Was it not so?</p>
+<p>HEDDA.</p>
+<p>No, not quite.</p>
+<p>LOVBORG.</p>
+<p>What was you motive, then?</p>
+<p>HEDDA.</p>
+<p>Do think it quite incomprehensible that a young girl--when it can be done--without any one knowing--</p>
+<p>LOVBORG.</p>
+<p>Well?</p>
+<p>HEDDA.</p>
+<p>--should be glad to have a peep, now and then, into a world which--?</p>
+<p>LOVBORG.</p>
+<p>Which--?</p>
+<p>HEDDA.</p>
+<p>--which she is forbidden to know anything about?</p>
+<p>LOVBORG.</p>
+<p>So that was it?</p>
+<p>HEDDA.</p>
+<p>Partly. Partly--I almost think.</p>
+<p>LOVBORG.</p>
+<p>Comradeship in the thirst for life. But why should not that, at any rate, have continued?</p>
+<p>HEDDA.</p>
+<p>The fault was yours.</p>
+<p>LOVBORG.</p>
+<p>It was you that broke with me.</p>
+<p>HEDDA.</p>
+<p>Yes, when our friendship threatened to develop into something more serious. Shame upon you, Eilert Lovborg! How could you think of wronging your--your frank comrade.</p>
+<p>LOVBORG.</p>
+<p>[Clenches his hands.] Oh, why did you not carry out your threat? Why did you not shoot me down?</p>
+<p>HEDDA.</p>
+<p>Because I have such a dread of scandal.</p>
+<p>LOVBORG.</p>
+<p>Yes, Hedda, you are a coward at heart.</p>
+<p>HEDDA.</p>
+<p>A terrible coward. [Changing her tone.] But it was a lucky thing for you. And now you have found ample consolation at the Elvsteds&#x27;.</p>
+<p>LOVBORG.</p>
+<h3 class="sub">I know what Thea has confided to you.</h3>
+<p>HEDDA.</p>
+<p>And perhaps you have confided to her something about us?</p>
+<p>LOVBORG.</p>
+<p>Not a word. She is too stupid to understand anything of that sort.</p>
+<p>HEDDA.</p>
+<p>Stupid?</p>
+<p>LOVBORG.</p>
+<p>She is stupid about matters of that sort.</p>
+<p>HEDDA.</p>
+<p>And I am cowardly. [Bends over towards him, without looking him in the face, and says more softly:] But now I will confide something to you.</p>
+<p>LOVBORG.</p>
+<p>[Eagerly.] Well?</p>
+<p>HEDDA.</p>
+<p>The fact that I dared not shoot you down--</p>
+<p>LOVBORG.</p>
+<p>Yes!</p>
+<p>HEDDA.</p>
+<p>--that was not my arrant cowardice--that evening.</p>
+<p>LOVBORG.</p>
+<p>[Looks at her a moment, understands, and whispers passionately.] Oh, Hedda! Hedda Gabler! Now I begin to see a hidden reason beneath our comradeship! You(11) and I--! After all, then, it was your craving for life--</p>
+<p>HEDDA.</p>
+<p>[Softly, with a sharp glance.] Take care! Believe nothing of the sort!</p>
+<p>[Twilight has begun to fall.  The hall door is opened from without by BERTA.</p>
+<p>HEDDA.</p>
+<p>[Closes the album with a bang and calls smilingly:] Ah, at last! My darling Thea,--come along!</p>
+<p>MRS. ELVSTED enters from the hall.  She is in evening dress. The door is closed behind her.</p>
+<p>HEDDA.</p>
+<p>[On the sofa, stretches out her arms towards her.] My sweet Thea--you can&#x27;t think how I have been longing for you!</p>
+<p>[MRS. ELVSTED, in passing, exchanges slight salutations with the gentlemen in the inner room, then goes up to the table and gives HEDDA her hand.  EILERT LOVBORG has risen.  He and MRS. ELVSTED greet each other with a silent nod.</p>
+<p>MRS. ELVSTED.</p>
+<p>Ought I to go in and talk to your husband for a moment?</p>
+<p>HEDDA.</p>
+<p>Oh, not at all. Leave those two alone. They will soon be going.</p>
+<p>MRS. ELVSTED.</p>
+<p>Are they going out?</p>
+<p>HEDDA.</p>
+<p>Yes, to a supper-party.</p>
+<p>MRS. ELVSTED.</p>
+<p>[Quickly, to LOVBORG.] Not you?</p>
+<p>LOVBORG.</p>
+<p>No.</p>
+<p>HEDDA.</p>
+<p>Mr. Lovborg remains with us.</p>
+<p>MRS. ELVSTED.</p>
+<p>[Takes a chair and is about to seat herself at his side.] Oh, how nice it is here!</p>
+<p>HEDDA.</p>
+<p>No, thank you, my little Thea! Not there! You&#x27;ll be good enough to come over here to me. I will sit between you.</p>
+<p>MRS. ELVSTED.</p>
+<p>Yes, just as you please.</p>
+<p>[She goes round the table and seats herself on the sofa on HEDDA&#x27;S right.  LOVBORG re-seats himself on his chair.</p>
+<p>LOVBORG.</p>
+<p>[After a short pause, to HEDDA.] Is not she lovely to look at?</p>
+<p>HEDDA.</p>
+<p>[Lightly stroking her hair.] Only to look at!</p>
+<p>LOVBORG.</p>
+<p>Yes. For we two--she and I--we are two real comrades. We have absolute faith in each other; so we can sit and talk with perfect frankness--</p>
+<p>HEDDA.</p>
+<p>Not round about, Mr. Lovborg?</p>
+<p>LOVBORG.</p>
+<p>Well--</p>
+<p>MRS. ELVSTED.</p>
+<p>[Softly clinging close to HEDDA.] Oh, how happy I am, Hedda! For only think, he says I have inspired him too.</p>
+<p>HEDDA.</p>
+<p>[Looks at her with a smile.] Ah! Does he say that, dear?</p>
+<p>LOVBORG.</p>
+<p>And then she is so brave, Mrs. Tesman!</p>
+<p>MRS. ELVSTED.</p>
+<p>Good heavens--am I brave?</p>
+<p>LOVBORG.</p>
+<p>Exceedingly--where your comrade is concerned.</p>
+<p>HEDDA.</p>
+<p>Ah, yes--courage! If one only had that!</p>
+<p>LOVBORG.</p>
+<p>What then? What do you mean?</p>
+<p>HEDDA.</p>
+<p>Then life would perhaps be liveable, after all. [With a sudden change of tone.] But now, my dearest Thea, you really must have a glass of cold punch.</p>
+<p>MRS. ELVSTED.</p>
+<p>No, thanks--I never take anything of that kind.</p>
+<p>HEDDA.</p>
+<p>Well then, you, Mr. Lovborg.</p>
+<p>LOVBORG.</p>
+<p>Nor I, thank you.</p>
+<p>MRS. ELVSTED.</p>
+<p>No, he doesn&#x27;t either.</p>
+<p>HEDDA.</p>
+<p>[Looks fixedly at him.] But if I say you shall?</p>
+<p>LOVBORG.</p>
+<p>It would be of no use.</p>
+<p>HEDDA.</p>
+<p>[Laughing.] Then I, poor creature, have no sort of power over you?</p>
+<p>LOVBORG.</p>
+<p>Not in that respect.</p>
+<p>HEDDA.</p>
+<p>But seriously, I think you ought to--for your own sake.</p>
+<p>MRS. ELVSTED.</p>
+<p>Why, Hedda--!</p>
+<p>LOVBORG.</p>
+<p>How so?</p>
+<p>HEDDA.</p>
+<p>Or rather on account of other people.</p>
+<p>LOVBORG.</p>
+<p>Indeed?</p>
+<p>HEDDA.</p>
+<p>Otherwise people might be apt to suspect that--in your heart of hearts--you did not feel quite secure--quite confident in yourself.</p>
+<p>MRS. ELVSTED.</p>
+<p>[Softly.] Oh please, Hedda--!</p>
+<p>LOVBORG.</p>
+<p>People may suspect what they like--for the present.</p>
+<p>MRS. ELVSTED.</p>
+<p>[Joyfully.] Yes, let them!</p>
+<p>HEDDA.</p>
+<h3 class="sub">I saw it plainly in Judge Brack&#x27;s face a moment ago.</h3>
+<p>LOVBORG.</p>
+<p>What did you see?</p>
+<p>HEDDA.</p>
+<p>His contemptuous smile, when you dared not go with them into the inner room.</p>
+<p>LOVBORG.</p>
+<p>Dared not? Of course I preferred to stop here and talk to you.</p>
+<p>MRS. ELVSTED.</p>
+<p>What could be more natural, Hedda?</p>
+<p>HEDDA.</p>
+<p>But the Judge could not guess that. And I say, too, the way he smiled and glanced at Tesman when you dared not accept his invitation to this wretched little supper-party of his.</p>
+<p>LOVBORG.</p>
+<p>Dared not! Do you say I dared not?</p>
+<p>HEDDA.</p>
+<h3 class="sub">I don&#x27;t say so. But that was how Judge Brack understood it.</h3>
+<p>LOVBORG.</p>
+<p>Well, let him.</p>
+<p>HEDDA.</p>
+<p>Then you are not going with them?</p>
+<p>LOVBORG.</p>
+<h3 class="sub">I will stay here with you and Thea.</h3>
+<p>MRS. ELVSTED.</p>
+<p>Yes, Hedda--how can you doubt that?</p>
+<p>HEDDA.</p>
+<p>[Smiles and nods approvingly to LOVBORG.] Firm as a rock! Faithful to your principles, now and for ever! Ah, that is how a man should be! [Turns to MRS. ELVSTED and caresses her.] Well now, what did I tell you, when you came to us this morning in such a state of distraction--</p>
+<p>LOVBORG.</p>
+<p>[Surprised.] Distraction!</p>
+<p>MRS. ELVSTED.</p>
+<p>[Terrified.] Hedda--oh Hedda--!</p>
+<p>HEDDA.</p>
+<p>You can see for yourself! You haven&#x27;t the slightest reason to be in such mortal terror-- [Interrupting herself.] There! Now we can all three enjoy ourselves!</p>
+<p>LOVBORG.</p>
+<p>[Who has given a start.] Ah--what is all this, Mrs. Tesman?</p>
+<p>MRS. ELVSTED.</p>
+<p>Oh my God, Hedda! What are you saying? What are you doing?</p>
+<p>HEDDA.</p>
+<p>Don&#x27;t get excited! That horrid Judge Brack is sitting watching you.</p>
+<p>LOVBORG.</p>
+<p>So she was in mortal terror! On my account!</p>
+<p>MRS. ELVSTED.</p>
+<p>[Softly and piteously.] Oh, Hedda--now you have ruined everything!</p>
+<p>LOVBORG.</p>
+<p>[Looks fixedly at her for a moment. His face is distorted.] So that was my comrade&#x27;s frank confidence in me?</p>
+<p>MRS. ELVSTED.</p>
+<p>[Imploringly.] Oh, my dearest friend--only let me tell you--</p>
+<p>LOVBORG.</p>
+<p>[Takes one of the glasses of punch, raises it to his lips, and says in a low, husky voice.] Your health, Thea!</p>
+<p>[He empties the glass, puts it down, and takes the second.</p>
+<p>MRS. ELVSTED.</p>
+<p>[Softly.] Oh, Hedda, Hedda--how could you do this?</p>
+<p>HEDDA.</p>
+<h3 class="sub">I do it? I? Are you crazy?</h3>
+<p>LOVBORG.</p>
+<p>Here&#x27;s to your health too, Mrs. Tesman. Thanks for the truth. Hurrah for the truth!</p>
+<p>[He empties the glass and is about to re-fill it.</p>
+<p>HEDDA.</p>
+<p>[Lays her hand on his arm.] Come, come--no more for the present. Remember you are going out to supper.</p>
+<p>MRS. ELVSTED.</p>
+<p>No, no, no!</p>
+<p>HEDDA.</p>
+<p>Hush! They are sitting watching you.</p>
+<p>LOVBORG.</p>
+<p>[Putting down the glass.] Now, Thea--tell me the truth--</p>
+<p>MRS. ELVSTED.</p>
+<p>Yes.</p>
+<p>LOVBORG.</p>
+<p>Did your husband know that you had come after me?</p>
+<p>MRS. ELVSTED.</p>
+<p>[Wringing her hands.] Oh, Hedda--do you hear what he is asking?</p>
+<p>LOVBORG.</p>
+<p>Was it arranged between you and him that you were to come to town and look after me? Perhaps it was the Sheriff himself that urged you to come? Aha, my dear--no doubt he wanted my help in his office! Or was it at the card-table that he missed me?</p>
+<p>MRS. ELVSTED.</p>
+<p>[Softly, in agony.] Oh, Lovborg, Lovborg--!</p>
+<p>LOVBORG.</p>
+<p>[Seizes a glass and is on the point of filling it.] Here&#x27;s a glass for the old Sheriff too!</p>
+<p>HEDDA.</p>
+<p>[Preventing him.] No more just now. Remember, you have to read your manuscript to Tesman.</p>
+<p>LOVBORG.</p>
+<p>[Calmly, putting down the glass.] It was stupid of me all this. Thea--to take it in this way, I mean. Don&#x27;t be angry with me, my dear, dear comrade. You shall see--both you and the others--that if I was fallen once--now I have risen again! Thanks to you, Thea.</p>
+<p>MRS. ELVSTED.</p>
+<p>[Radiant with joy.] Oh, heaven be praised--!</p>
+<p>[BRACK has in the meantime looked at his watch.  He and TESMAN rise and come into the drawing-room.</p>
+<p>BRACK.</p>
+<p>[Takes his hat and overcoat.] Well, Mrs. Tesman, our time has come.</p>
+<p>HEDDA.</p>
+<h3 class="sub">I suppose it has.</h3>
+<p>LOVBORG.</p>
+<p>[Rising.] Mine too, Judge Brack.</p>
+<p>MRS. ELVSTED.</p>
+<p>[Softly and imploringly.] Oh, Lovborg, don&#x27;t do it!</p>
+<p>HEDDA.</p>
+<p>[Pinching her arm.] They can hear you!</p>
+<p>MRS. ELVSTED.</p>
+<p>[With a suppressed shriek.] Ow!</p>
+<p>LOVBORG.</p>
+<p>[To BRACK.] You were good enough to invite me.</p>
+<h3 class="sub">Judge Brack.</h3>
+<p>Well, are you coming after all?</p>
+<p>LOVBORG.</p>
+<p>Yes, many thanks.</p>
+<p>BRACK.</p>
+<p>I&#x27;m delighted--</p>
+<p>LOVBORG.</p>
+<p>[To TESMAN, putting the parcel of MS. in his pocket.] I should like to show you one or two things before I send it to the printers.</p>
+<p>TESMAN.</p>
+<p>Fancy--that will be delightful. But, Hedda dear, how is Mrs. Elvsted to get home? Eh?</p>
+<p>HEDDA.</p>
+<p>Oh, that can be managed somehow.</p>
+<p>LOVBORG.</p>
+<p>[Looking towards the ladies.] Mrs. Elvsted? Of course, I&#x27;ll come again and fetch her. [Approaching.] At ten or thereabouts, Mrs. Tesman? Will that do?</p>
+<p>HEDDA.</p>
+<p>Certainly. That will do capitally.</p>
+<p>TESMAN.</p>
+<p>Well, then, that&#x27;s all right. But you must not expect me so early, Hedda.</p>
+<p>HEDDA.</p>
+<p>Oh, you may stop as long--as long as ever you please.</p>
+<p>MRS. ELVSTED.</p>
+<p>[Trying to conceal her anxiety.] Well then, Mr. Lovborg--I shall remain here until you come.</p>
+<p>LOVBORG.</p>
+<p>[With his hat in his hand.] Pray do, Mrs. Elvsted.</p>
+<p>BRACK.</p>
+<p>And now off goes the excursion train, gentlemen! I hope we shall have a lively time, as a certain fair lady puts it.</p>
+<p>HEDDA.</p>
+<p>Ah, if only the fair lady could be present unseen--!</p>
+<p>BRACK.</p>
+<p>Why unseen?</p>
+<p>HEDDA.</p>
+<p>In order to hear a little of your liveliness at first hand, Judge Brack.</p>
+<p>BRACK.</p>
+<p>[Laughing.] I should not advise the fair lady to try it.</p>
+<p>TESMAN.</p>
+<p>[Also laughing.] Come, you&#x27;re a nice one Hedda! Fancy that!</p>
+<p>BRACK.</p>
+<p>Well, good-bye, good-bye, ladies.</p>
+<p>LOVBORG.</p>
+<p>[Bowing.] About ten o&#x27;clock, then,</p>
+<p>[BRACK, LOVBORG, and TESMAN go out by the hall door.  At the same time, BERTA enters from the inner room with a lighted lamp, which she places on the drawing-room table; she goes out by the way she came.</p>
+<p>MRS. ELVSTED.</p>
+<p>[Who has risen and is wandering restlessly about the room.] Hedda-- Hedda--what will come of all this?</p>
+<p>HEDDA.</p>
+<p>At ten o&#x27;clock--he will be here. I can see him already--with vine-leaves in his hair--flushed and fearless--</p>
+<p>MRS. ELVSTED.</p>
+<p>Oh, I hope he may.</p>
+<p>HEDDA.</p>
+<p>And then, you see--then he will have regained control over himself. Then he will be a free man for all his days.</p>
+<p>MRS. ELVSTED.</p>
+<p>Oh God!--if he would only come as you see him now!</p>
+<p>HEDDA.</p>
+<p>He will come as I see him--so, and not otherwise! [Rises and approaches THEA.] You may doubt him as long as you please; I believe in him. And now we will try--</p>
+<p>MRS. ELVSTED.</p>
+<p>You have some hidden motive in this, Hedda!</p>
+<p>HEDDA.</p>
+<p>Yes, I have. I want for once in my life to have power to mould a human destiny.</p>
+<p>MRS. ELVSTED.</p>
+<p>Have you not the power?</p>
+<p>HEDDA.</p>
+<h3 class="sub">I have not--and have never had it.</h3>
+<p>MRS. ELVSTED.</p>
+<p>Not your husband&#x27;s?</p>
+<p>HEDDA.</p>
+<p>Do you think that is worth the trouble? Oh, if you could only understand how poor I am. And fate has made you so rich! [Clasps her passionately in her arms.] I think I must burn your hair off after all.</p>
+<p>MRS. ELVSTED.</p>
+<p>Let me go! Let me go! I am afraid of you, Hedda!</p>
+<p>BERTA.</p>
+<p>[In the middle doorway.] Tea is laid in the dining-room, ma&#x27;am.</p>
+<p>HEDDA.</p>
+<p>Very well. We are coming</p>
+<p>MRS. ELVSTED.</p>
+<p>No, no, no! I would rather go home alone! At once!</p>
+<p>HEDDA.</p>
+<p>Nonsense! First you shall have a cup of tea, you little stupid. And then--at ten o&#x27;clock--Eilert Lovborg will be here--with vine-leaves in his hair.</p>
+<p>[She drags MRS. ELVSTED almost by force to the middle doorway.</p>
+<h2 class="chapter" id="c3">Act Third.</h2>
+<p>The room at the TESMANS&#x27;.  The curtains are drawn over the middle doorway, and also over the glass door.  The lamp, half turned down, and with a shade over it, is burning on the table.  In the stove, the door of which stands open, there has been a fire, which is now nearly burnt out.</p>
+<p>MRS. ELVSTED, wrapped in a large shawl, and with her feet upon a foot-rest, sits close to the stove, sunk back in the arm-chair.  HEDDA, fully dressed, lies sleeping upon the sofa, with a sofa-blanket over her.</p>
+<p>MRS. ELVSTED.</p>
+<p>[After a pause, suddenly sits up in her chair, and listens eagerly. Then she sinks back again wearily, moaning to herself.] Not yet!--Oh God--oh God--not yet!</p>
+<p>BERTA slips cautiously in by the hall door.  She has a letter in her hand.</p>
+<p>MRS. ELVSTED.</p>
+<p>[Turns and whispers eagerly.] Well--has any one come?</p>
+<p>BERTA.</p>
+<p>[Softly.] Yes, a girl has just brought this letter.</p>
+<p>MRS. ELVSTED.</p>
+<p>[Quickly, holding out her hand.] A letter! Give it to me!</p>
+<p>BERTA.</p>
+<p>No, it&#x27;s for Dr. Tesman, ma&#x27;am.</p>
+<p>MRS. ELVSTED.</p>
+<p>Oh, indeed.</p>
+<p>BERTA.</p>
+<p>It was Miss Tesman&#x27;s servant that brought it. I&#x27;ll lay it here on the table.</p>
+<p>MRS. ELVSTED.</p>
+<p>Yes, do.</p>
+<p>BERTA.</p>
+<p>[Laying down the letter.] I think I had better put out the lamp. It&#x27;s smoking.</p>
+<p>MRS. ELVSTED.</p>
+<p>Yes, put it out. It must soon be daylight now.</p>
+<p>BERTA.</p>
+<p>[Putting out the lamp.] It is daylight already, ma&#x27;am.</p>
+<p>MRS. ELVSTED.</p>
+<p>Yes, broad day! And no one come back yet--!</p>
+<p>BERTA.</p>
+<p>Lord bless you, ma&#x27;am--I guessed how it would be.</p>
+<p>MRS. ELVSTED.</p>
+<p>You guessed?</p>
+<p>BERTA.</p>
+<p>Yes, when I saw that a certain person had come back to town--and that he went off with them. For we&#x27;ve heard enough about that gentleman before now.</p>
+<p>MRS. ELVSTED.</p>
+<p>Don&#x27;t speak so loud. You will waken Mrs. Tesman.</p>
+<p>BERTA.</p>
+<p>[Looks towards the sofa and sighs.] No, no--let her sleep, poor thing. Shan&#x27;t I put some wood on the fire?</p>
+<p>MRS. ELVSTED.</p>
+<p>Thanks, not for me.</p>
+<p>BERTA.</p>
+<p>Oh, very well. [She goes softly out by the hall door.</p>
+<p>HEDDA.</p>
+<p>[Is wakened by the shutting of the door, and looks up.] What&#x27;s that--?</p>
+<p>MRS. ELVSTED.</p>
+<p>It was only the servant.</p>
+<p>HEDDA.</p>
+<p>[Looking about her.] Oh, we&#x27;re here--! Yes, now I remember. [Sits erect upon the sofa, stretches herself, and rubs her eyes.] What o&#x27;clock is it, Thea?</p>
+<p>MRS. ELVSTED.</p>
+<p>[Looks at her watch.] It&#x27;s past seven.</p>
+<p>HEDDA.</p>
+<p>When did Tesman come home?</p>
+<p>MRS. ELVSTED.</p>
+<p>He has not come.</p>
+<p>HEDDA.</p>
+<p>Not come home yet?</p>
+<p>MRS. ELVSTED.</p>
+<p>[Rising.] No one has come.</p>
+<p>HEDDA.</p>
+<p>Think of our watching and waiting here till four in the morning--</p>
+<p>MRS. ELVSTED.</p>
+<p>[Wringing her hands.] And how I watched and waited for him!</p>
+<p>HEDDA.</p>
+<p>[Yawns, and says with her hand before her mouth.] Well well--we might have spared ourselves the trouble.</p>
+<p>MRS. ELVSTED.</p>
+<p>Did you get a little sleep?</p>
+<p>HEDDA.</p>
+<p>Oh yes; I believe I have slept pretty well. Have you not?</p>
+<p>MRS. ELVSTED.</p>
+<p>Not for a moment. I couldn&#x27;t, Hedda!--not to save my life.</p>
+<p>HEDDA.</p>
+<p>[Rises and goes towards her.] There there there! There&#x27;s nothing to be so alarmed about. I understand quite well what has happened.</p>
+<p>MRS. ELVSTED.</p>
+<p>Well, what do you think? Won&#x27;t you tell me?</p>
+<p>HEDDA.</p>
+<p>Why, of course it has been a very late affair at Judge Brack&#x27;s--</p>
+<p>MRS. ELVSTED.</p>
+<p>Yes, yes--that is clear enough. But all the same--</p>
+<p>HEDDA.</p>
+<p>And then, you see, Tesman hasn&#x27;t cared to come home and ring us up in the middle of the night. [Laughing.] Perhaps he wasn&#x27;t inclined to show himself either--immediately after a jollification.</p>
+<p>MRS. ELVSTED.</p>
+<p>But in that case--where can he have gone?</p>
+<p>HEDDA.</p>
+<p>Of course he has gone to his Aunts&#x27; and slept there. They have his old room ready for him.</p>
+<p>MRS. ELVSTED.</p>
+<p>No, he can&#x27;t be with them for a letter has just come for him from Miss Tesman. There it lies.</p>
+<p>HEDDA.</p>
+<p>Indeed? [Looks at the address.] Why yes, it&#x27;s addressed in Aunt Julia&#x27;s hand. Well then, he has remained at Judge Brack&#x27;s. And as for Eilert Lovborg--he is sitting, with vine-leaves in his hair, reading his manuscript.</p>
+<p>MRS. ELVSTED.</p>
+<p>Oh, Hedda, you are just saying things you don&#x27;t believe a bit.</p>
+<p>HEDDA.</p>
+<p>You really are a little blockhead, Thea.</p>
+<p>MRS. ELVSTED.</p>
+<p>Oh yes, I suppose I am.</p>
+<p>HEDDA.</p>
+<p>And how mortally tired you look.</p>
+<p>MRS. ELVSTED.</p>
+<p>Yes, I am mortally tired.</p>
+<p>HEDDA.</p>
+<p>Well then, you must do as I tell you. You must go into my room and lie down for a little while.</p>
+<p>MRS. ELVSTED.</p>
+<p>Oh no, no--I shouldn&#x27;t be able to sleep.</p>
+<p>HEDDA.</p>
+<h3 class="sub">I am sure you would.</h3>
+<p>MRS. ELVSTED.</p>
+<p>Well, but you husband is certain to come soon now; and then I want to know at once--</p>
+<p>HEDDA.</p>
+<h3 class="sub">I shall take care to let you know when he comes.</h3>
+<p>MRS. ELVSTED.</p>
+<p>Do you promise me, Hedda?</p>
+<p>HEDDA.</p>
+<p>Yes, rely upon me. Just you go in and have a sleep in the meantime.</p>
+<p>MRS. ELVSTED.</p>
+<p>Thanks; then I&#x27;ll try. [She goes off to the inner room.</p>
+<p>[HEDDA goes up to the glass door and draws back the curtains. The broad daylight streams into the room.  Then she takes a little hand-glass from the writing-table, looks at herself in it, and arranges her hair.  Next she goes to the hall door and presses the bell-button.</p>
+<p>BERTA presently appears at the hall door.</p>
+<p>BERTA.</p>
+<p>Did you want anything, ma&#x27;am?</p>
+<p>HEDDA.</p>
+<p>Yes; you must put some more wood in the stove. I am shivering.</p>
+<p>BERTA.</p>
+<p>Bless me--I&#x27;ll make up the fire at once. [She rakes the embers together and lays a piece of wood upon them; then stops and listens.] That was a ring at the front door, ma&#x27;am.</p>
+<p>HEDDA.</p>
+<p>Then go to the door. I will look after the fire.</p>
+<p>BERTA.</p>
+<p>It&#x27;ll soon burn up. [She goes out by the hall door.</p>
+<p>[HEDDA kneels on the foot-rest and lays some more pieces of wood in the stove.</p>
+<p>After a short pause, GEORGE TESMAN enters from the hall.  He steals on tiptoe towards the middle doorway and is about to slip through the curtains.</p>
+<p>HEDDA.</p>
+<p>[At the stove, without looking up.] Good morning.</p>
+<p>TESMAN.</p>
+<p>[Turns.] Hedda! [Approaching her.] Good heavens--are you up so early? Eh?</p>
+<p>HEDDA.</p>
+<p>Yes, I am up very early this morning.</p>
+<p>TESMAN.</p>
+<p>And I never doubted you were still sound asleep! Fancy that, Hedda!</p>
+<p>HEDDA.</p>
+<p>Don&#x27;t speak so loud. Mrs. Elvsted is resting in my room.</p>
+<p>TESMAN.</p>
+<p>Has Mrs. Elvsted been here all night?</p>
+<p>HEDDA.</p>
+<p>Yes, since no one came to fetch her.</p>
+<p>TESMAN.</p>
+<p>Ah, to be sure.</p>
+<p>HEDDA.</p>
+<p>[Closes the door of the stove and rises.] Well, did you enjoy yourselves at Judge Brack&#x27;s?</p>
+<p>TESMAN.</p>
+<p>Have you been anxious about me? Eh?</p>
+<p>HEDDA.</p>
+<p>No, I should never think of being anxious. But I asked if you had enjoyed yourself.</p>
+<p>TESMAN.</p>
+<p>Oh yes,--for once in a way. Especially the beginning of the evening; for then Eilert read me part of his book. We arrived more than an hour too early--fancy that! And Brack had all sorts of arrangements to make--so Eilert read to me.</p>
+<p>HEDDA.</p>
+<p>[Seating herself by the table on the right.] Well? Tell me then--</p>
+<p>TESMAN.</p>
+<p>[Sitting on a footstool near the stove.] Oh, Hedda, you can&#x27;t conceive what a book that is going to be! I believe it is one of the most remarkable things that have ever been written. Fancy that!</p>
+<p>HEDDA.</p>
+<p>Yes yes; I don&#x27;t care about that--</p>
+<p>TESMAN.</p>
+<h3 class="sub">I must make a confession to you, Hedda. When he had finished reading--a horrid feeling came over me.</h3>
+<p>HEDDA.</p>
+<p>A horrid feeling?</p>
+<p>TESMAN.</p>
+<h3 class="sub">I felt jealous of Eilert for having had it in him to write such a book. Only think, Hedda!</h3>
+<p>HEDDA.</p>
+<p>Yes, yes, I am thinking!</p>
+<p>TESMAN.</p>
+<p>And then how pitiful to think that he--with all his gifts--should be irreclaimable, after all.</p>
+<p>HEDDA.</p>
+<h3 class="sub">I suppose you mean that he has more courage than the rest?</h3>
+<p>TESMAN.</p>
+<p>No, not at all--I mean that he is incapable of taking his pleasure in moderation.</p>
+<p>HEDDA.</p>
+<p>And what came of it all--in the end?</p>
+<p>TESMAN.</p>
+<p>Well, to tell the truth, I think it might best be described as an orgie, Hedda.</p>
+<p>HEDDA.</p>
+<p>Had he vine-leaves in his hair?</p>
+<p>TESMAN.</p>
+<p>Vine-leaves? No, I saw nothing of the sort. But he made a long, rambling speech in honour of the woman who had inspired him in his work--that was the phrase he used.</p>
+<p>HEDDA.</p>
+<p>Did he name her?</p>
+<p>TESMAN.</p>
+<p>No, he didn&#x27;t; but I can&#x27;t help thinking he meant Mrs. Elvsted. You may be sure he did.</p>
+<p>HEDDA.</p>
+<p>Well--where did you part from him?</p>
+<p>TESMAN.</p>
+<p>On the way to town. We broke up--the last of us at any rate--all together; and Brack came with us to get a breath of fresh air. And then, you see, we agreed to take Eilert home; for he had had far more than was good for him.</p>
+<p>HEDDA.</p>
+<h3 class="sub">I daresay.</h3>
+<p>TESMAN.</p>
+<p>But now comes the strange part of it, Hedda; or, I should rather say, the melancholy part of it. I declare I am almost ashamed--on Eilert&#x27;s account--to tell you--</p>
+<p>HEDDA.</p>
+<p>Oh, go on--!</p>
+<p>TESMAN.</p>
+<p>Well, as we were getting near town, you see, I happened to drop a little behind the others. Only for a minute or two--fancy that!</p>
+<p>HEDDA.</p>
+<p>Yes yes yes, but--?</p>
+<p>TESMAN.</p>
+<p>And then, as I hurried after them--what do you think I found by the wayside? Eh?</p>
+<p>HEDDA.</p>
+<p>Oh, how should I know!</p>
+<p>TESMAN.</p>
+<p>You mustn&#x27;t speak of it to a soul, Hedda! Do you hear! Promise me, for Eilert&#x27;s sake. [Draws a parcel, wrapped in paper, from his coat pocket.] Fancy, dear--I found this.</p>
+<p>HEDDA.</p>
+<p>Is not that the parcel he had with him yesterday?</p>
+<p>TESMAN.</p>
+<p>Yes, it is the whole of his precious, irreplaceable manuscript! And he had gone and lost it, and knew nothing about it. Only fancy, Hedda! So deplorably--</p>
+<p>HEDDA.</p>
+<p>But why did you not give him back the parcel at once?</p>
+<p>TESMAN.</p>
+<h3 class="sub">I didn&#x27;t dare to--in the state he was then in--</h3>
+<p>HEDDA.</p>
+<p>Did you not tell any of the others that you had found it?</p>
+<p>TESMAN.</p>
+<p>Oh, far from it! You can surely understand that, for Eilert&#x27;s sake, I wouldn&#x27;t do that.</p>
+<p>HEDDA.</p>
+<p>So no one knows that Eilert Lovborg&#x27;s manuscript is in your possession?</p>
+<p>TESMAN.</p>
+<p>No. And no one must know it.</p>
+<p>HEDDA.</p>
+<p>Then what did you say to him afterwards?</p>
+<p>TESMAN.</p>
+<h3 class="sub">I didn&#x27;t talk to him again at all; for when we got in among the streets, he and two or three of the others gave us the slip and disappeared. Fancy that!</h3>
+<p>HEDDA.</p>
+<p>Indeed! They must have taken him home then.</p>
+<p>TESMAN.</p>
+<p>Yes, so it would appear. And Brack, too, left us.</p>
+<p>HEDDA.</p>
+<p>And what have you been doing with yourself since?</p>
+<p>TESMAN.</p>
+<p>Well, I and some of the others went home with one of the party, a jolly fellow, and took our morning coffee with him; or perhaps I should rather call it our night coffee--eh? But now, when I have rested a little, and given Eilert, poor fellow, time to have his sleep out, I must take this back to him.</p>
+<p>HEDDA.</p>
+<p>[Holds out her hand for the packet.] No--don&#x27;t give it to him! Not in such a hurry, I mean. Let me read it first.</p>
+<p>TESMAN.</p>
+<p>No, my dearest Hedda, I mustn&#x27;t, I really mustn&#x27;t.</p>
+<p>HEDDA.</p>
+<p>You must not?</p>
+<p>TESMAN.</p>
+<p>No--for you can imagine what a state of despair he will be in when he wakens and misses the manuscript. He has no copy of it, you must know! He told me so.</p>
+<p>HEDDA.</p>
+<p>[Looking searchingly at him.] Can such a thing not be reproduced? Written over again?</p>
+<p>TESMAN.</p>
+<p>No, I don&#x27;t think that would be possible. For the inspiration, you see--</p>
+<p>HEDDA.</p>
+<p>Yes, yes--I suppose it depends on that--[Lightly.] But, by-the-bye --here is a letter for you.</p>
+<p>TESMAN.</p>
+<p>Fancy--!</p>
+<p>HEDDA.</p>
+<p>[Handing it to him.] It came early this morning.</p>
+<p>TESMAN.</p>
+<p>It&#x27;s from Aunt Julia! What can it be? [He lays the packet on the other footstool, opens the letter, runs his eye through it, and jumps up.] Oh, Hedda--she says that poor Aunt Rina is dying!</p>
+<p>HEDDA.</p>
+<p>Well, we were prepared for that.</p>
+<p>TESMAN.</p>
+<p>And that if I want to see her again, I must make haste. I&#x27;ll run in to them at once.</p>
+<p>HEDDA.</p>
+<p>[Suppressing a smile.] Will you run?</p>
+<p>TESMAN.</p>
+<p>Oh, my dearest Hedda--if you could only make up your mind to come with me! Just think!</p>
+<p>HEDDA.</p>
+<p>[Rises and says wearily, repelling the idea.] No, no don&#x27;t ask me. I will not look upon sickness and death. I loathe all sorts of ugliness.</p>
+<p>TESMAN.</p>
+<p>Well, well, then--! [Bustling around.] My hat--? My overcoat--? Oh, in the hall--. I do hope I mayn&#x27;t come too late, Hedda! Eh?</p>
+<p>HEDDA.</p>
+<p>Oh, if you run-- [BERTA appears at the hall door.</p>
+<p>BERTA.</p>
+<p>Judge Brack is at the door, and wishes to know if he may come in.</p>
+<p>TESMAN.</p>
+<p>At this time! No, I can&#x27;t possibly see him.</p>
+<p>HEDDA.</p>
+<p>But I can. [To BERTA.] Ask Judge Brack to come in. [BERTA goes out.</p>
+<p>HEDDA.</p>
+<p>[Quickly, whispering.] The parcel, Tesman!</p>
+<p>[She snatches it up from the stool.</p>
+<p>TESMAN.</p>
+<p>Yes, give it to me!</p>
+<p>HEDDA.</p>
+<p>No, no, I will keep it till you come back.</p>
+<p>[She goes to the writing-table and places it in the bookcase. TESMAN stands in a flurry of haste, and cannot get his gloves on.</p>
+<p>JUDGE BRACK enters from the hall.</p>
+<p>HEDDA.</p>
+<p>[Nodding to him.] You are an early bird, I must say.</p>
+<p>BRACK.</p>
+<p>Yes, don&#x27;t you think so! [To TESMAN.] Are you on the move, too?</p>
+<p>TESMAN.</p>
+<p>Yes, I must rush of to my aunts&#x27;. Fancy--the invalid one is lying at death&#x27;s door, poor creature.</p>
+<p>BRACK.</p>
+<p>Dear me, is she indeed? Then on no account let me detain you. At such a critical moment--</p>
+<p>TESMAN.</p>
+<p>Yes, I must really rush-- Good-bye! Good-bye!</p>
+<p>[He hastens out by the hall door.</p>
+<p>HEDDA.</p>
+<p>[Approaching.] You seem to have made a particularly lively night of it at your rooms, Judge Brack.</p>
+<p>BRACK.</p>
+<h3 class="sub">I assure you I have not had my clothes off, Mrs. Hedda.</h3>
+<p>HEDDA.</p>
+<p>Not you, either?</p>
+<p>BRACK.</p>
+<p>No, as you may see. But what has Tesman been telling you of the night&#x27;s adventures?</p>
+<p>HEDDA.</p>
+<p>Oh, some tiresome story. Only that they went and had coffee somewhere or other.</p>
+<p>BRACK.</p>
+<h3 class="sub">I have heard about that coffee-party already. Eilert Lovborg was not with them, I fancy?</h3>
+<p>HEDDA.</p>
+<p>No, they had taken him home before that.</p>
+<p>BRACK.</p>
+<p>Tesman too?</p>
+<p>HEDDA.</p>
+<p>No, but some of the others, he said.</p>
+<p>BRACK.</p>
+<p>[Smiling.] George Tesman is really an ingenuous creature, Mrs. Hedda.</p>
+<p>HEDDA.</p>
+<p>Yes, heaven knows he is. Then is there something behind all this?</p>
+<p>BRACK.</p>
+<p>Yes, perhaps there may be.</p>
+<p>HEDDA.</p>
+<p>Well then, sit down, my dear Judge, and tell your story in comfort.</p>
+<p>[She seats herself to the left of the table.  BRACK sits near her, at the long side of the table.</p>
+<p>HEDDA.</p>
+<p>Now then?</p>
+<p>BRACK.</p>
+<h3 class="sub">I had special reasons for keeping track of my guests--last night.</h3>
+<p>HEDDA.</p>
+<p>Of Eilert Lovborg among the rest, perhaps?</p>
+<p>BRACK.</p>
+<p>Frankly, yes.</p>
+<p>HEDDA.</p>
+<p>Now you make me really curious--</p>
+<p>BRACK.</p>
+<p>Do you know where he and one or two of the others finished the night, Mrs. Hedda?</p>
+<p>HEDDA.</p>
+<p>If it is not quite unmentionable, tell me.</p>
+<p>BRACK.</p>
+<p>Oh no, it&#x27;s not at all unmentionable. Well, they put in an appearance at a particularly animated soiree.</p>
+<p>HEDDA.</p>
+<p>Of the lively kind?</p>
+<p>BRACK.</p>
+<p>Of the very liveliest--</p>
+<p>HEDDA.</p>
+<p>Tell me more of this, Judge Brack--</p>
+<p>BRACK.</p>
+<p>Lovborg, as well as the others, had been invited in advance. I knew all about it. But he had declined the invitation; for now, as you know, he has become a new man.</p>
+<p>HEDDA.</p>
+<p>Up at the Elvsteds&#x27;, yes. But he went after all, then?</p>
+<p>BRACK.</p>
+<p>Well, you see, Mrs. Hedda--unhappily the spirit moved him at my rooms last evening--</p>
+<p>HEDDA.</p>
+<p>Yes, I hear he found inspiration.</p>
+<p>BRACK.</p>
+<p>Pretty violent inspiration. Well, I fancy that altered his purpose; for we menfolk are unfortunately not always so firm in our principles as we ought to be.</p>
+<p>HEDDA.</p>
+<p>Oh, I am sure you are an exception, Judge Brack. But as to Lovborg--?</p>
+<p>BRACK.</p>
+<p>To make a long story short--he landed at last in Mademoiselle Diana&#x27;s rooms.</p>
+<p>HEDDA.</p>
+<p>Mademoiselle Diana&#x27;s?</p>
+<p>BRACK.</p>
+<p>It was Mademoiselle Diana that was giving the soiree, to a select circle of her admirers and her lady friends.</p>
+<p>HEDDA.</p>
+<p>Is she a red-haired woman?</p>
+<p>BRACK.</p>
+<p>Precisely.</p>
+<p>HEDDA.</p>
+<p>A sort of a--singer?</p>
+<p>BRACK.</p>
+<p>Oh yes--in her leisure moments. And moreover a mighty huntress--of men--Mrs. Hedda. You have no doubt heard of her. Eilert Lovborg was one of her most enthusiastic protectors--in the days of his glory.</p>
+<p>HEDDA.</p>
+<p>And how did all this end?</p>
+<p>BRACK.</p>
+<p>Far from amicably, it appears. After a most tender meeting, they seem to have come to blows--</p>
+<p>HEDDA.</p>
+<p>Lovborg and she?</p>
+<p>BRACK.</p>
+<p>Yes. He accused her or her friends of having robbed him. He declared that his pocket-book had disappeared--and other things as well. In short, he seems to have made a furious disturbance.</p>
+<p>HEDDA.</p>
+<p>And what came of it all?</p>
+<p>BRACK.</p>
+<p>It came to a general scrimmage, in which the ladies as well as the gentlemen took part. Fortunately the police at last appeared on the scene.</p>
+<p>HEDDA.</p>
+<p>The police too?</p>
+<p>BRACK.</p>
+<p>Yes. I fancy it will prove a costly frolic for Eilert Lovborg, crazy being that he is.</p>
+<p>HEDDA.</p>
+<p>How so?</p>
+<p>BRACK.</p>
+<p>He seems to have made a violent resistance--to have hit one of the constables on the head and torn the coat off his back. So they had to march him off to the police-station with the rest.</p>
+<p>HEDDA.</p>
+<p>How have you learnt all this?</p>
+<p>BRACK.</p>
+<p>From the police themselves.</p>
+<p>HEDDA.</p>
+<p>[Gazing straight before her.] So that is what happened. Then he had no vine-leaves in his hair.</p>
+<p>BRACK.</p>
+<p>Vine-leaves, Mrs. Hedda?</p>
+<p>HEDDA.</p>
+<p>[Changing her tone.] But tell me now, Judge--what is your real reason for tracking out Eilert Lovborg&#x27;s movements so carefully?</p>
+<p>BRACK.</p>
+<p>In the first place, it could not be entirely indifferent to me if it should appear in the police-court that he came straight from my house.</p>
+<p>HEDDA.</p>
+<p>Will the matter come into court then?</p>
+<p>BRACK.</p>
+<p>Of course. However, I should scarcely have troubled so much about that. But I thought that, as a friend of the family, it was my duty to supply you and Tesman with a full account of his nocturnal exploits.</p>
+<p>HEDDA.</p>
+<p>Why so, Judge Brack?</p>
+<p>BRACK.</p>
+<p>Why, because I have a shrewd suspicion that he intends to use you as a sort of blind.</p>
+<p>HEDDA.</p>
+<p>Oh, how can you think such a thing!</p>
+<p>BRACK.</p>
+<p>Good heavens, Mrs. Hedda--we have eyes in our head. Mark my words! This Mrs. Elvsted will be in no hurry to leave town again.</p>
+<p>HEDDA.</p>
+<p>Well, even if there should be anything between them, I suppose there are plenty of other places where they could meet.</p>
+<p>BRACK.</p>
+<p>Not a single home. Henceforth, as before, every respectable house will be closed against Eilert Lovborg.</p>
+<p>HEDDA.</p>
+<p>And so ought mine to be, you mean?</p>
+<p>BRACK.</p>
+<p>Yes. I confess it would be more than painful to me if this personage were to be made free of your house. How superfluous, how intrusive, he would be, if he were to force his way into--</p>
+<p>HEDDA.</p>
+<p>--into the triangle?</p>
+<p>BRACK.</p>
+<p>Precisely. It would simply mean that I should find myself homeless.</p>
+<p>HEDDA.</p>
+<p>[Looks at him with a smile.] So you want to be the one cock in the basket(12)--that is your aim.</p>
+<p>BRACK.</p>
+<p>[Nods slowly and lowers his voice.] Yes, that is my aim. And for that I will fight--with every weapon I can command.</p>
+<p>HEDDA.</p>
+<p>[Her smile vanishing.] I see you are a dangerous person--when it comes to the point.</p>
+<p>BRACK.</p>
+<p>Do you think so?</p>
+<p>HEDDA.</p>
+<h3 class="sub">I am beginning to think so. And I am exceedingly glad to think--that you have no sort of hold over me.</h3>
+<p>BRACK.</p>
+<p>[Laughing equivocally.] Well well, Mrs. Hedda--perhaps you are right there. If I had, who knows what I might be capable of?</p>
+<p>HEDDA.</p>
+<p>Come come now, Judge Brack! That sounds almost like a threat.</p>
+<p>BRACK.</p>
+<p>[Rising.] Oh, not at all! The triangle, you know, ought, if possible, to be spontaneously constructed.</p>
+<p>HEDDA.</p>
+<p>There I agree with you.</p>
+<p>BRACK.</p>
+<p>Well, now I have said all I had to say; and I had better be getting back to town. Good-bye, Mrs. Hedda. [He goes towards the glass door.</p>
+<p>HEDDA.</p>
+<p>[Rising.] Are you going through the garden?</p>
+<p>BRACK.</p>
+<p>Yes, it&#x27;s a short cut for me.</p>
+<p>HEDDA.</p>
+<p>And then it is a back way, too.</p>
+<p>BRACK.</p>
+<p>Quite so. I have no objection to back ways. They may be piquant enough at times.</p>
+<p>HEDDA.</p>
+<p>When there is ball practice going on, you mean?</p>
+<p>BRACK.</p>
+<p>[In the doorway, laughing to her.] Oh, people don&#x27;t shoot their tame poultry, I fancy.</p>
+<p>HEDDA.</p>
+<p>[Also laughing.] Oh no, when there is only one cock in the basket--</p>
+<p>[They exchange laughing nods of farewell.  He goes.  She closes the door behind him.</p>
+<p>[HEDDA, who has become quite serious, stands for a moment looking out.  Presently she goes and peeps through the curtain over the middle doorway.  Then she goes to the writing-table, takes LOVBORG&#x27;S packet out of the bookcase, and is on the point of looking through its contents.  BERTA is heard speaking loudly in the hall.  HEDDA turns and listens.  Then she hastily locks up the packet in the drawer, and lays the key on the inkstand.</p>
+<p>EILERT LOVBORG, with his greatcoat on and his hat in his hand, tears open the hall door.  He looks somewhat confused and irritated.</p>
+<p>LOVBORG.</p>
+<p>[Looking towards the hall.] and I tell you I must and will come in! There!</p>
+<p>[He closes the door, turns, sees HEDDA, at once regains his self- control, and bows.</p>
+<p>HEDDA.</p>
+<p>[At the writing-table.] Well, Mr Lovborg, this is rather a late hour to call for Thea.</p>
+<p>LOVBORG.</p>
+<p>You mean rather an early hour to call on you. Pray pardon me.</p>
+<p>HEDDA.</p>
+<p>How do you know that she is still here?</p>
+<p>LOVBORG.</p>
+<p>They told me at her lodgings that she had been out all night.</p>
+<p>HEDDA.</p>
+<p>[Going to the oval table.] Did you notice anything about the people of the house when they said that?</p>
+<p>LOVBORG.</p>
+<p>[Looks inquiringly at her.] Notice anything about them?</p>
+<p>HEDDA.</p>
+<h3 class="sub">I mean, did they seem to think it odd?</h3>
+<p>LOVBORG.</p>
+<p>[Suddenly understanding.] Oh yes, of course! I am dragging her down with me! However, I didn&#x27;t notice anything.--I suppose Tesman is not up yet.</p>
+<p>HEDDA.</p>
+<p>No--I think not--</p>
+<p>LOVBORG.</p>
+<p>When did he come home?</p>
+<p>HEDDA.</p>
+<p>Very late.</p>
+<p>LOVBORG.</p>
+<p>Did he tell you anything?</p>
+<p>HEDDA.</p>
+<p>Yes, I gathered that you had had an exceedingly jolly evening at Judge Brack&#x27;s.</p>
+<p>LOVBORG.</p>
+<p>Nothing more?</p>
+<p>HEDDA.</p>
+<h3 class="sub">I don&#x27;t think so. However, I was so dreadfully sleepy--</h3>
+<p>MRS. ELVSTED enters through the curtains of the middle doorway.</p>
+<p>MRS. ELVSTED.</p>
+<p>[Going towards him.] Ah, Lovborg! At last--!</p>
+<p>LOVBORG.</p>
+<p>Yes, at last. And too late!</p>
+<p>MRS. ELVSTED.</p>
+<p>[Looks anxiously at him.] What is too late?</p>
+<p>LOVBORG.</p>
+<p>Everything is too late now. It is all over with me.</p>
+<p>MRS. ELVSTED.</p>
+<p>Oh no, no--don&#x27;t say that!</p>
+<p>LOVBORG.</p>
+<p>You will say the same when you hear--</p>
+<p>MRS. ELVSTED.</p>
+<h3 class="sub">I won&#x27;t hear anything!</h3>
+<p>HEDDA.</p>
+<p>Perhaps you would prefer to talk to her alone? If so, I will leave you.</p>
+<p>LOVBORG.</p>
+<p>No, stay--you too. I beg you to stay.</p>
+<p>MRS. ELVSTED.</p>
+<p>Yes, but I won&#x27;t hear anything, I tell you.</p>
+<p>LOVBORG.</p>
+<p>It is not last night&#x27;s adventures that I want to talk about.</p>
+<p>MRS. ELVSTED.</p>
+<p>What is it then--?</p>
+<p>LOVBORG.</p>
+<h3 class="sub">I want to say that now our ways must part.</h3>
+<p>MRS. ELVSTED.</p>
+<h2 class="chapter" id="c4">Part!</h2>
+<p>HEDDA.</p>
+<p>[Involuntarily.] I knew it!</p>
+<p>LOVBORG.</p>
+<p>You can be of no more service to me, Thea.</p>
+<p>MRS. ELVSTED.</p>
+<p>How can you stand there and say that! No more service to you! Am I not to help you now, as before? Are we not to go on working together?</p>
+<p>LOVBORG.</p>
+<p>Henceforward I shall do no work.</p>
+<p>MRS. ELVSTED.</p>
+<p>[Despairingly.] Then what am I to do with my life?</p>
+<p>LOVBORG.</p>
+<p>You must try to live your life as if you had never known me.</p>
+<p>MRS. ELVSTED.</p>
+<p>But you know I cannot do that!</p>
+<p>LOVBORG.</p>
+<p>Try if you cannot, Thea. You must go home again--</p>
+<p>MRS. ELVSTED.</p>
+<p>[In vehement protest.] Never in this world! Where you are, there will I be also! I will not let myself be driven away like this! I will remain here! I will be with you when the book appears.</p>
+<p>HEDDA.</p>
+<p>[Half aloud, in suspense.] Ah yes--the book!</p>
+<p>LOVBORG.</p>
+<p>[Looks at her.] My book and Thea&#x27;s; for that is what it is.</p>
+<p>MRS. ELVSTED.</p>
+<p>Yes, I feel that it is. And that is why I have a right to be with you when it appears! I will see with my own eyes how respect and honour pour in upon you afresh. And the happiness--the happiness--oh, I must share it with you!</p>
+<p>LOVBORG.</p>
+<h3 class="sub">Thea--our book will never appear.</h3>
+<p>HEDDA.</p>
+<p>Ah!</p>
+<p>MRS. ELVSTED.</p>
+<p>Never appear!</p>
+<p>LOVBORG.</p>
+<p>Can never appear.</p>
+<p>MRS. ELVSTED.</p>
+<p>[In agonised foreboding.] Lovborg--what have you done with the manuscript?</p>
+<p>HEDDA.</p>
+<p>[Looks anxiously at him.] Yes, the manuscript--?</p>
+<p>MRS. ELVSTED.</p>
+<p>Where is it?</p>
+<p>LOVBORG.</p>
+<p>The manuscript--. Well then--I have torn the manuscript into a thousand pieces.</p>
+<p>MRS. ELVSTED.</p>
+<p>[Shrieks.] Oh no, no--!</p>
+<p>HEDDA.</p>
+<p>[Involuntarily.] But that&#x27;s not--</p>
+<p>LOVBORG.</p>
+<p>[Looks at her.] Not true, you think?</p>
+<p>HEDDA.</p>
+<p>[Collecting herself.] Oh well, of course--since you say so. But it sounded so improbable--</p>
+<p>LOVBORG.</p>
+<p>It is true, all the same.</p>
+<p>MRS. ELVSTED.</p>
+<p>[Wringing her hands.] Oh God--oh God, Hedda--torn his own work to pieces!</p>
+<p>LOVBORG.</p>
+<h3 class="sub">I have torn my own life to pieces. So why should I not tear my life-work too--?</h3>
+<p>MRS. ELVSTED.</p>
+<p>And you did this last night?</p>
+<p>LOVBORG.</p>
+<p>Yes, I tell you! Tore it into a thousand pieces--and scattered them on the fiord--far out. There there is cool sea-water at any rate--let them drift upon it--drift with the current and the wind. And then presently they will sink--deeper and deeper--as I shall, Thea.</p>
+<p>MRS. ELVSTED.</p>
+<p>Do you know, Lovborg, that what you have done with the book--I shall think of it to my dying day as though you had killed a little child.</p>
+<p>LOVBORG.</p>
+<p>Yes, you are right. It is a sort of child-murder.</p>
+<p>MRS. ELVSTED.</p>
+<p>How could you, then--! Did not the child belong to me too?</p>
+<p>HEDDA.</p>
+<p>[Almost inaudibly.] Ah, the child--</p>
+<p>MRS. ELVSTED.</p>
+<p>[Breathing heavily.] It is all over then. Well well, now I will go, Hedda.</p>
+<p>HEDDA.</p>
+<p>But you are not going away from town?</p>
+<p>MRS. ELVSTED.</p>
+<p>Oh, I don&#x27;t know what I shall do. I see nothing but darkness before me. [She goes out by the hall door.</p>
+<p>HEDDA.</p>
+<p>[Stands waiting for a moment.] So you are not going to see her home, Mr. Lovborg?</p>
+<p>LOVBORG.</p>
+<p>I? Through the streets? Would you have people see her walking with me?</p>
+<p>HEDDA.</p>
+<p>Of course I don&#x27;t know what else may have happened last night. But is it so utterly irretrievable?</p>
+<p>LOVBORG.</p>
+<p>It will not end with last night--I know that perfectly well. And the thing is that now I have no taste for that sort of life either. I won&#x27;t begin it anew. She has broken my courage and my power of braving life out.</p>
+<p>HEDDA.</p>
+<p>[Looking straight before her.] So that pretty little fool has had her fingers in a man&#x27;s destiny. [Looks at him.] But all the same, how could you treat her so heartlessly.</p>
+<p>LOVBORG.</p>
+<p>Oh, don&#x27;t say that I was heartless!</p>
+<p>HEDDA.</p>
+<p>To go and destroy what has filled her whole soul for months and years! You do not call that heartless!</p>
+<p>LOVBORG.</p>
+<p>To you I can tell the truth, Hedda.</p>
+<p>HEDDA.</p>
+<p>The truth?</p>
+<p>LOVBORG.</p>
+<p>First promise me--give me your word--that what I now confide in you Thea shall never know.</p>
+<p>HEDDA.</p>
+<h3 class="sub">I give you my word.</h3>
+<p>LOVBORG.</p>
+<p>Good. Then let me tell you that what I said just now was untrue.</p>
+<p>HEDDA.</p>
+<p>About the manuscript?</p>
+<p>LOVBORG.</p>
+<p>Yes. I have not torn it to pieces--nor thrown it into the fiord.</p>
+<p>HEDDA.</p>
+<p>No, no--. But--where is it then?</p>
+<p>LOVBORG.</p>
+<h3 class="sub">I have destroyed it none the less--utterly destroyed it, Hedda!</h3>
+<p>HEDDA.</p>
+<h3 class="sub">I don&#x27;t understand.</h3>
+<p>LOVBORG.</p>
+<p>Thea said that what I had done seemed to her like a child-murder.</p>
+<p>HEDDA.</p>
+<p>Yes, so she said.</p>
+<p>LOVBORG.</p>
+<p>But to kill his child--that is not the worst thing a father can do to it.</p>
+<p>HEDDA.</p>
+<p>Not the worst?</p>
+<p>LOVBORG.</p>
+<p>Suppose now, Hedda, that a man--in the small hours of the morning--came home to his child&#x27;s mother after a night of riot and debauchery, and said: &quot;Listen--I have been here and there--in this place and in that. And I have taken our child with--to this place and to that. And I have lost the child--utterly lost it. The devil knows into what hands it may have fallen--who may have had their clutches on it.&quot;</p>
+<p>HEDDA.</p>
+<p>Well--but when all is said and done, you know--this was only a book--</p>
+<p>LOVBORG.</p>
+<p>Thea&#x27;s pure soul was in that book.</p>
+<p>HEDDA.</p>
+<p>Yes, so I understand.</p>
+<p>LOVBORG.</p>
+<p>And you can understand, too, that for her and me together no future is possible.</p>
+<p>HEDDA.</p>
+<p>What path do you mean to take then?</p>
+<p>LOVBORG.</p>
+<p>None. I will only try to make an end of it all--the sooner the better.</p>
+<p>HEDDA.</p>
+<p>[A step nearer him.] Eilert Lovborg--listen to me.--Will you not try to--to do it beautifully?</p>
+<p>LOVBORG.</p>
+<p>Beautifully? [Smiling.] With vine-leaves in my hair, as you used to dream in the old days--?</p>
+<p>HEDDA.</p>
+<p>No, no. I have lost my faith in the vine-leaves. But beautifully nevertheless! For once in a way!--Good-bye! You must go now--and do not come here any more.</p>
+<p>LOVBORG.</p>
+<p>Good-bye, Mrs. Tesman. And give George Tesman my love.</p>
+<p>[He is on the point of going.</p>
+<p>HEDDA.</p>
+<p>No, wait! I must give you a memento to take with you.</p>
+<p>[She goes to the writing-table and opens the drawer and the pistol-case; then returns to LOVBORG with one of the pistols.</p>
+<p>LOVBORG.</p>
+<p>[Looks at her.] This? Is this the memento?</p>
+<p>HEDDA.</p>
+<p>[Nodding slowly.] Do you recognise it? It was aimed at you once.</p>
+<p>LOVBORG.</p>
+<p>You should have used it then.</p>
+<p>HEDDA.</p>
+<p>Take it--and do you use it now.</p>
+<p>LOVBORG.</p>
+<p>[Puts the pistol in his breast pocket.] Thanks!</p>
+<p>HEDDA.</p>
+<p>And beautifully, Eilert Lovborg. Promise me that!</p>
+<p>LOVBORG.</p>
+<p>Good-bye, Hedda Gabler. [He goes out by the hall door.</p>
+<p>[HEDDA listens for a moment at the door.  Then she goes up to the writing-table, takes out the packet of manuscript, peeps under the cover, draws a few of the sheets half out, and looks at them.  Next she goes over and seats herself in the arm-chair beside the stove, with the packet in her lap. Presently she opens the stove door, and then the packet.</p>
+<p>HEDDA.</p>
+<p>[Throws one of the quires into the fire and whispers to herself.] Now I am burning your child, Thea!--Burning it, curly-locks! [Throwing one or two more quires into the stove.] Your child and Eilert Lovborg&#x27;s. [Throws the rest in.] I am burning--I am burning your child.</p>
+<h2 class="chapter" id="c5">Act Fourth.</h2>
+<p>The same rooms at the TESMANS&#x27;.  It is evening.  The drawing- room is in darkness.  The back room is lighted by the hanging lamp over the table.  The curtains over the glass door are drawn close.</p>
+<p>HEDDA, dressed in black, walks to and fro in the dark room. Then she goes into the back room and disappears for a moment to the left.  She is heard to strike a few chords on the piano.  Presently she comes in sight again, and returns to the drawing-room.</p>
+<p>BERTA enters from the right, through the inner room, with a lighted lamp, which she places on the table in front of the corner settee in the drawing-room.  Her eyes are red with weeping, and she has black ribbons in her cap.  She goes quietly and circumspectly out to the right.  HEDDA goes up to the glass door, lifts the curtain a little aside, and looks out into the darkness.</p>
+<p>Shortly afterwards, MISS TESMAN, in mourning, with a bonnet and veil on, comes in from the hall.  HEDDA goes towards her and holds out her hand.</p>
+<p>MISS TESMAN.</p>
+<p>Yes, Hedda, here I am, in mourning and forlorn; for now my poor sister has at last found peace.</p>
+<p>HEDDA.</p>
+<h3 class="sub">I have heard the news already, as you see. Tesman sent me a card.</h3>
+<p>MISS TESMAN.</p>
+<p>Yes, he promised me he would. But nevertheless I thought that to Hedda--here in the house of life--I ought myself to bring the tidings of death.</p>
+<p>HEDDA.</p>
+<p>That was very kind of you.</p>
+<p>MISS TESMAN.</p>
+<p>Ah, Rina ought not to have left us just now. This is not the time for Hedda&#x27;s house to be a house of mourning.</p>
+<p>HEDDA.</p>
+<p>[Changing the subject.] She died quite peacefully, did she not, Miss Tesman?</p>
+<p>MISS TESMAN.</p>
+<p>Oh, her end was so calm, so beautiful. And then she had the unspeakable happiness of seeing George once more--and bidding him good-bye.--Has he not come home yet?</p>
+<p>HEDDA.</p>
+<p>No. He wrote that he might be detained. But won&#x27;t you sit down?</p>
+<p>MISS TESMAN.</p>
+<p>No thank you, my dear, dear Hedda. I should like to, but I have so much to do. I must prepare my dear one for her rest as well as I can. She shall go to her grave looking her best.</p>
+<p>HEDDA.</p>
+<p>Can I not help you in any way?</p>
+<p>MISS TESMAN.</p>
+<p>Oh, you must not think of it! Hedda Tesman must have no hand in such mournful work. Nor let her thought dwell on it either--not at this time.</p>
+<p>HEDDA.</p>
+<p>One is not always mistress of one&#x27;s thoughts--</p>
+<p>MISS TESMAN.</p>
+<p>[Continuing.] Ah yes, it is the way of the world. At home we shall be sewing a shroud; and here there will soon be sewing too, I suppose--but of another sort, thank God!</p>
+<p>GEORGE TESMAN enters by the hall door.</p>
+<p>HEDDA.</p>
+<p>Ah, you have come at last!</p>
+<p>TESMAN.</p>
+<p>You here, Aunt Julia? With Hedda? Fancy that!</p>
+<p>MISS TESMAN.</p>
+<h3 class="sub">I was just going, my dear boy. Well, have you done all you promised?</h3>
+<p>TESMAN.</p>
+<p>No; I&#x27;m really afraid I have forgotten half of it. I must come to you again to-morrow. To-day my brain is all in a whirl. I can&#x27;t keep my thoughts together.</p>
+<p>MISS TESMAN.</p>
+<p>Why, my dear George, you mustn&#x27;t take it in this way.</p>
+<p>TESMAN.</p>
+<p>Mustn&#x27;t--? How do you mean?</p>
+<p>MISS TESMAN.</p>
+<p>Even in your sorrow you must rejoice, as I do--rejoice that she is at rest.</p>
+<p>TESMAN.</p>
+<p>Oh yes, yes--you are thinking of Aunt Rina.</p>
+<p>HEDDA.</p>
+<p>You will feel lonely now, Miss Tesman.</p>
+<p>MISS TESMAN.</p>
+<p>Just at first, yes. But that will not last very long, I hope. I daresay I shall soon find an occupant for Rina&#x27;s little room.</p>
+<p>TESMAN.</p>
+<p>Indeed? Who do you think will take it? Eh?</p>
+<p>MISS TESMAN.</p>
+<p>Oh, there&#x27;s always some poor invalid or other in want of nursing, unfortunately.</p>
+<p>HEDDA.</p>
+<p>Would you really take such a burden upon you again?</p>
+<p>MISS TESMAN.</p>
+<p>A burden! Heaven forgive you, child--it has been no burden to me.</p>
+<p>HEDDA.</p>
+<p>But suppose you had a total stranger on your hands--</p>
+<p>MISS TESMAN.</p>
+<p>Oh, one soon makes friends with sick folk; and it&#x27;s such an absolute necessity for me to have some one to live for. Well, heaven be praised, there may soon be something in this house, too, to keep an old aunt busy.</p>
+<p>HEDDA.</p>
+<p>Oh, don&#x27;t trouble about anything here.</p>
+<p>TESMAN.</p>
+<p>Yes, just fancy what a nice time we three might have together, if--?</p>
+<p>HEDDA.</p>
+<p>If--?</p>
+<p>TESMAN.</p>
+<p>[Uneasily.] Oh nothing. It will all come right. Let us hope so--eh?</p>
+<p>MISS TESMAN.</p>
+<p>Well well, I daresay you two want to talk to each other. [Smiling.] And perhaps Hedda may have something to tell you too, George. Good-bye! I must go home to Rina. [Turning at the door.] How strange it is to think that now Rina is with me and with my poor brother as well!</p>
+<p>TESMAN.</p>
+<p>Yes, fancy that, Aunt Julia! Eh?</p>
+<p>[MISS TESMAN goes out by the hall door.</p>
+<p>HEDDA.</p>
+<p>[Follows TESMAN coldly and searchingly with her eyes.] I almost believe your Aunt Rina&#x27;s death affects you more than it does your Aunt Julia.</p>
+<p>TESMAN.</p>
+<p>Oh, it&#x27;s not that alone. It&#x27;s Eilert I am so terribly uneasy about.</p>
+<p>HEDDA.</p>
+<p>[Quickly.] Is there anything new about him?</p>
+<p>TESMAN.</p>
+<h3 class="sub">I looked in at his rooms this afternoon, intending to tell him the manuscript was in safe keeping.</h3>
+<p>HEDDA.</p>
+<p>Well, did you find him?</p>
+<p>TESMAN.</p>
+<p>No. He wasn&#x27;t at home. But afterwards I met Mrs. Elvsted, and she told me that he had been here early this morning.</p>
+<p>HEDDA.</p>
+<p>Yes, directly after you had gone.</p>
+<p>TESMAN.</p>
+<p>And he said that he had torn his manuscript to pieces--eh?</p>
+<p>HEDDA.</p>
+<p>Yes, so he declared.</p>
+<p>TESMAN.</p>
+<p>Why, good heavens, he must have been completely out of his mind! And I suppose you thought it best not to give it back to him, Hedda?</p>
+<p>HEDDA.</p>
+<p>No, he did not get it.</p>
+<p>TESMAN.</p>
+<p>But of course you told him that we had it?</p>
+<p>HEDDA.</p>
+<p>No. [Quickly.] Did you tell Mrs. Elvsted?</p>
+<p>TESMAN.</p>
+<p>No; I thought I had better not. But you ought to have told him. Fancy, if, in desperation, he should go and do himself some injury! Let me have the manuscript, Hedda! I will take it to him at once. Where is it?</p>
+<p>HEDDA.</p>
+<p>[Cold and immovable, leaning on the arm-chair.] I have not got it.</p>
+<p>TESMAN.</p>
+<p>Have not got it? What in the world do you mean?</p>
+<p>HEDDA.</p>
+<h3 class="sub">I have burnt it--every line of it.</h3>
+<p>TESMAN.</p>
+<p>[With a violent movement of terror.] Burnt! Burnt Eilert&#x27;s manuscript!</p>
+<p>HEDDA.</p>
+<p>Don&#x27;t scream so. The servant might hear you.</p>
+<p>TESMAN.</p>
+<p>Burnt! Why, good God--! No, no, no! It&#x27;s impossible!</p>
+<p>HEDDA.</p>
+<p>It is so, nevertheless.</p>
+<p>TESMAN.</p>
+<p>Do you know what you have done, Hedda? It&#x27;s unlawful appropriation of lost property. Fancy that! Just ask Judge Brack, and he&#x27;ll tell you what it is.</p>
+<p>HEDDA.</p>
+<h3 class="sub">I advise you not to speak of it--either to Judge Brack or to anyone else.</h3>
+<p>TESMAN.</p>
+<p>But how could you do anything so unheard-of? What put it into your head? What possessed you? Answer me that--eh?</p>
+<p>HEDDA.</p>
+<p>[Suppressing an almost imperceptible smile.] I did it for your sake, George.</p>
+<p>TESMAN.</p>
+<p>For my sake!</p>
+<p>HEDDA.</p>
+<p>This morning, when you told me about what he had read to you--</p>
+<p>TESMAN.</p>
+<p>Yes yes--what then?</p>
+<p>HEDDA.</p>
+<p>You acknowledged that you envied him his work.</p>
+<p>TESMAN.</p>
+<p>Oh, of course I didn&#x27;t mean that literally.</p>
+<p>HEDDA.</p>
+<p>No matter--I could not bear the idea that any one should throw you into the shade.</p>
+<p>TESMAN.</p>
+<p>[In an outburst of mingled doubt and joy.] Hedda! Oh, is this true? But--but--I never knew you show your love like that before. Fancy that!</p>
+<p>HEDDA.</p>
+<p>Well, I may as well tell you that--just at this time-- [Impatiently breaking off.] No, no; you can ask Aunt Julia. She will tell you, fast enough.</p>
+<p>TESMAN.</p>
+<p>Oh, I almost think I understand you, Hedda! [Clasps his hands together.] Great heavens! do you really mean it! Eh?</p>
+<p>HEDDA.</p>
+<p>Don&#x27;t shout so. The servant might hear.</p>
+<p>TESMAN.</p>
+<p>[Laughing in irrepressible glee.] The servant! Why, how absurd you are, Hedda. It&#x27;s only my old Berta! Why, I&#x27;ll tell Berta myself.</p>
+<p>HEDDA.</p>
+<p>[Clenching her hands together in desperation.] Oh, it is killing me, --it is killing me, all this!</p>
+<p>TESMAN.</p>
+<p>What is, Hedda? Eh?</p>
+<p>HEDDA.</p>
+<p>[Coldly, controlling herself.] All this--absurdity--George.</p>
+<p>TESMAN.</p>
+<p>Absurdity! Do you see anything absurd in my being overjoyed at the news! But after all--perhaps I had better not say anything to Berta.</p>
+<p>HEDDA.</p>
+<p>Oh--why not that too?</p>
+<p>TESMAN.</p>
+<p>No, no, not yet! But I must certainly tell Aunt Julia. And then that you have begun to call me George too! Fancy that! Oh, Aunt Julia will be so happy--so happy!</p>
+<p>HEDDA.</p>
+<p>When she hears that I have burnt Eilert Lovborg&#x27;s manuscript--for your sake?</p>
+<p>TESMAN.</p>
+<p>No, by-the-bye--that affair of the manuscript--of course nobody must know about that. But that you love me so much,(13) Hedda--Aunt Julia must really share my joy in that! I wonder, now, whether this sort of thing is usual in young wives? Eh?</p>
+<p>HEDDA.</p>
+<h3 class="sub">I think you had better ask Aunt Julia that question too.</h3>
+<p>TESMAN.</p>
+<p>I will indeed, some time or other. [Looks uneasy and downcast again.] And yet the manuscript--the manuscript! Good God! it is terrible to think what will become of poor Eilert now.</p>
+<p>MRS. ELVSTED, dressed as in the first Act, with hat and cloak, enters by the hall door.</p>
+<p>MRS. ELVSTED.</p>
+<p>[Greets them hurriedly, and says in evident agitation.] Oh, dear Hedda, forgive my coming again.</p>
+<p>HEDDA.</p>
+<p>What is the matter with you, Thea?</p>
+<p>TESMAN.</p>
+<p>Something about Eilert Lovborg again--eh?</p>
+<p>MRS. ELVSTED.</p>
+<p>Yes! I am dreadfully afraid some misfortune has happened to him.</p>
+<p>HEDDA.</p>
+<p>[Seized her arm.] Ah,--do you think so?</p>
+<p>TESMAN.</p>
+<p>Why, good Lord--what makes you think that, Mrs. Elvsted?</p>
+<p>MRS. ELVSTED.</p>
+<h3 class="sub">I heard them talking of him at my boarding-house--just as I came in. Oh, the most incredible rumours are afloat about him to-day.</h3>
+<p>TESMAN.</p>
+<p>Yes, fancy, so I heard too! And I can bear witness that he went straight home to bed last night. Fancy that!</p>
+<p>HEDDA.</p>
+<p>Well, what did they say at the boarding-house?</p>
+<p>MRS. ELVSTED.</p>
+<p>Oh, I couldn&#x27;t make out anything clearly. Either they knew nothing definite, or else--. They stopped talking when the saw me; and I did not dare to ask.</p>
+<p>TESMAN.</p>
+<p>[Moving about uneasily.] We must hope--we must hope that you misunderstood them, Mrs. Elvsted.</p>
+<p>MRS. ELVSTED.</p>
+<p>No, no; I am sure it was of him they were talking. And I heard something about the hospital or--</p>
+<p>TESMAN.</p>
+<p>The hospital?</p>
+<p>HEDDA.</p>
+<p>No--surely that cannot be!</p>
+<p>MRS. ELVSTED.</p>
+<p>Oh, I was in such mortal terror! I went to his lodgings and asked for him there.</p>
+<p>HEDDA.</p>
+<p>You could make up your mind to that, Thea!</p>
+<p>MRS. ELVSTED.</p>
+<p>What else could I do? I really could bear the suspense no longer.</p>
+<p>TESMAN.</p>
+<p>But you didn&#x27;t find him either--eh?</p>
+<p>MRS. ELVSTED.</p>
+<p>No. And the people knew nothing about him. He hadn&#x27;t been home since yesterday afternoon, they said.</p>
+<p>TESMAN.</p>
+<p>Yesterday! Fancy, how could they say that?</p>
+<p>MRS. ELVSTED.</p>
+<p>Oh, I am sure something terrible must have happened to him.</p>
+<p>TESMAN.</p>
+<p>Hedda dear--how would it be if I were to go and make inquiries--?</p>
+<p>HEDDA.</p>
+<p>No, no--don&#x27;t you mix yourself up in this affair.</p>
+<p>JUDGE BRACK, with his hat in his hand, enters by the hall door, which BERTA opens, and closes behind him.  He looks grave and bows in silence.</p>
+<p>TESMAN.</p>
+<p>Oh, is that you, my dear Judge? Eh?</p>
+<p>BRACK.</p>
+<p>Yes. It was imperative I should see you this evening.</p>
+<p>TESMAN.</p>
+<h3 class="sub">I can see you have heard the news about Aunt Rina?</h3>
+<p>BRACK.</p>
+<p>Yes, that among other things.</p>
+<p>TESMAN.</p>
+<p>Isn&#x27;t it sad--eh?</p>
+<p>BRACK.</p>
+<p>Well, my dear Tesman, that depends on how you look at it.</p>
+<p>TESMAN.</p>
+<p>[Looks doubtfully at him.] Has anything else happened?</p>
+<p>BRACK.</p>
+<p>Yes.</p>
+<p>HEDDA.</p>
+<p>[In suspense.] Anything sad, Judge Brack?</p>
+<p>BRACK.</p>
+<p>That, too, depends on how you look at it, Mrs. Tesman.</p>
+<p>MRS. ELVSTED.</p>
+<p>[Unable to restrain her anxiety.] Oh! it is something about Eilert Lovborg!</p>
+<p>BRACK.</p>
+<p>[With a glance at her.] What makes you think that, Madam? Perhaps you have already heard something--?</p>
+<p>MRS. ELVSTED.</p>
+<p>[In confusion.] No, nothing at all, but--</p>
+<p>TESMAN.</p>
+<p>Oh, for heaven&#x27;s sake, tell us!</p>
+<p>BRACK.</p>
+<p>[Shrugging his shoulders.] Well, I regret to say Eilert Lovborg has been taken to the hospital. He is lying at the point of death.</p>
+<p>MRS. ELVSTED.</p>
+<p>[Shrieks.] Oh God! oh God--!</p>
+<p>TESMAN.</p>
+<p>To the hospital! And at the point of death!</p>
+<p>HEDDA.</p>
+<p>[Involuntarily.] So soon then--</p>
+<p>MRS. ELVSTED.</p>
+<p>[Wailing.] And we parted in anger, Hedda!</p>
+<p>HEDDA.</p>
+<p>[Whispers.] Thea--Thea--be careful!</p>
+<p>MRS. ELVSTED.</p>
+<p>[Not heeding her.] I must go to him! I must see him alive!</p>
+<p>BRACK.</p>
+<p>It is useless, Madam. No one will be admitted.</p>
+<p>MRS. ELVSTED.</p>
+<p>Oh, at least tell me what has happened to him? What is it?</p>
+<p>TESMAN.</p>
+<p>You don&#x27;t mean to say that he has himself-- Eh?</p>
+<p>HEDDA.</p>
+<p>Yes, I am sure he has.</p>
+<p>BRACK.</p>
+<p>[Keeping his eyes fixed upon her.] Unfortunately you have guessed quite correctly, Mrs. Tesman.</p>
+<p>MRS. ELVSTED.</p>
+<p>Oh, how horrible!</p>
+<p>TESMAN.</p>
+<p>Himself, then! Fancy that!</p>
+<p>HEDDA.</p>
+<p>Shot himself!</p>
+<p>BRACK.</p>
+<p>Rightly guessed again, Mrs. Tesman.</p>
+<p>MRS. ELVSTED.</p>
+<p>[With an effort at self-control.] When did it happen, Mr. Brack?</p>
+<p>BRACK.</p>
+<p>This afternoon--between three and four.</p>
+<p>TESMAN.</p>
+<p>But, good Lord, where did he do it? Eh?</p>
+<p>BRACK.</p>
+<p>[With some hesitation.] Where? Well--I suppose at his lodgings.</p>
+<p>MRS. ELVSTED.</p>
+<p>No, that cannot be; for I was there between six and seven.</p>
+<p>BRACK.</p>
+<p>Well then, somewhere else. I don&#x27;t know exactly. I only know that he was found--. He had shot himself--in the breast.</p>
+<p>MRS. ELVSTED.</p>
+<p>Oh, how terrible! That he should die like that!</p>
+<p>HEDDA.</p>
+<p>[To BRACK.] Was it in the breast?</p>
+<p>BRACK.</p>
+<p>Yes--as I told you.</p>
+<p>HEDDA.</p>
+<p>Not in the temple?</p>
+<p>BRACK.</p>
+<p>In the breast, Mrs. Tesman.</p>
+<p>HEDDA.</p>
+<p>Well, well--the breast is a good place, too.</p>
+<p>BRACK.</p>
+<p>How do you mean, Mrs. Tesman?</p>
+<p>HEDDA.</p>
+<p>[Evasively.] Oh, nothing--nothing.</p>
+<p>TESMAN.</p>
+<p>And the wound is dangerous, you say--eh?</p>
+<p>BRACK.</p>
+<p>Absolutely mortal. The end has probably come by this time.</p>
+<p>MRS. ELVSTED.</p>
+<p>Yes, yes, I feel it. The end! The end! Oh, Hedda--!</p>
+<p>TESMAN.</p>
+<p>But tell me, how have you learnt all this?</p>
+<p>BRACK.</p>
+<p>[Curtly.] Through one of the police. A man I had some business with.</p>
+<p>HEDDA.</p>
+<p>[In a clear voice.] At last a deed worth doing!</p>
+<p>TESMAN.</p>
+<p>[Terrified.] Good heavens, Hedda! what are you saying?</p>
+<p>HEDDA.</p>
+<h3 class="sub">I say there is beauty in this.</h3>
+<p>BRACK.</p>
+<p>H&#x27;m, Mrs. Tesman--</p>
+<p>MRS. ELVSTED.</p>
+<p>Oh, Hedda, how can you talk of beauty in such an act!</p>
+<p>HEDDA.</p>
+<p>Eilert Lovborg has himself made up his account with life. He has had the courage to do--the one right thing.</p>
+<p>MRS. ELVSTED.</p>
+<p>No, you must never think that was how it happened! It must have been in delirium that he did it.</p>
+<p>TESMAN.</p>
+<p>In despair!</p>
+<p>HEDDA.</p>
+<p>That he did not. I am certain of that.</p>
+<p>MRS. ELVSTED.</p>
+<p>Yes, yes! In delirium! Just as when he tore up our manuscript.</p>
+<p>BRACK.</p>
+<p>[Starting.] The manuscript? Has he torn that up?</p>
+<p>MRS. ELVSTED.</p>
+<p>Yes, last night.</p>
+<p>TESMAN.</p>
+<p>[Whispers softly.] Oh, Hedda, we shall never get over this.</p>
+<p>BRACK.</p>
+<p>H&#x27;m, very extraordinary.</p>
+<p>TESMAN.</p>
+<p>[Moving about the room.] To think of Eilert going out of the world in this way! And not leaving behind him the book that would have immortalised his name--</p>
+<p>MRS. ELVSTED.</p>
+<p>Oh, if only it could be put together again!</p>
+<p>TESMAN.</p>
+<p>Yes, if it only could! I don&#x27;t know what I would not give--</p>
+<p>MRS. ELVSTED.</p>
+<p>Perhaps it can, Mr. Tesman.</p>
+<p>TESMAN.</p>
+<p>What do you mean?</p>
+<p>MRS. ELVSTED.</p>
+<p>[Searches in the pocket of her dress.] Look here. I have kept all the loose notes he used to dictate from.</p>
+<p>HEDDA.</p>
+<p>[A step forward.] Ah--!</p>
+<p>TESMAN.</p>
+<p>You have kept them, Mrs. Elvsted! Eh?</p>
+<p>MRS. ELVSTED.</p>
+<p>Yes, I have them here. I put them in my pocket when I left home. Here they still are--</p>
+<p>TESMAN.</p>
+<p>Oh, do let me see them!</p>
+<p>MRS. ELVSTED.</p>
+<p>[Hands him a bundle of papers.] But they are in such disorder--all mixed up.</p>
+<p>TESMAN.</p>
+<p>Fancy, if we could make something out of them, after all! Perhaps if we two put our heads together--</p>
+<p>MRS. ELVSTED.</p>
+<p>Oh yes, at least let us try--</p>
+<p>TESMAN.</p>
+<p>We will manage it! We must! I will dedicate my life to this task.</p>
+<p>HEDDA.</p>
+<p>You, George? Your life?</p>
+<p>TESMAN.</p>
+<p>Yes, or rather all the time I can spare. My own collections must wait in the meantime. Hedda--you understand, eh? I owe this to Eilert&#x27;s memory.</p>
+<p>HEDDA.</p>
+<p>Perhaps.</p>
+<p>TESMAN.</p>
+<p>And so, my dear Mrs. Elvsted, we will give our whole minds to it. There is no use in brooding over what can&#x27;t be undone--eh? We must try to control our grief as much as possible, and--</p>
+<p>MRS. ELVSTED.</p>
+<p>Yes, yes, Mr. Tesman, I will do the best I can.</p>
+<p>TESMAN.</p>
+<p>Well then, come here. I can&#x27;t rest until we have looked through the notes. Where shall we sit? Here? No, in there, in the back room. Excuse me, my dear Judge. Come with me, Mrs. Elvsted.</p>
+<p>MRS. ELVSTED.</p>
+<p>Oh, if only it were possible!</p>
+<p>[TESMAN and MRS. ELVSTED go into the back room.  She takes off her hat and cloak.  They both sit at the table under the hanging lamp, and are soon deep in an eager examination of the papers.  HEDDA crosses to the stove and sits in the arm- chair.  Presently BRACK goes up to her.</p>
+<p>HEDDA.</p>
+<p>[In a low voice.] Oh, what a sense of freedom it gives one, this act of Eilert Lovborg&#x27;s.</p>
+<p>BRACK.</p>
+<p>Freedom, Mrs. Hedda? Well, of course, it is a release for him--</p>
+<p>HEDDA.</p>
+<h3 class="sub">I mean for me. It gives me a sense of freedom to know that a deed of deliberate courage is still possible in this world,--a deed of spontaneous beauty.</h3>
+<p>BRACK.</p>
+<p>[Smiling.] H&#x27;m--my dear Mrs. Hedda--</p>
+<p>HEDDA.</p>
+<p>Oh, I know what you are going to say. For you are a kind of specialist too, like--you know!</p>
+<p>BRACK.</p>
+<p>[Looking hard at her.] Eilert Lovborg was more to you than perhaps you are willing to admit to yourself. Am I wrong?</p>
+<p>HEDDA.</p>
+<p>I don&#x27;t answer such questions. I only know that Eilert Lovborg has had the courage to live his life after his own fashion. And then--the last great act, with its beauty! Ah! that he should have the will and the strength to turn away from the banquet of life--so early.</p>
+<p>BRACK.</p>
+<h3 class="sub">I am sorry, Mrs. Hedda,--but I fear I must dispel an amiable illusion.</h3>
+<p>HEDDA.</p>
+<p>Illusion?</p>
+<p>BRACK.</p>
+<p>Which could not have lasted long in any case.</p>
+<p>HEDDA.</p>
+<p>What do you mean?</p>
+<p>BRACK.</p>
+<p>Eilert Lovborg did not shoot himself--voluntarily.</p>
+<p>HEDDA.</p>
+<p>Not voluntarily?</p>
+<p>BRACK.</p>
+<p>No. The thing did not happen exactly as I told it.</p>
+<p>HEDDA.</p>
+<p>[In suspense.] Have you concealed something? What is it?</p>
+<p>BRACK.</p>
+<p>For poor Mrs. Elvsted&#x27;s sake I idealised the facts a little.</p>
+<p>HEDDA.</p>
+<p>What are the facts?</p>
+<p>BRACK.</p>
+<p>First, that he is already dead.</p>
+<p>HEDDA.</p>
+<p>At the hospital?</p>
+<p>BRACK.</p>
+<p>Yes--without regaining consciousness.</p>
+<p>HEDDA.</p>
+<p>What more have you concealed?</p>
+<p>BRACK.</p>
+<p>This--the event did not happen at his lodgings.</p>
+<p>HEDDA.</p>
+<p>Oh, that can make no difference.</p>
+<p>BRACK.</p>
+<p>Perhaps it may. For I must tell you--Eilert Lovborg was found shot in--in Mademoiselle Diana&#x27;s boudoir.</p>
+<p>HEDDA.</p>
+<p>[Makes a motion as if to rise, but sinks back again.] That is impossible, Judge Brack! He cannot have been there again to-day.</p>
+<p>BRACK.</p>
+<p>He was there this afternoon. He went there, he said, to demand the return of something which they had taken from him. Talked wildly about a lost child--</p>
+<p>HEDDA.</p>
+<p>Ah--so that is why--</p>
+<p>BRACK.</p>
+<h3 class="sub">I thought probably he meant his manuscript; but now I hear he destroyed that himself. So I suppose it must have been his pocket-book.</h3>
+<p>HEDDA.</p>
+<p>Yes, no doubt. And there--there he was found?</p>
+<p>BRACK.</p>
+<p>Yes, there. With a pistol in his breast-pocket, discharged. The ball had lodged in a vital part.</p>
+<p>HEDDA.</p>
+<p>In the breast--yes?</p>
+<p>BRACK.</p>
+<p>No--in the bowels.</p>
+<p>HEDDA.</p>
+<p>[Looks up at him with an expression of loathing.] That too! Oh, what curse is it that makes everything I touch turn ludicrous and mean?</p>
+<p>BRACK.</p>
+<p>There is one point more, Mrs. Hedda--another disagreeable feature in the affair.</p>
+<p>HEDDA.</p>
+<p>And what is that?</p>
+<p>BRACK.</p>
+<p>The pistol he carried--</p>
+<p>HEDDA.</p>
+<p>[Breathless.] Well? What of it?</p>
+<p>BRACK.</p>
+<p>He must have stolen it.</p>
+<p>HEDDA.</p>
+<p>[Leaps up.] Stolen it! That is not true! He did not steal it!</p>
+<p>BRACK.</p>
+<p>No other explanation is possible. He must have stolen it--. Hush!</p>
+<p>TESMAN and MRS. ELVSTED have risen from the table in the back- room, and come into the drawing-room.</p>
+<p>TESMAN.</p>
+<p>[With the papers in both his hands.] Hedda, dear, it is almost impossible to see under that lamp. Think of that!</p>
+<p>HEDDA.</p>
+<p>Yes, I am thinking.</p>
+<p>TESMAN.</p>
+<p>Would you mind our sitting at your writing-table--eh?</p>
+<p>HEDDA.</p>
+<p>If you like. [Quickly.] No, wait! Let me clear it first!</p>
+<p>TESMAN.</p>
+<p>Oh, you needn&#x27;t trouble, Hedda. There is plenty of room.</p>
+<p>HEDDA.</p>
+<p>No no, let me clear it, I say! I will take these things in and put them on the piano. There!</p>
+<p>[She has drawn out an object, covered with sheet music, from under the bookcase, places several other pieces of music upon it, and carries the whole into the inner room, to the left. TESMAN lays the scraps of paper on the writing-table, and moves the lamp there from the corner table.  He and Mrs. Elvsted sit down and proceed with their work.  HEDDA returns.</p>
+<p>HEDDA.</p>
+<p>[Behind Mrs. Elvsted&#x27;s chair, gently ruffling her hair.] Well, my sweet Thea,--how goes it with Eilert Lovborg&#x27;s monument?</p>
+<p>MRS. ELVSTED.</p>
+<p>[Looks dispiritedly up at her.] Oh, it will be terribly hard to put in order.</p>
+<p>TESMAN.</p>
+<p>We must manage it. I am determined. And arranging other people&#x27;s papers is just the work for me.</p>
+<p>[HEDDA goes over to the stove, and seats herself on one of the footstools.  BRACK stands over her, leaning on the arm-chair.</p>
+<p>HEDDA.</p>
+<p>[Whispers.] What did you say about the pistol?</p>
+<p>BRACK.</p>
+<p>[Softly.] That he must have stolen it.</p>
+<p>HEDDA.</p>
+<p>Why stolen it?</p>
+<p>BRACK.</p>
+<p>Because every other explanation ought to be impossible, Mrs. Hedda.</p>
+<p>HEDDA.</p>
+<p>Indeed?</p>
+<p>BRACK.</p>
+<p>[Glances at her.] Of course Eilert Lovborg was here this morning. Was he not?</p>
+<p>HEDDA.</p>
+<p>Yes.</p>
+<p>BRACK.</p>
+<p>Were you alone with him?</p>
+<p>HEDDA.</p>
+<h2 class="chapter" id="c6">Part of the time.</h2>
+<p>BRACK.</p>
+<p>Did you not leave the room whilst he was here?</p>
+<p>HEDDA.</p>
+<p>No.</p>
+<p>BRACK.</p>
+<p>Try to recollect. Were you not out of the room a moment?</p>
+<p>HEDDA.</p>
+<p>Yes, perhaps just a moment--out in the hall.</p>
+<p>BRACK.</p>
+<p>And where was your pistol-case during that time?</p>
+<p>HEDDA.</p>
+<h3 class="sub">I had it locked up in--</h3>
+<p>BRACK.</p>
+<p>Well, Mrs. Hedda?</p>
+<p>HEDDA.</p>
+<p>The case stood there on the writing-table.</p>
+<p>BRACK.</p>
+<p>Have you looked since, to see whether both the pistols are there?</p>
+<p>HEDDA.</p>
+<p>No.</p>
+<p>BRACK.</p>
+<p>Well, you need not. I saw the pistol found in Lovborg&#x27;s pocket, and I knew it at once as the one I had seen yesterday--and before, too.</p>
+<p>HEDDA.</p>
+<p>Have you it with you?</p>
+<p>BRACK.</p>
+<p>No; the police have it.</p>
+<p>HEDDA.</p>
+<p>What will the police do with it?</p>
+<p>BRACK.</p>
+<p>Search till they find the owner.</p>
+<p>HEDDA.</p>
+<p>Do you think they will succeed?</p>
+<p>BRACK.</p>
+<p>[Bends over her and whispers.] No, Hedda Gabler--not so long as I say nothing.</p>
+<p>HEDDA.</p>
+<p>[Looks frightened at him.] And if you do not say nothing,--what then?</p>
+<p>BRACK.</p>
+<p>[Shrugs his shoulders.] There is always the possibility that the pistol was stolen.</p>
+<p>HEDDA.</p>
+<p>[Firmly.] Death rather than that.</p>
+<p>BRACK.</p>
+<p>[Smiling.] People say such things--but they don&#x27;t do them.</p>
+<p>HEDDA.</p>
+<p>[Without replying.] And supposing the pistol was not stolen, and the owner is discovered? What then?</p>
+<p>BRACK.</p>
+<p>Well, Hedda--then comes the scandal!</p>
+<p>HEDDA.</p>
+<p>The scandal!</p>
+<p>BRACK.</p>
+<p>Yes, the scandal--of which you are so mortally afraid. You will, of course, be brought before the court--both you and Mademoiselle Diana. She will have to explain how the thing happened--whether it was an accidental shot or murder. Did the pistol go off as he was trying to take it out of his pocket, to threaten her with? Or did she tear the pistol out of his hand, shoot him, and push it back into his pocket? That would be quite like her; for she is an able-bodied young person, this same Mademoiselle Diana.</p>
+<p>HEDDA.</p>
+<p>But I have nothing to do with all this repulsive business.</p>
+<p>BRACK.</p>
+<p>No. But you will have to answer the question: Why did you give Eilert the pistol? And what conclusions will people draw from the fact that you did give it to him?</p>
+<p>HEDDA.</p>
+<p>[Lets her head sink.] That is true. I did not think of that.</p>
+<p>BRACK.</p>
+<p>Well, fortunately, there is no danger, so long as I say nothing.</p>
+<p>HEDDA.</p>
+<p>[Looks up at him.] So I am in your power, Judge Brack. You have me at your beck and call, from this time forward.</p>
+<p>BRACK.</p>
+<p>[Whispers softly.] Dearest Hedda--believe me--I shall not abuse my advantage.</p>
+<p>HEDDA.</p>
+<p>I am in your power none the less. Subject to your will and your demands. A slave, a slave then! [Rises impetuously.] No, I cannot endure the thought of that! Never!</p>
+<p>BRACK.</p>
+<p>[Looks half-mockingly at her.] People generally get used to the inevitable.</p>
+<p>HEDDA.</p>
+<p>[Returns his look.] Yes, perhaps. [She crosses to the writing-table. Suppressing an involuntary smile, she imitates TESMAN&#x27;S intonations.] Well? Are you getting on, George? Eh?</p>
+<p>TESMAN.</p>
+<p>Heaven knows, dear. In any case it will be the work of months.</p>
+<p>HEDDA.</p>
+<p>[As before.] Fancy that! [Passes her hands softly through Mrs. Elvsted&#x27;s hair.] Doesn&#x27;t it seem strange to you, Thea? Here are you sitting with Tesman--just as you used to sit with Eilert Lovborg?</p>
+<p>MRS. ELVSTED.</p>
+<p>Ah, if I could only inspire your husband in the same way!</p>
+<p>HEDDA.</p>
+<p>Oh, that will come too--in time.</p>
+<p>TESMAN.</p>
+<p>Yes, do you know, Hedda--I really think I begin to feel something of the sort. But won&#x27;t you go and sit with Brack again?</p>
+<p>HEDDA.</p>
+<p>Is there nothing I can do to help you two?</p>
+<p>TESMAN.</p>
+<p>No, nothing in the world. [Turning his head.] I trust to you to keep Hedda company, my dear Brack.</p>
+<p>BRACK.</p>
+<p>[With a glance at HEDDA.] With the very greatest of pleasure.</p>
+<p>HEDDA.</p>
+<p>Thanks. But I am tired this evening. I will go in and lie down a little on the sofa.</p>
+<p>TESMAN.</p>
+<p>Yes, do dear--eh?</p>
+<p>[HEDDA goes into the back room and draws the curtains.  A short pause.  Suddenly she is heard playing a wild dance on the piano.</p>
+<p>MRS. ELVSTED.</p>
+<p>[Starts from her chair.] Oh--what is that?</p>
+<p>TESMAN.</p>
+<p>[Runs to the doorway.] Why, my dearest Hedda--don&#x27;t play dance-music to-night! Just think of Aunt Rina! And of Eilert too!</p>
+<p>HEDDA.</p>
+<p>[Puts her head out between the curtains.] And of Aunt Julia. And of all the rest of them.--After this, I will be quiet. [Closes the curtains again.]</p>
+<p>TESMAN.</p>
+<p>[At the writing-table.] It&#x27;s not good for her to see us at this distressing work. I&#x27;ll tell you what, Mrs. Elvsted,--you shall take the empty room at Aunt Julia&#x27;s, and then I will come over in the evenings, and we can sit and work there--eh?</p>
+<p>HEDDA.</p>
+<p>[In the inner room.] I hear what you are saying, Tesman. But how am I to get through the evenings out here?</p>
+<p>TESMAN.</p>
+<p>[Turning over the papers.] Oh, I daresay Judge Brack will be so kind as to look in now and then, even though I am out.</p>
+<p>BRACK.</p>
+<p>[In the arm-chair, calls out gaily.] Every blessed evening, with all the pleasure in life, Mrs. Tesman! We shall get on capitally together, we two!</p>
+<p>HEDDA.</p>
+<p>[Speaking loud and clear.] Yes, don&#x27;t you flatter yourself we will, Judge Brack? Now that you are the one cock in the basket--</p>
+<p>[A shot is heard within.  TESMAN, MRS. ELVSTED, and BRACK leap to their feet.</p>
+<p>TESMAN.</p>
+<p>Oh, now she is playing with those pistols again.</p>
+<p>[He throws back the curtains and runs in, followed by MRS. ELVSTED.  HEDDA lies stretched on the sofa, lifeless. Confusion and cries.  BERTA enters in alarm from the right.</p>
+<p>TESMAN.</p>
+<p>[Shrieks to BRACK.] Shot herself! Shot herself in the temple! Fancy that!</p>
+<p>BRACK.</p>
+<p>[Half-fainting in the arm-chair.] Good God!--people don&#x27;t do such things.</p>
+<h3 class="sub">The End — Footnotes.</h3>
+<p>(1)Pronounce Reena.</p>
+<p>(2)In the original &quot;Statsradinde Falks villa&quot;--showing that it had belonged to the widow of a cabinet minister.</p>
+<p>(3)Du equals thou: Tesman means, &quot;If you could persuade yourself to tutoyer her.&quot;</p>
+<p>(4)See previous note.</p>
+<p>(5)Pronounce Tora and Taya.</p>
+<p>(6)Mrs. Elvsted here uses the formal pronoun De, whereupon Hedda rebukes her.  In her next speech Mrs. Elvsted says du.</p>
+<p>(7)&quot;Bagveje&quot; means both &quot;back ways&quot; and &quot;underhand courses.&quot;</p>
+<p>(8)As this form of address is contrary to English usage, and as the note of familiarity would be lacking in &quot;Mrs. Tesman,&quot; Brack may, in stage representation, say &quot;Miss Hedda,&quot; thus ignoring her marriage and reverting to the form of address no doubt customary between them of old.</p>
+<p>(9)He uses the familiar du.</p>
+<p>(10)From this point onward Lovborg use the formal De.</p>
+<p>(11)In this speech he once more says du.  Hedda addresses him throughout as De.</p>
+<p>(12)&quot;Enest hane i kurven&quot;--a proverbial saying.</p>
+<p>(13)Literally, &quot;That you burn for me.&quot;</p>
+<p class="colophon">Public domain text. BookClassics digital edition.</p>
+</body></html>

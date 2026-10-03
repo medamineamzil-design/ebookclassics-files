@@ -182,6 +182,14 @@
     "txt"
    ]
   },
+  "apology": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "around-the-world-in-eighty-days": {
    "en": [
     "epub",
@@ -675,6 +683,14 @@
    ]
   },
   "heart-of-darkness": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "hedda-gabler": {
    "en": [
     "epub",
     "html",
@@ -1376,6 +1392,14 @@
     "txt"
    ],
    "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "symposium": {
+   "en": [
     "epub",
     "html",
     "pdf",
@@ -2134,6 +2158,14 @@
     "txt"
    ]
   },
+  "the-school-for-scandal": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-secret-garden": {
    "en": [
     "epub",
@@ -2143,6 +2175,20 @@
    ]
   },
   "the-sign-of-the-four": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-sorrows-of-young-werther": {
    "en": [
     "epub",
     "html",
@@ -2547,5 +2593,5 @@
    ]
   }
  },
- "generated": "2026-10-03T23:58:53Z"
+ "generated": "2026-10-03T23:59:22Z"
 }
