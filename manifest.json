@@ -288,6 +288,14 @@
     "txt"
    ]
   },
+  "far-from-the-madding-crowd": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "father-goriot": {
    "en": [
     "epub",
@@ -596,6 +604,14 @@
     "txt"
    ]
   },
+  "mansfield-park": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "meditations": {
    "de": [
     "epub",
@@ -643,6 +659,14 @@
    ]
   },
   "nicomachean-ethics": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "north-and-south": {
    "en": [
     "epub",
     "html",
@@ -844,6 +868,20 @@
   },
   "sense-and-sensibility": {
    "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "silas-marner": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "es": [
     "epub",
     "html",
     "pdf",
@@ -1498,6 +1536,14 @@
     "txt"
    ]
   },
+  "the-woman-in-white": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-wonderful-adventures-of-nils": {
    "de": [
     "epub",
@@ -1689,5 +1735,5 @@
    ]
   }
  },
- "generated": "2026-10-03T13:01:10Z"
+ "generated": "2026-10-03T15:19:16Z"
 }
