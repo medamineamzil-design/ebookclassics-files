@@ -196,6 +196,14 @@
     "txt"
    ]
   },
+  "atala": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "babbitt": {
    "en": [
     "epub",
@@ -510,6 +518,20 @@
   },
   "five-children-and-it": {
    "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "five-weeks-in-a-balloon": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
     "epub",
     "html",
     "pdf",
@@ -1346,6 +1368,20 @@
     "txt"
    ]
   },
+  "swann-s-way": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "tao-te-ching": {
    "en": [
     "epub",
@@ -1768,6 +1804,20 @@
     "txt"
    ]
   },
+  "the-ladies-paradise": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-last-days-of-pompeii": {
    "en": [
     "epub",
@@ -1972,6 +2022,20 @@
   },
   "the-prince-and-the-pauper": {
    "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-princess-of-cleves": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
     "epub",
     "html",
     "pdf",
@@ -2483,5 +2547,5 @@
    ]
   }
  },
- "generated": "2026-10-03T23:53:38Z"
+ "generated": "2026-10-03T23:58:53Z"
 }
