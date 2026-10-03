@@ -1,0 +1,105 @@
+{
+ "lot": "2026-10-03-n",
+ "books": [
+  {
+   "title": "Eugénie Grandet",
+   "author": "Honoré de Balzac",
+   "cat": "fiction",
+   "meta": "France · 1834",
+   "desc": "In a gloomy house in provincial Saumur, a rich miser rules his family with an iron fist, until his gentle daughter falls in love with her penniless Parisian cousin.",
+   "editions": [
+    {"lang": "en", "gid": 1715, "check": "grandet", "credit": "Traduction : Katharine Prescott Wormeley (1830-1908)"},
+    {"lang": "fr", "gid": 11049, "check": "grandet"}
+   ],
+   "about": [
+    "Félix Grandet, a former cooper turned wine merchant and landowner, is one of the richest men in Saumur, yet he lives like a pauper, measuring out the sugar and the candles while his wife, his daughter Eugénie and the faithful servant Nanon obey his every rule. Local families compete for Eugénie's hand and her future fortune. Then, one evening, her elegant cousin Charles arrives from Paris, carrying a letter that will change his life, and hers.",
+    "Balzac draws an unforgettable portrait of avarice and of its effect on a family, and a precise picture of the manners of the provincial middle class. Eugénie's quiet, steadfast love and the slow passing of years give the novel its deep emotional power.",
+    "Eugénie Grandet was first serialised in 1833 and published in book form in 1834. It belongs to the \"Scenes of Provincial Life\" in Balzac's vast cycle La Comédie humaine. This edition offers the original French text and the English translation by Katharine Prescott Wormeley."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "Notre-Dame de Paris",
+   "author": "Victor Hugo",
+   "cat": "fiction",
+   "meta": "France · 1831",
+   "desc": "In the Paris of 1482, the deformed bell-ringer Quasimodo, the tormented archdeacon Frollo and the poet Gringoire are all drawn to the dancer Esmeralda.",
+   "editions": [
+    {"lang": "en", "gid": 2610, "check": "notre-dame", "credit": "Traduction : Isabel Florence Hapgood (1850-1928)"},
+    {"lang": "fr", "gid": 19657, "check": "notre-dame"}
+   ],
+   "about": [
+    "On 6 January 1482, Paris celebrates the Festival of Fools, and the hunchbacked bell-ringer of Notre-Dame, Quasimodo, is crowned Pope of Fools. Among the crowd dances Esmeralda, a beautiful young street performer with her goat Djali, who has captured the attention of the struggling poet Pierre Gringoire, the handsome captain Phoebus and the grave archdeacon Claude Frollo, Quasimodo's guardian, whose fascination with her turns into obsession.",
+    "Hugo brings medieval Paris to life in vast, colourful scenes and makes the cathedral itself the heart of the novel, with celebrated chapters defending Gothic architecture. Love, fate, cruelty and compassion meet in a story of outcasts and the powerful. Its portrayal of Esmeralda and the city's \"gypsies\" draws on the romantic and stereotyped images of Romani people common in its time.",
+    "Notre-Dame de Paris was published on 16 March 1831. It was a great success and helped awaken interest in the preservation of France's Gothic monuments. This edition offers the original French text and the English translation by Isabel F. Hapgood."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "Carmen",
+   "author": "Prosper Mérimée",
+   "cat": "fiction",
+   "meta": "France · 1845",
+   "desc": "A travelling scholar in Andalusia meets a condemned bandit, who tells how his fatal passion for the free-spirited Carmen led a soldier into a life of crime.",
+   "editions": [
+    {"lang": "en", "gid": 2465, "check": "carmen", "credit": "Traduction : Mary Loyd (1853-1936)"}
+   ],
+   "about": [
+    "A French scholar travelling in Andalusia in search of an ancient battlefield shares his cigars and his food with a dangerous stranger in the hills, and later meets a striking young woman, Carmen, in Córdoba. When he finds the stranger again in a prison cell, awaiting execution, the man, Don José, tells him his story: how, as a soldier in Seville, he met Carmen and how his love for her drew him into smuggling and banditry.",
+    "Mérimée writes with precise, restrained prose, framing a tale of passion, jealousy and freedom within the cool account of a learned traveller. The novella's portrait of Carmen and of Romani life reflects the fascination and the stereotypes of nineteenth-century writers, which the narrator presents as scholarly observation.",
+    "The first three parts of Carmen appeared in the Revue des deux Mondes on 1 October 1845, and the fourth was added when it was published as a book in 1846. It inspired Georges Bizet's opera Carmen (1875). This English translation is by Lady Mary Loyd."
+   ],
+   "author_short": "French writer, historian and archaeologist (1803–1870), author of Carmen and Colomba and a pioneer of the novella.",
+   "author_long": [
+    "Prosper Mérimée was born in Paris on 28 September 1803. For many years he served as inspector-general of historical monuments, protecting and restoring many great buildings of France, including the walled city of Carcassonne. He was elected to the Académie française in 1844 and became a senator under the Second Empire. He died in Cannes on 23 September 1870.",
+    "A master of the short novel, he wrote Mateo Falcone (1829), Colomba (1840) and Carmen (1845), among other works. He also learned Russian and translated writers such as Pushkin and Gogol into French."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "Tartuffe",
+   "author": "Molière",
+   "cat": "theatre",
+   "meta": "France · 1664",
+   "desc": "A smooth-talking religious hypocrite takes over the household of the credulous Orgon, who is ready to give him everything, even his daughter.",
+   "editions": [
+    {"lang": "en", "gid": 2027, "check": "tartuffe", "credit": "Traduction : Curtis Hidden Page (1870-1946)"}
+   ],
+   "about": [
+    "Orgon, a wealthy Parisian, has fallen completely under the spell of Tartuffe, a penniless man who poses as a model of piety. He has taken him into his home, admires everything he says, and now plans to marry him to his daughter Mariane, who loves Valère. His wife Elmire, his brother-in-law Cléante, his son Damis and above all the outspoken maid Dorine see through the impostor, but Orgon will not listen.",
+    "Molière's comedy is a sharp satire of religious hypocrisy and of the blindness of those who let themselves be deceived. Its comic scenes and lively characters have kept it on the stage ever since.",
+    "Tartuffe was first performed at Versailles in 1664 and was immediately banned after objections from church authorities. Molière rewrote it, and the final version was allowed to be performed publicly in 1669. This English verse translation is by Curtis Hidden Page."
+   ],
+   "author_short": "French playwright and actor (1622–1673), author of Tartuffe, The Misanthrope and The Imaginary Invalid.",
+   "author_long": [
+    "Molière was the stage name of Jean-Baptiste Poquelin, baptised in Paris on 15 January 1622, the eldest son of a prosperous family of upholsterers. He gave up the family business for the theatre and became the leading comic playwright of his day. He died in Paris on 17 February 1673, shortly after performing in his last play, The Imaginary Invalid.",
+    "His comedies, including The School for Wives, Tartuffe, Don Juan, The Misanthrope, The Miser and The Imaginary Invalid, satirise hypocrisy, pretension and folly, and are among the greatest works of French literature."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "Fathers and Sons",
+   "author": "Ivan Turgenev",
+   "cat": "fiction",
+   "meta": "Russia · 1862",
+   "desc": "A young graduate brings his radical friend Bazarov, a self-proclaimed nihilist, home to his family's estate, and the clash between generations begins.",
+   "editions": [
+    {"lang": "en", "gid": 47935, "check": "fathers and sons", "credit": "Traduction : Charles James Hogarth (1869-1942)"}
+   ],
+   "about": [
+    "In 1859, Arkady Kirsanov returns home from university to his father's modest estate, bringing with him his friend Yevgeny Bazarov, a young doctor who declares himself a nihilist: he accepts no authority, tradition or principle that cannot be proved. Arkady's gentle father, Nikolai Petrovitch, and his elegant, proud uncle, Paul Petrovitch, are disturbed and provoked by Bazarov's ideas, while the young men's visit to the cool and intelligent widow Madame Odintsov tests Bazarov's own convictions.",
+    "Turgenev portrays the gap between the liberal generation of the 1840s and the radical young people of the 1860s with great fairness and subtlety. Bazarov became one of the most debated characters in Russian literature, and the novel explores love, friendship, family and the limits of ideas.",
+    "Fathers and Sons was first published in 1862 in the magazine The Russian Messenger, and provoked fierce controversy among both conservatives and radicals. This English translation is by C. J. Hogarth."
+   ],
+   "author_short": "Russian novelist and short-story writer (1818–1883), author of A Sportsman's Sketches and Fathers and Sons.",
+   "author_long": [
+    "Ivan Turgenev was born on 9 November 1818 in Oryol, Russia, into a rich landowning family, and studied in Moscow and St Petersburg. A lifelong attachment to the famous singer Pauline Viardot shaped his life, and he spent his later years mostly abroad, in Baden-Baden and Paris. He died at Bougival, near Paris, on 3 September 1883.",
+    "His first major work, A Sportsman's Sketches (1852), was a milestone of Russian realism. His novels include Fathers and Sons (1862), his most famous work, and Smoke."
+   ],
+   "librivox": []
+  }
+ ],
+ "refused": [
+  {"title": "Fathers and Sons (de, Gutenberg #59758, Insel-Verlag)", "reason": "traducteur non nommé et date d'édition non indiquée : statut UE incertain"}
+ ]
+}
