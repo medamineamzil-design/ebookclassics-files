@@ -1,0 +1,107 @@
+{
+ "lot": "2026-10-03-r",
+ "books": [
+  {
+   "title": "Swann's Way",
+   "author": "Marcel Proust",
+   "cat": "fiction",
+   "meta": "France · 1913",
+   "desc": "The taste of a madeleine dipped in tea brings back a whole childhood world, in the first volume of Proust's great novel of memory, love and time.",
+   "editions": [
+    {"lang": "en", "gid": 7178, "check": "swann", "credit": "Traduction : Charles Kenneth Scott Moncrieff (1889-1930)"},
+    {"lang": "fr", "gid": 2650, "check": "swann"}
+   ],
+   "about": [
+    "The narrator recalls the sleepless nights of his childhood and his anxious longing for his mother's goodnight kiss during summers in the little town of Combray. One winter day, the taste of a small cake, a madeleine, dipped in lime-blossom tea, suddenly brings that whole world back: his family, the old servant Françoise, the walks along Swann's way and the Guermantes way. The book then goes back in time to tell the story of Charles Swann, a refined man of society, and his jealous passion for Odette de Crécy, before returning to the narrator's own first love, Swann's daughter Gilberte.",
+    "Proust's long, flowing sentences explore memory, perception, desire, jealousy, art and the passing of time with extraordinary subtlety and humour. The section \"Swann in Love\" can be read almost as a self-contained novel.",
+    "Du côté de chez Swann was published in November 1913 by Grasset, at Proust's own expense, as the first volume of À la recherche du temps perdu. This edition offers the original French text and C. K. Scott Moncrieff's English translation, published in 1922 as the first volume of Remembrance of Things Past."
+   ],
+   "author_short": "French novelist (1871–1922), author of In Search of Lost Time.",
+   "author_long": [
+    "Marcel Proust was born on 10 July 1871 in Auteuil, then on the edge of Paris. He suffered from asthma from the age of nine, and his poor health made him increasingly reclusive; in his later years he wrote mainly at night in his cork-lined bedroom in Paris. He died on 18 November 1922.",
+    "His life's work is the vast novel In Search of Lost Time (À la recherche du temps perdu), published in seven volumes from 1913 onwards, the last of them after his death. Its second volume, In the Shadow of Young Girls in Flower, won the Prix Goncourt in 1919 and made him famous."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "The Ladies' Paradise",
+   "author": "Émile Zola",
+   "cat": "fiction",
+   "meta": "France · 1883",
+   "desc": "A shy young woman from the provinces goes to work in a dazzling new Paris department store, whose ambitious owner is ruining the small shops around it.",
+   "editions": [
+    {"lang": "en", "gid": 54726, "check": "ladies", "credit": "Traduction : Ernest Alfred Vizetelly (1853-1922)"},
+    {"lang": "fr", "gid": 16852, "check": "bonheur des dames"}
+   ],
+   "about": [
+    "Denise Baudu arrives in Paris from the provincial town of Valognes with her two younger brothers, hoping for help from her uncle, a draper. But his old shop is dying, crushed by the huge department store across the street, the Ladies' Paradise, run by the ambitious and seductive Octave Mouret. Denise takes a job there as a saleswoman and discovers a world of dazzling displays, fierce rivalries and hard work, while Mouret's empire keeps growing at the expense of the neighbourhood's traders.",
+    "Zola describes the birth of modern mass retailing and consumer culture with extraordinary energy, from advertising and sales to the crowds of women shoppers. The novel weighs the excitement of progress against the human cost for the small shopkeepers, and follows a quiet, determined heroine who keeps her dignity.",
+    "Au Bonheur des Dames was published in 1883 as the eleventh novel of Zola's Rougon-Macquart cycle. The store was modelled largely on Le Bon Marché in Paris, which Zola visited while preparing the book. This edition offers the original French text and the English translation by Ernest A. Vizetelly."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "The Princess of Clèves",
+   "author": "Madame de La Fayette",
+   "cat": "fiction",
+   "meta": "France · 1678",
+   "desc": "At the brilliant court of Henri II, a young wife married without love falls for the dashing Duke of Nemours and struggles to stay true to her duty.",
+   "editions": [
+    {"lang": "en", "gid": 467, "check": "cleves", "credit": "anonyme"},
+    {"lang": "fr", "gid": 18797, "check": "clèves"}
+   ],
+   "about": [
+    "In the last years of the reign of Henri II, the beautiful and virtuous Mademoiselle de Chartres, carefully raised by her mother, appears at court and marries the Prince of Clèves, who loves her deeply but whom she does not love. Soon she meets the Duke of Nemours, the most handsome and admired man at court, and a passion grows between them that she fights with all her strength.",
+    "Set among the intrigues, rivalries and love affairs of the French court, the novel follows the heroine's inner struggle with remarkable psychological insight and restraint. Its famous scene in which she confides her feelings to her husband was much debated by its first readers.",
+    "La Princesse de Clèves was published anonymously in March 1678. It is often regarded as the first great French novel and a forerunner of the psychological novel. This edition offers the original French text and an English translation by an unnamed translator."
+   ],
+   "author_short": "French writer (1634–1693), author of The Princess of Clèves.",
+   "author_long": [
+    "Marie-Madeleine Pioche de La Vergne, later Comtesse de La Fayette, was born in Paris in March 1634. A cultivated woman who moved in the circles of the court and the literary salons, she died in Paris in May 1693.",
+    "Her masterpiece, The Princess of Clèves (1678), was published anonymously and is often regarded as the first great French novel."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "Five Weeks in a Balloon",
+   "author": "Jules Verne",
+   "cat": "aventure",
+   "meta": "France · 1863",
+   "desc": "An English explorer, his hunter friend and his loyal servant set out to cross unexplored Africa by balloon, from Zanzibar to the Atlantic.",
+   "editions": [
+    {"lang": "en", "gid": 3526, "check": "five weeks", "credit": "anonyme"},
+    {"lang": "fr", "gid": 4548, "check": "cinq semaines"}
+   ],
+   "about": [
+    "Dr Samuel Fergusson, a daring English explorer, announces to the Royal Geographical Society that he will cross Africa from east to west in a hydrogen balloon of his own design, the Victoria, linking up the discoveries of earlier explorers and looking for the source of the Nile. With his sceptical friend Dick Kennedy, a Scottish hunter, and his faithful servant Joe, he sets off from Zanzibar over deserts, lakes and forests.",
+    "Verne's first great adventure novel combines scientific explanation, geography and suspense, with storms, thirst, wild animals and dangerous encounters. Written from the point of view of European explorers of its time, it portrays the African peoples they meet through the stereotypes of the colonial era.",
+    "Five Weeks in a Balloon was published by Pierre-Jules Hetzel in 1863. It was Verne's first novel in what became his Extraordinary Voyages, and its success launched his career. This edition offers the original French text and an English translation published under the pseudonym \"William Lackland\"."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "Atala",
+   "author": "François-René de Chateaubriand",
+   "cat": "fiction",
+   "meta": "France · 1801",
+   "desc": "An old blind Natchez man recalls his youthful love for Atala, a Christian girl bound by a secret vow, as they fled together through the American wilderness.",
+   "editions": [
+    {"lang": "en", "gid": 44427, "check": "atala", "credit": "anonyme"}
+   ],
+   "about": [
+    "In eighteenth-century Louisiana, the aged and blind Chactas, of the Natchez people, tells a young Frenchman named René the story of his youth. Captured by an enemy tribe and condemned to death, he was freed by Atala, the Christian daughter of their chief, and the two fled together through forests and storms, in love, until they found refuge with an old missionary, Father Aubry. But Atala is bound by a secret that makes their love impossible.",
+    "Chateaubriand's short, lyrical tale is famous for its sweeping descriptions of American landscapes and its melancholy blend of passion, nature and religion. It presents Native Americans through the idealised, \"noble savage\" vision of European writers of its time.",
+    "Atala was published in 1801. In 1802 it was included in Chateaubriand's defence of Christianity, The Genius of Christianity, together with René. This English translation, by an unnamed translator, is illustrated by Gustave Doré."
+   ],
+   "author_short": "French writer, diplomat and statesman (1768–1848), author of Atala, René and Memoirs from Beyond the Grave.",
+   "author_long": [
+    "François-René de Chateaubriand was born at Saint-Malo, in Brittany, on 4 September 1768, into an old aristocratic family. He lived in exile in England during the French Revolution. A royalist, he later had a long political and diplomatic career. He died in Paris on 4 July 1848.",
+    "His works include Atala (1801), René and The Genius of Christianity (1802), a defence of the Catholic faith, and his great autobiography, Memoirs from Beyond the Grave, published after his death. His work deeply influenced French literature of the nineteenth century."
+   ],
+   "librivox": []
+  }
+ ],
+ "refused": [
+  {"title": "Oblomov (en, Gutenberg #54700, trad. Hogarth)", "reason": "traduction abrégée : environ 59 000 mots pour une œuvre bien plus longue"}
+ ]
+}
