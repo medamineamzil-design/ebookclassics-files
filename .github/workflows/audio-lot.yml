@@ -1,0 +1,79 @@
+# BookClassics — rattrapage audio : ajoute les livres audio LibriVox d'un lot déjà publié
+# (par exemple publié avant que les clés R2 soient en place). Lancement manuel uniquement.
+name: Ajouter les audios d'un lot publié
+
+on:
+  workflow_dispatch:
+    inputs:
+      lot:
+        description: "Nom du lot déjà publié (fichier de _inbox/faits/), ex. lot-2026-10-03.json"
+        required: true
+
+concurrency:
+  group: publication
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  audio:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - name: Dépôt des livres (main)
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          path: ebookclassics-files
+          fetch-depth: 1
+
+      - name: Dépôt du site
+        uses: actions/checkout@v4
+        with:
+          repository: medamineamzil-design/ebookclassics-site
+          token: ${{ secrets.SITE_TOKEN }}
+          path: ebookclassics-site
+          fetch-depth: 1
+
+      - name: Logiciels (Pillow, rsvg)
+        run: sudo apt-get update -q && sudo apt-get install -y -q python3-pil librsvg2-bin
+
+      - name: Livres audio LibriVox
+        env:
+          LOT: ${{ inputs.lot }}
+          R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          R2_BUCKET: ${{ secrets.R2_BUCKET }}
+          R2_PUBLIC_URL: ${{ secrets.R2_PUBLIC_URL }}
+        run: |
+          mv ebookclassics-files ebookclassics-site ~/
+          for r in ~/ebookclassics-files ~/ebookclassics-site; do
+            git -C $r config user.name "BookClassics (automatique)"
+            git -C $r config user.email "medamine.amzil@gmail.com"
+          done
+          case "$LOT" in lot-*.json) ;; *) echo "nom de lot invalide : $LOT"; exit 1;; esac
+          f=~/ebookclassics-files/_inbox/faits/"$LOT"
+          [ -e "$f" ] || { echo "lot introuvable dans _inbox/faits : $LOT"; exit 1; }
+          [ -n "$R2_ACCOUNT_ID" ] || { echo "secret R2_ACCOUNT_ID absent : audio impossible"; exit 1; }
+          umask 077
+          printf 'account_id=%s\naccess_key_id=%s\nsecret_access_key=%s\nbucket=%s\npublic_url=%s\n' \
+            "$R2_ACCOUNT_ID" "$R2_ACCESS_KEY_ID" "$R2_SECRET_ACCESS_KEY" "$R2_BUCKET" "$R2_PUBLIC_URL" > ~/r2.conf
+          mkdir -p ~/journal ~/bookclassics-auto/travail
+          set -o pipefail
+          J=~/journal/audio-$(TZ=Europe/Paris date +%F-%H%M).txt
+          echo "JOURNAL=$J" >> $GITHUB_ENV
+          python3 ~/ebookclassics-site/_auto/publier_lot.py "$f" --audio-seulement 2>&1 | tee "$J"
+
+      - name: Journal sur main
+        if: always()
+        run: |
+          rm -f ~/r2.conf
+          [ -n "$JOURNAL" ] || exit 0
+          cd ~/ebookclassics-files
+          git pull -q --rebase --autostash || true
+          mkdir -p _rapports/journal && cp "$JOURNAL" _rapports/journal/
+          git add _rapports/journal
+          git commit -q -m "Journal audio $(TZ=Europe/Paris date +%F)" || exit 0
+          for i in 1 2 3; do git push -q && break; git pull -q --rebase; done
