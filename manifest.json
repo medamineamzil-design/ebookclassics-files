@@ -170,6 +170,14 @@
     "txt"
    ]
   },
+  "bleak-house": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "candide": {
    "en": [
     "epub",
@@ -207,6 +215,14 @@
    ]
   },
   "common-sense": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "cranford": {
    "en": [
     "epub",
     "html",
@@ -438,6 +454,14 @@
     "txt"
    ],
    "pt": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "hard-times": {
+   "en": [
     "epub",
     "html",
     "pdf",
@@ -1224,8 +1248,24 @@
     "txt"
    ]
   },
+  "the-mayor-of-casterbridge": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-metamorphosis": {
    "de": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-mill-on-the-floss": {
+   "en": [
     "epub",
     "html",
     "pdf",
@@ -1735,5 +1775,5 @@
    ]
   }
  },
- "generated": "2026-10-03T15:32:41Z"
+ "generated": "2026-10-03T23:15:40Z"
 }
