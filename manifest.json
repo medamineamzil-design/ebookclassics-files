@@ -228,6 +228,14 @@
     "txt"
    ]
   },
+  "barnaby-rudge": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "bel-ami": {
    "en": [
     "epub",
@@ -1496,6 +1504,14 @@
     "txt"
    ]
   },
+  "the-ambassadors": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-arabian-nights": {
    "en": [
     "epub",
@@ -2052,6 +2068,14 @@
     "txt"
    ]
   },
+  "the-princess-and-the-goblin": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-princess-of-cleves": {
    "en": [
     "epub",
@@ -2166,6 +2190,14 @@
     "txt"
    ]
   },
+  "the-sea-wolf": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-secret-garden": {
    "en": [
     "epub",
@@ -2259,6 +2291,14 @@
    ]
   },
   "the-theory-of-the-leisure-class": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-thirty-nine-steps": {
    "en": [
     "epub",
     "html",
@@ -2593,5 +2633,5 @@
    ]
   }
  },
- "generated": "2026-10-03T23:59:22Z"
+ "generated": "2026-10-03T23:59:56Z"
 }
