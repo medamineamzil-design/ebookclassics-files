@@ -1,0 +1,237 @@
+=== BookClassics — lot 2026-10-03-l — 2026-10-03 23:47 ===
+== 1/4 Fabrication des livres (EPUB, PDF, TXT, HTML) ==
+… Kim [en] — Gutenberg #2226
+   + kim [en] OK — Project Gutenberg (#2226), 104533 mots, 15 chapitres — epub:299Ko pdf:1410Ko txt:579Ko html:599Ko
+… King Solomon's Mines [en] — Gutenberg #2166
+   + king-solomon-s-mines [en] OK — Project Gutenberg (#2166), 82007 mots, 19 chapitres — epub:262Ko pdf:1090Ko txt:439Ko html:454Ko
+… Pygmalion [en] — Gutenberg #3825
+   + pygmalion [en] OK — Project Gutenberg (#3825), 33516 mots, 5 chapitres — epub:135Ko pdf:539Ko txt:186Ko html:196Ko
+… A Doll's House [en] — Gutenberg #15492
+   + a-doll-s-house [en] OK — Project Gutenberg (#15492), 26431 mots, 3 chapitres — epub:107Ko pdf:458Ko txt:138Ko html:152Ko
+… Five Children and It [en] — Gutenberg #778
+   + five-children-and-it [en] OK — Project Gutenberg (#778), 53627 mots, 11 chapitres — epub:178Ko pdf:758Ko txt:282Ko html:319Ko
+== 2/4 Dépôt des livres ==
++ Kim : en
++ King Solomon's Mines : en
++ Pygmalion : en
++ A Doll's House : en
++ Five Children and It : en
+   publié : ebookclassics-files — Nouveaux livres : Kim, King Solomon's Mines, Pygmalion, A Doll's House, Five Children and It
+== 3/4 Site : catalogue, pages livres, plan du site ==
+   196 pages livres, 195 couvertures, 201 adresses dans le sitemap
+   5 livre(s) ajouté(s) au catalogue
+   publié : ebookclassics-site — Nouveaux livres au catalogue : Kim, King Solomon's Mines, Pygmalion, A Doll's House, Five Children and It
+TERMINE — 5 nouveau(x) livre(s) : Kim, King Solomon's Mines, Pygmalion, A Doll's House, Five Children and It
+=== BookClassics — lot 2026-10-03-m — 2026-10-03 23:49 ===
+== 1/4 Fabrication des livres (EPUB, PDF, TXT, HTML) ==
+… The Lost World [en] — Gutenberg #139
+   + the-lost-world [en] OK — Project Gutenberg (#139), 75602 mots, 16 chapitres — epub:240Ko pdf:1025Ko txt:411Ko html:438Ko
+… The Prisoner of Zenda [en] — Gutenberg #95
+   + the-prisoner-of-zenda [en] OK — Project Gutenberg (#95), 53711 mots, 21 chapitres — epub:202Ko pdf:831Ko txt:289Ko html:305Ko
+… The Prisoner of Zenda [es] — Gutenberg #24801
+   + the-prisoner-of-zenda [es] OK — Project Gutenberg (#24801), 50160 mots, 22 chapitres — epub:207Ko pdf:840Ko txt:296Ko html:311Ko
+… Lord Jim [en] — Gutenberg #5658
+   + lord-jim [en] OK — Project Gutenberg (#5658), 129996 mots, 45 chapitres — epub:380Ko pdf:1556Ko txt:703Ko html:714Ko
+… An Ideal Husband [en] — Gutenberg #885
+   + an-ideal-husband [en] OK — Project Gutenberg (#885), 30864 mots, 7 chapitres — epub:123Ko pdf:535Ko txt:171Ko html:183Ko
+… Just So Stories [en] — Gutenberg #2781
+   + just-so-stories [en] OK — Project Gutenberg (#2781), 28785 mots, 14 chapitres — epub:124Ko pdf:445Ko txt:157Ko html:166Ko
+== 2/4 Dépôt des livres ==
++ The Lost World : en
++ The Prisoner of Zenda : en, es
++ Lord Jim : en
++ An Ideal Husband : en
++ Just So Stories : en
+   publié : ebookclassics-files — Nouveaux livres : The Lost World, The Prisoner of Zenda, Lord Jim, An Ideal Husband, Just So Stories
+== 3/4 Site : catalogue, pages livres, plan du site ==
+   201 pages livres, 200 couvertures, 206 adresses dans le sitemap
+   5 livre(s) ajouté(s) au catalogue
+   publié : ebookclassics-site — Nouveaux livres au catalogue : The Lost World, The Prisoner of Zenda, Lord Jim, An Ideal Husband, Just So Stories
+TERMINE — 5 nouveau(x) livre(s) : The Lost World, The Prisoner of Zenda, Lord Jim, An Ideal Husband, Just So Stories
+=== BookClassics — lot 2026-10-03-n — 2026-10-03 23:50 ===
+   1 livre(s) écarté(s) par l'agent, notés dans refuses.json
+== 1/4 Fabrication des livres (EPUB, PDF, TXT, HTML) ==
+… Eugénie Grandet [en] — Gutenberg #1715
+   + eugenie-grandet [en] OK — Project Gutenberg (#1715), 65688 mots, 14 chapitres — epub:223Ko pdf:952Ko txt:372Ko html:385Ko
+… Eugénie Grandet [fr] — Gutenberg #11049
+   + eugenie-grandet [fr] OK — Project Gutenberg (#11049), 63155 mots, 4 chapitres — epub:204Ko pdf:899Ko txt:377Ko html:404Ko
+… Notre-Dame de Paris [en] — Gutenberg #2610
+   + notre-dame-de-paris [en] OK — Project Gutenberg (#2610), 183880 mots, 59 chapitres — epub:528Ko pdf:2517Ko txt:1045Ko html:1079Ko
+… Notre-Dame de Paris [fr] — Gutenberg #19657
+   + notre-dame-de-paris [fr] OK — Project Gutenberg (#19657), 172093 mots, 15 chapitres — epub:481Ko pdf:2382Ko txt:1047Ko html:1132Ko
+… Carmen [en] — Gutenberg #2465
+   + carmen [en] OK — Project Gutenberg (#2465), 23946 mots, 7 chapitres — epub:108Ko pdf:363Ko txt:127Ko html:134Ko
+… Tartuffe [en] — Gutenberg #2027
+   + tartuffe [en] OK — Project Gutenberg (#2027), 17686 mots, 30 chapitres — epub:108Ko pdf:390Ko txt:94Ko html:108Ko
+… Fathers and Sons [en] — Gutenberg #47935
+   + fathers-and-sons [en] OK — Project Gutenberg (#47935), 79683 mots, 28 chapitres — epub:269Ko pdf:1191Ko txt:445Ko html:491Ko
+== 2/4 Dépôt des livres ==
++ Eugénie Grandet : en, fr
++ Notre-Dame de Paris : en, fr
++ Carmen : en
++ Tartuffe : en
++ Fathers and Sons : en
+   publié : ebookclassics-files — Nouveaux livres : Eugénie Grandet, Notre-Dame de Paris, Carmen, Tartuffe, Fathers and Sons
+== 3/4 Site : catalogue, pages livres, plan du site ==
+   206 pages livres, 205 couvertures, 211 adresses dans le sitemap
+   5 livre(s) ajouté(s) au catalogue
+   publié : ebookclassics-site — Nouveaux livres au catalogue : Eugénie Grandet, Notre-Dame de Paris, Carmen, Tartuffe, Fathers and Sons
+TERMINE — 5 nouveau(x) livre(s) : Eugénie Grandet, Notre-Dame de Paris, Carmen, Tartuffe, Fathers and Sons
+=== BookClassics — lot 2026-10-03-o — 2026-10-03 23:50 ===
+== 1/4 Fabrication des livres (EPUB, PDF, TXT, HTML) ==
+… The Black Tulip [en] — Gutenberg #965
+   + the-black-tulip [en] OK — Project Gutenberg (#965), 73285 mots, 34 chapitres — epub:247Ko pdf:1172Ko txt:409Ko html:433Ko
+… The Black Tulip [fr] — Gutenberg #26504
+   + the-black-tulip [fr] OK — Project Gutenberg (#26504), 69864 mots, 31 chapitres — epub:249Ko pdf:1173Ko txt:419Ko html:462Ko
+… Michael Strogoff [en] — Gutenberg #1842
+   + michael-strogoff [en] OK — Project Gutenberg (#1842), 93339 mots, 32 chapitres — epub:297Ko pdf:1357Ko txt:534Ko html:555Ko
+… Michael Strogoff [fr] — Gutenberg #7442
+   + michael-strogoff [fr] OK — Project Gutenberg (#7442), 102367 mots, 30 chapitres — epub:346Ko pdf:1621Ko txt:643Ko html:701Ko
+… Michael Strogoff [de] — Gutenberg #34064
+   + michael-strogoff [de] OK — Project Gutenberg (#34064), 104682 mots, 4 chapitres — epub:332Ko pdf:1691Ko txt:693Ko html:716Ko
+… The Mystery of the Yellow Room [en] — Gutenberg #1685
+   + the-mystery-of-the-yellow-room [en] OK — Project Gutenberg (#1685), 73548 mots, 29 chapitres — epub:249Ko pdf:1069Ko txt:415Ko html:432Ko
+… The Mystery of the Yellow Room [fr] — Gutenberg #13765
+   + the-mystery-of-the-yellow-room [fr] OK — Project Gutenberg (#13765), 82574 mots, 28 chapitres — epub:279Ko pdf:1213Ko txt:501Ko html:546Ko
+… Manon Lescaut [en] — Gutenberg #468
+   + manon-lescaut [en] OK — Project Gutenberg (#468), 62267 mots, 13 chapitres — epub:199Ko pdf:774Ko txt:336Ko html:353Ko
+… Manon Lescaut [fr] — Gutenberg #17983
+   + manon-lescaut [fr] OK — Project Gutenberg (#17983), 58226 mots, 4 chapitres — epub:179Ko pdf:735Ko txt:339Ko html:368Ko
+… Manon Lescaut [es] — Gutenberg #75868
+   + manon-lescaut [es] OK — Project Gutenberg (#75868), 53432 mots, 2 chapitres — epub:176Ko pdf:686Ko txt:312Ko html:318Ko
+… Taras Bulba [en] — Gutenberg #1197
+   + taras-bulba [en] OK — Project Gutenberg (#1197), 108796 mots, 18 chapitres — epub:308Ko pdf:1355Ko txt:608Ko html:622Ko
+== 2/4 Dépôt des livres ==
++ The Black Tulip : en, fr
++ Michael Strogoff : en, fr, de
++ The Mystery of the Yellow Room : en, fr
++ Manon Lescaut : en, fr, es
++ Taras Bulba : en
+   publié : ebookclassics-files — Nouveaux livres : The Black Tulip, Michael Strogoff, The Mystery of the Yellow Room, Manon Lescaut, Taras Bulba
+== 3/4 Site : catalogue, pages livres, plan du site ==
+   211 pages livres, 210 couvertures, 216 adresses dans le sitemap
+   5 livre(s) ajouté(s) au catalogue
+   publié : ebookclassics-site — Nouveaux livres au catalogue : The Black Tulip, Michael Strogoff, The Mystery of the Yellow Room, Manon Lescaut, Taras Bulba
+TERMINE — 5 nouveau(x) livre(s) : The Black Tulip, Michael Strogoff, The Mystery of the Yellow Room, Manon Lescaut, Taras Bulba
+=== BookClassics — lot 2026-10-03-p — 2026-10-03 23:51 ===
+   1 livre(s) écarté(s) par l'agent, notés dans refuses.json
+== 1/4 Fabrication des livres (EPUB, PDF, TXT, HTML) ==
+… Ninety-Three [en] — Gutenberg #49372
+   + ninety-three [en] OK — Project Gutenberg (#49372), 123454 mots, 40 chapitres — epub:363Ko pdf:1915Ko txt:697Ko html:754Ko
+… Ninety-Three [fr] — Gutenberg #9645
+   + ninety-three [fr] OK — Project Gutenberg (#9645), 112914 mots, 82 chapitres — epub:396Ko pdf:1924Ko txt:688Ko html:758Ko
+… Pierre and Jean [en] — Gutenberg #3804
+   + pierre-and-jean [en] OK — Project Gutenberg (#3804), 45695 mots, 9 chapitres — epub:168Ko pdf:680Ko txt:249Ko html:261Ko
+… Pierre and Jean [fr] — Gutenberg #11131
+   + pierre-and-jean [fr] OK — Project Gutenberg (#11131), 46682 mots, 8 chapitres — epub:175Ko pdf:754Ko txt:279Ko html:308Ko
+… The Devil's Pool [en] — Gutenberg #12816
+   + the-devil-s-pool [en] OK — Project Gutenberg (#12816), 38611 mots, 21 chapitres — epub:158Ko pdf:582Ko txt:205Ko html:225Ko
+… The Devil's Pool [fr] — Gutenberg #23582
+   + the-devil-s-pool [fr] OK — Project Gutenberg (#23582), 37188 mots, 19 chapitres — epub:162Ko pdf:573Ko txt:217Ko html:226Ko
+… The Gambler [en] — Gutenberg #2197
+   + the-gambler [en] OK — Project Gutenberg (#2197), 60257 mots, 16 chapitres — epub:202Ko pdf:823Ko txt:329Ko html:340Ko
+… Indiana [en] — Gutenberg #63445
+   + indiana [en] OK — Project Gutenberg (#63445), 101168 mots, 29 chapitres — epub:299Ko pdf:1285Ko txt:549Ko html:576Ko
+== 2/4 Dépôt des livres ==
++ Ninety-Three : en, fr
++ Pierre and Jean : en, fr
++ The Devil's Pool : en, fr
++ The Gambler : en
++ Indiana : en
+   publié : ebookclassics-files — Nouveaux livres : Ninety-Three, Pierre and Jean, The Devil's Pool, The Gambler, Indiana
+== 3/4 Site : catalogue, pages livres, plan du site ==
+   216 pages livres, 215 couvertures, 221 adresses dans le sitemap
+   5 livre(s) ajouté(s) au catalogue
+   publié : ebookclassics-site — Nouveaux livres au catalogue : Ninety-Three, Pierre and Jean, The Devil's Pool, The Gambler, Indiana
+TERMINE — 5 nouveau(x) livre(s) : Ninety-Three, Pierre and Jean, The Devil's Pool, The Gambler, Indiana
+=== BookClassics — lot 2026-10-03-q — 2026-10-03 23:52 ===
+== 1/4 Fabrication des livres (EPUB, PDF, TXT, HTML) ==
+… Twenty Years After [en] — Gutenberg #1259
+   + twenty-years-after [en] OK — Project Gutenberg (#1259), 241962 mots, 90 chapitres — epub:677Ko pdf:3797Ko txt:1385Ko html:1457Ko
+… Twenty Years After [fr] — Gutenberg #13952
+   + twenty-years-after [fr] OK — Project Gutenberg (#13952), 283068 mots, 98 chapitres — epub:785Ko pdf:4524Ko txt:1655Ko html:1835Ko
+… The Mysterious Island [en] — Gutenberg #1268
+   + the-mysterious-island [en] OK — Project Gutenberg (#1268), 192334 mots, 64 chapitres — epub:535Ko pdf:2651Ko txt:1096Ko html:1132Ko
+… The Mysterious Island [fr] — Gutenberg #14287
+   + the-mysterious-island [fr] OK — Project Gutenberg (#14287), 195765 mots, 62 chapitres — epub:584Ko pdf:2865Ko txt:1213Ko html:1315Ko
+… Salammbô [en] — Gutenberg #1290
+   + salammbo [en] OK — Project Gutenberg (#1290), 105590 mots, 14 chapitres — epub:303Ko pdf:1380Ko txt:599Ko html:615Ko
+… Salammbô [fr] — Gutenberg #48881
+   + salammbo [fr] OK — Project Gutenberg (#48881), 107123 mots, 9 chapitres — epub:341Ko pdf:1571Ko txt:673Ko html:724Ko
+… Colomba [en] — Gutenberg #2708
+   + colomba [en] OK — Project Gutenberg (#2708), 48981 mots, 21 chapitres — epub:182Ko pdf:712Ko txt:273Ko html:284Ko
+… Colomba [fr] — Gutenberg #16239
+   + colomba [fr] OK — Project Gutenberg (#16239), 46315 mots, 20 chapitres — epub:181Ko pdf:703Ko txt:273Ko html:299Ko
+… The Government Inspector [en] — Gutenberg #3735
+   + the-government-inspector [en] OK — Project Gutenberg (#3735), 29357 mots, 51 chapitres — epub:165Ko pdf:608Ko txt:163Ko html:183Ko
+== 2/4 Dépôt des livres ==
++ Twenty Years After : en, fr
++ The Mysterious Island : en, fr
++ Salammbô : en, fr
++ Colomba : en, fr
++ The Government Inspector : en
+   publié : ebookclassics-files — Nouveaux livres : Twenty Years After, The Mysterious Island, Salammbô, Colomba, The Government Inspector
+== 3/4 Site : catalogue, pages livres, plan du site ==
+   221 pages livres, 220 couvertures, 226 adresses dans le sitemap
+   5 livre(s) ajouté(s) au catalogue
+   publié : ebookclassics-site — Nouveaux livres au catalogue : Twenty Years After, The Mysterious Island, Salammbô, Colomba, The Government Inspector
+TERMINE — 5 nouveau(x) livre(s) : Twenty Years After, The Mysterious Island, Salammbô, Colomba, The Government Inspector
+== Livres audio du lot 2026-10-03-l ==
+   LibriVox : Kim [en] — « Kim » (13 h 08)
+   LibriVox : King Solomon's Mines [en] — « King Solomon's Mines » (9 h 51)
+   LibriVox : Pygmalion [en] — « Pygmalion » (2 h 54)
+   LibriVox : A Doll's House [en] — « Doll's House (Version 2) » (3 h 16)
+   LibriVox : Five Children and It [en] — « Five Children and It (Version 2) » (6 h 17)
+   ! ~/r2.conf absent : livres audio non ajoutés
+== Livres audio du lot 2026-10-03-m ==
+   LibriVox : The Lost World [en] — « Lost World (version 3) » (8 h 24)
+   LibriVox : The Prisoner of Zenda [en] — « Prisoner of Zenda » (5 h 42)
+   pas d'enregistrement LibriVox pour The Prisoner of Zenda [es]
+   LibriVox : Lord Jim [en] — « Lord Jim » (14 h 25)
+   LibriVox : An Ideal Husband [en] — « Ideal Husband » (3 h 17)
+   LibriVox : Just So Stories [en] — « Just So Stories (version 4) » (4 h 02)
+   ! ~/r2.conf absent : livres audio non ajoutés
+== Livres audio du lot 2026-10-03-n ==
+   LibriVox : Eugénie Grandet [en] — « Eugénie Grandet » (7 h 17)
+   pas d'enregistrement LibriVox pour Eugénie Grandet [fr]
+   pas d'enregistrement LibriVox pour Notre-Dame de Paris [en]
+   LibriVox : Notre-Dame de Paris [fr] — « Notre-Dame de Paris » (20 h 33)
+   LibriVox : Carmen [en] — « Carmen » (2 h 17)
+   LibriVox : Tartuffe [en] — « Tartuffe » (1 h 49)
+   LibriVox : Fathers and Sons [en] — « Fathers and Sons » (9 h 15)
+   ! ~/r2.conf absent : livres audio non ajoutés
+== Livres audio du lot 2026-10-03-o ==
+   LibriVox : The Black Tulip [en] — « Black Tulip » (7 h 34)
+   pas d'enregistrement LibriVox pour The Black Tulip [fr]
+   pas d'enregistrement LibriVox pour Michael Strogoff [de]
+   LibriVox : Michael Strogoff [en] — « Michael Strogoff » (9 h 45)
+   pas d'enregistrement LibriVox pour Michael Strogoff [fr]
+   LibriVox : The Mystery of the Yellow Room [en] — « Mystery of the Yellow Room » (8 h 22)
+   pas d'enregistrement LibriVox pour The Mystery of the Yellow Room [fr]
+   LibriVox : Manon Lescaut [en] — « Manon Lescaut » (7 h 07)
+   pas d'enregistrement LibriVox pour Manon Lescaut [es]
+   pas d'enregistrement LibriVox pour Manon Lescaut [fr]
+   pas d'enregistrement LibriVox pour Taras Bulba [en]
+   ! ~/r2.conf absent : livres audio non ajoutés
+== Livres audio du lot 2026-10-03-p ==
+   LibriVox : Ninety-Three [en] — « Ninety-Three » (12 h 39)
+   LibriVox : Ninety-Three [fr] — « Quatrevingt-treize » (10 h 59)
+   pas d'enregistrement LibriVox pour Pierre and Jean [en]
+   pas d'enregistrement LibriVox pour Pierre and Jean [fr]
+   LibriVox : The Devil's Pool [en] — « Devil's Pool » (3 h 35)
+   pas d'enregistrement LibriVox pour The Devil's Pool [fr]
+   pas d'enregistrement LibriVox pour The Gambler [en]
+   LibriVox : Indiana [en] — « Indiana » (11 h 00)
+   ! ~/r2.conf absent : livres audio non ajoutés
+== Livres audio du lot 2026-10-03-q ==
+   LibriVox : Twenty Years After [en] — « Twenty Years After » (25 h 43)
+   pas d'enregistrement LibriVox pour Twenty Years After [fr]
+   LibriVox : The Mysterious Island [en] — « Mysterious Island (version 2) » (23 h 22)
+   LibriVox : The Mysterious Island [fr] — « L'île mystérieuse » (22 h 54)
+   LibriVox : Salammbô [en] — « Salammbô » (14 h 53)
+   pas d'enregistrement LibriVox pour Salammbô [fr]
+   pas d'enregistrement LibriVox pour Colomba [en]
+   pas d'enregistrement LibriVox pour Colomba [fr]
+   pas d'enregistrement LibriVox pour The Government Inspector [en]
+   ! ~/r2.conf absent : livres audio non ajoutés
+FIN 2026-10-03 23:54

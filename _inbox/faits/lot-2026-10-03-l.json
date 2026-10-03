@@ -1,0 +1,101 @@
+{
+ "lot": "2026-10-03-l",
+ "books": [
+  {
+   "title": "Kim",
+   "author": "Rudyard Kipling",
+   "cat": "aventure",
+   "meta": "England · 1901",
+   "desc": "An Irish orphan who has grown up on the streets of Lahore follows a Tibetan lama along the roads of India, and is drawn into the spying of the Great Game.",
+   "editions": [
+    {"lang": "en", "gid": 2226, "check": "kim"}
+   ],
+   "about": [
+    "Kimball O'Hara, the orphaned son of an Irish soldier, runs wild in the streets of Lahore, passing easily for a local boy. When an elderly Tibetan lama arrives in search of the sacred River of the Arrow, Kim becomes his disciple and guide on the roads of India. At the same time, through the horse-dealer Mahbub Ali and Colonel Creighton, he is drawn into the Great Game, the secret rivalry between Britain and Russia in Central Asia.",
+    "Kipling paints a vivid and affectionate picture of the peoples, languages, religions and landscapes of India, and of the friendship between the streetwise boy and the gentle holy man. The novel is also a book of the British Empire, written from the point of view of its colonial order, and its view of India reflects the assumptions of its time.",
+    "Kim was serialised in McClure's Magazine from December 1900 to October 1901 and in Cassell's Magazine during 1901, and published in book form in October 1901. It is often ranked among the greatest novels in English."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "King Solomon's Mines",
+   "author": "H. Rider Haggard",
+   "cat": "aventure",
+   "meta": "England · 1885",
+   "desc": "The hunter Allan Quatermain leads a small party across desert and mountains in search of a lost brother and the legendary treasure of King Solomon.",
+   "editions": [
+    {"lang": "en", "gid": 2166, "check": "solomon"}
+   ],
+   "about": [
+    "The seasoned elephant hunter Allan Quatermain agrees to help Sir Henry Curtis and his friend Captain John Good search for Sir Henry's brother, who vanished while looking for the fabled diamond mines of King Solomon. Guided by an old map and joined by a mysterious tall African named Umbopa, they cross a burning desert and icy mountains to reach the hidden land of the Kukuana, ruled by the cruel king Twala and his ancient witch-finder, Gagool.",
+    "Haggard's fast-paced, first-person adventure helped create the \"lost world\" genre, with its hidden kingdoms, ancient treasures and perilous journeys. Written from the viewpoint of a white colonial hunter, it reflects the imperial and racial attitudes of its time towards Africa and its peoples, even as some African characters are given dignity and heroism.",
+    "King Solomon's Mines was published by Cassell in September 1885. Haggard is said to have written it after betting his brother that he could write a story as good as Treasure Island. It was an immediate bestseller and has been filmed several times, including a 1937 version."
+   ],
+   "author_short": "English novelist (1856–1925), author of King Solomon's Mines and She.",
+   "author_long": [
+    "Henry Rider Haggard was born on 22 June 1856 at Bradenham, Norfolk. As a young man he served in colonial administration in South Africa, in Natal and later in the Transvaal, experiences that shaped his fiction. Back in England he became known both as a writer and for his work on agriculture and rural reform. He was knighted, and died in London on 14 May 1925.",
+    "Haggard wrote more than thirty adventure novels, many set in Africa. The most famous are King Solomon's Mines (1885) and She (1887), which made him one of the best-selling authors of his day."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "Pygmalion",
+   "author": "George Bernard Shaw",
+   "cat": "theatre",
+   "meta": "England · 1913",
+   "desc": "A professor of phonetics bets that he can pass off a Cockney flower girl as a duchess just by teaching her to speak, in Shaw's sparkling comedy of class.",
+   "editions": [
+    {"lang": "en", "gid": 3825, "check": "pygmalion"}
+   ],
+   "about": [
+    "Sheltering from the rain in Covent Garden, the brilliant and ill-mannered phonetics expert Henry Higgins meets Eliza Doolittle, a Cockney flower seller, and boasts to his fellow linguist Colonel Pickering that he could teach her to speak so well that she might pass for a duchess. Eliza takes him at his word and arrives at his house to ask for lessons, and the experiment begins, complicated by her irrepressible father, the dustman Alfred Doolittle.",
+    "Shaw's comedy uses language and accent to expose the absurdities of the English class system, and asks what becomes of Eliza once she has been transformed. Witty dialogue and strong characters combine with serious questions about independence, education and dignity. This edition includes Shaw's preface and his prose sequel explaining what happens afterwards.",
+    "Pygmalion was first performed in German translation in Vienna on 16 October 1913, and in English at His Majesty's Theatre in London in April 1914, with Herbert Beerbohm Tree and Mrs Patrick Campbell. It became Shaw's most popular play and inspired the musical My Fair Lady (1956)."
+   ],
+   "author_short": "Irish playwright, critic and polemicist (1856–1950), author of Pygmalion and winner of the 1925 Nobel Prize in Literature.",
+   "author_long": [
+    "George Bernard Shaw was born in Dublin on 26 July 1856 and moved to London as a young man. A committed socialist, he was a member of the Fabian Society. He died on 2 November 1950.",
+    "Shaw wrote more than sixty plays, including Arms and the Man, Mrs Warren's Profession, Major Barbara and Pygmalion. He received the Nobel Prize in Literature in 1925 and an Academy Award for the screenplay of the 1938 film of Pygmalion."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "A Doll's House",
+   "author": "Henrik Ibsen",
+   "cat": "theatre",
+   "meta": "Norway · 1879",
+   "desc": "Nora Helmer seems the perfect, playful wife, but a secret loan made years ago threatens to expose the truth about her marriage, in Ibsen's landmark drama.",
+   "editions": [
+    {"lang": "en", "gid": 15492, "check": "doll", "credit": "Traduction : Robert Farquharson Sharp (1864-1945)"}
+   ],
+   "about": [
+    "It is Christmas in the comfortable home of Torvald Helmer, a lawyer about to become a bank manager, and his lively wife Nora, whom he treats as a charming pet. Nora has a secret: years ago, to save her husband's health, she borrowed money without his knowledge, by means she cannot admit. When Krogstad, an employee at Torvald's bank, threatens to reveal everything, Nora must face the truth about her marriage, with her old friend Mrs Linde and the family friend Dr Rank looking on.",
+    "Ibsen's realistic drama questions the roles assigned to husbands and wives and the idea of a woman's duty to herself. Its tight plot and everyday setting made it a turning point in modern theatre, and its ending is still much discussed.",
+    "A Doll's House was published on 4 December 1879 and first performed at the Royal Danish Theatre in Copenhagen on 21 December 1879. This English translation is by R. Farquharson Sharp."
+   ],
+   "author_short": "Norwegian playwright (1828–1906), often called the father of modern drama, author of A Doll's House, Ghosts and Hedda Gabler.",
+   "author_long": [
+    "Henrik Ibsen was born on 20 March 1828 in Skien, Norway. After his father's business failed, he worked as an apothecary's apprentice before becoming a theatre director and resident playwright in Bergen. In 1864 he left Norway and lived for many years in Italy and Germany, returning home in 1891. He died in Kristiania, now Oslo, on 23 May 1906.",
+    "His works include the verse dramas Brand (1865) and Peer Gynt (1867) and the realistic plays A Doll's House (1879), Ghosts (1881), An Enemy of the People (1882), The Wild Duck (1884) and Hedda Gabler (1890), which transformed European theatre."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "Five Children and It",
+   "author": "E. Nesbit",
+   "cat": "jeunesse",
+   "meta": "England · 1902",
+   "desc": "Five children digging in a gravel pit uncover a grumpy sand-fairy who grants a wish a day, and every wish goes wonderfully, comically wrong.",
+   "editions": [
+    {"lang": "en", "gid": 778, "check": "five children"}
+   ],
+   "about": [
+    "Cyril, Anthea, Robert, Jane and their baby brother, known as the Lamb, are spending the summer in the country when, digging in a gravel pit, they discover an ancient, bad-tempered creature: the Psammead, a sand-fairy who can grant wishes. He agrees to grant them one wish a day, which lasts only until sunset. Wishing to be beautiful, rich or winged, the children soon learn that getting exactly what you ask for can lead to all kinds of trouble.",
+    "Nesbit writes with humour and a natural sense of how real children think, talk and squabble, and places magic in an everyday setting. Her mix of fantasy and realism made the book a landmark in children's literature.",
+    "The stories first appeared in the Strand Magazine from April to December 1902 and were published as a book the same year. It was followed by The Phoenix and the Carpet (1904) and The Story of the Amulet (1906), and has never been out of print."
+   ],
+   "librivox": []
+  }
+ ],
+ "refused": []
+}

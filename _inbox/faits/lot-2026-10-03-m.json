@@ -1,0 +1,92 @@
+{
+ "lot": "2026-10-03-m",
+ "books": [
+  {
+   "title": "The Lost World",
+   "author": "Arthur Conan Doyle",
+   "cat": "aventure",
+   "meta": "England · 1912",
+   "desc": "A young reporter joins the explosive Professor Challenger on an expedition to a remote South American plateau where prehistoric creatures still survive.",
+   "editions": [
+    {"lang": "en", "gid": 139, "check": "lost world"}
+   ],
+   "about": [
+    "Edward Malone, a young journalist on the Daily Gazette, wants to do something brave to impress the woman he loves. He finds his chance with Professor George Edward Challenger, a hot-tempered zoologist who claims to have found living prehistoric animals in the Amazon basin and has been mocked by the scientific world. Malone sets out to prove or disprove him, together with the sceptical Professor Summerlee and the adventurer and big-game hunter Lord John Roxton.",
+    "Doyle combines scientific speculation, humour and thrilling adventure, with dinosaurs, dangerous ape-men and the explorers' constant bickering. Told in the first person by Malone, the story also reflects the colonial attitudes of its time in its portrayal of the region's indigenous peoples.",
+    "The Lost World was serialised in the Strand Magazine from April to November 1912, with illustrations by Harry Rountree, and published as a book the same year. It introduced Professor Challenger, who returned in later stories, and helped shape the \"lost world\" adventure story."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "The Prisoner of Zenda",
+   "author": "Anthony Hope",
+   "cat": "aventure",
+   "meta": "England · 1894",
+   "desc": "An idle English gentleman who looks exactly like the king of Ruritania must take his place on the throne, while the real king lies imprisoned in a castle.",
+   "editions": [
+    {"lang": "en", "gid": 95, "check": "zenda"},
+    {"lang": "es", "gid": 24801, "check": "zenda", "credit": "anonyme"}
+   ],
+   "about": [
+    "Rudolf Rassendyll, a well-off and easygoing young Englishman, travels to the small Central European kingdom of Ruritania for the coronation of its new king, Rudolf V, a distant cousin who looks exactly like him. When the king is drugged on the eve of his coronation as part of a plot by his ambitious half-brother, Black Michael, the loyal Colonel Sapt persuades Rassendyll to take the king's place, and he soon finds himself in love with the king's betrothed, Princess Flavia.",
+    "Hope's swift and witty adventure of impersonation, sword fights, intrigue and doomed romance, with the dashing villain Rupert of Hentzau, created the imaginary kingdom of Ruritania.",
+    "The Prisoner of Zenda was published in 1894. It was followed by a sequel, Rupert of Hentzau (1898), and has been filmed several times. The Spanish translation offered here, by an unnamed translator, was published in Buenos Aires in 1909 by the Biblioteca de La Nación."
+   ],
+   "author_short": "English novelist and playwright (1863–1933), author of The Prisoner of Zenda.",
+   "author_long": [
+    "Sir Anthony Hope Hawkins, who wrote as Anthony Hope, was born in London on 9 February 1863. He was educated at Marlborough College and Balliol College, Oxford, and became a lawyer, writing short stories in his spare time before the success of his novels allowed him to write full-time. He died on 8 July 1933.",
+    "Although he wrote many novels and plays, he is remembered above all for The Prisoner of Zenda (1894) and its sequel Rupert of Hentzau (1898), set in the imaginary kingdom of Ruritania."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "Lord Jim",
+   "author": "Joseph Conrad",
+   "cat": "aventure",
+   "meta": "England · 1900",
+   "desc": "A young officer who once abandoned a ship full of pilgrims in a moment of panic seeks redemption in a remote corner of the Malay world.",
+   "editions": [
+    {"lang": "en", "gid": 5658, "check": "lord jim"}
+   ],
+   "about": [
+    "Jim, the son of an English parson, goes to sea dreaming of heroic deeds. As chief mate of the Patna, an old steamer carrying hundreds of Muslim pilgrims across the Indian Ocean, he joins the captain and officers in abandoning the ship when it seems about to sink, an act that brings public disgrace. The seaman Marlow, who attends the inquiry, becomes fascinated by Jim and follows his attempts to escape his past, until the merchant Stein offers him a new life in the remote settlement of Patusan.",
+    "Conrad tells the story through Marlow's long, searching narration, moving back and forth in time and gathering other witnesses' views. The novel explores honour, guilt, courage, self-knowledge and the gap between ideals and actions, against the background of European colonialism in Southeast Asia, which it portrays from the perspective of its time.",
+    "Lord Jim was serialised in Blackwood's Magazine from October 1899 to November 1900 and published in book form in 1900. The Patusan section was partly inspired by the life of James Brooke, the first White Rajah of Sarawak."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "An Ideal Husband",
+   "author": "Oscar Wilde",
+   "cat": "theatre",
+   "meta": "England · 1895",
+   "desc": "A respected politician's brilliant career and perfect marriage are threatened when a clever adventuress arrives in London with proof of an old secret.",
+   "editions": [
+    {"lang": "en", "gid": 885, "check": "ideal husband"}
+   ],
+   "about": [
+    "Sir Robert Chiltern is a rising government minister, admired for his integrity and adored by his high-minded wife, Lady Chiltern. At a glittering party in their London home, the scheming Mrs Cheveley reveals that she knows the dishonest act on which his fortune was built, and threatens to expose him unless he supports a fraudulent scheme. Sir Robert turns to his friend Lord Goring, a witty and apparently idle dandy, for help.",
+    "Wilde mixes political drama, blackmail and moral questions about public and private virtue with dazzling epigrams and comedy. Beneath the wit, the play asks whether anyone can live up to an ideal, and how love should deal with human weakness.",
+    "An Ideal Husband was first performed at the Haymarket Theatre in London on 3 January 1895, shortly before Wilde's downfall later that year. It was published in book form in 1899, without the author's name."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "Just So Stories",
+   "author": "Rudyard Kipling",
+   "cat": "jeunesse",
+   "meta": "England · 1902",
+   "desc": "How did the leopard get his spots, the camel his hump and the elephant his trunk? Kipling's playful tales, first told as bedtime stories, answer them all.",
+   "editions": [
+    {"lang": "en", "gid": 2781, "check": "just so"}
+   ],
+   "about": [
+    "In a series of comic and inventive tales addressed to \"O Best Beloved\", Kipling tells how animals and people came to be as they are: how the Whale got his throat, how the Camel got his hump, how the Rhinoceros got his skin, how the Leopard got his spots, and how the curious Elephant's Child got his long trunk. Other stories tell how the first letter was written and how the alphabet was made.",
+    "Kipling's rhythmic, playful language, with its repetitions and invented words, is made to be read aloud, and each story is followed by a poem. Some passages, notably in the story of the Leopard, use racial language and stereotypes of their time that are offensive today.",
+    "Just So Stories for Little Children was published by Macmillan in 1902, with illustrations by Kipling himself. The first stories were told at bedtime to his daughter Josephine, who insisted they be told \"just so\"; she died in 1899, before the book appeared. It remains one of his best-known works."
+   ],
+   "librivox": []
+  }
+ ],
+ "refused": []
+}
