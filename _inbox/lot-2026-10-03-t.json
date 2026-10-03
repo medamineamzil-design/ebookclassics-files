@@ -1,0 +1,96 @@
+{
+ "lot": "2026-10-03-t",
+ "books": [
+  {
+   "title": "Barnaby Rudge",
+   "author": "Charles Dickens",
+   "cat": "fiction",
+   "meta": "England · 1841",
+   "desc": "A gentle simpleton and his talking raven are swept up in a long-buried murder mystery and the violent anti-Catholic Gordon Riots of 1780 in London.",
+   "editions": [
+    {"lang": "en", "gid": 917, "check": "barnaby rudge"}
+   ],
+   "about": [
+    "In 1775, at the Maypole inn near Epping Forest, regulars recall an unsolved murder committed twenty-two years before at the Warren, the house of the Haredale family. Barnaby Rudge, an innocent and good-hearted young man of simple mind, wanders the countryside with his mother and his talking raven, Grip. Around them move the honest locksmith Gabriel Varden and his pretty daughter Dolly, the scheming Sir John Chester and his son, and the rough ostler Hugh. Five years later, in 1780, the anti-Catholic Gordon Riots break out in London, and all their lives are caught up in the violence.",
+    "Dickens combines a family mystery, romance and comedy with powerful scenes of mob violence, burning houses and the storming of Newgate prison. The novel explores fanaticism, the manipulation of crowds and the bonds between parents and children.",
+    "Barnaby Rudge: A Tale of the Riots of 'Eighty was serialised from February to November 1841 in Dickens's weekly Master Humphrey's Clock and published as a book the same year. It was the first of his two historical novels, the other being A Tale of Two Cities."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "The Ambassadors",
+   "author": "Henry James",
+   "cat": "fiction",
+   "meta": "United States · 1903",
+   "desc": "A middle-aged New Englander is sent to Paris to bring home his fiancée's wayward son, and finds his own view of life transformed.",
+   "editions": [
+    {"lang": "en", "gid": 432, "check": "ambassadors"}
+   ],
+   "about": [
+    "Lambert Strether, a cultivated but unadventurous man from Woollett, Massachusetts, is engaged to the wealthy widow Mrs Newsome. She sends him to Paris to rescue her son Chad, who has stayed in Europe too long, from an entanglement she assumes to be scandalous, and bring him home to run the family business. Guided by the perceptive Maria Gostrey and accompanied by his gloomy friend Waymarsh, Strether finds Chad wonderfully changed, meets the charming Madame de Vionnet, and begins to wonder what he himself has missed in life.",
+    "Told almost entirely through Strether's point of view, the novel is a subtle comedy of perception and misunderstanding, contrasting American moral certainty with the beauty and complexity of European life. Its famous advice, \"Live all you can\", sums up Strether's awakening.",
+    "The Ambassadors was serialised in the North American Review throughout 1903 and published in book form the same year. Henry James considered it his best novel."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "The Sea-Wolf",
+   "author": "Jack London",
+   "cat": "aventure",
+   "meta": "United States · 1904",
+   "desc": "A refined literary critic, rescued from a shipwreck, is forced to work aboard a sealing schooner ruled by its brutal, brilliant captain, Wolf Larsen.",
+   "editions": [
+    {"lang": "en", "gid": 1074, "check": "sea-wolf"}
+   ],
+   "about": [
+    "Humphrey Van Weyden, a gentleman scholar and literary critic from San Francisco, is thrown into the sea when his ferry sinks in the fog. He is picked up by the Ghost, a schooner bound for the seal-hunting grounds of the North Pacific, whose captain, Wolf Larsen, refuses to set him ashore and makes him a cabin boy. Larsen is physically powerful, well read and utterly ruthless, and he delights in debating philosophy with his reluctant passenger, until another survivor, the writer Maud Brewster, comes aboard.",
+    "London's novel is both a gripping sea adventure and a duel of ideas about strength, morality and the meaning of life. Life on the ship is harsh and violent, and Humphrey must learn to survive and to discover his own strength.",
+    "The Sea-Wolf was serialised in The Century Magazine from January to November 1904 and published as a book the same year. Its first print run sold out before publication."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "The Thirty-Nine Steps",
+   "author": "John Buchan",
+   "cat": "aventure",
+   "meta": "Scotland · 1915",
+   "desc": "On the eve of war, a bored Londoner finds a murdered spy in his flat and must flee across the Scottish moors, hunted by both police and enemy agents.",
+   "editions": [
+    {"lang": "en", "gid": 558, "check": "thirty-nine steps"}
+   ],
+   "about": [
+    "In the months before the First World War, Richard Hannay, a mining engineer recently back from Africa, is bored with life in London. One evening a nervous neighbour, Franklin Scudder, tells him of a plot by a secret organisation, the Black Stone, to steal British military plans and provoke war. A few days later Hannay finds Scudder murdered in his flat. Suspected of the crime and pursued by the conspirators, he takes Scudder's coded notebook and flees to Scotland, across the moors of Galloway.",
+    "Buchan's short, fast-paced novel set the pattern for the modern spy thriller: an ordinary man on the run, disguises, chases, narrow escapes and a race against time. Hannay's resourcefulness and humour carry the reader through.",
+    "The Thirty-Nine Steps first appeared in Blackwood's Magazine in August and September 1915 and was published as a book in October 1915. It was the first of five novels featuring Richard Hannay, and was adapted into a famous 1935 film by Alfred Hitchcock."
+   ],
+   "author_short": "Scottish novelist, historian and statesman (1875–1940), author of The Thirty-Nine Steps and Governor General of Canada.",
+   "author_long": [
+    "John Buchan was born in Perth, Scotland, on 26 August 1875. Besides writing, he had a long public career. Raised to the peerage as Lord Tweedsmuir, he served as Governor General of Canada from 1935 until his death in Montreal on 11 February 1940.",
+    "He wrote many novels, histories and biographies. His best-known books are the adventure novels featuring Richard Hannay, beginning with The Thirty-Nine Steps (1915). In Canada he founded the Governor General's Literary Awards."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "The Princess and the Goblin",
+   "author": "George MacDonald",
+   "cat": "jeunesse",
+   "meta": "Scotland · 1872",
+   "desc": "Young Princess Irene discovers a mysterious great-great-grandmother in her castle tower, while a brave miner's boy uncovers the goblins' plot beneath the mountain.",
+   "editions": [
+    {"lang": "en", "gid": 708, "check": "goblin"}
+   ],
+   "about": [
+    "Eight-year-old Princess Irene lives in a large house on a mountainside, cared for by her nurse Lootie while her father the king travels his kingdom. Deep in the mines beneath the mountain live the goblins, who hate the people above and come out at night. Exploring the house one rainy day, Irene finds a hidden stair leading to a beautiful, ancient lady who says she is her great-great-grandmother. Meanwhile Curdie, a brave young miner, overhears the goblins plotting against the princess.",
+    "MacDonald's fairy tale mixes adventure, humour and gentle mystery with deeper themes of faith, courage and trust in what cannot be seen. Its imaginative world and spiritual depth made it a classic of children's fantasy.",
+    "The Princess and the Goblin was first serialised in the magazine Good Words for the Young from November 1870 and published as a book in 1872, with illustrations by Arthur Hughes. It was followed by The Princess and Curdie."
+   ],
+   "author_short": "Scottish novelist, poet and minister (1824–1905), a pioneer of fantasy fiction and author of The Princess and the Goblin.",
+   "author_long": [
+    "George MacDonald was born on 10 December 1824 at Huntly, Aberdeenshire, in Scotland. He became a minister, writer and lecturer. He died on 18 September 1905.",
+    "He wrote novels of Scottish life, poetry, sermons and, above all, fantasy works for adults and children, such as At the Back of the North Wind and The Princess and the Goblin. He was a pioneer of fantasy literature and influenced later writers including Lewis Carroll, J. R. R. Tolkien and C. S. Lewis."
+   ],
+   "librivox": []
+  }
+ ],
+ "refused": []
+}
