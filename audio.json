@@ -1127,6 +1127,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-wonderful-wizard-of-oz/the-wonderful-wizard-of-oz.mp3"
   }
  },
+ "through-the-looking-glass": {
+  "en": {
+   "bytes": 101177373,
+   "dl": true,
+   "duration": 12645,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/through-the-looking-glass/through-the-looking-glass.mp3"
+  }
+ },
  "treasure-island": {
   "en": {
    "bytes": 218074661,
