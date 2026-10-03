@@ -1,0 +1,94 @@
+{
+ "lot": "2026-10-03-s",
+ "books": [
+  {
+   "title": "The Sorrows of Young Werther",
+   "author": "Johann Wolfgang von Goethe",
+   "cat": "fiction",
+   "meta": "Germany · 1774",
+   "desc": "In letters to a friend, a sensitive young artist describes his passionate, hopeless love for Charlotte, who is engaged to another man.",
+   "editions": [
+    {"lang": "en", "gid": 2527, "check": "werther", "credit": "Traduction : Richard Dillon Boylan (1805-1888)"},
+    {"lang": "fr", "gid": 62368, "check": "werther", "credit": "Traduction : Pierre Leroux (1797-1871)"}
+   ],
+   "about": [
+    "Werther, a young man of artistic temperament, settles in the countryside near the village of Walheim and writes enthusiastic letters to his friend Wilhelm about nature, simple people and his own feelings. At a country ball he meets Charlotte, a warm and lively young woman who cares for her younger brothers and sisters, and falls in love with her at once, although she is promised to Albert, a calm and sensible man. As Werther's passion grows, his letters become ever more troubled.",
+    "Goethe's short novel, written almost entirely in Werther's letters, explores intense emotion, nature, art and despair with a new kind of inward, personal voice. It became a defining work of the German Sturm und Drang movement and influenced the Romantics.",
+    "The Sorrows of Young Werther was written in a few weeks in early 1774 and published by Weygand in Leipzig in the autumn of 1774, when Goethe was in his twenties. It was an immediate sensation across Europe and made him famous. This edition offers English and French translations; the French translation by Pierre Leroux is introduced by George Sand."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "Apology",
+   "author": "Plato",
+   "cat": "philosophie",
+   "meta": "Greece · 4th century BC",
+   "desc": "Socrates, on trial for his life in Athens, defends his life of questioning and refuses to give up philosophy, even to save himself.",
+   "editions": [
+    {"lang": "en", "gid": 1656, "check": "apology", "credit": "Traduction : Benjamin Jowett (1817-1893)"}
+   ],
+   "about": [
+    "In 399 BC the philosopher Socrates stands before a jury of Athenian citizens, accused by Meletus, Anytus and Lycon of failing to honour the city's gods, introducing new divinities and corrupting the young. In his defence he explains how the oracle at Delphi declared that no one was wiser than he, and how his attempts to understand this led him to question politicians, poets and craftsmen, revealing that they knew less than they believed.",
+    "Plato's account of the trial is both a moving portrait of his teacher and a powerful statement of the philosophical life: the duty to seek truth, to examine oneself and to act justly whatever the consequences. Socrates compares himself to a gadfly sent to keep the city awake.",
+    "The Apology is Plato's version of the speech Socrates gave at his trial in 399 BC, after which he was condemned to death. This edition offers the classic English translation by Benjamin Jowett, with his introduction."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "Symposium",
+   "author": "Plato",
+   "cat": "philosophie",
+   "meta": "Greece · 4th century BC",
+   "desc": "At a drinking party in Athens, Socrates, Aristophanes and other guests take turns to praise Love, until Alcibiades bursts in with a speech of his own.",
+   "editions": [
+    {"lang": "en", "gid": 1600, "check": "symposium", "credit": "Traduction : Benjamin Jowett (1817-1893)"}
+   ],
+   "about": [
+    "To celebrate the poet Agathon's victory in a drama competition, a group of friends meet for an evening of conversation and wine, and agree that each will give a speech in praise of Eros, the god of love. Phaedrus, Pausanias, the doctor Eryximachus, the comic playwright Aristophanes and Agathon himself each give their view, and then Socrates recounts what he learned about love from a wise woman, Diotima. Late in the evening the drunken Alcibiades arrives and delivers a startling speech in praise of Socrates.",
+    "Mixing philosophy, comedy and drama, the dialogue explores love in all its forms, from physical desire to the love of wisdom and beauty itself. Aristophanes' myth of the divided humans searching for their other halves and Diotima's \"ladder of love\" are among its most famous passages.",
+    "The Symposium was written by Plato in the fourth century BC and is one of his most admired dialogues for both its ideas and its literary art. This edition offers the classic English translation by Benjamin Jowett, with his introduction."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "Hedda Gabler",
+   "author": "Henrik Ibsen",
+   "cat": "theatre",
+   "meta": "Norway · 1890",
+   "desc": "Bored and trapped in a conventional marriage, the proud daughter of a general toys with the lives of those around her, in one of Ibsen's greatest roles.",
+   "editions": [
+    {"lang": "en", "gid": 4093, "check": "hedda", "credit": "Traduction : Edmund Gosse (1849-1928), William Archer (1856-1924)"}
+   ],
+   "about": [
+    "Hedda, the beautiful and proud daughter of the late General Gabler, has just returned from a long wedding journey with her husband, George Tesman, a well-meaning but dull young scholar who hopes for a university post. Settled in their new villa, she is already bored. When her old schoolfellow Thea Elvsted arrives with news of Eilert Lovborg, a brilliant and once dissolute writer who was close to Hedda in the past and is now Tesman's rival, Hedda sees a chance to shape someone's destiny, while the worldly Judge Brack watches with interest.",
+    "Ibsen's drama creates a fascinating, enigmatic heroine, frustrated by the narrow role society allows her and by her own fears and pride. Tight, realistic dialogue and rising tension drive the play towards its climax.",
+    "Hedda Gabler was published in Copenhagen in December 1890 and first performed at the Residenztheater in Munich on 31 January 1891. This English translation is by Edmund Gosse and William Archer, with an introduction by Archer."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "The School for Scandal",
+   "author": "Richard Brinsley Sheridan",
+   "cat": "theatre",
+   "meta": "England · 1777",
+   "desc": "In fashionable London, a circle of gossips spreads malicious rumours, while a rich uncle in disguise tests which of his two nephews deserves his fortune.",
+   "editions": [
+    {"lang": "en", "gid": 1929, "check": "scandal"}
+   ],
+   "about": [
+    "Lady Sneerwell presides over a society of scandalmongers, including the aptly named Sir Benjamin Backbite and Crabtree, who delight in ruining reputations. Old Sir Peter Teazle quarrels constantly with his young and extravagant wife. Meanwhile, Sir Oliver Surface returns from India and decides to test his two nephews: Joseph, who is admired for his fine moral sentiments, and his younger brother Charles, a cheerful spendthrift with a reputation for dissipation.",
+    "Sheridan's comedy of manners is a sparkling satire of gossip, hypocrisy and appearances, full of witty dialogue and brilliantly constructed comic scenes, culminating in the famous \"screen scene\".",
+    "The School for Scandal was first performed at the Theatre Royal, Drury Lane, in London on 8 May 1777. It was an immediate success."
+   ],
+   "author_short": "Irish playwright, theatre owner and politician (1751–1816), author of The Rivals and The School for Scandal.",
+   "author_long": [
+    "Richard Brinsley Sheridan was born on 30 October 1751. Irish by birth, he made his name in London as a playwright and became the long-term owner of the Theatre Royal, Drury Lane. For more than thirty years he was a Whig member of the House of Commons. He died on 7 July 1816.",
+    "His best-known plays are the comedies of manners The Rivals (1775) and The School for Scandal (1777), still performed today for their wit and comic characters."
+   ],
+   "librivox": []
+  }
+ ],
+ "refused": [
+  {"title": "Enchiridion (en, Gutenberg #45109, éd. Library of Liberal Arts)", "reason": "édition de 1948 avec apparat d'un éditeur dont la date de décès n'est pas vérifiée : statut UE incertain"}
+ ]
+}
