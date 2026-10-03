@@ -74,6 +74,22 @@ jobs:
               cp "$f" ~/bookclassics-auto/inbox/ && echo "à publier : $n"
             fi
           done
+          # Rattrapage : livre déjà déposé dans le dépôt des fichiers mais absent du site (publication interrompue).
+          # Retiré de la copie locale seulement, pour que publier_lot.py le refasse et mette le site à jour.
+          for f in ~/bookclassics-auto/inbox/lot-*.json; do
+            [ -e "$f" ] || continue
+            python3 -c '
+          import json, os, shutil, sys
+          sys.path.insert(0, os.path.expanduser("~/ebookclassics-site/_auto"))
+          import ebooks_build as EB
+          for b in json.load(open(sys.argv[1], encoding="utf-8")).get("books", []):
+              s = EB.slug_of(b["title"])
+              d = os.path.expanduser("~/ebookclassics-files/" + s)
+              if os.path.isdir(d) and not os.path.exists(os.path.expanduser("~/ebookclassics-site/books/" + s)):
+                  shutil.rmtree(d)
+                  print("rattrapage :", s, "(dans les fichiers, absent du site)")
+          ' "$f"
+          done
           if [ -n "$R2_ACCOUNT_ID" ]; then
             umask 077
             printf 'account_id=%s\naccess_key_id=%s\nsecret_access_key=%s\nbucket=%s\npublic_url=%s\n' \
@@ -86,6 +102,10 @@ jobs:
           J=~/journal/publication-$(TZ=Europe/Paris date +%F-%H%M).txt
           bash ~/ebookclassics-site/_auto/auto.sh 2>&1 | tee "$J"
           echo "JOURNAL=$J" >> $GITHUB_ENV
+
+      - name: Diagnostic des droits d'écriture sur le site
+        if: always()
+        run: git -C ~/ebookclassics-site push --dry-run 2>&1 | tail -5 || true
 
       - name: Ranger le lot et le journal sur main
         if: always()
