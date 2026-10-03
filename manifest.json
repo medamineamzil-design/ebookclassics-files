@@ -202,6 +202,14 @@
     "txt"
    ]
   },
+  "black-beauty": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "bleak-house": {
    "en": [
     "epub",
@@ -652,6 +660,14 @@
     "txt"
    ]
   },
+  "little-men": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "little-women": {
    "en": [
     "epub",
@@ -702,6 +718,14 @@
     "txt"
    ],
    "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "main-street": {
+   "en": [
     "epub",
     "html",
     "pdf",
@@ -1224,6 +1248,14 @@
     "txt"
    ]
   },
+  "the-deerslayer": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-descent-of-man": {
    "en": [
     "epub",
@@ -1297,6 +1329,14 @@
    ]
   },
   "the-house-of-mirth": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-house-of-the-seven-gables": {
    "en": [
     "epub",
     "html",
@@ -2027,5 +2067,5 @@
    ]
   }
  },
- "generated": "2026-10-03T23:40:03Z"
+ "generated": "2026-10-03T23:40:44Z"
 }
