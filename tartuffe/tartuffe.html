@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tartuffe — Molière</title><style>
+:root{--paper:#fbf8f1;--ink:#1f1b16;--muted:#6f6352;--accent:#9a6b2f;--rule:#e4dccb}
+@media (prefers-color-scheme:dark){:root{--paper:#16140f;--ink:#ece6d8;--muted:#a79c88;--accent:#d8a95e;--rule:#2e2a22}}
+html{background:var(--paper)}
+body{font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Libertinus Serif",Georgia,serif;color:var(--ink);
+     background:var(--paper);line-height:1.65;font-size:1.12rem;max-width:36em;margin:0 auto;padding:2.5em 1.25em 5em}
+.titlepage{text-align:center;min-height:70vh;display:flex;flex-direction:column;justify-content:center;gap:.6em;
+           border-bottom:1px solid var(--rule);margin-bottom:2.5em;padding-bottom:2.5em}
+.titlepage img{max-width:260px;width:60%;margin:0 auto 1.5em;border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+h1{font-size:2.4em;line-height:1.15;font-weight:600;margin:0;letter-spacing:-.01em}
+.author{font-style:italic;font-size:1.25em;color:var(--accent);margin:0}
+.translator{font-size:.95em;color:var(--muted);margin:0}
+nav.toc{margin:0 0 3em}
+nav.toc h2{font-size:.85em;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:left;margin:0 0 .8em}
+nav.toc ol{list-style:none;padding:0;margin:0;columns:1}
+nav.toc li{margin:.25em 0}
+nav.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent}
+nav.toc a:hover{border-color:var(--accent)}
+h2.chapter{font-size:1.45em;font-weight:600;text-align:center;margin:3.5em 0 1.6em;line-height:1.3}
+h2.chapter::before{content:"";display:block;width:3em;height:2px;background:var(--accent);margin:0 auto 1.1em}
+p{margin:0;text-indent:1.5em;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+h2.chapter + p, .titlepage + p{text-indent:0}
+h2.chapter + p::first-letter{font-size:3.1em;float:left;line-height:.85;padding:.08em .08em 0 0;color:var(--accent);font-weight:600}
+.colophon{margin-top:5em;padding-top:1.5em;border-top:1px solid var(--rule);text-align:center;color:var(--muted);font-size:.85em;text-indent:0}
+h3.sub{font-size:1em;font-weight:600;font-variant:small-caps;letter-spacing:.04em;text-align:center;margin:2.2em 0 1em}
+h3.sub + p{text-indent:0}
+@media print{h2.chapter{break-before:page}}
+</style></head><body>
+<header class="titlepage">
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjI0MDAiIHZpZXdCb3g9IjAgMCAxNjAwIDI0MDAiPgo8cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSIyNDAwIiBmaWxsPSIjM2IxZjE5Ii8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjMwMCIgZmlsbD0iI2U5Yjg3MiIgb3BhY2l0eT0iLjkyIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjM2IxZjE5IiBzdHJva2Utd2lkdGg9IjEyIiBvcGFjaXR5PSIuNSIvPgo8Y2lyY2xlIGN4PSIxMTIwIiBjeT0iNTYwIiByPSIxMjAiIGZpbGw9IiMzYjFmMTkiIG9wYWNpdHk9Ii4xOCIvPgo8cmVjdCB4PSIxNjAiIHk9IjkzMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIxMCIgZmlsbD0iI2U5Yjg3MiIvPgo8dGV4dCB4PSIxNjAiIHk9IjExODAiIGZvbnQtc2l6ZT0iMTUwIiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmN2VjZGMiPlRhcnR1ZmZlPC90ZXh0Pgo8dGV4dCB4PSIxNjAiIHk9IjE0MTUiIGZvbnQtc2l6ZT0iNjgiIGZvbnQtc3R5bGU9Iml0YWxpYyIgZm9udC1mYW1pbHk9IkxpYmVydGludXMgU2VyaWYsIEdlb3JnaWEsIHNlcmlmIiBmaWxsPSIjZTliODcyIj5Nb2xpw6hyZTwvdGV4dD4KPHRleHQgeD0iMTYwIiB5PSIyMjMwIiBmb250LXNpemU9IjQ0IiBsZXR0ZXItc3BhY2luZz0iMTQiIGZvbnQtZmFtaWx5PSJMaWJlcnRpbnVzIFNlcmlmLCBHZW9yZ2lhLCBzZXJpZiIgZmlsbD0iI2Y3ZWNkYyIgb3BhY2l0eT0iLjc1Ij5CT09LQ0xBU1NJQ1M8L3RleHQ+Cjwvc3ZnPg==" alt="">
+<h1>Tartuffe</h1>
+<p class="author">Molière</p>
+<p class="translator">Translated by Curtis Hidden Page</p>
+</header>
+<nav class="toc"><h2>Contents</h2><ol>
+<li><a href="#c1">Scene IV — Cleante, Damis, Dorine</a></li>
+<li><a href="#c2">Scene V — Orgon, Cleante, Dorine</a></li>
+<li><a href="#c3">Scene VI — Orgon, Cleante</a></li>
+<li><a href="#c4">Act II — Scene I</a></li>
+<li><a href="#c5">Scene II</a></li>
+<li><a href="#c6">Scene III — Mariane, Dorine</a></li>
+<li><a href="#c7">Scene IV — Valere, Mariane, Dorine</a></li>
+<li><a href="#c8">Act III — Scene I</a></li>
+<li><a href="#c9">Scene II — Tartuffe, Dorine</a></li>
+<li><a href="#c10">Scene III — Elmire, Tartuffe</a></li>
+<li><a href="#c11">Scene IV — Elmire, Damis, Tartuffe</a></li>
+<li><a href="#c12">Scene V — Orgon, Elmire, Damis, Tartuffe</a></li>
+<li><a href="#c13">Scene VI — Orgon, Damis, Tartuffe</a></li>
+<li><a href="#c14">Scene VII — Orgon, Tartuffe</a></li>
+<li><a href="#c15">Act IV — Scene I</a></li>
+<li><a href="#c16">Scene II — Elmire, Mariane, Cleante, Dorine</a></li>
+<li><a href="#c17">Scene III — Orgon, Elmire, Mariane, Cleante, Dorine</a></li>
+<li><a href="#c18">Scene IV — Elmire, Orgon</a></li>
+<li><a href="#c19">Scene V</a></li>
+<li><a href="#c20">Scene VI — Orgon, Elmire</a></li>
+<li><a href="#c21">Scene VII — Tartuffe, Elmire, Orgon</a></li>
+<li><a href="#c22">Scene VIII — Elmire, Orgon</a></li>
+<li><a href="#c23">Act V — Scene I</a></li>
+<li><a href="#c24">Scene II — Damis, Orgon, Cleante</a></li>
+<li><a href="#c25">Scene III</a></li>
+<li><a href="#c26">Scene IV</a></li>
+<li><a href="#c27">Scene V</a></li>
+<li><a href="#c28">Scene VI</a></li>
+<li><a href="#c29">Scene VII</a></li>
+<li><a href="#c30">Scene VIII</a></li>
+</ol></nav>
+<h3 class="sub">Introductory Note</h3>
+<p>Jean Baptiste Poquelin, better known by his stage name of Moliere, stands without a rival at the head of French comedy. Born at Paris in January, 1622, where his father held a position in the royal household, he was educated at the Jesuit College de Clermont, and for some time studied law, which he soon abandoned for the stage. His life was spent in Paris and in the provinces, acting, directing performances, managing theaters, and writing plays. He had his share of applause from the king and from the public; but the satire in his comedies made him many enemies, and he was the object of the most venomous attacks and the most impossible slanders. Nor did he find much solace at home; for he married unfortunately, and the unhappiness that followed increased the bitterness that public hostility had brought into his life. On February 17, 1673, while acting in &quot;La Malade Imaginaire,&quot; the last of his masterpieces, he was seized with illness and died a few hours later.</p>
+<p>The first of the greater works of Moliere was &quot;Les Precieuses Ridicules,&quot; produced in 1659. In this brilliant piece Moliere lifted French comedy to a new level and gave it a new purpose--the satirizing of contemporary manners and affectations by frank portrayal and criticism. In the great plays that followed, &quot;The School for Husbands&quot; and &quot;The School for Wives,&quot; &quot;The Misanthrope&quot; and &quot;The Hypocrite&quot; (Tartuffe), &quot;The Miser&quot; and &quot;The Hypochondriac,&quot; &quot;The Learned Ladies,&quot; &quot;The Doctor in Spite of Himself,&quot; &quot;The Citizen Turned Gentleman,&quot; and many others, he exposed mercilessly one after another the vices and foibles of the day.</p>
+<p>His characteristic qualities are nowhere better exhibited than in &quot;Tartuffe.&quot; Compared with such characterization as Shakespeare&#x27;s, Moliere&#x27;s method of portraying life may seem to be lacking in complexity; but it is precisely the simplicity with which creations like Tartuffe embody the weakness or vice they represent that has given them their place as universally recognized types of human nature.</p>
+<h3 class="sub">Characters</h3>
+<p>MADAME PERNELLE, mother of Orgon ORGON, husband of Elmire ELMIRE, wife of Orgon DAMIS, son of Orgon MARIANE, daughter of Orgon, in love with Valere CLEANTE, brother-in-law of Orgon TARTUFFE, a hypocrite DORINE, Mariane&#x27;s maid M. LOYAL, a bailiff A Police Officer FLIPOTTE, Madame Pernelle&#x27;s servant</p>
+<p>MADAME PERNELLE Because I can&#x27;t endure your carryings-on, And no one takes the slightest pains to please me. I leave your house, I tell you, quite disgusted; You do the opposite of my instructions; You&#x27;ve no respect for anything; each one Must have his say; it&#x27;s perfect pandemonium.</p>
+<p>MADAME PERNELLE You&#x27;re a fool, my boy--f, o, o, l Just spells your name. Let grandma tell you that I&#x27;ve said a hundred times to my poor son, Your father, that you&#x27;d never come to good Or give him anything but plague and torment.</p>
+<p>MADAME PERNELLE O dearie me, his little sister! You&#x27;re all demureness, butter wouldn&#x27;t melt In your mouth, one would think to look at you. Still waters, though, they say ... you know the proverb; And I don&#x27;t like your doings on the sly.</p>
+<p>MADAME PERNELLE Daughter, by your leave, your conduct In everything is altogether wrong; You ought to set a good example for &#x27;em; Their dear departed mother did much better. You are extravagant; and it offends me, To see you always decked out like a princess. A woman who would please her husband&#x27;s eyes Alone, wants no such wealth of fineries.</p>
+<p>MADAME PERNELLE Sir, as for you, The lady&#x27;s brother, I esteem you highly, Love and respect you. But, sir, all the same, If I were in my son&#x27;s, her husband&#x27;s, place, I&#x27;d urgently entreat you not to come Within our doors. You preach a way of living That decent people cannot tolerate. I&#x27;m rather frank with you; but that&#x27;s my way-- I don&#x27;t mince matters, when I mean a thing.</p>
+<p>DAMIS No, madam, look you, nothing--not my father Nor anything--can make me tolerate him. I should belie my feelings not to say so. His actions rouse my wrath at every turn; And I foresee that there must come of it An open rupture with this sneaking scoundrel.</p>
+<p>DORINE Besides, &#x27;tis downright scandalous to see This unknown upstart master of the house-- This vagabond, who hadn&#x27;t, when he came, Shoes to his feet, or clothing worth six farthings, And who so far forgets his place, as now To censure everything, and rule the roost!</p>
+<p>MADAME PERNELLE I don&#x27;t know what the servant&#x27;s character May be; but I can guarantee the master A holy man. You hate him and reject him Because he tells home truths to all of you. &#x27;Tis sin alone that moves his heart to anger, And heaven&#x27;s interest is his only motive.</p>
+<p>DORINE Of course. But why, especially of late, Can he let nobody come near the house? Is heaven offended at a civil call That he should make so great a fuss about it? I&#x27;ll tell you, if you like, just what I think; (Pointing to Elmire) Upon my word, he&#x27;s jealous of our mistress.</p>
+<p>MADAME PERNELLE You hold your tongue, and think what you are saying. He&#x27;s not alone in censuring these visits; The turmoil that attends your sort of people, Their carriages forever at the door, And all their noisy footmen, flocked together, Annoy the neighbourhood, and raise a scandal. I&#x27;d gladly think there&#x27;s nothing really wrong; But it makes talk; and that&#x27;s not as it should be.</p>
+<p>CLEANTE Eh! madam, can you hope to keep folk&#x27;s tongues From wagging? It would be a grievous thing If, for the fear of idle talk about us, We had to sacrifice our friends. No, no; Even if we could bring ourselves to do it, Think you that everyone would then be silenced? Against backbiting there is no defence So let us try to live in innocence, To silly tattle pay no heed at all, And leave the gossips free to vent their gall.</p>
+<p>DORINE Our neighbour Daphne, and her little husband, Must be the ones who slander us, I&#x27;m thinking. Those whose own conduct&#x27;s most ridiculous, Are always quickest to speak ill of others; They never fail to seize at once upon The slightest hint of any love affair, And spread the news of it with glee, and give it The character they&#x27;d have the world believe in. By others&#x27; actions, painted in their colours, They hope to justify their own; they think, In the false hope of some resemblance, either To make their own intrigues seem innocent, Or else to make their neighbours share the blame Which they are loaded with by everybody.</p>
+<p>DORINE O admirable pattern! Virtuous dame! She lives the model of austerity; But age has brought this piety upon her, And she&#x27;s a prude, now she can&#x27;t help herself. As long as she could capture men&#x27;s attentions She made the most of her advantages; But, now she sees her beauty vanishing, She wants to leave the world, that&#x27;s leaving her, And in the specious veil of haughty virtue She&#x27;d hide the weakness of her worn-out charms. That is the way with all your old coquettes; They find it hard to see their lovers leave &#x27;em; And thus abandoned, their forlorn estate Can find no occupation but a prude&#x27;s. These pious dames, in their austerity, Must carp at everything, and pardon nothing. They loudly blame their neighbours&#x27; way of living, Not for religion&#x27;s sake, but out of envy, Because they can&#x27;t endure to see another Enjoy the pleasures age has weaned them from.</p>
+<p>MADAME PERNELLE (to Elmire) There! That&#x27;s the kind of rigmarole to please you, Daughter-in-law. One never has a chance To get a word in edgewise, at your house, Because this lady holds the floor all day; But none the less, I mean to have my say, too. I tell you that my son did nothing wiser In all his life, than take this godly man Into his household; heaven sent him here, In your great need, to make you all repent; For your salvation, you must hearken to him; He censures nothing but deserves his censure. These visits, these assemblies, and these balls, Are all inventions of the evil spirit. You never hear a word of godliness At them--but idle cackle, nonsense, flimflam. Our neighbour often comes in for a share, The talk flies fast, and scandal fills the air; It makes a sober person&#x27;s head go round, At these assemblies, just to hear the sound Of so much gab, with not a word to say; And as a learned man remarked one day Most aptly, &#x27;tis the Tower of Babylon, Where all, beyond all limit, babble on. And just to tell you how this point came in ...</p>
+<p>DORINE Her case is nothing, though, beside her son&#x27;s! To see him, you would say he&#x27;s ten times worse! His conduct in our late unpleasantness [1] Had won him much esteem, and proved his courage In service of his king; but now he&#x27;s like A man besotted, since he&#x27;s been so taken With this Tartuffe. He calls him brother, loves him A hundred times as much as mother, son, Daughter, and wife. He tells him all his secrets And lets him guide his acts, and rule his conscience. He fondles and embraces him; a sweetheart Could not, I think, be loved more tenderly; At table he must have the seat of honour, While with delight our master sees him eat As much as six men could; we must give up The choicest tidbits to him; if he belches, (&#x27;tis a servant speaking) [2] Master exclaims: &quot;God bless you!&quot;--Oh, he dotes Upon him! he&#x27;s his universe, his hero; He&#x27;s lost in constant admiration, quotes him On all occasions, takes his trifling acts For wonders, and his words for oracles. The fellow knows his dupe, and makes the most on&#x27;t, He fools him with a hundred masks of virtue, Gets money from him all the time by canting, And takes upon himself to carp at us. Even his silly coxcomb of a lackey Makes it his business to instruct us too; He comes with rolling eyes to preach at us, And throws away our ribbons, rouge, and patches. The wretch, the other day, tore up a kerchief That he had found, pressed in the Golden Legend, Calling it a horrid crime for us to mingle The devil&#x27;s finery with holy things.</p>
+<p>[Footnote 2: Moliere&#x27;s note, inserted in the text of all the old editions. It is a curious illustration of the desire for uniformity and dignity of style in dramatic verse of the seventeenth century, that Moliere feels called on to apologize for a touch of realism like this. Indeed, these lines were even omitted when the play was given.]</p>
+<h2 class="chapter" id="c1">Scene IV — Cleante, Damis, Dorine</h2>
+<p>DAMIS I wish you&#x27;d say a word to him about My sister&#x27;s marriage; I suspect Tartuffe Opposes it, and puts my father up To all these wretched shifts. You know, besides, How nearly I&#x27;m concerned in it myself; If love unites my sister and Valere, I love his sister too; and if this marriage Were to ...</p>
+<p>DORINE He&#x27;s coming.</p>
+<h2 class="chapter" id="c2">Scene V — Orgon, Cleante, Dorine</h2>
+<p>ORGON Ah! Good morning, brother.</p>
+<p>CLEANTE I was just going, but am glad to greet you. Things are not far advanced yet, in the country?</p>
+<p>ORGON Dorine ...</p>
+<p>(To Cleante) Just wait a bit, please, brother-in-law. Let me allay my first anxiety By asking news about the family.</p>
+<p>(To Dorine) Has everything gone well these last two days? What&#x27;s happening? And how is everybody?</p>
+<p>DORINE Madam had fever, and a splitting headache Day before yesterday, all day and evening.</p>
+<p>ORGON And how about Tartuffe?</p>
+<p>DORINE Tartuffe? He&#x27;s well; He&#x27;s mighty well; stout, fat, fair, rosy-lipped.</p>
+<p>ORGON Poor man!</p>
+<p>DORINE At evening she had nausea And couldn&#x27;t touch a single thing for supper, Her headache still was so severe.</p>
+<p>ORGON And how About Tartuffe?</p>
+<p>DORINE He supped alone, before her, And unctuously ate up two partridges, As well as half a leg o&#x27; mutton, deviled.</p>
+<p>ORGON Poor man!</p>
+<p>DORINE All night she couldn&#x27;t get a wink Of sleep, the fever racked her so; and we Had to sit up with her till daylight.</p>
+<p>ORGON How About Tartuffe?</p>
+<p>DORINE Gently inclined to slumber, He left the table, went into his room, Got himself straight into a good warm bed, And slept quite undisturbed until next morning.</p>
+<p>ORGON Poor man!</p>
+<p>DORINE At last she let us all persuade her, And got up courage to be bled; and then She was relieved at once.</p>
+<p>ORGON And how about Tartuffe?</p>
+<p>DORINE He plucked up courage properly, Bravely entrenched his soul against all evils, And to replace the blood that she had lost, He drank at breakfast four huge draughts of wine.</p>
+<p>ORGON Poor man!</p>
+<p>DORINE So now they both are doing well; And I&#x27;ll go straightway and inform my mistress How pleased you are at her recovery.</p>
+<h2 class="chapter" id="c3">Scene VI — Orgon, Cleante</h2>
+<p>CLEANTE Brother, she ridicules you to your face; And I, though I don&#x27;t want to make you angry, Must tell you candidly that she&#x27;s quite right. Was such infatuation ever heard of? And can a man to-day have charms to make you Forget all else, relieve his poverty, Give him a home, and then ... ?</p>
+<p>ORGON Stop there, good brother, You do not know the man you&#x27;re speaking of.</p>
+<p>CLEANTE Since you will have it so, I do not know him; But after all, to tell what sort of man He is ...</p>
+<p>ORGON Dear brother, you&#x27;d be charmed to know him; Your raptures over him would have no end. He is a man ... who ... ah! ... in fact ...a man Whoever does his will, knows perfect peace, And counts the whole world else, as so much dung. His converse has transformed me quite; he weans My heart from every friendship, teaches me To have no love for anything on earth; And I could see my brother, children, mother, And wife, all die, and never care--a snap.</p>
+<p>CLEANTE Your feelings are humane, I must say, brother!</p>
+<p>ORGON Ah! If you&#x27;d seen him, as I saw him first, You would have loved him just as much as I. He came to church each day, with contrite mien, Kneeled, on both knees, right opposite my place, And drew the eyes of all the congregation, To watch the fervour of his prayers to heaven; With deep-drawn sighs and great ejaculations, He humbly kissed the earth at every moment; And when I left the church, he ran before me To give me holy water at the door. I learned his poverty, and who he was, By questioning his servant, who is like him, And gave him gifts; but in his modesty He always wanted to return a part. &quot;It is too much,&quot; he&#x27;d say, &quot;too much by half; I am not worthy of your pity.&quot; Then, When I refused to take it back, he&#x27;d go, Before my eyes, and give it to the poor. At length heaven bade me take him to my home, And since that day, all seems to prosper here. He censures everything, and for my sake He even takes great interest in my wife; He lets me know who ogles her, and seems Six times as jealous as I am myself. You&#x27;d not believe how far his zeal can go: He calls himself a sinner just for trifles; The merest nothing is enough to shock him; So much so, that the other day I heard him Accuse himself for having, while at prayer, In too much anger caught and killed a flea.</p>
+<p>CLEANTE Zounds, brother, you are mad, I think! Or else You&#x27;re making sport of me, with such a speech. What are you driving at with all this nonsense ... ?</p>
+<p>ORGON Brother, your language smacks of atheism; And I suspect your soul&#x27;s a little tainted Therewith. I&#x27;ve preached to you a score of times That you&#x27;ll draw down some judgment on your head.</p>
+<p>CLEANTE That is the usual strain of all your kind; They must have every one as blind as they. They call you atheist if you have good eyes; And if you don&#x27;t adore their vain grimaces, You&#x27;ve neither faith nor care for sacred things. No, no; such talk can&#x27;t frighten me; I know What I am saying; heaven sees my heart. We&#x27;re not the dupes of all your canting mummers; There are false heroes--and false devotees; And as true heroes never are the ones Who make much noise about their deeds of honour, Just so true devotees, whom we should follow, Are not the ones who make so much vain show. What! Will you find no difference between Hypocrisy and genuine devoutness? And will you treat them both alike, and pay The self-same honour both to masks and faces Set artifice beside sincerity, Confuse the semblance with reality, Esteem a phantom like a living person, And counterfeit as good as honest coin? Men, for the most part, are strange creatures, truly! You never find them keep the golden mean; The limits of good sense, too narrow for them, Must always be passed by, in each direction; They often spoil the noblest things, because They go too far, and push them to extremes. I merely say this by the way, good brother.</p>
+<p>ORGON You are the sole expounder of the doctrine; Wisdom shall die with you, no doubt, good brother, You are the only wise, the sole enlightened, The oracle, the Cato, of our age. All men, compared to you, are downright fools.</p>
+<p>CLEANTE I&#x27;m not the sole expounder of the doctrine, And wisdom shall not die with me, good brother. But this I know, though it be all my knowledge, That there&#x27;s a difference &#x27;twixt false and true. And as I find no kind of hero more To be admired than men of true religion, Nothing more noble or more beautiful Than is the holy zeal of true devoutness; Just so I think there&#x27;s naught more odious Than whited sepulchres of outward unction, Those barefaced charlatans, those hireling zealots, Whose sacrilegious, treacherous pretence Deceives at will, and with impunity Makes mockery of all that men hold sacred; Men who, enslaved to selfish interests, Make trade and merchandise of godliness, And try to purchase influence and office With false eye-rollings and affected raptures; Those men, I say, who with uncommon zeal Seek their own fortunes on the road to heaven; Who, skilled in prayer, have always much to ask, And live at court to preach retirement; Who reconcile religion with their vices, Are quick to anger, vengeful, faithless, tricky, And, to destroy a man, will have the boldness To call their private grudge the cause of heaven; All the more dangerous, since in their anger They use against us weapons men revere, And since they make the world applaud their passion, And seek to stab us with a sacred sword. There are too many of this canting kind. Still, the sincere are easy to distinguish; And many splendid patterns may be found, In our own time, before our very eyes Look at Ariston, Periandre, Oronte, Alcidamas, Clitandre, and Polydore; No one denies their claim to true religion; Yet they&#x27;re no braggadocios of virtue, They do not make insufferable display, And their religion&#x27;s human, tractable; They are not always judging all our actions, They&#x27;d think such judgment savoured of presumption; And, leaving pride of words to other men, &#x27;Tis by their deeds alone they censure ours. Evil appearances find little credit With them; they even incline to think the best Of others. No caballers, no intriguers, They mind the business of their own right living. They don&#x27;t attack a sinner tooth and nail, For sin&#x27;s the only object of their hatred; Nor are they over-zealous to attempt Far more in heaven&#x27;s behalf than heaven would have &#x27;em. That is my kind of man, that is true living, That is the pattern we should set ourselves. Your fellow was not fashioned on this model; You&#x27;re quite sincere in boasting of his zeal; But you&#x27;re deceived, I think, by false pretences.</p>
+<p>ORGON My dear good brother-in-law, have you quite done?</p>
+<p>CLEANTE Yes.</p>
+<p>ORGON I&#x27;m your humble servant.</p>
+<p>(Starts to go.)</p>
+<p>CLEANTE Just a word. We&#x27;ll drop that other subject. But you know Valere has had the promise of your daughter.</p>
+<p>ORGON Yes.</p>
+<p>CLEANTE You had named the happy day.</p>
+<p>ORGON &#x27;Tis true.</p>
+<p>CLEANTE Then why put off the celebration of it?</p>
+<p>ORGON I can&#x27;t say.</p>
+<p>CLEANTE Can you have some other plan In mind?</p>
+<p>ORGON Perhaps.</p>
+<p>CLEANTE You mean to break your word?</p>
+<p>ORGON I don&#x27;t say that.</p>
+<p>CLEANTE I hope no obstacle Can keep you from performing what you&#x27;ve promised.</p>
+<p>ORGON Well, that depends.</p>
+<p>CLEANTE Why must you beat about? Valere has sent me here to settle matters.</p>
+<p>ORGON Heaven be praised!</p>
+<p>CLEANTE What answer shall I take him?</p>
+<p>ORGON Why, anything you please.</p>
+<p>CLEANTE But we must know Your plans. What are they?</p>
+<p>ORGON I shall do the will Of Heaven.</p>
+<p>CLEANTE Come, be serious. You&#x27;ve given Your promise to Valere. Now will you keep it?</p>
+<p>ORGON Good-bye.</p>
+<p>CLEANTE (alone) His love, methinks, has much to fear; I must go let him know what&#x27;s happening here.</p>
+<h2 class="chapter" id="c4">Act II — Scene I</h2>
+<h3 class="sub">Orgon, Mariane</h3>
+<p>ORGON Now, Mariane.</p>
+<p>MARIANE Yes, father?</p>
+<p>ORGON Come; I&#x27;ll tell you A secret.</p>
+<p>MARIANE Yes ... What are you looking for?</p>
+<p>ORGON (looking into a small closet-room) To see there&#x27;s no one there to spy upon us; That little closet&#x27;s mighty fit to hide in. There! We&#x27;re all right now. Mariane, in you I&#x27;ve always found a daughter dutiful And gentle. So I&#x27;ve always love you dearly.</p>
+<p>MARIANE I&#x27;m grateful for your fatherly affection.</p>
+<p>ORGON Well spoken, daughter. Now, prove you deserve it By doing as I wish in all respects.</p>
+<p>MARIANE To do so is the height of my ambition.</p>
+<p>ORGON Excellent well. What say you of--Tartuffe?</p>
+<p>MARIANE Who? I?</p>
+<p>ORGON Yes, you. Look to it how you answer.</p>
+<p>MARIANE Why! I&#x27;ll say of him--anything you please.</p>
+<h2 class="chapter" id="c5">Scene II</h2>
+<p>ORGON, MARIANE, DORINE (coming in quietly and standing behind Orgon, so that he does not see her)</p>
+<p>ORGON Well spoken. A good girl. Say then, my daughter, That all his person shines with noble merit, That he has won your heart, and you would like To have him, by my choice, become your husband. Eh?</p>
+<p>MARIANE Eh?</p>
+<p>ORGON What say you?</p>
+<p>MARIANE Please, what did you say?</p>
+<p>ORGON What?</p>
+<p>MARIANE Surely I mistook you, sir?</p>
+<p>ORGON How now?</p>
+<p>MARIANE Who is it, father, you would have me say Has won my heart, and I would like to have Become my husband, by your choice?</p>
+<p>ORGON Tartuffe.</p>
+<p>MARIANE But, father, I protest it isn&#x27;t true! Why should you make me tell this dreadful lie?</p>
+<p>ORGON Because I mean to have it be the truth. Let this suffice for you: I&#x27;ve settled it.</p>
+<p>MARIANE What, father, you would ... ?</p>
+<p>ORGON Yes, child, I&#x27;m resolved To graft Tartuffe into my family. So he must be your husband. That I&#x27;ve settled. And since your duty ..</p>
+<p>(Seeing Dorine) What are you doing there? Your curiosity is keen, my girl, To make you come eavesdropping on us so.</p>
+<p>DORINE Upon my word, I don&#x27;t know how the rumour Got started--if &#x27;twas guess-work or mere chance But I had heard already of this match, And treated it as utter stuff and nonsense.</p>
+<p>ORGON What! Is the thing incredible?</p>
+<p>DORINE So much so I don&#x27;t believe it even from yourself, sir.</p>
+<p>ORGON I know a way to make you credit it.</p>
+<p>DORINE No, no, you&#x27;re telling us a fairly tale!</p>
+<p>ORGON I&#x27;m telling you just what will happen shortly.</p>
+<p>DORINE Stuff!</p>
+<p>ORGON Daughter, what I say is in good earnest.</p>
+<p>DORINE There, there, don&#x27;t take your father seriously; He&#x27;s fooling.</p>
+<p>ORGON But I tell you ...</p>
+<p>DORINE No. No use. They won&#x27;t believe you.</p>
+<p>ORGON If I let my anger ...</p>
+<p>DORINE Well, then, we do believe you; and the worse For you it is. What! Can a grown-up man With that expanse of beard across his face Be mad enough to want ...?</p>
+<p>ORGON You hark me: You&#x27;ve taken on yourself here in this house A sort of free familiarity That I don&#x27;t like, I tell you frankly, girl.</p>
+<p>DORINE There, there, let&#x27;s not get angry, sir, I beg you. But are you making game of everybody? Your daughter&#x27;s not cut out for bigot&#x27;s meat; And he has more important things to think of. Besides, what can you gain by such a match? How can a man of wealth, like you, go choose A wretched vagabond for son-in-law?</p>
+<p>ORGON You hold your tongue. And know, the less he has, The better cause have we to honour him. His poverty is honest poverty; It should exalt him more than worldly grandeur, For he has let himself be robbed of all, Through careless disregard of temporal things And fixed attachment to the things eternal. My help may set him on his feet again, Win back his property--a fair estate He has at home, so I&#x27;m informed--and prove him For what he is, a true-born gentleman.</p>
+<p>DORINE Yes, so he says himself. Such vanity But ill accords with pious living, sir. The man who cares for holiness alone Should not so loudly boast his name and birth; The humble ways of genuine devoutness Brook not so much display of earthly pride. Why should he be so vain? ... But I offend you: Let&#x27;s leave his rank, then,--take the man himself: Can you without compunction give a man Like him possession of a girl like her? Think what a scandal&#x27;s sure to come of it! Virtue is at the mercy of the fates, When a girl&#x27;s married to a man she hates; The best intent to live an honest woman Depends upon the husband&#x27;s being human, And men whose brows are pointed at afar May thank themselves their wives are what they are. For to be true is more than woman can, With husbands built upon a certain plan; And he who weds his child against her will Owes heaven account for it, if she do ill. Think then what perils wait on your design.</p>
+<p>ORGON (to Mariane) So! I must learn what&#x27;s what from her, you see!</p>
+<p>DORINE You might do worse than follow my advice.</p>
+<p>ORGON Daughter, we can&#x27;t waste time upon this nonsense; I know what&#x27;s good for you, and I&#x27;m your father. True, I had promised you to young Valere; But, first, they tell me he&#x27;s inclined to gamble, And then, I fear his faith is not quite sound. I haven&#x27;t noticed that he&#x27;s regular At church.</p>
+<p>DORINE You&#x27;d have him run there just when you do. Like those who go on purpose to be seen?</p>
+<p>ORGON I don&#x27;t ask your opinion on the matter. In short, the other is in Heaven&#x27;s best graces, And that is riches quite beyond compare. This match will bring you every joy you long for; &#x27;Twill be all steeped in sweetness and delight. You&#x27;ll live together, in your faithful loves, Like two sweet children, like two turtle-doves; You&#x27;ll never fail to quarrel, scold, or tease, And you may do with him whate&#x27;er you please.</p>
+<p>DORINE With him? Do naught but give him horns, I&#x27;ll warrant.</p>
+<p>ORGON Out on thee, wench!</p>
+<p>DORINE I tell you he&#x27;s cut out for&#x27;t; However great your daughter&#x27;s virtue, sir, His destiny is sure to prove the stronger.</p>
+<p>ORGON Have done with interrupting. Hold your tongue. Don&#x27;t poke your nose in other people&#x27;s business.</p>
+<p>DORINE (She keeps interrupting him, just as he turns and starts to speak to his daughter). If I make bold, sir, &#x27;tis for your own good.</p>
+<p>ORGON You&#x27;re too officious; pray you, hold your tongue.</p>
+<p>DORINE &#x27;Tis love of you ...</p>
+<p>ORGON I want none of your love.</p>
+<p>DORINE Then I will love you in your own despite.</p>
+<p>ORGON You will, eh?</p>
+<p>DORINE Yes, your honour&#x27;s dear to me; I can&#x27;t endure to see you made the butt Of all men&#x27;s ridicule.</p>
+<p>ORGON Won&#x27;t you be still?</p>
+<p>DORINE &#x27;Twould be a sin to let you make this match.</p>
+<p>ORGON Won&#x27;t you be still, I say, you impudent viper!</p>
+<p>DORINE What! you are pious, and you lose your temper?</p>
+<p>ORGON I&#x27;m all wrought up, with your confounded nonsense; Now, once for all, I tell you hold your tongue.</p>
+<p>DORINE Then mum&#x27;s the word; I&#x27;ll take it out in thinking.</p>
+<p>ORGON Think all you please; but not a syllable To me about it, or ... you understand!</p>
+<p>(Turning to his daughter.) As a wise father, I&#x27;ve considered all With due deliberation.</p>
+<p>DORINE I&#x27;ll go mad If I can&#x27;t speak. (She stops the instant he turns his head.)</p>
+<p>ORGON Though he&#x27;s no lady&#x27;s man, Tartuffe is well enough ...</p>
+<p>DORINE A pretty phiz!</p>
+<p>ORGON So that, although you may not care at all For his best qualities ...</p>
+<p>DORINE A handsome dowry!</p>
+<p>(Orgon turns and stands in front of her, with arms folded, eyeing her.) Were I in her place, any man should rue it Who married me by force, that&#x27;s mighty certain; I&#x27;d let him know, and that within a week, A woman&#x27;s vengeance isn&#x27;t far to seek.</p>
+<p>ORGON (to Dorine) So--nothing that I say has any weight?</p>
+<p>DORINE Eh? What&#x27;s wrong now? I didn&#x27;t speak to you.</p>
+<p>ORGON What were you doing?</p>
+<p>DORINE Talking to myself.</p>
+<p>ORGON Oh! Very well. (Aside.) Her monstrous impudence Must be chastised with one good slap in the face.</p>
+<p>(He stands ready to strike her, and, each time he speaks to his daughter, he glances toward her; but she stands still and says not a word.) [3]</p>
+<p>[Footnote 3: As given at the Comedie francaise, the action is as follows: While Orgon says, &quot;You must approve of my design,&quot; Dorine is making signs to Mariane to resist his orders; Orgon turns around suddenly; but Dorine quickly changes her gesture and with the hand which she had lifted calmly arranges her hair and her cap. Orgon goes on, &quot;Think of the husband ...&quot; and stops before the middle of his sentence to turn and catch the beginning of Dorine&#x27;s gesture; but he is too quick this time, and Dorine stands looking at his furious countenance with a sweet and gentle expression. He turns and goes on, and the obstinate Dorine again lifts her hand behind his shoulder to urge Mariane to resistance: this time he catches her; but just as he swings his shoulder to give her the promised blow, she stops him by changing the intent of her gesture, and carefully picking from the top of his sleeve a bit of fluff which she holds carefully between her fingers, then blows into the air, and watches intently as it floats away. Orgon is paralysed by her innocence of expression, and compelled to hide his rage.--Regnier, Le Tartuffe des Comediens.]</p>
+<p>ORGON Daughter, you must approve of my design.... Think of this husband ... I have chosen for you...</p>
+<p>(To Dorine) Why don&#x27;t you talk to yourself?</p>
+<p>DORINE Nothing to say.</p>
+<p>ORGON One little word more.</p>
+<p>DORINE Oh, no, thanks. Not now.</p>
+<p>ORGON Sure, I&#x27;d have caught you.</p>
+<p>DORINE Faith, I&#x27;m no such fool.</p>
+<p>ORGON So, daughter, now obedience is the word; You must accept my choice with reverence.</p>
+<p>DORINE (running away) You&#x27;d never catch me marrying such a creature.</p>
+<p>ORGON (swinging his hand at her and missing her) Daughter, you&#x27;ve such a pestilent hussy there I can&#x27;t live with her longer, without sin. I can&#x27;t discuss things in the state I&#x27;m in. My mind&#x27;s so flustered by her insolent talk, To calm myself, I must go take a walk.</p>
+<h2 class="chapter" id="c6">Scene III — Mariane, Dorine</h2>
+<p>DORINE Say, have you lost the tongue from out your head? And must I speak your role from A to Zed? You let them broach a project that&#x27;s absurd, And don&#x27;t oppose it with a single word!</p>
+<p>MARIANE What can I do? My father is the master.</p>
+<p>DORINE Do? Everything, to ward off such disaster.</p>
+<p>MARIANE But what?</p>
+<p>DORINE Tell him one doesn&#x27;t love by proxy; Tell him you&#x27;ll marry for yourself, not him; Since you&#x27;re the one for whom the thing is done, You are the one, not he, the man must please; If his Tartuffe has charmed him so, why let him Just marry him himself--no one will hinder.</p>
+<p>MARIANE A father&#x27;s rights are such, it seems to me, That I could never dare to say a word.</p>
+<p>DORINE Came, talk it out. Valere has asked your hand: Now do you love him, pray, or do you not?</p>
+<p>MARIANE Dorine! How can you wrong my love so much, And ask me such a question? Have I not A hundred times laid bare my heart to you? Do you know how ardently I love him?</p>
+<p>DORINE How do I know if heart and words agree, And if in honest truth you really love him?</p>
+<p>MARIANE Dorine, you wrong me greatly if you doubt it; I&#x27;ve shown my inmost feelings, all too plainly.</p>
+<p>DORINE So then, you love him?</p>
+<p>MARIANE Yes, devotedly.</p>
+<p>DORINE And he returns your love, apparently?</p>
+<p>MARIANE I think so.</p>
+<p>DORINE And you both alike are eager To be well married to each other?</p>
+<p>MARIANE Surely.</p>
+<p>DORINE Then what&#x27;s your plan about this other match?</p>
+<p>MARIANE To kill myself, if it is forced upon me.</p>
+<p>DORINE Good! That&#x27;s a remedy I hadn&#x27;t thought of. Just die, and everything will be all right. This medicine is marvellous, indeed! It drives me mad to hear folk talk such nonsense.</p>
+<p>MARIANE Oh dear, Dorine you get in such a temper! You have no sympathy for people&#x27;s troubles.</p>
+<p>DORINE I have no sympathy when folk talk nonsense, And flatten out as you do, at a pinch.</p>
+<p>MARIANE But what can you expect?--if one is timid?--</p>
+<p>DORINE But what is love worth, if it has no courage?</p>
+<p>MARIANE Am I not constant in my love for him? Is&#x27;t not his place to win me from my father?</p>
+<p>DORINE But if your father is a crazy fool, And quite bewitched with his Tartuffe? And breaks His bounden word? Is that your lover&#x27;s fault?</p>
+<p>MARIANE But shall I publicly refuse and scorn This match, and make it plain that I&#x27;m in love? Shall I cast off for him, whate&#x27;er he be, Womanly modesty and filial duty? You ask me to display my love in public ... ?</p>
+<p>DORINE No, no, I ask you nothing. You shall be Mister Tartuffe&#x27;s; why, now I think of it, I should be wrong to turn you from this marriage. What cause can I have to oppose your wishes? So fine a match! An excellent good match! Mister Tartuffe! Oh ho! No mean proposal! Mister Tartuffe, sure, take it all in all, Is not a man to sneeze at--oh, by no means! &#x27;Tis no small luck to be his happy spouse. The whole world joins to sing his praise already; He&#x27;s noble--in his parish; handsome too; Red ears and high complexion--oh, my lud! You&#x27;ll be too happy, sure, with him for husband.</p>
+<p>MARIANE Oh dear! ...</p>
+<p>DORINE What joy and pride will fill your heart To be the bride of such a handsome fellow!</p>
+<p>MARIANE Oh, stop, I beg you; try to find some way To help break off the match. I quite give in, I&#x27;m ready to do anything you say.</p>
+<p>DORINE No, no, a daughter must obey her father, Though he should want to make her wed a monkey. Besides, your fate is fine. What could be better! You&#x27;ll take the stage-coach to his little village, And find it full of uncles and of cousins, Whose conversation will delight you. Then You&#x27;ll be presented in their best society. You&#x27;ll even go to call, by way of welcome, On Mrs. Bailiff, Mrs. Tax-Collector, Who&#x27;ll patronise you with a folding-stool. There, once a year, at carnival, you&#x27;ll have Perhaps--a ball; with orchestra--two bag-pipes; And sometimes a trained ape, and Punch and Judy; Though if your husband ...</p>
+<p>MARIANE Oh, you&#x27;ll kill me. Please Contrive to help me out with your advice.</p>
+<p>DORINE I thank you kindly.</p>
+<p>MARIANE Oh! Dorine, I beg you ...</p>
+<p>DORINE To serve you right, this marriage must go through.</p>
+<p>MARIANE Dear girl!</p>
+<p>DORINE No.</p>
+<p>MARIANE If I say I love Valere ...</p>
+<p>DORINE No, no. Tartuffe&#x27;s your man, and you shall taste him.</p>
+<p>MARIANE You know I&#x27;ve always trusted you; now help me ...</p>
+<p>DORINE No, you shall be, my faith! Tartuffified.</p>
+<p>MARIANE Well, then, since you&#x27;ve no pity for my fate Let me take counsel only of despair; It will advise and help and give me courage; There&#x27;s one sure cure, I know, for all my troubles.</p>
+<p>(She starts to go.)</p>
+<p>DORINE There, there! Come back. I can&#x27;t be angry long. I must take pity on you, after all.</p>
+<p>MARIANE Oh, don&#x27;t you see, Dorine, if I must bear This martyrdom, I certainly shall die.</p>
+<p>DORINE Now don&#x27;t you fret. We&#x27;ll surely find some way. To hinder this ... But here&#x27;s Valere, your lover.</p>
+<h2 class="chapter" id="c7">Scene IV — Valere, Mariane, Dorine</h2>
+<p>VALERE Madam, a piece of news--quite new to me-- Has just come out, and very fine it is.</p>
+<p>MARIANE What piece of news?</p>
+<p>VALERE Your marriage with Tartuffe.</p>
+<p>MARIANE &#x27;Tis true my father has this plan in mind.</p>
+<p>VALERE Your father, madam ...</p>
+<p>MARIANE Yes, he&#x27;s changed his plans, And did but now propose it to me.</p>
+<p>VALERE What! Seriously?</p>
+<p>MARIANE Yes, he was serious, And openly insisted on the match.</p>
+<p>VALERE And what&#x27;s your resolution in the matter, Madam?</p>
+<p>MARIANE I don&#x27;t know.</p>
+<p>VALERE That&#x27;s a pretty answer. You don&#x27;t know?</p>
+<p>MARIANE No.</p>
+<p>VALERE No?</p>
+<p>MARIANE What do you advise?</p>
+<p>VALERE I? My advice is, marry him, by all means.</p>
+<p>MARIANE That&#x27;s your advice?</p>
+<p>VALERE Yes.</p>
+<p>MARIANE Do you mean it?</p>
+<p>VALERE Surely. A splendid choice, and worthy of your acceptance.</p>
+<p>MARIANE Oh, very well, sir! I shall take your counsel.</p>
+<p>VALERE You&#x27;ll find no trouble taking it, I warrant.</p>
+<p>MARIANE No more than you did giving it, be sure.</p>
+<p>VALERE I gave it, truly, to oblige you, madam.</p>
+<p>MARIANE And I shall take it to oblige you, sir.</p>
+<p>Dorine (withdrawing to the back of the stage) Let&#x27;s see what this affair will come to.</p>
+<p>VALERE So, That is your love? And it was all deceit When you ...</p>
+<p>MARIANE I beg you, say no more of that. You told me, squarely, sir, I should accept The husband that is offered me; and I Will tell you squarely that I mean to do so, Since you have given me this good advice.</p>
+<p>VALERE Don&#x27;t shield yourself with talk of my advice. You had your mind made up, that&#x27;s evident; And now you&#x27;re snatching at a trifling pretext To justify the breaking of your word.</p>
+<p>MARIANE Exactly so.</p>
+<p>VALERE Of course it is; your heart Has never known true love for me.</p>
+<p>MARIANE Alas! You&#x27;re free to think so, if you please.</p>
+<p>VALERE Yes, yes, I&#x27;m free to think so; and my outraged love May yet forestall you in your perfidy, And offer elsewhere both my heart and hand.</p>
+<p>MARIANE No doubt of it; the love your high deserts May win ...</p>
+<p>VALERE Good Lord, have done with my deserts! I know I have but few, and you have proved it. But I may find more kindness in another; I know of someone, who&#x27;ll not be ashamed To take your leavings, and make up my loss.</p>
+<p>MARIANE The loss is not so great; you&#x27;ll easily Console yourself completely for this change.</p>
+<p>VALERE I&#x27;ll try my best, that you may well believe. When we&#x27;re forgotten by a woman&#x27;s heart, Our pride is challenged; we, too, must forget; Or if we cannot, must at least pretend to. No other way can man such baseness prove, As be a lover scorned, and still in love.</p>
+<p>MARIANE In faith, a high and noble sentiment.</p>
+<p>VALERE Yes; and it&#x27;s one that all men must approve. What! Would you have me keep my love alive, And see you fly into another&#x27;s arms Before my very eyes; and never offer To someone else the heart that you had scorned?</p>
+<p>MARIANE Oh, no, indeed! For my part, I could wish That it were done already.</p>
+<p>VALERE What! You wish it?</p>
+<p>MARIANE Yes.</p>
+<p>VALERE This is insult heaped on injury; I&#x27;ll go at once and do as you desire.</p>
+<p>(He takes a step or two as if to go away.)</p>
+<p>MARIANE Oh, very well then.</p>
+<p>VALERE (turning back) But remember this. &#x27;Twas you that drove me to this desperate pass.</p>
+<p>MARIANE Of course.</p>
+<p>VALERE (turning back again) And in the plan that I have formed I only follow your example.</p>
+<p>MARIANE Yes.</p>
+<p>VALERE (at the door) Enough; you shall be punctually obeyed.</p>
+<p>MARIANE So much the better.</p>
+<p>VALERE (coming back again) This is once for all.</p>
+<p>MARIANE So be it, then.</p>
+<p>VALERE (He goes toward the door, but just as he reaches it, turns around) Eh?</p>
+<p>MARIANE What?</p>
+<p>VALERE You didn&#x27;t call me?</p>
+<p>MARIANE I? You are dreaming.</p>
+<p>VALERE Very well, I&#x27;m gone. Madam, farewell.</p>
+<p>(He walks slowly away.)</p>
+<p>MARIANE Farewell, sir.</p>
+<p>DORINE I must say You&#x27;ve lost your senses and both gone clean daft! I&#x27;ve let you fight it out to the end o&#x27; the chapter To see how far the thing could go. Oho, there, Mister Valere!</p>
+<p>(She goes and seizes him by the arm, to stop him. He makes a great show of resistance.)</p>
+<p>VALERE What do you want, Dorine?</p>
+<p>DORINE Come here.</p>
+<p>VALERE No, no, I&#x27;m quite beside myself. Don&#x27;t hinder me from doing as she wishes.</p>
+<p>DORINE Stop!</p>
+<p>VALERE No. You see, I&#x27;m fixed, resolved, determined.</p>
+<p>DORINE So!</p>
+<p>MARIANE (aside) Since my presence pains him, makes him go, I&#x27;d better go myself, and leave him free.</p>
+<p>DORINE (leaving Valere, and running after Mariane) Now t&#x27;other! Where are you going?</p>
+<p>MARIANE Let me be.</p>
+<p>DORINE. Come back.</p>
+<p>MARIANE No, no, it isn&#x27;t any use.</p>
+<p>VALERE (aside) &#x27;Tis clear the sight of me is torture to her; No doubt, t&#x27;were better I should free her from it.</p>
+<p>DORINE (leaving Mariane and running after Valere) Same thing again! Deuce take you both, I say. Now stop your fooling; come here, you; and you.</p>
+<p>(She pulls first one, then the other, toward the middle of the stage.)</p>
+<p>VALERE (to Dorine) What&#x27;s your idea?</p>
+<p>MARIANE (to Dorine) What can you mean to do?</p>
+<p>DORINE Set you to rights, and pull you out o&#x27; the scrape.</p>
+<p>(To Valere) Are you quite mad, to quarrel with her now?</p>
+<p>VALERE Didn&#x27;t you hear the things she said to me?</p>
+<p>DORINE (to Mariane) Are you quite mad, to get in such a passion?</p>
+<p>MARIANE Didn&#x27;t you see the way he treated me?</p>
+<p>DORINE Fools, both of you.</p>
+<p>(To Valere) She thinks of nothing else But to keep faith with you, I vouch for it.</p>
+<p>(To Mariane) And he loves none but you, and longs for nothing But just to marry you, I stake my life on&#x27;t.</p>
+<p>MARIANE (to Valere) Why did you give me such advice then, pray?</p>
+<p>VALERE (to Mariane) Why ask for my advice on such a matter?</p>
+<p>DORINE You both are daft, I tell you. Here, your hands.</p>
+<p>(To Valere) Come, yours.</p>
+<p>VALERE (giving Dorine his hand) What for?</p>
+<p>DORINE (to Mariane) Now, yours.</p>
+<p>MARIANE (giving Dorine her hand) But what&#x27;s the use?</p>
+<p>DORINE Oh, quick now, come along. There, both of you-- You love each other better than you think.</p>
+<p>(Valere and Mariane hold each other&#x27;s hands some time without looking at each other.)</p>
+<p>VALERE (at last turning toward Mariane) Come, don&#x27;t be so ungracious now about it; Look at a man as if you didn&#x27;t hate him.</p>
+<p>(Mariane looks sideways toward Valere, with just a bit of a smile.)</p>
+<p>DORINE My faith and troth, what fools these lovers be!</p>
+<p>VALERE (to Mariane) But come now, have I not a just complaint? And truly, are you not a wicked creature To take delight in saying what would pain me?</p>
+<p>MARIANE And are you not yourself the most ungrateful ... ?</p>
+<p>DORINE Leave this discussion till another time; Now, think how you&#x27;ll stave off this plaguy marriage.</p>
+<p>MARIANE Then tell us how to go about it.</p>
+<p>DORINE Well, We&#x27;ll try all sorts of ways.</p>
+<p>(To Mariane) Your father&#x27;s daft;</p>
+<p>(To Valere) This plan is nonsense.</p>
+<p>(To Mariane) You had better humour His notions by a semblance of consent, So that in case of danger, you can still Find means to block the marriage by delay. If you gain time, the rest is easy, trust me. One day you&#x27;ll fool them with a sudden illness, Causing delay; another day, ill omens: You&#x27;ve met a funeral, or broke a mirror, Or dreamed of muddy water. Best of all, They cannot marry you to anyone Without your saying yes. But now, methinks, They mustn&#x27;t find you chattering together.</p>
+<p>(To Valere) You, go at once and set your friends at work To make him keep his word to you; while we Will bring the brother&#x27;s influence to bear, And get the step-mother on our side, too. Good-bye.</p>
+<p>VALERE (to Mariane) Whatever efforts we may make, My greatest hope, be sure, must rest on you.</p>
+<p>MARIANE (to Valere) I cannot answer for my father&#x27;s whims; But no one save Valere shall ever have me.</p>
+<p>VALERE You thrill me through with joy! Whatever comes ...</p>
+<p>DORINE Oho! These lovers! Never done with prattling! Now go.</p>
+<p>VALERE (starting to go, and coming back again) One last word ...</p>
+<p>DORINE What a gabble and pother! Be off! By this door, you. And you, by t&#x27;other.</p>
+<p>(She pushes them off, by the shoulders, in opposite directions.)</p>
+<h2 class="chapter" id="c8">Act III — Scene I</h2>
+<h3 class="sub">Damis, Dorine</h3>
+<p>DAMIS May lightning strike me dead this very instant, May I be everywhere proclaimed a scoundrel, If any reverence or power shall stop me, And if I don&#x27;t do straightway something desperate!</p>
+<p>DORINE I beg you, moderate this towering passion; Your father did but merely mention it. Not all things that are talked of turn to facts; The road is long, sometimes, from plans to acts.</p>
+<p>DAMIS No, I must end this paltry fellow&#x27;s plots, And he shall hear from me a truth or two.</p>
+<p>DORINE So ho! Go slow now. Just you leave the fellow-- Your father too--in your step-mother&#x27;s hands. She has some influence with this Tartuffe, He makes a point of heeding all she says, And I suspect that he is fond of her. Would God &#x27;twere true!--&#x27;Twould be the height of humour Now, she has sent for him, in your behalf, To sound him on this marriage, to find out What his ideas are, and to show him plainly What troubles he may cause, if he persists In giving countenance to this design. His man says, he&#x27;s at prayers, I mustn&#x27;t see him, But likewise says, he&#x27;ll presently be down. So off with you, and let me wait for him.</p>
+<p>DAMIS I may be present at this interview.</p>
+<p>DORINE No, no! They must be left alone.</p>
+<p>DAMIS I won&#x27;t So much as speak to him.</p>
+<p>DORINE Go on! We know you And your high tantrums. Just the way to spoil things! Be off.</p>
+<p>DAMIS No, I must see--I&#x27;ll keep my temper.</p>
+<p>DORINE Out on you, what a plague! He&#x27;s coming. Hide!</p>
+<p>(Damis goes and hides in the closet at the back of the stage.)</p>
+<h2 class="chapter" id="c9">Scene II — Tartuffe, Dorine</h2>
+<p>TARTUFFE (speaking to his valet, off the stage, as soon as he sees Dorine is there) Lawrence, put up my hair-cloth shirt and scourge, And pray that Heaven may shed its light upon you. If any come to see me, say I&#x27;m gone To share my alms among the prisoners.</p>
+<p>DORINE (aside) What affectation and what showing off!</p>
+<p>TARTUFFE What do you want with me?</p>
+<p>DORINE To tell you ...</p>
+<p>TARTUFFE (taking a handkerchief from his pocket) Ah! Before you speak, pray take this handkerchief.</p>
+<p>DORINE What?</p>
+<p>TARTUFFE Cover up that bosom, which I can&#x27;t Endure to look on. Things like that offend Our souls, and fill our minds with sinful thoughts.</p>
+<p>DORINE Are you so tender to temptation, then, And has the flesh such power upon your senses? I don&#x27;t know how you get in such a heat; For my part, I am not so prone to lust, And I could see you stripped from head to foot, And all your hide not tempt me in the least.</p>
+<p>TARTUFFE Show in your speech some little modesty, Or I must instantly take leave of you.</p>
+<p>DORINE No, no, I&#x27;ll leave you to yourself; I&#x27;ve only One thing to say: Madam will soon be down, And begs the favour of a word with you.</p>
+<p>TARTUFFE Ah! Willingly.</p>
+<p>DORINE (aside) How gentle all at once! My faith, I still believe I&#x27;ve hit upon it.</p>
+<p>TARTUFFE Will she come soon?</p>
+<p>DORINE I think I hear her now. Yes, here she is herself; I&#x27;ll leave you with her.</p>
+<h2 class="chapter" id="c10">Scene III — Elmire, Tartuffe</h2>
+<p>TARTUFFE May Heaven&#x27;s overflowing kindness ever Give you good health of body and of soul, And bless your days according to the wishes And prayers of its most humble votary!</p>
+<p>ELMIRE I&#x27;m very grateful for your pious wishes. But let&#x27;s sit down, so we may talk at ease.</p>
+<p>TARTUFFE (after sitting down) And how are you recovered from your illness?</p>
+<p>ELMIRE (sitting down also) Quite well; the fever soon let go its hold.</p>
+<p>TARTUFFE My prayers, I fear, have not sufficient merit To have drawn down this favour from on high; But each entreaty that I made to Heaven Had for its object your recovery.</p>
+<p>ELMIRE You&#x27;re too solicitous on my behalf.</p>
+<p>TARTUFFE We could not cherish your dear health too much; I would have given mine, to help restore it.</p>
+<p>ELMIRE That&#x27;s pushing Christian charity too far; I owe you many thanks for so much kindness.</p>
+<p>TARTUFFE I do far less for you than you deserve.</p>
+<p>ELMIRE There is a matter that I wished to speak of In private; I am glad there&#x27;s no one here To listen.</p>
+<p>TARTUFFE Madam, I am overjoyed. &#x27;Tis sweet to find myself alone with you. This is an opportunity I&#x27;ve asked Of Heaven, many a time; till now, in vain.</p>
+<p>ELMIRE All that I wish, is just a word from you, Quite frank and open, hiding nothing from me.</p>
+<p>(DAMIS, without their seeing him, opens the closet door halfway.)</p>
+<p>TARTUFFE I too could wish, as Heaven&#x27;s especial favour, To lay my soul quite open to your eyes, And swear to you, the trouble that I made About those visits which your charms attract, Does not result from any hatred toward you, But rather from a passionate devotion, And purest motives ...</p>
+<p>ELMIRE That is how I take it, I think &#x27;tis my salvation that concerns you.</p>
+<p>TARTUFFE (pressing her finger tips) Madam, &#x27;tis so; and such is my devotion ...</p>
+<p>ELMIRE Ouch! but you squeeze too hard.</p>
+<p>TARTUFFE Excess of zeal. In no way could I ever mean to hurt you, And I&#x27;d as soon ...</p>
+<p>(He puts his hand on her knee.)</p>
+<p>ELMIRE What&#x27;s your hand doing there?</p>
+<p>TARTUFFE Feeling your gown; the stuff is very soft.</p>
+<p>ELMIRE Let be, I beg you; I am very ticklish.</p>
+<p>(She moves her chair away, and Tartuffe brings his nearer.)</p>
+<p>TARTUFFE (handling the lace yoke of Elmire&#x27;s dress) Dear me how wonderful in workmanship This lace is! They do marvels, nowadays; Things of all kinds were never better made.</p>
+<p>ELMIRE Yes, very true. But let us come to business. They say my husband means to break his word. And marry Mariane to you. Is&#x27;t so?</p>
+<p>TARTUFFE He did hint some such thing; but truly, madam, That&#x27;s not the happiness I&#x27;m yearning after; I see elsewhere the sweet compelling charms Of such a joy as fills my every wish.</p>
+<p>ELMIRE You mean you cannot love terrestrial things.</p>
+<p>TARTUFFE The heart within my bosom is not stone.</p>
+<p>ELMIRE I well believe your sighs all tend to Heaven, And nothing here below can stay your thoughts.</p>
+<p>TARTUFFE Love for the beauty of eternal things Cannot destroy our love for earthly beauty; Our mortal senses well may be entranced By perfect works that Heaven has fashioned here. Its charms reflected shine in such as you, And in yourself, its rarest miracles; It has displayed such marvels in your face, That eyes are dazed, and hearts are rapt away; I could not look on you, the perfect creature, Without admiring Nature&#x27;s great Creator, And feeling all my heart inflamed with love For you, His fairest image of Himself. At first I trembled lest this secret love Might be the Evil Spirit&#x27;s artful snare; I even schooled my heart to flee your beauty, Thinking it was a bar to my salvation. But soon, enlightened, O all lovely one, I saw how this my passion may be blameless, How I may make it fit with modesty, And thus completely yield my heart to it. &#x27;Tis I must own, a great presumption in me To dare make you the offer of my heart; My love hopes all things from your perfect goodness, And nothing from my own poor weak endeavour. You are my hope, my stay, my peace of heart; On you depends my torment or my bliss; And by your doom of judgment, I shall be Blest, if you will; or damned, by your decree.</p>
+<p>ELMIRE Your declaration&#x27;s turned most gallantly; But truly, it is just a bit surprising. You should have better armed your heart, methinks, And taken thought somewhat on such a matter. A pious man like you, known everywhere ...</p>
+<p>TARTUFFE Though pious, I am none the less a man; And when a man beholds your heavenly charms, The heart surrenders, and can think no more. I know such words seem strange, coming from me; But, madam, I&#x27;m no angel, after all; If you condemn my frankly made avowal You only have your charming self to blame. Soon as I saw your more than human beauty, You were thenceforth the sovereign of my soul; Sweetness ineffable was in your eyes, That took by storm my still resisting heart, And conquered everything, fasts, prayers, and tears, And turned my worship wholly to yourself. My looks, my sighs, have spoke a thousand times; Now, to express it all, my voice must speak. If but you will look down with gracious favour Upon the sorrows of your worthless slave, If in your goodness you will give me comfort And condescend unto my nothingness, I&#x27;ll ever pay you, O sweet miracle, An unexampled worship and devotion. Then too, with me your honour runs no risk; With me you need not fear a public scandal. These court gallants, that women are so fond of, Are boastful of their acts, and vain in speech; They always brag in public of their progress; Soon as a favour&#x27;s granted, they&#x27;ll divulge it; Their tattling tongues, if you but trust to them, Will foul the altar where their hearts have worshipped. But men like me are so discreet in love, That you may trust their lasting secrecy. The care we take to guard our own good name May fully guarantee the one we love; So you may find, with hearts like ours sincere, Love without scandal, pleasure without fear.</p>
+<p>ELMIRE I&#x27;ve heard you through--your speech is clear, at least. But don&#x27;t you fear that I may take a fancy To tell my husband of your gallant passion, And that a prompt report of this affair May somewhat change the friendship which he bears you?</p>
+<p>TARTUFFE I know that you&#x27;re too good and generous, That you will pardon my temerity, Excuse, upon the score of human frailty, The violence of passion that offends you, And not forget, when you consult your mirror, That I&#x27;m not blind, and man is made of flesh.</p>
+<p>ELMIRE Some women might do otherwise, perhaps, But I am willing to employ discretion, And not repeat the matter to my husband; But in return, I&#x27;ll ask one thing of you: That you urge forward, frankly and sincerely, The marriage of Valere to Mariane; That you give up the unjust influence By which you hope to win another&#x27;s rights; And ...</p>
+<h2 class="chapter" id="c11">Scene IV — Elmire, Damis, Tartuffe</h2>
+<p>DAMIS (coming out of the closet-room where he had been hiding) No, I say! This thing must be made public. I was just there, and overheard it all; And Heaven&#x27;s goodness must have brought me there On purpose to confound this scoundrel&#x27;s pride And grant me means to take a signal vengeance On his hypocrisy and arrogance, And undeceive my father, showing up The rascal caught at making love to you.</p>
+<p>ELMIRE No, no; it is enough if he reforms, Endeavouring to deserve the favour shown him. And since I&#x27;ve promised, do not you belie me. &#x27;Tis not my way to make a public scandal; An honest wife will scorn to heed such follies, And never fret her husband&#x27;s ears with them.</p>
+<p>DAMIS You&#x27;ve reasons of your own for acting thus; And I have mine for doing otherwise. To spare him now would be a mockery; His bigot&#x27;s pride has triumphed all too long Over my righteous anger, and has caused Far too much trouble in our family. The rascal all too long has ruled my father, And crossed my sister&#x27;s love, and mine as well. The traitor now must be unmasked before him: And Providence has given me means to do it. To Heaven I owe the opportunity, And if I did not use it now I have it, I should deserve to lose it once for all.</p>
+<p>ELMIRE Damis ...</p>
+<p>DAMIS No, by your leave; I&#x27;ll not be counselled. I&#x27;m overjoyed. You needn&#x27;t try to tell me I must give up the pleasure of revenge. I&#x27;ll make an end of this affair at once; And, to content me, here&#x27;s my father now.</p>
+<h2 class="chapter" id="c12">Scene V — Orgon, Elmire, Damis, Tartuffe</h2>
+<p>DAMIS Father, we&#x27;ve news to welcome your arrival, That&#x27;s altogether novel, and surprising. You are well paid for your caressing care, And this fine gentleman rewards your love Most handsomely, with zeal that seeks no less Than your dishonour, as has now been proven. I&#x27;ve just surprised him making to your wife The shameful offer of a guilty love. She, somewhat over gentle and discreet, Insisted that the thing should be concealed; But I will not condone such shamelessness, Nor so far wrong you as to keep it secret.</p>
+<p>ELMIRE Yes, I believe a wife should never trouble Her husband&#x27;s peace of mind with such vain gossip; A woman&#x27;s honour does not hang on telling; It is enough if she defend herself; Or so I think; Damis, you&#x27;d not have spoken, If you would but have heeded my advice.</p>
+<h2 class="chapter" id="c13">Scene VI — Orgon, Damis, Tartuffe</h2>
+<p>ORGON Just Heaven! Can what I hear be credited?</p>
+<p>TARTUFFE Yes, brother, I am wicked, I am guilty, A miserable sinner, steeped in evil, The greatest criminal that ever lived. Each moment of my life is stained with soilures; And all is but a mass of crime and filth; Heaven, for my punishment, I see it plainly, Would mortify me now. Whatever wrong They find to charge me with, I&#x27;ll not deny it But guard against the pride of self-defence. Believe their stories, arm your wrath against me, And drive me like a villain from your house; I cannot have so great a share of shame But what I have deserved a greater still.</p>
+<p>ORGON (to his son) You miscreant, can you dare, with such a falsehood, To try to stain the whiteness of his virtue?</p>
+<p>DAMIS What! The feigned meekness of this hypocrite Makes you discredit ...</p>
+<p>ORGON Silence, cursed plague!</p>
+<p>TARTUFFE Ah! Let him speak; you chide him wrongfully; You&#x27;d do far better to believe his tales. Why favour me so much in such a matter? How can you know of what I&#x27;m capable? And should you trust my outward semblance, brother, Or judge therefrom that I&#x27;m the better man? No, no; you let appearances deceive you; I&#x27;m anything but what I&#x27;m thought to be, Alas! and though all men believe me godly, The simple truth is, I&#x27;m a worthless creature.</p>
+<p>(To Damis) Yes, my dear son, say on, and call me traitor, Abandoned scoundrel, thief, and murderer; Heap on me names yet more detestable, And I shall not gainsay you; I&#x27;ve deserved them; I&#x27;ll bear this ignominy on my knees, To expiate in shame the crimes I&#x27;ve done.</p>
+<p>ORGON (to Tartuffe) Ah, brother, &#x27;tis too much!</p>
+<p>(To his son) You&#x27;ll not relent, You blackguard?</p>
+<p>DAMIS What! His talk can so deceive you ...</p>
+<p>ORGON Silence, you scoundrel!</p>
+<p>(To Tartuffe) Brother, rise, I beg you.</p>
+<p>(To his son) Infamous villain!</p>
+<p>DAMIS Can he ...</p>
+<p>ORGON Silence!</p>
+<p>DAMIS What ...</p>
+<p>ORGON Another word, I&#x27;ll break your every bone.</p>
+<p>TARTUFFE Brother, in God&#x27;s name, don&#x27;t be angry with him! I&#x27;d rather bear myself the bitterest torture Than have him get a scratch on my account.</p>
+<p>ORGON (to his son) Ungrateful monster!</p>
+<p>TARTUFFE Stop. Upon my knees I beg you pardon him ...</p>
+<p>ORGON (throwing himself on his knees too, and embracing Tartuffe) Alas! How can you?</p>
+<p>(To his son) Villain! Behold his goodness!</p>
+<p>DAMIS So ...</p>
+<p>ORGON Be still.</p>
+<p>DAMIS What! I ...</p>
+<p>ORGON Be still, I say. I know your motives For this attack. You hate him, all of you; Wife, children, servants, all let loose upon him, You have recourse to every shameful trick To drive this godly man out of my house; The more you strive to rid yourselves of him, The more I&#x27;ll strive to make him stay with me; I&#x27;ll have him straightway married to my daughter, Just to confound the pride of all of you.</p>
+<p>DAMIS What! Will you force her to accept his hand?</p>
+<p>ORGON Yes, and this very evening, to enrage you, Young rascal! Ah! I&#x27;ll brave you all, and show you That I&#x27;m the master, and must be obeyed. Now, down upon your knees this instant, rogue, And take back what you said, and ask his pardon.</p>
+<p>DAMIS Who? I? Ask pardon of that cheating scoundrel ... ?</p>
+<p>ORGON Do you resist, you beggar, and insult him? A cudgel, here! a cudgel!</p>
+<p>(To Tartuffe) Don&#x27;t restrain me.</p>
+<p>(To his son) Off with you! Leave my house this instant, sirrah, And never dare set foot in it again.</p>
+<p>DAMIS Yes, I will leave your house, but ...</p>
+<p>ORGON Leave it quickly. You reprobate, I disinherit you, And give you, too, my curse into the bargain.</p>
+<h2 class="chapter" id="c14">Scene VII — Orgon, Tartuffe</h2>
+<p>ORGON What! So insult a saintly man of God!</p>
+<p>TARTUFFE Heaven, forgive him all the pain he gives me! [4]</p>
+<p>[Footnote 4: Some modern editions have adopted the reading, preserved by tradition as that of the earliest stage version: Heaven, forgive him even as I forgive him! Voltaire gives still another reading: Heaven, forgive me even as I forgive him! Whichever was the original version, it appears in none of the early editions, and Moliere probably felt forced to change it on account of its too close resemblance to the Biblical phrase.]</p>
+<p>(To Orgon) Could you but know with what distress I see Them try to vilify me to my brother!</p>
+<p>ORGON Ah!</p>
+<p>TARTUFFE The mere thought of such ingratitude Makes my soul suffer torture, bitterly ... My horror at it ... Ah! my heart&#x27;s so full I cannot speak ... I think I&#x27;ll die of it.</p>
+<p>ORGON (in tears, running to the door through which he drove away his son) Scoundrel! I wish I&#x27;d never let you go, But slain you on the spot with my own hand.</p>
+<p>(To Tartuffe) Brother, compose yourself, and don&#x27;t be angry.</p>
+<p>TARTUFFE Nay, brother, let us end these painful quarrels. I see what troublous times I bring upon you, And think &#x27;tis needful that I leave this house.</p>
+<p>ORGON What! You can&#x27;t mean it?</p>
+<p>TARTUFFE Yes, they hate me here, And try, I find, to make you doubt my faith.</p>
+<p>ORGON What of it? Do you find I listen to them?</p>
+<p>TARTUFFE No doubt they won&#x27;t stop there. These same reports You now reject, may some day win a hearing.</p>
+<p>ORGON No, brother, never.</p>
+<p>TARTUFFE Ah! my friend, a woman May easily mislead her husband&#x27;s mind.</p>
+<p>ORGON No, no.</p>
+<p>TARTUFFE So let me quickly go away And thus remove all cause for such attacks.</p>
+<p>ORGON No, you shall stay; my life depends upon it.</p>
+<p>TARTUFFE Then I must mortify myself. And yet, If you should wish ...</p>
+<p>ORGON No, never!</p>
+<p>TARTUFFE Very well, then; No more of that. But I shall rule my conduct To fit the case. Honour is delicate, And friendship binds me to forestall suspicion, Prevent all scandal, and avoid your wife.</p>
+<p>ORGON No, you shall haunt her, just to spite them all. &#x27;Tis my delight to set them in a rage; You shall be seen together at all hours And what is more, the better to defy them, I&#x27;ll have no other heir but you; and straightway I&#x27;ll go and make a deed of gift to you, Drawn in due form, of all my property. A good true friend, my son-in-law to be, Is more to me than son, and wife, and kindred. You will accept my offer, will you not?</p>
+<p>TARTUFFE Heaven&#x27;s will be done in everything!</p>
+<p>ORGON Poor man! We&#x27;ll go make haste to draw the deed aright, And then let envy burst itself with spite!</p>
+<h2 class="chapter" id="c15">Act IV — Scene I</h2>
+<h3 class="sub">Cleante, Tartuffe</h3>
+<p>CLEANTE Yes, it&#x27;s become the talk of all the town, And make a stir that&#x27;s scarcely to your credit; And I have met you, sir, most opportunely, To tell you in a word my frank opinion. Not to sift out this scandal to the bottom, Suppose the worst for us--suppose Damis Acted the traitor, and accused you falsely; Should not a Christian pardon this offence, And stifle in his heart all wish for vengeance? Should you permit that, for your petty quarrel, A son be driven from his father&#x27;s house? I tell you yet again, and tell you frankly, Everyone, high or low, is scandalised; If you&#x27;ll take my advice, you&#x27;ll make it up, And not push matters to extremities. Make sacrifice to God of your resentment; Restore the son to favour with his father.</p>
+<p>TARTUFFE Alas! So far as I&#x27;m concerned, how gladly Would I do so! I bear him no ill will; I pardon all, lay nothing to his charge, And wish with all my heart that I might serve him; But Heaven&#x27;s interests cannot allow it; If he returns, then I must leave the house. After his conduct, quite unparalleled, All intercourse between us would bring scandal; God knows what everyone&#x27;s first thought would be! They would attribute it to merest scheming On my part--say that conscious of my guilt I feigned a Christian love for my accuser, But feared him in my heart, and hoped to win him And underhandedly secure his silence.</p>
+<p>CLEANTE You try to put us off with specious phrases; But all your arguments are too far-fetched. Why take upon yourself the cause of Heaven? Does Heaven need our help to punish sinners? Leave to itself the care of its own vengeance, And keep in mind the pardon it commands us; Besides, think somewhat less of men&#x27;s opinions, When you are following the will of Heaven. Shall petty fear of what the world may think Prevent the doing of a noble deed? No!--let us always do as Heaven commands, And not perplex our brains with further questions.</p>
+<p>TARTUFFE Already I have told you I forgive him; And that is doing, sir, as Heaven commands. But after this day&#x27;s scandal and affront Heaven does not order me to live with him.</p>
+<p>CLEANTE And does it order you to lend your ear To what mere whim suggested to his father, And to accept gift of his estates, On which, in justice, you can make no claim?</p>
+<p>TARTUFFE No one who knows me, sir, can have the thought That I am acting from a selfish motive. The goods of this world have no charms for me; I am not dazzled by their treacherous glamour; And if I bring myself to take the gift Which he insists on giving me, I do so, To tell the truth, only because I fear This whole estate may fall into bad hands, And those to whom it comes may use it ill And not employ it, as is my design, For Heaven&#x27;s glory and my neighbours&#x27; good.</p>
+<p>CLEANTE Eh, sir, give up these conscientious scruples That well may cause a rightful heir&#x27;s complaints. Don&#x27;t take so much upon yourself, but let him Possess what&#x27;s his, at his own risk and peril; Consider, it were better he misused it, Than you should be accused of robbing him. I am astounded that unblushingly You could allow such offers to be made! Tell me--has true religion any maxim That teaches us to rob the lawful heir? If Heaven has made it quite impossible Damis and you should live together here, Were it not better you should quietly And honourably withdraw, than let the son Be driven out for your sake, dead against All reason? &#x27;Twould be giving, sir, believe me, Such an example of your probity ...</p>
+<p>TARTUFFE Sir, it is half-past three; certain devotions Recall me to my closet; you&#x27;ll forgive me For leaving you so soon.</p>
+<p>CLEANTE (alone) Ah!</p>
+<h2 class="chapter" id="c16">Scene II — Elmire, Mariane, Cleante, Dorine</h2>
+<p>DORINE (to Cleante) Sir, we beg you To help us all you can in her behalf; She&#x27;s suffering almost more than heart can bear; This match her father means to make to-night Drives her each moment to despair. He&#x27;s coming. Let us unite our efforts now, we beg you, And try by strength or skill to change his purpose.</p>
+<h2 class="chapter" id="c17">Scene III — Orgon, Elmire, Mariane, Cleante, Dorine</h2>
+<p>ORGON So ho! I&#x27;m glad to find you all together.</p>
+<p>(To Mariane) Here is the contract that shall make you happy, My dear. You know already what it means.</p>
+<p>MARIANE (on her knees before Orgon) Father, I beg you, in the name of Heaven That knows my grief, and by whate&#x27;er can move you, Relax a little your paternal rights, And free my love from this obedience! Oh, do not make me, by your harsh command, Complain to Heaven you ever were my father; Do not make wretched this poor life you gave me. If, crossing that fond hope which I had formed, You&#x27;ll not permit me to belong to one Whom I have dared to love, at least, I beg you Upon my knees, oh, save me from the torment Of being possessed by one whom I abhor! And do not drive me to some desperate act By exercising all your rights upon me.</p>
+<p>ORGON (a little touched) Come, come, my heart, be firm! no human weakness!</p>
+<p>MARIANE I am not jealous of your love for him; Display it freely; give him your estate, And if that&#x27;s not enough, add all of mine; I willingly agree, and give it up, If only you&#x27;ll not give him me, your daughter; Oh, rather let a convent&#x27;s rigid rule Wear out the wretched days that Heaven allots me.</p>
+<p>ORGON These girls are ninnies!--always turning nuns When fathers thwart their silly love-affairs. Get on your feet! The more you hate to have him, The more &#x27;twill help you earn your soul&#x27;s salvation. So, mortify your senses by this marriage, And don&#x27;t vex me about it any more.</p>
+<p>DORINE But what ... ?</p>
+<p>ORGON You hold your tongue, before your betters. Don&#x27;t dare to say a single word, I tell you.</p>
+<p>CLEANTE If you will let me answer, and advise ...</p>
+<p>ORGON Brother, I value your advice most highly; &#x27;Tis well thought out; no better can be had; But you&#x27;ll allow me--not to follow it.</p>
+<p>ELMIRE (to her husband) I can&#x27;t find words to cope with such a case; Your blindness makes me quite astounded at you. You are bewitched with him, to disbelieve The things we tell you happened here to-day.</p>
+<p>ORGON I am your humble servant, and can see Things, when they&#x27;re plain as noses on folks&#x27; faces, I know you&#x27;re partial to my rascal son, And didn&#x27;t dare to disavow the trick He tried to play on this poor man; besides, You were too calm, to be believed; if that Had happened, you&#x27;d have been far more disturbed.</p>
+<p>ELMIRE And must our honour always rush to arms At the mere mention of illicit love? Or can we answer no attack upon it Except with blazing eyes and lips of scorn? For my part, I just laugh away such nonsense; I&#x27;ve no desire to make a loud to-do. Our virtue should, I think, be gentle-natured; Nor can I quite approve those savage prudes Whose honour arms itself with teeth and claws To tear men&#x27;s eyes out at the slightest word. Heaven preserve me from that kind of honour! I like my virtue not to be a vixen, And I believe a quiet cold rebuff No less effective to repulse a lover.</p>
+<p>ORGON I know ... and you can&#x27;t throw me off the scent.</p>
+<p>ELMIRE Once more, I am astounded at your weakness; I wonder what your unbelief would answer, If I should let you see we&#x27;ve told the truth?</p>
+<p>ORGON See it?</p>
+<p>ELMIRE Yes.</p>
+<p>ORGON Nonsense.</p>
+<p>ELMIRE Come! If I should find A way to make you see it clear as day?</p>
+<p>ORGON All rubbish.</p>
+<p>ELMIRE What a man! But answer me. I&#x27;m not proposing now that you believe us; But let&#x27;s suppose that here, from proper hiding, You should be made to see and hear all plainly; What would you say then, to your man of virtue?</p>
+<p>ORGON Why, then, I&#x27;d say ... say nothing. It can&#x27;t be.</p>
+<p>ELMIRE Your error has endured too long already, And quite too long you&#x27;ve branded me a liar. I must at once, for my own satisfaction, Make you a witness of the things we&#x27;ve told you.</p>
+<p>ORGON Amen! I take you at your word. We&#x27;ll see What tricks you have, and how you&#x27;ll keep your promise.</p>
+<p>ELMIRE (to Dorine) Send him to me.</p>
+<p>DORINE (to Elmire) The man&#x27;s a crafty codger, Perhaps you&#x27;ll find it difficult to catch him.</p>
+<p>ELMIRE (to Dorine) Oh no! A lover&#x27;s never hard to cheat, And self-conceit leads straight to self-deceit. Bid him come down to me.</p>
+<p>(To Cleante and Mariane) And you, withdraw.</p>
+<h2 class="chapter" id="c18">Scene IV — Elmire, Orgon</h2>
+<p>ELMIRE Bring up this table, and get under it.</p>
+<p>ORGON What?</p>
+<p>ELMIRE One essential is to hide you well.</p>
+<p>ORGON Why under there?</p>
+<p>ELMIRE Oh, dear! Do as I say; I know what I&#x27;m about, as you shall see. Get under, now, I tell you; and once there Be careful no one either sees or hears you.</p>
+<p>ORGON I&#x27;m going a long way to humour you, I must say; but I&#x27;ll see you through your scheme.</p>
+<p>ELMIRE And then you&#x27;ll have, I think, no more to say.</p>
+<p>(To her husband, who is now under the table.) But mind, I&#x27;m going to meddle with strange matters; Prepare yourself to be in no wise shocked. Whatever I may say must pass, because &#x27;Tis only to convince you, as I promised. By wheedling speeches, since I&#x27;m forced to do it, I&#x27;ll make this hypocrite put off his mask, Flatter the longings of his shameless passion, And give free play to all his impudence. But, since &#x27;tis for your sake, to prove to you His guilt, that I shall feign to share his love, I can leave off as soon as you&#x27;re convinced, And things shall go no farther than you choose. So, when you think they&#x27;ve gone quite far enough, It is for you to stop his mad pursuit, To spare your wife, and not expose me farther Than you shall need, yourself, to undeceive you. It is your own affair, and you must end it When ... Here he comes. Keep still, don&#x27;t show yourself.</p>
+<h2 class="chapter" id="c19">Scene V</h2>
+<p>TARTUFFE, ELMIRE; ORGON (under the table)</p>
+<p>TARTUFFE They told me that you wished to see me here.</p>
+<p>ELMIRE Yes. I have secrets for your ear alone. But shut the door first, and look everywhere For fear of spies.</p>
+<p>(Tartuffe goes and closes the door, and comes back.) We surely can&#x27;t afford Another scene like that we had just now; Was ever anyone so caught before! Damis did frighten me most terribly On your account; you saw I did my best To baffle his design, and calm his anger. But I was so confused, I never thought To contradict his story; still, thank Heaven, Things turned out all the better, as it happened, And now we&#x27;re on an even safer footing. The high esteem you&#x27;re held in, laid the storm; My husband can have no suspicion of you, And even insists, to spite the scandal-mongers, That we shall be together constantly; So that is how, without the risk of blame, I can be here locked up with you alone, And can reveal to you my heart, perhaps Only too ready to allow your passion.</p>
+<p>TARTUFFE Your words are somewhat hard to understand, Madam; just now you used a different style.</p>
+<p>ELMIRE If that refusal has offended you, How little do you know a woman&#x27;s heart! How ill you guess what it would have you know, When it presents so feeble a defence! Always, at first, our modesty resists The tender feelings you inspire us with. Whatever cause we find to justify The love that masters us, we still must feel Some little shame in owning it; and strive To make as though we would not, when we would. But from the very way we go about it We let a lover know our heart surrenders, The while our lips, for honour&#x27;s sake, oppose Our heart&#x27;s desire, and in refusing promise. I&#x27;m telling you my secret all too freely And with too little heed to modesty. But--now that I&#x27;ve made bold to speak--pray tell me. Should I have tried to keep Damis from speaking, Should I have heard the offer of your heart So quietly, and suffered all your pleading, And taken it just as I did--remember-- If such a declaration had not pleased me, And, when I tried my utmost to persuade you Not to accept the marriage that was talked of, What should my earnestness have hinted to you If not the interest that you&#x27;ve inspired, And my chagrin, should such a match compel me To share a heart I want all to myself?</p>
+<p>TARTUFFE &#x27;Tis, past a doubt, the height of happiness, To hear such words from lips we dote upon; Their honeyed sweetness pours through all my senses Long draughts of suavity ineffable. My heart employs its utmost zeal to please you, And counts your love its one beatitude; And yet that heart must beg that you allow it To doubt a little its felicity. I well might think these words an honest trick To make me break off this approaching marriage; And if I may express myself quite plainly, I cannot trust these too enchanting words Until the granting of some little favour I sigh for, shall assure me of their truth And build within my soul, on firm foundations, A lasting faith in your sweet charity.</p>
+<p>ELMIRE (coughing to draw her husband&#x27;s attention) What! Must you go so fast?--and all at once Exhaust the whole love of a woman&#x27;s heart? She does herself the violence to make This dear confession of her love, and you Are not yet satisfied, and will not be Without the granting of her utmost favours?</p>
+<p>TARTUFFE The less a blessing is deserved, the less We dare to hope for it; and words alone Can ill assuage our love&#x27;s desires. A fate Too full of happiness, seems doubtful still; We must enjoy it ere we can believe it. And I, who know how little I deserve Your goodness, doubt the fortunes of my daring; So I shall trust to nothing, madam, till You have convinced my love by something real.</p>
+<p>ELMIRE Ah! How your love enacts the tyrant&#x27;s role, And throws my mind into a strange confusion! With what fierce sway it rules a conquered heart, And violently will have its wishes granted! What! Is there no escape from your pursuit? No respite even?--not a breathing space? Nay, is it decent to be so exacting, And so abuse by urgency the weakness You may discover in a woman&#x27;s heart?</p>
+<p>TARTUFFE But if my worship wins your gracious favour, Then why refuse me some sure proof thereof?</p>
+<p>ELMIRE But how can I consent to what you wish, Without offending Heaven you talk so much of?</p>
+<p>TARTUFFE If Heaven is all that stands now in my way, I&#x27;ll easily remove that little hindrance; Your heart need not hold back for such a trifle.</p>
+<p>ELMIRE But they affright us so with Heaven&#x27;s commands!</p>
+<p>TARTUFFE I can dispel these foolish fears, dear madam; I know the art of pacifying scruples Heaven forbids, &#x27;tis true, some satisfactions; But we find means to make things right with Heaven.</p>
+<p>(&#x27;Tis a scoundrel speaking.) [5]</p>
+<p>[Footnote 5: Moliere&#x27;s note, in the original edition.]</p>
+<p>There is a science, madam, that instructs us How to enlarge the limits of our conscience According to our various occasions, And rectify the evil of the deed According to our purity of motive. I&#x27;ll duly teach you all these secrets, madam; You only need to let yourself be guided. Content my wishes, have no fear at all; I answer for&#x27;t, and take the sin upon me.</p>
+<p>(Elmire coughs still louder.) Your cough is very bad.</p>
+<p>ELMIRE Yes, I&#x27;m in torture.</p>
+<p>TARTUFFE Would you accept this bit of licorice?</p>
+<p>ELMIRE The case is obstinate, I find; and all The licorice in the world will do no good.</p>
+<p>TARTUFFE &#x27;Tis very trying.</p>
+<p>ELMIRE More than words can say.</p>
+<p>TARTUFFE In any case, your scruple&#x27;s easily Removed. With me you&#x27;re sure of secrecy, And there&#x27;s no harm unless a thing is known. The public scandal is what brings offence, And secret sinning is not sin at all.</p>
+<p>ELMIRE (after coughing again) So then, I see I must resolve to yield; I must consent to grant you everything, And cannot hope to give full satisfaction Or win full confidence, at lesser cost. No doubt &#x27;tis very hard to come to this; &#x27;Tis quite against my will I go so far; But since I must be forced to it, since nothing That can be said suffices for belief, Since more convincing proof is still demanded, I must make up my mind to humour people. If my consent give reason for offence, So much the worse for him who forced me to it; The fault can surely not be counted mine.</p>
+<p>TARTUFFE It need not, madam; and the thing itself ...</p>
+<p>ELMIRE Open the door, I pray you, and just see Whether my husband&#x27;s not there, in the hall.</p>
+<p>TARTUFFE Why take such care for him? Between ourselves, He is a man to lead round by the nose. He&#x27;s capable of glorying in our meetings; I&#x27;ve fooled him so, he&#x27;d see all, and deny it.</p>
+<p>ELMIRE No matter; go, I beg you, look about, And carefully examine every corner.</p>
+<h2 class="chapter" id="c20">Scene VI — Orgon, Elmire</h2>
+<p>ORGON (crawling out from under the table) That is, I own, a man ... abominable! I can&#x27;t get over it; the whole thing floors me.</p>
+<p>ELMIRE What? You come out so soon? You cannot mean it! Get back under the table; &#x27;tis not time yet; Wait till the end, to see, and make quite certain, And don&#x27;t believe a thing on mere conjecture.</p>
+<p>ORGON Nothing more wicked e&#x27;er came out of Hell.</p>
+<p>ELMIRE Dear me! Don&#x27;t go and credit things too lightly. No, let yourself be thoroughly convinced; Don&#x27;t yield too soon, for fear you&#x27;ll be mistaken.</p>
+<p>(As Tartuffe enters, she makes her husband stand behind her.)</p>
+<h2 class="chapter" id="c21">Scene VII — Tartuffe, Elmire, Orgon</h2>
+<p>TARTUFFE (not seeing Orgon) All things conspire toward my satisfaction, Madam, I&#x27;ve searched the whole apartment through. There&#x27;s no one here; and now my ravished soul ...</p>
+<p>ORGON (stopping him) Softly! You are too eager in your amours; You needn&#x27;t be so passionate. Ah ha! My holy man! You want to put it on me! How is your soul abandoned to temptation! Marry my daughter, eh?--and want my wife, too? I doubted long enough if this was earnest, Expecting all the time the tone would change; But now the proof&#x27;s been carried far enough; I&#x27;m satisfied, and ask no more, for my part.</p>
+<p>ELMIRE (to Tartuffe) &#x27;Twas quite against my character to play This part; but I was forced to treat you so.</p>
+<p>TARTUFFE What? You believe ... ?</p>
+<p>ORGON Come, now, no protestations. Get out from here, and make no fuss about it.</p>
+<p>TARTUFFE But my intent ...</p>
+<p>ORGON That talk is out of season. You leave my house this instant.</p>
+<p>TARTUFFE You&#x27;re the one To leave it, you who play the master here! This house belongs to me, I&#x27;ll have you know, And show you plainly it&#x27;s no use to turn To these low tricks, to pick a quarrel with me, And that you can&#x27;t insult me at your pleasure, For I have wherewith to confound your lies, Avenge offended Heaven, and compel Those to repent who talk to me of leaving.</p>
+<h2 class="chapter" id="c22">Scene VIII — Elmire, Orgon</h2>
+<p>ELMIRE What sort of speech is this? What can it mean?</p>
+<p>ORGON My faith, I&#x27;m dazed. This is no laughing matter.</p>
+<p>ELMIRE What?</p>
+<p>ORGON From his words I see my great mistake; The deed of gift is one thing troubles me.</p>
+<p>ELMIRE The deed of gift ...</p>
+<p>ORGON Yes, that is past recall. But I&#x27;ve another thing to make me anxious.</p>
+<p>ELMIRE What&#x27;s that?</p>
+<p>ORGON You shall know all. Let&#x27;s see at once Whether a certain box is still upstairs.</p>
+<h2 class="chapter" id="c23">Act V — Scene I</h2>
+<h3 class="sub">Orgon, Cleante</h3>
+<p>CLEANTE Whither away so fast?</p>
+<p>ORGON How should I know?</p>
+<p>CLEANTE Methinks we should begin by taking counsel To see what can be done to meet the case.</p>
+<p>ORGON I&#x27;m all worked up about that wretched box. More than all else it drives me to despair.</p>
+<p>CLEANTE That box must hide some mighty mystery?</p>
+<p>ORGON Argas, my friend who is in trouble, brought it Himself, most secretly, and left it with me. He chose me, in his exile, for this trust; And on these documents, from what he said, I judge his life and property depend.</p>
+<p>CLEANTE How could you trust them to another&#x27;s hands?</p>
+<p>ORGON By reason of a conscientious scruple. I went straight to my traitor, to confide In him; his sophistry made me believe That I must give the box to him to keep, So that, in case of search, I might deny My having it at all, and still, by favour Of this evasion, keep my conscience clear Even in taking oath against the truth.</p>
+<p>CLEANTE Your case is bad, so far as I can see; This deed of gift, this trusting of the secret To him, were both--to state my frank opinion-- Steps that you took too lightly; he can lead you To any length, with these for hostages; And since he holds you at such disadvantage, You&#x27;d be still more imprudent, to provoke him; So you must go some gentler way about.</p>
+<p>ORGON What! Can a soul so base, a heart so false, Hide neath the semblance of such touching fervour? I took him in, a vagabond, a beggar! ... &#x27;Tis too much! No more pious folk for me! I shall abhor them utterly forever, And henceforth treat them worse than any devil.</p>
+<p>CLEANTE So! There you go again, quite off the handle! In nothing do you keep an even temper. You never know what reason is, but always Jump first to one extreme, and then the other. You see your error, and you recognise That you&#x27;ve been cozened by a feigned zeal; But to make up for&#x27;t, in the name of reason, Why should you plunge into a worse mistake, And find no difference in character Between a worthless scamp, and all good people? What! Just because a rascal boldly duped you With pompous show of false austerity, Must you needs have it everybody&#x27;s like him, And no one&#x27;s truly pious nowadays? Leave such conclusions to mere infidels; Distinguish virtue from its counterfeit, Don&#x27;t give esteem too quickly, at a venture, But try to keep, in this, the golden mean. If you can help it, don&#x27;t uphold imposture; But do not rail at true devoutness, either; And if you must fall into one extreme, Then rather err again the other way.</p>
+<h2 class="chapter" id="c24">Scene II — Damis, Orgon, Cleante</h2>
+<p>DAMIS What! father, can the scoundrel threaten you, Forget the many benefits received, And in his base abominable pride Make of your very favours arms against you?</p>
+<p>ORGON Too true, my son. It tortures me to think on&#x27;t.</p>
+<p>DAMIS Let me alone, I&#x27;ll chop his ears off for him. We must deal roundly with his insolence; &#x27;Tis I must free you from him at a blow; &#x27;Tis I, to set things right, must strike him down.</p>
+<p>CLEANTE Spoke like a true young man. Now just calm down, And moderate your towering tantrums, will you? We live in such an age, with such a king, That violence can not advance our cause.</p>
+<h2 class="chapter" id="c25">Scene III</h2>
+<p>MADAME PERNELLE, ORGON, ELMIRE, CLEANTE, MARIANE, DAMIS, DORINE</p>
+<p>MADAME PERNELLE What&#x27;s this? I hear of fearful mysteries!</p>
+<p>ORGON Strange things indeed, for my own eyes to witness; You see how I&#x27;m requited for my kindness, I zealously receive a wretched beggar, I lodge him, entertain him like my brother, Load him with benefactions every day, Give him my daughter, give him all my fortune: And he meanwhile, the villain, rascal, wretch, Tries with black treason to suborn my wife, And not content with such a foul design, He dares to menace me with my own favours, And would make use of those advantages Which my too foolish kindness armed him with, To ruin me, to take my fortune from me, And leave me in the state I saved him from.</p>
+<p>DORINE Poor man!</p>
+<p>MADAME PERNELLE My son, I cannot possibly Believe he could intend so black a deed.</p>
+<p>ORGON What?</p>
+<p>MADAME PERNELLE Worthy men are still the sport of envy.</p>
+<p>ORGON Mother, what do you mean by such a speech?</p>
+<p>MADAME PERNELLE There are strange goings-on about your house, And everybody knows your people hate him.</p>
+<p>ORGON What&#x27;s that to do with what I tell you now?</p>
+<p>MADAME PERNELLE I always said, my son, when you were little: That virtue here below is hated ever; The envious may die, but envy never.</p>
+<p>ORGON What&#x27;s that fine speech to do with present facts?</p>
+<p>MADAME PERNELLE Be sure, they&#x27;ve forged a hundred silly lies ...</p>
+<p>ORGON I&#x27;ve told you once, I saw it all myself.</p>
+<p>MADAME PERNELLE For slanderers abound in calumnies ...</p>
+<p>ORGON Mother, you&#x27;d make me damn my soul. I tell you I saw with my own eyes his shamelessness.</p>
+<p>MADAME PERNELLE Their tongues for spitting venom never lack, There&#x27;s nothing here below they&#x27;ll not attack.</p>
+<p>ORGON Your speech has not a single grain of sense. I saw it, harkee, saw it, with these eyes I saw--d&#x27;ye know what saw means?--must I say it A hundred times, and din it in your ears?</p>
+<p>MADAME PERNELLE My dear, appearances are oft deceiving, And seeing shouldn&#x27;t always be believing.</p>
+<p>ORGON I&#x27;ll go mad.</p>
+<p>MADAME PERNELLE False suspicions may delude, And good to evil oft is misconstrued.</p>
+<p>ORGON Must I construe as Christian charity The wish to kiss my wife!</p>
+<p>MADAME PERNELLE You must, at least, Have just foundation for accusing people, And wait until you see a thing for sure.</p>
+<p>ORGON The devil! How could I see any surer? Should I have waited till, before my eyes, He ... No, you&#x27;ll make me say things quite improper.</p>
+<p>MADAME PERNELLE In short, &#x27;tis known too pure a zeal inflames him; And so, I cannot possibly conceive That he should try to do what&#x27;s charged against him.</p>
+<p>ORGON If you were not my mother, I should say Such things! ... I know not what, I&#x27;m so enraged!</p>
+<p>DORINE (to Orgon) Fortune has paid you fair, to be so doubted; You flouted our report, now yours is flouted.</p>
+<p>CLEANTE We&#x27;re wasting time here in the merest trifling, Which we should rather use in taking measures To guard ourselves against the scoundrel&#x27;s threats.</p>
+<p>DAMIS You think his impudence could go far?</p>
+<p>ELMIRE For one, I can&#x27;t believe it possible; Why, his ingratitude would be too patent.</p>
+<p>CLEANTE Don&#x27;t trust to that; he&#x27;ll find abundant warrant To give good colour to his acts against you; And for less cause than this, a strong cabal Can make one&#x27;s life a labyrinth of troubles. I tell you once again: armed as he is You never should have pushed him quite so far.</p>
+<p>ORGON True; yet what could I do? The rascal&#x27;s pride Made me lose all control of my resentment.</p>
+<p>CLEANTE I wish with all my heart that some pretence Of peace could be patched up between you two</p>
+<p>ELMIRE If I had known what weapons he was armed with, I never should have raised such an alarm, And my ...</p>
+<p>ORGON (to Dorine, seeing Mr. Loyal come in) Who&#x27;s coming now? Go quick, find out. I&#x27;m in a fine state to receive a visit!</p>
+<h2 class="chapter" id="c26">Scene IV</h2>
+<p>ORGON, MADAME PERNELLE, ELMIRE, MARIANE, CLEANTE, DAMIS, DORINE, MR. LOYAL</p>
+<p>MR. LOYAL (to Dorine, at the back of the stage) Good day, good sister. Pray you, let me see The master of the house.</p>
+<p>DORINE He&#x27;s occupied; I think he can see nobody at present.</p>
+<p>MR. LOYAL I&#x27;m not by way of being unwelcome here. My coming can, I think, nowise displease him; My errand will be found to his advantage.</p>
+<p>DORINE Your name, then?</p>
+<p>MR. LOYAL Tell him simply that his friend Mr. Tartuffe has sent me, for his goods ...</p>
+<p>DORINE (to Orgon) It is a man who comes, with civil manners, Sent by Tartuffe, he says, upon an errand That you&#x27;ll be pleased with.</p>
+<p>CLEANTE (to Orgon) Surely you must see him, And find out who he is, and what he wants.</p>
+<p>ORGON (to Cleante) Perhaps he&#x27;s come to make it up between us: How shall I treat him?</p>
+<p>CLEANTE You must not get angry; And if he talks of reconciliation Accept it.</p>
+<p>MR. LOYAL (to Orgon) Sir, good-day. And Heaven send Harm to your enemies, favour to you.</p>
+<p>ORGON (aside to Cleante) This mild beginning suits with my conjectures And promises some compromise already.</p>
+<p>MR. LOYAL All of your house has long been dear to me; I had the honour, sir, to serve your father.</p>
+<p>ORGON Sir, I am much ashamed, and ask your pardon For not recalling now your face or name.</p>
+<p>MR. LOYAL My name is Loyal. I&#x27;m from Normandy. My office is court-bailiff, in despite Of envy; and for forty years, thank Heaven, It&#x27;s been my fortune to perform that office With honour. So I&#x27;ve come, sir, by your leave To render service of a certain writ ...</p>
+<p>ORGON What, you are here to ...</p>
+<p>MR. LOYAL Pray, sir, don&#x27;t be angry. &#x27;Tis nothing, sir, but just a little summons:-- Order to vacate, you and yours, this house, Move out your furniture, make room for others, And that without delay or putting off, As needs must be ...</p>
+<p>ORGON I? Leave this house?</p>
+<p>MR. LOYAL Yes, please, sir The house is now, as you well know, of course, Mr. Tartuffe&#x27;s. And he, beyond dispute, Of all your goods is henceforth lord and master By virtue of a contract here attached, Drawn in due form, and unassailable.</p>
+<p>DAMIS (to Mr. Loyal) Your insolence is monstrous, and astounding!</p>
+<p>MR. LOYAL (to Damis) I have no business, sir, that touches you;</p>
+<p>(Pointing to Orgon) This is the gentleman. He&#x27;s fair and courteous, And knows too well a gentleman&#x27;s behaviour To wish in any wise to question justice.</p>
+<p>ORGON But ...</p>
+<p>MR. LOYAL Sir, I know you would not for a million Wish to rebel; like a good citizen You&#x27;ll let me put in force the court&#x27;s decree.</p>
+<p>DAMIS Your long black gown may well, before you know it, Mister Court-bailiff, get a thorough beating.</p>
+<p>MR. LOYAL (to Orgon) Sir, make your son be silent or withdraw. I should be loath to have to set things down, And see your names inscribed in my report.</p>
+<p>DORINE (aside) This Mr. Loyal&#x27;s looks are most disloyal.</p>
+<p>MR. LOYAL I have much feeling for respectable And honest folk like you, sir, and consented To serve these papers, only to oblige you, And thus prevent the choice of any other Who, less possessed of zeal for you than I am Might order matters in less gentle fashion.</p>
+<p>ORGON And how could one do worse than order people Out of their house?</p>
+<p>MR. LOYAL Why, we allow you time; And even will suspend until to-morrow The execution of the order, sir. I&#x27;ll merely, without scandal, quietly, Come here and spend the night, with half a score Of officers; and just for form&#x27;s sake, please, You&#x27;ll bring your keys to me, before retiring. I will take care not to disturb your rest, And see there&#x27;s no unseemly conduct here. But by to-morrow, and at early morning, You must make haste to move your least belongings; My men will help you--I have chosen strong ones To serve you, sir, in clearing out the house. No one could act more generously, I fancy, And, since I&#x27;m treating you with great indulgence, I beg you&#x27;ll do as well by me, and see I&#x27;m not disturbed in my discharge of duty.</p>
+<p>ORGON I&#x27;d give this very minute, and not grudge it, The hundred best gold louis I have left, If I could just indulge myself, and land My fist, for one good square one, on his snout.</p>
+<p>CLEANTE (aside to Orgon) Careful!--don&#x27;t make things worse.</p>
+<p>DAMIS Such insolence! I hardly can restrain myself. My hands Are itching to be at him.</p>
+<p>DORINE By my faith, With such a fine broad back, good Mr. Loyal, A little beating would become you well.</p>
+<p>MR. LOYAL My girl, such infamous words are actionable. And warrants can be issued against women.</p>
+<p>CLEANTE (to Mr. Loyal) Enough of this discussion, sir; have done. Give us the paper, and then leave us, pray.</p>
+<p>MR. LOYAL Then au revoir. Heaven keep you from disaster!</p>
+<p>ORGON May Heaven confound you both, you and your master!</p>
+<h2 class="chapter" id="c27">Scene V</h2>
+<p>ORGON, MADAME PERNELLE, ELMIRE, CLEANTE, MARIANE, DAMIS, DORINE</p>
+<p>ORGON Well, mother, am I right or am I not? This writ may help you now to judge the matter. Or don&#x27;t you see his treason even yet?</p>
+<p>MADAME PERNELLE I&#x27;m all amazed, befuddled, and beflustered!</p>
+<p>DORINE (to Orgon) You are quite wrong, you have no right to blame him; This action only proves his good intentions. Love for his neighbour makes his virtue perfect; And knowing money is a root of evil, In Christian charity, he&#x27;d take away Whatever things may hinder your salvation.</p>
+<p>ORGON Be still. You always need to have that told you.</p>
+<p>CLEANTE (to Orgon) Come, let us see what course you are to follow.</p>
+<p>ELMIRE Go and expose his bold ingratitude. Such action must invalidate the contract; His perfidy must now appear too black To bring him the success that he expects.</p>
+<h2 class="chapter" id="c28">Scene VI</h2>
+<p>VALERE, ORGON, MADAME PERNELLE, ELMIRE, CLEANTE, MARIANE, DAMIS, DORINE</p>
+<p>VALERE &#x27;Tis with regret, sir, that I bring bad news; But urgent danger forces me to do so. A close and intimate friend of mine, who knows The interest I take in what concerns you, Has gone so far, for my sake, as to break The secrecy that&#x27;s due to state affairs, And sent me word but now, that leaves you only The one expedient of sudden flight. The villain who so long imposed upon you, Found means, an hour ago, to see the prince, And to accuse you (among other things) By putting in his hands the private strong-box Of a state-criminal, whose guilty secret, You, failing in your duty as a subject, (He says) have kept. I know no more of it Save that a warrant&#x27;s drawn against you, sir, And for the greater surety, that same rascal Comes with the officer who must arrest you.</p>
+<p>CLEANTE His rights are armed; and this is how the scoundrel Seeks to secure the property he claims.</p>
+<p>ORGON Man is a wicked animal, I&#x27;ll own it!</p>
+<p>VALERE The least delay may still be fatal, sir. I have my carriage, and a thousand louis, Provided for your journey, at the door. Let&#x27;s lose no time; the bolt is swift to strike, And such as only flight can save you from. I&#x27;ll be your guide to seek a place of safety, And stay with you until you reach it, sir.</p>
+<p>ORGON How much I owe to your obliging care! Another time must serve to thank you fitly; And I pray Heaven to grant me so much favour That I may some day recompense your service. Good-bye; see to it, all of you ...</p>
+<p>CLEANTE Come hurry; We&#x27;ll see to everything that&#x27;s needful, brother.</p>
+<h2 class="chapter" id="c29">Scene VII</h2>
+<p>TARTUFFE, AN OFFICER, MADAME PERNELLE, ORGON, ELMIRE, CLEANTE, MARIANE, VALERE, DAMIS, DORINE</p>
+<p>TARTUFFE (stopping Orgon) Softly, sir, softly; do not run so fast; You haven&#x27;t far to go to find your lodging; By order of the prince, we here arrest you.</p>
+<p>ORGON Traitor! You saved this worst stroke for the last; This crowns your perfidies, and ruins me.</p>
+<p>TARTUFFE I shall not be embittered by your insults, For Heaven has taught me to endure all things.</p>
+<p>CLEANTE Your moderation, I must own, is great.</p>
+<p>DAMIS How shamelessly the wretch makes bold with Heaven!</p>
+<p>TARTUFFE Your ravings cannot move me; all my thought Is but to do my duty.</p>
+<p>MARIANE You must claim Great glory from this honourable act.</p>
+<p>TARTUFFE The act cannot be aught but honourable, Coming from that high power which sends me here.</p>
+<p>ORGON Ungrateful wretch, do you forget &#x27;twas I That rescued you from utter misery?</p>
+<p>TARTUFFE I&#x27;ve not forgot some help you may have given; But my first duty now is toward my prince. The higher power of that most sacred claim Must stifle in my heart all gratitude; And to such puissant ties I&#x27;d sacrifice My friend, my wife, my kindred, and myself.</p>
+<p>ELMIRE The hypocrite!</p>
+<p>DORINE How well he knows the trick Of cloaking him with what we most revere!</p>
+<p>CLEANTE But if the motive that you make parade of Is perfect as you say, why should it wait To show itself, until the day he caught you Soliciting his wife? How happens it You have not thought to go inform against him Until his honour forces him to drive you Out of his house? And though I need not mention That he&#x27;d just given you his whole estate, Still, if you meant to treat him now as guilty, How could you then consent to take his gift?</p>
+<p>TARTUFFE (to the Officer) Pray, sir, deliver me from all this clamour; Be good enough to carry out your order.</p>
+<p>THE OFFICER Yes, I&#x27;ve too long delayed its execution; &#x27;Tis very fitting you should urge me to it; So therefore, you must follow me at once To prison, where you&#x27;ll find your lodging ready.</p>
+<p>TARTUFFE Who? I, sir?</p>
+<p>THE OFFICER You.</p>
+<p>TARTUFFE By why to prison?</p>
+<p>THE OFFICER You Are not the one to whom I owe account. You, sir (to Orgon), recover from your hot alarm. Our prince is not a friend to double dealing, His eyes can read men&#x27;s inmost hearts, and all The art of hypocrites cannot deceive him. His sharp discernment sees things clear and true; His mind cannot too easily be swayed, For reason always holds the balance even. He honours and exalts true piety, But knows the false, and views it with disgust. This fellow was by no means apt to fool him, Far subtler snares have failed against his wisdom, And his quick insight pierced immediately The hidden baseness of this tortuous heart. Accusing you, the knave betrayed himself, And by true recompense of Heaven&#x27;s justice He stood revealed before our monarch&#x27;s eyes A scoundrel known before by other names, Whose horrid crimes, detailed at length, might fill A long-drawn history of many volumes. Our monarch--to resolve you in a word-- Detesting his ingratitude and baseness, Added this horror to his other crimes, And sent me hither under his direction To see his insolence out-top itself, And force him then to give you satisfaction. Your papers, which the traitor says are his, I am to take from him, and give you back; The deed of gift transferring your estate Our monarch&#x27;s sovereign will makes null and void; And for the secret personal offence Your friend involved you in, he pardons you: Thus he rewards your recent zeal, displayed In helping to maintain his rights, and shows How well his heart, when it is least expected, Knows how to recompense a noble deed, And will not let true merit miss its due, Remembering always rather good than evil.</p>
+<p>DORINE Now Heaven be praised!</p>
+<p>MADAME PERNELLE At last I breathe again.</p>
+<p>ELMIRE A happy outcome!</p>
+<p>MARIANE Who&#x27;d have dared to hope it?</p>
+<p>ORGON (to Tartuffe, who is being led by the officer) There traitor! Now you&#x27;re ...</p>
+<h2 class="chapter" id="c30">Scene VIII</h2>
+<p>MADAME PERNELLE, ORGON, ELMIRE, MARIANE, CLEANTE, VALERE, DAMIS, DORINE</p>
+<p>CLEANTE Brother, hold!--and don&#x27;t Descend to such indignities, I beg you. Leave the poor wretch to his unhappy fate, And let remorse oppress him, but not you. Hope rather that his heart may now return To virtue, hate his vice, reform his ways, And win the pardon of our glorious prince; While you must straightway go, and on your knees Repay with thanks his noble generous kindness.</p>
+<p>ORGON Well said! We&#x27;ll go, and at his feet kneel down, With joy to thank him for his goodness shown; And this first duty done, with honours due, We&#x27;ll then attend upon another, too. With wedded happiness reward Valere, And crown a lover noble and sincere.</p>
+<p class="colophon">Public domain text. BookClassics digital edition.</p>
+</body></html>

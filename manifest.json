@@ -286,6 +286,14 @@
     "txt"
    ]
   },
+  "carmen": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "civil-disobedience": {
    "en": [
     "epub",
@@ -400,6 +408,20 @@
     "txt"
    ]
   },
+  "eugenie-grandet": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "evelina": {
    "en": [
     "epub",
@@ -432,6 +454,14 @@
     "txt"
    ],
    "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "fathers-and-sons": {
+   "en": [
     "epub",
     "html",
     "pdf",
@@ -930,6 +960,20 @@
     "txt"
    ]
   },
+  "notre-dame-de-paris": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "o-pioneers": {
    "en": [
     "epub",
@@ -1199,6 +1243,14 @@
    ]
   },
   "tao-te-ching": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "tartuffe": {
    "en": [
     "epub",
     "html",
@@ -2233,5 +2285,5 @@
    ]
   }
  },
- "generated": "2026-10-03T23:49:53Z"
+ "generated": "2026-10-03T23:50:37Z"
 }
