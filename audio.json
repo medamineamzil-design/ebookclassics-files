@@ -219,6 +219,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/emma/emma.mp3"
   }
  },
+ "far-from-the-madding-crowd": {
+  "en": {
+   "bytes": 422727521,
+   "dl": true,
+   "duration": 52815,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/far-from-the-madding-crowd/far-from-the-madding-crowd.mp3"
+  }
+ },
  "father-goriot": {
   "en": {
    "bytes": 329907177,
@@ -428,6 +437,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/madame-bovary/madame-bovary-fr.mp3"
   }
  },
+ "mansfield-park": {
+  "en": {
+   "bytes": 462510328,
+   "dl": true,
+   "duration": 57788,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/mansfield-park/mansfield-park.mp3"
+  }
+ },
  "meditations": {
   "en": {
    "bytes": 201175959,
@@ -480,6 +498,15 @@
    "duration": 36028,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/nicomachean-ethics/nicomachean-ethics.mp3"
+  }
+ },
+ "north-and-south": {
+  "en": {
+   "bytes": 548702282,
+   "dl": true,
+   "duration": 68585,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/north-and-south/north-and-south.mp3"
   }
  },
  "northanger-abbey": {
@@ -577,6 +604,15 @@
    "duration": 48365,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/sense-and-sensibility/sense-and-sensibility.mp3"
+  }
+ },
+ "silas-marner": {
+  "en": {
+   "bytes": 209173179,
+   "dl": true,
+   "duration": 26144,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/silas-marner/silas-marner.mp3"
   }
  },
  "tess-of-the-d-urbervilles": {
@@ -1107,6 +1143,15 @@
    "duration": 23398,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-wind-in-the-willows/the-wind-in-the-willows.mp3"
+  }
+ },
+ "the-woman-in-white": {
+  "en": {
+   "bytes": 868033367,
+   "dl": true,
+   "duration": 108501,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-woman-in-white/the-woman-in-white.mp3"
   }
  },
  "the-wonderful-adventures-of-nils": {
