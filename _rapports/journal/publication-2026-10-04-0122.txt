@@ -1,0 +1,35 @@
+=== BookClassics — lot 2026-10-03-c — 2026-10-03 23:22 ===
+== 1/4 Fabrication des livres (EPUB, PDF, TXT, HTML) ==
+… Adam Bede [en] — Gutenberg #507
+   + adam-bede [en] OK — Project Gutenberg (#507), 213341 mots, 55 chapitres — epub:554Ko pdf:2514Ko txt:1155Ko html:1178Ko
+… Jude the Obscure [en] — Gutenberg #153
+   + jude-the-obscure [en] OK — Project Gutenberg (#153), 144191 mots, 56 chapitres — epub:435Ko pdf:2035Ko txt:800Ko html:828Ko
+… Little Dorrit [en] — Gutenberg #963
+   + little-dorrit [en] OK — Project Gutenberg (#963), 337252 mots, 71 chapitres — epub:842Ko pdf:4252Ko txt:1869Ko html:1918Ko
+… Agnes Grey [en] — Gutenberg #767
+   + agnes-grey [en] OK — Project Gutenberg (#767), 67720 mots, 25 chapitres — epub:228Ko pdf:906Ko txt:371Ko html:382Ko
+… Rob Roy [en] — Gutenberg #7025
+   + rob-roy [en] OK — Project Gutenberg (#7025), 191874 mots, 39 chapitres — epub:530Ko pdf:2406Ko txt:1086Ko html:1122Ko
+… Rob Roy [fr] — Gutenberg #16828
+   + rob-roy [fr] OK — Project Gutenberg (#16828), 172654 mots, 38 chapitres — epub:492Ko pdf:2204Ko txt:1022Ko html:1100Ko
+== 2/4 Dépôt des livres ==
++ Adam Bede : en
++ Jude the Obscure : en
++ Little Dorrit : en
++ Agnes Grey : en
++ Rob Roy : en, fr
+   publié : ebookclassics-files — Nouveaux livres : Adam Bede, Jude the Obscure, Little Dorrit, Agnes Grey, Rob Roy
+== 3/4 Site : catalogue, pages livres, plan du site ==
+   151 pages livres, 150 couvertures, 156 adresses dans le sitemap
+   5 livre(s) ajouté(s) au catalogue
+   publié : ebookclassics-site — Nouveaux livres au catalogue : Adam Bede, Jude the Obscure, Little Dorrit, Agnes Grey, Rob Roy
+TERMINE — 5 nouveau(x) livre(s) : Adam Bede, Jude the Obscure, Little Dorrit, Agnes Grey, Rob Roy
+== Livres audio du lot 2026-10-03-c ==
+   LibriVox : Adam Bede [en] — « Adam Bede (version 2) » (25 h 44)
+   LibriVox : Jude the Obscure [en] — « Jude the Obscure » (14 h 53)
+   LibriVox : Little Dorrit [en] — « Little Dorrit (Version 2) » (36 h 31)
+   LibriVox : Agnes Grey [en] — « Agnes Grey (Version 3) » (7 h 03)
+   LibriVox : Rob Roy [en] — « Rob Roy » (21 h 03)
+   pas d'enregistrement LibriVox pour Rob Roy [fr]
+   ! ~/r2.conf absent : livres audio non ajoutés
+FIN 2026-10-03 23:25
