@@ -335,6 +335,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/heart-of-darkness/heart-of-darkness.mp3"
   }
  },
+ "ivanhoe": {
+  "en": {
+   "bytes": 559312803,
+   "dl": true,
+   "duration": 69894,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/ivanhoe/ivanhoe.mp3"
+  }
+ },
  "jane-eyre": {
   "en": {
    "bytes": 593768532,
@@ -1118,6 +1127,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-wonderful-wizard-of-oz/the-wonderful-wizard-of-oz.mp3"
   }
  },
+ "through-the-looking-glass": {
+  "en": {
+   "bytes": 101177373,
+   "dl": true,
+   "duration": 12645,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/through-the-looking-glass/through-the-looking-glass.mp3"
+  }
+ },
  "treasure-island": {
   "en": {
    "bytes": 218074661,
@@ -1132,6 +1150,15 @@
    "duration": 40441,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/treasure-island/treasure-island-es.mp3"
+  }
+ },
+ "twelfth-night": {
+  "en": {
+   "bytes": 89718596,
+   "dl": true,
+   "duration": 11213,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/twelfth-night/twelfth-night.mp3"
   }
  },
  "twenty-thousand-leagues-under-the-sea": {
