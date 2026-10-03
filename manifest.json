@@ -194,6 +194,14 @@
     "txt"
    ]
   },
+  "ben-hur": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "beowulf": {
    "en": [
     "epub",
@@ -834,6 +842,14 @@
     "txt"
    ]
   },
+  "o-pioneers": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "oliver-twist": {
    "de": [
     "epub",
@@ -954,6 +970,14 @@
     "txt"
    ]
   },
+  "pollyanna": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "pride-and-prejudice": {
    "en": [
     "epub",
@@ -1056,6 +1080,14 @@
     "txt"
    ],
    "es": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "sister-carrie": {
+   "en": [
     "epub",
     "html",
     "pdf",
@@ -1968,6 +2000,14 @@
     "txt"
    ]
   },
+  "typee": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "ulysses": {
    "en": [
     "epub",
@@ -2067,5 +2107,5 @@
    ]
   }
  },
- "generated": "2026-10-03T23:40:44Z"
+ "generated": "2026-10-03T23:41:24Z"
 }
