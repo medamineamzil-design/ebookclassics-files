@@ -1,13 +1,16 @@
-# BookClassics — rattrapage audio : ajoute les livres audio LibriVox d'un lot déjà publié
-# (par exemple publié avant que les clés R2 soient en place). Lancement manuel uniquement.
+# BookClassics — livres audio LibriVox des lots déjà publiés.
+# Chaque nuit (à partir du 6 octobre 2026) : tous les lots de _inbox/faits/ ; les audios déjà en ligne sont sautés,
+# un audio raté (LibriVox indisponible) est retenté la nuit suivante. Lancement manuel possible pour un seul lot.
 name: Ajouter les audios d'un lot publié
 
 on:
+  schedule:
+    - cron: "17 1 * * *"
   workflow_dispatch:
     inputs:
       lot:
-        description: "Nom du lot déjà publié (fichier de _inbox/faits/), ex. lot-2026-10-03.json"
-        required: true
+        description: "Nom du lot déjà publié (fichier de _inbox/faits/), ex. lot-2026-10-03.json — vide = tous les lots"
+        required: false
 
 concurrency:
   group: publication
@@ -53,18 +56,27 @@ jobs:
             git -C $r config user.name "BookClassics (automatique)"
             git -C $r config user.email "medamine.amzil@gmail.com"
           done
-          case "$LOT" in lot-*.json) ;; *) echo "nom de lot invalide : $LOT"; exit 1;; esac
-          f=~/ebookclassics-files/_inbox/faits/"$LOT"
-          [ -e "$f" ] || { echo "lot introuvable dans _inbox/faits : $LOT"; exit 1; }
+          if [ "${{ github.event_name }}" = schedule ] && [[ "$(date -u +%F)" < 2026-10-06 ]]; then
+            echo "Livres audio automatiques à partir du 6 octobre 2026."; exit 0
+          fi
+          if [ -n "$LOT" ]; then
+            case "$LOT" in lot-*.json) ;; *) echo "nom de lot invalide : $LOT"; exit 1;; esac
+            [ -e ~/ebookclassics-files/_inbox/faits/"$LOT" ] || { echo "lot introuvable dans _inbox/faits : $LOT"; exit 1; }
+            LOTS=~/ebookclassics-files/_inbox/faits/"$LOT"
+          else
+            LOTS=$(ls ~/ebookclassics-files/_inbox/faits/lot-*.json 2>/dev/null | sort)
+            [ -n "$LOTS" ] || { echo "aucun lot publié"; exit 0; }
+          fi
           [ -n "$R2_ACCOUNT_ID" ] || { echo "secret R2_ACCOUNT_ID absent : audio impossible"; exit 1; }
           umask 077
           printf 'account_id=%s\naccess_key_id=%s\nsecret_access_key=%s\nbucket=%s\npublic_url=%s\n' \
             "$R2_ACCOUNT_ID" "$R2_ACCESS_KEY_ID" "$R2_SECRET_ACCESS_KEY" "$R2_BUCKET" "$R2_PUBLIC_URL" > ~/r2.conf
           mkdir -p ~/journal ~/bookclassics-auto/travail
-          set -o pipefail
           J=~/journal/audio-$(TZ=Europe/Paris date +%F-%H%M).txt
           echo "JOURNAL=$J" >> $GITHUB_ENV
-          python3 ~/ebookclassics-site/_auto/publier_lot.py "$f" --audio-seulement 2>&1 | tee "$J"
+          for f in $LOTS; do
+            python3 ~/ebookclassics-site/_auto/publier_lot.py "$f" --audio-seulement 2>&1 | tee -a "$J" || echo "!! audio en erreur : $(basename "$f")" | tee -a "$J"
+          done
 
       - name: Journal sur main
         if: always()
