@@ -63,8 +63,8 @@ jobs:
           mkdir -p ~/journal ~/bookclassics-auto/travail
           set -o pipefail
           J=~/journal/audio-$(TZ=Europe/Paris date +%F-%H%M).txt
-          python3 ~/ebookclassics-site/_auto/publier_lot.py "$f" --audio-seulement 2>&1 | tee "$J"
           echo "JOURNAL=$J" >> $GITHUB_ENV
+          python3 ~/ebookclassics-site/_auto/publier_lot.py "$f" --audio-seulement 2>&1 | tee "$J"
 
       - name: Journal sur main
         if: always()
