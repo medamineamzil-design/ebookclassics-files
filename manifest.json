@@ -320,6 +320,14 @@
     "txt"
    ]
   },
+  "evelina": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "extraordinary-popular-delusions-and-the-madness-of-crowds": {
    "en": [
     "epub",
@@ -621,6 +629,14 @@
    ]
   },
   "little-women": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "lorna-doone": {
    "en": [
     "epub",
     "html",
@@ -1312,6 +1328,14 @@
     "txt"
    ]
   },
+  "the-last-days-of-pompeii": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-last-of-the-mohicans": {
    "en": [
     "epub",
@@ -1648,6 +1672,14 @@
     "txt"
    ]
   },
+  "the-turn-of-the-screw": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-vicar-of-wakefield": {
    "en": [
     "epub",
@@ -1670,6 +1702,14 @@
     "txt"
    ],
    "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-warden": {
+   "en": [
     "epub",
     "html",
     "pdf",
@@ -1907,5 +1947,5 @@
    ]
   }
  },
- "generated": "2026-10-03T23:30:27Z"
+ "generated": "2026-10-03T23:31:03Z"
 }
