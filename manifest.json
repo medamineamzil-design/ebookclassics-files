@@ -1092,6 +1092,14 @@
     "txt"
    ]
   },
+  "the-castle-of-otranto": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-communist-manifesto": {
    "de": [
     "epub",
@@ -1368,6 +1376,14 @@
     "txt"
    ]
   },
+  "the-pickwick-papers": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-picture-of-dorian-gray": {
    "de": [
     "epub",
@@ -1548,6 +1564,14 @@
     "txt"
    ],
    "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-tenant-of-wildfell-hall": {
+   "en": [
     "epub",
     "html",
     "pdf",
@@ -1776,6 +1800,14 @@
     "txt"
    ]
   },
+  "villette": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "walden": {
    "en": [
     "epub",
@@ -1785,6 +1817,14 @@
    ]
   },
   "war-and-peace": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "waverley": {
    "en": [
     "epub",
     "html",
@@ -1821,5 +1861,5 @@
    ]
   }
  },
- "generated": "2026-10-03T23:24:51Z"
+ "generated": "2026-10-03T23:29:43Z"
 }
