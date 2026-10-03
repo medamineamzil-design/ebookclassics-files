@@ -428,6 +428,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/madame-bovary/madame-bovary-fr.mp3"
   }
  },
+ "mansfield-park": {
+  "en": {
+   "bytes": 462510328,
+   "dl": true,
+   "duration": 57788,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/mansfield-park/mansfield-park.mp3"
+  }
+ },
  "meditations": {
   "en": {
    "bytes": 201175959,
