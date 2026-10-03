@@ -858,6 +858,26 @@
     "txt"
    ]
   },
+  "manon-lescaut": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "es": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "mansfield-park": {
    "en": [
     "epub",
@@ -882,6 +902,26 @@
   },
   "metamorphoses": {
    "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "michael-strogoff": {
+   "de": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
     "epub",
     "html",
     "pdf",
@@ -1250,6 +1290,14 @@
     "txt"
    ]
   },
+  "taras-bulba": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "tartuffe": {
    "en": [
     "epub",
@@ -1362,6 +1410,20 @@
     "txt"
    ],
    "it": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-black-tulip": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
     "epub",
     "html",
     "pdf",
@@ -1676,6 +1738,20 @@
   },
   "the-mysteries-of-udolpho": {
    "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-mystery-of-the-yellow-room": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
     "epub",
     "html",
     "pdf",
@@ -2285,5 +2361,5 @@
    ]
   }
  },
- "generated": "2026-10-03T23:50:37Z"
+ "generated": "2026-10-03T23:51:36Z"
 }
