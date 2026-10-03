@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Government Inspector — Nikolai Gogol</title><style>
+:root{--paper:#fbf8f1;--ink:#1f1b16;--muted:#6f6352;--accent:#9a6b2f;--rule:#e4dccb}
+@media (prefers-color-scheme:dark){:root{--paper:#16140f;--ink:#ece6d8;--muted:#a79c88;--accent:#d8a95e;--rule:#2e2a22}}
+html{background:var(--paper)}
+body{font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Libertinus Serif",Georgia,serif;color:var(--ink);
+     background:var(--paper);line-height:1.65;font-size:1.12rem;max-width:36em;margin:0 auto;padding:2.5em 1.25em 5em}
+.titlepage{text-align:center;min-height:70vh;display:flex;flex-direction:column;justify-content:center;gap:.6em;
+           border-bottom:1px solid var(--rule);margin-bottom:2.5em;padding-bottom:2.5em}
+.titlepage img{max-width:260px;width:60%;margin:0 auto 1.5em;border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+h1{font-size:2.4em;line-height:1.15;font-weight:600;margin:0;letter-spacing:-.01em}
+.author{font-style:italic;font-size:1.25em;color:var(--accent);margin:0}
+.translator{font-size:.95em;color:var(--muted);margin:0}
+nav.toc{margin:0 0 3em}
+nav.toc h2{font-size:.85em;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:left;margin:0 0 .8em}
+nav.toc ol{list-style:none;padding:0;margin:0;columns:1}
+nav.toc li{margin:.25em 0}
+nav.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent}
+nav.toc a:hover{border-color:var(--accent)}
+h2.chapter{font-size:1.45em;font-weight:600;text-align:center;margin:3.5em 0 1.6em;line-height:1.3}
+h2.chapter::before{content:"";display:block;width:3em;height:2px;background:var(--accent);margin:0 auto 1.1em}
+p{margin:0;text-indent:1.5em;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+h2.chapter + p, .titlepage + p{text-indent:0}
+h2.chapter + p::first-letter{font-size:3.1em;float:left;line-height:.85;padding:.08em .08em 0 0;color:var(--accent);font-weight:600}
+.colophon{margin-top:5em;padding-top:1.5em;border-top:1px solid var(--rule);text-align:center;color:var(--muted);font-size:.85em;text-indent:0}
+h3.sub{font-size:1em;font-weight:600;font-variant:small-caps;letter-spacing:.04em;text-align:center;margin:2.2em 0 1em}
+h3.sub + p{text-indent:0}
+@media print{h2.chapter{break-before:page}}
+</style></head><body>
+<header class="titlepage">
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjI0MDAiIHZpZXdCb3g9IjAgMCAxNjAwIDI0MDAiPgo8cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSIyNDAwIiBmaWxsPSIjMmYzZTJjIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjMwMCIgZmlsbD0iI2Q0YTM3MyIgb3BhY2l0eT0iLjkyIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMmYzZTJjIiBzdHJva2Utd2lkdGg9IjEyIiBvcGFjaXR5PSIuNSIvPgo8Y2lyY2xlIGN4PSIxMTIwIiBjeT0iNTYwIiByPSIxMjAiIGZpbGw9IiMyZjNlMmMiIG9wYWNpdHk9Ii4xOCIvPgo8cmVjdCB4PSIxNjAiIHk9IjkzMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIxMCIgZmlsbD0iI2Q0YTM3MyIvPgo8dGV4dCB4PSIxNjAiIHk9IjEwOTgiIGZvbnQtc2l6ZT0iMTUwIiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmM2VmZTYiPlRoZSBHb3Zlcm5tZW50PC90ZXh0Pjx0ZXh0IHg9IjE2MCIgeT0iMTI2MiIgZm9udC1zaXplPSIxNTAiIGZvbnQtd2VpZ2h0PSI2MDAiIGZvbnQtZmFtaWx5PSJMaWJlcnRpbnVzIFNlcmlmLCBHZW9yZ2lhLCBzZXJpZiIgZmlsbD0iI2YzZWZlNiI+SW5zcGVjdG9yPC90ZXh0Pgo8dGV4dCB4PSIxNjAiIHk9IjE0OTgiIGZvbnQtc2l6ZT0iNjgiIGZvbnQtc3R5bGU9Iml0YWxpYyIgZm9udC1mYW1pbHk9IkxpYmVydGludXMgU2VyaWYsIEdlb3JnaWEsIHNlcmlmIiBmaWxsPSIjZDRhMzczIj5OaWtvbGFpIEdvZ29sPC90ZXh0Pgo8dGV4dCB4PSIxNjAiIHk9IjIyMzAiIGZvbnQtc2l6ZT0iNDQiIGxldHRlci1zcGFjaW5nPSIxNCIgZm9udC1mYW1pbHk9IkxpYmVydGludXMgU2VyaWYsIEdlb3JnaWEsIHNlcmlmIiBmaWxsPSIjZjNlZmU2IiBvcGFjaXR5PSIuNzUiPkJPT0tDTEFTU0lDUzwvdGV4dD4KPC9zdmc+" alt="">
+<h1>The Government Inspector</h1>
+<p class="author">Nikolai Gogol</p>
+<p class="translator">Translated by Thomas Seltzer</p>
+</header>
+<nav class="toc"><h2>Contents</h2><ol>
+<li><a href="#c1">Introduction</a></li>
+<li><a href="#c2">Scene I</a></li>
+<li><a href="#c3">Scene II</a></li>
+<li><a href="#c4">Scene III</a></li>
+<li><a href="#c5">Scene IV</a></li>
+<li><a href="#c6">Scene V</a></li>
+<li><a href="#c7">Scene VI</a></li>
+<li><a href="#c8">Act II</a></li>
+<li><a href="#c9">Scene I</a></li>
+<li><a href="#c10">Scene II</a></li>
+<li><a href="#c11">Scene VII</a></li>
+<li><a href="#c12">Scene VIII</a></li>
+<li><a href="#c13">Scene IX</a></li>
+<li><a href="#c14">Scene X</a></li>
+<li><a href="#c15">Act III — SCENE: The same as in Act I.</a></li>
+<li><a href="#c16">Scene I</a></li>
+<li><a href="#c17">Scene II</a></li>
+<li><a href="#c18">Scene III</a></li>
+<li><a href="#c19">Scene IV</a></li>
+<li><a href="#c20">Scene V</a></li>
+<li><a href="#c21">Scene VI</a></li>
+<li><a href="#c22">Scene VII</a></li>
+<li><a href="#c23">Scene VIII</a></li>
+<li><a href="#c24">Scene IX</a></li>
+<li><a href="#c25">Scene X</a></li>
+<li><a href="#c26">Scene XI</a></li>
+<li><a href="#c27">SCENE: Same as in Act III — Scene I</a></li>
+<li><a href="#c28">Scene II</a></li>
+<li><a href="#c29">Scene III</a></li>
+<li><a href="#c30">Scene IV</a></li>
+<li><a href="#c31">Scene V</a></li>
+<li><a href="#c32">Scene VI</a></li>
+<li><a href="#c33">Scene VII</a></li>
+<li><a href="#c34">Scene VIII</a></li>
+<li><a href="#c35">Scene IX</a></li>
+<li><a href="#c36">Scene X</a></li>
+<li><a href="#c37">Scene XI</a></li>
+<li><a href="#c38">Scene XII</a></li>
+<li><a href="#c39">Scene XIII</a></li>
+<li><a href="#c40">Scene XIV</a></li>
+<li><a href="#c41">Scene XV</a></li>
+<li><a href="#c42">Scene XVI</a></li>
+<li><a href="#c43">Act V — SCENE: Same as in Act IV.</a></li>
+<li><a href="#c44">Scene I</a></li>
+<li><a href="#c45">Scene II</a></li>
+<li><a href="#c46">Scene III</a></li>
+<li><a href="#c47">Scene IV</a></li>
+<li><a href="#c48">Scene V</a></li>
+<li><a href="#c49">Scene VI</a></li>
+<li><a href="#c50">Scene VII</a></li>
+<li><a href="#c51">Scene VIII</a></li>
+</ol></nav>
+<h2 class="chapter" id="c1">Introduction</h2>
+<p>The Inspector-General is a national institution. To place a purely literary valuation upon it and call it the greatest of Russian comedies would not convey the significance of its position either in Russian literature or in Russian life itself. There is no other single work in the modern literature of any language that carries with it the wealth of associations which the Inspector-General does to the educated Russian. The Germans have their Faust; but Faust is a tragedy with a cosmic philosophic theme. In England it takes nearly all that is implied in the comprehensive name of Shakespeare to give the same sense of bigness that a Russian gets from the mention of the Revizor.</p>
+<p>That is not to say that the Russian is so defective in the critical faculty as to balance the combined creative output of the greatest English dramatist against Gogol&#x27;s one comedy, or even to attribute to it the literary value of any of Shakespeare&#x27;s better plays. What the Russian&#x27;s appreciation indicates is the pregnant role that literature plays in the life of intellectual Russia. Here literature is not a luxury, not a diversion. It is bone of the bone, flesh of the flesh, not only of the intelligentsia, but also of a growing number of the common people, intimately woven into their everyday existence, part and parcel of their thoughts, their aspirations, their social, political and economic life. It expresses their collective wrongs and sorrows, their collective hopes and strivings. Not only does it serve to lead the movements of the masses, but it is an integral component element of those movements. In a word, Russian literature is completely bound up with the life of Russian society, and its vitality is but the measure of the spiritual vitality of that society.</p>
+<p>This unique character of Russian literature may be said to have had its beginning with the Inspector-General. Before Gogol most Russian writers, with few exceptions, were but weak imitators of foreign models. The drama fashioned itself chiefly upon French patterns. The Inspector-General and later Gogol&#x27;s novel, Dead Souls, established that tradition in Russian letters which was followed by all the great writers from Dostoyevsky down to Gorky.</p>
+<p>As with one blow, Gogol shattered the notions of the theatre-going public of his day of what a comedy should be. The ordinary idea of a play at that time in Russia seems to have been a little like our own tired business man&#x27;s. And the shock the Revizor gave those early nineteenth-century Russian audiences is not unlike the shocks we ourselves get when once in a while a theatrical manager is courageous enough to produce a bold modern European play. Only the intensity of the shock was much greater. For Gogol dared not only bid defiance to the accepted method; he dared to introduce a subject-matter that under the guise of humor audaciously attacked the very foundation of the state, namely, the officialdom of the Russian bureaucracy. That is why the Revizor marks such a revolution in the world of Russian letters. In form it was realistic, in substance it was vital. It showed up the rottenness and corruption of the instruments through which the Russian government functioned. It held up to ridicule, directly, all the officials of a typical Russian municipality, and, indirectly, pointed to the same system of graft and corruption among the very highest servants of the crown.</p>
+<p>What wonder that the Inspector-General became a sort of comedy-epic in the land of the Czars, the land where each petty town-governor is almost an absolute despot, regulating his persecutions and extortions according to the sage saying of the town-governor in the play, &quot;That&#x27;s the way God made the world, and the Voltairean free-thinkers can talk against it all they like, it won&#x27;t do any good.&quot; Every subordinate in the town administration, all the way down the line to the policemen, follow--not always so scrupulously--the law laid down by the same authority, &quot;Graft no higher than your rank.&quot; As in city and town, so in village and hamlet. It is the tragedy of Russian life, which has its roots in that more comprehensive tragedy, Russian despotism, the despotism that gives the sharp edge to official corruption. For there is no possible redress from it except in violent revolutions.</p>
+<p>That is the prime reason why the Inspector-General, a mere comedy, has such a hold on the Russian people and occupies so important a place in Russian literature. And that is why a Russian critic says, &quot;Russia possesses only one comedy, the Inspector-General.&quot;</p>
+<p>The second reason is the brilliancy and originality with which this national theme was executed. Gogol was above all else the artist. He was not a radical, nor even a liberal. He was strictly conservative. While hating the bureaucracy, yet he never found fault with the system itself or with the autocracy. Like most born artists, he was strongly individualistic in temperament, and his satire and ridicule were aimed not at causes, but at effects. Let but the individuals act morally, and the system, which Gogol never questioned, would work beautifully. This conception caused Gogol to concentrate his best efforts upon delineation of character. It was the characters that were to be revealed, their actions to be held up to scorn and ridicule, not the conditions which created the characters and made them act as they did. If any lesson at all was to be drawn from the play it was not a sociological lesson, but a moral one. The individual who sees himself mirrored in it may be moved to self-purgation; society has nothing to learn from it.</p>
+<p>Yet the play lives because of the social message it carries. The creation proved greater than the creator. The author of the Revizor was a poor critic of his own work. The Russian people rejected his estimate and put their own upon it. They knew their officials and they entertained no illusions concerning their regeneration so long as the system that bred them continued to live. Nevertheless, as a keen satire and a striking exposition of the workings of the hated system itself, they hailed the Revizor with delight. And as such it has remained graven in Russia&#x27;s conscience to this day.</p>
+<p>It must be said that &quot;Gogol himself grew with the writing of the Revizor.&quot; Always a careful craftsman, scarcely ever satisfied with the first version of a story or a play, continually changing and rewriting, he seems to have bestowed special attention on perfecting this comedy. The subject, like that of Dead Souls, was suggested to him by the poet Pushkin, and was based on a true incident. Pushkin at once recognized Gogol&#x27;s genius and looked upon the young author as the rising star of Russian literature. Their acquaintance soon ripened into intimate friendship, and Pushkin missed no opportunity to encourage and stimulate him in his writings and help him with all the power of his great influence. Gogol began to work on the play at the close of 1834, when he was twenty-five years old. It was first produced in St. Petersburg, in 1836. Despite the many elaborations it had undergone before Gogol permitted it to be put on the stage, he still did not feel satisfied, and he began to work on it again in 1838. It was not brought down to its present final form until 1842.</p>
+<p>Thus the Revizor occupied the mind of the author over a period of eight years, and resulted in a product which from the point of view of characterization and dramatic technique is almost flawless. Yet far more important is the fact that the play marked an epoch in Gogol&#x27;s own literary development. When he began on it, his ambitions did not rise above making it a comedy of pure fun, but, gradually, in the course of his working on it, the possibilities of the subject unfolded themselves and influenced his entire subsequent career. His art broadened and deepened and grew more serious. If Pushkin&#x27;s remark, that &quot;behind his laughter you feel the sad tears,&quot; is true of some of Gogol&#x27;s former productions, it is still truer of the Revizor and his later works.</p>
+<p>A new life had begun for him, he tells us himself, when he was no longer &quot;moved by childish notions, but by lofty ideas full of truth.&quot; &quot;It was Pushkin,&quot; he writes, &quot;who made me look at the thing seriously. I saw that in my writings I laughed vainly, for nothing, myself not knowing why. If I was to laugh, then I had better laugh over things that are really to be laughed at. In the Inspector-General I resolved to gather together all the bad in Russia I then knew into one heap, all the injustice that was practised in those places and in those human relations in which more than in anything justice is demanded of men, and to have one big laugh over it all. But that, as is well known, produced an outburst of excitement. Through my laughter, which never before came to me with such force, the reader sensed profound sorrow. I myself felt that my laughter was no longer the same as it had been, that in my writings I could no longer be the same as in the past, and that the need to divert myself with innocent, careless scenes had ended along with my young years.&quot;</p>
+<p>With the strict censorship that existed in the reign of Czar Nicholas I, it required powerful influence to obtain permission for the production of the comedy. This Gogol received through the instrumentality of his friend, Zhukovsky, who succeeded in gaining the Czar&#x27;s personal intercession. Nicholas himself was present at the first production in April, 1836, and laughed and applauded, and is said to have remarked, &quot;Everybody gets it, and I most of all.&quot;</p>
+<p>Naturally official Russia did not relish this innovation in dramatic art, and indignation ran high among them and their supporters. Bulgarin led the attack. Everything that is usually said against a new departure in literature or art was said against the Revizor. It was not original. It was improbable, impossible, coarse, vulgar; lacked plot. It turned on a stale anecdote that everybody knew. It was a rank farce. The characters were mere caricatures. &quot;What sort of a town was it that did not hold a single honest soul?&quot;</p>
+<p>Gogol&#x27;s sensitive nature shrank before the tempest that burst upon him, and he fled from his enemies all the way out of Russia. &quot;Do what you please about presenting the play in Moscow,&quot; he writes to Shchepkin four days after its first production in St. Petersburg. &quot;I am not going to bother about it. I am sick of the play and all the fussing over it. It produced a great noisy effect. All are against me... they abuse me and go to see it. No tickets can be obtained for the fourth performance.&quot;</p>
+<p>But the best literary talent of Russia, with Pushkin and Bielinsky, the greatest critic Russia has produced, at the head, ranged itself on his side.</p>
+<p>Nicolay Vasilyevich Gogol was born in Sorochintzy, government of Poltava, in 1809. His father was a Little Russian, or Ukrainian, landowner, who exhibited considerable talent as a playwright and actor. Gogol was educated at home until the age of ten, then went to Niezhin, where he entered the gymnasium in 1821. Here he edited a students&#x27; manuscript magazine called the Star, and later founded a students&#x27; theatre, for which he was both manager and actor. It achieved such success that it was patronized by the general public.</p>
+<p>In 1829 Gogol went to St. Petersburg, where he thought of becoming an actor, but he finally gave up the idea and took a position as a subordinate government clerk. His real literary career began in 1830 with the publication of a series of stories of Little Russian country life called Nights on a Farm near Dikanka. In 1831 he became acquainted with Pushkin and Zhukovsky, who introduced the &quot;shy Khokhol&quot; (nickname for &quot;Little Russian&quot;), as he was called, to the house of Madame O. A. Smirnov, the centre of &quot;an intimate circle of literary men and the flower of intellectual society.&quot; The same year he obtained a position as instructor of history at the Patriotic Institute, and in 1834 was made professor of history at the University of St. Petersburg. Though his lectures were marked by originality and vivid presentation, he seems on the whole not to have been successful as a professor, and he resigned in 1835.</p>
+<p>During this period he kept up his literary activity uninterruptedly, and in 1835 published his collection of stories, Mirgorod, containing How Ivan Ivanovich Quarreled with Ivan Nikiforovich, Taras Bulba, and others. This collection firmly established his position as a leading author. At the same time he was at work on several plays. The Vladimir Cross, which was to deal with the higher St. Petersburg functionaries in the same way as the Revizor with the lesser town officials, was never concluded, as Gogol realized the impossibility of placing them on the Russian stage. A few strong scenes were published. The comedy Marriage, finished in 1835, still finds a place in the Russian theatrical repertoire. The Gamblers, his only other complete comedy, belongs to a later period.</p>
+<p>After a stay abroad, chiefly in Italy, lasting with some interruptions for seven years (1836-1841), he returned to his native country, bringing with him the first part of his greatest work, Dead Souls. The novel, published the following year, produced a profound impression and made Gogol&#x27;s literary reputation supreme. Pushkin, who did not live to see its publication, on hearing the first chapters read, exclaimed, &quot;God, how sad our Russia is!&quot; And Alexander Hertzen characterized it as &quot;a wonderful book, a bitter, but not hopeless rebuke of contemporary Russia.&quot; Aksakov went so far as to call it the Russian national epic, and Gogol the Russian Homer.</p>
+<p>Unfortunately the novel remained incomplete. Gogol began to suffer from a nervous illness which induced extreme hypochondria. He became excessively religious, fell under the influence of pietists and a fanatical priest, sank more and more into mysticism, and went on a pilgrimage to Jerusalem to worship at the Holy Sepulchre. In this state of mind he came to consider all literature, including his own, as pernicious and sinful.</p>
+<p>After burning the manuscript of the second part of Dead Souls, he began to rewrite it, had it completed and ready for the press by 1851, but kept the copy and burned it again a few days before his death (1852), so that it is extant only in parts.</p>
+<h3 class="sub">Thomas Seltzer — Characters of the Play</h3>
+<p>ANTON ANTONOVICH SKVOZNIK-DMUKHANOVSKY, the Governor. ANNA ANDREYEVNA, his wife. MARYA ANTONOVNA, his daughter. LUKA LUKICH KHLOPOV, the Inspector of Schools. His Wife. AMMOS FIODOROVICH LIAPKIN-TIAPKIN, the Judge. ARTEMY FILIPPOVICH ZEMLIANIKA, the Superintendent of Charities. IVAN KUZMICH SHPEKIN, the Postmaster. PIOTR IVANOVICH DOBCHINSKY. } PIOTR IVANOVICH BOBCHINSKY. } Country Squires. IVAN ALEKSANDROVICH KHLESTAKOV, an official from St. Petersburg. OSIP, his servant. CHRISTIAN IVANOVICH HUeBNER, the district Doctor.</p>
+<p>FIODR ANDREYEVICH LULIUKOV. } ex-officials, }esteemed IVAN LAZAREVICH RASTAKOVSKY. }personages STEPAN IVANOVICH KOROBKIN. }of the town. STEPAN ILYICH UKHOVERTOV, the Police Captain. SVISTUNOV.   } PUGOVITZYN.  }Police Sergeants. DERZHIMORDA. } ABDULIN, a Merchant. FEVRONYA PETROVA POSHLIOPKINA, the Locksmith&#x27;s wife. The Widow of a non-commissioned Officer. MISHKA, the Governor&#x27;s Servant. Servant at the Inn. Guests, Merchants, Citizens, and Petitioners.</p>
+<h3 class="sub">Characters and Costumes — Directions For Actors</h3>
+<p>THE GOVERNOR.--A man grown old in the service, by no means a fool in his own way. Though he takes bribes, he carries himself with dignity. He is of a rather serious turn and even given somewhat to ratiocination. He speaks in a voice neither too loud nor too low and says neither too much nor too little. Every word of his counts. He has the typical hard stern features of the official who has worked his way up from the lowest rank in the arduous government service. Coarse in his inclinations, he passes rapidly from fear to joy, from servility to arrogance. He is dressed in uniform with frogs and wears Hessian boots with spurs. His hair with a sprinkling of gray is close-cropped.</p>
+<p>ANNA ANDREYEVNA.--A provincial coquette, still this side of middle age, educated on novels and albums and on fussing with household affairs and servants. She is highly inquisitive and has streaks of vanity. Sometimes she gets the upper hand over her husband, and he gives in simply because at the moment he cannot find the right thing to say. Her ascendency, however, is confined to mere trifles and takes the form of lecturing and twitting. She changes her dress four times in the course of the play.</p>
+<p>KHLESTAKOV.--A skinny young man of about twenty-three, rather stupid, being, as they say, &quot;without a czar in his head,&quot; one of those persons called an &quot;empty vessel&quot; in the government offices. He speaks and acts without stopping to think and utterly lacks the power of concentration. The words burst from his mouth unexpectedly. The more naivete and ingenousness the actor puts into the character the better will he sustain the role. Khlestakov is dressed in the latest fashion.</p>
+<p>OSIP.--A typical middle-aged servant, grave in his address, with eyes always a bit lowered. He is argumentative and loves to read sermons directed at his master. His voice is usually monotonous. To his master his tone is blunt and sharp, with even a touch of rudeness. He is the cleverer of the two and grasps a situation more quickly. But he does not like to talk. He is a silent, uncommunicative rascal. He wears a shabby gray or blue coat.</p>
+<p>BOBCHINSKY AND DOBCHINSKY.--Short little fellows, strikingly like each other. Both have small paunches, and talk rapidly, with emphatic gestures of their hands, features and bodies. Dobchinsky is slightly the taller and more subdued in manner. Bobchinsky is freer, easier and livelier. They are both exceedingly inquisitive.</p>
+<p>LIAPKIN-TIAPKIN.--He has read four or five books and so is a bit of a freethinker. He is always seeing a hidden meaning in things and therefore puts weight into every word he utters. The actor should preserve an expression of importance throughout. He speaks in a bass voice, with a prolonged rattle and wheeze in his throat, like an old-fashioned clock, which buzzes before it strikes.</p>
+<p>ZEMLIANIKA.--Very fat, slow and awkward; but for all that a sly, cunning scoundrel. He is very obliging and officious.</p>
+<p>SHPEKIN.--Guileless to the point of simplemindedness. The other characters require no special explanation, as their originals can be met almost anywhere.</p>
+<p>The actors should pay especial attention to the last scene. The last word uttered must strike all at once, suddenly, like an electric shock. The whole group should change its position at the same instant. The ladies must all burst into a simultaneous cry of astonishment, as if with one throat. The neglect of these directions may ruin the whole effect.</p>
+<h3 class="sub">The Inspector-general — Act I</h3>
+<p>A Room in the Governor&#x27;s House.</p>
+<h2 class="chapter" id="c2">Scene I</h2>
+<p>Anton Antonovich, the Governor, Artemy Filippovich, the Superintendent of Charities, Luka Lukich, the Inspector of Schools, Ammos Fiodorovich, the Judge, Stepan Ilyich, Christian Ivanovich, the Doctor, and two Police Sergeants.</p>
+<p>GOVERNOR. I have called you together, gentlemen, to tell you an unpleasant piece of news. An Inspector-General is coming.</p>
+<p>AMMOS FIOD. What, an Inspector-General?</p>
+<p>ARTEMY FIL. What, an Inspector-General?</p>
+<p>GOVERNOR. Yes, an Inspector from St. Petersburg, incognito. And with secret instructions, too.</p>
+<p>AMMOS. A pretty how-do-you-do!</p>
+<p>ARTEMY. As if we hadn&#x27;t enough trouble without an Inspector!</p>
+<p>LUKA LUKICH. Good Lord! With secret instructions!</p>
+<p>GOVERNOR. I had a sort of presentiment of it. Last night I kept dreaming of two rats--regular monsters! Upon my word, I never saw the likes of them--black and supernaturally big. They came in, sniffed, and then went away.--Here&#x27;s a letter I&#x27;ll read to you--from Andrey Ivanovich. You know him, Artemy Filippovich. Listen to what he writes: &quot;My dear friend, godfather and benefactor--[He mumbles, glancing rapidly down the page.]--and to let you know&quot;--Ah, that&#x27;s it--&quot;I hasten to let you know, among other things, that an official has arrived here with instructions to inspect the whole government, and your district especially. [Raises his finger significantly.] I have learned of his being here from highly trustworthy sources, though he pretends to be a private person. So, as you have your little peccadilloes, you know, like everybody else--you are a sensible man, and you don&#x27;t let the good things that come your way slip by--&quot; [Stopping] H&#x27;m, that&#x27;s his junk--&quot;I advise you to take precautions, as he may arrive any hour, if he hasn&#x27;t already, and is not staying somewhere incognito.--Yesterday--&quot; The rest are family matters. &quot;Sister Anna Krillovna is here visiting us with her husband. Ivan Krillovich has grown very fat and is always playing the fiddle&quot;--et cetera, et cetera. So there you have the situation we are confronted with, gentlemen.</p>
+<p>AMMOS. An extraordinary situation, most extraordinary! Something behind it, I am sure.</p>
+<p>LUKA. But why, Anton Antonovich? What for? Why should we have an Inspector?</p>
+<p>GOVERNOR. It&#x27;s fate, I suppose. [Sighs.] Till now, thank goodness, they have been nosing about in other towns. Now our turn has come.</p>
+<p>AMMOS. My opinion is, Anton Antonovich, that the cause is a deep one and rather political in character. It means this, that Russia--yes--that Russia intends to go to war, and the Government has secretly commissioned an official to find out if there is any treasonable activity anywhere.</p>
+<p>GOVERNOR. The wise man has hit on the very thing. Treason in this little country town! As if it were on the frontier! Why, you might gallop three years away from here and reach nowhere.</p>
+<p>AMMOS. No, you don&#x27;t catch on--you don&#x27;t--The Government is shrewd. It makes no difference that our town is so remote. The Government is on the look-out all the same--</p>
+<p>GOVERNOR [cutting him short]. On the look-out, or not on the look-out, anyhow, gentlemen, I have given you warning. I have made some arrangements for myself, and I advise you to do the same. You especially, Artemy Filippovich. This official, no doubt, will want first of all to inspect your department. So you had better see to it that everything is in order, that the night-caps are clean, and the patients don&#x27;t go about as they usually do, looking as grimy as blacksmiths.</p>
+<p>ARTEMY. Oh, that&#x27;s a small matter. We can get night-caps easily enough.</p>
+<p>GOVERNOR. And over each bed you might hang up a placard stating in Latin or some other language--that&#x27;s your end of it, Christian Ivanovich--the name of the disease, when the patient fell ill, the day of the week and the month. And I don&#x27;t like your invalids to be smoking such strong tobacco. It makes you sneeze when you come in. It would be better, too, if there weren&#x27;t so many of them. If there are a large number, it will instantly be ascribed to bad supervision or incompetent medical treatment.</p>
+<p>ARTEMY. Oh, as to treatment, Christian Ivanovich and I have worked out our own system. Our rule is: the nearer to nature the better. We use no expensive medicines. A man is a simple affair. If he dies, he&#x27;d die anyway. If he gets well, he&#x27;d get well anyway. Besides, the doctor would have a hard time making the patients understand him. He doesn&#x27;t know a word of Russian.</p>
+<p>The Doctor gives forth a sound intermediate between M and A.</p>
+<p>GOVERNOR. And you, Ammos Fiodorovich, had better look to the courthouse. The attendants have turned the entrance hall where the petitioners usually wait into a poultry yard, and the geese and goslings go poking their beaks between people&#x27;s legs. Of course, setting up housekeeping is commendable, and there is no reason why a porter shouldn&#x27;t do it. Only, you see, the courthouse is not exactly the place for it. I had meant to tell you so before, but somehow it escaped my memory.</p>
+<p>AMMOS. Well, I&#x27;ll have them all taken into the kitchen to-day. Will you come and dine with me?</p>
+<p>GOVERNOR. Then, too, it isn&#x27;t right to have the courtroom littered up with all sorts of rubbish--to have a hunting-crop lying right among the papers on your desk. You&#x27;re fond of sport, I know, still it&#x27;s better to have the crop removed for the present. When the Inspector is gone, you may put it back again. As for your assessor, he&#x27;s an educated man, to be sure, but he reeks of spirits, as if he had just emerged from a distillery. That&#x27;s not right either. I had meant to tell you so long ago, but something or other drove the thing out of my mind. If his odor is really a congenital defect, as he says, then there are ways of remedying it. You might advise him to eat onion or garlic, or something of the sort. Christian Ivanovich can help him out with some of his nostrums.</p>
+<p>The Doctor makes the same sound as before.</p>
+<p>AMMOS. No, there&#x27;s no cure for it. He says his nurse struck him when he was a child, and ever since he has smelt of vodka.</p>
+<p>GOVERNOR. Well, I just wanted to call your attention to it. As regards the internal administration and what Andrey Ivanovich in his letter calls &quot;little peccadilloes,&quot; I have nothing to say. Why, of course, there isn&#x27;t a man living who hasn&#x27;t some sins to answer for. That&#x27;s the way God made the world, and the Voltairean freethinkers can talk against it all they like, it won&#x27;t do any good.</p>
+<p>AMMOS. What do you mean by sins? Anton Antonovich? There are sins and sins. I tell everyone plainly that I take bribes. I make no bones about it. But what kind of bribes? White greyhound puppies. That&#x27;s quite a different matter.</p>
+<p>GOVERNOR. H&#x27;m. Bribes are bribes, whether puppies or anything else.</p>
+<p>AMMOS. Oh, no, Anton Antonovich. But if one has a fur overcoat worth five hundred rubles, and one&#x27;s wife a shawl--</p>
+<p>GOVERNOR. [testily]. And supposing greyhound puppies are the only bribes you take? You&#x27;re an atheist, you never go to church, while I at least am a firm believer and go to church every Sunday. You--oh, I know you. When you begin to talk about the Creation it makes my flesh creep.</p>
+<p>AMMOS. Well, it&#x27;s a conclusion I&#x27;ve reasoned out with my own brain.</p>
+<p>GOVERNOR. Too much brain is sometimes worse than none at all.--However, I merely mentioned the courthouse. I dare say nobody will ever look at it. It&#x27;s an enviable place. God Almighty Himself seems to watch over it. But you, Luka Lukich, as inspector of schools, ought to have an eye on the teachers. They are very learned gentlemen, no doubt, with a college education, but they have funny habits--inseparable from the profession, I know. One of them, for instance, the man with the fat face--I forget his name--is sure, the moment he takes his chair, to screw up his face like this. [Imitates him.] And then he has a trick of sticking his hand under his necktie and smoothing down his beard. It doesn&#x27;t matter, of course, if he makes a face at the pupils; perhaps it&#x27;s even necessary. I&#x27;m no judge of that. But you yourself will admit that if he does it to a visitor, it may turn out very badly. The Inspector, or anyone else, might take it as meant for himself, and then the deuce knows what might come of it.</p>
+<p>LUKA. But what can I do? I have told him about it time and again. Only the other day when the marshal of the nobility came into the class-room, he made such a face at him as I had never in my life seen before. I dare say it was with the best intentions; But I get reprimanded for permitting radical ideas to be instilled in the minds of the young.</p>
+<p>GOVERNOR. And then I must call your attention to the history teacher. He has a lot of learning in his head and a store of facts. That&#x27;s evident. But he lectures with such ardor that he quite forgets himself. Once I listened to him. As long as he was talking about the Assyrians and Babylonians, it was not so bad. But when he reached Alexander of Macedon, I can&#x27;t describe what came over him. Upon my word, I thought a fire had broken out. He jumped down from the platform, picked up a chair and dashed it to the floor. Alexander of Macedon was a hero, it is true. But that&#x27;s no reason for breaking chairs. The state must bear the cost.</p>
+<p>LUKA. Yes, he is a hot one. I have spoken to him about it several times. He only says: &quot;As you please, but in the cause of learning I will even sacrifice my life.&quot;</p>
+<p>GOVERNOR. Yes, it&#x27;s a mysterious law of fate. Your clever man is either a drunkard, or he makes such grimaces that you feel like running away.</p>
+<p>LUKA. Ah, Heaven save us from being in the educational department! One&#x27;s afraid of everything. Everybody meddles and wants to show that he is as clever as you.</p>
+<p>GOVERNOR. Oh, that&#x27;s nothing. But this cursed incognito! All of a sudden he&#x27;ll look in: &quot;Ah, so you&#x27;re here, my dear fellows! And who&#x27;s the judge here?&quot; says he. &quot;Liapkin-Tiapkin.&quot; &quot;Bring Liapkin-Tiapkin here.--And who is the Superintendent of Charities?&quot; &quot;Zemlianika.&quot;--&quot;Bring Zemlianika here!&quot;--That&#x27;s what&#x27;s bad.</p>
+<h2 class="chapter" id="c3">Scene II</h2>
+<p>Enter Ivan Kuzmich, the Postmaster.</p>
+<p>POSTMASTER. Tell me, gentlemen, who&#x27;s coming? What chinovnik?</p>
+<p>GOVERNOR. What, haven&#x27;t you heard?</p>
+<p>POSTMASTER. Bobchinsky told me. He was at the postoffice just now.</p>
+<p>GOVERNOR. Well, what do you think of it?</p>
+<p>POSTMASTER. What do I think of it? Why, there&#x27;ll be a war with the Turks.</p>
+<p>AMMOS. Exactly. Just what I thought.</p>
+<p>GOVERNOR [sarcastically]. Yes, you&#x27;ve both hit in the air precisely.</p>
+<p>POSTMASTER. It&#x27;s war with the Turks for sure, all fomented by the French.</p>
+<p>GOVERNOR. Nonsense! War with the Turks indeed. It&#x27;s we who are going to get it, not the Turks. You may count on that. Here&#x27;s a letter to prove it.</p>
+<p>POSTMASTER. In that case, then, we won&#x27;t go to war with the Turks.</p>
+<p>GOVERNOR. Well, how do you feel about it, Ivan Kuzmich?</p>
+<p>POSTMASTER. How do I feel? How do YOU feel about it, Anton Antonovich?</p>
+<p>GOVERNOR. I? Well, I&#x27;m not afraid, but I just feel a little--you know--The merchants and townspeople bother me. I seem to be unpopular with them. But the Lord knows if I&#x27;ve taken from some I&#x27;ve done it without a trace of ill-feeling. I even suspect--[Takes him by the arm and walks aside with him.]--I even suspect that I may have been denounced. Or why would they send an Inspector to us? Look here, Ivan Kuzmich, don&#x27;t you think you could--ahem!--just open a little every letter that passes through your office and read it--for the common benefit of us all, you know--to see if it contains any kind of information against me, or is only ordinary correspondence. If it is all right, you can seal it up again, or simply deliver the letter opened.</p>
+<p>POSTMASTER. Oh, I know. You needn&#x27;t teach me that. I do it not so much as a precaution as out of curiosity. I just itch to know what&#x27;s doing in the world. And it&#x27;s very interesting reading, I tell you. Some letters are fascinating--parts of them written grand--more edifying than the Moscow Gazette.</p>
+<p>GOVERNOR. Tell me, then, have you read anything about any official from St. Petersburg?</p>
+<p>POSTMASTER. No, nothing about a St. Petersburg official, but plenty about Kostroma and Saratov ones. A pity you don&#x27;t read the letters. There are some very fine passages in them. For instance, not long ago a lieutenant writes to a friend describing a ball very wittily.--Splendid! &quot;Dear friend,&quot; he says, &quot;I live in the regions of the Empyrean, lots of girls, bands playing, flags flying.&quot; He&#x27;s put a lot of feeling into his description, a whole lot. I&#x27;ve kept the letter on purpose. Would you like to read it?</p>
+<p>GOVERNOR. No, this is no time for such things. But please, Ivan Kuzmich, do me the favor, if ever you chance upon a complaint or denunciation, don&#x27;t hesitate a moment, hold it back.</p>
+<p>POSTMASTER. I will, with the greatest pleasure.</p>
+<p>AMMOS. You had better be careful. You may get yourself into trouble.</p>
+<p>POSTMASTER. Goodness me!</p>
+<p>GOVERNOR. Never mind, never mind. Of course, it would be different if you published it broadcast. But it&#x27;s a private affair, just between us.</p>
+<p>AMMOS. Yes, it&#x27;s a bad business--I really came here to make you a present of a puppy, sister to the dog you know about. I suppose you have heard that Cheptovich and Varkhovinsky have started a suit. So now I live in clover. I hunt hares first on the one&#x27;s estate, then on the other&#x27;s.</p>
+<p>GOVERNOR. I don&#x27;t care about your hares now, my good friend. That cursed incognito is on my brain. Any moment the door may open and in walk--</p>
+<h2 class="chapter" id="c4">Scene III</h2>
+<p>Enter Bobchinsky and Dobchinsky, out of breath.</p>
+<p>BOBCHINSKY. What an extraordinary occurrence!</p>
+<p>DOBCHINSKY. An unexpected piece of news!</p>
+<p>ALL. What is it? What is it?</p>
+<p>DOBCHINSKY. Something quite unforeseen. We were about to enter the inn--</p>
+<p>BOBCHINSKY [interrupting]. Yes, Piotr Ivanovich and I were entering the inn--</p>
+<p>DOBCHINSKY [interrupting]. Please, Piotr Ivanovich, let me tell.</p>
+<p>BOBCHINSKY. No, please, let me--let me. You can&#x27;t. You haven&#x27;t got the style for it.</p>
+<p>DOBCHINSKY. Oh, but you&#x27;ll get mixed up and won&#x27;t remember everything.</p>
+<p>BOBCHINSKY. Yes, I will, upon my word, I will. PLEASE don&#x27;t interrupt! Do let me tell the news--don&#x27;t interrupt! Pray, oblige me, gentlemen, and tell Dobchinsky not to interrupt.</p>
+<p>GOVERNOR. Speak, for Heaven&#x27;s sake! What is it? My heart is in my mouth! Sit down, gentlemen, take seats. Piotr Ivanovich, here&#x27;s a chair for you. [All seat themselves around Bobchinsky and Dobchinsky.] Well, now, what is it? What is it?</p>
+<p>BOBCHINSKY. Permit me, permit me. I&#x27;ll tell it all just as it happened. As soon as I had the pleasure of taking leave of you after you were good enough to be bothered with the letter which you had received, sir, I ran out--now, please don&#x27;t keep interrupting, Dobchinsky. I know all about it, all, I tell you.--So I ran out to see Korobkin. But not finding Korobkin at home, I went off to Rastakovsky, and not seeing him, I went to Ivan Kuzmich to tell him of the news you&#x27;d got. Going on from there I met Dobchinsky--</p>
+<p>DOBCHINSKY [interjecting]. At the stall where they sell pies--</p>
+<p>BOBCHINSKY. At the stall where they sell pies. Well, I met Dobchinsky and I said to him: &quot;Have you heard the news that came to Anton Antonovich in a letter which is absolutely reliable?&quot; But Piotr Ivanovich had already heard of it from your housekeeper, Avdotya, who, I don&#x27;t know why, had been sent to Filipp Antonovich Pachechuyev--</p>
+<p>DOBCHINSKY [interrupting]. To get a little keg for French brandy.</p>
+<p>BOBCHINSKY. Yes, to get a little keg for French brandy. So then I went with Dobchinsky to Pachechuyev&#x27;s.--Will you stop, Piotr Ivanovich? Please don&#x27;t interrupt.--So off we went to Pachechuyev&#x27;s, and on the way Dobchinsky said: &quot;Let&#x27;s go to the inn,&quot; he said. &quot;I haven&#x27;t eaten a thing since morning. My stomach is growling.&quot; Yes, sir, his stomach was growling. &quot;They&#x27;ve just got in a supply of fresh salmon at the inn,&quot; he said. &quot;Let&#x27;s take a bite.&quot; We had hardly entered the inn when we saw a young man--</p>
+<p>DOBCHINSKY [Interrupting]. Of rather good appearance and dressed in ordinary citizen&#x27;s clothes.</p>
+<p>BOBCHINSKY. Yes, of rather good appearance and dressed in citizen&#x27;s clothes--walking up and down the room. There was something out of the usual about his face, you know, something deep--and a manner about him--and here [raises his hand to his forehead and turns it around several times] full, full of everything. I had a sort of feeling, and I said to Dobchinsky, &quot;Something&#x27;s up. This is no ordinary matter.&quot; Yes, and Dobchinsky beckoned to the landlord, Vlas, the innkeeper, you know,--three weeks ago his wife presented him with a baby--a bouncer--he&#x27;ll grow up just like his father and keep a tavern.--Well, we beckoned to Vlas, and Dobchinsky asked him on the quiet, &quot;Who,&quot; he asked, &quot;is that young man?&quot; &quot;That young man,&quot; Vlas replied, &quot;that young man&quot;--Oh, don&#x27;t interrupt, Piotr Ivanovich, please don&#x27;t interrupt. You can&#x27;t tell the story. Upon my word, you can&#x27;t. You lisp and one tooth in your mouth makes you whistle. I know what I&#x27;m saying. &quot;That young man,&quot; he said, &quot;is an official.&quot;--Yes, sir.--&quot;On his way from St. Petersburg. And his name,&quot; he said, &quot;is Ivan Aleksandrovich Khlestakov, and he&#x27;s going,&quot; he said &quot;to the government of Saratov,&quot; he said. &quot;And he acts so queerly. It&#x27;s the second week he&#x27;s been here and he&#x27;s never left the house; and he won&#x27;t pay a penny, takes everything on account.&quot; When Vlas told me that, a light dawned on me from above, and I said to Piotr Ivanovich, &quot;Hey!&quot;--</p>
+<p>DOBCHINSKY. No, Piotr Ivanovich, I said &quot;HEY!&quot;</p>
+<p>BOBCHINSKY. Well first YOU said it, then I did. &quot;Hey!&quot; said both of us, &quot;And why does he stick here if he&#x27;s going to Saratov?&quot;--Yes, sir, that&#x27;s he, the official.</p>
+<p>GOVERNOR. Who? What official?</p>
+<p>BOBCHINSKY. Why, the official who you were notified was coming, the Inspector.</p>
+<p>GOVERNOR [terrified]. Great God! What&#x27;s that you&#x27;re saying. It can&#x27;t be he.</p>
+<p>DOBCHINSKY. It is, though. Why, he doesn&#x27;t pay his bills and he doesn&#x27;t leave. Who else can it be? And his postchaise is ordered for Saratov.</p>
+<p>BOBCHINSKY. It&#x27;s he, it&#x27;s he, it&#x27;s he--why, he&#x27;s so alert, he scrutinized everything. He saw that Dobchinsky and I were eating salmon--chiefly on account of Dobchinsky&#x27;s stomach--and he looked at our plates so hard that I was frightened to death.</p>
+<p>GOVERNOR. The Lord have mercy on us sinners! In what room is he staying?</p>
+<p>DOBCHINSKY. Room number 5 near the stairway.</p>
+<p>BOBCHINSKY. In the same room that the officers quarreled in when they passed through here last year.</p>
+<p>GOVERNOR. How long has he been here?</p>
+<p>DOBCHINSKY. Two weeks. He came on St. Vasili&#x27;s day.</p>
+<p>GOVERNOR. Two weeks! [Aside.] Holy Fathers and saints preserve me! In those two weeks I have flogged the wife of a non-commissioned officer, the prisoners were not given their rations, the streets are dirty as a pothouse--a scandal, a disgrace! [Clutches his head with both hands.]</p>
+<p>ARTEMY. What do you think, Anton Antonovich, hadn&#x27;t we better go in state to the inn?</p>
+<p>AMMOS. No, no. First send the chief magistrate, then the clergy, then the merchants. That&#x27;s what it says in the book. The Acts of John the Freemason.</p>
+<p>GOVERNOR. No, no, leave it to me. I have been in difficult situations before now. They have passed off all right, and I was even rewarded with thanks. Maybe the Lord will help us out this time, too. [Turns to Bobchinsky.] You say he&#x27;s a young man?</p>
+<p>BOBCHINSKY. Yes, about twenty-three or four at the most.</p>
+<p>GOVERNOR. So much the better. It&#x27;s easier to pump things out of a young man. It&#x27;s tough if you&#x27;ve got a hardened old devil to deal with. But a young man is all on the surface. You, gentlemen, had better see to your end of things while I go unofficially, by myself, or with Dobchinsky here, as though for a walk, to see that the visitors that come to town are properly accommodated. Here, Svistunov. [To one of the Sergeants.]</p>
+<p>SVISTUNOV. Sir.</p>
+<p>GOVERNOR. Go instantly to the Police Captain--or, no, I&#x27;ll want you. Tell somebody to send him here as quickly as possibly and then come back.</p>
+<p>Svistunov hurries off.</p>
+<p>ARTEMY. Let&#x27;s go, let&#x27;s go, Ammos Fiodorovich. We may really get into trouble.</p>
+<p>AMMOS. What have you got to be afraid of? Put clean nightcaps on the patients and the thing&#x27;s done.</p>
+<p>ARTEMY. Nightcaps! Nonsense! The patients were ordered to have oatmeal soup. Instead of that there&#x27;s such a smell of cabbage in all the corridors that you&#x27;ve got to hold your nose.</p>
+<p>AMMOS. Well, my mind&#x27;s at ease. Who&#x27;s going to visit the court? Supposing he does look at the papers, he&#x27;ll wish he had left them alone. I have been on the bench fifteen years, and when I take a look into a report, I despair. King Solomon in all his wisdom could not tell what is true and what is not true in it.</p>
+<p>The Judge, the Superintendent of Charities, the School Inspector, and Postmaster go out and bump up against the Sergeant in the doorway as the latter returns.</p>
+<h2 class="chapter" id="c5">Scene IV</h2>
+<p>The Governor, Bobchinsky, Dobchinsky, and Sergeant Svistunov.</p>
+<p>GOVERNOR. Well, is the cab ready?</p>
+<p>SVISTUNOV. Yes, sir.</p>
+<p>GOVERNOR. Go out on the street--or, no, stop--go and bring--why, where are the others? Why are you alone? Didn&#x27;t I give orders for Prokhorov to be here? Where is Prokhorov?</p>
+<p>SVISTUNOV. Prokhorov is in somebody&#x27;s house and can&#x27;t go on duty just now.</p>
+<p>GOVERNOR. Why so?</p>
+<p>SVISTUNOV. Well, they brought him back this morning dead drunk. They poured two buckets of water over him, but he hasn&#x27;t sobered up yet.</p>
+<p>GOVERNOR [clutching his head with both hands]. For Heaven&#x27;s sake! Go out on duty quick--or, no, run up to my room, do you hear? And fetch my sword and my new hat. Now, Piotr Ivanovich, [to Dobchinsky] come.</p>
+<p>BOBCHINSKY. And me--me, too. Let me come, too, Anton Antonovich.</p>
+<p>GOVERNOR. No, no, Bobchinsky, it won&#x27;t do. Besides there is not enough room in the cab.</p>
+<p>BOBCHINSKY. Oh, that doesn&#x27;t matter. I&#x27;ll follow the cab on foot--on foot. I just want to peep through a crack--so--to see that manner of his--how he acts.</p>
+<p>GOVERNOR [turning to the Sergeant and taking his sword]. Be off and get the policemen together. Let them each take a--there, see how scratched my sword is. It&#x27;s that dog of a merchant, Abdulin. He sees the Governor&#x27;s sword is old and doesn&#x27;t provide a new one. Oh, the sharpers! I&#x27;ll bet they&#x27;ve got their petitions against me ready in their coat-tail pockets.--Let each take a street in his hand--I don&#x27;t mean a street--a broom--and sweep the street leading to the inn, and sweep it clean, and--do you hear? And see here, I know you, I know your tricks. You insinuate yourselves into the inn and walk off with silver spoons in your boots. Just you look out. I keep my ears pricked. What have you been up to with the merchant, Chorniayev, eh? He gave you two yards of cloth for your uniform and you stole the whole piece. Take care. You&#x27;re only a Sergeant. Don&#x27;t graft higher than your rank. Off with you.</p>
+<h2 class="chapter" id="c6">Scene V</h2>
+<p>Enter the Police Captain.</p>
+<p>GOVERNOR. Hello, Stepan Ilyich, where the dickens have you been keeping yourself? What do you mean by acting that way?</p>
+<p>CAPTAIN. Why, I was just outside the gate.</p>
+<p>GOVERNOR. Well, listen, Stepan Ilyich. An official has come from St. Petersburg. What have you done about it?</p>
+<p>CAPTAIN. What you told me to. I sent Sergeant Pugovichyn with policemen to clean the street.</p>
+<p>GOVERNOR. Where is Derzhimorda?</p>
+<p>CAPTAIN. He has gone off on the fire engine.</p>
+<p>GOVERNOR. And Prokhorov is drunk?</p>
+<p>CAPTAIN. Yes.</p>
+<p>GOVERNOR. How could you allow him to get drunk?</p>
+<p>CAPTAIN. God knows. Yesterday there was a fight outside the town. He went to restore order and was brought back drunk.</p>
+<p>GOVERNOR. Well, then, this is what you are to do.--Sergeant Pugovichyn--he is tall. So he is to stand on duty on the bridge for appearance&#x27; sake. Then the old fence near the bootmaker&#x27;s must be pulled down at once and a post stuck up with a whisp of straw so as to look like grading. The more debris there is the more it will show the governor&#x27;s activity.--Good God, though, I forgot that about forty cart-loads of rubbish have been dumped against that fence. What a vile, filthy town this is! A monument, or even only a fence, is erected, and instantly they bring a lot of dirt together, from the devil knows where, and dump it there. [Heaves a sigh.] And if the functionary that has come here asks any of the officials whether they are satisfied, they are to say, &quot;Perfectly satisfied, your Honor&quot;; and if anybody is not satisfied, I&#x27;ll give him something to be dissatisfied about afterwards.--Ah, I&#x27;m a sinner, a terrible sinner. [Takes the hat-box, instead of his hat.] Heaven only grant that I may soon get this matter over and done with; then I&#x27;ll donate a candle such as has never been offered before. I&#x27;ll levy a hundred pounds of wax from every damned merchant. Oh my, oh my! Come, let&#x27;s go, Piotr Ivanovich. [Tries to put the hat-box on his head instead of his hat.]</p>
+<p>CAPTAIN. Anton Antonovich, that&#x27;s the hat-box, not your hat.</p>
+<p>GOVERNOR [throwing the box down]. If it&#x27;s the hat-box, it&#x27;s the hat-box, the deuce take it!--And if he asks why the church at the hospital for which the money was appropriated five years ago has not been built, don&#x27;t let them forget to say that the building was begun but was destroyed by fire. I sent in a report about it, you know. Some blamed fool might forget and let out that the building was never even begun. And tell Derzhimorda not to be so free with his fists. Guilty or innocent, he makes them all see stars in the cause of public order.--Come on, come on, Dobchinsky. [Goes out and returns.] And don&#x27;t let the soldiers appear on the streets with nothing on. That rotten garrison wear their coats directly over their undershirts.</p>
+<p>All go out.</p>
+<h2 class="chapter" id="c7">Scene VI</h2>
+<p>Anna Andreyevna and Marya Antonovna rush in on the stage.</p>
+<p>ANNA. Where are they? Where are they? Oh, my God! [opening the door.] Husband! Antosha! Anton! [hurriedly, to Marya.] It&#x27;s all your fault. Dawdling! Dawdling!--&quot;I want a pin--I want a scarf.&quot; [Runs to the window and calls.] Anton, where are you going? Where are you going? What! He has come? The Inspector? He has a moustache? What kind of a moustache?</p>
+<p>GOVERNOR [from without]. Wait, dear. Later.</p>
+<p>ANNA. Wait? I don&#x27;t want to wait. The idea, wait! I only want one word. Is he a colonel or what? Eh? [Disgusted.] There, he&#x27;s gone! You&#x27;ll pay for it! It&#x27;s all your fault--you, with your &quot;Mamma, dear, wait a moment, I&#x27;ll just pin my scarf. I&#x27;ll come directly.&quot; Yes, directly! Now we have missed the news. It&#x27;s all your confounded coquettishness. You heard the Postmaster was here and so you must prink and prim yourself in front of the mirror--look on this side and that side and all around. You imagine he&#x27;s smitten with you. But I can tell you he makes a face at you the moment you turn your back.</p>
+<p>MARYA. It can&#x27;t be helped, mamma. We&#x27;ll know everything in a couple of hours anyway.</p>
+<p>ANNA. In a couple of hours! Thank you! A nice answer. Why don&#x27;t you say, in a month. We&#x27;ll know still more in a month. [She leans out of the window.] Here, Avdotya! I say! Have you heard whether anybody has come, Avdotya?--No, you goose, you didn&#x27;t--He waved his hands? Well, what of it? Let him wave his hands. But you should have asked him anyhow. You couldn&#x27;t find out, of course, with your head full of nonsense and lovers. Eh, what? They left in a hurry? Well, you should have run after the carriage. Off with you, off with you at once, do you hear? Run and ask everybody where they are. Be sure and find out who the newcomer is and what he is like, do you hear? Peep through a crack and find everything out--what sort of eyes he has, whether they are black or blue, and be back here instantly, this minute, do you hear? Quick, quick, quick!</p>
+<p>She keeps on calling and they both stand at the window until the curtain drops.</p>
+<h2 class="chapter" id="c8">Act II</h2>
+<p>A small room in the inn, bed, table, travelling bag, empty bottle, boots, clothes brush, etc.</p>
+<h2 class="chapter" id="c9">Scene I</h2>
+<p>OSIP [lying on his master&#x27;s bed]. The devil take it! I&#x27;m so hungry. There&#x27;s a racket in my belly, as if a whole regiment were blowing trumpets. We&#x27;ll never reach home. I&#x27;d like to know what we are going to do. Two months already since we left St. Pete. He&#x27;s gone through all his cash, the precious buck, so now he sticks here with his tail between his legs and takes it easy. We&#x27;d have had enough and more than enough to pay for the fare, but no he must exhibit himself in every town. [Imitates him.] &quot;Osip, get me the best room to be had and order the best dinner they serve. I can&#x27;t stand bad food. I must have the best.&quot; It would be all right for a somebody, but for a common copying clerk! Goes and gets acquainted with the other travellers, plays cards, and plays himself out of his last penny. Oh, I&#x27;m sick of this life. It&#x27;s better in our village, really. There isn&#x27;t so much going on, but then there is less to bother about. You get yourself a wife and lie on the stove all the time and eat pie. Of course, if you wanted to tell the truth, there&#x27;s no denying it that there&#x27;s nothing like living in St. Pete. All you want is money. And then you can live smart and classy--theeadres, dogs to dance for you, everything, and everybody talks so genteel, pretty near like in high society. If you go to the Schukin bazaar, the shopkeepers cry, &quot;Gentlemen,&quot; at you. You sit with the officials in the ferry boat. If you want company, you go into a shop. A sport there will tell you about life in the barracks and explain the meaning of every star in the sky, so that you see them all as if you held them in your hand. Then an old officer&#x27;s wife will gossip, or a pretty chambermaid will dart a look at you--ta, ta, ta! [Smirks and wags his head.] And what deucedly civil manners they have, too. You never hear no impolite language. They always say &quot;Mister&quot; to you. If you are tired of walking, why you take a cab and sit in it like a lord. And if you don&#x27;t feel like paying, then you don&#x27;t. Every house has an open-work gate and you can slip through and the devil himself won&#x27;t catch you. There&#x27;s one bad thing, though; sometimes you get first class eats and sometimes you&#x27;re so starved you nearly drop--like now. It&#x27;s all his fault. What can you do with him? His dad sends him money to keep him going, but the devil a lot it does. He goes off on a spree, rides in cabs, gets me to buy a theeadre ticket for him every day, and in a week look at him--sends me to the old clo&#x27;es man to sell his new dress coat. Sometimes he gets rid of everything down to his last shirt and is left with nothing except his coat and overcoat. Upon my word, it&#x27;s the truth. And such fine cloth, too. English, you know. One dress coat costs him a hundred and fifty rubles and he sells it to the old clo&#x27;es man for twenty. No use saying nothing about his pants. They go for a song. And why? Because he doesn&#x27;t tend to his business. Instead of sticking to his job, he gads about on the Prospect and plays cards. Ah, if the old gentleman only knew it! He wouldn&#x27;t care that you are an official. He&#x27;d lift up your little shirtie and would lay it on so that you&#x27;d go about rubbing yourself for a week. If you have a job, stick to it. Here&#x27;s the innkeeper says he won&#x27;t let you have anything to eat unless you pay your back bills. Well, and suppose we don&#x27;t pay. [Sighing.] Oh, good God! If only I could get cabbage soup. I think I could eat up the whole world now. There&#x27;s a knock at the door. I suppose it&#x27;s him. [Rises from the bed hastily.]</p>
+<h2 class="chapter" id="c10">Scene II</h2>
+<p>Osip and Khlestakov.</p>
+<p>KHLESTAKOV. Here! [Hands him his cap and cane.] What, been warming the bed again!</p>
+<p>OSIP. Why should I have been warming the bed? Have I never seen a bed before?</p>
+<p>KHLESTAKOV. You&#x27;re lying. The bed&#x27;s all tumbled up.</p>
+<p>OSIP. What do I want a bed for? Don&#x27;t I know what a bed is like? I have legs and can use them to stand on. I don&#x27;t need your bed.</p>
+<p>KHLESTAKOV [walking up and down the room]. Go see if there isn&#x27;t some tobacco in the pouch.</p>
+<p>OSIP. What tobacco? You emptied it out four days ago.</p>
+<p>KHLESTAKOV [pacing the room and twisting his lips. Finally he says in a loud resolute voice]. Listen--a--Osip.</p>
+<p>OSIP. Yes, sir?</p>
+<p>KHLESTAKOV [In a voice just as loud, but not quite so resolute]. Go down there.</p>
+<p>OSIP. Where?</p>
+<p>KHLESTAKOV [in a voice not at all resolute, nor loud, but almost in entreaty]. Down to the restaurant--tell them--to send up dinner.</p>
+<p>OSIP. No, I won&#x27;t.</p>
+<p>KHLESTAKOV. How dare you, you fool!</p>
+<p>OSIP. It won&#x27;t do any good, anyhow. The landlord said he won&#x27;t let you have anything more to eat.</p>
+<p>KHLESTAKOV. How dare he! What nonsense is this?</p>
+<p>OSIP. He&#x27;ll go to the Governor, too, he says. It&#x27;s two weeks now since you&#x27;ve paid him, he says. You and your master are cheats, he says, and your master is a blackleg besides, he says. We know the breed. We&#x27;ve seen swindlers like him before.</p>
+<p>KHLESTAKOV. And you&#x27;re delighted, I suppose, to repeat all this to me, you donkey.</p>
+<p>OSIP. &quot;Every Tom, Dick and Harry comes and lives here,&quot; he says, &quot;and runs up debts so that you can&#x27;t even put him out. I&#x27;m not going to fool about it,&quot; he says, &quot;I&#x27;m going straight to the Governor and have him arrested and put in jail.&quot;</p>
+<p>KHLESTAKOV. That&#x27;ll do now, you fool. Go down at once and tell him to have dinner sent up. The coarse brute! The idea!</p>
+<p>OSIP. Hadn&#x27;t I better call the landlord here?</p>
+<p>KHLESTAKOV. What do I want the landlord for? Go and tell him yourself.</p>
+<p>OSIP. But really, master--</p>
+<p>KHLESTAKOV. Well, go, the deuce take you. Call the landlord.</p>
+<p>KHLESTAKOV [alone]. I am so ravenously hungry. I took a little stroll thinking I could walk off my appetite. But, hang it, it clings. If I hadn&#x27;t dissipated so in Penza I&#x27;d have had enough money to get home with. The infantry captain did me up all right. Wonderful the way the scoundrel cut the cards! It didn&#x27;t take more than a quarter of an hour for him to clean me out of my last penny. And yet I would give anything to have another set-to with him. Only I never will have the chance.--What a rotten town this is! You can&#x27;t get anything on credit in the grocery shops here. It&#x27;s deucedly mean, it is. [He whistles, first an air from Robert le Diable, then a popular song, then a blend of the two.] No one&#x27;s coming.</p>
+<p>Khlestakov, Osip, and a Servant.</p>
+<p>SERVANT. The landlord sent me up to ask what you want.</p>
+<p>KHLESTAKOV. Ah, how do you do, brother! How are you? How are you?</p>
+<p>SERVANT. All right, thank you.</p>
+<p>KHLESTAKOV. And how are you getting on in the inn? Is business good?</p>
+<p>SERVANT. Yes, business is all right, thank you.</p>
+<p>KHLESTAKOV. Many guests?</p>
+<p>SERVANT. Plenty.</p>
+<p>KHLESTAKOV. See here, good friend. They haven&#x27;t sent me dinner yet. Please hurry them up! See that I get it as soon as possible. I have some business to attend to immediately after dinner.</p>
+<p>SERVANT. The landlord said he won&#x27;t let you have anything any more. He was all for going to the Governor to-day and making a complaint against you.</p>
+<p>KHLESTAKOV. What&#x27;s there to complain about? Judge for yourself, friend. Why, I&#x27;ve got to eat. If I go on like this I&#x27;ll turn into a skeleton. I&#x27;m hungry, I&#x27;m not joking.</p>
+<p>SERVANT. Yes, sir, that&#x27;s what he said. &quot;I won&#x27;t let him have no dinner,&quot; he said, &quot;till he pays for what he has already had.&quot; That was his answer.</p>
+<p>KHLESTAKOV. Try to persuade him.</p>
+<p>SERVANT. But what shall I tell him?</p>
+<p>KHLESTAKOV. Explain that it&#x27;s a serious matter, I&#x27;ve got to eat. As for the money, of course--He thinks that because a muzhik like him can go without food a whole day others can too. The idea!</p>
+<p>SERVANT. Well, all right. I&#x27;ll tell him.</p>
+<p>The Servant and Osip go out.</p>
+<p>KHLESTAKOV. A bad business if he refuses to let me have anything. I&#x27;m so hungry. I&#x27;ve never been so hungry in my life. Shall I try to raise something on my clothes? Shall I sell my trousers? No, I&#x27;d rather starve than come home without a St. Petersburg suit. It&#x27;s a shame Joachim wouldn&#x27;t let me have a carriage on hire. It would have been great to ride home in a carriage, drive up under the porte-cochere of one of the neighbors with lamps lighted and Osip behind in livery. Imagine the stir it would have created. &quot;Who is it? What&#x27;s that?&quot; Then my footman walks in [draws himself up and imitates] and an-nounces: &quot;Ivan Aleksandrovich Khlestakov of St. Petersburg. Will you receive him?&quot; Those country lubbers don&#x27;t even know what it means to &quot;receive.&quot; If any lout of a country squire pays them a visit, he stalks straight into the drawing-room like a bear. Then you step up to one of their pretty girls and say: &quot;Dee-lighted, madam.&quot; [Rubs his hands and bows.] Phew! [Spits.] I feel positively sick, I&#x27;m so hungry.</p>
+<p>Khlestakov, Osip, and later the Servant.</p>
+<p>KHLESTAKOV. Well?</p>
+<p>OSIP. They&#x27;re bringing dinner.</p>
+<p>KHLESTAKOV [claps his hands and wriggles in his chair]. Dinner, dinner, dinner!</p>
+<p>SERVANT [with plates and napkin]. This is the last time the landlord will let you have dinner.</p>
+<p>KHLESTAKOV. The landlord, the landlord! I spit on your landlord. What have you got there?</p>
+<p>SERVANT. Soup and roast beef.</p>
+<p>KHLESTAKOV. What! Only two courses?</p>
+<p>SERVANT. That&#x27;s all.</p>
+<p>KHLESTAKOV. Nonsense! I won&#x27;t take it. What does he mean by that? Ask him. It&#x27;s not enough.</p>
+<p>SERVANT. The landlord says it&#x27;s too much.</p>
+<p>KHLESTAKOV. Why is there no sauce?</p>
+<p>SERVANT. There is none.</p>
+<p>KHLESTAKOV. Why not? I saw them preparing a whole lot when I passed through the kitchen. And in the dining-room this morning two short little men were eating salmon and lots of other things.</p>
+<p>SERVANT. Well, you see, there is some and there isn&#x27;t.</p>
+<p>KHLESTAKOV. Why &quot;isn&#x27;t&quot;?</p>
+<p>SERVANT. Because there isn&#x27;t any.</p>
+<p>KHLESTAKOV. What, no salmon, no fish, no cutlets?</p>
+<p>SERVANT. Only for the better kind of folk.</p>
+<p>KHLESTAKOV. You&#x27;re a fool.</p>
+<p>SERVANT. Yes, sir.</p>
+<p>KHLESTAKOV. You measly suckling pig. Why can they eat and I not? Why the devil can&#x27;t I eat, too? Am I not a guest the same as they?</p>
+<p>SERVANT. No, not the same. That&#x27;s plain.</p>
+<p>KHLESTAKOV. How so?</p>
+<p>SERVANT. That&#x27;s easy. THEY pay, that&#x27;s it.</p>
+<p>KHLESTAKOV. I&#x27;m not going to argue with you, simpleton! [Ladles out the soup and begins to eat.] What, you call that soup? Simply hot water poured into a cup. No taste to it at all. It only stinks. I don&#x27;t want it. Bring me some other soup.</p>
+<p>SERVANT. All right. I&#x27;ll take it away. The boss said if you didn&#x27;t want it, you needn&#x27;t take it.</p>
+<p>KHLESTAKOV [putting his hand over the dishes]. Well, well, leave it alone, you fool. You may be used to treat other people this way, but I&#x27;m not that sort. I advise you not to try it on me. My God! What soup! [Goes on eating.] I don&#x27;t think anybody in the world tasted such soup. Feathers floating on the top instead of butter. [Cuts the piece of chicken in the soup.] Oh, oh, oh! What a bird!--Give me the roast beef. There&#x27;s a little soup left, Osip. Take it. [Cuts the meat.] What sort of roast beef is this? This isn&#x27;t roast beef.</p>
+<p>SERVANT. What else is it?</p>
+<p>KHLESTAKOV. The devil knows, but it isn&#x27;t roast beef. It&#x27;s roast iron, not roast beef. [Eats.] Scoundrels! Crooks! The stuff they give you to eat! It makes your jaws ache to chew one piece of it. [Picks his teeth with his fingers.] Villains! It&#x27;s as tough as the bark of a tree. I can&#x27;t pull it out no matter how hard I try. Such meat is enough to ruin one&#x27;s teeth. Crooks! [Wipes his mouth with the napkin.] Is there nothing else?</p>
+<p>SERVANT. No.</p>
+<p>KHLESTAKOV. Scoundrels! Blackguards! They might have given some decent pastry, or something, the lazy good-for-nothings! Fleecing their guests! That&#x27;s all they&#x27;re good for.</p>
+<p>[The Servant takes the dishes and carries them out accompanied by Osip.]</p>
+<h2 class="chapter" id="c11">Scene VII</h2>
+<p>Khlestakov alone.</p>
+<p>KHLESTAKOV. It&#x27;s just as if I had eaten nothing at all, upon my word. It has only whetted my appetite. If I only had some change to send to the market and buy some bread.</p>
+<p>OSIP [entering]. The Governor has come, I don&#x27;t know what for. He&#x27;s inquiring about you.</p>
+<p>KHLESTAKOV [in alarm]. There now! That inn-keeper has gone and made a complaint against me. Suppose he really claps me into jail? Well! If he does it in a gentlemanly way, I may--No, no, I won&#x27;t. The officers and the people are all out on the street and I set the fashion for them and the merchant&#x27;s daughter and I flirted. No, I won&#x27;t. And pray, who is he? How dare he, actually? What does he take me for? A tradesman? I&#x27;ll tell him straight out, &quot;How dare you? How--&quot;</p>
+<p>[The door knob turns and Khlestakov goes pale and shrinks back.]</p>
+<h2 class="chapter" id="c12">Scene VIII</h2>
+<p>Khlestakov, the Governor, and Dobchinsky.</p>
+<p>The Governor advances a few steps and stops. They stare at each other a few moments wide-eyed and frightened.</p>
+<p>GOVERNOR [recovering himself a little and saluting military fashion]. I have come to present my compliments, sir.</p>
+<p>KHLESTAKOV [bows]. How do you do, sir?</p>
+<p>GOVERNOR. Excuse my intruding.</p>
+<p>KHLESTAKOV. Pray don&#x27;t mention it.</p>
+<p>GOVERNOR. It&#x27;s my duty as chief magistrate of this town to see that visitors and persons of rank should suffer no inconveniences.</p>
+<p>KHLESTAKOV [a little halting at first, but toward the end in a loud, firm voice]. Well--what was--to be--done? It&#x27;s not--my fault. I&#x27;m--really going to pay. They will send me money from home. [Bobchinsky peeps in at the door.] He&#x27;s most to blame. He gives me beef as hard as a board and the soup--the devil knows what he put into it. I ought to have pitched it out of the window. He starves me the whole day. His tea is so peculiar--it smells of fish, not tea. So why should I--The idea!</p>
+<p>GOVERNOR [scared]. Excuse me! I assure you, it&#x27;s not my fault. I always have good beef in the market here. The Kholmogory merchants bring it, and they are sober, well-behaved people. I&#x27;m sure I don&#x27;t know where he gets his bad meat from. But if anything is wrong, may I suggest that you allow me to take you to another place?</p>
+<p>KHLESTAKOV. No, I thank you. I don&#x27;t care to leave. I know what the other place is--the jail. What right have you, I should like to know--how dare you?--Why, I&#x27;m in the government service at St. Petersburg. [Puts on a bold front.] I--I--I--</p>
+<p>GOVERNOR [aside]. My God, how angry he is. He has found out everything. Those damned merchants have told him everything.</p>
+<p>KHLESTAKOV [with bravado]. I won&#x27;t go even if you come here with your whole force. I&#x27;ll go straight to the minister. [Bangs his fist on the table.] What do you mean? What do you mean?</p>
+<p>GOVERNOR [drawing himself up stiffly and shaking all over]. Have pity on me. Don&#x27;t ruin me. I have a wife and little children. Don&#x27;t bring misfortune on a man.</p>
+<p>KHLESTAKOV. No, I won&#x27;t go. What&#x27;s that got to do with me? Must I go to jail because you have a wife and little children? Great! [Bobchinsky looks in at the door and disappears in terror.] No, much obliged to you. I will not go.</p>
+<p>GOVERNOR [trembling]. It was my inexperience. I swear to you, it was nothing but my inexperience and insufficient means. Judge for yourself. The salary I get is not enough for tea and sugar. And if I have taken bribes, they were mere trifles--something for the table, or a coat or two. As for the officer&#x27;s widow to whom they say I gave a beating, she&#x27;s in business now, and it&#x27;s a slander, it&#x27;s a slander that I beat her. Those scoundrels here invented the lie. They are ready to murder me. That&#x27;s the kind of people they are.</p>
+<p>KHLESTAKOV. Well. I&#x27;ve nothing to do with them. [Reflecting.] I don&#x27;t see, though, why you should talk to me about your scoundrels or officer&#x27;s widow. An officer&#x27;s widow is quite a different matter.--But don&#x27;t you dare to beat me. You can&#x27;t do it to me--no, sir, you can&#x27;t. The idea! Look at him! I&#x27;ll pay, I&#x27;ll pay the money. Just now I&#x27;m out of cash. That&#x27;s why I stay here--because I haven&#x27;t a single kopek.</p>
+<p>GOVERNOR [aside]. Oh, he&#x27;s a shrewd one. So that&#x27;s what he&#x27;s aiming at? He&#x27;s raised such a cloud of dust you can&#x27;t tell what direction he&#x27;s going. Who can guess what he wants? One doesn&#x27;t know where to begin. But I will try. Come what may, I&#x27;ll try--hit or miss. [Aloud.] H&#x27;m, if you really are in want of money, I&#x27;m ready to serve you. It is my duty to assist strangers in town.</p>
+<p>KHLESTAKOV. Lend me some, lend me some. Then I&#x27;ll settle up immediately with the landlord. I only want two hundred rubles. Even less would do.</p>
+<p>GOVERNOR. There&#x27;s just two hundred rubles. [Giving him the money.] Don&#x27;t bother to count it.</p>
+<p>KHLESTAKOV [taking it]. Very much obliged to you. I&#x27;ll send it back to you as soon as I get home. I just suddenly found myself without--H&#x27;m--I see you are a gentleman. Now it&#x27;s all different.</p>
+<p>GOVERNOR [aside]. Well, thank the Lord, he&#x27;s taken the money. Now I suppose things will move along smoothly. I slipped four hundred instead of two into his hand.</p>
+<p>KHLESTAKOV. Ho, Osip! [Osip enters.] Tell the servant to come. [To the Governor and Dobchinsky.] Please be seated. [To Dobchinsky.] Please take a seat, I beg of you.</p>
+<p>GOVERNOR. Don&#x27;t trouble. We can stand.</p>
+<p>KHLESTAKOV. But, please, please be seated. I now see perfectly how open-hearted and generous you are. I confess I thought you had come to put me in--[To Dobchinsky.] Do take a chair.</p>
+<p>The Governor and Dobchinsky sit down. Bobchinsky looks in at the door and listens.</p>
+<p>GOVERNOR [aside]. I must be bolder. He wants us to pretend he is incognito. Very well, we will talk nonsense, too. We&#x27;ll pretend we haven&#x27;t the least idea who he is. [Aloud.] I was going about in the performance of my duty with Piotr Ivanovich Dobchinsky here--he&#x27;s a landed proprietor here--and we came to the inn to see whether the guests are properly accommodated--because I&#x27;m not like other governors, who don&#x27;t care about anything. No, apart from my duty, out of pure Christian philanthropy, I wish every mortal to be decently treated. And as if to reward me for my pains, chance has afforded me this pleasant acquaintance.</p>
+<p>KHLESTAKOV. I, too, am delighted. Without your aid, I confess, I should have had to stay here a long time. I didn&#x27;t know how in the world to pay my bill.</p>
+<p>GOVERNOR [aside]. Oh, yes, fib on.--Didn&#x27;t know how to pay his bill! May I ask where your Honor is going?</p>
+<p>KHLESTAKOV. I&#x27;m going to my own village in the Government of Saratov.</p>
+<p>GOVERNOR [aside, with an ironical expression on his face]. The Government of Saratov! H&#x27;m, h&#x27;m! And doesn&#x27;t even blush! One must be on the qui vive with this fellow. [Aloud.] You have undertaken a great task. They say travelling is disagreeable because of the delay in getting horses but, on the other hand, it is a diversion. You are travelling for your own amusement, I suppose?</p>
+<p>KHLESTAKOV. No, my father wants me. He&#x27;s angry because so far I haven&#x27;t made headway in the St. Petersburg service. He thinks they stick the Vladimir in your buttonhole the minute you get there. I&#x27;d like him to knock about in the government offices for a while.</p>
+<p>GOVERNOR [aside]. How he fabricates! Dragging in his old father, too. [Aloud.] And may I ask whether you are going there to stay for long?</p>
+<p>KHLESTAKOV. I really don&#x27;t know. You see, my father is stubborn and stupid--an old dotard as hard as a block of wood. I&#x27;ll tell him straight out, &quot;Do what you will, I can&#x27;t live away from St. Petersburg.&quot; Really, why should I waste my life among peasants? Our times make different demands on us. My soul craves enlightenment.</p>
+<p>GOVERNOR [aside]. He can spin yarns all right. Lie after lie and never trips. And such an ugly insignificant-looking creature, too. Why, it seems to me I could crush him with my finger nails. But wait, I&#x27;ll make you talk. I&#x27;ll make you tell me things. [Aloud.] You were quite right in your observation, that one can do nothing in a dreary out-of-the-way place. Take this town, for instance. You lie awake nights, you work hard for your country, you don&#x27;t spare yourself, and the reward? You don&#x27;t know when it&#x27;s coming. [He looks round the room.] This room seems rather damp.</p>
+<p>KHLESTAKOV. Yes, it&#x27;s a dirty room. And the bugs! I&#x27;ve never experienced anything like them. They bite like dogs.</p>
+<p>GOVERNOR. You don&#x27;t say! An illustrious guest like you to be subjected to such annoyance at the hands of--whom? Of vile bugs which should never have been born. And I dare say, it&#x27;s dark here, too.</p>
+<p>KHLESTAKOV. Yes, very gloomy. The landlord has introduced the custom of not providing candles. Sometimes I want to do something--read a bit, or, if the fancy strikes me, write something.--I can&#x27;t. It&#x27;s a dark room, yes, very dark.</p>
+<p>GOVERNOR. I wonder if I might be bold enough to ask you--but, no, I&#x27;m unworthy.</p>
+<p>KHLESTAKOV. What is it?</p>
+<p>GOVERNOR. No, no, I&#x27;m unworthy. I&#x27;m unworthy.</p>
+<p>KHLESTAKOV. But what is it?</p>
+<p>GOVERNOR. If I might be bold enough--I have a fine room for you at home, light and cosy. But no, I feel it is too great an honor. Don&#x27;t be offended. Upon my word, I made the offer out of the simplicity of my heart.</p>
+<p>KHLESTAKOV. On the contrary, I accept your invitation with pleasure. I should feel much more comfortable in a private house than in this disreputable tavern.</p>
+<p>GOVERNOR. I&#x27;m only too delighted. How glad my wife will be. It&#x27;s my character, you know. I&#x27;ve always been hospitable from my very childhood, especially when my guest is a distinguished person. Don&#x27;t think I say this out of flattery. No, I haven&#x27;t that vice. I only speak from the fullness of my heart.</p>
+<p>KHLESTAKOV. I&#x27;m greatly obliged to you. I myself hate double-faced people. I like your candor and kind-heartedness exceedingly. And I am free to say, I ask for nothing else than devotion and esteem--esteem and devotion.</p>
+<h2 class="chapter" id="c13">Scene IX</h2>
+<p>The above and the Servant, accompanied by Osip. Bobchinsky peeps in at the door.</p>
+<p>SERVANT. Did your Honor wish anything?</p>
+<p>KHLESTAKOV. Yes, let me have the bill.</p>
+<p>SERVANT. I gave you the second one a little while ago.</p>
+<p>KHLESTAKOV. Oh, I can&#x27;t remember your stupid accounts. Tell me what the whole comes to.</p>
+<p>SERVANT. You were pleased to order dinner the first day. The second day you only took salmon. And then you took everything on credit.</p>
+<p>KHLESTAKOV. Fool! [Starts to count it all up now.] How much is it altogether?</p>
+<p>GOVERNOR. Please don&#x27;t trouble yourself. He can wait. [To the Servant.] Get out of here. The money will be sent to you.</p>
+<p>KHLESTAKOV. Yes, that&#x27;s so, of course. [He puts the money in his pocket.]</p>
+<p>The Servant goes out. Bobchinsky peeps in at the door.</p>
+<h2 class="chapter" id="c14">Scene X</h2>
+<p>The Governor, Khlestakov and Dobchinsky.</p>
+<p>GOVERNOR. Would you care to inspect a few institutions in our town now--the philanthropic institutions, for instance, and others?</p>
+<p>KHLESTAKOV. But what is there to see?</p>
+<p>GOVERNOR. Well, you&#x27;ll see how they&#x27;re run--the order in which we keep them.</p>
+<p>KHLESTAKOV. Oh, with the greatest pleasure. I&#x27;m ready.</p>
+<p>Bobchinsky puts his head in at the door.</p>
+<p>GOVERNOR. And then, if you wish, we can go from there and inspect the district school and see our method of education.</p>
+<p>KHLESTAKOV. Yes, yes, if you please.</p>
+<p>GOVERNOR. Afterwards, if you should like to visit our town jails and prisons, you will see how our criminals are kept.</p>
+<p>KHLESTAKOV. Yes, yes, but why go to prison? We had better go to see the philanthropic institutions.</p>
+<p>GOVERNOR. As you please. Do you wish to ride in your own carriage, or with me in the cab?</p>
+<p>KHLESTAKOV. I&#x27;d rather take the cab with you.</p>
+<p>GOVERNOR [to Dobchinsky]. Now there&#x27;ll be no room for you, Piotr Ivanovich.</p>
+<p>DOBCHINSKY. It doesn&#x27;t matter. I&#x27;ll walk.</p>
+<p>GOVERNOR [aside, to Dobchinsky]. Listen. Run as fast as you can and take two notes, one to Zemlianika at the hospital, the other to my wife. [To Khlestakov.] May I take the liberty of asking you to permit me to write a line to my wife to tell her to make ready to receive our honored guest?</p>
+<p>KHLESTAKOV. Why go to so much trouble? However, there is the ink. I don&#x27;t know whether there is any paper. Would the bill do?</p>
+<p>GOVERNOR. Yes, that&#x27;ll do. [Writes, talking to himself at the same time.] We&#x27;ll see how things will go after lunch and several stout-bellied bottles. We have some Russian Madeira, not much to look at, but it will knock an elephant off its legs. If I only knew what he is and how much I have to be [on] my guard.</p>
+<p>He finishes writing and gives the notes to Dobchinsky. As the latter walks across the stage, the door suddenly falls in, and Bobchinsky tumbles in with it to the floor. All exclaim in surprise. Bobchinsky rises.</p>
+<p>KHLESTAKOV. Have you hurt yourself?</p>
+<p>BOBCHINSKY. Oh, it&#x27;s nothing--nothing at all--only a little bruise on my nose. I&#x27;ll run in to Dr. Huebner&#x27;s. He has a sort of plaster. It&#x27;ll soon pass away.</p>
+<p>GOVERNOR [making an angry gesture at Bobchinsky. To Khlestakov]. Oh, it&#x27;s nothing. Now, if you please, sir, we&#x27;ll go. I&#x27;ll tell your servant to carry your luggage over. [Calls Osip.] Here, my good fellow, take all your master&#x27;s things to my house, the Governor&#x27;s. Anyone will tell you where it is. By your leave, sir. [Makes way for Khlestakov and follows him; then turns and says reprovingly to Bobchinsky.] Couldn&#x27;t you find some other place to fall in? Sprawling out here like a lobster!</p>
+<p>Goes out. After him Bobchinsky. Curtain falls.</p>
+<h2 class="chapter" id="c15">Act III — SCENE: The same as in Act I.</h2>
+<h2 class="chapter" id="c16">Scene I</h2>
+<p>Anna Andreyevna and Marya Antonovna standing at the window in the same positions as at the end of Act I.</p>
+<p>ANNA. There now! We&#x27;ve been waiting a whole hour. All on account of your silly prinking. You were completely dressed, but no, you have to keep on dawdling.--Provoking! Not a soul to be seen, as though on purpose, as though the whole world were dead.</p>
+<p>MARYA. Now really, mamma, we shall know all about it in a minute or two. Avdotya must come back soon. [Looks out of the window and exclaims.] Oh, mamma, someone is coming--there down the street!</p>
+<p>ANNA. Where? Just your imagination again!--Why, yes, someone is coming. I wonder who it is. A short man in a frock coat. Who can it be? Eh? The suspense is awful! Who can it be, I wonder.</p>
+<p>MARYA. Dobchinsky, mamma.</p>
+<p>ANNA. Dobchinsky! Your imagination again! It&#x27;s not Dobchinsky at all. [Waves her handkerchief.] Ho, you! Come here! Quick!</p>
+<p>MARYA. It is Dobchinsky, mamma.</p>
+<p>ANNA. Of course, you&#x27;ve got to contradict. I tell you, it&#x27;s not Dobchinsky.</p>
+<p>MARYA. Well, well, mamma? Isn&#x27;t it Dobchinsky?</p>
+<p>ANNA. Yes, it is, I see now. Why do you argue about it? [Calls through the window.] Hurry up, quick! You&#x27;re so slow. Well, where are they? What? Speak from where you are. It&#x27;s all the same. What? He is very strict? Eh? And how about my husband? [Moves away a little from the window, exasperated.] He is so stupid. He won&#x27;t say a word until he is in the room.</p>
+<h2 class="chapter" id="c17">Scene II</h2>
+<p>Enter Dobchinsky.</p>
+<p>ANNA. Now tell me, aren&#x27;t you ashamed? You were the only one I relied on to act decently. They all ran away and you after them, and till now I haven&#x27;t been able to find out a thing. Aren&#x27;t you ashamed? I stood godmother to your Vanichka and Lizanko, and this is the way you treat me.</p>
+<p>DOBCHINSKY. Godmother, upon my word, I ran so fast to pay my respects to you that I&#x27;m all out of breath. How do you do, Marya Antonovna?</p>
+<p>MARYA. Good afternoon, Piotr Ivanovich.</p>
+<p>ANNA. Well, tell me all about it. What is happening at the inn?</p>
+<p>DOBCHINSKY. I have a note for you from Anton Antonovich.</p>
+<p>ANNA. But who is he? A general?</p>
+<p>DOBCHINSKY. No, not a general, but every bit as good as a general, I tell you. Such culture! Such dignified manners!</p>
+<p>ANNA. Ah! So he is the same as the one my husband got a letter about.</p>
+<p>DOBCHINSKY. Exactly. It was Piotr Ivanovich and I who first discovered him.</p>
+<p>ANNA. Tell me, tell me all about it.</p>
+<p>DOBCHINSKY. It&#x27;s all right now, thank the Lord. At first he received Anton Antonovich rather roughly. He was angry and said the inn was not run properly, and he wouldn&#x27;t come to the Governor&#x27;s house and he didn&#x27;t want to go to jail on account of him. But then when he found out that Anton Antonovich was not to blame and they got to talking more intimately, he changed right away, and, thank Heaven, everything went well. They&#x27;ve gone now to inspect the philanthropic institutions. I confess that Anton Antonovich had already begun to suspect that a secret denunciation had been lodged against him. I myself was trembling a little, too.</p>
+<p>ANNA. What have you to be afraid of? You&#x27;re not an official.</p>
+<p>DOBCHINSKY. Well, you see, when a Grand Mogul speaks, you feel afraid.</p>
+<p>ANNA. That&#x27;s all rubbish. Tell me, what is he like personally? Is he young or old?</p>
+<p>DOBCHINSKY. Young--a young man of about twenty-three. But he talks as if he were older. &quot;If you will allow me,&quot; he says, &quot;I will go there and there.&quot; [Waves his hands.] He does it all with such distinction. &quot;I like,&quot; he says, &quot;to read and write, but I am prevented because my room is rather dark.&quot;</p>
+<p>ANNA. And what sort of a looking man is he, dark or fair?</p>
+<p>DOBCHINSKY. Neither. I should say rather chestnut. And his eyes dart about like little animals. They make you nervous.</p>
+<p>ANNA. Let me see what my husband writes. [Reads.] &quot;I hasten to let you know, dear, that my position was extremely uncomfortable, but relying on the mercy of God, two pickles extra and a half portion of caviar, one ruble and twenty-five kopeks.&quot; [Stops.] I don&#x27;t understand. What have pickles and caviar got to do with it?</p>
+<p>DOBCHINSKY. Oh, Anton Antonovich hurriedly wrote on a piece of scrap paper. There&#x27;s a kind of bill on it.</p>
+<p>ANNA. Oh, yes, I see. [Goes on reading.] &quot;But relying on the mercy of God, I believe all will turn out well in the end. Get a room ready quickly for the distinguished guest--the one with the gold wall paper. Don&#x27;t bother to get any extras for dinner because we&#x27;ll have something at the hospital with Artemy Filippovich. Order a little more wine, and tell Abdulin to send the best, or I&#x27;ll wreck his whole cellar. I kiss your hand, my dearest, and remain yours, Anton Skvoznik-Dmukhanovsky.&quot; Oh my! I must hurry. Hello, who&#x27;s there? Mishka?</p>
+<p>DOBCHINSKY [Runs to the door and calls.] Mishka! Mishka! Mishka! [Mishka enters.]</p>
+<p>ANNA. Listen! Run over to Abdulin--wait, I&#x27;ll give you a note. [She sits down at the table and writes, talking all the while.] Give this to Sidor, the coachman, and tell him to take it to Abdulin and bring back the wine. And get to work at once and make the gold room ready for a guest. Do it nicely. Put a bed in it, a wash basin and pitcher and everything else.</p>
+<p>DOBCHINSKY. Well, I&#x27;m going now, Anna Andreyevna, to see how he does the inspecting.</p>
+<p>ANNA. Go on, I&#x27;m not keeping you.</p>
+<h2 class="chapter" id="c18">Scene III</h2>
+<p>Anna Andreyevna and Marya Antonovna.</p>
+<p>ANNA. Now, Mashenka, we must attend to our toilet. He&#x27;s a metropolitan swell and God forbid that he should make fun of us. You put on your blue dress with the little flounces. It&#x27;s the most becoming.</p>
+<p>MARYA. The idea, mamma! The blue dress! I can&#x27;t bear it. Liapkin-Tiapkin&#x27;s wife wears blue and so does Zemlianika&#x27;s daughter. I&#x27;d rather wear my flowered dress.</p>
+<p>ANNA. Your flowered dress! Of course, just to be contrary. You&#x27;ll look lots better in blue because I&#x27;m going to wear my dun-colored dress. I love dun-color.</p>
+<p>MARYA. Oh, mamma, it isn&#x27;t a bit becoming to you.</p>
+<p>ANNA. What, dun-color isn&#x27;t becoming to me?</p>
+<p>MARYA. No, not a bit. I&#x27;m positive it isn&#x27;t. One&#x27;s eyes must be quite dark to go with dun-color.</p>
+<p>ANNA. That&#x27;s nice! And aren&#x27;t my eyes dark? They are as dark as can be. What nonsense you talk! How can they be anything but dark when I always draw the queen of clubs.</p>
+<p>MARYA. Why, mamma, you are more like the queen of hearts.</p>
+<p>ANNA. Nonsense! Perfect nonsense! I never was a queen of hearts. [She goes out hurriedly with Marya and speaks behind the scenes.] The ideas she gets into her head! Queen of hearts! Heavens! What do you think of that?</p>
+<p>As they go out, a door opens through which Mishka sweeps dirt on to the stage. Osip enters from another door with a valise on his head.</p>
+<h2 class="chapter" id="c19">Scene IV</h2>
+<p>Mishka and Osip.</p>
+<p>OSIP. Where is this to go?</p>
+<p>MISHKA. In here, in here.</p>
+<p>OSIP. Wait, let me fetch breath first. Lord! What a wretched life! On an empty stomach any load seems heavy.</p>
+<p>MISHKA. Say, uncle, will the general be here soon?</p>
+<p>OSIP. What general?</p>
+<p>MISHKA. Your master.</p>
+<p>OSIP. My master? What sort of a general is he?</p>
+<p>MISHKA. Isn&#x27;t he a general?</p>
+<p>OSIP. Yes, he&#x27;s a general, only the other way round.</p>
+<p>MISHKA. Is that higher or lower than a real general?</p>
+<p>OSIP. Higher.</p>
+<p>MISHKA. Gee whiz! That&#x27;s why they are raising such a racket about him here.</p>
+<p>OSIP. Look here, young man, I see you&#x27;re a smart fellow. Get me something to eat, won&#x27;t you?</p>
+<p>MISHKA. There isn&#x27;t anything ready yet for the likes of you. You won&#x27;t eat plain food. When your master takes his meal, they&#x27;ll let you have the same as he gets.</p>
+<p>OSIP. But have you got any plain stuff?</p>
+<p>MISHKA. We have cabbage soup, porridge and pie.</p>
+<p>OSIP. That&#x27;s all right. We&#x27;ll eat cabbage soup, porridge and pie, we&#x27;ll eat everything. Come, help me with the valise. Is there another way to go out there?</p>
+<p>MISHKA. Yes.</p>
+<p>They both carry the valise into the next room.</p>
+<h2 class="chapter" id="c20">Scene V</h2>
+<p>The Sergeants open both folding doors. Khlestakov enters followed by the Governor, then the Superintendent of Charities, the Inspector of Schools, Dobchinsky and Bobchinsky with a plaster on his nose. The Governor points to a piece of paper lying on the floor, and the Sergeants rush to pick it up, pushing each other in their haste.</p>
+<p>KHLESTAKOV. Excellent institutions. I like the way you show strangers everything in your town. In other towns they didn&#x27;t show me a thing.</p>
+<p>GOVERNOR. In other towns, I venture to observe, the authorities and officials look out for themselves more. Here, I may say, we have no other thought than to win the Government&#x27;s esteem through good order, vigilance, and efficiency.</p>
+<p>KHLESTAKOV. The lunch was excellent. I&#x27;ve positively overeaten. Do you set such a fine table every day?</p>
+<p>GOVERNOR. In honor of so agreeable a guest we do.</p>
+<p>KHLESTAKOV. I like to eat well. That&#x27;s what a man lives for--to pluck the flowers of pleasure. What was that fish called?</p>
+<p>ARTEMY [running up to him]. Labardan.</p>
+<p>KHLESTAKOV. It was delicious. Where was it we had our lunch? In the hospital, wasn&#x27;t it?</p>
+<p>ARTEMY. Precisely, in the hospital.</p>
+<p>KHLESTAKOV. Yes, yes, I remember. There were beds there. The patients must have gotten well. There don&#x27;t seem to have been many of them.</p>
+<p>ARTEMY. About ten are left. The rest recovered. The place is so well run, there is such perfect order. It may seem incredible to you, but ever since I&#x27;ve taken over the management, they all recover like flies. No sooner does a patient enter the hospital than he feels better. And we obtain this result not so much by medicaments as by honesty and orderliness.</p>
+<p>GOVERNOR. In this connection may I venture to call your attention to what a brain-racking job the office of Governor is. There are so many matters he has to give his mind to just in connection with keeping the town clean and repairs and alterations. In a word, it is enough to upset the most competent person. But, thank God, all goes well. Another governor, of course, would look out for his own advantage. But believe me, even nights in bed I keep thinking: &quot;Oh, God, how could I manage things in such a way that the government would observe my devotion to duty and be satisfied?&quot; Whether the government will reward me or not, that of course, lies with them. At least I&#x27;ll have a clear conscience. When the whole town is in order, the streets swept clean, the prisoners well kept, and few drunkards--what more do I want? Upon my word, I don&#x27;t even crave honors. Honors, of course, are alluring; but as against the happiness which comes from doing one&#x27;s duty, they are nothing but dross and vanity.</p>
+<p>ARTEMY [aside]. Oh, the do-nothing, the scoundrel! How he holds forth! I wish the Lord had blessed me with such a gift!</p>
+<p>KHLESTAKOV. That&#x27;s so. I admit I sometimes like to philosophize, too. Sometimes it&#x27;s prose, and sometimes it comes out poetry.</p>
+<p>BOBCHINSKY [to Dobchinsky]. How true, how true it all is, Piotr Ivanovich. His remarks are great. It&#x27;s evident that he is an educated man.</p>
+<p>KHLESTAKOV. Would you tell me, please, if you have any amusements here, any circles where one could have a game of cards?</p>
+<p>GOVERNOR [aside]. Ahem! I know what you are aiming at, my boy. [Aloud.] God forbid! Why, no one here has even heard of such a thing as card-playing circles. I myself have never touched a card. I don&#x27;t know how to play. I can never look at cards with indifference, and if I happen to see a king of diamonds or some such thing, I am so disgusted I have to spit out. Once I made a house of cards for the children, and then I dreamt of those confounded things the whole night. Heavens! How can people waste their precious time over cards!</p>
+<p>LUKA LUKICH [aside]. But he faroed me out of a hundred rubles yesterday, the rascal.</p>
+<p>GOVERNOR. I&#x27;d rather employ my time for the benefit of the state.</p>
+<p>KHLESTAKOV. Oh, well, that&#x27;s rather going too far. It all depends upon the point of view. If, for instance, you pass when you have to treble stakes, then of course--No, don&#x27;t say that a game of cards isn&#x27;t very tempting sometimes.</p>
+<h2 class="chapter" id="c21">Scene VI</h2>
+<p>The above, Anna Andreyevna and Marya Antonovna.</p>
+<p>GOVERNOR. Permit me to introduce my family, my wife and daughter.</p>
+<p>KHLESTAKOV [bowing]. I am happy, madam, to have the pleasure of meeting you.</p>
+<p>ANNA. Our pleasure in meeting so distinguished a person is still greater.</p>
+<p>KHLESTAKOV [showing off]. Excuse me, madam, on the contrary, my pleasure is the greater.</p>
+<p>ANNA. Impossible. You condescend to say it to compliment me. Won&#x27;t you please sit down?</p>
+<p>KHLESTAKOV. Just to stand near you is bliss. But if you insist, I will sit down. I am so, so happy to be at your side at last.</p>
+<p>ANNA. I beg your pardon, but I dare not take all the nice things you say to myself. I suppose you must have found travelling very unpleasant after living in the capital.</p>
+<p>KHLESTAKOV. Extremely unpleasant. I am accustomed, comprenez-vous, to life in the fashionable world, and suddenly to find myself on the road, in dirty inns with dark rooms and rude people--I confess that if it were not for this chance which--[giving Anna a look and showing off] compensated me for everything--</p>
+<p>ANNA. It must really have been extremely unpleasant for you.</p>
+<p>KHLESTAKOV. At this moment, however, I find it exceedingly pleasant, madam.</p>
+<p>ANNA. Oh, I cannot believe it. You do me much honor. I don&#x27;t deserve it.</p>
+<p>KHLESTAKOV. Why don&#x27;t you deserve it? You do deserve it, madam.</p>
+<p>ANNA. I live in a village.</p>
+<p>KHLESTAKOV. Well, after all, a village too has something. It has its hills and brooks. Of course it&#x27;s not to be compared with St. Petersburg. Ah, St. Petersburg! What a life, to be sure! Maybe you think I am only a copying clerk. No, I am on a friendly footing with the chief of our department. He slaps me on the back. &quot;Come, brother,&quot; he says, &quot;and have dinner with me.&quot; I just drop in the office for a couple of minutes to say this is to be done so, and that is to be done that way. There&#x27;s a rat of a clerk there for copying letters who does nothing but scribble all the time--tr, tr--They even wanted to make me a college assessor, but I think to myself, &quot;What do I want it for?&quot; And the doorkeeper flies after me on the stairs with the shoe brush. &quot;Allow me to shine your boots for you, Ivan Aleksandrovich,&quot; he says. [To the Governor.] Why are you standing, gentleman? Please sit down.</p>
+<p>{GOVERNOR. Our rank is such that we can very Together { well stand.         {ARTEMY. We don&#x27;t mind standing. {LUKA. Please don&#x27;t trouble.</p>
+<p>KHLESTAKOV. Please sit down without the rank. [The Governor and the rest sit down.] I don&#x27;t like ceremony. On the contrary, I always like to slip by unobserved. But it&#x27;s impossible to conceal oneself, impossible. I no sooner show myself in a place than they say, &quot;There goes Ivan Aleksandrovich!&quot; Once I was even taken for the commander-in-chief. The soldiers rushed out of the guard-house and saluted. Afterwards an officer, an intimate acquaintance of mine, said to me: &quot;Why, old chap, we completely mistook you for the commander-in-chief.&quot;</p>
+<p>ANNA. Well, I declare!</p>
+<p>KHLESTAKOV. I know pretty actresses. I&#x27;ve written a number of vaudevilles, you know. I frequently meet literary men. I am on an intimate footing with Pushkin. I often say to him: &quot;Well, Pushkin, old boy, how goes it?&quot; &quot;So, so, partner,&quot; he&#x27;d reply, &quot;as usual.&quot; He&#x27;s a great original.</p>
+<p>ANNA. So you write too? How thrilling it must be to be an author! You write for the papers also, I suppose?</p>
+<p>KHLESTAKOV. Yes, for the papers, too. I am the author of a lot of works--The Marriage of Figaro, Robert le Diable, Norma. I don&#x27;t even remember all the names. I did it just by chance. I hadn&#x27;t meant to write, but a theatrical manager said, &quot;Won&#x27;t you please write something for me?&quot; I thought to myself: &quot;All right, why not?&quot; So I did it all in one evening, surprised everybody. I am extraordinarily light of thought. All that has appeared under the name of Baron Brambeus was written by me, and the The Frigate of Hope and The Moscow Telegraph.</p>
+<p>ANNA. What! So you are Brambeus?</p>
+<p>KHLESTAKOV. Why, yes. And I revise and whip all their articles into shape. Smirdin gives me forty thousand for it.</p>
+<p>ANNA. I suppose, then, that Yury Miroslavsky is yours too.</p>
+<p>KHLESTAKOV. Yes, it&#x27;s mine.</p>
+<p>ANNA. I guessed at once.</p>
+<p>MARYA. But, mamma, it says that it&#x27;s by Zagoskin.</p>
+<p>ANNA. There! I knew you&#x27;d be contradicting even here.</p>
+<p>KHLESTAKOV. Oh, yes, it&#x27;s so. That was by Zagoskin. But there is another Yury Miroslavsky which was written by me.</p>
+<p>ANNA. That&#x27;s right. I read yours. It&#x27;s charming.</p>
+<p>KHLESTAKOV. I admit I live by literature. I have the first house in St. Petersburg. It is well known as the house of Ivan Aleksandrovich. [Addressing the company in general.] If any of you should come to St. Petersburg, do please call to see me. I give balls, too, you know.</p>
+<p>ANNA. I can guess the taste and magnificence of those balls.</p>
+<p>KHLESTAKOV. Immense! For instance, watermelon will be served costing seven hundred rubles. The soup comes in the tureen straight from Paris by steamer. When the lid is raised, the aroma of the steam is like nothing else in the world. And we have formed a circle for playing whist--the Minister of Foreign Affairs, the French, the English and the German Ambassadors and myself. We play so hard we kill ourselves over the cards. There&#x27;s nothing like it. After it&#x27;s over I&#x27;m so tired I run home up the stairs to the fourth floor and tell the cook, &quot;Here, Marushka, take my coat&quot;--What am I talking about?--I forgot that I live on the first floor. One flight up costs me--My foyer before I rise in the morning is an interesting spectacle indeed--counts and princes jostling each other and humming like bees. All you hear is buzz, buzz, buzz. Sometimes the Minister--[The Governor and the rest rise in awe from their chairs.] Even my mail comes addressed &quot;Your Excellency.&quot; And once I even had charge of a department. A strange thing happened. The head of the department went off, disappeared, no one knew where. Of course there was a lot of talk about how the place would be filled, who would fill it, and all that sort of thing. There were ever so many generals hungry for the position, and they tried, but they couldn&#x27;t cope with it. It&#x27;s too hard. Just on the surface it looks easy enough; but when you come to examine it closely, it&#x27;s the devil of a job. When they saw they couldn&#x27;t manage, they came to me. In an instant the streets were packed full with couriers, nothing but couriers and couriers--thirty-five thousand of them, imagine! Pray, picture the situation to yourself! &quot;Ivan Aleksandrovich, do come and take the directorship of the department.&quot; I admit I was a little embarrassed. I came out in my dressing-gown. I wanted to decline, but I thought it might reach the Czar&#x27;s ears, and, besides, my official record--&quot;Very well, gentlemen,&quot; I said, &quot;I&#x27;ll accept the position, I&#x27;ll accept. So be it. But mind,&quot; I said, &quot;na-na-na, LOOK SHARP is the word with me, LOOK SHARP!&quot; And so it was. When I went through the offices of my department, it was a regular earthquake, Everyone trembled and shook like a leaf. [The Governor and the rest tremble with fright. Khlestakov works himself up more and more as he speaks.] Oh, I don&#x27;t like to joke. I got all of them thoroughly scared, I tell you. Even the Imperial Council is afraid of me. And really, that&#x27;s the sort I am. I don&#x27;t spare anybody. I tell them all, &quot;I know myself, I know myself.&quot; I am everywhere, everywhere. I go to Court daily. Tomorrow they are going to make me a field-marsh--</p>
+<p>He slips and almost falls, but is respectfully held up by the officials.</p>
+<p>GOVERNOR [walks up to him trembling from top to toe and speaking with a great effort]. Your Ex-ex-ex- KHLESTAKOV [curtly]. What is it?</p>
+<p>GOVERNOR. Your Ex-ex-ex- KHLESTAKOV [as before]. I can&#x27;t make out a thing, it&#x27;s all nonsense.</p>
+<p>GOVERNOR. Your Ex-ex--Your &#x27;lency--Your Excellency, wouldn&#x27;t you like to rest a bit? Here&#x27;s a room and everything you may need.</p>
+<p>KHLESTAKOV. Nonsense--rest! However, I&#x27;m ready for a rest. Your lunch was fine, gentlemen. I am satisfied, I am satisfied. [Declaiming.] Labardan! Labardan!</p>
+<p>He goes into the next room followed by the Governor.</p>
+<h2 class="chapter" id="c22">Scene VII</h2>
+<p>The same without Khlestakov and the Governor.</p>
+<p>BOBCHINSKY [to Dobchinsky]. There&#x27;s a man for you, Piotr Ivanovich. That&#x27;s what I call a man. I&#x27;ve never in my life been in the presence of so important a personage. I almost died of fright. What do you think is his rank, Piotr Ivanovich?</p>
+<p>DOBCHINSKY. I think he&#x27;s almost a general.</p>
+<p>BOBCHINSKY. And I think a general isn&#x27;t worth the sole of his boots. But if he is a general, then he must be the generalissimo himself. Did you hear how he bullies the Imperial Council? Come, let&#x27;s hurry off to Ammos Fiodorovich and Korobkin and tell them about it. Good-by, Anna Andreyevna.</p>
+<p>DOBCHINSKY. Good afternoon, godmother.</p>
+<p>Both go out.</p>
+<p>ARTEMY. It makes your heart sink and you don&#x27;t know why. We haven&#x27;t even our uniforms on. Suppose after he wakes up from his nap he goes and sends a report about us to St. Petersburg. [He goes out sunk in thought, with the School Inspector, both saying.] Good-by, madam.</p>
+<h2 class="chapter" id="c23">Scene VIII</h2>
+<p>Anna Andreyevna and Marya Antonovna.</p>
+<p>ANNA. Oh, how charming he is!</p>
+<p>MARYA. A perfect dear!</p>
+<p>ANNA. Such refined manners. You can recognize the big city article at once. How he carries himself, and all that sort of thing! Exquisite! I&#x27;m just crazy for young men like him. I am in ecstasies--beside myself. He liked me very much though. I noticed he kept looking at me all the time.</p>
+<p>MARYA. Oh, mamma, he looked at me.</p>
+<p>ANNA. No more nonsense please. It&#x27;s out of place now.</p>
+<p>MARYA. But really, mamma, he did look at me.</p>
+<p>ANNA. There you go! For God&#x27;s sake, don&#x27;t argue. You mustn&#x27;t. That&#x27;s enough. What would he be looking at you for? Please tell me, why would he be looking at you?</p>
+<p>MARYA. It&#x27;s true, mamma. He kept looking at me. He looked at me when he began to speak about literature and he looked at me afterwards, when he told about how he played whist with the ambassadors.</p>
+<p>ANNA. Well, maybe he looked at you once or twice and might have said to himself, &quot;Oh, well, I&#x27;ll give her a look.&quot;</p>
+<h2 class="chapter" id="c24">Scene IX</h2>
+<p>The same and the Governor.</p>
+<p>GOVERNOR. Sh-sh!</p>
+<p>ANNA. What is it?</p>
+<p>GOVERNOR. I wish I hadn&#x27;t given him so much to drink. Suppose even half of what he said is true? [Sunk in thought.] How can it not be true? A man in his cups is always on the surface. What&#x27;s in his heart is on his tongue. Of course he fibbed a little. No talking is possible without some lying. He plays cards with the ministers and he visits the Court. Upon my word the more you think the less you know what&#x27;s going on in your head. I&#x27;m as dizzy as if I were standing in a belfry, or if I were going to be hanged, the devil take it!</p>
+<p>ANNA. And I didn&#x27;t feel the least bit afraid. I simply saw a high-toned, cultured man of the world, and his rank and titles didn&#x27;t make me feel a bit queer.</p>
+<p>GOVERNOR. Oh, well, you women. To say women and enough&#x27;s said. Everything is froth and bubble to you. All of a sudden you blab out words that don&#x27;t make the least sense. The worst you&#x27;d get would be a flogging; but it means ruination to the husband.--Say, my dear, you are as familiar with him as if he were another Bobchinsky.</p>
+<p>ANNA. Leave that to us. Don&#x27;t bother about that. [Glancing at Marya.] We know a thing or two in that line.</p>
+<p>GOVERNOR [to himself]. Oh, what&#x27;s the good of talking to you! Confound it all! I can&#x27;t get over my fright yet. [Opens the door and calls.] Mishka, tell the sergeants, Svistunov and Derzhimorda, to come here. They are near the gate. [After a pause of silence.] The world has turned into a queer place. If at least the people were visible so you could see them; but they are such a skinny, thin race. How in the world could you tell what he is? After all you can tell a military man; but when he wears a frock-coat, it&#x27;s like a fly with clipped wings. He kept it up a long time in the inn, got off a lot of allegories and ambiguities so that you couldn&#x27;t make out head or tail. Now he&#x27;s shown himself up at last.--Spouted even more than necessary. It&#x27;s evident that he&#x27;s a young man.</p>
+<h2 class="chapter" id="c25">Scene X</h2>
+<p>The same and Osip. All rush to meet Osip, beckoning to him.</p>
+<p>ANNA. Come here, my good man.</p>
+<p>GOVERNOR. Hush! Tell me, tell me, is he asleep?</p>
+<p>OSIP. No, not yet. He&#x27;s stretching himself a little.</p>
+<p>ANNA. What&#x27;s your name?</p>
+<p>OSIP. Osip, madam.</p>
+<p>GOVERNOR [to his wife and daughter]. That&#x27;ll do, that&#x27;ll do. [To Osip.] Well, friend, did they give you a good meal?</p>
+<p>OSIP. Yes, sir, very good. Thank you kindly.</p>
+<p>ANNA. Your master has lots of counts and princes visiting him, hasn&#x27;t he?</p>
+<p>OSIP [aside]. What shall I say? Seeing as they&#x27;ve given me such good feed now, I s&#x27;pose they&#x27;ll do even better later. [Aloud.] Yes, counts do visit him.</p>
+<p>MARYA. Osip, darling, isn&#x27;t your master just grand?</p>
+<p>ANNA. Osip, please tell me, how is he--</p>
+<p>GOVERNOR. Do stop now. You just interfere with your silly talk. Well, friend, how--</p>
+<p>ANNA. What is your master&#x27;s rank?</p>
+<p>OSIP. The usual rank.</p>
+<p>GOVERNOR. For God&#x27;s sake, your stupid questions keep a person from getting down to business. Tell me, friend, what sort of a man is your master? Is he strict? Does he rag and bully a fellow--you know what I mean--does he or doesn&#x27;t he?</p>
+<p>OSIP. Yes, he likes things to be just so. He insists on things being just so.</p>
+<p>GOVERNOR. I like your face. You must be a fine man, friend. What--?</p>
+<p>ANNA. Listen, Osip, does your master wear uniform in St. Petersburg?</p>
+<p>GOVERNOR. Enough of your tattle now, really. This is a serious matter, a matter of life and death. (To Osip.) Yes, friend, I like you very much. It&#x27;s rather chilly now and when a man&#x27;s travelling an extra glass of tea or so is rather welcome. So here&#x27;s a couple of rubles for some tea.</p>
+<p>OSIP [taking the money.] Thank you, much obliged to you, sir. God grant you health and long life. You&#x27;ve helped a poor man.</p>
+<p>GOVERNOR. That&#x27;s all right. I&#x27;m glad to do it. Now, friend--</p>
+<p>ANNA. Listen, Osip, what kind of eyes does your master like most?</p>
+<p>MARYA. Osip, darling, what a dear nose your master has!</p>
+<p>GOVERNOR. Stop now, let me speak. [To Osip.] Tell me, what does your master care for most? I mean, when he travels what does he like?</p>
+<p>OSIP. As for sights, he likes whatever happens to come along. But what he likes most of all is to be received well and entertained well.</p>
+<p>GOVERNOR. Entertained well?</p>
+<p>OSIP. Yes, for instance, I&#x27;m nothing but a serf and yet he sees to it that I should be treated well, too. S&#x27;help me God! Say we&#x27;d stop at some place and he&#x27;d ask, &quot;Well, Osip, have they treated you well?&quot; &quot;No, badly, your Excellency.&quot; &quot;Ah,&quot; he&#x27;d say, &quot;Osip, he&#x27;s not a good host. Remind me when we get home.&quot; &quot;Oh, well,&quot; thinks I to myself [with a wave of his hand]. &quot;I am a simple person. God be with them.&quot;</p>
+<p>GOVERNOR. Very good. You talk sense. I&#x27;ve given you something for tea. Here&#x27;s something for buns, too.</p>
+<p>OSIP. You are too kind, your Excellency. [Puts the money in his pocket.] I&#x27;ll sure drink your health, sir.</p>
+<p>ANNA. Come to me, Osip, and I&#x27;ll give you some, too.</p>
+<p>MARYA. Osip, darling, kiss your master for me.</p>
+<p>Khlestakov is heard to give a short cough in the next room.</p>
+<p>GOVERNOR. Hush! [Rises on tip-toe. The rest of the conversation in the scene is carried on in an undertone.] Don&#x27;t make a noise, for heaven&#x27;s sake! Go, it&#x27;s enough.</p>
+<p>ANNA. Come, Mashenka, I&#x27;ll tell you something I noticed about our guest that I can&#x27;t tell you unless we are alone together. [They go out.]</p>
+<p>GOVERNOR. Let them talk away. If you went and listened to them, you&#x27;d want to stop up your ears. [To Osip.] Well, friend--</p>
+<h2 class="chapter" id="c26">Scene XI</h2>
+<p>The same, Derzhimorda and Svistunov.</p>
+<p>GOVERNOR. Sh--sh! Bandy-legged bears--thumping their boots on the floor! Bump, bump as if a thousand pounds were being unloaded from a wagon. Where in the devil have you been knocking about?</p>
+<p>DERZHIMORDA. I had your order--</p>
+<p>GOVERNOR. Hush! [Puts his hand over Derzhimorda&#x27;s mouth.] Like a bull bellowing. [Mocking him.] &quot;I had your order--&quot; Makes a noise like an empty barrel. [To Osip.] Go, friend, and get everything ready for your master. And you two, you stand on the steps and don&#x27;t you dare budge from the spot. And don&#x27;t let any strangers enter the house, especially the merchants. If you let a single one in, I&#x27;ll--The instant you see anybody with a petition, or even without a petition and he looks as if he wanted to present a petition against me, take him by the scruff of the neck, give him a good kick, [shows with his foot] and throw him out. Do you hear? Hush--hush!</p>
+<p>He goes out on tiptoe, preceded by the Sergeants.</p>
+<h3 class="sub">Curtain — Act IV</h3>
+<h2 class="chapter" id="c27">SCENE: Same as in Act III — Scene I</h2>
+<p>Enter cautiously, almost on tiptoe, Ammos Fiodorovich, Artemy Filippovich, the Postmaster, Luka Lukich, Dobchinsky and Bobchinsky in full dress-uniform.</p>
+<p>AMMOS. For God&#x27;s sake, gentlemen, quick, form your line, and let&#x27;s have more order. Why, man alive, he goes to Court and rages at the Imperial Council. Draw up in military line, strictly in military line. You, Piotr Ivanovich, take your place there, and you, Piotr Ivanovich, stand here. [Both the Piotr Ivanoviches run on tiptoe to the places indicated.]</p>
+<p>ARTEMY. Do as you please, Ammos Fiodorovich, I think we ought to try.</p>
+<p>AMMOS. Try what?</p>
+<p>ARTEMY. It&#x27;s clear what.</p>
+<p>AMMOS. Grease?</p>
+<p>ARTEMY. Exactly, grease.</p>
+<p>AMMOS. It&#x27;s risky, the deuce take it. He&#x27;ll fly into a rage at us. He&#x27;s a government official, you know. Perhaps it should be given to him in the form of a gift from the nobility for some sort of memorial?</p>
+<p>POSTMASTER. Or, perhaps, tell him some money has been sent here by post and we don&#x27;t know for whom?</p>
+<p>ARTEMY. You had better look out that he doesn&#x27;t send you by post a good long ways off. Look here, things of such a nature are not done this way in a well-ordered state. What&#x27;s the use of a whole regiment here? We must present ourselves to him one at a time, and do--what ought to be done, you know--so that eyes do not see and ears do not hear. That&#x27;s the way things are done in a well-ordered society. You begin it, Ammos Fiodorovich, you be the first.</p>
+<p>AMMOS. You had better go first. The distinguished guest has eaten in your institution.</p>
+<p>ARTEMY. Then Luka Lukich, as the enlightener of youth, should go first.</p>
+<p>LUKA. I can&#x27;t, I can&#x27;t, gentlemen. I confess I am so educated that the moment an official a single degree higher than myself speaks to me, my heart stands still and I get as tongue-tied as though my tongue were caught in the mud. No, gentlemen, excuse me. Please let me off.</p>
+<p>ARTEMY. It&#x27;s you who have got to do it, Ammos Fiodorovich. There&#x27;s no one else. Why, every word you utter seems to be issuing from Cicero&#x27;s mouth.</p>
+<p>AMMOS. What are you talking about! Cicero! The idea! Just because a man sometimes waxes enthusiastic over house dogs or hunting hounds.</p>
+<p>ALL [pressing him]. No, not over dogs, but the Tower of Babel, too. Don&#x27;t forsake us, Ammos Fiodorovich, help us. Be our Saviour!</p>
+<p>AMMOS. Let go of me, gentlemen.</p>
+<p>Footsteps and coughing are heard in Khlestakov&#x27;s room. All hurry to the door, crowding and jostling in their struggle to get out. Some are uncomfortably squeezed, and half-suppressed cries are heard.</p>
+<p>BOBCHINSKY&#x27;S VOICE. Oh, Piotr Ivanovich, you stepped on my foot.</p>
+<p>ARTEMY. Look out, gentlemen, look out. Give me a chance to atone for my sins. You are squeezing me to death.</p>
+<p>Exclamations of &quot;Oh! Oh!&quot; Finally they all push through the door, and the stage is left empty.</p>
+<h2 class="chapter" id="c28">Scene II</h2>
+<p>Enter Khlestakov, looking sleepy.</p>
+<p>KHLESTAKOV [alone]. I seem to have had a fine snooze. Where did they get those mattresses and feather beds from? I even perspired. After the meal yesterday they must have slipped something into me that knocked me out. I still feel a pounding in my head. I see I can have a good time here. I like hospitality, and I must say I like it all the more if people entertain me out of a pure heart and not from interested motives. The Governor&#x27;s daughter is not a bad one at all, and the mother is also a woman you can still--I don&#x27;t know, but I do like this sort of life.</p>
+<h2 class="chapter" id="c29">Scene III</h2>
+<p>Khlestakov and the Judge.</p>
+<p>JUDGE [comes in and stops. Talking to himself]. Oh, God, bring me safely out of this! How my knees are knocking together! [Drawing himself up and holding the sword in his hand. Aloud.] I have the honor to present myself--Judge of the District Court here, College Assessor Liapkin-Tiapkin.</p>
+<p>KHLESTAKOV. Please be seated. So you are the Judge here?</p>
+<p>JUDGE. I was elected by the nobility in 1816 and I have served ever since.</p>
+<p>KHLESTAKOV. Does it pay to be a judge?</p>
+<p>JUDGE. After serving three terms I was decorated with the Vladimir of the third class with the approval of the government. [Aside.] I have the money in my hand and my hand is on fire.</p>
+<p>KHLESTAKOV. I like the Vladimir. Anna of the third class is not so nice.</p>
+<p>JUDGE [slightly extending his balled fist. Aside]. Good God! I don&#x27;t know where I&#x27;m sitting. I feel as though I were on burning coals.</p>
+<p>KHLESTAKOV. What have you got in your hand there?</p>
+<p>AMMOS [getting all mixed up and dropping the bills on the floor]. Nothing.</p>
+<p>KHLESTAKOV. How so, nothing? I see money has dropped out of it.</p>
+<p>AMMOS [shaking all over]. Oh no, oh no, not at all! [Aside.] Oh, Lord! Now I&#x27;m under arrest and they&#x27;ve brought a wagon to take me.</p>
+<p>KHLESTAKOV. Yes, it IS money. [Picking it up.]</p>
+<p>AMMOS [aside]. It&#x27;s all over with me. I&#x27;m lost! I&#x27;m lost!</p>
+<p>KHLESTAKOV. I tell you what--lend it to me.</p>
+<p>AMMOS [eagerly]. Why, of course, of course--with the greatest pleasure. [Aside.] Bolder! Bolder! Holy Virgin, stand by me!</p>
+<p>KHLESTAKOV. I&#x27;ve run out of cash on the road, what with one thing and another, you know. I&#x27;ll let you have it back as soon as I get to the village.</p>
+<p>AMMOS. Please don&#x27;t mention it! It is a great honor to have you take it. I&#x27;ll try to deserve it--by putting forth the best of my feeble powers, by my zeal and ardor for the government. [Rises from the chair and draws himself up straight with his hands hanging at his sides.] I will not venture to disturb you longer with my presence. You don&#x27;t care to give any orders?</p>
+<p>KHLESTAKOV. What orders?</p>
+<p>JUDGE. I mean, would you like to give orders for the district court here?</p>
+<p>KHLESTAKOV. What for? I have nothing to do with the court now. No, nothing. Thank you very much.</p>
+<p>AMMOS [bowing and leaving. Aside.]. Now the town is ours.</p>
+<p>KHLESTAKOV. The Judge is a fine fellow.</p>
+<h2 class="chapter" id="c30">Scene IV</h2>
+<p>Khlestakov and the Postmaster.</p>
+<p>POSTMASTER [in uniform, sword in hand. Drawing himself up]. I have the honor to present myself--Postmaster, Court Councilor Shpekin.</p>
+<p>KHLESTAKOV. I&#x27;m glad to meet you. I like pleasant company very much. Take a seat. Do you live here all the time?</p>
+<p>POSTMASTER. Yes, sir. Quite so.</p>
+<p>KHLESTAKOV. I like this little town. Of course, there aren&#x27;t many people. It&#x27;s not very lively. But what of it? It isn&#x27;t the capital. Isn&#x27;t that so--it isn&#x27;t the capital?</p>
+<p>POSTMASTER. Quite so, quite so.</p>
+<p>KHLESTAKOV. It&#x27;s only in the capital that you find bon-ton and not a lot of provincial lubbers. What is your opinion? Isn&#x27;t that so?</p>
+<p>POSTMASTER. Quite so. [Aside.] He isn&#x27;t a bit proud. He inquires about everything.</p>
+<p>KHLESTAKOV. And yet you&#x27;ll admit that one can live happily in a little town.</p>
+<p>POSTMASTER. Quite so.</p>
+<p>KHLESTAKOV. In my opinion what you want is this--you want people to respect you and to love you sincerely. Isn&#x27;t that so?</p>
+<p>POSTMASTER. Exactly.</p>
+<p>KHLESTAKOV. I&#x27;m glad you agree with me. Of course, they call me queer. But that&#x27;s the kind of character I am. [Looking him in the face and talking to himself.] I think I&#x27;ll ask this postmaster for a loan. [Aloud.] A strange accident happened to me and I ran out of cash on the road. Can you lend me three hundred rubles?</p>
+<p>POSTMASTER. Of course. I shall esteem it a piece of great good fortune. I am ready to serve you with all my heart.</p>
+<p>KHLESTAKOV. Thank you very much. I must say, I hate like the devil to deny myself on the road. And why should I? Isn&#x27;t that so?</p>
+<p>POSTMASTER. Quite so. [Rises, draws himself up, with his sword in his hand.] I&#x27;ll not venture to disturb you any more. Would you care to make any remarks about the post office administration?</p>
+<p>KHLESTAKOV. No, nothing.</p>
+<p>The Postmaster bows and goes out.</p>
+<p>KHLESTAKOV [lighting a cigar]. It seems to me the Postmaster is a fine fellow, too. He&#x27;s certainly obliging. I like people like that.</p>
+<h2 class="chapter" id="c31">Scene V</h2>
+<p>Khlestakov and Luka Lukich, who is practically pushed in on the stage. A voice behind him is heard saying nearly aloud, &quot;Don&#x27;t be chickenhearted.&quot;</p>
+<p>LUKA [drawing himself up, trembling, with his hand on his sword]. I have the honor to present myself--School Inspector, Titular Councilor Khlopov.</p>
+<p>KHLESTAKOV. I&#x27;m glad to see you. Take a seat, take a seat. Will you have a cigar? [Offers him a cigar.]</p>
+<p>LUKA [to himself, hesitating]. There now! That&#x27;s something I hadn&#x27;t anticipated. To take or not to take?</p>
+<p>KHLESTAKOV. Take it, take it. It&#x27;s a pretty good cigar. Of course not what you get in St. Petersburg. There I used to smoke twenty-five cent cigars. You feel like kissing yourself after having smoked one of them. Here, light it. [Hands him a candle.]</p>
+<p>Luka Lukich tries to light the cigar shaking all over.</p>
+<p>KHLESTAKOV. Not that end, the other.</p>
+<p>LUKA [drops the cigar from fright, spits and shakes his hands. Aside]. Confound it! My damned timidity has ruined me!</p>
+<p>KHLESTAKOV. I see you are not a lover of cigars. I confess smoking is my weakness--smoking and the fair sex. Not for the life of me can I remain indifferent to the fair sex. How about you? Which do you like more, brunettes or blondes?</p>
+<p>Luka Lukich remains silent, at a complete loss what to say.</p>
+<p>KHLESTAKOV. Tell me frankly, brunettes or blondes?</p>
+<p>LUKA. I don&#x27;t dare to know.</p>
+<p>KHLESTAKOV. No, no, don&#x27;t evade. I&#x27;m bound to know your taste.</p>
+<p>LUKA. I venture to report to you--[Aside.] I don&#x27;t know what I&#x27;m saying.</p>
+<p>KHLESTAKOV. Ah, you don&#x27;t want to say. I suppose some little brunette or other has cast a spell over you. Confess, she has, hasn&#x27;t she?</p>
+<p>Luka Lukich remains silent.</p>
+<p>KHLESTAKOV. Ah, you&#x27;re blushing. You see. Why don&#x27;t you speak?</p>
+<p>LUKA. I&#x27;m scared, your Hon--High--Ex--[Aside.] Done for! My confounded tongue has undone me!</p>
+<p>KHLESTAKOV. You&#x27;re scared? There IS something awe-inspiring in my eyes, isn&#x27;t there? At least I know not a single woman can resist them. Isn&#x27;t that so?</p>
+<p>LUKA. Exactly.</p>
+<p>KHLESTAKOV. A strange thing happened to me on the road. I ran entirely out of cash. Can you lend me three hundred rubles?</p>
+<p>LUKA [clutching his pockets. Aside]. A fine business if I haven&#x27;t got the money! I have! I have! [Takes out the bills and gives them to him, trembling.]</p>
+<p>KHLESTAKOV. Thank you very much.</p>
+<p>LUKA [drawing himself up, with his hand on his sword]. I will not venture to disturb you with my presence any longer.</p>
+<p>KHLESTAKOV. Good-by.</p>
+<p>LUKA [dashes out almost at a run, saying aside.] Well, thank the Lord! Maybe he won&#x27;t inspect the schools.</p>
+<h2 class="chapter" id="c32">Scene VI</h2>
+<p>Khlestakov and Artemy Filippovich.</p>
+<p>ARTEMY [enters and draws himself up, his hand on his sword]. I have the honor to present myself--Superintendent of Charities, Court Councilor Zemlianika.</p>
+<p>KHLESTAKOV. Howdeedo? Please sit down.</p>
+<p>ARTEMY. I had the honor of receiving you and personally conducting you through the philanthropic institutions committed to my care.</p>
+<p>KHLESTAKOV. Oh, yes, I remember. You treated me to a dandy lunch.</p>
+<p>ARTEMY. I am glad to do all I can in behalf of my country.</p>
+<p>KHLESTAKOV. I admit, my weakness is a good cuisine.--Tell me, please, won&#x27;t you--it seems to me you were a little shorter yesterday, weren&#x27;t you?</p>
+<p>ARTEMY. Quite possible. [After a pause.] I may say I spare myself no pains and perform the duties of my office with the utmost zeal. [Draws his chair closer and speaks in a lowered tone.] There&#x27;s the postmaster, for example, he does absolutely nothing. Everything is in a fearful state of neglect. The mail is held up. Investigate for yourself, if you please, and you will see. The Judge, too, the man who was here just now, does nothing but hunt hares, and he keeps his dogs in the court rooms, and his conduct, if I must confess--and for the benefit of the fatherland, I must confess, though he is my relative and friend--his conduct is in the highest degree reprehensible. There is a squire here by the name of Dobchinsky, whom you were pleased to see. Well, the moment Dobchinsky leaves the house, the Judge is there with Dobchinsky&#x27;s wife. I can swear to it. You just take a look at the children. Not one of them resembles Dobchinsky. All of them, even the little girl, are the very image of the Judge.</p>
+<p>KHLESTAKOV. You don&#x27;t say so. I never imagined it.</p>
+<p>ARTEMY. Then take the School Inspector here. I don&#x27;t know how the government could have entrusted him with such an office. He&#x27;s worse than a Jacobin freethinker, and he instils such pernicious ideas into the minds of the young that I can hardly describe it. Hadn&#x27;t I better put it all down on paper, if you so order?</p>
+<p>KHLESTAKOV. Very well, why not? I should like it very much. I like to kill the weary hours reading something amusing, you know. What is your name? I keep forgetting.</p>
+<p>ARTEMY. Zemlianika.</p>
+<p>KHLESTAKOV. Oh, yes, Zemlianika. Tell me, Mr. Zemlianika, have you any children?</p>
+<p>ARTEMY. Of course. Five. Two are already grown up.</p>
+<p>KHLESTAKOV. You don&#x27;t say! Grown up! And how are they--how are they--a--a?</p>
+<p>ARTEMY. You mean that you deign to ask what their names are?</p>
+<p>KHLESTAKOV. Yes, yes, what are their names?</p>
+<p>ARTEMY. Nikolay, Ivan, Yelizaveta, Marya and Perepetuya.</p>
+<p>KHLESTAKOV. Good.</p>
+<p>ARTEMY. I don&#x27;t venture to disturb you any longer with my presence and rob you of your time dedicated to the performance of your sacred duties---[Bows and makes to go.]</p>
+<p>KHLESTAKOV [escorting him]. Not at all. What you told me is all very funny. Call again, please. I like that sort of thing very much. [Turns back and reopens the door, calling.] I say, there! What is your----I keep forgetting. What is your first name and your patronymic?</p>
+<p>ARTEMY. Artemy Filippovich.</p>
+<p>KHLESTAKOV. Do me a favor, Artemy Filippovich. A curious accident happened to me on the road. I&#x27;ve run entirely out of cash. Have you four hundred rubles to lend me?</p>
+<p>ARTEMY. I have.</p>
+<p>KHLESTAKOV. That comes in pat. Thank you very much.</p>
+<h2 class="chapter" id="c33">Scene VII</h2>
+<p>Khlestakov, Bobchinsky, and Dobchinsky.</p>
+<p>BOBCHINSKY. I have the honor to present myself--a resident of this town, Piotr, son of Ivan Bobchinsky.</p>
+<p>DOBCHINSKY. I am Piotr, son of Ivan Dobchinsky, a squire.</p>
+<p>KHLESTAKOV. Oh, yes, I&#x27;ve met you before. I believe you fell? How&#x27;s your nose?</p>
+<p>BOBCHINSKY. It&#x27;s all right. Please don&#x27;t trouble. It&#x27;s dried up, dried up completely.</p>
+<p>KHLESTAKOV. That&#x27;s nice. I&#x27;m glad it&#x27;s dried up. [Suddenly and abruptly.] Have you any money?</p>
+<p>DOBCHINSKY. Money? How&#x27;s that--money?</p>
+<p>KHLESTAKOV. A thousand rubles to lend me.</p>
+<p>BOBCHINSKY. Not so much as that, honest to God I haven&#x27;t. Have you, Piotr Ivanovich?</p>
+<p>DOBCHINSKY. I haven&#x27;t got it with me, because my money--I beg to inform you--is deposited in the State Savings Bank.</p>
+<p>KHLESTAKOV. Well, if you haven&#x27;t a thousand, then a hundred.</p>
+<p>BOBCHINSKY [fumbling in his pockets]. Have you a hundred rubles, Piotr Ivanovich? All I have is forty.</p>
+<p>DOBCHINSKY [examining his pocket-book]. I have only twenty-five.</p>
+<p>BOBCHINSKY. Look harder, Piotr Ivanovich. I know you have a hole in your pocket, and the money must have dropped down into it somehow.</p>
+<p>DOBCHINSKY. No, honestly, there isn&#x27;t any in the hole either.</p>
+<p>KHLESTAKOV. Well, never mind. I merely mentioned the matter. Sixty-five will do. [Takes the money.]</p>
+<p>DOBCHINSKY. May I venture to ask a favor of you concerning a very delicate matter?</p>
+<p>KHLESTAKOV. What is it?</p>
+<p>DOBCHINSKY. It&#x27;s a matter of an extremely delicate nature. My oldest son--I beg to inform you--was born before I was married.</p>
+<p>KHLESTAKOV. Indeed?</p>
+<p>DOBCHINSKY. That is, only in a sort of way. He is really my son, just as if he had been born in wedlock. I made up everything afterwards, set everything right, as it should be, with the bonds of matrimony, you know. Now, I venture to inform you, I should like to have him altogether--that is, I should like him to be altogether my legitimate son and be called Dobchinsky the same as I.</p>
+<p>KHLESTAKOV. That&#x27;s all right. Let him be called Dobchinsky. That&#x27;s possible.</p>
+<p>DOBCHINSKY. I shouldn&#x27;t have troubled you; but it&#x27;s a pity, he is such a talented youngster. He gives the greatest promise. He can recite different poems by heart; and whenever he gets hold of a penknife, he makes little carriages as skilfully as a conjurer. Here&#x27;s Piotr Ivanovich. He knows. Am I not right?</p>
+<p>BOBCHINSKY. Yes, the lad is very talented.</p>
+<p>KHLESTAKOV. All right, all right. I&#x27;ll try to do it for you. I&#x27;ll speak to--I hope--it&#x27;ll be done, it&#x27;ll all be done. Yes, yes. [Turning to Bobchinsky.] Have you anything you&#x27;d like to say to me?</p>
+<p>BOBCHINSKY. Why, of course. I have a most humble request to make.</p>
+<p>KHLESTAKOV. What is it?</p>
+<p>BOBCHINSKY. I beg your Highness or your Excellency most worshipfully, when you get back to St. Petersburg, please tell all the high personages there, the senators and the admirals, that Piotr Ivanovich Bobchinsky lives in this town. Say this: &quot;Piotr Ivanovich lives there.&quot;</p>
+<p>KHLESTAKOV. Very well.</p>
+<p>BOBCHINSKY. And if you should happen to speak to the Czar, then tell him, too: &quot;Your Majesty,&quot; tell him, &quot;Your Majesty, Piotr Ivanovich Bobchinsky lives in this town.&quot;</p>
+<p>KHLESTAKOV. Very well.</p>
+<p>BOBCHINSKY. Pardon me for having troubled you with my presence.</p>
+<p>KHLESTAKOV. Not at all, not at all. It was my pleasure. [Sees them to the door.]</p>
+<h2 class="chapter" id="c34">Scene VIII</h2>
+<p>KHLESTAKOV [alone]. My, there are a lot of officials here. They seem to be taking me for a government functionary. To be sure, I threw dust in their eyes yesterday. What a bunch of fools! I&#x27;ll write all about it to Triapichkin in St. Petersburg. He&#x27;ll write them up in the papers. Let him give them a nice walloping.--Ho, Osip, give me paper and ink.</p>
+<p>OSIP [looking in at the door]. D&#x27;rectly.</p>
+<p>KHLESTAKOV. Anybody gets caught in Triapichkin&#x27;s tongue had better look out. For the sake of a witticism he wouldn&#x27;t spare his own father. They are good people though, these officials. It&#x27;s a nice trait of theirs to lend me money. I&#x27;ll just see how much it all mounts up to. Here&#x27;s three hundred from the Judge and three hundred from the Postmaster--six hundred, seven hundred, eight hundred--What a greasy bill!--Eight hundred, nine hundred.--Oho! Rolls up to more than a thousand! Now, if I get you, captain, now! We&#x27;ll see who&#x27;ll do whom!</p>
+<h2 class="chapter" id="c35">Scene IX</h2>
+<p>Khlestakov and Osip entering with paper and ink.</p>
+<p>KHLESTAKOV. Now, you simpleton, you see how they receive and treat me. [Begins to write.]</p>
+<p>OSIP. Yes, thank God! But do you know what, Ivan Aleksandrovich?</p>
+<p>KHLESTAKOV. What?</p>
+<p>OSIP. Leave this place. Upon my word, it&#x27;s time.</p>
+<p>KHLESTAKOV [writing]. What nonsense! Why?</p>
+<p>OSIP. Just so. God be with them. You&#x27;ve had a good time here for two days. It&#x27;s enough. What&#x27;s the use of having anything more to do with them? Spit on them. You don&#x27;t know what may happen. Somebody else may turn up. Upon my word, Ivan Aleksandrovich. And the horses here are fine. We&#x27;ll gallop away like a breeze.</p>
+<p>KHLESTAKOV [writing]. No, I&#x27;d like to stay a little longer. Let&#x27;s go tomorrow.</p>
+<p>OSIP. Why tomorrow? Let&#x27;s go now, Ivan Aleksandrovich, now, &#x27;pon my word. To be sure, it&#x27;s a great honor and all that. But really we&#x27;d better go as quick as we can. You see, they&#x27;ve taken you for somebody else, honest. And your dad will be angry because you dilly-dallied so long. We&#x27;d gallop off so smartly. They&#x27;d give us first-class horses here.</p>
+<p>KHLESTAKOV [writing]. All right. But first take this letter to the postoffice, and, if you like, order post horses at the same time. Tell the postilions that they should drive like couriers and sing songs, and I&#x27;ll give them a ruble each. [Continues to write.] I wager Triapichkin will die laughing.</p>
+<p>OSIP. I&#x27;ll send the letter off by the man here. I&#x27;d rather be packing in the meanwhile so as to lose no time.</p>
+<p>KHLESTAKOV. All right. Bring me a candle.</p>
+<p>OSIP [outside the door, where he is heard speaking]. Say, partner, go to the post office and mail a letter, and tell the postmaster to frank it. And have a coach sent round at once, the very best courier coach; and tell them the master doesn&#x27;t pay fare. He travels at the expense of the government. And make them hurry, or else the master will be angry. Wait, the letter isn&#x27;t ready yet.</p>
+<p>KHLESTAKOV. I wonder where he lives now, on Pochtamtskaya or Grokhovaya Street. He likes to move often, too, to get out of paying rent. I&#x27;ll make a guess and send it to Pochtamtskaya Street. [Folds the letter and addresses it.]</p>
+<p>Osip brings the candle. Khlestakov seals the letter with sealing wax. At that moment Derzhimorda&#x27;s voice is heard saying: &quot;Where are you going, whiskers? You&#x27;ve been told that nobody is allowed to come in.&quot;</p>
+<p>KHLESTAKOV [giving the letter to Osip]. There, have it mailed.</p>
+<p>MERCHANT&#x27;S VOICE. Let us in, brother. You have no right to keep us out. We have come on business.</p>
+<p>DERZHIMORDA&#x27;S VOICE. Get out of here, get out of here! He doesn&#x27;t receive anybody. He&#x27;s asleep.</p>
+<p>The disturbance outside grows louder.</p>
+<p>KHLESTAKOV. What&#x27;s the matter there, Osip? See what the noise is about.</p>
+<p>OSIP [looking through the window]. There are some merchants there who want to come in, and the sergeant won&#x27;t let them. They are waving papers. I suppose they want to see you.</p>
+<p>KHLESTAKOV [going to the window]. What is it, friends?</p>
+<p>MERCHANT&#x27;S VOICE. We appeal for your protection. Give orders, your Lordship, that our petitions be received.</p>
+<p>KHLESTAKOV. Let them in, let them in. Osip, tell them to come in.</p>
+<p>Osip goes out.</p>
+<p>KHLESTAKOV [takes the petitions through the window, unfolds one of them and reads]. &quot;To his most honorable, illustrious financial Excellency, from the merchant Abdulin....&quot; The devil knows what this is! There&#x27;s no such title.</p>
+<h2 class="chapter" id="c36">Scene X</h2>
+<p>Khlestakov and Merchants, with a basket of wine and sugar loaves.</p>
+<p>KHLESTAKOV. What is it, friends?</p>
+<p>MERCHANTS. We beseech your favor.</p>
+<p>KHLESTAKOV. What do you want?</p>
+<p>MERCHANTS. Don&#x27;t ruin us, your Worship. We suffer insult and wrong wholly without cause.</p>
+<p>KHLESTAKOV. From whom?</p>
+<p>A MERCHANT. Why, from our governor here. Such a governor there never was yet in the world, your Worship. No words can describe the injuries he inflicts upon us. He has taken the bread out of our mouths by quartering soldiers on us, so that you might as well put your neck in a noose. He doesn&#x27;t treat you as you deserve. He catches hold of your beard and says, &quot;Oh, you Tartar!&quot; Upon my word, if we had shown him any disrespect, but we obey all the laws and regulations. We don&#x27;t mind giving him what his wife and daughter need for their clothes, but no, that&#x27;s not enough. So help me God! He comes to our shop and takes whatever his eyes fall on. He sees a piece of cloth and says, &quot;Oh, my friends, that&#x27;s a fine piece of goods. Take it to my house.&quot; So we take it to his house. It will be almost forty yards.</p>
+<p>KHLESTAKOV. Is it possible? My, what a swindler!</p>
+<p>MERCHANTS. So help us God! No one remembers a governor like him. When you see him coming you hide everything in the shop. It isn&#x27;t only that he wants a few delicacies and fineries. He takes every bit of trash, too--prunes that have been in the barrel seven years and that even the boy in my shop would not eat, and he grabs a fist full. His name day is St. Anthony&#x27;s, and you&#x27;d think there&#x27;s nothing else left in the world to bring him and that he doesn&#x27;t want any more. But no, you must give him more. He says St. Onufry&#x27;s is also his name day. What&#x27;s to be done? You have to take things to him on St. Onufry&#x27;s day, too.</p>
+<p>KHLESTAKOV. Why, he&#x27;s a plain robber.</p>
+<p>MERCHANTS. Yes, indeed! And try to contradict him, and he&#x27;ll fill your house with a whole regiment of soldiers. And if you say anything, he orders the doors closed. &quot;I won&#x27;t inflict corporal punishment on you,&quot; he says, &quot;or put you in the rack. That&#x27;s forbidden by law,&quot; he says. &quot;But I&#x27;ll make you swallow salt herring, my good man.&quot;</p>
+<p>KHLESTAKOV. What a swindler! For such things a man can be sent to Siberia.</p>
+<p>MERCHANTS. It doesn&#x27;t matter where you are pleased to send him. Only the farthest away from here the better. Father, don&#x27;t scorn to accept our bread and salt. We pay our respects to you with sugar and a basket of wine.</p>
+<p>KHLESTAKOV. No, no. Don&#x27;t think of it. I don&#x27;t take bribes. Oh, if, for example, you would offer me a loan of three hundred rubles, that&#x27;s quite different. I am willing to take a loan.</p>
+<p>MERCHANTS. If you please, father. [They take out money.] But what is three hundred? Better take five hundred. Only help us.</p>
+<p>KHLESTAKOV. Very well. About a loan I won&#x27;t say a word. I&#x27;ll take it.</p>
+<p>MERCHANTS [proffering him the money on a silver tray]. Do please take the tray, too.</p>
+<p>KHLESTAKOV. Very well. I can take the tray, too.</p>
+<p>MERCHANTS [bowing]. Then take the sugar at the same time.</p>
+<p>KHLESTAKOV. Oh, no. I take no bribes.</p>
+<p>OSIP. Why don&#x27;t you take the sugar, your Highness? Take it. Everything will come in handy on the road. Give here the sugar and that case. Give them here. It&#x27;ll all be of use. What have you got there--a string? Give it here. A string will be handy on the road, too, if the coach or something else should break--for tying it up.</p>
+<p>MERCHANTS. Do us this great favor, your illustrious Highness. Why, if you don&#x27;t help us in our appeal to you, then we simply don&#x27;t know how we are to exist. We might as well put our necks in a noose.</p>
+<p>KHLESTAKOV. Positively, positively. I shall exert my efforts in your behalf.</p>
+<p>[The Merchants leave. A woman&#x27;s voice is heard saying:]</p>
+<p>&quot;Don&#x27;t you dare not to let me in. I&#x27;ll make a complaint against you to him himself. Don&#x27;t push me that way. It hurts.&quot;</p>
+<p>KHLESTAKOV. Who is there? [Goes to the window.] What is it, mother?</p>
+<p>[Two women&#x27;s voices are heard:] &quot;We beseech your grace, father. Give orders, your Lordship, for us to be heard.&quot;</p>
+<p>KHLESTAKOV. Let her in.</p>
+<h2 class="chapter" id="c37">Scene XI</h2>
+<p>Khlestakov, the Locksmith&#x27;s Wife, and the non-commissioned Officer&#x27;s Widow.</p>
+<p>LOCK.&#x27;S WIFE [kneeling]. I beseech your grace.</p>
+<p>WIDOW. I beseech your grace.</p>
+<p>KHLESTAKOV. Who are you?</p>
+<p>WIDOW. Ivanova, widow of a non-commissioned officer.</p>
+<p>LOCK.&#x27;S WIFE. Fevronya Petrova Poshliopkina, the wife of a locksmith, a burgess of this town. My father--</p>
+<p>KHLESTAKOV. Stop! One at a time. What do you want?</p>
+<p>LOCK.&#x27;S WIFE. I beg for your grace. I beseech your aid against the governor. May God send all evil upon him. May neither he nor his children nor his uncles nor his aunts ever prosper in any of their undertakings.</p>
+<p>KHLESTAKOV. What&#x27;s the matter?</p>
+<p>LOCK.&#x27;S WIFE. He ordered my husband to shave his forehead as a soldier, and our turn hadn&#x27;t come, and it is against the law, my husband being a married man.</p>
+<p>KHLESTAKOV. How could he do it, then?</p>
+<p>LOCK.&#x27;S WIFE. He did it, he did it, the blackguard! May God smite him both in this world and the next. If he has an aunt, may all harm descend upon her. And if his father is living, may the rascal perish, may he choke to death. Such a cheat! The son of the tailor should have been levied. And he is a drunkard, too. But his parents gave the governor a rich present, so he fastened on the son of the tradeswoman, Panteleyeva. And Panteleyeva also sent his wife three pieces of linen. So then he comes to me. &quot;What do you want your husband for?&quot; he says. &quot;He isn&#x27;t any good to you any more.&quot; It&#x27;s for me to know whether he is any good or not. That&#x27;s my business. The old cheat! &quot;He&#x27;s a thief,&quot; he says. &quot;Although he hasn&#x27;t stolen anything, that doesn&#x27;t matter. He is going to steal. And he&#x27;ll be recruited next year anyway.&quot; How can I do without a husband? I am not a strong woman. The skunk! May none of his kith and kin ever see the light of God. And if he has a mother-in-law, may she, too,--</p>
+<p>KHLESTAKOV. All right, all right. Well, and you?</p>
+<p>[Addressing the Widow and leading the Locksmith&#x27;s Wife to the door.]</p>
+<p>LOCK.&#x27;S WIFE [leaving]. Don&#x27;t forget, father. Be kind and gracious to me.</p>
+<p>WIDOW. I have come to complain against the Governor, father.</p>
+<p>KHLESTAKOV. What is it? What for? Be brief.</p>
+<p>WIDOW. He flogged me, father.</p>
+<p>KHLESTAKOV. How so?</p>
+<p>WIDOW. By mistake, my father. Our women got into a squabble in the market, and when the police came, it was all over, and they took me and reported me--I couldn&#x27;t sit down for two days.</p>
+<p>KHLESTAKOV. But what&#x27;s to be done now?</p>
+<p>WIDOW. There&#x27;s nothing to be done, of course. But if you please, order him to pay a fine for the mistake. I can&#x27;t undo my luck. But the money would be very useful to me now.</p>
+<p>KHLESTAKOV. All right, all right. Go now, go. I&#x27;ll see to it. [Hands with petitions are thrust through the window.] Who else is out there? [Goes to the window.] No, no. I don&#x27;t want to, I don&#x27;t want to. [Leaves the window.] I&#x27;m sick of it, the devil take it! Don&#x27;t let them in, Osip.</p>
+<p>OSIP [calling through the window]. Go away, go away! He has no time. Come tomorrow.</p>
+<p>The door opens and a figure appears in a shag cloak, with unshaven beard, swollen lip, and a bandage over his cheek. Behind him appear a whole line of others.</p>
+<p>OSIP. Go away, go away! What are you crowding in here for?</p>
+<p>He puts his hands against the stomach of the first one, and goes out through the door, pushing him and banging the door behind.</p>
+<h2 class="chapter" id="c38">Scene XII</h2>
+<p>Khlestakov and Marya Antonovna.</p>
+<p>MARYA. Oh!</p>
+<p>KHLESTAKOV. What frightened you so, mademoiselle?</p>
+<p>MARYA. I wasn&#x27;t frightened.</p>
+<p>KHLESTAKOV [showing off]. Please, miss. It&#x27;s a great pleasure to me that you took me for a man who--May I venture to ask you where you were going?</p>
+<p>MARYA. I really wasn&#x27;t going anywhere.</p>
+<p>KHLESTAKOV. But why weren&#x27;t you going anywhere?</p>
+<p>MARYA. I was wondering whether mamma was here.</p>
+<p>KHLESTAKOV. No. I&#x27;d like to know why you weren&#x27;t going anywhere.</p>
+<p>MARYA. I should have been in your way. You were occupied with important matters.</p>
+<p>KHLESTAKOV [showing off]. Your eyes are better than important matters. You cannot possibly disturb me. No, indeed, by no means. On the contrary, you afford me great pleasure.</p>
+<p>MARYA. You speak like a man from the capital.</p>
+<p>KHLESTAKOV. For such a beautiful lady as you. May I give myself the pleasure of offering you a chair? But no, you should have, not a chair, but a throne.</p>
+<p>MARYA. I really don&#x27;t know--I really must go [She sits down.]</p>
+<p>KHLESTAKOV. What a beautiful scarf that is.</p>
+<p>MARYA. You are making fun of me. You&#x27;re only ridiculing the provincials.</p>
+<p>KHLESTAKOV. Oh, mademoiselle, how I long to be your scarf, so that I might embrace your lily neck.</p>
+<p>MARYA. I haven&#x27;t the least idea what you are talking about--scarf!--Peculiar weather today, isn&#x27;t it?</p>
+<p>KHLESTAKOV. Your lips, mademoiselle, are better than any weather.</p>
+<p>MARYA. You are just saying that--I should like to ask you--I&#x27;d rather you would write some verses in my album for a souvenir. You must know very many.</p>
+<p>KHLESTAKOV. Anything you desire, mademoiselle. Ask! What verses will you have?</p>
+<p>MARYA. Any at all. Pretty, new verses.</p>
+<p>KHLESTAKOV. Oh, what are verses! I know a lot of them.</p>
+<p>MARYA. Well, tell me. What verses will you write for me?</p>
+<p>KHLESTAKOV. What&#x27;s the use? I know them anyway.</p>
+<p>MARYA. I love them so.</p>
+<p>KHLESTAKOV. I have lots of them--of every sort. If you like, for example, I&#x27;ll give you this: &quot;Oh, thou, mortal man, who in thy anguish murmurest against God--&quot; and others. I can&#x27;t remember them now. Besides, it&#x27;s all bosh. I&#x27;d rather offer you my love instead, which ever since your first glance--[Moves his chair nearer.]</p>
+<p>MARYA. Love? I don&#x27;t understand love. I never knew what love is. [Moves her chair away.]</p>
+<p>KHLESTAKOV. Why do you move your chair away? It is better for us to sit near each other.</p>
+<p>MARYA [moving away]. Why near? It&#x27;s all the same if it&#x27;s far away.</p>
+<p>KHLESTAKOV [moving nearer]. Why far? It&#x27;s all the same if it&#x27;s near.</p>
+<p>MARYA [moving away]. But what for?</p>
+<p>KHLESTAKOV [moving nearer]. It only seems near to you. Imagine it&#x27;s far. How happy I would be, mademoiselle, if I could clasp you in my embrace.</p>
+<p>MARYA [looking through the window]. What is that? It looked as if something had flown by. Was it a magpie or some other bird?</p>
+<p>KHLESTAKOV [kisses her shoulder and looks through the window]. It&#x27;s a magpie.</p>
+<p>MARYA [rises indignantly]. No, that&#x27;s too much--Such rudeness, such impertinence.</p>
+<p>KHLESTAKOV [holding her back]. Forgive me, mademoiselle. I did it only out of love--only out of love, nothing else.</p>
+<p>MARYA. You take me for a silly provincial wench. [Struggles to go away.]</p>
+<p>KHLESTAKOV [still holding her back]. It&#x27;s out of love, really--out of love. It was just a little fun. Marya Antonovna, don&#x27;t be angry. I&#x27;m ready to beg your forgiveness on my knees. [Falls on his knees.] Forgive me, do forgive me! You see, I am on my knees.</p>
+<h2 class="chapter" id="c39">Scene XIII</h2>
+<p>The same and Anna Andreyevna.</p>
+<p>ANNA [seeing Khlestakov on his knees]. Oh, what a situation!</p>
+<p>KHLESTAKOV [rising]. Oh, the devil!</p>
+<p>ANNA [to Marya]. What does this mean? What does this behavior mean?</p>
+<p>MARYA. I, mother--</p>
+<p>ANNA. Go away from here. Do you hear? And don&#x27;t you dare to show your face to me. [Marya goes out in tears.] Excuse me. I must say I&#x27;m greatly astonished.</p>
+<p>KHLESTAKOV [aside]. She&#x27;s very appetizing, too. She&#x27;s not bad-looking, either. [Flings himself on his knees.] Madam, you see I am burning with love.</p>
+<p>ANNA. What! You on your knees? Please get up, please get up. This floor isn&#x27;t very clean.</p>
+<p>KHLESTAKOV. No, I must be on my knees before you. I must. Pronounce the verdict. Is it life or death?</p>
+<p>ANNA. But please--I don&#x27;t quite understand the significance of your words. If I am not mistaken, you are making a proposal for my daughter.</p>
+<p>KHLESTAKOV. No, I am in love with you. My life hangs by a thread. If you don&#x27;t crown my steadfast love, then I am not fit to exist in this world. With a burning flame in my bosom, I pray for your hand.</p>
+<p>ANNA. But please remember I am in a certain way--married.</p>
+<p>KHLESTAKOV. That&#x27;s nothing. Love knows no distinction. It was Karamzin who said: &quot;The laws condemn.&quot; We will fly in the shadow of a brook. Your hand! I pray for your hand!</p>
+<h2 class="chapter" id="c40">Scene XIV</h2>
+<p>The same and Marya Antonovna.</p>
+<p>MARYA [running in suddenly]. Mamma, papa says you should--[seeing Khlestakov on his knees, exclaims:] Oh, what a situation!</p>
+<p>ANNA. Well, what do you want? Why did you come in here? What for? What sort of flightiness is this? Breaks in like a cat leaping out of smoke. Well, what have you found so wonderful? What&#x27;s gotten into your head again? Really, she behaves like a child of three. She doesn&#x27;t act a bit like a girl of eighteen, not a bit. I don&#x27;t know when you&#x27;ll get more sense into your head, when you&#x27;ll behave like a decent, well-bred girl, when you&#x27;ll know what good manners are and a proper demeanor.</p>
+<p>MARYA [through her tears]. Mamma, I really didn&#x27;t know--</p>
+<p>ANNA. There&#x27;s always a breeze blowing through your head. You act like Liapkin-Tiapkin&#x27;s daughter. Why should you imitate them? You shouldn&#x27;t imitate them. You have other examples to follow. You have your mother before you. She&#x27;s the example to follow.</p>
+<p>KHLESTAKOV [seizing Marya&#x27;s hand]. Anna Andreyevna, don&#x27;t oppose our happiness. Give your blessing to our constant love.</p>
+<p>ANNA [in surprise]. So it&#x27;s in her you are--</p>
+<p>KHLESTAKOV. Decide--life or death?</p>
+<p>ANNA. Well, there, you fool, you see? Our guest is pleased to go down on his knees for such trash as you. You, running in suddenly as if you were out of your mind. Really, it would be just what you deserve, if I refused. You are not worthy of such happiness.</p>
+<p>MARYA. I won&#x27;t do it again, mamma, really I won&#x27;t.</p>
+<h2 class="chapter" id="c41">Scene XV</h2>
+<p>The same and the Governor in precipitate haste.</p>
+<p>GOVERNOR. Your Excellency, don&#x27;t ruin me, don&#x27;t ruin me.</p>
+<p>KHLESTAKOV. What&#x27;s the matter?</p>
+<p>GOVERNOR. The merchants have complained to your Excellency. I assure you on my honor that not one half of what they said is so. They themselves are cheats. They give short measure and short weight. The officer&#x27;s widow lied to you when she said I flogged her. She lied, upon my word, she lied. She flogged herself.</p>
+<p>KHLESTAKOV. The devil take the officer&#x27;s widow. What do I care about the officer&#x27;s widow.</p>
+<p>GOVERNOR. Don&#x27;t believe them, don&#x27;t believe them. They are rank liars; a mere child wouldn&#x27;t believe them. They are known all over town as liars. And as for cheating, I venture to inform you that there are no swindlers like them in the whole of creation.</p>
+<p>ANNA. Do you know what honor Ivan Aleksandrovich is bestowing upon us? He is asking for our daughter&#x27;s hand.</p>
+<p>GOVERNOR. What are you talking about? Mother has lost her wits. Please do not be angry, your Excellency. She has a touch of insanity. Her mother was like that, too.</p>
+<p>KHLESTAKOV. Yes, I am really asking for your daughter&#x27;s hand. I am in love with her.</p>
+<p>GOVERNOR. I cannot believe it, your Excellency.</p>
+<p>ANNA. But when you are told!</p>
+<p>KHLESTAKOV. I am not joking. I could go crazy, I am so in love.</p>
+<p>GOVERNOR. I daren&#x27;t believe it. I am unworthy of such an honor.</p>
+<p>KHLESTAKOV. If you don&#x27;t consent to give me your daughter Marya Antonovna&#x27;s hand, then I am ready to do the devil knows what.</p>
+<p>GOVERNOR. I cannot believe it. You deign to joke, your Excellency.</p>
+<p>ANNA. My, what a blockhead! Really! When you are told over and over again!</p>
+<p>GOVERNOR. I can&#x27;t believe it.</p>
+<p>KHLESTAKOV. Give her to me, give her to me! I am a desperate man and I may do anything. If I shoot myself, you will have a law-suit on your hands.</p>
+<p>GOVERNOR. Oh, my God! I am not guilty either in thought or in action. Please do not be angry. Be pleased to act as your mercy wills. Really, my head is in such a state I don&#x27;t know what is happening. I have turned into a worse fool than I&#x27;ve ever been in my life.</p>
+<p>ANNA. Well, give your blessing.</p>
+<p>Khlestakov goes up to Marya Antonovna.</p>
+<p>GOVERNOR. May God bless you, but I am not guilty. [Khlestakov kisses Marya. The Governor looks at them.] What the devil! It&#x27;s really so. [Rubs his eyes.] They are kissing. Oh, heavens! They are kissing. Actually to be our son-in-law! [Cries out, jumping with glee.] Ho, Anton! Ho, Anton! Ho, Governor! So that&#x27;s the turn events have taken!</p>
+<h2 class="chapter" id="c42">Scene XVI</h2>
+<p>The same and Osip.</p>
+<p>OSIP. The horses are ready.</p>
+<p>KHLESTAKOV. Oh! All right. I&#x27;ll come presently.</p>
+<p>GOVERNOR. What&#x27;s that? Are you leaving?</p>
+<p>KHLESTAKOV. Yes, I&#x27;m going.</p>
+<p>GOVERNOR. Then when--that is--I thought you were pleased to hint at a wedding.</p>
+<p>KHLESTAKOV. Oh--for one minute only--for one day--to my uncle, a rich old man. I&#x27;ll be back tomorrow.</p>
+<p>GOVERNOR. We would not venture, of course, to hold you back, and we hope for your safe return.</p>
+<p>KHLESTAKOV. Of course, of course, I&#x27;ll come back at once. Good-by, my dear--no, I simply can&#x27;t express my feelings. Good-by, my heart. [Kisses Marya&#x27;s hand.]</p>
+<p>GOVERNOR. Don&#x27;t you need something for the road? It seems to me you were pleased to be short of cash.</p>
+<p>KHLESTAKOV, Oh, no, what for? [After a little thought.] However, if you like.</p>
+<p>GOVERNOR. How much will you have?</p>
+<p>KHLESTAKOV. You gave me two hundred then, that is, not two hundred, but four hundred--I don&#x27;t want to take advantage of your mistake--you might let me have the same now so that it should be an even eight hundred.</p>
+<p>GOVERNOR. Very well. [Takes the money out of his pocket-book.] The notes happen to be brand-new, too, as though on purpose.</p>
+<p>KHLESTAKOV. Oh, yes. [Takes the bills and looks at them.] That&#x27;s good. They say new money means good luck.</p>
+<p>GOVERNOR. Quite right.</p>
+<p>KHLESTAKOV. Good-by, Anton Antonovich. I am very much obliged to you for your hospitality. I admit with all my heart that I have never got such a good reception anywhere. Good-by, Anna Andreyevna. Good-by, my sweet-heart, Marya Antonovna.</p>
+<p>All go out.</p>
+<p>Behind the Scenes.</p>
+<p>KHLESTAKOV. Good-by, angel of my soul, Marya Antonovna.</p>
+<p>GOVERNOR. What&#x27;s that? You are going in a plain mail-coach?</p>
+<p>KHLESTAKOV. Yes, I&#x27;m used to it. I get a headache from a carriage with springs.</p>
+<p>POSTILION. Ho!</p>
+<p>GOVERNOR. Take a rug for the seat at least. If you say so, I&#x27;ll tell them to bring a rug.</p>
+<p>KHLESTAKOV. No, what for? It&#x27;s not necessary. However, let them bring a rug if you please.</p>
+<p>GOVERNOR. Ho, Avdotya. Go to the store-room and bring the very best rug from there, the Persian rug with the blue ground. Quick!</p>
+<p>POSTILION. Ho!</p>
+<p>GOVERNOR. When do you say we are to expect you back?</p>
+<p>KHLESTAKOV. Tomorrow, or the day after.</p>
+<p>OSIP. Is this the rug? Give it here. Put it there. Now put some hay on this side.</p>
+<p>POSTILION. Ho!</p>
+<p>OSIP. Here, on this side. More. All right. That will be fine. [Beats the rug down with his hand.] Now take the seat, your Excellency.</p>
+<p>KHLESTAKOV. Good-by, Anton Antonovich.</p>
+<p>GOVERNOR. Good-by, your Excellency.</p>
+<p>ANNA } MARYA} Good-by, Ivan Aleksandrovich.</p>
+<p>KHLESTAKOV. Good-by, mother.</p>
+<p>POSTILION. Get up, my boys!</p>
+<p>The bell rings and the curtain drops.</p>
+<h2 class="chapter" id="c43">Act V — SCENE: Same as in Act IV.</h2>
+<h2 class="chapter" id="c44">Scene I</h2>
+<p>Governor, Anna Andreyevna, and Marya Antonovna.</p>
+<p>GOVERNOR. Well, Anna Andreyevna, eh? Did you ever imagine such a thing? Such a rich prize? I&#x27;ll be--. Well, confess frankly, it never occurred to you even in your dreams, did it? From just a simple governor&#x27;s wife suddenly--whew!--I&#x27;ll be hanged!--to marry into the family of such a big gun.</p>
+<p>ANNA. Not at all. I knew it long ago. It seems wonderful to you because you are so plain. You never saw decent people.</p>
+<p>GOVERNOR. I&#x27;m a decent person myself, mother. But, really, think, Anna Andreyevna, what gay birds we have turned into now, you and I. Eh, Anna Andreyevna? High fliers, by Jove! Wait now, I&#x27;ll give those fellows who were so eager to present their petitions and denunciations a peppering. Ho, who&#x27;s there? [Enter a Sergeant.] Is it you, Ivan Karpovich? Call those merchants here, brother, won&#x27;t you? I&#x27;ll give it to them, the scoundrels! To make such complaints against me! The damned pack of Jews! Wait, my dear fellows. I used to dose you down to your ears. Now I&#x27;ll dose you down to your beards. Make a list of all who came to protest against me, especially the mean petty scribblers who cooked the petitions up for them, and announce to all that they should know what honor the Heavens have bestowed upon the Governor, namely this: that he is marrying his daughter, not to a plain ordinary man, but to one the like of whom has never yet been in the world, who can do everything, everything, everything, everything! Proclaim it to all so that everybody should know. Shout it aloud to the whole world. Ring the bell, the devil take it! It is a triumph, and we will make it a triumph. [The Sergeant goes out.] So that&#x27;s the way, Anna Andreyevna, eh? What shall we do now? Where shall we live? Here or in St. Pete?</p>
+<p>ANNA. In St. Petersburg, of course. How could we remain here?</p>
+<p>GOVERNOR. Well, if St. Pete, then St. Pete. But it would be good here, too. I suppose the governorship could then go to the devil, eh, Anna Andreyevna?</p>
+<p>ANNA. Of course. What&#x27;s a governorship?</p>
+<p>GOVERNOR. Don&#x27;t you think, Anna Andreyevna, I can rise to a high rank now, he being hand in glove with all the ministers, and visiting the court? In time I can be promoted to a generalship. What do you think, Anna Andreyevna? Can I become a general?</p>
+<p>ANNA. I should say so. Of course you can.</p>
+<p>GOVERNOR. Ah, the devil take it, it&#x27;s nice to be a general. They hang a ribbon across your shoulders. What ribbon is better, the red St. Anne or the blue St. Andrew?</p>
+<p>ANNA. The blue St. Andrew, of course.</p>
+<p>GOVERNOR. What! My, you&#x27;re aiming high. The red one is good, too. Why does one want to be a general? Because when you go travelling, there are always couriers and aides on ahead with &quot;Horses&quot;! And at the stations they refuse to give the horses to others. They all wait, all those councilors, captains, governors, and you don&#x27;t take the slightest notice of them. You dine somewhere with the governor-general. And the town-governor--I&#x27;ll keep him waiting at the door. Ha, ha, ha! [He bursts into a roar of laughter, shaking all over.] That&#x27;s what&#x27;s so alluring, confound it!</p>
+<p>ANNA. You always like such coarse things. You must remember that our life will have to be completely changed, that your acquaintances will not be a dog-lover of a judge, with whom you go hunting hares, or a Zemlianika. On the contrary, your acquaintances will be people of the most refined type, counts, and society aristocrats. Only really I am afraid of you. You sometimes use words that one never hears in good society.</p>
+<p>GOVERNOR. What of it? A word doesn&#x27;t hurt.</p>
+<p>ANNA. It&#x27;s all right when you are a town-governor, but there the life is entirely different.</p>
+<p>GOVERNOR. Yes, they say there are two kinds of fish there, the sea-eel and the smelt, and before you start to eat them, the saliva flows in your mouth.</p>
+<p>ANNA. That&#x27;s all he thinks about--fish. I shall insist upon our house being the first in the capital and my room having so much amber in it that when you come in you have to shut your eyes. [She shuts her eyes and sniffs.] Oh, how good!</p>
+<h2 class="chapter" id="c45">Scene II</h2>
+<p>The same and the Merchants.</p>
+<p>GOVERNOR. Ah, how do you do, my fine fellows?</p>
+<p>MERCHANTS [bowing]. We wish you health, father.</p>
+<p>GOVERNOR. Well, my dearly beloved friends, how are you? How are your goods selling? So you complained against me, did you, you tea tanks, you scurvy hucksters? Complain, against me? You crooks, you pirates, you. Did you gain a lot by it, eh? Aha, you thought you&#x27;d land me in prison? May seven devils and one she-devil take you! Do you know that--</p>
+<p>ANNA. Good heavens, Antosha, what words you use!</p>
+<p>GOVERNOR [irritated]. Oh, it isn&#x27;t a matter of words now. Do you know that the very official to whom you complained is going to marry my daughter? Well, what do you say to that? Now I&#x27;ll make you smart. You cheat the people, you make a contract with the government, and you do the government out of a hundred thousand, supplying it with rotten cloth; and when you give fifteen yards away gratis, you expect a reward besides. If they knew, they would send you to--And you strut about sticking out your paunches with a great air of importance: &quot;I&#x27;m a merchant, don&#x27;t touch me.&quot; &quot;We,&quot; you say, &quot;are as good as the nobility.&quot; Yes, the nobility, you monkey-faces. The nobleman is educated. If he gets flogged in school, it is for a purpose, to learn something useful. And you--start out in life learning trickery. Your master beats you for not being able to cheat. When you are still little boys and don&#x27;t know the Lord&#x27;s Prayer, you already give short measure and short weight. And when your bellies swell and your pockets fill up, then you assume an air of importance. Whew! What marvels! Because you guzzle sixteen samovars full a day, that&#x27;s why you put on an air of importance. I spit on your heads and on your importance.</p>
+<p>MERCHANTS [bowing]. We are guilty, Anton Antonovich.</p>
+<p>GOVERNOR. Complaining, eh? And who helped you with that grafting when you built a bridge and charged twenty thousand for wood when there wasn&#x27;t even a hundred rubles&#x27; worth used? I did. You goat beards. Have you forgotten? If I had informed on you, I could have despatched you to Siberia. What do you say to that?</p>
+<p>A MERCHANT. I&#x27;m guilty before God, Anton Antonovich. The evil spirit tempted me. We will never complain against you again. Ask whatever satisfaction you want, only don&#x27;t be angry.</p>
+<p>GOVERNOR. Don&#x27;t be angry! Now you are crawling at my feet. Why? Because I am on top now. But if the balance dipped the least bit your way, then you would trample me in the very dirt--you scoundrels! And you would crush me under a beam besides.</p>
+<p>MERCHANTS [prostrating themselves]. Don&#x27;t ruin us, Anton Antonovich.</p>
+<p>GOVERNOR. Don&#x27;t ruin us! Now you say, don&#x27;t ruin us! And what did you say before? I could give you--[shrugging his shoulders and throwing up his hands.] Well, God forgive you. Enough. I don&#x27;t harbor malice for long. Only look out now. Be on your guard. My daughter is going to marry, not an ordinary nobleman. Let your congratulations be--you understand? Don&#x27;t try to get away with a dried sturgeon or a loaf of sugar. Well, leave now, in God&#x27;s name.</p>
+<p>Merchants leave.</p>
+<h2 class="chapter" id="c46">Scene III</h2>
+<p>The same, Ammos Fiodorovich, Artemy Filippovich, then Rastakovsky.</p>
+<p>AMMOS [in the doorway]. Are we to believe the report, Anton Antonovich? A most extraordinary piece of good fortune has befallen you, hasn&#x27;t it?</p>
+<p>ARTEMY. I have the honor to congratulate you on your unusual good fortune. I was glad from the bottom of my heart when I heard it. [Kisses Anna&#x27;s hand.] Anna Andreyevna! [Kissing Marya&#x27;s hand.] Marya Antonovna!</p>
+<p>Rastakovsky enters.</p>
+<p>RASTAKOVSKY. I congratulate you, Anton Antonovich. May God give you and the new couple long life and may He grant you numerous progeny--grand-children and great-grand-children. Anna Andreyevna! [Kissing her hand.] Marya Antonovna! [Kissing her hand.]</p>
+<h2 class="chapter" id="c47">Scene IV</h2>
+<p>The same, Korobkin and his Wife, Liuliukov.</p>
+<p>KOROBKIN. I have the honor to congratulate you, Anton Antonovich, and you, Anna Andreyevna [kissing her hand] and you Marya Antonovna [kissing her hand].</p>
+<p>KOROBKIN&#x27;S WIFE. I congratulate you from the bottom of my heart, Anna Andreyevna, on your new stroke of good fortune.</p>
+<p>LIULIUKOV. I have the honor to congratulate you, Anna Andreyevna. [Kisses her hand and turns to the audience, smacks his lips, putting on a bold front.] Marya Antonovna, I have the honor to congratulate you. [Kisses her hand and turns to the audience in the same way.]</p>
+<h2 class="chapter" id="c48">Scene V</h2>
+<p>A number of Guests enter. They kiss Anna&#x27;s hand saying: &quot;Anna Andreyevna,&quot; then Marya&#x27;s hand, saying &quot;Marya Antonovna.&quot;</p>
+<p>Bobchinsky and Dobchinsky enter jostling each other.</p>
+<p>BOBCHINSKY. I have the honor to congratulate you.</p>
+<p>DOBCHINSKY. Anton Antonovich, I have the honor to congratulate you.</p>
+<p>BOBCHINSKY. On the happy event.</p>
+<p>DOBCHINSKY. Anna Andreyevna!</p>
+<p>BOBCHINSKY. Anna Andreyevna!</p>
+<p>They bend over her hand at the same time and bump foreheads.</p>
+<p>DOBCHINSKY. Marya Antonovna! [Kisses her hand.] I have the honor to congratulate you. You will enjoy the greatest happiness. You will wear garments of gold and eat the most delicate soups, and you will pass your time most entertainingly.</p>
+<p>BOBCHINSKY [breaking in]. God give you all sorts of riches and of money and a wee tiny little son, like this. [Shows the size with his hands.] So that he can sit on the palm of your hand. The little fellow will be crying all the time, &quot;Wow, wow, wow.&quot;</p>
+<h2 class="chapter" id="c49">Scene VI</h2>
+<p>More Guests enter and kiss the ladies&#x27; hands, among them Luka Lukich and his wife.</p>
+<p>LUKA LUKICH. I have the honor.</p>
+<p>LUKA&#x27;S WIFE [running ahead]. Congratulate you, Anna Andreyevna. [They kiss.] Really, I was so glad to hear of it. They tell me, &quot;Anna Andreyevna has betrothed her daughter.&quot; &quot;Oh, my God,&quot; I think to myself. It made me so glad that I said to my husband, &quot;Listen, Lukanchik, that&#x27;s a great piece of fortune for Anna Andreyevna.&quot; &quot;Well,&quot; think I to myself, &quot;thank God!&quot; And I say to him, &quot;I&#x27;m so delighted that I&#x27;m consumed with impatience to tell it to Anna Andreyevna herself.&quot; &quot;Oh, my God,&quot; think I to myself, &quot;it&#x27;s just as Anna Andreyevna expected. She always did expect a good match for her daughter. And now what luck! It happened just exactly as she wanted it to happen.&quot; Really, it made me so glad that I couldn&#x27;t say a word. I cried and cried. I simply screamed, so that Luka Lukich said to me, &quot;What are you crying so for, Nastenka?&quot; &quot;Lukanchik,&quot; I said, &quot;I don&#x27;t know myself. The tears just keep flowing like a stream.&quot;</p>
+<p>GOVERNOR. Please sit down, ladies and gentlemen. Ho, Mishka, bring some more chairs in.</p>
+<p>The Guests seat themselves.</p>
+<h2 class="chapter" id="c50">Scene VII</h2>
+<p>The same, the Police Captain and Sergeants.</p>
+<p>CAPTAIN. I have the honor to congratulate you, your Honor, and to wish you long years of prosperity.</p>
+<p>GOVERNOR. Thank you, thank you! Please sit down, gentlemen.</p>
+<p>The Guests seat themselves.</p>
+<p>AMMOS. But please tell us, Anton Antonovich, how did it all come about, and how did it all--ahem!--go?</p>
+<p>GOVERNOR. It went in a most extraordinary way. He condescended to make the proposal in his own person.</p>
+<p>ANNA. In the most respectful and most delicate manner. He spoke beautifully. He said: &quot;Anna Andreyevna, I have only a feeling of respect for your worth.&quot; And such a handsome, cultured man! His manners so genteel! &quot;Believe me, Anna Andreyevna,&quot; he says, &quot;life is not worth a penny to me. It is only because I respect your rare qualities.&quot;</p>
+<p>MARYA. Oh, mamma, it was to me he said that.</p>
+<p>ANNA. Shut up! You don&#x27;t know anything. And don&#x27;t meddle in other people&#x27;s affairs. &quot;Anna Andreyevna,&quot; he says, &quot;I am enraptured.&quot; That was the flattering way he poured out his soul. And when I was going to say, &quot;We cannot possibly hope for such an honor,&quot; he suddenly went down on his knees, and so aristocratically! &quot;Anna Andreyevna,&quot; he says, &quot;don&#x27;t make me the most miserable of men. Consent to respond to my feelings, or else I&#x27;ll put an end to my life.&quot;</p>
+<p>MARYA. Really, mamma, it was to me he said that.</p>
+<p>ANNA. Yes, of course--to you, too. I don&#x27;t deny it.</p>
+<p>GOVERNOR. He even frightened us. He said he would put a bullet through his brains. &quot;I&#x27;ll shoot myself, I&#x27;ll shoot myself,&quot; he said.</p>
+<p>MANY GUESTS. Well, for the Lord&#x27;s sake!</p>
+<p>AMMOS. How remarkable!</p>
+<p>LUKA. It must have been fate that so ordained.</p>
+<p>ARTEMY. Not fate, my dear friend. Fate is a turkey-hen. It was the Governor&#x27;s services that brought him this piece of fortune. [Aside.] Good luck always does crawl into the mouths of swine like him.</p>
+<p>AMMOS. If you like, Anton Antonovich, I&#x27;ll sell you the dog we were bargaining about.</p>
+<p>GOVERNOR. I don&#x27;t care about dogs now.</p>
+<p>AMMOS. Well, if you don&#x27;t want it, then we&#x27;ll agree on some other dog.</p>
+<p>KOROBKIN&#x27;S WIFE. Oh, Anna Andreyevna, how happy I am over your good fortune. You can&#x27;t imagine how happy I am.</p>
+<p>KOROBKIN. But where, may I ask, is the distinguished guest now? I heard he had gone away for some reason or other.</p>
+<p>GOVERNOR. Yes, he&#x27;s gone off for a day on a highly important matter.</p>
+<p>ANNA. To his uncle--to ask his blessing.</p>
+<p>GOVERNOR. To ask his blessing. But tomorrow--[He sneezes, and all burst into one exclamation of well-wishes.] Thank you very much. But tomorrow he&#x27;ll be back. [He sneezes, and is congratulated again. Above the other voices are heard those of the following.]</p>
+<p>{CAPTAIN. I wish you health, your Honor.</p>
+<p>{BOBCHINSKY. A hundred years and a sack of ducats.</p>
+<p>{DOBCHINSKY. May God increase it to a thousand.</p>
+<p>{ARTEMY. May you go to hell!</p>
+<p>{KOROBKIN&#x27;S WIFE. The devil take you!</p>
+<p>GOVERNOR. I&#x27;m very much obliged to you. I wish you the same.</p>
+<p>ANNA. We intend to live in St. Petersburg now. I must say, the atmosphere here is too village-like. I must say, it&#x27;s extremely unpleasant. My husband, too--he&#x27;ll be made a general there.</p>
+<p>GOVERNOR. Yes, confound it, gentlemen, I admit I should very much like to be a general.</p>
+<p>LUKA. May God grant that you get a generalship.</p>
+<p>RASTAKOVSKY. From man it is impossible, but from God everything is possible.</p>
+<p>AMMOS. High merits, high honors.</p>
+<p>ARTEMY. Reward according to service.</p>
+<p>AMMOS [aside]. The things he&#x27;ll do when he becomes a general. A generalship suits him as a saddle suits a cow. It&#x27;s a far cry to his generalship. There are better men than you, and they haven&#x27;t been made generals yet.</p>
+<p>ARTEMY [aside]. The devil take it--he&#x27;s aiming for a generalship. Well, maybe he will become a general after all. He&#x27;s got the air of importance, the devil take him! [Addressing the Governor.] Don&#x27;t forget us then, Anton Antonovich.</p>
+<p>AMMOS. And if anything happens--for instance, some difficulty in our affairs--don&#x27;t refuse us your protection.</p>
+<p>KOROBKIN. Next year I am going to take my son to the capital to put him in government service. So do me the kindness to give me your protection. Be a father to the orphan.</p>
+<p>GOVERNOR. I am ready for my part--ready to exert my efforts on your behalf.</p>
+<p>ANNA. Antosha, you are always ready with your promises. In the first place, you won&#x27;t have time to think of such things. And how can you--how is it possible for you, to burden yourself with such promises?</p>
+<p>GOVERNOR. Why not, my dear? It&#x27;s possible occasionally.</p>
+<p>ANNA. Of course it&#x27;s possible. But you can&#x27;t give protection to every small potato.</p>
+<p>KOROBKIN&#x27;S WIFE. Do you hear the way she speaks of us?</p>
+<p>GUEST. She&#x27;s always been that way. I know her. Seat her at table and she&#x27;ll put her feet on it.</p>
+<h2 class="chapter" id="c51">Scene VIII</h2>
+<p>The same and the Postmaster, who rushes in with an unsealed letter in his hand.</p>
+<p>POSTMASTER. A most astonishing thing, ladies and gentlemen! The official whom we took to be an inspector-general is not an inspector-general.</p>
+<p>ALL. How so? Not an inspector-general?</p>
+<p>POSTMASTER. No, not a bit of it. I found it out from the letter.</p>
+<p>GOVERNOR. What are you talking about? What are you talking about? What letter?</p>
+<p>POSTMASTER. His own letter. They bring a letter to the postoffice, I glance at the address and I see Pochtamtskaya Street. I was struck dumb. &quot;Well,&quot; I think to myself, &quot;I suppose he found something wrong in the postoffice department and is informing the government.&quot; So I unsealed it.</p>
+<p>GOVERNOR. How could you?</p>
+<p>POSTMASTER. I don&#x27;t know myself. A supernatural power moved me. I had already summoned a courier to send it off by express; but I was overcome by a greater curiosity than I have ever felt in my life. &quot;I can&#x27;t, I can&#x27;t,&quot; I hear a voice telling me. &quot;I can&#x27;t.&quot; But it pulled me and pulled me. In one ear I heard, &quot;Don&#x27;t open the letter. You will die like a chicken,&quot; and in the other it was just as if the devil were whispering, &quot;Open it, open it.&quot; And when I cracked the sealing wax, I felt as if I were on fire; and when I opened the letter, I froze, upon my word, I froze. And my hands trembled, and everything whirled around me.</p>
+<p>GOVERNOR. But how did you dare to open it? The letter of so powerful a personage?</p>
+<p>POSTMASTER. But that&#x27;s just the point--he&#x27;s neither powerful nor a personage.</p>
+<p>GOVERNOR. Then what is he in your opinion?</p>
+<p>POSTMASTER. He&#x27;s neither one thing nor another. The devil knows what he is.</p>
+<p>GOVERNOR [furiously]. How neither one thing nor another? How do you dare to call him neither one thing nor another? And the devil knows what besides? I&#x27;ll put you under arrest.</p>
+<p>POSTMASTER. Who--you?</p>
+<p>GOVERNOR. Yes, I.</p>
+<p>POSTMASTER. You haven&#x27;t the power.</p>
+<p>GOVERNOR. Do you know that he&#x27;s going to marry my daughter? That I myself am going to be a high official and will have the power to exile to Siberia?</p>
+<p>POSTMASTER. Oh, Anton Antonovich, Siberia! Siberia is far away. I&#x27;d rather read the letter to you. Ladies and gentlemen, permit me to read the letter.</p>
+<p>ALL. Do read it.</p>
+<p>POSTMASTER [reads]. &quot;I hasten to inform you, my dear friend, what wonderful things have happened to me. On the way here an infantry captain did me out of my last penny, so that the innkeeper here wanted to send me to jail, when suddenly, thanks to my St. Petersburg appearance and dress, the whole town took me for a governor-general. Now I am staying at the governor&#x27;s home. I am having a grand time and I am flirting desperately with his wife and daughter. I only haven&#x27;t decided whom to begin with. I think with the mother first, because she seems ready to accept all terms. You remember how hard up we were taking our meals wherever we could without paying for them, and how once the pastry cook grabbed me by the collar for having charged pies that I ate to the king of England? Now it is quite different. They lend me all the money I want. They are an awful lot of originals. You would split your sides laughing at them. I know you write for the papers. Put them in your literature. In the first place the Governor is as stupid as an old horse--&quot;</p>
+<p>GOVERNOR. Impossible! That can&#x27;t be in the letter.</p>
+<p>POSTMASTER [showing the letter]. Read for yourself.</p>
+<p>GOVERNOR [reads]. &quot;As an old horse.&quot; Impossible! You put it in yourself.</p>
+<p>POSTMASTER. How could I?</p>
+<p>ARTEMY. Go on reading.</p>
+<p>LUKA. Go on reading.</p>
+<p>POSTMASTER [continuing to read]. &quot;The Governor is as stupid as an old horse--&quot;</p>
+<p>GOVERNOR. Oh, the devil! He&#x27;s got to read it again. As if it weren&#x27;t there anyway.</p>
+<p>POSTMASTER [continuing to read]. H&#x27;m, h&#x27;m--&quot;an old horse. The Postmaster is a good man, too.&quot; [Stops reading.] Well, here he&#x27;s saying something improper about me, too.</p>
+<p>GOVERNOR. Go on--read the rest.</p>
+<p>POSTMASTER. What for?</p>
+<p>GOVERNOR. The deuce take it! Once we have begun to read it, we must read it all.</p>
+<p>ARTEMY. If you will allow me, I will read it. [Puts on his eye-glasses and reads.] &quot;The Postmaster is just like the porter Mikheyev in our office, and the scoundrel must drink just as hard.&quot;</p>
+<p>POSTMASTER [to the audience]. A bad boy! He ought to be given a licking. That&#x27;s all.</p>
+<p>ARTEMY [continues to read]. &quot;The Superintendent of Char-i-i--&quot; [Stammers.]</p>
+<p>KOROBKIN. Why did you stop?</p>
+<p>ARTEMY. The handwriting isn&#x27;t clear. Besides, it&#x27;s evident that he&#x27;s a blackguard.</p>
+<p>KOROBKIN. Give it to me. I believe my eyesight is better.</p>
+<p>ARTEMY [refusing to give up the letter]. No. This part can be omitted. After that it&#x27;s legible.</p>
+<p>KOROBKIN. Let me have it please. I&#x27;ll see for myself.</p>
+<p>ARTEMY. I can read it myself. I tell you that after this part it&#x27;s all legible.</p>
+<p>POSTMASTER. No, read it all. Everything so far could be read.</p>
+<p>ALL. Give him the letter, Artemy Filippovich, give it to him. [To Korobkin.] You read it.</p>
+<p>ARTEMY. Very well. [Gives up the letter.] Here it is. [Covers a part of it with his finger.] Read from here on. [All press him.]</p>
+<p>POSTMASTER. Read it all, nonsense, read it all.</p>
+<p>KOROBKIN [reading]. &quot;The Superintendent of Charities, Zemlianika, is a regular pig in a cap.&quot;</p>
+<p>ARTEMY [to the audience]. Not a bit witty. A pig in a cap! Have you ever seen a pig wear a cap?</p>
+<p>KOROBKIN [continues reading]. &quot;The School Inspector reeks of onions.&quot;</p>
+<p>LUKA [to the audience]. Upon my word, I never put an onion to my mouth.</p>
+<p>AMMOS [aside]. Thank God, there&#x27;s nothing about me in it.</p>
+<p>KOROBKIN [continues reading]. &quot;The Judge--&quot;</p>
+<p>AMMOS. There! [Aloud.] Ladies and gentlemen, I think the letter is far too long. To the devil with it! Why should we go on reading such trash?</p>
+<p>LUKA. No.</p>
+<p>POSTMASTER. No, go on.</p>
+<p>ARTEMY. Go on reading.</p>
+<p>KOROBKIN. &quot;The Judge, Liapkin-Tiapkin, is extremely mauvais ton.&quot; [He stops.] That must be a French word.</p>
+<p>AMMOS. The devil knows what it means. It wouldn&#x27;t be so bad if all it means is &quot;cheat.&quot; But it may mean something worse.</p>
+<p>KOROBKIN [continues reading]. &quot;However, the people are hospitable and kindhearted. Farewell, my dear Triapichkin. I want to follow your example and take up literature. It&#x27;s tiresome to live this way, old boy. One wants food for the mind, after all. I see I must engage in something lofty. Address me: Village of Podkatilovka in the Government of Saratov.&quot; [Turns the letter and reads the address.] &quot;Mr. Ivan Vasilyevich Triapichkin, St. Petersburg, Pochtamtskaya Street, House Number 97, Courtyard, third floor, right.&quot;</p>
+<p>A LADY. What an unexpected rebuke!</p>
+<p>GOVERNOR. He has cut my throat and cut it for good. I&#x27;m done for, completely done for. I see nothing. All I see are pigs&#x27; snouts instead of faces, and nothing more. Catch him, catch him! [Waves his hand.]</p>
+<p>POSTMASTER. Catch him! How? As if on purpose, I told the overseer to give him the best coach and three. The devil prompted me to give the order.</p>
+<p>KOROBKIN&#x27;S WIFE. Here&#x27;s a pretty mess.</p>
+<p>AMMOS. Confound it, he borrowed three hundred rubles from me.</p>
+<p>ARTEMY. He borrowed three hundred from me, too.</p>
+<p>POSTMASTER [sighing]. And from me, too.</p>
+<p>BOBCHINSKY. And sixty-five from me and Piotr Ivanovich.</p>
+<p>AMMOS [throwing up his hands in perplexity]. How&#x27;s that, gentlemen? Really, how could we have been so off our guard?</p>
+<p>GOVERNOR [beating his forehead]. How could I, how could I, old fool? I&#x27;ve grown childish, stupid mule. I have been in the service thirty years. Not one merchant, not one contractor has been able to impose on me. I have over-reached one swindler after another. I have caught crooks and sharpers that were ready to rob the whole world. I have fooled three governor-generals. As for governor-generals, [with a wave of his hand] it is not even worth talking about them.</p>
+<p>ANNA. But how is it possible, Antosha? He&#x27;s engaged to Mashenka.</p>
+<p>GOVERNOR [in a rage]. Engaged! Rats! Fiddlesticks! So much for your engagement! Thrusts her engagement at me now! [In a frenzy.] Here, look at me! Look at me, the whole world, the whole of Christendom. See what a fool the governor was made of. Out upon him, the fool, the old scoundrel! [Shakes his fist at himself.] Oh, you fat-nose! To take an icicle, a rag for a personage of rank! Now his coach bells are jingling all along the road. He is publishing the story to the whole world. Not only will you be made a laughing-stock of, but some scribbler, some ink-splasher will put you into a comedy. There&#x27;s the horrid sting. He won&#x27;t spare either rank or station. And everybody will grin and clap his hands. What are you laughing at? You are laughing at yourself, oh you! [Stamps his feet.] I would give it to all those ink-splashers! You scribblers, damned liberals, devil&#x27;s brood! I would tie you all up in a bundle, I would grind you into meal, and give it to the devil. [Shakes his fist and stamps his heel on the floor. After a brief silence.] I can&#x27;t come to myself. It&#x27;s really true, whom the gods want to punish they first make mad. In what did that nincompoop resemble an inspector-general? In nothing, not even half the little finger of an inspector-general. And all of a sudden everybody is going about saying, &quot;Inspector-general, inspector-general.&quot; Who was the first to say it? Tell me.</p>
+<p>ARTEMY [throwing up his hands]. I couldn&#x27;t tell how it happened if I had to die for it. It is just as if a mist had clouded our brains. The devil has confounded us.</p>
+<p>AMMOS. Who was the first to say it? These two here, this noble pair. [Pointing to Dobchinsky and Bobchinsky.]</p>
+<p>BOBCHINSKY. So help me God, not I. I didn&#x27;t even think of it.</p>
+<p>DOBCHINSKY. I didn&#x27;t say a thing, not a thing.</p>
+<p>ARTEMY. Of course you did.</p>
+<p>LUKA. Certainly. You came running here from the inn like madmen. &quot;He&#x27;s come, he&#x27;s come. He doesn&#x27;t pay.&quot; Found a rare bird!</p>
+<p>GOVERNOR. Of course it was you. Town gossips, damned liars!</p>
+<p>ARTEMY. The devil take you with your inspector-general and your tattle.</p>
+<p>GOVERNOR. You run about the city, bother everybody, confounded chatterboxes. You spread gossip, you short-tailed magpies, you!</p>
+<p>AMMOS. Damned bunglers!</p>
+<p>LUKA. Simpletons.</p>
+<p>ARTEMY. Pot-bellied mushrooms!</p>
+<p>All crowd around them.</p>
+<p>BOBCHINSKY. Upon my word, it wasn&#x27;t I. It was Piotr Ivanovich.</p>
+<p>DOBCHINSKY. No, Piotr Ivanovich, you were the first.</p>
+<p>BOBCHINSKY. No, no. You were the first.</p>
+<h3 class="sub">Last Scene</h3>
+<p>The same and a Gendarme.</p>
+<p>GENDARME. An official from St. Petersburg sent by imperial order has arrived, and wants to see you all at once. He is stopping at the inn.</p>
+<p>All are struck as by a thunderbolt. A cry of amazement bursts from the ladies simultaneously. The whole group suddenly shifts positions and remains standing as if petrified.</p>
+<h3 class="sub">Silent Scene</h3>
+<p>The Governor stands in the center rigid as a post, with outstretched hands and head thrown backward. On his right are his wife and daughter straining toward him. Back of them the Postmaster, turned toward the audience, metamorphosed into a question mark. Next to him, at the edge of the group, three lady guests leaning on each other, with a most satirical expression on their faces directed straight at the Governor&#x27;s family. To the left of the Governor is Zemlianika, his head to one side as if listening. Behind him is the Judge with outspread hands almost crouching on the ground and pursing his lips as if to whistle or say: &quot;A nice pickle we&#x27;re in!&quot; Next to him is Korobkin, turned toward the audience, with eyes screwed up and making a venomous gesture at the Governor. Next to him, at the edge of the group, are Dobchinsky and Bobchinsky, gesticulating at each other, open-mouthed and wide-eyed. The other guests remain standing stiff. The whole group retain the same position of rigidity for almost a minute and a half. The curtain falls.</p>
+<h3 class="sub">The End</h3>
+<p class="colophon">Public domain text. BookClassics digital edition.</p>
+</body></html>

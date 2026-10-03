@@ -302,6 +302,20 @@
     "txt"
    ]
   },
+  "colomba": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "common-sense": {
    "en": [
     "epub",
@@ -1272,6 +1286,20 @@
     "txt"
    ]
   },
+  "salammbo": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "second-treatise-of-government": {
    "en": [
     "epub",
@@ -1606,6 +1634,14 @@
     "txt"
    ]
   },
+  "the-government-inspector": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-great-gatsby": {
    "en": [
     "epub",
@@ -1796,6 +1832,20 @@
   },
   "the-mysteries-of-udolpho": {
    "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-mysterious-island": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
     "epub",
     "html",
     "pdf",
@@ -2312,6 +2362,20 @@
     "txt"
    ]
   },
+  "twenty-years-after": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "typee": {
    "en": [
     "epub",
@@ -2419,5 +2483,5 @@
    ]
   }
  },
- "generated": "2026-10-03T23:52:22Z"
+ "generated": "2026-10-03T23:53:38Z"
 }
