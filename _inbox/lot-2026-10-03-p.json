@@ -1,0 +1,96 @@
+{
+ "lot": "2026-10-03-p",
+ "books": [
+  {
+   "title": "Ninety-Three",
+   "author": "Victor Hugo",
+   "cat": "fiction",
+   "meta": "France · 1874",
+   "desc": "In 1793, during the royalist uprising in the Vendée, an old marquis, his republican great-nephew and a former priest face each other in a war without mercy.",
+   "editions": [
+    {"lang": "en", "gid": 49372, "check": "ninety-three", "credit": "Traduction : Aline Delano (1845-1928)"},
+    {"lang": "fr", "gid": 9645, "check": "quatrevingt-treize"}
+   ],
+   "about": [
+    "In 1793, at the height of the French Revolution, the royalist peasants of the Vendée and Brittany rise against the Republic. The Marquis de Lantenac, an old and ruthless nobleman, lands secretly from England to lead them. Against him the Republic sends a young officer, Gauvain, who is Lantenac's great-nephew, watched over by the stern former priest Cimourdain, Gauvain's old tutor. Caught between the two sides is a poor peasant woman, Michelle Fléchard, searching desperately for her three lost children.",
+    "Hugo's last novel is a vast and dramatic meditation on revolution, violence, loyalty and mercy. Its three parts, set at sea, in Paris and in the Breton forests, alternate between epic scenes, portraits of revolutionary leaders and moments of intimate humanity.",
+    "Ninety-Three was published in 1874, shortly after the bloodshed of the Paris Commune. This edition offers the original French text, Quatrevingt-treize, and the English translation by Aline Delano."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "Pierre and Jean",
+   "author": "Guy de Maupassant",
+   "cat": "fiction",
+   "meta": "France · 1888",
+   "desc": "When the younger of two brothers in Le Havre unexpectedly inherits a fortune from a family friend, the elder begins to ask questions that threaten his family.",
+   "editions": [
+    {"lang": "en", "gid": 3804, "check": "pierre", "credit": "Traduction : Clara Bell (1834-1927)"},
+    {"lang": "fr", "gid": 11131, "check": "pierre et jean"}
+   ],
+   "about": [
+    "The Roland family lives quietly in Le Havre: the father, a retired jeweller who loves fishing, the gentle mother, and two grown-up sons, Pierre, a doctor, and Jean, a lawyer. One day the family learns that Léon Maréchal, an old friend from their years in Paris, has left his entire fortune to Jean alone. While everyone rejoices, Pierre, jealous and restless, cannot stop wondering why.",
+    "In this short and intense novel, Maupassant follows the growth of suspicion and jealousy in a man's mind with great psychological precision, against the background of the harbour and the sea. The French edition includes the famous preface \"Le Roman\" (\"The Novel\"), in which Maupassant sets out his views on realism and the art of fiction.",
+    "Pierre et Jean, Maupassant's fourth novel, was written in the summer of 1887 and published by Paul Ollendorff on 9 January 1888. This edition offers the original French text and the English translation by Clara Bell."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "The Devil's Pool",
+   "author": "George Sand",
+   "cat": "fiction",
+   "meta": "France · 1846",
+   "desc": "A young widowed ploughman sets out across the countryside to court a wealthy widow, accompanied by a poor young shepherdess, in George Sand's tender rural tale.",
+   "editions": [
+    {"lang": "en", "gid": 12816, "check": "devil", "credit": "Traduction : George Burnham Ives (1856-1930)"},
+    {"lang": "fr", "gid": 23582, "check": "mare au diable"}
+   ],
+   "about": [
+    "Germain, a hard-working ploughman of the Berry region, has been a widower for two years and has three small children. His father-in-law urges him to remarry and suggests a well-off widow in a neighbouring village. Germain agrees to go and meet her, and on the way he is asked to take along Marie, a poor sixteen-year-old girl going to work as a shepherdess. Lost in the fog near a place called the Devil's Pool, they are forced to spend the night in the woods.",
+    "Sand celebrates the beauty of the countryside, the dignity of peasant life and simple, honest feelings in a gentle, idealised pastoral story. The book opens with reflections on art and labour and ends with a description of traditional country wedding customs.",
+    "La Mare au Diable was published in 1846 and is one of Sand's most popular \"rustic\" novels, set in the Berry region where she lived. This edition offers the original French text and the English translation by George Burnham Ives."
+   ],
+   "author_short": "French novelist and memoirist (1804–1876), author of Indiana, The Devil's Pool and many other novels.",
+   "author_long": [
+    "George Sand was the pen name of Amantine Lucile Aurore Dupin, born in Paris on 1 July 1804. She spent much of her life at Nohant, in the Berry region of central France, which inspired many of her novels, and became one of the most famous and independent women of her century. She died at Nohant on 8 June 1876.",
+    "One of the most widely read writers of her time, she published dozens of novels as well as plays and essays. Her first novel, Indiana (1832), defended a woman's right to follow her heart, and her rustic novels such as La Mare au Diable (1846) celebrated rural life."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "The Gambler",
+   "author": "Fyodor Dostoevsky",
+   "cat": "fiction",
+   "meta": "Russia · 1866",
+   "desc": "A young tutor in a German spa town falls desperately in love with the general's stepdaughter and is drawn, step by step, into the frenzy of roulette.",
+   "editions": [
+    {"lang": "en", "gid": 2197, "check": "gambler", "credit": "Traduction : Charles James Hogarth (1869-1942)"}
+   ],
+   "about": [
+    "Alexei Ivanovich is tutor to the children of a Russian general who is living above his means in a German spa town, waiting for a rich old relative, the Grandmother, to die and leave him a fortune. Alexei is hopelessly in love with the general's proud stepdaughter Polina, who treats him with scorn and asks him to gamble for her. Around them gather a shady French marquis, the elegant Mademoiselle Blanche and a reserved Englishman, Mr Astley, while the roulette wheel turns at the casino.",
+    "Dostoevsky draws on his own compulsive gambling and stormy love affair to portray obsession, pride and humiliation, and satirises Russians, French, Germans and English abroad. Fast, feverish and often comic, the short novel captures the excitement and despair of the gaming tables.",
+    "The Gambler was published in 1866. Dostoevsky dictated it in just twenty-six days to meet a publisher's deadline, with the help of a young stenographer, Anna Snitkina, who later became his wife. This English translation is by C. J. Hogarth."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "Indiana",
+   "author": "George Sand",
+   "cat": "fiction",
+   "meta": "France · 1832",
+   "desc": "A young Creole woman trapped in a loveless marriage to an older colonel falls for a charming but selfish seducer, in George Sand's bold first novel.",
+   "editions": [
+    {"lang": "en", "gid": 63445, "check": "indiana", "credit": "Traduction : George Burnham Ives (1856-1930)"}
+   ],
+   "about": [
+    "Indiana, a young woman born on the Île Bourbon, is married to Colonel Delmare, a gruff, jealous and much older retired officer, and lives with him in a lonely manor in Brie, watched over by her silent and devoted cousin, Sir Ralph Brown. When the elegant and seductive Raymon de Ramière enters her life, she believes she has at last found the love she has dreamed of, unaware that he is also courting her maid and foster-sister, Noun.",
+    "Sand's first novel is a passionate protest against marriages that make wives the property of their husbands, and a romantic exploration of love, illusion and freedom. It also reflects the colonial society of its time, from which its heroine comes.",
+    "Indiana was published in 1832 and made its author famous under the new pen name George Sand. This English translation is by George Burnham Ives."
+   ],
+   "librivox": []
+  }
+ ],
+ "refused": [
+  {"title": "L'Assommoir (en, Gutenberg #8558)", "reason": "traduction anglaise anonyme d'environ 57 % des mots de l'original français : probablement abrégée ou expurgée"}
+ ]
+}
