@@ -16,6 +16,14 @@
     "txt"
    ]
   },
+  "a-doll-s-house": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "a-journal-of-the-plague-year": {
    "en": [
     "epub",
@@ -448,6 +456,14 @@
     "txt"
    ]
   },
+  "five-children-and-it": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "frankenstein": {
    "en": [
     "epub",
@@ -658,6 +674,14 @@
     "txt"
    ]
   },
+  "kim": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "king-lear": {
    "de": [
     "epub",
@@ -672,6 +696,14 @@
     "txt"
    ],
    "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "king-solomon-s-mines": {
+   "en": [
     "epub",
     "html",
     "pdf",
@@ -1019,6 +1051,14 @@
    ]
   },
   "principles-of-political-economy": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "pygmalion": {
    "en": [
     "epub",
     "html",
@@ -2147,5 +2187,5 @@
    ]
   }
  },
- "generated": "2026-10-03T23:41:58Z"
+ "generated": "2026-10-03T23:49:19Z"
 }
