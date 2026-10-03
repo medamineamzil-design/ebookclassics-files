@@ -8,6 +8,14 @@
     "txt"
    ]
   },
+  "a-connecticut-yankee-in-king-arthur-s-court": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "a-journal-of-the-plague-year": {
    "en": [
     "epub",
@@ -172,6 +180,14 @@
     "txt"
    ]
   },
+  "babbitt": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "barchester-towers": {
    "en": [
     "epub",
@@ -286,6 +302,14 @@
     "txt"
    ],
    "es": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "daisy-miller": {
+   "en": [
     "epub",
     "html",
     "pdf",
@@ -561,6 +585,14 @@
    ]
   },
   "heart-of-darkness": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "herland": {
    "en": [
     "epub",
     "html",
@@ -987,6 +1019,14 @@
    ]
   },
   "principles-of-political-economy": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "rebecca-of-sunnybrook-farm": {
    "en": [
     "epub",
     "html",
@@ -2107,5 +2147,5 @@
    ]
   }
  },
- "generated": "2026-10-03T23:41:24Z"
+ "generated": "2026-10-03T23:41:58Z"
 }
