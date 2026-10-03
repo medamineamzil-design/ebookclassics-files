@@ -1,0 +1,102 @@
+# BookClassics — publication automatique des lots, sans PC ni VPS.
+# Le bibliothécaire (Routine Claude, chaque matin) pousse _inbox/lot-AAAA-MM-JJ.json sur une branche claude/… ;
+# ce workflow le publie avec auto.sh (EPUB/PDF/TXT/HTML, site, audio LibriVox), puis range le lot
+# dans _inbox/faits/ (ou _inbox/erreurs/) sur main et écrit le journal dans _rapports/journal/.
+name: Publier le lot du jour
+
+on:
+  push:
+    branches: ["claude/**", "main"]
+    paths: ["_inbox/lot-*.json"]
+  workflow_dispatch:
+
+concurrency:
+  group: publication
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  publier:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - name: Lot(s) reçu(s)
+        uses: actions/checkout@v4
+        with:
+          path: recu
+          fetch-depth: 1
+
+      - name: Dépôt des livres (main)
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          path: ebookclassics-files
+          fetch-depth: 1
+
+      - name: Dépôt du site
+        uses: actions/checkout@v4
+        with:
+          repository: medamineamzil-design/ebookclassics-site
+          token: ${{ secrets.SITE_TOKEN }}
+          path: ebookclassics-site
+          fetch-depth: 1
+
+      - name: Logiciels (pandoc, typst, rsvg)
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y -q pandoc librsvg2-bin
+          curl -fsSL https://github.com/typst/typst/releases/latest/download/typst-x86_64-unknown-linux-musl.tar.xz | tar -xJ
+          sudo mv typst-*/typst /usr/local/bin/
+
+      - name: Préparation
+        env:
+          R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          R2_BUCKET: ${{ secrets.R2_BUCKET }}
+          R2_PUBLIC_URL: ${{ secrets.R2_PUBLIC_URL }}
+        run: |
+          mv ebookclassics-files ebookclassics-site ~/
+          for r in ~/ebookclassics-files ~/ebookclassics-site; do
+            git -C $r config user.name "BookClassics (automatique)"
+            git -C $r config user.email "medamine.amzil@gmail.com"
+          done
+          mkdir -p ~/bookclassics-auto/inbox ~/bookclassics-auto/faits ~/bookclassics-auto/erreurs
+          # seulement les lots jamais traités
+          for f in recu/_inbox/lot-*.json; do
+            [ -e "$f" ] || continue
+            n=$(basename "$f")
+            if [ -e ~/ebookclassics-files/_inbox/faits/$n ] || [ -e ~/ebookclassics-files/_inbox/erreurs/$n ]; then
+              echo "déjà traité : $n"
+            else
+              cp "$f" ~/bookclassics-auto/inbox/ && echo "à publier : $n"
+            fi
+          done
+          if [ -n "$R2_ACCOUNT_ID" ]; then
+            umask 077
+            printf 'account_id=%s\naccess_key_id=%s\nsecret_access_key=%s\nbucket=%s\npublic_url=%s\n' \
+              "$R2_ACCOUNT_ID" "$R2_ACCESS_KEY_ID" "$R2_SECRET_ACCESS_KEY" "$R2_BUCKET" "$R2_PUBLIC_URL" > ~/r2.conf
+          fi
+
+      - name: Publication (auto.sh)
+        run: |
+          mkdir -p ~/journal
+          J=~/journal/publication-$(TZ=Europe/Paris date +%F-%H%M).txt
+          bash ~/ebookclassics-site/_auto/auto.sh 2>&1 | tee "$J"
+          echo "JOURNAL=$J" >> $GITHUB_ENV
+
+      - name: Ranger le lot et le journal sur main
+        if: always()
+        run: |
+          rm -f ~/r2.conf
+          cd ~/ebookclassics-files
+          git pull -q --rebase --autostash || true
+          mkdir -p _inbox/faits _inbox/erreurs _rapports/journal
+          cp ~/bookclassics-auto/faits/lot-*.json _inbox/faits/ 2>/dev/null || true
+          cp ~/bookclassics-auto/erreurs/lot-*.json _inbox/erreurs/ 2>/dev/null || true
+          [ -n "$JOURNAL" ] && cp "$JOURNAL" _rapports/journal/
+          git add _inbox _rapports/journal
+          git commit -q -m "Journal de publication $(TZ=Europe/Paris date +%F)" || exit 0
+          for i in 1 2 3; do git push -q && break; git pull -q --rebase; done
