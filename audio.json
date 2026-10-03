@@ -1134,6 +1134,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/walden/walden.mp3"
   }
  },
+ "white-fang": {
+  "en": {
+   "bytes": 244150083,
+   "dl": true,
+   "duration": 30505,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/white-fang/white-fang.mp3"
+  }
+ },
  "wuthering-heights": {
   "en": {
    "bytes": 332896404,
