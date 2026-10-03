@@ -1,0 +1,101 @@
+{
+ "lot": "2026-10-03-h",
+ "books": [
+  {
+   "title": "The Old Curiosity Shop",
+   "author": "Charles Dickens",
+   "cat": "fiction",
+   "meta": "England · 1841",
+   "desc": "Young Nell Trent and her grandfather flee London and the grasping moneylender Quilp, wandering the English countryside in one of Dickens's most loved stories.",
+   "editions": [
+    {"lang": "en", "gid": 700, "check": "curiosity shop"}
+   ],
+   "about": [
+    "Little Nell Trent lives with her grandfather among the dusty treasures of his old curiosity shop in London. Secretly, the old man has been borrowing money from the cruel and grotesque moneylender Daniel Quilp, gambling it away in the hope of securing Nell's future. When everything is lost, grandfather and granddaughter slip away and set out on foot through the English countryside, meeting travelling showmen, kindly strangers and rogues, while Quilp, the loyal shop boy Kit Nubbles and the easygoing clerk Dick Swiveller are drawn into their story.",
+    "Dickens contrasts innocence and greed, the city and the country, and mixes sentiment and pathos with some of his most vivid comic and villainous figures. Quilp and Dick Swiveller have long been among the favourite characters of his readers.",
+    "The novel was serialised from April 1840 to February 1841 in Master Humphrey's Clock, Dickens's own weekly, which the story soon took over completely, and it was published in book form in 1841. It was enormously popular, with weekly sales rising to around a hundred thousand copies."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "Ethan Frome",
+   "author": "Edith Wharton",
+   "cat": "fiction",
+   "meta": "United States · 1911",
+   "desc": "In a bleak New England village, a poor farmer trapped in a joyless marriage falls in love with his wife's young cousin during one long, hard winter.",
+   "editions": [
+    {"lang": "en", "gid": 4517, "check": "ethan frome"}
+   ],
+   "about": [
+    "A visitor spending the winter in the snowbound Massachusetts village of Starkfield becomes curious about Ethan Frome, a silent, crippled man who seems older than his years. Piecing together his story, he imagines Ethan as a young farmer, tied to a failing farm and to his sickly, complaining wife Zeena, whose cheerful young cousin Mattie Silver has come to live with them and help in the house.",
+    "Wharton writes a short, stark and tightly constructed tale about duty, longing, poverty and isolation, in which the harsh winter landscape mirrors the characters' lives. Far from the elegant New York society of her other novels, it shows her mastery of tragedy on a small scale.",
+    "Ethan Frome was published by Scribner's on 6 November 1911. Wharton is thought to have drawn on a sledding accident she had heard about in Lenox, Massachusetts, in 1904. It is one of her most widely read works."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "The Awakening",
+   "author": "Kate Chopin",
+   "cat": "fiction",
+   "meta": "United States · 1899",
+   "desc": "On a summer holiday on the Louisiana coast, a young wife and mother begins to awaken to her own desires and to question the life expected of her.",
+   "editions": [
+    {"lang": "en", "gid": 160, "check": "awakening"}
+   ],
+   "about": [
+    "Edna Pontellier, the wife of a prosperous New Orleans businessman and mother of two small boys, spends the summer at the seaside resort of Grand Isle among Creole families. There, through her friendship with the charming young Robert Lebrun, the music of the independent pianist Mademoiselle Reisz and the experience of learning to swim, she begins to feel stirrings of independence. Back in New Orleans, she starts to break with the conventions of her marriage and her social world.",
+    "Chopin writes with sensuous, impressionistic prose about a woman's search for selfhood, freedom and passion at a time when wives were expected to devote themselves entirely to husband and children. The novel reflects the society of its time, including its servants of colour described in the racial terms of the period.",
+    "The Awakening was published in 1899 and was harshly received, with reviewers calling it vulgar and morbid. It soon went out of print and was largely forgotten until it was rediscovered in the 1960s and 1970s; it is now considered a classic of American literature. This edition also includes a selection of Chopin's short stories."
+   ],
+   "author_short": "American novelist and short-story writer (1850–1904), author of The Awakening and Bayou Folk.",
+   "author_long": [
+    "Kate Chopin was born Katherine O'Flaherty in St. Louis, Missouri, on 8 February 1850. In 1870 she married Oscar Chopin, the son of a Louisiana Creole family, and lived in New Orleans and later in Cloutierville, Louisiana, raising six children. After her husband's death in 1882 she began to write. She died on 22 August 1904.",
+    "Chopin wrote around a hundred short stories, many set among the Creole and Cajun people of Louisiana, collected in volumes such as Bayou Folk, and two novels, of which The Awakening (1899) is the best known. Neglected for decades after her death, she is now regarded as an important early feminist writer."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "The Red Badge of Courage",
+   "author": "Stephen Crane",
+   "cat": "aventure",
+   "meta": "United States · 1895",
+   "desc": "A young Union soldier longs for glory in the American Civil War, but his first battle teaches him about fear, shame and what courage really means.",
+   "editions": [
+    {"lang": "en", "gid": 73, "check": "red badge"}
+   ],
+   "about": [
+    "Henry Fleming, a young farm boy, has enlisted in the Union Army dreaming of heroic deeds. Waiting in camp with the other new recruits, among them a tall soldier and a loud young man, he wonders anxiously whether he will run when the fighting starts. When his regiment finally goes into battle, the reality of war is very different from anything he imagined.",
+    "Crane tells the story almost entirely from inside the mind of \"the youth\", following his fear, pride, guilt and self-deception from moment to moment. Its vivid, impressionistic images of battle and its refusal to glorify war made it one of the most influential war novels ever written, all the more remarkable because Crane had never seen combat when he wrote it.",
+    "A shortened version appeared in newspapers in 1894, and the novel was published in book form by D. Appleton and Company on 3 October 1895. It was an immediate success, going through ten editions in its first year."
+   ],
+   "author_short": "American novelist, poet and journalist (1871–1900), author of The Red Badge of Courage and Maggie: A Girl of the Streets.",
+   "author_long": [
+    "Stephen Crane was born on 1 November 1871 in Newark, New Jersey, the fourteenth and last child of a Methodist minister. He worked as a journalist in New York and later as a war correspondent, including in Cuba during the Spanish–American War. Suffering from tuberculosis, he died at Badenweiler in Germany on 5 June 1900, aged 28.",
+    "His first book, Maggie: A Girl of the Streets (1893), which he published himself under a pseudonym, is often considered a founding work of American literary naturalism. The Red Badge of Courage (1895) made him famous. He also wrote poetry and short stories, among them \"The Open Boat\" (1898), based on his own experience of a shipwreck."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "My Ántonia",
+   "author": "Willa Cather",
+   "cat": "fiction",
+   "meta": "United States · 1918",
+   "desc": "An orphaned boy and a Bohemian immigrant girl grow up together on the Nebraska prairie, in Willa Cather's tribute to the pioneers of the American plains.",
+   "editions": [
+    {"lang": "en", "gid": 242, "check": "antonia"}
+   ],
+   "about": [
+    "After the death of his parents, ten-year-old Jim Burden travels from Virginia to live with his grandparents on the Nebraska prairie. On the same train comes the Shimerda family, immigrants from Bohemia, who must struggle to survive their first hard winter on the land. Jim becomes the friend and teacher of their lively elder daughter, Ántonia, and the novel follows their lives from the open prairie to the small town of Black Hawk and beyond.",
+    "Told as Jim's memoir many years later, the novel is a celebration of the land, the seasons and the immigrant women who helped settle the plains, and a meditation on memory and the past. Cather's clear, luminous prose gives dignity to hard work and ordinary lives. Some passages, such as the portrait of a Black pianist, reflect the racial attitudes of their time.",
+    "My Ántonia was published in 1918 by Houghton Mifflin in Boston. It is generally considered Willa Cather's best-known work and a classic of American literature about the frontier and the immigrant experience."
+   ],
+   "author_short": "American novelist (1873–1947), known for her novels of frontier life on the Great Plains, including O Pioneers! and My Ántonia.",
+   "author_long": [
+    "Willa Cather was born on 7 December 1873 near Winchester, Virginia. When she was nine her family moved to Nebraska, and she grew up in the small prairie town of Red Cloud, which inspired much of her fiction. After working as a journalist and teacher, she became managing editor of McClure's Magazine in New York, leaving in 1912 to devote herself to writing. She died in New York City on 24 April 1947.",
+    "Her best-known novels include O Pioneers! (1913), My Ántonia (1918) and Death Comes for the Archbishop (1927). She won the Pulitzer Prize in 1923 for One of Ours (1922)."
+   ],
+   "librivox": []
+  }
+ ],
+ "refused": []
+}
