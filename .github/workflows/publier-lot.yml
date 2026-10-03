@@ -1,7 +1,7 @@
 # BookClassics — publication automatique des lots, sans PC ni VPS.
 # Le bibliothécaire (Routine Claude, chaque matin) pousse _inbox/lot-AAAA-MM-JJ.json sur une branche claude/… ;
 # ce workflow le publie avec auto.sh (EPUB/PDF/TXT/HTML, site, audio LibriVox), puis range le lot
-# dans _inbox/faits/ (ou _inbox/erreurs/) sur main et écrit le journal dans _rapports/journal/.
+# dans _inbox/faits/ (ou _inbox/erreurs/) sur main ; un lot en erreur est retenté au prochain passage et écrit le journal dans _rapports/journal/.
 name: Publier le lot du jour
 
 on:
@@ -43,10 +43,10 @@ jobs:
           path: ebookclassics-site
           fetch-depth: 1
 
-      - name: Logiciels (pandoc, typst, rsvg)
+      - name: Logiciels (pandoc, typst, rsvg, Pillow)
         run: |
           sudo apt-get update -q
-          sudo apt-get install -y -q pandoc librsvg2-bin
+          sudo apt-get install -y -q pandoc librsvg2-bin python3-pil
           curl -fsSL https://github.com/typst/typst/releases/latest/download/typst-x86_64-unknown-linux-musl.tar.xz | tar -xJ
           sudo mv typst-*/typst /usr/local/bin/
 
@@ -68,8 +68,8 @@ jobs:
           for f in recu/_inbox/lot-*.json; do
             [ -e "$f" ] || continue
             n=$(basename "$f")
-            if [ -e ~/ebookclassics-files/_inbox/faits/$n ] || [ -e ~/ebookclassics-files/_inbox/erreurs/$n ]; then
-              echo "déjà traité : $n"
+            if [ -e ~/ebookclassics-files/_inbox/faits/$n ]; then
+              echo "déjà publié : $n"
             else
               cp "$f" ~/bookclassics-auto/inbox/ && echo "à publier : $n"
             fi
@@ -94,7 +94,7 @@ jobs:
           cd ~/ebookclassics-files
           git pull -q --rebase --autostash || true
           mkdir -p _inbox/faits _inbox/erreurs _rapports/journal
-          cp ~/bookclassics-auto/faits/lot-*.json _inbox/faits/ 2>/dev/null || true
+          for f in ~/bookclassics-auto/faits/lot-*.json; do [ -e "$f" ] && cp "$f" _inbox/faits/ && rm -f "_inbox/erreurs/$(basename "$f")"; done
           cp ~/bookclassics-auto/erreurs/lot-*.json _inbox/erreurs/ 2>/dev/null || true
           [ -n "$JOURNAL" ] && cp "$JOURNAL" _rapports/journal/
           git add _inbox _rapports/journal
