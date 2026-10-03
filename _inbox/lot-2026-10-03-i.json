@@ -1,0 +1,96 @@
+{
+ "lot": "2026-10-03-i",
+ "books": [
+  {
+   "title": "Main Street",
+   "author": "Sinclair Lewis",
+   "cat": "fiction",
+   "meta": "United States · 1920",
+   "desc": "An idealistic young bride tries to bring culture and reform to a small Minnesota prairie town, and collides with its smugness, gossip and suspicion of anything new.",
+   "editions": [
+    {"lang": "en", "gid": 543, "check": "main street"}
+   ],
+   "about": [
+    "Carol Milford, a lively and idealistic young librarian in St. Paul, marries Will Kennicott, a solid, good-natured country doctor, and moves with him to Gopher Prairie, a small town on the Minnesota prairie. Full of plans to make the town more beautiful and cultured, with new buildings, theatre and literary clubs, she soon finds herself up against the narrow-mindedness, complacency and gossip of its leading citizens.",
+    "Lewis writes a sharp, often funny satire of small-town America and its conformity, materialism and fear of new ideas, while giving a sympathetic but unsentimental portrait of a restless woman searching for a fuller life. Gopher Prairie is based on Sauk Centre, Minnesota, where Lewis grew up.",
+    "Main Street was published in 1920 by Harcourt, Brace and Howe. It was a huge commercial success and established Lewis as a major American novelist; in 1930 he became the first American to receive the Nobel Prize in Literature."
+   ],
+   "author_short": "American novelist (1885–1951), author of Main Street and Babbitt, and the first American to win the Nobel Prize in Literature.",
+   "author_long": [
+    "Sinclair Lewis was born on 7 February 1885 in Sauk Centre, Minnesota, the son of a doctor. He studied at Yale, leaving for a time to live in Upton Sinclair's socialist colony before graduating in 1908, and worked as a journalist and editor before his success as a novelist. He died near Rome on 10 January 1951.",
+    "His best-known novels, Main Street (1920), Babbitt (1922), Arrowsmith (1925), Elmer Gantry (1927), Dodsworth (1929) and It Can't Happen Here (1935), satirise American society. He declined the Pulitzer Prize awarded to Arrowsmith, and in 1930 became the first American to win the Nobel Prize in Literature."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "The House of the Seven Gables",
+   "author": "Nathaniel Hawthorne",
+   "cat": "fiction",
+   "meta": "United States · 1851",
+   "desc": "An old curse hangs over the Pyncheon family and their gloomy Salem mansion, until a cheerful young cousin arrives and the past begins to stir.",
+   "editions": [
+    {"lang": "en", "gid": 77, "check": "seven gables"}
+   ],
+   "about": [
+    "In the seventeenth century, Colonel Pyncheon seized the land of Matthew Maule, a poor man executed for witchcraft, and built a grand house with seven gables on it; Maule cursed him from the scaffold. Two centuries later, the house has decayed along with the family's fortunes. The proud, impoverished old spinster Hepzibah Pyncheon is forced to open a little cent-shop to support her brother Clifford, newly released after thirty years in prison, while their powerful cousin Judge Jaffrey Pyncheon watches them, and a young country cousin, Phoebe, and a mysterious lodger, Holgrave, bring new life to the house.",
+    "Hawthorne explores how the sins and greed of one generation weigh on the next, mixing Gothic mystery, gentle humour and moral reflection. The old house itself, with its shadows, portraits and secrets, becomes a central character.",
+    "The House of the Seven Gables was published in 1851 and is one of Hawthorne's most celebrated works. It is set in Salem, Massachusetts."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "The Deerslayer",
+   "author": "James Fenimore Cooper",
+   "cat": "aventure",
+   "meta": "United States · 1841",
+   "desc": "On a wilderness lake in the 1740s, the young hunter Natty Bumppo faces his first war-path, helping a trapper's family and his Delaware friend Chingachgook.",
+   "editions": [
+    {"lang": "en", "gid": 3285, "check": "deerslayer"}
+   ],
+   "about": [
+    "In the 1740s, the young woodsman Natty Bumppo, called Deerslayer by the Delaware people among whom he was raised, comes to the remote lake the settlers call the Glimmerglass with the boastful giant Hurry Harry. They join the old trapper Thomas Hutter, who lives on the lake with his daughters, the beautiful Judith and the simple, gentle Hetty. War has broken out, Iroquois allied with the French are in the forest, and Deerslayer has come to meet his friend Chingachgook and help rescue Chingachgook's betrothed, Hist.",
+    "Cooper's story of frontier adventure is also a portrait of a young man of simple, honest principles, and of a wilderness of great beauty on the edge of change. Like his other frontier novels, it portrays Native American peoples through the romantic and often stereotyped views of its time, contrasting \"good\" and \"bad\" nations.",
+    "Published in 1841, The Deerslayer was the last of Cooper's Leatherstocking Tales to be written but is the first in the order of Natty Bumppo's life. The Glimmerglass is Otsego Lake in New York State, also the setting of The Pioneers (1823)."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "Little Men",
+   "author": "Louisa May Alcott",
+   "cat": "jeunesse",
+   "meta": "United States · 1871",
+   "desc": "Jo March, now Mrs Bhaer, runs a lively and unusual school for boys at Plumfield, where mischief, kindness and second chances fill the days.",
+   "editions": [
+    {"lang": "en", "gid": 2788, "check": "little men"}
+   ],
+   "about": [
+    "Jo March of Little Women has married Professor Bhaer, and together they run Plumfield, a school and home in the country for a crowd of boys, and a few girls. The story opens with the arrival of Nat Blake, a poor street musician sent by their friend Laurie, and follows the children's games, quarrels, adventures and lessons, especially the struggles of the wild and troubled Dan.",
+    "Alcott writes warmly about childhood and about an education based on kindness, trust, play and useful work rather than harsh discipline. The episodic chapters mix humour and gentle moral lessons, and familiar characters from Little Women reappear.",
+    "Little Men was published in 1871 as the sequel to Little Women, and was followed in 1886 by Jo's Boys, which completes the story of the Plumfield children."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "Black Beauty",
+   "author": "Anna Sewell",
+   "cat": "jeunesse",
+   "meta": "England · 1877",
+   "desc": "A handsome black horse tells his own life story, from a happy country childhood to hard work in the streets of London, in a classic plea for kindness to animals.",
+   "editions": [
+    {"lang": "en", "gid": 271, "check": "black beauty"}
+   ],
+   "about": [
+    "Black Beauty tells his own story, beginning with a happy childhood in a meadow and his training by a kind master at Birtwick Park, where he makes friends with the gentle pony Merrylegs and the spirited mare Ginger. As his fortunes change, he passes from owner to owner, from comfortable country stables to hard labour, and later works as a cab horse in the streets of London.",
+    "Through the eyes of a horse, Sewell shows the difference between kind and thoughtless treatment, exposing cruel practices of the time such as the bearing rein, a strap that held a horse's head painfully high. The simple, direct narration makes it a moving story for children and adults alike.",
+    "Black Beauty: The Autobiography of a Horse was published in 1877 by Jarrold and Sons of Norwich. Sewell's stated aim was to encourage kindness, sympathy and understanding in the treatment of horses, and the book is credited with helping to end the use of the bearing rein. It has become one of the best-known animal stories ever written."
+   ],
+   "author_short": "English novelist (1820–1878), author of Black Beauty, her only book.",
+   "author_long": [
+    "Anna Sewell was born on 30 March 1820 in Great Yarmouth, Norfolk, into a Quaker family; her mother, Mary Sewell, also became a writer. In 1832, at the age of twelve, she fell on her way home from school and injured her ankles, and for the rest of her life she walked with crutches. She died on 25 April 1878.",
+    "Sewell wrote Black Beauty during the last years of her life at Old Catton, near Norwich, while in poor health. Published in 1877, only five months before her death, it was her only book, and it has remained a classic of children's literature and of animal welfare."
+   ],
+   "librivox": []
+  }
+ ],
+ "refused": []
+}
