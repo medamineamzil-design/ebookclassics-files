@@ -1,0 +1,32 @@
+=== BookClassics — lot 2026-10-03-b — 2026-10-03 23:13 ===
+== 1/4 Fabrication des livres (EPUB, PDF, TXT, HTML) ==
+… Cranford [en] — Gutenberg #394
+   + cranford [en] OK — Project Gutenberg (#394), 70614 mots, 16 chapitres — epub:220Ko pdf:877Ko txt:382Ko html:392Ko
+… The Mill on the Floss [en] — Gutenberg #6688
+   + the-mill-on-the-floss [en] OK — Project Gutenberg (#6688), 205825 mots, 65 chapitres — epub:561Ko pdf:2600Ko txt:1138Ko html:1165Ko
+… The Mayor of Casterbridge [en] — Gutenberg #143
+   + the-mayor-of-casterbridge [en] OK — Project Gutenberg (#143), 115171 mots, 45 chapitres — epub:378Ko pdf:1593Ko txt:651Ko html:671Ko
+… Bleak House [en] — Gutenberg #1023
+   + bleak-house [en] OK — Project Gutenberg (#1023), 353194 mots, 67 chapitres — epub:870Ko pdf:4459Ko txt:1936Ko html:1988Ko
+… Hard Times [en] — Gutenberg #786
+   + hard-times [en] OK — Project Gutenberg (#786), 102947 mots, 37 chapitres — epub:311Ko pdf:1407Ko txt:576Ko html:596Ko
+== 2/4 Dépôt des livres ==
++ Cranford : en
++ The Mill on the Floss : en
++ The Mayor of Casterbridge : en
++ Bleak House : en
++ Hard Times : en
+   publié : ebookclassics-files — Nouveaux livres : Cranford, The Mill on the Floss, The Mayor of Casterbridge, Bleak House, Hard Times
+== 3/4 Site : catalogue, pages livres, plan du site ==
+   146 pages livres, 145 couvertures, 151 adresses dans le sitemap
+   5 livre(s) ajouté(s) au catalogue
+   publié : ebookclassics-site — Nouveaux livres au catalogue : Cranford, The Mill on the Floss, The Mayor of Casterbridge, Bleak House, Hard Times
+TERMINE — 5 nouveau(x) livre(s) : Cranford, The Mill on the Floss, The Mayor of Casterbridge, Bleak House, Hard Times
+== Livres audio du lot 2026-10-03-b ==
+   LibriVox : Cranford [en] — « Cranford (version 2) » (8 h 54)
+   LibriVox : The Mill on the Floss [en] — « Mill on the Floss (Version 2) » (25 h 39)
+   pas d'enregistrement LibriVox pour The Mayor of Casterbridge [en]
+   LibriVox : Bleak House [en] — « Bleak House » (43 h 30)
+   LibriVox : Hard Times [en] — « Hard Times (version 2 dramatic reading) » (12 h 00)
+   ! ~/r2.conf absent : livres audio non ajoutés
+FIN 2026-10-03 23:16

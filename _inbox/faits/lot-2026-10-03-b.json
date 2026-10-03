@@ -1,0 +1,86 @@
+{
+ "lot": "2026-10-03-b",
+ "books": [
+  {
+   "title": "Cranford",
+   "author": "Elizabeth Gaskell",
+   "cat": "fiction",
+   "meta": "England · 1853",
+   "desc": "In a quiet country town run by genteel ladies of modest means, small rules, kind hearts and gentle comedy make up a much-loved portrait of village life.",
+   "editions": [
+    {"lang": "en", "gid": 394, "check": "cranford"}
+   ],
+   "about": [
+    "The little town of Cranford is mostly in the hands of unmarried women and widows, its \"Amazons\", who live on small incomes and keep up appearances through a careful code of visiting hours, polite fictions and quiet economies. The narrator, Mary Smith, a young woman who often stays in the town, follows the lives of her friends, above all the strict Miss Deborah Jenkyns and her gentle younger sister, Miss Matty, as news, newcomers and the occasional misfortune ripple through their world.",
+    "Gaskell writes with warm, affectionate humour about people living in genteel poverty, their rivalries, their fears of change and the railway, and their deep loyalty to one another. Beneath the gentle comedy runs a thread of real feeling about loss, ageing and kindness, and the book is told in loosely linked episodes rather than a single plot.",
+    "Cranford began as a single story in Charles Dickens's magazine Household Words in December 1851. Dickens encouraged Gaskell to continue, and further episodes followed until 1853, when the stories were collected in book form under the title Cranford. It has remained one of her most popular works."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "The Mill on the Floss",
+   "author": "George Eliot",
+   "cat": "fiction",
+   "meta": "England · 1860",
+   "desc": "Clever, passionate Maggie Tulliver grows up beside the river Floss, torn between love for her proud brother Tom and her longing for a larger life.",
+   "editions": [
+    {"lang": "en", "gid": 6688, "check": "mill on the floss"}
+   ],
+   "about": [
+    "Maggie Tulliver and her brother Tom grow up at Dorlcote Mill, on the river Floss near the town of St. Ogg's. Maggie is quick, imaginative and impulsive, and she adores Tom, who is steady, stubborn and hard to please. As their father's fortunes are drawn into a bitter legal quarrel, the children's world changes, and Maggie's friendship with Philip Wakem, the sensitive son of her father's enemy, puts her loyalty to her family to the test.",
+    "Eliot paints provincial family life, its aunts, uncles, pride and petty quarrels, with humour and great psychological depth. The novel asks how a gifted girl with strong feelings can find her place in a narrow world, and explores duty, desire, memory and the bond between brother and sister. It is often seen as Eliot's most personal book, drawing on her own childhood.",
+    "The Mill on the Floss was published in three volumes by William Blackwood and Sons in 1860. It is widely regarded as one of Eliot's most powerful novels, and Maggie Tulliver as one of the most memorable heroines in English fiction."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "The Mayor of Casterbridge",
+   "author": "Thomas Hardy",
+   "cat": "fiction",
+   "meta": "England · 1886",
+   "desc": "In a drunken rage a young farm labourer sells his wife and baby at a country fair; years later, a respected man, he must face the past he tried to bury.",
+   "editions": [
+    {"lang": "en", "gid": 143, "check": "casterbridge"}
+   ],
+   "about": [
+    "Walking the roads of Wessex in search of work, the young hay-trusser Michael Henchard gets drunk at a country fair and sells his wife, Susan, and their baby daughter, Elizabeth-Jane, to a passing sailor. Sober and ashamed, he swears to give up drink. Many years later he has become a wealthy corn-factor and the mayor of Casterbridge, when Susan returns to the town with a grown-up Elizabeth-Jane, and a young Scotsman, Donald Farfrae, arrives looking for his fortune.",
+    "Hardy builds the novel around one powerful, proud and impulsive man, and asks how far character shapes fate. Rivalry in business and in love, secrets from the past and the life of a market town and its farming year are woven together with the sense of chance and consequence typical of his fiction.",
+    "The novel was serialised in twenty weekly parts in The Graphic from 2 January to 15 May 1886 and published in book form the same year. Casterbridge is Hardy's fictional version of Dorchester in Dorset. The book is among his best-known novels and has been adapted for television, including a 2001 version."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "Bleak House",
+   "author": "Charles Dickens",
+   "cat": "fiction",
+   "meta": "England · 1853",
+   "desc": "An endless lawsuit in the Court of Chancery draws together rich and poor, from a proud lady with a secret to a modest young orphan, in Dickens's great panoramic novel.",
+   "editions": [
+    {"lang": "en", "gid": 1023, "check": "bleak house"}
+   ],
+   "about": [
+    "For generations the case of Jarndyce and Jarndyce has dragged on in the Court of Chancery, swallowing a fortune in legal costs. Esther Summerson, a modest young woman raised as an orphan, goes to live at Bleak House with the kindly John Jarndyce and his young wards, Ada and Richard, both hoping something from the case. Meanwhile, in fashionable society, the cold and beautiful Lady Dedlock is shaken by the sight of a piece of handwriting, and a sinister lawyer, Mr. Tulkinghorn, sets out to learn why.",
+    "The story is told by two voices, Esther's own gentle first-person account and a sharp, satirical narrator in the present tense. Dickens attacks the delays and injustice of the law, neglect of the poor and self-important philanthropy, while weaving a mystery, an investigation by Inspector Bucket, and a vast gallery of memorable minor characters.",
+    "Bleak House was published by Bradbury and Evans in twenty monthly instalments between March 1852 and September 1853, with illustrations by Hablot K. Browne (\"Phiz\"). It is often considered one of Dickens's finest novels."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "Hard Times",
+   "author": "Charles Dickens",
+   "cat": "fiction",
+   "meta": "England · 1854",
+   "desc": "In smoky Coketown, the schoolmaster Thomas Gradgrind raises his children on facts alone, until life shows the cost of a world without imagination or feeling.",
+   "editions": [
+    {"lang": "en", "gid": 786, "check": "hard times"}
+   ],
+   "about": [
+    "In the industrial town of Coketown, the retired merchant Thomas Gradgrind believes in nothing but facts and figures, and brings up his children, Louisa and Tom, without fancy or wonder. When he takes in Sissy Jupe, the daughter of a circus performer, two very different views of life meet. As Louisa grows up, her father's friend Josiah Bounderby, a boastful banker and mill owner, takes an interest in her, while the honest weaver Stephen Blackpool struggles with hardship at the factory.",
+    "Dickens sets the cold arithmetic of utilitarian thinking against the need for imagination, kindness and play, and draws a harsh picture of industrial life and its effects on workers. Short and sharply drawn compared with his longer novels, the book mixes satire, sorrow and sympathy for ordinary people.",
+    "Hard Times was serialised weekly in Dickens's own magazine Household Words from April to August 1854 and published in book form the same year. Its serialisation more than doubled the magazine's circulation. This edition contains the novel only."
+   ],
+   "librivox": []
+  }
+ ],
+ "refused": []
+}
