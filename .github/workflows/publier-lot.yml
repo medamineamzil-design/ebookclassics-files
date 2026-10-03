@@ -1,6 +1,6 @@
 # BookClassics — publication automatique des lots, sans PC ni VPS.
 # Le bibliothécaire (Routine Claude, chaque matin) pousse _inbox/lot-AAAA-MM-JJ.json sur une branche claude/… ;
-# ce workflow le publie avec auto.sh (EPUB/PDF/TXT/HTML, site, audio LibriVox), puis range le lot
+# ce workflow le publie avec auto.sh (EPUB/PDF/TXT/HTML, site ; les MP3 sont ajoutés la nuit par audio-lot.yml), puis range le lot
 # dans _inbox/faits/ (ou _inbox/erreurs/) sur main ; un lot en erreur est retenté au prochain passage et écrit le journal dans _rapports/journal/.
 name: Publier le lot du jour
 
@@ -51,12 +51,6 @@ jobs:
           sudo mv typst-*/typst /usr/local/bin/
 
       - name: Préparation
-        env:
-          R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
-          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
-          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
-          R2_BUCKET: ${{ secrets.R2_BUCKET }}
-          R2_PUBLIC_URL: ${{ secrets.R2_PUBLIC_URL }}
         run: |
           mv ebookclassics-files ebookclassics-site ~/
           for r in ~/ebookclassics-files ~/ebookclassics-site; do
@@ -90,11 +84,7 @@ jobs:
                   print("rattrapage :", s, "(dans les fichiers, absent du site)")
           ' "$f"
           done
-          if [ -n "$R2_ACCOUNT_ID" ]; then
-            umask 077
-            printf 'account_id=%s\naccess_key_id=%s\nsecret_access_key=%s\nbucket=%s\npublic_url=%s\n' \
-              "$R2_ACCOUNT_ID" "$R2_ACCESS_KEY_ID" "$R2_SECRET_ACCESS_KEY" "$R2_BUCKET" "$R2_PUBLIC_URL" > ~/r2.conf
-          fi
+          # Pas de livres audio ici : ils sont ajoutés chaque nuit par « Ajouter les audios » (audio-lot.yml).
 
       - name: Publication (auto.sh)
         run: |
