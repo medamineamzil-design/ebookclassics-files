@@ -654,6 +654,14 @@
     "txt"
    ]
   },
+  "indiana": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "ivanhoe": {
    "en": [
     "epub",
@@ -976,6 +984,20 @@
     "txt"
    ]
   },
+  "ninety-three": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "north-and-south": {
    "en": [
     "epub",
@@ -1136,6 +1158,20 @@
   },
   "peter-pan": {
    "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "pierre-and-jean": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
     "epub",
     "html",
     "pdf",
@@ -1514,6 +1550,20 @@
     "txt"
    ]
   },
+  "the-devil-s-pool": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-divine-comedy": {
    "de": [
     "epub",
@@ -1541,6 +1591,14 @@
    ]
   },
   "the-federalist-papers": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-gambler": {
    "en": [
     "epub",
     "html",
@@ -2361,5 +2419,5 @@
    ]
   }
  },
- "generated": "2026-10-03T23:51:36Z"
+ "generated": "2026-10-03T23:52:22Z"
 }
