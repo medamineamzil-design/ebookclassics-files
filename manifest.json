@@ -138,6 +138,14 @@
     "txt"
    ]
   },
+  "an-ideal-husband": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "andersen-s-fairy-tales": {
    "de": [
     "epub",
@@ -666,6 +674,14 @@
     "txt"
    ]
   },
+  "just-so-stories": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "kidnapped": {
    "en": [
     "epub",
@@ -741,6 +757,14 @@
    ]
   },
   "little-women": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "lord-jim": {
    "en": [
     "epub",
     "html",
@@ -1558,6 +1582,14 @@
     "txt"
    ]
   },
+  "the-lost-world": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-mayor-of-casterbridge": {
    "en": [
     "epub",
@@ -1704,6 +1736,20 @@
   },
   "the-prince-and-the-pauper": {
    "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-prisoner-of-zenda": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "es": [
     "epub",
     "html",
     "pdf",
@@ -2187,5 +2233,5 @@
    ]
   }
  },
- "generated": "2026-10-03T23:49:19Z"
+ "generated": "2026-10-03T23:49:53Z"
 }
