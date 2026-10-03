@@ -1,0 +1,98 @@
+=== BookClassics — lot 2026-10-03-d — 2026-10-03 23:27 ===
+== 1/4 Fabrication des livres (EPUB, PDF, TXT, HTML) ==
+… The Tenant of Wildfell Hall [en] — Gutenberg #969
+   + the-tenant-of-wildfell-hall [en] OK — Project Gutenberg (#969), 168382 mots, 50 chapitres — epub:484Ko pdf:2190Ko txt:930Ko html:956Ko
+… Villette [en] — Gutenberg #9182
+   + villette [en] OK — Project Gutenberg (#9182), 192411 mots, 42 chapitres — epub:552Ko pdf:2510Ko txt:1084Ko html:1113Ko
+… The Pickwick Papers [en] — Gutenberg #580
+   + the-pickwick-papers [en] OK — Project Gutenberg (#580), 299046 mots, 38 chapitres — epub:761Ko pdf:4236Ko txt:1749Ko html:1806Ko
+… Waverley [en] — Gutenberg #2034
+   + waverley [en] OK — Project Gutenberg (#2034), 180866 mots, 72 chapitres — epub:549Ko pdf:2437Ko txt:1035Ko html:1086Ko
+… The Castle of Otranto [en] — Gutenberg #696
+   + the-castle-of-otranto [en] OK — Project Gutenberg (#696), 36561 mots, 5 chapitres — epub:147Ko pdf:541Ko txt:210Ko html:219Ko
+== 2/4 Dépôt des livres ==
++ The Tenant of Wildfell Hall : en
++ Villette : en
++ The Pickwick Papers : en
++ Waverley : en
++ The Castle of Otranto : en
+   publié : ebookclassics-files — Nouveaux livres : The Tenant of Wildfell Hall, Villette, The Pickwick Papers, Waverley, The Castle of Otranto
+== 3/4 Site : catalogue, pages livres, plan du site ==
+   156 pages livres, 155 couvertures, 161 adresses dans le sitemap
+   5 livre(s) ajouté(s) au catalogue
+   publié : ebookclassics-site — Nouveaux livres au catalogue : The Tenant of Wildfell Hall, Villette, The Pickwick Papers, Waverley, The Castle of Otranto
+TERMINE — 5 nouveau(x) livre(s) : The Tenant of Wildfell Hall, Villette, The Pickwick Papers, Waverley, The Castle of Otranto
+=== BookClassics — lot 2026-10-03-e — 2026-10-03 23:29 ===
+   2 livre(s) écarté(s) par l'agent, notés dans refuses.json
+== 1/4 Fabrication des livres (EPUB, PDF, TXT, HTML) ==
+… The Return of the Native [en] — Gutenberg #122
+   + the-return-of-the-native [en] OK — Project Gutenberg (#122), 141469 mots, 54 chapitres — epub:424Ko pdf:1977Ko txt:780Ko html:809Ko
+… Nicholas Nickleby [en] — Gutenberg #967
+   + nicholas-nickleby [en] OK — Project Gutenberg (#967), 322167 mots, 65 chapitres — epub:842Ko pdf:4336Ko txt:1848Ko html:1900Ko
+… Shirley [en] — Gutenberg #30486
+   + shirley [en] OK — Project Gutenberg (#30486), 215978 mots, 37 chapitres — epub:584Ko pdf:2892Ko txt:1193Ko html:1289Ko
+… A Journal of the Plague Year [en] — Gutenberg #376
+   + a-journal-of-the-plague-year [en] OK — Project Gutenberg (#376), 94688 mots, 5 chapitres — epub:245Ko pdf:1071Ko txt:507Ko html:517Ko
+… The Vicar of Wakefield [en] — Gutenberg #2667
+   + the-vicar-of-wakefield [en] OK — Project Gutenberg (#2667), 62939 mots, 36 chapitres — epub:234Ko pdf:859Ko txt:346Ko html:355Ko
+… The Vicar of Wakefield [fr] — Gutenberg #52376
+   + the-vicar-of-wakefield [fr] OK — Project Gutenberg (#52376), 69748 mots, 64 chapitres — epub:281Ko pdf:1036Ko txt:430Ko html:442Ko
+== 2/4 Dépôt des livres ==
++ The Return of the Native : en
++ Nicholas Nickleby : en
++ Shirley : en
++ A Journal of the Plague Year : en
++ The Vicar of Wakefield : en, fr
+   publié : ebookclassics-files — Nouveaux livres : The Return of the Native, Nicholas Nickleby, Shirley, A Journal of the Plague Year, The Vicar of Wakefield
+== 3/4 Site : catalogue, pages livres, plan du site ==
+   161 pages livres, 160 couvertures, 166 adresses dans le sitemap
+   5 livre(s) ajouté(s) au catalogue
+   publié : ebookclassics-site — Nouveaux livres au catalogue : The Return of the Native, Nicholas Nickleby, Shirley, A Journal of the Plague Year, The Vicar of Wakefield
+TERMINE — 5 nouveau(x) livre(s) : The Return of the Native, Nicholas Nickleby, Shirley, A Journal of the Plague Year, The Vicar of Wakefield
+=== BookClassics — lot 2026-10-03-f — 2026-10-03 23:30 ===
+== 1/4 Fabrication des livres (EPUB, PDF, TXT, HTML) ==
+… Evelina [en] — Gutenberg #6053
+   + evelina [en] OK — Project Gutenberg (#6053), 154408 mots, 164 chapitres — epub:506Ko pdf:2401Ko txt:840Ko html:923Ko
+… The Last Days of Pompeii [en] — Gutenberg #1565
+   + the-last-days-of-pompeii [en] OK — Project Gutenberg (#1565), 148753 mots, 81 chapitres — epub:481Ko pdf:2132Ko txt:839Ko html:896Ko
+… Lorna Doone [en] — Gutenberg #840
+   + lorna-doone [en] OK — Project Gutenberg (#840), 271863 mots, 74 chapitres — epub:692Ko pdf:3137Ko txt:1396Ko html:1459Ko
+… The Warden [en] — Gutenberg #619
+   + the-warden [en] OK — Project Gutenberg (#619), 71721 mots, 22 chapitres — epub:227Ko pdf:936Ko txt:388Ko html:413Ko
+… The Turn of the Screw [en] — Gutenberg #209
+   + the-turn-of-the-screw [en] OK — Project Gutenberg (#209), 41812 mots, 24 chapitres — epub:176Ko pdf:627Ko txt:226Ko html:236Ko
+== 2/4 Dépôt des livres ==
++ Evelina : en
++ The Last Days of Pompeii : en
++ Lorna Doone : en
++ The Warden : en
++ The Turn of the Screw : en
+   publié : ebookclassics-files — Nouveaux livres : Evelina, The Last Days of Pompeii, Lorna Doone, The Warden, The Turn of the Screw
+== 3/4 Site : catalogue, pages livres, plan du site ==
+   166 pages livres, 165 couvertures, 171 adresses dans le sitemap
+   5 livre(s) ajouté(s) au catalogue
+   publié : ebookclassics-site — Nouveaux livres au catalogue : Evelina, The Last Days of Pompeii, Lorna Doone, The Warden, The Turn of the Screw
+TERMINE — 5 nouveau(x) livre(s) : Evelina, The Last Days of Pompeii, Lorna Doone, The Warden, The Turn of the Screw
+== Livres audio du lot 2026-10-03-d ==
+   LibriVox : The Tenant of Wildfell Hall [en] — « Tenant of Wildfell Hall » (18 h 14)
+   LibriVox : Villette [en] — « Villette (version 3) » (24 h 09)
+   LibriVox : The Pickwick Papers [en] — « Pickwick Papers » (32 h 00)
+   pas d'enregistrement LibriVox pour Waverley [en]
+   LibriVox : The Castle of Otranto [en] — « Castle of Otranto (Version 2) » (4 h 04)
+   ! ~/r2.conf absent : livres audio non ajoutés
+== Livres audio du lot 2026-10-03-e ==
+   pas d'enregistrement LibriVox pour The Return of the Native [en]
+   LibriVox : Nicholas Nickleby [en] — « Nicholas Nickleby (Version 4) » (31 h 34)
+   pas d'enregistrement LibriVox pour Shirley [en]
+   pas d'enregistrement LibriVox pour A Journal of the Plague Year [en]
+   LibriVox : The Vicar of Wakefield [en] — « Vicar of Wakefield » (6 h 23)
+   pas d'enregistrement LibriVox pour The Vicar of Wakefield [fr]
+   ! ~/r2.conf absent : livres audio non ajoutés
+== Livres audio du lot 2026-10-03-f ==
+   LibriVox : Evelina [en] — « Evelina » (15 h 52)
+   LibriVox : The Last Days of Pompeii [en] — « Last Days of Pompeii » (16 h 44)
+   pas d'enregistrement LibriVox pour Lorna Doone [en]
+   LibriVox : The Warden [en] — « Warden (version 3) » (9 h 37)
+   LibriVox : The Turn of the Screw [en] — « Turn of the Screw » (5 h 43)
+   ! ~/r2.conf absent : livres audio non ajoutés
+FIN 2026-10-03 23:34

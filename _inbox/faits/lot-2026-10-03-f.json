@@ -1,0 +1,111 @@
+{
+ "lot": "2026-10-03-f",
+ "books": [
+  {
+   "title": "Evelina",
+   "author": "Frances Burney",
+   "cat": "fiction",
+   "meta": "England · 1778",
+   "desc": "A sheltered seventeen-year-old leaves her quiet country home for London society, where balls, theatres, rogues and relatives test her innocence and good sense.",
+   "editions": [
+    {"lang": "en", "gid": 6053, "check": "evelina"}
+   ],
+   "about": [
+    "Evelina Anville has been raised in rural seclusion by her kindly guardian, the Reverend Mr Villars, at Berry Hill. When she travels to London with the family of her friend Maria Mirvan, she is dazzled and bewildered by fashionable society, its balls, theatres and pleasure gardens, and by the handsome and courteous Lord Orville. Her blunders, her unwelcome suitors and the arrival of her vulgar French grandmother, Madame Duval, make her entrance into the world anything but smooth.",
+    "Told in letters, mostly from Evelina to Mr Villars, the novel is a sharp and funny social comedy about manners, class and the dangers a young woman faced in a world run by men. Burney's ear for dialogue and her gallery of comic characters, from the coarse Captain Mirvan to Evelina's pretentious cousins, made it one of the liveliest novels of its century.",
+    "Evelina was published anonymously in 1778 by Thomas Lowndes. Burney even disguised her handwriting, and her brother delivered the manuscript to the publisher in disguise. The book was a great success, and its authorship soon became known."
+   ],
+   "author_short": "English novelist and diarist (1752–1840), author of Evelina, Cecilia and Camilla, also known as Madame d'Arblay.",
+   "author_long": [
+    "Frances Burney, known as Fanny, was born on 13 June 1752 in King's Lynn, Norfolk. From 1786 she served at the court of Queen Charlotte as Keeper of the Robes, and her diaries and letters from those years give a detailed picture of court life, including the illness of King George III. In 1793 she married a French exile, General Alexandre d'Arblay. She died on 6 January 1840.",
+    "After the success of Evelina (1778) she published Cecilia (1782), Camilla (1796) and The Wanderer (1814), novels about the lives of young women in society. Her journals and letters are also celebrated, among them her account of a mastectomy she underwent without anaesthetic in Paris, one of the earliest and most detailed descriptions of such an operation."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "The Last Days of Pompeii",
+   "author": "Edward Bulwer-Lytton",
+   "cat": "aventure",
+   "meta": "England · 1834",
+   "desc": "In the elegant Roman city of Pompeii, love, rivalry and a sinister Egyptian priest's schemes play out in the shadow of Vesuvius as AD 79 approaches.",
+   "editions": [
+    {"lang": "en", "gid": 1565, "check": "pompeii"}
+   ],
+   "about": [
+    "In the luxurious city of Pompeii, the young Athenian Glaucus falls in love with the beautiful Ione, who is under the guardianship of Arbaces, a powerful and sinister Egyptian priest of Isis with designs of his own. Nydia, a blind flower girl whom Glaucus has rescued from cruel masters, secretly loves him. Around them move the pleasures of Roman society, gladiators, a small community of early Christians, and the quiet threat of the mountain above the town.",
+    "Bulwer-Lytton recreates the daily life of a Roman city in rich detail, its villas, baths, temples and amphitheatre, and contrasts its decadence with the old faiths of Egypt and Greece and the rising Christian religion. The story builds towards the eruption of Mount Vesuvius in AD 79, which destroyed the city.",
+    "The novel was published in 1834. Bulwer-Lytton was inspired by the painting The Last Day of Pompeii by the Russian artist Karl Bryullov, which he had seen in Milan. The book was very popular and has been adapted for the screen, including a 1959 film."
+   ],
+   "author_short": "English novelist, playwright and politician (1803–1873), author of The Last Days of Pompeii and Pelham.",
+   "author_long": [
+    "Edward George Earle Lytton Bulwer-Lytton was born in London on 25 May 1803. Besides writing, he had a long political career and served as Secretary of State for the Colonies from June 1858 to June 1859. He was later raised to the peerage as Baron Lytton. He died in Torquay on 18 January 1873.",
+    "A prolific and widely read author, he began with the novel Pelham (1828) and wrote historical, social and occult fiction, plays and poetry. He coined phrases that are still in use, such as \"the pen is mightier than the sword\", and the opening \"It was a dark and stormy night\"."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "Lorna Doone",
+   "author": "R. D. Blackmore",
+   "cat": "aventure",
+   "meta": "England · 1869",
+   "desc": "On wild Exmoor in the 1680s, young farmer John Ridd falls in love with Lorna, raised among the outlaw Doone clan who killed his father.",
+   "editions": [
+    {"lang": "en", "gid": 840, "check": "lorna doone"}
+   ],
+   "about": [
+    "John Ridd is a boy when his father, a farmer on Exmoor, is killed by the Doones, a clan of outlaws descended from disgraced gentry who live in a hidden valley and raid the countryside with near impunity. Exploring the valley, the young John meets a beautiful girl, Lorna, who is being raised among the Doones. As he grows into a strong and honest young man, his love for Lorna sets him against the clan and its fierce heir, Carver Doone.",
+    "Told by John Ridd in his old age, the novel mixes romance, adventure and the rhythms of farm life on Exmoor with real events of the late seventeenth century, including the Monmouth Rebellion. Blackmore's love of the landscape and its seasons fills the book, along with humour and local dialect.",
+    "Lorna Doone: A Romance of Exmoor was published in 1869. It became extremely popular, has never been out of print, and is by far Blackmore's best-known work."
+   ],
+   "author_short": "English novelist (1825–1900), author of Lorna Doone.",
+   "author_long": [
+    "Richard Doddridge Blackmore was born on 7 June 1825 at Longworth, Berkshire. He studied at Exeter College, Oxford, and trained as a barrister, but owing to poor health he gave up the law and turned to market-gardening and writing at Teddington, Middlesex, where he grew fruit and rare plants. He died at Teddington on 20 January 1900.",
+    "Blackmore wrote poetry, translations and several other novels, and was among the best-known English novelists of the second half of the nineteenth century. Today he is remembered almost entirely for Lorna Doone, which has remained continuously popular."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "The Warden",
+   "author": "Anthony Trollope",
+   "cat": "fiction",
+   "meta": "England · 1855",
+   "desc": "A gentle elderly clergyman's comfortable post running a charity for old men is suddenly questioned by a young reformer, and a quiet cathedral town takes sides.",
+   "editions": [
+    {"lang": "en", "gid": 619, "check": "warden"}
+   ],
+   "about": [
+    "The Reverend Septimus Harding, a kind and modest clergyman who loves music, is the warden of Hiram's Hospital in the cathedral town of Barchester, a charity that houses twelve old men. The warden's comfortable income comes from the same medieval bequest. John Bold, a young reforming surgeon who is in love with Harding's daughter Eleanor, begins to ask whether the money is fairly divided, and the question soon reaches the lawyers and the newspapers.",
+    "Trollope turns a small local dispute into a gentle but pointed comedy about conscience, the Church of England, the power of the press and the difficulty of reform. Mr Harding's quiet integrity is set against the energy of his forceful son-in-law, Archdeacon Grantly, who is determined to defend the Church at all costs.",
+    "Published in 1855, The Warden was the first of Trollope's six Chronicles of Barsetshire, set in the imaginary county of Barsetshire. It was followed by Barchester Towers (1857)."
+   ],
+   "author_short": "English novelist (1815–1882), author of the Chronicles of Barsetshire and the Palliser novels.",
+   "author_long": [
+    "Anthony Trollope was born in London on 24 April 1815. His family was often in financial difficulty, and his mother, Frances Trollope, began a successful writing career to support it. He worked for the Post Office from 1834 to 1867, and from 1841 he spent many years in Ireland as a postal official. He died in London on 6 December 1882.",
+    "Trollope wrote 47 novels, famously working early in the morning at a fixed pace. His best-known works are two series of six novels each, the Chronicles of Barsetshire, including Barchester Towers (1857), and the Palliser novels. He also wrote travel books, short stories and an autobiography."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "The Turn of the Screw",
+   "author": "Henry James",
+   "cat": "fiction",
+   "meta": "United States · 1898",
+   "desc": "A young governess at a lonely English country house becomes convinced that two ghostly figures are after the children in her care, in a classic tale of ambiguity.",
+   "editions": [
+    {"lang": "en", "gid": 209, "check": "turn of the screw"}
+   ],
+   "about": [
+    "On Christmas Eve, a man named Douglas reads his friends a manuscript written by a governess he once knew. As a young woman, she accepted a post at Bly, a remote country house, to care for two orphaned children, the charming Miles and Flora, on condition that she never trouble their uncle in London. Soon she begins to see a strange man and woman about the grounds, and the housekeeper, Mrs Grose, recognises them as two former servants, Peter Quint and Miss Jessel.",
+    "James tells the story through the governess's own account, and never settles whether the ghosts are real or the product of her imagination. The tension, the hints and silences, and the unsettling innocence of the children make it one of the most discussed ghost stories in English.",
+    "The Turn of the Screw was first serialised in Collier's Weekly from January to April 1898, then published in October 1898 in the volume The Two Magics. Early readers took it as a straightforward ghost story; from the 1930s some critics argued that the apparitions exist only in the governess's mind, and its ambiguity is now seen as central."
+   ],
+   "author_short": "American-born British novelist (1843–1916), author of The Portrait of a Lady, Daisy Miller and The Turn of the Screw.",
+   "author_long": [
+    "Henry James was born in New York City on 15 April 1843 and spent much of his youth travelling in Europe. He settled in England and became a British citizen in 1915, as a sign of loyalty to his adopted country during the First World War. He died in London on 28 February 1916.",
+    "James is known for subtle psychological novels and stories, often about Americans in Europe, such as Daisy Miller (1879), The Portrait of a Lady (1881) and The Ambassadors (1903). He also wrote ghost stories, criticism and travel writing, and is considered one of the great masters of the novel."
+   ],
+   "librivox": []
+  }
+ ],
+ "refused": []
+}
