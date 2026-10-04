@@ -1,0 +1,185 @@
+=== BookClassics — lot 2026-10-03-u — 2026-10-04 00:09 ===
+== 1/4 Fabrication des livres (EPUB, PDF, TXT, HTML) ==
+… Much Ado About Nothing [en] — Gutenberg #1118
+   + much-ado-about-nothing [en] OK — Project Gutenberg (#1118), 22706 mots, 1 chapitres — epub:116Ko pdf:385Ko txt:117Ko html:127Ko
+… Much Ado About Nothing [fr] — Gutenberg #15846
+   + much-ado-about-nothing [fr] OK — Project Gutenberg (#15846), 24672 mots, 16 chapitres — epub:143Ko pdf:521Ko txt:155Ko html:175Ko
+… The Merchant of Venice [en] — Gutenberg #1114
+   + the-merchant-of-venice [en] OK — Project Gutenberg (#1114), 22583 mots, 1 chapitres — epub:114Ko pdf:359Ko txt:116Ko html:125Ko
+… The Merchant of Venice [fr] — Gutenberg #20773
+   + the-merchant-of-venice [fr] OK — Project Gutenberg (#20773), 25447 mots, 19 chapitres — epub:143Ko pdf:485Ko txt:153Ko html:171Ko
+… The Merchant of Venice [de] — Gutenberg #7043
+   + the-merchant-of-venice [de] OK — Project Gutenberg (#7043), 20786 mots, 5 chapitres — epub:127Ko pdf:408Ko txt:125Ko html:135Ko
+… Julius Caesar [en] — Gutenberg #1120
+   + julius-caesar [en] OK — Project Gutenberg (#1120), 21079 mots, 1 chapitres — epub:104Ko pdf:357Ko txt:111Ko html:121Ko
+… Julius Caesar [fr] — Gutenberg #15847
+   + julius-caesar [fr] OK — Project Gutenberg (#15847), 26918 mots, 19 chapitres — epub:142Ko pdf:529Ko txt:169Ko html:188Ko
+… Julius Caesar [de] — Gutenberg #9875
+   + julius-caesar [de] OK — Project Gutenberg (#9875), 19585 mots, 5 chapitres — epub:113Ko pdf:395Ko txt:119Ko html:130Ko
+… As You Like It [en] — Gutenberg #1121
+   + as-you-like-it [en] OK — Project Gutenberg (#1121), 23148 mots, 1 chapitres — epub:105Ko pdf:367Ko txt:119Ko html:129Ko
+… As You Like It [fr] — Gutenberg #18162
+   + as-you-like-it [fr] OK — Project Gutenberg (#18162), 26497 mots, 7 chapitres — epub:131Ko pdf:503Ko txt:162Ko html:181Ko
+… As You Like It [de] — Gutenberg #7041
+   + as-you-like-it [de] OK — Project Gutenberg (#7041), 22076 mots, 5 chapitres — epub:124Ko pdf:439Ko txt:134Ko html:145Ko
+… The Taming of the Shrew [en] — Gutenberg #1107
+   + the-taming-of-the-shrew [en] OK — Project Gutenberg (#1107), 21936 mots, 2 chapitres — epub:116Ko pdf:375Ko txt:113Ko html:124Ko
+== 2/4 Dépôt des livres ==
++ Much Ado About Nothing : en, fr
++ The Merchant of Venice : en, fr, de
++ Julius Caesar : en, fr, de
++ As You Like It : en, fr, de
++ The Taming of the Shrew : en
+   publié : ebookclassics-files — Nouveaux livres : Much Ado About Nothing, The Merchant of Venice, Julius Caesar, As You Like It, The Taming of the Shrew
+== 3/4 Site : catalogue, pages livres, plan du site ==
+   241 pages livres, 240 couvertures, 246 adresses dans le sitemap
+   5 livre(s) ajouté(s) au catalogue
+   publié : ebookclassics-site — Nouveaux livres au catalogue : Much Ado About Nothing, The Merchant of Venice, Julius Caesar, As You Like It, The Taming of the Shrew
+TERMINE — 5 nouveau(x) livre(s) : Much Ado About Nothing, The Merchant of Venice, Julius Caesar, As You Like It, The Taming of the Shrew
+=== BookClassics — lot 2026-10-03-v — 2026-10-04 00:10 ===
+   1 livre(s) écarté(s) par l'agent, notés dans refuses.json
+== 1/4 Fabrication des livres (EPUB, PDF, TXT, HTML) ==
+… Ghosts [en] — Gutenberg #8121
+   + ghosts [en] OK — Project Gutenberg (#8121), 24157 mots, 10 chapitres — epub:107Ko pdf:452Ko txt:132Ko html:146Ko
+… Ghosts [de] — Gutenberg #22159
+   + ghosts [de] OK — Project Gutenberg (#22159), 22929 mots, 0 chapitres — epub:122Ko pdf:447Ko txt:136Ko html:148Ko
+… An Enemy of the People [en] — Gutenberg #2446
+   + an-enemy-of-the-people [en] OK — Project Gutenberg (#2446), 31649 mots, 5 chapitres — epub:130Ko pdf:558Ko txt:174Ko html:190Ko
+… Lady Windermere's Fan [en] — Gutenberg #790
+   + lady-windermere-s-fan [en] OK — Project Gutenberg (#790), 19822 mots, 6 chapitres — epub:106Ko pdf:384Ko txt:111Ko html:121Ko
+… Arms and the Man [en] — Gutenberg #3618
+   + arms-and-the-man [en] OK — Project Gutenberg (#3618), 24580 mots, 4 chapitres — epub:121Ko pdf:420Ko txt:137Ko html:146Ko
+… She Stoops to Conquer [en] — Gutenberg #383
+   + she-stoops-to-conquer [en] OK — Project Gutenberg (#383), 22773 mots, 5 chapitres — epub:120Ko pdf:423Ko txt:127Ko html:137Ko
+== 2/4 Dépôt des livres ==
++ Ghosts : en, de
++ An Enemy of the People : en
++ Lady Windermere's Fan : en
++ Arms and the Man : en
++ She Stoops to Conquer : en
+   publié : ebookclassics-files — Nouveaux livres : Ghosts, An Enemy of the People, Lady Windermere's Fan, Arms and the Man, She Stoops to Conquer
+== 3/4 Site : catalogue, pages livres, plan du site ==
+   246 pages livres, 245 couvertures, 251 adresses dans le sitemap
+   5 livre(s) ajouté(s) au catalogue
+   publié : ebookclassics-site — Nouveaux livres au catalogue : Ghosts, An Enemy of the People, Lady Windermere's Fan, Arms and the Man, She Stoops to Conquer
+TERMINE — 5 nouveau(x) livre(s) : Ghosts, An Enemy of the People, Lady Windermere's Fan, Arms and the Man, She Stoops to Conquer
+=== BookClassics — lot 2026-10-03-w — 2026-10-04 00:11 ===
+== 1/4 Fabrication des livres (EPUB, PDF, TXT, HTML) ==
+… Resurrection [en] — Gutenberg #1938
+   + resurrection [en] OK — Project Gutenberg (#1938), 173125 mots, 129 chapitres — epub:526Ko pdf:2476Ko txt:964Ko html:1001Ko
+… The Cossacks [en] — Gutenberg #4761
+   + the-cossacks [en] OK — Project Gutenberg (#4761), 62069 mots, 42 chapitres — epub:225Ko pdf:922Ko txt:346Ko html:361Ko
+… Poor Folk [en] — Gutenberg #2302
+   + poor-folk [en] OK — Project Gutenberg (#2302), 54149 mots, 9 chapitres — epub:173Ko pdf:670Ko txt:286Ko html:292Ko
+… Mother [en] — Gutenberg #3783
+   + mother [en] OK — Project Gutenberg (#3783), 131322 mots, 39 chapitres — epub:376Ko pdf:1956Ko txt:726Ko html:808Ko
+… The Lady with the Dog and Other Stories [en] — Gutenberg #13415
+   + the-lady-with-the-dog-and-other-stories [en] OK — Project Gutenberg (#13415), 71338 mots, 32 chapitres — epub:256Ko pdf:1014Ko txt:385Ko html:416Ko
+== 2/4 Dépôt des livres ==
++ Resurrection : en
++ The Cossacks : en
++ Poor Folk : en
++ Mother : en
++ The Lady with the Dog and Other Stories : en
+   publié : ebookclassics-files — Nouveaux livres : Resurrection, The Cossacks, Poor Folk, Mother, The Lady with the Dog and Other Stories
+== 3/4 Site : catalogue, pages livres, plan du site ==
+   251 pages livres, 250 couvertures, 256 adresses dans le sitemap
+   5 livre(s) ajouté(s) au catalogue
+   publié : ebookclassics-site — Nouveaux livres au catalogue : Resurrection, The Cossacks, Poor Folk, Mother, The Lady with the Dog and Other Stories
+TERMINE — 5 nouveau(x) livre(s) : Resurrection, The Cossacks, Poor Folk, Mother, The Lady with the Dog and Other Stories
+=== BookClassics — lot 2026-10-03-x — 2026-10-04 00:11 ===
+== 1/4 Fabrication des livres (EPUB, PDF, TXT, HTML) ==
+… The Way We Live Now [en] — Gutenberg #5231
+   + the-way-we-live-now [en] OK — Project Gutenberg (#5231), 349888 mots, 100 chapitres — epub:860Ko pdf:4327Ko txt:1853Ko html:1992Ko
+… McTeague [en] — Gutenberg #165
+   + mcteague [en] OK — Project Gutenberg (#165), 112614 mots, 22 chapitres — epub:319Ko pdf:1507Ko txt:631Ko html:666Ko
+… The Legend of Sleepy Hollow [en] — Gutenberg #41
+   + the-legend-of-sleepy-hollow [en] OK — Project Gutenberg (#41), 12215 mots, 3 chapitres — epub:102Ko pdf:233Ko txt:68Ko html:72Ko
+… Life on the Mississippi [en] — Gutenberg #245
+   + life-on-the-mississippi [en] OK — Project Gutenberg (#245), 143284 mots, 60 chapitres — epub:434Ko pdf:1850Ko txt:779Ko html:821Ko
+… Little Lord Fauntleroy [en] — Gutenberg #479
+   + little-lord-fauntleroy [en] OK — Project Gutenberg (#479), 58321 mots, 14 chapitres — epub:195Ko pdf:798Ko txt:312Ko html:330Ko
+== 2/4 Dépôt des livres ==
++ The Way We Live Now : en
++ McTeague : en
++ The Legend of Sleepy Hollow : en
++ Life on the Mississippi : en
++ Little Lord Fauntleroy : en
+   publié : ebookclassics-files — Nouveaux livres : The Way We Live Now, McTeague, The Legend of Sleepy Hollow, Life on the Mississippi, Little Lord Fauntleroy
+== 3/4 Site : catalogue, pages livres, plan du site ==
+   256 pages livres, 255 couvertures, 261 adresses dans le sitemap
+   5 livre(s) ajouté(s) au catalogue
+   publié : ebookclassics-site — Nouveaux livres au catalogue : The Way We Live Now, McTeague, The Legend of Sleepy Hollow, Life on the Mississippi, Little Lord Fauntleroy
+TERMINE — 5 nouveau(x) livre(s) : The Way We Live Now, McTeague, The Legend of Sleepy Hollow, Life on the Mississippi, Little Lord Fauntleroy
+=== BookClassics — lot 2026-10-03-y — 2026-10-04 00:12 ===
+   1 livre(s) écarté(s) par l'agent, notés dans refuses.json
+== 1/4 Fabrication des livres (EPUB, PDF, TXT, HTML) ==
+… Captains Courageous [en] — Gutenberg #2186
+   + captains-courageous [en] OK — Project Gutenberg (#2186), 52537 mots, 10 chapitres — epub:200Ko pdf:772Ko txt:287Ko html:332Ko
+… Martin Eden [en] — Gutenberg #1056
+   + martin-eden [en] OK — Project Gutenberg (#1056), 138702 mots, 46 chapitres — epub:398Ko pdf:1761Ko txt:765Ko html:785Ko
+… Martin Eden [it] — Gutenberg #73373
+   + martin-eden [it] OK — Project Gutenberg (#73373), 119638 mots, 45 chapitres — epub:392Ko pdf:1684Ko txt:735Ko html:755Ko
+… The Memoirs of Sherlock Holmes [en] — Gutenberg #834
+   + the-memoirs-of-sherlock-holmes [en] OK — Project Gutenberg (#834), 95161 mots, 11 chapitres — epub:276Ko pdf:1258Ko txt:512Ko html:530Ko
+… The First Men in the Moon [en] — Gutenberg #1013
+   + the-first-men-in-the-moon [en] OK — Project Gutenberg (#1013), 68230 mots, 26 chapitres — epub:238Ko pdf:970Ko txt:376Ko html:391Ko
+… At the Back of the North Wind [en] — Gutenberg #225
+   + at-the-back-of-the-north-wind [en] OK — Project Gutenberg (#225), 88505 mots, 38 chapitres — epub:275Ko pdf:1232Ko txt:460Ko html:491Ko
+== 2/4 Dépôt des livres ==
++ Captains Courageous : en
++ Martin Eden : en, it
++ The Memoirs of Sherlock Holmes : en
++ The First Men in the Moon : en
++ At the Back of the North Wind : en
+   publié : ebookclassics-files — Nouveaux livres : Captains Courageous, Martin Eden, The Memoirs of Sherlock Holmes, The First Men in the Moon, At the Back of the North Wind
+== 3/4 Site : catalogue, pages livres, plan du site ==
+   261 pages livres, 260 couvertures, 266 adresses dans le sitemap
+   5 livre(s) ajouté(s) au catalogue
+   publié : ebookclassics-site — Nouveaux livres au catalogue : Captains Courageous, Martin Eden, The Memoirs of Sherlock Holmes, The First Men in the Moon, At the Back of the North Wind
+TERMINE — 5 nouveau(x) livre(s) : Captains Courageous, Martin Eden, The Memoirs of Sherlock Holmes, The First Men in the Moon, At the Back of the North Wind
+== Livres audio du lot 2026-10-03-u ==
+   pas d'enregistrement LibriVox pour Much Ado About Nothing [en]
+   pas d'enregistrement LibriVox pour Much Ado About Nothing [fr]
+   pas d'enregistrement LibriVox pour The Merchant of Venice [de]
+   LibriVox : The Merchant of Venice [en] — « Merchant of Venice (version 2) » (2 h 35)
+   pas d'enregistrement LibriVox pour The Merchant of Venice [fr]
+   pas d'enregistrement LibriVox pour Julius Caesar [de]
+   LibriVox : Julius Caesar [en] — « Julius Caesar » (2 h 29)
+   pas d'enregistrement LibriVox pour Julius Caesar [fr]
+   pas d'enregistrement LibriVox pour As You Like It [de]
+   LibriVox : As You Like It [en] — « As You Like It (version 3) » (2 h 48)
+   pas d'enregistrement LibriVox pour As You Like It [fr]
+   LibriVox : The Taming of the Shrew [en] — « Taming of the Shrew (version 2) » (2 h 37)
+   ! ~/r2.conf absent : livres audio non ajoutés
+== Livres audio du lot 2026-10-03-v ==
+   pas d'enregistrement LibriVox pour Ghosts [de]
+   LibriVox : Ghosts [en] — « Ghosts (version 2) » (2 h 33)
+   LibriVox : An Enemy of the People [en] — « Enemy of the People » (2 h 57)
+   LibriVox : Lady Windermere's Fan [en] — « Lady Windermere's Fan (Version 2) » (2 h 28)
+   LibriVox : Arms and the Man [en] — « Arms and The Man (Version 2) » (2 h 51)
+   LibriVox : She Stoops to Conquer [en] — « She Stoops to Conquer » (2 h 23)
+   ! ~/r2.conf absent : livres audio non ajoutés
+== Livres audio du lot 2026-10-03-w ==
+   pas d'enregistrement LibriVox pour Resurrection [en]
+   LibriVox : The Cossacks [en] — « Cossacks » (6 h 48)
+   pas d'enregistrement LibriVox pour Poor Folk [en]
+   pas d'enregistrement LibriVox pour Mother [en]
+   LibriVox : The Lady with the Dog and Other Stories [en] — « Lady With the Dog and Other Stories » (3 h 25)
+   ! ~/r2.conf absent : livres audio non ajoutés
+== Livres audio du lot 2026-10-03-x ==
+   LibriVox : The Way We Live Now [en] — « Way We Live Now » (33 h 50)
+   LibriVox : McTeague [en] — « McTeague » (10 h 42)
+   pas d'enregistrement LibriVox pour The Legend of Sleepy Hollow [en]
+   LibriVox : Life on the Mississippi [en] — « Life on the Mississippi » (14 h 47)
+   LibriVox : Little Lord Fauntleroy [en] — « Little Lord Fauntleroy » (6 h 25)
+   ! ~/r2.conf absent : livres audio non ajoutés
+== Livres audio du lot 2026-10-03-y ==
+   LibriVox : Captains Courageous [en] — « Captains Courageous » (5 h 56)
+   LibriVox : Martin Eden [en] — « Martin Eden » (14 h 48)
+   pas d'enregistrement LibriVox pour Martin Eden [it]
+   LibriVox : The Memoirs of Sherlock Holmes [en] — « Memoirs of Sherlock Holmes (Version 4) » (10 h 35)
+   LibriVox : The First Men in the Moon [en] — « First Men in the Moon » (8 h 02)
+   pas d'enregistrement LibriVox pour At the Back of the North Wind [en]
+   ! ~/r2.conf absent : livres audio non ajoutés
+FIN 2026-10-04 00:21
