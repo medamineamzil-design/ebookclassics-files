@@ -902,6 +902,14 @@
     "txt"
    ]
   },
+  "his-last-bow": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "in-search-of-the-castaways": {
    "en": [
     "epub",
@@ -1415,6 +1423,14 @@
    ]
   },
   "niels-lyhne": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "night-and-day": {
    "en": [
     "epub",
     "html",
@@ -2022,6 +2038,14 @@
     "txt"
    ]
   },
+  "the-beautiful-and-damned": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-beetle": {
    "en": [
     "epub",
@@ -2407,6 +2431,14 @@
    ]
   },
   "the-invisible-man": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-iron-heel": {
    "en": [
     "epub",
     "html",
@@ -3524,6 +3556,14 @@
     "txt"
    ]
   },
+  "women-in-love": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "wuthering-heights": {
    "en": [
     "epub",
@@ -3533,5 +3573,5 @@
    ]
   }
  },
- "generated": "2026-10-04T01:11:19Z"
+ "generated": "2026-10-04T01:16:58Z"
 }
