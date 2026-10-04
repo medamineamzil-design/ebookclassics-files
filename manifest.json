@@ -940,6 +940,14 @@
     "txt"
    ]
   },
+  "in-praise-of-folly": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "in-search-of-the-castaways": {
    "en": [
     "epub",
@@ -1750,6 +1758,14 @@
     "txt"
    ]
   },
+  "poetics": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "pollyanna": {
    "en": [
     "epub",
@@ -1921,6 +1937,14 @@
    ]
   },
   "sense-and-sensibility": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "shakespeare-s-sonnets": {
    "en": [
     "epub",
     "html",
@@ -2429,6 +2453,14 @@
    ]
   },
   "the-garden-party-and-other-stories": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-georgics": {
    "en": [
     "epub",
     "html",
@@ -3098,6 +3130,14 @@
     "txt"
    ]
   },
+  "the-satyricon": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-scarlet-letter": {
    "en": [
     "epub",
@@ -3755,5 +3795,5 @@
    ]
   }
  },
- "generated": "2026-10-04T01:40:43Z"
+ "generated": "2026-10-04T01:41:21Z"
 }
