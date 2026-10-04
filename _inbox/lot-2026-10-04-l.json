@@ -1,0 +1,92 @@
+{
+ "lot": "2026-10-04-l",
+ "books": [
+  {
+   "title": "Jacob's Room",
+   "author": "Virginia Woolf",
+   "cat": "fiction",
+   "meta": "England · 1922",
+   "desc": "The life of a young man, from a Cornish beach to Cambridge, London and Greece, glimpsed through the impressions of those who knew him.",
+   "editions": [
+    {"lang": "en", "gid": 5670, "check": "jacob's room"}
+   ],
+   "about": [
+    "The novel begins on a beach in Cornwall, where the widowed Betty Flanders is writing a letter while her sons play, among them Jacob. It follows Jacob Flanders through his childhood in Scarborough, his years at Cambridge, his life in London, where he has an affair with the art student Florinda and is loved by the reserved Clara Durrant, and his travels to Italy and Greece. His friend Bonamy and the women in his life give their scattered impressions of him.",
+    "Woolf's third novel breaks with conventional storytelling: Jacob is seen almost entirely through the perceptions of others, and motifs of emptiness and absence give the book an elegiac tone. His surname evokes the generation of young men who died in the fields of Flanders.",
+    "Jacob's Room was first published on 26 October 1922."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "The Innocence of Father Brown",
+   "author": "G. K. Chesterton",
+   "cat": "fiction",
+   "meta": "England · 1911",
+   "desc": "Twelve mysteries solved by a modest, shabby Catholic priest whose knowledge of human nature outwits detectives and master criminals alike.",
+   "editions": [
+    {"lang": "en", "gid": 204, "check": "father brown"}
+   ],
+   "about": [
+    "In \"The Blue Cross\", the great French detective Valentin pursues the master thief Flambeau across London, following a trail of strange incidents, while a small, clumsy priest from Essex carries a precious silver cross. That priest is Father Brown, who understands crime through his knowledge of the human soul. In the following stories, Flambeau, a reformed criminal, becomes his friend and assistant, and together they solve mysteries such as \"The Secret Garden\", \"The Queer Feet\", \"The Invisible Man\" and \"The Hammer of God\".",
+    "Chesterton's detective stories combine ingenious puzzles with paradox, humour and reflections on faith and reason.",
+    "Father Brown first appeared in \"The Blue Cross\" in 1910. The Innocence of Father Brown, published in 1911, is the first of the five collections of his adventures."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "Scaramouche",
+   "author": "Rafael Sabatini",
+   "cat": "aventure",
+   "meta": "England · 1921",
+   "desc": "In Brittany on the eve of the French Revolution, a young lawyer swears to avenge his friend and becomes in turn an actor, an orator and a fencing master.",
+   "editions": [
+    {"lang": "en", "gid": 1947, "check": "scaramouche"}
+   ],
+   "about": [
+    "André-Louis Moreau, a young lawyer of unknown parentage, lives in the Breton village of Gavrillac with his godfather, Quentin de Kercadiou, and has grown up with Kercadiou's niece Aline. When his idealistic friend Philippe de Vilmorin is killed in a duel by the arrogant Marquis de La Tour d'Azyr, André-Louis vows revenge. On the run, he joins the travelling troupe of Binet, where he plays the character of Scaramouche and courts the actress Climène, before becoming a revolutionary orator and a master swordsman.",
+    "Sabatini's romance combines adventure, sword fights, wit and love with the events of the French Revolution. It opens with the famous line \"He was born with a gift of laughter and a sense that the world was mad.\"",
+    "Scaramouche was published in 1921 and brought Sabatini his first great success. Its opening line is inscribed on his gravestone. In the English text the hero's name is spelled Andre-Louis."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "The Winter's Tale",
+   "author": "William Shakespeare",
+   "cat": "theatre",
+   "meta": "England · 1623",
+   "desc": "Seized by sudden jealousy, the King of Sicily accuses his wife of betraying him with his oldest friend, with tragic consequences that only time can heal.",
+   "editions": [
+    {"lang": "en", "gid": 1134, "check": "winter"},
+    {"lang": "fr", "gid": 18311, "check": "conte d'hiver", "credit": "Traduction : François Guizot (1787-1874)"}
+   ],
+   "about": [
+    "Leontes, King of Sicily, is visited by his childhood friend Polixenes, King of Bohemia. When his wife Hermione persuades Polixenes to extend his stay, Leontes is seized by a violent jealousy and becomes convinced that she has been unfaithful. He orders his counsellor Camillo to poison Polixenes, imprisons Hermione and rejects her newborn daughter, whom the loyal Antigonus must abandon on a distant shore, despite the protests of the fearless Paulina.",
+    "Grouped with the comedies in the First Folio and now often called one of Shakespeare's late romances, the play moves from intense psychological drama in its first three acts to a pastoral comedy, with the rogue Autolycus and the love of Florizel and Perdita, and a happy ending.",
+    "The Winter's Tale was first published in the First Folio of 1623, from which this English text, in its original spelling, is taken. The French translation is by François Guizot."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "The Analects",
+   "author": "Confucius",
+   "cat": "philosophie",
+   "meta": "China · 5th–3rd century BC",
+   "desc": "The sayings of Confucius and his disciples on virtue, learning, ritual and good government, a founding text of Chinese thought.",
+   "editions": [
+    {"lang": "en", "gid": 3330, "check": "analects", "credit": "Traduction : James Legge (1815-1897)"}
+   ],
+   "about": [
+    "The Analects gather short sayings and conversations of Confucius, \"the Master\", with his disciples and contemporaries. They speak of humaneness, filial piety, ritual propriety, the cultivation of the self through learning, the qualities of the \"superior man\" and the duties of rulers and ministers, and give glimpses of Confucius's own character and life.",
+    "The Analects became a central text of Confucianism and one of the \"Four Books\" of Chinese education. For more than two thousand years they have been among the most widely read and studied books in China, with a lasting influence on East Asian thought and values.",
+    "According to tradition, the text was compiled by Confucius's disciples after his death in 479 BC; scholars believe large parts were written during the Warring States period (475–221 BC). This English translation by the Scottish sinologist James Legge forms part of his Chinese Classics."
+   ],
+   "author_short": "Chinese philosopher (c. 551–479 BC), traditionally regarded as the greatest sage of China.",
+   "author_long": [
+    "Confucius, born Kong Qiu, is thought to have been born in 551 BC in Zou, in the state of Lu, in today's Shandong province, and died in 479 BC. A philosopher of the Spring and Autumn period, he saw himself as a transmitter of the values of earlier times.",
+    "Tradition credits him with writing or editing many ancient texts, including the Five Classics. His teachings are known above all through the Analects, compiled by his followers. The name Confucius is a Latinised form of Kongfuzi, \"Master Kong\"."
+   ],
+   "librivox": []
+  }
+ ],
+ "refused": []
+}
