@@ -1,0 +1,98 @@
+{
+ "lot": "2026-10-04-b",
+ "books": [
+  {
+   "title": "The Toilers of the Sea",
+   "author": "Victor Hugo",
+   "cat": "aventure",
+   "meta": "France · 1866",
+   "desc": "On the island of Guernsey, a solitary fisherman sets out alone to rescue the engine of a wrecked steamship from a deadly reef, for love of a young woman.",
+   "editions": [
+    {"lang": "en", "gid": 32338, "check": "toilers of the sea", "credit": "Traduction : William Moy Thomas (1828-1910)"}
+   ],
+   "about": [
+    "Gilliatt, a solitary and mistrusted fisherman of Guernsey, loves Déruchette, the niece of the shipowner Mess Lethierry. Lethierry's pride is the Durande, one of the first steamships in the Channel Islands. When the ship is wrecked on the dangerous Douvres rocks, through the scheming of its captain Clubin, Lethierry is ruined, and Déruchette promises to marry the man who brings back the engine. Gilliatt sets out alone to the reef, where he must fight storms, hunger and a giant octopus.",
+    "Hugo's novel celebrates human labour, courage and endurance against the forces of nature, and contrasts the grandeur of the sea with the narrow judgements of island society. Its long descriptions of the ocean, the rocks and the storm are among its most famous pages.",
+    "The Toilers of the Sea was published in 1866, during Hugo's exile in Guernsey. He dedicated it to the island, \"the rock of hospitality and liberty\". This edition reproduces the English translation by W. Moy Thomas, as completed for the Everyman's Library edition of 1911."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "Lost Illusions",
+   "author": "Honoré de Balzac",
+   "cat": "fiction",
+   "meta": "France · 1843",
+   "desc": "A handsome young poet leaves provincial Angoulême for Paris, where he discovers the corrupt worlds of publishing and journalism.",
+   "editions": [
+    {"lang": "en", "gid": 13159, "check": "lost illusions", "credit": "Traduction : Ellen Marriage (1865-1946)"}
+   ],
+   "about": [
+    "In Angoulême, Lucien Chardon, a handsome and gifted young poet, and his friend David Séchard, a printer who loves Lucien's sister Eve, dream of success. Lucien is taken up by the cultivated Mme de Bargeton, Louise de Negrepelisse, and follows her to Paris. There, poor and ambitious, he is drawn into the world of newspapers and theatres, alongside the journalist Lousteau and the actress Coralie. Meanwhile in Angoulême, David struggles to perfect an invention while his rivals, the Cointet brothers, and the lawyer Petit-Claud plot against him.",
+    "Balzac's novel portrays the conflict between talent and ambition, the power of money, and the corruption of the press, publishing and literary life. It contrasts the patient, honest work of David with Lucien's weakness and hunger for glory.",
+    "Lost Illusions was written and published in three parts between 1837 and 1843: Two Poets (1837), A Distinguished Provincial at Paris (1839) and Eve and David (1843). It forms part of Balzac's Human Comedy, and its story continues in Scenes from a Courtesan's Life. This edition contains all three parts in the English translation by Ellen Marriage."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "Phaedra",
+   "author": "Jean Racine",
+   "cat": "theatre",
+   "meta": "France · 1677",
+   "desc": "Queen Phaedra is consumed by a forbidden passion for her stepson Hippolytus, and a false rumour of her husband's death brings disaster.",
+   "editions": [
+    {"lang": "en", "gid": 1977, "check": "phaedra", "credit": "Traduction : Robert Bruce Boswell (1846-1933)"}
+   ],
+   "about": [
+    "In Troezen, Phaedra, wife of the hero Theseus, is wasting away from a secret love for Hippolytus, Theseus's son by another woman. Hippolytus, for his part, loves the young princess Aricia, whom his father has forbidden to marry. When news arrives that Theseus has died, Phaedra, urged on by her nurse Oenone, confesses her passion to Hippolytus. Then Theseus returns.",
+    "Racine's tragedy, written in alexandrine verse in the original, is a concentrated study of passion, guilt and fate. Racine drew on Euripides' Hippolytus and on Seneca's Phaedra.",
+    "The play was first performed on 1 January 1677 at the Hôtel de Bourgogne in Paris, under the title Phèdre et Hippolyte; Racine adopted the shorter title Phèdre in 1687. Its premiere was overshadowed by a rival play on the same subject by Nicolas Pradon, staged two days later. This verse translation is by Robert Bruce Boswell."
+   ],
+   "author_short": "French dramatist (1639–1699), one of the three great playwrights of seventeenth-century France, author of Andromaque, Britannicus and Phèdre.",
+   "author_long": [
+    "Jean Racine was born on 22 December 1639 at La Ferté-Milon in France. Together with Corneille and Molière he is counted among the three great dramatists of seventeenth-century France. Louis XIV appointed him historiographer royal. He died on 21 April 1699 and was buried at Port-Royal.",
+    "He was above all a writer of tragedies, among them Andromaque, Britannicus and Phèdre. After 1677 he withdrew from the commercial theatre, later writing the religious dramas Esther and Athalie for a girls' school."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "Volpone",
+   "author": "Ben Jonson",
+   "cat": "theatre",
+   "meta": "England · 1606",
+   "desc": "A rich Venetian pretends to be dying so that greedy would-be heirs will shower him with gifts, helped by his cunning servant Mosca.",
+   "editions": [
+    {"lang": "en", "gid": 4039, "check": "volpone"}
+   ],
+   "about": [
+    "In Venice, the wealthy and childless Volpone, \"the Fox\", pretends to be gravely ill. His clever parasite Mosca persuades three would-be heirs, the lawyer Voltore, the old miser Corbaccio and the merchant Corvino, that each will be named in the will, and they bring ever richer presents to the supposed deathbed. Their greed leads them to sacrifice everything, including Corbaccio's son Bonario and Corvino's wife Celia, while the English traveller Sir Politick Would-be and his wife add a comic sub-plot.",
+    "Jonson's comedy is a merciless satire of greed, lust and hypocrisy, in which the characters bear the names of animals: Volpone the fox, Mosca the fly, Voltore the vulture, and Corbaccio and Corvino, the big and the little raven.",
+    "Volpone was first performed by the King's Men at the Globe Theatre, probably in 1606. It was published in quarto in 1607 and included in The Workes of Benjamin Jonson in 1616."
+   ],
+   "author_short": "English playwright and poet (1572–1637), author of Volpone, The Alchemist and Bartholomew Fair.",
+   "author_long": [
+    "Ben Jonson was born in Westminster in 1572. He was educated at Westminster School and worked for a time in his stepfather's trade as a bricklayer before turning to the theatre. He died on 6 August 1637 and was buried in Westminster Abbey, where his memorial bears the words \"O rare Ben Jonson\".",
+    "His plays include Every Man in His Humour, Volpone, The Alchemist and Bartholomew Fair. In 1616 he gathered his plays, poems and masques in a folio volume, The Workes of Benjamin Jonson."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "Typhoon",
+   "author": "Joseph Conrad",
+   "cat": "aventure",
+   "meta": "England · 1902",
+   "desc": "A literal-minded steamship captain sails straight into a typhoon in the China Sea, with two hundred Chinese labourers in the hold.",
+   "editions": [
+    {"lang": "en", "gid": 1142, "check": "typhoon"}
+   ],
+   "about": [
+    "Captain MacWhirr commands the Nan-Shan, a British-built steamer sailing under the Siamese flag, bound for the Chinese port of Fu-chau with some two hundred Chinese labourers returning home after years of work, each with a box holding his savings in silver dollars. MacWhirr is a steady, unimaginative man who trusts facts rather than books, and when the barometer falls he refuses to change course to avoid the storm. His young first mate Jukes and the chief engineer Solomon Rout must face the typhoon with him.",
+    "Conrad's novella is a powerful description of a storm at sea and a study of courage, duty and different kinds of character under pressure. The Chinese passengers are presented largely as an anonymous mass and described in the language of the period.",
+    "Typhoon was begun in 1899 and serialised in the Pall Mall Magazine from January to March 1902. It was published in book form the same year."
+   ],
+   "librivox": []
+  }
+ ],
+ "refused": [
+  {"title": "The Toilers of the Sea (fr, Les travailleurs de la mer)", "reason": "Texte français en deux volumes séparés sur Gutenberg (#79493, #79659)."}
+ ]
+}
