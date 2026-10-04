@@ -454,6 +454,14 @@
     "txt"
    ]
   },
+  "childhood": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "civil-disobedience": {
    "en": [
     "epub",
@@ -1094,6 +1102,14 @@
     "txt"
    ]
   },
+  "leaves-of-grass": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "les-miserables": {
    "en": [
     "epub",
@@ -1607,6 +1623,14 @@
    ]
   },
   "pamela-or-virtue-rewarded": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "pan": {
    "en": [
     "epub",
     "html",
@@ -2375,6 +2399,14 @@
    ]
   },
   "the-happy-prince-and-other-tales": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-home-and-the-world": {
    "en": [
     "epub",
     "html",
@@ -3252,6 +3284,14 @@
     "txt"
    ]
   },
+  "the-voyage-out": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-war-of-the-worlds": {
    "en": [
     "epub",
@@ -3653,5 +3693,5 @@
    ]
   }
  },
- "generated": "2026-10-04T01:23:52Z"
+ "generated": "2026-10-04T01:32:26Z"
 }
