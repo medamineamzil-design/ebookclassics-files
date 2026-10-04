@@ -620,6 +620,20 @@
     "txt"
    ]
   },
+  "exemplary-novels": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "es": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "extraordinary-popular-delusions-and-the-madness-of-crowds": {
    "en": [
     "epub",
@@ -1212,6 +1226,14 @@
     "txt"
    ]
   },
+  "lyrical-ballads": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "macbeth": {
    "de": [
     "epub",
@@ -1431,6 +1453,14 @@
    ]
   },
   "narrative-of-the-life-of-frederick-douglass": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "nature": {
    "en": [
     "epub",
     "html",
@@ -1706,6 +1736,14 @@
     "txt"
    ],
    "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "poems-by-emily-dickinson": {
+   "en": [
     "epub",
     "html",
     "pdf",
@@ -3717,5 +3755,5 @@
    ]
   }
  },
- "generated": "2026-10-04T01:35:25Z"
+ "generated": "2026-10-04T01:40:43Z"
 }
