@@ -1,0 +1,101 @@
+{
+ "lot": "2026-10-04-s",
+ "books": [
+  {
+   "title": "Gitanjali",
+   "author": "Rabindranath Tagore",
+   "cat": "theatre",
+   "meta": "India · 1912",
+   "desc": "103 prose poems of devotion, love and longing, translated by Tagore himself from his Bengali songs, which won him the Nobel Prize.",
+   "editions": [
+    {"lang": "en", "gid": 7164, "check": "gitanjali"}
+   ],
+   "about": [
+    "In short prose poems, the poet addresses God as friend, lover, master and guest, speaking of his longing for union, his joy in nature and in the simple life of the world, his waiting for the divine presence and his acceptance of death. The book opens with the words \"Thou hast made me endless, such is thy pleasure\".",
+    "Based on the tradition of medieval Indian devotional lyrics, the poems have devotion as their central theme, and some describe the conflict between material desire and spiritual longing.",
+    "The original Bengali Gitanjali was published on 4 August 1910. The English Gitanjali: Song Offerings, published in November 1912 by the India Society of London with an introduction by W. B. Yeats, contains 103 prose poems translated by Tagore himself from Gitanjali and other collections. Tagore received the Nobel Prize in Literature in 1913."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "The Rime of the Ancient Mariner",
+   "author": "Samuel Taylor Coleridge",
+   "cat": "theatre",
+   "meta": "England · 1798",
+   "desc": "An old sailor stops a guest on his way to a wedding to tell how he shot an albatross, and the terrible punishment that followed.",
+   "editions": [
+    {"lang": "en", "gid": 151, "check": "ancient mariner"}
+   ],
+   "about": [
+    "An old grey-bearded mariner stops one of three young men on his way to a wedding feast and, holding him with his \"glittering eye\", tells him his story. His ship was driven by storms towards the South Pole and trapped in ice, until an albatross appeared and led it out. Then, for no reason, the mariner shot the bird. Becalmed under a burning sun, the crew hang the dead albatross around his neck, and stranger and more terrible things begin to happen.",
+    "Coleridge's ballad in seven parts mixes the supernatural, the sea voyage and a story of sin, penance and redemption, with famous images such as \"Water, water, every where, / Nor any drop to drink\".",
+    "Coleridge wrote the poem in 1797 and 1798 and published it in 1798 in the first edition of Lyrical Ballads, the collection he shared with William Wordsworth."
+   ],
+   "author_short": "English poet, critic and philosopher (1772–1834), a founder of English Romanticism, author of The Rime of the Ancient Mariner and Kubla Khan.",
+   "author_long": [
+    "Samuel Taylor Coleridge was born on 21 October 1772 at Ottery St Mary, in Devon, the son of a vicar. After his father's death he was sent to Christ's Hospital school in London, where he became a friend of Charles Lamb. With William Wordsworth he became one of the Lake Poets. Treated with laudanum for his illnesses, he suffered from a lifelong opium addiction. He died on 25 July 1834.",
+    "His poems include The Rime of the Ancient Mariner and \"Kubla Khan\", and his major prose work is the Biographia Literaria."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "Songs of Innocence and of Experience",
+   "author": "William Blake",
+   "cat": "theatre",
+   "meta": "England · 1794",
+   "desc": "Blake's paired songs of childhood joy and adult experience, from \"The Lamb\" to \"The Tyger\".",
+   "editions": [
+    {"lang": "en", "gid": 1934, "check": "songs of innocence"}
+   ],
+   "about": [
+    "The Songs of Innocence show the world through a child's eyes, full of shepherds, lambs and protective love, while the Songs of Experience reveal fear, oppression, jealousy and corruption. Many poems answer each other across the two parts: \"The Lamb\" and \"The Tyger\", the two \"Chimney Sweeper\" poems, \"Holy Thursday\" and \"Nurse's Song\".",
+    "Blake's short lyrics, simple in form, explore what he called \"the two contrary states of the human soul\", and criticise child labour, poverty and the institutions of Church and State.",
+    "Blake first printed Songs of Innocence in 1789 and in 1794 combined it with Songs of Experience as Songs of Innocence and of Experience Shewing the Two Contrary States of the Human Soul, printed and coloured by hand by his own method of illuminated printing."
+   ],
+   "author_short": "English poet, painter and printmaker (1757–1827), author of Songs of Innocence and of Experience.",
+   "author_long": [
+    "William Blake was born on 28 November 1757 in Soho, London, the son of a hosier. He left school at ten and was educated mostly at home by his mother. He lived in London all his life, except for three years at Felpham, and worked closely with his wife Catherine Boucher on the creation of his illuminated books. He died on 12 August 1827.",
+    "His works combine poetry and images and embrace the imagination as \"the body of God\". Besides the Songs of Innocence and of Experience, they include long prophetic books."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "A Modest Proposal",
+   "author": "Jonathan Swift",
+   "cat": "philosophie",
+   "meta": "Ireland · 1729",
+   "desc": "With deadpan seriousness, Swift proposes that the children of the Irish poor be sold as food to the rich.",
+   "editions": [
+    {"lang": "en", "gid": 1080, "check": "modest proposal"}
+   ],
+   "about": [
+    "The narrator begins by describing the misery of Ireland's poor: streets and roads crowded with beggar women followed by hungry children. He then offers his solution with calm, scientific precision: the children of the poor should be sold, at one year old, as food for wealthy gentlemen and ladies, complete with recipes and calculations of the benefits to the nation.",
+    "Swift's short essay is a famous example of deadpan, Juvenalian satire, and the phrase \"a modest proposal\" has become a byword for it. Towards the end, the narrator lists, in order to dismiss them, the real remedies Swift wanted: taxing absentee landlords, buying Irish goods and treating tenants better.",
+    "A Modest Proposal for Preventing the Children of Poor People in Ireland from Being a Burden to Their Parents or Country, and for Making Them Beneficial to the Publick was published in 1729."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "The Gilded Age",
+   "author": "Mark Twain and Charles Dudley Warner",
+   "cat": "fiction",
+   "meta": "United States · 1873",
+   "desc": "A Tennessee family dreams of growing rich from a vast tract of land, and their hopes lead to the speculators and corrupt politicians of Washington.",
+   "editions": [
+    {"lang": "en", "gid": 3178, "check": "gilded age"}
+   ],
+   "about": [
+    "Squire Si Hawkins buys 75,000 acres of unimproved land in Tennessee, convinced it will one day make his family rich. After his death, his beautiful adopted daughter Laura goes to Washington, where with a senator's help she enters society and lobbies congressmen to make the government buy the land. The family's friend, the eternally optimistic speculator Colonel Beriah Sellers, has a scheme for every occasion. A parallel story follows two young men from the East, Philip Sterling and Harry Brierly, seeking their fortune in land and railways.",
+    "This satirical novel attacks greed, speculation and political corruption in the United States after the Civil War. Its depictions of African-American characters, such as Uncle Daniel, use the language and stereotypes of its time.",
+    "The Gilded Age: A Tale of Today was published in 1873. It is the only novel Twain wrote with a collaborator, and its title became the name of the whole period."
+   ],
+   "author_short": "Mark Twain (1835–1910) and his friend Charles Dudley Warner (1829–1900), essayist and editor, co-authors of The Gilded Age.",
+   "author_long": [
+    "Charles Dudley Warner was born on 12 September 1829 in Plainfield, Massachusetts. After practising law in Chicago, he moved to Connecticut in 1860 and became editor of The Hartford Press and later co-editor of The Hartford Courant, and joined the staff of Harper's Magazine in 1884. He died on 20 October 1900.",
+    "With Mark Twain he wrote The Gilded Age: A Tale of Today (1873). He also wrote essays and books such as Being a Boy (1877)."
+   ],
+   "librivox": []
+  }
+ ],
+ "refused": []
+}
