@@ -1004,6 +1004,14 @@
     "txt"
    ]
   },
+  "lost-illusions": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "macbeth": {
    "de": [
     "epub",
@@ -1403,6 +1411,14 @@
    ]
   },
   "peter-pan": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "phaedra": {
    "en": [
     "epub",
     "html",
@@ -2654,6 +2670,14 @@
     "txt"
    ]
   },
+  "the-toilers-of-the-sea": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-turn-of-the-screw": {
    "en": [
     "epub",
@@ -2868,6 +2892,14 @@
     "txt"
    ]
   },
+  "typhoon": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "ulysses": {
    "en": [
     "epub",
@@ -2899,6 +2931,14 @@
    ]
   },
   "villette": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "volpone": {
    "en": [
     "epub",
     "html",
@@ -2967,5 +3007,5 @@
    ]
   }
  },
- "generated": "2026-10-04T00:25:35Z"
+ "generated": "2026-10-04T00:26:13Z"
 }
