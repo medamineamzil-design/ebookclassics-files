@@ -130,6 +130,14 @@
     "txt"
    ]
   },
+  "an-enemy-of-the-people": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "an-essay-on-the-principle-of-population": {
    "en": [
     "epub",
@@ -183,6 +191,14 @@
    ]
   },
   "apology": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "arms-and-the-man": {
    "en": [
     "epub",
     "html",
@@ -602,6 +618,20 @@
     "txt"
    ]
   },
+  "ghosts": {
+   "de": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "great-expectations": {
    "en": [
     "epub",
@@ -857,6 +887,14 @@
    ]
   },
   "king-solomon-s-mines": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "lady-windermere-s-fan": {
    "en": [
     "epub",
     "html",
@@ -1409,6 +1447,14 @@
    ]
   },
   "sense-and-sensibility": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "she-stoops-to-conquer": {
    "en": [
     "epub",
     "html",
@@ -2715,5 +2761,5 @@
    ]
   }
  },
- "generated": "2026-10-04T00:10:48Z"
+ "generated": "2026-10-04T00:11:12Z"
 }
