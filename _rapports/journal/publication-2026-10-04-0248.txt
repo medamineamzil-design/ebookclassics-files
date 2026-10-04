@@ -1,0 +1,69 @@
+=== BookClassics — lot 2026-10-04-k — 2026-10-04 00:48 ===
+== 1/4 Fabrication des livres (EPUB, PDF, TXT, HTML) ==
+… The Garden Party and Other Stories [en] — Gutenberg #1429
+   + the-garden-party-and-other-stories [en] OK — Project Gutenberg (#1429), 57132 mots, 24 chapitres — epub:215Ko pdf:866Ko txt:321Ko html:335Ko
+… This Side of Paradise [en] — Gutenberg #805
+   + this-side-of-paradise [en] OK — Project Gutenberg (#805), 80709 mots, 11 chapitres — epub:268Ko pdf:1258Ko txt:471Ko html:493Ko
+… A Portrait of the Artist as a Young Man [en] — Gutenberg #4217
+   + a-portrait-of-the-artist-as-a-young-man [en] OK — Project Gutenberg (#4217), 84817 mots, 5 chapitres — epub:250Ko pdf:1126Ko txt:454Ko html:471Ko
+… The Diary of a Nobody [en] — Gutenberg #1026
+   + the-diary-of-a-nobody [en] OK — Project Gutenberg (#1026), 41888 mots, 24 chapitres — epub:186Ko pdf:626Ko txt:228Ko html:238Ko
+… Salomé [en] — Gutenberg #42704
+   + salome [en] OK — Project Gutenberg (#42704), 12841 mots, 0 chapitres — epub:77Ko pdf:279Ko txt:66Ko html:75Ko
+… Salomé [fr] — Gutenberg #1339
+   + salome [fr] OK — Project Gutenberg (#1339), 11432 mots, 4 chapitres — epub:74Ko pdf:234Ko txt:67Ko html:73Ko
+== 2/4 Dépôt des livres ==
++ The Garden Party and Other Stories : en
++ This Side of Paradise : en
++ A Portrait of the Artist as a Young Man : en
++ The Diary of a Nobody : en
++ Salomé : en, fr
+   publié : ebookclassics-files — Nouveaux livres : The Garden Party and Other Stories, This Side of Paradise, A Portrait of the Artist as a Young Man, The Diary of a Nobody, Salomé
+== 3/4 Site : catalogue, pages livres, plan du site ==
+   320 pages livres, 319 couvertures, 325 adresses dans le sitemap
+   5 livre(s) ajouté(s) au catalogue
+   publié : ebookclassics-site — Nouveaux livres au catalogue : The Garden Party and Other Stories, This Side of Paradise, A Portrait of the Artist as a Young Man, The Diary of a Nobody, Salomé
+TERMINE — 5 nouveau(x) livre(s) : The Garden Party and Other Stories, This Side of Paradise, A Portrait of the Artist as a Young Man, The Diary of a Nobody, Salomé
+=== BookClassics — lot 2026-10-04-l — 2026-10-04 00:50 ===
+== 1/4 Fabrication des livres (EPUB, PDF, TXT, HTML) ==
+… Jacob's Room [en] — Gutenberg #5670
+   + jacob-s-room [en] OK — Project Gutenberg (#5670), 54506 mots, 14 chapitres — epub:196Ko pdf:788Ko txt:306Ko html:329Ko
+… The Innocence of Father Brown [en] — Gutenberg #204
+   + the-innocence-of-father-brown [en] OK — Project Gutenberg (#204), 78917 mots, 1 chapitres — epub:230Ko pdf:1017Ko txt:438Ko html:450Ko
+… Scaramouche [en] — Gutenberg #1947
+   + scaramouche [en] OK — Project Gutenberg (#1947), 124127 mots, 36 chapitres — epub:367Ko pdf:1734Ko txt:700Ko html:725Ko
+… The Winter's Tale [en] — Gutenberg #1134
+   + the-winter-s-tale [en] OK — Project Gutenberg (#1134), 26195 mots, 1 chapitres — epub:121Ko pdf:411Ko txt:139Ko html:152Ko
+… The Winter's Tale [fr] — Gutenberg #18311
+   + the-winter-s-tale [fr] OK — Project Gutenberg (#18311), 31334 mots, 13 chapitres — epub:148Ko pdf:534Ko txt:189Ko html:209Ko
+… The Analects [en] — Gutenberg #3330
+   + the-analects [en] OK — Project Gutenberg (#3330), 29164 mots, 19 chapitres — epub:125Ko pdf:415Ko txt:157Ko html:172Ko
+== 2/4 Dépôt des livres ==
++ Jacob's Room : en
++ The Innocence of Father Brown : en
++ Scaramouche : en
++ The Winter's Tale : en, fr
++ The Analects : en
+   publié : ebookclassics-files — Nouveaux livres : Jacob's Room, The Innocence of Father Brown, Scaramouche, The Winter's Tale, The Analects
+== 3/4 Site : catalogue, pages livres, plan du site ==
+   325 pages livres, 324 couvertures, 330 adresses dans le sitemap
+   5 livre(s) ajouté(s) au catalogue
+   publié : ebookclassics-site — Nouveaux livres au catalogue : Jacob's Room, The Innocence of Father Brown, Scaramouche, The Winter's Tale, The Analects
+TERMINE — 5 nouveau(x) livre(s) : Jacob's Room, The Innocence of Father Brown, Scaramouche, The Winter's Tale, The Analects
+== Livres audio du lot 2026-10-04-k ==
+   pas d'enregistrement LibriVox pour The Garden Party and Other Stories [en]
+   LibriVox : This Side of Paradise [en] — « This Side of Paradise (version 2) » (9 h 51)
+   LibriVox : A Portrait of the Artist as a Young Man [en] — « Portrait of the Artist as a Young Man » (9 h 08)
+   LibriVox : The Diary of a Nobody [en] — « Diary of a Nobody » (4 h 21)
+   LibriVox : Salomé [en] — « Salome » (1 h 10)
+   pas d'enregistrement LibriVox pour Salomé [fr]
+   ! ~/r2.conf absent : livres audio non ajoutés
+== Livres audio du lot 2026-10-04-l ==
+   LibriVox : Jacob's Room [en] — « Jacob's Room » (6 h 04)
+   LibriVox : The Innocence of Father Brown [en] — « Innocence of Father Brown » (10 h 23)
+   LibriVox : Scaramouche [en] — « Scaramouche » (17 h 11)
+   LibriVox : The Winter's Tale [en] — « Winter's Tale (version 2) » (3 h 10)
+   pas d'enregistrement LibriVox pour The Winter's Tale [fr]
+   pas d'enregistrement LibriVox pour The Analects [en]
+   ! ~/r2.conf absent : livres audio non ajoutés
+FIN 2026-10-04 00:50
