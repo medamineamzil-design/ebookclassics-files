@@ -1,0 +1,65 @@
+=== BookClassics — lot 2026-10-04-t — 2026-10-04 01:39 ===
+   1 livre(s) écarté(s) par l'agent, notés dans refuses.json
+== 1/4 Fabrication des livres (EPUB, PDF, TXT, HTML) ==
+… Lyrical Ballads [en] — Gutenberg #9622
+   + lyrical-ballads [en] OK — Project Gutenberg (#9622), 21279 mots, 29 chapitres — epub:136Ko pdf:417Ko txt:113Ko html:122Ko
+… Poems by Emily Dickinson [en] — Gutenberg #12242
+   + poems-by-emily-dickinson [en] OK — Project Gutenberg (#12242), 30647 mots, 0 chapitres — epub:145Ko pdf:600Ko txt:165Ko html:187Ko
+… Nature [en] — Gutenberg #29433
+   + nature [en] OK — Project Gutenberg (#29433), 15216 mots, 7 chapitres — epub:94Ko pdf:259Ko txt:84Ko html:89Ko
+= The Federalist Papers : déjà dans la bibliothèque — ignoré
+… Exemplary Novels [en] — Gutenberg #14420
+   + exemplary-novels [en] OK — Project Gutenberg (#14420), 185482 mots, 21 chapitres — epub:456Ko pdf:2111Ko txt:987Ko html:1024Ko
+… Exemplary Novels [es] — Gutenberg #61202
+   + exemplary-novels [es] OK — Project Gutenberg (#61202), 188463 mots, 23 chapitres — epub:467Ko pdf:2203Ko txt:1027Ko html:1047Ko
+== 2/4 Dépôt des livres ==
++ Lyrical Ballads : en
++ Poems by Emily Dickinson : en
++ Nature : en
++ Exemplary Novels : en, es
+   publié : ebookclassics-files — Nouveaux livres : Lyrical Ballads, Poems by Emily Dickinson, Nature, Exemplary Novels
+== 3/4 Site : catalogue, pages livres, plan du site ==
+   362 pages livres, 361 couvertures, 367 adresses dans le sitemap
+   4 livre(s) ajouté(s) au catalogue
+   publié : ebookclassics-site — Nouveaux livres au catalogue : Lyrical Ballads, Poems by Emily Dickinson, Nature, Exemplary Novels
+TERMINE — 4 nouveau(x) livre(s) : Lyrical Ballads, Poems by Emily Dickinson, Nature, Exemplary Novels
+=== BookClassics — lot 2026-10-04-u — 2026-10-04 01:41 ===
+== 1/4 Fabrication des livres (EPUB, PDF, TXT, HTML) ==
+… Shakespeare's Sonnets [en] — Gutenberg #1041
+   + shakespeare-s-sonnets [en] OK — Project Gutenberg (#1041), 17671 mots, 0 chapitres — epub:111Ko pdf:293Ko txt:94Ko html:101Ko
+… The Georgics [en] — Gutenberg #232
+   + the-georgics [en] OK — Project Gutenberg (#232), 21186 mots, 5 chapitres — epub:111Ko pdf:337Ko txt:119Ko html:125Ko
+… Poetics [en] — Gutenberg #1974
+   + poetics [en] OK — Project Gutenberg (#1974), 14952 mots, 26 chapitres — epub:98Ko pdf:284Ko txt:83Ko html:90Ko
+… In Praise of Folly [en] — Gutenberg #30201
+   + in-praise-of-folly [en] OK — Project Gutenberg (#30201), 44637 mots, 8 chapitres — epub:161Ko pdf:596Ko txt:247Ko html:253Ko
+… The Satyricon [en] — Gutenberg #5225
+   + the-satyricon [en] OK — Project Gutenberg (#5225), 97891 mots, 157 chapitres — epub:386Ko pdf:1562Ko txt:549Ko html:573Ko
+== 2/4 Dépôt des livres ==
++ Shakespeare's Sonnets : en
++ The Georgics : en
++ Poetics : en
++ In Praise of Folly : en
++ The Satyricon : en
+   publié : ebookclassics-files — Nouveaux livres : Shakespeare's Sonnets, The Georgics, Poetics, In Praise of Folly, The Satyricon
+== 3/4 Site : catalogue, pages livres, plan du site ==
+   367 pages livres, 366 couvertures, 372 adresses dans le sitemap
+   5 livre(s) ajouté(s) au catalogue
+   publié : ebookclassics-site — Nouveaux livres au catalogue : Shakespeare's Sonnets, The Georgics, Poetics, In Praise of Folly, The Satyricon
+TERMINE — 5 nouveau(x) livre(s) : Shakespeare's Sonnets, The Georgics, Poetics, In Praise of Folly, The Satyricon
+== Livres audio du lot 2026-10-04-t ==
+   pas d'enregistrement LibriVox pour Lyrical Ballads [en]
+   pas d'enregistrement LibriVox pour Poems by Emily Dickinson [en]
+   LibriVox : Nature [en] — « Nature » (1 h 52)
+   LibriVox : The Federalist Papers [en] — « Federalist Papers (version 2) » (23 h 40)
+   pas d'enregistrement LibriVox pour Exemplary Novels [en]
+   LibriVox : Exemplary Novels [es] — « Novelas Ejemplares » (17 h 55)
+   ! ~/r2.conf absent : livres audio non ajoutés
+== Livres audio du lot 2026-10-04-u ==
+   LibriVox : Shakespeare's Sonnets [en] — « Shakespeare's Sonnets » (2 h 44)
+   LibriVox : The Georgics [en] — « Georgics » (2 h 51)
+   LibriVox : Poetics [en] — « Poetics » (2 h 23)
+   pas d'enregistrement LibriVox pour In Praise of Folly [en]
+   LibriVox : The Satyricon [en] — « Satyricon » (7 h 56)
+   ! ~/r2.conf absent : livres audio non ajoutés
+FIN 2026-10-04 01:44

@@ -1,0 +1,109 @@
+{
+ "lot": "2026-10-04-t",
+ "books": [
+  {
+   "title": "Lyrical Ballads",
+   "author": "William Wordsworth and Samuel Taylor Coleridge",
+   "cat": "theatre",
+   "meta": "England · 1798",
+   "desc": "The joint collection that opened the English Romantic movement, from \"The Rime of the Ancyent Marinere\" to \"Tintern Abbey\".",
+   "editions": [
+    {"lang": "en", "gid": 9622, "check": "lyrical ballads"}
+   ],
+   "about": [
+    "This first edition of 1798 opens with Coleridge's \"The Rime of the Ancyent Marinere\" and ends with Wordsworth's \"Lines written a few miles above Tintern Abbey\". Between them come poems about country people, children, beggars, mad mothers and old men, such as \"We Are Seven\", \"The Idiot Boy\" and \"Simon Lee\", alongside reflections on nature and the mind.",
+    "In the Advertisement, Wordsworth presents most of the poems as \"experiments\" written to find out \"how far the language of conversation in the middle and lower classes of society is adapted to the purposes of poetic pleasure\". Their simple diction and humble subjects broke with the conventions of eighteenth-century verse.",
+    "Lyrical Ballads, with a Few Other Poems was first published in 1798 and is generally considered to mark the beginning of English Romanticism. Most of the poems are by Wordsworth; Coleridge contributed four, which make up about a third of the book. A second edition of 1800 added more poems and the famous Preface. This text reproduces the 1798 edition."
+   ],
+   "author_short": "The English Romantic poets William Wordsworth (1770–1850) and Samuel Taylor Coleridge (1772–1834), co-authors of Lyrical Ballads.",
+   "author_long": [
+    "William Wordsworth was born on 7 April 1770 at Cockermouth, in the Lake District, and remained close all his life to his sister Dorothy. With his friend Samuel Taylor Coleridge he launched the Romantic movement in English literature with Lyrical Ballads (1798). His masterpiece is generally considered to be The Prelude, an autobiographical poem he revised for many years. He was Poet Laureate from 1843 until his death on 23 April 1850.",
+    "Samuel Taylor Coleridge (1772–1834), poet, critic and philosopher, contributed The Rime of the Ancient Mariner and three other poems to the collection."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "Poems by Emily Dickinson",
+   "author": "Emily Dickinson",
+   "cat": "theatre",
+   "meta": "United States · 1890",
+   "desc": "The three posthumous series of Emily Dickinson's short, startling poems on life, love, nature, death and eternity.",
+   "editions": [
+    {"lang": "en", "gid": 12242, "check": "emily dickinson"}
+   ],
+   "about": [
+    "This volume brings together the three series of Dickinson's poems published after her death, arranged under the headings Life, Love, Nature and Time and Eternity. They include some of her best-known poems, such as \"Because I could not stop for Death\", \"I'm nobody! Who are you?\" and \"There's a certain slant of light\".",
+    "Dickinson's poems are short and compressed, with dashes, slant rhymes and unexpected images. They observe nature, the inner life, faith, doubt and death with intensity and wit.",
+    "Only about ten of her nearly 1,800 poems were published during her lifetime. After her death, her sister Lavinia discovered the poems, and a first selection, edited by Thomas Wentworth Higginson and Mabel Loomis Todd, appeared in 1890, followed by further series. These early editions altered many poems to fit the poetic conventions of the time."
+   ],
+   "author_short": "American poet (1830–1886) who wrote nearly 1,800 poems, few of them published in her lifetime.",
+   "author_long": [
+    "Emily Elizabeth Dickinson was born on 10 December 1830 in Amherst, Massachusetts, into a prominent family. After seven years at Amherst Academy and a short time at Mount Holyoke Female Seminary, she returned to Amherst, where she spent most of her life. She died on 15 May 1886.",
+    "Few people around her knew of her writing. After her death her sister Lavinia found her poems, which were first published as a selection in 1890."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "Nature",
+   "author": "Ralph Waldo Emerson",
+   "cat": "philosophie",
+   "meta": "United States · 1836",
+   "desc": "Emerson's founding essay of American Transcendentalism, on the divine presence in nature and the relation between nature and the human mind.",
+   "editions": [
+    {"lang": "en", "gid": 29433, "check": "nature"}
+   ],
+   "about": [
+    "Emerson invites his readers to stop looking at the world through the eyes of the past and to enjoy \"an original relation to the universe\". He describes how nature serves humanity in four ways, as Commodity, Beauty, Language and Discipline, then turns to Idealism and Spirit, and ends with a Prospect of what a renewed humanity could achieve. Alone in the woods, he writes, \"I become a transparent eye-ball\".",
+    "The essay lays the foundation of Transcendentalism, the belief that the divine suffuses nature and that reality can be understood by studying nature, and that each person must find this relation for himself, apart from the distractions of society.",
+    "Nature was published in 1836 by James Munroe and Company in Boston. It is divided into eight sections."
+   ],
+   "author_short": "American essayist, lecturer, philosopher and poet (1803–1882), leader of the Transcendentalist movement.",
+   "author_long": [
+    "Ralph Waldo Emerson was born in Boston on 25 May 1803. His father, a minister, died when he was not yet eight. A former minister himself, he gradually moved away from the religious beliefs of his contemporaries. He was a mentor and close friend of Henry David Thoreau. He died on 27 April 1882.",
+    "He expressed the philosophy of Transcendentalism in his essay Nature (1836) and in essays such as \"Self-Reliance\", \"The Over-Soul\", \"Circles\" and \"Experience\"."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "The Federalist Papers",
+   "author": "Alexander Hamilton, James Madison and John Jay",
+   "cat": "philosophie",
+   "meta": "United States · 1788",
+   "desc": "Eighty-five essays written under the name \"Publius\" to persuade New Yorkers to ratify the new Constitution of the United States.",
+   "editions": [
+    {"lang": "en", "gid": 18, "check": "federalist"}
+   ],
+   "about": [
+    "In a series of essays addressed \"to the People of the State of New York\", the authors defend the Constitution drafted at the Federal Convention of 1787. They explain the weaknesses of the existing Articles of Confederation, the dangers of disunion, and the organisation of the new government: the separation of powers, the Congress, the presidency and the courts. In No. 10, Madison argues that a large republic is the best protection against factions; in No. 84, Hamilton argues that a separate Bill of Rights is unnecessary.",
+    "The Federalist is a classic of political theory and remains a major source for interpreting the United States Constitution.",
+    "The first 77 essays appeared in New York newspapers between October 1787 and April 1788, under the collective pseudonym Publius. They were collected with eight more in two volumes in 1788 as The Federalist."
+   ],
+   "author_short": "The American Founding Fathers Alexander Hamilton (1755 or 1757–1804), James Madison (1751–1836) and John Jay (1745–1829), authors of The Federalist.",
+   "author_long": [
+    "Alexander Hamilton, born on the Caribbean island of Nevis, served as the first United States Secretary of the Treasury from 1789 to 1795 and died on 12 July 1804. James Madison was the fourth president of the United States, from 1809 to 1817, and died on 28 June 1836.",
+    "John Jay, a diplomat and signatory of the Treaty of Paris, was the first chief justice of the United States from 1789 to 1795 and then governor of New York; he died on 17 May 1829. Together they wrote The Federalist under the pseudonym Publius."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "Exemplary Novels",
+   "author": "Miguel de Cervantes",
+   "cat": "fiction",
+   "meta": "Spain · 1613",
+   "desc": "Twelve tales by the author of Don Quixote, from the adventures of two young thieves in Seville to a dialogue between two talking dogs.",
+   "editions": [
+    {"lang": "en", "gid": 14420, "check": "exemplary novels", "credit": "Traduction : Walter K. Kelly (?-1867)"},
+    {"lang": "es", "gid": 61202, "check": "novelas ejemplares"}
+   ],
+   "about": [
+    "The twelve stories include \"The Little Gipsy Girl\", about a young dancer who lives among the Gypsies of Madrid; \"Rinconete and Cortadillo\", in which two boys join a brotherhood of thieves in Seville; \"The Licentiate Vidriera\", about a scholar who believes he is made of glass; \"The Illustrious Scullery-Maid\"; \"The Jealous Estramaduran\"; and \"The Deceitful Marriage\", which leads into the \"Dialogue between Scipio and Berganza\", two dogs who discover they can speak.",
+    "The stories mix romance, adventure, realism and satire, and offer a vivid picture of Spanish society of the time, from noble families to rogues, soldiers and Gypsies. Their portrayal of Gypsies reflects the prejudices of the period.",
+    "Cervantes wrote the Novelas ejemplares between 1590 and 1612, and they were printed in Madrid in 1613 by Juan de la Cuesta, after the first part of Don Quixote. In his foreword he claimed to be the first to write novellas in Spanish. This edition offers the Spanish original and the English translation by Walter K. Kelly."
+   ],
+   "librivox": []
+  }
+ ],
+ "refused": [
+  {"title": "The Rape of the Lock and Other Poems (#9800)", "reason": "Édition avec introduction et notes de Thomas Marc Parrott (1866-1960), non libres de droits."}
+ ]
+}
