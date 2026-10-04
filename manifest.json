@@ -924,6 +924,14 @@
     "txt"
    ]
   },
+  "incidents-in-the-life-of-a-slave-girl": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "indiana": {
    "en": [
     "epub",
@@ -1214,6 +1222,14 @@
     "txt"
    ],
    "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "maggie-a-girl-of-the-streets": {
+   "en": [
     "epub",
     "html",
     "pdf",
@@ -2090,6 +2106,14 @@
     "txt"
    ]
   },
+  "the-blithedale-romance": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-book-of-tea": {
    "en": [
     "epub",
@@ -2423,6 +2447,14 @@
    ]
   },
   "the-innocence-of-father-brown": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-innocents-abroad": {
    "en": [
     "epub",
     "html",
@@ -3018,6 +3050,14 @@
     "txt"
    ]
   },
+  "the-song-of-the-lark": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-sorrows-of-young-werther": {
    "en": [
     "epub",
@@ -3573,5 +3613,5 @@
    ]
   }
  },
- "generated": "2026-10-04T01:16:58Z"
+ "generated": "2026-10-04T01:23:05Z"
 }

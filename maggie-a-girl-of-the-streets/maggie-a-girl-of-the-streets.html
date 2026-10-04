@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maggie: A Girl of the Streets — Stephen Crane</title><style>
+:root{--paper:#fbf8f1;--ink:#1f1b16;--muted:#6f6352;--accent:#9a6b2f;--rule:#e4dccb}
+@media (prefers-color-scheme:dark){:root{--paper:#16140f;--ink:#ece6d8;--muted:#a79c88;--accent:#d8a95e;--rule:#2e2a22}}
+html{background:var(--paper)}
+body{font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Libertinus Serif",Georgia,serif;color:var(--ink);
+     background:var(--paper);line-height:1.65;font-size:1.12rem;max-width:36em;margin:0 auto;padding:2.5em 1.25em 5em}
+.titlepage{text-align:center;min-height:70vh;display:flex;flex-direction:column;justify-content:center;gap:.6em;
+           border-bottom:1px solid var(--rule);margin-bottom:2.5em;padding-bottom:2.5em}
+.titlepage img{max-width:260px;width:60%;margin:0 auto 1.5em;border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+h1{font-size:2.4em;line-height:1.15;font-weight:600;margin:0;letter-spacing:-.01em}
+.author{font-style:italic;font-size:1.25em;color:var(--accent);margin:0}
+.translator{font-size:.95em;color:var(--muted);margin:0}
+nav.toc{margin:0 0 3em}
+nav.toc h2{font-size:.85em;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:left;margin:0 0 .8em}
+nav.toc ol{list-style:none;padding:0;margin:0;columns:1}
+nav.toc li{margin:.25em 0}
+nav.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent}
+nav.toc a:hover{border-color:var(--accent)}
+h2.chapter{font-size:1.45em;font-weight:600;text-align:center;margin:3.5em 0 1.6em;line-height:1.3}
+h2.chapter::before{content:"";display:block;width:3em;height:2px;background:var(--accent);margin:0 auto 1.1em}
+p{margin:0;text-indent:1.5em;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+h2.chapter + p, .titlepage + p{text-indent:0}
+h2.chapter + p::first-letter{font-size:3.1em;float:left;line-height:.85;padding:.08em .08em 0 0;color:var(--accent);font-weight:600}
+.colophon{margin-top:5em;padding-top:1.5em;border-top:1px solid var(--rule);text-align:center;color:var(--muted);font-size:.85em;text-indent:0}
+h3.sub{font-size:1em;font-weight:600;font-variant:small-caps;letter-spacing:.04em;text-align:center;margin:2.2em 0 1em}
+h3.sub + p{text-indent:0}
+@media print{h2.chapter{break-before:page}}
+</style></head><body>
+<header class="titlepage">
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjI0MDAiIHZpZXdCb3g9IjAgMCAxNjAwIDI0MDAiPgo8cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSIyNDAwIiBmaWxsPSIjMWIzYTRiIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjMwMCIgZmlsbD0iI2Y0YTI2MSIgb3BhY2l0eT0iLjkyIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMWIzYTRiIiBzdHJva2Utd2lkdGg9IjEyIiBvcGFjaXR5PSIuNSIvPgo8Y2lyY2xlIGN4PSIxMTIwIiBjeT0iNTYwIiByPSIxMjAiIGZpbGw9IiMxYjNhNGIiIG9wYWNpdHk9Ii4xOCIvPgo8cmVjdCB4PSIxNjAiIHk9IjkzMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIxMCIgZmlsbD0iI2Y0YTI2MSIvPgo8dGV4dCB4PSIxNjAiIHk9IjEwOTgiIGZvbnQtc2l6ZT0iMTUwIiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmZGYxZTYiPk1hZ2dpZTogQSBHaXJsPC90ZXh0Pjx0ZXh0IHg9IjE2MCIgeT0iMTI2MiIgZm9udC1zaXplPSIxNTAiIGZvbnQtd2VpZ2h0PSI2MDAiIGZvbnQtZmFtaWx5PSJMaWJlcnRpbnVzIFNlcmlmLCBHZW9yZ2lhLCBzZXJpZiIgZmlsbD0iI2ZkZjFlNiI+b2YgdGhlIFN0cmVldHM8L3RleHQ+Cjx0ZXh0IHg9IjE2MCIgeT0iMTQ5OCIgZm9udC1zaXplPSI2OCIgZm9udC1zdHlsZT0iaXRhbGljIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmNGEyNjEiPlN0ZXBoZW4gQ3JhbmU8L3RleHQ+Cjx0ZXh0IHg9IjE2MCIgeT0iMjIzMCIgZm9udC1zaXplPSI0NCIgbGV0dGVyLXNwYWNpbmc9IjE0IiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmZGYxZTYiIG9wYWNpdHk9Ii43NSI+Qk9PS0NMQVNTSUNTPC90ZXh0Pgo8L3N2Zz4=" alt="">
+<h1>Maggie: A Girl of the Streets</h1>
+<p class="author">Stephen Crane</p>
+</header>
+<nav class="toc"><h2>Contents</h2><ol>
+<li><a href="#c1">Chapter II</a></li>
+<li><a href="#c2">Chapter III</a></li>
+<li><a href="#c3">Chapter IV</a></li>
+<li><a href="#c4">Chapter V</a></li>
+<li><a href="#c5">Chapter VI</a></li>
+<li><a href="#c6">Chapter VII</a></li>
+<li><a href="#c7">Chapter VIII</a></li>
+<li><a href="#c8">Chapter IX</a></li>
+<li><a href="#c9">Chapter X</a></li>
+<li><a href="#c10">Chapter XI</a></li>
+<li><a href="#c11">Chapter XII</a></li>
+<li><a href="#c12">Chapter XIII</a></li>
+<li><a href="#c13">Chapter XIV</a></li>
+<li><a href="#c14">Chapter XV</a></li>
+<li><a href="#c15">Chapter XVI</a></li>
+<li><a href="#c16">Chapter XVII</a></li>
+<li><a href="#c17">Chapter XVIII</a></li>
+<li><a href="#c18">Chapter XIX</a></li>
+</ol></nav>
+<p>Howls of renewed wrath went up from Devil&#x27;s Row throats.  Tattered gamins on the right made a furious assault on the gravel heap.  On their small, convulsed faces there shone the grins of true assassins. As they charged, they threw stones and cursed in shrill chorus.</p>
+<p>The little champion of Rum Alley stumbled precipitately down the other side.  His coat had been torn to shreds in a scuffle, and his hat was gone.  He had bruises on twenty parts of his body, and blood was dripping from a cut in his head.  His wan features wore a look of a tiny, insane demon.</p>
+<p>On the ground, children from Devil&#x27;s Row closed in on their antagonist. He crooked his left arm defensively about his head and fought with cursing fury.  The little boys ran to and fro, dodging, hurling stones and swearing in barbaric trebles.</p>
+<p>From a window of an apartment house that upreared its form from amid squat, ignorant stables, there leaned a curious woman.  Some laborers, unloading a scow at a dock at the river, paused for a moment and regarded the fight.  The engineer of a passive tugboat hung lazily to a railing and watched.  Over on the Island, a worm of yellow convicts came from the shadow of a building and crawled slowly along the river&#x27;s bank.</p>
+<p>A stone had smashed into Jimmie&#x27;s mouth.  Blood was bubbling over his chin and down upon his ragged shirt.  Tears made furrows on his dirt-stained cheeks.  His thin legs had begun to tremble and turn weak, causing his small body to reel.  His roaring curses of the first part of the fight had changed to a blasphemous chatter.</p>
+<p>Down the avenue came boastfully sauntering a lad of sixteen years, although the chronic sneer of an ideal manhood already sat upon his lips.  His hat was tipped with an air of challenge over his eye. Between his teeth, a cigar stump was tilted at the angle of defiance. He walked with a certain swing of the shoulders which appalled the timid.  He glanced over into the vacant lot in which the little raving boys from Devil&#x27;s Row seethed about the shrieking and tearful child from Rum Alley.</p>
+<p>&quot;Ah, what deh hell,&quot; he said, and smote the deeply-engaged one on the back of the head.  The little boy fell to the ground and gave a hoarse, tremendous howl.  He scrambled to his feet, and perceiving, evidently, the size of his assailant, ran quickly off, shouting alarms.  The entire Devil&#x27;s Row party followed him.  They came to a stand a short distance away and yelled taunting oaths at the boy with the chronic sneer.  The latter, momentarily, paid no attention to them.</p>
+<p>Some Rum Alley children now came forward.  The party stood for a moment exchanging vainglorious remarks with Devil&#x27;s Row.  A few stones were thrown at long distances, and words of challenge passed between small warriors.  Then the Rum Alley contingent turned slowly in the direction of their home street.  They began to give, each to each, distorted versions of the fight.  Causes of retreat in particular cases were magnified.  Blows dealt in the fight were enlarged to catapultian power, and stones thrown were alleged to have hurtled with infinite accuracy.  Valor grew strong again, and the little boys began to swear with great spirit.</p>
+<p>The small combatants pounded and kicked, scratched and tore.  They began to weep and their curses struggled in their throats with sobs. The other little boys clasped their hands and wriggled their legs in excitement.  They formed a bobbing circle about the pair.</p>
+<p>The circle of little boys instantly parted.  They drew away and waited in ecstatic awe for that which was about to happen.  The two little boys fighting in the modes of four thousand years ago, did not hear the warning.</p>
+<p>They departed.  The man paced placidly along with the apple-wood emblem of serenity between his teeth.  The boy followed a dozen feet in the rear.  He swore luridly, for he felt that it was degradation for one who aimed to be some vague soldier, or a man of blood with a sort of sublime license, to be taken home by a father.</p>
+<h2 class="chapter" id="c1">Chapter II</h2>
+<p>Eventually they entered into a dark region where, from a careening building, a dozen gruesome doorways gave up loads of babies to the street and the gutter.  A wind of early autumn raised yellow dust from cobbles and swirled it against an hundred windows.  Long streamers of garments fluttered from fire-escapes.  In all unhandy places there were buckets, brooms, rags and bottles.  In the street infants played or fought with other infants or sat stupidly in the way of vehicles. Formidable women, with uncombed hair and disordered dress, gossiped while leaning on railings, or screamed in frantic quarrels.  Withered persons, in curious postures of submission to something, sat smoking pipes in obscure corners.  A thousand odors of cooking food came forth to the street.  The building quivered and creaked from the weight of humanity stamping about in its bowels.</p>
+<p>A small ragged girl dragged a red, bawling infant along the crowded ways.  He was hanging back, baby-like, bracing his wrinkled, bare legs.</p>
+<p>The little girl cried out: &quot;Ah, Tommie, come ahn.  Dere&#x27;s Jimmie and fader.  Don&#x27;t be a-pullin&#x27; me back.&quot;</p>
+<p>She jerked the baby&#x27;s arm impatiently.  He fell on his face, roaring. With a second jerk she pulled him to his feet, and they went on.  With the obstinacy of his order, he protested against being dragged in a chosen direction.  He made heroic endeavors to keep on his legs, denounce his sister and consume a bit of orange peeling which he chewed between the times of his infantile orations.</p>
+<p>As the sullen-eyed man, followed by the blood-covered boy, drew near, the little girl burst into reproachful cries.  &quot;Ah, Jimmie, youse bin fightin&#x27; agin.&quot;</p>
+<p>The urchin swelled disdainfully.</p>
+<p>&quot;Ah, what deh hell, Mag.  See?&quot;</p>
+<p>The little girl upbraided him,  &quot;Youse allus fightin&#x27;, Jimmie, an&#x27; yeh knows it puts mudder out when yehs come home half dead, an&#x27; it&#x27;s like we&#x27;ll all get a poundin&#x27;.&quot;</p>
+<p>She began to weep.  The babe threw back his head and roared at his prospects.</p>
+<p>&quot;Ah, what deh hell!&quot; cried Jimmie.  &quot;Shut up er I&#x27;ll smack yer mout&#x27;. See?&quot;</p>
+<p>As his sister continued her lamentations, he suddenly swore and struck her.  The little girl reeled and, recovering herself, burst into tears and quaveringly cursed him.  As she slowly retreated her brother advanced dealing her cuffs.  The father heard and turned about.</p>
+<p>&quot;Stop that, Jim, d&#x27;yeh hear?  Leave yer sister alone on the street. It&#x27;s like I can never beat any sense into yer damned wooden head.&quot;</p>
+<p>The urchin raised his voice in defiance to his parent and continued his attacks.  The babe bawled tremendously, protesting with great violence. During his sister&#x27;s hasty manoeuvres, he was dragged by the arm.</p>
+<p>Finally the procession plunged into one of the gruesome doorways.  They crawled up dark stairways and along cold, gloomy halls.  At last the father pushed open a door and they entered a lighted room in which a large woman was rampant.</p>
+<p>She stopped in a career from a seething stove to a pan-covered table. As the father and children filed in she peered at them.</p>
+<p>&quot;Eh, what?  Been fightin&#x27; agin, by Gawd!&quot;  She threw herself upon Jimmie.  The urchin tried to dart behind the others and in the scuffle the babe, Tommie, was knocked down.  He protested with his usual vehemence, because they had bruised his tender shins against a table leg.</p>
+<p>The mother&#x27;s massive shoulders heaved with anger.  Grasping the urchin by the neck and shoulder she shook him until he rattled.  She dragged him to an unholy sink, and, soaking a rag in water, began to scrub his lacerated face with it.  Jimmie screamed in pain and tried to twist his shoulders out of the clasp of the huge arms.</p>
+<p>The babe sat on the floor watching the scene, his face in contortions like that of a woman at a tragedy.  The father, with a newly-ladened pipe in his mouth, crouched on a backless chair near the stove. Jimmie&#x27;s cries annoyed him.  He turned about and bellowed at his wife:</p>
+<p>&quot;Let the damned kid alone for a minute, will yeh, Mary?  Yer allus poundin&#x27; &#x27;im.  When I come nights I can&#x27;t git no rest &#x27;cause yer allus poundin&#x27; a kid.  Let up, d&#x27;yeh hear?  Don&#x27;t be allus poundin&#x27; a kid.&quot;</p>
+<p>The woman&#x27;s operations on the urchin instantly increased in violence. At last she tossed him to a corner where he limply lay cursing and weeping.</p>
+<p>The wife put her immense hands on her hips and with a chieftain-like stride approached her husband.</p>
+<p>&quot;Ho,&quot; she said, with a great grunt of contempt.  &quot;An&#x27; what in the devil are you stickin&#x27; your nose for?&quot;</p>
+<p>The babe crawled under the table and, turning, peered out cautiously. The ragged girl retreated and the urchin in the corner drew his legs carefully beneath him.</p>
+<p>The man puffed his pipe calmly and put his great mudded boots on the back part of the stove.</p>
+<p>&quot;Go teh hell,&quot; he murmured, tranquilly.</p>
+<p>The woman screamed and shook her fists before her husband&#x27;s eyes.  The rough yellow of her face and neck flared suddenly crimson.  She began to howl.</p>
+<p>He puffed imperturbably at his pipe for a time, but finally arose and began to look out at the window into the darkening chaos of back yards.</p>
+<p>&quot;You&#x27;ve been drinkin&#x27;, Mary,&quot; he said.  &quot;You&#x27;d better let up on the bot&#x27;, ol&#x27; woman, or you&#x27;ll git done.&quot;</p>
+<p>&quot;You&#x27;re a liar.  I ain&#x27;t had a drop,&quot; she roared in reply.</p>
+<p>They had a lurid altercation, in which they damned each other&#x27;s souls with frequence.</p>
+<p>The babe was staring out from under the table, his small face working in his excitement.</p>
+<p>The ragged girl went stealthily over to the corner where the urchin lay.</p>
+<p>&quot;Are yehs hurted much, Jimmie?&quot; she whispered timidly.</p>
+<p>&quot;Not a damn bit!  See?&quot; growled the little boy.</p>
+<p>&quot;Will I wash deh blood?&quot;</p>
+<p>&quot;Naw!&quot;</p>
+<p>&quot;Will I--&quot;</p>
+<p>&quot;When I catch dat Riley kid I&#x27;ll break &#x27;is face!  Dat&#x27;s right!  See?&quot;</p>
+<p>He turned his face to the wall as if resolved to grimly bide his time.</p>
+<p>In the quarrel between husband and wife, the woman was victor.  The man grabbed his hat and rushed from the room, apparently determined upon a vengeful drunk.  She followed to the door and thundered at him as he made his way down stairs.</p>
+<p>She returned and stirred up the room until her children were bobbing about like bubbles.</p>
+<p>&quot;Git outa deh way,&quot; she persistently bawled, waving feet with their dishevelled shoes near the heads of her children.  She shrouded herself, puffing and snorting, in a cloud of steam at the stove, and eventually extracted a frying-pan full of potatoes that hissed.</p>
+<p>She flourished it.  &quot;Come teh yer suppers, now,&quot; she cried with sudden exasperation.  &quot;Hurry up, now, er I&#x27;ll help yeh!&quot;</p>
+<p>The children scrambled hastily.  With prodigious clatter they arranged themselves at table.  The babe sat with his feet dangling high from a precarious infant chair and gorged his small stomach.  Jimmie forced, with feverish rapidity, the grease-enveloped pieces between his wounded lips.  Maggie, with side glances of fear of interruption, ate like a small pursued tigress.</p>
+<p>The mother sat blinking at them.  She delivered reproaches, swallowed potatoes and drank from a yellow-brown bottle.  After a time her mood changed and she wept as she carried little Tommie into another room and laid him to sleep with his fists doubled in an old quilt of faded red and green grandeur.  Then she came and moaned by the stove.  She rocked to and fro upon a chair, shedding tears and crooning miserably to the two children about their &quot;poor mother&quot; and &quot;yer fader, damn &#x27;is soul.&quot;</p>
+<p>The little girl plodded between the table and the chair with a dish-pan on it.  She tottered on her small legs beneath burdens of dishes.</p>
+<p>Jimmie sat nursing his various wounds.  He cast furtive glances at his mother.  His practised eye perceived her gradually emerge from a muddled mist of sentiment until her brain burned in drunken heat.  He sat breathless.</p>
+<p>Maggie broke a plate.</p>
+<p>The mother started to her feet as if propelled.</p>
+<p>&quot;Good Gawd,&quot; she howled.  Her eyes glittered on her child with sudden hatred.  The fervent red of her face turned almost to purple.  The little boy ran to the halls, shrieking like a monk in an earthquake.</p>
+<p>He floundered about in darkness until he found the stairs.  He stumbled, panic-stricken, to the next floor.  An old woman opened a door.  A light behind her threw a flare on the urchin&#x27;s quivering face.</p>
+<p>&quot;Eh, Gawd, child, what is it dis time?  Is yer fader beatin&#x27; yer mudder, or yer mudder beatin&#x27; yer fader?&quot;</p>
+<h2 class="chapter" id="c2">Chapter III</h2>
+<p>Jimmie and the old woman listened long in the hall.  Above the muffled roar of conversation, the dismal wailings of babies at night, the thumping of feet in unseen corridors and rooms, mingled with the sound of varied hoarse shoutings in the street and the rattling of wheels over cobbles, they heard the screams of the child and the roars of the mother die away to a feeble moaning and a subdued bass muttering.</p>
+<p>The old woman was a gnarled and leathery personage who could don, at will, an expression of great virtue.  She possessed a small music-box capable of one tune, and a collection of &quot;God bless yehs&quot; pitched in assorted keys of fervency.  Each day she took a position upon the stones of Fifth Avenue, where she crooked her legs under her and crouched immovable and hideous, like an idol.  She received daily a small sum in pennies.  It was contributed, for the most part, by persons who did not make their homes in that vicinity.</p>
+<p>Once, when a lady had dropped her purse on the sidewalk, the gnarled woman had grabbed it and smuggled it with great dexterity beneath her cloak.  When she was arrested she had cursed the lady into a partial swoon, and with her aged limbs, twisted from rheumatism, had almost kicked the stomach out of a huge policeman whose conduct upon that occasion she referred to when she said: &quot;The police, damn &#x27;em.&quot;</p>
+<p>&quot;Eh, Jimmie, it&#x27;s cursed shame,&quot; she said.  &quot;Go, now, like a dear an&#x27; buy me a can, an&#x27; if yer mudder raises &#x27;ell all night yehs can sleep here.&quot;</p>
+<p>Jimmie took a tendered tin-pail and seven pennies and departed.  He passed into the side door of a saloon and went to the bar.  Straining up on his toes he raised the pail and pennies as high as his arms would let him.  He saw two hands thrust down and take them.  Directly the same hands let down the filled pail and he left.</p>
+<p>In front of the gruesome doorway he met a lurching figure.  It was his father, swaying about on uncertain legs.</p>
+<p>&quot;Give me deh can.  See?&quot; said the man, threateningly.</p>
+<p>&quot;Ah, come off!  I got dis can fer dat ol&#x27; woman an&#x27; it &#x27;ud be dirt teh swipe it.  See?&quot; cried Jimmie.</p>
+<p>The father wrenched the pail from the urchin.  He grasped it in both hands and lifted it to his mouth.  He glued his lips to the under edge and tilted his head.  His hairy throat swelled until it seemed to grow near his chin.  There was a tremendous gulping movement and the beer was gone.</p>
+<p>The man caught his breath and laughed.  He hit his son on the head with the empty pail.  As it rolled clanging into the street, Jimmie began to scream and kicked repeatedly at his father&#x27;s shins.</p>
+<p>&quot;Look at deh dirt what yeh done me,&quot; he yelled.  &quot;Deh ol&#x27; woman &#x27;ill be raisin&#x27; hell.&quot;</p>
+<p>He retreated to the middle of the street, but the man did not pursue. He staggered toward the door.</p>
+<p>&quot;I&#x27;ll club hell outa yeh when I ketch yeh,&quot; he shouted, and disappeared.</p>
+<p>During the evening he had been standing against a bar drinking whiskies and declaring to all comers, confidentially: &quot;My home reg&#x27;lar livin&#x27; hell!  Damndes&#x27; place!  Reg&#x27;lar hell!  Why do I come an&#x27; drin&#x27; whisk&#x27; here thish way?  &#x27;Cause home reg&#x27;lar livin&#x27; hell!&quot;</p>
+<p>Jimmie waited a long time in the street and then crept warily up through the building.  He passed with great caution the door of the gnarled woman, and finally stopped outside his home and listened.</p>
+<p>He could hear his mother moving heavily about among the furniture of the room.  She was chanting in a mournful voice, occasionally interjecting bursts of volcanic wrath at the father, who, Jimmie judged, had sunk down on the floor or in a corner.</p>
+<p>&quot;Why deh blazes don&#x27; chere try teh keep Jim from fightin&#x27;?  I&#x27;ll break her jaw,&quot; she suddenly bellowed.</p>
+<p>The man mumbled with drunken indifference.  &quot;Ah, wha&#x27; deh hell.  W&#x27;a&#x27;s odds?  Wha&#x27; makes kick?&quot;</p>
+<p>&quot;Because he tears &#x27;is clothes, yeh damn fool,&quot; cried the woman in supreme wrath.</p>
+<p>The husband seemed to become aroused.  &quot;Go teh hell,&quot; he thundered fiercely in reply.  There was a crash against the door and something broke into clattering fragments.  Jimmie partially suppressed a howl and darted down the stairway.  Below he paused and listened.  He heard howls and curses, groans and shrieks, confusingly in chorus as if a battle were raging.  With all was the crash of splintering furniture. The eyes of the urchin glared in fear that one of them would discover him.</p>
+<p>Curious faces appeared in doorways, and whispered comments passed to and fro.  &quot;Ol&#x27; Johnson&#x27;s raisin&#x27; hell agin.&quot;</p>
+<p>Jimmie stood until the noises ceased and the other inhabitants of the tenement had all yawned and shut their doors.  Then he crawled upstairs with the caution of an invader of a panther den.  Sounds of labored breathing came through the broken door-panels.  He pushed the door open and entered, quaking.</p>
+<p>A glow from the fire threw red hues over the bare floor, the cracked and soiled plastering, and the overturned and broken furniture.</p>
+<p>In the middle of the floor lay his mother asleep.  In one corner of the room his father&#x27;s limp body hung across the seat of a chair.</p>
+<p>The urchin stole forward.  He began to shiver in dread of awakening his parents.  His mother&#x27;s great chest was heaving painfully.  Jimmie paused and looked down at her.  Her face was inflamed and swollen from drinking.  Her yellow brows shaded eyelids that had brown blue.  Her tangled hair tossed in waves over her forehead.  Her mouth was set in the same lines of vindictive hatred that it had, perhaps, borne during the fight.  Her bare, red arms were thrown out above her head in positions of exhaustion, something, mayhap, like those of a sated villain.</p>
+<p>The urchin bended over his mother.  He was fearful lest she should open her eyes, and the dread within him was so strong, that he could not forbear to stare, but hung as if fascinated over the woman&#x27;s grim face.</p>
+<p>Suddenly her eyes opened.  The urchin found himself looking straight into that expression, which, it would seem, had the power to change his blood to salt.  He howled piercingly and fell backward.</p>
+<p>The woman floundered for a moment, tossed her arms about her head as if in combat, and again began to snore.</p>
+<p>Jimmie crawled back in the shadows and waited.  A noise in the next room had followed his cry at the discovery that his mother was awake. He grovelled in the gloom, the eyes from out his drawn face riveted upon the intervening door.</p>
+<p>He heard it creak, and then the sound of a small voice came to him. &quot;Jimmie!  Jimmie!  Are yehs dere?&quot; it whispered.  The urchin started. The thin, white face of his sister looked at him from the door-way of the other room.  She crept to him across the floor.</p>
+<p>The father had not moved, but lay in the same death-like sleep.  The mother writhed in uneasy slumber, her chest wheezing as if she were in the agonies of strangulation.  Out at the window a florid moon was peering over dark roofs, and in the distance the waters of a river glimmered pallidly.</p>
+<p>The small frame of the ragged girl was quivering.  Her features were haggard from weeping, and her eyes gleamed from fear.  She grasped the urchin&#x27;s arm in her little trembling hands and they huddled in a corner.  The eyes of both were drawn, by some force, to stare at the woman&#x27;s face, for they thought she need only to awake and all fiends would come from below.</p>
+<p>They crouched until the ghost-mists of dawn appeared at the window, drawing close to the panes, and looking in at the prostrate, heaving body of the mother.</p>
+<h2 class="chapter" id="c3">Chapter IV</h2>
+<p>The babe, Tommie, died.  He went away in a white, insignificant coffin, his small waxen hand clutching a flower that the girl, Maggie, had stolen from an Italian.</p>
+<p>She and Jimmie lived.</p>
+<p>The inexperienced fibres of the boy&#x27;s eyes were hardened at an early age.  He became a young man of leather.  He lived some red years without laboring.  During that time his sneer became chronic.  He studied human nature in the gutter, and found it no worse than he thought he had reason to believe it.  He never conceived a respect for the world, because he had begun with no idols that it had smashed.</p>
+<p>He clad his soul in armor by means of happening hilariously in at a mission church where a man composed his sermons of &quot;yous.&quot; While they got warm at the stove, he told his hearers just where he calculated they stood with the Lord.  Many of the sinners were impatient over the pictured depths of their degradation.  They were waiting for soup-tickets.</p>
+<p>A reader of words of wind-demons might have been able to see the portions of a dialogue pass to and fro between the exhorter and his hearers.</p>
+<p>&quot;You are damned,&quot; said the preacher.  And the reader of sounds might have seen the reply go forth from the ragged people: &quot;Where&#x27;s our soup?&quot;</p>
+<p>Jimmie and a companion sat in a rear seat and commented upon the things that didn&#x27;t concern them, with all the freedom of English gentlemen. When they grew thirsty and went out their minds confused the speaker with Christ.</p>
+<p>Momentarily, Jimmie was sullen with thoughts of a hopeless altitude where grew fruit.  His companion said that if he should ever meet God he would ask for a million dollars and a bottle of beer.</p>
+<p>Jimmie&#x27;s occupation for a long time was to stand on streetcorners and watch the world go by, dreaming blood-red dreams at the passing of pretty women.  He menaced mankind at the intersections of streets.</p>
+<p>On the corners he was in life and of life.  The world was going on and he was there to perceive it.</p>
+<p>He maintained a belligerent attitude toward all well-dressed men.  To him fine raiment was allied to weakness, and all good coats covered faint hearts.  He and his order were kings, to a certain extent, over the men of untarnished clothes, because these latter dreaded, perhaps, to be either killed or laughed at.</p>
+<p>Above all things he despised obvious Christians and ciphers with the chrysanthemums of aristocracy in their button-holes.  He considered himself above both of these classes.  He was afraid of neither the devil nor the leader of society.</p>
+<p>When he had a dollar in his pocket his satisfaction with existence was the greatest thing in the world.  So, eventually, he felt obliged to work.  His father died and his mother&#x27;s years were divided up into periods of thirty days.</p>
+<p>He became a truck driver.  He was given the charge of a painstaking pair of horses and a large rattling truck.  He invaded the turmoil and tumble of the down-town streets and learned to breathe maledictory defiance at the police who occasionally used to climb up, drag him from his perch and beat him.</p>
+<p>In the lower part of the city he daily involved himself in hideous tangles.  If he and his team chanced to be in the rear he preserved a demeanor of serenity, crossing his legs and bursting forth into yells when foot passengers took dangerous dives beneath the noses of his champing horses.  He smoked his pipe calmly for he knew that his pay was marching on.</p>
+<p>If in the front and the key-truck of chaos, he entered terrifically into the quarrel that was raging to and fro among the drivers on their high seats, and sometimes roared oaths and violently got himself arrested.</p>
+<p>After a time his sneer grew so that it turned its glare upon all things.  He became so sharp that he believed in nothing.  To him the police were always actuated by malignant impulses and the rest of the world was composed, for the most part, of despicable creatures who were all trying to take advantage of him and with whom, in defense, he was obliged to quarrel on all possible occasions.  He himself occupied a down-trodden position that had a private but distinct element of grandeur in its isolation.</p>
+<p>The most complete cases of aggravated idiocy were, to his mind, rampant upon the front platforms of all the street cars.  At first his tongue strove with these beings, but he eventually was superior.  He became immured like an African cow.  In him grew a majestic contempt for those strings of street cars that followed him like intent bugs.</p>
+<p>He fell into the habit, when starting on a long journey, of fixing his eye on a high and distant object, commanding his horses to begin, and then going into a sort of a trance of observation.  Multitudes of drivers might howl in his rear, and passengers might load him with opprobrium, he would not awaken until some blue policeman turned red and began to frenziedly tear bridles and beat the soft noses of the responsible horses.</p>
+<p>When he paused to contemplate the attitude of the police toward himself and his fellows, he believed that they were the only men in the city who had no rights.  When driving about, he felt that he was held liable by the police for anything that might occur in the streets, and was the common prey of all energetic officials.  In revenge, he resolved never to move out of the way of anything, until formidable circumstances, or a much larger man than himself forced him to it.</p>
+<p>Foot-passengers were mere pestering flies with an insane disregard for their legs and his convenience.  He could not conceive their maniacal desires to cross the streets.  Their madness smote him with eternal amazement.  He was continually storming at them from his throne.  He sat aloft and denounced their frantic leaps, plunges, dives and straddles.</p>
+<p>When they would thrust at, or parry, the noses of his champing horses, making them swing their heads and move their feet, disturbing a solid dreamy repose, he swore at the men as fools, for he himself could perceive that Providence had caused it clearly to be written, that he and his team had the unalienable right to stand in the proper path of the sun chariot, and if they so minded, obstruct its mission or take a wheel off.</p>
+<p>And, perhaps, if the god-driver had an ungovernable desire to step down, put up his flame-colored fists and manfully dispute the right of way, he would have probably been immediately opposed by a scowling mortal with two sets of very hard knuckles.</p>
+<p>It is possible, perhaps, that this young man would have derided, in an axle-wide alley, the approach of a flying ferry boat.  Yet he achieved a respect for a fire engine.  As one charged toward his truck, he would drive fearfully upon a sidewalk, threatening untold people with annihilation.  When an engine would strike a mass of blocked trucks, splitting it into fragments, as a blow annihilates a cake of ice, Jimmie&#x27;s team could usually be observed high and safe, with whole wheels, on the sidewalk.  The fearful coming of the engine could break up the most intricate muddle of heavy vehicles at which the police had been swearing for the half of an hour.</p>
+<p>A fire engine was enshrined in his heart as an appalling thing that he loved with a distant dog-like devotion.  They had been known to overturn street-cars.  Those leaping horses, striking sparks from the cobbles in their forward lunge, were creatures to be ineffably admired. The clang of the gong pierced his breast like a noise of remembered war.</p>
+<p>When Jimmie was a little boy, he began to be arrested.  Before he reached a great age, he had a fair record.</p>
+<p>He developed too great a tendency to climb down from his truck and fight with other drivers.  He had been in quite a number of miscellaneous fights, and in some general barroom rows that had become known to the police.  Once he had been arrested for assaulting a Chinaman.  Two women in different parts of the city, and entirely unknown to each other, caused him considerable annoyance by breaking forth, simultaneously, at fateful intervals, into wailings about marriage and support and infants.</p>
+<p>Nevertheless, he had, on a certain star-lit evening, said wonderingly and quite reverently: &quot;Deh moon looks like hell, don&#x27;t it?&quot;</p>
+<h2 class="chapter" id="c4">Chapter V</h2>
+<p>The girl, Maggie, blossomed in a mud puddle.  She grew to be a most rare and wonderful production of a tenement district, a pretty girl.</p>
+<p>None of the dirt of Rum Alley seemed to be in her veins.  The philosophers up-stairs, down-stairs and on the same floor, puzzled over it.</p>
+<p>When a child, playing and fighting with gamins in the street, dirt disguised her.  Attired in tatters and grime, she went unseen.</p>
+<p>There came a time, however, when the young men of the vicinity said: &quot;Dat Johnson goil is a puty good looker.&quot;  About this period her brother remarked to her: &quot;Mag, I&#x27;ll tell yeh dis!  See?  Yeh&#x27;ve edder got teh go teh hell or go teh work!&quot;  Whereupon she went to work, having the feminine aversion of going to hell.</p>
+<p>By a chance, she got a position in an establishment where they made collars and cuffs.  She received a stool and a machine in a room where sat twenty girls of various shades of yellow discontent.  She perched on the stool and treadled at her machine all day, turning out collars, the name of whose brand could be noted for its irrelevancy to anything in connection with collars.  At night she returned home to her mother.</p>
+<p>Jimmie grew large enough to take the vague position of head of the family.  As incumbent of that office, he stumbled up-stairs late at night, as his father had done before him.  He reeled about the room, swearing at his relations, or went to sleep on the floor.</p>
+<p>The mother had gradually arisen to that degree of fame that she could bandy words with her acquaintances among the police-justices. Court-officials called her by her first name.  When she appeared they pursued a course which had been theirs for months.  They invariably grinned and cried out: &quot;Hello, Mary, you here again?&quot;  Her grey head wagged in many a court.  She always besieged the bench with voluble excuses, explanations, apologies and prayers.  Her flaming face and rolling eyes were a sort of familiar sight on the island.  She measured time by means of sprees, and was eternally swollen and dishevelled.</p>
+<p>One day the young man, Pete, who as a lad had smitten the Devil&#x27;s Row urchin in the back of the head and put to flight the antagonists of his friend, Jimmie, strutted upon the scene.  He met Jimmie one day on the street, promised to take him to a boxing match in Williamsburg, and called for him in the evening.</p>
+<p>Maggie observed Pete.</p>
+<p>He sat on a table in the Johnson home and dangled his checked legs with an enticing nonchalance.  His hair was curled down over his forehead in an oiled bang.  His rather pugged nose seemed to revolt from contact with a bristling moustache of short, wire-like hairs.  His blue double-breasted coat, edged with black braid, buttoned close to a red puff tie, and his patent-leather shoes looked like murder-fitted weapons.</p>
+<p>His mannerisms stamped him as a man who had a correct sense of his personal superiority.  There was valor and contempt for circumstances in the glance of his eye.  He waved his hands like a man of the world, who dismisses religion and philosophy, and says &quot;Fudge.&quot;  He had certainly seen everything and with each curl of his lip, he declared that it amounted to nothing.  Maggie thought he must be a very elegant and graceful bartender.</p>
+<p>He was telling tales to Jimmie.</p>
+<p>Maggie watched him furtively, with half-closed eyes, lit with a vague interest.</p>
+<p>&quot;Hully gee!  Dey makes me tired,&quot; he said.  &quot;Mos&#x27; e&#x27;ry day some farmer comes in an&#x27; tries teh run deh shop.  See?  But dey gits t&#x27;rowed right out!  I jolt dem right out in deh street before dey knows where dey is! See?&quot;</p>
+<p>&quot;Sure,&quot; said Jimmie.</p>
+<p>&quot;Dere was a mug come in deh place deh odder day wid an idear he wus goin&#x27; teh own deh place!  Hully gee, he wus goin&#x27; teh own deh place!  I see he had a still on an&#x27; I didn&#x27; wanna giv &#x27;im no stuff, so I says: &#x27;Git deh hell outa here an&#x27; don&#x27; make no trouble,&#x27; I says like dat! See?  &#x27;Git deh hell outa here an&#x27; don&#x27; make no trouble&#x27;; like dat. &#x27;Git deh hell outa here,&#x27; I says.  See?&quot;</p>
+<p>Jimmie nodded understandingly.  Over his features played an eager desire to state the amount of his valor in a similar crisis, but the narrator proceeded.</p>
+<p>&quot;Well, deh blokie he says: &#x27;T&#x27;hell wid it!  I ain&#x27; lookin&#x27; for no scrap,&#x27; he says (See?), &#x27;but&#x27; he says, &#x27;I&#x27;m &#x27;spectable cit&#x27;zen an&#x27; I wanna drink an&#x27; purtydamnsoon, too.&#x27;  See?  &#x27;Deh hell,&#x27; I says.  Like dat!  &#x27;Deh hell,&#x27; I says.  See?  &#x27;Don&#x27; make no trouble,&#x27; I says.  Like dat.  &#x27;Don&#x27; make no trouble.&#x27;  See?  Den deh mug he squared off an&#x27; said he was fine as silk wid his dukes (See?) an&#x27; he wanned a drink damnquick.  Dat&#x27;s what he said.  See?&quot;</p>
+<p>&quot;Sure,&quot; repeated Jimmie.</p>
+<p>Pete continued.  &quot;Say, I jes&#x27; jumped deh bar an&#x27; deh way I plunked dat blokie was great.  See?  Dat&#x27;s right!  In deh jaw!  See?  Hully gee, he t&#x27;rowed a spittoon true deh front windee.  Say, I taut I&#x27;d drop dead. But deh boss, he comes in after an&#x27; he says, &#x27;Pete, yehs done jes&#x27; right!  Yeh&#x27;ve gota keep order an&#x27; it&#x27;s all right.&#x27;  See?  &#x27;It&#x27;s all right,&#x27; he says.  Dat&#x27;s what he said.&quot;</p>
+<p>The two held a technical discussion.</p>
+<p>&quot;Dat bloke was a dandy,&quot; said Pete, in conclusion, &quot;but he hadn&#x27; oughta made no trouble.  Dat&#x27;s what I says teh dem: &#x27;Don&#x27; come in here an&#x27; make no trouble,&#x27; I says, like dat.  &#x27;Don&#x27; make no trouble.&#x27;  See?&quot;</p>
+<p>As Jimmie and his friend exchanged tales descriptive of their prowess, Maggie leaned back in the shadow.  Her eyes dwelt wonderingly and rather wistfully upon Pete&#x27;s face.  The broken furniture, grimey walls, and general disorder and dirt of her home of a sudden appeared before her and began to take a potential aspect.  Pete&#x27;s aristocratic person looked as if it might soil.  She looked keenly at him, occasionally, wondering if he was feeling contempt.  But Pete seemed to be enveloped in reminiscence.</p>
+<p>&quot;Hully gee,&quot; said he, &quot;dose mugs can&#x27;t phase me.  Dey knows I kin wipe up deh street wid any t&#x27;ree of dem.&quot;</p>
+<p>When he said, &quot;Ah, what deh hell,&quot; his voice was burdened with disdain for the inevitable and contempt for anything that fate might compel him to endure.</p>
+<p>Maggie perceived that here was the beau ideal of a man.  Her dim thoughts were often searching for far away lands where, as God says, the little hills sing together in the morning.  Under the trees of her dream-gardens there had always walked a lover.</p>
+<h2 class="chapter" id="c5">Chapter VI</h2>
+<p>Pete took note of Maggie.</p>
+<p>&quot;Say, Mag, I&#x27;m stuck on yer shape.  It&#x27;s outa sight,&quot; he said, parenthetically, with an affable grin.</p>
+<p>As he became aware that she was listening closely, he grew still more eloquent in his descriptions of various happenings in his career.  It appeared that he was invincible in fights.</p>
+<p>&quot;Why,&quot; he said, referring to a man with whom he had had a misunderstanding, &quot;dat mug scrapped like a damn dago.  Dat&#x27;s right.  He was dead easy.  See?  He tau&#x27;t he was a scrapper.  But he foun&#x27; out diff&#x27;ent!  Hully gee.&quot;</p>
+<p>He walked to and fro in the small room, which seemed then to grow even smaller and unfit to hold his dignity, the attribute of a supreme warrior.  That swing of the shoulders that had frozen the timid when he was but a lad had increased with his growth and education at the ratio of ten to one.  It, combined with the sneer upon his mouth, told mankind that there was nothing in space which could appall him.  Maggie marvelled at him and surrounded him with greatness.  She vaguely tried to calculate the altitude of the pinnacle from which he must have looked down upon her.</p>
+<p>&quot;I met a chump deh odder day way up in deh city,&quot; he said.  &quot;I was goin&#x27; teh see a frien&#x27; of mine.  When I was a-crossin&#x27; deh street deh chump runned plump inteh me, an&#x27; den he turns aroun&#x27; an&#x27; says, &#x27;Yer insolen&#x27; ruffin,&#x27; he says, like dat.  &#x27;Oh, gee,&#x27; I says, &#x27;oh, gee, go teh hell and git off deh eart&#x27;,&#x27; I says, like dat.  See?  &#x27;Go teh hell an&#x27; git off deh eart&#x27;,&#x27; like dat.  Den deh blokie he got wild.  He says I was a contempt&#x27;ble scoun&#x27;el, er somet&#x27;ing like dat, an&#x27; he says I was doom&#x27; teh everlastin&#x27; pe&#x27;dition an&#x27; all like dat.  &#x27;Gee,&#x27; I says, &#x27;gee! Deh hell I am,&#x27; I says.  &#x27;Deh hell I am,&#x27; like dat.  An&#x27; den I slugged &#x27;im.  See?&quot;</p>
+<p>With Jimmie in his company, Pete departed in a sort of a blaze of glory from the Johnson home.  Maggie, leaning from the window, watched him as he walked down the street.</p>
+<p>Here was a formidable man who disdained the strength of a world full of fists.  Here was one who had contempt for brass-clothed power; one whose knuckles could defiantly ring against the granite of law.  He was a knight.</p>
+<p>The two men went from under the glimmering street-lamp and passed into shadows.</p>
+<p>Turning, Maggie contemplated the dark, dust-stained walls, and the scant and crude furniture of her home.  A clock, in a splintered and battered oblong box of varnished wood, she suddenly regarded as an abomination.  She noted that it ticked raspingly.  The almost vanished flowers in the carpet-pattern, she conceived to be newly hideous.  Some faint attempts she had made with blue ribbon, to freshen the appearance of a dingy curtain, she now saw to be piteous.</p>
+<p>She wondered what Pete dined on.</p>
+<p>She reflected upon the collar and cuff factory.  It began to appear to her mind as a dreary place of endless grinding.  Pete&#x27;s elegant occupation brought him, no doubt, into contact with people who had money and manners.  It was probable that he had a large acquaintance of pretty girls.  He must have great sums of money to spend.</p>
+<p>To her the earth was composed of hardships and insults.  She felt instant admiration for a man who openly defied it.  She thought that if the grim angel of death should clutch his heart, Pete would shrug his shoulders and say: &quot;Oh, ev&#x27;ryt&#x27;ing goes.&quot;</p>
+<p>She anticipated that he would come again shortly.  She spent some of her week&#x27;s pay in the purchase of flowered cretonne for a lambrequin. She made it with infinite care and hung it to the slightly-careening mantel, over the stove, in the kitchen.  She studied it with painful anxiety from different points in the room.  She wanted it to look well on Sunday night when, perhaps, Jimmie&#x27;s friend would come.  On Sunday night, however, Pete did not appear.</p>
+<p>Afterward the girl looked at it with a sense of humiliation.  She was now convinced that Pete was superior to admiration for lambrequins.</p>
+<p>A few evenings later Pete entered with fascinating innovations in his apparel.  As she had seen him twice and he had different suits on each time, Maggie had a dim impression that his wardrobe was prodigiously extensive.</p>
+<p>&quot;Say, Mag,&quot; he said, &quot;put on yer bes&#x27; duds Friday night an&#x27; I&#x27;ll take yehs teh deh show.  See?&quot;</p>
+<p>He spent a few moments in flourishing his clothes and then vanished, without having glanced at the lambrequin.</p>
+<p>Over the eternal collars and cuffs in the factory Maggie spent the most of three days in making imaginary sketches of Pete and his daily environment.  She imagined some half dozen women in love with him and thought he must lean dangerously toward an indefinite one, whom she pictured with great charms of person, but with an altogether contemptible disposition.</p>
+<p>She thought he must live in a blare of pleasure.  He had friends, and people who were afraid of him.</p>
+<p>She saw the golden glitter of the place where Pete was to take her.  An entertainment of many hues and many melodies where she was afraid she might appear small and mouse-colored.</p>
+<p>Her mother drank whiskey all Friday morning.  With lurid face and tossing hair she cursed and destroyed furniture all Friday afternoon. When Maggie came home at half-past six her mother lay asleep amidst the wreck of chairs and a table.  Fragments of various household utensils were scattered about the floor.  She had vented some phase of drunken fury upon the lambrequin.  It lay in a bedraggled heap in the corner.</p>
+<p>&quot;Hah,&quot; she snorted, sitting up suddenly, &quot;where deh hell yeh been?  Why deh hell don&#x27; yeh come home earlier?  Been loafin&#x27; &#x27;round deh streets. Yer gettin&#x27; teh be a reg&#x27;lar devil.&quot;</p>
+<p>When Pete arrived Maggie, in a worn black dress, was waiting for him in the midst of a floor strewn with wreckage.  The curtain at the window had been pulled by a heavy hand and hung by one tack, dangling to and fro in the draft through the cracks at the sash.  The knots of blue ribbons appeared like violated flowers.  The fire in the stove had gone out.  The displaced lids and open doors showed heaps of sullen grey ashes.  The remnants of a meal, ghastly, like dead flesh, lay in a corner.  Maggie&#x27;s red mother, stretched on the floor, blasphemed and gave her daughter a bad name.</p>
+<h2 class="chapter" id="c6">Chapter VII</h2>
+<p>An orchestra of yellow silk women and bald-headed men on an elevated stage near the centre of a great green-hued hall, played a popular waltz.  The place was crowded with people grouped about little tables. A battalion of waiters slid among the throng, carrying trays of beer glasses and making change from the inexhaustible vaults of their trousers pockets.  Little boys, in the costumes of French chefs, paraded up and down the irregular aisles vending fancy cakes.  There was a low rumble of conversation and a subdued clinking of glasses. Clouds of tobacco smoke rolled and wavered high in air about the dull gilt of the chandeliers.</p>
+<p>The vast crowd had an air throughout of having just quitted labor.  Men with calloused hands and attired in garments that showed the wear of an endless trudge for a living, smoked their pipes contentedly and spent five, ten, or perhaps fifteen cents for beer.  There was a mere sprinkling of kid-gloved men who smoked cigars purchased elsewhere. The great body of the crowd was composed of people who showed that all day they strove with their hands.  Quiet Germans, with maybe their wives and two or three children, sat listening to the music, with the expressions of happy cows.  An occasional party of sailors from a war-ship, their faces pictures of sturdy health, spent the earlier hours of the evening at the small round tables.  Very infrequent tipsy men, swollen with the value of their opinions, engaged their companions in earnest and confidential conversation.  In the balcony, and here and there below, shone the impassive faces of women.  The nationalities of the Bowery beamed upon the stage from all directions.</p>
+<p>Pete aggressively walked up a side aisle and took seats with Maggie at a table beneath the balcony.</p>
+<p>&quot;Two beehs!&quot;</p>
+<p>Leaning back he regarded with eyes of superiority the scene before them.  This attitude affected Maggie strongly.  A man who could regard such a sight with indifference must be accustomed to very great things.</p>
+<p>It was obvious that Pete had been to this place many times before, and was very familiar with it.  A knowledge of this fact made Maggie feel little and new.</p>
+<p>He was extremely gracious and attentive.  He displayed the consideration of a cultured gentleman who knew what was due.</p>
+<p>&quot;Say, what deh hell?  Bring deh lady a big glass!  What deh hell use is dat pony?&quot;</p>
+<p>&quot;Don&#x27;t be fresh, now,&quot; said the waiter, with some warmth, as he departed.</p>
+<p>&quot;Ah, git off deh eart&#x27;,&quot; said Pete, after the other&#x27;s retreating form.</p>
+<p>Maggie perceived that Pete brought forth all his elegance and all his knowledge of high-class customs for her benefit.  Her heart warmed as she reflected upon his condescension.</p>
+<p>The orchestra of yellow silk women and bald-headed men gave vent to a few bars of anticipatory music and a girl, in a pink dress with short skirts, galloped upon the stage.  She smiled upon the throng as if in acknowledgment of a warm welcome, and began to walk to and fro, making profuse gesticulations and singing, in brazen soprano tones, a song, the words of which were inaudible.  When she broke into the swift rattling measures of a chorus some half-tipsy men near the stage joined in the rollicking refrain and glasses were pounded rhythmically upon the tables.  People leaned forward to watch her and to try to catch the words of the song.  When she vanished there were long rollings of applause.</p>
+<p>Obedient to more anticipatory bars, she reappeared amidst the half-suppressed cheering of the tipsy men.  The orchestra plunged into dance music and the laces of the dancer fluttered and flew in the glare of gas jets.  She divulged the fact that she was attired in some half dozen skirts.  It was patent that any one of them would have proved adequate for the purpose for which skirts are intended.  An occasional man bent forward, intent upon the pink stockings.  Maggie wondered at the splendor of the costume and lost herself in calculations of the cost of the silks and laces.</p>
+<p>The dancer&#x27;s smile of stereotyped enthusiasm was turned for ten minutes upon the faces of her audience.  In the finale she fell into some of those grotesque attitudes which were at the time popular among the dancers in the theatres up-town, giving to the Bowery public the phantasies of the aristocratic theatre-going public, at reduced rates.</p>
+<p>&quot;Say, Pete,&quot; said Maggie, leaning forward, &quot;dis is great.&quot;</p>
+<p>&quot;Sure,&quot; said Pete, with proper complacence.</p>
+<p>A ventriloquist followed the dancer.  He held two fantastic dolls on his knees.  He made them sing mournful ditties and say funny things about geography and Ireland.</p>
+<p>&quot;Do dose little men talk?&quot; asked Maggie.</p>
+<p>&quot;Naw,&quot; said Pete, &quot;it&#x27;s some damn fake.  See?&quot;</p>
+<p>Two girls, on the bills as sisters, came forth and sang a duet that is heard occasionally at concerts given under church auspices.  They supplemented it with a dance which of course can never be seen at concerts given under church auspices.</p>
+<p>After the duettists had retired, a woman of debatable age sang a negro melody.  The chorus necessitated some grotesque waddlings supposed to be an imitation of a plantation darkey, under the influence, probably, of music and the moon.  The audience was just enthusiastic enough over it to have her return and sing a sorrowful lay, whose lines told of a mother&#x27;s love and a sweetheart who waited and a young man who was lost at sea under the most harrowing circumstances.  From the faces of a score or so in the crowd, the self-contained look faded.  Many heads were bent forward with eagerness and sympathy.  As the last distressing sentiment of the piece was brought forth, it was greeted by that kind of applause which rings as sincere.</p>
+<p>As a final effort, the singer rendered some verses which described a vision of Britain being annihilated by America, and Ireland bursting her bonds.  A carefully prepared crisis was reached in the last line of the last verse, where the singer threw out her arms and cried, &quot;The star-spangled banner.&quot;  Instantly a great cheer swelled from the throats of the assemblage of the masses.  There was a heavy rumble of booted feet thumping the floor.  Eyes gleamed with sudden fire, and calloused hands waved frantically in the air.</p>
+<p>After a few moments&#x27; rest, the orchestra played crashingly, and a small fat man burst out upon the stage.  He began to roar a song and stamp back and forth before the foot-lights, wildly waving a glossy silk hat and throwing leers, or smiles, broadcast.  He made his face into fantastic grimaces until he looked like a pictured devil on a Japanese kite.  The crowd laughed gleefully.  His short, fat legs were never still a moment.  He shouted and roared and bobbed his shock of red wig until the audience broke out in excited applause.</p>
+<p>Pete did not pay much attention to the progress of events upon the stage.  He was drinking beer and watching Maggie.</p>
+<p>Her cheeks were blushing with excitement and her eyes were glistening. She drew deep breaths of pleasure.  No thoughts of the atmosphere of the collar and cuff factory came to her.</p>
+<p>When the orchestra crashed finally, they jostled their way to the sidewalk with the crowd.  Pete took Maggie&#x27;s arm and pushed a way for her, offering to fight with a man or two.</p>
+<p>They reached Maggie&#x27;s home at a late hour and stood for a moment in front of the gruesome doorway.</p>
+<p>&quot;Say, Mag,&quot; said Pete, &quot;give us a kiss for takin&#x27; yeh teh deh show, will yer?&quot;</p>
+<p>Maggie laughed, as if startled, and drew away from him.</p>
+<p>&quot;Naw, Pete,&quot; she said, &quot;dat wasn&#x27;t in it.&quot;</p>
+<p>&quot;Ah, what deh hell?&quot; urged Pete.</p>
+<p>The girl retreated nervously.</p>
+<p>&quot;Ah, what deh hell?&quot; repeated he.</p>
+<p>Maggie darted into the hall, and up the stairs.  She turned and smiled at him, then disappeared.</p>
+<p>Pete walked slowly down the street.  He had something of an astonished expression upon his features.  He paused under a lamp-post and breathed a low breath of surprise.</p>
+<p>&quot;Gawd,&quot; he said, &quot;I wonner if I&#x27;ve been played fer a duffer.&quot;</p>
+<h2 class="chapter" id="c7">Chapter VIII</h2>
+<p>As thoughts of Pete came to Maggie&#x27;s mind, she began to have an intense dislike for all of her dresses.</p>
+<p>&quot;What deh hell ails yeh?  What makes yeh be allus fixin&#x27; and fussin&#x27;? Good Gawd,&quot; her mother would frequently roar at her.</p>
+<p>She began to note, with more interest, the well-dressed women she met on the avenues.  She envied elegance and soft palms.  She craved those adornments of person which she saw every day on the street, conceiving them to be allies of vast importance to women.</p>
+<p>Studying faces, she thought many of the women and girls she chanced to meet, smiled with serenity as though forever cherished and watched over by those they loved.</p>
+<p>The air in the collar and cuff establishment strangled her.  She knew she was gradually and surely shrivelling in the hot, stuffy room.  The begrimed windows rattled incessantly from the passing of elevated trains.  The place was filled with a whirl of noises and odors.</p>
+<p>She wondered as she regarded some of the grizzled women in the room, mere mechanical contrivances sewing seams and grinding out, with heads bended over their work, tales of imagined or real girlhood happiness, past drunks, the baby at home, and unpaid wages.  She speculated how long her youth would endure.  She began to see the bloom upon her cheeks as valuable.</p>
+<p>She imagined herself, in an exasperating future, as a scrawny woman with an eternal grievance.  Too, she thought Pete to be a very fastidious person concerning the appearance of women.</p>
+<p>She felt she would love to see somebody entangle their fingers in the oily beard of the fat foreigner who owned the establishment.  He was a detestable creature.  He wore white socks with low shoes.</p>
+<p>He sat all day delivering orations, in the depths of a cushioned chair. His pocketbook deprived them of the power to retort.</p>
+<p>&quot;What een hell do you sink I pie fife dolla a week for? Play? No, py damn!&quot; Maggie was anxious for a friend to whom she could talk about Pete. She would have liked to discuss his admirable mannerisms with a reliable mutual friend. At home, she found her mother often drunk and always raving. It seems that the world had treated this woman very badly, and she took a deep revenge upon such portions of it as came within her reach. She broke furniture as if she were at last getting her rights. She swelled with virtuous indignation as she carried the lighter articles of household use, one by one under the shadows of the three gilt balls, where Hebrews chained them with chains of interest.</p>
+<p>Jimmie came when he was obliged to by circumstances over which he had no control. His well-trained legs brought him staggering home and put him to bed some nights when he would rather have gone elsewhere.</p>
+<p>Swaggering Pete loomed like a golden sun to Maggie. He took her to a dime museum where rows of meek freaks astonished her. She contemplated their deformities with awe and thought them a sort of chosen tribe.</p>
+<p>Pete, raking his brains for amusement, discovered the Central Park Menagerie and the Museum of Arts. Sunday afternoons would sometimes find them at these places. Pete did not appear to be particularly interested in what he saw. He stood around looking heavy, while Maggie giggled in glee.</p>
+<p>Once at the Menagerie he went into a trance of admiration before the spectacle of a very small monkey threatening to thrash a cageful because one of them had pulled his tail and he had not wheeled about quickly enough to discover who did it. Ever after Pete knew that monkey by sight and winked at him, trying to induce hime to fight with other and larger monkeys. At the Museum, Maggie said, &quot;Dis is outa sight.&quot;</p>
+<p>&quot;Oh hell,&quot; said Pete, &quot;wait &#x27;till next summer an&#x27; I&#x27;ll take yehs to a picnic.&quot;</p>
+<p>While the girl wandered in the vaulted rooms, Pete occupied himself in returning stony stare for stony stare, the appalling scrutiny of the watch-dogs of the treasures. Occasionally he would remark in loud tones: &quot;Dat jay has got glass eyes,&quot; and sentences of the sort. When he tired of this amusement he would go to the mummies and moralize over them.</p>
+<p>Usually he submitted with silent dignity to all which he had to go through, but, at times, he was goaded into comment.</p>
+<p>&quot;What deh hell,&quot; he demanded once.  &quot;Look at all dese little jugs! Hundred jugs in a row!  Ten rows in a case an&#x27; &#x27;bout a t&#x27;ousand cases! What deh blazes use is dem?&quot;</p>
+<p>Evenings during the week he took her to see plays in which the brain-clutching heroine was rescued from the palatial home of her guardian, who is cruelly after her bonds, by the hero with the beautiful sentiments.  The latter spent most of his time out at soak in pale-green snow storms, busy with a nickel-plated revolver, rescuing aged strangers from villains.</p>
+<p>Maggie lost herself in sympathy with the wanderers swooning in snow storms beneath happy-hued church windows.  And a choir within singing &quot;Joy to the World.&quot;  To Maggie and the rest of the audience this was transcendental realism.  Joy always within, and they, like the actor, inevitably without.  Viewing it, they hugged themselves in ecstatic pity of their imagined or real condition.</p>
+<p>The girl thought the arrogance and granite-heartedness of the magnate of the play was very accurately drawn.  She echoed the maledictions that the occupants of the gallery showered on this individual when his lines compelled him to expose his extreme selfishness.</p>
+<p>Shady persons in the audience revolted from the pictured villainy of the drama.  With untiring zeal they hissed vice and applauded virtue. Unmistakably bad men evinced an apparently sincere admiration for virtue.</p>
+<p>The loud gallery was overwhelmingly with the unfortunate and the oppressed.  They encouraged the struggling hero with cries, and jeered the villain, hooting and calling attention to his whiskers.  When anybody died in the pale-green snow storms, the gallery mourned.  They sought out the painted misery and hugged it as akin.</p>
+<p>In the hero&#x27;s erratic march from poverty in the first act, to wealth and triumph in the final one, in which he forgives all the enemies that he has left, he was assisted by the gallery, which applauded his generous and noble sentiments and confounded the speeches of his opponents by making irrelevant but very sharp remarks.  Those actors who were cursed with villainy parts were confronted at every turn by the gallery.  If one of them rendered lines containing the most subtile distinctions between right and wrong, the gallery was immediately aware if the actor meant wickedness, and denounced him accordingly.</p>
+<p>The last act was a triumph for the hero, poor and of the masses, the representative of the audience, over the villain and the rich man, his pockets stuffed with bonds, his heart packed with tyrannical purposes, imperturbable amid suffering.</p>
+<p>Maggie always departed with raised spirits from the showing places of the melodrama.  She rejoiced at the way in which the poor and virtuous eventually surmounted the wealthy and wicked.  The theatre made her think.  She wondered if the culture and refinement she had seen imitated, perhaps grotesquely, by the heroine on the stage, could be acquired by a girl who lived in a tenement house and worked in a shirt factory.</p>
+<h2 class="chapter" id="c8">Chapter IX</h2>
+<p>A group of urchins were intent upon the side door of a saloon. Expectancy gleamed from their eyes.  They were twisting their fingers in excitement.</p>
+<p>&quot;Here she comes,&quot; yelled one of them suddenly.</p>
+<p>The group of urchins burst instantly asunder and its individual fragments were spread in a wide, respectable half circle about the point of interest.  The saloon door opened with a crash, and the figure of a woman appeared upon the threshold.  Her grey hair fell in knotted masses about her shoulders.  Her face was crimsoned and wet with perspiration.  Her eyes had a rolling glare.</p>
+<p>&quot;Not a damn cent more of me money will yehs ever get, not a damn cent. I spent me money here fer t&#x27;ree years an&#x27; now yehs tells me yeh&#x27;ll sell me no more stuff!  T&#x27;hell wid yeh, Johnnie Murckre!  &#x27;Disturbance&#x27;? Disturbance be damned!  T&#x27;hell wid yeh, Johnnie--&quot;</p>
+<p>The door received a kick of exasperation from within and the woman lurched heavily out on the sidewalk.</p>
+<p>The gamins in the half-circle became violently agitated.  They began to dance about and hoot and yell and jeer.  Wide dirty grins spread over each face.</p>
+<p>The woman made a furious dash at a particularly outrageous cluster of little boys.  They laughed delightedly and scampered off a short distance, calling out over their shoulders to her.  She stood tottering on the curb-stone and thundered at them.</p>
+<p>&quot;Yeh devil&#x27;s kids,&quot; she howled, shaking red fists.  The little boys whooped in glee.  As she started up the street they fell in behind and marched uproariously.  Occasionally she wheeled about and made charges on them.  They ran nimbly out of reach and taunted her.</p>
+<p>In the frame of a gruesome doorway she stood for a moment cursing them. Her hair straggled, giving her crimson features a look of insanity. Her great fists quivered as she shook them madly in the air.</p>
+<p>The urchins made terrific noises until she turned and disappeared. Then they filed quietly in the way they had come.</p>
+<p>The woman floundered about in the lower hall of the tenement house and finally stumbled up the stairs.  On an upper hall a door was opened and a collection of heads peered curiously out, watching her.  With a wrathful snort the woman confronted the door, but it was slammed hastily in her face and the key was turned.</p>
+<p>She stood for a few minutes, delivering a frenzied challenge at the panels.</p>
+<p>&quot;Come out in deh hall, Mary Murphy, damn yeh, if yehs want a row.  Come ahn, yeh overgrown terrier, come ahn.&quot;</p>
+<p>She began to kick the door with her great feet.  She shrilly defied the universe to appear and do battle.  Her cursing trebles brought heads from all doors save the one she threatened.  Her eyes glared in every direction.  The air was full of her tossing fists.</p>
+<p>&quot;Come ahn, deh hull damn gang of yehs, come ahn,&quot; she roared at the spectators.  An oath or two, cat-calls, jeers and bits of facetious advice were given in reply.  Missiles clattered about her feet.</p>
+<p>&quot;What deh hell&#x27;s deh matter wid yeh?&quot; said a voice in the gathered gloom, and Jimmie came forward.  He carried a tin dinner-pail in his hand and under his arm a brown truckman&#x27;s apron done in a bundle. &quot;What deh hell&#x27;s wrong?&quot; he demanded.</p>
+<p>&quot;Come out, all of yehs, come out,&quot; his mother was howling.  &quot;Come ahn an&#x27; I&#x27;ll stamp her damn brains under me feet.&quot;</p>
+<p>&quot;Shet yer face, an&#x27; come home, yeh damned old fool,&quot; roared Jimmie at her.  She strided up to him and twirled her fingers in his face.  Her eyes were darting flames of unreasoning rage and her frame trembled with eagerness for a fight.</p>
+<p>&quot;T&#x27;hell wid yehs!  An&#x27; who deh hell are yehs?  I ain&#x27;t givin&#x27; a snap of me fingers fer yehs,&quot; she bawled at him.  She turned her huge back in tremendous disdain and climbed the stairs to the next floor.</p>
+<p>Jimmie followed, cursing blackly.  At the top of the flight he seized his mother&#x27;s arm and started to drag her toward the door of their room.</p>
+<p>&quot;Come home, damn yeh,&quot; he gritted between his teeth.</p>
+<p>&quot;Take yer hands off me!  Take yer hands off me,&quot; shrieked his mother.</p>
+<p>She raised her arm and whirled her great fist at her son&#x27;s face. Jimmie dodged his head and the blow struck him in the back of the neck. &quot;Damn yeh,&quot; gritted he again.  He threw out his left hand and writhed his fingers about her middle arm.  The mother and the son began to sway and struggle like gladiators.</p>
+<p>&quot;Whoop!&quot; said the Rum Alley tenement house.  The hall filled with interested spectators.</p>
+<p>&quot;Hi, ol&#x27; lady, dat was a dandy!&quot;</p>
+<p>&quot;T&#x27;ree to one on deh red!&quot;</p>
+<p>&quot;Ah, stop yer damn scrappin&#x27;!&quot;</p>
+<p>The door of the Johnson home opened and Maggie looked out.  Jimmie made a supreme cursing effort and hurled his mother into the room.  He quickly followed and closed the door.  The Rum Alley tenement swore disappointedly and retired.</p>
+<p>The mother slowly gathered herself up from the floor.  Her eyes glittered menacingly upon her children.</p>
+<p>&quot;Here, now,&quot; said Jimmie, &quot;we&#x27;ve had enough of dis.  Sit down, an&#x27; don&#x27; make no trouble.&quot;</p>
+<p>He grasped her arm, and twisting it, forced her into a creaking chair.</p>
+<p>&quot;Keep yer hands off me,&quot; roared his mother again.</p>
+<p>&quot;Damn yer ol&#x27; hide,&quot; yelled Jimmie, madly.  Maggie shrieked and ran into the other room.  To her there came the sound of a storm of crashes and curses.  There was a great final thump and Jimmie&#x27;s voice cried: &quot;Dere, damn yeh, stay still.&quot;  Maggie opened the door now, and went warily out.  &quot;Oh, Jimmie.&quot;</p>
+<p>He was leaning against the wall and swearing.  Blood stood upon bruises on his knotty fore-arms where they had scraped against the floor or the walls in the scuffle.  The mother lay screeching on the floor, the tears running down her furrowed face.</p>
+<p>Maggie, standing in the middle of the room, gazed about her.  The usual upheaval of the tables and chairs had taken place.  Crockery was strewn broadcast in fragments.  The stove had been disturbed on its legs, and now leaned idiotically to one side.  A pail had been upset and water spread in all directions.</p>
+<p>The door opened and Pete appeared.  He shrugged his shoulders.  &quot;Oh, Gawd,&quot; he observed.</p>
+<p>He walked over to Maggie and whispered in her ear.  &quot;Ah, what deh hell, Mag?  Come ahn and we&#x27;ll have a hell of a time.&quot;</p>
+<p>The mother in the corner upreared her head and shook her tangled locks.</p>
+<p>&quot;Teh hell wid him and you,&quot; she said, glowering at her daughter in the gloom.  Her eyes seemed to burn balefully.  &quot;Yeh&#x27;ve gone teh deh devil, Mag Johnson, yehs knows yehs have gone teh deh devil.  Yer a disgrace teh yer people, damn yeh.  An&#x27; now, git out an&#x27; go ahn wid dat doe-faced jude of yours.  Go teh hell wid him, damn yeh, an&#x27; a good riddance.  Go teh hell an&#x27; see how yeh likes it.&quot;</p>
+<p>Maggie gazed long at her mother.</p>
+<p>&quot;Go teh hell now, an&#x27; see how yeh likes it.  Git out.  I won&#x27;t have sech as yehs in me house!  Get out, d&#x27;yeh hear!  Damn yeh, git out!&quot;</p>
+<p>The girl began to tremble.</p>
+<p>At this instant Pete came forward.  &quot;Oh, what deh hell, Mag, see,&quot; whispered he softly in her ear.  &quot;Dis all blows over.  See?  Deh ol&#x27; woman &#x27;ill be all right in deh mornin&#x27;.  Come ahn out wid me!  We&#x27;ll have a hell of a time.&quot;</p>
+<p>The woman on the floor cursed.  Jimmie was intent upon his bruised fore-arms.  The girl cast a glance about the room filled with a chaotic mass of debris, and at the red, writhing body of her mother.</p>
+<p>&quot;Go teh hell an&#x27; good riddance.&quot;</p>
+<p>She went.</p>
+<h2 class="chapter" id="c9">Chapter X</h2>
+<p>Jimmie had an idea it wasn&#x27;t common courtesy for a friend to come to one&#x27;s home and ruin one&#x27;s sister.  But he was not sure how much Pete knew about the rules of politeness.</p>
+<p>The following night he returned home from work at rather a late hour in the evening.  In passing through the halls he came upon the gnarled and leathery old woman who possessed the music box.  She was grinning in the dim light that drifted through dust-stained panes.  She beckoned to him with a smudged forefinger.</p>
+<p>&quot;Ah, Jimmie, what do yehs t&#x27;ink I got onto las&#x27; night.  It was deh funnies&#x27; t&#x27;ing I ever saw,&quot; she cried, coming close to him and leering. She was trembling with eagerness to tell her tale.  &quot;I was by me door las&#x27; night when yer sister and her jude feller came in late, oh, very late.  An&#x27; she, the dear, she was a-cryin&#x27; as if her heart would break, she was.  It was deh funnies&#x27; t&#x27;ing I ever saw.  An&#x27; right out here by me door she asked him did he love her, did he.  An&#x27; she was a-cryin&#x27; as if her heart would break, poor t&#x27;ing.  An&#x27; him, I could see by deh way what he said it dat she had been askin&#x27; orften, he says: &#x27;Oh, hell, yes,&#x27; he says, says he, &#x27;Oh, hell, yes.&#x27;&quot;</p>
+<p>Storm-clouds swept over Jimmie&#x27;s face, but he turned from the leathery old woman and plodded on up-stairs.</p>
+<p>&quot;Oh, hell, yes,&quot; called she after him.  She laughed a laugh that was like a prophetic croak.  &quot;&#x27;Oh, hell, yes,&#x27; he says, says he, &#x27;Oh, hell, yes.&#x27;&quot;</p>
+<p>There was no one in at home.  The rooms showed that attempts had been made at tidying them.  Parts of the wreckage of the day before had been repaired by an unskilful hand.  A chair or two and the table, stood uncertainly upon legs.  The floor had been newly swept.  Too, the blue ribbons had been restored to the curtains, and the lambrequin, with its immense sheaves of yellow wheat and red roses of equal size, had been returned, in a worn and sorry state, to its position at the mantel. Maggie&#x27;s jacket and hat were gone from the nail behind the door.</p>
+<p>Jimmie walked to the window and began to look through the blurred glass.  It occurred to him to vaguely wonder, for an instant, if some of the women of his acquaintance had brothers.</p>
+<p>Suddenly, however, he began to swear.</p>
+<p>&quot;But he was me frien&#x27;!  I brought &#x27;im here!  Dat&#x27;s deh hell of it!&quot;</p>
+<p>He fumed about the room, his anger gradually rising to the furious pitch.</p>
+<p>&quot;I&#x27;ll kill deh jay!  Dat&#x27;s what I&#x27;ll do!  I&#x27;ll kill deh jay!&quot;</p>
+<p>He clutched his hat and sprang toward the door.  But it opened and his mother&#x27;s great form blocked the passage.</p>
+<p>&quot;What deh hell&#x27;s deh matter wid yeh?&quot; exclaimed she, coming into the rooms.</p>
+<p>Jimmie gave vent to a sardonic curse and then laughed heavily.</p>
+<p>&quot;Well, Maggie&#x27;s gone teh deh devil!  Dat&#x27;s what!  See?&quot;</p>
+<p>&quot;Eh?&quot; said his mother.</p>
+<p>&quot;Maggie&#x27;s gone teh deh devil!  Are yehs deaf?&quot; roared Jimmie, impatiently.</p>
+<p>&quot;Deh hell she has,&quot; murmured the mother, astounded.</p>
+<p>Jimmie grunted, and then began to stare out at the window.  His mother sat down in a chair, but a moment later sprang erect and delivered a maddened whirl of oaths.  Her son turned to look at her as she reeled and swayed in the middle of the room, her fierce face convulsed with passion, her blotched arms raised high in imprecation.</p>
+<p>&quot;May Gawd curse her forever,&quot; she shrieked.  &quot;May she eat nothin&#x27; but stones and deh dirt in deh street.  May she sleep in deh gutter an&#x27; never see deh sun shine agin.  Deh damn--&quot;</p>
+<p>&quot;Here, now,&quot; said her son.  &quot;Take a drop on yourself.&quot;</p>
+<p>The mother raised lamenting eyes to the ceiling.</p>
+<p>&quot;She&#x27;s deh devil&#x27;s own chil&#x27;, Jimmie,&quot; she whispered.  &quot;Ah, who would t&#x27;ink such a bad girl could grow up in our fambly, Jimmie, me son. Many deh hour I&#x27;ve spent in talk wid dat girl an&#x27; tol&#x27; her if she ever went on deh streets I&#x27;d see her damned.  An&#x27; after all her bringin&#x27; up an&#x27; what I tol&#x27; her and talked wid her, she goes teh deh bad, like a duck teh water.&quot;</p>
+<p>The tears rolled down her furrowed face.  Her hands trembled.</p>
+<p>&quot;An&#x27; den when dat Sadie MacMallister next door to us was sent teh deh devil by dat feller what worked in deh soap-factory, didn&#x27;t I tell our Mag dat if she--&quot;</p>
+<p>&quot;Ah, dat&#x27;s annuder story,&quot; interrupted the brother.  &quot;Of course, dat Sadie was nice an&#x27; all dat--but--see--it ain&#x27;t dessame as if--well, Maggie was diff&#x27;ent--see--she was diff&#x27;ent.&quot;</p>
+<p>He was trying to formulate a theory that he had always unconsciously held, that all sisters, excepting his own, could advisedly be ruined.</p>
+<p>He suddenly broke out again.  &quot;I&#x27;ll go t&#x27;ump hell outa deh mug what did her deh harm.  I&#x27;ll kill &#x27;im!  He t&#x27;inks he kin scrap, but when he gits me a-chasin&#x27; &#x27;im he&#x27;ll fin&#x27; out where he&#x27;s wrong, deh damned duffer. I&#x27;ll wipe up deh street wid &#x27;im.&quot;</p>
+<p>In a fury he plunged out of the doorway.  As he vanished the mother raised her head and lifted both hands, entreating.</p>
+<p>&quot;May Gawd curse her forever,&quot; she cried.</p>
+<p>In the darkness of the hallway Jimmie discerned a knot of women talking volubly.  When he strode by they paid no attention to him.</p>
+<p>&quot;She allus was a bold thing,&quot; he heard one of them cry in an eager voice.  &quot;Dere wasn&#x27;t a feller come teh deh house but she&#x27;d try teh mash &#x27;im.  My Annie says deh shameless t&#x27;ing tried teh ketch her feller, her own feller, what we useter know his fader.&quot;</p>
+<p>&quot;I could a&#x27; tol&#x27; yehs dis two years ago,&quot; said a woman, in a key of triumph.  &quot;Yessir, it was over two years ago dat I says teh my ol&#x27; man, I says, &#x27;Dat Johnson girl ain&#x27;t straight,&#x27; I says.  &#x27;Oh, hell,&#x27; he says.  &#x27;Oh, hell.&#x27;  &#x27;Dat&#x27;s all right,&#x27; I says, &#x27;but I know what I knows,&#x27; I says, &#x27;an&#x27; it &#x27;ill come out later.  You wait an&#x27; see,&#x27; I says, &#x27;you see.&#x27;&quot;</p>
+<p>&quot;Anybody what had eyes could see dat dere was somethin&#x27; wrong wid dat girl.  I didn&#x27;t like her actions.&quot;</p>
+<p>On the street Jimmie met a friend.  &quot;What deh hell?&quot; asked the latter.</p>
+<p>Jimmie explained.  &quot;An&#x27; I&#x27;ll t&#x27;ump &#x27;im till he can&#x27;t stand.&quot;</p>
+<p>&quot;Oh, what deh hell,&quot; said the friend.  &quot;What&#x27;s deh use!  Yeh&#x27;ll git pulled in!  Everybody &#x27;ill be onto it!  An&#x27; ten plunks!  Gee!&quot;</p>
+<p>Jimmie was determined.  &quot;He t&#x27;inks he kin scrap, but he&#x27;ll fin&#x27; out diff&#x27;ent.&quot;</p>
+<p>&quot;Gee,&quot; remonstrated the friend.  &quot;What deh hell?&quot;</p>
+<h2 class="chapter" id="c10">Chapter XI</h2>
+<p>On a corner a glass-fronted building shed a yellow glare upon the pavements.  The open mouth of a saloon called seductively to passengers to enter and annihilate sorrow or create rage.</p>
+<p>The interior of the place was papered in olive and bronze tints of imitation leather.  A shining bar of counterfeit massiveness extended down the side of the room.  Behind it a great mahogany-appearing sideboard reached the ceiling.  Upon its shelves rested pyramids of shimmering glasses that were never disturbed.  Mirrors set in the face of the sideboard multiplied them.  Lemons, oranges and paper napkins, arranged with mathematical precision, sat among the glasses.  Many-hued decanters of liquor perched at regular intervals on the lower shelves. A nickel-plated cash register occupied a position in the exact centre of the general effect.  The elementary senses of it all seemed to be opulence and geometrical accuracy.</p>
+<p>Across from the bar a smaller counter held a collection of plates upon which swarmed frayed fragments of crackers, slices of boiled ham, dishevelled bits of cheese, and pickles swimming in vinegar.  An odor of grasping, begrimed hands and munching mouths pervaded.</p>
+<p>Pete, in a white jacket, was behind the bar bending expectantly toward a quiet stranger.  &quot;A beeh,&quot; said the man.  Pete drew a foam-topped glassful and set it dripping upon the bar.</p>
+<p>At this moment the light bamboo doors at the entrance swung open and crashed against the siding.  Jimmie and a companion entered.  They swaggered unsteadily but belligerently toward the bar and looked at Pete with bleared and blinking eyes.</p>
+<p>&quot;Gin,&quot; said Jimmie.</p>
+<p>&quot;Gin,&quot; said the companion.</p>
+<p>Pete slid a bottle and two glasses along the bar.  He bended his head sideways as he assiduously polished away with a napkin at the gleaming wood.  He had a look of watchfulness upon his features.</p>
+<p>Jimmie and his companion kept their eyes upon the bartender and conversed loudly in tones of contempt.</p>
+<p>&quot;He&#x27;s a dindy masher, ain&#x27;t he, by Gawd?&quot; laughed Jimmie.</p>
+<p>&quot;Oh, hell, yes,&quot; said the companion, sneering widely.  &quot;He&#x27;s great, he is.  Git onto deh mug on deh blokie.  Dat&#x27;s enough to make a feller turn hand-springs in &#x27;is sleep.&quot;</p>
+<p>The quiet stranger moved himself and his glass a trifle further away and maintained an attitude of oblivion.</p>
+<p>&quot;Gee! ain&#x27;t he hot stuff!&quot;</p>
+<p>&quot;Git onto his shape!  Great Gawd!&quot;</p>
+<p>&quot;Hey,&quot; cried Jimmie, in tones of command.  Pete came along slowly, with a sullen dropping of the under lip.</p>
+<p>&quot;Well,&quot; he growled, &quot;what&#x27;s eatin&#x27; yehs?&quot;</p>
+<p>&quot;Gin,&quot; said Jimmie.</p>
+<p>&quot;Gin,&quot; said the companion.</p>
+<p>As Pete confronted them with the bottle and the glasses, they laughed in his face.  Jimmie&#x27;s companion, evidently overcome with merriment, pointed a grimy forefinger in Pete&#x27;s direction.</p>
+<p>&quot;Say, Jimmie,&quot; demanded he, &quot;what deh hell is dat behind deh bar?&quot;</p>
+<p>&quot;Damned if I knows,&quot; replied Jimmie.  They laughed loudly.  Pete put down a bottle with a bang and turned a formidable face toward them.  He disclosed his teeth and his shoulders heaved restlessly.</p>
+<p>&quot;You fellers can&#x27;t guy me,&quot; he said.  &quot;Drink yer stuff an&#x27; git out an&#x27; don&#x27; make no trouble.&quot;</p>
+<p>Instantly the laughter faded from the faces of the two men and expressions of offended dignity immediately came.</p>
+<p>&quot;Who deh hell has said anyt&#x27;ing teh you,&quot; cried they in the same breath.</p>
+<p>The quiet stranger looked at the door calculatingly.</p>
+<p>&quot;Ah, come off,&quot; said Pete to the two men.  &quot;Don&#x27;t pick me up for no jay.  Drink yer rum an&#x27; git out an&#x27; don&#x27; make no trouble.&quot;</p>
+<p>&quot;Oh, deh hell,&quot; airily cried Jimmie.</p>
+<p>&quot;Oh, deh hell,&quot; airily repeated his companion.</p>
+<p>&quot;We goes when we git ready!  See!&quot; continued Jimmie.</p>
+<p>&quot;Well,&quot; said Pete in a threatening voice, &quot;don&#x27; make no trouble.&quot;</p>
+<p>Jimmie suddenly leaned forward with his head on one side.  He snarled like a wild animal.</p>
+<p>&quot;Well, what if we does?  See?&quot; said he.</p>
+<p>Dark blood flushed into Pete&#x27;s face, and he shot a lurid glance at Jimmie.</p>
+<p>&quot;Well, den we&#x27;ll see whose deh bes&#x27; man, you or me,&quot; he said.</p>
+<p>The quiet stranger moved modestly toward the door.</p>
+<p>Jimmie began to swell with valor.</p>
+<p>&quot;Don&#x27; pick me up fer no tenderfoot.  When yeh tackles me yeh tackles one of deh bes&#x27; men in deh city.  See?  I&#x27;m a scrapper, I am.  Ain&#x27;t dat right, Billie?&quot;</p>
+<p>&quot;Sure, Mike,&quot; responded his companion in tones of conviction.</p>
+<p>&quot;Oh, hell,&quot; said Pete, easily.  &quot;Go fall on yerself.&quot;</p>
+<p>The two men again began to laugh.</p>
+<p>&quot;What deh hell is dat talkin&#x27;?&quot; cried the companion.</p>
+<p>&quot;Damned if I knows,&quot; replied Jimmie with exaggerated contempt.</p>
+<p>Pete made a furious gesture.  &quot;Git outa here now, an&#x27; don&#x27; make no trouble.  See?  Youse fellers er lookin&#x27; fer a scrap an&#x27; it&#x27;s damn likely yeh&#x27;ll fin&#x27; one if yeh keeps on shootin&#x27; off yer mout&#x27;s.  I know yehs!  See?  I kin lick better men dan yehs ever saw in yer lifes. Dat&#x27;s right!  See?  Don&#x27; pick me up fer no stuff er yeh might be jolted out in deh street before yeh knows where yeh is.  When I comes from behind dis bar, I t&#x27;rows yehs bote inteh deh street.  See?&quot;</p>
+<p>&quot;Oh, hell,&quot; cried the two men in chorus.</p>
+<p>The glare of a panther came into Pete&#x27;s eyes.  &quot;Dat&#x27;s what I said! Unnerstan&#x27;?&quot;</p>
+<p>He came through a passage at the end of the bar and swelled down upon the two men.  They stepped promptly forward and crowded close to him.</p>
+<p>They bristled like three roosters.  They moved their heads pugnaciously and kept their shoulders braced.  The nervous muscles about each mouth twitched with a forced smile of mockery.</p>
+<p>&quot;Well, what deh hell yer goin&#x27; teh do?&quot; gritted Jimmie.</p>
+<p>Pete stepped warily back, waving his hands before him to keep the men from coming too near.</p>
+<p>&quot;Well, what deh hell yer goin&#x27; teh do?&quot; repeated Jimmie&#x27;s ally.  They kept close to him, taunting and leering.  They strove to make him attempt the initial blow.</p>
+<p>&quot;Keep back, now!  Don&#x27; crowd me,&quot; ominously said Pete.</p>
+<p>Again they chorused in contempt.  &quot;Oh, hell!&quot;</p>
+<p>In a small, tossing group, the three men edged for positions like frigates contemplating battle.</p>
+<p>&quot;Well, why deh hell don&#x27; yeh try teh t&#x27;row us out?&quot; cried Jimmie and his ally with copious sneers.</p>
+<p>The bravery of bull-dogs sat upon the faces of the men.  Their clenched fists moved like eager weapons.</p>
+<p>The allied two jostled the bartender&#x27;s elbows, glaring at him with feverish eyes and forcing him toward the wall.</p>
+<p>Suddenly Pete swore redly.  The flash of action gleamed from his eyes. He threw back his arm and aimed a tremendous, lightning-like blow at Jimmie&#x27;s face.  His foot swung a step forward and the weight of his body was behind his fist.  Jimmie ducked his head, Bowery-like, with the quickness of a cat.  The fierce, answering blows of him and his ally crushed on Pete&#x27;s bowed head.</p>
+<p>The quiet stranger vanished.</p>
+<p>The arms of the combatants whirled in the air like flails.  The faces of the men, at first flushed to flame-colored anger, now began to fade to the pallor of warriors in the blood and heat of a battle.  Their lips curled back and stretched tightly over the gums in ghoul-like grins.  Through their white, gripped teeth struggled hoarse whisperings of oaths.  Their eyes glittered with murderous fire.</p>
+<p>Each head was huddled between its owner&#x27;s shoulders, and arms were swinging with marvelous rapidity.  Feet scraped to and fro with a loud scratching sound upon the sanded floor.  Blows left crimson blotches upon pale skin.  The curses of the first quarter minute of the fight died away.  The breaths of the fighters came wheezingly from their lips and the three chests were straining and heaving.  Pete at intervals gave vent to low, labored hisses, that sounded like a desire to kill. Jimmie&#x27;s ally gibbered at times like a wounded maniac.  Jimmie was silent, fighting with the face of a sacrificial priest.  The rage of fear shone in all their eyes and their blood-colored fists swirled.</p>
+<p>At a tottering moment a blow from Pete&#x27;s hand struck the ally and he crashed to the floor.  He wriggled instantly to his feet and grasping the quiet stranger&#x27;s beer glass from the bar, hurled it at Pete&#x27;s head.</p>
+<p>High on the wall it burst like a bomb, shivering fragments flying in all directions.  Then missiles came to every man&#x27;s hand.  The place had heretofore appeared free of things to throw, but suddenly glass and bottles went singing through the air.  They were thrown point blank at bobbing heads.  The pyramid of shimmering glasses, that had never been disturbed, changed to cascades as heavy bottles were flung into them. Mirrors splintered to nothing.</p>
+<p>The three frothing creatures on the floor buried themselves in a frenzy for blood.  There followed in the wake of missiles and fists some unknown prayers, perhaps for death.</p>
+<p>The quiet stranger had sprawled very pyrotechnically out on the sidewalk.  A laugh ran up and down the avenue for the half of a block.</p>
+<p>&quot;Dey&#x27;ve trowed a bloke inteh deh street.&quot;</p>
+<p>People heard the sound of breaking glass and shuffling feet within the saloon and came running.  A small group, bending down to look under the bamboo doors, watching the fall of glass, and three pairs of violent legs, changed in a moment to a crowd.</p>
+<p>A policeman came charging down the sidewalk and bounced through the doors into the saloon.  The crowd bended and surged in absorbing anxiety to see.</p>
+<p>Jimmie caught first sight of the on-coming interruption.  On his feet he had the same regard for a policeman that, when on his truck, he had for a fire engine.  He howled and ran for the side door.</p>
+<p>The officer made a terrific advance, club in hand.  One comprehensive sweep of the long night stick threw the ally to the floor and forced Pete to a corner.  With his disengaged hand he made a furious effort at Jimmie&#x27;s coat-tails.  Then he regained his balance and paused.</p>
+<p>&quot;Well, well, you are a pair of pictures.  What in hell yeh been up to?&quot;</p>
+<p>Jimmie, with his face drenched in blood, escaped up a side street, pursued a short distance by some of the more law-loving, or excited individuals of the crowd.</p>
+<p>Later, from a corner safely dark, he saw the policeman, the ally and the bartender emerge from the saloon.  Pete locked the doors and then followed up the avenue in the rear of the crowd-encompassed policeman and his charge.</p>
+<p>On first thoughts Jimmie, with his heart throbbing at battle heat, started to go desperately to the rescue of his friend, but he halted.</p>
+<p>&quot;Ah, what deh hell?&quot; he demanded of himself.</p>
+<h2 class="chapter" id="c11">Chapter XII</h2>
+<p>In a hall of irregular shape sat Pete and Maggie drinking beer.  A submissive orchestra dictated to by a spectacled man with frowsy hair and a dress suit, industriously followed the bobs of his head and the waves of his baton.  A ballad singer, in a dress of flaming scarlet, sang in the inevitable voice of brass.  When she vanished, men seated at the tables near the front applauded loudly, pounding the polished wood with their beer glasses.  She returned attired in less gown, and sang again.  She received another enthusiastic encore.  She reappeared in still less gown and danced.  The deafening rumble of glasses and clapping of hands that followed her exit indicated an overwhelming desire to have her come on for the fourth time, but the curiosity of the audience was not gratified.</p>
+<p>Maggie was pale.  From her eyes had been plucked all look of self-reliance.  She leaned with a dependent air toward her companion. She was timid, as if fearing his anger or displeasure.  She seemed to beseech tenderness of him.</p>
+<p>Pete&#x27;s air of distinguished valor had grown upon him until it threatened stupendous dimensions.  He was infinitely gracious to the girl.  It was apparent to her that his condescension was a marvel.</p>
+<p>He could appear to strut even while sitting still and he showed that he was a lion of lordly characteristics by the air with which he spat.</p>
+<p>With Maggie gazing at him wonderingly, he took pride in commanding the waiters who were, however, indifferent or deaf.</p>
+<p>&quot;Hi, you, git a russle on yehs!  What deh hell yehs lookin&#x27; at?  Two more beehs, d&#x27;yeh hear?&quot;</p>
+<p>He leaned back and critically regarded the person of a girl with a straw-colored wig who upon the stage was flinging her heels in somewhat awkward imitation of a well-known danseuse.</p>
+<p>At times Maggie told Pete long confidential tales of her former home life, dwelling upon the escapades of the other members of the family and the difficulties she had to combat in order to obtain a degree of comfort.  He responded in tones of philanthropy.  He pressed her arm with an air of reassuring proprietorship.</p>
+<p>&quot;Dey was damn jays,&quot; he said, denouncing the mother and brother.</p>
+<p>The sound of the music which, by the efforts of the frowsy-headed leader, drifted to her ears through the smoke-filled atmosphere, made the girl dream.  She thought of her former Rum Alley environment and turned to regard Pete&#x27;s strong protecting fists.  She thought of the collar and cuff manufactory and the eternal moan of the proprietor: &quot;What een hell do you sink I pie fife dolla a week for?  Play?  No, py damn.&quot;  She contemplated Pete&#x27;s man-subduing eyes and noted that wealth and prosperity was indicated by his clothes.  She imagined a future, rose-tinted, because of its distance from all that she previously had experienced.</p>
+<p>As to the present she perceived only vague reasons to be miserable. Her life was Pete&#x27;s and she considered him worthy of the charge.  She would be disturbed by no particular apprehensions, so long as Pete adored her as he now said he did.  She did not feel like a bad woman. To her knowledge she had never seen any better.</p>
+<p>At times men at other tables regarded the girl furtively.  Pete, aware of it, nodded at her and grinned.  He felt proud.</p>
+<p>&quot;Mag, yer a bloomin&#x27; good-looker,&quot; he remarked, studying her face through the haze.  The men made Maggie fear, but she blushed at Pete&#x27;s words as it became apparent to her that she was the apple of his eye.</p>
+<p>Grey-headed men, wonderfully pathetic in their dissipation, stared at her through clouds.  Smooth-cheeked boys, some of them with faces of stone and mouths of sin, not nearly so pathetic as the grey heads, tried to find the girl&#x27;s eyes in the smoke wreaths.  Maggie considered she was not what they thought her.  She confined her glances to Pete and the stage.</p>
+<p>The orchestra played negro melodies and a versatile drummer pounded, whacked, clattered and scratched on a dozen machines to make noise.</p>
+<p>Those glances of the men, shot at Maggie from under half-closed lids, made her tremble.  She thought them all to be worse men than Pete.</p>
+<p>&quot;Come, let&#x27;s go,&quot; she said.</p>
+<p>As they went out Maggie perceived two women seated at a table with some men.  They were painted and their cheeks had lost their roundness.  As she passed them the girl, with a shrinking movement, drew back her skirts.</p>
+<h2 class="chapter" id="c12">Chapter XIII</h2>
+<p>Jimmie did not return home for a number of days after the fight with Pete in the saloon.  When he did, he approached with extreme caution.</p>
+<p>He found his mother raving.  Maggie had not returned home.  The parent continually wondered how her daughter could come to such a pass.  She had never considered Maggie as a pearl dropped unstained into Rum Alley from Heaven, but she could not conceive how it was possible for her daughter to fall so low as to bring disgrace upon her family.  She was terrific in denunciation of the girl&#x27;s wickedness.</p>
+<p>The fact that the neighbors talked of it, maddened her.  When women came in, and in the course of their conversation casually asked, &quot;Where&#x27;s Maggie dese days?&quot; the mother shook her fuzzy head at them and appalled them with curses.  Cunning hints inviting confidence she rebuffed with violence.</p>
+<p>&quot;An&#x27; wid all deh bringin&#x27; up she had, how could she?&quot; moaningly she asked of her son.  &quot;Wid all deh talkin&#x27; wid her I did an&#x27; deh t&#x27;ings I tol&#x27; her to remember?  When a girl is bringed up deh way I bringed up Maggie, how kin she go teh deh devil?&quot;</p>
+<p>Jimmie was transfixed by these questions.  He could not conceive how under the circumstances his mother&#x27;s daughter and his sister could have been so wicked.</p>
+<p>His mother took a drink from a squdgy bottle that sat on the table. She continued her lament.</p>
+<p>&quot;She had a bad heart, dat girl did, Jimmie.  She was wicked teh deh heart an&#x27; we never knowed it.&quot;</p>
+<p>Jimmie nodded, admitting the fact.</p>
+<p>&quot;We lived in deh same house wid her an&#x27; I brought her up an&#x27; we never knowed how bad she was.&quot;</p>
+<p>Jimmie nodded again.</p>
+<p>&quot;Wid a home like dis an&#x27; a mudder like me, she went teh deh bad,&quot; cried the mother, raising her eyes.</p>
+<p>One day, Jimmie came home, sat down in a chair and began to wriggle about with a new and strange nervousness.  At last he spoke shamefacedly.</p>
+<p>&quot;Well, look-a-here, dis t&#x27;ing queers us!  See?  We&#x27;re queered!  An&#x27; maybe it &#x27;ud be better if I--well, I t&#x27;ink I kin look &#x27;er up an&#x27;--maybe it &#x27;ud be better if I fetched her home an&#x27;--&quot;</p>
+<p>The mother started from her chair and broke forth into a storm of passionate anger.</p>
+<p>&quot;What!  Let &#x27;er come an&#x27; sleep under deh same roof wid her mudder agin! Oh, yes, I will, won&#x27;t I?  Sure?  Shame on yehs, Jimmie Johnson, for sayin&#x27; such a t&#x27;ing teh yer own mudder--teh yer own mudder!  Little did I t&#x27;ink when yehs was a babby playin&#x27; about me feet dat ye&#x27;d grow up teh say sech a t&#x27;ing teh yer mudder--yer own mudder.  I never taut--&quot;</p>
+<p>Sobs choked her and interrupted her reproaches.</p>
+<p>&quot;Dere ain&#x27;t nottin&#x27; teh raise sech hell about,&quot; said Jimmie.  &quot;I on&#x27;y says it &#x27;ud be better if we keep dis t&#x27;ing dark, see?  It queers us! See?&quot;</p>
+<p>His mother laughed a laugh that seemed to ring through the city and be echoed and re-echoed by countless other laughs.  &quot;Oh, yes, I will, won&#x27;t I!  Sure!&quot;</p>
+<p>&quot;Well, yeh must take me fer a damn fool,&quot; said Jimmie, indignant at his mother for mocking him.  &quot;I didn&#x27;t say we&#x27;d make &#x27;er inteh a little tin angel, ner nottin&#x27;, but deh way it is now she can queer us!  Don&#x27; che see?&quot;</p>
+<p>&quot;Aye, she&#x27;ll git tired of deh life atter a while an&#x27; den she&#x27;ll wanna be a-comin&#x27; home, won&#x27; she, deh beast!  I&#x27;ll let &#x27;er in den, won&#x27; I?&quot;</p>
+<p>&quot;Well, I didn&#x27; mean none of dis prod&#x27;gal bus&#x27;ness anyway,&quot; explained Jimmie.</p>
+<p>&quot;It wasn&#x27;t no prod&#x27;gal dauter, yeh damn fool,&quot; said the mother.  &quot;It was prod&#x27;gal son, anyhow.&quot;</p>
+<p>&quot;I know dat,&quot; said Jimmie.</p>
+<p>For a time they sat in silence.  The mother&#x27;s eyes gloated on a scene her imagination could call before her.  Her lips were set in a vindictive smile.</p>
+<p>&quot;Aye, she&#x27;ll cry, won&#x27; she, an&#x27; carry on, an&#x27; tell how Pete, or some odder feller, beats &#x27;er an&#x27; she&#x27;ll say she&#x27;s sorry an&#x27; all dat an&#x27; she ain&#x27;t happy, she ain&#x27;t, an&#x27; she wants to come home agin, she does.&quot;</p>
+<p>With grim humor, the mother imitated the possible wailing notes of the daughter&#x27;s voice.</p>
+<p>&quot;Den I&#x27;ll take &#x27;er in, won&#x27;t I, deh beast.  She kin cry &#x27;er two eyes out on deh stones of deh street before I&#x27;ll dirty deh place wid her. She abused an&#x27; ill-treated her own mudder--her own mudder what loved her an&#x27; she&#x27;ll never git anodder chance dis side of hell.&quot;</p>
+<p>Jimmie thought he had a great idea of women&#x27;s frailty, but he could not understand why any of his kin should be victims.</p>
+<p>&quot;Damn her,&quot; he fervidly said.</p>
+<p>Again he wondered vaguely if some of the women of his acquaintance had brothers.  Nevertheless, his mind did not for an instant confuse himself with those brothers nor his sister with theirs.  After the mother had, with great difficulty, suppressed the neighbors, she went among them and proclaimed her grief.  &quot;May Gawd forgive dat girl,&quot; was her continual cry.  To attentive ears she recited the whole length and breadth of her woes.</p>
+<p>&quot;I bringed &#x27;er up deh way a dauter oughta be bringed up an&#x27; dis is how she served me!  She went teh deh devil deh first chance she got!  May Gawd forgive her.&quot;</p>
+<p>When arrested for drunkenness she used the story of her daughter&#x27;s downfall with telling effect upon the police justices.  Finally one of them said to her, peering down over his spectacles: &quot;Mary, the records of this and other courts show that you are the mother of forty-two daughters who have been ruined.  The case is unparalleled in the annals of this court, and this court thinks--&quot;</p>
+<p>The mother went through life shedding large tears of sorrow.  Her red face was a picture of agony.</p>
+<p>Of course Jimmie publicly damned his sister that he might appear on a higher social plane.  But, arguing with himself, stumbling about in ways that he knew not, he, once, almost came to a conclusion that his sister would have been more firmly good had she better known why. However, he felt that he could not hold such a view.  He threw it hastily aside.</p>
+<h2 class="chapter" id="c13">Chapter XIV</h2>
+<p>In a hilarious hall there were twenty-eight tables and twenty-eight women and a crowd of smoking men.  Valiant noise was made on a stage at the end of the hall by an orchestra composed of men who looked as if they had just happened in.  Soiled waiters ran to and fro, swooping down like hawks on the unwary in the throng; clattering along the aisles with trays covered with glasses; stumbling over women&#x27;s skirts and charging two prices for everything but beer, all with a swiftness that blurred the view of the cocoanut palms and dusty monstrosities painted upon the walls of the room.  A bouncer, with an immense load of business upon his hands, plunged about in the crowd, dragging bashful strangers to prominent chairs, ordering waiters here and there and quarreling furiously with men who wanted to sing with the orchestra.</p>
+<p>The usual smoke cloud was present, but so dense that heads and arms seemed entangled in it.  The rumble of conversation was replaced by a roar.  Plenteous oaths heaved through the air.  The room rang with the shrill voices of women bubbling o&#x27;er with drink-laughter.  The chief element in the music of the orchestra was speed.  The musicians played in intent fury.  A woman was singing and smiling upon the stage, but no one took notice of her.  The rate at which the piano, cornet and violins were going, seemed to impart wildness to the half-drunken crowd.  Beer glasses were emptied at a gulp and conversation became a rapid chatter.  The smoke eddied and swirled like a shadowy river hurrying toward some unseen falls.  Pete and Maggie entered the hall and took chairs at a table near the door.  The woman who was seated there made an attempt to occupy Pete&#x27;s attention and, failing, went away.</p>
+<p>Three weeks had passed since the girl had left home.  The air of spaniel-like dependence had been magnified and showed its direct effect in the peculiar off-handedness and ease of Pete&#x27;s ways toward her.</p>
+<p>She followed Pete&#x27;s eyes with hers, anticipating with smiles gracious looks from him.</p>
+<p>A woman of brilliance and audacity, accompanied by a mere boy, came into the place and took seats near them.</p>
+<p>At once Pete sprang to his feet, his face beaming with glad surprise.</p>
+<p>&quot;By Gawd, there&#x27;s Nellie,&quot; he cried.</p>
+<p>He went over to the table and held out an eager hand to the woman.</p>
+<p>&quot;Why, hello, Pete, me boy, how are you,&quot; said she, giving him her fingers.</p>
+<p>Maggie took instant note of the woman.  She perceived that her black dress fitted her to perfection.  Her linen collar and cuffs were spotless.  Tan gloves were stretched over her well-shaped hands.  A hat of a prevailing fashion perched jauntily upon her dark hair.  She wore no jewelry and was painted with no apparent paint.  She looked clear-eyed through the stares of the men.</p>
+<p>&quot;Sit down, and call your lady-friend over,&quot; she said cordially to Pete. At his beckoning Maggie came and sat between Pete and the mere boy.</p>
+<p>&quot;I thought yeh were gone away fer good,&quot; began Pete, at once.  &quot;When did yeh git back?  How did dat Buff&#x27;lo bus&#x27;ness turn out?&quot;</p>
+<p>The woman shrugged her shoulders.  &quot;Well, he didn&#x27;t have as many stamps as he tried to make out, so I shook him, that&#x27;s all.&quot;</p>
+<p>&quot;Well, I&#x27;m glad teh see yehs back in deh city,&quot; said Pete, with awkward gallantry.</p>
+<p>He and the woman entered into a long conversation, exchanging reminiscences of days together.  Maggie sat still, unable to formulate an intelligent sentence upon the conversation and painfully aware of it.</p>
+<p>She saw Pete&#x27;s eyes sparkle as he gazed upon the handsome stranger.  He listened smilingly to all she said.  The woman was familiar with all his affairs, asked him about mutual friends, and knew the amount of his salary.</p>
+<p>She paid no attention to Maggie, looking toward her once or twice and apparently seeing the wall beyond.</p>
+<p>The mere boy was sulky.  In the beginning he had welcomed with acclamations the additions.</p>
+<p>&quot;Let&#x27;s all have a drink!  What&#x27;ll you take, Nell?  And you, Miss what&#x27;s-your-name.  Have a drink, Mr. -----, you, I mean.&quot;</p>
+<p>He had shown a sprightly desire to do the talking for the company and tell all about his family.  In a loud voice he declaimed on various topics.  He assumed a patronizing air toward Pete.  As Maggie was silent, he paid no attention to her.  He made a great show of lavishing wealth upon the woman of brilliance and audacity.</p>
+<p>&quot;Do keep still, Freddie!  You gibber like an ape, dear,&quot; said the woman to him.  She turned away and devoted her attention to Pete.</p>
+<p>&quot;We&#x27;ll have many a good time together again, eh?&quot;</p>
+<p>&quot;Sure, Mike,&quot; said Pete, enthusiastic at once.</p>
+<p>&quot;Say,&quot; whispered she, leaning forward, &quot;let&#x27;s go over to Billie&#x27;s and have a heluva time.&quot;</p>
+<p>&quot;Well, it&#x27;s dis way!  See?&quot; said Pete.  &quot;I got dis lady frien&#x27; here.&quot;</p>
+<p>&quot;Oh, t&#x27;hell with her,&quot; argued the woman.</p>
+<p>Pete appeared disturbed.</p>
+<p>&quot;All right,&quot; said she, nodding her head at him.  &quot;All right for you! We&#x27;ll see the next time you ask me to go anywheres with you.&quot;</p>
+<p>Pete squirmed.</p>
+<p>&quot;Say,&quot; he said, beseechingly, &quot;come wid me a minit an&#x27; I&#x27;ll tell yer why.&quot;</p>
+<p>The woman waved her hand.</p>
+<p>&quot;Oh, that&#x27;s all right, you needn&#x27;t explain, you know.  You wouldn&#x27;t come merely because you wouldn&#x27;t come, that&#x27;s all there is of it.&quot;</p>
+<p>To Pete&#x27;s visible distress she turned to the mere boy, bringing him speedily from a terrific rage.  He had been debating whether it would be the part of a man to pick a quarrel with Pete, or would he be justified in striking him savagely with his beer glass without warning. But he recovered himself when the woman turned to renew her smilings. He beamed upon her with an expression that was somewhat tipsy and inexpressibly tender.</p>
+<p>&quot;Say, shake that Bowery jay,&quot; requested he, in a loud whisper.</p>
+<p>&quot;Freddie, you are so droll,&quot; she replied.</p>
+<p>Pete reached forward and touched the woman on the arm.</p>
+<p>&quot;Come out a minit while I tells yeh why I can&#x27;t go wid yer.  Yer doin&#x27; me dirt, Nell!  I never taut ye&#x27;d do me dirt, Nell.  Come on, will yer?&quot;  He spoke in tones of injury.</p>
+<p>&quot;Why, I don&#x27;t see why I should be interested in your explanations,&quot; said the woman, with a coldness that seemed to reduce Pete to a pulp.</p>
+<p>His eyes pleaded with her.  &quot;Come out a minit while I tells yeh.&quot;</p>
+<p>The woman nodded slightly at Maggie and the mere boy, &quot;&#x27;Scuse me.&quot;</p>
+<p>The mere boy interrupted his loving smile and turned a shrivelling glare upon Pete.  His boyish countenance flushed and he spoke, in a whine, to the woman:</p>
+<p>&quot;Oh, I say, Nellie, this ain&#x27;t a square deal, you know.  You aren&#x27;t goin&#x27; to leave me and go off with that duffer, are you?  I should think--&quot;</p>
+<p>&quot;Why, you dear boy, of course I&#x27;m not,&quot; cried the woman, affectionately.  She bended over and whispered in his ear.  He smiled again and settled in his chair as if resolved to wait patiently.</p>
+<p>As the woman walked down between the rows of tables, Pete was at her shoulder talking earnestly, apparently in explanation.  The woman waved her hands with studied airs of indifference.  The doors swung behind them, leaving Maggie and the mere boy seated at the table.</p>
+<p>Maggie was dazed.  She could dimly perceive that something stupendous had happened.  She wondered why Pete saw fit to remonstrate with the woman, pleading for forgiveness with his eyes.  She thought she noted an air of submission about her leonine Pete.  She was astounded.</p>
+<p>The mere boy occupied himself with cock-tails and a cigar.  He was tranquilly silent for half an hour.  Then he bestirred himself and spoke.</p>
+<p>&quot;Well,&quot; he said, sighing, &quot;I knew this was the way it would be.&quot; There was another stillness.  The mere boy seemed to be musing.</p>
+<p>&quot;She was pulling m&#x27;leg.  That&#x27;s the whole amount of it,&quot; he said, suddenly.  &quot;It&#x27;s a bloomin&#x27; shame the way that girl does.  Why, I&#x27;ve spent over two dollars in drinks to-night.  And she goes off with that plug-ugly who looks as if he had been hit in the face with a coin-die. I call it rocky treatment for a fellah like me.  Here, waiter, bring me a cock-tail and make it damned strong.&quot;</p>
+<p>Maggie made no reply.  She was watching the doors.  &quot;It&#x27;s a mean piece of business,&quot; complained the mere boy.  He explained to her how amazing it was that anybody should treat him in such a manner.  &quot;But I&#x27;ll get square with her, you bet.  She won&#x27;t get far ahead of yours truly, you know,&quot; he added, winking.  &quot;I&#x27;ll tell her plainly that it was bloomin&#x27; mean business.  And she won&#x27;t come it over me with any of her &#x27;now-Freddie-dears.&#x27;  She thinks my name is Freddie, you know, but of course it ain&#x27;t.  I always tell these people some name like that, because if they got onto your right name they might use it sometime. Understand?  Oh, they don&#x27;t fool me much.&quot;</p>
+<p>Maggie was paying no attention, being intent upon the doors.  The mere boy relapsed into a period of gloom, during which he exterminated a number of cock-tails with a determined air, as if replying defiantly to fate.  He occasionally broke forth into sentences composed of invectives joined together in a long string.</p>
+<p>The girl was still staring at the doors.  After a time the mere boy began to see cobwebs just in front of his nose.  He spurred himself into being agreeable and insisted upon her having a charlotte-russe and a glass of beer.</p>
+<p>&quot;They&#x27;s gone,&quot; he remarked, &quot;they&#x27;s gone.&quot;  He looked at her through the smoke wreaths.  &quot;Shay, lil&#x27; girl, we mightish well make bes&#x27; of it. You ain&#x27;t such bad-lookin&#x27; girl, y&#x27;know.  Not half bad.  Can&#x27;t come up to Nell, though.  No, can&#x27;t do it!  Well, I should shay not!  Nell fine-lookin&#x27; girl!  F--i--n--ine.  You look damn bad longsider her, but by y&#x27;self ain&#x27;t so bad.  Have to do anyhow.  Nell gone.  On&#x27;y you left. Not half bad, though.&quot;</p>
+<p>Maggie stood up.</p>
+<p>&quot;I&#x27;m going home,&quot; she said.</p>
+<p>The mere boy started.</p>
+<p>&quot;Eh?  What?  Home,&quot; he cried, struck with amazement.  &quot;I beg pardon, did hear say home?&quot;</p>
+<p>&quot;I&#x27;m going home,&quot; she repeated.</p>
+<p>&quot;Great Gawd, what hava struck,&quot; demanded the mere boy of himself, stupefied.</p>
+<p>In a semi-comatose state he conducted her on board an up-town car, ostentatiously paid her fare, leered kindly at her through the rear window and fell off the steps.</p>
+<h2 class="chapter" id="c14">Chapter XV</h2>
+<p>A forlorn woman went along a lighted avenue.  The street was filled with people desperately bound on missions.  An endless crowd darted at the elevated station stairs and the horse cars were thronged with owners of bundles.</p>
+<p>The pace of the forlorn woman was slow.  She was apparently searching for some one.  She loitered near the doors of saloons and watched men emerge from them.  She scanned furtively the faces in the rushing stream of pedestrians.  Hurrying men, bent on catching some boat or train, jostled her elbows, failing to notice her, their thoughts fixed on distant dinners.</p>
+<p>The forlorn woman had a peculiar face.  Her smile was no smile.  But when in repose her features had a shadowy look that was like a sardonic grin, as if some one had sketched with cruel forefinger indelible lines about her mouth.</p>
+<p>Jimmie came strolling up the avenue.  The woman encountered him with an aggrieved air.</p>
+<p>&quot;Oh, Jimmie, I&#x27;ve been lookin&#x27; all over fer yehs--,&quot; she began.</p>
+<p>Jimmie made an impatient gesture and quickened his pace.</p>
+<p>&quot;Ah, don&#x27;t bodder me!  Good Gawd!&quot; he said, with the savageness of a man whose life is pestered.</p>
+<p>The woman followed him along the sidewalk in somewhat the manner of a suppliant.</p>
+<p>&quot;But, Jimmie,&quot; she said, &quot;yehs told me ye&#x27;d--&quot;</p>
+<p>Jimmie turned upon her fiercely as if resolved to make a last stand for comfort and peace.</p>
+<p>&quot;Say, fer Gawd&#x27;s sake, Hattie, don&#x27; foller me from one end of deh city teh deh odder.  Let up, will yehs!  Give me a minute&#x27;s res&#x27;, can&#x27;t yehs?  Yehs makes me tired, allus taggin&#x27; me.  See?  Ain&#x27; yehs got no sense.  Do yehs want people teh get onto me?  Go chase yerself, fer Gawd&#x27;s sake.&quot;</p>
+<p>The woman stepped closer and laid her fingers on his arm.  &quot;But, look-a-here--&quot;</p>
+<p>Jimmie snarled.  &quot;Oh, go teh hell.&quot;</p>
+<p>He darted into the front door of a convenient saloon and a moment later came out into the shadows that surrounded the side door.  On the brilliantly lighted avenue he perceived the forlorn woman dodging about like a scout.  Jimmie laughed with an air of relief and went away.</p>
+<p>When he arrived home he found his mother clamoring.  Maggie had returned.  She stood shivering beneath the torrent of her mother&#x27;s wrath.</p>
+<p>&quot;Well, I&#x27;m damned,&quot; said Jimmie in greeting.</p>
+<p>His mother, tottering about the room, pointed a quivering forefinger.</p>
+<p>&quot;Lookut her, Jimmie, lookut her.  Dere&#x27;s yer sister, boy.  Dere&#x27;s yer sister.  Lookut her!  Lookut her!&quot;</p>
+<p>She screamed in scoffing laughter.</p>
+<p>The girl stood in the middle of the room.  She edged about as if unable to find a place on the floor to put her feet.</p>
+<p>&quot;Ha, ha, ha,&quot; bellowed the mother.  &quot;Dere she stands!  Ain&#x27; she purty? Lookut her!  Ain&#x27; she sweet, deh beast?  Lookut her!  Ha, ha, lookut her!&quot;</p>
+<p>She lurched forward and put her red and seamed hands upon her daughter&#x27;s face.  She bent down and peered keenly up into the eyes of the girl.</p>
+<p>&quot;Oh, she&#x27;s jes&#x27; dessame as she ever was, ain&#x27; she?  She&#x27;s her mudder&#x27;s purty darlin&#x27; yit, ain&#x27; she?  Lookut her, Jimmie!  Come here, fer Gawd&#x27;s sake, and lookut her.&quot;</p>
+<p>The loud, tremendous sneering of the mother brought the denizens of the Rum Alley tenement to their doors.  Women came in the hallways. Children scurried to and fro.</p>
+<p>&quot;What&#x27;s up?  Dat Johnson party on anudder tear?&quot;</p>
+<p>&quot;Naw!  Young Mag&#x27;s come home!&quot;</p>
+<p>&quot;Deh hell yeh say?&quot;</p>
+<p>Through the open door curious eyes stared in at Maggie.  Children ventured into the room and ogled her, as if they formed the front row at a theatre.  Women, without, bended toward each other and whispered, nodding their heads with airs of profound philosophy.  A baby, overcome with curiosity concerning this object at which all were looking, sidled forward and touched her dress, cautiously, as if investigating a red-hot stove.  Its mother&#x27;s voice rang out like a warning trumpet. She rushed forward and grabbed her child, casting a terrible look of indignation at the girl.</p>
+<p>Maggie&#x27;s mother paced to and fro, addressing the doorful of eyes, expounding like a glib showman at a museum.  Her voice rang through the building.</p>
+<p>&quot;Dere she stands,&quot; she cried, wheeling suddenly and pointing with dramatic finger.  &quot;Dere she stands!  Lookut her!  Ain&#x27; she a dindy? An&#x27; she was so good as to come home teh her mudder, she was!  Ain&#x27; she a beaut&#x27;?  Ain&#x27; she a dindy?  Fer Gawd&#x27;s sake!&quot;</p>
+<p>The jeering cries ended in another burst of shrill laughter.</p>
+<p>The girl seemed to awaken.  &quot;Jimmie--&quot;</p>
+<p>He drew hastily back from her.</p>
+<p>&quot;Well, now, yer a hell of a t&#x27;ing, ain&#x27; yeh?&quot; he said, his lips curling in scorn.  Radiant virtue sat upon his brow and his repelling hands expressed horror of contamination.</p>
+<p>Maggie turned and went.</p>
+<p>The crowd at the door fell back precipitately.  A baby falling down in front of the door, wrenched a scream like a wounded animal from its mother.  Another woman sprang forward and picked it up, with a chivalrous air, as if rescuing a human being from an oncoming express train.</p>
+<p>As the girl passed down through the hall, she went before open doors framing more eyes strangely microscopic, and sending broad beams of inquisitive light into the darkness of her path.  On the second floor she met the gnarled old woman who possessed the music box.</p>
+<p>&quot;So,&quot; she cried, &quot;&#x27;ere yehs are back again, are yehs?  An&#x27; dey&#x27;ve kicked yehs out?  Well, come in an&#x27; stay wid me teh-night.  I ain&#x27; got no moral standin&#x27;.&quot;</p>
+<p>From above came an unceasing babble of tongues, over all of which rang the mother&#x27;s derisive laughter.</p>
+<h2 class="chapter" id="c15">Chapter XVI</h2>
+<p>Pete did not consider that he had ruined Maggie.  If he had thought that her soul could never smile again, he would have believed the mother and brother, who were pyrotechnic over the affair, to be responsible for it.</p>
+<p>Besides, in his world, souls did not insist upon being able to smile. &quot;What deh hell?&quot;</p>
+<p>He felt a trifle entangled.  It distressed him.  Revelations and scenes might bring upon him the wrath of the owner of the saloon, who insisted upon respectability of an advanced type.</p>
+<p>&quot;What deh hell do dey wanna raise such a smoke about it fer?&quot; demanded he of himself, disgusted with the attitude of the family.  He saw no necessity for anyone&#x27;s losing their equilibrium merely because their sister or their daughter had stayed away from home.</p>
+<p>Searching about in his mind for possible reasons for their conduct, he came upon the conclusion that Maggie&#x27;s motives were correct, but that the two others wished to snare him.  He felt pursued.</p>
+<p>The woman of brilliance and audacity whom he had met in the hilarious hall showed a disposition to ridicule him.</p>
+<p>&quot;A little pale thing with no spirit,&quot; she said.  &quot;Did you note the expression of her eyes?  There was something in them about pumpkin pie and virtue.  That is a peculiar way the left corner of her mouth has of twitching, isn&#x27;t it?  Dear, dear, my cloud-compelling Pete, what are you coming to?&quot;</p>
+<p>Pete asserted at once that he never was very much interested in the girl.  The woman interrupted him, laughing.</p>
+<p>&quot;Oh, it&#x27;s not of the slightest consequence to me, my dear young man. You needn&#x27;t draw maps for my benefit.  Why should I be concerned about it?&quot;</p>
+<p>But Pete continued with his explanations.  If he was laughed at for his tastes in women, he felt obliged to say that they were only temporary or indifferent ones.</p>
+<p>The morning after Maggie had departed from home, Pete stood behind the bar.  He was immaculate in white jacket and apron and his hair was plastered over his brow with infinite correctness.  No customers were in the place.  Pete was twisting his napkined fist slowly in a beer glass, softly whistling to himself and occasionally holding the object of his attention between his eyes and a few weak beams of sunlight that had found their way over the thick screens and into the shaded room.</p>
+<p>With lingering thoughts of the woman of brilliance and audacity, the bartender raised his head and stared through the varying cracks between the swaying bamboo doors.  Suddenly the whistling pucker faded from his lips.  He saw Maggie walking slowly past.  He gave a great start, fearing for the previously-mentioned eminent respectability of the place.</p>
+<p>He threw a swift, nervous glance about him, all at once feeling guilty. No one was in the room.</p>
+<p>He went hastily over to the side door.  Opening it and looking out, he perceived Maggie standing, as if undecided, on the corner.  She was searching the place with her eyes.</p>
+<p>As she turned her face toward him Pete beckoned to her hurriedly, intent upon returning with speed to a position behind the bar and to the atmosphere of respectability upon which the proprietor insisted.</p>
+<p>Maggie came to him, the anxious look disappearing from her face and a smile wreathing her lips.</p>
+<p>&quot;Oh, Pete--,&quot; she began brightly.</p>
+<p>The bartender made a violent gesture of impatience.</p>
+<p>&quot;Oh, my Gawd,&quot; cried he, vehemently.  &quot;What deh hell do yeh wanna hang aroun&#x27; here fer?  Do yeh wanna git me inteh trouble?&quot; he demanded with an air of injury.</p>
+<p>Astonishment swept over the girl&#x27;s features.  &quot;Why, Pete! yehs tol&#x27; me--&quot;</p>
+<p>Pete glanced profound irritation.  His countenance reddened with the anger of a man whose respectability is being threatened.</p>
+<p>&quot;Say, yehs makes me tired.  See?  What deh hell deh yeh wanna tag aroun&#x27; atter me fer?  Yeh&#x27;ll git me inteh trouble wid deh ol&#x27; man an&#x27; dey&#x27;ll be hell teh pay!  If he sees a woman roun&#x27; here he&#x27;ll go crazy an&#x27; I&#x27;ll lose me job!  See?  Yer brudder come in here an&#x27; raised hell an&#x27; deh ol&#x27; man hada put up fer it!  An&#x27; now I&#x27;m done!  See?  I&#x27;m done.&quot;</p>
+<p>The girl&#x27;s eyes stared into his face.  &quot;Pete, don&#x27;t yeh remem--&quot;</p>
+<p>&quot;Oh, hell,&quot; interrupted Pete, anticipating.</p>
+<p>The girl seemed to have a struggle with herself.  She was apparently bewildered and could not find speech.  Finally she asked in a low voice: &quot;But where kin I go?&quot;</p>
+<p>The question exasperated Pete beyond the powers of endurance.  It was a direct attempt to give him some responsibility in a matter that did not concern him.  In his indignation he volunteered information.</p>
+<p>&quot;Oh, go teh hell,&quot; cried he.  He slammed the door furiously and returned, with an air of relief, to his respectability.</p>
+<p>Maggie went away.</p>
+<p>She wandered aimlessly for several blocks.  She stopped once and asked aloud a question of herself: &quot;Who?&quot;</p>
+<p>A man who was passing near her shoulder, humorously took the questioning word as intended for him.</p>
+<p>&quot;Eh?  What?  Who?  Nobody!  I didn&#x27;t say anything,&quot; he laughingly said, and continued his way.</p>
+<p>Soon the girl discovered that if she walked with such apparent aimlessness, some men looked at her with calculating eyes.  She quickened her step, frightened.  As a protection, she adopted a demeanor of intentness as if going somewhere.</p>
+<p>After a time she left rattling avenues and passed between rows of houses with sternness and stolidity stamped upon their features.  She hung her head for she felt their eyes grimly upon her.</p>
+<p>Suddenly she came upon a stout gentleman in a silk hat and a chaste black coat, whose decorous row of buttons reached from his chin to his knees.  The girl had heard of the Grace of God and she decided to approach this man.</p>
+<p>His beaming, chubby face was a picture of benevolence and kind-heartedness.  His eyes shone good-will.</p>
+<p>But as the girl timidly accosted him, he gave a convulsive movement and saved his respectability by a vigorous side-step.  He did not risk it to save a soul.  For how was he to know that there was a soul before him that needed saving?</p>
+<h2 class="chapter" id="c16">Chapter XVII</h2>
+<p>Upon a wet evening, several months after the last chapter, two interminable rows of cars, pulled by slipping horses, jangled along a prominent side-street.  A dozen cabs, with coat-enshrouded drivers, clattered to and fro.  Electric lights, whirring softly, shed a blurred radiance.  A flower dealer, his feet tapping impatiently, his nose and his wares glistening with rain-drops, stood behind an array of roses and chrysanthemums.  Two or three theatres emptied a crowd upon the storm-swept pavements.  Men pulled their hats over their eyebrows and raised their collars to their ears.  Women shrugged impatient shoulders in their warm cloaks and stopped to arrange their skirts for a walk through the storm.  People having been comparatively silent for two hours burst into a roar of conversation, their hearts still kindling from the glowings of the stage.</p>
+<p>The pavements became tossing seas of umbrellas.  Men stepped forth to hail cabs or cars, raising their fingers in varied forms of polite request or imperative demand.  An endless procession wended toward elevated stations.  An atmosphere of pleasure and prosperity seemed to hang over the throng, born, perhaps, of good clothes and of having just emerged from a place of forgetfulness.</p>
+<p>In the mingled light and gloom of an adjacent park, a handful of wet wanderers, in attitudes of chronic dejection, was scattered among the benches.</p>
+<p>A girl of the painted cohorts of the city went along the street.  She threw changing glances at men who passed her, giving smiling invitations to men of rural or untaught pattern and usually seeming sedately unconscious of the men with a metropolitan seal upon their faces.</p>
+<p>Crossing glittering avenues, she went into the throng emerging from the places of forgetfulness.  She hurried forward through the crowd as if intent upon reaching a distant home, bending forward in her handsome cloak, daintily lifting her skirts and picking for her well-shod feet the dryer spots upon the pavements.</p>
+<p>The restless doors of saloons, clashing to and fro, disclosed animated rows of men before bars and hurrying barkeepers.</p>
+<p>A concert hall gave to the street faint sounds of swift, machine-like music, as if a group of phantom musicians were hastening.</p>
+<p>A tall young man, smoking a cigarette with a sublime air, strolled near the girl.  He had on evening dress, a moustache, a chrysanthemum, and a look of ennui, all of which he kept carefully under his eye.  Seeing the girl walk on as if such a young man as he was not in existence, he looked back transfixed with interest.  He stared glassily for a moment, but gave a slight convulsive start when he discerned that she was neither new, Parisian, nor theatrical.  He wheeled about hastily and turned his stare into the air, like a sailor with a search-light.</p>
+<p>A stout gentleman, with pompous and philanthropic whiskers, went stolidly by, the broad of his back sneering at the girl.</p>
+<p>A belated man in business clothes, and in haste to catch a car, bounced against her shoulder.  &quot;Hi, there, Mary, I beg your pardon!  Brace up, old girl.&quot;  He grasped her arm to steady her, and then was away running down the middle of the street.</p>
+<p>The girl walked on out of the realm of restaurants and saloons.  She passed more glittering avenues and went into darker blocks than those where the crowd travelled.</p>
+<p>A young man in light overcoat and derby hat received a glance shot keenly from the eyes of the girl.  He stopped and looked at her, thrusting his hands in his pockets and making a mocking smile curl his lips.  &quot;Come, now, old lady,&quot; he said, &quot;you don&#x27;t mean to tel me that you sized me up for a farmer?&quot;</p>
+<p>A labouring man marched along; with bundles under his arms. To her remarks, he replied, &quot;It&#x27;s a fine evenin&#x27;, ain&#x27;t it?&quot;</p>
+<p>She smiled squarely into the face of a boy who was hurrying by with his hands buried in his overcoat pockets, his blonde locks bobbing on his youthful temples, and a cheery smile of unconcern upon his lips. He turned his head and smiled back at her, waving his hands.</p>
+<p>&quot;Not this eve--some other eve!&quot;</p>
+<p>A drunken man, reeling in her pathway, began to roar at her. &quot;I ain&#x27; ga no money!&quot; he shouted, in a dismal voice. He lurched on up the street, wailing to himself: &quot;I ain&#x27; ga no money. Ba&#x27; luck. Ain&#x27; ga no more money.&quot;</p>
+<p>The girl went into gloomy districts near the river, where the tall black factories shut in the street and only occasional broad beams of light fell across the pavements from saloons. In front of one of these places, whence came the sound of a violin vigorously scraped, the patter of feet on boards and the ring of loud laughter, there stood a man with blotched features.</p>
+<p>Further on in the darkness she met a ragged being with shifting, bloodshot eyes and grimy hands.</p>
+<p>She went into the blackness of the final block. The shutters of the tall buildings were closed like grim lips. The structures seemed to have eyes that looked over them, beyond them, at other things. Afar off the lights of the avenues glittered as if from an impossible distance. Street-car bells jingled with a sound of merriment.</p>
+<p>At the feet of the tall buildings appeared the deathly black hue of the river. Some hidden factory sent up a yellow glare, that lit for a moment the waters lapping oilily against timbers. The varied sounds of life, made joyous by distance and seeming unapproachableness, came faintly and died away to a silence.</p>
+<h2 class="chapter" id="c17">Chapter XVIII</h2>
+<p>In a partitioned-off section of a saloon sat a man with a half dozen women, gleefully laughing, hovering about him.  The man had arrived at that stage of drunkenness where affection is felt for the universe.</p>
+<p>&quot;I&#x27;m good f&#x27;ler, girls,&quot; he said, convincingly.  &quot;I&#x27;m damn good f&#x27;ler. An&#x27;body treats me right, I allus trea&#x27;s zem right!  See?&quot;</p>
+<p>The women nodded their heads approvingly.  &quot;To be sure,&quot; they cried out in hearty chorus.  &quot;You&#x27;re the kind of a man we like, Pete.  You&#x27;re outa sight!  What yeh goin&#x27; to buy this time, dear?&quot;</p>
+<p>&quot;An&#x27;t&#x27;ing yehs wants, damn it,&quot; said the man in an abandonment of good will.  His countenance shone with the true spirit of benevolence.  He was in the proper mode of missionaries.  He would have fraternized with obscure Hottentots.  And above all, he was overwhelmed in tenderness for his friends, who were all illustrious.</p>
+<p>&quot;An&#x27;t&#x27;ing yehs wants, damn it,&quot; repeated he, waving his hands with beneficent recklessness.  &quot;I&#x27;m good f&#x27;ler, girls, an&#x27; if an&#x27;body treats me right I--here,&quot; called he through an open door to a waiter, &quot;bring girls drinks, damn it.  What &#x27;ill yehs have, girls?  An&#x27;t&#x27;ing yehs wants, damn it!&quot;</p>
+<p>The waiter glanced in with the disgusted look of the man who serves intoxicants for the man who takes too much of them.  He nodded his head shortly at the order from each individual, and went.</p>
+<p>&quot;Damn it,&quot; said the man, &quot;we&#x27;re havin&#x27; heluva time.  I like you girls! Damn&#x27;d if I don&#x27;t!  Yer right sort!  See?&quot;</p>
+<p>He spoke at length and with feeling, concerning the excellencies of his assembled friends.</p>
+<p>&quot;Don&#x27; try pull man&#x27;s leg, but have a heluva time!  Das right!  Das way teh do!  Now, if I sawght yehs tryin&#x27; work me fer drinks, wouldn&#x27; buy damn t&#x27;ing!  But yer right sort, damn it!  Yehs know how ter treat a f&#x27;ler, an&#x27; I stays by yehs &#x27;til spen&#x27; las&#x27; cent!  Das right!  I&#x27;m good f&#x27;ler an&#x27; I knows when an&#x27;body treats me right!&quot;</p>
+<p>Between the times of the arrival and departure of the waiter, the man discoursed to the women on the tender regard he felt for all living things.  He laid stress upon the purity of his motives in all dealings with men in the world and spoke of the fervor of his friendship for those who were amiable.  Tears welled slowly from his eyes.  His voice quavered when he spoke to them.</p>
+<p>Once when the waiter was about to depart with an empty tray, the man drew a coin from his pocket and held it forth.</p>
+<p>&quot;Here,&quot; said he, quite magnificently, &quot;here&#x27;s quar&#x27;.&quot;</p>
+<p>The waiter kept his hands on his tray.</p>
+<p>&quot;I don&#x27; want yer money,&quot; he said.</p>
+<p>The other put forth the coin with tearful insistence.</p>
+<p>&quot;Here, damn it,&quot; cried he, &quot;tak&#x27;t!  Yer damn goo&#x27; f&#x27;ler an&#x27; I wan&#x27; yehs tak&#x27;t!&quot;</p>
+<p>&quot;Come, come, now,&quot; said the waiter, with the sullen air of a man who is forced into giving advice.  &quot;Put yer mon in yer pocket!  Yer loaded an&#x27; yehs on&#x27;y makes a damn fool of yerself.&quot;</p>
+<p>As the latter passed out of the door the man turned pathetically to the women.</p>
+<p>&quot;He don&#x27; know I&#x27;m damn goo&#x27; f&#x27;ler,&quot; cried he, dismally.</p>
+<p>&quot;Never you mind, Pete, dear,&quot; said a woman of brilliance and audacity, laying her hand with great affection upon his arm.  &quot;Never you mind, old boy!  We&#x27;ll stay by you, dear!&quot;</p>
+<p>&quot;Das ri&#x27;,&quot; cried the man, his face lighting up at the soothing tones of the woman&#x27;s voice.  &quot;Das ri&#x27;, I&#x27;m damn goo&#x27; f&#x27;ler an&#x27; w&#x27;en anyone trea&#x27;s me ri&#x27;, I treats zem ri&#x27;!  Shee!&quot;</p>
+<p>&quot;Sure!&quot; cried the women.  &quot;And we&#x27;re not goin&#x27; back on you, old man.&quot;</p>
+<p>The man turned appealing eyes to the woman of brilliance and audacity. He felt that if he could be convicted of a contemptible action he would die.</p>
+<p>&quot;Shay, Nell, damn it, I allus trea&#x27;s yehs shquare, didn&#x27; I?  I allus been goo&#x27; f&#x27;ler wi&#x27; yehs, ain&#x27;t I, Nell?&quot;</p>
+<p>&quot;Sure you have, Pete,&quot; assented the woman.  She delivered an oration to her companions.  &quot;Yessir, that&#x27;s a fact.  Pete&#x27;s a square fellah, he is.  He never goes back on a friend.  He&#x27;s the right kind an&#x27; we stay by him, don&#x27;t we, girls?&quot;</p>
+<p>&quot;Sure,&quot; they exclaimed.  Looking lovingly at him they raised their glasses and drank his health.</p>
+<p>&quot;Girlsh,&quot; said the man, beseechingly, &quot;I allus trea&#x27;s yehs ri&#x27;, didn&#x27; I?  I&#x27;m goo&#x27; f&#x27;ler, ain&#x27; I, girlsh?&quot;</p>
+<p>&quot;Sure,&quot; again they chorused.</p>
+<p>&quot;Well,&quot; said he finally, &quot;le&#x27;s have nozzer drink, zen.&quot;</p>
+<p>&quot;That&#x27;s right,&quot; hailed a woman, &quot;that&#x27;s right.  Yer no bloomin&#x27; jay! Yer spends yer money like a man.  Dat&#x27;s right.&quot;</p>
+<p>The man pounded the table with his quivering fists.</p>
+<p>&quot;Yessir,&quot; he cried, with deep earnestness, as if someone disputed him. &quot;I&#x27;m damn goo&#x27; f&#x27;ler, an&#x27; w&#x27;en anyone trea&#x27;s me ri&#x27;, I allus trea&#x27;s--le&#x27;s have nozzer drink.&quot;</p>
+<p>He began to beat the wood with his glass.</p>
+<p>&quot;Shay,&quot; howled he, growing suddenly impatient.  As the waiter did not then come, the man swelled with wrath.</p>
+<p>&quot;Shay,&quot; howled he again.</p>
+<p>The waiter appeared at the door.</p>
+<p>&quot;Bringsh drinksh,&quot; said the man.</p>
+<p>The waiter disappeared with the orders.</p>
+<p>&quot;Zat f&#x27;ler damn fool,&quot; cried the man.  &quot;He insul&#x27; me!  I&#x27;m ge&#x27;man! Can&#x27; stan&#x27; be insul&#x27;!  I&#x27;m goin&#x27; lickim when comes!&quot;</p>
+<p>&quot;No, no,&quot; cried the women, crowding about and trying to subdue him. &quot;He&#x27;s all right!  He didn&#x27;t mean anything!  Let it go!  He&#x27;s a good fellah!&quot;</p>
+<p>&quot;Din&#x27; he insul&#x27; me?&quot; asked the man earnestly.</p>
+<p>&quot;No,&quot; said they.  &quot;Of course he didn&#x27;t!  He&#x27;s all right!&quot;</p>
+<p>&quot;Sure he didn&#x27; insul&#x27; me?&quot; demanded the man, with deep anxiety in his voice.</p>
+<p>&quot;No, no!  We know him!  He&#x27;s a good fellah.  He didn&#x27;t mean anything.&quot;</p>
+<p>&quot;Well, zen,&quot; said the man, resolutely, &quot;I&#x27;m go&#x27; &#x27;pol&#x27;gize!&quot;</p>
+<p>When the waiter came, the man struggled to the middle of the floor.</p>
+<p>&quot;Girlsh shed you insul&#x27; me!  I shay damn lie!  I &#x27;pol&#x27;gize!&quot;</p>
+<p>&quot;All right,&quot; said the waiter.</p>
+<p>The man sat down.  He felt a sleepy but strong desire to straighten things out and have a perfect understanding with everybody.</p>
+<p>&quot;Nell, I allus trea&#x27;s yeh shquare, din&#x27; I?  Yeh likes me, don&#x27; yehs, Nell?  I&#x27;m goo&#x27; f&#x27;ler?&quot;</p>
+<p>&quot;Sure,&quot; said the woman of brilliance and audacity.</p>
+<p>&quot;Yeh knows I&#x27;m stuck on yehs, don&#x27; yehs, Nell?&quot;</p>
+<p>&quot;Sure,&quot; she repeated, carelessly.</p>
+<p>Overwhelmed by a spasm of drunken adoration, he drew two or three bills from his pocket, and, with the trembling fingers of an offering priest, laid them on the table before the woman.</p>
+<p>&quot;Yehs knows, damn it, yehs kin have all got, &#x27;cause I&#x27;m stuck on yehs, Nell, damn&#x27;t, I--I&#x27;m stuck on yehs, Nell--buy drinksh--damn&#x27;t--we&#x27;re havin&#x27; heluva time--w&#x27;en anyone trea&#x27;s me ri&#x27;--I--damn&#x27;t, Nell--we&#x27;re havin&#x27; heluva--time.&quot;</p>
+<p>Shortly he went to sleep with his swollen face fallen forward on his chest.</p>
+<p>The women drank and laughed, not heeding the slumbering man in the corner.  Finally he lurched forward and fell groaning to the floor.</p>
+<p>The women screamed in disgust and drew back their skirts.</p>
+<p>&quot;Come ahn,&quot; cried one, starting up angrily, &quot;let&#x27;s get out of here.&quot;</p>
+<p>The woman of brilliance and audacity stayed behind, taking up the bills and stuffing them into a deep, irregularly-shaped pocket.  A guttural snore from the recumbent man caused her to turn and look down at him.</p>
+<p>She laughed.  &quot;What a damn fool,&quot; she said, and went.</p>
+<p>The smoke from the lamps settled heavily down in the little compartment, obscuring the way out.  The smell of oil, stifling in its intensity, pervaded the air.  The wine from an overturned glass dripped softly down upon the blotches on the man&#x27;s neck.</p>
+<h2 class="chapter" id="c18">Chapter XIX</h2>
+<p>In a room a woman sat at a table eating like a fat monk in a picture.</p>
+<p>A soiled, unshaven man pushed open the door and entered.</p>
+<p>&quot;Well,&quot; said he, &quot;Mag&#x27;s dead.&quot;</p>
+<p>&quot;What?&quot; said the woman, her mouth filled with bread.</p>
+<p>&quot;Mag&#x27;s dead,&quot; repeated the man.</p>
+<p>&quot;Deh hell she is,&quot; said the woman.  She continued her meal.  When she finished her coffee she began to weep.</p>
+<p>&quot;I kin remember when her two feet was no bigger dan yer t&#x27;umb, and she weared worsted boots,&quot; moaned she.</p>
+<p>&quot;Well, whata dat?&quot; said the man.</p>
+<p>&quot;I kin remember when she weared worsted boots,&quot; she cried.</p>
+<p>The neighbors began to gather in the hall, staring in at the weeping woman as if watching the contortions of a dying dog.  A dozen women entered and lamented with her.  Under their busy hands the rooms took on that appalling appearance of neatness and order with which death is greeted.</p>
+<p>Suddenly the door opened and a woman in a black gown rushed in with outstretched arms.  &quot;Ah, poor Mary,&quot; she cried, and tenderly embraced the moaning one.</p>
+<p>&quot;Ah, what ter&#x27;ble affliction is dis,&quot; continued she.  Her vocabulary was derived from mission churches.  &quot;Me poor Mary, how I feel fer yehs! Ah, what a ter&#x27;ble affliction is a disobed&#x27;ent chil&#x27;.&quot;</p>
+<p>Her good, motherly face was wet with tears.  She trembled in eagerness to express her sympathy.  The mourner sat with bowed head, rocking her body heavily to and fro, and crying out in a high, strained voice that sounded like a dirge on some forlorn pipe.</p>
+<p>&quot;I kin remember when she weared worsted boots an&#x27; her two feets was no bigger dan yer t&#x27;umb an&#x27; she weared worsted boots, Miss Smith,&quot; she cried, raising her streaming eyes.</p>
+<p>&quot;Ah, me poor Mary,&quot; sobbed the woman in black.  With low, coddling cries, she sank on her knees by the mourner&#x27;s chair, and put her arms about her.  The other women began to groan in different keys.</p>
+<p>&quot;Yer poor misguided chil&#x27; is gone now, Mary, an&#x27; let us hope it&#x27;s fer deh bes&#x27;.  Yeh&#x27;ll fergive her now, Mary, won&#x27;t yehs, dear, all her disobed&#x27;ence?  All her t&#x27;ankless behavior to her mudder an&#x27; all her badness?  She&#x27;s gone where her ter&#x27;ble sins will be judged.&quot;</p>
+<p>The woman in black raised her face and paused.  The inevitable sunlight came streaming in at the windows and shed a ghastly cheerfulness upon the faded hues of the room.  Two or three of the spectators were sniffling, and one was loudly weeping.  The mourner arose and staggered into the other room.  In a moment she emerged with a pair of faded baby shoes held in the hollow of her hand.</p>
+<p>&quot;I kin remember when she used to wear dem,&quot; cried she.  The women burst anew into cries as if they had all been stabbed.  The mourner turned to the soiled and unshaven man.</p>
+<p>&quot;Jimmie, boy, go git yer sister!  Go git yer sister an&#x27; we&#x27;ll put deh boots on her feets!&quot;</p>
+<p>&quot;Dey won&#x27;t fit her now, yeh damn fool,&quot; said the man.</p>
+<p>&quot;Go git yer sister, Jimmie,&quot; shrieked the woman, confronting him fiercely.</p>
+<p>The man swore sullenly.  He went over to a corner and slowly began to put on his coat.  He took his hat and went out, with a dragging, reluctant step.</p>
+<p>The woman in black came forward and again besought the mourner.</p>
+<p>&quot;Yeh&#x27;ll fergive her, Mary!  Yeh&#x27;ll fergive yer bad, bad, chil&#x27;!  Her life was a curse an&#x27; her days were black an&#x27; yeh&#x27;ll fergive yer bad girl?  She&#x27;s gone where her sins will be judged.&quot;</p>
+<p>&quot;She&#x27;s gone where her sins will be judged,&quot; cried the other women, like a choir at a funeral.</p>
+<p>&quot;Deh Lord gives and deh Lord takes away,&quot; said the woman in black, raising her eyes to the sunbeams.</p>
+<p>&quot;Deh Lord gives and deh Lord takes away,&quot; responded the others.</p>
+<p>&quot;Yeh&#x27;ll fergive her, Mary!&quot; pleaded the woman in black.  The mourner essayed to speak but her voice gave way.  She shook her great shoulders frantically, in an agony of grief.  Hot tears seemed to scald her quivering face.  Finally her voice came and arose like a scream of pain.</p>
+<p>&quot;Oh, yes, I&#x27;ll fergive her!  I&#x27;ll fergive her!&quot;</p>
+<p class="colophon">Public domain text. BookClassics digital edition.</p>
+</body></html>
