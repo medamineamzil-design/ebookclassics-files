@@ -1,0 +1,70 @@
+=== BookClassics — lot 2026-10-04-h — 2026-10-04 00:34 ===
+== 1/4 Fabrication des livres (EPUB, PDF, TXT, HTML) ==
+… Narrative of the Life of Frederick Douglass [en] — Gutenberg #23
+   + narrative-of-the-life-of-frederick-douglass [en] OK — Project Gutenberg (#23), 40638 mots, 11 chapitres — epub:167Ko pdf:547Ko txt:219Ko html:225Ko
+… The Narrative of Arthur Gordon Pym of Nantucket [en] — Gutenberg #51060
+   + the-narrative-of-arthur-gordon-pym-of-nantucket [en] OK — Project Gutenberg (#51060), 71205 mots, 24 chapitres — epub:251Ko pdf:929Ko txt:392Ko html:402Ko
+… The Fall of the House of Usher [en] — Gutenberg #932
+   + the-fall-of-the-house-of-usher [en] OK — Project Gutenberg (#932), 7065 mots, 6 chapitres — epub:86Ko pdf:177Ko txt:40Ko html:45Ko
+… The Happy Prince and Other Tales [en] — Gutenberg #902
+   + the-happy-prince-and-other-tales [en] OK — Project Gutenberg (#902), 16358 mots, 4 chapitres — epub:101Ko pdf:290Ko txt:87Ko html:94Ko
+… Mrs. Warren's Profession [en] — Gutenberg #1097
+   + mrs-warren-s-profession [en] OK — Project Gutenberg (#1097), 34689 mots, 6 chapitres — epub:151Ko pdf:550Ko txt:190Ko html:200Ko
+== 2/4 Dépôt des livres ==
++ Narrative of the Life of Frederick Douglass : en
++ The Narrative of Arthur Gordon Pym of Nantucket : en
++ The Fall of the House of Usher : en
++ The Happy Prince and Other Tales : en
++ Mrs. Warren's Profession : en
+   publié : ebookclassics-files — Nouveaux livres : Narrative of the Life of Frederick Douglass, The Narrative of Arthur Gordon Pym of Nantucket, The Fall of the House of Usher, The Happy Prince and Other Tales, Mrs. Warren's Profession
+== 3/4 Site : catalogue, pages livres, plan du site ==
+   306 pages livres, 305 couvertures, 311 adresses dans le sitemap
+   5 livre(s) ajouté(s) au catalogue
+   publié : ebookclassics-site — Nouveaux livres au catalogue : Narrative of the Life of Frederick Douglass, The Narrative of Arthur Gordon Pym of Nantucket, The Fall of the House of Usher, The Happy Prince and Other Tales, Mrs. Warren's Profession
+TERMINE — 5 nouveau(x) livre(s) : Narrative of the Life of Frederick Douglass, The Narrative of Arthur Gordon Pym of Nantucket, The Fall of the House of Usher, The Happy Prince and Other Tales, Mrs. Warren's Profession
+=== BookClassics — lot 2026-10-04-i — 2026-10-04 00:35 ===
+   2 livre(s) écarté(s) par l'agent, notés dans refuses.json
+== 1/4 Fabrication des livres (EPUB, PDF, TXT, HTML) ==
+… Up from Slavery [en] — Gutenberg #2376
+   + up-from-slavery [en] OK — Project Gutenberg (#2376), 76581 mots, 16 chapitres — epub:230Ko pdf:926Ko txt:411Ko html:420Ko
+… Antony and Cleopatra [en] — Gutenberg #1130
+   + antony-and-cleopatra [en] OK — Project Gutenberg (#1130), 26346 mots, 1 chapitres — epub:128Ko pdf:471Ko txt:141Ko html:156Ko
+… Antony and Cleopatra [fr] — Gutenberg #15942
+   + antony-and-cleopatra [fr] OK — Project Gutenberg (#15942), 31468 mots, 37 chapitres — epub:178Ko pdf:684Ko txt:202Ko html:226Ko
+… Uncle Silas [en] — Gutenberg #14851
+   + uncle-silas [en] OK — Project Gutenberg (#14851), 162699 mots, 65 chapitres — epub:488Ko pdf:2302Ko txt:881Ko html:963Ko
+… The Man Who Laughs [en] — Gutenberg #12587
+   + the-man-who-laughs [en] OK — Project Gutenberg (#12587), 203729 mots, 134 chapitres — epub:630Ko pdf:2988Ko txt:1142Ko html:1184Ko
+… The Man Who Laughs [fr] — Gutenberg #5423
+   + the-man-who-laughs [fr] OK — Project Gutenberg (#5423), 194569 mots, 42 chapitres — epub:567Ko pdf:2859Ko txt:1219Ko html:1258Ko
+… The Man Who Would Be King [en] — Gutenberg #8147
+   + the-man-who-would-be-king [en] OK — Project Gutenberg (#8147), 13924 mots, 8 chapitres — epub:106Ko pdf:270Ko txt:75Ko html:81Ko
+== 2/4 Dépôt des livres ==
++ Up from Slavery : en
++ Antony and Cleopatra : en, fr
++ Uncle Silas : en
++ The Man Who Laughs : en, fr
++ The Man Who Would Be King : en
+   publié : ebookclassics-files — Nouveaux livres : Up from Slavery, Antony and Cleopatra, Uncle Silas, The Man Who Laughs, The Man Who Would Be King
+== 3/4 Site : catalogue, pages livres, plan du site ==
+   311 pages livres, 310 couvertures, 316 adresses dans le sitemap
+   5 livre(s) ajouté(s) au catalogue
+   publié : ebookclassics-site — Nouveaux livres au catalogue : Up from Slavery, Antony and Cleopatra, Uncle Silas, The Man Who Laughs, The Man Who Would Be King
+TERMINE — 5 nouveau(x) livre(s) : Up from Slavery, Antony and Cleopatra, Uncle Silas, The Man Who Laughs, The Man Who Would Be King
+== Livres audio du lot 2026-10-04-h ==
+   LibriVox : Narrative of the Life of Frederick Douglass [en] — « Narrative of the Life of Frederick Douglass (version 2) » (4 h 03)
+   LibriVox : The Narrative of Arthur Gordon Pym of Nantucket [en] — « Narrative of Arthur Gordon Pym of Nantucket » (6 h 22)
+   pas d'enregistrement LibriVox pour The Fall of the House of Usher [en]
+   LibriVox : The Happy Prince and Other Tales [en] — « Happy Prince and Other Tales (version 5) » (1 h 51)
+   pas d'enregistrement LibriVox pour Mrs. Warren's Profession [en]
+   ! ~/r2.conf absent : livres audio non ajoutés
+== Livres audio du lot 2026-10-04-i ==
+   pas d'enregistrement LibriVox pour Up from Slavery [en]
+   LibriVox : Antony and Cleopatra [en] — « Antony and Cleopatra » (3 h 03)
+   pas d'enregistrement LibriVox pour Antony and Cleopatra [fr]
+   LibriVox : Uncle Silas [en] — « Uncle Silas » (18 h 38)
+   LibriVox : The Man Who Laughs [en] — « Man Who Laughs » (24 h 52)
+   pas d'enregistrement LibriVox pour The Man Who Laughs [fr]
+   LibriVox : The Man Who Would Be King [en] — « Man Who Would Be King » (1 h 30)
+   ! ~/r2.conf absent : livres audio non ajoutés
+FIN 2026-10-04 00:39
