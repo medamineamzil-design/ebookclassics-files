@@ -1,0 +1,33 @@
+=== BookClassics — lot 2026-10-04-o — 2026-10-04 01:15 ===
+   1 livre(s) écarté(s) par l'agent, notés dans refuses.json
+== 1/4 Fabrication des livres (EPUB, PDF, TXT, HTML) ==
+… Women in Love [en] — Gutenberg #4240
+   + women-in-love [en] OK — Project Gutenberg (#4240), 180229 mots, 31 chapitres — epub:466Ko pdf:2547Ko txt:1026Ko html:1067Ko
+… Night and Day [en] — Gutenberg #1245
+   + night-and-day [en] OK — Project Gutenberg (#1245), 166007 mots, 34 chapitres — epub:454Ko pdf:2139Ko txt:940Ko html:963Ko
+… The Beautiful and Damned [en] — Gutenberg #9830
+   + the-beautiful-and-damned [en] OK — Project Gutenberg (#9830), 123526 mots, 8 chapitres — epub:362Ko pdf:1860Ko txt:702Ko html:770Ko
+… His Last Bow [en] — Gutenberg #2350
+   + his-last-bow [en] OK — Project Gutenberg (#2350), 59015 mots, 9 chapitres — epub:190Ko pdf:836Ko txt:323Ko html:336Ko
+… The Iron Heel [en] — Gutenberg #1164
+   + the-iron-heel [en] OK — Project Gutenberg (#1164), 87809 mots, 25 chapitres — epub:266Ko pdf:1147Ko txt:492Ko html:507Ko
+== 2/4 Dépôt des livres ==
++ Women in Love : en
++ Night and Day : en
++ The Beautiful and Damned : en
++ His Last Bow : en
++ The Iron Heel : en
+   publié : ebookclassics-files — Nouveaux livres : Women in Love, Night and Day, The Beautiful and Damned, His Last Bow, The Iron Heel
+== 3/4 Site : catalogue, pages livres, plan du site ==
+   340 pages livres, 339 couvertures, 345 adresses dans le sitemap
+   5 livre(s) ajouté(s) au catalogue
+   publié : ebookclassics-site — Nouveaux livres au catalogue : Women in Love, Night and Day, The Beautiful and Damned, His Last Bow, The Iron Heel
+TERMINE — 5 nouveau(x) livre(s) : Women in Love, Night and Day, The Beautiful and Damned, His Last Bow, The Iron Heel
+== Livres audio du lot 2026-10-04-o ==
+   LibriVox : Women in Love [en] — « Women in Love » (25 h 19)
+   LibriVox : Night and Day [en] — « Night and Day » (15 h 53)
+   LibriVox : The Beautiful and Damned [en] — « Beautiful and Damned (Version 2) » (14 h 15)
+   LibriVox : His Last Bow [en] — « His Last Bow (version 3) » (7 h 10)
+   LibriVox : The Iron Heel [en] — « Iron Heel » (8 h 17)
+   ! ~/r2.conf absent : livres audio non ajoutés
+FIN 2026-10-04 01:18
