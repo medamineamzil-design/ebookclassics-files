@@ -908,6 +908,14 @@
     "txt"
    ]
   },
+  "jacob-s-room": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "jane-eyre": {
    "en": [
     "epub",
@@ -1724,6 +1732,14 @@
     "txt"
    ]
   },
+  "scaramouche": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "second-treatise-of-government": {
    "en": [
     "epub",
@@ -1915,6 +1931,14 @@
    ]
   },
   "the-ambassadors": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-analects": {
    "en": [
     "epub",
     "html",
@@ -2297,6 +2321,14 @@
    ]
   },
   "the-importance-of-being-earnest": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-innocence-of-father-brown": {
    "en": [
     "epub",
     "html",
@@ -3092,6 +3124,20 @@
     "txt"
    ]
   },
+  "the-winter-s-tale": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-woman-in-white": {
    "en": [
     "epub",
@@ -3401,5 +3447,5 @@
    ]
   }
  },
- "generated": "2026-10-04T00:49:45Z"
+ "generated": "2026-10-04T00:50:23Z"
 }
