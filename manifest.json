@@ -590,6 +590,14 @@
     "txt"
    ]
   },
+  "essays": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "ethan-frome": {
    "en": [
     "epub",
@@ -636,6 +644,20 @@
   },
   "extraordinary-popular-delusions-and-the-madness-of-crowds": {
    "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "fables": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
     "epub",
     "html",
     "pdf",
@@ -736,6 +758,14 @@
     "txt"
    ],
    "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "gargantua-and-pantagruel": {
+   "en": [
     "epub",
     "html",
     "pdf",
@@ -1640,6 +1670,14 @@
     "txt"
    ]
   },
+  "orlando-furioso": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "othello": {
    "de": [
     "epub",
@@ -2295,6 +2333,14 @@
     "pdf",
     "txt"
    ],
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-confessions-of-jean-jacques-rousseau": {
    "en": [
     "epub",
     "html",
@@ -3795,5 +3841,5 @@
    ]
   }
  },
- "generated": "2026-10-04T01:41:21Z"
+ "generated": "2026-10-04T01:49:43Z"
 }
