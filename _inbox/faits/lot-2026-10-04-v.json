@@ -1,0 +1,116 @@
+{
+ "lot": "2026-10-04-v",
+ "books": [
+  {
+   "title": "Gargantua and Pantagruel",
+   "author": "François Rabelais",
+   "cat": "fiction",
+   "meta": "France · 1532–1564",
+   "desc": "The enormous appetites, education, wars and voyages of the giant Gargantua, his son Pantagruel and the cunning Panurge.",
+   "editions": [
+    {"lang": "en", "gid": 1200, "check": "gargantua", "credit": "Traduction : Sir Thomas Urquhart (1611-1660) et Peter Anthony Motteux (1660-1718)"}
+   ],
+   "about": [
+    "The five books tell of the giant Gargantua, his birth and his education, his war against the aggressive King Picrochole and the founding of the Abbey of Thélème for the warlike Friar John, then of his son Pantagruel, who befriends the witty rogue Panurge. When Panurge wonders whether he should marry, a long series of consultations leads the companions on a voyage across fantastic islands in search of the oracle of the Holy Bottle.",
+    "Rabelais's work mixes grotesque comedy, coarse humour, extraordinary wordplay and erudition, and satirises scholastic learning, the Church, war and the follies of his age. It was condemned as obscene by the theologians of the Sorbonne and gave the language the word \"Rabelaisian\".",
+    "Pantagruel was published first, around 1532, under the anagram Alcofribas Nasier, followed by Gargantua and the Third and Fourth Books; the Fifth Book appeared after Rabelais's death, around 1564. This classic English translation was begun by Sir Thomas Urquhart and completed by Peter Anthony Motteux."
+   ],
+   "author_short": "French writer, physician and priest (between 1483 and 1494–1553), author of Gargantua and Pantagruel.",
+   "author_long": [
+    "François Rabelais was born between 1483 and 1494 and died in 1553. In his time he was known above all as a physician, scholar, diplomat and Catholic priest.",
+    "He has been called the first great French prose author. His comic and satirical cycle Gargantua and Pantagruel, with its grotesque, larger-than-life characters, gave rise to the adjective \"Rabelaisian\"."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "Fables",
+   "author": "Jean de La Fontaine",
+   "cat": "theatre",
+   "meta": "France · 1668–1694",
+   "desc": "Twelve books of verse fables in which animals speak to reveal human vanity, greed and wisdom, from the Grasshopper and the Ant to the Wolf and the Lamb.",
+   "editions": [
+    {"lang": "en", "gid": 7241, "check": "fables", "credit": "Traduction : Elizur Wright (1804-1885)"},
+    {"lang": "fr", "gid": 56327, "check": "fables"}
+   ],
+   "about": [
+    "In short verse tales, the crow lets the fox flatter him out of his cheese, the hare loses his race against the tortoise, the frog swells up to rival the ox and the wolf finds a pretext to eat the lamb. Lions, foxes, rats, peasants, kings and gods act out lessons about power, prudence, pride and the ways of the world, often ending with a moral.",
+    "La Fontaine adapted many of his early fables from the classical fabulists Aesop, Babrius and Phaedrus, and later drew on Eastern sources. His supple, witty verse and his ironic observation of society have made the fables classics of French literature.",
+    "The Fables were published in several volumes between 1668 and 1694 and are divided into twelve books. The first collection of 1668 was dedicated to the Grand Dauphin, son of Louis XIV, and the last book, of 1694, to the young Duke of Burgundy. This edition offers the French original and the English verse translation by Elizur Wright."
+   ],
+   "author_short": "French poet and fabulist (1621–1695), one of the most widely read French poets of the seventeenth century.",
+   "author_long": [
+    "Jean de La Fontaine was born on 8 July 1621 at Château-Thierry, where his father held a post in the administration of waters and forests. After a long period of royal suspicion, he was admitted to the Académie Française. He died on 13 April 1695.",
+    "His Fables, published between 1668 and 1694, made him one of the most widely read French poets of his century."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "The Confessions of Jean-Jacques Rousseau",
+   "author": "Jean-Jacques Rousseau",
+   "cat": "philosophie",
+   "meta": "France · 1782–1789",
+   "desc": "Rousseau's account of his own life, from his childhood in Geneva to his years of fame and persecution, told with unprecedented frankness.",
+   "editions": [
+    {"lang": "en", "gid": 3913, "check": "confessions", "credit": "anonyme"}
+   ],
+   "about": [
+    "\"I have entered upon a performance which is without example\": Rousseau sets out to show himself exactly as he was. He recounts his childhood in Geneva, his flight at sixteen, his life with his protector Madame de Warens at Annecy and Chambéry, his wanderings and his first attempts at a career, then his years in Paris, his friendship and quarrel with Diderot, his life at the Hermitage, and the persecution that followed his writings, up to 1765.",
+    "Covering the first fifty-three years of his life, the Confessions are often regarded as the beginning of modern autobiography, notable for their detailed account of Rousseau's most humiliating and shameful moments as well as his feelings and ideas.",
+    "The work has two parts of six books each. Rousseau completed it around 1770, but it was published after his death: the first part in 1782 and the second in 1789. This anonymous English translation was privately printed in London in 1903."
+   ],
+   "author_short": "Genevan philosopher, writer and composer (1712–1778), author of The Social Contract, Emile and the Confessions.",
+   "author_long": [
+    "Jean-Jacques Rousseau was born on 28 June 1712 in the Republic of Geneva. He died on 2 July 1778.",
+    "His Discourse on Inequality, which argues that private property is the source of inequality, and The Social Contract, on the basis of legitimate political order, are cornerstones of modern political thought. His autobiographical writings, the Confessions and the unfinished Reveries of the Solitary Walker, gave a new importance to introspection."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "Essays",
+   "author": "Michel de Montaigne",
+   "cat": "philosophie",
+   "meta": "France · 1580–1595",
+   "desc": "Montaigne's three books of essays, in which he examines himself and everything from friendship and cannibals to death, education and experience.",
+   "editions": [
+    {"lang": "en", "gid": 3600, "check": "montaigne", "credit": "Traduction : Charles Cotton (1630-1687)"}
+   ],
+   "about": [
+    "In 107 chapters of varying length, Montaigne writes about himself and about anything that interests him: friendship, solitude, idleness, cannibals, the education of children, sadness, smells, coaches, experience, vanity, the fear of death and the art of living. \"Myself am the matter of my book\", he warns the reader at the outset, testing his judgement on each subject in turn.",
+    "Constantly quoting Greek and Latin authors, the essays examine the diversity of opinions, the fallibility of human knowledge and the folly of certainty, and created a new literary form, the personal essay.",
+    "Montaigne wrote and revised the Essays from about 1570 until his death in 1592; they were first published in 1580. This English translation by Charles Cotton, first published in the seventeenth century, is given in the edition of William Carew Hazlitt (1877), with a life and letters of Montaigne."
+   ],
+   "author_short": "French writer and philosopher (1533–1592), one of the most significant writers of the French Renaissance, creator of the essay.",
+   "author_long": [
+    "Michel Eyquem, Seigneur de Montaigne, was born on 28 February 1533 at the family estate, the Château de Montaigne, near Bordeaux. His father, Pierre Eyquem, was mayor of Bordeaux. He died on 13 September 1592.",
+    "His Essays, first published in 1580 and revised until his death, record \"some traits of my character and of my humours\" and made him one of the most significant writers of the French Renaissance."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "Orlando Furioso",
+   "author": "Ludovico Ariosto",
+   "cat": "aventure",
+   "meta": "Italy · 1532",
+   "desc": "During the war between Charlemagne and the Saracens, the paladin Orlando goes mad for love of the pagan princess Angelica, and a knight flies to the Moon to recover his wits.",
+   "editions": [
+    {"lang": "en", "gid": 615, "check": "orlando", "credit": "Traduction : William Stewart Rose (1775-1843)"}
+   ],
+   "about": [
+    "The Saracen king Agramant has invaded France and besieges Charlemagne in Paris. Around this war, Ariosto weaves dozens of adventures: the flight of the beautiful Angelica, pursued by many knights; the madness of the paladin Orlando when he learns that she loves the young soldier Medoro; the love between the Christian warrior-maiden Bradamante and the Saracen knight Ruggiero, ancestors of the House of Este; and the journey of the English knight Astolfo to the Moon on the winged hippogriff to bring back Orlando's lost wits.",
+    "Written in eight-line stanzas of ottava rima, the poem combines chivalric romance, irony, fantasy and humour, and turns the tradition of knightly epic towards gentle satire.",
+    "Orlando Furioso continues Boiardo's unfinished Orlando Innamorato. A first version of 40 cantos appeared in Ferrara in 1516, dedicated to Cardinal Ippolito d'Este; the final version of 46 cantos was published in 1532. In this English verse translation by William Stewart Rose, Ruggiero, Bradamante and Astolfo are called Rogero, Bradamant and Astolpho."
+   ],
+   "author_short": "Italian poet (1474–1533), author of the chivalric epic Orlando Furioso.",
+   "author_long": [
+    "Ludovico Ariosto was born on 8 September 1474 in Reggio nell'Emilia, where his father commanded the citadel. Obliged by his father to study law, he turned to poetry, and entered the service of Cardinal Ippolito d'Este. He died on 6 July 1533.",
+    "His masterpiece, Orlando Furioso, continues Boiardo's Orlando Innamorato and transforms the chivalric romance into a work of irony and fantasy."
+   ],
+   "librivox": []
+  }
+ ],
+ "refused": [
+  {"title": "The Mysteries of Paris (#33800)", "reason": "Volume 1 seulement."},
+  {"title": "Emile (#5427)", "reason": "Traductrice Barbara Foxley : dates non vérifiables."},
+  {"title": "The Wandering Jew (#3350)", "reason": "Note sur l'auteur d'origine non identifiée (édition moderne possible) ; statut non vérifiable."}
+ ]
+}
