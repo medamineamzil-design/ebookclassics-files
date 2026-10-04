@@ -1,0 +1,111 @@
+=== BookClassics — lot 2026-10-03-r — 2026-10-03 23:57 ===
+   1 livre(s) écarté(s) par l'agent, notés dans refuses.json
+== 1/4 Fabrication des livres (EPUB, PDF, TXT, HTML) ==
+… Swann's Way [en] — Gutenberg #7178
+   + swann-s-way [en] OK — Project Gutenberg (#7178), 195229 mots, 10 chapitres — epub:468Ko pdf:2255Ko txt:1059Ko html:1097Ko
+… Swann's Way [fr] — Gutenberg #2650
+   + swann-s-way [fr] OK — Project Gutenberg (#2650), 166202 mots, 5 chapitres — epub:438Ko pdf:2014Ko txt:1023Ko html:1034Ko
+… The Ladies' Paradise [en] — Gutenberg #54726
+   + the-ladies-paradise [en] OK — Project Gutenberg (#54726), 164539 mots, 13 chapitres — epub:433Ko pdf:2061Ko txt:928Ko html:979Ko
+… The Ladies' Paradise [fr] — Gutenberg #16852
+   + the-ladies-paradise [fr] OK — Project Gutenberg (#16852), 149268 mots, 14 chapitres — epub:422Ko pdf:2036Ko txt:913Ko html:979Ko
+… The Princess of Clèves [en] — Gutenberg #467
+   + the-princess-of-cleves [en] OK — Project Gutenberg (#467), 61552 mots, 4 chapitres — epub:179Ko pdf:714Ko txt:324Ko html:336Ko
+… The Princess of Clèves [fr] — Gutenberg #18797
+   + the-princess-of-cleves [fr] OK — Project Gutenberg (#18797), 58937 mots, 8 chapitres — epub:183Ko pdf:733Ko txt:337Ko html:368Ko
+… Five Weeks in a Balloon [en] — Gutenberg #3526
+   + five-weeks-in-a-balloon [en] OK — Project Gutenberg (#3526), 90376 mots, 44 chapitres — epub:314Ko pdf:1407Ko txt:523Ko html:546Ko
+… Five Weeks in a Balloon [fr] — Gutenberg #4548
+   + five-weeks-in-a-balloon [fr] OK — Project Gutenberg (#4548), 79619 mots, 43 chapitres — epub:303Ko pdf:1328Ko txt:490Ko html:535Ko
+… Atala [en] — Gutenberg #44427
+   + atala [en] OK — Project Gutenberg (#44427), 26666 mots, 7 chapitres — epub:120Ko pdf:385Ko txt:146Ko html:152Ko
+== 2/4 Dépôt des livres ==
++ Swann's Way : en, fr
++ The Ladies' Paradise : en, fr
++ The Princess of Clèves : en, fr
++ Five Weeks in a Balloon : en, fr
++ Atala : en
+   publié : ebookclassics-files — Nouveaux livres : Swann's Way, The Ladies' Paradise, The Princess of Clèves, Five Weeks in a Balloon, Atala
+== 3/4 Site : catalogue, pages livres, plan du site ==
+   226 pages livres, 225 couvertures, 231 adresses dans le sitemap
+   5 livre(s) ajouté(s) au catalogue
+   publié : ebookclassics-site — Nouveaux livres au catalogue : Swann's Way, The Ladies' Paradise, The Princess of Clèves, Five Weeks in a Balloon, Atala
+TERMINE — 5 nouveau(x) livre(s) : Swann's Way, The Ladies' Paradise, The Princess of Clèves, Five Weeks in a Balloon, Atala
+=== BookClassics — lot 2026-10-03-s — 2026-10-03 23:59 ===
+   1 livre(s) écarté(s) par l'agent, notés dans refuses.json
+== 1/4 Fabrication des livres (EPUB, PDF, TXT, HTML) ==
+… The Sorrows of Young Werther [en] — Gutenberg #2527
+   + the-sorrows-of-young-werther [en] OK — Project Gutenberg (#2527), 42482 mots, 7 chapitres — epub:174Ko pdf:595Ko txt:230Ko html:242Ko
+… The Sorrows of Young Werther [fr] — Gutenberg #62368
+   + the-sorrows-of-young-werther [fr] OK — Project Gutenberg (#62368), 54813 mots, 9 chapitres — epub:187Ko pdf:735Ko txt:320Ko html:347Ko
+… Apology [en] — Gutenberg #1656
+   + apology [en] OK — Project Gutenberg (#1656), 16080 mots, 5 chapitres — epub:85Ko pdf:247Ko txt:84Ko html:88Ko
+… Symposium [en] — Gutenberg #1600
+   + symposium [en] OK — Project Gutenberg (#1600), 32583 mots, 12 chapitres — epub:123Ko pdf:451Ko txt:174Ko html:183Ko
+… Hedda Gabler [en] — Gutenberg #4093
+   + hedda-gabler [en] OK — Project Gutenberg (#4093), 28990 mots, 6 chapitres — epub:125Ko pdf:733Ko txt:161Ko html:186Ko
+… The School for Scandal [en] — Gutenberg #1929
+   + the-school-for-scandal [en] OK — Project Gutenberg (#1929), 28862 mots, 17 chapitres — epub:151Ko pdf:636Ko txt:166Ko html:185Ko
+== 2/4 Dépôt des livres ==
++ The Sorrows of Young Werther : en, fr
++ Apology : en
++ Symposium : en
++ Hedda Gabler : en
++ The School for Scandal : en
+   publié : ebookclassics-files — Nouveaux livres : The Sorrows of Young Werther, Apology, Symposium, Hedda Gabler, The School for Scandal
+== 3/4 Site : catalogue, pages livres, plan du site ==
+   231 pages livres, 230 couvertures, 236 adresses dans le sitemap
+   5 livre(s) ajouté(s) au catalogue
+   publié : ebookclassics-site — Nouveaux livres au catalogue : The Sorrows of Young Werther, Apology, Symposium, Hedda Gabler, The School for Scandal
+TERMINE — 5 nouveau(x) livre(s) : The Sorrows of Young Werther, Apology, Symposium, Hedda Gabler, The School for Scandal
+=== BookClassics — lot 2026-10-03-t — 2026-10-03 23:59 ===
+== 1/4 Fabrication des livres (EPUB, PDF, TXT, HTML) ==
+… Barnaby Rudge [en] — Gutenberg #917
+   + barnaby-rudge [en] OK — Project Gutenberg (#917), 253219 mots, 82 chapitres — epub:704Ko pdf:3328Ko txt:1411Ko html:1447Ko
+… The Ambassadors [en] — Gutenberg #432
+   + the-ambassadors [en] OK — Project Gutenberg (#432), 161959 mots, 36 chapitres — epub:441Ko pdf:2071Ko txt:910Ko html:932Ko
+… The Sea-Wolf [en] — Gutenberg #1074
+   + the-sea-wolf [en] OK — Project Gutenberg (#1074), 105551 mots, 38 chapitres — epub:321Ko pdf:1410Ko txt:575Ko html:594Ko
+… The Thirty-Nine Steps [en] — Gutenberg #558
+   + the-thirty-nine-steps [en] OK — Project Gutenberg (#558), 40883 mots, 10 chapitres — epub:158Ko pdf:566Ko txt:212Ko html:222Ko
+… The Princess and the Goblin [en] — Gutenberg #708
+   + the-princess-and-the-goblin [en] OK — Project Gutenberg (#708), 50951 mots, 32 chapitres — epub:196Ko pdf:763Ko txt:268Ko html:296Ko
+== 2/4 Dépôt des livres ==
++ Barnaby Rudge : en
++ The Ambassadors : en
++ The Sea-Wolf : en
++ The Thirty-Nine Steps : en
++ The Princess and the Goblin : en
+   publié : ebookclassics-files — Nouveaux livres : Barnaby Rudge, The Ambassadors, The Sea-Wolf, The Thirty-Nine Steps, The Princess and the Goblin
+== 3/4 Site : catalogue, pages livres, plan du site ==
+   236 pages livres, 235 couvertures, 241 adresses dans le sitemap
+   5 livre(s) ajouté(s) au catalogue
+   publié : ebookclassics-site — Nouveaux livres au catalogue : Barnaby Rudge, The Ambassadors, The Sea-Wolf, The Thirty-Nine Steps, The Princess and the Goblin
+TERMINE — 5 nouveau(x) livre(s) : Barnaby Rudge, The Ambassadors, The Sea-Wolf, The Thirty-Nine Steps, The Princess and the Goblin
+== Livres audio du lot 2026-10-03-r ==
+   LibriVox : Swann's Way [en] — « Swann's Way » (24 h 17)
+   pas d'enregistrement LibriVox pour Swann's Way [fr]
+   LibriVox : The Ladies' Paradise [en] — « Ladies' Paradise » (16 h 11)
+   pas d'enregistrement LibriVox pour The Ladies' Paradise [fr]
+   pas d'enregistrement LibriVox pour The Princess of Clèves [en]
+   pas d'enregistrement LibriVox pour The Princess of Clèves [fr]
+   LibriVox : Five Weeks in a Balloon [en] — « Five Weeks in a Balloon » (8 h 16)
+   LibriVox : Five Weeks in a Balloon [fr] — « Cinq semaines en ballon » (9 h 35)
+   LibriVox : Atala [en] — « Atala » (3 h 15)
+   ! ~/r2.conf absent : livres audio non ajoutés
+== Livres audio du lot 2026-10-03-s ==
+   LibriVox : The Sorrows of Young Werther [en] — « Sorrows of Young Werther » (4 h 43)
+   pas d'enregistrement LibriVox pour The Sorrows of Young Werther [fr]
+   pas d'enregistrement LibriVox pour Apology [en]
+   LibriVox : Symposium [en] — « Symposium (version 2) (dramatic reading) » (2 h 32)
+   pas d'enregistrement LibriVox pour Hedda Gabler [en]
+   LibriVox : The School for Scandal [en] — « School For Scandal » (2 h 56)
+   ! ~/r2.conf absent : livres audio non ajoutés
+== Livres audio du lot 2026-10-03-t ==
+   LibriVox : Barnaby Rudge [en] — « Barnaby Rudge (version 2) » (29 h 00)
+   LibriVox : The Ambassadors [en] — « Ambassadors » (16 h 46)
+   pas d'enregistrement LibriVox pour The Sea-Wolf [en]
+   LibriVox : The Thirty-Nine Steps [en] — « Thirty-Nine Steps (Version 2) » (4 h 37)
+   LibriVox : The Princess and the Goblin [en] — « Princess and the Goblin » (5 h 31)
+   ! ~/r2.conf absent : livres audio non ajoutés
+FIN 2026-10-04 00:05
