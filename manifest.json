@@ -662,6 +662,14 @@
     "txt"
    ]
   },
+  "greenmantle": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "grimm-s-fairy-tales": {
    "de": [
     "epub",
@@ -1228,6 +1236,14 @@
     "txt"
    ]
   },
+  "nostromo": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "notes-from-underground": {
    "en": [
     "epub",
@@ -1525,6 +1541,14 @@
    ]
   },
   "sense-and-sensibility": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "she": {
    "en": [
     "epub",
     "html",
@@ -2098,6 +2122,14 @@
     "txt"
    ]
   },
+  "the-master-of-ballantrae": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-mayor-of-casterbridge": {
    "en": [
     "epub",
@@ -2466,6 +2498,14 @@
     "txt"
    ],
    "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-story-of-the-treasure-seekers": {
+   "en": [
     "epub",
     "html",
     "pdf",
@@ -2887,5 +2927,5 @@
    ]
   }
  },
- "generated": "2026-10-04T00:12:46Z"
+ "generated": "2026-10-04T00:25:04Z"
 }
