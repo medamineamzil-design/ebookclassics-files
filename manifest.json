@@ -32,6 +32,14 @@
     "txt"
    ]
   },
+  "a-little-princess": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "a-midsummer-night-s-dream": {
    "de": [
     "epub",
@@ -273,6 +281,14 @@
    ]
   },
   "barnaby-rudge": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "bartleby-the-scrivener": {
    "en": [
     "epub",
     "html",
@@ -981,6 +997,14 @@
    ]
   },
   "little-women": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "looking-backward-2000-1887": {
    "en": [
     "epub",
     "html",
@@ -2310,6 +2334,14 @@
     "txt"
    ]
   },
+  "the-pathfinder": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-phantom-of-the-opera": {
    "en": [
     "epub",
@@ -2788,6 +2820,14 @@
     "txt"
    ]
   },
+  "the-yellow-wallpaper": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "through-the-looking-glass": {
    "en": [
     "epub",
@@ -3007,5 +3047,5 @@
    ]
   }
  },
- "generated": "2026-10-04T00:26:13Z"
+ "generated": "2026-10-04T00:26:48Z"
 }
