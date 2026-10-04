@@ -1,0 +1,264 @@
+=== BookClassics — lot 2026-10-03-z — 2026-10-04 00:23 ===
+== 1/4 Fabrication des livres (EPUB, PDF, TXT, HTML) ==
+… She [en] — Gutenberg #3155
+   + she [en] OK — Project Gutenberg (#3155), 111794 mots, 28 chapitres — epub:320Ko pdf:1371Ko txt:600Ko html:614Ko
+… The Master of Ballantrae [en] — Gutenberg #864
+   + the-master-of-ballantrae [en] OK — Project Gutenberg (#864), 86938 mots, 12 chapitres — epub:263Ko pdf:1100Ko txt:460Ko html:473Ko
+… Nostromo [en] — Gutenberg #2021
+   + nostromo [en] OK — Project Gutenberg (#2021), 170381 mots, 28 chapitres — epub:459Ko pdf:2107Ko txt:954Ko html:973Ko
+… Greenmantle [en] — Gutenberg #559
+   + greenmantle [en] OK — Project Gutenberg (#559), 98700 mots, 22 chapitres — epub:287Ko pdf:1251Ko txt:516Ko html:532Ko
+… The Story of the Treasure Seekers [en] — Gutenberg #770
+   + the-story-of-the-treasure-seekers [en] OK — Project Gutenberg (#770), 52517 mots, 17 chapitres — epub:187Ko pdf:735Ko txt:273Ko html:286Ko
+== 2/4 Dépôt des livres ==
++ She : en
++ The Master of Ballantrae : en
++ Nostromo : en
++ Greenmantle : en
++ The Story of the Treasure Seekers : en
+   publié : ebookclassics-files — Nouveaux livres : She, The Master of Ballantrae, Nostromo, Greenmantle, The Story of the Treasure Seekers
+== 3/4 Site : catalogue, pages livres, plan du site ==
+   266 pages livres, 265 couvertures, 271 adresses dans le sitemap
+   5 livre(s) ajouté(s) au catalogue
+   publié : ebookclassics-site — Nouveaux livres au catalogue : She, The Master of Ballantrae, Nostromo, Greenmantle, The Story of the Treasure Seekers
+TERMINE — 5 nouveau(x) livre(s) : She, The Master of Ballantrae, Nostromo, Greenmantle, The Story of the Treasure Seekers
+=== BookClassics — lot 2026-10-04-a — 2026-10-04 00:25 ===
+== 1/4 Fabrication des livres (EPUB, PDF, TXT, HTML) ==
+… Carmilla [en] — Gutenberg #10007
+   + carmilla [en] OK — Project Gutenberg (#10007), 28026 mots, 16 chapitres — epub:130Ko pdf:454Ko txt:153Ko html:162Ko
+… The King in Yellow [en] — Gutenberg #8492
+   + the-king-in-yellow [en] OK — Project Gutenberg (#8492), 71458 mots, 26 chapitres — epub:248Ko pdf:1058Ko txt:397Ko html:415Ko
+… The Canterville Ghost [en] — Gutenberg #14522
+   + the-canterville-ghost [en] OK — Project Gutenberg (#14522), 11277 mots, 7 chapitres — epub:92Ko pdf:221Ko txt:61Ko html:68Ko
+… Major Barbara [en] — Gutenberg #3790
+   + major-barbara [en] OK — Project Gutenberg (#3790), 32610 mots, 4 chapitres — epub:133Ko pdf:543Ko txt:178Ko html:193Ko
+… The Black Arrow [en] — Gutenberg #848
+   + the-black-arrow [en] OK — Project Gutenberg (#848), 79520 mots, 32 chapitres — epub:264Ko pdf:1133Ko txt:426Ko html:467Ko
+== 2/4 Dépôt des livres ==
++ Carmilla : en
++ The King in Yellow : en
++ The Canterville Ghost : en
++ Major Barbara : en
++ The Black Arrow : en
+   publié : ebookclassics-files — Nouveaux livres : Carmilla, The King in Yellow, The Canterville Ghost, Major Barbara, The Black Arrow
+== 3/4 Site : catalogue, pages livres, plan du site ==
+   271 pages livres, 270 couvertures, 276 adresses dans le sitemap
+   5 livre(s) ajouté(s) au catalogue
+   publié : ebookclassics-site — Nouveaux livres au catalogue : Carmilla, The King in Yellow, The Canterville Ghost, Major Barbara, The Black Arrow
+TERMINE — 5 nouveau(x) livre(s) : Carmilla, The King in Yellow, The Canterville Ghost, Major Barbara, The Black Arrow
+=== BookClassics — lot 2026-10-04-b — 2026-10-04 00:25 ===
+   1 livre(s) écarté(s) par l'agent, notés dans refuses.json
+== 1/4 Fabrication des livres (EPUB, PDF, TXT, HTML) ==
+… The Toilers of the Sea [en] — Gutenberg #32338
+   + the-toilers-of-the-sea [en] OK — Project Gutenberg (#32338), 144643 mots, 20 chapitres — epub:400Ko pdf:1957Ko txt:810Ko html:852Ko
+… Lost Illusions [en] — Gutenberg #13159
+   + lost-illusions [en] OK — Project Gutenberg (#13159), 251404 mots, 5 chapitres — epub:591Ko pdf:3100Ko txt:1384Ko html:1464Ko
+… Phaedra [en] — Gutenberg #1977
+   + phaedra [en] OK — Project Gutenberg (#1977), 13984 mots, 5 chapitres — epub:89Ko pdf:259Ko txt:75Ko html:83Ko
+… Volpone [en] — Gutenberg #4039
+   + volpone [en] OK — Project Gutenberg (#4039), 49095 mots, 6 chapitres — epub:182Ko pdf:995Ko txt:283Ko html:316Ko
+… Typhoon [en] — Gutenberg #1142
+   + typhoon [en] OK — Project Gutenberg (#1142), 31152 mots, 6 chapitres — epub:128Ko pdf:457Ko txt:171Ko html:181Ko
+== 2/4 Dépôt des livres ==
++ The Toilers of the Sea : en
++ Lost Illusions : en
++ Phaedra : en
++ Volpone : en
++ Typhoon : en
+   publié : ebookclassics-files — Nouveaux livres : The Toilers of the Sea, Lost Illusions, Phaedra, Volpone, Typhoon
+== 3/4 Site : catalogue, pages livres, plan du site ==
+   276 pages livres, 275 couvertures, 281 adresses dans le sitemap
+   5 livre(s) ajouté(s) au catalogue
+   publié : ebookclassics-site — Nouveaux livres au catalogue : The Toilers of the Sea, Lost Illusions, Phaedra, Volpone, Typhoon
+TERMINE — 5 nouveau(x) livre(s) : The Toilers of the Sea, Lost Illusions, Phaedra, Volpone, Typhoon
+=== BookClassics — lot 2026-10-04-c — 2026-10-04 00:26 ===
+== 1/4 Fabrication des livres (EPUB, PDF, TXT, HTML) ==
+… The Yellow Wallpaper [en] — Gutenberg #1952
+   + the-yellow-wallpaper [en] OK — Project Gutenberg (#1952), 5802 mots, 0 chapitres — epub:82Ko pdf:168Ko txt:29Ko html:35Ko
+… Bartleby, the Scrivener [en] — Gutenberg #11231
+   + bartleby-the-scrivener [en] OK — Project Gutenberg (#11231), 14358 mots, 5 chapitres — epub:103Ko pdf:275Ko txt:81Ko html:87Ko
+… Looking Backward: 2000–1887 [en] — Gutenberg #25439
+   + looking-backward-2000-1887 [en] OK — Project Gutenberg (#25439), 82475 mots, 27 chapitres — epub:273Ko pdf:1075Ko txt:455Ko html:479Ko
+… The Pathfinder [en] — Gutenberg #1880
+   + the-pathfinder [en] OK — Project Gutenberg (#1880), 176746 mots, 29 chapitres — epub:459Ko pdf:2204Ko txt:966Ko html:998Ko
+… A Little Princess [en] — Gutenberg #146
+   + a-little-princess [en] OK — Project Gutenberg (#146), 66360 mots, 4 chapitres — epub:194Ko pdf:926Ko txt:355Ko html:393Ko
+== 2/4 Dépôt des livres ==
++ The Yellow Wallpaper : en
++ Bartleby, the Scrivener : en
++ Looking Backward: 2000–1887 : en
++ The Pathfinder : en
++ A Little Princess : en
+   publié : ebookclassics-files — Nouveaux livres : The Yellow Wallpaper, Bartleby, the Scrivener, Looking Backward: 2000–1887, The Pathfinder, A Little Princess
+== 3/4 Site : catalogue, pages livres, plan du site ==
+   281 pages livres, 280 couvertures, 286 adresses dans le sitemap
+   5 livre(s) ajouté(s) au catalogue
+   publié : ebookclassics-site — Nouveaux livres au catalogue : The Yellow Wallpaper, Bartleby, the Scrivener, Looking Backward: 2000–1887, The Pathfinder, A Little Princess
+TERMINE — 5 nouveau(x) livre(s) : The Yellow Wallpaper, Bartleby, the Scrivener, Looking Backward: 2000–1887, The Pathfinder, A Little Princess
+=== BookClassics — lot 2026-10-04-d — 2026-10-04 00:27 ===
+== 1/4 Fabrication des livres (EPUB, PDF, TXT, HTML) ==
+… The Return of Sherlock Holmes [en] — Gutenberg #108
+   + the-return-of-sherlock-holmes [en] OK — Project Gutenberg (#108), 112092 mots, 19 chapitres — epub:316Ko pdf:1521Ko txt:606Ko html:628Ko
+… The Duchess of Malfi [en] — Gutenberg #2232
+   + the-duchess-of-malfi [en] OK — Project Gutenberg (#2232), 26437 mots, 19 chapitres — epub:139Ko pdf:539Ko txt:156Ko html:174Ko
+… The Water-Babies [en] — Gutenberg #1018
+   + the-water-babies [en] OK — Project Gutenberg (#1018), 68630 mots, 10 chapitres — epub:207Ko pdf:891Ko txt:361Ko html:374Ko
+… Utopia [en] — Gutenberg #2130
+   + utopia [en] OK — Project Gutenberg (#2130), 43519 mots, 10 chapitres — epub:145Ko pdf:541Ko txt:232Ko html:237Ko
+… Allan Quatermain [en] — Gutenberg #711
+   + allan-quatermain [en] OK — Project Gutenberg (#711), 106132 mots, 24 chapitres — epub:312Ko pdf:1283Ko txt:567Ko html:579Ko
+== 2/4 Dépôt des livres ==
++ The Return of Sherlock Holmes : en
++ The Duchess of Malfi : en
++ The Water-Babies : en
++ Utopia : en
++ Allan Quatermain : en
+   publié : ebookclassics-files — Nouveaux livres : The Return of Sherlock Holmes, The Duchess of Malfi, The Water-Babies, Utopia, Allan Quatermain
+== 3/4 Site : catalogue, pages livres, plan du site ==
+   286 pages livres, 285 couvertures, 291 adresses dans le sitemap
+   5 livre(s) ajouté(s) au catalogue
+   publié : ebookclassics-site — Nouveaux livres au catalogue : The Return of Sherlock Holmes, The Duchess of Malfi, The Water-Babies, Utopia, Allan Quatermain
+TERMINE — 5 nouveau(x) livre(s) : The Return of Sherlock Holmes, The Duchess of Malfi, The Water-Babies, Utopia, Allan Quatermain
+=== BookClassics — lot 2026-10-04-e — 2026-10-04 00:27 ===
+   4 livre(s) écarté(s) par l'agent, notés dans refuses.json
+== 1/4 Fabrication des livres (EPUB, PDF, TXT, HTML) ==
+… The Possessed [en] — Gutenberg #8117
+   + the-possessed [en] OK — Project Gutenberg (#8117), 253360 mots, 106 chapitres — epub:699Ko pdf:3410Ko txt:1397Ko html:1521Ko
+… The Possessed [fr] — Gutenberg #16824
+   + the-possessed [fr] OK — Project Gutenberg (#16824), 243168 mots, 116 chapitres — epub:733Ko pdf:3624Ko txt:1475Ko html:1597Ko
+… First Love and Other Stories [en] — Gutenberg #56878
+   + first-love-and-other-stories [en] OK — Project Gutenberg (#56878), 76090 mots, 57 chapitres — epub:289Ko pdf:1238Ko txt:441Ko html:459Ko
+… Beyond Good and Evil [en] — Gutenberg #4363
+   + beyond-good-and-evil [en] OK — Project Gutenberg (#4363), 62459 mots, 9 chapitres — epub:226Ko pdf:859Ko txt:371Ko html:387Ko
+… Beyond Good and Evil [de] — Gutenberg #7204
+   + beyond-good-and-evil [de] OK — Project Gutenberg (#7204), 58838 mots, 0 chapitres — epub:217Ko pdf:912Ko txt:388Ko html:405Ko
+… The Robbers [en] — Gutenberg #6782
+   + the-robbers [en] OK — Project Gutenberg (#6782), 49858 mots, 20 chapitres — epub:188Ko pdf:791Ko txt:273Ko html:290Ko
+… The Robbers [de] — Gutenberg #47804
+   + the-robbers [de] OK — Project Gutenberg (#47804), 46179 mots, 0 chapitres — epub:180Ko pdf:780Ko txt:289Ko html:304Ko
+… In Search of the Castaways [en] — Gutenberg #2083
+   + in-search-of-the-castaways [en] OK — Project Gutenberg (#2083), 155579 mots, 66 chapitres — epub:484Ko pdf:2300Ko txt:896Ko html:932Ko
+… In Search of the Castaways [fr] — Gutenberg #14163
+   + in-search-of-the-castaways [fr] OK — Project Gutenberg (#14163), 191953 mots, 69 chapitres — epub:616Ko pdf:3009Ko txt:1229Ko html:1275Ko
+== 2/4 Dépôt des livres ==
++ The Possessed : en, fr
++ First Love and Other Stories : en
++ Beyond Good and Evil : en, de
++ The Robbers : en, de
++ In Search of the Castaways : en, fr
+   publié : ebookclassics-files — Nouveaux livres : The Possessed, First Love and Other Stories, Beyond Good and Evil, The Robbers, In Search of the Castaways
+== 3/4 Site : catalogue, pages livres, plan du site ==
+   291 pages livres, 290 couvertures, 296 adresses dans le sitemap
+   5 livre(s) ajouté(s) au catalogue
+   publié : ebookclassics-site — Nouveaux livres au catalogue : The Possessed, First Love and Other Stories, Beyond Good and Evil, The Robbers, In Search of the Castaways
+TERMINE — 5 nouveau(x) livre(s) : The Possessed, First Love and Other Stories, Beyond Good and Evil, The Robbers, In Search of the Castaways
+=== BookClassics — lot 2026-10-04-f — 2026-10-04 00:28 ===
+== 1/4 Fabrication des livres (EPUB, PDF, TXT, HTML) ==
+… Phaedo [en] — Gutenberg #1658
+   + phaedo [en] OK — Project Gutenberg (#1658), 42714 mots, 22 chapitres — epub:144Ko pdf:605Ko txt:227Ko html:238Ko
+… Leviathan [en] — Gutenberg #3207
+   + leviathan [en] OK — Project Gutenberg (#3207), 211944 mots, 48 chapitres — epub:512Ko pdf:2547Ko txt:1172Ko html:1201Ko
+… The Wild Duck [en] — Gutenberg #73631
+   + the-wild-duck [en] OK — Project Gutenberg (#73631), 31340 mots, 5 chapitres — epub:123Ko pdf:597Ko txt:173Ko html:189Ko
+… Kipps [en] — Gutenberg #39162
+   + kipps [en] OK — Project Gutenberg (#39162), 110264 mots, 15 chapitres — epub:310Ko pdf:1543Ko txt:614Ko html:684Ko
+… Jo's Boys [en] — Gutenberg #3499
+   + jo-s-boys [en] OK — Project Gutenberg (#3499), 100443 mots, 22 chapitres — epub:297Ko pdf:1265Ko txt:528Ko html:566Ko
+== 2/4 Dépôt des livres ==
++ Phaedo : en
++ Leviathan : en
++ The Wild Duck : en
++ Kipps : en
++ Jo's Boys : en
+   publié : ebookclassics-files — Nouveaux livres : Phaedo, Leviathan, The Wild Duck, Kipps, Jo's Boys
+== 3/4 Site : catalogue, pages livres, plan du site ==
+   296 pages livres, 295 couvertures, 301 adresses dans le sitemap
+   5 livre(s) ajouté(s) au catalogue
+   publié : ebookclassics-site — Nouveaux livres au catalogue : Phaedo, Leviathan, The Wild Duck, Kipps, Jo's Boys
+TERMINE — 5 nouveau(x) livre(s) : Phaedo, Leviathan, The Wild Duck, Kipps, Jo's Boys
+=== BookClassics — lot 2026-10-04-g — 2026-10-04 00:29 ===
+   1 livre(s) écarté(s) par l'agent, notés dans refuses.json
+== 1/4 Fabrication des livres (EPUB, PDF, TXT, HTML) ==
+… The Aeneid [en] — Gutenberg #228
+   + the-aeneid [en] OK — Project Gutenberg (#228), 107516 mots, 12 chapitres — epub:313Ko pdf:1275Ko txt:614Ko html:622Ko
+… The Consolation of Philosophy [en] — Gutenberg #14328
+   + the-consolation-of-philosophy [en] OK — Project Gutenberg (#14328), 42191 mots, 38 chapitres — epub:189Ko pdf:684Ko txt:234Ko html:252Ko
+… The Song of Roland [en] — Gutenberg #391
+   + the-song-of-roland [en] OK — Project Gutenberg (#391), 32345 mots, 0 chapitres — epub:131Ko pdf:476Ko txt:176Ko html:194Ko
+… The Rivals [en] — Gutenberg #24761
+   + the-rivals [en] OK — Project Gutenberg (#24761), 28186 mots, 23 chapitres — epub:139Ko pdf:548Ko txt:158Ko html:175Ko
+… The Kalevala [en] — Gutenberg #5186
+   + the-kalevala [en] OK — Project Gutenberg (#5186), 137227 mots, 7 chapitres — epub:331Ko pdf:1650Ko txt:803Ko html:816Ko
+== 2/4 Dépôt des livres ==
++ The Aeneid : en
++ The Consolation of Philosophy : en
++ The Song of Roland : en
++ The Rivals : en
++ The Kalevala : en
+   publié : ebookclassics-files — Nouveaux livres : The Aeneid, The Consolation of Philosophy, The Song of Roland, The Rivals, The Kalevala
+== 3/4 Site : catalogue, pages livres, plan du site ==
+   301 pages livres, 300 couvertures, 306 adresses dans le sitemap
+   5 livre(s) ajouté(s) au catalogue
+   publié : ebookclassics-site — Nouveaux livres au catalogue : The Aeneid, The Consolation of Philosophy, The Song of Roland, The Rivals, The Kalevala
+TERMINE — 5 nouveau(x) livre(s) : The Aeneid, The Consolation of Philosophy, The Song of Roland, The Rivals, The Kalevala
+== Livres audio du lot 2026-10-03-z ==
+   pas d'enregistrement LibriVox pour She [en]
+   pas d'enregistrement LibriVox pour The Master of Ballantrae [en]
+   LibriVox : Nostromo [en] — « Nostromo (Version 2) » (18 h 00)
+   LibriVox : Greenmantle [en] — « Greenmantle (Version 3) » (9 h 44)
+   LibriVox : The Story of the Treasure Seekers [en] — « Story of The Treasure Seekers (version 2) » (6 h 06)
+   ! ~/r2.conf absent : livres audio non ajoutés
+== Livres audio du lot 2026-10-04-a ==
+   LibriVox : Carmilla [en] — « Carmilla (Version 3) » (4 h 38)
+   LibriVox : The King in Yellow [en] — « King in Yellow (Version 2) » (7 h 44)
+   LibriVox : The Canterville Ghost [en] — « Canterville Ghost » (1 h 23)
+   LibriVox : Major Barbara [en] — « Major Barbara » (3 h 14)
+   LibriVox : The Black Arrow [en] — « Black Arrow » (8 h 54)
+   ! ~/r2.conf absent : livres audio non ajoutés
+== Livres audio du lot 2026-10-04-b ==
+   LibriVox : The Toilers of the Sea [en] — « Toilers of the Sea (Version 2) » (17 h 04)
+   pas d'enregistrement LibriVox pour Lost Illusions [en]
+   LibriVox : Phaedra [en] — « Phaedra » (1 h 38)
+   pas d'enregistrement LibriVox pour Volpone [en]
+   LibriVox : Typhoon [en] — « Typhoon (version 2) » (3 h 33)
+   ! ~/r2.conf absent : livres audio non ajoutés
+== Livres audio du lot 2026-10-04-c ==
+   pas d'enregistrement LibriVox pour The Yellow Wallpaper [en]
+   LibriVox : Bartleby, the Scrivener [en] — « Bartleby, the Scrivener (version 2) » (1 h 55)
+   pas d'enregistrement LibriVox pour Looking Backward: 2000–1887 [en]
+   pas d'enregistrement LibriVox pour The Pathfinder [en]
+   LibriVox : A Little Princess [en] — « Little Princess » (7 h 35)
+   ! ~/r2.conf absent : livres audio non ajoutés
+== Livres audio du lot 2026-10-04-d ==
+   LibriVox : The Return of Sherlock Holmes [en] — « Return of Sherlock Holmes (Version 3) » (11 h 51)
+   LibriVox : The Duchess of Malfi [en] — « Duchess of Malfi » (2 h 58)
+   LibriVox : The Water-Babies [en] — « Water-Babies » (7 h 05)
+   pas d'enregistrement LibriVox pour Utopia [en]
+   LibriVox : Allan Quatermain [en] — « Allan Quatermain » (13 h 07)
+   ! ~/r2.conf absent : livres audio non ajoutés
+== Livres audio du lot 2026-10-04-e ==
+   pas d'enregistrement LibriVox pour The Possessed [en]
+   pas d'enregistrement LibriVox pour The Possessed [fr]
+   pas d'enregistrement LibriVox pour First Love and Other Stories [en]
+   pas d'enregistrement LibriVox pour Beyond Good and Evil [de]
+   LibriVox : Beyond Good and Evil [en] — « Beyond Good and Evil » (8 h 02)
+   pas d'enregistrement LibriVox pour The Robbers [de]
+   pas d'enregistrement LibriVox pour The Robbers [en]
+   LibriVox : In Search of the Castaways [en] — « In Search of the Castaways » (17 h 01)
+   pas d'enregistrement LibriVox pour In Search of the Castaways [fr]
+   ! ~/r2.conf absent : livres audio non ajoutés
+== Livres audio du lot 2026-10-04-f ==
+   LibriVox : Phaedo [en] — « Phaedo » (3 h 03)
+   pas d'enregistrement LibriVox pour Leviathan [en]
+   LibriVox : The Wild Duck [en] — « Wild Duck » (3 h 23)
+   LibriVox : Kipps [en] — « Kipps » (11 h 55)
+   LibriVox : Jo's Boys [en] — « Jo's Boys (version 2 Dramatic Reading) » (10 h 55)
+   ! ~/r2.conf absent : livres audio non ajoutés
+== Livres audio du lot 2026-10-04-g ==
+   LibriVox : The Aeneid [en] — « Aeneid » (13 h 38)
+   LibriVox : The Consolation of Philosophy [en] — « Consolation of Philosophy » (5 h 13)
+   LibriVox : The Song of Roland [en] — « Song of Roland » (3 h 55)
+   LibriVox : The Rivals [en] — « Rivals » (3 h 03)
+   pas d'enregistrement LibriVox pour The Kalevala [en]
+   ! ~/r2.conf absent : livres audio non ajoutés
+FIN 2026-10-04 00:31
