@@ -1,0 +1,93 @@
+{
+ "lot": "2026-10-04-m",
+ "books": [
+  {
+   "title": "The Valley of Fear",
+   "author": "Arthur Conan Doyle",
+   "cat": "fiction",
+   "meta": "England · 1915",
+   "desc": "A coded warning from inside Moriarty's organisation leads Sherlock Holmes to a murder in a moated manor house, whose roots lie in an American mining valley.",
+   "editions": [
+    {"lang": "en", "gid": 3289, "check": "valley of fear"}
+   ],
+   "about": [
+    "Holmes receives a cipher message from Fred Porlock, an informer within the organisation of Professor Moriarty, warning of danger to a man named Douglas of Birlstone House. Almost at once Inspector MacDonald arrives at Baker Street with the news that Douglas has been murdered. Holmes and Watson travel to Birlstone, a manor surrounded by a moat, where Cecil Barker, a frequent guest, discovered the body. The second part of the novel moves back in time to the coal-mining Vermissa Valley in the United States, terrorised by a secret society, the Scowrers, which the newcomer McMurdo joins.",
+    "The novel combines a detective puzzle in an English country house with a long story of crime and secret societies set in America.",
+    "The Valley of Fear is the fourth and last Sherlock Holmes novel. It was first published in the Strand Magazine from September 1914 to May 1915, and as a book in New York on 27 February 1915. Its American story is loosely based on the Molly Maguires and the Pinkerton agent James McParland."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "The Secret Agent",
+   "author": "Joseph Conrad",
+   "cat": "fiction",
+   "meta": "England · 1907",
+   "desc": "In Victorian London, a lazy shopkeeper who spies for a foreign embassy is ordered to organise a bomb attack on the Greenwich Observatory.",
+   "editions": [
+    {"lang": "en", "gid": 974, "check": "secret agent"}
+   ],
+   "about": [
+    "Adolf Verloc keeps a small shop in Soho and lives with his wife Winnie, her mother and her vulnerable younger brother Stevie, whom Winnie protects like a son. Verloc is also a member of a circle of anarchists, among them Comrade Ossipon, Michaelis and the sinister \"Professor\", and secretly an agent of a foreign embassy. Mr Vladimir, its new First Secretary, demands that he prove his usefulness by staging an outrage: the destruction of the Greenwich Observatory by a bomb.",
+    "Conrad's ironic novel explores terrorism, espionage, politics and the exploitation of the vulnerable, and contrasts the cynicism of its plotters with the tragedy of an ordinary family.",
+    "The Secret Agent: A Simple Tale was first printed in eleven instalments in Ridgway's in 1905 and 1906 and published as a book on 12 September 1907."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "The Beetle",
+   "author": "Richard Marsh",
+   "cat": "fiction",
+   "meta": "England · 1897",
+   "desc": "A shape-shifting creature from ancient Egypt comes to London to take revenge on a rising member of Parliament.",
+   "editions": [
+    {"lang": "en", "gid": 5164, "check": "beetle"}
+   ],
+   "about": [
+    "Robert Holt, a clerk who has spent the day looking in vain for work, takes shelter in an empty house and falls into the power of a strange being who controls him through mesmerism. The creature sends him to the house of Paul Lessingham, a member of the House of Commons, to steal letters from his desk. The story is then taken up by Sydney Atherton, by Marjorie Lindon and by the detective Augustus Champnell, as the menace linked to the cult of Isis closes in.",
+    "Told by four narrators, Marsh's fin-de-siècle Gothic thriller mixes horror, suspense and the supernatural. Its depiction of Egypt and of its foreign, shape-shifting villain draws on the orientalist fears and stereotypes of its time.",
+    "The Beetle was published in 1897, the same year as Bram Stoker's Dracula, and was at first more popular, outselling it several times over."
+   ],
+   "author_short": "English author (1857–1915) of popular thrillers and supernatural fiction, best known for The Beetle.",
+   "author_long": [
+    "Richard Marsh was the pen name of Richard Bernard Heldmann, born in North London on 12 October 1857. He began publishing boys' school and adventure stories in magazines in 1880. He died on 9 August 1915.",
+    "A best-selling and prolific author of the late Victorian and Edwardian periods, he is remembered above all for The Beetle (1897)."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "The Food of the Gods",
+   "author": "H. G. Wells",
+   "cat": "aventure",
+   "meta": "England · 1904",
+   "desc": "Two scientists invent a food that makes living things grow to enormous size, and a generation of giants begins to change the world.",
+   "editions": [
+    {"lang": "en", "gid": 11696, "check": "food of the gods"}
+   ],
+   "about": [
+    "Mr Bensington, a chemist, and Professor Redwood, who studies growth, develop a substance that accelerates growth, which they call Herakleophorbia IV. Their experimental farm at Hickleybrow is entrusted to the careless Skinners, and soon giant chickens, wasps, earwigs and rats terrorise the countryside, until the energetic engineer Cossar organises their destruction. But the food, popularly called \"Boomfood\", is also given to children, among them Redwood's son, Cossar's sons and the Skinners' grandson Caddles, who grow into giants.",
+    "Wells's novel begins as a comic scientific fantasy and becomes a fable about progress, change and the resistance of a narrow-minded society to anything larger than itself.",
+    "The Food of the Gods and How It Came to Earth was first published in 1904."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "New Arabian Nights",
+   "author": "Robert Louis Stevenson",
+   "cat": "aventure",
+   "meta": "Scotland · 1882",
+   "desc": "Prince Florizel of Bohemia wanders incognito through London in search of adventure and discovers a club whose members gamble with their lives.",
+   "editions": [
+    {"lang": "en", "gid": 839, "check": "arabian nights"}
+   ],
+   "about": [
+    "In \"The Suicide Club\", Prince Florizel of Bohemia and his faithful Colonel Geraldine, roaming London in disguise, are led to a secret club where, each evening, a game of cards decides which member will die and who will kill him. \"The Rajah's Diamond\" follows the fortunes of a fabulous stolen jewel. The collection also contains \"The Pavilion on the Links\", \"A Lodging for the Night\", about the poet François Villon, \"The Sire de Malétroit's Door\" and \"Providence and the Guitar\".",
+    "Stevenson's stories transpose the spirit of the Thousand and One Nights to modern London and Paris, mixing adventure, mystery, irony and the macabre.",
+    "New Arabian Nights was published in 1882. Its stories had appeared in magazines between 1877 and 1880; the Florizel stories were first published in the London Magazine in 1878."
+   ],
+   "librivox": []
+  }
+ ],
+ "refused": [
+  {"title": "De Profundis (#921)", "reason": "Édition Methuen 1913 abrégée : texte incomplet, les éditions complètes sont plus récentes."}
+ ]
+}

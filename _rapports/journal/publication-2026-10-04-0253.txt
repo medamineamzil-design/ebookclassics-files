@@ -1,0 +1,33 @@
+=== BookClassics — lot 2026-10-04-m — 2026-10-04 00:53 ===
+   1 livre(s) écarté(s) par l'agent, notés dans refuses.json
+== 1/4 Fabrication des livres (EPUB, PDF, TXT, HTML) ==
+… The Valley of Fear [en] — Gutenberg #3289
+   + the-valley-of-fear [en] OK — Project Gutenberg (#3289), 56977 mots, 13 chapitres — epub:197Ko pdf:812Ko txt:309Ko html:323Ko
+… The Secret Agent [en] — Gutenberg #974
+   + the-secret-agent [en] OK — Project Gutenberg (#974), 90076 mots, 13 chapitres — epub:272Ko pdf:1208Ko txt:516Ko html:530Ko
+… The Beetle [en] — Gutenberg #5164
+   + the-beetle [en] OK — Project Gutenberg (#5164), 108508 mots, 50 chapitres — epub:334Ko pdf:1588Ko txt:598Ko html:625Ko
+… The Food of the Gods [en] — Gutenberg #11696
+   + the-food-of-the-gods [en] OK — Project Gutenberg (#11696), 74125 mots, 72 chapitres — epub:280Ko pdf:1184Ko txt:413Ko html:455Ko
+… New Arabian Nights [en] — Gutenberg #839
+   + new-arabian-nights [en] OK — Project Gutenberg (#839), 101752 mots, 14 chapitres — epub:298Ko pdf:1356Ko txt:560Ko html:578Ko
+== 2/4 Dépôt des livres ==
++ The Valley of Fear : en
++ The Secret Agent : en
++ The Beetle : en
++ The Food of the Gods : en
++ New Arabian Nights : en
+   publié : ebookclassics-files — Nouveaux livres : The Valley of Fear, The Secret Agent, The Beetle, The Food of the Gods, New Arabian Nights
+== 3/4 Site : catalogue, pages livres, plan du site ==
+   330 pages livres, 329 couvertures, 335 adresses dans le sitemap
+   5 livre(s) ajouté(s) au catalogue
+   publié : ebookclassics-site — Nouveaux livres au catalogue : The Valley of Fear, The Secret Agent, The Beetle, The Food of the Gods, New Arabian Nights
+TERMINE — 5 nouveau(x) livre(s) : The Valley of Fear, The Secret Agent, The Beetle, The Food of the Gods, New Arabian Nights
+== Livres audio du lot 2026-10-04-m ==
+   LibriVox : The Valley of Fear [en] — « Valley of Fear (Version 4 Dramatic Reading) » (6 h 28)
+   LibriVox : The Secret Agent [en] — « Secret Agent (Version 3) » (10 h 14)
+   LibriVox : The Beetle [en] — « Beetle » (11 h 55)
+   pas d'enregistrement LibriVox pour The Food of the Gods [en]
+   LibriVox : New Arabian Nights [en] — « New Arabian Nights » (9 h 54)
+   ! ~/r2.conf absent : livres audio non ajoutés
+FIN 2026-10-04 00:55
