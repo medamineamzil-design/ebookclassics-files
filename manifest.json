@@ -370,6 +370,14 @@
     "txt"
    ]
   },
+  "billy-budd-and-other-prose-pieces": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "black-beauty": {
    "en": [
     "epub",
@@ -536,6 +544,14 @@
     "txt"
    ],
    "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "dona-perfecta": {
+   "en": [
     "epub",
     "html",
     "pdf",
@@ -768,6 +784,20 @@
     "txt"
    ],
    "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "growth-of-the-soil": {
+   "de": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "en": [
     "epub",
     "html",
     "pdf",
@@ -1377,6 +1407,14 @@
    ]
   },
   "nicomachean-ethics": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "niels-lyhne": {
    "en": [
     "epub",
     "html",
@@ -2022,6 +2060,14 @@
     "txt"
    ],
    "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-book-of-tea": {
+   "en": [
     "epub",
     "html",
     "pdf",
@@ -3487,5 +3533,5 @@
    ]
   }
  },
- "generated": "2026-10-04T00:54:54Z"
+ "generated": "2026-10-04T01:11:19Z"
 }
