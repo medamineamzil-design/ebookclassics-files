@@ -1360,6 +1360,14 @@
     "txt"
    ]
   },
+  "new-arabian-nights": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "nicholas-nickleby": {
    "en": [
     "epub",
@@ -1976,6 +1984,14 @@
     "txt"
    ]
   },
+  "the-beetle": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-betrothed": {
    "en": [
     "epub",
@@ -2193,6 +2209,14 @@
    ]
   },
   "the-first-men-in-the-moon": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-food-of-the-gods": {
    "en": [
     "epub",
     "html",
@@ -2878,6 +2902,14 @@
     "txt"
    ]
   },
+  "the-secret-agent": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-secret-garden": {
    "en": [
     "epub",
@@ -3041,6 +3073,14 @@
    ]
   },
   "the-turn-of-the-screw": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-valley-of-fear": {
    "en": [
     "epub",
     "html",
@@ -3447,5 +3487,5 @@
    ]
   }
  },
- "generated": "2026-10-04T00:50:23Z"
+ "generated": "2026-10-04T00:54:54Z"
 }
