@@ -1606,6 +1606,14 @@
     "txt"
    ]
   },
+  "pamela-or-virtue-rewarded": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "paradise-lost": {
    "en": [
     "epub",
@@ -1728,6 +1736,14 @@
     "txt"
    ]
   },
+  "rip-van-winkle": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "rob-roy": {
    "en": [
     "epub",
@@ -1776,6 +1792,14 @@
     "txt"
    ],
    "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "roughing-it": {
+   "en": [
     "epub",
     "html",
     "pdf",
@@ -3042,6 +3066,14 @@
     "txt"
    ]
   },
+  "the-sleeper-awakes": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-song-of-roland": {
    "en": [
     "epub",
@@ -3458,6 +3490,14 @@
     "txt"
    ]
   },
+  "twice-told-tales": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "typee": {
    "en": [
     "epub",
@@ -3613,5 +3653,5 @@
    ]
   }
  },
- "generated": "2026-10-04T01:23:05Z"
+ "generated": "2026-10-04T01:23:52Z"
 }
