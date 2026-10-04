@@ -406,6 +406,14 @@
     "txt"
    ]
   },
+  "captain-blood": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "captains-courageous": {
    "en": [
     "epub",
@@ -1756,6 +1764,14 @@
     "txt"
    ]
   },
+  "sons-and-lovers": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "swann-s-way": {
    "en": [
     "epub",
@@ -2364,6 +2380,14 @@
     "txt"
    ],
    "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-man-who-was-thursday": {
+   "en": [
     "epub",
     "html",
     "pdf",
@@ -3080,6 +3104,14 @@
     "txt"
    ]
   },
+  "three-men-in-a-boat": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "through-the-looking-glass": {
    "en": [
     "epub",
@@ -3323,5 +3355,5 @@
    ]
   }
  },
- "generated": "2026-10-04T00:36:26Z"
+ "generated": "2026-10-04T00:43:54Z"
 }
