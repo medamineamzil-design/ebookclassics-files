@@ -60,6 +60,14 @@
     "txt"
    ]
   },
+  "a-portrait-of-the-artist-as-a-young-man": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "a-study-in-scarlet": {
    "de": [
     "epub",
@@ -1702,6 +1710,20 @@
     "txt"
    ]
   },
+  "salome": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "second-treatise-of-government": {
    "en": [
     "epub",
@@ -2088,6 +2110,14 @@
     "txt"
    ]
   },
+  "the-diary-of-a-nobody": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-divine-comedy": {
    "de": [
     "epub",
@@ -2147,6 +2177,14 @@
    ]
   },
   "the-gambler": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-garden-party-and-other-stories": {
    "en": [
     "epub",
     "html",
@@ -3104,6 +3142,14 @@
     "txt"
    ]
   },
+  "this-side-of-paradise": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "three-men-in-a-boat": {
    "en": [
     "epub",
@@ -3355,5 +3401,5 @@
    ]
   }
  },
- "generated": "2026-10-04T00:43:54Z"
+ "generated": "2026-10-04T00:49:45Z"
 }
