@@ -1,0 +1,103 @@
+{
+ "lot": "2026-10-04-g",
+ "books": [
+  {
+   "title": "The Aeneid",
+   "author": "Virgil",
+   "cat": "aventure",
+   "meta": "Rome · 19 BC",
+   "desc": "After the fall of Troy, the Trojan prince Aeneas wanders the Mediterranean and fights a war in Italy to found the people who will build Rome.",
+   "editions": [
+    {"lang": "en", "gid": 228, "check": "aeneid", "credit": "Traduction : John Dryden (1631-1700)"}
+   ],
+   "about": [
+    "Aeneas, son of the goddess Venus and the Trojan Anchises, escapes from burning Troy with his father and his young son Ascanius. Pursued by the anger of Juno, he and his companions are shipwrecked on the coast of Africa, where Queen Dido of Carthage welcomes them and falls in love with him. But the gods remind Aeneas of his destiny in Italy. After a descent into the underworld, he reaches Latium, where King Latinus offers him his daughter Lavinia, and war breaks out with Turnus, leader of the Rutulians.",
+    "Virgil's epic in twelve books follows the model of Homer: the first six books tell of Aeneas's journey, the last six of the war in Italy. It celebrates duty, piety and the destiny of Rome, while giving voice to the suffering of those, like Dido and Turnus, who stand in its way.",
+    "Virgil worked on the Aeneid from about 29 BC until his death in 19 BC, and it was published after his death. This English verse translation is by John Dryden, published in 1697 in his Works of Virgil."
+   ],
+   "author_short": "Roman poet (70–19 BC), author of the Eclogues, the Georgics and the Aeneid.",
+   "author_long": [
+    "Publius Vergilius Maro was born on 15 October 70 BC at Andes, near Mantua, in northern Italy. He became part of the literary circle of Maecenas, a close associate of the emperor Augustus. He died at Brundisium on 21 September 19 BC; according to tradition, he asked for the unfinished Aeneid to be burned, but Augustus prevented it.",
+    "His three major works are the pastoral Eclogues, the Georgics, a poem on farming, and the Aeneid, the national epic of Rome."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "The Consolation of Philosophy",
+   "author": "Boethius",
+   "cat": "philosophie",
+   "meta": "Italy · 524",
+   "desc": "Imprisoned and awaiting execution, a Roman statesman is visited by Lady Philosophy, who teaches him the true nature of happiness and fortune.",
+   "editions": [
+    {"lang": "en", "gid": 14328, "check": "consolation of philosophy", "credit": "Traduction : H. R. James (1862-1931)"}
+   ],
+   "about": [
+    "Boethius, once a powerful official, lies in prison, condemned on a charge of treason and lamenting his fate. A majestic woman appears to him: Lady Philosophy. She drives away the Muses of poetry who feed his grief, and in a dialogue spread over five books she leads him to understand that fortune is by nature changeable, that true happiness lies not in wealth, power or fame but in the highest good, and that divine providence can be reconciled with human free will.",
+    "Written in alternating prose and verse, the work combines the thought of Plato, Aristotle and the Stoics. It was one of the most widely read books of the Middle Ages, translated by King Alfred and by Chaucer, among others.",
+    "Boethius wrote the Consolation around 524 while imprisoned by the Ostrogothic king Theodoric, before his execution. This English translation is by H. R. James."
+   ],
+   "author_short": "Roman statesman and philosopher (c. 477–524), author of The Consolation of Philosophy.",
+   "author_long": [
+    "Anicius Manlius Severinus Boethius was born in Rome around 477 into an ancient family. He served the Ostrogothic king Theodoric, became consul in 510 and later held the high office of master of offices. Accused of treason, he was imprisoned and executed in 524.",
+    "He set out to translate the works of Plato and Aristotle into Latin, and his translations of parts of Aristotle's logic were transmitted to the Middle Ages. He also wrote theological treatises, and in prison composed The Consolation of Philosophy."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "The Song of Roland",
+   "author": "Anonymous",
+   "cat": "aventure",
+   "meta": "France · c. 1100",
+   "desc": "Betrayed by his stepfather, Charlemagne's nephew Roland is ambushed with the rearguard at Roncevaux and refuses to sound his horn for help.",
+   "editions": [
+    {"lang": "en", "gid": 391, "check": "roland", "credit": "Traduction : C. K. Scott Moncrieff (1889-1930)"}
+   ],
+   "about": [
+    "After seven years of war in Spain, Charlemagne has conquered every city except Saragossa, ruled by the Saracen king Marsile. When Marsile offers peace, Roland proposes his stepfather Ganelon (called Guenes in this translation) as envoy. Humiliated and resentful, Ganelon plots with the enemy, and as the Frankish army crosses the Pyrenees, the rearguard led by Roland, his companion Oliver and Archbishop Turpin is attacked by an enormous army at Rencesvals. Oliver urges Roland to blow his olifant to call Charlemagne back.",
+    "The oldest major work of French literature, this chanson de geste celebrates feudal loyalty, Christian faith and heroic courage, and contrasts the pride of Roland with the wisdom of Oliver. It presents the Muslim Saracens as enemies of the faith, in the spirit of the crusading era in which it was written.",
+    "The poem transforms a real event, the ambush of Charlemagne's rearguard at Roncevaux in 778. Its best-known text is the Oxford manuscript, copied in Anglo-Norman in the twelfth century, whose last line names a certain Turoldus. This translation by C. K. Scott Moncrieff, published in 1919, follows the metre of the original."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "The Rivals",
+   "author": "Richard Brinsley Sheridan",
+   "cat": "theatre",
+   "meta": "England · 1775",
+   "desc": "In fashionable Bath, a young captain courts a romantic heiress by pretending to be a penniless ensign, while her aunt Mrs Malaprop mangles the English language.",
+   "editions": [
+    {"lang": "en", "gid": 24761, "check": "rivals"}
+   ],
+   "about": [
+    "Lydia Languish, a young heiress who has read too many romantic novels, wants to elope with a poor soldier. To win her, Captain Jack Absolute has disguised himself as \"Ensign Beverley\". His plans are complicated when his father, Sir Anthony Absolute, arranges for him to marry the same young woman, and by the rival suitors Bob Acres and Sir Lucius O'Trigger. Meanwhile Lydia's aunt, Mrs Malaprop, confuses her words at every turn, and Jack's friend Faulkland torments his beloved Julia with his jealousy.",
+    "Sheridan's comedy of manners satirises sentimental romance and fashionable society. Mrs Malaprop's comic misuse of words gave the English language the word \"malapropism\".",
+    "The Rivals was Sheridan's first play. It opened at the Theatre Royal, Covent Garden, on 17 January 1775, was poorly received, and after extensive revision reopened on 28 January with great success."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "The Kalevala",
+   "author": "Elias Lönnrot",
+   "cat": "aventure",
+   "meta": "Finland · 1849",
+   "desc": "The national epic of Finland, built from folk songs: the old singer Väinämöinen, the smith Ilmarinen and their struggles for the magic Sampo.",
+   "editions": [
+    {"lang": "en", "gid": 5186, "check": "kalevala", "credit": "Traduction : John Martin Crawford (1845-1916)"}
+   ],
+   "about": [
+    "The fifty runes of the Kalevala tell the creation of the world and the adventures of the heroes of the land of Kalevala: the wise old singer Väinämöinen (Wainamoinen in this translation), the smith Ilmarinen, who forges the Sampo, a magic mill that brings wealth, and the reckless Lemminkäinen. Their rivalry with Louhi, the mistress of the northern land of Pohjola (Pohyola here), leads to wooing expeditions, battles and the theft of the Sampo. Among the episodes is the tragic story of Kullervo.",
+    "The poem mixes myth, magic, humour and tragedy, and reflects the folk beliefs and daily life of the Finnish people. It played a major role in the development of Finnish national identity and culture.",
+    "The physician and philologist Elias Lönnrot compiled the Kalevala from the folk poetry he collected on his journeys. A first version appeared in 1835, and the expanded edition of fifty runes in 1849. John Martin Crawford's English translation, based on Franz Anton Schiefner's German translation, was first published in 1888."
+   ],
+   "author_short": "Finnish physician and philologist (1802–1884), who compiled the Kalevala from folk poetry.",
+   "author_long": [
+    "Elias Lönnrot was born on 9 April 1802 at Sammatti in Finland. A physician, he served as district medical officer for the Kajaani region, and from 1853 to 1862 he was professor of Finnish language and literature at the University of Helsinki. He died on 19 March 1884.",
+    "On his travels he collected and edited Finnish folk poetry, publishing the Kalevala (1835, expanded in 1849) and the Kanteletar (1841)."
+   ],
+   "librivox": []
+  }
+ ],
+ "refused": [
+  {"title": "Sir Gawain and the Green Knight (#66084)", "reason": "Version de Jessie L. Weston « retold in modern prose » : récit en prose dont la fidélité intégrale n'a pas pu être vérifiée."}
+ ]
+}
