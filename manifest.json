@@ -206,6 +206,20 @@
     "txt"
    ]
   },
+  "antony-and-cleopatra": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "apology": {
    "en": [
     "epub",
@@ -2342,6 +2356,28 @@
     "txt"
    ]
   },
+  "the-man-who-laughs": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-man-who-would-be-king": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-master-of-ballantrae": {
    "en": [
     "epub",
@@ -3164,6 +3200,14 @@
     "txt"
    ]
   },
+  "uncle-silas": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "uncle-tom-s-cabin": {
    "en": [
     "epub",
@@ -3172,6 +3216,14 @@
     "txt"
    ],
    "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "up-from-slavery": {
+   "en": [
     "epub",
     "html",
     "pdf",
@@ -3271,5 +3323,5 @@
    ]
   }
  },
- "generated": "2026-10-04T00:35:39Z"
+ "generated": "2026-10-04T00:36:26Z"
 }
