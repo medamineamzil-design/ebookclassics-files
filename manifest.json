@@ -892,6 +892,14 @@
     "txt"
    ]
   },
+  "jo-s-boys": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "journey-to-the-centre-of-the-earth": {
    "en": [
     "epub",
@@ -986,6 +994,14 @@
     "txt"
    ]
   },
+  "kipps": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "lady-windermere-s-fan": {
    "en": [
     "epub",
@@ -1002,6 +1018,14 @@
     "txt"
    ],
    "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "leviathan": {
+   "en": [
     "epub",
     "html",
     "pdf",
@@ -1479,6 +1503,14 @@
    ]
   },
   "peter-pan": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "phaedo": {
    "en": [
     "epub",
     "html",
@@ -2866,6 +2898,14 @@
     "txt"
    ]
   },
+  "the-wild-duck": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-wind-in-the-willows": {
    "en": [
     "epub",
@@ -3151,5 +3191,5 @@
    ]
   }
  },
- "generated": "2026-10-04T00:28:40Z"
+ "generated": "2026-10-04T00:29:22Z"
 }
