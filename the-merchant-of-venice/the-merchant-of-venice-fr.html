@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Le marchand de Venise — William Shakespeare</title><style>
+:root{--paper:#fbf8f1;--ink:#1f1b16;--muted:#6f6352;--accent:#9a6b2f;--rule:#e4dccb}
+@media (prefers-color-scheme:dark){:root{--paper:#16140f;--ink:#ece6d8;--muted:#a79c88;--accent:#d8a95e;--rule:#2e2a22}}
+html{background:var(--paper)}
+body{font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Libertinus Serif",Georgia,serif;color:var(--ink);
+     background:var(--paper);line-height:1.65;font-size:1.12rem;max-width:36em;margin:0 auto;padding:2.5em 1.25em 5em}
+.titlepage{text-align:center;min-height:70vh;display:flex;flex-direction:column;justify-content:center;gap:.6em;
+           border-bottom:1px solid var(--rule);margin-bottom:2.5em;padding-bottom:2.5em}
+.titlepage img{max-width:260px;width:60%;margin:0 auto 1.5em;border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+h1{font-size:2.4em;line-height:1.15;font-weight:600;margin:0;letter-spacing:-.01em}
+.author{font-style:italic;font-size:1.25em;color:var(--accent);margin:0}
+.translator{font-size:.95em;color:var(--muted);margin:0}
+nav.toc{margin:0 0 3em}
+nav.toc h2{font-size:.85em;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:left;margin:0 0 .8em}
+nav.toc ol{list-style:none;padding:0;margin:0;columns:1}
+nav.toc li{margin:.25em 0}
+nav.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent}
+nav.toc a:hover{border-color:var(--accent)}
+h2.chapter{font-size:1.45em;font-weight:600;text-align:center;margin:3.5em 0 1.6em;line-height:1.3}
+h2.chapter::before{content:"";display:block;width:3em;height:2px;background:var(--accent);margin:0 auto 1.1em}
+p{margin:0;text-indent:1.5em;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+h2.chapter + p, .titlepage + p{text-indent:0}
+h2.chapter + p::first-letter{font-size:3.1em;float:left;line-height:.85;padding:.08em .08em 0 0;color:var(--accent);font-weight:600}
+.colophon{margin-top:5em;padding-top:1.5em;border-top:1px solid var(--rule);text-align:center;color:var(--muted);font-size:.85em;text-indent:0}
+h3.sub{font-size:1em;font-weight:600;font-variant:small-caps;letter-spacing:.04em;text-align:center;margin:2.2em 0 1em}
+h3.sub + p{text-indent:0}
+@media print{h2.chapter{break-before:page}}
+</style></head><body>
+<header class="titlepage">
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjI0MDAiIHZpZXdCb3g9IjAgMCAxNjAwIDI0MDAiPgo8cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSIyNDAwIiBmaWxsPSIjNGExNTI2Ii8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjMwMCIgZmlsbD0iI2YyYzZhMCIgb3BhY2l0eT0iLjkyIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNGExNTI2IiBzdHJva2Utd2lkdGg9IjEyIiBvcGFjaXR5PSIuNSIvPgo8Y2lyY2xlIGN4PSIxMTIwIiBjeT0iNTYwIiByPSIxMjAiIGZpbGw9IiM0YTE1MjYiIG9wYWNpdHk9Ii4xOCIvPgo8cmVjdCB4PSIxNjAiIHk9IjkzMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIxMCIgZmlsbD0iI2YyYzZhMCIvPgo8dGV4dCB4PSIxNjAiIHk9IjEwOTgiIGZvbnQtc2l6ZT0iMTUwIiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmYmVmZTYiPkxlIG1hcmNoYW5kIGRlPC90ZXh0Pjx0ZXh0IHg9IjE2MCIgeT0iMTI2MiIgZm9udC1zaXplPSIxNTAiIGZvbnQtd2VpZ2h0PSI2MDAiIGZvbnQtZmFtaWx5PSJMaWJlcnRpbnVzIFNlcmlmLCBHZW9yZ2lhLCBzZXJpZiIgZmlsbD0iI2ZiZWZlNiI+VmVuaXNlPC90ZXh0Pgo8dGV4dCB4PSIxNjAiIHk9IjE0OTgiIGZvbnQtc2l6ZT0iNjgiIGZvbnQtc3R5bGU9Iml0YWxpYyIgZm9udC1mYW1pbHk9IkxpYmVydGludXMgU2VyaWYsIEdlb3JnaWEsIHNlcmlmIiBmaWxsPSIjZjJjNmEwIj5XaWxsaWFtIFNoYWtlc3BlYXJlPC90ZXh0Pgo8dGV4dCB4PSIxNjAiIHk9IjIyMzAiIGZvbnQtc2l6ZT0iNDQiIGxldHRlci1zcGFjaW5nPSIxNCIgZm9udC1mYW1pbHk9IkxpYmVydGludXMgU2VyaWYsIEdlb3JnaWEsIHNlcmlmIiBmaWxsPSIjZmJlZmU2IiBvcGFjaXR5PSIuNzUiPkJPT0tDTEFTU0lDUzwvdGV4dD4KPC9zdmc+" alt="">
+<h1>Le marchand de Venise</h1>
+<p class="author">William Shakespeare</p>
+<p class="translator">Traduction de François Guizot</p>
+</header>
+<nav class="toc"><h2>Table des matières</h2><ol>
+<li><a href="#c1">Scène I</a></li>
+<li><a href="#c2">Scène III</a></li>
+<li><a href="#c3">Scène I</a></li>
+<li><a href="#c4">Scène III</a></li>
+<li><a href="#c5">Scène IV</a></li>
+<li><a href="#c6">Scène V</a></li>
+<li><a href="#c7">Scène vi</a></li>
+<li><a href="#c8">Scène VII</a></li>
+<li><a href="#c9">Scène VIII</a></li>
+<li><a href="#c10">Scène IX</a></li>
+<li><a href="#c11">Scène I</a></li>
+<li><a href="#c12">Scène II</a></li>
+<li><a href="#c13">Scène III</a></li>
+<li><a href="#c14">Scène IV</a></li>
+<li><a href="#c15">Scène V</a></li>
+<li><a href="#c16">Scène I</a></li>
+<li><a href="#c17">PORTIA.--Une livre de chair de ce marchand t&#x27;appartient: la cour te l&#x27;adjuge et la loi te la donne.</a></li>
+<li><a href="#c18">Scène II</a></li>
+<li><a href="#c19">Scène I</a></li>
+</ol></nav>
+<p>Le fond de l&#x27;aventure qui fait le sujet du Marchand de Venise se retrouve dans les chroniques ou dans la littérature de tous les pays, tantôt en entier, tantôt dépouillé de l&#x27;épisode très-piquant qu&#x27;y ajoutent les amours de Bassanio et de Portia. Un jugement pareil à celui de Portia a été attribué à Sixte V qui, plus sévère, condamna, dit-on, à l&#x27;amende les deux contractants, pour les punir de l&#x27;immoralité d&#x27;un pareil marché. En cette occasion il s&#x27;agissait d&#x27;un pari, et le juif était le perdant. Un recueil de nouvelles françaises, intitulé Roger-Bontemps en belle humeur, raconte la même aventure, mais à l&#x27;avantage du chrétien, et c&#x27;est le sultan Saladin qui est le juge. Dans un manuscrit persan qui rapporte le même fait, il s&#x27;agit d&#x27;un pauvre musulman de Syrie avec qui un riche juif fait ce marché pour avoir les moyens de le perdre et parvenir ainsi à posséder sa femme dont il est amoureux; le cas est décidé par un cadi d&#x27;Émèse. Mais l&#x27;aventure tout entière se trouve consignée, avec quelques différences, dans un très-ancien ouvrage écrit en latin et intitulé: Gesta Romanorum, et dans le Pecorone de ser Giovanni, recueil de nouvelles composé avant la fin du quatorzième siècle et par conséquent très-antérieur à Sixte V, ce qui rend tout à fait improbable l&#x27;anecdote rapportée sur ce pape par Grégoire Léti.</p>
+<p>Dans la nouvelle de ser Giovanni, la dame de Belmont n&#x27;est point une jeune fille forcée de soumettre son choix aux conditions prescrites par le singulier testament de son père, mais une jeune veuve qui, de sa propre volonté, impose une condition beaucoup plus singulière à ceux que le hasard ou le choix fait aborder dans son port. Obligés de partager le lit de la dame, s&#x27;ils savent profiter des avantages que leur offre une pareille situation, ils obtiendront avec la possession de la veuve sa main et tous ses biens. Dans le cas contraire, ils perdent leur vaisseau et son chargement, et repartent sur-le-champ avec un cheval et une somme d&#x27;argent qu&#x27;on leur fournit pour retourner chez eux. Peu effrayés d&#x27;une pareille épreuve, beaucoup ont tenté l&#x27;aventure, tous ont succombé; car, à peine dans le lit, ils s&#x27;endorment d&#x27;un profond sommeil, d&#x27;où ils ne se réveillent que pour apprendre le lendemain que la dame plus matinale a déjà fait décharger le navire, et préparer la monture qui doit reconduire chez lui le malencontreux prétendant. Aucun n&#x27;a été tenté de renouveler une entreprise si chère, et dont le mauvais succès a découragé les plus vifs aspirants. Le seul Gianetto (c&#x27;est dans la nouvelle le nom du jeune Vénitien) s&#x27;est obstiné, et après deux premières déconvenues, il veut risquer une troisième aventure: son parrain Ansaldo, sans s&#x27;inquiéter de la perte des deux premiers vaisseaux dont il ignore la cause, lui en équipe un troisième, avec lequel Gianetto lui promet de réparer leurs malheurs. Mais épuisé par les précédentes entreprises, il est obligé pour celle-là d&#x27;emprunter à un juif la somme de dix mille ducats, aux mêmes conditions que celles qu&#x27;impose Shylock à Antonio. Gianetto arrive, et, averti par une suivante de ne pas boire le vin qu&#x27;on lui présentera avant de se mettre au lit, il surprend à son tour la dame qui, fort troublée d&#x27;abord de le trouver éveillé, se résigne cependant à son sort, et s&#x27;estime heureuse de le nommer le lendemain son époux. Gianetto, enivré de son bonheur, oublie le pauvre Ansaldo jusqu&#x27;au jour fatal de l&#x27;échéance du billet. Un hasard le lui rappelle alors; il part en diligence pour Venise, et le reste de l&#x27;histoire se passe comme l&#x27;a représenté Shakspeare.</p>
+<p>On conçoit aisément la raison et la nécessité des divers changements qu&#x27;il a fait subir à cette aventure; elle n&#x27;était cependant pas tellement impossible à représenter de son temps sur le théâtre qu&#x27;on ne puisse croire qu&#x27;il a été induit à ces changements par le besoin de donner plus de moralité à ses personnages et plus d&#x27;intérêt à son action. Aussi la situation du généreux Antonio, la peinture de son caractère si dévoué, courageux et mélancolique à la fois, ne sont-elles pas l&#x27;unique source du charme qui règne si puissamment dans tout l&#x27;ouvrage. Les lacunes que laisse cette situation sont du moins si heureusement remplies qu&#x27;on ne s&#x27;aperçoit d&#x27;aucun vide, tant l&#x27;âme est doucement occupée des sentiments qui en naissent naturellement. Il semble que Shakspeare ait voulu peindre ici, sous leurs différents points de vue, les premiers beaux jours d&#x27;un heureux mariage. Le discours de Portia à Bassanio, au moment où le sort vient de décider en sa faveur, et où elle se regarde déjà comme son heureuse épouse, est rempli d&#x27;un abandon si pur, d&#x27;une soumission conjugale si touchante et si noble à la fois, que son caractère en acquiert un charme inexprimable, et que Bassanio, prenant dès cet instant la situation supérieure qui lui convient, n&#x27;a plus à craindre d&#x27;être rabaissé par l&#x27;esprit et le courage de sa femme, quelque décidé que soit le parti qu&#x27;elle va prendre l&#x27;instant d&#x27;après; on sait maintenant que, le moment de la nécessité passé, tout rentrera dans l&#x27;ordre, et que les grandes qualités qu&#x27;elle saura soumettre à son devoir de femme ne feront qu&#x27;ajouter au bonheur de son mari.</p>
+<p>Dans une classe subordonnée, Lorenzo et Jessica nous donnent le spectacle de ce tendre badinage de deux jeunes époux si remplis de leur bonheur qu&#x27;ils le répandent sur les choses les plus étrangères à eux-mêmes et jouissent des pensées et des actions les plus indifférentes, comme d&#x27;autant de portions d&#x27;une existence que le bonheur envahit tout entière. Cet entretien de Lorenzo et de Jessica, ce jardin, ce clair de lune, cette musique qui prépare le retour de Portia, de Bassanio, et l&#x27;arrivée d&#x27;Antonio, disposent l&#x27;âme à toutes les douces impressions que fera naître l&#x27;image d&#x27;une félicité complète, dans la réunion de Portia et de Bassanio au milieu de tous les amis qui vont jouir de leurs soins et de leurs bienfaits. Shakspeare est presque le seul poëte dramatique qui n&#x27;ait pas craint de s&#x27;arrêter sur le tableau du bonheur; il sentait qu&#x27;il avait de quoi le remplir.</p>
+<p>L&#x27;invention des trois coffres, dont l&#x27;original se trouve aussi en plusieurs endroits, existe, à peu près telle que l&#x27;a employée Shakspeare, dans une autre aventure des Gesta Romanorum, si ce n&#x27;est que la personne soumise à l&#x27;épreuve est la fille d&#x27;un roi de la Pouille qui, par la sagesse de son choix, est jugée digne d&#x27;épouser le fils de l&#x27;empereur de Rome. On voit par là que ces Gesta Romanorum ne remontent pas précisément aux temps antiques.</p>
+<h3 class="sub">Personnages</h3>
+<p>LE DUC DE VENISE,   } amoureux de LE PRINCE DE MAROC, } Portia. LE PRINCE D&#x27;ARAGON, } ANTONIO, marchand de Venise. BASSANIO, son ami. SALANIO, } amis d&#x27;Antonio et de GRATIANO,} Bassanio. SALARINO,} LORENZO, amant de Jessica. SHYLOCK, juif. TUBAL, autre juif, ami de Shylock. LANCELOT GOBBO, jeune lourdaud, domestique de Shylock. LE VIEUX GOBBO, père de Lancelot. LÉONARDO, domestique de Bassanio. BALTHASAR, domestiques de Portia. STEPHANO,      &quot;      &quot;    &quot; UN VALET. PORTIA, riche héritière. NÉRISSA, suivante de Portia. JESSICA, fille de Shylock.</p>
+<h2 class="chapter" id="c1">Scène I</h2>
+<p>Dans une rue de Venise.</p>
+<p>Entrent ANTONIO, SALARINO et SALANIO.</p>
+<p>Antonio.--De bonne foi, je ne sais pourquoi je suis triste. J&#x27;en suis fatigué: vous dites que vous en êtes fatigués aussi; mais comment j&#x27;ai pris ce chagrin, où je l&#x27;ai trouvé, rencontré, de quoi il est fait, d&#x27;où il est sorti, je suis encore à l&#x27;apprendre.--La tristesse me rend si stupide que j&#x27;ai peine à me reconnaître moi-même.</p>
+<p>SALANIO.--Votre âme est agitée sur l&#x27;Océan; là où, sous leurs voiles majestueuses, vos larges vaisseaux, seigneurs et riches bourgeois des flots, dominent sur le peuple des petits navires marchands qui les saluent, inclinant, lorsqu&#x27;ils passent près d&#x27;eux, le tissu de leurs ailes.</p>
+<p>SALARINO.--Croyez-moi, monsieur, si j&#x27;avais une pareille mise dehors, la plus grande partie de mes affections serait en voyage à la suite de mes espérances. Je serais toujours à arracher des brins d&#x27;herbe pour savoir de quel côté souffle le vent; à chercher sur les cartes les ports, les môles et les routes; et chaque objet qui pourrait me faire craindre un malheur pour ma cargaison ne manquerait certainement pas de me rendre triste.</p>
+<p>SALANIO.--En soufflant sur mon bouillon pour le refroidir, mon haleine me donnerait un frisson, je songerais à tout le mal qu&#x27;un trop grand vent pourrait causer sur la mer. Je ne pourrais voir un sablier s&#x27;écouler que je ne songeasse aux bancs de sable, aux bas-fonds, où je verrais mon riche André[1] engravé, abaissant son grand mât plus bas que ses flancs pour baiser son tombeau. Pourrais-je aller à l&#x27;église et voir les pierres de l&#x27;édifice sacré, sans me rappeler aussitôt les rochers dangereux qui, en effleurant seulement les côtés de mon cher vaisseau, disperseraient toutes mes épices sur les flots, et habilleraient de mes soies les vagues en fureur; en un mot, sans penser que riche de tout cela en cet instant, je puis l&#x27;instant d&#x27;après n&#x27;avoir plus rien? Puis-je songer à tous ces hasards et ne pas songer en même temps qu&#x27;un pareil malheur, s&#x27;il m&#x27;arrivait, me rendrait triste?--Tenez, ne m&#x27;en dites pas davantage: je suis sûr qu&#x27;Antonio est triste, parce qu&#x27;il songe à ses marchandises.</p>
+<p>[Note 1: C&#x27;était apparemment le nom d&#x27;un des plus gros vaisseaux d&#x27;Antonio.]</p>
+<p>ANTONIO.--Non, croyez-moi. J&#x27;en rends grâces au sort; toutes mes espérances ne sont pas aventurées sur une seule chance, ni réunies en un même lieu; et ma fortune entière ne dépend pas des événements de cette année. Ce ne sont donc pas mes marchandises qui m&#x27;attristent.</p>
+<p>SALARINO.--Il faut alors que vous soyez amoureux.</p>
+<p>ANTONIO.--Fi donc!</p>
+<p>SALARINO.--Vous n&#x27;êtes pas amoureux non plus? En ce cas, souffrez qu&#x27;on vous dise que vous êtes triste, parce que vous n&#x27;êtes pas gai; et il vous serait tout aussi aisé de rire, de danser, et de dire que vous êtes gai, parce que vous n&#x27;êtes pas triste. Par Janus au double visage, la nature forme quelquefois d&#x27;étranges personnages; les uns ne laissant jamais qu&#x27;entrevoir leurs yeux à travers leurs paupières à demi fermées et riant comme des perroquets, à la vue d&#x27;un joueur de cornemuse; et d&#x27;autres, d&#x27;une mine si renfrognée, qu&#x27;ils ne montreraient pas seulement leurs dents en façon de sourire, quand Nestor en personne jurerait que la plaisanterie est de nature à faire rire.</p>
+<p>(Entrent Bassanio, Lorenzo, Gratiano.)</p>
+<p>SALANIO--Voici Bassanio, votre noble allié, avec Gratiano et Lorenzo. Adieu, nous vous laissons en meilleure compagnie.</p>
+<p>SALARINO.--Je serais volontiers resté jusqu&#x27;à ce que je vous eusse rendu joyeux, si de plus dignes ne m&#x27;avaient prévenu.</p>
+<p>ANTONIO.--Vous avez une grande place dans mon affection; mais je suppose que vos affaires vous appellent, et que vous saisissez l&#x27;occasion de nous quitter.</p>
+<p>SALARINO.--Bonjour, mes bons seigneurs.</p>
+<p>BASSANIO.--Dites-moi tous deux, mes bons seigneurs, quand rirons-nous? Répondez: quand? Vous devenez excessivement rares. Cela durera-t-il?</p>
+<p>SALARINO.--Nous nous ferons un plaisir de prendre votre temps.</p>
+<p>(Salanio et Salarino sortent.)</p>
+<p>LORENZO.--Seigneur Bassanio, puisque vous voilà avec Antonio, nous allons vous laisser ensemble. Mais à l&#x27;heure du dîner, souvenez-vous, je vous prie, du lieu de notre rendez-vous.</p>
+<p>BASSANIO.--Je n&#x27;y manquerai pas.</p>
+<p>GRATIANO.--Vous n&#x27;avez pas bon visage, seigneur Antonio. Tenez, vous avez trop d&#x27;affaires en ce monde; c&#x27;est en perdre les avantages que de les acheter par trop de soins. Vous êtes étonnamment changé; croyez-moi.</p>
+<p>ANTONIO.--Je prends le monde pour ce qu&#x27;il est, Gratiano: un théâtre où chacun doit jouer son rôle; le mien est d&#x27;être triste.</p>
+<p>GRATIANO.--Le mien sera donc celui du fou. Que les rides de la vieillesse viennent au milieu de la joie et du rire, que le vin échauffe, s&#x27;il le faut, mon foie, mais que d&#x27;affaiblissants soupirs ne viennent point glacer mon coeur. Pourquoi un homme qui a du sang chaud dans les veines demeurerait-il immobile comme son grand-père taillé en albâtre? pourquoi dormir quand on veille, et se donner la jaunisse à force de mauvaise humeur? Je te le dirai, Antonio; je t&#x27;aime, et c&#x27;est mon amitié qui parle; il y a une espèce de gens dont le visage se boursoufle au dehors et s&#x27;enveloppe comme l&#x27;eau dormante d&#x27;un étang, et qui se tiennent dans une immobilité volontaire pour se parer d&#x27;une réputation de sagesse, de gravité, de profondeur d&#x27;esprit, et qui semblent vous dire: «Monsieur, je suis un oracle; quand j&#x27;ouvre la bouche, empêchez qu&#x27;un chien n&#x27;aboie.» O mon cher Antonio, je connais de ces gens-là qui ne doivent qu&#x27;à leur silence leur réputation de sagesse, et qui, j&#x27;en suis sûr, s&#x27;ils parlaient, seraient capables de damner plus d&#x27;une oreille, car en les écoutant, bien des gens traiteraient leurs frères de fous. Je t&#x27;en dirai plus long une autre fois. Mais ne va pas te servir de l&#x27;appât de la mélancolie, pour pêcher ce goujon des sots, la réputation.--Allons, viens, cher Lorenzo. (A Antonio.)--Adieu pour un moment; je finirai mon sermon après dîner.</p>
+<p>LORENZO, à Antonio.--Oui, nous allons vous laisser jusqu&#x27;à l&#x27;heure du dîner.--Il faudra que je devienne un de ces sages muets, car Gratiano ne me laisse jamais le temps de parler.</p>
+<p>GRATIANO.--C&#x27;est bon, tiens-moi encore compagnie deux ans, et tu ne connaîtras plus le son de ta voix.</p>
+<p>ANTONIO.--Adieu, il me rendrait bavard.</p>
+<p>GRATIANO.--Tant mieux, ma foi, car le silence ne convient qu&#x27;à une langue de boeuf fumé, et à une fille qui n&#x27;est pas de défaite.</p>
+<p>(Gratiano et Lorenzo sortent.)</p>
+<p>ANTONIO.--Est-ce là dire quelque chose?</p>
+<p>BASSANIO.--Gratiano est l&#x27;homme de Venise qui débite le plus de riens. Ce qu&#x27;il y a de bon dans tous ses discours est comme deux grains de blé cachés dans deux boisseaux de son. On les cherche un jour entier avant de les trouver, et quand on les a, ils ne valent pas la peine qu&#x27;on a prise.</p>
+<p>ANTONIO.--Fort bien. Dites-moi: quelle est donc cette dame auprès de laquelle vous avez juré de faire un secret pèlerinage, et que vous m&#x27;avez promis de me nommer aujourd&#x27;hui?</p>
+<p>BASSANIO.--Vous n&#x27;ignorez pas, Antonio, dans quel délabrement j&#x27;ai mis mes affaires, en voulant faire une plus haute figure que ne pouvait me le permettre longtemps ma médiocre fortune; je ne m&#x27;afflige pas maintenant d&#x27;être privé des moyens de soutenir ce noble état; mais mon premier souci est de me tirer avec honneur des dettes considérables que j&#x27;ai contractées par un peu trop de prodigalité. C&#x27;est à vous, Antonio, que je dois le plus, tant en argent qu&#x27;en amitié; et c&#x27;est de votre amitié que j&#x27;attends avec confiance les moyens d&#x27;accomplir tous mes desseins, et les plans que je forme pour payer tout ce que je dois.</p>
+<p>ANTONIO.--Je vous prie, mon cher Bassanio, de me les faire connaître; et, s&#x27;ils se renferment comme vous le faites vous-même dans les limites de l&#x27;honneur, soyez sûr que ma bourse, ma personne et tout ce que j&#x27;ai de ressources en ce monde sont à votre service.</p>
+<p>BASSANIO.--Lorsque j&#x27;étais écolier, dès que j&#x27;avais perdu une de mes flèches, j&#x27;en décochais une autre dans la même direction, mettant plus d&#x27;attention à suivre son vol, afin de retrouver l&#x27;autre; et, en risquant de perdre les deux, je les retrouvais toutes deux. Je vous cite cet exemple de mon enfance, parce que je vais vous parler le langage de la candeur. Je vous dois beaucoup: et comme il arrive à un jeune homme livré à ses fantaisies, ce que je vous dois est perdu. Mais si vous voulez risquer une autre flèche du même côté où vous avez lancé la première, je ne doute pas que, par ma vigilance à observer sa chute, je ne retrouve les deux, ou du moins que je ne vous rapporte celle que vous aurez hasardée la dernière, en demeurant avec reconnaissance votre débiteur pour l&#x27;autre.</p>
+<p>ANTONIO.--Vous me connaissez; c&#x27;est donc perdre le temps que de tourner ainsi autour de mon amitié par des circonlocutions. Vous me faites certainement plus de tort en doutant de mes sentiments, que si vous aviez dissipé tout ce que je possède. Dites-moi donc ce qu&#x27;il faut que je fasse pour vous, et tout ce que vous me croyez possible; je suis prêt à le faire: parlez donc.</p>
+<p>BASSANIO.--Il est dans Belmont une riche héritière; elle est belle, plus belle que ce mot, et douée de rares vertus. J&#x27;ai quelquefois reçu de ses yeux de doux messages muets. Son nom est Portia. Elle n&#x27;est pas moins estimée que la fille de Caton, la Portia de Brutus. L&#x27;univers entier connaît son mérite; car les quatre vents lui amènent de toutes les côtes d&#x27;illustres adorateurs. Ses cheveux, dorés comme les rayons du soleil, tombent en boucles sur ses tempes comme une toison d&#x27;or: ce qui fait de sa demeure de Belmont un rivage de Colchos, où plus d&#x27;un Jason se rend pour la conquérir: ô mon Antonio, si j&#x27;avais seulement le moyen d&#x27;entrer en concurrence avec eux, j&#x27;ai dans mon âme de tels présages de succès, qu&#x27;il est hors de doute que je l&#x27;emporterais.</p>
+<p>ANTONIO.--Tu sais que toute ma fortune est sur la mer, que je n&#x27;ai point d&#x27;argent, ni la possibilité de rassembler une forte somme. Va donc essayer ce que peut mon crédit dans Venise. Je l&#x27;épuiserai jusqu&#x27;au bout, pour te donner les moyens de paraître à Belmont, et d&#x27;obtenir la belle Portia. Va, informe-toi où il y a de l&#x27;argent. J&#x27;en ferai autant de mon côté, et je ne doute point que je n&#x27;en trouve par mon crédit ou par le désir qu&#x27;on aura de m&#x27;obliger.</p>
+<p>A Belmont.--Un appartement de la maison de Portia.</p>
+<p>PORTIA.--En vérité, Nérissa, mon petit individu est bien las de ce grand univers.</p>
+<p>NÉRISSA.--Cela serait bon, ma chère madame, si vos misères étaient en aussi grand nombre que le sont vos prospérités: cependant, à ce que je vois, on est aussi malade d&#x27;indigestion que de disette. Ce n&#x27;est donc pas un médiocre bonheur que d&#x27;être placé dans la médiocrité: superflu blanchit de bonne heure, suffisance vit longtemps.</p>
+<p>PORTIA.--Voilà de belles sentences, et très-bien débitées.</p>
+<p>NÉRISSA.--Elles seraient encore meilleures mises en pratique.</p>
+<p>PORTIA.--S&#x27;il était aussi aisé de faire qu&#x27;il l&#x27;est de connaître ce qui est bon à faire, les chapelles seraient des églises, et les cabanes des pauvres gens des palais de princes. C&#x27;est un bon prédicateur que celui qui se conforme à ses sermons. J&#x27;apprendrais plutôt à vingt personnes ce qu&#x27;il est à propos de faire, que je ne serais une des vingt à suivre mes instructions. Le cerveau peut imaginer des lois pour le sang, mais un tempérament ardent saute par-dessus une froide loi; c&#x27;est un tel lièvre que la folle jeunesse pour s&#x27;élancer par-dessus les filets du bon sens! Mais cette manière de raisonner n&#x27;est pas trop de saison lorsqu&#x27;il s&#x27;agit de choisir un époux. Choisir! hélas! quel mot! Je ne puis ni choisir celui que je voudrais, ni refuser celui qui me déplairait. Et ainsi il faut que la volonté d&#x27;une fille vivante se plie aux volontés d&#x27;un père mort. N&#x27;est-il pas bien dur, Nérissa, de ne pouvoir ni choisir ni refuser personne?</p>
+<p>NÉRISSA.--Votre père fut toujours vertueux, et les saints personnages ont à leur mort de bonnes inspirations. Ainsi, dans cette loterie qu&#x27;il a imaginée, et au moyen de laquelle vous devez être le partage de celui qui, entre trois coffres d&#x27;or, d&#x27;argent et de plomb, choisira selon son intention, vous pouvez être sûr que le bon choix sera fait par un homme que vous pourrez aimer en bonne conscience. Mais quelle chaleur d&#x27;affection sentez-vous pour tous ces brillants adorateurs qui sont déjà arrivés?</p>
+<p>PORTIA.--Je t&#x27;en prie, dis-moi leurs noms: à mesure que tu les nommeras je ferai leur portrait, et tu devineras mes sentiments par ma description.</p>
+<p>NÉRISSA.--D&#x27;abord il y a le prince de Naples.</p>
+<p>PORTIA.--Eh! c&#x27;est un véritable animal[2]. Il ne sait parler que de son cheval, et se targue comme d&#x27;un mérite singulier de la science qu&#x27;il possède de le ferrer lui-même. J&#x27;ai bien peur que madame sa mère ne se soit oubliée avec un forgeron.</p>
+<p>[Note 2: A colt. Colt signifie un jeune cheval qui n&#x27;est pas encore dressé, et aussi un étourdi sans éducation. On ne pouvait rendre en français le double sens de l&#x27;expression, il a fallu choisir celui qui allait le mieux au reste de la phrase.]</p>
+<p>NÉRISSA.--Vient ensuite le comte Palatin.</p>
+<p>PORTIA.--Il est toujours refrogné, comme s&#x27;il vous disait: Si vous ne voulez pas de moi, décidez-vous. Il écoute des contes plaisants sans un sourire. Je crains que dans sa vieillesse il ne devienne le philosophe larmoyant, puisque jeune encore il est d&#x27;une si maussade tristesse. J&#x27;aime mieux épouser une tête de mort la bouche garnie d&#x27;un os, qu&#x27;un de ces deux hommes-là. Dieu me préserve de tous les deux!</p>
+<p>NÉRISSA.--Que dites-vous du seigneur français, monsieur le Bon?</p>
+<p>PORTIA.--Dieu l&#x27;a fait; ainsi je consens qu&#x27;il passe pour un homme. Je sais bien que c&#x27;est un péché de se moquer de son prochain; mais lui! Comment! il a un meilleur cheval que le Napolitain! Il possède à un plus haut degré que le comte Palatin la mauvaise habitude de froncer le sourcil. Il est tous les hommes ensemble, sans en être un. Si un merle chante, il fait aussitôt la cabriole. Il va se battre contre son ombre. En l&#x27;épousant, j&#x27;épouserais en lui seul vingt maris; s&#x27;il vient à me mépriser je lui pardonnerai: car, m&#x27;aimât-il à la folie, je ne le payerai jamais de retour.</p>
+<p>NÉRISSA.--Que dites-vous de Fauconbridge, le jeune baron anglais?</p>
+<p>PORTIA.--Vous savez que je ne lui dis rien; car nous ne nous entendons ni l&#x27;un ni l&#x27;autre; il ne sait ni latin, ni français, ni italien: et vous pouvez bien jurer en justice que je ne sais pas pour deux sous d&#x27;anglais. C&#x27;est la peinture d&#x27;un joli homme. Mais, hélas! qui peut s&#x27;entretenir avec un tableau muet? Qu&#x27;il est mis singulièrement! Je crois qu&#x27;il a acheté son pourpoint en Italie, ses hauts-de-chausses circulaires en France, son bonnet en Allemagne, et ses manières par tout pays.</p>
+<p>NÉRISSA.--Que pensez-vous du seigneur écossais son voisin?</p>
+<p>PORTIA.---Qu&#x27;il est plein de charité pour son voisin, car il a emprunté un soufflet de l&#x27;Anglais, et a juré de le lui rendre quand il pourrait. Je crois que le Français s&#x27;est rendu sa caution, et s&#x27;est engagé pour un second.</p>
+<p>NÉRISSA.--Comment trouvez-vous le jeune Allemand, le neveu du comte de Saxe?</p>
+<p>PORTIA.--Fort déplaisant le matin quand il est à jeun, et bien plus déplaisant encore le soir quand il est ivre. Lorsqu&#x27;il est au mieux il est un peu plus mal qu&#x27;un homme, et quand il est le plus mal il est tant soit peu mieux qu&#x27;une bête. Et m&#x27;arrivât-il du pis qui puisse arriver, j&#x27;espère trouver le moyen de me défaire de lui.</p>
+<p>NÉRISSA.--S&#x27;il se présentait pour choisir, et qu&#x27;il prît le bon coffre, ce serait refuser d&#x27;accomplir les volontés de votre père, que de refuser sa main.</p>
+<p>PORTIA.--De crainte que ce malheur extrême n&#x27;arrive, mets, je te prie, sur le coffre opposé un grand verre de vin du Rhin; car si le diable était dedans, et cette tentation au dehors, je suis sûre qu&#x27;il le choisirait. Je ferai tout au monde, Nérissa, plutôt que d&#x27;épouser une éponge.</p>
+<p>NÉRISSA.--Vous ne devez plus craindre d&#x27;avoir aucun de ces messieurs; ils m&#x27;ont fait part de leurs résolutions, c&#x27;est de s&#x27;en retourner chez eux, et de ne plus vous importuner de leur recherche, à moins qu&#x27;ils ne puissent vous obtenir par quelque autre moyen que celui qu&#x27;a imposé votre père, et qui dépend du choix des coffres.</p>
+<p>PORTIA.--Dussé-je vivre aussi vieille que la Sibylle, je mourrai aussi chaste que Diane, à moins qu&#x27;on ne m&#x27;obtienne dans la forme prescrite par mon père. Je suis ravie que cette cargaison d&#x27;amoureux se montre si raisonnable; car il n&#x27;en est pas un parmi eux qui ne me fasse soupirer après son absence et prier Dieu de lui accorder un heureux départ.</p>
+<p>NÉRISSA.--Ne vous rappelez-vous pas, madame, que du vivant de votre père, il vint ici, à la suite du marquis de Montferrat, un Vénitien instruit et brave militaire?</p>
+<p>PORTIA.--Oui, oui, c&#x27;était Bassanio; c&#x27;est ainsi, je crois, qu&#x27;on le nommait.</p>
+<p>NÉRISSA.--Cela est vrai, madame; et de tous les hommes sur qui se soient jamais arrêtés mes yeux peu capables d&#x27;en juger, il m&#x27;a paru le plus digne d&#x27;une belle femme.</p>
+<p>PORTIA.--Je m&#x27;en souviens bien, et je me souviens aussi qu&#x27;il mérite tes éloges.--(Entre un valet.) Qu&#x27;est-ce? Quelles nouvelles?</p>
+<p>LE VALET.--Les quatre étrangers vous cherchent, madame, pour prendre congé de vous, et il vient d&#x27;arriver un courrier qui en devance un cinquième, le prince de Maroc; il dit que le prince son maître sera ici ce soir.</p>
+<p>PORTIA.--Si je pouvais accueillir celui-ci d&#x27;aussi bon coeur que je vois partir les autres, je serais charmée de son arrivée. S&#x27;il se trouve avoir les qualités d&#x27;un saint et le teint d&#x27;un diable, je l&#x27;aimerais mieux pour confesseur que pour épouseur. Allons, Nérissa; et toi (au valet), marche devant. Tandis que nous mettons un amant dehors, un autre frappe à la porte.</p>
+<p>(Ils sortent.)</p>
+<h2 class="chapter" id="c2">Scène III</h2>
+<p>Venise.--Une place publique.</p>
+<p>Entrent BASSANIO, SHYLOCK.</p>
+<p>SHYLOCK.--Trois mille ducats?--Bien.</p>
+<p>BASSANIO.--Oui, monsieur, pour trois mois.</p>
+<p>SHYLOCK.--Pour trois mois?--Bien.</p>
+<p>BASSANIO.--Pour lesquels, comme je vous disais, Antonio s&#x27;engagera.</p>
+<p>SHYLOCK.--Antonio s&#x27;engagera?--Bien.</p>
+<p>BASSANIO.--Pourrez-vous me rendre service? Me ferez-vous ce plaisir? Aurai-je votre réponse?</p>
+<p>SHYLOCK.--Trois mille ducats, pour trois mois, et Antonio engagé.</p>
+<p>BASSANIO.--Votre réponse à cela?</p>
+<p>SHYLOCK.--Antonio est bon.</p>
+<p>BASSANIO.--Auriez-vous ouï dire quelque chose de contraire?</p>
+<p>SHYLOCK.--Oh! non, non, non, non. En disant qu&#x27;il est bon, je veux seulement vous faire comprendre qu&#x27;il est suffisamment sûr. Cependant ses ressources reposent sur des suppositions. Il a un vaisseau frété pour Tripoli, un autre dans les Indes, et en outre j&#x27;ai appris sur le Rialto qu&#x27;il en avait un troisième au Mexique, un quatrième en Angleterre, et d&#x27;autres entreprises encore de côté et d&#x27;autre. Mais les vaisseaux ne sont que des planches, les matelots que des hommes. Il y a des rats de terre et des rats d&#x27;eau, et des voleurs d&#x27;eau comme des voleurs de terre, je veux dire qu&#x27;il y a des pirates; et puis aussi les dangers de la mer, les vents, les rochers. Néanmoins l&#x27;homme est suffisant.--Trois mille ducats... je crois pouvoir prendre son obligation.</p>
+<p>BASSANIO.--Soyez assuré que vous le pouvez.</p>
+<p>SHYLOCK.--Je m&#x27;assurerai que je le peux; et pour m&#x27;en assurer, j&#x27;y réfléchirai. Puis-je parler à Antonio?</p>
+<p>BASSANIO.--Si vous vouliez dîner avec nous?</p>
+<p>SHYLOCK.--Oui, pour sentir le porc! pour manger de l&#x27;habitation dans laquelle votre prophète, le Nazaréen, a par ses conjurations fait entrer le diable! Je veux bien faire marché d&#x27;acheter avec vous, faire marché de vendre avec vous, parler avec vous, me promener avec vous, et ainsi de suite; mais je ne veux pas manger avec vous, ni boire avec vous, ni prier avec vous. Quelles nouvelles sur le Rialto?--Mais qui vient ici?</p>
+<p>BASSANIO.--C&#x27;est le seigneur Antonio.</p>
+<p>(Entre Antonio.)</p>
+<p>SHYLOCK, à part.--Comme il a l&#x27;air d&#x27;un hypocrite publicain! je le hais parce qu&#x27;il est chrétien, mais je le hais bien davantage parce qu&#x27;il a la basse simplicité de prêter de l&#x27;argent gratis et qu&#x27;il fait baisser à Venise le taux de l&#x27;usance[3]. Si je puis une fois prendre ma belle[4], j&#x27;assouvirai pleinement la vieille aversion que je lui porte. Il hait notre sainte nation, et dans les lieux d&#x27;assemblées des marchands, il invective contre mes marchés, mes gains bien acquis, qu&#x27;il appelle intérêts. Maudite soit ma tribu si je lui pardonne!</p>
+<p>[Note 3: Usance est un terme de banque; il signifie une échéance à trente jours de date, et l&#x27;intérêt produit par ces trente jours. Usance et usure s&#x27;employaient également pour désigner le prêt à intérêt, que réprouvaient les anciennes maximes des théologiens. Usure est demeuré le mot odieux employé pour signifier un intérêt excessif; et le mot usance a été préféré par les prêteurs pour signifier ce que les emprunteurs nommaient usure. Le Juif se sert toujours ici du mot usance, pour éviter celui d&#x27;intérêt qu&#x27;Antonio emploie toujours dans un sens de reproche.]</p>
+<p>[Note 4: Catch him upon the hip.--Le prendre sur la hanche. Expression proverbiale qui n&#x27;a pas son équivalent en français.]</p>
+<p>BASSANIO.--Shylock, entendez-vous?</p>
+<p>SHYLOCK.--Je me consultais sur les fonds que j&#x27;ai en main pour le moment, et autant que ma mémoire peut me le rappeler, je vois que je ne saurais vous faire tout de suite la somme complète de trois mille ducats. N&#x27;importe; Tubal, un riche Hébreu de ma tribu me fournira ce qu&#x27;il faut. Mais doucement; pour combien de mois les voulez-vous? (A Antonio.) Maintenez-vous en joie, mon bon seigneur. C&#x27;était de Votre Seigneurie que nous nous entretenions à l&#x27;instant même.</p>
+<p>ANTONIO.--Shylock, quoique je ne prête ni n&#x27;emprunte à intérêt, cependant pour fournir aux besoins pressants d&#x27;un ami, je dérogerai à ma coutume. (A Bassanio.) Est-il instruit de la somme que vous désirez?</p>
+<p>SHYLOCK.--Oui, oui, trois mille ducats.</p>
+<p>ANTONIO.--Et pour trois mois.</p>
+<p>SHYLOCK.--J&#x27;avais oublié. Pour trois mois; vous me l&#x27;aviez dit. A la bonne heure. Faites votre billet, et puis je verrai.... Mais écoutez, il me semble que vous venez de dire que vous ne prêtez ni n&#x27;empruntez à intérêt.</p>
+<p>ANTONIO.--Jamais.</p>
+<p>SHYLOCK.--Quand Jacob faisait paître les brebis de son oncle Laban.... Ce Jacob (au moyen de ce que fit en sa faveur sa prudente mère) fut le troisième possesseur des biens de notre saint Abraham.... Oui, ce fut le troisième.</p>
+<p>ANTONIO.--A quel propos revient-il ici? Prêtait-il à intérêt?</p>
+<p>SHYLOCK.--Non, il ne prêtait pas à intérêt, non, si vous voulez, pas précisément à intérêt. Remarquez bien ce que Jacob faisait. Laban et lui étant convenus que tous les nouveau-nés qui seraient rayés de deux couleurs appartiendraient à Jacob pour son salaire; sur la fin de l&#x27;automne, les brebis étant en chaleur allaient chercher les béliers, et quand ces couples portant toison en étaient arrivés au moment de consommer l&#x27;oeuvre de la génération, le rusé berger vous levait l&#x27;écorce de certains bâtons, et dans l&#x27;instant précis de l&#x27;acte de nature, les présentait aux brebis échauffées, qui, concevant alors, quand le temps de l&#x27;enfantement était venu, mettaient bas des agneaux bariolés, lesquels étaient pour Jacob. C&#x27;était là un moyen de gagner; et Jacob fut béni du ciel; et le gain est une bénédiction, pourvu qu&#x27;on ne le vole pas.</p>
+<p>ANTONIO.--Jacob, monsieur, donnait là ses services pour un salaire très-incertain, pour une chose qu&#x27;il n&#x27;était pas en son pouvoir de faire arriver, mais que la seule main du ciel règle et façonne à son gré. Ceci a-t-il été écrit pour légitimer le prêt à intérêt? Votre or et votre argent sont-ils des brebis et des béliers?</p>
+<p>SHYLOCK.--Je ne saurais vous dire; du moins je les fais engendrer aussi vite. Mais faites attention à cela, seigneur.</p>
+<p>ANTONIO, à Bassanio.--Et vous, remarquez, Bassanio, que le diable peut employer à ses fins les textes de l&#x27;Écriture. Une méchante âme qui s&#x27;autorise d&#x27;un saint témoignage ressemble à un scélérat qui a le sourire sur ses lèvres, à une belle pomme dont le coeur est pourri. Oh! de quels beaux dehors se couvre la friponnerie!</p>
+<p>SHYLOCK.--Trois mille ducats! c&#x27;est une bonne grosse somme. Trois mois sur les douze.... Voyons un peu l&#x27;intérêt.</p>
+<p>ANTONIO.--Eh bien! Shylock, vous serons-nous redevables?</p>
+<p>SHYLOCK.--Seigneur Antonio, mainte et mainte fois vous m&#x27;avez fait des reproches au Rialto sur mes prêts et mes usances. Je n&#x27;y ai jamais répondu qu&#x27;en haussant patiemment les épaules, car la patience est le caractère distinctif de notre nation. Vous m&#x27;avez appelé mécréant, chien de coupe-gorge, et vous avez craché sur ma casaque de juif, et tout cela parce que j&#x27;use à mon gré de mon propre bien. Maintenant il paraît que vous avez besoin de mon secours, c&#x27;est bon. Vous venez à moi alors, et vous dites: «Shylock, nous voudrions de l&#x27;argent.» Voilà ce que vous me dites, vous qui avez expectoré votre rhume sur ma barbe; qui m&#x27;avez repoussé du pied, comme vous chasseriez un chien étranger venu sur le seuil de votre porte. C&#x27;est de l&#x27;argent que vous demandez! Je devrais vous répondre, dites, ne devrais-je pas vous répondre ainsi: «Un chien a-t-il de l&#x27;argent? Est-il possible qu&#x27;un roquet prête trois mille ducats?» Ou bien irai-je vous saluer profondément, et dans l&#x27;attitude d&#x27;un esclave, vous dire d&#x27;une voix basse et timide: «Mon beau monsieur, vous avez craché sur moi mercredi dernier, vous m&#x27;avez donné des coups de pied un tel jour, et une autre fois vous m&#x27;avez appelé chien; en reconnaissance de ces bons traitements, je vais vous prêter tant d&#x27;argent?»</p>
+<p>ANTONIO.--Je suis tout prêt à t&#x27;appeler encore de même, à cracher encore sur toi, à te repousser encore de mon pied. Si tu nous prêtes cet argent, ne nous le prête pas comme à des amis, car l&#x27;amitié a-t-elle jamais exigé qu&#x27;un stérile métal produisît pour elle dans les mains d&#x27;un ami? mais prête plutôt ici à ton ennemi. S&#x27;il manque à son engagement, tu auras meilleure grâce à exiger sa punition.</p>
+<p>SHYLOCK.--Eh! mais voyez donc comme vous vous emportez! Je voudrais être de vos amis, gagner votre affection, oublier les avanies que vous m&#x27;avez faites, subvenir à vos besoins présents, et ne pas exiger un denier d&#x27;usure pour mon argent, et vous ne voulez pas m&#x27;entendre! L&#x27;offre est pourtant obligeante.</p>
+<p>ANTONIO.--Ce serait, en effet, par obligeance.</p>
+<p>SHYLOCK.--Et je veux l&#x27;avoir cette obligeance; venez avec moi chez un notaire, me signer un simple billet, et pour nous divertir, nous stipulerons qu&#x27;en cas que vous ne me rendiez pas, à tels jour et lieu désigné, la somme ou les sommes exprimées dans l&#x27;acte, vous serez condamné à me payer une livre juste de votre belle chair, coupée sur telle partie du corps qu&#x27;il me plaira choisir.</p>
+<p>ANTONIO.--J&#x27;y consens sur ma foi, et, en signant un pareil billet, je dirai que le Juif est rempli d&#x27;obligeance.</p>
+<p>BASSANIO.--Vous ne ferez pas pour mon compte un billet de la sorte; j&#x27;aime mieux rester dans l&#x27;embarras.</p>
+<p>ANTONIO.--Eh! ne craignez rien, mon cher: je n&#x27;encourrai pas la condamnation. Dans le courant de ces deux mois-ci, c&#x27;est-à-dire encore un mois avant l&#x27;échéance du billet, j&#x27;attends des retours pour neuf fois sa valeur.</p>
+<p>SHYLOCK.--O père Abraham! ce que c&#x27;est que ces chrétiens, comme la dureté de leurs procédés les rend soupçonneux sur les intentions des autres! Dites-moi, s&#x27;il ne payait pas au terme marqué, que gagnerais-je en exigeant qu&#x27;il remplît la condition proposée? Une livre de la chair d&#x27;un homme, prise sur un homme, ne me serait pas si bonne ni si profitable que de la chair de mouton, de boeuf ou de chèvre. C&#x27;est pour m&#x27;acquérir ses bonnes grâces que je lui fais cette offre d&#x27;amitié: s&#x27;il veut l&#x27;accepter, à la bonne heure! sinon, adieu; et je vous prie de ne pas mal interpréter mon attachement.</p>
+<p>ANTONIO.--Oui, Shylock, je signerai ce billet.</p>
+<p>SHYLOCK.--En ce cas, allez m&#x27;attendre chez le notaire; donnez-lui vos instructions sur ce billet bouffon. Je vais prendre les ducats, donner un coup d&#x27;oeil à mon logis que j&#x27;ai laissé sous la garde très-peu sûre d&#x27;un négligent coquin, et je vous rejoins dans l&#x27;instant.</p>
+<p>(Il sort.)</p>
+<p>ANTONIO.--Dépêche-toi, aimable Juif. Cet Hébreu se fera chrétien; il devient traitable.</p>
+<p>BASSANIO.--Je n&#x27;aime pas de belles conditions accordées par un misérable.</p>
+<p>ANTONIO.--Allons: il ne peut y avoir rien à craindre; mes vaisseaux arriveront un mois avant le terme.</p>
+<h3 class="sub">Fin du premier Acte — Acte deuxième</h3>
+<h2 class="chapter" id="c3">Scène I</h2>
+<p>A Belmont.</p>
+<p>Fanfare de cors. Entrent LE PRINCE DE MAROC avec sa suite, PORTIA, NÉRISSA, et plusieurs autres personnes de sa suite.</p>
+<p>LE PRINCE DE MAROC.--Ne vous choquez point de la couleur de mon teint: c&#x27;est la sombre livrée de ce soleil à la brune chevelure dont je suis voisin, et près duquel je fus nourri. Faites-moi venir le plus beau des enfants du Nord, où les feux de Phoebus dégèlent à peine les glaçons suspendus aux toits, et faisons sur nous une incision en votre honneur, pour savoir quel sang est le plus rouge du sien ou du mien. Dame, je puis te le dire, cette figure a intimidé le brave. Je jure, par mon amour, que les vierges les plus honorées de nos climats en ont été éprises. Je ne voudrais pas changer de couleur, à moins que ce ne fût pour vous dérober quelques pensées, mon aimable reine.</p>
+<p>PORTIA.--Je ne me laisse pas conduire dans mon choix par la seule délicatesse des yeux d&#x27;une fille. D&#x27;ailleurs la loterie à laquelle est remis mon sort ôte à ma volonté le droit d&#x27;une libre décision. Mais mon père n&#x27;eût-il pas circonscrit mon choix, et n&#x27;eût-il pas, dans sa sagesse, déterminé que je me donnerais pour femme à celui qui m&#x27;obtiendra par les moyens que je vous ai dits, vous me paraîtriez, prince renommé, tout aussi digne de mon affection qu&#x27;aucun de ceux que j&#x27;aie vus jusqu&#x27;ici se présenter.</p>
+<p>LE PRINCE DE MAROC.--Je vous en rends grâces. Je vous prie, conduisez-moi à ces coffres, pour y essayer ma fortune. Par ce cimeterre, qui a tué le sophi et un prince de Perse, et qui a gagné trois batailles sur le sultan Soliman, je voudrais, pour t&#x27;obtenir, foudroyer de mes regards l&#x27;oeil le plus farouche, vaincre en bravoure le coeur le plus intrépide de l&#x27;univers, arracher les petits ours des mamelles de leur mère; que dis-je? insulter au lion rugissant après sa proie. Mais, hélas! cependant, quand Hercule et Lichas joueront aux dés pour décider lequel vaut le mieux des deux, le plus haut point peut sortir de la main la plus faible; et voilà Hercule vaincu par son page. Et moi, conduit de même par l&#x27;aveugle fortune, je puis manquer ce qu&#x27;obtiendra un moins digne, et en mourir de douleur.</p>
+<p>PORTIA.--Il vous en faut courir les chances, et renoncer à choisir; ou, avant de choisir, il faut jurer que si vous choisissez mal, vous ne parlerez à l&#x27;avenir de mariage à aucune femme. Ainsi, faites bien vos réflexions.</p>
+<p>LE PRINCE DE MAROC.--Je m&#x27;y soumets: allons, conduisez-moi à la décision de mon sort.</p>
+<p>PORTIA.--Rendons-nous d&#x27;abord au temple. Après le dîner, vous tirerez votre lot.</p>
+<p>LE PRINCE DE MAROC.--A la fortune, donc, qui va me rendre le plus heureux ou le plus malheureux des hommes!</p>
+<p>Entre LANCELOT GOBBO.</p>
+<p>LANCELOT.--Sûrement, ma conscience me permettra de fuir la maison de ce Juif, mon maître. Le diable est à mes trousses, et me tente en me disant: Gobbo, Lancelot Gobbo, bon Lancelot, ou bon Gobbo, ou bon Lancelot Gobbo, servez-vous de vos jambes; prenez votre élan, et décampez. Ma conscience me dit: Non; prends garde, honnête Lancelot; prends garde, honnête Gobbo; ou, comme je l&#x27;ai dit, honnête Lancelot Gobbo, ne t&#x27;enfuis pas; rejette la pensée de te fier à tes talons. Et là-dessus l&#x27;intrépide démon me presse de faire mon paquet: Allons, dit le diable; hors d&#x27;ici, dit le diable; par le ciel, arme-toi de courage, dit le diable, et sauve-toi. Alors ma conscience, se jetant dans les bras de mon coeur, me dit fort prudemment: Mon honnête ami Lancelot, toi, le fils d&#x27;un honnête homme, ou plutôt d&#x27;une honnête femme; car, au fait, mon père eut sur son compte quelque chose; il s&#x27;éleva à quelque chose; il avait un certain arrière-goût.... Bien, ma conscience me dit: Lancelot, ne bouge pas; va-t&#x27;en, dit le diable; ne bouge pas, dit ma conscience.--Et moi je dis: Ma conscience, votre conseil est bon; je dis: Démon, votre conseil est bon. En me laissant gouverner par ma conscience, je resterais avec le Juif mon maître, qui, Dieu me pardonne, est une espèce de diable; et en fuyant de chez le Juif, je me laisserais gouverner par le démon qui, sauf votre respect, est le diable en personne: sûrement le Juif est le diable même incarné; et, en conscience, ma conscience n&#x27;est qu&#x27;une manière de conscience brutale, de venir me conseiller de rester avec le Juif. Allons, c&#x27;est le diable qui me donne un conseil d&#x27;ami; je me sauverai, démon: mes talons sont à tes ordres; je me sauverai.</p>
+<p>(Entre le vieux Gobbo avec un panier.)</p>
+<p>GOBBO.--Monsieur le jeune homme, vous-même, je vous prie: quel est le chemin de la maison de monsieur le Juif?</p>
+<p>LANCELOT, à part.--O ciel! c&#x27;est mon père légitime; il a la vue plus que brouillée; elle est tout à fait déguerpie[5], en sorte qu&#x27;il ne me reconnaît pas. Je veux voir ce qui en sera.</p>
+<p>[Note 5: More than sand-blind, high gravel blind. Sand-blind désigne une maladie de la vue, qui fait voir habituellement devant les yeux comme des grains de sable. Lancelot, dans son langage bouffon, pour exprimer que son père est presque aveugle, dit qu&#x27;il n&#x27;est pas seulement sand-blind (aveugle de sable), mais gravel blind (aveugle de gravier): ce qui aurait été inintelligible en français.]</p>
+<p>GOBBO.--Monsieur le jeune gentilhomme, je vous prie, quel est le chemin pour aller chez monsieur le Juif?</p>
+<p>LANCELOT.--Tournez sur votre main droite, au premier détour; mais, au plus prochain détour, tournez sur votre gauche; puis ma foi, au premier détour, ne tournez ni à droite ni à gauche; mais descendez indirectement vers la maison du Juif.</p>
+<p>GOBBO.--Fontaine de Dieu! ce sera bien difficile à trouver. Pourriez-vous me dire si un nommé Lancelot, qui demeure avec lui, y demeure ou non?</p>
+<p>LANCELOT.--Parlez-vous du jeune monsieur Lancelot?--Faites bien attention à présent. (A part.)--Je vais lui faire monter l&#x27;eau aux yeux.--Parlez-vous du jeune monsieur Lancelot?</p>
+<p>GOBBO.--Il n&#x27;est pas un monsieur; c&#x27;est le fils d&#x27;un pauvre homme. Son père, quoique ce soit moi qui le dise, est un honnête homme excessivement pauvre, et qui, Dieu merci, a encore envie de vivre.</p>
+<p>LANCELOT.--Allons, que son père soit ce qu&#x27;il voudra; nous parlons du jeune monsieur Lancelot.</p>
+<p>GOBBO.--De l&#x27;ami de Votre Seigneurie, et de Lancelot tout court, monsieur.</p>
+<p>LANCELOT.--Mais, je vous prie, ergo, vieillard, ergo, je vous en conjure; parlez-vous du jeune monsieur Lancelot?</p>
+<p>GOBBO.--De Lancelot, sous votre bon plaisir, monsieur.</p>
+<p>LANCELOT.--Ergo, monsieur Lancelot; ne parlez point de monsieur Lancelot, père; car le jeune gentilhomme (en conséquence des destins et des destinées, et de toutes ces bizarres façons de parler, comme les trois soeurs, et autres branches de science) est vraiment décédé; ou, comme qui dirait tout simplement, parti pour le ciel.</p>
+<p>GOBBO.--Que Dieu m&#x27;en préserve! Ce garçon était le bâton de ma vieillesse, mon seul soutien.</p>
+<p>LANCELOT.--Est-ce que je ressemble à un gourdin, ou à un appui de hangar, à un bâton, à une béquille? Me reconnaissez-vous, père?</p>
+<p>GOBBO.--Hélas! non, je ne vous reconnais point, mon jeune monsieur; mais, je vous en prie, dites-moi, mon garçon, Dieu fasse paix à son âme! est-il vivant ou mort?</p>
+<p>LANCELOT.--Ne me connaissez-vous point, père?</p>
+<p>GOBBO.--Hélas! monsieur, j&#x27;ai la vue trouble et je ne vous connais point.</p>
+<p>LANCELOT.--Eh bien! si vous aviez vos yeux, vous pourriez bien risquer de ne pas me reconnaître; c&#x27;est un habile père que celui qui connaît son enfant. Allons, vieillard; je vais vous donner des nouvelles de votre fils.--Donnez-moi votre bénédiction. La vérité se montrera au grand jour: un meurtre ne peut rester longtemps caché; au lieu que le fils d&#x27;un homme le peut; mais à la fin la vérité se montrera.</p>
+<p>GOBBO.--Je vous en prie, monsieur, levez-vous; je suis certain que vous n&#x27;êtes point Lancelot, mon garçon.</p>
+<p>LANCELOT.--Je vous en conjure, ne bavardons pas plus longtemps là-dessus. Donnez-moi votre bénédiction. Je suis Lancelot, qui était votre garçon, qui est votre fils, et qui sera votre enfant.</p>
+<p>GOBBO.--Je ne puis croire que vous soyez mon fils.</p>
+<p>LANCELOT.--Je ne sais qu&#x27;en penser: mais je suis Lancelot, le valet du Juif; et je suis sûr que Marguerite, votre femme, est ma mère.</p>
+<p>GOBBO.--Oui, en effet, elle se nomme Marguerite: je jurerai que si tu es Lancelot, tu es ma chair, et mon sang. Dieu soit adoré! Quelle barbe tu as acquise! Il t&#x27;est venu plus de poil au menton qu&#x27;il n&#x27;en est venu sur la queue à Dobbin, mon limonier.</p>
+<p>LANCELOT.--Il paraîtrait en cela que la queue de Dobbin augmente à rebours; car je suis sûr que la dernière fois que je l&#x27;ai vu, il avait plus de poil à la queue que je n&#x27;en ai sur la face.</p>
+<p>GOBBO.--Seigneur! que tu es changé!--Comment vous accordez-vous ensemble, ton maître et toi? Je lui apporte un présent: comment êtes-vous ensemble aujourd&#x27;hui?</p>
+<p>LANCELOT.--Fort bien, fort bien. Mais quant à moi, comme j&#x27;ai arrêté de m&#x27;enfuir de chez lui, je ne m&#x27;arrêterai plus que je n&#x27;aie fait un bout de chemin. Mon maître est un vrai Juif. Lui faire un présent! Faites-lui présent d&#x27;une hart: je meurs de faim à son service: vous pouvez compter mes doigts par le nombre de mes côtes. Mon père, je suis bien aise que vous soyez venu: donnez-moi votre présent pour un monsieur Bassanio, qui fait faire maintenant à ses gens de très-belles livrées neuves: si je ne le sers pas, je courrai tant que Dieu a de terre. O rare bonheur! Tenez, le voici lui-même; adressez-vous à lui, mon père, car je veux devenir Juif, si je sers le Juif plus longtemps.</p>
+<p>(Entre Bassanio, suivi de Léonardo et d&#x27;autres domestiques.)</p>
+<p>BASSANIO.--Vous pouvez l&#x27;arranger ainsi;--mais faites si bien diligence, que le souper soit prêt au plus tard pour cinq heures.--Aie soin que ces lettres soient remises. Donne les livrées à faire, et prie Gratiano de venir dans l&#x27;instant me trouver chez moi.</p>
+<p>(Sort un domestique.)</p>
+<p>LANCELOT.--Allez à lui, mon père.</p>
+<p>GOBBO.--Dieu bénisse Votre Seigneurie!</p>
+<p>BASSANIO.--Bien obligé: me veux-tu quelque chose?</p>
+<p>GOBBO.--Voilà mon fils, monsieur, un pauvre garçon...</p>
+<p>LANCELOT.--Non pas un pauvre garçon, monsieur; c&#x27;est le valet du riche Juif, qui voudrait, monsieur, comme mon père vous le spécifiera....</p>
+<p>GOBBO.--Il a, monsieur, une grande rage, comme qui dirait, de servir....</p>
+<p>LANCELOT.--Effectivement, le court et le long de la chose, est que je sers le Juif, et j&#x27;ai bien envie, comme mon père vous le spécifiera....</p>
+<p>GOBBO.--Son maître et lui, sauf le respect dû à Votre Seigneurie, ne sont guère cousins ensemble.</p>
+<p>LANCELOT.--Pour abréger, la vérité est que le Juif m&#x27;ayant maltraité, c&#x27;est la cause que je..., comme mon père, qui est, comme je l&#x27;espère, un vieillard, vous le détaillera.</p>
+<p>GOBBO.--J&#x27;ai ici quelques paires de pigeons que je voudrais offrir à Votre Seigneurie, et ma prière est que....</p>
+<p>LANCELOT.--En peu de mots, la requête est impertinente pour mon compte, à moi, comme Votre Seigneurie le saura par cet honnête vieillard; et quoique ce soit moi qui le dise, quoiqu&#x27;il soit vieux, cependant c&#x27;est un pauvre homme, et mon père.</p>
+<p>BASSANIO.--Qu&#x27;un de vous parle pour deux.--Que voulez-vous?</p>
+<p>LANCELOT.--Vous servir, monsieur.</p>
+<p>GOBBO.--C&#x27;est là où le bât nous blesse, monsieur.</p>
+<p>BASSANIO.--Je te connais très-bien: tu as obtenu ta requête. Shylock, ton maître, m&#x27;a parlé aujourd&#x27;hui même, et t&#x27;a fait réussir, supposé que ce soit réussir que de quitter le service d&#x27;un riche Juif, pour te mettre à la suite d&#x27;un si pauvre gentilhomme que moi.</p>
+<p>LANCELOT.--Le vieux proverbe est très-bien partagé entre mon maître Shylock et vous, monsieur: vous avez la grâce de Dieu, monsieur, et lui, il a de quoi.</p>
+<p>BASSANIO.--C&#x27;est fort bien dit: bon père, va avec ton fils.--Prends congé de ton ancien maître, et informe-toi de ma demeure, pour t&#x27;y rendre. (A ses gens.) Qu&#x27;on lui donne une livrée plus galonnée que celle de ses camarades. Ayez-y l&#x27;oeil.</p>
+<p>LANCELOT.--Mon père, entrons.--Je ne sais pas me procurer du service; non, je n&#x27;ai jamais eu de langue dans ma tête.--Allons (considérant la paume de sa main), si de tous les hommes en Italie, qui ouvrent la main pour jurer sur l&#x27;Évangile, il y en a un qui présente une plus belle table.... je dois faire fortune; tenez, voyez seulement cette ligne de vie! Pour les mariages, ce n&#x27;est qu&#x27;une bagatelle; quinze femmes, hélas! ce ne serait rien; onze veuves et neuf pucelles, ce n&#x27;est que le simple nécessaire d&#x27;un homme. Et ensuite échapper trois fois au danger de se noyer, et courir risque de la vie sur le bord d&#x27;un lit de plume.... Ce n&#x27;est pas grand&#x27;chose en effet que de se tirer de là. Allons, si la fortune est femme, c&#x27;est une bonne pâte de femme de m&#x27;avoir donné de pareils linéaments.--Venez, mon père, je vais prendre congé du Juif dans un clin d&#x27;oeil.</p>
+<p>(Lancelot et Gobbo sortent.)</p>
+<p>BASSANIO.--Je te prie, cher Léonardo, songe à ce que je t&#x27;ai recommandé. Quand tu auras tout acheté et distribué comme je te l&#x27;ai dit, reviens promptement; car je traite chez moi, ce soir, mes meilleurs amis. Dépêche-toi, va.</p>
+<p>LÉONARDO.--Je ferai tout cela de mon mieux.</p>
+<p>(Entre Gratiano.)</p>
+<p>GRATIANO.--Où est votre maître?</p>
+<p>LÉONARDO.--Là-bas, monsieur, qui se promène....</p>
+<p>(Léonardo sort.)</p>
+<p>GRATIANO.--Seigneur Bassanio!</p>
+<p>BASSANIO.--Ha! Gratiano!</p>
+<p>GRATIANO.--J&#x27;ai une demande à vous faire.</p>
+<p>BASSANIO.--Elle vous est accordée.</p>
+<p>GRATIANO.--Vous ne pouvez me refuser; il faut absolument que je vous accompagne à Belmont.</p>
+<p>BASSANIO.--Très-bien, j&#x27;y consens.--Mais écoute, Gratiano.--Tu es trop sans façon, trop brusque; tu as un ton de voix trop tranchant.--Ce sont des qualités qui te vont assez bien, et qui à nos yeux ne semblent pas des défauts; mais partout où tu n&#x27;es pas connu, te dirai-je? elles annoncent quelque chose de trop libre.--Je t&#x27;en prie, prends la peine de tempérer ton esprit trop pétulant par quelques grains de retenue, de peur que l&#x27;irrégularité de tes manières ne soit interprétée à mon désavantage dans le lieu où je vais, et ne me fasse perdre mes espérances.</p>
+<p>GRATIANO.--Seigneur Bassanio, écoutez-moi; si je ne prends pas le maintien le plus modeste, si je ne parle pas respectueusement, ne laissant échapper que quelques jurons de temps à autre; si je ne me présente pas de l&#x27;air plus grave, toujours des livres de prières dans ma poche; si même, lorsqu&#x27;on dira les grâces, je ne ferme pas les yeux avec componction en tenant ainsi mon chapeau, et poussant un soupir, et disant amen; enfin si je n&#x27;observe pas la civilité jusqu&#x27;au scrupule, comme un homme formé à toute la gravité de maintien requise pour plaire à sa grand&#x27;mère, ne vous fiez plus jamais à moi.</p>
+<p>BASSANIO.--Allons, nous verrons comment vous vous conduirez.</p>
+<p>GRATIANO.--Oui, mais j&#x27;excepte la soirée d&#x27;aujourd&#x27;hui: vous ne me jugerez pas sur ce que nous ferons ce soir.</p>
+<p>BASSANIO.--Oh! non: ce serait dommage. Je vous inviterai au contraire à déployer votre plus grande gaieté; car nous avons des amis qui se proposent de se réjouir; mais adieu, je vous laisse: j&#x27;ai quelques affaires.</p>
+<p>GRATIANO.--Et moi, il faut que j&#x27;aille trouver Lorenzo et les autres; mais nous vous rendrons visite à l&#x27;heure du souper.</p>
+<p>(Ils sortent.)</p>
+<h2 class="chapter" id="c4">Scène III</h2>
+<p>Toujours à Venise.--Une pièce dans la maison de Shylock.</p>
+<p>Entrent JESSICA ET LANCELOT.</p>
+<p>JESSICA.--Je suis fâchée que tu quittes ainsi mon père. Notre maison est l&#x27;enfer, et toi, un démon jovial qui dissipais un peu cette atmosphère d&#x27;ennui. Mais porte-toi bien, voilà un ducat pour toi; et, Lancelot, tu verras bientôt au souper Lorenzo, qui est invité chez ton nouveau maître. Donne-lui cette lettre: fais-le secrètement; adieu. Je ne voudrais pas que mon père me trouvât causant avec toi.</p>
+<p>LANCELOT.--Adieu; mes larmes te parlent pour moi.--Très-charmante païenne! Très-aimable Juive! Si un chrétien ne fait pas quelque tour de fripon pour te posséder, je serais bien trompé; mais, adieu: ces sottes larmes noient un peu mon courage viril. Adieu.</p>
+<p>(Il sort.)</p>
+<p>JESSICA.--Adieu, bon Lancelot.--Hélas! quel odieux péché! n&#x27;est-ce pas à moi de rougir d&#x27;être la fille de mon père! Mais quoique je sois sa fille par le sang, je ne le suis point par le caractère. O Lorenzo! si tu tiens ta promesse, je mettrai fin à ces combats, je deviendrai chrétienne, et ta tendre épouse.</p>
+<p>(Elle sort.)</p>
+<h2 class="chapter" id="c5">Scène IV</h2>
+<p>Toujours à Venise.--Une rue.</p>
+<p>Entrent GRATIANO, LORENZO, SALARINO, SALANIO.</p>
+<p>LORENZO.--Oui, nous nous échapperons pendant le souper: nous irons prendre nos déguisements chez moi, nous reviendrons tous en moins d&#x27;une heure.</p>
+<p>GRATIANO.--Nous n&#x27;avons pas fait les préparatifs nécessaires.</p>
+<p>SALARINO.--Nous n&#x27;avons pas encore parlé de nous procurer des porte-flambeaux.</p>
+<p>SALANIO.--C&#x27;est une pauvre chose, quand cela n&#x27;est pas arrangé dans un bel ordre; et à mon avis il vaudrait mieux, en ce cas, n&#x27;y pas songer.</p>
+<p>LORENZO.--Il n&#x27;est encore que quatre heures: nous avons deux heures pour nous procurer tout ce qu&#x27;il faut. (Entre Lancelot avec une lettre.) Ami Lancelot, qu&#x27;y a-t-il de nouveau?</p>
+<p>LANCELOT.--S&#x27;il vous plaît d&#x27;ouvrir cette lettre, elle pourra probablement vous l&#x27;apprendre.</p>
+<p>LORENZO.--Je connais cette main: c&#x27;est une belle main sur ma foi, et la belle main qui a écrit cette lettre est plus blanche que le papier sur lequel elle a écrit.</p>
+<p>GRATIANO.--Une lettre d&#x27;amour, sûrement?</p>
+<p>LANCELOT.--Avec votre permission, monsieur....</p>
+<p>LORENZO.--Où vas-tu?</p>
+<p>LANCELOT.--Vraiment, monsieur, inviter mon ancien maître le Juif à souper ce soir chez mon nouveau maître le chrétien.</p>
+<p>LORENZO.--Attends, prends ceci.--Dis à l&#x27;aimable Jessica, que je ne lui manquerai pas de parole. Parle-lui en secret: va. (Sort Lancelot.)--Messieurs, voulez-vous vous préparer pour la mascarade de ce soir? Je suis pourvu d&#x27;un porte-flambeau.</p>
+<p>SALARINO.--Oui, vraiment, j&#x27;y vais sur-le-champ.</p>
+<p>SALANIO.--Et moi aussi.</p>
+<p>LORENZO.--Venez nous trouver, Gratiano et moi, dans quelque temps, au logis de Gratiano.</p>
+<p>SALARINO.--C&#x27;est bon, nous n&#x27;y manquerons pas.</p>
+<p>(Salarino et Salanio sortent.)</p>
+<p>GRATIANO.--Cette lettre ne venait-elle pas de la belle Jessica?</p>
+<p>LORENZO.--Il faut que je te dise tout: elle m&#x27;instruit de la manière dont il faut que je l&#x27;enlève de la maison de son père, me détaille ce qu&#x27;elle emporte d&#x27;or et de bijoux, l&#x27;habillement de page qu&#x27;elle a tout prêt. Si jamais le Juif son père entre dans le ciel, ce ne sera que par considération pour son aimable fille; et jamais le malheur n&#x27;osera traverser les pas de cette belle, qu&#x27;en s&#x27;autorisant du prétexte qu&#x27;elle est la lignée d&#x27;un Juif sans foi. Allons, viens avec moi: parcours cette lettre tout en marchant. La belle Jessica me servira de porte-flambeau.</p>
+<p>(Ils sortent.)</p>
+<h2 class="chapter" id="c6">Scène V</h2>
+<p>Dans la maison de Shylock.</p>
+<h3 class="sub">Shylock, Lancelot.</h3>
+<p>SHYLOCK.--Allons; tu verras par tes yeux, et tu jugeras de la différence qu&#x27;il y a entre le vieux Shylock et Bassanio.--Hé! Jessica?--Tu ne seras pas toujours à faire bombance, comme tu l&#x27;as faite avec moi.... Eh! Jessica?... Et à dormir, et à ronfler, et à déchirer tes habits.--Eh bien! Jessica? Quoi donc?</p>
+<p>LANCELOT.--Holà! Jessica?</p>
+<p>SHYLOCK.--Qui te dit d&#x27;appeler? Je ne t&#x27;ai pas dit d&#x27;appeler.</p>
+<p>LANCELOT.--Votre Seigneurie me reprochait souvent de ne savoir rien faire sans qu&#x27;on me le dît.</p>
+<p>(Entre Jessica.)</p>
+<p>JESSICA.--Vous m&#x27;appelez? Que voulez-vous?</p>
+<p>SHYLOCK.--Je suis invité à souper dehors, Jessica; voilà mes clefs.--Mais pourquoi irais-je? Ce n&#x27;est pas par amitié que je suis invité; ils me flattent: eh bien! j&#x27;irai par haine, pour manger aux dépens du prodigue chrétien.--Jessica, ma fille, veille sur ma maison. J&#x27;ai de la répugnance à sortir: il se brasse quelque chose de contraire à mon repos: car j&#x27;ai rêvé cette nuit de sacs d&#x27;argent.</p>
+<p>LANCELOT.--Je vous en conjure, monsieur, allez-y. Mon jeune maître attend avec impatience votre déconvenue[6].</p>
+<p>SHYLOCK.--Et moi la sienne.</p>
+<p>LANCELOT.--Ils ont comploté ensemble....--Je ne dirai pas précisément que vous devez voir une mascarade: mais si vous en voyez une, alors ce n&#x27;était donc pas pour rien que mon nez a saigné le dernier lundi Noir[7], à six heures du matin; ce qui répondait au mercredi des cendres, dans l&#x27;après-dînée, d&#x27;il y a quatre ans.</p>
+<p>[Note 6: Your reproach (reproche, honte); c&#x27;est probablement une balourdise de Lancelot pour approach (approche); reproach est pris ici par le Juif dans le sens de honte, qui n&#x27;a aucun rapport de son avec aucun mot qui puisse être dans l&#x27;intention de Lancelot. On y a substitué déconvenue, qu&#x27;il peut dire pour venue.]</p>
+<p>[Note 7: Le lundi de Pâques. En 1360, le lundi de Pâques, 14 avril, Edouard III faisant avec son armée le siége de Paris, il survint un froid si brumeux et si violent, que plusieurs soldats moururent de froid sur leurs chevaux, et que le lundi de Pâques en conserva le nom de lundi Noir.]</p>
+<p>SHYLOCK.--Quoi! y aura-t-il des masques? Écoutez-moi, Jessica. Fermez bien mes portes; et lorsque vous entendrez le tambour, et le détestable criaillement du fifre au cou tors, n&#x27;allez pas vous hisser aux fenêtres, ni montrer votre tête en public sur la rue, pour regarder des fous de chrétiens aux visages vernis: mais bouchez bien les oreilles de ma maison; je veux dire les fenêtres: que le son de ces vaines folies n&#x27;entre pas dans ma grave maison.--Par le bâton de Jacob, je jure que je ne me sens nulle envie d&#x27;aller ce soir à un festin en ville; cependant j&#x27;irai.--Vous, drôle, prenez les devants, et annoncez que je vais y aller.</p>
+<p>LANCELOT.--Je vais vous précéder, monsieur. (Bas à Jessica.) Maîtresse, malgré tout ce qu&#x27;il dit, regardez à la fenêtre; vous verrez approcher un chrétien, qui mérite bien les regards d&#x27;une Juive.</p>
+<p>(Lancelot sort.)</p>
+<p>SHYLOCK.--Hé! que vous dit cet imbécile de la race d&#x27;Agar?</p>
+<p>JESSICA.--Il me disait: Adieu, maîtresse; rien de plus.</p>
+<p>SHYLOCK.--Ce Jeannot-là[8] est assez bon homme, mais gros mangeur, lent au projet comme une vraie tortue, et dormant dans le jour plus qu&#x27;un chat sauvage. Les frelons ne bâtissent pas dans ma ruche: ainsi je me sépare de lui, pour le céder à un homme que je veux qu&#x27;il aide à dépenser promptement l&#x27;argent qu&#x27;il m&#x27;a emprunté.--Allons, Jessica, rentrez. Peut-être reviendrai-je sur-le-champ. Faites ce que je vous recommande: fermez les portes sur vous. Bien attaché, bien retrouvé: c&#x27;est un proverbe qui ne vieillit point pour un esprit économe.</p>
+<p>(Il sort.)</p>
+<p>JESSICA.--Adieu.--Et, si la fortune ne m&#x27;est pas contraire, j&#x27;ai perdu un père, et vous une fille.</p>
+<p>(Elle sort.)</p>
+<p>[Note 8: The Patch. Patch était, à ce qu&#x27;il paraît, le fou du cardinal Wolsey, dont le nom était devenu proverbial comme l&#x27;est parmi nous celui de Jeannot ou de Jocrisse.]</p>
+<h2 class="chapter" id="c7">Scène vi</h2>
+<p>Toujours au même lieu.</p>
+<p>GRATIANO ET SALARINO masqués.</p>
+<p>GRATIANO.--Voici le hangar sous lequel Lorenzo nous a dit de l&#x27;attendre.</p>
+<p>SALARINO.--L&#x27;heure qu&#x27;il nous avait donnée est presque passée.</p>
+<p>GRATIANO.--Et il est bien étonnant qu&#x27;il tarde autant; car les amoureux devancent toujours l&#x27;horloge.</p>
+<p>SALARINO.--Oh! les pigeons de Vénus volent dix fois plus vite pour sceller de nouveaux liens d&#x27;amour, qu&#x27;ils n&#x27;ont coutume de faire pour rester fidèles à leurs anciens engagements.</p>
+<p>GRATIANO.--Cela sera toujours vrai: quel convive se lève d&#x27;une table avec cet appétit aigu qu&#x27;il sentait en s&#x27;y asseyant? Où est le cheval qui revienne sur les ennuyeuses traces de la route qu&#x27;il a parcourue, avec le feu qu&#x27;il avait en partant? Pour tous les biens de ce monde, il y a plus d&#x27;ardeur dans la poursuite que dans la jouissance. Voyez comme, semblable au jeune homme ou à l&#x27;enfant prodigue, le navire sort pavoisé de son port natal, embrassé et caressé par la brise libertine; et voyez comme il revient, également semblable à l&#x27;enfant prodigue, les côtes creusées par les injures de l&#x27;air, les voiles en lambeaux, desséché, délabré et appauvri par le libertinage de la brise.</p>
+<p>(Entre Lorenzo.)</p>
+<p>SALARINO.--Ah! voici Lorenzo!--Nous continuerons dans un autre moment.</p>
+<p>LORENZO.--Chers amis, pardon d&#x27;avoir tardé si longtemps. Ce n&#x27;est pas moi, ce sont mes affaires qui vous ont fait attendre. Quand il vous prendra fantaisie de voler des épouses, je vous promets de faire le guet aussi longtemps pour vous.--Approchez; c&#x27;est ici la demeure de mon beau-père le Juif.--Holà, holà, quelqu&#x27;un!</p>
+<p>(Jessica paraît à la fenêtre déguisée en page.)</p>
+<p>JESSICA.--Qui êtes-vous? Nommez-vous, pour plus de certitude; quoique je puisse jurer de vous connaître à votre voix.</p>
+<p>LORENZO.--Lorenzo, ton bien-aimé.</p>
+<p>JESSICA.--C&#x27;est Lorenzo, bien sûr; et mon bien-aimé, bien vrai; car quel autre aimé-je autant? et quel autre que vous, Lorenzo, sait si je suis votre amante?</p>
+<p>LORENZO.--Le ciel et ton coeur sont témoins que tu l&#x27;es.</p>
+<p>JESSICA.--Tenez, prenez cette cassette; elle en vaut la peine. Je suis bien aise qu&#x27;il soit nuit, et que vous ne me voyiez point; car je suis honteuse de mon déguisement: mais l&#x27;Amour est aveugle, et les amants ne peuvent voir les charmantes folies qu&#x27;ils font eux-mêmes: s&#x27;ils les pouvaient apercevoir, Cupidon lui-même rougirait de me voir ainsi transformée en garçon.</p>
+<p>LORENZO.--Descendez, car il faut que vous me serviez de porte-flambeau.</p>
+<p>JESSICA.--Quoi! faut-il que je porte la lumière sur ma propre honte! Oh! elle ne m&#x27;est, je le jure, que trop claire à moi-même. Vous me donnez là, cher amour, un emploi d&#x27;éclaireur, et j&#x27;ai besoin de l&#x27;obscurité.</p>
+<p>LORENZO.--Et vous êtes obscurcie, ma douce amie, même sous cet aimable vêtement de page. Mais venez sans différer; car la nuit, déjà close, commence à s&#x27;écouler, et nous sommes attendus à la fête de Bassanio.</p>
+<p>JESSICA.--Je vais fermer les portes et me dorer encore de quelques ducats de plus, et je suis à vous dans le moment.</p>
+<p>(Elle quitte la fenêtre.)</p>
+<p>GRATIANO.--Par mon chaperon, c&#x27;est une Gentille, et non pas une Juive.</p>
+<p>LORENZO.--Malheur à moi, si je ne l&#x27;aime pas de toute mon âme! Car elle est sage, autant que j&#x27;en puis juger; elle est belle, si mes yeux ne me trompent point; elle est sincère, car je l&#x27;ai éprouvée telle, et en conséquence, comme fille sage, belle et sincère, elle occupera pour toujours mon âme constante. (Jessica reparaît à la porte.) Ah! te voilà?--Allons, messieurs, partons. Les masques de notre compagnie nous attendent.</p>
+<p>(Il sort avec Jessica et Salarino.)</p>
+<p>(Entre Antonio.)</p>
+<p>ANTONIO.--Qui est là?</p>
+<p>GRATIANO.--C&#x27;est vous, seigneur Antonio?</p>
+<p>ANTONIO.--Fi, fi, Gratiano: où sont tous les autres? Il est neuf heures. Tous nos amis vous attendent.--Point de mascarade ce soir. Le vent s&#x27;élève, et Bassanio va s&#x27;embarquer tout à l&#x27;heure. J&#x27;ai envoyé vingt personnes vous chercher.</p>
+<p>GRATIANO.--J&#x27;en suis fort aise; je ne désire pas de plus grand plaisir que de mettre à la voile, et de partir cette nuit.</p>
+<p>(Ils sortent.)</p>
+<h2 class="chapter" id="c8">Scène VII</h2>
+<p>A Belmont.--Un appartement dans la maison de Portia.</p>
+<p>Fanfare de cors. Entrent PORTIA, LE PRINCE DE MAROC et leurs suites.</p>
+<p>PORTIA.--Allons, tirez les rideaux, et découvrez les coffres à ce noble prince. Maintenant choisissez.</p>
+<p>LE PRINCE DE MAROC.--Le premier est d&#x27;or, et porte cette inscription:</p>
+<p>Qui me choisira gagnera ce que beaucoup d&#x27;hommes désirent.</p>
+<p>Le second est d&#x27;argent, et porte cette promesse:</p>
+<p>Qui me choisira aura tout ce qu&#x27;il mérite.</p>
+<p>Le troisième est de plomb, avec une inscription aussi peu remarquable que le métal:</p>
+<p>Qui me choisira doit donner et risquer tout ce qu&#x27;il a.</p>
+<p>Comment saurai-je si je choisis bien?</p>
+<p>PORTIA.--Prince, l&#x27;un des trois renferme mon portrait: si vous le choisissez, je vous appartiens avec lui.</p>
+<p>LE PRINCE DE MAROC.--Puisse quelque dieu diriger mon jugement et ma main! Voyons un peu. Je veux encore jeter les yeux sur les inscriptions. Que dit le coffre de plomb?</p>
+<p>Qui me choisira doit donner et risquer tout ce qu&#x27;il a.</p>
+<p>Doit donner! Pourquoi? Pour du plomb! Risquer pour du plomb? Ce coffre présente une menace. On ne hasarde tout que dans l&#x27;espoir de grands avantages. Un coeur d&#x27;or ne se laisse pas prendre à l&#x27;amorce d&#x27;un métal de rebut. Je ne veux ni donner, ni risquer rien pour du plomb.--Que dit l&#x27;argent avec sa couleur virginale?</p>
+<p>Qui me choisira recevra tout ce qu&#x27;il mérite.</p>
+<p>Tout ce qu&#x27;il mérite? Arrête là, prince de Maroc, et pèse ce que tu vaux d&#x27;une main impartiale. Si tu juges de ton prix par l&#x27;opinion que tu as de toi, ton mérite est assez grand; mais assez ne s&#x27;étend pas suffisamment loin pour atteindre cette dame.--Et pourtant, douter de ce que je vaux, ce serait lâchement m&#x27;exclure.--Tout ce que je mérite!.... Mais vraiment: c&#x27;est d&#x27;obtenir la dame. Je la mérite par ma naissance, par mon rang, par mes grâces, par les qualités que j&#x27;ai reçues de l&#x27;éducation; mais plus que tout cela, je la mérite par mon amour. Si je ne m&#x27;égarais pas plus loin, et que je fixasse ici mon choix.... Voyons encore une fois ce qui est gravé sur le coffre d&#x27;or:</p>
+<p>Qui me choisira gagnera ce que beaucoup d&#x27;hommes désirent.</p>
+<p>Mais c&#x27;est cette dame. Le monde entier la désire, et l&#x27;on vient des quatre coins de la terre pour baiser cette châsse, cette sainte mortelle et vivante. Les déserts de l&#x27;Hyrcanie et les sauvages solitudes de la vaste Arabie sont devenus le grand chemin que traversent les princes pour venir contempler la belle Portia; le liquide royaume, dont la tête ambitieuse vomit à la face des cieux n&#x27;est pas une barrière capable d&#x27;arrêter ces courages lointains: ils arrivent comme sur un ruisseau, pour voir la belle Portia. Un de ces trois coffres contient son divin portrait: est-il probable qu&#x27;elle soit contenue dans du plomb? Former une si basse pensée mériterait la damnation; ce métal serait trop grossier pour assujettir même le linceul destiné à l&#x27;embaumer dans la nuit du tombeau. Croirai-je qu&#x27;elle est cachée dans l&#x27;argent, et rabaissée ainsi dix fois au-dessous de l&#x27;or pur? Idée criminelle! Jamais brillant si précieux ne fut enchâssé dans un métal au-dessous de l&#x27;or. Les Anglais ont une monnaie d&#x27;or frappée de la figure d&#x27;un ange: mais il n&#x27;est qu&#x27;empreint dessus; c&#x27;est un ange couché dans un lit d&#x27;or. Donnez-moi la clef. Je choisis celui-ci, arrive que pourra.</p>
+<p>PORTIA.--La voilà, prince, et si c&#x27;est ma figure que vous y trouvez, je vous appartiens.</p>
+<p>(Elle ouvre le coffre d&#x27;or.)</p>
+<p>LE PRINCE DE MAROC.--O enfer! que vois-je là? Un squelette et dans le creux de son oeil un rouleau de papier! lisons cet écrit.</p>
+<p>Tout ce qui reluit n&#x27;est pas or, Vous l&#x27;avez souvent ouï dire. Bien des hommes ont vendu leur vie, Pour ne faire que voir ce que j&#x27;offre extérieurement. Les tombes dorées renferment des vers. Si vous eussiez été aussi sage que hardi, Et jeune par la force, vieux par le jugement, Votre réponse n&#x27;eût pas été dans ce rouleau Adieu: votre requête est à néant.</p>
+<p>A néant, en effet, et ma peine perdue! Adieu donc, ardeur. Glace, je t&#x27;accueille. (A Portia.)--Adieu, Portia, mou coeur est trop accablé pour se répandre en pénibles adieux. Ainsi s&#x27;éloignent les malheureux qui ont tout perdu.</p>
+<p>(Il sort avec sa suite.)</p>
+<p>PORTIA.--Nous en voilà délivrés tout doucement. Fermez les rideaux. Allons.... puissent tous ceux de sa couleur choisir de même!</p>
+<p>(Ils sortent.)</p>
+<h2 class="chapter" id="c9">Scène VIII</h2>
+<p>A Venise.--Une rue.</p>
+<p>Entrent SALANIO, SALARINO.</p>
+<p>SALARINO.--Eh! vraiment oui, j&#x27;ai vu Bassanio mettre à la voile. Gratiano est parti avec lui, et Lorenzo n&#x27;est point dans leur vaisseau; j&#x27;en suis sûr.</p>
+<p>SALANIO.--Ce coquin de Juif a éveillé par ses cris le duc, qui est venu avec lui faire la recherche du vaisseau de Bassanio.</p>
+<p>SALARINO.--Il est venu trop tard. L&#x27;ancre était levée; mais on a donné à entendre au duc, qu&#x27;on avait vu dans une gondole Lorenzo et sa tendre Jessica. D&#x27;ailleurs Antonio a certifié au duc qu&#x27;ils n&#x27;étaient pas dans le même vaisseau que Bassanio.</p>
+<p>SALANIO.--Jamais je n&#x27;ai entendu d&#x27;exclamations de colère si confuses, si bizarres, si violentes et changeant si continuellement d&#x27;objet, que celles que ce chien de Juif proférait dans les rues: «Ma fille! ô mes ducats! ô ma fille! Un chrétien les emporte. O mes chrétiens de ducats! Justice! la loi! Mes ducats et ma fille! Un sac cacheté, deux sacs cachetés de ducats, de doubles ducats, que ma fille m&#x27;a volés! Et des bijoux! deux pierres, deux pierres rares et précieuses, que ma fille m&#x27;a volées! Justice! Qu&#x27;on trouve ma fille; elle a sur elle les pierres et les ducats.»</p>
+<p>SALARINO.--Tous les petits garçons de Venise courent après lui, criant: ses pierres, sa fille et ses ducats!</p>
+<p>SALANIO.--Que le bon Antonio prenne garde à ne pas manquer au jour fixé, ou ce sera lui qui payera cela.</p>
+<p>SALARINO.--Vraiment, vous avez raison d&#x27;y songer. J&#x27;ai parlé hier à un Français qui m&#x27;a dit que sur le détroit qui sépare la France de l&#x27;Angleterre, il avait péri un vaisseau de notre pays, richement chargé. Quand il m&#x27;a dit cette nouvelle, j&#x27;ai pensé à Antonio, et j&#x27;ai silencieusement souhaité que ce ne fût pas un des siens.</p>
+<p>SALANIO.--Vous ferez mieux d&#x27;avertir Antonio de ce que vous savez; mais ne le faites pas trop brusquement, de peur de l&#x27;affliger.</p>
+<p>SALARINO.--Il n&#x27;est pas de plus excellent homme sur la terre. J&#x27;ai vu Bassanio et Antonio se séparer. Bassanio lui disait qu&#x27;il hâterait son retour le plus qu&#x27;il pourrait; Antonio lui répondait: «N&#x27;en faites rien, Bassanio; n&#x27;allez pas, pour l&#x27;amour de moi, gâter vos affaires par trop de précipitation: laissez mûrir les choses autant qu&#x27;il conviendra. Quant au billet que le Juif a de moi, n&#x27;en laissez pas occuper votre esprit amoureux; tenez-vous en joie: que votre première pensée soit de trouver les moyens de plaire, et de faire éclater votre amour par les témoignages les plus propres à réussir.» A ces mots, les yeux gros de larmes et détournant le visage, il a tendu sa main en arrière, et il a serré celle de Bassanio avec une affection singulièrement tendre; et c&#x27;est ainsi qu&#x27;ils se sont séparés.</p>
+<p>SALANIO.--Je crois qu&#x27;il n&#x27;aime la vie que pour lui: je t&#x27;en prie, allons le trouver, et tâchons d&#x27;alléger par quelque divertissement la tristesse à laquelle il se livre.</p>
+<p>SALARINO.--Oui, allons.</p>
+<p>(Ils sortent.)</p>
+<h2 class="chapter" id="c10">Scène IX</h2>
+<p>A Belmont.--Une pièce de la maison de Portia.</p>
+<p>Entre NÉRISSA avec UN VALET.</p>
+<p>NÉRISSA, au valet.--Vite et vite, je t&#x27;en prie, tire vite le rideau. Le prince d&#x27;Aragon a prêté le serment, et il s&#x27;avance pour choisir.</p>
+<p>(Fanfare de cors. Entrent le prince d&#x27;Aragon, Portia et leur suite.)</p>
+<p>PORTIA.--Voyez, noble prince; voici les coffres: si vous prenez celui qui contient mon portrait, notre hymen sera célébré sur-le-champ. Mais si vous vous trompez, il faudra, seigneur, sans plus de discours, quitter immédiatement ces lieux.</p>
+<p>LE PRINCE.--Je suis obligé, par mon serment, d&#x27;observer trois choses: la première, de ne jamais révéler à personne quel est le coffre que j&#x27;aurai choisi; ensuite, si je manque le véritable coffre, de ne jamais faire de proposition de mariage à aucune jeune fille: enfin, si je n&#x27;ai pas le bonheur de bien choisir, de vous quitter et de partir sur-le-champ.</p>
+<p>PORTIA.--Ce sont les conditions que jurent d&#x27;observer ceux qui viennent pour moi s&#x27;exposer à des hasards, quelque peu digne que j&#x27;en sois.</p>
+<p>LE PRINCE.--Je me suis soumis à ces conditions en vous adressant mes voeux. Fortune, maintenant favorise l&#x27;espoir de mon coeur. De l&#x27;or, de l&#x27;argent et du vil plomb!</p>
+<p>Qui me choisit doit donner et risquer tout ce qu&#x27;il a.</p>
+<p>Vous aurez une plus belle apparence, avant que je donne ou risque quelque chose. Que dit le coffre d&#x27;or? Ah! voyons.</p>
+<p>Qui me choisit recevra ce que beaucoup d&#x27;hommes désirent.</p>
+<p>Beaucoup d&#x27;hommes désirent beaucoup.... Cela peut s&#x27;entendre de la sotte multitude qui détermine son choix sur l&#x27;apparence, n&#x27;apercevant rien au delà de ce que son oeil charmé lui présente; qui ne perce pas jusque dans l&#x27;intérieur, mais comme le martinet, qui construit son nid sur les murs extérieurs, exposé aux injures de l&#x27;air, à la portée et dans le chemin même des accidents. Je ne choisirai point ce que tant de gens désirent; je ne veux pas marcher avec les esprits vulgaires et me ranger parmi la foule ignorante. Je viens à toi, riche sanctuaire d&#x27;argent. Répète-moi encore l&#x27;inscription que tu portes.</p>
+<p>Qui me choisit recevra tout ce qu&#x27;il mérite.</p>
+<p>C&#x27;est bien dit; car qui peut chercher à duper la fortune et s&#x27;élever honorablement sans l&#x27;empreinte du mérite? Que personne ne prétende se revêtir d&#x27;honneurs dont il est indigne.... Oh! plût au ciel que les biens, les charges, les dignités, ne se détournassent jamais dans des voies injustes, et que le pur honneur ne pût jamais s&#x27;acquérir que par le mérite de celui qui en est revêtu. Que de gens qui sont nus seraient couverts! que d&#x27;autres qui commandent seraient commandés! que de grains de bassesse à séparer de la vraie semence de l&#x27;honneur! que l&#x27;on retrouverait d&#x27;honneur caché sous le chaume et sous les ruines du temps, et auquel on devrait rendre son premier éclat! Mais choisissons.</p>
+<p>Qui me choisit recevra tout ce qu&#x27;il mérite.</p>
+<p>Je prendrai ce que je mérite. Donnez-moi la clef de celui-ci, et découvrez mon sort sur-le-champ.</p>
+<p>PORTIA.--Vous y avez mis trop de temps pour ce que vous trouverez ici.</p>
+<p>LE PRINCE.--Qu&#x27;est-ce? la figure d&#x27;un idiot, qui cligne de l&#x27;oeil et me présente un papier? Je veux le lire. Que tu es différent de Portia! Que tu es différent de ce que j&#x27;espérais, et de ce que je méritais!</p>
+<p>Qui me prend recevra tout ce qu&#x27;il mérite.</p>
+<p>N&#x27;ai-je donc mérité rien de mieux que la tête d&#x27;un sot? Est-ce là ce que je vaux? Est-ce là tout ce que je mérite?</p>
+<p>PORTIA.--Offenser et juger sont deux emplois différents et de nature opposée.</p>
+<p>LE PRINCE.--Lisons:</p>
+<p>Le feu a éprouvé sept fois ce métal; Sept fois éprouvé est le jugement Qui n&#x27;a jamais mal choisi. Il est des gens qui n&#x27;embrassent que des ombres; Ceux-là n&#x27;ont que l&#x27;ombre du bonheur! Je sais qu&#x27;il y a des sots sur la terre, Vêtus d&#x27;argent, comme je le suis; Épousez quelle femme vous voudrez, Votre tête sera toujours la mienne. Ainsi partez, seigneur, vous êtes congédié.</p>
+<p>Plus je tarderai dans ces lieux, plus j&#x27;y ferai la figure d&#x27;un sot. Je suis venu apporter mes voeux avec une tête de sot, et je m&#x27;en retourne avec deux. Adieu donc, dame, je remplirai mon serment de supporter patiemment mon malheur.</p>
+<p>(Sortent le prince d&#x27;Aragon et sa suite.)</p>
+<p>PORTIA.--Le moucheron s&#x27;est brûlé à la lumière. Oh! ces sots réfléchis! Quand ils choisissent, ils sont tout juste assez sages pour se perdre à force de raisonnements.</p>
+<p>NÉRISSA.--Le vieux proverbe n&#x27;a pas tort: la potence et le choix d&#x27;une femme sont une affaire de hasard.</p>
+<p>PORTIA.--Allons, ferme le rideau, Nérissa.</p>
+<p>(Entre un valet.)</p>
+<p>LE VALET.--Où est madame?</p>
+<p>PORTIA.--La voici: que lui veut monsieur?</p>
+<p>LE VALET.--Madame, il vient de descendre à votre porte un jeune Vénitien, qui marche devant son maître pour annoncer son arrivée, et vous présenter de sa part des hommages très-substantiels, je veux dire, outre les compliments et les paroles courtoises, des présents d&#x27;un haut prix. Je n&#x27;ai jamais vu de messager d&#x27;amour si avenant. Jamais un jour d&#x27;avril n&#x27;annonça les richesses de l&#x27;été qui s&#x27;avance, sous un aspect aussi gracieux que ce courrier lorsqu&#x27;il annonce son maître.</p>
+<p>PORTIA.--Arrête, je te prie; je crains presque que tu ne me dises tout à l&#x27;heure qu&#x27;il est de tes parents, en te voyant dépenser ainsi, pour le louer, tout ton esprit des dimanches. Allons, allons, Nérissa, je brûle de voir cet agile courrier d&#x27;amour, qui se présente de si bonne grâce.</p>
+<p>NÉRISSA.--Que ce soit Bassanio, seigneur Amour, si telle est ta volonté.</p>
+<p>(Ils sortent.)</p>
+<h3 class="sub">Fin du deuxième acte — Acte troisième</h3>
+<h2 class="chapter" id="c11">Scène I</h2>
+<p>A Venise.--Une rue.</p>
+<h3 class="sub">Salanio, salarino</h3>
+<p>SALANIO.--Eh bien! quelles nouvelles sur le Rialto?</p>
+<p>SALARINO.--Le bruit y continue toujours, sans que personne le contredise, qu&#x27;Antonio a perdu dans le détroit un vaisseau richement chargé à l&#x27;endroit qu&#x27;ils nomment, je crois, les Good-wins; un bas-fond dangereux et fatal, où sont ensevelis, dit-on, les carcasses d&#x27;une foule de gros vaisseaux; si du moins ma commère d&#x27;histoire se trouve être femme de parole.</p>
+<p>SALANIO.--Je voudrais qu&#x27;elle fût la plus menteuse commère qui ait jamais mangé pain d&#x27;épice, ou qui ait voulu faire accroire à ses voisines qu&#x27;elle pleurait la mort de son troisième mari.--Mais il n&#x27;est que trop vrai, sans perdre le temps en paroles, et pour dire tout bonnement les choses sans détour, que le bon Antonio, l&#x27;honnête Antonio.... Oh! de quelle épithète assez digne pourrai-je accompagner son nom?</p>
+<p>SALARINO.--Eh bien! enfin?</p>
+<p>SALANIO.--Eh! que dis-tu? La fin de tout cela, c&#x27;est qu&#x27;il a perdu un navire.</p>
+<p>SALARINO.--Je voudrais du moins que ce fût là la fin de ses pertes.</p>
+<p>SALANIO.--Que je te réponde à temps, Amen! de peur que le diable ne vienne empêcher l&#x27;effet de ta prière, car c&#x27;est lui que je vois s&#x27;avancer sous la figure d&#x27;un Juif. (Entre Shylock.) Eh bien! Shylock, quelles nouvelles parmi les marchands?</p>
+<p>SHYLOCK.--- Vous avez su, et personne ne le sait, personne ne le sait si bien que vous, comment ma fille a pris la fuite.</p>
+<p>SALARINO.--Cela est sûr. Pour ma part, je connais le tailleur qui a fait les ailes avec lesquelles elle s&#x27;est envolée.</p>
+<p>SALANIO.--Et Shylock, pour sa part, sait que l&#x27;oiseau avait toutes ses plumes, et qu&#x27;il est alors dans la nature des oiseaux de quitter leur nid.</p>
+<p>SHYLOCK.--Elle sera damnée pour cela.</p>
+<p>SALARINO.--Oh! sans doute; si c&#x27;est le diable qui la juge.</p>
+<p>SHYLOCK.--Ma chair et mon sang se révolter!</p>
+<p>SALANIO.--Fi donc, vieux cadavre! comment, ils se révoltent à ton âge?</p>
+<p>SHYLOCK.--Je dis que ma fille est ma chair et mon sang.</p>
+<p>SALARINO.--Il y a plus de différence entre ta chair et la sienne, qu&#x27;entre le jais et l&#x27;ivoire; plus entre ton sang et le sien, qu&#x27;entre du vin rouge et du vin du Rhin. Mais, dites-nous, avez-vous ouï dire qu&#x27;Antonio ait fait quelques pertes sur mer?</p>
+<p>SHYLOCK.--J&#x27;ai encore là une mauvaise affaire, un banqueroutier, un prodigue, qui ose à peine se montrer sur le Rialto; un mendiant, qui vous venait faire l&#x27;agréable sur la place. Qu&#x27;il prenne garde à son billet. Il avait coutume de m&#x27;appeler usurier..... Qu&#x27;il prenne garde à son billet. Il avait coutume de prêter de l&#x27;argent par charité chrétienne..... Qu&#x27;il prenne garde à son billet.</p>
+<p>SALARINO.--Mais je suis bien sûr que, s&#x27;il manquait à ses engagements, tu ne prendrais pas sa chair; à quoi te servirait-elle?</p>
+<p>SHYLOCK.--A amorcer des poissons. Elle nourrira ma vengeance, si elle ne nourrit rien de mieux. Il m&#x27;a humilié; il m&#x27;a fait tort d&#x27;un demi-million; il a ri de mes pertes; il s&#x27;est moqué de mon gain; il a insulté ma nation; il a fait manquer mes marchés; il a refroidi mes amis, échauffé mes ennemis, et pour quelle raison? Parce que je suis un Juif. Un Juif n&#x27;a-t-il pas des yeux? un Juif n&#x27;a-t-il pas des mains, des organes, des proportions, des sens, des affections, des passions? ne se nourrit-il pas des mêmes aliments? n&#x27;est-il pas blessé des mêmes armes, sujet aux mêmes maladies, guéri par les mêmes remèdes, réchauffé par le même été et glacé par le même hiver qu&#x27;un chrétien? si vous nous piquez, ne saignons-nous pas? si vous nous chatouillez, ne rions-nous pas? si vous nous empoisonnez, ne mourons-nous pas? et si vous nous outragez, ne nous vengerons-nous pas? si nous sommes semblables à vous dans tout le reste, nous vous ressemblerons aussi en ce point. Si un Juif outrage un chrétien, quelle est la modération de celui-ci? La vengeance. Si un chrétien outrage un Juif, comment doit-il le supporter, d&#x27;après l&#x27;exemple du chrétien? En se vengeant. Je mettrai en pratique les scélératesses que vous m&#x27;apprenez; et il y aura malheur si je ne surpasse pas mes maîtres.</p>
+<p>(Entre un valet.)</p>
+<p>LE VALET d&#x27;Antonio.--Messieurs, mon maître Antonio est chez lui, et désire vous parler à tous deux.</p>
+<p>SALARINO.--Nous l&#x27;avons cherché de tous côtés.</p>
+<p>SALANIO.--En voici un autre de la tribu. On n&#x27;en trouverait pas un troisième de la même secte, à moins que le diable en personne ne se fît Juif.</p>
+<p>(Salanio et Salarino sortent.)</p>
+<p>(Entre Tubal.)</p>
+<p>SHYLOCK.--Eh bien! Tubal, quelles nouvelles de Gênes? As-tu trouvé ma fille?</p>
+<p>TUBAL.--J&#x27;ai, en beaucoup d&#x27;endroits, entendu parler d&#x27;elle; mais je n&#x27;ai pu la trouver.</p>
+<p>SHYLOCK.--Quoi! quoi!--Voyez, voyez, voyez un diamant qui m&#x27;a coûté deux mille ducats à Francfort, que voilà parti. Jamais notre nation ne fut maudite comme à présent..... Je ne l&#x27;ai jamais éprouvé, comme je l&#x27;éprouve aujourd&#x27;hui. Deux mille ducats, dans cette affaire, et d&#x27;autres précieux bijoux!.... Je voudrais voir ma fille morte à mes pieds et les diamants à ses oreilles. Que n&#x27;est-elle ensevelie à mes pieds, et les ducats dans sa bière! Point de nouvelles! et de plus je ne sais combien d&#x27;argent dépensé pour la faire chercher! Quoi! perte sur perte! Tant d&#x27;emporté par le voleur! et tant de dépensé pour chercher le voleur! et point de satisfaction, point de vengeance! Il n&#x27;arrive point de malheur, qu&#x27;il ne me tombe sur le dos: il n&#x27;est point d&#x27;autres soupirs que ceux que je pousse, d&#x27;autres larmes que celles que je verse.</p>
+<p>TUBAL.--D&#x27;autres que vous ont aussi du malheur. Antonio, à ce que j&#x27;ai appris à Gênes....</p>
+<p>SHYLOCK.--Quoi, quoi, quoi? Un malheur, un malheur?</p>
+<p>TUBAL.--A perdu un de ses vaisseaux venant de Tripoli.</p>
+<p>SHYLOCK.--Dieu soit loué! Dieu soit loué! Est-il bien vrai? est-il bien vrai?</p>
+<p>TUBAL.--J&#x27;ai parlé à des matelots échappés du naufrage.</p>
+<p>SHYLOCK.--Je te remercie, cher Tubal. Bonne nouvelle! bonne nouvelle! Ha! ha!--Où cela? à Gênes?</p>
+<p>TUBAL.--On m&#x27;a dit un soir à Gênes que votre fille y avait dépensé quatre-vingts ducats.</p>
+<p>SHYLOCK.--Tu m&#x27;enfonces un poignard! je ne reverrai jamais mon or. Quatre-vingts ducats dans un seul endroit! quatre-vingts ducats!</p>
+<p>TUBAL.--Je suis arrivé à Venise avec différents créanciers d&#x27;Antonio, lesquels affirment qu&#x27;il n&#x27;y a d&#x27;autre parti pour lui que de faire banqueroute.</p>
+<p>SHYLOCK.--J&#x27;en suis ravi. Je le ferai souffrir. Je le torturerai. J&#x27;en suis ravi.</p>
+<p>TUBAL.--L&#x27;un d&#x27;eux m&#x27;a montré une bague qu&#x27;il avait eue de votre fille pour un singe.</p>
+<p>SHYLOCK.--La malheureuse! Tu me mets à la torture, Tubal; c&#x27;était ma turquoise. Je l&#x27;eus de Léah, étant encore garçon. Je ne l&#x27;aurais pas donnée pour un désert plein de singes.</p>
+<p>TUBAL.--Mais Antonio est certainement ruiné.</p>
+<p>SHYLOCK.--Oh! oui, cela est sûr; cela est sûr, va voir le commissaire: préviens-le quinze jours d&#x27;avance. S&#x27;il manque, j&#x27;aurai son coeur. S&#x27;il était une fois hors de Venise, je ferais tel négoce que je voudrais. Cours, cours, Tubal, et viens me rejoindre à notre synagogue. Va, bon Tubal... A notre synagogue, Tubal.</p>
+<p>(Ils sortent.)</p>
+<h2 class="chapter" id="c12">Scène II</h2>
+<p>À Belmont.--Une pièce dans la maison de Portia.</p>
+<p>Entrent PORTIA, BASSANIO, GRATIANO, NÉRISSA, et plusieurs personnages de leur suite; les coffres sont découverts.</p>
+<p>PORTIA.--Tardez un peu, je vous prie. Attendez un jour ou deux, avant de vous hasarder; car si vous choisissez mal, je suis privée de votre compagnie; ainsi attendez donc quelque temps. Quelque chose (mais ce n&#x27;est pas de l&#x27;amour) me dit que je ne voudrais pas vous perdre; et vous savez que ce ne sont pas là les conseils de la haine. Mais, de peur que vous ne pénétriez pas bien ma pensée (et cependant une fille n&#x27;a d&#x27;autre langue que la pensée), je voudrais vous retenir ici pendant un ou deux mois avant de vous voir risquer le choix d&#x27;où je dépends.--Je pourrais vous apprendre les moyens de bien choisir. Mais alors je serais parjure, et je ne le serai jamais; alors vous pouvez vous tromper... et cependant, si cela arrive, vous me ferez souhaiter un péché: je regretterai de n&#x27;avoir pas été parjure. Malheur à vos yeux! ils se sont emparés de moi et m&#x27;ont partagée en deux: une moitié de moi-même est à vous; l&#x27;autre moitié est à vous... à moi voulais-je dire. Mais si elle est à moi, elle est à vous. Ainsi je suis à vous tout entière; oh! siècle pervers qui met des obstacles entre les propriétaires et leurs possessions, en sorte que, bien qu&#x27;à vous, je ne suis pas à vous! Qu&#x27;il en soit donc ainsi et que la fortune aille en enfer pour ce fait, et non pas moi! Je parle trop, mais c&#x27;est pour peser sur le temps, le filer, le traîner en longueur, et retarder l&#x27;instant de votre choix.</p>
+<p>BASSANIO.--Laissez-moi choisir; car vivre en l&#x27;état où je suis c&#x27;est être à la torture.</p>
+<p>PORTIA.--A la torture, Bassanio? Avouez donc quelle trahison est mêlée à votre amour?</p>
+<p>BASSANIO.--Aucune, si ce n&#x27;est l&#x27;horrible trahison de la défiance qui me fait redouter l&#x27;instant de jouir de mon amour. La neige et le feu pourraient plutôt s&#x27;unir et vivre ensemble que la trahison et mon amour.</p>
+<p>PORTIA.--Oui; mais je crains que vous ne parliez comme un homme à la torture, dont la violence lui fait dire toutes sortes de choses.</p>
+<p>BASSANIO.--Promettez-moi la vie, et je confesse la vérité.</p>
+<p>PORTIA.--Eh bien! confessez et vivez.</p>
+<p>BASSANIO.--Confesser et aimer eût renfermé tout mon aveu. Heureux tourments, lorsque celui qui fait mon supplice me suggère des réponses pour ma délivrance! Mais laissez-moi essayer ma fortune et les coffres.</p>
+<p>PORTIA.--Allez donc. Je suis enfermée dans l&#x27;un d&#x27;eux; si vous m&#x27;aimez, vous me trouverez. Nérissa, et vous tous, faites place.--Que la musique joue tandis qu&#x27;il fera son choix.--Alors, s&#x27;il choisit mal, il finira comme le cygne qui s&#x27;évanouit au milieu des chants. Et afin que la comparaison soit plus parfaite, mes yeux formeront le ruisseau, et un lit de mort liquide pour lui. Il se peut que son choix soit heureux; et alors, à quoi servira la musique? A quoi? Elle sera comme la fanfare qui se fait entendre, tandis que des sujets fidèles rendent hommage à leur monarque nouvellement couronné.--Elle sera, comme ces doux sons qui, aux premiers rayons du matin, s&#x27;insinuent dans l&#x27;oreille du fiancé encore enseveli dans les songes, et l&#x27;appellent à l&#x27;hyménée.--Le voilà qui s&#x27;avance avec autant de dignité, mais avec bien plus d&#x27;amour que le jeune Alcide, lorsqu&#x27;il venait affranchir Troie gémissante du tribut d&#x27;une vierge payé au monstre de la mer. Je suis là, prête à subir le sacrifice; toutes les autres sont les épouses troyennes, qui, les yeux troublés par les larmes, s&#x27;avancent hors des murs pour voir l&#x27;issue de l&#x27;entreprise. Va, Hercule; si tu vis, je vis. Je vois le combat avec bien plus de terreur que toi, qui portes les coups.</p>
+<p>(Air chanté, tandis que Bassanio examine les coffres, et semble se livrer à ses réflexions.)</p>
+<p>Dis-moi, où siége l&#x27;illusion. Est-ce dans le coeur, ou dans la tête? Comment naît-elle? comment se nourrit-elle? Réponds, réponds.</p>
+<p>L&#x27;illusion s&#x27;engendre dans les yeux, Elle se nourrit de regards, et l&#x27;illusion meurt Dans le berceau qu&#x27;elle habite. Sonnons, sonnons tous la cloche de mort de l&#x27;illusion. Je vais commencer. Ding dong, vole.</p>
+<h3 class="sub">Tous.</h3>
+<p>Ding dong; ding dong, vole[9].</p>
+<p>BASSANIO.--C&#x27;est ainsi que ce qui paraît le plus en dehors répond le moins à l&#x27;apparence. Le monde est sans cesse déçu par l&#x27;ornement. En justice est-il un argument si souillé, si pervers, qu&#x27;une voix gracieuse ne puisse l&#x27;envelopper de façon à cacher le mal qui s&#x27;y trouve renfermé? En religion, est-il une erreur damnable, qu&#x27;un front sévère ne sanctifie et ne fasse passer au moyen d&#x27;un texte qui en cachera la grossièreté sous une séduisante parure? Il n&#x27;est pas de vice si ingénu qui n&#x27;emprunte à l&#x27;extérieur quelques caractères de la vertu. Que de poltrons, au coeur aussi peu sûr qu&#x27;un escalier de sable, portent cependant sur leur menton les barbes d&#x27;Hercule et du terrible Mars! Pénétrez dans leur intérieur, vous ne trouverez que des foies blancs comme du lait: ils ne prennent du courage que ce qu&#x27;il jette en dehors, pour se rendre redoutables. Regardez la beauté, et vous verrez qu&#x27;elle s&#x27;achète au poids de ce métal qui opère en ceci un miracle dans la nature, rendant plus facile la route de celui qui en porte le plus[10]. Ainsi ces tresses d&#x27;or, ondoyantes comme un serpent, qui gambadent si follement, au souffle du vent, sur une beauté supposée, ne sont bien souvent qu&#x27;un héritage passé sur une seconde tête, tandis que le crâne qui les a nourris est dans le tombeau. L&#x27;ornement n&#x27;est donc que le rivage perfide d&#x27;une mer dangereuse, la brillante écharpe qui voile une beauté indienne; en un mot, un dehors de vérité dont ce siècle artificieux se revêt pour faire tomber les plus sages dans le piége. Ainsi donc, or brillant, aliment que Midas a trouvé trop dur, je ne veux point de toi; ni de toi, pâle et vulgaire agent entre l&#x27;homme et l&#x27;homme. Mais toi, toi, pauvre plomb, qui menaces plus que tu ne promets, ta pâle simplicité me touche plus que l&#x27;éloquence. Je fixe ici mon choix. Puisse le bonheur en être le fruit!</p>
+<p>[Note 9: Ding dong bell. Ce refrain est destiné à imiter le son de la cloche qui ne se pourrait rendre en français en traduisant bell par cloche, qui est le mot correspondant. On y a substitué vole, qui exprime une des manières de sonner la cloche, et produit à peu près le même effet imitatif.]</p>
+<p>[Note 10: Making them lightest that wear more of it. Light est ici employé dans son double sens de brillant, et de léger. L&#x27;or, en rendant plus brillants (lightest) ceux qui en portent le plus, rend plus légers (lightest) ceux, etc., etc. Le jeu de mots était intraduisible.]</p>
+<p>PORTIA.--Comme toutes les autres passions se dissipent dans les airs, les pensées inquiètes, le désespoir imprudent, la crainte frissonnante, la jalousie à l&#x27;oeil verdâtre! Amour, modère-toi, tempère ton extase, verse tes douceurs avec mesure, diminues-en l&#x27;excès. Je ressens trop tes félicités; affaiblis-les, de peur que je n&#x27;y succombe.</p>
+<p>BASSANIO, ouvrant le coffre de plomb.--Que vois-je? l&#x27;image de la belle Portia! Quel demi-dieu a si fort approché de la création? Ces yeux se meuvent-ils? ou serait-ce que, se balançant sur mes prunelles mobiles, ils me paraissent en mouvement? Ici sont des lèvres entr&#x27;ouvertes qu&#x27;a séparées une haleine de miel: une aussi douce barrière devait séparer d&#x27;aussi douces amies. Là, dans ses cheveux, le peintre, imitant l&#x27;araignée, a tissé un réseau d&#x27;or où les coeurs des hommes seront plutôt pris que ne le sont les mouches dans la toile de l&#x27;insecte. Mais ses yeux... comment a-t-il pu voir pour les faire! Un seul achevé suffisait, je crois, pour le priver des deux siens, et lui faire laisser l&#x27;ouvrage imparfait. Mais voyez, autant la réalité de mon imagination fait tort à cette ombre par des éloges trop au-dessous d&#x27;elle, autant cette ombre se traîne avec peine loin de la réalité. Voici le rouleau qui contient le sommaire de ma destinée.</p>
+<p>(Il lit.)</p>
+<p>Vous qui ne choisissez point sur l&#x27;apparence, Vous avez bonne chance et bon choix. Puisque ce bonheur vous arrive, Soyez content, n&#x27;en cherchez pas d&#x27;autre. Si celui-ci vous satisfait, Et que vous regardiez votre sort comme votre bonheur, Tournez-vous vers votre dame, Et prenez-en possession par un baiser amoureux.</p>
+<p>Charmant écrit! Belle dame, avec votre permission. (Il l&#x27;embrasse.) Je me présente le billet à la main pour donner et pour recevoir: semblable à celui de deux concurrents se disputant le prix, qui pense avoir satisfait le public, mais qui, lorsqu&#x27;il entend les applaudissements, et les acclamations universelles, troublé, s&#x27;arrête et regarde avec incertitude, ne sachant pas bien si c&#x27;est à lui que s&#x27;adresse cette bordée de louanges. Ainsi, trois fois belle Portia, je demeure en doute de ce que je vois jusqu&#x27;à ce que vous l&#x27;ayez confirmé, signé et ratifié.</p>
+<p>PORTIA.--Seigneur Bassanio, vous me voyez où je suis, et telle que je suis! Pour moi seule, je n&#x27;aurais pas l&#x27;ambition de vouloir beaucoup mieux. Mais pour l&#x27;amour de vous, je voudrais pouvoir tripler vingt fois mes mérites, être mille fois plus belle, dix mille fois plus riche. Je voudrais, seulement pour être placée plus haut dans votre estime, surpasser en vertus, en beauté, en biens, en amis, tout ce qui se peut compter. Mais ce que je suis au total se réduit, pour vous le dire en gros, à ceci, à une fille simple, peu instruite, sans expérience, heureuse en ce qu&#x27;elle n&#x27;est pas hors de l&#x27;âge d&#x27;apprendre, plus heureuse en ce qu&#x27;elle n&#x27;est pas née si peu intelligente qu&#x27;elle ne puisse apprendre encore, mais heureuse par-dessus tout de soumettre son esprit docile à votre direction, comme à son seigneur, son maître et son roi; moi-même et tout ce qui m&#x27;appartient est maintenant à vous, est devenu votre bien. Tout à l&#x27;heure j&#x27;étais la maîtresse de cette belle maison, de mes domestiques, et reine de moi-même. Maintenant cette maison, ces domestiques et moi-même, nous sommes à vous, à vous, mon seigneur. Je vous les donne avec cette bague. Lorsque vous vous en séparerez ou que vous la perdrez, ou que vous la donnerez, ce sera le présage de la ruine de votre amour. Il ne me restera plus que le droit de me plaindre de vous.</p>
+<p>BASSANIO.--Madame, vous m&#x27;avez ôté le pouvoir de vous répondre. Mon sang seul vous parle dans mes veines: et toutes les puissances de mon être s&#x27;agitent confusément comme, après un discours noblement prononcé par un prince chéri, se confondent dans le murmure de la multitude charmée tous ces sons qui, mêlés ensemble, produisent un chaos où rien ne se distingue plus que la joie qui s&#x27;exprime sans s&#x27;exprimer. Quand cette bague sera séparée de ce doigt, que la vie se sépare de ce coeur! Vous pourrez dire alors sans crainte de vous tromper: Bassanio est mort.</p>
+<p>NÉRISSA.--Mon seigneur et madame, c&#x27;est à présent notre tour à nous, qui sommes demeurés spectateurs et qui avons vu s&#x27;accomplir nos désirs, de crier: Bonheur parfait, bonheur parfait, mon seigneur et madame!</p>
+<p>GRATIANO.--Seigneur Bassanio, et vous, belle dame, je vous souhaite tout le bonheur que vous pouvez désirer; car je suis sûr que vous n&#x27;en souhaitez aucun aux dépens du mien. Mais lorsque Vos Seigneuries solenniseront le traité qui doit les engager, permettez-moi, je vous prie, de me marier aussi.</p>
+<p>BASSANIO.--De tout mon coeur. Tu peux chercher une femme.</p>
+<p>GRATIANO.--Je remercie Votre Seigneurie; vous m&#x27;en avez donné une. Mes yeux, seigneur, sont aussi prompts que les vôtres. Vous avez vu la maîtresse, moi j&#x27;ai vu la suivante. Vous avez aimé, j&#x27;ai aimé, car je ne suis pas plus disposé que vous, seigneur, à traîner les choses en longueur. Votre sort était dans ces coffres, le mien s&#x27;y trouve attaché par l&#x27;événement; car à force de faire ma cour jusqu&#x27;à me mettre en nage, de protester de mon amour jusqu&#x27;à m&#x27;en être desséché le gosier, je suis parvenu à tenir enfin, si une promesse peut se tenir, la parole de cette belle, qu&#x27;elle m&#x27;accorderait son amour si vous aviez le bonheur de conquérir sa maîtresse.</p>
+<p>PORTIA.--Est-il vrai, Nérissa?</p>
+<p>NÉRISSA.--Oui, madame, si c&#x27;est votre bon plaisir.</p>
+<p>BASSANIO.--Et vous, Gratiano, êtes-vous de bonne foi?</p>
+<p>GRATIANO.--Oui, seigneur, je le jure.</p>
+<p>BASSANIO.--Nos noces seront fort embellies par les vôtres.</p>
+<p>GRATIANO.--Parions avec vous dix mille ducats à qui fera le premier garçon.</p>
+<p>NÉRISSA.--Quoi! et vous mettez bas l&#x27;enjeu?</p>
+<p>GRATIANO.--Non; on ne gagne pas à ce jeu-là quand on met bas l&#x27;enjeu.--Mais qui vient ici? Lorenzo et son infidèle? Quoi! et le Vénitien Salanio, mon vieil ami?</p>
+<p>(Entrent Lorenzo, Jessica et Salanio.)</p>
+<p>BASSANIO.--Lorenzo et Salanio, soyez ici les bienvenus: si toutefois une possession aussi nouvelle que la mienne me donne le droit de vous y recevoir. Avec votre permission, ma chère Portia, je dis à mes amis, à mes compatriotes qu&#x27;ils sont les bienvenus.</p>
+<p>PORTIA.--Et je le dis aussi, seigneur; ils sont les très-bienvenus.</p>
+<p>LORENZO.--J&#x27;en remercie Votre Seigneurie. Pour moi, seigneur, mon dessein n&#x27;était pas de venir vous voir ici; mais j&#x27;ai rencontré Salanio en chemin; il m&#x27;a tant prié de l&#x27;accompagner, que je n&#x27;ai pu dire non.</p>
+<p>SALANIO.--Cela est vrai, seigneur, et j&#x27;avais mes raisons. (Il donne une lettre à Bassanio.) Le seigneur Antonio se recommande à votre souvenir.</p>
+<p>BASSANIO.--Avant que j&#x27;ouvre cette lettre, dites-moi comment se porte mon cher ami.</p>
+<p>SALANIO.--Point malade, seigneur, si ce n&#x27;est dans l&#x27;âme; point en santé, si ce n&#x27;est celle de l&#x27;âme. Sa lettre vous apprendra sa situation.</p>
+<p>GRATIANO.--Nérissa, faites un bon accueil à cette étrangère; traitez-la bien. Votre main, Salanio. Quelles nouvelles de Venise? Comment se porte ce marchand roi[11], le bon Antonio? Je suis sûr qu&#x27;il se réjouira de nos succès. Nous sommes des Jasons, nous avons conquis la Toison.</p>
+<p>[Note 11: That royal merchant. Lors de la prise de Constantinople par les croisés, la république permit à ses sujets de faire, pour leur propre compte, dans les îles de l&#x27;Archipel, des conquêtes dont il fut stipulé qu&#x27;ils jouiraient en toute souveraineté, sous la condition d&#x27;en faire hommage à la république. Plusieurs des grandes familles de la république créèrent des établissements de ce genre qui leur valurent le titre de marchands rois.]</p>
+<p>SALANIO.--Plût à Dieu que vous eussiez trouvé la toison qu&#x27;il a perdue?</p>
+<p>PORTIA.--Il y a dans cette lettre quelques nouvelles sinistres qui font disparaître la couleur des joues de Bassanio. La mort de quelque ami chéri. Nul autre malheur dans le monde ne peut changer à ce point la constitution d&#x27;un homme de courage!... Quoi! de pis en pis?... Permettez, Bassanio. Je suis une moitié de vous-même, et je dois partager sans réserve avec vous tout ce que contient cette lettre.</p>
+<p>BASSANIO.--O ma douce Portia! ici sont renfermés un petit nombre de mots les plus tristes qui jamais aient noirci le papier. Aimable dame, la première fois que je vous déclarai mon amour, je vous dis avec franchise que tout le bien que je possédais coulait dans mes veines, que j&#x27;étais gentilhomme, et je vous disais vrai. Cependant, chère madame, lorsque je m&#x27;évaluais à néant, voyez quel imposteur j&#x27;étais; au lieu de vous dire que mon bien n&#x27;était rien, j&#x27;aurais dû vous dire qu&#x27;il était au-dessous de rien; car, dans la vérité, je me suis engagé avec un tendre ami, et j&#x27;ai engagé cet ami avec le plus cruel de ses ennemis, pour me procurer des ressources. Voilà une lettre, madame, dont le papier me semble le corps de mon ami, et chaque mot une large blessure qui verse son sang vital. Mais est-il bien vrai, Salanio? Tous ses vaisseaux ont-ils manqué? quoi! il n&#x27;en est arrivé aucun? de Tripoli, du Mexique? de l&#x27;Angleterre, de Lisbonne, de la Barbarie, de l&#x27;Inde? Pas un seul bâtiment n&#x27;a pu éviter la terrible rencontre des rochers, ruine des marchands?</p>
+<p>SALANIO.--Pas un seul, seigneur. D&#x27;ailleurs, il paraît qu&#x27;eût-il à présent l&#x27;argent du billet, le Juif ne voudrait pas le prendre. Je n&#x27;ai jamais vu de créature portant figure d&#x27;homme, aussi âpre, aussi acharnée à détruire un homme. Il assiége jour et nuit le duc, en appelle aux libertés de l&#x27;État du refus de lui rendre justice. Vingt marchands, le duc lui-même et les magnifiques[12] du grand port, ont tenté de le persuader; mais sa haine ne veut pas sortir de là; une peine encourue, la justice, son billet.</p>
+<p>[Note 12: On sait que c&#x27;était le titre des grands de Venise, les magnifiques seigneurs.]</p>
+<p>JESSICA.--Quand j&#x27;étais avec lui, je l&#x27;ai entendu jurer à Tubal et à Chus, ses compatriotes, qu&#x27;il aimerait mieux avoir la chair d&#x27;Antonio, que vingt fois la somme qu&#x27;il lui avait prêtée; et j&#x27;ai la certitude, seigneur, que si les lois et l&#x27;autorité, et toute la force du pouvoir ne s&#x27;y opposent, la chose ira bien mal pour le pauvre Antonio.</p>
+<p>PORTIA.--C&#x27;est votre ami qui se trouve dans ces angoisses?</p>
+<p>BASSANIO.--Le plus cher de mes amis, le meilleur des hommes; l&#x27;âme la mieux faite et la plus infatigable à rendre service; enfin, l&#x27;homme qui nous retrace l&#x27;ancienne vertu romaine, plus qu&#x27;aucun autre qui respire l&#x27;air d&#x27;Italie.</p>
+<p>PORTIA.--Combien doit-il au Juif?</p>
+<p>BASSANIO.--Il doit pour moi trois mille ducats.</p>
+<p>PORTIA.--Quoi! pas davantage? Donnez lui en six mille, et annulez le billet. Doublez les six mille, triplez-les, plutôt qu&#x27;un ami de cette sorte perde un cheveu par la faute de Bassanio. Venez d&#x27;abord à l&#x27;église, nommez-moi votre épouse, et partez pour aller à Venise trouver votre ami; car vous ne reposerez point aux côtés de Portia avec une âme inquiète. Je vous donnerai assez d&#x27;or pour payer vingt fois cette petite dette. Quand elle sera acquittée, amenez avec vous votre fidèle ami. Cependant, Nérissa ma suivante et moi, nous vivrons comme des filles et des veuves. Allons, venez; car vous allez partir le jour même de vos noces. Traitez bien vos amis, montrez leur une mine joyeuse: puisque je vous ai acheté cher, je vous aimerai chèrement.--Mais voyons la lettre de votre ami.</p>
+<p>BASSANIO lit.--«Mon cher Bassanio, tous mes vaisseaux se sont perdus: mes créanciers deviennent cruels; ma fortune est réduite à bien peu de chose. J&#x27;ai encouru la peine portée dans l&#x27;obligation faite au Juif: et puisque en remplissant cette clause il est impossible que je vive, toutes vos dettes envers moi seront acquittées si je puis vous voir avant ma mort. Cependant faites ce que vous voudrez: si ce n&#x27;est pas votre amitié qui vous engage à venir, que ce ne soit pas ma lettre.»</p>
+<p>PORTIA.--O mon amour, terminez promptement toute affaire; partez.</p>
+<p>BASSANIO.--Puisque vous me donnez la permission de m&#x27;éloigner, je vais me hâter. Mais jusqu&#x27;à mon retour aucun lit n&#x27;aura à se reprocher de me retenir, aucun repos ne viendra se placer entre vous et moi.</p>
+<p>(Ils sortent.)</p>
+<h2 class="chapter" id="c13">Scène III</h2>
+<p>À Venise.--Une rue.</p>
+<p>Entrent SHYLOCK, ANTONIO, SALARINO, UN GEÔLIER.</p>
+<p>SHYLOCK.--Geôlier, veillez sur lui. Ne me parlez pas de pitié. Le voilà cet imbécile qui prêtait de l&#x27;argent gratis.--Geôlier, veillez sur lui.</p>
+<p>ANTONIO.--Encore un mot, Shylock.</p>
+<p>SHYLOCK.--Je veux qu&#x27;on satisfasse à mon billet; ne me parle pas contre mon billet. J&#x27;ai juré que mon billet serait acquitté.--Tu m&#x27;as appelé chien sans en avoir aucun sujet; mais puisque je suis un chien, prends garde à mes crocs. Le duc me fera justice.--Je m&#x27;étonne, coquin de geôlier, que tu aies la faiblesse de sortir avec lui à sa sollicitation.</p>
+<p>ANTONIO.--Je te prie, laisse-moi te parler.</p>
+<p>SHYLOCK.--J&#x27;aurai mon billet: je ne veux point t&#x27;entendre; j&#x27;aurai mon billet. Ne me parle pas davantage: on ne fera pas de moi un imbécile au coeur tendre, aux yeux piteux, capable de secouer la tête, de se relâcher et de céder en soupirant aux instances des chrétiens. Ne me suis pas: je ne veux point t&#x27;entendre; je veux l&#x27;acquit de mon billet.</p>
+<p>(Il sort.)</p>
+<p>SALARINO.--C&#x27;est le mâtin le plus inflexible qui ait jamais vécu parmi les hommes.</p>
+<p>ANTONIO.--Laissons-le; je ne le poursuivrai plus de prières inutiles: il veut avoir ma vie; j&#x27;en sais bien la raison. J&#x27;ai souvent arraché à ses poursuites plusieurs de ses débiteurs insolvables qui sont venus implorer mon secours; voilà pourquoi il me hait.</p>
+<p>SALARINO.--Non, j&#x27;en suis sûr, le duc ne souffrira jamais qu&#x27;un pareil engagement ait son effet.</p>
+<p>ANTONIO.--Le duc ne peut refuser de suivre la loi: retrancher aux étrangers les sûretés dont ils jouissent à Venise serait une injustice contre l&#x27;État; car la richesse de son commerce est fondée sur l&#x27;abord de toutes les nations. Ainsi donc, allons; mes chagrins et mes pertes m&#x27;ont tellement abattu, qu&#x27;à peine pourrai-je conserver jusqu&#x27;à demain une livre de chair pour mon sanguinaire créancier. À la bonne heure; venez, geôlier.--Je prie Dieu que Bassanio vienne me voir acquitter sa dette, et je suis content.</p>
+<p>(Ils sortent.)</p>
+<h2 class="chapter" id="c14">Scène IV</h2>
+<p>À Belmont.--Une pièce dans la maison de Portia.</p>
+<p>Entrent PORTIA, NÉRISSA, LORENZO, JESSICA, BALTHASAR.</p>
+<p>LORENZO.--Permettez-moi, madame, de le dire en votre présence, vous vous êtes formé une noble et juste idée de la divine amitié. Elle se montre puissamment dans la manière dont vous supportez l&#x27;absence de votre époux; mais si vous connaissiez celui à qui vous témoignez ces égards, à quel véritablement galant homme vous envoyez secours, combien il aime votre mari, je suis sûr que vous seriez plus fière de votre ouvrage, qu&#x27;un bienfait ordinaire ne saurait vous forcer de l&#x27;être.</p>
+<p>PORTIA.--Je ne me suis jamais repentie d&#x27;avoir fait ce qui était bien, et je ne m&#x27;en repentirai pas aujourd&#x27;hui. Entre deux compagnons qui vivent et passent leurs jours ensemble, dont les âmes portent également le joug de l&#x27;affliction, il faut nécessairement qu&#x27;il se trouve un rapport parfait de caractères, de moeurs et de sentiments. C&#x27;est ce qui me fait penser que cet Antonio, étant l&#x27;ami de coeur de mon époux, doit ressembler à mon époux. S&#x27;il est ainsi, il m&#x27;en coûte bien peu de chose pour arracher l&#x27;image de mon âme à l&#x27;état où l&#x27;a réduite une cruauté infernale. Mais ceci en reviendrait trop à me louer moi-même; ainsi n&#x27;en parlons plus. Écoutez autre chose. Lorenzo, je remets en vos mains le soin et la conduite de ma maison jusqu&#x27;au retour de mon époux. Quant à moi, j&#x27;ai fait secrètement voeu au ciel de vivre dans la prière et la contemplation, accompagnée de la seule Nérissa, jusqu&#x27;au retour de son mari et de mon seigneur. Il y a un monastère à deux milles d&#x27;ici; c&#x27;est là que nous passerons le temps de leur absence. Je vous prie de ne pas refuser la charge que mon amitié et la nécessité vous imposent.</p>
+<p>LORENZO.--Madame, je la reçois de bon coeur. J&#x27;obéirai toujours à vos honorables commandements.</p>
+<p>PORTIA.--Mes gens connaissent déjà ma volonté; ils vous obéiront à vous et à Jessica, comme au seigneur Bassanio et à moi-même. Adieu, portez-vous bien, jusqu&#x27;au moment qui nous réunira.</p>
+<p>LORENZO.--Puissiez-vous n&#x27;avoir que des pensées agréables et des moments heureux!</p>
+<p>JESSICA.--Je vous souhaite, madame, toute satisfaction du coeur.</p>
+<p>PORTIA.--Je vous remercie de vos voeux, et c&#x27;est avec plaisir que j&#x27;en fais de pareils pour vous. Adieu, Jessica. (Lorenzo et Jessica sortent.) Balthasar, je t&#x27;ai toujours trouvé honnête et fidèle; que je te retrouve toujours de même. Prends cette lettre, et fais tous tes efforts pour arriver à Padoue le plus tôt possible: remets-la en main propre au docteur Bellario, mon cousin; et fais bien attention, prends les habillements et les papiers qu&#x27;il te donnera, et porte-les, je t&#x27;en prie, avec toute la célérité imaginable, au lieu où l&#x27;on passe la barque pour aller à Venise. Ne perds point de temps en discours; pars, je m&#x27;y trouverai avant toi.</p>
+<p>BALTHASAR.--Madame, je ferai toute la diligence possible.</p>
+<p>PORTIA.--Écoute, Nérissa: j&#x27;ai des projets que tu ne connais pas encore. Nous reverrons nos maris plus tôt qu&#x27;ils ne s&#x27;y attendent.</p>
+<p>NÉRISSA.--Nous verront-ils?</p>
+<p>PORTIA.--Oui, Nérissa; mais sous des habits qui leur feront penser que nous sommes pourvues de ce qui nous manque. Je gage tout ce que tu voudras que, quand nous serons toutes deux équipées en jeunes gens, je suis le plus joli garçon des deux, et que ce sera moi qui porterai ma dague de meilleure grâce, qui saurai le mieux prendre cette voix flûtée qui marque le passage de l&#x27;enfance à l&#x27;âge d&#x27;homme, et changer de petits pas mignards en une démarche virile, et parler batailles comme un jeune fanfaron, et dire maints jolis mensonges, et comme quoi j&#x27;ai été requis d&#x27;amour par des femmes d&#x27;un rang distingué, que mes refus ont rendues malades et fait mourir de douleur. Je ne pouvais pas satisfaire à toutes. Puis je m&#x27;en repentirai, et je regretterai d&#x27;avoir causé leur trépas.--J&#x27;aurai ainsi une vingtaine de petits mensonges, à faire jurer que je suis sorti des écoles depuis plus d&#x27;un an.--J&#x27;ai dans l&#x27;esprit un millier des jeunes gentillesses de ces petits fanfarons, dont je veux faire usage.</p>
+<p>NÉRISSA.--Quoi, deviendrons-nous donc des hommes?</p>
+<p>PORTIA.--Fi donc! Quelle question si tu la faisais à quelqu&#x27;un capable de l&#x27;interpréter dans un mauvais sens! Mais viens, je te dirai tout mon projet quand nous serons dans ma voiture, qui nous attend à la porte du parc. Dépêchons-nous, car il faut que nous fassions vingt milles aujourd&#x27;hui.</p>
+<p>(Elles sortent.)</p>
+<h2 class="chapter" id="c15">Scène V</h2>
+<p>Toujours à Belmont.</p>
+<p>Entrent LANCELOT ET JESSICA.</p>
+<p>LANCELOT.--Oui, en vérité,--car, voyez-vous, les péchés du père retombent sur les enfants: aussi, je vous assure que j&#x27;ai peur pour vous. J&#x27;ai toujours été tout bonnement avec vous; ainsi je vous dis comme cela toutes les pensées qui me viennent là-dessus: ainsi tenez-vous en joie; car, pour parler vrai, je crois que vous êtes damnée. Il ne reste qu&#x27;une seule espérance, qui peut encore vous sauver; mais, pas moins, ce n&#x27;est qu&#x27;une espèce d&#x27;espérance bâtarde.</p>
+<p>JESSICA.--Et quelle sorte d&#x27;espérance, je te prie?</p>
+<p>LANCELOT.--Eh! vraiment, vous pourriez espérer un peu que ce n&#x27;est pas votre père qui vous a engendrée, que vous n&#x27;êtes pas la fille du Juif.</p>
+<p>JESSICA.--C&#x27;est là, en effet, une sorte d&#x27;espérance bâtarde; mais alors ce seraient les péchés de ma mère qui retomberaient sur moi.</p>
+<p>LANCELOT.--Alors, ma foi, j&#x27;ai grand&#x27;peur que vous ne soyez damnée de père et de mère; ainsi en voulant éviter Scylla votre père, je tombe en Charybde votre mère. Allons, vous êtes perdue des deux côtés.</p>
+<p>JESSICA.--Je serai sauvée par mon mari, qui m&#x27;a faite chrétienne.</p>
+<p>LANCELOT.--Vraiment, il n&#x27;en est que plus blâmable; nous étions déjà bien assez de chrétiens; tout autant qu&#x27;il en fallait pour pouvoir bien vivre les uns avec les autres. Cette fureur de faire des chrétiens haussera le prix des porcs; si nous nous mettons tous à manger du porc, nous ne pourrons bientôt plus avoir une grillade sur les charbons pour notre argent.</p>
+<p>(Entre Lorenzo.)</p>
+<p>JESSICA.--Lancelot, je vais conter à mon mari ce que vous me dites; le voilà qui vient.</p>
+<p>LORENZO.--Savez-vous, Lancelot, que je deviendrai bientôt jaloux de vous si vous attirez ainsi ma femme dans des coins?</p>
+<p>JESSICA.--Oh! vous n&#x27;avez pas lieu de vous alarmer, Lorenzo. Lancelot et moi nous ne sommes pas bien ensemble. Il me dit tout net qu&#x27;il n&#x27;y a point de merci pour moi dans le ciel, parce que je suis la fille d&#x27;un Juif; et il dit aussi que vous n&#x27;êtes pas un bon membre de la communauté, car, en convertissant les Juifs en chrétiens, vous faites augmenter le prix du porc.</p>
+<p>LORENZO.--Je me justifierai mieux de cela envers la communauté que vous ne pourrez vous justifier, vous, d&#x27;avoir grossi le ventre de la négresse: la Mauresse est enceinte de vos oeuvres, Lancelot.</p>
+<p>LANCELOT.--C&#x27;est beaucoup que la Mauresse soit plus grosse que de raison, mais si elle est moins qu&#x27;une honnête femme, en vérité, elle est plus encore que je ne le croyais[13].</p>
+<p>[Note 13: It is much, that the moor should be more than reason: but if she be less than an honest woman, she is indeed more than I took her for.]</p>
+<p>LORENZO.--Comme il est aisé à tous les sots de jouer sur les mots! Je crois, d&#x27;honneur, que bientôt le rôle qui siéra le mieux à l&#x27;esprit sera le silence, et que la parole ne sera plus qu&#x27;aux perroquets. Allons, rentrez, et dites-leur de se préparer pour le dîner.</p>
+<p>LANCELOT.--Cela est fait, monsieur; ils ont tous des estomacs.</p>
+<p>LORENZO.--Bon Dieu! quel moulin à quolibets vous êtes! Allons, dites-leur de préparer le dîner.</p>
+<p>LANCELOT.--Cela est fait aussi, monsieur, mais seulement couvrir est le mot[14].</p>
+<p>[Note 14: Cover, couvrir la table, et ensuite cover, se couvrir.]</p>
+<p>LORENZO.--Eh bien! voulez-vous couvrir?</p>
+<p>LANCELOT.--Non pas, monsieur; je connais mon devoir.</p>
+<p>LORENZO.--Encore la guerre aux mots! Veux-tu donc montrer toute la richesse de ton esprit en un instant? Je t&#x27;en prie, entends tout uniment un homme qui parle tout uniment. Va trouver tes camarades: dis-leur de couvrir la table, de servir les plats, et nous allons entrer pour dîner.</p>
+<p>LANCELOT.--Pour la table, monsieur, elle sera servie; pour les plats, monsieur, ils seront couverts; quant à votre entrée pour venir dîner, qu&#x27;elle soit selon votre idée et votre fantaisie.</p>
+<p>(Il sort.)</p>
+<p>LORENZO.--Béni soit le jugement! comme ses mots s&#x27;accordent! Le sot a entassé dans sa mémoire une armée de bons termes; et j&#x27;en connais bien d&#x27;autres d&#x27;une condition plus relevée qui sont farcis de mots comme lui, et à qui il ne faut qu&#x27;une expression plaisante pour rompre un entretien.--Eh bien! Jessica, comment va la joie? Et dis-moi, ma chère, dis-moi ton opinion: comment goûtes-tu l&#x27;épouse de Bassanio?</p>
+<p>JESSICA.--Au delà de toute expression. Il est bien convenable que le seigneur Bassanio mène une vie régulière; car, ayant le bonheur de posséder une pareille épouse, il goûte ici-bas les félicités du ciel; et s&#x27;il n&#x27;était pas capable de les sentir ici sur la terre, il serait bien juste qu&#x27;il n&#x27;allât jamais dans le ciel. Oui, si deux divinités faisaient quelque gageure céleste, et que pour enjeu ils missent deux femmes de ce monde, et que Portia en fût une, il faudrait absolument ajouter quelque chose à l&#x27;autre: car ce pauvre et grossier univers n&#x27;a pas sa pareille.</p>
+<p>LORENZO.--Eh bien! tu as en moi un époux pareil à ce qu&#x27;elle est comme épouse.</p>
+<p>JESSICA.--Oui! demande-moi donc aussi mon sentiment sur ce point.</p>
+<p>LORENZO.--C&#x27;est ce que je ferai incessamment: mais d&#x27;abord allons dîner.</p>
+<p>JESSICA.--Pas du tout, laissez-moi faire votre panégyrique, tandis que je suis en appétit.</p>
+<p>LORENZO.--Non, je t&#x27;en prie; réserve-le pour propos de table: une fois là, quoi que tu puisses dire, je le digérerai avec le reste.</p>
+<p>JESSICA.--C&#x27;est bien, je vais vous en servir.</p>
+<p>(Ils sortent.)</p>
+<h3 class="sub">Fin du troisième acte — Acte quatrième</h3>
+<h2 class="chapter" id="c16">Scène I</h2>
+<p>A Venise.--Un tribunal.</p>
+<p>Entrent LE DUC, LES MAGNIFIQUES, ANTONIO, BASSANIO, GRATIANO, SALARINO, SALANIO et autres personnages.</p>
+<p>LE DUC.--Antonio est-il ici?</p>
+<p>ANTONIO.--Prêt à paraître, dès qu&#x27;il plaira à Votre Altesse.</p>
+<p>LE DUC.--J&#x27;en suis fâché pour toi. Tu as affaire à un adversaire dur comme la pierre, à un misérable tout à fait inhumain et incapable de pitié, et dont le coeur n&#x27;a pas un grain de sensibilité.</p>
+<p>ANTONIO.--Je sais que Votre Grâce a pris beaucoup de peine pour tâcher de modérer la rigueur de ses poursuites. Mais puisqu&#x27;il reste inexorable, et qu&#x27;il n&#x27;est aucun moyen légal de me soustraire à sa haine, j&#x27;oppose ma patience à sa fureur. Je suis armé de courage pour souffrir avec une âme tranquille la cruauté et la rage de la sienne.</p>
+<p>LE DUC.--Allez et faites entrer le Juif dans la chambre.</p>
+<p>SALANIO.--Il est à la porte, seigneur; il entre.</p>
+<p>(Entre Shylock.)</p>
+<p>LE DUC.--Faites place: qu&#x27;il paraisse devant nous.--Shylock, tout le monde pense, et je le pense aussi, que tu ne feras que conduire cette invention de ta méchanceté jusqu&#x27;à son dernier période, et qu&#x27;alors, c&#x27;est ainsi du moins qu&#x27;on en juge, tu voudras déployer une clémence et une pitié plus extraordinaires encore que l&#x27;extraordinaire cruauté que tu sembles montrer; qu&#x27;au lieu d&#x27;exiger la condition du billet (qui est une livre de chair de ce pauvre marchand), tu ne te contenteras pas seulement de te désister de tes prétentions à cet égard; mais encore que, touché de sentiments de douceur et d&#x27;humanité, tu lui remettras la moitié de sa dette, et que tu jetteras un oeil de pitié sur les pertes accumulées qui sont venues fondre sur lui en assez grand nombre pour écraser un marchand roi, et pour attendrir sur son sort des coeurs d&#x27;airain et les sauvages âmes de pierre des Turcs inflexibles et des Tartares, qui ne connurent jamais les devoirs de la douce courtoisie. Nous attendons de toi une réponse favorable, Juif.</p>
+<p>SHYLOCK.--J&#x27;ai communiqué mes résolutions à Votre Grâce: j&#x27;ai juré, par le saint jour du sabbat, d&#x27;exiger mon dû et l&#x27;accomplissement de l&#x27;obligation. Si vous me refusez, puissent les suites de cette infraction retomber sur votre constitution et les libertés de votre ville! Vous me demanderez pourquoi j&#x27;aime mieux prendre une livre de chair morte que de recevoir trois mille ducats? À cela je n&#x27;ai point d&#x27;autre réponse, sinon que c&#x27;est mon idée. N&#x27;est-ce pas là répondre? Eh bien! si un rat fait du dégât dans ma maison, ne suis-je pas le maître de donner dix mille ducats pour le faire empoisonner? Vous ne trouvez pas encore cette réponse suffisante? Il y a des gens qui n&#x27;aiment pas à voir sur cette table un cochon de lait la gueule béante; quelques-uns, qui deviennent furieux quand ils y voient un chat; et d&#x27;autres, au nasillement de la cornemuse, ne peuvent retenir leur urine: car notre disposition, maîtresse de nos passions, influe souverainement sur les goûts et les dégoûts de l&#x27;homme. J&#x27;en viens à ma réponse. De même qu&#x27;il n&#x27;y a point de raison pourquoi l&#x27;un ne saurait supporter la vue d&#x27;un cochon la gueule béante, l&#x27; autre celle d&#x27;un chat, animal innocent et nécessaire, et l&#x27;autre le son de la cornemuse; mais qu&#x27;ils sont tous forcés de céder à cette faiblesse inévitable, d&#x27;offenser quand ils sont offensés: de même je ne peux ni ne veux donner d&#x27;autre raison de la poursuite d&#x27;un procès si préjudiciable pour moi, qu&#x27;une haine intime, une certaine aversion que je sens contre Antonio. Êtes-vous content de ma réponse?</p>
+<p>BASSANIO.--Ce n&#x27;est pas là une réponse, homme insensible, qui soit capable d&#x27;excuser l&#x27;obstination de ta cruauté.</p>
+<p>SHYLOCK.--Je ne me suis pas engagé à te donner une réponse qui te plût.</p>
+<p>BASSANIO.--Tous les hommes cherchent-ils à tuer ce qu&#x27;ils n&#x27;aiment pas?</p>
+<p>SHYLOCK.--Un homme hait-il ce qu&#x27;il n&#x27;a pas envie de tuer?</p>
+<p>BASSANIO.--Toute offense n&#x27;engendre pas d&#x27;abord la haine.</p>
+<p>SHYLOCK.--Comment! voudrais-tu qu&#x27;un serpent te piquât deux fois?</p>
+<p>ANTONIO.--Faites attention, je vous prie, à ce que c&#x27;est que de raisonner avec ce Juif. Vous pourriez aussi bien vous tenir sur le rivage à prier la mer d&#x27;abaisser la hauteur de ses marées ordinaires; vous pourriez aussi bien demander au loup pourquoi il a fait bêler la brebis après son agneau; vous pourriez aussi bien demander aux pins des montagnes de ne pas secouer leurs cimes avec bruit, quand ils sont battus par la tempête du ciel. Vous viendriez aussi facilement à bout des plus rudes entreprises, que d&#x27;amollir (car qu&#x27;y a-t-il de plus rude?) son coeur de Juif. Cessez de lui faire des offres, je vous en conjure; ne tentez plus aucun moyen; mais laissez-moi promptement et simplement, comme il convient, recevoir mon jugement, et le Juif ce qu&#x27;il désire.</p>
+<p>BASSANIO.--Au lieu de trois mille ducats en voilà six mille.</p>
+<p>SHYLOCK.--Chacun de ces six mille ducats fût-il divisé en six parties, et chaque partie fût-elle un ducat, je ne les prendrais pas; je veux qu&#x27;on accomplisse les termes du billet.</p>
+<p>LE DUC.--Comment espéreras-tu miséricorde, si tu ne fais pas miséricorde?</p>
+<p>SHYLOCK.--Quel jugement ai-je à redouter, puisque je ne fais point de mal? Vous avez chez vous un grand nombre d&#x27;esclaves, que comme vos ânes, vos chiens et vos mulets, vous employez aux travaux les plus abjects et les plus vils, parce que vous les avez achetés. Irai-je vous dire: rendez-leur la liberté, faites, faites-leur épouser vos héritières? Pourquoi suent-ils sous des fardeaux? Donnez-leur des lits aussi doux que les vôtres. Que leur palais soit flatté par les mêmes mets que le vôtre. Vous me répondez: ces esclaves sont à nous. Je vous réponds de même: la livre de chair que j&#x27;exige de lui m&#x27;appartient: je l&#x27;ai chèrement payée, et je la veux. Si vous me refusez, honte à vos lois! Il n&#x27;y a plus aucune force dans les décrets du sénat de Venise.--J&#x27;attends que vous me rendiez justice. Parlez: l&#x27;aurai-je?</p>
+<p>LE DUC.--Mon pouvoir m&#x27;autorise à renvoyer l&#x27;assemblée, jusqu&#x27;à ce que Bellario, savant jurisconsulte, que j&#x27;ai mandé ici aujourd&#x27;hui pour résoudre cette question, soit arrivé.</p>
+<p>SALANIO.--Seigneur, il y a là à la porte un exprès nouvellement arrivé de Padoue, avec des lettres du docteur Bellario.</p>
+<p>LE DUC.--Apportez-nous ces lettres, faites entrer le messager.</p>
+<p>BASSANIO.--Espère, Antonio. Allons, reprends courage; le Juif aura ma chair, mon sang et mes os, et tout, avant que tu perdes pour moi une seule goutte de ton sang.</p>
+<p>ANTONIO.--Je suis le bouc émissaire du troupeau, le plus propre à mourir. Le fruit le plus faible tombe le premier: laissez-moi tomber de même.--Vous n&#x27;avez rien de mieux à faire, Bassanio, que de vivre et de composer mon épitaphe.</p>
+<p>(Entre Nérissa déguisée en clerc d&#x27;avocat.)</p>
+<p>LE DUC.--Venez-vous de Padoue, et de la part de Bellario?</p>
+<p>NÉRISSA.--Vous l&#x27;avez dit, seigneur: Bellario salue Votre Seigneurie.</p>
+<p>(Elle lui présente une lettre.)</p>
+<p>BASSANIO.--Pourquoi aiguiser ton couteau avec tant d&#x27;application?</p>
+<p>SHYLOCK.--Pour couper ce qui me revient de ce banqueroutier.</p>
+<p>GRATIANO.--O dur Juif, ce n&#x27;est pas sur le cuir de ton soulier; c&#x27;est bien plutôt sur ton coeur que tu en affiles le tranchant; il n&#x27;est point de métal, pas même la hache du bourreau, qui ait à moitié l&#x27;âpreté de ta jalouse haine. N&#x27;est-il pas une prière capable de te toucher?</p>
+<p>SHYLOCK.--Non, pas une seule que tu puisses avoir assez d&#x27;esprit pour imaginer.</p>
+<p>GRATIANO.--Puisses-tu être damné dans les enfers; chien inexorable! Puisse-t-on faire un crime à la justice de te laisser la vie! Tu m&#x27;as presque fait chanceler dans ma foi: j&#x27;ai été tenté d&#x27;embrasser l&#x27;opinion de Pythagore et de croire avec lui que les âmes des animaux passent dans des corps humains. Ton âme canine animait un loup pendu pour meurtre d&#x27;homme; et son odieux esprit échappé du gibet, lorsque tu étais dans le ventre de ta profane mère, entra dans ton corps. Tes désirs sont ceux d&#x27;un loup sanguinaire, affamé et furieux.</p>
+<p>SHYLOCK.--Tant que tu n&#x27;effaceras pas la signature de ce billet, tu n&#x27;offenseras que tes poumons à parler si haut. Remets ton esprit dans son assiette, jeune homme, ou tu vas le perdre sans ressources. J&#x27;attends ici justice.</p>
+<p>LE DUC.--La lettre de Bellario recommande à la cour un jeune et savant docteur. Où est-il?</p>
+<p>NÉRISSA.--Ici près, qui attend votre réponse, pour savoir si vous voulez le recevoir.</p>
+<p>LE DUC.--De tout mon coeur. Allez le chercher, trois ou quatre d&#x27;entre vous, pour le conduire ici avec civilité. Je vais en attendant faire part à la cour de la lettre de Bellario. (Il lit.) «Votre Altesse saura qu&#x27;à la réception de sa lettre je me suis trouvé très malade. Mais au même moment que votre exprès est arrivé, un jeune docteur de Rome, nommé Balthasar, m&#x27;était venu rendre une visite d&#x27;amitié. Je l&#x27;ai informé des particularités du procès pendant entre le Juif et le marchand Antonio. Nous avons feuilleté ensemble beaucoup de livres. Il est muni de mon avis qu&#x27;il vous apporte perfectionné par son savoir, dont je ne saurais trop louer l&#x27;étendue, pour satisfaire à ma place, comme je l&#x27;en ai pressé, à la demande de Votre Grâce. Que les années qui lui manquent ne le privent pas, je vous prie, de la haute estime qui lui est due; car je ne vis jamais un corps si jeune avec une tête si mûre. Je le recommande à votre gracieux accueil. C&#x27;est à l&#x27;essai que se fera le mieux connaître son mérite.» Vous entendez ce que m&#x27;écrit Bellario. Mais voici, je crois, le docteur. (Entre Portia vêtue en homme de loi.) Donnez-moi votre main. Venez-vous de la part du vieux Bellario?</p>
+<p>PORTIA.--Oui, seigneur.</p>
+<p>LE DUC.--Soyez le bienvenu. Prenez votre place. Êtes-vous instruit de la question qui occupe aujourd&#x27;hui la cour?</p>
+<p>PORTIA.--Je connais la cause de point en point. Quel est ici le marchand, et quel est le Juif?</p>
+<p>LE DUC.--Antonio et le vieux Shylock. Approchez tous deux.</p>
+<p>PORTIA.--Vous nommez-vous Shylock?</p>
+<p>SHYLOCK.--Je me nomme Shylock.</p>
+<p>PORTIA.--Le procès que vous avez intenté est d&#x27;étrange nature. Cependant vous êtes tellement en règle que les lois de Venise ne peuvent vous empêcher de le suivre. (A Antonio.) Vous courez risque d&#x27;être sa victime; n&#x27;est-il pas vrai?</p>
+<p>ANTONIO.--Oui, il le dit.</p>
+<p>PORTIA.--Reconnaissez-vous le billet?</p>
+<p>ANTONIO.--Je le reconnais.</p>
+<p>PORTIA.--Il faut donc que le Juif se montre miséricordieux.</p>
+<p>SHYLOCK.--Qui pourrait m&#x27;y forcer, dites-moi?</p>
+<p>PORTIA.--Le caractère de la clémence est de n&#x27;être point forcée. Elle tombe, comme la douce pluie du ciel sur le lieu placé au-dessous d&#x27;elle. Deux fois bénie, elle est bonne à celui qui donne et à celui qui reçoit. C&#x27;est la plus haute puissance du plus puissant. Elle sied au monarque sur le trône mieux que sa couronne. Son sceptre montre la force de son autorité temporelle; c&#x27;est l&#x27;attribut du pouvoir qu&#x27;on révère et de la majesté; mais la clémence est au-dessus de la domination du sceptre; elle a son trône dans le coeur des rois. C&#x27;est un des attributs de Dieu lui-même, et les puissances de la terre se rapprochent d&#x27;autant plus de Dieu, qu&#x27;elles savent mieux mêler la clémence à la justice. Ainsi, Juif, quoique la justice soit l&#x27;argument que tu fais valoir, fais cette réflexion, qu&#x27;en ne suivant que la justice, nul de nous ne pourrait espérer de salut: nous prions pour obtenir miséricorde; et cette prière nous enseigne à tous en même temps à pratiquer la miséricorde. Je me suis étendu sur ce sujet, dans le dessein de tempérer la rigueur de tes poursuites, qui, si tu les continues, forceront le tribunal de Venise à rendre d&#x27;après la loi un arrêt contre ce marchand.</p>
+<p>SHYLOCK.--Que mes actions retombent sur ma tête! Je réclame la loi. Je veux qu&#x27;on remplisse les clauses de mon billet.</p>
+<p>PORTIA.--N&#x27;est-il pas en état de te rendre cet argent?</p>
+<p>BASSANIO.--Oui; je le lui offre ici, aux yeux de la cour, et même le double de la somme. Si ce n&#x27;est pas assez, je m&#x27;oblige à lui payer dix fois la somme, sous peine de perdre mes mains, ma tête et mon coeur. Si cela ne peut le satisfaire, il sera manifeste que c&#x27;est la méchanceté qui opprime l&#x27;innocence. Je vous en conjure donc, faites une fois plier la loi sous votre autorité. Permettez-vous une légère injustice pour faire une grande justice et forcer la volonté de ce cruel démon.</p>
+<p>PORTIA.--Cela ne doit pas être; il n&#x27;est point d&#x27;autorité à Venise qui puisse changer un décret établi. Cela deviendrait un précédent, et on se prévaudrait de cet exemple pour introduire mille abus dans l&#x27;État. Cela ne se peut pas.</p>
+<p>SHYLOCK.--C&#x27;est un Daniel venu pour nous juger! Oui, un Daniel! O jeune et sage juge, combien je t&#x27;honore!</p>
+<p>PORTIA.--Laissez-moi voir le billet, je vous prie.</p>
+<p>SHYLOCK.--Le voilà, révérendissime docteur; le voilà.</p>
+<p>PORTIA.--Shylock, on t&#x27;offre le triple de la somme.</p>
+<p>SHYLOCK.--Un serment, un serment! J&#x27;ai un serment dans le ciel; me mettrai-je un parjure sur la conscience? Non; pas pour tout Venise.</p>
+<p>PORTIA.--Le délai fatal est expiré, et le Juif est en droit d&#x27;exiger une livre de chair coupée tout près du coeur du marchand. Sois miséricordieux, prends le triple de la somme, et dis-moi de déchirer le billet.</p>
+<p>SHYLOCK.--Quand il sera payé suivant sa teneur. Il paraît que vous êtes un digne juge: vous connaissez la loi, vous avez très judicieusement exposé le cas; je vous somme, au nom de cette loi, dont vous êtes une des estimables colonnes, de procéder au jugement. Je jure sur mon âme que langue d&#x27;homme ne parviendra jamais à me faire changer. Je m&#x27;en tiens à mon billet.</p>
+<p>ANTONIO.--Je supplie instamment la cour de rendre son jugement.</p>
+<p>PORTIA.--Eh bien! puisqu&#x27;il en est ainsi, il faut préparer votre sein à recevoir son couteau.</p>
+<p>SHYLOCK.--O noble juge! l&#x27;excellent jeune homme!</p>
+<p>PORTIA.--L&#x27;intention et l&#x27;objet de la loi sont complétement d&#x27;accord avec la clause pénale qui, d&#x27;après le billet, doit être accomplie.</p>
+<p>SHYLOCK.--Cela est juste. Oh! le bon et sage juge! Que tu es bien plus vieux que tu ne le parais!</p>
+<p>PORTIA, à Antonio.--Ainsi, découvrez votre sein.</p>
+<p>SHYLOCK.--Oui, son sein: le billet le dit. N&#x27;est-il pas vrai, noble juge? tout près de son coeur; ce sont les propres mots.</p>
+<p>PORTIA.--Oui. Avez-vous ici des balances pour peser la chair?</p>
+<p>SHYLOCK.--J&#x27;en ai de toutes prêtes.</p>
+<p>PORTIA.--Shylock, il faut avoir auprès de lui quelque chirurgien à vos frais pour bander sa plaie, de peur qu&#x27;il ne perde son sang jusqu&#x27;à mourir.</p>
+<p>SHYLOCK.--Cela est-il spécifié dans le billet?</p>
+<p>PORTIA.--Non, cela n&#x27;y est pas exprimé; mais qu&#x27;importe? il serait bien que vous le fissiez par charité.</p>
+<p>SHYLOCK.--Je ne le pense pas ainsi! Cela n&#x27;est pas dans le billet.</p>
+<p>PORTIA.--Approchez, marchand, avez-vous quelque chose à dire?</p>
+<p>ANTONIO.--Peu de chose.--Je suis armé de courage et bien préparé. Donnez-moi votre main, Bassanio. Adieu, ne vous affligez point du malheur où je suis tombé pour vous; car en ceci la fortune se montre plus indulgente qu&#x27;à son ordinaire. Elle a toujours coutume de laisser les malheureux survivre à leurs biens, et contempler avec des yeux caves, et un front chargé de rides, une vieillesse accablée sous la pauvreté. Elle me délivre des pénibles langueurs d&#x27;une pareille misère.--Parlez de moi à votre noble épouse; racontez-lui comment est arrivée la mort d&#x27;Antonio; dites lui combien je vous aimais; parlez bien de ma mort, et, votre récit fini, qu&#x27;elle juge si Bassanio fut aimé. Ne vous repentez point de la cause qui vous fait perdre votre ami; comme il ne se repent point de satisfaire à votre dette; car si le Juif enfonce son couteau autant que je le désire, je vais la payer de tout mon coeur.</p>
+<p>BASSANIO.--Antonio, j&#x27;ai épousé une femme qui m&#x27;est aussi chère que la vie: mais ma vie, ma femme et l&#x27;univers entier ne me sont pas plus précieux que vos jours. Je consentirais à tout perdre, oui, à tout sacrifier à ce démon pour vous délivrer.</p>
+<p>PORTIA.--Si votre femme était là pour vous entendre, elle vous remercierait assez peu de cette offre.</p>
+<p>GRATIANO.--J&#x27;aime une femme que j&#x27;aime, je vous le proteste. Je voudrais qu&#x27;elle fût dans le ciel si elle y pouvait obtenir les moyens de changer le coeur de ce mâtin de Juif!</p>
+<p>NÉRISSA.--Vous faites bien de dire cela en arrière d&#x27;elle, sans quoi votre voeu pourrait troubler la paix du ménage.</p>
+<p>SHYLOCK, à part.--Voilà nos époux chrétiens. J&#x27;ai une fille; j&#x27;aurais mieux aimé qu&#x27;elle prît pour mari un rejeton de la race de Barrabas, qu&#x27;un chrétien. (Haut.) Nous perdons le temps en bagatelles. Je te prie, fais exécuter la sentence.</p>
+<h2 class="chapter" id="c17">PORTIA.--Une livre de chair de ce marchand t&#x27;appartient: la cour te l&#x27;adjuge et la loi te la donne.</h2>
+<p>SHYLOCK.--O juge équitable!</p>
+<p>PORTIA.--Et vous devez couper cette chair sur son sein: la loi le permet et la cour vous l&#x27;accorde.</p>
+<p>SHYLOCK.--Le savant juge! Voilà une sentence!--Allons, préparez-vous.</p>
+<p>PORTIA.--Arrête un instant. Ce n&#x27;est pas tout. Le billet ne t&#x27;accorde pas une goutte de sang: les termes sont exprès; une livre de chair. Prends ce qui t&#x27;est dû; prends ta livre de chair. Mais si, en la coupant, tu verses une seule goutte de sang chrétien, les lois de Venise ordonnent la confiscation de tes terres et de tes biens au profit de la république.</p>
+<p>GRATIANO.--O le juge équitable! Vois, Juif, le savant juge!</p>
+<p>SHYLOCK.--Est-ce là la loi?</p>
+<p>PORTIA.--Tu en verras le texte; et, puisque tu veux absolument qu&#x27;on te fasse justice, sois certain qu&#x27;on te la feras plus que tu ne voudras.</p>
+<p>GRATIANO.--O le savant juge! Regarde donc, Juif! le savant juge!</p>
+<p>SHYLOCK.--En ce cas-là, j&#x27;accepte son offre. Qu&#x27;on me compte trois fois le montant de l&#x27;obligation, et qu&#x27;on relâche le chrétien.</p>
+<p>BASSANIO.--Voici ton argent.</p>
+<p>PORTIA.--Doucement: on rendra pleine justice au Juif. Doucement: ne vous pressez pas; il n&#x27;aura pas autre chose que ce que porte le billet.</p>
+<p>GRATIANO.--O Juif! Un juge équitable, un savant juge!</p>
+<p>PORTIA.--Ainsi prépare-toi à couper la chair. Ne verse point de sang; ne coupe ni plus ni moins, mais tout juste une livre de chair. Si tu coupes plus ou moins d&#x27;une livre précise, quand ce ne serait que la vingtième partie d&#x27;un misérable grain; bien plus, si la balance penche de la valeur d&#x27;un cheveu, tu es mort, et tous tes biens sont confisqués.</p>
+<p>GRATIANO.--Un second Daniel, un Daniel, Juif. Infidèle, te voilà pris maintenant.</p>
+<p>PORTIA.--Pourquoi le Juif balance-t-il? Prends ce qui te revient.</p>
+<p>SHYLOCK.--Donnez-moi mon principal, et laissez-moi aller.</p>
+<p>BASSANIO.--Le voici tout prêt: tiens.</p>
+<p>PORTIA.--Il l&#x27;a refusé en présence de la cour; il n&#x27;obtiendra que simple justice et ce que porte son billet.</p>
+<p>GRATIANO.--Un Daniel, te dis-je, un second Daniel! Je te remercie, Juif, de m&#x27;avoir appris ce mot.</p>
+<p>SHYLOCK.--N&#x27;aurai-je pas mon principal pur et simple?</p>
+<p>PORTIA.--Tu n&#x27;auras rien que ce que porte l&#x27;obligation, Juif; tu peux le prendre à tes risques et périls.</p>
+<p>SHYLOCK.--Eh bien! que le diable lui en donne l&#x27;acquit, je ne resterai pas plus longtemps ici à disputer.</p>
+<p>PORTIA.--Arrêtez, Juif, la justice a d&#x27;autres droits sur vous. Il est porté dans les lois de Venise, que lorsqu&#x27;il sera prouvé qu&#x27;un étranger aura attenté, par des voies directes ou indirectes, à la vie d&#x27;un citoyen, la moitié de ses biens sera saisie au profit de celui contre qui il aura tramé quelque entreprise, que l&#x27;autre moitié entrera dans les coffres particuliers de l&#x27;État; enfin, que le duc seul peut lui faire grâce de la mort à laquelle tous les autres juges devront le condamner: je déclare que tu te trouves dans le cas. Il est notoire que tu as travaillé indirectement et même directement à faire périr le défendeur. Ainsi tu as encouru les peines que je viens de mentionner: à genoux donc, et implore la clémence du duc.</p>
+<p>GRATIANO.--Demande qu&#x27;il te soit permis de te pendre toi-même. Cependant, comme tes biens appartiennent à la république, tu n&#x27;as pas de quoi t&#x27;acheter une corde; il faut que tu sois pendu aux frais de l&#x27;État.</p>
+<p>LE DUC.--Afin que tu voies la différence de l&#x27;esprit qui nous anime, je te fais grâce de la vie sans que tu me la demandes. Quant à la moitié de tes biens, elle appartient à Antonio, l&#x27;autre moitié revient à l&#x27;État. Mais tu peux, en te soumettant humblement, obtenir qu&#x27;on se restreigne à une amende.</p>
+<p>PORTIA.--Oui, pour l&#x27;État et non pour Antonio.</p>
+<p>SHYLOCK.--Eh bien! prenez ma vie et tout, ne me faites grâce de rien. Vous m&#x27;ôtez ma famille quand vous m&#x27;ôtez les moyens de soutenir ma famille, vous m&#x27;ôtez ma vie quand vous m&#x27;ôtez les ressources avec quoi je vis.</p>
+<p>PORTIA.--Que doit-il attendre de votre pitié, Antonio?</p>
+<p>GRATIANO.--Une corde gratis. Rien de plus, au nom de Dieu!</p>
+<p>ANTONIO.--Je demanderai à monseigneur le duc et à la cour, qu&#x27;on lui laisse la moitié de ses biens sans exiger d&#x27;amende. Je serai satisfait s&#x27;il me laisse disposer de l&#x27;autre moitié, pour la rendre, à sa mort, au gentilhomme qui a enlevé sa fille. Et cela sous deux conditions: la première, c&#x27;est qu&#x27;en faveur de ce qu&#x27;on lui accorde il se fera chrétien sur-le-champ; l&#x27;autre, qu&#x27;il fera une donation en présence de la cour, par laquelle tout ce qui lui appartient passera, après sa mort, à son gendre Lorenzo et à sa fille.</p>
+<p>LE DUC.--Il y souscrira, sinon je révoque le pardon que j&#x27;ai accordé.</p>
+<p>PORTIA.--Es-tu content, Juif, que réponds-tu?</p>
+<p>SHYLOCK.--Je suis content.</p>
+<p>PORTIA.--Clerc, dressez un acte de donation.</p>
+<p>SHYLOCK.--Je vous en conjure, laissez-moi sortir d&#x27;ici. Je ne me sens pas bien. Envoyez l&#x27;acte chez moi: je signerai.</p>
+<p>LE DUC.--Va-t&#x27;en, mais signe.</p>
+<p>GRATIANO.--Tu auras deux parrains à ton baptême. Si j&#x27;avais été juge, tu en aurais eu dix de plus pour te conduire à la potence, et non pas aux fonts baptismaux.</p>
+<p>(Shylock sort.)</p>
+<p>LE DUC, à Portia.--Monsieur, je vous invite à venir dîner chez moi.</p>
+<p>PORTIA.--Je supplie humblement Votre Grâce de m&#x27;excuser. Il faut que je me rende ce soir à Padoue, et que je parte sur-le-champ.</p>
+<p>LE DUC.--Je suis fâché que vous ne soyez pas de loisir.--Antonio, reconnaissez les peines de monsieur; vous lui avez, à mon gré, de grandes obligations.</p>
+<p>(Sortent le duc, les magnifiques et la suite.)</p>
+<p>BASSANIO.--Très digne gentilhomme! vous avez arraché aujourd&#x27;hui mon ami et moi-même à des peines cruelles. C&#x27;est de grand coeur que nous payons vos obligeants services, avec les trois mille ducats qui étaient dus au Juif.</p>
+<p>ANTONIO.--Et que de plus nous reconnaîtrons vous devoir à jamais notre attachement et nos services.</p>
+<p>PORTIA.--On est payé, quand on est satisfait; je le suis d&#x27;avoir réussi à vous délivrer; ainsi donc, je me regarde comme très-bien payé. Mon âme n&#x27;a jamais été plus mercenaire que cela. Je vous prie de me reconnaître, quand il nous arrivera de nous rencontrer. Je vous souhaite toute sorte de bonheur et prends congé de vous.</p>
+<p>BASSANIO.--Mon cher monsieur, je ne puis m&#x27;empêcher de faire encore mes efforts pour que vous acceptiez de nous quelque souvenir à titre de tribut et non de salaire. Accordez-moi deux choses, je vous prie, de ne me pas refuser, et de m&#x27;excuser.</p>
+<p>PORTIA.--Vous me faites tant d&#x27;instances, que j&#x27;y cède. Donnez-moi vos gants, je les porterai en mémoire de vous: et, pour marque de votre amitié, je prendrai cette bague.... Ne retirez donc pas votre main, je ne veux rien de plus! Votre amitié ne me la refusera pas.</p>
+<p>BASSANIO.--Cette bague, mon bon monsieur! eh! c&#x27;est une bagatelle; je rougirais de vous faire un pareil présent.</p>
+<p>PORTIA.--Je ne veux rien de plus que cette bague, et maintenant je me sens une grande envie de l&#x27;avoir.</p>
+<p>BASSANIO.--Elle est pour moi d&#x27;une importance bien au-dessus de sa valeur. Je ferai chercher à son de trompe la plus belle bague de Venise, et je vous l&#x27;offrirai: pour celle-ci, je ne le puis, excusez-moi, de grâce.</p>
+<p>PORTIA.--Je vois, monsieur, que vous êtes libéral en offre. Vous m&#x27;avez d&#x27;abord appris à demander, et maintenant, à ce qu&#x27;il me semble, vous m&#x27;apprenez comment on doit répondre à celui qui demande.</p>
+<p>BASSANIO.--Mon bon monsieur, je tiens cette bague de ma femme; lorsqu&#x27;elle la mit à mon doigt, elle me fit jurer de ne jamais la vendre, ni la donner, ni la perdre.</p>
+<p>PORTIA.--Cette excuse sauve aux hommes bien des présents. À moins que votre femme ne soit folle, lorsqu&#x27;elle saura combien j&#x27;ai mérité cette bague, elle ne se brouillera pas avec vous à tout jamais, pour me l&#x27;avoir donnée. C&#x27;est bien; la paix soit avec vous!</p>
+<p>(Sortent Portia et Nérissa.)</p>
+<p>ANTONIO.--Seigneur Bassanio, donnez-lui cette bague. Que ses services et mon amitié l&#x27;emportent sur l&#x27;ordre de votre femme.</p>
+<p>BASSANIO.--Allons. Va, Gratiano, tâche de le joindre. Donne-lui la bague et, s&#x27;il se peut, engage-le à venir chez Antonio. Cours, dépêche-toi. (Gratiano sort.) Rendons-nous-y de ce pas. Demain de grand matin nous volerons à Belmont. Venez, Antonio.</p>
+<p>(Ils sortent.)</p>
+<h2 class="chapter" id="c18">Scène II</h2>
+<p>Toujours à Venise.--Une rue.</p>
+<p>Entrent PORTIA et NÉRISSA.</p>
+<p>PORTIA.--Demande où est la maison du Juif; donne-lui cet acte à signer. Nous partirons ce soir, et nous arriverons un jour avant nos maris.--Cet acte sera fort bien reçu de Lorenzo.</p>
+<p>(Entre Gratiano.)</p>
+<p>GRATIANO.--Mon beau monsieur, soyez le bien retrouvé. Le seigneur Bassanio, après de plus amples réflexions, vous envoie cette bague et vous invite à dîner.</p>
+<p>PORTIA.--Je ne le puis. J&#x27;accepte sa bague; dites-le-lui ainsi de ma part, je vous prie.--Enseignez, de plus, je vous prie, encore à ce jeune homme la demeure du vieux Shylock.</p>
+<p>GRATIANO.--Je vais vous l&#x27;indiquer.</p>
+<p>NÉRISSA.--Monsieur, je voudrais vous dire un mot. (A Portia.) Je veux essayer si je pourrai ravoir de mon mari la bague que je lui ai fait jurer de conserver toujours.</p>
+<p>PORTIA.--Tu y parviendras, je t&#x27;en réponds.--Ils vont nous faire des serments de l&#x27;autre monde, qu&#x27;ils ont donné leurs bagues à des hommes; mais nous leur tiendrons tête, et leur en donnerons le démenti. Allons, dépêche-toi; tu sais où je t&#x27;attends.</p>
+<p>NÉRISSA, à Gratiano.--Venez, mon bon monsieur. Voulez-vous me montrer cette maison?</p>
+<p>(Ils sortent.)</p>
+<h3 class="sub">Fin du quatrième acte — Acte cinquième</h3>
+<h2 class="chapter" id="c19">Scène I</h2>
+<p>A Belmont.--Avenue de la maison de Portia.</p>
+<p>Entrent LORENZO et JESSICA.</p>
+<p>LORENZO.--Que la lune est brillante!--Ce fut dans une nuit semblable, tandis qu&#x27;un doux zéphyr caressait légèrement les feuillages sans y exciter le moindre frémissement, que Troïle, si je m&#x27;en souviens, escalada les murs de Troie, et adressa les soupirs de son âme vers les tentes des Grecs, où reposait Cressida.</p>
+<p>JESSICA.--Ce fut dans une pareille nuit que Thisbé, craintive et foulant d&#x27;un pied léger la rosée du gazon, aperçut l&#x27;ombre d&#x27;un lion avant de le voir lui-même, et s&#x27;enfuit éperdue de frayeur.</p>
+<p>LORENZO.--Ce fut dans une nuit semblable que Didon, seule sur le rivage d&#x27;une mer en furie, une branche de saule à la main, rappela du geste son amant vers Carthage.</p>
+<p>JESSICA.--Ce fut dans une semblable nuit que Médée cueillit les plantes enchantées qui rajeunirent le vieux Æson.</p>
+<p>LORENZO.--C&#x27;est dans une nuit pareille que Jessica s&#x27;est évadée de la maison du riche Juif, et, des pas emportés de l&#x27;amour, a couru depuis Venise jusqu&#x27;à Belmont.</p>
+<p>JESSICA.--Et c&#x27;est dans une pareille nuit que le jeune Lorenzo lui a juré qu&#x27;il l&#x27;aimait tendrement, et qu&#x27;il a dérobé son coeur par mille serments d&#x27;amour, dont aucun n&#x27;est sincère.</p>
+<p>LORENZO.--Et c&#x27;est dans une pareille nuit que la jolie Jessica, comme une petite mauvaise qu&#x27;elle est, calomnia son amant qui lui pardonna.</p>
+<p>JESSICA.--Je voudrais vous faire passer la nuit en ce lieu, si personne ne devait venir.--Mais écoutez.... j&#x27;entends les pas d&#x27;un homme.</p>
+<p>(Entre un domestique.)</p>
+<p>LORENZO.--Qui s&#x27;avance là d&#x27;un pas si précipité dans le silence de la nuit?</p>
+<p>LE DOMESTIQUE.--Ami.</p>
+<p>LORENZO.--Un ami? Quel ami? Votre nom, je vous prie, l&#x27;ami?</p>
+<p>LE DOMESTIQUE.--Stephano est mon nom. Et je viens annoncer que ma maîtresse sera de retour à Belmont avant le point du jour. Elle erre dans les environs, s&#x27;agenouillant au pied de toutes les croix sacrées où elle prie Dieu de lui accorder d&#x27;heureux jours dans son mariage.</p>
+<p>LORENZO.--Qui vient avec elle?</p>
+<p>LE DOMESTIQUE.--Personne, qu&#x27;un saint ermite, et sa suivante. Dites-moi, je vous prie, mon maître est-il de retour?</p>
+<p>LORENZO.--Pas encore; et nous n&#x27;en avons pas eu de nouvelles.--Mais entrons, Jessica, je t&#x27;en prie, et faisons quelques préparatifs pour recevoir honorablement la maîtresse du logis.</p>
+<p>(Entre Lancelot.)</p>
+<p>LANCELOT chantant.--Sol, la, sol la, ho, ha, sol la, hola, sol la.</p>
+<p>LORENZO.--Qui appelle?</p>
+<p>LANCELOT.--Sol la. Avez-vous vu M. Lorenzo et madame Lorenzo?</p>
+<p>LORENZO.--Cesse tes holà. Par ici.</p>
+<p>LANCELOT.--Sol la.--Où? où?</p>
+<p>LORENZO.--Ici</p>
+<p>LANCELOT.--Dis-lui qu&#x27;il vient d&#x27;arriver un courrier de la part de mon maître, son cornet plein de bonnes nouvelles. Mon maître sera ici avant le matin.</p>
+<p>(Il sort.)</p>
+<p>LORENZO.--Entrons, ma chère âme, et attendons leur arrivée; et cependant ce n&#x27;est pas la peine.... Pourquoi entrerions-nous?--Ami Stephano, annoncez, je vous prie, dans le château, que votre maîtresse est près d&#x27;arriver, et amenez ici les musiciens en plein air. (Le domestique sort.) Que la clarté de la lune dort doucement sur ce banc de gazon! Nous nous y assiérons et les sons de la musique se glisseront dans notre oreille. Ce doux silence et cette nuit si belle conviennent aux accords d&#x27;une gracieuse harmonie. Assieds-toi, Jessica; vois comme la voûte des cieux est incrustée de disques brillants. Parmi tous ces globes que tu vois, il n&#x27;y a pas jusqu&#x27;au plus petit, dont les mouvements ne produisent une musique angélique en accord avec les concerts des chérubins, à l&#x27;oeil plein de jeunesse. Telle est l&#x27;harmonie qui se révèle aux âmes immortelles: mais tant que notre âme est enclose dans cette grossière enveloppe d&#x27;une argile périssable, nous sommes incapables de l&#x27;entendre. (Entrent les musiciens.)--Allons, éveillez Diane par un hymne; pénétrez des sons les plus mélodieux l&#x27;oreille de votre maîtresse, et entraînez-la vers sa demeure par le charme de la musique.</p>
+<p>JESSICA.--Jamais je ne suis gaie quand j&#x27;entends une musique agréable.</p>
+<p>LORENZO.--La raison en est que vos esprits sont attentifs; car voyez un sauvage et folâtre troupeau, une bande de jeunes étalons qui n&#x27;ont point encore senti la main de l&#x27;homme, bondissant avec folie, et faisant retentir leurs voix par de bruyants hennissements, effet de l&#x27;ardeur de leur sang; si par hasard ils viennent à entendre le son d&#x27;une trompette, ou que leurs oreilles soient frappées de quelque mélodie, vous les verrez aussitôt s&#x27;arrêter tout court, et leurs yeux farouches prendre un regard adouci, par la douce puissance de la musique. Voilà pourquoi les poëtes ont prétendu qu&#x27;Orphée attirait les arbres, les rochers et les fleuves, parce qu&#x27;il n&#x27;est rien dans la nature de si insensible, de si dur, de si furieux, dont la musique ne change pour quelques instants le caractère; l&#x27;homme qui n&#x27;a en lui-même aucune musique, et qui n&#x27;est pas ému par le doux accord des sons, est propre aux trahisons, aux perfidies, aux rapines; les mouvements de son âme sont mornes comme la nuit, et ses penchants ténébreux comme l&#x27;Érèbe; ne vous fiez point à un tel homme.--Écoutons la musique.</p>
+<p>(Entrent Portia, Nérissa, à quelque distance.)</p>
+<p>PORTIA.--Cette lumière que nous voyons, brûle dans ma salle. Que ce petit flambeau jette loin ses rayons! C&#x27;est ainsi qu&#x27;une belle action reluit dans un monde corrompu.</p>
+<p>NÉRISSA.--Quand la lune brillait, nous n&#x27;apercevions pas ce flambeau.</p>
+<p>PORTIA.--Ainsi une petite gloire est obscurcie par une plus grande. Le délégué du pouvoir jette autant d&#x27;éclat qu&#x27;un roi jusqu&#x27;à ce que le roi paraisse. Alors sa pompe va se perdre comme un ruisseau dans l&#x27;immensité des mers.--De la musique? Écoutons.</p>
+<p>NÉRISSA.--Ce sont vos musiciens, madame; cela vient de la maison.</p>
+<p>PORTIA.--Je le vois; il n&#x27;y a rien de bon que par certains rapprochements. Cette musique me semble beaucoup plus douce que pendant le jour.</p>
+<p>NÉRISSA.--Madame, c&#x27;est le silence qui lui prête ce charme.</p>
+<p>PORTIA.--Le corbeau a d&#x27;aussi doux sons que l&#x27;alouette, pour qui ne fait pas attention à leur voix; et je crois que si le rossignol chantait pendant le jour au milieu des cris aigus des canards, il ne passerait pas pour meilleur musicien que le roitelet. Combien de choses doivent à l&#x27;à-propos les justes éloges qu&#x27;elles obtiennent et leur véritable perfection! Silence, paix! la lune dort avec Endymion, et ne voudrait pas être réveillée.</p>
+<p>(La musique cesse.)</p>
+<p>LORENZO.--C&#x27;est la voix de Portia, ou je suis bien trompé.</p>
+<p>PORTIA.--Il m&#x27;a reconnue, comme l&#x27;aveugle reconnaît le coucou, à sa mauvaise voix.</p>
+<p>LORENZO.--Ma chère dame, soyez la bienvenue chez vous.</p>
+<p>PORTIA.--Nous avons employé le temps à prier Dieu pour nos époux. Nous espérons que c&#x27;est avec succès et que nos paroles leur auront été de quelque avantage. Sont-ils de retour?</p>
+<p>LORENZO.--Pas encore, madame; mais il vient d&#x27;arriver un messager pour les annoncer.</p>
+<p>PORTIA.--Entrez, Nérissa; recommandez à mes domestiques de ne point parler du tout de l&#x27;absence que nous avons faite. N&#x27;en parlez pas non plus, Lorenzo, ni vous, Jessica.</p>
+<p>(On entend une fanfare.)</p>
+<p>LORENZO.--Votre mari n&#x27;est pas loin, j&#x27;entends sa trompette.--Nous ne sommes pas des rapporteurs, madame; ne craignez rien.</p>
+<p>PORTIA.--Cette nuit ressemble au jour, mais au jour malade; elle est un peu plus pâle que lui. C&#x27;est le jour tel qu&#x27;il est lorsque le soleil se cache.</p>
+<p>(Entrent Bassanio, Antonio, Gratiano et leur suite.)</p>
+<p>BASSANIO, à Portia.--Nous aurions le jour en même temps que les antipodes, si vous vous promeniez en l&#x27;absence du soleil.</p>
+<p>PORTIA.--Si j&#x27;éclaire, que ce ne soit pas comme l&#x27;inconstant éclair[15], car une femme légère rend pesant le pouvoir d&#x27;un mari, et puisse n&#x27;être jamais ainsi pour moi celui de Bassanio! mais Dieu dispose de tout. Soyez le bienvenu chez vous, seigneur.</p>
+<p>[Note 15:</p>
+<p>Let me give light, but let me not be light:</p>
+<p>«Que je donne de la lumière (light), mais que je ne sois point légère (light).» Jeu de mots familier à Shakspeare et aux auteurs de son temps, et qu&#x27;il a fallu remplacer par un équivalent pour donner un sens à ce qui suit.]</p>
+<p>BASSANIO.--Je vous rends grâces, madame. Faites bon accueil à mon ami: c&#x27;est Antonio, c&#x27;est l&#x27;homme à qui j&#x27;ai tant d&#x27;obligations.</p>
+<p>PORTIA.--Vous lui avez dans tous les sens, en effet, de grandes obligations, car, à ce que j&#x27;apprends, il en avait contracté pour vous de bien considérables.</p>
+<p>ANTONIO.--Aucune qu&#x27;il n&#x27;ait bien acquittée.</p>
+<p>PORTIA.--Seigneur, vous êtes le très-bienvenu dans notre maison. Je veux vous le prouver autrement que par des paroles; c&#x27;est pourquoi j&#x27;abrège les discours de politesse.</p>
+<p>GRATIANO, à Nérissa, qui lui parlait à part.--Par cette lune, je vous proteste que vous me faites injure. En honneur, je l&#x27;ai donnée au clerc du juge. Quant à moi, mon amour, puisque vous prenez la chose si fort à coeur, je voudrais que celui qui l&#x27;a fût eunuque.</p>
+<p>PORTIA.--Une querelle! Comment? déjà? De quoi s&#x27;agit-il?</p>
+<p>GRATIANO.--D&#x27;un anneau d&#x27;or, d&#x27;une méchante bague qu&#x27;elle m&#x27;a donnée, avec une devise, de par l&#x27;univers, de la force de celles que les couteliers mettent sur les couteaux: «Aimez-moi, et ne m&#x27;abandonnez pas.»</p>
+<p>NÉRISSA.--Que parlez-vous de sa devise ou de sa valeur? Vous m&#x27;avez juré, lorsque je vous la donnai, de la garder jusqu&#x27;à votre dernière heure, et de l&#x27;emporter avec vous dans le tombeau. Quand ce n&#x27;eût pas été en ma considération, au moins par respect pour vos ardentes protestations, vous auriez dû la conserver. Il l&#x27;a donnée au clerc de l&#x27;avocat! Mais je sais bien, moi, que ce clerc qui l&#x27;a reçue n&#x27;aura jamais de poil au menton.</p>
+<p>GRATIANO.--Il en aura, s&#x27;il vit, pour devenir homme.</p>
+<p>NÉRISSA.--Dites, si une femme vit assez longtemps pour devenir homme.</p>
+<p>GRATIANO.--Par cette main, je te jure que je l&#x27;ai donnée, à un jeune homme, une espèce d&#x27;enfant, un chétif petit garçon pas plus grand que toi, le clerc du juge, un petit jaseur, qui me l&#x27;a demandée pour ses peines. En conscience, je ne pouvais pas la refuser.</p>
+<p>PORTIA.--Je vous le dirai franchement, vous êtes blâmable de vous être défait aussi légèrement du premier présent de votre femme. Un don attaché sur votre doigt par des serments, et scellé sur votre chair par la foi conjugale! J&#x27;ai donné une bague à mon bien-aimé, et je lui ai fait jurer de ne s&#x27;en jamais séparer. Le voilà; j&#x27;oserais bien répondre pour lui qu&#x27;il ne s&#x27;en défera jamais, qu&#x27;il ne l&#x27;ôterait pas de son doigt pour tous les trésors que possède le monde. En vérité, Gratiano, vous donnez à votre femme un trop cruel sujet de chagrin. Si pareille chose m&#x27;arrivait, j&#x27;en perdrais la raison.</p>
+<p>BASSANIO, à part.--D&#x27;honneur, il vaudrait mieux me couper la main gauche, et dire que j&#x27;ai perdu l&#x27;anneau à mon corps défendant.</p>
+<p>GRATIANO.--Le seigneur Bassanio a donné sa bague à l&#x27;avocat qui la lui demandait, et qui, en vérité, la méritait bien. Et alors le petit jeune homme, son clerc, qui avait eu la peine de faire quelques écritures, m&#x27;a demandé la mienne; et ni le maître ni le clerc n&#x27;ont rien voulu accepter que nos deux bagues.</p>
+<p>PORTIA.--Quelle bague avez-vous donnée, seigneur? J&#x27;espère que ce n&#x27;est pas celle que vous tenez de moi.</p>
+<p>BASSANIO.--Si j&#x27;étais capable d&#x27;ajouter un mensonge à une faute, je nierais le fait. Mais, vous le voyez, mon doigt ne porte plus la bague; je ne l&#x27;ai plus.</p>
+<p>PORTIA.--Et votre coeur perfide est également dépourvu de foi. Je jure devant le ciel que je n&#x27;entrerai pas dans votre lit que je ne revoie ma bague.</p>
+<p>NÉRISSA.--Ni moi dans le vôtre que je ne revoie la mienne.</p>
+<p>BASSANIO.--Chère Portia, si vous saviez à qui j&#x27;ai donné la bague, si vous saviez pour qui j&#x27;ai donné la bague, si vous pouviez concevoir pour quel service j&#x27;ai donné la bague, et avec quelle répugnance j&#x27;ai abandonné la bague, lorsqu&#x27;on ne voulait recevoir autre chose que la bague, vous calmeriez la vivacité de votre indignation.</p>
+<p>PORTIA.--Si vous eussiez connu la valeur de la bague, ou la moitié du prix de celle qui vous a donné la bague, ou combien votre honneur était intéressé à conserver la bague, vous ne vous seriez jamais défait de la bague. Quel homme assez déraisonnable, s&#x27;il vous avait plu de la défendre avec quelque zèle, eût eu assez peu d&#x27;honnêteté pour exiger une chose qu&#x27;on conservait avec un respect religieux? Nérissa m&#x27;apprend ce que je dois penser. J&#x27;en mourrai; c&#x27;est quelque femme qui a ma bague.</p>
+<p>BASSANIO.--Non, madame, sur mon honneur, sur ma vie, ce n&#x27;est point une femme; c&#x27;est un honnête docteur qui n&#x27;a pas voulu recevoir de moi trois mille ducats, et qui m&#x27;a demandé la bague. Je la lui ai refusée. J&#x27;ai eu la constance de le voir se retirer mécontent, lui qui avait défendu la vie de mon plus cher ami. Que vous dirai-je, ma douce amie? Je me suis cru obligé d&#x27;envoyer sur ses pas: j&#x27;étais assiégé par les remords et la courtoisie; je ne voulais pas laisser sur mon honneur la tache d&#x27;une si noire ingratitude. Pardonnez-moi, chère épouse; j&#x27;en prends à témoin ces sacrés flambeaux de la nuit; je suis convaincu que, si vous vous y fussiez trouvée, vous m&#x27;auriez demandé la bague pour la donner au docteur.</p>
+<p>PORTIA.--Ne laissez pas ce docteur approcher de ma maison: puisqu&#x27;il possède le bijou que je chérissais, et que vous aviez juré de garder pour l&#x27;amour de moi, je deviendrai aussi libérale que vous. Je ne lui refuserai rien de ce qui est en ma puissance; non, ni ma personne, ni le lit de mon époux. Je saurai le reconnaître, j&#x27;en suis sûre; ne vous absentez pas une seule nuit; veillez sur moi comme un Argus; si vous y manquez, si vous me laissez seule, par mon honneur, qui m&#x27;appartient encore, ce docteur sera mon compagnon de lit!</p>
+<p>NÉRISSA.--Et son clerc le mien; ainsi prenez bien garde de m&#x27;abandonner à moi-même.</p>
+<p>GRATIANO.--Fort bien; faites ce que vous voudrez, mais que je ne l&#x27;y trouve pas, car je gâterais la plume du jeune clerc.</p>
+<p>ANTONIO.--Je suis le malheureux sujet de ces querelles.</p>
+<p>PORTIA.--Ne vous en chagrinez pas, seigneur; vous n&#x27;en êtes pas moins le bienvenu.</p>
+<p>BASSANIO.--Portia, pardonne-moi ce tort inévitable, et en présence de tous mes amis, je te jure par tes beaux yeux, où je me vois moi-même...</p>
+<p>PORTIA.--Entendez-vous? il se voit double dans mes deux yeux; un Bassanio dans chacun.--Allons, jurez sur la foi d&#x27;un homme double; ce sera un serment bien propre à inspirer la confiance.</p>
+<p>BASSANIO.--Non, mais écoute-moi. Pardonne-moi cette faute, et je jure sur mon âme de ne jamais violer aucun des serments que je t&#x27;aurai faits.</p>
+<p>ANTONIO, à Portia.--J&#x27;ai une fois engagé mon corps pour la fortune de mon ami; j&#x27;étais perdu sans le secours de celui qui a la bague: j&#x27;ose m&#x27;engager encore une fois, et répondre sur mon âme que votre époux ne violera jamais volontairement sa foi.</p>
+<p>PORTIA.--Servez-lui donc de caution! donnez-lui cette autre bague, et recommandez-lui de la garder mieux que la première.</p>
+<p>ANTONIO.--Tenez, seigneur Bassanio, jurez de garder cette bague.</p>
+<p>BASSANIO.--Par le ciel! c&#x27;est celle que j&#x27;ai donnée au docteur.</p>
+<p>PORTIA.--Je la tiens de lui. Pardonnez-moi, Bassanio; pour cette bague, le docteur a passé la nuit avec moi.</p>
+<p>NÉRISSA.--Excusez-moi aussi, mon aimable Gratiano; ce chétif petit garçon, le clerc du docteur, en retour de cet anneau, a couché avec moi la nuit dernière.</p>
+<p>GRATIANO.--Vraiment, c&#x27;est comme si l&#x27;on raccommodait les grands chemins en été, où ils n&#x27;en ont pas besoin. Quoi! serions-nous déjà cocus avant de mériter de l&#x27;être?</p>
+<p>PORTIA.--Allons, pas de grossièretés.--Vous êtes tous confondus. Prenez cette lettre; lisez-la à votre loisir: elle vient de Padoue, de Bellario; vous y apprendrez que Portia était le docteur, et Nérissa son clerc. Lorenzo vous attestera que je suis partie d&#x27;ici presque aussitôt que vous. Je ne suis même pas encore rentrée chez moi.--Antonio, vous êtes le bienvenu. J&#x27;ai en réserve pour vous de meilleures nouvelles que vous n&#x27;en attendez. Ouvrez promptement cette lettre; vous y verrez que trois de vos vaisseaux, richement chargés, viennent d&#x27;arriver à bon port. Vous ne saurez pas par quel étrange événement cette lettre m&#x27;est tombée dans les mains.</p>
+<p>(Elle lui donne la lettre.)</p>
+<p>ANTONIO.--Je demeure muet.</p>
+<p>BASSANIO.--Vous étiez le docteur, et je ne vous ai pas reconnue?</p>
+<p>GRATIANO.--Vous étiez donc le clerc qui doit me faire cocu?</p>
+<p>NÉRISSA.--Oui, mais le clerc qui ne le voudra jamais, à moins qu&#x27;il ne vive assez longtemps pour devenir homme.</p>
+<p>BASSANIO.--Aimable docteur, vous serez mon camarade de lit. En mon absence, couchez avec ma femme.</p>
+<p>ANTONIO.--Aimable dame, vous m&#x27;avez rendu la vie et de quoi vivre; car j&#x27;apprends ici avec certitude que mes vaisseaux sont arrivés à bon port.</p>
+<p>PORTIA.--Lorenzo, mon clerc a aussi quelque chose de consolant pour vous.</p>
+<p>NÉRISSA.--Oui, et je vous le donnerai sans demander de salaire. Je vous remets à vous et à Jessica un acte en bonne forme, par lequel le riche Juif vous fait donation de tout ce qu&#x27;il se trouvera posséder à sa mort.</p>
+<p>LORENZO.--Mes belles dames, vous répandez la manne sur le chemin des gens affamés.</p>
+<p>PORTIA.--Il est bientôt jour, et cependant je suis sûre que vous n&#x27;êtes pas encore pleinement satisfaits sur ces événements. Entrons; attaquez-nous de questions, et nous répondrons fidèlement à toute chose.</p>
+<p>GRATIANO.--Volontiers: la première que je demanderai sous serment à ma chère Nérissa, c&#x27;est de me dire si elle aime mieux rester sur pied jusqu&#x27;à ce soir, ou s&#x27;aller coucher à présent, qu&#x27;il est deux heures du matin. Si le jour était venu, je désirerais qu&#x27;il s&#x27;obscurcit pour me mettre au lit avec le clerc de l&#x27;avocat. Oui, tant que je vivrai, je ne m&#x27;inquiéterai de rien aussi vivement que de conserver en sûreté l&#x27;anneau de Nérissa.</p>
+<h3 class="sub">Fin du cinquième et dernier acte.</h3>
+<p class="colophon">Texte du domaine public. Édition numérique BookClassics.</p>
+</body></html>

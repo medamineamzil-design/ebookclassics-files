@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="de"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Julius Caesar — William Shakespeare</title><style>
+:root{--paper:#fbf8f1;--ink:#1f1b16;--muted:#6f6352;--accent:#9a6b2f;--rule:#e4dccb}
+@media (prefers-color-scheme:dark){:root{--paper:#16140f;--ink:#ece6d8;--muted:#a79c88;--accent:#d8a95e;--rule:#2e2a22}}
+html{background:var(--paper)}
+body{font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Libertinus Serif",Georgia,serif;color:var(--ink);
+     background:var(--paper);line-height:1.65;font-size:1.12rem;max-width:36em;margin:0 auto;padding:2.5em 1.25em 5em}
+.titlepage{text-align:center;min-height:70vh;display:flex;flex-direction:column;justify-content:center;gap:.6em;
+           border-bottom:1px solid var(--rule);margin-bottom:2.5em;padding-bottom:2.5em}
+.titlepage img{max-width:260px;width:60%;margin:0 auto 1.5em;border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+h1{font-size:2.4em;line-height:1.15;font-weight:600;margin:0;letter-spacing:-.01em}
+.author{font-style:italic;font-size:1.25em;color:var(--accent);margin:0}
+.translator{font-size:.95em;color:var(--muted);margin:0}
+nav.toc{margin:0 0 3em}
+nav.toc h2{font-size:.85em;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:left;margin:0 0 .8em}
+nav.toc ol{list-style:none;padding:0;margin:0;columns:1}
+nav.toc li{margin:.25em 0}
+nav.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent}
+nav.toc a:hover{border-color:var(--accent)}
+h2.chapter{font-size:1.45em;font-weight:600;text-align:center;margin:3.5em 0 1.6em;line-height:1.3}
+h2.chapter::before{content:"";display:block;width:3em;height:2px;background:var(--accent);margin:0 auto 1.1em}
+p{margin:0;text-indent:1.5em;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+h2.chapter + p, .titlepage + p{text-indent:0}
+h2.chapter + p::first-letter{font-size:3.1em;float:left;line-height:.85;padding:.08em .08em 0 0;color:var(--accent);font-weight:600}
+.colophon{margin-top:5em;padding-top:1.5em;border-top:1px solid var(--rule);text-align:center;color:var(--muted);font-size:.85em;text-indent:0}
+h3.sub{font-size:1em;font-weight:600;font-variant:small-caps;letter-spacing:.04em;text-align:center;margin:2.2em 0 1em}
+h3.sub + p{text-indent:0}
+@media print{h2.chapter{break-before:page}}
+</style></head><body>
+<header class="titlepage">
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjI0MDAiIHZpZXdCb3g9IjAgMCAxNjAwIDI0MDAiPgo8cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSIyNDAwIiBmaWxsPSIjMmQxZTNlIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjMwMCIgZmlsbD0iI2U4YTg3YyIgb3BhY2l0eT0iLjkyIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMmQxZTNlIiBzdHJva2Utd2lkdGg9IjEyIiBvcGFjaXR5PSIuNSIvPgo8Y2lyY2xlIGN4PSIxMTIwIiBjeT0iNTYwIiByPSIxMjAiIGZpbGw9IiMyZDFlM2UiIG9wYWNpdHk9Ii4xOCIvPgo8cmVjdCB4PSIxNjAiIHk9IjkzMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIxMCIgZmlsbD0iI2U4YTg3YyIvPgo8dGV4dCB4PSIxNjAiIHk9IjExODAiIGZvbnQtc2l6ZT0iMTUwIiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmNmVkZTQiPkp1bGl1cyBDYWVzYXI8L3RleHQ+Cjx0ZXh0IHg9IjE2MCIgeT0iMTQxNSIgZm9udC1zaXplPSI2OCIgZm9udC1zdHlsZT0iaXRhbGljIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNlOGE4N2MiPldpbGxpYW0gU2hha2VzcGVhcmU8L3RleHQ+Cjx0ZXh0IHg9IjE2MCIgeT0iMjIzMCIgZm9udC1zaXplPSI0NCIgbGV0dGVyLXNwYWNpbmc9IjE0IiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmNmVkZTQiIG9wYWNpdHk9Ii43NSI+Qk9PS0NMQVNTSUNTPC90ZXh0Pgo8L3N2Zz4=" alt="">
+<h1>Julius Caesar</h1>
+<p class="author">William Shakespeare</p>
+<p class="translator">Übersetzt von August Wilhelm von Schlegel</p>
+</header>
+<nav class="toc"><h2>Inhalt</h2><ol>
+<li><a href="#c1">Erster Aufzug</a></li>
+<li><a href="#c2">Zweiter Aufzug</a></li>
+<li><a href="#c3">Dritter Aufzug</a></li>
+<li><a href="#c4">Vierter Aufzug</a></li>
+<li><a href="#c5">Fünfter Aufzug</a></li>
+</ol></nav>
+<p>Julius Cäsar</p>
+<p>William Shakespeare</p>
+<p>Übersetzt von August Wilhelm von Schlegel</p>
+<p>Personen:</p>
+<p>Julius Cäsar</p>
+<p>Octavius Cäsar, Marcus Antonius und M.  Ämilius Lepidus, Triumvirn nach dem Tode des Julius Cäsar</p>
+<p>Cicero, Publius und Popilius Lena, Senatoren</p>
+<p>Marcus Brutus, Cassius, Casca, Trebonius, Ligarius, Decius Brutus, Metellus Cimber und Cinna, Verschworene gegen Julius Cäsar</p>
+<p>Flavius und Marullus, Tribunen</p>
+<p>Artemidorus, ein Sophist von Knidos</p>
+<p>Ein Wahrsager</p>
+<p>Cinna, ein Poet</p>
+<p>Ein anderer Poet</p>
+<p>Lucilius, Titinius, Messala, Der junge Cato und Volumnius, Freunde des Brutus und Cassius</p>
+<p>Varro, Clitus, Claudius, Strato, Lucius und Dardanius, Diener des Brutus</p>
+<p>Pindarus, Diener des Cassius</p>
+<p>Calpurnia, Gemahlin der Cäsar</p>
+<p>Portia, Gemahlin des Brutus</p>
+<p>Senatoren, Bürger, Wache, Gefolge usw.</p>
+<p>Die Szene ist einen großen Teil des Stücks hindurch zu Rom, nachher zu Sardes und bei Philippi</p>
+<h2 class="chapter" id="c1">Erster Aufzug</h2>
+<p>Erste Szene Rom.  Eine Straße</p>
+<p>Flavius, Marullus und ein Haufe von Bürgern</p>
+<p>Flavius. Packt euch nach Haus, ihr Tagediebe!  fort! Ist dies ein Feiertag!  Was?  wißt ihr nicht, Daß ihr als Handwerksleut an Werkeltagen Nicht ohn ein Zeichen der Hantierung dürft Umhergehn?--Welch&#x27; Gewerbe treibst du?  sprich!</p>
+<p>Erster Bürger. Nun, Herr, ich bin ein Zimmermann.</p>
+<p>Marullus. Wo ist dein ledern Schurzfell und dein Maß? Was machst du hier in deinen Sonntagskleidern?-- Ihr, Freund, was treibt Ihr?</p>
+<p>Zweiter Bürger. Die Wahrheit zu gestehn, Herr, gegen einen feinen Arbeiter gehalten, mache ich nur, sozusagen, Flickwerk.</p>
+<p>Marullus. Doch welch Gewerb?  Antworte gradezu.</p>
+<p>Zweiter Bürger. Ein Gewerbe, Herr, das ich mit gutem Gewissen treiben kann, wie ich hoffe.  Es besteht darin, einen schlechten Wandel zu verbessern.</p>
+<p>Marullus. Welch ein Gewerb, du Schuft?  welch ein Gewerb?</p>
+<p>Zweiter Bürger. Nein, ich bitte Euch, Herr, laßt Euch die Geduld nicht reißen. Wenn aber ja was reißt, so gebt Euch nur in meine Hand.</p>
+<p>Marullus. Was meinst du damit?  Mich in deine Hand geben, du naseweiser Bursch?</p>
+<p>Zweiter Bürger. Nun ja, Herr, damit ich Euch flicken kann.</p>
+<p>Flavius. Du bist ein Schuhflicker, nicht wahr?</p>
+<p>Zweiter Bürger. Im Ernst, Herr, ich bin ein Wundarzt für alte Schuhe: wenn&#x27;s gefährlich mit ihnen steht, so mache ich sie wieder heil.  So hübsche Leute, als jemals auf Rindsleder getreten, sind auf meiner Hände Werk einhergegangen.</p>
+<p>Flavius. Doch warum bist du in der Werkstatt nicht? Was führst du diese Leute durch die Gassen?</p>
+<p>Zweiter Bürger. Meiner Treu, Herr, um ihre Schuhe abzunutzen, damit ich wieder Arbeit kriege.  Doch im Ernst, Herr, wir machen Feiertag, um den Cäsar zu sehen und uns über seinen Triumph zu freuen.</p>
+<p>Marullus. Warum euch freun?  Was hat er wohl erobert? Was für Besiegte führt er heim nach Rom Und fesselt sie zur Zier an seinen Wagen? Ihr Blöck&#x27;!  ihr Steine!  schlimmer als gefühllos! O harte Herzen!  arge Männer Roms! Habt ihr Pompejus nicht gekannt?  Wie oft Stiegt ihr hinan auf Mauern und auf Zinnen, Auf Türme, Fenster, ja auf Feueressen, Die Kinder auf dem Arm, und saßet da Den lieben langen Tag, geduldig wartend, Bis durch die Straßen Roms Pompejus zöge? Und saht ihr seinen Wagen nur von fern, Erhobt ihr nicht ein allgemeines Jauchzen, So daß die Tiber bebt&#x27; in ihrem Bett, Wenn sie des Lärmes Widerhall vernahm An ihren hohlen Ufern? Und legt ihr nun die Feierkleider an? Und spart ihr nun euch einen Festtag aus? Und streut ihr nun ihm Blumen auf den Weg, Der siegprangt über des Pompejus Blut? Hinweg! In eure Häuser lauft, fallt auf die Knie Und fleht die Götter an, die Not zu wenden, Die über diesen Undank kommen muß!</p>
+<p>Flavius. Geht, geht, ihr guten Bürger!  und versammelt Für dies Vergehen eure armen Brüder; Führt sie zur Tiber, weinet eure Tränen Ins Flußbett, bis ihr Strom, wo er am flachsten, Die höchsten ihrer Uferhöhen küßt. (Die Bürger ab.) Sieh, wie die Schlacken ihres Innern schmelzen! Sie schwinden weg, verstummt in ihrer Schuld. Geht Ihr den Weg, hinab zum Kapitol; Hierhin will ich.  Entkleidet dort die Bilder, Seht Ihr mit Ehrenzeichen sie geschmückt.</p>
+<p>Marullus. Ist das erlaubt? Ihr wißt, es ist das Luperkalienfest.</p>
+<p>Flavius. Es tut nichts: laßt mit den Trophäen Cäsars Kein Bild behängt sein.  Ich will nun umher Und will den Pöbel von den Gassen treiben. Das tut auch Ihr, wo Ihr gedrängt sie seht. Dies wachsende Gefieder, ausgerupft Der Schwinge Cäsars, wird den Flug ihm hemmen, Der, über Menschenblicke hoch hinaus, Uns alle sonst in knechtscher Furcht erhielte.  (Beide ab.)</p>
+<p>Zweite Szene Ein öffentlicher Platz</p>
+<p>In einem feierlichen Aufzuge mit Musik kommen Cäsar, Antonius, zum Wettlauf gerüstet, Calpurnia, Portia, Decius, Cicero, Brutus, Cassius und Casca; hinter ihnen ein großes Gedränge, darunter ein Wahrsager</p>
+<p>Cäsar. Calpurnia!</p>
+<p>Casca. Still da!  Cäsar spricht.</p>
+<p>(Die Musik hält inne.)</p>
+<p>Cäsar. Calpurnia!</p>
+<p>Calpurnia. Hier, mein Gemahl!</p>
+<p>Cäsar. Stellt dem Antonius grad Euch in den Weg Wenn er zur Wette läuft.--Antonius!</p>
+<p>Antonius. Erlauchter Cäsar?</p>
+<p>Cäsar. Vergeßt, Antonius, nicht, in Eurer Eil Calpurnia zu berühren; denn es ist Ein alter Glaube, unfruchtbare Weiber, Berührt bei diesem heilgen Wettelauf, Entladen sich des Fluchs.</p>
+<p>Antonius. Ich werd es merken. Wenn Cäsar sagt: &quot;Tu das&quot;, so ist&#x27;s vollbracht.</p>
+<p>Cäsar. Beginnt; laßt nichts von den Gebräuchen aus.</p>
+<p>(Musik.)</p>
+<p>Wahrsager. Cäsar!</p>
+<p>Cäsar. He, wer ruft?</p>
+<p>Casca. Es schweige jeder Lärm: noch einmal, still!</p>
+<p>(Die Musik hält inne.)</p>
+<p>Cäsar. Wer ist es im Gedräng, der mich begehrt? Durch die Musik dringt gellend eine Stimme, Die &quot;Cäsar!&quot; ruft.  Spricht Cäsar neigt sein Ohr.</p>
+<p>Wahrsager. Nimm, vor des Märzen Idus dich in acht.</p>
+<p>Cäsar. Wer ist der Mann?</p>
+<p>Brutus. Ein Wahrsager; er warnt Euch vor des Märzen Idus.</p>
+<p>Cäsar. Führt ihn mir vor, laßt sein Gesicht mich sehn.</p>
+<p>Casca. Komm aus dem Haufen, Mensch; tritt vor den Cäsar.</p>
+<p>Cäsar. Was sagst du nun zu mir?  Sprich noch einmal.</p>
+<p>Wahrsager. Nimm vor des Märzen Idus dich in acht.</p>
+<p>Cäsar. Er ist ein Träumer; laßt ihn gehn, und kommt.</p>
+<p>(Ein Marsch.  Alle bis auf Brutus und Cassius gehn ab.)</p>
+<p>Cassius. Wollt Ihr den Hergang bei dem Wettlauf sehn?</p>
+<p>Brutus. Ich nicht.</p>
+<p>Cassius. Ich bitt Euch, tut&#x27;s.</p>
+<p>Brutus. Ich hab am Spiel nicht Lust, mir fehlt ein Teil Vom muntern Geiste des Antonius; Doch muß ich Euch in Eurem Wunsch nicht hindern. Ich laß Euch, Cassius.</p>
+<p>Cassius. Brutus, seit kurzem geb ich acht auf Euch; Ich find in Eurem Blick die Freundlichkeit, Die Liebe nicht, an die Ihr mich gewöhnt. Zu unwirsch und zu fremd begegnet Ihr Dem Freunde, der Euch liebt.</p>
+<p>Brutus. Mein Cassius, Betrügt Euch nicht.  Hab ich den Blick verschleiert, So kehrt die Unruh meiner Mienen sich Nur gegen mich allein.  Seit kurzem quälen Mich Regungen von streitender Natur, Gedanken, einzig für mich selbst geschickt, Die Schatten wohl auf mein Betragen werfen. Doch laßt dies meine Freunde nicht betrüben (Wovon Ihr einer sein müßt, Cassius), Noch mein achtloses Wesen anders deuten, Als daß, mit sich im Krieg, der arme Brutus Den andern Liebe kund zu tun vergißt.</p>
+<p>Cassius. Darin, Brutus, mißverstand ich Euren Unmut. Deshalb begrub hier diese Brust Entwürfe Von großem Werte, würdige Gedanken. Sagt, Brutus, könnt Ihr Euer Antlitz sehn?</p>
+<p>Brutus. Nein, Cassius, denn das Auge sieht sich nicht, Als nur im Widerschein, durch andre Dinge.</p>
+<p>Cassius. So ist&#x27;s; Und man beklagt sich sehr darüber, Brutus, Daß Ihr nicht solche Spiegel habt, die Euren Verborgnen Wert Euch in die Augen rückten, Auf daß Ihr Euren Schatten säht.  Ich hörte, Wie viele von den ersten Männern Roms (Nur Cäsarn nehm ich aus), von Brutus redend, Und seufzend unter dieser Zeiten Joch, Dem edlen Brutus offne Augen wünschten.</p>
+<p>Brutus. Auf welche Wege, Cassius, lockt Ihr mich, Daß Ihr mich heißt in meinem Innern suchen, Was doch nicht in mir ist?</p>
+<p>Cassius. Drum, lieber Brutus, schickt Euch an zu hören. Und weil Ihr wißt, Ihr könnt Euch selbst so gut Nicht sehn als durch den Widerschein, so will Ich, Euer Spiegel, Euch bescheidentlich Von Euch entdecken, was Ihr noch nicht wißt. Und denkt von mir kein Arges, werter Brutus. Wär ich ein Lacher aus der Menge; pflegt ich Mein Herz durch Alltagsschwüre jedem neuen Beteurer auszubieten; wenn Ihr wißt, Daß ich die Menschen streichle, fest sie herze Und dann sie lästre; oder wenn Ihr wißt, Daß ich beim Schmaus mich mit der ganzen Schar Verbrüdern mag, dann hütet Euch vor mir.</p>
+<p>(Trompeten und Freudengeschrei.)</p>
+<p>Brutus. Was heißt dies Jauchzen?  Wie ich fürchte, wählt Das Volk zum König Cäsarn.</p>
+<p>Cassius. Fürchtet Ihr&#x27;s? Das hieße ja, Ihr möchtet es nicht gern.</p>
+<p>Brutus. Nein, Cassius, nicht gern; doch lieb ich ihn. Doch warum haltet Ihr mich hier so lange? Was ist es, das Ihr mir vertrauen möchtet? Ist&#x27;s etwas, dienlich zum gemeinen Wohl, Stellt Ehre vor ein Auge, Tod vors andre, Und beide seh ich gleiches Mutes an. Die Götter sein mir günstig, wie ich mehr Die Ehre lieb, als vor dem Tod mich scheue.</p>
+<p>Cassius. Ich weiß, daß diese Tugend in Euch wohnt, Sogut ich Euer äußres Ansehn kenne. Wohl!  Ehre ist der Inhalt meiner Rede. Ich weiß es nicht, wie Ihr und andre Menschen Von diesem Leben denkt; mir, für mich selbst, Wär es so lieb, nicht da sein, als zu leben In Furcht vor einem Wesen wie ich selbst. Ich kam wie Cäsar frei zur Welt, so Ihr; Wir nährten uns sogut, wir können beide Sogut wie er des Winters Frost ertragen. Denn einst, an einem rauhen stürmschen Tage, Als wild die Tiber an ihr Ufer tobte, Sprach Cäsar zu mir: &quot;Wagst du, Cassius, nun Mit mir zu springen in die zornge Flut Und bis dorthin zu schwimmen?&quot;--Auf dies Wort, Bekleidet, wie ich war, stürzt ich hinein Und hieß ihn folgen; wirklich tat er&#x27;s auch. Der Strom brüllt&#x27; auf uns ein; wir schlugen ihn Mit wackern Sehnen, warfen ihn beiseit Und hemmten ihn mit einer Brust des Trotzes. Doch eh wir das gewählte Ziel erreicht, Rief Cäsar: &quot;Hilf mir, Cassius!  ich sinke.&quot; Ich, wie Äneas, unser großer Ahn, Aus Trojas Flammen einst auf seinen Schultern Den alten Vater trug, so aus den Wellen Zog ich den müden Cäsar.--Und der Mann Ist nun zum Gott erhöht, und Cassius ist Ein arm Geschöpf und muß den Rücken beugen, Nickt Cäsar nur nachlässig gegen ihn. Als er in Spanien war, hatt er ein Fieber, Und wenn der Schaur ihn ankam, merkt ich wohl Sein Beben: ja, er bebte, dieser Gott! Das feige Blut der Lippen nahm die Flucht, Sein Auge, dessen Blick die Welt bedräut, Verlor den Glanz, und ächzen hört ich ihn. Ja, dieser Mund, der horchen hieß die Römer Und in ihr Buch einzeichnen seine Reden, Ach, rief: &quot;Titinius!  gib mir zu trinken!&quot; Wie&#x27;n krankes Mädchen.  Götter!  ich erstaune, Wie nur ein Mann so schwächlicher Natur Der stolzen Welt den Vorsprung abgewann, Und nahm die Palm allein.</p>
+<p>(Jubelgeschrei.  Trompeten.)</p>
+<p>Brutus. Ein neues Jauchzen! Ich glaube, dieser Beifall gilt die Ehren, Die man auf Cäsars Haupt von neuem häuft.</p>
+<p>Cassius. Ja, er beschreitet, Freund, die enge Welt Wie ein Colossus, und wir kleinen Leute, Wir wandeln unter seinen Riesenbeinen, Und schaun umher nach einem schnöden Grab. Der Mensch ist manchmal seines Schicksals Meister: Nicht durch die Schuld der Sterne, lieber Brutus, Durch eigne Schuld nur sind wir Schwächlinge. Brutus und Cäsar--was steckt doch in dem Cäsar, Daß man den Namen mehr als Euren spräche? Schreibt sie zusammen: ganz so schön ist Eurer; Sprecht sie: er steht den Lippen ganz so wohl; Wägt sie: er ist so schwer; beschwört mit ihnen: Brutus ruft Geister auf so schnell wie Cäsar. (Jubelgeschrei.) Nun denn, im Namen der gesamten Götter, Mit was für Speise nährt der Cäsar sich, Daß er so groß ward?  Zeit, du bist entehrt. Rom, du verlorst die Kraft des Heldenstamms. Welch Alter schwand wohl seit der großen Flut, Das nicht geglänzt durch mehr als einen Mann? Wer sagte jemals, wenn er sprach von Rom, Es faß ihr weiter Kreis nur einen Mann? Nun ist in Rom fürwahr des Raums genug: Find&#x27;t man darin nur einen einzgen Mann. O, beide hörten wir von unsern Vätern: &quot;Einst gab es einen Brutus, der so gern Des alten Teufels Hof als einen König Geduldet hätt in Rom.&quot;</p>
+<p>Brutus. Daß Ihr mich liebt, bezweifl&#x27; ich keineswegs; Worauf Ihr bei mir dringt, das ahn ich wohl; Was ich davon gedacht und von den Zeiten, Erklär ich Euch in Zukunft.  Doch für jetzt Möcht ich, wenn ich Euch freundlich bitten darf, Nicht mehr getrieben sein.  Was ihr gesagt, Will ich erwägen; was Ihr habt zu sagen, Mit Ruhe hören und gelegne Zeit, So hohe Dinge zu besprechen, finden. Bis dahin, edler Freund, beherzigt dies: Brutus wär lieber eines Dorfs Bewohner, Als sich zu zählen zu den Söhnen Roms In solchem harten Stand, wie diese Zeit Uns aufzulegen droht.</p>
+<p>Cassius. Ich bin erfreut, daß meine schwachen Worte Dem Brutus so viel Funken nur entlockt.</p>
+<p>Cäsar und sein Zug kommen zurück.</p>
+<p>Brutus. Das Spiel ist aus, und Cäsar kehrt zurück.</p>
+<p>Cassius. Wenn sie uns nahn, zupft Casca nur am Ärmel, Er wird nach seiner mürr&#x27;schen Art Euch sagen, Was von Belang sich heut ereignet hat.</p>
+<p>Brutus. Ich will es tun.  Doch seht nur, Cassius, Auf Cäsars Stirne glüht der zornge Fleck, Die andern sehn gescholtnen Dienern gleich. Calpurnias Wang ist blaß, und Cicero Blickt mit so feurigen und roten Augen, Wie wir ihn wohl im Kapitol gesehn, Wenn Senatoren ihn im Rat bestritten.</p>
+<p>Cassius. Casca wird uns berichten, was es gibt.</p>
+<p>Cäsar. Antonius!</p>
+<p>Antonius. Cäsar?</p>
+<p>Cäsar. Laßt wohlbeleibte Männer um mich sein, Mit glatten Köpfen, und die nachts gut schlafen. Der Cassius dort hat einen hohlen Blick; Er denkt zuviel: die Leute sind gefährlich.</p>
+<p>Antonius. O fürchtet den nicht; er ist nicht gefährlich, Er ist ein edler Mann und wohlgesinnt.</p>
+<p>Cäsar. Wär er nur fetter!--Zwar ich fürcht ihn nicht; Doch wäre Furcht nicht meinem Namen fremd, Ich kenne niemand, den ich eher miede Als diesen hagern Cassius.  Er liest viel; Er ist ein großer Prüfer und durchschaut Das Tun der Menschen ganz; er liebt kein Spiel, Wie du, Antonius, hört nicht Musik; Er lächelt selten, und auf solche Weise, Als spott er sein, verachte seinen Geist, Den irgend was zum Lächeln bringen konnte. Und solche Männer haben nimmer Ruh, Solang die jemand größer sehn als sich; Das ist es, was sie so gefährlich macht. Ich sag dir eher, was zu fürchten stände, Als was ich fürchte; ich bin stets doch Cäsar. Komm mir zur Rechten, denn dies Ohr ist taub, Und sag mir wahrhaft, was du von ihm denkst.</p>
+<p>(Cäsar und sein Gefolge ab; Casca bleibt zurück.)</p>
+<p>Casca. Ihr zogt am Mantel mich; wollt Ihr mich sprechen?</p>
+<p>Brutus. Ja, Casca, sag uns, was sich heut begeben, Daß Cäsar finster sieht.</p>
+<p>Casca. Ihr wart ja bei ihm; wart Ihr nicht?</p>
+<p>Brutus. Dann fragt ich Casca nicht, was sich begeben.</p>
+<p>Casca. Nun, man bot ihm eine Krone an, und als man sie ihm anbot, schob er sie mit dem Rücken der Hand zurück: so--; und da erhob das Volk ein Jauchzen.</p>
+<p>Brutus. Worüber jauchzten sie zum andern Mal?</p>
+<p>Casca. Nun, auch darüber.</p>
+<p>Cassius. Sie jauchzten dreimal ja; warum zuletzt?</p>
+<p>Casca. Nun, auch darüber.</p>
+<p>Brutus. Wurd ihm die Krone dreimal angeboten?</p>
+<p>Casca. Ei, meiner Treu, wurde sie&#x27;s, und er schob sie dreimal zurück; jedesmal sachter als das vorige Mal; und bei jedem Zurückschieben jauchzten meine ehrlichen alten Freunde.</p>
+<p>Cassius. Wer bot ihm die Krone an?</p>
+<p>Casca. Je nun, Antonius.</p>
+<p>Brutus. Sagt uns die Art und Weise, lieber Casca.</p>
+<p>Casca. Ich kann mich ebensogut hängen lassen, als euch die Art und Weise erzählen: es waren nichts als Possen, ich gab nicht acht darauf.  Ich sah den Mark Anton ihm eine Krone anbieten--doch eigentlich war&#x27;s keine rechte Krone, es war so &#x27;ne Art von Stirnband--und wie ich euch sagte, er schob sie einmal beiseite; aber bei alledem hätte er sie nach meinem Bedünken gern gehabt.  Dann bot er sie ihm nochmals an, und dann schob er sie nochmals zurück; aber nach meinem Bedünken kam es ihm hart an, die Finger wieder davonzutun.  Und dann bot er sie ihm zum dritten Male an; er schob sie zum dritten Male zurück; und jedesmal, daß er sie ausschlug, kreischte das Gesindel und klatscht in die rauhen Fäuste und warfen die schweißigen Nachtmützen in die Höhe und gaben eine solche Last stinkenden Atems von sich, weil Cäsar die Krone ausschlug, daß Cäsar fast daran erstickt wäre; denn er ward ohnmächtig und fiel nieder, und ich für mein Teil wagte nicht zu lachen, aus Furcht, ich möchte den Mund auftun und die böse Luft einatmen.</p>
+<p>Cassius. Still doch!  ich bitt Euch.  Wie?  er fiel in Ohnmacht?</p>
+<p>Casca. Er fiel auf dem Marktplatze nieder, hatte Schaum vor dem Munde und war sprachlos.</p>
+<p>Brutus. Das mag wohl sein; er hat die fallende Sucht.</p>
+<p>Cassius. Nein, Cäsar hat sie nicht.  Doch Ihr und ich Und unsrer wackrer Casca, wir haben sie.</p>
+<p>Casca. Ich weiß nicht, was Ihr damit meint; aber ich bin gewiß, Cäsar fiel nieder.  Wenn das Lumpenvolk ihn nicht beklatschte und auszischte, je nachdem er ihnen gefiel oder mißfiel, wie sie es mit den Komödianten auf dem Theater machen, so bin ich kein ehrlicher Kerl.</p>
+<p>Brutus. Was sagt&#x27; er, als er zu sich selber kam?</p>
+<p>Casca. Ei nun, eh er hinfiel, als er merkte, daß der gemeine Haufe sich freute, daß er die Krone ausschlug, so riß er euch sein Wams auf und bot ihnen seinen Hals zum Abschneiden--triebe ich irgend &#x27;ne Hantierung, so will ich mit den Schuften zur Hölle fahren, wo ich ihn nicht beim Wort genommen hätte--und damit fiel er hin.  Als er wieder zu sich selbst kam, sagte er, wenn er irgendwas Unrechtes getan oder gesagt hätte, so bäte er Ihre Edeln, es seinem Übel beizumessen.  Drei oder vier Weibsbilder, die bei mir standen, riefen--&quot;Ach, die gute Seele!&quot; und vergaben ihm von ganzem Herzen.  Doch das gilt freilich nicht viel; wenn er ihre Mütter totgeschlagen hätte, sie hätten&#x27;s ebensogut getan.</p>
+<p>Brutus. Und darauf ging er so verdrießlich weg?</p>
+<p>Casca. Ja.</p>
+<p>Cassius. Hat Cicero etwas gesagt?</p>
+<p>Casca. Ja, er sprach griechisch.</p>
+<p>Cassius. Was wollt er denn?</p>
+<p>Casca. Ja, wenn ich Euch das sage, so will ich Euch niemals wieder vor die Augen kommen.  Aber die ihn verstanden, lächelten einander zu und schüttelten die Köpfe.  Doch was mich anlangt, mir war es griechisch. Ich kann Euch noch mehr Neues erzählen: dem Marullus und Flavius ist das Maul gestopft, weil sie Binden von Cäsars Bildsäulen gerissen haben.  Lebt wohl.  Es gab noch mehr Possen, wenn ich mich nur darauf besinnen könnte.</p>
+<p>Cassius. Wollt Ihr heute abend bei mir speisen, Casca?</p>
+<p>Casca. Nein, ich bin schon versagt.</p>
+<p>Cassius. Wollt Ihr morgen bei mir zu Mittag speisen?</p>
+<p>Casca. Ja, wenn ich lebe und Ihr bei Eurem Sinne bleibt und Eure Mahlzeit das Essen verlohnt.</p>
+<p>Cassius. Gut, ich erwart Euch.</p>
+<p>Casca. Tut das; lebt beide wohl!  (Ab.)</p>
+<p>Brutus. Was für ein plumper Bursch ist dies geworden? Er war voll Feuer als mein Schulgenoß.</p>
+<p>Cassius. Das ist er jetzt noch bei der Ausführung Von jedem kühnen, edlen Unternehmen, Stellt er sich schon so unbeholfen an. Dies rauhe Wesen dient gesundem Witz Bei ihm zur Brüh; es stärkt der Leute Magen, Eßlustig seine Reden zu verdaun.</p>
+<p>Brutus. So ist es auch.  Für jetzt verlaß ich Euch, Und morgen, wenn Ihr wünscht mit mir zu sprechen, Komm ich zu Euch ins Haus; doch wenn Ihr wollt, So kommt zu mir, und ich will Euch erwarten.</p>
+<p>Cassius. Das will ich; bis dahin gedenkt der Welt. (Brutus ab.) Gut, Brutus, du bist edel; doch ich sehe, Dein löbliches Gemüt kann seiner Art Entwendet werden.  Darum ziemt es sich, Daß Edle sich zu Edlen immer halten. Wer ist so fest, den nichts verführen kann? Cäsar ist feind mir, und er liebt den Brutus, Doch wär ich Brutus nun, er Cassius, Er sollte mich nicht lenken.  Diese Nacht Werf ich ihm Zettel von verschiednen Händen, Als ob sie von verschiednen Bürgern kämen, Durchs Fenster, alle voll der großen Meinung, Die Rom von seinem Namen hegt, wo dunkel Auf Cäsars Ehrsucht soll gedeutet sein. Dann denke Cäsar seines nahen Falles; Wir stürzen bald ihn, oder dulden alles.  (Ab.)</p>
+<p>Dritte Szene Eine Straße.  Ungewitter</p>
+<p>Casca, mit gezognem Schwert, und Cicero kommen von verschiednen Seiten</p>
+<p>Cicero. Guten Abend, Casca!  Kommt Ihr her von Cäsar? Warum so atemlos und so verstört?</p>
+<p>Casca. Bewegt&#x27;s Euch nicht, wenn dieses Erdballs Feste Wankt wie ein schwaches Rohr?  O Cicero! Ich sah wohl Stürme, wo der Winde Schelten Den knotgen Stamm gespaltet, und ich sah Das stolze Meer anschwellen, wüten, schäumen, Als wollt es an die drohnden Wolken reichen; Doch nie bis heute nacht, noch nie bis jetzt Ging ich durch einen Feuerregen hin. Entweder ist im Himmel innrer Krieg, Wo nicht, so reizt die Welt durch Übermut Die Götter, uns Zerstörung herzusenden.</p>
+<p>Cicero. Ja, saht Ihr jemals wundervollre Dinge?</p>
+<p>Casca. Ein Sklave, den Ihr wohl von Ansehn kennt, Hob seine linke Hand empor; sie flammte Wie zwanzig Fackeln auf einmal, und doch, Die Glut nicht fühlend, blieb sie unversengt. Auch kam (seitdem steckt ich mein Schwert nicht ein) Beim Kapitol ein Löwe mir entgegen; Er gaffte stark mich an, ging mürrisch weiter Und tat mir nichts.  Auf einen Haufen hatten Wohl hundert bleiche Weiber sich gedrängt, Entstellt von Furcht; die schwuren, daß sie Männer Mit feurgen Leibern wandern auf und ab Die Straßen sahn.  Und gestern saß der Vogel Der Nacht sogar am Mittag auf dem Markte Und kreischt&#x27; und schrie.  Wenn dieser Wunderzeichen So viel zusammentreffen, sage niemand: &quot;Dies ist der Grund davon, sie sind natürlich&quot;; Denn Dinge schlimmer Deutung, glaub ich, sind&#x27;s Dem Himmelstrich, auf welchen sie sich richten.</p>
+<p>Cicero. Gewiß, die Zeit ist wunderbar gelaunt; Doch Menschen deuten oft nach ihrer Weise Die Dinge, weit entfernt vom wahren Sinn. Kommt Cäsar morgen auf das Kapitol?</p>
+<p>Casca. Ja, denn er trug es dem Antonius auf, Euch kund zu tun, er werde morgen kommen.</p>
+<p>Cicero. Schlaft wohl denn, Casca!  Dieser Aufruhr läßt Nicht draußen weilen.</p>
+<p>Casca. Cicero, lebt wohl!  (Cicero ab.)</p>
+<p>Cassius tritt auf.</p>
+<p>Cassius. Wer da?</p>
+<p>Casca. Ein Römer.</p>
+<p>Cassius. Casca, nach der Stimme.</p>
+<p>Casca. Eur Ohr ist gut.  Cassius, welch eine Nacht?</p>
+<p>Cassius. Die angenehmste Nacht für wackre Männer.</p>
+<p>Casca. Wer sah den Himmel je so zornig drohn?</p>
+<p>Cassius. Die, welche so voll Schuld die Erde sahn. Ich, für mein Teil, bin durch die Stadt gewandert, Mich unterwerfend dieser grausen Nacht, Und so entgürtet, Casca, wie Ihr seht, Hab ich die Brust dem Donnerkeil entblößt. Und wenn des Blitzes schlängelnd Blau zu öffnen Des Himmels Busen schien, bot ich mich selbst Dem Strahl des Wetters recht zum Ziele dar.</p>
+<p>Casca. Warum versucht Ihr den Himmel so? Es steht dem Menschen Furcht und Zittern an, Wenn die gewaltgen Götter solche Boten Furchtbarer Warnung, uns zu schrecken, senden.</p>
+<p>Cassius. O Casca!  Ihr seid stumpf; der Lebensfunke, Der glühen sollt in Römern, fehlt Euch, oder Ihr braucht ihn nicht.  Ihr sehet bleich und starrt, Von Furcht ergriffen und versenkt in Staunen, Des Himmels ungewohnten Grimm zu schauen. Doch wolltet Ihr den wahren Grund erwägen, Warum die Feur, die irren Geister alle, Was Tier&#x27; und Vögel macht vom Stamm entarten Und Greise faseln, Kinder prophezein; Warum all diese Dinge ihr Gesetz, Natur und angeschaffne Gaben wandeln In Mißbeschaffenheit: nun so erkennt Ihr, Der Himmel hauchte diesen Geist in sie, Daß sie der Furcht und Warnung Werkzeug würden Für irgendeinen mißbeschaffnen Zustand. Nun könnt ich, Casca, einen Mann dir nennen, Ganz ähnlich dieser schreckenvollen Nacht, Der donnert, blitzt, die Gräber öffnet, brüllt, So wie der Löwe dort im Kapitol; Ein Mann, nicht mächtiger als ich und du An Leibeskraft, doch drohend angewachsen, Und furchtbar, wie der Ausbruch dieser Gärung.</p>
+<p>Casca. &#x27;s ist Cäsar, den Ihr meint.  Nicht, Cassius?</p>
+<p>Cassius. Es sei auch, wer es sei: die Römer haben Jetzt Mark und Bein, wie ihre Ahnen hatten. Doch weh uns!  unsrer Väter Geist ist tot, Und das Gemüt der Mütter lenket uns, Denn unser Joch und Dulden zeigt uns weibisch.</p>
+<p>Casca. Ja freilich heißt&#x27;s, gewillt sei der Senat, Zum König morgen Cäsarn einzusetzen; Er soll zur See, zu Land die Krone tragen An jedem Ort, nur in Italien nicht.</p>
+<p>Cassius. Ich weiß, wohin ich diesen Dolch dann kehre; Den Cassius soll von Knechtschaft Cassius lösen. Darin, ihr Götter, macht ihr Schwache stark, Darin, ihr Götter, bändigt ihr Tyrannen; Noch felsenfeste Burg, noch ehrne Mauern, Noch dumpfe Keller, noch der Ketten Last Sind Hindernisse für des Geistes Stärke. Das Leben, dieser Erdenschranken satt, Hat stets die Macht, sich selber zu entlassen. Und weiß ich dies, so wiß auch alle Welt: Den Teil der Tyrannei, der auf mit liegt, Werf ich nach Willkür ab.</p>
+<p>Casca. Das kann auch ich. So trägt ein jeder Sklav in eigner Hand Gewalt, zu brechen die Gefangenschaft.</p>
+<p>Cassius. Warum denn wäre Cäsar ein Tyrann? Der arme Mann!  Ich weiß, er wär kein Wolf, Wenn er nicht säh, die Römer sind nur Schafe; Er wär kein Leu, wenn sie nicht Rehe wären. Wer eilig will ein mächtig Feuer machen, Nimmt schwaches Stroh zuerst; was für Gestrüpp Ist Rom, und was für Plunder, wenn es dient Zum schlechten Stoff, der einem schnöden Dinge Wie Cäsar Licht verleiht?  Doch, o mein Gram! Wo führtest du mich hin?  Ich spreche dies Vielleicht vor einem willgen Knecht; dann weiß ich, Daß ich muß Rede stehn; doch führ ich Waffen, Und mich bekümmern die Gefahren nicht.</p>
+<p>Casca. Ihr sprecht mit Casca, einem Mann, der nie Ein Ohrenbläser war.  Hier, meine Hand! Werbt nur Partei zur Abstellung der Übel, Und dieser Fuß soll Schritt mit jedem halten, Der noch soweit geht.</p>
+<p>Cassius. Ein geschloßner Handel! Nun, Casca, wißt: ich habe manche schon Der Edelmütigsten von Rom beredet, Mit mir ein Unternehmen zu bestehn Von ehrenvoll-gefährlichem Erfolg. Ich weiß, sie warten in Pompejus&#x27; Halle Jetzt eben mein; denn in der furchtbarn Nacht Kann niemand unter freiem Himmel dauern. Des Elementes Antlitz und Gestalt Ist wie das Werk beschaffen, das wir treiben: Höchst blutig, feurig und höchst fürchterlich.</p>
+<p>Cinna tritt auf.</p>
+<p>Casca. Seid still ein Weilchen, jemand kommt in Eil.</p>
+<p>Cassius. Ich hör am Gange, daß es Cinna ist; Er ist ein Freund.--Cinna, wohin so eilig?</p>
+<p>Cinna. Euch sucht ich.  Wer ist das?  Metellus Cimber?</p>
+<p>Cassius. Nein, es ist Casca, ein Verbündeter Zu unsrer Tat.  Werd ich erwartet, Cinna?</p>
+<p>Cinna. Das ist mir lieb.  Welch eine grause Nacht! Ein paar von uns sahn seltsame Gesichte.</p>
+<p>Cassius. Werd ich erwartet, sagt mir?</p>
+<p>Cinna. Ja, Ihr werdet es.  O Cassius!  könntet Ihr In unsern Bund den edlen Brutus ziehn--</p>
+<p>Cassius. Seid ruhig!  Guter Cinna, diesen Zettel, Seht, wie Ihr in des Prätors Stuhl ihn legt, Daß Brutus nur ihn finde; diesen werft Ihm in das Fenster; diesen klebt mit Wachs Ans Bild des alten Brutus.  Dies getan, Kommt zu Pompejus&#x27; Hall und trefft uns dort. Ist Decius Brutus und Trebonius da?</p>
+<p>Cinna. Ja, alle, bis auf Cimber, und der sucht In Eurem Haus Euch auf.  Gut, ich will eilen Die Zettel anzubringen, wie Ihr wünscht.</p>
+<p>Cassius. Dann stellt Euch ein bei des Pompejus&#x27; Bühne. (Cinna ab.) Kommt, Casca, laßt uns beide noch vor Tag In seinem Hause Brutus sehn.  Drei Viertel Von ihm sind unser schon; der ganze Mann Ergibt sich bei dem nächsten Angriff uns.</p>
+<p>Casca. O, er sitzt hoch in alles Volkes Herzen, Und was in uns als Frevel nur erschiene, Sein Ansehn wird es, wie der Stein der Weisen, In Tugend wandeln und in Würdigkeit.</p>
+<p>Cassius. Ihn, seinen Wert, wie sehr wir ihn bedürfen, Gabt Ihr recht wohl getroffen.  Laßt uns gehn, Es ist nach Mitternacht; wir wollen ihn Vor Tage wecken und uns sein versichern.  (Ab.)</p>
+<h2 class="chapter" id="c2">Zweiter Aufzug</h2>
+<p>Erste Szene Rom.  Der Garten des Brutus</p>
+<p>Brutus tritt auf</p>
+<p>Brutus. He, Lucius!  auf!-- Ich kann nicht aus der Höh der Sterne raten, Wie nah der Tag ist.--Lucius, hörst du nicht?-- Ich wollt, es wär mein Fehler, so zu schlafen.-- Nun, Lucius, nun!  Ich sag: erwach!  Auf, Lucius!</p>
+<p>Lucius kommt.</p>
+<p>Lucius. Herr, riefet Ihr?</p>
+<p>Brutus. Bring eine Kerze mir ins Lesezimmer, Und wenn sie brennt, so komm und ruf mich hier.</p>
+<p>Lucius. Ich will es tun, Herr.  (Ab.)</p>
+<p>Brutus. Es muß durch seinen Tod geschehn.  Ich habe Für mein Teil keinen Grund, ihn wegzustoßen, Als fürs gemeine Wohl.  Er wünscht, gekrönt zu sein; Wie seinen Sinn das ändern möchte, fragt sich. Der warme Tag ist&#x27;s, der die Natter zeugt; Das heischt mit Vorsicht gehn.  Ihn krönen?--Ja-- Und dann ist&#x27;s wahr, wir leihn ihm einen Stachel, Womit er kann nach Willkür Schaden tun. Der Größe Mißbrauch ist, wenn von der Macht Sie das Gewissen trennt; und, um von Cäsarn Die Wahrheit zu gestehn, ich sah noch nie, Daß ihn die Leidenschaften mehr beherrscht Als die Vernunft.  Doch oft bestätigt sich&#x27;s, Die Demut ist der jungen Ehrfurcht Leiter; Wer sie hinanklimmt, kehrt den Blick ihr zu; Doch hat er erst die höchste Spross&#x27; erreicht, Dann kehret er der Leiter seinen Rücken, Schaut himmelan, verschmäht die niedern Tritte, Die ihn hinaufgebracht.  Das kann auch Cäsar: Drum, eh er kann, beugt vor.  Und weil der Streit Nicht Schein gewinnt durch das, was Cäsar ist, Legt so ihn aus: das, was er ist, vergrößert, Kann dies und jenes Übermaß erreichen. Drum achtet ihn gleich einem Schlangenei, Das, ausgebrütet, giftig würde werden Wie sein Geschlecht, und würgt ihn in der Schale.</p>
+<p>Lucius kommt zurück.</p>
+<p>Lucius. Die Kerze brennt in Eurem Zimmer, Herr. Als ich nach Feuerstein im Fenster suchte, Fand ich dies Blatt, versiegelt; und ich weiß, Es war nicht da, als ich zu Bette ging.</p>
+<p>Brutus. Geh wieder in dein Bett; es ist noch Nacht. Ist morgen nicht des Märzen Idus, Knabe?</p>
+<p>Lucius. Ich weiß nicht, Herr.</p>
+<p>Brutus. Such im Kalender denn, und sag es mir.</p>
+<p>Lucius. Das will ich, Herr.  (Ab.)</p>
+<p>Brutus. Die Ausdünstungen, schwirrend in der Luft, Gewähren Licht genug, dabei zu lesen. (Er öffnet den Brief und liest.) &quot;Brutus, du schläfst.  Erwach und sieh dich selbst! Soll Rom?--Sprich, schlage, stelle her! Brutus, du schläfst.  Erwache!--&quot; Oft hat man schon dergleichen Aufgebote Mir in den Weg gestreut. &quot;Soll Rom?&quot;--So muß ich es ergänzen: &quot;Soll Rom vor einem Manne beben?&quot; Wie? Mein Ahnherr trieb einst von den Straßen Roms Tarquin hinweg, als er ein König hieß. &quot;Sprich, schlage, stelle her!&quot; Werd ich zu sprechen, Zu schlagen angemahnt?  O Rom, ich schwöre, Wenn nur die Herstellung erfolgt, empfängst du Dein ganz Begehren von der Hand des Brutus!</p>
+<p>Lucius kommt zurück.</p>
+<p>Lucius. Herr, vierzehn Tage sind vom März verstrichen.</p>
+<p>(Man klopft draußen.)</p>
+<p>Brutus. &#x27;s ist gut.  Geh an die Pforte; jemand klopft.  (Lucius ab.) Seit Cassius mich spornte gegen Cäsar, Schlief ich nicht mehr. Bis zur Vollführung einer furchtbarn Tat, Vom ersten Antrieb, ist die Zwischenzeit Wie ein Phantom, ein grauenvoller Traum. Der Genius und die sterblichen Organe Sind dann im Rat vereint; und die Verfassung Des Menschen, wie ein kleines Königreich, Erleidet dann den Zustand der Empörung.</p>
+<p>Lucius kommt zurück.</p>
+<p>Lucius. Herr, Euer Bruder Cassius wartet draußen; Er wünschet Euch zu sehn.</p>
+<p>Brutus. Ist er allein?</p>
+<p>Lucius. Nein, es sind mehr noch bei ihm.</p>
+<p>Brutus. Kennst du sie?</p>
+<p>Lucius. Nein, Herr, sie tragen eingedrückt die Hüte Und das Gesicht im Mantel halb begraben, Daß ich durchaus sie nicht erkennen kann An irgendeinem Zuge.</p>
+<p>Brutus. Laß sie sein.  (Lucius ab.) Es sind die Bundesbrüder.  O Verschwörung! Du schämst dich, die verdächtge Stirn bei Nacht Zu zeigen, wann das Bös&#x27; am freisten ist? O denn, bei Tag, wo willst du eine Höhle Entdecken, dunkel gnug es zu verlarven, Dein schnödes Antlitz?--Verschwörung, suche keine! In Lächeln hüll es und in Freundlichkeit! Denn trätst du auf in angeborner Bildung, So wär der Erebus nicht finster gnug, Vor Argwohn dich zu schützen.</p>
+<p>Cassius, Casca, Decius, Metellus Cimber und Trebonius treten auf.</p>
+<p>Cassius. Sind wir gelegen?  Guten Morgen, Brutus! Ich fürchte, daß wie Eure Ruhe stören.</p>
+<p>Brutus. Längst war ich auf und wach die ganze Nacht. Kenn ich die Männer, welche mit Euch kommen?</p>
+<p>Cassius. Ja, jeden aus der Zahl; und keiner hier, Der Euch nicht hoch hält, und ein jeder wünscht, Ihr hättet nur die Meinung von Euch selbst, Die jeder edle Römer von Euch hegt. Dies ist Trebonius.</p>
+<p>Brutus. Er ist willkommen.</p>
+<p>Cassius. Dies Decius Brutus.</p>
+<p>Brutus. Er ist auch willkommen.</p>
+<p>Cassius. Dies Casca, dies Cinna, und dies Metellus Cimber.</p>
+<p>Brutus. Willkommen alle! Was stellen sich für wache Sorgen zwischen Die Nacht und eure Augen?</p>
+<p>Cassius. Auf ein Wort, Wenn&#x27;s Euch beliebt.  (Sie reden leise miteinander.)</p>
+<p>Decius. Hier liegt der Ost: bricht da der Tag nicht an?</p>
+<p>Casca. Nein.</p>
+<p>Cinna. Doch, um Verzeihung!  und die grauen Streifen, Die das Gewölk durchziehn, sind Tagesboten.</p>
+<p>Casca. Ihr sollt gestehn, daß ihr euch beide trügt. Die Sonn erscheint hier, wo mein Degen hinweist; Das ist ein gut Teil weiter hin nach Süden, Wenn ihr die junge Jahreszeit erwägt. Zwei Monde noch, und höher gegen Norden Steigt ihre Flamm empor, und grade hier Steht hinterm Kapitol der hohe Ost.</p>
+<p>Brutus. Gebt eure Hand mir, einer nach dem andern.</p>
+<p>Cassius. Und lasset uns beschwören den Entschluß.</p>
+<p>Brutus. Nein, keinen Eid!  Wenn nicht der Menschen Antlitz, Das innre Seelenleid, der Zeit Verfall-- Sind diese Gründe schwach, so brecht nur auf, Und jeder fort zu seinem trägen Bett! Laßt frechgesinnte Tyrannei dann schalten, Bis jeder nach dem Lose fällt.  Doch tragen Sie Feuer gnug in sich, wie offenbar, Um Feige zu entflammen und mit Mut Des Weibes schmelzendes Gemüt zu stählen: O dann, Mitbürger!  welchen andern Sporn Als unsre Sache braucht es, uns zu stacheln Zur Herstellung?  Was für Gewähr, als diese: Verschwiegne Römer, die das Wort gesprochen, Und nicht zurückziehn?  Welchen andern Eid, Als Redlichkeit mit Redlichkeit im Bund, Daß dies gescheh, wo nicht, dafür zu sterben? Laßt Priester, Memmen, listge Männer schwören, Verdorrte Greis und solche Jammerseelen, Die für das Unrecht danken; schwören laßt Bei bösen Händeln Volk, dem man nicht traut. Entehrt nicht so den Gleichmut unsrer Handlung Und unsern unbezwinglich festen Sinn, Zu denken, unsre Sache, unsre Tat Brauch einen Eid; da jeder Tropfe Bluts, Der edel fließt in jedes Römers Adern, Sich seines echten Stamms verlustig macht, Wenn er das kleinste Teilchen nur verletzt Von irgendeinem Worte, das er gab.</p>
+<p>Cassius. Doch wie mit Cicero?  Forscht man ihn aus? Ich denk, er wird sehr eifrig für uns sein.</p>
+<p>Casca. Laßt uns ihn nicht vorübergehn.</p>
+<p>Cinna. Nein, ja nicht.</p>
+<p>Metellus. Gewinnt ihn ja für uns.  Sein Silberhaar Wird eine gute Meinung uns erkaufen Und Stimmen werben, unser Werk zu preisen. Sein Urteil habe unsre Hand gelenkt: So wird es heißen; unsre Hastigkeit Und Jugend wird im mindsten nicht erscheinen, Von seinem würdgen Ansehn ganz bedeckt.</p>
+<p>Brutus. O nennt ihn nicht!  Laßt uns ihm nichts eröffnen, Denn niemals tritt er einer Sache bei, Wenn andre sie erdacht.</p>
+<p>Cassius. So laßt ihn weg.</p>
+<p>Casca. &#x27;s ist wahr; er paßt auch nicht.</p>
+<p>Decius. Wird niemand sonst, als Cäsar, angetastet?</p>
+<p>Cassius. Ja, gut bedacht!  Mich dünkt, daß Mark Anton, Der so beliebt beim Cäsar ist, den Cäsar Nicht überleben darf.  Er wird sich uns Gewandt in Ränken zeigen, und ihr wißt, Daß seine Macht, wenn er sie nutzt, wohl hinreicht, Uns allen Not zu schaffen.  Dem zu wehren, Fall Cäsar und Antonius zugleich.</p>
+<p>Brutus. Zu blutge Weise, Cajus Cassius, wär&#x27;s, Das Haupt abschlagen und zerhaun die Glieder, Wie Grimm beim Tod und Tücke hinterher. Antonius ist ja nur ein Glied des Cäsar. Laßt Opferer uns sein, nicht Schlächter, Cajus. Wir alle stehen gegen Cäsars Geist, Und in dem Geist des Menschen ist kein Blut. O könnten wir doch Cäsars Geist erreichen Und Cäsarn nicht zerstücken!  Aber ach! Cäsar muß für ihn bluten.  Edle Freunde, Laßt kühnlich uns ihn töten, doch nicht zornig; Zerlegen laßt uns ihn, ein Mahl für Götter, Nicht ihn zerhauen wie ein Aas für Hunde. Laßt unsre Herzen, schlauen Herren gleich, Zu rascher Tat aufwiegeln ihre Diener. Und dann zum Scheine schmälen.  Dadurch wird Notwendig unser Werk und nicht gehässig; Und wenn es so dem Aug des Volks erscheint, Wird man uns Reiniger, nicht Mörder nennen. Was Mark Anton betrifft, denkt nicht an ihn, Denn er vermag nicht mehr als Cäsars Arm, Wenn Cäsars Haupt erst fiel.</p>
+<p>Cassius. Doch fürcht ich ihn, Denn seine Liebe hängt so fest am Cäsar.</p>
+<p>Brutus. Ach, guter Cassius, denket nicht an ihn! Liebt er den Cäsar, so vermag er nichts Als gegen sich; sich härmen, für ihn sterben. Und das wär viel von ihm, weil er der Lust, Der Wüstheit, den Gelagen sich ergibt.</p>
+<p>Trebonius. Es ist kein Arg in ihm; er sterbe nicht. Denn er wird leben und dies einst belachen.</p>
+<p>(Die Glocke schlägt.)</p>
+<p>Brutus. Still!  zählt die Glocke.</p>
+<p>Cassius. Sie hat drei geschlagen.</p>
+<p>Trebonius. Es ist zum Scheiden Zeit.</p>
+<p>Cassius. Doch zweifl&#x27; ich noch, Ob Cäsar heute wird erscheinen wollen; Denn kürzlich ist er abergläubisch worden, Ganz dem entgegen, wie er sonst gedacht Von Träumen, Einbildung und heilgen Bräuchen. Vielleicht, daß diese großen Wunderdinge, Das ungewohnte Schrecken dieser Nacht Und seiner Augurn Überredung ihn Entfernt vom Kapitol für heute hält.</p>
+<p>Decius. Das fürchtet nimmer; wenn er das beschloß, So übermeistr&#x27; ich ihn.  Er hört es gern, Das Einhorn lasse sich mit Bäumen fangen, Der Löw im Netz, der Elefant in Gruben, Der Bär mit Spiegeln und der Mensch durch Schmeichler; Doch sag ich ihm, daß er die Schmeichler haßt, Bejaht er es, am meisten dann geschmeichelt. Laßt mich gewähren; Denn ich verstehe sein Gemüt zu lenken, Und will ihn bringen auf das Kapitol.</p>
+<p>Cassius. Ja, laßt uns alle gehn, um ihn zu holen.</p>
+<p>Brutus. Zur achten Stund aufs späteste, nicht wahr?</p>
+<p>Cinna. Das sei das Spätste, und dann bleibt nicht aus.</p>
+<p>Metellus. Cajus Ligarius ist dem Cäsar feind, Der&#x27;s ihm verwies, daß er Pompejus lobte; Es wundert mich, daß niemand sein gedacht.</p>
+<p>Brutus. Wohl, guter Cimber, geht nur vor bei ihm; Er liebt mich herzlich, und ich gab ihm Grund; Schickt ihn hieher, so will ich schon ihn stimmen.</p>
+<p>Cassius. Der Morgen übereilt uns: laßt uns gehn. Zerstreut euch, Freunde; doch bedenket alle, Was ihr gesagt, und zeigt euch echte Römer.</p>
+<p>Brutus. Seht, werte Männer, frisch und fröhlich aus; Tragt euren Vorsatz nicht auf eurer Stirn. Nein, führt&#x27;s hindurch, wie Helden unsrer Bühne, mit munterm Geist und würdger Festigkeit. Und somit insgesamt euch guten Morgen! (Alle ab, außer Brutus.) He, Lucius!--Fest im Schlaf?  Es schadet nichts. Genieß den honigschweren Tau des Schlummers. Du siehst Gestalten nicht, noch Phantasien, Womit geschäftge Sorg ein Hirn erfüllt; Drum schläfst du so gesund.</p>
+<p>Portia tritt auf.</p>
+<p>Portia. Mein Gatte!  Brutus!</p>
+<p>Brutus. Was wollt Ihr, Portia?  warum steht Ihr auf? Es dient Euch nicht, die zärtliche Natur Dem rauhen kalten Morgen zu vertraun.</p>
+<p>Portia. Euch gleichfalls nicht.  Unfreundlich stahlt Ihr, Brutus, Von meinem Bett Euch; und beim Nachtmahl gestern Erhobt Ihr plötzlich Euch und gingt umher, Sinnend und seufzend mit verschränkten Armen. Und wenn ich Euch befragte, was es sei, So starrtet Ihr mich an mit finstern Blicken. Ich drang in Euch, da riebt Ihr Euch die Stirn Und stampftet ungeduldig mit dem Fuß; Doch hielt ich an, doch gabt Ihr keine Rede Und winktet mit der Hand unwillig weg, Damit ich Euch verließ.  Ich tat es auch, Besorgt, die Ungeduld noch zu verstärken, Die schon zu sehr entflammt schien, und zugleich Mir schmeichelnd, nur von Laune rühr es her, Die ihre Stunden hat bei jedem Mann. Nicht essen, reden, schlafen läßt es Euch; Und könnt es Eure Bildung so entstellen, Als es sich Eurer Fassung hat bemeistert, So kennt ich Euch nicht mehr.  Mein teurer Gatte, Teilt mir die Ursach Eures Kummers mit.</p>
+<p>Brutus. Ich bin nicht recht gesund, und das ist alles.</p>
+<p>Portia. Brutus ist weise; wär er nicht gesund, Er nähm die Mittel wahr, um es zu werden.</p>
+<p>Brutus. Das tu ich, gute Portia; geh zu Bett.</p>
+<p>Portia. Ist Brutus krank?  und ist es heilsam, so Entblößt umherzugehn und einzusaugen Den Dunst des Morgens?  Wie, ist Brutus krank, Und schleicht er vom gesunden Bett sich weg, Der schnöden Ansteckung der Nacht zu trotzen? Und reizet er die böse Fieberluft, Sein Übel noch zu mehren?--Nein, mein Brutus, Ihr tragt ein krankes Übel im Gemüt, Wovon, nach meiner Stelle Recht und Würde, Ich wissen sollte; und auf meinen Knien Fleh ich bei meiner einst gepriesnen Schönheit, Bei allen Euren Liebesschwüren, ja, Bei jenem großen Schwur, durch welchen wir Einander einverleibt und eins nur sind: Enthüllt mir, Eurer Hälfte, Eurem Selbst, Was Euch bekümmert, was zu Nacht für Männer Euch zugesprochen; denn es waren hier Sechs oder sieben, die ihr Antlitz selbst Der Finsternis verbargen.</p>
+<p>Brutus. O kniet nicht, liebe Portia.</p>
+<p>Portia. Ich braucht es nicht, wärt Ihr mein lieber Brutus. Ist&#x27;s im Vertrag der Ehe, sagt mir, Brutus, Bedungen, kein Geheimnis sollt ich wissen, Das Euch gehört?  Und bin ich Euer Selbst Nur gleichsam, mit gewissen Einschränkungen? Beim Mahl um Euch zu sein, Eur Bett zu teilen, Auch wohl mit Euch zu sprechen?  Wohn ich denn Nur in der Vorstadt Eurer Zuneigung? Ist es nur das, so ist ja Portia Des Brutus Buhle nur und nicht sein Weib.</p>
+<p>Brutus. Ihr seid mein echtes, ehrenwertes Weib, So teuer mir als wie die Purpurtropfen, Die um mein trauernd Herz sich drängen.</p>
+<p>Portia. Wenn dem so wär, so wüßt ich dies Geheimnis. Ich bin ein Weib, gesteh ich, aber doch Ein Weib, das Brutus zur Gemahlin nahm. Ich bin ein Weib, gesteh ich, aber doch Ein Weib von gutem Rufe, Catos Tochter. Denkt Ihr, ich sei so schwach wie mein Geschlecht, Aus solchem Stamm erzeugt und so vermählt? Sagt das Geheimnis mir: ich will&#x27;s bewahren, Ich habe meine Stärke hart erprüft, Freiwillig eine Wunde mir versetzend Am Schenkel hier; ertrüg ich das geduldig Und ein Geheimnis meines Gatten nicht?</p>
+<p>Brutus. Ihr Götter, macht mich wert des edlen Weibes! (Man klopft draußen.) Horch!  horch!  man klopft; geh eine Weil hinein, Und unverzüglich soll dein Busen teilen, Was noch mein Herz verschließt. Mein ganzes Bündnis will ich dir enthüllen Und meiner finstern Stirne Zeichenschrift. Verlaß mich schnell.  (Portia ab.)</p>
+<p>Lucius und Ligarius kommen.</p>
+<p>Brutus. Wer klopft denn, Lucius?</p>
+<p>Lucius. Hier ist ein Kranker, der Euch sprechen will.</p>
+<p>Brutus. Ligarius ist&#x27;s, von dem Metellus sprach. Du, tritt beiseit.--Cajus Ligarius, wie?</p>
+<p>Ligarius. Nehmt einen Morgengruß von matter Zunge.</p>
+<p>Brutus. O welche Zeit erwählt Ihr, wackrer Cajus, Ein Tuch zu tragen!  Wärt Ihr doch nicht krank!</p>
+<p>Ligarius. Ich bin nicht krank, hat irgendeine Tat, Des Namens Ehre würdig, Brutus vor.</p>
+<p>Brutus. Solch eine Tat, Ligarius, hab ich vor, Wär Euer Ohr gesund, davon zu hören.</p>
+<p>Ligarius. Bei jedem Gott, vor dem sich Römer beugen, Hier sag ich ab der Krankheit.  Seele Roms! Du wackrer Sohn, aus edlem Blut entsprossen! Wie ein Beschwörer riefst du auf in mir Den abgestorbnen Geist.  Nun heiß mich laufen, So will ich an Unmögliches mich wagen, Ja Herr darüber werden.  Was zu tun?</p>
+<p>Brutus. Ein Wagestück, das Kranke heilen wird.</p>
+<p>Ligarius. Doch gibt&#x27;s nicht auch Gesunde krank zu machen?</p>
+<p>Brutus. Die gibt es freilich.  Was es ist, mein Cajus, Eröffn ich dir auf unserm Weg zu ihm, An dem es muß geschehn.</p>
+<p>Ligarius. Macht Euch nur auf Mit neu entflammtem Herzen folg ich Euch, Zu tun, was ich nicht weiß.  Doch es genügt, Daß Brutus mir vorangeht.</p>
+<p>Brutus. Folgt mir denn.  (Beide ab.)</p>
+<p>Zweite Szene Ein Zimmer in Cäsars Palaste</p>
+<p>Donner und Blitz.  Cäsar im Nachtkleide</p>
+<p>Cäsar. Zu Nacht hat Erd und Himmel Krieg geführt. Calpurnia rief im Schlafe dreimal laut: &quot;O helft!  Sie morden Cäsarn!&quot; Niemand da?</p>
+<p>Ein Diener kommt.</p>
+<p>Diener. Herr?</p>
+<p>Cäsar. Geh, heiß die Priester gleich zum Opfer schreiten, Und bring mir ihre Meinung vom Erfolg.</p>
+<p>Diener.  Es soll geschehn.  (Ab.)</p>
+<p>Calpurnia (tritt auf). Was meint Ihr, Cäsar?  Denkt Ihr auszugehn? Ihr müßt heut keinen Schritt vom Hause weichen.</p>
+<p>Cäsar. Cäsar geht aus.  Mir haben stets Gefahren Im Rücken nur gedroht; wenn sie die Stirn Des Cäsar werden sehn, sind sie verschwunden.</p>
+<p>Calpurnia. Cäsar, ich hielt auf Wunderzeichen nie, Doch schrecken sie mich nun.  Im Haus ist jemand, Der außer dem, was wir gesehn, gehört, Von Greueln meldet, so die Wach erblickt&#x27;. Es warf auf offner Gasse eine Löwin, Und Grüft erlösten gähnend ihre Toten. Wildglühnde Krieger fochten auf den Wolken, In Reihn, Geschwadern und nach Kriegsgebrauch, Wovon es Blut gesprüht aufs Kapitol. Das Schlachtgetöse klirrte in der Luft; Da wiehern Rosse, Männer röcheln sterbend, Und Geister wimmerten die Straßen durch. O Cäsar!  unerhört sind diese Dinge; Ich fürchte sie.</p>
+<p>Cäsar. Was kann vermieden werden, Das sich zum Ziel die mächtgen Götter setzten? Ich gehe dennoch aus, denn diese Zeichen, So gut wie Cäsarn, gelten sie der Welt.</p>
+<p>Calpurnia. Kometen sieht man nicht, wenn Bettler sterben; Der Himmel selbst flammt Fürstentod herab.</p>
+<p>Cäsar. Der Feige stirbt schon vielmal, eh er stirbt, Die Tapfern kosten einmal nur den Tod. Von allen Wundern, die ich je gehört, Scheint mir das größte, daß sich Menschen fürchten, Da sie doch sehn, der Tod, das Schicksal aller, Kommt, wann er kommen soll. Der Diener kommt zurück. Was dünkt den Augurn?</p>
+<p>Diener. Sie raten Euch, für heut nicht auszugehn. Da sie dem Opfertier das Eingeweide Ausnahmen, fanden sie kein Herz darin.</p>
+<p>Cäsar. Die Götter tun der Feigheit dies zur Schmach. Ein Tier ja wäre Cäsar ohne Herz, Wenn er aus Furcht sich heut zu Hause hielte. Das wird er nicht; gar wohl weiß die Gefahr, Cäsar sei noch gefährlicher als sie. Wir sind zwei Leun, an einem Tag geworfen, Und ich der ältre und der schrecklichste; Und Cäsar wird doch ausgehn.</p>
+<p>Calpurnia. Ach, mein Gatte! In Zuversicht geht Eure Weisheit unter. Geht heute doch nicht aus; nennt&#x27;s meine Furcht, Die Euch zu Hause hält, nicht Eure eigne. Wir senden Mark Anton in den Senat, Zu sagen, daß Ihr unpaß heute seid. Laßt mich auf meinen Knien dies erbitten.</p>
+<p>Cäsar. Ja, Mark Anton soll sagen, ich sei unpaß, Und dir zulieb will ich zu Hause bleiben. Decius tritt auf. Sieh, Decius Brutus kommt; der soll&#x27;s bestellen.</p>
+<p>Decius. Heil, Cäsar!  Guten Morgen, würdger Cäsar! Ich komm Euch abzuholen zum Senat.</p>
+<p>Cäsar. Und seid gekommen zur gelegnen Zeit, Den Senatoren meinen Gruß zu bringen. Sagt ihnen, daß ich heut nicht kommen will; Nicht kann, ist falsch; daß ich&#x27;s nicht wage, falscher; Ich will nicht kommen heut, sagt ihnen das.</p>
+<p>Calpurnia. Sagt, er sei krank.</p>
+<p>Cäsar. Hilft Cäsar sich mit Lügen? Streckt ich so weit erobernd meinen Arm, Graubärten scheu die Wahrheit zu verkleiden? Geht, Decius!  sagt nur: Cäsar will nicht kommen.</p>
+<p>Decius. Laßt einen Grund mich wissen, großer Cäsar, Daß man mich nicht verlacht, wenn ich es sage.</p>
+<p>Cäsar. Der Grund ist nur mein Will&#x27;; ich will nicht kommen, Das gnügt zu des Senats Befriedigung. Doch um Euch insbesondre gnug zu tun, Weil ich Euch liebe, will ich&#x27;s Euch eröffnen: Calpurnia hier, mein Weib, hält mich zu Haus. Sie träumte diese Nacht, sie säh mein Bildnis, Das wie ein Springbrunn klares Blut vergoß Aus hundert Röhren; rüstge Römer kamen Und tauchten lächelnd ihre Hände drein. Dies legt sie aus als Warnungen und Zeichen Und Unglück, das uns droht, und hat mich kniend Gebeten, heute doch nicht auszugehn.</p>
+<p>Decius. Ihr habt den Traum ganz irrig ausgelegt; Es war ein schönes, glückliches Gesicht. Eur Bildnis, Blut aus vielen Röhren spritzend, Worein so viele Römer lächelnd tauchten, Bedeutet, saugen werd aus Euch das große Rom Belebend Blut; und große Männer werden Nach Heiligtümern und nach Ehrenpfändern Sich drängen.  Das bedeutet dieser Traum.</p>
+<p>Cäsar. Auf diese Art habt Ihr ihn wohl erklärt.</p>
+<p>Decius. Ja, wenn Ihr erst gehört, was ich Euch melde. Wißt denn: an diesem Tag will der Senat Dem großen Cäsar eine Krone geben. Wenn Ihr nun sagen laßt, Ihr wollt nicht kommen, So kann es sie gereun.  Auch ließ&#x27; es leicht Zum Spott sich wenden; jemand spräche wohl: &quot;Verschiebt die Sitzung bis auf andre Zeit, Wenn Cäsars Gattin beßre Träume hat.&quot; Wenn Cäsar sich versteckt, wird man nicht flüstern: &quot;Seht!  Cäsar fürchtet sich?&quot; Verzeiht mir, Cäsar; meine Herzensliebe Heißt dieses mich zu Eurem Vorteil sagen, Und Schicklichkeit steht meiner Liebe nach.</p>
+<p>Cäsar. Wie töricht scheint nun Eure Angst, Calpurnia! Ich schäme mich, daß ich ihr nachgegeben. Reicht mein Gewand mir her, denn ich will gehn. Publius, Brutus, Ligarius, Metellus, Casca, Trebonius und Cinna treten auf. Da kommt auch Publius, um mich zu holen.</p>
+<p>Publius. Guten Morgen, Cäsar!</p>
+<p>Cäsar. Publius, willkommen!-- Wie, Brutus?  seid Ihr auch so früh schon auf?-- Guten Morgen, Casca!--Cajus Ligarius, So sehr war Cäsar niemals Euer Feind Als dieses Fieber, das Euch abgezehrt.-- Was ist die Uhr?</p>
+<p>Brutus. Es hat schon acht geschlagen.</p>
+<p>Cäsar. Habt Dank für Eure Müh und Höflichkeit. Antonius tritt auf. Seht!  Mark Anton, der lange schwärmt des Nachts, Ist doch schon auf.--Antonius, seid gegrüßt!</p>
+<p>Antonius. Auch Ihr, erlauchter Cäsar!</p>
+<p>Cäsar. Befehlt, daß man im Hause fertig sei; Es ist nicht recht, so auf sich warten lassen. Ei, Cinna!--Ei, Metellus!--Wie, Trebonius? Ich hab mit Euch ein Stündchen zu verplaudern; Gedenkt daran, daß Ihr mich heut besucht, Und bleibt mir nah, damit ich Euer denke.</p>
+<p>Trebonius. Das will ich, Cäsar--(beiseite) will so nah Euch sein, Daß Eure besten Freunde wünschen sollen, Ich wär entfernt gewesen.</p>
+<p>Cäsar. Lieben Freunde, Kommt mit herein und trinkt ein wenig Weins, Dann gehen wir gleich Freunden miteinander.</p>
+<p>Brutus (beiseite). Daß gleich nicht stets dasselbe ist, o Cäsar! Das Herz des Brutus blutet, es zu denken.</p>
+<p>(Alle ab.)</p>
+<p>Dritte Szene Eine Straße nahe beim Kapitol</p>
+<p>Artemidorus tritt auf und liest einen Zettel</p>
+<p>Artemidorus. &quot;Cäsar, hüte dich vor Brutus; sei wachsam gegen Cassius; halte dich weit vom Casca; habe ein Auge auf Cinna; mißtraue dem Trebonius; beobachte den Metellus Cimber; Decius Brutus liebt dich nicht; beleidigt hast du den Cajus Ligarius.  Nur ein Sinn lebt in allen diesen Männern, und er ist gegen Cäsar gerichtet.  Wo du nicht unsterblich bist, schau um dich.  Sorglosigkeit gibt der Verschwörung Raum.  Mögen dich die großen Götter schützen!  Der Deinige Artemidorus.&quot;</p>
+<p>Hier will ich stehn, bis er vorübergeht, Und will ihm dies als Bittschrift überreichen. Mein Herz bejammert, daß die Tugend nicht Frei von dem Zahn des Neides leben kann. O Cäsar, lies!  so bist du nicht verloren; Sonst ist das Schicksal mit Verrat verschworen.  (Ab.)</p>
+<p>Vierte Szene Ein andrer Teil derselben Straße vor dem Hause des Brutus</p>
+<p>Portia und Lucius kommen</p>
+<p>Portia. Ich bitt dich, Knabe, lauf in den Senat. Halt dich mit keiner Antwort auf und geh! Was wartest du?</p>
+<p>Lucius. Zu hören, was ich soll.</p>
+<p>Portia. Ich möchte dort und wieder hier dich haben, Eh ich dir sagen kann, was du da sollst. O Festigkeit, steh unverrückt mir bei, Stell einen Fels mir zwischen Herz und Zunge! Ich habe Mannessinn, doch Weibeskraft. Wie fällt doch ein Geheimnis Weibern schwer!-- Bist du noch hier?</p>
+<p>Lucius. Was sollt ich, gnädge Frau? Nur hin zum Kapitol und weiter nichts, Und so zurück zu Euch, und weiter nichts?</p>
+<p>Portia. Nein, ob dein Herr wohl aussieht, melde mir, Denn er ging unpaß fort, und merk dir recht, Was Cäsar macht, wer mit Gesuch ihm naht. Still, Knabe!  Welch Geräusch?</p>
+<p>Lucius. Ich höre keins.</p>
+<p>Portia. Ich bitt dich, horch genau. Ich hörte wilden Lärm, als föchte man, Und der Wind bringt vom Kapitol ihn her.</p>
+<p>Lucius. Gewißlich, gnädge Frau, ich höre nichts.</p>
+<p>Ein Wahrsager kommt.</p>
+<p>Portia. Komm näher, Mann!  Wo führt dein Weg dich her?</p>
+<p>Wahrsager. Von meinem Hause, liebe gnädge Frau.</p>
+<p>Portia. Was ist die Uhr?</p>
+<p>Wahrsager. Die neunte Stund etwa.</p>
+<p>Portia. Ist Cäsar schon aufs Kapitol gegangen?</p>
+<p>Wahrsager. Nein, gnädge Frau; ich geh, mir Platz zu nehmen, Wo er vorbeizieht auf das Kapitol.</p>
+<p>Portia. Du hast an Cäsar ein Gesuch, nicht wahr?</p>
+<p>Wahrsager. Das hab ich, gnädge Frau.  Beliebt es Cäsarn, Aus Güte gegen Cäsar mich zu hören, So bitt ich ihn, es gut mit sich zu meinen.</p>
+<p>Portia. Wie?  weißt du, daß man ihm ein Leid will antun?</p>
+<p>Wahrsager. Keins seh ich klar vorher, viel, fürcht ich, kann geschehn. Doch guten Tag!  Hier ist die Straße eng; Die Schar, die Cäsarn auf der Ferse folgt, Von Senatoren, Prätorn, Supplikanten, Würd einen schwachen Mann beinah erdrücken. Ich will an einen freiern Platz und da Den großen Cäsar sprechen, wenn er kommt.  (Ab.)</p>
+<p>Portia. Ich muß ins Haus.  Ach, welch ein schwaches Ding Das Herz des Weibes ist!  O Brutus! Der Himmel helfe deinem Unternehmen.-- Gewiß, der Knabe hört&#x27; es.--Brutus wirbt um etwas, Das Cäsar weigert.--O, es wird mir schlimm! Lauf, Lucius, empfiehl mich meinem Gatten, Sag, ich sei fröhlich, komm zu mir zurück Und melde mir, was er dir aufgetragen.</p>
+<p>(Beide ab.)</p>
+<h2 class="chapter" id="c3">Dritter Aufzug</h2>
+<p>Erste Szene Das Kapitol.  Sitzung des Senats</p>
+<p>Ein Haufe Volks in der Straße, die zum Kapitol führt, darunter Artemidorus und der Wahrsager.  Trompetenstoß.  Cäsar, Brutus, Cassius, Casca, Decius, Metellus, Trebonius, Cinna, Antonius, Lepidus, Popilius, Publius und andre kommen</p>
+<p>Cäsar. Des Märzen Idus ist nun da.</p>
+<p>Wahrsager. Ja, Cäsar, Doch nicht vorbei.</p>
+<p>Artemidorus. Heil, Cäsar!  Lies den Zettel hier.</p>
+<p>Decius. Trebonius bittet Euch, bei guter Weile Dies untertänige Gesuch zu lesen.</p>
+<p>Artemidorus. Lies meines erst, o Cäsar!  Mein Gesuch Betrifft den Cäsar näher; lies, großer Cäsar!</p>
+<p>(Tritt dem Cäsar näher.)</p>
+<p>Cäsar. Was uns betrifft, werd auf die Letzt verspart.</p>
+<p>Artemidorus. Verschieb nicht, Cäsar, lies im Augenblick.</p>
+<p>Cäsar. Wie?  ist der Mensch verrückt?</p>
+<p>Publius. Mach Platz, Gesell!</p>
+<p>Cassius. Was?  Drängt ihr auf der Straße mit Gesuchen? Kommt in das Kapitol.</p>
+<p>(Cäsar geht in das Kapitol, die übrigen folgen ihm. Alle Senatoren stehen auf.)</p>
+<p>Popilius. Mög euer Unternehmen heut gelingen!</p>
+<p>Cassius. Welch Unternehmen, Lena?</p>
+<p>Popilius. Geh&#x27;s euch wohl.</p>
+<p>(Er nähert sich dem Cäsar.)</p>
+<p>Brutus. Was sprach Popilius Lena da?</p>
+<p>Cassius. Er wünschte, Daß unser Unternehmen heut gelänge; Ich fürchte, unser Anschlag ist entdeckt.</p>
+<p>Brutus. Seht, wie er Cäsarn naht!  Gebt acht auf ihn.</p>
+<p>Cassius. Sei schleunig, Casca, daß man nicht zuvorkommt. Was ist zu tun hier, Brutus?  Wenn es auskommt, Kehrt Cassius oder Cäsar nimmer heim; Denn ich entleibe mich.</p>
+<p>Brutus. Sei standhaft, Cassius. Popilius spricht von unserm Anschlag nicht. Er lächelt, sieh, und Cäsar bleibt in Ruh.</p>
+<p>Cassius. Trebonius nimmt die Zeit wahr, Brutus; sieh, Er zieht geschickt den Mark Anton beiseite.</p>
+<p>(Antonius und Trebonius ab. Cäsar und die Senatoren nehmen ihre Sitze ein.)</p>
+<p>Decius. Wo ist Metellus Cimber?  Laßt ihn gehn Und sein Gesuch sogleich dem Cäsar reichen.</p>
+<p>Brutus. Er ist bereit; drängt an und steht ihm bei.</p>
+<p>Cinna. Casca, Ihr müßt zuerst den Arm erheben.</p>
+<p>Cäsar. Sind alle da?  Was für Beschwerden gibt&#x27;s, Die Cäsar heben muß und sein Senat?</p>
+<p>Metellus (niederkniend). Glorreicher, mächtigster, erhabner Cäsar! Metellus Cimber wirft vor deinen Sitz Ein Herz voll Demut nieder.</p>
+<p>Cäsar. Cimber, hör, Ich muß zuvor dir kommen.  Dieses Kriechen, Dies knechtische Verbeugen könnte wohl Gemeiner Menschen Blut in Feuer setzen Und vorbestimmte Wahl, gefaßten Schluß Zum Kinderwillen machen.  Sei nicht töricht Und denk, so leicht empört sei Cäsars Blut, Um aufzutaun von seiner echten Kraft Durch das, was Narrn erweicht: durch süße Worte, Gekrümmtes Bücken, hündisches Geschmeichel. Dein Bruder ist verbannt durch einen Spruch; Wenn du für ihn dich bückst und flehst und schmeichelst, So stoß ich dich wie einen Hund hinweg. Wiß, Cäsar tut kein Unrecht; ohne Gründe Befriedigt man ihn nicht.</p>
+<p>Metellus. Gibt&#x27;s keine Stimme, würdiger als meine, Die süßer tön im Ohr des großen Cäsar, Für des verbannten Bruders Wiederkehr?</p>
+<p>Brutus. Ich küsse deine Hand, doch nicht als Schmeichler, Und bitte, Cäsar, daß dem Publius Cimber Die Rückberufung gleich bewilligt werde.</p>
+<p>Cäsar. Wie?  Brutus!</p>
+<p>Cassius. Gnade, Cäsar!  Cäsar, Gnade! Auch Cassius fällt tief zu Füßen dir, Begnadigung für Cimber zu erbitten.</p>
+<p>Cäsar. Ich ließe wohl mich rühren, glich&#x27; ich euch; Mich rührten Bitten, bät ich, um zu rühren. Doch ich bin standhaft wie des Nordens Stern, Des unverrückte, ewig stete Art Nicht ihresgleichen hat am Firmament. Der Himmel prangt mit Funken ohne Zahl, Und Feuer sind sie all&#x27; und jeder leuchtet; Doch einer nur behauptet seinen Stand. So in der Welt auch; sie ist voll von Menschen, Und Menschen sind empfindlich, Fleisch und Blut; Doch in der Menge weiß ich einen nur, Der unbesiegbar seinen Platz bewahrt, Vorn Andrang unbewegt; daß ich der bin, Auch hierin laßt es mich ein wenig zeigen, Daß ich auf Cimbers Banne fest bestand Und drauf besteh, daß er im Banne bleibe.</p>
+<p>Cinna. O Cäsar!</p>
+<p>Cäsar. Fort, sag ich!  Willst du den Olymp versetzen?</p>
+<p>Decius. Erhabner Cäsar!--</p>
+<p>Cäsar. Kniet nicht Brutus auch umsonst?</p>
+<p>Casca. Dann, Hände, sprecht für mich!</p>
+<p>(Casca sticht Cäsarn mit dem Dolch in den Nacken.  Cäsar fällt ihm in den Arm.  Er wird alsdann von verschiednen andern Verschwornen und zuletzt von Marcus Brutus mit Dolchen durchstochen.)</p>
+<p>Cäsar. Brutus, auch du?--So falle, Cäsar!</p>
+<p>(Er stirbt.  Die Senatoren und das Volk fliehen bestürzt.)</p>
+<p>Cinna. Befreiung!  Freiheit!  Die Tyrannei ist tot! Lauft fort!  verkündigt!  ruft es durch die Gassen!</p>
+<p>Cassius. Hin zu der Rednerbühne!  Rufet aus: &quot;Befreiung!  Freiheit!  Wiederherstellung!&quot;</p>
+<p>Brutus. Seid nicht erschrocken, Volk und Senatoren! Flieht nicht!  Steht still!  Die Ehrsucht hat gebüßt.</p>
+<p>Casca. Geht auf die Rednerbühne, Brutus.</p>
+<p>Decius. Ihr, Cassius, auch.</p>
+<p>Brutus. Wo ist Publius?</p>
+<p>Cinna. Hier, ganz betroffen über diesen Aufruhr.</p>
+<p>Metellus. Steht dicht beisammen, wenn ein Freund des Cäsar Etwa--</p>
+<p>Brutus. Sprecht nicht von Stehen!--Publius, getrost! Wir haben nicht im Sinn, Euch Leid zu tun, Auch keinem Römer sonst: sagt ihnen das.</p>
+<p>Cassius. Und geht nur, Publius, damit das Volk, Das uns bestürmt, nicht Euer Alter kränke.</p>
+<p>Brutus. Tut das; und niemand steh für diese Tat Als wir, die Täter.</p>
+<p>Trebonius kommt zurück.</p>
+<p>Cassius. Wo ist Mark Anton?</p>
+<p>Trebonius. Er floh bestürzt nach Haus, und Männer, Weiber Und Kinder blicken starr und schrein und laufen, Als wär der jüngste Tag.</p>
+<p>Brutus. Schicksal!  wir wollen sehn, was dir geliebt. Wir wissen, daß wir sterben werden; Frist Und Zeitgewinn nur ist der Menschen Trachten.</p>
+<p>Cassius. Ja, wer dem Leben zwanzig Jahre raubt, Der raubt der Todesfurcht so viele Jahre.</p>
+<p>Brutus. Gesteht das ein, und Wohltat ist der Tod. So sind wir Cäsars Freunde, die wir ihm Die Todesfurcht verkürzten.  Bückt euch, Römer, Laßt unsre Händ in Cäsars Blut uns baden Bis an die Ellenbogen!  Färbt die Schwerter! So treten wir hinaus bis auf den Markt, Und, überm Haupt die roten Waffen schwingend, Ruft alle dann: &quot;Erlösung!  Friede!  Freiheit!&quot;</p>
+<p>Cassius. Bückt euch und taucht!  In wie entfernter Zeit Wird man dies hohe Schauspiel wiederholen, In neuen Zungen und mit fremdem Pomp!</p>
+<p>Brutus. Wie oft wird Cäsar noch zum Spiele bluten, Der jetzt am Fußgestell Pompejus&#x27; liegt, Dem Staube gleich geachtet!</p>
+<p>Cassius. Sooft als das geschieht, Wird man auch unsern Bund, die Männer nennen, Die Freiheit wiedergaben ihrem Land.</p>
+<p>Decius. Nun, sollen wir hinaus?</p>
+<p>Cassius. Ja, alle fort! Brutus voran, und seine Tritte zieren Wir mit den kühnsten, besten Herzen Roms.</p>
+<p>Ein Diener kommt.</p>
+<p>Brutus. Doch stillt Wer kommt?  Ein Freund des Mark Anton.</p>
+<p>Diener. So, Brutus, hieß mich mein Gebieter knien, So hieß Antonius mich niederfallen, Und tief im Staube hieß er so mich reden: &quot;Brutus ist edel, tapfer, weis und redlich, Cäsar war groß, kühn, königlich und gütig. Sprich: Brutus lieb ich, und ich ehr ihn auch. Sprich: Cäsarn fürchtet ich, ehrt ihn und liebt ihn. Will Brutus nur gewähren, daß Anton Ihm sicher nahen und erforschen dürfe, Wie Cäsar solche Todesart verdient, So soll dem Mark Anton der tote Cäsar So teuer nicht als Brutus lebend sein; Er will vielmehr dem Los und der Partei Des edlen Brutus unter den Gefahren Der wankenden Verfassung treulich folgen.&quot; Dies sagte mein Gebieter, Mark Anton.</p>
+<p>Brutus. Und dein Gebieter ist ein wackrer Römer, So achtet ich ihn stets. Sag, wenn es ihm geliebt, hieher zu kommen, So steh ich Red ihm und, bei meiner Ehre, Entlaß ihn ungekränkt.</p>
+<p>Diener. Ich hol ihn gleich.  (Ab.)</p>
+<p>Brutus. Ich weiß, wir werden ihn zum Freunde haben.</p>
+<p>Cassius. Ich wünsch es; doch es wohnt ein Sinn in mir, Der sehr ihn fürchtet; und mein Unglücksahnen Trifft immer ein aufs Haar.</p>
+<p>Antonius kommt zurück.</p>
+<p>Brutus. Hier kommt Antonius ja.--Willkommen, Mark Anton!</p>
+<p>Antonius. O großer Cäsar!  liegst du so im Staube? Sind alle deine Siege, Herrlichkeiten, Triumphe, Beuten eingesunken nun In diesen kleinen Raum?--Gehab dich wohl!-- Ich weiß nicht, edle Herrn, was ihr gedenkt, Wer sonst noch bluten muß, wer reif zum Fall. Wofern ich selbst kann keine Stunde besser Als Cäsars Todesstunde, halb so kostbar Kein Werkzeug sein, als diese eure Schwerter, Geschmückt mit Blut, dem edelsten der Welt. Ich bitt euch, wenn ihr&#x27;s feindlich mit mir meint, Jetzt, da noch eure Purpurhände dampfen, Büßt eure Lust.  Und lebt ich tausend Jahre, Nie werd ich so bereit zum Tod mich fühlen; Kein Ort gefällt mir so, kein Weg zum Tode, Als hier beim Cäsar fallen, und durch euch, Die ersten Heldengeister unsrer Zeit.</p>
+<p>Brutus. O Mark Anton!  begehrt nicht Euren Tod. Wir müssen blutig zwar und grausam scheinen, Wie unsre Händ und die geschehne Tat Uns zeigen; doch Ihr seht die Hände nur, Und dieses blutge Werk, so sie vollbracht; Nicht unsre Herzen: sie sind mitleidsvoll, Und Mitleid gegen Roms gesamte Not (Wie Feuer Feuer löscht, so Mitleid Mitleid) Verübt&#x27; an Cäsarn dies.  Was Euch betrifft, Für Euch sind unsre Schwerter stumpf, Anton. Seht, unsre Arme, trotz verübter Tücke, Und unsre Herzen, brüderlich gesinnt, Empfangen Euch mit aller Innigkeit, mit redlichen Gedanken und mit Achtung.</p>
+<p>Cassius. Und Eure Stimme soll soviel als jede Bei der Verteilung neuer Würden gelten.</p>
+<p>Brutus. Seid nur geduldig, bis wir erst das Volk Beruhigt, das vor Furcht sich selbst nicht kennt; Dann legen wir den Grund Euch dar, weswegen Ich, der den Cäsar liebt&#x27;, als ich ihn schlug, Also verfahren.</p>
+<p>Antonius. Ich bau auf eure Weisheit. Mir reiche jeder seine blutge Hand; Erst, Marcus Brutus, schütteln wir sie uns; Dann, Cajus Cassius, faß ich Eure Hand; Nun Eure, Decius Brutus; Eure, Cinna; Metellus, Eure nun; mein tapfrer Casca, Die Eure; reicht, Trebonius, Eure mir Zuletzt, doch nicht der letzte meinem Herzen. Ach, all ihr edlen Herrn, was soll ich sagen, Mein Ansehn steht jetzt auf so glattem Boden, Daß ich euch eines von zwei schlimmen Dingen, Ein Feiger oder Schmeichler, scheinen muß. Daß ich dich liebte, Cäsar, o &#x27;s ist wahr! Wofern dein Geist jetzt niederblickt auf uns, Wird&#x27;s dich nicht kränken, bittrer als dein Tod, Zu sehn, wie dein Antonius Frieden macht Und deiner Feinde blutge Hände drückt, Du Edelster, in deines Leichnams Nähe? Hätt ich so manches Aug als Wunden du, Und jedes strömte Tränen, wie sie Blut, Das ziemte besser mir, als einen Bund Der Freundschaft einzugehn mit deinen Feinden. Verzeih mir, Julius!--Du edler Hirsch, Hier wurdest du erjagt, hier fielest du; Hier stehen deine Jäger, mit den Zeichen Des Mordes und von deinem Blut bepurpurt. O Welt, du warst der Wald für diesen Hirsch, Und er, o Welt!  war seines Waldes Stolz.-- Wie ähnlich einem Wild, von vielen Fürsten Geschossen, liegst du hier!</p>
+<p>Cassius. Antonius--</p>
+<p>Antonius. Verzeiht mir, Cajus Cassius; Dies werden selbst die Feinde Cäsars sagen, An einem Freund ist&#x27;s kalte Mäßigung.</p>
+<p>Cassius. Ich tadl Euch nicht, daß Ihr den Cäsar preist; Allein, wie denkt Ihr Euch mit uns zu stehen? Seid Ihr von unsern Freunden?  oder sollen Wir vorwärtsdringen, ohn auf Euch zu baun?</p>
+<p>Antonius. Deswegen faßt ich eure Hände; nur Vergaß ich mich, als ich auf Cäsarn blickte. Ich bin euch allen Freund und lieb euch alle, In Hoffnung, eure Gründe zu vernehmen, Wie und warum gefährlich Cäsar war.</p>
+<p>Brutus. Jawohl, sonst wär dies ein unmenschlich Schauspiel. Und unsre Gründe sind so wohl bedacht, Wärt Ihr der Sohn des Cäsar, Mark Anton, Sie gnügten Euch.</p>
+<p>Antonius. Das such ich einzig ja. Auch halt ich an um die Vergünstigung, Den Leichnam auszustellen auf dem Markt Und auf der Bühne, wie&#x27;s dem Freunde ziemt, Zu reden bei der Feier der Bestattung.</p>
+<p>Brutus. Das mögt Ihr, Mark Anton.</p>
+<p>Cassius. Brutus, ein Wort mit Euch. (Beiseite.)  Ihr wißt nicht, was Ihr tut; gestattet nicht, Daß ihm Antonius die Rede halte. Wißt Ihr, wie sehr das Volk durch seinen Vortrag Sich kann erschüttern lassen?</p>
+<p>Brutus. Nein, verzeiht. Ich selbst betrete erst die Bühn und lege Von unsers Cäsars Tod die Gründe dar. Was dann Antonius sagen wird, erklär ich, Gescheh erlaubt und mit Bewilligung; Es sei uns recht, daß Cäsar jeder Ehre Teilhaftig werde, so die Sitte heiligt. Dies wird uns mehr Gewinn als Schaden bringen.</p>
+<p>Cassius. Wer weiß, was vorfällt?  Ich bin nicht dafür.</p>
+<p>Brutus. Hier, Mark Anton, nehmt Ihr die Leiche Cäsars. Ihr sollt uns nicht in Eurer Rede tadeln, Doch sprecht von Cäsarn Gutes nach Vermögen Und sagt, daß Ihr&#x27;s mit unserm Willen tut. Sonst sollt Ihr gar mit dem Begräbnis nichts Zu schaffen haben.  Auf derselben Bühne, Zu der ich jetzo gehe, sollt Ihr reden, Wenn ich zu redet, aufgehört.</p>
+<p>Antonius. So sei&#x27;s! Ich wünsche weiter nichts.</p>
+<p>Brutus. Bereitet denn die Leich und folget uns.</p>
+<p>(Alle bis auf Antonius ab.)</p>
+<p>Antonius. O du, verzeih mir, blutend Stückchen Erde! Daß ich mit diesen Schlächtern freundlich tat. Du bist der Rest des edelsten der Männer, Der jemals lebt, im Wechsellauf der Zeit. Weh!  weh der Hand, die dieses Blut vergoß! Jetzt prophezei ich über deinen Wunden, Die ihre Purpurlippen öffnen, stumm Von meiner Zunge Stimm und Wort erflehend: Ein Fluch wird fallen auf der Menschen Glieder, Und innre Wut und wilder Bürgerzwist Wird ängsten alle Teil&#x27; Italiens; Verheerung, Mord wird so zur Sitte werden Und so gemein das Furchtbarste, daß Mütter Nur lächeln, wenn sie ihre zarten Kinder Gevierteilt von des Krieges Händen sehn. Die Fertigkeit in Greueln würgt das Mitleid; Und Cäsars Geist, nach Rache jagend, wird, Zur Seit ihm Ate, heiß der Höll entstiegen, In diesen Grenzen mit des Herrschers Ton Mord rufen und des Krieges Hund&#x27; entfesseln, Daß diese Schandtat auf zum Himmel stinke Von Menschenaas, das um Bestattung ächzt. Ein Diener kommt. Ihr dienet dem Octavius Cäsar?  nicht?</p>
+<p>Diener. Ja, Mark Anton.</p>
+<p>Antonius. Cäsar beschied ihn schriftlich her nach Rom.</p>
+<p>Diener. Den Brief empfing er und ist unterwegs; Und mündlich hieß er mich an Euch bestellen (Er erblickt den Leichnam Cäsars.) O Cäsar!</p>
+<p>Antonius. Dein Herz ist voll, geh auf die Seit und weine. Ich sehe, Leid steckt an; denn meine Augen, Da sie des Grames Perlen sahn in deinen, Begannen sie zu fließen--Kommt dein Herr?</p>
+<p>Diener. Er bleibt zur Nacht von Rom nur sieben Meilen.</p>
+<p>Antonius. Reit schnell zurück und meld&#x27; ihm, was geschehn. Hier ist ein Rom voll Trauer und Gefahr, Kein sichres Rom noch für Octavius. Eil hin und sag ihm das!--Nein, warte noch! Du sollst nicht fort, bevor ich diese Leiche Getragen auf den Markt und meine Rede Das Volk geprüft, wie dieser blutgen Männer Unmenschliches Beginnen ihm erscheint. Und demgemäß sollst du dem jungen Cäsar Berichten, wie allhier die Dinge stehn. Leih deinen Arm mir.</p>
+<p>(Beide ab mit Cäsars Leiche.)</p>
+<p>Zweite Szene Das Forum</p>
+<p>Brutus und Cassius kommen mit einem Haufen Volks</p>
+<p>Bürger. Wir wollen Rechenschaft!  Legt Rechenschaft uns ab!</p>
+<p>Brutus. So folget mir und gebt Gehör mir, Freunde.-- Ihr, Cassius geht in eine andre Straße Und teilt die Haufen-- Wer mich will reden hören, bleibe hier; Wer Cassius folgen will, der geh mit ihm. Wir wollen öffentlich die Gründ&#x27; erklären Von Cäsars Tod.</p>
+<p>Erster Bürger. Ich will den Brutus hören.</p>
+<p>Zweiter Bürger. Den Cassius ich: so können wir die Gründe Vergleichen, wenn wir beide angehört.</p>
+<p>(Cassius mit einigen Bürgern ab.  Brutus besteigt die Rostra.)</p>
+<p>Dritter Bürger. Der edle Brutus steht schon oben--still!</p>
+<p>Brutus. Seid ruhig zum Schluß. Römer!  Mitbürger!  Freunde!  Hört mich meine Sache führen und seid still, damit ihr hören möget.  Glaubt mir um meiner Ehre willen und hegt Achtung vor meiner Ehre, damit ihr glauben mögt.  Richtet mich nach eurer Weisheit und weckt eure Sinne, um desto besser urteilen zu können.  Ist jemand in dieser Versammlung, irgendein herzlicher Freund Cäsars, dem sage ich: des Brutus Liebe zum Cäsar war nicht geringer als seine.  Wenn dieser Freund dann fragt, warum Brutus gegen Cäsar aufstand, ist dies meine Antwort: nicht, weil ich Cäsarn weniger liebte, sondern weil ich Rom mehr liebte.  Wolltet ihr lieber, Cäsar lebte und ihr stürbet alle als Sklaven, als daß Cäsar tot ist, damit ihr alle lebet wie freie Männer?  Weil Cäsar mich liebte, wein ich um ihn; weil er glücklich war, freue ich mich; weil er tapfer war, ehr ich ihn; aber weil er herrschsüchtig war, erschlug ich ihn.  Also Tränen für seine Liebe, Freude für sein Glück, Ehre für seine Tapferkeit und Tod für seine Herrschsucht.  Wer ist hier so niedrig gesinnt, daß er ein Knecht sein möchte?  Ist es jemand, er rede, denn ihn habe ich beleidigt.  Wer ist hier so roh, daß er nicht wünschte, ein Römer zu sein?  Ist es jemand, er rede, denn ihn habe ich beleidigt.  Wer ist hier so schlecht, daß er sein Vaterland nicht liebte?  Ist es jemand, er rede, denn ihn habe ich beleidigt.  Ich halte inne, um Antwort zu hören.</p>
+<p>Bürger (verschiedene Stimmen auf einmal). Niemand, Brutus!  niemand!</p>
+<p>Brutus. Dann habe ich niemand beleidigt.  Ich tat Cäsarn nichts, als was ihr dem Brutus tun würdet.  Die Untersuchung über seinen Tod ist im Kapitol aufgezeichnet; sein Ruhm nicht geschmälert, wo er Verdienste hatte, seine Vergehen nicht übertrieben, für die er den Tod gelitten. Antonius und andre treten auf mit Cäsars Leiche. Hier kommt seine Leiche, von Mark Anton betrauert, der, ob er schon keinen Teil an seinem Tode hatte, die Wohltat seines Sterbens, einen Platz im gemeinen Wesen, genießen wird.  Wer von euch wird es nicht? Hiermit trete ich ab.  Wie ich meinen besten Freund für das Wohl Roms erschlug, so habe ich denselben Dolch für mich selbst, wenn es dem Vaterland gefällt, meinen Tod zu bedürfen.</p>
+<p>Bürger. Lebe, Brutus!  lebe!  lebe!</p>
+<p>Erster Bürger. Begleitet mit Triumph ihn in sein Haus.</p>
+<p>Zweiter Bürger. Stellt ihm ein Bildnis auf bei seinen Ahnen.</p>
+<p>Dritter Bürger. Er werde Cäsar!</p>
+<p>Vierter Bürger. Im Brutus krönt ihr Cäsars beßre Gaben.</p>
+<p>Erster Bürger. Wir bringen ihn zu Haus mit lautem Jubel.</p>
+<p>Brutus.  Mitbürger--</p>
+<p>Zweiter Bürger. Schweigt doch!  Stille!  Brutus spricht.</p>
+<p>Erster Bürger. Still da!</p>
+<p>Brutus. Ihr guten Bürger, laßt allein mich gehn; Bleibt mir zuliebe hier beim Mark Anton. Ehrt Cäsars Leiche, ehret seine Rede, Die Cäsars Ruhm verherrlicht.  Dem Antonius Gab unser Will&#x27; Erlaubnis, sie zu halten. Ich bitt euch, keiner gehe fort von hier Als ich allein, bis Mark Anton gesprochen.  (Ab.)</p>
+<p>Erster Bürger. He, bleibt doch!  Hören wir den Mark Anton.</p>
+<p>Dritter Bürger. Laßt ihn hinaufgehn auf die Rednerbühne. Ja, hört ihn!  Edler Mark Anton, hinauf!</p>
+<p>Antonius. Um Brutus&#x27; willen bin ich euch verpflichtet.</p>
+<p>Vierter Bürger. Was sagt er da vom Brutus?</p>
+<p>Dritter Bürger. Er sagt, um Brutus&#x27; willen find er sich Uns insgesamt verpflichtet.</p>
+<p>Vierter Bürger. Er täte wohl, Dem Brutus hier nichts Übles nachzureden.</p>
+<p>Erster Bürger. Der Cäsar war ein Tyrann.</p>
+<p>Dritter Bürger. Ja, das ist sicher; Es ist ein Glück für uns, daß Rom ihn los ward.</p>
+<p>Vierter Bürger. Still!  Hört doch, was Antonius sagen kann!</p>
+<p>Antonius. Ihr edlen Römer--</p>
+<p>Bürger. Still da!  hört ihn doch!</p>
+<p>Antonius. Mitbürger!  Freunde!  Römer!  hört mich an: Begraben will ich Cäsarn, nicht ihn preisen. Was Menschen Übles tun, das überlebt sie, Das Gute wird mit ihnen oft begraben. So sei es auch mit Cäsarn!  Der edle Brutus Hat euch gesagt, daß er voll Herrschsucht war; Und war er das, so war&#x27;s ein schwer Vergehen, Und schwer hat Cäsar auch dafür gebüßt. Hier, mit des Brutus Willen und der andern (Denn Brutus ist ein ehrenwerter Mann, Das sind sie alle, alle ehrenwert), Komm ich, bei Cäsars Leichenzug zu reden. Er war mein Freund, war mir gerecht und treu; Doch Brutus sagt, daß er voll Herrschsucht war, Und Brutus ist ein ehrenwerter Mann. Er brachte viel Gefangne heim nach Rom, Wofür das Lösegeld den Schatz gefüllt. Sah das der Herrschsucht wohl am Cäsar gleich? Wenn Arme zu ihm schrien, so weinte Cäsar; Die Herrschsucht sollt aus härterm Stoff bestehn. Doch Brutus sagt, daß er voll Herrschsucht war, Und Brutus ist ein ehrenwerter Mann. Ihr alle saht, wie am Lupercusfest Ich dreimal ihm die Königskrone bot, Die dreimal er geweigert.  War das Herrschsucht? Doch Brutus sagt, daß er voll Herrschsucht war, Und ist gewiß ein ehrenwerter Mann. Ich will, was Brutus sprach, nicht widerlegen; Ich spreche hier von dem nur, was ich weiß. Ihr liebtet all ihn einst nicht ohne Grund; Was für ein Grund wehrt euch, um ihn zu trauern? O Urteil, du entflohst zum blöden Vieh, Der Mensch ward unvernünftig!--Habt Geduld! Mein Herz ist in dem Sarge hier beim Cäsar, Und ich muß schweigen, bis es mir zurückkommt.</p>
+<p>Erster Bürger. Mich dünkt, in seinen Reden ist viel Grund.</p>
+<p>Zweiter Bürger. Wenn man die Sache recht erwägt, ist Cäsarn Groß Unrecht widerfahren.</p>
+<p>Dritter Bürger. Meint Ihr, Bürger? Ich fürcht, ein Schlimmrer kommt an seine Stelle.</p>
+<p>Vierter Bürger. Habt ihr gehört?  Er nahm die Krone nicht; Da sieht man, daß er nicht herrschsüchtig war.</p>
+<p>Erster Bürger. Wenn dem so ist, so wird es manchem teuer Zu stehen kommen.</p>
+<p>Zweiter Bürger. Ach, der arme Mann! Die Augen sind ihm feuerrot vom Weinen.</p>
+<p>Dritter Bürger. Antonius ist der bravste Mann in Rom.</p>
+<p>Vierter Bürger. Gebt acht!  Er fängt von neuem an zu reden.</p>
+<p>Antonius. Noch gestern hätt umsonst dem Worte Cäsars Die Welt sich widersetzt; nun liegt er da, Und der Geringste neigt sich nicht vor ihm. O Bürger!  strebt ich, Herz und Mut in euch Zur Wut und zur Empörung zu entflammen, So tät ich Cassius und Brutus Unrecht, Die ihr als ehrenwerte Männer kennt. Ich will nicht ihnen Unrecht tun, will lieber Dem Toten Unrecht tun, mir selbst und euch, Als ehrenwerten Männern, wie sie sind. Doch seht dies Pergament mit Cäsars Siegel; Ich fand&#x27;s bei ihm, es ist sein letzter Wille. Vernähme nur das Volk dies Testament (Das ich, verzeiht mir, nicht zu lesen denke), Sie gingen hin und küßten Cäsars Wunden Und tauchten Tücher in sein heilges Blut, Ja, bäten um ein Haar zum Angedenken, Und sterbend nennten sie&#x27;s im Testament Und hinterließen&#x27;s ihres Leibes Erben Zum köstlichen Vermächtnis.</p>
+<p>Vierter Bürger. Wir wollen&#x27;s hören: lest das Testament! Lest, Mark Anton!</p>
+<p>Bürger. Ja, ja, das Testament! Laßt Cäsars Testament uns hören.</p>
+<p>Antonius. Seid ruhig, lieben Freund&#x27;!  Ich darf&#x27;s nicht lesen, Ihr müßt nicht wissen, wie euch Cäsar liebte. Ihr seid nicht Holz, nicht Stein, ihr seid ja Menschen; Drum, wenn ihr Cäsars Testament erführt, Es setzt&#x27; in Flammen euch, es macht&#x27; euch rasend. Ihr dürft nicht wissen, daß ihr ihn beerbt, Denn wüßtet ihr&#x27;s, was würde draus entstehn?</p>
+<p>Bürger. Lest das Testament!  Wir wollen&#x27;s hören, Mark Anton! Ihr müßt es lesen!  Cäsars Testament!</p>
+<p>Antonius. Wollt ihr euch wohl gedulden?  wollt ihr warten? Ich übereilte mich, da ich&#x27;s euch sagte. Ich fürcht, ich tu den ehrenwerten Männern Zu nah, durch deren Dolche Cäsar fiel; Ich fürchte es.</p>
+<p>Vierter Bürger. Sie sind Verräter: ehrenwerte Männer!</p>
+<p>Bürger. Das Testament!  Das Testament!</p>
+<p>Zweiter Bürger. Sie waren Bösewichter, Mörder!  Das Testament! Lest das Testament!</p>
+<p>Antonius. So zwingt ihr mich, das Testament zu lesen? Schließt einen Kreis um Cäsars Leiche denn, Ich zeig euch den, der euch zu Erben machte. Erlaubt ihr mir&#x27;s?  Soll ich hinuntersteigen?</p>
+<p>Bürger. Ja, kommt nur!</p>
+<p>Zweiter Bürger. Steigt herab!</p>
+<p>(Er verläßt die Rednerbühne.)</p>
+<p>Dritter Bürger. Es ist Euch gern erlaubt.</p>
+<p>Vierter Bürger. Schließt einen Kreis herum.</p>
+<p>Erster Bürger. Zurück vom Sarge!  von der Leiche weg!</p>
+<p>Zweiter Bürger. Platz für Antonius!  für den edlen Antonius!</p>
+<p>Antonius. Nein, drängt nicht so heran!  Steht weiter weg!</p>
+<p>Bürger. Zurück!  Platz da!  zurück!</p>
+<p>Antonius. Wofern ihr Tränen habt, bereitet euch, Sie jetzo zu vergießen.  Diesen Mantel, Ihr kennt ihn alle; doch erinnr&#x27; ich mich Des ersten Males, daß ihn Cäsar trug In seinem Zelt, an einem Sommerabend-- Er überwand den Tag die Nervier-- Hier, schauet!  fuhr des Cassius Dolch herein; Seht, welchen Riß der tücksche Casca machte! Hier stieß der vielgeliebte Brutus durch; Und als er den verfluchten Stahl hinwegriß, Schaut her, wie ihm das Blut des Cäsar folgte, Als stürzt&#x27; es vor die Tür, um zu erfahren, Ob wirklich Brutus so unfreundlich klopfte. Denn Brutus, wie ihr wißt, war Cäsars Engel. Ihr Götter, urteilt, wie ihn Cäsar liebte! Kein Stich von allen schmerzte so wie der. Denn als der edle Cäsar Brutus sah, Warf Undank, stärker als Verräterwaffen, Ganz nieder ihn; da brach sein großes Herz, Und in dem Mantel sein Gesicht verhüllend, Grad am Gestell der Säule des Pompejus, Von der das Blut rann, fiel der große Cäsar. O meine Bürger, welch ein Fall war das! Da fielet ihr und ich, wir alle fielen, Und über uns frohlockte blutge Tücke. O ja!  nun weint ihr, und ich merk, ihr fühlt Den Drang des Mitleids; dies sind milde Tropfen. Wie?  weint ihr, gute Herzen, seht ihr gleich Nur unsers Cäsars Kleid verletzt?  Schaut her! Hier ist er selbst, geschändet von Verrätern.</p>
+<p>Erster Bürger. O kläglich Schauspiel!</p>
+<p>Zweiter Bürger. O edler Cäsar!</p>
+<p>Dritter Bürger. O jammervoller Tag!</p>
+<p>Vierter Bürger. O Buben und Verräter!</p>
+<p>Erster Bürger. O blutger Anblick!</p>
+<p>Zweiter Bürger. Wir wollen Rache!  Rache!  Auf und sucht! Sengt!  brennt!  schlagt!  mordet!  laßt nicht einen leben!</p>
+<p>Antonius. Seid ruhig, meine Bürger!</p>
+<p>Erster Bürger. Still da!  Hört den edlen Antonius!</p>
+<p>Zweiter Bürger. Wir wollen ihn hören, wir wollen ihm folgen, wir wollen für ihn sterben!</p>
+<p>Antonius. Ihr guten, lieben Freund&#x27;, ich muß euch nicht Hinreißen zu des Aufruhrs wildem Sturm. Die diese Tat getan, sind ehrenwert. Was für Beschwerden sie persönlich führen, Warum sie&#x27;s taten, ach!  das weiß ich nicht; Doch sind sie weis und ehrenwert, und werden Euch sicherlich mit Gründen Rede stehn. Nicht euer Herz zu stehlen, komm ich, Freunde; Ich bin kein Redner, wie es Brutus ist, Nur, wie ihr alle wißt, ein schlichter Mann Dem Freund ergeben, und das wußten die Gar wohl, die mir gestattet, hier zu reden. Ich habe weder Witz noch Wort&#x27; und Würde, Noch Kunst des Vortrags noch die Macht der Rede, Der Menschen Blut zu reizen; nein, ich spreche Nur gradezu und sag euch, was ihr wißt. Ich zeig euch des geliebten Cäsars Wunden, Die armen stummen Munde, heiße die Statt meiner reden.  Aber wär ich Brutus Und Brutus Mark Anton, dann gäb es einen, Der eure Geister schürt&#x27; und jeder Wunde Des Cäsars eine Zunge lieh&#x27;, die selbst Die Steine Roms zum Aufstand würd empören.</p>
+<p>Dritter Bürger. Empörung!</p>
+<p>Erster Bürger. Steckt des Brutus Haus in Brand!</p>
+<p>Dritter Bürger. Hinweg denn!  kommt, sucht die Verschwornen auf!</p>
+<p>Antonius. Noch hört mich, meine Bürger, hört mich an!</p>
+<p>Bürger. Still da!  Hört Mark Anton!  den edlen Mark Anton!</p>
+<p>Antonius. Nun, Freunde, wißt ihr selbst auch, was ihr tut? Wodurch verdiente Cäsar eure Liebe? Ach nein!  ihr wißt nicht.--Hört es denn!  Vergessen Habt ihr das Testament, wovon ich sprach.</p>
+<p>Bürger. Wohl wahr!  Das Testament!  Bleibt, hört das Testament!</p>
+<p>Antonius. Hier ist das Testament mit Cäsars Siegel; Darin vermacht er jedem Bürger Roms, Auf jeden Kopf euch, fünfundsiebzig Drachmen.</p>
+<p>Zweiter Bürger. O edler Cäsar!--Kommt, rächt seinen Tod!</p>
+<p>Dritter Bürger. O königlicher Cäsar.</p>
+<p>Antonius. Hört mich mit Geduld!</p>
+<p>Bürger. Still da!</p>
+<p>Antonius. Auch läßt er alle seine Lustgehege, Verschloßne Lauben, neugepflanzte Gärten Diesseit der Tiber euch und euren Erben Auf ewge Zeit, damit ihr euch ergehn Und euch gemeinsam dort ergötzen könnt. Das war ein Cäsar: wann kommt seinesgleichen?</p>
+<p>Erster Bürger. Nimmer!  nimmer!--Kommt!  hinweg!  hinweg!  hinweg! Verbrennt den Leichnam auf dem heilgen Platze, Und mit den Bränden zündet den Verrätern Die Häuser an.  Nehmt denn die Leiche auf!</p>
+<p>Zweiter Bürger. Geht!  holt Feuer!</p>
+<p>Dritter Bürger. Reißt Bänke ein!</p>
+<p>Vierter Bürger. Reißt Sitze, Läden, alles ein!</p>
+<p>(Die Bürger mit Cäsars Leiche ab.)</p>
+<p>Antonius. Nun wirk es fort.  Unheil, du bist im Zuge: Nimm, welchen Lauf du willst!-- Ein Diener kommt. Was bringst du, Bursch?</p>
+<p>Diener. Herr!  Octavius ist schon nach Rom gekommen.</p>
+<p>Antonius. Wo ist er?</p>
+<p>Diener. Er und Lepidus sind in Cäsars Hause.</p>
+<p>Antonius. Ich will sofort dahin, ihn zu besuchen, Er kommt erwünscht.  Das Glück ist aufgeräumt Und wird in dieser Laun uns nichts versagen.</p>
+<p>Diener. Ich hört ihn sagen, Cassius und Brutus Sei&#x27;n durch die Tore Roms wie toll geritten.</p>
+<p>Antonius. Vielleicht vernahmen sie vom Volke Kundschaft, Wie ich es aufgewiegelt.  Führ indes Mich zum Octavius.  (Beide ab.)</p>
+<p>Dritte Szene Eine Straße</p>
+<p>Cinna, der Poet, tritt auf</p>
+<p>Cinna. Mir träumte heut, daß ich mit Cäsarn schmauste, Und Mißgeschick füllt meine Phantasie. Ich bin unlustig, aus dem Haus zu gehn, Doch treibt es mich heraus.</p>
+<p>Bürger kommen.</p>
+<p>Erster Bürger. Wie ist Euer Name?</p>
+<p>Zweiter Bürger. Wo geht Ihr hin?</p>
+<p>Dritter Bürger. Wo wohnt Ihr?</p>
+<p>Vierter Bürger. Seid Ihr verheiratet oder ein Junggesell?</p>
+<p>Zweiter Bürger. Antwortet jedem unverzüglich.</p>
+<p>Erster Bürger. Ja, und kürzlich.</p>
+<p>Vierter Bürger. Ja, und weislich.</p>
+<p>Dritter Bürger. Ja, und ehrlich, das raten wir Euch.</p>
+<p>Cinna. Wie ist mein Name?  Wohin gehe ich?  Wo wohne ich?  Bin ich verheiratet oder ein Junggesell?  Also um jedem Manne unverzüglich und kürzlich, weislich und ehrlich zu antworten, sage ich weislich: ich bin ein Junggesell.</p>
+<p>Zweiter Bürger. Das heißt soviel: wer heiratet, ist ein Narr.  Dafür Denke ich Euch eins zu versetzen.  Weiter, unverzüglich!</p>
+<p>Cinna. Unverzüglich gehe ich zu Cäsars Bestattung.</p>
+<p>Erster Bürger. Als Freund oder Feind?</p>
+<p>Cinna. Als Freund.</p>
+<p>Zweiter Bürger. Das war unverzüglich beantwortet.</p>
+<p>Vierter Bürger. Eure Wohnung, kürzlich!</p>
+<p>Cinna. Kürzlich, ich wohne beim Kapitol.</p>
+<p>Dritter Bürger. Euer Name, Herr!  ehrlich!</p>
+<p>Cinna. Ehrlich, mein Name ist Cinna.</p>
+<p>Erster Bürger. Reißt ihn in Stücke!  Er ist ein Verschworner.</p>
+<p>Cinna. Ich bin Cinna, der Poet!  Ich bin Cinna, der Poet!</p>
+<p>Vierter Bürger. Zerreißt ihn für seine schlechten Verse!  Zerreißt ihn für seine schlechten Verse!</p>
+<p>Cinna. Ich bin nicht Cinna, der Verschworne.</p>
+<p>Vierter Bürger. Es tut nichts!  sein Name ist Cinna; reißt ihm den Namen aus dem Herzen und laßt ihn laufen.</p>
+<p>Dritter Bürger. Zerreißt ihn!  Zerreißt ihn!  Kommt, Brände!  Heda, Feuerbrände!  Zum Brutus!  Zum Cassius!  Steckt alles in Brand!  Ihr zu des Decius Hause! Ihr zu des Casca!  Ihr zu des Ligarius!  Fort!  Kommt!</p>
+<p>(Alle ab.)</p>
+<h2 class="chapter" id="c4">Vierter Aufzug</h2>
+<p>Erste Szene Rom.  Ein Zimmer des Antonius</p>
+<p>Antonius, Octavius und Lepidus, an einem Tische sitzend</p>
+<p>Antonius. Die müssen also sterben, deren Namen Hier angezeichnet stehn.</p>
+<p>Octavius. Auch Euer Bruder Muß sterben, Lepidus.  Ihr willigt drein?</p>
+<p>Lepidus. Ich willge drein.</p>
+<p>Octavius. Zeichn ihn, Antonius.</p>
+<p>Lepidus. Mit dem Beding, daß Publius nicht lebe, Der Eurer Schwester Sohn ist, Mark Anton.</p>
+<p>Antonius. Er lebe nicht; sieh her, ein Strich verdammt ihn. Doch Lepidus, geht Ihr zu Cäsars Haus, Bringt uns sein Testament; wir wollen sehn, Was an Vermächtnissen sich kürzen läßt.</p>
+<p>Lepidus. Wie?  Soll ich hier euch finden?</p>
+<p>Octavius. Hier oder auf dem Kapitol.  (Lepidus ab.)</p>
+<p>Antonius. Dies ist ein schwacher, unbrauchbarer Mensch, Zum Botenlaufen nur geschickt.  Verdient er, Wenn man die dreibenannte Welt verteilt, Daß er als dritter Mann sein Teil empfange?</p>
+<p>Octavius. Ihr glaubtet es und hörtet auf sein Wort, Wen man im schwarzen Rate unsrer Acht Zum Tode zeichnen sollte.</p>
+<p>Antonius. Octavius, ich sah mehr Tag&#x27; als Ihr. Ob wir auf diesen Mann schon Ehren häufen, Um manche Last des Leumunds abzuwälzen, Er trägt sie doch nur wie der Esel Gold, Der unter dem Geschäfte stöhnt und schwitzt, Geführt, getrieben, wie den Weg wir weisen; Und hat er unsern Schatz, wohin wir wollen, Gebracht, dann nehmen wir die Last ihm ab Und lassen ihn als ledgen Esel laufen, Daß er die Ohren schütteln mög und grasen Auf offner Weide.</p>
+<p>Octavius. Tut, was Euch beliebt; Doch ist er ein geprüfter, wackrer Krieger.</p>
+<p>Antonius. Das ist mein Pferd ja auch, Octavius, Dafür bestimm ich ihm sein Maß von Futter. Ist&#x27;s ein Geschöpf nicht, das ich lehre fechten, Umwenden, halten, grade vorwärts rennen, Des körperliches Tun mein Geist regiert? In manchem Sinn ist Lepidus nichts weiter: Man muß ihn erst abrichten, lenken, mahnen; Ein Mensch von dürftgem Geiste, der sich nährt Von Gegenständen, Künsten, Nachahmungen, Die, alt und schon von andern abgenutzt, Erst seine Mode werden.  Sprecht nicht anders Von ihm als einem Werkzeug nur.--Und nun, Octavius, vernehmet große Dinge: Brutus und Cassius werben Völker an, Wir müssen ihnen stracks die Spitze bieten; Drum laßt die Bundsgenossen uns versammeln, Die Freunde sichern, alle Macht aufbieten; Und laßt zu Rat uns sitzen alsobald, Wie man am besten Heimliches entdeckt Und offnen Fährlichkeiten sicher trotzt.</p>
+<p>Octavius. Das laßt uns tun; denn uns wird aufgelauert, Und viele Feinde bellen um uns her; Und manche, so da lächeln, fürcht ich, tragen Im Herzen tausend Unheil.  (Beide ab.)</p>
+<p>Zweite Szene Vor Brutus&#x27; Zelte im Lager nahe bei Sardes</p>
+<p>Trommeln werden gerührt.  Brutus, Lucilius, Lucius und Soldaten treten auf.  Pindarus und Titinius kommen ihnen entgegen</p>
+<p>Brutus. Halt!</p>
+<p>Lucilius. He!  Gebt das Wort und haltet.</p>
+<p>Brutus. Was gibt&#x27;s, Lucilius?  Ist Cassius nahe?</p>
+<p>Lucilius. Er ist nicht weit, und hier kommt Pindarus, Im Namen seines Herrn Euch zu begrüßen.</p>
+<p>(Pindarus überreicht dem Brutus einen Brief.)</p>
+<p>Brutus. Sein Gruß ist freundlich.  Wißt, daß Euer Herr, Von selbst verändert oder schlecht beraten, Mir gültgen Grund gegeben, ungeschehn Geschehenes zu wünschen.  Aber ist er Hier in der Näh, so wird er mir genugtun.</p>
+<p>Pindarus. Ich zweifle nicht, voll Ehr und Würdigkeit Wird, wie er ist, mein edler Herr erscheinen.</p>
+<p>Brutus. Wir zweifeln nicht an ihm.--Ein Wort, Lucilius: Laßt mich erfahren, wie er Euch empfing.</p>
+<p>Lucilius. Mit Höflichkeit und Ehrbezeugung gnug, Doch nicht mit so vertrauter Herzlichkeit, Nicht mit so freiem, freundlichem Gespräch, Als er vordem wohl pflegte.</p>
+<p>Brutus. Du beschreibst, Wie warme Freund&#x27; erkalten.  Merke stets Lucilius, wenn Lieb erkrankt und schwindet, Nimmt sie gezwungne Höflichkeiten an. Einfältge, schlichte Treu weiß nichts von Künsten; Doch Gleisner sind wie Pferde, heiß im Anlauf: Sie prangen schön mit einem Schein von Kraft; Doch sollen sie den blutgen Sporn erdulden, So sinkt ihr Stolz, und falschen Mähren gleich Erliegen sie der Prüfung.--Naht sein Heer?</p>
+<p>Lucilius. Sie wollten Nachtquartier in Sardes halten. Der größte Teil, die ganze Reiterei Kommt mit dem Cassius.</p>
+<p>(Ein Marsch hinter der Szene.)</p>
+<p>Brutus. Horch!  Er ist schon da. Rückt langsam ihm entgegen.</p>
+<p>Cassius tritt auf mit Soldaten.</p>
+<p>Cassius. Halt!</p>
+<p>Brutus. Halt!  Gebt das Befehlswort weiter.</p>
+<p>(Hinter der Szene: Halt!--Halt!--Halt!)</p>
+<p>Cassius. Ihr tatet mir zu nah, mein edler Brutus.</p>
+<p>Brutus. Ihr Götter, richtet!  Tu ich meinen Feinden Zu nah?  und sollt ich&#x27;s meinem Bruder tun?</p>
+<p>Cassius. Brutus, dies Euer würdiges Benehmen Deckt Unrecht zu, und wenn Ihr es begeht--</p>
+<p>Brutus. Seid ruhig, Cassius!  bringet leise vor, Was für Beschwerd Ihr habt.--Ich kenn Euch wohl. Im Angesicht der beiden Heere hier, Die nichts von uns als Liebe sehen sollten, Laßt uns nicht hadern.  Heißt hinweg sie ziehn; Führt Eure Klagen dann in meinem Zelt; Ich will Gehör Euch geben.</p>
+<p>Cassius. Pindarus, Heißt unsre Obersten ein wenig weiter Von diesem Platz hinweg die Scharen führen.</p>
+<p>Brutus. Tut Ihr das auch, Lucilius.  Laßt niemand, Solang die Unterredung dauert, ein. Laßt Lucius und Titinius Wache stehn.  (Alle ab.)</p>
+<p>Dritte Szene Im Zelte des Brutus</p>
+<p>Lucius und Titinius in einiger Entfernung davon.  Brutus und Cassius treten auf</p>
+<p>Cassius. Eur Unrecht gegen mich erhellet hieraus: Ihr habt den Lucius Pella hart verdammt, Weil er bestochen worden von den Sardern; Mein Brief, worin ich mich für ihn verwandt, Weil ich ihn kenne, ward für nichts geachtet.</p>
+<p>Brutus. Ihr tatet Euch zu nah, in solchem Fall zu schreiben.</p>
+<p>Cassius. In solcher Zeit, wie diese, ziemt es nicht, Daß jeder kleine Fehl bekrittelt werde.</p>
+<p>Brutus. Laßt mich Euch sagen, Cassius, daß Ihr selbst Verschrien seid, weil Ihr hohle Hände macht, Weil Ihr an Unverdiente Eure Ämter Verkauft und feilschet.</p>
+<p>Cassius. Mach ich hohle Hände? Ihr wißt wohl, Ihr seid Brutus, der dies sagt, Sonst, bei den Göttern!  wär dies Wort Eur letztes.</p>
+<p>Brutus. Des Cassius Name adelt die Bestechung, Darum verbirgt die Züchtigung ihr Haupt.</p>
+<p>Cassius. Die Züchtigung!</p>
+<p>Brutus. Denkt an den März, denkt an des Märzen Idus! Hat um das Recht der große Julius nicht Geblutet?  Welcher Bube legt&#x27; an ihn Die Hand wohl, schwang den Stahl, und nicht ums Recht? Wie?  Soll nun einer derer, die den ersten Von allen Männern dieser Welt erschlugen, Bloß, weil er Räuber schützte: sollen wir Mit schnöden Gaben unsre Hand besudeln? Und unser Würden weiten Kreis verkaufen Für soviel Plunders, als man etwa greift? Ein Hund sein lieber und den Mond anbellen, Als solch ein Römer!</p>
+<p>Cassius. Brutus, reizt mich nicht! Ich will&#x27;s nicht dulden.  Ihr vergeßt Euch selbst, Wenn Ihr mich so umzäunt; ich bin ein Krieger, Erfahrner, älter, fähiger als Ihr, Bedingungen zu machen.</p>
+<p>Brutus. Redet nur,-- Ihr seid es doch nicht, Cassius.</p>
+<p>Cassius. Ich bin&#x27;s.</p>
+<p>Brutus. Ich sag, Ihr seid es nicht.</p>
+<p>Cassius. Drängt mich nicht mehr, ich werde mich vergessen; Gedenkt an Euer Heil, reizt mich nicht länger.</p>
+<p>Brutus. Geht, leichtgesinnter Mann!</p>
+<p>Cassius. Ist&#x27;s möglich?</p>
+<p>Brutus. Hört mich an, denn ich will reden. Muß ich mich Eurer jähen Hitze fügen? Muß ich erschrecken, wenn ein Toller starrt?</p>
+<p>Cassius. Ihr Götter!  Götter!  muß ich all dies dulden?</p>
+<p>Brutus. All dies?  Noch mehr!  Ergrimmt, bis es Euch birst, Das stolze Herz.  Geht, zeiget Euren Sklaven, Wie rasch zum Zorn Ihr seid, und macht sie zittern. Muß ich beiseit mich drücken?  muß den Hof Euch machen?  Muß ich dastehn und mich krümmen Vor Eurer krausen Laune?  Bei den Göttern! Ihr sollt hinunterwürgen Euren Gift, Und wenn Ihr börstet; denn von heute an Dient Ihr zum Scherz, ja zum Gelächter mir, Wenn Ihr Euch so gebärdet.</p>
+<p>Cassius. Dahin kam&#x27;s?</p>
+<p>Brutus. Ihr sagt, daß Ihr ein beßrer Krieger seid: Beweist es denn, macht Euer Prahlen wahr. Es soll mir lieb sein; denn, was mich betrifft, Ich werde gern von edlen Männern lernen.</p>
+<p>Cassius. Ihr tut zu nah, durchaus zu nah mir, Brutus. Ich sagt, ein ältrer Krieger, nicht ein beßrer. Sagt ich, ein beßrer?</p>
+<p>Brutus. Und hättet Ihr&#x27;s gesagt, mir gilt es gleich.</p>
+<p>Cassius. Mir hätte Cäsar das nicht bieten dürfen.</p>
+<p>Brutus. O schweigt!  Ihr durftet ihn auch nicht so reizen.</p>
+<p>Cassius. Ich durfte nicht?</p>
+<p>Brutus. Nein.</p>
+<p>Cassius. Wie?  Durft ihn nicht reizen?</p>
+<p>Brutus. Ihr durftet es für Euer Leben nicht.</p>
+<p>Cassius. Wagt nicht zuviel auf meine Liebe hin, Ich möchte tun, was mich nachher gereute.</p>
+<p>Brutus. Ihr habt getan, was Euch gereuen sollte. Eur Drohn hat keine Schrecken, Cassius; Denn ich bin so bewehrt durch Redlichkeit, Daß es vorbeizieht wie der leere Wind, Der nichts mir gilt.  Ich sandte hin zu Euch Um eine Summe Golds, die Ihr mir abschlugt. Ich kann kein Geld durch schnöde Mittel heben. Beim Himmel!  lieber prägt ich ja mein Herz Und tröpfelte mein Blut für Drachmen aus Als daß ich aus der Bauern harten Händen Die jämmerliche Habe winden sollte Durch irgendeinen Schlich.--Ich sandt um Gold zu Euch, Um meine Legionen zu bezahlen; Ihr schlugt mir&#x27;s ab: war das, wie Cassius sollte? Hätt ich dem Cajus Cassius so erwidert? Wenn Marcus Brutus je so geizig wird, Daß er so lumpge Pfennige den Freunden Verschließt, dann rüstet eure Donnerkeile, Zerschmettert ihn, ihr Götter!</p>
+<p>Cassius. Ich schlug es Euch nicht ab.</p>
+<p>Brutus. Ihr tatet es.</p>
+<p>Cassius. Ich tat&#x27;s nicht; der Euch meine Antwort brachte, War nur ein Tor.--Brutus zerreißt mein Herz-- Es sollt ein Freund des Freundes Schwächen tragen, Brutus macht meine größer, als sie sind.</p>
+<p>Brutus. Das tu ich nicht, bis Ihr damit mich quält.</p>
+<p>Cassius. Ihr liebt mich nicht.</p>
+<p>Brutus. Nicht Eure Fehler lieb ich.</p>
+<p>Cassius. Nie konnt ein Freundesaug dergleichen sehn.</p>
+<p>Brutus. Des Schmeichlers Auge säh sie nicht, erschienen Sie auch so riesenhaft wie der Olymp.</p>
+<p>Cassius. Komm, Mark Anton, und komm, Octavius, nur! Nehmt eure Rach allein am Cassius; Denn Cassius ist des Lebens überdrüssig, Gehaßt von einem, den er liebt; getrotzt Von seinem Bruder; wie ein Knecht gescholten. Man späht nach allen meinen Fehlern, zeichnet Sie in ein Denkbuch, lernt sie aus dem Kopf, Wirft sie mir in die Zähne.--Oh, ich könnte Aus meinen Augen meine Seele weinen! Da ist mein Dolch, hier meine nackte Brust; Ein Herz drin, reicher als des Plutus Schacht, Mehr wert als Gold; wo du ein Römer bist, So nimm&#x27;s heraus.  Ich, der dir Gold versagt, Ich biete dir mein Herz.  Stoß zu, wie einst Auf Cäsar!  Denn ich weiß, als du am ärgsten Ihn haßtest, liebtest du ihn mehr, als je Du Cassius geliebt.</p>
+<p>Brutus. Steckt Euren Dolch ein! Seid zornig, wenn Ihr wollt: es steh Euch frei! Tut, was Ihr wollt, Schmach soll für Laune gelten. O Cassius!  einem Lamm seid Ihr gesellt, Das so nur Zorn hegt wie der Kiesel Feuer, Der, viel geschlagen, flüchtge Funken zeigt Und gleich drauf wieder kalt ist.</p>
+<p>Cassius. Lebt ich dazu, Ein Scherz nur und Gelächter meinem Brutus Zu sein, wenn Gram und böses Blut mich plagt?</p>
+<p>Brutus. Als ich das sprach, hatt ich auch böses Blut.</p>
+<p>Cassius. Gesteht Ihr soviel ein?  Gebt mir die Hand.</p>
+<p>Brutus. Und auch mein Herz.</p>
+<p>Cassius. O Brutus!</p>
+<p>Brutus. Was verlangt Ihr?</p>
+<p>Cassius. Liebt Ihr mich nicht genug, Geduld zu haben, Wenn jene rasche Laune, von der Mutter Mir angeerbt, macht, daß ich mich vergesse?</p>
+<p>Brutus. Ja, Cassius; künftig, wenn Ihr allzu streng Mit Eurem Brutus seid, so denket er, Die Mutter schmäl aus Euch, und läßt Euch gehn.</p>
+<p>(Lärm hinter der Szene.)</p>
+<p>Ein Poet (hinter der Szene). Laßt mich hinein, ich muß die Feldherrn sehn. Ein Zank ist zwischen ihnen; &#x27;s ist nicht gut, Daß sie allein sind.</p>
+<p>Lucilius (hinter der Szene). Ihr sollt nicht hinein.</p>
+<p>Poet (hinter der Szene). Der Tod nur hält mich ab.</p>
+<p>Der Poet tritt ein.</p>
+<p>Cassius. Ei nun, was gibt&#x27;s?</p>
+<p>Poet. Schämt ihr euch nicht, ihr Feldherrn?  Was beginnt ihr? Liebt euch, wie sich&#x27;s für solche Männer schickt; Fürwahr, ich hab mehr Jahr&#x27; als ihr erblickt.</p>
+<p>Cassius. Ha, ha!  wie toll der Zyniker nicht reimt!</p>
+<p>Brutus. Ihr Schlingel, packt Euch!  Fort, verwegner Bursch!</p>
+<p>Cassius. Ertragt ihn, Brutus!  seine Weis ist so.</p>
+<p>Brutus. Kennt er die Zeit, so kenn ich seine Laune. Was soll der Krieg mit solchen Schellennarren? Geh fort, Gesell!</p>
+<p>Cassius. Fort!  fort!  geh deines Wegs!</p>
+<p>(Der Poet ab.) Lucilius und Titinius kommen.</p>
+<p>Brutus. Lucilius und Titinius, heißt die Obersten Auf Nachtquartier für ihre Scharen denken.</p>
+<p>Cassius. Kommt selber dann und bringt mit euch Messala Sogleich zu uns herein.</p>
+<p>(Lucilius und Titinius ab.)</p>
+<p>Brutus. Lucius, eine Schale Weins.</p>
+<p>Cassius. Ich dachte nicht, daß Ihr so zürnen könntet.</p>
+<p>Brutus. O Cassius, ich bin krank an manchem Gram.</p>
+<p>Cassius. Ihr wendet die Philosophie nicht an, Die ihr bekennt, gebt Ihr zufällgen Übeln Raum.</p>
+<p>Brutus. Kein Mensch trägt Leiden besser.--Portia starb.</p>
+<p>Cassius. Ha!  Portia!</p>
+<p>Brutus. Sie ist tot.</p>
+<p>Cassius. Lag das im Sinn Euch, wie entkam ich lebend? O bittrer, unerträglicher Verlust! An welcher Krankheit?</p>
+<p>Brutus. Die Trennung nicht erduldend; Und Gram, daß mit Octavius Mark Anton So mächtig worden--denn mit ihrem Tod Kam der Bericht--das brachte sie von Sinnen, Und wie sie sich allein sah, schlang sie Feuer.</p>
+<p>Cassius. Und starb so?</p>
+<p>Brutus. Starb so.</p>
+<p>Cassius. O ihr ewgen Götter!</p>
+<p>Lucius kommt mit Wein und Kerzen.</p>
+<p>Brutus. Sprecht nicht mehr von ihr.--Gebt eine Schale Weins! Hierin begrab ich allen Unglimpf, Cassius.  (Trinkt.)</p>
+<p>Cassius. Mein Herz ist durstig, Euch Bescheid zu tun. Füllt, Lucius, bis der Wein den Becher kränzt; Von Brutus&#x27; Liebe trink ich nie zuviel.  (Trinkt.)</p>
+<p>Titinius und Messala kommen.</p>
+<p>Brutus. Herein, Titinius!  Seid gegrüßt, Messala! Nun laßt uns dicht um diese Kerze sitzen Und, was uns frommt, in Überlegung ziehn.</p>
+<p>Cassius. O Portia, bist du hin!</p>
+<p>Brutus. Nicht mehr, ich bitt Euch! Messala, seht, ich habe Brief&#x27; empfangen, Daß Mark Anton, mit ihm Octavius, Heranziehn gegen uns mit starker Macht Und ihren Heerzug nach Philippi lenken.</p>
+<p>Messala. Ich habe Briefe von demselben Inhalt.</p>
+<p>Brutus. Mit welchem Zusatz?</p>
+<p>Messala. Daß durch Proskription und Achtserklärung Octavius, Mark Anton und Lepidus Auf hundert Senatoren umgebracht.</p>
+<p>Brutus. Darüber weichen unsre Briefe ab. Der meine spricht von siebzig Senatoren, Die durch die Ächtung fielen; Cicero Sei einer aus der Zahl.</p>
+<p>Cassius. Auch Cicero?</p>
+<p>Messala. Ja, er ist tot, und durch den Achtsbefehl.-- Kam Euer Brief von Eurer Gattin, Herr?</p>
+<p>Brutus. Nein, Messala.</p>
+<p>Messala. Und meldet Euer Brief von ihr Euch nichts?</p>
+<p>Brutus. Gar nichts, Messala.</p>
+<p>Messala. Das bedünkt mich seltsam.</p>
+<p>Brutus. Warum?  Wißt Ihr aus Eurem Brief von ihr?</p>
+<p>Messala. Nein, Herr.</p>
+<p>Brutus. Wenn Ihr ein Römer seid, sagt mir die Wahrheit.</p>
+<p>Messala. Tragt denn die Wahrheit, die ich sag, als Römer: Sie starb, und zwar auf wunderbare Weise.</p>
+<p>Brutus. Leb wohl denn, Portia!--Wir müssen sterben, Messala; dadurch, daß ich oft bedacht, Sie müß einst sterben, hab ich die Geduld, Es jetzt zu tragen.</p>
+<p>Messala. So trägt ein großer Mann ein großes Unglück.</p>
+<p>Cassius. Durch Kunst hab ich soviel hievon als ihr, Doch die Natur ertrüg&#x27;s in mir nicht so.</p>
+<p>Brutus. Wohlan, zu unserm lebenden Geschäft! Was denkt Ihr?  Ziehn wir nach Philippi gleich?</p>
+<p>Cassius. Mir scheint&#x27;s nicht ratsam.</p>
+<p>Brutus. Euer Grund?</p>
+<p>Cassius. Hier ist er: Weit besser ist es, wenn der Feind uns sucht; So wird er, sich zum Schaden, seine Mittel Erschöpfen, seine Krieger müde machen. Wir liegen still indes, bewahren uns In Ruh wehrhaften Stand und Munterkeit.</p>
+<p>Brutus. Den bessern Gründen müssen gute weichen. Das Land von hier bis nach Philippi hin Beweist uns nur aus Zwang Ergebenheit, Denn murrend hat es Lasten uns gezahlt. Der Feind, indem er durch dasselbe zieht, Wird seine Zahl daraus ergänzen können Und uns erfrischt, vermehrt, ermutigt nahn. Von diesem Vorteil schneiden wir ihn ab, Wenn zu Philippi wir die Stirn ihm bieten, Dies Volk im Rücken.</p>
+<p>Cassius. Hört mich, lieber Bruder!</p>
+<p>Brutus. Erlaubt mir gütig!--Ferner müßt Ihr merken, Daß wir von Freunden alles aufgeboten, Daß unsre Legionen übervoll Und unsre Sache reif.  Der Feind nimmt täglich zu; Wir, auf dem Gipfel, stehn schon an der Neige. Der Strom der menschlichen Geschäfte wechselt; Nimmt man die Flut wahr, führet sie zum Glück; Versäumt man sie, so muß die ganze Reise Des Lebens sich durch Not und Klippen winden. Wir sind nun flott auf solcher hohen See Und müssen, wenn der Strom uns hebt, ihn nutzen; Wo nicht, geht unser schwimmend Gut verloren.</p>
+<p>Cassius. So zieht denn, wie Ihr wollt; wir rücken selbst Dem Feind entgegen nach Philippi vor.</p>
+<p>Brutus. Die tiefe Nacht hat das Gespräch beschlichen, Und die Natur muß frönen dem Bedürfnis, Das mit ein wenig Ruh wir täuschen wollen. Ist mehr zu sagen noch?</p>
+<p>Cassius. Nein.  Gute Nacht! Früh stehn wir also morgen auf, und fort.</p>
+<p>Brutus. Lucius, mein Schlafgewand!  (Lucius ab.)  Lebt wohl, Messala! Gute Nacht, Titinius!  Edler, edler Cassius, Gute Nacht und sanfte Ruh!</p>
+<p>Cassius. O teurer Bruder, Das war ein schlimmer Anfang dieser Nacht. Nie trenne solcher Zwiespalt unsre Herzen, Nie wieder, Brutus.</p>
+<p>Brutus. Alles steht ja wohl.</p>
+<p>Cassius. Nun, gute Nacht!</p>
+<p>Brutus. Gute Nacht, mein guter Bruder!</p>
+<p>Titinius und Messala. Mein Feldherr, gute Nacht!</p>
+<p>Brutus. Lebt alle wohl.</p>
+<p>(Cassius, Titinius und Messala ab.) Lucius kommt zurück mit dem Nachtkleide.</p>
+<p>Brutus. Gib das Gewand, wo hast du deine Laute?</p>
+<p>Lucius. Im Zelte hier.</p>
+<p>Brutus. Wie?  Schläfrig?  Armer Schelm, Ich tadle drum dich nicht; du hast dich überwacht. Ruf Claudius her und andre meiner Leute, Sie sollen hier im Zelt auf Kissen schlafen.</p>
+<p>Lucius. Varro und Claudius!</p>
+<p>Varro und Claudius kommen.</p>
+<p>Varro. Ruft mein Gebieter?</p>
+<p>Brutus. Ich bitt euch, liegt in meinem Zelt und schlaft; Bald weck ich euch vielleicht, um irgendwas Bei meinem Bruder Cassius zu bestellen.</p>
+<p>Varro. Wenn&#x27;s Euch beliebt, wir wollen stehn und warten.</p>
+<p>Brutus. Das nicht!  Nein, legt euch nieder, meine Freunde.-- (Die beiden Diener legen sich nieder.) Vielleicht verändert noch sich mein Entschluß.-- Sieh, Lucius, hier das Buch, das ich so suchte; Ich steckt es in die Tasche des Gewandes.</p>
+<p>Lucius. Ich wußte wohl, daß mein Gebieter mir Es nicht gegeben.</p>
+<p>Brutus. Hab Geduld mit mir, Mein guter Junge, ich bin sehr vergeßlich. Hältst du noch wohl die müden Augen auf Und spielst mir ein paar Weisen auf der Laute?</p>
+<p>Lucius. Ja, Herr, wenn&#x27;s Euch beliebt.</p>
+<p>Brutus. Das tut&#x27;s, mein Junge. Ich plage dich zuviel, doch du bist willig.</p>
+<p>Lucius. Es ist ja meine Pflicht.</p>
+<p>Brutus. Ich sollte dich Zur Pflicht nicht über dein Vermögen treiben; Ich weiß, daß junges Blut auf Schlafen hält.</p>
+<p>Lucius. Ich habe schon geschlafen, mein Gebieter.</p>
+<p>Brutus. Du tatest recht und sollst auch wieder schlafen. Ich will nicht lang dich halten; wenn ich lebe, Will ich dir Gutes tun. (Musik und ein Lied.) Die Weis ist schläfrig--Mörderischer Schlummer, Legst du die blei&#x27;rne Keul auf meinen Knaben, Der dir Musik macht?--Lieber Schelm, schlaf wohl, Ich tu dir&#x27;s nicht zuleid, daß ich dich wecke; Nickst du, so brichst du deine Laut entzwei; Ich nehm sie weg, und schlaf nun, guter Knabe. Laßt sehn!  Ist, wo ich aufgehört zu lesen, Das Blatt nicht eingelegt?  Hier, denk ich, ist&#x27;s.  (Er setzt sich.) Der Geist Cäsars erscheint. Wie dunkel brennt die Kerze!--Ha, wer kommt? Ich glaub, es ist die Schwäche meiner Augen, Die diese schreckliche Erscheinung schafft. Sie kommt mir näher--Bist du irgendwas? Bist du ein Gott, ein Engel oder Teufel, Der starren macht mein Blut, das Haar mir sträubt? Gib Rede, was du bist.</p>
+<p>Geist. Dein böser Engel, Brutus.</p>
+<p>Brutus. Weswegen kommst du?</p>
+<p>Geist. Um dir zu sagen, daß du zu Philippi Mich sehn sollst.</p>
+<p>Brutus. Gut, ich soll dich wiedersehn?</p>
+<p>Geist. Ja, zu Philippi.  (Verschwindet.)</p>
+<p>Brutus. Nun, zu Philippi will ich denn dich sehn. Nun ich ein Herz gefaßt, verschwindest du; Gern spräch ich mehr mit dir noch, böser Geist.-- Bursch!  Lucius!--Varro!  Claudius!  wacht auf! Claudius!</p>
+<p>Lucius. Die Saiten sind verstimmt.</p>
+<p>Brutus. Er glaubt, er sei bei seiner Laute noch. Erwache, Lucius!</p>
+<p>Lucius. Herr?</p>
+<p>Brutus. Hast du geträumt, daß du so schrieest, Lucius?</p>
+<p>Lucius. Ich weiß nicht, mein Gebieter, daß ich schrie.</p>
+<p>Brutus. Ja doch, was tatst du; sahst du irgendwas?</p>
+<p>Lucius. Nichts auf der Welt.</p>
+<p>Brutus. Schlaf wieder, Lucius.--Heda, Claudius! Du, Bursch, wach auf!</p>
+<p>Varro. Herr?</p>
+<p>Claudius. Herr?</p>
+<p>Brutus. Weswegen schriet ihr so in eurem Schlaf?</p>
+<p>Varro und Claudius. Wir schrieen, Herr?</p>
+<p>Brutus. Ja, saht ihr irgendwas?</p>
+<p>Varro. Ich habe nichts gesehn.</p>
+<p>Claudius. Ich gleichfalls nicht.</p>
+<p>Brutus. Geht und empfehlt mich meinem Bruder Cassius; Er lasse früh voraufziehn seine Macht, Wir wollen folgen.</p>
+<p>Varro und Claudius. Herr, es soll geschehn.</p>
+<p>(Alle ab.)</p>
+<h2 class="chapter" id="c5">Fünfter Aufzug</h2>
+<p>Erste Szene Die Ebene von Philippi</p>
+<p>Octavius, Antonius und ihr Heer</p>
+<p>Octavius. Nun, Mark Anton, wird meine Hoffnung wahr. Ihr spracht, der Feind werd auf den Höhn sich halten Und nicht herab in unsre Ebene ziehn; Es zeigt sich anders: seine Scharen nahn! Sie wollen zu Philippi hier uns mahnen Und Antwort geben, eh wir sie befragt.</p>
+<p>Antonius. Pah, steck ich doch in ihren Herzen, weiß, Warum sie&#x27;s tun.  Sie wären&#x27;s wohl zufrieden, Nach andern Plätzen hinzuziehn, und kommen Mit bangem Trotz, im Wahn, durch diesen Aufzug Uns vorzuspiegeln, sie besitzen Mut. Allein dem ist nicht so.</p>
+<p>Ein Bote tritt auf.</p>
+<p>Bote. Bereitet euch, ihr Feldherrn. Der Feind rückt an in wohlgeschloßnen Reihn. Sein blutges Schlachtpanier ist ausgehängt, Und etwas muß im Augenblick geschehn.</p>
+<p>Antonius. Octavius, führet langsam Euer Heer Zur linken Hand der Ebene weiter vor.</p>
+<p>Octavius. Zur rechten ich; behaupte du die linke.</p>
+<p>Antonius. Was kreuzt Ihr mich, da die Entscheidung drängt?</p>
+<p>Octavius. Ich kreuz Euch nicht, doch ich verlang es so.</p>
+<p>(Marsch.) Trommeln werden gerührt.  Brutus und Cassius kommen mit ihrem Heere; Lucilius, Titinius, Messala und andre.</p>
+<p>Brutus. Sie halten still und wollen ein Gespräch.</p>
+<p>Cassius. Titinius, steh!  Wir treten vor und reden.</p>
+<p>Octavius. Antonius, geben wir zur Schlacht das Zeichen?</p>
+<p>Antonius. Nein, Cäsar, laßt uns ihres Angriffs warten. Kommt, tretet vor!  Die Feldherrn wünschen ja Ein Wort mit uns.</p>
+<p>Octavius. Bleibt stehn bis zum Signal.</p>
+<p>Brutus. Erst Wort, dann Schlag: nicht wahr, ihr Landsgenossen?</p>
+<p>Octavius. Nicht, daß wir mehr als ihr nach Worten fragen.</p>
+<p>Brutus. Gut Wort, Octavius, gilt wohl bösen Streich.</p>
+<p>Antonius. Ihr, Brutus, gebt bei bösem Streich gut Wort. Des zeuget Cäsars Herz, durchbohrt von Euch, Indes Ihr rieft: &quot;Lang lebe Cäsar, Heil!&quot;</p>
+<p>Cassius. Die Führung Eurer Streiche, Mark Anton, Ist uns noch unbekannt; doch Eure Worte Begehn an Hyblas Bienen Raub und lassen Sie ohne Honig.</p>
+<p>Antonius. Nicht auch stachellos?</p>
+<p>Brutus. O ja!  auch tonlos, denn Ihr habt ihr Summen Gestohlen, Mark Anton, und drohet weislich, Bevor Ihr stecht.</p>
+<p>Antonius. Ihr tatet&#x27;s nicht, Verräter, Als eure schnöden Dolch&#x27; einander stachen In Cäsars Brust.  Ihr zeigtet eure Zähne Wie Affen, krocht wie Hunde, bücktet tief Wie Sklaven euch und küßtet Cäsars Füße; Derweil von hinten der verfluchte Casca Mit tückschem Bisse Cäsars Nacken traf. O Schmeichler!</p>
+<p>Cassius. Schmeichler!--Dankt Euch selbst nun, Brutus, Denn diese Zunge würde heut nicht freveln, Wär Cassius&#x27; Rat befolgt.</p>
+<p>Octavius. Zur Sache!  kommt!  Macht Widerspruch uns schwitzen, So kostet rötre Tropfen der Erweis. Seht!  auf Verschworne zück ich dieses Schwert: Wann, denkt ihr, geht es wieder in die Scheide? Nie, bis des Cäsar dreiundzwanzig Wunden Gerächt sind, oder bis ein andrer Cäsar Mit Mord gesättigt der Verräter Schwert.</p>
+<p>Brutus. Cäsar, du kannst nicht durch Verräter sterben, Du bringest denn sie mit.</p>
+<p>Octavius. Das hoff ich auch; Von Brutus&#x27; Schwert war Tod mir nicht bestimmt.</p>
+<p>Brutus. O wärst du deines Stammes Edelster, Du könntest, junger Mann, nicht schöner sterben.</p>
+<p>Cassius. Ein launisch Bübchen, unwert solchen Ruhms, Gesellt zu einem Wüstling und &#x27;nem Trinker.</p>
+<p>Antonius. Der alte Cassius!</p>
+<p>Octavius. Kommt, Antonius!  fort! Trotz in die Zähne schleudr&#x27; ich euch, Vertäter! Wagt ihr zu fechten heut, so kommt ins Feld, Wo nicht, wenn&#x27;s euch gemutet.</p>
+<p>(Octavius und Antonius mit ihrem Heere ab.)</p>
+<p>Cassius. Nun tobe, Wind!  schwill, Woge!  schwimme, Nachen! Der Sturm ist wach und alles auf dem Spiel.</p>
+<p>Brutus. Lucilius, hört!  ich muß ein Wort Euch sagen.</p>
+<p>Lucilius.  Herr?</p>
+<p>(Brutus und Lucilius reden beiseite miteinander.)</p>
+<p>Cassius. Messala!</p>
+<p>Messala. Was befiehlt mein Feldherr?</p>
+<p>Cassius. Messala, dies ist mein Geburtstag; grade An diesem Tag kam Cassius auf die Welt. Gib mir die Hand, Messala, sei mein Zeuge, Daß ich gezwungen, wie Pompejus einst, An eine Schlacht all unsre Freiheit wage. Du weißt, ich hielt am Epicurus fest Und seiner Lehr; nun ändr&#x27; ich meinen Sinn Und glaub an Dinge, die das Künftge deuten. Auf unserm Zug von Sardes stürzten sich Zwei große Adler auf das vordre Banner; Da saßen sie und fraßen gierig schlingend Aus unsrer Krieger Hand; sie gaben uns Hieher bis nach Philippi das Geleit; Heut morgen sind sie auf und fortgeflohn. Statt ihrer fliegen Raben, Geier, Krähn Uns überm Haupt und schaun herab auf uns Als einen siechen Raub; ihr Schatten scheint Ein Trauerhimmel, unter dem das Heer, Bereit, den Atem auszuhauchen, liegt.</p>
+<p>Messala. Nein, glaubt das nicht.</p>
+<p>Cassius. Ich glaub es auch nur halb, Denn ich bin frischen Mutes und entschlossen, Zu trotzen standhaft jeglicher Gefahr.</p>
+<p>Brutus. Tu das, Lucilius.</p>
+<p>Cassius. Nun, mein edler Brutus, Sein uns die Götter heute hold, auf daß wir Gesellt in Frieden unserm Alter nahn! Doch weil das Los der Menschen niemals sicher, Laßt uns bedacht sein auf den schlimmsten Fall. Verlieren wir dies Treffen, so ist dies Das allerletzte Mal, daß wir uns sprechen: Was habt Ihr dann Euch vorgesetzt zu tun?</p>
+<p>Brutus. Ganz nach der Vorschrift der Philosophie, Wonach ich Cato um den Tod getadelt, Den er sich gab (ich weiß nicht, wie es kommt, Allein ich find es feig und niederträchtig, Aus Furcht, was kommen mag, des Lebens Zeit So zu verkürzen), will ich mit Geduld Mich waffnen und den Willen hoher Mächte Erwarten, die das Irdische regieren.</p>
+<p>Cassius. Dann, geht die Schlacht verloren, laßt Ihr&#x27;s Euch Gefallen, daß man durch die Straßen Roms Euch im Triumphe führt?</p>
+<p>Brutus. Nein, Cassius, nein!  Glaub mir, du edler Römer, Brutus wird nie gebunden gehn nach Rom; Er trägt zu hohen Sinn.  Doch dieser Tag Muß enden, was des Märzen Idus anfing; Ob wir uns wieder treffen, weiß ich nicht: Drum laßt ein ewig Lebewohl uns nehmen. Gehab dich wohl, mein Cassius, für und für! Sehn wir uns wieder, nun, so lächeln wir; Wo nicht, so war dies Scheiden wohlgetan.</p>
+<p>Cassius. Gehab dich wohl, mein Brutus, für und für! Sehn wir uns wieder, lächeln wir gewiß; Wo nicht, ist wahrlich wohlgetan dies Scheiden.</p>
+<p>Brutus. Nun wohl, rückt vor!  O wüßte jemand doch Das Ende dieses Tagwerks, eh es kommt! Allein es gnüget, enden wird der Tag, Dann wissen wir sein Ende.--Kommt und fort!</p>
+<p>(Alle ab.)</p>
+<p>Zweite Szene Das Schlachtfeld</p>
+<p>Getümmel.  Brutus und Messala kommen</p>
+<p>Brutus. Reit, reit, Messala, reit!  Bring diese Zettel Den Legionen auf der andern Seite.  (Lautes Getümmel.) Laß sie auf einmal stürmen, denn ich merke, Octavius&#x27; Flügel hält nur schwachen Stand; Ein schneller Anfall wirft ihn übern Haufen. Reit!  reit, Messala!  Laß herab sie kommen!</p>
+<p>(Beide ab.)</p>
+<p>Dritte Szene Ein andrer Teil des Schlachtfeldes</p>
+<p>Getümmel.  Cassius und Titinius kommen</p>
+<p>Cassius. O sieh, Titinius!  sieh!  die Schurken fliehn. Ich selbst ward meiner eignen Leute Feind: Dies unser Banner wandte sich zur Flucht; Ich schlug den Feigen und entriß es ihm.</p>
+<p>Titinius. O Cassius!  Brutus gab das Wort zu früh. Im Vorteil gegen den Octavius, setzt&#x27; er Zu hitzig nach; sein Heer fing an zu plündern, Indes uns alle Mark Anton umzingelt.</p>
+<p>Pindarus kommt.</p>
+<p>Pindarus. Herr, flieht doch weiter!  flieht doch weiter weg! Antonius ist in Euren Zelten, Herr; Drum, edler Cassius, flieht!  Flieht weit hinweg!</p>
+<p>Cassius. Der Hügel hier ist weit genug.  Schau, schau, Titinius!  Sind das meine Zelte nicht, Wo ich das Feuer sehe?</p>
+<p>Titinius. Ja, mein Feldherr.</p>
+<p>Cassius. Wenn du mich hebst, Titinius, so besteig Mein Pferd, setz ihm die Sporen in die Seite, Bis es zu jener Mannschaft dich gebracht Und wieder her, damit ich sicher wisse, Ob jene Mannschaft Freund ist oder Feind.</p>
+<p>Titinius. Wie ein Gedanke bin ich wieder hier.  (Ab.)</p>
+<p>Cassius. Geh, Pindarus, steig höher auf den Hügel, Denn mein Gesicht ist kurz; acht auf Titinius Und sag mir, was du auf dem Feld entdeckst. (Pindarus ab.) An diesem Tage atmet ich zuerst; Die Zeit ist um, und enden soll ich da, Wo ich begann; mein Leben hat den Kreislauf Vollbracht.--Du dort, was gibt&#x27;s?</p>
+<p>Pindarus (oben). O Herr!</p>
+<p>Cassius. Was gibt&#x27;s?</p>
+<p>Pindarus. Titinius ist von Reitern ganz umringt; Sie jagen auf ihn zu, doch spornt er weiter. Nun sind sie dicht schon bei ihm--nun Titinius! Sie steigen ab--er auch--er ist gefangen; Und horcht!  sie jubeln laut.  (Freudengeschrei.)</p>
+<p>Cassius. Steig nur herunter, sieh nicht weiter zu. O Memme, die ich bin, so lang zu leben, Bis ich den besten Freund vor meinen Augen Gefangen sehen muß! Pindarus kommt zurück. Komm, Bursch, hieher! Ich macht in Parthia dich zum Gefangnen Und ließ dich schwören, deines Lebens schonend, Was ich nur immer tun dich hieß&#x27;, du wollest Es unternehmen.  Komm nun, halt den Schwur! Sei frei nun, und mit diesem guten Schwert, Das Cäsars Leib durchbohrt, triff diesen Busen. Erwidre nichts!  Hier fasse du das Heft, Und ist mein Angesicht verhüllt, wie jetzt, So führ das Schwert.--Cäsar, du bist gerächt Und mit demselben Schwert, das dich getötet.  (Er stirbt.)</p>
+<p>Pindarus. So bin ich frei, doch wär ich&#x27;s lieber nicht, Hätt es auf mir beruht.--O Cassius! Weit weg flieht Pindarus von diesem Lande, Dahin, wo nie ein Römer ihn bemerkt.  (Ab.)</p>
+<p>Titinius und Messala kommen.</p>
+<p>Messala. Es ist nur Tausch, Titinius; denn Octav Ward von des edlen Brutus Macht geschlagen, Wie Cassius&#x27; Legionen von Antonius.</p>
+<p>Titinius. Die Zeitung wird den Cassius sehr erquicken.</p>
+<p>Messala. Wo ließt Ihr ihn?</p>
+<p>Titinius. Ganz trostlos, neben ihm Sein Sklave Pindarus, auf diesem Hügel.</p>
+<p>Messala. Ist er das nicht, der auf dem Boden liegt?</p>
+<p>Titinius. Er liegt nicht da wie lebend.--O mein Herz!</p>
+<p>Messala. Nicht wahr, er ist es?</p>
+<p>Titinius. Nein, er war&#x27;s, Messala: Doch Cassius ist nicht mehr.--O Abendsonne! Wie du in deinen roten Strahlen sinkst, So ging in Blut der Tag des Cassius unter. Die Sonne Roms ging unter; unser Tag Ist hingeflohn; nun kommen Wolken, Tau, Gefahren; unsre Taten sind getan. Mißtraun in mein Gelingen bracht ihn um.</p>
+<p>Messala. Mißtraun in guten Ausgang bracht ihn um. O hassenswerter Wahn!  der Schwermut Kind! Was zeigst du doch dem regen Witz der Menschen Das, was nicht ist!  O Wahn, so bald empfangen, Zu glücklicher Geburt gelangst du nie Und bringst die Mutter um, die dich erzeugt.</p>
+<p>Titinius. Auf, Pindarus!  Wo bist du, Pindarus?</p>
+<p>Messala. Such ihn, Titinius; ich indessen will Zum edlen Brutus und sein Ohr durchbohren Mit dem Bericht.  Wohl nenn ich es durchbohren; Denn scharfer Stahl und giftge Pfeile würden Dem Ohr des Brutus so willkommen sein, Als Meldung dieses Anblicks.</p>
+<p>Titinius. Eilt, Messala! Ich suche Pindarus indessen auf.  (Messala ab.) Warum mich ausgesandt, mein wackrer Cassius? Traf ich nicht deine Freunde?  Setzten sie Nicht diesen Siegeskranz auf meine Stirn, Ihn dir zu bringen?  Vernahmst du nicht ihr Jubeln? Ach, jeden Umstand hast du mißgedeutet! Doch halt, nimm diesen Kranz um deine Stirn; Dein Brutus hieß mich dir ihn geben; ich Vollführe sein Gebot.--Komm schleunig, Brutus, Und sieh, wie ich den Cajus Cassius ehrte! Verzeiht, ihr Götter!--Dies ist Römerbrauch: Komm, Cassius&#x27; Schwert!  triff den Titinius auch.  (Er stirbt.)</p>
+<p>Getümmel.  Messala kommt zurück mit Brutus, dem jungen Cato, Strato, Volumnius und Lucilius.</p>
+<p>Brutus. Wo?  Wo, Messala?  sag, wo liegt die Leiche?</p>
+<p>Messala. Seht, dort!  Titinius trauert neben ihr.</p>
+<p>Brutus. Titinius&#x27; Antlitz ist emporgewandt.</p>
+<p>Cato. Er ist erschlagen.</p>
+<p>Brutus. O Julius Cäsar!  Du bist mächtig noch; Dein Geist geht um, er ist&#x27;s, der unsre Schwerter In unser eignes Eingeweide kehrt.</p>
+<p>(Lautes Getümmel.)</p>
+<p>Cato. Mein wackrer Freund Titinius!  Seht doch her, Wie er den toten Cassius gekränzt!</p>
+<p>Brutus. Und leben noch zwei Römer, diesen gleich? Du letzter aller Römer, lebe wohl! Unmöglich ist&#x27;s, daß Rom je deinesgleichen Erzeugen sollte.--Diesem Toten, Freunde, Bin ich mehr Tränen schuldig, als ihr hier Mich werdet zahlen sehen; aber, Cassius, Ich finde Zeit dazu, ich finde Zeit. Drum kommt, und schickt nach Thassos seine Leiche, Er soll im Lager nicht bestattet werden; Es schlüg uns nieder.--Komm, Lucilius! Komm, junger Cato!  Zu der Walstatt hin! Ihr, Flavius und Labeo, laßt unsre Scharen rücken! Es ist drei Uhr, und, Römer, noch vor Nacht Versuchen wir das Glück in einer zweiten Schlacht.</p>
+<p>(Alle ab.)</p>
+<p>Vierte Szene Ein andrer Teil des Schlachtfeldes</p>
+<p>Getümmel.  Soldaten von beiden Heeren, fechtend; darauf Brutus, Cato, Lucilius und andre</p>
+<p>Brutus. Noch, Bürger, o noch haltet hoch die Häupter!</p>
+<p>Cato. Ein Bastard, der&#x27;s nicht tut!  Wer will mir folgen? Ich rufe meinen Namen durch das Feld: Ich bin der Sohn des Marcus Cato, hört! Feind der Tyrannen, Freund des Vaterlands! Ich bin der Sohn des Marcus Cato, hört!</p>
+<p>Brutus (dringt auf den Feind ein). Und ich bin Brutus, Marcus Brutus, ich; Des Vaterlandes Freund: kennt mich als Brutus!</p>
+<p>(Ab, indem er auf den Feind eindringt.  Cato wird überwältigt und fällt.)</p>
+<p>Lucilius. O junger, edler Cato!  bist du hin? Ja!  tapfer wie Titinius stirbst du nun, Man darf dich ehren als des Cato Sohn.</p>
+<p>Erster Soldat. Ergib dich, oder stirb!</p>
+<p>Lucilius.  Nur um zu sterben Ergeb ich mich.  Hier ist soviel für dich (Bietet ihm Geld an), Daß du sogleich mich töten wirst; nun töte Den Brutus, und es ehre dich sein Tod.</p>
+<p>Erster Soldat. Wir dürfen&#x27;s nicht.--Ein edler Gefangner.</p>
+<p>Zweiter Soldat. Platz da! Sagt dem Antonius, daß wir Brutus haben.</p>
+<p>Erster Soldat. Ich will es melden.--Sieh, da kommt der Feldherr. Antonius tritt auf. Wir haben Brutus, Herr!  wir haben Brutus!</p>
+<p>Antonius. Wo ist er?</p>
+<p>Lucilius. In Sicherheit; Brutus ist sicher gnug. Verlaß dich drauf, daß nimmermehr ein Feind Den edlen Brutus lebend fangen wird. Die Götter schützen ihn vor solcher Schmach! Wo ihr ihn findet, lebend oder tot, Er wird wie Brutus, wie er selbst, sich zeigen.</p>
+<p>Antonius. Dies ist nicht Brutus, Freund, doch auf mein Wort, Ein nicht geringrer Fang.  Verwahrt ihn wohl, Erweist nur Gutes ihm; ich habe lieber Zu Freunden solche Männer als zu Feinden. Eilt!  seht, ob Brutus tot ist oder lebt! Und bringt Bericht zu des Octavius Zelt, Wie alles sich begeben.</p>
+<p>(Alle ab.)</p>
+<p>Fünfte Szene Ein andrer Teil des Schlachtfeldes</p>
+<p>Brutus, Dardanius, Clitus, Strato und Volumnius treten auf</p>
+<p>Brutus. Kommt, armer Überrest von Freunden!  ruht An diesem Felsen.</p>
+<p>Clitus. Herr, Statilius zeigte Das Fackellicht, doch kommt er nicht zurück; Er ist gefangen oder gar erschlagen.</p>
+<p>Brutus. Setz dich zu mir.  Erschlagen ist die Losung, Es ist des Tages Sitte.--Höre, Clitus!  (Spricht leise mit ihm.)</p>
+<p>Clitus. Wie, gnädger Herr?  Ich?  Nicht um alle Welt.</p>
+<p>Brutus. Still denn!  kein Wort!</p>
+<p>Clitus. Eh tötet ich mich selbst.</p>
+<p>Brutus. Dardanius, hör!  (Spricht leise mit ihm.)</p>
+<p>Dardanius. Ich eine solche Tat?</p>
+<p>Clitus. O Dardanius!</p>
+<p>Dardanius. O Clitus!</p>
+<p>Clitus. Welch einen schlimmen Antrag tat dir Brutus?</p>
+<p>Dardanius. Ich sollt ihn töten, Clitus; sieh, er sinnt.</p>
+<p>Clitus. Nun ist das herrliche Gefäß voll Gram, So daß es durch die Augen überfließt.</p>
+<p>Brutus. Komm zu mir, Freund Volumnius: ein Wort!</p>
+<p>Volumnius. Was sagt mein Feldherr?</p>
+<p>Brutus. Dies, Volumnius: Der Geist des Cäsar ist zu zweien Malen Mir in der Nacht erschienen; erst zu Sardes, Und vorge Nacht hier in Philippis Ebne. Ich weiß, daß meine Stunde kommen ist.</p>
+<p>Volumnius. Nicht doch, mein Feldherr.</p>
+<p>Brutus. O ja, es ist gewiß, Volumnius. Du siehst, Volumnius, wie es um uns steht; Der Feind hat uns zum Abgrund hingetrieben.  (Getümmel.) Es ziemt sich mehr, von selbst hineinzuspringen, Als zu erwarten seinen letzten Stoß. Volumnius, wir gingen in die Schule Zusammen, wie du weißt.  Ich bitte dich Um jener unsrer alten Liebe willen: Halt du mein Schwert, indes ich drein mich stürze.</p>
+<p>Volumnius. Das, Brutus, ist kein Dienst für einen Freund.</p>
+<p>(Fortdauerndes Getümmel.)</p>
+<p>Clitus. Flieht, Herr, o flieht!  Hier gilt kein Säumen mehr.</p>
+<p>Brutus. Lebt wohl denn, Ihr--und Ihr--und Ihr, Volumnius. Du, Strato, lagst die ganze Zeit im Schlaf: Leb wohl auch du!--Mitbürger, meinem Herzen Ist&#x27;s Wonne, daß ich noch im ganzen Leben Nicht einen fand, der nicht getreu mir war. Ich habe Ruhm von diesem Unglückstage, Mehr, als Octavius und Mark Anton Durch diesen schnöden Sieg erlangen werden. So lebt zusammen wohl!  Denn Brutus&#x27; Zunge Schließt die Geschichte seines Lebens bald. Nacht deckt mein Auge, mein Gebein will Ruh, Es strebte längst nur dieser Stunde nach.</p>
+<p>(Getümmel.  Geschrei hinter der Szene.--&quot;Flieht!  flieht!  flieht!&quot;)</p>
+<p>Clitus. Flieht, Herr!  o flieht!</p>
+<p>Brutus. Nur fort!  Ich will euch folgen. (Clitus, Dardanius und Volumnius ab.) Ich bitt dich, Strato, bleib bei deinem Herrn. Du bist ein Mensch von redlichem Gemüt, In deinem Leben war ein Funken Ehre. Halt denn mein Schwert, und wende dich hinweg, Indes ich drein mich stürze.  Willst du, Strato?</p>
+<p>Strato. Gebt erst die Hand mir.  Herr, gehabt Euch wohl!</p>
+<p>Brutus. Leb wohl, mein Freund!--Besänftge, Cäsar, dich! Nicht halb so gern bracht ich dich um als mich.</p>
+<p>(Er stürzt sich auf sein Schwert und stirbt.) Getümmel.  Rückzug.  Octavius und Antonius mit ihrem Heere, Messala und Lucilius kommen.</p>
+<p>Octavius. Wer ist der Mann?</p>
+<p>Messala. Der Diener meines Herrn. Strato, wo ist dein Herr?</p>
+<p>Strato. Frei von den Banden, die Ihr tragt, Messala. Die Sieger können nur zu Asch ihn brennen; Denn Brutus unterlag allein sich selbst, Und niemand sonst hat Ruhm von seinem Tode.</p>
+<p>Lucilius. So mußten wir ihn finden.--Dank dir, Brutus, Daß du Lucilius&#x27; Rede wahr gemacht.</p>
+<p>Octavius. Des Brutus Leute nehm ich all in Dienst. Willst du in Zukunft bei mir leben, Bursch?</p>
+<p>Strato. Ja, wenn Messala mich Euch überläßt.</p>
+<p>Octavius. Tut mir&#x27;s zulieb, Messala.</p>
+<p>Messala. Strato, wie starb mein Herr?</p>
+<p>Strato. Ich hielt das Schwert, so stürzt&#x27; er sich hinein.</p>
+<p>Messala. Octavius, nimm ihn denn, daß er dir folge, Der meinem Herrn den letzten Dienst erwies.</p>
+<p>Antonius. Dies war der beste Römer unter allen: Denn jeder der Verschwornen, bis auf ihn, Tat, was er tat, aus Mißgunst gegen Cäsar. Nur er verband aus reinem Biedersinn Und zum gemeinen Wohl sich mit den andern. Sanft war sein Leben, und so mischten sich Die Element&#x27; in ihm, daß die Natur Aufstehen durfte und der Welt verkünden: Dies war ein Mann!</p>
+<p>Octavius. Nach seiner Tugend laßt uns ihm begegnen Mit aller Achtung und Bestattungsfeier. Er lieg in meinem Zelte diese Nacht, Mit Ehren wie ein Krieger angetan. Nun ruft das Heer zur Ruh; laßt fort uns eilen Und dieses frohen Tags Trophäen teilen.  (Ab.)</p>
+<p class="colophon">Gemeinfreier Text. Digitale Ausgabe BookClassics.</p>
+</body></html>

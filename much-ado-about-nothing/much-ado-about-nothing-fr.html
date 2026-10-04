@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Beaucoup de Bruit pour Rien — William Shakespeare</title><style>
+:root{--paper:#fbf8f1;--ink:#1f1b16;--muted:#6f6352;--accent:#9a6b2f;--rule:#e4dccb}
+@media (prefers-color-scheme:dark){:root{--paper:#16140f;--ink:#ece6d8;--muted:#a79c88;--accent:#d8a95e;--rule:#2e2a22}}
+html{background:var(--paper)}
+body{font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Libertinus Serif",Georgia,serif;color:var(--ink);
+     background:var(--paper);line-height:1.65;font-size:1.12rem;max-width:36em;margin:0 auto;padding:2.5em 1.25em 5em}
+.titlepage{text-align:center;min-height:70vh;display:flex;flex-direction:column;justify-content:center;gap:.6em;
+           border-bottom:1px solid var(--rule);margin-bottom:2.5em;padding-bottom:2.5em}
+.titlepage img{max-width:260px;width:60%;margin:0 auto 1.5em;border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+h1{font-size:2.4em;line-height:1.15;font-weight:600;margin:0;letter-spacing:-.01em}
+.author{font-style:italic;font-size:1.25em;color:var(--accent);margin:0}
+.translator{font-size:.95em;color:var(--muted);margin:0}
+nav.toc{margin:0 0 3em}
+nav.toc h2{font-size:.85em;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:left;margin:0 0 .8em}
+nav.toc ol{list-style:none;padding:0;margin:0;columns:1}
+nav.toc li{margin:.25em 0}
+nav.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent}
+nav.toc a:hover{border-color:var(--accent)}
+h2.chapter{font-size:1.45em;font-weight:600;text-align:center;margin:3.5em 0 1.6em;line-height:1.3}
+h2.chapter::before{content:"";display:block;width:3em;height:2px;background:var(--accent);margin:0 auto 1.1em}
+p{margin:0;text-indent:1.5em;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+h2.chapter + p, .titlepage + p{text-indent:0}
+h2.chapter + p::first-letter{font-size:3.1em;float:left;line-height:.85;padding:.08em .08em 0 0;color:var(--accent);font-weight:600}
+.colophon{margin-top:5em;padding-top:1.5em;border-top:1px solid var(--rule);text-align:center;color:var(--muted);font-size:.85em;text-indent:0}
+h3.sub{font-size:1em;font-weight:600;font-variant:small-caps;letter-spacing:.04em;text-align:center;margin:2.2em 0 1em}
+h3.sub + p{text-indent:0}
+@media print{h2.chapter{break-before:page}}
+</style></head><body>
+<header class="titlepage">
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjI0MDAiIHZpZXdCb3g9IjAgMCAxNjAwIDI0MDAiPgo8cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSIyNDAwIiBmaWxsPSIjMGYyYTQ0Ii8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjMwMCIgZmlsbD0iIzhlY2FlNiIgb3BhY2l0eT0iLjkyIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMGYyYTQ0IiBzdHJva2Utd2lkdGg9IjEyIiBvcGFjaXR5PSIuNSIvPgo8Y2lyY2xlIGN4PSIxMTIwIiBjeT0iNTYwIiByPSIxMjAiIGZpbGw9IiMwZjJhNDQiIG9wYWNpdHk9Ii4xOCIvPgo8cmVjdCB4PSIxNjAiIHk9IjkzMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIxMCIgZmlsbD0iIzhlY2FlNiIvPgo8dGV4dCB4PSIxNjAiIHk9IjEwNDQiIGZvbnQtc2l6ZT0iMTI0IiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNlZWY2ZmIiPkJlYXVjb3VwIGRlPC90ZXh0Pjx0ZXh0IHg9IjE2MCIgeT0iMTE4MCIgZm9udC1zaXplPSIxMjQiIGZvbnQtd2VpZ2h0PSI2MDAiIGZvbnQtZmFtaWx5PSJMaWJlcnRpbnVzIFNlcmlmLCBHZW9yZ2lhLCBzZXJpZiIgZmlsbD0iI2VlZjZmYiI+QnJ1aXQgcG91cjwvdGV4dD48dGV4dCB4PSIxNjAiIHk9IjEzMTYiIGZvbnQtc2l6ZT0iMTI0IiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNlZWY2ZmIiPlJpZW48L3RleHQ+Cjx0ZXh0IHg9IjE2MCIgeT0iMTUyMyIgZm9udC1zaXplPSI2OCIgZm9udC1zdHlsZT0iaXRhbGljIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiM4ZWNhZTYiPldpbGxpYW0gU2hha2VzcGVhcmU8L3RleHQ+Cjx0ZXh0IHg9IjE2MCIgeT0iMjIzMCIgZm9udC1zaXplPSI0NCIgbGV0dGVyLXNwYWNpbmc9IjE0IiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNlZWY2ZmIiIG9wYWNpdHk9Ii43NSI+Qk9PS0NMQVNTSUNTPC90ZXh0Pgo8L3N2Zz4=" alt="">
+<h1>Beaucoup de Bruit pour Rien</h1>
+<p class="author">William Shakespeare</p>
+<p class="translator">Traduction de François Guizot</p>
+</header>
+<nav class="toc"><h2>Table des matières</h2><ol>
+<li><a href="#c1">Acte premier — Scène I</a></li>
+<li><a href="#c2">Scène III</a></li>
+<li><a href="#c3">Scène I</a></li>
+<li><a href="#c4">Scène II</a></li>
+<li><a href="#c5">Scène III</a></li>
+<li><a href="#c6">Scène I</a></li>
+<li><a href="#c7">Scène II</a></li>
+<li><a href="#c8">Scène III</a></li>
+<li><a href="#c9">Scène IV</a></li>
+<li><a href="#c10">Scène V</a></li>
+<li><a href="#c11">Scène I</a></li>
+<li><a href="#c12">Scène II</a></li>
+<li><a href="#c13">Scène I</a></li>
+<li><a href="#c14">Scène II</a></li>
+<li><a href="#c15">Scène III</a></li>
+<li><a href="#c16">Scène IV</a></li>
+</ol></nav>
+<p>====================================================================== Ce document est tiré de:</p>
+<p>OEUVRES COMPLÈTES DE SHAKSPEARE</p>
+<p>TRADUCTION DE M. GUIZOT</p>
+<p>NOUVELLE ÉDITION ENTIÈREMENT REVUE AVEC UNE ÉTUDE SUR SHAKSPEARE DES NOTICES SUR CHAQUE PIÈCE ET DES NOTES</p>
+<p>Volume 2 Jules César. Cléopâtre.--Macbeth.--Les Méprises. Beaucoup de bruit pour rien.</p>
+<p>PARIS A LA LIBRAIRIE ACADÉMIQUE DIDIER ET Cie, LIBRAIRES-ÉDITEURS 35, QUAI DES AUGUSTINS 1864</p>
+<p>======================================================================</p>
+<p>BEAUCOUP DE BRUIT POUR RIEN</p>
+<h3 class="sub">Comédie</h3>
+<p>NOTICE SUR BEAUCOUP DE BRUIT POUR RIEN</p>
+<p>L&#x27;histoire de Ginévra, dans le cinquième chant de l&#x27;Arioste, a quelque rapport avec la fiction romanesque de cette pièce; plusieurs critiques, et entre autres Pope, ont cru que le Roland Furieux avait été la source où Shakspeare avait puisé. On remarque aussi dans plusieurs anciens romans de chevalerie des épisodes qui rappellent la calomnie de don Juan, et la mort supposée d&#x27;Héro; mais c&#x27;est dans les histoires tragiques que Belleforest a empruntées à Bandello qu&#x27;on trouve la nouvelle qui a évidemment fourni à Shakspeare l&#x27;idée de Beaucoup de bruit pour rien.</p>
+<p>«Pendant que Pierre d&#x27;Aragon tenait sa cour à Messine, un certain baron, Timbrée de Cardone, favori du prince, devint amoureux de Fénicia, fille de Léonato, gentilhomme de la ville: sa fortune, la faveur du roi, et ses qualités personnelles plaidèrent si bien sa cause, que Timbrée fut en peu de temps l&#x27;amant préféré de Fénicia, et obtint l&#x27;agrément de Léonato pour l&#x27;épouser.</p>
+<p>«La nouvelle en vint aux oreilles d&#x27;un jeune gentilhomme appelé Girondo-Olerio-Valentiano, qui depuis longtemps cherchait vainement à faire impression sur le coeur de Fénicia. Jaloux du bonheur de Timbrée, il ne songe plus qu&#x27;à le traverser, et met dans ses intérêts un autre jeune homme qui, affectant pour Timbrée un zèle officieux, va le prévenir qu&#x27;un de ses amis faisait de fréquentes visites nocturnes à sa fiancée, et offre de lui donner le soir même les preuves de sa perfidie.</p>
+<p>«Timbrée accepte; il suit son guide qui lui fait voir en effet son prétendu rival, qui n&#x27;était qu&#x27;un valet travesti, montant par une échelle de corde dans l&#x27;appartement de Fénicia. Timbrée ne veut pas d&#x27;autre éclaircissement, et dès le lendemain il va retirer sa parole, et révèle à Léonato la trahison de sa fille.</p>
+<p>«Fénicia, accablée de cet affront, s&#x27;évanouit et ne reprend ses sens qu&#x27;au bout de sept heures. Tout Messine la croit morte, car elle-même, résolue de renoncer au monde, se fait transporter secrètement à la campagne, chez un de ses oncles, pendant qu&#x27;on célèbre ses funérailles.</p>
+<p>«Le remords poursuit partout Girondo; il se décide à faire à Timbrée l&#x27;aveu de sa coupable calomnie; il le mène à l&#x27;église, auprès du tombeau de Fénicia, se met à genoux, offre un poignard à son rival, et, lui présentant son sein, le conjure de frapper le meurtrier de la fille de Léonato.</p>
+<p>«Timbrée lui pardonne, et court lui-même chez Léonato lui offrir toute sa fortune en réparation de sa crédule jalousie; le vieillard refuse, et n&#x27;exige de Timbrée que la promesse d&#x27;accepter une autre épouse de sa main.</p>
+<p>«Quelque temps après il le conduit à sa campagne et lui présente Fénicia sous le nom de Lucile, et comme sa nièce. Fénicia était tellement changée, qu&#x27;elle ne fut reconnue qu&#x27;à la fin de la noce, et lorsqu&#x27;une tante de la mariée ne put garder plus longtemps le secret;» tel est l&#x27;extrait succinct de la nouvelle du prolixe Bandello.</p>
+<p>On verra quel intérêt dramatique le poëte a ajouté à ce récit déjà intéressant. La scène de l&#x27;église, où Claudio accuse hautement Héro, est vraiment tragique. Combien est touchant l&#x27;appel que fait la fille de Léonato à son innocence! Quelle profonde connaissance du coeur humain décèle le caractère de ce don Juan, cet homme essentiellement insociable, pour qui faire le mal est un besoin, et qui s&#x27;irrite contre les bienfaits de son propre frère!</p>
+<p>Mais les personnages les plus brillants et les plus animés de la pièce sont Bénédick et Béatrice. Que d&#x27;originalité dans leurs dialogues, où l&#x27;on trouve quelquefois, il est vrai, un peu trop de liberté! Leur aversion pour le mariage, leur conversion subite, fournissent une foule de situations des plus comiques. Les deux constables, Dogberry et Verges, avec leur suffisance, leurs graves niaiseries et leurs lourdes bévues, sont des modèles de naturel.</p>
+<p>Il y a dans cette pièce un heureux mélange de sérieux et de gaieté qui en fait une des plus charmantes productions de Shakspeare: c&#x27;est encore une de celles que l&#x27;on revoit avec le plus de plaisir sur le théâtre de Londres. Bénédick était un des rôles favoris de Garrick, qui y faisait admirer toute la souplesse de son talent.</p>
+<p>Selon le docteur Malone, la comédie de Beaucoup de bruit pour rien aurait été composée en 1600, et imprimée la même année.</p>
+<p>BEAUCOUP DE BRUIT POUR RIEN</p>
+<h3 class="sub">Comédie — Personnages</h3>
+<p>DON PÈDRE, prince d&#x27;Aragon. LEONATO, gouverneur de Messine. DON JUAN, frère naturel de don Pèdre. CLAUDIO, jeune seigneur de Florence, favori de don Pèdre. BENEDICK, jeune seigneur de Padoue, autre favori de don Pèdre. BALTHAZAR, domestique de don Pèdre. ANTONIO, frère de Léonato. BORACHIO,     ) attaché à don Juan. CONRAD,       ) DOGBERRY, ) deux constables. VERGES,   ) UN SACRISTAIN. UN MOINE. UN VALET. HÉRO, fille de Léonato. BÉATRICE, nièce de Léonato. MARGUERITE,    ) dames attachées URSULE,        ) HÉRO.</p>
+<h3 class="sub">Messagers, gardes et valets.</h3>
+<p>La scène est à Messine.</p>
+<h2 class="chapter" id="c1">Acte premier — Scène I</h2>
+<p>Terrasse devant le palais de Léonato.</p>
+<p>Entrent LÉONATO, HÉRO, BÉATRICE et autres, avec UN MESSAGER</p>
+<p>LÉONATO.--J&#x27;apprends par cette lettre que don Pèdre d&#x27;Aragon arrive ce soir à Messine.</p>
+<p>LE MESSAGER.--A l&#x27;heure qu&#x27;il est, il doit en être fort près. Nous n&#x27;étions pas à trois lieues lorsque je l&#x27;ai quitté.</p>
+<p>LÉONATO.--Combien avez-vous perdu de soldats dans cette affaire?</p>
+<p>LE MESSAGER.--Très-peu d&#x27;aucun genre et aucun de connu.</p>
+<p>LÉONATO.--C&#x27;est une double victoire, quand le vainqueur ramène au camp ses bataillons entiers. Je lis ici que don Pèdre a comblé d&#x27;honneurs un jeune Florentin nommé Claudio.</p>
+<p>LE MESSAGER.--Bien mérités de sa part et bien reconnus par don Pèdre.--Claudio a surpassé les promesses de son âge; avec les traits d&#x27;un agneau, il a fait les exploits d&#x27;un lion. Il a vraiment trop dépassé toutes les espérances pour que je puisse espérer de vous les raconter.</p>
+<p>LÉONATO.--Il a ici dans Messine un oncle qui en sera bien content.</p>
+<p>LE MESSAGER.--Je lui ai déjà remis des lettres, et il a paru éprouver beaucoup de joie, et même à un tel excès, que cette joie n&#x27;aurait pas témoigné assez de modestie sans quelque signe d&#x27;amertume.</p>
+<p>LÉONATO.--Il a fondu en larmes?</p>
+<p>LE MESSAGER.--Complètement.</p>
+<p>LÉONATO.--Doux épanchements de tendresse! Il n&#x27;est pas de visages plus francs que ceux qui sont ainsi baignés de larmes. Ah! qu&#x27;il vaut bien mieux pleurer de joie que de rire de ceux qui pleurent!</p>
+<p>BÉATRICE.--Je vous supplierai de m&#x27;apprendre si le signor Montanto[1] revient de la guerre ici ou non.</p>
+<p>[Note 1: Montanto est un des anciens termes de l&#x27;escrime et s&#x27;appliquait à un fier-à-bras, à un bravache.]</p>
+<p>LE MESSAGER.--Je ne connais point ce nom, madame. Nous n&#x27;avions à l&#x27;armée aucun officier d&#x27;un certain rang portant ce nom.</p>
+<p>LÉONATO.--De qui vous informez-vous, ma nièce?</p>
+<p>HÉRO.--Ma cousine veut parler du seigneur Bénédick de Padoue.</p>
+<p>LE MESSAGER.--Oh! il est revenu; et tout aussi plaisant que jamais.</p>
+<p>BÉATRICE.--Il mit un jour des affiches[2] dans Messine, et défia Cupidon dans l&#x27;art de tirer de longues flèches; le fou de mon oncle qui lut ce défi répondit pour Cupidon, et le défia à la flèche ronde.--De grâce, combien a-t-il exterminé, dévoré d&#x27;ennemis dans cette guerre? Dites-moi simplement combien il en a tué, car j&#x27;ai promis de manger tous les morts de sa façon.</p>
+<p>[Note 2: Il était d&#x27;usage parmi les gladiateurs d&#x27;écrire des billets portant des défis. Flight et bird bolt étaient différentes sortes de flèches.]</p>
+<p>LÉONATO.--En vérité, ma nièce, vous provoquez trop le seigneur Bénédick; mais il est bon pour se défendre, n&#x27;en doutez pas.</p>
+<p>LE MESSAGER.--Il a bien servi, madame, dans cette campagne.</p>
+<p>BÉATRICE.--Vous aviez des vivres gâtés, et il vous a aidé à les consommer. C&#x27;est un très-vaillant mangeur; il a un excellent estomac.</p>
+<p>LE MESSAGER.--Il est aussi bon soldat, madame.</p>
+<p>BÉATRICE.--Bon soldat près d&#x27;une dame; mais en face d&#x27;un homme, qu&#x27;est-il?</p>
+<p>LE MESSAGER.--C&#x27;est un brave devant un brave, un homme en face d&#x27;un homme. Il y a en lui l&#x27;étoffe de toutes les vertus honorables.</p>
+<p>BÉATRICE.--C&#x27;est cela en effet; Bénédick n&#x27;est rien moins qu&#x27;un homme étoffé[3], mais quant à l&#x27;étoffe;--eh bien! nous sommes tous mortels.</p>
+<p>[Note 3: A stuffed man.]</p>
+<p>LÉONATO.--Il ne faut pas, monsieur, mal juger de ma nièce. Il règne une espèce de guerre enjouée entre elle et le seigneur Bénédick. Jamais ils ne se rencontrent sans qu&#x27;il y ait entre eux quelque escarmouche d&#x27;esprit.</p>
+<p>BÉATRICE.--Hélas! il ne gagne rien à cela. Dans notre dernier combat, quatre de ses cinq sens s&#x27;en allèrent tout éclopés, et maintenant tout l&#x27;homme est gouverné par un seul. Pourvu qu&#x27;il lui reste assez d&#x27;instinct pour se tenir chaudement, laissons-le-lui comme l&#x27;unique différence qui le distingue de son cheval: car c&#x27;est le seul bien qui lui reste pour avoir quelque droit au nom de créature raisonnable.--Et quel est son compagnon maintenant? car chaque mois il se donne un nouveau frère d&#x27;armes.</p>
+<p>LE MESSAGER.--Est-il possible?</p>
+<p>BÉATRICE.--Très-possible. Il garde ses amitiés comme la forme de son chapeau, qui change à chaque nouveau moule.</p>
+<p>LE MESSAGER.--Madame, je le vois bien, ce gentilhomme n&#x27;est pas sur vos tablettes.</p>
+<p>BÉATRICE.--Oh! non; si j&#x27;y trouvais jamais son nom, je brûlerais toute la bibliothèque.--Mais dites-moi donc, je vous prie, quel est son frère d&#x27;armes? N&#x27;avez-vous pas quelque jeune écervelé qui veuille faire avec lui un voyage chez le diable?</p>
+<p>LE MESSAGER.--Il vit surtout dans la compagnie du noble Claudio.</p>
+<p>BÉATRICE.--Bonté du ciel! il s&#x27;attachera à lui comme une maladie. On le gagne plus promptement que la peste; et quiconque en est pris extravague à l&#x27;instant. Que Dieu protége le noble Claudio! Si par malheur il est pris du Bénédick, il lui en coûtera mille livres pour s&#x27;en guérir.</p>
+<p>LE MESSAGER.--Je veux, madame, être de vos amis.</p>
+<p>BÉATRICE.--Je vous y engage, mon bon ami!</p>
+<p>LÉONATO.--Vous ne deviendrez jamais folle, ma nièce.</p>
+<p>BÉATRICE.--Non, jusqu&#x27;à ce que le mois de janvier soit chaud.</p>
+<p>LE MESSAGER.--Voici don Pèdre qui s&#x27;approche.</p>
+<p>(Entrent don Pèdre, accompagné de Balthazar et autres domestiques; Claudio, Bénédick, don Juan.)</p>
+<p>DON PÈDRE.--Don seigneur Léonato, vous venez vous-même chercher les embarras. Le monde est dans l&#x27;usage d&#x27;éviter la dépense; mais vous courez au-devant.</p>
+<p>LÉONATO.--Jamais les embarras n&#x27;entrèrent chez moi sous la forme de Votre Altesse; car, l&#x27;embarras parti, le contentement resterait. Mais quand vous me quittez, le chagrin reste et le bonheur s&#x27;en va.</p>
+<p>DON PÈDRE.--Vous acceptez votre fardeau de trop bonne grâce. Je crois que c&#x27;est là votre fille.</p>
+<p>LÉONATO.--Sa mère me l&#x27;a dit bien des fois.</p>
+<p>BÉNÉDICK.--En doutiez-vous, seigneur, pour lui faire si souvent cette demande?</p>
+<p>LÉONATO.--Nullement, seigneur Bénédick; car alors vous étiez un enfant.</p>
+<p>DON PÈDRE.--Ah! la botte a porté, Bénédick. Nous pouvons juger par là de ce que vous valez, à présent que vous êtes un homme.--En vérité, ses traits nomment son père. Soyez heureuse, madame, vous ressemblez à un digne père.</p>
+<p>(Don Pèdre s&#x27;éloigne avec Léonato.)</p>
+<p>BÉNÉDICK.--Si le seigneur Léonato est son père, elle ne voudrait pas pour tout Messine avoir sa tête sur les épaules tout en lui ressemblant comme elle fait.</p>
+<p>BÉATRICE.--Je m&#x27;étonne que le seigneur Bénédick ne se rebute point de parler. Personne ne prend garde à lui.</p>
+<p>BÉNÉDICK.--Ah! ma chère madame Dédaigneuse! vous vivez encore?</p>
+<p>BÉATRICE.--Et comment la Dédaigneuse mourrait-elle, lorsqu&#x27;elle trouve à ses dédains un aliment aussi inépuisable que le seigneur Bénédick? La courtoisie même ne peut tenir en votre présence; il faut qu&#x27;elle se change en dédain.</p>
+<p>BÉNÉDICK.--La courtoisie est donc un renégat?--Mais tenez pour certain que, vous seule exceptée, je suis aimé de toutes les dames, et je voudrais que mon coeur se laissât persuader d&#x27;être un peu moins dur; car franchement je n&#x27;en aime aucune.</p>
+<p>BÉATRICE.--Grand bonheur pour les femmes! Sans cela, elles seraient importunées par un pernicieux soupirant. Je remercie Dieu et la froideur de mon sang; je suis là-dessus de votre humeur. J&#x27;aime mieux entendre mon chien japper aux corneilles, qu&#x27;un homme me jurer qu&#x27;il m&#x27;adore.</p>
+<p>BÉNÉDICK.--Que Dieu vous maintienne toujours dans ces sentiments! Ce seront quelques honnêtes gens de plus dont le visage échappera aux égratignures qui les attendent.</p>
+<p>BÉATRICE.--Si c&#x27;étaient des visages comme le vôtre, une égratignure ne pourrait les rendre pires.</p>
+<p>BÉNÉDICK.--Eh bien! vous êtes une excellente institutrice de perroquets.</p>
+<p>BÉATRICE.--Un oiseau de mon babil vaut mieux qu&#x27;un animal du vôtre.</p>
+<p>BÉNÉDICK.--Je voudrais bien que mon cheval eût la vitesse de votre langue et votre longue haleine.--Allons, au nom de Dieu, allez votre train; moi j&#x27;ai fini.</p>
+<p>BÉATRICE.--Vous finissez toujours par quelque algarade de rosse; je vous connais de loin.</p>
+<p>DON PÈDRE.--Voici le résumé de notre entretien.--Seigneur Claudio et seigneur Bénédick, mon digne ami Léonato vous a tous invités. Je lui dis que nous resterons ici au moins un mois; il prie le sort d&#x27;amener quelque événement qui puisse nous y retenir davantage. Je jurerais qu&#x27;il n&#x27;est point hypocrite et qu&#x27;il le désire du fond de son coeur.</p>
+<p>LÉONATO.--Si vous le jurez, monseigneur, vous ne serez point parjure. (A don Juan.)--Souffrez que je vous félicite, seigneur: puisque vous êtes réconcilié au prince votre frère, je vous dois tous mes hommages.</p>
+<p>DON JUAN.--Je vous remercie: je ne suis point un homme à longs discours; je vous remercie.</p>
+<p>LÉONATO.--Plaît-il à Votre Altesse d&#x27;ouvrir la marche?</p>
+<p>DON PÈDRE.--Léonato, donnez-moi la main; nous irons ensemble.</p>
+<p>(Tous entrent dans la maison, excepté Bénédick et Claudio.)</p>
+<p>CLAUDIO.--Bénédick, avez-vous remarqué la fille du seigneur Léonato?</p>
+<p>BÉNÉDICK.--Je ne l&#x27;ai pas remarquée, mais je l&#x27;ai regardée.</p>
+<p>CLAUDIO.--N&#x27;est-ce pas une jeune personne modeste?</p>
+<p>BÉNÉDICK.--Me questionnez-vous sur son compte, en honnête homme, pour savoir tout simplement ce que je pense, ou bien voudriez-vous m&#x27;entendre parler, suivant ma coutume, comme le tyran déclaré de son sexe?</p>
+<p>CLAUDIO.--Non: je vous prie, parlez sérieusement.</p>
+<p>BÉNÉDICK.--Eh bien! en conscience, elle me paraît trop petite pour un grand éloge, trop brune pour un bel éloge[4]. Toute la louange que je peux lui accorder, c&#x27;est de dire que si elle était tout autre qu&#x27;elle est, elle ne serait pas belle; étant ce qu&#x27;elle est, elle ne me plait pas.</p>
+<p>[Note 4: Fair, beau et blond.]</p>
+<p>CLAUDIO.--Vous croyez que je veux rire. Je vous en prie, dites-moi sincèrement comment vous la trouvez.</p>
+<p>BÉNÉDICK.--Voulez-vous en faire emplette, que vous preniez des informations sur elle?</p>
+<p>CLAUDIO.--Le monde entier suffirait-il à payer un pareil bijou?</p>
+<p>BÉNÉDICK.--Oh! sûrement, et même encore un étui pour le mettre.--Mais parlez-vous sérieusement, ou prétendez-vous faire le mauvais plaisant pour nous dire que l&#x27;amour sait très-bien trouver des lièvres, et que Vulcain est un habile charpentier? Allons, dites-nous sur quelle gamme il faut chanter pour être d&#x27;accord avec vous?</p>
+<p>CLAUDIO.--Elle est à mes yeux la plus aimable personne que j&#x27;aie jamais vue.</p>
+<p>BÉNÉDICK.--Je vois encore très-bien sans lunettes, et je ne vois rien de cela: il y a sa cousine qui, si elle n&#x27;était pas possédée d&#x27;une furie, la surpasserait en beauté autant que le premier jour de mai l&#x27;emporte sur le dernier jour de décembre; mais j&#x27;espère que vous n&#x27;avez pas dans l&#x27;idée de vous faire mari? Serait-ce votre intention?</p>
+<p>CLAUDIO.--Quand j&#x27;aurais juré le contraire, je me méfierais de moi-même, si Héro voulait être ma femme.</p>
+<p>BÉNÉDICK.--En êtes-vous là? d&#x27;honneur? Quoi! n&#x27;est-il donc pas un homme au monde qui veuille porter son bonnet sans inquiétude? Ne reverrai-je de ma vie un garçon de soixante ans? Allez, puisque vous voulez absolument vous mettre sous le joug, portez-en la triste empreinte, et passez les dimanches à soupirer.--Mais voilà don Pèdre qui revient vous chercher lui-même.</p>
+<p>(Don Pèdre rentre.)</p>
+<p>DON PÈDRE.--Quel mystère vous arrêtait donc ici, que vous ne nous ayez pas suivis chez Léonato?</p>
+<p>BÉNÉDICK.--Je voudrais que Votre Altesse m&#x27;obligeât à le lui dire.</p>
+<p>DON PÈDRE.--Je vous l&#x27;ordonne, sur votre fidélité.</p>
+<p>BÉNÉDICK.--Vous entendez, comte Claudio. Je puis être aussi discret qu&#x27;un muet de naissance, et c&#x27;est là l&#x27;idée que je voudrais vous donner de moi.--Mais sur ma fidélité: remarquez-vous ces mots: Sur ma fidélité.--Il est amoureux. De qui? Ce serait maintenant à Votre Altesse à me faire la question. Observez comme la réponse est courte.--D&#x27;Héro, la courte fille de Léonato.</p>
+<p>CLAUDIO. Si la chose était, il vous l&#x27;aurait bientôt dit.</p>
+<p>BÉNÉDICK.--C&#x27;est comme le vieux conte, monseigneur: «Cela n&#x27;est pas, cela n&#x27;était pas.» Mais en vérité, à Dieu ne plaise que cela arrive!</p>
+<p>CLAUDIO.--Si ma passion ne change pas bientôt, à Dieu ne plaise qu&#x27;il en soit autrement!</p>
+<p>DON PÈDRE.--Ainsi soit-il! si vous l&#x27;aimez; car la jeune personne en est bien digne.</p>
+<p>CLAUDIO.--Vous parlez ainsi pour me sonder, seigneur.</p>
+<p>DON PÈDRE.--Sur mon honneur, j&#x27;exprime ma pensée.</p>
+<p>CLAUDIO.--Et sur ma parole, j&#x27;ai exprimé la mienne.</p>
+<p>BÉNÉDICK.--Et moi, sur mon honneur et sur ma parole, j&#x27;ai dit ce que je pensais.</p>
+<p>CLAUDIO.--Je sens que je l&#x27;aime.</p>
+<p>DON PÈDRE.--Je sais qu&#x27;elle en est digne.</p>
+<p>BÉNÉDICK.--Je ne sens pas qu&#x27;on doive l&#x27;aimer, je ne sais pas qu&#x27;elle en soit digne, c&#x27;est là l&#x27;opinion que le feu ne pourrait détruire en moi. Je mourrai dans mon dire sur l&#x27;échafaud.</p>
+<p>DON PÈDRE.--Tu fus toujours un hérétique obstiné à l&#x27;endroit de la beauté.</p>
+<p>CLAUDIO.--Et jamais il n&#x27;a pu soutenir son rôle que par la force de sa volonté.</p>
+<p>BÉNÉDICK.--Qu&#x27;une femme m&#x27;ait conçu, je l&#x27;en remercie; je lui adresse aussi mes humbles remerciements pour m&#x27;avoir élevé; mais je refuse de porter sur mon front une corne pour appeler les chasseurs, ou suspendre mon cor de chasse à un baudrier invisible; c&#x27;est ce que toutes les femmes me pardonneront. Comme je ne veux pas leur faire l&#x27;affront de me défier d&#x27;une seule, je me rends la justice de ne me fier à aucune; et ma peine (dont je ne serai que plus présentable) sera de vivre garçon.</p>
+<p>DON PÈDRE.--Avant que je meure, je veux te voir pâle d&#x27;amour.</p>
+<p>BÉNÉDICK.--De maladie, de faim ou de colère, seigneur; mais jamais d&#x27;amour. Prouvez une fois que l&#x27;amour me coûte plus de sang que le vin ne m&#x27;en saurait rendre, et alors je vous permets de me crever les yeux avec la plume d&#x27;un faiseur de ballades, et de me suspendre à la porte d&#x27;un mauvais lieu comme l&#x27;enseigne de l&#x27;aveugle Cupidon.</p>
+<p>DON PÈDRE.--Bien! si jamais tu trahis ce voeu, tu nous fourniras un fameux argument.</p>
+<p>BÉNÉDICK.--Si je le trahis, pendez-moi comme un chat dans une bouteille[5], et tirez-moi dessus; et qu&#x27;on frappe sur l&#x27;épaule à celui qui me touchera en l&#x27;appelant Adam[6].</p>
+<p>[Note 5: Dans quelques provinces d&#x27;Angleterre, on enfermait autrefois un chat avec de la suie dans une bouteille de bois (semblable à la gourde des bergers), et on la suspendait à une corde. Celui qui pouvait en briser le fond en courant, et être assez adroit pour échapper à la suie et au chat qui tombait alors, était le héros de ce divertissement cruel.]</p>
+<p>[Note 6: Adam Bell, fameux archer.]</p>
+<p>DON PÈDRE.--Allons, le temps en décidera: Avec le temps, le buffle sauvage en vient à porter le joug.</p>
+<p>BÉNÉDICK.--Le buffle sauvage, oui; mais si le sensé Bénédick porte jamais un joug, arrachez les cornes du buffle, et plantez-les sur mon front; qu&#x27;on fasse de moi un tableau grossier, et, en lettres aussi grosses que celles où l&#x27;on écrit: Ici, bon cheval à louer, faites tracer sur ma figure: Ici, on peut voir Bénédick, l&#x27;homme marié.</p>
+<p>CLAUDIO.--Si jamais cela t&#x27;arrive, tu seras fou à lier.</p>
+<p>DON PÈDRE.--Bon! si Cupidon n&#x27;a pas épuisé son carquois dans Venise, il te fera bientôt trembler.</p>
+<p>BÉNÉDICK.--Je m&#x27;attends aussitôt à un tremblement de terre.</p>
+<p>DON PÈDRE.--Eh bien! temporisez d&#x27;heure en heure; mais cependant, seigneur Bénédick, rendez-vous chez Léonato, faites-lui mes civilités, et dites-lui que je ne manquerai point de me trouver au souper; car il a fait de grands préparatifs.</p>
+<p>BÉNÉDICK.--J&#x27;ai presque tout ce qu&#x27;il me faut pour faire un tel message; ainsi je vous recommande....</p>
+<p>CLAUDIO.--A la garde de Dieu, daté de ma maison, si j&#x27;en avais une.</p>
+<p>DON PÈDRE.--Le six de juillet, votre féal ami, Bénédick.</p>
+<p>BÉNÉDICK.--Ne raillez pas, ne raillez pas! le corps de votre discours est souvent vêtu de simples franges dont les morceaux sont très-légèrement faufilés; ainsi, avant de lancer plus loin de vieux sarcasmes, examinez votre conscience; et là-dessus, je vous laisse.</p>
+<p>(Bénédick sort.)</p>
+<p>CLAUDIO.--Mon prince, Votre Altesse peut maintenant me faire du bien.</p>
+<p>DON PÈDRE.--C&#x27;est à toi d&#x27;instruire mon amitié; apprends-lui seulement comment elle peut te servir, et tu verras combien elle sera docile à retenir tout ce qui pourra te faire du bien, quelque difficile que soit la leçon.</p>
+<p>CLAUDIO.--Léonato a-t-il des fils, mon seigneur?</p>
+<p>DON PÈDRE.--Il n&#x27;a d&#x27;autre enfant que Héro. Elle est son unique héritière; vous sentez-vous du penchant pour elle, Claudio?</p>
+<p>CLAUDIO.--Ah! seigneur, quand vous passâtes pour aller terminer cette guerre, je ne la vis que de l&#x27;oeil d&#x27;un soldat à qui elle plaisait, mais qui avait en main une tâche plus rude que celle de changer ce goût en amour; à présent que je suis revenu ici, et que les pensées guerrières ont laissé leur place vacante, au lieu d&#x27;elles viennent une foule de désirs tendres et délicats qui me répètent combien la jeune Héro est belle, et me disent que je l&#x27;aimais avant d&#x27;aller au combat.</p>
+<p>DON PÈDRE.--Te voilà bientôt un véritable amant. Déjà tu fatigues ton auditeur d&#x27;un volume de paroles. Si tu aimes la belle Héro, eh bien! aime-la. Je ferai les ouvertures auprès d&#x27;elle et de son père, et tu l&#x27;obtiendras. N&#x27;est-ce pas dans ces vues que tu as commencé à me filer une si belle histoire?</p>
+<p>CLAUDIO.--Quel doux remède vous offrez à l&#x27;amour! A son teint vous nommez son mal. De peur que mon penchant ne vous parût trop soudain, je voulais m&#x27;aider d&#x27;un plus long récit.</p>
+<p>DON PÈDRE.--Et pourquoi faut-il que le pont soit plus large que la rivière? La meilleure raison pour accorder, c&#x27;est la nécessité. Tout ce qui peut te servir ici est convenable. En deux mots, tu aimes, et je te fournirai le remède à cela.--Je sais qu&#x27;on nous apprête une fête pour ce soir; je jouerai ton rôle sous quelque déguisement, et je dirai à la belle Héro que je suis Claudio; j&#x27;épancherai mon coeur dans son sein, je captiverai son oreille par l&#x27;énergie et l&#x27;ardeur de mon récit amoureux; ensuite j&#x27;en ferai aussitôt l&#x27;ouverture à son père; et pour conclusion, elle sera à toi. Allons de ce pas mettre ce plan en exécution.</p>
+<p>LÉONATO ET ANTONIO paraissent.</p>
+<p>LÉONATO.--Eh bien! mon frère, où est mon neveu votre fils? A-t-il pourvu à la musique?</p>
+<p>ANTONIO.--Il en est très-occupé.--Mais, mon frère, j&#x27;ai à vous apprendre d&#x27;étranges nouvelles auxquelles vous n&#x27;avez sûrement pas rêvé encore.</p>
+<p>LÉONATO.--Sont-elles bonnes?</p>
+<p>ANTONIO.--Ce sera suivant l&#x27;événement; mais elles ont bonne apparence et s&#x27;annoncent bien. Le prince et le comte Claudio se promenant tout à l&#x27;heure ici dans une allée sombre de mon verger, ont été secrètement entendus par un de mes gens. Le prince découvrait à Claudio qu&#x27;il aimait ma nièce votre fille; il se proposait de le lui confesser cette nuit pendant le bal, et s&#x27;il la trouvait consentante, il projetait de saisir l&#x27;occasion aux cheveux et de s&#x27;en ouvrir à vous, sans tarder.</p>
+<p>LÉONATO.--L&#x27;homme qui vous a dit ceci a-t-il un peu d&#x27;intelligence?</p>
+<p>ANTONIO.--C&#x27;est un garçon adroit et fin. Je vais l&#x27;envoyer chercher. Vous l&#x27;interrogerez vous-même.</p>
+<p>LÉONATO.--Non, non. Regardons la chose comme un songe, jusqu&#x27;à ce qu&#x27;elle se montre elle-même. Je veux seulement en prévenir ma fille, afin qu&#x27;elle ait une réponse prête, si par hasard ceci se réalisait. (Plusieurs personnes traversent le théâtre.) Allez devant et avertissez-la.--Cousins, vous savez ce que vous avez à faire.--Mon ami, je vous demande pardon; venez avec moi, et j&#x27;emploierai vos talents.--Mes chers cousins, aidez-moi dans ce moment d&#x27;embarras.</p>
+<p>(Tous sortent.)</p>
+<h2 class="chapter" id="c2">Scène III</h2>
+<p>Un autre appartement dans la maison de Léonato.</p>
+<p>Entrent DON JUAN ET CONRAD.</p>
+<p>CONRAD.--Quel mal avez-vous, seigneur? D&#x27;où vous vient cette tristesse extrême?</p>
+<p>DON JUAN.--Comme la cause de mon chagrin n&#x27;a point de bornes, ma tristesse est aussi sans mesure.</p>
+<p>CONRAD.--Vous devriez entendre raison.</p>
+<p>DON JUAN.--Et quand je l&#x27;aurais écoutée, quel fruit m&#x27;en reviendrait-il?</p>
+<p>CONRAD.--Sinon un remède actuel, du moins la patience.</p>
+<p>DON JUAN.--Je m&#x27;étonne qu&#x27;étant né, comme tu le dis, sous le signe de Saturne, tu veuilles appliquer un topique moral à un mal-désespéré. Je ne puis cacher ce que je suis; il faut que je sois triste lorsque j&#x27;en ai sujet. Je ne sais sourire aux bons mots de personne. Je veux manger quand j&#x27;ai appétit, sans attendre le loisir de personne; dormir lorsque je me sens assoupi, et ne jamais veiller aux intérêts de personne; rire quand je suis gai, et ne flatter le caprice de personne.</p>
+<p>CONRAD.--Oui, mais vous ne devez pas montrer votre caractère à découvert que vous ne le puissiez sans contrôle. Naguère vous avez pris les armes contre votre frère, et il vient de vous rendre ses bonnes grâces; il est impossible que vous preniez racine dans son amitié, si vous ne faites pour cela le beau temps. C&#x27;est à vous de préparer la saison qui doit favoriser votre récolte.</p>
+<p>DON JUAN.--J&#x27;aimerais mieux être la chenille de la haie qu&#x27;une rose par ses bienfaits. Le dédain général convient mieux à mon humeur que le soin de me composer un extérieur propre à ravir l&#x27;amour de qui que ce soit. Si l&#x27;on ne peut me nommer un flatteur honnête homme, du moins on ne peut nier que je ne sois un franc ennemi. Oui, l&#x27;on se fie à moi en me muselant, ou l&#x27;on m&#x27;affranchit en me donnant des entraves. Aussi, j&#x27;ai résolu de ne point chanter dans ma cage. Si j&#x27;avais la bouche libre, je voudrais mordre; si j&#x27;étais libre, je voudrais agir à mon gré: en attendant, laisse-moi être ce que je suis; ne cherche point à me changer.</p>
+<p>CONRAD.--Ne pouvez-vous tirer aucun parti de votre mécontentement?</p>
+<p>DON JUAN.--J&#x27;en tire tout le parti possible, car je ne m&#x27;occupe que de cela.--Qui vient ici? Quelles nouvelles, Borachio?</p>
+<p>(Entre Borachio.)</p>
+<p>BORACHIO.--J&#x27;arrive ici d&#x27;un grand souper. Léonato traite royalement le prince votre frère, et je puis vous donner connaissance d&#x27;un mariage projeté.</p>
+<p>DON JUAN.--Est-ce une base sur laquelle on puisse bâtir quelque malice? Nomme-moi le fou qui est si pressé de se fiancer à l&#x27;inquiétude.</p>
+<p>BORACHIO.--Eh bien! c&#x27;est le bras droit de votre frère.</p>
+<p>DON JUAN.--Qui? le merveilleux Claudio?</p>
+<p>BORACHIO.--Lui-même.</p>
+<p>DON JUAN.--Un beau chevalier! Et à qui, à qui? Sur qui jette-t-il les yeux?</p>
+<p>BORACHIO.--Diantre!--Sur Héro, la fille et l&#x27;héritière de Léonato.</p>
+<p>DON JUAN.--Poulette précoce de mars! Comment l&#x27;as-tu appris?</p>
+<p>BORACHIO.--Comme on m&#x27;avait traité en parfumeur, et que j&#x27;étais chargé de sécher une chambre qui sentait le moisi, j&#x27;ai vu venir à moi Claudio et le prince se tenant par la main. Leur conférence était sérieuse; je me suis caché derrière la tapisserie; de là je les ai entendus concerter ensemble que le prince demanderait Héro pour lui-même, et qu&#x27;après l&#x27;avoir obtenue il la céderait au comte Claudio.</p>
+<p>DON JUAN.--Venez, venez, suivez-moi; ceci peut devenir un aliment pour ma rancune. Ce jeune parvenu a toute la gloire de ma chute. Si je puis lui nuire en quelque manière, je travaille pour moi en tout sens. Vous êtes deux hommes sûrs: vous me servirez?</p>
+<p>CONRAD.--Jusqu&#x27;à la mort, seigneur.</p>
+<p>DON JUAN.--Allons nous rendre à ce grand souper: leur fête est d&#x27;autant plus brillante qu&#x27;ils m&#x27;ont subjugué. Je voudrais que le cuisinier fût du même avis que moi!--Irons-nous essayer ce qu&#x27;il y a à faire?</p>
+<p>BORACHIO.--Nous accompagnerons Votre Seigneurie.</p>
+<p>(Ils sortent.)</p>
+<h3 class="sub">Fin du premier Acte — Acte deuxième</h3>
+<h2 class="chapter" id="c3">Scène I</h2>
+<p>Une salle du palais de Léonato.</p>
+<p>LÉONATO, ANTONIO, HÉRO, BÉATRICE et autres.</p>
+<p>LÉONATO.--Le comte Jean n&#x27;était-il pas au souper?</p>
+<p>ANTONIO.--Je ne l&#x27;ai point vu.</p>
+<p>BÉATRICE.--Quel air aigre a ce gentilhomme! Je ne puis jamais le voir sans sentir une heure après des cuissons à l&#x27;estomac[7].</p>
+<p>[Note 7: Heart-burn.]</p>
+<p>HÉRO.--Il est d&#x27;un tempérament fort mélancolique.</p>
+<p>BÉATRICE.--Un homme parfait serait celui qui tiendrait le juste milieu entre lui et Bénédick. L&#x27;un ressemble trop à une statue qui ne dit mot, l&#x27;autre au fils aîné de ma voisine, qui babille sans cesse.</p>
+<p>LÉONATO.--Ainsi moitié de la langue du seigneur Bénédick dans la bouche du comte Jean; et moitié de la mélancolie du comte Jean sur le front du seigneur Bénédick....</p>
+<p>BÉATRICE.--Avec bon pied, bon oeil et de l&#x27;argent dans sa bourse, mon oncle, un homme comme celui-là pourrait gagner telle femme qui soit au monde, pourvu qu&#x27;il sût lui plaire.</p>
+<p>LÉONATO.--Vous, ma nièce, vous ne gagnerez jamais un époux, si vous avez la langue si bien pendue.</p>
+<p>ANTONIO.--En effet, elle est trop maligne.</p>
+<p>BÉATRICE.--Trop maligne, c&#x27;est plus que maligne; car il est dit que Dieu envoie à une vache maligne des cornes courtes[8]; mais à une vache trop maligne, il n&#x27;en envoie point.</p>
+<p>[Note 8: Dat Deus inutili cornua curta bovi.]</p>
+<p>LÉONATO.--Ainsi, parce que vous êtes trop maligne, Dieu ne vous enverra point de cornes.</p>
+<p>BÉATRICE.--Justement, s&#x27;il ne m&#x27;envoie jamais de mari; et pour obtenir cette grâce, je le prie à genoux chaque matin et chaque soir. Bon Dieu! je ne pourrais supporter un mari avec de la barbe au menton; j&#x27;aimerais mieux coucher sur la laine.</p>
+<p>LÉONATO.--Vous pourriez tomber sur un mari sans barbe.</p>
+<p>BÉATRICE.--Eh! qu&#x27;en pourrais-je faire? Le vêtir de mes robes et en faire ma femme de chambre? Celui qui porte barbe n&#x27;est plus un enfant; et celui qui n&#x27;en a point est moins qu&#x27;un homme. Or celui qui n&#x27;est plus un enfant n&#x27;est pas mon fait, et je ne suis pas le fait de celui qui est moins qu&#x27;un homme. C&#x27;est pourquoi je prendrai six sous pour arrhes du conducteur d&#x27;ours, et je conduirai ses singes en enfer[9].</p>
+<p>[Note 9: Un vieux proverbe disait: Les vieilles pucelles conduisent les singes en enfer.]</p>
+<p>LÉONATO.--Quoi donc? vous iriez donc en enfer?</p>
+<p>BÉATRICE.--Non, seulement jusqu&#x27;à la porte; et là le diable me viendra recevoir avec des cornes au front comme un vieux misérable, et me dira: Allez au ciel, Béatrice, allez au ciel; il n&#x27;y a pas ici de place pour vous autres filles: c&#x27;est ainsi que je remets là mes singes et que je vais trouver saint Pierre pour entrer au ciel; il me montre l&#x27;endroit où se tiennent les célibataires, et je mène avec eux joyeuse vie tout le long du jour.</p>
+<p>ANTONIO.--Très-bien, ma nièce.--(A Héro.) j&#x27;espère que vous vous laisserez guider par votre père.</p>
+<p>BÉATRICE.--Oui, sans doute, c&#x27;est le devoir de ma cousine de faire la révérence, et de dire: Mon père, comme il vous plaira. Mais, cousine, malgré tout, que le cavalier soit bien tourné; sans quoi, doublez la révérence et dites: Mon père, comme il vous plaira.</p>
+<p>LÉONATO.--J&#x27;espère bien un jour vous voir aussi pourvue d&#x27;un mari, ma nièce.</p>
+<p>BÉATRICE.--Non pas avant que la Providence fasse les maris d&#x27;une autre pâte que la terre. N&#x27;y a-t-il pas de quoi désespérer une femme de se voir régentée par un morceau de vaillante poussière, d&#x27;être obligée de rendre compte de sa vie à une motte de marne bourrue? Non, mon oncle, je n&#x27;en veux point. Les fils d&#x27;Adam sont mes frères, et sincèrement je tiens pour péché de me marier dans ma famille.</p>
+<p>LÉONATO.--Ma fille, souvenez-vous de ce que je vous ai dit. Si le prince vous fait quelques instances de ce genre, vous savez votre réponse.</p>
+<p>BÉATRICE.--Si l&#x27;on ne vous fait pas la cour à propos, cousine, la faute en sera dans la musique. Si le prince devient trop importun, dites-lui qu&#x27;on doit suivre en tout une mesure, dansez-lui votre réponse. Écoutez bien, Héro, la triple affaire de courtiser, d&#x27;épouser et de se repentir est une gigue écossaise, un menuet et une sarabande. Les premières propositions sont ardentes et précipitées comme la gigue écossaise, et tout aussi bizarres. Ensuite, l&#x27;hymen grave et convenable est comme un vieux menuet plein de décorum. Après suit le repentir qui, de ses deux jambes écloppées, tombe de plus en plus dans la sarabande jusqu&#x27;à ce qu&#x27;il descende dans le tombeau.</p>
+<p>LÉONATO.--Ma nièce, vous voyez les choses d&#x27;un trop mauvais côté.</p>
+<p>BÉATRICE.--J&#x27;ai de bons yeux, mon oncle, je peux voir une église en plein midi.</p>
+<p>LÉONATO.--Voici les masques.--(A Antonio.) Allons, mon frère, faites placer.</p>
+<p>(Entrent don Pèdre, Claudio, Bénédick, Balthazar, don Juan, Borachio, Marguerite, Ursule, et une foule d&#x27;autres masques.)</p>
+<p>DON PÈDRE, abordant Héro.--Daignerez-vous, madame, vous promener avec un ami[10]?</p>
+<p>[Note 10: Friend, un ami; nous disons encore un bon ami, dans le même sens.]</p>
+<p>HÉRO.--Pourvu que vous vous promeniez lentement, que vous me regardiez avec douceur, et que vous ne disiez rien, je suis à vous pour la promenade; et surtout si je sors pour me promener.</p>
+<p>DON PÈDRE.--Avec moi pour votre compagnie?</p>
+<p>HÉRO.--Je pourrai vous le dire quand cela me plaira.</p>
+<p>DON PÈDRE.--Et quand vous plaira-il de me le dire?</p>
+<p>HÉRO.--Lorsque vos traits me plairont. Mais Dieu nous préserve que le luth ressemble à l&#x27;étui.</p>
+<p>DON PÈDRE.--Mon masque est le toit de Philémon; Jupiter est dans la maison.</p>
+<p>HÉRO.--En ce cas, pourquoi votre masque n&#x27;est-il pas en chaume?</p>
+<p>DON PÈDRE.--Parlez bas, si vous parlez d&#x27;amour.</p>
+<p>(Héro et don Pèdre s&#x27;éloignent.)</p>
+<p>BÉNÉDICK[11]. Eh bien! je voudrais vous plaire!</p>
+<p>[Note 11: Tout ce dialogue de Marguerite avec Bénédick est attribué, par d&#x27;autres, à Balthazar.]</p>
+<p>MARGUERITE.--Je ne vous le souhaite pas pour l&#x27;amour de vous-même. J&#x27;ai mille défauts.</p>
+<p>BÉNÉDICK.--Nommez-en un.</p>
+<p>MARGUERITE.--Je dis tout haut mes prières.</p>
+<p>BÉNÉDICK.--Vous m&#x27;en plaisez davantage. L&#x27;auditoire peut répondre ainsi soit-il.</p>
+<p>MARGUERITE.--Veuille le ciel me joindre à un bon danseur!</p>
+<p>BÉNÉDICK. Ainsi soit-il!</p>
+<p>MARGUERITE.--Et Dieu veuille l&#x27;ôter de ma vue quand la danse sera finie! Répondez, sacristain.</p>
+<p>BÉNÉDICK.--Tout est dit; le sacristain a sa réponse.</p>
+<p>URSULE.--Je vous connais du reste; vous êtes le seigneur Antonio.</p>
+<p>ANTONIO.--En un mot, non.</p>
+<p>URSULE.--Je vous reconnais au balancement de votre tête!</p>
+<p>ANTONIO.--A dire la vérité, je le contrefais un peu.</p>
+<p>URSULE.--Il n&#x27;est pas possible de le contrefaire si bien, à moins d&#x27;être lui; et voilà sa main sèche[12] d&#x27;un bout à l&#x27;autre. Vous êtes Antonio, vous êtes Antonio.</p>
+<p>[Note 12: Comme signe d&#x27;un tempérament froid. Nous disons encore: Vous avez les mains fraîches, vous devez être fidèle.]</p>
+<p>ANTONIO.--En un mot, non.</p>
+<p>URSULE.--Bon, bon; croyez-vous que je ne vous reconnaisse pas à votre esprit? Le mérite se peut-il cacher? Allons, chut! vous êtes Antonio; les grâces se trahissent toujours; et voilà tout.</p>
+<p>BÉATRICE.--Vous ne voulez pas me dire qui vous a dit cela?</p>
+<p>BÉNÉDICK.--Non; vous me pardonnerez ma discrétion.</p>
+<p>BÉATRICE.--Ni me dire qui vous êtes?</p>
+<p>BÉNÉDICK.--Pas pour le moment.</p>
+<p>BÉATRICE.--On a donc prétendu que j&#x27;étais dédaigneuse, et que je puisais mon esprit dans les Cent joyeux contes[13]. Allons, c&#x27;est le seigneur Bénédick qui a dit cela.</p>
+<p>[Note 13: The hundred merry tales, collection populaire d&#x27;anecdotes licencieuses et de facéties sans finesse, publiée par John Rastell, au commencement du XVIe siècle, et réimprimée, il y a quelques années, par M. Singer, sous le titre: Shakspeare&#x27;s Jest Book.]</p>
+<p>BÉNÉDICK. Qui est-ce?</p>
+<p>BÉATRICE.--Oh! je suis sûr que vous le connaissez bien.</p>
+<p>BÉNÉDICK.--Pas du tout, croyez-moi.</p>
+<p>BÉATRICE.--Comment, il ne vous a jamais fait rire?</p>
+<p>BÉNÉDICK.--De grâce, qui est-ce?</p>
+<p>BÉATRICE.--C&#x27;est le bouffon du prince, un fou insipide. Tout son talent consiste à débiter d&#x27;absurdes médisances. Il n&#x27;y a que des libertins qui puissent se plaire en sa compagnie; et encore ce n&#x27;est pas son esprit qui le leur rend agréable, mais bien sa méchanceté; il plaît aux hommes et les met en colère. On rit de lui, et on le bâtonne. Je suis sûre qu&#x27;il est dans le bal. Oh! je voudrais bien qu&#x27;il fût venu m&#x27;agacer.</p>
+<p>BÉNÉDICK.--Dès que je connaîtrai ce cavalier, je lui dirai ce que vous dites.</p>
+<p>BÉATRICE.--Oui, oui; j&#x27;en serai quitte pour un ou deux traits malicieux; et encore si par hasard ils ne sont pas remarqués ou s&#x27;ils ne font pas rire, le voilà frappé de mélancolie. Et c&#x27;est une aile de perdrix d&#x27;économisée, car l&#x27;insensé ne soupe pas ce soir-là.--(On entend de la musique dans l&#x27;intérieur). Il faut suivre ceux qui conduisent.</p>
+<p>BÉNÉDICK.--Dans toutes les choses bonnes à suivre.</p>
+<p>BÉATRICE.--D&#x27;accord. Si l&#x27;on me conduit vers quelque mauvais pas, je les quitte au premier détour.</p>
+<p>(Danse. Tous sortent ensuite excepté don Juan, Borachio et Claudio.)</p>
+<p>DON JUAN.--Sûrement mon frère est amoureux d&#x27;Héro; je l&#x27;ai vu tirant le père à l&#x27;écart pour lui en faire l&#x27;ouverture. Les dames la suivent, et il ne reste qu&#x27;un seul masque.</p>
+<p>BORACHIO.--Et ce masque est Claudio, je le reconnais à sa démarche.</p>
+<p>DON JUAN.--Seriez-vous le seigneur Bénédick?</p>
+<p>CLAUDIO.--Vous ne vous trompez point, c&#x27;est moi.</p>
+<p>DON JUAN.--Seigneur, vous êtes fort avancé dans les bonnes grâces de mon frère; il est épris de Héro. Je vous prie de le dissuader de cette idée. Héro n&#x27;est point d&#x27;une naissance égale à la sienne. Vous pouvez jouer en ceci le rôle d&#x27;un honnête homme.</p>
+<p>CLAUDIO.--Comment savez-vous qu&#x27;il l&#x27;aime?</p>
+<p>DON JUAN.--Je l&#x27;ai entendu lui jurer son amour.</p>
+<p>BORACHIO.--Et moi aussi; il lui jurait de l&#x27;épouser cette nuit.</p>
+<p>DON JUAN, bas à Borachio.--Viens; allons au banquet.</p>
+<p>(Don Juan et Borachio se retirent.)</p>
+<p>CLAUDIO seul.--Je réponds ainsi sous le nom de Bénédick; mais c&#x27;est de l&#x27;oreille de Claudio que j&#x27;entends ces fatales nouvelles! Rien n&#x27;est plus certain. Le prince fait la cour pour son propre compte. Dans toutes les affaires humaines, l&#x27;amitié se montre fidèle, hormis dans les affaires d&#x27;amour; que tous les coeurs amoureux se servent de leur propre langue; que l&#x27;oeil négocie seul pour lui-même, et ne se fie à aucun agent. La beauté est une enchanteresse, et la bonne foi qui s&#x27;expose à ses charmes se dissout en sang[14]. C&#x27;est une vérité dont la preuve s&#x27;offre à toute heure, et dont je ne me défiais pas! Adieu donc, Héro.</p>
+<p>[Note 14: Allusion aux figures de cire des sorcières. Une ancienne superstition leur attribuait aussi le pouvoir de changer l&#x27;eau et le vin en sang.]</p>
+<p>(Rentre Bénédick.)</p>
+<p>BÉNÉDICK.--Le comte Claudio?</p>
+<p>CLAUDIO.--Oui, lui-même.</p>
+<p>BÉNÉDICK, ôtant son masque.--Voulez-vous me suivre? marchons.</p>
+<p>CLAUDIO.--Où?</p>
+<p>BÉNÉDICK.--Au pied du premier saule, comte, pour vos affaires. Comment voulez-vous porter la guirlande que nous tresserons? A votre cou comme la chaîne d&#x27;un usurier[15], ou sous le bras comme l&#x27;écharpe d&#x27;un capitaine? Il faut la porter de façon ou d&#x27;autre, car le prince s&#x27;est emparé de votre Héro.</p>
+<p>[Note 15: Parure des citoyens opulents du temps de Shakspeare.]</p>
+<p>CLAUDIO.--Je lui souhaite beaucoup de bonheur avec elle.</p>
+<p>BÉNÉDICK.--Vraiment vous parlez comme un honnête marchand de bétail; voilà comme ils vendent leurs boeufs.--Mais auriez-vous cru que le prince vous eût traité de cette manière?</p>
+<p>CLAUDIO.--De grâce, laissez-moi.</p>
+<p>BÉNÉDICK.--Oh! voilà que vous frappez comme un aveugle. C&#x27;est l&#x27;enfant qui vous a dérobé votre viande, et vous battez la borne[16].</p>
+<p>[Note 16: Allusion à l&#x27;aveugle de Lazarille de Tormes.]</p>
+<p>CLAUDIO.--Puisqu&#x27;il ne vous plaît pas de me laisser, je vous laisse, moi.</p>
+<p>(Il sort.)</p>
+<p>BÉNÉDICK.--Hélas! pauvre oiseau blessé, il va se glisser dans quelque haie. Mais... que Béatrice me connaisse si bien... et pourtant me connaisse si mal! Le bouffon du prince! Ah! il se pourrait bien qu&#x27;on me donnât ce titre, parce que je suis jovial.--Non, je suis sujet à me faire injure à moi-même; je ne passe point pour cela. C&#x27;est l&#x27;esprit méchant, envieux de Béatrice, qui se dit le monde, et me peint sous ces couleurs. Fort bien, je me vengerai de mon mieux.</p>
+<p>(Entrent don Pèdre, Héro et Léonato.)</p>
+<p>DON PÈDRE.--Ah! signor, où trouverai-je le comte? L&#x27;avez-vous vu.</p>
+<p>BÉNÉDICK.--Ma foi, seigneur, je viens de jouer le rôle de dame Renommée. J&#x27;ai trouvé ici le comte, aussi mélancolique qu&#x27;une cabane dans une garenne[17]. Je lui dis, et je crois avoir dit vrai, que Votre Altesse avait conquis les bonnes grâces de cette jeune dame. Puis je lui offre de l&#x27;accompagner jusqu&#x27;à un saule, soit pour lui tresser une guirlande, comme à un amant délaissé, ou pour lui fournir un faisceau de verges, comme à un homme qui mériterait d&#x27;être fouetté.</p>
+<p>[Note 17: «Ce qui reste de la fille de Sion est comme une cabane dans un vignoble, comme une loge nocturne dans un jardin de concombres.» (Isaïe, chap. 1.)]</p>
+<p>DON PÈDRE.--D&#x27;être fouetté! Et quelle est sa faute?</p>
+<p>BÉNÉDICK.--La sottise d&#x27;un écolier qui, dans sa joie d&#x27;avoir trouvé un nid d&#x27;oiseau, le montre à son camarade, et celui-ci le vole.</p>
+<p>DON PÈDRE.--Traiterez-vous de faute une marque de confiance? La faute est au voleur.</p>
+<p>BÉNÉDICK.--Et cependant il n&#x27;eût pas été mal à propos qu&#x27;on eut préparé et les verges et la guirlande. Le comte aurait pu porter la guirlande, et il aurait pu donner les verges à Votre Altesse qui, à ce que je crois, lui a volé son nid d&#x27;oiseaux.</p>
+<p>DON PÈDRE.--Je ne veux que leur apprendre à chanter, et les rendre ensuite à leur légitime maître.</p>
+<p>BÉNÉDICK.--Si leur chant s&#x27;accorde avec votre langage, vous parlez en honnête homme.</p>
+<p>DON PÈDRE.--La signora Béatrice vous prépare une querelle. Le cavalier qui dansait avec elle lui a dit que vous lui faisiez beaucoup de tort.</p>
+<p>BÉNÉDICK.--Oh! elle m&#x27;a maltraité à faire perdre patience à un bloc! Un chêne, n&#x27;ayant plus qu&#x27;une feuille verte, lui aurait répondu. Mon masque même commençait à prendre vie et à la quereller. Elle m&#x27;a dit, sans se douter qu&#x27;elle me parlait à moi-même, que j&#x27;étais le bouffon du prince, et que j&#x27;étais plus insipide qu&#x27;un grand dégel. Entassant sarcasmes sur sarcasmes, avec une habileté inconcevable, elle m&#x27;en a tant dit que je suis resté comme un homme en butte aux traits de toute une armée qui tire sur lui. Ses propos sont des poignards; chaque mot vous tue. Si son souffle était aussi terrible que ses expressions, il n&#x27;y aurait auprès d&#x27;elle personne en vie, elle lancerait la mort jusqu&#x27;au pôle.--Eût-elle tous les biens dont Adam fut le maître, avant qu&#x27;il eût transgressé, je ne voudrais pas d&#x27;elle pour mon épouse. Elle eût fait tourner la broche à Hercule, et aurait fendu sa massue pour entretenir le feu. Allons, ne me parlez pas d&#x27;elle, c&#x27;est l&#x27;infernale Àté[18] bien habillée. Plût à Dieu que quelque clerc daignât la conjurer! car, tant qu&#x27;elle sera sur cette terre, on pourrait vivre en enfer aussi tranquillement que dans un sanctuaire; et les gens pèchent exprès afin d&#x27;y arriver plus tôt, tant la peine, le trouble et l&#x27;horreur la suivent partout.</p>
+<p>[Note 18: Déesse de la vengeance ou de la discorde.]</p>
+<p>(Rentrent Claudio et Béatrice.)</p>
+<p>DON PÈDRE.--Regardez, la voici qui vient.</p>
+<p>BÉNÉDICK.--Voulez-vous m&#x27;envoyer au bout du monde pour votre service? Je vais à l&#x27;instant aux antipodes sous le plus léger prétexte que vous puissiez inventer. Je cours vous chercher un cure-dent aux dernières limites de l&#x27;Asie, prendre la mesure du pied du Prêtre-Jean[19], vous chercher un poil de la barbe du grand Cham, négocier quelque ambassade chez les Pygmées, plutôt que de soutenir un entretien de trois paroles avec cette harpie. N&#x27;avez-vous aucun emploi à me confier?</p>
+<p>[Note 19: Souverain de l&#x27;Abyssinie, ou de la Haute-Asie.]</p>
+<p>DON PÈDRE.--Nul autre que de tenir à votre bonne compagnie.</p>
+<p>BÉNÉDICK.--O Dieu! seigneur, vous avez céans un mets qui n&#x27;est pas de mon goût; je ne puis souffrir madame Caquet.</p>
+<p>(Il sort.)</p>
+<p>DON PÈDRE.--Je vous apprends, madame, que vous avez perdu le coeur du seigneur Bénédick.</p>
+<p>BÉATRICE.--Il est vrai, prince, qu&#x27;il me l&#x27;a prêté jadis un moment, et je lui en donnai l&#x27;intérêt, un coeur double pour un coeur simple. Il m&#x27;a regagné son coeur avec des dés pipés. Ainsi Votre Altesse fait bien de dire que je l&#x27;ai perdu.</p>
+<p>DON PÈDRE.--Vous l&#x27;avez mis par terre, madame, vous l&#x27;avez mis par terre.</p>
+<p>BÉATRICE.--Je serais bien fâchée qu&#x27;il prît un jour sa revanche sur moi, seigneur; je craindrais trop d&#x27;être la mère de quelques imbéciles.--J&#x27;ai amené le comte Claudio que j&#x27;ai envoyé chercher.</p>
+<p>DON PÈDRE.--Eh bien! qu&#x27;avez-vous, comte? Pourquoi êtes-vous triste?</p>
+<p>CLAUDIO.--Seigneur, je ne suis point triste.</p>
+<p>DON PÈDRE.--Qu&#x27;êtes-vous donc? malade?</p>
+<p>CLAUDIO.--Ni malade, seigneur.</p>
+<p>BÉATRICE.--Le comte n&#x27;est ni triste ni malade, ni bien portant ni gai.--Mais vous êtes poli, comte, poli comme une orange, et un peu de la même teinte jalouse.</p>
+<p>DON PÈDRE.--Sérieusement, madame, je crois votre blason fidèle; et cependant si Claudio est ainsi, je lui jure que ses soupçons sont injustes.--Voilà, Claudio, j&#x27;ai fait la cour en votre nom; et la belle Héro s&#x27;est rendue. Je viens de sonder son père; il donne son agrément. Indiquez le jour du mariage, et que Dieu vous rende heureux.</p>
+<p>LÉONATO.--Comte, recevez ma fille de ma main, et avec elle ma fortune. Son Altesse a fait le mariage, et que tous y applaudissent.</p>
+<p>BÉATRICE.--Parlez, comte, c&#x27;est votre tour.</p>
+<p>CLAUDIO.--Le silence est l&#x27;interprète le plus éloquent de la joie. Je ne serais que faiblement heureux si je pouvais dire combien je le suis.--(A Héro.) Si vous êtes à moi, madame, je suis à vous; je me donne en échange de vous, et suis passionnément heureux de ce marché.</p>
+<p>BÉATRICE.--Parlez, ma cousine; ou si vous ne pouvez pas, fermez lui la bouche par un baiser, et ne le laissez pas parler non plus.</p>
+<p>DON PÈDRE.--En vérité, mademoiselle, vous avez le coeur gai.</p>
+<p>BÉATRICE.--Oui, monseigneur, je l&#x27;en remercie; le pauvre diable se tient toujours contre le vent du souci.--Ma cousine lui dit à l&#x27;oreille qu&#x27;il habite dans son coeur.</p>
+<p>CLAUDIO.--Et c&#x27;est en effet ce qu&#x27;elle me dit, ma cousine.</p>
+<p>BÉATRICE.--Bon Dieu! voilà donc encore une alliance!--C&#x27;est ainsi que chacun entre dans le monde; il n&#x27;y a que moi qui sois brûlée du soleil[20]. Il faut que j&#x27;aille m&#x27;asseoir dans un coin, pour crier: Holà! un mari!</p>
+<p>[Note 20: J&#x27;ai perdu ma beauté, les maris seront rares.]</p>
+<p>DON PÈDRE.--Béatrice, je veux vous en procurer un.</p>
+<p>BÉATRICE.--J&#x27;aimerais mieux en avoir un de la main de votre père. Votre Altesse n&#x27;aurait-elle point un frère qui lui ressemble? Votre père faisait d&#x27;excellents maris... si une pauvre fille pouvait atteindre jusqu&#x27;à eux.</p>
+<p>DON PÈDRE.--Voudriez-vous de moi, madame?</p>
+<p>BÉATRICE.--Non, monseigneur, à moins d&#x27;en avoir un second pour les jours ouvrables. Votre Altesse est d&#x27;un trop grand prix pour qu&#x27;on s&#x27;en serve tous les jours; mais je vous prie, pardonnez-moi, je suis née pour dire toujours des folies qui n&#x27;ont point de fond.</p>
+<p>DON PÈDRE.--Votre silence seul me blesse. La gaieté est ce qui vous sied le mieux. Sans aucun doute, vous êtes née dans une heure joyeuse.</p>
+<p>BÉATRICE.--Non sûrement, seigneur, ma mère criait, mais une étoile dansait alors, et je naquis sous son aspect.--Cousins, que Dieu vous donne le bonheur!</p>
+<p>LÉONATO.--Ma nièce, voulez-vous voir à cette chose dont je vous ai parlé?</p>
+<p>BÉATRICE.--Ah! je vous demande pardon, mon oncle; avec la permission de Votre Altesse.</p>
+<p>(Elle sort.)</p>
+<p>DON PÈDRE.--Voilà sans contredit une femme enjouée.</p>
+<p>LÉONATO.--Il est vrai, seigneur, que la mélancolie est un élément qui domine peu chez elle; elle n&#x27;est sérieuse que quand elle dort, encore pas toujours. J&#x27;ai ouï dire à ma fille que Béatrice rêvait à des malheurs et se réveillait à force de rire.</p>
+<p>DON PÈDRE.--Elle ne peut souffrir qu&#x27;on lui parle d&#x27;un mari.</p>
+<p>LÉONATO.--Oh! du tout. Elle décourage tous les aspirants par ses railleries.</p>
+<p>DON PÈDRE.--Ce serait une femme parfaite pour Bénédick.</p>
+<p>LÉONATO.--Ahl Seigneur! s&#x27;ils étaient mariés, monseigneur, seulement huit jours, ils deviendraient fous à force de parler.</p>
+<p>DON PÈDRE.--Comte Claudio, quand vous proposez-vous d&#x27;aller à l&#x27;église?</p>
+<p>CLAUDIO.--Demain, seigneur: le temps se traîne sur des béquilles jusqu&#x27;à ce que l&#x27;Amour ait vu ses rites accomplis.</p>
+<p>LÉONATO.--Pas avant lundi, mon cher fils. C&#x27;est juste dans huit jours, et le temps est déjà trop court.</p>
+<p>DON PÈDRE.--Allons, vous secouez la tête à un si long délai; mais je vous garantis, Claudio, que le temps ne nous pèsera pas; je veux dans l&#x27;intervalle entreprendre un des travaux d&#x27;Hercule. C&#x27;est d&#x27;amener le seigneur Bénédick et Béatrice à avoir l&#x27;un pour l&#x27;autre une montagne d&#x27;amour; je voudrais en faire un mariage, et je ne doute pas d&#x27;en venir à bout, si vous voulez bien tous trois me prêter l&#x27;aide que je vous demanderai.</p>
+<p>LÉONATO.--Monseigneur, comptez sur moi, dussé-je passer dix nuits sans dormir.</p>
+<p>CLAUDIO.--Seigneur, j&#x27;en dis autant.</p>
+<p>DON PÈDRE.--Et vous aussi, aimable Héro?</p>
+<p>HÉRO.--Je ferai tout ce qu&#x27;on pourra faire avec convenance, seigneur, pour procurer à ma cousine un bon mari.</p>
+<p>DON PÈDRE.--Et des maris que je connais, Bénédick n&#x27;est pas celui qui promet le moins; je puis lui donner cet éloge; il est d&#x27;un sang illustre, d&#x27;une valeur reconnue, d&#x27;une honnêteté prouvée. Je vous enseignerai à disposer votre cousine à devenir amoureuse de Bénédick; tandis que moi, soutenu de mes deux amis, je me charge d&#x27;opérer sur Bénédick. En dépit de son esprit vif et de son estomac particulier, je veux qu&#x27;il s&#x27;enflamme pour Béatrice. Si nous pouvons réussir, Cupidon cesse d&#x27;être un archer: toute sa gloire nous appartiendra, comme aux seuls dieux de l&#x27;amour. Entrez avec moi, et je vous expliquerai mon projet.</p>
+<p>(Ils sortent.)</p>
+<h2 class="chapter" id="c4">Scène II</h2>
+<p>Appartement du palais de Léonato.</p>
+<p>Entrent DON JUAN ET BORACHIO.</p>
+<p>DON JUAN.--C&#x27;est une affaire conclue, le comte Claudio épouse la fille de Léonato.</p>
+<p>BORACHIO.--Oui, seigneur; mais je puis traverser cette affaire.</p>
+<p>DON JUAN.--Tout obstacle, toute entrave, toute machination sera un baume pour mon coeur. Je suis malade de la haine que je lui porte, et tout ce qui pourra contrarier ses inclinations s&#x27;accordera avec les miennes.--Comment feras-tu pour entraver le mariage?</p>
+<p>BORACHIO.--Ce ne sera pas par des voies honnêtes, seigneur; mais elles seront si secrètes, qu&#x27;on ne pourra m&#x27;accuser de malhonnêteté.</p>
+<p>DON JUAN.--Vite, dis-moi comment.</p>
+<p>BORACHIO.--Je croyais vous avoir dit, seigneur, il y a un an, combien j&#x27;étais dans les bonnes grâces de Marguerite, suivante d&#x27;Héro.</p>
+<p>DON JUAN.--Je m&#x27;en souviens.</p>
+<p>BORACHIO.--Je puis, à une heure indue de la nuit, la charger de se montrer au balcon de l&#x27;appartement de sa maîtresse.</p>
+<p>DON JUAN.--Qu&#x27;y a-t-il là qui soit capable de tuer ce mariage[21]?</p>
+<p>[Note 21: What life is in that to be the death of this marriage?]</p>
+<p>BORACHIO.--Le poison, c&#x27;est à vous à l&#x27;extraire, seigneur. Allez trouver le prince votre frère, ne craignez point de lui dire qu&#x27;il compromet son honneur, en unissant l&#x27;illustre Claudio, dont vous faites le plus grand cas, à une vraie prostituée, comme Héro.</p>
+<p>DON JUAN.--Quelle preuve en fournirai-je?</p>
+<p>BORACHIO.--Une preuve assez forte pour abuser le prince, tourmenter Claudio, perdre Héro, et tuer Léonato. Avez-vous quelque autre but?</p>
+<p>DON JUAN.--Seulement pour les désoler, il n&#x27;est rien que je n&#x27;entreprenne.</p>
+<p>BORACHIO.--Allons donc, trouvez-moi une heure propice pour attirer à l&#x27;écart don Pèdre et Claudio. Dites-leur que vous savez qu&#x27;Héro m&#x27;aime. Affectez du zèle pour le prince et pour le comte, comme si vous veniez conduit par l&#x27;intérêt que vous prenez à l&#x27;honneur de votre frère qui a fait ce mariage, et à la réputation de son ami qui se laisse ainsi tromper par les dehors de cette fille.... que vous avez découvert être fausse. Ils ne le croiront guère sans preuve; offrez-en une qui ne sera pas moins que de me voir à la fenêtre de la chambre d&#x27;Héro; entendez-moi dans la nuit appeler Marguerite, Héro, et Marguerite me nommer Borachio. Amenez-les pour voir cela la nuit même qui précédera le mariage projeté; car dans l&#x27;intervalle je conduirai l&#x27;affaire de façon à ce qu&#x27;Héro soit absente, et sa déloyauté paraîtra si évidente que le soupçon sera nommé certitude, et tous les préparatifs seront abandonnés.</p>
+<p>DON JUAN.--Quelque revers possible que l&#x27;événement amène, je veux suivre ton dessein. Sois adroit dans le maniement de tout ceci, et ton salaire est de mille ducats.</p>
+<p>BORACHIO.--Soyez vous-même ferme dans l&#x27;accusation, et mon adresse n&#x27;aura pas à rougir.</p>
+<p>DON JUAN.--Je vais de ce pas m&#x27;informer du jour de leur mariage.</p>
+<h2 class="chapter" id="c5">Scène III</h2>
+<p>Le jardin de Léonato.</p>
+<p>Entrent BÉNÉDICK ET UN PAGE.</p>
+<p>BÉNÉDICK.--Page!</p>
+<p>LE PAGE.--Seigneur?</p>
+<p>BÉNÉDICK.--Sur la fenêtre de ma chambre est un livre; apporte-le moi dans le verger.</p>
+<p>LE PAGE.--Me voilà déjà ici, seigneur.</p>
+<p>BÉNÉDICK.--Je le vois bien, mais je voudrais que tu t&#x27;en fusses allé et te voir de retour. (Le page sort.) Je suis étonné qu&#x27;un homme qui voit combien un autre homme est sot qui se dévoue à l&#x27;amour, après avoir ri de cette folie dans autrui, puisse lui-même ensuite consentir à servir de texte à son propre mépris, en devenant lui-même amoureux; et Claudio est ainsi. J&#x27;ai vu le temps où il ne connaissait d&#x27;autre musique que le fifre et le tambour; aujourd&#x27;hui il aimerait mieux, entendre le tambourin et la flûte. J&#x27;ai vu le temps où il aurait fait dix milles à pied pour voir une bonne armure; à présent il veillera dix nuits pour méditer sur la façon d&#x27;un nouveau pourpoint. Il avait coutume de parler simplement et d&#x27;aller au but comme un honnête homme et un soldat; maintenant le voilà puriste; ses phrases ressemblent à un festin bizarre, tant il y a de plats étranges. Se pourrait-il qu&#x27;en voyant avec mes yeux, je fusse jamais métamorphosé comme lui? Je ne sais qu&#x27;en dire; mais je ne crois pas. Je ne jurerais pas qu&#x27;un beau matin l&#x27;Amour ne pût me transformer en huître; mais j&#x27;en fais le serment, qu&#x27;avant qu&#x27;il ait fait de moi une huître, il ne fera jamais de moi un sot comme le comte: une femme est belle, et cependant je vais bien; une autre est aimable, cependant je vais bien; une autre est vertueuse, cependant je vais bien. Non, jusqu&#x27;au jour où toutes les grâces seront réunies dans une seule femme, aucune ne trouvera grâce auprès de moi. Elle sera riche, cela est certain; sage, ou je ne veux point d&#x27;elle; vertueuse, ou jamais je ne la marchanderai; belle, ou je ne regarderai jamais son visage; douce, ou qu&#x27;elle ne m&#x27;approche pas; noble, ou je n&#x27;en donnerais pas un ducaton; elle saura bien causer, sera bonne musicienne; et ses cheveux seront de la couleur qu&#x27;il plaira à Dieu.--Ah! voici le prince et monsieur l&#x27;Amour. Il faut me cacher dans le bosquet.</p>
+<p>(Il se retire.)</p>
+<p>(Entrent don Pèdre, Léonato et Claudio.)</p>
+<p>DON PÈDRE.--Venez; irons-nous écouter cette musique?</p>
+<p>CLAUDIO.--Très-volontiers, seigneur.--Que la soirée est calme! Elle semble faire silence pour favoriser l&#x27;harmonie.</p>
+<p>DON PÈDRE.--Voyez-vous où Bénédick s&#x27;est caché?</p>
+<p>CLAUDIO.--Oh! très-bien, seigneur; la musique finie, nous saurons bien attraper ce renard aux aguets.</p>
+<p>(Balthazar entre avec des musiciens.)</p>
+<p>DON PÈDRE.--Venez, Balthazar; répétez-nous cette chanson.</p>
+<p>BALTHAZAR.--Oh! mon bon seigneur, ne forcez pas une aussi vilaine voix à faire plus d&#x27;une fois tort à la musique.</p>
+<p>DON PÈDRE.--Déguiser ses propres perfections, c&#x27;est toujours la preuve du grand talent. Chantez, je vous en supplie, et ne me laissez pas vous supplier plus longtemps.</p>
+<p>BALTHAZAR.--Puisque vous parlez de supplier, je chanterai: maint amant adresse ses voeux à un objet qu&#x27;il n&#x27;en juge pas digne; et pourtant il prie, et jure qu&#x27;il aime.</p>
+<p>DON PÈDRE.--Allons! commence, je te prie; ou si tu veux disputer plus longtemps, que ce soit en notes.</p>
+<p>BALTHAZAR.--Notez bien avant mes notes, qu&#x27;il n&#x27;y a pas une de mes notes qui vaille la peine d&#x27;être notée.</p>
+<p>DON PÈDRE.--Eh! mais, ce sont des croches que ses paroles, notes, notez, notice!</p>
+<p>BÉNÉDICK.--Oh! l&#x27;air divin!--Déjà son âme est ravie! N&#x27;est-il pas bien étrange que des boyaux de mouton transportent l&#x27;âme hors du corps de l&#x27;homme? Fort bien, présentez-moi la corne pour demander mon argent quand tout sera fini.</p>
+<p>BALTHAZAR chante.</p>
+<p>Ne soupirez plus, mesdames, ne soupirez plus, Les hommes furent toujours des trompeurs, Un pied dans la mer, l&#x27;autre sur le rivage, Jamais constants à une seule chose. Ne soupirez donc plus; Laissez-les aller; Soyez heureuses et belles; Convertissez tous vos chants de tristesse Eh eh nonny! eh nonny!</p>
+<p>Ne chantez plus de complaintes, ne chantez plus Ces peines si ennuyeuses et si pesantes; La perfidie des hommes fut toujours la même Depuis que l&#x27;été eut des feuilles pour la première fois; Ne soupirez donc plus, etc., etc.</p>
+<p>DON PÈDRE.--Sur ma parole, une bonne chanson.</p>
+<p>BALTHAZAR.--Oui, seigneur, et un mauvais chanteur.</p>
+<p>DON PÈDRE.--Ah! non, non; ma foi vous chantez vraiment assez bien pour un cas de nécessité.</p>
+<p>BÉNÉDICK, à part.--Si un dogue eût osé hurler ainsi, on l&#x27;aurait pendu. Je prie Dieu que sa vilaine voix ne présage point de malheur: j&#x27;aurais autant aimé entendre la chouette nocturne, quelque fléau qui eût pu suivre son cri.</p>
+<p>DON PÈDRE, à Claudio.--Oui, sans doute. (A Balthazar.) Vous entendez, Balthazar; procurez-nous, je vous en prie, des musiciens d&#x27;élite, la nuit prochaine: nous voulons les rassembler sous la fenêtre d&#x27;Héro.</p>
+<p>BALTHAZAR.--Les meilleurs qu&#x27;il me sera possible, seigneur.</p>
+<p>DON PÈDRE.--N&#x27;y manquez pas, adieu! (Balthazar sort.) Léonato, approchez. Que me disiez-vous donc aujourd&#x27;hui que votre nièce Béatrice aimait le seigneur Bénédick?</p>
+<p>CLAUDIO.--Oui, sans doute.--(A don Pèdre.) Avancez, avancez[22], l&#x27;oiseau est posé.--(Haut.) Je n&#x27;aurais jamais cru que cette dame pût aimer quelqu&#x27;un.</p>
+<p>[Note 22: Stalk on, terme de chasse.]</p>
+<p>LÉONATO.--Ni moi; mais ce qu&#x27;il y a de plus surprenant, c&#x27;est qu&#x27;elle raffole ainsi du seigneur Bénédick, lui que, d&#x27;après ses manières extérieures, elle a paru toujours détester.</p>
+<p>BÉNÉDICK, à part.--Est-il possible? le vent souffle-t-il de ce côté?</p>
+<p>LÉONATO.--Par ma foi, seigneur, je ne sais qu&#x27;en penser, si ce n&#x27;est qu&#x27;elle l&#x27;aime à la rage; cela dépasse l&#x27;imagination.</p>
+<p>DON PÈDRE.--Peut-être que ce n&#x27;est qu&#x27;une feinte de sa part.</p>
+<p>CLAUDIO.--Ma foi, c&#x27;est assez probable.</p>
+<p>LÉONATO.--Une feinte? Bon Dieu! jamais passion feinte ne ressembla d&#x27;aussi près à une passion véritable que celle qu&#x27;elle témoigne.</p>
+<p>DON PÈDRE.--Oui? Et quels symptômes de passion montre-t-elle donc?</p>
+<p>CLAUDIO, bas.--Amorcez la ligne, ce poisson mordra.</p>
+<p>LÉONATO.--Quels symptômes, seigneur? Elle s&#x27;asseoira... vous avez entendu ma fille vous dire comment.</p>
+<p>CLAUDIO.--C&#x27;est vrai, elle nous l&#x27;a dit.</p>
+<p>DON PÈDRE.--Comment, comment, je vous prie? Vous m&#x27;étonnez: j&#x27;aurais jugé sa fierté inaccessible à tous les assauts de la tendresse.</p>
+<p>LÉONATO.--Je l&#x27;aurais juré aussi, seigneur, surtout pour Bénédick.</p>
+<p>BÉNÉDICK, à part.--Je prendrais ceci pour une attrape si ce gaillard à barbe blanche ne le racontait pas. Sûrement la tromperie ne peut se cacher sous un aspect si vénérable.</p>
+<p>CLAUDIO, bas.--Il a pris la maladie; redoublez.</p>
+<p>DON PÈDRE.--A-t-elle laissé voir sa tendresse à Bénédick?</p>
+<p>LÉONATO.--Non, et elle proteste qu&#x27;elle ne l&#x27;avouera jamais; c&#x27;est là son tourment.</p>
+<p>CLAUDIO.--Rien n&#x27;est plus vrai; c&#x27;est ce que dit votre Héro. Quoi! dit-elle, écrirai-je à un homme, que j&#x27;ai souvent accablé de mes dédains, que je l&#x27;aime?</p>
+<p>LÉONATO.--Voilà ce qu&#x27;elle dit, lorsqu&#x27;elle se met à lui écrire; car elle se lève vingt fois dans la nuit et reste assise en chemise, jusqu&#x27;à ce qu&#x27;elle ait écrit une feuille de papier.--Héro me rend compte de tout.</p>
+<p>CLAUDIO.--En parlant de feuille de papier, vous me rappelez un badinage que votre fille nous a conté.</p>
+<p>LÉONATO.--Ah! oui. Quand elle eut écrit, en relisant sa lettre, elle trouva les noms de Béatrice et Bénédick s&#x27;embrassant sur les deux feuillets.</p>
+<p>CLAUDIO.--C&#x27;est cela.</p>
+<p>LÉONATO.--Alors, elle mit sa lettre en mille pièces grandes comme un sou, s&#x27;emporta contre elle-même d&#x27;avoir assez peu de réserve pour écrire à un homme qu&#x27;elle savait bien devoir se moquer d&#x27;elle. «Je mesure son âme sur la mienne, dit-elle, car je me moquerais de lui s&#x27;il venait à m&#x27;écrire; oui, quoique je l&#x27;aime, je me moquerais de lui.»</p>
+<p>CLAUDIO.--Puis elle tombe à genoux, pleure, sanglote, se frappe la poitrine, s&#x27;arrache les cheveux; elle prie, elle maudit; Cher Bénédick!... O Dieu! donne-moi la patience.</p>
+<p>LÉONATO.--Voilà ce qu&#x27;elle fait, ma fille le dit; et les transports de l&#x27;amour l&#x27;ont réduite à un tel point que ma fille craint parfois qu&#x27;elle ne se fasse du mal dans son désespoir. Tout cela est parfaitement vrai.</p>
+<p>DON PÈDRE.--Il serait bien que Bénédick le sût par quelque autre, si elle ne veut pas le déclarer elle-même.</p>
+<p>CLAUDIO.--A quoi bon? Ce serait un jeu pour lui, et il tourmenterait d&#x27;autant plus cette pauvre femme.</p>
+<p>DON PÈDRE.--S&#x27;il en était capable, ce serait une bonne oeuvre que de le pendre; c&#x27;est une excellente et très-aimable personne, et sa vertu est au-dessus de tout soupçon.</p>
+<p>CLAUDIO.--Et elle est remplie de sagesse.</p>
+<p>DON PÈDRE.--Sur tous les points, sauf son amour pour Bénédick.</p>
+<p>LÉONATO.--Oh! seigneur, quand la sagesse et la nature combattent dans un corps si délicat, nous avons dix preuves pour une que la nature remporte la victoire; j&#x27;en suis fâché pour elle, comme j&#x27;en ai de bonnes raisons, étant son oncle et son tuteur.</p>
+<p>DON PÈDRE.--Que n&#x27;a-t-elle tourné son tendre penchant sur moi! J&#x27;aurais écarté toute autre considération, et j&#x27;aurais fait d&#x27;elle ma moitié. Je vous en prie, informez-en Bénédick, et sachons ce qu&#x27;il dira.</p>
+<p>LÉONATO.--Cela serait-il à propos? Qu&#x27;en pensez-vous?</p>
+<p>CLAUDIO.--Héro croit que sûrement sa cousine en mourra; car elle dit qu&#x27;elle mourra s&#x27;il ne l&#x27;aime point, et qu&#x27;elle mourra plutôt que de lui laisser voir son amour; et qu&#x27;elle mourra s&#x27;il lui fait la cour plutôt que de rabattre un point de sa malice accoutumée.</p>
+<p>DON PÈDRE.--Elle a raison; s&#x27;il la voyait jamais lui offrir son amour, je ne répondrais pas qu&#x27;elle n&#x27;en fût dédaignée; car, comme vous le savez tous, il est disposé au dédain.</p>
+<p>CLAUDIO.--Il est bien fait de sa personne.</p>
+<p>DON PÈDRE.--Et doué d&#x27;une physionomie heureuse, on ne peut le nier.</p>
+<p>CLAUDIO.--Devant Dieu et dans ma conscience, je le trouve très-raisonnable.</p>
+<p>DON PÈDRE.--A vrai dire, il laisse échapper quelques étincelles qui ressemblent bien à de l&#x27;esprit.</p>
+<p>LÉONATO.--Et je le tiens pour vaillant.</p>
+<p>DON PÈDRE.--Comme Hector, je vous assure. Et dans la conduite d&#x27;une querelle on peut dire qu&#x27;il est sage; car il l&#x27;évite avec une grande prudence, ou s&#x27;il la soutient, c&#x27;est avec une frayeur vraiment chrétienne.</p>
+<p>LÉONATO.--S&#x27;il craint Dieu, il doit nécessairement tenir à la paix; et s&#x27;il est forcé d&#x27;y renoncer, il doit entrer dans une querelle avec crainte et tremblement.</p>
+<p>DON PÈDRE.--Ainsi en use-t-il. Car il a la crainte de Dieu, quoiqu&#x27;il n&#x27;y paraisse pas grâce aux plaisanteries un peu fortes qu&#x27;il sait faire. Eh bien! j&#x27;en suis fâché pour votre nièce.--Irons-nous chercher Bénédick et lui parler de son amour?</p>
+<p>CLAUDIO.--Ne lui en parlez pas, seigneur. Que les bons conseils détruisent son amour.</p>
+<p>LÉONATO.--Non, cela est impossible, elle aurait plutôt le coeur brisé.</p>
+<p>DON PÈDRE.--Eh bien! votre fille nous en apprendra davantage; que cela se refroidisse en attendant. J&#x27;aime Bénédick; je souhaiterais que, portant sur lui-même un oeil modeste, il vît combien il est indigne d&#x27;une si excellente personne.</p>
+<p>LÉONATO.--Vous plait-il de rentrer, seigneur? Le souper est prêt.</p>
+<p>CLAUDIO, à part.--Si, après cela, il ne se passionne pas pour elle, je ne me fierai jamais à mes espérances.</p>
+<p>DON PÈDRE, à voix basse.--Qu&#x27;on tende le même filet à Béatrice. Votre fille doit s&#x27;en charger avec la suivante.</p>
+<p>L&#x27;amusant sera lorsqu&#x27;ils croiront chacun à la passion de l&#x27;autre, et que cependant il n&#x27;en sera rien; voilà la scène que je voudrais voir et qui se passera en pantomime. Envoyons Béatrice l&#x27;appeler pour le dîner.</p>
+<p>(Don Pèdre s&#x27;en va avec Claudio et Léonato.)</p>
+<p>(Bénédick sort du bois et s&#x27;avance.)</p>
+<p>BÉNÉDICK.--Ce ne peut être un tour; leur conférence avait un ton sérieux.--La vérité du fait, ils la tiennent d&#x27;Héro.--Ils ont l&#x27;air de plaindre la demoiselle.--Il paraît que sa passion est au comble.--M&#x27;aimer!--Il faudra bien y répondre.--J&#x27;ai entendu à quel point on me blâme. On dit que je me comporterai fièrement si j&#x27;entrevois que l&#x27;amour vienne d&#x27;elle.--Ils disent aussi qu&#x27;elle mourra plutôt que de donner un signe de tendresse.--Je n&#x27;ai jamais pensé à me marier.--Je ne dois point montrer d&#x27;orgueil.--Heureux ceux qui entendent les reproches qu&#x27;on leur fait et en profitent pour se corriger!--Ils disent que la dame est belle: c&#x27;est une vérité. De cela j&#x27;en puis répondre.--Et vertueuse, rien de plus sûr; je ne saurais le contester.--Et sensée,--excepté dans son affection pour moi.--De bonne foi, cela ne fait pas l&#x27;éloge de son jugement, et pourtant ce n&#x27;est pas une preuve de folie; car je serai horriblement amoureux d&#x27;elle.--Il se pourra qu&#x27;on me lance sur le corps quelques sarcasmes, quelques mauvais quolibets, parce qu&#x27;on m&#x27;a toujours entendu déblatérer contre le mariage. Mais les goûts ne changent-ils jamais? Tel aime dans sa jeunesse un mets qu&#x27;il ne peut souffrir dans sa vieillesse. Des sentences, des sornettes, et ces boulettes de papier que l&#x27;esprit décoche, empêcheront-elles de suivre le chemin qui tente?--Non, non, il faut que le monde soit peuplé. Quand je disais que je mourrais garçon, je ne pensais pas devoir vivre jusqu&#x27;à ce que je fusse marié.--Voilà Béatrice qui vient ici.--Par ce beau jour, c&#x27;est une charmante personne!--Je découvre en elle quelques symptômes d&#x27;amour.</p>
+<p>(Béatrice parait.)</p>
+<p>BÉATRICE.--Contre mon gré, l&#x27;on me députe pour vous prier de venir dîner.</p>
+<p>BÉNÉDICK.--Belle Béatrice, je vous remercie de la peine que vous avez prise.</p>
+<p>BÉATRICE.--Je n&#x27;ai pas pris plus de peine pour gagner ce remerciement, que vous n&#x27;en venez de prendre pour me remercier.--S&#x27;il y avait eu quelque peine pour moi, je ne serais point venue.</p>
+<p>BÉNÉDICK.--Vous preniez donc quelque plaisir à ce message?</p>
+<p>BÉATRICE.--Oui, le plaisir que vous prendriez à égorger un oiseau avec la pointe d&#x27;un couteau,--Vous n&#x27;avez point d&#x27;appétit, seigneur? Portez-vous bien.</p>
+<p>(Elle s&#x27;en va.)</p>
+<p>BÉNÉDICK.--Ah! «Contre mon gré, l&#x27;on me députe pour vous prier de venir dîner.» Ces mots sont à double entente, «Je n&#x27;ai pas pris plus de peine pour gagner ce remerciement, que vous n&#x27;en venez de prendre pour me remercier.» C&#x27;est comme si elle disait: «Toutes les peines que je prends pour vous sont aussi faciles que des remerciements.»--Si je n&#x27;ai pitié d&#x27;elle, je suis un misérable; si je ne l&#x27;aime pas, je suis un juif.--Je vais aller me procurer son portrait.</p>
+<p>(Il sort.)</p>
+<h3 class="sub">Fin du second acte — Acte troisième</h3>
+<h2 class="chapter" id="c6">Scène I</h2>
+<p>Le jardin de Léonato.</p>
+<p>Entrent HÉRO, MARGUERITE, URSULE.</p>
+<p>HÉRO.--Bonne Marguerite, cours au salon; tu y trouveras ma cousine Béatrice, devisant avec le prince et Claudio. Glisse-lui à l&#x27;oreille qu&#x27;Ursule et moi nous nous promenons dans le verger, que tout notre entretien roule sur elle. Dis-lui, que tu nous as entendues en passant. Engage-la à se glisser dans ce berceau épais, dont l&#x27;entrée est défendue au soleil par les chèvrefeuilles qu&#x27;il a fait pousser,--tels que des favoris qui, élevés par des princes, opposent leur orgueil au pouvoir qui les a agrandis;--elle s&#x27;y cachera pour écouter notre entretien. Voilà ton rôle: acquitte-t&#x27;en bien, et laisse-nous seules.</p>
+<p>MARGUERITE.--Je vous garantis que je vous l&#x27;enverrai dans un moment.</p>
+<p>(Marguerite sort.)</p>
+<p>HÉRO.--Maintenant, Ursule. Lorsque Béatrice sera arrivée, en allant et venant dans cette allée, il faut que tous nos discours roulent sur Bénédick. Dès que j&#x27;aurai prononcé son nom, ton rôle sera de le louer plus qu&#x27;aucun homme ne le mérita jamais; le mien de t&#x27;apprendre comment Bénédick est malade d&#x27;amour pour Béatrice. C&#x27;est ainsi qu&#x27;est faite la flèche adroite du petit Cupidon, qui blesse par un ouï-dire. (Béatrice entre par derrière.) Mais commence, car, vois-tu, voilà Béatrice qui, comme un vanneau, se glisse tout près de terre pour surprendre nos paroles.</p>
+<p>URSULE.--Le plus grand plaisir de la pêche est de voir le poisson fendre de ses nageoires dorées l&#x27;onde argentée, et dévorer avidement le perfide hameçon. Jetons ainsi l&#x27;amorce à Béatrice; la voilà déjà tapie sous ce toit d&#x27;aubépine. Ne craignez rien pour ma part du dialogue.</p>
+<p>HÉRO.--Allons donc plus près d&#x27;elle, afin que son oreille ne perde rien du doux et perfide leurre que nous lui préparons. (Elles s&#x27;avancent vers le berceau.) Non, non, Ursule: franchement elle est trop dédaigneuse; je sais qu&#x27;elle est farouche et sauvage comme le faucon du rocher.</p>
+<p>URSULE.--Mais êtes-vous certaine que Bénédick soit si amoureux de Béatrice?</p>
+<p>HÉRO.--C&#x27;est ce que disent le prince et le seigneur auquel je viens d&#x27;être fiancée.</p>
+<p>URSULE.--Vous auraient-ils chargée, madame, d&#x27;en informer votre cousine?</p>
+<p>HÉRO.--Ils me conjuraient de l&#x27;en instruire. Moi, je les exhortais, s&#x27;ils aimaient Bénédick, à l&#x27;engager à lutter contre son affection, sans jamais la laisser voir à Béatrice.</p>
+<p>URSULE.--Quel était votre motif? Ce gentilhomme ne mérite-t-il pas bien une couche aussi fortunée que celle qui peut échoir à Béatrice?</p>
+<p>HÉRO.--O dieu d&#x27;amour! je sais bien qu&#x27;il mérite tout ce qu&#x27;on peut accorder à un homme; mais la nature n&#x27;a jamais fait un coeur de femme d&#x27;une trempe plus orgueilleuse que celui de Béatrice. La morgue et le dédain étincellent dans ses yeux, qui méprisent tout ce qu&#x27;ils regardent: et son esprit s&#x27;estime si haut, que tout le reste lui semble faible. Elle ne peut aimer ni recevoir aucun sentiment, aucune idée d&#x27;affection, tant elle est idolâtre d&#x27;elle-même!</p>
+<p>URSULE.--Oui, je le crois, et par conséquent il ne serait certainement pas à propos de lui faire connaître l&#x27;amour de Bénédick, de peur qu&#x27;elle ne s&#x27;en fit un jeu.</p>
+<p>HÉRO.--Oh! vous avez bien raison. Je n&#x27;ai encore jamais vu un homme quelque sage, quelque noble, quelque jeune et quelque doué des traits les plus heureux qu&#x27;il pût être, qu&#x27;elle ne prit à l&#x27;envers. Est-il beau de visage, elle vous jure que ce gentilhomme mériterait d&#x27;être sa soeur. Est-il brun, c&#x27;est la nature qui, voulant dessiner un bouffon[23], a fait une grosse tache. S&#x27;il est grand, c&#x27;est une lance mal terminée; petit, c&#x27;est une agate grossièrement taillée[24]; aime-t-il à parler, bon, c&#x27;est une girouette qui tourne à tous les vents; est-il taciturne, c&#x27;est un bloc que rien ne peut émouvoir. Ainsi, elle tourne chaque homme du mauvais côté; elle ne rend jamais à la franchise et à la vertu ce qui est dû au mérite et à la simplicité.</p>
+<p>[Note 23: Antick, bouffon des anciennes farces anglaises. Le nom d&#x27;antick indique, selon Warburton, l&#x27;idée traditionnelle des anciens mimes dont Apulée nous dit: mimi centunculo fuligine faciem obducti.]</p>
+<p>[Note 24: Quelques commentateurs veulent lire anglet, une tête d&#x27;épingle à cheveux qui représentait autrefois des figures taillées, et le plus souvent une tête bizarre.]</p>
+<p>URSULE.--Certes, certes, cette causticité n&#x27;est pas louable!</p>
+<p>HÉRO.--Non sans doute, on ne peut applaudir à cette humeur bizarre de Béatrice, qui fronde tous les usages. Mais qui osera le lui dire? Si je parle, ses brocards iront frapper les nues; oh! elle me ferait perdre la tête à force de rire; elle m&#x27;accablerait de son esprit. Laissons donc Bénédick, comme un feu couvert, se consumer de soupirs et s&#x27;user intérieurement. C&#x27;est une mort plus douce que de mourir sous les traits de la raillerie; ce qui est aussi cruel que de mourir à force d&#x27;être chatouillé.</p>
+<p>URSULE.--Cependant parlez-en à Béatrice; voyez ce qu&#x27;elle dira.</p>
+<p>HÉRO.--Non, j&#x27;aimerais mieux aller trouver Bénédick et lui conseiller de combattre sa passion; et vraiment je trouverai quelque médisance honnête pour en noircir ma cousine: on ne sait pas combien un trait malin peut empoisonner l&#x27;amour.</p>
+<p>URSULE.--Ah! ne faites pas tant de tort à votre cousine. Avec l&#x27;esprit vif et juste qu&#x27;on lui attribue, elle ne peut être assez dénuée de véritable jugement pour rebuter un homme aussi rare que le seigneur Bénédick.</p>
+<p>HÉRO.--C&#x27;est le seul cavalier d&#x27;Italie: toujours à l&#x27;exception de mon cher Claudio.</p>
+<p>URSULE.--De grâce, ne m&#x27;en veuillez pas, madame, si je dis ce que je pense. Pour la tournure, les manières, la conversation et la valeur, le seigneur Bénédick marche le premier dans l&#x27;opinion de toute l&#x27;Italie.</p>
+<p>HÉRO.--Il jouit en effet d&#x27;une excellente renommée.</p>
+<p>URSULE.--Ses qualités la méritèrent avant de l&#x27;obtenir.--Quand vous marie-t-on, madame?</p>
+<p>HÉRO.--Que sais-je?--Un de ces jours....--Demain.--Viens, rentrons, je veux te montrer quelques parures; te consulter sur celle qui me siéra le mieux demain.</p>
+<p>URSULE, bas.--Elle est prise; je vous en réponds, madame, nous la tenons.</p>
+<p>HÉRO, bas.--Si nous avons réussi, il faut convenir que l&#x27;amour dépend du hasard. Cupidon tue les uns avec des flèches, il prend les autres au trébuchet.</p>
+<p>(Elles sortent.)</p>
+<p>(Béatrice s&#x27;avance.)</p>
+<p>BÉATRICE.--Quel feu[25] je sens dans mes oreilles! Serait-ce vrai? Me vois-je donc ainsi condamnée pour mes dédains et mon orgueil? Adieu dédains, adieu mon orgueil de jeune fille, vous ne traînez à votre suite aucune gloire. Et toi, Bénédick, persévère, je veux te récompenser; je laisserai mon coeur sauvage s&#x27;apprivoiser sous ta main amoureuse. Si tu m&#x27;aimes, ma tendresse t&#x27;inspirera le désir de resserrer nos amours d&#x27;un saint noeud; car on dit que tu as beaucoup de mérite, je le crois sur de meilleures preuves que le témoignage d&#x27;autrui.</p>
+<p>[Note 25: Chez nous, les oreilles nous sifflent.]</p>
+<h2 class="chapter" id="c7">Scène II</h2>
+<p>Appartement dans la maison de Léonato.</p>
+<p>DON PÈDRE, CLAUDIO, BÉNÉDICK ET LÉONATO entrent.</p>
+<p>DON PÈDRE.--Je n&#x27;attends plus que la consommation de votre mariage, et je prends ensuite la route de l&#x27;Aragon.</p>
+<p>CLAUDIO.--Seigneur, je vous suivrai jusque-là, si vous daignez me le permettre.</p>
+<p>DON PÈDRE.--Non, ce serait bien grande honte au début de votre mariage que de montrer à une enfant son habit neuf en lui défendant de le porter. Je ne veux prendre cette liberté qu&#x27;avec Bénédick, dont je réclame la compagnie. Depuis la plante des pieds jusqu&#x27;au sommet de la tête, il est tout enjouement. Il a deux ou trois fois brisé la corde de l&#x27;Amour, et le petit fripon n&#x27;ose plus s&#x27;attaquer à lui. Son coeur est vide comme une cloche, dont sa langue est le battant[26]; car ce que son coeur pense, sa langue le raconte.</p>
+<p>[Note 26: Allusion à un ancien proverbe: As the sound thinks, so the bell clinks. Ce que le son pense, la cloche le chante.]</p>
+<p>BÉNÉDICK.--Messieurs, je ne suis plus ce que j&#x27;étais.</p>
+<p>LÉONATO.--C&#x27;est ce que je disais; vous me paraissez plus sérieux.</p>
+<p>CLAUDIO.--Je crois qu&#x27;il est amoureux.</p>
+<p>DON PÈDRE.--Au diable le novice! Il n&#x27;y a pas en lui une goutte d&#x27;honnête sang qui soit susceptible d&#x27;être honnêtement touchée par l&#x27;amour. S&#x27;il est triste, c&#x27;est qu&#x27;il manque d&#x27;argent.</p>
+<p>BÉNÉDICK.--J&#x27;ai mal aux dents.</p>
+<p>DON PÈDRE.--Arrachez votre dent.</p>
+<p>BÉNÉDICK.--Qu&#x27;elle aille se faire pendre.</p>
+<p>CLAUDIO.--Pendez-la d&#x27;abord, et arrachez-la ensuite[27].</p>
+<p>[Note 27: Hang it! you must hang it first and draw it afterwards.]</p>
+<p>DON PÈDRE.--Quoi! soupirer ainsi pour un mal de dents?</p>
+<p>LÉONATO.--Qui n&#x27;est qu&#x27;une humeur ou un ver.</p>
+<p>BÉNÉDICK.--Soit. Tout le monde peut maîtriser le mal, excepté celui qui souffre.</p>
+<p>CLAUDIO.--Je répète qu&#x27;il est amoureux.</p>
+<p>DON PÈDRE.--Il n&#x27;y a en lui aucune apparence de caprice[28], à moins que ce soit le caprice qu&#x27;il a pour les costumes étrangers; comme d&#x27;être aujourd&#x27;hui un Hollandais, et un Français demain, ou de se montrer à la fois dans le costume de deux pays, Allemand depuis la ceinture jusqu&#x27;en bas par de grands pantalons, et Espagnol depuis la hanche jusqu&#x27;en haut par le pourpoint; à part son caprice pour cette folie, et il paraît qu&#x27;il a ce caprice-là, certainement il n&#x27;est pas assez fou pour avoir le caprice que vous voudriez lui attribuer.</p>
+<p>[Note 28: Fancy, amour, imagination.]</p>
+<p>CLAUDIO.--S&#x27;il n&#x27;est pas amoureux de quelque femme, il ne faut plus croire aux anciens signes. Il brosse son chapeau tous les matins; qu&#x27;est-ce que cela annonce?</p>
+<p>DON PÈDRE.--Quelqu&#x27;un l&#x27;a-t-il vu chez le barbier?</p>
+<p>CLAUDIO.--Non, mais on a vu le garçon du barbier chez lui, et l&#x27;ancien ornement de son menton sert déjà à remplir des balles de paume.</p>
+<p>LÉONATO.--En effet, il semble plus jeune qu&#x27;il n&#x27;était avant la perte de sa barbe.</p>
+<p>DON PÈDRE.--Comment! il se parfume à la civette. Pourriez-vous deviner son secret par l&#x27;odorat?</p>
+<p>CLAUDIO.--C&#x27;est comme si on disait que le pauvre jeune homme est amoureux.</p>
+<p>DON PÈDRE. Ce qu&#x27;il y a de plus frappant, c&#x27;est sa mélancolie.</p>
+<p>CLAUDIO.--A-t-il jamais eu l&#x27;habitude de se laver le visage?</p>
+<p>DON PÈDRE.--Oui; ou de se farder? Ceci me fait comprendre Ce que vous dites de lui.</p>
+<p>CLAUDIO.--Et son esprit plaisant! ce n&#x27;est plus aujourd&#x27;hui qu&#x27;une corde de luth qui ne résonne plus que sous les touches.</p>
+<p>DON PÈDRE.--Voilà en effet des témoignages accablants contre lui.--Concluons, concluons, il est amoureux.</p>
+<p>CLAUDIO.--Ah! mais je connais celle qui l&#x27;aime.</p>
+<p>DON PÈDRE.--Pour celle-là, je voudrais la connaître. Une femme, je gage, qui ne le connaît pas.</p>
+<p>CLAUDIO.--Oui-dà, et tous ses défauts; et en dépit de tout, elle se meurt d&#x27;amour pour lui.</p>
+<p>DON PÈDRE.--Elle sera enterrée, le visage tourné vers le ciel.</p>
+<p>BÉNÉDICK.--Tout cela n&#x27;est pas un charme contre le mal de dents.--Vieux seigneur, venez à l&#x27;écart vous promenez avec moi. J&#x27;ai étudié huit ou dix mots de bon sens que j&#x27;ai à vous dire et que ces étourdis ne doivent pas entendre.</p>
+<p>(Bénédick sort avec Léonato.)</p>
+<p>DON PÈDRE.--Sur ma vie, il va s&#x27;ouvrir à lui au sujet de Béatrice.</p>
+<p>CLAUDIO.--Oh! c&#x27;est cela même! A l&#x27;heure qu&#x27;il est Héro et Marguerite ont dû jouer leur rôle avec Béatrice: ainsi nos deux ours ne se mordront plus l&#x27;un l&#x27;autre quand il se rencontreront.</p>
+<p>(Don Juan paraît.)</p>
+<p>DON JUAN.--Mon seigneur et frère, Dieu vous garde!</p>
+<p>DON PÈDRE.--Bonjour, mon frère.</p>
+<p>DON JUAN.--Si votre loisir le permet, je voudrais vous parler.</p>
+<p>DON PÈDRE.--En particulier?</p>
+<p>DON JUAN.--Si vous le jugez à propos; cependant le comte Claudio peut rester. Ce que j&#x27;ai à vous dire l&#x27;intéresse.</p>
+<p>DON PÈDRE.--De quoi s&#x27;agit-il?</p>
+<p>DON JUAN, à Claudio.--Votre Seigneurie a-t-elle l&#x27;intention de se marier demain?</p>
+<p>DON PÈDRE.--Vous savez que oui.</p>
+<p>DON JUAN.--Je n&#x27;en sais rien.... quand il saura ce que je sais.</p>
+<p>CLAUDIO.--S&#x27;il y a quelque empêchement, dites-le-nous, je vous prie.</p>
+<p>DON JUAN.--Vous pouvez croire que je ne vous aime pas; la suite vous en instruira et vous apprendrez à mieux penser de moi par le fait dont je vais vous informer. Quant à mon frère, je vois qu&#x27;il fait cas de vous, et c&#x27;est par tendresse pour vous qu&#x27;il a travaillé à accomplir ce prochain mariage; soins certainement bien mal adressés, peines bien mal employées!</p>
+<p>DON PÈDRE.--Comment? De quoi s&#x27;agit-il?</p>
+<p>DON JUAN.--Je venais vous dire et sans préambule (car elle n&#x27;a que trop longtemps servi de texte à nos discours) que votre future est déloyale.</p>
+<p>CLAUDIO.--Qui? Héro?</p>
+<p>DON JUAN.--Elle-même. L&#x27;Héro de Léonato, votre Héro, l&#x27;Héro de tout le monde.</p>
+<p>CLAUDIO.--Déloyale?</p>
+<p>DON JUAN.--Le terme est trop honnête pour peindre toute sa corruption. Je pourrais en dire davantage; imaginez un nom plus odieux, et je vous prouverai qu&#x27;elle le mérite. Ne vous étonnez point jusqu&#x27;à ce que vous ayez d&#x27;autres preuves; venez seulement avec moi cette nuit; vous verrez entrer quelqu&#x27;un par la fenêtre de sa chambre, la nuit même avant le jour de ses noces. Si vous l&#x27;aimez alors, épousez-la demain; mais il siérait mieux à votre honneur de changer d&#x27;idée.</p>
+<p>CLAUDIO.--Est-il possible?</p>
+<p>DON PÈDRE.--Je ne veux pas le croire.</p>
+<p>DON JUAN.--Si vous n&#x27;osez pas croire ce que vous verrez, n&#x27;avouez pas ce que vous savez. Si vous voulez me suivre, je vous en montrerai assez, et quand vous en aurez vu davantage, entendu davantage, agissez alors en conséquence.</p>
+<p>CLAUDIO.--Si je suis cette nuit témoin de quelque chose qui m&#x27;empêche de l&#x27;épouser demain, je la confondrai dans l&#x27;assemblée même où nous devons nous marier.</p>
+<p>DON PÈDRE.--Et comme je lui ai fait la cour afin de l&#x27;obtenir pour vous, je me joindrai à vous pour la déshonorer.</p>
+<p>DON JUAN.--Je m&#x27;abstiens de la décrier davantage jusqu&#x27;à ce que vous soyez mes témoins. Supportez seulement cette nouvelle avec patience jusqu&#x27;à minuit; et qu&#x27;alors le fait se prouve de lui-même.</p>
+<p>DON PÈDRE.--O jour qui tourne bien mal!</p>
+<p>CLAUDIO.--O malheur étrange qui me bouleverse!</p>
+<p>DON JUAN.--O fléau prévenu à temps! Voilà ce que vous direz quand vous aurez vu la suite.</p>
+<p>(Ils sortent.)</p>
+<h2 class="chapter" id="c8">Scène III</h2>
+<p>Une rue.</p>
+<p>Entrent DOGBERRY ET VERGES _avec les gardiens de nuit.</p>
+<p>DOGBERRY.--aux gardiens.--Êtes-vous des gens braves et fidèles?</p>
+<p>VERGES.--Oui, sans doute; sinon ce serait dommage qu&#x27;ils risquassent le salut de l&#x27;âme et du corps.</p>
+<p>DOGBERRY.--Ce serait pour eux un châtiment trop doux, pour peu qu&#x27;ils aient de sentiments de fidélité, étant choisis pour la garde du prince.</p>
+<p>VERGES.--Allons, voisin Dogberry, donnez-leur la consigne.</p>
+<p>DOGBERRY.--D&#x27;abord, qui croyez-vous le plus incapable[29] d&#x27;être constable?</p>
+<p>[Note 29: Dogberry, peu au fait de la valeur des termes, fait mille contre-sens en employant un mot pour l&#x27;autre. On devine facilement l&#x27;intention du poëte.]</p>
+<p>PREMIER GARDIEN.--Hugues d&#x27;Avoine, ou Georges Charbon, car ils savent tous deux lire et écrire.</p>
+<p>DOGBERRY.--Venez ici, voisin Charbon; Dieu vous a favorisé d&#x27;un beau nom. Être homme de bonne mine, c&#x27;est un don de la fortune. Mais le don d&#x27;écrire et de lire nous vient par nature.</p>
+<p>SECOND GARDIEN.--Et ces deux choses, monsieur le constable...</p>
+<p>DOGBERRY.--Vous les possédez; je savais que ce serait là votre réponse. Allons, quant à votre bonne mine, ami, rendez-en grâce à Dieu et n&#x27;en tirez point vanité; et à l&#x27;égard de votre talent de lire et d&#x27;écrire, faites-le paraître quand on n&#x27;aura pas besoin de cette vanité. Vous êtes ici réputé l&#x27;homme le plus insensé et capable d&#x27;être constable, c&#x27;est pourquoi vous porterez le fallot; c&#x27;est là votre emploi. Appréhendez au corps tous les vagabonds. Vous devez ordonner à tout passant de s&#x27;arrêter au nom du prince.</p>
+<p>SECOND GARDIEN.--Et s&#x27;il ne veut pas s&#x27;arrêter?</p>
+<p>DOGBERRY.--Alors ne prenez pas garde à lui et laissez-le passer. Sur-le-champ appelez à vous tout le reste de la patrouille, et remerciez Dieu d&#x27;être délivré d&#x27;un coquin.</p>
+<p>VERGES.--S&#x27;il refuse de s&#x27;arrêter quand on lui ordonne, il n&#x27;est pas un sujet du prince.</p>
+<p>DOGBERRY.--Sans doute, et ils ne doivent avoir affaire qu&#x27;aux sujets du prince.--Vous éviterez aussi de faire du bruit dans les rues; car de voir un gardien de nuit jaser et bavarder, cela est tolérable et ne peut se souffrir.</p>
+<p>SECOND GARDIEN.--Nous aimons mieux dormir que bavarder. Nous savons quel est le devoir du guet.</p>
+<p>DOGBERRY.--Bien, vous parlez comme un ancien, comme un gardien paisible; car je ne saurais voir en quoi le sommeil peut nuire. Prenez garde seulement qu&#x27;on ne vous dérobe vos piques [30]. Ensuite vous devez frapper à tous les cabarets, et commander à ceux qui sont ivres d&#x27;aller se coucher.</p>
+<p>[Note 30: Bills. Pertuisanes, armes de l&#x27;ancienne infanterie anglaise.]</p>
+<p>SECOND GARDIEN.--Et s&#x27;ils ne le veulent pas?</p>
+<p>DOGBERRY.--Alors, laissez-les tranquilles, jusqu&#x27;à ce qu&#x27;ils soient de sang-froid. S&#x27;ils ne vous font pas alors une meilleure réponse, vous pouvez dire qu&#x27;ils ne sont pas ceux pour qui vous les aviez pris d&#x27;abord.</p>
+<p>SECOND GARDIEN.--Fort bien, monsieur.</p>
+<p>DOGBERRY.--Si vous rencontrez un voleur, en vertu de votre charge vous pouvez le soupçonner de n&#x27;être pas un honnête homme; et quant à cette espèce de gens, le moins que vous pourrez avoir affaire avec eux, ce sera le mieux pour votre probité.</p>
+<p>SECOND GARDIEN.--Si nous le connaissons pour un voleur, ne mettrons-nous pas la main sur lui?</p>
+<p>DOGBERRY.--Vraiment par votre charge vous le pouvez. Mais je pense que ceux qui touchent le goudron se salissent les mains. Si vous prenez un voleur, la manière la plus tranquille est de le laisser se montrer ce qu&#x27;il est, en fuyant votre compagnie.</p>
+<p>VERGES.--Assez, mon cher collègue, vous avez toujours été réputé pour un homme miséricordieux.</p>
+<p>DOGBERRY.--En vérité je ne voudrais pas être cause de la pendaison d&#x27;un chien, bien moins d&#x27;un homme qui possède l&#x27;honnêteté.</p>
+<p>VERGES.--Si vous entendez un enfant crier dans la nuit[31], vous devez appeler la nourrice et lui commander de le faire taire.</p>
+<p>SECOND GARDIEN.--Et si la nourrice est endormie et ne veut pas nous entendre?</p>
+<p>DOGBERRY.--Alors allez-vous en paisiblement et laissez l&#x27;enfant l&#x27;éveiller lui-même par ses cris; car la brebis qui n&#x27;entend pas son agneau quand il mugit ne répondra pas aux bêlements du veau.</p>
+<p>VERGES.--C&#x27;est la vérité.</p>
+<p>DOGBERRY.--Voilà toute votre consigne. Vous, constable, vous devez représenter la personne du prince. Si vous rencontrez le prince dans la nuit, vous pouvez l&#x27;arrêter.</p>
+<p>VERGES.--Non, par Notre-Dame; quant à cela je ne crois pas qu&#x27;il le puisse.</p>
+<p>DOGBERRY.--Je gage cinq shillings contre un, avec tout homme qui connaît les statues[31], qu&#x27;il peut l&#x27;arrêter. Non pas, à la vérité, sans que le prince y consente; car le guet ne doit offenser personne, et c&#x27;est faire offense à un homme que de l&#x27;arrêter contre sa volonté.</p>
+<p>[Note 31: Voici quelques-uns des statuts du guet ridiculisés ici par Shakspeare:</p>
+<p>«Personne ne sifflera passé neuf heures du soir.</p>
+<p>«Personne n&#x27;ira masqué la nuit passé neuf heures du soir.</p>
+<p>«Nul homme à marteau, forgeron, serrurier, ne travaillera passé neuf heures du soir.</p>
+<p>«Nul homme ne donnera l&#x27;alarme passé neuf heures du soir en battant sa femme, sa servante ou son chien, sous peine de trois shillings d&#x27;amende.»]</p>
+<p>VERGES.--Par Notre-Dame, je crois que vous avez raison.</p>
+<p>DOGBERRY.--Ah! ah! ah! Or çà, bonne nuit, mes maîtres; s&#x27;il survient quelque affaire un peu grave, appelez-moi. Gardez les secrets de vos camarades et les vôtres; bonne nuit.--Venez, voisin.</p>
+<p>SECOND GARDIEN, à ses camarades.--Ainsi, camarades, nous venons d&#x27;entendre notre consigne. Asseyons-nous ici sur ce banc près de l&#x27;église jusqu&#x27;à deux heures, et de là allons tous nous coucher.</p>
+<p>DOGBERRY.--Encore un mot, honnêtes voisins. Je vous en prie, veillez à la porte du seigneur Léonato, car le mariage étant fixé à demain sans faute, il y a grand tumulte cette nuit. Adieu, soyez vigilants, je vous en conjure.</p>
+<p>(Dogberry et Verges sortent.) (Entrent Borachio et Conrad.)</p>
+<p>BORACHIO.--Conrad, où es-tu?</p>
+<p>PREMIER GARDIEN, bas à ses compagnons.--Paix, ne bougez pas.</p>
+<p>BORACHIO.--Conrad! dis-je?</p>
+<p>CONRAD, en le poussant.--Ici. Je suis à ton coude.</p>
+<p>BORACHIO.--Par la messe, le coude me démangeait; je pensais bien qu&#x27;il s&#x27;ensuivrait quelque croûte.</p>
+<p>CONRAD.--Je te devrai une réponse à cela. Poursuis maintenant ton récit.</p>
+<p>BORACHIO.--Mettons-nous à couvert sous ce toit; il bruine: et là, comme un vrai ivrogne, je te dirai tout.</p>
+<p>SECOND GARDIEN, à part.--Quelque trahison! Restons cois, mes amis.</p>
+<p>BORACHIO.--Tu sauras que don Juan m&#x27;a promis mille ducats.</p>
+<p>CONRAD.--Est-il possible qu&#x27;aucune scélératesse soit si chère?</p>
+<p>BORACHIO.--Demande plutôt comment il est possible qu&#x27;aucun scélérat soit si riche! car lorsque le scélérat riche a besoin du scélérat pauvre, le pauvre peut faire le prix à son gré.</p>
+<p>CONRAD.--Tu m&#x27;étonnes.</p>
+<p>BORACHIO.--Cela prouve que tu es novice; tu sais que la forme d&#x27;un pourpoint, ou d&#x27;un chapeau, ou d&#x27;un manteau, n&#x27;est rien dans un homme.</p>
+<p>CONRAD.--Cependant c&#x27;est une parure!</p>
+<p>BORACHIO.--Je veux dire la forme à la mode.</p>
+<p>CONRAD.--Oui, la mode est la mode.</p>
+<p>BORACHIO.--Bah! autant dire un sot est un sot. Mais ne vois-tu pas quel voleur maladroit est la mode?</p>
+<p>UN GARDIEN.--Je connais ce La Mode, c&#x27;est un voleur depuis sept ans. Il s&#x27;introduit çà et là mis en gentilhomme; je me rappelle son nom.</p>
+<p>BORACHIO.--N&#x27;as-tu pas entendu quelqu&#x27;un?</p>
+<p>CONRAD.--Non, c&#x27;est la girouette sur le toit.</p>
+<p>BORACHIO.--Ne vois-tu pas, dis-je, quel maladroit voleur est la mode? Par quels vertiges elle renverse toutes les têtes chaudes, depuis quatorze ans jusqu&#x27;à trente-cinq; parfois elle les affuble comme les soldats de Pharaon dans les tableaux enfumés, tantôt comme les prêtres du dieu Baal dans les vieux vitraux de l&#x27;église; quelquefois comme l&#x27;Hercule rasé[32] dans la tapisserie fanée et rongée des vers, où son petit doigt semble aussi gros que sa massue?</p>
+<p>[Note 32: Pharaon, Hercule, personnages de tapisseries.]</p>
+<p>CONRAD.--Je vois tout cela, et que la mode use plus d&#x27;habits que l&#x27;homme. Mais n&#x27;es-tu pas entraîné toi-même par la mode, en t&#x27;écartant de ton récit pour me parler de la mode?</p>
+<p>BORACHIO.--Nullement. Mais sache que cette nuit j&#x27;ai courtisé Marguerite, la suivante de la signora Héro, sous le nom d&#x27;Héro; elle m&#x27;a tendu la main par la fenêtre de la chambre de sa maîtresse, et m&#x27;a dit mille fois adieu!--Je raconte cela horriblement mal. J&#x27;aurais dû d&#x27;abord te dire que le prince, Claudio et mon maître, placés, postés et prévenus par mon maître don Juan, ont vu de loin, du verger, cette entrevue amoureuse.</p>
+<p>CONRAD.--Et ils croyaient que Marguerite était Héro?</p>
+<p>BORACHIO.--Deux d&#x27;entre eux l&#x27;ont cru, le prince et Claudio. Mais mon démon de maître savait que c&#x27;était Marguerite. D&#x27;un côté, grâce à ses serments qui les ont d&#x27;abord séduits; de l&#x27;autre, grâce à la nuit obscure qui les a déçus, mais surtout à mon manège qui confirmait toutes les calomnies inventées par don Juan, Claudio est parti plein de rage, jurant d&#x27;aller la joindre demain matin au temple à l&#x27;heure marquée, et là, devant toute l&#x27;assemblée, de la déshonorer par le récit de ce qu&#x27;il a vu cette nuit, et de la renvoyer chez elle sans époux.</p>
+<p>PREMIER GARDIEN s&#x27;avançant.--Nous vous sommons au nom du prince, arrêtez.</p>
+<p>SECOND GARDIEN.--Appelez le grand chef constable. Nous avons ici déterré le plus dangereux complot de débauche qui se soit jamais vu dans la république.</p>
+<p>PREMIER GARDIEN.--Et un certain La Mode[33] est de leur bande; je le connais, il porte une boucle de cheveux.</p>
+<p>[Note 33: En anglais, c&#x27;est le mot deformed que les gardiens prennent pour un nom d&#x27;homme.]</p>
+<p>CONRAD.--Messieurs, messieurs!</p>
+<p>PREMIER GARDIEN.--On vous forcera bien de faire comparaître La Mode; je vous le garantis.</p>
+<p>CONRAD.--Messieurs!....</p>
+<p>PREMIER GARDIEN.--Taisez-vous, nous vous l&#x27;ordonnons; nous vous obéirons en vous conduisant.</p>
+<p>BORACHIO.--Nous avons l&#x27;air de devenir une bonne marchandise, après avoir été ramassés par les piques de ces gens-là.</p>
+<p>CONRAD.--Une marchandise compromise, je vous en réponds; venez, nous vous obéirons.</p>
+<p>(Ils sortent.)</p>
+<h2 class="chapter" id="c9">Scène IV</h2>
+<p>Appartement dans la maison de Léonato. HÉRO, MARGUERITE, URSULE.</p>
+<p>HÉRO.--Bonne Ursule, éveillez ma cousine Béatrice, et priez-la de se lever.</p>
+<p>URSULE.--J&#x27;y vais, madame.</p>
+<p>HÉRO.--Et dites-lui de venir ici.</p>
+<p>URSULE.--Bien.</p>
+<p>(Ursule sort.)</p>
+<p>MARGUERITE.--En vérité, je crois que cet autre rabat[34] vous siérait mieux.</p>
+<p>[Note 34: Rabato, rabat, collerette.]</p>
+<p>HÉRO.--Non, je vous prie, chère Marguerite; je veux mettre celui-ci.</p>
+<p>MARGUERITE.--Sur ma parole, il n&#x27;est pas si beau, et je garantis que votre cousine sera de mon avis.</p>
+<p>HÉRO.--Ma cousine est une folle, et vous une autre. Je n&#x27;en veux pas porter d&#x27;autre que celui-ci.</p>
+<p>MARGUERITE.--J&#x27;aime tout à fait cette nouvelle coiffure qui est là-dedans; seulement je voudrais les cheveux une idée plus bruns; pour votre robe, elle est en vérité du dernier goût; j&#x27;ai vu celle de la duchesse de Milan, cette robe qu&#x27;on vante tant....</p>
+<p>HÉRO.--Oh! on dit qu&#x27;elle est incomparable!</p>
+<p>MARGUERITE.--Sur ma vie, ce n&#x27;est qu&#x27;une robe de nuit auprès de la vôtre. Du drap d&#x27;or, des crevés lacés avec du fil d&#x27;argent, le bas des manches et le bord des manches garnis de perles, et toute la jupe relevée par un clinquant bleuâtre. Mais pour la grâce, la beauté et le bon goût, la vôtre vaut dix fois la sienne.</p>
+<p>HÉRO.--Que Dieu me donne la joie pour la porter; car je me sens le coeur excessivement gros.</p>
+<p>MARGUERITE.--Le poids d&#x27;un homme le rendra encore plus pesant.</p>
+<p>HÉRO.--Fi donc! Marguerite, n&#x27;êtes-vous pas honteuse?</p>
+<p>MARGUERITE.--De quoi, madame? De parler d&#x27;une chose honorable? Le mariage n&#x27;est-il pas honorable, même chez un mendiant? Et, le mariage à part, votre seigneur n&#x27;est-il pas honorable? Vous auriez voulu, sauf votre respect, que j&#x27;eusse dit un mari? Si une mauvaise pensée ne détourne pas le sens d&#x27;une expression franche, je n&#x27;offense personne. Y a-t-il du mal à dire le poids d&#x27;un mari? Aucun, je pense, dès qu&#x27;il s&#x27;agit d&#x27;un mari légitime et d&#x27;une femme légitime; sans quoi il serait léger et non pesant. Mais demandez plutôt à la signora Béatrice, la voici.</p>
+<p>(Béatrice entre.)</p>
+<p>HÉRO.--Bonjour, cousine.</p>
+<p>BÉATRICE.--Bonjour, ma chère Héro.</p>
+<p>HÉRO.--Comment donc! vous parlez sur un ton mélancolique.</p>
+<p>BEATRICE.--Je suis hors de tous les autres tons, il me semble.</p>
+<p>MARGUERITE.--Entonnez-nous l&#x27;air de Lumière d&#x27;amour[35]. Il se chante sans refrain; vous chanterez, moi je danserai.</p>
+<p>[Note 35: Il est aussi question de cet air dans les Deux Gentilshommes de Vérone.]</p>
+<p>BÉATRICE.--Oui! Vos talons sont-ils exercés à la mesure de Lumière d&#x27;amour? Oh! bien, si votre mari a assez de greniers, vous verrez à ce qu&#x27;il ne manque pas de grains[36].</p>
+<p>[Note 36: Barns, greniers, et bairns, vieux mot qui signifie enfant.]</p>
+<p>MARGUERITE.--O interprétation maligne! Mais j&#x27;en ris, les talons en l&#x27;air.</p>
+<p>BÉATRICE.--Il est près de cinq heures, ma cousine; vous devriez être déjà prête.--Sérieusement, je me sens bien mal. Hélas!</p>
+<p>MARGUERITE.--De quoi?--Un faucon, un cheval, ou un mari[37].</p>
+<p>[Note 37: Hawk, Horse or Husband.]</p>
+<p>BÉATRICE.--Oh! celui des trois qui commence par un M[38].</p>
+<p>[Note 38: La réponse de Béatrice est moins claire en anglais, elle répond: «C&#x27;est la première lettre de tous ces mots, h, qui se prononce en anglais de même qu&#x27;ache, douleur.]</p>
+<p>MARGUERITE.--Eh bien! Si vous ne vous êtes pas faite turque[39], on ne peut plus faire voiles sur la foi des étoiles.</p>
+<p>[Note 39: Si vous n&#x27;avez pas changé d&#x27;opinion, de foi.]</p>
+<p>BÉATRICE.--Voyons; que veut dire cette folle?</p>
+<p>MARGUERITE.--Rien du tout; mais Dieu veuille envoyer à chacun le désir de son coeur!</p>
+<p>HÉRO.--Ces gants, que le comte m&#x27;a envoyés, ont un parfum délicieux.</p>
+<p>BÉATRICE.--Je suis enchiffrenée, cousine; je ne sens rien.</p>
+<p>MARGUERITE.--Fille, et enchiffrenée! il faut qu&#x27;il y ait abondance de rhumes.</p>
+<p>BÉATRICE.--O Dieu, ayez pitié de nous! O Dieu ayez pitié de nous! Depuis quand faites-vous profession d&#x27;esprit?</p>
+<p>MARGUERITE.--Depuis que vous y avez renoncé, madame. Mon esprit ne me sied-il pas à ravir?</p>
+<p>BÉATRICE.--On ne le voit pas assez; vous devriez le porter sur votre bonnet.--Sérieusement je suis malade.</p>
+<p>MARGUERITE.--Procurez-vous un peu d&#x27;essence de carduus benedictus[40] et appliquez-la sur votre coeur: c&#x27;est le seul remède pour les palpitations.</p>
+<p>[Note 40: Allusion au nom de Bénédick.]</p>
+<p>HÉRO.--Tu la piques avec un chardon.</p>
+<p>BÉATRICE.--Benedictus? Pourquoi benedictus, s&#x27;il vous plaît? Vous cachez quelque moralité[41] sous ce benedictus.</p>
+<p>[Note 41: Moralité, la morale d&#x27;une fable, le sens caché d&#x27;un apologue.]</p>
+<p>MARGUERITE.--Moralité? Non, sur ma parole, je n&#x27;ai point d&#x27;intention morale. Je parle tout bonnement du chardon bénit. Vous pourriez croire par hasard que je vous soupçonne d&#x27;être amoureuse: non, par Notre-Dame, je ne suis pas assez folle pour penser ce que je veux, et je ne veux pas penser ce que je peux, et je ne pourrais penser, quand je penserais à faire perdre la pensée à mou coeur, que vous êtes amoureuse, que vous serez amoureuse ou que vous pouvez être amoureuse. Cependant, jadis Bénédick fut naguère tout de même, et maintenant le voilà devenu un homme. Il jurait de ne se marier jamais, et pourtant, en dépit de son coeur, il mange son plat sans murmure[42]. A quel point vous pouvez être convertie, je l&#x27;ignore; mais il me semble que vous voyez avec vos yeux comme les autres femmes.</p>
+<p>[Note 42: Proverbe.]</p>
+<p>BÉATRICE.--De quel pas ta langue est partie!</p>
+<p>MARGUERITE.--Ce n&#x27;est pas un galop du mauvais pied.</p>
+<p>URSULE, accourt.--Vite, retirez-vous, madame: le prince, le comte, le seigneur Bénédick, don Juan et tous les jeunes cavaliers de la ville viennent vous chercher pour aller à l&#x27;église.</p>
+<p>HÉRO,--Aidez-moi à m&#x27;habiller, chère cousine, bonne Ursule, bonne Marguerite.</p>
+<p>(Elles sortent.)</p>
+<h2 class="chapter" id="c10">Scène V</h2>
+<p>Un autre appartement dans le palais de Léonato.</p>
+<p>LÉONATO entre avec DOGBERRY ET VERGES.</p>
+<p>LÉONATO.--Que souhaitez-vous de moi, honnêtes voisins?</p>
+<p>DOGBERRY.--Vraiment, seigneur, je voudrais avoir avec vous une petite conférence secrète sur une affaire qui vous décerne de près.</p>
+<p>LÉONATO.--Abrégez, je vous prie; vous voyez que je suis très-occupé.</p>
+<p>DOGBERRY.--Vraiment oui, seigneur.</p>
+<p>VERGES.--Oui, seigneur, en vérité.</p>
+<p>LÉONATO.--Quelle est cette affaire, mes dignes amis?</p>
+<p>DOGBERRY.--Le bon homme Verges, seigneur, s&#x27;écarte un peu de son sujet, et son esprit n&#x27;est pas aussi émoussé[43] que je demanderais à Dieu qu&#x27;il le fût; mais, en bonne conscience, il est honnête comme les rides de son front[44].</p>
+<p>[Note 43: Dogberry dit toujours le contraire de ce qu&#x27;il veut dire.]</p>
+<p>[Note 44: Expression proverbiale.]</p>
+<p>VERGES.--Oui, j&#x27;en remercie Dieu, je suis aussi honnête qu&#x27;homme vivant qui est vieux aussi, et qui n&#x27;est pas plus honnête que moi.</p>
+<p>DOGBERRY.--Les comparaisons sont odorantes[45].--Palabra[46], voisin Verges.</p>
+<p>[Note 45: Odieuses.]</p>
+<p>[Note 46: Palabras, pocas palabras, mots espagnols, pour dire bref, abrégeons.]</p>
+<p>LÉONATO--Voisins, vous êtes ennuyeux.</p>
+<p>DOGBERRY.--Il plaît à Votre Seigneurie de le dire. Mais nous ne sommes que les pauvres officiers du duc, et pour ma part, si j&#x27;étais aussi fatigant qu&#x27;un roi, je voudrais me dépouiller de tout au profit de Votre Seigneurie.</p>
+<p>LÉONATO.--De tout votre ennui en ma faveur? Ah, ah!</p>
+<p>DOGBERRY.--Oui-dà, quand j&#x27;en aurais mille fois davantage; car j&#x27;entends exclamer votre nom autant qu&#x27;aucun nom de la ville, et quoique je ne sois qu&#x27;un pauvre homme, je suis bien aise de l&#x27;entendre.</p>
+<p>VERGES.--Et moi aussi.</p>
+<p>LÉONATO.--Je voudrais bien savoir ce que vous avez à me dire.</p>
+<p>VERGES.--Voyez-vous, seigneur, notre garde a pris cette nuit, sauf le respect de Votre Seigneurie, un couple des plus fieffés larrons qui soient dans Messine.</p>
+<p>DOGBERRY.--Un bon vieillard, seigneur, il faut qu&#x27;il jase! et comme on dit, quand l&#x27;âge entre, l&#x27;esprit sort. Oh! c&#x27;est un monde à voir[47]!--C&#x27;est bien dit, c&#x27;est bien dit, voisin Verges.--(A l&#x27;oreille de Léonato.) Allons, Dieu est un bon homme[48]. Si deux hommes montent un cheval, il faut qu&#x27;il y en ait un qui soit en croupe,--une bonne âme, par ma foi, monsieur, autant qu&#x27;homme qui ait jamais rompu du pain, je vous le jure; mais Dieu soit loué, tous les hommes ne sont pas pareils; hélas! bon voisin!</p>
+<p>[Note 47: C&#x27;est une merveille.]</p>
+<p>[Note 48: «Expression d&#x27;une ancienne moralité.» STEEVENS.]</p>
+<p>LÉONATO.--En effet, voisin, il vous est trop inférieur.</p>
+<p>DOGBERRY.--Ce sont des dons que Dieu donne.</p>
+<p>LÉONATO.--Je suis forcé de vous quitter.</p>
+<p>DOGBERRY.--Un mot encore, seigneur; notre garde a saisi deux personnes aspectes[49]. Nous voudrions les voir ce matin examinées devant Votre Seigneurie.</p>
+<p>[Note 49: Aspicious.]</p>
+<p>LÉONATO.--Examinez-les vous-mêmes, et vous me remettrez votre rapport. Je suis trop pressé maintenant, comme vous pouvez bien juger.</p>
+<p>DOGBERRY.--Oui, oui, nous suffirons bien.</p>
+<p>LÉONATO.--Goûtez de mon vin avant de vous eu aller, et portez-vous bien.</p>
+<p>(Entre un messager.)</p>
+<p>LE MESSAGER.--Seigneur, on vous attend pour donner votre fille à son époux.</p>
+<p>LÉONATO.--Je vais les trouver: me voilà prêt.</p>
+<p>(Léonato et le messager sortent.)</p>
+<p>DOGBERRY.--Allez, mon bon collègue, allez trouver Georges Charbon; qu&#x27;il apporte à la prison sa plume et son encrier: nous avons maintenant à examiner ces deux hommes.</p>
+<p>VERGES.--Il nous le faut faire avec prudence.</p>
+<p>DOGBERRY.--Nous n&#x27;y épargnerons pas l&#x27;esprit, je vous jure. (Touchant son front avec son doigt.) Il y a ici quelque chose qui saura bien en conduire quelques-uns à un non com[50]. Ayez seulement le savant écrivain pour coucher par écrit notre excommunication, et venez me rejoindre à la prison.</p>
+<p>(Ils sortent.)</p>
+<p>[Note 50: Non compos mentis.]</p>
+<h3 class="sub">Fin du troisième acte — Acte quatrième</h3>
+<h2 class="chapter" id="c11">Scène I</h2>
+<p>L&#x27;intérieur d&#x27;une église.</p>
+<p>Entrent DON PÈDRE, DON JUAN, LÉONATO, UN MOINE, CLAUDIO, BÉNÉDICK, HÉRO ET BÉATRICE.</p>
+<p>LÉONATO.--Allons, frère François, soyez bref. Bornez-vous au simple rituel du mariage; vous leur exposerez ensuite leurs devoirs mutuels.</p>
+<p>LE MOINE.--Vous venez ici, seigneur, pour vous unir à cette dame?</p>
+<p>CLAUDIO.--Non.</p>
+<p>LÉONATO.--Il vient pour être uni à elle, et vous pour les unir.</p>
+<p>LE MOINE.--Madame, vous venez ici pour être mariée à ce comte?</p>
+<p>HÉRO.--Oui.</p>
+<p>LE MOINE.--Si l&#x27;un ou l&#x27;autre de vous connaît quelque empêchement secret qui s&#x27;oppose à votre union, sur le salut de vos âmes, je vous somme de le déclarer.</p>
+<p>CLAUDIO.--En connaissez-vous quelqu&#x27;un, Héro?</p>
+<p>HÉRO.--Aucun, seigneur.</p>
+<p>LE MOINE.--Et vous, comte, en connaissez-vous?</p>
+<p>LÉONATO.--J&#x27;ose répondre pour lui; aucun.</p>
+<p>CLAUDIO.--Que n&#x27;osent point les hommes? Que ne font les hommes, que ne font les hommes chaque jour, sans se douter de ce qu&#x27;ils font?</p>
+<p>BÉNÉDICK.--Quoi! des exclamations! Comment donc, ce sont des exclamations de rire, comme ah! ah! ah!</p>
+<p>CLAUDIO.--Prêtre, arrêtez.--Père, avec votre permission, me donnez-vous cette vierge, votre fille d&#x27;une volonté libre et sans contrainte?</p>
+<p>LÉONATO.--Aussi librement, mon fils, que Dieu me l&#x27;a donnée.</p>
+<p>CLAUDIO.--Et qu&#x27;ai-je en retour, moi, à vous offrir, qui puisse égaler ce don riche et précieux?</p>
+<p>DON PÈDRE.--Rien, à moins que vous ne la rendiez à son père.</p>
+<p>CLAUDIO.--Cher prince, vous m&#x27;enseignez une noble gratitude. Tenez, Léonato, reprenez-la, ne donnez point à votre ami cette orange gâtée; elle n&#x27;est que l&#x27;enseigne et le masque de l&#x27;honneur. Voyez-la rougir comme une vierge! Oh! de quelle imposante apparence de vérité le vice perfide sait se couvrir! Cette rougeur ne semble-t-elle pas un modeste témoin qui atteste la simplicité de l&#x27;innocence? Vous tous qui la voyez, ne jureriez-vous pas à ces indices extérieurs, qu&#x27;elle est vierge? mais elle ne l&#x27;est pas; elle connaît la chaleur d&#x27;une couche de débauche, sa rougeur prouve sa honte et non sa modestie.</p>
+<p>LÉONATO.--Que prétendez-vous, seigneur?</p>
+<p>CLAUDIO.--N&#x27;être pas marié, ne pas unir mon âme à une prostituée avérée!</p>
+<p>LÉONATO.--Cher seigneur, si l&#x27;ayant éprouvée vous-même, vous avez vaincu les résistances de sa jeunesse, et triomphé de sa virginité...</p>
+<p>CLAUDIO.--Je vois ce que vous voudriez dire.--Si je l&#x27;ai connue, me direz-vous, elle m&#x27;embrassait comme son mari; et vous atténueriez par-là sa faiblesse anticipée.--Non, Léonato, je ne l&#x27;ai jamais tentée par un mot trop libre. Comme un frère auprès de sa soeur, je lui montrais une sincérité timide et un amour décent.</p>
+<p>HÉRO.--Et vous ai-je jamais montré une apparence contraire?</p>
+<p>CLAUDIO.--Maudite soit votre apparence! je m&#x27;inscris en faux contre elle. Vous me semblez telle que Diane dans son orbe, chaste comme le bouton avant d&#x27;être épanoui; mais vous avez un sang plus impudique que celui de Vénus ou celui de ces créatures lascives qui l&#x27;abandonnent à une brutale sensualité.</p>
+<p>HÉRO.--Monseigneur se porte-t-il bien qu&#x27;il tienne des discours si extravagants?</p>
+<p>LÉONATO.--Généreux prince, pourquoi ne parlez-vous pas?</p>
+<p>DON PÈDRE.--Que pourrai-je dire? Je reste déshonoré par les soins que j&#x27;ai pris pour unir mon digne ami à une vile courtisane.</p>
+<p>LÉONATO.--Dit-on réellement ces choses, ou est-ce que je rêve?</p>
+<p>DON JUAN,--On le dit, seigneur, et elles sont vraies.</p>
+<p>BÉNÉDICK.--Ceci n&#x27;a pas l&#x27;air d&#x27;une noce.</p>
+<p>HÉRO.--Vraies! ô Dieu!</p>
+<p>CLAUDIO.--Léonato, suis-je debout ici? Est-ce là le prince? Est-ce là le frère du prince? Ce front est-il celui d&#x27;Héro? Nos yeux sont-ils à nous?</p>
+<p>LÉONATO.--Oui sans doute; mais qu&#x27;en résulte-t-il, seigneur?</p>
+<p>CLAUDIO.--Laissez-moi adresser une seule question à votre fille, et par ce pouvoir paternel que la nature vous donne sur elle, commandez-lui de répondre avec vérité.</p>
+<p>LÉONATO.--Je te l&#x27;ordonne comme tu es mon enfant.</p>
+<p>HÉRO.--O Dieu, défendez-moi! Comme je suis assiégée! A quel interrogatoire suis-je donc soumise?</p>
+<p>CLAUDIO.--A répondre fidèlement au nom que vous portez.</p>
+<p>HÉRO.--Ce nom n&#x27;est-il pas Héro? Qui peut le flétrir d&#x27;un juste reproche?</p>
+<p>CLAUDIO.--Ma foi, Héro elle-même! Héro elle-même peut flétrir la vertu d&#x27;Héro. Quel homme s&#x27;entretenait la nuit dernière avec vous, près de votre fenêtre, entre minuit et une heure? Maintenant, si vous êtes vierge, répondez à cette question.</p>
+<p>HÉRO.--À cette heure-là, seigneur, je n&#x27;ai parlé à aucun homme.</p>
+<p>DON PÈDRE.--Alors vous n&#x27;êtes plus vierge.--Je suis fâché, Léonato, que vous soyez forcé de m&#x27;entendre; sur mon honneur, moi, mon frère et ce comte outragé, nous l&#x27;avons vue, nous l&#x27;avons entendue la nuit dernière parler, à cette heure même, par la fenêtre de sa chambre, à un coquin, qui, comme un franc coquin, a fait l&#x27;aveu des honteuses entrevues qu&#x27;ils ont eues mille fois ensemble secrètement.</p>
+<p>DON JUAN.--Elles ne sont pas de nature à être nommées; seigneur, on ne peut les redire; la langue ne fournit pas d&#x27;expression assez chaste pour les rendre sans scandale. Ainsi, belle dame, je suis fâché de votre étrange inconduite.</p>
+<p>CLAUDIO.--O Héro! quelle héroïne n&#x27;aurais-tu pas été, si la moitié de tes grâces extérieures eût été donnée à tes pensées et à ton coeur! Mais adieu, la plus indigne et la plus belle!--Adieu! pure impiété et pure impie! Tu seras cause que je fermerai toutes les portes de mon coeur à l&#x27;amour, et que le soupçon veillera suspendu sur mes paupières pour me faire soupçonner toujours le mal dans la beauté, qui n&#x27;aura jamais de charmes pour moi.</p>
+<p>LÉONATO.--Personne ici n&#x27;a-t-il une pointe de poignard pour moi?</p>
+<p>(Héro s&#x27;évanouit et tombe.)</p>
+<p>BÉATRICE.--Ah! qu&#x27;est-ce donc, cousine? pourquoi tombez-vous?</p>
+<p>DON JUAN.--Allons, retirons-nous.--Ses actions dévoilées au grand jour ont confondu ses sens.</p>
+<p>(Don Pèdre, don Juan et Claudio sortent.)</p>
+<p>BÉNÉDICK.--Comment est-elle?</p>
+<p>BÉATRICE.--Morte, je crois. Du secours, mon oncle!--Héro! eh bien! Héro!--Mon oncle!--Seigneur Bénédick! moine!</p>
+<p>LÉONATO.--O destin! ne retire point ta main appesantie sur elle! La mort est le voile le plus propre à couvrir sa honte qu&#x27;on puisse désirer.</p>
+<p>BÉATRICE.--Eh bien! cousine? Héro!</p>
+<p>LE MOINE.--Prenez courage, madame.</p>
+<p>LÉONATO.--Quoi, tu rouvres les yeux!</p>
+<p>LE MOINE.--Oui, et pourquoi non?</p>
+<p>LÉONATO.--Pourquoi? Tout sur la terre ne crie-t-il pas infamie sur elle? Peut-elle nier un crime que son sang agile révèle? Oh! ne reviens pas à la vie, Héro, n&#x27;ouvre pas tes yeux; car si je pouvais penser que tu ne dusses pas bientôt mourir, si je croyais ta vie plus forte que ta honte, je viendrais à l&#x27;arrière-garde de tes remords pour trancher ta vie.--Je m&#x27;affligeais de n&#x27;avoir qu&#x27;une enfant. ...Je reprochais à la nature son avarice!--Oh! j&#x27;ai trop d&#x27;une fille: pourquoi ai-je une fille? Pourquoi fus-tu jamais aimable à mes yeux?--Pourquoi d&#x27;une main charitable n&#x27;ai-je pas recueilli à ma porte l&#x27;enfant de quelque mendiant? Si elle se fût ainsi souillée et plongée dans l&#x27;infamie, j&#x27;aurais pu dire: «Ce n&#x27;est point une portion de moi-même. Cette infamie est dérivée de reins inconnus,» Mais ma fille, elle que j&#x27;aimais; ma fille, que je vantais; ma fille dont j&#x27;étais fier, au point que m&#x27;oubliant moi-même, je n&#x27;étais plus rien pour moi-même et ne m&#x27;estimais plus qu&#x27;en elle.... Oh! elle est tombée dans un abîme d&#x27;encre! Tous les flots de l&#x27;Océan entier ne pourraient pas la laver, ni tout le sel qu&#x27;il contient rendre la pureté à sa chair corrompue!</p>
+<p>BÉNÉDICK.--Seigneur, seigneur, modérez-vous; pour moi, je suis si pétrifié d&#x27;étonnement, que je ne sais que dire.</p>
+<p>BÉATRICE.--Oh! sur mon âme, on calomnie ma cousine.</p>
+<p>BÉNÉDICK.--Madame, partagiez-vous son lit la dernière nuit?</p>
+<p>BÉATRICE.--Non, je l&#x27;avoue; non, quoique jusqu&#x27;à la dernière nuit j&#x27;aie été depuis un an sa compagne de lit.</p>
+<p>LÉONATO.--Confirmation, confirmation! Oh! les voilà plus fortes encore ces preuves déjà revêtues de barres de fer! Les deux princes voudraient-ils mentir? Claudio aurait-il menti, lui qui l&#x27;aimait tant, qu&#x27;en parlant de son indignité il la lavait de ses larmes?--Écartez-vous d&#x27;elle, laissez-la mourir.</p>
+<p>LE MOINE.--Écoutez-moi un moment. Je n&#x27;ai gardé si longtemps le silence et n&#x27;ai laissé un libre cours à la marche de la fortune, que pour observer la jeune personne. J&#x27;ai remarqué que mille fois la rougeur couvrait son visage, et mille fois la honte de l&#x27;innocence remplaçait cette rougeur par une pâleur céleste! Un feu a éclaté dans ses yeux, pour brûler les soupçons que les princes jetaient sur sa pureté virginale. Traitez-moi d&#x27;insensé, méprisez mes études et mes observations, qui du sceau de l&#x27;expérience confirment ce que j&#x27;ai lu. Ne vous fiez plus à mon âge, à mon ministère, à ma sainte mission, si cette jeune dame n&#x27;est pas ici la victime innocente de quelque méprise cruelle.</p>
+<p>LÉONATO.--Frère, cela ne peut être. Vous voyez que la seule pudeur qui lui reste est de ne pas vouloir ajouter le péché du parjure à son damnable crime. Elle ne le désavoue pas. Pourquoi cherchez-vous donc à couvrir d&#x27;excuses la vérité qui se montre toute nue?</p>
+<p>LE MOINE.--Madame, quel est l&#x27;homme qu&#x27;on vous accuse d&#x27;aimer?</p>
+<p>HÉRO.--Ceux qui m&#x27;accusent le savent; moi, je n&#x27;en connais aucun; et si je connais aucun homme vivant plus que ne le permet la modestie virginale, puisse toute miséricorde être refusée à mes fautes!--O mon père, prouvez qu&#x27;à des heures indues un homme s&#x27;entretint jamais avec moi, ou que la nuit passée je me sois prêtée à un commerce de paroles avec aucune créature; et alors renoncez-moi, haïssez-moi, faites-moi mourir dans les tortures.</p>
+<p>LE MOINE.--Les princes et Claudio sont aveuglés par quelque erreur étrange.</p>
+<p>BÉNÉDICK.--Deux des trois sont l&#x27;honneur même, et si leur prudence est trompée en ceci, la fraude est sortie du cerveau de don Juan le bâtard, dont l&#x27;esprit travaille sans relâche à ourdir des scélératesses.</p>
+<p>LÉONATO.--Je n&#x27;en sais rien. Si ce qu&#x27;ils disent d&#x27;elle est la vérité, ces mains la mettront en pièces; mais s&#x27;ils outragent son honneur, le plus fier d&#x27;entre eux en entendra parler. Le temps n&#x27;a pas encore assez desséché mon sang, l&#x27;âge n&#x27;a pas encore assez consumé les ressources de mon esprit, la fortune n&#x27;a pas encore assez ravagé mes moyens, et ma mauvaise vie ne m&#x27;a pas assez privé d&#x27;amis, que je ne puisse encore, réveillé d&#x27;une semblable manière, posséder la force de corps, les facultés d&#x27;esprit, les ressources d&#x27;argent et le choix d&#x27;amis nécessaires pour m&#x27;acquitter pleinement avec eux.</p>
+<p>LE MOINE.--Arrêtez un moment, et laissez-vous guider par mes conseils. Les princes en sortant ont laissé ici votre fille pour morte; dérobez-la quelque temps à tous les yeux, et publiez qu&#x27;elle est morte en effet; étalez tout l&#x27;appareil du deuil, suspendez à l&#x27;ancien monument de votre famille de lugubres épitaphes, en observant tous les rites qui appartiennent à des funérailles.</p>
+<p>LÉONATO.--Qu&#x27;en résultera-t-il? Qu&#x27;est-ce que cela produira?</p>
+<p>LE MOINE.--Le voici. Cet expédient bien conduit changera sur son compte la calomnie en remords, et c&#x27;est déjà un bien. Mais ce n&#x27;est pas pour cela que je pense à ce moyen étrange; j&#x27;espère faire naître de ce travail un plus grand avantage. Morte, comme nous devons le soutenir, au moment même qu&#x27;elle se vit accusée, elle sera regrettée, plainte, excusée de tous ceux qui apprendront son sort; car il arrive toujours que ce que nous avons, nous ne l&#x27;estimons pas son prix tant que nous en jouissons; mais s&#x27;il vient à se perdre et à nous manquer, alors nous exagérons sa valeur, alors nous découvrons le mérite que la possession ne nous montrait pas tandis que ce bien était à nous. C&#x27;est ce qui arrivera à Claudio. Quand il apprendra qu&#x27;elle est morte sur ses paroles, l&#x27;image de la vie se glissera doucement dans les rêveries de son imagination, et chaque trait de sa beauté vivante reviendra s&#x27;offrir aux yeux de son âme, plus gracieux, plus touchant, plus animé que quand elle vivait en effet. Alors il pleurera; si l&#x27;amour a une part dans son coeur, il souhaitera ne l&#x27;avoir pas accusée; oui, il le souhaitera, crût-il même à la vérité de son accusation. Laissons ce moment arriver, et ne doutez pas que le succès ne donne aux événements une forme plus heureuse que je ne puis le supposer dans mes conjectures; mais si toute ma prévoyance était trompée, du moins le trépas supposé de votre fille assoupira la rumeur de son infamie, et si notre plan ne réussit pas, vous pourrez la cacher comme il convient à sa réputation blessée dans la vie recluse et monastique, loin des regards, loin de la langue, des reproches et du souvenir des hommes.</p>
+<p>BÉNÉDICK.--Seigneur Léonato; laissez-vous guider par ce moine. Quoique vous connaissiez mon intimité et mon affection pour le prince et pour Claudio, j&#x27;atteste l&#x27;honneur que j&#x27;agirai dans cette affaire avec autant de discrétion et de droiture, que votre âme agirait envers votre corps.</p>
+<p>LÉONATO.--Je nage dans la douleur, et le fil le plus mince peut me conduire.</p>
+<p>LE MOINE.--Vous faites bien de consentir. Sortons de ce lieu sans délai. Aux maux étranges, il faut un traitement étrange comme eux. Venez, madame, mourez pour vivre. Ce jour de noces n&#x27;est que différé peut-être; sachez prendre patience et souffrir.</p>
+<p>(Ils sortent.)</p>
+<p>BÉNÉDICK.--Signora Béatrice, ne vous ai-je pas vue pleurer pendant tout ce temps?</p>
+<p>BÉATRICE.--Oui, et je pleurerai longtemps encore.</p>
+<p>BÉNÉDICK.--C&#x27;est ce que je ne désire pas.</p>
+<p>BÉATRICE.--Vous n&#x27;en avez nulle raison, je pleure à mon gré.</p>
+<p>BÉNÉDICK.--Sérieusement, je crois qu&#x27;on fait tort à votre belle cousine.</p>
+<p>BÉATRICE.--Ah! combien mériterait de moi l&#x27;homme qui voudrait lui faire justice!</p>
+<p>BÉNÉDICK.--Est-il quelque moyen de vous donner cette preuve d&#x27;amitié?</p>
+<p>BÉATRICE.--Un moyen bien facile; mais de pareils amis, il n&#x27;en est point.</p>
+<p>BÉNÉDICK.--Un homme le peut-il faire?</p>
+<p>BÉATRICE.--C&#x27;est l&#x27;office d&#x27;un homme, mais non le vôtre.</p>
+<p>BÉNÉDICK.--Je n&#x27;aime rien dans le monde autant que vous. Cela n&#x27;est-il pas étrange?</p>
+<p>BÉATRICE.--Aussi étrange pour moi que la chose que j&#x27;ignore. Je pourrais aussi aisément vous dire que je n&#x27;aime rien autant que vous; mais ne m&#x27;en croyez point, et pourtant je ne mens pas: je n&#x27;avoue rien; je ne nie rien.--Je m&#x27;afflige pour ma cousine.</p>
+<p>BÉNÉDICK.--Par mon épée, Béatrice, vous m&#x27;aimez.</p>
+<p>BÉATRICE.--Ne jurez point par votre épée, avalez-la.</p>
+<p>BÉNÉDICK.--Je jure par elle que vous m&#x27;aimez, et je la ferai avaler tout entière à qui dira que je ne vous aime point.</p>
+<p>BÉATRICE.--Ne voulez-vous point avaler votre parole?</p>
+<p>BÉNÉDICK.--Jamais, quelque sauce qu&#x27;on puisse inventer! Je proteste que je vous aime.</p>
+<p>BÉATRICE.--Eh bien! alors, Dieu me pardonne...</p>
+<p>BÉNÉDICK.--Quelle offense, chère Béatrice?</p>
+<p>BÉATRICE.--Vous m&#x27;avez arrêtée au bon moment; j&#x27;étais sur le point de protester que je vous aime.</p>
+<p>BÉNÉDICK.--Ah! faites cet aveu de tout votre coeur.</p>
+<p>BÉATRICE.--Je vous aime tellement de tout mon coeur qu&#x27;il n&#x27;en reste rien pour protester.</p>
+<p>BÉNÉDICK.--Voyons, ordonnez-moi de faire quelque chose pour vous.</p>
+<p>BÉATRICE.--Tuez Claudio.</p>
+<p>BÉNÉDICK.--Ah!--Pas pour le monde entier.</p>
+<p>BÉATRICE.--Vous me tuez par ce refus; adieu.</p>
+<p>BÉNÉDICK.--Arrêtez, chère Béatrice.</p>
+<p>BÉATRICE.--Je suis déjà partie quoique je sois encore ici.--Vous n&#x27;avez pas d&#x27;amour.--Non, je vous prie, laissez-moi aller.</p>
+<p>BÉNÉDICK.--Béatrice!</p>
+<p>BÉATRICE.--Décidément, je veux m&#x27;en aller.</p>
+<p>BÉNÉDICK.--Il faut que nous soyons amis auparavant.</p>
+<p>BÉATRICE.--Vous osez plus facilement être mon ami que combattre mon ennemi?</p>
+<p>BÉNÉDICK.--Claudio est-il votre ennemi?</p>
+<p>BÉATRICE.--N&#x27;est-il pas devenu le plus lâche des scélérats, celui qui a calomnié, insulté, déshonoré ma parente? Oh! si j&#x27;étais un homme!--Quoi! la mener par la main jusqu&#x27;au moment où leurs deux mains allaient s&#x27;unir; et alors, par une accusation publique, par une calomnie déclarée, avec une rage effrénée, la... Dieu, si j&#x27;étais un homme! Je voudrais lui manger le coeur sur la place du marché.</p>
+<p>BÉNÉDICK.--Écoutez-moi, Béatrice.</p>
+<p>BÉATRICE.--Parler à un homme par la fenêtre! Oh! la belle histoire!</p>
+<p>BÉNÉDICK.--Mais Béatrice...</p>
+<p>BÉATRICE.--Chère Héro! Elle est injuriée, calomniée, perdue.</p>
+<p>BÉNÉDICK.--Béat...</p>
+<p>BÉATRICE.--Des princes et des comtes! Vraiment, beau témoignage de prince, un beau comte de sucre[51], en vérité, un fort aimable galant! Oh! si je pouvais, pour l&#x27;amour de lui, être un homme! Ou si j&#x27;avais un ami qui voulût se montrer un homme pour l&#x27;amour de moi!... mais le courage s&#x27;est fondu en politesse, la valeur en compliment, les hommes sont devenus des langues et même des langues dorées. Pour être aussi vaillant qu&#x27;Hercule, il suffit aujourd&#x27;hui de mentir, et de jurer ensuite, pour appuyer son mensonge.--Je ne puis devenir un homme à force de désirs.--Je resterai donc femme, pour mourir de chagrin.</p>
+<p>[Note 51: «County, anciennement terme générique pour dire un noble.» (STEEVENS.)]</p>
+<p>BÉNÉDICK.--Arrêtez, chère Béatrice. Par cette main, je vous aime.</p>
+<p>BÉATRICE.--Servez-vous-en pour l&#x27;amour de moi autrement qu&#x27;en jurant par elle.</p>
+<p>BÉNÉDICK.--Croyez-vous, dans le fond de votre âme, que le comte Claudio ait calomnié Héro?</p>
+<p>BÉATRICE.--Oui, j&#x27;en suis aussi sûre que d&#x27;avoir une pensée ou une âme.</p>
+<p>BÉNÉDICK.--Il suffit! Je suis engagé, je vais le défier.--Je baise votre main et vous quitte; j&#x27;en atteste cette main, Claudio me rendra un compte rigoureux. Jugez-moi par ce que vous entendrez dire de moi. Allez consoler votre cousine. Il faut que je dise qu&#x27;elle est morte... c&#x27;est assez. Adieu!</p>
+<p>(Ils sortent.)</p>
+<h2 class="chapter" id="c12">Scène II</h2>
+<p>Une prison.</p>
+<p>DOGBERRY ET VERGES paraissent avec le SACRISTAIN, ils sont en robes. BORACHIO ET CONRAD sont devant eux.</p>
+<p>DOGBERRY.--Toute notre compagnie comparaît-elle enfin?</p>
+<p>VERGES.--Vite, un coussin et un tabouret pour le sacristain.</p>
+<p>LE SACRISTAIN.--Quels sont les malfaiteurs?</p>
+<p>DOGBERRY.--Vraiment, c&#x27;est moi-même et mon collègue.</p>
+<p>VERGES.--Oui, cela est certain.--Nous sommes commis pour examiner le procès.</p>
+<p>LE SACRISTAIN,--Mais quels sont les coupables qui doivent être examinés? Faites-les avancer devant le maître constable.</p>
+<p>DOGBERRY.--Oui, qu&#x27;ils s&#x27;avancent devant moi. Ami, quel est votre nom?</p>
+<p>BORACHIO.--Borachio.</p>
+<p>DOGBERRY.--Je vous prie, écrivez Borachio.--Et le vôtre, coquin?</p>
+<p>CONRAD.--Je suis gentilhomme, monsieur, et mon nom est Conrad.</p>
+<p>DOGBERRY.--Écrivez M. le gentilhomme Conrad.--Mes maîtres, servez-vous Dieu?</p>
+<p>BORACHIO, CONRAD.--Nous l&#x27;espérons bien.</p>
+<p>DOGBERRY.--Mettez par écrit qu&#x27;ils espèrent bien servir Dieu, et écrivez Dieu le premier. Car à Dieu ne plaise que Dieu marche devant de pareils vauriens! Camarades, il est déjà prouvé que vous ne valez guère mieux que des fripons, et l&#x27;on en sera bientôt au point de le croire. Que répondez-vous pour votre défense?</p>
+<p>CONRAD.--Diantre! monsieur, nous disons que non.</p>
+<p>DOGBERRY.--Voilà un compère étonnamment spirituel, je vous l&#x27;assure.--Mais je vais user de détour avec lui. Vous, coquin, venez ici: un mot à l&#x27;oreille. Monsieur, je vous dis qu&#x27;on vous croit tous deux des fripons.</p>
+<p>BORACHIO.--Monsieur, je vous dis que nous ne sommes point ce que vous dites.</p>
+<p>DOGBERRY.--Allons, tenez-vous à l&#x27;écart. Devant Dieu! ils n&#x27;ont qu&#x27;une réponse pour deux. Avez-vous mis en écrit qu&#x27;ils n&#x27;en sont point?</p>
+<p>LE SACRISTAIN.--Messire constable, vous ne prenez pas la bonne manière pour les examiner. Vous devriez faire appeler les gardiens qui les accusent.</p>
+<p>DOGBERRY.--Oui, sans doute, c&#x27;est la voie la plus courte; qu&#x27;on fasse comparaître la garde. (On fait venir la garde. ) Mes maîtres, je vous somme, au nom du prince, d&#x27;accuser ces hommes.</p>
+<p>PREMIER GARDIEN.--Cet homme a dit que don Juan, le frère du prince, était un scélérat.</p>
+<p>DOGBERRY.--Écrivez, le prince don Juan un scélérat; ce n&#x27;est ni plus ni moins qu&#x27;un parjure d&#x27;appeler le frère d&#x27;un prince un scélérat!</p>
+<p>BORACHIO.--Monsieur le constable....</p>
+<p>DOGBERRY.--Je vous prie, camarade, silence. Votre regard me déplaît, je vous le déclare.</p>
+<p>LE SACRISTAIN, au gardien.--Que lui avez-vous entendu dire de plus?</p>
+<p>SECOND GARDIEN.--Ma foi! qu&#x27;il a reçu de don Juan mille ducats pour accuser faussement la signora Héro.</p>
+<p>DOGBERRY.--Ceci est un vol avec effraction, si jamais il s&#x27;en est commis.</p>
+<p>VERGES.--Oui, par la messe! c&#x27;en est un.</p>
+<p>LE SACRISTAIN.--Quoi de plus, l&#x27;ami?</p>
+<p>PREMIER GARDIEN.--Et que le comte Claudio avait résolu, d&#x27;après ses propos, de faire affront à Héro devant toute l&#x27;assemblée, et de ne pas l&#x27;épouser.</p>
+<p>DOGBERRY.--O scélérat, tu seras condamné pour ce fait à la rédemption éternelle.</p>
+<p>LE SACRISTAIN.--Et quoi encore?</p>
+<p>SECOND GARDIEN.--C&#x27;est tout.</p>
+<p>LE SACRISTAIN.--C&#x27;en est plus, messieurs, que vous n&#x27;en pouvez nier. Le prince don Juan s&#x27;est secrètement évadé ce matin; c&#x27;est ainsi qu&#x27;Héro a été accusée et refusée; et elle en est tout à coup morte de douleur. Monsieur le constable, faites lier ces hommes et qu&#x27;on les conduise devant Léonato. Je vais les précéder et lui montrer leur interrogatoire.</p>
+<p>(Il sort.)</p>
+<p>DOGBERRY.--Allons aux opinions sur leur sort.</p>
+<p>VERGES.--Qu&#x27;on les enchaîne.</p>
+<p>CONRAD.--Retire-toi, faquin!</p>
+<p>DOGBERRY.--O Dieu de ma vie, où est le sacristain? qu&#x27;il écrive que l&#x27;officier du prince est un faquin. Impudent varlet! Allons; garrottez-les.</p>
+<p>CONRAD.--Arrière! tu n&#x27;es qu&#x27;un âne, tu n&#x27;es qu&#x27;un âne.</p>
+<p>DOGBERRY.--Ne suspectez-vous pas ma place, ne suspectez-vous pas mon âge? Oh! que n&#x27;est-il ici pour écrire que je suis un âne! Mais, compagnons, souvenez-vous-en que je suis un âne. Quoique cela ne soit point écrit, n&#x27;oubliez pas que je suis un âne. Toi, méchant, tu es plein de piété, comme on le prouvera par bon témoignage. Je suis un homme sage, et qui plus est, un constable, et qui plus est encore, un bourgeois établi, et qui plus est, un homme aussi bien en chair que qui ce soit à Messine; un homme qui connaît la loi, va; un homme qui est riche assez, entends-tu, et qui a souffert des pertes, et qui a deux robes et tout ce qui s&#x27;ensuit à l&#x27;avenant. Emmenez, emmenez-le. Oh! que n&#x27;a-t-on écrit que j&#x27;étais un âne!</p>
+<p>(Ils sortent.)</p>
+<h3 class="sub">Fin du quatrième acte — Acte cinquième</h3>
+<h2 class="chapter" id="c13">Scène I</h2>
+<p>Devant la maison de Léonato.</p>
+<p>Entrent LÉONATO ET ANTONIO.</p>
+<p>ANTONIO.--Si vous continuez, vous vous tuerez, et il n&#x27;est pas sage de servir ainsi le chagrin contre vous-même.</p>
+<p>LÉONATO.--De grâce, cessez vos conseils, qui tombent dans mon oreille avec aussi peu de fruit que l&#x27;eau dans un crible. Ne me donnez plus d&#x27;avis, je ne veux écouter d&#x27;autre consolateur qu&#x27;un homme dont les malheurs égalent les miens. Amenez-moi un père qui ait autant aimé son enfant, et dont la joie qu&#x27;il goûtait en elle ait été anéantie comme la mienne, et dites-lui de me parler de patience. Mesurez la profondeur et l&#x27;étendue de sa douleur sur la mienne. Que ses regrets répondent à mes regrets, et que sa douleur soit en tout semblable à la mienne, trait pour trait dans la même forme et dans tous les rapports. Si un tel père veut sourire et se caresser la barbe en s&#x27;écriant, chagrin, loin de moi! et faire hum! lorsqu&#x27;il devrait gémir; raccommoder son affliction par des adages, et enivrer son infortune avec des buveurs nocturnes; amenez-le moi, et j&#x27;apprendrai de lui la patience: mais il n&#x27;y a point d&#x27;homme semblable. Les hommes, mon frère, peuvent bien donner des conseils et des consolations à la douleur qu&#x27;ils ne ressentent point eux-mêmes; mais une fois qu&#x27;ils l&#x27;ont goûtée, ceux qui prétendaient fournir un remède de maximes à la rage, enchaîner le délire forcené avec un réseau de soie, charmer les mots par les sons, et l&#x27;agonie avec des paroles, sont les premiers à changer leurs conseils en fureur. Non, non, c&#x27;est le métier de tous les hommes de parler de patience à ceux qui se tordent sous le poids de la douleur: mais il n&#x27;est pas au pouvoir de la vertu de l&#x27;homme de conserver tant de morale, lorsqu&#x27;il supporte lui-même la même souffrance. Ne me donnez donc point de conseils; mes maux crient plus haut que vos maximes.</p>
+<p>ANTONIO.--Il s&#x27;ensuit que les hommes ne diffèrent en rien des enfants.</p>
+<p>LÉONATO.--Je t&#x27;en prie, tais-toi; je suis de chair et de sang. Il n&#x27;y a jamais eu de philosophe qui pût endurer le mal de dents avec patience; cependant ils ont écrit dans le style des dieux et nargué le sort et la douleur.</p>
+<p>ANTONIO.--Du moins ne tournez pas contre vous seul tout le chagrin; faites souffrir aussi ceux qui vous offensent.</p>
+<p>LÉONATO.--En ceci vous parlez raison; oui, je le ferai. Mon âme me dit qu&#x27;Héro est calomniée; Claudio l&#x27;apprendra, le prince aussi, et tous ceux qui la déshonorent.</p>
+<p>(Don Pèdre et Claudio entrent.)</p>
+<p>ANTONIO.--Voici le prince et Claudio qui s&#x27;avancent à grands pas.</p>
+<p>DON PÈDRE.--Bonsoir, bonsoir!</p>
+<p>CLAUDIO.--Salut à vous deux.</p>
+<p>LÉONATO.--Seigneurs, écoutez-moi....</p>
+<p>DON PÈDRE.--Léonato, nous sommes un peu pressés</p>
+<p>LÉONATO.--Un peu pressés, seigneurs?--Soit, adieu. Seigneurs, vous êtes donc pressés maintenant? Soit; peu importe!</p>
+<p>DON PÈDRE.--Ne vous fâchez point contre nous, bon vieillard.</p>
+<p>ANTONIO.--S&#x27;il pouvait, se fâchant, se faire justice à lui-même, quelques-uns de nous mordraient la poussière.</p>
+<p>CLAUDIO.--Qui donc l&#x27;offense?</p>
+<p>LÉONATO.--Toi, toi, tu m&#x27;offenses, toi, homme dissimulé. Va, ne porte point la main à ton épée; je ne te crains pas.</p>
+<p>CLAUDIO.--Sur ma parole, je maudirais ma main, si elle donnait un pareil sujet de crainte à votre vieillesse. En vérité, ma main ne voulait rien à mon épée.</p>
+<p>LÉONATO.--Fi donc! fi donc! Jeune homme, ne te moque pas et ne plaisante pas de moi! Je ne parle pas en radoteur ou en fou; et je ne me couvre point du privilège de l&#x27;âge, pour me vanter des exploits que j&#x27;ai faits étant jeune, ou de ceux que je ferais, si je n&#x27;étais pas vieux. Retiens, Claudio, ce que je te dis en face; tu as si cruellement outragé mon innocente fille et moi, que je suis forcé de déposer ma gravité et d&#x27;en venir, sous ces cheveux blancs et brisé par de longs jours, à te demander la satisfaction qu&#x27;un homme doit à un autre. Je te dis que tu as calomnié ma fille innocente, que ta calomnie lui a percé le coeur, et qu&#x27;elle est gisante, ensevelie avec ses ancêtres dans une tombe, hélas! où le déshonneur ne dormit jamais, avant celui dont ta lâche perfidie a souillé ma fille.</p>
+<p>CLAUDIO.--Ma perfidie!</p>
+<p>LÉONATO.--Ta perfidie, Claudio; je dis, la tienne.</p>
+<p>DON PÈDRE.--Vous ne dites pas vrai, vieillard.</p>
+<p>LÉONATO.--Seigneur, seigneur, je le prouverai sur son corps s&#x27;il ose accepter le défi; en dépit de son adresse à l&#x27;escrime, de son agilité, en dépit de sa robuste jeunesse et de la fleur de son printemps.</p>
+<p>CLAUDIO.--Retirons-nous; je ne veux rien avoir à faire avec vous.</p>
+<p>LÉONATO.--Peux-tu me rebuter ainsi? Tu as tué mon enfant; si tu me tues, mon garçon, tu auras tué un homme.</p>
+<p>ANTONIO.--Il en tuera deux de nous, et qui sont vraiment des hommes. Mais n&#x27;importe; qu&#x27;il en tue d&#x27;abord un; qu&#x27;il vienne à bout de moi.--Laissez-le me faire raison.--Allons, suis-moi, mon garçon; viens, suis-moi. Monsieur le gamin, je parerai vos bottes avec un fouet; oui, comme je suis gentilhomme, je le ferai.</p>
+<p>LÉONATO.--Mon frère!....</p>
+<p>ANTONIO.--Soyez tranquille. Dieu sait que j&#x27;aimais ma nièce, et elle est morte,--elle est morte de la calomnie de ces traîtres, qui sont aussi hardis à répondre en face à un homme, que je le suis à prendre un serpent par la langue; des enfants, des singes, des vantards, des faquins, des poules mouillées.</p>
+<p>LÉONATO.--Mon frère Antonio!...</p>
+<p>ANTONIO.--Tenez-vous tranquille. Eh bien, quoi!--Je les connais bien, vous dis-je, et tout ce qu&#x27;ils valent, jusqu&#x27;à la dernière drachme. Des enfants tapageurs, impertinents, conduits par la mode, qui mentent, cajolent, raillent, corrompent et calomnient, se mettent au rebours du bon sens, affectent un air terrible, débitent une demi-douzaine de mots menaçants pour dire comment ils frapperaient leurs ennemis s&#x27;ils osaient, et voilà tout.</p>
+<p>LÉONATO.--Mais, Antonio, mon frère....?</p>
+<p>ANTONIO.--Allez, cela ne vous regarde pas; ne vous en mêlez pas; laissez-moi faire.</p>
+<p>DON PÈDRE.--Messieurs, nous ne provoquerons point votre colère.--Mon coeur est vraiment affligé de la mort de votre fille. Mais, sur mon honneur, on ne l&#x27;a accusée de rien qui ne fût vrai, et dont la preuve ne fût évidente.</p>
+<p>LÉONATO.--Seigneur, seigneur!</p>
+<p>DON PÈDRE.--Je ne veux pas vous écouter.</p>
+<p>LÉONATO.--Non?--Venez, mon frère; marchons.--Je veux qu&#x27;on m&#x27;écoute.</p>
+<p>ANTONIO.--Et on vous écoutera; ou il y aura des gens parmi nous qui le payeront cher.</p>
+<p>(Léonato et Antonio s&#x27;en vont.) (Entre Bénédick.)</p>
+<p>DON PÈDRE.--Voyez, voyez. Voici l&#x27;homme que nous allions chercher.</p>
+<p>CLAUDIO.--Eh bien! seigneur? Quelles nouvelles?</p>
+<p>BÉNÉDICK, au prince.--Salut, seigneur.</p>
+<p>DON PÈDRE.--Soyez le bienvenu, Bénédick. Vous êtes presque venu à temps pour séparer des combattants.</p>
+<p>CLAUDIO.--Nous avons été sur le point d&#x27;avoir le nez arraché par deux vieillards qui n&#x27;ont plus de dents.</p>
+<p>DON PÈDRE.--Oui, par Léonato et son frère. Qu&#x27;en pensez-vous? Si nous en étions venus aux mains, je ne sais pas si nous aurions été trop jeunes pour eux.</p>
+<p>BÉNÉDICK.--Il n&#x27;y a jamais de vrai courage dans une querelle injuste. Je suis venu vous chercher tous deux.</p>
+<p>CLAUDIO.--Nous avons été à droite et à gauche pour vous chercher; car nous sommes atteints d&#x27;une profonde mélancolie, et nous serions charmés d&#x27;en être délivrés. Voulez-vous employer à cela votre esprit?</p>
+<p>BÉNÉDICK.--Mon esprit est dans mon fourreau. Voulez-vous que je le tire?</p>
+<p>DON PÈDRE.--Est-ce que vous portez votre esprit à votre côté?</p>
+<p>CLAUDIO.--Cela ne s&#x27;est jamais vu, quoique bien des gens soient à côté de leur esprit. Je vous dirai de le tirer, comme on le dit aux musiciens: tirez-le pour nous divertir.</p>
+<p>DON PÈDRE.--Aussi vrai que je suis un honnête homme, il pâlit. Êtes-vous malade ou en colère?</p>
+<p>CLAUDIO.--Allons, du courage, allons. Quoique le souci ait pu tuer un chat, vous avez assez de coeur pour tuer le souci.</p>
+<p>BÉNÉDICK.--Comte, je saurai rencontrer votre esprit en champ clos si vous chargez contre moi.--De grâce, choisissez un autre sujet.</p>
+<p>CLAUDIO.--Allons, donnez-lui une autre lance: la dernière a été rompue.</p>
+<p>DON PÈDRE.--Par la lumière du jour, il change de couleur de plus en plus.--Je crois, en vérité, qu&#x27;il est en colère.</p>
+<p>CLAUDIO.--S&#x27;il est en colère, il sait tourner sa ceinture[52].</p>
+<p>[Note 52: Proverbe; le sens est sans doute: S&#x27;il est de mauvaise humeur, qu&#x27;il s&#x27;occupe à se distraire.]</p>
+<p>BÉNÉDICK.--Pourrai-je vous dire un mot à l&#x27;oreille?</p>
+<p>CLAUDIO.--Dieu me préserve d&#x27;un cartel!</p>
+<p>BÉNÉDICK, bas à Claudio.--Vous êtes un lâche traître. Je ne plaisante point.--Je vous le prouverai comme vous voudrez, avec ce que vous voudrez et quand vous voudrez. --Donnez-moi satisfaction, ou je divulguerai votre lâcheté.--Vous avez fait mourir une dame aimable; mais sa mort retombera lourdement sur vous. Donnez-moi de vos nouvelles.</p>
+<p>CLAUDIO, bas à Bénédick.--Soit. Je vous joindrai. (Haut.) Préparez-moi bonne chère.</p>
+<p>DON PÈDRE.--Quoi? un festin? un festin?</p>
+<p>CLAUDIO.--Oui, et je l&#x27;en remercie. Il m&#x27;a invité à découper une tête de veau et un chapon; si je ne m&#x27;en acquitte pas de la manière la plus adroite, dites que mon couteau ne vaut rien.--N&#x27;y aura-t-il pas aussi une bécasse?</p>
+<p>BÉNÉDICK.--Seigneur, votre esprit trotte bien: il a l&#x27;allure aisée.</p>
+<p>DON PÈDRE.--Je veux vous raconter comment Béatrice faisait l&#x27;autre jour l&#x27;éloge de votre esprit. Je lui disais que vous étiez un bel esprit. «Sûrement, dit-elle, c&#x27;est un beau petit esprit.--Non pas, lui dis-je, c&#x27;est un grand esprit. Oh! oui, répondit-elle, un grand gros esprit.--Ce n&#x27;est pas cela, lui dis-je, dites un bon esprit.--Précisément, dit-elle, il ne blesse personne.--Mais, repris-je, le gentilhomme est sage.--Oh! certainement, répliqua-t-elle, un sage gentilhomme.--Comment! poursuivis-je, il possède plusieurs langues.--Je le crois, dit-elle, car il me jurait une chose lundi au soir, qu&#x27;il désavoua le mardi matin. Voilà une langue double; voilà deux langues. Enfin elle prit à tâche, pendant une heure entière, de défigurer vos qualités personnelles; et pourtant à la fin elle conclut, en poussant un soupir, que vous étiez le plus bel homme de l&#x27;Italie.</p>
+<p>CLAUDIO.--Et là-dessus elle pleura de bon coeur, en disant, qu&#x27;elle ne s&#x27;en embarrassait guère.</p>
+<p>DON PÈDRE.--Oui, voilà ce qu&#x27;elle dit; mais cependant, avec tout cela, si elle ne le haïssait pas à mort, elle l&#x27;aimerait tendrement.--La fille du vieillard nous a tout dit.</p>
+<p>CLAUDIO.--Tout, tout, et en outre, Dieu le vit quand il était caché dans le jardin[53].</p>
+<p>[Note 53: Allusion profane au passage de l&#x27;Écriture (Genèse III), où il est dit que Dieu vit Adam quand il était caché dans le jardin, en même temps qu&#x27;à la conversation entendue par Bénédick.]</p>
+<p>DON PÈDRE.--Mais quand planterons-nous les cornes du buffle sur la tête du sage Bénédick?</p>
+<p>CLAUDIO.--Oui; et quand écrirons-nous au-dessous: «Ici loge Bénédick, l&#x27;homme marié?»</p>
+<p>BÉNÉDICK.--Adieu, mon garçon. Vous savez mes intentions. Je vous laisse à votre joyeux babil; vous faites assaut d&#x27;épigrammes, comme les matamores font de leurs lames, qui, grâce à Dieu, ne font pas de mal.--(A don Pèdre.) Seigneur, je vous rends grâces de vos nombreuses bontés; votre frère, le bâtard, s&#x27;est enfui de Messine. Vous avez, entre vous tous, tué une aimable et innocente personne. Quant à mon seigneur Sans-barbe, nous nous rencontrerons bientôt, et jusque-là, que la paix soit avec lui.</p>
+<p>(Bénédick sort.)</p>
+<p>DON PÈDRE.--Il parle sérieusement.</p>
+<p>CLAUDIO.--Très-sérieusement; et cela, je vous garantis, pour l&#x27;amour de Béatrice.</p>
+<p>DON PÈDRE.--Et vous a-t-il défié?</p>
+<p>CLAUDIO.--Le plus sincèrement du monde.</p>
+<p>DON PÈDRE.--Quelle jolie chose qu&#x27;un homme, lorsqu&#x27;il sort avec son pourpoint et son haut-de-chausses, et laisse en route son bon sens!</p>
+<p>(Entrent Dogberry, Verges, avec Conrad et Borachio conduits par la garde.)</p>
+<p>CLAUDIO.--C&#x27;est alors un géant devant un singe; mais aussi un singe est un docteur près d&#x27;un tel homme.</p>
+<p>DON PÈDRE.--Arrêtez! laissons-le.--Réveille-toi, mon coeur, et sois sérieux. Ne nous a-t-il pas dit que mon frère s&#x27;était enfui?</p>
+<p>DOGBERRY.--Allons, venez çà, monsieur. Si la justice ne vient pas à bout de vous réduire, elle n&#x27;aura plus jamais de raisons à peser dans sa balance; oui, et comme vous êtes un hypocrite fieffé, il faut veiller sur vous.</p>
+<p>DON PÈDRE.--Que vois-je? deux hommes de mon frère, garrottés! Et Borachio en est un!</p>
+<p>CLAUDIO.--Faites-vous instruire, seigneur, de la nature de leur faute.</p>
+<p>DON PÈDRE.--Constable, quelle faute ont commise ces deux hommes?</p>
+<p>DOGBERRY.--Vraiment, ils ont commis un faux rapport; de plus, ils ont dit des mensonges; en second lieu, ce sont des calomniateurs; et pour sixième et dernier délit, ils ont noirci la réputation d&#x27;une dame; troisièmement, ils ont déclaré des choses injustes; et pour conclure, ce sont de fieffés menteurs.</p>
+<p>DON PÈDRE.--D&#x27;abord, je vous demande ce qu&#x27;ils ont fait; troisièmement, je vous demande quelle est leur offense; en sixième et dernier lieu, pourquoi ils sont prisonniers, et pour conclusion, ce dont vous les accusez.</p>
+<p>CLAUDIO.--Fort bien raisonné, seigneur! et suivant sa propre division; sur ma conscience, voilà une question bien retournée.</p>
+<p>DON PÈDRE.--Messieurs, qui avez-vous offensé, pour être ainsi garrottés et tenus d&#x27;en répondre? Ce savant constable est trop fin pour qu&#x27;on le comprenne, quel est votre délit?</p>
+<p>BORACHIO.--Noble prince, ne permettez pas qu&#x27;on me conduise plus loin pour subir mon interrogatoire; entendez-moi vous-même; et qu&#x27;ensuite le comte me tue. J&#x27;ai abusé vos yeux, et ce que n&#x27;a pu découvrir votre prudence, ces imbéciles l&#x27;ont relevé à la lumière. Ce sont eux qui, dans l&#x27;ombre de la nuit, m&#x27;ont entendu avouer à cet homme, comment don Juan, votre frère, m&#x27;avait engagé à calomnier la signora Héro; comment vous aviez été conduits dans le verger, et m&#x27;aviez vu faire ma cour à Marguerite, vêtue des habits d&#x27;Héro; enfin comment vous l&#x27;aviez déshonorée au moment où vous deviez l&#x27;épouser. Ils ont fait un rapport de toute ma trahison; et j&#x27;aime mieux le sceller par ma mort que d&#x27;en répéter les détails à ma honte. La dame est morte sur la fausse accusation tramée par moi et par mon maître; et bref, je ne demande autre chose que le salaire dû à un misérable.</p>
+<p>DON PÈDRE.--Chacune de ces paroles ne court-elle pas dans votre sang comme de l&#x27;acier?</p>
+<p>CLAUDIO.--J&#x27;avalais du poison pendant qu&#x27;il les proférait.</p>
+<p>DON PÈDRE, à Borachio.--Mais est-ce mon frère qui t&#x27;a incité à ceci?</p>
+<p>BORACHIO.--Oui, seigneur; et il m&#x27;a richement payé pour l&#x27;accomplir.</p>
+<p>DON PÈDRE.--C&#x27;est un composé de trahison et de perfidie!--Et il s&#x27;est enfui après cette scélératesse!</p>
+<p>CLAUDIO.--Douce Héro! Ton image revient se présenter à moi, sous les traits célestes qui me l&#x27;avaient fait aimer d&#x27;abord!</p>
+<p>DOGBERRY, à la garde.--Allons, ramenez les plaignants; notre sacristain, à l&#x27;heure qu&#x27;il est, a réformé le seigneur Léonato de l&#x27;affaire.--Et, n&#x27;oubliez pas, camarades, de faire mention, en temps et lieu, que je suis un âne.</p>
+<p>VERGES.--Voyez, voici venir le seigneur Léonato, et le sacristain aussi.</p>
+<p>(Léonato revient avec Antonio et le sacristain.)</p>
+<p>LÉONATO.--Quel est le misérable?.... Faites-moi voir ses yeux, afin que, lorsque j&#x27;apercevrai un homme qui lui ressemble, je puisse l&#x27;éviter; lequel est-ce d&#x27;entre eux?</p>
+<p>BORACHIO.--Si vous voulez connaître l&#x27;auteur de vos maux, regardez-moi.</p>
+<p>LÉONATO.--Es-tu le vil esclave dont le souffle a tué mon innocente enfant?</p>
+<p>BORACHIO.--Oui; c&#x27;est moi seul.</p>
+<p>LÉONATO.--Seul? Non, non, misérable, tu te calomnies toi-même. Voilà un couple d&#x27;illustres personnages (le troisième s&#x27;est enfui) qui y ont mis la main. Je vous rends grâces, princes, de la mort de ma fille. Inscrivez-la parmi vos nobles et beaux exploits. Si vous voulez y réfléchir, c&#x27;est une glorieuse action.</p>
+<p>CLAUDIO.--Je ne sais comment implorer votre patience; cependant il faut que je parle. Choisissez vous-même votre vengeance; imposez-moi la pénitence que vous pourrez inventer pour punir mon crime; et cependant je n&#x27;ai péché que par méprise.</p>
+<p>DON PÈDRE.--Et moi de même, sur mon âme; et cependant, pour donner satisfaction à ce digne vieillard, je me courberais sous n&#x27;importe quel poids pesant il voudrait m&#x27;imposer.</p>
+<p>LÉONATO.--Je ne puis vous ordonner de commander à ma fille de vivre; cela est impossible. Mais je vous prie tous deux de proclamer ici, devant tout le peuple de Messine, qu&#x27;elle est morte innocente; et si votre amour peut trouver quelques vers touchants, suspendez-les en épitaphe, sur sa tombe et chantez-les sur ses restes. Chantez-les ce soir.--Demain matin, rendez-vous à ma maison, et puisque vous ne pouvez pas être mon gendre, devenez du moins mon neveu. Mon frère a une fille qui est presque trait pour trait le portrait de ma fille qui est morte, et elle est l&#x27;unique héritière de nous deux; donnez-lui le titre que vous auriez donné à sa cousine; là expire ma vengeance.</p>
+<p>CLAUDIO.--O noble seigneur, votre excès de bonté m&#x27;arrache des larmes. J&#x27;embrasse votre offre, et désormais disposez du pauvre Claudio.</p>
+<p>LÉONATO.--Ainsi, demain matin je vous attendrai chez moi; je prends ce soir congé de vous.--Ce misérable sera confronté avec Marguerite qui, je le crois, est complice de cette mauvaise action, et gagnée par votre frère.</p>
+<p>BORACHIO.--Non, sur mon âme, elle n&#x27;y eut aucune part; et elle ne savait pas ce qu&#x27;elle faisait, lorsqu&#x27;elle me parlait: au contraire, elle a toujours été juste et vertueuse dans tout ce que j&#x27;ai connu d&#x27;elle.</p>
+<p>DOGBERRY.--En outre, seigneur (ce qui, en vérité, n&#x27;a pas été mis en blanc et en noir), ce plaignant que voilà, le criminel, m&#x27;a appelé âne. Je vous en conjure, souvenez-vous-en dans sa punition; et encore la garde les a entendus parler d&#x27;un certain La Mode: ils disent qu&#x27;il porte une clef à son oreille, avec une boucle de cheveux qui y est suspendue, et qu&#x27;il emprunte de l&#x27;argent au nom de Dieu; ce qu&#x27;il a fait si souvent et depuis si longtemps, sans jamais le rendre, qu&#x27;aujourd&#x27;hui les hommes ont le coeur endurci, et ne veulent rien prêter pour l&#x27;amour de Dieu: je vous en prie, examinez-le sur ce chef.</p>
+<p>LÉONATO.--Je te remercie de tes peines et de tes bons offices.</p>
+<p>DOGBERRY.--Votre Seigneurie parle comme un jeune homme bien reconnaissant et bien vénérable; et je rends grâces à Dieu pour vous.</p>
+<p>LÉONATO.--Voilà pour tes peines.</p>
+<p>DOGBERRY.--Dieu garde la fondation!</p>
+<p>LÉONATO.--Va, je te décharge de ton prisonnier, et je te remercie.</p>
+<p>DOGBERRY.--Je laisse un franc vaurien entre les mains de votre Seigneurie, et je conjure votre Seigneurie de le bien châtier vous-même pour l&#x27;exemple des autres. Dieu conserve votre Seigneurie! Je fais des voeux pour le bonheur de votre Seigneurie: Dieu vous rende la santé.--Je vous donne humblement la liberté de vous en aller; et si l&#x27;on peut vous souhaiter une heureuse rencontre, Dieu nous en préserve! (A Verges.) Allons-nous-en, voisin.</p>
+<p>(Dogberry et Verges sortent.)</p>
+<p>LÉONATO.--Adieu, seigneurs; jusqu&#x27;à demain matin.</p>
+<p>ANTONIO.--Adieu, seigneurs, nous vous attendons demain matin.</p>
+<p>DON PÈDRE.--Nous n&#x27;y manquerons pas.</p>
+<p>CLAUDIO.--Cette nuit je pleurerai Héro.</p>
+<p>LÉONATO, à la garde.--Emmenez ces hommes avec nous: nous voulons causer avec Marguerite, et savoir comment est venue sa connaissance avec ce mauvais sujet.</p>
+<h2 class="chapter" id="c14">Scène II</h2>
+<p>Le jardin de Léonato. BÉNÉDICK ET MARGUERITE se rencontrent et s&#x27;abordent.</p>
+<p>BÉNÉDICK.--Ah! je vous en prie, chère Marguerite, obligez-moi en me faisant parler à Béatrice.</p>
+<p>MARGUERITE.--Voyons, voulez-vous me composer un sonnet à la louange de ma beauté?</p>
+<p>BÉNÉDICK.--Oui, et en style si pompeux, que nul homme vivant n&#x27;en approchera jamais; car, dans l&#x27;honnête vérité, vous le méritez bien.</p>
+<p>MARGUERITE.--Aucun homme n&#x27;approchera de moi? Quoi donc! resterai-je toujours en bas de l&#x27;escalier?</p>
+<p>BÉNÉDICK.--Votre esprit est aussi vif qu&#x27;un lévrier: il atteint d&#x27;un saut sa proie.</p>
+<p>MARGUERITE.--Et le vôtre émoussé comme un fleuret d&#x27;escrime, qui touche mais ne blesse pas.</p>
+<p>BÉNÉDICK.--C&#x27;est l&#x27;esprit d&#x27;un homme de coeur, Marguerite, qui ne voudrait pas blesser une femme.--Je vous prie, appelez Béatrice, je vous rends les armes, et jette mon bouclier à vos pieds[54].</p>
+<p>[Note 54: On connaît l&#x27;expression latine clypeum abjicere, pour rendre les armes.]</p>
+<p>MARGUERITE.--C&#x27;est votre épée qu&#x27;il faut nous rendre: nous avons les bouchers à nous.</p>
+<p>BÉNÉDICK.--Si vous vous en servez, Marguerite, il vous faut mettre la pointe dans l&#x27;étau; les épées sont des armes dangereuses pour les filles.</p>
+<p>MARGUERITE.--Allons, je vais vous appeler Béatrice, qui, je crois, a des jambes.</p>
+<p>BÉNÉDICK.--Et qui par conséquent viendra.</p>
+<p>(Marguerite sort.) (Il chante.)</p>
+<p>Le dieu d&#x27;amour Qui est assis là-haut, Me connaît, me connaît Il sait combien je mérite....</p>
+<p>Comme chanteur, veux-je dire; mais comme amant?... Léandre, le bon nageur; Troïlus, qui employa le premier Pandare; et un volume entier de ces marchands de tapis dont les noms coulent encore avec tant de douceur sur la ligne unie d&#x27;un vers blanc, non, jamais aucun d&#x27;eux ne fut si absolument bouleversé par l&#x27;amour, que l&#x27;est aujourd&#x27;hui mon pauvre individu. Diantre! je ne saurai le prouver en vers: j&#x27;ai essayé; mais je ne peux trouver d&#x27;autre rime à tendron que poupon: rime innocente! A mariage, cocuage; rime sinistre, école, folle, rime bavarde. Toutes ces rimes sont de mauvais présage: non, je ne suis point né sous une étoile poétique, et je ne puis faire ma cour en termes pompeux.</p>
+<p>(Entre Béatrice.)</p>
+<p>BÉNÉDICK.--Chère Béatrice, vous voulez donc bien venir quand je vous appelle?</p>
+<p>BÉATRICE.--Oui, seigneur, et vous quitter dès que vous me l&#x27;ordonnerez.</p>
+<p>BÉNÉDICK.--Oh! restez seulement avec moi jusqu&#x27;alors.</p>
+<p>BÉATRICE.--Alors est dit: adieu donc.--Et pourtant, avant de m&#x27;en aller que j&#x27;emporte ce pourquoi je suis venue, c&#x27;est de savoir ce qui s&#x27;est passé entre vous et Claudio.</p>
+<p>BÉNÉDICK.--Seulement des paroles aigres; et là-dessus je veux vous donner un baiser.</p>
+<p>BÉATRICE.--Des paroles aigres, ce n&#x27;est qu&#x27;un souffle aigre, et un souffle aigre n&#x27;est qu&#x27;une haleine aigre, une haleine aigre est dégoûtante; je m&#x27;en irai sans votre baiser.</p>
+<p>BÉNÉDICK.--Vous avez détourné le mot de son sens naturel; tant votre esprit est effrayant! Mais, pour vous dire les choses sans détour, Claudio a reçu mon défi; et, ou j&#x27;apprendrai bientôt de ses nouvelles, ou je le dénonce pour un lâche.--Et vous, maintenant, dites-moi, je vous prie, à votre tour, laquelle de mes mauvaises qualités vous a rendue amoureuse de moi?</p>
+<p>BÉATRICE.--Toutes ensemble qui constituent un état de mal si politique qu&#x27;il n&#x27;est pas possible à une seule vertu de s&#x27;y glisser.--Mais vous, quelle est de mes bonnes qualités celle qui vous a fait endurer l&#x27;amour pour moi?</p>
+<p>BÉNÉDICK.--Endurer l&#x27;amour: bonne épithète! Oui, en effet, j&#x27;endure l&#x27;amour, car je vous aime malgré moi.</p>
+<p>BÉATRICE.--En dépit de votre coeur, je le crois aisément. Hélas! le pauvre coeur! si vous lui faites de la peine pour l&#x27;amour de moi, je lui ferai de la peine pour l&#x27;amour de vous, car jamais je n&#x27;aimerai ce que hait mon ami.</p>
+<p>BÉNÉDICK.--Vous et moi, nous avons trop de bon sens pour nous faire l&#x27;amour tranquillement.</p>
+<p>BÉATRICE.--Cet aveu n&#x27;en est pas la preuve: il n&#x27;y a pas un homme sage sur vingt qui se loue lui-même.</p>
+<p>BÉNÉDICK.--Vieille coutume, vieille coutume, Béatrice; bonne dans le temps des bons vieillards. Mais dans ce siècle, si un homme n&#x27;a pas le soin d&#x27;élever lui-même sa tombe avant de mourir, il ne vivra pas dans son monument plus longtemps que ne dureront le son de la cloche funèbre et les larmes de sa veuve.</p>
+<p>BÉATRICE.--Et combien croyez-vous qu&#x27;elles durent?</p>
+<p>BÉNÉDICK.--Quelle question! Eh! mais, une heure de cris et un quart d&#x27;heure de pleurs: en conséquence, il est fort à propos pour le sage, si Don Ver[55] (sa conscience) n&#x27;y trouve pas d&#x27;empêchement contraire, d&#x27;être le trompette de ses propres vertus, comme je le suis pour moi-même: en voilà assez sur l&#x27;article de mon panégyrique, à moi, qui me rendrai témoignage que j&#x27;en suis digne.--A présent, dites-moi, comment va votre cousine?</p>
+<p>[Note 55: Don worm, le ver du remords.]</p>
+<p>BÉATRICE.--Fort mal.</p>
+<p>BÉNÉDICK.--Et vous-même?</p>
+<p>BÉATRICE.--Fort mal aussi.</p>
+<p>BÉNÉDICK.--Servez Dieu, aimez-moi, et, corrigez-vous. Je vais vous quitter là-dessus, car voici quelqu&#x27;un de fort pressé qui accourt.</p>
+<p>(Entre Ursule.)</p>
+<p>URSULE.--Madame, il faut venir auprès de votre oncle: il y a bien du tumulte au logis, vraiment. Il est prouvé que ma maîtresse Héro a été faussement accusée; que le prince et Claudio ont été grossièrement trompés, et que c&#x27;est don Juan qui est l&#x27;auteur de tout; il s&#x27;est enfui; il est parti: voulez-vous venir sur-le-champ?</p>
+<p>BÉATRICE.--Voulez-vous, seigneur, venir entendre ces nouvelles?</p>
+<p>BÉNÉDICK.--Je veux vivre dans votre coeur, mourir sur vos genoux, être enseveli dans vos yeux; et en outre je veux aller avec vous chez votre oncle.</p>
+<p>(Ils sortent.)</p>
+<h2 class="chapter" id="c15">Scène III</h2>
+<p>L&#x27;intérieur d&#x27;une église.</p>
+<p>DON PÈDRE, CLAUDIO, précédés de musiciens et de flambeaux.</p>
+<p>CLAUDIO.--Est-ce là le monument de Léonato?</p>
+<p>UN SERVITEUR.--Oui, seigneur.</p>
+<p>CLAUDIO lisant l&#x27;épitaphe.</p>
+<p>Victime de langues calomnieuses Héro mourut, et gît ici. La mort, pour réparer son injure, Lui donne un renom qui ne mourra jamais. Celle qui mourut avec honte Vit, dans la mort, d&#x27;une gloire pure.</p>
+<p>(Il fixe l&#x27;épitaphe.)</p>
+<p>Et toi que je suspends sur son tombeau, parle encore à sa louange quand ma voix sera muette.--Vous, musiciens, commencez et chantez votre hymne solennel.</p>
+<p>(Il chante.)</p>
+<p>Pardonne, ô déesse de la nuit, A ceux qui ont tué ta jeune vierge[56] C&#x27;est pour expier leur erreur, qu&#x27;ils viennent avec des hymnes de douleur, Autour de sa tombe. O nuit, seconde nos gémissements! Aide-nous à soupirer et à gémir, Profondément! profondément! Tombeaux, ouvrez-vous, rendez vos morts, Jusqu&#x27;à ce que sa mort soit pleurée, Tristement, tristement.</p>
+<p>[Note 56: Virgin knight, chevalière vierge, selon Johnson, signifie pupille, élève, favorite; selon Steevens, dans les siècles de la chevalerie, une chevalière vierge était celle qui n&#x27;avait pas encore eu d&#x27;aventures.]</p>
+<p>CLAUDIO.--Maintenant, bonne nuit à tes os! tous les ans je viendrai te rendre tribut.</p>
+<p>DON PÈDRE.--Adieu, messieurs. Éteignez vos flambeaux; les loups ont dévoré leur proie; et voyez, la douce Aurore, précédant le char du Soleil, parsème de taches grisâtres l&#x27;Orient assoupi. Recevez tous nos remerciements, et laissez-nous: adieu.</p>
+<p>CLAUDIO.--Adieu, mes amis: et que chacun reprenne son chemin.</p>
+<p>DON PÈDRE.--Sortons de ces lieux: allons revêtir d&#x27;autres habits, et aussitôt nous nous rendrons chez Léonato.</p>
+<p>CLAUDIO.--Que l&#x27;hymen qui se prépare ait pour nous une issue plus heureuse que celui qui vient de nous obliger à ce tribut de douleur!</p>
+<p>(Ils sortent tous.)</p>
+<h2 class="chapter" id="c16">Scène IV</h2>
+<p>Appartement dans la maison de Léonato.</p>
+<p>LÉONATO, BÉNÉDICK, MARGUERITE, URSULE, ANTONIO, LE MOINE ET HÉRO.</p>
+<p>LE MOINE.--Ne vous l&#x27;avais-je pas dit, qu&#x27;elle était innocente?</p>
+<p>LÉONATO.--Le prince et Claudio le sont aussi: ils ne l&#x27;ont accusée que déçus par l&#x27;erreur que vous avez entendu raconter. Mais Marguerite est un peu coupable dans ceci, quoique involontairement, comme il le paraît par l&#x27;examen approfondi de cette affaire.</p>
+<p>ANTONIO.--Allons, je suis bien aise que tout ait tourné si heureusement.</p>
+<p>BÉNÉDICK.--Et moi aussi, étant autrement engagé par ma parole à forcer le jeune Claudio à me faire raison là-dessus.</p>
+<p>LÉONATO.--Allons, ma fille, retirez-vous avec vos femmes dans une chambre écartée; et lorsque je vous enverrai chercher, venez ici masquée. Le prince et Claudio m&#x27;ont promis de venir me voir, à cette heure même.--(A Antonio.) Vous savez votre rôle, mon frère. Il faut que vous serviez de père à la fille de votre frère, et que vous la donniez au jeune Claudio.</p>
+<p>(Héro sort suivie de ses femmes.)</p>
+<p>ANTONIO.--Je le ferai, d&#x27;un visage assuré.</p>
+<p>BÉNÉDICK.--Mon père, je crois que j&#x27;aurai besoin d&#x27;implorer votre ministère.</p>
+<p>LE MOINE.--Pour quel service, seigneur?</p>
+<p>BÉNÉDICK.--Pour m&#x27;enchaîner ou me perdre, l&#x27;un ou l&#x27;autre.--Seigneur Léonato, c&#x27;est la vérité, digne seigneur, que votre nièce me regarde d&#x27;un oeil favorable.</p>
+<p>LÉONATO.--C&#x27;est ma fille qui lui a prêté ces yeux-là, rien n&#x27;est plus vrai.</p>
+<p>BÉNÉDICK.--Et moi, en retour, je la vois des yeux de l&#x27;amour.</p>
+<p>LÉONATO.--Vous tenez, je crois, ces yeux de moi, de Claudio et du prince: mais quelle est votre volonté?</p>
+<p>BÉNÉDICK.--Votre réponse, seigneur, est énigmatique; mais pour ma volonté,--ma volonté est que votre bonne volonté daigne s&#x27;accorder avec la nôtre,--pour nous unir aujourd&#x27;hui dans le saint état du mariage.... Voilà pourquoi, bon religieux, je réclame votre secours.</p>
+<p>LÉONATO.--Mon coeur est d&#x27;accord avec votre désir.</p>
+<p>LE MOINE.--Et je suis prêt à vous accorder mon secours.--Voici le prince et Claudio.</p>
+<p>(Entrent don Pèdre et Claudio avec leur suite.)</p>
+<p>DON PÈDRE.--Salut à cette belle assemblée!</p>
+<p>LÉONATO.--Salut, prince; salut, Claudio. Nous vous attendons ici. (A Claudio.) Êtes-vous toujours déterminé à épouser aujourd&#x27;hui la fille de mon frère?</p>
+<p>CLAUDIO.--Je persévère dans mon engagement, fût-elle une Éthiopienne.</p>
+<p>LÉONATO, à son frère.--Appelez-la, mon frère: voici le religieux tout prêt.</p>
+<p>(Antonio sort.)</p>
+<p>DON PÈDRE.--Ah! bonjour, Bénédick. Quoi! qu&#x27;y a-t-il donc pour que vous ayez aussi un visage du mois de février si glacé, si nébuleux, si sombre?</p>
+<p>CLAUDIO.--Je crois qu&#x27;il rêve au buffle sauvage. Allons, rassurez-vous, mon garçon, nous dorerons vos cornes, et toute l&#x27;Europe sera enchantée de vous voir, comme jadis Europe fut enchantée du puissant Jupiter, quand il voulut faire en amour le rôle du noble animal.</p>
+<p>BÉNÉDICK.--Le taureau Jupiter, comte, avait un mugissement agréable; apparemment que quelque taureau étranger de cette espèce fit sa cour à la vache de votre père, et que de cette belle union il sortit un jeune veau qui vous ressemblait beaucoup, car vous avez précisément son mugissement.</p>
+<p>(Antonio rentre avec les dames masquées.)</p>
+<p>CLAUDIO.--Je suis votre débiteur.--Mais voici d&#x27;autres comptes à régler.--Quelle est la dame dont je dois prendre possession?</p>
+<p>ANTONIO.--La voici, et je vous la donne.</p>
+<p>CLAUDIO.--Eh bien! alors elle est à moi.--Ma belle, laissez-moi voir votre visage.</p>
+<p>LÉONATO.--Non, vous ne la verrez point que vous n&#x27;ayez accepté sa main en présence de ce religieux, et juré de l&#x27;épouser.</p>
+<p>CLAUDIO.--Donnez-moi votre main devant ce saint moine. Je suis votre époux, si vous voulez bien de moi.</p>
+<p>HÉRO, ôtant son masque.--Lorsque je vivais, je fus votre épouse; et lorsque vous m&#x27;aimiez, vous fûtes mon autre époux.</p>
+<p>CLAUDIO.--Une autre Héro!</p>
+<p>HÉRO.--Rien n&#x27;est plus vrai. Une Héro mourut déshonorée; mais je vis, et aussi sûr que je vis, je suis vierge.</p>
+<p>DON PÈDRE.--Quoi, l&#x27;ancienne Héro! Héro qui est morte!</p>
+<p>LÉONATO.--Elle mourut, seigneur, mais tant que vécut son déshonneur.</p>
+<p>LE MOINE.--Je puis dissiper tout votre étonnement. Lorsque la sainte cérémonie sera finie, je vous raconterai en détail la mort de la belle Héro: en attendant, familiarisez-vous avec votre surprise, et allons de ce pas à la chapelle.</p>
+<p>BÉNÉDICK.--Doucement, doucement, religieux.--Laquelle est Béatrice?</p>
+<p>BÉATRICE.--Je réponds à ce nom. Que désirez-vous?</p>
+<p>BÉNÉDICK.--Ne m&#x27;aimez-vous pas?</p>
+<p>BÉATRICE.--Moi! non, pas plus que de raison.</p>
+<p>BÉNÉDICK.--En ce cas, votre oncle, et le prince et Claudio ont été bien trompés: il m&#x27;ont juré que vous m&#x27;aimiez.</p>
+<p>BÉATRICE.--Et vous, est-ce que vous ne m&#x27;aimez pas?</p>
+<p>BÉNÉDICK.--En vérité, non; pas plus que de raison.</p>
+<p>BÉATRICE.--En ce cas, ma cousine, Marguerite et Ursule se sont bien trompées: car elles ont juré que vous m&#x27;aimiez.</p>
+<p>BÉNÉDICK.--Ils ont juré que vous étiez presque malade d&#x27;amour pour moi.</p>
+<p>BÉATRICE.--Elles ont juré que vous étiez presque mort d&#x27;amour pour moi.</p>
+<p>BÉNÉDICK.--Il ne s&#x27;agit pas de cela.--Ainsi, vous ne m&#x27;aimez donc pas?</p>
+<p>BÉATRICE.--Non vraiment; seulement je voudrais récompenser l&#x27;amitié.</p>
+<p>LÉONATO.--Allons, ma nièce; je suis sûr, moi, que vous aimez ce gentilhomme.</p>
+<p>CLAUDIO.--Et moi, je ferai serment qu&#x27;il est amoureux d&#x27;elle: car voici un écrit tracé de sa main, un sonnet imparfait sorti de son propre cerveau, et qui s&#x27;adresse à Béatrice.</p>
+<p>HÉRO.--Et en voici un autre, écrit de la main de ma cousine, que j&#x27;ai volé dans sa poche et qui renferme l&#x27;expression de sa tendresse pour Bénédick.</p>
+<p>BÉNÉDICK.--Miracle! voici nos mains qui déposent contre nos coeurs!--Allons, je veux bien de vous: mais, par cette lumière, je ne vous prends que par pitié.</p>
+<p>BÉATRICE.--Je ne veux pas vous refuser.--Mais, j&#x27;en atteste ce beau jour, je ne cède que vaincue par les importunités; et aussi pour vous sauver la vie: car on m&#x27;a dit que vous étiez en consomption.</p>
+<p>BÉNÉDICK.--Silence: je veux vous fermez la bouche.</p>
+<p>(Il lui donne un baiser.)</p>
+<p>DON PÈDRE.--Eh bien! comment te portes-tu, Bénédick, l&#x27;homme marié?</p>
+<p>BÉNÉDICK.--Je suis bien aise de vous le dire, prince: un collège entier de beaux esprits ne me ferait pas changer d&#x27;idées par ses railleries. Pensez-vous que je m&#x27;embarrasse beaucoup d&#x27;une satire ou d&#x27;une épigramme? Non; si un homme se laisse battre par des bons mots,[57] il n&#x27;aura rien de beau sur lui. Bref, puisque j&#x27;ai tentation de me marier, je ne fais plus aucun cas de tout ce que le monde voudra en dire: ainsi ne me raillez jamais de tout ce que j&#x27;ai pu dire contre le mariage, car l&#x27;homme est un être changeant, et c&#x27;est là ma conclusion.--Quant à vous, Claudio, je m&#x27;attendais à vous rosser: mais en considération de ce que vous avez bien l&#x27;air de devenir mon parent, vivez sans blessure; et aimez ma cousine.</p>
+<p>[Note 57:Brain, cerveau et esprit, saillie, bon mot.]</p>
+<p>CLAUDIO.--J&#x27;espérais que vous auriez refusé Béatrice; et que j&#x27;aurais pu vous faire finir sous le bâton votre existence solitaire, pour vous apprendre à être un homme à deux faces; ce que vous serez, sans contredit, si ma cousine ne veille pas sur vous de bien près.</p>
+<p>BÉNÉDICK.--Allons, allons, nous sommes amis.--Un tour de danse avant d&#x27;être mariés, afin que nous puissions alléger nos coeurs et les talons de nos femmes.</p>
+<p>LÉONATO.--La danse viendra après.</p>
+<p>BÉNÉDICK.--Nous commencerons par là, sur ma parole.--Allons, musique, jouez.--Prince, vous êtes mélancolique: prenez-moi une femme. Il n&#x27;est point de bâton plus vénérable que celui dont la pomme est garnie de corne.</p>
+<p>(Entre un messager.)</p>
+<p>LE MESSAGER.--Seigneur, votre frère don Juan a été pris dans sa fuite, et une escorte de gens armés l&#x27;a ramené à Messine.</p>
+<p>BÉNÉDICK.--Ne songez pas à lui jusqu&#x27;à demain: je vous donnerai l&#x27;idée d&#x27;une bonne punition pour lui.--Allons, flûtes, partez.</p>
+<p>(On danse, ensuite tous sortent.)</p>
+<h3 class="sub">Fin du cinquième et dernier acte.</h3>
+<p class="colophon">Texte du domaine public. Édition numérique BookClassics.</p>
+</body></html>

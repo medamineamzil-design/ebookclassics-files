@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jules César — William Shakespeare</title><style>
+:root{--paper:#fbf8f1;--ink:#1f1b16;--muted:#6f6352;--accent:#9a6b2f;--rule:#e4dccb}
+@media (prefers-color-scheme:dark){:root{--paper:#16140f;--ink:#ece6d8;--muted:#a79c88;--accent:#d8a95e;--rule:#2e2a22}}
+html{background:var(--paper)}
+body{font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Libertinus Serif",Georgia,serif;color:var(--ink);
+     background:var(--paper);line-height:1.65;font-size:1.12rem;max-width:36em;margin:0 auto;padding:2.5em 1.25em 5em}
+.titlepage{text-align:center;min-height:70vh;display:flex;flex-direction:column;justify-content:center;gap:.6em;
+           border-bottom:1px solid var(--rule);margin-bottom:2.5em;padding-bottom:2.5em}
+.titlepage img{max-width:260px;width:60%;margin:0 auto 1.5em;border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+h1{font-size:2.4em;line-height:1.15;font-weight:600;margin:0;letter-spacing:-.01em}
+.author{font-style:italic;font-size:1.25em;color:var(--accent);margin:0}
+.translator{font-size:.95em;color:var(--muted);margin:0}
+nav.toc{margin:0 0 3em}
+nav.toc h2{font-size:.85em;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:left;margin:0 0 .8em}
+nav.toc ol{list-style:none;padding:0;margin:0;columns:1}
+nav.toc li{margin:.25em 0}
+nav.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent}
+nav.toc a:hover{border-color:var(--accent)}
+h2.chapter{font-size:1.45em;font-weight:600;text-align:center;margin:3.5em 0 1.6em;line-height:1.3}
+h2.chapter::before{content:"";display:block;width:3em;height:2px;background:var(--accent);margin:0 auto 1.1em}
+p{margin:0;text-indent:1.5em;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+h2.chapter + p, .titlepage + p{text-indent:0}
+h2.chapter + p::first-letter{font-size:3.1em;float:left;line-height:.85;padding:.08em .08em 0 0;color:var(--accent);font-weight:600}
+.colophon{margin-top:5em;padding-top:1.5em;border-top:1px solid var(--rule);text-align:center;color:var(--muted);font-size:.85em;text-indent:0}
+h3.sub{font-size:1em;font-weight:600;font-variant:small-caps;letter-spacing:.04em;text-align:center;margin:2.2em 0 1em}
+h3.sub + p{text-indent:0}
+@media print{h2.chapter{break-before:page}}
+</style></head><body>
+<header class="titlepage">
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjI0MDAiIHZpZXdCb3g9IjAgMCAxNjAwIDI0MDAiPgo8cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSIyNDAwIiBmaWxsPSIjMmQxZTNlIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjMwMCIgZmlsbD0iI2U4YTg3YyIgb3BhY2l0eT0iLjkyIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMmQxZTNlIiBzdHJva2Utd2lkdGg9IjEyIiBvcGFjaXR5PSIuNSIvPgo8Y2lyY2xlIGN4PSIxMTIwIiBjeT0iNTYwIiByPSIxMjAiIGZpbGw9IiMyZDFlM2UiIG9wYWNpdHk9Ii4xOCIvPgo8cmVjdCB4PSIxNjAiIHk9IjkzMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIxMCIgZmlsbD0iI2U4YTg3YyIvPgo8dGV4dCB4PSIxNjAiIHk9IjExODAiIGZvbnQtc2l6ZT0iMTUwIiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmNmVkZTQiPkp1bGVzIEPDqXNhcjwvdGV4dD4KPHRleHQgeD0iMTYwIiB5PSIxNDE1IiBmb250LXNpemU9IjY4IiBmb250LXN0eWxlPSJpdGFsaWMiIGZvbnQtZmFtaWx5PSJMaWJlcnRpbnVzIFNlcmlmLCBHZW9yZ2lhLCBzZXJpZiIgZmlsbD0iI2U4YTg3YyI+V2lsbGlhbSBTaGFrZXNwZWFyZTwvdGV4dD4KPHRleHQgeD0iMTYwIiB5PSIyMjMwIiBmb250LXNpemU9IjQ0IiBsZXR0ZXItc3BhY2luZz0iMTQiIGZvbnQtZmFtaWx5PSJMaWJlcnRpbnVzIFNlcmlmLCBHZW9yZ2lhLCBzZXJpZiIgZmlsbD0iI2Y2ZWRlNCIgb3BhY2l0eT0iLjc1Ij5CT09LQ0xBU1NJQ1M8L3RleHQ+Cjwvc3ZnPg==" alt="">
+<h1>Jules César</h1>
+<p class="author">William Shakespeare</p>
+<p class="translator">Traduction de François Guizot</p>
+</header>
+<nav class="toc"><h2>Table des matières</h2><ol>
+<li><a href="#c1">Acte premier — Scène I</a></li>
+<li><a href="#c2">Scène II</a></li>
+<li><a href="#c3">Scène III</a></li>
+<li><a href="#c4">Scène I</a></li>
+<li><a href="#c5">Scène II</a></li>
+<li><a href="#c6">Scène III</a></li>
+<li><a href="#c7">Scène IV</a></li>
+<li><a href="#c8">Scène V</a></li>
+<li><a href="#c9">Scène I</a></li>
+<li><a href="#c10">Scène II</a></li>
+<li><a href="#c11">Scène III</a></li>
+<li><a href="#c12">Scène I</a></li>
+<li><a href="#c13">Scène II</a></li>
+<li><a href="#c14">Scène III</a></li>
+<li><a href="#c15">Scène I</a></li>
+<li><a href="#c16">Scène II</a></li>
+<li><a href="#c17">Scène III</a></li>
+<li><a href="#c18">Scène IV</a></li>
+<li><a href="#c19">Scène V</a></li>
+</ol></nav>
+<p>OEUVRES COMPLÈTES DE SHAKSPEARE</p>
+<p>TRADUCTION DE M. GUIZOT</p>
+<p>NOUVELLE ÉDITION ENTIÈREMENT REVUE AVEC UNE ÉTUDE SUR SHAKSPEARE DES NOTICES SUR CHAQUE PIÈCE ET DES NOTES</p>
+<p>Volume 2 Jules César. Cléopâtre.--Macbeth.--Les Méprises. Beaucoup de bruit pour rien.</p>
+<p>PARIS A LA LIBRAIRIE ACADÉMIQUE DIDIER ET Ce, LIBRAIRES-ÉDITEURS 35, QUAI DES AUGUSTINS 1864</p>
+<p>======================================================================</p>
+<h3 class="sub">Jules César — Tragédie</h3>
+<h3 class="sub">Notice sur Jules cesar</h3>
+<p>Parmi les tragédies de Shakspeare que l&#x27;opinion a placées au premier rang, Jules César est celle dont les commentateurs ont parlé le plus froidement. Le plus froid de tous, Johnson, se contente de dire: «Plusieurs passages de cette tragédie méritent d&#x27;être remarqués, et on y a généralement admiré la querelle et la réconciliation de Brutus et de Cassius; mais jamais en la lisant je ne me suis senti fortement agité, et en la comparant à quelques autres ouvrages de Shakspeare, il me semble qu&#x27;on la peut trouver assez froide et peu propre à émouvoir.»</p>
+<p>C&#x27;est adopter un principe de critique entièrement faux que de juger Shakspeare d&#x27;après lui-même, et de comparer les impressions qu&#x27;il a pu produire, dans un genre et dans un sujet donnés, avec celles qu&#x27;il produira dans un autre sujet et un autre genre, comme s&#x27;il ne possédait qu&#x27;un mérite spécial et singulier qu&#x27;il fût tenu de déployer dans chaque occasion, et qui restât le titre unique de sa gloire. Ce génie vaste et vrai veut être mesuré sur une échelle plus large; c&#x27;est à la nature, c&#x27;est au monde qu&#x27;il faut comparer Shakspeare: et, dans chaque cas particulier, c&#x27;est entre la portion du monde et de la nature qu&#x27;il a dessein de représenter et le tableau qu&#x27;il en fait, que se doit établir la comparaison. Ne demandez pas au peintre de Brutus les mêmes impressions, les mêmes effets qu&#x27;à celui du roi Lear ou de Roméo et Juliette; Shakspeare pénètre au fond de tous les sujets, et sait tirer de chacun les impressions qui en découlent naturellement, et les effets distincts et originaux qu&#x27;il doit produire.</p>
+<p>Qu&#x27;après cela, le spectacle de l&#x27;âme de Brutus soit, pour Johnson, moins touchant et moins dramatique que celui de telle ou telle passion, de telle ou telle situation de la vie, c&#x27;est là un résultat des inclinations personnelles du critique, et du tour qu&#x27;ont pris ses idées et ses sentiments; on n&#x27;y saurait trouver une règle générale, sur laquelle se doive fonder la comparaison entre des ouvrages d&#x27;un genre absolument différent. Il est des esprits formés de telle sorte que Corneille leur donnera plus d&#x27;émotions que Voltaire, et une mère se sentira plus troublée, plus agitée à Mérope qu&#x27;à Zaïre. L&#x27;esprit de Johnson, plus droit et plus ferme qu&#x27;élevé, arrivait assez bien à l&#x27;intelligence des intérêts et des passions qui agitent la moyenne région de la vie, mais il ne parvenait guère à ces hauteurs où vit sans effort et sans distraction une âme vraiment stoïque. Le temps de Johnson n&#x27;était pas d&#x27;ailleurs celui des grands dévouements; et bien que, même à cette époque, le climat politique de l&#x27;Angleterre préservât un peu sa littérature de cette molle influence qui avait énervé la nôtre, elle ne pouvait cependant échapper entièrement à cette disposition générale des esprits, à cette sorte de matérialisme moral, qui n&#x27;accordant, pour ainsi dire, à l&#x27;âme aucune autre vie que celle qu&#x27;elle reçoit du choc des objets extérieurs, ne supposait pas qu&#x27;on pût lui offrir d&#x27;autres objets d&#x27;intérêt que le pathétique proprement dit, les douleurs individuelles de la vie, les orages du coeur et les déchirements des passions. Cette disposition du XVIIIe siècle était si puissante qu&#x27;en transportant sur notre théâtre la mort de César, Voltaire, qui se glorifiait à juste titre d&#x27;y avoir fait réussir une tragédie sans amour, n&#x27;a pas cru cependant qu&#x27;un pareil spectacle pût se passer de l&#x27;intérêt pathétique qui résulte du combat douloureux des devoirs et des affections. Dans cette grande lutte des derniers élans d&#x27;une liberté mourante contre un despotisme naissant, il est allé chercher, pour lui donner la première place, un fait obscur, douteux, mais propre à lui fournir le genre d&#x27;émotions dont il avait besoin; et c&#x27;est de la situation, réelle ou prétendue, de Brutus placé entre son père et sa patrie, que Voltaire a fait le fond et le ressort de sa tragédie.</p>
+<p>Celle de Shakspeare repose tout entière sur le caractère de Brutus; on l&#x27;a même blâmé de n&#x27;avoir pas intitulé cet ouvrage Marcus Brutus plutôt que Jules César. Mais si Brutus est le héros de la pièce, César sa puissance, sa mort, en voilà le sujet. César seul occupe l&#x27;avant-scène; l&#x27;horreur de son pouvoir, le besoin de s&#x27;en délivrer remplissent toute la première moitié du drame; l&#x27;autre moitié est consacrée au souvenir et aux suites de sa mort. C&#x27;est, comme le dit Antoine, l&#x27;ombre de César «promenant sa vengeance;» et pour ne pas laisser méconnaître son empire, c&#x27;est encore cette ombre qui, aux plaines de Sardes et de Philippes, apparaît à Brutus comme son mauvais génie.</p>
+<p>Cependant à la mort de Brutus finira le tableau de cette grande catastrophe. Shakspeare n&#x27;a voulu nous intéresser à l&#x27;événement de sa pièce que par rapport à Brutus, de même qu&#x27;il ne nous a présenté Brutus que par rapport à cet événement; le fait qui fournit le sujet de la tragédie et le caractère qui l&#x27;accomplit, la mort de César et le caractère de Brutus, voilà l&#x27;union qui constitue l&#x27;oeuvre dramatique de Shakspeare, comme l&#x27;union de l&#x27;âme et du corps constitue la vie, éléments également nécessaires l&#x27;un et l&#x27;autre à l&#x27;existence de l&#x27;individu. Avant que se préparât la mort de César, la pièce n&#x27;a pas commencé; après la mort de Brutus, elle finit.</p>
+<p>C&#x27;est donc dans le caractère de Brutus, âme de sa pièce, que Shakspeare a déposé l&#x27;empreinte de son génie; d&#x27;autant plus admirable dans cette peinture, qu&#x27;en y demeurant fidèle à l&#x27;histoire, il en a su faire une oeuvre de création, et nous rendre le Brutus de Plutarque tout aussi vrai, tout aussi complet dans les scènes que le poëte lui a prêtées que dans celles qu&#x27;a fournies l&#x27;historien. Cet esprit rêveur, toujours occupé à s&#x27;interroger lui-même, ce trouble d&#x27;une conscience sévère aux premiers avertissements d&#x27;un devoir encore douteux, cette fermeté calme et sans incertitude dès que le devoir est certain, cette sensibilité profonde et presque douloureuse, toujours contenue dans la rigueur des plus austères principes, cette douceur d&#x27;âme qui ne disparaît pas un seul instant au milieu des plus cruels offices de la vertu, ce caractère de Brutus enfin, tel que l&#x27;idée nous en est à tous présente, marche vivant et toujours semblable à lui-même à travers les différentes scènes de la vie où nous le rencontrons, et où nous ne pouvons douter qu&#x27;il n&#x27;ait paru sous les traits que lui donne le poëte.</p>
+<p>Peut-être cette fidélité historique a-t-elle causé la froideur des critiques de Shakspeare sur la tragédie de Jules César. Ils n&#x27;y pouvaient rencontrer ces traits d&#x27;une originalité presque sauvage qui nous saisissent dans les ouvrages que Shakspeare a composés sur des sujets modernes, étrangers aux habitudes actuelles de notre vie, comme aux idées classiques sur lesquelles se sont formées les habitudes de notre esprit. Les moeurs de Hotspur sont certainement beaucoup plus originales pour nous que celles de Brutus: elles le sont davantage en elles-mêmes; la grandeur des caractères du moyen âge est fortement empreinte d&#x27;individualité; la grandeur des anciens s&#x27;élève régulièrement sur la base de certains principes généraux qui ne laissent guère, entre les individus, d&#x27;autre différence très-sensible que celle de la hauteur à laquelle ils parviennent. C&#x27;est ce qu&#x27;a senti Shakspeare; il n&#x27;a songé qu&#x27;à rehausser Brutus et non à le singulariser; placés dans une sphère inférieure, les autres personnages reprennent un peu la liberté de leur caractère individuel, affranchi de cette règle de perfection que le devoir impose à Brutus. Le poëte aussi semble se jouer autour d&#x27;eux avec moins de respect, et se permettre de leur imposer quelques-unes des formes qui lui appartiennent plus qu&#x27;à eux, Cassius comparant avec dédain la force corporelle de César à la sienne, et parcourant la nuit les rues de Rome, au fort de la tempête, pour assouvir cette fièvre de danger qui le dévore, ressemble beaucoup plus à un compagnon de Canut ou de Harold qu&#x27;à un Romain du temps de César; mais cette teinte barbare jette, sur les irrégularités du caractère de Cassius, un intérêt qui ne naîtrait peut-être pas aussi vif de la ressemblance historique. M. Schlegel, dont les jugements sur Shakspeare méritent toujours beaucoup de considération, me semble cependant tomber dans une légère erreur lorsqu&#x27;il remarque que «le poëte a indiqué avec finesse la supériorité que donnaient à Cassius une volonté plus forte et des vues plus justes sur les événements.» Je pense au contraire que l&#x27;art admirable de Shakspeare consiste, dans cette pièce, à conserver au principal personnage toute sa supériorité, même lorsqu&#x27;il se trompe, et à la faire ressortir par ce fait même qu&#x27;il se trompe et que néanmoins on lui défère, que la raison des autres cède avec confiance à l&#x27;erreur de Brutus. Brutus va jusqu&#x27;à se donner un tort; dans la scène de la querelle avec Cassius, vaincu un moment par une effroyable et secrète douleur, il oublie la modération qui lui convient; enfin Brutus a tort une fois, et c&#x27;est Cassius qui s&#x27;humilie, car en effet Brutus est demeuré plus grand que lui.</p>
+<p>Le caractère de César peut nous paraître un peu trop entaché de cette jactance commune à tous les temps barbares où la force individuelle, sans cesse appelée aux plus terribles luttes, ne s&#x27;y soutient que par le sentiment exalté de sa propre puissance, et même a besoin d&#x27;être secourue par l&#x27;idée qu&#x27;en conçoivent les autres. Il fallait montrer dans César la force qui soumet les Romains et l&#x27;orgueil qui les écrase; Shakspeare n&#x27;avait qu&#x27;un coin pour laisser entrevoir cet état de l&#x27;âme du héros; il a forcé les couleurs. Cependant son César, je l&#x27;avoue, ne me paraît pas plus faux que le nôtre; Shakspeare me semble même, au milieu de ses rodomontades, lui avoir mieux conservé ces formes d&#x27;égalité que le despote d&#x27;une république garde toujours envers ceux qu&#x27;il opprime.</p>
+<p>Le ton du Jules César est plus généralement soutenu que celui de la plupart des autres tragédies de Shakspeare. A peine, dans tout le rôle de Brutus, se trouve-t-il une image basse, et c&#x27;est au moment où il se laisse aller à la colère. Le soin visible qu&#x27;a mis le poëte à imiter le langage laconique que l&#x27;histoire attribue à son héros ne l&#x27;a que très-rarement conduit à l&#x27;affectation, si ce n&#x27;est dans le discours de Brutus au peuple, modèle de l&#x27;éloquence scolastique du temps de l&#x27;auteur. Le langage de Cassius, plus figuré parce qu&#x27;il est plus passionné, et d&#x27;une élévation moins simple que celui de Brutus, est cependant également exempt de trivialité. La harangue d&#x27;Antoine est un modèle de ruse et de la feinte simplicité d&#x27;un fourbe adroit qui veut gagner les esprits d&#x27;une multitude grossière et mobile. Voltaire blâme, au moins avec sévérité, Shakspeare d&#x27;avoir présenté sous une forme comique la scène des Lupercales, dont le fond, dit-il, «est si noble et intéressant.» Voltaire ne voit ici qu&#x27;une couronne demandée à un peuple libre qui la refuse; mais César se faisant, en présence du peuple, l&#x27;acteur d&#x27;une farce préparée pour lui, et désespéré des applaudissements qu&#x27;on donne à la manière dont il a joué son rôle, c&#x27;était là en effet, pour les bons esprits de Rome, quelque chose d&#x27;extrêmement comique et qui ne pouvait leur être présenté autrement.</p>
+<p>L&#x27;action de la pièce comprend depuis le triomphe de César, après la victoire remportée sur le jeune Pompée, jusqu&#x27;à la mort de Brutus, ce qui lui donne une durée d&#x27;environ trois ans et demi.</p>
+<p>On a en anglais une autre tragédie de Jules César composée par lord Sterline, connue du public, à ce qu&#x27;il paraît, quelques années avant que Shakspeare composât la sienne, et à laquelle Shakspeare pourrait bien avoir emprunté quelques idées. Cette tragédie finit à la mort de César, que l&#x27;auteur a mise en récit. Un docteur Richard Eedes, célèbre de son temps comme poëte tragique, avait fait en latin une pièce sur le même sujet, imprimée, dit-on, en 1582, mais qui n&#x27;a pas été retrouvée, non plus qu&#x27;une pièce anglaise intitulée The history of Cæsar and Pompey, antérieure à l&#x27;année 1579. On imprima à Londres, en 1607, une pièce intitulée The tragédie of Cæsar and Pompey, or Cæsar&#x27;s revenge. Cette pièce, qui comprend depuis la bataille de Pharsale jusqu&#x27;à celle de Philippes inclusivement, avait été représentée sur un théâtre particulier, par quelques étudiants d&#x27;Oxford; on suppose qu&#x27;elle fut imprimée à l&#x27;occasion de la représentation et du succès de celle de Shakspeare, que la chronologie de M. Malone rapporte à cette même année 1607.</p>
+<p>Le Jules César a été représenté, corrigé par Dryden et Davenant, sous le titre de Julius Cæsar, with the death of Brutus, imprimé à Londres en 1719.</p>
+<p>Le duc de Buckingham a aussi retravaillé cette même tragédie qu&#x27;il a séparée en deux parties, la première sous le titre de Julius Cæsar, avec des changements, un prologue et un choeur; la seconde sous le titre de Marcus Brutus, avec un prologue et deux choeurs; toutes deux imprimées en 1722.</p>
+<h3 class="sub">Jules César — Tragédie</h3>
+<h3 class="sub">Personnages — Jules César.</h3>
+<p>OCTAVE CÉSAR,      ) triumvirs MARC-ANTOINE,      ) ap. la mort M.EMILIUS LEPIDUS, ) de César.</p>
+<p>PUBLIUS,       ) POPILIUS LÉNA, ) sénateurs CICERON.       )</p>
+<p>BRUTUS,           ) CASSIUS,          ) CASCA,            ) TREBONIUS,        ) conjurés LIGARIUS,         ) contre DECIUS BRUTUS[1]  ) Jules César. METELLUS CIMBER,  ) CINNA.            )</p>
+<p>FLAVIUS    ) MARULLUS   ) tribuns du peuple.</p>
+<p>LUCILIUS         ) TITINIUS         ) MESSALA          ) amis de Brutus Le jeune CATON,  ) et de Cassius. VOLUMNIUS        )</p>
+<p>ARTEMIDORE, sophiste ou rhéteur de Guide.</p>
+<p>Un devin. CINNA, poète. Un autre Poète.</p>
+<p>VARRON,     ) CLITUS,     ) serviteurs de Brutus CLAUDIUS,   ) ou Romains attachés STRATON,    ) à lui. LUCIUS,     ) DARDANIUS,  )</p>
+<p>PINDARUS, esclave de Cassius.</p>
+<p>CALPHURNIA, femme de César. PORCIA, femme de Brutus. SÉNATEURS, CITOYENS, GARDES ET SUITE.</p>
+<p>La scène, pendant la plus grande partie de la pièce, est à Rome, ensuite à Sardes et près de Philippes.</p>
+<p>[Note 1: Ce conjuré s&#x27;appelait non pas Décius, mais Décimus Brutus surnommé Albinus. C&#x27;est de lui que Plutarque dit, dans la Vie de Brutus, qu&#x27;on s&#x27;ouvrit à lui de la conjuration, «non qu&#x27;il fût autrement homme à la main, ou vaillant de sa personne, mais parce qu&#x27;il pouvoit beaucoup à cause d&#x27;un grand nombre de serfs escrimans à oultrance qu&#x27;il nourrissoit pour donner au peuple le passe-temps de les voir combattre; joint aussi qu&#x27;il avoit crédit alentour de César.» Il dit ailleurs que César avait tant de confiance en ce Décimus Brutus qu&#x27;il l&#x27;avait nommé son second héritier. Ce fut lui qui, le jour de sa mort, alla le chercher et le décida à se rendre au sénat, malgré Calphurnia et les augures.]</p>
+<h2 class="chapter" id="c1">Acte premier — Scène I</h2>
+<p>Rome.--Une rue.</p>
+<p>Entrent FLAVIUS ET MARULLUS, et une multitude de citoyens des basses classes.</p>
+<p>FLAVIUS.--Hors d&#x27;ici, rentrez, fainéans; rentrez chez vous. Est-ce aujourd&#x27;hui fête? Quoi! ne savez-vous pas que vous autres artisans vous ne devez circuler dans les rues les jours ouvrables qu&#x27;avec les signes de votre profession?--Parle, quel est ton métier?</p>
+<p>PREMIER CITOYEN.--Moi, monsieur? charpentier.</p>
+<p>MARULLUS.--Où sont ton tablier de cuir et ta règle? Que fais-tu ici avec ton habit des jours de fêtes?--Et vous, s&#x27;il vous plaît, quel est votre métier?</p>
+<p>SECOND CITOYEN.--Pour dire vrai, monsieur, en fait d&#x27;ouvrage fin, je ne suis pas autre chose que comme qui dirait un savetier.</p>
+<p>MARULLUS.--Mais quel est ton métier? Réponds-moi tout de suite.</p>
+<p>SECOND CITOYEN.--Un métier, monsieur, que je crois pouvoir faire en sûreté de conscience: je remets en état les âmes[2] qui ne valent rien.</p>
+<p>[Note 2: Soals, semelles; dans l&#x27;ancienne édition, souls, âmes. Ces deux mots se prononcent de même, et c&#x27;est là-dessus que roule la plaisanterie du savetier; la correction faite dans les éditions subséquentes ne me paraît pas heureuse, car si le cordonnier disait que son métier est de raccommoder les mauvaises semelles; bad soals, il serait étrange que Marullus ne le comprît pas sur-le-champ. Le mot souls m&#x27;aurait donc paru plus convenable à laisser dans le texte. Quant à la traduction, il s&#x27;est trouvé, par un bonheur qui n&#x27;est pas commun lorsqu&#x27;il s&#x27;agit de rendre un calembour, que, dans l&#x27;argot du cordonnier, une partie de la botte s&#x27;appelle âme; ce qui a donné le moyen de rendre ce jeu de mots avec une fidélité qu&#x27;il n&#x27;est pas possible de promettre toujours.]</p>
+<p>MARULLUS.--Quel est ton métier, maraud, mauvais drôle, ton métier?</p>
+<p>SECOND CITOYEN.--Monsieur, je vous en prie, que je ne vous fasse pas ainsi sortir de votre caractère[3]. Cependant, si vous en sortiez par quelque bout, monsieur, je pourrais vous remettre en état.</p>
+<p>[Note 3: Be not out with me, yet if you be out.--To be out signifie également être de mauvaise humeur et avoir un vêtement déchiré.]</p>
+<p>MARULLUS.--Qu&#x27;entends-tu par là? Me remettre en état, insolent?</p>
+<p>SECOND CITOYEN.--Sans difficulté, monsieur, vous resaveter.</p>
+<p>MARULLUS.--Tu es donc savetier? L&#x27;es-tu?</p>
+<p>SECOND CITOYEN.--Bien vrai, monsieur, je n&#x27;ai pour vivre que mon alêne. Je n&#x27;entre pas, moi, dans les affaires de commerce, dans les affaires de femmes; je n&#x27;entre qu&#x27;avec mon alêne [4] Au fait, monsieur, je suis un chirurgien de vieux souliers: quand ils sont presque perdus, je les recouvre [5]; et on a vu bien des gens, je dis des meilleurs qui aient jamais marché sur peau de bête, faire leur chemin sur de l&#x27;ouvrage de ma façon[6].</p>
+<p>[Note 4: I meddle with no tradesman&#x27;s matters, nor women&#x27;s matters, but with awl, with all ou withal, jeu de mots qu&#x27;on n&#x27;a pu rendre, mais qu&#x27;on a tâché de suppléer, parce qu&#x27;il est dans le caractère du personnage.]</p>
+<p>[Note 5: When they are in great danger I recover them. Recover, recouvrir, recover, guérir, sauver, recouvrer.]</p>
+<p>[Note 6: Cette dernière phrase est omise dans la traduction qu&#x27;a faite Voltaire des trois premiers actes de Jules César. Voltaire ayant donné cette traduction comme exacte, on relèvera quelques-unes de ses nombreuses inexactitudes.]</p>
+<p>FLAVIUS.--Mais pourquoi n&#x27;es-tu pas dans ta boutique aujourd&#x27;hui? pourquoi mènes-tu tous ces gens-là courir les rues?</p>
+<p>SECOND CITOYEN.--Vraiment, monsieur, pour user leurs souliers, afin de me procurer plus d&#x27;ouvrage.--Mais sérieusement, monsieur, nous nous sommes mis en fête pour voir César, et nous réjouir de son triomphe.</p>
+<p>MARULLUS.--Vous réjouir! et de quoi? quelles conquêtes vient-il vous rapporter? Quels nouveaux tributaires le suivent à Rome pour orner, enchaînés, les roues de son char? Bûches, pierres que vous êtes, vous êtes pires que les choses insensibles! O coeurs durs, cruels enfants de Rome, n&#x27;avez-vous point connu Pompée? Bien des fois, bien souvent, n&#x27;êtes-vous pas montés sur les murailles et les créneaux, sur les fenêtres et les tours, jusque sur le haut des cheminées, vos enfants dans vos bras; et là, patiemment assis, n&#x27;attendiez-vous pas tout le long du jour pour voir le grand Pompée traverser les rues de Rome; et de si loin que vous voyiez paraître son char, le cri universel de vos acclamations ne faisait-il pas trembler le Tibre au plus profond de son lit, de l&#x27;écho de vos voix répété sous ses rivages caverneux? Et aujourd&#x27;hui vous prenez vos plus beaux vêtements, et vous choisissez ce jour pour un jour de fête! et aujourd&#x27;hui vous semez de fleurs le passage de l&#x27;homme qui vient à vous triomphant du sang de Pompée![7].--Allez-vous-en.--Courez à vos maisons, tombez à genoux, priez les dieux de suspendre l&#x27;inévitable fléau près d&#x27;éclater sur cette ingratitude.</p>
+<p>[Note 7: Après la victoire remportée en Espagne sur les enfants de Pompée. C&#x27;était la première fois que Rome voyait triompher d&#x27;une victoire remportée sur des Romains, et ce fut ce qui commença à indisposer fortement contre César. Shakspeare place ce triomphe le jour de cette fête des Lupercales, où Antoine offrit la couronne à César, ce qui n&#x27;eut lieu que plus d&#x27;un an après. Il fait de même des Lupercales la veille des ides de mars, quoique les Lupercales se célébrassent vers le milieu de février et que les ides fussent le 15 mars.</p>
+<p>Voltaire n&#x27;a pas bien compris ce passage, et a cru que César triomphait de la bataille de Pharsale.</p>
+<p>Quoi vous couvrez de fleurs le chemin d&#x27;un coupable, Du vainqueur de Pompée encor teint de son sang!]</p>
+<p>FLAVIUS.--Allez, allez, bons compatriotes; et pour expier votre faute, assemblez tous les pauvres gens de votre sorte, conduisez-les au bord du Tibre; et là, pleurez dans son canal tout ce que vous avez de larmes, jusqu&#x27;à ce que ses eaux, à l&#x27;endroit le plus enfoncé de son cours, caressent le point le plus élevé de son rivage. (Les citoyens sortent.) Voyez si cette matière grossière n&#x27;a pas été émue: ils disparaissent la langue enchaînée par le sentiment de leur tort.--Vous, descendez cette rue qui mène au Capitole; moi, je vais suivre ce chemin. Dépouillez les statues si vous les trouvez parées d&#x27;ornements de fête.</p>
+<p>MARULLUS.--Le pouvons-nous? Vous savez que c&#x27;est aujourd&#x27;hui la fête des Lupercales.</p>
+<p>FLAVIUS.--N&#x27;importe, ne souffrons pas qu&#x27;aucune statue porte les trophées de César[8]. Je vais parcourir ces quartiers et chasser le peuple des rues; faites-en de même partout où vous le trouverez attroupé. Ces plumes naissantes arrachées de l&#x27;aile de César ne le laisseront voler qu&#x27;à la hauteur ordinaire; autrement dans son essor, il s&#x27;élèverait trop haut pour être vu des hommes, et nous tiendrait tous dans un servile effroi.</p>
+<p>(Ils sortent.)</p>
+<p>[Note 8: Ce ne fut point à ce moment, mais après que la couronne eût été offerte à César, que Flavius et Marullus dépouillèrent ses statues non pas d&#x27;ornements triomphaux, mais des diadèmes dont quelques-unes avaient été couronnées.]</p>
+<h2 class="chapter" id="c2">Scène II</h2>
+<p>Toujours à Rome.--Une place publique.</p>
+<p>Entrent en procession et avec la musique CÉSAR, ANTOINE préparé pour la course; CALPHURNIA, PORCIA, DÉCIUS, CICÉRON, BRUTUS, CASSIUS, CASCA.--Ils sont suivis d&#x27;une grande multitude dans laquelle se trouve un devin.</p>
+<p>CÉSAR.--Calphurnia!</p>
+<p>CASCA.--Holà! silence! César parle[9].</p>
+<p>(La musique cesse.)</p>
+<p>[Note 9: Voltaire, paix, messieurs; le mot messieurs, qu&#x27;il attribue ici à César, n&#x27;a aucun équivalent dans l&#x27;original. Voltaire traduit aussi constamment le my lord par mylord, qui n&#x27;en est point la traduction. Mylord n&#x27;est qu&#x27;une application particulière que les Anglais font du mot de lord à la dignité de pair, et qui n&#x27;affecte en rien la signification générale de ce mot, consacré en anglais à exprimer toutes les sortes de dominations et de dignités, en sorte qu&#x27;à moins qu&#x27;il ne s&#x27;applique à des pairs d&#x27;Angleterre, il doit être traduit, comme tous les autres mots de la langue, par un équivalent français.]</p>
+<p>CÉSAR.--Calphurnia!</p>
+<p>CALPHURNIA.--Me voici, mon seigneur.</p>
+<p>CÉSAR.--Ayez soin de vous tenir sur le passage d&#x27;Antoine, quand il courra.--Antoine!</p>
+<p>ANTOINE.--César, mon seigneur.</p>
+<p>CÉSAR.--N&#x27;oubliez pas en courant, Antoine, de toucher Calphurnia; car nos anciens disent que les femmes infécondes, en se faisant toucher dans cette sainte course, secouent la malédiction qui les rendait stériles.</p>
+<p>ANTOINE.--Je m&#x27;en souviendrai. Quand César dit: Faites cela, cela est fait.</p>
+<p>CÉSAR.--Partez, et n&#x27;omettez aucune cérémonie.</p>
+<p>(Musique.)</p>
+<p>LE DEVIN.--César!</p>
+<p>CÉSAR.--Ha! qui m&#x27;appelle?</p>
+<p>CASCA, s&#x27;adressant à ceux qui l&#x27;environnent.--Commandez que tout bruit cesse. Encore une fois, silence!</p>
+<p>(La musique s&#x27;arrête.)</p>
+<p>CÉSAR.--Qui est-ce, dans la foule, qui m&#x27;appelle ainsi? J&#x27;entends une voix, plus perçante que tous les instruments de musique crier César! Parle, César se tourne pour entendre.</p>
+<p>LE DEVIN.--Prends garde aux ides de mars.</p>
+<p>CÉSAR.--Quel est cet homme?</p>
+<p>BRUTUS.--Un devin qui vous avertit de prendre garde aux ides de mars.</p>
+<p>CÉSAR.--Amenez-le devant moi, que je voie son visage.</p>
+<p>CASCA.--Mon ami, sors de la foule, regarde César.</p>
+<p>CÉSAR.--Qu&#x27;as-tu à me dire maintenant? Répète encore.</p>
+<p>LE DEVIN.--Prends garde aux ides de mars.</p>
+<p>CÉSAR.--C&#x27;est un visionnaire; laissons-le, passons.</p>
+<p>(Les musiciens exécutent un morceau.)</p>
+<p>(Tous sortent, excepté Brutus et Cassius.)</p>
+<p>CASSIUS.--Irez-vous voir l&#x27;ordre de la course?</p>
+<p>BRUTUS.--Moi? non.</p>
+<p>CASSIUS.--Je vous en prie, allez-y.</p>
+<p>BRUTUS.--Je ne suis point un homme de divertissements; je n&#x27;ai pas tout à fait la vivacité d&#x27;Antoine. Que je ne vous empêche pas, Cassius, de suivre votre intention; je vais vous laisser.</p>
+<p>CASSIUS.--Brutus, je vous observe depuis quelque temps: je ne reçois plus de vos yeux ces regards de douceur, ces signes d&#x27;affection que j&#x27;avais coutume d&#x27;en recevoir. Vous tenez envers votre ami, qui vous aime, une conduite trop froide et trop peu cordiale.</p>
+<p>BRUTUS.--Ne vous y trompez point, Cassius: si mon regard s&#x27;est voilé, ce trouble de mon maintien ne porte que sur moi-même. Je suis tourmenté depuis quelque temps de sentiments qui se contrarient, d&#x27;idées qui ne concernent que moi, et donnent peut-être quelque bizarrerie à mes manières: mais que mes bons amis, au nombre desquels je vous compte, Cassius, n&#x27;en soient donc pas affligés, et ne voient rien de plus dans cette négligence, sinon que ce pauvre Brutus, en guerre avec lui-même, oublie de donner aux autres des témoignages de son amitié[10].</p>
+<p>[Note 10: Traduction de Voltaire:</p>
+<p>Vous vous êtes trompé: quelques ennuis secrets, Des chagrins peu connus, ont changé mon visage; Ils me regardent seul et non pas mes amis. Non, n&#x27;imaginez point que Brutus vous néglige: Plaignez plutôt Brutus en guerre avec lui-même: J&#x27;ai l&#x27;air indifférent, mais mon coeur ne l&#x27;est pas.]</p>
+<p>CASSIUS.--Alors je me suis bien trompé, Brutus, sur le sujet de vos peines, et cela m&#x27;a fait ensevelir dans mon sein des pensées d&#x27;un haut prix, d&#x27;honorables méditations. Dites-moi, digne Brutus, pouvez-vous voir votre propre visage?</p>
+<p>BRUTUS.--Non, Cassius; car l&#x27;oeil ne peut se voir lui-même, si ce n&#x27;est par réflexion, au moyen de quelque autre objet.</p>
+<p>CASSIUS.--Cela est vrai, et l&#x27;on déplore beaucoup, Brutus, que vous n&#x27;ayez pas de miroirs qui puissent réfléchir à vos yeux votre mérite caché pour vous, qui vous fassent voir votre image. J&#x27;ai entendu plusieurs des citoyens les plus considérés de Rome (sauf l&#x27;immortel César) parler de Brutus; et, gémissant sous le joug qui opprime notre génération, ils souhaitaient que le noble Brutus fît usage de ses yeux.</p>
+<p>BRUTUS.--Dans quels périls prétendez-vous m&#x27;entraîner, Cassius, en me pressant de chercher en moi-même ce qui n&#x27;y est pas.</p>
+<p>CASSIUS.--Brutus, préparez-vous à m&#x27;écouter; et puisque vous savez que vous ne pouvez pas vous voir vous-même aussi bien que par la réflexion, moi, votre miroir, je vous découvrirai modestement les parties de vous-même que vous ne connaissez pas encore. Et ne vous méfiez pas de moi, excellent Brutus: si je suis un railleur de profession, si j&#x27;ai coutume de faire avec les serments ordinaires, étalage de mon amitié à tous ceux qui viennent me protester de la leur, si vous savez que je courtise les hommes et les étouffe de caresses pour les déchirer ensuite, ou que dans la chaleur des festins je fais des déclarations d&#x27;amitié à toute la salle, alors tenez-moi pour dangereux.</p>
+<p>(On entend des trompettes et une acclamation.)</p>
+<p>BRUTUS.--Qu&#x27;annonce cette acclamation? Je crains que ce peuple n&#x27;adopte César pour roi.</p>
+<p>CASSIUS.--Oui? le craignez-vous?--Je dois donc penser que vous ne voudriez pas qu&#x27;il le fût.</p>
+<p>BRUTUS.--Je ne le voudrais pas, Cassius; cependant je l&#x27;aime beaucoup.--Mais pourquoi me retenez-vous si longtemps? de quoi désirez-vous me faire part? Si c&#x27;est quelque chose qui tende au bien public, placez devant mes yeux l&#x27;honneur d&#x27;un côté, la mort de l&#x27;autre[11], et je les regarderai tous deux indifféremment; car je demande aux dieux de m&#x27;être aussi propices, qu&#x27;il est vrai que j&#x27;aime ce qui s&#x27;appelle honneur plus que je ne crains la mort.</p>
+<p>[Note 11: Set honour in one eye, and death i&#x27; the other.</p>
+<p>Voltaire a traduit:</p>
+<p>La gloire dans un oeil, et le trépas dans l&#x27;autre.</p>
+<p>Eye veut dire ici point de vue; il est continuellement employé en anglais dans ce sens.]</p>
+<p>CASSIUS.--Je vous connais cette vertu, Brutus, tout aussi bien que je connais le charme de vos manières. Eh bien! l&#x27;honneur est le sujet de ce que j&#x27;ai à vous exposer. Je ne puis dire ce que vous et d&#x27;autres hommes pensent de cette vie; mais pour moi, j&#x27;aimerais autant ne pas être que de vivre dans la crainte et le respect devant un être semblable à moi. Je suis né libre comme César; vous aussi; nous avons tous deux profité de même; tous deux nous pouvons aussi bien que lui soutenir le froid de l&#x27;hiver.--Dans un jour brumeux et orageux où le Tibre agité s&#x27;irritait contre ses rivages, César me dit: «Oses-tu, Cassius, t&#x27;élancer avec moi dans ce courant furieux, et nager jusque là-bas?»--À ce seul mot, vêtu comme j&#x27;étais, je plongeai dans le fleuve, en le sommant de me suivre. En effet, il me suivit: le torrent rugissait; nous le battions de nos muscles nerveux, rejetant ses eaux des deux côtés et coupant le courant d&#x27;un coeur animé par la dispute. Mais avant que nous eussions atteint le but marqué, César s&#x27;écrie: «Secours-moi, Cassius, ou je péris.» Moi, comme Énée notre grand ancêtre emporta sur son épaule le vieux Anchise hors des flammes de Troie, j&#x27;emportai hors des vagues du Tibre César épuisé: et cet homme aujourd&#x27;hui est devenu un dieu, et Cassius n&#x27;est qu&#x27;une misérable créature, et il faut que son corps se courbe si César daigne seulement le saluer d&#x27;un signe de tête négligent!--En Espagne, il eut la fièvre, et pendant l&#x27;accès je fus frappé de voir comme il tremblait. Rien n&#x27;est plus vrai, je vis ce dieu trembler: ses lèvres poltronnes avaient fui leurs couleurs; et ce même oeil, dont le regard seul impose au monde, avait perdu son éclat. Je l&#x27;entendis gémir, oui, en vérité; et cette langue qui commande aux Romains de l&#x27;écouter et de déposer ses paroles dans leurs annales[12], criait: «Hélas! Titinius, donne-moi à boire,» comme l&#x27;aurait fait une petite fille malade. Dieux que j&#x27;atteste, je me sens confondu qu&#x27;un homme si faible de tempérament prenne les devants sur ce monde majestueux, et seul remporte la palme.</p>
+<p>(Acclamation, fanfare.)</p>
+<p>[Note 12: Voltaire s&#x27;est ici tout à fait mépris sur le sens; il traduit ainsi:</p>
+<p>Et cette même voix qui commande à la terre, Cette terrible voix (remarque bien, Brutus, Remarque, et que ces mots soient écrits dans tes livres)]</p>
+<p>BRUTUS.--Encore une acclamation! Sans doute ces applaudissements annoncent de nouveaux honneurs qu&#x27;on accumule sur la tête de César.</p>
+<p>CASSIUS.--Eh quoi! mon cher, il foule comme un colosse cet étroit univers, et nous autres petits bonshommes nous circulons entre ses jambes énormes, cherchant de tous côtés où nous pourrons trouver à la fin d&#x27;ignominieux tombeaux. Les hommes, à de certains moments, sont maîtres de leur sort; et si notre condition est basse, la faute, cher Brutus, n&#x27;en est pas à nos étoiles; elle en est à nous-mêmes. Brutus et César.... Qu&#x27;y a-t-il donc dans ce César? Pourquoi ferait-on résonner ce nom plus que le vôtre? Écrivez-les ensemble, le vôtre est tout aussi beau; prononcez-les, il remplit tout aussi bien la bouche; pesez-les, son poids sera le même; employez-les pour une conjuration, Brutus évoquera aussi facilement un esprit que César. Maintenant dites-moi, au nom de tous les dieux ensemble, de quelle viande se nourrit donc ce César d&#x27;aujourd&#x27;hui pour être devenu si grand? Siècle, tu es déshonoré! Rome, tu as perdu la race des nobles courages! Quel siècle s&#x27;est écoulé depuis le grand déluge, qui ne se soit enorgueilli que d&#x27;un seul homme? A-t-on pu dire, jusqu&#x27;à ce jour, en parlant de Rome, que ses vastes murs n&#x27;enfermaient qu&#x27;un seul homme? C&#x27;est bien toujours Rome, en vérité, et la place n&#x27;y manque pas, puisqu&#x27;il n&#x27;y a qu&#x27;un seul homme[13]. Oh! vous et moi nous avons ouï dire à nos pères qu&#x27;il fut jadis un Brutus qui eût aussi aisément souffert dans Rome le trône du démon éternel que celui d&#x27;un roi.</p>
+<p>[Note 13:Now it is Rome indeed, and room enough When there is in it but one only man.</p>
+<p>Room, place, lieu, endroit, se prononce à peu près comme Rome. C&#x27;est tout au plus si on a pu dans la traduction donner un sens à cette phrase, qui, dans l&#x27;original, n&#x27;en a absolument que par le calembour.]</p>
+<p>BRUTUS.--Que vous m&#x27;aimiez, Cassius, je n&#x27;en doute point. Ce que vous voudriez que j&#x27;entreprisse, je crois le deviner: ce que j&#x27;ai pensé sur tout cela, et ce que je pense du temps où nous vivons, je le dirai plus tard. Quant à présent, je désire n&#x27;être pas pressé davantage; je vous le demande au nom de l&#x27;amitié. Ce que vous m&#x27;avez dit, je l&#x27;examinerai. Ce que vous avez à me dire encore, je l&#x27;écouterai avec patience, et je trouverai un moment convenable pour vous écouter et répondre sur de si hautes matières. Jusque-là, mon noble ami, méditez sur ceci: Brutus aimerait mieux être un villageois que de se compter pour un enfant de Rome aux dures conditions que ce temps doit probablement nous imposer.</p>
+<p>CASSIUS.--Je suis bien aise que le choc de mes faibles paroles ait du moins fait jaillir cette étincelle de l&#x27;âme de Brutus.</p>
+<p>(Rentrent César et son cortège.)</p>
+<p>BRUTUS.--Les jeux sont terminés; César revient.</p>
+<p>CASSIUS.--Quand ils passeront près de nous, retenez Casca par la manche; et il vous racontera de son ton bourru tout ce qui s&#x27;est aujourd&#x27;hui passé de remarquable.</p>
+<p>BRUTUS.--Oui, je le ferai. Mais regardez, Cassius: la teinte de la colère enflamme le front de César, et tout le reste a l&#x27;air d&#x27;une troupe de serviteurs réprimandés. Les joues de Calphurnia sont pâles; Cicéron a ce regard fureteur et flamboyant que nous lui avons vu au Capitole, lorsque dans nos débats il était contredit par quelques sénateurs.</p>
+<p>CASSIUS.--Casca nous dira de quoi il s&#x27;agit.</p>
+<p>CÉSAR.--Antoine!</p>
+<p>ANTOINE.--César.</p>
+<p>CÉSAR.--Que j&#x27;aie toujours autour de moi des hommes gras et à la face brillante, des gens qui dorment la nuit. Ce Cassius là-bas a un visage hâve et décharné; il pense trop. De tels hommes sont dangereux.</p>
+<p>ANTOINE.--Ne le crains pas, César; il n&#x27;est pas dangereux. C&#x27;est un noble Romain et bien intentionné.</p>
+<p>CÉSAR.--Je voudrais qu&#x27;il fût plus gras, mais je ne le crains pas. Cependant si quelque chose en moi pouvait être sujet à la crainte, je ne connaîtrais point d&#x27;homme que je voulusse éviter avec plus de soin que ce maigre Cassius. Il lit beaucoup, il est grand observateur et pénètre jusqu&#x27;au fond des actions des hommes. Il n&#x27;a point comme toi le goût des jeux, Antoine; on ne le voit point écouter de musique. Rarement il sourit, et il sourit alors de telle sorte qu&#x27;il a l&#x27;air de se moquer de lui-même, et de dédaigner son propre esprit parce qu&#x27;il a pu se laisser émouvoir à sourire de quelque chose. Les hommes de ce caractère n&#x27;ont jamais le coeur à l&#x27;aise tant qu&#x27;ils en voient un autre plus élevé qu&#x27;eux; et voilà ce qui les rend si dangereux. Je te dis ce qui est à craindre plutôt que ce que je crains, car je suis toujours César. Passe à ma droite, j&#x27;ai cette oreille dure, et dis-moi franchement ce que tu penses de lui.</p>
+<p>(César sort avec son cortège.)</p>
+<p>(Casca demeure en arrière.)</p>
+<p>CASCA.--Vous m&#x27;avez tiré par mon manteau. Voudriez-vous me parler?</p>
+<p>BRUTUS.--Oui, Casca. Dites-nous, que s&#x27;est-il donc passé aujourd&#x27;hui, que César ait l&#x27;air si triste?</p>
+<p>CASCA.--Quoi! vous étiez à sa suite. N&#x27;y étiez-vous pas?</p>
+<p>BRUTUS.--Je ne demanderais pas alors à Casca ce qui s&#x27;est passé.</p>
+<p>CASCA.--Eh bien! on lui a offert une couronne; et quand on la lui a offerte, il l&#x27;a repoussée ainsi du revers de la main. Alors tout le peuple a poussé de grands cris.</p>
+<p>BRUTUS.--Et la seconde acclamation, quelle en était la cause?</p>
+<p>CASCA.--Mais c&#x27;était encore pour cela.</p>
+<p>CASSIUS.--Il y a eu trois acclamations. Pourquoi la dernière?</p>
+<p>CASCA.--Pourquoi? pour cela encore.</p>
+<p>BRUTUS.--Est-ce que la couronne lui a été offerte trois fois?</p>
+<p>CASCA.--Eh! vraiment oui, et trois fois il l&#x27;a repoussée, mais chaque fois plus doucement que la précédente; et, à chacun de ses refus, mes honnêtes voisins se remettaient à crier.</p>
+<p>CASSIUS.--Qui lui offrait la couronne?</p>
+<p>CASCA.--Qui? Antoine.</p>
+<p>BRUTUS.--Dites-nous: de quelle manière l&#x27;a-t-il offerte, cher Casca?</p>
+<p>CASCA.--Que je sois pendu si je puis vous dire la manière. C&#x27;était une vraie momerie; je n&#x27;y faisais pas attention. J&#x27;ai vu Marc-Antoine lui présenter une couronne: ce n&#x27;était pourtant pas non plus tout à fait une couronne; c&#x27;était une espèce de diadème[14]; et comme je vous l&#x27;ai dit, il l&#x27;a repoussé une fois. Mais malgré tout cela, j&#x27;ai dans l&#x27;idée qu&#x27;il aurait bien voulu l&#x27;avoir.--Alors Antoine la lui offre encore,--et alors il la refuse encore,--mais j&#x27;ai toujours dans l&#x27;idée qu&#x27;il avait bien de la peine à en détacher ses doigts.--Et alors il la lui offre une troisième fois.--La troisième fois encore il la repousse; et à chacun de ses refus, la populace jetait des cris de joie: ils applaudissaient de leurs mains toutes tailladées; ils faisaient voler leurs bonnets de nuit trempés de sueur; et parce que César refusait la couronne, ils exhalaient en telles quantités leurs puantes haleines, que César en a presque été suffoqué. Il s&#x27;est évanoui, et il est tombé; et pour ma part je n&#x27;osais pas rire, de crainte, en ouvrant la bouche, de recevoir le mauvais air.</p>
+<p>[Note 14: L&#x27;original dit coronet, ce qui signifie, non pas, comme l&#x27;a dit Voltaire, les coronets des pairs d&#x27;Angleterre, mais quelque chose qui paraît à Casca un peu différent d&#x27;une couronne.]</p>
+<p>CASSIUS.--Mais un moment, je vous en prie. Quoi! César s&#x27;est évanoui?</p>
+<p>CASCA.--Il est tombé au milieu de la place du marché; il avait l&#x27;écume à la bouche et ne pouvait parler.</p>
+<p>BRUTUS.--Cela n&#x27;est point surprenant; il tombe du haut mal.</p>
+<p>CASSIUS.--Non, ce n&#x27;est point César; c&#x27;est vous, c&#x27;est moi et l&#x27;honnête Casca, qui tombons du haut mal.</p>
+<p>CASCA.--Je ne sais ce que vous entendez par là; mais il est certain que César est tombé. Si cette canaille en haillons ne l&#x27;a pas claqué et sifflé, selon que sa conduite leur plaisait ou déplaisait, comme ils ont coutume de faire aux acteurs sur le théâtre, je ne suis pas un honnête homme.</p>
+<p>BRUTUS.--Qu&#x27;a-t-il dit en revenant à lui?</p>
+<p>CASCA.--Eh! vraiment, avant de s&#x27;évanouir, quand il a vu ce troupeau de plébéiens se réjouir de ce qu&#x27;il refusait la couronne, il vous a ouvert son habit et leur a offert sa poitrine à percer. Pour peu que j&#x27;eusse été un de ces ouvriers, si je ne l&#x27;avais pas pris au mot, je veux aller en enfer avec les coquins. Et alors il est tombé. Lorsqu&#x27;il est revenu à lui, il a dit «que s&#x27;il avait fait ou dit quelque chose de déplacé, il priait leurs Excellences de l&#x27;attribuer à son infirmité.» Trois ou quatre créatures autour de moi se sont écriées: «Hélas! la bonne âme!» Elles lui ont pardonné de tout leur coeur, mais il n&#x27;y a pas à y faire grande attention. César eût égorgé leurs mères, qu&#x27;ils en auraient dit autant.</p>
+<p>BRUTUS.--Et c&#x27;est après cela qu&#x27;il est revenu si chagrin?</p>
+<p>CASCA.--Oui.</p>
+<p>CASSIUS.--Cicéron a-t-il dit quelque chose?</p>
+<p>CASCA.--Oui, il a parlé grec.</p>
+<p>CASSIUS.--Dans quel sens?</p>
+<p>CASCA.--Ma foi, si je peux vous le dire, que je ne vous regarde jamais en face[15]. Ceux qui l&#x27;ont compris souriaient l&#x27;un à l&#x27;autre en secouant la tête; mais pour ma part, je n&#x27;y entendais que du grec. Je puis vous dire encore d&#x27;autres nouvelles. Flavius et Marullus, pour avoir ôté les ornements qu&#x27;on avait mis aux statues de César, sont réduits au silence[16]. Adieu; il est bien d&#x27;autres choses absurdes, si je pouvais m&#x27;en souvenir.</p>
+<p>[Note 15: Traduction de Voltaire:</p>
+<p>«Ma foi, je ne sais, je ne pourrai plus guère vous regarder en face.» C&#x27;est un contre-sens.]</p>
+<p>[Note 16: Ce fut plus tard, et pour avoir, comme on l&#x27;a déjà dit, arraché les diadèmes placés sur quelques-unes des statues de César. Ils avaient aussi reconnu et fait arrêter quelques-uns des hommes qui, apostés par Antoine, avaient applaudi lorsqu&#x27;il avait présenté la couronne à César.]</p>
+<p>CASSIUS.--Voulez-vous souper ce soir avec moi, Casca?</p>
+<p>CASCA.--Non, je suis engagé.</p>
+<p>CASSIUS.--Demain, voulez-vous que nous dînions ensemble?</p>
+<p>CASCA.--Oui, si je suis vivant, si vous ne changez pas d&#x27;avis, et si votre dîner vaut la peine d&#x27;être mangé.</p>
+<p>CASSIUS.--Il suffit: je vous attendrai.</p>
+<p>CASCA.--Attendez-moi. Adieu tous deux.</p>
+<p>(Il sort.)</p>
+<p>BRUTUS.--Qu&#x27;il s&#x27;est abruti en prenant des années! Lorsque nous le voyions à l&#x27;école, c&#x27;était un esprit plein de vivacité.</p>
+<p>CASSIUS.--Et malgré les formes pesantes qu&#x27;il affecte, il est le même encore lorsqu&#x27;il s&#x27;agit d&#x27;exécuter quelque entreprise noble et hardie. Cette rudesse sert d&#x27;assaisonnement à son esprit; elle réveille le goût, et fait digérer ses paroles de meilleur appétit.</p>
+<p>BRUTUS.--Il est vrai. Pour le moment je vais vous laisser. Demain, si vous voulez que nous causions ensemble, j&#x27;irai vous trouver chez vous; ou, si vous l&#x27;aimez mieux, venez chez moi, je vous y attendrai.</p>
+<p>CASSIUS.--Volontiers, j&#x27;irai. D&#x27;ici là, songez à l&#x27;univers. (Brutus sort.) Bien, Brutus, tu es généreux; et, cependant, je le vois, le noble métal dont tu es formé peut être travaillé dans un sens contraire à celui où le porte sa disposition naturelle. Il est donc convenable que les nobles esprits se tiennent toujours dans la société de leurs semblables; car, quel est l&#x27;homme si ferme qu&#x27;on ne puisse le séduire? César ne peut me souffrir, mais il aime Brutus. Si j&#x27;étais Brutus aujourd&#x27;hui, et que Brutus fût Cassius, César n&#x27;aurait pas d&#x27;empire sur moi.--Je veux cette nuit jeter sur ses fenêtres des billets tracés en caractères différents, comme venant de divers citoyens et exprimant tous la haute opinion que Rome a de lui. J&#x27;y glisserai quelques mots obscurs sur l&#x27;ambition de César; et, après cela, que César se tienne ferme, car nous la renverserons, ou nous aurons de plus mauvais jours encore à passer[17].</p>
+<p>(Il sort.)</p>
+<p>[Note 17: Traduction de Voltaire:</p>
+<p>Son joug est trop affreux, songeons à le détruire, Ou songeons à quitter le jour que je respire.]</p>
+<h2 class="chapter" id="c3">Scène III</h2>
+<p>Toujours à Rome.--Une rue.--Tonnerre et éclairs.</p>
+<p>Entrent des deux côtés opposés CASCA, l&#x27;épée à la main, ET CICÉRON.</p>
+<p>CICÉRON.--Bonsoir, Casca. Avez-vous reconduit César chez lui? Pourquoi êtes-vous ainsi hors d&#x27;haleine? Pourquoi ces regards effrayés?</p>
+<p>CASCA.--N&#x27;êtes-vous pas ému quand toute la masse de la terre chancelle comme une machine mal assurée? O Cicéron! j&#x27;ai vu des tempêtes où les vents en courroux fendaient les chênes noueux; j&#x27;ai vu l&#x27;ambitieux Océan s&#x27;enfler, s&#x27;irriter, écumer, et s&#x27;élever jusqu&#x27;au sein des nues menaçantes: mais jamais avant cette nuit, jamais jusqu&#x27;à cette heure, je ne marchai à travers une tempête qui se répandît en pluie de feu: il faut qu&#x27;il y ait guerre civile dans le ciel, ou que le monde, trop insolent envers les dieux, les excite à lui envoyer la destruction.</p>
+<p>CICÉRON.--Quoi! avez-vous donc vu des choses encore plus merveilleuses?</p>
+<p>CASCA.--Un esclave de la plus basse classe, vous le connaissez de vue, a levé la main gauche en l&#x27;air, elle a flambé et brûlé comme vingt torches unies; et cependant sa main, insensible à la flamme, est restée intacte. Outre cela (et depuis mon épée n&#x27;est pas rentrée dans le fourreau), près du Capitole, j&#x27;ai rencontré un lion, ses yeux reluisants se sont fixés sur moi, puis il a passé d&#x27;un air farouche sans m&#x27;inquiéter; près de là s&#x27;étaient attroupées une centaine de femmes semblables à des spectres, tant la peur les avait défigurées: elles jurent qu&#x27;elles ont vu des hommes tout flamboyants errer par les rues; et hier, en plein midi, l&#x27;oiseau de la nuit s&#x27;est établi criant et gémissant sur la place du marché. Quand tous ces prodiges se rencontrent à la fois, que les hommes ne disent pas: «Ils portent en eux-mêmes leurs causes, ils sont naturels.» Pour moi, je pense que ce sont des présages menaçants pour la contrée dans laquelle ils ont eu lieu.</p>
+<p>CICÉRON.--En effet, ce temps semble disposé à d&#x27;étranges événements; mais les hommes interprètent les choses selon leur sens, très-différent peut-être de celui dans lequel se dirigent les choses-elles-mêmes. César vient-il demain au Capitole?</p>
+<p>CASCA.--Il y vient, car il a chargé Antoine de vous faire savoir qu&#x27;il y serait demain.</p>
+<p>CICÉRON--Sur cela, je vous souhaite une bonne nuit, Casca: sous ce ciel orageux, il ne fait pas bon se promener dehors.</p>
+<p>(Cicéron sort.)</p>
+<p>(Entre Cassius.)</p>
+<p>CASCA.--Adieu, Cicéron!</p>
+<p>CASSIUS.--Qui va là?</p>
+<p>CASCA.--Un Romain.</p>
+<p>CASSIUS.--C&#x27;est la voix de Casca.</p>
+<p>CASCA.--Votre oreille est bonne, Cassius, qu&#x27;est-ce que c&#x27;est qu&#x27;une nuit pareille?</p>
+<p>CASSIUS.--Une nuit agréable aux honnêtes gens.</p>
+<p>CASCA.--Qui a jamais vu les cieux menacer ainsi?</p>
+<p>CASSIUS.--Ceux qui ont vu la terre aussi pleine de crimes. Pour moi, je me suis promené le long des rues, m&#x27;exposant à cette nuit périlleuse; et mes vêtements ouverts comme vous le voyez, Casca, j&#x27;ai présenté ma poitrine nue à la pierre du tonnerre[18]; et lorsque le sillon bleuâtre entr&#x27;ouvrait le sein du firmament, je me plaçais dans la direction de son trait flamboyant.</p>
+<p>[Note 18: Thunder-stone. Shakspeare parle encore ailleurs de cette pierre du tonnerre.]</p>
+<p>CASCA.--Mais pourquoi tentiez-vous ainsi les cieux! C&#x27;est aux hommes à craindre et à trembler quand les dieux tout-puissants envoient en témoignages d&#x27;eux-mêmes ces hérauts formidables pour nous épouvanter ainsi.</p>
+<p>CASSIUS.--Vous ne savez pas comprendre, Casca; et ces étincelles de vie que devrait renfermer en lui-même un Romain vous manquent, ou vous demeurent inutiles. Vous pâlissez, vous paraissez interdit et saisi de crainte; vous vous abandonnez à l&#x27;étonnement en voyant cette étrange impatience des cieux: mais si vous vouliez remonter à la vraie cause et chercher pourquoi tous ces feux, tous ces spectres glissant dans l&#x27;ombre; pourquoi ces oiseaux, ces animaux qui s&#x27;écartent des lois de leur espèce; pourquoi ces vieillards imbéciles, ces enfants qui prophétisent; pourquoi, de leur règle ordinaire, de leur nature propre, de leur manière d&#x27;être préordonnée, toutes ces choses passent ainsi à une existence monstrueuse; alors vous arriveriez à concevoir que le ciel ne leur infuse cet esprit qui les agite que pour en faire des instruments de crainte et nous avertir d&#x27;une situation monstrueuse. Maintenant, Casca, je pourrais te nommer un homme semblable à cette effrayante nuit, un homme qui tonne, foudroie, ouvre les tombeaux et rugit comme le lion dans le Capitole, un homme qui de sa force personnelle n&#x27;est pas plus puissant que toi ou moi, et qui cependant est devenu prodigieux et terrible comme ces étranges bouleversements.</p>
+<p>CASCA.--C&#x27;est de César que vous parlez: n&#x27;est-ce pas de lui, Cassius?</p>
+<p>CASSIUS.--Qui que ce soit, qu&#x27;importe? les Romains d&#x27;aujourd&#x27;hui sont, pour la taille et la force, pareils à leurs ancêtres; mais malheur sur notre temps! les âmes de nos pères sont mortes, et nous ne sommes plus gouvernés que par l&#x27;esprit de nos mères; notre joug et notre patience à le souffrir ne font plus voir en nous que des efféminés.</p>
+<p>CASCA.--En effet, on prétend que les sénateurs se proposent d&#x27;établir demain César pour roi, et qu&#x27;il portera sa couronne sur mer, sur terre, partout, excepté ici, en Italie[19].</p>
+<p>[Note 19: Traduction de Voltaire:</p>
+<p>Oui, si l&#x27;on m&#x27;a dit vrai, demain les sénateurs Accordent à César ce titre affreux de roi; Et sur terre, et sur mer, il doit porter le sceptre, En tous lieux, hors de Rome, où déjà César règne.]</p>
+<p>CASSIUS.--Moi, je sais alors où je porterai ce poignard. Cassius affranchira Cassius de l&#x27;esclavage. C&#x27;est par là, grands dieux, que vous donnez de la force aux faibles; c&#x27;est par là, grands dieux, que vous déjouez les tyrans. Ni la tour de pierre, ni les murailles de bronze travaillé, ni le cachot privé d&#x27;air, ni les liens de fer massif, ne peuvent enchaîner la force de l&#x27;âme; mais la vie fatiguée de ces entraves terrestres ne manque jamais du pouvoir de s&#x27;en affranchir. Si je sais cela, que le monde entier le sache: cette part de tyrannie que je porte, je puis à mon gré la rejeter loin de moi.</p>
+<p>CASCA.--Je le puis de même, et tout captif porte dans sa main le pouvoir d&#x27;anéantir sa servitude.</p>
+<p>CASSIUS.--Alors, pourquoi donc César serait-il un tyran? Pauvre homme! Je sais bien, moi, qu&#x27;il ne serait pas un loup s&#x27;il ne voyait que les Romains sont des brebis; il ne serait pas un lion si les Romains n&#x27;étaient pas des biches. Qui veut élever en un instant une flamme puissante commence par l&#x27;allumer avec de faibles brins de paille. Quel amas d&#x27;ordures, de débris, de pourriture, doit être Rome pour fournir le vil aliment de la lumière qui se réfléchit sur un aussi vil objet que César! Mais, ô douleur! où m&#x27;as-tu conduit? Peut-être parlé-je ici à un esclave volontaire, et alors je sais que j&#x27;aurai à en répondre; mais je suis armé, et les dangers me sont indifférents.</p>
+<p>CASCA.--Vous parlez à Casca, à un homme qui n&#x27;est point un impudent faiseur de rapports. Voilà ma main, travaillez à redresser tous ces abus: Casca posera son pied aussi avant que celui qui ira le plus loin.</p>
+<p>CASSIUS.--C&#x27;est un traité conclu. Apprenez maintenant, Casca, que j&#x27;ai disposé un certain nombre des plus généreux Romains à entrer avec moi dans une entreprise honorable et dangereuse par son importance: dans ce moment, je le sais, ils m&#x27;attendent sous le portique de Pompée, car, dans cette effroyable nuit, il n&#x27;y a pas moyen de se tenir dehors ni de se promener dans les rues; et la face des éléments, comme l&#x27;oeuvre qui repose dans nos mains, est sanglante, enflammée et terrible.</p>
+<p>(Entre Cinna.)</p>
+<p>CASCA.--Mettons-nous un moment à l&#x27;écart; quelqu&#x27;un s&#x27;avance à grands pas.</p>
+<p>CASSIUS.--C&#x27;est Cinna, je le reconnais à sa démarche: c&#x27;est un ami.--Cinna, où courez-vous ainsi?</p>
+<p>CINNA.--Vous chercher.--Qui est-là? Métellus Cimber?</p>
+<p>CASSIUS.--Non, c&#x27;est Casca, un Romain qui fait corps avec nous pour nos entreprises. Ne suis-je pas attendu, Cinna?</p>
+<p>CINNA.--J&#x27;en suis bien aise. Quelle terrible nuit que celle-ci! Quelques-uns d&#x27;entre nous ont vu d&#x27;étranges phénomènes.</p>
+<p>CASSIUS.--Ne suis-je pas attendu? dites-le moi.</p>
+<p>CINNA.--Oui, vous l&#x27;êtes. O Cassius! si vous pouviez gagner à notre parti le noble Brutus!</p>
+<p>CASSIUS.--Vous serez content. Cher Cinna, prenez ce papier, ayez soin de le placer dans la chaire du préteur, de façon que Brutus puisse l&#x27;y trouver. Jetez celui-ci sur sa fenêtre; fixez ce dernier avec de la cire sur la statue de Brutus l&#x27;ancien. Cela fait, revenez au portique de Pompée, où vous nous trouverez. Décius Brutus et Trébonius y sont-ils?</p>
+<p>CINNA.--Tous y sont, excepté Métellus Cimber qui est allé vous chercher à votre demeure. Moi, je vais me hâter et distribuer ces papiers comme vous me l&#x27;avez prescrit.</p>
+<p>CASSIUS.--Après cela revenez au théâtre de Pompée. (Cinna sort.) Venez, Casca; vous et moi nous irons avant le jour voir Brutus à son logis: il est aux trois quarts à nous, et à la première rencontre l&#x27;homme tout entier nous appartiendra.</p>
+<p>CASCA.--Oh! Brutus est placé bien haut dans le coeur du peuple; et ce qui paraîtrait en nous un attentat, l&#x27;autorité de son nom, comme la plus puissante alchimie, le transformera en mérite et en vertu.</p>
+<p>CASSIUS.--Vous vous êtes formé une juste idée de lui, de son prix, et de l&#x27;extrême besoin que nous avons de lui.--Marchons, car il est plus de minuit, et avant le jour nous irons l&#x27;éveiller et nous assurer de lui.</p>
+<p>(Ils sortent.)</p>
+<h3 class="sub">Fin du premier Acte — Acte deuxième</h3>
+<h2 class="chapter" id="c4">Scène I</h2>
+<p>Toujours à Rome.--Les vergers de Brutus.</p>
+<p>Entre BRUTUS.</p>
+<p>BRUTUS.--Holà, Lucius, viens!--Je ne puis, par l&#x27;élévation des étoiles, juger si le jour est loin encore.--Lucius? Eh bien!--Je voudrais que mon défaut fût de dormir aussi profondément.--Allons, Lucius, allons! Éveille-toi, te dis-je! Viens donc, Lucius!</p>
+<p>(Entre Lucius.)</p>
+<p>LUCIUS.--M&#x27;avez-vous appelé, seigneur?</p>
+<p>BRUTUS.--Lucius, porte un flambeau dans ma bibliothèque; dès qu&#x27;il sera allumé, reviens m&#x27;avertir ici.</p>
+<p>(Il sort.)</p>
+<p>BRUTUS.--Sa mort est le seul moyen, et pour ma part, je ne me connais aucun motif personnel de le rejeter que la cause générale. Il voudrait être couronné: à quel point cela peut changer sa nature, voilà la question. C&#x27;est l&#x27;éclat du jour qui fait éclore le serpent, et nous contraint ainsi de marcher avec précaution. Le couronner! c&#x27;est précisément cela.... C&#x27;est, je ne saurais le nier, l&#x27;armer d&#x27;un dard avec lequel il pourra, à sa volonté, créer le danger. Le mal de la grandeur, c&#x27;est quand du pouvoir elle sépare la conscience[20]; et pour rendre justice à César, je n&#x27;ai point vu que ses passions aient jamais eu plus de pouvoir que sa raison: mais c&#x27;est une vérité d&#x27;expérience que, pour la jeune ambition[21], la modestie est une échelle vers laquelle celui qui s&#x27;élève tourne son visage; mais une fois parvenu à l&#x27;échelon le plus haut, il tourne le dos à l&#x27;échelle, porte son regard dans les nues, dédaignant les humbles degrés par lesquels il est monté. Ainsi pourrait faire César: de peur qu&#x27;il ne le puisse faire, prévenons-le, et puisque ce qu&#x27;il est ne suffit pas pour qualifier l&#x27;attaque, considérons-le sous cette face: ce qu&#x27;il est, en augmentant, le conduirait à tels et tels excès. Regardons-le comme l&#x27;oeuf d&#x27;un serpent qui une fois éclos, deviendrait malfaisant par la loi de son espèce, et tuons-le dans sa coquille.</p>
+<p>[Note 20: Remorse. On ne conçoit pas pourquoi Warburton a voulu que remorse signifiât ici miséricorde, pitié, sensibilité.]</p>
+<p>[Note 21: Traduction de Voltaire:</p>
+<p>...On sait assez quelle est l&#x27;ambition. L&#x27;échelle des grandeurs à ses yeux se présente, Elle y monte en cachant son front aux spectateurs.]</p>
+<p>(Rentre Lucius.)</p>
+<p>LUCIUS.--Le flambeau brûle dans votre cabinet, seigneur.--En cherchant une pierre à feu sur la fenêtre, j&#x27;ai trouvé ce billet ainsi scellé; je suis sûr qu&#x27;il n&#x27;y était pas quand je suis allé me coucher.</p>
+<p>BRUTUS.--Retourne à ton lit, il n&#x27;est pas jour encore. Mon garçon, n&#x27;avons-nous pas demain les ides de mars?</p>
+<p>LUCIUS.--Je ne sais pas, seigneur.</p>
+<p>(Il sort.)</p>
+<p>BRUTUS.--Regarde dans le calendrier, et reviens me le dire.</p>
+<p>LUCIUS.--J&#x27;y vais, seigneur.</p>
+<p>BRUTUS.--Ces exhalaisons qui sifflent à travers les airs jettent tant de clarté, que je puis lire à leur lumière.</p>
+<p>(Il ouvre le billet et le lit.)</p>
+<p>Brutus tu dors: réveille-toi, vois qui tu es. Faudra-t-il que Rome...? Parle, frappe, rétablis nos droits.--Brutus tu dors, réveille-toi.--J&#x27;ai trouvé souvent de pareilles instigations jetées sur mon passage: Faudra-t-il que Rome...? Voici ce que je dois suppléer: Faudra-t-il que Rome demeure tremblante sous un homme? Qui! Rome? Mes ancêtres chassèrent des rues de Rome ce Tarquin qui portait le nom de roi.--Parle, frappe, rétablis nos droits. Ainsi donc on me presse de parler et de frapper. O Rome! je t&#x27;en fais la promesse: s&#x27;il en résulte le rétablissement de tes droits, tu obtiendras de la main de Brutus tout ce que tu demandes.</p>
+<p>(Rentre Lucius.)</p>
+<p>LUCIUS.--Seigneur, mars a consumé quatorze de ses jours.</p>
+<p>BRUTUS.--Il suffit. (On frappe derrière le théâtre.) Va à la porte, quelqu&#x27;un frappe. (Lucius sort.) Depuis que Cassius a commencé à m&#x27;exciter contre César, je n&#x27;ai point dormi.--Entre la première pensée d&#x27;une entreprise terrible et son exécution, tout l&#x27;intervalle est comme une vision fantastique ou un rêve hideux. Le génie de l&#x27;homme et les instruments de mort tiennent alors conseil, et l&#x27;état de l&#x27;homme offre en petit celui d&#x27;un royaume où s&#x27;agitent tous les éléments de l&#x27;insurrection.</p>
+<p>(Rentre Lucius.)</p>
+<p>LUCIUS.--Seigneur, c&#x27;est votre frère Cassius qui est à la porte; il demande à vous voir.</p>
+<p>BRUTUS.--Est-il seul?</p>
+<p>LUCIUS.--Non, seigneur, il y a plusieurs personnes avec lui.</p>
+<p>BRUTUS.--Les connais-tu?</p>
+<p>LUCIUS.--Non, seigneur; leurs chapeaux sont enfoncés jusque sur leurs oreilles, et la moitié de leurs visages est ensevelie dans leurs manteaux, au point que je n&#x27;ai pu distinguer leurs traits de façon à les reconnaître[22].</p>
+<p>[Note 22: That by no means I may discover them, By any mark of favour.</p>
+<p>Favour signifie ici trait, maintien. Voltaire s&#x27;y est trompé et a traduit ainsi:</p>
+<p>Et nul à Lucius ne s&#x27;est fait reconnaître: Pas la moindre amitié.]</p>
+<p>BRUTUS.--Fais-les entrer. (Lucius sort.) Ce sont les conjurés. O conspiration! as-tu honte de montrer dans la nuit ton front redoutable, à l&#x27;heure où le mal est en pleine liberté? Où trouveras-tu donc dans le jour, une caverne assez sombre pour dissimuler ton monstrueux visage? Conspiration, n&#x27;en cherche point: qu&#x27;il se cache dans les sourires de l&#x27;affabilité; car si tu marches portant à découvert tes traits naturels, l&#x27;Érèbe même n&#x27;est pas assez obscur pour te dérober au soupçon.</p>
+<h2 class="chapter" id="c5">Scène II</h2>
+<p>Entrent CASSIUS, CASCA, DÉCIUS, CINNA, MÉTELLUS CIMBER ET TRÉBONIUS.</p>
+<p>CASSIUS.--Je crains que nous n&#x27;ayons trop indiscrètement troublé votre repos. Bonjour, Brutus: sommes-nous importuns?</p>
+<p>BRUTUS.--Je suis levé depuis une heure; j&#x27;ai passé toute la nuit sans dormir. Dites-moi si je connais ceux qui vous accompagnent.</p>
+<p>CASSIUS.--Oui, vous les connaissez tous; et pas un ici qui ne vous honore, pas un qui ne désire que vous ayez de vous-même l&#x27;opinion qu&#x27;a de vous tout noble Romain. Voici Trébonius.</p>
+<p>BRUTUS.--Il est le bienvenu.</p>
+<p>CASSIUS.--Celui-ci est Décius Brutus.</p>
+<p>BRUTUS.--Il est aussi le bienvenu.</p>
+<p>CASSIUS.--Celui-ci est Casca; celui-là Cinna; celui-là Métellus Cimber.</p>
+<p>BRUTUS.--Tous sont les bienvenus. Quels soucis vigilants sont venus s&#x27;interposer entre la nuit et vos paupières[23]?</p>
+<p>[Note 23: Voltaire s&#x27;est trompé. Il traduit:</p>
+<p>Quels projets importants Les mènent en ces lieux entre vous et la nuit?]</p>
+<p>CASSIUS.--Pourrai-je dire un mot?</p>
+<p>(Ils se parlent bas.)</p>
+<p>DÉCIUS.--C&#x27;est ici l&#x27;orient: n&#x27;est-ce pas là le jour qui commence à poindre de ce côté?</p>
+<p>CASCA.--Non.</p>
+<p>CINNA.--Oh! pardon, seigneur, c&#x27;est le jour; et ces lignes grisâtres qui prennent sur les nuages sont les messagers du jour.</p>
+<p>CASCA.--Vous allez m&#x27;avouer que vous vous trompez tous deux. C&#x27;est là, à l&#x27;endroit même où je pointe mon épée, que se lève le soleil, beaucoup plus vers le midi, en raison de la jeune saison de l&#x27;année. Dans deux mois environ, plus élevé vers le nord, il lancera de ce point ses premiers feux; et l&#x27;orient proprement dit est vers le Capitole, dans cette direction-là.</p>
+<p>BRUTUS.--Donnez-moi tous la main, l&#x27;un après l&#x27;autre.</p>
+<p>CASSIUS.--Et jurons d&#x27;accomplir notre résolution.</p>
+<p>BRUTUS.--Non, point de serment. Si notre figure d&#x27;hommes[24], la souffrance de nos âmes, les iniquités du temps sont des motifs impuissants, rompons sans délai: que chacun de nous retourne à son lit oisif; laissons la tyrannie à l&#x27;oeil hautain se promener à son gré, jusqu&#x27;à ce que chacun de nous tombe désigné par le sort. Mais si, comme j&#x27;en suis certain, ces motifs portent avec eux assez de feu pour enflammer les lâches, et pour donner une trempe valeureuse à l&#x27;esprit mollissant des femmes; alors, compatriotes, quel autre aiguillon nous faut-il que notre propre cause pour nous exciter au redressement de nos droits? Quel autre lien que ce secret gardé par des Romains qui ont dit le mot et ne biaiseront point? et quel autre serment que l&#x27;honnêteté engagée envers l&#x27;honnêteté à ce que cela soit ou que nous périssions. Laissons jurer les prêtres, les lâches, les hommes craintifs, ces vieillards qu&#x27;affaiblit un corps décomposé, et ces âmes patientes de qui l&#x27;injustice reçoit un accueil serein. Qu&#x27;elles jurent au profit de la cause injuste, les créatures dont on peut douter: mais nous, ne faisons pas à l&#x27;immuable sainteté de notre entreprise, ni à l&#x27;insurmontable constance de nos âmes, l&#x27;affront de penser que notre cause ou notre action eurent besoin d&#x27;un serment, tandis que chaque Romain doit savoir que chaque goutte du sang qu&#x27;il porte dans ses nobles veines s&#x27;entache d&#x27;une multiple bâtardise, du moment où il manque à la plus petite particule de la moindre promesse sortie de sa bouche.</p>
+<p>[Note 24: The face of men. Les commentateurs ont cherché à expliquer ce passage de différentes manières, dont aucune n&#x27;a paru aussi satisfaisante que celle-ci. Voltaire ne l&#x27;a pas traduit. En tout, ce discours de Brutus est l&#x27;un des morceaux les plus défigurés dans sa traduction.]</p>
+<p>CASSIUS.--Mais que pensez-vous de Cicéron? êtes-vous d&#x27;avis de le sonder? je crois qu&#x27;il entrerait fortement dans notre projet.</p>
+<p>CASCA.--Il ne faut pas le laisser de côté.</p>
+<p>CINNA.--Non, gardons-nous-en bien.</p>
+<p>MÉTELLUS CIMBER.--Oh! ayons pour nous Cicéron: ses cheveux d&#x27;argent nous gagneront la bonne opinion des hommes, et nous achèteront des voix qui célébreront notre action: on dira que sa sagesse a dirigé nos bras; il ne sera plus question de notre jeunesse, de notre témérité; tout sera enveloppé dans sa gravité.</p>
+<p>BRUTUS.--Oh! ne m&#x27;en parlez pas; ne nous ouvrons point à lui; jamais il n&#x27;entrera dans ce que d&#x27;autres auront commencé.</p>
+<p>CASSIUS.--Laissons-le donc à l&#x27;écart.</p>
+<p>CASCA.--En effet, il ne nous convient pas.</p>
+<p>DÉCIUS.--Ne frappera-t-on aucun autre que César?</p>
+<p>CASSIUS.--C&#x27;est une question bonne à élever, Décius. Moi, je pense qu&#x27;il n&#x27;est pas à propos que Marc-Antoine, si chéri de César, survive à César. Nous trouverons en lui un dangereux machinateur; et, vous le savez, ses ressources, s&#x27;il les met en oeuvre, pourraient s&#x27;étendre assez loin pour nous susciter à tous de grands embarras. Il faut, pour les prévenir, qu&#x27;Antoine et César tombent ensemble.</p>
+<p>BRUTUS.--Nos procédés[25] paraîtront bien sanguinaires, Caïus Cassius, si après avoir abattu la tête nous mettons ensuite les membres en pièces, comme le fait la colère en donnant la mort, et la haine après l&#x27;avoir donnée; car Antoine n&#x27;est qu&#x27;un membre de César. Soyons des sacrificateurs et non des bouchers, Cassius. C&#x27;est contre l&#x27;esprit de César que nous nous élevons tous: dans l&#x27;esprit de l&#x27;homme il n&#x27;y a point de sang. Oh! si nous pouvions atteindre à l&#x27;esprit de César sans déchirer César! Mais, hélas! pour cela il faut que le sang de César coule; mes bons amis, tuons-le hardiment, mais non avec rage: dépeçons la victime comme un mets propre aux dieux, ne la mettons pas en lambeaux comme une carcasse bonne à être jetée aux chiens. Que nos coeurs soient semblables à ces maîtres habiles qui commandent à leurs serviteurs un acte de violence, et semblent ensuite les en réprimander. Alors notre action semblera naître de la nécessité, et non de la haine; et lorsqu&#x27;elle paraîtra telle aux yeux du peuple, nous serons nommés des purificateurs, non des assassins. Quant à Marc-Antoine, ne songez point à lui: il ne peut rien de plus que ne pourra le bras de César, quand la tête de César sera tombée.</p>
+<p>[Note 25: En anglais, course. Voltaire l&#x27;a traduit par le mot course, et fait une note pour l&#x27;expliquer dans un sens tout à fait bizarre, ce qui était parfaitement inutile. Course peut se traduire littéralement par les mots procédé, marche, carrière, etc., et n&#x27;a rien de plus extraordinaire qu&#x27;aucun de ces mots et une foule d&#x27;autres que nous employons continuellement dans un sens figuré.]</p>
+<p>CASSIUS.--Cependant je le redoute, car cette tendresse qui s&#x27;est enracinée dans son coeur pour César....</p>
+<p>BRUTUS.--Hélas! bon Cassius, ne songez point à lui. S&#x27;il aime César, tout ce qu&#x27;il pourra faire n&#x27;agira que sur lui-même; il pourra se laisser aller au chagrin, et mourir pour César; et ce serait beaucoup pour lui, livré comme il l&#x27;est aux plaisirs, à la dissipation et aux sociétés nombreuses.</p>
+<p>TRÉBONIUS.--Il n&#x27;est point à craindre: qu&#x27;il ne meure point par nous, car nous le verrons vivre et rire ensuite de tout cela.</p>
+<p>(L&#x27;horloge sonne.)</p>
+<p>BRUTUS.--Silence, comptons les heures.</p>
+<p>CASSIUS.--L&#x27;horloge a frappé trois coups.</p>
+<p>TRÉBONIUS.--Il est temps de nous séparer.</p>
+<p>CASSIUS.--Mais il est encore incertain si César voudra ou non sortir aujourd&#x27;hui, car il est depuis peu devenu superstitieux, et s&#x27;éloigne tout à fait de l&#x27;opinion générale qu&#x27;il s&#x27;était autrefois formée sur les visions, les songes et les présages tirés des sacrifices[26]. Il se pourrait que ces prodiges si marquants, les terreurs inaccoutumées de cette nuit, et les sollicitations de ses augures le retinssent aujourd&#x27;hui loin du Capitole.</p>
+<p>[Note 26: Dans l&#x27;anglais, ceremonies. Voltaire a traduit:</p>
+<p>Et l&#x27;on dirait qu&#x27;il croit à la religion.]</p>
+<p>DÉCIUS.--Ne le craignez pas. Si telle est sa résolution, je me charge de la surmonter; car il aime à entendre répéter qu&#x27;on prend les licornes avec des arbres[27], les ours avec des miroirs, les éléphants dans des fosses, les lions avec des filets, et les hommes avec des flatteries: mais quand je lui dis que lui il hait les flatteurs, il me répond que cela est vrai; et c&#x27;est alors qu&#x27;il est le plus flatté. Laissez-moi faire; je sais tourner son humeur comme il me convient, et je le mènerai au Capitole.</p>
+<p>[Note 27: En se plaçant devant un arbre derrière lequel on se retire au moment où l&#x27;animal veut vous percer de sa corne, qui de cette manière s&#x27;enfonce dans l&#x27;arbre, et laisse la licorne à la merci du chasseur. Spencer, en plusieurs endroits, fait allusion à cette fable.]</p>
+<p>CASSIUS.--Nous irons tous chez lui le chercher.</p>
+<p>BRUTUS.--À la huitième heure. Est-ce là notre dernier mot?</p>
+<p>CINNA.--Que ce soit le dernier mot, et n&#x27;y manquons pas.</p>
+<p>MÉTELLUS CIMBER.--Caïus Ligarius veut du mal à César, qui l&#x27;a maltraité pour avoir bien parlé de Pompée. Je m&#x27;étonne qu&#x27;aucun de vous n&#x27;ait songé à lui.</p>
+<p>BRUTUS.--Allez donc, cher Métellus, allez le trouver. Il m&#x27;aime beaucoup, et je lui en ai donné sujet: envoyez-le-moi seulement, et j&#x27;en ferai ce que je voudrai.</p>
+<p>CASSIUS.--Le jour va nous atteindre. Nous allons vous quitter, Brutus; et vous, amis, dispersez-vous: mais souvenez-vous tous de ce que vous avez dit, et montrez-vous de vrais Romains.</p>
+<p>BRUTUS.--Mes bons amis[28], prenez un visage riant et serein. Que nos regards ne manifestent pas nos desseins; mais qu&#x27;ils portent le secret, comme nos acteurs romains, sans apparence d&#x27;abattement et d&#x27;un air imperturbable. Maintenant je vous souhaite à tous le bonjour.</p>
+<p>[Note 28: Good gentlemen. Voltaire traduit mes braves gentilshommes, et met en note qu&#x27;il a traduit fidèlement: il se trompe. Tout le monde sait aujourd&#x27;hui que gentleman ne peut presque dans aucun cas se rendre par notre mot gentilhomme. Dans son sens le plus ordinaire, gentleman n&#x27;a pas de correspondant en français.]</p>
+<p>(Tous sortent excepté Brutus.)</p>
+<p>BRUTUS appelle Lucius.--Garçon! Lucius! Il dort de toutes ses forces. À la bonne heure, goûte le bienfait de la douce rosée que le sommeil appesantit sur toi; tu n&#x27;as point de ces images, de ces fantômes que l&#x27;active inquiétude trace dans le cerveau des hommes. Aussi dors-tu bien profondément.</p>
+<p>(Entre Porcia.)</p>
+<p>PORCIA.--Brutus, mon seigneur!</p>
+<p>BRUTUS.--Porcia, quel est votre dessein? pourquoi vous lever à cette heure? Il n&#x27;est pas bon pour votre santé d&#x27;exposer ainsi votre complexion délicate au froid humide du matin.</p>
+<p>PORCIA.--Cela n&#x27;est pas bon non plus pour la vôtre. Vous vous êtes brusquement dérobé de mon lit, Brutus; et hier au soir, à souper, vous vous êtes levé tout à coup, vous avez commencé à vous promener les bras croisés, pensif, et poussant des soupirs; et quand je vous ai demandé ce qui vous occupait, vous avez fixé sur moi des regards troublés et mécontents. Je vous ai pressé de nouveau: alors vous grattant le front, vous avez frappé du pied avec impatience. Cependant j&#x27;ai insisté encore; mais d&#x27;un geste irrité de votre main, vous m&#x27;avez fait signe de vous laisser. Je vous ai laissé, dans la crainte d&#x27;irriter cette impatience qui déjà ne paraissait que trop allumée, espérant d&#x27;ailleurs que ce n&#x27;était là qu&#x27;un des accès de cette humeur qui de temps à autre trouve son moment près de tout homme quel qu&#x27;il soit[29]. Ce chagrin ne vous laisse ni manger, ni parler, ni dormir; et s&#x27;il agissait autant sur votre figure qu&#x27;il a déjà altéré votre manière d&#x27;être, je ne vous reconnaîtrais plus, Brutus. Mon cher époux, faites-moi connaître la cause de votre chagrin.</p>
+<p>[Note 29: Voltaire traduit:</p>
+<p>Et je pris ce moment pour un moment d&#x27;humeur Que souvent les maris font sentir à leur femmes.</p>
+<p>Et une note placée au bas de la page paraît destinée à faire remarquer comme ridicule le sens qui n&#x27;est pas dans l&#x27;original. Les deux suivants présentent un contre-sens:</p>
+<p>Non, je ne puis Brutus, ni vous laisser parler, Ni vous laisser manger, ni vous laisser dormir.]</p>
+<p>BRUTUS.--Je ne me porte pas bien; voilà tout.</p>
+<p>PORCIA.--Brutus est sage, et s&#x27;il ne se portait pas bien, il emploierait les moyens nécessaires pour recouvrer sa santé.</p>
+<p>BRUTUS.--Et c&#x27;est ce que je fais. Ma bonne Porcia, retournez à votre lit.</p>
+<p>PORCIA.--Brutus est malade! Est-ce donc un régime salutaire que de se promener à demi vêtu, et de respirer les humides exhalaisons du matin? Quoi! Brutus est malade, et il se dérobe au repos bienfaisant de son lit pour affronter les malignes influences de la nuit, et l&#x27;air impur et brumeux qui ne peut qu&#x27;aggraver son mal! Non, non, cher Brutus; c&#x27;est dans votre âme qu&#x27;est le mal dont vous souffrez; et en vertu de mes droits, de mon titre auprès de vous, je dois en être instruite; et à deux genoux je vous supplie, au nom de ma beauté autrefois vantée, au nom de tous vos serments d&#x27;amour, et de ce serment solennel qui a réuni nos personnes en une seule, de me découvrir, à moi cet autre vous-même, à moi votre moitié, ce qui pèse sur votre âme; dites-moi aussi quels étaient ceux qui sont venus vous trouver cette nuit? car il est entré ici six ou sept hommes qui cachaient leurs visages à l&#x27;obscurité même.</p>
+<p>BRUTUS.--Ne vous mettez pas ainsi à genoux, ma bonne Porcia.</p>
+<p>PORCIA.--Je n&#x27;en aurais pas besoin si vous étiez mon bon Brutus. Dites-moi, Brutus, est-il fait pour nous cette exception aux liens de mariage, que je ne participe point aux secrets qui vous appartiennent? ne suis-je une autre vous-même que jusqu&#x27;à un certain point, et avec de certaines réserves? pour vous tenir compagnie à table, faire la douceur de votre couche, et vous adresser quelquefois la parole? N&#x27;occupé-je donc que les avenues de votre affection? Ah! si je n&#x27;ai rien de plus, Porcia est la concubine[30] de Brutus, et non pas sa femme.</p>
+<p>[Note 30: Harlot. Voltaire, avec une étrange légèreté, fait ici une note pour nous apprendre que le mot de l&#x27;original est whore; le sens de ce mot serait plus grossier encore que celui de harlot.]</p>
+<p>BRUTUS.--Vous êtes ma femme fidèle et honorée, aussi précieuse pour moi que les gouttes rougeâtres qui arrivent à mon triste coeur.</p>
+<p>PORCIA.--Si cela était vrai, je saurais déjà ce secret. Je suis une femme, j&#x27;en conviens, mais une femme que le grand Brutus a prise pour épouse. Je suis une femme, j&#x27;en conviens, mais une femme de bon renom, la fille de Caton. Pensez-vous que je ne sois pas plus forte que mon sexe, fille d&#x27;un tel père et femme d&#x27;un tel époux? Dites-moi ce que vous méditez, je ne le révélerai point. J&#x27;ai voulu fortement éprouver ma constance; je me suis fait une blessure ici à la cuisse: capable de soutenir ceci avec patience, pourrais-je ne pas l&#x27;être de porter les secrets de mon mari?</p>
+<p>BRUTUS.--O vous, dieux, rendez-moi digne de cette noble épouse. (On frappe derrière le théâtre.) Écoutez, écoutez, on frappe.--Porcia, rentre un moment, et bientôt ton sein va partager tous les secrets de mon coeur; je te développerai tous mes engagements et tout ce qui est écrit sur mon triste front[31]. Retire-toi promptement. (Porcia sort.)--Lucius, qui est-ce qui frappe?</p>
+<p>[Note 31: All the charactery of my sad brows. Voltaire traduit:</p>
+<p>Va, mes sourcils froncés prennent un air plus doux.]</p>
+<p>LUCIUS.--Il y a là un homme malade qui voudrait vous entretenir.</p>
+<p>BRUTUS.--C&#x27;est Caïus Ligarius, dont Métellus nous a parlé. Lucius, éloigne-toi.--Caïus Ligarius, comment êtes-vous?</p>
+<p>LIGARIUS.--Recevez le bonjour que vous adresse une voix bien faible.</p>
+<p>BRUTUS.--Oh! quel temps avez-vous choisi, brave Caïus, pour garder votre bonnet de nuit? Que je voudrais que vous ne fussiez pas malade!</p>
+<p>LIGARIUS.--Je ne suis plus malade, si Brutus a en main quelque exploit digne d&#x27;être marqué du nom de l&#x27;honneur.</p>
+<p>BRUTUS.--J&#x27;aurais en main un exploit de ce genre, Ligarius, si pour l&#x27;entendre vous aviez l&#x27;oreille de la santé.</p>
+<p>LIGARIUS.--Par tous les dieux devant qui se prosternent les Romains, je chasse loin de moi mon infirmité. Âme de Rome, fruit généreux des reins d&#x27;un père respecté, comme un exorciste tu as conjuré l&#x27;esprit de maladie. Ordonne-moi d&#x27;aller en avant, et mes efforts tenteront des choses impossibles; que dis-je! ils en viendront à bout.--Que faut-il faire?</p>
+<p>BRUTUS.--Une oeuvre par laquelle des hommes malades retrouveront la santé.</p>
+<p>LIGARIUS.--Mais n&#x27;est-il pas quelques hommes en santé que nous devons rendre malades?</p>
+<p>BRUTUS.--C&#x27;est aussi ce qu&#x27;il faudra. Ce que c&#x27;est, cher Caïus, je te l&#x27;expliquerai en nous rendant ensemble au lieu où la chose doit se faire.</p>
+<p>LIGARIUS.--Que votre pied m&#x27;indique la route, et d&#x27;un coeur animé d&#x27;une flamme nouvelle, je vous suivrai sans savoir à quelle entreprise: il suffit que Brutus me guide.</p>
+<p>BRUTUS.--Suis-moi donc.</p>
+<p>(Ils sortent.)</p>
+<h2 class="chapter" id="c6">Scène III</h2>
+<p>Toujours à Rome.--Une pièce du palais de César.--Tonnerre et éclairs.</p>
+<p>Entre CÉSAR en robe de chambre.</p>
+<p>CÉSAR.--Ni le ciel ni la terre n&#x27;ont été en paix cette nuit. Trois fois Calphurnia dans son sommeil s&#x27;est écriée: «Au secours! oh! ils assassinent César!»--Y a-t-il là quelqu&#x27;un?</p>
+<p>(Entre un serviteur.)</p>
+<p>LE SERVITEUR.--Mon seigneur?</p>
+<p>CÉSAR.--Va, commande aux prêtres d&#x27;offrir à l&#x27;instant un sacrifice, et reviens m&#x27;apprendre quel succès ils en augurent.</p>
+<p>LE SERVITEUR.--J&#x27;y vais, mon seigneur.</p>
+<p>(Il sort.)</p>
+<p>(Entre Calphurnia.)</p>
+<p>CALPHURNIA.--Que prétendez-vous, César? Penseriez-vous à sortir? vous ne sortirez point aujourd&#x27;hui de chez vous.</p>
+<p>CÉSAR.--César sortira. Les choses qui m&#x27;ont menacé ne m&#x27;ont jamais regardé que de dos: dès qu&#x27;elles apercevront le visage de César, elles s&#x27;évanouiront.</p>
+<p>CALPHURNIA.--César, jamais je ne me suis arrêtée aux présages; mais aujourd&#x27;hui ils m&#x27;épouvantent. Sans parler de tout ce que nous avons entendu et vu, il y a de l&#x27;autre côté un homme qui raconte d&#x27;horribles phénomènes vus par les gardes. Une lionne a fait ses petits au milieu des rues; la bouche des sépulcres s&#x27;est ouverte et a laissé échapper leurs morts; de terribles guerriers de feu combattaient sur les nuages, en lignes, en escadrons, et avec toute la régularité de la guerre; il en pleuvait du sang sur le Capitole; le choc de la bataille retentissait dans les airs; on entendait les hennissements des coursiers et les gémissements des mourants, et des spectres ont poussé le long des rues des cris aigus et lamentables! O César, ces présages sont inouïs, et je les redoute.</p>
+<p>CÉSAR.--Que peut-on éviter de ce qui est décrété par les puissants dieux? César sortira, car ces présages s&#x27;adressent au monde entier autant qu&#x27;à César.</p>
+<p>CALPHURNIA.--Quand il meurt des mendiants, on ne voit pas des comètes; mais les cieux mêmes signalent par leurs feux la mort des princes.</p>
+<p>CÉSAR.--Les lâches meurent plusieurs fois avant leur mort, le brave ne goûte jamais la mort qu&#x27;une fois. De tous les prodiges dont j&#x27;aie encore ouï parler, le plus étrange pour moi, c&#x27;est que les hommes puissent sentir la crainte, voyant que la mort, fin nécessaire, arrivera à l&#x27;heure où elle doit arriver. (Rentre le serviteur.)--Que disent les augures?</p>
+<p>LE SERVITEUR.--Ils voudraient que vous ne sortissiez pas aujourd&#x27;hui: en retirant les entrailles d&#x27;une des victimes, ils n&#x27;ont pu retrouver le coeur de l&#x27;animal.</p>
+<p>CÉSAR.--Les dieux ont voulu faire honte à la lâcheté. César serait un animal sans coeur si la peur le retenait aujourd&#x27;hui dans sa maison: non, César n&#x27;y restera pas. Le danger sait très-bien que César est plus dangereux que lui: nous sommes deux lions mis bas le même jour, mais je suis l&#x27;aîné et le plus terrible, et César sortira.</p>
+<p>CALPHURNIA.--Hélas! mon seigneur, vous consumez toute votre sagesse en confiance. Ne sortez point aujourd&#x27;hui: donnez ma crainte et non la vôtre pour le motif qui vous retiendra ici. Nous enverrons Marc-Antoine au sénat: il dira que vous ne vous portez pas bien aujourd&#x27;hui; me voici à genoux devant vous, pour l&#x27;obtenir.</p>
+<p>CÉSAR.--Marc-Antoine dira que je ne me porte pas bien; et pour complaire à ton caprice, je resterai. (Entre Décius.) Voici Décius Brutus; il le leur dira.</p>
+<p>DÉCIUS.--Salut à César! Bonjour, digne César! Je viens vous chercher pour aller au sénat.</p>
+<p>CÉSAR.--Et vous êtes venu fort à propos, Décius, pour porter mes salutations aux sénateurs, et leur dire que je ne veux pas aller aujourd&#x27;hui au sénat. Que je ne le puis, serait faux; que je ne l&#x27;ose, plus faux encore[32]. Je ne veux pas y aller aujourd&#x27;hui: dites-le leur ainsi, Décius.</p>
+<p>[Note 32: Voltaire fait de cette phrase un aparté, ce qui n&#x27;est pas dans l&#x27;original.]</p>
+<p>CALPHURNIA.--Dites qu&#x27;il est malade.</p>
+<p>CÉSAR.--César leur fera-t-il porter un mensonge? Ai-je étendu si loin mon bras et mes conquêtes, pour craindre de dire la vérité à quelques barbes grises?--Décius, allez leur dire que César ne veut pas y aller.</p>
+<p>DÉCIUS.--Très-puissant César, faites-moi connaître quelques-unes de vos raisons, de peur qu&#x27;on ne me rie au nez quand je leur rendrai ce discours.</p>
+<p>CÉSAR.--La raison est dans ma volonté: je n&#x27;y veux pas aller; c&#x27;en est assez pour satisfaire le sénat. Mais, pour votre satisfaction particulière et parce que je vous aime, je vous dirai que c&#x27;est Calphurnia que voilà, ma femme, qui me retient ici. Elle a rêvé cette nuit qu&#x27;elle voyait ma statue, semblable à une fontaine, verser du sang tout pur par cent tuyaux. Plusieurs Romains vigoureux venaient en souriant baigner leurs mains dans ce sang. Elle prend tout cela pour des avis et des présages de maux imminents; et, à genoux, elle m&#x27;a conjuré de demeurer aujourd&#x27;hui chez moi.</p>
+<p>DÉCIUS.--Ce songe est interprété à contre-sens: c&#x27;est une vision heureuse et favorable. Votre statue jetant par un grand nombre de tuyaux du sang dans lequel tant de Romains se baignent en souriant signifie que l&#x27;illustre Rome va recevoir de vous un sang qui la ranimera, et que, parmi les hommes magnanimes, il y aura empressement à en être teint, à en obtenir quelque marque, quelque empreinte sacrée qui les fasse reconnaître[33]; et voilà ce que signifie le songe de Calphurnia.</p>
+<p>[Note 33: Voltaire paraît n&#x27;avoir pas remarqué le sens caché de ces paroles qui font évidemment allusion au projet de meurtre. Il traduit ainsi:</p>
+<p>Par vous Rome vivifiée Reçoit un nouveau sang et de nouveaux destins.]</p>
+<p>CÉSAR.--Vous en avez ainsi très-bien expliqué le sens.</p>
+<p>DÉCIUS.--Vous le verrez quand vous aurez entendu ce que j&#x27;ai à vous dire. Sachez maintenant que le sénat a résolu de décerner aujourd&#x27;hui une couronne au puissant César: si vous envoyez dire que vous ne voulez pas vous y rendre, les esprits peuvent changer. D&#x27;ailleurs il s&#x27;en pourrait faire quelques plaisanteries, et l&#x27;on traduirait ainsi votre message: «Que le sénat se sépare; ce sera pour une autre fois, quand la femme de César aura fait de meilleurs rêves.» Si César se cache, ne se diront-ils pas à l&#x27;oreille: «Voyez, César a peur?» Pardonnez-moi, César; c&#x27;est mon tendre, mon bien tendre zèle pour votre fortune, qui me commande de vous parler ainsi; et la raison est ici dans l&#x27;intérêt de mon affection.</p>
+<p>CÉSAR.--Que vos terreurs semblent absurdes maintenant, Calphurnia! J&#x27;ai honte d&#x27;y avoir cédé. Qu&#x27;on me donne ma robe; je veux aller au sénat. (Entrent Publius, Brutus, Ligarius, Métellus, Casca, Trébonius et Cinna.)--Et voyez, Publius vient ici me chercher.</p>
+<p>PUBLIUS.--Bonjour, César.</p>
+<p>CÉSAR.--Soyez le bienvenu, Publius. Quoi! Brutus aussi sorti de si bonne heure! Bonjour, Casca. Caïus Ligarius, jamais César ne fut autant votre ennemi que cette fièvre qui vous a ainsi maigri.--Quelle heure est-il?</p>
+<p>BRUTUS.--César, huit heures sont sonnées.</p>
+<p>CÉSAR.--Je vous rends grâce de votre complaisance et de vos soins. (Entre Antoine.) Voyez Antoine. Lui qui se divertit tant que la nuit dure, il n&#x27;en est pas moins levé. Bonjour, Antoine.</p>
+<p>ANTOINE.--Bonjour à l&#x27;illustre César.</p>
+<p>CÉSAR.--Dites-leur là-dedans de tout préparer.--Je mérite des reproches, pour me faire ainsi attendre.--Voilà maintenant Cinna qui arrive; voilà Métellus. Ha! Trébonius, j&#x27;ai besoin de causer une heure avec vous: souvenez-vous de venir ici aujourd&#x27;hui. Tenez-vous près de moi, de peur que je ne vous oublie.</p>
+<p>TRÉBONIUS.--Je le ferai, César. (A part.) Et je serai si près, que vos meilleurs amis souhaiteront que j&#x27;en eusse été plus loin.</p>
+<p>CÉSAR.--Entrez, mes bons amis, et prenez une coupe de vin avec moi[34]; puis nous nous en irons tout à l&#x27;heure ensemble comme des amis.</p>
+<p>[Note 34: Taste some wine with me. Voltaire a traduit: Buvons bouteille ensemble, et met en note: Toujours la plus grande fidélité dans la traduction.]</p>
+<p>BRUTUS.--Les apparences trompent souvent, ô César, et le coeur de Brutus se serre lorsqu&#x27;il y réfléchit.</p>
+<h2 class="chapter" id="c7">Scène IV</h2>
+<p>Toujours à Rome.--Une rue près du Capitole.</p>
+<p>ARTÉMIDORE entre, lisant un papier.</p>
+<p>ARTÉMIDORE.--«César, défie-toi de Brutus; prends garde à Cassius; n&#x27;approche point de Casca; aie l&#x27;oeil sur Cinna; ne te fie point à Trébonius; observe bien Métellus Cimber. Décius Brutus ne t&#x27;aime point; tu as offensé Caïus Ligarius. Tous ces hommes sont animés d&#x27;un même esprit contre César. Si tu n&#x27;es pas immortel, prends garde à toi, la sécurité laisse le champ libre à la conspiration. Que les puissants dieux te défendent!</p>
+<p>«Ton ami ARTÉMIDORE.»</p>
+<p>Je veux attendre ici que César passe; alors je lui présenterai ceci comme une supplique. Mon coeur déplore que la vertu ne puisse vivre hors de la portée des dents de l&#x27;envie. Si tu lis cette note, ô César, tu peux vivre; sinon, les destins conspirent avec les traîtres.</p>
+<h2 class="chapter" id="c8">Scène V</h2>
+<p>Toujours à Rome.--Une autre partie de la même rue, devant la maison de Brutus.</p>
+<p>Entrent PORCIA ET LUCIUS.</p>
+<p>PORCIA.--Je t&#x27;en prie, mon garçon, cours au sénat. Ne t&#x27;arrête point à me répondre, mais pars sur-le-champ. Pourquoi restes-tu là?</p>
+<p>LUCIUS.--Pour savoir quel est mon message, madame.</p>
+<p>PORCIA.--Je voudrais que tu fusses déjà arrivé au sénat, et revenu avant que j&#x27;eusse pu te dire ce que tu as à faire.--O constance! tiens-toi ferme à mes côtés; place une énorme montagne entre mon coeur et ma langue: j&#x27;ai l&#x27;âme d&#x27;un homme, mais je n&#x27;ai que la force d&#x27;une femme. Qu&#x27;il est difficile aux femmes de se soumettre à la prudence!--Quoi! te voilà encore!</p>
+<p>LUCIUS.--Que faut-il que je fasse, madame? Courir au Capitole, et pas autre chose? Puis revenir auprès de vous, et pas autre chose?</p>
+<p>PORCIA.--Oui, mon garçon, viens me redire si ton maître a l&#x27;air bien portant, car il est sorti malade; et remarque bien ce que fait César, quels sont les suppliants qui se pressent autour de lui.--Écoute, mon garçon!... quel bruit est-ce là?</p>
+<p>LUCIUS.--Je n&#x27;entends rien, madame.</p>
+<p>PORCIA.--Je t&#x27;en prie, écoute bien. J&#x27;ai entendu un bruit tumultueux, comme de gens qui se battent; le vent l&#x27;apporte du Capitole.</p>
+<p>LUCIUS.--En vérité, madame, je n&#x27;entends rien.</p>
+<p>(Entre le devin.)</p>
+<p>PORCIA.--Approche, mon ami: de quel côté viens-tu?</p>
+<p>LE DEVIN.--De ma maison, ma bonne dame.</p>
+<p>PORCIA.--Quelle heure est-il?</p>
+<p>LE DEVIN.--Environ la neuvième heure, madame.</p>
+<p>PORCIA.--César est-il déjà rendu au Capitole?</p>
+<p>LE DEVIN.--Madame, pas encore. Je vais prendre ma place pour le voir, quand il passera pour s&#x27;y rendre.</p>
+<p>PORCIA.--Tu as quelque supplique à présenter à César, n&#x27;est-ce pas?</p>
+<p>LE DEVIN.--J&#x27;en ai une, madame. S&#x27;il plaît à César de vouloir assez de bien à César pour m&#x27;écouter, je le conjurerai de se traiter lui-même en ami.</p>
+<p>PORCIA.--Quoi! as-tu appris qu&#x27;on voulût lui faire quelque mal?</p>
+<p>LE DEVIN.--Aucun dont j&#x27;aie la certitude, beaucoup dont je crains la possibilité. Bonjour, madame. La rue est étroite ici. Cette foule de sénateurs, de préteurs, de suppliants de la classe commune, qui se presse sur les pas de César, pourrait s&#x27;amasser au point qu&#x27;un homme faible comme moi en serait presque étouffé. Je veux gagner un endroit moins obstrué, et là parler au grand César au moment de son passage.</p>
+<p>(Il sort.)</p>
+<p>PORCIA.--Il faut que je rentre. Oh que je souffre! quelle faible chose que le coeur d&#x27;une femme! O Brutus, que les dieux te secondent dans ton entreprise!--Sûrement ce garçon m&#x27;aura entendue!--Brutus demande une faveur que César n&#x27;accordera pas.--Oh! je me sens défaillir. Cours, Lucius; va, parle de moi à mon mari. Dis-lui que je suis joyeuse; puis reviens ici et me rapporte ce qu&#x27;il t&#x27;aura dit.</p>
+<h3 class="sub">Fin du deuxième acte — Acte troisième</h3>
+<h2 class="chapter" id="c9">Scène I</h2>
+<p>Toujours à Rome.--Le Capitole.--Le sénat est assemblé.</p>
+<p>(Dans la rue qui conduit au Capitole, une foule de peuple dans laquelle se trouvent Artémidore et le devin.--Fanfares.)</p>
+<p>Entrent CÉSAR, BRUTUS, CASSIUS, CASCA, DÉCIUS, MÉTELLUS, TRÉBONIUS, CINNA, ANTOINE, LEPIDUS, POPILIUS, PUBLIUS et plusieurs autres.</p>
+<p>CÉSAR.--Les ides de mars sont arrivées.</p>
+<p>LE DEVIN.--Oui, César, mais non passées.</p>
+<p>ARTÉMIDORE.--Salut à César.--Lis ce billet.</p>
+<p>DÉCIUS.--Trébonius vous demande de parcourir à votre loisir son humble requête que voici.</p>
+<p>ARTÉMIDORE.--O César, lisez d&#x27;abord la mienne, car c&#x27;est la mienne dont l&#x27;objet touche César de plus près. Lisez-la, grand César.</p>
+<p>CÉSAR.--Ce qui n&#x27;intéresse que nous sera examiné le dernier.</p>
+<p>ARTÉMIDORE.--Ne différez pas, César; lisez la mienne à l&#x27;instant.</p>
+<p>CÉSAR.--Je crois vraiment que cet homme est fou.</p>
+<p>PUBLIUS.--Allons, l&#x27;ami, place.</p>
+<p>CASSIUS.--Quoi, vous présentez vos pétitions dans les rues! Venez au Capitole.</p>
+<p>POPILIUS, à part à Cassius.--Je souhaite que votre entreprise d&#x27;aujourd&#x27;hui puisse réussir.</p>
+<p>CASSIUS.--Quelle entreprise, Popilius?</p>
+<p>POPILIUS.--Portez-vous bien.</p>
+<p>(Il s&#x27;avance vers César.)</p>
+<p>BRUTUS.--Que vous a dit Popilius Léna?</p>
+<p>CASSIUS.--Qu&#x27;il souhaitait que notre entreprise d&#x27;aujourd&#x27;hui pût réussir. Je crains que nos projets ne soient découverts.</p>
+<p>BRUTUS.--Regardez quel sera son maintien en parlant à César. Observez-le.</p>
+<p>CASSIUS, bas à Casca.--Casca, soyez prompt; car nous craignons d&#x27;être prévenus. (À Brutus.) Brutus, que ferons-nous? Si la chose se sait, Cassius ou César n&#x27;en reviendra pas[35], car je me tuerai.</p>
+<p>[Note 35: Cassius or Cæsar never shall turn back. Voltaire traduit:</p>
+<p>Cassius ou César tournerait-il le dos?]</p>
+<p>BRUTUS.--Cassius, ne perdez pas courage; Popilius Léna ne parle point de notre dessein. Regardez, il sourit, et César ne change point de visage.</p>
+<p>CASSIUS.--Trébonius sait prendre son temps. Remarquez-vous, Brutus? il tire Marc-Antoine à l&#x27;écart.</p>
+<p>(Sortent Antoine et Trébonius. César et les sénateurs prennent leurs siéges.)</p>
+<p>DÉCIUS.--Où est Métellus Cimber? Qu&#x27;il s&#x27;avance et présente en ce moment sa requête à César.</p>
+<p>BRUTUS.--Il est prêt: il faut nous serrer autour de lui et le seconder.</p>
+<p>CINNA, bas.--Casca, c&#x27;est vous qui devez le premier lever le bras.</p>
+<p>CÉSAR.--Sommes-nous prêts? Quels sont les abus que César et son sénat doivent réformer?</p>
+<p>MÉTELLUS CIMBER.--Très-noble, très-grand et très-puissant César, Métellus apporte devant ton tribunal les humbles voeux de son coeur.</p>
+<p>(Il se met à genoux.)</p>
+<p>CÉSAR.--Je dois te prévenir, Cimber, que ces formes rampantes, ces hommages pleins de bassesse, peuvent enflammer le sang des hommes vulgaires, et changer en vains projets d&#x27;enfants les décrets arrêtés dans leurs premières résolutions. Mais ne te flatte point de cette idée que César porte en lui-même un sang si rebelle, qu&#x27;il se laisse relâcher de son énergie naturelle par ce qui charme les imbéciles, par de douces paroles, de basses courbettes, et de viles caresses d&#x27;épagneul. Ton frère est banni par un décret: si tu t&#x27;avises de venir pour lui t&#x27;incliner, prier, cajoler, je te chasserai de mon chemin comme un vilain roquet. Apprends que César ne fait point d&#x27;injustices, et qu&#x27;il ne se laisse point apaiser sans motifs[36].</p>
+<p>[Note 36: Voltaire traduit:</p>
+<p>Lorsque César fait tout, il a toujours raison.]</p>
+<p>MÉTELLUS CIMBER.--N&#x27;est-il point ici quelque voix plus recommandable que la mienne, qui, avec des accents plus doux à l&#x27;oreille du grand César, sollicite le rappel de mon frère exilé?</p>
+<p>BRUTUS.--Je baise ta main, mais non pas par flatterie, César, en te demandant que Publius Cimber obtienne à l&#x27;instant la liberté de revenir.</p>
+<p>CÉSAR.--Quoi, Brutus!</p>
+<p>CASSIUS.--Pardon, César; César, pardon: Cassius s&#x27;abaisse jusqu&#x27;à tes pieds pour obtenir de toi que Publius Cimber soit délivré de son exil.</p>
+<p>CÉSAR.--Vous pourriez me fléchir si je vous ressemblais; si je pouvais prier pour émouvoir, je pourrais être ému par des prières. Mais je suis immuable comme l&#x27;étoile du nord, qui seule dans le firmament demeure vraiment fixe et dans sa constante immobilité. Les cieux sont peints d&#x27;innombrables étincelles: elles sont toutes de feu, et chacune d&#x27;entre elles resplendit de clarté, mais il n&#x27;en est qu&#x27;une entre toutes qui garde constamment sa place. Ce monde est de même, bien peuplé d&#x27;hommes, et tous ces hommes sont de chair et de sang, tous doués d&#x27;intelligence; mais dans le nombre je n&#x27;en connais qu&#x27;un qui sache conserver son rang à l&#x27;abri de toute atteinte, inaccessible à tout mouvement: cet homme, c&#x27;est moi; je veux en donner une petite preuve même en ceci. C&#x27;est parce que je suis ferme que Cimber a dû être banni; et je demeure ferme en voulant qu&#x27;il reste banni.</p>
+<p>MÉTELLUS CIMBER.--O César!</p>
+<p>CÉSAR.--Loin de moi. Veux-tu ébranler l&#x27;Olympe?</p>
+<p>DÉCIUS.--Grand César!</p>
+<p>CÉSAR.--Brutus n&#x27;a-t-il pas fléchi le genou en vain?</p>
+<p>CASCA.--Mon bras parle pour moi!</p>
+<p>(Casca frappe César au cou. César lui saisit le bras: il est alors frappé par plusieurs autres conjurés, et enfin par Marcus Brutus.)</p>
+<p>CÉSAR.--Et tu, Brute[37]?--Alors tombe, César.</p>
+<p>(Il meurt. Les sénateurs et le peuple se retirent en tumulte.)</p>
+<p>[Note 37: Suétone rapporte seulement comme un ouï dire, auquel même il n&#x27;ajoute pas foi, que César dit en grec à Brutus:[Grec: Kai su teknon], et toi aussi mon fils. Les historiens ont depuis naturalisé ce mot en latin, et en ont fait le et tu, Brute, mot devenu si populaire, que Shakspeare n&#x27;imagina pas probablement qu&#x27;il fût permis de le faire passer dans une autre langue. Il est assez singulier que Voltaire n&#x27;ait pas fait mention de cette bizarrerie.]</p>
+<p>CINNA.--Liberté! délivrance! La tyrannie est morte. Courez, allez le proclamer, le crier dans toutes les rues.</p>
+<p>CASSIUS.--Quelques-uns de vous aux tribunes. Allez et criez: Liberté! délivrance! affranchissement!</p>
+<p>BRUTUS.--Peuple et sénateurs, ne vous effrayez point, ne fuyez point, restez à vos places: la dette de l&#x27;ambition est acquittée.</p>
+<p>CASCA.--Allez à la tribune, Brutus.</p>
+<p>DÉCIUS.--Et Cassius aussi.</p>
+<p>BRUTUS.--Où est Publius?</p>
+<p>CINNA.--Le voici, tout consterné de ce soulèvement.</p>
+<p>MÉTELLUS CIMBER.--Demeurons fermes tous ensemble, de crainte que quelques amis de César n&#x27;essayent....</p>
+<p>BRUTUS.--Ne parle point de demeurer.--Publius, point d&#x27;abattement; on n&#x27;a le dessein de vous faire aucun mal, ni à aucun autre Romain. Annoncez-le à tous, Publius.</p>
+<p>CASSIUS.--Et quittez-nous, Publius, de peur que ce peuple, en fondant sur nous, ne mette votre vieillesse en danger.</p>
+<p>BRUTUS.--Oui, éloignez-vous, et que nul homme n&#x27;ait à supporter les suites de cette action, que nous qui l&#x27;avons faite[38].</p>
+<p>[Note 38: Voltaire a traduit:</p>
+<p>Allez, qu&#x27;aucun Romain ne prenne ici l&#x27;audace De soutenir ce meurtre, et de parler pour nous; C&#x27;est un droit qui n&#x27;est dû qu&#x27;aux seuls vengeurs de Rome.]</p>
+<p>(Rentre Trébonius.)</p>
+<p>CASSIUS--Où est Antoine?</p>
+<p>TRÉBONIUS--Dans sa maison, où il s&#x27;est enfui d&#x27;épouvante. Hommes, femmes, enfants, les regards pleins de terreur, crient et courent comme si nous étions au jour du jugement.</p>
+<p>BRUTUS.--Destins, nous connaîtrons vos volontés. Que nous devons mourir, nous le savons. Ce n&#x27;est que de l&#x27;époque et du soin d&#x27;en retarder le jour que s&#x27;inquiétent les hommes.</p>
+<p>CASSIUS.--Véritablement, celui qui retranche vingt années de la vie, retranche vingt années de crainte de la mort.</p>
+<p>BRUTUS.--Cela convenu, la mort est un bienfait; et nous nous sommes montrés les amis de César en abrégeant le temps qu&#x27;il avait à la craindre. Baissez-vous, Romains, baissez-vous; baignons nos bras dans le sang de César, et que nos épées en soient enduites. Marchons ensuite jusqu&#x27;à la place publique, et brandissant nos glaives rougis au-dessus de nos têtes, crions tous: Paix! délivrance! liberté!</p>
+<p>CASSIUS.--Baissons-nous donc et qu&#x27;ils en soient trempés....--Combien de siècles futurs verront représenter la noble scène que nous donnons ici, dans des empires à naître et dans des langages encore inconnus!</p>
+<p>BRUTUS.--Combien de fois verra-t-on couler, par manière de jeu, le sang de ce César que voilà étendu sur la base de la statue de Pompée, de pair avec la poussière!</p>
+<p>CASSIUS.--Et chaque fois que cela se verra, on dira de notre association: Ce sont là les hommes qui donnèrent à leur pays la liberté.</p>
+<p>DÉCIUS.--Eh bien! sortirons-nous?</p>
+<p>CASSIUS.--Oui, marchons tous, Brutus nous conduira; et, attachés à ses pas, les coeurs les plus intrépides et les plus vertueux de Rome vont honorer sa marche.</p>
+<p>(Entre un serviteur.)</p>
+<p>BRUTUS.--Un moment, qui vient à nous? un ami d&#x27;Antoine.</p>
+<p>LE SERVITEUR.--Brutus, mon maître m&#x27;a recommandé de fléchir ainsi le genou; ainsi Marc-Antoine m&#x27;a enjoint de me jeter à vos pieds, et il m&#x27;a ordonné, lorsque je me serais prosterné, de vous parler en ces mots: «Brutus est noble, sage, vaillant et vertueux; César fut puissant, intrépide, illustre et capable d&#x27;affection. Dis que j&#x27;ai aimé Brutus et que je l&#x27;honore; dis que je craignais César, l&#x27;honorais, et l&#x27;aimais. Si Brutus veut permettre qu&#x27;Antoine vienne à lui sans avoir rien à craindre, s&#x27;il veut lui expliquer comment César a mérité d&#x27;être frappé de mort, Marc-Antoine n&#x27;aimera pas César mort autant que Brutus vivant! mais il suivra avec une entière fidélité la fortune et les intérêts du noble Brutus à travers les hasards de cette situation encore inusitée.» Ainsi parle Antoine mon maître.</p>
+<p>BRUTUS.--Ton maître est un sage et brave Romain; jamais je n&#x27;en jugeai d&#x27;une manière moins favorable. Dis-lui que, s&#x27;il lui plaît de venir en ce lieu, il sera satisfait, et que, sur mon honneur, il en sortira sans nul outrage.</p>
+<p>LE SERVITEUR.--Je vais le chercher à l&#x27;instant.</p>
+<p>(Il sort.)</p>
+<p>BRUTUS.--Je sais que nous l&#x27;aurons aisément pour ami.</p>
+<p>CASSIUS.--Je désire qu&#x27;il en soit ainsi: cependant j&#x27;ai en pensée qu&#x27;il faut le redouter beaucoup, et toujours mes pressentiments sinistres vont droit à l&#x27;événement.</p>
+<p>(Rentre Antoine.)</p>
+<p>BRUTUS.--Voilà Antoine qui s&#x27;avance. Soyez le bienvenu, Marc-Antoine.</p>
+<p>MARC-ANTOINE.--O puissant César, es-tu donc tombé si bas? tes conquêtes, toutes tes gloires, tes triomphes, les dépouilles que tu as remportées sont-ils donc resserrés dans ce court espace? Adieu!--Patriciens, j&#x27;ignore vos intentions: j&#x27;ignore quel autre que César doit voir couler son sang, quel autre est devenu trop puissant. Si c&#x27;est moi, il n&#x27;est point pour ma mort d&#x27;heure aussi convenable que l&#x27;heure de la mort de César, ni d&#x27;arme aussi digne de moitié que ces épées que vous tenez, illustrées par le plus noble sang de cet univers. Je vous en conjure, si vous me voulez du mal, maintenant, tandis que vos mains rougies fument encore de la vapeur du sang, satisfaites votre désir. J&#x27;aurais mille ans à vivre, que jamais je ne me trouverais si disposé à mourir. Aucun lieu, aucun genre de mort, ne me plairont jamais comme de mourir ici près de César et par vos coups, vous, l&#x27;élite des grandes âmes de cet âge.</p>
+<p>BRUTUS.--O Antoine, n&#x27;implorez point de nous votre mort. Nous devons maintenant paraître sanguinaires et cruels, ainsi que par l&#x27;état de nos mains et par l&#x27;action que nous venons d&#x27;exécuter nous le paraissons à vos yeux: mais vous ne voyez que nos mains et cette oeuvre sanglante qu&#x27;elles ont accomplie: nos coeurs, vous ne les voyez pas; ils sont pitoyables, et c&#x27;est la pitié pour l&#x27;injure publique faite à Rome (car la flamme chasse une autre flamme, et de même la pitié une autre pitié) qui a ainsi agi contre César. Mais pour vous, Marc-Antoine, nos épées n&#x27;ont qu&#x27;une pointe de plomb, et nos bras, nos coeurs, frères en énergique colère, vous reçoivent avec toute la bienveillance de l&#x27;affection, avec estime, avec égard.</p>
+<p>CASSIUS.--Votre voix aura autant d&#x27;influence que celle d&#x27;aucun autre dans la distribution des nouvelles dignités.</p>
+<p>BRUTUS.--Seulement, ayez patience jusqu&#x27;à ce que nous ayons calmé la multitude hors d&#x27;elle-même de frayeur; et alors nous vous expliquerons par quel motif, moi qui aimais César au moment même où je le frappai, je me suis conduit ainsi.</p>
+<p>ANTOINE.--Je ne doute point de votre sagesse.--Que chacun de vous me donne sa main sanglante. D&#x27;abord, Marcus Brutus, je veux secouer la vôtre. Puis je prends votre main, Caïus Cassius; maintenant la vôtre, Décius Brutus! et la vôtre, Métellus; et la vôtre, Cinna; et la vôtre, mon brave Casca; la vôtre enfin, bon Trébonius, nommé le dernier, mais non pas le moindre dans mon amitié.--Tous tous, patriciens.... Hélas! que dirai-je? Ma réputation repose maintenant sur un terrain si glissant, que vous devez concevoir de moi l&#x27;une de ces mauvaises pensées, ou que je suis un lâche, ou que je suis un flatteur.--Que je t&#x27;aimai, César, oh! c&#x27;est la vérité! Si ton âme nous contemple maintenant, ne te sera-ce pas une douleur plus sensible que ta mort, de voir ton Antoine faisant sa paix avec tes ennemis, et secouant leur main sanglante, ô grand homme! en présence de ton cadavre? Si j&#x27;avais autant d&#x27;yeux que tu as de blessures, et qu&#x27;ils versassent des larmes aussi abondantes que les ruisseaux qu&#x27;elles versent de ton sang, cela me siérait bien mieux que de m&#x27;unir par des conventions d&#x27;amitié avec tes ennemis.--Pardonne-moi, Jules.--Ici tu fus environné, cerf courageux; ici tu es tombé: et ici se sont arrêtés les chasseurs portant les marques de ton massacre, et baignés dans le fleuve cramoisi de ton sang! O monde, tu étais la forêt de ce cerf; et véritablement, ô monde, il était ton centre[39].--Maintenant te voilà étendu comme le cerf frappé par plusieurs princes.</p>
+<p>[Note 39:O world, thou wast the forest to this hart And this, indeed, O world, the heart of thee.</p>
+<p>Hart, cerf, et heart, coeur, se prononcent de la même manière: ainsi la phrase d&#x27;Antoine signifiera également, il était ton coeur ou ton centre, et il était ton cerf.]</p>
+<p>CASSIUS.--Marc-Antoine!...</p>
+<p>ANTOINE.--Pardonnez-moi, Cassius; les ennemis de César en diront autant. C&#x27;est donc de la part d&#x27;un ami une bien froide modération.</p>
+<p>CASSIUS.--Je ne vous blâme point de louer ainsi César. Mais quel traité prétendez-vous faire avec nous? Voulez-vous être inscrit au nombre de nos amis, ou bien poursuivrons-nous sans compter sur vous?</p>
+<p>ANTOINE.--Vous le savez, j&#x27;ai pris vos mains; mais il est vrai, j&#x27;ai été distrait de mon objet en baissant les yeux sur César. Je suis de vos amis à tous, et tous je vous aime, dans l&#x27;espérance que vous me donnerez des raisons qui me feront comprendre comment et en quoi César était dangereux.</p>
+<p>BRUTUS.--S&#x27;il en était autrement, ce serait un atroce spectacle. Les explications que nous avons à vous donner abondent tellement en considérations légitimes que fussiez-vous, vous Antoine, le fils de César, vous devriez en être satisfait.</p>
+<p>ANTOINE.--C&#x27;est tout ce que je désire; et de plus, je voudrais obtenir de vous qu&#x27;il me fût permis de présenter son corps sur la place du marché, et de parler à la tribune, lors de la cérémonie de ses funérailles, comme il convient à un ami.</p>
+<p>BRUTUS. Vous le pourrez, Marc-Antoine.</p>
+<p>CASSIUS. Brutus, un mot. (À part.) Vous ne savez pas ce que vous accordez là. Ne consentez point qu&#x27;Antoine parle à ses funérailles: savez-vous à quel point ce qu&#x27;il dira ne sera pas capable d&#x27;émouvoir le peuple?</p>
+<p>BRUTUS.--Permettez.... Je monterai le premier à la tribune: j&#x27;exposerai les motifs de la mort que nous avons donnée à César; tout ce qu&#x27;Antoine dira, je déclarerai qu&#x27;Antoine le dit de notre aveu, par notre permission, et que nous consentons qu&#x27;on accomplisse pour César tous les rites réguliers, toutes les cérémonies légales. Cela nous sera plutôt avantageux que contraire.</p>
+<p>CASSIUS.--Je ne sais ce qui en peut arriver: cela me déplaît.</p>
+<p>BRUTUS.--Approchez, Marc-Antoine; disposez du corps de César. Dans votre harangue funéraire, vous vous abstiendrez de nous blâmer; mais dites de César tout le bien qui vous viendra en pensée, et ajoutez que vous le faites par notre permission; autrement vous n&#x27;aurez aucune espèce de part dans ses funérailles.</p>
+<p>ANTOINE.--Soit; je n&#x27;en désire pas davantage.</p>
+<p>BRUTUS.--Préparez donc le corps et suivez-nous.</p>
+<p>(Tous sortent, excepté Antoine.)</p>
+<p>ANTOINE.--O pardonne-moi, masse de terre encore saignante, si je parais doux et pacifique avec ces bouchers! Tu es le débris du plus grand homme qui ait jamais vécu dans la durée des âges. Malheur à la main qui répandit ce sang précieux! Je le prédis en ce moment sur tes blessures, qui, comme autant de bouches muettes, ouvrent leurs lèvres rougies pour me demander la voix et les paroles de ma langue. La malédiction va fondre sur la tête des hommes; les fureurs intestines, la terrible guerre civile vont envahir toutes les parties de l&#x27;Italie. Le sang, la destruction seront des choses si communes, et les objets effroyables deviendront si familiers, que les mères ne feront plus que sourire à la vue de leurs enfants déchirés des mains de la guerre. Toute pitié sera étouffée par l&#x27;habitude des actions atroces; et conduisant avec elle Até, sortie brûlante de l&#x27;enfer, l&#x27;ombre de César promènera sa vengeance, criant d&#x27;une voix puissante dans l&#x27;intérieur de nos frontières: Carnage[40]! et alors seront lâchés les chiens de la guerre, jusqu&#x27;à ce qu&#x27;enfin l&#x27;odeur de cette action exécrable s&#x27;élève au-dessus de la terre avec les exhalaisons des cadavres pourris, gémissant après la sépulture. (Entre un serviteur.) Vous servez Octave César, n&#x27;est-il pas vrai?</p>
+<p>[Note 40: Havock! (dévastation, carnage) était en Angleterre, dans les anciens temps, le cri par lequel on ordonnait aux combattants de ne faire aucun quartier.]</p>
+<p>LE SERVITEUR.--Je le sers, Marc-Antoine.</p>
+<p>ANTOINE.--César lui a écrit de se rendre à Rome.</p>
+<p>LE SERVITEUR.--Il a reçu les lettres de César. Il est en chemin, et il m&#x27;a chargé de vous dire de vive voix.... (Il aperçoit le corps de César.) O César!</p>
+<p>ANTOINE.--Ton coeur se gonfle: retire-toi à l&#x27;écart et pleure. La douleur, je le sens, est contagieuse; et mes yeux, en voyant rouler dans les tiens ces marques de ton affliction, commencent à se remplir de larmes.--Ton maître vient-il?</p>
+<p>LE SERVITEUR.--Il couche cette nuit à sept lieues de Rome.</p>
+<p>ANTOINE.--Retourne sur tes pas en diligence, et dis-lui ce qui est arrivé. Il n&#x27;y a plus ici qu&#x27;une Rome en deuil, une Rome dangereuse, et non point une Rome où Octave puisse encore trouver la sûreté[41]. Hâte-toi de partir et de lui donner cet avis.--Non, demeure encore: tu ne partiras point que je n&#x27;aie porté ce corps sur la place du marché. Là, dans ma harangue, je pressentirai les dispositions du peuple sur le cruel succès de ces hommes de sang, et, selon l&#x27;événement, tu rendras compte au jeune Octave de l&#x27;état des choses.--Prêtez-moi la main.</p>
+<p>(Ils sortent, emportant le corps de César.)</p>
+<p>[Note 41: No Rome of safety. Shakspeare a eu probablement ici l&#x27;intention de renouveler le jeu de mots entre Rome et room, déjà employé dans la première scène, entre Cassius et Brutus.]</p>
+<h2 class="chapter" id="c10">Scène II</h2>
+<p>Toujours à Rome.--Le Forum.</p>
+<p>Entrent BRUTUS ET CASSIUS, et une foule de citoyens.</p>
+<p>LES CITOYENS.--Nous voulons qu&#x27;on nous rende raison de ce qui a été fait: rendez-nous-en raison.</p>
+<p>BRUTUS.--Suivez-moi donc et prêtez l&#x27;oreille à mon discours, amis.--Vous, Cassius, passez dans la rue voisine et partageons le peuple entre nous.--Ceux qui voudront m&#x27;entendre parler, qu&#x27;ils demeurent ici; que ceux qui veulent écouter Cassius aillent avec lui, et il va être rendu un compte public des motifs de la mort de César.</p>
+<p>PREMIER CITOYEN.--Je veux entendre parler Brutus.</p>
+<p>SECOND CITOYEN.--Je veux entendre Cassius, afin de comparer leurs raisons quand nous les aurons écoutés séparément l&#x27;un et l&#x27;autre.</p>
+<p>(Cassius sort avec une partie du peuple. Brutus monte dans le rostrum.)</p>
+<p>TROISIÈME CITOYEN.--Le noble Brutus est monté; silence.</p>
+<p>BRUTUS.--Écoutez patiemment jusqu&#x27;à la fin. Romains, compatriotes, amis, entendez-moi dans ma cause, et faites silence pour que vous puissiez entendre. Croyez-moi pour mon honneur, et ayez égard à mon honneur, afin que vous puissiez me croire. Jugez-moi dans votre sagesse, et faites usage de votre raison afin de pouvoir mieux juger. S&#x27;il est dans cette assemblée quelque ami sincère de César, je lui dis que l&#x27;amour de Brutus pour César n&#x27;était pas moindre que le sien. Si cet ami demande pourquoi Brutus s&#x27;est élevé contre César, voici ma réponse: ce n&#x27;est pas que j&#x27;aimasse moins César, mais j&#x27;aimais Rome davantage. Aimeriez-vous mieux voir César vivant et mourir tous esclaves, que de voir César mort, et de vivre tous libres? César m&#x27;aimait, je le pleure; il fut heureux, je m&#x27;en réjouis; il était vaillant, je l&#x27;honore: mais il fut ambitieux, et je l&#x27;ai tué. Il y a des larmes pour son amitié, du respect pour sa vaillance, de la joie pour sa fortune, et la mort pour son ambition.--Quel est ici l&#x27;homme assez abject pour vouloir être esclave? S&#x27;il en est un, qu&#x27;il parle, car pour lui je l&#x27;ai offensé. Quel est ici l&#x27;homme assez stupide pour ne vouloir pas être un Romain? S&#x27;il en est un, qu&#x27;il parle, car pour lui je l&#x27;ai offensé. Quel est ici l&#x27;homme assez vil pour ne pas aimer sa patrie? S&#x27;il en est un, qu&#x27;il parle, car pour lui je l&#x27;ai offensé.--Je m&#x27;arrête pour attendre une réponse.</p>
+<p>PLUSIEURS CITOYENS parlant à la fois.--Personne, Brutus, personne.</p>
+<p>BRUTUS.--Je n&#x27;ai donc offensé personne. Je n&#x27;ai pas fait plus contre César que vous n&#x27;avez droit de faire contre Brutus. Les motifs de sa mort sont enregistrés au Capitole, sans atténuer la gloire qu&#x27;il méritait, sans appuyer sur ses fautes, pour lesquelles il a subi la mort. (Entrent Antoine et plusieurs autres conduisant le corps de César.)--Voici son corps qui s&#x27;avance accompagné de signes de deuil par les soins de Marc-Antoine, qui, sans avoir participé à sa mort, recueillera les fruits de son trépas, une place dans la république. Et qui de vous n&#x27;en recueillera pas une? Voici ce que j&#x27;ai à vous dire en vous quittant: Ainsi que j&#x27;ai tué mon meilleur ami pour le bien de Rome, de même je garde ce poignard pour moi dès que ma patrie jugera ma mort nécessaire.</p>
+<p>LES CITOYENS.--Vivez, Brutus, vivez, vivez!</p>
+<p>PREMIER CITOYEN.--Reconduisons-le en triomphe jusque dans sa maison.</p>
+<p>SECOND CITOYEN.--Élevons-lui une statue parmi ses ancêtres.</p>
+<p>TROISIÈME CITOYEN.--Qu&#x27;il soit fait César.</p>
+<p>QUATRIÈME CITOYEN.--Les meilleures qualités de César seront couronnées dans Brutus.</p>
+<p>PREMIER CITOYEN.--Il faut le conduire à sa maison avec de bruyantes acclamations.</p>
+<p>BRUTUS.--Mes concitoyens!</p>
+<p>SECOND CITOYEN.--Paix, silence; Brutus parle.</p>
+<p>PREMIER CITOYEN.--Holà, silence.</p>
+<p>BRUTUS.--Bons concitoyens, laissez-moi me retirer seul, et, pour l&#x27;amour de moi, demeurez ici avec Antoine. Accueillez le corps de César, et accueillez aussi sa harangue à la gloire de César.--C&#x27;est notre permission qui autorise Marc-Antoine à la faire. Je vous conjure, que personne ne sorte d&#x27;ici que moi seul, jusqu&#x27;à ce qu&#x27;Antoine ait parlé.</p>
+<p>(Il sort.)</p>
+<p>PREMIER CITOYEN.--Holà, restez; écoutons Marc-Antoine.</p>
+<p>TROISIÈME CITOYEN.--Qu&#x27;il monte dans la tribune, nous l&#x27;écouterons. Noble Antoine, montez.</p>
+<p>ANTOINE.--Je suis reconnaissant de ce que vous m&#x27;accordez pour l&#x27;amour de Brutus.</p>
+<p>QUATRIÈME CITOYEN.--Que dit-il de Brutus?</p>
+<p>TROISIÈME CITOYEN.--Il dit qu&#x27;il est reconnaissant envers nous tous de ce que nous lui accordons pour l&#x27;amour de Brutus.</p>
+<p>QUATRIÈME CITOYEN.--Il ferait bien de ne pas parler mal de Brutus.</p>
+<p>PREMIER CITOYEN.--Ce César était un tyran.</p>
+<p>TROISIÈME CITOYEN.--Oui, cela est certain: nous sommes bien heureux que Rome en soit délivrée.</p>
+<p>SECOND CITOYEN.--Paix: écoutons ce qu&#x27;Antoine pourra dire.</p>
+<p>ANTOINE.--Généreux Romains....</p>
+<p>LES CITOYENS.--Silence! holà! écoutons-le.</p>
+<p>ANTOINE.--Amis, Romains, compatriotes, prêtez-moi l&#x27;oreille.--Je viens pour inhumer César, non pour le louer. Le mal que font les hommes vit après eux; le bien est souvent enterré avec leurs os. Qu&#x27;il en soit ainsi de César.--Le noble Brutus vous a dit que César était ambitieux: s&#x27;il l&#x27;était, ce fut une faute grave, et César en a été gravement puni.--Ici par la permission de Brutus et des autres (car Brutus est un homme honorable: ils le sont tous, tous des hommes honorables), je viens pour parler aux funérailles de César. Il était mon ami, il fut fidèle et juste envers moi; mais Brutus dit qu&#x27;il était ambitieux, et Brutus est un homme honorable.--Il a ramené dans Rome une foule de captifs dont les rançons ont rempli les coffres publics: César en ceci parut-il ambitieux? Lorsque les pauvres ont gémi, César a pleuré: l&#x27;ambition devrait être formée d&#x27;une matière plus dure.--Cependant Brutus dit qu&#x27;il était ambitieux, et Brutus est un homme honorable.--Vous avez tous vu qu&#x27;aux Lupercales, trois fois je lui présentai une couronne de roi, et que trois fois il la refusa. Était-ce là de l&#x27;ambition?--Cependant Brutus dit qu&#x27;il était ambitieux, et sûrement Brutus est un homme honorable. Je ne parle point pour contredire ce que Brutus a dit, mais je suis ici pour dire ce que je sais.--Vous l&#x27;aimiez tous autrefois, et ce ne fut pas sans cause: quelle cause vous empêche donc de pleurer sur lui? O discernement, tu as fui chez les brutes grossières, et les hommes ont perdu leur raison!--Soyez indulgents pour moi; mon coeur est dans ce cercueil avec César: il faut que je m&#x27;arrête jusqu&#x27;à ce qu&#x27;il me soit revenu.</p>
+<p>PREMIER CITOYEN.--Il y a, ce me semble, beaucoup de raison dans ce qu&#x27;il dit.</p>
+<p>SECOND CITOYEN.--Si tu examines sensément cette affaire, César a essuyé une grande injustice.</p>
+<p>TROISIÈME CITOYEN.--Serait-il vrai, compagnons? Je crains qu&#x27;il n&#x27;en vienne à sa place un plus mauvais que lui.</p>
+<p>QUATRIÈME CITOYEN.--Avez-vous remarqué ces mots: «Il ne voulut pas prendre la couronne?» Donc il est certain qu&#x27;il n&#x27;était pas ambitieux.</p>
+<p>PREMIER CITOYEN.--Si cela est prouvé, il en coûtera cher à quelques-uns.</p>
+<p>SECOND CITOYEN.--Pauvre homme! ses yeux sont rouges comme le feu à force de pleurer.</p>
+<p>TROISIÈME CITOYEN.--Il n&#x27;est pas dans Rome un homme d&#x27;un plus grand coeur qu&#x27;Antoine.</p>
+<p>QUATRIÈME CITOYEN.--Attention maintenant, il recommence à parler.</p>
+<p>ANTOINE.--Hier encore la parole de César aurait pu résister à l&#x27;Univers: aujourd&#x27;hui le voilà étendu, et parmi les plus misérables, il n&#x27;en est pas un qui croie avoir à lui rendre quelque respect! O citoyens, si j&#x27;avais envie d&#x27;exciter vos coeurs et vos esprits à la révolte et à la fureur, je pourrais faire tort à Brutus, faire tort à Cassius, qui, vous le savez tous, sont des hommes honorables. Je ne veux pas leur faire tort: j&#x27;aime mieux faire tort au mort, à moi-même, et à vous aussi, que de faire tort à des hommes si honorables.--Mais voici un parchemin scellé du sceau de César; je l&#x27;ai trouvé dans son cabinet. Si le peuple entendait seulement ce testament, que, pardonnez-le-moi, je n&#x27;ai pas dessein de vous lire, tous courraient baiser les blessures du corps de César, et tremper leurs mouchoirs dans son sang sacré; oui, je vous le dis, tous solliciteraient en souvenir de lui un de ses cheveux qu&#x27;à leur mort ils mentionneraient dans leurs testaments, le léguant à leur postérité comme un précieux héritage.</p>
+<p>QUATRIÈME CITOYEN.--Nous voulons entendre le testament: lisez-le, Marc-Antoine.</p>
+<p>LES CITOYENS.--Le testament! le testament! nous voulons entendre le testament de César.</p>
+<p>ANTOINE.--Modérez-vous, mes bons amis; je ne dois pas le lire. Il n&#x27;est pas à propos que vous sachiez combien César vous aimait. Vous n&#x27;êtes pas de bois, vous n&#x27;êtes pas de pierre, vous êtes des hommes; et puisque vous êtes des hommes, si vous entendiez le testament de César, il vous rendrait frénétiques. Il est bon que vous ne sachiez pas que vous êtes ses héritiers; car si vous le saviez, oh! qu&#x27;en arriverait-il?</p>
+<p>QUATRIÈME CITOYEN.--Lisez le testament; nous voulons l&#x27;entendre, Antoine. Vous nous lirez le testament, le testament de César.</p>
+<p>ANTOINE.--Voulez-vous avoir de la patience? voulez-vous différer quelque temps?--Je me suis laissé entraîner trop loin en parlant du testament. Je crains de faire tort à ces hommes honorables dont les poignards ont massacré César; je le crains.</p>
+<p>QUATRIÈME CITOYEN.--Ce furent des traîtres. Eux, des hommes honorables!</p>
+<p>LES CITOYENS.--Le testament! les dispositions de César!</p>
+<p>SECOND CITOYEN.--Ce sont des scélérats, des assassins.--Le testament! le testament!</p>
+<p>ANTOINE.--Vous voulez donc me contraindre à lire le testament? Puisqu&#x27;il en est ainsi, formez un cercle autour du corps de César, et laissez-moi vous montrer celui qui fit le testament.--Descendrai-je? y consentez-vous?</p>
+<p>LES CITOYENS.--Venez, venez.</p>
+<p>SECOND CITOYEN.--Descendez.</p>
+<p>TROISIÈME CITOYEN.--Nous y consentons.</p>
+<p>(Antoine descend de la tribune.)</p>
+<p>QUATRIÈME CITOYEN.--Formons un cercle, mettons-nous autour de lui.</p>
+<p>PREMIER CITOYEN.--Écartez-vous du cercueil, écartez-vous du corps.</p>
+<p>SECOND CITOYEN.--Place pour Antoine, le noble Antoine.</p>
+<p>ANTOINE.--Ne vous jetez pas ainsi sur moi, tenez-vous éloignés.</p>
+<p>LES CITOYENS.--En arrière, place, reculons en arrière.</p>
+<p>ANTOINE.--Si vous avez des larmes, préparez-vous à les répandre maintenant.--Vous connaissez tous ce manteau.--Je me souviens de la première fois où César le porta: c&#x27;était un soir d&#x27;été dans sa tente, le jour même qu&#x27;il vainquit les Nerviens.--Regardez; à cet endroit il a été traversé par le poignard de Cassius. Voyez quelle large déchirure y a faite le haineux Casca! C&#x27;est à travers celle-ci que le bien-aimé Brutus a poignardé César; et lorsqu&#x27;il retira son détestable fer, voyez jusqu&#x27;où le sang de César l&#x27;a suivi, se précipitant au dehors comme pour s&#x27;assurer si c&#x27;était bien Brutus qui frappait si cruellement; car Brutus, vous le savez, était un ange pour César. Jugez, ô vous, grands dieux, avec quelle tendresse César l&#x27;aimait: cette blessure fut pour lui la plus cruelle de toutes; car lorsque le noble César vit Brutus le poignarder, l&#x27;ingratitude, plus forte que les bras des traîtres, acheva de le vaincre: alors son coeur puissant se brisa, et de son manteau enveloppant son visage, au pied même de la statue de Pompée qui ruisselait de son sang, le grand César tomba.--Oh! quelle a été cette chute, mes concitoyens! Alors vous et moi, et chacun de nous, tombâmes avec lui, tandis que la trahison sanguinaire brandissait triomphante son glaive sur nos têtes.--Oh! maintenant vous pleurez; je le vois, vous sentez le pouvoir de la pitié. Ce sont de généreuses larmes. Bons coeurs, quoi, vous pleurez, en ne voyant encore que les plaies du manteau de notre César! Regardez-ici: le voici lui-même déchiré, comme vous le voyez, par des traîtres!</p>
+<p>PREMIER CITOYEN.--O lamentable spectacle!</p>
+<p>SECOND CITOYEN.--O noble César!</p>
+<p>TROISIÈME CITOYEN.--O jour de malheur!</p>
+<p>QUATRIÈME CITOYEN.--O traîtres! scélérats!</p>
+<p>PREMIER CITOYEN.--O sanglant, sanglant spectacle!</p>
+<p>SECOND CITOYEN.--Nous voulons être vengés. Vengeance!--Courons, cherchons.--Brûlons.--Du feu!--Tuons, massacrons.--Ne laissons pas vivre un des traîtres.</p>
+<p>ANTOINE.--Arrêtez, concitoyens.</p>
+<p>PREMIER CITOYEN.--Paix; écoutez le noble Antoine.</p>
+<p>SECOND CITOYEN.--Nous l&#x27;écouterons, nous le suivrons; nous mourrons avec lui.</p>
+<p>ANTOINE.--Bons amis, chers amis, que ce ne soit point moi qui vous précipite dans ce soudain débordement de révolte.--Ceux qui ont fait cette action sont des hommes honorables. Quels griefs personnels ils ont eu pour la faire, hélas! je ne le sais pas: ils sont sages et honorables, et sans doute ils auront des raisons à vous donner.--Je ne viens point, amis, surprendre insidieusement vos coeurs; je ne suis point, comme Brutus un orateur; je suis tel que vous me connaissez tous, un homme simple et sans art qui aime son ami, et ceux qui m&#x27;ont donné la permission de parler de lui en public le savent bien; car je n&#x27;ai ni esprit, ni talent de parole, ni autorité, ni grâce d&#x27;action, ni organe, ni aucun de ces pouvoirs d&#x27;éloquence qui émeuvent le sang des hommes. Je ne sais qu&#x27;exprimer la vérité; je ne vous dis que ce que vous savez vous-mêmes: je vous montre les blessures du bon César (pauvres, pauvres bouches muettes!), et je les charge de parler pour moi. Mais si j&#x27;étais Brutus, et que Brutus fût Antoine, il y aurait alors un Antoine qui porterait le trouble dans vos esprits, et donnerait à chaque blessure de César une langue qui remuerait les pierres de Rome et les soulèverait à la révolte.</p>
+<p>LES CITOYENS.--Nous nous soulèverons.</p>
+<p>PREMIER CITOYEN.--Nous brûlerons la maison de Brutus.</p>
+<p>TROISIÈME CITOYEN.--Courons à l&#x27;instant, venez, cherchons les conspirateurs.</p>
+<p>ANTOINE.--Écoutez-moi encore, compatriotes; écoutez encore ce que j&#x27;ai à vous dire.</p>
+<p>LES CITOYENS.--Holà, silence; écoutons Antoine, le très-noble Antoine.</p>
+<p>ANTOINE.--Quoi, mes amis, savez-vous ce que vous allez faire? En quoi César a-t-il mérité de vous tant d&#x27;amour? Hélas! vous l&#x27;ignorez: il faut donc que je vous le dise. Vous avez oublié le testament dont je vous ai parlé.</p>
+<p>LES CITOYENS.--C&#x27;est vrai!--Le testament; restons et écoutons le testament.</p>
+<p>ANTOINE.--Le voici, le testament, et scellé du sceau de César.--À chaque citoyen romain, à chacun de vous tous, il donne soixante-quinze drachmes.</p>
+<p>SECOND CITOYEN.--O noble César!--Nous vengerons sa mort.</p>
+<p>TROISIÈME CITOYEN.--O royal César!</p>
+<p>ANTOINE.--Écoutez-moi avec patience.</p>
+<p>LES CITOYENS.--Silence donc.</p>
+<p>ANTOINE.--En outre il vous a légué tous ses jardins, ses bocages fermés, et ses vergers récemment plantés de ce côté du Tibre. Il vous les a laissés, à vous et à vos héritiers à perpétuité, pour en faire des jardins publics destinés à vos promenades et à vos amusements.--C&#x27;était là un César: quand en naîtra-t-il un pareil?</p>
+<p>PREMIER CITOYEN.--Jamais, jamais.--Venez, partons, partons; allons brûler son corps sur la place sacrée, et avec les tisons incendier toutes les maisons des traîtres.--Enlevez le corps.</p>
+<p>SECOND CITOYEN.--Allez, apportez du feu.</p>
+<p>TROISIÈME CITOYEN.--Jetez bas les siéges.</p>
+<p>QUATRIÈME CITOYEN.--Enlevez les bancs, les fenêtres, tout.</p>
+<p>(Le peuple sort emportant le corps.)</p>
+<p>ANTOINE, à part.--Maintenant laissons faire.--Génie du mal! te voilà lancé; suis le cours qu&#x27;il te plaira.--(Entre un serviteur.) Qu&#x27;y a-t-il, camarade?</p>
+<p>LE SERVITEUR.--Seigneur, Octave est déjà arrivé dans Rome.</p>
+<p>ANTOINE.--Où est-il?</p>
+<p>LE SERVITEUR.--Lépidus et lui sont dans la maison de César.</p>
+<p>ANTOINE.--Je vais l&#x27;y voir à l&#x27;instant; il arrive à souhait.--La Fortune est en belle humeur, et dans ce caprice elle nous accordera tout.</p>
+<p>LE SERVITEUR.--Octave a dit devant moi que Brutus et Cassius étaient sortis au galop hors des portes de Rome, comme des hommes qui ont la tête perdue.</p>
+<p>ANTOINE.--Sans doute ils auront reçu du peuple quelque nouvelle de la manière dont je l&#x27;ai animé.--Conduis-moi vers Octave.</p>
+<p>(Antoine sort, suivi du serviteur.)</p>
+<h2 class="chapter" id="c11">Scène III</h2>
+<p>Toujours à Rome.--Une rue.</p>
+<p>Entre CINNA le poëte.</p>
+<p>CINNA.--J&#x27;ai rêvé cette nuit que j&#x27;étais à un banquet avec César, et mon imagination est obsédée d&#x27;idées funestes. Je me sens de la répugnance à sortir de ma maison; cependant quelque chose m&#x27;entraîne.</p>
+<p>(Entrent des citoyens.)</p>
+<p>PREMIER CITOYEN.--Quel est votre nom?</p>
+<p>SECOND CITOYEN.--Où allez-vous?</p>
+<p>TROISIÈME CITOYEN.--Où demeurez-vous?</p>
+<p>QUATRIÈME CITOYEN.--Êtes-vous marié ou garçon?</p>
+<p>SECOND CITOYEN.--Répondez sans détour à chacun de nous.</p>
+<p>PREMIER CITOYEN.--Oui, et brièvement.</p>
+<p>QUATRIÈME CITOYEN,--Oui, et sagement.</p>
+<p>TROISIÈME CITOYEN.--Oui, et véridiquement; vous ferez bien.</p>
+<p>CINNA.--Quel est mon nom, où je vais, où je demeure, si je suis marié ou garçon? Eh bien! pour répondre à chacun de vous sans détour, brièvement, véridiquement et sagement, je dis sagement: Je suis garçon.</p>
+<p>SECOND CITOYEN.--Autant dire: Il n&#x27;y a que les imbéciles qui se marient. Vous pourriez bien être rossé pour ça, j&#x27;en ai peur. Poursuivez et sans détour.</p>
+<p>CINNA.--Sans détour? J&#x27;allais aux funérailles de César.</p>
+<p>PREMIER CITOYEN.--Comme ami, ou comme ennemi?</p>
+<p>CINNA.--Comme ami.</p>
+<p>SECOND CITOYEN.--C&#x27;est répondre sans détour.</p>
+<p>QUATRIÈME CITOYEN.--Et votre demeure? Brièvement.</p>
+<p>CINNA.--Brièvement? Je demeure près du Capitole.</p>
+<p>TROISIÈME CITOYEN.--Et votre nom, s&#x27;il vous plaît? véridiquement.</p>
+<p>CINNA.--Véridiquement? Mon nom est Cinna.</p>
+<p>PREMIER CITOYEN.--Mettons-le en pièces: c&#x27;est un conspirateur.</p>
+<p>CINNA.--Je suis Cinna le poëte, je suis Cinna le poëte.</p>
+<p>QUATRIÈME CITOYEN.--Mettons-le en pièces pour ses mauvais vers, mettons-le en pièces pour ses mauvais vers.</p>
+<p>CINNA.--Je ne suis point Cinna le conspirateur.</p>
+<p>QUATRIÈME CITOYEN.--N&#x27;importe, il se nomme Cinna; arrachons seulement son nom de son coeur, et puis nous le laisserons aller.</p>
+<p>TROISIÈME CITOYEN.--Déchirons-le, déchirons-le,--Allons, des brandons, holà, des brandons de feu!--Chez Brutus, chez Cassius, brûlons tout.--Quelques-uns à la maison de Décius, quelques-uns chez Ligarius: partons, courons.</p>
+<p>(Ils sortent.)</p>
+<h3 class="sub">Fin du troisième acte — Acte quatrième</h3>
+<h2 class="chapter" id="c12">Scène I</h2>
+<p>Toujours à Rome.--Une pièce de la maison d&#x27;Antoine.</p>
+<p>ANTOINE, OCTAVE, LÉPIDUS, assis autour d&#x27;une table.</p>
+<p>ANTOINE.--Ainsi, tous ceux-là périront. Leurs noms sont pointés.</p>
+<p>OCTAVE.--Votre frère aussi doit mourir. Y consentez-vous, Lépidus?</p>
+<p>LÉPIDUS.--J&#x27;y consens.</p>
+<p>OCTAVE.--Pointez-le, Antoine.</p>
+<p>LÉPIDUS.--À condition que Publius[42] ne vivra pas, le fils de votre soeur, Marc-Antoine.</p>
+<p>[Note 42: Ce ne fut point Publius, mais Lucius César, son oncle, qu&#x27;Antoine abandonna à la proscription. PLUTARQUE, Vie d&#x27;Antoine.]</p>
+<p>ANTOINE.--Il ne vivra pas: voyez, de ce trait, je le condamne.--Mais vous, Lépidus, allez à la maison de César, rapportez-nous le testament, et nous verrons à faire quelques coupures dans les charges qu&#x27;il nous a léguées.</p>
+<p>LÉPIDUS.--Mais vous retrouverai-je ici?</p>
+<p>OCTAVE.--Ou ici, ou au Capitole.</p>
+<p>(Lépidus sort.)</p>
+<p>ANTOINE.--regardant aller Lépidus.--C&#x27;est là un homme nul et sans mérite, bon à être envoyé en message. Lorsqu&#x27;il se fait trois parts de l&#x27;univers, convient-il qu&#x27;il soit l&#x27;un des trois copartageants?</p>
+<p>OCTAVE.--Vous le jugiez ainsi, et vous avez pris sa voix sur ceux qui doivent être désignés à la mort dans notre noire sentence de proscription!</p>
+<p>ANTOINE.--Octave, j&#x27;ai vu plus de jours que vous; et si nous plaçons ces honneurs sur cet homme en vue de nous soulager nous-mêmes de divers fardeaux odieux, il ne fera que les porter comme l&#x27;âne porte l&#x27;or, gémissant et suant sous sa charge, tantôt conduit, tantôt chassé dans la voie que nous lui indiquerons; et quand il aura voituré notre trésor au lieu qui nous convient, alors nous lui reprendrons son fardeau, et nous le renverrons, comme l&#x27;âne déchargé, secouer ses oreilles et paître dans les prés du commun.</p>
+<p>OCTAVE.--Vous pouvez faire ce qu&#x27;il vous plaira; mais c&#x27;est un soldat intrépide et éprouvé.</p>
+<p>ANTOINE.--Comme mon cheval, Octave; et à cause de cela je lui assigne sa ration de fourrage. C&#x27;est un animal que j&#x27;instruis à combattre, à volter, à s&#x27;arrêter ou à courir en avant. Ses mouvements physiques sont gouvernés par mon intelligence, et à certains égards Lépidus n&#x27;est rien de plus; il a hesoin d&#x27;être instruit, dressé et averti de se mettre en marche. C&#x27;est un esprit stérile n&#x27;ayant pour pâture que les objets, les arts, les imitations, qui, déjà usés et vieillis pour les autres hommes, deviennent ses modèles. Ne t&#x27;en occupe que comme d&#x27;une chose qui nous appartient; maintenant, Octave, de grands intérêts réclament notre attention.--Brutus et Cassius lèvent des armées; il faut nous préparer à leur tenir tête. Songeons donc à combiner notre alliance, à nous assurer de nos meilleurs amis, à déployer nos plus puissantes ressources; et allons de ce pas nous réunir pour délibérer sur les moyens les plus efficaces de découvrir les choses cachées, sur les plus sûrs moyens de faire face aux périls connus.</p>
+<p>OCTAVE.--J&#x27;en suis d&#x27;avis; car nous sommes comme la bête attachée au poteau, entourés d&#x27;ennemis qui aboient et nous harcèlent; et plusieurs qui nous sourient renferment, je le crains bien, dans leurs coeurs des millions de projets perfides.</p>
+<p>(Ils sortent.)</p>
+<h2 class="chapter" id="c13">Scène II</h2>
+<p>Le devant de la tente de Brutus, au camp de Sardes.</p>
+<p>TAMBOURS. Entrent BRUTUS, LUCILIUS, LUCIUS et des soldats; TITINIUS ET PINDARUS viennent à leur rencontre.</p>
+<p>BRUTUS.--Holà, halte!</p>
+<p>LUCILIUS.--Le mot d&#x27;ordre; holà! halte!</p>
+<p>BRUTUS.--Qu&#x27;y a-t-il, Lucilius? Cassius est-il près d&#x27;ici?</p>
+<p>LUCILIUS.--Tout près; et Pindarus vient vous saluer de la part de son maître.</p>
+<p>(Pindarus donne une lettre à Brutus.)</p>
+<p>BRUTUS.--Je reçois son salut avec plaisir. Pindarus, votre maître, soit par son propre changement, soit par la faute de ses subordonnés, m&#x27;a donné quelques sujets de souhaiter que des choses faites ne le fussent pas. Mais puisqu&#x27;il arrive, il me satisfera lui-même.</p>
+<p>PINDARUS.--Je ne doute point que mon noble maître ne se montre tel qu&#x27;il est, plein d&#x27;égards et de considération pour vous.</p>
+<p>BRUTUS.--Je n&#x27;en fais aucun doute.--Lucilius, un mot. Je voudrais savoir comment il vous a reçu. Éclairez-moi à ce sujet.</p>
+<p>LUCILIUS.--Avec civilité et assez d&#x27;égards, mais non pas avec cet air de familiarité, avec ce ton de conversation franche et amicale qui lui étaient ordinaires autrefois.</p>
+<p>BRUTUS.--Tu viens de peindre un ami chaud qui se refroidit. Remarque, Lucilius, que toujours l&#x27;amitié, quand elle commence à s&#x27;affaiblir et à décliner, a recours à un redoublement de politesses cérémonieuses. Il n&#x27;y a point d&#x27;art dans la franche et simple bonne foi; mais les hommes doubles, semblables à des chevaux ardents à la main, se montrent si vigoureux, qu&#x27;à les voir on doit tout attendre de leur courage; puis au moment où il faudrait savoir supporter l&#x27;éperon sanglant, ils laissent tomber leur tête, et, comme une bête usée qui n&#x27;a que l&#x27;apparence, ils succombent dans l&#x27;épreuve.--Vient-il avec toutes ses troupes?</p>
+<p>LUCILIUS.--Elles comptent prendre cette nuit leurs quartiers dans Sardes. Le gros de l&#x27;armée, la cavalerie entière, arrivent avec Cassius.</p>
+<p>(Une marche derrière le théâtre.)</p>
+<p>BRUTUS.--Écoutons, il approche. Marchons sans bruit à sa rencontre.</p>
+<p>(Entrent Cassius et des soldats.)</p>
+<p>CASSIUS.--Holà, halte!</p>
+<p>BRUTUS.--Holà, halte! Faites passer l&#x27;ordre le long des files.</p>
+<p>(Derrière le théâtre.)</p>
+<p>Halte! halte! halte!</p>
+<p>CASSIUS à Brutus.--Mon noble frère, vous avez eu des torts envers moi.</p>
+<p>BRUTUS.--O dieux que j&#x27;atteste, jugez-moi.--Ai-je jamais eu des torts envers mes ennemis? Comment donc voudrais-je avoir des torts envers mon frère?</p>
+<p>CASSIUS.--Brutus, cette réserve cache des torts, et quand vous en avez....</p>
+<p>BRUTUS.--Cassius, assez, exposez vos griefs sans violence. Je vous connais bien. Ne nous querellons point ici sous les yeux de nos deux armées qui ne devraient apercevoir entre nous que de l&#x27;amitié. Faites retirer vos soldats; et alors, Cassius, venez dans ma tente, détaillez vos griefs, et je vous écouterai.</p>
+<p>CASSIUS.--Pindarus, commande à nos chefs de conduire leurs troupes à quelque distance.</p>
+<p>BRUTUS.--Donne le même ordre, Lucilius; et tant que durera notre conférence, ne laisse personne approcher de la tente. Que Lucius et Titinius en gardent l&#x27;entrée.</p>
+<p>(Ils sortent.)</p>
+<h2 class="chapter" id="c14">Scène III</h2>
+<p>L&#x27;intérieur de la tente de Brutus.--Lucius et Titinius à une certaine distance.</p>
+<p>Entrent BRUTUS ET CASSIUS.</p>
+<p>CASSIUS.--Que vous ayez des torts envers moi, cela est manifeste en ceci: vous avez condamné et noté Lucius Pella[43] pour s&#x27;être ici laissé corrompre par les Sardiens, et n&#x27;avez ainsi tenu aucun compte des lettres que je vous écrivais en sa faveur parce que je le connaissais.</p>
+<p>[Note 43: Ce ne fut que le lendemain de cette querelle que Brutus condamna judiciellement en public, et nota d&#x27;infamie Lucius Pella, ce qui «dépleut merveilleusement à Cassius, à cause que peu de jours auparavant avoit seulement admonesté de paroles en privé, deux de ses amis atteincts et convaincus de mesmes crimes, et en public, les avoit absouts, et ne laissoit pas de les employer et de s&#x27;en servir comme devant. PLUTARQUE, Vie de Brutus.]</p>
+<p>BRUTUS.--C&#x27;était vous faire tort à vous-même que d&#x27;écrire pour une pareille affaire.</p>
+<p>CASSIUS.--Dans le temps où nous sommes, il n&#x27;est pas à propos que la plus légère faute entraîne ainsi ses conséquences.</p>
+<p>BRUTUS.--Mais vous, Cassius, vous-même, souffrez que je vous le dise: on vous reproche d&#x27;avoir une main avide, de trafiquer des emplois qui dépendent de vous, et de les vendre pour de l&#x27;or à des hommes sans mérite.</p>
+<p>CASSIUS.--Moi une main avide!.... Vous savez bien que vous êtes Brutus lorsque vous me parlez ainsi; ou, par les dieux, ce discours eût été pour vous le dernier.</p>
+<p>BRUTUS.--La corruption s&#x27;honore ainsi du nom de Cassius, et le châtiment est obligé de cacher sa tête.</p>
+<p>CASSIUS.--Le châtiment!</p>
+<p>BRUTUS.--Souvenez-vous du mois de mars, souvenez-vous des ides de mars. Le sang du grand César ne coula-t-il pas au nom de la justice? Parmi ceux qui portèrent la main sur lui, quel était le scélérat qui l&#x27;eût poignardé pour une autre cause que la justice? Quoi! nous qui n&#x27;avons frappé le premier homme de l&#x27;Univers que pour avoir protégé des voleurs, nous souillerons aujourd&#x27;hui nos doigts de présents infâmes? nous vendrons la magnifique carrière qu&#x27;ouvrent les honneurs les plus élevés, nous la vendrons pour cette poignée de vils métaux que peut contenir ma main? J&#x27;aimerais mieux être un chien et aboyer à la lune, que d&#x27;être un pareil Romain.</p>
+<p>CASSIUS.--Brutus, ne vous mêlez pas de me gourmander, je ne l&#x27;endurerai point: vous vous oubliez vous-même; vous me poussez à bout. Je suis un soldat, moi, plus ancien que vous dans le métier, plus capable que vous de faire des conditions.</p>
+<p>BRUTUS.--Allons donc! vous ne l&#x27;êtes nullement, Cassius.</p>
+<p>CASSIUS.--Je le suis.</p>
+<p>BRUTUS.--Je vous dis que vous ne l&#x27;êtes pas.</p>
+<p>CASSIUS.--Ne continuez pas à m&#x27;irriter ainsi, ou je m&#x27;oublierai. Songez à votre vie; ne me tentez pas davantage.</p>
+<p>BRUTUS.--Laissez-moi, homme sans consistance.</p>
+<p>CASSIUS.--Est-il possible?</p>
+<p>BRUTUS.--Écoutez-moi, car je veux parler. Suis-je obligé de laisser un libre cours à votre fougueuse colère? Serai-je effrayé parce qu&#x27;un fou me regarde?</p>
+<p>CASSIUS.--O dieux! O dieux! me faudra-t-il endurer tout cela?</p>
+<p>BRUTUS.--Oui, tout cela, et plus encore. Agitez-vous jusqu&#x27;à ce que votre coeur orgueilleux en éclate. Allez montrer à vos esclaves combien vous êtes colérique, et faire trembler vos vilains. Faudra-t-il que je m&#x27;écarte? Faudra-t-il que je vous observe? Faudra-t-il que je subisse en rampant les caprices de votre humeur maussade? Par les dieux, vous dévorerez tout le fiel de votre bile, dussiez-vous en crever, car désormais je veux que vos accès de fureur servent à m&#x27;égayer, oui, à me faire rire.</p>
+<p>CASSIUS.--Quoi! nous en sommes là!</p>
+<p>BRUTUS.--Vous dites que vous êtes un meilleur soldat, faites-le voir; justifiez votre bravade, et ce sera me faire un vrai plaisir. Je serai bien aise, pour mon compte, de m&#x27;instruire à l&#x27;école des hommes supérieurs.</p>
+<p>CASSIUS.--Vous me faites injure sur tous les points; vous me faites injure, Brutus! J&#x27;ai dit un plus ancien soldat, et non un meilleur. Ai-je dit meilleur?</p>
+<p>BRUTUS.--Quand vous l&#x27;auriez dit, peu m&#x27;importe.</p>
+<p>CASSIUS.--César, lorsqu&#x27;il vivait, n&#x27;eût pas osé m&#x27;irriter à ce point.</p>
+<p>BRUTUS.--Paix, paix; vous n&#x27;auriez pas osé le provoquer ainsi.</p>
+<p>CASSIUS.--Je n&#x27;eusse pas osé?</p>
+<p>BRUTUS.--Non.</p>
+<p>CASSIUS.--Quoi! pas osé le provoquer?</p>
+<p>BRUTUS.--Non, sur votre vie, vous ne l&#x27;eussiez pas osé.</p>
+<p>CASSIUS.--Ne présumez pas trop de mon amitié; je pourrais faire ce qu&#x27;après je serais fâché d&#x27;avoir fait.</p>
+<p>BRUTUS.--Vous l&#x27;avez fait ce que vous devriez être fâché d&#x27;avoir fait. Cassius, il n&#x27;y a point pour moi de terreur dans vos menaces; je suis si solidement armé de ma probité, qu&#x27;elles passent près de moi comme le vain souffle du vent, sans que j&#x27;y fasse attention. Je vous ai envoyé demander quelques sommes d&#x27;or que vous m&#x27;avez refusées; car moi, je ne puis me procurer d&#x27;argent par d&#x27;indignes moyens. Par le ciel, j&#x27;aimerais mieux monnayer mon coeur, et livrer chaque goutte de mon sang pour en faire des drachmes que d&#x27;extorquer, par des voies illégitimes, de la main durcie des paysans, leur misérable portion de vil métal. Je vous ai envoyé demander de l&#x27;or pour payer mes légions; vous me l&#x27;avez refusé. Cette action était-elle de Cassius? Quand Marcus Brutus deviendra assez sordide pour tenir sous clé ces misérables jetons et les interdire à ses amis, soyez prêts, vous dieux, à le réduire en cendres.</p>
+<p>CASSIUS.--Je ne vous ai point refusé.</p>
+<p>BRUTUS.--Mais si.</p>
+<p>CASSIUS.--Je ne l&#x27;ai pas fait.--Celui qui vous a rapporté ma réponse n&#x27;était qu&#x27;un imbécile.--Brutus a déchiré mon coeur. Un ami devrait supporter les faiblesses de son ami; mais Brutus exagère les miennes.</p>
+<p>BRUTUS.--Non, en vérité, tant que vous m&#x27;en faites ressentir l&#x27;effet.</p>
+<p>CASSIUS.--Vous ne m&#x27;aimez point.</p>
+<p>BRUTUS.--Je n&#x27;aime point vos défauts.</p>
+<p>CASSIUS.--De pareils défauts, l&#x27;oeil d&#x27;un ami ne les verrait jamais.</p>
+<p>BRUTUS.--L&#x27;oeil d&#x27;un flatteur ne voudrait pas les voir, fussent-ils aussi énormes que le haut Olympe.</p>
+<p>CASSIUS.--Viens, Antoine; jeune Octave, viens. Vengez-vous sur Cassius seul; Cassius est las du monde: haï d&#x27;un homme qu&#x27;il aime, insulté par son frère, maltraité comme un esclave, tous ses défauts remarqués, enregistrés, étudiés, appris par coeur pour me les jeter au visage. Oh! mes larmes pourraient tant couler que d&#x27;anéantir mon courage. Tiens, voilà mon poignard, et voici mon sein nu, et dedans est un coeur plus précieux que les mines de Plutus, plus riche que l&#x27;or. Si tu es un Romain, arrache-le: moi qui te refusai de l&#x27;or, je t&#x27;offre mon coeur; frappe comme tu frappais César, car je sais que, lors même que tu l&#x27;as le plus haï, tu l&#x27;aimais plus encore que tu n&#x27;aimas jamais Cassius.</p>
+<p>BRUTUS.--Mettez votre poignard dans son fourreau; emportez-vous quand vous voudrez, je vous en laisserai entière liberté. Faites ce que vous voudrez; d&#x27;une action honteuse je dirai: c&#x27;est son humeur. O Cassius, vous êtes attelé avec un agneau qui porte en lui la colère comme le caillou porte le feu: le plus grand effort en fait apparaître une rapide étincelle, et aussitôt il est refroidi.</p>
+<p>CASSIUS.--Cassius a-t-il vécu jusqu&#x27;ici pour ne fournir à son Brutus que des sujets de gaieté et des occasions de rire quand il est triste et mal disposé?</p>
+<p>BRUTUS.--Quand j&#x27;ai parlé ainsi, j&#x27;étais mal disposé moi-même.</p>
+<p>CASSIUS.--Vous en convenez? Donnez-moi votre main.</p>
+<p>BRUTUS.--Et aussi mon coeur.</p>
+<p>CASSIUS.--O Brutus!</p>
+<p>BRUTUS.--Eh bien! quoi?</p>
+<p>CASSIUS.--N&#x27;avez-vous pas assez de tendresse pour me supporter quand cette humeur fougueuse, que je tiens de ma mère, me fait tout oublier?</p>
+<p>BRUTUS.--Oui, Cassius; et désormais quand vous vous emporterez contre votre Brutus, il pensera que c&#x27;est votre mère qui gronde, et il vous laissera faire.</p>
+<p>(Bruit derrière le théâtre.)</p>
+<p>LE POËTE (derrière le théâtre).--Laissez-moi entrer, je veux voir les généraux: il y a de la discorde entre eux; il n&#x27;est pas prudent de les laisser seuls.</p>
+<p>LUCIUS (derrière le théâtre).--Vous ne pénétrerez point jusqu&#x27;à eux.</p>
+<p>LE POËTE (derrière le théâtre).--Rien ne peut m&#x27;arrêter que la mort.</p>
+<p>(Entre le poëte.)</p>
+<p>CASSIUS.--Qu&#x27;est-ce que c&#x27;est? de quoi s&#x27;agit-il?</p>
+<p>LE POËTE.--Quelle honte à vous, généraux! que prétendez-vous? Aimez-vous; soyez amis comme doivent l&#x27;être deux hommes tels que vous: j&#x27;ai vu, soyez-en sûrs, plus d&#x27;années que vous[44].</p>
+<p>[Note 44: Imitation de ce vers d&#x27;Homère:</p>
+<p>[Grec: Alla pithesth amphô de neôterô eston emeio].</p>
+<p>Ce personnage n&#x27;était pas un poëte, mais un cynique nommé Marcus Faonius, «qui avait été, par manière de dire, amoureux de Caton en son vivant, et se mêlait de contrefaire le philosophe, non tant avec discours et raison qu&#x27;avec une impétuosité et une furieuse et passionnée affection.» PLUTARQUE, Vie de Brutus.]</p>
+<p>CASSIUS.--Ah! ah! ah! que ce cynique fait de mauvais vers.</p>
+<p>BRUTUS.--Sortez d&#x27;ici, faquin, insolent; hors d&#x27;ici!</p>
+<p>CASSIUS.--Ne vous fâchez pas, Brutus; c&#x27;est sa manière.</p>
+<p>BRUTUS.--J&#x27;apprendrai à me faire à ses manières quand il apprendra à choisir son temps. Qu&#x27;a-t-on besoin à l&#x27;armée de ces sots faiseurs de vers? Hors d&#x27;ici, compagnon.</p>
+<p>CASSIUS.--Allons, allons, va-t&#x27;en.</p>
+<p>(Le poëte sort.)</p>
+<p>(Entrent Lucilius et Titinius.)</p>
+<p>BRUTUS.--Lucilius et Titinius, commandez aux chefs de préparer le logement de leurs troupes pour cette nuit.</p>
+<p>CASSIUS.--Revenez ensuite sur-le-champ tous les deux, et amenez avec vous Messala.</p>
+<p>(Lucilius et Titinius sortent.)</p>
+<p>BRUTUS.--Lucius, une coupe de vin.</p>
+<p>CASSIUS.--Je n&#x27;aurais pas cru que vous fussiez capable de tant de colère.</p>
+<p>BRUTUS.--O Cassius, je suis accablé de bien des chagrins.</p>
+<p>CASSIUS.--Vous ne faites pas usage de votre philosophie, si vous laissez votre âme ouverte aux maux accidentels.</p>
+<p>BRUTUS.--Nul homme ne supporte mieux la douleur. Porcia est morte[45].</p>
+<p>[Note 45: Nicolaüs le Philosophe et Valère Médime placent la mort de Porcia après celle de Brutus, et l&#x27;attribuent à la douleur de cette perte. «Toutefois, dit Plutarque, on trouve une lettre missive de Brutus à ses amis, par laquelle il se plaint de leur nonchalance d&#x27;avoir tenu si peu de compte de sa femme, qu&#x27;elle avoit mieux aimé mourir que de languir plus longtemps malade. Ainsi sembleroit-il que ce philosophe n&#x27;auroit pas bien cogneu le temps, car l&#x27;épistre, au moins si elle est véritablement de Brutus, donne assez à entendre la maladie et l&#x27;amour de cette dame, et aussi la manière de sa mort.» PLUTARQUE, Vie de Brutus.]</p>
+<p>CASSIUS.--Ah! Porcia!--</p>
+<p>BRUTUS.--Elle est morte.</p>
+<p>CASSIUS.--Comment ne m&#x27;avez-vous pas tué quand je vous ai tourmenté ainsi? O perte sensible, insupportable!--De quelle maladie?</p>
+<p>BRUTUS.--De n&#x27;avoir pu soutenir mon absence, et du chagrin de voir grossir à ce point les forces de Marc-Antoine et du jeune Octave; car j&#x27;ai reçu cette nouvelle avec celle de sa mort: sa raison en fut altérée; et dans l&#x27;absence de ceux qui la servaient, elle avala du feu.</p>
+<p>CASSIUS.--Et elle en est morte?</p>
+<p>BRUTUS.--Elle en est morte.</p>
+<p>CASSIUS.--O dieux immortels!</p>
+<p>(Lucius entre, tenant une coupe et des flambeaux.)</p>
+<p>BRUTUS.--Ne me parle plus d&#x27;elle.--Donne-moi une coupe de vin.--Cassius, j&#x27;ensevelis ici tout sentiment d&#x27;aigreur.</p>
+<p>(Il boit.)</p>
+<p>CASSIUS.--Mon coeur a soif de la noble coupe[46] qui va vous faire raison. Remplis, Lucius, jusqu&#x27;à ce que le vin déborde: je ne puis trop boire de l&#x27;amitié de Brutus.</p>
+<p>[Note 46: My heart is thirsty for that noble pledge. Pledge, coup de vin destiné à faire raison à celui qui boit à votre santé. La formule usitée autrefois en français était: Je bois à vous, à quoi le convive répondait: Je vous pleige d&#x27;autant.]</p>
+<p>(Rentre Titinius avec Messala.)</p>
+<p>BRUTUS.--Entre, Titinius.--Sois le bienvenu, brave Messala.--Maintenant prenons place, serrons-nous autour de ce flambeau, et délibérons sur ce que nous avons à faire.</p>
+<p>CASSIUS.--O Porcia, as-tu donc cessé de vivre?</p>
+<p>BRUTUS.--Cessez, je vous conjure.--Messala, ces lettres que j&#x27;ai reçues, m&#x27;apprennent que le jeune Octave et Marc-Antoine viennent à nous avec une puissante armée, et dirigent leur marche sur Philippes.</p>
+<p>MESSALA.--J&#x27;ai aussi des lettres qui annoncent absolument la même chose.</p>
+<p>BRUTUS.--Qu&#x27;y ajoute-t-on?</p>
+<p>MESSALA.--Que par des décrets de proscription et de mise hors la loi[47], Octave, Antoine et Lépidus ont fait périr cent sénateurs.</p>
+<p>[Note 47: Outlawry.]</p>
+<p>BRUTUS.--En cela nos lettres ne s&#x27;accordent pas bien. Les miennes ne parlent que de soixante-dix sénateurs morts par l&#x27;effet de cette proscription: Cicéron en est un.</p>
+<p>CASSIUS.--Cicéron en est?</p>
+<p>MESSALA.--Oui, Cicéron est mort, il était sur la liste de proscription.--Brutus, avez-vous reçu des lettres de votre femme?</p>
+<p>BRUTUS.--Non, Messala.</p>
+<p>MESSALA.--Et dans vos lettres, ne vous mande-t-on rien sur elle?</p>
+<p>BRUTUS.--Rien, Messala.</p>
+<p>MESSALA.--Cela me paraît étrange.</p>
+<p>BRUTUS.--Pourquoi me le demandez-vous? En avez-vous appris quelque chose dans les vôtres?</p>
+<p>MESSALA.--Non, mon seigneur.</p>
+<p>BRUTUS.--Si vous êtes Romain, dites-moi la vérité.</p>
+<p>MESSALA.--Supportez donc en Romain la vérité que je vous annonce. Il est certain qu&#x27;elle est morte, et d&#x27;une manière étrange.</p>
+<p>BRUTUS.--Eh bien! adieu, Porcia.--Il nous faut mourir, Messala: c&#x27;est pour avoir pensé qu&#x27;elle devait mourir un jour que j&#x27;ai la patience de supporter aujourd&#x27;hui ce coup.</p>
+<p>MESSALA.--C&#x27;est ainsi que les grands hommes devraient toujours supporter les grandes pertes.</p>
+<p>CASSIUS.--J&#x27;en ai là-dessus appris tout autant que vous, et cependant ma nature ne pourrait jamais s&#x27;y soumettre de même.</p>
+<p>BRUTUS.--Soit.--A notre tâche qui est vivante.--Si nous marchions à l&#x27;instant vers Philippes? qu&#x27;en pensez-vous?</p>
+<p>CASSIUS.--Je ne crois pas que ce fût bien fait.</p>
+<p>BRUTUS.--La raison?</p>
+<p>CASSIUS.--La voici: il vaut mieux que l&#x27;ennemi nous cherche; par-là il consumera ses ressources, fatiguera ses soldats, et se nuira ainsi à lui-même; tandis que nous, qui n&#x27;aurons pas changé de place, nous nous trouverons pleins de repos, entiers et prêts à tout.</p>
+<p>BRUTUS.--De bonnes raisons doivent nécessairement céder à de meilleures. Les peuples qui sont entre Philippes et ce camp ne sont contenus que par une affection forcée, car ils ne nous ont accordé qu&#x27;à regret des subsides. L&#x27;ennemi, en traversant leur pays, complétera chez eux ses troupes; il s&#x27;avancera rafraîchi, recruté et plein d&#x27;un nouveau courage, avantages que nous lui interceptons si nous allons le rencontrer à Philippes, tenant ces peuples sur nos derrières.</p>
+<p>CASSIUS.--Mon bon frère, écoutez-moi.</p>
+<p>BRUTUS.--Permettez; il faut de plus faire attention à ceci. Nous savons à présent le compte de nos amis jusqu&#x27;au dernier. Nos légions sont complètes; notre cause est mûre; de jour en jour l&#x27;ennemi s&#x27;élève; tandis que nous, arrivés à notre plus haut période, nous sommes près de décliner. Les affaires humaines ont leurs marées, qui, saisies au moment du flux, conduisent à la fortune; l&#x27;occasion manquée, tout le voyage de la vie se poursuit au milieu des bas-fonds et des misères. En ce moment, la mer est pleine et nous sommes à flot: il faut prendre le courant tandis qu&#x27;il nous est favorable, ou perdre toutes nos chances.</p>
+<p>CASSIUS.--Eh bien! vous le voulez, marchez. Nous vous accompagnerons et nous irons les trouver à Philippes.</p>
+<p>BRUTUS.--Les heures les plus profondes de la nuit sont insensiblement arrivées sur notre entretien, et la nature doit obéir à la nécessité à laquelle nous ne concéderons qu&#x27;un peu de repos. Il ne nous reste rien de plus à dire?</p>
+<p>CASSIUS.--Rien de plus. Bonne nuit. Demain de grand matin nous serons prêts et en marche.</p>
+<p>(Entre Lucius.)</p>
+<p>BRUTUS.--Lucius, ma robe.--Adieu, digne Messala.--Bonne nuit, Titinius.--Noble, noble Cassius, bonne nuit et bon repos.</p>
+<p>CASSIUS.--O mon cher frère, elle a bien mal commencé, cette nuit.--Que jamais semblable discorde ne se mette entre nos âmes! Ne le permets pas, Brutus.</p>
+<p>BRUTUS.--Tout est bien.</p>
+<p>CASSIUS.--Bonne nuit, mon maître.</p>
+<p>BRUTUS.--Bonne nuit, mon bon frère.</p>
+<p>TITINIUS ET MESSALA.--Bonne nuit, Brutus, notre maître à tous.</p>
+<p>BRUTUS.--Adieu, tous. (Cassius, Titinius et Messala se retirent.--Rentre Lucius, avec la robe de Brutus.)--Donne-moi cette robe. Où est ton instrument?</p>
+<p>LUCIUS.--Ici dans la tente.</p>
+<p>BRUTUS.--Tu réponds d&#x27;une voix assoupie. Pauvre garçon, je ne t&#x27;en fais point un reproche, tu es harassé de veilles. Appelle Claudius et quelques autres de mes gens: je veux qu&#x27;ils restent là; ils dormiront sur des coussins dans ma tente.</p>
+<p>LUCIUS.--Varron! Claudius!</p>
+<p>(Entrent Varron et Claudius.)</p>
+<p>VARRON.--Appelez-vous, mon seigneur?</p>
+<p>BRUTUS.--Je vous prie, mes amis, couchez et dormez dans ma tente: il est possible que je vous éveille bientôt pour porter quelque message à mon frère Cassius.</p>
+<p>VARRON.--Permettez-nous de rester debout, seigneur, et de veiller en attendant vos ordres.</p>
+<p>BRUTUS.--Non, je ne veux pas que vous veilliez; couchez-vous, mes amis. Il peut se faire que je change de pensée.--Vois, Lucius, voici le livre que j&#x27;ai tant cherché; je l&#x27;avais mis dans la poche de ma robe.</p>
+<p>(Les serviteurs se couchent.)</p>
+<p>LUCIUS.--J&#x27;étais bien sûr que vous ne me l&#x27;aviez pas donné, seigneur.</p>
+<p>BRUTUS.--Excuse-moi, mon bon garçon, je suis sujet à oublier.--Peux-tu tenir ouverts un moment tes yeux appesantis, et jouer sur ton instrument un air ou deux?</p>
+<p>LUCIUS.--Oui, mon seigneur, si cela vous fait plaisir.</p>
+<p>BRUTUS.--J&#x27;en serai bien aise, mon garçon. Je te fatigue trop, mais tu as bonne volonté.</p>
+<p>LUCIUS.--C&#x27;est mon devoir, seigneur.</p>
+<p>BRUTUS.--Je ne devrais pas étendre tes devoirs au delà de tes forces. Je sais qu&#x27;un jeune sang demande son temps de sommeil.</p>
+<p>LUCIUS.--J&#x27;ai dormi, mon seigneur.</p>
+<p>BRUTUS.--Tu as bien fait, et tu dormiras encore: je ne te retiendrai pas longtemps. Si je vis, je te ferai du bien. (Musique accompagnée de chant.) C&#x27;est un chant à endormir. O sommeil meurtrier! tu appesantis donc ta massue de plomb sur ce garçon qui te jouait un air! Honnête serviteur, dors bien; je ne veux pas te faire le tort de t&#x27;éveiller. Si tu laisses tomber ta tête, tu briseras ton instrument: je vais te l&#x27;ôter, et bonne nuit, mon bon garçon.--Voyons, voyons; n&#x27;ai-je pas plié le feuillet en quittant ma lecture? C&#x27;est ici, je crois. ( Il s&#x27;assied) Que ce flambeau éclaire mal! (Entre l&#x27;ombre de Jules César.) Ah! qui entre ici? C&#x27;est apparemment la faiblesse de mes yeux qui produit cette horrible vision!--Il s&#x27;avance sur moi!--Es-tu quelque chose? es-tu quelque dieu, quelque ange ou quelque démon, toi qui glaces mon sang et fais dresser mes cheveux? Parle-moi, qu&#x27;es-tu?</p>
+<p>L&#x27;OMBRE DE CÉSAR.--Ton mauvais génie, Brutus.</p>
+<p>BRUTUS.--Pourquoi viens-tu?</p>
+<p>L&#x27;OMBRE DE CÉSAR.--Pour te dire que tu me verras à Philippes.</p>
+<p>BRUTUS.--A la bonne heure. Je te reverrai donc encore?</p>
+<p>L&#x27;OMBRE DE CÉSAR.--Oui, à Philippes.</p>
+<p>BRUTUS.--Eh bien! je te reverrai à Philippes. (L&#x27;ombre disparaît.) Quand je retrouvais mon courage, tu t&#x27;évanouis: mauvais génie, j&#x27;aurais voulu t&#x27;entretenir plus longtemps.--Garçon! Lucius! Varron! Claudius! amis! éveillez-vous. Claudius!</p>
+<p>LUCIUS.--Il y a des cordes fausses, mon seigneur.</p>
+<p>BRUTUS.--Il croit être encore à son instrument.--Lucius, réveille-toi.</p>
+<p>LUCIUS.--Mon seigneur.</p>
+<p>BRUTUS.--Est-ce un songe, Lucius, qui t&#x27;a fait pousser ce cri?</p>
+<p>LUCIUS.--Seigneur, je ne crois pas avoir crié.</p>
+<p>BRUTUS.--Oui, tu as crié.--As-tu vu quelque chose?</p>
+<p>LUCIUS.--Rien, mon seigneur.</p>
+<p>BRUTUS.--Rendors-toi, Lucius!--Allons, Claudius; et toi mon ami, éveille-toi.</p>
+<p>VARRON.--Seigneur.</p>
+<p>CLAUDIUS.--Seigneur.</p>
+<p>BRUTUS.--Pourquoi donc, je vous en prie, avez-vous tous deux crié dans votre sommeil?</p>
+<p>VARRON ET CLAUDIUS.--Nous, seigneur?</p>
+<p>BRUTUS.--Oui, vous. Avez-vous vu quelque chose?</p>
+<p>VARRON.--Non, mon seigneur, je n&#x27;ai rien vu.</p>
+<p>CLAUDIUS.--Ni moi, mon seigneur.</p>
+<p>BRUTUS.--Allez, saluez de ma part mon frère Cassius: dites-lui qu&#x27;il mette de bonne heure ses troupes en marche; nous le suivrons.</p>
+<p>VARRON ET CLAUDIUS.--Vous serez obéi, mon seigneur.</p>
+<p>(Ils sortent.)</p>
+<h3 class="sub">Fin du quatrième acte — Acte cinquième</h3>
+<h2 class="chapter" id="c15">Scène I</h2>
+<p>Les plaines de Philippes.</p>
+<p>Entrent ANTOINE, OCTAVE et leur armée</p>
+<p>OCTAVE.--Vous le voyez, Antoine, l&#x27;événement a répondu à nos espérances. Vous disiez que l&#x27;ennemi ne descendrait point en plaine, mais qu&#x27;il tiendrait les collines et le haut pays. Le contraire arrive; leurs armées sont en vue. Leur intention est de venir ici nous provoquer au combat, et ils répondent avant que nous les ayons demandés.</p>
+<p>ANTOINE.--Bah! je suis dans leur âme, et je sais bien pourquoi ils le font. Ils consentiraient volontiers à se trouver ailleurs; c&#x27;est la peur qui les fait descendre pour nous braver, s&#x27;imaginant par cette parade nous donner une ferme conviction de leur courage; mais ils n&#x27;en ont aucun.</p>
+<p>(Entre un messager.)</p>
+<p>LE MESSAGER.--Préparez-vous, généraux: l&#x27;ennemi vient en belle ordonnance; il a déployé l&#x27;enseigne sanglante de la bataille. Il faut à l&#x27;instant faire quelques dispositions.</p>
+<p>ANTOINE.--Octave, menez au pas votre armée sur la gauche de la plaine.</p>
+<p>OCTAVE.--C&#x27;est moi qui tiendrai la droite; prenez vous-même la gauche.</p>
+<p>ANTOINE.--Pourquoi me contrecarrer dans un moment aussi critique?</p>
+<p>OCTAVE.--Je ne cherche pas à vous contrecarrer, mais je le veux ainsi.</p>
+<p>(Marche.--Tambour.--Entrent Brutus et Cassius, avec leur armée; Lucius, Titinius, Messala et plusieurs autres.)</p>
+<p>BRUTUS.--Ils s&#x27;arrêtent, et voudraient parlementer.</p>
+<p>CASSIUS.--Faites halte, Titinius; nous allons sortir des lignes pour conférer avec eux.</p>
+<p>OCTAVE.--Marc-Antoine, donnerons-nous le signal du combat?</p>
+<p>ANTOINE.--Non, César; nous attendrons leur attaque. Les généraux voudraient s&#x27;aboucher un moment.</p>
+<p>OCTAVE.--Ne vous ébranlez point jusqu&#x27;au signal.</p>
+<p>BRUTUS.--Les paroles avant les coups, n&#x27;est-il pas vrai, compatriotes?</p>
+<p>OCTAVE.--Non que nous préférions les paroles, comme vous le faites.</p>
+<p>BRUTUS.--De bonnes paroles, Octave, valent mieux que de mauvais coups.</p>
+<p>ANTOINE.--En portant vos mauvais coups, Brutus, vous donnez de bonnes paroles: témoin l&#x27;ouverture que vous avez faite dans le coeur de César, en criant: «Salut et longue vie à César.»</p>
+<p>CASSIUS.--Antoine, la place où vous portez vos coups est encore inconnue; mais pour vos paroles, elles vont dépouiller les abeilles d&#x27;Hybla, et les laissent privées de miel.</p>
+<p>ANTOINE.--Mais non pas d&#x27;aiguillon.</p>
+<p>BRUTUS.--Oh vraiment! d&#x27;aiguillon et de voix; car vous leur avez dérobé leur bourdonnement, Antoine, et très-prudemment vous avez soin de menacer avant de frapper.</p>
+<p>ANTOINE.--Traîtres, vous n&#x27;en fîtes pas de même, quand de vos lâches poignards vous vous blessâtes l&#x27;un l&#x27;autre dans les flancs de César: vous lui montriez vos dents comme des singes, vous rampiez devant lui comme des lévriers, et, prosternés comme des captifs, vous baisiez les pieds de César; tandis que le détestable Casca, venant par derrière comme un chien abâtardi, perça le cou de César. O flatteurs!</p>
+<p>CASSIUS.--Flatteurs. Rends-toi grâces, Brutus. Si Cassius en avait été cru, cette langue ne nous outragerait pas ainsi aujourd&#x27;hui.</p>
+<p>OCTAVE.--Finissons, allons au fait. Si le débat nous met en sueur, elle coulera plus rouge au moment de la preuve.--Voyez, je tire l&#x27;épée contre les conspirateurs: quand pensez-vous que l&#x27;épée rentrera dans le fourreau? Jamais, jusqu&#x27;à ce que les vingt-trois blessures de César soient pleinement vengées, ou que le meurtre d&#x27;un second César se soit accumulé sur l&#x27;épée des traîtres.</p>
+<p>BRUTUS.--César, tu ne peux pas mourir de la main des traîtres, à moins que tu ne les amènes avec toi.</p>
+<p>OCTAVE.--Je l&#x27;espère bien; je ne suis pas né pour mourir par l&#x27;épée de Brutus.</p>
+<p>BRUTUS.--O fusses-tu le plus noble de ta race, jeune homme, tu ne pourrais périr d&#x27;une main plus honorable.</p>
+<p>CASSIUS.--Écolier mal appris, indigne d&#x27;un tel honneur! l&#x27;associé d&#x27;un farceur et d&#x27;un débauché!</p>
+<p>ANTOINE.--Toujours le vieux Cassius!</p>
+<p>OCTAVE.--Venez, Antoine; éloignons-nous. Au défi, traîtres! nous vous le jetons par la face. Si vous osez combattre aujourd&#x27;hui, venez en plaine; sinon, venez quand vous en aurez le coeur.</p>
+<p>(Octave et Antoine sortent avec leur armée.)</p>
+<p>CASSIUS.--Allons, vents, soufflez maintenant; vagues, enflez-vous, et vogue la barque! La tempête est soulevée, et tout est à la merci du hasard.</p>
+<p>BRUTUS.--Lucilius, écoutez un mot.</p>
+<p>LUCILIUS.--Mon seigneur.</p>
+<p>(Brutus et Lucilius s&#x27;entretiennent à part.)</p>
+<p>CASSIUS.--Messala.</p>
+<p>MESSALA.--Que veut mon général?</p>
+<p>CASSIUS.--Messala, ce jour est celui de ma naissance; ce même jour vit naître Cassius. Donne-moi ta main, Messala: sois-moi témoin que c&#x27;est malgré moi que je suis forcé, comme le fut Pompée, de confier au hasard d&#x27;une bataille toutes nos libertés. Tu sais combien je fus attaché à la secte d&#x27;Épicure et à ses principes: aujourd&#x27;hui mes pensées ont changé, et j&#x27;ajoute quelque foi aux signes qui prédisent l&#x27;avenir. Dans notre marche depuis Sardes, deux puissants aigles se sont abattus sur notre enseigne avancée; ils s&#x27;y sont posés, et là, prenant leur pâture de la main de nos soldats, ils nous ont accompagnés jusqu&#x27;à ces champs de Philippes. Ce matin ils ont pris leur vol, et ont disparu: à leur place une nuée de corbeaux et de vautours planent sur nos têtes; du haut des airs ils fixent la vue sur nous, comme sur une proie déjà mourante, et, nous couvrant de leur ombre, ils semblent former un dais fatal sous lequel s&#x27;étend notre armée près de rendre l&#x27;âme.</p>
+<p>MESSALA.--Ne croyez point à tout cela.</p>
+<p>CASSIUS.--Je n&#x27;y crois que jusqu&#x27;à un certain point, car je me sens plein d&#x27;ardeur, et déterminé à affronter avec constance tous les périls.</p>
+<p>BRUTUS.--Qu&#x27;il en soit ainsi, Lucilius.</p>
+<p>CASSIUS.--Maintenant, noble Brutus, que les dieux nous soient aujourd&#x27;hui assez favorables pour que nous puissions, toujours amis, conduire nos jours jusqu&#x27;à la vieillesse. Mais puisqu&#x27;il reste toujours quelque incertitude dans les choses humaines, raisonnons sur ce qui peut arriver de pis. Si nous perdons cette bataille, cet instant est le dernier où nous converserons ensemble: qu&#x27;avez-vous résolu de faire alors?</p>
+<p>BRUTUS.--De me régler sur cette philosophie qui me fit blâmer Caton pour s&#x27;être donné la mort à lui-même. Je ne puis m&#x27;empêcher de trouver qu&#x27;il est lâche de prévenir ainsi, par crainte de ce qui peut arriver, le terme assigné à la vie: je m&#x27;armerai de patience, attendant ce que voudront ordonner ces puissances suprêmes, quelles qu&#x27;elles soient, qui nous gouvernent ici-bas[48].</p>
+<p>[Note 48: Brutus lui répondit: «Estant encore jeune et non assez expérimenté ès affaires de ce monde, je fis, ne sçay comment, un discours de philosophie par lequel je reprenois et blasmois fort Caton de s&#x27;estre desfait soy-mesme, comme n&#x27;estant point acte licite ny religieux, quant aux dieux ny quant aux hommes vertueux, de ne point céder à l&#x27;ordonnance divine, et ne prendre pas constamment en gré tout ce qui lui plaist nous envoyer, ainsi faire le restif et s&#x27;en retirer: mais maintenant me trouvant au milieu du péril, je suis de toute autre résolution, tellement que s&#x27;il ne plaist à Dieu que l&#x27;issue de cette bataille soit heureuse pour nous, je ne veux plus tenter d&#x27;autres esperances, ni tâcher à remettre sus de rechef autre équipage de guerre, ains me délivreray des misères de ce monde, car je donnai aux ides de mars ma vie à mon pays, pour laquelle j&#x27;en vivrai une autre libre et glorieuse.» PLUTARQUE, Vie de Brutus.</p>
+<p>Shakspeare, qui n&#x27;a jamais mis en récit que ce qui lui est impossible de mettre en action, renferme ici en une seule scène le changement que plusieurs années ont opéré dans l&#x27;esprit de Brutus. C&#x27;est d&#x27;ailleurs une explication donnée d&#x27;avance des raisons pour lesquelles Brutus ne se tuera pas après la mort de Cassius et l&#x27;événement très-incertain de la bataille. Il s&#x27;annonce comme déterminé à tout supporter avec résignation, excepté le malheur auquel il ne croit pas qu&#x27;il soit permis à un homme d&#x27;honneur de se soumettre, la honte d&#x27;être mené en triomphe. Cette intention de l&#x27;auteur est évidente; les commentateurs anglais qui ont multiplié les notes sur ce passage, auraient dû la faire remarquer.]</p>
+<p>CASSIUS.--Ainsi donc, si nous perdons cette bataille, vous consentez à être conduit en triomphe à travers les rues de Rome?</p>
+<p>BRUTUS.--Non, Cassius, non. Ne pense pas, noble Romain, que jamais Brutus soit conduit enchaîné à Rome; il porte un coeur trop grand. Il faut que ce jour même consomme l&#x27;ouvrage commencé aux ides de mars, et je ne sais si nous devons nous revoir encore: faisons-nous donc notre éternel adieu. Pour jamais, et pour jamais adieu, Cassius. Si nous nous revoyons, eh bien! ce sera avec un sourire; sinon, nous aurons eu raison de nous dire adieu.</p>
+<p>CASSIUS.--Pour jamais, et pour jamais adieu, Brutus. Si nous nous revoyons, oui, sans doute, ce sera avec un sourire; sinon, tu as dit vrai, nous aurons eu raison de nous dire adieu.</p>
+<p>BRUTUS.--Allons, en marche.--Oh! si l&#x27;on pouvait connaître la fin des événements de ce jour avant le moment qui doit l&#x27;amener. Mais il suffit, le jour finira; et alors nous le saurons.--Allons, ho! partons.</p>
+<p>(Ils sortent.)</p>
+<h2 class="chapter" id="c16">Scène II</h2>
+<p>Toujours près de Philippes.--Le champ de bataille.--Une alarme.</p>
+<p>Entrent BRUTUS ET MESSALA.</p>
+<p>BRUTUS vivement.--A cheval, à cheval, Messala! cours, remets ces billets aux légions de l&#x27;autre aile. (Une vive alarme.) Qu&#x27;elles donnent à la fois; car je vois que l&#x27;aile d&#x27;Octave va mollement: un choc soudain la culbutera. Vole, vole, Messala: qu&#x27;elles fondent toutes ensemble!</p>
+<p>(Ils sortent.)</p>
+<h2 class="chapter" id="c17">Scène III</h2>
+<p>Toujours près de Philippes.--Une autre partie du champ de bataille.--Une alarme.</p>
+<p>Entrent CASSIUS ET TITINIUS.</p>
+<p>CASSIUS.--Oh! regarde, Titinius, regarde; les lâches fuient. Je me suis fait l&#x27;ennemi de mes propres soldats: cette enseigne que voilà, je l&#x27;ai vue tourner en arrière; j&#x27;ai tué le lâche, et je l&#x27;ai reprise de sa main.</p>
+<p>TITINIUS.--O Cassius! Brutus a donné trop tôt le signal. Se voyant quelque avantage sur Octave, il s&#x27;y est abandonné avec trop d&#x27;ardeur; ses soldats se sont livrés au pillage, tandis qu&#x27;Antoine nous enveloppait tous.</p>
+<p>PINDARUS.--Fuyez plus loin, seigneur, fuyez plus loin: Marc-Antoine est dans vos tentes. Fuyez donc, mon seigneur; noble Cassius, fuyez au loin.</p>
+<p>CASSIUS.--Cette colline est assez loin.--Vois, vois, Titinius: est-ce dans mes tentes que j&#x27;aperçois cette flamme?</p>
+<p>TITINIUS.--Ce sont elles, mon seigneur.</p>
+<p>CASSIUS.--Titinius, si tu m&#x27;aimes, monte mon cheval, et enfonce-lui les éperons dans les flancs jusqu&#x27;à ce que tu sois arrivé à ces troupes là-bas, et de là ici: que je puisse être assuré si ces troupes sont amies ou ennemies.</p>
+<p>TITINIUS.--Je serai de retour ici dans l&#x27;espace d&#x27;une pensée.</p>
+<p>(Il sort.)</p>
+<p>CASSIUS.--Toi, Pindarus, monte plus haut vers ce sommet: ma vue fut toujours trouble; suis de l&#x27;oeil Titinius, et dis-moi ce que tu remarques sur le champ de bataille. (Pindarus sort.) Ce jour fut le premier où je respirai: le temps a décrit son cercle, et je finirai au point où j&#x27;ai commencé: le cours de ma vie est révolu.--Eh bien! dis-moi, quelles nouvelles?</p>
+<p>PINDARUS, de la hauteur.--Oh! mon seigneur!</p>
+<p>CASSIUS.--Quelles nouvelles?</p>
+<p>PINDARUS.--Voilà Titinius investi par la cavalerie, qui le poursuit à toute bride.--Cependant il galope encore.--Les voilà près de l&#x27;atteindre.--Maintenant Titinius.... maintenant quelques-uns mettent pied à terre.--Oh! il met pied à terre aussi.--Il est pris!--Écoutez, ils poussent un cri de joie.</p>
+<p>(On entend des cris lointains.)</p>
+<p>CASSIUS.--Descends, ne regarde pas davantage.--O lâche que je suis, de vivre assez longtemps pour voir mon fidèle ami pris sous mes yeux! (Entre Pindarus.) Toi, viens ici: je t&#x27;ai fait prisonnier chez les Parthes, et, en conservant ta vie, je te fis jurer que quelque chose que je pusse te commander, tu l&#x27;entreprendrais: maintenant remplis ton serment. De ce moment sois libre; prends cette fidèle épée qui se plongea dans les flancs de César, et traverses-en mon sein. Ne t&#x27;arrête point à me répliquer: obéis, prends cette poignée, et dès que j&#x27;aurai couvert mon visage comme je le fais en ce moment, toi, dirige le fer.--César, tu es vengé avec la même épée qui te donna la mort.</p>
+<p>(Il meurt.)</p>
+<p>PINDARUS.--Me voilà donc libre! Si j&#x27;avais osé faire ma volonté, je n&#x27;eusse pas voulu le devenir ainsi.--O Cassius! Pindarus fuira si loin de ces contrées que jamais Romain ne pourra le reconnaître.</p>
+<p>(Il sort.)</p>
+<p>(Rentrent Titinius et Messala.)</p>
+<p>MESSALA.--Ce n&#x27;est qu&#x27;un échange, Titinius; car Octave est renversé par l&#x27;effort du noble Brutus, comme les légions de Cassius le sont par Antoine.</p>
+<p>TITINIUS.--Ces nouvelles vont bien consoler Cassius.</p>
+<p>MESSALA.--Où l&#x27;avez-vous laissé?</p>
+<p>TITINIUS.--Tout désespéré, avec son esclave Pindarus, ici, sur cette colline.</p>
+<p>MESSALA.--N&#x27;est-ce point lui qui est couché sur l&#x27;herbe?</p>
+<p>TITINIUS.--Il n&#x27;est pas couché comme un homme vivant.--Oh! mon coeur frémit!</p>
+<p>MESSALA.--N&#x27;est-ce pas lui?</p>
+<p>TITINIUS.--Non, ce fut lui, Messala! Cassius n&#x27;est plus! O soleil couchant, de même que tu descends dans la nuit au milieu de tes rayons rougeâtres, de même le jour de Cassius s&#x27;est couché rougi de sang. Le soleil de Rome est couché, notre jour est fini: viennent les nuages, les vapeurs de la nuit, les dangers; notre tâche est faite. C&#x27;est la crainte que je ne pusse réussir qui l&#x27;a conduit à cette action.</p>
+<p>MESSALA.--C&#x27;est la crainte de ne pas réussir qui l&#x27;a conduit à cette action. O détestable erreur, fille de la mélancolie, pourquoi montres-tu à la vive imagination des hommes des choses qui ne sont pas? O erreur si promptement conçue, tu n&#x27;arrives jamais à une heureuse naissance; mais tu donnes la mort à la mère qui t&#x27;engendra.</p>
+<p>TITINIUS.--Holà, Pindarus! Pindarus, où es-tu?</p>
+<p>MESSALA,--Cherchez-le, Titinius, tandis que je vais au-devant du noble Brutus, foudroyer son oreille de cette nouvelle. Je puis bien dire foudroyer, car l&#x27;acier perçant et les flèches empoisonnées seraient aussi bien reçues de Brutus que le récit de ce que nous venons de voir.</p>
+<p>TITINIUS.--Hâtez-vous, Messala; et moi pendant ce temps je chercherai Pindarus. (Messala sort.) Pourquoi m&#x27;avais-tu envoyé loin de toi, brave Cassius? N&#x27;ai-je pas trouvé tes amis? n&#x27;ont-ils pas mis sur mon front cette couronne de victoire, me chargeant de te la donner? n&#x27;as-tu pas entendu leurs acclamations? Hélas! tu as mal interprété toutes ces choses. Mais attends, reçois cette guirlande sur ta tête. Ton Brutus me recommanda de te la donner; je veux accomplir son ordre.--Viens, approche, Brutus, et vois ce qu&#x27;était pour moi Galus Cassius.--Vous me le permettez, grands dieux! j&#x27;accomplis le devoir d&#x27;un Romain. Viens, épée de Cassius, et trouve le coeur de Titinius.</p>
+<p>(Il meurt.)</p>
+<p>(Une alarme.--Rentre Messala, avec Brutus, le jeune Caton, Straton, Volumnius et Lucilius.)</p>
+<p>BRUTUS.--Où est-il? où est-il? Où est son corps, Messala?</p>
+<p>MESSALA.--Là-bas, là; et Titinius gémissant près de lui.</p>
+<p>BRUTUS.--Le visage de Titinius est tourné vers le ciel!</p>
+<p>CATON.--Il s&#x27;est tué!</p>
+<p>BRUTUS.--O Jules César, tu es puissant encore! ton ombre se promène sur la terre, et tourne nos épées contre nos propres entrailles.</p>
+<p>(Bruit d&#x27;alarme éloigné.)</p>
+<p>CATON.--Brave Titinius! Voyez, n&#x27;a-t-il pas couronné Cassius mort?</p>
+<p>BRUTUS.--Est-il encore au monde deux Romains semblables à ceux-là? Toi le dernier de tous les Romains, adieu, repose en paix: il est impossible que jamais Rome enfante ton égal.--Amis, je dois plus de larmes à cet homme mort que vous ne me verrez lui en donner.--J&#x27;en trouverai le temps, Cassius, j&#x27;en trouverai le temps!--Venez donc, et faites porter ce corps à Thasos. Ses obsèques ne se feront point dans notre camp; elles pourraient nous abattre.--Suivez-moi, Lucilius; venez aussi, jeune Caton: retournons au champ de bataille. Labéon, Flavius, faites avancer nos lignes. La troisième heure finit: avant la nuit, Romains, nous tenterons encore la fortune dans un nouveau combat[49].</p>
+<p>(Ils sortent.)</p>
+<p>[Note 49: Ce ne fut pas le même jour, mais trois semaines après, que Brutus donna la seconde bataille dans ces mêmes plaines de Philippes où les deux armées demeurèrent tout ce temps en présence.]</p>
+<h2 class="chapter" id="c18">Scène IV</h2>
+<p>Une autre partie du champ de bataille.</p>
+<p>UNE MÊLÉE--Entrent en combattant des soldats des deux armées; puis BRUTUS, CATON, LUCILIUS, et plusieurs autres.</p>
+<p>BRUTUS.--Encore, compatriotes! oh! tenez encore un moment.</p>
+<p>CATON.--Quel bâtard le refusera? Qui veut me suivre? Je veux proclamer mon nom dans tout le champ de bataille.--Je suis le fils de Marcus Caton, l&#x27;ennemi des tyrans, l&#x27;ami de ma patrie. Soldats, je suis le fils de Marcus Gaton.</p>
+<p>(Il charge l&#x27;ennemi.)</p>
+<p>BRUTUS.--Et moi je suis Brutus, Marcus Brutus, l&#x27;ami de mon pays: connaissez-moi pour Brutus.</p>
+<p>(Il sort en chargeant l&#x27;ennemi.--Le jeune Caton est accablé par le nombre et tombe.)</p>
+<p>LUCILIUS.--O jeune et noble Caton, te voilà tombé! Eh bien! tu meurs aussi courageusement que Titinius; tu mérites qu&#x27;on t&#x27;honore comme le fils de Caton.</p>
+<p>PREMIER SOLDAT.--Cède, ou tu meurs.</p>
+<p>LUCILIUS.--Je ne cède qu&#x27;à condition de mourir. Tiens, prends tout cet or pour me tuer à l&#x27;instant. (Il lui présente de l&#x27;or). Tue Brutus, et deviens fameux par sa mort.</p>
+<p>PREMIER SOLDAT.--Il ne faut pas le tuer: c&#x27;est un illustre prisonnier.</p>
+<p>SECOND SOLDAT.--Place, place. Dites à Antoine que Brutus est pris.</p>
+<p>PREMIER SOLDAT.--C&#x27;est moi qui lui dirai cette nouvelle. Le général vient. (Entre Antoine). Brutus est pris, Brutus est pris, mon seigneur.</p>
+<p>ANTOINE.--Où est-il?</p>
+<p>LUCILIUS.--En sûreté, Antoine; Brutus est toujours en sûreté. Jamais, j&#x27;ose t&#x27;en répondre, jamais ennemi ne prendra vivant le noble Brutus. Les dieux le préservent d&#x27;une telle ignominie! En quelque lieu que tu le trouves, vivant ou mort, tu le trouveras toujours semblable à Brutus, semblable à lui-même.</p>
+<p>ANTOINE.--Amis, ce n&#x27;est point là Brutus; mais je vous assure que je ne regarde pas cette prise comme moins importante. Ayez soin qu&#x27;il ne soit fait aucun mal à cet homme; traitez-le avec toute sorte d&#x27;égards. J&#x27;aimerais mieux avoir ses pareils pour amis que pour ennemis. Avancez, voyez si Brutus est mort ou en vie, et revenez à la tente d&#x27;Octave nous rendre compte de ce qui est arrivé.</p>
+<p>(Ils sortent.)</p>
+<h2 class="chapter" id="c19">Scène V</h2>
+<p>Une partie de la plaine.</p>
+<p>Entrent BRUTUS, DARDANIUS, CLITUS, STRATON ET VOLUMNIUS.</p>
+<p>BRUTUS.--Venez, tristes restes de mes amis: reposons-nous sur ce rocher.</p>
+<p>CLITUS.--Statilius a montré au loin sa torche allumée: cependant, mon seigneur, il ne revient point; il est captif ou tué.</p>
+<p>BRUTUS.--Assieds-toi là, Clitus: tuer est le mot; c&#x27;est l&#x27;action appropriée au moment. Écoute, Clitus.</p>
+<p>(Il lui parle à l&#x27;oreille.)</p>
+<p>CLITUS.--Quoi! moi, monseigneur? Non, pas pour le monde entier.</p>
+<p>BRUTUS.--Silence donc, pas de paroles.</p>
+<p>CLITUS.--J&#x27;aimerais mieux me tuer moi-même.</p>
+<p>BRUTUS--Dardanius, écoute.</p>
+<p>(Il lui parle bas.)</p>
+<p>DARDANIUS.--Moi! commettre une pareille action?</p>
+<p>CLITUS.--O Dardanius!</p>
+<p>DARDANIUS.--O Clitus!</p>
+<p>CLITUS.--Quelle funeste demande Brutus t&#x27;a-t-il faite?</p>
+<p>DARDANIUS.--De le tuer, Clitus. Regarde, le voilà qui médite.</p>
+<p>CLITUS.--Maintenant ce noble vase est si plein de douleur, qu&#x27;il déborde jusque par ses yeux.</p>
+<p>BRUTUS.--Approche, bon Volumnius. Un mot, écoute.</p>
+<p>VOLUMNIUS.--Que veut mon maître?</p>
+<p>BRUTUS.--Ceci, Volumnius. L&#x27;ombre de César m&#x27;est apparue la nuit à deux reprises différentes, une fois à Sardes, et la nuit dernière ici, dans les champs de Philippes. Je sais que mon heure est venue.</p>
+<p>VOLUMNIUS.--Non, seigneur, non.</p>
+<p>BRUTUS.--Elle est venue, j&#x27;en suis certain, Volumnius. Tu vois ce monde, Volumnius, et comment tout s&#x27;y passe. Nos ennemis nous ont battu, jusqu&#x27;au bord de l&#x27;abîme. Il est plus noble de nous y lancer nous-mêmes, que d&#x27;hésiter jusqu&#x27;à ce qu&#x27;ils nous y poussent. Bon Volumnius, tu sais que nous fûmes aux écoles ensemble. Au nom de cette vieille amitié qui nous unit, tiens, je t&#x27;en prie, la poignée de mon épée, tandis que je me jetterai sur le fer.</p>
+<p>VOLUMNIUS.--Ce n&#x27;est pas là l&#x27;office d&#x27;un ami, mon seigneur.</p>
+<p>(Une nouvelle alarme.)</p>
+<p>CLITUS.--Fuyez, fuyez, mon seigneur! il n&#x27;y a pas un instant à perdre.</p>
+<p>BRUTUS.--Adieu, vous, et vous, et vous Volumnius.--Straton, tu es resté tout ce temps endormi: adieu, toi aussi, Straton.--Compatriotes, mon coeur se réjouit parce que dans toute ma vie je n&#x27;ai pas trouvé un homme qui ne me fût fidèle. Je recueillerai plus de gloire dans ce jour de désastre, qu&#x27;Octave et Marc-Antoine n&#x27;en obtiendront par cette vile conquête. Ainsi, adieu tous à la fois, car la langue de Brutus a presque terminé l&#x27;histoire de sa vie. La nuit est suspendue sur mes yeux; et mes membres, qui n&#x27;ont travaillé que pour atteindre à cette heure, demandent le repos. (Alarme.--Cris derrière le théâtre.) Fuyez, fuyez, fuyez.</p>
+<p>CLITUS.--Fuyez, mon seigneur, fuyez.</p>
+<p>BRUTUS.--Pars, je vais te suivre.--(Sortent Clitus, Dardanius et Volumnius). Straton, je t&#x27;en prie, reste auprès de ton maître. Tu es un homme plein d&#x27;attachement, ta vie n&#x27;a point été sans honneur: prends donc mon épée, et détourne ton visage, tandis que je me précipiterai dessus. Veux-tu, Straton?</p>
+<p>STRATON.--Auparavant, donnez-moi votre main. Mon maître, adieu!</p>
+<p>BRUTUS.--Adieu, bon Straton.--César, maintenant apaise-toi: je ne te tuai pas la moitié d&#x27;aussi bon coeur.</p>
+<p>(Il se précipite sur son épée, et meurt.)</p>
+<p>(Une alarme.--Une retraite.) (Entrent Antoine, Octave et leur armée; Messala et Lucius.)</p>
+<p>OCTAVE, regardant Straton.--Quel est cet homme?</p>
+<p>MESSALA.--Il appartient à mon général.--Straton, où est ton maître?</p>
+<p>STRATON.--Hors des chaînes que vous portez, Messala. Les vainqueurs n&#x27;ont plus que le pouvoir de le réduire en cendres. Brutus seul a triomphé de Brutus, et nul autre homme que lui n&#x27;a l&#x27;honneur de sa mort.</p>
+<p>LUCILIUS.--Et c&#x27;était ainsi qu&#x27;on devait trouver Brutus.--Je te rends grâces, Brutus, d&#x27;avoir prouvé que Lucilius disait la vérité.</p>
+<p>OCTAVE.--Tous ceux qui servirent Brutus, je les retiens auprès de moi.--Mon ami, veux-tu passer avec moi ta vie?</p>
+<p>STRATON.--Oui, si Messala veut vous répondre de moi.</p>
+<p>OCTAVE.--Fais-le, Messala.</p>
+<p>MESSALA.--Comment est mort mon général, Straton?</p>
+<p>STRATON.--J&#x27;ai tenu son épée, il s&#x27;est jeté sur le fer.</p>
+<p>MESSALA.--Octave, prends donc à ta suite celui qui a rendu le dernier service à mon maître.</p>
+<p>ANTOINE.--Ce fut là le plus noble Romain d&#x27;entre eux tous. Tous les conspirateurs, hors lui seul, n&#x27;ont fait ce qu&#x27;ils ont fait que par jalousie du grand César: lui seul entra dans leur ligue par un principe vertueux et de bien public. Sa vie fut douce; les éléments de son être étaient si heureusement combinés, que la nature put se lever et dire à l&#x27;Univers: C&#x27;était un homme[50].</p>
+<p>OCTAVE.--Rendons-lui le respect et les devoirs funèbres que mérite sa vertu. Son corps reposera cette nuit dans ma tente, environné de tous les honneurs qui conviennent à un soldat. Rappelons l&#x27;armée sous les tentes, et allons jouir ensemble de la gloire de cette heureuse journée.</p>
+<p>(Ils sortent.)</p>
+<p>[Note 50: Plutarque rapporte dans la Vie d&#x27;Antoine que celui-ci ayant trouvé le corps de Brutus, lui dit d&#x27;abord quelques injures, «mais ensuite il le couvrit de sa propre cotte d&#x27;armes, et donna ordre à l&#x27;un de ses serfs affranchis qu&#x27;il meist ordre à sa sépulture: et depuis ayant entendu que le serf affranchi n&#x27;avoit pas fait brûler la cotte d&#x27;armes avec le corps pour autant qu&#x27;elle valoit beaucoup d&#x27;argent, et qu&#x27;il avoit substrait une bonne partie des deniers ordonnés pour ses funérailles et pour sa sépulture, il l&#x27;en feït mourir.»]</p>
+<h3 class="sub">Fin du cinquième et dernier acte.</h3>
+<p class="colophon">Texte du domaine public. Édition numérique BookClassics.</p>
+</body></html>

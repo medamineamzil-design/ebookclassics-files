@@ -204,6 +204,26 @@
     "txt"
    ]
   },
+  "as-you-like-it": {
+   "de": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "atala": {
    "en": [
     "epub",
@@ -772,6 +792,26 @@
     "txt"
    ]
   },
+  "julius-caesar": {
+   "de": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "just-so-stories": {
    "en": [
     "epub",
@@ -1014,6 +1054,20 @@
   },
   "mrs-dalloway": {
    "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "much-ado-about-nothing": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
     "epub",
     "html",
     "pdf",
@@ -1896,6 +1950,26 @@
     "txt"
    ]
   },
+  "the-merchant-of-venice": {
+   "de": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-metamorphosis": {
    "de": [
     "epub",
@@ -2248,6 +2322,14 @@
     "txt"
    ],
    "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-taming-of-the-shrew": {
+   "en": [
     "epub",
     "html",
     "pdf",
@@ -2633,5 +2715,5 @@
    ]
   }
  },
- "generated": "2026-10-03T23:59:56Z"
+ "generated": "2026-10-04T00:10:48Z"
 }

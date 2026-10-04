@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Comme il vous plaira — William Shakespeare</title><style>
+:root{--paper:#fbf8f1;--ink:#1f1b16;--muted:#6f6352;--accent:#9a6b2f;--rule:#e4dccb}
+@media (prefers-color-scheme:dark){:root{--paper:#16140f;--ink:#ece6d8;--muted:#a79c88;--accent:#d8a95e;--rule:#2e2a22}}
+html{background:var(--paper)}
+body{font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Libertinus Serif",Georgia,serif;color:var(--ink);
+     background:var(--paper);line-height:1.65;font-size:1.12rem;max-width:36em;margin:0 auto;padding:2.5em 1.25em 5em}
+.titlepage{text-align:center;min-height:70vh;display:flex;flex-direction:column;justify-content:center;gap:.6em;
+           border-bottom:1px solid var(--rule);margin-bottom:2.5em;padding-bottom:2.5em}
+.titlepage img{max-width:260px;width:60%;margin:0 auto 1.5em;border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+h1{font-size:2.4em;line-height:1.15;font-weight:600;margin:0;letter-spacing:-.01em}
+.author{font-style:italic;font-size:1.25em;color:var(--accent);margin:0}
+.translator{font-size:.95em;color:var(--muted);margin:0}
+nav.toc{margin:0 0 3em}
+nav.toc h2{font-size:.85em;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:left;margin:0 0 .8em}
+nav.toc ol{list-style:none;padding:0;margin:0;columns:1}
+nav.toc li{margin:.25em 0}
+nav.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent}
+nav.toc a:hover{border-color:var(--accent)}
+h2.chapter{font-size:1.45em;font-weight:600;text-align:center;margin:3.5em 0 1.6em;line-height:1.3}
+h2.chapter::before{content:"";display:block;width:3em;height:2px;background:var(--accent);margin:0 auto 1.1em}
+p{margin:0;text-indent:1.5em;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+h2.chapter + p, .titlepage + p{text-indent:0}
+h2.chapter + p::first-letter{font-size:3.1em;float:left;line-height:.85;padding:.08em .08em 0 0;color:var(--accent);font-weight:600}
+.colophon{margin-top:5em;padding-top:1.5em;border-top:1px solid var(--rule);text-align:center;color:var(--muted);font-size:.85em;text-indent:0}
+h3.sub{font-size:1em;font-weight:600;font-variant:small-caps;letter-spacing:.04em;text-align:center;margin:2.2em 0 1em}
+h3.sub + p{text-indent:0}
+@media print{h2.chapter{break-before:page}}
+</style></head><body>
+<header class="titlepage">
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjI0MDAiIHZpZXdCb3g9IjAgMCAxNjAwIDI0MDAiPgo8cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSIyNDAwIiBmaWxsPSIjMWIzYTRiIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjMwMCIgZmlsbD0iI2Y0YTI2MSIgb3BhY2l0eT0iLjkyIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMWIzYTRiIiBzdHJva2Utd2lkdGg9IjEyIiBvcGFjaXR5PSIuNSIvPgo8Y2lyY2xlIGN4PSIxMTIwIiBjeT0iNTYwIiByPSIxMjAiIGZpbGw9IiMxYjNhNGIiIG9wYWNpdHk9Ii4xOCIvPgo8cmVjdCB4PSIxNjAiIHk9IjkzMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIxMCIgZmlsbD0iI2Y0YTI2MSIvPgo8dGV4dCB4PSIxNjAiIHk9IjEwOTgiIGZvbnQtc2l6ZT0iMTUwIiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmZGYxZTYiPkNvbW1lIGlsIHZvdXM8L3RleHQ+PHRleHQgeD0iMTYwIiB5PSIxMjYyIiBmb250LXNpemU9IjE1MCIgZm9udC13ZWlnaHQ9IjYwMCIgZm9udC1mYW1pbHk9IkxpYmVydGludXMgU2VyaWYsIEdlb3JnaWEsIHNlcmlmIiBmaWxsPSIjZmRmMWU2Ij5wbGFpcmE8L3RleHQ+Cjx0ZXh0IHg9IjE2MCIgeT0iMTQ5OCIgZm9udC1zaXplPSI2OCIgZm9udC1zdHlsZT0iaXRhbGljIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmNGEyNjEiPldpbGxpYW0gU2hha2VzcGVhcmU8L3RleHQ+Cjx0ZXh0IHg9IjE2MCIgeT0iMjIzMCIgZm9udC1zaXplPSI0NCIgbGV0dGVyLXNwYWNpbmc9IjE0IiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmZGYxZTYiIG9wYWNpdHk9Ii43NSI+Qk9PS0NMQVNTSUNTPC90ZXh0Pgo8L3N2Zz4=" alt="">
+<h1>Comme il vous plaira</h1>
+<p class="author">William Shakespeare</p>
+<p class="translator">Traduction de François Guizot</p>
+</header>
+<nav class="toc"><h2>Table des matières</h2><ol>
+<li><a href="#c1">Acte premier — Scène I</a></li>
+<li><a href="#c2">I. Quelle est la raison pour laquelle la partie à qui on donne le démenti doit devenir l&#x27;agresseur au défi, et de la nature des démentis.</a></li>
+<li><a href="#c3">II. De la méthode et de la diversité des démentis — III. Du démenti certain ou indirect.</a></li>
+<li><a href="#c4">IV. Des démentis conditionnels, ou du démenti circonstanciel.</a></li>
+<li><a href="#c5">V. Du démenti en général — VI. Du démenti en particulier.</a></li>
+<li><a href="#c6">VII. Des démentis fous.</a></li>
+<li><a href="#c7">VIII. Conclusion sur la manière d&#x27;arracher ou de rendre le démenti; ou la contradiction querelleuse.</a></li>
+</ol></nav>
+<p>Après avoir vu dans Timon d&#x27;Athènes un misanthrope farouche, qui fuit dans un désert où il ne cesse de maudire les hommes et d&#x27;entretenir la haine qu&#x27;il leur a jurée, nous allons faire connaissance avec un ami de la solitude, d&#x27;une mélancolie plus douce, qui se permet quelques traits de satire, mais qui plus souvent se contente de la plainte, et critique le monde, inspiré par le seul regret de ne l&#x27;avoir pas trouvé meilleur. Retiré dans les bois pour y rêver au doux murmure des ruisseaux et au bruissement du feuillage, Jacques pourrait dire de lui-même comme un poëte de nos jours qui oublie de temps en temps ses sombres dédains:</p>
+<h3 class="sub">I love not man the less, but nature more. (CHILDE HAROLD, chant IV.)</h3>
+<p>Je n&#x27;aime pas moins l&#x27;homme, mais j&#x27;aime davantage la nature.</p>
+<p>Jacques a jadis joui des plaisirs de la société; mais il est désabusé de toutes ses vanités: c&#x27;est un personnage tout à fait contemplatif; il pense et ne fait rien, dit Hazlit. C&#x27;est le prince des philosophes nonchalants; sa seule passion, c&#x27;est la pensée.</p>
+<p>Avec ce rêveur aussi sensible qu&#x27;original, Shakspeare a réuni dans la forêt des Ardennes, autour du duc exilé, une espèce de cour arcadienne, dans laquelle le bon chevalier de la Manche aurait été sans doute heureux de se trouver, lorsque, dans l&#x27;accès d&#x27;un goût pastoral, il voulait se métamorphoser en berger Quichotis et faire de son écuyer le berger Pansino. Les arcadiens de Shakspeare ont conservé quelque chose de leurs moeurs chevaleresques, et ses bergères nous charment les unes par la vérité de leurs moeurs champêtres, et les autres par le mélange de ces moeurs qu&#x27;elles ont adoptées, et de cet esprit cultivé qu&#x27;elles doivent à leurs premières habitudes. Peut-être trouvera-t-on que Rosalinde, dans la liberté de son langage, profite un peu trop du privilége du costume qui cache son sexe; mais elle aime de si bonne foi, et en même temps avec une gaieté si piquante; le dévouement de son amitié l&#x27;ennoblit tellement à nos yeux, sa coquetterie est si franche et si spirituelle, son caquetage est presque toujours si aimable qu&#x27;on se sent disposé à lui tout pardonner. Célie, plus silencieuse et plus tendre, forme avec elle un heureux contraste.</p>
+<p>L&#x27;amour, comme le font les villageois, est peint au naturel dans Sylvius et la dédaigneuse Phébé.</p>
+<p>Touchstone, qui est dans son genre un philosophe grotesque, n&#x27;est pas l&#x27;amoureux le plus fou de la pièce; si pour aimer il choisit la paysanne la plus gauche, et s&#x27;il aime en vrai bouffon, ses saillies sur le mariage, l&#x27;amour et la solitude sont des traits excellents: il est le seul qu&#x27;aucune illusion n&#x27;abuse.</p>
+<p>Il y a dans cette pièce plus de conversations que d&#x27;événements: on y respire en quelque sorte l&#x27;air d&#x27;un monde idéal, la pièce semble inspirée par la pureté des deux héroïnes, et lorsque les mariages et la conversion subite du duc usurpateur qui forment une espèce de dénoûment vont rappeler les habitants de la forêt des Ardennes dans les habitudes de la vie réelle, si Jacques les abandonne, ce n&#x27;est pas dans un caprice morose, mais parce qu&#x27;il y a dans ce caractère insouciant et rêveur un besoin de pensées, et peut-être même de regrets vagues, qu&#x27;il espère retrouver encore auprès du duc Frédéric, devenu à son tour un solitaire.</p>
+<p>On abandonnerait d&#x27;autant plus volontiers avec Jacques la fête générale, que Shakspeare, par oubli sans doute, ne nous y montre pas le vieux Adam, ce fidèle serviteur, ce véritable ami d&#x27;Orlando, si touchant par son dévouement, ses larmes généreuses et sa noble sincérité.</p>
+<p>La fable romanesque de cette pièce fut puisée dans une nouvelle pastorale de Lodge qui était sans doute bien connue du temps de Shakspeare. On y voit Adam dignement récompensé par le prince. Les emprunts que le poëte a faits au romancier sont assez nombreux; mais le caractère de Jacques, ceux de Touchstone et d&#x27;Audrey sont de l&#x27;invention de Shakspeare.</p>
+<p>Le docteur Malone suppose que c&#x27;est en 1600 que fut écrite la comédie de Comme il vous plaira; c&#x27;est une de celles qui ont le plus enrichi les recueils d&#x27;extraits élégants; on y remarquera le fameux tableau de la vie humaine: Le monde est un théâtre, etc., etc.</p>
+<h3 class="sub">Comme il vous plaira — Comédie</h3>
+<h3 class="sub">Personnages</h3>
+<p>LE DUC, vivant dans l&#x27;exil. FRÉDÉRIC, frère du duc, et usurpateur de son duché. AMIENS, } seigneurs qui ont suivi JACQUES,} le duc dans son exil. LE BEAU, courtisan à la suite de Frédéric. CHARLES, son lutteur. OLIVIER, } JACQUES, }fils de sir Rowland des ORLANDO, }Bois. ADAM,  }serviteurs d&#x27;Olivier. DENNIS,} TOUCHSTONE, paysan bouffon. SIR OLIVIER MAR-TEXT, vicaire. CORIN,    } SYLVIUS,  }bergers. WILLIAM, paysan, amoureux d&#x27;Audrey. PERSONNAGE REPRÉSENTANT L&#x27;HYMEN. ROSALINDE, fille du duc exilé. CÉLIE, fille de Frédéric. PHÉBÉ, bergère. AUDREY, jeune villageoise. SEIGNEURS A LA SUITE DES DEUX DUCS, PAGES, GARDES-CHASSE, ETC., ETC.</p>
+<h2 class="chapter" id="c1">Acte premier — Scène I</h2>
+<p>Verger, près de la maison d&#x27;Olivier.</p>
+<p>Entrent ORLANDO ET ADAM.</p>
+<p>ORLANDO.--Je me rappelle bien, Adam; tel a été mon legs, une misérable somme de mille écus dans son testament; et, comme tu dis, il a chargé mon frère, sous peine de sa malédiction, de me bien élever, et voilà la cause de mes chagrins. Il entretient mon frère Jacques à l&#x27;école, et la renommée parle magnifiquement de ses progrès. Pour moi, il m&#x27;entretient au logis en paysan, ou pour mieux dire, il me garde ici sans aucun entretien; car peut-on appeler entretien pour un gentilhomme de ma naissance, un traitement qui ne diffère en aucune façon de celui des boeufs à l&#x27;étable? Ses chevaux sont mieux traités; car, outre qu&#x27;ils sont très-bien nourris, on les dresse au manége; et à cette fin on paye bien cher des écuyers: moi, qui suis son frère, je ne gagne sous sa tutelle que de la croissance: et pour cela les animaux qui vivent sur les fumiers de la basse-cour lui sont aussi obligés que moi; et pour ce néant qu&#x27;il me prodigue si libéralement, sa conduite à mon égard me fait perdre le peu de dons réels que j&#x27;ai reçus de la nature. Il me fait manger avec ses valets; il m&#x27;interdit la place d&#x27;un frère, et il dégrade autant qu&#x27;il est en lui ma distinction naturelle par mon éducation. C&#x27;est là, Adam, ce qui m&#x27;afflige. Mais l&#x27;âme de mon père, qui est, je crois, en moi, commence à se révolter contre cette servitude. Non, je ne l&#x27;endurerai pas plus longtemps, quoique je ne connaisse pas encore d&#x27;expédient raisonnable et sûr pour m&#x27;y soustraire.</p>
+<p>(Olivier survient.)</p>
+<p>ADAM.--Voilà votre frère, mon maître, qui vient.</p>
+<p>ORLANDO.--Tiens-toi à l&#x27;écart, Adam, et tu entendras comme il va me secouer.</p>
+<p>OLIVIER.--Eh bien! monsieur, que faites-vous ici?</p>
+<p>ORLANDO.--Rien: on ne m&#x27;apprend point à faire quelque chose.</p>
+<p>OLIVIER.--Que gâtez-vous alors, monsieur?</p>
+<p>ORLANDO.--Vraiment, monsieur, je vous aide à gâter ce que Dieu a fait, votre pauvre misérable frère, à force d&#x27;oisiveté.</p>
+<p>OLIVIER.--Que diable! monsieur occupez-vous mieux, et en attendant soyez un zéro.</p>
+<p>ORLANDO.--Irai-je garder vos pourceaux et manger des carouges avec eux? Quelle portion de patrimoine ai-je follement dépensée, pour en être réduit à une telle détresse?</p>
+<p>OLIVIER.--Savez-vous où vous êtes, monsieur?</p>
+<p>ORLANDO.--Oh! très-bien, monsieur: je suis ici dans votre verger.</p>
+<p>OLIVIER.--Savez-vous devant qui vous êtes, monsieur?</p>
+<p>ORLANDO.--Oui, je le sais mieux que celui devant qui je suis ne sait me connaître. Je sais que vous êtes mon frère aîné; et, selon les droits du sang, vous devriez me connaître sous ce rapport. La coutume des nations veut que vous soyez plus que moi, parce que vous êtes né avant moi: mais cette tradition ne me ravit pas mon sang, y eût-il vingt frères entre nous. J&#x27;ai en moi autant de mon père que vous, bien que j&#x27;avoue qu&#x27;étant venu avant moi, vous vous êtes trouvé plus près de ses titres.</p>
+<p>OLIVIER.--Que dites-vous, mon garçon?</p>
+<p>ORLANDO.--Allons, allons, frère aîné, quant à cela vous êtes trop jeune.</p>
+<p>OLIVIER.--Vilain[1], veux-tu mettre la main sur moi?</p>
+<p>[Note 1: Vilain, coquin et homme de basse extraction, les deux frères lui donnent chacun un sens différent.]</p>
+<p>ORLANDO.--Je ne suis point un vilain: je suis le plus jeune des fils du chevalier Rowland des Bois; il était mon père, et il est trois fois vilain celui qui dit qu&#x27;un tel père engendra des vilains.--Si tu n&#x27;étais pas mon frère, je ne détacherais pas cette main de ta gorge que l&#x27;autre ne t&#x27;eût arraché la langue, pour avoir parlé ainsi; tu t&#x27;es insulté toi-même.</p>
+<p>ADAM.--Mes chers maîtres, soyez patients: au nom du souvenir de votre père, soyez d&#x27;accord.</p>
+<p>OLIVIER.--Lâche-moi, te dis-je.</p>
+<p>ORLANDO.--Je ne vous lâcherai que quand il me plaira.--Il faut que vous m&#x27;écoutiez. Mon père vous a chargé, par son testament, de me donner une bonne éducation, et vous m&#x27;avez élevé comme un paysan, en cherchant à obscurcir, à étouffer en moi toutes les qualités d&#x27;un gentilhomme. L&#x27;âme de mon père grandit en moi, et je ne le souffrirai pas plus longtemps. Permettez-moi donc les exercices qui conviennent à un gentilhomme, ou bien donnez-moi le chétif lot que mon père m&#x27;a laissé par son testament, et avec cela j&#x27;irai chercher fortune.</p>
+<p>OLIVIER.--Et que voulez-vous faire? Mendier, sans doute, après que vous aurez tout dépensé? Allons, soit, monsieur; venez; entrez. Je ne veux plus être chargé de vous: vous aurez une partie de ce que vous demandez. Laissez-moi aller, je vous prie.</p>
+<p>ORLANDO.--Je ne veux point vous offenser au delà de ce que mon intérêt exige.</p>
+<p>OLIVIER.--Va-t&#x27;en avec lui, toi, vieux chien.</p>
+<p>ADAM.--Vieux chien: c&#x27;est donc là ma récompense!--Vous avez bien raison, car j&#x27;ai perdu mes dents à votre service. Dieu soit avec l&#x27;âme de mon vieux maître! Il n&#x27;aurait jamais dit un mot pareil.</p>
+<p>(Orlando et Adam sortent.)</p>
+<p>OLIVIER.--Quoi, en est-il ainsi? Commencez-vous à prendre ce ton? Je remédierai à votre insolence, et pourtant je ne vous donnerai pas mille écus.--Holà, Dennis!</p>
+<p>(Dennis se présente.)</p>
+<p>DENNIS.--Monsieur m&#x27;appelle-t-il?</p>
+<p>OLIVIER.--Charles, le lutteur du duc, n&#x27;est-il pas venu ici pour me parler?</p>
+<p>DENNIS.--Oui, monsieur; il est ici, à la porte, et il demande même avec importunité à être introduit auprès de vous.</p>
+<p>OLIVIER.--Fais-le entrer. (Dennis sort.) Ce sera un excellent moyen; c&#x27;est demain que la lutte doit se faire.</p>
+<p>(Entre Charles.)</p>
+<p>CHARLES.--Je souhaite le bonjour à Votre Seigneurie.</p>
+<p>OLIVIER.--Mon bon monsieur Charles, quelles nouvelles nouvelles y a-t-il à la nouvelle cour?</p>
+<p>CHARLES.--Il n&#x27;y a de nouvelles à la cour que les vieilles nouvelles de la cour, monsieur; c&#x27;est-à-dire que le vieux duc est banni par son jeune frère le nouveau duc, et trois ou quatre seigneurs, qui lui sont attachés, se sont exilés volontairement avec lui; leurs terres et leurs revenus enrichissent le nouveau duc; ce qui fait qu&#x27;il consent volontiers qu&#x27;ils aillent où bon leur semble.</p>
+<p>OLIVIER.--Savez-vous si Rosalinde, la fille du duc, est bannie avec son père?</p>
+<p>CHARLES.--Oh! non, monsieur; car sa cousine, la fille du duc, l&#x27;aime à un tel point (ayant été élevées ensemble depuis le berceau), qu&#x27;elle l&#x27;aurait suivie dans son exil, ou serait morte de douleur, si elle n&#x27;avait pu la suivre. Elle est à la cour, où son oncle l&#x27;aime autant que sa propre fille, et jamais deux dames ne s&#x27;aimèrent comme elles s&#x27;aiment.</p>
+<p>OLIVIER.--Où doit vivre le vieux duc?</p>
+<p>CHARLES.--On dit qu&#x27;il est déjà dans la forêt des Ardennes, et qu&#x27;il a avec lui plusieurs braves seigneurs qui vivent là comme le vieux Robin Hood d&#x27;Angleterre: on assure que beaucoup de jeunes gentilshommes s&#x27;empressent tous les jours auprès de lui, et qu&#x27;ils passent les jours sans soucis, comme on faisait dans l&#x27;âge d&#x27;or.</p>
+<p>OLIVIER.--Ne devez-vous pas lutter demain devant le nouveau duc?</p>
+<p>CHARLES.--Oui vraiment, monsieur, et je viens vous faire part d&#x27;une chose. On m&#x27;a donné secrètement à entendre, monsieur, que votre jeune frère Orlando avait envie de venir déguisé s&#x27;essayer contre moi. Demain, monsieur, je lutte pour ma réputation, et celui qui m&#x27;échappera sans avoir quelque membre cassé, il faudra qu&#x27;il se batte bien. Votre frère est jeune et délicat, et je ne voudrais pas, par considération pour vous, lui faire aucun mal; ce que je serai cependant forcé de faire pour mon honneur s&#x27;il entre dans l&#x27;arène. Ainsi, l&#x27;affection que j&#x27;ai pour vous m&#x27;engage à vous en prévenir, afin que vous tâchiez de le dissuader de son projet, ou que vous consentiez à supporter de bonne grâce le malheur auquel il se sera exposé; il l&#x27;aura cherché lui-même, et tout à fait contre mon inclination.</p>
+<p>OLIVIER.--Je te remercie, Charles, de l&#x27;amitié que tu as pour moi, et tu verras que je t&#x27;en prouverai ma reconnaissance. J&#x27;avais déjà été averti du dessein de mon frère, et sous main j&#x27;ai travaillé à le faire renoncer à cette idée; mais il est déterminé. Je te dirai, Charles, que c&#x27;est le jeune homme le plus entêté qu&#x27;il y ait en France, rempli d&#x27;ambition, jaloux à l&#x27;excès des talents des autres, un traître qui a la lâcheté de tramer des complots contre moi, son propre frère. Ainsi, agis à ton gré; j&#x27;aimerais autant que tu lui brisasses la tête qu&#x27;un doigt, et tu feras bien d&#x27;y prendre garde; car si tu ne lui fais qu&#x27;un peu de mal, ou s&#x27;il n&#x27;acquiert pas lui-même un grand honneur à tes dépens, il cherchera à t&#x27;empoisonner, il te fera tomber dans quelque piége funeste, et il ne te quittera point qu&#x27;il ne t&#x27;ait fait perdre la vie de quelque façon indirecte; car je t&#x27;assure, et je ne saurais presque te le dire sans pleurer, qu&#x27;il n&#x27;y a pas un être dans le monde, aussi jeune et aussi méchant que lui. Je ne te parle de lui qu&#x27;avec la réserve d&#x27;un frère; mais si je te le disséquais tel qu&#x27;il est, je serais forcé de rougir et de pleurer, et toi tu pâlirais d&#x27;effroi.</p>
+<p>CHARLES.--Je suis bien content d&#x27;être venu vous trouver: s&#x27;il vient demain, je lui donnerai son compte: s&#x27;il est jamais en état d&#x27;aller seul, après s&#x27;être essayé contre moi, de ma vie je ne lutterai pour le prix: et là-dessus Dieu garde Votre Seigneurie!</p>
+<p>OLIVIER.--Adieu, bon Charles.--A présent, il me faut exciter mon jouteur: j&#x27;espère m&#x27;en voir bientôt débarrassé; car mon âme, je ne sais cependant pas pourquoi, ne hait rien plus que lui; en effet, il a le coeur noble, il est instruit sans avoir jamais été à l&#x27;école, parlant bien et avec noblesse, il est aimé de toutes les classes jusqu&#x27;à l&#x27;adoration; et si bien dans le coeur de tout le monde, et surtout de mes propres gens, qui le connaissent le mieux, que moi j&#x27;en suis méprisé. Mais cela ne durera pas: le lutteur va y mettre bon ordre. Il ne me reste rien à faire, qu&#x27;à exciter ce garçon là-dessus, et j&#x27;y vais de ce pas.</p>
+<p>Plaine devant le palais du duc.</p>
+<p>CÉLIE.--Je t&#x27;en conjure, Rosalinde, ma chère cousine, sois plus gaie.</p>
+<p>ROSALINDE.--Chère Célie, je montre bien plus de gaieté que je n&#x27;en possède; et tu veux que j&#x27;en montre encore davantage? Si tu ne peux m&#x27;apprendre à oublier un père banni, renonce à vouloir m&#x27;apprendre à me souvenir d&#x27;une grande joie.</p>
+<p>CÉLIE.--Ah! je vois bien que tu ne m&#x27;aimes pas aussi tendrement que je t&#x27;aime; car si mon oncle, ton père, au lieu d&#x27;être banni, avait au contraire banni ton oncle, le duc mon père, pourvu que tu fusses restée avec moi, mon amitié pour toi m&#x27;aurait appris à prendre ton père pour le mien; et tu en ferais autant, si la force de ton amitié égalait celle de la mienne.</p>
+<p>ROSALINDE.--Eh bien! je veux tâcher d&#x27;oublier ma situation, pour me réjouir de la tienne.</p>
+<p>CÉLIE.--Tu sais que mon père n&#x27;a que moi d&#x27;enfants; il n&#x27;y a pas d&#x27;apparence qu&#x27;il en ait jamais d&#x27;autre; et certainement à sa mort tu seras son héritière; tout ce qu&#x27;il a enlevé de force à ton père, je te le rendrai par affection; sur mon honneur, je le ferai, et que je devienne un monstre s&#x27;il m&#x27;arrive d&#x27;enfreindre ce serment! Ainsi, ma charmante Rose, ma chère Rose, sois gaie.</p>
+<p>ROSALINDE.--Je le serai désormais, cousine; je veux imaginer quelque amusement. Voyons, que penses-tu de faire l&#x27;amour?</p>
+<p>CÉLIE.--Oh! ma chère, je t&#x27;en prie, fais de l&#x27;amour un jeu; mais ne va pas aimer sérieusement aucun homme, et même par amusement ne va jamais si loin que tu ne puisses te retirer en honneur et sans rougir.</p>
+<p>ROSALINDE.--Eh bien! à quoi donc nous amuserons-nous?</p>
+<p>CÉLIE.--Asseyons-nous, et par nos moqueries dérangeons de son rouet cette bonne ménagère, la Fortune, afin qu&#x27;à l&#x27;avenir ses dons soient plus également partagés[2].</p>
+<p>[Note 2: Nous avons déjà vu, dans Antoine et Cléopâtre, que Shakspeare donne un rouet à la Fortune et en fait une ménagère.]</p>
+<p>ROSALINDE.--Je voudrais que cela fût en notre pouvoir, car ses bienfaits sont souvent bien mal placés, et la bonne aveugle fait surtout de grandes méprises dans les dons qu&#x27;elle distribue aux femmes.</p>
+<p>CÉLIE.--Oh! cela est bien vrai; car celles qu&#x27;elle fait belles, elle les fait rarement vertueuses, et celles qu&#x27;elle fait vertueuses, elle les fait en général bien laides.</p>
+<p>ROSALINDE.--Mais, cousine, tu passes de l&#x27;office de la Fortune à celui de la Nature. La Fortune est la souveraine des dons de ce monde, mais elle ne peut rien sur les traits naturels.</p>
+<p>(Entre Touchstone.)</p>
+<p>CÉLIE.--Non?... Lorsque la Nature a formé une belle créature, la Fortune ne peut-elle pas la faire tomber dans le feu? Et, bien que la Nature nous ait donné de l&#x27;esprit pour railler la Fortune, cette même fortune envoie cet imbécile pour interrompre notre entretien.</p>
+<p>ROSALINDE.--En vérité, la Fortune est trop cruelle envers la Nature, puisque la Fortune envoie l&#x27;enfant de la nature pour interrompre l&#x27;esprit de la nature.</p>
+<p>CÉLIE.--Peut-être n&#x27;est-ce pas ici l&#x27;ouvrage de la Fortune, mais celui de la Nature elle-même, qui, s&#x27;apercevant que notre esprit naturel est trop épais pour raisonner sur de telles déesses, nous envoie cet imbécile pour notre pierre à aiguiser[3], car toujours la stupidité d&#x27;un sot sert à aiguiser l&#x27;esprit.--Eh bien! homme d&#x27;esprit, où allez-vous?</p>
+<p>[Note 3: Célie et Rosalinde jouent sur le sens du mot Touchstone, qui veut dire pierre à aiguiser ou pierre de touche. Les clowns du théâtre anglais sont des bouffons, des graciosi; il ne faut pas les confondre avec les fous en titre.]</p>
+<p>TOUCHSTONE.--Maîtresse, il faut que vous veniez trouver votre père.</p>
+<p>CÉLIE.--Vous a-t-on fait le messager?</p>
+<p>TOUCHSTONE.--Non, sur mon honneur; mais on m&#x27;a ordonné de venir vous chercher.</p>
+<p>ROSALINDE.--Où avez-vous appris ce serment, fou?</p>
+<p>TOUCHSTONE.--D&#x27;un certain chevalier, qui jurait sur son honneur que les beignets étaient bons, et qui jurait encore sur son honneur que la moutarde ne valait rien: moi, je soutiendrai que les beignets ne valaient rien, et que la moutarde était bonne, et cependant le chevalier ne faisait pas un faux serment.</p>
+<p>CÉLIE.--Comment prouverez-vous cela, avec toute la masse de votre science?</p>
+<p>ROSALINDE.--Allons, voyons, démuselez votre sagesse.</p>
+<p>TOUCHSTONE.--Avancez-vous toutes deux, caressez-vous le menton, et jurez par votre barbe que je suis un fripon[4].</p>
+<p>[Note 4: On trouve une phrase équivalente dans Gargantua.]</p>
+<p>CÉLIE.--Par notre barbe, si nous en avions, tu es un fripon.</p>
+<p>TOUCHSTONE.--Et moi, je jurerais par ma friponnerie, si j&#x27;en avais, que je suis un fripon; mais si vous jurez par ce qui n&#x27;est pas, vous ne faites pas de faux serment; aussi le chevalier n&#x27;en fit pas davantage, lorsqu&#x27;il jura par son honneur, car il n&#x27;en eut jamais, ou s&#x27;il en avait eu, il l&#x27;avait perdu à force de serments, longtemps avant qu&#x27;il vît ces beignets ou cette moutarde.</p>
+<p>CÉLIE.--Dis-moi, je te prie, de qui tu veux parler?</p>
+<p>TOUCHSTONE.--De cet homme que le vieux Frédéric, votre père, aime tant.</p>
+<p>CÉLIE.--L&#x27;amitié de mon père suffit pour l&#x27;honorer: en voilà assez; ne parle plus de lui; tu seras fouetté un de ces jours pour tes moqueries.</p>
+<p>TOUCHSTONE,--C&#x27;est une grande pitié, que les fous ne puissent dire sagement ce que les sages font follement.</p>
+<p>CÉLIE.--Par ma foi, tu dis vrai; car, depuis que le peu d&#x27;esprit qu&#x27;ont les fous[5] a été condamné au silence, le peu de folie des gens sages se montre extraordinairement.--Voici monsieur Le Beau.</p>
+<p>[Note 5: Tôt ou tard la vérité devait déplaire à la cour, même dans la bouche des fous.]</p>
+<p>(Entre Le Beau.)</p>
+<p>ROSALINDE.--Avec la bouche pleine de nouvelles.</p>
+<p>CÉLIE.--Qu&#x27;il va dégorger sur nous, comme les pigeons donnent à manger à leurs petits.</p>
+<p>ROSALINDE.--Alors nous serons farcies de nouvelles.</p>
+<p>CÉLIE.--Tant mieux, nous n&#x27;en trouverons que plus de chalands. Bonjour, monsieur Le Beau; quelles nouvelles?</p>
+<p>LE BEAU.--Belle princesse, vous avez perdu un grand plaisir.</p>
+<p>CÉLIE.--Du plaisir! de quelle couleur?</p>
+<p>LE BEAU.--De quelle couleur, madame? Que voulez-vous que je vous réponde?</p>
+<p>ROSALINDE.--Au gré de votre esprit et du hasard.</p>
+<p>TOUCHSTONE.--Ou comme le voudront les décrets de la destinée.</p>
+<p>CÉLIE.--Très-bien dit: voilà qui est maçonné avec une truelle[6].</p>
+<p>TOUCHSTONE.--Ma foi, si je ne garde pas mon rang[7]...</p>
+<p>[Note 6: Grossièrement, expression proverbiale.]</p>
+<p>[Note 7: Rank, rang et rance, équivoque.]</p>
+<p>ROSALINDE.--Tu perds ton ancienne odeur.</p>
+<p>LE BEAU.--Vous me troublez, mesdames; je voulais vous faire le récit d&#x27;une belle lutte que vous n&#x27;avez pas eu le plaisir de voir.</p>
+<p>ROSALINDE.--Dites-nous toujours l&#x27;histoire de cette lutte.</p>
+<p>LE BEAU.--Je vous en dirai le commencement; et si cela plaît à Vos Seigneuries, vous pourrez en voir la fin; car le plus beau est encore à faire, et ils viennent l&#x27;exécuter précisément dans l&#x27;endroit où vous êtes.</p>
+<p>CÉLIE.--Eh bien! le commencement, qui est mort et enterré?</p>
+<p>LE BEAU.--Arrive un vieillard avec ses trois fils.</p>
+<p>CÉLIE.--Je pourrais trouver ce début-là à un vieux conte.</p>
+<p>LE BEAU.--Trois jeunes gens de belle taille et de bonne mine...</p>
+<p>ROSALINDE.--Avec des écriteaux à leur cou[8] portant: «On fait à savoir par ces présentes, à tous ceux à qui il appartiendra...»</p>
+<p>[Note 8: Bill, pertuisane, billet, écriteau. L&#x27;équivoque roule sur la double signification du mot.]</p>
+<p>LE BEAU.--L&#x27;aîné des trois a lutté contre Charles, le lutteur du duc: Charles, en un instant, l&#x27;a renversé, et lui a cassé trois côtes; de sorte qu&#x27;il n&#x27;y a guère d&#x27;espérance qu&#x27;il survive. Il a traité le second de même, et le troisième aussi. Ils sont étendus ici près; le pauvre vieillard, leur père, fait de si tristes lamentations à côté d&#x27;eux, que tous les spectateurs le plaignent en pleurant.</p>
+<p>ROSALINDE.--Hélas!</p>
+<p>TOUCHSTONE.--Mais, monsieur, quel est donc l&#x27;amusement que les dames ont perdu?</p>
+<p>LE BEAU.--Hé! celui dont je parle.</p>
+<p>TOUCHSTONE.--Voilà donc comme les hommes deviennent plus sages de jour en jour! C&#x27;est la première fois de ma vie que j&#x27;aie jamais entendu dire que de voir briser des côtes était un amusement pour les dames.</p>
+<p>CÉLIE.--Et moi aussi, je te le proteste.</p>
+<p>ROSALINDE.--Mais y en a-t-il encore d&#x27;autres qui brûlent d&#x27;envie de voir déranger ainsi l&#x27;harmonie de leurs côtes? Y en a-t-il un autre qui se passionne pour le jeu de brise-côte[9].--Verrons-nous cette lutte, cousine?</p>
+<p>[Note 9: Côtes rompues, musique rompue, analogie entre la flûte inégale de Pan, et la disposition anatomique des côtes.]</p>
+<p>LE BEAU.--Il le faudra bien, mesdames, si vous restez où vous êtes; car c&#x27;est ici l&#x27;arène que l&#x27;on a choisie pour la lutte, et ils sont prêts à l&#x27;engager.</p>
+<p>CÉLIE.--Ce sont sûrement eux qui viennent là-bas: restons donc, et voyons-la.</p>
+<p>(Fanfares.--Entrent le duc Frédéric, les seigneurs de sa cour, Orlando, Charles et suite.)</p>
+<p>FRÉDÉRIC.--Avancez: puisque le jeune homme ne veut pas se laisser dissuader, qu&#x27;il soit téméraire à ses risques et périls.</p>
+<p>ROSALINDE.--Est-ce là l&#x27;homme?</p>
+<p>LE BEAU.--Lui-même, madame.</p>
+<p>CÉLIE.--Hélas! il est trop jeune; il a cependant l&#x27;air de devoir remporter la victoire.</p>
+<p>FRÉDÉRIC.--Quoi! vous voilà, ma fille, et vous aussi ma nièce? Vous êtes-vous glissées ici pour voir la lutte?</p>
+<p>ROSALINDE.--Oui, monseigneur, si vous voulez nous le permettre.</p>
+<p>FRÉDÉRIC,--Vous n&#x27;y prendrez pas beaucoup de plaisir, je vous assure: il y a une si grande inégalité de forces entre les deux hommes! Par pitié pour la jeunesse de l&#x27;agresseur, je voudrais le dissuader; mais il ne veut pas écouter mes instances. Parlez-lui, mesdames; voyez si vous pourrez le toucher.</p>
+<p>CÉLIE.--Faites-le venir ici, mon cher monsieur Le Beau.</p>
+<p>FRÉDÉRIC.--Oui, appelez-le; je ne veux pas être présent.</p>
+<p>(Il se retire à l&#x27;écart.)</p>
+<p>LE BEAU.--Monsieur l&#x27;agresseur, les princesses voudraient vous parler.</p>
+<p>ORLANDO.--Je vais leur présenter l&#x27;hommage de mon obéissance et de mon respect.</p>
+<p>ROSALINDE.--Jeune homme, avez-vous défié Charles le lutteur?</p>
+<p>ORLANDO.--Non, belle princesse; il est l&#x27;agresseur général: je ne fais que venir comme les autres, pour essayer avec lui la force de ma jeunesse.</p>
+<p>CÉLIE.--Monsieur, vous êtes trop hardi pour votre âge: vous avez vu de cruelles preuves de la force de cet homme. Si vous pouviez vous voir avec vos yeux, ou vous connaître avec votre jugement, la crainte du malheur où vous vous exposez vous conseillerait de chercher des entreprises moins inégales. Nous vous prions, pour l&#x27;amour de vous-même, de songer à votre sûreté, et de renoncer à cette tentative.</p>
+<p>ROSALINDE.--Rendez-vous, monsieur, votre réputation n&#x27;en sera nullement lésée: nous nous chargeons d&#x27;obtenir du duc que la lutte n&#x27;aille pas plus loin.</p>
+<p>ORLANDO.--Je vous supplie, mesdames, de ne pas me punir par une opinion désavantageuse: j&#x27;avoue que je suis très-coupable de refuser quelque chose à d&#x27;aussi généreuses dames; mais accordez-moi que vos beaux yeux et vos bons souhaits me suivent dans l&#x27;essai que je vais faire. Si je suis vaincu, la honte n&#x27;atteindra qu&#x27;un homme qui n&#x27;eut jamais aucune gloire: si je suis tué, il n&#x27;y aura de mort que moi, qui en serais bien aise: je ne ferai aucun tort à mes amis, car je n&#x27;en ai point pour me pleurer; ma mort ne sera d&#x27;aucun préjudice au monde, car je n&#x27;y possède rien; je n&#x27;y occupe qu&#x27;une place, qui pourra être mieux remplie, quand je l&#x27;aurai laissée vacante.</p>
+<p>ROSALINDE.--Je voudrais que le peu de force que j&#x27;ai fût réunie à la vôtre.</p>
+<p>CÉLIE.--Et la mienne aussi pour augmenter la sienne.</p>
+<p>ROSALINDE.--Portez-vous bien! fasse le ciel que je sois trompée dans mes craintes pour vous!</p>
+<p>ORLANDO.--Puissiez-vous voir exaucer tous les désirs de votre coeur!</p>
+<p>CHARLES.--Allons, où est ce jeune galant, qui est si jaloux de coucher avec sa mère la terre?</p>
+<p>ORLANDO.--Le voici tout prêt, monsieur; mais il est plus modeste dans ses voeux que vous ne dites.</p>
+<p>FRÉDÉRIC.--Vous n&#x27;essayerez qu&#x27;une seule chute?</p>
+<p>CHARLES.--Non, monseigneur, je vous le garantis; si vous avez fait tous vos efforts pour le détourner de tenter la première, vous n&#x27;aurez pas à le prier d&#x27;en risquer une seconde.</p>
+<p>ORLANDO.--Vous comptez bien vous moquer de moi après la lutte; vous ne devriez pas vous en moquer avant; mais voyons; avancez.</p>
+<p>ROSALINDE.--O jeune homme, qu&#x27;Hercule te seconde!</p>
+<p>CÉLIE.--Je voudrais être invisible, pour saisir ce robuste adversaire par la jambe.</p>
+<p>(Charles et Orlando luttent.)</p>
+<p>ROSALINDE.--O excellent jeune homme!</p>
+<p>CÉLIE.--Si j&#x27;avais la foudre dans mes yeux, je sais bien qui des deux serait terrassé.</p>
+<p>FRÉDÉRIC.--Assez, assez.</p>
+<p>(Charles est renversé, acclamations.)</p>
+<p>ORLANDO.--Encore, je vous en supplie, monseigneur; je ne suis pas encore en haleine.</p>
+<p>FRÉDÉRIC.--Comment te trouves-tu, Charles?</p>
+<p>LE BEAU.--Il ne saurait parler, monseigneur.</p>
+<p>FRÉDÉRIC.--Emportez-le. (A Orlando.) Quel est ton nom, jeune homme?</p>
+<p>ORLANDO.--Orlando, monseigneur, le plus jeune des fils du chevalier Rowland des Bois.</p>
+<p>FRÉDÉRIC.--Je voudrais que tu fusses le fils de tout autre homme: le monde tenait ton père pour un homme honorable, mais il fut toujours mon ennemi: cet exploit que tu viens de faire m&#x27;aurait plu bien davantage, si tu descendais d&#x27;une autre maison. Mais, porte-toi bien, tu es un brave jeune homme; je voudrais que tu te fusses dit d&#x27;un autre père!</p>
+<p>(Frédéric sort avec sa suite et Le Beau.)</p>
+<p>CÉLIE.--Si j&#x27;étais mon père, cousine, en agirais-je ainsi?</p>
+<p>ORLANDO.--Je suis plus fier d&#x27;être le fils du chevalier Rowland, le plus jeune de ses fils, et je ne changerais pas ce nom pour devenir l&#x27;héritier adoptif de Frédéric.</p>
+<p>ROSALINDE.--Mon père aimait le chevalier Rowland comme sa propre âme, et tout le monde avait pour lui les sentiments de mon père: si j&#x27;avais su plus tôt que ce jeune homme était son fils, je l&#x27;aurais conjuré en pleurant plutôt que de le laisser s&#x27;exposer ainsi.</p>
+<p>CÉLIE.--Allons, aimable cousine, allons le remercier et l&#x27;encourager. Mon coeur souffre de la dureté et de la jalousie de mon père.--Monsieur, vous méritez des applaudissements universels; si vous tenez aussi bien vos promesses en amour que vous venez de dépasser ce que vous aviez promis, votre maîtresse sera heureuse.</p>
+<p>ROSALINDE, lui donnant la chaîne qu&#x27;elle avait à son cou.--Monsieur, portez ceci en souvenir de moi, d&#x27;une jeune fille disgraciée de la fortune, et qui vous donnerait davantage, si sa main avait des dons à offrir.--Nous retirons-nous, cousine?</p>
+<p>CÉLIE.--Oui.--Adieu, beau gentilhomme.</p>
+<p>ORLANDO.--Ne puis-je donc dire: je vous remercie! Tout ce qu&#x27;il y avait de mieux en moi est renversé, ce qui reste devant vous n&#x27;est qu&#x27;une quintaine[10], un bloc sans vie.</p>
+<p>[Note 10: Quintaine, poteau fiché en plaine auquel on suspendait un bouclier qui servait de but aux javelots, ou aux lances, dans les joutes:</p>
+<p>Lasse enfin de servir au peuple de quintaine.]</p>
+<p>ROSALINDE.--Il nous rappelle: mon orgueil est tombé avec ma fortune. Je vais lui demander ce qu&#x27;il veut.--Avez-vous appellé, monsieur? monsieur, vous avez lutté à merveille, et vous avez vaincu plus que vos ennemis.</p>
+<p>CÉLIE.--Voulez-vous venir, cousine?</p>
+<p>ROSALINDE.--Allons, du courage. Portez-vous bien.</p>
+<p>(Rosalinde et Célie sortent.)</p>
+<p>ORLANDO.--Quelle passion appesantit donc ma langue? Je ne peux lui parler, et cependant elle provoquait l&#x27;entretien. (Le Beau rentre.) Pauvre Orlando, tu as renversé un Charles et quelque être plus faible te maîtrise.</p>
+<p>LE BEAU.--Mon bon monsieur, je vous conseille, en ami, de quitter ces lieux. Quoique vous ayez mérité de grands éloges, les applaudissements sincères et l&#x27;amitié de tout le monde, cependant telles sont maintenant les dispositions du duc qu&#x27;il interprète contre vous tout ce que vous avez fait: le duc est capricieux; enfin, il vous convient mieux à vous de juger ce qu&#x27;il est, qu&#x27;à moi de vous l&#x27;expliquer.</p>
+<p>ORLANDO.--Je vous remercie, monsieur; mais, dites-moi, je vous prie, laquelle de ces deux dames, qui assistaient ici à la lutte, était la fille du duc?</p>
+<p>LE BEAU.--Ni l&#x27;une ni l&#x27;autre, si nous les jugeons par le caractère: cependant la plus petite est vraiment sa fille, et l&#x27;autre est la fille du duc banni, détenue ici par son oncle l&#x27;usurpateur, pour tenir compagnie à sa fille; elles s&#x27;aiment, l&#x27;une et l&#x27;autre, plus que deux soeurs ne peuvent s&#x27;aimer. Mais je vous dirai que, depuis peu, ce duc a pris sa charmante nièce en aversion, sans aucune autre raison, que parce que le peuple fait l&#x27;éloge de ses vertus, et la plaint par amour pour son bon père. Sur ma vie, l&#x27;aversion du duc contre cette jeune dame éclatera tout à coup.--Monsieur, portez-vous bien; par la suite, dans un monde meilleur que celui-ci, je serai charmé de lier une plus étroite connaissance avec vous, et d&#x27;obtenir votre amitié.</p>
+<p>ORLANDO.--Je vous suis très-redevable: portez-vous bien. (Le Beau sort.) Il faut donc que je tombe de la fumée dans le feu[11]. Je quitte un duc tyran pour rentrer sous un frère tyran: mais, ô divine Rosalinde!...</p>
+<p>[Note 11: From the smoke into the smother, de la fumée dans l&#x27;étouffoir.]</p>
+<p>Entrent CÉLIE et ROSALINDE.</p>
+<p>CÉLIE.--Quoi, cousine! quoi, Rosalinde!--Amour, un peu de pitié! Quoi, pas un mot!</p>
+<p>ROSALINDE.--Pas un mot à jeter à un chien[12].</p>
+<p>CÉLIE.--Non; tes paroles sont trop précieuses pour être jetées aux roquets, mais jettes-en ici quelques-unes; allons, estropie-moi avec de bonnes raisons.</p>
+<p>ROSALINDE.--Alors il y aurait deux cousines d&#x27;enfermées, l&#x27;une serait estropiée par des raisons[13], et l&#x27;autre folle sans aucune raison.</p>
+<p>CÉLIE.--Mais tout ceci regarde-t-il votre père?</p>
+<p>ROSALINDE.--Non; il y en a une partie pour le père de mon enfant[14].--Oh! que le monde de tous les jours est rempli de ronces!</p>
+<p>[Note 12: Expression proverbiale.]</p>
+<p>[Note 13: Lame me with reasons, rends-moi boiteuse par de bonnes raisons.</p>
+<p>On a dernièrement voulu prouver par ces mots que Shakspeare était boiteux en traduisant: Prouvez-moi que je suis boiteux. On a compté combien de fois le mot lame était dans ses oeuvres; et chaque fois a été une preuve.]</p>
+<p>[Note 14: Mon futur époux.]</p>
+<p>CÉLIE.--Ce ne sont que des chardons, cousine, jetés sur toi par jeu dans la folie d&#x27;un jour de fête: mais si nous ne marchons pas dans les sentiers battus, ils s&#x27;attacheront à nos jupons.</p>
+<p>ROSALINDE.--Je les secouais bien de ma robe; mais ces chardons sont dans mon coeur.</p>
+<p>CÉLIE.--Chasse-les en faisant: hem! hem!</p>
+<p>ROSALINDE.--J&#x27;essayerais, s&#x27;il ne fallait que dire hem et l&#x27;obtenir.</p>
+<p>CÉLIE.--Allons, allons, il faut lutter contre tes affections.</p>
+<p>ROSALINDE.--Oh! elles prennent le parti d&#x27;un meilleur lutteur que moi!</p>
+<p>CÉLIE.--Que le ciel te protége! Tu essayeras, avec le temps, en dépit d&#x27;une chute.--Mais laissons là toutes ces plaisanteries, et parlons sérieusement: est-il possible que tu tombes aussi subitement et aussi éperdument amoureuse du plus jeune des fils du vieux chevalier Rowland?</p>
+<p>ROSALINDE.--Le duc mon père aimait tendrement son père.</p>
+<p>CÉLIE.--S&#x27;ensuit-il de là que tu doives aimer tendrement son fils? D&#x27;après cette logique, je devrais le haïr; car mon père haïssait son père: cependant je ne hais point Orlando.</p>
+<p>ROSALINDE.--Non, je t&#x27;en prie, pour l&#x27;amour de moi, ne le hais pas.</p>
+<p>CÉLIE.--Pourquoi le haïrai-je? N&#x27;est-il pas rempli de mérite?</p>
+<p>ROSALINDE.--Permets donc que je l&#x27;aime pour cette raison; et toi, aime-le parce que je l&#x27;aime.--Mais regarde, voilà le duc qui vient.</p>
+<p>CÉLIE.--Avec des yeux pleins de courroux.</p>
+<p>(Frédéric entre avec des seigneurs de la cour.)</p>
+<p>FRÉDÉRIC--Hâtez-vous, madame, de partir et de vous retirer de notre cour.</p>
+<p>ROSALINDE.--Moi, mon oncle?</p>
+<p>FRÉDÉRIC.--Vous, ma nièce; et si dans dix jours vous vous trouvez à vingt milles de notre cour, vous mourrez.</p>
+<p>ROSALINDE.--Je supplie Votre Altesse de permettre que j&#x27;emporte avec moi la connaissance de ma faute. Si je me comprends moi-même, si mes propres désirs me sont connus, si je ne rêve pas ou si je ne suis pas folle, comme je ne crois pas l&#x27;être, alors, cher oncle, je vous proteste que jamais je n&#x27;offensai Votre Altesse, pas même par une pensée à demi conçue.</p>
+<p>FRÉDÉRIC--Tel est le langage de tous les traîtres; si leur justification dépendait de leurs paroles, ils seraient aussi innocents que la grâce même: qu&#x27;il vous suffise de savoir que je me méfie de vous.</p>
+<p>ROSALINDE.--Votre méfiance ne suffit pas pour faire de moi une perfide. Dites-moi quels sont les indices de ma trahison?</p>
+<p>FRÉDÉRIC.--Tu es fille de ton père, et c&#x27;est assez.</p>
+<p>ROSALINDE.--Je l&#x27;étais aussi lorsque Votre Altesse s&#x27;est emparée de son duché; je l&#x27;étais, lorsque Votre Altesse l&#x27;a banni. La trahison ne se transmet pas comme un héritage, monseigneur; ou si elle passait de nos parents à nous, qu&#x27;en résulterait-il encore contre moi? Mon père ne fut jamais un traître: ainsi, mon bon seigneur, ne me faites pas l&#x27;injustice de croire que ma pauvreté soit de la perfidie.</p>
+<p>CÉLIE.--Cher souverain, daignez m&#x27;entendre.</p>
+<p>FRÉDÉRIC.--Oui, Célie, c&#x27;est pour l&#x27;amour de vous que nous l&#x27;avons retenue ici; autrement, elle aurait été rôder avec son père.</p>
+<p>CÉLIE.--Je ne vous priai pas alors de la retenir ici; vous suivîtes votre bon plaisir et votre propre pitié: j&#x27;étais trop jeune dans ce temps-là pour apprécier tout ce qu&#x27;elle valait; mais maintenant je la connais; si elle est une traîtresse, j&#x27;en suis donc une aussi, nous avons toujours dormi dans le même lit, nous nous sommes levées au même instant, nous avons étudié, joué, mangé ensemble, et partout où nous sommes allées, nous marchions toujours comme les cygnes de Junon, formant un couple inséparable.</p>
+<p>FRÉDÉRIC.--Elle est trop rusée pour toi; sa douceur, son silence même, et sa patience, parlent au peuple qui la plaint. Tu es une folle, elle te vole ton nom; tu auras plus d&#x27;éclat, et tes vertus brilleront davantage lorsqu&#x27;elle sera partie; n&#x27;ouvre plus la bouche; l&#x27;arrêt que j&#x27;ai prononcé contre elle est ferme et irrévocable; elle est bannie.</p>
+<p>CÉLIE.--Prononcez donc aussi, monseigneur, la même sentence contre moi; car je ne saurais vivre séparée d&#x27;elle.</p>
+<p>FRÉDÉRIC.--Vous êtes une folle.--Vous, ma nièce, faites vos préparatifs; si vous passez le temps fixé, je vous jure, sur mon honneur et sur ma parole solennelle, que vous mourrez.</p>
+<p>(Frédéric sort avec sa suite.)</p>
+<p>CÉLIE.--O ma pauvre Rosalinde, où iras-tu? Veux-tu que nous changions de pères? Je te donnerai le mien. Je t&#x27;en conjure, ne sois pas plus affligée que je ne le suis.</p>
+<p>ROSALINDE.--J&#x27;ai bien plus sujet de l&#x27;être.</p>
+<p>CÉLIE.--Tu n&#x27;en as pas davantage, cousine; console-toi, je t&#x27;en prie: ne sais-tu pas que le duc m&#x27;a bannie, moi, sa fille?</p>
+<p>ROSALINDE.--C&#x27;est ce qu&#x27;il n&#x27;a point fait.</p>
+<p>CÉLIE.--Non, dis-tu? Rosalinde n&#x27;éprouve donc pas cet amour qui me dit que toi et moi sommes une? Quoi! on nous séparera? Quoi! nous nous quitterions, douce amie? non, que mon père cherche une autre héritière. Allons, concertons ensemble le moyen de nous enfuir; voyons où nous irons et ce que nous emporterons avec nous; ne prétends pas te charger seule du fardeau, ni supporter seule tes chagrins, et me laisser à l&#x27;écart: car, tu peux dire tout ce que tu voudras, mais je te jure, par ce ciel qui paraît triste de notre douleur, que j&#x27;irai partout avec toi.</p>
+<p>ROSALINDE.--Mais où irons-nous?</p>
+<p>CÉLIE.--Chercher mon oncle.</p>
+<p>ROSALINDE.--Hélas! de jeunes filles comme nous! quel danger ne courrons-nous pas en voyageant si loin? La beauté tente les voleurs, encore plus que l&#x27;or.</p>
+<p>CÉLIE.--Je m&#x27;habillerai avec des vêtements pauvres et grossiers et je me teindrai le visage avec une espèce de terre d&#x27;ombre; fais-en autant, nous passerons sans être remarquées, et sans exciter personne à nous attaquer.</p>
+<p>ROSALINDE.--Ne vaudrait-il pas mieux, étant d&#x27;une taille plus qu&#x27;ordinaire, que je m&#x27;habillasse tout à fait en homme? Avec une belle et large épée à mon côté, et un épieu à la main (qu&#x27;il reste cachée dans mon coeur toute la peur de femme qui voudra!) j&#x27;aurai un extérieur fanfaron et martial, aussi bien que tant de lâches qui cachent leur poltronnerie sous les apparences de la bravoure.</p>
+<p>CÉLIE.--Comment t&#x27;appellerai-je, lorsque tu seras un homme?</p>
+<p>ROSALINDE.--Je ne veux pas porter un nom moindre que celui du page de Jupiter, ainsi, songe bien à m&#x27;appeler Ganymède, et toi, quel nom veux-tu avoir?</p>
+<p>CÉLIE.--Un nom qui ait quelque rapport avec ma situation: plus de Célie; je suis Aliéna[15].</p>
+<p>[Note 15: Aliéna, mot latin; étrangère bannie.]</p>
+<p>ROSALINDE.--Mais, cousine, si nous essayions de voler le fou de la cour de ton père, ne servirait-il pas à nous distraire dans le voyage?</p>
+<p>CÉLIE.--Il me suivra, j&#x27;en réponds, au bout du monde. Laisse-moi le soin de le gagner: allons ramasser nos bijoux et nos richesses; concertons le moment le plus propice, et les moyens les plus sûrs pour nous soustraire aux poursuites que l&#x27;on ne manquera pas de faire après mon évasion: allons, marchons avec joie... vers la liberté, et non vers le bannissement!</p>
+<p>(Elles sortent.)</p>
+<h3 class="sub">Fin du premier Acte — Acte deuxième</h3>
+<p>La forêt des Ardennes.</p>
+<p>LE VIEUX DUC, AMIENS et deux ou trois SEIGNEURS vêtus en habits de gardes-chasse.</p>
+<p>LE VIEUX DUC.--Eh bien! mes compagnons, mes frères d&#x27;exil, l&#x27;habitude n&#x27;a-t-elle pas rendu cette vie plus douce pour nous que celle que l&#x27;on passe dans la pompe des grandeurs? Ces bois ne sont-ils pas plus exempts de dangers qu&#x27;une cour envieuse? Ici, nous ne souffrons que la peine imposée à Adam, les différences des saisons, la dent glacée et les brutales insultes du vent d&#x27;hiver, et quand il me pince et souffle sur mon corps, jusqu&#x27;à ce que je sois tout transi de froid, je souris et je dis: «Ce n&#x27;est pas ici un flatteur: ce sont là des conseillers qui me convainquent de ce que je suis en me le faisant sentir.» On peut retirer de doux fruits de l&#x27;adversité; telle que le crapaud horrible et venimeux, elle porte cependant dans sa tête un précieux joyau[16]. Notre vie actuelle, séparée de tout commerce avec le monde, trouve des voix dans les arbres, des livres dans les ruisseaux qui coulent, des sermons dans les pierres, et du bien en toute chose.</p>
+<p>[Note 16: C&#x27;était une opinion reçue, du temps de Shakspeare, que la tête d&#x27;un vieux crapaud contenait une pierre précieuse, ou une perle, à laquelle on attribuait de grandes vertus.]</p>
+<p>AMIENS.--Je ne voudrais pas changer cette vie: Votre Grâce est heureuse de pouvoir échanger les rigueurs opiniâtres de la fortune en une existence aussi tranquille et aussi douce.</p>
+<p>LE VIEUX DUC.--Allons, irons-nous tuer quelque venaison? Cependant cela me fait de la peine que ces pauvres créatures tachetées, bourgeoises par naissance de cette cité déserte, voient leurs flancs arrondis percés de ces pointes fourchues dans leurs propres domaines.</p>
+<p>PREMIER SEIGNEUR.--Aussi, monseigneur, cela chagrine beaucoup le mélancolique Jacques; il jure que vous êtes en cela un plus grand usurpateur que votre frère ne l&#x27;a été en vous bannissant. Aujourd&#x27;hui, le seigneur Amiens et moi, nous nous sommes glissés derrière lui, au moment où il était couché sous un chêne, dont l&#x27;antique racine perce les bords du ruisseau qui murmure le long de ce bois; au même endroit est venu languir un pauvre cerf éperdu que le trait d&#x27;un chasseur avait blessé; et vraiment, monseigneur, le malheureux animal poussait de si profonds gémissements, que dans ses efforts la peau de ses côtés a failli crever; ensuite de grosses larmes[17] ont roulé piteusement l&#x27;une après l&#x27;autre sur son nez innocent; et dans cette attitude, la pauvre bête fauve, que le mélancolique Jacques observait avec attention, restait immobile sur le bord du rapide ruisseau, qu&#x27;elle grossissait de ses pleurs.</p>
+<p>[Note 17: Dans l&#x27;ancienne matière médicale, les larmes du cerf mourant étaient réputées jouir d&#x27;une vertu miraculeuse.]</p>
+<p>LE VIEUX DUC.--Mais qu&#x27;a dit Jacques? N&#x27;a-t-il point moralisé sur ce spectacle?</p>
+<p>PREMIER SEIGNEUR.--Oh! oui, monseigneur, il a fait cent comparaisons différentes; d&#x27;abord, sur les pleurs de l&#x27;animal qui tombaient dans le ruisseau, qui n&#x27;avait pas besoin de ce superflu. «Pauvre cerf, disait-il, tu fais ton testament comme les gens du monde; tu donnes à qui avait déjà trop.» Ensuite, sur ce qu&#x27;il était là seul, isolé, abandonné de ses compagnons veloutés: «Voilà qui est bien, dit-il, le malheur sépare de nous la foule de nos compagnons.» Dans le moment, un troupeau sans souci et qui s&#x27;était rassasié dans la prairie, bondit autour de l&#x27;infortuné et ne s&#x27;arrête point pour le saluer: «Oui, disait Jacques, poursuivez, gras et riches citoyens; c&#x27;est la mode: pourquoi vos regards s&#x27;arrêteraient-ils sur ce pauvre malheureux, qui est ruiné et perdu sans ressource?» C&#x27;est ainsi que Jacques, par les plus violentes invectives, attaquait la campagne, la ville, la cour, et même la vie que nous menons ici, jurant que nous étions de vrais usurpateurs, des tyrans et pis encore, d&#x27;effrayer les animaux et de les tuer dans le lieu même que la nature leur avait assigné pour patrie et pour demeure.</p>
+<p>LE VIEUX DUC.--Et l&#x27;avez-vous laissé dans cette méditation?</p>
+<p>SECOND SEIGNEUR.--Oui, monseigneur, nous l&#x27;avons laissé pleurant et faisant des dissertations sur le cerf qui sanglotait.</p>
+<p>LE VIEUX DUC.--Montrez-moi l&#x27;endroit; j&#x27;aime à être aux prises avec lui, lorsqu&#x27;il est dans ces accès d&#x27;humeur; car alors il est plein d&#x27;idées.</p>
+<p>SECOND SEIGNEUR.--Je vais, monseigneur, vous conduire droit à lui.</p>
+<h3 class="sub">Scène II</h3>
+<p>Appartement du palais du duc usurpateur.</p>
+<p>FRÉDÉRIC entre avec des SEIGNEURS de sa suite.</p>
+<p>FRÉDÉRIC.--Est-il possible que personne ne les ait vues? Cela ne peut pas être: quelques traîtres de ma cour sont d&#x27;intelligence avec elles.</p>
+<p>PREMIER SEIGNEUR.--Je ne puis découvrir personne qui l&#x27;ait aperçue. Les dames, chargées de sa chambre, l&#x27;ont vue le soir au lit, et le lendemain, de grand matin, elles ont trouvé le lit vide du trésor qu&#x27;il renfermait, leur maîtresse.</p>
+<p>SECOND SEIGNEUR.--Monseigneur, on ne trouve pas non plus le paysan peu gracieux[18] dont Votre Altesse avait coutume de s&#x27;amuser si souvent. Hespérie, la fille d&#x27;honneur de la princesse, avoue qu&#x27;elle a entendu secrètement votre fille et sa cousine vantant beaucoup les bonnes qualités et les grâces du lutteur qui a vaincu dernièrement le robuste Charles, et elle croit qu&#x27;en quelque endroit que ces dames soient allées, ce jeune homme est sûrement avec elles.</p>
+<p>[Note 18: Roynish du mot français rogneux.]</p>
+<p>FRÉDÉRIC.--Envoyez chez son frère; ramenez ici ce galant; s&#x27;il n&#x27;y est pas, amenez-moi son frère, je le lui ferai bien trouver; allez-y sur-le-champ, et ne vous lassez point de continuer les démarches et les perquisitions, jusqu&#x27;à ce que vous m&#x27;ayez ramené ces folles échappées.</p>
+<p>(Ils sortent.)</p>
+<h3 class="sub">Scène III</h3>
+<p>Devant la maison d&#x27;Olivier.</p>
+<p>Entrent ORLANDO et ADAM, qui se rencontrent.</p>
+<p>ORLANDO.--Qui est là?</p>
+<p>ADAM.--Quoi! c&#x27;est vous, mon jeune maître? O mon cher maître! ô mon doux maître! ô vous, image vivante du vieux chevalier Rowland! Quoi! que faites-vous ici? Ah! pourquoi êtes-vous vertueux? pourquoi les gens vous aiment-ils? pourquoi êtes-vous bon, fort et vaillant? pourquoi avez-vous été assez imprudent pour vouloir vaincre le nerveux lutteur du capricieux duc? Votre gloire vous a trop tôt devancé dans cette maison. Ne savez-vous pas, mon maître, qu&#x27;il est des hommes pour qui toutes leurs qualités deviennent autant d&#x27;ennemis? Voilà tout le fruit que vous retirez des vôtres; vos vertus, mon cher maître, sont pour vous autant de traîtres, sous une forme sainte et céleste. Oh! quel monde est celui-ci, où ce qui est louable empoisonne celui qui le possède!</p>
+<p>ORLANDO.--Quoi donc? de quoi s&#x27;agit-il?</p>
+<p>ADAM.--O malheureux jeune homme, ne franchissez pas ce seuil; l&#x27;ennemi de tout votre mérite habite sous ce toit: votre frère... non, il n&#x27;est pas votre frère, mais... le fils... non... pas le fils... je ne veux pas l&#x27;appeler fils... de celui que j&#x27;allais appeler son père, a appris votre gloire, et cette nuit même il se propose de brûler le logement où vous avez coutume de coucher, et vous dedans. S&#x27;il ne réussit pas dans ce projet, il trouvera d&#x27;autres moyens de vous faire périr; je l&#x27;ai entendu, par hasard, méditant son projet: ce n&#x27;est pas ici un lieu pour vous; cette maison n&#x27;est qu&#x27;une boucherie; abhorrez-la, redoutez-la, n&#x27;y entrez pas.</p>
+<p>ORLANDO.--Mais, Adam, où veux-tu que j&#x27;aille?</p>
+<p>ADAM.--N&#x27;importe où, pourvu que vous ne veniez pas ici.</p>
+<p>ORLANDO.--Quoi! voudrais-tu que j&#x27;allasse mendier mon pain; ou qu&#x27;armé d&#x27;une épée lâche et meurtrière je gagnasse ma vie comme un brigand en volant sur les grands chemins? Voilà ce qu&#x27;il faut que je fasse, ou je ne sais que faire; et c&#x27;est ce que je ne ferai pas, quoique je puisse faire. J&#x27;aime mieux me livrer à la haine d&#x27;un sang dégénéré, d&#x27;un frère sanguinaire.</p>
+<p>ADAM.--Non, ne le faites pas: j&#x27;ai cinq cents écus qui sont les pauvres gages que j&#x27;ai épargnés sous votre père; je les ai amassés pour me servir de nourrice lorsque mes membres vieillis et perclus me refuseraient le service, et que ma vieillesse méprisée serait jetée dans un coin; prenez cela; et que celui qui nourrit les corbeaux, et dont la Providence fournit à la subsistance du passereau, soit le soutien de ma vieillesse! Voilà cet or; je vous le donne tout; prenez-moi pour votre domestique: quoique je paraisse vieux, je suis encore nerveux et robuste; car, dans ma jeunesse, je n&#x27;ai jamais fait usage de ces liqueurs brûlantes qui portent le trouble dans le sang, et jamais je n&#x27;ai cherché, avec un front sans pudeur, les moyens de ruiner et d&#x27;affaiblir ma constitution; aussi ma vieillesse est comme un hiver vigoureux, froid, mais serein: laissez-moi vous suivre; je vous rendrai les services d&#x27;un homme plus jeune, dans toutes vos affaires et dans tous vos besoins.</p>
+<p>ORLANDO.--O bon vieillard! que tu es une image fidèle de ces serviteurs constants de l&#x27;ancien temps, qui servaient par amour de leur devoir, et non pour le salaire! Tu n&#x27;es pas à la mode de ce temps-ci où personne ne travaille que pour son avancement, et où l&#x27;acquisition de ce qu&#x27;on désire fait cesser le service: tu n&#x27;en agis pas ainsi.--Mais, pauvre vieillard, tu veux tailler un arbre pourri qui ne saurait même produire une seule fleur, pour te payer de tes peines et de ta culture; mais fais ce que tu voudras; nous irons ensemble; et avant que nous ayons dépensé les gages de ta jeunesse, nous trouverons quelque modeste situation où nous vivrons contents.</p>
+<p>ADAM.--Allez, mon maître, allez, je vous suivrai jusqu&#x27;au dernier soupir avec fidélité et loyauté. J&#x27;ai vécu ici depuis l&#x27;âge de dix-sept ans jusqu&#x27;à près de quatre-vingts; mais de ce moment, je n&#x27;y reste plus. Bien des gens cherchent fortune à dix-sept ans, mais à quatre-vingts il est trop tard. La fortune ne saurait cependant me mieux récompenser, qu&#x27;en me faisant bien mourir sans rester débiteur de mon maître.</p>
+<h3 class="sub">Scène IV</h3>
+<p>La forêt des Ardennes.</p>
+<p>ROSALINDE en habit de jeune garçon, CÉLIE habillée en bergère et le paysan TOUCHSTONE.</p>
+<p>ROSALINDE.--O dieux! que mon coeur est las!</p>
+<p>TOUCHSTONE.--Je m&#x27;embarrasserais fort peu de mon coeur, si mes jambes n&#x27;étaient pas lasses.</p>
+<p>ROSALINDE.--J&#x27;aurais bonne envie de déshonorer l&#x27;habit d&#x27;homme que je porte, et de pleurer comme une femme; mais il faut que je soutienne le vaisseau le plus faible; c&#x27;est au pourpoint et au haut-de-chausses à montrer l&#x27;exemple du courage à la jupe; ainsi courage donc, chère Aliéna.</p>
+<p>CÉLIE.--Je t&#x27;en prie, supporte-moi; je ne saurais aller plus loin.</p>
+<p>TOUCHSTONE.--Pour moi j&#x27;aimerais mieux vous supporter que de vous porter; je ne porterais cependant pas de croix[19] en vous portant; car je ne crois pas que vous ayez d&#x27;argent dans votre bourse.</p>
+<p>[Note 19: Une espèce de monnaie marquée d&#x27;une croix; ce mot est pour Shakspeare une source de pointes.]</p>
+<p>ROSALINDE.--Enfin, voilà donc la forêt des Ardennes.</p>
+<p>TOUCHSTONE.--Oui, me voilà dans l&#x27;Ardenne, je n&#x27;en suis que plus sot; quand j&#x27;étais chez moi, j&#x27;étais bien mieux; mais il faut que les voyageurs soient contents de tout.</p>
+<p>ROSALINDE.--Oui, sois content, cher Touchstone; mais qui vient ici? Un jeune homme et un vieillard en conversation sérieuse!</p>
+<p>(Entrent Corin et Sylvius de l&#x27;autre côté du théâtre.)</p>
+<p>CORIN.--C&#x27;est précisément là le moyen de vous faire toujours mépriser d&#x27;elle.</p>
+<p>SYLVIUS.--O Corin! si tu savais combien je l&#x27;aime!</p>
+<p>CORIN.--Je le devine en partie; car j&#x27;ai aimé jadis.</p>
+<p>SYLVIUS.--Non, Corin, vieux comme tu l&#x27;es, tu ne saurais le deviner, quand même dans ta jeunesse tu aurais été le plus fidèle amant qui ait soupiré pendant la nuit sur son oreiller. Mais si jamais ton amour fut égal au mien (et je suis sûr qu&#x27;aucun homme n&#x27;aima jamais comme moi), à combien d&#x27;actions ridicules ta passion t&#x27;a-t-elle entraîné?</p>
+<p>CORIN.--A plus de mille, que j&#x27;ai oubliées.</p>
+<p>SYLVIUS.--Oh! tu n&#x27;as donc jamais aimé aussi tendrement que moi: si tu ne te rappelles pas jusqu&#x27;à la plus petite folie que l&#x27;amour t&#x27;a fait faire, tu n&#x27;as pas aimé: si tu ne t&#x27;es pas assis comme je le suis, fatigant celui qui t&#x27;écoutait des louanges de ta maîtresse, tu n&#x27;as pas aimé: si tu n&#x27;as pas quitté brusquement la compagnie, comme ma passion me fait quitter la tienne en ce moment, tu n&#x27;as pas aimé. O Phébé! Phébé! Phébé!</p>
+<p>(Sylvius sort.)</p>
+<p>ROSALINDE.--Hélas! pauvre berger! en te voyant sonder ta blessure, un sort cruel m&#x27;a fait sentir la mienne.</p>
+<p>TOUCHSTONE.--Et moi la mienne: je me souviens que lorsque j&#x27;étais amoureux, je brisai mon épée contre une pierre en lui disant: «Voilà pour t&#x27;apprendre à rendre des visites nocturnes à Jeanne Smile;» et je me rappelle que je baisais son battoir et les mamelles des vaches que ses jolies mains gercées venaient de traire; et je me souviens encore qu&#x27;au lieu d&#x27;elle, je courtisais une tige de pois, auquel je pris deux cosses pour les lui rendre en lui disant, en pleurant des larmes[20]: «Portez ceci pour l&#x27;amour de moi.» Nous autres vrais amants, nous sommes sujets à d&#x27;étranges caprices; mais comme tout, dans la nature, est mortel, toute nature est mortellement folle en amour[21].</p>
+<p>[Note 20: «Trait contre une expression ridicule de la Rosalinde de Lodge.» (WARBURTON.)]</p>
+<p>[Note 21: Mortal est pris ici adverbialement pour excessivement.]</p>
+<p>ROSALINDE.--Tu parles plus sagement que tu ne t&#x27;en doutes.</p>
+<p>TOUCHSTONE.--Vraiment, jamais je ne me douterai de mon esprit que lorsque je me le serai cassé contre les os des jambes.</p>
+<p>ROSALINDE.--O Jupiter! Jupiter! la passion de ce berger ressemble bien à la mienne.</p>
+<p>TOUCHSTONE.--Et à la mienne aussi: mais cela devient un peu ancien pour moi.</p>
+<p>CÉLIE.--Je vous en prie, que l&#x27;un de vous demande à cet homme-là s&#x27;il voudrait nous donner quelque nourriture pour de l&#x27;or. Je suis d&#x27;une faiblesse à mourir.</p>
+<p>TOUCHSTONE.--Holà, vous, paysan!</p>
+<p>ROSALINDE.--Tais-toi, sot; il n&#x27;est pas ton parent.</p>
+<p>CORIN.--Qui appelle?</p>
+<p>TOUCHSTONE.--Des personnes qui valent mieux que vous, l&#x27;ami.</p>
+<p>CORIN.--Si elles ne valaient pas mieux que moi, elles seraient bien misérables.</p>
+<p>ROSALINDE.--Paix! te dis-je;--bonsoir, l&#x27;ami!</p>
+<p>CORIN.--Bonsoir, mon joli cavalier, ainsi qu&#x27;à vous tous.</p>
+<p>ROSALINDE.--Je t&#x27;en prie, berger, si, par amitié ou pour de l&#x27;or, l&#x27;on peut obtenir quelques aliments dans ce désert, conduis-nous dans un endroit où nous puissions nous reposer et manger; voilà une jeune fille que le voyage a accablée de fatigue; elle est prête à défaillir de besoin.</p>
+<p>CORIN.--Mon beau monsieur, je la plains de tout mon coeur, et je souhaiterais, bien plus pour elle que pour moi, que la fortune m&#x27;eût mis plus en état de la soulager; mais je ne suis qu&#x27;un berger, aux gages d&#x27;un autre homme, et je ne tonds pas pour moi les moutons que je fais paître: mon maître est d&#x27;un naturel avare, et s&#x27;embarrasse fort peu de s&#x27;ouvrir le chemin du ciel par des actes d&#x27;hospitalité. D&#x27;ailleurs, sa cabane, ses troupeaux et ses pâturages sont en vente, et son absence fait qu&#x27;il n&#x27;y a maintenant, dans notre bergerie, rien que vous puissiez manger: mais venez voir ce qu&#x27;il y a; et si ma voix y peut quelque chose, vous serez certainement bien reçus.</p>
+<p>ROSALINDE.--Quel est celui qui doit acheter son troupeau et ses pâturages?</p>
+<p>CORIN.--Ce jeune homme que vous avez vu ici il n&#x27;y a qu&#x27;un moment, et qui se soucie peu d&#x27;acheter quoi que ce soit.</p>
+<p>ROSALINDE.--Si cela pouvait se faire sans blesser l&#x27;honnêteté, je te prierais d&#x27;acheter la cabane, les pâturages et le troupeau, et nous te donnerions de quoi payer le tout pour nous.</p>
+<p>CÉLIE.--Et nous augmenterions tes gages. J&#x27;aime ces lieux, et j&#x27;y passerais volontiers ma vie.</p>
+<p>CORIN.--Le tout est certainement à vendre: venez avec moi: si, sur ce qu&#x27;on vous en dira, le terrain, le revenu et ce genre de vie vous plaisent, j&#x27;achèterai aussitôt le tout avec votre or, et je serai votre fidèle berger.</p>
+<p>(Ils sortent.)</p>
+<h3 class="sub">Scène V</h3>
+<p>AMIENS, JACQUES et autres paraissent.</p>
+<h3 class="sub">Amiens.</h3>
+<p>Toi qui chéris les verts ombrages, Viens avec moi respirer en ces lieux; Viens avec moi mêler tes chants joyeux Aux doux concerts qui charmes ces bocages. On ne trouve ici D&#x27;autre ennemi Que l&#x27;hiver seul, la pluie et les orages.</p>
+<p>JACQUES.--Continuez, continuez, je vous prie, continuez.</p>
+<p>AMIENS.--Cela vous rendrait mélancolique, monsieur Jacques.</p>
+<p>JACQUES.--C&#x27;est ce que je veux.--Continuez, je vous en prie; continuez; je puis sucer la mélancolie d&#x27;une chanson même, comme une belette suce les oeufs. Encore, je vous en prie, encore.</p>
+<p>AMIENS.--Ma voix est rude; je sais que je ne saurais vous plaire.</p>
+<p>JACQUES.--Je ne vous prie point de me plaire; je vous prie de chanter: allons, allons, une autre stance. Ne les appelez-vous pas stances?</p>
+<p>AMIENS.--Comme vous voudrez, monsieur Jacques.</p>
+<p>JACQUES.--Je m&#x27;embarrasse fort peu de savoir leur nom; elles ne me doivent rien. Voulez-vous chanter?</p>
+<p>AMIENS.--Plutôt à votre prière, que pour mon plaisir.</p>
+<p>JACQUES.--Eh bien! si jamais je remercie un homme, je vous remercierai. Mais ce qu&#x27;on appelle compliment, ressemble à la rencontre de deux magots. Et quand un homme me remercie cordialement, il me semble que je lui ai donné un sou, et qu&#x27;il me fait les remerciements d&#x27;un pauvre. Allons, chantez.--Et vous qui ne voulez pas chanter, taisez-vous.</p>
+<p>AMIENS.--Eh bien! je vais finir ma chanson. Messieurs, pendant ce temps-là, mettez le couvert; le duc veut dîner sous cet arbre. Il vous a cherché toute la journée.</p>
+<p>JACQUES.--Et moi, je l&#x27;ai évité toute la journée: il aime trop la dispute pour moi: je pense à autant de choses que lui, mais je rends grâce au ciel et je ne m&#x27;en glorifie pas. Allons, chantez, allons.</p>
+<p>CHANSON.</p>
+<p>Toi qui fuis l&#x27;éclat de la cour, Des champs féconds préférant la parure, Heureux des mets que t&#x27;offre la nature, Viens habiter avec moi ce séjour. Dans ce bocage, Sous cet ombrage, Point d&#x27;ennemi que l&#x27;hiver et l&#x27;orage.</p>
+<p>JACQUES.--Je vais vous donner sur cet air quelques vers que j&#x27;ai faits hier en dépit de mon génie.</p>
+<p>AMIENS.--Et je les chanterai.</p>
+<p>JACQUES.--Les voici.</p>
+<p>(Il chante.)</p>
+<p>S&#x27;il arrive par hasard Qu&#x27;un homme soit changé en âne; Quittant son bien et son aisance Pour suivre une volonté obstinée, Duc dàme, duc dàme, duc dàme, Il trouvera ici D&#x27;aussi grands fous que lui S&#x27;il veut venir ici[22].</p>
+<p>[Note 22: Duc dàme est mis pour duc ad me, conduisez-moi; allusion au refrain d&#x27;Amiens. Ceiui-ci n&#x27;est pas un savant, Jacques lui peut donner ce mot pour du grec, très-innocemment.]</p>
+<p>AMIENS.--Que signifie ce duc ad me?</p>
+<p>JACQUES.--C&#x27;est une invocation grecque pour rassembler les sots dans un cercle.--Je vais dormir si je puis; si je ne peux pas dormir, je déclamerai contre tous les premiers-nés de l&#x27;Égypte[23].</p>
+<p>AMIENS.--Et moi, je vais chercher le duc: son banquet est prêt.</p>
+<p>(Ils sortent chacun de son côté.)</p>
+<p>[Note 23: «Expression proverbiale pour dire les personnes d&#x27;une haute naissance.» (JOHNSON.)]</p>
+<h3 class="sub">Scène vi</h3>
+<p>Entrent ORLANDO et ADAM.</p>
+<p>ADAM.--Mon cher maître, je ne saurais aller plus loin: eh! je me meurs de faim! Je vais me coucher ici et y prendre la mesure de ma fosse. Adieu, mon bon maître.</p>
+<p>ORLANDO.--Quoi, Adam! comment! tu n&#x27;as pas plus de coeur que cela? Vis encore un peu, console-toi un peu, prends un peu de coeur. S&#x27;il existe quelque bête sauvage dans cette affreuse forêt, ou je lui servirai de nourriture, ou je te l&#x27;apporterai comme nourriture: ton imagination te fait voir la mort plus près de toi qu&#x27;elle ne l&#x27;est en effet. Pour l&#x27;amour de moi, prends courage; tiens un instant la mort à bout de bras: je suis à toi dans un moment; et si je ne t&#x27;apporte pas quelque chose à manger, alors je te permets de mourir: mais si tu meurs avant mon retour, je dirai que tu t&#x27;es moqué de mes peines.--Allons, fort bien, tu as l&#x27;air plus entrain. Je vais revenir te joindre à l&#x27;instant; mais tu es là couché à l&#x27;air glacé. Viens, je vais te porter sous quelque abri, et tu ne mourras pas faute d&#x27;un dîner, s&#x27;il y a quelque chose de vivant dans ce désert. Courage, bon Adam.</p>
+<p>(Ils sortent.)</p>
+<h3 class="sub">Scène VII</h3>
+<p>Une autre partie de la forêt.</p>
+<p>On voit une table servie, LE VIEUX DUC, AMIENS, les SEIGNEURS et autres.</p>
+<p>LE VIEUX DUC.--Je pense qu&#x27;il est métamorphosé en bête; car je ne puis le trouver nulle part, sous la forme d&#x27;un homme.</p>
+<p>PREMIER SEIGNEUR.--Monseigneur, il n&#x27;y a qu&#x27;un instant qu&#x27;il est parti d&#x27;ici, où il était fort gai, à écouter une chanson.</p>
+<p>LE VIEUX DUC.--Lui, qui est tout composé de dissonances! s&#x27;il devient jamais musicien, il y aura certainement bientôt une grande discorde dans les sphères; allez le chercher; dites-lui, que je voudrais lui parler.</p>
+<p>(Entre Jacques.)</p>
+<p>PREMIER SEIGNEUR.--Il m&#x27;en évite la peine, en venant lui-même.</p>
+<p>LE VIEUX DUC.--Mais comment, monsieur, quelle vie menez-vous donc maintenant, qu&#x27;il faille que vos pauvres amis vous fassent la cour?--Mais quoi vous avez l&#x27;air gai.</p>
+<p>JACQUES.--Un fou! un fou!... J&#x27;ai rencontré un fou dans la forêt, un fou en habit bigarré[24]. O misérable monde! Comme il est vrai que je vis de nourriture, j&#x27;ai rencontré un fou qui s&#x27;était couché par terre, se chauffait au soleil, et invitait dame Fortune, mais en bons termes et bien placés, et cependant un vrai fou qui en portait la livrée.--Bonjour, fou, lui ai-je dit.--Non, monsieur, m&#x27;a-t-il répondu, ne m&#x27;appelez pas fou, jusqu&#x27;à ce que le ciel m&#x27;ait envoyé la Fortune[25].--Ensuite il a tiré un cadran de sa poche, et après l&#x27;avoir regardé d&#x27;un oeil terne, il a dit très-sagement: «Il est dix heures;--c&#x27;est ainsi, a-t-il continué, que nous pouvons voir comment va le monde: il n&#x27;y a qu&#x27;une heure qu&#x27;il n&#x27;en était que neuf, et dans une heure il en sera onze; et ainsi d&#x27;heure en heure nous mûrissons, mûrissons, et ensuite d&#x27;heure en heure nous pourrissons, pourrissons, et là finit notre histoire.» Quand j&#x27;ai entendu ce fou bigarré moraliser ainsi sur le temps, mes poumons se sont mis à chanter comme le coq, de voir des fous si profonds en morale; et j&#x27;ai ri sans relâche, pendant une heure entière à son cadran.--O noble fou! un digne fou! Oh! un habit bigarré est le seul que l&#x27;on doive porter.</p>
+<p>[Note 24: Motley fool, Motley, bigarré, le costume des fous se rapprochait de celui des arlequins.]</p>
+<p>[Note 25: Fortuna favet fatuis.</p>
+<p>Fortuna nimiùm quem favet, stultum facit. (P. SYRUS.)]</p>
+<p>LE VIEUX DUC.--Quel est donc ce fou?</p>
+<p>JACQUES.--Oh! le digne fou! un fou qui a été un courtisan; et il dit que, si les dames sont jeunes et belles, elles ont le don de le savoir: dans sa cervelle, qui est aussi sèche que le biscuit qui reste après un voyage, il y a d&#x27;étranges cases farcies d&#x27;observations qu&#x27;il débite par parcelles. Oh! si je pouvais être un fou! J&#x27;aspire à porter un habit bigarré.</p>
+<p>LE VIEUX DUC--Tu en auras un.</p>
+<p>JACQUES.--C&#x27;est la seule chose que je vous demande[26], pourvu que vous arrachiez de votre cerveau la folle idée qui y est enracinée, que je suis sage. En outre, je veux avoir une liberté aussi étendue que le vent, et je veux souffler sur qui il me plaira, car les fous ont ce privilége; et ceux qui essuieront le plus de traits de ma folie, seront obligés de rire plus que les autres: et pourquoi cela, monsieur? Le pourquoi est aussi simple que le chemin qui conduit à l&#x27;église de la paroisse. Celui qu&#x27;un fou pique à propos agit sottement (fût-il piqué au vif), s&#x27;il se montre sensible au lardon; autrement la folie de l&#x27;homme sage s&#x27;expose à être anatomisée par les flèches lancées à tort et à travers par le fou. Revêtissez-moi de mon habit bigarré, donnez-moi la liberté de dire ce que je pense, et je vous jure que, si l&#x27;on veut prendre ma médecine patiemment, je purgerai à fond le corps impur de ce monde infecté.</p>
+<p>LE VIEUX DUC.--Fi! fi donc! je puis te dire ce que tu voudrais faire.</p>
+<p>JACQUES.--Et pour un jeton[27], que voudrais-je faire, si ce n&#x27;est du bien?</p>
+<p>[Note 26: &#x27;Tis my only suit. Suit, habit et demande, requête.]</p>
+<p>[Note 27: What, for a counter, would I do but good?]</p>
+<p>LE VIEUX DUC.--Tu commettrais, en gourmandant le péché, un péché des plus dangereux; car toi-même tu as été un libertin aussi sensuel que l&#x27;aiguillon même de la brutalité, et tu voudrais aujourd&#x27;hui dégorger sur le monde entier tous les ulcères et tous les maux que tu as gagnés par ta licence aux pieds légers.</p>
+<p>JACQUES.--Quoi! quel est celui qui, en censurant l&#x27;orgueil en général, peut être accusé d&#x27;en taxer quelqu&#x27;un en particulier? Ce vice ne coule-t-il pas gros comme les flots de la mer, jusqu&#x27;à ce que les vrais moyens le refoulent? Quand je dis qu&#x27;une femme de la cité porte sur ses indignes épaules la fortune des princes, quelle est celle qui peut se présenter et dire que j&#x27;entends parler d&#x27;elle, lorsque sa voisine est comme elle? ou quel est l&#x27;homme, dans l&#x27;emploi le plus vil, qui ne décèle pas la folie dont je l&#x27;accuse, lorsque, pensant que j&#x27;ai voulu parler de lui, il répond que sa parure n&#x27;est point à mes frais? Là donc; comment donc? Eh bien! faites-moi donc voir en quoi ma langue lui a fait du tort. Si elle lui a rendu justice, alors c&#x27;est lui qui s&#x27;est fait du tort lui-même; s&#x27;il est libre de tout reproche, alors ma satire s&#x27;envole comme une oie sauvage sans être réclamée de personne. Mais qui vient ici?</p>
+<p>(Orlando entre brusquement, l&#x27;épée nue.)</p>
+<p>ORLANDO.--Arrêtez et cessez de manger.</p>
+<p>JACQUES.--Quoi! je n&#x27;ai pas encore commencé.</p>
+<p>ORLANDO.--Et tu ne commenceras pas avant que le besoin soit servi.</p>
+<p>JACQUES.--De quelle espèce est donc ce coq-là?</p>
+<p>LE VIEUX DUC--Est-ce la nécessité, jeune homme, qui te rend si audacieux, ou est-ce par un grossier mépris des bonnes manières que tu te montres si dépourvu de civilité?</p>
+<p>ORLANDO.--Vous avez touché mon mal tout d&#x27;abord. C&#x27;est le poignant aiguillon d&#x27;un extrême besoin qui m&#x27;a enlevé les douces apparences de la civilité: j&#x27;ai cependant été élevé dans l&#x27;intérieur du pays, et j&#x27;ai reçu quelque éducation: mais laissez cela, vous dis-je: il meurt celui de vous qui touchera à ce fruit avant que moi et mes besoins soyons satisfaits.</p>
+<p>JACQUES.--Si vous ne voulez pas que l&#x27;on vous satisfasse avec des raisons, alors il faut donc que je meure.</p>
+<p>LE VIEUX DUC.--Que prétendez-vous? Votre douceur aura plus de force que votre force pour nous amener à la douceur.</p>
+<p>ORLANDO.--Je vais mourir faute de nourriture: laisse-m&#x27;en prendre.</p>
+<p>LE VIEUX DUC.--Asseyez-vous et mangez, et soyez le bienvenu à notre table.</p>
+<p>ORLANDO.--Vous me parlez si doucement? En ce cas, pardonnez-moi, je vous prie; j&#x27;ai cru qu&#x27;ici tout était sauvage; voilà ce qui m&#x27;a fait prendre la rude apparence du commandement. Mais qui que vous soyez, qui dans ce désert inaccessible, à l&#x27;ombre de ce feuillage mélancolique, perdez et négligez les heures glissantes du temps, si jamais vous vîtes des jours plus heureux, si jamais vous avez habité des lieux où le son des cloches vous appelât à l&#x27;église; si jamais vous vous êtes assis à la table d&#x27;un homme vertueux; si jamais vous avez essuyé une larme sur vos paupières; si vous savez enfin ce que c&#x27;est que de plaindre et que d&#x27;être plaint, que la douceur soit ma seule violence. Dans cet espoir, je rougis et je cache mon épée.</p>
+<p>LE VIEUX DUC.--Il est vrai que nous avons vu des jours plus heureux; le son des cloches sacrées nous a appelés à l&#x27;église; nous nous sommes assis à la table d&#x27;hommes vertueux; nous avons essuyé nos yeux baignés de larmes que faisait couler une sainte pitié: ainsi asseyez-vous paisiblement, et disposez à votre gré de ce que nous pouvons avoir à offrir à vos besoins.</p>
+<p>ORLANDO.--Eh bien! alors attendez encore un moment pour manger, tandis que, comme la biche, je vais chercher mon faon pour lui donner à manger. A quelques pas d&#x27;ici, il y a un pauvre vieillard qui, conduit par l&#x27;amitié pure, a traîné après moi ses pas inégaux: il est accablé de deux maux cruels, l&#x27;âge et la faim. Je ne goûterai à rien jusqu&#x27;à ce qu&#x27;il soit rassasié.</p>
+<p>LE VIEUX DUC.--Allez le chercher; nous ne toucherons à rien avant votre retour.</p>
+<p>ORLANDO.--Je vous remercie; que le ciel vous bénisse pour vos généreux secours.</p>
+<p>(Il sort.)</p>
+<p>LE VIEUX DUC.--Tu vois que nous ne sommes pas seuls malheureux; ce vaste théâtre de l&#x27;univers offre de plus tristes spectacles que cette scène où nous jouons notre rôle.</p>
+<p>JACQUES.--Le monde entier est un théâtre, et les hommes et les femmes ne sont que des acteurs; ils ont leurs entrées et leurs sorties. Un homme, dans le cours de sa vie, joue différents rôles; et les actes de la pièce sont les sept âges[28]. Dans le premier, c&#x27;est l&#x27;enfant, vagissant, bavant dans les bras de sa nourrice. Ensuite l&#x27;écolier, toujours en pleurs, avec son frais visage du matin et son petit sac, rampe, comme le limaçon, à contre-coeur jusqu&#x27;à l&#x27;école. Puis vient l&#x27;amoureux, qui soupire comme une fournaise et chante une ballade plaintive qu&#x27;il a adressée au sourcil de sa maîtresse. Puis le soldat, prodigue de jurements étranges et barbu comme le léopard[29], jaloux sur le point d&#x27;honneur, emporté, toujours prêt à se quereller, cherchant la renommée, cette bulle de savon, jusque dans la bouche du canon. Après lui, c&#x27;est le juge au ventre arrondi, garni d&#x27;un bon chapon, l&#x27;oeil sévère, la barbe taillée d&#x27;une forme grave; il abonde en vieilles sentences, en maximes vulgaires; et c&#x27;est ainsi qu&#x27;il joue son rôle. Le sixième âge offre un maigre Pantalon[30] en pantoufles, avec des lunettes sur le nez et une poche de côté: les bas bien conservés de sa jeunesse se trouvent maintenant beaucoup trop vastes pour sa jambe ratatinée; sa voix, jadis forte et mâle, revient au fausset de l&#x27;enfance, et ne fait plus que siffler d&#x27;un ton aigre et grêle. Enfin le septième et dernier âge vient unir cette histoire pleine d&#x27;étranges événements; c&#x27;est la seconde enfance, état d&#x27;oubli profond où l&#x27;homme se trouve sans dents, sans yeux, sans goût, sans rien.</p>
+<p>[Note 28: «Anciennement, il y avait des pièces divisées en sept actes.» (WARBURTON.)]</p>
+<p>[Note 29: Chaque profession avait jadis une forme de barbe particulière. La barbe du juge différait de celle du soldat.]</p>
+<p>[Note 30: Allusion au personnage de la comédie italienne, appelé il Pantalone, le seul qui joue son rôle en pantoufles.]</p>
+<p>(Orlando revient avec Adam.)</p>
+<p>LE VIEUX DUC.--Soyez le bienvenu! Déposez votre vénérable fardeau, et qu&#x27;il mange.</p>
+<p>ORLANDO.--Je vous remercie surtout pour lui.</p>
+<p>ADAM.--Vous faites bien de remercier pour moi; car je puis à peine parler pour vous remercier moi-même.</p>
+<p>LE VIEUX DUC.--Vous êtes les bienvenus, mettez-vous à l&#x27;oeuvre: je ne vous dérangerai point en ce moment pour vous questionner sur vos aventures.--Faites-nous un peu de musique, cher cousin; chantez-nous quelque chose.</p>
+<p>(On joue un air.)</p>
+<p>AMIENS chante</p>
+<p>Souffle, souffle vent d&#x27;hiver; Tu n&#x27;es pas si cruel Que l&#x27;ingratitude de l&#x27;homme. Ta dent n&#x27;est pas si pénétrante, Car tu es invisible Quoique ton souffle soit rude[31] Hé! ho! chante; hé! ho! dans le houx vert; La plupart des amis sont des hypocrites et la plupart des amants des fous Allons ho! hé! le houx! Cette vie est joviale.</p>
+<p>Gèle, gèle, ciel rigoureux, Ta morsure est moins cruelle Que celle d&#x27;un bienfait oublié. Quoique tu enchaînes les eaux, Ton aiguillon n&#x27;est pas si acéré Que celui de l&#x27;oubli d&#x27;un ami. Hé! ho! chante, etc., etc.</p>
+<p>[Note 31: Le sens de ces vers a beaucoup tourmenté les commentateurs, et reste encore inexplicable: combien de chansons anglaises (et même combien de françaises) ne sont que des mots avec rime et sans raison!]</p>
+<p>LE VIEUX DUC.--S&#x27;il est vrai que vous soyez le fils du bon chevalier Rowland, ainsi qu&#x27;on vous l&#x27;a entendu dire ingénument tout bas, et ainsi que tout me l&#x27;annonce; car il respire dans tous vos traits, et votre visage est son portrait vivant; soyez vraiment le bienvenu ici; je suis le duc qui aimait votre père. Venez dans ma grotte me raconter la suite de vos aventures; et toi, bon vieillard, tu es le bienvenu comme ton maître.--Soutenez-le par le bras. (A Orlando.) Donnez-moi votre main, et faites-moi connaître toutes vos aventures.</p>
+<p>(Ils sortent.)</p>
+<h3 class="sub">Fin du second acte — Acte troisième</h3>
+<h3 class="sub">Scène I</h3>
+<p>Appartement du palais.</p>
+<p>Entrent FRÉDÉRIC, OLIVIER, SEIGNEURS et suite.</p>
+<p>FRÉDÉRIC.--Quoi! ne l&#x27;avoir point vu depuis? Monsieur, monsieur, cela ne peut pas être; et si la clémence ne dominait pas en moi, toi, présent, je n&#x27;irais pas chercher un objet absent pour ma vengeance: mais songes-y bien; trouve ton frère, en quelque endroit qu&#x27;il soit; cherche-le aux flambeaux; je te donne un an pour me l&#x27;amener mort ou vif; sinon ne reparais plus pour vivre sur notre territoire. Jusqu&#x27;à ce que tu puisses te justifier, par la bouche de ton frère, des soupçons que nous avons contre toi, nous saisissons dans nos mains les terres et tout ce que tu peux avoir de propriétés qui vaille la peine d&#x27;être saisi.</p>
+<p>OLIVIER.--Oh! si Votre Altesse pouvait lire dans mon coeur! Jamais je n&#x27;aimai mon frère de ma vie.</p>
+<p>FRÉDÉRIC.--Tu n&#x27;en es qu&#x27;un plus grand scélérat.--Allons, qu&#x27;on le mette à la porte, et que mes officiers chargés de ces affaires procèdent à l&#x27;estimation de sa maison et de ses terres: qu&#x27;on le fasse sans délai, et qu&#x27;il tourne les talons.</p>
+<p>(Ils sortent.)</p>
+<h3 class="sub">Scène II</h3>
+<p>La forêt.</p>
+<p>ORLANDO entre avec un panier à la main.</p>
+<p>ORLANDO.--Restez-là suspendus, mes vers, pour attester mon amour, et toi, reine de la nuit, à la triple couronne, du haut de ta pâle sphère, abaisse tes chastes regards sur le nom de ta belle chasseresse, qui règne sur ma vie. O Rosalinde! ces arbres seront mes tablettes, et je veux graver mes pensées sur leur écorce, afin que tous les yeux qui jetteront leurs regards sur cette forêt, rencontrent partout les témoignages de ta vertu. Cours, Orlando, grave sur chaque arbre: La belle, la chaste, l&#x27;inexprimable Rosalinde!</p>
+<p>(Il sort.)</p>
+<p>(Entrent Corin et le bouffon Touchstone.)</p>
+<p>CORIN.--Et comment trouvez-vous cette vie de berger, monsieur Touchstone?</p>
+<p>TOUCHSTONE.--Franchement, berger, par elle-même, c&#x27;est une bonne vie; mais en ce que c&#x27;est une vie de berger, c&#x27;est une pauvre vie. En ce qu&#x27;elle est solitaire, je l&#x27;aime beaucoup; mais en ce qu&#x27;elle est retirée, c&#x27;est une misérable vie: ensuite, par rapport à ce qu&#x27;on la passe dans les champs, elle me plaît assez; mais en ce qu&#x27;on ne la passe pas à la cour, elle est ennuyeuse. Comme vie frugale, voyez-vous, elle convient beaucoup à mon humeur; mais en ce qu&#x27;il n&#x27;y a pas plus d&#x27;abondance, elle contrarie beaucoup mon estomac; y a-t-il en toi un peu de philosophie, berger?</p>
+<p>CORIN.--Ce que j&#x27;en ai se borne à savoir que plus on est malade plus on est mal à son aise; et que celui qui n&#x27;a ni argent, ni moyens, ni contentement, manque de trois bons amis; que la propriété de la pluie est de mouiller, et celle du feu de brûler; que les bons pâturages engraissent les brebis; et qu&#x27;une des grandes causes de la nuit, c&#x27;est l&#x27;absence du soleil; que celui qui n&#x27;a rien reçu de l&#x27;esprit, ni de la nature, ni de l&#x27;art, peut se plaindre d&#x27;avoir reçu une mauvaise éducation, ou vient d&#x27;une famille très-sotte.</p>
+<p>TOUCHSTONE.--Un homme qui raisonne comme toi est un philosophe naturel. As-tu jamais vécu à la cour, berger?</p>
+<p>CORIN.--Non, vraiment.</p>
+<p>TOUCHSTONE.--Alors, tu es damné.</p>
+<p>CORIN.--Non pas, j&#x27;espère.</p>
+<p>TOUCHSTONE.--Oh! tu seras sûrement damné, comme un oeuf qui n&#x27;est cuit que d&#x27;un côté[32].</p>
+<p>[Note 32: Johnson dit ne pas comprendre cette réponse.</p>
+<p>Steevens cite un proverbe qui dit qu&#x27;un fou est celui qui fait le mieux cuire un oeuf parce qu&#x27;il le tourne toujours; et Touchstone semble vouloir faire entendre qu&#x27;un homme qui n&#x27;a pas vécu à la cour n&#x27;a qu&#x27;une demi-éducation.]</p>
+<p>CORIN.--Pour n&#x27;avoir pas été à la cour? Dites-moi donc votre raison.</p>
+<p>TOUCHSTONE.--Eh bien! si tu n&#x27;as jamais été à la cour, tu n&#x27;as jamais vu les bonnes manières; si tu n&#x27;as jamais vu les bonnes manières, alors tes manières sont nécessairement mauvaises; et ce qui est mauvais est péché, et le péché mène à la damnation: tu es dans une situation dangereuse, berger.</p>
+<p>CORIN.--Pas du tout, Touchstone: les belles manières de la cour sont aussi ridicules à la campagne que les usages de la campagne sont risibles à la cour. Vous m&#x27;avez dit qu&#x27;on ne se saluait pas à la cour, mais qu&#x27;on se baisait les mains. Cette courtoisie ne serait pas propre, si les courtisans étaient des bergers.</p>
+<p>TOUCHSTONE.--Une preuve; vite, allons, une preuve.</p>
+<p>CORIN.--Eh bien! nous touchons nos brebis à tout instant, et leur toison, vous le savez, est grasse.</p>
+<p>TOUCHSTONE.--Eh bien! les mains de nos courtisans ne suent-elles pas? et la graisse de mouton n&#x27;est-elle pas aussi saine que la sueur de l&#x27;homme? Mauvaise raison, mauvaise raison: une meilleure, allons.</p>
+<p>CORIN.--En outre nos mains sont rudes.</p>
+<p>TOUCHSTONE.--Eh bien! vos lèvres ne les sentiront que plus tôt. Encore une mauvaise raison: allons, une autre plus solide.</p>
+<p>CORIN.--Et elles sont souvent goudronnées avec les drogues de nos brebis; et voudriez-vous que nous baisassions du goudron? Les mains des courtisans sont parfumées de civette.</p>
+<p>TOUCHSTONE.--Pauvre esprit; tu n&#x27;es qu&#x27;une chair à vers, comparée à un bon morceau de viande. Allons, apprends du sage, et réfléchis; la civette est d&#x27;une plus basse extraction que le goudron: la civette n&#x27;est que l&#x27;impure excrétion d&#x27;un chat. Trouve une meilleure preuve, berger.</p>
+<p>CORIN.--Vous avez l&#x27;esprit trop raffiné pour moi: je veux me reposer.</p>
+<p>TOUCHSTONE.--Tu veux te reposer, étant damné? Dieu veuille t&#x27;éclairer, homme borné, car tu es bien ignorant! Dieu veuille te faire une incision[33]! Tu es bien novice.</p>
+<p>[Note 33: «Expression proverbiale pour dire: faire comprendre.» (WARBURTON.)]</p>
+<p>CORIN.--Monsieur, je ne suis qu&#x27;un simple journalier; je gagne ce que je mange, j&#x27;achète ce que je porte; je ne dois de haine à personne, je n&#x27;envie le bonheur de personne; je suis bien aise de la bonne fortune des autres, patient dans ma peine, et mon plus grand orgueil est de voir mes brebis paître, et mes agneaux téter.</p>
+<p>TOUCHSTONE.--Voilà encore un autre péché d&#x27;imbécile dont vous vous rendez coupable, en élevant ensemble les brebis et les béliers, en vous offrant à gagner votre vie par l&#x27;accouplement du bétail, en servant d&#x27;entremetteur aux désirs du bélier qui a la sonnette au cou, et en prostituant la brebis d&#x27;un an à un vieux débauché de bélier aux cornes crochues, qui n&#x27;est point du tout raisonnablement son fait. Si tu n&#x27;es pas damné pour cela, c&#x27;est que le diable lui-même ne veut pas de bergers; autrement, je ne vois pas comment tu pourrais échapper.</p>
+<p>CORIN.--Voilà le jeune monsieur Ganymède, le frère de ma nouvelle maîtresse.</p>
+<h3 class="sub">Scène III — Rosalinde, Touchstone</h3>
+<p>ROSALINDE paraît, lisant un papier.</p>
+<p>Depuis l&#x27;Orient jusqu&#x27;aux Indes-Occidentales, Nul joyau n&#x27;égale Rosalinde, Tous les vents portent sur leur ailes Le mérite de Rosalinde dans tout l&#x27;univers. Les portraits les plus parfaits Sont noirs à côté de Rosalinde: Ne pensons à d&#x27;autre beauté Qu&#x27;à celle de Rosalinde.</p>
+<p>TOUCHSTONE.--Je vous rimerai comme cela, pendant huit ans entiers, en exceptant cependant les heures du dîner, du souper et du sommeil: c&#x27;est précisément ainsi que riment les marchandes de beurre en allant au marché[34].</p>
+<p>[Note 34: Ce sont les vers cités par Horace dont on sait deux sens, stans pede in uno.]</p>
+<p>ROSALINDE.--Retire-toi, sot.</p>
+<p>TOUCHSTONE.--Pour essayer.</p>
+<p>Si un cerf a besoin d&#x27;une biche, Qu&#x27;il cherche Rosalinde; Si la chatte court après le chat, Ainsi fera Rosalinde. Les vêtements d&#x27;hiver doivent être doublés, Et de même la mince Rosalinde: Ceux qui moissonnent doivent lier et mettre en gerbe Et puis dans la charrette avec Rosalinde. La plus douce noix a une écorce amère, Cette noix, c&#x27;est Rosalinde. Celui qui veut trouver une douce rose, Trouve l&#x27;épine d&#x27;amour et Rosalinde.</p>
+<p>C&#x27;est là la fausse allure des vers. Pourquoi vous empoisonner de pareille poésie?</p>
+<p>ROSALINDE.--Tais-toi, sot de fou, je les ai trouvés sur un arbre.</p>
+<p>TOUCHSTONE.--Eh bien! c&#x27;est un arbre qui produit de mauvais fruits.</p>
+<p>ROSALINDE.--Je veux t&#x27;enter sur lui, et ce sera le greffer avec un néflier[35]. Ce sera le fruit le plus précoce du pays, car tu seras pourri avant d&#x27;être à demi mûr, et c&#x27;est la vertu du néflier.</p>
+<p>[Note 35: Équivoque sur medlar et medler, néflier et entremetteur.]</p>
+<p>TOUCHSTONE.--Vous avez prononcé; mais si vous avez bien ou mal jugé, que la forêt en décide.</p>
+<p>(Entre Célie, lisant un écrit.)</p>
+<p>ROSALINDE.--Paix, voilà ma soeur qui vient, elle lit; tiens-toi à l&#x27;écart.</p>
+<p>CÉLIE, lisant un écrit en vers.</p>
+<p>Pourquoi ce désert serait-il silencieux? Serait-ce par ce qu&#x27;il n&#x27;est pas habité? Non; Je suspendrai à chaque arbre des langues Qui parleront le langage des cités. Les unes diront combien la courte vie de l&#x27;homme Finit rapidement les erreurs de son pèlerinage, Que l&#x27;espace d&#x27;une palme Embrasse la somme de sa durée: D&#x27;autres montreront les serments violés Entre les coeurs de deux amis; Mais sur les plus beaux rameaux, Ou à la fin de chaque sentence, J&#x27;écrirai le nom de Rosalinde, Et j&#x27;enseignerai à tous ceux qui me liront, Que le ciel a voulu montrer en miniature La quintessence de tous les esprits. Le ciel ordonna donc à la nature De rassembler toutes les grâces dans un seul corps: Aussitôt la nature forma les joues de roses d&#x27;Hélène, Mais sans son coeur; La majesté de Cléopâtre, Ce qu&#x27;Atalante avait de plus précieux, Et la modestie de la triste Lucrèce. C&#x27;est ainsi que le conseil céleste décida Que Rosalinde serait formée de plusieurs belles; Et que de plusieurs visages, de plusieurs yeux, Et de plusieurs coeurs, Elle ne posséderait que les traits les plus prisés. Le ciel a voulu qu&#x27;elle ait tous ces dons, Et que moi, je vive et meure son esclave.</p>
+<p>ROSALINDE.--O bon Jupiter!--Comment avez-vous pu fatiguer vos paroissiens d&#x27;une si ennuyeuse homélie d&#x27;amour, sans jamais crier: Prenez patience, bonnes gens!</p>
+<p>CÉLIE.--Eh! vous êtes là, espions? Berger, retirez-vous un peu: et vous, drôle, suivez-le.</p>
+<p>TOUCHSTONE.--Allons, berger, faisons une retraite honorable: si nous n&#x27;emportons sac et bagage, nous en avons du moins quelque chose[36].</p>
+<p>[Note 36: Though not with bag and baggage, yet with scrip and scrippage.]</p>
+<p>(Corin et Touchstone sortent.)</p>
+<p>CÉLIE.--As-tu entendu ces vers?</p>
+<p>ROSALINDE.--Oh! oui, je les ai entendus, et plus encore: car quelques-uns d&#x27;eux avaient plus de pieds que les vers n&#x27;en doivent porter.</p>
+<p>CÉLIE.--Peu importe; les pieds pouvaient porter les vers.</p>
+<p>ROSALINDE.--Oui; mais les pieds étaient boiteux et ne pouvaient se supporter eux-mêmes sans les vers. Voilà pourquoi ils boitaient dans les vers.</p>
+<p>CÉLIE.--Mais les as-tu entendus sans te demander comment ton nom se trouvait gravé sur ces arbres, et d&#x27;où y venaient ces vers?</p>
+<p>ROSALINDE.--J&#x27;avais déjà passé sept jours de surprise sur neuf avant que tu fusses venue; car vois ce que j&#x27;ai trouvé sur un palmier[37]: on n&#x27;a jamais tant rimé sur mon compte depuis le temps de Pythagore, alors que j&#x27;étais un rat d&#x27;Irlande[38]; ce dont je me souviens à peine.</p>
+<p>[Note 37: Tout à l&#x27;heure nous trouverons une lionne dans cette même forêt des Ardennes, Shakspeare se souciait fort peu de la vérité historique.]</p>
+<p>[Note 38: On croyait tuer les rats en Irlande avec un charme en vers.]</p>
+<p>CÉLIE.--Devineriez-vous qui a fait cela?</p>
+<p>ROSALINDE.--Est-ce un homme?</p>
+<p>CÉLIE.--Un homme ayant au cou une chaîne que vous avez portée jadis. Vous changez de couleur?</p>
+<p>ROSALINDE.--Qui, je t&#x27;en prie?</p>
+<p>CÉLIE.--O seigneur! seigneur! il est bien difficile que des amis se rencontrent; mais les montagnes peuvent être déplacées par des tremblements de terre, et se retrouver.</p>
+<p>ROSALINDE.--Mais, de grâce, qui est-ce?</p>
+<p>CÉLIE.--Est-il possible?</p>
+<p>ROSALINDE.--Oh! je t&#x27;en prie maintenant avec la plus grande instance, dis-moi qui c&#x27;est.</p>
+<p>CÉLIE.--O merveilleux, merveilleux, et très-merveilleusement merveilleux, et encore merveilleux au delà de toute espérance!</p>
+<p>ROSALINDE.--O ma rougeur! penses-tu, quoique je sois caparaçonnée comme un homme, que j&#x27;aie le pourpoint et le haut-de-chausses dans mon caractère? Une minute de délai de plus est un voyage dans la mer du Sud. Je t&#x27;en prie, dis-moi qui c&#x27;est? Promptement, et parle vite: je voudrais que tu fusses bègue, afin que le nom de cet homme caché pût échapper de ta bouche malgré toi, comme le vin sort d&#x27;une bouteille dont le col est étroit: trop à la fois ou rien du tout. Ote le liége qui te ferme la bouche, que je puisse boire ces nouvelles.</p>
+<p>CÉLIE.--Tu pourrais donc mettre un homme dans ton ventre?</p>
+<p>ROSALINDE.--Est-il formé de la main de Dieu? quelle sorte d&#x27;homme est-ce? sa tête est-elle digne d&#x27;un chapeau, son menton d&#x27;une barbe?</p>
+<p>CÉLIE.--Ah! il a la barbe très-courte.</p>
+<p>ROSALINDE.--Eh bien! Dieu lui en enverra une plus longue, s&#x27;il est reconnaissant. J&#x27;attendrai patiemment sa croissance, pourvu que tu ne diffères pas de me faire connaître le menton qui la porte.</p>
+<p>CÉLIE.--C&#x27;est le jeune Orlando, qui, au même instant, vainquit le lutteur et votre coeur.</p>
+<p>ROSALINDE.--Allons, au diable tes plaisanteries! parle d&#x27;un ton sérieux et en fille modeste.</p>
+<p>CÉLIE.--De bonne foi, cousine, c&#x27;est lui-même.</p>
+<p>ROSALINDE.--Orlando?</p>
+<p>CÉLIE.--Orlando.</p>
+<p>ROSALINDE.--Hélas! que ferai-je de mon pourpoint et de mon haut-de-chausses?--Que faisait-il, lorsque tu l&#x27;as vu? qu&#x27;a-t-il dit? quel air avait-il? où est-il allé? qu&#x27;est-il venu faire ici? m&#x27;a-t-il demandée? où demeure-t-il? comment t&#x27;a-t-il quittée, et quand le reverras-tu? Réponds-moi en un seul mot.</p>
+<p>CÉLIE.--Il faut d&#x27;abord que vous empruntiez pour moi la bouche de Gargantua[39]; ce mot que vous me demandez est trop gros pour aucune bouche de ce temps-ci: répondre à la fois oui et non à toutes ces questions, est une tâche plus difficile que de répondre au catéchisme.</p>
+<p>[Note 39: On se rappelle que Gargantua avala un jour cinq pèlerins, bourdons et tout, dans une salade.]</p>
+<p>ROSALINDE.--Mais sait-il que je suis dans cette forêt, et a-t-il aussi bonne mine que le jour où il a lutté?</p>
+<p>CÉLIE.--Il est aussi aisé d&#x27;énumérer les atomes que de résoudre les questions d&#x27;une amante: mais prends une idée de la manière dont je l&#x27;ai rencontré, et savoures-en bien tout le plaisir. Je l&#x27;ai trouvé sous un arbre, comme un gland tombé.</p>
+<p>ROSALINDE.--On peut bien appeler ce chêne l&#x27;arbre de Jupiter, s&#x27;il en tombe de pareils fruits.</p>
+<p>CÉLIE.--Donnez-moi audience, ma bonne dame.</p>
+<p>ROSALINDE.--Continue.</p>
+<p>CÉLIE.--Il était étendu là comme un chevalier blessé!</p>
+<p>ROSALINDE.--Quoique ce soit une pitié de voir un pareil spectacle, dans cette attitude il devait être charmant.</p>
+<p>CÉLIE.--Crie holà à ta langue, je t&#x27;en prie; elle fait des courbettes qui sont bien hors de saison. Il était armé en chasseur.</p>
+<p>ROSALINDE.--O mauvais présage! Il vient pour percer mon coeur.</p>
+<p>CÉLIE.--Je voudrais chanter ma chanson sans refrain, tu me fais toujours sortir du ton.</p>
+<p>ROSALINDE.--Ne sais-tu pas que je suis femme? Quand je pense, il faut que je parle: poursuis, ma chère.</p>
+<p>CÉLIE.--Vous me faites perdre le fil de mon récit. Doucement, n&#x27;est-ce pas lui qui vient ici?</p>
+<p>(Entrent Orlando et Jacques.)</p>
+<p>ROSALINDE.--C&#x27;est lui-même; sauvons-nous, et remarquons-le bien.</p>
+<p>(Célie et Rosalinde se retirent.)</p>
+<p>JACQUES.--Je vous remercie de votre compagnie; mais en vérité j&#x27;aurais autant aimé être seul.</p>
+<p>ORLANDO.--Et moi aussi; mais cependant, pour la forme, je vous remercie aussi de votre compagnie.</p>
+<p>JACQUES.--Que Dieu soit avec vous! Ne nous rencontrons que le plus rarement que nous pourrons.</p>
+<p>ORLANDO.--Je souhaite que nous devenions, l&#x27;un pour l&#x27;autre, encore plus étrangers que nous ne sommes.</p>
+<p>JACQUES.--Ne gâtez plus les arbres, je vous prie, en écrivant des chansons d&#x27;amour sur leurs écorces.</p>
+<p>ORLANDO.--Ne gâtez plus mes vers, je vous en prie, en les lisant d&#x27;aussi mauvaise grâce.</p>
+<p>JACQUES.--Rosalinde est le nom de votre maîtresse?</p>
+<p>ORLANDO.--Oui, précisément.</p>
+<p>JACQUES.--Je n&#x27;aime pas son nom.</p>
+<p>ORLANDO.--On ne songeait guère à vous plaire, lorsqu&#x27;elle fut baptisée.</p>
+<p>JACQUES.--De quelle taille est-elle?</p>
+<p>ORLANDO.--Toute juste aussi haute que mon coeur.</p>
+<p>JACQUES.--Vous êtes plein de jolies réponses. N&#x27;auriez-vous pas connu les femmes de quelques orfèvres, et ne leur auriez-vous pas escamoté leurs bagues?</p>
+<p>ORLANDO.--Pas du tout.--Mais je vous réponds en vrai style de toile peinte[40]; c&#x27;est là que vous avez étudié les questions que vous me faites.</p>
+<p>[Note 40: Tapisseries à personnages de la bouche desquels sortaient des sentences imprimées.]</p>
+<p>JACQUES.--Vous avez un esprit bien agile, je crois qu&#x27;il est fait des talons d&#x27;Atalante. Voulez-vous vous asseoir avec moi et nous déclamerons tous deux contre nos maîtresses, contre le monde et notre mauvaise fortune?</p>
+<p>ORLANDO.--Je ne veux censurer aucun être vivant dans le monde, que moi seul à qui je connais le plus de défauts.</p>
+<p>JACQUES.--Le plus grand défaut que vous ayez est d&#x27;être amoureux.</p>
+<p>ORLANDO.--C&#x27;est un défaut que je ne changerais pas contre votre plus belle vertu. Je suis las de vous.</p>
+<p>JACQUES.--Par ma foi, je cherchais un fou quand je vous ai trouvé.</p>
+<p>ORLANDO.--Il est noyé dans le ruisseau: tenez, regardez dans l&#x27;eau, et vous l&#x27;y verrez[41].</p>
+<p>[Note 41: Y a-t-il longtemps que tu n&#x27;as vu la figure d&#x27;un sot? Puisque mes yeux te servent si bien de miroir. (Mariage de Figaro.)]</p>
+<p>JACQUES.--J&#x27;y verrai ma propre figure.</p>
+<p>ORLANDO.--Que je prends pour celle d&#x27;un fou, ou d&#x27;un zéro en chiffre.</p>
+<p>JACQUES.--Je ne reste pas plus longtemps avec vous, bon signor l&#x27;Amour.</p>
+<p>ORLANDO.--Je suis charmé de votre départ: adieu, bon monsieur la Mélancolie.</p>
+<p>(Célie et Rosalinde s&#x27;avancent.)</p>
+<p>ROSALINDE.--Je veux lui parler du ton d&#x27;un valet impertinent, et sous cet habit jouer avec lui le rôle d&#x27;un vaurien. (A Orlando.) Holà, garde-chasse, m&#x27;entendez-vous?</p>
+<p>ORLANDO.--Très-bien: que voulez-vous?</p>
+<p>ROSALINDE.--Que dit l&#x27;horloge, je vous prie?</p>
+<p>ORLANDO.--Vous devriez plutôt me demander à quelle heure du jour nous sommes, il n&#x27;y a pas d&#x27;horloge dans la forêt.</p>
+<p>ROSALINDE.--Il n&#x27;y a alors pas de vrais amants dans la forêt; autrement, les soupirs qu&#x27;ils pousseraient à chaque minute, les gémissements qu&#x27;on entendrait à chaque heure marqueraient les pas paresseux du temps aussi bien qu&#x27;une horloge.</p>
+<p>ORLANDO.--Et pourquoi ne dites-vous pas les pas légers du temps? Cette expression n&#x27;aurait-elle pas été aussi convenable?</p>
+<p>ROSALINDE.--Point du tout, monsieur: le temps chemine d&#x27;un pas différent, selon la différence des personnes: je vous dirai, moi, avec qui le temps va l&#x27;amble, avec qui il trotte, avec qui il galope et avec qui il s&#x27;arrête.</p>
+<p>ORLANDO.--Voyons: dites-moi, je vous prie, avec qui il trotte?</p>
+<p>ROSALINDE.--Vraiment, il va le grand trot avec la jeune fille, depuis le jour de son contrat de mariage, jusqu&#x27;au jour qu&#x27;il est célébré: quand l&#x27;intervalle ne serait que de sept jours, le pas du temps est si pénible, qu&#x27;il semble durer sept ans.</p>
+<p>ORLANDO.--Avec qui le temps va-t-il l&#x27;amble?</p>
+<p>ROSALINDE.--Avec un prêtre qui ne sait pas le latin, et avec un homme riche qui n&#x27;a pas la goutte: le premier dort tranquillement, parce qu&#x27;il n&#x27;étudie pas; et le second mène une vie joyeuse, parce qu&#x27;il ne sent aucune peine: l&#x27;un est exempt du fardeau d&#x27;une stérile science, et l&#x27;autre ne connaît pas le fardeau d&#x27;une ennuyeuse et accablante indigence. Voilà les gens pour qui le temps va l&#x27;amble.</p>
+<p>ORLANDO.--Avec qui va-t-il au galop?</p>
+<p>ROSALINDE.--Avec un voleur que l&#x27;on conduit au gibet: quoiqu&#x27;il aille aussi doucement que ses pieds puissent se poser, il croit arriver toujours trop tôt.</p>
+<p>ORLANDO.--Et avec qui le temps s&#x27;arrête-t-il?</p>
+<p>ROSALINDE.--Avec les avocats en vacations, car ils dorment d&#x27;un terme à l&#x27;autre, et alors ils ne s&#x27;aperçoivent pas comme le temps chemine.</p>
+<p>ORLANDO.--Où demeurez-vous, beau jeune homme?</p>
+<p>ROSALINDE.--Avec cette bergère, ma soeur, ici sur les bords de cette forêt, comme une frange sur un jupon.</p>
+<p>ORLANDO,--Êtes-vous native de cet endroit?</p>
+<p>ROSALINDE.--Comme le lapin que vous voyez habiter le terrier où sa mère l&#x27;enfanta.</p>
+<p>ORLANDO.--Il y a dans votre accent quelque chose de plus fin, que vous n&#x27;auriez pu l&#x27;acquérir dans un séjour si retiré.</p>
+<p>ROSALINDE.--Plusieurs personnes me l&#x27;ont déjà répété; mais à dire vrai, j&#x27;ai appris à parler d&#x27;un vieil oncle religieux, qui dans sa jeunesse vécut dans le monde, et qui connut trop bien la galanterie, car il devint amoureux. Je lui ai entendu faire bien des sermons contre l&#x27;amour, et je remercie Dieu de n&#x27;être pas née femme, pour n&#x27;être pas exposée à toutes les folies et aux étourderies dont il accusait tout le sexe en général.</p>
+<p>ORLANDO.--Vous rappelleriez-vous quelques-uns des principaux défauts qu&#x27;il imputait aux femmes?</p>
+<p>ROSALINDE.--Il n&#x27;y en avait point de principaux; ils se ressemblaient tous comme des pièces de deux liards; chaque défaut lui paraissait monstrueux, jusqu&#x27;à ce qu&#x27;un autre défaut vînt faire le pendant.</p>
+<p>ORLANDO.--Nommez-moi, je vous prie, quelques-uns de ces défauts.</p>
+<p>ROSALINDE.--Non; je ne veux faire usage de mon remède que sur ceux qui sont malades. Il y a un homme qui parcourt la forêt et qui gâte nos jeunes arbres, en gravant Rosalinde sur leur écorce; il suspend des odes sur l&#x27;aubépine, et des élégies sur les ronces; et toutes déifient le nom de Rosalinde. Si je pouvais rencontrer ce fou, je lui donnerais quelques bons conseils; car il paraît avoir la fièvre quotidienne d&#x27;amour.</p>
+<p>ORLANDO.--Je suis cet homme, si tourmenté par l&#x27;amour; enseignez-moi, de grâce, votre remède.</p>
+<p>ROSALINDE.--Il n&#x27;y a en vous aucun des symptômes décrits par mon oncle; il m&#x27;a appris à reconnaître un homme amoureux, et je suis sûr que vous n&#x27;êtes point un oiseau pris à ce trébuchet.</p>
+<p>ORLANDO.--Quels étaient ces symptômes?</p>
+<p>ROSALINDE.--Une joue maigre, que vous n&#x27;avez pas; un oeil cerné et enfoncé, que vous n&#x27;avez pas; un esprit taciturne, que vous n&#x27;avez pas; une barbe négligée, que vous n&#x27;avez pas; mais cela, je vous le pardonne; car ce que vous avez de barbe n&#x27;est que le revenu d&#x27;un frère cadet: ensuite vos bas devraient être sans jarretières, votre chapeau sans cordons, vos manches déboutonnées, vos souliers détachés; en un mot tout sur vous devrait annoncer l&#x27;insouciance et le désespoir. Mais vous n&#x27;êtes pas un pareil homme; au contraire, vous êtes plutôt tiré à quatre épingles dans vos ajustements; ce qui prouve que vous vous aimez vous-même, beaucoup plus que vous ne paraissez amoureux d&#x27;une autre personne.</p>
+<p>ORLANDO.--Beau jeune homme, je voudrais pouvoir te faire croire que j&#x27;aime.</p>
+<p>ROSALINDE.--Moi, le croire? Il vous est aussi aisé de le persuader à celle que vous aimez, ce dont, j&#x27;en réponds, elle conviendra bien plus aisément qu&#x27;elle n&#x27;avouera qu&#x27;elle vous aime: c&#x27;est un de ces points sur lesquels les femmes mentent toujours à leur conscience. Mais, dites-moi, de bonne foi, est-ce vous qui suspendez aux arbres ces vers qui font un si grand éloge de Rosalinde?</p>
+<p>ORLANDO.--Je te jure, jeune homme, par la blanche main de Rosalinde, que c&#x27;est moi-même: je suis cet infortuné.</p>
+<p>ROSALINDE.--Mais êtes-vous aussi amoureux que le disent vos rimes?</p>
+<p>ORLANDO.--Ni rime ni raison ne sauraient exprimer tout mon amour.</p>
+<p>ROSALINDE.--L&#x27;amour n&#x27;est qu&#x27;une pure folie, et je vous dis qu&#x27;il mérite, autant que les fous, l&#x27;hôpital et le fouet; ce qui fait qu&#x27;on ne corrige pas et qu&#x27;on ne guérit pas ainsi les amoureux, c&#x27;est que cette frénésie est si commune que les correcteurs même s&#x27;avisent aussi d&#x27;aimer: cependant je fais état de guérir l&#x27;amour par des conseils.</p>
+<p>ORLANDO.--Avez-vous jamais guéri quelque amant de cette façon-là?</p>
+<p>ROSALINDE.--Oui, j&#x27;en ai guéri un, et voici comment: Son régime était de s&#x27;imaginer que j&#x27;étais sa bien-aimée, sa maîtresse, et tous les jours je le mettais à me faire sa cour. Alors, prenant le caractère d&#x27;une jeune fille capricieuse, je jouais la femme chagrine, langoureuse, inconstante, remplie d&#x27;envie et de fantaisies, fière, fantasque, minaudière, sotte, volage, riant et pleurant tour à tour, affectant toutes les passions sans en sentir aucune, comme font les garçons et les filles, qui pour la plupart sont assez des animaux de cette couleur. Tantôt je l&#x27;aimais, tantôt je le détestais; tantôt je lui faisais accueil, tantôt je le rebutais; quelquefois je pleurais de tendresse pour lui, ensuite je lui crachais au visage; je fis tant, enfin, que je fis passer mon amoureux d&#x27;un violent accès d&#x27;amour à un violent accès de folie, qui consistait à détester l&#x27;univers entier, et qui l&#x27;envoya vivre dans un réduit vraiment monastique: c&#x27;est ainsi que je l&#x27;ai guéri, et par le même régime je me fais fort de laver votre foie aussi net que le coeur d&#x27;un mouton bien sain, de façon qu&#x27;il n&#x27;y restera pas la plus petite tache d&#x27;amour.</p>
+<p>ORLANDO.--Je ne me soucie pas d&#x27;être guéri, jeune homme.</p>
+<p>ROSALINDE.--Je vous guérirais si vous vouliez seulement consentir à m&#x27;appeler Rosalinde, à venir tous les jours à ma chaumière me faire la cour.</p>
+<p>ORLANDO.--Oh! pour cela, je te le jure sur mon amour que j&#x27;y consens: dis-moi où tu demeures.</p>
+<p>ROSALINDE.--Venez avec moi, et je vous le montrerai; et, chemin faisant, vous me direz dans quel endroit de la forêt vous habitez: voulez-vous venir?</p>
+<p>ORLANDO.--De tout mon coeur, bon jeune homme.</p>
+<p>ROSALINDE.--Non, non, il faut que vous m&#x27;appeliez Rosalinde. (A Célie.) Allons, ma soeur, voulez-vous venir?</p>
+<p>(Ils sortent.)</p>
+<h3 class="sub">Scène IV</h3>
+<p>Entrent TOUCHSTONE, AUDREY et JACQUES, qui les observe et se tient à l&#x27;écart.</p>
+<p>TOUCHSTONE.--Allons vite, chère Audrey; je vais chercher vos chèvres, Audrey: Eh bien, Audrey, suis-je toujours votre homme? Mes traits simples vous contentent-ils?</p>
+<p>AUDREY.--Vos traits, Dieu nous garde! Quels traits?</p>
+<p>TOUCHSTONE.--Je suis ici avec toi et tes chèvres, comme jadis le bon Ovide, le plus capricieux des poëtes, était parmi les Goths[42].</p>
+<p>[Note 42: Barbarus his ego quia non intelligo illis!]</p>
+<p>JACQUES, à part.--O science plus déplacée que Jupiter ne le serait sous un toit de chaume!</p>
+<p>TOUCHSTONE.--Quand les vers d&#x27;un homme ne sont pas compris, et que l&#x27;esprit d&#x27;un homme n&#x27;est pas secondé par l&#x27;intelligence, enfant précoce, c&#x27;est un coup plus mortel que de voir arriver le long mémoire d&#x27;un maigre écot dans un petit cabaret: vraiment, je voudrais que les dieux t&#x27;eussent fait poétique.</p>
+<p>AUDREY.--Je ne sais ce que c&#x27;est que poétique: cela est-il honnête dans le mot et dans la chose? cela a-t-il quelque vérité?</p>
+<p>TOUCHSTONE.--Non vraiment; car la vraie poésie est la plus remplie de fictions, et les amoureux sont adonnés à la poésie; tout ce qu&#x27;ils jurent en poésie, on peut dire qu&#x27;ils le feignent comme amants.</p>
+<p>AUDREY.--Comment pouvez-vous donc souhaiter que les dieux m&#x27;eussent fait poétique?</p>
+<p>TOUCHSTONE.--Oui vraiment, je le souhaiterais; car tu me jures que tu es honnête. Eh bien, si tu étais poëte, je pourrais avoir quelque espoir que tu feins.</p>
+<p>AUDREY.--Est-ce que vous voudriez que je ne fusse pas honnête?</p>
+<p>TOUCHSTONE.--Non vraiment, à moins que tu ne fusses laide; car l&#x27;honnêteté accouplée avec la beauté, c&#x27;est une sauce au miel pour du sucre.</p>
+<p>JACQUES, à part.--Quel fou encombré de science!</p>
+<p>AUDREY.--Eh bien! je ne suis pas jolie; ainsi je prie les dieux de me rendre honnête.</p>
+<p>TOUCHSTONE.--Mais vraiment, donner de l&#x27;honnêteté à une vilaine laideron, c&#x27;est mettre un bon mets dans un plat sale.</p>
+<p>AUDREY.--Je ne suis point vilaine, quoique je remercie les dieux d&#x27;être laide.</p>
+<p>TOUCHSTONE--Très-bien, que les dieux soient loués de ta laideur! viendra ensuite le tour au reste. Qu&#x27;il en soit ce qu&#x27;on voudra, je veux t&#x27;épouser; et pour cela, j&#x27;ai vu sir Olivier Mar-Text[43], vicaire du village voisin, lequel m&#x27;a promis de se trouver dans cet endroit de la forêt, et de nous unir.</p>
+<p>[Note 43: Mar-Text, gâte-texte.]</p>
+<p>JACQUES, à part.--Je serais bien charmé de voir cette rencontre.</p>
+<p>AUDREY.--Eh bien! que les dieux nous donnent la joie!</p>
+<p>TOUCHSTONE.--Ainsi soit-il! Je fais là une entreprise capable de faire reculer un homme qui aurait le coeur timide; car nous n&#x27;avons ici d&#x27;autre temple que le bois, d&#x27;autre assemblée que celle des bêtes à cornes. Mais qu&#x27;est-ce que cela fait? Courage; si les cornes sont odieuses, elles sont nécessaires. On dit que bien des hommes ne connaissent pas l&#x27;avantage de ce qu&#x27;ils possèdent, c&#x27;est vrai.--Bien des maris en ont de bonnes et belles, et n&#x27;en connaissent pas la propriété. Eh bien! c&#x27;est le douaire de leurs femmes; ce n&#x27;est pas un bien qui soit des acquêts du mari.--Des cornes! Oui, des cornes.--N&#x27;y a-t-il que les pauvres gens qui en aient? Non, non. Le plus noble cerf les porte aussi grandes que le misérable.--L&#x27;homme qui vit seul est-il donc heureux? Non. Comme une ville entourée de murailles vaut mieux qu&#x27;un village, de même le front d&#x27;un homme marié est bien plus honorable que la tête nue d&#x27;un garçon. Et si l&#x27;escrime vaut mieux que la maladresse, il vaut donc mieux porter corne que de n&#x27;en pas avoir. (Sir Olivier Mar-Text entre.) Voilà sir[44] Olivier.--Sir Olivier Mar-Text, vous êtes le bienvenu. Voulez-vous nous expédier ici sous cet arbre, ou irons-nous avec vous à votre chapelle?</p>
+<p>[Note 44: «Celui qui a pris son premier degré à l&#x27;université est en style d&#x27;école appelé dominus, et en langue vulgaire sir.» (JOHNSON.)]</p>
+<p>SIR OLIVIER.--N&#x27;y a-t-il ici personne pour donner la femme?</p>
+<p>TOUCHSTONE.--Je ne veux la recevoir en don de personne.</p>
+<p>SIR OLIVIER.--Vraiment, il faut bien que quelqu&#x27;un la donne, autrement le mariage serait irrégulier.</p>
+<p>JACQUES se découvre et s&#x27;avance.--Continuez, continuez! Je la donnerai.</p>
+<p>TOUCHSTONE.--Bonsoir, mon bon monsieur... comme il vous plaira. Comment vous portez-vous, monsieur? Je suis charmé de vous avoir rencontré; Dieu vous récompense de nous avoir procuré votre nouvelle compagnie; je suis vraiment enchanté de vous voir. J&#x27;ai là un petit amusement en train, monsieur. Allons, couvrez-vous, je vous prie.</p>
+<p>JACQUES.--Voulez-vous être marié, fou?</p>
+<p>TOUCHSTONE.--De même, monsieur, qu&#x27;un boeuf a son joug, un cheval son frein, et le faucon ses grelots, de même un homme a ses envies; et de même que les pigeons se becquètent, de même un couple voudrait s&#x27;embrasser.</p>
+<p>JACQUES.--Quoi! un homme de votre sorte voudrait se marier sous un buisson, comme un mendiant? Allez à l&#x27;église, et prenez un bon prêtre, qui puisse vous dire ce que c&#x27;est que le mariage. Cet homme-ci ne vous joindra ensemble qu&#x27;à peu près comme on joint une boiserie; bientôt l&#x27;un de vous deux se trouvera être un panneau retiré et se déjettera comme du bois vert.</p>
+<p>TOUCHSTONE, à part.--J&#x27;ai dans l&#x27;idée qu&#x27;il me vaudrait mieux être marié par lui plutôt que par un autre; car il ne me paraît pas en état de me bien marier; et n&#x27;étant pas bien marié, ce sera une bonne excuse pour moi dans la suite pour laisser là ma femme.</p>
+<p>JACQUES.--Viens avec moi, et laisse-toi gouverner par mes conseils.</p>
+<p>TOUCHSTONE.--Allons, chère Audrey, il faut nous marier, ou il nous faut vivre dans le libertinage. Adieu, bon monsieur Olivier; non.--O doux Olivier! ô brave Olivier! ne me laisse pas derrière toi; mais pars, va-t&#x27;en, te dis-je, je ne veux pas aller aux épousailles avec toi.</p>
+<p>SIR OLIVIER.--Cela est égal; mais jamais aucun de tous ces coquins fantasques ne me fera oublier mon ministère par ses moqueries.</p>
+<p>(Ils sortent.)</p>
+<h3 class="sub">Scène V</h3>
+<p>On voit une cabane dans le bois.</p>
+<p>Entrent ROSALINDE et CÉLIE.</p>
+<p>ROSALINDE.--Non, ne me parle point; je veux pleurer.</p>
+<p>CÉLIE.--Contente-toi, je t&#x27;en prie... Mais cependant fais-moi la grâce de considérer que les pleurs ne siéent pas à un homme.</p>
+<p>ROSALINDE.--Mais n&#x27;ai-je pas sujet de pleurer?</p>
+<p>CÉLIE.--Autant de sujet qu&#x27;on puisse le désirer; ainsi pleure.</p>
+<p>ROSALINDE.--Ses cheveux même sont d&#x27;une couleur fausse.</p>
+<p>CÉLIE.--Ils sont un peu plus foncés que les cheveux de Judas[45]; vraiment ses baisers sont les enfants de Judas.</p>
+<p>[Note 45: Judas avait la barbe et les cheveux roux dans les anciennes tapisseries.]</p>
+<p>ROSALINDE.--Dans le vrai, ses cheveux sont d&#x27;une bonne couleur.</p>
+<p>CÉLIE.--Une charmante couleur! Le châtain est toujours la seule couleur.</p>
+<p>ROSALINDE.--Et ses baisers sont aussi saints, aussi chastes que le toucher d&#x27;une barbe d&#x27;ermite[46].</p>
+<p>[Note 46: Allusion aux baisers de charité que donnaient les ermites.]</p>
+<p>CÉLIE.--Il s&#x27;est procuré une paire de lèvres moulées sur celles de Diane: une froide nonne, consacrée à l&#x27;hiver, ne donne pas des baisers plus innocents; ils ont toute la glace de la chasteté même.</p>
+<p>ROSALINDE.--Mais pourquoi a-t-il juré qu&#x27;il viendrait ce matin, et ne vient-il pas?</p>
+<p>CÉLIE.--Non certainement, il n&#x27;y a en lui aucune fidélité.</p>
+<p>ROSALINDE.--Le crois-tu?</p>
+<p>CÉLIE.--Oui: je ne crois pas qu&#x27;il soit un filou ou un voleur de chevaux; mais quant à sa sincérité en amour, je pense qu&#x27;il est aussi creux qu&#x27;un gobelet couvert ou qu&#x27;une noix vermoulue.</p>
+<p>ROSALINDE.--Il n&#x27;est pas sincère en amour?</p>
+<p>CÉLIE.--Il peut l&#x27;être lorsqu&#x27;il est amoureux; mais je crois qu&#x27;il ne l&#x27;est pas.</p>
+<p>ROSALINDE.--Tu l&#x27;as entendu jurer sans hésiter qu&#x27;il l&#x27;était.</p>
+<p>CÉLIE.--Il était n&#x27;est pas Il est: d&#x27;ailleurs, le serment d&#x27;un amoureux ne vaut pas mieux que la parole d&#x27;un garçon de cabaret; l&#x27;un et l&#x27;autre affirment de faux comptes.--Il est ici dans la forêt, à la suite du duc votre père.</p>
+<p>ROSALINDE.--J&#x27;ai rencontré hier le duc, et j&#x27;ai causé longtemps avec lui: il m&#x27;a demandé quelle était ma famille; je lui ai répondu qu&#x27;elle était aussi bonne que la sienne: il s&#x27;est mis à rire et m&#x27;a laissé aller. Mais pourquoi parlons-nous de pères lorsqu&#x27;il y a dans le monde un homme comme Orlando?</p>
+<p>CÉLIE.--Oh! c&#x27;est un beau galant à la mode; il fait de beaux vers, il dit de belles paroles, il fait de beaux serments et les rompt de même. Il frappe tout de travers, il ne fait jamais qu&#x27;effleurer le coeur de sa maîtresse, comme un faible jouteur qui ne pique son cheval que d&#x27;un côté et brise sa lance de travers comme un noble oison: mais tout ce que la jeunesse monte et ce que la folie guide est toujours beau.--Qui vient ici?</p>
+<p>(Entre Corin).</p>
+<p>CORIN.--Maîtresse et maître, vous avez souvent fait des questions sur ce berger qui se plaignait de l&#x27;amour, ce berger que vous avez vu assis auprès de moi sur le gazon, vantant la fière et dédaigneuse bergère qui était sa maîtresse.</p>
+<p>CÉLIE.--Eh bien! qu&#x27;as-tu à nous dire de lui?</p>
+<p>CORIN.--Si vous voulez voir jouer une vraie comédie entre la pâle couleur d&#x27;un amant sincère et la rougeur ardente du mépris et de l&#x27;orgueil dédaigneux, suivez-moi un peu, et je vous conduirai si vous voulez voir cela.</p>
+<p>ROSALINDE.--Oh! venez; partons sur-le-champ; la vue des amoureux nourrit ceux qui le sont. Conduis-nous à ce spectacle; vous verrez que je jouerai un rôle actif dans leur comédie.</p>
+<p>(Ils sortent.)</p>
+<h3 class="sub">Scène vi</h3>
+<p>Une autre partie de la forêt.</p>
+<p>Entrent SYLVIUS et PHÉBÉ.</p>
+<p>SYLVIUS.--Charmante Phébé, ne me méprisez pas: non, ne me dédaignez pas, Phébé, dites que vous ne m&#x27;aimez pas; mais ne le dites pas avec aigreur: le bourreau même dont le coeur est endurci par la vue familière de la mort, ne laisse jamais tomber sa hache sur le cou incliné devant lui sans demander d&#x27;abord pardon au patient: voudriez-vous être plus dure que l&#x27;homme qui fait métier de répandre le sang?</p>
+<p>(Entrent Rosalinde, Célie et Corin.)</p>
+<p>PHÉBÉ.--Je ne voudrais pas être ton bourreau: je te quitte: car je ne voudrais pas t&#x27;offenser. Tu me dis que le meurtre est dans mes yeux; cela est joli à coup sûr et fort probable que les yeux, qui sont la chose la plus fragile et la plus douce, à qui le moindre atome fait fermer leurs portes timides, soient appelés des tyrans, des bouchers, des meurtriers. C&#x27;est maintenant que je fronce les sourcils de tout mon coeur en te regardant; et si mes yeux peuvent blesser, eh bien, puissent-ils te tuer dans ce moment! Maintenant fais semblant de t&#x27;évanouir; allons, tombe.--Si tu ne peux pas, oh! fi, fi, ne mens donc pas, en disant que mes yeux sont des meurtriers. Montre la blessure que mes yeux t&#x27;ont faite. Égratigne-toi seulement avec une épingle, et il en restera quelques cicatrices; appuie-toi seulement sur un jonc, et tu verras que ta main en gardera un moment la marque et l&#x27;empreinte: mais mes yeux, que je viens de lancer sur toi, ne te blessent pas; et, j&#x27;en suis bien sûre, il n&#x27;y a pas dans les yeux de force qui puisse faire du mal.</p>
+<p>SYLVIUS.--O ma chère Phébé! si jamais (et ce jamais peut être très-prochain), si jamais, dis-je, vous éprouvez de la part de quelques joues vermeilles le pouvoir de l&#x27;Amour, vous connaîtrez alors les blessures invisibles que font les flèches aiguës de l&#x27;Amour.</p>
+<p>PHÉBÉ.--Mais jusqu&#x27;à ce que ce moment arrive, ne m&#x27;approche pas; et quand il viendra, accable-moi de tes railleries; n&#x27;aie aucune pitié de moi, jusqu&#x27;à ce moment, je n&#x27;aurai aucune pitié de toi.</p>
+<p>ROSALINDE s&#x27;avance.--Et pourquoi, je vous prie? Qui pouvait être votre mère pour que vous insultiez et que vous tyrannisiez ainsi tout à la fois les malheureux? Parce que vous avez quelque beauté, quoique je n&#x27;en voie cependant en vous pas plus qu&#x27;il n&#x27;en faut pour aller se coucher sans lumière, faut-il pour cela que vous soyez si fière et si barbare?--Quoi? que veut dire ceci? pourquoi me regardez-vous? Je ne vois rien de plus en vous, qu&#x27;un de ces ouvrages ordinaires de la nature faits à la douzaine. Eh! mais vraiment, la petite créature; je pense qu&#x27;elle a aussi envie de m&#x27;éblouir. Non, sur ma foi, ma fière demoiselle, ne vous flattez pas de cet espoir: ce ne sont point vos sourcils couleur d&#x27;encre, vos cheveux de soie noire, vos prunelles de boeuf ni vos joues de crème, qui peuvent soumettre mon coeur pour vous adorer. Et vous, sot berger, pourquoi la suivez-vous toujours, comme le midi nébuleux qui souffle le vent et la pluie? Vous êtes mille fois plus bel homme qu&#x27;elle n&#x27;est belle femme. Ce sont des imbéciles comme vous qui remplissent le monde de vilains enfants: ce n&#x27;est point son miroir, c&#x27;est vous-même qui la flattez, et c&#x27;est par vous qu&#x27;elle se voit plus belle qu&#x27;aucun de ses traits ne pourrait la représenter. Mais, mademoiselle, apprenez à vous connaître vous-même; mettez-vous à genoux, et remerciez le ciel, à jeun, de vous avoir donné l&#x27;amour d&#x27;un honnête homme; il faut que je vous le dise amicalement à l&#x27;oreille, vendez-vous quand vous pourrez, car vous n&#x27;êtes pas bonne pour les marchés. Demandez pardon à ce pauvre garçon, aimez-le, acceptez ses offres; la laideur s&#x27;enlaidit encore quand elle veut humilier les autres: ainsi, berger, prends-la pour ta femme; portez-vous bien.</p>
+<p>PHÉBÉ.--Charmant jeune homme, grondez-moi pendant un an entier, je vous prie; j&#x27;aime mieux vous entendre gronder que celui-ci me faire la cour.</p>
+<p>ROSALINDE.--Il est devenu amoureux des défauts de cette bergère, elle va devenir amoureuse de ma colère.--Si cela est ainsi, toutes les fois qu&#x27;elle te répondra par des regards menaçants, je la régalerai de paroles piquantes. (A Phébé.) Pourquoi me regardez-vous ainsi?</p>
+<p>PHÉBÉ.--Ce n&#x27;est pas que je vous veuille aucun mal.</p>
+<p>ROSALINDE.--Ne devenez pas amoureuse de moi, je vous prie; car je suis plus faux que les serments que l&#x27;on fait dans le vin; d&#x27;ailleurs, je ne vous aime pas. Si vous voulez savoir ma demeure, c&#x27;est à la touffe d&#x27;oliviers, ici proche. (A Célie.) Voulez-vous venir, ma soeur?--Berger, serre-la de près.--Allons, ma soeur.--Bergère, regardez-le d&#x27;un oeil plus favorable, et ne soyez pas si fière; quoique tout le monde puisse vous voir, personne n&#x27;a cependant la vue aussi trouble que lui pour vous. Allons rejoindre notre troupeau.</p>
+<p>(Rosalinde, Célie et Corin sortent.)</p>
+<p>PHÉBÉ.--En vérité, berger, je trouve maintenant que ton refrain est bien vrai. «Qui a aimé sans avoir aimé à la première vue[57].»</p>
+<p>[Note 47: Citation d&#x27;Hérode et Léandre, par Marlowe.]</p>
+<p>SYLVIUS.--Charmante Phébé!</p>
+<p>PHÉBÉ.--Ah! que dis-tu, Sylvius?</p>
+<p>SYLVIUS.--Plains-moi, chère Phébé.</p>
+<p>PHÉBÉ.--Mais je suis vraiment fâché pour toi, gentil Sylvius.</p>
+<p>SYLVIUS.--Partout où est le chagrin, la consolation devrait se trouver; si vous êtes chagrine de ma douleur en amour, donnez-moi votre amour, et alors vous n&#x27;aurez plus de chagrin, et moi, je n&#x27;aurai plus de douleur.</p>
+<p>PHÉBÉ.--Tu as mon amour. N&#x27;est-ce pas là un trait de bon voisin?</p>
+<p>SYLVIUS.--Je voudrais vous posséder.</p>
+<p>PHÉBÉ.--Ah! cela, c&#x27;est de l&#x27;avidité. Il fut un temps, Sylvius, où je te haïssais: ce n&#x27;est pas cependant que je t&#x27;aime maintenant; mais puisque tu peux si bien discourir sur l&#x27;amour, je veux bien endurer ta compagnie, qui m&#x27;était autrefois à charge; et aussi je saurai t&#x27;employer, mais ne demande pas d&#x27;autre récompense que le plaisir d&#x27;être employé par moi.</p>
+<p>SYLVIUS.--Mon amour est si pur, si parfait, et moi si déshérité de toute faveur, que je croirai faire la plus abondante moisson en ramassant seulement les épis après ceux qui auront fait la récolte: ne me refusez pas de temps en temps un sourire errant, et je vivrai de cela.</p>
+<p>PHÉBÉ.--Connais-tu le jeune homme qui m&#x27;a parlé, il y a un instant?</p>
+<p>SYLVIUS.--Pas trop, mais je l&#x27;ai rencontré très-souvent; c&#x27;est lui qui a acheté la cabane et les pâturages qui appartenaient au vieux Carlot.</p>
+<p>PHÉBÉ.--Ne va pas t&#x27;imaginer que je l&#x27;aime, quoique je te fasse des questions sur lui: ce n&#x27;est qu&#x27;un jeune impertinent. Cependant il parle très-bien; mais qu&#x27;est-ce que me font les paroles? Cependant les paroles font bien, surtout quand celui qui les dit plaît à ceux qui les entendent: c&#x27;est un joli jeune homme; pas très-joli; mais à vrai dire il est bien fier, et cependant sa fierté lui sied à merveille; il fera un bel homme; ce qu&#x27;il y a de mieux chez lui, c&#x27;est son teint; et si sa langue blesse, ses yeux guérissent aussitôt: il n&#x27;est pas grand, cependant il est grand pour son âge; sa jambe est comme ça, et pourtant pas mal. Il y avait un joli vermillon sur ses lèvres! un rouge un peu plus mûr et plus foncé que celui qui colorait ses joues; c&#x27;était précisément la nuance qu&#x27;il y a entre une étoffe toute rouge et le damas mélangé. Il y a des femmes, Sylvius, si elles l&#x27;avaient regardé en détail, qui eussent comme j&#x27;ai fait, été bien près de devenir amoureuse de lui: pour moi, je ne l&#x27;aime ni ne le hais; et cependant j&#x27;ai plus de sujet de le haïr que de l&#x27;aimer: car qu&#x27;avait-il à faire de me gronder? Il a dit que mes yeux étaient noirs, que mes cheveux étaient noirs; et, maintenant que je m&#x27;en souviens, il me témoigne du dédain. Je suis étonnée de ce que je ne lui ai pas répondu sur le même ton; mais c&#x27;est tout un; erreur n&#x27;est pas compte. Je veux lui écrire une lettre bien piquante, et tu la porteras: veux-tu, Sylvius?</p>
+<p>SYLVIUS.--De tout mon coeur, Phébé.</p>
+<p>PHÉBÉ.--Je veux l&#x27;écrire tout de suite; le sujet est dans ma tête et dans mon coeur; ma lettre sera très-courte, mais bien mordante: viens avec moi, Sylvius.</p>
+<p>(Ils sortent.)</p>
+<h3 class="sub">Fin du troisième acte — Acte quatrième</h3>
+<h3 class="sub">Scène I</h3>
+<p>Toujours la forêt.</p>
+<p>ROSALINDE, CÉLIE et JACQUES.</p>
+<p>JACQUES.--Je t&#x27;en prie, joli jeune homme, faisons plus ample connaissance.</p>
+<p>ROSALINDE.--On dit que vous êtes un homme mélancolique.</p>
+<p>JACQUES.--Je le suis, il est vrai; j&#x27;aime mieux cela que de rire.</p>
+<p>ROSALINDE.--Ceux qui donnent dans l&#x27;un ou l&#x27;autre extrême font des gens détestables, et s&#x27;exposent, plus qu&#x27;un homme ivre, à être la risée de tout le monde.</p>
+<p>JACQUES.--Quoi! mais il est bon d&#x27;être triste et de ne rien dire.</p>
+<p>ROSALINDE.--Il est bon alors d&#x27;être un poteau.</p>
+<p>JACQUES.--Je n&#x27;ai pas la mélancolie d&#x27;un écolier, qui vient de l&#x27;émulation; ni la mélancolie d&#x27;un musicien, qui est fantasque; ni celle d&#x27;un courtisan, qui est vaniteux; ni celle d&#x27;un soldat, qui est l&#x27;ambition; ni celle d&#x27;un homme de robe, qui est politique; ni celle d&#x27;une femme, qui est frivole; ni celle d&#x27;un amoureux, qui est un composé de toutes les autres: mais j&#x27;ai une mélancolie à moi, une mélancolie formée de plusieurs ingrédients, extraite de plusieurs objets; et je puis dire que la contemplation de tous mes voyages, dans laquelle m&#x27;enveloppe ma fréquente rêverie, est une tristesse vraiment originale.</p>
+<p>ROSALINDE.--Vous, un voyageur! Par ma foi, vous avez grande raison d&#x27;être triste: je crains bien que vous n&#x27;ayez vendu vos terres, pour voir celles des autres: alors, avoir beaucoup vu, et n&#x27;avoir rien, c&#x27;est avoir les yeux riches et les mains pauvres.</p>
+<p>JACQUES.--Oui, j&#x27;ai acquis mon expérience.</p>
+<p>(Entre Orlando.)</p>
+<p>ROSALINDE.--Et votre expérience vous rend triste: j&#x27;aimerais mieux avoir un fou pour m&#x27;égayer, que de l&#x27;expérience pour m&#x27;attrister, et avoir voyagé pour cela.</p>
+<p>ORLANDO.--Bonjour et bonheur, chère Rosalinde.</p>
+<p>JACQUES, voyant Orlando.--Allons, que Dieu soit avec vous puisque vous parlez en vers blancs!</p>
+<p>(Il sort.)</p>
+<p>ROSALINDE.--Adieu, monsieur le voyageur: songez à grasseyer et à porter des habits étrangers; dépréciez tous les avantages de votre pays natal; haïssez votre propre existence, et grondez presque Dieu de vous avoir donné la physionomie que vous avez; autrement, j&#x27;aurai de la peine à croire que vous ayez voyagé dans une gondole[48].--Eh bien! Orlando, vous voilà? Où avez-vous été tout ce temps? Vous, un amoureux? S&#x27;il vous arrive de me jouer encore un semblable tour, ne reparaissez plus devant moi.</p>
+<p>[Note 48: C&#x27;est-à-dire que vous ayez été à Venise, alors le rendez-vous de la jeunesse dissipée.]</p>
+<p>ORLANDO.--Ma belle Rosalinde, j&#x27;arrive à une heure près de ma parole.</p>
+<p>ROSALINDE.--En amour, manquer d&#x27;une heure à sa parole! Qu&#x27;un homme divise une minute en mille parties, et qu&#x27;en affaire d&#x27;amour il ne manque à sa parole que d&#x27;une partie de la millième partie d&#x27;une minute, on pourra dire de lui que Cupidon lui a frappé sur l&#x27;épaule; mais je garantis qu&#x27;il a le coeur tout entier.</p>
+<p>ORLANDO.--Pardon, chère Rosalinde.</p>
+<p>ROSALINDE.--Non; puisque vous êtes si lambin, ne vous offrez plus à ma vue; j&#x27;aimerais autant être courtisée par un limaçon.</p>
+<p>ORLANDO.--Par un limaçon?</p>
+<p>ROSALINDE.--Oui, par un limaçon; car s&#x27;il vient lentement, il traîne sa maison sur son dos: meilleur douaire, à mon avis, que vous n&#x27;en pourrez assigner à une femme; d&#x27;ailleurs, il porte sa destinée avec lui.</p>
+<p>ORLANDO.--Quelle destinée?</p>
+<p>ROSALINDE.--Quoi donc! des cornes, que des gens tels que vous sont obligés de devoir à leurs femmes; mais le limaçon vient armé de sa destinée et prévient la médisance sur le compte de sa femme.</p>
+<p>ORLANDO.--La vertu ne donne pas de cornes et ma Rosalinde est vertueuse.</p>
+<p>ROSALINDE.--Et je suis votre Rosalinde?</p>
+<p>CÉLIE.--Il lui plaît de vous appeler ainsi; mais il a une Rosalinde de meilleure mine que vous.</p>
+<p>ROSALINDE.--Allons, faites-moi l&#x27;amour, faites-moi l&#x27;amour; car je suis maintenant dans mon humeur des dimanches, et assez disposée à consentir à tout. Que me diriez-vous maintenant, si j&#x27;étais votre vraie Rosalinde?</p>
+<p>ORLANDO.--Je vous embrasserais avant de parler.</p>
+<p>ROSALINDE.--Non; vous feriez mieux de parler d&#x27;abord, et ensuite, lorsque vous vous trouveriez embarrassé, faute de matière, vous pourriez profiter de cette occasion, pour donner un baiser. On voit tout les jours de très-bons orateurs cracher, lorsqu&#x27;ils perdent le fil de leur discours. Quant aux amoureux, lorsqu&#x27;ils ne savent plus que dire, le meilleur expédient pour eux, Dieu nous en préserve! c&#x27;est d&#x27;embrasser.</p>
+<p>ORLANDO.--Et si le baiser est refusé?</p>
+<p>ROSALINDE.--En ce cas, vous êtes forcé de recourir aux prières, et alors commence une nouvelle matière.</p>
+<p>ORLANDO.--Qui pourrait rester court en présence d&#x27;une maîtresse chérie?</p>
+<p>ROSALINDE.--Vraiment, vous-même, si j&#x27;étais votre maîtresse: autrement, j&#x27;aurais plus mauvaise idée de ma vertu que de mon esprit.</p>
+<p>ORLANDO.--Que dites-vous de ma requête?</p>
+<p>ROSALINDE.--Ne quittez pas votre habit, mais laissez votre requête[49]; ne suis-je pas votre Rosalinde?</p>
+<p>[Note 49: Suit habit, requête, équivoque.]</p>
+<p>ORLANDO.--J&#x27;ai quelque plaisir à dire que vous l&#x27;êtes, parce que je voudrais parler d&#x27;elle.</p>
+<p>ROSALINDE.--Eh bien! je vous dis en sa personne, que je ne veux point de vous.</p>
+<p>ORLANDO.--Alors il faut que je meure en ma propre personne.</p>
+<p>ROSALINDE.--Non, vraiment, mourez par procuration: le pauvre monde a presque six mille ans, et pendant tout ce temps, il n&#x27;y a jamais eu un homme qui soit mort en personne; pour cause d&#x27;amour, s&#x27;entend. Troïlus eut la tête brisée par une massue grecque, cependant il avait fait tout ce qu&#x27;il avait pu pour mourir auparavant, et il est un des modèles d&#x27;amour. Léandre, sans l&#x27;accident d&#x27;une très-chaude nuit d&#x27;été, aurait encore vécu plusieurs belles années, quand même Héro se serait faite religieuse; car sachez, mon bon jeune homme, que Léandre ne voulait que se baigner dans l&#x27;Hellespont, mais qu&#x27;il y fut surpris par une crampe, et s&#x27;y noya; et les sots historiens de ce siècle dirent que c&#x27;était pour Héro de Sestos. Mais tout cela n&#x27;est que des mensonges; les hommes sont morts dans tous les temps, et les vers les ont mangés; mais jamais ils ne sont morts d&#x27;amour.</p>
+<p>ORLANDO.--Je ne voudrais pas que ma vraie Rosalinde eût cette façon de penser; car je proteste qu&#x27;un seul regard sévère pourrait me faire mourir.</p>
+<p>ROSALINDE.--Je jure par cette main, qu&#x27;il ne ferait pas mourir une mouche: mais allons, je veux être maintenant votre Rosalinde d&#x27;une humeur plus complaisante: demandez-moi ce que vous voudrez, et je vous l&#x27;accorderai.</p>
+<p>ORLANDO.--Eh bien! Rosalinde, aimez-moi.</p>
+<p>ROSALINDE.--Oui, ma foi, je veux bien; les vendredis, les samedis et tous les jours.</p>
+<p>ORLANDO.--Et voulez-vous m&#x27;avoir?</p>
+<p>ROSALINDE.--Oui, et vingt comme vous.</p>
+<p>ORLANDO.--Que dites-vous?</p>
+<p>ROSALINDE.--N&#x27;êtes-vous pas bon à avoir?</p>
+<p>ORLANDO.--Je l&#x27;espère.</p>
+<p>ROSALINDE.--Eh bien! peut-on trop désirer d&#x27;une bonne chose? (A Célie.) Allons, ma soeur, vous serez le prêtre, et vous nous marierez.--Donnez-moi votre main, Orlando.--Qu&#x27;en dites-vous, ma soeur?</p>
+<p>ORLANDO, à Célie.--Mariez-nous, je vous prie.</p>
+<p>CÉLIE.--Je ne sais pas dire les paroles.</p>
+<p>ROSALINDE.--Il faut que vous commenciez ainsi: Voulez-vous, Orlando...</p>
+<p>CÉLIE.--Voyons: Voulez-vous, Orlando, prendre cette Rosalinde pour épouse?</p>
+<p>ORLANDO.--Oui.</p>
+<p>ROSALINDE.--Oui... Mais... quand?</p>
+<p>ORLANDO.--Tout à l&#x27;heure; aussitôt qu&#x27;elle pourra nous marier.</p>
+<p>ROSALINDE.--Alors il faut que vous disiez: Je te prends toi, Rosalinde, pour épouse.</p>
+<p>ORLANDO.--Rosalinde, je te prends pour épouse.</p>
+<p>ROSALINDE.--Je pourrais vous demander vos pouvoirs; mais passons.--Je vous prends, Orlando, pour mon mari. Ici c&#x27;est une fille qui devance le prêtre, et à coup sûr la pensée d&#x27;une femme devance toujours ses actions.</p>
+<p>ORLANDO.--Ainsi font toutes les pensées; elles ont des ailes.</p>
+<p>ROSALINDE.--Dites-moi, maintenant, combien de temps vous voudrez l&#x27;avoir, lorsqu&#x27;une fois elle sera en votre possession?</p>
+<p>ORLANDO.--Une éternité et un jour.</p>
+<p>ROSALINDE.--Dites un jour, sans l&#x27;éternité. Non, non, Orlando: les hommes ressemblent au mois d&#x27;avril lorsqu&#x27;ils font l&#x27;amour, et à décembre, lorsqu&#x27;ils se marient: les filles sont comme le mois de mai tant qu&#x27;elles sont filles, mais le temps change lorsqu&#x27;elles sont femmes. Je serai plus jalouse de vous qu&#x27;un pigeon de Barbarie ne l&#x27;est de sa colombe; plus babillarde que ne l&#x27;est un perroquet à l&#x27;approche de la pluie; j&#x27;aurai plus de fantaisies qu&#x27;un singe; plus de caprices dans mes désirs qu&#x27;une guenon; je pleurerai pour rien, comme Diane dans la fontaine[50], et cela lorsque vous serez enclin à la gaieté, je rirai aux éclats comme une hyène, à l&#x27;instant où vous aurez envie de dormir.</p>
+<p>[Note 50: Exclamations en usage quand quelqu&#x27;un déraisonnait.]</p>
+<p>ORLANDO.--Mais ma Rosalinde fera-t-elle tout cela?</p>
+<p>ROSALINDE.--Sur ma vie, elle fera comme je ferai.</p>
+<p>ORLANDO.--Oh! mais elle est sage.</p>
+<p>ROSALINDE.--Autrement, elle n&#x27;aurait pas l&#x27;esprit de faire tout cela: plus une femme a d&#x27;esprit, plus elle a de caprices: fermez la porte sur l&#x27;esprit d&#x27;une femme, et il se fera jour par la fenêtre; fermez la fenêtre, et il passera par le trou de la serrure; bouchez la serrure, et il s&#x27;envolera par la cheminée avec la fumée.</p>
+<p>ORLANDO.--Un homme qui aurait une femme avec un pareil esprit pourrait dire: «Esprit, où vas-tu?»</p>
+<p>ROSALINDE.--Non, vous pourriez lui réserver cette réprimande, pour le moment où vous verriez l&#x27;esprit de votre femme aller dans le lit de votre voisin.</p>
+<p>ORLANDO.--Et quel esprit pourrait alors avoir l&#x27;esprit de se justifier d&#x27;une telle démarche?</p>
+<p>ROSALINDE.--Vraiment, la femme dirait qu&#x27;elle venait vous y chercher: vous ne la trouverez jamais sans réponse, à moins que vous ne la trouviez sans langue. Qu&#x27;une femme qui ne sait pas prouver que son mari est toujours la cause de ses torts ne prétende pas nourrir elle-même son enfant; car elle l&#x27;élèverait comme un sot.</p>
+<p>ORLANDO.--Je vais vous quitter pour deux heures, Rosalinde.</p>
+<p>ROSALINDE.--Hélas! cher amant, je ne saurais me passer de toi pendant deux heures.</p>
+<p>ORLANDO.--Il faut que je me trouve au dîner du duc; je vous rejoindrai à deux heures.</p>
+<p>ROSALINDE.--Oui, allez, allez où vous voudrez; je savais comment vous tourneriez; mes amis m&#x27;en avaient bien prévenue, et je n&#x27;en pensais pas moins qu&#x27;eux. Vous m&#x27;avez gagnée avec votre langue flatteuse; ce n&#x27;est qu&#x27;une femme de mise de côté: bon!--Viens, ô mort!--Deux heures est votre heure.</p>
+<p>ORLANDO.--Oui, charmante Rosalinde.</p>
+<p>ROSALINDE.--Sur ma parole, et très-sérieusement, et que Dieu me traite en conséquence, et par tous les jolis serments qui ne sont pas dangereux, si vous manquez d&#x27;un iota à votre promesse, ou si vous venez une minute plus tard que votre heure, je vous prendrai pour le parjure le plus insigne, pour l&#x27;amant le plus fourbe et le plus indigne de celle que vous appelez Rosalinde, que l&#x27;on puisse trouver dans toute la bande des infidèles; ainsi songez bien à éviter mes reproches, et tenez votre promesse.</p>
+<p>ORLANDO.--Aussi religieusement que si vous étiez vraiment ma Rosalinde: ainsi, adieu.</p>
+<p>ROSALINDE.--Allons, le temps est le vieux juge, qui connaît de semblables délits; le temps vous jugera. Adieu.</p>
+<p>(Orlando sort.)</p>
+<p>CÉLIE.--Vous avez eu la sottise de déchirer notre sexe dans votre caquet amoureux: il faut que nous fassions passer votre pourpoint et votre haut-de-chausses par dessus votre tête, et que nous montrions à tout le monde ce que l&#x27;oiseau a fait à son propre nid.</p>
+<p>ROSALINDE.--O cousine, cousine, ma jolie petite cousine! si tu savais à combien de brasses de profondeur je suis enfoncée dans l&#x27;amour; mais cela ne saurait être sondé: ma passion a un fond inconnu, comme la baie de Portugal.</p>
+<p>CÉLIE.--Dis plutôt qu&#x27;elle est sans fond, et qu&#x27;à mesure que tu épanches ta tendresse, elle s&#x27;écoule aussitôt.</p>
+<p>ROSALINDE.--Non, prenons pour juge de la profondeur de mon amour ce malin bâtard de Vénus, enfant engendré par la pensée, conçu par la mélancolie, et né de la folie. Que ce petit vaurien d&#x27;aveugle, qui trompe tous les yeux parce qu&#x27;il a perdu les siens, prononce lui-même.--Je te dirai, Aliéna, que je ne saurais vivre sans voir Orlando: je vais chercher un ombrage et soupirer jusqu&#x27;à son retour.</p>
+<p>CÉLIE.--Et moi, je vais dormir.</p>
+<p>(Elles sortent.)</p>
+<h3 class="sub">Scène II</h3>
+<p>Une autre partie de la forêt.</p>
+<p>JACQUES, LES SEIGNEURS en habits de gardes-chasse.</p>
+<p>JACQUES.--Quel est celui qui a tué le daim?</p>
+<p>PREMIER SEIGNEUR.--Monsieur, c&#x27;est moi.</p>
+<p>JACQUES.--Présentons-le au duc comme un conquérant romain; et il serait bon de placer sur sa tête les cornes du daim, pour laurier de sa victoire. Gardes-chasse, n&#x27;auriez-vous pas quelque chanson qui rendît cette idée?</p>
+<p>SECOND SEIGNEUR.--Oui, monsieur.</p>
+<p>JACQUES.--Chantez-la: n&#x27;importe sur quel air, pourvu qu&#x27;elle fasse du bruit.</p>
+<p>CHANSON.</p>
+<h3 class="sub">Premier Seigneur.</h3>
+<p>Que donnerons-nous à celui qui a tué le daim?</p>
+<h3 class="sub">Second seigneur.</h3>
+<p>Nous lui ferons porter sa peau et son bois!</p>
+<h3 class="sub">Premier Seigneur.</h3>
+<p>Ensuite conduisons-le chez lui en chantant. Ne dédaignez point de porter la corne; Elle servit de cimier, avant que vous fussiez né.</p>
+<h3 class="sub">Second seigneur.</h3>
+<p>Le père de ton père la porta, Et ton propre père l&#x27;a portée aussi. La corne, la corne, la noble corne, N&#x27;est pas une chose à dédaigner.</p>
+<p>(Ils sortent.)</p>
+<h3 class="sub">Scène III</h3>
+<p>La forêt.</p>
+<p>ROSALINDE et CÉLIE.</p>
+<p>ROSALINDE.--Qu&#x27;en pensez-vous maintenant? N&#x27;est-il pas deux heures passées? et voyez comme Orlando se trouve ici?</p>
+<p>CÉLIE.--Je vous assure qu&#x27;avec un amour pur et une cervelle troublée, il a pris son arc et ses flèches, et qu&#x27;il est allé tout d&#x27;abord... dormir. Mais qui vient ici?</p>
+<p>(Entre Sylvius.)</p>
+<p>SYLVIUS, à Rosalinde.--Mon message est pour vous, beau jeune homme. Ma charmante Phébé m&#x27;a chargé de vous remettre cette lettre (lui remettant la lettre); je n&#x27;en sais pas le contenu; mais, à en juger par son air chagrin et les gestes de mauvaise humeur qu&#x27;elle faisait en l&#x27;écrivant, ce qu&#x27;elle contient exprime la colère. Pardonnez-moi, je vous prie, je ne suis qu&#x27;un innocent messager.</p>
+<p>ROSALINDE.--La patience elle-même tressaillerait à cette lecture, et ferait la fanfaronne; si on souffre cela, il faudra tout souffrir. Elle dit que je ne suis pas beau, que je manque d&#x27;usage, que je suis fier, et qu&#x27;elle ne pourrait m&#x27;aimer, les hommes fussent-ils aussi rares que le phénix. Oh! ma foi, son amour n&#x27;est pas le lièvre que je cours. Pourquoi m&#x27;écrit-elle sur ce ton-là? Allons, berger, allons, cette lettre est de votre invention.</p>
+<p>SYLVIUS.--Non; je vous proteste que je n&#x27;en sais pas le contenu; c&#x27;est Phébé qui l&#x27;a écrite.</p>
+<p>ROSALINDE.--Allons, allons, vous êtes un sot à qui un excès d&#x27;amour fait perdre la tête. J&#x27;ai vu sa main; elle a une main de cuir, une main couleur de pierre de taille; j&#x27;ai vraiment cru qu&#x27;elle avait de vieux gants, mais c&#x27;étaient ses mains: elle a la main d&#x27;une ménagère; mais cela n&#x27;y fait rien, je dis qu&#x27;elle n&#x27;inventa jamais cette lettre; cette lettre est de l&#x27;invention et de l&#x27;écriture d&#x27;un homme.</p>
+<p>SYLVIUS.--Elle est certainement d&#x27;elle.</p>
+<p>ROSALINDE.--Quoi! c&#x27;est un style emporté et sanglant, un style de cartel. Quoi! elle me défie comme un Turc défierait un chrétien? Le doux esprit d&#x27;une femme n&#x27;a jamais pu produire de pareilles inventions dignes d&#x27;un géant, de ces expressions éthiopiennes plus noires d&#x27;effet que de visage. Voulez-vous que je vous lise cette lettre?</p>
+<p>SYLVIUS.--Oui, s&#x27;il vous plaît; car je ne l&#x27;ai pas encore entendu lire; mais je n&#x27;en sais que trop sur la cruauté de Phébé.</p>
+<p>ROSALINDE.--Elle me phébéise. Remarquez comment écrit ce tyran.</p>
+<p>(Elle lit.)</p>
+<p>Serais-tu un dieu changé en berger, Toi qui as brûlé le coeur d&#x27;une jeune fille?</p>
+<p>Une femme dirait-elle de pareilles injures?</p>
+<p>SYLVIUS.--Appelez-vous cela des injures?</p>
+<h3 class="sub">Rosalinde.</h3>
+<p>(Elle continue de lire.)</p>
+<p>Pourquoi, te dépouillant de ta divinité, Fais-tu la guerre au coeur d&#x27;une femme?</p>
+<p>Avez-vous jamais entendu pareilles invectives?</p>
+<p>(Elle lit encore.)</p>
+<p>Jusqu&#x27;ici les yeux qui m&#x27;ont parlé d&#x27;amour, N&#x27;ont jamais pu me faire aucun mal.</p>
+<p>Elle veut dire que je suis une bête fauve.</p>
+<p>(Elle continue de lire.)</p>
+<p>Si les dédains de tes yeux brillants Ont le pouvoir d&#x27;allumer tant d&#x27;amour dans mon sein, Hélas! quel serait donc leur étrange effet sur moi, S&#x27;ils me regardaient avec douceur? Lors même que tu me grondais, je t&#x27;aimais: A quel point serais-je donc émue de tes prières? Celui qui te porte cet aveu de mon amour, Ne sait pas l&#x27;amour que je sens pour toi. Sers-toi de lui pour m&#x27;ouvrir ton âme, Si ta jeunesse et ta nature veulent accepter de moi l&#x27;offre d&#x27;un coeur fidèle, Et tout ce que je puis avoir; Ou bien refuse par lui mon amour, Et alors je chercherai à mourir.</p>
+<p>SYLVIUS.--Appelez-vous cela des duretés?</p>
+<p>CÉLIE.--Hélas! pauvre berger!</p>
+<p>ROSALINDE.--Le plaignez-vous? Non; il ne mérite aucune pitié. (A Sylvius.) Veux-tu donc aimer une pareille femme? Quoi! se servir de toi comme d&#x27;un instrument pour jouer des accords faux? Cela n&#x27;est pas tolérable. Eh bien! va donc la trouver; car je vois que l&#x27;amour a fait de toi un serpent apprivoisé, et dis-lui de ma part, que si elle m&#x27;aime, je lui ordonne de t&#x27;aimer; que si elle ne veut pas t&#x27;aimer, je ne veux point d&#x27;elle, à moins que tu ne me supplies pour elle. Si tu es un véritable amant, va-t&#x27;en, et ne réplique pas un mot; car voici de la compagnie qui vient.</p>
+<p>(Sylvius sort.)</p>
+<p>(Entre Olivier, frère aîné d&#x27;Orlando.)</p>
+<p>OLIVIER.--Bonjour, belle jeunesse; sauriez-vous, je vous prie, dans quel endroit de cette forêt est située une bergerie entourée d&#x27;oliviers?</p>
+<p>CÉLIE.--Au couchant du lieu où nous sommes, au fond de la vallée que vous voyez; laissez à droite cette rangée de saules qui est auprès de ce ruisseau qui murmure, et vous arriverez droit à la cabane. Mais en ce moment la maison se garde elle-même; vous n&#x27;y trouverez personne.</p>
+<p>OLIVIER.--Si les yeux peuvent s&#x27;aider de la langue, je devrais vous reconnaître sur la description que l&#x27;on m&#x27;a faite: «Mêmes habillements et même âge. Le jeune homme est blond; il a les traits d&#x27;une femme, et il se donne pour une soeur d&#x27;un âge mûr: mais la femme est petite et plus brune que son frère.» N&#x27;êtes-vous point le propriétaire de la maison que je demandais?</p>
+<p>CÉLIE.--Puisque vous nous le demandez, il n&#x27;y a pas de vanterie à dire qu&#x27;elle nous appartient.</p>
+<p>OLIVIER.--Orlando m&#x27;a chargé de vous saluer tous deux de sa part, et il envoie ce mouchoir ensanglanté à ce jeune homme qu&#x27;il appelle sa Rosalinde: est-ce vous?</p>
+<p>ROSALINDE.--Oui, c&#x27;est moi; que devons-nous conjecturer de ceci?</p>
+<p>OLIVIER.--Quelque chose à ma honte, si vous voulez que je vous dise qui je suis, et comment, et pourquoi, et où ce mouchoir a été ensanglanté.</p>
+<p>ROSALINDE.--Dites-nous tout cela, je vous prie.</p>
+<p>OLIVIER.--Quand le jeune Orlando vous a quitté dernièrement, il vous a promis de vous rejoindre dans une heure. Comme il allait à travers la forêt, se nourrissant de pensées tantôt douces, tantôt amères, qu&#x27;arrive-t-il tout à coup? Il jette ses regards de côté, et voyez ce qui se présenta à sa vue! Sous un chêne, dont l&#x27;âge avait couvert les rameaux de mousse et dont la tête élevée était chauve de vieillesse, un malheureux en guenilles, les cheveux longs et en désordre, dormait couché sur le dos; un serpent vert et doré s&#x27;était entortillé autour de son cou, et avançant sa tête souple et menaçante, il s&#x27;approchait de la bouche ouverte du misérable, quand tout à coup, apercevant Orlando, il se déroule et se glisse en replis tortueux sous un buisson, à l&#x27;ombre duquel une lionne, les mamelles desséchées, était couchée, la tête sur la terre, épiant comme un chat le moment où l&#x27;homme endormi ferait un mouvement; car tel est le généreux naturel de cet animal, qu&#x27;il dédaigne toute proie qui semble morte. A cette vue, Orlando s&#x27;est approché de l&#x27;homme et il a reconnu son frère, son frère aîné!</p>
+<p>CÉLIE.--Oh! je lui ai entendu parler quelquefois de ce frère; et il le peignait comme le frère le plus dénaturé, qui jamais ait vécu parmi les hommes.</p>
+<p>OLIVIER.--Et il avait bien raison; car je sais, moi, combien il était dénaturé.</p>
+<p>ROSALINDE.--Mais, revenons à Orlando.--L&#x27;a-t-il laissé dans ce péril, pour servir de nourriture à la lionne pressée par la faim et le besoin de ses petits?</p>
+<p>OLIVIER.--Deux fois il a tourné le dos pour se retirer: mais la générosité plus noble que la vengeance, la nature plus forte que son juste ressentiment, lui ont fait livrer combat à la lionne, qui bientôt est tombée devant lui; et c&#x27;est au bruit de cette lutte terrible que je me suis réveillé de mon dangereux sommeil.</p>
+<p>CÉLIE.--Êtes-vous son frère?</p>
+<p>ROSALINDE.--Est-ce vous qu&#x27;il a sauvé?</p>
+<p>CÉLIE.--Est-ce bien vous qui aviez tant de fois comploté de le faire périr?</p>
+<p>OLIVIER.--C&#x27;était moi; mais ce n&#x27;est plus moi. Je ne rougis point de vous avouer ce que je fus, depuis qu&#x27;il me fait trouver tant de douceur à être ce que je suis à présent.</p>
+<p>ROSALINDE.--Mais... et le mouchoir sanglant?</p>
+<p>OLIVIER.--Tout à l&#x27;heure. Après que nos larmes de tendresse eurent coulé sur nos récits mutuels depuis la première jusqu&#x27;à la dernière aventure, et que j&#x27;eus dit comment j&#x27;étais venu dans ce lieu désert... Pour abréger, il me conduisit au noble duc, qui me donna des habits et des rafraîchissements, et me confia à la tendresse de mon frère qui me mena aussitôt dans sa grotte: et là, s&#x27;étant déshabillé, nous vîmes qu&#x27;ici, sur le bras, la lionne lui avait enlevé un lambeau de chair, dont la plaie avait saigné tout le temps. Aussitôt il se trouva mal, et demanda, en s&#x27;évanouissant, Rosalinde. Je vins à bout de le ranimer. Je bandai sa blessure; et, au bout d&#x27;un moment, son coeur s&#x27;étant remis, il m&#x27;a envoyé ici, tout étranger que je suis, pour vous raconter cette histoire, afin que vous puissiez l&#x27;excuser d&#x27;avoir manqué à sa promesse, me chargeant de donner ce mouchoir, teint de son sang, au jeune berger qu&#x27;il appelle en plaisantant sa Rosalinde.</p>
+<p>CÉLIE, a Rosalinde, qui pâlit et s&#x27;évanouit.--Quoi, quoi, Ganymède! mon cher Ganymède!</p>
+<p>OLIVIER.--Bien des personnes s&#x27;évanouissent à la vue du sang.</p>
+<p>CÉLIE.--Il y a plus que cela ici.--Chère cousine!--Ganymède!</p>
+<p>OLIVIER.--Voyez; il revient à lui.</p>
+<p>ROSALINDE, rouvrant les yeux.--Je voudrais bien être chez nous.</p>
+<p>CÉLIE.--Nous allons vous y mener. (A Olivier.) Voudriez-vous, je vous prie, lui prendre le bras?</p>
+<p>OLIVIER.--Rassurez-vous, jeune homme.--Mais êtes-vous bien un homme? Vous n&#x27;en avez pas le courage.</p>
+<p>ROSALINDE.--Non, je ne l&#x27;ai pas; je l&#x27;avoue.--Ah! monsieur, on pourrait croire que cet évanouissement était une feinte bien jouée: je vous en prie, dites à votre frère comme j&#x27;ai bien joué l&#x27;évanouissement.</p>
+<p>OLIVIER.--Il n&#x27;y avait là nulle feinte: votre teint témoigne trop que c&#x27;était une émotion sérieuse.</p>
+<p>ROSALINDE.--Une pure feinte, je vous assure.</p>
+<p>OLIVIER.--Eh bien donc! prenez bon courage et feignez d&#x27;être un homme.</p>
+<p>ROSALINDE.--C&#x27;est ce que je fais: mais, en vérité, j&#x27;aurais dû naître femme.</p>
+<p>CÉLIE.--Allons, vous pâlissez de plus en plus: je vous en prie, avançons du côté de la maison. Mon bon monsieur, venez avec nous.</p>
+<p>OLIVIER.--Très-volontiers; car il faut, Rosalinde, que je rapporte à mon frère l&#x27;assurance que vous l&#x27;excusez.</p>
+<p>ROSALINDE.--Je songerai à quelque chose... Mais, je vous prie, ne manquez pas de lui dire comme j&#x27;ai bien joué mon rôle.--Voulez-vous venir?</p>
+<p>(Tous sortent.)</p>
+<h3 class="sub">Fin du quatrième acte — Acte cinquième</h3>
+<h3 class="sub">Scène I</h3>
+<p>Toujours la forêt.</p>
+<h3 class="sub">Touchstone, Audrey.</h3>
+<p>TOUCHSTONE.--Nous trouverons le moment, Audrey. Patience, chère Audrey.</p>
+<p>AUDREY.--Ma foi, ce prêtre était tout ce qu&#x27;il fallait, quoiqu&#x27;en ait pu dire le vieux monsieur.</p>
+<p>TOUCHSTONE.--Un bien méchant sir Olivier, Audrey, un misérable Mar-Text! Mais, Audrey, il y a ici dans la forêt un jeune homme qui a des prétentions sur vous.</p>
+<p>AUDREY.--Oui, je sais qui c&#x27;est: il n&#x27;a aucun droit au monde sur moi: tenez, voilà l&#x27;homme dont vous parlez.</p>
+<p>(Entre William.)</p>
+<p>TOUCHSTONE.--C&#x27;est boire et manger pour moi, que de voir un paysan. Sur ma foi, nous, qui avons du bon sens, nous avons un grand compte à rendre. Nous allons rire et nous moquer de lui; nous ne pouvons nous retenir.</p>
+<p>WILLIAM.--Bonsoir, Audrey.</p>
+<p>AUDREY.--Dieu vous donne le bonsoir, William.</p>
+<p>WILLIAM.--Et bonsoir à vous aussi, monsieur.</p>
+<p>TOUCHSTONE.--Bonsoir, mon cher ami. Couvre ta tête, couvre ta tête: allons, je t&#x27;en prie, couvre-toi. Quel âge avez-vous, mon ami?</p>
+<p>WILLIAM.--Vingt-cinq ans, monsieur.</p>
+<p>TOUCHSTONE.--C&#x27;est un âge mûr. William est-il ton nom?</p>
+<p>WILLIAM.--Oui, monsieur, William.</p>
+<p>TOUCHSTONE.--C&#x27;est un beau nom! Es-tu né dans cette forêt?</p>
+<p>WILLIAM.--Oui, monsieur, et j&#x27;en remercie Dieu.</p>
+<p>TOUCHSTONE.--Tu en remercies Dieu? Voilà une belle réponse.--Es-tu riche?</p>
+<p>WILLIAM.--Ma foi, monsieur, comme ça.</p>
+<p>TOUCHSTONE.--Comme ça: cela est bon, très-bon, excellent.--Et pourtant non; ce n&#x27;est que comme ça, comme ça. Es-tu sage?</p>
+<p>WILLIAM.--Oui, monsieur; j&#x27;ai assez d&#x27;esprit.</p>
+<p>TOUCHSTONE.--Tu réponds à merveille. Je me souviens, en ce moment, d&#x27;un proverbe: Le fou se croit sage; mais le sage sait qu&#x27;il n&#x27;est qu&#x27;un fou.--Le philosophe païen, lorsqu&#x27;il avait envie de manger un grain de raisin, ouvrait les lèvres quand il le mettait dans sa bouche, voulant nous faire entendre par là que le raisin était fait pour être mangé, et les lèvres pour s&#x27;ouvrir.--Vous aimez cette jeune fille?</p>
+<p>WILLIAM.--Je l&#x27;aime, monsieur.</p>
+<p>TOUCHSTONE.--Donnez-moi votre main. Etes-vous savant?</p>
+<p>WILLIAM.--Non, monsieur.</p>
+<p>TOUCHSTONE.--Eh bien! apprenez de moi ceci: avoir, c&#x27;est avoir. Car c&#x27;est une figure de rhétorique, que la boisson, étant versée d&#x27;une coupe dans un verre, en remplissant l&#x27;un vide l&#x27;autre. Tous vos écrivains sont d&#x27;accord que ipse c&#x27;est lui: ainsi vous n&#x27;êtes pas ipse; car c&#x27;est moi qui suis lui.</p>
+<p>WILLIAM.--Quel lui, monsieur?</p>
+<p>TOUCHSTONE.--Le lui, monsieur, qui doit épouser cette fille: ainsi, vous, paysan, abandonnez; c&#x27;est-à-dire, en langue vulgaire, laissez... la société,--qui, en style campagnard, est la compagnie... de cet être du sexe féminin,--qui, en langage commun, est une femme: ce qui fait tout ensemble: Renonce à la société de cette femme; ou, paysan, tu péris; ou, pour te faire mieux comprendre, tu meurs; ou, si tu l&#x27;aimes mieux, je te tue, je te congédie de ce monde, je change ta vie en mort, ta liberté en esclavage, et je t&#x27;expédierai par le poison, ou la bastonnade, ou le fer; je deviendrai ton adversaire et je fondrai sur toi avec politique; je te tuerai de cent cinquante manières: ainsi, tremble et déloge.</p>
+<p>AUDREY.--Va-t&#x27;en, bon William.</p>
+<p>WILLIAM.--Dieu vous tienne en joie, monsieur!</p>
+<p>(Il sort.)</p>
+<p>(Entre Corin.)</p>
+<p>CORIN.--Notre maître et notre maîtresse vous cherchent: allons, partez, partez.</p>
+<p>TOUCHSTONE.--Trotte, Audrey, trotte, Audrey. Je te suis, je te suis.</p>
+<p>(Ils sortent.)</p>
+<h3 class="sub">Scène II</h3>
+<p>Entrent ORLANDO et OLIVIER.</p>
+<p>ORLANDO.--Est-il possible que, la connaissant si peu, vous ayez sitôt pris du goût pour elle? qu&#x27;en ne faisant que la voir, vous en soyez devenu amoureux, que l&#x27;aimant vous lui ayez fait votre déclaration; et que, sur cette déclaration, elle ait consenti? Et vous persistez à vouloir la posséder?</p>
+<p>OLIVIER.--Ne discutez point mon étourderie, l&#x27;indigence de ma maîtresse, le peu de temps qu&#x27;a duré la connaissance; ma déclaration précipitée, ni son rapide consentement; mais dites avec moi que j&#x27;aime Aliéna: dites avec elle qu&#x27;elle m&#x27;aime: donnez-nous à tous deux votre consentement à notre possession mutuelle: ce sera pour votre bien; car la maison de mon père et tous les revenus qu&#x27;a laissés le vieux chevalier Rowland, vous seront assurés, et moi, je veux vivre et mourir ici berger.</p>
+<p>(Entre Rosalinde.)</p>
+<p>ORLANDO.--Vous avez mon consentement: que vos noces se fassent demain. J&#x27;y inviterai le duc et toute sa joyeuse cour: allez et disposez Aliéna; car voici ma Rosalinde.</p>
+<p>ROSALINDE.--Dieu vous garde, mon digne frère!</p>
+<p>OLIVIER.--Et vous aussi, aimable soeur.</p>
+<p>ROSALINDE.--O mon cher Orlando, combien je souffre de vous voir ainsi votre coeur en écharpe!</p>
+<p>ORLANDO.--Ce n&#x27;est que mon bras.</p>
+<p>ROSALINDE.--J&#x27;avais cru votre coeur blessé par les griffes de la lionne.</p>
+<p>ORLANDO.--Il est blessé, mais c&#x27;est par les yeux d&#x27;une dame.</p>
+<p>ROSALINDE.--Votre frère vous a-t-il dit comme j&#x27;ai fait semblant de m&#x27;évanouir lorsqu&#x27;il m&#x27;a montré votre mouchoir?</p>
+<p>ORLANDO.--Oui; et des choses plus étonnantes que cela.</p>
+<p>ROSALINDE.--Oh! je vois où vous en voulez venir... En effet, cela est très-vrai. Il n&#x27;y a jamais rien eu de si soudain, si ce n&#x27;est le combat de deux béliers qui se rencontrent, et la fanfaronnade de César: Je suis venu, j&#x27;ai vu, j&#x27;ai vaincu. Car votre frère et ma soeur ne se sont pas plus tôt rencontrés qu&#x27;ils se sont envisagés; pas plus tôt envisagés, qu&#x27;ils se sont aimés; pas plus tôt aimés, qu&#x27;ils ont soupiré; pas plus tôt soupiré, qu&#x27;ils s&#x27;en sont demandé l&#x27;un à l&#x27;autre la cause; ils n&#x27;ont pas plus tôt su la cause, qu&#x27;ils ont cherché le remède: et, par degrés, ils ont fait un escalier de mariage qu&#x27;il leur faudra monter incontinent, ou être incontinents avant le mariage: ils sont vraiment dans la rage d&#x27;amour, et il faut qu&#x27;ils s&#x27;unissent. Des massues ne les sépareraient pas.</p>
+<p>ORLANDO.--Ils seront mariés demain, et je veux inviter le duc à la noce. Mais hélas! qu&#x27;il est amer de ne voir le bonheur que par les yeux d&#x27;autrui! Demain, plus je croirai mon frère heureux de posséder l&#x27;objet de ses désirs, plus la tristesse de mon coeur sera profonde.</p>
+<p>ROSALINDE.--Quoi donc! ne puis-je demain faire pour vous le rôle de Rosalinde?</p>
+<p>ORLANDO.--Non, je ne puis plus vivre de pensées.</p>
+<p>ROSALINDE.--Eh bien, je ne veux plus vous fatiguer de vains discours. Apprenez donc (et maintenant je parle un peu sérieusement) que je sais que vous êtes un cavalier du plus grand mérite.--Je ne dis pas cela pour vous donner bonne opinion de ma science..., parce que je dis que je sais ce que vous êtes.--Et je ne cherche point à usurper plus d&#x27;estime qu&#x27;il n&#x27;en faut pour vous inspirer quelque peu de confiance en moi pour vous faire du bien, et non pour me vanter moi-même. Croyez donc, si vous voulez, que je peux opérer d&#x27;étranges choses: depuis l&#x27;âge de trois ans, j&#x27;ai eu des liaisons avec un magicien très-profond dans son art, mais non pas jusqu&#x27;à être damné. Si votre amour pour Rosalinde tient d&#x27;aussi près à votre coeur que l&#x27;annoncent vos démonstrations, vous l&#x27;épouserez au moment même où votre frère épousera Aliéna. Je sais à quelles extrémités la fortune l&#x27;a réduite; il ne m&#x27;est pas impossible, si cela pourtant peut vous convenir, de la placer demain devant vos yeux, en personne, et cela sans danger.</p>
+<p>ORLANDO.--Parlez-vous ici sérieusement?</p>
+<p>ROSALINDE.--Oui, je le proteste sur ma vie, à laquelle je tiens fort, quoique je me dise magicien: ainsi, revêtez-vous de vos plus beaux habits, invitez vos amis; car si vous voulez décidément être marié demain, vous le serez, et à Rosalinde, si vous le voulez. (Entrent Sylvius et Phébé.) Voyez: voici une amante à moi, et un amant à elle.</p>
+<p>PHÉBÉ.--Jeune homme, vous en avez bien mal agi avec moi, en montrant la lettre que je vous avais écrite.</p>
+<p>ROSALINDE.--Je ne m&#x27;en embarrasse guère. C&#x27;est mon but de me montrer dédaigneux et sans égard pour vous. Vous avez là à votre suite un berger fidèle: tournez vos regards vers lui; aimez-le: il vous adore.</p>
+<p>PHÉBÉ.--Bon berger, dis à ce jeune homme ce que c&#x27;est que l&#x27;amour.</p>
+<p>SYLVIUS.--Aimer, c&#x27;est être fait de larmes et de soupirs; et voilà comme je suis pour Phébé.</p>
+<p>PHÉBÉ.--Et moi pour Ganymède.</p>
+<p>ORLANDO.--Et moi pour Rosalinde.</p>
+<p>ROSALINDE.--Et moi pour aucune femme.</p>
+<p>SYLVIUS.--C&#x27;est être tout fidélité et dévouement. Et voilà ce que je suis pour Phébé.</p>
+<p>PHÉBÉ.--Et moi pour Ganymède.</p>
+<p>ORLANDO.--Et moi pour Rosalinde.</p>
+<p>ROSALINDE.--Et moi pour aucune femme.</p>
+<p>SYLVIUS.--C&#x27;est être tout rempli de caprices, de passions, de désirs: c&#x27;est être tout adoration, respect et obéissance, tout humilité, patience et impatience: c&#x27;est être plein de pureté, résigné à toute épreuve, à tous les sacrifices: et je suis tout cela pour Phébé.</p>
+<p>PHÉBÉ.--Et moi pour Ganymède.</p>
+<p>ORLANDO.--Et moi pour Rosalinde.</p>
+<p>ROSALINDE.--Et moi pour aucune femme.</p>
+<p>PHÉBÉ, à Rosalinde.--Si cela est, pourquoi me blâmez-vous de vous aimer?</p>
+<p>SYLVIUS, à Phébé.--Si cela est, pourquoi me blâmez-vous de vous aimer?</p>
+<p>ORLANDO.--Si cela est, pourquoi me blâmez-vous de vous aimer?</p>
+<p>ROSALINDE.--A qui adressez-vous ces mots: Pourquoi me blâmez-vous de vous aimer?</p>
+<p>ORLANDO.--A celle qui n&#x27;est point ici, et qui ne m&#x27;entend pas.</p>
+<p>ROSALINDE.--De grâce, ne parlez plus de cela: cela ressemble aux hurlements des loups d&#x27;Irlande après la lune. (A Sylvius.) Je vous secourrai si je puis. (A Phébé.) Je vous aimerais si je le pouvais.--Demain, venez me trouver tous ensemble. (A Phébé.) Je vous épouserai, si jamais j&#x27;épouse une femme, et je veux être marié demain. (A Orlando.) Je vous satisferai, si jamais j&#x27;ai satisfait un homme, et vous serez marié demain. (A Sylvius.) Je vous rendrai content, si l&#x27;objet qui vous plaît peut vous rendre content, et vous serez marié demain. (A Orlando.) Si vous aimez Rosalinde, venez me trouver. (A Sylvius.) Si vous aimez Phébé, venez me trouver.--Et, comme il est vrai que je n&#x27;aime aucune femme, je m&#x27;y trouverai. Adieu, portez-vous bien: je vous ai laissé à tous mes ordres.</p>
+<p>SYLVIUS.--Je n&#x27;y manquerai pas, si je vis.</p>
+<p>PHÉBÉ.--Ni moi.</p>
+<p>ORLANDO.--Ni moi.</p>
+<p>(Ils sortent.)</p>
+<h3 class="sub">Scène III</h3>
+<p>TOUCHSTONE et AUDREY.</p>
+<p>TOUCHSTONE.--Demain est le beau jour, Audrey; demain nous serons mariés.</p>
+<p>AUDREY.--Je le désire de tout mon coeur; et j&#x27;espère que ce n&#x27;est pas un désir malhonnête que de désirer d&#x27;être une femme établie.--Voici deux pages du duc exilé qui viennent.</p>
+<p>(Entrent deux pages du duc.)</p>
+<p>PREMIER PAGE.--Charmé de la rencontre, mon brave monsieur.</p>
+<p>TOUCHSTONE.--Et moi de même, sur ma parole: allons, asseyons-nous, asseyons-nous; et... une chanson.</p>
+<p>SECOND PAGE.--Nous sommes à vos ordres: asseyez-vous dans le milieu.</p>
+<p>PREMIER PAGE.--L&#x27;entonnerons-nous rondement, sans cracher ni tousser, sans dire que nous sommes enroués, préludes ordinaires d&#x27;une méchante voix?</p>
+<p>SECOND PAGE.--Oui, oui, et tous deux sur un même ton, comme deux Bohémiennes sur un même cheval.</p>
+<p>CHANSON.</p>
+<p>C&#x27;était un amant et sa bergère Avec un ah! un ho! et un ah nonino! Qui passèrent sur le champ de blé vert. Dans le printemps, le joli temps fertile, Où les oiseaux chantent, eh! ding, ding, ding, Tendres amants aiment le printemps. Entre les sillons de seigle, Avec un ah! un ho! et un ah nonino! Ces jolis campagnards se couchèrent. Au printemps, etc., etc. Ils commencèrent aussitôt cette chanson, Avec un ah! un ho! et un ah nonino! Cette chanson qui dit que la vie n&#x27;est qu&#x27;une fleur. Au printemps, etc., etc. Profitez donc du temps présent, Avec un ah! un ho! et un ah nonino! Car l&#x27;amour est couronné des premières fleurs. Au printemps, etc., etc.</p>
+<p>TOUCHSTONE.--En vérité, jeunes gens, quoique les paroles ne signifient pas grand&#x27;chose, cependant l&#x27;air était fort discordant.</p>
+<p>PREMIER PAGE.--Vous vous trompez, monsieur: nous avons gardé le temps, nous n&#x27;avons pas perdu notre temps.</p>
+<p>TOUCHSTONE.--Si fait, ma foi. Je regarde comme un temps perdu celui qu&#x27;on passe à entendre une si sotte chanson. Dieu soit avec vous! et Dieu veuille améliorer vos voix!--Venez, Audrey.</p>
+<p>(Ils sortent.)</p>
+<h3 class="sub">Scène IV</h3>
+<p>Une autre partie de la forêt.</p>
+<p>LE VIEUX DUC, AMIENS, JACQUES, ORLANDO OLIVIER et CÉLIE.</p>
+<p>LE VIEUX DUC.--Croyez-vous, Orlando, que le jeune homme puisse faire tout ce qu&#x27;il a promis?</p>
+<p>ORLANDO.--Tantôt je le crois, et tantôt je ne le crois pas, comme tous ceux qui craignent en espérant, et qui en craignant espèrent.</p>
+<p>(Entrent Rosalinde, Sylvius, Phébé.)</p>
+<p>ROSALINDE.--Encore un peu de patience, pendant que je répète notre engagement. (Au duc.) Vous dites que, si je vous amène votre Rosalinde, vous la donnerez à Orlando que voici?</p>
+<p>LE VIEUX DUC.--Oui, je le ferais, quand j&#x27;aurais des royaumes à donner avec elle.</p>
+<p>ROSALINDE, à Orlando.--Et vous dites que vous voulez d&#x27;elle quand je ramènerai?</p>
+<p>ORLANDO.--Oui, fussé-je le roi de tous les empires de la terre.</p>
+<p>ROSALINDE, à Phébé.--Vous dites que vous m&#x27;épouserez si j&#x27;y consens?</p>
+<p>PHÉBÉ.--Oui, dussé-je mourir une heure après.</p>
+<p>ROSALINDE.--Mais si vous refusez de m&#x27;épouser, vous donnerez-vous alors à ce berger si fidèle?</p>
+<p>PHÉBÉ.--Telle est la convention.</p>
+<p>ROSALINDE, à Sylvius.--Vous dites que vous épouserez Phébé si elle veut vous accepter?</p>
+<p>SYLVIUS.--Oui, quand ce serait la même chose d&#x27;accepter Phébé et la mort.</p>
+<p>ROSALINDE.--J&#x27;ai promis d&#x27;aplanir toutes ces difficultés.--Duc, tenez votre promesse de donner votre fille.--Et vous, Orlando, tenez votre promesse de l&#x27;accepter.--Phébé, tenez votre promesse de m&#x27;épouser, ou, si vous me refusez, de vous unir à ce berger.--Sylvius, tenez votre promesse d&#x27;épouser Phébé, si elle me refuse.--Et je vous quitte à l&#x27;instant pour résoudre tous ces doutes.</p>
+<p>(Rosalinde et Célie sortent.)</p>
+<p>LE VIEUX DUC.--Ma mémoire me fait retrouver dans ce jeune berger quelques traits frappants du visage de ma fille.</p>
+<p>ORLANDO.--Seigneur, la première fois que je l&#x27;ai vu, j&#x27;ai cru que c&#x27;était un frère de votre fille: mais, mon digne seigneur, ce jeune homme est né dans ces bois; il a été instruit dans les éléments de beaucoup de sciences dangereuses, par son oncle, qu&#x27;il nous donne pour être un grand magicien caché dans l&#x27;enceinte de cette forêt.</p>
+<p>(Entrent Touchstone et Audrey.)</p>
+<p>JACQUES.--Il y a sûrement un second déluge en l&#x27;air: et ces couples viennent se rendre à l&#x27;arche! Voici une paire d&#x27;animaux étrangers, qui, dans toutes les langues, s&#x27;appellent des fous.</p>
+<p>TOUCHSTONE.--Salut et compliments à tous!</p>
+<p>JACQUES, au duc.--Mon bon seigneur, faites-lui accueil: c&#x27;est ce fou que j&#x27;ai si souvent rencontré dans la forêt; il jure qu&#x27;il a été jadis homme de cour.</p>
+<p>TOUCHSTONE.--Si quelqu&#x27;un en doute qu&#x27;il me soumette à l&#x27;épreuve. J&#x27;ai dansé un menuet, j&#x27;ai cajolé une dame, j&#x27;ai usé de politique envers mon ami, j&#x27;ai caressé mon ennemi, j&#x27;ai ruiné trois tailleurs, j&#x27;ai eu quatre querelles, et j&#x27;ai été à la veille d&#x27;en vider une l&#x27;épée à la main.</p>
+<p>JACQUES.--Et comment s&#x27;est-elle terminée?</p>
+<p>TOUCHSTONE.--Ma foi, nous nous sommes rencontrés, et nous avons trouvé que la querelle en était à la septième cause.</p>
+<p>JACQUES.--Que voulez-vous dire par la septième cause?--Mon bon seigneur, cet homme vous plaît-il?</p>
+<p>LE VIEUX DUC.--Il me plaît beaucoup.</p>
+<p>TOUCHSTONE.--Dieu vous en récompense, monsieur! je désire qu&#x27;il en soit de même de vous.--J&#x27;accours ici en hâte, monsieur, au milieu de ces couples de campagnards, pour jurer, et me parjurer; car le mariage enchaîne, mais le sang brise ses noeuds. Une pauvre pucelle, monsieur, un minois assez laid, monsieur; mais qui est à moi: une pauvre fantaisie à moi, monsieur, de prendre ce dont personne autre ne veut. La riche honnêteté se loge comme un avare, monsieur, dans une pauvre chaumière, comme votre perle dans votre vilaine huître.</p>
+<p>LE VIEUX DUC.--Sur ma parole, il a la répartie prompte et sentencieuse.</p>
+<p>TOUCHSTONE.--Comme le trait que lance le fou et des discours de ce genre, monsieur.</p>
+<p>JACQUES.--Mais revenons à la septième cause. Comment avez-vous trouvé que la querelle allait en être à la septième cause?</p>
+<p>TOUCHSTONE.--Par un démenti au septième degré.--Audrey, donnez à votre corps un maintien plus décent,--comme ceci, monsieur. Je désapprouvai la forme qu&#x27;un certain courtisan avait donnée à sa barbe: il m&#x27;envoya dire que si je ne trouvais pas sa barbe bien faite, il pensait, lui, qu&#x27;elle était très-bien. C&#x27;est ce qu&#x27;on appelle une réponse courtoise. Si je lui soutenais encore qu&#x27;elle était mal coupée, il me répondait, qu&#x27;il l&#x27;avait coupée ainsi, parce que cela lui plaisait. C&#x27;est ce qu&#x27;on appelle le lardon modéré. Que si je prétendais encore qu&#x27;elle est mal coupée, il me taxerait de manquer de jugement. C&#x27;est ce qu&#x27;on appelle la réplique grossière. Si je persistais encore à dire qu&#x27;elle n&#x27;était pas bien coupée, il me répondrait, cela n&#x27;est pas vrai. C&#x27;est ce qu&#x27;on appelle la riposte vaillante. Si j&#x27;insistais encore à dire qu&#x27;elle n&#x27;est pas bien coupée, il me dirait, que j&#x27;en ai menti. C&#x27;est ce qu&#x27;on appelle la riposte querelleuse. Et ainsi jusqu&#x27;au démenti conditionnel, et au démenti direct.</p>
+<p>JACQUES.--Et combien de fois avez-vous dit que sa barbe était mal faite?</p>
+<p>TOUCHSTONE.--Je n&#x27;ai pas osé dépasser le démenti conditionnel, et lui n&#x27;a pas osé non plus me donner le démenti direct; et comme cela, nous avons mesuré nos épées, et nous nous sommes séparés.</p>
+<p>JACQUES.--Pourriez-vous maintenant nommer, par ordre, les différentes gradations d&#x27;un démenti?</p>
+<p>TOUCHSTONE.--Oh! monsieur, nous querellons d&#x27;après l&#x27;imprimé[51], suivant le livre; comme on a des livres pour les belles manières. Je vais vous nommer les degrés d&#x27;un démenti. Le premier est la Réponse courtoise, le second le Lardon modéré, le troisième la Réponse grossière, le quatrième la Riposte vaillante, le cinquième la Riposte querelleuse, le sixième le Démenti conditionnel, et le septième le Démenti direct. Vous pouvez éviter le duel à tous les degrés, excepté au démenti direct; et même vous le pouvez encore dans ce cas, au moyen d&#x27;un si. J&#x27;ai vu des affaires, où sept juges ensemble ne seraient pas venus à bout d&#x27;arranger une querelle; et lorsque les deux adversaires venaient à se rencontrer, l&#x27;un des deux s&#x27;avisait seulement d&#x27;un si; par exemple, si vous avez dit cela, moi j&#x27;ai dit cela; et ils se donnaient une poignée de main, et se juraient une amitié de frères. Votre si est le seul arbitre qui fasse la paix: il y a beaucoup de vertu dans le si!</p>
+<p>[Note 51: Le poëte se moque ici de la mode du duel en forme qui régnait de son temps, et il le fait avec beaucoup de gaieté, il ne pouvait la traiter avec plus de mépris qu&#x27;en montrant un manant aussi bien instruit dans les formes et les préliminaires du duel. Le livre auquel il fait allusion ici est un traité fort ridicule d&#x27;un certain Vincentio Saviolo, intitulé: De l&#x27;honneur et des querelles honorables, in-4°, imprimé par Wolf, en 1594. La première partie de ce traité porte: Discours très-nécessaire à tous les cavaliers qui font cas de leur honneur, concernant la manière de donner et de recevoir le démenti, d&#x27;où s&#x27;ensuivent le duel et le combat en diverses formes; et beaucoup d&#x27;autres inconvénients faute de bien savoir la science de l&#x27;honneur, et le juste sens des termes, qui sont ici expliqués. Voici les titres des chapitres.</p>
+<h2 class="chapter" id="c2">I. Quelle est la raison pour laquelle la partie à qui on donne le démenti doit devenir l&#x27;agresseur au défi, et de la nature des démentis.</h2>
+<h2 class="chapter" id="c3">II. De la méthode et de la diversité des démentis — III. Du démenti certain ou indirect.</h2>
+<h2 class="chapter" id="c4">IV. Des démentis conditionnels, ou du démenti circonstanciel.</h2>
+<h2 class="chapter" id="c5">V. Du démenti en général — VI. Du démenti en particulier.</h2>
+<h2 class="chapter" id="c6">VII. Des démentis fous.</h2>
+<h2 class="chapter" id="c7">VIII. Conclusion sur la manière d&#x27;arracher ou de rendre le démenti; ou la contradiction querelleuse.</h2>
+<p>Dans le chapitre du démenti conditionnel, l&#x27;auteur dit, en parlant de la particule si: «Les démentis conditionnels sont ceux qui sont donnés conditionnellement de cette manière: Si vous avez dit cela ou cela, alors vous mentez.» De ces sortes de démentis, donnés dans cette forme, naissent souvent de grandes disputes, qui ne peuvent aboutir à une issue décidée. L&#x27;auteur entend par là que les deux parties ne peuvent procéder à se couper la gorge, tant qu&#x27;il y a un si entre deux. Voilà pourquoi Shakspeare fait dire à son paysan: «J&#x27;ai vu des cas où sept juges ensemble ne pouvaient parvenir à pacifier une querelle: mais lorsque deux adversaires venaient à se joindre, l&#x27;un des deux ne faisait que s&#x27;aviser d&#x27;un si, comme, si vous avez dit cela, alors moi j&#x27;ai dit cela; et ils finissaient par se serrer la main et à être amis comme frères. Votre si est le seul juge de paix: il y a beaucoup de vertu dans le si.» Caranza était encore un auteur qui a écrit dans ce goût-là sur le duel, et dont on consultait l&#x27;autorité.]</p>
+<p>JACQUES, au duc.--N&#x27;est-ce pas là, seigneur, un rare original? Il est bon à tout, et cependant c&#x27;est un fou.</p>
+<p>LE VIEUX DUC.--Sa folie lui sert comme un cheval de chasse à la tonnelle; et sous son abri, il lance ses traits d&#x27;esprit.</p>
+<p>(Entrent l&#x27;Hymen conduisant Rosalinde en habits de femme, et Célie. Une musique douce.)</p>
+<p>L&#x27;HYMEN chante.</p>
+<p>Il y a joie dans le ciel Quand les mortels sont d&#x27;accord, Et s&#x27;unissent entre eux.</p>
+<p>Bon duc, reçois ta fille; L&#x27;hymen te l&#x27;amène du ciel, Oui, l&#x27;hymen te l&#x27;amène ici, Afin que tu unisses sa main A celle de l&#x27;homme dont elle porte le coeur dans son sein.</p>
+<p>ROSALINDE, au duc.--Je me donne à vous, car je suis à vous. (A Orlando.) Je me donne à vous, car je suis à vous.</p>
+<p>LE VIEUX DUC, à Rosalinde.--S&#x27;il y a quelque vérité dans la vue, vous êtes ma fille.</p>
+<p>ORLANDO.--S&#x27;il y a quelque vérité dans la vue, vous êtes ma Rosalinde.</p>
+<p>PHÉBÉ.--Si la vue et la forme sont fidèles..., adieu mon amour.</p>
+<p>ROSALINDE, au duc.--Je n&#x27;aurai plus de père, si vous n&#x27;êtes le mien. (A Orlando.) Je n&#x27;aurai point d&#x27;époux, si vous n&#x27;êtes le mien. (A Phébé.) Je n&#x27;épouserai pas d&#x27;autre femme que vous.</p>
+<h3 class="sub">L&#x27;hymen.</h3>
+<p>Silence. Oh! je défends le désordre C&#x27;est moi qui dois conclure Ces étranges événements. Voici huit personnes qui doivent se prendre la main, Pour s&#x27;unir par les liens de l&#x27;hymen, Si la vérité est la vérité.</p>
+<p>(A Orlando et Rosalinde.)</p>
+<p>Aucun obstacle ne pourra vous séparer.</p>
+<p>(A Olivier et Célie.)</p>
+<p>Vos deux coeurs ne sont qu&#x27;un coeur.</p>
+<p>(A Phébé.)</p>
+<p>Vous, cédez à son amour,</p>
+<p>(Montrant Sylvius.)</p>
+<p>Ou prenez une femme pour époux.</p>
+<p>(A Touchstone et Audrey.)</p>
+<p>Vous êtes certainement l&#x27;un pour l&#x27;autre, Comme l&#x27;hiver est uni au mauvais temps.</p>
+<p>(A tous.)</p>
+<p>Pendant que nous chantons un hymne nuptial Nourrissez-vous de questions et de réponses Afin que la raison diminue l&#x27;étonnement Que vous causent cette rencontre et cette conclusion.</p>
+<p>CHANSON.</p>
+<p>Le mariage est la couronne de l&#x27;auguste Junon. Lien céleste de la table et du lit, C&#x27;est l&#x27;hymen qui peuple les cités, Que le mariage soit donc honoré. Honneur, honneur et renom A l&#x27;hymen, dieu des cités!</p>
+<p>LE VIEUX DUC, à Célie.--O ma chère nièce, tu es la bienvenue, tu es aussi bienvenue que ma fille même.</p>
+<p>PHÉBÉ, à Sylvius.--Je ne retirerai pas ma parole: de ce moment tu es à moi. Ta fidélité te donne mon amour.</p>
+<p>(Entre Jacques des Bois.)</p>
+<p>JACQUES DES BOIS, au duc.--Daignez m&#x27;accorder audience un moment.--Je suis le second fils du vieux chevalier Rowland, et voici les nouvelles que j&#x27;apporte à cette illustre assemblée.--Le duc Frédéric, entendant raconter tous les jours combien de personnes d&#x27;un grand mérite se rendaient à cette forêt, avait levé une forte armée: il marchait lui-même à la tête de ses troupes, résolu de s&#x27;emparer ici de son frère, et de le passer au fil de l&#x27;épée; et déjà il approchait des limites de ce bois sauvage: mais là, il a rencontré un vieux religieux qui, après quelques moments d&#x27;entretien, l&#x27;a fait renoncer à son entreprise et au monde. Il a légué sa couronne au frère qu&#x27;il avait banni, et a restitué à ceux qui l&#x27;avaient suivi dans son exil tous leurs domaines. J&#x27;engage ma vie sur la vérité de ce récit.</p>
+<p>LE VIEUX DUC.--Soyez le bienvenu, jeune homme. Vous offrez un beau présent de noces à vos deux frères; à l&#x27;un, le patrimoine dont on l&#x27;avait dépouillé, et à l&#x27;autre, un pays tout entier, un puissant duché. Mais, d&#x27;abord, achevons dans cette forêt l&#x27;ouvrage que nous y avons si bien commencé et si heureusement amené à bien, et, après, chacun des heureux compagnons qui ont supporté ici avec nous tant de rudes jours et de nuits partagera l&#x27;avantage de la fortune que nous retrouvons, selon la mesure de sa condition. En attendant, oublions cette dignité qui vient de nous écheoir, et livrons-nous à nos divertissements rustiques.--Jouez, musiciens. Et vous mariés et mariées, suivez la mesure de la musique, puisque votre mesure de joie est comble.</p>
+<p>JACQUES, à Jacques des Bois.--Monsieur, avec votre permission, si je vous ai bien entendu, le duc a embrassé la vie religieuse, et rejeté avec dédain le faste des cours?</p>
+<p>JACQUES DES BOIS.--Oui, monsieur.</p>
+<p>JACQUES.--Je veux aller le trouver. Il y a beaucoup à apprendre et à profiter avec ces convertis. (Au duc.) Je vous lègue, à vous, vos anciennes dignités: votre patience et vos vertus les méritent. (A Orlando.) A vous, l&#x27;amour que mérite votre foi sincère. (A Olivier.) A vous, vos terres, la tendresse d&#x27;une épouse, et des alliés illustres. (A Sylvius.) A vous, un lit longtemps attendu et bien mérité. (A Touchstone.) Et vous, je vous lègue les disputes; car vous n&#x27;avez, pour votre voyage d&#x27;amour, de provisions que pour deux mois.--Ainsi, allez à vos plaisirs. Pour moi, il m&#x27;en faut d&#x27;autres que celui de la danse.</p>
+<p>LE VIEUX DUC.--Arrête, Jacques; reste avec nous.</p>
+<p>JACQUES.--Moi, je ne reste point pour de frivoles passe-temps. J&#x27;irai vous attendre dans votre grotte abandonnée, pour savoir ce que vous voulez.</p>
+<p>(Il sort.)</p>
+<p>LE VIEUX DUC, aux musiciens.--Poursuivez, poursuivez; nous allons commencer cette cérémonie, comme nous avons la confiance qu&#x27;elle se terminera, dans les transports d&#x27;une joie pure.</p>
+<p>(Danse.)</p>
+<h3 class="sub">Épilogue.</h3>
+<p>ROSALINDE--Vous n&#x27;avez pas coutume de voir l&#x27;Épilogue habillé en femme, mais cela n&#x27;est pas plus mal séant, que de voir le Prologue en habit d&#x27;homme. Si le proverbe est vrai, que le bon vin n&#x27;a pas besoin d&#x27;enseigne, il est également vrai qu&#x27;une bonne pièce n&#x27;a pas besoin d&#x27;épilogue. Cependant on annonce le bon vin par de bonnes enseignes; et les bonnes pièces paraissent encore meilleures avec le secours de bons épilogues. Dans quelle position embarrassante suis-je donc placée, moi qui ne suis point un bon épilogue, et qui ne peux pas non plus vous captiver en faveur d&#x27;une bonne pièce? Je ne suis point équipée en mendiant; il ne me conviendrait donc pas de vous supplier: le seul parti qui me reste est d&#x27;user de conjurations, et je vais commencer par les femmes.--Femmes, je vous somme, par l&#x27;amour que vous portez aux hommes, d&#x27;approuver dans cette pièce tout ce qui leur en plaît. Et vous, hommes, je vous somme, au nom de l&#x27;amour que vous portez aux femmes (car je m&#x27;aperçois à votre sourire qu&#x27;aucun de vous ne les déteste), d&#x27;approuver de cette pièce ce qui en plaît aux dames; en sorte qu&#x27;entre elles et vous, la pièce ait du succès. Si j&#x27;étais une femme, j&#x27;embrasserais tous ceux qui, parmi vous, auraient des barbes qui me plairaient, des physionomies à mon goût et des haleines qui ne me rebuteraient pas; et je suis sûr que tous ceux d&#x27;entre vous qui ont de belles barbes, des figures agréables et de douces haleines, ne manqueront pas, en reconnaissance de mon offre gracieuse, de me dire adieu, quand je vous ferai la révérence.</p>
+<p>(Tous sortent.)</p>
+<h3 class="sub">Fin du cinquième et dernier acte.</h3>
+<p class="colophon">Texte du domaine public. Édition numérique BookClassics.</p>
+</body></html>
