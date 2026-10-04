@@ -370,6 +370,14 @@
     "txt"
    ]
   },
+  "carmilla": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "civil-disobedience": {
    "en": [
     "epub",
@@ -1037,6 +1045,14 @@
    ]
   },
   "main-street": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "major-barbara": {
    "en": [
     "epub",
     "html",
@@ -1758,6 +1774,14 @@
     "txt"
    ]
   },
+  "the-black-arrow": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-black-tulip": {
    "en": [
     "epub",
@@ -1789,6 +1813,14 @@
    ]
   },
   "the-canterbury-tales": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-canterville-ghost": {
    "en": [
     "epub",
     "html",
@@ -2056,6 +2088,14 @@
     "txt"
    ],
    "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-king-in-yellow": {
+   "en": [
     "epub",
     "html",
     "pdf",
@@ -2927,5 +2967,5 @@
    ]
   }
  },
- "generated": "2026-10-04T00:25:04Z"
+ "generated": "2026-10-04T00:25:35Z"
 }
