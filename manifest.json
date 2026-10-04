@@ -334,6 +334,20 @@
     "txt"
    ]
   },
+  "beyond-good-and-evil": {
+   "de": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "black-beauty": {
    "en": [
     "epub",
@@ -616,6 +630,14 @@
     "txt"
    ]
   },
+  "first-love-and-other-stories": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "five-children-and-it": {
    "en": [
     "epub",
@@ -814,6 +836,20 @@
   },
   "herland": {
    "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "in-search-of-the-castaways": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
     "epub",
     "html",
     "pdf",
@@ -2414,6 +2450,20 @@
     "txt"
    ]
   },
+  "the-possessed": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-prince": {
    "de": [
     "epub",
@@ -2533,6 +2583,20 @@
    ]
   },
   "the-return-of-the-native": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-robbers": {
+   "de": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
    "en": [
     "epub",
     "html",
@@ -3087,5 +3151,5 @@
    ]
   }
  },
- "generated": "2026-10-04T00:27:22Z"
+ "generated": "2026-10-04T00:28:40Z"
 }
