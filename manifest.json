@@ -138,6 +138,14 @@
     "txt"
    ]
   },
+  "allan-quatermain": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "an-enemy-of-the-people": {
    "en": [
     "epub",
@@ -1976,6 +1984,14 @@
     "txt"
    ]
   },
+  "the-duchess-of-malfi": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-federalist-papers": {
    "en": [
     "epub",
@@ -2508,6 +2524,14 @@
     "txt"
    ]
   },
+  "the-return-of-sherlock-holmes": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-return-of-the-native": {
    "en": [
     "epub",
@@ -2754,6 +2778,14 @@
     "txt"
    ]
   },
+  "the-water-babies": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-way-we-live-now": {
    "en": [
     "epub",
@@ -2962,6 +2994,14 @@
     "txt"
    ]
   },
+  "utopia": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "vanity-fair": {
    "en": [
     "epub",
@@ -3047,5 +3087,5 @@
    ]
   }
  },
- "generated": "2026-10-04T00:26:48Z"
+ "generated": "2026-10-04T00:27:22Z"
 }
