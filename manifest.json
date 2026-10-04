@@ -1830,6 +1830,14 @@
     "txt"
    ]
   },
+  "the-aeneid": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-age-of-innocence": {
    "en": [
     "epub",
@@ -1959,6 +1967,14 @@
     "pdf",
     "txt"
    ],
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-consolation-of-philosophy": {
    "en": [
     "epub",
     "html",
@@ -2212,6 +2228,14 @@
     "txt"
    ],
    "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-kalevala": {
+   "en": [
     "epub",
     "html",
     "pdf",
@@ -2622,6 +2646,14 @@
     "txt"
    ]
   },
+  "the-rivals": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-robbers": {
    "de": [
     "epub",
@@ -2692,6 +2724,14 @@
     "txt"
    ],
    "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-song-of-roland": {
+   "en": [
     "epub",
     "html",
     "pdf",
@@ -3191,5 +3231,5 @@
    ]
   }
  },
- "generated": "2026-10-04T00:29:22Z"
+ "generated": "2026-10-04T00:29:57Z"
 }

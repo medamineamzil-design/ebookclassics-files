@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Rivals — Richard Brinsley Sheridan</title><style>
+:root{--paper:#fbf8f1;--ink:#1f1b16;--muted:#6f6352;--accent:#9a6b2f;--rule:#e4dccb}
+@media (prefers-color-scheme:dark){:root{--paper:#16140f;--ink:#ece6d8;--muted:#a79c88;--accent:#d8a95e;--rule:#2e2a22}}
+html{background:var(--paper)}
+body{font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Libertinus Serif",Georgia,serif;color:var(--ink);
+     background:var(--paper);line-height:1.65;font-size:1.12rem;max-width:36em;margin:0 auto;padding:2.5em 1.25em 5em}
+.titlepage{text-align:center;min-height:70vh;display:flex;flex-direction:column;justify-content:center;gap:.6em;
+           border-bottom:1px solid var(--rule);margin-bottom:2.5em;padding-bottom:2.5em}
+.titlepage img{max-width:260px;width:60%;margin:0 auto 1.5em;border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+h1{font-size:2.4em;line-height:1.15;font-weight:600;margin:0;letter-spacing:-.01em}
+.author{font-style:italic;font-size:1.25em;color:var(--accent);margin:0}
+.translator{font-size:.95em;color:var(--muted);margin:0}
+nav.toc{margin:0 0 3em}
+nav.toc h2{font-size:.85em;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:left;margin:0 0 .8em}
+nav.toc ol{list-style:none;padding:0;margin:0;columns:1}
+nav.toc li{margin:.25em 0}
+nav.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent}
+nav.toc a:hover{border-color:var(--accent)}
+h2.chapter{font-size:1.45em;font-weight:600;text-align:center;margin:3.5em 0 1.6em;line-height:1.3}
+h2.chapter::before{content:"";display:block;width:3em;height:2px;background:var(--accent);margin:0 auto 1.1em}
+p{margin:0;text-indent:1.5em;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+h2.chapter + p, .titlepage + p{text-indent:0}
+h2.chapter + p::first-letter{font-size:3.1em;float:left;line-height:.85;padding:.08em .08em 0 0;color:var(--accent);font-weight:600}
+.colophon{margin-top:5em;padding-top:1.5em;border-top:1px solid var(--rule);text-align:center;color:var(--muted);font-size:.85em;text-indent:0}
+h3.sub{font-size:1em;font-weight:600;font-variant:small-caps;letter-spacing:.04em;text-align:center;margin:2.2em 0 1em}
+h3.sub + p{text-indent:0}
+@media print{h2.chapter{break-before:page}}
+</style></head><body>
+<header class="titlepage">
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjI0MDAiIHZpZXdCb3g9IjAgMCAxNjAwIDI0MDAiPgo8cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSIyNDAwIiBmaWxsPSIjMmYzZTJjIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjMwMCIgZmlsbD0iI2Q0YTM3MyIgb3BhY2l0eT0iLjkyIi8+CjxjaXJjbGUgY3g9IjExMjAiIGN5PSI1NjAiIHI9IjIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMmYzZTJjIiBzdHJva2Utd2lkdGg9IjEyIiBvcGFjaXR5PSIuNSIvPgo8Y2lyY2xlIGN4PSIxMTIwIiBjeT0iNTYwIiByPSIxMjAiIGZpbGw9IiMyZjNlMmMiIG9wYWNpdHk9Ii4xOCIvPgo8cmVjdCB4PSIxNjAiIHk9IjkzMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIxMCIgZmlsbD0iI2Q0YTM3MyIvPgo8dGV4dCB4PSIxNjAiIHk9IjExODAiIGZvbnQtc2l6ZT0iMTUwIiBmb250LXdlaWdodD0iNjAwIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmM2VmZTYiPlRoZSBSaXZhbHM8L3RleHQ+Cjx0ZXh0IHg9IjE2MCIgeT0iMTQxNSIgZm9udC1zaXplPSI2OCIgZm9udC1zdHlsZT0iaXRhbGljIiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNkNGEzNzMiPlJpY2hhcmQgQnJpbnNsZXkgU2hlcmlkYW48L3RleHQ+Cjx0ZXh0IHg9IjE2MCIgeT0iMjIzMCIgZm9udC1zaXplPSI0NCIgbGV0dGVyLXNwYWNpbmc9IjE0IiBmb250LWZhbWlseT0iTGliZXJ0aW51cyBTZXJpZiwgR2VvcmdpYSwgc2VyaWYiIGZpbGw9IiNmM2VmZTYiIG9wYWNpdHk9Ii43NSI+Qk9PS0NMQVNTSUNTPC90ZXh0Pgo8L3N2Zz4=" alt="">
+<h1>The Rivals</h1>
+<p class="author">Richard Brinsley Sheridan</p>
+</header>
+<nav class="toc"><h2>Contents</h2><ol>
+<li><a href="#c1">Preface</a></li>
+<li><a href="#c2">SCENE--Bath.</a></li>
+<li><a href="#c3">Prologue By the AUTHOR</a></li>
+<li><a href="#c4">Prologue By the AUTHOR — Spoken On the Tenth Night, By Mrs. Bulkley.</a></li>
+<li><a href="#c5">Scene I.--A street. [Enter THOMAS; he crosses the stage; FAG follows, looking after him.]</a></li>
+<li><a href="#c6">Scene II.--A Dressing-room in Mrs. MALAPROP&#x27;s Lodgings. [LYDIA sitting on a sofa, with a book in her hand. Lucy, as just returned from a message.]</a></li>
+<li><a href="#c7">Act II</a></li>
+<li><a href="#c8">Scene I.--CAPTAIN ABSOLUTE&#x27;s Lodgings. [CAPTAIN ABSOLUTE and FAG.]</a></li>
+<li><a href="#c9">Scene II.--The North Parade. [Enter LUCY.]</a></li>
+<li><a href="#c10">Act III</a></li>
+<li><a href="#c11">Scene I--The North Parade. [Enter CAPTAIN ABSOLUTE.]</a></li>
+<li><a href="#c12">Scene II--JULIA&#x27;s Dressing-room. [FAULKLAND discovered alone.]</a></li>
+<li><a href="#c13">Scene III--Mrs. MALAPROP&#x27;s Lodgings. [Mrs. MALAPROP, with a letter in her hand, and CAPTAIN ABSOLUTE.]</a></li>
+<li><a href="#c14">Scene IV--ACRES&#x27; Lodgings. [ACRES, as just dressed, and DAVID.]</a></li>
+<li><a href="#c15">Act IV</a></li>
+<li><a href="#c16">Scene I--ACRES&#x27; Lodgings. [ACRES and DAVID.]</a></li>
+<li><a href="#c17">Scene II--Mrs. MALAPROP&#x27;s Lodgings. [Mrs. MALAPROP and LYDIA.]</a></li>
+<li><a href="#c18">Scene III--The North Parade. [Enter Sir LUCIUS O&#x27;TRIGGER.]</a></li>
+<li><a href="#c19">Act V</a></li>
+<li><a href="#c20">Scene I--JULIA&#x27;s Dressing-Room. [JULIA discovered alone.]</a></li>
+<li><a href="#c21">Scene II--The South Parade. [Enter CAPTAIN ABSOLUTE, putting his sword under his great coat.]</a></li>
+<li><a href="#c22">Scene III--King&#x27;s-Mead-Fields. [Enter Sir LUCIUS O&#x27;TRIGGER and ACRES, with pistols.]</a></li>
+<li><a href="#c23">Epilogue By the Author</a></li>
+</ol></nav>
+<h2 class="chapter" id="c1">Preface</h2>
+<p>A preface to a play seems generally to be considered as a kind of closet-prologue, in which--if his piece has been successful--the author solicits that indulgence from the reader which he had before experienced from the audience: but as the scope and immediate object of a play is to please a mixed assembly in representation (whose judgment in the theatre at least is decisive,) its degree of reputation is usually as determined as public, before it can be prepared for the cooler tribunal of the study. Thus any farther solicitude on the part of the writer becomes unnecessary at least, if not an intrusion: and if the piece has been condemned in the performance, I fear an address to the closet, like an appeal to posterity, is constantly regarded as the procrastination of a suit, from a consciousness of the weakness of the cause. From these considerations, the following comedy would certainly have been submitted to the reader, without any farther introduction than what it had in the representation, but that its success has probably been founded on a circumstance which the author is informed has not before attended a theatrical trial, and which consequently ought not to pass unnoticed.</p>
+<p>I need scarcely add, that the circumstance alluded to was the withdrawing of the piece, to remove those imperfections in the first representation which were too obvious to escape reprehension, and too numerous to admit of a hasty correction. There are few writers, I believe, who, even in the fullest consciousness of error, do not wish to palliate the faults which they acknowledge; and, however trifling the performance, to second their confession of its deficiencies, by whatever plea seems least disgraceful to their ability. In the present instance, it cannot be said to amount either to candour or modesty in me, to acknowledge an extreme inexperience and want of judgment on matters, in which, without guidance from practice, or spur from success, a young man should scarcely boast of being an adept. If it be said, that under such disadvantages no one should attempt to write a play, I must beg leave to dissent from the position, while the first point of experience that I have gained on the subject is, a knowledge of the candour and judgment with which an impartial public distinguishes between the errors of inexperience and incapacity, and the indulgence which it shows even to a disposition to remedy the defects of either.</p>
+<p>It were unnecessary to enter into any further extenuation of what was thought exceptionable in this play, but that it has been said, that the managers should have prevented some of the defects before its appearance to the public--and in particular the uncommon length of the piece as represented the first night. It were an ill return for the most liberal and gentlemanly conduct on their side, to suffer any censure to rest where none was deserved. Hurry in writing has long been exploded as an excuse for an author;--however, in the dramatic line, it may happen, that both an author and a manager may wish to fill a chasm in the entertainment of the public with a hastiness not altogether culpable. The season was advanced when I first put the play into Mr. Harris&#x27;s hands: it was at that time at least double the length of any acting comedy. I profited by his judgment and experience in the curtailing of it--till, I believe, his feeling for the vanity of a young author got the better of his desire for correctness, and he left many excrescences remaining, because he had assisted in pruning so many more. Hence, though I was not uninformed that the acts were still too long, I flattered myself that, after the first trial, I might with safer judgment proceed to remove what should appear to have been most dissatisfactory. Many other errors there were, which might in part have arisen from my being by no means conversant with plays in general, either in reading or at the theatre. Yet I own that, in one respect, I did not regret my ignorance: for as my first wish in attempting a play was to avoid every appearance of plagiary, I thought I should stand a better chance of effecting this from being in a walk which I had not frequented, and where, consequently, the progress of invention was less likely to be interrupted by starts of recollection: for on subjects on which the mind has been much informed, invention is slow of exerting itself. Faded ideas float in the fancy like half-forgotten dreams; and the imagination in its fullest enjoyments becomes suspicious of its offspring, and doubts whether it has created or adopted.</p>
+<p>With regard to some particular passages which on the first night&#x27;s representation seemed generally disliked, I confess, that if I felt any emotion of surprise at the disapprobation, it was not that they were disapproved of, but that I had not before perceived that they deserved it. As some part of the attack on the piece was begun too early to pass for the sentence of judgment, which is ever tardy in condemning, it has been suggested to me, that much of the disapprobation must have arisen from virulence of malice, rather than severity of criticism: but as I was more apprehensive of there being just grounds to excite the latter than conscious of having deserved the former, I continue not to believe that probable, which I am sure must have been unprovoked. However, if it was so, and I could even mark the quarter from whence it came, it would be ungenerous to retort: for no passion suffers more than malice from disappointment. For my own part, I see no reason why the author of a play should not regard a first night&#x27;s audience as a candid and judicious friend attending, in behalf of the public, at his last rehearsal. If he can dispense with flattery, he is sure at least of sincerity, and even though the annotation be rude, he may rely upon the justness of the comment. Considered in this light, that audience, whose fiat is essential to the poet&#x27;s claim, whether his object be fame or profit, has surely a right to expect some deference to its opinion, from principles of politeness at least, if not from gratitude.</p>
+<p>As for the little puny critics, who scatter their peevish strictures in private circles, and scribble at every author who has the eminence of being unconnected with them, as they are usually spleen-swoln from a vain idea of increasing their consequence, there will always be found a petulance and illiberality in their remarks, which should place them as far beneath the notice of a gentleman, as their original dulness had sunk them from the level of the most unsuccessful author.</p>
+<p>It is not without pleasure that I catch at an opportunity of justifying myself from the charge of intending any national reflection in the character of Sir Lucius O&#x27;Trigger. If any gentlemen opposed the piece from that idea, I thank them sincerely for their opposition; and if the condemnation of this comedy (however misconceived the provocation) could have added one spark to the decaying flame of national attachment to the country supposed to be reflected on, I should have been happy in its fate, and might with truth have boasted, that it had done more real service in its failure, than the successful morality of a thousand stage-novels will ever effect.</p>
+<p>It is usual, I believe, to thank the performers in a new play, for the exertion of their several abilities. But where (as in this instance) their merit has been so striking and uncontroverted, as to call for the warmest and truest applause from a number of judicious audiences, the poet&#x27;s after-praise comes like the feeble acclamation of a child to close the shouts of a multitude. The conduct, however, of the principals in a theatre cannot be so apparent to the public. I think it therefore but justice to declare, that from this theatre (the only one I can speak of from experience) those writers who wish to try the dramatic line will meet with that candour and liberal attention, which are generally allowed to be better calculated to lead genius into excellence, than either the precepts of judgment, or the guidance of experience.</p>
+<p>The AUTHOR</p>
+<p>* * * * * * *</p>
+<h3 class="sub">Dramatis Personae</h3>
+<p>As originally acted at COVENT GARDEN THEATRE in 1775</p>
+<p>Sir ANTHONY ABSOLUTE CAPTAIN ABSOLUTE FAULKLAND ACRES Sir LUCIUS O&#x27;TRIGGER FAG DAVID THOMAS Mrs. MALAPROP LYDIA LANGUISH JULIA LUCY Maid, Boy, Servants, &amp;c.</p>
+<h2 class="chapter" id="c2">SCENE--Bath.</h2>
+<p>Time of action--Five hours.</p>
+<p>* * * * * * *</p>
+<h2 class="chapter" id="c3">Prologue By the AUTHOR</h2>
+<p>[Enter SERJEANT-AT-LAW, and ATTORNEY following, and giving a paper.]</p>
+<p>SERJEANT What&#x27;s here!--a vile cramp hand! I cannot see Without my spectacles.</p>
+<p>ATTORNEY He means his fee. Nay, Mr. Serjeant, good sir, try again.  [Gives money.]</p>
+<p>SERJEANT The scrawl improves! [more] O come, &#x27;tis pretty plain. Hey! how&#x27;s this? Dibble!--sure it cannot be! A poet&#x27;s brief! a poet and a fee!</p>
+<p>ATTORNEY Yes, sir! though you without reward, I know, Would gladly plead the Muse&#x27;s cause.</p>
+<p>SERJEANT So!--so!</p>
+<p>ATTORNEY And if the fee offends, your wrath should fall On me.</p>
+<p>SERJEANT Dear Dibble, no offence at all.</p>
+<p>ATTORNEY Some sons of Phoebus in the courts we meet,</p>
+<p>SERJEANT And fifty sons of Phoebus in the Fleet!</p>
+<p>ATTORNEY Nor pleads he worse, who with a decent sprig Of bays adorns his legal waste of wig.</p>
+<p>SERJEANT Full-bottom&#x27;d heroes thus, on signs, unfurl A leaf of laurel in a grove of curl! Yet tell your client, that, in adverse days, This wig is warmer than a bush of bays.</p>
+<p>ATTORNEY Do you, then, sir, my client&#x27;s place supply, Profuse of robe, and prodigal of tie-- Do you, with all those blushing powers of face, And wonted bashful hesitating grace, Rise in the court, and flourish on the case.  [Exit.]</p>
+<p>SERJEANT For practice then suppose--this brief will show it,-- Me, Serjeant Woodward,--counsel for the poet. Used to the ground, I know &#x27;tis hard to deal With this dread court, from whence there&#x27;s no appeal; No tricking here, to blunt the edge of law, Or, damn&#x27;d in equity, escape by flaw: But judgment given, your sentence must remain; No writ of error lies--to Drury Lane: Yet when so kind you seem, &#x27;tis past dispute We gain some favour, if not costs of suit. No spleen is here! I see no hoarded fury;-- I think I never faced a milder jury! Sad else our plight! where frowns are transportation. A hiss the gallows, and a groan damnation! But such the public candour, without fear My client waives all right of challenge here. No newsman from our session is dismiss&#x27;d, Nor wit nor critic we scratch off the list; His faults can never hurt another&#x27;s ease, His crime, at worst, a bad attempt to please: Thus, all respecting, he appeals to all, And by the general voice will stand or fall.</p>
+<p>* * * * * * *</p>
+<h2 class="chapter" id="c4">Prologue By the AUTHOR — Spoken On the Tenth Night, By Mrs. Bulkley.</h2>
+<p>Granted our cause, our suit and trial o&#x27;er, The worthy serjeant need appear no more: In pleasing I a different client choose, He served the Poet--I would serve the Muse. Like him, I&#x27;ll try to merit your applause, A female counsel in a female&#x27;s cause. Look on this form--where humour, quaint and sly, Dimples the cheek, and points the beaming eye; Where gay invention seems to boast its wiles In amorous hint, and half-triumphant smiles; While her light mask or covers satire&#x27;s strokes, Or hides the conscious blush her wit provokes. Look on her well--does she seem form&#x27;d to teach? Should you expect to hear this lady preach? Is grey experience suited to her youth? Do solemn sentiments become that mouth? Bid her be grave, those lips should rebel prove To every theme that slanders mirth or love. Yet, thus adorn&#x27;d with every graceful art To charm the fancy and yet reach the heart-- Must we displace her? And instead advance The goddess of the woful countenance-- The sentimental Muse!--Her emblems view, The Pilgrim&#x27;s Progress, and a sprig of rue! View her--too chaste to look like flesh and blood-- Primly portray&#x27;d on emblematic wood! There, fix&#x27;d in usurpation, should she stand, She&#x27;ll snatch the dagger from her sister&#x27;s hand: And having made her votaries weep a flood, Good heaven! she&#x27;ll end her comedies in blood-- Bid Harry Woodward break poor Dunstal&#x27;s crown! Imprison Quick, and knock Ned Shuter down; While sad Barsanti, weeping o&#x27;er the scene, Shall stab herself--or poison Mrs. Green. Such dire encroachments to prevent in time, Demands the critic&#x27;s voice--the poet&#x27;s rhyme. Can our light scenes add strength to holy laws! Such puny patronage but hurts the cause: Fair virtue scorns our feeble aid to ask; And moral truth disdains the trickster&#x27;s mask For here their favourite stands, whose brow severe And sad, claims youth&#x27;s respect, and pity&#x27;s tear; Who, when oppress&#x27;d by foes her worth creates, Can point a poniard at the guilt she hates.</p>
+<p>* * * * * * * * * * *</p>
+<h3 class="sub">The Rivals — Act I</h3>
+<p>* * * * * * *</p>
+<h2 class="chapter" id="c5">Scene I.--A street. [Enter THOMAS; he crosses the stage; FAG follows, looking after him.]</h2>
+<p>FAG What! Thomas! sure &#x27;tis he?--What! Thomas! Thomas!</p>
+<p>THOMAS Hey!--Odd&#x27;s life! Mr. Fag!--give us your hand, my old fellow-servant.</p>
+<p>FAG Excuse my glove, Thomas:--I&#x27;m devilish glad to see you, my lad. Why, my prince of charioteers, you look as hearty!--but who the deuce thought of seeing you in Bath?</p>
+<p>THOMAS Sure, master, Madam Julia, Harry, Mrs. Kate, and the postillion, be all come.</p>
+<p>FAG Indeed!</p>
+<p>THOMAS Ay, master thought another fit of the gout was coming to make him a visit;--so he&#x27;d a mind to gi&#x27;t the slip, and whip! we were all off at an hour&#x27;s warning.</p>
+<p>FAG Ay, ay, hasty in every thing, or it would not be Sir Anthony Absolute!</p>
+<p>THOMAS But tell us, Mr. Fag, how does young master? Odd! Sir Anthony will stare to see the Captain here!</p>
+<p>FAG I do not serve Captain Absolute now.</p>
+<p>THOMAS Why sure!</p>
+<p>FAG At present I am employed by Ensign Beverley.</p>
+<p>THOMAS I doubt, Mr. Fag, you ha&#x27;n&#x27;t changed for the better.</p>
+<p>FAG I have not changed, Thomas.</p>
+<p>THOMAS No! Why didn&#x27;t you say you had left young master?</p>
+<p>FAG No.--Well, honest Thomas, I must puzzle you no farther:--briefly then--Captain Absolute and Ensign Beverley are one and the same person.</p>
+<p>THOMAS The devil they are!</p>
+<p>FAG So it is indeed, Thomas; and the ensign half of my master being on guard at present--the captain has nothing to do with me.</p>
+<p>THOMAS So, so!--What, this is some freak, I warrant!--Do tell us, Mr. Fag, the meaning o&#x27;t--you know I ha&#x27; trusted you.</p>
+<p>FAG You&#x27;ll be secret, Thomas?</p>
+<p>THOMAS As a coach-horse.</p>
+<p>FAG Why then the cause of all this is--Love,--Love, Thomas, who (as you may get read to you) has been a masquerader ever since the days of Jupiter.</p>
+<p>THOMAS Ay, ay;--I guessed there was a lady in the case:--but pray, why does your master pass only for ensign?--Now if he had shammed general indeed----</p>
+<p>FAG Ah! Thomas, there lies the mystery o&#x27; the matter. Hark&#x27;ee, Thomas, my master is in love with a lady of a very singular taste: a lady who likes him better as a half pay ensign than if she knew he was son and heir to Sir Anthony Absolute, a baronet of three thousand a year.</p>
+<p>THOMAS That is an odd taste indeed!--But has she got the stuff, Mr. Fag? Is she rich, hey?</p>
+<p>FAG Rich!--Why, I believe she owns half the stocks! Zounds! Thomas, she could pay the national debt as easily as I could my washerwoman! She has a lapdog that eats out of gold,--she feeds her parrot with small pearls,--and all her thread-papers are made of bank-notes!</p>
+<p>THOMAS Bravo, faith!--Odd! I warrant she has a set of thousands at least:--but does she draw kindly with the captain?</p>
+<p>FAG As fond as pigeons.</p>
+<p>THOMAS May one hear her name?</p>
+<p>FAG Miss Lydia Languish.--But there is an old tough aunt in the way; though, by-the-by, she has never seen my master--for we got acquainted with miss while on a visit in Gloucestershire.</p>
+<p>THOMAS Well--I wish they were once harnessed together in matrimony.--But pray, Mr. Fag, what kind of a place is this Bath?--I ha&#x27; heard a deal of it--here&#x27;s a mort o&#x27; merrymaking, hey?</p>
+<p>FAG Pretty well, Thomas, pretty well--&#x27;tis a good lounge; in the morning we go to the pump-room (though neither my master nor I drink the waters); after breakfast we saunter on the parades, or play a game at billiards; at night we dance; but damn the place, I&#x27;m tired of it: their regular hours stupify me--not a fiddle nor a card after eleven!--However, Mr. Faulkland&#x27;s gentleman and I keep it up a little in private parties;--I&#x27;ll introduce you there, Thomas--you&#x27;ll like him much.</p>
+<p>THOMAS Sure I know Mr. Du-Peigne--you know his master is to marry Madam Julia.</p>
+<p>FAG I had forgot.--But, Thomas, you must polish a little--indeed you must.--Here now--this wig!--What the devil do you do with a wig, Thomas?--None of the London whips of any degree of ton wear wigs now.</p>
+<p>THOMAS More&#x27;s the pity! more&#x27;s the pity! I say.--Odd&#x27;s life! when I heard how the lawyers and doctors had took to their own hair, I thought how &#x27;twould go next:--odd rabbit it! when the fashion had got foot on the bar, I guessed &#x27;twould mount to the box!--but &#x27;tis all out of character, believe me, Mr. Fag: and look&#x27;ee, I&#x27;ll never gi&#x27; up mine--the lawyers and doctors may do as they will.</p>
+<p>FAG Well, Thomas, we&#x27;ll not quarrel about that.</p>
+<p>THOMAS Why, bless you, the gentlemen of the professions ben&#x27;t all of a mind--for in our village now, thoff Jack Gauge, the exciseman, has ta&#x27;en to his carrots, there&#x27;s little Dick the farrier swears he&#x27;ll never forsake his bob, though all the college should appear with their own heads!</p>
+<p>FAG Indeed! well said, Dick!--But hold--mark! mark! Thomas.</p>
+<p>THOMAS Zooks! &#x27;tis the captain.--Is that the Lady with him?</p>
+<p>FAG No, no, that is Madam Lucy, my master&#x27;s mistress&#x27;s maid. They lodge at that house--but I must after him to tell him the news.</p>
+<p>THOMAS Odd! he&#x27;s giving her money!--Well, Mr. Fag----</p>
+<p>FAG Good-bye, Thomas. I have an appointment in Gyde&#x27;s porch this evening at eight; meet me there, and we&#x27;ll make a little party.</p>
+<p>[Exeunt severally.]</p>
+<p>* * * * * * *</p>
+<h2 class="chapter" id="c6">Scene II.--A Dressing-room in Mrs. MALAPROP&#x27;s Lodgings. [LYDIA sitting on a sofa, with a book in her hand. Lucy, as just returned from a message.]</h2>
+<p>LUCY Indeed, ma&#x27;am, I traversed half the town in search of it: I don&#x27;t believe there&#x27;s a circulating library in Bath I ha&#x27;n&#x27;t been at.</p>
+<p>LYDIA And could not you get The Reward of Constancy?</p>
+<p>LUCY No, indeed, ma&#x27;am.</p>
+<p>LYDIA Nor The Fatal Connexion?</p>
+<p>LUCY No, indeed, ma&#x27;am.</p>
+<p>LYDIA Nor The Mistakes of the Heart?</p>
+<p>LUCY Ma&#x27;am, as ill luck would have it, Mr. Bull said Miss Sukey Saunter had just fetched it away.</p>
+<p>LYDIA Heigh-ho!--Did you inquire for The Delicate Distress?</p>
+<p>LUCY Or, The Memoirs of Lady Woodford? Yes, indeed, ma&#x27;am. I asked every where for it; and I might have brought it from Mr. Frederick&#x27;s, but Lady Slattern Lounger, who had just sent it home, had so soiled and dog&#x27;s-eared it, it wa&#x27;n&#x27;t fit for a Christian to read.</p>
+<p>LYDIA Heigh-ho!--Yes, I always know when Lady Slattern has been before me. She has a most observing thumb; and, I believe, cherishes her nails for the convenience of making marginal notes.--Well, child, what have you brought me?</p>
+<p>LUCY Oh! here, ma&#x27;am.--[Taking books from under her cloak, and from her pockets.] This is The Gordian Knot,--and this Peregrine Pickle. Here are The Tears of Sensibility, and Humphrey Clinker. This is The Memoirs of a Lady of Quality, written by herself, and here the second volume of The Sentimental Journey.</p>
+<p>LYDIA Heigh-ho!--What are those books by the glass?</p>
+<p>LUCY The great one is only The Whole Duty of Man, where I press a few blonds, ma&#x27;am.</p>
+<p>LYDIA Very well--give me the sal volatile.</p>
+<p>LUCY Is it in a blue cover, ma&#x27;am?</p>
+<p>LYDIA My smelling-bottle, you simpleton!</p>
+<p>LUCY Oh, the drops!--here, ma&#x27;am.</p>
+<p>LYDIA Hold!--here&#x27;s some one coming--quick, see who it is.----</p>
+<p>[Exit LUCY.]</p>
+<p>Surely I heard my cousin Julia&#x27;s voice.</p>
+<p>LUCY Lud! ma&#x27;am, here is Miss Melville.</p>
+<p>LYDIA Is it possible!----</p>
+<p>[Enter JULIA.]</p>
+<p>LYDIA My dearest Julia, how delighted am I!--[Embrace.] How unexpected was this happiness!</p>
+<p>JULIA True, Lydia--and our pleasure is the greater.--But what has been the matter?--you were denied to me at first!</p>
+<p>LYDIA Ah, Julia, I have a thousand things to tell you!--But first inform me what has conjured you to Bath?--Is Sir Anthony here?</p>
+<p>JULIA He is--we are arrived within this hour--and I suppose he will be here to wait on Mrs. Malaprop as soon as he is dressed.</p>
+<p>LYDIA Then before we are interrupted, let me impart to you some of my distress!--I know your gentle nature will sympathize with me, though your prudence may condemn me! My letters have informed you of my whole connection with Beverley; but I have lost him, Julia! My aunt has discovered our intercourse by a note she intercepted, and has confined me ever since! Yet, would you believe it? she has absolutely fallen in love with a tall Irish baronet she met one night since we have been here, at Lady Macshuffle&#x27;s rout.</p>
+<p>JULIA You jest, Lydia!</p>
+<p>LYDIA No, upon my word.--She really carries on a kind of correspondence with him, under a feigned name though, till she chooses to be known to him:--but it is a Delia or a Celia, I assure you.</p>
+<p>JULIA Then, surely, she is now more indulgent to her niece.</p>
+<p>LYDIA Quite the contrary. Since she has discovered her own frailty, she is become more suspicious of mine. Then I must inform you of another plague!--That odious Acres is to be in Bath to-day; so that I protest I shall be teased out of all spirits!</p>
+<p>JULIA Come, come, Lydia, hope for the best--Sir Anthony shall use his interest with Mrs. Malaprop.</p>
+<p>LYDIA But you have not heard the worst. Unfortunately I had quarrelled with my poor Beverley, just before my aunt made the discovery, and I have not seen him since, to make it up.</p>
+<p>JULIA What was his offence?</p>
+<p>LYDIA Nothing at all!--But, I don&#x27;t know how it was, as often as we had been together, we had never had a quarrel, and, somehow, I was afraid he would never give me an opportunity. So, last Thursday, I wrote a letter to myself, to inform myself that Beverley was at that time paying his addresses to another woman. I signed it your friend unknown, showed it to Beverley, charged him with his falsehood, put myself in a violent passion, and vowed I&#x27;d never see him more.</p>
+<p>JULIA And you let him depart so, and have not seen him since?</p>
+<p>LYDIA &#x27;Twas the next day my aunt found the matter out. I intended only to have teased him three days and a half, and now I&#x27;ve lost him for ever.</p>
+<p>JULIA If he is as deserving and sincere as you have represented him to me, he will never give you up so. Yet consider, Lydia, you tell me he is but an ensign, and you have thirty thousand pounds.</p>
+<p>LYDIA But you know I lose most of my fortune if I marry without my aunt&#x27;s consent, till of age; and that is what I have determined to do, ever since I knew the penalty. Nor could I love the man who would wish to wait a day for the alternative.</p>
+<p>JULIA Nay, this is caprice!</p>
+<p>LYDIA What, does Julia tax me with caprice?--I thought her lover Faulkland had inured her to it.</p>
+<p>JULIA I do not love even his faults.</p>
+<p>LYDIA But apropos--you have sent to him, I suppose?</p>
+<p>JULIA Not yet, upon my word--nor has he the least idea of my being in Bath. Sir Anthony&#x27;s resolution was so sudden, I could not inform him of it.</p>
+<p>LYDIA Well, Julia, you are your own mistress, (though under the protection of Sir Anthony), yet have you, for this long year, been a slave to the caprice, the whim, the jealousy of this ungrateful Faulkland, who will ever delay assuming the right of a husband, while you suffer him to be equally imperious as a lover.</p>
+<p>JULIA Nay, you are wrong entirely. We were contracted before my father&#x27;s death. That, and some consequent embarrassments, have delayed what I know to be my Faulkland&#x27;s most ardent wish. He is too generous to trifle on such a point:--and for his character, you wrong him there, too. No, Lydia, he is too proud, too noble to be jealous; if he is captious, &#x27;tis without dissembling; if fretful, without rudeness. Unused to the fopperies of love, he is negligent of the little duties expected from a lover--but being unhackneyed in the passion, his affection is ardent and sincere; and as it engrosses his whole soul, he expects every thought and emotion of his mistress to move in unison with his. Yet, though his pride calls for this full return, his humility makes him undervalue those qualities in him which would entitle him to it; and not feeling why he should be loved to the degree he wishes, he still suspects that he is not loved enough. This temper, I must own, has cost me many unhappy hours; but I have learned to think myself his debtor, for those imperfections which arise from the ardour of his attachment.</p>
+<p>LYDIA Well, I cannot blame you for defending him. But tell me candidly, Julia, had he never saved your life, do you think you should have been attached to him as you are?--Believe me, the rude blast that overset your boat was a prosperous gale of love to him.</p>
+<p>JULIA Gratitude may have strengthened my attachment to Mr. Faulkland, but I loved him before he had preserved me; yet surely that alone were an obligation sufficient.</p>
+<p>LYDIA Obligation! why a water spaniel would have done as much!--Well, I should never think of giving my heart to a man because he could swim.</p>
+<p>JULIA Come, Lydia, you are too inconsiderate.</p>
+<p>LYDIA Nay, I do but jest.--What&#x27;s here?</p>
+<p>[Re-enter LUCY in a hurry.]</p>
+<p>LUCY O ma&#x27;am, here is Sir Anthony Absolute just come home with your aunt.</p>
+<p>LYDIA They&#x27;ll not come here.--Lucy, do you watch.</p>
+<p>[Exit LUCY.]</p>
+<p>JULIA Yet I must go. Sir Anthony does not know I am here, and if we meet, he&#x27;ll detain me, to show me the town. I&#x27;ll take another opportunity of paying my respects to Mrs. Malaprop, when she shall treat me, as long as she chooses, with her select words so ingeniously misapplied, without being mispronounced.</p>
+<p>[Re-enter LUCY.]</p>
+<p>LUCY O Lud! ma&#x27;am, they are both coming up stairs.</p>
+<p>LYDIA Well, I&#x27;ll not detain you, coz.--Adieu, my dear Julia. I&#x27;m sure you are in haste to send to Faulkland.--There--through my room you&#x27;ll find another staircase.</p>
+<p>JULIA Adieu! [Embraces LYDIA, and exit.]</p>
+<p>LYDIA Here, my dear Lucy, hide these books. Quick, quick!--Fling Peregrine Pickle under the toilet--throw Roderick Random into the closet--put The Innocent Adultery into The Whole Duty of Man--thrust Lord Aimworth under the sofa--cram Ovid behind the bolster--there--put The Man of Feeling into your pocket--so, so--now lay Mrs. Chapone in sight, and leave Fordyce&#x27;s Sermons open on the table.</p>
+<p>LUCY O burn it, ma&#x27;am! the hair-dresser has torn away as far as Proper Pride.</p>
+<p>LYDIA Never mind--open at Sobriety.--Fling me Lord Chesterfields Letters.--Now for &#x27;em.</p>
+<p>[Exit LUCY.]</p>
+<p>[Enter Mrs. MALAPROP, and Sir ANTHONY ABSOLUTE.]</p>
+<p>Mrs. MALAPROP There, Sir Anthony, there sits the deliberate simpleton who wants to disgrace her family, and lavish herself on a fellow not worth a shilling.</p>
+<p>LYDIA Madam, I thought you once----</p>
+<p>Mrs. MALAPROP You thought, miss! I don&#x27;t know any business you have to think at all--thought does not become a young woman. But the point we would request of you is, that you will promise to forget this fellow--to illiterate him, I say, quite from your memory.</p>
+<p>LYDIA Ah, madam! our memories are independent of our wills. It is not so easy to forget.</p>
+<p>Mrs. MALAPROP But I say it is, miss; there is nothing on earth so easy as to forget, if a person chooses to set about it. I&#x27;m sure I have as much forgot your poor dear uncle as if he had never existed--and I thought it my duty so to do; and let me tell you, Lydia, these violent memories don&#x27;t become a young woman.</p>
+<p>Sir ANTHONY Why sure she won&#x27;t pretend to remember what she&#x27;s ordered not!--ay, this comes of her reading!</p>
+<p>LYDIA What crime, madam, have I committed, to be treated thus?</p>
+<p>Mrs. MALAPROP Now don&#x27;t attempt to extirpate yourself from the matter; you know I have proof controvertible of it.--But tell me, will you promise to do as you&#x27;re bid? Will you take a husband of your friends&#x27; choosing?</p>
+<p>LYDIA Madam, I must tell you plainly, that had I no preferment for any one else, the choice you have made would be my aversion.</p>
+<p>Mrs. MALAPROP What business have you, miss, with preference and aversion? They don&#x27;t become a young woman; and you ought to know, that as both always wear off, &#x27;tis safest in matrimony to begin with a little aversion. I am sure I hated your poor dear uncle before marriage as if he&#x27;d been a blackamoor--and yet, miss, you are sensible what a wife I made!--and when it pleased Heaven to release me from him, &#x27;tis unknown what tears I shed!--But suppose we were going to give you another choice, will you promise us to give up this Beverley?</p>
+<p>LYDIA Could I belie my thoughts so far as to give that promise, my actions would certainly as far belie my words.</p>
+<p>Mrs. MALAPROP Take yourself to your room.--You are fit company for nothing but your own ill-humours.</p>
+<p>LYDIA Willingly, ma&#x27;am--I cannot change for the worse. [Exit.]</p>
+<p>Mrs. MALAPROP There&#x27;s a little intricate hussy for you!</p>
+<p>Sir ANTHONY It is not to be wondered at, ma&#x27;am,--all this is the natural consequence of teaching girls to read. Had I a thousand daughters, by Heaven! I&#x27;d as soon have them taught the black art as their alphabet!</p>
+<p>Mrs. MALAPROP Nay, nay, Sir Anthony, you are an absolute misanthropy.</p>
+<p>Sir ANTHONY In my way hither, Mrs. Malaprop, I observed your niece&#x27;s maid coming forth from a circulating library!--She had a book in each hand--they were half-bound volumes, with marble covers!--From that moment I guessed how full of duty I should see her mistress!</p>
+<p>Mrs. MALAPROP Those are vile places, indeed!</p>
+<p>Sir ANTHONY Madam, a circulating library in a town is as an evergreen tree of diabolical knowledge! It blossoms through the year!--And depend on it, Mrs. Malaprop, that they who are so fond of handling the leaves, will long for the fruit at last.</p>
+<p>Mrs. MALAPROP Fy, fy, Sir Anthony! you surely speak laconically.</p>
+<p>Sir ANTHONY Why, Mrs. Malaprop, in moderation now, what would you have a woman know?</p>
+<p>Mrs. MALAPROP Observe me, Sir Anthony. I would by no means wish a daughter of mine to be a progeny of learning; I don&#x27;t think so much learning becomes a young woman; for instance, I would never let her meddle with Greek, or Hebrew, or algebra, or simony, or fluxions, or paradoxes, or such inflammatory branches of learning--neither would it be necessary for her to handle any of your mathematical, astronomical, diabolical instruments.--But, Sir Anthony, I would send her, at nine years old, to a boarding-school, in order to learn a little ingenuity and artifice. Then, sir, she should have a supercilious knowledge in accounts;--and as she grew up, I would have her instructed in geometry, that she might know something of the contagious countries;--but above all, Sir Anthony, she should be mistress of orthodoxy, that she might not mis-spell, and mis-pronounce words so shamefully as girls usually do; and likewise that she might reprehend the true meaning of what she is saying. This, Sir Anthony, is what I would have a woman know;--and I don&#x27;t think there is a superstitious article in it.</p>
+<p>Sir ANTHONY Well, well, Mrs. Malaprop, I will dispute the point no further with you; though I must confess, that you are a truly moderate and polite arguer, for almost every third word you say is on my side of the question. But, Mrs. Malaprop, to the more important point in debate--you say you have no objection to my proposal?</p>
+<p>Mrs. MALAPROP None, I assure you. I am under no positive engagement with Mr. Acres, and as Lydia is so obstinate against him, perhaps your son may have better success.</p>
+<p>Sir ANTHONY Well, madam, I will write for the boy directly. He knows not a syllable of this yet, though I have for some time had the proposal in my head. He is at present with his regiment.</p>
+<p>Mrs. MALAPROP We have never seen your son, Sir Anthony; but I hope no objection on his side.</p>
+<p>Sir ANTHONY Objection!--let him object if he dare!--No, no, Mrs. Malaprop, Jack knows that the least demur puts me in a frenzy directly. My process was always very simple--in their younger days, &#x27;twas &quot;Jack, do this&quot;;--if he demurred, I knocked him down--and if he grumbled at that, I always sent him out of the room.</p>
+<p>Mrs. MALAPROP Ay, and the properest way, o&#x27; my conscience!--nothing is so conciliating to young people as severity.--Well, Sir Anthony, I shall give Mr. Acres his discharge, and prepare Lydia to receive your son&#x27;s invocations;--and I hope you will represent her to the captain as an object not altogether illegible.</p>
+<p>Sir ANTHONY Madam, I will handle the subject prudently.--Well, I must leave you; and let me beg you, Mrs. Malaprop, to enforce this matter roundly to the girl.--Take my advice--keep a tight hand: if she rejects this proposal, clap her under lock and key; and if you were just to let the servants forget to bring her dinner for three or four days, you can&#x27;t conceive how she&#x27;d come about. [Exit.]</p>
+<p>Mrs. MALAPROP Well, at any rate, I shall be glad to get her from under my intuition. She has somehow discovered my partiality for Sir Lucius O&#x27;Trigger--sure, Lucy can&#x27;t have betrayed me!--No, the girl is such a simpleton, I should have made her confess it.--Lucy!--Lucy!--[Calls.] Had she been one of your artificial ones, I should never have trusted her.</p>
+<p>[Re-enter LUCY.]</p>
+<p>LUCY Did you call, ma&#x27;am?</p>
+<p>Mrs. MALAPROP Yes, girl.--Did you see Sir Lucius while you was out?</p>
+<p>LUCY No, indeed, ma&#x27;am, not a glimpse of him.</p>
+<p>Mrs. MALAPROP You are sure, Lucy, that you never mentioned----</p>
+<p>LUCY Oh gemini! I&#x27;d sooner cut my tongue out.</p>
+<p>Mrs. MALAPROP Well, don&#x27;t let your simplicity be imposed on.</p>
+<p>LUCY No, ma&#x27;am.</p>
+<p>Mrs. MALAPROP So, come to me presently, and I&#x27;ll give you another letter to Sir Lucius; but mind, Lucy--if ever you betray what you are entrusted with (unless it be other people&#x27;s secrets to me), you forfeit my malevolence for ever; and your being a simpleton shall be no excuse for your locality. [Exit.]</p>
+<p>LUCY Ha! ha! ha!--So, my dear Simplicity, let me give you a little respite.--[Altering her manner.] Let girls in my station be as fond as they please of appearing expert, and knowing in their trusts; commend me to a mask of silliness, and a pair of sharp eyes for my own interest under it!--Let me see to what account have I turned my simplicity lately.--[Looks at a paper.] For abetting Miss Lydia Languish in a design of running away with an ensign!--in money, sundry times, twelve pound twelve; gowns, five; hats, ruffles, caps, &amp;c., &amp;c., numberless!--From the said ensign, within this last month, six guineas and a half.--About a quarter&#x27;s pay!--Item, from Mrs. Malaprop, for betraying the young people to her--when I found matters were likely to be discovered--two guineas, and a black paduasoy.--Item, from Mr. Acres, for carrying divers letters--which I never delivered--two guineas, and a pair of buckles.--Item, from Sir Lucius O&#x27;Trigger, three crowns, two gold pocket-pieces, and a silver snuff-box!--Well done, Simplicity!--Yet I was forced to make my Hibernian believe, that he was corresponding, not with the aunt, but with the niece; for though not over rich, I found he had too much pride and delicacy to sacrifice the feelings of a gentleman to the necessities of his fortune. [Exit.]</p>
+<p>* * * * * * * * * * *</p>
+<h2 class="chapter" id="c7">Act II</h2>
+<p>* * * * * * *</p>
+<h2 class="chapter" id="c8">Scene I.--CAPTAIN ABSOLUTE&#x27;s Lodgings. [CAPTAIN ABSOLUTE and FAG.]</h2>
+<p>FAG Sir, while I was there Sir Anthony came in: I told him you had sent me to inquire after his health, and to know if he was at leisure to see you.</p>
+<p>ABSOLUTE And what did he say, on hearing I was at Bath?</p>
+<p>FAG Sir, in my life I never saw an elderly gentleman more astonished! He started back two or three paces, rapped out a dozen interjectural oaths, and asked, what the devil had brought you here.</p>
+<p>ABSOLUTE Well, sir, and what did you say?</p>
+<p>FAG Oh, I lied, sir--I forgot the precise lie; but you may depend on&#x27;t, he got no truth from me. Yet, with submission, for fear of blunders in future, I should be glad to fix what has brought us to Bath; in order that we may lie a little consistently. Sir Anthony&#x27;s servants were curious, sir, very curious indeed.</p>
+<p>ABSOLUTE You have said nothing to them?</p>
+<p>FAG Oh, not a word, sir,--not a word! Mr. Thomas, indeed, the coachman (whom I take to be the discreetest of whips)----</p>
+<p>ABSOLUTE &#x27;Sdeath!--you rascal! you have not trusted him!</p>
+<p>FAG Oh, no, sir--no--no--not a syllable, upon my veracity!--He was, indeed, a little inquisitive; but I was sly, sir--devilish sly! My master (said I), honest Thomas (you know, sir, one says honest to one&#x27;s inferiors,) is come to Bath to recruit--Yes, sir, I said to recruit--and whether for men, money, or constitution, you know, sir, is nothing to him, nor any one else.</p>
+<p>ABSOLUTE Well, recruit will do--let it be so.</p>
+<p>FAG Oh, sir, recruit will do surprisingly--indeed, to give the thing an air, I told Thomas, that your honour had already enlisted five disbanded chairmen, seven minority waiters, and thirteen billiard-markers.</p>
+<p>ABSOLUTE You blockhead, never say more than is necessary.</p>
+<p>FAG I beg pardon, sir--I beg pardon--but, with submission, a lie is nothing unless one supports it. Sir, whenever I draw on my invention for a good current lie, I always forge indorsements as well as the bill.</p>
+<p>ABSOLUTE Well, take care you don&#x27;t hurt your credit, by offering too much security.--Is Mr. Faulkland returned?</p>
+<p>FAG He is above, sir, changing his dress.</p>
+<p>ABSOLUTE Can you tell whether he has been informed of Sir Anthony and Miss Melville&#x27;s arrival?</p>
+<p>FAG I fancy not, sir; he has seen no one since he came in but his gentleman, who was with him at Bristol.--I think, sir, I hear Mr. Faulkland coming down----</p>
+<p>ABSOLUTE Go, tell him I am here.</p>
+<p>FAG Yes, sir.--[Going.] I beg pardon, sir, but should Sir Anthony call, you will do me the favour to remember that we are recruiting, if you please.</p>
+<p>ABSOLUTE Well, well.</p>
+<p>FAG And, in tenderness to my character, if your honour could bring in the chairmen and waiters, I should esteem it as an obligation; for though I never scruple a lie to serve my master, yet it hurts one&#x27;s conscience to be found out. [Exit.]</p>
+<p>ABSOLUTE Now for my whimsical friend--if he does not know that his mistress is here, I&#x27;ll tease him a little before I tell him----</p>
+<p>[Enter FAULKLAND.]</p>
+<p>Faulkland, you&#x27;re welcome to Bath again; you are punctual in your return.</p>
+<p>FAULKLAND Yes; I had nothing to detain me, when I had finished the business I went on. Well, what news since I left you? how stand matters between you and Lydia?</p>
+<p>ABSOLUTE Faith, much as they were; I have not seen her since our quarrel; however, I expect to be recalled every hour.</p>
+<p>FAULKLAND Why don&#x27;t you persuade her to go off with you at once?</p>
+<p>ABSOLUTE What, and lose two-thirds of her fortune? you forget that, my friend.--No, no, I could have brought her to that long ago.</p>
+<p>FAULKLAND Nay then, you trifle too long--if you are sure of her, propose to the aunt in your own character, and write to Sir Anthony for his consent.</p>
+<p>ABSOLUTE Softly, softly; for though I am convinced my little Lydia would elope with me as Ensign Beverley, yet am I by no means certain that she would take me with the impediment of our friends&#x27; consent, a regular humdrum wedding, and the reversion of a good fortune on my side: no, no; I must prepare her gradually for the discovery, and make myself necessary to her, before I risk it.--Well, but Faulkland, you&#x27;ll dine with us to-day at the hotel?</p>
+<p>FAULKLAND Indeed I cannot; I am not in spirits to be of such a party.</p>
+<p>ABSOLUTE By heavens! I shall forswear your company. You are the most teasing, captious, incorrigible lover!--Do love like a man.</p>
+<p>FAULKLAND I own I am unfit for company.</p>
+<p>ABSOLUTE Am I not a lover; ay, and a romantic one too? Yet do I carry every where with me such a confounded farrago of doubts, fears, hopes, wishes, and all the flimsy furniture of a country miss&#x27;s brain!</p>
+<p>FAULKLAND Ah! Jack, your heart and soul are not, like mine, fixed immutably on one only object. You throw for a large stake, but losing, you could stake and throw again;--but I have set my sum of happiness on this cast, and not to succeed, were to be stripped of all.</p>
+<p>ABSOLUTE But, for heaven&#x27;s sake! what grounds for apprehension can your whimsical brain conjure up at present?</p>
+<p>FAULKLAND What grounds for apprehension, did you say? Heavens! are there not a thousand! I fear for her spirits--her health--her life!--My absence may fret her; her anxiety for my return, her fears for me may oppress her gentle temper: and for her health, does not every hour bring me cause to be alarmed? If it rains, some shower may even then have chilled her delicate frame! If the wind be keen, some rude blast may have affected her! The heat of noon, the dews of the evening, may endanger the life of her, for whom only I value mine. O Jack! when delicate and feeling souls are separated, there is not a feature in the sky, not a movement of the elements, not an aspiration of the breeze, but hints some cause for a lover&#x27;s apprehension!</p>
+<p>ABSOLUTE Ay, but we may choose whether we will take the hint or not.--So, then, Faulkland, if you were convinced that Julia were well and in spirits, you would be entirely content?</p>
+<p>FAULKLAND I should be happy beyond measure--I am anxious only for that.</p>
+<p>ABSOLUTE Then to cure your anxiety at once--Miss Melville is in perfect health, and is at this moment in Bath.</p>
+<p>FAULKLAND Nay, Jack--don&#x27;t trifle with me.</p>
+<p>ABSOLUTE She is arrived here with my father within this hour.</p>
+<p>FAULKLAND Can you be serious?</p>
+<p>ABSOLUTE I thought you knew Sir Anthony better than to be surprised at a sudden whim of this kind.--Seriously, then, it is as I tell you--upon my honour.</p>
+<p>FAULKLAND My dear friend!--Hollo, Du-Peigne! my hat.--My dear Jack--now nothing on earth can give me a moment&#x27;s uneasiness.</p>
+<p>[Re-enter FAG.]</p>
+<p>FAG Sir, Mr. Acres, just arrived, is below.</p>
+<p>ABSOLUTE Stay, Faulkland, this Acres lives within a mile of Sir Anthony, and he shall tell you how your mistress has been ever since you left her.--Fag, show this gentleman up.</p>
+<p>[Exit FAG.]</p>
+<p>FAULKLAND What, is he much acquainted in the family?</p>
+<p>ABSOLUTE Oh, very intimate: I insist on your not going: besides, his character will divert you.</p>
+<p>FAULKLAND Well, I should like to ask him a few questions.</p>
+<p>ABSOLUTE He is likewise a rival of mine--that is, of my other self&#x27;s, for he does not think his friend Captain Absolute ever saw the lady in question; and it is ridiculous enough to hear him complain to me of one Beverley, a concealed skulking rival, who----</p>
+<p>FAULKLAND Hush!--he&#x27;s here.</p>
+<p>[Enter ACRES.]</p>
+<p>ACRES Ha! my dear friend, noble captain, and honest Jack, how do&#x27;st thou? just arrived, faith, as you see.--Sir, your humble servant.--Warm work on the roads, Jack!--Odds whips and wheels! I&#x27;ve travelled like a comet, with a tail of dust all the way as long as the Mall.</p>
+<p>ABSOLUTE Ah! Bob, you are indeed an eccentric planet, but we know your attraction hither.--Give me leave to introduce Mr. Faulkland to you; Mr. Faulkland, Mr. Acres.</p>
+<p>ACRES Sir, I am most heartily glad to see you: sir, I solicit your connections.--Hey, Jack--what, this is Mr. Faulkland, who----</p>
+<p>ABSOLUTE Ay, Bob, Miss Melville&#x27;s Mr. Faulkland.</p>
+<p>ACRES Odso! she and your father can be but just arrived before me:--I suppose you have seen them. Ah! Mr. Faulkland, you are indeed a happy man.</p>
+<p>FAULKLAND I have not seen Miss Melville yet, sir;--I hope she enjoyed full health and spirits in Devonshire?</p>
+<p>ACRES Never knew her better in my life, sir,--never better. Odds blushes and blooms! she has been as healthy as the German Spa.</p>
+<p>FAULKLAND Indeed! I did hear that she had been a little indisposed.</p>
+<p>ACRES False, false, sir--only said to vex you: quite the reverse, I assure you.</p>
+<p>FAULKLAND There, Jack, you see she has the advantage of me; I had almost fretted myself ill.</p>
+<p>ABSOLUTE Now are you angry with your mistress for not having been sick?</p>
+<p>FAULKLAND No, no, you misunderstand me: yet surely a little trifling indisposition is not an unnatural consequence of absence from those we love.--Now confess--isn&#x27;t there something unkind in this violent, robust, unfeeling health?</p>
+<p>ABSOLUTE Oh, it was very unkind of her to be well in your absence, to be sure!</p>
+<p>ACRES Good apartments, Jack.</p>
+<p>FAULKLAND Well, sir, but you was saying that Miss Melville has been so exceedingly well--what then she has been merry and gay, I suppose?--Always in spirits--hey?</p>
+<p>ACRES Merry, odds crickets! she has been the belle and spirit of the company wherever she has been--so lively and entertaining! so full of wit and humour!</p>
+<p>FAULKLAND There, Jack, there.--Oh, by my soul! there is an innate levity in woman, that nothing can overcome.--What! happy, and I away!</p>
+<p>ABSOLUTE Have done.--How foolish this is! just now you were only apprehensive for your mistress&#x27; spirits.</p>
+<p>FAULKLAND Why, Jack, have I been the joy and spirit of the company?</p>
+<p>ABSOLUTE No, indeed, you have not.</p>
+<p>FAULKLAND Have I been lively and entertaining?</p>
+<p>ABSOLUTE Oh, upon my word, I acquit you.</p>
+<p>FAULKLAND Have I been full of wit and humour?</p>
+<p>ABSOLUTE No, faith, to do you justice, you have been confoundedly stupid indeed.</p>
+<p>ACRES What&#x27;s the matter with the gentleman?</p>
+<p>ABSOLUTE He is only expressing his great satisfaction at hearing that Julia has been so well and happy--that&#x27;s all--hey, Faulkland?</p>
+<p>FAULKLAND Oh! I am rejoiced to hear it--yes, yes, she has a happy disposition!</p>
+<p>ACRES That she has indeed--then she is so accomplished--so sweet a voice--so expert at her harpsichord--such a mistress of flat and sharp, squallante, rumblante, and quiverante!--There was this time month--odds minims and crotchets! how she did chirrup at Mrs. Piano&#x27;s concert!</p>
+<p>FAULKLAND There again, what say you to this? you see she has been all mirth and song--not a thought of me!</p>
+<p>ABSOLUTE Pho! man, is not music the food of love?</p>
+<p>FAULKLAND Well, well, it may be so.--Pray, Mr.--, what&#x27;s his damned name?--Do you remember what songs Miss Melville sung?</p>
+<p>ACRES Not I indeed.</p>
+<p>ABSOLUTE Stay, now, they were some pretty melancholy purling-stream airs, I warrant; perhaps you may recollect;--did she sing, When absent from my soul&#x27;s delight?</p>
+<p>ACRES No, that wa&#x27;n&#x27;t it.</p>
+<p>ABSOLUTE Or, Go, gentle gales! [Sings.]</p>
+<p>ACRES Oh, no! nothing like it. Odds! now I recollect one of them--My heart&#x27;s my own, my will is free. [Sings.]</p>
+<p>FAULKLAND Fool! fool that I am! to fix all my happiness on such a trifler! &#x27;Sdeath! to make herself the pipe and ballad-monger of a circle! to soothe her light heart with catches and glees!--What can you say to this, sir?</p>
+<p>ABSOLUTE Why, that I should be glad to hear my mistress had been so merry, sir.</p>
+<p>FAULKLAND Nay, nay, nay--I&#x27;m not sorry that she has been happy--no, no, I am glad of that--I would not have had her sad or sick--yet surely a sympathetic heart would have shown itself even in the choice of a song--she might have been temperately healthy, and somehow, plaintively gay;--but she has been dancing too, I doubt not!</p>
+<p>ACRES What does the gentleman say about dancing?</p>
+<p>ABSOLUTE He says the lady we speak of dances as well as she sings.</p>
+<p>ACRES Ay, truly, does she--there was at our last race ball----</p>
+<p>FAULKLAND Hell and the devil! There!--there--I told you so! I told you so! Oh! she thrives in my absence!--Dancing! but her whole feelings have been in opposition with mine;--I have been anxious, silent, pensive, sedentary--my days have been hours of care, my nights of watchfulness.--She has been all health! spirit! laugh! song! dance!--Oh! damned, damned levity!</p>
+<p>ABSOLUTE For Heaven&#x27;s sake, Faulkland, don&#x27;t expose yourself so!--Suppose she has danced, what then?--does not the ceremony of society often oblige ----</p>
+<p>FAULKLAND Well, well, I&#x27;ll contain myself--perhaps as you say--for form sake.--What, Mr. Acres, you were praising Miss Melville&#x27;s manner of dancing a minuet--hey?</p>
+<p>ACRES Oh, I dare insure her for that--but what I was going to speak of was her country-dancing. Odds swimmings! she has such an air with her!</p>
+<p>FAULKLAND Now disappointment on her!--Defend this, Absolute; why don&#x27;t you defend this?--Country-dances! jigs and reels! am I to blame now? A minuet I could have forgiven--I should not have minded that--I say I should not have regarded a minuet--but country-dances!--Zounds! had she made one in a cotillion--I believe I could have forgiven even that--but to be monkey-led for a night!--to run the gauntlet through a string of amorous palming puppies!--to show paces like a managed filly!--Oh, Jack, there never can be but one man in the world whom a truly modest and delicate woman ought to pair with in a country-dance; and, even then, the rest of the couples should be her great-uncles and aunts!</p>
+<p>ABSOLUTE Ay, to be sure!--grandfathers and grandmothers!</p>
+<p>FAULKLAND If there be but one vicious mind in the set, &#x27;twill spread like a contagion--the action of their pulse beats to the lascivious movement of the jig--their quivering, warm-breathed sighs impregnate the very air--the atmosphere becomes electrical to love, and each amorous spark darts through every link of the chain!--I must leave you--I own I am somewhat flurried--and that confounded looby has perceived it. [Going.]</p>
+<p>ABSOLUTE Nay, but stay, Faulkland, and thank Mr. Acres for his good news.</p>
+<p>FAULKLAND Damn his news! [Exit.]</p>
+<p>ABSOLUTE Ha! ha! ha! poor Faulkland five minutes since--&quot;nothing on earth could give him a moment&#x27;s uneasiness!&quot;</p>
+<p>ACRES The gentleman wa&#x27;n&#x27;t angry at my praising his mistress, was he?</p>
+<p>ABSOLUTE A little jealous, I believe, Bob.</p>
+<p>ACRES You don&#x27;t say so? Ha! ha! jealous of me--that&#x27;s a good joke.</p>
+<p>ABSOLUTE There&#x27;s nothing strange in that, Bob; let me tell you, that sprightly grace and insinuating manner of yours will do some mischief among the girls here.</p>
+<p>ACRES Ah! you joke--ha! ha! mischief--ha! ha! but you know I am not my own property, my dear Lydia has forestalled me. She could never abide me in the country, because I used to dress so badly--but odds frogs and tambours! I shan&#x27;t take matters so here, now ancient madam has no voice in it: I&#x27;ll make my old clothes know who&#x27;s master. I shall straightway cashier the hunting-frock, and render my leather breeches incapable. My hair has been in training some time.</p>
+<p>ABSOLUTE Indeed!</p>
+<p>ACRES Ay--and tho&#x27;ff the side curls are a little restive, my hind-part takes it very kindly.</p>
+<p>ABSOLUTE Ah, you&#x27;ll polish, I doubt not.</p>
+<p>ACRES Absolutely I propose so--then if I can find out this Ensign Beverley, odds triggers and flints! I&#x27;ll make him know the difference o&#x27;t.</p>
+<p>ABSOLUTE Spoke like a man! But pray, Bob, I observe you have got an odd kind of a new method of swearing----</p>
+<p>ACRES Ha! ha! you&#x27;ve taken notice of it--&#x27;tis genteel, isn&#x27;t it!--I didn&#x27;t invent it myself though; but a commander in our militia, a great scholar, I assure you, says that there is no meaning in the common oaths, and that nothing but their antiquity makes them respectable;--because, he says, the ancients would never stick to an oath or two, but would say, by Jove! or by Bacchus! or by Mars! or by Venus! or by Pallas, according to the sentiment: so that to swear with propriety, says my little major, the oath should be an echo to the sense; and this we call the oath referential, or sentimental swearing--ha! ha! &#x27;tis genteel, isn&#x27;t it?</p>
+<p>ABSOLUTE Very genteel, and very new, indeed!--and I dare say will supplant all other figures of imprecation.</p>
+<p>ACRES Ay, ay, the best terms will grow obsolete.--Damns have had their day.</p>
+<p>[Re-enter FAG.]</p>
+<p>FAG Sir, there is a gentleman below desires to see you.--Shall I show him into the parlour?</p>
+<p>ABSOLUTE Ay--you may.</p>
+<p>ACRES Well, I must be gone----</p>
+<p>ABSOLUTE Stay; who is it, Fag?</p>
+<p>FAG Your father, sir.</p>
+<p>ABSOLUTE You puppy, why didn&#x27;t you show him up directly?</p>
+<p>[Exit FAG.]</p>
+<p>ACRES You have business with Sir Anthony.--I expect a message from Mrs. Malaprop at my lodgings. I have sent also to my dear friend Sir Lucius O&#x27;Trigger. Adieu, Jack! we must meet at night, when you shall give me a dozen bumpers to little Lydia.</p>
+<p>ABSOLUTE That I will with all my heart.----</p>
+<p>[Exit ACRES.]</p>
+<p>Now for a parental lecture--I hope he has heard nothing of the business that brought me here--I wish the gout had held him fast in Devonshire, with all my soul!</p>
+<p>[Enter Sir ANTHONY ABSOLUTE.]</p>
+<p>Sir I am delighted to see you here; looking so well! your sudden arrival at Bath made me apprehensive for your health.</p>
+<p>Sir ANTHONY Very apprehensive, I dare say, Jack.--What, you are recruiting here, hey?</p>
+<p>ABSOLUTE Yes, sir, I am on duty.</p>
+<p>Sir ANTHONY Well, Jack, I am glad to see you, though I did not expect it, for I was going to write to you on a little matter of business.--Jack, I have been considering that I grow old and infirm, and shall probably not trouble you long.</p>
+<p>ABSOLUTE Pardon me, sir, I never saw you look more strong and hearty; and I pray frequently that you may continue so.</p>
+<p>Sir ANTHONY I hope your prayers may be heard, with all my heart. Well, then, Jack, I have been considering that I am so strong and hearty I may continue to plague you a long time. Now, Jack, I am sensible that the income of your commission, and what I have hitherto allowed you, is but a small pittance for a lad of your spirit.</p>
+<p>ABSOLUTE Sir, you are very good.</p>
+<p>Sir ANTHONY And it is my wish, while yet I live, to have my boy make some figure in the world. I have resolved, therefore, to fix you at once in a noble independence.</p>
+<p>ABSOLUTE Sir, your kindness overpowers me--such generosity makes the gratitude of reason more lively than the sensations even of filial affection.</p>
+<p>Sir ANTHONY I am glad you are so sensible of my attention--and you shall be master of a large estate in a few weeks.</p>
+<p>ABSOLUTE Let my future life, sir, speak my gratitude; I cannot express the sense I have of your munificence.--Yet, sir, I presume you would not wish me to quit the army?</p>
+<p>Sir ANTHONY Oh, that shall be as your wife chooses.</p>
+<p>ABSOLUTE My wife, sir!</p>
+<p>Sir ANTHONY Ay, ay, settle that between you--settle that between you.</p>
+<p>ABSOLUTE A wife, sir, did you say?</p>
+<p>Sir ANTHONY Ay, a wife--why, did not I mention her before?</p>
+<p>ABSOLUTE Not a word of her, sir.</p>
+<p>Sir ANTHONY Odd so!--I mustn&#x27;t forget her though.--Yes, Jack, the independence I was talking of is by marriage--the fortune is saddled with a wife--but I suppose that makes no difference.</p>
+<p>ABSOLUTE Sir! sir!--you amaze me!</p>
+<p>Sir ANTHONY Why, what the devil&#x27;s the matter with the fool? Just now you were all gratitude and duty.</p>
+<p>ABSOLUTE I was, sir,--you talked to me of independence and a fortune, but not a word of a wife.</p>
+<p>Sir ANTHONY Why--what difference does that make? Odds life, sir! if you have the estate, you must take it with the live stock on it, as it stands.</p>
+<p>ABSOLUTE If my happiness is to be the price, I must beg leave to decline the purchase.--Pray, sir, who is the lady?</p>
+<p>Sir ANTHONY What&#x27;s that to you, sir?--Come, give me your promise to love, and to marry her directly.</p>
+<p>ABSOLUTE Sure, sir, this is not very reasonable, to summon my affections for a lady I know nothing of!</p>
+<p>Sir ANTHONY I am sure, sir, &#x27;tis more unreasonable in you to object to a lady you know nothing of.</p>
+<p>ABSOLUTE Then, sir, I must tell you plainly that my inclinations are fixed on another--my heart is engaged to an angel.</p>
+<p>Sir ANTHONY Then pray let it send an excuse. It is very sorry--but business prevents its waiting on her.</p>
+<p>ABSOLUTE But my vows are pledged to her.</p>
+<p>Sir ANTHONY Let her foreclose, Jack; let her foreclose; they are not worth redeeming; besides, you have the angel&#x27;s vows in exchange, I suppose; so there can be no loss there.</p>
+<p>ABSOLUTE You must excuse me, sir, if I tell you, once for all, that in this point I cannot obey you.</p>
+<p>Sir ANTHONY Hark&#x27;ee, Jack;--I have heard you for some time with patience--I have been cool--quite cool; but take care--you know I am compliance itself--when I am not thwarted;--no one more easily led--when I have my own way;--but don&#x27;t put me in a frenzy.</p>
+<p>ABSOLUTE Sir, I must repeat it--in this I cannot obey you.</p>
+<p>Sir ANTHONY Now damn me! if ever I call you Jack again while I live!</p>
+<p>ABSOLUTE Nay, sir, but hear me.</p>
+<p>Sir ANTHONY Sir, I won&#x27;t hear a word--not a word! not one word! so give me your promise by a nod--and I&#x27;ll tell you what, Jack--I mean, you dog--if you don&#x27;t, by----</p>
+<p>ABSOLUTE What, sir, promise to link myself to some mass of ugliness! to----</p>
+<p>Sir ANTHONY Zounds! sirrah! the lady shall be as ugly as I choose: she shall have a hump on each shoulder; she shall be as crooked as the crescent; her one eye shall roll like the bull&#x27;s in Cox&#x27;s Museum; she shall have a skin like a mummy, and the beard of a Jew--she shall be all this, sirrah!--yet I will make you ogle her all day, and sit up all night to write sonnets on her beauty.</p>
+<p>ABSOLUTE This is reason and moderation indeed!</p>
+<p>Sir ANTHONY None of your sneering, puppy! no grinning, jackanapes!</p>
+<p>ABSOLUTE Indeed, sir, I never was in a worse humour for mirth in my life.</p>
+<p>Sir ANTHONY &#x27;Tis false, sir, I know you are laughing in your sleeve; I know you&#x27;ll grin when I am gone, sirrah!</p>
+<p>ABSOLUTE Sir, I hope I know my duty better.</p>
+<p>Sir ANTHONY None of your passion, sir! none of your violence, if you please!--It won&#x27;t do with me, I promise you.</p>
+<p>ABSOLUTE Indeed, sir, I never was cooler in my life.</p>
+<p>Sir ANTHONY &#x27;Tis a confounded lie!--I know you are in a passion in your heart; I know you are, you hypocritical young dog! but it won&#x27;t do.</p>
+<p>ABSOLUTE Nay, sir, upon my word----</p>
+<p>Sir ANTHONY So you will fly out! can&#x27;t you be cool like me? What the devil good can passion do?--Passion is of no service, you impudent, insolent, overbearing reprobate!--There, you sneer again! don&#x27;t provoke me!--but you rely upon the mildness of my temper--you do, you dog! you play upon the meekness of my disposition!--Yet take care--the patience of a saint may be overcome at last!--but mark! I give you six hours and a half to consider of this: if you then agree, without any condition, to do every thing on earth that I choose, why--confound you! I may in time forgive you.--If not, zounds! don&#x27;t enter the same hemisphere with me! don&#x27;t dare to breathe the same air, or use the same light with me; but get an atmosphere and a sun of your own! I&#x27;ll strip you of your commission; I&#x27;ll lodge a five-and-threepence in the hands of trustees, and you shall live on the interest.--I&#x27;ll disown you, I&#x27;ll disinherit you, I&#x27;ll unget you! and damn me! if ever I call you Jack again! [Exit.]</p>
+<p>ABSOLUTE Mild, gentle, considerate father--I kiss your hands!--What a tender method of giving his opinion in these matters Sir Anthony has! I dare not trust him with the truth.--I wonder what old wealthy hag it is that he wants to bestow on me!--Yet he married himself for love! and was in his youth a bold intriguer, and a gay companion!</p>
+<p>[Re-enter FAG.]</p>
+<p>FAG Assuredly, sir, your father is wrath to a degree; he comes down stairs eight or ten steps at a time--muttering, growling, and thumping the banisters all the way: I and the cook&#x27;s dog stand bowing at the door--rap! he gives me a stroke on the head with his cane; bids me carry that to my master; then kicking the poor turnspit into the area, damns us all, for a puppy triumvirate!--Upon my credit, sir, were I in your place, and found my father such very bad company, I should certainly drop his acquaintance.</p>
+<p>ABSOLUTE Cease your impertinence, sir, at present.--Did you come in for nothing more?--Stand out of the way! [Pushes him aside, and exit.]</p>
+<p>FAG So! Sir Anthony trims my master; he is afraid to reply to his father--then vents his spleen on poor Fag!--When one is vexed by one person, to revenge one&#x27;s self on another, who happens to come in the way, is the vilest injustice! Ah! it shows the worst temper--the basest----</p>
+<p>[Enter BOY.]</p>
+<p>BOY Mr. Fag! Mr. Fag! your master calls you.</p>
+<p>FAG Well, you little dirty puppy, you need not bawl so!--The meanest disposition! the----</p>
+<p>BOY Quick, quick, Mr. Fag!</p>
+<p>FAG Quick! quick! you impudent jackanapes! am I to be commanded by you too? you little impertinent, insolent, kitchen-bred---- [Exit kicking and beating him.]</p>
+<p>* * * * * * *</p>
+<h2 class="chapter" id="c9">Scene II.--The North Parade. [Enter LUCY.]</h2>
+<p>LUCY So--I shall have another rival to add to my mistress&#x27;s list--Captain Absolute. However, I shall not enter his name till my purse has received notice in form. Poor Acres is dismissed!--Well, I have done him a last friendly office, in letting him know that Beverley was here before him.--Sir Lucius is generally more punctual, when he expects to hear from his dear Delia, as he calls her: I wonder he&#x27;s not here!--I have a little scruple of conscience from this deceit; though I should not be paid so well, if my hero knew that Delia was near fifty, and her own mistress.</p>
+<p>[Enter Sir LUCIUS O&#x27;TRIGGER.]</p>
+<p>Sir LUCIUS Ha! my little ambassadress--upon my conscience, I have been looking for you; I have been on the South Parade this half hour.</p>
+<p>LUCY [Speaking simply.] O gemini! and I have been waiting for your worship here on the North.</p>
+<p>Sir LUCIUS Faith!--may be that was the reason we did not meet; and it is very comical too, how you could go out and I not see you--for I was only taking a nap at the Parade Coffee-house, and I chose the window on purpose that I might not miss you.</p>
+<p>LUCY My stars! Now I&#x27;d wager a sixpence I went by while you were asleep.</p>
+<p>Sir LUCIUS Sure enough it must have been so--and I never dreamt it was so late, till I waked. Well, but my little girl, have you got nothing for me?</p>
+<p>LUCY Yes, but I have--I&#x27;ve got a letter for you in my pocket.</p>
+<p>Sir LUCIUS O faith! I guessed you weren&#x27;t come empty-handed--Well--let me see what the dear creature says.</p>
+<p>LUCY There, Sir Lucius. [Gives him a letter.]</p>
+<p>Sir LUCIUS [Reads.] Sir--there is often a sudden incentive impulse in love, that has a greater induction than years of domestic combination: such was the commotion I felt at the first superfluous view of Sir Lucius O&#x27;Trigger.--Very pretty, upon my word.--Female punctuation forbids me to say more, yet let me add, that it will give me joy infallible to find Sir Lucius worthy the last criterion of my affections. Delia. Upon my conscience! Lucy, your lady is a great mistress of language. Faith, she&#x27;s quite the queen of the dictionary!--for the devil a word dare refuse coming at her call--though one would think it was quite out of hearing.</p>
+<p>LUCY Ay, sir, a lady of her experience----</p>
+<p>Sir LUCIUS Experience! what, at seventeen?</p>
+<p>LUCY O true, sir--but then she reads so--my stars! how she will read off hand!</p>
+<p>Sir LUCIUS Faith, she must be very deep read to write this way--though she is rather an arbitrary writer too--for here are a great many poor words pressed into the service of this note, that would get their habeas corpus from any court in Christendom.</p>
+<p>LUCY Ah! Sir Lucius, if you were to hear how she talks of you!</p>
+<p>Sir LUCIUS Oh, tell her I&#x27;ll make her the best husband in the world, and Lady O&#x27;Trigger into the bargain!--But we must get the old gentlewoman&#x27;s consent--and do every thing fairly.</p>
+<p>LUCY Nay, Sir Lucius, I thought you wa&#x27;n&#x27;t rich enough to be so nice!</p>
+<p>Sir LUCIUS Upon my word, young woman, you have hit it:--I am so poor, that I can&#x27;t afford to do a dirty action.--If I did not want money, I&#x27;d steal your mistress and her fortune with a great deal of pleasure.--However, my pretty girl, [Gives her money] here&#x27;s a little something to buy you a ribbon; and meet me in the evening, and I&#x27;ll give you an answer to this. So, hussy, take a kiss beforehand to put you in mind. [Kisses her.]</p>
+<p>LUCY O Lud! Sir Lucius--I never seed such a gemman! My lady won&#x27;t like you if you&#x27;re so impudent.</p>
+<p>Sir LUCIUS Faith she will, Lucy!--That same--pho! what&#x27;s the name of it?--modesty--is a quality in a lover more praised by the women than liked; so, if your mistress asks you whether Sir Lucius ever gave you a kiss, tell her fifty--my dear.</p>
+<p>LUCY What, would you have me tell her a lie?</p>
+<p>Sir LUCIUS Ah, then, you baggage! I&#x27;ll make it a truth presently.</p>
+<p>LUCY For shame now! here is some one coming.</p>
+<p>Sir LUCIUS Oh, faith, I&#x27;ll quiet your conscience! [Exit, humming a tune.]</p>
+<p>[Enter FAG.]</p>
+<p>FAG So, so, ma&#x27;am! I humbly beg pardon.</p>
+<p>LUCY O Lud! now, Mr. Fag--you flurry one so.</p>
+<p>FAG Come, come, Lucy, here&#x27;s no one by--so a little less simplicity, with a grain or two more sincerity, if you please.--You play false with us, madam.--I saw you give the baronet a letter.--My master shall know this--and if he don&#x27;t call him out, I will.</p>
+<p>LUCY Ha! ha! ha! you gentlemen&#x27;s gentlemen are so hasty.--That letter was from Mrs. Malaprop, simpleton.--She is taken with Sir Lucius&#x27;s address.</p>
+<p>FAG How! what tastes some people have!--Why, I suppose I have walked by her window a hundred times.--But what says our young lady? any message to my master?</p>
+<p>LUCY Sad news. Mr. Fag.--A worse rival than Acres! Sir Anthony Absolute has proposed his son.</p>
+<p>FAG What, Captain Absolute?</p>
+<p>LUCY Even so--I overheard it all.</p>
+<p>FAG Ha! ha! ha! very good, faith. Good-bye, Lucy, I must away with this news.</p>
+<p>LUCY Well, you may laugh--but it is true, I assure you.--[Going.] But, Mr. Fag, tell your master not to be cast down by this.</p>
+<p>FAG Oh, he&#x27;ll be so disconsolate!</p>
+<p>LUCY And charge him not to think of quarrelling with young Absolute.</p>
+<p>FAG Never fear! never fear!</p>
+<p>LUCY Be sure--bid him keep up his spirits.</p>
+<p>FAG We will--we will.</p>
+<p>[Exeunt severally.]</p>
+<p>* * * * * * * * * * *</p>
+<h2 class="chapter" id="c10">Act III</h2>
+<p>* * * * * * *</p>
+<h2 class="chapter" id="c11">Scene I--The North Parade. [Enter CAPTAIN ABSOLUTE.]</h2>
+<p>ABSOLUTE &#x27;Tis just as Fag told me, indeed. Whimsical enough, faith! My father wants to force me to marry the very girl I am plotting to run away with! He must not know of my connection with her yet awhile. He has too summary a method of proceeding in these matters. However, I&#x27;ll read my recantation instantly. My conversion is something sudden, indeed--but I can assure him it is very sincere. So, so--here he comes. He looks plaguy gruff. [Steps aside.]</p>
+<p>[Enter Sir ANTHONY ABSOLUTE.]</p>
+<p>Sir ANTHONY No--I&#x27;ll die sooner than forgive him. Die, did I say? I&#x27;ll live these fifty years to plague him. At our last meeting, his impudence had almost put me out of temper. An obstinate, passionate, self-willed boy! Who can he take after? This is my return for getting him before all his brothers and sisters!--for putting him, at twelve years old, into a marching regiment, and allowing him fifty pounds a year, besides his pay, ever since! But I have done with him; he&#x27;s anybody&#x27;s son for me. I never will see him more, never--never--never.</p>
+<p>ABSOLUTE [Aside, coming forward.] Now for a penitential face.</p>
+<p>Sir ANTHONY Fellow, get out of my way!</p>
+<p>ABSOLUTE Sir, you see a penitent before you.</p>
+<p>Sir ANTHONY I see an impudent scoundrel before me.</p>
+<p>ABSOLUTE A sincere penitent. I am come, sir, to acknowledge my error, and to submit entirely to your will.</p>
+<p>Sir ANTHONY What&#x27;s that?</p>
+<p>ABSOLUTE I have been revolving, and reflecting, and considering on your past goodness, and kindness, and condescension to me.</p>
+<p>Sir ANTHONY Well, sir?</p>
+<p>ABSOLUTE I have been likewise weighing and balancing what you were pleased to mention concerning duty, and obedience, and authority.</p>
+<p>Sir ANTHONY Well, puppy?</p>
+<p>ABSOLUTE Why then, sir, the result of my reflections is--a resolution to sacrifice every inclination of my own to your satisfaction.</p>
+<p>Sir ANTHONY Why now you talk sense--absolute sense--I never heard anything more sensible in my life. Confound you! you shall be Jack again.</p>
+<p>ABSOLUTE I am happy in the appellation.</p>
+<p>Sir ANTHONY Why then, Jack, my dear Jack, I will now inform you who the lady really is. Nothing but your passion and violence, you silly fellow, prevented my telling you at first. Prepare, Jack, for wonder and rapture--prepare. What think you of Miss Lydia Languish?</p>
+<p>ABSOLUTE Languish! What, the Languishes of Worcestershire?</p>
+<p>Sir ANTHONY Worcestershire! no. Did you never meet Mrs. Malaprop and her niece, Miss Languish, who came into our country just before you were last ordered to your regiment?</p>
+<p>ABSOLUTE Malaprop! Languish! I don&#x27;t remember ever to have heard the names before. Yet, stay--I think I do recollect something. Languish! Languish! She squints, don&#x27;t she? A little red-haired girl?</p>
+<p>Sir ANTHONY Squints! A red-haired girl! Zounds! no.</p>
+<p>ABSOLUTE Then I must have forgot; it can&#x27;t be the same person.</p>
+<p>Sir ANTHONY Jack! Jack! what think you of blooming, love-breathing seventeen?</p>
+<p>ABSOLUTE As to that, sir, I am quite indifferent. If I can please you in the matter, &#x27;tis all I desire.</p>
+<p>Sir ANTHONY Nay, but Jack, such eyes! such eyes! so innocently wild! so bashfully irresolute! not a glance but speaks and kindles some thought of love! Then, Jack, her cheeks! her cheeks, Jack! so deeply blushing at the insinuations of her tell-tale eyes! Then, Jack, her lips! O, Jack, lips smiling at their own discretion; and if not smiling, more sweetly pouting; more lovely in sullenness!</p>
+<p>ABSOLUTE [Aside.] That&#x27;s she, indeed. Well done, old gentleman.</p>
+<p>Sir ANTHONY Then, Jack, her neck! O Jack! Jack!</p>
+<p>ABSOLUTE And which is to be mine, sir, the niece, or the aunt?</p>
+<p>Sir ANTHONY Why, you unfeeling, insensible puppy, I despise you! When I was of your age, such a description would have made me fly like a rocket! The aunt indeed! Odds life! when I ran away with your mother, I would not have touched anything old or ugly to gain an empire.</p>
+<p>ABSOLUTE Not to please your father, sir?</p>
+<p>Sir ANTHONY To please my father! zounds! not to please--Oh, my father--odd so!--yes--yes; if my father indeed had desired--that&#x27;s quite another matter. Though he wa&#x27;n&#x27;t the indulgent father that I am, Jack.</p>
+<p>ABSOLUTE I dare say not, sir.</p>
+<p>Sir ANTHONY But, Jack, you are not sorry to find your mistress is so beautiful?</p>
+<p>ABSOLUTE Sir, I repeat it--if I please you in this affair, &#x27;tis all I desire. Not that I think a woman the worse for being handsome; but, sir, if you please to recollect, you before hinted something about a hump or two, one eye, and a few more graces of that kind--now, without being very nice, I own I should rather choose a wife of mine to have the usual number of limbs, and a limited quantity of back: and though one eye may be very agreeable, yet as the prejudice has always run in favour of two, I would not wish to affect a singularity in that article.</p>
+<p>Sir ANTHONY What a phlegmatic sot it is! Why, sirrah, you&#x27;re an anchorite!--a vile, insensible stock. You a soldier!--you&#x27;re a walking block, fit only to dust the company&#x27;s regimentals on! Odds life! I have a great mind to marry the girl myself!</p>
+<p>ABSOLUTE I am entirely at your disposal, sir: if you should think of addressing Miss Languish yourself, I suppose you would have me marry the aunt; or if you should change your mind, and take the old lady--&#x27;tis the same to me--I&#x27;ll marry the niece.</p>
+<p>Sir ANTHONY Upon my word, Jack, thou&#x27;rt either a very great hypocrite, or--but, come, I know your indifference on such a subject must be all a lie--I&#x27;m sure it must--come, now--damn your demure face!--come, confess Jack--you have been lying, ha&#x27;n&#x27;t you? You have been playing the hypocrite, hey!--I&#x27;ll never forgive you, if you ha&#x27;n&#x27;t been lying and playing the hypocrite.</p>
+<p>ABSOLUTE I&#x27;m sorry, sir, that the respect and duty which I bear to you should be so mistaken.</p>
+<p>Sir ANTHONY Hang your respect and duty! But come along with me, I&#x27;ll write a note to Mrs. Malaprop, and you shall visit the lady directly. Her eyes shall be the Promethean torch to you--come along, I&#x27;ll never forgive you, if you don&#x27;t come back stark mad with rapture and impatience--if you don&#x27;t, egad, I will marry the girl myself!</p>
+<p>[Exeunt.]</p>
+<p>* * * * * * *</p>
+<h2 class="chapter" id="c12">Scene II--JULIA&#x27;s Dressing-room. [FAULKLAND discovered alone.]</h2>
+<p>FAULKLAND They told me Julia would return directly; I wonder she is not yet come! How mean does this captious, unsatisfied temper of mine appear to my cooler judgment! Yet I know not that I indulge it in any other point: but on this one subject, and to this one subject, whom I think I love beyond my life, I am ever ungenerously fretful and madly capricious! I am conscious of it--yet I cannot correct myself! What tender honest joy sparkled in her eyes when we met! how delicate was the warmth of her expression! I was ashamed to appear less happy--though I had come resolved to wear a face of coolness and upbraiding. Sir Anthony&#x27;s presence prevented my proposed expostulations: yet I must be satisfied that she has not been so very happy in my absence. She is coming! Yes!--I know the nimbleness of her tread, when she thinks her impatient Faulkland counts the moments of her stay.</p>
+<p>[Enter JULIA.]</p>
+<p>JULIA I had not hoped to see you again so soon.</p>
+<p>FAULKLAND Could I, Julia, be contented with my first welcome--restrained as we were by the presence of a third person?</p>
+<p>JULIA O Faulkland, when your kindness can make me thus happy, let me not think that I discovered something of coldness in your first salutation.</p>
+<p>FAULKLAND &#x27;Twas but your fancy, Julia. I was rejoiced to see you--to see you in such health. Sure I had no cause for coldness?</p>
+<p>JULIA Nay, then, I see you have taken something ill. You must not conceal from me what it is.</p>
+<p>FAULKLAND Well, then--shall I own to you that my joy at hearing of your health and arrival here, by your neighbour Acres, was somewhat damped by his dwelling much on the high spirits you had enjoyed in Devonshire--on your mirth--your singing--dancing, and I know not what! For such is my temper, Julia, that I should regard every mirthful moment in your absence as a treason to constancy. The mutual tear that steals down the cheek of parting lovers is a compact, that no smile shall live there till they meet again.</p>
+<p>JULIA Must I never cease to tax my Faulkland with this teasing minute caprice? Can the idle reports of a silly boor weigh in your breast against my tried affections?</p>
+<p>FAULKLAND They have no weight with me, Julia: No, no--I am happy if you have been so--yet only say, that you did not sing with mirth--say that you thought of Faulkland in the dance.</p>
+<p>JULIA I never can be happy in your absence. If I wear a countenance of content, it is to show that my mind holds no doubt of my Faulkland&#x27;s truth. If I seemed sad, it were to make malice triumph; and say, that I had fixed my heart on one, who left me to lament his roving, and my own credulity. Believe me, Faulkland, I mean not to upbraid you, when I say, that I have often dressed sorrow in smiles, lest my friends should guess whose unkindness had caused my tears.</p>
+<p>FAULKLAND You were ever all goodness to me. Oh, I am a brute, when I but admit a doubt of your true constancy!</p>
+<p>JULIA If ever without such cause from you, as I will not suppose possible, you find my affections veering but a point, may I become a proverbial scoff for levity and base ingratitude.</p>
+<p>FAULKLAND Ah! Julia, that last word is grating to me. I would I had no title to your gratitude! Search your heart, Julia; perhaps what you have mistaken for love, is but the warm effusion of a too thankful heart.</p>
+<p>JULIA For what quality must I love you?</p>
+<p>FAULKLAND For no quality! To regard me for any quality of mind or understanding, were only to esteem me. And for person--I have often wished myself deformed, to be convinced that I owed no obligation there for any part of your affection.</p>
+<p>JULIA Where nature has bestowed a show of nice attention in the features of a man, he should laugh at it as misplaced. I have seen men, who in this vain article, perhaps, might rank above you; but my heart has never asked my eyes if it were so or not.</p>
+<p>FAULKLAND Now this is not well from you, Julia--I despise person in a man--yet if you loved me as I wish, though I were an AEthiop, you&#x27;d think none so fair.</p>
+<p>JULIA I see you are determined to be unkind! The contract which my poor father bound us in gives you more than a lover&#x27;s privilege.</p>
+<p>FAULKLAND Again, Julia, you raise ideas that feed and justify my doubts. I would not have been more free--no--I am proud of my restraint. Yet--yet--perhaps your high respect alone for this solemn compact has fettered your inclinations, which else had made a worthier choice. How shall I be sure, had you remained unbound in thought and promise, that I should still have been the object of your persevering love?</p>
+<p>JULIA Then try me now. Let us be free as strangers as to what is past: my heart will not feel more liberty!</p>
+<p>FAULKLAND There now! so hasty, Julia! so anxious to be free! If your love for me were fixed and ardent, you would not lose your hold, even though I wished it!</p>
+<p>JULIA Oh! you torture me to the heart! I cannot bear it.</p>
+<p>FAULKLAND I do not mean to distress you. If I loved you less I should never give you an uneasy moment. But hear me. All my fretful doubts arise from this. Women are not used to weigh and separate the motives of their affections: the cold dictates of prudence, gratitude, or filial duty, may sometimes be mistaken for the pleadings of the heart. I would not boast--yet let me say, that I have neither age, person, nor character, to found dislike on; my fortune such as few ladies could be charged with indiscretion in the match. O Julia! when love receives such countenance from prudence, nice minds will be suspicious of its birth.</p>
+<p>JULIA I know not whither your insinuations would tend:--but as they seem pressing to insult me, I will spare you the regret of having done so.--I have given you no cause for this! [Exit in tears.]</p>
+<p>FAULKLAND In tears! Stay, Julia: stay but for a moment.--The door is fastened!--Julia!--my soul--but for one moment!--I hear her sobbing!--&#x27;Sdeath! what a brute am I to use her thus! Yet stay!--Ay--she is coming now:--how little resolution there is in a woman!--how a few soft words can turn them!--No, faith!--she is not coming either.--Why, Julia--my love--say but that you forgive me--come but to tell me that--now this is being too resentful. Stay! she is coming too--I thought she would--no steadiness in anything: her going away must have been a mere trick then--she shan&#x27;t see that I was hurt by it.--I&#x27;ll affect indifference--[Hums a tune; then listens.] No--zounds! she&#x27;s not coming!--nor don&#x27;t intend it, I suppose.--This is not steadiness, but obstinacy! Yet I deserve it.--What, after so long an absence to quarrel with her tenderness!--&#x27;twas barbarous and unmanly!--I should be ashamed to see her now.--I&#x27;ll wait till her just resentment is abated--and when I distress her so again, may I lose her for ever! and be linked instead to some antique virago, whose gnawing passions, and long hoarded spleen, shall make me curse my folly half the day and all the night. [Exit.]</p>
+<p>* * * * * * *</p>
+<h2 class="chapter" id="c13">Scene III--Mrs. MALAPROP&#x27;s Lodgings. [Mrs. MALAPROP, with a letter in her hand, and CAPTAIN ABSOLUTE.]</h2>
+<p>Mrs. MALAPROP Your being Sir Anthony&#x27;s son, captain, would itself be a sufficient accommodation; but from the ingenuity of your appearance, I am convinced you deserve the character here given of you.</p>
+<p>ABSOLUTE Permit me to say, madam, that as I never yet have had the pleasure of seeing Miss Languish, my principal inducement in this affair at present is the honour of being allied to Mrs. Malaprop; of whose intellectual accomplishments, elegant manners, and unaffected learning, no tongue is silent.</p>
+<p>Mrs. MALAPROP Sir, you do me infinite honour! I beg, captain, you&#x27;ll be seated.--[They sit.] Ah! few gentlemen, now-a-days, know how to value the ineffectual qualities in a woman! few think how a little knowledge becomes a gentlewoman!--Men have no sense now but for the worthless flower of beauty!</p>
+<p>ABSOLUTE It is but too true, indeed, ma&#x27;am;--yet I fear our ladies should share the blame--they think our admiration of beauty so great, that knowledge in them would be superfluous. Thus, like garden-trees, they seldom show fruit, till time has robbed them of the more specious blossom.--Few, like Mrs. Malaprop and the orange-tree, are rich in both at once!</p>
+<p>Mrs. MALAPROP Sir, you overpower me with good-breeding.--He is the very pine-apple of politeness!--You are not ignorant, captain, that this giddy girl has somehow contrived to fix her affections on a beggarly, strolling, eaves-dropping ensign, whom none of us have seen, and nobody knows anything of.</p>
+<p>ABSOLUTE Oh, I have heard the silly affair before.--I&#x27;m not at all prejudiced against her on that account.</p>
+<p>Mrs. MALAPROP You are very good and very considerate, captain. I am sure I have done everything in my power since I exploded the affair; long ago I laid my positive conjunctions on her, never to think on the fellow again;--I have since laid Sir Anthony&#x27;s preposition before her; but, I am sorry to say, she seems resolved to decline every particle that I enjoin her.</p>
+<p>ABSOLUTE It must be very distressing, indeed, ma&#x27;am.</p>
+<p>Mrs. MALAPROP Oh! it gives me the hydrostatics to such a degree.--I thought she had persisted from corresponding with him; but, behold, this very day, I have interceded another letter from the fellow; I believe I have it in my pocket.</p>
+<p>ABSOLUTE [Aside.] Oh, the devil! my last note.</p>
+<p>Mrs. MALAPROP Ay, here it is.</p>
+<p>ABSOLUTE [Aside.] Ay, my note indeed! O the little traitress Lucy.</p>
+<p>Mrs. MALAPROP There, perhaps you may know the writing. [Gives him the letter.]</p>
+<p>ABSOLUTE I think I have seen the hand before--yes, I certainly must have seen this hand before----</p>
+<p>Mrs. MALAPROP Nay, but read it, captain.</p>
+<p>ABSOLUTE [Reads.] My soul&#x27;s idol, my adored Lydia!--Very tender, indeed!</p>
+<p>Mrs. MALAPROP Tender! ay, and profane too, o&#x27; my conscience.</p>
+<p>ABSOLUTE [Reads.] I am excessively alarmed at the intelligence you send me, the more so as my new rival----</p>
+<p>Mrs. MALAPROP That&#x27;s you, sir.</p>
+<p>ABSOLUTE [Reads.] Has universally the character of being an accomplished gentleman and a man of honour.--Well, that&#x27;s handsome enough.</p>
+<p>Mrs. MALAPROP Oh, the fellow has some design in writing so.</p>
+<p>ABSOLUTE That he had, I&#x27;ll answer for him, ma&#x27;am.</p>
+<p>Mrs. MALAPROP But go on, sir--you&#x27;ll see presently.</p>
+<p>ABSOLUTE [Reads.] As for the old weather-beaten she-dragon who guards you--Who can he mean by that?</p>
+<p>Mrs. MALAPROP Me, sir!--me!--he means me!--There--what do you think now?--but go on a little further.</p>
+<p>ABSOLUTE Impudent scoundrel!--[Reads.] it shall go hard but I will elude her vigilance, as I am told that the same ridiculous vanity, which makes her dress up her coarse features, and deck her dull chat with hard words which she don&#x27;t understand----</p>
+<p>Mrs. MALAPROP There, sir, an attack upon my language! what do you think of that?--an aspersion upon my parts of speech! was ever such a brute! Sure, if I reprehend any thing in this world, it is the use of my oracular tongue, and a nice derangement of epitaphs!</p>
+<p>ABSOLUTE He deserves to be hanged and quartered! let me see--[Reads.] same ridiculous vanity----</p>
+<p>Mrs. MALAPROP You need not read it again, sir.</p>
+<p>ABSOLUTE I beg pardon, ma&#x27;am.--[Reads.] does also lay her open to the grossest deceptions from flattery and pretended admiration--an impudent coxcomb!--so that I have a scheme to see you shortly with the old harridan&#x27;s consent, and even to make her a go-between in our interview.--Was ever such assurance!</p>
+<p>Mrs. MALAPROP Did you ever hear anything like it?--he&#x27;ll elude my vigilance, will he--yes, yes! ha! ha! he&#x27;s very likely to enter these doors;--we&#x27;ll try who can plot best!</p>
+<p>ABSOLUTE So we will, ma&#x27;am--so we will! Ha! ha! ha! a conceited puppy, ha! ha! ha!--Well, but Mrs. Malaprop, as the girl seems so infatuated by this fellow, suppose you were to wink at her corresponding with him for a little time--let her even plot an elopement with him--then do you connive at her escape--while I, just in the nick, will have the fellow laid by the heels, and fairly contrive to carry her off in his stead.</p>
+<p>Mrs. MALAPROP I am delighted with the scheme; never was anything better perpetrated!</p>
+<p>ABSOLUTE But, pray, could not I see the lady for a few minutes now?--I should like to try her temper a little.</p>
+<p>Mrs. MALAPROP Why, I don&#x27;t know--I doubt she is not prepared for a visit of this kind. There is a decorum in these matters.</p>
+<p>ABSOLUTE O Lord! she won&#x27;t mind me--only tell her Beverley----</p>
+<p>Mrs. MALAPROP Sir!</p>
+<p>ABSOLUTE [Aside.] Gently, good tongue.</p>
+<p>Mrs. MALAPROP What did you say of Beverley?</p>
+<p>ABSOLUTE Oh, I was going to propose that you should tell her, by way of jest, that it was Beverley who was below; she&#x27;d come down fast enough then--ha! ha! ha!</p>
+<p>Mrs. MALAPROP &#x27;Twould be a trick she well deserves; besides, you know the fellow tells her he&#x27;ll get my consent to see her--ha! ha! Let him if he can, I say again. Lydia, come down here!--[Calling.] He&#x27;ll make me a go-between in their interviews!--ha! ha! ha! Come down, I say, Lydia! I don&#x27;t wonder at your laughing, ha! ha! ha! his impudence is truly ridiculous.</p>
+<p>ABSOLUTE &#x27;Tis very ridiculous, upon my soul, ma&#x27;am, ha! ha! ha!</p>
+<p>Mrs. MALAPROP The little hussy won&#x27;t hear. Well, I&#x27;ll go and tell her at once who it is--she shall know that Captain Absolute is come to wait on her. And I&#x27;ll make her behave as becomes a young woman.</p>
+<p>ABSOLUTE As you please, ma&#x27;am.</p>
+<p>Mrs. MALAPROP For the present, captain, your servant. Ah! you&#x27;ve not done laughing yet, I see--elude my vigilance; yes, yes; ha! ha! ha! [Exit.]</p>
+<p>ABSOLUTE Ha! ha! ha! one would think now that I might throw off all disguise at once, and seize my prize with security; but such is Lydia&#x27;s caprice, that to undeceive were probably to lose her. I&#x27;ll see whether she knows me. [Walks aside, and seems engaged in looking at the pictures.]</p>
+<p>[Enter LYDIA.]</p>
+<p>LYDIA What a scene am I now to go through! surely nothing can be more dreadful than to be obliged to listen to the loathsome addresses of a stranger to one&#x27;s heart. I have heard of girls persecuted as I am, who have appealed in behalf of their favoured lover to the generosity of his rival--suppose I were to try it--there stands the hated rival--an officer too!--but oh, how unlike my Beverley! I wonder he don&#x27;t begin--truly he seems a very negligent wooer!--quite at his ease, upon my word!--I&#x27;ll speak first--Mr. Absolute.</p>
+<p>ABSOLUTE Ma&#x27;am. [Turns round.]</p>
+<p>LYDIA O heavens! Beverley!</p>
+<p>ABSOLUTE Hush;--hush, my life! softly! be not surprised!</p>
+<p>LYDIA I am so astonished! and so terrified! and so overjoyed!--for Heaven&#x27;s sake! how came you here?</p>
+<p>ABSOLUTE Briefly, I have deceived your aunt--I was informed that my new rival was to visit here this evening, and contriving to have him kept away, have passed myself on her for Captain Absolute.</p>
+<p>LYDIA O charming! And she really takes you for young Absolute?</p>
+<p>ABSOLUTE Oh, she&#x27;s convinced of it.</p>
+<p>LYDIA Ha! ha! ha! I can&#x27;t forbear laughing to think how her sagacity is overreached!</p>
+<p>ABSOLUTE But we trifle with our precious moments--such another opportunity may not occur; then let me now conjure my kind, my condescending angel, to fix the time when I may rescue her from undeserving persecution, and with a licensed warmth plead for my reward.</p>
+<p>LYDIA Will you then, Beverley, consent to forfeit that portion of my paltry wealth?--that burden on the wings of love?</p>
+<p>ABSOLUTE Oh, come to me--rich only thus--in loveliness! Bring no portion to me but thy love--&#x27;twill be generous in you, Lydia--for well you know, it is the only dower your poor Beverley can repay.</p>
+<p>LYDIA [Aside.] How persuasive are his words!--how charming will poverty be with him!</p>
+<p>ABSOLUTE Ah! my soul, what a life will we then live! Love shall be our idol and support! we will worship him with a monastic strictness; abjuring all worldly toys, to centre every thought and action there. Proud of calamity, we will enjoy the wreck of wealth; while the surrounding gloom of adversity shall make the flame of our pure love show doubly bright. By Heavens! I would fling all goods of fortune from me with a prodigal hand, to enjoy the scene where I might clasp my Lydia to my bosom, and say, the world affords no smile to me but here--[Embracing her.] [Aside.] If she holds out now, the devil is in it!</p>
+<p>LYDIA [Aside.] Now could I fly with him to the antipodes! but my persecution is not yet come to a crisis.</p>
+<p>[Re-enter Mrs. MALAPROP, listening.]</p>
+<p>Mrs. MALAPROP [Aside.] I am impatient to know how the little hussy deports herself.</p>
+<p>ABSOLUTE So pensive, Lydia!--is then your warmth abated?</p>
+<p>Mrs. MALAPROP [Aside.] Warmth abated!--so!--she has been in a passion, I suppose.</p>
+<p>LYDIA No--nor ever can while I have life.</p>
+<p>Mrs. MALAPROP [Aside.] An ill tempered little devil! She&#x27;ll be in a passion all her life--will she?</p>
+<p>LYDIA Think not the idle threats of my ridiculous aunt can ever have any weight with me.</p>
+<p>Mrs. MALAPROP [Aside.] Very dutiful, upon my word!</p>
+<p>LYDIA Let her choice be Captain Absolute, but Beverley is mine.</p>
+<p>Mrs. MALAPROP [Aside.] I am astonished at her assurance!--to his face--this is to his face!</p>
+<p>ABSOLUTE Thus then let me enforce my suit. [Kneeling.]</p>
+<p>Mrs. MALAPROP [Aside.] Ay, poor young man!--down on his knees entreating for pity!--I can contain no longer.--[Coming forward.] Why, thou vixen!--I have overheard you.</p>
+<p>ABSOLUTE [Aside.] Oh, confound her vigilance!</p>
+<p>Mrs. MALAPROP Captain Absolute, I know not how to apologize for her shocking rudeness.</p>
+<p>ABSOLUTE [Aside.] So all&#x27;s safe, I find.--[Aloud.] I have hopes, madam, that time will bring the young lady----</p>
+<p>Mrs. MALAPROP Oh, there&#x27;s nothing to be hoped for from her! she&#x27;s as headstrong as an allegory on the banks of Nile.</p>
+<p>LYDIA Nay, madam, what do you charge me with now?</p>
+<p>Mrs. MALAPROP Why, thou unblushing rebel--didn&#x27;t you tell this gentleman to his face that you loved another better?--didn&#x27;t you say you never would be his?</p>
+<p>LYDIA No, madam--I did not.</p>
+<p>Mrs. MALAPROP Good heavens! what assurance!--Lydia, Lydia, you ought to know that lying don&#x27;t become a young woman!--Didn&#x27;t you boast that Beverley, that stroller Beverley, possessed your heart?--Tell me that, I say.</p>
+<p>LYDIA &#x27;Tis true, ma&#x27;am, and none but Beverley----</p>
+<p>Mrs. MALAPROP Hold!--hold, Assurance!--you shall not be so rude.</p>
+<p>ABSOLUTE Nay, pray, Mrs. Malaprop, don&#x27;t stop the young lady&#x27;s speech: she&#x27;s very welcome to talk thus--it does not hurt me in the least, I assure you.</p>
+<p>Mrs. MALAPROP You are too good, captain--too amiably patient--but come with me, miss.--Let us see you again soon, captain--remember what we have fixed.</p>
+<p>ABSOLUTE I shall, ma&#x27;am.</p>
+<p>Mrs. MALAPROP Come, take a graceful leave of the gentleman.</p>
+<p>LYDIA May every blessing wait on my Beverley, my loved Bev----</p>
+<p>Mrs. MALAPROP Hussy! I&#x27;ll choke the word in your throat!--come along--come along.</p>
+<p>[Exeunt severally; CAPTAIN ABSOLUTE kissing his hand to LYDIA--Mrs. MALAPROP stopping her from speaking.]</p>
+<p>* * * * * * *</p>
+<h2 class="chapter" id="c14">Scene IV--ACRES&#x27; Lodgings. [ACRES, as just dressed, and DAVID.]</h2>
+<p>ACRES Indeed, David--do you think I become it so?</p>
+<p>DAVID You are quite another creature, believe me, master, by the mass! an&#x27; we&#x27;ve any luck we shall see the Devon mon kerony in all the print-shops in Bath!</p>
+<p>ACRES Dress does make a difference, David.</p>
+<p>DAVID &#x27;Tis all in all, I think.--Difference! why, an&#x27; you were to go now to Clod-Hall, I am certain the old lady wouldn&#x27;t know you: Master Butler wouldn&#x27;t believe his own eyes, and Mrs. Pickle would cry, Lard presarve me! our dairy-maid would come giggling to the door, and I warrant Dolly Tester, your honour&#x27;s favourite, would blush like my waistcoat.--Oons! I&#x27;ll hold a gallon, there ain&#x27;t a dog in the house but would bark, and I question whether Phillis would wag a hair of her tail!</p>
+<p>ACRES Ay, David, there&#x27;s nothing like polishing.</p>
+<p>DAVID So I says of your honour&#x27;s boots; but the boy never heeds me!</p>
+<p>ACRES But, David, has Mr. De-la-grace been here? I must rub up my balancing, and chasing, and boring.</p>
+<p>DAVID I&#x27;ll call again, sir.</p>
+<p>ACRES Do--and see if there are any letters for me at the post-office.</p>
+<p>DAVID I will.--By the mass, I can&#x27;t help looking at your head!--if I hadn&#x27;t been by at the cooking, I wish I may die if I should have known the dish again myself! [Exit.]</p>
+<p>ACRES [Practising a dancing-step.] Sink, slide--coupee.--Confound the first inventors of cotillions! say I--they are as bad as algebra to us country gentlemen--I can walk a minuet easy enough when I am forced!--and I have been accounted a good stick in a country-dance.--Odds jigs and tabors! I never valued your cross-over to couple--figure in--right and left--and I&#x27;d foot it with e&#x27;er a captain in the county!--but these outlandish heathen allemandes and cotillions are quite beyond me!--I shall never prosper at &#x27;em, that&#x27;s sure--mine are true-born English legs--they don&#x27;t understand their curst French lingo!--their pas this, and pas that, and pas t&#x27;other!--damn me! my feet don&#x27;t like to be called paws! no, &#x27;tis certain I have most Antigallican toes!</p>
+<p>[Enter SERVANT.]</p>
+<p>SERVANT Here is Sir Lucius O&#x27;Trigger to wait on you, sir.</p>
+<p>ACRES Show him in.</p>
+<p>[Exit SERVANT.]</p>
+<p>[Enter Sir LUCIUS O&#x27;TRIGGER.]</p>
+<p>Sir LUCIUS Mr. Acres, I am delighted to embrace you.</p>
+<p>ACRES My dear Sir Lucius, I kiss your hands.</p>
+<p>Sir LUCIUS Pray, my friend, what has brought you so suddenly to Bath?</p>
+<p>ACRES Faith! I have followed Cupid&#x27;s Jack-a-lantern, and find myself in a quagmire at last.--In short, I have been very ill used, Sir Lucius.--I don&#x27;t choose to mention names, but look on me as on a very ill-used gentleman.</p>
+<p>Sir LUCIUS Pray what is the case?--I ask no names.</p>
+<p>ACRES Mark me, Sir Lucius, I fall as deep as need be in love with a young lady--her friends take my part--I follow her to Bath--send word of my arrival; and receive answer, that the lady is to be otherwise disposed of.--This, Sir Lucius, I call being ill-used.</p>
+<p>Sir LUCIUS Very ill, upon my conscience.--Pray, can you divine the cause of it?</p>
+<p>ACRES Why, there&#x27;s the matter; she has another lover, one Beverley, who, I am told, is now in Bath.--Odds slanders and lies! he must be at the bottom of it.</p>
+<p>Sir LUCIUS A rival in the case, is there?--and you think he has supplanted you unfairly?</p>
+<p>ACRES Unfairly! to be sure he has. He never could have done it fairly.</p>
+<p>Sir LUCIUS Then sure you know what is to be done!</p>
+<p>ACRES Not I, upon my soul!</p>
+<p>Sir LUCIUS We wear no swords here, but you understand me.</p>
+<p>ACRES What! fight him!</p>
+<p>Sir LUCIUS Ay, to be sure: what can I mean else?</p>
+<p>ACRES But he has given me no provocation.</p>
+<p>Sir LUCIUS Now, I think he has given you the greatest provocation in the world. Can a man commit a more heinous offence against another than to fall in love with the same woman? Oh, by my soul! it is the most unpardonable breach of friendship.</p>
+<p>ACRES Breach of friendship! ay, ay; but I have no acquaintance with this man. I never saw him in my life.</p>
+<p>Sir LUCIUS That&#x27;s no argument at all--he has the less right then to take such a liberty.</p>
+<p>ACRES Gad, that&#x27;s true--I grow full of anger, Sir Lucius!--I fire apace! Odds hilts and blades! I find a man may have a deal of valour in him, and not know it! But couldn&#x27;t I contrive to have a little right of my side?</p>
+<p>Sir LUCIUS What the devil signifies right, when your honour is concerned? Do you think Achilles, or my little Alexander the Great, ever inquired where the right lay? No, by my soul, they drew their broad-swords, and left the lazy sons of peace to settle the justice of it.</p>
+<p>ACRES Your words are a grenadier&#x27;s march to my heart! I believe courage must be catching! I certainly do feel a kind of valour rising as it were--a kind of courage, as I may say.--Odds flints, pans, and triggers! I&#x27;ll challenge him directly.</p>
+<p>Sir LUCIUS Ah, my little friend, if I had Blunderbuss Hall here, I could show you a range of ancestry, in the O&#x27;Trigger line, that would furnish the new room; every one of whom had killed his man!--For though the mansion-house and dirty acres have slipped through my fingers, I thank heaven our honour and the family-pictures are as fresh as ever.</p>
+<p>ACRES O, Sir Lucius! I have had ancestors too!--every man of &#x27;em colonel or captain in the militia!--Odds balls and barrels! say no more--I&#x27;m braced for it. The thunder of your words has soured the milk of human kindness in my breast;--Zounds! as the man in the play says, I could do such deeds!</p>
+<p>Sir LUCIUS Come, come, there must be no passion at all in the case--these things should always be done civilly.</p>
+<p>ACRES I must be in a passion, Sir Lucius--I must be in a rage.--Dear Sir Lucius, let me be in a rage, if you love me. Come, here&#x27;s pen and paper.--[Sits down to write.] I would the ink were red!--Indite, I say, indite!--How shall I begin? Odds bullets and blades! I&#x27;ll write a good bold hand, however.</p>
+<p>Sir LUCIUS Pray compose yourself.</p>
+<p>ACRES Come--now, shall I begin with an oath? Do, Sir Lucius, let me begin with a damme.</p>
+<p>Sir LUCIUS Pho! pho! do the thing decently, and like a Christian. Begin now--Sir ----</p>
+<p>ACRES That&#x27;s too civil by half.</p>
+<p>Sir LUCIUS To prevent the confusion that might arise----</p>
+<p>ACRES Well----</p>
+<p>Sir LUCIUS From our both addressing the same lady----</p>
+<p>ACRES Ay, there&#x27;s the reason--same lady--well----</p>
+<p>Sir LUCIUS I shall expect the honour of your company----</p>
+<p>ACRES Zounds! I&#x27;m not asking him to dinner.</p>
+<p>Sir LUCIUS Pray be easy.</p>
+<p>ACRES Well, then, honour of your company----</p>
+<p>Sir LUCIUS To settle our pretensions----</p>
+<p>ACRES Well.</p>
+<p>Sir LUCIUS Let me see, ay, King&#x27;s-Mead-Fields will do--in King&#x27;s-Mead-Fields.</p>
+<p>ACRES So, that&#x27;s done--Well, I&#x27;ll fold it up presently; my own crest--a hand and dagger shall be the seal.</p>
+<p>Sir LUCIUS You see now this little explanation will put a stop at once to all confusion or misunderstanding that might arise between you.</p>
+<p>ACRES Ay, we fight to prevent any misunderstanding.</p>
+<p>Sir LUCIUS Now, I&#x27;ll leave you to fix your own time.--Take my advice, and you&#x27;ll decide it this evening if you can; then let the worst come of it, &#x27;twill be off your mind to-morrow.</p>
+<p>ACRES Very true.</p>
+<p>Sir LUCIUS So I shall see nothing of you, unless it be by letter, till the evening.--I would do myself the honour to carry your message; but, to tell you a secret, I believe I shall have just such another affair on my own hands. There is a gay captain here, who put a jest on me lately, at the expense of my country, and I only want to fall in with the gentleman, to call him out.</p>
+<p>ACRES By my valour, I should like to see you fight first! Odds life! I should like to see you kill him if it was only to get a little lesson.</p>
+<p>Sir LUCIUS I shall be very proud of instructing you.--Well for the present--but remember now, when you meet your antagonist, do every thing in a mild and agreeable manner.--Let your courage be as keen, but at the same time as polished, as your sword.</p>
+<p>[Exeunt severally.]</p>
+<p>* * * * * * * * * * *</p>
+<h2 class="chapter" id="c15">Act IV</h2>
+<p>* * * * * * *</p>
+<h2 class="chapter" id="c16">Scene I--ACRES&#x27; Lodgings. [ACRES and DAVID.]</h2>
+<p>DAVID Then, by the mass, sir! I would do no such thing--ne&#x27;er a Sir Lucius O&#x27;Trigger in the kingdom should make me fight, when I wasn&#x27;t so minded. Oons! what will the old lady say, when she hears o&#x27;t?</p>
+<p>ACRES Ah! David, if you had heard Sir Lucius!--Odds sparks and flames! he would have roused your valour.</p>
+<p>DAVID Not he, indeed. I hate such bloodthirsty cormorants. Look&#x27;ee, master, if you wanted a bout at boxing, quarter staff, or short-staff, I should never be the man to bid you cry off: but for your curst sharps and snaps, I never knew any good come of &#x27;em.</p>
+<p>ACRES But my honour, David, my honour! I must be very careful of my honour.</p>
+<p>DAVID Ay, by the mass! and I would be very careful of it; and I think in return my honour couldn&#x27;t do less than to be very careful of me.</p>
+<p>ACRES Odds blades! David, no gentleman will ever risk the loss of his honour!</p>
+<p>DAVID I say then, it would be but civil in honour never to risk the loss of a gentleman.--Look&#x27;ee, master, this honour seems to me to be a marvellous false friend: ay, truly, a very courtier-like servant.--Put the case, I was a gentleman (which, thank God, no one can say of me;) well--my honour makes me quarrel with another gentleman of my acquaintance.--So--we fight. (Pleasant enough that!) Boh!--I kill him--(the more&#x27;s my luck!) now, pray who gets the profit of it?--Why, my honour. But put the case that he kills me!--by the mass! I go to the worms, and my honour whips over to my enemy.</p>
+<p>ACRES No, David--in that case!--odds crowns and laurels! your honour follows you to the grave.</p>
+<p>DAVID Now, that&#x27;s just the place where I could make a shift to do without it.</p>
+<p>ACRES Zounds! David, you are a coward!--It doesn&#x27;t become my valour to listen to you.--What, shall I disgrace my ancestors?--Think of that, David--think what it would be to disgrace my ancestors!</p>
+<p>DAVID Under favour, the surest way of not disgracing them, is to keep as long as you can out of their company. Look&#x27;ee now, master, to go to them in such haste--with an ounce of lead in your brains--I should think might as well be let alone. Our ancestors are very good kind of folks; but they are the last people I should choose to have a visiting acquaintance with.</p>
+<p>ACRES But, David, now, you don&#x27;t think there is such very, very, very great danger, hey?--Odds life! people often fight without any mischief done!</p>
+<p>DAVID By the mass, I think &#x27;tis ten to one against you!--Oons! here to meet some lion-headed fellow, I warrant, with his damned double-barrelled swords, and cut-and-thrust pistols!--Lord bless us! it makes me tremble to think o&#x27;t--Those be such desperate bloody-minded weapons! Well, I never could abide &#x27;em!--from a child I never could fancy &#x27;em!--I suppose there an&#x27;t been so merciless a beast in the world as your loaded pistol!</p>
+<p>ACRES Zounds! I won&#x27;t be afraid!--Odds fire and fury! you shan&#x27;t make me afraid.--Here is the challenge, and I have sent for my dear friend Jack Absolute to carry it for me.</p>
+<p>DAVID Ay, i&#x27; the name of mischief, let him be the messenger.--For my part I wouldn&#x27;t lend a hand to it for the best horse in your stable. By the mass! it don&#x27;t look like another letter! It is, as I may say, a designing and malicious-looking letter; and I warrant smells of gunpowder like a soldier&#x27;s pouch!--Oons! I wouldn&#x27;t swear it mayn&#x27;t go off!</p>
+<p>ACRES Out, you poltroon! you ha&#x27;n&#x27;t the valour of a grasshopper.</p>
+<p>DAVID Well, I say no more--&#x27;twill be sad news, to be sure, at Clod-Hall! but I ha&#x27; done.--How Phillis will howl when she hears of it!--Ay, poor bitch, she little thinks what shooting her master&#x27;s going after! And I warrant old Crop, who has carried your honour, field and road, these ten years, will curse the hour he was born. [Whimpering.]</p>
+<p>ACRES It won&#x27;t do, David--I am determined to fight--so get along you coward, while I&#x27;m in the mind.</p>
+<p>[Enter SERVANT.]</p>
+<p>SERVANT Captain Absolute, sir.</p>
+<p>ACRES Oh! show him up.</p>
+<p>[Exit SERVANT.]</p>
+<p>DAVID Well, Heaven send we be all alive this time to-morrow.</p>
+<p>ACRES What&#x27;s that?--Don&#x27;t provoke me, David!</p>
+<p>DAVID Good-bye, master. [Whimpering.]</p>
+<p>ACRES Get along, you cowardly, dastardly, croaking raven!</p>
+<p>[Exit DAVID.]</p>
+<p>[Enter CAPTAIN ABSOLUTE.]</p>
+<p>ABSOLUTE What&#x27;s the matter, Bob?</p>
+<p>ACRES A vile, sheep-hearted blockhead! If I hadn&#x27;t the valour of St. George and the dragon to boot----</p>
+<p>ABSOLUTE But what did you want with me, Bob?</p>
+<p>ACRES Oh!--There---- [Gives him the challenge.]</p>
+<p>ABSOLUTE [Aside.] To Ensign Beverley.--So, what&#x27;s going on now?--[Aloud.] Well, what&#x27;s this?</p>
+<p>ACRES A challenge!</p>
+<p>ABSOLUTE Indeed! Why, you won&#x27;t fight him; will you, Bob?</p>
+<p>ACRES Egad, but I will, Jack. Sir Lucius has wrought me to it. He has left me full of rage--and I&#x27;ll fight this evening, that so much good passion mayn&#x27;t be wasted.</p>
+<p>ABSOLUTE But what have I to do with this?</p>
+<p>ACRES Why, as I think you know something of this fellow, I want you to find him out for me, and give him this mortal defiance.</p>
+<p>ABSOLUTE Well, give it to me, and trust me he gets it.</p>
+<p>ACRES Thank you, my dear friend, my dear Jack; but it is giving you a great deal of trouble.</p>
+<p>ABSOLUTE Not in the least--I beg you won&#x27;t mention it.--No trouble in the world, I assure you.</p>
+<p>ACRES You are very kind.--What it is to have a friend!--You couldn&#x27;t be my second, could you, Jack?</p>
+<p>ABSOLUTE Why no, Bob--not in this affair--it would not be quite so proper.</p>
+<p>ACRES Well, then, I must get my friend Sir Lucius. I shall have your good wishes, however, Jack?</p>
+<p>ABSOLUTE Whenever he meets you, believe me.</p>
+<p>[Re-enter SERVANT.]</p>
+<p>SERVANT Sir Anthony Absolute is below, inquiring for the captain.</p>
+<p>ABSOLUTE I&#x27;ll come instantly.----</p>
+<p>[Exit SERVANT.]</p>
+<p>Well, my little hero, success attend you. [Going.]</p>
+<p>ACRES ----Stay--stay, Jack.--If Beverley should ask you what kind of a man your friend Acres is, do tell him I am a devil of a fellow--will you, Jack?</p>
+<p>ABSOLUTE To be sure I shall. I&#x27;ll say you are a determined dog--hey, Bob!</p>
+<p>ACRES Ah, do, do--and if that frightens him, egad, perhaps he mayn&#x27;t come. So tell him I generally kill a man a week; will you, Jack?</p>
+<p>ABSOLUTE I will, I will; I&#x27;ll say you are called in the country Fighting Bob.</p>
+<p>ACRES Right--right--&#x27;tis all to prevent mischief; for I don&#x27;t want to take his life if I clear my honour.</p>
+<p>ABSOLUTE No!--that&#x27;s very kind of you.</p>
+<p>ACRES Why, you don&#x27;t wish me to kill him--do you, Jack?</p>
+<p>ABSOLUTE No, upon my soul, I do not. But a devil of a fellow, hey? [Going.]</p>
+<p>ACRES True, true--but stay--stay, Jack--you may add, that you never saw me in such a rage before--a most devouring rage!</p>
+<p>ABSOLUTE I will, I will.</p>
+<p>ACRES Remember, Jack--a determined dog!</p>
+<p>ABSOLUTE Ay, ay, Fighting Bob!</p>
+<p>[Exeunt severally.]</p>
+<p>* * * * * * *</p>
+<h2 class="chapter" id="c17">Scene II--Mrs. MALAPROP&#x27;s Lodgings. [Mrs. MALAPROP and LYDIA.]</h2>
+<p>Mrs. MALAPROP Why, thou perverse one!--tell me what you can object to him? Isn&#x27;t he a handsome man?--tell me that. A genteel man? a pretty figure of a man?</p>
+<p>LYDIA [Aside.] She little thinks whom she is praising!--[Aloud.] So is Beverley, ma&#x27;am.</p>
+<p>Mrs. MALAPROP No caparisons, miss, if you please. Caparisons don&#x27;t become a young woman. No! Captain Absolute is indeed a fine gentleman!</p>
+<p>LYDIA [Aside.] Ay, the Captain Absolute you have seen.</p>
+<p>Mrs. MALAPROP Then he&#x27;s so well bred;--so full of alacrity, and adulation!--and has so much to say for himself:--in such good language, too! His physiognomy so grammatical! Then his presence is so noble! I protest, when I saw him, I thought of what Hamlet says in the play:-- &quot;Hesperian curls--the front of Job himself!-- An eye, like March, to threaten at command!-- A station, like Harry Mercury, new----&quot; Something about kissing--on a hill--however, the similitude struck me directly.</p>
+<p>LYDIA [Aside.] How enraged she&#x27;ll be presently, when she discovers her mistake!</p>
+<p>[Enter SERVANT.]</p>
+<p>SERVANT Sir Anthony and Captain Absolute are below, ma&#x27;am.</p>
+<p>Mrs. MALAPROP Show them up here.----</p>
+<p>[Exit SERVANT.]</p>
+<p>Now, Lydia, I insist on your behaving as becomes a young woman. Show your good breeding, at least, though you have forgot your duty.</p>
+<p>LYDIA Madam, I have told you my resolution!--I shall not only give him no encouragement, but I won&#x27;t even speak to, or look at him. [Flings herself into a chair, with her face from the door.]</p>
+<p>[Enter Sir ANTHONY ABSOLUTE and CAPTAIN ABSOLUTE.]</p>
+<p>Sir ANTHONY Here we are, Mrs. Malaprop; come to mitigate the frowns of unrelenting beauty,--and difficulty enough I had to bring this fellow.--I don&#x27;t know what&#x27;s the matter; but if I had not held him by force, he&#x27;d have given me the slip.</p>
+<p>Mrs. MALAPROP You have infinite trouble, Sir Anthony, in the affair. I am ashamed for the cause!--[Aside to LYDIA.] Lydia, Lydia, rise, I beseech you!--pay your respects!</p>
+<p>Sir ANTHONY I hope, madam, that Miss Languish has reflected on the worth of this gentleman, and the regard due to her aunt&#x27;s choice, and my alliance.--[Aside to CAPTAIN ABSOLUTE.] Now, Jack, speak to her.</p>
+<p>ABSOLUTE [Aside.] What the devil shall I do!--[Aside to Sir ANTHONY.] You see, sir, she won&#x27;t even look at me whilst you are here. I knew she wouldn&#x27;t! I told you so. Let me entreat you, sir, to leave us together! [Seems to expostulate with his father.]</p>
+<p>LYDIA [Aside.] I wonder I ha&#x27;n&#x27;t heard my aunt exclaim yet! sure she can&#x27;t have looked at him!--perhaps the regimentals are alike, and she is something blind.</p>
+<p>Sir ANTHONY I say, sir, I won&#x27;t stir a foot yet!</p>
+<p>Mrs. MALAPROP I am sorry to say, Sir Anthony, that my affluence over my niece is very small.--[Aside to LYDIA.] Turn round, Lydia: I blush for you!</p>
+<p>Sir ANTHONY May I not flatter myself, that Miss Languish will assign what cause of dislike she can have to my son!--[Aside to CAPTAIN ABSOLUTE.] Why don&#x27;t you begin, Jack?--Speak, you puppy--speak!</p>
+<p>Mrs. MALAPROP It is impossible, Sir Anthony, she can have any. She will not say she has.--[Aside to LYDIA.] Answer, hussy! why don&#x27;t you answer?</p>
+<p>Sir ANTHONY Then, madam, I trust that a childish and hasty predilection will be no bar to Jack&#x27;s happiness.--[Aside to CAPTAIN ABSOLUTE.] Zounds! sirrah! why don&#x27;t you speak?</p>
+<p>LYDIA [Aside.] I think my lover seems as little inclined to conversation as myself.--How strangely blind my aunt must be!</p>
+<p>ABSOLUTE Hem! hem! madam--hem!--[Attempts to speak, then returns to Sir ANTHONY.] Faith! sir, I am so confounded!--and--so--so--confused!--I told you I should be so, sir--I knew it.--The--the--tremor of my passion entirely takes away my presence of mind.</p>
+<p>Sir ANTHONY But it don&#x27;t take away your voice, fool, does it?--Go up, and speak to her directly!</p>
+<p>[CAPTAIN ABSOLUTE makes signs to Mrs. MALAPROP to leave them together.]</p>
+<p>Mrs. MALAPROP Sir Anthony, shall we leave them together?--[Aside to LYDIA.] Ah! you stubborn little vixen!</p>
+<p>Sir ANTHONY Not yet, ma&#x27;am, not yet!--[Aside to CAPTAIN ABSOLUTE.] What the devil are you at? unlock your jaws, sirrah, or----</p>
+<p>ABSOLUTE [Aside.] Now Heaven send she may be too sullen to look round!--I must disguise my voice.--[Draws near LYDIA, and speaks in a low hoarse tone.] Will not Miss Languish lend an ear to the mild accents of true love? Will not----</p>
+<p>Sir ANTHONY What the devil ails the fellow? why don&#x27;t you speak out?--not stand croaking like a frog in a quinsy!</p>
+<p>ABSOLUTE The--the--excess of my awe, and my--my--my modesty, quite choke me!</p>
+<p>Sir ANTHONY Ah! your modesty again!--I&#x27;ll tell you what, Jack; if you don&#x27;t speak out directly, and glibly too, I shall be in such a rage!--Mrs. Malaprop, I wish the lady would favour us with something more than a side-front.</p>
+<p>[Mrs. MALAPROP seems to chide LYDIA.]</p>
+<p>ABSOLUTE [Aside.] So all will out, I see!--[Goes up to LYDIA, speaks softly.] Be not surprised, my Lydia, suppress all surprise at present.</p>
+<p>LYDIA [Aside.] Heavens! &#x27;tis Beverley&#x27;s voice! Sure he can&#x27;t have imposed on Sir Anthony too!--[Looks round by degrees, then starts up.] Is this possible!--my Beverley!--how can this be?--my Beverley?</p>
+<p>ABSOLUTE [Aside.] Ah! &#x27;tis all over.</p>
+<p>Sir ANTHONY Beverley!--the devil--Beverley!--What can the girl mean?--this is my son, Jack Absolute.</p>
+<p>Mrs. MALAPROP For shame, hussy! for shame! your head runs so on that fellow, that you have him always in your eyes!--beg Captain Absolute&#x27;s pardon directly.</p>
+<p>LYDIA I see no Captain Absolute, but my loved Beverley!</p>
+<p>Sir ANTHONY Zounds! the girl&#x27;s mad!--her brain&#x27;s turned by reading.</p>
+<p>Mrs. MALAPROP O&#x27; my conscience, I believe so!--What do you mean by Beverley, hussy?--You saw Captain Absolute before to-day; there he is--your husband that shall be.</p>
+<p>LYDIA With all my soul, ma&#x27;am--when I refuse my Beverley----</p>
+<p>Sir ANTHONY Oh! she&#x27;s as mad as Bedlam!--or has this fellow been playing us a rogue&#x27;s trick!--Come here, sirrah, who the devil are you?</p>
+<p>ABSOLUTE Faith, sir, I am not quite clear myself; but I&#x27;ll endeavour to recollect.</p>
+<p>Sir ANTHONY Are you my son or not?--answer for your mother, you dog, if you won&#x27;t for me.</p>
+<p>Mrs. MALAPROP Ay, sir, who are you? O mercy! I begin to suspect!----</p>
+<p>ABSOLUTE [Aside.] Ye powers of impudence, befriend me!--[Aloud.] Sir Anthony, most assuredly I am your wife&#x27;s son: and that I sincerely believe myself to be yours also, I hope my duty has always shown.--Mrs. Malaprop, I am your most respectful admirer, and shall be proud to add affectionate nephew.--I need not tell my Lydia, that she sees her faithful Beverley, who, knowing the singular generosity of her temper, assumed that name and station, which has proved a test of the most disinterested love, which he now hopes to enjoy in a more elevated character.</p>
+<p>LYDIA [Sullenly.] So!--there will be no elopement after all!</p>
+<p>Sir ANTHONY Upon my soul, Jack, thou art a very impudent fellow! to do you justice, I think I never saw a piece of more consummate assurance!</p>
+<p>ABSOLUTE Oh, you flatter me, sir--you compliment--&#x27;tis my modesty, you know, sir,--my modesty that has stood in my way.</p>
+<p>Sir ANTHONY Well, I am glad you are not the dull, insensible varlet you pretended to be, however!--I&#x27;m glad you have made a fool of your father, you dog--I am. So this was your penitence, your duty and obedience!--I thought it was damned sudden!--You never heard their names before, not you!--what, the Languishes of Worcestershire, hey?--if you could please me in the affair it was all you desired!--Ah! you dissembling villain!--What!--[Pointing to Lydia] She squints, don&#x27;t she?--a little red-haired girl!--hey?--Why, you hypocritical young rascal!--I wonder you ain&#x27;t ashamed to hold up your head!</p>
+<p>ABSOLUTE &#x27;Tis with difficulty, sir.--I am confused--very much confused, as you must perceive.</p>
+<p>Mrs. MALAPROP O Lud! Sir Anthony!--a new light breaks in upon me!--hey!--how! what! captain, did you write the letters then?--What--am I to thank you for the elegant compilation of an old weather-beaten she-dragon--hey!--O mercy!--was it you that reflected on my parts of speech?</p>
+<p>ABSOLUTE Dear sir! my modesty will be overpowered at last, if you don&#x27;t assist me--I shall certainly not be able to stand it!</p>
+<p>Sir ANTHONY Come, come, Mrs. Malaprop, we must forget and forgive;--odds life! matters have taken so clever a turn all of a sudden, that I could find in my heart to be so good-humoured! and so gallant! hey! Mrs. Malaprop!</p>
+<p>Mrs. MALAPROP Well, Sir Anthony, since you desire it, we will not anticipate the past!--so mind, young people--our retrospection will be all to the future.</p>
+<p>Sir ANTHONY Come, we must leave them together; Mrs. Malaprop, they long to fly into each other&#x27;s arms, I warrant!--Jack--isn&#x27;t the cheek as I said, hey?-- and the eye, you rogue!--and the lip--hey? Come, Mrs. Malaprop, we&#x27;ll not disturb their tenderness--theirs is the time of life for happiness!--Youth&#x27;s the season made for joy--[Sings.]--hey!--Odds life! I&#x27;m in such spirits,--I don&#x27;t know what I could not do!--Permit me, ma&#x27;am--[Gives his hand to Mrs. MALAPROP.] Tol-de-rol--&#x27;gad, I should like to have a little fooling myself--Tol-de-rol! de-rol.</p>
+<p>[Exit, singing and handing Mrs. MALAPROP.--LYDIA sits sullenly in her chair.]</p>
+<p>ABSOLUTE [Aside.] So much thought bodes me no good.--[Aloud.] So grave, Lydia!</p>
+<p>LYDIA Sir!</p>
+<p>ABSOLUTE [Aside.] So!--egad! I thought as much!--that damned monosyllable has froze me!--[Aloud.] What, Lydia, now that we are as happy in our friends&#x27; consent, as in our mutual vows----</p>
+<p>LYDIA [Peevishly.] Friends&#x27; consent indeed!</p>
+<p>ABSOLUTE Come, come, we must lay aside some of our romance--a little wealth and comfort may be endured after all. And for your fortune, the lawyers shall make such settlements as----</p>
+<p>LYDIA Lawyers! I hate lawyers!</p>
+<p>ABSOLUTE Nay, then, we will not wait for their lingering forms, but instantly procure the licence, and----</p>
+<p>LYDIA The licence!--I hate licence!</p>
+<p>ABSOLUTE Oh my love! be not so unkind!--thus let me entreat---- [Kneeling.]</p>
+<p>LYDIA Psha!--what signifies kneeling, when you know I must have you?</p>
+<p>ABSOLUTE [Rising.] Nay, madam, there shall be no constraint upon your inclinations, I promise you.--If I have lost your heart--I resign the rest--[Aside.] &#x27;Gad, I must try what a little spirit will do.</p>
+<p>LYDIA [Rising.] Then, sir, let me tell you, the interest you had there was acquired by a mean, unmanly imposition, and deserves the punishment of fraud.--What, you have been treating me like a child!--humouring my romance! and laughing, I suppose, at your success!</p>
+<p>ABSOLUTE You wrong me, Lydia, you wrong me--only hear----</p>
+<p>LYDIA So, while I fondly imagined we were deceiving my relations, and flattered myself that I should outwit and incense them all--behold my hopes are to be crushed at once, by my aunt&#x27;s consent and approbation--and I am myself the only dupe at last!--[Walking about in a heat.] But here, sir, here is the picture--Beverley&#x27;s picture! [taking a miniature from her bosom] which I have worn, night and day, in spite of threats and entreaties!--There, sir [Flings it to him.]; and be assured I throw the original from my heart as easily.</p>
+<p>ABSOLUTE Nay, nay, ma&#x27;am, we will not differ as to that.--Here [taking out a picture], here is Miss Lydia Languish.--What a difference!--ay, there is the heavenly assenting smile that first gave soul and spirit to my hopes!--those are the lips which sealed a vow, as yet scarce dry in Cupid&#x27;s calendar! and there the half-resentful blush, that would have checked the ardour of my thanks!--Well, all that&#x27;s past!--all over indeed!--There, madam--in beauty, that copy is not equal to you, but in my mind its merit over the original, in being still the same, is such--that--I cannot find in my heart to part with it. [Puts it up again.]</p>
+<p>LYDIA [Softening.] &#x27;Tis your own doing, sir--I, I, I suppose you are perfectly satisfied.</p>
+<p>ABSOLUTE O, most certainly--sure, now, this is much better than being in love!--ha! ha! ha!--there&#x27;s some spirit in this!--What signifies breaking some scores of solemn promises:--all that&#x27;s of no consequence, you know. To be sure people will say, that miss don&#x27;t know her own mind--but never mind that! Or, perhaps, they may be ill-natured enough to hint, that the gentleman grew tired of the lady and forsook her--but don&#x27;t let that fret you.</p>
+<p>LYDIA There is no bearing his insolence. [Bursts into tears.]</p>
+<p>[Re-enter Mrs. MALAPROP and Sir ANTHONY ABSOLUTE.]</p>
+<p>Mrs. MALAPROP Come, we must interrupt your billing and cooing awhile.</p>
+<p>LYDIA This is worse than your treachery and deceit, you base ingrate! [Sobbing.]</p>
+<p>Sir ANTHONY What the devil&#x27;s the matter now?--Zounds! Mrs. Malaprop, this is the oddest billing and cooing I ever heard!--but what the deuce is the meaning of it?--I am quite astonished!</p>
+<p>ABSOLUTE Ask the lady, sir.</p>
+<p>Mrs. MALAPROP O mercy!--I&#x27;m quite analyzed, for my part!--Why, Lydia, what is the reason of this?</p>
+<p>LYDIA Ask the gentleman, ma&#x27;am.</p>
+<p>Sir ANTHONY Zounds! I shall be in a frenzy!--Why, Jack, you are not come out to be any one else, are you?</p>
+<p>Mrs. MALAPROP Ay, sir, there&#x27;s no more trick, is there?--you are not like Cerberus, three gentlemen at once, are you?</p>
+<p>ABSOLUTE You&#x27;ll not let me speak--I say the lady can account for this much much better than I can.</p>
+<p>LYDIA Ma&#x27;am, you once commanded me never to think of Beverley again--there is the man--I now obey you: for, from this moment, I renounce him for ever. [Exit.]</p>
+<p>Mrs. MALAPROP O mercy! and miracles! what a turn here is--why, sure, captain, you haven&#x27;t behaved disrespectfully to my niece.</p>
+<p>Sir ANTHONY Ha! ha! ha!--ha! ha! ha!--now I see it. Ha! ha! ha!--now I see it--you have been too lively, Jack.</p>
+<p>ABSOLUTE Nay, sir, upon my word----</p>
+<p>Sir ANTHONY Come, no lying, Jack--I&#x27;m sure &#x27;twas so.</p>
+<p>Mrs. MALAPROP O Lud! Sir Anthony!--O fy, captain!</p>
+<p>ABSOLUTE Upon my soul, ma&#x27;am----</p>
+<p>Sir ANTHONY Come, no excuses, Jack; why, your father, you rogue, was so before you:--the blood of the Absolutes was always impatient.--Ha! ha! ha! poor little Lydia! why, you&#x27;ve frightened her, you dog, you have.</p>
+<p>ABSOLUTE By all that&#x27;s good, sir----</p>
+<p>Sir ANTHONY Zounds! say no more, I tell you--Mrs. Malaprop shall make your peace. You must make his peace, Mrs. Malaprop:--you must tell her &#x27;tis Jack&#x27;s way--tell her &#x27;tis all our ways--it runs in the blood of our family! Come away, Jack--Ha! ha! ha!--Mrs. Malaprop--a young villain! [Pushing him out.]</p>
+<p>Mrs. MALAPROP O! Sir Anthony!--O fy, captain!</p>
+<p>[Exeunt severally.]</p>
+<p>* * * * * * *</p>
+<h2 class="chapter" id="c18">Scene III--The North Parade. [Enter Sir LUCIUS O&#x27;TRIGGER.]</h2>
+<p>Sir LUCIUS I wonder where this Captain Absolute hides himself! Upon my conscience! these officers are always in one&#x27;s way in love affairs:--I remember I might have married Lady Dorothy Carmine, if it had not been for a little rogue of a major, who ran away with her before she could get a sight of me! And I wonder too what it is the ladies can see in them to be so fond of them--unless it be a touch of the old serpent in &#x27;em, that makes the little creatures be caught, like vipers, with a bit of red cloth. Ha! isn&#x27;t this the captain coming?--faith it is!--There is a probability of succeeding about that fellow, that is mighty provoking! Who the devil is he talking to? [Steps aside.]</p>
+<p>[Enter CAPTAIN ABSOLUTE.]</p>
+<p>ABSOLUTE [Aside.] To what fine purpose I have been plotting! a noble reward for all my schemes, upon my soul!--a little gipsy!--I did not think her romance could have made her so damned absurd either. &#x27;Sdeath, I never was in a worse humour in my life!--I could cut my own throat, or any other person&#x27;s, with the greatest pleasure in the world!</p>
+<p>Sir LUCIUS Oh, faith! I&#x27;m in the luck of it. I never could have found him in a sweeter temper for my purpose--to be sure I&#x27;m just come in the nick! Now to enter into conversation with him, and so quarrel genteelly.--[Goes up to CAPTAIN ABSOLUTE.] With regard to that matter, captain, I must beg leave to differ in opinion with you.</p>
+<p>ABSOLUTE Upon my word, then, you must be a very subtle disputant:--because, sir, I happened just then to be giving no opinion at all.</p>
+<p>Sir LUCIUS That&#x27;s no reason. For give me leave to tell you, a man may think an untruth as well as speak one.</p>
+<p>ABSOLUTE Very true, sir; but if a man never utters his thoughts, I should think they might stand a chance of escaping controversy.</p>
+<p>Sir LUCIUS Then, sir, you differ in opinion with me, which amounts to the same thing.</p>
+<p>ABSOLUTE Hark&#x27;ee, Sir Lucius; if I had not before known you to be a gentleman, upon my soul, I should not have discovered it at this interview: for what you can drive at, unless you mean to quarrel with me, I cannot conceive!</p>
+<p>Sir LUCIUS I humbly thank you, sir, for the quickness of your apprehension.--[Bowing.] You have named the very thing I would be at.</p>
+<p>ABSOLUTE Very well, sir; I shall certainly not balk your inclinations.--But I should be glad you would please to explain your motives.</p>
+<p>Sir LUCIUS Pray, sir, be easy; the quarrel is a very pretty quarrel as it stands; we should only spoil it by trying to explain it. However, your memory is very short, or you could not have forgot an affront you passed on me within this week. So, no more, but name your time and place.</p>
+<p>ABSOLUTE Well, sir, since you are so bent on it, the sooner the better; let it be this evening--here, by the Spring Gardens. We shall scarcely be interrupted.</p>
+<p>Sir LUCIUS Faith! that same interruption in affairs of this nature shows very great ill-breeding. I don&#x27;t know what&#x27;s the reason, but in England if a thing of this kind gets wind, people make such a pother, that a gentleman can never fight in peace and quietness. However, if it&#x27;s the same to you, captain, I should take it as a particular kindness if you&#x27;d let us meet in King&#x27;s-Mead-Fields, as a little business will call me there about six o&#x27;clock, and I may despatch both matters at once.</p>
+<p>ABSOLUTE &#x27;Tis the same to me exactly. A little after six, then, we will discuss this matter more seriously.</p>
+<p>Sir LUCIUS If you please, sir; there will be very pretty small-sword light, though it won&#x27;t do for a long shot. So that matter&#x27;s settled, and my mind&#x27;s at ease! [Exit.]</p>
+<p>[Enter FAULKLAND.]</p>
+<p>ABSOLUTE Well met! I was going to look for you. O Faulkland! all the demons of spite and disappointment have conspired against me! I&#x27;m so vex&#x27;d, that if I had not the prospect of a resource in being knocked o&#x27; the head by-and-by, I should scarce have spirits to tell you the cause.</p>
+<p>FAULKLAND What can you mean?--Has Lydia changed her mind?--I should have thought her duty and inclination would now have pointed to the same object.</p>
+<p>ABSOLUTE Ay, just as the eyes do of a person who squints: when her love-eye was fixed on me, t&#x27;other, her eye of duty, was finely obliqued: but when duty bid her point that the same way, off t&#x27;other turned on a swivel, and secured its retreat with a frown!</p>
+<p>FAULKLAND But what&#x27;s the resource you----</p>
+<p>ABSOLUTE Oh, to wind up the whole, a good-natured Irishman here has--[Mimicking Sir LUCIUS] begged leave to have the pleasure of cutting my throat; and I mean to indulge him--that&#x27;s all.</p>
+<p>FAULKLAND Prithee, be serious!</p>
+<p>ABSOLUTE &#x27;Tis fact, upon my soul! Sir Lucius O&#x27;Trigger--you know him by sight--for some affront, which I am sure I never intended, has obliged me to meet him this evening at six o&#x27;clock: &#x27;tis on that account I wished to see you; you must go with me.</p>
+<p>FAULKLAND Nay, there must be some mistake, sure. Sir Lucius shall explain himself, and I dare say matters may be accommodated. But this evening did you say? I wish it had been any other time.</p>
+<p>ABSOLUTE Why? there will be light enough: there will (as Sir Lucius says) be very pretty small-sword light, though it will not do for a long shot. Confound his long shots.</p>
+<p>FAULKLAND But I am myself a good deal ruffled by a difference I have had with Julia. My vile tormenting temper has made me treat her so cruelly, that I shall not be myself till we are reconciled.</p>
+<p>ABSOLUTE By heavens! Faulkland, you don&#x27;t deserve her!</p>
+<p>[Enter SERVANT, gives FAULKLAND a letter, and exit.]</p>
+<p>FAULKLAND Oh, Jack! this is from Julia. I dread to open it! I fear it may be to take a last leave!--perhaps to bid me return her letters, and restore--Oh, how I suffer for my folly!</p>
+<p>ABSOLUTE Here, let me see.--[Takes the letter and opens it.] Ay, a final sentence, indeed!--&#x27;tis all over with you, faith!</p>
+<p>FAULKLAND Nay, Jack, don&#x27;t keep me in suspense!</p>
+<p>ABSOLUTE Here then--[Reads.] As I am convinced that my dear Faulkland&#x27;s own reflections have already upbraided him for his last unkindness to me, I will not add a word on the subject. I wish to speak with you as soon as possible. Yours ever and truly, Julia. There&#x27;s stubbornness and resentment for you!--[Gives him the letter.] Why, man, you don&#x27;t seem one whit the happier at this!</p>
+<p>FAULKLAND O yes, I am; but--but----</p>
+<p>ABSOLUTE Confound your buts! you never hear any thing that would make another man bless himself, but you immediately damn it with a but!</p>
+<p>FAULKLAND Now, Jack, as you are my friend, own honestly--don&#x27;t you think there is something forward, something indelicate, in this haste to forgive? Women should never sue for reconciliation: that should always come from us. They should retain their coldness till wooed to kindness; and their pardon, like their love, should &quot;not unsought be won.&quot;</p>
+<p>ABSOLUTE I have not patience to listen to you! thou&#x27;rt incorrigible! so say no more on the subject. I must go to settle a few matters. Let me see you before six, remember, at my lodgings. A poor industrious devil like me, who have toiled, and drudged, and plotted to gain my ends, and am at last disappointed by other people&#x27;s folly, may in pity be allowed to swear and grumble a little; but a captious sceptic in love, a slave to fretfulness and whim, who has no difficulties but of his own creating, is a subject more fit for ridicule than compassion! [Exit.]</p>
+<p>FAULKLAND I feel his reproaches; yet I would not change this too exquisite nicety for the gross content with which he tramples on the thorns of love! His engaging me in this duel has started an idea in my head, which I will instantly pursue. I&#x27;ll use it as the touchstone of Julia&#x27;s sincerity and disinterestedness. If her love prove pure and sterling ore, my name will rest on it with honour; and once I&#x27;ve stamped it there, I lay aside my doubts for ever! But if the dross of selfishness, the alloy of pride, predominate, &#x27;twill be best to leave her as a toy for some less cautious fool to sigh for! [Exit.]</p>
+<p>* * * * * * * * * * *</p>
+<h2 class="chapter" id="c19">Act V</h2>
+<p>* * * * * * *</p>
+<h2 class="chapter" id="c20">Scene I--JULIA&#x27;s Dressing-Room. [JULIA discovered alone.]</h2>
+<p>JULIA How this message has alarmed me! what dreadful accident can he mean? why such charge to be alone?--O Faulkland!--how many unhappy moments--how many tears have you cost me.</p>
+<p>[Enter FAULKLAND.]</p>
+<p>JULIA What means this?--why this caution, Faulkland?</p>
+<p>FAULKLAND Alas! Julia, I am come to take a long farewell.</p>
+<p>JULIA Heavens! what do you mean?</p>
+<p>FAULKLAND You see before you a wretch, whose life is forfeited. Nay, start not!--the infirmity of my temper has drawn all this misery on me. I left you fretful and passionate--an untoward accident drew me into a quarrel--the event is, that I must fly this kingdom instantly. O Julia, had I been so fortunate as to have called you mine entirely, before this mischance had fallen on me, I should not so deeply dread my banishment!</p>
+<p>JULIA My soul is oppressed with sorrow at the nature of your misfortune: had these adverse circumstances arisen from a less fatal cause, I should have felt strong comfort in the thought that I could now chase from your bosom every doubt of the warm sincerity of my love. My heart has long known no other guardian--I now entrust my person to your honour--we will fly together. When safe from pursuit, my father&#x27;s will may be fulfilled--and I receive a legal claim to be the partner of your sorrows, and tenderest comforter. Then on the bosom of your wedded Julia, you may lull your keen regret to slumbering; while virtuous love, with a cherub&#x27;s hand, shall smooth the brow of upbraiding thought, and pluck the thorn from compunction.</p>
+<p>FAULKLAND O Julia! I am bankrupt in gratitude! but the time is so pressing, it calls on you for so hasty a resolution.--Would you not wish some hours to weigh the advantages you forego, and what little compensation poor Faulkland can make you beside his solitary love?</p>
+<p>JULIA I ask not a moment. No, Faulkland, I have loved you for yourself: and if I now, more than ever, prize the solemn engagement which so long has pledged us to each other, it is because it leaves no room for hard aspersions on my fame, and puts the seal of duty to an act of love. But let us not linger. Perhaps this delay----</p>
+<p>FAULKLAND &#x27;Twill be better I should not venture out again till dark. Yet am I grieved to think what numberless distresses will press heavy on your gentle disposition!</p>
+<p>JULIA Perhaps your fortune may be forfeited by this unhappy act.--I know not whether &#x27;tis so; but sure that alone can never make us unhappy. The little I have will be sufficient to support us; and exile never should be splendid.</p>
+<p>FAULKLAND Ay, but in such an abject state of life, my wounded pride perhaps may increase the natural fretfulness of my temper, till I become a rude, morose companion, beyond your patience to endure. Perhaps the recollection of a deed my conscience cannot justify may haunt me in such gloomy and unsocial fits, that I shall hate the tenderness that would relieve me, break from your arms, and quarrel with your fondness!</p>
+<p>JULIA If your thoughts should assume so unhappy a bent, you will the more want some mild and affectionate spirit to watch over and console you: one who, by bearing your infirmities with gentleness and resignation, may teach you so to bear the evils of your fortune.</p>
+<p>FAULKLAND Julia, I have proved you to the quick! and with this useless device I throw away all my doubts. How shall I plead to be forgiven this last unworthy effect of my restless, unsatisfied disposition?</p>
+<p>JULIA Has no such disaster happened as you related?</p>
+<p>FAULKLAND I am ashamed to own that it was pretended; yet in pity, Julia, do not kill me with resenting a fault which never can be repeated: but sealing, this once, my pardon, let me to-morrow, in the face of Heaven, receive my future guide and monitress, and expiate my past folly by years of tender adoration.</p>
+<p>JULIA Hold, Faulkland!--that you are free from a crime, which I before feared to name, Heaven knows how sincerely I rejoice! These are tears of thankfulness for that! But that your cruel doubts should have urged you to an imposition that has wrung my heart, gives me now a pang more keen than I can express!</p>
+<p>FAULKLAND By Heavens! Julia----</p>
+<p>JULIA Yet hear me,--My father loved you, Faulkland! and you preserved the life that tender parent gave me; in his presence I pledged my hand--joyfully pledged it--where before I had given my heart. When, soon after, I lost that parent, it seemed to me that Providence had, in Faulkland, shown me whither to transfer without a pause, my grateful duty, as well as my affection; hence I have been content to bear from you what pride and delicacy would have forbid me from another. I will not upbraid you, by repeating how you have trifled with my sincerity ----</p>
+<p>FAULKLAND I confess it all! yet hear----</p>
+<p>JULIA After such a year of trial, I might have flattered myself that I should not have been insulted with a new probation of my sincerity, as cruel as unnecessary! I now see it is not in your nature to be content or confident in love. With this conviction--I never will be yours. While I had hopes that my persevering attention, and unreproaching kindness, might in time reform your temper, I should have been happy to have gained a dearer influence over you; but I will not furnish you with a licensed power to keep alive an incorrigible fault, at the expense of one who never would contend with you.</p>
+<p>FAULKLAND Nay, but, Julia, by my soul and honour, if after this----</p>
+<p>JULIA But one word more.--As my faith has once been given to you, I never will barter it with another.--I shall pray for your happiness with the truest sincerity; and the dearest blessing I can ask of Heaven to send you will be to charm you from that unhappy temper, which alone has prevented the performance of our solemn engagement. All I request of you is, that you will yourself reflect upon this infirmity, and when you number up the many true delights it has deprived you of, let it not be your least regret, that it lost you the love of one who would have followed you in beggary through the world! [Exit.]</p>
+<p>FAULKLAND She&#x27;s gone--for ever!--There was an awful resolution in her manner, that riveted me to my place.--O fool!--dolt!--barbarian! Cursed as I am, with more imperfections than my fellow wretches, kind Fortune sent a heaven-gifted cherub to my aid, and, like a ruffian, I have driven her from my side!--I must now haste to my appointment. Well, my mind is tuned for such a scene. I shall wish only to become a principal in it, and reverse the tale my cursed folly put me upon forging here.--O Love!--tormentor!--fiend!--whose influence, like the moon&#x27;s, acting on men of dull souls, makes idiots of them, but meeting subtler spirits, betrays their course, and urges sensibility to madness! [Exit.]</p>
+<p>[Enter LYDIA and MAID.]</p>
+<p>MAID My mistress, ma&#x27;am, I know, was here just now--perhaps she is only in the next room. [Exit.]</p>
+<p>LYDIA Heigh-ho! Though he has used me so, this fellow runs strangely in my head. I believe one lecture from my grave cousin will make me recall him.</p>
+<p>[Re-enter JULIA.]</p>
+<p>O Julia, I am come to you with such an appetite for consolation.--Lud! child, what&#x27;s the matter with you? You have been crying!--I&#x27;ll be hanged if that Faulkland has not been tormenting you.</p>
+<p>JULIA You mistake the cause of my uneasiness!--Something has flurried me a little. Nothing that you can guess at.--[Aside.] I would not accuse Faulkland to a sister!</p>
+<p>LYDIA Ah! whatever vexations you may have, I can assure you mine surpass them. You know who Beverley proves to be?</p>
+<p>JULIA I will now own to you, Lydia, that Mr. Faulkland had before informed me of the whole affair. Had young Absolute been the person you took him for, I should not have accepted your confidence on the subject, without a serious endeavour to counteract your caprice.</p>
+<p>LYDIA So, then, I see I have been deceived by every one! But I don&#x27;t care--I&#x27;ll never have him.</p>
+<p>JULIA Nay, Lydia----</p>
+<p>LYDIA Why, is it not provoking? when I thought we were coming to the prettiest distress imaginable, to find myself made a mere Smithfield bargain of at last! There, had I projected one of the most sentimental elopements!--so becoming a disguise!--so amiable a ladder of ropes!--Conscious moon--four horses--Scotch parson--with such surprise to Mrs. Malaprop--and such paragraphs in the newspapers!--Oh, I shall die with disappointment!</p>
+<p>JULIA I don&#x27;t wonder at it!</p>
+<p>LYDIA Now--sad reverse!--what have I to expect, but, after a deal of flimsy preparation with a bishop&#x27;s license, and my aunt&#x27;s blessing, to go simpering up to the altar; or perhaps be cried three times in a country church, and have an unmannerly fat clerk ask the consent of every butcher in the parish to join John Absolute and Lydia Languish, spinster! Oh that I should live to hear myself called spinster!</p>
+<p>JULIA Melancholy indeed!</p>
+<p>LYDIA How mortifying, to remember the dear delicious shifts I used to be put to, to gain half a minute&#x27;s conversation with this fellow! How often have I stole forth, in the coldest night in January, and found him in the garden, stuck like a dripping statue! There would he kneel to me in the snow, and sneeze and cough so pathetically! he shivering with cold and I with apprehension! and while the freezing blast numbed our joints, how warmly would he press me to pity his flame, and glow with mutual ardour!--Ah, Julia, that was something like being in love.</p>
+<p>JULIA If I were in spirits, Lydia, I should chide you only by laughing heartily at you; but it suits more the situation of my mind, at present, earnestly to entreat you not to let a man, who loves you with sincerity, suffer that unhappiness from your caprice, which I know too well caprice can inflict.</p>
+<p>LYDIA O Lud! what has brought my aunt here?</p>
+<p>[Enter Mrs. MALAPROP, FAG, and DAVID.]</p>
+<p>Mrs. MALAPROP So! so! here&#x27;s fine work!--here&#x27;s fine suicide, parricide, and simulation, going on in the fields! and Sir Anthony not to be found to prevent the antistrophe!</p>
+<p>JULIA For Heaven&#x27;s sake, madam, what&#x27;s the meaning of this?</p>
+<p>Mrs. MALAPROP That gentleman can tell you--&#x27;twas he enveloped the affair to me.</p>
+<p>LYDIA [To FAG.] Do, sir, will you, inform us?</p>
+<p>FAG Ma&#x27;am, I should hold myself very deficient in every requisite that forms the man of breeding, if I delayed a moment to give all the information in my power to a lady so deeply interested in the affair as you are.</p>
+<p>LYDIA But quick! quick sir!</p>
+<p>FAG True, ma&#x27;am, as you say, one should be quick in divulging matters of this nature; for should we be tedious, perhaps while we are flourishing on the subject, two or three lives may be lost!</p>
+<p>LYDIA O patience!--Do, ma&#x27;am, for Heaven&#x27;s sake! tell us what is the matter?</p>
+<p>Mrs. MALAPROP Why, murder&#x27;s the matter! slaughter&#x27;s the matter! killing&#x27;s the matter!--but he can tell you the perpendiculars.</p>
+<p>LYDIA Then, prithee, sir, be brief.</p>
+<p>FAG Why, then, ma&#x27;am, as to murder--I cannot take upon me to say--and as to slaughter, or manslaughter, that will be as the jury finds it.</p>
+<p>LYDIA But who, sir--who are engaged in this?</p>
+<p>FAG Faith, ma&#x27;am, one is a young gentleman whom I should be very sorry any thing was to happen to--a very pretty behaved gentleman! We have lived much together, and always on terms.</p>
+<p>LYDIA But who is this? who! who! who?</p>
+<p>FAG My master, ma&#x27;am--my master--I speak of my master.</p>
+<p>LYDIA Heavens! What, Captain Absolute!</p>
+<p>Mrs. MALAPROP Oh, to be sure, you are frightened now!</p>
+<p>JULIA But who are with him, sir?</p>
+<p>FAG As to the rest, ma&#x27;am, this gentleman can inform you better than I.</p>
+<p>JULIA [To DAVID.] Do speak, friend.</p>
+<p>DAVID Look&#x27;ee, my lady--by the mass! there&#x27;s mischief going on. Folks don&#x27;t use to meet for amusement with firearms, firelocks, fire-engines, fire-screens, fire-office, and the devil knows what other crackers beside!--This, my lady, I say, has an angry savour.</p>
+<p>JULIA But who is there beside Captain Absolute, friend?</p>
+<p>DAVID My poor master--under favour for mentioning him first. You know me, my lady--I am David--and my master of course is, or was, Squire Acres. Then comes Squire Faulkland.</p>
+<p>JULIA Do, ma&#x27;am, let us instantly endeavour to prevent mischief.</p>
+<p>Mrs. MALAPROP O fy! it would be very inelegant in us:--we should only participate things.</p>
+<p>DAVID Ah! do, Mrs. Aunt, save a few lives--they are desperately given, believe me.--Above all, there is that bloodthirsty Philistine, Sir Lucius O&#x27;Trigger.</p>
+<p>Mrs. MALAPROP Sir Lucius O&#x27;Trigger? O mercy! have they drawn poor little dear Sir Lucius into the scrape?--Why how you stand, girl! you have no more feeling than one of the Derbyshire petrifactions!</p>
+<p>LYDIA What are we to do, madam?</p>
+<p>Mrs. MALAPROP Why, fly with the utmost felicity, to be sure, to prevent mischief!--Here, friend, you can show us the place?</p>
+<p>FAG If you please, ma&#x27;am, I will conduct you.--David, do you look for Sir Anthony.</p>
+<p>[Exit DAVID.]</p>
+<p>Mrs. MALAPROP Come, girls! this gentleman will exhort us.--Come, sir, you&#x27;re our envoy--lead the way, and we&#x27;ll precede.</p>
+<p>FAG Not a step before the ladies for the world!</p>
+<p>Mrs. MALAPROP You&#x27;re sure you know the spot?</p>
+<p>FAG I think I can find it, ma&#x27;am; and one good thing is, we shall hear the report of the pistols as we draw near, so we can&#x27;t well miss them;--never fear, ma&#x27;am, never fear.</p>
+<p>[Exeunt, he talking.]</p>
+<p>* * * * * * *</p>
+<h2 class="chapter" id="c21">Scene II--The South Parade. [Enter CAPTAIN ABSOLUTE, putting his sword under his great coat.]</h2>
+<p>ABSOLUTE A sword seen in the streets of Bath would raise as great an alarm as a mad dog.--How provoking this is in Faulkland!--never punctual! I shall be obliged to go without him at last.--Oh, the devil! here&#x27;s Sir Anthony! how shall I escape him? [Muffles up his face, and takes a circle to go off.]</p>
+<p>[Enter Sir ANTHONY ABSOLUTE.]</p>
+<p>Sir ANTHONY How one may be deceived at a little distance! Only that I see he don&#x27;t know me, I could have sworn that was Jack!--Hey! Gad&#x27;s life! it is.--Why, Jack, what are you afraid of? hey!--sure I&#x27;m right. Why Jack, Jack Absolute! [Goes up to him.]</p>
+<p>ABSOLUTE Really, sir, you have the advantage of me:--I don&#x27;t remember ever to have had the honour--my name is Saunderson, at your service.</p>
+<p>Sir ANTHONY Sir, I beg your pardon--I took you--hey?--why, zounds! it is--Stay--[Looks up to his face.] So, so--your humble servant, Mr. Saunderson! Why, you scoundrel, what tricks are you after now?</p>
+<p>ABSOLUTE Oh, a joke, sir, a joke! I came here on purpose to look for you, sir.</p>
+<p>Sir ANTHONY You did! well, I am glad you were so lucky:--but what are you muffled up so for?--what&#x27;s this for?--hey!</p>
+<p>ABSOLUTE &#x27;Tis cool, sir, isn&#x27;t it?--rather chilly somehow:--but I shall be late--I have a particular engagement.</p>
+<p>Sir ANTHONY Stay!--Why, I thought you were looking for me?--Pray, Jack, where is&#x27;t you are going?</p>
+<p>ABSOLUTE Going, sir?</p>
+<p>Sir ANTHONY Ay, where are you going?</p>
+<p>ABSOLUTE Where am I going?</p>
+<p>Sir ANTHONY You unmannerly puppy!</p>
+<p>ABSOLUTE I was going, sir, to--to--to--to Lydia--sir, to Lydia--to make matters up if I could;--and I was looking for you, sir, to--to----</p>
+<p>Sir ANTHONY To go with you, I suppose.--Well, come along.</p>
+<p>ABSOLUTE Oh! zounds! no, sir, not for the world!--I wished to meet with you, sir,--to--to--to--You find it cool, I&#x27;m sure, sir--you&#x27;d better not stay out.</p>
+<p>Sir ANTHONY Cool!--not at all.--Well, Jack--and what will you say to Lydia?</p>
+<p>ABSOLUTE Oh, sir, beg her pardon, humour her--promise and vow: but I detain you, sir--consider the cold air on your gout.</p>
+<p>Sir ANTHONY Oh, not at all!--Not at all! I&#x27;m in no hurry.--Ah! Jack, you youngsters, when once you are wounded here [Putting his hand to CAPTAIN ABSOLUTE&#x27;s breast.] Hey! what the deuce have you got here?</p>
+<p>ABSOLUTE Nothing, sir--nothing.</p>
+<p>Sir ANTHONY What&#x27;s this?--here&#x27;s something damned hard.</p>
+<p>ABSOLUTE Oh, trinkets, sir! trinkets!--a bauble for Lydia!</p>
+<p>Sir ANTHONY Nay, let me see your taste.--[Pulls his coat open, the sword falls.] Trinkets!--a bauble for Lydia!--Zounds! sirrah, you are not going to cut her throat, are you?</p>
+<p>ABSOLUTE Ha! ha! ha!--I thought it would divert you, sir, though I didn&#x27;t mean to tell you till afterwards.</p>
+<p>Sir ANTHONY You didn&#x27;t?--Yes, this is a very diverting trinket, truly!</p>
+<p>ABSOLUTE Sir, I&#x27;ll explain to you.--You know, sir, Lydia is romantic, devilish romantic, and very absurd of course: now, sir, I intend, if she refuses to forgive me, to unsheath this sword, and swear--I&#x27;ll fall upon its point, and expire at her feet!</p>
+<p>Sir ANTHONY Fall upon a fiddlestick&#x27;s end!--why, I suppose it is the very thing that would please her.--Get along, you fool!</p>
+<p>ABSOLUTE Well, sir, you shall hear of my success--you shall hear.--O Lydia!--forgive me, or this pointed steel--says I.</p>
+<p>Sir ANTHONY O, booby! stay away and welcome--says she.--Get along! and damn your trinkets!</p>
+<p>[Exit CAPTAIN ABSOLUTE.]</p>
+<p>[Enter DAVID, running.]</p>
+<p>DAVID Stop him! stop him! Murder! Thief! Fire!--Stop fire! Stop fire!--O Sir Anthony--call! call! bid &#x27;m stop! Murder! Fire!</p>
+<p>Sir ANTHONY Fire! Murder!--Where?</p>
+<p>DAVID Oons! he&#x27;s out of sight! and I&#x27;m out of breath! for my part! O Sir Anthony, why didn&#x27;t you stop him? why didn&#x27;t you stop him?</p>
+<p>Sir ANTHONY Zounds! the fellow&#x27;s mad!--Stop whom? stop Jack?</p>
+<p>DAVID Ay, the captain, sir!--there&#x27;s murder and slaughter----</p>
+<p>Sir ANTHONY Murder!</p>
+<p>DAVID Ay, please you, Sir Anthony, there&#x27;s all kinds of murder, all sorts of slaughter to be seen in the fields: there&#x27;s fighting going on, sir--bloody sword-and-gun fighting!</p>
+<p>Sir ANTHONY Who are going to fight, dunce?</p>
+<p>DAVID Every body that I know of, Sir Anthony:--everybody is going to fight, my poor master, Sir Lucius O&#x27;Trigger, your son, the captain----</p>
+<p>Sir ANTHONY Oh, the dog! I see his tricks.--Do you know the place?</p>
+<p>DAVID King&#x27;s-Mead-Fields.</p>
+<p>Sir ANTHONY You know the way?</p>
+<p>DAVID Not an inch; but I&#x27;ll call the mayor--aldermen--constables--churchwardens--and beadles--we can&#x27;t be too many to part them.</p>
+<p>Sir ANTHONY Come along--give me your shoulder! we&#x27;ll get assistance as we go--the lying villain!--Well, I shall be in such a frenzy!--So--this was the history of his trinkets! I&#x27;ll bauble him!</p>
+<p>[Exeunt.]</p>
+<p>* * * * * * *</p>
+<h2 class="chapter" id="c22">Scene III--King&#x27;s-Mead-Fields. [Enter Sir LUCIUS O&#x27;TRIGGER and ACRES, with pistols.]</h2>
+<p>ACRES By my valour! then, Sir Lucius, forty yards is a good distance. Odds levels and aims!--I say it is a good distance.</p>
+<p>Sir LUCIUS Is it for muskets or small field-pieces? Upon my conscience, Mr. Acres, you must leave those things to me.--Stay now--I&#x27;ll show you.--[Measures paces along the stage.] There now, that is a very pretty distance--a pretty gentleman&#x27;s distance.</p>
+<p>ACRES Zounds! we might as well fight in a sentry-box! I tell you, Sir Lucius, the farther he is off, the cooler I shall take my aim.</p>
+<p>Sir LUCIUS Faith! then I suppose you would aim at him best of all if he was out of sight!</p>
+<p>ACRES No, Sir Lucius; but I should think forty or eight-and-thirty yards----</p>
+<p>Sir LUCIUS Pho! pho! nonsense! three or four feet between the mouths of your pistols is as good as a mile.</p>
+<p>ACRES Odds bullets, no!--by my valour! there is no merit in killing him so near; do, my dear Sir Lucius, let me bring him down at a long shot:--a long shot, Sir Lucius, if you love me!</p>
+<p>Sir LUCIUS Well, the gentleman&#x27;s friend and I must settle that.--But tell me now, Mr. Acres, in case of an accident, is there any little will or commission I could execute for you?</p>
+<p>ACRES I am much obliged to you, Sir Lucius--but I don&#x27;t understand----</p>
+<p>Sir LUCIUS Why, you may think there&#x27;s no being shot at without a little risk--and if an unlucky bullet should carry a quietus with it--I say it will be no time then to be bothering you about family matters.</p>
+<p>ACRES A quietus!</p>
+<p>Sir LUCIUS For instance, now--if that should be the case--would you choose to be pickled and sent home?--or would it be the same to you to lie here in the Abbey? I&#x27;m told there is very snug lying in the Abbey.</p>
+<p>ACRES Pickled!--Snug lying in the Abbey!--Odds tremors! Sir Lucius, don&#x27;t talk so!</p>
+<p>Sir LUCIUS I suppose, Mr. Acres, you never were engaged in an affair of this kind before?</p>
+<p>ACRES No, Sir Lucius, never before.</p>
+<p>Sir LUCIUS Ah! that&#x27;s a pity!--there&#x27;s nothing like being used to a thing.--Pray now, how would you receive the gentleman&#x27;s shot?</p>
+<p>ACRES Odds files!--I&#x27;ve practised that--there, Sir Lucius--there. [Puts himself in an attitude.] A side-front, hey? Odd! I&#x27;ll make myself small enough: I&#x27;ll stand edgeways.</p>
+<p>Sir LUCIUS Now--you&#x27;re quite out--for if you stand so when I take my aim---- [Levelling at him.]</p>
+<p>ACRES Zounds! Sir Lucius--are you sure it is not cocked?</p>
+<p>Sir LUCIUS Never fear.</p>
+<p>ACRES But--but--you don&#x27;t know--it may go off of its own head!</p>
+<p>Sir LUCIUS Pho! be easy.--Well, now if I hit you in the body, my bullet has a double chance--for if it misses a vital part of your right side, &#x27;twill be very hard if it don&#x27;t succeed on the left!</p>
+<p>ACRES A vital part!</p>
+<p>Sir LUCIUS But, there--fix yourself so--[Placing him]--let him see the broad-side of your full front--there--now a ball or two may pass clean through your body, and never do any harm at all.</p>
+<p>ACRES Clean through me!--a ball or two clean through me!</p>
+<p>Sir LUCIUS Ay--may they--and it is much the genteelest attitude into the bargain.</p>
+<p>ACRES Look&#x27;ee! Sir Lucius--I&#x27;d just as lieve be shot in an awkward posture as a genteel one; so, by my valour! I will stand edgeways.</p>
+<p>Sir LUCIUS [Looking at his watch.] Sure they don&#x27;t mean to disappoint us--Hah!--no, faith--I think I see them coming.</p>
+<p>ACRES Hey!--what!--coming!----</p>
+<p>Sir LUCIUS Ay.--Who are those yonder getting over the stile?</p>
+<p>ACRES There are two of them indeed!--well--let them come--hey, Sir Lucius!--we--we--we--we--won&#x27;t run.</p>
+<p>Sir LUCIUS Run!</p>
+<p>ACRES No--I say--we won&#x27;t run, by my valour!</p>
+<p>Sir LUCIUS What the devil&#x27;s the matter with you?</p>
+<p>ACRES Nothing--nothing--my dear friend--my dear Sir Lucius--but I--I--I don&#x27;t feel quite so bold, somehow, as I did.</p>
+<p>Sir LUCIUS O fy!--consider your honour.</p>
+<p>ACRES Ay--true--my honour. Do, Sir Lucius, edge in a word or two every now and then about my honour.</p>
+<p>Sir LUCIUS [Looking.] Well, here they&#x27;re coming.</p>
+<p>ACRES Sir Lucius--if I wa&#x27;n&#x27;t with you, I should almost think I was afraid.--If my valour should leave me!--Valour will come and go.</p>
+<p>Sir LUCIUS Then pray keep it fast, while you have it.</p>
+<p>ACRES Sir Lucius--I doubt it is going--yes--my valour is certainly going!--it is sneaking off!--I feel it oozing out as it were at the palms of my hands!</p>
+<p>Sir LUCIUS Your honour--your honour.--Here they are.</p>
+<p>ACRES O mercy!--now--that I was safe at Clod-Hall! or could be shot before I was aware!</p>
+<p>[Enter FAULKLAND and CAPTAIN ABSOLUTE.]</p>
+<p>Sir LUCIUS Gentlemen, your most obedient.--Hah!--what, Captain Absolute!--So, I suppose, sir, you are come here, just like myself--to do a kind office, first for your friend--then to proceed to business on your own account.</p>
+<p>ACRES What, Jack!--my dear Jack!--my dear friend!</p>
+<p>ABSOLUTE Hark&#x27;ee, Bob, Beverley&#x27;s at hand.</p>
+<p>Sir LUCIUS Well, Mr. Acres--I don&#x27;t blame your saluting the gentleman civilly.--[To FAULKLAND.] So, Mr. Beverley, if you&#x27;ll choose your weapons, the captain and I will measure the ground.</p>
+<p>FAULKLAND My weapons, sir!</p>
+<p>ACRES Odds life! Sir Lucius, I&#x27;m not going to fight Mr. Faulkland; these are my particular friends.</p>
+<p>Sir LUCIUS What, sir, did you not come here to fight Mr. Acres?</p>
+<p>FAULKLAND Not I, upon my word, sir.</p>
+<p>Sir LUCIUS Well, now, that&#x27;s mighty provoking! But I hope, Mr. Faulkland, as there are three of us come on purpose for the game, you won&#x27;t be so cantanckerous as to spoil the party by sitting out.</p>
+<p>ABSOLUTE O pray, Faulkland, fight to oblige Sir Lucius.</p>
+<p>FAULKLAND Nay, if Mr. Acres is so bent on the matter----</p>
+<p>ACRES No, no, Mr. Faulkland;--I&#x27;ll bear my disappointment like a Christian.--Look&#x27;ee, Sir Lucius, there&#x27;s no occasion at all for me to fight; and if it is the same to you, I&#x27;d as lieve let it alone.</p>
+<p>Sir LUCIUS Observe me, Mr. Acres--I must not be trifled with. You have certainly challenged somebody--and you came here to fight him. Now, if that gentleman is willing to represent him--I can&#x27;t see, for my soul, why it isn&#x27;t just the same thing.</p>
+<p>ACRES Why no--Sir Lucius--I tell you, &#x27;tis one Beverley I&#x27;ve challenged--a fellow, you see, that dare not show his face!--if he were here, I&#x27;d make him give up his pretensions directly!</p>
+<p>ABSOLUTE Hold, Bob--let me set you right--there is no such man as Beverley in the case.--The person who assumed that name is before you; and as his pretensions are the same in both characters, he is ready to support them in whatever way you please.</p>
+<p>Sir LUCIUS Well, this is lucky.--Now you have an opportunity----</p>
+<p>ACRES What, quarrel with my dear friend Jack Absolute?--not if he were fifty Beverleys! Zounds! Sir Lucius, you would not have me so unnatural.</p>
+<p>Sir LUCIUS Upon my conscience, Mr. Acres, your valour has oozed away with a vengeance!</p>
+<p>ACRES Not in the least! Odds backs and abettors! I&#x27;ll be your second with all my heart--and if you should get a quietus, you may command me entirely. I&#x27;ll get you snug lying in the Abbey here; or pickle you, and send you over to Blunderbuss-hall, or anything of the kind, with the greatest pleasure.</p>
+<p>Sir LUCIUS Pho! pho! you are little better than a coward.</p>
+<p>ACRES Mind, gentlemen, he calls me a coward; coward was the word, by my valour!</p>
+<p>Sir LUCIUS Well, sir?</p>
+<p>ACRES Look&#x27;ee, Sir Lucius, &#x27;tisn&#x27;t that I mind the word coward--coward may be said in joke--But if you had called me a poltroon, odds daggers and balls----</p>
+<p>Sir LUCIUS Well, sir?</p>
+<p>ACRES I should have thought you a very ill-bred man.</p>
+<p>Sir LUCIUS Pho! you are beneath my notice.</p>
+<p>ABSOLUTE Nay, Sir Lucius, you can&#x27;t have a better second than my friend Acres--He is a most determined dog--called in the country, Fighting Bob.--He generally kills a man a week--don&#x27;t you Bob?</p>
+<p>ACRES Ay--at home!</p>
+<p>Sir LUCIUS Well, then, captain, &#x27;tis we must begin--so come out, my little counsellor--[Draws his sword]--and ask the gentleman, whether he will resign the lady, without forcing you to proceed against him?</p>
+<p>ABSOLUTE Come on then, sir--[Draws]; since you won&#x27;t let it be an amicable suit, here&#x27;s my reply.</p>
+<p>[Enter Sir ANTHONY ABSOLUTE, DAVID, Mrs. MALAPROP, LYDIA, and JULIA.]</p>
+<p>DAVID Knock &#x27;em all down, sweet Sir Anthony; knock down my master in particular; and bind his hands over to their good behaviour!</p>
+<p>Sir ANTHONY Put up, Jack, put up, or I shall be in a frenzy--how came you in a duel, sir?</p>
+<p>ABSOLUTE Faith, sir, that gentleman can tell you better than I; &#x27;twas he called on me, and you know, sir, I serve his majesty.</p>
+<p>Sir ANTHONY Here&#x27;s a pretty fellow; I catch him going to cut a man&#x27;s throat, and he tells me, he serves his majesty!--Zounds! sirrah, then how durst you draw the king&#x27;s sword against one of his subjects?</p>
+<p>ABSOLUTE Sir! I tell you, that gentleman called me out, without explaining his reasons.</p>
+<p>Sir ANTHONY Gad! sir, how came you to call my son out, without explaining your reasons!</p>
+<p>Sir LUCIUS Your son, sir, insulted me in a manner which my honour could not brook.</p>
+<p>Sir ANTHONY Zounds! Jack, how durst you insult the gentleman in a manner which his honour could not brook?</p>
+<p>Mrs. MALAPROP Come, come, let&#x27;s have no honour before ladies--Captain Absolute, come here--How could you intimidate us so?--Here&#x27;s Lydia has been terrified to death for you.</p>
+<p>ABSOLUTE For fear I should be killed, or escape, ma&#x27;am?</p>
+<p>Mrs. MALAPROP Nay, no delusions to the past--Lydia is convinced; speak, child.</p>
+<p>Sir LUCIUS With your leave, ma&#x27;am, I must put in a word here: I believe I could interpret the young lady&#x27;s silence. Now mark----</p>
+<p>LYDIA What is it you mean, sir?</p>
+<p>Sir LUCIUS Come, come, Delia, we must be serious now--this is no time for trifling.</p>
+<p>LYDIA &#x27;Tis true, sir; and your reproof bids me offer this gentleman my hand, and solicit the return of his affections.</p>
+<p>ABSOLUTE O! my little angel, say you so?--Sir Lucius--I perceive there must be some mistake here, with regard to the affront which you affirm I have given you. I can only say, that it could not have been intentional. And as you must be convinced, that I should not fear to support a real injury--you shall now see that I am not ashamed to atone for an inadvertency--I ask your pardon.--But for this lady, while honoured with her approbation, I will support my claim against any man whatever.</p>
+<p>Sir ANTHONY Well said, Jack, and I&#x27;ll stand by you, my boy.</p>
+<p>ACRES Mind, I give up all my claim--I make no pretensions to any thing in the world; and if I can&#x27;t get a wife without fighting for her, by my valour! I&#x27;ll live a bachelor.</p>
+<p>Sir LUCIUS Captain, give me your hand: an affront handsomely acknowledged becomes an obligation; and as for the lady, if she chooses to deny her own hand-writing, here---- [Takes out letters.]</p>
+<p>Mrs. MALAPROP O, he will dissolve my mystery!--Sir Lucius, perhaps there&#x27;s some mistake--perhaps I can illuminate----</p>
+<p>Sir LUCIUS Pray, old gentlewoman, don&#x27;t interfere where you have no business.--Miss Languish, are you my Delia, or not?</p>
+<p>LYDIA Indeed, Sir Lucius, I am not. [Walks aside with CAPTAIN ABSOLUTE.]</p>
+<p>Mrs. MALAPROP Sir Lucius O&#x27;Trigger--ungrateful as you are--I own the soft impeachment --pardon my blushes, I am Delia.</p>
+<p>Sir LUCIUS You Delia--pho! pho! be easy.</p>
+<p>Mrs. MALAPROP Why, thou barbarous Vandyke--those letters are mine--When you are more sensible of my benignity--perhaps I may be brought to encourage your addresses.</p>
+<p>Sir LUCIUS Mrs. Malaprop, I am extremely sensible of your condescension; and whether you or Lucy have put this trick on me, I am equally beholden to you.--And, to show you I am not ungrateful, Captain Absolute, since you have taken that lady from me, I&#x27;ll give you my Delia into the bargain.</p>
+<p>ABSOLUTE I am much obliged to you, Sir Lucius; but here&#x27;s my friend, Fighting Bob, unprovided for.</p>
+<p>Sir LUCIUS Hah! little Valour--here, will you make your fortune?</p>
+<p>ACRES Odds wrinkles! No.--But give me your hand, Sir Lucius, forget and forgive; but if ever I give you a chance of pickling me again, say Bob Acres is a dunce, that&#x27;s all.</p>
+<p>Sir ANTHONY Come, Mrs. Malaprop, don&#x27;t be cast down--you are in your bloom yet.</p>
+<p>Mrs. MALAPROP O Sir Anthony--men are all barbarians.</p>
+<p>[All retire but JULIA and FAULKLAND.]</p>
+<p>JULIA [Aside.] He seems dejected and unhappy--not sullen; there was some foundation, however, for the tale he told me--O woman! how true should be your judgment, when your resolution is so weak!</p>
+<p>FAULKLAND Julia!--how can I sue for what I so little deserve? I dare not presume--yet Hope is the child of Penitence.</p>
+<p>JULIA Oh! Faulkland, you have not been more faulty in your unkind treatment of me, than I am now in wanting inclination to resent it. As my heart honestly bids me place my weakness to the account of love, I should be ungenerous not to admit the same plea for yours.</p>
+<p>FAULKLAND Now I shall be blest indeed!</p>
+<p>Sir ANTHONY [Coming forward.] What&#x27;s going on here?--So you have been quarrelling too, I warrant! Come, Julia, I never interfered before; but let me have a hand in the matter at last.--All the faults I have ever seen in my friend Faulkland seemed to proceed from what he calls the delicacy and warmth of his affection for you--There, marry him directly, Julia; you&#x27;ll find he&#x27;ll mend surprisingly!</p>
+<p>[The rest come forward.]</p>
+<p>Sir LUCIUS Come, now, I hope there is no dissatisfied person, but what is content; for as I have been disappointed myself, it will be very hard if I have not the satisfaction of seeing other people succeed better.</p>
+<p>ACRES You are right, Sir Lucius.--So Jack, I wish you joy--Mr. Faulkland the same.--Ladies,--come now, to show you I&#x27;m neither vexed nor angry, odds tabors and pipes! I&#x27;ll order the fiddles in half an hour to the New Rooms--and I insist on your all meeting me there.</p>
+<p>Sir ANTHONY &#x27;Gad! sir, I like your spirit; and at night we single lads will drink a health to the young couples, and a husband to Mrs. Malaprop.</p>
+<p>FAULKLAND Our partners are stolen from us, Jack--I hope to be congratulated by each other--yours for having checked in time the errors of an ill-directed imagination, which might have betrayed an innocent heart; and mine, for having, by her gentleness and candour, reformed the unhappy temper of one, who by it made wretched whom he loved most, and tortured the heart he ought to have adored.</p>
+<p>ABSOLUTE Well, Jack, we have both tasted the bitters, as well as the sweets of love; with this difference only, that you always prepared the bitter cup for yourself, while I----</p>
+<p>LYDIA Was always obliged to me for it, hey! Mr. Modesty?--But come, no more of that--our happiness is now as unalloyed as general.</p>
+<p>JULIA Then let us study to preserve it so: and while Hope pictures to us a flattering scene of future bliss, let us deny its pencil those colours which are too bright to be lasting.--When hearts deserving happiness would unite their fortunes, Virtue would crown them with an unfading garland of modest hurtless flowers; but ill-judging Passion will force the gaudier rose into the wreath, whose thorn offends them when its leaves are dropped!</p>
+<p>[Exeunt omnes.]</p>
+<p>* * * * * * * * * *</p>
+<h2 class="chapter" id="c23">Epilogue By the Author</h2>
+<p>Spoken by MRS. BULKLEY</p>
+<p>Ladies, for you--I heard our poet say-- He&#x27;d try to coax some moral from his play: &quot;One moral&#x27;s plain,&quot; cried I, &quot;without more fuss; Man&#x27;s social happiness all rests on us: Through all the drama--whether damn&#x27;d or not-- Love gilds the scene, and women guide the plot. From every rank obedience is our due-- D&#x27;ye doubt?--The world&#x27;s great stage shall prove it true.&quot; The cit, well skill&#x27;d to shun domestic strife, Will sup abroad; but first he&#x27;ll ask his wife: John Trot, his friend, for once will do the same, But then--he&#x27;ll just step home to tell his dame. The surly squire at noon resolves to rule, And half the day--Zounds! madam is a fool! Convinced at night, the vanquish&#x27;d victor says, Ah, Kate! you women have such coaxing ways. The jolly toper chides each tardy blade, Till reeling Bacchus calls on Love for aid: Then with each toast he sees fair bumpers swim, And kisses Chloe on the sparkling brim! Nay, I have heard that statesmen--great and wise-- Will sometimes counsel with a lady&#x27;s eyes! The servile suitors watch her various face, She smiles preferment, or she frowns disgrace, Curtsies a pension here--there nods a place. Nor with less awe, in scenes of humbler life, Is view&#x27;d the mistress, or is heard the wife. The poorest peasant of the poorest soil, The child of poverty, and heir to toil, Early from radiant Love&#x27;s impartial light Steals one small spark to cheer this world of night: Dear spark! that oft through winter&#x27;s chilling woes Is all the warmth his little cottage knows! The wandering tar, who not for years has press&#x27;d, The widow&#x27;d partner of his day of rest, On the cold deck, far from her arms removed, Still hums the ditty which his Susan loved; And while around the cadence rude is blown, The boatswain whistles in a softer tone. The soldier, fairly proud of wounds and toil, Pants for the triumph of his Nancy&#x27;s smile! But ere the battle should he list her cries, The lover trembles--and the hero dies! That heart, by war and honour steel&#x27;d to fear, Droops on a sigh, and sickens at a tear! But ye more cautious, ye nice-judging few, Who give to beauty only beauty&#x27;s due, Though friends to love--ye view with deep regret Our conquests marr&#x27;d, our triumphs incomplete, Till polish&#x27;d wit more lasting charms disclose, And judgment fix the darts which beauty throws! In female breasts did sense and merit rule, The lover&#x27;s mind would ask no other school; Shamed into sense, the scholars of our eyes, Our beaux from gallantry would soon be wise; Would gladly light, their homage to improve, The lamp of knowledge at the torch of love!</p>
+<p>* * * * * * * * * *</p>
+<p class="colophon">Public domain text. BookClassics digital edition.</p>
+</body></html>
