@@ -1,0 +1,96 @@
+{
+ "lot": "2026-10-04-u",
+ "books": [
+  {
+   "title": "Shakespeare's Sonnets",
+   "author": "William Shakespeare",
+   "cat": "theatre",
+   "meta": "England · 1609",
+   "desc": "The 154 sonnets of love, time, beauty and mortality addressed to a fair young man and a mysterious dark lady.",
+   "editions": [
+    {"lang": "en", "gid": 1041, "check": "sonnets"}
+   ],
+   "about": [
+    "The first sonnets urge a beautiful young man to marry and have children so that his beauty will survive him; the poet then promises him immortality through verse itself. Later sonnets speak of love, absence, jealousy, a rival poet and the ravages of time, and the final group concerns a \"dark lady\" whose hold over the poet is both passionate and bitter. They include some of the most famous poems in English, such as \"Shall I compare thee to a summer's day?\".",
+    "Written in the English sonnet form of three quatrains and a closing couplet, the poems continue the Renaissance sonnet tradition that began with Petrarch, while exploring desire, friendship and the power of poetry with great psychological complexity.",
+    "The 154 sonnets were first published together in a quarto of 1609 entitled Shake-speares Sonnets, followed by the poem \"A Lover's Complaint\", which is not included here. Two of them had appeared earlier, in 1599, in the miscellany The Passionate Pilgrim."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "The Georgics",
+   "author": "Virgil",
+   "cat": "theatre",
+   "meta": "Rome · 29 BC",
+   "desc": "Virgil's poem on farming, trees, livestock and bees, a celebration of rural labour in the age of civil war.",
+   "editions": [
+    {"lang": "en", "gid": 232, "check": "georgic", "credit": "Traduction : James Rhoades (1841-1923)"}
+   ],
+   "about": [
+    "Dedicated to his patron Maecenas, the poem is divided into four books: the first on the cultivation of crops and the signs of the weather, the second on trees and vines, the third on cattle and horses, and the fourth on bees. It ends with the story of the beekeeper Aristaeus and the myth of Orpheus and Eurydice.",
+    "Following the model of Hesiod and of Varro's work on farming, Virgil praises hard work and the Italian countryside, while reflecting on the violence of civil war and the hopes placed in Octavian.",
+    "The Georgics, 2,188 lines of hexameter verse, were probably published in 29 BC. This English verse translation is by James Rhoades."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "Poetics",
+   "author": "Aristotle",
+   "cat": "philosophie",
+   "meta": "Greece · c. 335 BC",
+   "desc": "The earliest surviving work of literary theory, in which Aristotle analyses tragedy, plot, character and the purpose of imitation.",
+   "editions": [
+    {"lang": "en", "gid": 1974, "check": "poetics", "credit": "Traduction : S. H. Butcher (1850-1910)"}
+   ],
+   "about": [
+    "Aristotle begins by defining poetry as imitation (mimesis) and distinguishing its kinds, epic, tragedy, comedy and others, by their means, objects and manner. The heart of the treatise is his analysis of tragedy: its six parts, the primacy of plot, the unity of action, reversal and recognition, the tragic hero and the arousal of pity and fear leading to catharsis. He ends by comparing tragedy with epic poetry.",
+    "The Poetics is the earliest surviving work of Greek dramatic theory and the first philosophical treatise devoted solely to literary theory. Its concepts, such as catharsis and hamartia, have been debated by critics ever since.",
+    "The work dates from around 335 BC. Only its first part, on tragedy and epic, survives. It was long unknown in the West and was rediscovered in the Middle Ages through a Latin translation of an Arabic version by Averroes. This English translation is by S. H. Butcher."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "In Praise of Folly",
+   "author": "Desiderius Erasmus",
+   "cat": "philosophie",
+   "meta": "Netherlands · 1511",
+   "desc": "Folly herself takes the floor to praise her own powers, mocking the vanities of princes, scholars, monks and theologians.",
+   "editions": [
+    {"lang": "en", "gid": 30201, "check": "praise of folly", "credit": "anonyme"}
+   ],
+   "about": [
+    "In a mock learned oration, Folly, daughter of Plutus, the god of wealth, praises herself and shows that nothing in human life would be possible without her: love, marriage, friendship, war and power all depend on illusion and self-deception. She mocks lovers, princes, courtiers, inventors, writers, gamblers and pedants, then turns her satire on the superstitions and corrupt practices of monks, theologians and churchmen, before ending with the \"folly\" of the true Christian.",
+    "Written in Latin in the manner of the Greek satirist Lucian, the work is a spiralling satire on every part of human life and an important text of the Renaissance, which played a role in the beginnings of the Protestant Reformation. Its Latin title, Moriae Encomium, is also a pun on the name of Erasmus's friend Thomas More.",
+    "Erasmus wrote it in 1509, while staying with Thomas More in London, and it was first printed in June 1511. This edition reproduces an anonymous English translation published in London in 1876, with illustrations after Hans Holbein, a life of Erasmus and his letter to Thomas More."
+   ],
+   "author_short": "Dutch humanist, theologian and philosopher (c. 1466–1536), author of In Praise of Folly and editor of the Greek New Testament.",
+   "author_long": [
+    "Desiderius Erasmus, known as Erasmus of Rotterdam, was born in Rotterdam in the late 1460s, probably in 1466. Orphaned and poor, he became a canon and a priest, studied and travelled widely, and became the most famous humanist scholar of the Renaissance. He died on 12 July 1536.",
+    "He prepared pioneering Latin and Greek editions of the New Testament and of the Church Fathers, which influenced both the Protestant and the Catholic Reformations. He argued for peace and tolerance, and wrote the satire In Praise of Folly (1511)."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "The Satyricon",
+   "author": "Petronius",
+   "cat": "fiction",
+   "meta": "Rome · 1st century",
+   "desc": "The picaresque adventures of the young Encolpius in Nero's Italy, including the extravagant banquet of the freedman Trimalchio.",
+   "editions": [
+    {"lang": "en", "gid": 5225, "check": "satyricon", "credit": "Traduction : W. C. Firebaugh (1882-1945)"}
+   ],
+   "about": [
+    "The narrator, Encolpius, a moderately educated young man, wanders through southern Italy with his companion and rival Ascyltos and the young Giton, whom both desire. The most famous surviving episode is the \"Banquet of Trimalchio\", a fabulously rich and vulgar former slave who entertains his guests with absurd dishes, boastful speeches and tales. Later the old poet Eumolpus joins the travellers, and their misadventures lead to shipwreck and to the town of Croton.",
+    "The Satyricon is a comic and satirical portrait of Roman society, mixing prose and verse, parody and realism. It contains frank sexual content.",
+    "The work is generally attributed to Petronius, a courtier of Nero, and was written in the first century AD; only fragments of a much longer work survive. W. C. Firebaugh's \"complete and unexpurgated\" translation also includes, clearly identified, the later forged additions of Nodot and Marchena."
+   ],
+   "author_short": "Roman courtier and writer (died AD 66), the \"judge of elegance\" at the court of Nero, generally believed to be the author of the Satyricon.",
+   "author_long": [
+    "Gaius Petronius Arbiter was a courtier during the reign of Nero. Tacitus, Plutarch and Pliny the Elder describe him as Nero's elegantiae arbiter, his \"judge of elegance\" and authority on matters of taste. According to Tacitus, he died in AD 66.",
+    "He is generally believed to be the author of the Satyricon, a satirical novel written during Nero's reign."
+   ],
+   "librivox": []
+  }
+ ],
+ "refused": []
+}
