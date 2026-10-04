@@ -1,0 +1,63 @@
+=== BookClassics — lot 2026-10-04-p — 2026-10-04 01:21 ===
+== 1/4 Fabrication des livres (EPUB, PDF, TXT, HTML) ==
+… The Song of the Lark [en] — Gutenberg #44
+   + the-song-of-the-lark [en] OK — Project Gutenberg (#44), 150727 mots, 58 chapitres — epub:442Ko pdf:1904Ko txt:824Ko html:844Ko
+… Maggie: A Girl of the Streets [en] — Gutenberg #447
+   + maggie-a-girl-of-the-streets [en] OK — Project Gutenberg (#447), 22229 mots, 18 chapitres — epub:137Ko pdf:419Ko txt:124Ko html:141Ko
+… The Blithedale Romance [en] — Gutenberg #2081
+   + the-blithedale-romance [en] OK — Project Gutenberg (#2081), 75731 mots, 29 chapitres — epub:271Ko pdf:1033Ko txt:425Ko html:447Ko
+… The Innocents Abroad [en] — Gutenberg #3176
+   + the-innocents-abroad [en] OK — Project Gutenberg (#3176), 191094 mots, 65 chapitres — epub:555Ko pdf:2377Ko txt:1059Ko html:1084Ko
+… Incidents in the Life of a Slave Girl [en] — Gutenberg #11030
+   + incidents-in-the-life-of-a-slave-girl [en] OK — Project Gutenberg (#11030), 83176 mots, 42 chapitres — epub:278Ko pdf:1063Ko txt:436Ko html:448Ko
+== 2/4 Dépôt des livres ==
++ The Song of the Lark : en
++ Maggie: A Girl of the Streets : en
++ The Blithedale Romance : en
++ The Innocents Abroad : en
++ Incidents in the Life of a Slave Girl : en
+   publié : ebookclassics-files — Nouveaux livres : The Song of the Lark, Maggie: A Girl of the Streets, The Blithedale Romance, The Innocents Abroad, Incidents in the Life of a Slave Girl
+== 3/4 Site : catalogue, pages livres, plan du site ==
+   345 pages livres, 344 couvertures, 350 adresses dans le sitemap
+   5 livre(s) ajouté(s) au catalogue
+   publié : ebookclassics-site — Nouveaux livres au catalogue : The Song of the Lark, Maggie: A Girl of the Streets, The Blithedale Romance, The Innocents Abroad, Incidents in the Life of a Slave Girl
+TERMINE — 5 nouveau(x) livre(s) : The Song of the Lark, Maggie: A Girl of the Streets, The Blithedale Romance, The Innocents Abroad, Incidents in the Life of a Slave Girl
+=== BookClassics — lot 2026-10-04-q — 2026-10-04 01:23 ===
+== 1/4 Fabrication des livres (EPUB, PDF, TXT, HTML) ==
+… Pamela, or Virtue Rewarded [en] — Gutenberg #6124
+   + pamela-or-virtue-rewarded [en] OK — Project Gutenberg (#6124), 221450 mots, 0 chapitres — epub:473Ko pdf:2417Ko txt:1125Ko html:1147Ko
+… Twice-Told Tales [en] — Gutenberg #508
+   + twice-told-tales [en] OK — Project Gutenberg (#508), 84560 mots, 21 chapitres — epub:269Ko pdf:1100Ko txt:475Ko html:497Ko
+… Roughing It [en] — Gutenberg #3177
+   + roughing-it [en] OK — Project Gutenberg (#3177), 164653 mots, 98 chapitres — epub:502Ko pdf:2187Ko txt:910Ko html:933Ko
+… Rip Van Winkle [en] — Gutenberg #60976
+   + rip-van-winkle [en] OK — Project Gutenberg (#60976), 7192 mots, 4 chapitres — epub:78Ko pdf:169Ko txt:40Ko html:44Ko
+… The Sleeper Awakes [en] — Gutenberg #12163
+   + the-sleeper-awakes [en] OK — Project Gutenberg (#12163), 75625 mots, 24 chapitres — epub:251Ko pdf:1072Ko txt:425Ko html:458Ko
+== 2/4 Dépôt des livres ==
++ Pamela, or Virtue Rewarded : en
++ Twice-Told Tales : en
++ Roughing It : en
++ Rip Van Winkle : en
++ The Sleeper Awakes : en
+   publié : ebookclassics-files — Nouveaux livres : Pamela, or Virtue Rewarded, Twice-Told Tales, Roughing It, Rip Van Winkle, The Sleeper Awakes
+== 3/4 Site : catalogue, pages livres, plan du site ==
+   350 pages livres, 349 couvertures, 355 adresses dans le sitemap
+   5 livre(s) ajouté(s) au catalogue
+   publié : ebookclassics-site — Nouveaux livres au catalogue : Pamela, or Virtue Rewarded, Twice-Told Tales, Roughing It, Rip Van Winkle, The Sleeper Awakes
+TERMINE — 5 nouveau(x) livre(s) : Pamela, or Virtue Rewarded, Twice-Told Tales, Roughing It, Rip Van Winkle, The Sleeper Awakes
+== Livres audio du lot 2026-10-04-p ==
+   LibriVox : The Song of the Lark [en] — « Song of the Lark » (16 h 20)
+   LibriVox : Maggie: A Girl of the Streets [en] — « Maggie: A Girl of the Streets » (2 h 46)
+   LibriVox : The Blithedale Romance [en] — « Blithedale Romance » (8 h 48)
+   LibriVox : The Innocents Abroad [en] — « Innocents Abroad (version 2) » (25 h 14)
+   pas d'enregistrement LibriVox pour Incidents in the Life of a Slave Girl [en]
+   ! ~/r2.conf absent : livres audio non ajoutés
+== Livres audio du lot 2026-10-04-q ==
+   LibriVox : Pamela, or Virtue Rewarded [en] — « Pamela, or Virtue Rewarded » (22 h 10)
+   pas d'enregistrement LibriVox pour Twice-Told Tales [en]
+   LibriVox : Roughing It [en] — « Roughing It » (16 h 56)
+   pas d'enregistrement LibriVox pour Rip Van Winkle [en]
+   LibriVox : The Sleeper Awakes [en] — « Sleeper Awakes » (8 h 14)
+   ! ~/r2.conf absent : livres audio non ajoutés
+FIN 2026-10-04 01:25

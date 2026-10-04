@@ -1,0 +1,111 @@
+{
+ "lot": "2026-10-04-q",
+ "books": [
+  {
+   "title": "Pamela, or Virtue Rewarded",
+   "author": "Samuel Richardson",
+   "cat": "fiction",
+   "meta": "England · 1740",
+   "desc": "In letters to her parents, a fifteen-year-old maidservant describes how she resists the advances of her young master.",
+   "editions": [
+    {
+     "lang": "en",
+     "gid": 6124,
+     "check": "pamela"
+    }
+   ],
+   "about": [
+    "Pamela Andrews, a fifteen-year-old maidservant, writes to her poor but virtuous parents. After the death of her kind mistress, the lady's son, Mr. B, a wealthy landowner, begins to make advances to her. Pamela resists, and Mr. B has her taken against her will to his estate in Lincolnshire, where she is kept a prisoner under the watch of the brutal housekeeper Mrs. Jewkes, while the young clergyman Mr. Williams tries to help her. Her letters and journal record her fears, her resistance and her changing feelings.",
+    "Told entirely in letters, Richardson's novel is a study of virtue, class and power, and an early commentary on male aggression and the abuse of authority. Its heroine's eventual reward was widely debated, and the book provoked parodies such as Henry Fielding's Shamela.",
+    "Pamela was published in 1740 and became a best-seller of its time. It is often considered one of the first true English novels. Richardson published a sequel, Pamela in her Exalted Condition, in 1742."
+   ],
+   "author_short": "English writer and printer (1689–1761), author of the epistolary novels Pamela, Clarissa and Sir Charles Grandison.",
+   "author_long": [
+    "Samuel Richardson was baptised on 19 August 1689 and was probably born in Mackworth, Derbyshire. Apprenticed to a London printer, he became a successful printer himself and rose to be master of the Stationers' Company. He died on 4 July 1761.",
+    "He began writing novels late in life. His three epistolary novels are Pamela, or Virtue Rewarded (1740), Clarissa, or The History of a Young Lady (1748) and The History of Sir Charles Grandison (1753)."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "Twice-Told Tales",
+   "author": "Nathaniel Hawthorne",
+   "cat": "fiction",
+   "meta": "United States · 1837",
+   "desc": "Stories of Puritan New England, allegories and sketches, including \"The Minister's Black Veil\" and \"Dr. Heidegger's Experiment\".",
+   "editions": [
+    {
+     "lang": "en",
+     "gid": 508,
+     "check": "twice-told"
+    }
+   ],
+   "about": [
+    "Hawthorne's tales range from historical stories of colonial and Puritan New England, such as \"The Gray Champion\", \"The May-Pole of Merry Mount\" and \"Endicott and the Red Cross\", to moral allegories and quiet sketches of everyday life. In \"The Minister's Black Veil\", a clergyman appears one Sunday with his face hidden by a black veil, which he refuses ever to remove. In \"Dr. Heidegger's Experiment\", four elderly friends drink from the Fountain of Youth.",
+    "The stories explore sin, guilt, secrecy and the burden of the Puritan past, themes Hawthorne developed later in The Scarlet Letter. Some reflect the prejudices of the colonial period they describe.",
+    "The stories had all appeared in magazines and annuals before being collected, hence the title, taken from Shakespeare's King John. The first volume was published in 1837, and an expanded two-volume edition in 1842."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "Roughing It",
+   "author": "Mark Twain",
+   "cat": "aventure",
+   "meta": "United States · 1872",
+   "desc": "Young Sam Clemens heads west by stagecoach to Nevada and tries his luck as a silver prospector, speculator and journalist.",
+   "editions": [
+    {
+     "lang": "en",
+     "gid": 3177,
+     "check": "roughing it"
+    }
+   ],
+   "about": [
+    "Twain sets out with his brother, newly appointed Secretary of the Nevada Territory, on a stagecoach journey across the plains and mountains, visiting Salt Lake City and meeting Brigham Young on the way. In Carson City and Virginia City he tries silver prospecting, gets briefly and imaginarily rich through mining claims, and begins his career as a reporter for the Territorial Enterprise. The book ends with his journey to San Francisco and to the Sandwich Islands, now Hawaii.",
+    "Twain's travel book mixes comic exaggeration, tall tales and vivid portraits of the American West. Its descriptions of Native Americans, Chinese immigrants and other peoples often rely on the prejudices and vocabulary of its time.",
+    "Roughing It was written in 1870 and 1871 and published in 1872, after The Innocents Abroad."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "Rip Van Winkle",
+   "author": "Washington Irving",
+   "cat": "fiction",
+   "meta": "United States · 1819",
+   "desc": "A good-natured idler wanders into the Catskill Mountains, drinks with mysterious Dutchmen and wakes twenty years later in a changed world.",
+   "editions": [
+    {
+     "lang": "en",
+     "gid": 60976,
+     "check": "rip van winkle"
+    }
+   ],
+   "about": [
+    "Rip Van Winkle, a Dutch-American villager who avoids all useful work and is scolded by his wife, lives at the foot of the Catskill Mountains in the years before the American Revolution. One day, wandering in the mountains with his dog, he meets a strange company of old Dutchmen playing ninepins, drinks their liquor and falls asleep. When he wakes and returns to his village, everything has changed, and he declares himself a loyal subject of King George III, unaware that the Revolution has taken place.",
+    "Irving's humorous tale draws on Dutch-American folklore and plays on the theme of time and change in the young United States.",
+    "\"Rip Van Winkle\" was first published in 1819 in The Sketch Book of Geoffrey Crayon, Gent. Irving admitted that when he wrote it, he had never been to the Catskills. This edition is illustrated by Arthur Rackham."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "The Sleeper Awakes",
+   "author": "H. G. Wells",
+   "cat": "aventure",
+   "meta": "England · 1910",
+   "desc": "A man who falls into a trance in the 1890s wakes two centuries later to find himself the owner of half the world, in a London ruled by a few.",
+   "editions": [
+    {
+     "lang": "en",
+     "gid": 12163,
+     "check": "sleeper awakes"
+    }
+   ],
+   "about": [
+    "Graham, an Englishman suffering from insomnia, falls into a cataleptic trance in the late nineteenth century. While he sleeps, the money left to him grows until his trustees, the Council, control much of the world. When he wakes, he finds a vast London of moving ways and giant machines, where the masses labour under the rule of a powerful elite. A revolt led by the ambitious Ostrog makes Graham a symbol of hope, but he soon discovers that he is a pawn in a struggle for power.",
+    "Wells's dystopian novel explores capitalism, propaganda, technology and the condition of the working masses in a future city.",
+    "The novel was first serialised in The Graphic in 1899 and published as a book the same year under the title When the Sleeper Wakes. Wells revised it in 1910 with \"a number of excisions and alterations\" and renamed it The Sleeper Awakes; this edition follows the revised text."
+   ],
+   "librivox": []
+  }
+ ],
+ "refused": []
+}
