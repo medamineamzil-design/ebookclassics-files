@@ -756,6 +756,14 @@
     "txt"
    ]
   },
+  "gitanjali": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "great-expectations": {
    "en": [
     "epub",
@@ -1928,6 +1936,14 @@
     "txt"
    ]
   },
+  "songs-of-innocence-and-of-experience": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "sons-and-lovers": {
    "en": [
     "epub",
@@ -2375,6 +2391,14 @@
    ]
   },
   "the-garden-party-and-other-stories": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-gilded-age": {
    "en": [
     "epub",
     "html",
@@ -3693,5 +3717,5 @@
    ]
   }
  },
- "generated": "2026-10-04T01:32:26Z"
+ "generated": "2026-10-04T01:35:25Z"
 }
