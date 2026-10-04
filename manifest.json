@@ -240,6 +240,14 @@
     "txt"
    ]
   },
+  "at-the-back-of-the-north-wind": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "atala": {
    "en": [
     "epub",
@@ -339,6 +347,14 @@
    ]
   },
   "capital-volume-i": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "captains-courageous": {
    "en": [
     "epub",
     "html",
@@ -1042,6 +1058,20 @@
   },
   "mansfield-park": {
    "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "martin-eden": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ],
+   "it": [
     "epub",
     "html",
     "pdf",
@@ -1858,6 +1888,14 @@
     "txt"
    ]
   },
+  "the-first-men-in-the-moon": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-gambler": {
    "en": [
     "epub",
@@ -2061,6 +2099,14 @@
    ]
   },
   "the-mayor-of-casterbridge": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-memoirs-of-sherlock-holmes": {
    "en": [
     "epub",
     "html",
@@ -2841,5 +2887,5 @@
    ]
   }
  },
- "generated": "2026-10-04T00:12:13Z"
+ "generated": "2026-10-04T00:12:46Z"
 }
