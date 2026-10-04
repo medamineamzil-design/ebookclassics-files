@@ -1090,6 +1090,14 @@
     "txt"
    ]
   },
+  "mother": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "mrs-dalloway": {
    "en": [
     "epub",
@@ -1338,6 +1346,14 @@
     "txt"
    ]
   },
+  "poor-folk": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "pride-and-prejudice": {
    "en": [
     "epub",
@@ -1363,6 +1379,14 @@
    ]
   },
   "rebecca-of-sunnybrook-farm": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "resurrection": {
    "en": [
     "epub",
     "html",
@@ -1716,6 +1740,14 @@
     "txt"
    ]
   },
+  "the-cossacks": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-count-of-monte-cristo": {
    "en": [
     "epub",
@@ -1952,6 +1984,14 @@
     "txt"
    ],
    "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-lady-with-the-dog-and-other-stories": {
+   "en": [
     "epub",
     "html",
     "pdf",
@@ -2761,5 +2801,5 @@
    ]
   }
  },
- "generated": "2026-10-04T00:11:12Z"
+ "generated": "2026-10-04T00:11:40Z"
 }
