@@ -1284,6 +1284,14 @@
     "txt"
    ]
   },
+  "mrs-warren-s-profession": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "much-ado-about-nothing": {
    "en": [
     "epub",
@@ -1299,6 +1307,14 @@
    ]
   },
   "my-antonia": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "narrative-of-the-life-of-frederick-douglass": {
    "en": [
     "epub",
     "html",
@@ -2076,6 +2092,14 @@
     "txt"
    ]
   },
+  "the-fall-of-the-house-of-usher": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-federalist-papers": {
    "en": [
     "epub",
@@ -2109,6 +2133,14 @@
    ]
   },
   "the-great-gatsby": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-happy-prince-and-other-tales": {
    "en": [
     "epub",
     "html",
@@ -2408,6 +2440,14 @@
     "txt"
    ],
    "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-narrative-of-arthur-gordon-pym-of-nantucket": {
+   "en": [
     "epub",
     "html",
     "pdf",
@@ -3231,5 +3271,5 @@
    ]
   }
  },
- "generated": "2026-10-04T00:29:57Z"
+ "generated": "2026-10-04T00:35:39Z"
 }
