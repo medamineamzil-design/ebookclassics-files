@@ -1,0 +1,96 @@
+{
+ "lot": "2026-10-04-a",
+ "books": [
+  {
+   "title": "Carmilla",
+   "author": "Sheridan Le Fanu",
+   "cat": "fiction",
+   "meta": "Ireland · 1872",
+   "desc": "In a lonely castle in Styria, a young woman befriends a mysterious and beautiful guest, while the girls of the district fall ill and die.",
+   "editions": [
+    {"lang": "en", "gid": 10007, "check": "carmilla"}
+   ],
+   "about": [
+    "Laura lives with her father in an isolated castle in Styria. One evening a carriage accident brings to their door a young woman of strange beauty, Carmilla, who stays with them while her mother continues her journey. The two girls become close friends, though Carmilla's languid moods, her secrecy about her past and her passionate affection trouble Laura. At the same time, young women in the surrounding countryside fall victim to a mysterious illness, and Laura herself begins to have terrifying dreams.",
+    "Le Fanu's novella is a classic of Gothic horror. Its atmosphere of dread, its unreliable sense of reality and the intense relationship between the two young women made Carmilla the model for many later female vampires.",
+    "Carmilla was serialised in the magazine The Dark Blue from December 1871 to March 1872 and then appeared in Le Fanu's collection In a Glass Darkly (1872), presented as a case from the papers of the physician Dr Martin Hesselius. It predates Bram Stoker's Dracula (1897) by twenty-five years and is often cited as an influence on it."
+   ],
+   "author_short": "Irish writer (1814–1873) of Gothic tales and mystery novels, author of Uncle Silas and Carmilla.",
+   "author_long": [
+    "Joseph Thomas Sheridan Le Fanu was born in Dublin on 28 August 1814. A journalist and newspaper owner, he became editor of the Dublin University Magazine in 1859 and its owner in 1861, running it until shortly before his death. He died in Dublin on 7 February 1873.",
+    "He is regarded as one of the leading ghost-story writers of the nineteenth century. His best-known works include the novels The House by the Churchyard (1863) and Uncle Silas (1864) and the collection In a Glass Darkly (1872), which contains Carmilla."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "The King in Yellow",
+   "author": "Robert W. Chambers",
+   "cat": "fiction",
+   "meta": "United States · 1895",
+   "desc": "Ten stories, the first of them haunted by a forbidden play that drives its readers to despair and madness.",
+   "editions": [
+    {"lang": "en", "gid": 8492, "check": "king in yellow"}
+   ],
+   "about": [
+    "The first four stories, \"The Repairer of Reputations\", \"The Mask\", \"The Court of the Dragon\" and \"The Yellow Sign\", are linked by The King in Yellow, an imaginary play whose second act brings ruin to anyone who reads it, by the mysterious Yellow Sign and by the lost city of Carcosa. The later stories turn away from horror towards romance and the life of young American art students in Paris, where Chambers himself had studied.",
+    "The book mixes the supernatural, fantasy and sentimental fiction. Its weird tales, with their sense of creeping madness, influenced later writers of horror, among them H. P. Lovecraft. The opening story describes a future America with racist and antisemitic policies, seen through the eyes of a disturbed narrator.",
+    "The King in Yellow was published in 1895 by F. Tennyson Neely in New York and by Chatto & Windus in London."
+   ],
+   "author_short": "American writer and illustrator (1865–1933), author of The King in Yellow and many popular novels.",
+   "author_long": [
+    "Robert William Chambers was born in Brooklyn, New York, on 26 May 1865. He studied art at the Art Students League in New York and in Paris, at the École des Beaux-Arts and the Académie Julian, and worked as an illustrator for magazines before turning to writing. He died on 16 December 1933.",
+    "His first novel, In the Quarter (1894), drew on his student years in Paris, and his second book was The King in Yellow (1895). He went on to write a large number of popular historical and romantic novels."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "The Canterville Ghost",
+   "author": "Oscar Wilde",
+   "cat": "jeunesse",
+   "meta": "England · 1887",
+   "desc": "An American diplomat buys a haunted English manor, and the old family ghost finds that his new tenants refuse to be frightened.",
+   "editions": [
+    {"lang": "en", "gid": 14522, "check": "canterville"}
+   ],
+   "about": [
+    "Hiram B. Otis, the American minister in London, buys Canterville Chase from Lord Canterville, who warns him that the house is haunted by the ghost of Sir Simon de Canterville. The practical Otis family, his wife Lucretia, their eldest son Washington, their daughter Virginia and the mischievous twins, are not impressed: they scrub away the ancient bloodstain with Pinkerton's Champion Stain Remover and offer the ghost oil for his rattling chains. Humiliated, Sir Simon tries his most terrifying performances, with little success.",
+    "Wilde's story is a comic tale of the supernatural that gently mocks both English tradition and American practicality, before turning to a more tender theme of compassion and forgiveness through the character of Virginia.",
+    "The Canterville Ghost was first published in two parts in the magazine The Court and Society Review in February and March 1887. It was the first of Wilde's stories to be published."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "Major Barbara",
+   "author": "George Bernard Shaw",
+   "cat": "theatre",
+   "meta": "England · 1905",
+   "desc": "A Salvation Army officer is challenged by her estranged father, a rich arms manufacturer who claims that poverty, not wealth, is the real crime.",
+   "editions": [
+    {"lang": "en", "gid": 3790, "check": "major barbara"}
+   ],
+   "about": [
+    "Lady Britomart Undershaft summons her grown-up children, Stephen, Sarah and Barbara, to meet their father, Andrew Undershaft, from whom she has long been separated. Undershaft is an immensely rich manufacturer of cannons and explosives. Barbara is a Major in the Salvation Army, working among the poor of London, and she is engaged to Adolphus Cusins, a professor of Greek. Father and daughter make a bargain: he will visit her Salvation Army shelter if she will visit his munitions works.",
+    "Shaw's comedy of ideas debates religion, charity, poverty, money and power, and questions whether good can be done with wealth gained from weapons and alcohol. Its arguments, sharp dialogue and paradoxes are typical of Shaw's drama.",
+    "Major Barbara was first performed on 28 November 1905 at the Court Theatre in London, in a production by J. E. Vedrenne and Harley Granville-Barker, who also played Cusins. It was published in 1907."
+   ],
+   "librivox": []
+  },
+  {
+   "title": "The Black Arrow",
+   "author": "Robert Louis Stevenson",
+   "cat": "aventure",
+   "meta": "Scotland · 1888",
+   "desc": "During the Wars of the Roses, a young squire discovers that his guardian may have murdered his father and joins a band of forest outlaws.",
+   "editions": [
+    {"lang": "en", "gid": 848, "check": "black arrow"}
+   ],
+   "about": [
+    "In fifteenth-century England, as the houses of York and Lancaster fight for the throne, young Dick Shelton is the ward of the powerful and unscrupulous Sir Daniel Brackley. A band of outlaws known as the Black Arrow, led by Ellis Duckworth, has sworn revenge on Sir Daniel, and their messages suggest that he was responsible for the death of Dick's father. Dick also befriends a young companion named John Matcham, who is not what he seems, and becomes involved in Sir Daniel's schemes concerning the heiress Joanna Sedley.",
+    "Stevenson's historical adventure novel is full of ambushes, escapes, disguises and battles, and shows the violence and shifting loyalties of the civil war. Among its characters is the young Richard of Gloucester, the future Richard III.",
+    "The Black Arrow was first published as a serial in the weekly Young Folks from June to October 1883, under the pseudonym \"Captain George North\", and appeared in book form in 1888."
+   ],
+   "librivox": []
+  }
+ ],
+ "refused": []
+}
