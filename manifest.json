@@ -916,7 +916,23 @@
     "txt"
    ]
   },
+  "life-on-the-mississippi": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "little-dorrit": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "little-lord-fauntleroy": {
    "en": [
     "epub",
     "html",
@@ -1025,6 +1041,14 @@
    ]
   },
   "mansfield-park": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "mcteague": {
    "en": [
     "epub",
     "html",
@@ -2020,6 +2044,14 @@
     "txt"
    ]
   },
+  "the-legend-of-sleepy-hollow": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-lost-world": {
    "en": [
     "epub",
@@ -2540,6 +2572,14 @@
     "txt"
    ]
   },
+  "the-way-we-live-now": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-wealth-of-nations": {
    "en": [
     "epub",
@@ -2801,5 +2841,5 @@
    ]
   }
  },
- "generated": "2026-10-04T00:11:40Z"
+ "generated": "2026-10-04T00:12:13Z"
 }
