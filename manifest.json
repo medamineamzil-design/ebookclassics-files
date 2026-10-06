@@ -60,6 +60,14 @@
     "txt"
    ]
   },
+  "a-narrative-of-the-captivity-and-restoration-of-mrs-mary-row": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "a-portrait-of-the-artist-as-a-young-man": {
    "en": [
     "epub",
@@ -2114,6 +2122,14 @@
     "txt"
    ]
   },
+  "the-adventures-of-ferdinand-count-fathom": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-adventures-of-huckleberry-finn": {
    "de": [
     "epub",
@@ -2286,6 +2302,14 @@
     "txt"
    ]
   },
+  "the-blue-castle": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-book-of-tea": {
    "en": [
     "epub",
@@ -2295,6 +2319,14 @@
    ]
   },
   "the-brothers-karamazov": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-call-of-cthulhu": {
    "en": [
     "epub",
     "html",
@@ -2466,7 +2498,39 @@
     "txt"
    ]
   },
+  "the-elements-of-programming-style": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-enchanted-april": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-expedition-of-humphry-clinker": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-fall-of-the-house-of-usher": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-farther-adventures-of-robinson-crusoe": {
    "en": [
     "epub",
     "html",
@@ -2547,6 +2611,14 @@
    ]
   },
   "the-happy-prince-and-other-tales": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-history-of-tom-jones-a-foundling": {
    "en": [
     "epub",
     "html",
@@ -2659,6 +2731,14 @@
    ]
   },
   "the-innocents-abroad": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-interesting-narrative-of-the-life-of-olaudah-equiano": {
    "en": [
     "epub",
     "html",
@@ -3857,5 +3937,5 @@
    ]
   }
  },
- "generated": "2026-10-06T14:21:52Z"
+ "generated": "2026-10-06T15:32:43Z"
 }
