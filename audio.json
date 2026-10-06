@@ -1340,6 +1340,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/phaedra/phaedra.mp3"
   }
  },
+ "poetics": {
+  "en": {
+   "bytes": 69085592,
+   "dl": true,
+   "duration": 8629,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/poetics/poetics.mp3"
+  }
+ },
  "pollyanna": {
   "en": {
    "bytes": 223511462,
