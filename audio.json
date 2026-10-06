@@ -151,6 +151,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/around-the-world-in-eighty-days/around-the-world-in-eighty-days-fr.mp3"
   }
  },
+ "barchester-towers": {
+  "en": {
+   "bytes": 717192088,
+   "dl": true,
+   "duration": 89645,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/barchester-towers/barchester-towers.mp3"
+  }
+ },
  "bel-ami": {
   "en": {
    "bytes": 237868572,
