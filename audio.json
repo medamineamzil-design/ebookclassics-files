@@ -1595,6 +1595,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-prince-and-the-pauper/the-prince-and-the-pauper.mp3"
   }
  },
+ "the-princess-and-the-goblin": {
+  "en": {
+   "bytes": 159371290,
+   "dl": true,
+   "duration": 19908,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-princess-and-the-goblin/the-princess-and-the-goblin.mp3"
+  }
+ },
  "the-prisoner-of-zenda": {
   "en": {
    "bytes": 164497748,
