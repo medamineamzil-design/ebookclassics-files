@@ -17,6 +17,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/a-connecticut-yankee-in-king-arthur-s-court/a-connecticut-yankee-in-king-arthur-s-court.mp3"
   }
  },
+ "a-doll-s-house": {
+  "en": {
+   "bytes": 94545605,
+   "dl": true,
+   "duration": 11818,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/a-doll-s-house/a-doll-s-house.mp3"
+  }
+ },
  "a-journal-of-the-plague-year": {
   "en": {
    "bytes": 348060624,
