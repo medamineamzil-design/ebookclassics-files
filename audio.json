@@ -344,6 +344,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/hamlet/hamlet-es.mp3"
   }
  },
+ "hard-times": {
+  "en": {
+   "bytes": 346044756,
+   "dl": true,
+   "duration": 43243,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/hard-times/hard-times.mp3"
+  }
+ },
  "heart": {
   "en": {
    "bytes": 296831952,
