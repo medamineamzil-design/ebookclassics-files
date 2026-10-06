@@ -671,6 +671,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/northanger-abbey/northanger-abbey.mp3"
   }
  },
+ "o-pioneers": {
+  "en": {
+   "bytes": 171254235,
+   "dl": true,
+   "duration": 21394,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/o-pioneers/o-pioneers.mp3"
+  }
+ },
  "oliver-twist": {
   "en": {
    "bytes": 503277426,
