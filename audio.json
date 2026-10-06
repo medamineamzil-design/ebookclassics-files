@@ -42,6 +42,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/a-tale-of-two-cities/a-tale-of-two-cities.mp3"
   }
  },
+ "adam-bede": {
+  "en": {
+   "bytes": 741630129,
+   "dl": true,
+   "duration": 92697,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/adam-bede/adam-bede.mp3"
+  }
+ },
  "alice-s-adventures-in-wonderland": {
   "de": {
    "bytes": 82107160,
