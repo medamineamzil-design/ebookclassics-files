@@ -781,6 +781,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/king-solomon-s-mines/king-solomon-s-mines.mp3"
   }
  },
+ "kipps": {
+  "en": {
+   "bytes": 343323019,
+   "dl": true,
+   "duration": 42906,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/kipps/kipps.mp3"
+  }
+ },
  "lady-windermere-s-fan": {
   "en": {
    "bytes": 71224539,
