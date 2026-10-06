@@ -2458,6 +2458,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/ulysses/ulysses.mp3"
   }
  },
+ "uncle-silas": {
+  "en": {
+   "bytes": 537089677,
+   "dl": true,
+   "duration": 67107,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/uncle-silas/uncle-silas.mp3"
+  }
+ },
  "uncle-tom-s-cabin": {
   "en": {
    "bytes": 605833564,
