@@ -1,0 +1,69 @@
+# BookClassics — lot AUTOMATIQUE quotidien (sans Claude ni PC).
+# Choisit les livres anglais populaires de Gutenberg (hors classiques réservés à l'agent, file_attente.json),
+# vérifie le domaine public, rédige la fiche depuis Wikipédia (crédité, CC BY-SA), dépose le lot dans _inbox
+# puis lance « Publier le lot du jour ». Les audios suivent la nuit (audio-lot.yml).
+name: Lot automatique
+
+on:
+  schedule:
+    - cron: "23 2 * * *"
+  workflow_dispatch:
+    inputs:
+      nombre:
+        description: "Nombre de livres (défaut 50)"
+        required: false
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: lot-auto
+  cancel-in-progress: false
+
+jobs:
+  lot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - name: Dépôt des livres (main)
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+          sparse-checkout: |
+            _inbox
+            .github
+
+      - name: Dépôt du site
+        uses: actions/checkout@v4
+        with:
+          repository: medamineamzil-design/ebookclassics-site
+          token: ${{ secrets.SITE_TOKEN }}
+          path: site
+          fetch-depth: 1
+
+      - name: Préparer le lot
+        env:
+          N: ${{ inputs.nombre || '50' }}
+        run: |
+          D=$(TZ=Europe/Paris date +%F)
+          F="_inbox/lot-$D-auto.json"
+          if [ -e "$F" ] || [ -e "_inbox/faits/lot-$D-auto.json" ]; then echo "lot du jour déjà fait"; exit 0; fi
+          DEJA=$(ls -t _inbox/faits/lot-*.json _inbox/erreurs/lot-*.json _inbox/lot-*.json 2>/dev/null | head -40)
+          python3 site/_auto/lot_auto.py "$N" "$PWD/$F" --dejapris $DEJA
+          python3 -c "import json,sys; sys.exit(0 if json.load(open('$F'))['books'] else 1)" || { echo "aucun livre trouvé"; rm -f "$F"; exit 0; }
+          (cd site && python3 _auto/publier_lot.py "$GITHUB_WORKSPACE/$F" --verifier) | tail -60
+          echo "LOT=$F" >> $GITHUB_ENV
+
+      - name: Déposer le lot et lancer la publication
+        if: env.LOT != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "BookClassics (automatique)"
+          git config user.email "contact@bookclassics.org"
+          git add "$LOT"
+          git commit -q -m "Lot automatique $(TZ=Europe/Paris date +%F)"
+          for i in 1 2 3; do git push -q && break; git pull -q --rebase; done
+          gh workflow run publier-lot.yml --ref main
