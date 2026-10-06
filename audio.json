@@ -770,6 +770,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/northanger-abbey/northanger-abbey.mp3"
   }
  },
+ "notre-dame-de-paris": {
+  "fr": {
+   "bytes": 591910813,
+   "dl": true,
+   "duration": 73985,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/notre-dame-de-paris/notre-dame-de-paris-fr.mp3"
+  }
+ },
  "o-pioneers": {
   "en": {
    "bytes": 171254235,
