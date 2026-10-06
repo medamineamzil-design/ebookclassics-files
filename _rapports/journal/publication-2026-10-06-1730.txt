@@ -1,0 +1,52 @@
+=== BookClassics — lot 2026-10-06-auto — 2026-10-06 15:30 ===
+== 1/4 Fabrication des livres (EPUB, PDF, TXT, HTML) ==
+… The Blue Castle [en] — Gutenberg #67979
+   + the-blue-castle [en] OK — Project Gutenberg (#67979), 68164 mots, 45 chapitres — epub:252Ko pdf:1025Ko txt:389Ko html:405Ko
+… The Enchanted April [en] — Gutenberg #16389
+   + the-enchanted-april [en] OK — Project Gutenberg (#16389), 77958 mots, 22 chapitres — epub:247Ko pdf:1058Ko txt:435Ko html:449Ko
+… The Expedition of Humphry Clinker [en] — Gutenberg #2160
+   + the-expedition-of-humphry-clinker [en] OK — Project Gutenberg (#2160), 147994 mots, 33 chapitres — epub:424Ko pdf:1912Ko txt:831Ko html:843Ko
+… The Adventures of Ferdinand, Count Fathom [en] — Gutenberg #6761
+   + the-adventures-of-ferdinand-count-fathom [en] OK — Project Gutenberg (#6761), 161146 mots, 65 chapitres — epub:505Ko pdf:2100Ko txt:933Ko html:949Ko
+… The History of Tom Jones, a Foundling [en] — Gutenberg #6593
+   + the-history-of-tom-jones-a-foundling [en] OK — Project Gutenberg (#6593), 347897 mots, 289 chapitres — epub:1032Ko pdf:4655Ko txt:1912Ko html:1971Ko
+… The Interesting Narrative of the Life of Olaudah Equiano [en] — Gutenberg #15399
+   + the-interesting-narrative-of-the-life-of-olaudah-equiano [en] OK — Project Gutenberg (#15399), 82415 mots, 5 chapitres — epub:244Ko pdf:1003Ko txt:434Ko html:444Ko
+… A Narrative of the Captivity and Restoration of Mrs. Mary Rowlandson [en] — Gutenberg #851
+   + a-narrative-of-the-captivity-and-restoration-of-mrs-mary-row [en] OK — Project Gutenberg (#851), 20204 mots, 20 chapitres — epub:145Ko pdf:345Ko txt:102Ko html:109Ko
+… The Farther Adventures of Robinson Crusoe [en] — Gutenberg #521
+   + the-farther-adventures-of-robinson-crusoe [en] OK — Project Gutenberg (#521), 120800 mots, 20 chapitres — epub:314Ko pdf:1310Ko txt:608Ko html:618Ko
+… The Call of Cthulhu [en] — Gutenberg #68283
+   + the-call-of-cthulhu [en] OK — Project Gutenberg (#68283), 11923 mots, 1 chapitres — epub:89Ko pdf:218Ko txt:68Ko html:73Ko
+… The Elements of Programming Style [en] — Gutenberg #37134
+   + the-elements-of-programming-style [en] OK — Project Gutenberg (#37134), 13475 mots, 11 chapitres — epub:109Ko pdf:326Ko txt:78Ko html:88Ko
+== 2/4 Dépôt des livres ==
++ The Blue Castle : en
++ The Enchanted April : en
++ The Expedition of Humphry Clinker : en
++ The Adventures of Ferdinand, Count Fathom : en
++ The History of Tom Jones, a Foundling : en
++ The Interesting Narrative of the Life of Olaudah Equiano : en
++ A Narrative of the Captivity and Restoration of Mrs. Mary Rowlandson : en
++ The Farther Adventures of Robinson Crusoe : en
++ The Call of Cthulhu : en
++ The Elements of Programming Style : en
+   publié : ebookclassics-files — Nouveaux livres : The Blue Castle, The Enchanted April, The Expedition of Humphry Clinker, The Adventures of Ferdinand, Count Fathom, The History of Tom Jones, a Foundling, The Interesting Narrative of the Life of Olaudah Equiano, A Narrative of the Captivity and Restoration of Mrs. Mary Rowlandson, The Farther Adventures of Robinson Crusoe, The Call of Cthulhu, The Elements of Programming Style
+== 3/4 Site : catalogue, pages livres, plan du site ==
+   384 pages livres, 383 couvertures, 389 adresses dans le sitemap
+   10 livre(s) ajouté(s) au catalogue
+   publié : ebookclassics-site — Nouveaux livres au catalogue : The Blue Castle, The Enchanted April, The Expedition of Humphry Clinker, The Adventures of Ferdinand, Count Fathom, The History of Tom Jones, a Foundling, The Interesting Narrative of the Life of Olaudah Equiano, A Narrative of the Captivity and Restoration of Mrs. Mary Rowlandson, The Farther Adventures of Robinson Crusoe, The Call of Cthulhu, The Elements of Programming Style
+TERMINE — 10 nouveau(x) livre(s) : The Blue Castle, The Enchanted April, The Expedition of Humphry Clinker, The Adventures of Ferdinand, Count Fathom, The History of Tom Jones, a Foundling, The Interesting Narrative of the Life of Olaudah Equiano, A Narrative of the Captivity and Restoration of Mrs. Mary Rowlandson, The Farther Adventures of Robinson Crusoe, The Call of Cthulhu, The Elements of Programming Style
+== Livres audio du lot 2026-10-06-auto ==
+   LibriVox : The Blue Castle [en] — « Blue Castle » (7 h 57)
+   LibriVox : The Enchanted April [en] — « Enchanted April » (10 h 02)
+   LibriVox : The Expedition of Humphry Clinker [en] — « Expedition of Humphry Clinker » (17 h 32)
+   pas d'enregistrement LibriVox pour The Adventures of Ferdinand, Count Fathom [en]
+   LibriVox : The History of Tom Jones, a Foundling [en] — « History of Tom Jones, A Foundling » (36 h 05)
+   LibriVox : The Interesting Narrative of the Life of Olaudah Equiano [en] — « Interesting Narrative of the Life of Olaudah Equiano » (8 h 05)
+   LibriVox : A Narrative of the Captivity and Restoration of Mrs. Mary Rowlandson [en] — « Narrative of the Captivity and Restoration of Mrs. Mary Rowlandson » (1 h 52)
+   pas d'enregistrement LibriVox pour The Farther Adventures of Robinson Crusoe [en]
+   LibriVox : The Call of Cthulhu [en] — « Call of Cthulhu (version 2) » (1 h 32)
+   pas d'enregistrement LibriVox pour The Elements of Programming Style [en]
+   ! ~/r2.conf absent : livres audio non ajoutés
+FIN 2026-10-06 15:33
