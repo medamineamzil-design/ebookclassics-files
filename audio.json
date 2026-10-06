@@ -741,6 +741,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/peter-pan/peter-pan.mp3"
   }
  },
+ "pollyanna": {
+  "en": {
+   "bytes": 223511462,
+   "dl": true,
+   "duration": 27941,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/pollyanna/pollyanna.mp3"
+  }
+ },
  "pride-and-prejudice": {
   "en": {
    "bytes": 416316845,
