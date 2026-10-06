@@ -957,6 +957,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/sister-carrie/sister-carrie.mp3"
   }
  },
+ "tartuffe": {
+  "en": {
+   "bytes": 52567437,
+   "dl": true,
+   "duration": 6568,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/tartuffe/tartuffe.mp3"
+  }
+ },
  "tess-of-the-d-urbervilles": {
   "en": {
    "bytes": 471229635,
