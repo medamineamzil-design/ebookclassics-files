@@ -246,6 +246,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/candide/candide-fr.mp3"
   }
  },
+ "carmen": {
+  "en": {
+   "bytes": 65794584,
+   "dl": true,
+   "duration": 8222,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/carmen/carmen.mp3"
+  }
+ },
  "civil-disobedience": {
   "en": {
    "bytes": 30103839,
