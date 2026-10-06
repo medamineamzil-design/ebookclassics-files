@@ -610,6 +610,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/jude-the-obscure/jude-the-obscure.mp3"
   }
  },
+ "julius-caesar": {
+  "en": {
+   "bytes": 71794206,
+   "dl": true,
+   "duration": 8972,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/julius-caesar/julius-caesar.mp3"
+  }
+ },
  "just-so-stories": {
   "en": {
    "bytes": 116989794,
