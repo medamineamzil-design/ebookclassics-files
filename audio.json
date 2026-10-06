@@ -169,6 +169,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/bel-ami/bel-ami.mp3"
   }
  },
+ "black-beauty": {
+  "en": {
+   "bytes": 164674903,
+   "dl": true,
+   "duration": 20562,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/black-beauty/black-beauty.mp3"
+  }
+ },
  "bleak-house": {
   "en": {
    "bytes": 1253218020,
