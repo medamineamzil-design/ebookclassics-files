@@ -504,6 +504,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/little-dorrit/little-dorrit.mp3"
   }
  },
+ "little-men": {
+  "en": {
+   "bytes": 317971715,
+   "dl": true,
+   "duration": 39747,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/little-men/little-men.mp3"
+  }
+ },
  "little-women": {
   "en": {
    "bytes": 565862230,
