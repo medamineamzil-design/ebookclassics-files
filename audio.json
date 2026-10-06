@@ -1043,6 +1043,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/swann-s-way/swann-s-way.mp3"
   }
  },
+ "symposium": {
+  "en": {
+   "bytes": 73367921,
+   "dl": true,
+   "duration": 9170,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/symposium/symposium.mp3"
+  }
+ },
  "tartuffe": {
   "en": {
    "bytes": 52567437,
