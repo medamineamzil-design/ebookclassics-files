@@ -1,0 +1,27 @@
+=== BookClassics — lot 2026-10-06 — 2026-10-06 14:20 ===
+   2 livre(s) écarté(s) par l'agent, notés dans refuses.json
+== 1/4 Fabrication des livres (EPUB, PDF, TXT, HTML) ==
+= Northanger Abbey : déjà dans la bibliothèque — ignoré
+= My Ántonia : déjà dans la bibliothèque — ignoré
+… Looking Backward [en] — Gutenberg #25439
+   + looking-backward [en] OK — Project Gutenberg (#25439), 82475 mots, 27 chapitres — epub:266Ko pdf:1067Ko txt:455Ko html:479Ko
+… The Narrative of Arthur Gordon Pym [en] — Gutenberg #51060
+   + the-narrative-of-arthur-gordon-pym [en] OK — Project Gutenberg (#51060), 71205 mots, 24 chapitres — epub:245Ko pdf:924Ko txt:392Ko html:401Ko
+… The Velveteen Rabbit [en] — Gutenberg #11757
+   ! the-velveteen-rabbit [en] : texte trop court (3964 mots, Gutenberg #11757) — IGNORÉ
+== 2/4 Dépôt des livres ==
++ Looking Backward : en
++ The Narrative of Arthur Gordon Pym : en
+   publié : ebookclassics-files — Nouveaux livres : Looking Backward, The Narrative of Arthur Gordon Pym
+== 3/4 Site : catalogue, pages livres, plan du site ==
+   374 pages livres, 373 couvertures, 379 adresses dans le sitemap
+   2 livre(s) ajouté(s) au catalogue
+   publié : ebookclassics-site — Nouveaux livres au catalogue : Looking Backward, The Narrative of Arthur Gordon Pym
+TERMINE — 2 nouveau(x) livre(s) : Looking Backward, The Narrative of Arthur Gordon Pym
+== Livres audio du lot 2026-10-06 ==
+   LibriVox : Northanger Abbey [en] — « Northanger Abbey (version 4) » (9 h 50)
+   LibriVox : My Ántonia [en] — « My Ántonia » (8 h 06)
+   pas d'enregistrement LibriVox pour Looking Backward [en]
+   pas d'enregistrement LibriVox pour The Narrative of Arthur Gordon Pym [en]
+   ! ~/r2.conf absent : livres audio non ajoutés
+FIN 2026-10-06 14:22
