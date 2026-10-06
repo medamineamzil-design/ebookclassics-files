@@ -1222,6 +1222,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-last-of-the-mohicans/the-last-of-the-mohicans-fr.mp3"
   }
  },
+ "the-lost-world": {
+  "en": {
+   "bytes": 242136388,
+   "dl": true,
+   "duration": 30267,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-lost-world/the-lost-world.mp3"
+  }
+ },
  "the-mayor-of-casterbridge": {
   "en": {
    "bytes": 370420359,
