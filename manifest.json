@@ -1232,6 +1232,14 @@
     "txt"
    ]
   },
+  "looking-backward": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "looking-backward-2000-1887": {
    "en": [
     "epub",
@@ -2906,6 +2914,14 @@
     "txt"
    ]
   },
+  "the-narrative-of-arthur-gordon-pym": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-narrative-of-arthur-gordon-pym-of-nantucket": {
    "en": [
     "epub",
@@ -3841,5 +3857,5 @@
    ]
   }
  },
- "generated": "2026-10-04T01:49:43Z"
+ "generated": "2026-10-06T14:21:52Z"
 }
