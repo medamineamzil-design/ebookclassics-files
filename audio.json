@@ -1261,6 +1261,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/pamela-or-virtue-rewarded/pamela-or-virtue-rewarded.mp3"
   }
  },
+ "pan": {
+  "en": {
+   "bytes": 120505857,
+   "dl": true,
+   "duration": 15062,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/pan/pan.mp3"
+  }
+ },
  "paradise-lost": {
   "en": {
    "bytes": 279091482,
