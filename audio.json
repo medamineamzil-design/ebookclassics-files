@@ -282,6 +282,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/emma/emma.mp3"
   }
  },
+ "ethan-frome": {
+  "en": {
+   "bytes": 115207611,
+   "dl": true,
+   "duration": 14395,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/ethan-frome/ethan-frome.mp3"
+  }
+ },
  "evelina": {
   "en": {
    "bytes": 457491405,
