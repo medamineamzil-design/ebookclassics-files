@@ -1596,6 +1596,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-mayor-of-casterbridge/the-mayor-of-casterbridge.mp3"
   }
  },
+ "the-memoirs-of-sherlock-holmes": {
+  "en": {
+   "bytes": 305271872,
+   "dl": true,
+   "duration": 38159,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-memoirs-of-sherlock-holmes/the-memoirs-of-sherlock-holmes.mp3"
+  }
+ },
  "the-merchant-of-venice": {
   "en": {
    "bytes": 74864972,
