@@ -2228,6 +2228,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-way-we-live-now/the-way-we-live-now.mp3"
   }
  },
+ "the-wild-duck": {
+  "en": {
+   "bytes": 97609867,
+   "dl": true,
+   "duration": 12200,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-wild-duck/the-wild-duck.mp3"
+  }
+ },
  "the-wind-in-the-willows": {
   "en": {
    "bytes": 187168502,
