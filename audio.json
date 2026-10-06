@@ -488,6 +488,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/germinal/germinal-fr.mp3"
   }
  },
+ "ghosts": {
+  "en": {
+   "bytes": 73825052,
+   "dl": true,
+   "duration": 9226,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/ghosts/ghosts.mp3"
+  }
+ },
  "great-expectations": {
   "en": {
    "bytes": 590069161,
