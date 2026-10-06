@@ -1953,6 +1953,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-republic/the-republic.mp3"
   }
  },
+ "the-return-of-sherlock-holmes": {
+  "en": {
+   "bytes": 341426174,
+   "dl": true,
+   "duration": 42677,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-return-of-sherlock-holmes/the-return-of-sherlock-holmes.mp3"
+  }
+ },
  "the-return-of-the-native": {
   "en": {
    "bytes": 506794583,
