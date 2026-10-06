@@ -804,6 +804,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/pride-and-prejudice/pride-and-prejudice.mp3"
   }
  },
+ "pygmalion": {
+  "en": {
+   "bytes": 83571660,
+   "dl": true,
+   "duration": 10443,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/pygmalion/pygmalion.mp3"
+  }
+ },
  "rebecca-of-sunnybrook-farm": {
   "en": {
    "bytes": 227378039,
