@@ -1300,6 +1300,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-communist-manifesto/the-communist-manifesto.mp3"
   }
  },
+ "the-cossacks": {
+  "en": {
+   "bytes": 196474082,
+   "dl": true,
+   "duration": 24539,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-cossacks/the-cossacks.mp3"
+  }
+ },
  "the-count-of-monte-cristo": {
   "en": {
    "bytes": 1434840456,
