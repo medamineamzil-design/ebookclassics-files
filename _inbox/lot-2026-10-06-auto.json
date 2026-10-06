@@ -141,7 +141,7 @@
   {
    "title": "The Interesting Narrative of the Life of Olaudah Equiano",
    "author": "Olaudah Equiano",
-   "cat": "fiction",
+   "cat": "philosophie",
    "meta": "1789",
    "desc": "The Interesting Narrative of the Life of Olaudah Equiano, Or Gustavus Vassa, The African, first published in 1789 in London, is the autobiography of Olaudah Equiano, an African from what is now Nigeria who was enslaved…",
    "editions": [
@@ -169,7 +169,7 @@
   {
    "title": "A Narrative of the Captivity and Restoration of Mrs. Mary Rowlandson",
    "author": "Mary Rowlandson",
-   "cat": "fiction",
+   "cat": "philosophie",
    "meta": "United States · 1682",
    "desc": "A Narrative of the Captivity and Restoration of Mrs.",
    "editions": [
@@ -240,34 +240,6 @@
     "Howard Phillips Lovecraft (US: ; August 20, 1890 – March 15, 1937) was an American writer of weird, horror, fantasy, and science fiction. He is best known for his creation of the Cthulhu Mythos, but his legacy is also apparent in terms like \"Lovecraftian horror\" and an enduring fandom.",
     "Born in Providence, Rhode Island, Lovecraft spent most of his life in New England. Following the institutionalization of his father in 1893, he lived affluently until his family's wealth dissipated after the death of his grandfather. Lovecraft then lived with his mother with reduced financial security until she too was institutionalized in 1919. He began to write essays for the United Amateur Press Association and in 1913 wrote a critical letter to a pulp magazine that ultimately led to his involvement in pulp fiction. He became active in the speculative fiction community and was published in several pulp magazines. Marrying Sonia Greene in 1924, Lovecraft moved to New York City and later became a central figure in a wider group of authors known as the \"Lovecraft Circle\". Friends in New York encouraged him to submit to Weird Tales, which became his most prominent publisher. Lovecraft's time in New York took a toll on his mental state and financial conditions. He returned to Providence in 1926 and remained active as a writer for 11 years, until his death at the age of 46. It was during this final period that Lovecraft produced some of his most popular works, including The Call of Cthulhu, At the Mountains of Madness, The Shadow over Innsmouth, and The Shadow Out of Time.",
     "This description is adapted from the Wikipedia article “H. P. Lovecraft” (https://en.wikipedia.org/wiki/H._P._Lovecraft), available under the Creative Commons Attribution-ShareAlike 4.0 License."
-   ]
-  },
-  {
-   "title": "The Elements of Programming Style",
-   "author": "William Strunk",
-   "cat": "fiction",
-   "meta": "1974",
-   "desc": "The Elements of Programming Style, by Brian W.",
-   "editions": [
-    {
-     "lang": "en",
-     "gid": 37134,
-     "check": "elements of style"
-    }
-   ],
-   "about": [
-    "The Elements of Programming Style, by Brian W. Kernighan and P. J. Plauger, is a study of programming style, advocating the notion that computer programs should be written not only to satisfy the compiler or personal programming \"style\", but also for \"readability\" by humans, specifically software maintenance engineers, programmers and technical writers. It was originally published in 1974.",
-    "The book pays explicit homage, in title and tone, to The Elements of Style, by Strunk & White and is considered a practical template promoting Edsger Dijkstra's structured programming discussions. It has been influential and has spawned a series of similar texts tailored to individual languages, such as The Elements of C Programming Style, The Elements of C# Style, The Elements of Java(TM) Style, The Elements of MATLAB Style, etc.",
-    "The book is built on short examples from actual, published programs in programming textbooks. This results in a practical treatment rather than an abstract or academic discussion. The style is diplomatic and generally sympathetic in its criticism, and unabashedly honest as well— some of the examples with which it finds fault are from the authors' own work (one example in the second edition is from the first edition).",
-    "This description is adapted from the Wikipedia article “The Elements of Programming Style” (https://en.wikipedia.org/wiki/The_Elements_of_Programming_Style), available under the Creative Commons Attribution-ShareAlike 4.0 License."
-   ],
-   "librivox": [],
-   "source": "wikipedia",
-   "wikipedia": "The Elements of Programming Style",
-   "author_short": "William Strunk Jr. was an American professor of English at Cornell University and the author of The Elements of Style.",
-   "author_long": [
-    "William Strunk Jr. (July 1, 1869 – September 26, 1946) was an American professor of English at Cornell University and the author of The Elements of Style (1918). After his former student E. B. White revised and extended the book, The Elements of Style became an influential guide to writing in the English language, informally known as \"Strunk & White\".",
-    "This description is adapted from the Wikipedia article “William Strunk Jr.” (https://en.wikipedia.org/wiki/William_Strunk_Jr.), available under the Creative Commons Attribution-ShareAlike 4.0 License."
    ]
   }
  ],
