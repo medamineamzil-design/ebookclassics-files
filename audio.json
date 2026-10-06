@@ -680,6 +680,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/main-street/main-street.mp3"
   }
  },
+ "manon-lescaut": {
+  "en": {
+   "bytes": 205315638,
+   "dl": true,
+   "duration": 25669,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/manon-lescaut/manon-lescaut.mp3"
+  }
+ },
  "mansfield-park": {
   "en": {
    "bytes": 462510328,
