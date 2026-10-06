@@ -786,6 +786,13 @@
    "duration": 45546,
    "source": "librivox",
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/ninety-three/ninety-three.mp3"
+  },
+  "fr": {
+   "bytes": 316691928,
+   "dl": true,
+   "duration": 39583,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/ninety-three/ninety-three-fr.mp3"
   }
  },
  "north-and-south": {
