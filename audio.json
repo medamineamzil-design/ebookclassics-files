@@ -898,6 +898,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-last-of-the-mohicans/the-last-of-the-mohicans-fr.mp3"
   }
  },
+ "the-mayor-of-casterbridge": {
+  "en": {
+   "bytes": 370420359,
+   "dl": true,
+   "duration": 46277,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-mayor-of-casterbridge/the-mayor-of-casterbridge.mp3"
+  }
+ },
  "the-metamorphosis": {
   "de": {
    "bytes": 61472704,
