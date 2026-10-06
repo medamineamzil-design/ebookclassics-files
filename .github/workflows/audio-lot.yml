@@ -75,6 +75,8 @@ jobs:
           J=~/journal/audio-$(TZ=Europe/Paris date +%F-%H%M).txt
           echo "JOURNAL=$J" >> $GITHUB_ENV
           for f in $LOTS; do
+            # garde-fou : on arrête de lancer de nouveaux lots après 4 h 30 (limite GitHub : 6 h)
+            if [ $SECONDS -gt 16200 ]; then echo "temps écoulé : suite la nuit prochaine" | tee -a "$J"; break; fi
             python3 ~/ebookclassics-site/_auto/publier_lot.py "$f" --audio-seulement 2>&1 | tee -a "$J" || echo "!! audio en erreur : $(basename "$f")" | tee -a "$J"
           done
 
