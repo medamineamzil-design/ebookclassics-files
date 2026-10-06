@@ -461,6 +461,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/heart-of-darkness/heart-of-darkness.mp3"
   }
  },
+ "herland": {
+  "en": {
+   "bytes": 160537165,
+   "dl": true,
+   "duration": 20062,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/herland/herland.mp3"
+  }
+ },
  "ivanhoe": {
   "en": {
    "bytes": 559312803,
