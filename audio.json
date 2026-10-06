@@ -119,6 +119,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/alice-s-adventures-in-wonderland/alice-s-adventures-in-wonderland-fr.mp3"
   }
  },
+ "allan-quatermain": {
+  "en": {
+   "bytes": 377897665,
+   "dl": true,
+   "duration": 47224,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/allan-quatermain/allan-quatermain.mp3"
+  }
+ },
  "an-enemy-of-the-people": {
   "en": {
    "bytes": 85380608,
