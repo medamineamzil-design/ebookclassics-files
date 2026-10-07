@@ -1732,6 +1732,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-book-of-tea/the-book-of-tea.mp3"
   }
  },
+ "the-call-of-cthulhu": {
+  "en": {
+   "bytes": 44563133,
+   "dl": true,
+   "duration": 5571,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/the-call-of-cthulhu/the-call-of-cthulhu.mp3"
+  }
+ },
  "the-call-of-the-wild": {
   "en": {
    "bytes": 102775852,
