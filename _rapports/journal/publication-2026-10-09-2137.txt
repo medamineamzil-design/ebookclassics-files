@@ -1,0 +1,202 @@
+=== BookClassics — lot 2026-10-09-auto — 2026-10-09 19:37 ===
+== 1/4 Fabrication des livres (EPUB, PDF, TXT, HTML) ==
+… The Adventures of Roderick Random [en] — Gutenberg #4085
+   + the-adventures-of-roderick-random [en] OK — Project Gutenberg (#4085), 190396 mots, 68 chapitres — epub:555Ko pdf:2349Ko txt:1055Ko html:1068Ko
+… The Tale of Peter Rabbit [en] — Gutenberg #14838
+   ! the-tale-of-peter-rabbit [en] : texte trop court (983 mots, Gutenberg #14838) — IGNORÉ
+… The Lady of the Lake [en] — Gutenberg #3011
+   + the-lady-of-the-lake [en] OK — Project Gutenberg (#3011), 78325 mots, 72 chapitres — epub:295Ko pdf:1193Ko txt:435Ko html:471Ko
+… Autobiography of a Yogi [en] — Gutenberg #7452
+   + autobiography-of-a-yogi [en] OK — Project Gutenberg (#7452), 153549 mots, 44 chapitres — epub:502Ko pdf:2259Ko txt:909Ko html:939Ko
+… Reminiscences of a Stock Operator [en] — Gutenberg #60979
+   + reminiscences-of-a-stock-operator [en] OK — Project Gutenberg (#60979), 108951 mots, 24 chapitres — epub:311Ko pdf:1318Ko txt:574Ko html:588Ko
+… Thuvia, Maid of Mars [en] — Gutenberg #72
+   + thuvia-maid-of-mars [en] OK — Project Gutenberg (#72), 47059 mots, 14 chapitres — epub:182Ko pdf:733Ko txt:262Ko html:276Ko
+… The Monk [en] — Gutenberg #601
+   + the-monk [en] OK — Project Gutenberg (#601), 136823 mots, 12 chapitres — epub:366Ko pdf:1725Ko txt:773Ko html:789Ko
+… A Pickle for the Knowing Ones [en] — Gutenberg #43453
+   + a-pickle-for-the-knowing-ones [en] OK — Project Gutenberg (#43453), 13904 mots, 15 chapitres — epub:102Ko pdf:258Ko txt:65Ko html:73Ko
+… The Blue Lagoon [en] — Gutenberg #393
+   + the-blue-lagoon [en] OK — Project Gutenberg (#393), 61680 mots, 47 chapitres — epub:232Ko pdf:939Ko txt:335Ko html:352Ko
+… A Princess of Mars [en] — Gutenberg #62
+   + a-princess-of-mars [en] OK — Project Gutenberg (#62), 67002 mots, 28 chapitres — epub:234Ko pdf:901Ko txt:361Ko html:374Ko
+… The Mystery of Edwin Drood [en] — Gutenberg #564
+   + the-mystery-of-edwin-drood [en] OK — Project Gutenberg (#564), 95284 mots, 23 chapitres — epub:304Ko pdf:1373Ko txt:537Ko html:557Ko
+… Democracy and Education [en] — Gutenberg #852
+   + democracy-and-education [en] OK — Project Gutenberg (#852), 135314 mots, 26 chapitres — epub:379Ko pdf:1671Ko txt:806Ko html:820Ko
+… Catriona [en] — Gutenberg #589
+   + catriona [en] OK — Project Gutenberg (#589), 100851 mots, 29 chapitres — epub:293Ko pdf:1289Ko txt:523Ko html:542Ko
+… At the Mountains of Madness [en] — Gutenberg #70652
+   + at-the-mountains-of-madness [en] OK — Project Gutenberg (#70652), 39801 mots, 11 chapitres — epub:174Ko pdf:611Ko txt:237Ko html:247Ko
+… The Gift of the Magi [en] — Gutenberg #7256
+   ! the-gift-of-the-magi [en] : texte trop court (2065 mots, Gutenberg #7256) — IGNORÉ
+… The Great God Pan [en] — Gutenberg #389
+   + the-great-god-pan [en] OK — Project Gutenberg (#389), 21632 mots, 8 chapitres — epub:114Ko pdf:348Ko txt:116Ko html:122Ko
+… A Pair of Blue Eyes [en] — Gutenberg #224
+   + a-pair-of-blue-eyes [en] OK — Project Gutenberg (#224), 130220 mots, 40 chapitres — epub:398Ko pdf:1889Ko txt:734Ko html:762Ko
+… How the Other Half Lives [en] — Gutenberg #45502
+   + how-the-other-half-lives [en] OK — Project Gutenberg (#45502), 80843 mots, 34 chapitres — epub:273Ko pdf:1042Ko txt:448Ko html:466Ko
+… The Pirate [en] — Gutenberg #42389
+   + the-pirate [en] OK — Project Gutenberg (#42389), 196905 mots, 38 chapitres — epub:536Ko pdf:2544Ko txt:1104Ko html:1170Ko
+… The Case-Book of Sherlock Holmes [en] — Gutenberg #69700
+   + the-case-book-of-sherlock-holmes [en] OK — Project Gutenberg (#69700), 82749 mots, 34 chapitres — epub:277Ko pdf:1250Ko txt:441Ko html:488Ko
+… An Enquiry Concerning Human Understanding [en] — Gutenberg #9662
+   + an-enquiry-concerning-human-understanding [en] OK — Project Gutenberg (#9662), 56702 mots, 14 chapitres — epub:200Ko pdf:762Ko txt:327Ko html:335Ko
+… Utilitarianism [en] — Gutenberg #11224
+   + utilitarianism [en] OK — Project Gutenberg (#11224), 27560 mots, 6 chapitres — epub:116Ko pdf:390Ko txt:156Ko html:161Ko
+… The Dunwich Horror [en] — Gutenberg #50133
+   + the-dunwich-horror [en] OK — Project Gutenberg (#50133), 17128 mots, 0 chapitres — epub:98Ko pdf:272Ko txt:97Ko html:105Ko
+… The House on the Borderland [en] — Gutenberg #10002
+   + the-house-on-the-borderland [en] OK — Project Gutenberg (#10002), 50865 mots, 36 chapitres — epub:206Ko pdf:744Ko txt:273Ko html:286Ko
+… Henrietta Temple [en] — Gutenberg #19771
+   + henrietta-temple [en] OK — Project Gutenberg (#19771), 142601 mots, 79 chapitres — epub:440Ko pdf:2000Ko txt:807Ko html:833Ko
+… The Merry Adventures of Robin Hood [en] — Gutenberg #10148
+   + the-merry-adventures-of-robin-hood [en] OK — Project Gutenberg (#10148), 111114 mots, 10 chapitres — epub:285Ko pdf:1306Ko txt:574Ko html:615Ko
+… Ghost Stories of an Antiquary [en] — Gutenberg #8486
+   + ghost-stories-of-an-antiquary [en] OK — Project Gutenberg (#8486), 45203 mots, 12 chapitres — epub:176Ko pdf:620Ko txt:245Ko html:254Ko
+… Lady Audley's Secret [en] — Gutenberg #8954
+   + lady-audley-s-secret [en] OK — Project Gutenberg (#8954), 148932 mots, 41 chapitres — epub:428Ko pdf:2012Ko txt:811Ko html:877Ko
+… The Silent Barrier [en] — Gutenberg #31635
+   + the-silent-barrier [en] OK — Project Gutenberg (#31635), 82726 mots, 16 chapitres — epub:265Ko pdf:1164Ko txt:452Ko html:489Ko
+… Essays: First Series [en] — Gutenberg #2944
+   + essays-first-series [en] OK — Project Gutenberg (#2944), 74160 mots, 12 chapitres — epub:242Ko pdf:911Ko txt:402Ko html:410Ko
+… The Riddle of the Sands [en] — Gutenberg #2360
+   + the-riddle-of-the-sands [en] OK — Project Gutenberg (#2360), 108091 mots, 28 chapitres — epub:344Ko pdf:1460Ko txt:601Ko html:619Ko
+… Twelve Years a Slave [en] — Gutenberg #45631
+   + twelve-years-a-slave [en] OK — Project Gutenberg (#45631), 81234 mots, 22 chapitres — epub:272Ko pdf:1067Ko txt:455Ko html:473Ko
+… The Landloper [en] — Gutenberg #4712
+   + the-landloper [en] OK — Project Gutenberg (#4712), 101758 mots, 33 chapitres — epub:305Ko pdf:1453Ko txt:556Ko html:592Ko
+… Ann Veronica [en] — Gutenberg #524
+   + ann-veronica [en] OK — Project Gutenberg (#524), 96022 mots, 123 chapitres — epub:357Ko pdf:1610Ko txt:547Ko html:574Ko
+… Tales of Terror and Mystery [en] — Gutenberg #537
+   + tales-of-terror-and-mystery [en] OK — Project Gutenberg (#537), 74951 mots, 13 chapitres — epub:234Ko pdf:973Ko txt:402Ko html:425Ko
+… The Marriage of Heaven and Hell [en] — Gutenberg #45315
+   ! the-marriage-of-heaven-and-hell [en] : texte trop court (4637 mots, Gutenberg #45315) — IGNORÉ
+… The Prairie Wife [en] — Gutenberg #18875
+   + the-prairie-wife [en] OK — Project Gutenberg (#18875), 51317 mots, 8 chapitres — epub:175Ko pdf:656Ko txt:271Ko html:289Ko
+… Mr Standfast [en] — Gutenberg #560
+   + mr-standfast [en] OK — Project Gutenberg (#560), 127949 mots, 21 chapitres — epub:351Ko pdf:1553Ko txt:673Ko html:691Ko
+… The Science of Getting Rich [en] — Gutenberg #59844
+   + the-science-of-getting-rich [en] OK — Project Gutenberg (#59844), 22914 mots, 17 chapitres — epub:127Ko pdf:390Ko txt:122Ko html:131Ko
+… The Damned Thing [en] — Gutenberg #23172
+   ! the-damned-thing [en] : texte trop court (3259 mots, Gutenberg #23172) — IGNORÉ
+… A Vindication of the Rights of Woman [en] — Gutenberg #3420
+   + a-vindication-of-the-rights-of-woman [en] OK — Project Gutenberg (#3420), 85162 mots, 13 chapitres — epub:274Ko pdf:1107Ko txt:489Ko html:501Ko
+… The Varieties of Religious Experience [en] — Gutenberg #621
+   + the-varieties-of-religious-experience [en] OK — Project Gutenberg (#621), 185634 mots, 12 chapitres — epub:494Ko pdf:2266Ko txt:1063Ko html:1083Ko
+… That Girl Montana [en] — Gutenberg #27475
+   + that-girl-montana [en] OK — Project Gutenberg (#27475), 101759 mots, 28 chapitres — epub:301Ko pdf:1360Ko txt:531Ko html:589Ko
+… The Passionate Friends [en] — Gutenberg #30340
+   + the-passionate-friends [en] OK — Project Gutenberg (#30340), 101978 mots, 11 chapitres — epub:296Ko pdf:1297Ko txt:556Ko html:589Ko
+… Childe Harold's Pilgrimage [en] — Gutenberg #5131
+   + childe-harold-s-pilgrimage [en] OK — Project Gutenberg (#5131), 37278 mots, 0 chapitres — epub:157Ko pdf:586Ko txt:208Ko html:226Ko
+… How to Live on 24 Hours a Day [en] — Gutenberg #2274
+   + how-to-live-on-24-hours-a-day [en] OK — Project Gutenberg (#2274), 12844 mots, 17 chapitres — epub:107Ko pdf:272Ko txt:69Ko html:77Ko
+… The Phantom 'Rickshaw and Other Tales [en] — Gutenberg #2806
+   + the-phantom-rickshaw-and-other-tales [en] OK — Project Gutenberg (#2806), 45627 mots, 21 chapitres — epub:191Ko pdf:684Ko txt:247Ko html:259Ko
+… Love's Labour's Lost [en] — Gutenberg #1510
+   + love-s-labour-s-lost [en] OK — Project Gutenberg (#1510), 22423 mots, 5 chapitres — epub:118Ko pdf:441Ko txt:123Ko html:135Ko
+… The Vampyre [en] — Gutenberg #6087
+   + the-vampyre [en] OK — Project Gutenberg (#6087), 12588 mots, 4 chapitres — epub:90Ko pdf:227Ko txt:70Ko html:75Ko
+… An Occurrence at Owl Creek Bridge [en] — Gutenberg #375
+   ! an-occurrence-at-owl-creek-bridge [en] : texte trop court (3745 mots, Gutenberg #375) — IGNORÉ
+== 2/4 Dépôt des livres ==
++ The Adventures of Roderick Random : en
++ The Lady of the Lake : en
++ Autobiography of a Yogi : en
++ Reminiscences of a Stock Operator : en
++ Thuvia, Maid of Mars : en
++ The Monk : en
++ A Pickle for the Knowing Ones : en
++ The Blue Lagoon : en
++ A Princess of Mars : en
++ The Mystery of Edwin Drood : en
++ Democracy and Education : en
++ Catriona : en
++ At the Mountains of Madness : en
++ The Great God Pan : en
++ A Pair of Blue Eyes : en
++ How the Other Half Lives : en
++ The Pirate : en
++ The Case-Book of Sherlock Holmes : en
++ An Enquiry Concerning Human Understanding : en
++ Utilitarianism : en
++ The Dunwich Horror : en
++ The House on the Borderland : en
++ Henrietta Temple : en
++ The Merry Adventures of Robin Hood : en
++ Ghost Stories of an Antiquary : en
++ Lady Audley's Secret : en
++ The Silent Barrier : en
++ Essays: First Series : en
++ The Riddle of the Sands : en
++ Twelve Years a Slave : en
++ The Landloper : en
++ Ann Veronica : en
++ Tales of Terror and Mystery : en
++ The Prairie Wife : en
++ Mr Standfast : en
++ The Science of Getting Rich : en
++ A Vindication of the Rights of Woman : en
++ The Varieties of Religious Experience : en
++ That Girl Montana : en
++ The Passionate Friends : en
++ Childe Harold's Pilgrimage : en
++ How to Live on 24 Hours a Day : en
++ The Phantom 'Rickshaw and Other Tales : en
++ Love's Labour's Lost : en
++ The Vampyre : en
+   publié : ebookclassics-files — Nouveaux livres : The Adventures of Roderick Random, The Lady of the Lake, Autobiography of a Yogi, Reminiscences of a Stock Operator, Thuvia, Maid of Mars, The Monk, A Pickle for the Knowing Ones, The Blue Lagoon, A Princess of Mars, The Mystery of Edwin Drood, Democracy and Education, Catriona, At the Mountains of Madness, The Great God Pan, A Pair of Blue Eyes, How the Other Half Lives, The Pirate, The Case-Book of Sherlock Holmes, An Enquiry Concerning Human Understanding, Utilitarianism, The Dunwich Horror, The House on the Borderland, Henrietta Temple, The Merry Adventures of Robin Hood, Ghost Stories of an Antiquary, Lady Audley's Secret, The Silent Barrier, Essays: First Series, The Riddle of the Sands, Twelve Years a Slave, The Landloper, Ann Veronica, Tales of Terror and Mystery, The Prairie Wife, Mr Standfast, The Science of Getting Rich, A Vindication of the Rights of Woman, The Varieties of Religious Experience, That Girl Montana, The Passionate Friends, Childe Harold's Pilgrimage, How to Live on 24 Hours a Day, The Phantom 'Rickshaw and Other Tales, Love's Labour's Lost, The Vampyre
+== 3/4 Site : catalogue, pages livres, plan du site ==
+   429 pages livres, 428 couvertures, 434 adresses dans le sitemap
+   45 livre(s) ajouté(s) au catalogue
+   publié : ebookclassics-site — Nouveaux livres au catalogue : The Adventures of Roderick Random, The Lady of the Lake, Autobiography of a Yogi, Reminiscences of a Stock Operator, Thuvia, Maid of Mars, The Monk, A Pickle for the Knowing Ones, The Blue Lagoon, A Princess of Mars, The Mystery of Edwin Drood, Democracy and Education, Catriona, At the Mountains of Madness, The Great God Pan, A Pair of Blue Eyes, How the Other Half Lives, The Pirate, The Case-Book of Sherlock Holmes, An Enquiry Concerning Human Understanding, Utilitarianism, The Dunwich Horror, The House on the Borderland, Henrietta Temple, The Merry Adventures of Robin Hood, Ghost Stories of an Antiquary, Lady Audley's Secret, The Silent Barrier, Essays: First Series, The Riddle of the Sands, Twelve Years a Slave, The Landloper, Ann Veronica, Tales of Terror and Mystery, The Prairie Wife, Mr Standfast, The Science of Getting Rich, A Vindication of the Rights of Woman, The Varieties of Religious Experience, That Girl Montana, The Passionate Friends, Childe Harold's Pilgrimage, How to Live on 24 Hours a Day, The Phantom 'Rickshaw and Other Tales, Love's Labour's Lost, The Vampyre
+TERMINE — 45 nouveau(x) livre(s) : The Adventures of Roderick Random, The Lady of the Lake, Autobiography of a Yogi, Reminiscences of a Stock Operator, Thuvia, Maid of Mars, The Monk, A Pickle for the Knowing Ones, The Blue Lagoon, A Princess of Mars, The Mystery of Edwin Drood, Democracy and Education, Catriona, At the Mountains of Madness, The Great God Pan, A Pair of Blue Eyes, How the Other Half Lives, The Pirate, The Case-Book of Sherlock Holmes, An Enquiry Concerning Human Understanding, Utilitarianism, The Dunwich Horror, The House on the Borderland, Henrietta Temple, The Merry Adventures of Robin Hood, Ghost Stories of an Antiquary, Lady Audley's Secret, The Silent Barrier, Essays: First Series, The Riddle of the Sands, Twelve Years a Slave, The Landloper, Ann Veronica, Tales of Terror and Mystery, The Prairie Wife, Mr Standfast, The Science of Getting Rich, A Vindication of the Rights of Woman, The Varieties of Religious Experience, That Girl Montana, The Passionate Friends, Childe Harold's Pilgrimage, How to Live on 24 Hours a Day, The Phantom 'Rickshaw and Other Tales, Love's Labour's Lost, The Vampyre
+== Livres audio du lot 2026-10-09-auto ==
+   LibriVox : The Adventures of Roderick Random [en] — « Adventures of Roderick Random » (19 h 09)
+   LibriVox : The Lady of the Lake [en] — « Lady of the Lake » (4 h 37)
+   LibriVox : Autobiography of a Yogi [en] — « Autobiography of a Yogi » (16 h 33)
+   pas d'enregistrement LibriVox pour Reminiscences of a Stock Operator [en]
+   LibriVox : Thuvia, Maid of Mars [en] — « Thuvia, Maid of Mars » (5 h 20)
+   pas d'enregistrement LibriVox pour The Monk [en]
+   LibriVox : A Pickle for the Knowing Ones [en] — « Pickle For the Knowing Ones » (1 h 23)
+   LibriVox : The Blue Lagoon [en] — « Blue Lagoon » (7 h 38)
+   LibriVox : A Princess of Mars [en] — « Princess of Mars (version 2) » (7 h 26)
+   LibriVox : The Mystery of Edwin Drood [en] — « Mystery of Edwin Drood » (12 h 21)
+   pas d'enregistrement LibriVox pour Democracy and Education [en]
+   LibriVox : Catriona [en] — « Catriona » (11 h 04)
+   LibriVox : At the Mountains of Madness [en] — « At the Mountains of Madness, Version 2 » (4 h 30)
+   LibriVox : The Great God Pan [en] — « Great God Pan » (1 h 59)
+   LibriVox : A Pair of Blue Eyes [en] — « Pair of Blue Eyes » (13 h 29)
+   pas d'enregistrement LibriVox pour How the Other Half Lives [en]
+   LibriVox : The Pirate [en] — « Pirate » (23 h 11)
+   LibriVox : The Case-Book of Sherlock Holmes [en] — « Case-Book of Sherlock Holmes (version 2) » (8 h 40)
+   LibriVox : An Enquiry Concerning Human Understanding [en] — « Enquiry Concerning Human Understanding » (5 h 54)
+   LibriVox : Utilitarianism [en] — « Utilitarianism » (3 h 28)
+   LibriVox : The Dunwich Horror [en] — « Dunwich Horror (Version 2) » (2 h 05)
+   LibriVox : The House on the Borderland [en] — « House on the Borderland (Version 2) » (5 h 38)
+   LibriVox : Henrietta Temple [en] — « Henrietta Temple » (17 h 30)
+   LibriVox : The Merry Adventures of Robin Hood [en] — « Merry Adventures of Robin Hood (Dramatic Reading) » (12 h 30)
+   LibriVox : Ghost Stories of an Antiquary [en] — « Ghost Stories of an Antiquary » (10 h 06)
+   LibriVox : Lady Audley's Secret [en] — « Lady Audley's Secret (Version 2) » (16 h 31)
+   LibriVox : The Silent Barrier [en] — « Silent Barrier » (9 h 15)
+   pas d'enregistrement LibriVox pour Essays: First Series [en]
+   LibriVox : The Riddle of the Sands [en] — « Riddle of the Sands » (12 h 24)
+   LibriVox : Twelve Years a Slave [en] — « Twelve Years a Slave » (8 h 04)
+   pas d'enregistrement LibriVox pour The Landloper [en]
+   LibriVox : Ann Veronica [en] — « Ann Veronica » (10 h 24)
+   LibriVox : Tales of Terror and Mystery [en] — « Tales of Terror and Mystery » (7 h 39)
+   LibriVox : The Prairie Wife [en] — « Prairie Wife » (5 h 39)
+   pas d'enregistrement LibriVox pour Mr Standfast [en]
+   LibriVox : The Science of Getting Rich [en] — « Science of Getting Rich (version 3) » (2 h 24)
+   LibriVox : A Vindication of the Rights of Woman [en] — « Vindication of the Rights of Woman » (9 h 46)
+   LibriVox : The Varieties of Religious Experience [en] — « Varieties of Religious Experience » (22 h 23)
+   pas d'enregistrement LibriVox pour That Girl Montana [en]
+   LibriVox : The Passionate Friends [en] — « Passionate Friends » (12 h 48)
+   LibriVox : Childe Harold's Pilgrimage [en] — « Childe Harold's Pilgrimage » (4 h 16)
+   LibriVox : How to Live on 24 Hours a Day [en] — « How to Live on 24 Hours a Day (version 2) » (1 h 36)
+   pas d'enregistrement LibriVox pour The Phantom 'Rickshaw and Other Tales [en]
+   LibriVox : Love's Labour's Lost [en] — « Love's Labour's Lost (version 2) » (2 h 47)
+   pas d'enregistrement LibriVox pour The Vampyre [en]
+   ! ~/r2.conf absent : livres audio non ajoutés
+FIN 2026-10-09 19:41
