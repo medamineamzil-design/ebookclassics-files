@@ -50,7 +50,7 @@ jobs:
           D=$(TZ=Europe/Paris date +%F)
           F="_inbox/lot-$D-auto.json"
           if [ -e "$F" ] || [ -e "_inbox/faits/lot-$D-auto.json" ]; then echo "lot du jour déjà fait"; exit 0; fi
-          DEJA=$(ls _inbox/faits/lot-*.json _inbox/erreurs/lot-*.json _inbox/lot-*.json 2>/dev/null)
+          DEJA=$(ls _inbox/faits/lot-*.json _inbox/erreurs/lot-*.json _inbox/lot-*.json 2>/dev/null || true)
           python3 site/_auto/lot_auto.py "$N" "$PWD/$F" --dejapris $DEJA
           python3 -c "import json,sys; sys.exit(0 if json.load(open('$F'))['books'] else 1)" || { echo "aucun livre trouvé"; rm -f "$F"; exit 0; }
           (cd site && python3 _auto/publier_lot.py "$GITHUB_WORKSPACE/$F" --verifier) | tail -60
