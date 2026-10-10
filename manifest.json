@@ -40,6 +40,14 @@
     "txt"
    ]
   },
+  "a-martian-odyssey": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "a-midsummer-night-s-dream": {
    "de": [
     "epub",
@@ -262,7 +270,23 @@
     "txt"
    ]
   },
+  "anne-of-avonlea": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "anne-of-green-gables": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "anne-of-the-island": {
    "en": [
     "epub",
     "html",
@@ -285,6 +309,14 @@
    ]
   },
   "apology": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "argonauts-of-the-western-pacific": {
    "en": [
     "epub",
     "html",
@@ -391,6 +423,14 @@
    ]
   },
   "bartleby-the-scrivener": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "beasts-and-super-beasts": {
    "en": [
     "epub",
     "html",
@@ -580,6 +620,14 @@
     "txt"
    ]
   },
+  "confessions-of-an-english-opium-eater": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "cranford": {
    "en": [
     "epub",
@@ -634,6 +682,14 @@
     "txt"
    ]
   },
+  "desperate-remedies": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "don-quixote": {
    "en": [
     "epub",
@@ -679,6 +735,14 @@
    ]
   },
   "emma": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "erewhon": {
    "en": [
     "epub",
     "html",
@@ -848,6 +912,22 @@
     "txt"
    ],
    "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "flatland": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "following-the-equator": {
+   "en": [
     "epub",
     "html",
     "pdf",
@@ -1336,6 +1416,14 @@
     "txt"
    ]
   },
+  "life-of-samuel-johnson": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "life-on-the-mississippi": {
    "en": [
     "epub",
@@ -1604,6 +1692,14 @@
     "txt"
    ]
   },
+  "mosses-from-an-old-manse": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "mother": {
    "en": [
     "epub",
@@ -1838,7 +1934,31 @@
     "txt"
    ]
   },
+  "one-wonderful-night": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "opticks": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "orlando-furioso": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "orthodoxy": {
    "en": [
     "epub",
     "html",
@@ -2020,6 +2140,14 @@
     "txt"
    ]
   },
+  "red-nails": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "reminiscences-of-a-stock-operator": {
    "en": [
     "epub",
@@ -2150,6 +2278,14 @@
     "txt"
    ]
   },
+  "self-help": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "sense-and-sensibility": {
    "en": [
     "epub",
@@ -2205,6 +2341,14 @@
    ]
   },
   "sister-carrie": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "sketches-new-and-old": {
    "en": [
     "epub",
     "html",
@@ -2419,6 +2563,14 @@
    ]
   },
   "the-awakening": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-ballad-of-reading-gaol": {
    "en": [
     "epub",
     "html",
@@ -2642,6 +2794,14 @@
     "txt"
    ]
   },
+  "the-descent-of-man-and-selection-in-relation-to-sex": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-devil-s-pool": {
    "en": [
     "epub",
@@ -2770,6 +2930,14 @@
     "txt"
    ]
   },
+  "the-four-million": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-gambler": {
    "en": [
     "epub",
@@ -2802,7 +2970,31 @@
     "txt"
    ]
   },
+  "the-gods-of-mars": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-golden-bough": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-government-inspector": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-grand-babylon-hotel": {
    "en": [
     "epub",
     "html",
@@ -2834,6 +3026,14 @@
     "txt"
    ]
   },
+  "the-history-of-human-marriage": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-history-of-tom-jones-a-foundling": {
    "en": [
     "epub",
@@ -2851,6 +3051,14 @@
    ]
   },
   "the-hound-of-the-baskervilles": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-hour-of-the-dragon": {
    "en": [
     "epub",
     "html",
@@ -2881,6 +3089,14 @@
    ]
   },
   "the-house-of-the-seven-gables": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-house-of-the-wolfings": {
    "en": [
     "epub",
     "html",
@@ -3024,6 +3240,14 @@
     "txt"
    ]
   },
+  "the-kybalion": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-ladies-paradise": {
    "en": [
     "epub",
@@ -3085,6 +3309,14 @@
    ]
   },
   "the-legend-of-sleepy-hollow": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-life-and-opinions-of-tristram-shandy-gentleman": {
    "en": [
     "epub",
     "html",
@@ -3302,6 +3534,14 @@
     "txt"
    ]
   },
+  "the-origin-and-development-of-the-moral-ideas": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-passionate-friends": {
    "en": [
     "epub",
@@ -3462,6 +3702,14 @@
     "txt"
    ]
   },
+  "the-principles-of-scientific-management": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-prisoner-of-zenda": {
    "en": [
     "epub",
@@ -3485,6 +3733,14 @@
    ]
   },
   "the-railway-children": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-real-adventure": {
    "en": [
     "epub",
     "html",
@@ -3728,6 +3984,14 @@
     "txt"
    ]
   },
+  "the-subjection-of-women": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-taming-of-the-shrew": {
    "en": [
     "epub",
@@ -3864,6 +4128,14 @@
     "txt"
    ]
   },
+  "the-voyage-of-the-beagle": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-voyage-out": {
    "en": [
     "epub",
@@ -3887,6 +4159,14 @@
    ]
   },
   "the-warden": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-warlord-of-mars": {
    "en": [
     "epub",
     "html",
@@ -4134,6 +4414,14 @@
     "txt"
    ]
   },
+  "two-on-a-tower": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "typee": {
    "en": [
     "epub",
@@ -4236,6 +4524,14 @@
     "txt"
    ]
   },
+  "walking": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "war-and-peace": {
    "en": [
     "epub",
@@ -4297,5 +4593,5 @@
    ]
   }
  },
- "generated": "2026-10-09T19:41:18Z"
+ "generated": "2026-10-10T03:10:59Z"
 }
