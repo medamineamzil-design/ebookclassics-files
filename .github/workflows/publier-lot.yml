@@ -46,7 +46,7 @@ jobs:
       - name: Logiciels (pandoc, typst, rsvg, Pillow)
         run: |
           sudo apt-get update -q
-          sudo apt-get install -y -q pandoc librsvg2-bin python3-pil
+          sudo apt-get install -y -q pandoc librsvg2-bin python3-pil fonts-hosny-amiri
           curl -fsSL https://github.com/typst/typst/releases/latest/download/typst-x86_64-unknown-linux-musl.tar.xz | tar -xJ
           sudo mv typst-*/typst /usr/local/bin/
 
