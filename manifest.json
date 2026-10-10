@@ -1110,6 +1110,14 @@
     "txt"
    ]
   },
+  "hayy-ibn-yaqdhan": {
+   "ar": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "heart": {
    "en": [
     "epub",
@@ -1312,6 +1320,14 @@
   },
   "just-so-stories": {
    "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "kalila-and-dimna": {
+   "ar": [
     "epub",
     "html",
     "pdf",
@@ -3802,6 +3818,14 @@
     "txt"
    ]
   },
+  "the-ring-of-the-dove": {
+   "ar": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-rivals": {
    "en": [
     "epub",
@@ -4076,6 +4100,14 @@
   },
   "the-toilers-of-the-sea": {
    "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-travels-of-ibn-battuta": {
+   "ar": [
     "epub",
     "html",
     "pdf",
@@ -4593,5 +4625,5 @@
    ]
   }
  },
- "generated": "2026-10-10T03:10:59Z"
+ "generated": "2026-10-10T23:13:41Z"
 }
