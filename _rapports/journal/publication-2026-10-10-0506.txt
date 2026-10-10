@@ -1,0 +1,164 @@
+=== BookClassics — lot 2026-10-10-auto — 2026-10-10 03:06 ===
+== 1/4 Fabrication des livres (EPUB, PDF, TXT, HTML) ==
+… The Gods of Mars [en] — Gutenberg #64
+   + the-gods-of-mars [en] OK — Project Gutenberg (#64), 82403 mots, 22 chapitres — epub:260Ko pdf:1103Ko txt:442Ko html:459Ko
+… The Warlord of Mars [en] — Gutenberg #68
+   + the-warlord-of-mars [en] OK — Project Gutenberg (#68), 57059 mots, 15 chapitres — epub:197Ko pdf:817Ko txt:305Ko html:320Ko
+… The Real Adventure [en] — Gutenberg #15384
+   + the-real-adventure [en] OK — Project Gutenberg (#15384), 201710 mots, 51 chapitres — epub:542Ko pdf:2545Ko txt:1095Ko html:1185Ko
+… The Grand Babylon Hotel [en] — Gutenberg #2813
+   + the-grand-babylon-hotel [en] OK — Project Gutenberg (#2813), 67572 mots, 30 chapitres — epub:245Ko pdf:1048Ko txt:385Ko html:403Ko
+… Confessions of an English Opium-Eater [en] — Gutenberg #2040
+   + confessions-of-an-english-opium-eater [en] OK — Project Gutenberg (#2040), 38442 mots, 9 chapitres — epub:169Ko pdf:543Ko txt:212Ko html:218Ko
+… The Life and Opinions of Tristram Shandy, Gentleman [en] — Gutenberg #1079
+   + the-life-and-opinions-of-tristram-shandy-gentleman [en] OK — Project Gutenberg (#1079), 180918 mots, 358 chapitres — epub:717Ko pdf:3112Ko txt:1037Ko html:1088Ko
+… Desperate Remedies [en] — Gutenberg #3044
+   + desperate-remedies [en] OK — Project Gutenberg (#3044), 140074 mots, 98 chapitres — epub:462Ko pdf:2100Ko txt:789Ko html:823Ko
+… Red Nails [en] — Gutenberg #32759
+   + red-nails [en] OK — Project Gutenberg (#32759), 31171 mots, 0 chapitres — epub:120Ko pdf:455Ko txt:172Ko html:187Ko
+… Argonauts of the Western Pacific [en] — Gutenberg #55822
+   + argonauts-of-the-western-pacific [en] OK — Project Gutenberg (#55822), 211034 mots, 147 chapitres — epub:632Ko pdf:2804Ko txt:1200Ko html:1242Ko
+… The Subjection of Women [en] — Gutenberg #27083
+   + the-subjection-of-women [en] OK — Project Gutenberg (#27083), 43982 mots, 5 chapitres — epub:161Ko pdf:581Ko txt:248Ko html:253Ko
+… Two on a Tower [en] — Gutenberg #3146
+   + two-on-a-tower [en] OK — Project Gutenberg (#3146), 94295 mots, 40 chapitres — epub:306Ko pdf:1338Ko txt:522Ko html:561Ko
+… A Martian Odyssey [en] — Gutenberg #23731
+   + a-martian-odyssey [en] OK — Project Gutenberg (#23731), 10156 mots, 1 chapitres — epub:90Ko pdf:214Ko txt:55Ko html:65Ko
+… Mosses from an Old Manse [en] — Gutenberg #512
+   + mosses-from-an-old-manse [en] OK — Project Gutenberg (#512), 156919 mots, 31 chapitres — epub:455Ko pdf:1978Ko txt:890Ko html:905Ko
+… The Masque of the Red Death [en] — Gutenberg #1064
+   ! the-masque-of-the-red-death [en] : texte trop court (2406 mots, Gutenberg #1064) — IGNORÉ
+… The Hour of the Dragon [en] — Gutenberg #42243
+   + the-hour-of-the-dragon [en] OK — Project Gutenberg (#42243), 72646 mots, 1 chapitres — epub:216Ko pdf:981Ko txt:401Ko html:427Ko
+… The Kybalion [en] — Gutenberg #14209
+   + the-kybalion [en] OK — Project Gutenberg (#14209), 32962 mots, 14 chapitres — epub:134Ko pdf:479Ko txt:189Ko html:201Ko
+… Anne of Avonlea [en] — Gutenberg #47
+   + anne-of-avonlea [en] OK — Project Gutenberg (#47), 90848 mots, 18 chapitres — epub:268Ko pdf:1166Ko txt:488Ko html:504Ko
+… The Principles of Scientific Management [en] — Gutenberg #6435
+   + the-principles-of-scientific-management [en] OK — Project Gutenberg (#6435), 36471 mots, 6 chapitres — epub:149Ko pdf:511Ko txt:202Ko html:211Ko
+… Flatland [en] — Gutenberg #201
+   + flatland [en] OK — Project Gutenberg (#201), 34368 mots, 26 chapitres — epub:144Ko pdf:533Ko txt:194Ko html:207Ko
+… The Four Million [en] — Gutenberg #2776
+   + the-four-million [en] OK — Project Gutenberg (#2776), 51933 mots, 7 chapitres — epub:181Ko pdf:742Ko txt:289Ko html:301Ko
+… Beasts and Super-Beasts [en] — Gutenberg #269
+   + beasts-and-super-beasts [en] OK — Project Gutenberg (#269), 61771 mots, 35 chapitres — epub:235Ko pdf:932Ko txt:356Ko html:370Ko
+… The History of Human Marriage [en] — Gutenberg #59386
+   + the-history-of-human-marriage [en] OK — Project Gutenberg (#59386), 262253 mots, 31 chapitres — epub:645Ko pdf:3691Ko txt:1573Ko html:1621Ko
+… Self-Help [en] — Gutenberg #935
+   + self-help [en] OK — Project Gutenberg (#935), 139257 mots, 13 chapitres — epub:376Ko pdf:1685Ko txt:809Ko html:818Ko
+… Following the Equator [en] — Gutenberg #2895
+   + following-the-equator [en] OK — Project Gutenberg (#2895), 185451 mots, 73 chapitres — epub:542Ko pdf:2386Ko txt:1029Ko html:1060Ko
+… The Descent of Man, and Selection in Relation to Sex [en] — Gutenberg #2300
+   + the-descent-of-man-and-selection-in-relation-to-sex [en] OK — Project Gutenberg (#2300), 305544 mots, 23 chapitres — epub:725Ko pdf:3891Ko txt:1798Ko html:1831Ko
+… Anne of the Island [en] — Gutenberg #51
+   + anne-of-the-island [en] OK — Project Gutenberg (#51), 76283 mots, 41 chapitres — epub:270Ko pdf:1112Ko txt:427Ko html:445Ko
+… The Voyage of the Beagle [en] — Gutenberg #944
+   + the-voyage-of-the-beagle [en] OK — Project Gutenberg (#944), 203965 mots, 20 chapitres — epub:530Ko pdf:2436Ko txt:1150Ko html:1167Ko
+… The Way to Wealth [en] — Gutenberg #43855
+   ! the-way-to-wealth [en] : texte trop court (3515 mots, Gutenberg #43855) — IGNORÉ
+… The Ballad of Reading Gaol [en] — Gutenberg #1057
+   + the-ballad-of-reading-gaol [en] OK — Project Gutenberg (#1057), 37696 mots, 11 chapitres — epub:167Ko pdf:615Ko txt:207Ko html:219Ko
+… The Golden Bough [en] — Gutenberg #3623
+   + the-golden-bough [en] OK — Project Gutenberg (#3623), 408310 mots, 78 chapitres — epub:947Ko pdf:4534Ko txt:2206Ko html:2246Ko
+… The House of the Wolfings [en] — Gutenberg #2885
+   + the-house-of-the-wolfings [en] OK — Project Gutenberg (#2885), 84928 mots, 31 chapitres — epub:255Ko pdf:1031Ko txt:434Ko html:454Ko
+… Erewhon [en] — Gutenberg #1906
+   + erewhon [en] OK — Project Gutenberg (#1906), 83776 mots, 29 chapitres — epub:254Ko pdf:1013Ko txt:451Ko html:461Ko
+… Life of Samuel Johnson [en] — Gutenberg #1564
+   + life-of-samuel-johnson [en] OK — Project Gutenberg (#1564), 216837 mots, 16 chapitres — epub:532Ko pdf:2572Ko txt:1184Ko html:1243Ko
+… Sketches New and Old [en] — Gutenberg #3189
+   + sketches-new-and-old [en] OK — Project Gutenberg (#3189), 97806 mots, 13 chapitres — epub:292Ko pdf:1255Ko txt:539Ko html:561Ko
+… Orthodoxy [en] — Gutenberg #130
+   + orthodoxy [en] OK — Project Gutenberg (#130), 63753 mots, 10 chapitres — epub:193Ko pdf:763Ko txt:346Ko html:355Ko
+… The Origin and Development of the Moral Ideas [en] — Gutenberg #52106
+   + the-origin-and-development-of-the-moral-ideas [en] OK — Project Gutenberg (#52106), 654221 mots, 75 chapitres — epub:1620Ko pdf:9079Ko txt:3870Ko html:4034Ko
+… One Wonderful Night [en] — Gutenberg #19707
+   + one-wonderful-night [en] OK — Project Gutenberg (#19707), 77369 mots, 17 chapitres — epub:259Ko pdf:1134Ko txt:432Ko html:474Ko
+… Opticks [en] — Gutenberg #33504
+   + opticks [en] OK — Project Gutenberg (#33504), 99983 mots, 7 chapitres — epub:219Ko pdf:1103Ko txt:544Ko html:557Ko
+… Walking [en] — Gutenberg #1022
+   + walking [en] OK — Project Gutenberg (#1022), 12012 mots, 2 chapitres — epub:84Ko pdf:203Ko txt:65Ko html:69Ko
+== 2/4 Dépôt des livres ==
++ The Gods of Mars : en
++ The Warlord of Mars : en
++ The Real Adventure : en
++ The Grand Babylon Hotel : en
++ Confessions of an English Opium-Eater : en
++ The Life and Opinions of Tristram Shandy, Gentleman : en
++ Desperate Remedies : en
++ Red Nails : en
++ Argonauts of the Western Pacific : en
++ The Subjection of Women : en
++ Two on a Tower : en
++ A Martian Odyssey : en
++ Mosses from an Old Manse : en
++ The Hour of the Dragon : en
++ The Kybalion : en
++ Anne of Avonlea : en
++ The Principles of Scientific Management : en
++ Flatland : en
++ The Four Million : en
++ Beasts and Super-Beasts : en
++ The History of Human Marriage : en
++ Self-Help : en
++ Following the Equator : en
++ The Descent of Man, and Selection in Relation to Sex : en
++ Anne of the Island : en
++ The Voyage of the Beagle : en
++ The Ballad of Reading Gaol : en
++ The Golden Bough : en
++ The House of the Wolfings : en
++ Erewhon : en
++ Life of Samuel Johnson : en
++ Sketches New and Old : en
++ Orthodoxy : en
++ The Origin and Development of the Moral Ideas : en
++ One Wonderful Night : en
++ Opticks : en
++ Walking : en
+   publié : ebookclassics-files — Nouveaux livres : The Gods of Mars, The Warlord of Mars, The Real Adventure, The Grand Babylon Hotel, Confessions of an English Opium-Eater, The Life and Opinions of Tristram Shandy, Gentleman, Desperate Remedies, Red Nails, Argonauts of the Western Pacific, The Subjection of Women, Two on a Tower, A Martian Odyssey, Mosses from an Old Manse, The Hour of the Dragon, The Kybalion, Anne of Avonlea, The Principles of Scientific Management, Flatland, The Four Million, Beasts and Super-Beasts, The History of Human Marriage, Self-Help, Following the Equator, The Descent of Man, and Selection in Relation to Sex, Anne of the Island, The Voyage of the Beagle, The Ballad of Reading Gaol, The Golden Bough, The House of the Wolfings, Erewhon, Life of Samuel Johnson, Sketches New and Old, Orthodoxy, The Origin and Development of the Moral Ideas, One Wonderful Night, Opticks, Walking
+== 3/4 Site : catalogue, pages livres, plan du site ==
+   466 pages livres, 465 couvertures, 471 adresses dans le sitemap
+   37 livre(s) ajouté(s) au catalogue
+   publié : ebookclassics-site — Nouveaux livres au catalogue : The Gods of Mars, The Warlord of Mars, The Real Adventure, The Grand Babylon Hotel, Confessions of an English Opium-Eater, The Life and Opinions of Tristram Shandy, Gentleman, Desperate Remedies, Red Nails, Argonauts of the Western Pacific, The Subjection of Women, Two on a Tower, A Martian Odyssey, Mosses from an Old Manse, The Hour of the Dragon, The Kybalion, Anne of Avonlea, The Principles of Scientific Management, Flatland, The Four Million, Beasts and Super-Beasts, The History of Human Marriage, Self-Help, Following the Equator, The Descent of Man, and Selection in Relation to Sex, Anne of the Island, The Voyage of the Beagle, The Ballad of Reading Gaol, The Golden Bough, The House of the Wolfings, Erewhon, Life of Samuel Johnson, Sketches New and Old, Orthodoxy, The Origin and Development of the Moral Ideas, One Wonderful Night, Opticks, Walking
+TERMINE — 37 nouveau(x) livre(s) : The Gods of Mars, The Warlord of Mars, The Real Adventure, The Grand Babylon Hotel, Confessions of an English Opium-Eater, The Life and Opinions of Tristram Shandy, Gentleman, Desperate Remedies, Red Nails, Argonauts of the Western Pacific, The Subjection of Women, Two on a Tower, A Martian Odyssey, Mosses from an Old Manse, The Hour of the Dragon, The Kybalion, Anne of Avonlea, The Principles of Scientific Management, Flatland, The Four Million, Beasts and Super-Beasts, The History of Human Marriage, Self-Help, Following the Equator, The Descent of Man, and Selection in Relation to Sex, Anne of the Island, The Voyage of the Beagle, The Ballad of Reading Gaol, The Golden Bough, The House of the Wolfings, Erewhon, Life of Samuel Johnson, Sketches New and Old, Orthodoxy, The Origin and Development of the Moral Ideas, One Wonderful Night, Opticks, Walking
+== Livres audio du lot 2026-10-10-auto ==
+   LibriVox : The Gods of Mars [en] — « Gods of Mars (version 2) » (8 h 41)
+   LibriVox : The Warlord of Mars [en] — « Warlord of Mars (version 2) » (6 h 05)
+   pas d'enregistrement LibriVox pour The Real Adventure [en]
+   LibriVox : The Grand Babylon Hotel [en] — « Grand Babylon Hotel » (6 h 44)
+   LibriVox : Confessions of an English Opium-Eater [en] — « Confessions of an English Opium-Eater » (5 h 21)
+   pas d'enregistrement LibriVox pour The Life and Opinions of Tristram Shandy, Gentleman [en]
+   LibriVox : Desperate Remedies [en] — « Desperate Remedies » (15 h 55)
+   LibriVox : Red Nails [en] — « Red Nails (version 2) » (3 h 49)
+   pas d'enregistrement LibriVox pour Argonauts of the Western Pacific [en]
+   LibriVox : The Subjection of Women [en] — « Subjection of Women » (4 h 49)
+   LibriVox : Two on a Tower [en] — « Two On A Tower » (9 h 15)
+   pas d'enregistrement LibriVox pour A Martian Odyssey [en]
+   LibriVox : Mosses from an Old Manse [en] — « Mosses From An Old Manse » (18 h 59)
+   LibriVox : The Hour of the Dragon [en] — « Hour of the Dragon (version 2) » (8 h 50)
+   LibriVox : The Kybalion [en] — « Kybalion (version 2) » (3 h 59)
+   LibriVox : Anne of Avonlea [en] — « Anne of Avonlea » (8 h 48)
+   pas d'enregistrement LibriVox pour The Principles of Scientific Management [en]
+   pas d'enregistrement LibriVox pour Flatland [en]
+   LibriVox : The Four Million [en] — « Four Million (Version 3) » (5 h 43)
+   LibriVox : Beasts and Super-Beasts [en] — « Beasts and Super-Beasts » (6 h 48)
+   pas d'enregistrement LibriVox pour The History of Human Marriage [en]
+   pas d'enregistrement LibriVox pour Self-Help [en]
+   pas d'enregistrement LibriVox pour Following the Equator [en]
+   pas d'enregistrement LibriVox pour The Descent of Man, and Selection in Relation to Sex [en]
+   LibriVox : Anne of the Island [en] — « Anne of the Island » (7 h 51)
+   LibriVox : The Voyage of the Beagle [en] — « Voyage of the Beagle » (21 h 50)
+   LibriVox : The Ballad of Reading Gaol [en] — « Ballad of Reading Gaol, (version 2) » (0 h 42)
+   pas d'enregistrement LibriVox pour The Golden Bough [en]
+   LibriVox : The House of the Wolfings [en] — « House of the Wolfings » (8 h 17)
+   LibriVox : Erewhon [en] — « Erewhon » (8 h 00)
+   pas d'enregistrement LibriVox pour Life of Samuel Johnson [en]
+   LibriVox : Sketches New and Old [en] — « Sketches New and Old » (10 h 33)
+   LibriVox : Orthodoxy [en] — « Orthodoxy (Version 3) » (7 h 31)
+   pas d'enregistrement LibriVox pour The Origin and Development of the Moral Ideas [en]
+   pas d'enregistrement LibriVox pour One Wonderful Night [en]
+   LibriVox : Opticks [en] — « Opticks » (12 h 12)
+   LibriVox : Walking [en] — « Walking » (1 h 29)
+   ! ~/r2.conf absent : livres audio non ajoutés
+FIN 2026-10-10 03:11
