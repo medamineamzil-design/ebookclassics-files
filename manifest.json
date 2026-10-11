@@ -2310,6 +2310,14 @@
     "txt"
    ]
   },
+  "shadows-in-the-moonlight": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "shakespeare-s-sonnets": {
    "en": [
     "epub",
@@ -2388,6 +2396,14 @@
     "txt"
    ]
   },
+  "south": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "swann-s-way": {
    "en": [
     "epub",
@@ -2435,6 +2451,14 @@
    ]
   },
   "tartuffe": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "tarzan-of-the-apes": {
    "en": [
     "epub",
     "html",
@@ -2727,6 +2751,14 @@
    ]
   },
   "the-castle-of-otranto": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-chessmen-of-mars": {
    "en": [
     "epub",
     "html",
@@ -3567,6 +3599,14 @@
    ]
   },
   "the-pathfinder": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-people-of-the-black-circle": {
    "en": [
     "epub",
     "html",
@@ -4625,5 +4665,5 @@
    ]
   }
  },
- "generated": "2026-10-10T23:13:41Z"
+ "generated": "2026-10-11T04:22:21Z"
 }
