@@ -1,0 +1,25 @@
+{
+ "lot": "2026-10-11-strunk",
+ "books": [
+  {
+   "title": "The Elements of Style",
+   "author": "William Strunk Jr.",
+   "cat": "philosophie",
+   "meta": "United States · 1918",
+   "desc": "Cornell professor William Strunk's short guide to clear English: the rules of usage, the principles of composition and the famous advice to omit needless words.",
+   "about": [
+    "The Elements of Style is a compact handbook of English usage and composition that William Strunk Jr. wrote for his students at Cornell University and had printed privately in 1918. In a few dozen pages it sets out elementary rules of usage, such as how to form possessives and punctuate clauses, followed by principles of composition: make the paragraph the unit of composition, use the active voice, put statements in positive form, and omit needless words.",
+    "This is Strunk's original 1918 text. Decades later his former student E. B. White revised and expanded it into the well-known edition of 1959, which is still under copyright and is not the version presented here."
+   ],
+   "author_short": "William Strunk Jr. (1869–1946) was an American professor of English at Cornell University.",
+   "author_long": "William Strunk Jr. (1869–1946) was born in Cincinnati and taught English at Cornell University for more than forty years. His privately printed guide The Elements of Style became one of the most influential writing manuals in English after his former student E. B. White revised it in 1959.",
+   "editions": [
+    {
+     "lang": "en",
+     "gid": 37134,
+     "check": "elements of style"
+    }
+   ]
+  }
+ ]
+}

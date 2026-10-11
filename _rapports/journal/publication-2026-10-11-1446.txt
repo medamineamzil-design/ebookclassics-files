@@ -1,0 +1,12 @@
+=== BookClassics — lot 2026-10-11-strunk — 2026-10-11 12:46 ===
+== 1/4 Fabrication des livres (EPUB, PDF, TXT, HTML) ==
+… The Elements of Style [en] — Gutenberg #37134
+   + the-elements-of-style [en] OK — Project Gutenberg (#37134), 13475 mots, 11 chapitres — epub:103Ko pdf:320Ko txt:78Ko html:88Ko
+== 2/4 Dépôt des livres ==
++ The Elements of Style : en
+   publié : ebookclassics-files — Nouveaux livres : The Elements of Style
+== 3/4 Site : catalogue, pages livres, plan du site ==
+   473 pages livres, 472 couvertures, 478 adresses dans le sitemap
+!! ERREUR : moins de pages livres qu'avant (474 < 476) : publication annulée
+!! lot en erreur : lot-2026-10-11-strunk.json
+FIN 2026-10-11 12:48
