@@ -1394,6 +1394,14 @@
     "txt"
    ]
   },
+  "lady-chatterley-s-lover": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "lady-windermere-s-fan": {
    "en": [
     "epub",
@@ -2303,6 +2311,14 @@
    ]
   },
   "shadows-in-the-moonlight": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "shadows-in-zamboula": {
    "en": [
     "epub",
     "html",
@@ -4649,5 +4665,5 @@
    ]
   }
  },
- "generated": "2026-10-11T13:58:12Z"
+ "generated": "2026-10-12T02:49:47Z"
 }
