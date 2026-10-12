@@ -1,0 +1,20 @@
+=== BookClassics — lot 2026-10-12-auto — 2026-10-12 02:48 ===
+== 1/4 Fabrication des livres (EPUB, PDF, TXT, HTML) ==
+… Shadows in Zamboula [en] — Gutenberg #42196
+   + shadows-in-zamboula [en] OK — Project Gutenberg (#42196), 12130 mots, 1 chapitres — epub:92Ko pdf:227Ko txt:66Ko html:74Ko
+… Lady Chatterley's Lover [en] — Gutenberg #73144
+   + lady-chatterley-s-lover [en] OK — Project Gutenberg (#73144), 117671 mots, 19 chapitres — epub:324Ko pdf:1639Ko txt:628Ko html:697Ko
+== 2/4 Dépôt des livres ==
++ Shadows in Zamboula : en
++ Lady Chatterley's Lover : en
+   publié : ebookclassics-files — Nouveaux livres : Shadows in Zamboula, Lady Chatterley's Lover
+== 3/4 Site : catalogue, pages livres, plan du site ==
+   475 pages livres, 474 couvertures, 480 adresses dans le sitemap
+   2 livre(s) ajouté(s) au catalogue
+   publié : ebookclassics-site — Nouveaux livres au catalogue : Shadows in Zamboula, Lady Chatterley's Lover
+TERMINE — 2 nouveau(x) livre(s) : Shadows in Zamboula, Lady Chatterley's Lover
+== Livres audio du lot 2026-10-12-auto ==
+   LibriVox : Shadows in Zamboula [en] — « Shadows in Zamboula (version 2) » (1 h 31)
+   LibriVox : Lady Chatterley's Lover [en] — « Lady Chatterley's Lover » (12 h 30)
+   ! ~/r2.conf absent : livres audio non ajoutés
+FIN 2026-10-12 02:50
