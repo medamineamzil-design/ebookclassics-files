@@ -270,6 +270,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/anne-of-green-gables/anne-of-green-gables.mp3"
   }
  },
+ "anne-of-the-island": {
+  "en": {
+   "bytes": 226474591,
+   "dl": true,
+   "duration": 28287,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/anne-of-the-island/anne-of-the-island.mp3"
+  }
+ },
  "antony-and-cleopatra": {
   "en": {
    "bytes": 88247810,
