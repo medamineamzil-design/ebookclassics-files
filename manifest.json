@@ -1872,6 +1872,14 @@
     "txt"
    ]
   },
+  "notes-on-nursing": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "notre-dame-de-paris": {
    "en": [
     "epub",
@@ -2435,6 +2443,14 @@
    ]
   },
   "tales-of-terror-and-mystery": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "tancred": {
    "en": [
     "epub",
     "html",
@@ -4665,5 +4681,5 @@
    ]
   }
  },
- "generated": "2026-10-12T02:49:47Z"
+ "generated": "2026-10-13T02:51:31Z"
 }
