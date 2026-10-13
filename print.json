@@ -3,7 +3,10 @@
     "title": "Frankenstein",
     "pages": 182,
     "interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/main/frankenstein/frankenstein-interieur-6x9.pdf",
-    "cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/main/frankenstein/frankenstein-couverture.pdf"
+    "cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/main/frankenstein/frankenstein-couverture.pdf",
+    "bv_pages": 148,
+    "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/main/frankenstein/frankenstein-bv-interieur.pdf",
+    "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/main/frankenstein/frankenstein-bv-couverture.pdf"
   },
   "frankenstein-hardcover": {
     "title": "Frankenstein — Hardcover",
