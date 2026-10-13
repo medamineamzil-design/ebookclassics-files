@@ -1,0 +1,20 @@
+=== BookClassics — lot 2026-10-13-auto — 2026-10-13 02:50 ===
+== 1/4 Fabrication des livres (EPUB, PDF, TXT, HTML) ==
+… Notes on Nursing [en] — Gutenberg #17366
+   + notes-on-nursing [en] OK — Project Gutenberg (#17366), 44992 mots, 12 chapitres — epub:168Ko pdf:635Ko txt:250Ko html:263Ko
+… Tancred [en] — Gutenberg #20004
+   + tancred [en] OK — Project Gutenberg (#20004), 162421 mots, 65 chapitres — epub:471Ko pdf:2162Ko txt:920Ko html:945Ko
+== 2/4 Dépôt des livres ==
++ Notes on Nursing : en
++ Tancred : en
+   publié : ebookclassics-files — Nouveaux livres : Notes on Nursing, Tancred
+== 3/4 Site : catalogue, pages livres, plan du site ==
+   477 pages livres, 476 couvertures, 482 adresses dans le sitemap
+   2 livre(s) ajouté(s) au catalogue
+   publié : ebookclassics-site — Nouveaux livres au catalogue : Notes on Nursing, Tancred
+TERMINE — 2 nouveau(x) livre(s) : Notes on Nursing, Tancred
+== Livres audio du lot 2026-10-13-auto ==
+   LibriVox : Notes on Nursing [en] — « Notes on Nursing » (3 h 46)
+   pas d'enregistrement LibriVox pour Tancred [en]
+   ! ~/r2.conf absent : livres audio non ajoutés
+FIN 2026-10-13 02:51
