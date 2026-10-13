@@ -1727,6 +1727,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/shadows-in-the-moonlight/shadows-in-the-moonlight.mp3"
   }
  },
+ "shadows-in-zamboula": {
+  "en": {
+   "bytes": 43970884,
+   "dl": true,
+   "duration": 5496,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/shadows-in-zamboula/shadows-in-zamboula.mp3"
+  }
+ },
  "shakespeare-s-sonnets": {
   "en": {
    "bytes": 78944134,
