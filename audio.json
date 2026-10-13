@@ -1087,6 +1087,15 @@
    "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/lady-audley-s-secret/lady-audley-s-secret.mp3"
   }
  },
+ "lady-chatterley-s-lover": {
+  "en": {
+   "bytes": 360283630,
+   "dl": true,
+   "duration": 45037,
+   "source": "librivox",
+   "url": "https://pub-54951c9209e446e89ad267c0f85a981d.r2.dev/audio/lady-chatterley-s-lover/lady-chatterley-s-lover.mp3"
+  }
+ },
  "lady-windermere-s-fan": {
   "en": {
    "bytes": 71224539,
