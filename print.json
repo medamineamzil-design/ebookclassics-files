@@ -6,13 +6,15 @@
     "cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/main/frankenstein/frankenstein-couverture.pdf",
     "bv_pages": 148,
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/main/frankenstein-bv-interieur.pdf",
-    "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/main/frankenstein-bv-couverture.pdf"
+    "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/main/frankenstein-bv-couverture.pdf",
+    "price_usd": 15.9
   },
   "frankenstein-hardcover": {
     "title": "Frankenstein — Hardcover",
     "pages": 182,
     "interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/main/frankenstein/frankenstein-interieur-6x9.pdf",
     "cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/main/frankenstein/frankenstein-couverture-hardcover.pdf",
-    "pod_package_id": "0600X0900BWSTDCW060UW444MXX"
+    "pod_package_id": "0600X0900BWSTDCW060UW444MXX",
+    "price_usd": 27.9
   }
 }
