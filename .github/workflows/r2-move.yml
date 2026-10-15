@@ -1,0 +1,50 @@
+# BookClassics — les PDF et EPUB (payants) sont rangés dans le stockage privé R2 ; le dépôt public garde une note.
+# Se lance tout seul quand de nouveaux PDF/EPUB arrivent sur main (robot de publication), ou à la main.
+name: Fichiers payants vers R2
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["**/*.pdf", "**/*.epub"]
+
+concurrency:
+  group: r2-move
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  move:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+          filter: blob:none
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /*/*.pdf
+            /*/*.epub
+            /tools/
+      - name: Copie vers R2 puis remplacement par une note
+        env:
+          R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          R2_BUCKET: ${{ secrets.R2_BUCKET }}
+        run: |
+          pip install -q boto3
+          python3 tools/r2_move.py .
+      - name: Publier
+        run: |
+          git config user.name "BookClassics (automatique)"
+          git config user.email "medamine.amzil@gmail.com"
+          git add -A -- '*.pdf' '*.epub'
+          git diff --cached --quiet && { echo "rien à changer"; exit 0; }
+          git commit -qm "Fichiers payants : PDF et EPUB rangés dans R2"
+          for i in 1 2 3 4 5; do git push -q && exit 0; git pull -q --rebase; done
+          exit 1
