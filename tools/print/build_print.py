@@ -86,7 +86,131 @@ for tag, _, inner in re.findall(r"<(h[1-4]|p|li|blockquote)([^>]*)>(.*?)</\1>", 
         blocks.append(("s", x) if len(x) <= 90 else ("p", x))
     else:
         blocks.append(("p", x))
-if sum(len(t) for k, t in blocks if k == "p") < 2000:
+
+# ---------- Project Gutenberg source: verse line breaks and English editions ----------
+HERE = os.path.dirname(os.path.abspath(__file__))
+GIDS = json.load(open(os.path.join(HERE, "gid.json"))) if os.path.exists(os.path.join(HERE, "gid.json")) else {}
+# Titles whose site edition is not in English but which have a public-domain English translation on Gutenberg.
+ENGLISH_TXT = {"hayy-ibn-yaqdhan": (16831, "Hayy ibn Yaqdhan", "Ibn Tufayl", "Translated by Simon Ockley (1708)")}
+
+
+def gutenberg(gid):
+    import urllib.request
+    cache = os.path.join(os.environ.get("PG_CACHE", "/tmp/pg"), "%s.txt" % gid)
+    if not os.path.exists(cache):
+        os.makedirs(os.path.dirname(cache), exist_ok=True)
+        for url in ("https://www.gutenberg.org/cache/epub/%s/pg%s.txt" % (gid, gid),
+                    "https://www.gutenberg.org/files/%s/%s-0.txt" % (gid, gid)):
+            try:
+                req = urllib.request.Request(url, headers={"User-Agent": "BookClassics print builder"})
+                open(cache, "wb").write(urllib.request.urlopen(req, timeout=60).read())
+                break
+            except Exception:
+                continue
+        else:
+            return None
+    t = open(cache, encoding="utf-8-sig", errors="replace").read().replace("\r\n", "\n")
+    a = re.search(r"^\*\*\* ?START OF.*$", t, re.M)
+    b = re.search(r"^\*\*\* ?END OF.*$", t, re.M)
+    return t[a.end() if a else 0: b.start() if b else len(t)]
+
+
+def norm(w):
+    return "".join(c for c in w.lower() if c.isalnum())
+
+
+def restore_verse(blocks, text):
+    """Put back the line breaks of verse paragraphs, using the Gutenberg text the site edition was made from."""
+    from difflib import SequenceMatcher
+    gt, gnl, glen, gpar = [], [], [], []
+    prev_blank = True
+    for line in text.split("\n"):
+        L = len(line.strip())
+        first = True
+        for w in line.split():
+            n = norm(w)
+            if not n:
+                continue
+            gt.append(n); gnl.append(first); glen.append(L)
+            gpar.append(first and (prev_blank or line.startswith("  ")))
+            first = False
+        prev_blank = not line.strip()
+    import bisect
+    index = {}
+    for i, n in enumerate(gt):
+        index.setdefault(n, []).append(i)
+    out, cur, nverse = [], 0, 0
+    for k, t in blocks:
+        if k != "p":
+            out.append((k, t)); continue
+        words = t.split()
+        hn = [(i, norm(w)) for i, w in enumerate(words) if norm(w)]
+        if len(hn) < 6:
+            out.append((k, t)); continue
+        head = [n for _, n in hn[:5]]
+        cands = index.get(head[0], [])
+        i0 = bisect.bisect_left(cands, cur)
+        pos = next((p for p in cands[i0:] + cands[:i0] if gt[p:p + 5] == head), -1)
+        if pos < 0:
+            out.append((k, t)); continue
+        win = gt[pos: pos + int(len(hn) * 1.25) + 20]
+        sm = SequenceMatcher(None, [n for _, n in hn], win, autojunk=False)
+        brk, stanza, last = set(), set(), pos
+        lines_len = []
+        for a, b2, size in sm.get_matching_blocks():
+            for j in range(size):
+                g = pos + b2 + j
+                if gnl[g]:
+                    lines_len.append(glen[g])
+                    if a + j > 0:
+                        brk.add(hn[a + j][0])
+                        if gpar[g]:
+                            stanza.add(hn[a + j][0])
+                last = max(last, g)
+        cur = last + 1
+        lines, curl = [], []
+        for i, w in enumerate(words):
+            if i in brk and curl:
+                lines.append(" ".join(curl)); curl = []
+                if i in stanza:
+                    lines.append("")
+            curl.append(w)
+        lines.append(" ".join(curl))
+        speaker = len(lines) > 1 and re.match(r"^[A-Z][A-Z’' .-]{1,30}\.$", lines[0])
+        lens = lines_len[1:] if speaker else lines_len
+        lines = [l for i, l in enumerate(lines) if l or (i and lines[i - 1])]
+        body_lines = lens[:-1]
+        matched = sum(s for _, _, s in sm.get_matching_blocks())
+        is_verse = (matched >= 0.8 * len(hn) and len(lens) >= 2 and body_lines
+                    and sum(1 for L in body_lines if L >= 60) <= 0.2 * len(body_lines)
+                    and sum(body_lines) / len(body_lines) < 52)
+        if not is_verse:
+            out.append((k, t)); continue
+        out.append(("v", lines)); nverse += 1
+    return out, nverse
+
+
+nverse = 0
+if slug in ENGLISH_TXT:
+    gid, title, author, translator = ENGLISH_TXT[slug]
+    txt = gutenberg(gid)
+    if not txt:
+        fail("gutenberg %s unavailable" % gid)
+    lang, rtl, blocks = "en", False, []
+    for para in re.split(r"\n\s*\n", txt):
+        x = re.sub(r"\s+", " ", para.replace("_", "")).strip()
+        if not x or x.startswith(("[Illustration", "Produced by", "E-text prepared")):
+            continue
+        if len(x) < 70 and not x.endswith((".", ",", ";", ":")) and (x.isupper() or x.istitle()):
+            blocks.append(("h", x.title() if x.isupper() else x))
+        else:
+            blocks.append(("p", x))
+elif lang == "en" and str(GIDS.get(slug, "")).isdigit():
+    txt = gutenberg(GIDS[slug])
+    if txt:
+        blocks, nverse = restore_verse(blocks, txt)
+
+if sum(len(t) for k, t in blocks if k == "p") + sum(len(" ".join(t)) for k, t in blocks if k == "v") < 2000:
     fail("too little text")
 
 
@@ -122,6 +246,7 @@ def interior(size, lead):
   #v(0.6em)
   ]
 }}
+#let verse(ls) = block(above: 0.7em, below: 0.7em, width: 100%, {{ set par(justify: false, first-line-indent: 0pt, hanging-indent: 1.5em); ls.join(linebreak()) }})
 #let sub(t) = block(sticky: true, above: 0.9em, below: 0.5em, width: 100%, align(center, text(weight: "semibold", t)))
 #page[
   #v(2in)
@@ -151,6 +276,8 @@ def interior(size, lead):
             out.append(f"#chap({tq(t)})"); first = True
         elif k == "s":
             out.append(f"#sub({tq(t)})"); first = True
+        elif k == "v":
+            out.append("#verse((" + ", ".join(tq(l) for l in t) + ",))"); first = False
         else:
             out.append(f"#par(first-line-indent: 0pt, {tq(t)})" if first else f"#par({tq(t)})"); first = False
     return "\n".join(out) + "\n"
@@ -239,5 +366,5 @@ with tempfile.TemporaryDirectory() as tmp:
 '''
     compile_typ(cover, cpdf, tmp)
 
-print(json.dumps({"slug": slug, "title": title, "pages": pages, "lang": lang, "spine_mm": spine, "cover_w_mm": width,
+print(json.dumps({"slug": slug, "title": title, "pages": pages, "verse": nverse, "lang": lang, "spine_mm": spine, "cover_w_mm": width,
                   "interior_bytes": os.path.getsize(ipdf), "cover_bytes": os.path.getsize(cpdf)}, ensure_ascii=False))
