@@ -44,7 +44,7 @@
   },
   "andersen-s-fairy-tales": {
     "title": "Andersen's Fairy Tales",
-    "bv_pages": 112,
+    "bv_pages": 110,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/andersen-s-fairy-tales/andersen-s-fairy-tales-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/andersen-s-fairy-tales/andersen-s-fairy-tales-bv-couverture.pdf",
@@ -52,7 +52,7 @@
   },
   "argonauts-of-the-western-pacific": {
     "title": "Argonauts of the Western Pacific",
-    "bv_pages": 430,
+    "bv_pages": 426,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/argonauts-of-the-western-pacific/argonauts-of-the-western-pacific-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/argonauts-of-the-western-pacific/argonauts-of-the-western-pacific-bv-couverture.pdf",
@@ -92,7 +92,7 @@
   },
   "don-quixote": {
     "title": "Don Quixote",
-    "bv_pages": 788,
+    "bv_pages": 786,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/don-quixote/don-quixote-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/don-quixote/don-quixote-bv-couverture.pdf",
@@ -164,7 +164,7 @@
   },
   "little-men": {
     "title": "Little Men",
-    "bv_pages": 212,
+    "bv_pages": 210,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/little-men/little-men-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/little-men/little-men-bv-couverture.pdf",
@@ -180,7 +180,7 @@
   },
   "mcteague": {
     "title": "McTeague",
-    "bv_pages": 238,
+    "bv_pages": 236,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/mcteague/mcteague-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/mcteague/mcteague-bv-couverture.pdf",
@@ -252,7 +252,7 @@
   },
   "she-stoops-to-conquer": {
     "title": "She Stoops to Conquer",
-    "bv_pages": 58,
+    "bv_pages": 56,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/she-stoops-to-conquer/she-stoops-to-conquer-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/she-stoops-to-conquer/she-stoops-to-conquer-bv-couverture.pdf",
@@ -268,7 +268,7 @@
   },
   "tess-of-the-d-urbervilles": {
     "title": "Tess of the d'Urbervilles",
-    "bv_pages": 316,
+    "bv_pages": 314,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/tess-of-the-d-urbervilles/tess-of-the-d-urbervilles-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/tess-of-the-d-urbervilles/tess-of-the-d-urbervilles-bv-couverture.pdf",
@@ -276,7 +276,7 @@
   },
   "the-aeneid": {
     "title": "The Aeneid",
-    "bv_pages": 662,
+    "bv_pages": 342,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-aeneid/the-aeneid-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-aeneid/the-aeneid-bv-couverture.pdf",
@@ -308,7 +308,7 @@
   },
   "the-descent-of-man": {
     "title": "The Descent of Man",
-    "bv_pages": 630,
+    "bv_pages": 628,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-descent-of-man/the-descent-of-man-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-descent-of-man/the-descent-of-man-bv-couverture.pdf",
@@ -396,7 +396,7 @@
   },
   "the-pirate": {
     "title": "The Pirate",
-    "bv_pages": 438,
+    "bv_pages": 418,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-pirate/the-pirate-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-pirate/the-pirate-bv-couverture.pdf",
@@ -404,7 +404,7 @@
   },
   "the-prisoner-of-zenda": {
     "title": "The Prisoner of Zenda",
-    "bv_pages": 118,
+    "bv_pages": 116,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-prisoner-of-zenda/the-prisoner-of-zenda-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-prisoner-of-zenda/the-prisoner-of-zenda-bv-couverture.pdf",
@@ -436,7 +436,7 @@
   },
   "the-tempest": {
     "title": "The Tempest",
-    "bv_pages": 76,
+    "bv_pages": 66,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-tempest/the-tempest-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-tempest/the-tempest-bv-couverture.pdf",
@@ -460,7 +460,7 @@
   },
   "the-winter-s-tale": {
     "title": "The Winter's Tale",
-    "bv_pages": 88,
+    "bv_pages": 86,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-winter-s-tale/the-winter-s-tale-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-winter-s-tale/the-winter-s-tale-bv-couverture.pdf",
@@ -468,7 +468,7 @@
   },
   "thus-spake-zarathustra": {
     "title": "Thus Spake Zarathustra",
-    "bv_pages": 278,
+    "bv_pages": 270,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/thus-spake-zarathustra/thus-spake-zarathustra-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/thus-spake-zarathustra/thus-spake-zarathustra-bv-couverture.pdf",
@@ -492,7 +492,7 @@
   },
   "waverley": {
     "title": "Waverley",
-    "bv_pages": 386,
+    "bv_pages": 378,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/waverley/waverley-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/waverley/waverley-bv-couverture.pdf",
@@ -500,7 +500,7 @@
   },
   "a-connecticut-yankee-in-king-arthur-s-court": {
     "title": "A Connecticut Yankee in King Arthur's Court",
-    "bv_pages": 236,
+    "bv_pages": 232,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/a-connecticut-yankee-in-king-arthur-s-court/a-connecticut-yankee-in-king-arthur-s-court-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/a-connecticut-yankee-in-king-arthur-s-court/a-connecticut-yankee-in-king-arthur-s-court-bv-couverture.pdf",
@@ -524,7 +524,7 @@
   },
   "ann-veronica": {
     "title": "Ann Veronica",
-    "bv_pages": 220,
+    "bv_pages": 218,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/ann-veronica/ann-veronica-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/ann-veronica/ann-veronica-bv-couverture.pdf",
@@ -548,7 +548,7 @@
   },
   "billy-budd-and-other-prose-pieces": {
     "title": "Billy Budd and Other Prose Pieces",
-    "bv_pages": 244,
+    "bv_pages": 240,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/billy-budd-and-other-prose-pieces/billy-budd-and-other-prose-pieces-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/billy-budd-and-other-prose-pieces/billy-budd-and-other-prose-pieces-bv-couverture.pdf",
@@ -572,7 +572,7 @@
   },
   "dona-perfecta": {
     "title": "Doña Perfecta",
-    "bv_pages": 162,
+    "bv_pages": 160,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/dona-perfecta/dona-perfecta-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/dona-perfecta/dona-perfecta-bv-couverture.pdf",
@@ -580,7 +580,7 @@
   },
   "eugenie-grandet": {
     "title": "Eugénie Grandet",
-    "bv_pages": 142,
+    "bv_pages": 140,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/eugenie-grandet/eugenie-grandet-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/eugenie-grandet/eugenie-grandet-bv-couverture.pdf",
@@ -588,7 +588,7 @@
   },
   "faust": {
     "title": "Faust",
-    "bv_pages": 172,
+    "bv_pages": 160,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/faust/faust-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/faust/faust-bv-couverture.pdf",
@@ -604,7 +604,7 @@
   },
   "hamlet": {
     "title": "Hamlet",
-    "bv_pages": 114,
+    "bv_pages": 112,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/hamlet/hamlet-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/hamlet/hamlet-bv-couverture.pdf",
@@ -628,7 +628,7 @@
   },
   "kidnapped": {
     "title": "Kidnapped",
-    "bv_pages": 158,
+    "bv_pages": 156,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/kidnapped/kidnapped-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/kidnapped/kidnapped-bv-couverture.pdf",
@@ -636,7 +636,7 @@
   },
   "leaves-of-grass": {
     "title": "Leaves of Grass",
-    "bv_pages": 302,
+    "bv_pages": 272,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/leaves-of-grass/leaves-of-grass-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/leaves-of-grass/leaves-of-grass-bv-couverture.pdf",
@@ -732,7 +732,7 @@
   },
   "shirley": {
     "title": "Shirley",
-    "bv_pages": 462,
+    "bv_pages": 456,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/shirley/shirley-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/shirley/shirley-bv-couverture.pdf",
@@ -804,7 +804,7 @@
   },
   "the-garden-party-and-other-stories": {
     "title": "The Garden Party and Other Stories",
-    "bv_pages": 126,
+    "bv_pages": 124,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-garden-party-and-other-stories/the-garden-party-and-other-stories-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-garden-party-and-other-stories/the-garden-party-and-other-stories-bv-couverture.pdf",
@@ -836,7 +836,7 @@
   },
   "the-king-in-yellow": {
     "title": "The King in Yellow",
-    "bv_pages": 158,
+    "bv_pages": 156,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-king-in-yellow/the-king-in-yellow-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-king-in-yellow/the-king-in-yellow-bv-couverture.pdf",
@@ -868,7 +868,7 @@
   },
   "the-pathfinder": {
     "title": "The Pathfinder",
-    "bv_pages": 354,
+    "bv_pages": 350,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-pathfinder/the-pathfinder-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-pathfinder/the-pathfinder-bv-couverture.pdf",
@@ -876,7 +876,7 @@
   },
   "the-possessed": {
     "title": "The Possessed",
-    "bv_pages": 528,
+    "bv_pages": 526,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-possessed/the-possessed-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-possessed/the-possessed-bv-couverture.pdf",
@@ -900,7 +900,7 @@
   },
   "the-school-for-scandal": {
     "title": "The School for Scandal",
-    "bv_pages": 86,
+    "bv_pages": 80,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-school-for-scandal/the-school-for-scandal-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-school-for-scandal/the-school-for-scandal-bv-couverture.pdf",
@@ -908,7 +908,7 @@
   },
   "the-song-of-roland": {
     "title": "The Song of Roland",
-    "bv_pages": 206,
+    "bv_pages": 118,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-song-of-roland/the-song-of-roland-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-song-of-roland/the-song-of-roland-bv-couverture.pdf",
@@ -988,7 +988,7 @@
   },
   "a-portrait-of-the-artist-as-a-young-man": {
     "title": "A Portrait of the Artist as a Young Man",
-    "bv_pages": 180,
+    "bv_pages": 178,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/a-portrait-of-the-artist-as-a-young-man/a-portrait-of-the-artist-as-a-young-man-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/a-portrait-of-the-artist-as-a-young-man/a-portrait-of-the-artist-as-a-young-man-bv-couverture.pdf",
@@ -1060,7 +1060,7 @@
   },
   "evelina": {
     "title": "Evelina",
-    "bv_pages": 334,
+    "bv_pages": 332,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/evelina/evelina-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/evelina/evelina-bv-couverture.pdf",
@@ -1084,7 +1084,7 @@
   },
   "hard-times": {
     "title": "Hard Times",
-    "bv_pages": 214,
+    "bv_pages": 212,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/hard-times/hard-times-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/hard-times/hard-times-bv-couverture.pdf",
@@ -1172,7 +1172,7 @@
   },
   "orlando-furioso": {
     "title": "Orlando Furioso",
-    "bv_pages": 614,
+    "bv_pages": 986,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/orlando-furioso/orlando-furioso-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/orlando-furioso/orlando-furioso-bv-couverture.pdf",
@@ -1196,7 +1196,7 @@
   },
   "rob-roy": {
     "title": "Rob Roy",
-    "bv_pages": 396,
+    "bv_pages": 392,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/rob-roy/rob-roy-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/rob-roy/rob-roy-bv-couverture.pdf",
@@ -1260,7 +1260,7 @@
   },
   "the-confessions-of-jean-jacques-rousseau": {
     "title": "The Confessions of Jean-Jacques Rousseau",
-    "bv_pages": 512,
+    "bv_pages": 508,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-confessions-of-jean-jacques-rousseau/the-confessions-of-jean-jacques-rousseau-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-confessions-of-jean-jacques-rousseau/the-confessions-of-jean-jacques-rousseau-bv-couverture.pdf",
@@ -1284,7 +1284,7 @@
   },
   "the-georgics": {
     "title": "The Georgics",
-    "bv_pages": 72,
+    "bv_pages": 70,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-georgics/the-georgics-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-georgics/the-georgics-bv-couverture.pdf",
@@ -1308,7 +1308,7 @@
   },
   "the-innocents-abroad": {
     "title": "The Innocents Abroad",
-    "bv_pages": 372,
+    "bv_pages": 370,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-innocents-abroad/the-innocents-abroad-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-innocents-abroad/the-innocents-abroad-bv-couverture.pdf",
@@ -1332,7 +1332,7 @@
   },
   "the-merchant-of-venice": {
     "title": "The Merchant of Venice",
-    "bv_pages": 72,
+    "bv_pages": 70,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-merchant-of-venice/the-merchant-of-venice-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-merchant-of-venice/the-merchant-of-venice-bv-couverture.pdf",
@@ -1364,7 +1364,7 @@
   },
   "the-railway-children": {
     "title": "The Railway Children",
-    "bv_pages": 134,
+    "bv_pages": 132,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-railway-children/the-railway-children-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-railway-children/the-railway-children-bv-couverture.pdf",
@@ -1428,7 +1428,7 @@
   },
   "treasure-island": {
     "title": "Treasure Island",
-    "bv_pages": 138,
+    "bv_pages": 136,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/treasure-island/treasure-island-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/treasure-island/treasure-island-bv-couverture.pdf",
@@ -1492,7 +1492,7 @@
   },
   "as-you-like-it": {
     "title": "As You Like It",
-    "bv_pages": 72,
+    "bv_pages": 70,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/as-you-like-it/as-you-like-it-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/as-you-like-it/as-you-like-it-bv-couverture.pdf",
@@ -1508,7 +1508,7 @@
   },
   "bleak-house": {
     "title": "Bleak House",
-    "bv_pages": 708,
+    "bv_pages": 706,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/bleak-house/bleak-house-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/bleak-house/bleak-house-bv-couverture.pdf",
@@ -1516,7 +1516,7 @@
   },
   "childe-harold-s-pilgrimage": {
     "title": "Childe Harold's Pilgrimage",
-    "bv_pages": 216,
+    "bv_pages": 132,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/childe-harold-s-pilgrimage/childe-harold-s-pilgrimage-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/childe-harold-s-pilgrimage/childe-harold-s-pilgrimage-bv-couverture.pdf",
@@ -1540,7 +1540,7 @@
   },
   "exemplary-novels": {
     "title": "Exemplary Novels",
-    "bv_pages": 350,
+    "bv_pages": 346,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/exemplary-novels/exemplary-novels-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/exemplary-novels/exemplary-novels-bv-couverture.pdf",
@@ -1580,7 +1580,7 @@
   },
   "jo-s-boys": {
     "title": "Jo's Boys",
-    "bv_pages": 198,
+    "bv_pages": 196,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/jo-s-boys/jo-s-boys-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/jo-s-boys/jo-s-boys-bv-couverture.pdf",
@@ -1588,7 +1588,7 @@
   },
   "king-lear": {
     "title": "King Lear",
-    "bv_pages": 104,
+    "bv_pages": 102,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/king-lear/king-lear-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/king-lear/king-lear-bv-couverture.pdf",
@@ -1612,7 +1612,7 @@
   },
   "main-street": {
     "title": "Main Street",
-    "bv_pages": 366,
+    "bv_pages": 364,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/main-street/main-street-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/main-street/main-street-bv-couverture.pdf",
@@ -1628,7 +1628,7 @@
   },
   "much-ado-about-nothing": {
     "title": "Much Ado About Nothing",
-    "bv_pages": 68,
+    "bv_pages": 64,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/much-ado-about-nothing/much-ado-about-nothing-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/much-ado-about-nothing/much-ado-about-nothing-bv-couverture.pdf",
@@ -1668,7 +1668,7 @@
   },
   "principles-of-political-economy": {
     "title": "Principles of Political Economy",
-    "bv_pages": 492,
+    "bv_pages": 486,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/principles-of-political-economy/principles-of-political-economy-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/principles-of-political-economy/principles-of-political-economy-bv-couverture.pdf",
@@ -1724,7 +1724,7 @@
   },
   "the-black-arrow": {
     "title": "The Black Arrow",
-    "bv_pages": 166,
+    "bv_pages": 164,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-black-arrow/the-black-arrow-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-black-arrow/the-black-arrow-bv-couverture.pdf",
@@ -1740,7 +1740,7 @@
   },
   "the-consolation-of-philosophy": {
     "title": "The Consolation of Philosophy",
-    "bv_pages": 126,
+    "bv_pages": 104,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-consolation-of-philosophy/the-consolation-of-philosophy-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-consolation-of-philosophy/the-consolation-of-philosophy-bv-couverture.pdf",
@@ -1772,7 +1772,7 @@
   },
   "the-history-of-human-marriage": {
     "title": "The History of Human Marriage",
-    "bv_pages": 676,
+    "bv_pages": 608,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-history-of-human-marriage/the-history-of-human-marriage-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-history-of-human-marriage/the-history-of-human-marriage-bv-couverture.pdf",
@@ -1780,7 +1780,7 @@
   },
   "the-house-of-the-wolfings": {
     "title": "The House of the Wolfings",
-    "bv_pages": 166,
+    "bv_pages": 160,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-house-of-the-wolfings/the-house-of-the-wolfings-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-house-of-the-wolfings/the-house-of-the-wolfings-bv-couverture.pdf",
@@ -1788,7 +1788,7 @@
   },
   "the-interesting-narrative-of-the-life-of-olaudah-equiano": {
     "title": "The Interesting Narrative of the Life of Olaudah Equiano",
-    "bv_pages": 168,
+    "bv_pages": 156,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-interesting-narrative-of-the-life-of-olaudah-equiano/the-interesting-narrative-of-the-life-of-olaudah-equiano-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-interesting-narrative-of-the-life-of-olaudah-equiano/the-interesting-narrative-of-the-life-of-olaudah-equiano-bv-couverture.pdf",
@@ -1852,7 +1852,7 @@
   },
   "the-rivals": {
     "title": "The Rivals",
-    "bv_pages": 84,
+    "bv_pages": 80,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-rivals/the-rivals-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-rivals/the-rivals-bv-couverture.pdf",
@@ -1860,7 +1860,7 @@
   },
   "the-sea-wolf": {
     "title": "The Sea-Wolf",
-    "bv_pages": 214,
+    "bv_pages": 212,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-sea-wolf/the-sea-wolf-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-sea-wolf/the-sea-wolf-bv-couverture.pdf",
@@ -1892,7 +1892,7 @@
   },
   "the-water-babies": {
     "title": "The Water-Babies",
-    "bv_pages": 144,
+    "bv_pages": 140,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-water-babies/the-water-babies-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-water-babies/the-water-babies-bv-couverture.pdf",
@@ -1908,7 +1908,7 @@
   },
   "twelfth-night": {
     "title": "Twelfth Night",
-    "bv_pages": 68,
+    "bv_pages": 64,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/twelfth-night/twelfth-night-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/twelfth-night/twelfth-night-bv-couverture.pdf",
@@ -1916,7 +1916,7 @@
   },
   "ulysses": {
     "title": "Ulysses",
-    "bv_pages": 580,
+    "bv_pages": 574,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/ulysses/ulysses-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/ulysses/ulysses-bv-couverture.pdf",
@@ -1924,7 +1924,7 @@
   },
   "volpone": {
     "title": "Volpone",
-    "bv_pages": 234,
+    "bv_pages": 176,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/volpone/volpone-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/volpone/volpone-bv-couverture.pdf",
@@ -1972,7 +1972,7 @@
   },
   "at-the-back-of-the-north-wind": {
     "title": "At the Back of the North Wind",
-    "bv_pages": 190,
+    "bv_pages": 186,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/at-the-back-of-the-north-wind/at-the-back-of-the-north-wind-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/at-the-back-of-the-north-wind/at-the-back-of-the-north-wind-bv-couverture.pdf",
@@ -2004,7 +2004,7 @@
   },
   "daniel-deronda": {
     "title": "Daniel Deronda",
-    "bv_pages": 622,
+    "bv_pages": 616,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/daniel-deronda/daniel-deronda-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/daniel-deronda/daniel-deronda-bv-couverture.pdf",
@@ -2020,7 +2020,7 @@
   },
   "extraordinary-popular-delusions-and-the-madness-of-crowds": {
     "title": "Extraordinary Popular Delusions and the Madness of Crowds",
-    "bv_pages": 574,
+    "bv_pages": 556,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/extraordinary-popular-delusions-and-the-madness-of-crowds/extraordinary-popular-delusions-and-the-madness-of-crowds-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/extraordinary-popular-delusions-and-the-madness-of-crowds/extraordinary-popular-delusions-and-the-madness-of-crowds-bv-couverture.pdf",
@@ -2052,7 +2052,7 @@
   },
   "in-praise-of-folly": {
     "title": "In Praise of Folly",
-    "bv_pages": 88,
+    "bv_pages": 86,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/in-praise-of-folly/in-praise-of-folly-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/in-praise-of-folly/in-praise-of-folly-bv-couverture.pdf",
@@ -2068,7 +2068,7 @@
   },
   "king-solomon-s-mines": {
     "title": "King Solomon's Mines",
-    "bv_pages": 164,
+    "bv_pages": 162,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/king-solomon-s-mines/king-solomon-s-mines-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/king-solomon-s-mines/king-solomon-s-mines-bv-couverture.pdf",
@@ -2076,7 +2076,7 @@
   },
   "life-of-samuel-johnson": {
     "title": "Life of Samuel Johnson",
-    "bv_pages": 418,
+    "bv_pages": 414,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/life-of-samuel-johnson/life-of-samuel-johnson-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/life-of-samuel-johnson/life-of-samuel-johnson-bv-couverture.pdf",
@@ -2100,7 +2100,7 @@
   },
   "middlemarch": {
     "title": "Middlemarch",
-    "bv_pages": 636,
+    "bv_pages": 634,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/middlemarch/middlemarch-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/middlemarch/middlemarch-bv-couverture.pdf",
@@ -2140,7 +2140,7 @@
   },
   "phaedra": {
     "title": "Phaedra",
-    "bv_pages": 96,
+    "bv_pages": 54,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/phaedra/phaedra-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/phaedra/phaedra-bv-couverture.pdf",
@@ -2172,7 +2172,7 @@
   },
   "sketches-new-and-old": {
     "title": "Sketches New and Old",
-    "bv_pages": 198,
+    "bv_pages": 194,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/sketches-new-and-old/sketches-new-and-old-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/sketches-new-and-old/sketches-new-and-old-bv-couverture.pdf",
@@ -2252,7 +2252,7 @@
   },
   "the-history-of-tom-jones-a-foundling": {
     "title": "The History of Tom Jones, a Foundling",
-    "bv_pages": 690,
+    "bv_pages": 688,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-history-of-tom-jones-a-foundling/the-history-of-tom-jones-a-foundling-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-history-of-tom-jones-a-foundling/the-history-of-tom-jones-a-foundling-bv-couverture.pdf",
@@ -2276,7 +2276,7 @@
   },
   "the-lady-of-the-lake": {
     "title": "The Lady of the Lake",
-    "bv_pages": 360,
+    "bv_pages": 240,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-lady-of-the-lake/the-lady-of-the-lake-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-lady-of-the-lake/the-lady-of-the-lake-bv-couverture.pdf",
@@ -2308,7 +2308,7 @@
   },
   "the-phantom-rickshaw-and-other-tales": {
     "title": "The Phantom 'Rickshaw and Other Tales",
-    "bv_pages": 94,
+    "bv_pages": 92,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-phantom-rickshaw-and-other-tales/the-phantom-rickshaw-and-other-tales-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-phantom-rickshaw-and-other-tales/the-phantom-rickshaw-and-other-tales-bv-couverture.pdf",
@@ -2324,7 +2324,7 @@
   },
   "the-red-and-the-black": {
     "title": "The Red and the Black",
-    "bv_pages": 394,
+    "bv_pages": 390,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-red-and-the-black/the-red-and-the-black-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-red-and-the-black/the-red-and-the-black-bv-couverture.pdf",
@@ -2348,7 +2348,7 @@
   },
   "the-story-of-the-treasure-seekers": {
     "title": "The Story of the Treasure Seekers",
-    "bv_pages": 110,
+    "bv_pages": 108,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-story-of-the-treasure-seekers/the-story-of-the-treasure-seekers-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-story-of-the-treasure-seekers/the-story-of-the-treasure-seekers-bv-couverture.pdf",
@@ -2364,7 +2364,7 @@
   },
   "the-varieties-of-religious-experience": {
     "title": "The Varieties of Religious Experience",
-    "bv_pages": 372,
+    "bv_pages": 370,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-varieties-of-religious-experience/the-varieties-of-religious-experience-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-varieties-of-religious-experience/the-varieties-of-religious-experience-bv-couverture.pdf",
@@ -2372,7 +2372,7 @@
   },
   "the-way-we-live-now": {
     "title": "The Way We Live Now",
-    "bv_pages": 684,
+    "bv_pages": 680,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-way-we-live-now/the-way-we-live-now-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-way-we-live-now/the-way-we-live-now-bv-couverture.pdf",
@@ -2388,7 +2388,7 @@
   },
   "twelve-years-a-slave": {
     "title": "Twelve Years a Slave",
-    "bv_pages": 168,
+    "bv_pages": 166,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/twelve-years-a-slave/twelve-years-a-slave-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/twelve-years-a-slave/twelve-years-a-slave-bv-couverture.pdf",
@@ -2404,7 +2404,7 @@
   },
   "walden": {
     "title": "Walden",
-    "bv_pages": 216,
+    "bv_pages": 212,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/walden/walden-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/walden/walden-bv-couverture.pdf",
@@ -2428,7 +2428,7 @@
   },
   "an-enquiry-concerning-human-understanding": {
     "title": "An Enquiry Concerning Human Understanding",
-    "bv_pages": 122,
+    "bv_pages": 118,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/an-enquiry-concerning-human-understanding/an-enquiry-concerning-human-understanding-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/an-enquiry-concerning-human-understanding/an-enquiry-concerning-human-understanding-bv-couverture.pdf",
@@ -2492,7 +2492,7 @@
   },
   "fables": {
     "title": "Fables",
-    "bv_pages": 624,
+    "bv_pages": 356,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/fables/fables-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/fables/fables-bv-couverture.pdf",
@@ -2524,7 +2524,7 @@
   },
   "in-search-of-the-castaways": {
     "title": "In Search of the Castaways",
-    "bv_pages": 352,
+    "bv_pages": 350,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/in-search-of-the-castaways/in-search-of-the-castaways-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/in-search-of-the-castaways/in-search-of-the-castaways-bv-couverture.pdf",
@@ -2540,7 +2540,7 @@
   },
   "kipps": {
     "title": "Kipps",
-    "bv_pages": 242,
+    "bv_pages": 240,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/kipps/kipps-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/kipps/kipps-bv-couverture.pdf",
@@ -2556,7 +2556,7 @@
   },
   "lost-illusions": {
     "title": "Lost Illusions",
-    "bv_pages": 524,
+    "bv_pages": 508,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/lost-illusions/lost-illusions-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/lost-illusions/lost-illusions-bv-couverture.pdf",
@@ -2588,7 +2588,7 @@
   },
   "north-and-south": {
     "title": "North and South",
-    "bv_pages": 364,
+    "bv_pages": 360,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/north-and-south/north-and-south-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/north-and-south/north-and-south-bv-couverture.pdf",
@@ -2604,7 +2604,7 @@
   },
   "our-mutual-friend": {
     "title": "Our Mutual Friend",
-    "bv_pages": 682,
+    "bv_pages": 680,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/our-mutual-friend/our-mutual-friend-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/our-mutual-friend/our-mutual-friend-bv-couverture.pdf",
@@ -2620,7 +2620,7 @@
   },
   "rebecca-of-sunnybrook-farm": {
     "title": "Rebecca of Sunnybrook Farm",
-    "bv_pages": 152,
+    "bv_pages": 150,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/rebecca-of-sunnybrook-farm/rebecca-of-sunnybrook-farm-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/rebecca-of-sunnybrook-farm/rebecca-of-sunnybrook-farm-bv-couverture.pdf",
@@ -2668,7 +2668,7 @@
   },
   "the-autobiography-of-benjamin-franklin": {
     "title": "The Autobiography of Benjamin Franklin",
-    "bv_pages": 156,
+    "bv_pages": 152,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-autobiography-of-benjamin-franklin/the-autobiography-of-benjamin-franklin-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-autobiography-of-benjamin-franklin/the-autobiography-of-benjamin-franklin-bv-couverture.pdf",
@@ -2692,7 +2692,7 @@
   },
   "the-count-of-monte-cristo": {
     "title": "The Count of Monte Cristo",
-    "bv_pages": 1030,
+    "bv_pages": 1028,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-count-of-monte-cristo/the-count-of-monte-cristo-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-count-of-monte-cristo/the-count-of-monte-cristo-bv-couverture.pdf",
@@ -2700,7 +2700,7 @@
   },
   "the-duchess-of-malfi": {
     "title": "The Duchess of Malfi",
-    "bv_pages": 138,
+    "bv_pages": 96,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-duchess-of-malfi/the-duchess-of-malfi-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-duchess-of-malfi/the-duchess-of-malfi-bv-couverture.pdf",
@@ -2716,7 +2716,7 @@
   },
   "the-golden-bough": {
     "title": "The Golden Bough",
-    "bv_pages": 746,
+    "bv_pages": 740,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-golden-bough/the-golden-bough-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-golden-bough/the-golden-bough-bv-couverture.pdf",
@@ -2788,7 +2788,7 @@
   },
   "the-princess-and-the-goblin": {
     "title": "The Princess and the Goblin",
-    "bv_pages": 112,
+    "bv_pages": 108,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-princess-and-the-goblin/the-princess-and-the-goblin-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-princess-and-the-goblin/the-princess-and-the-goblin-bv-couverture.pdf",
@@ -2804,7 +2804,7 @@
   },
   "the-rubaiyat-of-omar-khayyam": {
     "title": "The Rubaiyat of Omar Khayyam",
-    "bv_pages": 42,
+    "bv_pages": 38,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-rubaiyat-of-omar-khayyam/the-rubaiyat-of-omar-khayyam-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-rubaiyat-of-omar-khayyam/the-rubaiyat-of-omar-khayyam-bv-couverture.pdf",
@@ -2844,7 +2844,7 @@
   },
   "the-wealth-of-nations": {
     "title": "The Wealth of Nations",
-    "bv_pages": 740,
+    "bv_pages": 732,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-wealth-of-nations/the-wealth-of-nations-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-wealth-of-nations/the-wealth-of-nations-bv-couverture.pdf",
@@ -2884,7 +2884,7 @@
   },
   "a-midsummer-night-s-dream": {
     "title": "A Midsummer Night's Dream",
-    "bv_pages": 68,
+    "bv_pages": 66,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/a-midsummer-night-s-dream/a-midsummer-night-s-dream-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/a-midsummer-night-s-dream/a-midsummer-night-s-dream-bv-couverture.pdf",
@@ -2908,7 +2908,7 @@
   },
   "antony-and-cleopatra": {
     "title": "Antony and Cleopatra",
-    "bv_pages": 100,
+    "bv_pages": 96,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/antony-and-cleopatra/antony-and-cleopatra-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/antony-and-cleopatra/antony-and-cleopatra-bv-couverture.pdf",
@@ -2956,7 +2956,7 @@
   },
   "essays": {
     "title": "Essays",
-    "bv_pages": 986,
+    "bv_pages": 1034,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/essays/essays-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/essays/essays-bv-couverture.pdf",
@@ -2972,7 +2972,7 @@
   },
   "following-the-equator": {
     "title": "Following the Equator",
-    "bv_pages": 372,
+    "bv_pages": 370,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/following-the-equator/following-the-equator-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/following-the-equator/following-the-equator-bv-couverture.pdf",
@@ -2980,7 +2980,7 @@
   },
   "grimm-s-fairy-tales": {
     "title": "Grimm's Fairy Tales",
-    "bv_pages": 194,
+    "bv_pages": 186,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/grimm-s-fairy-tales/grimm-s-fairy-tales-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/grimm-s-fairy-tales/grimm-s-fairy-tales-bv-couverture.pdf",
@@ -3004,7 +3004,7 @@
   },
   "julius-caesar": {
     "title": "Julius Caesar",
-    "bv_pages": 76,
+    "bv_pages": 72,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/julius-caesar/julius-caesar-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/julius-caesar/julius-caesar-bv-couverture.pdf",
@@ -3020,7 +3020,7 @@
   },
   "little-dorrit": {
     "title": "Little Dorrit",
-    "bv_pages": 686,
+    "bv_pages": 682,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/little-dorrit/little-dorrit-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/little-dorrit/little-dorrit-bv-couverture.pdf",
@@ -3028,7 +3028,7 @@
   },
   "love-s-labour-s-lost": {
     "title": "Love's Labour's Lost",
-    "bv_pages": 78,
+    "bv_pages": 76,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/love-s-labour-s-lost/love-s-labour-s-lost-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/love-s-labour-s-lost/love-s-labour-s-lost-bv-couverture.pdf",
@@ -3076,7 +3076,7 @@
   },
   "pamela-or-virtue-rewarded": {
     "title": "Pamela, or Virtue Rewarded",
-    "bv_pages": 402,
+    "bv_pages": 398,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/pamela-or-virtue-rewarded/pamela-or-virtue-rewarded-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/pamela-or-virtue-rewarded/pamela-or-virtue-rewarded-bv-couverture.pdf",
@@ -3084,7 +3084,7 @@
   },
   "poems-by-emily-dickinson": {
     "title": "Poems by Emily Dickinson",
-    "bv_pages": 176,
+    "bv_pages": 156,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/poems-by-emily-dickinson/poems-by-emily-dickinson-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/poems-by-emily-dickinson/poems-by-emily-dickinson-bv-couverture.pdf",
@@ -3108,7 +3108,7 @@
   },
   "shakespeare-s-sonnets": {
     "title": "Shakespeare's Sonnets",
-    "bv_pages": 68,
+    "bv_pages": 64,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/shakespeare-s-sonnets/shakespeare-s-sonnets-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/shakespeare-s-sonnets/shakespeare-s-sonnets-bv-couverture.pdf",
@@ -3124,7 +3124,7 @@
   },
   "tartuffe": {
     "title": "Tartuffe",
-    "bv_pages": 120,
+    "bv_pages": 74,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/tartuffe/tartuffe-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/tartuffe/tartuffe-bv-couverture.pdf",
@@ -3164,7 +3164,7 @@
   },
   "the-decameron": {
     "title": "The Decameron",
-    "bv_pages": 580,
+    "bv_pages": 572,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-decameron/the-decameron-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-decameron/the-decameron-bv-couverture.pdf",
@@ -3236,7 +3236,7 @@
   },
   "the-monk": {
     "title": "The Monk",
-    "bv_pages": 288,
+    "bv_pages": 286,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-monk/the-monk-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-monk/the-monk-bv-couverture.pdf",
@@ -3276,7 +3276,7 @@
   },
   "the-satyricon": {
     "title": "The Satyricon",
-    "bv_pages": 214,
+    "bv_pages": 206,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-satyricon/the-satyricon-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-satyricon/the-satyricon-bv-couverture.pdf",
@@ -3308,7 +3308,7 @@
   },
   "the-voyage-of-the-beagle": {
     "title": "The Voyage of the Beagle",
-    "bv_pages": 386,
+    "bv_pages": 384,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-voyage-of-the-beagle/the-voyage-of-the-beagle-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-voyage-of-the-beagle/the-voyage-of-the-beagle-bv-couverture.pdf",
@@ -3348,7 +3348,7 @@
   },
   "war-and-peace": {
     "title": "War and Peace",
-    "bv_pages": 1038,
+    "bv_pages": 1036,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/war-and-peace/war-and-peace-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/war-and-peace/war-and-peace-bv-couverture.pdf",
@@ -3388,7 +3388,7 @@
   },
   "autobiography-of-a-yogi": {
     "title": "Autobiography of a Yogi",
-    "bv_pages": 352,
+    "bv_pages": 344,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/autobiography-of-a-yogi/autobiography-of-a-yogi-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/autobiography-of-a-yogi/autobiography-of-a-yogi-bv-couverture.pdf",
@@ -3396,7 +3396,7 @@
   },
   "beowulf": {
     "title": "Beowulf",
-    "bv_pages": 178,
+    "bv_pages": 130,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/beowulf/beowulf-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/beowulf/beowulf-bv-couverture.pdf",
@@ -3412,7 +3412,7 @@
   },
   "common-sense": {
     "title": "Common Sense",
-    "bv_pages": 46,
+    "bv_pages": 44,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/common-sense/common-sense-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/common-sense/common-sense-bv-couverture.pdf",
@@ -3428,7 +3428,7 @@
   },
   "essays-first-series": {
     "title": "Essays: First Series",
-    "bv_pages": 142,
+    "bv_pages": 140,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/essays-first-series/essays-first-series-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/essays-first-series/essays-first-series-bv-couverture.pdf",
@@ -3436,7 +3436,7 @@
   },
   "father-goriot": {
     "title": "Father Goriot",
-    "bv_pages": 210,
+    "bv_pages": 206,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/father-goriot/father-goriot-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/father-goriot/father-goriot-bv-couverture.pdf",
@@ -3444,7 +3444,7 @@
   },
   "gargantua-and-pantagruel": {
     "title": "Gargantua and Pantagruel",
-    "bv_pages": 642,
+    "bv_pages": 632,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/gargantua-and-pantagruel/gargantua-and-pantagruel-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/gargantua-and-pantagruel/gargantua-and-pantagruel-bv-couverture.pdf",
@@ -3460,7 +3460,7 @@
   },
   "henrietta-temple": {
     "title": "Henrietta Temple",
-    "bv_pages": 304,
+    "bv_pages": 302,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/henrietta-temple/henrietta-temple-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/henrietta-temple/henrietta-temple-bv-couverture.pdf",
@@ -3476,7 +3476,7 @@
   },
   "just-so-stories": {
     "title": "Just So Stories",
-    "bv_pages": 70,
+    "bv_pages": 64,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/just-so-stories/just-so-stories-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/just-so-stories/just-so-stories-bv-couverture.pdf",
@@ -3500,7 +3500,7 @@
   },
   "lyrical-ballads": {
     "title": "Lyrical Ballads",
-    "bv_pages": 142,
+    "bv_pages": 82,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/lyrical-ballads/lyrical-ballads-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/lyrical-ballads/lyrical-ballads-bv-couverture.pdf",
@@ -3540,7 +3540,7 @@
   },
   "on-the-principles-of-political-economy-and-taxation": {
     "title": "On the Principles of Political Economy and Taxation",
-    "bv_pages": 230,
+    "bv_pages": 226,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/on-the-principles-of-political-economy-and-taxation/on-the-principles-of-political-economy-and-taxation-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/on-the-principles-of-political-economy-and-taxation/on-the-principles-of-political-economy-and-taxation-bv-couverture.pdf",
@@ -3572,7 +3572,7 @@
   },
   "salome": {
     "title": "Salomé",
-    "bv_pages": 38,
+    "bv_pages": 36,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/salome/salome-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/salome/salome-bv-couverture.pdf",
@@ -3612,7 +3612,7 @@
   },
   "the-ballad-of-reading-gaol": {
     "title": "The Ballad of Reading Gaol",
-    "bv_pages": 222,
+    "bv_pages": 166,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-ballad-of-reading-gaol/the-ballad-of-reading-gaol-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-ballad-of-reading-gaol/the-ballad-of-reading-gaol-bv-couverture.pdf",
@@ -3636,7 +3636,7 @@
   },
   "the-deerslayer": {
     "title": "The Deerslayer",
-    "bv_pages": 408,
+    "bv_pages": 404,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-deerslayer/the-deerslayer-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-deerslayer/the-deerslayer-bv-couverture.pdf",
@@ -3644,7 +3644,7 @@
   },
   "the-elements-of-style": {
     "title": "The Elements of Style",
-    "bv_pages": 40,
+    "bv_pages": 38,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-elements-of-style/the-elements-of-style-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-elements-of-style/the-elements-of-style-bv-couverture.pdf",
@@ -3684,7 +3684,7 @@
   },
   "the-jungle-book": {
     "title": "The Jungle Book",
-    "bv_pages": 108,
+    "bv_pages": 104,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-jungle-book/the-jungle-book-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-jungle-book/the-jungle-book-bv-couverture.pdf",
@@ -3692,7 +3692,7 @@
   },
   "the-last-days-of-pompeii": {
     "title": "The Last Days of Pompeii",
-    "bv_pages": 338,
+    "bv_pages": 326,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-last-days-of-pompeii/the-last-days-of-pompeii-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-last-days-of-pompeii/the-last-days-of-pompeii-bv-couverture.pdf",
@@ -3724,7 +3724,7 @@
   },
   "the-pilgrim-s-progress": {
     "title": "The Pilgrim's Progress",
-    "bv_pages": 120,
+    "bv_pages": 114,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-pilgrim-s-progress/the-pilgrim-s-progress-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-pilgrim-s-progress/the-pilgrim-s-progress-bv-couverture.pdf",
@@ -3764,7 +3764,7 @@
   },
   "the-taming-of-the-shrew": {
     "title": "The Taming of the Shrew",
-    "bv_pages": 74,
+    "bv_pages": 70,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-taming-of-the-shrew/the-taming-of-the-shrew-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/the-taming-of-the-shrew/the-taming-of-the-shrew-bv-couverture.pdf",
@@ -3804,7 +3804,7 @@
   },
   "twice-told-tales": {
     "title": "Twice-Told Tales",
-    "bv_pages": 170,
+    "bv_pages": 168,
     "bv_lang": "en",
     "bv_interior": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/twice-told-tales/twice-told-tales-bv-interieur.pdf",
     "bv_cover": "https://raw.githubusercontent.com/medamineamzil-design/ebookclassics-files/print/twice-told-tales/twice-told-tales-bv-couverture.pdf",
