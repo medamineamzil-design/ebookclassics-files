@@ -123,17 +123,20 @@ def restore_verse(blocks, text):
     """Put back the line breaks of verse paragraphs, using the Gutenberg text the site edition was made from."""
     from difflib import SequenceMatcher
     gt, gnl, glen, gpar = [], [], [], []
-    prev_blank = True
+    prev_blank, prev_ind = True, 0
     for line in text.split("\n"):
         L = len(line.strip())
+        ind = len(line) - len(line.lstrip())
         first = True
         for w in line.split():
             n = norm(w)
             if not n:
                 continue
             gt.append(n); gnl.append(first); glen.append(L)
-            gpar.append(first and (prev_blank or line.startswith("  ")))
+            gpar.append(first and (prev_blank or ind >= prev_ind + 3))
             first = False
+        if line.strip():
+            prev_ind = ind
         prev_blank = not line.strip()
     import bisect
     index = {}
