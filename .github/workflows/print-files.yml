@@ -1,0 +1,144 @@
+# BookClassics — fichiers d'impression Bookvault (intérieur 152x229 mm + couverture) pour chaque livre.
+# Les PDF sont rangés sur la branche "print" (le dépôt main reste léger) ; print.json (main) reçoit
+# bv_pages / bv_interior / bv_cover. Par défaut, seuls les livres sans fichiers d'impression sont construits.
+name: Fichiers d'impression
+
+on:
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "Slugs séparés par des espaces (vide = livres manquants ; 'all' = tout refaire)"
+        required: false
+        default: ""
+  schedule:
+    - cron: "17 3 * * 0"
+
+concurrency:
+  group: print-files
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5, 6, 7]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+          filter: blob:none
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /*/*.html
+            /*/*.jpg
+            /*/*-cover.png
+            /print.json
+            /tools/print/
+      - name: Logiciels
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y -q poppler-utils python3-pil fonts-hosny-amiri
+          curl -fsSL https://github.com/typst/typst/releases/download/v0.13.1/typst-x86_64-unknown-linux-musl.tar.xz | tar -xJ
+          sudo mv typst-*/typst /usr/local/bin/
+          typst --version
+      - name: Construction
+        env:
+          ONLY: ${{ github.event.inputs.only }}
+          SHARD: ${{ matrix.shard }}
+        run: |
+          python3 - <<'PY'
+          import json, os, subprocess
+          only = (os.environ.get("ONLY") or "").split()
+          pj = json.load(open("print.json", encoding="utf-8"))
+          slugs = sorted(d for d in os.listdir(".") if os.path.isdir(d) and not d.startswith((".", "_")) and d != "tools"
+                         and any(f.endswith(".html") for f in os.listdir(d)))
+          if only and only != ["all"]:
+              slugs = [s for s in slugs if s in only]
+          elif not only:
+              slugs = [s for s in slugs if not (pj.get(s) or {}).get("bv_interior")]
+          slugs = [s for s in slugs if s != "frankenstein" or only]
+          mine = [s for i, s in enumerate(slugs) if i % 8 == int(os.environ["SHARD"])]
+          print(len(slugs), "à construire,", len(mine), "dans ce lot")
+          os.makedirs("out", exist_ok=True)
+          with open("out/results-%s.jsonl" % os.environ["SHARD"], "w", encoding="utf-8") as res:
+              for s in mine:
+                  r = subprocess.run(["python3", "tools/print/build_print.py", s, s, "out/" + s,],
+                                     capture_output=True, text=True, timeout=1500)
+                  line = (r.stdout.strip().splitlines() or [json.dumps({"slug": s, "error": r.stderr[-300:]})])[-1]
+                  print(line, flush=True)
+                  res.write(line + "\n")
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: print-${{ matrix.shard }}
+          path: out/
+          retention-days: 5
+
+  publish:
+    needs: build
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: print-*
+          merge-multiple: true
+          path: out
+      - name: Branche print (PDF)
+        run: |
+          set -e
+          R="https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git"
+          git config --global user.name "BookClassics (automatique)"
+          git config --global user.email "medamine.amzil@gmail.com"
+          mkdir pr && cd pr && git init -q -b print && git remote add origin "$R"
+          if git ls-remote --exit-code origin print >/dev/null; then git fetch -q --depth 1 --filter=blob:none origin print && git reset -q FETCH_HEAD; fi
+          n=0
+          for d in ../out/*/; do
+            s=$(basename "$d")
+            ls "$d"/*.pdf >/dev/null 2>&1 || continue
+            mkdir -p "$s" && cp "$d"/*.pdf "$s"/
+            git add "$s"; n=$((n+1))
+            if [ $((n % 60)) -eq 0 ]; then git commit -qm "Fichiers d'impression ($n)" && git push -q origin HEAD:print; fi
+          done
+          git diff --cached --quiet || { git commit -qm "Fichiers d'impression ($n)"; git push -q origin HEAD:print; }
+          echo "$n livres publiés sur la branche print"
+      - name: print.json (main)
+        run: |
+          set -e
+          R="https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git"
+          cat out/results-*.jsonl > all.jsonl || true
+          for i in 1 2 3 4 5; do
+            rm -rf m && git clone -q --depth 1 --filter=blob:none --sparse "$R" m
+            git -C m sparse-checkout set --no-cone /print.json /_rapports/
+            python3 - <<'PY'
+          import json, datetime
+          RAW = "https://raw.githubusercontent.com/${{ github.repository }}/print/"
+          pj = json.load(open("m/print.json", encoding="utf-8"))
+          ok, ko = 0, []
+          for line in open("all.jsonl", encoding="utf-8"):
+              r = json.loads(line)
+              if "error" in r:
+                  ko.append(r); continue
+              s = r["slug"]; e = pj.setdefault(s, {})
+              e.setdefault("title", r["title"])
+              e.update({"bv_pages": r["pages"], "bv_lang": r["lang"],
+                        "bv_interior": RAW + s + "/" + s + "-bv-interieur.pdf",
+                        "bv_cover": RAW + s + "/" + s + "-bv-couverture.pdf"})
+              ok += 1
+          json.dump(pj, open("m/print.json", "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+          import os; os.makedirs("m/_rapports", exist_ok=True)
+          json.dump({"date": datetime.datetime.utcnow().isoformat(), "ok": ok, "errors": ko},
+                    open("m/_rapports/print-files.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+          print(ok, "ok,", len(ko), "erreurs")
+          PY
+            cd m && git add print.json _rapports/print-files.json && (git diff --cached --quiet || git commit -qm "print.json : fichiers d'impression Bookvault") && git push -q origin HEAD:main && break
+            cd ..; sleep 15
+          done
