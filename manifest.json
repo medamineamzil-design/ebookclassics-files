@@ -48,6 +48,14 @@
     "txt"
    ]
   },
+  "a-london-life": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "a-martian-odyssey": {
    "en": [
     "epub",
@@ -144,6 +152,14 @@
     "txt"
    ]
   },
+  "a-tramp-abroad": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "a-vindication-of-the-rights-of-woman": {
    "en": [
     "epub",
@@ -210,6 +226,14 @@
     "txt"
    ]
   },
+  "american-indian-stories": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "an-enemy-of-the-people": {
    "en": [
     "epub",
@@ -226,6 +250,14 @@
     "txt"
    ]
   },
+  "an-essay-on-man": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "an-essay-on-the-principle-of-population": {
    "en": [
     "epub",
@@ -235,6 +267,14 @@
    ]
   },
   "an-ideal-husband": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "an-old-fashioned-girl": {
    "en": [
     "epub",
     "html",
@@ -302,6 +342,14 @@
     "txt"
    ]
   },
+  "anne-s-house-of-dreams": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "antony-and-cleopatra": {
    "en": [
     "epub",
@@ -317,6 +365,14 @@
    ]
   },
   "apology": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "areopagitica": {
    "en": [
     "epub",
     "html",
@@ -698,6 +754,30 @@
     "txt"
    ]
   },
+  "devotions-upon-emergent-occasions": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "dialogues-concerning-natural-religion": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "dombey-and-son": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "don-quixote": {
    "en": [
     "epub",
@@ -956,6 +1036,22 @@
     "txt"
    ]
   },
+  "free-air": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "garden-cities-of-to-morrow": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "gargantua-and-pantagruel": {
    "en": [
     "epub",
@@ -1202,6 +1298,14 @@
     "txt"
    ]
   },
+  "idle-thoughts-of-an-idle-fellow": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "in-praise-of-folly": {
    "en": [
     "epub",
@@ -1233,6 +1337,14 @@
    ]
   },
   "indiana": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "irene-iddesleigh": {
    "en": [
     "epub",
     "html",
@@ -1716,6 +1828,14 @@
     "txt"
    ]
   },
+  "monday-or-tuesday": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "mosses-from-an-old-manse": {
    "en": [
     "epub",
@@ -1795,6 +1915,14 @@
    ]
   },
   "new-arabian-nights": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "new-atlantis": {
    "en": [
     "epub",
     "html",
@@ -1924,6 +2052,22 @@
     "txt"
    ],
    "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "on-growth-and-form": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "on-heroes-hero-worship-the-heroic-in-history": {
+   "en": [
     "epub",
     "html",
     "pdf",
@@ -2094,6 +2238,14 @@
     "txt"
    ]
   },
+  "phantastes": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "pierre-and-jean": {
    "en": [
     "epub",
@@ -2196,6 +2348,14 @@
     "txt"
    ]
   },
+  "rinkitink-in-oz": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "rip-van-winkle": {
    "en": [
     "epub",
@@ -2212,6 +2372,14 @@
     "txt"
    ],
    "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "robert-elsmere": {
+   "en": [
     "epub",
     "html",
     "pdf",
@@ -2428,6 +2596,14 @@
     "txt"
    ]
   },
+  "stonewall-jackson-and-the-american-civil-war": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "swann-s-way": {
    "en": [
     "epub",
@@ -2491,6 +2667,22 @@
    ]
   },
   "tarzan-of-the-apes": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "ten-days-in-a-mad-house": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "tender-buttons": {
    "en": [
     "epub",
     "html",
@@ -2605,6 +2797,14 @@
    ]
   },
   "the-analects": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-angel-in-the-house": {
    "en": [
     "epub",
     "html",
@@ -2844,6 +3044,14 @@
     "txt"
    ]
   },
+  "the-country-of-the-blind-and-other-stories": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-decameron": {
    "en": [
     "epub",
@@ -2946,6 +3154,14 @@
     "txt"
    ]
   },
+  "the-economic-consequences-of-the-peace": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-elements-of-style": {
    "en": [
     "epub",
@@ -2963,6 +3179,14 @@
    ]
   },
   "the-expedition-of-humphry-clinker": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-expression-of-the-emotions-in-man-and-animals": {
    "en": [
     "epub",
     "html",
@@ -3011,6 +3235,14 @@
    ]
   },
   "the-four-million": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-french-revolution-a-history": {
    "en": [
     "epub",
     "html",
@@ -3206,6 +3438,14 @@
     "txt"
    ]
   },
+  "the-hunting-of-the-snark": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-idiot": {
    "en": [
     "epub",
@@ -3283,6 +3523,14 @@
    ]
   },
   "the-island-of-doctor-moreau": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-jucklins": {
    "en": [
     "epub",
     "html",
@@ -3374,6 +3622,14 @@
     "txt"
    ]
   },
+  "the-last-man": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-last-of-the-mohicans": {
    "en": [
     "epub",
@@ -3435,6 +3691,14 @@
    ]
   },
   "the-man-who-would-be-king": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-marvelous-land-of-oz": {
    "en": [
     "epub",
     "html",
@@ -3578,6 +3842,14 @@
     "txt"
    ]
   },
+  "the-nigger-of-the-narcissus": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-odyssey": {
    "en": [
     "epub",
@@ -3606,7 +3878,23 @@
     "txt"
    ]
   },
+  "the-open-boat": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-origin-and-development-of-the-moral-ideas": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-outline-of-history": {
    "en": [
     "epub",
     "html",
@@ -3804,6 +4092,14 @@
     "txt"
    ]
   },
+  "the-promised-land": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-prophet": {
    "en": [
     "epub",
@@ -3912,6 +4208,14 @@
     "txt"
    ]
   },
+  "the-rose-of-old-st-louis": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-rubaiyat-of-omar-khayyam": {
    "en": [
     "epub",
@@ -3984,6 +4288,14 @@
     "txt"
    ]
   },
+  "the-seven-lamps-of-architecture": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-sign-of-the-four": {
    "en": [
     "epub",
@@ -4007,6 +4319,22 @@
    ]
   },
   "the-sleeper-awakes": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-small-house-at-allington": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-song-of-hiawatha": {
    "en": [
     "epub",
     "html",
@@ -4038,6 +4366,22 @@
     "txt"
    ],
    "fr": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-soul-of-man-under-socialism": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-story-of-doctor-dolittle": {
+   "en": [
     "epub",
     "html",
     "pdf",
@@ -4294,7 +4638,23 @@
     "txt"
    ]
   },
+  "the-wendigo": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "the-wild-duck": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "the-willows": {
    "en": [
     "epub",
     "html",
@@ -4375,6 +4735,14 @@
    ]
   },
   "this-side-of-paradise": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
+  "thought-forms": {
    "en": [
     "epub",
     "html",
@@ -4518,6 +4886,14 @@
     "txt"
    ]
   },
+  "two-years-before-the-mast": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "typee": {
    "en": [
     "epub",
@@ -4652,6 +5028,14 @@
     "txt"
    ]
   },
+  "what-is-man": {
+   "en": [
+    "epub",
+    "html",
+    "pdf",
+    "txt"
+   ]
+  },
   "white-fang": {
    "en": [
     "epub",
@@ -4689,5 +5073,5 @@
    ]
   }
  },
- "generated": "2026-10-15T03:03:34Z"
+ "generated": "2026-10-16T03:35:20Z"
 }
