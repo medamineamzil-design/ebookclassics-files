@@ -1,0 +1,208 @@
+=== BookClassics — lot 2026-10-16-auto — 2026-10-16 03:29 ===
+== 1/4 Fabrication des livres (EPUB, PDF, TXT, HTML) ==
+… Rinkitink in Oz [en] — Gutenberg #25581
+   + rinkitink-in-oz [en] OK — Project Gutenberg (#25581), 48945 mots, 24 chapitres — epub:178Ko pdf:712Ko txt:260Ko html:284Ko
+… The Marvelous Land of Oz [en] — Gutenberg #54
+   + the-marvelous-land-of-oz [en] OK — Project Gutenberg (#54), 41595 mots, 2 chapitres — epub:151Ko pdf:646Ko txt:234Ko html:247Ko
+… Devotions upon Emergent Occasions [en] — Gutenberg #23772
+   + devotions-upon-emergent-occasions [en] OK — Project Gutenberg (#23772), 73391 mots, 91 chapitres — epub:276Ko pdf:1126Ko txt:388Ko html:406Ko
+… On Heroes, Hero-Worship, & the Heroic in History [en] — Gutenberg #1091
+   + on-heroes-hero-worship-the-heroic-in-history [en] OK — Project Gutenberg (#1091), 88398 mots, 4 chapitres — epub:269Ko pdf:1072Ko txt:487Ko html:501Ko
+… The Wendigo [en] — Gutenberg #10897
+   + the-wendigo [en] OK — Project Gutenberg (#10897), 18212 mots, 8 chapitres — epub:109Ko pdf:309Ko txt:102Ko html:111Ko
+… The Open Boat [en] — Gutenberg #45524
+   + the-open-boat [en] OK — Project Gutenberg (#45524), 65285 mots, 28 chapitres — epub:219Ko pdf:933Ko txt:358Ko html:388Ko
+… Thought-Forms [en] — Gutenberg #16269
+   + thought-forms [en] OK — Project Gutenberg (#16269), 19593 mots, 24 chapitres — epub:115Ko pdf:352Ko txt:115Ko html:121Ko
+… New Atlantis [en] — Gutenberg #2434
+   + new-atlantis [en] OK — Project Gutenberg (#2434), 15697 mots, 3 chapitres — epub:89Ko pdf:243Ko txt:84Ko html:89Ko
+… The Song of Hiawatha [en] — Gutenberg #19
+   + the-song-of-hiawatha [en] OK — Project Gutenberg (#19), 32001 mots, 18 chapitres — epub:153Ko pdf:516Ko txt:184Ko html:193Ko
+… The Tale of Squirrel Nutkin [en] — Gutenberg #14872
+   ! the-tale-of-squirrel-nutkin [en] : texte trop court (1251 mots, Gutenberg #14872) — IGNORÉ
+… Monday or Tuesday [en] — Gutenberg #29220
+   + monday-or-tuesday [en] OK — Project Gutenberg (#29220), 18091 mots, 11 chapitres — epub:115Ko pdf:320Ko txt:100Ko html:111Ko
+… Cautionary Tales for Children [en] — Gutenberg #27424
+   ! cautionary-tales-for-children [en] : texte trop court (2621 mots, Gutenberg #27424) — IGNORÉ
+… The Willows [en] — Gutenberg #11438
+   + the-willows [en] OK — Project Gutenberg (#11438), 19554 mots, 5 chapitres — epub:105Ko pdf:318Ko txt:107Ko html:113Ko
+… A Tramp Abroad [en] — Gutenberg #119
+   + a-tramp-abroad [en] OK — Project Gutenberg (#119), 155628 mots, 54 chapitres — epub:457Ko pdf:2064Ko txt:854Ko html:882Ko
+… A London Life [en] — Gutenberg #25500
+   + a-london-life [en] OK — Project Gutenberg (#25500), 98255 mots, 20 chapitres — epub:276Ko pdf:1284Ko txt:529Ko html:575Ko
+… The Expression of the Emotions in Man and Animals [en] — Gutenberg #1227
+   + the-expression-of-the-emotions-in-man-and-animals [en] OK — Project Gutenberg (#1227), 108471 mots, 14 chapitres — epub:312Ko pdf:1365Ko txt:628Ko html:640Ko
+… The Hunting of the Snark [en] — Gutenberg #13
+   + the-hunting-of-the-snark [en] OK — Project Gutenberg (#13), 5024 mots, 10 chapitres — epub:82Ko pdf:179Ko txt:27Ko html:33Ko
+… American Indian Stories [en] — Gutenberg #10376
+   + american-indian-stories [en] OK — Project Gutenberg (#10376), 32200 mots, 28 chapitres — epub:154Ko pdf:526Ko txt:173Ko html:187Ko
+… Robert Elsmere [en] — Gutenberg #24898
+   + robert-elsmere [en] OK — Project Gutenberg (#24898), 285677 mots, 57 chapitres — epub:752Ko pdf:3628Ko txt:1585Ko html:1677Ko
+… What Is Man? [en] — Gutenberg #70
+   + what-is-man [en] OK — Project Gutenberg (#70), 94295 mots, 15 chapitres — epub:269Ko pdf:1239Ko txt:521Ko html:537Ko
+… The Rose of Old St. Louis [en] — Gutenberg #20911
+   + the-rose-of-old-st-louis [en] OK — Project Gutenberg (#20911), 125448 mots, 28 chapitres — epub:355Ko pdf:1587Ko txt:665Ko html:704Ko
+… The Country of the Blind and Other Stories [en] — Gutenberg #11870
+   + the-country-of-the-blind-and-other-stories [en] OK — Project Gutenberg (#11870), 160158 mots, 22 chapitres — epub:428Ko pdf:2012Ko txt:874Ko html:929Ko
+… The Story of Doctor Dolittle [en] — Gutenberg #501
+   + the-story-of-doctor-dolittle [en] OK — Project Gutenberg (#501), 26291 mots, 25 chapitres — epub:139Ko pdf:465Ko txt:143Ko html:153Ko
+… An Essay on Man [en] — Gutenberg #2428
+   + an-essay-on-man [en] OK — Project Gutenberg (#2428), 46856 mots, 30 chapitres — epub:196Ko pdf:683Ko txt:254Ko html:268Ko
+… Tender Buttons [en] — Gutenberg #15396
+   + tender-buttons [en] OK — Project Gutenberg (#15396), 14963 mots, 0 chapitres — epub:84Ko pdf:267Ko txt:78Ko html:86Ko
+… The Soul of Man Under Socialism [en] — Gutenberg #1017
+   + the-soul-of-man-under-socialism [en] OK — Project Gutenberg (#1017), 14406 mots, 2 chapitres — epub:97Ko pdf:242Ko txt:80Ko html:84Ko
+… Dialogues Concerning Natural Religion [en] — Gutenberg #4583
+   + dialogues-concerning-natural-religion [en] OK — Project Gutenberg (#4583), 35923 mots, 12 chapitres — epub:161Ko pdf:513Ko txt:208Ko html:214Ko
+… The Small House at Allington [en] — Gutenberg #4599
+   + the-small-house-at-allington [en] OK — Project Gutenberg (#4599), 256324 mots, 59 chapitres — epub:630Ko pdf:3187Ko txt:1341Ko html:1456Ko
+… The Economic Consequences of the Peace [en] — Gutenberg #15776
+   + the-economic-consequences-of-the-peace [en] OK — Project Gutenberg (#15776), 69067 mots, 22 chapitres — epub:243Ko pdf:968Ko txt:407Ko html:420Ko
+… The Outline of History [en] — Gutenberg #45368
+   + the-outline-of-history [en] OK — Project Gutenberg (#45368), 459010 mots, 30 chapitres — epub:1084Ko pdf:5925Ko txt:2660Ko html:2717Ko
+… An Old-Fashioned Girl [en] — Gutenberg #2787
+   + an-old-fashioned-girl [en] OK — Project Gutenberg (#2787), 102180 mots, 20 chapitres — epub:298Ko pdf:1332Ko txt:544Ko html:578Ko
+… The French Revolution: A History [en] — Gutenberg #1301
+   + the-french-revolution-a-history [en] OK — Project Gutenberg (#1301), 301824 mots, 159 chapitres — epub:997Ko pdf:4210Ko txt:1835Ko html:1874Ko
+… The Last Man [en] — Gutenberg #18247
+   + the-last-man [en] OK — Project Gutenberg (#18247), 174542 mots, 28 chapitres — epub:482Ko pdf:2067Ko txt:982Ko html:994Ko
+… The Jucklins [en] — Gutenberg #26499
+   + the-jucklins [en] OK — Project Gutenberg (#26499), 75982 mots, 21 chapitres — epub:223Ko pdf:953Ko txt:381Ko html:420Ko
+… The Seven Lamps of Architecture [en] — Gutenberg #35898
+   + the-seven-lamps-of-architecture [en] OK — Project Gutenberg (#35898), 79828 mots, 10 chapitres — epub:243Ko pdf:987Ko txt:444Ko html:453Ko
+… The Promised Land [en] — Gutenberg #20885
+   + the-promised-land [en] OK — Project Gutenberg (#20885), 114444 mots, 19 chapitres — epub:322Ko pdf:1356Ko txt:613Ko html:632Ko
+… Phantastes [en] — Gutenberg #325
+   + phantastes [en] OK — Project Gutenberg (#325), 69023 mots, 27 chapitres — epub:227Ko pdf:894Ko txt:366Ko html:377Ko
+… Anne's House of Dreams [en] — Gutenberg #544
+   + anne-s-house-of-dreams [en] OK — Project Gutenberg (#544), 79404 mots, 41 chapitres — epub:278Ko pdf:1137Ko txt:441Ko html:458Ko
+… Two Years Before the Mast [en] — Gutenberg #2055
+   + two-years-before-the-mast [en] OK — Project Gutenberg (#2055), 167703 mots, 36 chapitres — epub:445Ko pdf:1941Ko txt:894Ko html:919Ko
+… Ten Days in a Mad-House [en] — Gutenberg #59899
+   + ten-days-in-a-mad-house [en] OK — Project Gutenberg (#59899), 35495 mots, 17 chapitres — epub:152Ko pdf:522Ko txt:184Ko html:194Ko
+… The Angel in the House [en] — Gutenberg #4099
+   + the-angel-in-the-house [en] OK — Project Gutenberg (#4099), 24731 mots, 0 chapitres — epub:124Ko pdf:400Ko txt:139Ko html:147Ko
+… Dombey and Son [en] — Gutenberg #821
+   + dombey-and-son [en] OK — Project Gutenberg (#821), 354725 mots, 62 chapitres — epub:881Ko pdf:4496Ko txt:1988Ko html:2041Ko
+… Irene Iddesleigh [en] — Gutenberg #34181
+   + irene-iddesleigh [en] OK — Project Gutenberg (#34181), 33362 mots, 21 chapitres — epub:159Ko pdf:520Ko txt:190Ko html:200Ko
+… Free Air [en] — Gutenberg #26732
+   + free-air [en] OK — Project Gutenberg (#26732), 82622 mots, 34 chapitres — epub:277Ko pdf:1238Ko txt:456Ko html:507Ko
+… Stonewall Jackson and the American Civil War [en] — Gutenberg #12233
+   + stonewall-jackson-and-the-american-civil-war [en] OK — Project Gutenberg (#12233), 350763 mots, 26 chapitres — epub:859Ko pdf:4295Ko txt:2053Ko html:2077Ko
+… On Growth and Form [en] — Gutenberg #55264
+   + on-growth-and-form [en] OK — Project Gutenberg (#55264), 272001 mots, 19 chapitres — epub:650Ko pdf:3498Ko txt:1595Ko html:1627Ko
+… Idle Thoughts of an Idle Fellow [en] — Gutenberg #849
+   + idle-thoughts-of-an-idle-fellow [en] OK — Project Gutenberg (#849), 41716 mots, 6 chapitres — epub:164Ko pdf:559Ko txt:222Ko html:234Ko
+… Garden Cities of To-morrow [en] — Gutenberg #46134
+   + garden-cities-of-to-morrow [en] OK — Project Gutenberg (#46134), 43752 mots, 21 chapitres — epub:186Ko pdf:677Ko txt:255Ko html:265Ko
+… The Nigger of the "Narcissus" [en] — Gutenberg #17731
+   + the-nigger-of-the-narcissus [en] OK — Project Gutenberg (#17731), 53923 mots, 5 chapitres — epub:197Ko pdf:702Ko txt:310Ko html:315Ko
+… Areopagitica [en] — Gutenberg #608
+   + areopagitica [en] OK — Project Gutenberg (#608), 18004 mots, 2 chapitres — epub:98Ko pdf:267Ko txt:99Ko html:103Ko
+== 2/4 Dépôt des livres ==
++ Rinkitink in Oz : en
++ The Marvelous Land of Oz : en
++ Devotions upon Emergent Occasions : en
++ On Heroes, Hero-Worship, & the Heroic in History : en
++ The Wendigo : en
++ The Open Boat : en
++ Thought-Forms : en
++ New Atlantis : en
++ The Song of Hiawatha : en
++ Monday or Tuesday : en
++ The Willows : en
++ A Tramp Abroad : en
++ A London Life : en
++ The Expression of the Emotions in Man and Animals : en
++ The Hunting of the Snark : en
++ American Indian Stories : en
++ Robert Elsmere : en
++ What Is Man? : en
++ The Rose of Old St. Louis : en
++ The Country of the Blind and Other Stories : en
++ The Story of Doctor Dolittle : en
++ An Essay on Man : en
++ Tender Buttons : en
++ The Soul of Man Under Socialism : en
++ Dialogues Concerning Natural Religion : en
++ The Small House at Allington : en
++ The Economic Consequences of the Peace : en
++ The Outline of History : en
++ An Old-Fashioned Girl : en
++ The French Revolution: A History : en
++ The Last Man : en
++ The Jucklins : en
++ The Seven Lamps of Architecture : en
++ The Promised Land : en
++ Phantastes : en
++ Anne's House of Dreams : en
++ Two Years Before the Mast : en
++ Ten Days in a Mad-House : en
++ The Angel in the House : en
++ Dombey and Son : en
++ Irene Iddesleigh : en
++ Free Air : en
++ Stonewall Jackson and the American Civil War : en
++ On Growth and Form : en
++ Idle Thoughts of an Idle Fellow : en
++ Garden Cities of To-morrow : en
++ The Nigger of the "Narcissus" : en
++ Areopagitica : en
+   publié : ebookclassics-files — Nouveaux livres : Rinkitink in Oz, The Marvelous Land of Oz, Devotions upon Emergent Occasions, On Heroes, Hero-Worship, & the Heroic in History, The Wendigo, The Open Boat, Thought-Forms, New Atlantis, The Song of Hiawatha, Monday or Tuesday, The Willows, A Tramp Abroad, A London Life, The Expression of the Emotions in Man and Animals, The Hunting of the Snark, American Indian Stories, Robert Elsmere, What Is Man?, The Rose of Old St. Louis, The Country of the Blind and Other Stories, The Story of Doctor Dolittle, An Essay on Man, Tender Buttons, The Soul of Man Under Socialism, Dialogues Concerning Natural Religion, The Small House at Allington, The Economic Consequences of the Peace, The Outline of History, An Old-Fashioned Girl, The French Revolution: A History, The Last Man, The Jucklins, The Seven Lamps of Architecture, The Promised Land, Phantastes, Anne's House of Dreams, Two Years Before the Mast, Ten Days in a Mad-House, The Angel in the House, Dombey and Son, Irene Iddesleigh, Free Air, Stonewall Jackson and the American Civil War, On Growth and Form, Idle Thoughts of an Idle Fellow, Garden Cities of To-morrow, The Nigger of the "Narcissus", Areopagitica
+== 3/4 Site : catalogue, pages livres, plan du site ==
+   526 pages livres, 525 couvertures, 531 adresses dans le sitemap
+   48 livre(s) ajouté(s) au catalogue
+   publié : ebookclassics-site — Nouveaux livres au catalogue : Rinkitink in Oz, The Marvelous Land of Oz, Devotions upon Emergent Occasions, On Heroes, Hero-Worship, & the Heroic in History, The Wendigo, The Open Boat, Thought-Forms, New Atlantis, The Song of Hiawatha, Monday or Tuesday, The Willows, A Tramp Abroad, A London Life, The Expression of the Emotions in Man and Animals, The Hunting of the Snark, American Indian Stories, Robert Elsmere, What Is Man?, The Rose of Old St. Louis, The Country of the Blind and Other Stories, The Story of Doctor Dolittle, An Essay on Man, Tender Buttons, The Soul of Man Under Socialism, Dialogues Concerning Natural Religion, The Small House at Allington, The Economic Consequences of the Peace, The Outline of History, An Old-Fashioned Girl, The French Revolution: A History, The Last Man, The Jucklins, The Seven Lamps of Architecture, The Promised Land, Phantastes, Anne's House of Dreams, Two Years Before the Mast, Ten Days in a Mad-House, The Angel in the House, Dombey and Son, Irene Iddesleigh, Free Air, Stonewall Jackson and the American Civil War, On Growth and Form, Idle Thoughts of an Idle Fellow, Garden Cities of To-morrow, The Nigger of the "Narcissus", Areopagitica
+TERMINE — 48 nouveau(x) livre(s) : Rinkitink in Oz, The Marvelous Land of Oz, Devotions upon Emergent Occasions, On Heroes, Hero-Worship, & the Heroic in History, The Wendigo, The Open Boat, Thought-Forms, New Atlantis, The Song of Hiawatha, Monday or Tuesday, The Willows, A Tramp Abroad, A London Life, The Expression of the Emotions in Man and Animals, The Hunting of the Snark, American Indian Stories, Robert Elsmere, What Is Man?, The Rose of Old St. Louis, The Country of the Blind and Other Stories, The Story of Doctor Dolittle, An Essay on Man, Tender Buttons, The Soul of Man Under Socialism, Dialogues Concerning Natural Religion, The Small House at Allington, The Economic Consequences of the Peace, The Outline of History, An Old-Fashioned Girl, The French Revolution: A History, The Last Man, The Jucklins, The Seven Lamps of Architecture, The Promised Land, Phantastes, Anne's House of Dreams, Two Years Before the Mast, Ten Days in a Mad-House, The Angel in the House, Dombey and Son, Irene Iddesleigh, Free Air, Stonewall Jackson and the American Civil War, On Growth and Form, Idle Thoughts of an Idle Fellow, Garden Cities of To-morrow, The Nigger of the "Narcissus", Areopagitica
+== Livres audio du lot 2026-10-16-auto ==
+   LibriVox : Rinkitink in Oz [en] — « Rinkitink in Oz (version 3) » (5 h 47)
+   LibriVox : The Marvelous Land of Oz [en] — « Marvelous Land of Oz (version 3) » (5 h 01)
+   LibriVox : Devotions upon Emergent Occasions [en] — « Devotions upon Emergent Occasions » (5 h 59)
+   pas d'enregistrement LibriVox pour On Heroes, Hero-Worship, & the Heroic in History [en]
+   LibriVox : The Wendigo [en] — « Wendigo » (1 h 59)
+   pas d'enregistrement LibriVox pour The Open Boat [en]
+   pas d'enregistrement LibriVox pour Thought-Forms [en]
+   LibriVox : New Atlantis [en] — « New Atlantis » (1 h 37)
+   LibriVox : The Song of Hiawatha [en] — « Song of Hiawatha » (3 h 55)
+   LibriVox : Monday or Tuesday [en] — « Monday or Tuesday » (2 h 00)
+   LibriVox : The Willows [en] — « Willows » (2 h 21)
+   LibriVox : A Tramp Abroad [en] — « Tramp Abroad » (15 h 46)
+   LibriVox : A London Life [en] — « London Life » (5 h 22)
+   LibriVox : The Expression of the Emotions in Man and Animals [en] — « Expression of the Emotions in Man and Animals » (11 h 13)
+   LibriVox : The Hunting of the Snark [en] — « Hunting of the Snark (version 2) » (0 h 39)
+   LibriVox : American Indian Stories [en] — « American Indian Stories » (3 h 33)
+   LibriVox : Robert Elsmere [en] — « Robert Elsmere » (28 h 38)
+   pas d'enregistrement LibriVox pour What Is Man? [en]
+   pas d'enregistrement LibriVox pour The Rose of Old St. Louis [en]
+   pas d'enregistrement LibriVox pour The Country of the Blind and Other Stories [en]
+   LibriVox : The Story of Doctor Dolittle [en] — « Story of Doctor Dolittle » (3 h 08)
+   LibriVox : An Essay on Man [en] — « Essay on Man » (1 h 47)
+   LibriVox : Tender Buttons [en] — « Tender Buttons » (1 h 50)
+   pas d'enregistrement LibriVox pour The Soul of Man Under Socialism [en]
+   LibriVox : Dialogues Concerning Natural Religion [en] — « Dialogues Concerning Natural Religion » (4 h 01)
+   LibriVox : The Small House at Allington [en] — « Small House at Allington (version 2) » (30 h 23)
+   LibriVox : The Economic Consequences of the Peace [en] — « Economic Consequences of the Peace » (5 h 41)
+   pas d'enregistrement LibriVox pour The Outline of History [en]
+   LibriVox : An Old-Fashioned Girl [en] — « Old-Fashioned Girl (Version 3 Dramatic Reading) » (10 h 53)
+   pas d'enregistrement LibriVox pour The French Revolution: A History [en]
+   LibriVox : The Last Man [en] — « Last Man » (18 h 00)
+   pas d'enregistrement LibriVox pour The Jucklins [en]
+   LibriVox : The Seven Lamps of Architecture [en] — « Seven Lamps of Architecture » (8 h 58)
+   LibriVox : The Promised Land [en] — « Promised Land » (10 h 13)
+   pas d'enregistrement LibriVox pour Phantastes [en]
+   LibriVox : Anne's House of Dreams [en] — « Anne's House of Dreams » (8 h 06)
+   LibriVox : Two Years Before the Mast [en] — « Two Years Before the Mast » (17 h 41)
+   pas d'enregistrement LibriVox pour Ten Days in a Mad-House [en]
+   pas d'enregistrement LibriVox pour The Angel in the House [en]
+   LibriVox : Dombey and Son [en] — « Dombey and Son (version 2) » (44 h 35)
+   LibriVox : Irene Iddesleigh [en] — « Irene Iddesleigh » (3 h 55)
+   LibriVox : Free Air [en] — « Free Air » (8 h 22)
+   LibriVox : Stonewall Jackson and the American Civil War [en] — « Stonewall Jackson and the American Civil War » (35 h 57)
+   pas d'enregistrement LibriVox pour On Growth and Form [en]
+   LibriVox : Idle Thoughts of an Idle Fellow [en] — « Idle Thoughts Of An Idle Fellow » (5 h 01)
+   pas d'enregistrement LibriVox pour Garden Cities of To-morrow [en]
+   LibriVox : The Nigger of the "Narcissus" [en] — « Nigger of the "Narcissus" (Version 2) » (5 h 47)
+   LibriVox : Areopagitica [en] — « Areopagitica (Version 2) » (2 h 47)
+   ! ~/r2.conf absent : livres audio non ajoutés
+FIN 2026-10-16 03:36
